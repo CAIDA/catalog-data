@@ -3,7 +3,7 @@
    - How do you map an IPv4 address to an ASN path in Python?
 - datasets:
    - dataset: BGPStream
-     - entities: ["AS Path IPv4", "Prefix IPv4"]
+     - joins: [["AS Path IPv4","Prefix IPv4"]]
 - topics: 
    - measurement methdology
    - topology
