@@ -28,7 +28,7 @@ organizations.  The two data types are divided by lines that start with
 field.  Create a hash mapping organizations to country and use that to match from ASN to 
 organization to country.
 
-- example input file
+example AS Organization file
 ~~~
 # format: org_id|changed|name|country|source
 LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
