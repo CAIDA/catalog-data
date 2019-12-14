@@ -10,3 +10,4 @@ Possible questions:
 - How many ASs do not block spoofed source addresses?
 - How do I get an AS's name?
 - How do I get a list of prefixes belong to a given IXP?
+- Is list of ASes (A,B,C,D>..) directly connected on today's BGP tables, and since when have they been?
