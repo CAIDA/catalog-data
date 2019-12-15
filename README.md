@@ -1,6 +1,10 @@
 # panda-solutions
 Until we have a full database solution to storing PANDA solutions.  This will work as a location for storing the the solutions in a machine parsable fashion.
 
+Topics:
+- Introduction to PANDA
+- Introductino to Internet Data
+
 Possible questions:
 - How do I calculate the customer cone size of an ASN?
 - What is the current packet size distribution? 
