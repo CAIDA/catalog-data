@@ -3,7 +3,7 @@ We will be creating topics and solutions for PANDA.  A individual topic/solution
 
 process:
 - create an issue with the topic title or question as it's title: [here](https://github.com/CAIDA/panda-metadata/issues)
-   - assign the topic to yourself
+   - assign the issue to yourself
 - create a subdirectory with the same title/question with a README.md
    - start with metadata:
    ~~~
