@@ -1,4 +1,4 @@
-# PANDA Metadata
+## PANDA Metadata
 We will be creating topics and solutions for PANDA.  A individual topic/solution should be useful on it's own. If it can not be understood without a greater context, it should be kept as part of a single page with that context. That said, when possible, it is better to break up a larger context into stand alone pieces and link against those pieces. Please review your current work and consider a topic and solution, or two, that you could contibute. 
 
 process:
