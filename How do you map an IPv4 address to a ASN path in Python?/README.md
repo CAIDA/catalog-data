@@ -30,6 +30,7 @@ between the prefix-as_paths.dat and your ips. Below are the relavent code snippe
 - [download-as_paths.py](download-as_paths.py)
 - **pyasn** code snippet 
     ~~~
+    import pysan
     asndb = pyasn.pyasn('prefix_as-path.dat')
 
     for ip in ips:
