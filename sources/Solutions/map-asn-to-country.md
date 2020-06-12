@@ -1,6 +1,6 @@
 ~~~json
 {
-    "name": "How do you found an ASN's country?",
+    "name": "How to get an ASN's name, country and organization?",
     "description":"Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
     "tags": [
@@ -53,10 +53,12 @@ with open(filename) as f:
             info[key] = values[i]
             if key == "country":
                org_country[id_] = values[i]
-
+       
         if key[0] == "org_id":
             orgs[id_] = info
+            info["members"] = []
         else:
+            org[info["org_id"]].append(id_)
             asn[id_] = info
             
   for asn,country in asn_country.items():
