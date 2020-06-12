@@ -1,18 +1,8 @@
-# untested!
-This solution has not be tested.
-
-# key/values
 ~~~
 {
-    "question": "How do you found an ASN's country?",
-    "solution":
-    "datasets": [
-        [
-            "dataset":"AS Organization",
-            "joins":[["AS","City"]]
-        ]
-    ],
-    "topics": [
+    "name": "How do you found an ASN's country?",
+    "links": ["dataset":"AS Organization"],
+    "tags": [
         "measurement methodology",
         "topology",
         "software/tools"
@@ -20,7 +10,7 @@ This solution has not be tested.
 }
 ~~~
 
-# solution
+https://www.caida.org/data/as-organizations/
 
 The AS Organization files contain two different types of entries: AS numbers and
 organizations.  The two data types are divided by lines that start with
