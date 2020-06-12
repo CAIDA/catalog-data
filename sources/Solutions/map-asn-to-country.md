@@ -30,9 +30,7 @@ LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 
 example script
 ~~~python
-orgs = {}
-asn = {}
-
+import re
 re_format = re.compile("# format:(.+)")
 
 org_country = {}
