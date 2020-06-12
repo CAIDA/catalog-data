@@ -60,7 +60,4 @@ with open(filename) as f:
         else:
             orgs[info["org_id"]]["asns"].append(id_)
             asns[id_] = info
-            
-  for asn,country in asn_country.items():
-     print (asn,country)
 ~~~
