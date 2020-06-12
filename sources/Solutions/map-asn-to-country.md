@@ -56,10 +56,10 @@ with open(filename) as f:
        
         if key[0] == "org_id":
             orgs[id_] = info
-            info["members"] = []
+            info["asns"] = []
         else:
-            org[info["org_id"]].append(id_)
-            asn[id_] = info
+            orgs[info["org_id"]]["asns"].append(id_)
+            asns[id_] = info
             
   for asn,country in asn_country.items():
      print (asn,country)
