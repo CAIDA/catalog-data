@@ -35,8 +35,8 @@ example script
 import re
 re_format = re.compile("# format:(.+)")
 
-org_country = {}
-asn_country = {}
+orgs  = {}
+asns = {}
 with open(filename) as f:
     for line in f:
         m = re_format.search(line)
