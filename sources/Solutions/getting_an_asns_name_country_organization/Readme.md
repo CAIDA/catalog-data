@@ -15,7 +15,7 @@
 Introduction
 
 What is an AS? 
-    • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). 
+    • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
     • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.
     • Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. 
     • Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. 
