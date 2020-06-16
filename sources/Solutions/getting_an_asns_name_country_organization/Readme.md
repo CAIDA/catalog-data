@@ -14,24 +14,24 @@
 ~~~
 ### Introduction ###
 
-What is an AS? \
- > • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
+**What is an AS?**\
+ • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
  • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\
  • Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \
  • Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \
  • More information on AS can be found here: https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html 
 
-What is an ASN? \
+**What is an ASN?**\
     • Each AS is assigned a unique ASN, or Autonomous System Number that allows it to be uniquely identified during routing.
 
-What is an ASN's organization? \
+**What is an ASN's organization?**\
     • Each ASN can be mapped to a organization that controls multiple AS's over its network. 
 
-What is an ASN's country? \
+**What is an ASN's country?** \
     • The country where the ASN's organization is located. 
 
-Mapping ASN's to country 
-One way to map a ASN to a country is by using the country of its organization. 
+### Mapping ASN's to country ###
+One way to map a ASN to a country is by using the **country of its organization.** 
 
 https://www.caida.org/data/as-organizations/
 
@@ -51,26 +51,26 @@ LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 ----------
 AS fields
 ----------
-aut     : the AS number
-changed : the changed date provided by its WHOIS entry
-aut_name    : the name provide for the individual AS number
-org_id  : maps to an organization entry
-opaque_id   : opaque identifier used by RIR extended delegation format
-source  : the RIR or NIR database which was contained this entry
+aut     : the AS number \
+changed : the changed date provided by its WHOIS entry \
+aut_name    : the name provide for the individual AS number \
+org_id  : maps to an organization entry \
+opaque_id   : opaque identifier used by RIR extended delegation format \
+source  : the RIR or NIR database which was contained this entry 
 
 --------------------
 Organization fields
 --------------------
-org_id  : unique ID for the given organization
-           some will be created by the WHOIS entry and others will be
-           created by our scripts
-changed : the changed date provided by its WHOIS entry
+org_id  : unique ID for the given organization \
+          some will be created by the WHOIS entry and others will be
+           created by our scripts \
+changed : the changed date provided by its WHOIS entry \
 name    : name could be selected from the AUT entry tied to the
            organization, the AUT entry with the largest customer cone,
           listed for the organization (if there existed an stand alone
-           organization), or a human maintained file.
+           organization), or a human maintained file. \
 country : some WHOIS provide as a individual field. In other cases
-           we inferred it from the addresses
+           we inferred it from the addresses \
 source  : the RIR or NIR database which was contained this entry
 
 
