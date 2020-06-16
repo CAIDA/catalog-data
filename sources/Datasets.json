@@ -1,0 +1,444 @@
+[
+    {
+        "_type": "Dataset",
+        "id": "Dataset:CAIDA_IODA",
+        "name": "CAIDA IODA",
+        "organization": "CAIDA",
+        "description": "IODA's visualizations can contain both false positives and false negatives: A sudden drop in a time series is not guaranteed to be an outage, so be careful when interpreting IODA's data.",
+        "tags": [
+            "security",
+            "outages",
+            "darknet",
+            "active measurement",
+            "visualization"
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Chocolatine_Outage_Detection_for_Internet_Background_Radiation",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:UCSD_Network_Telescope",
+        "name": "UCSD Network Telescope",
+        "organization": "CAIDA",
+        "description": "The UCSD network telescope (aka a black hole, an Internet sink, darkspace, or a darknet) is a globally routed /8 network (approximately 1/256th of all IPv4 Internet addresses) that carries almost no legitimate traffic because there are few provider-allocated IP addresses in this prefix. After discarding the legitimate traffic from the incoming packets, the remaining data represent a continuous view of anomalous unsolicited traffic, or Internet Background Radiation (IBR). IBR results from a wide range of events, such as backscatter from randomly spoofed source denial-of-service attacks, the automated spread of Internet worms and viruses, scanning of address space by attackers or malware looking for vulnerable targets, and various misconfigurations (e.g. mistyping an IP address). In recent years, traffic destined to darkspace has evolved to include longer-duration, low-intensity events intended to establish and maintain botnets.",
+        "tags": [
+            "darknet",
+            "security"
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:At_Home_and_Abroad_The_Use_of_Denial-of-service_Attacks_during_Elections_in_Nondemocratic_Regimes",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Thunderping",
+        "name": "Thunderping",
+        "description": "ThunderPing that measures the connectivity of residential Internet hosts before, during, and after forecast periods of severe weather. ThunderPing uses weather alerts from the US National Weather Service to choose a set of residential host addresses to ping from several vantage points on the Internet.",
+        "tags": [
+            "weather",
+            "active measurement"
+        ],
+        "links": [
+            {
+                "to": "Paper:How_to_find_correlated_Internet_failures",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Residential_Links_Under_the_Weather",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:AS_Relationships",
+        "name": "AS Relationships",
+        "organization": "CAIDA",
+        "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
+        "tags": [
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/as-relationships/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Archipelago",
+        "name": "Archipelago",
+        "organization": "CAIDA",
+        "description": " CAIDA deploys and maintains a globally distributed measurement platform we call Archipelago (Ark). We grow the infrastructure by distributing hardware measurement nodes (2nd gen. Raspberry Pi) with as much geographical and topological diversity as we can to improve our view of the global Internet. Our primary goals with the Ark infrastructure are to:<br> <ul><li> reduce the effort needed to develop and deploy sophisticated large-scale measurements, and</li> <li>provide a step toward a community-oriented measurement infrastructure by allowing collaborators to run their vetted measurement tasks on a security-hardened distributed platform.</li></ul><br> Ark is tailored specifically for active network measurement. This allows Ark to be simpler than some other general-purpose distributed experimental platforms, and it allows us to concentrate on providing facilities that directly address the needs of networking research. In particular, we provide a facility for communication and coordination that makes it easier to write distributed measurements that must work together to achieve a goal. We are working on providing a high-level API to ease the challenges of writing measurement tools. Our goal is to lower the barrier to bringing novel and interesting measurement techniques to life.",
+        "tags": [
+            "topology",
+            "active measurement"
+        ],
+        "availability": [
+            {
+                "name": "restricted",
+                "url": "https://www.caida.org/projects/ark/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Netacuity_Edge",
+        "name": "Netacuity Edge",
+        "description": "",
+        "tags": [
+            "geolocation"
+        ],
+        "links": [
+            {
+                "to": "Paper:Geo-Locating_BGP_prefixes",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:BGPMon",
+        "name": "BGPMon",
+        "description": "BGPmon monitors the routing of your prefixes and alerts you in case of an 'interesting' path change. Path changes can be of different kinds, such as more specifics, change of aspath, change of origin AS, Transit AS or any combination of these, leading to such threats as blackholed traffic or traffic redirection and interception.",
+        "tags": [
+            "topology",
+            "routing"
+        ],
+        "links": [
+            {
+                "to": "Paper:BGP_hijacking_classification",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:AS_Prefix",
+        "name": "AS Prefix",
+        "organization": "CAIDA",
+        "description": "This dataset contains IPv4/IPv6 Prefix-to-Autonomous System (AS) mappings derived from RouteViews data. Files are created on a daily basis, starting from 2005-05-09 for IPv4 and 2007-01-01 for IPv6. The file format is line-oriented, with one prefix-AS mapping per line. The tab-separated fields are:IP Prefixes, prefix length, and AS number.",
+        "tags": [
+            "topology",
+            "BGP"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:At_Home_and_Abroad_The_Use_of_Denial-of-service_Attacks_during_Elections_in_Nondemocratic_Regimes",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Blink_Fast_Connectivity_Recovery_Entirely_in_the_Data_Plane",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:BGP_Communities",
+        "name": "BGP Communities",
+        "organization": "CAIDA",
+        "description": "A BGP Community is an attribute (standardized in RFC1997 in 1996) that provides meta-information about prefixes announced to customer and peer networks. The attribute is represented by an X:Y pair, where X and Y are two 16-bit values (extended communities use four octets). By convention, the first two octets encode the Autonomous System Number (ASN) of the operator that sets the community. The next two octets encode an arbitrary value to denote some property relevant to routing policy. Unfortunately, the specific values and semantics of this BGP attribute are not standardized. Also, the community is a transitive optional attribute, meaning that BGP implementations do not have to recognize this attribute. It is at the network operator's discretion to accept it or pass it on to another AS.",
+        "tags": [
+            "BGP",
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/bgp-communities/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Anycast_Dataset",
+        "name": "Anycast Dataset",
+        "description": "Active measurements to anycase servers.",
+        "tags": [
+            "security",
+            "topology",
+            "anycast"
+        ],
+        "links": [
+            {
+                "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:AS_Rank",
+        "name": "AS Rank",
+        "organization": "CAIDA",
+        "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
+        "tags": [
+            "topology",
+            "geolocation"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "http://www.caida.org/data/as-organizations/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Software:AS_Rank"
+            },
+            {
+                "to": "Dataset:AS_Rank"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:MaxMind",
+        "name": "MaxMind",
+        "organization": "MaxMind",
+        "description": "Commercial geolocation database with a free lower grade version.",
+        "tags": [
+            "geolocation",
+            "geographic"
+        ],
+        "availability": [
+            {
+                "name": "commercial",
+                "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "to": "Paper:Residential_Links_Under_the_Weather",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:ITDK",
+        "name": "ITDK",
+        "organization": "CAIDA",
+        "description": "The ITDK contains data about connectivity and routing gathered from a large cross-section of the global Internet. This dataset is useful for studying the topology of the Internet at the router-level, among other uses.",
+        "tags": [
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/internet-topology-data-kit/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Learning_Regexes_to_Extract_Router_Names_from_Hostnames",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:AS_Organization",
+        "name": "AS Organization",
+        "organization": "CAIDA",
+        "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
+        "tags": [
+            "topology",
+            "ownership"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/as-organizations/",
+                "tags": [
+                    "FILE"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:BGP_hijacking_classification",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Euro-IX_IXP_Service_Matrix",
+        "name": "Euro-IX IXP Service Matrix",
+        "description": "A mapping of the services provided by European IXPs.",
+        "tags": [
+            "ixp",
+            "topology"
+        ],
+        "links": [
+            {
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:Spoofer",
+        "name": "Spoofer",
+        "links": [
+            {
+                "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:MAWI_Internet_Traffic",
+        "name": "MAWI Internet Traffic",
+        "links": [
+            {
+                "to": "Paper:Hypersparse_Neural_Network_Analysis_of_Large-Scale_Internet_Traffic",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:CAIDA_Internet_Traffic",
+        "name": "CAIDA Internet Traffic",
+        "links": [
+            {
+                "to": "Paper:Hypersparse_Neural_Network_Analysis_of_Large-Scale_Internet_Traffic",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:UCSD_Network_telescope",
+        "name": "UCSD Network telescope",
+        "links": [
+            {
+                "to": "Paper:Chocolatine_Outage_Detection_for_Internet_Background_Radiation",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:MaxMind_GeoLite",
+        "name": "MaxMind GeoLite",
+        "links": [
+            {
+                "to": "Paper:Geo-Locating_BGP_prefixes",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "_type": "Dataset",
+        "id": "Dataset:MopEye",
+        "name": "MopEye",
+        "links": [
+            {
+                "to": "Paper:An_Empirical_Study_of_Mobile_Network_Behavior_and_Application_Performance_in_the_Wild",
+                "label": "used by"
+            }
+        ]
+    }
+]

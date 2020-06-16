@@ -1,0 +1,18 @@
+[
+    {
+        "_type": "License",
+        "id": "license:BSD-4-Clause-UC",
+        "name": "BSD-4-Clause (University of California-Specific)",
+        "url": "https://spdx.org/licenses/BSD-4-Clause-UC.html"
+    },
+    {
+        "_type": "License",
+        "id": "software:pyasn",
+        "name": "pyasn"
+    },
+    {
+        "_type": "License",
+        "id": "License:Netacuity",
+        "name": "Netacuity"
+    }
+]
