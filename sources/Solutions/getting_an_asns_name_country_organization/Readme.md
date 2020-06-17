@@ -81,31 +81,68 @@ source  : the RIR or NIR database which was contained this entry
 example script
 ~~~python
 import re
-re_format = re.compile("# format:(.+)")
 
-orgs  = {}
-asns = {}
+filename = 'tester'
+re_format= re.compile("# format:(.+)")
+
+
+asn_names = {}
+org_country = {}
+org_asns = {}
+org_id_name = {}
+
+
 with open(filename) as f:
     for line in f:
         m = re_format.search(line)
         if m:
             keys = m.group(1).rstrip().split(",")
-
+           
         # skips over comments
         if len(line) == 0 or line[0] == "#":
             continue
+
         values = line.rstrip().split("|")
+    
+        #Dictionary that holds the ASN id mapping 
         info = {}
+
+        #id - org_id and ASN
         id_ = values[0]
-        for i,key in enumerate(keys):
-            info[key] = values[i]
-            if key == "country":
-               org_country[id_] = values[i]
-       
-        if key[0] == "org_id":
-            orgs[id_] = info
-            info["asns"] = []
-        else:
-            orgs[info["org_id"]]["asns"].append(id_)
-            asns[id_] = info
+    
+        
+
+        for i, key in enumerate(keys):
+            
+            if "country" in key:
+                # Map org_id to country
+                org_country[id_] = values[3]
+                # Map org_id to org_name
+                org_id_name[id_] = values[2]
+                
+            
+            if 'aut' in key:
+                # Map asn to org_id
+                org_asns[id_] = values[3]
+        
+                # Map asn to asn_name
+                asn_names[id_] = values[2]
+                info = org_asns
+
+    # Convert values to a list        
+    info = {k: v.split() for k, v in info.items()}
+
+    # Iterate through asn:org_id 
+    for asn, org_id in org_asns.items():
+        # Insert asn_name at the front of list
+        if asn in asn_names:
+            info[asn].insert(0, asn_names[asn]) 
+        # Append org_name
+        if org_id in org_id_name:
+            info[asn].append(org_id_name[org_id])
+        # Append country
+        if org_id in org_country:
+            info[asn].append(org_country[org_id])
+          
+    print(info)     
 ~~~
