@@ -114,7 +114,7 @@ with open(filename) as f:
 
         for i, key in enumerate(keys):
             
-            if "country" in key:
+            if "org_name" in key:
                 # Map org_id to country
                 org_country[id_] = values[3]
                 # Map org_id to org_name
@@ -144,5 +144,5 @@ with open(filename) as f:
         if org_id in org_country:
             info[asn].append(org_country[org_id])
           
-    print(info)     
+    print(info)
 ~~~
