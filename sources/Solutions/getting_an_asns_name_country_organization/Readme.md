@@ -78,71 +78,52 @@ org_id  : maps to an organization entry \
 opaque_id   : opaque identifier used by RIR extended delegation format \
 source  : the RIR or NIR database which was contained this entry 
 
-example script
-~~~python
+The following script returns a dictionary `asn_info` that maps an ASN id to other field values in the following format:
+{'12285': {'aut': '12285', 'changed': '', 'aut_name': '', 
+'org_id': '', 'source': '', 'org_name': '', 'country': '' }
+
+ ~~~python
 import re
+import sys
 
 filename = 'tester'
 re_format= re.compile("# format:(.+)")
 
-
-asn_names = {}
-org_country = {}
-org_asns = {}
-org_id_name = {}
-
+org_info = {}
+asn_info = {}
 
 with open(filename) as f:
     for line in f:
         m = re_format.search(line)
         if m:
             keys = m.group(1).rstrip().split(",")
-           
+            keys = keys[0].split("|")
+
         # skips over comments
         if len(line) == 0 or line[0] == "#":
             continue
 
         values = line.rstrip().split("|")
     
-        #Dictionary that holds the ASN id mapping 
         info = {}
 
-        #id - org_id and ASN
-        id_ = values[0]
-    
-        
+        for i,key in enumerate(keys):
+            info[keys[i]] = values[i]
 
-        for i, key in enumerate(keys):
-            
-            if "org_name" in key:
-                # Map org_id to country
-                org_country[id_] = values[3]
-                # Map org_id to org_name
-                org_id_name[id_] = values[2]
-                
-            
-            if 'aut' in key:
-                # Map asn to org_id
-                org_asns[id_] = values[3]
-        
-                # Map asn to asn_name
-                asn_names[id_] = values[2]
-                info = org_asns
+        if "aut" == keys[0]:
+            org_id = info["org_id"]
+            if org_id in org_info:
+                for key in ["org_name","country"]:
+                    info[key] = org_info[org_id][key]
 
-    # Convert values to a list        
-    info = {k: v.split() for k, v in info.items()}
+            asn_info[values[0]] = info
 
-    # Iterate through asn:org_id 
-    for asn, org_id in org_asns.items():
-        # Insert asn_name at the front of list
-        if asn in asn_names:
-            info[asn].insert(0, asn_names[asn]) 
-        # Append org_name
-        if org_id in org_id_name:
-            info[asn].append(org_id_name[org_id])
-        # Append country
-        if org_id in org_country:
-            info[asn].append(org_country[org_id])
-          
-    print(info)
+        elif "org_id" == keys[0]:
+            org_info[values[0]] = info
+        else:
+            print ("unknown type",keys[0],file= sys.stderr)
+
+# asn_info contains the asn mapping to other field values in this format:
+# {'12285': {'aut': '12285', 'changed': '20011231', 'aut_name': 'ONE-ELEVEN', 
+# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }            
 ~~~
