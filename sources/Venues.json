@@ -1,0 +1,15 @@
+[
+    {
+        "_type": "Venue",
+        "id": "Venue:ACM_Computer_and_Communications_Security_CCS",
+        "name": "ACM Computer and Communications Security (CCS)",
+        "description": "...",
+        "dates": [
+            {
+                "date":"2019.11",
+                "url":"https://sigsac.org/ccs/CCS2019/"
+            }
+        ],
+        "tags": []
+    }
+]

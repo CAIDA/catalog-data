@@ -1,0 +1,25 @@
+[
+    {
+        "_type": "Presentation",
+        "id": "Presentation:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+        "name": "Network Hygiene, Incentives, and Regulation: Deployment of Source Address Validation in the Internet",
+        "tags": [
+            "measurement methodology",
+            "topology",
+            "security",
+            "software/tools"
+        ],
+        "venues":[
+            {
+                "presenter":"Author:Luckie,_Matthew",
+                "venue": "Venue:ACM_Computer_and_Communications_Security_CCS",
+                "date":"2019.11"
+            }
+        ],
+        "links": [
+            {
+                "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet"
+            }
+        ]
+    }
+]
