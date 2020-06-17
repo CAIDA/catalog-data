@@ -1,7 +1,7 @@
 ~~~json
 {
     "name": "How to get an ASN's name, country and organization?",
-    "description":"Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
+    "description":"Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
     "tags": [
         "measurement methodology",
@@ -9,6 +9,8 @@
         "software/tools",
         "ASN",
         "geolocation"
+        "organization"
+        "country"
     ]
 }
 ~~~
@@ -38,12 +40,10 @@ One way to map a ASN to a country is by using the **country of its organization.
 The AS Organization files contain two different types of entries: AS numbers and
 organizations.\
 The two data types are divided by lines that start with
-'# format....'.  \ 
+'# format....'.\
 An example can be found below. \
 The country value is stored on the organization
-field.\
-Create a hash mapping organizations to country and use that to match from ASN to 
-organization to country.
+field.
 
 Example of the AS organization in a test file:
 ~~~
@@ -61,9 +61,9 @@ Organization fields
  org_id  : unique ID for the given organization, \
  changed : the changed date provided by its WHOIS entry \
  name    : name could be selected from the AUT entry tied to the
-           organization, the AUT entry with the largest customer cone,
-          listed for the organization (if there existed an stand alone
-           organization), or a human maintained file. \
+               organization, the AUT entry with the largest customer cone,
+               listed for the organization (if there existed an stand alone
+               organization), or a human maintained file. \
  country : some WHOIS provide as a individual field. In other cases
            we infer it from the addresses \
  source  : the RIR or NIR database which contained this entry 
@@ -78,15 +78,14 @@ org_id  : maps to an organization entry \
 opaque_id   : opaque identifier used by RIR extended delegation format \
 source  : the RIR or NIR database which was contained this entry 
 
-The following script returns a dictionary `asn_info` that maps an ASN id to other field values in the following format:
-{'12285': {'aut': '12285', 'changed': '', 'aut_name': '', 
-'org_id': '', 'source': '', 'org_name': '', 'country': '' }
+The following script returns a dictionary `asn_info` that maps an ASN id to other field values in the following format:\
+{'12285': {'aut': '12285', 'changed': ' ', 'aut_name': ' ', 
+'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
 
  ~~~python
 import re
 import sys
 
-filename = 'tester'
 re_format= re.compile("# format:(.+)")
 
 org_info = {}
