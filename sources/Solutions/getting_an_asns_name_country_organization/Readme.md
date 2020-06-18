@@ -87,7 +87,7 @@ The following script returns a dictionary `asn_info` that maps an ASN id to othe
 'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
 
  ~~~python
-         import re
+import re
 import sys
 
 filename = 'tester'
