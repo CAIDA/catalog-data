@@ -82,14 +82,15 @@ opaque_id   : opaque identifier used by RIR extended delegation format \
 source  : the RIR or NIR database which was contained this entry 
 
 ### <ins> Solution </ins> ###
-The following script returns a dictionary `asn_info` that maps an ASN id to other field values `aut`, `changed`, `aut_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
-{'12285': {'aut': '12285', 'changed': ' ', 'aut_name': ' ', 
+The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
+{'12285': {'asn': '12285', 'changed': ' ', 'asn_name': ' ', 
 'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
 
  ~~~python
-import re
+         import re
 import sys
 
+filename = 'tester'
 re_format= re.compile("# format:(.+)")
 
 org_info = {}
@@ -101,7 +102,11 @@ with open(filename) as f:
         if m:
             keys = m.group(1).rstrip().split(",")
             keys = keys[0].split("|")
+            if keys[0] == 'aut':
+                keys[0] = 'asn'
+                keys[2] = 'asn_name'
 
+            
         # skips over comments
         if len(line) == 0 or line[0] == "#":
             continue
@@ -112,12 +117,15 @@ with open(filename) as f:
 
         for i,key in enumerate(keys):
             info[keys[i]] = values[i]
+           
 
-        if "aut" == keys[0]:
+        if "asn" == keys[0]:
             org_id = info["org_id"]
             if org_id in org_info:
                 for key in ["org_name","country"]:
                     info[key] = org_info[org_id][key]
+                    # print(info)
+                    
 
             asn_info[values[0]] = info
 
@@ -126,7 +134,9 @@ with open(filename) as f:
         else:
             print ("unknown type",keys[0],file= sys.stderr)
 
-# asn_info contains the asn mapping to other field values in this format:
-# {'12285': {'aut': '12285', 'changed': '20011231', 'aut_name': 'ONE-ELEVEN', 
-# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }            
+# Contains the asn mapping to other field values in this format:
+# {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', 
+# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }
+# print(asn_info)       
+            
 ~~~
