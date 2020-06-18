@@ -34,6 +34,12 @@
 
 **What is an ASN's country?** \
     • The country where the ASN's organization is located. 
+    
+    
+### <ins> Caveats </ins> ###
+
+For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. 
+In other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. 
 
 ### <ins> Mapping ASN's to country </ins> ###
 *AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)
