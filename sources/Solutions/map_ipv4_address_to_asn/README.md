@@ -36,14 +36,12 @@ for elem in stream:
 ~~~
 
 ### code snippit 
-- **pyasn** code snippet 
-    ~~~python
-    import pysan
-    asndb = pyasn.pyasn('prefix_as-path.dat')
-
-    for ip in ips:
-       asn_path,prefix =  asndb.lookup(ip)
-       if asn:
-         print (ip+"\t"+asn_path)
-         # or do whatever process you need on the asn_path
-    ~~~
+~~~python
+import pysan
+asndb = pyasn.pyasn('prefix_as-path.dat')
+for ip in ips:
+   asn_path,prefix =  asndb.lookup(ip)
+   if asn:
+      print (ip+"\t"+asn_path)
+      # or do whatever process you need on the asn_path
+~~~
