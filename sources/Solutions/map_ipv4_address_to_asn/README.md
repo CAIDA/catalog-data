@@ -1,24 +1,15 @@
-## <ins> Mapping ipv4 address to AS path </ins> ##
-
-# key/values
 ~~~
 {
     "question": "How to find the AS path for a IPv4 address with Python?",
-    "datasets": [
-        [
-            "dataset":"BGPStream",
-            "joins":[
-                ["AS Path IPv4","Prefix IPv4"]
-            ]
-        ]
-    ],
-    "topics": [
+    "links": ["dataset:BGPStream"],
+    "tags": [
         "measurement methodology",
         "topology",
         "software/tools"
     ]
 }
 ~~~
+background: 	https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/
 
 # solution
 Write a script that uses BGPStream's [PyBGPStream](https://bgpstream.caida.org/docs/tutorials/pybgpstream)
