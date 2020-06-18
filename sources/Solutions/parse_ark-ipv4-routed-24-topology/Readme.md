@@ -12,100 +12,56 @@
     ]
 }
 ~~~
+https://www.caida.org/publications/papers/2012/topocompare-tr/topocompare-tr.pdf
+https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf
+https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html
+https://www.caida.org/data/internet-topology-data-kit/ <--
+
+https://www.caida.org/data/request_user_info_forms/ark.xml (download your copy of data)
+https://docs.python.org/3/library/bz2.html
 ### Introduction ###
 
-**What is an AS?**\
- • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
- • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\
- • Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \
- • Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \
- • More information on AS can be found here: https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html 
-
-**What is an ASN?**\
-    • Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.
-
-**What is an ASN's organization?**\
-    • Each ASN can be mapped to a organization that controls multiple AS's over its network. 
-
-**What is an ASN's country?** \
-    • The country where the ASN's organization is located. 
-
-### Mapping ASN's to country ###
-*Datasets can be found here* : https://www.caida.org/data/as-organizations/
-
-One way to map a ASN to a country is by using the **country of its organization.** 
-
-The AS Organization files contain two different types of entries: AS numbers and
-organizations.\
-The two data types are divided by lines that start with
-'# format....'.  \ 
-An example can be found below. \
-The country value is stored on the organization
-field.\
-Create a hash mapping organizations to country and use that to match from ASN to 
-organization to country.
-
-Example of the AS organization in a test file:
+midar-iff.nodes.bz2
 ~~~
-# format: org_id|changed|name|country|source
-LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
-# format: aut|changed|aut_name|org_id|opaque_id|source
-1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN
+node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
 
-### Explanation of the data fields ###
+midar-iff.links.bz2
+~~~
+link L1:  N27677807:1.0.0.1 N106961
+~~~
 
---------------------
-Organization fields
---------------------
- org_id  : unique ID for the given organization, \
- changed : the changed date provided by its WHOIS entry \
- name    : name could be selected from the AUT entry tied to the
-           organization, the AUT entry with the largest customer cone,
-          listed for the organization (if there existed an stand alone
-           organization), or a human maintained file. \
- country : some WHOIS provide as a individual field. In other cases
-           we infer it from the addresses \
- source  : the RIR or NIR database which contained this entry 
+midar-iff.nodes.as.bz2
+~~~
+node.AS N1 31655 refinement
+~~~
 
-----------
-AS fields
-----------
-aut     : the AS number \
-changed : the changed date provided by its WHOIS entry \
-aut_name : the name provide for the individual AS number \
-org_id  : maps to an organization entry \
-opaque_id   : opaque identifier used by RIR extended delegation format \
-source  : the RIR or NIR database which was contained this entry 
+midar-iff.nodes.geo.bz
+~~~
+# node.geo nod_id: continent country region city lat lon population method
+node.geo N4:    SA      CO      34      Bogota  4.60971 -74.08175       7674366         ddec
+~~~
 
-example script
+ecode
+~~~json
+{
+    "id":4,
+    "asn":123,
+    "ips":["12.3.34"],
+     "neighbors":[3,2,3],
+    "location":{
+        "continent":"SA",
+        "country":"CO",
+        "region":"34",
+        "city"
+        ....
+     }
+}
+~~~
+
 ~~~python
-import re
-re_format = re.compile("# format:(.+)")
-
-orgs  = {}
-asns = {}
-with open(filename) as f:
-    for line in f:
-        m = re_format.search(line)
-        if m:
-            keys = m.group(1).rstrip().split(",")
-
-        # skips over comments
-        if len(line) == 0 or line[0] == "#":
-            continue
-        values = line.rstrip().split("|")
-        info = {}
-        id_ = values[0]
-        for i,key in enumerate(keys):
-            info[key] = values[i]
-            if key == "country":
-               org_country[id_] = values[i]
-       
-        if key[0] == "org_id":
-            orgs[id_] = info
-            info["asns"] = []
-        else:
-            orgs[info["org_id"]]["asns"].append(id_)
-            asns[id_] = info
+import bz2
+with bz2.open(filename) as f:
+   for line in f:
+      line = line.encode()
 ~~~
