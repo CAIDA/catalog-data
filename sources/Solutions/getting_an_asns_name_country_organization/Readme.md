@@ -82,8 +82,8 @@ AS fields
 
 ### <ins> Solution </ins> ###
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
-{'12285': {'asn': '12285', 'changed': ' ', 'asn_name': ' ', 
-'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
+{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', 
+`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
 
  ~~~python
 import re
