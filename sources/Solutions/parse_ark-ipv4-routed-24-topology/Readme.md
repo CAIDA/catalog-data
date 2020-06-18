@@ -59,6 +59,7 @@ ecode
 }
 ~~~
 
+useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 ~~~python
 import bz2
 with bz2.open(filename) as f:
