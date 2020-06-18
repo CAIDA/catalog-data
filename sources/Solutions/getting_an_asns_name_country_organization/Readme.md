@@ -82,7 +82,7 @@ org_id  : maps to an organization entry \
 opaque_id   : opaque identifier used by RIR extended delegation format \
 source  : the RIR or NIR database which was contained this entry 
 
-### <ins> Example script </ins>###
+### <ins> Example script </ins> ###
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `aut`, `changed`, `aut_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
 {'12285': {'aut': '12285', 'changed': ' ', 'aut_name': ' ', 
 'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
