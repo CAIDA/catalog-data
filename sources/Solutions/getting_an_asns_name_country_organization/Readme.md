@@ -1,6 +1,6 @@
 ~~~json
 {
-    "name": "How to get an ASN's name, country and organization?",
+    "name": "How to get an ASN's name, organization and country?",
     "description":"Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
     "tags": [
@@ -14,7 +14,7 @@
     ]
 }
 ~~~
-### Introduction ###
+## Introduction ##
 
 **What is an AS?**\
  • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
