@@ -36,7 +36,7 @@
     • The country where the ASN's organization is located. 
 
 ### <ins> Mapping ASN's to country </ins> ###
-*Datasets can be found here* : https://www.caida.org/data/as-organizations/
+*AS to Organization Mapping Datasets can be found here* : https://www.caida.org/data/as-organizations/
 
 One way to map a ASN to a country is by mapping to the **country of its organization.** 
 
