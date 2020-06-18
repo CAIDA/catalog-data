@@ -17,9 +17,27 @@ to download and store the AS path and prefixes into prefix-as_paths.dat.  Write 
 [pyasn](https://pypi.org/project/pyasn/) that loads prefix-as_paths.dat, and then use it to map
 between the prefix-as_paths.dat and your ips. Below are the relavent code snippets.
 
-- [download-as_paths.py](download-as_paths.py)
+### download Prefix ASN with BGPStream
+~~~python
+#!/usr/bin/env python
+
+import pybgpstream
+stream = pybgpstream.BGPStream(
+    from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
+    collectors=["route-views.sg", "route-views.eqix"],
+    record_type="updates"
+)
+
+for elem in stream:
+    # record fields can be accessed directly from elem
+    asn_path = elem.fields["as-path"]
+    prefix = elem.fields["prefix"]
+    print(prefix+"\t"+asn_path)
+~~~
+
+### code snippit 
 - **pyasn** code snippet 
-    ~~~
+    ~~~python
     import pysan
     asndb = pyasn.pyasn('prefix_as-path.dat')
 
