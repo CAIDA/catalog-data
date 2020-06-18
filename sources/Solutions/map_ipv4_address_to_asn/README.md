@@ -1,7 +1,7 @@
 ~~~
 {
     "question": "How to find the AS path for a IPv4 address with Python?",
-    "links": ["dataset:BGPStream"],
+    "links": ["software:BGPStream"],
     "tags": [
         "measurement methodology",
         "topology",
