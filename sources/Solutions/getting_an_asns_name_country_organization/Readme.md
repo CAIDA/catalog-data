@@ -14,10 +14,14 @@
     ]
 }
 ~~~
-## Introduction ##
+
+ ## <ins> Mapping an ASN to Organization and Country </ins> ##
+
+### Introduction ###
 
 **What is an AS?**\
- • An AS can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
+ • AS stands for Autonomous system.\
+ • It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
  • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\
  • Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \
  • Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \
@@ -32,18 +36,17 @@
 **What is an ASN's country?** \
     • The country where the ASN's organization is located. 
 
-### Mapping ASN's to country ###
+### <ins> Mapping ASN's to country </ins>  ###
 *Datasets can be found here* : https://www.caida.org/data/as-organizations/
 
-One way to map a ASN to a country is by using the **country of its organization.** 
+One way to map a ASN to a country is by mapping to the **country of its organization.** 
 
 The AS Organization files contain two different types of entries: AS numbers and
 organizations.\
 The two data types are divided by lines that start with
 '# format....'.\
-An example can be found below. \
-The country value is stored on the organization
-field.
+An example can be found below.\
+Note: The `country` field is stored on the organization field format. 
 
 Example of the AS organization in a test file:
 ~~~
@@ -58,6 +61,7 @@ LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 --------------------
 Organization fields
 --------------------
+
  org_id  : unique ID for the given organization, \
  changed : the changed date provided by its WHOIS entry \
  name    : name could be selected from the AUT entry tied to the
@@ -78,7 +82,8 @@ org_id  : maps to an organization entry \
 opaque_id   : opaque identifier used by RIR extended delegation format \
 source  : the RIR or NIR database which was contained this entry 
 
-The following script returns a dictionary `asn_info` that maps an ASN id to other field values in the following format:\
+### <ins> Example script <\ins> ###
+The following script returns a dictionary `asn_info` that maps an ASN id to other field values `aut`, `changed`, `aut_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
 {'12285': {'aut': '12285', 'changed': ' ', 'aut_name': ' ', 
 'org_id': ' ', 'source': '', 'org_name': ' ', 'country': ' ' }
 
