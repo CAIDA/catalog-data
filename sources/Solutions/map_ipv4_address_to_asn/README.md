@@ -11,6 +11,17 @@
 ~~~
 background: 	https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/
 
+~~~
+10.2.1.0/24  10 2 3 5  5
+10.2.1.0/24  23 5      5
+10.2.1.0/24  23 4 5    5
+10.2.1.0/24  21 8 4    4
+10.2.1.0/24  21 8 {4,3}   as set
+
+10.2.1.0/24 4_5 multie origi
+10.2.1.0/24  4_{4,3}
+~~~
+
 # solution
 Write a script that uses BGPStream's [PyBGPStream](https://bgpstream.caida.org/docs/tutorials/pybgpstream)
 to download and store the AS path and prefixes into prefix-as_paths.dat.  Write a script using
@@ -35,6 +46,7 @@ for elem in stream:
     print(prefix+"\t"+asn_path)
 ~~~
 
+''' python3 ip_asn.py -p prefix2asn.dat -i ips.txt -m pyasn '''
 ### code snippit 
 ~~~python
 import pysan
