@@ -1,6 +1,6 @@
 ~~~json
 {
-    "name": "How to get an ASN's name, country and organization?",
+    "name": "How to get a router's IPs, ASN, neighbors, and geographic location.",
     "description":"Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
     "tags": [
