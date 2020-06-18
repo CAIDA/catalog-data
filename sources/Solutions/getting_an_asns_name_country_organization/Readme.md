@@ -1,4 +1,4 @@
-## <ins> Mapping an ASN to Organization and Country </ins> ##
+## <ins> Mapping ASN to Organization and Country </ins> ##
 ~~~json
 {
     "name": "How to get an ASN's name, organization and country?",
