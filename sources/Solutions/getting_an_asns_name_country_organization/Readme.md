@@ -124,9 +124,7 @@ with open(filename) as f:
             if org_id in org_info:
                 for key in ["org_name","country"]:
                     info[key] = org_info[org_id][key]
-                    # print(info)
-                    
-
+             
             asn_info[values[0]] = info
 
         elif "org_id" == keys[0]:
