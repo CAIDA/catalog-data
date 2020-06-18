@@ -49,7 +49,7 @@ Note: The `country` field is stored on the organization field format.
 
 Example of the AS organization in a test file:
 ~~~
-# format: org_id|changed|name|country|source
+# format: org_id|changed|org_name|country|source
 LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 # format: aut|changed|aut_name|org_id|opaque_id|source
 1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN
@@ -61,25 +61,24 @@ LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 Organization fields
 --------------------
 
- org_id  : unique ID for the given organization, \
- changed : the changed date provided by its WHOIS entry \
- name    : name could be selected from the AUT entry tied to the
+ **org_id** : unique ID for the given organization \
+ **changed** : the changed date provided by its WHOIS entry \
+ **name**    : the name of the organization. The name could be selected from the AUT entry tied to the
                organization, the AUT entry with the largest customer cone,
                listed for the organization (if there existed an stand alone
                organization), or a human maintained file. \
- country : some WHOIS provide as a individual field. In other cases
-           we infer it from the addresses \
- source  : the RIR or NIR database which contained this entry 
+ **country** : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \
+ **source**  : the RIR or NIR database which contained this entry 
 
 ----------
 AS fields
 ----------
-aut     : the AS number \
-changed : the changed date provided by its WHOIS entry \
-aut_name : the name provide for the individual AS number \
-org_id  : maps to an organization entry \
-opaque_id   : opaque identifier used by RIR extended delegation format \
-source  : the RIR or NIR database which was contained this entry 
+**aut**     : the AS number or asn \
+**changed** : the changed date provided by its WHOIS entry \
+**aut_name** : the name provided for the individual AS number \
+**org_id**  : maps to an organization entry \
+**opaque_id**   : opaque identifier used by RIR extended delegation format \
+**source**  : the RIR or NIR database which was contained this entry 
 
 ### <ins> Solution </ins> ###
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
@@ -103,7 +102,9 @@ with open(filename) as f:
             keys = m.group(1).rstrip().split(",")
             keys = keys[0].split("|")
             if keys[0] == 'aut':
+                # Replace all instances of 'aut' with 'asn'
                 keys[0] = 'asn'
+                # Replace all instances of 'aut_name' with 'asn_name'
                 keys[2] = 'asn_name'
 
             
