@@ -1,4 +1,3 @@
-## <ins> Mapping ASN to Organization and Country </ins> ##
 ~~~json
 {
     "id":"solution:getting_an_asns_name_country_organization",
