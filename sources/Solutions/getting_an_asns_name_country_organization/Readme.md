@@ -1,6 +1,8 @@
 ## <ins> Mapping ASN to Organization and Country </ins> ##
 ~~~json
 {
+    "id":"solution:getting_an_asns_name_country_organization",
+    "visibility": "public",
     "name": "How to get an ASN's name, organization and country?",
     "description":"Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
@@ -9,8 +11,8 @@
         "topology",
         "software/tools",
         "ASN",
-        "geolocation"
-        "organization"
+        "geolocation",
+        "organization",
         "country"
     ]
 }

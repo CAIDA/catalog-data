@@ -1,6 +1,6 @@
 [
     {
-        "_type": "Software",
+        "__typename": "software",
         "id": "software:pyasn",
         "name": "pyasn",
         "organization": "Hadi Asghari",
@@ -23,8 +23,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:PeeringDB",
+        "__typename": "software",
+        "id": "software:PeeringDB",
         "name": "PeeringDB",
         "description": "PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions.<br>The database is a non-profit, community-driven initiative run and promoted by volunteers. It is a public tool for the growth and good of the Internet. Join the community and support the continued development of the Internet.",
         "tags": [
@@ -48,8 +48,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:U.S._National_Weather_Serice_Severe_Weather_Alert",
+        "__typename": "software",
+        "id": "software:U.S._National_Weather_Serice_Severe_Weather_Alert",
         "name": "U.S. National Weather Serice:Severe Weather Alert",
         "description": "A powerful weather system combined with a lack of ice on the Great Lakes will produce significant amounts of snow, up to 3 to 4 feet in places, and blizzard conditions. Travel may be difficult to impossible. Cold air behind this front will bring below normal temperatures to the eastern third of the U.S., including potential for freezing overnight temperatures in Florida.",
         "tags": [
@@ -72,8 +72,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:AS_Rank",
+        "__typename": "software",
+        "id": "software:AS_Rank",
         "name": "AS Rank",
         "organization": "CAIDA",
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
@@ -95,7 +95,7 @@
         ],
         "links": [
             {
-                "to": "Software:AS_Rank"
+                "to": "software:AS_Rank"
             },
             {
                 "to": "Dataset:AS_Rank"
@@ -103,8 +103,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:Netacuity",
+        "__typename": "software",
+        "id": "software:Netacuity",
         "name": "Netacuity",
         "organization": "Digital Elements",
         "description": "IP Geolocation Service",
@@ -132,8 +132,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:AS_Relationship",
+        "__typename": "software",
+        "id": "software:AS_Relationship",
         "name": "AS Relationship",
         "organization": "CAIDA",
         "description": "Measures an AS's centrality",
@@ -154,8 +154,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:Internet_Health_Report",
+        "__typename": "software",
+        "id": "software:Internet_Health_Report",
         "name": "Internet Health Report",
         "organization": "IIJ Labs",
         "description": "Measures an AS's centrality",
@@ -173,8 +173,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:BGPStream",
+        "__typename": "software",
+        "id": "software:BGPStream",
         "name": "BGPStream",
         "organization": "CAIDA",
         "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
@@ -222,8 +222,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:HI-CUBE",
+        "__typename": "software",
+        "id": "software:HI-CUBE",
         "name": "HI-CUBE",
         "organization": "CAIDA",
         "description": "HI-CUBE is a web-based prototype platform for processing, storing, investigating, and correlating diverse streams of large-scale Internet security-related data.",
@@ -244,8 +244,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:IODA",
+        "__typename": "software",
+        "id": "software:IODA",
         "name": "IODA",
         "organization": "CAIDA",
         "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
@@ -268,8 +268,8 @@
         ]
     },
     {
-        "_type": "Software",
-        "id": "Software:MANIC",
+        "__typename": "software",
+        "id": "software:MANIC",
         "name": "MANIC",
         "organization": "CAIDA",
         "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
@@ -291,7 +291,7 @@
         ],
         "links": [
             {
-                "to": "Software:MANIC"
+                "to": "software:MANIC"
             }
         ]
     }

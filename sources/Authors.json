@@ -1,349 +1,349 @@
 [
     {
-        "_type": "Author",
-        "id": "Author:Luckie,_Matthew",
+        "__typename": "author",
+        "id": "author:Luckie,_Matthew",
         "nameFirst": "Matthew",
         "nameLast": "Luckie"
     },
     {
-        "_type": "Author",
-        "id": "Author:Beverly,_Robert",
+        "__typename": "author",
+        "id": "author:Beverly,_Robert",
         "nameFirst": "Robert",
         "nameLast": "Beverly"
     },
     {
-        "_type": "Author",
-        "id": "Author:Koga,_Ryan",
+        "__typename": "author",
+        "id": "author:Koga,_Ryan",
         "nameFirst": "Ryan",
         "nameLast": "Koga"
     },
     {
-        "_type": "Author",
-        "id": "Author:Keys,_Ken",
+        "__typename": "author",
+        "id": "author:Keys,_Ken",
         "nameFirst": "Ken",
         "nameLast": "Keys"
     },
     {
-        "_type": "Author",
-        "id": "Author:Kroll,_Joshua_A.",
+        "__typename": "author",
+        "id": "author:Kroll,_Joshua_A.",
         "nameFirst": "Joshua A.",
         "nameLast": "Kroll"
     },
     {
-        "_type": "Author",
-        "id": "Author:claffy,_kc",
+        "__typename": "author",
+        "id": "author:claffy,_kc",
         "nameFirst": "kc",
         "nameLast": "claffy"
     },
     {
-        "_type": "Author",
-        "id": "Author:Testart,_Cecilia",
+        "__typename": "author",
+        "id": "author:Testart,_Cecilia",
         "nameFirst": "Cecilia",
         "nameLast": "Testart"
     },
     {
-        "_type": "Author",
-        "id": "Author:Richter,_Philipp",
+        "__typename": "author",
+        "id": "author:Richter,_Philipp",
         "nameFirst": "Philipp",
         "nameLast": "Richter"
     },
     {
-        "_type": "Author",
-        "id": "Author:King,_Alistair",
+        "__typename": "author",
+        "id": "author:King,_Alistair",
         "nameFirst": "Alistair",
         "nameLast": "King"
     },
     {
-        "_type": "Author",
-        "id": "Author:Dainotti,_Alberto",
+        "__typename": "author",
+        "id": "author:Dainotti,_Alberto",
         "nameFirst": "Alberto",
         "nameLast": "Dainotti"
     },
     {
-        "_type": "Author",
-        "id": "Author:Clark,_David",
+        "__typename": "author",
+        "id": "author:Clark,_David",
         "nameFirst": "David",
         "nameLast": "Clark"
     },
     {
-        "_type": "Author",
-        "id": "Author:Huffaker,_Bradley",
+        "__typename": "author",
+        "id": "author:Huffaker,_Bradley",
         "nameFirst": "Bradley",
         "nameLast": "Huffaker"
     },
     {
-        "_type": "Author",
-        "id": "Author:Carisimo,_Esteban",
+        "__typename": "author",
+        "id": "author:Carisimo,_Esteban",
         "nameFirst": "Esteban",
         "nameLast": "Carisimo"
     },
     {
-        "_type": "Author",
-        "id": "Author:Selmo,_Carlos",
+        "__typename": "author",
+        "id": "author:Selmo,_Carlos",
         "nameFirst": "Carlos",
         "nameLast": "Selmo"
     },
     {
-        "_type": "Author",
-        "id": "Author:Alvarez-Hamelin,_J._Ignacio",
+        "__typename": "author",
+        "id": "author:Alvarez-Hamelin,_J._Ignacio",
         "nameFirst": "J. Ignacio",
         "nameLast": "Alvarez-Hamelin"
     },
     {
-        "_type": "Author",
-        "id": "Author:Dhamdhere,_Amogh",
+        "__typename": "author",
+        "id": "author:Dhamdhere,_Amogh",
         "nameFirst": "Amogh",
         "nameLast": "Dhamdhere"
     },
     {
-        "_type": "Author",
-        "id": "Author:Kepner,_Jeremy",
+        "__typename": "author",
+        "id": "author:Kepner,_Jeremy",
         "nameFirst": "Jeremy",
         "nameLast": "Kepner"
     },
     {
-        "_type": "Author",
-        "id": "Author:Cho,_Kenjiro",
+        "__typename": "author",
+        "id": "author:Cho,_Kenjiro",
         "nameFirst": "Kenjiro",
         "nameLast": "Cho"
     },
     {
-        "_type": "Author",
-        "id": "Author:Gadepally,_Vijay",
+        "__typename": "author",
+        "id": "author:Gadepally,_Vijay",
         "nameFirst": "Vijay",
         "nameLast": "Gadepally"
     },
     {
-        "_type": "Author",
-        "id": "Author:Michaleas,_Peter",
+        "__typename": "author",
+        "id": "author:Michaleas,_Peter",
         "nameFirst": "Peter",
         "nameLast": "Michaleas"
     },
     {
-        "_type": "Author",
-        "id": "Author:Milechin,_Lauren",
+        "__typename": "author",
+        "id": "author:Milechin,_Lauren",
         "nameFirst": "Lauren",
         "nameLast": "Milechin"
     },
     {
-        "_type": "Author",
-        "id": "Author:Padmanabhan,_Ramakrishna",
+        "__typename": "author",
+        "id": "author:Padmanabhan,_Ramakrishna",
         "nameFirst": "Ramakrishna",
         "nameLast": "Padmanabhan"
     },
     {
-        "_type": "Author",
-        "id": "Author:Schulman,_Aaron",
+        "__typename": "author",
+        "id": "author:Schulman,_Aaron",
         "nameFirst": "Aaron",
         "nameLast": "Schulman"
     },
     {
-        "_type": "Author",
-        "id": "Author:Levin,_Dave",
+        "__typename": "author",
+        "id": "author:Levin,_Dave",
         "nameFirst": "Dave",
         "nameLast": "Levin"
     },
     {
-        "_type": "Author",
-        "id": "Author:Spring,_Neil",
+        "__typename": "author",
+        "id": "author:Spring,_Neil",
         "nameFirst": "Neil",
         "nameLast": "Spring"
     },
     {
-        "_type": "Author",
-        "id": "Author:Lutscher,_Philipp_M.",
+        "__typename": "author",
+        "id": "author:Lutscher,_Philipp_M.",
         "nameFirst": "Philipp M.",
         "nameLast": "Lutscher"
     },
     {
-        "_type": "Author",
-        "id": "Author:Weidmann,_Nils_B.",
+        "__typename": "author",
+        "id": "author:Weidmann,_Nils_B.",
         "nameFirst": "Nils B.",
         "nameLast": "Weidmann"
     },
     {
-        "_type": "Author",
-        "id": "Author:Roberts,_Margaret_E.",
+        "__typename": "author",
+        "id": "author:Roberts,_Margaret_E.",
         "nameFirst": "Margaret E.",
         "nameLast": "Roberts"
     },
     {
-        "_type": "Author",
-        "id": "Author:Jonker,_Mattijs",
+        "__typename": "author",
+        "id": "author:Jonker,_Mattijs",
         "nameFirst": "Mattijs",
         "nameLast": "Jonker"
     },
     {
-        "_type": "Author",
-        "id": "Author:Bian,_Rui",
+        "__typename": "author",
+        "id": "author:Bian,_Rui",
         "nameFirst": "Rui",
         "nameLast": "Bian"
     },
     {
-        "_type": "Author",
-        "id": "Author:Hao,_Shuai",
+        "__typename": "author",
+        "id": "author:Hao,_Shuai",
         "nameFirst": "Shuai",
         "nameLast": "Hao"
     },
     {
-        "_type": "Author",
-        "id": "Author:Wang,_Haining",
+        "__typename": "author",
+        "id": "author:Wang,_Haining",
         "nameFirst": "Haining",
         "nameLast": "Wang"
     },
     {
-        "_type": "Author",
-        "id": "Author:Cotton,_Chase",
+        "__typename": "author",
+        "id": "author:Cotton,_Chase",
         "nameFirst": "Chase",
         "nameLast": "Cotton"
     },
     {
-        "_type": "Author",
-        "id": "Author:Cho,_Shinyoung",
+        "__typename": "author",
+        "id": "author:Cho,_Shinyoung",
         "nameFirst": "Shinyoung",
         "nameLast": "Cho"
     },
     {
-        "_type": "Author",
-        "id": "Author:Fontugne,_Romain",
+        "__typename": "author",
+        "id": "author:Fontugne,_Romain",
         "nameFirst": "Romain",
         "nameLast": "Fontugne"
     },
     {
-        "_type": "Author",
-        "id": "Author:Gill,_Phillipa",
+        "__typename": "author",
+        "id": "author:Gill,_Phillipa",
         "nameFirst": "Phillipa",
         "nameLast": "Gill"
     },
     {
-        "_type": "Author",
-        "id": "Author:Guillot,_Andreas",
+        "__typename": "author",
+        "id": "author:Guillot,_Andreas",
         "nameFirst": "Andreas",
         "nameLast": "Guillot"
     },
     {
-        "_type": "Author",
-        "id": "Author:Winter,_Philipp",
+        "__typename": "author",
+        "id": "author:Winter,_Philipp",
         "nameFirst": "Philipp",
         "nameLast": "Winter"
     },
     {
-        "_type": "Author",
-        "id": "Author:M&eacute;rindol,_Pascal",
+        "__typename": "author",
+        "id": "author:M&eacute;rindol,_Pascal",
         "nameFirst": "Pascal",
         "nameLast": "M&eacute;rindol"
     },
     {
-        "_type": "Author",
-        "id": "Author:Pelsser,_Cristel",
+        "__typename": "author",
+        "id": "author:Pelsser,_Cristel",
         "nameFirst": "Cristel",
         "nameLast": "Pelsser"
     },
     {
-        "_type": "Author",
-        "id": "Author:Zhang,_Shiwei",
+        "__typename": "author",
+        "id": "author:Zhang,_Shiwei",
         "nameFirst": "Shiwei",
         "nameLast": "Zhang"
     },
     {
-        "_type": "Author",
-        "id": "Author:Li,_Weichao",
+        "__typename": "author",
+        "id": "author:Li,_Weichao",
         "nameFirst": "Weichao",
         "nameLast": "Li"
     },
     {
-        "_type": "Author",
-        "id": "Author:Wu,_Daoyuan",
+        "__typename": "author",
+        "id": "author:Wu,_Daoyuan",
         "nameFirst": "Daoyuan",
         "nameLast": "Wu"
     },
     {
-        "_type": "Author",
-        "id": "Author:Jin,_Bo",
+        "__typename": "author",
+        "id": "author:Jin,_Bo",
         "nameFirst": "Bo",
         "nameLast": "Jin"
     },
     {
-        "_type": "Author",
-        "id": "Author:Chang,_Rocky_K._C.",
+        "__typename": "author",
+        "id": "author:Chang,_Rocky_K._C.",
         "nameFirst": "Rocky K. C.",
         "nameLast": "Chang"
     },
     {
-        "_type": "Author",
-        "id": "Author:Gao,_Debin",
+        "__typename": "author",
+        "id": "author:Gao,_Debin",
         "nameFirst": "Debin",
         "nameLast": "Gao"
     },
     {
-        "_type": "Author",
-        "id": "Author:Wang,_Yi",
+        "__typename": "author",
+        "id": "author:Wang,_Yi",
         "nameFirst": "Yi",
         "nameLast": "Wang"
     },
     {
-        "_type": "Author",
-        "id": "Author:Mok,_Ricky_K._P.",
+        "__typename": "author",
+        "id": "author:Mok,_Ricky_K._P.",
         "nameFirst": "Ricky K. P.",
         "nameLast": "Mok"
     },
     {
-        "_type": "Author",
-        "id": "Author:Jin,_Yuchen",
+        "__typename": "author",
+        "id": "author:Jin,_Yuchen",
         "nameFirst": "Yuchen",
         "nameLast": "Jin"
     },
     {
-        "_type": "Author",
-        "id": "Author:Scott,_Colin",
+        "__typename": "author",
+        "id": "author:Scott,_Colin",
         "nameFirst": "Colin",
         "nameLast": "Scott"
     },
     {
-        "_type": "Author",
-        "id": "Author:Giotsas,_Vasileios",
+        "__typename": "author",
+        "id": "author:Giotsas,_Vasileios",
         "nameFirst": "Vasileios",
         "nameLast": "Giotsas"
     },
     {
-        "_type": "Author",
-        "id": "Author:Krishnamurthy,_Arvind",
+        "__typename": "author",
+        "id": "author:Krishnamurthy,_Arvind",
         "nameFirst": "Arvind",
         "nameLast": "Krishnamurthy"
     },
     {
-        "_type": "Author",
-        "id": "Author:Shenker,_Scott",
+        "__typename": "author",
+        "id": "author:Shenker,_Scott",
         "nameFirst": "Scott",
         "nameLast": "Shenker"
     },
     {
-        "_type": "Author",
-        "id": "Author:Holterbach,_Thomas",
+        "__typename": "author",
+        "id": "author:Holterbach,_Thomas",
         "nameFirst": "Thomas",
         "nameLast": "Holterbach"
     },
     {
-        "_type": "Author",
-        "id": "Author:Molero,_Edgar_Costa",
+        "__typename": "author",
+        "id": "author:Molero,_Edgar_Costa",
         "nameFirst": "Edgar Costa",
         "nameLast": "Molero"
     },
     {
-        "_type": "Author",
-        "id": "Author:Apostolaki,_Maria",
+        "__typename": "author",
+        "id": "author:Apostolaki,_Maria",
         "nameFirst": "Maria",
         "nameLast": "Apostolaki"
     },
     {
-        "_type": "Author",
-        "id": "Author:Vissicchio,_Stefano",
+        "__typename": "author",
+        "id": "author:Vissicchio,_Stefano",
         "nameFirst": "Stefano",
         "nameLast": "Vissicchio"
     },
     {
-        "_type": "Author",
-        "id": "Author:Vanbever,_Laurent",
+        "__typename": "author",
+        "id": "author:Vanbever,_Laurent",
         "nameFirst": "Laurent",
         "nameLast": "Vanbever"
     }

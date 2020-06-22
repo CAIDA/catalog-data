@@ -1,7 +1,7 @@
 [
     {
-        "_type": "Venue",
-        "id": "Venue:ACM_Computer_and_Communications_Security_CCS",
+        "__typename": "venue",
+        "id": "venue:ACM_Computer_and_Communications_Security_CCS",
         "name": "ACM Computer and Communications Security (CCS)",
         "description": "...",
         "dates": [
