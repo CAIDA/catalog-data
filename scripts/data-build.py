@@ -51,7 +51,6 @@ import datetime
 source_dir="sources"
 
 id_object = {}
-type_objects = {}
 id_id_link = {}
 
 id_word_score = {}
@@ -332,8 +331,9 @@ def object_lookup(info):
 
     id_ = info["id"].lower()
     if id_ not in id_object:
-        id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"].lower()}
+        id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"].capitalize()}
     obj  = id_object[id_]
+    obj["__typename"] = info["__typename"].capitalize()
 
     object_types = set(["datasets","licenses","softwares","solutions","papers","publications"])
     for key in info.keys():
@@ -375,12 +375,6 @@ def object_lookup(info):
     if "links" in info:
         for link in info["links"]:
             link_lookup(obj["id"],link)
-
-    type_ = info["__typename"].lower()
-    if type_ not in type_objects:
-        type_objects[type_] = {}
-    if id_ not in type_objects[type_]:
-        type_objects[type_][id_] = obj
 
     return obj
 
