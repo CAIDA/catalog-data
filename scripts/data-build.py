@@ -152,12 +152,12 @@ def main():
     # Check that the objects are valid
     #######################
     type_checker = {
-        "author":author_checker,
+        "Author":author_checker,
 
-        "dataset":object_checker,
-        "software":object_checker,
-        "paper":object_checker,
-        "presentation":object_checker
+        "Dataset":object_checker,
+        "Software":object_checker,
+        "Paper":object_checker,
+        "Presentation":object_checker
     }
 
     id_failed = []
@@ -247,6 +247,7 @@ def main():
             if key not in obj:
                 key = "dateLastUpdated"
             obj["date"] = obj[key]
+
     #######################
     # ca
     #######################
@@ -263,8 +264,8 @@ def main():
     for word,score_ids in word_score_id.items():
         word_score_id[word] = sorted(score_ids,reverse=True)
 
-    #for score_id in word_score_id["geolocation"]:
-    #    print ("   ",score_id)
+    for score_id in word_score_id["rank"]:
+        print ("   ",score_id)
 
 
     #######################
@@ -329,7 +330,7 @@ def object_lookup(info):
             print ("no id",info)
             sys.exit()
 
-    id_ = info["id"].lower()
+    id_ = info["id"] = info["id"].lower()
     if id_ not in id_object:
         id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"].capitalize()}
     obj  = id_object[id_]
@@ -379,10 +380,12 @@ def object_lookup(info):
     return obj
 
 def link_lookup(id_, info):
+    id_ = id_.lower()
     if type(info) == str:
         info = { "to":info }
     info["from"] = id_
-    object_lookup_id(info["to"])
+    obj = object_lookup_id(info["to"])
+    info["to"] = obj["id"]
 
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
@@ -407,6 +410,7 @@ def link_lookup(id_, info):
                     id_id_link[a_id][b_id][key] = value
         else:
             id_id_link[a_id][b_id] = link
+
 #############################
 
 def solutions_process(path):
@@ -511,14 +515,17 @@ def object_score_update(obj, recursive=False):
             else:
                 word_score[word] += weight*freq 
 
-    id_ = obj["id"]
-    if id_ in id_id_link:
-        for id1 in id_id_link[id_].keys():
-            if id1 in id_word_score:
-                for word,score in id_word_score[id1]:
-                    word_score[word] += score
+    id1 = obj["id"]
+    if id1 in id_id_link:
+        for id2 in id_id_link[id1].keys():
+            if id2 in id_word_score:
+                for word,score in id_word_score[id2].items():
+                    if word not in word_score:
+                        word_score[word] = .5*score
+                    else:
+                        word_score[word] += .5*score
 
-    id_word_score[id_] = word_score
+    id_word_score[id1] = word_score
 
 def word_freq_get(value):
     word_freq = {}
