@@ -19,7 +19,43 @@ https://www.caida.org/data/internet-topology-data-kit/ <--
 
 https://www.caida.org/data/request_user_info_forms/ark.xml (download your copy of data)
 https://docs.python.org/3/library/bz2.html
-### Introduction ###
+
+### Placeholder Nodes
+
+Please port this Perl code into your Python script.
+~~~Perl
+# Many nodes in the ITDK are placeholder nodes.
+# this are the non response hops in the traceroute
+#   12.0.0.1  * 123.3.2.3
+# We don't know what machine is there, but we know there is a machine between
+# 12.0.0.1 and 123.3.2.3.
+# In most analysis, we want to ignore placeholders.
+# You identify placeholders by their IP addresses.
+# Placeholder nodes have reserved IP addresses
+# The following Perl code identifies placeholders
+
+use constant MASK_3 => unpack("N",inet_aton("224.0.0.0"));
+use constant PREFIX_224 => MASK_3;
+use constant MASK_8 => unpack("N",inet_aton("255.0.0.0"));
+use constant PREFIX_0 => unpack("N",inet_aton("0.0.0.0"));
+
+my $not place_holder_node = 0;
+foreach my $addr (split /\s+/, $addrs) {
+    my $net = inet_aton($addr);
+    my $binary = unpack("N", $net);
+    if ((($binary & MASK_3) != PREFIX_224)
+        && (($binary & MASK_3) != PREFIX_0)) {
+        $not_placeholder_node = 1;
+    }
+}
+
+// Only process the none placeholder nodes
+if ($not_placeholder_node) {
+    // Process Node, otherwise ignore it
+}
+~~~
+
+### Nodes files
 
 midar-iff.nodes.bz2
 ~~~
