@@ -107,133 +107,117 @@ parser.add_argument('-a', dest = 'nodeas_file', default = '', help = 'Please ent
 parser.add_argument('-g', dest = 'geo_file', default = '', help = 'Please enter the file name of Node_Geolocation File')
 args = parser.parse_args()
 
-
-# file path of 4 files
-dataset_dir = "../dataset/"
-node_filePth = dataset_dir + args.node_file
-link_filePth = dataset_dir + args.link_file
-nodeas_filePth = dataset_dir + args.nodeas_file
-geo_filePth = dataset_dir + args.geo_file
-
 # create dictionary
 nodes = {}
 
 def node_lookup(nid):
-	if nid not in nodes:
-		node_id = nid.replace("N", "")
-		nodes[nid] = {
-			"id": node_id,
-			"asn": "",
-			"isp": [],
-			"neighbor": [],
-			"location": {
-				"continent": "",
-				"country": "",
-				"region": "",
-				"city": ""
-				}
-		}
-	return nodes[nid]
+    if nid not in nodes:
+        node_id = nid.replace("N", "")
+        nodes[nid] = {
+            "id": node_id,
+            "asn": "",
+            "isp": [],
+            "neighbor": [],
+            "location": {
+                "continent": "",
+                "country": "",
+                "region": "",
+                "city": ""
+                }
+        }
+    return nodes[nid]
 
 # load nodes.bz2
-print("open node file path:", node_filePth)
 count = 0;
-with bz2.open(node_filePth, mode='r') as f:
-	for line in f:
+with bz2.open(args.node_file, mode='r') as f:
+    for line in f:
 
-		line = line.decode() #converting byte string to string
+        line = line.decode() #converting byte string to string
 
-		# search the string with node in front
-		if len(line) == 0 or line[0] == "#":
-			continue
+        # search the string with node in front
+        if len(line) == 0 or line[0] == "#":
+        	continue
 
-		#print(line)
-		#print(line)
-		value = line.strip(" \n") # remove tailing newline
-		value = value.split(" ")
-		#print(line)
+        value = line.strip(" \n") # remove tailing newline
+        value = value.split(" ")
 
+        # get node id
+        value[1] = value[1].replace(":", "")
+        #value[1] = value[1].replace("N", "")
+        node = node_lookup(value[1])
 
-		# get node id
-		value[1] = value[1].replace(":", "")
-		#value[1] = value[1].replace("N", "")
-		node = node_lookup(value[1])
-		
-		# get isp
-		for isp in value[2:]:
-			if len(isp) != 0:
-				node["isp"].append(isp)
+        # get isp
+        for isp in value[2:]:
+            if len(isp) != 0:
+                node["isp"].append(isp)
 
-		count += 1
-		if count == 4:
-			break
+        count += 1
+        if count == 4:
+            break
 
 # load nodes.as.bz2
 count = 0
-print("node as file path:", node_filePth)
-with bz2.open(nodeas_filePth, mode = 'r') as f:
-	for line in f:
-		line = line.decode()
-		value = line.split(" ")
+with bz2.open(args.nodeas_file, mode = 'r') as f:
+    for line in f:
+        line = line.decode()
+        value = line.split(" ")
 
-		node = node_lookup(value[1])
-		node["asn"] = value[2]
+        node = node_lookup(value[1])
+        node["asn"] = value[2]
 
-		count += 1
-		if count ==4:
-			break
-            
+        count += 1
+
+        if count ==4:
+            break
+
 # load nodes.geo.bz2 file
 count = 0
-with bz2.open(geo_filePth, 'r') as f:
-	for line in f:
-		line = line.decode()
+with bz2.open(args.geo_file, 'r') as f:
+    for line in f:
+        line = line.decode()
 
 		# skip over comments
-		if len(line) == 0 or line[0] == "#":
-			continue
+        if len(line) == 0 or line[0] == "#":
+            continue
 
-		value = line.split(" ")
-		value[1] = value[1].split("\t")
-		value[1][0] = value[1][0].replace(":", "")
-		node = node_lookup(value[1][0])
-		node["location"]["continent"] = value[1][1]
-		node["location"]["country"] = value[1][2]
-		node["location"]["region"] = value[1][3]
-		node["location"]["city"] = value[1][4]
+        value = line.split(" ")
+        value[1] = value[1].split("\t")
+        value[1][0] = value[1][0].replace(":", "")
+        node = node_lookup(value[1][0])
+        node["location"]["continent"] = value[1][1]
+        node["location"]["country"] = value[1][2]
+        node["location"]["region"] = value[1][3]
+        node["location"]["city"] = value[1][4]
 
-		count += 1
-		if count == 1:
-			break
-            
+        count += 1
+        if count == 1:
+            break
+
 # load links.bz2 file
 count = 0
-#print(nodes)
-with bz2.open(link_filePth, 'r') as f:
-	for line in f:
-		line = line.decode()
+with bz2.open(args.link_file, 'r') as f:
+    for line in f:
+        line = line.decode()
 
 		# skip over comments
-		if len(line) == 0 or line[0] == "#":
-			continue
+        if len(line) == 0 or line[0] == "#":
+            continue
 
-		value = line.strip(" \n")
-		value = value.split(" ")
+        value = line.strip(" \n")
+        value = value.split(" ")
 
-		for nid in value[3:]:
-			node = node_lookup(nid)
-			for neighbor in value[3:]:
-				if neighbor == nid:
-					continue
-				else:
-					neighbor = neighbor.split(":")
-					if node["neighbor"].count(neighbor[0]) == 0:
-						node["neighbor"].append(neighbor[0])
-		count += 1
-		if count == 50:
-			break
+        for nid in value[3:]:
+            node = node_lookup(nid)
+            for neighbor in value[3:]:
+                if neighbor == nid:
+                    continue
+                else:
+                    neighbor = neighbor.split(":")
+                    if node["neighbor"].count(neighbor[0]) == 0:
+                        node["neighbor"].append(neighbor[0])
+        count += 1
+        if count == 50:
+            break
 
 #print(nodes)
-
-
 ~~~
