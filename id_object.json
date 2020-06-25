@@ -89,6 +89,27 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:topology": {
+        "id": "tag:topology",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:security": {
+        "id": "tag:security",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:routing": {
+        "id": "tag:routing",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "software:bgpstream": {
         "id": "software:bgpstream",
         "__typename": "Software",
@@ -178,6 +199,20 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:measurement_methodology": {
+        "id": "tag:measurement_methodology",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:software/tools": {
+        "id": "tag:software/tools",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     },
     "dataset:itdk": {
         "id": "dataset:itdk",
@@ -284,6 +319,13 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:congestion": {
+        "id": "tag:congestion",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     },
     "dataset:as_prefix": {
         "id": "dataset:as_prefix",
@@ -571,6 +613,48 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:internet_reliability": {
+        "id": "tag:internet_reliability",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:internet_outages": {
+        "id": "tag:internet_outages",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:weather": {
+        "id": "tag:weather",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:ping": {
+        "id": "tag:ping",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:data": {
+        "id": "tag:data",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:active_data_analysis": {
+        "id": "tag:active_data_analysis",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "dataset:thunderping": {
         "id": "dataset:thunderping",
         "__typename": "Dataset",
@@ -724,6 +808,48 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:network_telescope": {
+        "id": "tag:network_telescope",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:autocracy": {
+        "id": "tag:autocracy",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:passive_data_analysis": {
+        "id": "tag:passive_data_analysis",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:digital_politics": {
+        "id": "tag:digital_politics",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:internet_measurement": {
+        "id": "tag:internet_measurement",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:cyberattacks": {
+        "id": "tag:cyberattacks",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "dataset:ucsd_network_telescope": {
         "id": "dataset:ucsd_network_telescope",
         "__typename": "Dataset",
@@ -866,6 +992,41 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:remote_peering": {
+        "id": "tag:remote_peering",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:dns": {
+        "id": "tag:dns",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:peering": {
+        "id": "tag:peering",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:internet_routing": {
+        "id": "tag:internet_routing",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:anycast": {
+        "id": "tag:anycast",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     },
     "dataset:anycast_dataset": {
         "id": "dataset:anycast_dataset",
@@ -1316,6 +1477,20 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:mobile": {
+        "id": "tag:mobile",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:qoe": {
+        "id": "tag:qoe",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "dataset:mopeye": {
         "id": "dataset:mopeye",
         "__typename": "Dataset",
@@ -1461,6 +1636,13 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:economics": {
+        "id": "tag:economics",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     },
     "software:peeringdb": {
         "id": "software:peeringdb",
@@ -1660,6 +1842,34 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:asn": {
+        "id": "tag:asn",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:geolocation": {
+        "id": "tag:geolocation",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:organization": {
+        "id": "tag:organization",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:country": {
+        "id": "tag:country",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "author:beverly,_robert": {
         "id": "author:beverly,_robert",
         "__typename": "Author",
@@ -1719,6 +1929,17 @@
         "dateLastUpdated": "2020/06/23 15:28:17",
         "date": "2020/06/23 15:28:17"
     },
+    "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "id": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
+        "__typename": "Paper",
+        "name": "network hygiene, incentives, and regulation deployment of source address validation in the internet",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/06/25 10:36:43",
+        "dateLastUpdated": "2020/06/25 10:36:43",
+        "date": "2020/06/25 10:36:43"
+    },
     "license:bsd-4-clause-uc": {
         "id": "license:bsd-4-clause-uc",
         "__typename": "License",
@@ -1727,6 +1948,41 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:outages": {
+        "id": "tag:outages",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:darknet": {
+        "id": "tag:darknet",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:active_measurement": {
+        "id": "tag:active_measurement",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:visualization": {
+        "id": "tag:visualization",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:bgp": {
+        "id": "tag:bgp",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     },
     "dataset:as_rank": {
         "id": "dataset:as_rank",
@@ -1786,6 +2042,27 @@
         "dateLastUpdated": "2020/06/23 15:28:17",
         "date": "2020/06/23 15:28:17"
     },
+    "tag:geographic": {
+        "id": "tag:geographic",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:ownership": {
+        "id": "tag:ownership",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "tag:ixp": {
+        "id": "tag:ixp",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
     "dataset:spoofer": {
         "id": "dataset:spoofer",
         "__typename": "Dataset",
@@ -1834,6 +2111,24 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
+    },
+    "tag:ipv4_adddress": {
+        "id": "tag:ipv4_adddress",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
+    },
+    "paper:as_relationships,_customer_cones,_and_validation": {
+        "id": "paper:as_relationships,_customer_cones,_and_validation",
+        "__typename": "Paper",
+        "name": "AS Relationships, Customer Cones, and Validation",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/06/25 10:52:50",
+        "dateLastUpdated": "2020/06/25 10:52:50",
+        "date": "2020/06/25 10:52:50"
     },
     "software:as_relationship": {
         "id": "software:as_relationship",
@@ -1969,5 +2264,12 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/23 15:28:17",
         "date": "2020/06/23 15:28:17"
+    },
+    "tag:interdomain_links": {
+        "id": "tag:interdomain_links",
+        "__typename": "Tag",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 10:31:35",
+        "date": "2020/06/25 10:31:35"
     }
 }

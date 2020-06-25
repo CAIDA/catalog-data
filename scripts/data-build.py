@@ -303,8 +303,8 @@ def data_print():
 #############################
 
 def object_lookup_type_name(type_,name):
-    id_ = type_+":"+name
-    return object_lookup_id(id_.lower())
+    id_ = type_+":"+re_id_illegal.sub("_",name)
+    return object_lookup_id(id_)
 
 def object_lookup_id(id_):
     id_ = id_.lower()
@@ -327,7 +327,7 @@ def object_lookup(info):
             id_ = info["__typename"]+":"+re_id_illegal.sub("_",info["name"])
             info["id"] = id_.lower()
         else:
-            print ("no id",info)
+            print ("no id or name,_typename",info)
             sys.exit()
 
     id_ = info["id"] = info["id"].lower()
@@ -373,6 +373,12 @@ def object_lookup(info):
                             object_lookup_id(author_org["venue"])
                            
 
+    if "tags" in obj:
+        for tag in obj["tags"]:
+            link = { "to":object_lookup_type_name("tag",tag)["id"] }
+            link_lookup(obj["id"],link)
+
+
     if "links" in info:
         for link in info["links"]:
             link_lookup(obj["id"],link)
@@ -384,7 +390,10 @@ def link_lookup(id_, info):
     if type(info) == str:
         info = { "to":info }
     info["from"] = id_
-    obj = object_lookup_id(info["to"])
+    if type(info["to"]) == str:
+        obj = object_lookup_id(info["to"])
+    else:
+        obj = object_lookup(info["to"])
     info["to"] = obj["id"]
 
     for a_b in [["from","to"],["to","from"]]:
@@ -486,7 +495,9 @@ def author_checker(author):
 
 def object_checker(obj):
     if "name" not in obj:
-        return "no name"
+        values = obj["id"].split(":")
+        print ("creating name for",obj["id"])
+        obj["name"] = ":".join(values[1:]).replace("_"," ")
 
     for key in ["tags","links","urls"]:
         if key not in obj:
@@ -514,16 +525,20 @@ def object_score_update(obj, recursive=False):
                 word_score[word] = weight*freq
             else:
                 word_score[word] += weight*freq 
-
     id1 = obj["id"]
     if id1 in id_id_link:
         for id2 in id_id_link[id1].keys():
             if id2 in id_word_score:
-                for word,score in id_word_score[id2].items():
-                    if word not in word_score:
-                        word_score[word] = .5*score
-                    else:
-                        word_score[word] += .5*score
+                if id1[0:3] == "tag" or id2[0:3] == "tag":
+                    wieght = 0
+                else:
+                    wieght = .1
+                if wieght > 0:
+                    for word,score in id_word_score[id2].items():
+                        if word not in word_score:
+                            word_score[word] = wieght*score
+                        else:
+                            word_score[word] += wieght*score
 
     id_word_score[id1] = word_score
 
