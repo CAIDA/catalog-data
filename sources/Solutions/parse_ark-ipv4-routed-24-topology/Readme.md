@@ -98,6 +98,15 @@ ecode
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 ~~~python
 import bz2
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-n', dest = 'node_file', default = '', help = 'Please enter the file name of Nodes File')
+parser.add_argument('-l', dest = 'link_file', default = '', help = 'Please enter the file name of Links File')
+parser.add_argument('-a', dest = 'nodeas_file', default = '', help = 'Please enter the file name of Node-AS File')
+parser.add_argument('-g', dest = 'geo_file', default = '', help = 'Please enter the file name of Node_Geolocation File')
+args = parser.parse_args()
+
 with bz2.open(filename) as f:
    for line in f:
       line = line.encode()
