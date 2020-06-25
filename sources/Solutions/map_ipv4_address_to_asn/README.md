@@ -36,7 +36,7 @@ It finds the prefix matching the given IP address and returns the corresponding 
 | 192.168.0.0/16   | B             |
 
 • For example, for the given incoming IP address:  192.168.20.19 \
-• Node A is selected as the destination router node as it contains the *longer matching prefix* i.e. 192.168.20.16 \
+• **Node A** is selected as the destination router node as it contains the *longer matching prefix* i.e. 192.168.20.16 \
 • Source: [link]( https://www.lewuathe.com/longest-prefix-match-with-trie-tree.html ) \
 • More information can be found [here]( https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ )
  
@@ -45,9 +45,10 @@ It finds the prefix matching the given IP address and returns the corresponding 
 
 
 ### <ins> Caveats </ins> ###
-• Multi-origin AS \
+• **Multi-origin AS** : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\
+This makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's. \
 • as_set \
-• Third-party AS's \
+• **Third-party AS's** \
 • Include diagram and explanation from https://www.caida.org/publications/papers/2016/bdrmap/bdrmap.pdf
 
 
