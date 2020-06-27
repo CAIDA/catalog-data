@@ -5,39 +5,39 @@
         "name": "Profiling BGP Serial Hijackers: Capturing Persistent Misbehavior in the Global Routing Table",
         "datePublished": "2019/10/01/ 00:00:00",
         "description": "BGP hijacks remain an acute problem in today&rsquo;s Internet, with widespread consequences. While hijack detection systems are readily available, they typically rely on a priori prefix-ownership information and are reactive in nature. In this work, we take on a new perspective on BGP hijacking activity: we introduce and track the long-term routing behavior of serial hijackers, networks that repeatedly hijack address blocks for malicious purposes, often over the course of many months or even years. Based on a ground truth dataset that we construct by extracting information from network operator mailing lists, we illuminate the dominant routing characteristics of serial hijackers, and how they differ from legitimate networks.We then distill features that can capture these behavioral differences and train a machine learning model to automatically identify Autonomous Systems (ASes) that exhibit characteristics similar to serial hijackers. Our classifier identifies &asymp; 900 ASes with similar behavior in the global IPv4 routing table. We analyze and categorize these networks, finding a wide range of indicators of malicious activity, misconfiguration, as well as benign hijacking activity. Our work presents a solid first step towards identifying and understanding this important category of networks, which can aid network operators in taking proactive measures to defend themselves against prefix hijacking and serve as input for current and future detection systems.",
-        "tags": [
-            "topology",
-            "security",
-            "routing"
-        ],
         "caida_paper_id": "paper690",
         "authors": [
             {
-                "author": "author:Testart,_Cecilia",
+                "author": "author:testart,_cecilia",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Richter,_Philipp",
+                "author": "author:richter,_philipp",
                 "organization": "Unknown"
             },
             {
-                "author": "author:King,_Alistair",
+                "author": "author:king,_alistair",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Clark,_David",
+                "author": "author:clark,_david",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:topology",
+            "tag:security",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:testart,_cecilia": {
         "id": "author:testart,_cecilia",
@@ -92,23 +92,26 @@
     "tag:topology": {
         "id": "tag:topology",
         "__typename": "Tag",
+        "name": "topology",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:security": {
         "id": "tag:security",
         "__typename": "Tag",
+        "name": "security",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:routing": {
         "id": "tag:routing",
         "__typename": "Tag",
+        "name": "routing",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "software:bgpstream": {
         "id": "software:bgpstream",
@@ -116,27 +119,31 @@
         "name": "BGPStream",
         "organization": "CAIDA",
         "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
-        "tags": [
-            "topology",
-            "BGP"
-        ],
+        "urlRepo": {
+            "name": "name",
+            "url": "url"
+        },
         "availability": [
             {
-                "name": "public",
-                "url": "https://bgpstream.caida.org/docs/api",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "API"
+                    "tag:api"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:bgp"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 15:56:00",
+        "date": "2020/06/26 15:56:00"
     },
     "paper:learning_regexes_to_extract_router_names_from_hostnames": {
         "id": "paper:learning_regexes_to_extract_router_names_from_hostnames",
@@ -144,19 +151,14 @@
         "name": "Learning Regexes to Extract Router Names from Hostnames",
         "datePublished": "2019/10/01/ 00:00:00",
         "description": "We present the design, implementation, evaluation, and validation of a system that automatically learns to extract router names (router identifiers) from hostnames stored by network operators in different DNS zones, which we represent by regular expressions (regexes). Our supervised-learning approach evaluates automatically generated candidate regexes against sets of hostnames for IP addresses that other alias resolution techniques previously inferred to identify interfaces on the same router. Conceptually, if three conditions hold: (1) a regex extracts the same value from a set of hostnames associated with IP addresses on the same router; (2) the value is unique to that router; and (3) the regex extracts names for multiple routers in the suffix, then we conclude the regex accurately represents the naming convention for the suffix. We train our system using router aliases inferred from active probing to learn regexes for 2550 different suffixes.",
-        "tags": [
-            "measurement methodology",
-            "topology",
-            "software/tools"
-        ],
         "caida_paper_id": "paper689",
         "authors": [
             {
-                "author": "author:Luckie,_Matthew",
+                "author": "author:luckie,_matthew",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Huffaker,_Bradley",
+                "author": "author:huffaker,_bradley",
                 "organization": "Unknown"
             },
             {
@@ -164,11 +166,16 @@
                 "organization": "Unknown"
             }
         ],
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:software/tools"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:luckie,_matthew": {
         "id": "author:luckie,_matthew",
@@ -203,16 +210,18 @@
     "tag:measurement_methodology": {
         "id": "tag:measurement_methodology",
         "__typename": "Tag",
+        "name": "measurement methodology",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:software/tools": {
         "id": "tag:software/tools",
         "__typename": "Tag",
+        "name": "software/tools",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:itdk": {
         "id": "dataset:itdk",
@@ -220,28 +229,28 @@
         "name": "ITDK",
         "organization": "CAIDA",
         "description": "The ITDK contains data about connectivity and routing gathered from a large cross-section of the global Internet. This dataset is useful for studying the topology of the Internet at the router-level, among other uses.",
-        "tags": [
-            "topology"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.caida.org/data/internet-topology-data-kit/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
         "id": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
@@ -249,36 +258,36 @@
         "name": "Studying the evolution of content providers in IPv4 and IPv6 internet cores",
         "datePublished": "2019/09/01/ 00:00:00",
         "description": "There is recent evidence that the core of the Internet, which was formerly dominated by large transit providers, has been reshaped after the transition to a multimedia-oriented network, first by general-purpose CDNs and now by private CDNs. In this work we use k-cores, an element of graph theory, to define which ASes compose the core of the Internet and to track the evolution of the core since 1999. Specifically, we investigate whether large players in the Internet content and CDN ecosystem belong to the core and, if so, since when. In addition, we examine differences between the IPv4 and IPv6 cores. We further investigate regional differences in the evolution of large content providers. Finally, we show that the core of the Internet has incorporated an increasing number of content ASes in recent years. To enable reproducibility of this work, we provide a website to allow interactive analysis of our datasets to detect, for example, &ldquo;up and coming&rdquo; ASes using customized queries.",
-        "tags": [
-            "congestion",
-            "routing",
-            "topology",
-            "measurement methodology"
-        ],
         "caida_paper_id": "paper686",
         "authors": [
             {
-                "author": "author:Carisimo,_Esteban",
+                "author": "author:carisimo,_esteban",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Selmo,_Carlos",
+                "author": "author:selmo,_carlos",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Alvarez-Hamelin,_J._Ignacio",
+                "author": "author:alvarez-hamelin,_j._ignacio",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dhamdhere,_Amogh",
+                "author": "author:dhamdhere,_amogh",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:congestion",
+            "tag:routing",
+            "tag:topology",
+            "tag:measurement_methodology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:carisimo,_esteban": {
         "id": "author:carisimo,_esteban",
@@ -323,9 +332,10 @@
     "tag:congestion": {
         "id": "tag:congestion",
         "__typename": "Tag",
+        "name": "congestion",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:as_prefix": {
         "id": "dataset:as_prefix",
@@ -333,29 +343,29 @@
         "name": "AS Prefix",
         "organization": "CAIDA",
         "description": "This dataset contains IPv4/IPv6 Prefix-to-Autonomous System (AS) mappings derived from RouteViews data. Files are created on a daily basis, starting from 2005-05-09 for IPv4 and 2007-01-01 for IPv6. The file format is line-oriented, with one prefix-AS mapping per line. The tab-separated fields are:IP Prefixes, prefix length, and AS number.",
-        "tags": [
-            "topology",
-            "BGP"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:bgp"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "dataset:archipelago": {
         "id": "dataset:archipelago",
@@ -363,28 +373,28 @@
         "name": "Archipelago",
         "organization": "CAIDA",
         "description": " CAIDA deploys and maintains a globally distributed measurement platform we call Archipelago (Ark). We grow the infrastructure by distributing hardware measurement nodes (2nd gen. Raspberry Pi) with as much geographical and topological diversity as we can to improve our view of the global Internet. Our primary goals with the Ark infrastructure are to:<br> <ul><li> reduce the effort needed to develop and deploy sophisticated large-scale measurements, and</li> <li>provide a step toward a community-oriented measurement infrastructure by allowing collaborators to run their vetted measurement tasks on a security-hardened distributed platform.</li></ul><br> Ark is tailored specifically for active network measurement. This allows Ark to be simpler than some other general-purpose distributed experimental platforms, and it allows us to concentrate on providing facilities that directly address the needs of networking research. In particular, we provide a facility for communication and coordination that makes it easier to write distributed measurements that must work together to achieve a goal. We are working on providing a high-level API to ease the challenges of writing measurement tools. Our goal is to lower the barrier to bringing novel and interesting measurement techniques to life.",
-        "tags": [
-            "topology",
-            "active measurement"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "availability": [
             {
-                "name": "restricted",
-                "url": "https://www.caida.org/projects/ark/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:active_measurement"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "dataset:as_relationships": {
         "id": "dataset:as_relationships",
@@ -392,27 +402,27 @@
         "name": "AS Relationships",
         "organization": "CAIDA",
         "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
-        "tags": [
-            "topology"
-        ],
         "dateStart": "2013/02/01/ 00:00:00",
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.caida.org/data/as-relationships/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic": {
         "id": "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic",
@@ -420,19 +430,14 @@
         "name": "Hypersparse Neural Network Analysis of Large-Scale Internet Traffic",
         "datePublished": "2019/09/01/ 00:00:00",
         "description": "The Internet is transforming our society, necessitating a quantitative understanding of Internet traffic. Our team collects and curates the largest publicly available Internet traffic data containing 50 billion packets. Utilizing a novel hypersparse neural network analysis of &ldquo;video&rdquo; streams of this traffic using 10,000 processors in the MIT SuperCloud reveals a new phenomena: the importance of otherwise unseen leaf nodes and isolated links in Internet traffic. Our neural network approach further shows that a two-parameter modified Zipf-Mandelbrot distribution accurately describes a wide variety of source/destination statistics on moving sample windows ranging from 100,000 to 100,000,000 packets over collections that span years and continents. The inferred model parameters distinguish different network streams and the model leaf parameter strongly correlates with the fraction of the traffic in different underlying network topologies. The hypersparse neural network pipeline is highly adaptable and different network statistics and training models can be incorporated with simple changes to the image filter functions.",
-        "tags": [
-            "measurement methodology",
-            "topology",
-            "routing"
-        ],
         "caida_paper_id": "paper681",
         "authors": [
             {
-                "author": "author:Kepner,_Jeremy",
+                "author": "author:kepner,_jeremy",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Cho,_Kenjiro",
+                "author": "author:cho,_kenjiro",
                 "organization": "Unknown"
             },
             {
@@ -440,23 +445,28 @@
                 "organization": "Unknown"
             },
             {
-                "author": "author:Gadepally,_Vijay",
+                "author": "author:gadepally,_vijay",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Michaleas,_Peter",
+                "author": "author:michaleas,_peter",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Milechin,_Lauren",
+                "author": "author:milechin,_lauren",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:kepner,_jeremy": {
         "id": "author:kepner,_jeremy",
@@ -538,40 +548,40 @@
         "name": "Residential Links Under the Weather",
         "datePublished": "2019/08/01/ 00:00:00",
         "description": "Weather is a leading threat to the stability of our vital infrastructure. Last-mile Internet is no exception. Yet, unlike other vital infrastructure, weather&rsquo;s effect on last-mile Internet outages is not well understood. This work is the first attempt to quantify the effect of weather on residential outages. ",
-        "tags": [
-            "Internet reliability",
-            "measurement methodology",
-            "Internet outages",
-            "weather",
-            "ping",
-            "data",
-            "active data analysis",
-            "routing"
-        ],
         "caida_paper_id": "paper688",
         "authors": [
             {
-                "author": "author:Padmanabhan,_Ramakrishna",
+                "author": "author:padmanabhan,_ramakrishna",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Schulman,_Aaron",
+                "author": "author:schulman,_aaron",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Levin,_Dave",
+                "author": "author:levin,_dave",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Spring,_Neil",
+                "author": "author:spring,_neil",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:internet_reliability",
+            "tag:measurement_methodology",
+            "tag:internet_outages",
+            "tag:weather",
+            "tag:ping",
+            "tag:data",
+            "tag:active_data_analysis",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:padmanabhan,_ramakrishna": {
         "id": "author:padmanabhan,_ramakrishna",
@@ -616,44 +626,50 @@
     "tag:internet_reliability": {
         "id": "tag:internet_reliability",
         "__typename": "Tag",
+        "name": "Internet reliability",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:internet_outages": {
         "id": "tag:internet_outages",
         "__typename": "Tag",
+        "name": "internet outages",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:weather": {
         "id": "tag:weather",
         "__typename": "Tag",
+        "name": "weather",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:ping": {
         "id": "tag:ping",
         "__typename": "Tag",
+        "name": "ping",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:data": {
         "id": "tag:data",
         "__typename": "Tag",
+        "name": "data",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:active_data_analysis": {
         "id": "tag:active_data_analysis",
         "__typename": "Tag",
+        "name": "active data analysis",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:thunderping": {
         "id": "dataset:thunderping",
@@ -661,37 +677,37 @@
         "name": "Thunderping",
         "description": "ThunderPing that measures the connectivity of residential Internet hosts before, during, and after forecast periods of severe weather. ThunderPing uses weather alerts from the US National Weather Service to choose a set of residential host addresses to ping from several vantage points on the Internet.",
         "tags": [
-            "weather",
-            "active measurement"
+            "tag:weather",
+            "tag:active_measurement"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "software:u.s._national_weather_serice_severe_weather_alert": {
         "id": "software:u.s._national_weather_serice_severe_weather_alert",
         "__typename": "Software",
         "name": "U.S. National Weather Serice:Severe Weather Alert",
         "description": "A powerful weather system combined with a lack of ice on the Great Lakes will produce significant amounts of snow, up to 3 to 4 feet in places, and blizzard conditions. Travel may be difficult to impossible. Cold air behind this front will bring below normal temperatures to the eastern third of the U.S., including potential for freezing overnight temperatures in Florida.",
-        "tags": [
-            "weather"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.weather.gov/alerts",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "API"
+                    "tag:api"
                 ]
             }
+        ],
+        "tags": [
+            "tag:weather"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "dataset:maxmind": {
         "id": "dataset:maxmind",
@@ -699,26 +715,26 @@
         "name": "MaxMind",
         "organization": "MaxMind",
         "description": "Commercial geolocation database with a free lower grade version.",
-        "tags": [
-            "geolocation",
-            "geographic"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "commercial",
-                "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
+        ],
+        "tags": [
+            "tag:geolocation",
+            "tag:geographic"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes": {
         "id": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
@@ -726,47 +742,47 @@
         "name": "At Home and Abroad: The Use of Denial-of-service Attacks during Elections in Nondemocratic Regimes",
         "datePublished": "2019/07/01/ 00:00:00",
         "description": "In this article, we study the political use of denial-of-service (DoS) attacks, a particular form of cyberattack that disables web services by flooding them with high levels of data traffic. We argue that websites in nondemocratic regimes should be especially prone to this type of attack, particularly around political focal points such as elections. This is due to two mechanisms: governments employ DoS attacks to censor regime-threatening information, while at the same time, activists use DoS attacks as a tool to publicly undermine the government&rsquo;s authority. We analyze these mechanisms by relying on measurements of DoS attacks based on large-scale Internet traffic data. Our results show that in authoritarian countries, elections indeed increase the number of DoS attacks. However, these attacks do not seem to be directed primarily against the country itself but rather against other states that serve as hosts for news websites from this country",
-        "tags": [
-            "network telescope",
-            "autocracy",
-            "passive data analysis",
-            "security",
-            "digital politics",
-            "Internet measurement",
-            "cyberattacks"
-        ],
         "caida_paper_id": "paper679",
         "authors": [
             {
-                "author": "author:Lutscher,_Philipp_M.",
+                "author": "author:lutscher,_philipp_m.",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Weidmann,_Nils_B.",
+                "author": "author:weidmann,_nils_b.",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Roberts,_Margaret_E.",
+                "author": "author:roberts,_margaret_e.",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Jonker,_Mattijs",
+                "author": "author:jonker,_mattijs",
                 "organization": "Unknown"
             },
             {
-                "author": "author:King,_Alistair",
+                "author": "author:king,_alistair",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:network_telescope",
+            "tag:autocracy",
+            "tag:passive_data_analysis",
+            "tag:security",
+            "tag:digital_politics",
+            "tag:internet_measurement",
+            "tag:cyberattacks"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:lutscher,_philipp_m.": {
         "id": "author:lutscher,_philipp_m.",
@@ -811,44 +827,50 @@
     "tag:network_telescope": {
         "id": "tag:network_telescope",
         "__typename": "Tag",
+        "name": "network telescope",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:autocracy": {
         "id": "tag:autocracy",
         "__typename": "Tag",
+        "name": "autocracy",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:passive_data_analysis": {
         "id": "tag:passive_data_analysis",
         "__typename": "Tag",
+        "name": "passive data analysis",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:digital_politics": {
         "id": "tag:digital_politics",
         "__typename": "Tag",
+        "name": "digital politics",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:internet_measurement": {
         "id": "tag:internet_measurement",
         "__typename": "Tag",
+        "name": "Internet measurement",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:cyberattacks": {
         "id": "tag:cyberattacks",
         "__typename": "Tag",
+        "name": "cyberattacks",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:ucsd_network_telescope": {
         "id": "dataset:ucsd_network_telescope",
@@ -856,26 +878,26 @@
         "name": "UCSD Network Telescope",
         "organization": "CAIDA",
         "description": "The UCSD network telescope (aka a black hole, an Internet sink, darkspace, or a darknet) is a globally routed /8 network (approximately 1/256th of all IPv4 Internet addresses) that carries almost no legitimate traffic because there are few provider-allocated IP addresses in this prefix. After discarding the legitimate traffic from the incoming packets, the remaining data represent a continuous view of anomalous unsolicited traffic, or Internet Background Radiation (IBR). IBR results from a wide range of events, such as backscatter from randomly spoofed source denial-of-service attacks, the automated spread of Internet worms and viruses, scanning of address space by attackers or malware looking for vulnerable targets, and various misconfigurations (e.g. mistyping an IP address). In recent years, traffic destined to darkspace has evolved to include longer-duration, low-intensity events intended to establish and maintain botnets.",
-        "tags": [
-            "darknet",
-            "security"
-        ],
         "dateStart": "2016/03/01/ 00:00:00",
         " availability": [
             {
-                "name": "public",
-                "url": "https://ioda.caida.org/"
+                "name": "name",
+                "url": "url"
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:darknet",
+            "tag:security"
+        ],
         "status": "ongoing",
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:netacuity": {
         "id": "software:netacuity",
@@ -883,27 +905,27 @@
         "name": "Netacuity",
         "organization": "Digital Elements",
         "description": "IP Geolocation Service",
-        "tags": [
-            "geolocation",
-            "geographic"
-        ],
         "availability": [
             {
-                "name": "commercial",
-                "url": "www.digitalelement.com/solutions",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "WEB"
+                    "tag:web"
                 ]
             }
         ],
         "licenses": [
             "license:netacuity"
         ],
+        "tags": [
+            "tag:geolocation",
+            "tag:geographic"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
         "id": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
@@ -911,47 +933,47 @@
         "name": "Towards Passive Analysis of Anycast in Global Routing: Unintended Impact of Remote Peering",
         "datePublished": "2019/07/01/ 00:00:00",
         "description": "Anycast has been widely adopted by today&rsquo;s Internet services, including DNS, CDN, and DDoS protection, in which the same IP address is announced from distributed locations and clients are directed to the topologically-nearest service replica. Prior research has focused on various aspects of anycast, either its usage in particular services such as DNS or characterizing its adoption by Internetwide active probing methods. In this paper, we first explore an alternative approach to characterize anycast based on previously collected global BGP routing information. Leveraging state-of-the-art active measurement results as near-ground-truth, our passive method without requiring any Internet-wide probes can achieve 90% accuracy in detecting anycast prefixes. More importantly, our approach uncovers anycast prefixes that have been missed by prior datasets based on active measurements. While investigating the root causes of inaccuracy, we reveal that anycast routing has been entangled with the increased adoption of remote peering, a type of layer-2 interconnection where an IP network may peer at an IXP remotely without being physically present at the IXP. The invisibility of remote peering from layer-3 breaks the assumption of the shortest AS paths on BGP and causes an unintended impact on anycast performance. We identify such cases from BGP routing information and observe that at least 19.2% of anycast prefixes have been potentially impacted by remote peering.",
-        "tags": [
-            "Remote Peering",
-            "topology",
-            "dns",
-            "Peering",
-            "Internet Routing",
-            "Anycast",
-            "routing"
-        ],
         "caida_paper_id": "paper678",
         "authors": [
             {
-                "author": "author:Bian,_Rui",
+                "author": "author:bian,_rui",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Hao,_Shuai",
+                "author": "author:hao,_shuai",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Wang,_Haining",
+                "author": "author:wang,_haining",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dhamdhere,_Amogh",
+                "author": "author:dhamdhere,_amogh",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Cotton,_Chase",
+                "author": "author:cotton,_chase",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:remote_peering",
+            "tag:topology",
+            "tag:dns",
+            "tag:peering",
+            "tag:internet_routing",
+            "tag:anycast",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:bian,_rui": {
         "id": "author:bian,_rui",
@@ -996,54 +1018,59 @@
     "tag:remote_peering": {
         "id": "tag:remote_peering",
         "__typename": "Tag",
+        "name": "Remote Peering",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:dns": {
         "id": "tag:dns",
         "__typename": "Tag",
+        "name": "dns",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:peering": {
         "id": "tag:peering",
         "__typename": "Tag",
+        "name": "Peering",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:internet_routing": {
         "id": "tag:internet_routing",
         "__typename": "Tag",
+        "name": "Internet Routing",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:anycast": {
         "id": "tag:anycast",
         "__typename": "Tag",
+        "name": "anycast",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:anycast_dataset": {
         "id": "dataset:anycast_dataset",
         "__typename": "Dataset",
         "name": "Anycast Dataset",
         "description": "Active measurements to anycase servers.",
-        "tags": [
-            "security",
-            "topology",
-            "anycast"
-        ],
         "status": "complete",
+        "tags": [
+            "tag:security",
+            "tag:topology",
+            "tag:anycast"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "paper:bgp_hijacking_classification": {
         "id": "paper:bgp_hijacking_classification",
@@ -1051,39 +1078,39 @@
         "name": "BGP hijacking classification",
         "datePublished": "2019/06/01/ 00:00:00",
         "description": "Recent reports show that BGP hijacking has increased substantially. BGP hijacking allows malicious ASes to obtain IP prefixes for spamming as well as intercepting or blackholing traffic. While systems to prevent hijacks are hard to deploy and require the cooperation of many other organizations, techniques to detect hijacks have been a popular area of study. In this paper, we classify detected hijack events in order to document BGP detectors output and understand the nature of reported events. We introduce four categories of BGP hijack: typos, prepending mistakes, origin changes, and forged AS paths. We leverage AS hegemony &ndash; a measure of dependency in AS relationship &ndash; to identify forged AS paths in a fast and efficient way. Besides, we utilize heuristic approaches to find common operators&rsquo; mistakes such as typos and AS prepending mistakes. The proposed approach classifies our collected ground truth into four categories with 95.71% accuracy. We characterize publicly reported alarms (e.g. BGPMon) with our trained classifier and find 4%, 1%, and 2% of typos, prepend mistakes, and BGP hijacking with a forged AS path, respectively.",
-        "tags": [
-            "topology",
-            "security",
-            "routing"
-        ],
         "caida_paper_id": "paper677",
         "authors": [
             {
-                "author": "author:Cho,_Shinyoung",
+                "author": "author:cho,_shinyoung",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Fontugne,_Romain",
+                "author": "author:fontugne,_romain",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Cho,_Kenjiro",
+                "author": "author:cho,_kenjiro",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Gill,_Phillipa",
+                "author": "author:gill,_phillipa",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:topology",
+            "tag:security",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:cho,_shinyoung": {
         "id": "author:cho,_shinyoung",
@@ -1121,29 +1148,29 @@
         "name": "AS Organization",
         "organization": "CAIDA",
         "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
-        "tags": [
-            "topology",
-            "ownership"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.caida.org/data/as-organizations/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:ownership"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "dataset:bgpmon": {
         "id": "dataset:bgpmon",
@@ -1151,14 +1178,14 @@
         "name": "BGPMon",
         "description": "BGPmon monitors the routing of your prefixes and alerts you in case of an 'interesting' path change. Path changes can be of different kinds, such as more specifics, change of aspath, change of origin AS, Transit AS or any combination of these, leading to such threats as blackholed traffic or traffic redirection and interception.",
         "tags": [
-            "topology",
-            "routing"
+            "tag:topology",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "paper:chocolatine_outage_detection_for_internet_background_radiation": {
         "id": "paper:chocolatine_outage_detection_for_internet_background_radiation",
@@ -1166,48 +1193,48 @@
         "name": "Chocolatine: Outage Detection for Internet Background Radiation",
         "datePublished": "2019/06/01/ 00:00:00",
         "description": "The Internet is a complex ecosystem composed of thousands of Autonomous Systems (ASs) operated by independent organizations; each AS having a very limited view outside its own network. These complexities and limitations impede network operators to finely pinpoint the causes of service degradation or disruption when the problem lies outside of their network. In this paper, we present Chocolatine, a solution to detect remote connectivity loss using Internet Background Radiation (IBR) through a simple and efficient method. IBR is unidirectional unsolicited Internet traffic, which is easily observed by monitoring unused address space. IBR features two remarkable properties: it is originated worldwide, across diverse ASs, and it is incessant. We show that the number of IP addresses observed from an AS or a geographical area follows a periodic pattern. Then, using Seasonal ARIMA to statistically model IBR data, we predict the number of IPs for the next time window. Significant deviations from these predictions indicate an outage. We evaluated Chocolatine using data from the UCSD Network Telescope, operated by CAIDA, with a set of documented outages. Our experiments show that the proposed methodology achieves a good trade-off between true-positive rate (90%) and false- positive rate (2%) and largely outperforms CAIDA&rsquo;s own IBR based detection method. Furthermore, performing a comparison against other methods, i.e., with BGP monitoring and active probing, we observe that Chocolatine shares a large common set of outages with them in addition to many specific outages that would otherwise go undetected.",
-        "tags": [
-            "internet outages",
-            "network telescope",
-            "passive data analysis",
-            "security"
-        ],
         "caida_paper_id": "paper676",
         "authors": [
             {
-                "author": "author:Guillot,_Andreas",
+                "author": "author:guillot,_andreas",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Fontugne,_Romain",
+                "author": "author:fontugne,_romain",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Winter,_Philipp",
+                "author": "author:winter,_philipp",
                 "organization": "Unknown"
             },
             {
-                "author": "author:M&eacute;rindol,_Pascal",
+                "author": "author:m&eacute;rindol,_pascal",
                 "organization": "Unknown"
             },
             {
-                "author": "author:King,_Alistair",
+                "author": "author:king,_alistair",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Pelsser,_Cristel",
+                "author": "author:pelsser,_cristel",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:internet_outages",
+            "tag:network_telescope",
+            "tag:passive_data_analysis",
+            "tag:security"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:guillot,_andreas": {
         "id": "author:guillot,_andreas",
@@ -1255,29 +1282,29 @@
         "name": "CAIDA IODA",
         "organization": "CAIDA",
         "description": "IODA's visualizations can contain both false positives and false negatives: A sudden drop in a time series is not guaranteed to be an outage, so be careful when interpreting IODA's data.",
-        "tags": [
-            "security",
-            "outages",
-            "darknet",
-            "active measurement",
-            "visualization"
-        ],
         "dateStart": "2015/03/01/ 00:00:00",
         " availability": [
             {
-                "name": "restricted",
-                "url": "https://ioda.caida.org/"
+                "name": "name",
+                "url": "url"
             }
         ],
         "status": "ongoing",
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:security",
+            "tag:outages",
+            "tag:darknet",
+            "tag:active_measurement",
+            "tag:visualization"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:geo-locating_bgp_prefixes": {
         "id": "paper:geo-locating_bgp_prefixes",
@@ -1285,35 +1312,35 @@
         "name": "Geo-Locating BGP prefixes",
         "datePublished": "2019/06/01/ 00:00:00",
         "description": "Geo-locating BGP prefixes can help us understand routing anomalies, prefix aggregation, or reveal what regions are affected by an Internet outage. Our work shows that the naive approach to prefix geo-location&mdash;simply mapping each IP address to its corresponding geo-location&mdash;can be ambiguous because a prefix may contain another, separately-announced prefix that maps to a different geographical location. Should the containing prefix also map to the locations of the contained prefix? We show that this question is difficult to answer and characterize the scope of these ambiguities by geo-locating around 680,000 prefixes to countries, regions, and cities using both GeoLite and NetAcuity Edge. We find that 0.3% of prefixes are ambiguous with respect to countries but these prefixes constitute 8.5% of the IPv4 address space. In the second part of our work, we study the mappings from prefix to location. We find that most prefixes map to only a single city but the shorter a prefix, the more locations it maps to. Our dataset however contains outliers, e.g., a /23 that maps to as many as 127 (potentially spoofed) countries. Our work takes a first look at prefix geo-location and identifies issues one should be aware of, which paves the way towards more sophisticated applications such as the geo-location of autonomous systems. We make our code and datasets publicly available to facilitate further analysis.",
-        "tags": [
-            "internet outages",
-            "routing",
-            "measurement methodology"
-        ],
         "caida_paper_id": "paper675",
         "authors": [
             {
-                "author": "author:Winter,_Philipp",
+                "author": "author:winter,_philipp",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Padmanabhan,_Ramakrishna",
+                "author": "author:padmanabhan,_ramakrishna",
                 "organization": "Unknown"
             },
             {
-                "author": "author:King,_Alistair",
+                "author": "author:king,_alistair",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:internet_outages",
+            "tag:routing",
+            "tag:measurement_methodology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "dataset:maxmind_geolite": {
         "id": "dataset:maxmind_geolite",
@@ -1333,16 +1360,16 @@
         "__typename": "Dataset",
         "name": "Netacuity Edge",
         "description": "",
-        "tags": [
-            "geolocation"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
+        "tags": [
+            "tag:geolocation"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
         "id": "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
@@ -1350,52 +1377,52 @@
         "name": "An Empirical Study of Mobile Network Behavior and Application Performance in the Wild",
         "datePublished": "2019/05/01/ 00:00:00",
         "description": "Monitoring mobile network performance is critical for optimizing the QoE of mobile apps. Until now, few studies have considered the actual network performance that mobile apps experience in a per-app or per-server granularity. In this paper, we analyze a two-year-long dataset collected by a crowdsourcing per-app measurement tool to gain new insights into mobile network behavior and application performance. We observe that only a small portion of WiFi networks can work in high-speed mode, and more than one-third of the observed ISPs still have not deployed 4G networks. For cellular networks, the DNS settings on smartphones can have a significant impact on mobile app network performance. Moreover, we notice that instant messaging (IM) and voice over IP (VoIP) services nowadays are not as performant as Web services, because the traffic using XMPP experiences longer latencies than HTTPS. We propose an automatic performance degradation detection and localization method for finding possible network problems in our huge, imbalanced and sparse dataset. Our evaluation and case studies show that our method is effective and the running time is acceptable.",
-        "tags": [
-            "data",
-            "mobile",
-            "passive data analysis",
-            "QoE"
-        ],
         "caida_paper_id": "paper673",
         "authors": [
             {
-                "author": "author:Zhang,_Shiwei",
+                "author": "author:zhang,_shiwei",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Li,_Weichao",
+                "author": "author:li,_weichao",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Wu,_Daoyuan",
+                "author": "author:wu,_daoyuan",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Jin,_Bo",
+                "author": "author:jin,_bo",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Chang,_Rocky_K._C.",
+                "author": "author:chang,_rocky_k._c.",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Gao,_Debin",
+                "author": "author:gao,_debin",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Wang,_Yi",
+                "author": "author:wang,_yi",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Mok,_Ricky_K._P.",
+                "author": "author:mok,_ricky_k._p.",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:data",
+            "tag:mobile",
+            "tag:passive_data_analysis",
+            "tag:qoe"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:zhang,_shiwei": {
         "id": "author:zhang,_shiwei",
@@ -1480,16 +1507,18 @@
     "tag:mobile": {
         "id": "tag:mobile",
         "__typename": "Tag",
+        "name": "mobile",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:qoe": {
         "id": "tag:qoe",
         "__typename": "Tag",
+        "name": "QoE",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:mopeye": {
         "id": "dataset:mopeye",
@@ -1508,39 +1537,39 @@
         "name": "How to find correlated Internet failures",
         "datePublished": "2019/05/01/ 00:00:00",
         "description": "Even as residential users increasingly rely upon the Internet, connectivity sometimes fails. Characterizing small-scale failures of last mile networks is essential to improving Internet reliability. In this paper, we develop and evaluate an approach to detect Internet failure events that affect multiple users simultaneously using measurements from the Thunderping project. Thunderping probes addresses across the U.S. when the areas in which they are geo-located are affected by severe weather alerts. It detects a disruption event when an IP address ceases to respond to pings. In this paper, we focus on simultaneous disruptions of multiple addresses that are related to each other by geography and ISP, and thus are indicative of a shared cause. Using binomial testing, we detect groups of per-IP disruptions that are unlikely to have happened independently. We characterize these dependent disruption events and present results that challenge conventional wisdom on how such outages affect Internet address blocks.",
-        "tags": [
-            "internet outages",
-            "routing",
-            "measurement methodology"
-        ],
         "caida_paper_id": "paper670",
         "authors": [
             {
-                "author": "author:Padmanabhan,_Ramakrishna",
+                "author": "author:padmanabhan,_ramakrishna",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Schulman,_Aaron",
+                "author": "author:schulman,_aaron",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Levin,_Dave",
+                "author": "author:levin,_dave",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Spring,_Neil",
+                "author": "author:spring,_neil",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:internet_outages",
+            "tag:routing",
+            "tag:measurement_methodology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "paper:stable_and_practical_as_relationship_inference_with_problink": {
         "id": "paper:stable_and_practical_as_relationship_inference_with_problink",
@@ -1548,44 +1577,44 @@
         "name": "Stable and Practical AS Relationship Inference with ProbLink",
         "datePublished": "2019/04/01/ 00:00:00",
         "description": "Knowledge of the business relationships between Autonomous Systems (ASes) is essential to understanding the behavior of the Internet routing system. Despite significant progress in the development of relationship inference algorithms, the resulting inferences are impractical for many critical real-world applications, cannot offer adequate predictability in the configuration of routing policies, and suffer from inference oscillations. To achieve more practical and stable relationship inference, we first illuminate the root causes of the contradiction between these shortcomings and the near-perfect validation results for AS-Rank, the state-of-the-art relationship inference algorithm. Using a &quot;naive&quot; inference approach as a benchmark, we find that available validation datasets over-represent AS links with easier inference requirements. We identify which types of links are harder to infer and develop appropriate validation subsets to enable more representative evaluation.",
-        "tags": [
-            "measurement methodology",
-            "routing",
-            "topology",
-            "economics"
-        ],
         "caida_paper_id": "paper671",
         "authors": [
             {
-                "author": "author:Jin,_Yuchen",
+                "author": "author:jin,_yuchen",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Scott,_Colin",
+                "author": "author:scott,_colin",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dhamdhere,_Amogh",
+                "author": "author:dhamdhere,_amogh",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Giotsas,_Vasileios",
+                "author": "author:giotsas,_vasileios",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Krishnamurthy,_Arvind",
+                "author": "author:krishnamurthy,_arvind",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Shenker,_Scott",
+                "author": "author:shenker,_scott",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:routing",
+            "tag:topology",
+            "tag:economics"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:jin,_yuchen": {
         "id": "author:jin,_yuchen",
@@ -1640,33 +1669,34 @@
     "tag:economics": {
         "id": "tag:economics",
         "__typename": "Tag",
+        "name": "economics",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "software:peeringdb": {
         "id": "software:peeringdb",
         "__typename": "Software",
         "name": "PeeringDB",
         "description": "PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions.<br>The database is a non-profit, community-driven initiative run and promoted by volunteers. It is a public tool for the growth and good of the Internet. Join the community and support the continued development of the Internet.",
-        "tags": [
-            "IXP",
-            "topology"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.peeringdb.com/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "UI"
+                    "tag:ui"
                 ]
             }
+        ],
+        "tags": [
+            "tag:ixp",
+            "tag:topology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "dataset:euro-ix_ixp_service_matrix": {
         "id": "dataset:euro-ix_ixp_service_matrix",
@@ -1674,14 +1704,14 @@
         "name": "Euro-IX IXP Service Matrix",
         "description": "A mapping of the services provided by European IXPs.",
         "tags": [
-            "ixp",
-            "topology"
+            "tag:ixp",
+            "tag:topology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "dataset:bgp_communities": {
         "id": "dataset:bgp_communities",
@@ -1689,29 +1719,29 @@
         "name": "BGP Communities",
         "organization": "CAIDA",
         "description": "A BGP Community is an attribute (standardized in RFC1997 in 1996) that provides meta-information about prefixes announced to customer and peer networks. The attribute is represented by an X:Y pair, where X and Y are two 16-bit values (extended communities use four octets). By convention, the first two octets encode the Autonomous System Number (ASN) of the operator that sets the community. The next two octets encode an arbitrary value to denote some property relevant to routing policy. Unfortunately, the specific values and semantics of this BGP attribute are not standardized. Also, the community is a transitive optional attribute, meaning that BGP implementations do not have to recognize this attribute. It is at the network operator's discretion to accept it or pass it on to another AS.",
-        "tags": [
-            "BGP",
-            "topology"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "public",
-                "url": "https://www.caida.org/data/bgp-communities/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:bgp",
+            "tag:topology"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
         "id": "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane",
@@ -1719,42 +1749,42 @@
         "name": "Blink: Fast Connectivity Recovery Entirely in the Data Plane",
         "datePublished": "2019/04/01/ 00:00:00",
         "description": "In this paper, we explore new possibilities, created by programmable switches, for fast rerouting upon signals triggered by Internet traffic disruptions. We present Blink, a data-driven system exploiting TCP-induced signals to detect failures. The key intuition behind Blink is that a TCP flow exhibits a predictable behavior upon disruption: retransmitting the same packet over and over, at epochs exponentially spaced in time. When compounded over multiple flows, this behavior creates a strong and characteristic failure signal. Blink efficiently analyzes TCP flows, at line rate, to: (i) select flows to track; (ii) reliably and quickly detect major traffic disruptions; and (iii) recover data-plane connectivity, via next-hops compatible with the operator&rsquo;s policies.",
-        "tags": [
-            "internet outages",
-            "routing"
-        ],
         "caida_paper_id": "paper669",
         "authors": [
             {
-                "author": "author:Holterbach,_Thomas",
+                "author": "author:holterbach,_thomas",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Molero,_Edgar_Costa",
+                "author": "author:molero,_edgar_costa",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Apostolaki,_Maria",
+                "author": "author:apostolaki,_maria",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Dainotti,_Alberto",
+                "author": "author:dainotti,_alberto",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Vissicchio,_Stefano",
+                "author": "author:vissicchio,_stefano",
                 "organization": "Unknown"
             },
             {
-                "author": "author:Vanbever,_Laurent",
+                "author": "author:vanbever,_laurent",
                 "organization": "Unknown"
             }
+        ],
+        "tags": [
+            "tag:internet_outages",
+            "tag:routing"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 17:10:07",
+        "date": "2020/06/26 17:10:07"
     },
     "author:holterbach,_thomas": {
         "id": "author:holterbach,_thomas",
@@ -1810,17 +1840,20 @@
         "id": "venue:acm_computer_and_communications_security_ccs",
         "__typename": "Venue",
         "name": "ACM Computer and Communications Security (CCS)",
-        "description": "...",
         "dates": [
             {
-                "date": "2019.11",
+                "name": "2018.11",
+                "url": "https://sigsac.org/ccs/CCS2018/"
+            },
+            {
+                "name": "2019.11",
                 "url": "https://sigsac.org/ccs/CCS2019/"
             }
         ],
-        "tags": [],
+        "_name": "venue:ACM_Computer_and_Communications_Security_CCS",
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 14:28:11",
-        "date": "2020/06/23 14:28:11"
+        "dateLastUpdated": "2020/06/26 18:19:11",
+        "date": "2020/06/26 18:19:11"
     },
     "solution:getting_an_asns_name_country_organization": {
         "id": "solution:getting_an_asns_name_country_organization",
@@ -1828,47 +1861,51 @@
         "visibility": "public",
         "name": "How to get an ASN's name, organization and country?",
         "description": "Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
-        "tags": [
-            "measurement methodology",
-            "topology",
-            "software/tools",
-            "ASN",
-            "geolocation",
-            "organization",
-            "country"
-        ],
         "context": "\n### <ins> Introduction </ins> ###\n\n**What is an AS?**\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)\n\n**What is an ASN?**\\\n    \u2022 Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.\n\n**What is an ASN's organization?**\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. \n\n**What is an ASN's country?** \\\n    \u2022 The country where the ASN's organization is located. \n    \n    \n### <ins> Caveats </ins> ###\n\nFor Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. \n\n### <ins> Mapping ASN's to country </ins> ###\n*AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)\n\nOne way to map a ASN to a country is by mapping to the **country of its organization.** \n\nThe AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The `country` field is stored on the organization field format. \n\nExample of the AS organization in a test file:\n~~~\n# format: org_id|changed|org_name|country|source\nLVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN\n# format: aut|changed|aut_name|org_id|opaque_id|source\n1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~\n\n### Explanation of the data fields ###\n\n--------------------\nOrganization fields\n--------------------\n\n **org_id** : unique ID for the given organization \\\n **changed** : the changed date provided by its WHOIS entry \\\n **name**    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n **country** : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n **source**  : the RIR or NIR database which contained this entry \n\n----------\nAS fields\n----------\n**aut**     : the AS number or asn \\\n**changed** : the changed date provided by its WHOIS entry \\\n**aut_name** : the name provided for the individual AS number \\\n**org_id**  : maps to an organization entry \\\n**opaque_id**   : opaque identifier used by RIR extended delegation format \\\n**source**  : the RIR or NIR database which was contained this entry \n\n### <ins> Solution </ins> ###\nThe following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\\\n{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', \n`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }\n\n ~~~python\nimport re\nimport sys\n\nfilename = 'tester'\nre_format= re.compile(\"# format:(.+)\")\n\norg_info = {}\nasn_info = {}\n\nwith open(filename) as f:\n    for line in f:\n        m = re_format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut_name' with 'asn_name'\n                keys[2] = 'asn_name'\n\n            \n        # skips over comments\n        if len(line) == 0 or line[0] == \"#\":\n            continue\n\n        values = line.rstrip().split(\"|\")\n    \n        info = {}\n\n        for i,key in enumerate(keys):\n            info[keys[i]] = values[i]\n           \n\n        if \"asn\" == keys[0]:\n            org_id = info[\"org_id\"]\n            if org_id in org_info:\n                for key in [\"org_name\",\"country\"]:\n                    info[key] = org_info[org_id][key]\n             \n            asn_info[values[0]] = info\n\n        elif \"org_id\" == keys[0]:\n            org_info[values[0]] = info\n        else:\n            print (\"unknown type\",keys[0],file= sys.stderr)\n\n# Contains the asn mapping to other field values in this format:\n# {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', \n# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }\n# print(asn_info)       \n            \n~~~\n",
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:software/tools",
+            "tag:asn",
+            "tag:geolocation",
+            "tag:organization",
+            "tag:country"
+        ],
         "dateCreated": "2020/06/22 11:33:23",
-        "dateLastUpdated": "2020/06/23 14:28:11",
-        "date": "2020/06/23 14:28:11"
+        "dateLastUpdated": "2020/06/25 12:26:44",
+        "date": "2020/06/25 12:26:44"
     },
     "tag:asn": {
         "id": "tag:asn",
         "__typename": "Tag",
+        "name": "ASN",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:geolocation": {
         "id": "tag:geolocation",
         "__typename": "Tag",
+        "name": "geolocation",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:organization": {
         "id": "tag:organization",
         "__typename": "Tag",
+        "name": "organization",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:country": {
         "id": "tag:country",
         "__typename": "Tag",
+        "name": "country",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "author:beverly,_robert": {
         "id": "author:beverly,_robert",
@@ -1910,24 +1947,25 @@
         "id": "presentation:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
         "__typename": "Presentation",
         "name": "Network Hygiene, Incentives, and Regulation: Deployment of Source Address Validation in the Internet",
-        "tags": [
-            "measurement methodology",
-            "topology",
-            "security",
-            "software/tools"
-        ],
-        "venues": [
+        "presenters": [
             {
-                "presenter": "Author:Luckie,_Matthew",
-                "venue": "venue:ACM_Computer_and_Communications_Security_CCS",
-                "date": "2019.11"
+                "presenter": "author:luckie,_matthew",
+                "venue": "venue:acm_computer_and_communications_security_ccs",
+                "date": "2019.11",
+                "url": "https://sigsac.org/ccs/CCS2019/"
             }
+        ],
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:security",
+            "tag:software/tools"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 18:12:49",
+        "date": "2020/06/26 18:12:49"
     },
     "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
         "id": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
@@ -1952,37 +1990,50 @@
     "tag:outages": {
         "id": "tag:outages",
         "__typename": "Tag",
+        "name": "outages",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:darknet": {
         "id": "tag:darknet",
         "__typename": "Tag",
+        "name": "darknet",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:active_measurement": {
         "id": "tag:active_measurement",
         "__typename": "Tag",
+        "name": "active measurement",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:visualization": {
         "id": "tag:visualization",
         "__typename": "Tag",
+        "name": "visualization",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
+    "tag:file": {
+        "id": "tag:file",
+        "__typename": "tag",
+        "name": "file",
+        "dateCreated": "2020/06/26 10:01:30",
+        "dateLastUpdated": "2020/06/26 10:01:30",
+        "date": "2020/06/26 10:01:30"
     },
     "tag:bgp": {
         "id": "tag:bgp",
         "__typename": "Tag",
+        "name": "BGP",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:as_rank": {
         "id": "dataset:as_rank",
@@ -1990,29 +2041,29 @@
         "name": "AS Rank",
         "organization": "CAIDA",
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
-        "tags": [
-            "topology",
-            "geolocation"
-        ],
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
         "availability": [
             {
-                "name": "public",
-                "url": "http://www.caida.org/data/as-organizations/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "file"
+                    "tag:file"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:geolocation"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:as_rank": {
         "id": "software:as_rank",
@@ -2020,48 +2071,51 @@
         "name": "AS Rank",
         "organization": "CAIDA",
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
-        "tags": [
-            "topology",
-            "geolocation"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "asrank.caida.org/api",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "API"
+                    "tag:api"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology",
+            "tag:geolocation"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "tag:geographic": {
         "id": "tag:geographic",
         "__typename": "Tag",
+        "name": "geographic",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:ownership": {
         "id": "tag:ownership",
         "__typename": "Tag",
+        "name": "ownership",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "tag:ixp": {
         "id": "tag:ixp",
         "__typename": "Tag",
+        "name": "IXP",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "dataset:spoofer": {
         "id": "dataset:spoofer",
@@ -2082,27 +2136,27 @@
         "name": "pyasn",
         "organization": "Hadi Asghari",
         "description": "pyasn is a Python extension module that enables very fast IP address to Autonomous System Number lookups.",
-        "tags": [
-            "IPv4 adddress",
-            "ASN"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "https://pypi.org/project/pyasn/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "CODE"
+                    "tag:code"
                 ]
             }
         ],
         "licenses": [
             "software:pyasn"
         ],
+        "tags": [
+            "tag:ipv4_adddress",
+            "tag:asn"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "license:netacuity": {
         "id": "license:netacuity",
@@ -2112,12 +2166,37 @@
         "dateLastUpdated": "2020/06/23 14:28:11",
         "date": "2020/06/23 14:28:11"
     },
+    "tag:code": {
+        "id": "tag:code",
+        "__typename": "tag",
+        "name": "CODE",
+        "dateCreated": "2020/06/26 10:01:30",
+        "dateLastUpdated": "2020/06/26 10:01:30",
+        "date": "2020/06/26 10:01:30"
+    },
     "tag:ipv4_adddress": {
         "id": "tag:ipv4_adddress",
         "__typename": "Tag",
+        "name": "IPv4 adddress",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
+    "tag:ui": {
+        "id": "tag:ui",
+        "__typename": "tag",
+        "name": "UI",
+        "dateCreated": "2020/06/26 10:01:30",
+        "dateLastUpdated": "2020/06/26 10:01:30",
+        "date": "2020/06/26 10:01:30"
+    },
+    "tag:api": {
+        "id": "tag:api",
+        "__typename": "tag",
+        "name": "API",
+        "dateCreated": "2020/06/26 10:01:30",
+        "dateLastUpdated": "2020/06/26 10:01:30",
+        "date": "2020/06/26 10:01:30"
     },
     "paper:as_relationships,_customer_cones,_and_validation": {
         "id": "paper:as_relationships,_customer_cones,_and_validation",
@@ -2130,32 +2209,40 @@
         "dateLastUpdated": "2020/06/25 10:52:50",
         "date": "2020/06/25 10:52:50"
     },
+    "tag:web": {
+        "id": "tag:web",
+        "__typename": "tag",
+        "name": "WEB",
+        "dateCreated": "2020/06/26 10:01:30",
+        "dateLastUpdated": "2020/06/26 10:01:30",
+        "date": "2020/06/26 10:01:30"
+    },
     "software:as_relationship": {
         "id": "software:as_relationship",
         "__typename": "Software",
         "name": "AS Relationship",
         "organization": "CAIDA",
         "description": "Measures an AS's centrality",
-        "tags": [
-            "topology"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "ihr.iijlab.net/ihr",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "UI"
+                    "tag:ui"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:topology"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:internet_health_report": {
         "id": "software:internet_health_report",
@@ -2163,23 +2250,23 @@
         "name": "Internet Health Report",
         "organization": "IIJ Labs",
         "description": "Measures an AS's centrality",
-        "tags": [
-            "topology"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "ihr.iijlab.net/ihr",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "UI"
+                    "tag:ui"
                 ]
             }
+        ],
+        "tags": [
+            "tag:topology"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:hi-cube": {
         "id": "software:hi-cube",
@@ -2187,26 +2274,26 @@
         "name": "HI-CUBE",
         "organization": "CAIDA",
         "description": "HI-CUBE is a web-based prototype platform for processing, storing, investigating, and correlating diverse streams of large-scale Internet security-related data.",
-        "tags": [
-            "security"
-        ],
         "availability": [
             {
-                "name": "restricted",
-                "url": "https://hicube.caida.org",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "UI"
+                    "tag:ui"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:security"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:ioda": {
         "id": "software:ioda",
@@ -2214,28 +2301,28 @@
         "name": "IODA",
         "organization": "CAIDA",
         "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
-        "tags": [
-            "security",
-            "darknet",
-            "outages"
-        ],
         "availability": [
             {
-                "name": "public",
-                "url": "https://ioda.caida.org",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "UI"
+                    "tag:ui"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:security",
+            "tag:darknet",
+            "tag:outages"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "software:manic": {
         "id": "software:manic",
@@ -2243,33 +2330,34 @@
         "name": "MANIC",
         "organization": "CAIDA",
         "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
-        "tags": [
-            "congestion",
-            "interdomain links"
-        ],
         "availability": [
             {
-                "name": "restricted",
-                "url": "https://api.manic.caida.org/v1/",
+                "name": "name",
+                "url": "url",
                 "tags": [
-                    "API"
+                    "tag:api"
                 ]
             }
         ],
         "licenses": [
             "license:bsd-4-clause-uc"
         ],
+        "tags": [
+            "tag:congestion",
+            "tag:interdomain_links"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/23 15:28:17",
-        "date": "2020/06/23 15:28:17"
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "tag:interdomain_links": {
         "id": "tag:interdomain_links",
         "__typename": "Tag",
+        "name": "interdomain links",
         "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 10:31:35",
-        "date": "2020/06/25 10:31:35"
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     }
 }

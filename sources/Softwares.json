@@ -185,6 +185,10 @@
             "topology",
             "BGP"
         ],
+        "urlRepo": {
+            "name":"repository",
+            "url":"https://github.com/CAIDA/bgpstream"
+        },
         "availability": [
             {
                 "name": "public",

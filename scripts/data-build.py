@@ -209,9 +209,8 @@ def main():
                 del obj["date"]
 
             if obj != id_objs[id_]:
-                print (json.dumps(obj,indent=4))
-                print (json.dumps(id_objs[id_],indent=4))
-
+                #print (json.dumps(obj,indent=4))
+                #print (json.dumps(id_objs[id_],indent=4))
                 print ("updating",obj["id"])
                 obj["dateLastUpdated"] = date
         for key in ["dateCreated","dateLastUpdated"]:
@@ -303,8 +302,14 @@ def data_print():
 #############################
 
 def object_lookup_type_name(type_,name):
-    id_ = type_+":"+re_id_illegal.sub("_",name)
-    return object_lookup_id(id_)
+    if type_ == name[0:len(type_)]:
+        obj = object_lookup_id(name)
+    else:
+        id_ = type_+":"+re_id_illegal.sub("_",name)
+        obj = object_lookup_id(id_)
+        obj["__typename"] = type_
+        obj["name"] = name
+    return obj
 
 def object_lookup_id(id_):
     id_ = id_.lower()
@@ -338,7 +343,7 @@ def object_lookup(info):
 
     object_types = set(["datasets","licenses","softwares","solutions","papers","publications"])
     for key in info.keys():
-        if key == "links":
+        if key == "links" or key == "tags":
             continue
             
         if key not in obj:
@@ -359,29 +364,76 @@ def object_lookup(info):
                 #dt = datetime.datetime.strptime(" ".join(digits), "%Y %m %d %H %M %S")
                 #date = int(time.mktime(dt.timetuple()))
                 obj[key] = "%s/%s/%s/ %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
+            elif obj["__typename"] == "Venue" and key == "dates":
+                for date_url in info[key]:
+                    venue_add_date_url(obj,date_url["name"],date_url["url"])
+
             else:
-                obj[key] = info[key]
-                if key == "authors" or key == "venues":
-                    for author_org in info[key]:
+                if key == "authors" or key == "venues" or key == "presenters":
+                    obj[key] = info[key]
+                    for author_org in obj[key]:
                         for k in ["author","presenter"]:
                             if k in author_org:
                                 id_ = author_org[k]
                                 author = object_lookup_id(id_)
-                                if "nameFirst" not in author and "name" not in author:
+                                if "name" not in author:
                                     author["name"] = id_
+                                author_org[k] = author["id"]
                         if "venue" in author_org:
-                            object_lookup_id(author_org["venue"])
+                            venue = object_lookup_id(author_org["venue"])
+                            venue["_name"] = author_org["venue"]
+                            if "date" in author_org:
+                                date = author_org["date"]
+                                if "url" in author_org:
+                                    url = author_org["url"]
+                                else:
+                                    url = ""
+                                venue_add_date_url(venue,date,url)
+                            author_org["venue"] = venue["id"]
+                else:
+                    obj[key] = tag_convert(info[key])
                            
 
-    if "tags" in obj:
-        for tag in obj["tags"]:
-            link = { "to":object_lookup_type_name("tag",tag)["id"] }
+    if "tags" in info:
+        tags = [None] * len(info["tags"])
+        for i,tag in enumerate(info["tags"]):
+            tags[i] = object_lookup_type_name("tag",tag)["id"]
+            link = { "to":tags[i]}
             link_lookup(obj["id"],link)
+        obj["tags"] = tags
 
 
     if "links" in info:
         for link in info["links"]:
             link_lookup(obj["id"],link)
+
+    return obj
+
+def venue_add_date_url(venue, date, url):
+    if "dates" not in venue:
+        venue["dates"] = []
+    found = False
+    for date_url in venue["dates"]:
+        if date_url["name"] == date:
+            found = True
+    if not found:
+        venue["dates"].append({"name":date,"url":url})
+
+def tag_convert(obj,padding=""):
+    type_ = type(obj)
+    #print (len(padding),padding,obj)
+    if type_ == dict:
+        for key,value in obj.items():
+            if "tags" == key and type(value) == list:
+                for i,tag in enumerate(obj["tags"]):
+                    obj["tags"][i] = object_lookup_type_name("tag",tag)["id"]
+            else:
+                obj[key] = tag_convert(key,padding + " ")
+
+    elif type_ == list:
+        for i,value in enumerate(obj):
+            obj[i] = tag_convert(value,padding + " ")
+    #print (len(padding),padding,obj)
 
     return obj
 
@@ -423,7 +475,6 @@ def link_lookup(id_, info):
 #############################
 
 def solutions_process(path):
-    print ("path:",path)
     solutions_dir = set()
     skipped = []
     for root, dirs, files in os.walk(path):
@@ -573,291 +624,6 @@ def word_freq_get(value):
                     word_freq[w] = 1
     #print (json.dumps(word_freq,indent=4))
     return word_freq
-
-
-##########################################################################
-##########################################################################
-
-
-def papers_load(fname):
-    print ("loading",fname)
-    with open(fname,"r") as f:
-        for paper in json.load(f):
-            paper_update(paper["name"], paper)
-
-def nodes_load(fname, func):
-    print ("loading",fname)
-    with open(fname,"r") as f:
-        for node in json.load(f):
-            name = None 
-            if "name" in node:
-                name = node["name"]
-            func(name, node)
-
-def lookup(types, type, name, source=None, skip=None):
-    m = re.search("^"+type+":(.+)",name)
-    if m:
-        id = name
-        name = m.group(1)
-    else:
-        id = type+":"+re_id_illegal.sub("_",name) # name.replace(" ","_").replace(":","_")
-        id = id.lower().replace(" ","_")
-
-    if types not in type_data:
-        type_data[types] = {}
-    if id not in type_data[types]:
-        node = type_data["nodes"][id] = type_data[types][id] = {"id":id,"_type":type.capitalize()}
-        node["name"] = name
-
-    node = type_data[types][id]
-    if source:
-        for key,value in source.items():
-            if (not skip or key not in skip):
-                if key not in node:
-                    node[key] = value
-                else:
-                    current = node[key]
-                    if isinstance(current,list) and isinstance(value,list):
-                        for v in value:
-                            if v not in current:
-                                current.append(v)
-    if "tags" in node:
-        tags = []
-        for i,tag in enumerate(node["tags"]):
-            if not re_tag.search(tag):
-                if not re_only_white_space.search(tag):
-                    tags.append(lookup("tags","tag",tag)["id"])
-            else:
-                tags.append(tag)
-        node["tags"] = tags
-    return node
-
-def node_cleanup_duplicates(node):
-    for key,value in node.items():
-        if isinstance(value,list):
-            clean = []
-            for v in value:
-                if v not in clean:
-                    clean.append(v)
-            node[key] = clean
-
-def dataset_update(name, dataset_source):
-    dataset = lookup("datasets","dataset",name,dataset_source)
-    if "entities" in dataset:
-        for i, entity in enumerate(dataset["entities"]):
-            entity["datasets"] = [dataset["id"]]
-            dataset["entities"][i] = entity_update(entity["name"], entity, dataset)["id"]
-    if "joins" in dataset:
-        for i,join in enumerate(dataset["joins"]):
-            join["datasets"] = [dataset["id"]]
-            dataset["joins"][i] = join_update(None, join)["id"]
-    if "papers" in dataset:
-        for i,name in enumerate(dataset["papers"]):
-            paper = lookup("papers","paper",name)
-            paper["datasets"] = [dataset["id"]]
-    return dataset
-
-def paper_update(name, paper_source):
-    paper = lookup("papers","paper",name, paper_source)
-    id = paper["id"]
-    for key,func in [["datasets",dataset_update],["entities",entity_update],
-            ["joins", join_update]]:
-        if key in paper:
-            array = [None] * len(paper[key])
-            for i,name in enumerate(paper[key]):
-                node = {"name":name,"papers":[id]}
-                array[i] = func(name, node)["id"]
-            paper[key] = array
-    return paper
-
-def entity_update(name, entity_source = None, dataset = None):
-    entity = lookup("entities","entity",name,entity_source,["features"])
-    entity["name"] = name
-    if entity_source:
-        for key in ["description"]:
-            if key in entity_source and key not in entity:
-                entity[key] = entity_source[key]
-        if "features" in entity_source:
-            if "features" not in entity:
-                entity["features"] = []
-            for f in entity_source["features"]:
-                feature = f.copy()
-                if dataset:
-                    if "datasets" not in feature:
-                        feature["datasets"] = []
-                    feature["datasets"].append(dataset["id"])
-                if "id" not in feature:
-                    feature["id"] = ":".join(["feature",dataset["name"],entity["name"]])
-                entity["features"].append(feature)
-    return entity
-
-def join_update(name, join_source):
-    id = "+".join(sorted(join_source["entities"]))
-    if not name:
-        name = id
-    #if "label" in join_source:
-        #id += ":"+join_source["label"]
-        #name += " "+join_source["label"]
-    join_source["name"] = name
-    join = lookup("joins","join",id,join_source)
-    entityObjectIds = []
-    for i,name in enumerate(join["entities"]):
-        entity = {"joins":[join["id"]]}
-        join["entities"][i] = entity_update(name,entity)["id"]
-    #for entities in [join_source["entities"],reversed(join_source["entities"])]:
-        #i = "join:"+"+".join(entities)
-        #if i not in type_data["joins"]:
-            #type_data["joins"][i] = join
-    return join
-
-def tag_update(name, tag_source = None):
-    if name:
-        m = re.search("tag:(.+)",name)
-        if m:
-            name = m.group(1)
-            print ("   >",name)
-    tag = lookup("tags","tag",name, tag_source)
-    return tag
-
-def selections_load(fname):
-    print ("loading",fname)
-    with open(fname,"r") as f:
-        for selection in json.load(f):
-            lookup("selections","selection",selection["name"],selection)
-
-def selections_load_dir(dname):
-    re_html = re.compile("\.html$", re.IGNORECASE)
-    re_pre_start = re.compile("<pre>", re.IGNORECASE)
-    re_pre_end = re.compile("</pre>", re.IGNORECASE)
-    re_body = re.compile("</body>", re.IGNORECASE)
-    print ("loading",dname)
-    for fname in os.listdir(dname):
-        path = dname+"/"+fname
-        if re_html.search(fname):
-            stage = "json_before"
-            json_string = ""
-            with open(path) as f:
-                for line in f:
-                    if re_body.search(line):
-                        break
-                    if stage == "json_before":
-                        if re_pre_start.search(line):
-                            stage = "json_in"
-                    elif stage == "json_in":
-                        if re_pre_end.search(line):
-                            stage = "json_after"
-                            selection = json.loads(json_string)
-                            selection["description"] = ""
-                        else:
-                            json_string += line
-                    else:
-                        selection["description"] += line.rstrip()
-    lookup("selections","selection",selection["name"],selection)
-
-
-####################################
-
-
-def id_word_score_get(type, id, seen):
-    if id not in id_word_score:
-        if id in seen:
-            return None
-        seen.add(id)
-        if type in type_key_w_type_w:
-            node = type_data[type][id]
-            key_weights = type_key_w_type_w[type]["key_weights"]
-            type_weights = type_key_w_type_w[type]["type_weights"]
-            word_score = word_score_get(node, key_weights, type_weights, seen)
-
-            # put in empty string for a search on nothing
-            empty_string = ""
-            if empty_string not in word_score:
-                word_score[empty_string] = 1
-            else:
-                word_score[empty_string] += 1
-        else:
-            word_score = None
-        id_word_score[id] = word_score
-    return id_word_score[id]
-
-def word_score_get(node,key_weights, type_weights, seen):
-    word_score = {}
-    for key,weight in key_weights:
-        if key in node:
-            words = re_not_word.split(re_html.sub("",node[key]))
-            for word in words:
-                word = word.lower()
-                if word not in word_score:
-                    word_score[word] = weight/len(words)
-                else:
-                    word_score[word] += weight/len(words)
-    for type,weight in type_weights:
-        if type in node:
-            for id in node[type]:
-                src = id_word_score_get(type, id, seen)
-                if src:
-                    for word,value in src.items():
-                        if word not in word_score:
-                            word_score[word] = value*weight
-                        else:
-                            word_score[word] += value*weight
-    return word_score
-
-def word_score_joins(join):
-    word_score = {}
-    add_word_score_children(word_score,join, [
-        ["entities",.9],
-        ["tags", .8]
-        ])
-    return word_score
-
-################################################
-def id_neighbors_print(fname):
-
-    id_links = {}
-    # Build up the links
-    for node in type_data["nodes"].values():
-        id = node["id"]
-        for key,value in node.items():
-            if type(value) == list:
-                for i in value:
-                    if type(i) == str and i in type_data["nodes"]:
-                        add_link(id_links, id,i)
-                        add_link(id_links, i,id)
-
-    id_neighbors = {}
-    for id,ids_set in id_links.items():
-        id_neighbors[id] = list(ids_set)
-
-    print("writing",fname)
-    with open(fname,"w") as f:
-        f.write(json.dumps(id_neighbors,indent=4, sort_keys=True))
-
-#    for time in range(0,30):
-#        for id,ids in id_links.items():
-#            id_score = id_id_score[id] = {id:id_score_node_weight}
-#            for i in ids:
-#                if i in id_id_score:
-##                    for j,score in id_id_score[i]:
-##                        if j not in id_score:
-##                            id_score[j] = score
-#                        else:
-#                            id_score[j] += score
-#
-#    for id,id_score in id_id_score.items():
-#        id_scores = []
-#        for id,score in id_score.items():
-#            id_scores.append([id,score])
-#        id_id_score[id] = sorted(id_scores,key=lambda k: k[1])
-#
-#    print("writing",fname)
-#    with open(fname,"w") as f:
-#        f.write(json.dumps(id_id_score,indent=4, sort_keys=True))
-
-def add_link(id_links, i,j):
-    if i not in id_links:
-        id_links[i] = set()
-    id_links[i].add(j)
 
 main()
 
