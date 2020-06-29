@@ -249,7 +249,7 @@ with bz2.open(args.link_file, 'r') as f:
         for nid in neighbors:
 
             #if nid in nodes:
-            if node in nodes:
+            if nid in nodes:
                 node = node_lookup(nid)
                 for neighbor in neighbors:
 
