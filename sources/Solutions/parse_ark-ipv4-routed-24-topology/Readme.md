@@ -129,7 +129,7 @@ def node_lookup(nid):
             "id": node_id,
             "asn": "",
             "isp": [],
-            "neighbor": [],
+            "neighbor": set(),
             "location": {
                 "continent": "",
                 "country": "",
@@ -247,19 +247,15 @@ with bz2.open(args.link_file, 'r') as f:
             neighbors.append(nid[0])
 
         for nid in neighbors:
-
-            #if nid in nodes:
             if nid in nodes:
-                node = nodes[nid]
-                for neighbor in neighbors:
-
+                for n in neighbors:
+                
                     #skip its neighbors are the node itself 
-                    if neighbor == nid:
+                    if nid == n and n not in nodes:
                         continue
-                    else:
-                        # if neighbor is not in the list, append it to the list
-                        if neighbor not in node["neighbor"]:
-                            node["neighbor"].append(neighbor)
+
+                    nodes[nid]["neighbor"].add(n)
+                    nodes[n]["neighbor"].add(nid)
 
 #print(nodes)
 
