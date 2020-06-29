@@ -172,7 +172,7 @@ with bz2.open(args.node_file, mode='r') as f:
 
         # skip the comments or length of line is zero
         if len(line) == 0 or line[0] == "#":
-        	continue
+            continue
 
         value = line.strip(" \n") # remove tailing newline
         value = value.split(" ")
@@ -206,13 +206,13 @@ with bz2.open(args.nodeas_file, mode = 'r') as f:
 
             node = nodes[value[1]]
             node["asn"] = value[2]
-	    
+        
 # load nodes.geo.bz2 file
 with bz2.open(args.geo_file, 'r') as f:
     for line in f:
         line = line.decode()
 
-	# skip over comments
+        # skip over comments
         if len(line) == 0 or line[0] == "#":
             continue
 
@@ -234,13 +234,13 @@ with bz2.open(args.link_file, 'r') as f:
     for line in f:
         line = line.decode()
 
-	# skip over comments of the length of line is zero
+        # skip over comments of the length of line is zero
         if len(line) == 0 or line[0] == "#":
             continue
 
         value = line.strip(" \n")
         value = value.split(" ")
-	
+    
         neighbors = []
         for nid in value[3:]:
             nid = nid.split(":")
@@ -249,18 +249,19 @@ with bz2.open(args.link_file, 'r') as f:
         for nid in neighbors:
 
             #if nid in nodes:
-            node = node_lookup(nid)
-            for neighbor in neighbors:
+            if node in nodes:
+                node = node_lookup(nid)
+                for neighbor in neighbors:
 
-                #skip its neighbors are the node itself 
-                if neighbor == nid:
-                    continue
-                else:
-                    # if neighbor is not in the list, append it to the list
-                    #if node["neighbor"].count(neighbor[0]) == 0
-                    if neighbor not in node["neighbor"]:
-                        node["neighbor"].append(neighbor)
+                    #skip its neighbors are the node itself 
+                    if neighbor == nid:
+                        continue
+                    else:
+                        # if neighbor is not in the list, append it to the list
+                        if neighbor not in node["neighbor"]:
+                            node["neighbor"].append(neighbor)
 
 #print(nodes)
+
 
 ~~~
