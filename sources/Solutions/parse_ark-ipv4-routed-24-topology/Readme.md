@@ -154,8 +154,6 @@ def placeholder_lookup(addr):
     if binary_addr != PREFIX_224 and binary_addr != PREFIX_0:
         return False
     else:
-        print("Find placeholder:", addr)
-
         return True
 
 def delete_node(nid):
@@ -195,7 +193,6 @@ with bz2.open(args.node_file, mode='r') as f:
 
         # if the node is placeholder, then delete it from nodes
         if placeholder:
-            print("nid:", value[1])
             delete_node(value[1])
 
 # load nodes.as.bz2
@@ -210,7 +207,6 @@ with bz2.open(args.nodeas_file, mode = 'r') as f:
             node = nodes[value[1]]
             node["asn"] = value[2]
 	    
-
 # load nodes.geo.bz2 file
 with bz2.open(args.geo_file, 'r') as f:
     for line in f:
@@ -232,7 +228,6 @@ with bz2.open(args.geo_file, 'r') as f:
             node["location"]["region"] = value[1][3]
             node["location"]["city"] = value[1][4]
 
-
 # load links.bz2 file
 start = time.perf_counter()
 with bz2.open(args.link_file, 'r') as f:
@@ -245,9 +240,7 @@ with bz2.open(args.link_file, 'r') as f:
 
         value = line.strip(" \n")
         value = value.split(" ")
-
-
-        print("length", len(value[3:]))
+	
         neighbors = []
         for nid in value[3:]:
             nid = nid.split(":")
