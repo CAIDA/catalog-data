@@ -96,9 +96,12 @@ ecode
 ~~~
 
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
+
 ~~~python
 import argparse
 import bz2
+import socket
+import struct
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-n', dest = 'node_file', default = '', help = 'Please enter the file name of Nodes File')
@@ -107,10 +110,19 @@ parser.add_argument('-a', dest = 'nodeas_file', default = '', help = 'Please ent
 parser.add_argument('-g', dest = 'geo_file', default = '', help = 'Please enter the file name of Node_Geolocation File')
 args = parser.parse_args()
 
+
 # create dictionary
 nodes = {}
+PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))
+PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))
 
 def node_lookup(nid):
+    """
+    To check whether nid is in the ndoes.
+    If not, then create one in nodes.
+
+    param: string, input node id
+    """
     if nid not in nodes:
         node_id = nid.replace("N", "")
         nodes[nid] = {
@@ -127,14 +139,40 @@ def node_lookup(nid):
         }
     return nodes[nid]
 
+def placeholder_lookup(addr):
+    """
+    If the assign ipv4 address is 224.0.0.0 or 0.0.0.0,
+    then the node is the placeholder node.
+
+    param:
+    addr: string, input IPv4 addresss
+
+    """
+    
+    binary_addr = struct.unpack("!I", socket.inet_aton(addr))
+
+    if binary_addr != PREFIX_224 and binary_addr != PREFIX_0:
+        return False
+    else:
+        print("Find placeholder:", addr)
+
+        return True
+
+def delete_node(nid):
+    """
+    Delete the node in nodes
+    """
+    del nodes[nid]
+
 # load nodes.bz2
-count = 0;
 with bz2.open(args.node_file, mode='r') as f:
+
     for line in f:
+    
+        #converting byte string to string
+        line = line.decode() 
 
-        line = line.decode() #converting byte string to string
-
-        # search the string with node in front
+        # skip the comments or length of line is zero
         if len(line) == 0 or line[0] == "#":
         	continue
 
@@ -146,78 +184,90 @@ with bz2.open(args.node_file, mode='r') as f:
         #value[1] = value[1].replace("N", "")
         node = node_lookup(value[1])
 
-        # get isp
+        # get isp and check whether the node is placeholder
+        placeholder = False
         for isp in value[2:]:
             if len(isp) != 0:
+                if placeholder_lookup(isp):
+                    placeholder = True
+                    break
                 node["isp"].append(isp)
 
-        count += 1
-        if count == 4:
-            break
+        # if the node is placeholder, then delete it from nodes
+        if placeholder:
+            print("nid:", value[1])
+            delete_node(value[1])
 
 # load nodes.as.bz2
-count = 0
 with bz2.open(args.nodeas_file, mode = 'r') as f:
     for line in f:
         line = line.decode()
         value = line.split(" ")
 
-        node = node_lookup(value[1])
-        node["asn"] = value[2]
+        # if the node is in nodes, assign AS number to each node
+        if value[1] in nodes:
 
-        count += 1
-
-        if count ==4:
-            break
+            node = nodes[value[1]]
+            node["asn"] = value[2]
+	    
 
 # load nodes.geo.bz2 file
-count = 0
 with bz2.open(args.geo_file, 'r') as f:
     for line in f:
         line = line.decode()
 
-		# skip over comments
+	# skip over comments
         if len(line) == 0 or line[0] == "#":
             continue
 
         value = line.split(" ")
         value[1] = value[1].split("\t")
         value[1][0] = value[1][0].replace(":", "")
-        node = node_lookup(value[1][0])
-        node["location"]["continent"] = value[1][1]
-        node["location"]["country"] = value[1][2]
-        node["location"]["region"] = value[1][3]
-        node["location"]["city"] = value[1][4]
 
-        count += 1
-        if count == 1:
-            break
+        # if the node is in nodes, assign geo info to each node
+        if value[1][0] in nodes:
+            node = nodes[value[1][0]]
+            node["location"]["continent"] = value[1][1]
+            node["location"]["country"] = value[1][2]
+            node["location"]["region"] = value[1][3]
+            node["location"]["city"] = value[1][4]
+
 
 # load links.bz2 file
-count = 0
+start = time.perf_counter()
 with bz2.open(args.link_file, 'r') as f:
     for line in f:
         line = line.decode()
 
-		# skip over comments
+	# skip over comments of the length of line is zero
         if len(line) == 0 or line[0] == "#":
             continue
 
         value = line.strip(" \n")
         value = value.split(" ")
 
+
+        print("length", len(value[3:]))
+        neighbors = []
         for nid in value[3:]:
+            nid = nid.split(":")
+            neighbors.append(nid[0])
+
+        for nid in neighbors:
+
+            #if nid in nodes:
             node = node_lookup(nid)
-            for neighbor in value[3:]:
+            for neighbor in neighbors:
+
+                #skip its neighbors are the node itself 
                 if neighbor == nid:
                     continue
                 else:
-                    neighbor = neighbor.split(":")
-                    if node["neighbor"].count(neighbor[0]) == 0:
-                        node["neighbor"].append(neighbor[0])
-        count += 1
-        if count == 50:
-            break
+                    # if neighbor is not in the list, append it to the list
+                    #if node["neighbor"].count(neighbor[0]) == 0
+                    if neighbor not in node["neighbor"]:
+                        node["neighbor"].append(neighbor)
 
 #print(nodes)
+
 ~~~
