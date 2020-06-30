@@ -65,8 +65,30 @@ This makes it more challenging to interpret the appearance of a matching destina
 10.2.1.0/24 4_5 multie origi
 10.2.1.0/24  4_{4,3}
 ~~~
+## PyBGPStream ##
 
-# solution
+PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
+
+PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) direct interface to the [libBGPStream]( https://bgpstream.caida.org/ ) C API, and `pybgpstream`, a high-level 'Pythonic' interface to the functionality provided by `_pybgpstream`. 
+
+### Quick Start ###
+To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream )
+
+Then, you should be able to install PyBGPStream using pip: 
+
+`$ pip install pybgpstream `
+
+Alternatively, to install PyBGPStream from source either clone the [Github repository]( https://github.com/CAIDA/bgpstream
+ ) (PyBGPStream is located in the `pybgpstream` subdirectory), or download a [source tarball]( https://bgpstream.caida.org/download ) and then run:
+ 
+ `$ python setup.py build`\
+ `$ python setup.py install`
+ 
+ For more information on installing PyBGPStream, please see the detailed [installation instructions]( https://bgpstream.caida.org/docs/install/pybgpstream ) on the BGPStream website. 
+ 
+ Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
+
+# solution #
 1. Write a script that uses BGPStream's [PyBGPStream](https://bgpstream.caida.org/docs/tutorials/pybgpstream)
 to download and store the AS path and prefixes into prefix-as_paths.dat.  Write a script using
 [pyasn](https://pypi.org/project/pyasn/) that loads prefix-as_paths.dat, and then use it to map
