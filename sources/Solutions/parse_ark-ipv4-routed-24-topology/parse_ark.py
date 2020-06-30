@@ -20,6 +20,7 @@ placeholder_set = set()
 
 # create dictionary
 nodes = {}
+MASK_3 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))[0]
 PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))
 PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))
 
