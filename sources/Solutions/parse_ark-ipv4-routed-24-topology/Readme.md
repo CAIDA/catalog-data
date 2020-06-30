@@ -141,60 +141,52 @@ def node_lookup(nid):
 
 def placeholder_lookup(addr):
     """
-    If the assign ipv4 address is 224.0.0.0 or 0.0.0.0,
-    then the node is the placeholder node.
+    The function is to check whether the node is a placeholder or not
 
     param:
     addr: string, input IPv4 addresss
 
     """
     
-    binary_addr = struct.unpack("!I", socket.inet_aton(addr))
+    binary_addr = struct.unpack("!I", socket.inet_aton(addr))[0]
 
-    if binary_addr != PREFIX_224 and binary_addr != PREFIX_0:
+    if (binary_addr & MASK_3) != PREFIX_224 and (binary_addr & MASK_3) != PREFIX_0:    
         return False
     else:
         return True
-
-def delete_node(nid):
-    """
-    Delete the node in nodes
-    """
-    del nodes[nid]
-
+        
 # load nodes.bz2
 with bz2.open(args.node_file, mode='r') as f:
-
     for line in f:
     
-        #converting byte string to string
+        # convert byte string to string
         line = line.decode() 
 
-        # skip the comments or length of line is zero
+        # skip the comments or the length of line is zero
         if len(line) == 0 or line[0] == "#":
             continue
 
         value = line.strip(" \n") # remove tailing newline
         value = value.split(" ")
-
-        # get node id
         value[1] = value[1].replace(":", "")
-        #value[1] = value[1].replace("N", "")
-        node = node_lookup(value[1])
-
+             
         # get isp and check whether the node is placeholder
+        isp_list = []
         placeholder = False
         for isp in value[2:]:
-            if len(isp) != 0:
-                if placeholder_lookup(isp):
-                    placeholder = True
-                    break
-                node["isp"].append(isp)
+            if len(isp) == 0:
+                continue
+            if placeholder_lookup(isp):
+                placeholder = True
+                placeholder_count += 1
+                break
+            isp_list.append(isp)
 
-        # if the node is placeholder, then delete it from nodes
-        if placeholder:
-            delete_node(value[1])
-
+        # if the node the not placeholder, then process the node
+        if not placeholder:
+            node = node_lookup(value[1])
+            node['isp'] = isp_list
+            
 # load nodes.as.bz2
 with bz2.open(args.nodeas_file, mode = 'r') as f:
     for line in f:
@@ -203,9 +195,7 @@ with bz2.open(args.nodeas_file, mode = 'r') as f:
 
         # if the node is in nodes, assign AS number to each node
         if value[1] in nodes:
-
-            node = nodes[value[1]]
-            node["asn"] = value[2]
+            nodes[value[1]]["asn"] = value[2]
         
 # load nodes.geo.bz2 file
 with bz2.open(args.geo_file, 'r') as f:
@@ -258,6 +248,5 @@ with bz2.open(args.link_file, 'r') as f:
                     nodes[n]["neighbor"].add(nid)
 
 #print(nodes)
-
 
 ~~~
