@@ -72,7 +72,7 @@ PyBGPStream is a Python library that provides a high-level interface for live an
 PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) direct interface to the [libBGPStream]( https://bgpstream.caida.org/ ) C API, and `pybgpstream`, a high-level 'Pythonic' interface to the functionality provided by `_pybgpstream`. 
 
 ### Quick Start ###
-To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream )
+To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream ).
 
 Then, you should be able to install PyBGPStream using pip: 
 
