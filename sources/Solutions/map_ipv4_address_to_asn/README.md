@@ -88,6 +88,26 @@ Alternatively, to install PyBGPStream from source either clone the [Github repos
  
  Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
 
+## pyasn ##
+`pyasn` is a Python extension module that enables very fast IP address to Autonomous System Number lookups. Current state and Historical lookups can be done, based on the MRT/RIB BGP archive used as input. 
+
+pyasn is different from other ASN lookup tools in that it provides offline and historical lookups. It provides utility scripts for users to build their own lookup databases based on any MRT/RIB archive. This makes pyasn much faster than online dig/whois/json lookups.
+
+### Installation ## 
+
+`$ pip install pyasn -- pre`
+
+Or with the standard python:
+
+`$ python setup.py build`
+`$ python setup.py install --record log`
+
+You will need to have pip, setuptools and build essentials installed if you build the package manually. On Ubuntu/Debian you can get them using the following command:
+
+`$ sudo apt-get install python-pip python-dev build-essential`
+
+Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).
+
 # solution #
 1. Write a script that uses BGPStream's [PyBGPStream](https://bgpstream.caida.org/docs/tutorials/pybgpstream)
 to download and store the AS path and prefixes into prefix-as_paths.dat.  Write a script using
