@@ -21,8 +21,8 @@ placeholder_set = set()
 # create dictionary
 nodes = {}
 MASK_3 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))[0]
-PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))
-PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))
+PREFIX_224 = MASK_3
+PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))[0]
 
 
 # ====================================================
@@ -178,7 +178,7 @@ with bz2.open(args.link_file, 'r') as f:
             neighbors.append(nid.split(":")[0])
 
         for nid in neighbors:
-            if n in nodes:
+            if nid in nodes:
                 for n in neighbors:
                 
                     #skip its neighbors are the node itself 
@@ -201,8 +201,6 @@ for node in nodes:
     if len(node["neighbor"]) == 0:
         print("Node {} has no any neighbor node.".format(node))
         count("no_neighbor")
-
-        
 
 # ====================================================
 
