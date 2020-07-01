@@ -99,7 +99,7 @@ pyasn is different from other ASN lookup tools in that it provides offline and h
 
 Or with the standard python:
 
-`$ python setup.py build`
+`$ python setup.py build`\
 `$ python setup.py install --record log`
 
 You will need to have pip, setuptools and build essentials installed if you build the package manually. On Ubuntu/Debian you can get them using the following command:
