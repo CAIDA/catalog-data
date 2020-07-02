@@ -33,14 +33,14 @@ Many nodes in the ITDK dataset are placeholder nodes. These are the non response
 ### Explanation of the Data Files ###
 *ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
-##### midar-iff.nodes.bz2
-File format: node <node_id>:   <i1>   <i2>   ...   <in>
+#### midar-iff.nodes.bz2
+File format: node <node_id>:   <i<sub>1</sub>>   <i<sub>2</sub>>   ...   <i<sub>n</sub>>
 Each line indicates that a node node_id has interfaces i<sub>1</sub> to i<sub>n</sub>. 
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
 
-##### midar-iff.links.bz2
+#### midar-iff.links.bz2
 ~~~
 link L1:  N27677807:1.0.0.1 N106961
 ~~~
