@@ -34,8 +34,8 @@ Many nodes in the ITDK dataset are placeholder nodes. These are the non response
 *ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 #### midar-iff.nodes.bz2
-File format: node <node_id>:   <i<sub>1</sub>>   <i<sub>2</sub>>   ...   <i<sub>n</sub>>
-Each line indicates that a node node_id has interfaces i<sub>1</sub> to i<sub>n</sub>. 
+File format: `node <node_id>:   <i<sub>1</sub>>   <i<sub>2</sub>>   ...   <i<sub>n</sub>>` <br/>
+Each line indicates that a node `node_id` has interfaces `i<sub>1</sub>` to `i<sub>n</sub>`. 
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
