@@ -116,6 +116,12 @@ ecode
 }
 ~~~
 
+
+### <ins> Solution </ins> ###
+The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
+{'N12285': {`asn`: ' ', 'isp': ' ', `asn_name`: ' ', 
+`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
+
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 
 ~~~python
