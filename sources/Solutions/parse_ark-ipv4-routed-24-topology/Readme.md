@@ -17,7 +17,7 @@ https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_
 https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html
 https://www.caida.org/data/internet-topology-data-kit/ <--
 
-https://www.caida.org/data/request_user_info_forms/ark.xml (download your copy of data)
+
 https://docs.python.org/3/library/bz2.html
 
 ### Placeholder Nodes
@@ -76,7 +76,8 @@ print ("nodes_total: ",$nodes_total,"\n");
 print ("placeholder: ",$placeholder_total,"\n");
 ~~~
 
-### Nodes files
+### Explanation of the data fields ###
+*ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 midar-iff.nodes.bz2
 ~~~
@@ -105,7 +106,7 @@ ecode
     "id":4,
     "asn":123,
     "isp":["12.3.34"],
-     "neighbors":[3,2,3],
+     "neighbors":{3,2,3},
     "location":{
         "continent":"SA",
         "country":"CO",
@@ -119,7 +120,7 @@ ecode
 
 ### <ins> Solution </ins> ###
 The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
-{'N12285': {`asn`: ' ', `isp`: [], `neighbor`: {}, `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
+{'N12285': {`id`: ' ', `asn`: ' ', `isp`: [], `neighbor`: {}, `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
 
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 
@@ -153,7 +154,7 @@ def node_lookup(nid):
     if nid not in nodes:
         #node_id = nid.replace("N", "")
         nodes[nid] = {
-            #"id": node_id,
+            "id": node_id,
             "asn": "",
             "isp": [],
             "neighbor": set(),
@@ -211,6 +212,7 @@ with bz2.open(args.node_file, mode='r') as f:
         # if the node the not placeholder, then process the node
         if not placeholder:
             node = node_lookup(value[1])
+            node['id'] = value[1].replace("N", "")
             node['isp'] = isp_list
 
 # === load nodes.as.bz2 ===
