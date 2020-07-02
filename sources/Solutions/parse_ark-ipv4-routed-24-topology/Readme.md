@@ -19,65 +19,16 @@ https://www.caida.org/data/internet-topology-data-kit/ <--
 
 
 https://docs.python.org/3/library/bz2.html
+### Introduction ###
+
+This solution is for parsing ITDK dataset. The information of nodes are stored in 4 different files. We extract each node's `node id`, `isp` from nodes.bz2, `asn` from nodes.as.bz2, `neighbors` from links.bz2 and `location` from nodes.geo.bz2 and store them into json format.
 
 ### Placeholder Nodes ###
 
 Many nodes in the ITDK dataset are placeholder nodes. These are the non response hops in the traceroute. In most analysis, we want to ignore placeholder nodes. Placeholders have reserved IP addresses, so we identify them by thier IP addresses. In ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses. Placeholder nodes would not be put in the dictionay `nodes` in the solution.
 
 
-Please port this Perl code into your Python script.
-~~~Perl
-#! A/opt/local/bin/perl
-# Many nodes in the ITDK are placeholder nodes.
-# this are the non response hops in the traceroute
-#   12.0.0.1  * 123.3.2.3
-# We don't know what machine is there, but we know there is a machine between
-# 12.0.0.1 and 123.3.2.3.
-# In most analysis, we want to ignore placeholders.
-# You identify placeholders by their IP addresses.
-# Placeholder nodes have reserved IP addresses
-# The following Perl code identifies placeholders
-use warnings;
-use strict;
 
-use Socket qw(PF_INET SOCK_STREAM pack_sockaddr_in inet_aton);
-
-
-use constant MASK_3 => unpack("N",inet_aton("224.0.0.0"));
-use constant PREFIX_224 => MASK_3;
-use constant MASK_8 => unpack("N",inet_aton("255.0.0.0"));
-use constant PREFIX_0 => unpack("N",inet_aton("0.0.0.0"));
-
-my $nodes_total = 0;
-my $placeholder_total = 0;
-
-while (<>) {
-    next if (/#/);
-    my ($node,$nid,@addrs) = split /\s+/;
-    my $placeholder;
-    foreach my $addr (@addrs) {
-        my $net = inet_aton($addr);
-        my $binary = unpack("N", $net);
-        if ((($binary & MASK_3) == PREFIX_224)
-            || (($binary & MASK_8) == PREFIX_0)) {
-            $placeholder = 1;
-            last;
-        }
-    }
-    if (not $placeholder) {
-        $nodes_total += 1;
-    } else {
-        $placeholder_total += 1;
-    }
-
-    #print ("$not_place_holder_node $nodes_total $placeholder_total\n");
-    # Only process the none placeholder nodes
-    #last if ($nodes_total > 10);
-}
-
-print ("nodes_total: ",$nodes_total,"\n");
-print ("placeholder: ",$placeholder_total,"\n");
-~~~
 
 ### Explanation of the data fields ###
 *ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
@@ -154,12 +105,11 @@ def node_lookup(nid):
     param: string, input node id
     """
     if nid not in nodes:
-        #node_id = nid.replace("N", "")
         nodes[nid] = {
-            "id": node_id,
+            "id": "",
             "asn": "",
             "isp": [],
-            "neighbor": set(),
+            "neighbors": set(),
             "location": {
                 "continent": "",
                 "country": "",
@@ -272,6 +222,61 @@ with bz2.open(args.link_file, 'r') as f:
                     if nid == n or n not in nodes:
                         continue
 
-                    nodes[nid]["neighbor"].add(n)
-                    nodes[n]["neighbor"].add(nid)
+                    nodes[nid]["neighbors"].add(n)
+                    nodes[n]["neighbors"].add(nid)
+~~~
+
+### Placeholder Perl Code ###
+Port this Perl code into Python script.
+~~~Perl
+#! A/opt/local/bin/perl
+# Many nodes in the ITDK are placeholder nodes.
+# this are the non response hops in the traceroute
+#   12.0.0.1  * 123.3.2.3
+# We don't know what machine is there, but we know there is a machine between
+# 12.0.0.1 and 123.3.2.3.
+# In most analysis, we want to ignore placeholders.
+# You identify placeholders by their IP addresses.
+# Placeholder nodes have reserved IP addresses
+# The following Perl code identifies placeholders
+use warnings;
+use strict;
+
+use Socket qw(PF_INET SOCK_STREAM pack_sockaddr_in inet_aton);
+
+
+use constant MASK_3 => unpack("N",inet_aton("224.0.0.0"));
+use constant PREFIX_224 => MASK_3;
+use constant MASK_8 => unpack("N",inet_aton("255.0.0.0"));
+use constant PREFIX_0 => unpack("N",inet_aton("0.0.0.0"));
+
+my $nodes_total = 0;
+my $placeholder_total = 0;
+
+while (<>) {
+    next if (/#/);
+    my ($node,$nid,@addrs) = split /\s+/;
+    my $placeholder;
+    foreach my $addr (@addrs) {
+        my $net = inet_aton($addr);
+        my $binary = unpack("N", $net);
+        if ((($binary & MASK_3) == PREFIX_224)
+            || (($binary & MASK_8) == PREFIX_0)) {
+            $placeholder = 1;
+            last;
+        }
+    }
+    if (not $placeholder) {
+        $nodes_total += 1;
+    } else {
+        $placeholder_total += 1;
+    }
+
+    #print ("$not_place_holder_node $nodes_total $placeholder_total\n");
+    # Only process the none placeholder nodes
+    #last if ($nodes_total > 10);
+}
+
+print ("nodes_total: ",$nodes_total,"\n");
+print ("placeholder: ",$placeholder_total,"\n");
 ~~~
