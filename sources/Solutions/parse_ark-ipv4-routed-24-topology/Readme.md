@@ -104,7 +104,7 @@ ecode
 {
     "id":4,
     "asn":123,
-    "ips":["12.3.34"],
+    "isp":["12.3.34"],
      "neighbors":[3,2,3],
     "location":{
         "continent":"SA",
@@ -119,8 +119,7 @@ ecode
 
 ### <ins> Solution </ins> ###
 The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
-{'N12285': {`asn`: ' ', 'isp': ' ', `asn_name`: ' ', 
-`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
+{'N12285': {`asn`: ' ', `isp`: [], `neighbor`: {}, `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
 
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 
