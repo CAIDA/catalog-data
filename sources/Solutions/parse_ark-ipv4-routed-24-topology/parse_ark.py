@@ -10,34 +10,12 @@ parser.add_argument('-a', dest = 'nodeas_file', default = '', help = 'Please ent
 parser.add_argument('-g', dest = 'geo_file', default = '', help = 'Please enter the file name of Node_Geolocation File')
 args = parser.parse_args()
 
-
-# ====================================================
-# These variables are for testing the script, 
-# should not be included in the actual solution
-key_freq = {}
-placeholder_set = set()
-# ====================================================
-
 # create dictionary
 nodes = {}
-MASK_3 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))[0]
-PREFIX_224 = MASK_3
+MASK_8 = struct.unpack("!I", socket.inet_aton("255.0.0.0"))[0]
+PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))[0]
+MASK_3 = PREFIX_224
 PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))[0]
-
-
-# ====================================================
-# These functions are for testing the coreection of the script,
-# this part should not be included in the actual solution
-def count(key):
-    """
-
-    """
-    if key not in key_freq:
-        key_freq[key] = 1
-    else:
-        key_freq[key] += 1
-
-# ====================================================
 
 def node_lookup(nid):
     """
@@ -47,9 +25,9 @@ def node_lookup(nid):
     param: string, input node id
     """
     if nid not in nodes:
-        node_id = nid.replace("N", "")
+        #node_id = nid.replace("N", "")
         nodes[nid] = {
-            "id": node_id,
+            #"id": node_id,
             "asn": "",
             "isp": [],
             "neighbor": set(),
@@ -65,19 +43,19 @@ def node_lookup(nid):
 def placeholder_lookup(addr):
     """
     The function is to check whether the node is a placeholder or not
+    If the addr is in 224.0.0.0 or 0.0.0.0, then it is a placeholder
 
     param:
     addr: string, input IPv4 addresss
-
     """
     binary_addr = struct.unpack("!I", socket.inet_aton(addr))[0]
 
-    if (binary_addr & MASK_3) != PREFIX_224 and (binary_addr & MASK_3) != PREFIX_0:    
+    if (binary_addr & MASK_3) != PREFIX_224 and (binary_addr & MASK_8) != PREFIX_0:    
         return False
     else:
         return True
 
-# load nodes.bz2
+# === load nodes.bz2 ===
 with bz2.open(args.node_file, mode='r') as f:
 
     for line in f:
@@ -96,28 +74,20 @@ with bz2.open(args.node_file, mode='r') as f:
         # get isp and check whether the node is placeholder
         isp_list = []
         placeholder = False
+
         for isp in value[2:]:
             if len(isp) == 0:
                 continue
             if placeholder_lookup(isp):
-                placeholder = True
-                # ====================================================
-                # for testing
-                placeholder_set.add(value[1])
-                count("placeholder") 
-                # ====================================================
-                break
+                placeholder = True           
             isp_list.append(isp)
 
         # if the node the not placeholder, then process the node
         if not placeholder:
             node = node_lookup(value[1])
             node['isp'] = isp_list
-            # ====================================================
-            count("non-placeholder") # for testing
-            # ====================================================
 
-# load nodes.as.bz2
+# === load nodes.as.bz2 ===
 with bz2.open(args.nodeas_file, mode = 'r') as f:
     for line in f:
         line = line.decode()
@@ -126,15 +96,8 @@ with bz2.open(args.nodeas_file, mode = 'r') as f:
         # if the node is in nodes, assign AS number to each node
         if value[1] in nodes:
             nodes[value[1]]["asn"] = value[2]
-        # ====================================================
-        # testing
-        elif value[1] in placeholder_set:
-            count("placeholder_in_AS")
-            print("Placeholder node:{} is in the AS file.".format(value[1]))
 
-        # ====================================================
-        
-# load nodes.geo.bz2 file
+# === load nodes.geo.bz2 file ===
 with bz2.open(args.geo_file, 'r') as f:
     for line in f:
         line = line.decode()
@@ -153,15 +116,9 @@ with bz2.open(args.geo_file, 'r') as f:
             node["location"]["continent"] = value[1][1]
             node["location"]["country"] = value[1][2]
             node["location"]["region"] = value[1][3]
-            node["location"]["city"] = value[1][4]
-        # ====================================================
-        # testing
-        elif value[1][0] in placeholder_set:
-            count("placeholder_in_geo")
-            print("Placeholder node:{} is in the GEO file.".format(value[1][0]))
-        # ====================================================  
+            node["location"]["city"] = value[1][4]     
 
-# load links.bz2 file
+# === load links.bz2 file ===
 with bz2.open(args.link_file, 'r') as f:
     for line in f:
         line = line.decode()
@@ -182,26 +139,9 @@ with bz2.open(args.link_file, 'r') as f:
                 for n in neighbors:
                 
                     #skip its neighbors are the node itself 
-                    if nid == n and n not in nodes:
+                    if nid == n or n not in nodes:
                         continue
 
                     nodes[nid]["neighbor"].add(n)
                     nodes[n]["neighbor"].add(nid)
-        # ====================================================
-        # testing
-        count("link")
-
-        # ====================================================
-
-# ====================================================
-# testing
-print("Checking whether every node has at least one neighbor...")
-
-for node in nodes:
-    if len(node["neighbor"]) == 0:
-        print("Node {} has no any neighbor node.".format(node))
-        count("no_neighbor")
-
-# ====================================================
-
-#print(nodes)
+        
