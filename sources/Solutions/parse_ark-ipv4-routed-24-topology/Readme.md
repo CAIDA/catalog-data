@@ -20,7 +20,10 @@ https://www.caida.org/data/internet-topology-data-kit/ <--
 
 https://docs.python.org/3/library/bz2.html
 
-### Placeholder Nodes
+### Placeholder Nodes ###
+
+Many nodes in the ITDK dataset are placeholder nodes. These are the non response hops in the traceroute. In most analysis, we want to ignore placeholder nodes. Placeholders have reserved IP addresses, so we identify them by thier IP addresses. In ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses. Placeholder nodes would not be put in the dictionay `nodes` in the solution.
+
 
 Please port this Perl code into your Python script.
 ~~~Perl
@@ -106,19 +109,18 @@ ecode
     "id":4,
     "asn":123,
     "isp":["12.3.34"],
-     "neighbors":{3,2,3},
+     "neighbors":{"3,2,3"},
     "location":{
         "continent":"SA",
         "country":"CO",
         "region":"34",
-        "city"
-        ....
+        "city": "Bogota"
      }
 }
 ~~~
 
 
-### <ins> Solution </ins> ###
+### Solution ###
 The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
 {'N12285': {`id`: ' ', `asn`: ' ', `isp`: [], `neighbor`: {}, `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
 
