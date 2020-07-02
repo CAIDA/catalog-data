@@ -40,15 +40,54 @@ __email__ = "<bhuffake@caida.org>"
 # CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 # ENHANCEMENTS, OR MODIFICATIONS.
 
+#!/usr/bin/env python
+
 import pybgpstream
+import os.path
+
+# Create pybgpstream
 stream = pybgpstream.BGPStream(
     from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
     collectors=["route-views.sg", "route-views.eqix"],
-    record_type="updates"
+    record_type="updates",  
 )
 
+prefix_asn = dict()
 for elem in stream:
     # record fields can be accessed directly from elem
-    asn_path = elem.fields["as-path"]
-    prefix = elem.fields["prefix"]
-    print(prefix+"\t"+asn_path)
+    if "as-path" in elem.fields:
+        asns = elem.fields["as-path"].rstrip().split(" ")
+    if "prefix" in elem.fields:
+        prefix = elem.fields["prefix"]
+    
+
+    if len(asns) < 1:
+        continue
+
+    # Get origin as 
+    asn = asns[-1]
+
+    # Drop origin as sets
+    if len(asn.split(",")) > 1:
+        continue 
+
+    if asn[0] == '{':
+        continue
+
+    # Populate prefix_asn with prefix to asn mapping
+    if asn not in prefix_asn:
+        prefix_asn[prefix] = set()
+    prefix_asn[prefix].add(asn)
+
+# Write prefix-asn mapping to prefix2asn.dat
+os_path = '/Users/poojapathak/panda-data/sources/Solutions/map_ipv4_address_to_asn'
+filename = os.path.join(os_path, 'prefix2asn.dat')
+fout = open(filename, "w")
+for prefix,asns in prefix_asn.items():
+    if len(asns) == 1:
+        fout.write(prefix)
+        fout.write("\t")
+        fout.write("".join(prefix_asn[prefix]))
+        fout.write("\n")
+
+fout.close() 
