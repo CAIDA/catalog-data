@@ -134,8 +134,11 @@ args = parser.parse_args()
 
 # create dictionary
 nodes = {}
-PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))
-PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))
+
+MASK_8 = struct.unpack("!I", socket.inet_aton("255.0.0.0"))[0]
+PREFIX_224 = struct.unpack("!I", socket.inet_aton("224.0.0.0"))[0]
+MASK_3 = PREFIX_224
+PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))[0]
 
 def node_lookup(nid):
     """
@@ -171,7 +174,7 @@ def placeholder_lookup(addr):
     
     binary_addr = struct.unpack("!I", socket.inet_aton(addr))[0]
 
-    if (binary_addr & MASK_3) != PREFIX_224 and (binary_addr & MASK_3) != PREFIX_0:    
+    if (binary_addr & MASK_3) != PREFIX_224 and (binary_addr & MASK_8) != PREFIX_0: 
         return False
     else:
         return True
