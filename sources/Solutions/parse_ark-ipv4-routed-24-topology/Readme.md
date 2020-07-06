@@ -53,8 +53,9 @@ The node-geolocation file contains the geographic location for each node in the 
 # node.geo nod_id: continent country region city lat lon population method
 node.geo N4:    SA      CO      34      Bogota  4.60971 -74.08175       7674366         ddec
 ~~~
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
-ecode
+#### Encode
 ~~~json
 {
     "id":4,
@@ -70,7 +71,7 @@ ecode
 }
 
 ~~~
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
+
 
 
 ### Solution ###
