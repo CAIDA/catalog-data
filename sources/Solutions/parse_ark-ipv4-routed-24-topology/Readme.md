@@ -36,7 +36,7 @@ node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.1
 
 #### midar-iff.links.bz2
 The links file lists the set of routers and router interfaces that were inferred to be sharing each link.<br/>
-File format: link <link_id>:   <N<sub>1</sub>>:i<sub>1</sub>>   <N<sub>2</sub>>:i<sub>2</sub>>   [<N<sub>3</sub>>:[i<sub>3</sub>>]]   ..   [<N<sub>m</sub>>:[i<sub>m</sub>>]]
+File format: link <link_id>:   <N<sub>1</sub>>:i<sub>1</sub>   <N<sub>2</sub>>:i<sub>2</sub>   <N<sub>3</sub>>:i<sub>3</sub>   ...   <N<sub>m</sub>>:i<sub>m</sub>>
 ~~~
 link L1:  N27677807:1.0.0.1 N106961
 ~~~
