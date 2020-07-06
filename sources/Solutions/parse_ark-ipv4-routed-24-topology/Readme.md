@@ -53,7 +53,6 @@ The node-geolocation file contains the geographic location for each node in the 
 # node.geo nod_id: continent country region city lat lon population method
 node.geo N4:    SA      CO      34      Bogota  4.60971 -74.08175       7674366         ddec
 ~~~
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 #### Encode
 ~~~json
@@ -71,8 +70,7 @@ More information on ITDK dataset can be found [here](https://www.caida.org/data/
 }
 
 ~~~
-
-
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 ### Solution ###
 The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
