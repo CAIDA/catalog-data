@@ -70,6 +70,7 @@ ecode
         "city": "Bogota"
      }
 }
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 ~~~
 
 
@@ -229,7 +230,7 @@ with bz2.open(args.link_file, 'r') as f:
 ~~~
 
 ### Placeholder Perl Code ###
-Port this Perl code into Python script.
+This Perl code only parse nodes.bz2 file.
 ~~~Perl
 #! A/opt/local/bin/perl
 # Many nodes in the ITDK are placeholder nodes.
