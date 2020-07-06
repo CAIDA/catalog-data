@@ -27,7 +27,7 @@ def node_lookup(nid):
     if nid not in nodes:
         #node_id = nid.replace("N", "")
         nodes[nid] = {
-            #"id": node_id,
+            "id": node_id,
             "asn": "",
             "isp": [],
             "neighbor": set(),
@@ -85,6 +85,7 @@ with bz2.open(args.node_file, mode='r') as f:
         # if the node the not placeholder, then process the node
         if not placeholder:
             node = node_lookup(value[1])
+            node['ip'] = value[1].replace("N", "")
             node['isp'] = isp_list
 
 # === load nodes.as.bz2 ===
