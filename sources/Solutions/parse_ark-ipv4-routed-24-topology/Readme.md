@@ -24,7 +24,7 @@ Many nodes in the ITDK dataset are placeholder nodes. These are the non response
 
 
 ### Explanation of the Data Files ###
-*ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
+*Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 #### midar-iff.nodes.bz2
 The nodes file lists the set of interfaces that were inferred to be on each router.<br/>
@@ -41,13 +41,13 @@ File format: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub
 link L1:  N27677807:1.0.0.1 N106961
 ~~~
 
-##### midar-iff.nodes.as.bz2
+#### midar-iff.nodes.as.bz2
 The node-AS file assigns an AS number to each node found in the nodes file.
 ~~~
 node.AS N1 31655 refinement
 ~~~
 
-##### midar-iff.nodes.geo.bz
+#### midar-iff.nodes.geo.bz
 The node-geolocation file contains the geographic location for each node in the nodes file.
 ~~~
 # node.geo nod_id: continent country region city lat lon population method
