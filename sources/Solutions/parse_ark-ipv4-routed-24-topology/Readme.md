@@ -15,7 +15,7 @@
 https://www.caida.org/publications/papers/2012/topocompare-tr/topocompare-tr.pdf
 https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf
 https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html
-https://www.caida.org/data/internet-topology-data-kit/ <--
+
 
 
 https://docs.python.org/3/library/bz2.html
@@ -70,8 +70,9 @@ ecode
         "city": "Bogota"
      }
 }
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
+
 ~~~
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 
 ### Solution ###
