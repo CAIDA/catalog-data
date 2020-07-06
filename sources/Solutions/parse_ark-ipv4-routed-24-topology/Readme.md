@@ -12,13 +12,8 @@
     ]
 }
 ~~~
-https://www.caida.org/publications/papers/2012/topocompare-tr/topocompare-tr.pdf
-https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf
-https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html
 
 
-
-https://docs.python.org/3/library/bz2.html
 ### Introduction ###
 
 This solution is for parsing ITDK dataset. The information of nodes are stored in 4 different files. We extract each node's `node id`, `isp` from nodes.bz2, `asn` from nodes.as.bz2, `neighbors` from links.bz2 and `location` from nodes.geo.bz2 and store them into json format.
@@ -28,14 +23,13 @@ This solution is for parsing ITDK dataset. The information of nodes are stored i
 Many nodes in the ITDK dataset are placeholder nodes. These are the non response hops in the traceroute. In most analysis, we want to ignore placeholder nodes. Placeholders have reserved IP addresses, so we identify them by thier IP addresses. In ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses. Placeholder nodes would not be put in the dictionay `nodes` in the solution.
 
 
-
-
 ### Explanation of the Data Files ###
 *ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 #### midar-iff.nodes.bz2
-File format: `node <node_id>:   <i<sub>1</sub>>   <i<sub>2</sub>>   ...   <i<sub>n</sub>>` <br/>
-Each line indicates that a node `node_id` has interfaces `i<sub>1</sub>` to `i<sub>n</sub>`. 
+The nodes file lists the set of interfaces that were inferred to be on each router.
+File format: node <node_id>:   <i<sub>1</sub>>   <i<sub>2</sub>>   ...   <i<sub>n</sub>> <br/>
+Each line indicates that a node `node_id` has interfacesi<sub>1</sub> to i<sub>n</sub>. 
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
