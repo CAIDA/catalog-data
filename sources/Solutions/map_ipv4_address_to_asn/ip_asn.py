@@ -1,5 +1,5 @@
-__author__ = "Bradley Huffaker"
-__email__ = "<bhuffake@caida.org>"
+__author__ = "Pooja Pathak"
+__email__ = "<pmpathak@ucsd.edu>"
 # This software is Copyright © 2020 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
