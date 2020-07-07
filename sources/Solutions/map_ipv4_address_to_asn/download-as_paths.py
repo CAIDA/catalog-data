@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-__author__ = "Bradley Huffaker"
-__email__ = "<bhuffake@caida.org>"
+__author__ = "Pooja Pathak"
+__email__ = "<pmpathak@ucsd.edu>"
 # This software is Copyright © 2020 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -80,9 +80,8 @@ for elem in stream:
     prefix_asn[prefix].add(asn)
 
 # Write prefix-asn mapping to prefix2asn.dat
-os_path = '/Users/poojapathak/panda-data/sources/Solutions/map_ipv4_address_to_asn'
-filename = os.path.join(os_path, 'prefix2asn.dat')
-fout = open(filename, "w")
+
+fout = open('prefix2asn.dat', "w")
 for prefix,asns in prefix_asn.items():
     if len(asns) == 1:
         fout.write(prefix)
