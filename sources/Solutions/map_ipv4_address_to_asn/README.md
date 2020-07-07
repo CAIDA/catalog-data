@@ -108,17 +108,51 @@ Detailed installation instructions and more information on Usage and IPASN data 
 #!/usr/bin/env python
 
 import pybgpstream
+import os.path
+
+# Create pybgpstream
 stream = pybgpstream.BGPStream(
     from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
     collectors=["route-views.sg", "route-views.eqix"],
-    record_type="updates"
+    record_type="updates",  
 )
 
+prefix_asn = dict()
 for elem in stream:
     # record fields can be accessed directly from elem
-    asn_path = elem.fields["as-path"]
-    prefix = elem.fields["prefix"]
-    print(prefix+"\t"+asn_path)
+    if "as-path" in elem.fields:
+        asns = elem.fields["as-path"].rstrip().split(" ")
+    if "prefix" in elem.fields:
+        prefix = elem.fields["prefix"]
+    
+
+    if len(asns) < 1:
+        continue
+
+    # Get origin as 
+    asn = asns[-1]
+
+    # Convert as sets to strings for pyasn 
+    if asn[0] == '{':
+        asn = asn[1:-1]
+    
+    # Populate prefix_asn with prefix to asn mapping
+    if asn not in prefix_asn:
+        prefix_asn[prefix] = set()
+    prefix_asn[prefix].add(asn)
+
+# Write prefix-asn mapping to prefix2asn.dat
+
+filename = os.path.join(os_path, 'prefix2asn.dat')
+fout = open(filename, "w")
+for prefix,asns in prefix_asn.items():
+    if len(asns) >= 1:
+        fout.write(prefix)
+        fout.write("\t")
+        fout.write("".join(prefix_asn[prefix]))
+        fout.write("\n")
+
+fout.close()    
 ~~~
 
 The following script returns a dictionary `ip2asn` that maps ips to origin asns. \
@@ -127,11 +161,30 @@ The following script returns a dictionary `ip2asn` that maps ips to origin asns.
 
 ### Map between prefix2asn.dat and ips
 ~~~python
-import pysan
-asndb = pyasn.pyasn('prefix_as-path.dat')
+import pyasn
+import argparse 
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
+parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
+args = parser.parse_args()
+
+# Get list of ips 
+ips = []
+with open(args.ips_file) as f:
+    for line in f:
+        line = line.rstrip().split("\t")[1]
+        ips.append(line)
+
+
+asndb = pyasn.pyasn(args.prefix2asn_file)
+
+# Create ip2asn mapping
+ip2asn = {}
 for ip in ips:
-   asn_path,prefix =  asndb.lookup(ip)
-   if asn:
-      print (ip+"\t"+asn_path)
-      # or do whatever process you need on the asn_path
+  asn,prefix =  asndb.lookup(ip)
+  if asn:
+      ip2asn[ip] = asn
+
+# print(ip2asn)
 ~~~
