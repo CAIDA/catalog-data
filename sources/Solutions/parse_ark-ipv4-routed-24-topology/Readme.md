@@ -29,31 +29,32 @@ Many nodes in the ITDK dataset are placeholder nodes. These are the non response
 #### midar-iff.nodes.bz2
 The nodes file lists the set of interfaces that were inferred to be on each router.<br/>
 File format: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
-Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. 
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
+Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. 
 
 #### midar-iff.links.bz2
 The links file lists the set of routers and router interfaces that were inferred to be sharing each link.<br/>
 File format: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
+~~~
+link L1: N27677807:1.0.0.1 N106961
+~~~
 Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
 If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.
-~~~
-link L1:  N27677807:1.0.0.1 N106961
-~~~
 
 #### midar-iff.nodes.as.bz2
 The node-AS file assigns an AS number to each node found in the nodes file.
+File format: node.AS   <node_id>   <AS>   <method>
 ~~~
 node.AS N1 31655 refinement
 ~~~
 
 #### midar-iff.nodes.geo.bz
 The node-geolocation file contains the geographic location for each node in the nodes file.
+File format: node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
 ~~~
-# node.geo nod_id: continent country region city lat lon population method
-node.geo N4:    SA      CO      34      Bogota  4.60971 -74.08175       7674366         ddec
+node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
 ~~~
 
 #### Encode
