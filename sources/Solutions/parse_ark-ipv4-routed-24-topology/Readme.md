@@ -77,7 +77,7 @@ More information on ITDK dataset can be found [here](https://www.caida.org/data/
 
 ### Solution ###
 The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
-{'N12285': {`id`: ' ', `asn`: ' ', `isp`: [], `neighbor`: {}, `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
+{'N12285': {`id`: ' ', `asn`: ' ', `isp`: [], `neighbor`: set(), `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
 
 useage: parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2
 
@@ -231,7 +231,7 @@ with bz2.open(args.link_file, 'r') as f:
 ~~~
 
 ### Placeholder Perl Code ###
-This Perl code only parse nodes.bz2 file.
+This Perl code parse nodes.bz2 file only.
 ~~~Perl
 #! A/opt/local/bin/perl
 # Many nodes in the ITDK are placeholder nodes.
