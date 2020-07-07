@@ -54,17 +54,10 @@ This makes it more challenging to interpret the appearance of a matching destina
 
 ### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
 
-## Explanation of dataset ##
-~~~
-10.2.1.0/24  10 2 3 5  5
-10.2.1.0/24  23 5      5
-10.2.1.0/24  23 4 5    5
-10.2.1.0/24  21 8 4    4
-10.2.1.0/24  21 8 {4,3}   as set
+The following solution contains two scripts:\
+• The first script uses BGPStream's `Pybgpstream` to download and store prefixes and origin asns into a file called prefix2asn.dat \
+• The second script loads prefix2asn.dat and uses `pyasn` to map between ipv4 addresses and origin asns. 
 
-10.2.1.0/24 4_5 multie origi
-10.2.1.0/24  4_{4,3}
-~~~
 ## PyBGPStream ##
 
 PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
@@ -109,12 +102,8 @@ You will need to have pip, setuptools and build essentials installed if you buil
 Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).
 
 # solution #
-1. Write a script that uses BGPStream's [PyBGPStream](https://bgpstream.caida.org/docs/tutorials/pybgpstream)
-to download and store the AS path and prefixes into prefix-as_paths.dat.  Write a script using
-[pyasn](https://pypi.org/project/pyasn/) that loads prefix-as_paths.dat, and then use it to map
-between the prefix-as_paths.dat and your ips. Below are the relavent code snippets.
- *include short description of BGPStream*
-### download Prefix ASN with BGPStream
+
+### Download prefix2asn.dat with PyBGPStream ###
 ~~~python
 #!/usr/bin/env python
 
@@ -132,8 +121,10 @@ for elem in stream:
     print(prefix+"\t"+asn_path)
 ~~~
 
-''' python3 ip_asn.py -p prefix2asn.dat -i ips.txt -m pyasn '''
-### code snippit 
+The script following script returns a dictionary `ip2asn` that maps ips to origin asns. \
+**Usage** : python3 ip_asn.py -p prefix2asn.dat -i ips.txt
+
+### Map between prefix2asn.dat and ips
 ~~~python
 import pysan
 asndb = pyasn.pyasn('prefix_as-path.dat')
