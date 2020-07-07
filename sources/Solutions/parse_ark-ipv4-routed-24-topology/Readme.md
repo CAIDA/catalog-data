@@ -27,7 +27,7 @@ Many nodes in the ITDK dataset are placeholder nodes. These are the non response
 *Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 #### midar-iff.nodes.bz2
-The nodes file lists the set of interfaces that were inferred to be on each router.Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
+The nodes file lists the set of interfaces that were inferred to be on each router. Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
 File format: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
@@ -35,7 +35,7 @@ node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.1
 
 
 #### midar-iff.links.bz2
-The links file lists the set of routers and router interfaces that were inferred to be sharing each link.Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
+The links file lists the set of routers and router interfaces that were inferred to be sharing each link. Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
 If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
 File format: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
 ~~~
