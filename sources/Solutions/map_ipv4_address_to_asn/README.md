@@ -55,8 +55,8 @@ This makes it more challenging to interpret the appearance of a matching destina
 ### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
 
 The following solution contains two scripts:\
-• The first script uses BGPStream's `Pybgpstream` to download and store prefixes and origin asns into a file called prefix2asn.dat \
-• The second script loads prefix2asn.dat and uses `pyasn` to map between ipv4 addresses and origin asns. 
+• The first script uses BGPStream's `Pybgpstream` to download and store prefixes and origin asns into a file called `prefix2asn.dat` \
+• The second script loads `prefix2asn.dat` and uses `pyasn` to map between ipv4 addresses and origin asns. 
 
 ## PyBGPStream ##
 
@@ -121,8 +121,9 @@ for elem in stream:
     print(prefix+"\t"+asn_path)
 ~~~
 
-The script following script returns a dictionary `ip2asn` that maps ips to origin asns. \
-**Usage** : python3 ip_asn.py -p prefix2asn.dat -i ips.txt
+The following script returns a dictionary `ip2asn` that maps ips to origin asns. \
+
+**Usage** : `$ python3 ip_asn.py -p prefix2asn.dat -i ips.txt`
 
 ### Map between prefix2asn.dat and ips
 ~~~python
