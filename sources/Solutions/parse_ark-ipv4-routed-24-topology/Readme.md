@@ -14,7 +14,7 @@
 ~~~
 
 
-### Introduction ###
+### <ins> Introduction </ins> ###
 
 This solution parses through ITDK datasets and stores a node's `node id`, `isp`, `asn` and `location` as a json object. \
 The relevant `node` information is extracted from 4 different files: \
@@ -23,16 +23,14 @@ The relevant `node` information is extracted from 4 different files: \
 • `neighbors` from **links.bz2** \
 • `location` from **nodes.geo.bz2**
 
+### <ins> Caveats </ins> ###
 
-The information of nodes are stored in 4 different files. We extract each node's `node id`, `isp` from nodes.bz2, `asn` from nodes.as.bz2, `neighbors` from links.bz2 and `location` from nodes.geo.bz2 and store them into json format.
-
-### Placeholder Nodes ###
+ #### Placeholder Nodes ###
 
 • Placeholder nodes are the non-response hops in the traceroute. \
 • Generally, placeholder nodes are ignored. \
-• Placeholder nodes have reserved IP addresses used to identify them. 
-• For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.\
-• For the purpose of analysis, we ignore the nodes associated with these addresses. 
+• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.\
+• For the purpose of analysis, we ignore and drop the nodes associated with these addresses. 
 
 ### Explanation of the Data Files ###
 *Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
