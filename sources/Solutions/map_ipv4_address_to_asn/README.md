@@ -1,6 +1,6 @@
 ~~~
 {
-    "question": "How to find the AS path for a IPv4 address with Python?",
+    "question": "How to find the origin ASN for a IPv4 address with Python?",
     "links": ["software:BGPStream"],
     "tags": [
         "measurement methodology",
@@ -40,14 +40,16 @@ It finds the prefix matching the given IP address and returns the corresponding 
 • Source: [link]( https://www.lewuathe.com/longest-prefix-match-with-trie-tree.html ) \
 • More information can be found [here]( https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ )
  
-**What are origin AS?**
-• Include short note on origin AS 
-
+**What is an AS?**\
+ • AS stands for Autonomous system.\
+ • It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \
+ • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\
+ • More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)
 
 ### <ins> Caveats </ins> ###
 • **Multi-origin AS** : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\
-This makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's. \
-• as_set \
+This makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's.  \
+• **as_set**: The following solution parses asn sets to strings so pyasn can accept them. \
 • **Third-party AS's** \
 • Include diagram and explanation from https://www.caida.org/publications/papers/2016/bdrmap/bdrmap.pdf
 
