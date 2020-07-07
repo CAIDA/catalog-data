@@ -143,8 +143,7 @@ for elem in stream:
 
 # Write prefix-asn mapping to prefix2asn.dat
 
-filename = os.path.join(os_path, 'prefix2asn.dat')
-fout = open(filename, "w")
+fout = open('prefix2asn.dat' "w")
 for prefix,asns in prefix_asn.items():
     if len(asns) >= 1:
         fout.write(prefix)
@@ -155,7 +154,7 @@ for prefix,asns in prefix_asn.items():
 fout.close()    
 ~~~
 
-The following script returns a dictionary `ip2asn` that maps ips to origin asns. \
+The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
 
 **Usage** : `$ python3 ip_asn.py -p prefix2asn.dat -i ips.txt`
 
