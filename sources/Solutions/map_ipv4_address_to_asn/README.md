@@ -60,13 +60,13 @@ The following solution contains two scripts:\
 • The first script uses BGPStream's `Pybgpstream` to download and store prefixes and origin asns into a file called `prefix2asn.dat` \
 • The second script loads `prefix2asn.dat` and uses `pyasn` to map between ipv4 addresses and origin asns. 
 
-## PyBGPStream ##
+### PyBGPStream ###
 
 PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
 
 PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) direct interface to the [libBGPStream]( https://bgpstream.caida.org/ ) C API, and `pybgpstream`, a high-level 'Pythonic' interface to the functionality provided by `_pybgpstream`. 
 
-### Quick Start ###
+#### Quick Start ####
 To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream ).
 
 Then, you should be able to install PyBGPStream using pip: 
@@ -83,12 +83,12 @@ Alternatively, to install PyBGPStream from source either clone the [Github repos
  
  Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
 
-## pyasn ##
+### pyasn ###
 **pyasn** is a Python extension module that enables very fast IP address to Autonomous System Number lookups. Current state and Historical lookups can be done, based on the MRT/RIB BGP archive used as input. 
 
 **pyasn** is different from other ASN lookup tools in that it provides offline and historical lookups. It provides utility scripts for users to build their own lookup databases based on any MRT/RIB archive. This makes pyasn much faster than online dig/whois/json lookups.
 
-### Installation ## 
+#### Installation ####
 
 `$ pip install pyasn -- pre`
 
