@@ -29,8 +29,8 @@ The relevant `node` information is extracted from 4 different files: \
 
 • Placeholder nodes are the non-response hops in the traceroute. \
 • Generally, placeholder nodes are ignored. \
-• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.\
-• For the purpose of analysis, we ignore and drop the nodes associated with these addresses. 
+• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
+
 
 ### Explanation of the Data Files ###
 *Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
@@ -67,8 +67,11 @@ The node-geolocation file contains the geographic location for each node in the 
 ~~~
 node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
 ~~~
+    
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
-#### Encode
+### Solution ###
+The following script combines the information across the four files into a dictionary of nodes with the following structure:\
 ~~~json
 {
     "id":4,
@@ -82,13 +85,9 @@ node.geo N4: SA CO 34 Bogota 4.60971 -74.08175
         "city": "Bogota"
      }
 }
-
 ~~~
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
-### Solution ###
-The following script returns a dictionary `nodes` that parse the data from 4 Nodes Files, nodes.bz2, links.bz2, nodes.as.bz2 and nodes.geo.bz2 in the following format:\
-{'N12285': {`id`: ' ', `asn`: ' ', `isp`: [], `neighbor`: set(), `location`: { `continent`: ' ', `country`: ' ', `region`: ' ', `city`: ' '}}
+Copy over the code snipes needed for you 
 
 **usage**: `parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2`
 
