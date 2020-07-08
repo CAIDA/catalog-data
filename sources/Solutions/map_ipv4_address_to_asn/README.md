@@ -56,121 +56,61 @@ This makes it more challenging to interpret the appearance of a matching destina
 
 ### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
 
-The following solution contains two scripts:\
-• The first script uses BGPStream's `Pybgpstream` to download and store prefixes and origin asns into a file called `prefix2asn.dat` \
-• The second script loads `prefix2asn.dat` and uses `pyasn` to map between ipv4 addresses and origin asns. 
+The following solution uses **libipmeta's** `PyIPMeta` to map between ipv4 addresses and origin asns.
 
-### PyBGPStream ###
+### PyIPMeta ###
 
-PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
+PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.
 
-PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) direct interface to the [libBGPStream]( https://bgpstream.caida.org/ ) C API, and `pybgpstream`, a high-level 'Pythonic' interface to the functionality provided by `_pybgpstream`. 
+#### Pre-requisites ####
 
-#### Quick Start ####
-To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream ).
+Before installing PyIPMeta, you will need:\
+• [libipmeta(>= 3.0.0)]( https://github.com/CAIDA/libipmeta)\
+• Python setuptools (`sudo apt install python-setuptools` on Ubuntu) \
+• Python development headers (`sudo apt install python-dev` on Ubuntu)
 
-Then, you should be able to install PyBGPStream using pip: 
+Detailed installation and usage instructions [here]( https://github.com/CAIDA/pyipmeta ).
 
-`$ pip install pybgpstream `
+### Note ###
+• `pyasn` can also be used for mapping between ipv4 addresses and asns.\
+• The `pyasn` object is be initialized using an IPASN datafile. \
+• It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.\
+• Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).\
+• Note that the current `pyipmeta` **does not support** `ipv6`, whereas `pyasn` does. 
 
-Alternatively, to install PyBGPStream from source either clone the [Github repository]( https://github.com/CAIDA/bgpstream
- ) (PyBGPStream is located in the `pybgpstream` subdirectory), or download a [source tarball]( https://bgpstream.caida.org/download ) and then run:
- 
- `$ python setup.py build`\
- `$ python setup.py install`
- 
- For more information on installing PyBGPStream, please see the detailed [installation instructions]( https://bgpstream.caida.org/docs/install/pybgpstream ) on the BGPStream website. 
- 
- Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
+However, `pyipmeyta` provides **greater flexbility** as it provides the geographical information as well. 
 
-### pyasn ###
-**pyasn** is a Python extension module that enables very fast IP address to Autonomous System Number lookups. Current state and Historical lookups can be done, based on the MRT/RIB BGP archive used as input. 
+For example, `ipm.lookup('192.172.226.97')` returns:
 
-**pyasn** is different from other ASN lookup tools in that it provides offline and historical lookups. It provides utility scripts for users to build their own lookup databases based on any MRT/RIB archive. This makes pyasn much faster than online dig/whois/json lookups.
+`[{'connection_speed': '', 'city': '', 'asn_ip_count': 0, 'post_code': '', 'lat_long': (37.750999450683594, -97.8219985961914), 'region': '', 'area_code': 0, 'asns': [], 'continent_code': 'NA', 'metro_code': 0, 'matched_ip_count': 1, 'region_code': 0, 'country_code': 'US', 'id': 223, 'polygon_ids': []}]`
 
-#### Installation ####
-
-`$ pip install pyasn -- pre`
-
-Or with the standard python:
-
-`$ python setup.py build`\
-`$ python setup.py install --record log`
-
-You will need to have pip, setuptools and build essentials installed if you build the package manually. On Ubuntu/Debian you can get them using the following command:
-
-`$ sudo apt-get install python-pip python-dev build-essential`
-
-Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).
+• This object can then be parsed to map between IP addresses and origin asns. 
 
 # solution #
 
-### Download prefix2asn.dat with PyBGPStream ###
-~~~python
-#!/usr/bin/env python
-
-import pybgpstream
-import os.path
-
-# Create pybgpstream
-stream = pybgpstream.BGPStream(
-    from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
-    collectors=["route-views.sg", "route-views.eqix"],
-    record_type="updates",  
-)
-
-prefix_asn = dict()
-for elem in stream:
-    # record fields can be accessed directly from elem
-    if "as-path" in elem.fields:
-        asns = elem.fields["as-path"].rstrip().split(" ")
-    if "prefix" in elem.fields:
-        prefix = elem.fields["prefix"]
-    
-
-    if len(asns) < 1:
-        continue
-
-    # Get origin as 
-    asn = asns[-1]
-
-    # Convert as sets to strings for pyasn 
-    if asn[0] == '{':
-        asn = asn[1:-1]
-    
-    # Populate prefix_asn with prefix to asn mapping
-    if asn not in prefix_asn:
-        prefix_asn[prefix] = set()
-    prefix_asn[prefix].add(asn)
-
-# Write prefix-asn mapping to prefix2asn.dat
-
-fout = open('prefix2asn.dat' "w")
-for prefix,asns in prefix_asn.items():
-    if len(asns) >= 1:
-        fout.write(prefix)
-        fout.write("\t")
-        fout.write("".join(prefix_asn[prefix]))
-        fout.write("\n")
-
-fout.close()    
-~~~
-
 The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
 
-**Usage** : `$ python3 ip_asn.py -p prefix2asn.dat -i ips.txt`
+### Map between ips and origin asns using PyIPMeta ###
 
-### Map between prefix2asn.dat and ips
+**Usage** : `$ python3 ip_asn.py -i ips.txt`
+
 ~~~python
-import pyasn
-import argparse 
+import _pyipmeta 
+import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
 parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
 args = parser.parse_args()
 
-# Get list of ips 
+
+ipm = _pyipmeta.IpMeta()
+
+# print("Getting/enabling pfx2as provider (using included test data)")
+prov = ipm.get_provider_by_name("pfx2as")
+print(ipm.enable_provider(prov, "-f /test/pfx2as/routeviews-rv2-20170329-0200.pfx2as.gz"))
+print()
+
+# Create list of ips from test file 
 ips = []
 with open(args.ips_file) as f:
     for line in f:
@@ -178,14 +118,15 @@ with open(args.ips_file) as f:
         ips.append(line)
 
 
-asndb = pyasn.pyasn(args.prefix2asn_file)
-
-# Create ip2asn mapping
+# Map between ipv4 addresses and origin asns
 ip2asn = {}
 for ip in ips:
-  asn,prefix =  asndb.lookup(ip)
-  if asn:
-      ip2asn[ip] = asn
+    if ipm.lookup(ip):
+        (res,) =  ipm.lookup(ip)
+        if res.get('asns'):
+            ip2asn[ip] = res.get('asns')[-1]
+
 
 # print(ip2asn)
 ~~~
+
