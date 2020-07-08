@@ -43,11 +43,24 @@ __email__ = "<pmpathak@ucsd.edu>"
 
 import pyasn
 import argparse 
+import datetime
+import resource
+import os
+import psutil
+
+def returnTime():
+    return datetime.datetime.now()
+
+def returnMemUsage():
+    process = psutil.Process(os.getpid())
+    return process.memory_info()[0]
+    
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
 parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
 args = parser.parse_args()
+
 
 # Get list of ips 
 ips = []
@@ -59,11 +72,25 @@ with open(args.ips_file) as f:
 
 asndb = pyasn.pyasn(args.prefix2asn_file)
 
+begin_time = returnTime()
+begin_mem = returnMemUsage() 
+
 # Create ip2asn mapping
 ip2asn = {}
 for ip in ips:
-  asn,prefix =  asndb.lookup(ip)
-  if asn:
-      ip2asn[ip] = asn
+    if asndb.lookup(ip):
+        asn,prefix =  asndb.lookup(ip)
+        if asn:
+             ip2asn[ip] = asn
 
 # print(ip2asn)
+end_time = returnTime()
+end_mem = returnMemUsage()
+
+# hour:minute:second:microsecond
+print("Delta time:" , end_time - begin_time)
+print("Delta memory use:", end_mem - begin_mem)
+
+    
+
+
