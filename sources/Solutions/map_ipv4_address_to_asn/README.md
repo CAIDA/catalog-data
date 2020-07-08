@@ -49,10 +49,9 @@ It finds the prefix matching the given IP address and returns the corresponding 
 ### <ins> Caveats </ins> ###
 • **Multi-origin AS** : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\
 This makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's.  \
-• **as_set**: The following solution parses asn sets to strings so pyasn can accept them. \
 • **Third-party AS's** \
-• Include diagram and explanation from https://www.caida.org/publications/papers/2016/bdrmap/bdrmap.pdf
-
+• Border routers may use a third-party address when responding to traceroute probes. \
+• A third-party address is an IP address corresponding to an AS that is not on the path toward a destination.
 
 ### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
 
