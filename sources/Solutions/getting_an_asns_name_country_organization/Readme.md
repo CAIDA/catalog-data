@@ -96,7 +96,6 @@ The following script returns a dictionary `asn_info` that maps an ASN id to othe
 import re
 import sys
 
-filename = 'tester'
 re_format= re.compile("# format:(.+)")
 
 org_info = {}
