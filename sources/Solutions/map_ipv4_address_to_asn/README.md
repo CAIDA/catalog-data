@@ -71,8 +71,8 @@ Before installing PyIPMeta, you will need:\
 
 Detailed installation and usage instructions [here]( https://github.com/CAIDA/pyipmeta ).
 
-### Note ###
-• `pyasn` can also be used for mapping between ipv4 addresses and asns.\
+### <ins> Note: </ins> ###
+• `pyasn` can also be used for mapping between ipv4 addresses and origin asns.\
 • The `pyasn` object is be initialized using an IPASN datafile. \
 • It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.\
 • Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).\
