@@ -12,9 +12,3 @@ List of solutions which are not currently under active work
 |----------|--------|----------|
 | inactive |        | how-to-find-an-asns-customer-cone |
 | inactive |        | how-to-find-the-business-relationships-between-asns |
-
-### finished
-List of solutions which have been finished 
-| status   | current | solution |
-|----------|--------|----------|
-| public   |        | getting_an_asns_name_country_organization |
