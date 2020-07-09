@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 __author__ = "Pooja Pathak"
 __email__ = "<pmpathak@ucsd.edu>"
 # This software is Copyright © 2020 The Regents of the University of
@@ -42,51 +41,56 @@ __email__ = "<pmpathak@ucsd.edu>"
 
 #!/usr/bin/env python
 
-import pybgpstream
-import os.path
+import pyasn
+import argparse 
+import datetime
+import resource
+import os
+import psutil
 
-# Create pybgpstream
-stream = pybgpstream.BGPStream(
-    from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
-    collectors=["route-views.sg", "route-views.eqix"],
-    record_type="updates",  
-)
+def returnTime():
+    return datetime.datetime.now()
 
-prefix_asn = dict()
-for elem in stream:
-    # record fields can be accessed directly from elem
-    if "as-path" in elem.fields:
-        asns = elem.fields["as-path"].rstrip().split(" ")
-    if "prefix" in elem.fields:
-        prefix = elem.fields["prefix"]
+def returnMemUsage():
+    process = psutil.Process(os.getpid())
+    return process.memory_info()[0]
     
 
-    if len(asns) < 1:
-        continue
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
+parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
+args = parser.parse_args()
 
-    # Get origin as 
-    asn = asns[-1]
 
-    # Drop origin as sets
-    if len(asn.split(",")) > 1:
-        continue 
+# Get list of ips 
+ips = []
+with open(args.ips_file) as f:
+    for line in f:
+        line = line.rstrip().split("\t")[1]
+        ips.append(line)
 
-    if asn[0] == '{':
-        continue
 
-    # Populate prefix_asn with prefix to asn mapping
-    if asn not in prefix_asn:
-        prefix_asn[prefix] = set()
-    prefix_asn[prefix].add(asn)
+asndb = pyasn.pyasn(args.prefix2asn_file)
 
-# Write prefix-asn mapping to prefix2asn.dat
+begin_time = returnTime()
+begin_mem = returnMemUsage() 
 
-fout = open('prefix2asn.dat', "w")
-for prefix,asns in prefix_asn.items():
-    if len(asns) == 1:
-        fout.write(prefix)
-        fout.write("\t")
-        fout.write("".join(prefix_asn[prefix]))
-        fout.write("\n")
+# Create ip2asn mapping
+ip2asn = {}
+for ip in ips:
+    if asndb.lookup(ip):
+        asn,prefix =  asndb.lookup(ip)
+        if asn:
+             ip2asn[ip] = asn
 
-fout.close() 
+# print(ip2asn)
+end_time = returnTime()
+end_mem = returnMemUsage()
+
+# hour:minute:second:microsecond
+print("Delta time:" , end_time - begin_time)
+print("Delta memory use:", end_mem - begin_mem)
+
+    
+
+

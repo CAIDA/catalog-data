@@ -96,12 +96,12 @@ The following script returns a dictionary `asn_info` that maps an ASN id to othe
 import re
 import sys
 
-filename = 'tester'
 re_format= re.compile("# format:(.+)")
 
 org_info = {}
 asn_info = {}
 
+# Pass in test dataset as filename
 with open(filename) as f:
     for line in f:
         m = re_format.search(line)
