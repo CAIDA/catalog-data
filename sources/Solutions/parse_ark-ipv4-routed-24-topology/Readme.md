@@ -71,7 +71,7 @@ node.geo N4: SA CO 34 Bogota 4.60971 -74.08175
 More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
 
 ### Solution ###
-The following script combines the information across the four files into a dictionary of nodes with the following structure:\
+The following script combines the information across the four files into a dictionary of nodes with the following structure:
 ~~~json
 {
     "id":4,
@@ -87,7 +87,6 @@ The following script combines the information across the four files into a dicti
 }
 ~~~
 
-Copy over the code snipes needed for you 
 
 **usage**: `parse_ark.py -n nodes.bz2 -l links.bz2 -a nodes.as.bz2 -g nodes.geo.bz2`
 
