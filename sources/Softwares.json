@@ -99,6 +99,9 @@
             },
             {
                 "to": "Dataset:AS_Rank"
+            },
+            {
+                "to": {"__typename":"Paper", "name":"AS Relationships, Customer Cones, and Validation"}
             }
         ]
     },
@@ -182,6 +185,10 @@
             "topology",
             "BGP"
         ],
+        "urlRepo": {
+            "name":"repository",
+            "url":"https://github.com/CAIDA/bgpstream"
+        },
         "availability": [
             {
                 "name": "public",
