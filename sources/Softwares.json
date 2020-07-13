@@ -99,9 +99,6 @@
             },
             {
                 "to": "Dataset:AS_Rank"
-            },
-            {
-                "to": {"__typename":"Paper", "name":"AS Relationships, Customer Cones, and Validation"}
             }
         ]
     },
@@ -185,10 +182,6 @@
             "topology",
             "BGP"
         ],
-        "urlRepo": {
-            "name":"repository",
-            "url":"https://github.com/CAIDA/bgpstream"
-        },
         "availability": [
             {
                 "name": "public",
@@ -225,6 +218,9 @@
             {
                 "to": "Paper:Geo-Locating_BGP_prefixes",
                 "label": "used by"
+            },
+            {
+
             }
         ]
     },
@@ -282,7 +278,8 @@
         "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
         "tags": [
             "congestion",
-            "interdomain links"
+            "interdomain links",
+            "IP links"
         ],
         "availability": [
             {
@@ -309,10 +306,11 @@
         "organization": "",
         "description": "Periscope is a unified interface to public looking glass servers.",
         "tags": [
+            "BGP"
         ],
         "availability": [
             {
-                "name": "", 
+                "name": "upcoming", 
                 "url": "",
                 "tags": []
             }
@@ -335,11 +333,36 @@
             {
                 "name": "restricted",
                 "url": "https://www.caida.org/projects/ark/vela/web-api/",
-                "tags": []
+                "tags": [
+                    "API"
+                ]
             }
 
         ],
         "licenses": [],
+        "links": []
+
+    },
+    {
+        "__typename": "software",
+        "id": "software:ARTEMIS",
+        "name": "ARTEMIS",
+        "organization": "CAIDA",
+        "description": "Measures and analyzes passive Internet traffic monitor data.",
+        "tags": [
+
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+
+        ],
+        "licenses": [
+            "license:BSD 3-Clause License"
+        ],
         "links": []
 
     },
@@ -354,13 +377,15 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "https://www.caida.org/tools/measurement/coralreef/",
                 "tags": []
             }
 
         ],
-        "licenses": [],
+        "licenses": [
+            "license:UCSD Academic Non-Commercial License"
+        ],
         "links": []
 
     },
@@ -375,13 +400,15 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "https://www.caida.org/tools/measurement/coralreef/",
                 "tags": []
             }
 
         ],
-        "licenses": [],
+        "licenses": [
+            "license:UCSD Academic Non-Commercial License"
+        ],
         "links": []
 
     },
@@ -401,7 +428,12 @@
             }
         ],
         "licenses": [],
-        "links": []
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+        ]
     },
     {
         "__typename": "software",
@@ -413,13 +445,20 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
-        "links": []
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+        ]
     },
     {
         "__typename": "software",
@@ -431,12 +470,14 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
+        "licenses": [
+            "license:BSD 2-Clause"
+        ],
         "links": []
     },
     {
@@ -449,13 +490,22 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
-        "links": []
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+
+
+        ]
     },
     {
         "__typename": "software",
@@ -467,12 +517,14 @@
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
         "links": []
     },
     {
@@ -482,16 +534,29 @@
         "organization": "CAIDA",
         "description": "IPv6 and IPv4 active traceroute probing and ping.",
         "tags": [
+            "topology"
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
-        "links": []
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Macroscopic_Topology_Measurements",
+                "label": "used by"
+            },
+            {
+                "to": "The_IPv4_Routed_24_Topology_Dataset",
+                "label": "used by"
+            }
+
+        ]
     },
     {
         "__typename": "software",
@@ -500,15 +565,79 @@
         "organization": "CAIDA",
         "description": "Source address validation measurement program that measures susceptibility to spoofed source address IP packets.",
         "tags": [
+            "security"
         ],
         "availability": [
             {
-                "name": "",
+                "name": "public",
                 "url": "",
                 "tags": []
             }
         ],
-        "licenses": [],
-        "links": []
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 3"
+        ],
+        "links": [            
+            {
+                "to": "Paper:Network_Hygiene_Incentives_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Using_Crowdsourcing_Marketplaces_for_Network_Measurements_The_Case_of_Spoofer",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Using_Loops_Observed_in_Traceroute_to_Infer_the_Ability_to_Spoof",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:ACM_Computer_and_Communications_Security_(CCS)",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_R&D_showcase",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:One_Conference",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:NZNOG",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:NANOG",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:SSAC",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:AusNGO",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_R&D_showcase",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_S&T_DDoS_Defense_meeting",
+                "label": "used by"
+            }
+        ]
     }
 ]
