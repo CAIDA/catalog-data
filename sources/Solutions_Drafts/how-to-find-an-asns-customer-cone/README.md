@@ -105,31 +105,33 @@ Below is an example of the possible formats of AS Relationships.
 Below is a how the script parses this type of file's lines to create a mapping between two asns and their relationship:
 
 ~~~Python
-global as_pair_2_rel
+# Parse a given line of the as_rel_file and map two ASes to their relationship.
+def parse_as_rel_line(curr_line):
+    global as_pair_2_rel
 
-# Edge Case: Skip any commented lines.
-if curr_line[0] == "#":
-    return
+    # Edge Case: Skip any commented lines.
+    if curr_line[0] == "#":
+        return
 
-as_rel_set = curr_line.split("|")
+    as_rel_set = curr_line.split("|")
 
-# Get each piece of data from the current line.
-asn0 = as_rel_set[0]
-asn1 = as_rel_set[1]
-relationship = int(as_rel_set[2])
+    # Get each piece of data from the current line.
+    asn0 = as_rel_set[0]
+    asn1 = as_rel_set[1]
+    relationship = int(as_rel_set[2])
 
-# Place both related AS's in as_pair_2_rel based value of AS.
-if (asn0 > asn1):
-    temp = asn0
-    asn0 = asn1
-    asn1 = temp
-    relationship = -1 * relationship
+    # Place both related AS's in as_pair_2_rel based value of AS.
+    if (asn0 > asn1):
+        temp = asn0
+        asn0 = asn1
+        asn1 = temp
+        relationship = -1 * relationship
 
-key = asn0 + " " + asn1
+    key = asn0 + " " + asn1
 
-# Add the pair's relationship if doesn't already exist.
-if key not in as_pair_2_rel:
-    as_pair_2_rel[key] = relationship
+    # Add the pair's relationship if doesn't already exist.
+    if key not in as_pair_2_rel:
+        as_pair_2_rel[key] = relationship
 ~~~
 
 ### File Format: .ppdc-ases
@@ -147,35 +149,25 @@ For the purpose of this solution, we'll be skipping over any commented lines.
 Below is a how the script parses this type of file's lines to update as_2_cone with a mapping between a given asn, its cone, and cone size.
 
 ~~~Python
-global as_2_cone
-global as_pair_2_rel
+# Given an line of a .ppdc-ases file, get the asn and its Customer Cone.
+def parse_ppdc_ases_line(curr_line):
+    global as_2_cone
 
-# Edge Case: Skip any commented lines.
-if curr_line[0] == "#":
-    return
+    # Edge Case: Skip any commented lines.
+    if curr_line[0] == "#":
+        return
 
-asns = curr_line.rstrip().split("|")
-for i in range(0, len(asns)):
-    asn = int(asns[i])
+    customer_cone = curr_line.split()
+    asn = int(customer_cone[0])
+    customer_cone_size = len(customer_cone[1:])
 
-# Map the current asn if the asn is not in as_2_cone yet.
-if asn not in as_2_cone:
-    as_2_cone[asn] = {}
+    # Update as_2_cone with this asn's customer_cone_size.
+    if asn not in as_2_cone:
+        as_2_cone[asn] = {}
+
     as_2_cone[asn]["asn"] = asn
-    as_2_cone[asn]["cone"] = [asn]
-    as_2_cone[asn]["size"] = 1
-
-    # Compare asns[i] to each asn that comes after it.
-    for j in range(i + 1, len(asns)):
-        # Call helper function to format key to have asn's sorted by value.
-        key = format_key(asn, int(asns[j]))
-
-        # Add asns with a "provider" relationship between: asn[i] asn[j]
-        if key in as_pair_2_rel and as_pair_2_rel[key] == 1:
-            as_2_cone[asn]["size"] += 1
-            as_2_cone[asn]["cone"].append(int(asns[j]))
-        else:
-            break  
+    as_2_cone[asn]["cone"] = customer_cone
+    as_2_cone[asn]["size"] = customer_cone_size
 ~~~
 
 ### File Format: .stable.paths6
@@ -190,33 +182,34 @@ For the purpose of this solution, we'll be skipping over any commented lines sin
 Below is a how the script parses this type of file's lines to update as_2_cone with a mapping between a given asn, its cone, and cone size.
 
 ~~~Python
-global as_2_cone
-global as_pair_2_rel
+# Given a line from a .paths file update as_2_cone with an asn's cone and size.
+def parse_paths_line(curr_line):
+    global as_2_cone
+    global as_pair_2_rel
 
-# Edge Case: Skip any commented lines.
-if curr_line[0] == "#":
-    return
+    # Edge Case: Skip any commented lines.
+    if curr_line[0] == "#":
+        return
 
-asns = curr_line.rstrip().split("|")
-for i in range(0, len(asns)):
-    asn = int(asns[i])
+    asns = curr_line.rstrip().split("|")
+    for i in range(0, len(asns)):
+        asn = int(asns[i])
 
-# Map the current asn if the asn is not in as_2_cone yet.
-if asn not in as_2_cone:
-    as_2_cone[asn] = {}
-    as_2_cone[asn]["asn"] = asn
-    as_2_cone[asn]["cone"] = [asn]
-    as_2_cone[asn]["size"] = 1
+        # Map the current asn if the asn is not in as_2_cone yet.
+        if asn not in as_2_cone:
+            as_2_cone[asn] = {}
+            as_2_cone[asn]["asn"] = asn
+            as_2_cone[asn]["cone"] = [asn]
+            as_2_cone[asn]["size"] = 1
 
-    # Compare asns[i] to each asn that comes after it.
-    for j in range(i + 1, len(asns)):
-        # Call helper function to format key to have asn's sorted by value.
-        key = format_key(asn, int(asns[j]))
+        # Compare asns[i] to each asn that comes after it.
+        for j in range(i + 1, len(asns)):
+            key = format_key(asn, int(asns[j]))
 
-        # Add asns with a "provider" relationship between: asn[i] asn[j]
-        if key in as_pair_2_rel and as_pair_2_rel[key] == 1:
-            as_2_cone[asn]["size"] += 1
-            as_2_cone[asn]["cone"].append(int(asns[j]))
-        else:
-            break  
+            # Add asns with a "provider" relationship between: asn[i] asn[j]
+            if key in as_pair_2_rel and as_pair_2_rel[key] == 1:
+                as_2_cone[asn]["size"] += 1
+                as_2_cone[asn]["cone"].append(int(asns[j]))
+            else:
+                break  
 ~~~
