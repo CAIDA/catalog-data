@@ -63,9 +63,9 @@ The following [script](as-customer-cone.py) produces a dictionary as_2_cone that
 
 ~~~json
 {
-    "<asn0>" : {
-        "asn" : <asn0>,
-        "cone" : [ <asn0>, <asn1>, ..., <asnM> ],
+    "asn0" : {
+        "asn" : "asn0",
+        "cone" : [ "asn0", "asn1", "...", "asnM" ],
         "size" : #
     },
 }
