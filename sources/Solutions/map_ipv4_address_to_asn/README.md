@@ -1,11 +1,14 @@
 ~~~
 {
     "question": "How to find the origin ASN for a IPv4 address with Python?",
-    "links": ["software:BGPStream"],
+    "links": ["software:pyipmeta"],
     "tags": [
         "measurement methodology",
         "topology",
         "software/tools"
+        "asn"
+        "ipv4"
+        "ipv4 prefix"
     ]
 }
 ~~~
