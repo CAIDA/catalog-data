@@ -5,8 +5,8 @@
     "id" : "solution:how-to-find-an-asns-customer-cone",
     "visibility" : "public",
     "name" : "How to find an ASNs customer cone",
-    "description" : "Using either .ppdc-ases, or .as-rel, and .paths file to map IPv4 or IPv6 asns to their customer cone and customer cone size.",
-    "links": ["to" : "dataset:as_relationships"],
+    "description" : "Using .ppdc-ases, or .as-rel.v6-stable and stable.paths6 files to map IPv4 or IPv6 asns to their customer cone and customer cone size.",
+    "links": [{"to":"dataset:as_relationships"}],
     "tags" : [
         "ASN",
         "as relationships",
@@ -14,7 +14,7 @@
         "IPv4",
         "IPv6",
         "paths",
-        "Topology"
+        "topology"
     ]
 }
 ~~~
