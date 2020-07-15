@@ -11,6 +11,76 @@
 ~~~
 ### <ins> Introduction </ins> ###
 
+
+### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
+
+The following solution uses **libipmeta's** `PyIPMeta` to map between ipv4 addresses and origin asns.
+
+### PyIPMeta ###
+
+PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.
+
+#### Pre-requisites ####
+
+Before installing PyIPMeta, you will need:\
+• [libipmeta(>= 3.0.0)]( https://github.com/CAIDA/libipmeta)\
+• Python setuptools (`sudo apt install python-setuptools` on Ubuntu) \
+• Python development headers (`sudo apt install python-dev` on Ubuntu)
+
+Detailed installation and usage instructions [here]( https://github.com/CAIDA/pyipmeta ).
+
+# solution #
+
+The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
+
+### Map between ips and origin asns using PyIPMeta ###
+
+For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta)\
+The file `routeviews-rv2-20170329-0200.pfx2as.gz` can be found in `pyipmeta/test/pfx2as` in the above link.\
+More data can be found at https://www.caida.org/data/routing/routeviews-prefix2as.xml
+
+Sample ips.txt found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz)
+
+**Usage** : `$ python3 ip_asn.py -i ips.txt`
+
+~~~python
+import _pyipmeta 
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
+args = parser.parse_args()
+
+
+ipm = _pyipmeta.IpMeta()
+
+# print("Getting/enabling pfx2as provider (using included test data)")
+prov = ipm.get_provider_by_name("pfx2as")
+print(ipm.enable_provider(prov, "-f /test/pfx2as/routeviews-rv2-20170329-0200.pfx2as.gz"))
+print()
+
+# Create list of ips from test file 
+ips = []
+with open(args.ips_file) as f:
+    for line in f:
+        line = line.rstrip().split("\t")[1]
+        ips.append(line)
+
+
+# Map between ipv4 addresses and origin asns
+ip2asn = {}
+for ip in ips:
+    if ipm.lookup(ip):
+        (res,) =  ipm.lookup(ip)
+        if res.get('asns'):
+            ip2asn[ip] = res.get('asns')[-1]
+
+
+# print(ip2asn)
+~~~
+
+### <ins> Background </ins> ###
+
 **What is an IPv4 address prefix?** \
 • An *IP address* is a 32-bit unique address that is used to recognize a computer network or a machine. All computers on   the same data network share the same IP address.\
 • An IPv4 address is typically written in decimal format as 4 8-bit fields separated by a period. Eg. 182.24.0.0/18 \
@@ -53,23 +123,6 @@ This makes it more challenging to interpret the appearance of a matching destina
 • Border routers may use a third-party address when responding to traceroute probes. \
 • A third-party address is an IP address corresponding to an AS that is not on the path toward a destination.
 
-### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
-
-The following solution uses **libipmeta's** `PyIPMeta` to map between ipv4 addresses and origin asns.
-
-### PyIPMeta ###
-
-PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.
-
-#### Pre-requisites ####
-
-Before installing PyIPMeta, you will need:\
-• [libipmeta(>= 3.0.0)]( https://github.com/CAIDA/libipmeta)\
-• Python setuptools (`sudo apt install python-setuptools` on Ubuntu) \
-• Python development headers (`sudo apt install python-dev` on Ubuntu)
-
-Detailed installation and usage instructions [here]( https://github.com/CAIDA/pyipmeta ).
-
 ### <ins> Note: </ins> ###
 • `pyasn` can also be used for mapping between ipv4 addresses and origin asns.\
 • The `pyasn` object is be initialized using an IPASN datafile. \
@@ -84,52 +137,4 @@ For example, `ipm.lookup('192.172.226.97')` returns:
 `[{'connection_speed': '', 'city': '', 'asn_ip_count': 0, 'post_code': '', 'lat_long': (37.750999450683594, -97.8219985961914), 'region': '', 'area_code': 0, 'asns': [], 'continent_code': 'NA', 'metro_code': 0, 'matched_ip_count': 1, 'region_code': 0, 'country_code': 'US', 'id': 223, 'polygon_ids': []}]`
 
 • This object can then be parsed to map between IP addresses and origin asns. 
-
-# solution #
-
-The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
-
-### Map between ips and origin asns using PyIPMeta ###
-
-For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta)\
-The file `routeviews-rv2-20170329-0200.pfx2as.gz` can be found in `pyipmeta/test/pfx2as` in the above link.\
-Sample ips.txt found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz)
-
-**Usage** : `$ python3 ip_asn.py -i ips.txt`
-
-~~~python
-import _pyipmeta 
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
-args = parser.parse_args()
-
-
-ipm = _pyipmeta.IpMeta()
-
-# print("Getting/enabling pfx2as provider (using included test data)")
-prov = ipm.get_provider_by_name("pfx2as")
-print(ipm.enable_provider(prov, "-f /test/pfx2as/routeviews-rv2-20170329-0200.pfx2as.gz"))
-print()
-
-# Create list of ips from test file 
-ips = []
-with open(args.ips_file) as f:
-    for line in f:
-        line = line.rstrip().split("\t")[1]
-        ips.append(line)
-
-
-# Map between ipv4 addresses and origin asns
-ip2asn = {}
-for ip in ips:
-    if ipm.lookup(ip):
-        (res,) =  ipm.lookup(ip)
-        if res.get('asns'):
-            ip2asn[ip] = res.get('asns')[-1]
-
-
-# print(ip2asn)
-~~~
 
