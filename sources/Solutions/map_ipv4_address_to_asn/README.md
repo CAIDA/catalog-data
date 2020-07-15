@@ -37,7 +37,7 @@ The following script returns a dictionary `ip2asn` that maps ips to origin asns.
 
 For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta)\
 The file `routeviews-rv2-20170329-0200.pfx2as.gz` can be found in `pyipmeta/test/pfx2as` in the above link.\
-More data can be found at https://www.caida.org/data/routing/routeviews-prefix2as.xml
+More data can be found at http://data.caida.org/datasets/routing/routeviews-prefix2as/
 
 Sample ips.txt found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz)
 
