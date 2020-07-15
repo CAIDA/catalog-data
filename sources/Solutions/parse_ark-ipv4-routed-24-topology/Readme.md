@@ -14,7 +14,7 @@
 ~~~
 
 
-### <ins> Introduction </ins> ###
+## **<ins> Introduction </ins> **
 
 This solution parses through ITDK datasets and stores a node's `node id`, `isp`, `asn` and `location` as a json object. \
 The relevant `node` information is extracted from 4 different files: \
@@ -23,54 +23,8 @@ The relevant `node` information is extracted from 4 different files: \
 • `neighbors` from **links.bz2** \
 • `location` from **nodes.geo.bz2**
 
-### <ins> Caveats </ins> ###
 
- #### Placeholder Nodes ###
-
-• Placeholder nodes are the non-response hops in the traceroute. \
-• Generally, placeholder nodes are ignored. \
-• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
-
-
-### Explanation of the Data Files ###
-*Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
-
-#### midar-iff.nodes.bz2
-The nodes file lists the set of interfaces that were inferred to be on each router. \
-Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
-**File format**: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
-~~~
-node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
-~~~
-
-
-#### midar-iff.links.bz2
-The links file lists the set of routers and router interfaces that were inferred to be sharing each link. \
-Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. \
-If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
-**File format**: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
-~~~
-link L1: N27677807:1.0.0.1 N106961
-~~~
-
-
-#### midar-iff.nodes.as.bz2
-The node-AS file assigns an AS number to each node found in the nodes file.\
-**File format**: node.AS   <node_id>   <AS>   <method>
-~~~
-node.AS N1 31655 refinement
-~~~
-
-#### midar-iff.nodes.geo.bz
-The node-geolocation file contains the geographic location for each node in the nodes file.\
-**File format**: node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
-~~~
-node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
-~~~
-    
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
-
-### Solution ###
+## **<ins> Solution </ins> **
 The following script combines the information across the four files into a dictionary of nodes with the following structure:
 ~~~json
 {
@@ -293,3 +247,52 @@ while (<>) {
 print ("nodes_total: ",$nodes_total,"\n");
 print ("placeholder: ",$placeholder_total,"\n");
 ~~~
+
+
+## ** <ins> Background </ins>**
+### Caveats
+
+ #### Placeholder Nodes ###
+
+• Placeholder nodes are the non-response hops in the traceroute. \
+• Generally, placeholder nodes are ignored. \
+• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
+
+
+### Explanation of the Data Files ###
+*Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
+
+#### midar-iff.nodes.bz2
+The nodes file lists the set of interfaces that were inferred to be on each router. \
+Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
+**File format**: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
+~~~
+node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
+~~~
+
+
+#### midar-iff.links.bz2
+The links file lists the set of routers and router interfaces that were inferred to be sharing each link. \
+Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. \
+If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
+**File format**: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
+~~~
+link L1: N27677807:1.0.0.1 N106961
+~~~
+
+
+#### midar-iff.nodes.as.bz2
+The node-AS file assigns an AS number to each node found in the nodes file.\
+**File format**: node.AS   <node_id>   <AS>   <method>
+~~~
+node.AS N1 31655 refinement
+~~~
+
+#### midar-iff.nodes.geo.bz
+The node-geolocation file contains the geographic location for each node in the nodes file.\
+**File format**: node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
+~~~
+node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
+~~~
+    
+More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
