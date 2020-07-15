@@ -56,7 +56,7 @@ ipm = _pyipmeta.IpMeta()
 
 # print("Getting/enabling pfx2as provider (using included test data)")
 prov = ipm.get_provider_by_name("pfx2as")
-print(ipm.enable_provider(prov, "-f /test/pfx2as/routeviews-rv2-20170329-0200.pfx2as.gz"))
+print(ipm.enable_provider(prov, "-f http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/03/routeviews-rv2-20170329-0200.pfx2as.gz"))
 print()
 
 # Create list of ips from test file 
