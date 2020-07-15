@@ -14,7 +14,7 @@
 ~~~
 
 
-## **<ins> Introduction </ins> **
+## **<ins> Introduction </ins>**
 
 This solution parses through ITDK datasets and stores a node's `node id`, `isp`, `asn` and `location` as a json object. \
 The relevant `node` information is extracted from 4 different files: \
@@ -24,7 +24,7 @@ The relevant `node` information is extracted from 4 different files: \
 • `location` from **nodes.geo.bz2**
 
 
-## **<ins> Solution </ins> **
+## **<ins> Solution </ins>**
 The following script combines the information across the four files into a dictionary of nodes with the following structure:
 ~~~json
 {
@@ -249,7 +249,7 @@ print ("placeholder: ",$placeholder_total,"\n");
 ~~~
 
 
-## ** <ins> Background </ins>**
+## **<ins> Background </ins>**
 ### Caveats
 
  #### Placeholder Nodes ###
