@@ -12,9 +12,6 @@
     ]
 }
 ~~~
-### <ins> Introduction </ins> ###
-
-
 ### <ins> Mapping IPv4 addresses to origin AS's </ins> ###
 
 The following solution uses **libipmeta's** `PyIPMeta` to map between ipv4 addresses and origin asns.
