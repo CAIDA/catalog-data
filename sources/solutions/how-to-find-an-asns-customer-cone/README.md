@@ -5,7 +5,7 @@
     "id" : "solution:how-to-find-an-asns-customer-cone",
     "visibility" : "public",
     "name" : "How to find an ASNs customer cone",
-    "description" : "Using .ppdc-ases fils to map IPv4 asns to their customer cone and customer cone size.",
+    "description" : "The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.",
     "links": [{"to":"dataset:as_relationships"}],
     "tags" : [
         "ASN",
@@ -16,13 +16,6 @@
     ]
 }
 ~~~
-
-## **<ins>Introduction</ins>**
-
-The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.
-
-## **<ins>Solution</ins>**
-
 The following [script](as-customer-cone.py) produces a dictionary as_2_cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.
 
 ~~~json
