@@ -1,0 +1,23 @@
+{
+    "id": "software:kapar",
+    "name": "kapar",
+    "organization": "CAIDA",
+    "description": "Graph-based IP alias resolution.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 2"
+    ],
+    "links": [
+        {
+            "to": "Internet_Topology_Data_Kit",
+            "label": "used by"
+        }
+    ]
+}

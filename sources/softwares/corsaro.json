@@ -1,0 +1,18 @@
+{
+    "id": "software:corsaro",
+    "name": "Corsaro",
+    "organization": "CAIDA",
+    "description": "Extensible framework for large-scale analysis of passive trace data.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/measurement/coralreef/",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:UCSD Academic Non-Commercial License"
+    ],
+    "links": []
+}

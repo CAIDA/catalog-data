@@ -1,0 +1,42 @@
+{
+    "id": "dataset:as_prefix",
+    "name": "AS Prefix",
+    "organization": "CAIDA",
+    "description": "This dataset contains IPv4/IPv6 Prefix-to-Autonomous System (AS) mappings derived from RouteViews data. Files are created on a daily basis, starting from 2005-05-09 for IPv4 and 2007-01-01 for IPv6. The file format is line-oriented, with one prefix-AS mapping per line. The tab-separated fields are:IP Prefixes, prefix length, and AS number.",
+    "tags": [
+        "topology",
+        "BGP"
+    ],
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:At_Home_and_Abroad_The_Use_of_Denial-of-service_Attacks_during_Elections_in_Nondemocratic_Regimes",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Blink_Fast_Connectivity_Recovery_Entirely_in_the_Data_Plane",
+            "label": "used by"
+        }
+    ]
+}

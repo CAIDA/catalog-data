@@ -1,0 +1,16 @@
+{
+    "id": "dataset:netacuity_edge",
+    "name": "Netacuity Edge",
+    "description": "",
+    "tags": [
+        "geolocation"
+    ],
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "links": [
+        {
+            "to": "Paper:Geo-Locating_BGP_prefixes",
+            "label": "used by"
+        }
+    ]
+}

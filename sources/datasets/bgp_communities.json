@@ -1,0 +1,30 @@
+{
+    "id": "dataset:bgp_communities",
+    "name": "BGP Communities",
+    "organization": "CAIDA",
+    "description": "A BGP Community is an attribute (standardized in RFC1997 in 1996) that provides meta-information about prefixes announced to customer and peer networks. The attribute is represented by an X:Y pair, where X and Y are two 16-bit values (extended communities use four octets). By convention, the first two octets encode the Autonomous System Number (ASN) of the operator that sets the community. The next two octets encode an arbitrary value to denote some property relevant to routing policy. Unfortunately, the specific values and semantics of this BGP attribute are not standardized. Also, the community is a transitive optional attribute, meaning that BGP implementations do not have to recognize this attribute. It is at the network operator's discretion to accept it or pass it on to another AS.",
+    "tags": [
+        "BGP",
+        "topology"
+    ],
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/bgp-communities/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+            "label": "used by"
+        }
+    ]
+}

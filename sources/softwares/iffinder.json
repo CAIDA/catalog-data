@@ -1,0 +1,21 @@
+{
+    "id": "software:iffinder",
+    "name": "iffinder",
+    "organization": "CAIDA",
+    "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [],
+    "links": [
+        {
+            "to": "Internet_Topology_Data_Kit",
+            "label": "used by"
+        }
+    ]
+}

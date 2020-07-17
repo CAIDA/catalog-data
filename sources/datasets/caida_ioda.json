@@ -1,0 +1,30 @@
+{
+    "id": "dataset:caida_ioda",
+    "name": "CAIDA IODA",
+    "organization": "CAIDA",
+    "description": "IODA's visualizations can contain both false positives and false negatives: A sudden drop in a time series is not guaranteed to be an outage, so be careful when interpreting IODA's data.",
+    "tags": [
+        "security",
+        "outages",
+        "darknet",
+        "active measurement",
+        "visualization"
+    ],
+    "dateStart": "2015.03",
+    " availability": [
+        {
+            "name": "restricted",
+            "url": "https://ioda.caida.org/"
+        }
+    ],
+    "status": "ongoing",
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to": "Paper:Chocolatine_Outage_Detection_for_Internet_Background_Radiation",
+            "label": "used by"
+        }
+    ]
+}

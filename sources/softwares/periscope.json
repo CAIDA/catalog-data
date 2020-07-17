@@ -1,0 +1,18 @@
+{
+    "id": "software:periscope",
+    "name": "Periscope",
+    "organization": "",
+    "description": "Periscope is a unified interface to public looking glass servers.",
+    "tags": [
+        "BGP"
+    ],
+    "availability": [
+        {
+            "name": "upcoming",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [],
+    "links": []
+}

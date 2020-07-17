@@ -1,0 +1,10 @@
+{
+    "id": "venue:acm_computer_and_communications_security_ccs",
+    "name": "ACM Computer and Communications Security (CCS)",
+    "dates": [
+        {
+            "name": "2018.11",
+            "url": "https://sigsac.org/ccs/CCS2018/"
+        }
+    ]
+}

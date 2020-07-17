@@ -1,0 +1,21 @@
+{
+    "id": "software:as_relationship",
+    "name": "AS Relationship",
+    "organization": "CAIDA",
+    "description": "Measures an AS's centrality",
+    "tags": [
+        "topology"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "ihr.iijlab.net/ihr",
+            "tags": [
+                "UI"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ]
+}

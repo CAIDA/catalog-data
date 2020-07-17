@@ -1,0 +1,49 @@
+{
+    "id": "paper:residential_links_under_the_weather",
+    "name": "Residential Links Under the Weather",
+    "datePublished": "2019.08",
+    "description": "Weather is a leading threat to the stability of our vital infrastructure. Last-mile Internet is no exception. Yet, unlike other vital infrastructure, weather&rsquo;s effect on last-mile Internet outages is not well understood. This work is the first attempt to quantify the effect of weather on residential outages. ",
+    "tags": [
+        "Internet reliability",
+        "measurement methodology",
+        "Internet outages",
+        "weather",
+        "ping",
+        "data",
+        "active data analysis",
+        "routing"
+    ],
+    "caida_paper_id": "paper688",
+    "authors": [
+        {
+            "author": "author:Padmanabhan,_Ramakrishna",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Schulman,_Aaron",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Levin,_Dave",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Spring,_Neil",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "dataset:Thunderping",
+            "label": "used"
+        },
+        {
+            "to": "Software:U.S._National_Weather_Serice_Severe_Weather_Alert",
+            "label": "used"
+        },
+        {
+            "to": "dataset:MaxMind",
+            "label": "used"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": "dataset:euro_ix_ixp_service_matrix",
+    "name": "Euro-IX IXP Service Matrix",
+    "description": "A mapping of the services provided by European IXPs.",
+    "tags": [
+        "ixp",
+        "topology"
+    ],
+    "links": [
+        {
+            "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+            "label": "used by"
+        }
+    ]
+}

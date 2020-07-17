@@ -1,0 +1,12 @@
+{
+    "id": "dataset:caida_internet_traffic",
+    "name": "CAIDA Internet Traffic",
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "links": [
+        {
+            "to": "Paper:Hypersparse_Neural_Network_Analysis_of_Large-Scale_Internet_Traffic",
+            "label": "used by"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
+    "name": "Profiling BGP Serial Hijackers: Capturing Persistent Misbehavior in the Global Routing Table",
+    "datePublished": "2019.10",
+    "description": "BGP hijacks remain an acute problem in today&rsquo;s Internet, with widespread consequences. While hijack detection systems are readily available, they typically rely on a priori prefix-ownership information and are reactive in nature. In this work, we take on a new perspective on BGP hijacking activity: we introduce and track the long-term routing behavior of serial hijackers, networks that repeatedly hijack address blocks for malicious purposes, often over the course of many months or even years. Based on a ground truth dataset that we construct by extracting information from network operator mailing lists, we illuminate the dominant routing characteristics of serial hijackers, and how they differ from legitimate networks.We then distill features that can capture these behavioral differences and train a machine learning model to automatically identify Autonomous Systems (ASes) that exhibit characteristics similar to serial hijackers. Our classifier identifies &asymp; 900 ASes with similar behavior in the global IPv4 routing table. We analyze and categorize these networks, finding a wide range of indicators of malicious activity, misconfiguration, as well as benign hijacking activity. Our work presents a solid first step towards identifying and understanding this important category of networks, which can aid network operators in taking proactive measures to defend themselves against prefix hijacking and serve as input for current and future detection systems.",
+    "tags": [
+        "topology",
+        "security",
+        "routing"
+    ],
+    "caida_paper_id": "paper690",
+    "authors": [
+        {
+            "author": "author:Testart,_Cecilia",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Richter,_Philipp",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:King,_Alistair",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dainotti,_Alberto",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Clark,_David",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "Software:BGPStream",
+            "label": "used"
+        }
+    ]
+}

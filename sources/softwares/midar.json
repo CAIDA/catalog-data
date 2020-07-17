@@ -1,0 +1,23 @@
+{
+    "id": "software:midar",
+    "name": "MIDAR",
+    "organization": "CAIDA",
+    "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 2"
+    ],
+    "links": [
+        {
+            "to": "Internet_Topology_Data_Kit",
+            "label": "used by"
+        }
+    ]
+}

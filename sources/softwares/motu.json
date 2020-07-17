@@ -1,0 +1,18 @@
+{
+    "id": "software:motu",
+    "name": "Motu",
+    "organization": "CAIDA",
+    "description": "Dealiases pairs of IPv4 addresses.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 2"
+    ],
+    "links": []
+}

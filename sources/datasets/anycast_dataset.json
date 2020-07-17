@@ -1,0 +1,17 @@
+{
+    "id": "dataset:anycast_dataset",
+    "name": "Anycast Dataset",
+    "description": "Active measurements to anycase servers.",
+    "tags": [
+        "security",
+        "topology",
+        "anycast"
+    ],
+    "status": "complete",
+    "links": [
+        {
+            "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
+            "label": "used by"
+        }
+    ]
+}

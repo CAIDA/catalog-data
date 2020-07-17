@@ -1,0 +1,43 @@
+{
+    "id": "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane",
+    "name": "Blink: Fast Connectivity Recovery Entirely in the Data Plane",
+    "datePublished": "2019.04",
+    "description": "In this paper, we explore new possibilities, created by programmable switches, for fast rerouting upon signals triggered by Internet traffic disruptions. We present Blink, a data-driven system exploiting TCP-induced signals to detect failures. The key intuition behind Blink is that a TCP flow exhibits a predictable behavior upon disruption: retransmitting the same packet over and over, at epochs exponentially spaced in time. When compounded over multiple flows, this behavior creates a strong and characteristic failure signal. Blink efficiently analyzes TCP flows, at line rate, to: (i) select flows to track; (ii) reliably and quickly detect major traffic disruptions; and (iii) recover data-plane connectivity, via next-hops compatible with the operator&rsquo;s policies.",
+    "tags": [
+        "internet outages",
+        "routing"
+    ],
+    "caida_paper_id": "paper669",
+    "authors": [
+        {
+            "author": "author:Holterbach,_Thomas",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Molero,_Edgar_Costa",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Apostolaki,_Maria",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dainotti,_Alberto",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Vissicchio,_Stefano",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Vanbever,_Laurent",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "dataset:AS_Prefix",
+            "label": "used"
+        }
+    ]
+}

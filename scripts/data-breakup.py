@@ -49,7 +49,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("json", nargs="+", type=str, help="single json object file")
 args = parser.parse_args()
 
-re_front = re.compile("^;")
+re_front = re.compile("^_")
 re_end = re.compile("_$")
 re_id_illegal = re.compile("[^\d^a-z^A-Z]+")
 re_type_id = re.compile("[^\:]+:(.+)")
@@ -73,8 +73,7 @@ def main():
             print (obj_fname)
             if "__typename" in obj:
                 del obj["__typename"]
-            #obj["__typename"] = type_
-            #json.dump(obj,open(obj_fname,"w"),indent=4)
+            json.dump(obj,open(obj_fname,"w"),indent=4)
         # json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
 
 main()

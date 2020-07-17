@@ -1861,7 +1861,7 @@
         "visibility": "public",
         "name": "How to get an ASN's name, organization and country?",
         "description": "Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
-        "context": "\n### <ins> Introduction </ins> ###\n\n**What is an AS?**\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)\n\n**What is an ASN?**\\\n    \u2022 Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.\n\n**What is an ASN's organization?**\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. \n\n**What is an ASN's country?** \\\n    \u2022 The country where the ASN's organization is located. \n    \n    \n### <ins> Caveats </ins> ###\n\nFor Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. \n\n### <ins> Mapping ASN's to country </ins> ###\n*AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)\n\nOne way to map a ASN to a country is by mapping to the **country of its organization.** \n\nThe AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The `country` field is stored on the organization field format. \n\nExample of the AS organization in a test file:\n~~~\n# format: org_id|changed|org_name|country|source\nLVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN\n# format: aut|changed|aut_name|org_id|opaque_id|source\n1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~\n\n### Explanation of the data fields ###\n\n--------------------\nOrganization fields\n--------------------\n\n **org_id** : unique ID for the given organization \\\n **changed** : the changed date provided by its WHOIS entry \\\n **name**    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n **country** : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n **source**  : the RIR or NIR database which contained this entry \n\n----------\nAS fields\n----------\n**aut**     : the AS number or asn \\\n**changed** : the changed date provided by its WHOIS entry \\\n**aut_name** : the name provided for the individual AS number \\\n**org_id**  : maps to an organization entry \\\n**opaque_id**   : opaque identifier used by RIR extended delegation format \\\n**source**  : the RIR or NIR database which was contained this entry \n\n### <ins> Solution </ins> ###\nThe following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\\\n{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', \n`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }\n\n ~~~python\nimport re\nimport sys\n\nfilename = 'tester'\nre_format= re.compile(\"# format:(.+)\")\n\norg_info = {}\nasn_info = {}\n\nwith open(filename) as f:\n    for line in f:\n        m = re_format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut_name' with 'asn_name'\n                keys[2] = 'asn_name'\n\n            \n        # skips over comments\n        if len(line) == 0 or line[0] == \"#\":\n            continue\n\n        values = line.rstrip().split(\"|\")\n    \n        info = {}\n\n        for i,key in enumerate(keys):\n            info[keys[i]] = values[i]\n           \n\n        if \"asn\" == keys[0]:\n            org_id = info[\"org_id\"]\n            if org_id in org_info:\n                for key in [\"org_name\",\"country\"]:\n                    info[key] = org_info[org_id][key]\n             \n            asn_info[values[0]] = info\n\n        elif \"org_id\" == keys[0]:\n            org_info[values[0]] = info\n        else:\n            print (\"unknown type\",keys[0],file= sys.stderr)\n\n# Contains the asn mapping to other field values in this format:\n# {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', \n# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }\n# print(asn_info)       \n            \n~~~\n",
+        "context": "\n### <ins> Introduction </ins> ###\n\n**What is an AS?**\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)\n\n**What is an ASN?**\\\n    \u2022 Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.\n\n**What is an ASN's organization?**\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. \n\n**What is an ASN's country?** \\\n    \u2022 The country where the ASN's organization is located. \n    \n    \n### <ins> Caveats </ins> ###\n\nFor Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. \n\n### <ins> Mapping ASN's to country </ins> ###\n*AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)\n\nOne way to map a ASN to a country is by mapping to the **country of its organization.** \n\nThe AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The `country` field is stored on the organization field format. \n\nExample of the AS organization in a test file:\n~~~\n# format: org_id|changed|org_name|country|source\nLVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN\n# format: aut|changed|aut_name|org_id|opaque_id|source\n1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~\n\n### Explanation of the data fields ###\n\n--------------------\nOrganization fields\n--------------------\n\n **org_id** : unique ID for the given organization \\\n **changed** : the changed date provided by its WHOIS entry \\\n **name**    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n **country** : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n **source**  : the RIR or NIR database which contained this entry \n\n----------\nAS fields\n----------\n**aut**     : the AS number or asn \\\n**changed** : the changed date provided by its WHOIS entry \\\n**aut_name** : the name provided for the individual AS number \\\n**org_id**  : maps to an organization entry \\\n**opaque_id**   : opaque identifier used by RIR extended delegation format \\\n**source**  : the RIR or NIR database which was contained this entry \n\n### <ins> Solution </ins> ###\nThe following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\\\n{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', \n`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }\n\n ~~~python\nimport re\nimport sys\n\nre_format= re.compile(\"# format:(.+)\")\n\norg_info = {}\nasn_info = {}\n\n# Pass in test dataset as filename\nwith open(filename) as f:\n    for line in f:\n        m = re_format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut_name' with 'asn_name'\n                keys[2] = 'asn_name'\n\n            \n        # skips over comments\n        if len(line) == 0 or line[0] == \"#\":\n            continue\n\n        values = line.rstrip().split(\"|\")\n    \n        info = {}\n\n        for i,key in enumerate(keys):\n            info[keys[i]] = values[i]\n           \n\n        if \"asn\" == keys[0]:\n            org_id = info[\"org_id\"]\n            if org_id in org_info:\n                for key in [\"org_name\",\"country\"]:\n                    info[key] = org_info[org_id][key]\n             \n            asn_info[values[0]] = info\n\n        elif \"org_id\" == keys[0]:\n            org_info[values[0]] = info\n        else:\n            print (\"unknown type\",keys[0],file= sys.stderr)\n\n# Contains the asn mapping to other field values in this format:\n# {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', \n# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }\n# print(asn_info)       \n            \n~~~\n",
         "tags": [
             "tag:measurement_methodology",
             "tag:topology",
@@ -1872,8 +1872,8 @@
             "tag:country"
         ],
         "dateCreated": "2020/06/22 11:33:23",
-        "dateLastUpdated": "2020/06/25 12:26:44",
-        "date": "2020/06/25 12:26:44"
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
     },
     "tag:asn": {
         "id": "tag:asn",
@@ -2359,5 +2359,236 @@
         "dateCreated": "2020/06/25 10:31:35",
         "dateLastUpdated": "2020/06/25 14:54:15",
         "date": "2020/06/25 14:54:15"
+    },
+    "software: periscope": {
+        "id": "software: periscope",
+        "__typename": "Software",
+        "name": "Periscope",
+        "organization": "",
+        "description": "Periscope is a unified interface to public looking glass servers.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:vela": {
+        "id": "software:vela",
+        "__typename": "Software",
+        "name": "Vela",
+        "organization": "CAIDA",
+        "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:coralreef": {
+        "id": "software:coralreef",
+        "__typename": "Software",
+        "name": "CoralReef",
+        "organization": "CAIDA",
+        "description": "Measures and analyzes passive Internet traffic monitor data.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:corsaro": {
+        "id": "software:corsaro",
+        "__typename": "Software",
+        "name": "Corsaro",
+        "organization": "CAIDA",
+        "description": "Extensible framework for large-scale analysis of passive trace data.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:iffinder": {
+        "id": "software:iffinder",
+        "__typename": "Software",
+        "name": "iffinder",
+        "organization": "CAIDA",
+        "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:kapar": {
+        "id": "software:kapar",
+        "__typename": "Software",
+        "name": "kapar",
+        "organization": "CAIDA",
+        "description": "Graph-based IP alias resolution.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:libtimeseries": {
+        "id": "software:libtimeseries",
+        "__typename": "Software",
+        "name": "libtimeseries",
+        "organization": "CAIDA",
+        "description": "C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:midar": {
+        "id": "software:midar",
+        "__typename": "Software",
+        "name": "MIDAR",
+        "organization": "CAIDA",
+        "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:motu": {
+        "id": "software:motu",
+        "__typename": "Software",
+        "name": "Motu",
+        "organization": "CAIDA",
+        "description": "Dealiases pairs of IPv4 addresses.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:scamper": {
+        "id": "software:scamper",
+        "__typename": "Software",
+        "name": "scamper",
+        "organization": "CAIDA",
+        "description": "IPv6 and IPv4 active traceroute probing and ping.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
+    },
+    "software:spoofer": {
+        "id": "software:spoofer",
+        "__typename": "Software",
+        "name": "Spoofer",
+        "organization": "CAIDA",
+        "description": "Source address validation measurement program that measures susceptibility to spoofed source address IP packets.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/09 10:42:10",
+        "dateLastUpdated": "2020/07/09 10:42:10",
+        "date": "2020/07/09 10:42:10"
     }
 }

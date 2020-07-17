@@ -1,0 +1,10 @@
+{
+    "id": "dataset:mopeye",
+    "name": "MopEye",
+    "links": [
+        {
+            "to": "Paper:An_Empirical_Study_of_Mobile_Network_Behavior_and_Application_Performance_in_the_Wild",
+            "label": "used by"
+        }
+    ]
+}
