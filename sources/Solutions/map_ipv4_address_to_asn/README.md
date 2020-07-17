@@ -5,9 +5,9 @@
     "tags": [
         "measurement methodology",
         "topology",
-        "software/tools"
-        "asn"
-        "ipv4"
+        "software/tools",
+        "asn",
+        "ipv4",
         "ipv4 prefix"
     ]
 }

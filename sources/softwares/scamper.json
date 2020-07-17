@@ -18,11 +18,11 @@
     ],
     "links": [
         {
-            "to": "Macroscopic_Topology_Measurements",
+            "to": "dataset:macroscopic_topology_measurements",
             "label": "used by"
         },
         {
-            "to": "The_IPv4_Routed_24_Topology_Dataset",
+            "to": "dataset:the_ipv4_routed_24_topology_dataset",
             "label": "used by"
         }
     ]

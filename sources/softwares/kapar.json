@@ -16,7 +16,7 @@
     ],
     "links": [
         {
-            "to": "Internet_Topology_Data_Kit",
+            "to": "dataset:internet_topology_data_kit",
             "label": "used by"
         }
     ]

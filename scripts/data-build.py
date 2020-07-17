@@ -128,23 +128,25 @@ def main():
     #######################
     #######################
     fname_type = {
-        "Datasets.json":"dataset",
-        "Licenses.json":"license",
-        "Authors.json":"author",
-        "Papers.json":"paper",
-        "Presentations.json":"presentation",
-        "Venues.json":"venue",
-        "Softwares.json":"software"
+        "datasets":"dataset",
+        "licenses":"license",
+        "authors":"author",
+        "papers":"paper",
+        "presentations":"presentation",
+        "venues":"venue",
+        "softwares":"software"
     }
-    for fname in os.listdir(source_dir):
+    for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname in fname_type:
-            type_ = fname_type[fname]
             print ("loading",path)
-            with open(path,"r") as f:
-                for info in json.load(f):
-                    info["__typename"] = type_
-                    obj = object_lookup(info)
+            type_ = fname_type[fname]
+            for filename in sorted(os.listdir(path)):
+                if re.search("\.json$",filename,re.IGNORECASE):
+                    print ("   ",path+"/"+filename)
+                    info = json.load(open(path+"/"+filename))
+                    info["__typename"] = type_.lower()
+                    object_lookup(info)
         elif fname == "Solutions":
             solutions_process(path)
 

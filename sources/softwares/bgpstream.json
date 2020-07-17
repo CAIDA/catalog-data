@@ -43,7 +43,6 @@
         {
             "to": "Paper:Geo-Locating_BGP_prefixes",
             "label": "used by"
-        },
-        {}
+        }
     ]
 }
