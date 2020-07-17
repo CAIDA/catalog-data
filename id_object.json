@@ -1,180 +1,4 @@
 {
-    "solution:how-to-find-an-asns-customer-cone": {
-        "id": "solution:how-to-find-an-asns-customer-cone",
-        "__typename": "Solution",
-        "visibility": "public",
-        "name": "How to find an ASNs customer cone",
-        "description": "Using .ppdc-ases fils to map IPv4 asns to their customer cone and customer cone size.",
-        "context": "\n## **<ins>Introduction</ins>**\n\nThe following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.\n\n## **<ins>Solution</ins>**\n\nThe following [script](as-customer-cone.py) produces a dictionary as_2_cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.\n\n~~~json\n{\n    \"asn0\" : {\n        \"asn\" : \"asn0\",\n        \"cone\" : [ \"asn0\", \"asn1\", \"...\", \"asnM\" ],\n        \"size\" : 0\n    },\n}\n~~~\n\n### Usage\n\nThe dataset that is used for this script can be downloaded [here](https://www.caida.org/data/as-relationships/). Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.\n\n~~~bash\npython3 as-customer-cone.py -p 20200101.ppdc-ases.txt\n~~~\n\nBelow is the helper method the script uses to parses the .ppdc-ases file line-by-line to update as_2_cone with a mapping between a given asn, its cone, and cone size.\n\n~~~Python\n# Given an line of a .ppdc-ases file, get the asn and its Customer Cone.\ndef parse_ppdc_ases_line(curr_line):\n    global as_2_cone\n\n    # Edge Case: Skip any commented lines.\n    if curr_line[0] == \"#\":\n        return\n\n    customer_cone = curr_line.split()\n    asn = int(customer_cone[0])\n    customer_cone_size = len(customer_cone[1:])\n\n    # Update as_2_cone with this asn's customer_cone_size.\n    if asn not in as_2_cone:\n        as_2_cone[asn] = {}\n\n    as_2_cone[asn][\"asn\"] = asn\n    as_2_cone[asn][\"cone\"] = customer_cone\n    as_2_cone[asn][\"size\"] = customer_cone_size\n~~~\n\n## **<ins>Background</ins>**\n\n### What is an AS\n\n- AS stands for Autonomous system\n- It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).\n- It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\n- Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.\n- Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.\n- More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)\n\n### What is an ASN\n\n- Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.\n\n### What is an AS Relationship\n\n- An AS Relationship is the determined routing polocy between two ASes.\n- The three most commo types of AS Relationships are:\n  - customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),\n  - peer-to-peer (p2p),\n  - sibling-to-sibling (s2s)\n- A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.\n- An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.\n- More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)\n\n### What is a Customer Cone\n\n- A customer cone is the set of ASes, prefixes, or addresses that can be reached from a given AS following only customer links.\n- An AS A's AS customer cone as the AS A itself plus all the ASes that can be reached from A following only p2c links in BGP paths we observed.\n  - In other words, A's customer cone contains A, plus A's customers, plus its customers' customers, and so on.\n- The size of the customer cone of an AS reflects the number of other elements (ASes,  prefixes, or addresses) found in it's set.\n- An AS in the customer cone is assumed to pay, directly or indirectly, for transit, and provides a coarse metric of the size or influence of an AS in the routing system.\n\n### File Format: .ppdc-ases\n\nFor the purpose of this solution, we'll be skipping over any commented lines. Each line is a customer cone where asn0 is the \"head\" of the cone and all asns after is are within its cone.\n\n~~~text\n# inferred clique:\n\n# total size: ...\n\n<asn0>|<asn1>|...|<asnM>\n~~~\n",
-        "tags": [
-            "tag:asn",
-            "tag:as_relationships",
-            "tag:customer_cone",
-            "tag:ipv4",
-            "tag:topology"
-        ],
-        "dateCreated": "2020/07/16 20:04:02",
-        "dateLastUpdated": "2020/07/16 20:04:02",
-        "date": "2020/07/16 20:04:02"
-    },
-    "tag:asn": {
-        "id": "tag:asn",
-        "__typename": "Tag",
-        "name": "ASN",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "tag:as_relationships": {
-        "id": "tag:as_relationships",
-        "__typename": "Tag",
-        "name": "as relationships",
-        "dateCreated": "2020/07/16 20:04:02",
-        "dateLastUpdated": "2020/07/16 20:04:02",
-        "date": "2020/07/16 20:04:02"
-    },
-    "tag:customer_cone": {
-        "id": "tag:customer_cone",
-        "__typename": "Tag",
-        "name": "customer cone",
-        "dateCreated": "2020/07/16 20:04:02",
-        "dateLastUpdated": "2020/07/16 20:04:02",
-        "date": "2020/07/16 20:04:02"
-    },
-    "tag:ipv4": {
-        "id": "tag:ipv4",
-        "__typename": "Tag",
-        "name": "IPv4",
-        "dateCreated": "2020/07/16 20:04:02",
-        "dateLastUpdated": "2020/07/16 20:04:02",
-        "date": "2020/07/16 20:04:02"
-    },
-    "tag:topology": {
-        "id": "tag:topology",
-        "__typename": "Tag",
-        "name": "topology",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "dataset:as_relationships": {
-        "id": "dataset:as_relationships",
-        "__typename": "Dataset",
-        "name": "AS Relationships",
-        "organization": "CAIDA",
-        "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
-        "dateStart": "2013/02/01/ 00:00:00",
-        "availability": [
-            {
-                "name": "name",
-                "url": "url",
-                "tags": [
-                    "tag:file"
-                ]
-            }
-        ],
-        "licenses": [
-            "license:bsd-4-clause-uc"
-        ],
-        "tags": [
-            "tag:topology"
-        ],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/26 10:03:27",
-        "date": "2020/06/26 10:03:27"
-    },
-    "solution:getting_an_asns_name_country_organization": {
-        "id": "solution:getting_an_asns_name_country_organization",
-        "__typename": "Solution",
-        "visibility": "public",
-        "name": "How to get an ASN's name, organization and country?",
-        "description": "Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
-        "context": "\n### <ins> Introduction </ins> ###\n\n### <ins> Mapping ASN's to country </ins> ###\n*AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)\n\nOne way to map a ASN to a country is by mapping to the **country of its organization.** \n\nThe AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The `country` field is stored on the organization field format. \n\nExample of the AS organization in a test file:\n~~~\n# format: org_id|changed|org_name|country|source\nLVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN\n# format: aut|changed|aut_name|org_id|opaque_id|source\n1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~\n\n### Explanation of the data fields ###\n\n--------------------\nOrganization fields\n--------------------\n\n **org_id** : unique ID for the given organization \\\n **changed** : the changed date provided by its WHOIS entry \\\n **name**    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n **country** : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n **source**  : the RIR or NIR database which contained this entry \n\n----------\nAS fields\n----------\n**aut**     : the AS number or asn \\\n**changed** : the changed date provided by its WHOIS entry \\\n**aut_name** : the name provided for the individual AS number \\\n**org_id**  : maps to an organization entry \\\n**opaque_id**   : opaque identifier used by RIR extended delegation format \\\n**source**  : the RIR or NIR database which was contained this entry \n\n    \n### <ins> Solution </ins> ###\nThe following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\\\n{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', \n`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }\n\n ~~~python\nimport re\nimport sys\n\nre_format= re.compile(\"# format:(.+)\")\n\norg_info = {}\nasn_info = {}\n\n# Pass in test dataset as filename\nwith open(filename) as f:\n    for line in f:\n        m = re_format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut_name' with 'asn_name'\n                keys[2] = 'asn_name'\n\n            \n        # skips over comments\n        if len(line) == 0 or line[0] == \"#\":\n            continue\n\n        values = line.rstrip().split(\"|\")\n    \n        info = {}\n\n        for i,key in enumerate(keys):\n            info[keys[i]] = values[i]\n           \n\n        if \"asn\" == keys[0]:\n            org_id = info[\"org_id\"]\n            if org_id in org_info:\n                for key in [\"org_name\",\"country\"]:\n                    info[key] = org_info[org_id][key]\n             \n            asn_info[values[0]] = info\n\n        elif \"org_id\" == keys[0]:\n            org_info[values[0]] = info\n        else:\n            print (\"unknown type\",keys[0],file= sys.stderr)\n\n# Contains the asn mapping to other field values in this format:\n# {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', \n# 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }\n# print(asn_info)       \n            \n~~~\n### <ins> Background </ins> ###\n\n**What is an AS?**\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)\n\n**What is an ASN?**\\\n    \u2022 Each AS is assigned a unique ASN, or *Autonomous System Number* that allows it to be uniquely identified during routing.\n\n**What is an ASN's organization?**\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. \n\n**What is an ASN's country?** \\\n    \u2022 The country where the ASN's organization is located. \n    \n### <ins> Caveats </ins> ###\n\nFor Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. \n\n",
-        "tags": [
-            "tag:measurement_methodology",
-            "tag:topology",
-            "tag:software/tools",
-            "tag:asn",
-            "tag:geolocation",
-            "tag:organization",
-            "tag:country"
-        ],
-        "dateCreated": "2020/06/22 11:33:23",
-        "dateLastUpdated": "2020/07/16 20:04:02",
-        "date": "2020/07/16 20:04:02"
-    },
-    "tag:measurement_methodology": {
-        "id": "tag:measurement_methodology",
-        "__typename": "Tag",
-        "name": "measurement methodology",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "tag:software/tools": {
-        "id": "tag:software/tools",
-        "__typename": "Tag",
-        "name": "software/tools",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "tag:geolocation": {
-        "id": "tag:geolocation",
-        "__typename": "Tag",
-        "name": "geolocation",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "tag:organization": {
-        "id": "tag:organization",
-        "__typename": "Tag",
-        "name": "organization",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "tag:country": {
-        "id": "tag:country",
-        "__typename": "Tag",
-        "name": "country",
-        "dateCreated": "2020/06/25 10:31:35",
-        "dateLastUpdated": "2020/06/25 14:54:15",
-        "date": "2020/06/25 14:54:15"
-    },
-    "dataset:as_organization": {
-        "id": "dataset:as_organization",
-        "__typename": "Dataset",
-        "name": "AS Organization",
-        "organization": "CAIDA",
-        "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
-        "dateStart": "2007/02/01/ 00:00:00",
-        "status": "ongoing",
-        "availability": [
-            {
-                "name": "name",
-                "url": "url",
-                "tags": [
-                    "tag:file"
-                ]
-            }
-        ],
-        "licenses": [
-            "license:bsd-4-clause-uc"
-        ],
-        "tags": [
-            "tag:topology",
-            "tag:ownership"
-        ],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/06/19 18:44:48",
-        "dateLastUpdated": "2020/06/26 10:03:27",
-        "date": "2020/06/26 10:03:27"
-    },
     "author:alvarez_hamelin_j_ignacio": {
         "id": "author:alvarez_hamelin_j_ignacio",
         "__typename": "Author",
@@ -722,6 +546,14 @@
         "dateLastUpdated": "2020/06/25 14:54:15",
         "date": "2020/06/25 14:54:15"
     },
+    "tag:topology": {
+        "id": "tag:topology",
+        "__typename": "Tag",
+        "name": "topology",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
     "tag:anycast": {
         "id": "tag:anycast",
         "__typename": "Tag",
@@ -866,6 +698,36 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/06/26 17:10:07",
         "date": "2020/06/26 17:10:07"
+    },
+    "dataset:as_organization": {
+        "id": "dataset:as_organization",
+        "__typename": "Dataset",
+        "name": "AS Organization",
+        "organization": "CAIDA",
+        "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
+        "dateStart": "2007/02/01/ 00:00:00",
+        "status": "ongoing",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": [
+                    "tag:file"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:bsd-4-clause-uc"
+        ],
+        "tags": [
+            "tag:topology",
+            "tag:ownership"
+        ],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/06/19 18:44:48",
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
     },
     "tag:ownership": {
         "id": "tag:ownership",
@@ -1093,6 +955,14 @@
         "dateLastUpdated": "2020/06/26 10:03:27",
         "date": "2020/06/26 10:03:27"
     },
+    "tag:geolocation": {
+        "id": "tag:geolocation",
+        "__typename": "Tag",
+        "name": "geolocation",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
     "software:as_rank": {
         "id": "software:as_rank",
         "__typename": "Software",
@@ -1114,6 +984,34 @@
         "tags": [
             "tag:topology",
             "tag:geolocation"
+        ],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/06/19 18:44:48",
+        "dateLastUpdated": "2020/06/26 10:03:27",
+        "date": "2020/06/26 10:03:27"
+    },
+    "dataset:as_relationships": {
+        "id": "dataset:as_relationships",
+        "__typename": "Dataset",
+        "name": "AS Relationships",
+        "organization": "CAIDA",
+        "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
+        "dateStart": "2013/02/01/ 00:00:00",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": [
+                    "tag:file"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:bsd-4-clause-uc"
+        ],
+        "tags": [
+            "tag:topology"
         ],
         "links": [],
         "urls": [],
@@ -2190,6 +2088,14 @@
         "dateLastUpdated": "2020/07/16 20:04:02",
         "date": "2020/07/16 20:04:02"
     },
+    "tag:measurement_methodology": {
+        "id": "tag:measurement_methodology",
+        "__typename": "Tag",
+        "name": "measurement methodology",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
     "author:schulman,_aaron": {
         "id": "author:schulman,_aaron",
         "__typename": "Author",
@@ -2333,6 +2239,14 @@
         "dateCreated": "2020/06/19 18:44:48",
         "dateLastUpdated": "2020/07/16 20:04:02",
         "date": "2020/07/16 20:04:02"
+    },
+    "tag:software/tools": {
+        "id": "tag:software/tools",
+        "__typename": "Tag",
+        "name": "software/tools",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
     },
     "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
         "id": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
@@ -3151,6 +3065,14 @@
         "id": "tag:ipv4_adddress",
         "__typename": "Tag",
         "name": "IPv4 adddress",
+        "dateCreated": "2020/06/25 10:31:35",
+        "dateLastUpdated": "2020/06/25 14:54:15",
+        "date": "2020/06/25 14:54:15"
+    },
+    "tag:asn": {
+        "id": "tag:asn",
+        "__typename": "Tag",
+        "name": "ASN",
         "dateCreated": "2020/06/25 10:31:35",
         "dateLastUpdated": "2020/06/25 14:54:15",
         "date": "2020/06/25 14:54:15"
