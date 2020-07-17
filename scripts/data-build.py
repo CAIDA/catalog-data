@@ -147,7 +147,7 @@ def main():
                     info = json.load(open(path+"/"+filename))
                     info["__typename"] = type_.lower()
                     object_lookup(info)
-        elif fname == "Solutions":
+        elif fname == "solutions":
             solutions_process(path)
 
     #######################
