@@ -1,0 +1,29 @@
+{
+    "id": "scamper",
+    "name": "scamper",
+    "organization": "CAIDA",
+    "description": "IPv6 and IPv4 active traceroute probing and ping.",
+    "tags": [
+        "topology"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 2"
+    ],
+    "links": [
+        {
+            "to": "dataset:Macroscopic_Topology_Measurements",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:the_IPv4_Routed_24_Topology_Dataset",
+            "label": "used by"
+        }
+    ]
+}

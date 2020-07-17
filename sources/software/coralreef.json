@@ -1,0 +1,18 @@
+{
+    "id": "coralreef",
+    "name": "CoralReef",
+    "organization": "CAIDA",
+    "description": "Measures and analyzes passive Internet traffic monitor data.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/measurement/coralreef/",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "links": []
+}

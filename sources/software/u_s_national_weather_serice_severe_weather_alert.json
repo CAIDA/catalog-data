@@ -1,0 +1,23 @@
+{
+    "id": "u_s_national_weather_serice_severe_weather_alert",
+    "name": "U.S. National Weather Serice:Severe Weather Alert",
+    "description": "A powerful weather system combined with a lack of ice on the Great Lakes will produce significant amounts of snow, up to 3 to 4 feet in places, and blizzard conditions. Travel may be difficult to impossible. Cold air behind this front will bring below normal temperatures to the eastern third of the U.S., including potential for freezing overnight temperatures in Florida.",
+    "tags": [
+        "weather"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.weather.gov/alerts",
+            "tags": [
+                "API"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "to": "Paper:Residential_Links_Under_the_Weather",
+            "label": "used by"
+        }
+    ]
+}

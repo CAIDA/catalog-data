@@ -1,0 +1,61 @@
+{
+    "id": "stable_and_practical_as_relationship_inference_with_problink",
+    "name": "Stable and Practical AS Relationship Inference with ProbLink",
+    "datePublished": "2019.04",
+    "description": "Knowledge of the business relationships between Autonomous Systems (ASes) is essential to understanding the behavior of the Internet routing system. Despite significant progress in the development of relationship inference algorithms, the resulting inferences are impractical for many critical real-world applications, cannot offer adequate predictability in the configuration of routing policies, and suffer from inference oscillations. To achieve more practical and stable relationship inference, we first illuminate the root causes of the contradiction between these shortcomings and the near-perfect validation results for AS-Rank, the state-of-the-art relationship inference algorithm. Using a &quot;naive&quot; inference approach as a benchmark, we find that available validation datasets over-represent AS links with easier inference requirements. We identify which types of links are harder to infer and develop appropriate validation subsets to enable more representative evaluation.",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology",
+        "economics"
+    ],
+    "caida_paper_id": "paper671",
+    "authors": [
+        {
+            "author": "author:Jin,_Yuchen",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Scott,_Colin",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dhamdhere,_Amogh",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Giotsas,_Vasileios",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Krishnamurthy,_Arvind",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Shenker,_Scott",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "Software:PeeringDB",
+            "label": "used"
+        },
+        {
+            "to": "Software:BGPStream",
+            "label": "used"
+        },
+        {
+            "to": "dataset:Euro-IX_IXP_Service_Matrix",
+            "label": "used"
+        },
+        {
+            "to": "dataset:BGP_Communities",
+            "label": "used"
+        },
+        {
+            "to": "dataset:AS_Organization",
+            "label": "used"
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+    "name": "Studying the evolution of content providers in IPv4 and IPv6 internet cores",
+    "datePublished": "2019.09",
+    "description": "There is recent evidence that the core of the Internet, which was formerly dominated by large transit providers, has been reshaped after the transition to a multimedia-oriented network, first by general-purpose CDNs and now by private CDNs. In this work we use k-cores, an element of graph theory, to define which ASes compose the core of the Internet and to track the evolution of the core since 1999. Specifically, we investigate whether large players in the Internet content and CDN ecosystem belong to the core and, if so, since when. In addition, we examine differences between the IPv4 and IPv6 cores. We further investigate regional differences in the evolution of large content providers. Finally, we show that the core of the Internet has incorporated an increasing number of content ASes in recent years. To enable reproducibility of this work, we provide a website to allow interactive analysis of our datasets to detect, for example, &ldquo;up and coming&rdquo; ASes using customized queries.",
+    "tags": [
+        "congestion",
+        "routing",
+        "topology",
+        "measurement methodology"
+    ],
+    "caida_paper_id": "paper686",
+    "authors": [
+        {
+            "author": "author:Carisimo,_Esteban",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Selmo,_Carlos",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Alvarez-Hamelin,_J._Ignacio",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dhamdhere,_Amogh",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "Software:BGPStream",
+            "label": "used"
+        },
+        {
+            "to": "dataset:AS_Prefix",
+            "label": "used"
+        },
+        {
+            "to": "dataset:Archipelago",
+            "label": "used"
+        },
+        {
+            "to": "dataset:AS_Relationships",
+            "label": "used"
+        }
+    ]
+}

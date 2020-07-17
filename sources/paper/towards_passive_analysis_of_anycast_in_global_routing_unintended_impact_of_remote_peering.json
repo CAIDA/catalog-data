@@ -1,0 +1,52 @@
+{
+    "id": "towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
+    "name": "Towards Passive Analysis of Anycast in Global Routing: Unintended Impact of Remote Peering",
+    "datePublished": "2019.07",
+    "description": "Anycast has been widely adopted by today&rsquo;s Internet services, including DNS, CDN, and DDoS protection, in which the same IP address is announced from distributed locations and clients are directed to the topologically-nearest service replica. Prior research has focused on various aspects of anycast, either its usage in particular services such as DNS or characterizing its adoption by Internetwide active probing methods. In this paper, we first explore an alternative approach to characterize anycast based on previously collected global BGP routing information. Leveraging state-of-the-art active measurement results as near-ground-truth, our passive method without requiring any Internet-wide probes can achieve 90% accuracy in detecting anycast prefixes. More importantly, our approach uncovers anycast prefixes that have been missed by prior datasets based on active measurements. While investigating the root causes of inaccuracy, we reveal that anycast routing has been entangled with the increased adoption of remote peering, a type of layer-2 interconnection where an IP network may peer at an IXP remotely without being physically present at the IXP. The invisibility of remote peering from layer-3 breaks the assumption of the shortest AS paths on BGP and causes an unintended impact on anycast performance. We identify such cases from BGP routing information and observe that at least 19.2% of anycast prefixes have been potentially impacted by remote peering.",
+    "tags": [
+        "Remote Peering",
+        "topology",
+        "dns",
+        "Peering",
+        "Internet Routing",
+        "Anycast",
+        "routing"
+    ],
+    "caida_paper_id": "paper678",
+    "authors": [
+        {
+            "author": "author:Bian,_Rui",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Hao,_Shuai",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Wang,_Haining",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dhamdhere,_Amogh",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Dainotti,_Alberto",
+            "organization": "Unknown"
+        },
+        {
+            "author": "author:Cotton,_Chase",
+            "organization": "Unknown"
+        }
+    ],
+    "links": [
+        {
+            "to": "Software:BGPStream",
+            "label": "used"
+        },
+        {
+            "to": "dataset:Anycast_Dataset",
+            "label": "used"
+        }
+    ]
+}

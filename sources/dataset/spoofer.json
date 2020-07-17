@@ -1,0 +1,12 @@
+{
+    "id": "spoofer",
+    "name": "Spoofer",
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "links": [
+        {
+            "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+            "label": "used by"
+        }
+    ]
+}

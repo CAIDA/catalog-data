@@ -1,0 +1,18 @@
+{
+    "id": "internet_health_report",
+    "name": "Internet Health Report",
+    "organization": "IIJ Labs",
+    "description": "Measures an AS's centrality",
+    "tags": [
+        "topology"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "ihr.iijlab.net/ihr",
+            "tags": [
+                "UI"
+            ]
+        }
+    ]
+}

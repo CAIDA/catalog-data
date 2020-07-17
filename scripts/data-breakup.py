@@ -68,7 +68,7 @@ def main():
                 id_ = obj["name"]
             id_ = re_end.sub("",re_front.sub("",re_id_illegal.sub("_",id_.lower())))
 
-            obj["id"] = obj["__typename"]+":"+id_
+            obj["id"] = id_
             obj_fname = type_+"/"+id_+".json"
             print (obj_fname)
             if "__typename" in obj:

@@ -1,0 +1,48 @@
+{
+    "id": "bgpstream",
+    "name": "BGPStream",
+    "organization": "CAIDA",
+    "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
+    "tags": [
+        "topology",
+        "BGP"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://bgpstream.caida.org/docs/api",
+            "tags": [
+                "API"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Profiling_BGP_Serial_Hijackers_Capturing_Persistent_Misbehavior_in_the_Global_Routing_Table",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:BGP_hijacking_classification",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Geo-Locating_BGP_prefixes",
+            "label": "used by"
+        }
+    ]
+}

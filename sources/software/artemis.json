@@ -1,0 +1,18 @@
+{
+    "id": "artemis",
+    "name": "ARTEMIS",
+    "organization": "CAIDA",
+    "description": "Measures and analyzes passive Internet traffic monitor data.",
+    "tags": [],
+    "availability": [
+        {
+            "name": "public",
+            "url": "",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "links": []
+}

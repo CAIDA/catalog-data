@@ -1,0 +1,643 @@
+[
+    {
+        "__typename": "software",
+        "id": "software:pyasn",
+        "name": "pyasn",
+        "organization": "Hadi Asghari",
+        "description": "pyasn is a Python extension module that enables very fast IP address to Autonomous System Number lookups.",
+        "tags": [
+            "IPv4 adddress",
+            "ASN"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://pypi.org/project/pyasn/",
+                "tags": [
+                    "CODE"
+                ]
+            }
+        ],
+        "licenses": [
+            "software:pyasn"
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:PeeringDB",
+        "name": "PeeringDB",
+        "description": "PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions.<br>The database is a non-profit, community-driven initiative run and promoted by volunteers. It is a public tool for the growth and good of the Internet. Join the community and support the continued development of the Internet.",
+        "tags": [
+            "IXP",
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.peeringdb.com/",
+                "tags": [
+                    "UI"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:U.S._National_Weather_Serice_Severe_Weather_Alert",
+        "name": "U.S. National Weather Serice:Severe Weather Alert",
+        "description": "A powerful weather system combined with a lack of ice on the Great Lakes will produce significant amounts of snow, up to 3 to 4 feet in places, and blizzard conditions. Travel may be difficult to impossible. Cold air behind this front will bring below normal temperatures to the eastern third of the U.S., including potential for freezing overnight temperatures in Florida.",
+        "tags": [
+            "weather"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.weather.gov/alerts",
+                "tags": [
+                    "API"
+                ]
+            }
+        ],
+        "links": [
+            {
+                "to": "Paper:Residential_Links_Under_the_Weather",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:AS_Rank",
+        "name": "AS Rank",
+        "organization": "CAIDA",
+        "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
+        "tags": [
+            "topology",
+            "geolocation"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "asrank.caida.org/api",
+                "tags": [
+                    "API"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "software:AS_Rank"
+            },
+            {
+                "to": "Dataset:AS_Rank"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:Netacuity",
+        "name": "Netacuity",
+        "organization": "Digital Elements",
+        "description": "IP Geolocation Service",
+        "tags": [
+            "geolocation",
+            "geographic"
+        ],
+        "availability": [
+            {
+                "name": "commercial",
+                "url": "www.digitalelement.com/solutions",
+                "tags": [
+                    "WEB"
+                ]
+            }
+        ],
+        "licenses": [
+            "License:Netacuity"
+        ],
+        "links": [
+            {
+                "to": "Paper:At_Home_and_Abroad_The_Use_of_Denial-of-service_Attacks_during_Elections_in_Nondemocratic_Regimes",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:AS_Relationship",
+        "name": "AS Relationship",
+        "organization": "CAIDA",
+        "description": "Measures an AS's centrality",
+        "tags": [
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "ihr.iijlab.net/ihr",
+                "tags": [
+                    "UI"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:Internet_Health_Report",
+        "name": "Internet Health Report",
+        "organization": "IIJ Labs",
+        "description": "Measures an AS's centrality",
+        "tags": [
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "ihr.iijlab.net/ihr",
+                "tags": [
+                    "UI"
+                ]
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:BGPStream",
+        "name": "BGPStream",
+        "organization": "CAIDA",
+        "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
+        "tags": [
+            "topology",
+            "BGP"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://bgpstream.caida.org/docs/api",
+                "tags": [
+                    "API"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Profiling_BGP_Serial_Hijackers_Capturing_Persistent_Misbehavior_in_the_Global_Routing_Table",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:BGP_hijacking_classification",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Geo-Locating_BGP_prefixes",
+                "label": "used by"
+            },
+            {
+
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:HI-CUBE",
+        "name": "HI-CUBE",
+        "organization": "CAIDA",
+        "description": "HI-CUBE is a web-based prototype platform for processing, storing, investigating, and correlating diverse streams of large-scale Internet security-related data.",
+        "tags": [
+            "security"
+        ],
+        "availability": [
+            {
+                "name": "restricted",
+                "url": "https://hicube.caida.org",
+                "tags": [
+                    "UI"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:IODA",
+        "name": "IODA",
+        "organization": "CAIDA",
+        "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
+        "tags": [
+            "security",
+            "darknet",
+            "outages"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://ioda.caida.org",
+                "tags": [
+                    "UI"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:MANIC",
+        "name": "MANIC",
+        "organization": "CAIDA",
+        "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
+        "tags": [
+            "congestion",
+            "interdomain links",
+            "IP links"
+        ],
+        "availability": [
+            {
+                "name": "restricted",
+                "url": "https://api.manic.caida.org/v1/",
+                "tags": [
+                    "API"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:BSD-4-Clause-UC"
+        ],
+        "links": [
+            {
+                "to": "software:MANIC"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software: Periscope",
+        "name": "Periscope",
+        "organization": "",
+        "description": "Periscope is a unified interface to public looking glass servers.",
+        "tags": [
+            "BGP"
+        ],
+        "availability": [
+            {
+                "name": "upcoming", 
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "links": []
+
+    },
+
+    {
+        "__typename": "software",
+        "id": "software:Vela",
+        "name": "Vela",
+        "organization": "CAIDA",
+        "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
+        "tags": [
+
+        ],
+        "availability": [
+            {
+                "name": "restricted",
+                "url": "https://www.caida.org/projects/ark/vela/web-api/",
+                "tags": [
+                    "API"
+                ]
+            }
+
+        ],
+        "licenses": [],
+        "links": []
+
+    },
+    {
+        "__typename": "software",
+        "id": "software:ARTEMIS",
+        "name": "ARTEMIS",
+        "organization": "CAIDA",
+        "description": "Measures and analyzes passive Internet traffic monitor data.",
+        "tags": [
+
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+
+        ],
+        "licenses": [
+            "license:BSD 3-Clause License"
+        ],
+        "links": []
+
+    },
+    {
+        "__typename": "software",
+        "id": "software:CoralReef",
+        "name": "CoralReef",
+        "organization": "CAIDA",
+        "description": "Measures and analyzes passive Internet traffic monitor data.",
+        "tags": [
+
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/coralreef/",
+                "tags": []
+            }
+
+        ],
+        "licenses": [
+            "license:UCSD Academic Non-Commercial License"
+        ],
+        "links": []
+
+    },
+    {
+        "__typename": "software",
+        "id": "software:Corsaro",
+        "name": "Corsaro",
+        "organization": "CAIDA",
+        "description": "Extensible framework for large-scale analysis of passive trace data.",
+        "tags": [
+
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/coralreef/",
+                "tags": []
+            }
+
+        ],
+        "licenses": [
+            "license:UCSD Academic Non-Commercial License"
+        ],
+        "links": []
+
+    },
+    {
+        "__typename": "software",
+        "id": "software:iffinder",
+        "name": "iffinder",
+        "organization": "CAIDA",
+        "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
+        "tags": [
+        ],
+        "availability": [
+            {
+                "name": "",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [],
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:kapar",
+        "name": "kapar",
+        "organization": "CAIDA",
+        "description": "Graph-based IP alias resolution.",
+        "tags": [
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:libtimeseries",
+        "name": "libtimeseries",
+        "organization": "CAIDA",
+        "description": "C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
+        "tags": [
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:BSD 2-Clause"
+        ],
+        "links": []
+    },
+    {
+        "__typename": "software",
+        "id": "software:MIDAR",
+        "name": "MIDAR",
+        "organization": "CAIDA",
+        "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
+        "tags": [
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Internet_Topology_Data_Kit",
+                "label": "used by"
+            }
+
+
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:Motu",
+        "name": "Motu",
+        "organization": "CAIDA",
+        "description": "Dealiases pairs of IPv4 addresses.",
+        "tags": [
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": []
+    },
+    {
+        "__typename": "software",
+        "id": "software:scamper",
+        "name": "scamper",
+        "organization": "CAIDA",
+        "description": "IPv6 and IPv4 active traceroute probing and ping.",
+        "tags": [
+            "topology"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+        ],
+        "links": [
+            {
+                "to": "Macroscopic_Topology_Measurements",
+                "label": "used by"
+            },
+            {
+                "to": "The_IPv4_Routed_24_Topology_Dataset",
+                "label": "used by"
+            }
+
+        ]
+    },
+    {
+        "__typename": "software",
+        "id": "software:Spoofer",
+        "name": "Spoofer",
+        "organization": "CAIDA",
+        "description": "Source address validation measurement program that measures susceptibility to spoofed source address IP packets.",
+        "tags": [
+            "security"
+        ],
+        "availability": [
+            {
+                "name": "public",
+                "url": "",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:GNU GENERAL PUBLIC LICENSE Version 3"
+        ],
+        "links": [            
+            {
+                "to": "Paper:Network_Hygiene_Incentives_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Using_Crowdsourcing_Marketplaces_for_Network_Measurements_The_Case_of_Spoofer",
+                "label": "used by"
+            },
+            {
+                "to": "Paper:Using_Loops_Observed_in_Traceroute_to_Infer_the_Ability_to_Spoof",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:ACM_Computer_and_Communications_Security_(CCS)",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_R&D_showcase",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:One_Conference",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:NZNOG",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:NANOG",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:SSAC",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:AusNGO",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_R&D_showcase",
+                "label": "used by"
+            },
+            {
+                "to": "Presentation:DHS_S&T_DDoS_Defense_meeting",
+                "label": "used by"
+            }
+        ]
+    }
+]

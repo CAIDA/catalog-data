@@ -27,6 +27,14 @@
             "from": "tag:security",
             "to": "dataset:caida_ioda"
         },
+        "group:asrank": {
+            "from": "tag:security",
+            "to": "group:asrank"
+        },
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "tag:security",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
         "paper:at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
             "from": "tag:security",
             "to": "paper:at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
@@ -42,10 +50,6 @@
         "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
             "from": "tag:security",
             "to": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
-        },
-        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "tag:security",
-            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
         },
         "software:hi_cube": {
             "from": "tag:security",
@@ -77,13 +81,13 @@
             "from": "tag:topology",
             "to": "dataset:as_prefix"
         },
-        "dataset:as_rank": {
-            "from": "tag:topology",
-            "to": "dataset:as_rank"
-        },
         "dataset:as_relationships": {
             "from": "tag:topology",
             "to": "dataset:as_relationships"
+        },
+        "dataset:as_rank": {
+            "from": "tag:topology",
+            "to": "dataset:as_rank"
         },
         "dataset:bgp_communities": {
             "from": "tag:topology",
@@ -100,6 +104,18 @@
         "dataset:itdk": {
             "from": "tag:topology",
             "to": "dataset:itdk"
+        },
+        "group:asrank": {
+            "from": "tag:topology",
+            "to": "group:asrank"
+        },
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "tag:topology",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
+        "paper:asrank": {
+            "from": "tag:topology",
+            "to": "paper:asrank"
         },
         "paper:bgp_hijacking_classification": {
             "from": "tag:topology",
@@ -129,17 +145,17 @@
             "from": "tag:topology",
             "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         },
-        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "software:as_relationship": {
             "from": "tag:topology",
-            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+            "to": "software:as_relationship"
         },
         "software:as_rank": {
             "from": "tag:topology",
             "to": "software:as_rank"
         },
-        "software:as_relationship": {
+        "software:asrank_ui": {
             "from": "tag:topology",
-            "to": "software:as_relationship"
+            "to": "software:asrank_ui"
         },
         "software:bgpstream": {
             "from": "tag:topology",
@@ -322,9 +338,9 @@
             "to": "dataset:spoofer",
             "label": "used by"
         },
-        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
         }
     },
     "paper:stable_and_practical_as_relationship_inference_with_problink": {
@@ -484,6 +500,17 @@
             "to": "tag:routing"
         }
     },
+    "dataset:as_relationships": {
+        "tag:topology": {
+            "from": "dataset:as_relationships",
+            "to": "tag:topology"
+        },
+        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
+            "from": "dataset:as_relationships",
+            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "label": "used by"
+        }
+    },
     "dataset:as_rank": {
         "tag:topology": {
             "from": "dataset:as_rank",
@@ -500,6 +527,10 @@
         "dataset:as_rank": {
             "from": "dataset:as_rank",
             "to": "dataset:as_rank"
+        },
+        "group:asrank": {
+            "from": "dataset:as_rank",
+            "to": "group:asrank"
         }
     },
     "tag:geolocation": {
@@ -518,6 +549,10 @@
         "software:as_rank": {
             "from": "tag:geolocation",
             "to": "software:as_rank"
+        },
+        "software:asrank_ui": {
+            "from": "tag:geolocation",
+            "to": "software:asrank_ui"
         },
         "software:netacuity": {
             "from": "tag:geolocation",
@@ -540,17 +575,6 @@
         "software:as_rank": {
             "from": "software:as_rank",
             "to": "software:as_rank"
-        }
-    },
-    "dataset:as_relationships": {
-        "tag:topology": {
-            "from": "dataset:as_relationships",
-            "to": "tag:topology"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_relationships",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used by"
         }
     },
     "dataset:bgp_communities": {
@@ -1027,10 +1051,169 @@
             "label": "used"
         }
     },
+    "group:asrank": {
+        "tag:topology": {
+            "from": "group:asrank",
+            "to": "tag:topology"
+        },
+        "tag:security": {
+            "from": "group:asrank",
+            "to": "tag:security"
+        },
+        "tag:software/tools": {
+            "from": "group:asrank",
+            "to": "tag:software/tools"
+        },
+        "dataset:as_rank": {
+            "from": "group:asrank",
+            "to": "dataset:as_rank"
+        },
+        "paper:asrank": {
+            "from": "group:asrank",
+            "to": "paper:asrank"
+        },
+        "media:asrank": {
+            "from": "group:asrank",
+            "to": "media:asrank"
+        },
+        "solution:how_to_find_an_asns_customer_cone": {
+            "from": "group:asrank",
+            "to": "solution:how_to_find_an_asns_customer_cone"
+        }
+    },
+    "tag:software/tools": {
+        "group:asrank": {
+            "from": "tag:software/tools",
+            "to": "group:asrank"
+        },
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "tag:software/tools",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
+        "paper:learning_regexes_to_extract_router_names_from_hostnames": {
+            "from": "tag:software/tools",
+            "to": "paper:learning_regexes_to_extract_router_names_from_hostnames"
+        }
+    },
+    "paper:asrank": {
+        "group:asrank": {
+            "from": "paper:asrank",
+            "to": "group:asrank"
+        },
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "paper:asrank",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
+        "tag:data": {
+            "from": "paper:asrank",
+            "to": "tag:data"
+        },
+        "tag:asn": {
+            "from": "paper:asrank",
+            "to": "tag:asn"
+        },
+        "tag:as_rank": {
+            "from": "paper:asrank",
+            "to": "tag:as_rank"
+        },
+        "tag:topology": {
+            "from": "paper:asrank",
+            "to": "tag:topology"
+        },
+        "dataset:asrank": {
+            "from": "paper:asrank",
+            "to": "dataset:asrank",
+            "label": "defines"
+        },
+        "media:asrank": {
+            "from": "paper:asrank",
+            "to": "media:asrank"
+        }
+    },
+    "media:asrank": {
+        "group:asrank": {
+            "from": "media:asrank",
+            "to": "group:asrank"
+        },
+        "paper:asrank": {
+            "from": "media:asrank",
+            "to": "paper:asrank"
+        }
+    },
+    "solution:how_to_find_an_asns_customer_cone": {
+        "group:asrank": {
+            "from": "solution:how_to_find_an_asns_customer_cone",
+            "to": "group:asrank"
+        }
+    },
+    "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "tag:measurement_methodology": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "tag:topology"
+        },
+        "tag:security": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "tag:security"
+        },
+        "tag:software/tools": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "tag:software/tools"
+        },
+        "paper:asrank": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "paper:asrank"
+        },
+        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        }
+    },
+    "tag:measurement_methodology": {
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "tag:measurement_methodology",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
+        "paper:geo_locating_bgp_prefixes": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:geo_locating_bgp_prefixes"
+        },
+        "paper:how_to_find_correlated_internet_failures": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:how_to_find_correlated_internet_failures"
+        },
+        "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
+        },
+        "paper:learning_regexes_to_extract_router_names_from_hostnames": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:learning_regexes_to_extract_router_names_from_hostnames"
+        },
+        "paper:residential_links_under_the_weather": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:residential_links_under_the_weather"
+        },
+        "paper:stable_and_practical_as_relationship_inference_with_problink": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:stable_and_practical_as_relationship_inference_with_problink"
+        },
+        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
+        }
+    },
     "tag:data": {
         "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
             "from": "tag:data",
             "to": "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
+        },
+        "paper:asrank": {
+            "from": "tag:data",
+            "to": "paper:asrank"
         },
         "paper:residential_links_under_the_weather": {
             "from": "tag:data",
@@ -1061,6 +1244,33 @@
         "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
             "from": "tag:qoe",
             "to": "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
+        }
+    },
+    "tag:asn": {
+        "paper:asrank": {
+            "from": "tag:asn",
+            "to": "paper:asrank"
+        },
+        "software:pyasn": {
+            "from": "tag:asn",
+            "to": "software:pyasn"
+        }
+    },
+    "tag:as_rank": {
+        "paper:asrank": {
+            "from": "tag:as_rank",
+            "to": "paper:asrank"
+        }
+    },
+    "dataset:asrank": {
+        "paper:asrank": {
+            "from": "dataset:asrank",
+            "to": "paper:asrank",
+            "label": "defines"
+        },
+        "software:asrank_ui": {
+            "from": "dataset:asrank",
+            "to": "software:asrank_ui"
         }
     },
     "paper:at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
@@ -1258,40 +1468,6 @@
             "label": "used"
         }
     },
-    "tag:measurement_methodology": {
-        "paper:geo_locating_bgp_prefixes": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:geo_locating_bgp_prefixes"
-        },
-        "paper:how_to_find_correlated_internet_failures": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:how_to_find_correlated_internet_failures"
-        },
-        "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
-        },
-        "paper:learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:learning_regexes_to_extract_router_names_from_hostnames"
-        },
-        "paper:residential_links_under_the_weather": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:residential_links_under_the_weather"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
-        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "tag:measurement_methodology",
-            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        }
-    },
     "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
         "tag:measurement_methodology": {
             "from": "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
@@ -1314,16 +1490,6 @@
             "from": "paper:hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
             "to": "dataset:caida_internet_traffic",
             "label": "used"
-        }
-    },
-    "tag:software/tools": {
-        "paper:learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:software/tools",
-            "to": "paper:learning_regexes_to_extract_router_names_from_hostnames"
-        },
-        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "tag:software/tools",
-            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
         }
     },
     "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
@@ -1432,32 +1598,34 @@
             "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         }
     },
-    "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-        "tag:measurement_methodology": {
-            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "tag:topology"
-        },
-        "tag:security": {
-            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "tag:security"
-        },
-        "tag:software/tools": {
-            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "tag:software/tools"
-        },
-        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        }
-    },
     "software:as_relationship": {
         "tag:topology": {
             "from": "software:as_relationship",
             "to": "tag:topology"
+        }
+    },
+    "software:asrank_ui": {
+        "tag:topology": {
+            "from": "software:asrank_ui",
+            "to": "tag:topology"
+        },
+        "tag:geolocation": {
+            "from": "software:asrank_ui",
+            "to": "tag:geolocation"
+        },
+        "software:asrank_api": {
+            "from": "software:asrank_ui",
+            "to": "software:asrank_api"
+        },
+        "dataset:asrank": {
+            "from": "software:asrank_ui",
+            "to": "dataset:asrank"
+        }
+    },
+    "software:asrank_api": {
+        "software:asrank_ui": {
+            "from": "software:asrank_api",
+            "to": "software:asrank_ui"
         }
     },
     "software:hi_cube": {
@@ -1573,12 +1741,6 @@
     "tag:ipv4_adddress": {
         "software:pyasn": {
             "from": "tag:ipv4_adddress",
-            "to": "software:pyasn"
-        }
-    },
-    "tag:asn": {
-        "software:pyasn": {
-            "from": "tag:asn",
             "to": "software:pyasn"
         }
     },

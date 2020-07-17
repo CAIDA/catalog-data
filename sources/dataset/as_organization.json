@@ -1,0 +1,38 @@
+{
+    "id": "as_organization",
+    "name": "AS Organization",
+    "organization": "CAIDA",
+    "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
+    "tags": [
+        "topology",
+        "ownership"
+    ],
+    "dateStart": "2007.02",
+    "status": "ongoing",
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/as-organizations/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to": "Paper:Network_Hygiene,_Incentives,_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+            "label": "used by"
+        },
+        {
+            "to": "Paper:BGP_hijacking_classification",
+            "label": "used by"
+        }
+    ]
+}

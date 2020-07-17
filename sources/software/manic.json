@@ -1,0 +1,28 @@
+{
+    "id": "manic",
+    "name": "MANIC",
+    "organization": "CAIDA",
+    "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
+    "tags": [
+        "congestion",
+        "interdomain links",
+        "IP links"
+    ],
+    "availability": [
+        {
+            "name": "restricted",
+            "url": "https://api.manic.caida.org/v1/",
+            "tags": [
+                "API"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "software:MANIC"
+        }
+    ]
+}

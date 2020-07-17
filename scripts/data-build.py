@@ -75,6 +75,22 @@ id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_score_id_file = "word_score_id.json"
 
+
+# valid object types
+object_types = set([
+    "dataset",
+    "solution",
+    "license",
+    "author",
+    "paper",
+    "presentation",
+    "venue",
+    "software",
+    "media",
+    "group"
+])
+
+
 # Weights used to create word scoring for search
 weight_default = 1
 key_weight = {
@@ -127,28 +143,19 @@ def main():
 
     #######################
     #######################
-    fname_type = {
-        "datasets":"dataset",
-        "licenses":"license",
-        "authors":"author",
-        "papers":"paper",
-        "presentations":"presentation",
-        "venues":"venue",
-        "softwares":"software"
-    }
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
-        if fname in fname_type:
+        if fname == "solutions":
+            solutions_process(path)
+        elif fname in object_types:
             print ("loading",path)
-            type_ = fname_type[fname]
+            type_ = fname
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
                     print ("   ",path+"/"+filename)
                     info = json.load(open(path+"/"+filename))
                     info["__typename"] = type_.lower()
                     object_lookup(info)
-        elif fname == "solutions":
-            solutions_process(path)
 
     #######################
     # Check that the objects are valid
@@ -329,6 +336,7 @@ def object_lookup_id(id_):
 
 
 def object_lookup(info):
+    type_ = info["__typename"] = info["__typename"].lower()
     if "id" not in info:
         if "name" in info and "__typename" in info:
             id_ = info["__typename"]+":"+re_id_illegal.sub("_",info["name"])
@@ -336,12 +344,13 @@ def object_lookup(info):
         else:
             print ("no id or name,_typename",info)
             sys.exit()
-
+    else:
+        if not re.search("^"+type_,info["id"]):
+            info["id"] = info["__typename"]+":"+info["id"]
     id_ = info["id"] = info["id"].lower()
     if id_ not in id_object:
-        id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"].capitalize()}
+        id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"]}
     obj  = id_object[id_]
-    obj["__typename"] = info["__typename"].capitalize()
 
     object_types = set(["datasets","licenses","softwares","solutions","papers","publications"])
     for key in info.keys():
@@ -541,7 +550,7 @@ def author_checker(author):
             name = author["id"]
         name = re.sub("[^:]:","",name)
         print (name)
-        name_last, name_first = name.split(",_")
+        name_last, name_first = name.split("_")
         author["nameFirst"] = name_first
         author["nameLast"] = name_last
     return None

@@ -1,0 +1,22 @@
+{
+    "id": "pyasn",
+    "name": "pyasn",
+    "organization": "Hadi Asghari",
+    "description": "pyasn is a Python extension module that enables very fast IP address to Autonomous System Number lookups.",
+    "tags": [
+        "IPv4 adddress",
+        "ASN"
+    ],
+    "availability": [
+        {
+            "name": "public",
+            "url": "https://pypi.org/project/pyasn/",
+            "tags": [
+                "CODE"
+            ]
+        }
+    ],
+    "licenses": [
+        "software:pyasn"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": "mawi_internet_traffic",
+    "name": "MAWI Internet Traffic",
+    "links": [
+        {
+            "to": "Paper:Hypersparse_Neural_Network_Analysis_of_Large-Scale_Internet_Traffic",
+            "label": "used by"
+        }
+    ]
+}
