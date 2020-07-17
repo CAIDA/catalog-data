@@ -1,40 +1,24 @@
-## PANDA Metadata
-We will be creating topics and solutions for PANDA.  A individual topic/solution should be useful on it's own. If it can not be understood without a greater context, it should be kept as part of a single page with that context. That said, when possible, it is better to break up a larger context into stand alone pieces and link against those pieces. Please review your current work and consider a topic and solution, or two, that you could contibute. 
-
-process:
-- create an issue with the topic title or question as it's title: [here](https://github.com/CAIDA/panda-metadata/issues)
-   - assign the issue to yourself
-- create a subdirectory with the same title/question with a README.md
-   - start with metadata:
-   ~~~
-   {
-       "question": "How to find the AS path for a IPv4 address with Python?",
-       "datasets": [
-               "dataset":"BGPStream",
-            "joins":[
-                   ["AS Path IPv4","Prefix IPv4"]
-            ]
-          ]
-      ],
-      "topics": [
-          "measurement methodology",
-          "topology",
-          "software/tools"
-      ]
-   }
-   ~~~
-   - fill in the context of the solution or topic
-- put any relavate files (scripts/config/etc) in this subdirectory
-
-example: [How do you map an IPv4 address to a ASN path in Python?](How%20do%20you%20map%20an%20IPv4%20address%20to%20a%20ASN%20path%20in%20Python%3F)
+## Catalog Data
+This contains the source JSON files used to build the catalog's databases.
+The source JSON files are found in the source directory.  These are combined 
+to build id_id_link.json, id_object.json, and word_score_id.json. 
 
 
-### Possible Topics:
+## Build the compiled data
+If you have updated the source files.  You will need to recompile the catalog json files, commit
+the updated data files, and then push to the server.  If you want to make it public, you will need
+to merge those files into v1. 
+~~~
+python3 scripts/data-build.py
+git commit -a 
+git push
+~~~
+
+### Possible Solutions:
 - Introduction to PANDA
 - Introductino to Internet Data
 
 ### Possible questions:
-- How do I calculate the customer cone size of an ASN?
 - What is the current packet size distribution? 
 - How many IP addresses are allocated to Africa? 
 - How do I download a json representing the values in asran.caida.org/asns?
