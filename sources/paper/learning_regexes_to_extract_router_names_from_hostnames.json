@@ -1,5 +1,5 @@
 {
-    "id": "learning_regexes_to_extract_router_names_from_hostnames",
+    "id": "2019_learning_regexes_to_extract_router_names_from_hostnames",
     "name": "Learning Regexes to Extract Router Names from Hostnames",
     "datePublished": "2019.10",
     "description": "We present the design, implementation, evaluation, and validation of a system that automatically learns to extract router names (router identifiers) from hostnames stored by network operators in different DNS zones, which we represent by regular expressions (regexes). Our supervised-learning approach evaluates automatically generated candidate regexes against sets of hostnames for IP addresses that other alias resolution techniques previously inferred to identify interfaces on the same router. Conceptually, if three conditions hold: (1) a regex extracts the same value from a set of hostnames associated with IP addresses on the same router; (2) the value is unique to that router; and (3) the regex extracts names for multiple routers in the suffix, then we conclude the regex accurately represents the naming convention for the suffix. We train our system using router aliases inferred from active probing to learn regexes for 2550 different suffixes.",
@@ -9,17 +9,17 @@
         "software/tools"
     ],
     "caida_paper_id": "paper689",
-    "authors": [
+    "persons": [
         {
-            "author": "author:Luckie,_Matthew",
+            "person": "person:Luckie,_Matthew",
             "organization": "Unknown"
         },
         {
-            "author": "author:Huffaker,_Bradley",
+            "person": "person:Huffaker,_Bradley",
             "organization": "Unknown"
         },
         {
-            "author": "author:claffy,_kc",
+            "person": "person:claffy,_kc",
             "organization": "Unknown"
         }
     ],

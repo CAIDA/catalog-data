@@ -1,5 +1,5 @@
 {
-    "id": "bgp_hijacking_classification",
+    "id": "2019_bgp_hijacking_classification",
     "name": "BGP hijacking classification",
     "datePublished": "2019.06",
     "description": "Recent reports show that BGP hijacking has increased substantially. BGP hijacking allows malicious ASes to obtain IP prefixes for spamming as well as intercepting or blackholing traffic. While systems to prevent hijacks are hard to deploy and require the cooperation of many other organizations, techniques to detect hijacks have been a popular area of study. In this paper, we classify detected hijack events in order to document BGP detectors output and understand the nature of reported events. We introduce four categories of BGP hijack: typos, prepending mistakes, origin changes, and forged AS paths. We leverage AS hegemony &ndash; a measure of dependency in AS relationship &ndash; to identify forged AS paths in a fast and efficient way. Besides, we utilize heuristic approaches to find common operators&rsquo; mistakes such as typos and AS prepending mistakes. The proposed approach classifies our collected ground truth into four categories with 95.71% accuracy. We characterize publicly reported alarms (e.g. BGPMon) with our trained classifier and find 4%, 1%, and 2% of typos, prepend mistakes, and BGP hijacking with a forged AS path, respectively.",
@@ -9,25 +9,25 @@
         "routing"
     ],
     "caida_paper_id": "paper677",
-    "authors": [
+    "persons": [
         {
-            "author": "author:Cho,_Shinyoung",
+            "person": "person:Cho,_Shinyoung",
             "organization": "Unknown"
         },
         {
-            "author": "author:Fontugne,_Romain",
+            "person": "person:Fontugne,_Romain",
             "organization": "Unknown"
         },
         {
-            "author": "author:Cho,_Kenjiro",
+            "person": "person:Cho,_Kenjiro",
             "organization": "Unknown"
         },
         {
-            "author": "author:Dainotti,_Alberto",
+            "person": "person:Dainotti,_Alberto",
             "organization": "Unknown"
         },
         {
-            "author": "author:Gill,_Phillipa",
+            "person": "person:Gill,_Phillipa",
             "organization": "Unknown"
         }
     ],

@@ -81,7 +81,7 @@ object_types = set([
     "dataset",
     "solution",
     "license",
-    "author",
+    "person",
     "paper",
     "presentation",
     "venue",
@@ -161,7 +161,7 @@ def main():
     # Check that the objects are valid
     #######################
     type_checker = {
-        "Author":author_checker,
+        "Author":person_checker,
 
         "Dataset":object_checker,
         "Software":object_checker,
@@ -380,27 +380,27 @@ def object_lookup(info):
                     venue_add_date_url(obj,date_url["name"],date_url["url"])
 
             else:
-                if key == "authors" or key == "venues" or key == "presenters":
+                if key == "persons" or key == "venues" or key == "presenters":
                     obj[key] = info[key]
-                    for author_org in obj[key]:
-                        for k in ["author","presenter"]:
-                            if k in author_org:
-                                id_ = author_org[k]
-                                author = object_lookup_id(id_)
-                                if "name" not in author:
-                                    author["name"] = id_
-                                author_org[k] = author["id"]
-                        if "venue" in author_org:
-                            venue = object_lookup_id(author_org["venue"])
-                            venue["_name"] = author_org["venue"]
-                            if "date" in author_org:
-                                date = author_org["date"]
-                                if "url" in author_org:
-                                    url = author_org["url"]
+                    for person_org in obj[key]:
+                        for k in ["person","presenter"]:
+                            if k in person_org:
+                                id_ = person_org[k]
+                                person = object_lookup_id(id_)
+                                if "name" not in person:
+                                    person["name"] = id_
+                                person_org[k] = person["id"]
+                        if "venue" in person_org:
+                            venue = object_lookup_id(person_org["venue"])
+                            venue["_name"] = person_org["venue"]
+                            if "date" in person_org:
+                                date = person_org["date"]
+                                if "url" in person_org:
+                                    url = person_org["url"]
                                 else:
                                     url = ""
                                 venue_add_date_url(venue,date,url)
-                            author_org["venue"] = venue["id"]
+                            person_org["venue"] = venue["id"]
                 else:
                     obj[key] = tag_convert(info[key])
                            
@@ -542,17 +542,17 @@ def solutions_process(path):
 
 #############################
 
-def author_checker(author):
-    if "nameFirst" not in author or "nameLast" not in author:
-        if "name" in author:
-            name = author["name"]
+def person_checker(person):
+    if "nameFirst" not in person or "nameLast" not in person:
+        if "name" in person:
+            name = person["name"]
         else:
-            name = author["id"]
+            name = person["id"]
         name = re.sub("[^:]:","",name)
         print (name)
         name_last, name_first = name.split("_")
-        author["nameFirst"] = name_first
-        author["nameLast"] = name_last
+        person["nameFirst"] = name_first
+        person["nameLast"] = name_last
     return None
 
 def object_checker(obj):
