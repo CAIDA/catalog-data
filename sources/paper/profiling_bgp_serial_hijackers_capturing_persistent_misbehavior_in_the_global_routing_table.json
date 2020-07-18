@@ -9,25 +9,25 @@
         "routing"
     ],
     "caida_paper_id": "paper690",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Testart,_Cecilia",
+            "person": "person:Testart_Cecilia",
             "organization": "Unknown"
         },
         {
-            "person": "person:Richter,_Philipp",
+            "person": "person:Richter_Philipp",
             "organization": "Unknown"
         },
         {
-            "person": "person:King,_Alistair",
+            "person": "person:King_Alistair",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         },
         {
-            "person": "person:Clark,_David",
+            "person": "person:Clark_David",
             "organization": "Unknown"
         }
     ],

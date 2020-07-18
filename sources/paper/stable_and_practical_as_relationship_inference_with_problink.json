@@ -10,29 +10,29 @@
         "economics"
     ],
     "caida_paper_id": "paper671",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Jin,_Yuchen",
+            "person": "person:Jin_Yuchen",
             "organization": "Unknown"
         },
         {
-            "person": "person:Scott,_Colin",
+            "person": "person:Scott_Colin",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dhamdhere,_Amogh",
+            "person": "person:Dhamdhere_Amogh",
             "organization": "Unknown"
         },
         {
-            "person": "person:Giotsas,_Vasileios",
+            "person": "person:Giotsas_Vasileios",
             "organization": "Unknown"
         },
         {
-            "person": "person:Krishnamurthy,_Arvind",
+            "person": "person:Krishnamurthy_Arvind",
             "organization": "Unknown"
         },
         {
-            "person": "person:Shenker,_Scott",
+            "person": "person:Shenker_Scott",
             "organization": "Unknown"
         }
     ],

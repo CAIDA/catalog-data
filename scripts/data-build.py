@@ -83,7 +83,6 @@ object_types = set([
     "license",
     "person",
     "paper",
-    "presentation",
     "venue",
     "software",
     "media",
@@ -161,12 +160,12 @@ def main():
     # Check that the objects are valid
     #######################
     type_checker = {
-        "Author":person_checker,
+        "person":person_checker,
 
-        "Dataset":object_checker,
-        "Software":object_checker,
-        "Paper":object_checker,
-        "Presentation":object_checker
+        "dataset":object_checker,
+        "software":object_checker,
+        "paper":object_checker,
+        "media":object_checker
     }
 
     id_failed = []
@@ -234,7 +233,7 @@ def main():
     for obj in id_object.values():
         type_ = obj["__typename"]
         key = "------"
-        if type_ == "presentation" and "venue" in obj:
+        if type_ == "media" and "venue" in obj:
             date = None
             for venue in obj["venue"]:
                 if date is None or venue["date"] > date:
@@ -380,7 +379,7 @@ def object_lookup(info):
                     venue_add_date_url(obj,date_url["name"],date_url["url"])
 
             else:
-                if key == "persons" or key == "venues" or key == "presenters":
+                if key == "persons" or key == "venues" or key == "presenters" or key == "authors":
                     obj[key] = info[key]
                     for person_org in obj[key]:
                         for k in ["person","presenter"]:
@@ -550,7 +549,7 @@ def person_checker(person):
             name = person["id"]
         name = re.sub("[^:]:","",name)
         print (name)
-        name_last, name_first = name.split("_")
+        name_last, name_first = re.search("([^_]+)_(.+)",name).groups()
         person["nameFirst"] = name_first
         person["nameLast"] = name_last
     return None

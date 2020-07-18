@@ -9,25 +9,25 @@
         "measurement methodology"
     ],
     "caida_paper_id": "paper670",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Padmanabhan,_Ramakrishna",
+            "person": "person:Padmanabhan_Ramakrishna",
             "organization": "Unknown"
         },
         {
-            "person": "person:Schulman,_Aaron",
+            "person": "person:Schulman_Aaron",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         },
         {
-            "person": "person:Levin,_Dave",
+            "person": "person:Levin_Dave",
             "organization": "Unknown"
         },
         {
-            "person": "person:Spring,_Neil",
+            "person": "person:Spring_Neil",
             "organization": "Unknown"
         }
     ],

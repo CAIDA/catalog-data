@@ -13,29 +13,29 @@
         "cyberattacks"
     ],
     "caida_paper_id": "paper679",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Lutscher,_Philipp_M.",
+            "person": "person:Lutscher_Philipp_M.",
             "organization": "Unknown"
         },
         {
-            "person": "person:Weidmann,_Nils_B.",
+            "person": "person:Weidmann_Nils_B.",
             "organization": "Unknown"
         },
         {
-            "person": "person:Roberts,_Margaret_E.",
+            "person": "person:Roberts_Margaret_E.",
             "organization": "Unknown"
         },
         {
-            "person": "person:Jonker,_Mattijs",
+            "person": "person:Jonker_Mattijs",
             "organization": "Unknown"
         },
         {
-            "person": "person:King,_Alistair",
+            "person": "person:King_Alistair",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         }
     ],

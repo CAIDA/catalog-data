@@ -10,21 +10,21 @@
         "measurement methodology"
     ],
     "caida_paper_id": "paper686",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Carisimo,_Esteban",
+            "person": "person:Carisimo_Esteban",
             "organization": "Unknown"
         },
         {
-            "person": "person:Selmo,_Carlos",
+            "person": "person:Selmo_Carlos",
             "organization": "Unknown"
         },
         {
-            "person": "person:Alvarez-Hamelin,_J._Ignacio",
+            "person": "person:Alvarez-Hamelin_J._Ignacio",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dhamdhere,_Amogh",
+            "person": "person:Dhamdhere_Amogh",
             "organization": "Unknown"
         }
     ],

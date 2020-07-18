@@ -8,29 +8,29 @@
         "routing"
     ],
     "caida_paper_id": "paper669",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Holterbach,_Thomas",
+            "person": "person:Holterbach_Thomas",
             "organization": "Unknown"
         },
         {
-            "person": "person:Molero,_Edgar_Costa",
+            "person": "person:Molero_Edgar_Costa",
             "organization": "Unknown"
         },
         {
-            "person": "person:Apostolaki,_Maria",
+            "person": "person:Apostolaki_Maria",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         },
         {
-            "person": "person:Vissicchio,_Stefano",
+            "person": "person:Vissicchio_Stefano",
             "organization": "Unknown"
         },
         {
-            "person": "person:Vanbever,_Laurent",
+            "person": "person:Vanbever_Laurent",
             "organization": "Unknown"
         }
     ],

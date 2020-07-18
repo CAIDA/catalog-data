@@ -10,33 +10,33 @@
         "security"
     ],
     "caida_paper_id": "paper676",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Guillot,_Andreas",
+            "person": "person:Guillot_Andreas",
             "organization": "Unknown"
         },
         {
-            "person": "person:Fontugne,_Romain",
+            "person": "person:Fontugne_Romain",
             "organization": "Unknown"
         },
         {
-            "person": "person:Winter,_Philipp",
+            "person": "person:Winter_Philipp",
             "organization": "Unknown"
         },
         {
-            "person": "person:M&eacute;rindol,_Pascal",
+            "person": "person:M&eacute;rindol_Pascal",
             "organization": "Unknown"
         },
         {
-            "person": "person:King,_Alistair",
+            "person": "person:King_Alistair",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         },
         {
-            "person": "person:Pelsser,_Cristel",
+            "person": "person:Pelsser_Cristel",
             "organization": "Unknown"
         }
     ],

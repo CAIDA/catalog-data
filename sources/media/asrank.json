@@ -10,7 +10,7 @@
     ],
     "presenters": [
         {
-            "presenter": "person:luckie_matthew",
+            "person": "person:luckie_matthew",
             "venue": "venue:acm_internet_measurement_conference_imc",
             "date": "2013.10",
             "url": "http://conferences.sigcomm.org/imc/2013/"

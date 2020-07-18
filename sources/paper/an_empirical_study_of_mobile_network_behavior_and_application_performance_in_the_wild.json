@@ -10,43 +10,43 @@
         "QoE"
     ],
     "caida_paper_id": "paper673",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Zhang,_Shiwei",
+            "person": "person:zhang_shiwei",
             "organization": "Unknown"
         },
         {
-            "person": "person:Li,_Weichao",
+            "person": "person:li_weichao",
             "organization": "Unknown"
         },
         {
-            "person": "person:Wu,_Daoyuan",
+            "person": "person:wu_daoyuan",
             "organization": "Unknown"
         },
         {
-            "person": "person:Jin,_Bo",
+            "person": "person:jin_bo",
             "organization": "Unknown"
         },
         {
-            "person": "person:Chang,_Rocky_K._C.",
+            "person": "person:chang_rocky_k._c.",
             "organization": "Unknown"
         },
         {
-            "person": "person:Gao,_Debin",
+            "person": "person:gao_debin",
             "organization": "Unknown"
         },
         {
-            "person": "person:Wang,_Yi",
+            "person": "person:wang_yi",
             "organization": "Unknown"
         },
         {
-            "person": "person:Mok,_Ricky_K._P.",
+            "person": "person:mok_ricky_k._p.",
             "organization": "Unknown"
         }
     ],
     "links": [
         {
-            "to": "dataset:MopEye",
+            "to": "dataset:mopeye",
             "label": "used"
         }
     ]

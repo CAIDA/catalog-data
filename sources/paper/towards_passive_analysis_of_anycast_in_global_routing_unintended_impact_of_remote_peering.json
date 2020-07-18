@@ -13,29 +13,29 @@
         "routing"
     ],
     "caida_paper_id": "paper678",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Bian,_Rui",
+            "person": "person:Bian_Rui",
             "organization": "Unknown"
         },
         {
-            "person": "person:Hao,_Shuai",
+            "person": "person:Hao_Shuai",
             "organization": "Unknown"
         },
         {
-            "person": "person:Wang,_Haining",
+            "person": "person:Wang_Haining",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dhamdhere,_Amogh",
+            "person": "person:Dhamdhere_Amogh",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         },
         {
-            "person": "person:Cotton,_Chase",
+            "person": "person:Cotton_Chase",
             "organization": "Unknown"
         }
     ],

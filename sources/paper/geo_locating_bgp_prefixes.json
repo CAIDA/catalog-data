@@ -9,21 +9,21 @@
         "measurement methodology"
     ],
     "caida_paper_id": "paper675",
-    "persons": [
+    "authors": [
         {
-            "person": "person:Winter,_Philipp",
+            "person": "person:Winter_Philipp",
             "organization": "Unknown"
         },
         {
-            "person": "person:Padmanabhan,_Ramakrishna",
+            "person": "person:Padmanabhan_Ramakrishna",
             "organization": "Unknown"
         },
         {
-            "person": "person:King,_Alistair",
+            "person": "person:King_Alistair",
             "organization": "Unknown"
         },
         {
-            "person": "person:Dainotti,_Alberto",
+            "person": "person:Dainotti_Alberto",
             "organization": "Unknown"
         }
     ],
