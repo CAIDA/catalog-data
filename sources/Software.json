@@ -42,7 +42,7 @@
         ],
         "links": [
             {
-                "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
                 "label": "used by"
             }
         ]
@@ -66,7 +66,7 @@
         ],
         "links": [
             {
-                "to": "paper:residential_links_under_the_weather",
+                "to": "Paper:Residential_Links_Under_the_Weather",
                 "label": "used by"
             }
         ]
@@ -79,11 +79,7 @@
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
         "tags": [
             "topology",
-            "geolocation",
-            "asn organization",
-            "degree",
-            "customer cone",
-            "ranking"
+            "geolocation"
         ],
         "availability": [
             {
@@ -99,18 +95,10 @@
         ],
         "links": [
             {
-                "to": "software:as_rank"
+                "to": "software:AS_Rank"
             },
             {
-                "to": "dataset:as_rank"
-            },
-            {
-                "to": "presentation:as_rank_reborn",
-                "label": "used by"
-            },
-            {
-                "to": "paper:as_relationships_customer_cones_and_validation",
-                "label": "used by"
+                "to": "Dataset:AS_Rank"
             }
         ]
     },
@@ -138,7 +126,7 @@
         ],
         "links": [
             {
-                "to": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
+                "to": "Paper:At_Home_and_Abroad_The_Use_of_Denial-of-service_Attacks_during_Elections_in_Nondemocratic_Regimes",
                 "label": "used by"
             }
         ]
@@ -192,10 +180,7 @@
         "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
         "tags": [
             "topology",
-            "BGP",
-            "BGP traces",
-            "AS paths",
-            "prefixes"
+            "BGP"
         ],
         "availability": [
             {
@@ -211,62 +196,32 @@
         ],
         "links": [
             {
-                "to": "software:internet_outage_detection_and_analysis",
+                "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
                 "label": "used by"
             },
             {
-                "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
+                "to": "Paper:Profiling_BGP_Serial_Hijackers_Capturing_Persistent_Misbehavior_in_the_Global_Routing_Table",
                 "label": "used by"
             },
             {
-                "to": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
+                "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
                 "label": "used by"
             },
             {
-                "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
+                "to": "Paper:BGP_hijacking_classification",
                 "label": "used by"
             },
             {
-                "to": "paper:bgp_hijacking_classification",
+                "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
                 "label": "used by"
             },
             {
-                "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+                "to": "Paper:Geo-Locating_BGP_prefixes",
                 "label": "used by"
             },
             {
-                "to": "paper:geo-locating_bgp_prefixes",
-                "label": "used by"
-            },
-            {
-                "to": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream_and_openbmp",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentatino:measuring_and_monitoring_bgp",
-                "label": "used by"
-            },
-            {
-                "to": "presentatino:bgpstream_an_open_source_framework_for_live_historical_bgp_data_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
-                "label": "used by"
-            }
 
+            }
         ]
     },
     {
@@ -305,7 +260,7 @@
         "availability": [
             {
                 "name": "public",
-                "url": "https://ioda.caida.org/ioda/api",
+                "url": "https://ioda.caida.org",
                 "tags": [
                     "UI"
                 ]
@@ -313,148 +268,6 @@
         ],
         "licenses": [
             "license:BSD-4-Clause-UC"
-        ],
-        "links": [
-            {
-                "to": "presentation:ioda-np:_internet_outage_detection_and_analysis,_dhs_s&t_paridine_final_meeting,_nov_2019",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda-np:_detecting_outages_affecting_the_internet’s_edge,_workshop_on_active_internet_measurements_(aims),_apr_2019",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda-np:_internet_outage_detection_and_analysis,_dhs_s&t_cybersecurity_and_innovation_showcase,_mar_2019",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:how_to_find_correlated_internet_failures",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:who_shuts_down_the_internet_and_why?",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda-np:_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption,",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:science_of_internet_security:_technology_and_experimental_research",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:mapping_our_way_to_a_more_secure_internet",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:internet_outages_detection_&_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda_internet_outages_detection_&_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda_internet_outages_detection_&_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream_2016",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:leveraging_nternet_background_radiation_for_opportunistic_network_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream:_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream:_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:measuring_and_monitoring_bgp",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:lost_in_space:_improving_inference_of_ipv4_address_space_utilization",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream_-_an_open_source_framework_for_live/historical_bgp_data_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda_-_internet_outages:_detection_&_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:bgpstream",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:ioda_-_internet_outages:_detection_&_analysis",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:measuring_and_characterizing_ipv6_router_availability",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:monitoring_large-scale_internet_outages",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:caida_research_overview",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:caida_research_overview",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:toward_realtime_visualization_of_garbage",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:a_coordinated_view_of_large-scale_internet_events",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:analysis_of_internet-wide_probing_using_darknets",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:extracting_benefit_from_harm:_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
-                "label": "used by"
-            },
         ]
     },
     {
@@ -482,56 +295,8 @@
         ],
         "links": [
             {
-                "to": "software:manic"
-            },
-            {
-                "to": "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:measurement_and_analysis_of_internet_congestion_manic",
-                "label": "used by"
-            },
-            {
-                "to": "paper:inferring_persistent_interdomain_congestion",
-                "label": "used by"
-            },
-            {
-                "to": "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet",
-                "label": "used by"
-            },
-            {
-                "to": "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
-                "label": "used by"
-            },
-            {
-                "to": "paper:tcp_congestion_signatures",
-                "label": "used by"
-            },
-            {
-                "to": "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements",
-                "label": "used by"
-            },
-            {
-                "to": "paper:bdrmap:_inference_of_borders_between_ip_networks",
-                "label": "used by"
-            },
-            {
-                "to": "paper:policy_challenges_in_mapping_internet_interdomain_congestion",
-                "label": "used by"
-            },
-            {
-                "to": "paper:measuring_interdomain_congestion_and_its_impact_on_qoe",
-                "label": "used by"
-            },
-            {
-                "to": "paper:challenges_in_inferring_internet_interdomain_congestion",
-                "label": "used by"
-            },
-            {
-                "to": "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,",
-                "label": "used by"
-            },
+                "to": "software:MANIC"
+            }
         ]
     },
     {
@@ -598,33 +363,7 @@
         "licenses": [
             "license:BSD 3-Clause License"
         ],
-        "links": [
-            {
-                "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
-                "label": "used by"
-            },
-            {
-                "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
-                "label": "used by"
-            },
-            {
-                "to" :_"presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
-                "label": "used by"
-            },
-
-        ]
+        "links": []
 
     },
     {
@@ -634,7 +373,7 @@
         "organization": "CAIDA",
         "description": "Measures and analyzes passive Internet traffic monitor data.",
         "tags": [
-            "traffic"
+
         ],
         "availability": [
             {
@@ -647,24 +386,7 @@
         "licenses": [
             "license:UCSD Academic Non-Commercial License"
         ],
-        "links": [
-            {
-                "to": "software:dnsstat",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
-                "label": "used by"
-            },
-        ]
+        "links": []
 
     },
     {
@@ -674,12 +396,12 @@
         "organization": "CAIDA",
         "description": "Extensible framework for large-scale analysis of passive trace data.",
         "tags": [
-            "Traffic"
+
         ],
         "availability": [
             {
                 "name": "public",
-                "url": "https://github.com/CAIDA/corsaro3/",
+                "url": "https://www.caida.org/tools/measurement/coralreef/",
                 "tags": []
             }
 
@@ -687,51 +409,7 @@
         "licenses": [
             "license:UCSD Academic Non-Commercial License"
         ],
-        "links": [
-            {
-                "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
-                "label": "used by"
-            },
-            {
-                "to": "software:ioda",
-                "label": "used by"
-            },
-            {
-                "to": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
-                "label": "used by"
-            },
-            {
-                "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"_
-            },
-            {
-                "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
-                "label": "used by"
-            },
-            {
-                "to": "paper:teaching_network_security_with_ip_darkspace_data",
-                "label": "used by"
-            },
-            {
-                "to": "paper:dust_2012_workshop_report",
-                "label": "used by"
-            },
-            {
-                "to": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
-                "label": "used by"
-            },
-            {
-                "to": "paper:analysis_of_internet-wide_probing_using_darknets",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
-                "label": "used by"
-            }
-        ]
+        "links": []
 
     },
     {
@@ -745,22 +423,14 @@
         "availability": [
             {
                 "name": "",
-                "url": "https://www.caida.org/tools/measurement/iffinder/",
+                "url": "",
                 "tags": []
             }
         ],
         "licenses": [],
         "links": [
             {
-                "to": "dataset:internet_topology_data_kit",
-                "label": "used by"
-            },
-            {
-                "to": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
-                "label": "used by"
-            },
-            {
-                "to": "paper:traceroute_and_bgp_as_path_incongruities",
+                "to": "Internet_Topology_Data_Kit",
                 "label": "used by"
             }
         ]
@@ -776,7 +446,7 @@
         "availability": [
             {
                 "name": "public",
-                "url": "http://www.cwb.gov.tw/V7/index.htm",
+                "url": "",
                 "tags": []
             }
         ],
@@ -785,25 +455,8 @@
         ],
         "links": [
             {
-                "to": "dataset:internet_topology_data_kit",
+                "to": "Internet_Topology_Data_Kit",
                 "label": "used by"
-            },
-            {
-                "tp": "paper:Internet-Scale IP Alias Resolution Techniques",
-                "label": "used by"
-            },
-            {
-                "to": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
-                "label": "used by"
-            },
-            {
-                "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
-                "label": "used by"
-            },
-            {
-                "to": "paper:ip_alias_resolution_techniques",
-                "label": "used by"
-
             }
         ]
     },
@@ -814,28 +467,18 @@
         "organization": "CAIDA",
         "description": "C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
         "tags": [
-            "database",
-            "library"
         ],
         "availability": [
             {
                 "name": "public",
-                "url": "https://github.com/caida/libtimeseries/",
+                "url": "",
                 "tags": []
             }
         ],
         "licenses": [
             "license:BSD 2-Clause"
         ],
-        "links": [
-            {
-                "to": "software:ioda",
-                "label": "used by"
-            },
-            {
-
-            }
-        ]
+        "links": []
     },
     {
         "__typename": "software",
@@ -844,12 +487,11 @@
         "organization": "CAIDA",
         "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
         "tags": [
-            "IP Address Alias Resolution"
         ],
         "availability": [
             {
                 "name": "public",
-                "url": "https://www.caida.org/tools/measurement/midar/",
+                "url": "",
                 "tags": []
             }
         ],
@@ -858,7 +500,7 @@
         ],
         "links": [
             {
-                "to": "internet_topology_data_kit",
+                "to": "Internet_Topology_Data_Kit",
                 "label": "used by"
             }
 
@@ -906,11 +548,11 @@
         ],
         "links": [
             {
-                "to": "macroscopic_topology_measurements",
+                "to": "Macroscopic_Topology_Measurements",
                 "label": "used by"
             },
             {
-                "to": "the_ipv4_routed_24_topology_dataset",
+                "to": "The_IPv4_Routed_24_Topology_Dataset",
                 "label": "used by"
             }
 
@@ -937,66 +579,65 @@
         ],
         "links": [            
             {
-                "to": "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+                "to": "Paper:Network_Hygiene_Incentives_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
                 "label": "used by"
             },
             {
-                "to": "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer",
+                "to": "Paper:Using_Crowdsourcing_Marketplaces_for_Network_Measurements_The_Case_of_Spoofer",
                 "label": "used by"
             },
             {
-                "to": "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof",
+                "to": "Paper:Using_Loops_Observed_in_Traceroute_to_Infer_the_Ability_to_Spoof",
                 "label": "used by"
             },
             {
-                "to": "presentation:acm_computer_and_communications_security_(ccs)",
+                "to": "Presentation:ACM_Computer_and_Communications_Security_(CCS)",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_ddosd_pi_meeting",
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_r&d_showcase",
+                "to": "Presentation:DHS_R&D_showcase",
                 "label": "used by"
             },
             {
-                "to": "presentation:one_conference",
+                "to": "Presentation:One_Conference",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_ddosd_pi_meeting",
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
                 "label": "used by"
             },
             {
-                "to": "presentation:nznog",
+                "to": "Presentation:NZNOG",
                 "label": "used by"
             },
             {
-                "to": "presentation:nanog",
+                "to": "Presentation:NANOG",
                 "label": "used by"
             },
             {
-                "to": "presentation:ssac",
+                "to": "Presentation:SSAC",
                 "label": "used by"
             },
             {
-                "to": "presentation:ausngo",
+                "to": "Presentation:AusNGO",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_ddosd_pi_meeting",
+                "to": "Presentation:DHS_DDoSD_PI_meeting",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_r&d_showcase",
+                "to": "Presentation:DHS_R&D_showcase",
                 "label": "used by"
             },
             {
-                "to": "presentation:dhs_s&t_ddos_defense_meeting",
+                "to": "Presentation:DHS_S&T_DDoS_Defense_meeting",
                 "label": "used by"
             }
-
         ]
     }
 ]
