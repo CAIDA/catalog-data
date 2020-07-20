@@ -3,16 +3,62 @@
     "name": "Corsaro",
     "organization": "CAIDA",
     "description": "Extensible framework for large-scale analysis of passive trace data.",
-    "tags": [],
+    "tags": [
+        "trafic"
+    ],
     "availability": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/measurement/coralreef/",
+            "url": "https://github.com/CAIDA/corsaro3/",
             "tags": []
         }
     ],
     "licenses": [
         "license:bsd_4_clause_uc"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "label": "used by"
+        },
+        {
+            "to": "software:ioda",
+            "label": "used by"
+        },
+        {
+            "to": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
+            "label": "used by"
+        },
+        {
+            "to": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+        },
+        {
+            "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:teaching_network_security_with_ip_darkspace_data",
+            "label": "used by"
+        },
+        {
+            "to": "paper:dust_2012_workshop_report",
+            "label": "used by"
+        },
+        {
+            "to": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
+            "label": "used by"
+        },
+        {
+            "to": "paper:analysis_of_internet-wide_probing_using_darknets",
+            "label": "used by"
+        },
+        {
+            "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
+            "label": "used by"
+        }
+    ]
 }
