@@ -17,21 +17,21 @@
         "license:bsd_4_clause_uc"
     ],
     "links": [
-            {
-                "to": "software:dnsstat",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
-                "label": "used by"
-            },
-            {
-                "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
-                "label": "used by"
-            },
-            {
-                "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
-                "label": "used by"
-            },
+        {
+            "to": "software:dnsstat",
+            "label": "used by"
+        },
+        {
+            "to": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
+            "label": "used by"
+        },
+        {
+            "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
+            "label": "used by"
+        },
     ]
 }

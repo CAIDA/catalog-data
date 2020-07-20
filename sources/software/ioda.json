@@ -11,7 +11,7 @@
     "availability": [
         {
             "name": "public",
-            "url": "https://ioda.caida.org",
+            "url": "https://ioda.caida.org/ioda/api",
             "tags": [
                 "UI"
             ]
@@ -19,5 +19,123 @@
     ],
     "licenses": [
         "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:ioda-np_detecting_outages_affecting_the_internet’s_edge",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:how_to_find_correlated_internet_failures",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:who_shuts_down_the_internet_and_why",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:science_of_internet_security:_technology_and_experimental_research",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:mapping_our_way_to_a_more_secure_internet",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:internet_outages_detection_&_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:bgpstream",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:bgpstream_2016",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:measuring_and_monitoring_bgp",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:ioda-nternet_outages:_detection_&_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:bgpstream",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:ioda-internet_outages:_detection_&_analysis",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:measuring_and_characterizing_ipv6_router_availability",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:monitoring_large-scale_internet_outages",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:caida_research_overview",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:toward_realtime_visualization_of_garbage",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:a_coordinated_view_of_large-scale_internet_events",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:analysis_of_internet-wide_probing_using_darknets",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
+            "label": "used by"
+        },
     ]
 }

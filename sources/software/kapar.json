@@ -18,6 +18,23 @@
         {
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"
-        }
+        },
+        {
+            "tp": "paper:Internet-Scale IP Alias Resolution Techniques",
+            "label": "used by"
+        },
+        {
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "label": "used by"
+        },
+        {
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "label": "used by"
+        },
+        {
+            "to": "paper:ip_alias_resolution_techniques",
+            "label": "used by"
+
+        }    
     ]
 }

@@ -7,7 +7,7 @@
     "availability": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.caida.org/tools/measurement/midar/",
             "tags": []
         }
     ],
@@ -17,6 +17,26 @@
     "links": [
         {
             "to": "dataset:internet_Topology_Data_Kit",
+            "label": "used by"
+        },
+        {
+            "to": "software:vela",
+            "label": "used by"
+        }
+        {
+            "to": "dataset:internet_topology_data_kit",
+            "label": "used by"
+        },
+        {
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "label": "used by"
+        },
+        {
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "label": "used by"
+        },
+        {
+            "to": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
             "label": "used by"
         }
     ]
