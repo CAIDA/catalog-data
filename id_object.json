@@ -883,6 +883,76 @@
         "dateLastUpdated": "2020/07/17 12:38:03",
         "date": "2020/07/17 12:38:03"
     },
+    "media:ipv4_history_viz_interactive": {
+        "id": "media:ipv4_history_viz_interactive",
+        "__typename": "media",
+        "name": "IPv4 History Visualization Interactive",
+        "description": "An animated slideshow presentation of the history of IPv4, using a Sankey diagram to visualize the flow of IPv4 address allocations since inception in 1977, through various address management organizations and policies.",
+        "type": "PRESENTATION",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": [
+                    "tag:url",
+                    "tag:presentation"
+                ]
+            }
+        ],
+        "tags": [
+            "tag:ipv4",
+            "tag:sankey",
+            "tag:presentation"
+        ],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
+    "tag:url": {
+        "id": "tag:url",
+        "__typename": "tag",
+        "name": "url",
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
+    "tag:presentation": {
+        "id": "tag:presentation",
+        "__typename": "tag",
+        "name": "presentation",
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
+    "tag:ipv4": {
+        "id": "tag:ipv4",
+        "__typename": "tag",
+        "name": "ipv4",
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
+    "tag:sankey": {
+        "id": "tag:sankey",
+        "__typename": "tag",
+        "name": "sankey",
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
+    "media:ipv4_history_viz_video": {
+        "id": "media:ipv4_history_viz_video",
+        "__typename": "media",
+        "name": "ipv4 history viz video",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/20 15:55:10",
+        "dateLastUpdated": "2020/07/20 15:55:10",
+        "date": "2020/07/20 15:55:10"
+    },
     "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
         "id": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
         "__typename": "media",
