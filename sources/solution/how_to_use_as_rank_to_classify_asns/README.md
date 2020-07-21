@@ -146,7 +146,7 @@ as0 as1 rel
 
 ### Data Structure Format: as_2_data
 
-~~~json
+~~~Python
 {
     "asn0" : {
         "providers" : set(),        # Set of asns that are providers to asn0.
@@ -157,7 +157,7 @@ as0 as1 rel
 
 ### Data Structure Format: as_2_class
 
-~~~json
+~~~Python
 {
     # asn0 has zero providers.
     "asn0" : { "asn":"asn0", "class":"transit free" },
