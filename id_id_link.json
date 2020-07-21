@@ -1132,6 +1132,48 @@
             "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
         }
     },
+    "media:ipv4_history_viz_video": {
+        "tag:ipv4": {
+            "from": "media:ipv4_history_viz_video",
+            "to": "tag:ipv4"
+        },
+        "tag:sankey": {
+            "from": "media:ipv4_history_viz_video",
+            "to": "tag:sankey"
+        },
+        "tag:video": {
+            "from": "media:ipv4_history_viz_video",
+            "to": "tag:video"
+        },
+        "media:ipv4_history_viz_interactive": {
+            "from": "media:ipv4_history_viz_video",
+            "to": "media:ipv4_history_viz_interactive"
+        }
+    },
+    "tag:ipv4": {
+        "media:ipv4_history_viz_video": {
+            "from": "tag:ipv4",
+            "to": "media:ipv4_history_viz_video"
+        }
+    },
+    "tag:sankey": {
+        "media:ipv4_history_viz_video": {
+            "from": "tag:sankey",
+            "to": "media:ipv4_history_viz_video"
+        }
+    },
+    "tag:video": {
+        "media:ipv4_history_viz_video": {
+            "from": "tag:video",
+            "to": "media:ipv4_history_viz_video"
+        }
+    },
+    "media:ipv4_history_viz_interactive": {
+        "media:ipv4_history_viz_video": {
+            "from": "media:ipv4_history_viz_interactive",
+            "to": "media:ipv4_history_viz_video"
+        }
+    },
     "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
         "tag:measurement_methodology": {
             "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
