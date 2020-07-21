@@ -1,4 +1,4 @@
-# How to find the business relationnships between asns
+# How to find the business relationships between asns
 
 ~~~json
 {
@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in s .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
+The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship.The local file script only has one flag: -r which takes in s .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
 
 ## Usage
 
@@ -157,7 +157,7 @@ def get_relationship(asn0, asn1):
 ### What is an AS Relationship
 
 - An AS Relationship is the determined routing policy between two ASes.
-- The three most commo types of AS Relationships are:
+- The three most common types of AS Relationships are:
   - customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),
   - peer-to-peer (p2p),
   - sibling-to-sibling (s2s)
