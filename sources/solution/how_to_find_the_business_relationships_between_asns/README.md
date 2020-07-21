@@ -181,11 +181,11 @@ as0 as1 rel
 
 ### Caveats
 
-A pair of asns is sorted by having the asn whose value is less than the other coming first. Ex: ```10 15```, you'll never see a key formatted as: ```15 10```. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: ```get_relationship(ans0, asn1)``` is provided.
+A pair of asns is sorted by their values in ascending order. Ex: ```10 15```, you'll never see a key formatted as: ```15 10```. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: ```get_relationship(ans0, asn1)``` is provided.
 
 ### File Format: .as-rel
 
-Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with "#" since they will nont be needed.
+Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with "#" since they will not be needed.
 
 ~~~text
 # source:topology|BGP|<data>|<system>|<monitor>
