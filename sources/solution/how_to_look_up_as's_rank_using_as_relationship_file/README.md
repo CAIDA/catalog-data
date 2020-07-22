@@ -2,14 +2,13 @@
 
 ~~~json
 {
-    "id" : "solution:how_to_use_as_rank_to_classify_asns",
+    "id" : "solution:how_to_look_up_as's_rank_using_as_relationship_file",
     "visibility" : "public",
-    "name" : "How to use AS Rank to classify asns",
-    "description" : "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
-    "links": [{"to":"dataset:as_relationships"},{"to":"dataset:as_ranks"}],
+    "name" : "How to look up AS's rank using AS Relationship file",
+    "description" : "Using a given AS Relationship, classify all asns into three catagories: tansit free, middle, edge",
+    "links": [{"to":"dataset:as_relationships"}],
     "tags" : [
         "ASN",
-        "as rank",
         "as relationship",
         "IPv4"
     ]
