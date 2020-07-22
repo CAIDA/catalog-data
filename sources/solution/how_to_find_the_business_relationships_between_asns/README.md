@@ -1,4 +1,4 @@
-# How to find the business relationnships between asns
+# How to find the business relationships between asns
 
 ~~~json
 {
@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in a .as-rel file, this can be downloaded [here](http://data.caida.org/datasets/as-relationships/serial-1/). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
+The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship.The local file script only has one flag: -r which takes in s .as-rel file, this can be downloaded [here](http://data.caida.org/datasets/as-relationships/serial-1//). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
 
 ## Usage
 
@@ -157,7 +157,7 @@ def get_relationship(asn0, asn1):
 ### What is an AS Relationship
 
 - An AS Relationship is the determined routing policy between two ASes.
-- The three most commo types of AS Relationships are:
+- The three most common types of AS Relationships are:
   - customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),
   - peer-to-peer (p2p),
   - sibling-to-sibling (s2s)
@@ -181,11 +181,11 @@ as0 as1 rel
 
 ### Caveats
 
-A pair of asns is sorted by having the asn whose value is less than the other coming first. Ex: ```10 15```, you'll never see a key formatted as: ```15 10```. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: ```get_relationship(ans0, asn1)``` is provided.
+A pair of asns is sorted by their values in ascending order. Ex: ```10 15```, you'll never see a key formatted as: ```15 10```. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: ```get_relationship(ans0, asn1)``` is provided.
 
 ### File Format: .as-rel
 
-Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with "#" since they will nont be needed.
+Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with "#" since they will not be needed.
 
 ~~~text
 # source:topology|BGP|<data>|<system>|<monitor>
