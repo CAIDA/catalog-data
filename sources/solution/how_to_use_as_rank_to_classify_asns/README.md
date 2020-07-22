@@ -18,14 +18,15 @@
 
 ## **<ins>Introduction</ins>**
 
-This solution helps classify an asns based upon its paths to other asns. The following [script](api_2_class.py) calls the ASRank API, and gathers all AS Relationships to determine the number of providers and customers of each asn storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications which are stored in a dictionary labeled ```as_2_class``` for each asn which is then printed to STDOUT.
+This solution helps classify an asns based upon its paths to other asns. The following [script](api_2_class.py) calls the ASRank API, and gathers AS Relationships of give asns to determine their classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications which are stored in a dictionary labeled ```as_2_class``` for each asn which is then printed to STDOUT. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
 
 ### Usage
 
-Below is an example of how to run the script, and send all classifications to a json file.
+Below is an example of how to run the script to classify the asns 3356 and 10, sending their classifications to a .jsonl file. You must use the -a flag, and provide at least on asn to classify. For classifying multiple asns, provide a comma seperated list with no spaces.
 - Note: This script calls the API until all AS Relationships are found, and this can take a significant amount of time.
+
 ```bash
-python3 api_2_class.py > output.jsonl
+python3 api_2_class.py -a 3356,10 > output.jsonl
 ```
 
 ## **<ins>Solution</ins>**
@@ -63,11 +64,16 @@ def as_links_query(first, offset):
 # Helper method that takes in a dict to create a pair relationship.
 def update_as_2_data(curr_line):
     global as_2_data
+    global asns
 
     # Get the values from the current line.
     relationship = curr_line["relationship"]
     asn0 = curr_line["asn0"]["asn"]
     asn1 = curr_line["asn1"]["asn"]
+
+    # Edge Case: Skip this line if asn0 and ans1 are not in asns.
+    if asn0 not in asns and asn1 not in asns:
+        return
 
     # Edge Case: Create objects for asn0 or asn1 if they are not in as_2_data.
     if asn0 not in as_2_data:

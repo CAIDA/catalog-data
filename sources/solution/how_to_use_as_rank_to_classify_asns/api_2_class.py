@@ -70,6 +70,7 @@ as_2_data = {}                      # Dataset that is updated during API calls.
     }
 }
 """
+asns = None                         # Will hold asns that need to be found.
 
 # API Link:
 api_url = "https://api.asrank.caida.org/v2/graphql"
@@ -82,16 +83,27 @@ encoder = json.JSONEncoder()
 def main(argv):
     global as_2_class
     global as_2_data
+    global asns
     global api_url
     global PAGE_SIZE
     global decoder
     global encoder
 
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-a", type=str, default=None, dest="asns", help="Comma seperated list of asns that will be classified to STDOUT")
+    args = parser.parse_args()
+
+    # Edge Case: Exit if no asns were given to be found.
+    if args.asns is None:
+        print("     Must provide at least one asn to be found:", sys.argv[0], " -a 3356,10", file=sys.stderr)
+        sys.exit()
+
+    asns = set(args.asns.split(","))
+    print("Classifying: " + str(asns) + " if they are found in the API.", file=sys.stderr)
+
     hasNextPage = True
     first = PAGE_SIZE
     offset = 0
-
-    page = 0
 
     # Used by nested calls
     start = time.time()
@@ -108,8 +120,8 @@ def main(argv):
         for node in data["edges"]:
             update_as_2_data(node["node"])
 
-        print("Page: ", page, file=sys.stderr)
-        page += 1
+        print ("    ",offset,"of",data["totalCount"], " ",time.time()-start,"(sec)",file=sys.stderr)
+        start = time.time()
 
         hasNextPage = data["pageInfo"]["hasNextPage"]
         offset += data["pageInfo"]["first"]
@@ -157,11 +169,16 @@ def as_links_query(first, offset):
 # Helper method that takes in a dict to create a pair relationship.
 def update_as_2_data(curr_line):
     global as_2_data
+    global asns
 
     # Get the values from the current line.
     relationship = curr_line["relationship"]
     asn0 = curr_line["asn0"]["asn"]
     asn1 = curr_line["asn1"]["asn"]
+
+    # Edge Case: Skip this line if asn0 and ans1 are not in asns.
+    if asn0 not in asns and asn1 not in asns:
+        return
 
     # Edge Case: Create objects for asn0 or asn1 if they are not in as_2_data.
     if asn0 not in as_2_data:
@@ -209,12 +226,15 @@ def update_classifications():
             as_2_class[asn]["class"] = "middle"
 
 
-# Helper method that prints all as_2_class to STDOUT
+# Helper method that prints asns to STDOUT
 def print_classifications():
     global as_2_class
+    global asns
 
-    for asn in as_2_class:
-        sys.stdout.write(json.dumps(as_2_class[asn]) + "\n")
+    # Iterate over all given asns and print out the ones found.
+    for asn in asns:
+        if asn in as_2_class:
+            sys.stdout.write(json.dumps(as_2_class[asn]) + "\n")
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
