@@ -62,6 +62,15 @@ pair_2_rel = {}
 # Definitions:
 re_bz2 = re.compile(r".bz2$")
 re_txt = re.compile(r".txt$")
+# as0 as2 rel
+#  10   2  -1     10 is a provider of 2 (p2c)
+#  10   3   0     10 is a peer of 3 (p2p)
+#  10   4   1     10 is a customer of 4 (c2p)
+rel_2_name = {
+    -1 : "customer",
+    0: "peer",
+    1: "provider"
+}
 
 # File Path:
 as_rel_file = None
@@ -124,24 +133,24 @@ def parse_as_rel_file():
 # Parse a given line of the as_rel_file and map two ASes to their relationship.
 def parse_as_rel_line(curr_line):
     global pair_2_rel
+    global rel_2_name
 
     # Edge Case: Skip any commented lines.
     if curr_line[0] == "#":
         return
 
-    as_rel_set = curr_line.split("|")
-        
     # Get each piece of data from the current line.
-    asn0 = as_rel_set[0]
-    asn1 = as_rel_set[1]
-    relationship = int(as_rel_set[2])
+    asn0, asn1, relationship = curr_line.split("|")
 
     # Place both related AS's in par_2_rel based on value of ASes.
     if (asn0 > asn1):
         temp = asn0
         asn0 = asn1
         asn1 = temp
-        relationship = -1 * relationship
+        relationship = -1 * int(relationship)
+
+    # Replace relationship with the string version of it's value.
+    relationship = rel_2_name[int(relationship)]
 
     key = asn0 + " " + asn1
 
@@ -164,7 +173,7 @@ def get_relationship(asn0, asn1):
     if key in pair_2_rel:
         rel = pair_2_rel[key]
         return rel
-        # return str(asn0) + "'s " + str(rel) + " is " + str(asn1)
+        #return str(asn0) + "'s " + str(rel) + " is " + str(asn1)
     else:
         return None
 

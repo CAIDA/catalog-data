@@ -45,8 +45,6 @@ __email__ = "dwolfson@zeus.caida.org"
 import argparse
 import sys
 import json
-import bz2
-import re
 import time
 from graphqlclient import GraphQLClient
 
@@ -61,10 +59,19 @@ pair_2_rel = {}
 """
 
 # Definitions:
-rel_2_key = {
+# as0 as2 rel
+#  10   2  -1     10 is a provider of 2 (p2c)
+#  10   3   0     10 is a peer of 3 (p2p)
+#  10   4   1     10 is a customer of 4 (c2p)
+name_2_rel = {
     "provider" : 1,
     "peer" : 0,
     "customer" : -1
+}
+rel_2_name = {
+    -1 : "customer",
+    0: "peer",
+    1: "provider"
 }
 
 # API values:
@@ -77,7 +84,8 @@ encoder = json.JSONEncoder()
 
 def main(argv):
     global pair_2_rel
-    global rel_2_key
+    global name_2_rel
+    global rel_2_name
     global api_url
     global PAGE_SIZE
     global decoder
@@ -154,10 +162,11 @@ def as_links_query(first, offset):
 # Helper method that takes in a dict to create a pair relationship.
 def update_pair_2_rel(curr_line):
     global pair_2_rel
-    global rel_2_key
+    global name_2_rel
+    global rel_2_name
 
     # Get the values from the current line.
-    relationship = rel_2_key[curr_line["relationship"]]
+    relationship = name_2_rel[curr_line["relationship"]]
     asn0 = int(curr_line["asn0"]["asn"])
     asn1 = int(curr_line["asn1"]["asn"])
 
@@ -172,7 +181,7 @@ def update_pair_2_rel(curr_line):
 
     # Add the pair's relationship if doesn't already exist.
     if key not in pair_2_rel:
-        pair_2_rel[key] = relationship
+        pair_2_rel[key] = rel_2_name[relationship]
 
 
 # Helper Method to return the relationship of two given asns. 

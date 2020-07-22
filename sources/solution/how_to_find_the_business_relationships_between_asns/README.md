@@ -49,24 +49,24 @@ Below is the helper method used to parse a given line of the .as-rel file in the
 # Parse a given line of the as_rel_file and map two ASes to their relationship.
 def parse_as_rel_line(curr_line):
     global pair_2_rel
+    global rel_2_name
 
     # Edge Case: Skip any commented lines.
     if curr_line[0] == "#":
         return
 
-    as_rel_set = curr_line.split("|")
-        
     # Get each piece of data from the current line.
-    asn0 = as_rel_set[0]
-    asn1 = as_rel_set[1]
-    relationship = int(as_rel_set[2])
+    asn0, asn1, relationship = curr_line.split("|")
 
-    # Place both related AS's in pair_2_rel based om value of ASes.
+    # Place both related AS's in par_2_rel based on value of ASes.
     if (asn0 > asn1):
         temp = asn0
         asn0 = asn1
         asn1 = temp
-        relationship = -1 * relationship
+        relationship = -1 * int(relationship)
+
+    # Replace relationship with the string version of it's value.
+    relationship = rel_2_name[int(relationship)]
 
     key = asn0 + " " + asn1
 
@@ -108,10 +108,11 @@ def as_links_query(first, offset):
 # Helper method that takes in a dict to create a pair relationship.
 def update_pair_2_rel(curr_line):
     global pair_2_rel
-    global rel_2_key
+    global name_2_rel
+    global rel_2_name
 
     # Get the values from the current line.
-    relationship = rel_2_key[curr_line["relationship"]]
+    relationship = name_2_rel[curr_line["relationship"]]
     asn0 = int(curr_line["asn0"]["asn"])
     asn1 = int(curr_line["asn1"]["asn"])
 
@@ -126,7 +127,7 @@ def update_pair_2_rel(curr_line):
 
     # Add the pair's relationship if doesn't already exist.
     if key not in pair_2_rel:
-        pair_2_rel[key] = relationship
+        pair_2_rel[key] = rel_2_name[relationship]
 ~~~
 
 This helper method is offered to show how to easily access a relationship in pair_2_rel in either script. This method also shows how to format two given asns to match the key format of pair_2_rel. The commented out return line could be helpful for testing, or to better understand what the relationship between the ases mean.
