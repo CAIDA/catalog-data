@@ -69,7 +69,7 @@ rel_2_key = {
 
 # API values:
 api_url = "https://api.asrank.caida.org/v2/graphql"
-PAGE_SIZE = 100000
+PAGE_SIZE = 10000
 decoder = json.JSONDecoder()
 encoder = json.JSONEncoder()
 
@@ -102,11 +102,10 @@ def main(argv):
         
         data = data["data"][type]
         for node in data["edges"]:
-            #print (encoder.encode(node["node"]), file=sys.stderr)
             update_pair_2_rel(node["node"])
 
-        print("Page: ", page, file=sys.stderr)
-        page += 1
+        print ("    ",offset,"of",data["totalCount"], " ",time.time()-start,"(sec)",file=sys.stderr)
+        start = time.time()
 
         hasNextPage = data["pageInfo"]["hasNextPage"]
         offset += data["pageInfo"]["first"]
