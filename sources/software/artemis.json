@@ -14,5 +14,30 @@
     "licenses": [
         "license:bsd_4_clause_uc"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "label": "used by"
+        },
+        {
+            "to" :"presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+    ]
 }

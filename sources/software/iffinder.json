@@ -18,6 +18,14 @@
         {
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"
+        },
+        {
+            "to": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
+            "label": "used by"
+        },
+        {
+            "to": "paper:traceroute_and_bgp_as_path_incongruities",
+            "label": "used by"
         }
     ]
 }

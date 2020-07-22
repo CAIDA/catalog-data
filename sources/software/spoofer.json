@@ -18,64 +18,29 @@
     ],
     "links": [
         {
-            "to": "Paper:Network_Hygiene_Incentives_and_Regulation_Deployment_of_Source_Address_Validation_in_the_Internet",
+            "to": "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "label": "used by"
         },
         {
-            "to": "Paper:Using_Crowdsourcing_Marketplaces_for_Network_Measurements_The_Case_of_Spoofer",
+            "to": "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer",
             "label": "used by"
         },
         {
-            "to": "Paper:Using_Loops_Observed_in_Traceroute_to_Infer_the_Ability_to_Spoof",
+            "to": "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof",
             "label": "used by"
         },
         {
-            "to": "Presentation:ACM_Computer_and_Communications_Security_(CCS)",
+            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "label": "used by"
         },
         {
-            "to": "Presentation:DHS_DDoSD_PI_meeting",
+            "to": "presentation:the_best_available_data_on_source_address_validation",
             "label": "used by"
         },
         {
-            "to": "Presentation:DHS_R&D_showcase",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:One_Conference",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:DHS_DDoSD_PI_meeting",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:NZNOG",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:NANOG",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:SSAC",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:AusNGO",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:DHS_DDoSD_PI_meeting",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:DHS_R&D_showcase",
-            "label": "used by"
-        },
-        {
-            "to": "Presentation:DHS_S&T_DDoS_Defense_meeting",
+            "to": "presentation:software_systems_for_surveying_spoofing_susceptibility",
             "label": "used by"
         }
+
     ]
 }
