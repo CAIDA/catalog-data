@@ -43,7 +43,7 @@ __email__ = "<pmpathak@ucsd.edu>"
 #!/usr/bin/env python
 
 import pybgpstream
-import os.path
+
 
 # Create pybgpstream
 stream = pybgpstream.BGPStream(
@@ -52,7 +52,7 @@ stream = pybgpstream.BGPStream(
     record_type="updates",  
 )
 
-prefix_asn = dict()
+
 for elem in stream:
     # record fields can be accessed directly from elem
     # print (elem.fields)
