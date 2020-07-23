@@ -1,17 +1,11 @@
 import pandas as pd
 import argparse
 import os
-import json
-import gzip
 
-def dir_path(string):
-    if os.path.isdir(string):
-        return string
-    else:
-        raise NotADirectoryError(string)
 
-parser = argparse.ArgumentParser(description='Download current asn json ranges.')
-parser.add_argument('-p', '--path', type=dir_path, help='directory for download i.e. ../allocations/')
+parser = argparse.ArgumentParser(description='Returns full and compressed dictionaries of ranges.')
+parser.add_argument('csv1', help='iana 16-bit csv asn file')
+parser.add_argument('csv2', help='iana 32-bit csv asn file')
 args = parser.parse_args()
 
 
@@ -59,46 +53,65 @@ def simplify(x):
     else:
         return 'allocated'
 
-def list_format(num): 
-    if type(num) == int:
-        num = str(num)
-    if '-' in num:
-        return [int(num.split('-')[0]), int(num.split('-')[1])]
+def clean_designation_names(x):
+    """
+    Returns either "reserved", "unassigned", or "allocated"
+    """
+    if 'reserved' in x:
+        return 'reserved'
+    if 'unassigned' in x:
+        return 'unassigned'
     else:
-        return [int(num), int(num)]
-
-###### Reads in current csv files from IANA ######
-current_16 = pd.read_csv('https://www.iana.org/assignments/as-numbers/as-numbers-1.csv')
-current_32 = pd.read_csv('https://www.iana.org/assignments/as-numbers/as-numbers-2.csv')
+        return x.replace('assigned by', '').strip()
 
 
-###### Simplifies designations ######
-current_16["Description"] = current_16["Description"].apply(lambda x: simplify(x.lower()))
-current_32["Description"] = current_32["Description"].apply(lambda x: simplify(x.lower()))
+def combine(csv_path16, csv_path32):
+    current_16 = pd.read_csv(csv_path16)
+    current_32 = pd.read_csv(csv_path32)
+    current_32 = current_32.loc[current_32["Number"] != '0-65535']
+    return pd.concat([current_16, current_32])
 
-###### Aggregates separate rows to determine range of allocated/unallocated/reserved asn ######
-current_16["Number"] = current_16["Number"].apply(list_format)
-current_32["Number"]= current_32["Number"].apply(list_format)
+def iana_asn_asignees(csv_path16, csv_path32):
+    current = combine(csv_path16, csv_path32)
+    current["Description"] = current["Description"].apply(lambda x: clean_designation_names(x.lower()))
+    current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
 
-asn16 = (current_16
- .drop(current_16.columns.difference(['Number','Description']), axis=1)
- .groupby("Description")["Number"]
- .apply(list)
-.apply(aggregate_ranges)).to_dict()
+    asn = (current
+    .drop(current.columns.difference(['Number','Description']), axis=1)
+    .groupby("Description")["Number"]
+    .apply(list)
+    .apply(aggregate_ranges)).to_dict()
 
-asn32 = (current_32
- .drop(current_32.columns.difference(['Number','Description']), axis=1)
- .groupby("Description")["Number"]
- .apply(list)
-.apply(aggregate_ranges)).to_dict()
+    try:
+        del asn['unallocated']
+    except KeyError:
+        pass
+
+    return asn
+
+def iana_asn_compressed(csv_path16, csv_path32): 
+    current = combine(csv_path16, csv_path32)
+    current["Description"] = current["Description"].apply(lambda x: simplify(x.lower()))
+    current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
+
+    asn = (current
+    .drop(current.columns.difference(['Number','Description']), axis=1)
+    .groupby("Description")["Number"]
+    .apply(list)
+    .apply(aggregate_ranges)).to_dict()
+
+    try:
+        del asn['unallocated']
+    except KeyError:
+        pass
+
+    return asn
+
 
 if __name__ == "__main__":
-    if os.path.exists(args.path):
-        with gzip.open(args.path + "asn-16-bit.json.gz", "wt", encoding="ascii") as outfile:
-            json.dump(asn16, outfile)
-        with gzip.open(args.path + "asn-32-bit.json.gz", "wt", encoding="ascii") as outfile:
-            json.dump(asn32, outfile)
-    else:
-        print("directory does not exist")
+    try:
+        print(iana_asn_asignees(args.csv1, args.csv2), iana_asn_compressed(args.csv1, args.csv2))
+    except FileNotFoundError:
+        print("File does not exist")
 
 
