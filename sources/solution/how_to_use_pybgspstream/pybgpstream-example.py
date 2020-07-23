@@ -57,12 +57,18 @@ for elem in stream:
     # record fields can be accessed directly from elem
     # print (elem.fields)
     
+    # Get next-hop 
+    if "next-hop" in elem.fields:
+        next_hop = elem.fields["next-hop"]
+        
     # Get asns 
     if "as-path" in elem.fields:
         asns = elem.fields["as-path"].rstrip().split(" ")
+        
     # Get prefix 
     if "prefix" in elem.fields:
         prefix = elem.fields["prefix"]
+        
     
 
     
