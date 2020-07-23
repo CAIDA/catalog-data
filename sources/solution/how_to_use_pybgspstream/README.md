@@ -74,7 +74,7 @@ Alternatively, to install PyBGPStream from source either clone the [Github repos
  
  ### Explanation ###
  
-1. PyBGPStream is used to extract information from BGP collectors and BGP elems. See more information on BGP collectors [here]( https://learn.nsrc.org/bgp/route_collectors#:~:text=A%20route%20collector%20is%20usually,collector%20does%20not%20forward%20packets.)
+• PyBGPStream is used to extract information from BGP collectors and BGP elems. See more information on BGP collectors [here]( https://learn.nsrc.org/bgp/route_collectors#:~:text=A%20route%20collector%20is%20usually,collector%20does%20not%20forward%20packets.)
 
 The first step in each pybgpstream script is to import the modules and create a BGPStream instance. 
 
@@ -84,14 +84,35 @@ import pybgpstream
 stream = pybgpstream.BGPStream(
     from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
     collectors=["route-views.sg", "route-views.eqix"],
-    record_type="updates",  
-) 
+    record_type="updates",
+    # filter="peer 11666 and prefix more 210.180.0.0/16"
+    ) 
 ~~~
 
 The BGPStream instance contains a few added filters to narrow the stream - \
 • **from_time** : Specifies start time of the stream. `"2017-07-07 00:00:00"`\
-• **end_time**: \
-• **collectors**:\
-• **record_type**:
+• **until_time**: Specifies end time of the stream. \
+• **collectors**: Narrows the stream to specific collectors. \
+• **record_type**: `updates` narrows the stream to only updates (i.e not RIB dumps) \
+• **filter**: Specifies flexible filter conditions. More on filters [here]( https://github.com/CAIDA/libbgpstream/blob/master/FILTERING
+ )
 
+At this point we can start the stream, and repeatedly ask for new BGP elems. Each time a valid record is read, we extract from it the elems that it contains and print the record and elem fields. If a non-valid record is found, we do not attempt to extract elems.
+
+~~~python 
+for elem in stream:
+    # record fields can be accessed directly from elem
+    # print(elem)
+    print(elem.fields)
+~~~
+
+**PyBGPStream** can be used to - \
+• Map between MOAS ipv4 addresses and their prefixes \
+• Measure the extent of AS Path Inflation \
+• Find ipv4 addresses associated with certain communities 
+
+These scripts can be found [here]( https://bgpstream.caida.org/docs/tutorials/pybgpstream
+ ). 
+ 
+ 
  ## Caveats ## 
