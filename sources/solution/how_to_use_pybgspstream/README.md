@@ -15,7 +15,7 @@
 }
 ~~~
 
-The following solution provides an in-depth explanation of how to install and use PyBGPStream. 
+The following solution provides an in-depth explanation of how to install and use **PyBGPStream** with an example. 
 
  ## Introduction ##
 PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
@@ -25,7 +25,8 @@ PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) di
 
 ### Solution ###
 
-The following code snippet demonstrates the use of **PyBGPStream**.
+The following code snippet demonstrates the use of **PyBGPStream**.\
+The script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_use_pybgpstream/sources/solution/how_to_use_pybgspstream/pybgpstream-example.py ).
 
 ~~~python
 
@@ -91,7 +92,7 @@ stream = pybgpstream.BGPStream(
 
 The BGPStream instance contains a few added filters to narrow the stream - \
 • **from_time** : Specifies start time of the stream. `"2017-07-07 00:00:00"`\
-• **until_time**: Specifies end time of the stream. \
+• **until_time**: Specifies end time of the stream. `"2017-07-07 00:10:00 UTC"` \
 • **collectors**: Narrows the stream to specific collectors. \
 • **record_type**: `updates` narrows the stream to only updates (i.e not RIB dumps) \
 • **filter**: Specifies flexible filter conditions. More on filters [here]( https://github.com/CAIDA/libbgpstream/blob/master/FILTERING
