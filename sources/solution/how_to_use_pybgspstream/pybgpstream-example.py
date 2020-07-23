@@ -45,7 +45,7 @@ __email__ = "<pmpathak@ucsd.edu>"
 import pybgpstream
 
 
-# Create pybgpstream
+# Create pybgpstream instance
 stream = pybgpstream.BGPStream(
     from_time="2017-07-07 00:00:00", until_time="2017-07-07 00:10:00 UTC",
     collectors=["route-views.sg", "route-views.eqix"],
