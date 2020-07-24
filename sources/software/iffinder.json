@@ -3,11 +3,14 @@
     "name": "iffinder",
     "organization": "CAIDA",
     "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
-    "tags": [],
+    "tags": [
+        "ip address",
+         "alias resolution"
+    ],
     "availability": [
         {
-            "name": "",
-            "url": "",
+            "name": "public",
+            "url": "https://www.caida.org/tools/measurement/iffinder/",
             "tags": []
         }
     ],
