@@ -1,13 +1,12 @@
 ~~~
 {
-    "id": "iana_asn_allocation",
-    "name": "IANA ASN Allocations",
+    "id": "how_to_get_the_range_of_allocated_or_reserved_asns",
+    "name": "How to get the range of allocated or reserved asns?",
     "description": "The following solution will create two json files (one for 16-bit, one for 32-bit) listing the ranges in which AS numbers are reserved and allocated.",
-    "question": "How to get the range of reserved and allocated ASNs?"
+    "question": "How to get the range of reserved and allocated ASNs"
     tags:[
       "asn", 
       "iana", 
-      "ipv4", 
       "autonomous system"
     ]
 }
@@ -15,33 +14,28 @@
 
 ## Solution
 
-This solution will download two gzipped json files in the indicated download directory:
-- Current 16-bit allocations
-- Current 32-bit allocations
+This solution will return two dictionaries - one compressed (with only allocated and reserved keys) and one with designations. 
 
-**Usage**: `$ python3 current-asn.py -p [download path]`
+**Usage**: 
+
+The function `iana_asn_asignee` inputs two dataframe paths - one for the IANA's 16-bit asn csv file and one for IANA's 32-bit asn csv file, and returns a dictionary with designation names. The function `iana_asn_compressed` returns a dictionary with all designations converted to "allocated," revealing only the ranges of allocated and reserved numbers. 
+
+You may alternatively input a link to the csv files. The current IANA csv files can be accessed here:
+
+- 16-bit: https://www.iana.org/assignments/as-numbers/as-numbers-1.csv
+- 32-bit: https://www.iana.org/assignments/as-numbers/as-numbers-2.csv
+
+`$ python3 current-asn.py [16-bit csv file path/link] [32-bit csv file path/link]`
 
 ~~~python 
 import pandas as pd
 import argparse
 import os
-import json
-import gzip
-
-def dir_path(string):
-    if os.path.isdir(string):
-        return string
-    else:
-        raise NotADirectoryError(string)
-
-parser = argparse.ArgumentParser(description='Download current asn json ranges.')
-parser.add_argument('-p', '--path', type=dir_path, help='directory for download i.e. ../allocations/')
-args = parser.parse_args()
 
 
 def aggregate_ranges(ls):
     """
-    Aggregates consecutive lists of ranges into a single range.
+    Helper function that aggregates consecutive lists of ranges into a single range.
     """
     final = []
     i = 0
@@ -74,7 +68,7 @@ def aggregate_ranges(ls):
 
 def simplify(x):
     """
-    Returns either "reserved", "unassigned", or "allocated"
+    Helper function returns either "reserved", "unassigned", or "allocated"
     """
     if 'reserved' in x:
         return 'reserved'
@@ -83,47 +77,65 @@ def simplify(x):
     else:
         return 'allocated'
 
-def list_format(num): 
-    if type(num) == int:
-        num = str(num)
-    if '-' in num:
-        return [int(num.split('-')[0]), int(num.split('-')[1])]
+def clean_designation_names(x):
+    """
+    Helper function returns either "reserved", "unassigned", or "allocated"
+    """
+    if 'reserved' in x:
+        return 'reserved'
+    if 'unassigned' in x:
+        return 'unassigned'
     else:
-        return [int(num), int(num)]
-
-###### Reads in current csv files from IANA ######
-current_16 = pd.read_csv('https://www.iana.org/assignments/as-numbers/as-numbers-1.csv')
-current_32 = pd.read_csv('https://www.iana.org/assignments/as-numbers/as-numbers-2.csv')
+        return x.replace('assigned by', '').strip()
 
 
-###### Simplifies designations ######
-current_16["Description"] = current_16["Description"].apply(lambda x: simplify(x.lower()))
-current_32["Description"] = current_32["Description"].apply(lambda x: simplify(x.lower()))
+def combine(csv_path16, csv_path32):
+    """
+    Combines 16-bit and 32-bit csv files.
+    """   
+    current_16 = pd.read_csv(csv_path16)
+    current_32 = pd.read_csv(csv_path32)
+    current_32 = current_32.loc[current_32["Number"] != '0-65535']
+    return pd.concat([current_16, current_32])
 
-###### Aggregates separate rows to determine range of allocated/unallocated/reserved asn ######
-current_16["Number"] = current_16["Number"].apply(list_format)
-current_32["Number"]= current_32["Number"].apply(list_format)
+def iana_asn_asignees(csv_path16, csv_path32):
+    current = combine(csv_path16, csv_path32)
+    current["Description"] = current["Description"].apply(lambda x: clean_designation_names(x.lower()))
+    current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
 
-asn16 = (current_16
- .drop(current_16.columns.difference(['Number','Description']), axis=1)
- .groupby("Description")["Number"]
- .apply(list)
-.apply(aggregate_ranges)).to_dict()
+    asn = (current
+    .drop(current.columns.difference(['Number','Description']), axis=1)
+    .groupby("Description")["Number"]
+    .apply(list)
+    .apply(aggregate_ranges)).to_dict()
 
-asn32 = (current_32
- .drop(current_32.columns.difference(['Number','Description']), axis=1)
- .groupby("Description")["Number"]
- .apply(list)
-.apply(aggregate_ranges)).to_dict()
+    try:
+        del asn['unallocated']
+    except KeyError:
+        pass
 
-if __name__ == "__main__":
-    if os.path.exists(args.path):
-        with gzip.open(args.path + "asn-16-bit.json.gz", "wt", encoding="ascii") as outfile:
-            json.dump(asn16, outfile)
-        with gzip.open(args.path + "asn-32-bit.json.gz", "wt", encoding="ascii") as outfile:
-            json.dump(asn32, outfile)
-    else:
-        print("directory does not exist")
+    return asn
+
+def iana_asn_compressed(csv_path16, csv_path32): 
+    current = combine(csv_path16, csv_path32)
+    current["Description"] = current["Description"].apply(lambda x: simplify(x.lower()))
+    current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
+
+    asn = (current
+    .drop(current.columns.difference(['Number','Description']), axis=1)
+    .groupby("Description")["Number"]
+    .apply(list)
+    .apply(aggregate_ranges)).to_dict()
+
+    try:
+        del asn['unallocated']
+    except KeyError:
+        pass
+
+    return asn
+
+
+#print(iana_asn_asignees(csv1path, csv2path), iana_asn_compressed(csv1path, csv2path))
 ~~~
 
 ## Background
@@ -131,16 +143,17 @@ if __name__ == "__main__":
 ### What is ASN?
 
 - ASN is short for autonomous system numbers
-- ASNs are assigned to Autonomous Systems, which are sub networks that amalgamate to form the entire Internet network
+- ASNs are assigned to Autonomous Systems (AS), which are sub networks that amalgamate to form the Internet network
 - Autonomous systems are allocated to unique ASN first through IANA, then through their region's Regional Internet Registry
 - Information about the ASNs have been gathered from IANA, an organization that manages and records IP address and ASN allocations
 
 
-### Why does this solution contain two files?
-
-- ASNs began as 16-bit numbers, meaning that there are around 65,000 unique ASNs
-- Researchers realized that 16 bits would not be enough, and made ASNs 32-bit numbers instead
+## Why are two files needed?
+- ASNs began as 16-bit numbers, meaning that there were previously only 65,000 unique numbers. In the early 2010s, a steady growth of the Internet network revealed the need for expansion. They thus began using 32-bits to allow for more unique numbers
+- IANA currently formats the datasets so that 16-bit allocations are separate from 32-bit allocations. This solution will combine the two datasets to return all of the number ranges
+- Note: The numbers are directly transferable as 32-bit allocations start from where the 16-bit allocations end
 
 ## Caveats
-- This solution uses only the current dataset provided by IANA
-- Results contain only the range of allocated and reserved ASNs. To download files for rir allocations, view solution/mapping_asn_to_rir
+- This solution uses only the current datasets provided by IANA
+- This solution combines the 16-bit and 32-bit csv files, so both must be provided
+- You can access the 
