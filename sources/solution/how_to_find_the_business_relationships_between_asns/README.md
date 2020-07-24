@@ -5,7 +5,7 @@
     "id" : "how_to_find_the_business_relationship_between_asns",
     "visibility" : "public",
     "name" : "How to find the business relationship between asns",
-    "description" : "Using .as-rel file, or API to map a pair of given asns to their relationship.",
+    "description" : "Using .as-rel file, or AS Rank to map a pair of given asns to their relationship.",
     "links": [{"to":"dataset:as_relationships"}, {"to":"dataset:as_rank"}],
     "tags" : [
         "ASN",
@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship.The local file script only has one flag: -r which takes in s .as-rel file, this can be downloaded [here](http://data.caida.org/datasets/as-relationships/serial-1//). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
+The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in a .as-rel file, this can be downloaded [here](http://data.caida.org/datasets/as-relationships/serial-1//). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
 
 ## Usage
 
@@ -162,7 +162,7 @@ def get_relationship(asn0, asn1):
   - customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),
   - peer-to-peer (p2p),
   - sibling-to-sibling (s2s)
-- A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.
+- A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.
 - An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.
 - More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)
 
