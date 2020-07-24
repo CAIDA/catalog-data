@@ -48,10 +48,10 @@ for elem in stream:
 `elem.fields` returns a dictionary in the following format: \
 `{'next-hop': '', 'as-path': '', 'communities': {':', ':', ':', ':'}, 'prefix': ''}`
 
-• `next-hop`: The next IPv4 address hop \
-• `as-path`: The as path followed by the IPv4 address \
-• `communities`: \
-• `prefix`: The ipv4 address prefix 
+• `next-hop`: The next IP address hop \
+• `as-path`: The as path followed by the IP address \
+• `communities`: The communities (a set of strings in the canonical “asn:value” format)\
+• `prefix`: The IP address prefix 
 
 
 ## Background ##
