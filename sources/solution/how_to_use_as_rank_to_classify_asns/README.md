@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-This solution helps classify an asns based upon its paths to other asns. The following [script](api_2_class.py) calls the ASRank API, and gathers AS Relationships of give asns to determine their classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications which are stored in a dictionary labeled ```as_2_class``` for each asn which is then printed to STDOUT. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
+This solution helps classify an asn based upon relationship with other asns. The following [script](api_2_class.py) takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The script then prints to STDOUT the classification of requested asns. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
 
 ### Usage
 
@@ -31,7 +31,7 @@ python3 api_2_class.py -a 3356,10 > output.jsonl
 
 ## **<ins>Solution</ins>**
 
-Below is are two helper methods used to get a GraphQL query sent to the ASRank API, and parse it. The first method shows all the data that is taken from the API, with the most important being in the "node" segment. This segment is then given to the second helper method which updates a dictionary named ```as_2_data``` tracking an asn's provider and customers.
+Below is are two helper methods used to get a query from the ASRank API, and parse it. The first method shows all the data that is taken from ASRank, with the most important being in the "node" segment. This segment is then given to the second helper method which updates a dictionary named ```as_2_data``` tracking an asn's provider and customers.
 
 ~~~Python
 # Helper method of the formatted query.
@@ -97,7 +97,7 @@ def update_as_2_data(curr_line):
         as_2_data[asn1]["providers"].add(asn1)
 ~~~
 
-Below is a helper method used to iterate over ```as_2_data``` to update ```as_2_class``` by determining what classification to used based on a given asn's providers and customers.
+Below is a helper method used to iterate over ```as_2_data``` to update ```as_2_class``` by determining what classification to use.
 
 ~~~Python
 # Helper method use to update as_2_class with data from as_2_data.
@@ -107,7 +107,7 @@ def update_classifications():
 
     # Iterate over each asn in as_2_data.
     for asn in as_2_data:
-        # Edge Case: Create a dictionary for the asn if it doesnn't exist.
+        # Edge Case: Create a dictionary for the asn if it doesn't exist.
         if asn not in as_2_class:
             as_2_class[asn] = {
                 "asn" : asn,

@@ -209,7 +209,7 @@ def update_classifications():
 
     # Iterate over each asn in as_2_data.
     for asn in as_2_data:
-        # Edge Case: Create a dictionary for the asn if it doesnn't exist.
+        # Edge Case: Create a dictionary for the asn if it doesn't exist.
         if asn not in as_2_class:
             as_2_class[asn] = {
                 "asn" : asn,

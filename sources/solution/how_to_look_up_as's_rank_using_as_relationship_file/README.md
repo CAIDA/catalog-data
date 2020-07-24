@@ -1,4 +1,4 @@
-# How to use AS Rank to classify asns
+# How to use AS Relationships to classify asns
 
 ~~~json
 {
@@ -17,11 +17,11 @@
 
 ## **<ins>Introduction</ins>**
 
-This solution helps classify an asns based upon its paths to other asns. The following [script](rel_2_class.py) takes in all AS Relationships from a local .as-rel file to determine their classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications which are stored in a dictionary labeled ```as_2_class``` for each asn which is then printed to STDOUT. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
+This solution helps classify an asn based upon its relationships to other asns. The following [script](rel_2_class.py) takes in all AS Relationships from a local .as-rel file to determine every asn's classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The classifications for each asn is then printed to STDOUT. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
 
 ### Usage
 
-Below is an example of how to run the script on an Jan 1st, 2020 AS Relationship file, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downlaoded [here](http://data.caida.org/datasets/as-relationships/serial-1/).
+Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downlaoded [here](http://data.caida.org/datasets/as-relationships/serial-1/).
 - Note: This script can take in both .txt and encoded .bz2 files, so you don't have to decode the downloaded datasets.
 
 ```bash
