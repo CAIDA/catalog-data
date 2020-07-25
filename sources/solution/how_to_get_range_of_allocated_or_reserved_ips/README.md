@@ -67,7 +67,7 @@ print(parse_ip_assignees(sys.argv[1]), parse_ip_compressed(sys.argv[1]))
  ### What is a /8 address?
  
  - The first 8-bits of the IP address
- - Most specific; most /8 addresses are assigned to RIRs, or Regional Internet Registries, who allocate IP addresses to organizations in their respective regions
+ - Least specific; most /8 addresses are assigned to RIRs, or Regional Internet Registries, who allocate IP addresses to organizations in their respective regions
  
  ### What do the compressed designations mean?
 
