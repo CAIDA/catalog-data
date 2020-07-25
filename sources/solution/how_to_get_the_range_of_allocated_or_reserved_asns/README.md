@@ -20,12 +20,12 @@ This solution will return two dictionaries - one compressed (with only allocated
 
 The function `iana_asn_asignee` inputs two dataframe paths - one for the IANA's 16-bit asn csv file and one for IANA's 32-bit asn csv file, and returns a dictionary with designation names. The function `iana_asn_compressed` returns a dictionary with all designations converted to "allocated," revealing only the ranges of allocated and reserved numbers. 
 
-You may alternatively input a link to the csv files. The current IANA csv files can be accessed here:
+These links will automatically download the current IANA ASN space registries:
 
 - 16-bit: https://www.iana.org/assignments/as-numbers/as-numbers-1.csv
 - 32-bit: https://www.iana.org/assignments/as-numbers/as-numbers-2.csv
 
-`$ python3 current-asn.py [16-bit csv file path/link] [32-bit csv file path/link]`
+`$ python3 current-asn.py [16-bit csv file path] [32-bit csv file path]`
 
 ~~~python 
 import pandas as pd
