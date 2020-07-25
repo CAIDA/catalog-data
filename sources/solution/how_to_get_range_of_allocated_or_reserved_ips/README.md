@@ -19,10 +19,12 @@ This solution will return two dictionaries - one compressed (with only allocated
 
 **Usage**: 
 
-You can either enter a path to the current IANA IPv4 csv or enter this link, which will download the latest available IPv4space registry:
+You can either enter a path to the current IANA IPv4 csv.
+
+This link will download the latest available IPv4 space registry:
 https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv
 
-`python3 parse_ipv4.py [path/link to csv]`
+`python3 parse_ipv4.py [path to csv]`
 
 ~~~python
 import pandas as pd
