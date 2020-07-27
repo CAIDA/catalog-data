@@ -62,7 +62,7 @@ for elem in stream:
 • **Organization** : Each ASN can be mapped to an organization that controls multiple AS's over its network.\
 • **Customer** : ASes at lower levels are customers who pay ISPs (providers) at higher levels in exchange for access to the rest of the Internet. \
 • **Peer** : Peer-to-peer links (p2p) connects two ISPs who have agreed to exchange traffic on a quid pro quo basis. Peers should exchange traffic only between each other and each other's customers. \
-• **Origin AS**: An IP address and prefix can be traced back to an ASN, known as the origin AS. \
+• **Origin AS**: An IP address and prefix can be traced back to an AS, known as the origin AS. \
 • **Prefix**: An *IP address prefix* is the prefix of an IPv4 address. \
 • e.g. Consider the IPV4 address : 182.24.0.0/18 \
 • In this case, 18 is the length of the prefix. \
@@ -90,7 +90,6 @@ Alternatively, to install PyBGPStream from source either clone the [Github repos
  Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
  
  ### Explanation ###
- org, collector, peer, origin asn and prefix
 • PyBGPStream is used to extract information from BGP collectors and BGP elems. See more information on BGP collectors [here]( https://learn.nsrc.org/bgp/route_collectors#:~:text=A%20route%20collector%20is%20usually,collector%20does%20not%20forward%20packets.)
 
 The first step in each pybgpstream script is to import the modules and create a BGPStream instance. 
