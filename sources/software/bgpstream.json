@@ -73,11 +73,11 @@
             "label": "used by"
         },
         {
-            "to": "presentatino:measuring_and_monitoring_bgp",
+            "to": "presentation:measuring_and_monitoring_bgp",
             "label": "used by"
         },
         {
-            "to": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+            "to": "presentation:bgpstream_a_framework_for_bgp_data_analysis",
             "label": "used by"
         }
     ]
