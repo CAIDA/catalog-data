@@ -52,6 +52,8 @@ stream = pybgpstream.BGPStream(
     record_type="updates",  
 )
 
+# This should limit BGPStream to download the full first BGP dump
+stream.add_rib_period_filter(86400)
 
 for elem in stream:
     # record fields can be accessed directly from elem
