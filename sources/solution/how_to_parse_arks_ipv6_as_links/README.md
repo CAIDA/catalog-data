@@ -9,6 +9,8 @@
         "topology",
         "software/tools",
         "asn",
+        "ipv6"
+        "ipv6 prefix"
     ]
 }
 ~~~
