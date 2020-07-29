@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in a .as-rel file, this can be downloaded [here](http://data.caida.org/datasets/as-relationships/serial-1//). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
+The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in a .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
 
 ## Usage
 
