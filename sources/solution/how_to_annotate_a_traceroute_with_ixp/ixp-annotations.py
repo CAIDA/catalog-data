@@ -20,7 +20,6 @@ def annotate_traceroute(path, ips):
             ips_format.append(ipaddress.ip_address(ip))
         except: 
             ips_format.append(None)
-    ips_set = set(ips_format)
     final_set = [None]*len(ips)
 
 
@@ -29,13 +28,21 @@ def annotate_traceroute(path, ips):
         for line in f:
             obj = json.loads(line)
             name = obj['name']
-            for ip in obj['prefixes']['ipv4']:
-                hosts = set(ipaddress.ip_network(ip).hosts())
-                inside = hosts.intersection(ips_set)
-                if len(inside) != 0:
-                    for i, e in enumerate(ips_format):
-                        if e in inside:
-                            final_set[i] = name
+            recorded_ipv4 = list(map(ipaddress.ip_network, obj['prefixes']['ipv4']))
+            recorded_ipv6 = list(map(ipaddress.ip_network, obj['prefixes']['ipv6']))
+            for find in range(len(ips_format)):
+                ele = ips_format[find]
+                if ele != None:
+                    if ele.version == 4:
+                        for ipv4 in recorded_ipv4:
+                            if ele in ipv4:
+                                final_set[find] = name
+                    elif ele.version == 6:
+                         for ipv6 in recorded_ipv6:
+                            if ele in ipv6:
+                                final_set[find] = name 
+                    else:
+                        continue                      
     print(final_set)
 
 if __name__ == '__main__':
