@@ -66,12 +66,18 @@ def clean_designation_names(x):
 
 
 def combine(csv_path16, csv_path32):
+    """
+    Combines 16-bit and 32-bit csv files.
+    """   
     current_16 = pd.read_csv(csv_path16)
     current_32 = pd.read_csv(csv_path32)
     current_32 = current_32.loc[current_32["Number"] != '0-65535']
     return pd.concat([current_16, current_32])
 
 def iana_asn_asignees(csv_path16, csv_path32):
+    """
+    Takes in two IANA files (one for 32-bit and one for 16-bit asn) and returns a dictionary with ranges by assignee.
+    """
     current = combine(csv_path16, csv_path32)
     current["Description"] = current["Description"].apply(lambda x: clean_designation_names(x.lower()))
     current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
@@ -90,6 +96,9 @@ def iana_asn_asignees(csv_path16, csv_path32):
     return asn
 
 def iana_asn_compressed(csv_path16, csv_path32): 
+    """
+    Takes in two IANA files (one for 32-bit and one for 16-bit asn) and returns a dictionary with allocated or reserved ranges.
+    """
     current = combine(csv_path16, csv_path32)
     current["Description"] = current["Description"].apply(lambda x: simplify(x.lower()))
     current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
