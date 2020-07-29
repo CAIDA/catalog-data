@@ -21,7 +21,7 @@ This solution helps classify an asn based upon its relationships to other asns. 
 
 ### Usage
 
-Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downlaoded [here](http://data.caida.org/datasets/as-relationships/serial-1/).
+Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downlaoded [here](https://www.caida.org/data/as-relationships/).
 - Note: This script can take in both .txt and encoded .bz2 files, so you don't have to decode the downloaded datasets.
 
 ```bash
