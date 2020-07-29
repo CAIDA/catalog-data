@@ -28,6 +28,9 @@ import json
 import ipaddress
 
 def annotate_traceroute(path, ips):
+    """
+    Inputs a path to data file and a list of IP addresses and returns a corresponding list of IXP names.
+    """
     # Converts all into IP address format, appends None if not IP address
     ips_format = []
     for ip in ips:
