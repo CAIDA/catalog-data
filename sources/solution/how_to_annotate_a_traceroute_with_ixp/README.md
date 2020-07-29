@@ -15,7 +15,7 @@
 ## Solution
 
 Given a list of IP addresses, this following function will return a list of correseponding IXP names. It takes in the following arguments:
-- Path to jsonl file of IXPs, which can be found here: [ixps dataset](http://data.caida.org/datasets/ixps/) under ixs_*.jsonl files
+- Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/data/ixps/) under ixs_*.jsonl files
 - List of IP addresses
 
 **Usage:** `python3 ixp-annotations.py [path to jsonl file] [ip address] [ip address] ...`
