@@ -1427,6 +1427,11 @@
             "from": "software:bgpstream",
             "to": "tag:bgp"
         },
+        "software:internet_outage_detection_and_analysis": {
+            "from": "software:bgpstream",
+            "to": "software:internet_outage_detection_and_analysis",
+            "label": "used by"
+        },
         "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
             "from": "software:bgpstream",
             "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
@@ -1455,6 +1460,31 @@
         "paper:geo-locating_bgp_prefixes": {
             "from": "software:bgpstream",
             "to": "paper:geo-locating_bgp_prefixes",
+            "label": "used by"
+        },
+        "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today": {
+            "from": "software:bgpstream",
+            "to": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
+            "label": "used by"
+        },
+        "presentation:bgpstream_and_openbmp": {
+            "from": "software:bgpstream",
+            "to": "presentation:bgpstream_and_openbmp",
+            "label": "used by"
+        },
+        "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+            "from": "software:bgpstream",
+            "to": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "label": "used by"
+        },
+        "presentatino:measuring_and_monitoring_bgp": {
+            "from": "software:bgpstream",
+            "to": "presentatino:measuring_and_monitoring_bgp",
+            "label": "used by"
+        },
+        "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
+            "from": "software:bgpstream",
+            "to": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
             "label": "used by"
         }
     },
@@ -1895,6 +1925,80 @@
             "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         }
     },
+    "software:artemis": {
+        "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking": {
+            "from": "software:artemis",
+            "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+            "label": "used by"
+        },
+        "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+            "from": "software:artemis",
+            "to": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "label": "used by"
+        },
+        "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time": {
+            "from": "software:artemis",
+            "to": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "label": "used by"
+        },
+        "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time": {
+            "from": "software:artemis",
+            "to": "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "label": "used by"
+        },
+        "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        }
+    },
+    "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking": {
+        "software:artemis": {
+            "from": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+        "software:artemis": {
+            "from": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time": {
+        "software:artemis": {
+            "from": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time": {
+        "software:artemis": {
+            "from": "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
     "software:as_relationship": {
         "tag:topology": {
             "from": "software:as_relationship",
@@ -1907,10 +2011,406 @@
             "to": "software:asrank_api"
         }
     },
+    "software:internet_outage_detection_and_analysis": {
+        "software:bgpstream": {
+            "from": "software:internet_outage_detection_and_analysis",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
     "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
         "software:bgpstream": {
             "from": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
             "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today": {
+        "software:bgpstream": {
+            "from": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream_and_openbmp": {
+        "software:bgpstream": {
+            "from": "presentation:bgpstream_and_openbmp",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+        "software:bgpstream": {
+            "from": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "presentatino:measuring_and_monitoring_bgp": {
+        "software:bgpstream": {
+            "from": "presentatino:measuring_and_monitoring_bgp",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
+        "software:bgpstream": {
+            "from": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "software:coralreef": {
+        "tag:traffic": {
+            "from": "software:coralreef",
+            "to": "tag:traffic"
+        },
+        "software:dnsstat": {
+            "from": "software:coralreef",
+            "to": "software:dnsstat",
+            "label": "used by"
+        },
+        "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite": {
+            "from": "software:coralreef",
+            "to": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
+            "label": "used by"
+        },
+        "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators": {
+            "from": "software:coralreef",
+            "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
+            "label": "used by"
+        },
+        "presentation:trends_in_wide_area_ip_traffic_patterns": {
+            "from": "software:coralreef",
+            "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
+            "label": "used by"
+        }
+    },
+    "tag:traffic": {
+        "software:coralreef": {
+            "from": "tag:traffic",
+            "to": "software:coralreef"
+        }
+    },
+    "software:dnsstat": {
+        "software:coralreef": {
+            "from": "software:dnsstat",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite": {
+        "software:coralreef": {
+            "from": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators": {
+        "software:coralreef": {
+            "from": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "presentation:trends_in_wide_area_ip_traffic_patterns": {
+        "software:coralreef": {
+            "from": "presentation:trends_in_wide_area_ip_traffic_patterns",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "software:corsaro": {
+        "tag:trafic": {
+            "from": "software:corsaro",
+            "to": "tag:trafic"
+        },
+        "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
+            "from": "software:corsaro",
+            "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "label": "used by"
+        },
+        "software:ioda": {
+            "from": "software:corsaro",
+            "to": "software:ioda",
+            "label": "used by"
+        },
+        "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
+            "from": "software:corsaro",
+            "to": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
+            "label": "used by"
+        },
+        "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic": {
+            "from": "software:corsaro",
+            "to": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"
+        },
+        "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+            "from": "software:corsaro",
+            "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "label": "used by"
+        },
+        "paper:teaching_network_security_with_ip_darkspace_data": {
+            "from": "software:corsaro",
+            "to": "paper:teaching_network_security_with_ip_darkspace_data",
+            "label": "used by"
+        },
+        "paper:dust_2012_workshop_report": {
+            "from": "software:corsaro",
+            "to": "paper:dust_2012_workshop_report",
+            "label": "used by"
+        },
+        "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns": {
+            "from": "software:corsaro",
+            "to": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
+            "label": "used by"
+        },
+        "paper:analysis_of_internet-wide_probing_using_darknets": {
+            "from": "software:corsaro",
+            "to": "paper:analysis_of_internet-wide_probing_using_darknets",
+            "label": "used by"
+        },
+        "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report": {
+            "from": "software:corsaro",
+            "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
+            "label": "used by"
+        }
+    },
+    "tag:trafic": {
+        "software:corsaro": {
+            "from": "tag:trafic",
+            "to": "software:corsaro"
+        }
+    },
+    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
+        "software:corsaro": {
+            "from": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "software:ioda": {
+        "software:corsaro": {
+            "from": "software:ioda",
+            "to": "software:corsaro",
+            "label": "used by"
+        },
+        "tag:security": {
+            "from": "software:ioda",
+            "to": "tag:security"
+        },
+        "tag:darknet": {
+            "from": "software:ioda",
+            "to": "tag:darknet"
+        },
+        "tag:outages": {
+            "from": "software:ioda",
+            "to": "tag:outages"
+        },
+        "presentation:ioda-np_internet_outage_detection_and_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "label": "used by"
+        },
+        "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge": {
+            "from": "software:ioda",
+            "to": "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge",
+            "label": "used by"
+        },
+        "presentation:how_to_find_correlated_internet_failures": {
+            "from": "software:ioda",
+            "to": "presentation:how_to_find_correlated_internet_failures",
+            "label": "used by"
+        },
+        "presentation:who_shuts_down_the_internet_and_why": {
+            "from": "software:ioda",
+            "to": "presentation:who_shuts_down_the_internet_and_why",
+            "label": "used by"
+        },
+        "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption": {
+            "from": "software:ioda",
+            "to": "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+            "label": "used by"
+        },
+        "presentation:science_of_internet_security:_technology_and_experimental_research": {
+            "from": "software:ioda",
+            "to": "presentation:science_of_internet_security:_technology_and_experimental_research",
+            "label": "used by"
+        },
+        "presentation:mapping_our_way_to_a_more_secure_internet": {
+            "from": "software:ioda",
+            "to": "presentation:mapping_our_way_to_a_more_secure_internet",
+            "label": "used by"
+        },
+        "presentation:internet_outages_detection_&_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:internet_outages_detection_&_analysis",
+            "label": "used by"
+        },
+        "presentation:bgpstream": {
+            "from": "software:ioda",
+            "to": "presentation:bgpstream",
+            "label": "used by"
+        },
+        "presentation:bgpstream_2016": {
+            "from": "software:ioda",
+            "to": "presentation:bgpstream_2016",
+            "label": "used by"
+        },
+        "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
+            "label": "used by"
+        },
+        "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data": {
+            "from": "software:ioda",
+            "to": "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
+            "label": "used by"
+        },
+        "presentation:measuring_and_monitoring_bgp": {
+            "from": "software:ioda",
+            "to": "presentation:measuring_and_monitoring_bgp",
+            "label": "used by"
+        },
+        "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization": {
+            "from": "software:ioda",
+            "to": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+            "label": "used by"
+        },
+        "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis",
+            "label": "used by"
+        },
+        "presentation:ioda-nternet_outages:_detection_&_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:ioda-nternet_outages:_detection_&_analysis",
+            "label": "used by"
+        },
+        "presentation:ioda-internet_outages:_detection_&_analysis": {
+            "from": "software:ioda",
+            "to": "presentation:ioda-internet_outages:_detection_&_analysis",
+            "label": "used by"
+        },
+        "presentation:measuring_and_characterizing_ipv6_router_availability": {
+            "from": "software:ioda",
+            "to": "presentation:measuring_and_characterizing_ipv6_router_availability",
+            "label": "used by"
+        },
+        "presentation:monitoring_large-scale_internet_outages": {
+            "from": "software:ioda",
+            "to": "presentation:monitoring_large-scale_internet_outages",
+            "label": "used by"
+        },
+        "presentation:caida_research_overview": {
+            "from": "software:ioda",
+            "to": "presentation:caida_research_overview",
+            "label": "used by"
+        },
+        "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+            "from": "software:ioda",
+            "to": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "label": "used by"
+        },
+        "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm": {
+            "from": "software:ioda",
+            "to": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
+            "label": "used by"
+        },
+        "presentation:toward_realtime_visualization_of_garbage": {
+            "from": "software:ioda",
+            "to": "presentation:toward_realtime_visualization_of_garbage",
+            "label": "used by"
+        },
+        "presentation:a_coordinated_view_of_large-scale_internet_events": {
+            "from": "software:ioda",
+            "to": "presentation:a_coordinated_view_of_large-scale_internet_events",
+            "label": "used by"
+        },
+        "presentation:analysis_of_internet-wide_probing_using_darknets": {
+            "from": "software:ioda",
+            "to": "presentation:analysis_of_internet-wide_probing_using_darknets",
+            "label": "used by"
+        },
+        "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet": {
+            "from": "software:ioda",
+            "to": "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+            "label": "used by"
+        },
+        "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship": {
+            "from": "software:ioda",
+            "to": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
+            "label": "used by"
+        },
+        "software:libtimeseries": {
+            "from": "software:ioda",
+            "to": "software:libtimeseries",
+            "label": "used by"
+        }
+    },
+    "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
+        "software:corsaro": {
+            "from": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic": {
+        "software:corsaro": {
+            "from": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "to": "software:corsaro"
+        }
+    },
+    "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+        "software:corsaro": {
+            "from": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:teaching_network_security_with_ip_darkspace_data": {
+        "software:corsaro": {
+            "from": "paper:teaching_network_security_with_ip_darkspace_data",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:dust_2012_workshop_report": {
+        "software:corsaro": {
+            "from": "paper:dust_2012_workshop_report",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns": {
+        "software:corsaro": {
+            "from": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:analysis_of_internet-wide_probing_using_darknets": {
+        "software:corsaro": {
+            "from": "paper:analysis_of_internet-wide_probing_using_darknets",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report": {
+        "software:corsaro": {
+            "from": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
+            "to": "software:corsaro",
             "label": "used by"
         }
     },
@@ -1924,6 +2424,16 @@
         "dataset:internet_topology_data_kit": {
             "from": "software:iffinder",
             "to": "dataset:internet_topology_data_kit",
+            "label": "used by"
+        },
+        "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers": {
+            "from": "software:iffinder",
+            "to": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
+            "label": "used by"
+        },
+        "paper:traceroute_and_bgp_as_path_incongruities": {
+            "from": "software:iffinder",
+            "to": "paper:traceroute_and_bgp_as_path_incongruities",
             "label": "used by"
         }
     },
@@ -1944,30 +2454,279 @@
             "label": "used by"
         }
     },
+    "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers": {
+        "software:iffinder": {
+            "from": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
+            "to": "software:iffinder",
+            "label": "used by"
+        }
+    },
+    "paper:traceroute_and_bgp_as_path_incongruities": {
+        "software:iffinder": {
+            "from": "paper:traceroute_and_bgp_as_path_incongruities",
+            "to": "software:iffinder",
+            "label": "used by"
+        }
+    },
     "software:internet_health_report": {
         "tag:topology": {
             "from": "software:internet_health_report",
             "to": "tag:topology"
         }
     },
-    "software:ioda": {
-        "tag:security": {
-            "from": "software:ioda",
-            "to": "tag:security"
-        },
-        "tag:darknet": {
-            "from": "software:ioda",
-            "to": "tag:darknet"
-        },
-        "tag:outages": {
-            "from": "software:ioda",
-            "to": "tag:outages"
+    "presentation:ioda-np_internet_outage_detection_and_analysis": {
+        "software:ioda": {
+            "from": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge": {
+        "software:ioda": {
+            "from": "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:how_to_find_correlated_internet_failures": {
+        "software:ioda": {
+            "from": "presentation:how_to_find_correlated_internet_failures",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:who_shuts_down_the_internet_and_why": {
+        "software:ioda": {
+            "from": "presentation:who_shuts_down_the_internet_and_why",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption": {
+        "software:ioda": {
+            "from": "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:science_of_internet_security:_technology_and_experimental_research": {
+        "software:ioda": {
+            "from": "presentation:science_of_internet_security:_technology_and_experimental_research",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:mapping_our_way_to_a_more_secure_internet": {
+        "software:ioda": {
+            "from": "presentation:mapping_our_way_to_a_more_secure_internet",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:internet_outages_detection_&_analysis": {
+        "software:ioda": {
+            "from": "presentation:internet_outages_detection_&_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream": {
+        "software:ioda": {
+            "from": "presentation:bgpstream",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream_2016": {
+        "software:ioda": {
+            "from": "presentation:bgpstream_2016",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis": {
+        "software:ioda": {
+            "from": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data": {
+        "software:ioda": {
+            "from": "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:measuring_and_monitoring_bgp": {
+        "software:ioda": {
+            "from": "presentation:measuring_and_monitoring_bgp",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization": {
+        "software:ioda": {
+            "from": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis": {
+        "software:ioda": {
+            "from": "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:ioda-nternet_outages:_detection_&_analysis": {
+        "software:ioda": {
+            "from": "presentation:ioda-nternet_outages:_detection_&_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:ioda-internet_outages:_detection_&_analysis": {
+        "software:ioda": {
+            "from": "presentation:ioda-internet_outages:_detection_&_analysis",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:measuring_and_characterizing_ipv6_router_availability": {
+        "software:ioda": {
+            "from": "presentation:measuring_and_characterizing_ipv6_router_availability",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:monitoring_large-scale_internet_outages": {
+        "software:ioda": {
+            "from": "presentation:monitoring_large-scale_internet_outages",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:caida_research_overview": {
+        "software:ioda": {
+            "from": "presentation:caida_research_overview",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+        "software:ioda": {
+            "from": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm": {
+        "software:ioda": {
+            "from": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:toward_realtime_visualization_of_garbage": {
+        "software:ioda": {
+            "from": "presentation:toward_realtime_visualization_of_garbage",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:a_coordinated_view_of_large-scale_internet_events": {
+        "software:ioda": {
+            "from": "presentation:a_coordinated_view_of_large-scale_internet_events",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:analysis_of_internet-wide_probing_using_darknets": {
+        "software:ioda": {
+            "from": "presentation:analysis_of_internet-wide_probing_using_darknets",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet": {
+        "software:ioda": {
+            "from": "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship": {
+        "software:ioda": {
+            "from": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "software:kapar": {
         "dataset:internet_topology_data_kit": {
             "from": "software:kapar",
             "to": "dataset:internet_topology_data_kit",
+            "label": "used by"
+        },
+        "paper:internet-scale ip alias resolution techniques": {
+            "from": "software:kapar",
+            "to": "paper:internet-scale ip alias resolution techniques",
+            "label": "used by"
+        },
+        "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
+            "from": "software:kapar",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "label": "used by"
+        },
+        "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture": {
+            "from": "software:kapar",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "label": "used by"
+        },
+        "paper:ip_alias_resolution_techniques": {
+            "from": "software:kapar",
+            "to": "paper:ip_alias_resolution_techniques",
+            "label": "used by"
+        }
+    },
+    "paper:internet-scale ip alias resolution techniques": {
+        "software:kapar": {
+            "from": "paper:internet-scale ip alias resolution techniques",
+            "to": "software:kapar",
+            "label": "used by"
+        }
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
+        "software:kapar": {
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "to": "software:kapar",
+            "label": "used by"
+        }
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture": {
+        "software:kapar": {
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "to": "software:kapar",
+            "label": "used by"
+        },
+        "software:midar": {
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "to": "software:midar",
+            "label": "used by"
+        }
+    },
+    "paper:ip_alias_resolution_techniques": {
+        "software:kapar": {
+            "from": "paper:ip_alias_resolution_techniques",
+            "to": "software:kapar",
+            "label": "used by"
+        }
+    },
+    "software:libtimeseries": {
+        "software:ioda": {
+            "from": "software:libtimeseries",
+            "to": "software:ioda",
             "label": "used by"
         }
     },
@@ -1987,6 +2746,66 @@
         "software:manic": {
             "from": "software:manic",
             "to": "software:manic"
+        },
+        "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+            "from": "software:manic",
+            "to": "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "label": "used by"
+        },
+        "presentation:measurement_and_analysis_of_internet_congestion_manic": {
+            "from": "software:manic",
+            "to": "presentation:measurement_and_analysis_of_internet_congestion_manic",
+            "label": "used by"
+        },
+        "paper:inferring_persistent_interdomain_congestion": {
+            "from": "software:manic",
+            "to": "paper:inferring_persistent_interdomain_congestion",
+            "label": "used by"
+        },
+        "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet": {
+            "from": "software:manic",
+            "to": "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet",
+            "label": "used by"
+        },
+        "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+            "from": "software:manic",
+            "to": "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "label": "used by"
+        },
+        "paper:tcp_congestion_signatures": {
+            "from": "software:manic",
+            "to": "paper:tcp_congestion_signatures",
+            "label": "used by"
+        },
+        "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements": {
+            "from": "software:manic",
+            "to": "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements",
+            "label": "used by"
+        },
+        "paper:bdrmap:inference_of_borders_between_ip_networks": {
+            "from": "software:manic",
+            "to": "paper:bdrmap:inference_of_borders_between_ip_networks",
+            "label": "used by"
+        },
+        "paper:policy_challenges_in_mapping_internet_interdomain_congestion": {
+            "from": "software:manic",
+            "to": "paper:policy_challenges_in_mapping_internet_interdomain_congestion",
+            "label": "used by"
+        },
+        "paper:measuring_interdomain_congestion_and_its_impact_on_qoe": {
+            "from": "software:manic",
+            "to": "paper:measuring_interdomain_congestion_and_its_impact_on_qoe",
+            "label": "used by"
+        },
+        "paper:challenges_in_inferring_internet_interdomain_congestion": {
+            "from": "software:manic",
+            "to": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "label": "used by"
+        },
+        "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,": {
+            "from": "software:manic",
+            "to": "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,",
+            "label": "used by"
         }
     },
     "tag:interdomain_links": {
@@ -2001,10 +2820,140 @@
             "to": "software:manic"
         }
     },
+    "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+        "software:manic": {
+            "from": "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "presentation:measurement_and_analysis_of_internet_congestion_manic": {
+        "software:manic": {
+            "from": "presentation:measurement_and_analysis_of_internet_congestion_manic",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:inferring_persistent_interdomain_congestion": {
+        "software:manic": {
+            "from": "paper:inferring_persistent_interdomain_congestion",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet": {
+        "software:manic": {
+            "from": "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+        "software:manic": {
+            "from": "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:tcp_congestion_signatures": {
+        "software:manic": {
+            "from": "paper:tcp_congestion_signatures",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements": {
+        "software:manic": {
+            "from": "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:bdrmap:inference_of_borders_between_ip_networks": {
+        "software:manic": {
+            "from": "paper:bdrmap:inference_of_borders_between_ip_networks",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:policy_challenges_in_mapping_internet_interdomain_congestion": {
+        "software:manic": {
+            "from": "paper:policy_challenges_in_mapping_internet_interdomain_congestion",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:measuring_interdomain_congestion_and_its_impact_on_qoe": {
+        "software:manic": {
+            "from": "paper:measuring_interdomain_congestion_and_its_impact_on_qoe",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
+    "paper:challenges_in_inferring_internet_interdomain_congestion": {
+        "software:manic": {
+            "from": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "to": "software:manic",
+            "label": "used by"
+        },
+        "software:scamper": {
+            "from": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,": {
+        "software:manic": {
+            "from": "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,",
+            "to": "software:manic",
+            "label": "used by"
+        }
+    },
     "software:midar": {
         "dataset:internet_topology_data_kit": {
             "from": "software:midar",
             "to": "dataset:internet_topology_data_kit",
+            "label": "used by"
+        },
+        "software:vela": {
+            "from": "software:midar",
+            "to": "software:vela",
+            "label": "used by"
+        },
+        "paper:internet-scale_ipv4_alias_resolution_with_midar": {
+            "from": "software:midar",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "label": "used by"
+        },
+        "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture": {
+            "from": "software:midar",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "label": "used by"
+        },
+        "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing": {
+            "from": "software:midar",
+            "to": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
+            "label": "used by"
+        }
+    },
+    "software:vela": {
+        "software:midar": {
+            "from": "software:vela",
+            "to": "software:midar",
+            "label": "used by"
+        }
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
+        "software:midar": {
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "to": "software:midar",
+            "label": "used by"
+        }
+    },
+    "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing": {
+        "software:midar": {
+            "from": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
+            "to": "software:midar",
             "label": "used by"
         }
     },
@@ -2044,6 +2993,86 @@
             "from": "software:scamper",
             "to": "dataset:the_ipv4_routed_24_topology_dataset",
             "label": "used by"
+        },
+        "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+            "from": "software:scamper",
+            "to": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "label": "used by"
+        },
+        "paper:learning_to_extract_router_names_from_hostnames": {
+            "from": "software:scamper",
+            "to": "paper:learning_to_extract_router_names_from_hostnames",
+            "label": "used by"
+        },
+        "paper:the_impact_of_router_outages_on_the_as-level_internet": {
+            "from": "software:scamper",
+            "to": "paper:the_impact_of_router_outages_on_the_as-level_internet",
+            "label": "used by"
+        },
+        "paper:bdrmap_inference_of_borders_between_ip_networks": {
+            "from": "software:scamper",
+            "to": "paper:bdrmap_inference_of_borders_between_ip_networks",
+            "label": "used by"
+        },
+        "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy": {
+            "from": "software:scamper",
+            "to": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "label": "used by"
+        },
+        "paper:resilience_of_deployed_tcp_to_blind_attacks": {
+            "from": "software:scamper",
+            "to": "paper:resilience_of_deployed_tcp_to_blind_attacks",
+            "label": "used by"
+        },
+        "paper:measuring_and_characterizing_ipv6_router_availability": {
+            "from": "software:scamper",
+            "to": "paper:measuring_and_characterizing_ipv6_router_availability",
+            "label": "used by"
+        },
+        "paper:challenges_in_inferring_internet_interdomain_congestion": {
+            "from": "software:scamper",
+            "to": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "label": "used by"
+        },
+        "paper:speedtrap_internet-scale_ipv6_alias_resolution": {
+            "from": "software:scamper",
+            "to": "paper:speedtrap_internet-scale_ipv6_alias_resolution",
+            "label": "used by"
+        },
+        "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance": {
+            "from": "software:scamper",
+            "to": "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance",
+            "label": "used by"
+        },
+        "paper:revealing_mpls_tunnels_obscured_from_traceroute": {
+            "from": "software:scamper",
+            "to": "paper:revealing_mpls_tunnels_obscured_from_traceroute",
+            "label": "used by"
+        },
+        "paper:measured_impact_of_crooked_traceroute": {
+            "from": "software:scamper",
+            "to": "paper:measured_impact_of_crooked_traceroute",
+            "label": "used by"
+        },
+        "paper:measuring_path_mtu_discovery_behaviour": {
+            "from": "software:scamper",
+            "to": "paper:measuring_path_mtu_discovery_behaviour",
+            "label": "used by"
+        },
+        "paper:traceroute_probe_method_and_forward_ip_path_inference": {
+            "from": "software:scamper",
+            "to": "paper:traceroute_probe_method_and_forward_ip_path_inference",
+            "label": "used by"
+        },
+        "paper:inferring_and_debugging_path_mtu_discovery_failures": {
+            "from": "software:scamper",
+            "to": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+            "label": "used by"
+        },
+        "paper:identifying_ipv6_network_problems_in_the_dual-stack_world": {
+            "from": "software:scamper",
+            "to": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
+            "label": "used by"
         }
     },
     "dataset:macroscopic_topology_measurements": {
@@ -2056,6 +3085,111 @@
     "dataset:the_ipv4_routed_24_topology_dataset": {
         "software:scamper": {
             "from": "dataset:the_ipv4_routed_24_topology_dataset",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+        "software:scamper": {
+            "from": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:learning_to_extract_router_names_from_hostnames": {
+        "software:scamper": {
+            "from": "paper:learning_to_extract_router_names_from_hostnames",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:the_impact_of_router_outages_on_the_as-level_internet": {
+        "software:scamper": {
+            "from": "paper:the_impact_of_router_outages_on_the_as-level_internet",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:bdrmap_inference_of_borders_between_ip_networks": {
+        "software:scamper": {
+            "from": "paper:bdrmap_inference_of_borders_between_ip_networks",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy": {
+        "software:scamper": {
+            "from": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:resilience_of_deployed_tcp_to_blind_attacks": {
+        "software:scamper": {
+            "from": "paper:resilience_of_deployed_tcp_to_blind_attacks",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:measuring_and_characterizing_ipv6_router_availability": {
+        "software:scamper": {
+            "from": "paper:measuring_and_characterizing_ipv6_router_availability",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:speedtrap_internet-scale_ipv6_alias_resolution": {
+        "software:scamper": {
+            "from": "paper:speedtrap_internet-scale_ipv6_alias_resolution",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance": {
+        "software:scamper": {
+            "from": "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:revealing_mpls_tunnels_obscured_from_traceroute": {
+        "software:scamper": {
+            "from": "paper:revealing_mpls_tunnels_obscured_from_traceroute",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:measured_impact_of_crooked_traceroute": {
+        "software:scamper": {
+            "from": "paper:measured_impact_of_crooked_traceroute",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:measuring_path_mtu_discovery_behaviour": {
+        "software:scamper": {
+            "from": "paper:measuring_path_mtu_discovery_behaviour",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:traceroute_probe_method_and_forward_ip_path_inference": {
+        "software:scamper": {
+            "from": "paper:traceroute_probe_method_and_forward_ip_path_inference",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:inferring_and_debugging_path_mtu_discovery_failures": {
+        "software:scamper": {
+            "from": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:identifying_ipv6_network_problems_in_the_dual-stack_world": {
+        "software:scamper": {
+            "from": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
             "to": "software:scamper",
             "label": "used by"
         }
@@ -2080,49 +3214,19 @@
             "to": "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof",
             "label": "used by"
         },
-        "presentation:acm_computer_and_communications_security_(ccs)": {
+        "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "software:spoofer",
-            "to": "presentation:acm_computer_and_communications_security_(ccs)",
+            "to": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "label": "used by"
         },
-        "presentation:dhs_ddosd_pi_meeting": {
+        "presentation:the_best_available_data_on_source_address_validation": {
             "from": "software:spoofer",
-            "to": "presentation:dhs_ddosd_pi_meeting",
+            "to": "presentation:the_best_available_data_on_source_address_validation",
             "label": "used by"
         },
-        "presentation:dhs_r&d_showcase": {
+        "presentation:software_systems_for_surveying_spoofing_susceptibility": {
             "from": "software:spoofer",
-            "to": "presentation:dhs_r&d_showcase",
-            "label": "used by"
-        },
-        "presentation:one_conference": {
-            "from": "software:spoofer",
-            "to": "presentation:one_conference",
-            "label": "used by"
-        },
-        "presentation:nznog": {
-            "from": "software:spoofer",
-            "to": "presentation:nznog",
-            "label": "used by"
-        },
-        "presentation:nanog": {
-            "from": "software:spoofer",
-            "to": "presentation:nanog",
-            "label": "used by"
-        },
-        "presentation:ssac": {
-            "from": "software:spoofer",
-            "to": "presentation:ssac",
-            "label": "used by"
-        },
-        "presentation:ausngo": {
-            "from": "software:spoofer",
-            "to": "presentation:ausngo",
-            "label": "used by"
-        },
-        "presentation:dhs_s&t_ddos_defense_meeting": {
-            "from": "software:spoofer",
-            "to": "presentation:dhs_s&t_ddos_defense_meeting",
+            "to": "presentation:software_systems_for_surveying_spoofing_susceptibility",
             "label": "used by"
         }
     },
@@ -2147,65 +3251,23 @@
             "label": "used by"
         }
     },
-    "presentation:acm_computer_and_communications_security_(ccs)": {
+    "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
         "software:spoofer": {
-            "from": "presentation:acm_computer_and_communications_security_(ccs)",
+            "from": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "to": "software:spoofer",
             "label": "used by"
         }
     },
-    "presentation:dhs_ddosd_pi_meeting": {
+    "presentation:the_best_available_data_on_source_address_validation": {
         "software:spoofer": {
-            "from": "presentation:dhs_ddosd_pi_meeting",
+            "from": "presentation:the_best_available_data_on_source_address_validation",
             "to": "software:spoofer",
             "label": "used by"
         }
     },
-    "presentation:dhs_r&d_showcase": {
+    "presentation:software_systems_for_surveying_spoofing_susceptibility": {
         "software:spoofer": {
-            "from": "presentation:dhs_r&d_showcase",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:one_conference": {
-        "software:spoofer": {
-            "from": "presentation:one_conference",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:nznog": {
-        "software:spoofer": {
-            "from": "presentation:nznog",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:nanog": {
-        "software:spoofer": {
-            "from": "presentation:nanog",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:ssac": {
-        "software:spoofer": {
-            "from": "presentation:ssac",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:ausngo": {
-        "software:spoofer": {
-            "from": "presentation:ausngo",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:dhs_s&t_ddos_defense_meeting": {
-        "software:spoofer": {
-            "from": "presentation:dhs_s&t_ddos_defense_meeting",
+            "from": "presentation:software_systems_for_surveying_spoofing_susceptibility",
             "to": "software:spoofer",
             "label": "used by"
         }
