@@ -4,7 +4,7 @@
     "organization": "CAIDA",
     "description": "Graph-based IP alias resolution.",
     "tags": [],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "",

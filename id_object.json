@@ -58,7 +58,7 @@
         "organization": "CAIDA",
         "description": " CAIDA deploys and maintains a globally distributed measurement platform we call Archipelago (Ark). We grow the infrastructure by distributing hardware measurement nodes (2nd gen. Raspberry Pi) with as much geographical and topological diversity as we can to improve our view of the global Internet. Our primary goals with the Ark infrastructure are to:<br> <ul><li> reduce the effort needed to develop and deploy sophisticated large-scale measurements, and</li> <li>provide a step toward a community-oriented measurement infrastructure by allowing collaborators to run their vetted measurement tasks on a security-hardened distributed platform.</li></ul><br> Ark is tailored specifically for active network measurement. This allows Ark to be simpler than some other general-purpose distributed experimental platforms, and it allows us to concentrate on providing facilities that directly address the needs of networking research. In particular, we provide a facility for communication and coordination that makes it easier to write distributed measurements that must work together to achieve a goal. We are working on providing a high-level API to ease the challenges of writing measurement tools. Our goal is to lower the barrier to bringing novel and interesting measurement techniques to life.",
         "dateStart": "2007/02/01/ 00:00:00",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -77,8 +77,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:file": {
         "id": "tag:file",
@@ -122,7 +122,7 @@
         "description": "The AS to Organization Mapping Dataset contains the results of applying CAIDAs method to map Autonomous Systems (AS) to organizations to our quarterly bulk dumps of WHOIS databases from the five Regional Internet Registries, ARIN, LACNIC, RIPE AFRINIC and APNIC, and two National Internet Registries, KRNIC and JPNIC.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -141,8 +141,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:ownership": {
         "id": "tag:ownership",
@@ -193,7 +193,7 @@
         "description": "This dataset contains IPv4/IPv6 Prefix-to-Autonomous System (AS) mappings derived from RouteViews data. Files are created on a daily basis, starting from 2005-05-09 for IPv4 and 2007-01-01 for IPv6. The file format is line-oriented, with one prefix-AS mapping per line. The tab-separated fields are:IP Prefixes, prefix length, and AS number.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -212,8 +212,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:bgp": {
         "id": "tag:bgp",
@@ -252,7 +252,7 @@
         "organization": "CAIDA",
         "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
         "dateStart": "2013/02/01/ 00:00:00",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -270,8 +270,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:asrank": {
         "id": "dataset:asrank",
@@ -281,7 +281,7 @@
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -300,8 +300,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "license:bsd_4_clause_uc": {
         "id": "license:bsd_4_clause_uc",
@@ -326,7 +326,7 @@
         "name": "AS Rank",
         "organization": "CAIDA",
         "description": "is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -345,8 +345,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "software:asrank_ui": {
         "id": "software:asrank_ui",
@@ -354,7 +354,7 @@
         "name": "AS Rank UI",
         "organization": "CAIDA",
         "description": "User Interface to AS Rank",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -373,8 +373,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:bgp_communities": {
         "id": "dataset:bgp_communities",
@@ -384,7 +384,7 @@
         "description": "A BGP Community is an attribute (standardized in RFC1997 in 1996) that provides meta-information about prefixes announced to customer and peer networks. The attribute is represented by an X:Y pair, where X and Y are two 16-bit values (extended communities use four octets). By convention, the first two octets encode the Autonomous System Number (ASN) of the operator that sets the community. The next two octets encode an arbitrary value to denote some property relevant to routing policy. Unfortunately, the specific values and semantics of this BGP attribute are not standardized. Also, the community is a transitive optional attribute, meaning that BGP implementations do not have to recognize this attribute. It is at the network operator's discretion to accept it or pass it on to another AS.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -403,8 +403,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:bgpmon": {
         "id": "dataset:bgpmon",
@@ -460,7 +460,7 @@
         "organization": "CAIDA",
         "description": "IODA's visualizations can contain both false positives and false negatives: A sudden drop in a time series is not guaranteed to be an outage, so be careful when interpreting IODA's data.",
         "dateStart": "2015/03/01/ 00:00:00",
-        " availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url"
@@ -480,8 +480,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:outages": {
         "id": "tag:outages",
@@ -549,7 +549,7 @@
         "description": "The ITDK contains data about connectivity and routing gathered from a large cross-section of the global Internet. This dataset is useful for studying the topology of the Internet at the router-level, among other uses.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -567,8 +567,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:learning_regexes_to_extract_router_names_from_hostnames": {
         "id": "paper:learning_regexes_to_extract_router_names_from_hostnames",
@@ -600,7 +600,7 @@
         "description": "Commercial geolocation database with a free lower grade version.",
         "dateStart": "2007/02/01/ 00:00:00",
         "status": "ongoing",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -616,8 +616,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:geographic": {
         "id": "tag:geographic",
@@ -765,20 +765,14 @@
         "__typename": "group",
         "name": "AS Rank",
         "description": "A Ranking of the Internet's Automous Systems",
-        "availability": [
-            {
-                "format": "format",
-                "url": "url"
-            }
-        ],
         "tags": [
             "tag:topology",
             "tag:security",
             "tag:software/tools"
         ],
         "dateCreated": "2020/07/17 12:34:19",
-        "dateLastUpdated": "2020/07/17 12:38:03",
-        "date": "2020/07/17 12:38:03"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:software/tools": {
         "id": "tag:software/tools",
@@ -1353,7 +1347,7 @@
         "name": "Netacuity",
         "organization": "Digital Elements",
         "description": "IP Geolocation Service",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -1372,8 +1366,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:2019_bgp_hijacking_classification": {
         "id": "paper:2019_bgp_hijacking_classification",
@@ -1461,7 +1455,7 @@
         "name": "BGPStream",
         "organization": "CAIDA",
         "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -1480,8 +1474,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
         "id": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
@@ -2149,7 +2143,7 @@
         "__typename": "software",
         "name": "PeeringDB",
         "description": "PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions.<br>The database is a non-profit, community-driven initiative run and promoted by volunteers. It is a public tool for the growth and good of the Internet. Join the community and support the continued development of the Internet.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2165,8 +2159,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:euro-ix_ixp_service_matrix": {
         "id": "dataset:euro-ix_ixp_service_matrix",
@@ -2479,7 +2473,7 @@
         "name": "ARTEMIS",
         "organization": "CAIDA",
         "description": "Measures and analyzes passive Internet traffic monitor data.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2493,8 +2487,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
         "id": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
@@ -2552,7 +2546,7 @@
         "name": "AS Relationship",
         "organization": "CAIDA",
         "description": "Measures an AS's centrality",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2570,8 +2564,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:ui": {
         "id": "tag:ui",
@@ -2667,7 +2661,7 @@
         "name": "CoralReef",
         "organization": "CAIDA",
         "description": "Measures and analyzes passive Internet traffic monitor data.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2683,8 +2677,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/30 10:57:54",
-        "date": "2020/07/30 10:57:54"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:traffic": {
         "id": "tag:traffic",
@@ -2740,7 +2734,7 @@
         "name": "Corsaro",
         "organization": "CAIDA",
         "description": "Extensible framework for large-scale analysis of passive trace data.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2756,8 +2750,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/30 10:57:54",
-        "date": "2020/07/30 10:57:54"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:trafic": {
         "id": "tag:trafic",
@@ -2784,7 +2778,7 @@
         "name": "IODA",
         "organization": "CAIDA",
         "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2804,8 +2798,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
         "id": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
@@ -2912,7 +2906,7 @@
         "name": "HI-CUBE",
         "organization": "CAIDA",
         "description": "HI-CUBE is a web-based prototype platform for processing, storing, investigating, and correlating diverse streams of large-scale Internet security-related data.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2930,8 +2924,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "software:iffinder": {
         "id": "software:iffinder",
@@ -2939,7 +2933,7 @@
         "name": "iffinder",
         "organization": "CAIDA",
         "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -2953,8 +2947,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:internet_topology_data_kit": {
         "id": "dataset:internet_topology_data_kit",
@@ -2995,7 +2989,7 @@
         "name": "Internet Health Report",
         "organization": "IIJ Labs",
         "description": "Measures an AS's centrality",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3010,8 +3004,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "presentation:ioda-np_internet_outage_detection_and_analysis": {
         "id": "presentation:ioda-np_internet_outage_detection_and_analysis",
@@ -3208,7 +3202,7 @@
         "name": "kapar",
         "organization": "CAIDA",
         "description": "Graph-based IP alias resolution.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3222,8 +3216,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "license:gnu general public license version 2": {
         "id": "license:gnu general public license version 2",
@@ -3282,7 +3276,7 @@
         "name": "libtimeseries",
         "organization": "CAIDA",
         "description": "C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3296,8 +3290,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/30 10:57:54",
-        "date": "2020/07/30 10:57:54"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "license:bsd_2_clause": {
         "id": "license:bsd_2_clause",
@@ -3312,7 +3306,7 @@
         "name": "MANIC",
         "organization": "CAIDA",
         "description": "The MANIC project -- Measurement and Analysis of Interdomain Congestion -- has developed a prototype system to monitor interdomain links and their congestion state, in order to provide empirical grounding to debates related to interdomain congestion.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3332,8 +3326,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:interdomain_links": {
         "id": "tag:interdomain_links",
@@ -3481,7 +3475,7 @@
         "name": "MIDAR",
         "organization": "CAIDA",
         "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3495,8 +3489,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "software:vela": {
         "id": "software:vela",
@@ -3504,7 +3498,7 @@
         "name": "Vela",
         "organization": "CAIDA",
         "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3518,8 +3512,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "paper:internet-scale_ipv4_alias_resolution_with_midar": {
         "id": "paper:internet-scale_ipv4_alias_resolution_with_midar",
@@ -3549,7 +3543,7 @@
         "name": "Motu",
         "organization": "CAIDA",
         "description": "Dealiases pairs of IPv4 addresses.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3563,8 +3557,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:web": {
         "id": "tag:web",
@@ -3580,7 +3574,7 @@
         "name": "Periscope",
         "organization": "",
         "description": "Periscope is a unified interface to public looking glass servers.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3594,8 +3588,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "software:pyasn": {
         "id": "software:pyasn",
@@ -3603,7 +3597,7 @@
         "name": "pyasn",
         "organization": "Hadi Asghari",
         "description": "pyasn is a Python extension module that enables very fast IP address to Autonomous System Number lookups.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3622,8 +3616,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "tag:code": {
         "id": "tag:code",
@@ -3647,7 +3641,7 @@
         "name": "scamper",
         "organization": "CAIDA",
         "description": "IPv6 and IPv4 active traceroute probing and ping.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3663,8 +3657,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "dataset:macroscopic_topology_measurements": {
         "id": "dataset:macroscopic_topology_measurements",
@@ -3859,7 +3853,7 @@
         "name": "Spoofer",
         "organization": "CAIDA",
         "description": "Source address validation measurement program that measures susceptibility to spoofed source address IP packets.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3875,8 +3869,8 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     },
     "license:gnu general public license version 3": {
         "id": "license:gnu general public license version 3",
@@ -3944,7 +3938,7 @@
         "__typename": "software",
         "name": "U.S. National Weather Serice:Severe Weather Alert",
         "description": "A powerful weather system combined with a lack of ice on the Great Lakes will produce significant amounts of snow, up to 3 to 4 feet in places, and blizzard conditions. Travel may be difficult to impossible. Cold air behind this front will bring below normal temperatures to the eastern third of the U.S., including potential for freezing overnight temperatures in Florida.",
-        "availability": [
+        "resources": [
             {
                 "name": "name",
                 "url": "url",
@@ -3959,7 +3953,7 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 11:29:15",
+        "date": "2020/07/30 11:29:15"
     }
 }

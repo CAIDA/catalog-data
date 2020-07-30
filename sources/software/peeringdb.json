@@ -6,7 +6,7 @@
         "IXP",
         "topology"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.peeringdb.com/",

@@ -7,7 +7,7 @@
         "topology",
         "BGP"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://bgpstream.caida.org/docs/api",
