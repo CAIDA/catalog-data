@@ -25,6 +25,18 @@
         },
         {
             "to": "dataset:asrank"
+        },
+        {
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:as_relationships:_inference_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
         }
     ]
 }
