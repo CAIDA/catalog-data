@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution has two scripts. One that handles a [local input](pair_2_rel.py), and one that takes no input, but [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, pair_2_rel which maps a pair of given asns to their relationship. The local file script only has one flag: -r which takes in a .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). While the api script takes in no input, and just calls the api until all as relationships have been found, this script is significantly slower compared to the local file version.
+The following solution has two scripts. One script handles a [local input](pair_2_rel.py), and one that [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, ```pair_2_rel``` which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.
 
 ## Usage
 
@@ -35,7 +35,6 @@ pip3 install graphqlclient
 ```
 
 Below is an example of how to run the api script to create a mapping between as pairs and their relationships. 
-- Note: This code takes a significantly longer amount of time to run compared to the local file version.
 
 ```bash
 python3 api_2_rel.py
@@ -43,7 +42,7 @@ python3 api_2_rel.py
 
 ## **<ins>Solution</ins>**
 
-Below is the helper method used to parse a given line of the .as-rel file in the [local file script](pair_2_rel.py). This method updates the dictionary, pair_2_rel by sorting the two asns by value prior to mapping the pair to their relationship.
+Below is the helper method used to parse a given line of the .as-rel file in the [local file script](pair_2_rel.py). This method updates the dictionary, ```pair_2_rel``` by sorting the two asns by value prior to mapping the pair to their relationship.
 
 ~~~Python
 # Parse a given line of the as_rel_file and map two ASes to their relationship.
@@ -190,13 +189,5 @@ Below is an example of the possible lines found in a .as-rel file. For the purpo
 
 ~~~text
 # source:topology|BGP|<data>|<system>|<monitor>
-# step 1: set peering in clique
-# step 2: initial provider assignment
-# step 3: providers for stub ASes #1
-# step 4: provider to larger customer
-# step 5: provider-less networks
-# step 6: c2p for stub-clique relationships
-# step 7: fold p2p links
-# step 8: everything else is p2p
 <asn0>|<asn1>|<relationship>
 ~~~
