@@ -18,6 +18,6 @@
         {
             "to": "software:ioda",
             "label": "used by"
-        },
+        }
     ]
 }

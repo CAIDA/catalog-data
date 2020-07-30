@@ -38,6 +38,6 @@
         {
             "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
-        },
+        }
     ]
 }
