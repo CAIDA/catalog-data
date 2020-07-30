@@ -38,6 +38,34 @@
             "label": "used by"
         },
         {
+            "to": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)",
+            "label": "used by"
+        },
+        {
             "to": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
             "label": "used by"
         },
