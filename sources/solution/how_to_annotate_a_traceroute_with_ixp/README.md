@@ -40,8 +40,8 @@ def annotate_traceroute(path, ips):
             ips_format.append(None)
     final_set = [None]*len(ips)
 
-
     with open(path) as f:
+        # skips first row (comment)
         next(f)
         for line in f:
             obj = json.loads(line)
@@ -51,6 +51,7 @@ def annotate_traceroute(path, ips):
             for find in range(len(ips_format)):
                 ele = ips_format[find]
                 if ele != None:
+                    # checks if ipv4 or ipv6
                     if ele.version == 4:
                         for ipv4 in recorded_ipv4:
                             if ele in ipv4:
