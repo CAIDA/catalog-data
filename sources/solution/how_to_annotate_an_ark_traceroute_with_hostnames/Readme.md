@@ -1,16 +1,16 @@
-~~~json
+~~~
 {
-    "id":"solution:how_to_annotate_an_ark_traceroute_with_hostnames",
+    "id": "how_to_annotate_an_ark_traceroute_with_hostnames",
     "visibility": "public",
     "name": "How to annotate an ark traceroute with hostnames?",
-    "description":"",
+    "description": " ",
     "links": [{}],
     "tags": [
     ]
 }
 ~~~
 ## **<ins> Introduction </ins>**
-The solution parses the ark warts file and merges it with the corresponding ip2hostname file.
+The solution obtains traceroutes from ark warts file and annotates IP addresses with hostnames from ip2hostname file.
 
 
 ### Explanation of the data fields ###
@@ -39,42 +39,14 @@ Download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.
 ## **<ins> Solution </ins>**
 The following script returns a dictionary 
 
-**usage**: `parse_ark_traceroute.py -w [warts file] -i [dns file]`
+**usage**: `parse_ark_traceroute.py -w [warts file] -i [ip2hostname file]`
+
+Below is the method used to load IP addresss with corresponding hostnames into the dictionary `dns`. `dns` returns the data in the following format:`{'ip address': 'hostname'}`
  ~~~python
-import argparse
-import re
-import warts
-from warts.traceroute import Traceroute
-
-directory = "../../../../dataset/" #add file name behind
-
-parser = argparse.ArgumentParser()
-parser.add_argument("-t", type=str, dest="traceroute_file", default=None, help="Please enter the file name of warts file")
-parser.add_argument("-d", type=str, dest="dns_file", default=None, help="Please enter the file name of ip2hostname file") 
-args = parser.parse_args()
-
-re_warts = re.compile(r".warts$")
-re_txt = re.compile(r".txt$")
-re_ipv4_traceroute = re.compile(r"team-probing")
-re_ipv6_traceroute = re.compile(r"topo-v6.l8")
-re_ipv4_dns = re.compile(r"dns-names.l7")
-re_ipv6_dns = re.compile(r"dns-names.l8")
-
-if not re_warts.search(args.traceroute_file):
-    print("The file type of the first argument should be .warts")
-elif not re_txt.search(args.dns_file):
-    print("The file type of the second argument should be .txt")
-elif re_ipv4_traceroute.search(args.traceroute_file) and re_ipv6_dns.search(args.dns_file):
-    print("Parsing Ipv4 traceroute file should use Ipv4 DNS file")
-elif re_ipv6_traceroute.search(args.traceroute_file) and re_ipv4_dns.search(args.dns_file):
-    print("Parsing Ipv6 traceroute file should use Ipv6 DNS file") 
-else:
-
-    traceroute = []
+# reading DNS file
+def load_dns_file(dns_file):
     dns = {}
-
-    # reading DNS file
-    with open(directory + args.dns_file) as f:
+    with open(dns_file) as f:
         for line in f:
             line = line.split()
             if len(line)==2:
@@ -83,8 +55,16 @@ else:
                 continue
             else:
                 dns[line[1]] = line[2]
+    return dns
+~~~
+Below is the method used to parse .warts file and return a list with traceroutes. The returning format: `[['source', 'hop_1', 'hop_2', ... , 'hop_n', 'destination']]`
 
-    with open(directory + args.traceroute_file, 'rb') as f:
+~~~python
+import warts
+from warts.traceroute import Traceroute
+def parse_ark_warts(warts_file):
+    traceroute = []
+    with open(warts_file, 'rb') as f:
 
         traceroute_list = []
         while True:
