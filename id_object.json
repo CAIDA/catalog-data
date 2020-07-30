@@ -1101,7 +1101,8 @@
         "name": "AS Relationships, Customer Cones, and Validation",
         "datePublished": "2013/10/01/ 00:00:00",
         "description": "Business relationships between ASes in the Internet are typically confidential, yet knowledge of them is essential to understand many aspects of Internet structure, performance, dynamics, and evolution. We present a new algorithm to infer these relationships using BGP paths. Unlike previous approaches, our algorithm does not assume the presence (or seek to maximize the number) of valley-free paths, instead relying on three assumptions about the Internet's inter-domain structure: (1) an AS enters into a provider relationship to become globally reachable; and (2) there exists a peering clique of ASes at the top of the hierarchy, and (3) there is no cycle of p2c links. We assemble the largest source of validation data for AS-relationship inferences to date, validating 34.6% of our 126,082 c2p and p2p inferences to be 99.6% and 98.7% accurate, respectively. Using these inferred relationships, we evaluate three algorithms for inferring each AS's customer cone, defined as the set of ASes an AS can reach using customer links. We demonstrate the utility of our algorithms for studying the rise and fall of large transit providers over the last fifteen years, including recent claims about the flattening of the AS-level topology and the decreasing influence of 'tier-1' ASes on the global Internet.",
-        "caida_paper_id": "paper673",
+        "pubdb_id": "paper673",
+        "venue": "venue:passive_and_active_measurement_pam",
         "authors": [
             {
                 "person": "person:luckie_matthew",
@@ -1133,7 +1134,7 @@
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/18 16:21:02",
-        "dateLastUpdated": "2020/07/18 16:43:13",
+        "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2013/10/01/ 00:00:00"
     },
     "person:huffaker_bradley": {
@@ -2495,6 +2496,56 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "paper",
+        "name": "artemis neutralizing bgp hijacking within a minute",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking": {
+        "id": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+        "__typename": "paper",
+        "name": "a survey among network operators on bgp prefix hijacking",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+        "id": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time": {
+        "id": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time": {
+        "id": "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "software:as_relationship": {
         "id": "software:as_relationship",
         "__typename": "software",
@@ -2549,6 +2600,17 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "software:internet_outage_detection_and_analysis": {
+        "id": "software:internet_outage_detection_and_analysis",
+        "__typename": "software",
+        "name": "internet outage detection and analysis",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
         "id": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
         "__typename": "paper",
@@ -2559,6 +2621,45 @@
         "dateCreated": "2020/07/17 13:22:21",
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
+    },
+    "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today": {
+        "id": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
+        "__typename": "paper",
+        "name": "to filter or not to filter measuring the benefits of registering in the rpki today",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream_and_openbmp": {
+        "id": "presentation:bgpstream_and_openbmp",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+        "id": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentatino:measuring_and_monitoring_bgp": {
+        "id": "presentatino:measuring_and_monitoring_bgp",
+        "__typename": "presentatino",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
+        "id": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+        "__typename": "presentatino",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:coralreef": {
         "id": "software:coralreef",
@@ -2576,12 +2677,62 @@
         "licenses": [
             "license:bsd_4_clause_uc"
         ],
-        "tags": [],
+        "tags": [
+            "tag:traffic"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "tag:traffic": {
+        "id": "tag:traffic",
+        "__typename": "tag",
+        "name": "traffic",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "software:dnsstat": {
+        "id": "software:dnsstat",
+        "__typename": "software",
+        "name": "dnsstat",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite": {
+        "id": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
+        "__typename": "paper",
+        "name": "the architecture of coralreef an internet traffic monitoring software suite",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators": {
+        "id": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
+        "__typename": "paper",
+        "name": "the coralreef software suite as a tool for system and network administrators",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:trends_in_wide_area_ip_traffic_patterns": {
+        "id": "presentation:trends_in_wide_area_ip_traffic_patterns",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:corsaro": {
         "id": "software:corsaro",
@@ -2599,12 +2750,161 @@
         "licenses": [
             "license:bsd_4_clause_uc"
         ],
+        "tags": [
+            "tag:trafic"
+        ],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/17 13:22:21",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "tag:trafic": {
+        "id": "tag:trafic",
+        "__typename": "tag",
+        "name": "trafic",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
+        "id": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+        "__typename": "paper",
+        "name": "analysis of unidirectional ip traffic to darkspace with an educational data kit",
         "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "software:ioda": {
+        "id": "software:ioda",
+        "__typename": "software",
+        "name": "IODA",
+        "organization": "CAIDA",
+        "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": [
+                    "tag:ui"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:bsd_4_clause_uc"
+        ],
+        "tags": [
+            "tag:security",
+            "tag:darknet",
+            "tag:outages"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
+    },
+    "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
+        "id": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
+        "__typename": "paper",
+        "name": "millions of targets under attack a macroscopic characterization of the dos ecosystem",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic": {
+        "id": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
+        "__typename": "paper",
+        "name": "the day after patch tuesday effects observable in ip darkspace traffic",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+        "id": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+        "__typename": "dataset",
+        "name": "ucsd network telescope aggregated flow dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+        "id": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+        "__typename": "paper",
+        "name": "gaining insight into as-level outages through analysis of internet background radiation",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:teaching_network_security_with_ip_darkspace_data": {
+        "id": "paper:teaching_network_security_with_ip_darkspace_data",
+        "__typename": "paper",
+        "name": "teaching network security with ip darkspace data",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:dust_2012_workshop_report": {
+        "id": "paper:dust_2012_workshop_report",
+        "__typename": "paper",
+        "name": "dust 2012 workshop report",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns": {
+        "id": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
+        "__typename": "paper",
+        "name": "nightlights entropy-based metrics for classifying darkspace traffic patterns",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:analysis_of_internet-wide_probing_using_darknets": {
+        "id": "paper:analysis_of_internet-wide_probing_using_darknets",
+        "__typename": "paper",
+        "name": "analysis of internet-wide probing using darknets",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report": {
+        "id": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
+        "__typename": "paper",
+        "name": "the 5th workshop on active internet measurements aims-5 report",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:hi_cube": {
         "id": "software:hi_cube",
@@ -2667,6 +2967,28 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers": {
+        "id": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
+        "__typename": "paper",
+        "name": "toward topology dualism: improving the accuracy of as annotations for routers",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:traceroute_and_bgp_as_path_incongruities": {
+        "id": "paper:traceroute_and_bgp_as_path_incongruities",
+        "__typename": "paper",
+        "name": "traceroute and bgp as path incongruities",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "software:internet_health_report": {
         "id": "software:internet_health_report",
         "__typename": "software",
@@ -2691,34 +3013,194 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
-    "software:ioda": {
-        "id": "software:ioda",
-        "__typename": "software",
-        "name": "IODA",
-        "organization": "CAIDA",
-        "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country.",
-        "availability": [
-            {
-                "name": "name",
-                "url": "url",
-                "tags": [
-                    "tag:ui"
-                ]
-            }
-        ],
-        "licenses": [
-            "license:bsd_4_clause_uc"
-        ],
-        "tags": [
-            "tag:security",
-            "tag:darknet",
-            "tag:outages"
-        ],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+    "presentation:ioda-np_internet_outage_detection_and_analysis": {
+        "id": "presentation:ioda-np_internet_outage_detection_and_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge": {
+        "id": "presentation:ioda-np_detecting_outages_affecting_the_internet\u2019s_edge",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:how_to_find_correlated_internet_failures": {
+        "id": "presentation:how_to_find_correlated_internet_failures",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:who_shuts_down_the_internet_and_why": {
+        "id": "presentation:who_shuts_down_the_internet_and_why",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption": {
+        "id": "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:science_of_internet_security:_technology_and_experimental_research": {
+        "id": "presentation:science_of_internet_security:_technology_and_experimental_research",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:mapping_our_way_to_a_more_secure_internet": {
+        "id": "presentation:mapping_our_way_to_a_more_secure_internet",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:internet_outages_detection_&_analysis": {
+        "id": "presentation:internet_outages_detection_&_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream": {
+        "id": "presentation:bgpstream",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream_2016": {
+        "id": "presentation:bgpstream_2016",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis": {
+        "id": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data": {
+        "id": "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:measuring_and_monitoring_bgp": {
+        "id": "presentation:measuring_and_monitoring_bgp",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization": {
+        "id": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis": {
+        "id": "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:ioda-nternet_outages:_detection_&_analysis": {
+        "id": "presentation:ioda-nternet_outages:_detection_&_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:ioda-internet_outages:_detection_&_analysis": {
+        "id": "presentation:ioda-internet_outages:_detection_&_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:measuring_and_characterizing_ipv6_router_availability": {
+        "id": "presentation:measuring_and_characterizing_ipv6_router_availability",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:monitoring_large-scale_internet_outages": {
+        "id": "presentation:monitoring_large-scale_internet_outages",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:caida_research_overview": {
+        "id": "presentation:caida_research_overview",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
+        "id": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm": {
+        "id": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:toward_realtime_visualization_of_garbage": {
+        "id": "presentation:toward_realtime_visualization_of_garbage",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:a_coordinated_view_of_large-scale_internet_events": {
+        "id": "presentation:a_coordinated_view_of_large-scale_internet_events",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:analysis_of_internet-wide_probing_using_darknets": {
+        "id": "presentation:analysis_of_internet-wide_probing_using_darknets",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet": {
+        "id": "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship": {
+        "id": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:kapar": {
         "id": "software:kapar",
@@ -2750,6 +3232,50 @@
         "dateLastUpdated": "2020/07/17 13:22:21",
         "date": "2020/07/17 13:22:21"
     },
+    "paper:internet-scale ip alias resolution techniques": {
+        "id": "paper:internet-scale ip alias resolution techniques",
+        "__typename": "paper",
+        "name": "internet-scale ip alias resolution techniques",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
+        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+        "__typename": "paper",
+        "name": "internet-scale ipv4 alias resolution with midar:",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture": {
+        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+        "__typename": "paper",
+        "name": "internet-scale ipv4 alias resolution with midar system architecture",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:ip_alias_resolution_techniques": {
+        "id": "paper:ip_alias_resolution_techniques",
+        "__typename": "paper",
+        "name": "ip alias resolution techniques",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "software:libtimeseries": {
         "id": "software:libtimeseries",
         "__typename": "software",
@@ -2764,14 +3290,21 @@
             }
         ],
         "licenses": [
-            "license:bsd_4_clause_uc"
+            "license:bsd_2_clause"
         ],
         "tags": [],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "license:bsd_2_clause": {
+        "id": "license:bsd_2_clause",
+        "__typename": "license",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:manic": {
         "id": "software:manic",
@@ -2818,6 +3351,130 @@
         "dateLastUpdated": "2020/07/17 13:22:21",
         "date": "2020/07/17 13:22:21"
     },
+    "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+        "id": "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "presentation:measurement_and_analysis_of_internet_congestion_manic": {
+        "id": "presentation:measurement_and_analysis_of_internet_congestion_manic",
+        "__typename": "presentation",
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:inferring_persistent_interdomain_congestion": {
+        "id": "paper:inferring_persistent_interdomain_congestion",
+        "__typename": "paper",
+        "name": "inferring persistent interdomain congestion",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet": {
+        "id": "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet",
+        "__typename": "paper",
+        "name": "policy implications of third-party measurement of interdomain congestion on the internet",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate": {
+        "id": "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+        "__typename": "paper",
+        "name": "investigating the causes of congestion on the african ixp substrate",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:tcp_congestion_signatures": {
+        "id": "paper:tcp_congestion_signatures",
+        "__typename": "paper",
+        "name": "tcp congestion signatures",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements": {
+        "id": "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements",
+        "__typename": "paper",
+        "name": "challenges in inferring internet congestion using throughput measurements",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:bdrmap:inference_of_borders_between_ip_networks": {
+        "id": "paper:bdrmap:inference_of_borders_between_ip_networks",
+        "__typename": "paper",
+        "name": "bdrmap:inference of borders between ip networks",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:policy_challenges_in_mapping_internet_interdomain_congestion": {
+        "id": "paper:policy_challenges_in_mapping_internet_interdomain_congestion",
+        "__typename": "paper",
+        "name": "policy challenges in mapping internet interdomain congestion",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measuring_interdomain_congestion_and_its_impact_on_qoe": {
+        "id": "paper:measuring_interdomain_congestion_and_its_impact_on_qoe",
+        "__typename": "paper",
+        "name": "measuring interdomain congestion and its impact on qoe",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:challenges_in_inferring_internet_interdomain_congestion": {
+        "id": "paper:challenges_in_inferring_internet_interdomain_congestion",
+        "__typename": "paper",
+        "name": "challenges in inferring internet interdomain congestion",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,": {
+        "id": "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,",
+        "__typename": "paper",
+        "name": "measurement and analysis of internet interconnection and congestion,",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "software:midar": {
         "id": "software:midar",
         "__typename": "software",
@@ -2840,6 +3497,51 @@
         "dateCreated": "2020/07/17 13:22:21",
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
+    },
+    "software:vela": {
+        "id": "software:vela",
+        "__typename": "software",
+        "name": "Vela",
+        "organization": "CAIDA",
+        "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
+        "availability": [
+            {
+                "name": "name",
+                "url": "url",
+                "tags": [
+                    "tag:api"
+                ]
+            }
+        ],
+        "licenses": [],
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/17 13:22:21",
+        "dateLastUpdated": "2020/07/18 16:43:13",
+        "date": "2020/07/18 16:43:13"
+    },
+    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
+        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+        "__typename": "paper",
+        "name": "internet-scale ipv4 alias resolution with midar",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing": {
+        "id": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
+        "__typename": "paper",
+        "name": "unintended consequences: effects of submarine cable deployment on internet routing",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:motu": {
         "id": "software:motu",
@@ -2986,6 +3688,171 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+        "id": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+        "__typename": "paper",
+        "name": "scamper: a scalable and extensible packet prober for active measurement of the internet",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:learning_to_extract_router_names_from_hostnames": {
+        "id": "paper:learning_to_extract_router_names_from_hostnames",
+        "__typename": "paper",
+        "name": "learning to extract router names from hostnames",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:the_impact_of_router_outages_on_the_as-level_internet": {
+        "id": "paper:the_impact_of_router_outages_on_the_as-level_internet",
+        "__typename": "paper",
+        "name": "the impact of router outages on the as-level internet",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:bdrmap_inference_of_borders_between_ip_networks": {
+        "id": "paper:bdrmap_inference_of_borders_between_ip_networks",
+        "__typename": "paper",
+        "name": "bdrmap inference of borders between ip networks",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy": {
+        "id": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+        "__typename": "paper",
+        "name": "don't forget to lock the back door! a characterization of ipv6 network security policy",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:resilience_of_deployed_tcp_to_blind_attacks": {
+        "id": "paper:resilience_of_deployed_tcp_to_blind_attacks",
+        "__typename": "paper",
+        "name": "resilience of deployed tcp to blind attacks",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measuring_and_characterizing_ipv6_router_availability": {
+        "id": "paper:measuring_and_characterizing_ipv6_router_availability",
+        "__typename": "paper",
+        "name": "measuring and characterizing ipv6 router availability",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:speedtrap_internet-scale_ipv6_alias_resolution": {
+        "id": "paper:speedtrap_internet-scale_ipv6_alias_resolution",
+        "__typename": "paper",
+        "name": "speedtrap internet-scale ipv6 alias resolution",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance": {
+        "id": "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance",
+        "__typename": "paper",
+        "name": "measuring the deployment of ipv6: topology, routing and performance",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:revealing_mpls_tunnels_obscured_from_traceroute": {
+        "id": "paper:revealing_mpls_tunnels_obscured_from_traceroute",
+        "__typename": "paper",
+        "name": "revealing mpls tunnels obscured from traceroute",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measured_impact_of_crooked_traceroute": {
+        "id": "paper:measured_impact_of_crooked_traceroute",
+        "__typename": "paper",
+        "name": "measured impact of crooked traceroute",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:measuring_path_mtu_discovery_behaviour": {
+        "id": "paper:measuring_path_mtu_discovery_behaviour",
+        "__typename": "paper",
+        "name": "measuring path mtu discovery behaviour",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:traceroute_probe_method_and_forward_ip_path_inference": {
+        "id": "paper:traceroute_probe_method_and_forward_ip_path_inference",
+        "__typename": "paper",
+        "name": "traceroute probe method and forward ip path inference",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:inferring_and_debugging_path_mtu_discovery_failures": {
+        "id": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+        "__typename": "paper",
+        "name": "inferring and debugging path mtu discovery failures",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "paper:identifying_ipv6_network_problems_in_the_dual-stack_world": {
+        "id": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
+        "__typename": "paper",
+        "name": "identifying ipv6 network problems in the dual-stack world",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
     "software:spoofer": {
         "id": "software:spoofer",
         "__typename": "software",
@@ -3051,68 +3918,26 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
-    "presentation:acm_computer_and_communications_security_(ccs)": {
-        "id": "presentation:acm_computer_and_communications_security_(ccs)",
+    "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "id": "presentation:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
         "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
-    "presentation:dhs_ddosd_pi_meeting": {
-        "id": "presentation:dhs_ddosd_pi_meeting",
+    "presentation:the_best_available_data_on_source_address_validation": {
+        "id": "presentation:the_best_available_data_on_source_address_validation",
         "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
-    "presentation:dhs_r&d_showcase": {
-        "id": "presentation:dhs_r&d_showcase",
+    "presentation:software_systems_for_surveying_spoofing_susceptibility": {
+        "id": "presentation:software_systems_for_surveying_spoofing_susceptibility",
         "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:one_conference": {
-        "id": "presentation:one_conference",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:nznog": {
-        "id": "presentation:nznog",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:nanog": {
-        "id": "presentation:nanog",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:ssac": {
-        "id": "presentation:ssac",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:ausngo": {
-        "id": "presentation:ausngo",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
-    },
-    "presentation:dhs_s&t_ddos_defense_meeting": {
-        "id": "presentation:dhs_s&t_ddos_defense_meeting",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/17 13:22:21",
-        "date": "2020/07/17 13:22:21"
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
     },
     "software:u_s_national_weather_serice_severe_weather_alert": {
         "id": "software:u_s_national_weather_serice_severe_weather_alert",
@@ -3131,29 +3956,6 @@
         "tags": [
             "tag:weather"
         ],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
-    },
-    "software:vela": {
-        "id": "software:vela",
-        "__typename": "software",
-        "name": "Vela",
-        "organization": "CAIDA",
-        "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
-        "availability": [
-            {
-                "name": "name",
-                "url": "url",
-                "tags": [
-                    "tag:api"
-                ]
-            }
-        ],
-        "licenses": [],
-        "tags": [],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
