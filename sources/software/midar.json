@@ -22,7 +22,7 @@
         {
             "to": "software:vela",
             "label": "used by"
-        }
+        },
         {
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"

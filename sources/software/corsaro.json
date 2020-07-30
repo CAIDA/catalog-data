@@ -34,7 +34,7 @@
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"
         },
         {
             "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
