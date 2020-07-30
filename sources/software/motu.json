@@ -4,7 +4,7 @@
     "organization": "CAIDA",
     "description": "Dealiases pairs of IPv4 addresses.",
     "tags": [],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/motu/",

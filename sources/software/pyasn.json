@@ -7,7 +7,7 @@
         "IPv4 adddress",
         "ASN"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://pypi.org/project/pyasn/",

@@ -4,7 +4,7 @@
     "organization": "CAIDA",
     "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
     "tags": [],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/midar/",
@@ -22,7 +22,7 @@
         {
             "to": "software:vela",
             "label": "used by"
-        }
+        },
         {
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"

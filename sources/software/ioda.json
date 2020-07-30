@@ -8,7 +8,7 @@
         "darknet",
         "outages"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://ioda.caida.org/ioda/api",

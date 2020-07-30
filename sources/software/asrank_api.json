@@ -7,7 +7,7 @@
         "topology",
         "geolocation"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "asrank.caida.org/api",

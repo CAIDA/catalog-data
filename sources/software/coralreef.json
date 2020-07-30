@@ -6,7 +6,7 @@
     "tags": [
         "traffic"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/coralreef/",
@@ -32,6 +32,6 @@
         {
             "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
             "label": "used by"
-        },
+        }
     ]
 }

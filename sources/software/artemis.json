@@ -4,7 +4,7 @@
     "organization": "CAIDA",
     "description": "Measures and analyzes passive Internet traffic monitor data.",
     "tags": [],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "",
@@ -38,6 +38,6 @@
         {
             "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
-        },
+        }
     ]
 }
