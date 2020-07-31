@@ -204,6 +204,7 @@ def main():
         id_objs = json.load(open(id_object_file,"r"))
     else:
         id_objs = {}
+    temp="""
     date = time.strftime("%Y/%m/%d %H:%M:%S")
     for id_,obj in id_object.items():
         if id_ in id_objs:
@@ -224,6 +225,7 @@ def main():
         for key in ["dateCreated","dateLastUpdated"]:
             if key not in obj:
                 obj[key] = date
+    """
 
     date_type_key= {
         "dateset":"dateStart",
