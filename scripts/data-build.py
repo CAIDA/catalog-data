@@ -315,7 +315,7 @@ def object_lookup_type_name(type_,name):
     else:
         id_ = type_+":"+re_id_illegal.sub("_",name)
         obj = object_lookup_id(id_)
-        obj["__typename"] = type_
+        obj["__typename"] = type_.title()
         obj["name"] = name
     return obj
 
@@ -327,7 +327,7 @@ def object_lookup_id(id_):
         #print (">>>",id_,type_,name)
         return object_lookup({
             "id":id_,
-            "__typename":type_
+            "__typename":type_.title()
         })
     else:
         print ("failed to parse id",id_)
@@ -336,6 +336,7 @@ def object_lookup_id(id_):
 
 def object_lookup(info):
     type_ = info["__typename"] = info["__typename"].lower()
+    info["__typename"] = type_.title()
     if "id" not in info:
         if "name" in info and "__typename" in info:
             id_ = info["__typename"]+":"+re_id_illegal.sub("_",info["name"])
