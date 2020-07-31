@@ -56,7 +56,7 @@ def bogon_check_ip(ips, bogons, db):
     print(final)
 ~~~
 
-##Background
+## Background
 
 ### What is an IP address?
 - IP addresses are unique 32-bit numbers allocated to identify devices in the Internet Protocol
