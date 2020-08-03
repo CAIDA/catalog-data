@@ -10,7 +10,7 @@
 }
 ~~~
 ## **<ins> Introduction </ins>**
-The solution obtains traceroutes from ark warts file and annotates IP addresses with hostnames from ip2hostname file.
+The solution parses traceroutes from ark warts file and annotates IP addresses with hostnames from ip2hostname file.
 
 
 ### Explanation of the data fields ###
@@ -37,15 +37,11 @@ The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addres
 Download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml)
 
 ## **<ins> Solution </ins>**
-The following script returns a dictionary 
-
-**usage**: `parse_ark_traceroute.py -w [warts file] -i [ip2hostname file]`
-
-Below is the method used to load IP addresss with corresponding hostnames into the dictionary `dns`. `dns` returns the data in the following format:`{'ip address': 'hostname'}`
+Below is the method in `parse_ark_traceroute.py`used to load IP addressses with corresponding hostnames into the dictionary `dns` with the following format:`{'ip address': 'hostname'}`.
  ~~~python
 # reading DNS file
 def load_dns_file(dns_file):
-    dns = {}
+    global dns
     with open(dns_file) as f:
         for line in f:
             line = line.split()
@@ -55,47 +51,58 @@ def load_dns_file(dns_file):
                 continue
             else:
                 dns[line[1]] = line[2]
-    return dns
 ~~~
-Below is the method used to parse .warts file and return a list with traceroutes. The returning format: `[['source', 'hop_1', 'hop_2', ... , 'hop_n', 'destination']]`
 
+Below is the method used to parse .warts file and return the IP address and hostname of a traceroute in list format. Note that set `single_IP` to False to return all IPs in a hop if the hop has multiple IPs. Set `single_IP` to True to return only one IP.
+The return format: `['source', 'hop_1', 'hop_2', ... , 'hop_n', 'destination']`
 ~~~python
-import warts
-from warts.traceroute import Traceroute
-def parse_ark_warts(warts_file):
-    traceroute = []
-    with open(warts_file, 'rb') as f:
+def parse_trace(trace, single_IP=False):
+    global dns
+    ips = []
+    hostnames = []
 
-        traceroute_list = []
-        while True:
-            record = warts.parse_record(f)
-            if record == None:
-                break
-            if isinstance(record, Traceroute):
-                if record.src_address:
-                    if record.src_address in dns:
-                        traceroute_list.append(record.src_address + ":" +dns[record.src_address])
-                    else:
-                        traceroute_list.append(record.src_address)
-                
-                for h in record.hops:
-                    if h.address in dns:
-                        traceroute_list.append(h.address + ":" + dns[h.address])
-                    else:
-                        traceroute_list.append(h.address)
+    if trace.src_address:
+        ips.append(trace.src_address)
+        if trace.src_address in dns:
+            hostnames.append(dns[trace.src_address])
+        else:
+            hostnames.append(None)
 
-                if record.dst_address:
-                    if record.dst_address in dns:
-                        traceroute_list.append(record.dst_address + ":" + dns[record.dst_address])
-                    else:
-                        traceroute_list.append(record.dst_address)
-                traceroute.append(traceroute_list)
+    for h in trace.hops:
+        if single_IP:
+            if len(h.address.split(','))>=2:
+                ips.append(None)
+                hostnames.append(None)
+                input("There are at least two ip addresses in a hop")
+            else: # sinle ip in a hop
+                ips.append(list(h.address))
+                if h.address in dns:
+                    hostnames.append()
+        else: # support multiple ips
+            hop_hostnames = []
+            hop_ips = h.address.split(',')
+            ips.append(hop_ips)
+            for ip in hop_ips:
+                if ip in dns:
+                    hop_hostnames.append(dns[ip])
+                else:
+                    hop_hostnames.append(None)
+            hostnames.append(hop_hostnames)
+
+    if trace.dst_address:
+        ips.append(trace.dst_address)
+        if trace.dst_address in dns:
+            hostnames.append(dns[trace.dst_address])
+        else:
+            hostnames.append(None)
+    
+    return ips, hostnames
             
 ~~~
 ##  **<ins> Background </ins>**
 
 ### What is a Traceroute?
-Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop is a measure of the total time spent to establish the connection. Traceroute proceeds unless all (usually three) sent packets are lost more than twice; then the connection is lost and the route cannot be evaluated. Ping, on the other hand, only computes the final round-trip times from the destination point.
+Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
 From [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
 
 
@@ -107,6 +114,28 @@ Download source code from [here](https://www.caida.org/tools/measurement/scamper
 
     
 ### <ins> Caveats </ins>
+Note that there could be multiple IP addresses to a single hop. So there are two versions. Return nested arraies or return None
+
+Support multiple IPs:
+~~~    
+ips, hostnames = parse_trace(trace,single_IP=False)
+
+# Return format
+ips == [["10.1.2.3"],[],["10.0.0.1","2.1.1.2"]]
+hostnames: [["www.caida.org"],[],["cat.caida.org",None]]
+~~~
+
+Support only single IP:
+~~~
+    # it should only return a single IP for each hop, if a hop has multiple
+    # IPs it should put in a None value
+    # If there are multiple IPs return the first one 
+ips, hostnames = parse_trace(trace,single_IP=True)
+
+# Return format
+ips == ["10.1.2.3", None, "10.0.0.1"]
+hostnames: ["www.caida.org", None, None]
+~~~
 
 
 
