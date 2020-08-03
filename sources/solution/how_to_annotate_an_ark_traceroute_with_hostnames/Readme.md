@@ -10,31 +10,7 @@
 }
 ~~~
 ## **<ins> Introduction </ins>**
-The solution parses traceroutes from ark warts file and annotates IP addresses with hostnames from ip2hostname file.
-
-
-### Explanation of the data fields ###
-#### IPv4 Prefix-Probing Traceroute Dataset
-These data result from CAIDA's traceroute-based measurements running on the Archipelago (Ark) measurement infrastructure (also see CAIDA's Macroscopic Topology Project). We use BGPStream to gather announced BGP prefixes from RIPE and RouteViews BGP data. Each day, we derive a new set of announced prefixes using a sliding window of 7 days of BGP data (7 days of data ending on the day on which a daily BGP prefix set is generated). For each announced prefix, we generate a single target address, ensuring there is never more than one target address in any prefix despite the presence of overlapping prefixes (that is, more specific prefixes).
-Download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml)
-
-#### The IPv4 Routed /24 Topology Dataset
-This dataset contains information useful for studying the topology of the Internet. Data is collected by a globally distributed set of Ark monitors. The monitors use team-probing to distribute the work of probing the destinations among the available monitors.
-
-We collect data by sending scamper probes continuously to destination IP addresses. Destinations are selected randomly from each routed IPv4 /24 prefix on the Internet such that a random address in each prefix is probed approximately every 24 hours (one probing cycle). Because team-probing distributes the probing work across all monitors, a single destination /24 will be probed by only one monitor in each probing cycle.
-Download dataset [here](https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml)
-
-#### Ark IPv6 Topology Dataset
-Download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml)
-
-#### IPv4 Routed /24 DNS Names Dataset
-The IPv4 Routed /24 DNS Names dataset provides fully-qualified domain names for IP addresses seen in the traces of the IPv4 Routed /24 Topology Dataset.
-We also provide the DNS query and response traffic resulting from the DNS lookups required to construct the DNS Names dataset.
-Download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml)
-
-#### The IPv6 DNS Names Dataset
-The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addresses seen in the traces of the IPv6 Topology Dataset.
-Download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml)
+The solution parses traceroutes from ark warts file and annotates IP addresses with hostnames from ip2hostname file. 
 
 ## **<ins> Solution </ins>**
 Below is the method in `parse_ark_traceroute.py`used to load IP addressses with corresponding hostnames into the dictionary `dns` with the following format:`{'ip address': 'hostname'}`.
@@ -105,13 +81,26 @@ def parse_trace(trace, single_IP=False):
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
 From [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
 
-
- 
 ### What is Scamper?
 Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
 
 Download source code from [here](https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz)   
 
+### Dataset ###
+#### IPv4 Prefix-Probing Traceroute Dataset
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml)
+
+#### The IPv4 Routed /24 Topology Dataset
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml)
+
+#### Ark IPv6 Topology Dataset
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml)
+
+#### IPv4 Routed /24 DNS Names Dataset
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml)
+
+#### The IPv6 DNS Names Dataset
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml)
     
 ### <ins> Caveats </ins>
 Note that there could be multiple IP addresses to a single hop. So there are two versions. Return nested arraies or return None
@@ -127,13 +116,11 @@ hostnames: [["www.caida.org"],[],["cat.caida.org",None]]
 
 Support only single IP:
 ~~~
-    # it should only return a single IP for each hop, if a hop has multiple
-    # IPs it should put in a None value
-    # If there are multiple IPs return the first one 
+# If a hop has multiple IPs, it should put in a None value
 ips, hostnames = parse_trace(trace,single_IP=True)
 
 # Return format
-ips == ["10.1.2.3", None, "10.0.0.1"]
+ips == ["10.1.2.3", None, None]
 hostnames: ["www.caida.org", None, None]
 ~~~
 
