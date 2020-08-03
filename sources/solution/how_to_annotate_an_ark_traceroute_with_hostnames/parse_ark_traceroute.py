@@ -7,7 +7,6 @@ dns = {}
 
 def main():
     global dns
-    directory = "../../../../dataset/" #add file name behind
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-t", type=str, dest="traceroute_file", default=None, help="Please enter the file name of warts file")
@@ -31,23 +30,11 @@ def main():
         print("Parsing Ipv6 traceroute file should use Ipv6 DNS file") 
     else:
 
-        traceroute = []
-        
+        # reading DNS file       
+        load_dns_file(args.dns_file)
 
-        # reading DNS file
-        with open(directory + args.dns_file) as f:
-            for line in f:
-                line = line.split()
-                if len(line)==2: # no hostname
-                    continue
-                elif line[2] == "FAIL.SERVER-FAILURE.in-addr.arpa" or line[2] == "FAIL.NON-AUTHORITATIVE.in-addr.arpa":
-                    continue
-                else:
-                    dns[line[1]] = line[2]
-
-
-        with open(directory + args.traceroute_file, 'rb') as f:
-
+        # load .wart file 
+        with open(args.traceroute_file, 'rb') as f:
             traceroute_list = []
             while True:
                 record = warts.parse_record(f)
@@ -55,23 +42,18 @@ def main():
                     break
                 if isinstance(record, Traceroute):
                     ips, hostnames = parse_trace(record, True)
-                    print(ips)
-                    print(hostnames)
-                    input("press")
-                    
 
-                    # p = True
-                    # for i in hostnames:
-                    #     if len(i)!=0:
-                    #         p = False
-                    #         break
-                    # if not p:
-                    #     print(ips)
-                    #     print(hostnames)
-                    #     input("press to continue")
-
-
-
+def load_dns_file(dns_file):
+    global dns
+    with open(dns_file) as f:
+                for line in f:
+                    line = line.split()
+                    if len(line)==2: # missing hostname
+                        continue
+                    elif line[2] == "FAIL.SERVER-FAILURE.in-addr.arpa" or line[2] == "FAIL.NON-AUTHORITATIVE.in-addr.arpa":
+                        continue
+                    else:
+                        dns[line[1]] = line[2]
 
 def parse_trace(trace, single_IP=False):
     global dns
@@ -94,7 +76,7 @@ def parse_trace(trace, single_IP=False):
             else: # sinle ip in a hop
                 ips.append(list(h.address))
                 if h.address in dns:
-                    hostnames.append()
+                    hostnames.append(dns[h.address])
         else: # support multiple ips
             hop_hostnames = []
             hop_ips = h.address.split(',')
