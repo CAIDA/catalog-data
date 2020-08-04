@@ -3,7 +3,7 @@
     "id": "how_to_annotate_an_ark_traceroute_with_hostnames",
     "visibility": "public",
     "name": "How to annotate an ark traceroute with hostnames?",
-    "description": " ",
+    "description": "Parsing ark warts file and annotating IPs with the hostnames.",
     "links": [{}],
     "tags": [
         "topology",
@@ -15,7 +15,7 @@
 }
 ~~~
 ## **<ins> Introduction </ins>**
-The solution parses traceroutes from ark warts file and annotates IPs with hostnames. 
+The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
 ## **<ins> Solution </ins>**
 Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:`{'ip address': 'hostname'}`.
@@ -34,30 +34,36 @@ def load_dns_file(dns_file):
                 dns[line[1]] = line[2]
 ~~~
 
-Below is the method used to parse .warts file and return the IP and the hostname of a traceroute lists. Note that there could be multiple IPs in a hop. Set `single_IP` to True to get None value if there are multiple IPs in a hop. Set `single_IP` to False to get all IPs in each hop. It returns source, each hop and destination of a traceroute in sequence. For more examples, please read Caveats below.
+Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format. Note that there could be multiple IPs in a hop. Set `single_IP` to True to get None value if there are multiple IPs in a hop. Set `single_IP` to False to get all IPs in each hop. For more examples, please read Caveats below.
+The method returns source, each hop and destination of a traceroute in sequence. `[source, hop_1, hop_2, ... , hop_n, destination]`
 ~~~python
 def parse_trace(trace, single_IP=False):
     global dns
     ips = []
     hostnames = []
 
+    # source
     if trace.src_address:
         ips.append(trace.src_address)
         if trace.src_address in dns:
             hostnames.append(dns[trace.src_address])
         else:
             hostnames.append(None)
-
+    # hops
     for h in trace.hops:
         if single_IP:
             if len(h.address.split(','))>=2:
                 ips.append(None)
                 hostnames.append(None)
-                input("There are at least two ip addresses in a hop")
+
             else: # sinle ip in a hop
-                ips.append(list(h.address))
+                ips.append(h.address)
+
                 if h.address in dns:
-                    hostnames.append()
+                    hostnames.append(dns[h.address])
+                else:
+                    hostnames.append(None)
+
         else: # support multiple ips
             hop_hostnames = []
             hop_ips = h.address.split(',')
@@ -69,6 +75,7 @@ def parse_trace(trace, single_IP=False):
                     hop_hostnames.append(None)
             hostnames.append(hop_hostnames)
 
+    # destination
     if trace.dst_address:
         ips.append(trace.dst_address)
         if trace.dst_address in dns:
