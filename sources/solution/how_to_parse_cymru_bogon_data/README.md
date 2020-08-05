@@ -25,10 +25,10 @@ i.e.`python3 bogon.py 2020-05-13.fullbogons-ipv4.txt ipasn_20200730.dat "127.1.2
 
 ~~~python
 import pyasn
-
+bogon_temp_file = "_bogon.db"
 def bogon_load(path):
     """
-    Loads in bogon data as an array
+    Loads in bogon data as an array "_bogon.db"
     """
     f = open(path, "r")
     ips = []
@@ -37,22 +37,22 @@ def bogon_load(path):
     for line in f.readlines():
         ips.append(line.replace('\n', ''))
     return ips
+    // write to bogon
+    // load bogon
+    bogondb = pyasn.pyasn(bogon_temp_file)
 
-def bogon_check_ip(ips, bogons, db):
+    remove bogondb
+
+
+def bogon_check_ip(ips, bogondb):
     """
     Checks whether a given IP address is bogon
     """
     #loads in ip asn dataset
-    asndb = pyasn.pyasn(db)
     final = [False]*len(ips)
-    for ip in range(len(ips)):
-        try:
-            prefix = asndb.lookup(ips[ip])[1]
-            if prefix:
-                if prefix in bogons:
-                    final[ip] = True
-        except:
-            continue
+    for ip in ips:
+       if bogondb.lookup(ip):
+           final[ip] = True
     print(final)
 ~~~
 
