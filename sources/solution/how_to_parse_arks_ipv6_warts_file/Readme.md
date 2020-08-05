@@ -58,18 +58,19 @@ More information on Scamper found [here]( https://www.caida.org/tools/measuremen
 **pyasn** is different from other ASN lookup tools in that it provides offline and historical lookups. It provides utility scripts for users to build their own lookup databases based on any MRT/RIB archive. This makes pyasn much faster than online dig/whois/json lookups.
 
 #### Installation ####
-
-`$ pip install pyasn -- pre`
-
+~~~
+$ pip install pyasn -- pre
+~~~
 Or with the standard python:
-
-`$ python setup.py build`\
-`$ python setup.py install --record log`
-
+~~~
+$ python setup.py build
+$ python setup.py install --record log
+~~~
 You will need to have pip, setuptools and build essentials installed if you build the package manually. On Ubuntu/Debian you can get them using the following command:
 
-`$ sudo apt-get install python-pip python-dev build-essential`
-
+~~~
+$ sudo apt-get install python-pip python-dev build-essential
+~~~
 Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).
 
 
