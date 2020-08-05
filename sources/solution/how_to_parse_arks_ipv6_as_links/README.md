@@ -1,4 +1,4 @@
-## How to parse ipv6 AS links ##
+## How to parse arks ipv6 AS links file ##
 ~~~
 {
     "name": "How to parse arks ipv6 as links?",
