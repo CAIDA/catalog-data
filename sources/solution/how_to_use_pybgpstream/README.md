@@ -77,14 +77,16 @@ To get started using PyBGPStream, first [install libBGPStream]( https://bgpstrea
 
 Then, you should be able to install PyBGPStream using pip: 
 
-`$ pip install pybgpstream `
+~~~
+$ pip install pybgpstream
+~~~ 
 
 Alternatively, to install PyBGPStream from source either clone the [Github repository]( https://github.com/CAIDA/bgpstream
  ) (PyBGPStream is located in the `pybgpstream` subdirectory), or download a [source tarball]( https://bgpstream.caida.org/download ) and then run:
- 
- `$ python setup.py build`\
- `$ python setup.py install`
- 
+~~~ 
+ $ python setup.py build 
+ $ python setup.py install
+~~~ 
  For more information on installing PyBGPStream, please see the detailed [installation instructions]( https://bgpstream.caida.org/docs/install/pybgpstream ) on the BGPStream website. 
  
  Please see the [PyBGPStream API documentation]( https://bgpstream.caida.org/docs/api/pybgpstream ) and the [PyBGPStream tutorial]( https://bgpstream.caida.org/docs/tutorials/pybgpstream ) for more information about using PyBGPStream.
