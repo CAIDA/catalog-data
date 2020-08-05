@@ -52,6 +52,6 @@
         {
             "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
             "label": "used by"
-        },
+        }
     ]
 }

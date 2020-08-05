@@ -62,8 +62,6 @@
         {
             "to": "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
-        },
-
-
+        }
     ]
 }
