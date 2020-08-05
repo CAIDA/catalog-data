@@ -10,7 +10,7 @@
     "availability": [
         {
             "name": "public",
-            "url": "asrank.caida.org/api",
+            "url": "https://api.asrank.caida.org/v2/docs",
             "tags": [
                 "API"
             ]
@@ -24,7 +24,19 @@
             "to": "software:asrank"
         },
         {
-            "to": "Dataset:asrank"
+            "to": "dataset:asrank"
+        },
+        {
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:as_relationships_inference_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
         }
     ]
 }

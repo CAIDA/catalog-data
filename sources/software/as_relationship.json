@@ -17,5 +17,19 @@
     ],
     "licenses": [
         "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:as_relationships_inference_and_validation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
+        }
     ]
 }

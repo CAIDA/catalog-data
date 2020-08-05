@@ -41,6 +41,10 @@
             "label": "used by"
         },
         {
+            "to": "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "label": "used by"
+        }
+        {
             "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
             "label": "used by"
         },
@@ -53,6 +57,14 @@
             "label": "used by"
         },
         {
+            "to": "paper: 2016_BGPStream A Software Framework for Live and Historical BGP Data Analysis",
+            "label": "used by"
+        },
+        {
+            "to": "paper: 2015_BGPStream A Software Framework for Live and Historical BGP Data Analysis",
+            "label": "used by"
+        },
+        {
             "to": "presentation:bgpstream_and_openbmp",
             "label": "used by"
         },
@@ -61,11 +73,11 @@
             "label": "used by"
         },
         {
-            "to": "presentatino:measuring_and_monitoring_bgp",
+            "to": "presentation:measuring_and_monitoring_bgp",
             "label": "used by"
         },
         {
-            "to": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+            "to": "presentation:bgpstream_a_framework_for_bgp_data_analysis",
             "label": "used by"
         }
     ]
