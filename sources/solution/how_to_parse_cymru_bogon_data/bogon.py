@@ -32,22 +32,21 @@ def bogon_check_ip(ips, bogondb):
     """
     Checks whether a given IP address is bogon
     """
-    final = []
-    for ip in ips:
+    is_bogon = [False]*len(ips)
+    for index in range(len(ips)):
         # Check if IP is valid
         try:
-            bogondb.lookup(ip)
+            bogondb.lookup(ips[index])
         except ValueError:
-            print("Invalid IP: ", ip)
-            final.append(False)
+            print("Invalid IP: ", ips[index])
             continue
         
         # Look up IP
-        if bogondb.lookup(ip)[1]:
-            final.append(True)
+        if bogondb.lookup(ips[index])[1]:
+            is_bogon[index] = True
         else:
-            final.append(False)
-    print(final)
+            continue
+    print(is_bogon)
 
 if __name__ == '__main__':
     bogondb = bogon_load(args.bogon)
