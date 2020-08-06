@@ -3,6 +3,7 @@
     "id": "how_to_parse_cymru_bogon_data",
     "name": "How to Parse CYMRU Bogan Data",
     "description": "The following solution will output whether an IP address is bogon",
+    links: [data:bogons],
     tags:[
       "bogon", 
       "bogon address", 
@@ -56,22 +57,21 @@ def bogon_check_ip(ips, bogondb):
     """
     Checks whether a given IP address is bogon
     """
-    final = []
-    for ip in ips:
+    is_bogon = [False]*len(ips)
+    for index in range(len(ips)):
         # Check if IP is valid
         try:
-            bogondb.lookup(ip)
+            bogondb.lookup(ips[index])
         except ValueError:
-            print("Invalid IP: ", ip)
-            final.append(False)
+            print("Invalid IP: ", ips[index])
             continue
         
         # Look up IP
-        if bogondb.lookup(ip)[1]:
-            final.append(True)
+        if bogondb.lookup(ips[index])[1]:
+            is_bogon[index] = True
         else:
-            final.append(False)
-    print(final)
+            continue
+    print(is_bogon)
     
 ~~~
 
