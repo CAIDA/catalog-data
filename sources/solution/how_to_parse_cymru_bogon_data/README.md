@@ -23,6 +23,7 @@ bogon_check_ip() takes in two inputs:
 - `bogondb`: the result from bogon_load()
 
 **Usage:** `python3 bogon.py [bogon dataset] [ip address] [ip address]....`
+
 i.e.`python3 bogon.py 2020-05-13.fullbogons-ipv4.txt 0.0.0.1 10 5.44.248.1 1.1.1.1` yields 
 ~~~
 Invalid IP:  10
