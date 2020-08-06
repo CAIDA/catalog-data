@@ -55,7 +55,6 @@ def parse_trace(trace, single_IP=False):
             if len(h.address.split(','))>=2:
                 ips.append(None)
                 hostnames.append(None)
-
             else: # sinle ip in a hop
                 ips.append(h.address)
 
@@ -63,7 +62,6 @@ def parse_trace(trace, single_IP=False):
                     hostnames.append(dns[h.address])
                 else:
                     hostnames.append(None)
-
         else: # support multiple ips
             hop_hostnames = []
             hop_ips = h.address.split(',')
