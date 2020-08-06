@@ -11,16 +11,6 @@
         "tag:anycast": {
             "from": "dataset:anycast_dataset",
             "to": "tag:anycast"
-        },
-        "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "dataset:anycast_dataset",
-            "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "label": "used by"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "dataset:anycast_dataset",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "label": "used"
         }
     },
     "tag:security": {
@@ -43,22 +33,6 @@
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:security",
             "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        },
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:security",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        },
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "tag:security",
-            "to": "paper:2019_bgp_hijacking_classification"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:security",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:security",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
         },
         "software:hi_cube": {
             "from": "tag:security",
@@ -126,38 +100,6 @@
             "from": "tag:topology",
             "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
         },
-        "paper:2013_asrank": {
-            "from": "tag:topology",
-            "to": "paper:2013_asrank"
-        },
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "tag:topology",
-            "to": "paper:2019_bgp_hijacking_classification"
-        },
-        "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "tag:topology",
-            "to": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:topology",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:topology",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:topology",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:topology",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:topology",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        },
         "software:as_relationship": {
             "from": "tag:topology",
             "to": "software:as_relationship"
@@ -191,22 +133,6 @@
         "dataset:anycast_dataset": {
             "from": "tag:anycast",
             "to": "dataset:anycast_dataset"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:anycast",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-        "dataset:anycast_dataset": {
-            "from": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "dataset:anycast_dataset",
-            "label": "used by"
-        },
-        "software:bgpstream": {
-            "from": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "software:bgpstream",
-            "label": "used by"
         }
     },
     "dataset:archipelago": {
@@ -217,16 +143,6 @@
         "tag:active_measurement": {
             "from": "dataset:archipelago",
             "to": "tag:active_measurement"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:archipelago",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used by"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:archipelago",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
         }
     },
     "tag:active_measurement": {
@@ -243,28 +159,6 @@
             "to": "dataset:thunderping"
         }
     },
-    "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-        "dataset:archipelago": {
-            "from": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:archipelago",
-            "label": "used by"
-        },
-        "dataset:as_prefix": {
-            "from": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:as_prefix",
-            "label": "used by"
-        },
-        "dataset:as_relationships": {
-            "from": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:as_relationships",
-            "label": "used by"
-        },
-        "software:bgpstream": {
-            "from": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "software:bgpstream",
-            "label": "used by"
-        }
-    },
     "dataset:as_organization": {
         "tag:topology": {
             "from": "dataset:as_organization",
@@ -273,102 +167,12 @@
         "tag:ownership": {
             "from": "dataset:as_organization",
             "to": "tag:ownership"
-        },
-        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "dataset:as_organization",
-            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "label": "used by"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:as_organization",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used by"
-        },
-        "paper:bgp_hijacking_classification": {
-            "from": "dataset:as_organization",
-            "to": "paper:bgp_hijacking_classification",
-            "label": "used by"
-        },
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "dataset:as_organization",
-            "to": "paper:2019_bgp_hijacking_classification",
-            "label": "used"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:as_organization",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
         }
     },
     "tag:ownership": {
         "dataset:as_organization": {
             "from": "tag:ownership",
             "to": "dataset:as_organization"
-        }
-    },
-    "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-        "dataset:as_organization": {
-            "from": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "dataset:as_organization",
-            "label": "used by"
-        },
-        "dataset:as_prefix": {
-            "from": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "dataset:as_prefix",
-            "label": "used by"
-        },
-        "dataset:spoofer": {
-            "from": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "dataset:spoofer",
-            "label": "used by"
-        },
-        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        }
-    },
-    "paper:stable_and_practical_as_relationship_inference_with_problink": {
-        "dataset:as_organization": {
-            "from": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:as_organization",
-            "label": "used by"
-        },
-        "dataset:bgp_communities": {
-            "from": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:bgp_communities",
-            "label": "used by"
-        },
-        "dataset:euro_ix_ixp_service_matrix": {
-            "from": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:euro_ix_ixp_service_matrix",
-            "label": "used by"
-        },
-        "software:bgpstream": {
-            "from": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:bgpstream",
-            "label": "used by"
-        },
-        "software:peeringdb": {
-            "from": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:peeringdb",
-            "label": "used by"
-        }
-    },
-    "paper:bgp_hijacking_classification": {
-        "dataset:as_organization": {
-            "from": "paper:bgp_hijacking_classification",
-            "to": "dataset:as_organization",
-            "label": "used by"
-        },
-        "dataset:bgpmon": {
-            "from": "paper:bgp_hijacking_classification",
-            "to": "dataset:bgpmon",
-            "label": "used by"
-        },
-        "software:bgpstream": {
-            "from": "paper:bgp_hijacking_classification",
-            "to": "software:bgpstream",
-            "label": "used by"
         }
     },
     "dataset:as_prefix": {
@@ -379,41 +183,6 @@
         "tag:bgp": {
             "from": "dataset:as_prefix",
             "to": "tag:bgp"
-        },
-        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "dataset:as_prefix",
-            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "label": "used by"
-        },
-        "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "dataset:as_prefix",
-            "to": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used by"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_prefix",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used by"
-        },
-        "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "dataset:as_prefix",
-            "to": "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "label": "used by"
-        },
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "dataset:as_prefix",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used"
-        },
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "dataset:as_prefix",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "label": "used"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_prefix",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
         }
     },
     "tag:bgp": {
@@ -434,39 +203,10 @@
             "to": "software:periscope"
         }
     },
-    "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes": {
-        "dataset:as_prefix": {
-            "from": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "dataset:as_prefix",
-            "label": "used by"
-        },
-        "software:netacuity": {
-            "from": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "software:netacuity",
-            "label": "used by"
-        }
-    },
-    "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-        "dataset:as_prefix": {
-            "from": "paper:blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "dataset:as_prefix",
-            "label": "used by"
-        }
-    },
     "dataset:as_relationships": {
         "tag:topology": {
             "from": "dataset:as_relationships",
             "to": "tag:topology"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_relationships",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used by"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_relationships",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
         }
     },
     "dataset:asrank": {
@@ -490,10 +230,9 @@
             "from": "dataset:asrank",
             "to": "dataset:asrank"
         },
-        "paper:2013_asrank": {
+        "group:asrank": {
             "from": "dataset:asrank",
-            "to": "paper:2013_asrank",
-            "label": "defines"
+            "to": "group:asrank"
         }
     },
     "tag:geolocation": {
@@ -539,10 +278,6 @@
             "from": "software:asrank_api",
             "to": "tag:geolocation"
         },
-        "software:asrank": {
-            "from": "software:asrank_api",
-            "to": "software:asrank"
-        },
         "software:asrank_ui": {
             "from": "software:asrank_api",
             "to": "software:asrank_ui"
@@ -578,16 +313,6 @@
         "tag:topology": {
             "from": "dataset:bgp_communities",
             "to": "tag:topology"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:bgp_communities",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used by"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:bgp_communities",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
         }
     },
     "dataset:bgpmon": {
@@ -598,86 +323,12 @@
         "tag:routing": {
             "from": "dataset:bgpmon",
             "to": "tag:routing"
-        },
-        "paper:bgp_hijacking_classification": {
-            "from": "dataset:bgpmon",
-            "to": "paper:bgp_hijacking_classification",
-            "label": "used by"
-        },
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "dataset:bgpmon",
-            "to": "paper:2019_bgp_hijacking_classification",
-            "label": "used"
         }
     },
     "tag:routing": {
         "dataset:bgpmon": {
             "from": "tag:routing",
             "to": "dataset:bgpmon"
-        },
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "tag:routing",
-            "to": "paper:2019_bgp_hijacking_classification"
-        },
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "tag:routing",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "tag:routing",
-            "to": "paper:2019_geo_locating_bgp_prefixes"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:routing",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
-        "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "tag:routing",
-            "to": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:routing",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:routing",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:routing",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:routing",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:routing",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "dataset:caida_internet_traffic": {
-        "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic": {
-            "from": "dataset:caida_internet_traffic",
-            "to": "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic",
-            "label": "used by"
-        },
-        "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "dataset:caida_internet_traffic",
-            "to": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "label": "used"
-        }
-    },
-    "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic": {
-        "dataset:caida_internet_traffic": {
-            "from": "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic",
-            "to": "dataset:caida_internet_traffic",
-            "label": "used by"
-        },
-        "dataset:mawi_internet_traffic": {
-            "from": "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic",
-            "to": "dataset:mawi_internet_traffic",
-            "label": "used by"
         }
     },
     "dataset:caida_ioda": {
@@ -700,16 +351,6 @@
         "tag:visualization": {
             "from": "dataset:caida_ioda",
             "to": "tag:visualization"
-        },
-        "paper:chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:caida_ioda",
-            "to": "paper:chocolatine_outage_detection_for_internet_background_radiation",
-            "label": "used by"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:caida_ioda",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "label": "used"
         }
     },
     "tag:outages": {
@@ -738,18 +379,6 @@
             "to": "dataset:caida_ioda"
         }
     },
-    "paper:chocolatine_outage_detection_for_internet_background_radiation": {
-        "dataset:caida_ioda": {
-            "from": "paper:chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:caida_ioda",
-            "label": "used by"
-        },
-        "dataset:ucsd_network_telescope": {
-            "from": "paper:chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:ucsd_network_telescope",
-            "label": "used by"
-        }
-    },
     "dataset:euro_ix_ixp_service_matrix": {
         "tag:ixp": {
             "from": "dataset:euro_ix_ixp_service_matrix",
@@ -758,11 +387,6 @@
         "tag:topology": {
             "from": "dataset:euro_ix_ixp_service_matrix",
             "to": "tag:topology"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:euro_ix_ixp_service_matrix",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used by"
         }
     },
     "tag:ixp": {
@@ -779,35 +403,6 @@
         "tag:topology": {
             "from": "dataset:itdk",
             "to": "tag:topology"
-        },
-        "paper:learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "dataset:itdk",
-            "to": "paper:learning_regexes_to_extract_router_names_from_hostnames",
-            "label": "used by"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "dataset:itdk",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "label": "used"
-        }
-    },
-    "paper:learning_regexes_to_extract_router_names_from_hostnames": {
-        "dataset:itdk": {
-            "from": "paper:learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "dataset:itdk",
-            "label": "used by"
-        }
-    },
-    "dataset:mawi_internet_traffic": {
-        "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic": {
-            "from": "dataset:mawi_internet_traffic",
-            "to": "paper:hypersparse_neural_network_analysis_of_large-scale_internet_traffic",
-            "label": "used by"
-        },
-        "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "dataset:mawi_internet_traffic",
-            "to": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "label": "used"
         }
     },
     "dataset:maxmind": {
@@ -818,16 +413,6 @@
         "tag:geographic": {
             "from": "dataset:maxmind",
             "to": "tag:geographic"
-        },
-        "paper:residential_links_under_the_weather": {
-            "from": "dataset:maxmind",
-            "to": "paper:residential_links_under_the_weather",
-            "label": "used by"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "dataset:maxmind",
-            "to": "paper:2019_residential_links_under_the_weather",
-            "label": "used"
         }
     },
     "tag:geographic": {
@@ -840,92 +425,10 @@
             "to": "software:netacuity"
         }
     },
-    "paper:residential_links_under_the_weather": {
-        "dataset:maxmind": {
-            "from": "paper:residential_links_under_the_weather",
-            "to": "dataset:maxmind",
-            "label": "used by"
-        },
-        "dataset:thunderping": {
-            "from": "paper:residential_links_under_the_weather",
-            "to": "dataset:thunderping",
-            "label": "used by"
-        },
-        "software:u_s_national_weather_serice_severe_weather_alert": {
-            "from": "paper:residential_links_under_the_weather",
-            "to": "software:u_s_national_weather_serice_severe_weather_alert",
-            "label": "used by"
-        }
-    },
-    "dataset:maxmind_geolite": {
-        "paper:geo-locating_bgp_prefixes": {
-            "from": "dataset:maxmind_geolite",
-            "to": "paper:geo-locating_bgp_prefixes",
-            "label": "used by"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "dataset:maxmind_geolite",
-            "to": "paper:2019_geo_locating_bgp_prefixes",
-            "label": "used"
-        }
-    },
-    "paper:geo-locating_bgp_prefixes": {
-        "dataset:maxmind_geolite": {
-            "from": "paper:geo-locating_bgp_prefixes",
-            "to": "dataset:maxmind_geolite",
-            "label": "used by"
-        },
-        "dataset:netacuity_edge": {
-            "from": "paper:geo-locating_bgp_prefixes",
-            "to": "dataset:netacuity_edge",
-            "label": "used by"
-        },
-        "software:bgpstream": {
-            "from": "paper:geo-locating_bgp_prefixes",
-            "to": "software:bgpstream",
-            "label": "used by"
-        }
-    },
-    "dataset:mopeye": {
-        "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "dataset:mopeye",
-            "to": "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "label": "used by"
-        },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "dataset:mopeye",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "label": "used"
-        }
-    },
-    "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-        "dataset:mopeye": {
-            "from": "paper:an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "dataset:mopeye",
-            "label": "used by"
-        }
-    },
     "dataset:netacuity_edge": {
         "tag:geolocation": {
             "from": "dataset:netacuity_edge",
             "to": "tag:geolocation"
-        },
-        "paper:geo-locating_bgp_prefixes": {
-            "from": "dataset:netacuity_edge",
-            "to": "paper:geo-locating_bgp_prefixes",
-            "label": "used by"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "dataset:netacuity_edge",
-            "to": "paper:2019_geo_locating_bgp_prefixes",
-            "label": "used"
-        }
-    },
-    "dataset:spoofer": {
-        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "dataset:spoofer",
-            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "label": "used by"
         }
     },
     "dataset:thunderping": {
@@ -936,26 +439,6 @@
         "tag:active_measurement": {
             "from": "dataset:thunderping",
             "to": "tag:active_measurement"
-        },
-        "paper:how_to_find_correlated_internet_failures": {
-            "from": "dataset:thunderping",
-            "to": "paper:how_to_find_correlated_internet_failures",
-            "label": "used by"
-        },
-        "paper:residential_links_under_the_weather": {
-            "from": "dataset:thunderping",
-            "to": "paper:residential_links_under_the_weather",
-            "label": "used by"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "dataset:thunderping",
-            "to": "paper:2019_how_to_find_correlated_internet_failures",
-            "label": "used"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "dataset:thunderping",
-            "to": "paper:2019_residential_links_under_the_weather",
-            "label": "used"
         }
     },
     "tag:weather": {
@@ -963,37 +446,9 @@
             "from": "tag:weather",
             "to": "dataset:thunderping"
         },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:weather",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
         "software:u_s_national_weather_serice_severe_weather_alert": {
             "from": "tag:weather",
             "to": "software:u_s_national_weather_serice_severe_weather_alert"
-        }
-    },
-    "paper:how_to_find_correlated_internet_failures": {
-        "dataset:thunderping": {
-            "from": "paper:how_to_find_correlated_internet_failures",
-            "to": "dataset:thunderping",
-            "label": "used by"
-        }
-    },
-    "dataset:ucsd_network_telescope": {
-        "paper:chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:ucsd_network_telescope",
-            "to": "paper:chocolatine_outage_detection_for_internet_background_radiation",
-            "label": "used by"
-        },
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "dataset:ucsd_network_telescope",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:ucsd_network_telescope",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "label": "used"
         }
     },
     "group:asrank": {
@@ -1005,17 +460,13 @@
             "from": "group:asrank",
             "to": "tag:security"
         },
-        "tag:software/tools": {
+        "tag:software_tools": {
             "from": "group:asrank",
-            "to": "tag:software/tools"
+            "to": "tag:software_tools"
         },
-        "dataset:as_rank": {
+        "dataset:asrank": {
             "from": "group:asrank",
-            "to": "dataset:as_rank"
-        },
-        "paper:asrank": {
-            "from": "group:asrank",
-            "to": "paper:asrank"
+            "to": "dataset:asrank"
         },
         "media:asrank": {
             "from": "group:asrank",
@@ -1030,38 +481,18 @@
             "to": "software:asrank_ui"
         }
     },
-    "tag:software/tools": {
+    "tag:software_tools": {
         "group:asrank": {
-            "from": "tag:software/tools",
+            "from": "tag:software_tools",
             "to": "group:asrank"
         },
         "media:asrank": {
-            "from": "tag:software/tools",
+            "from": "tag:software_tools",
             "to": "media:asrank"
         },
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "tag:software/tools",
+            "from": "tag:software_tools",
             "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:software/tools",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
-        }
-    },
-    "dataset:as_rank": {
-        "group:asrank": {
-            "from": "dataset:as_rank",
-            "to": "group:asrank"
-        }
-    },
-    "paper:asrank": {
-        "group:asrank": {
-            "from": "paper:asrank",
-            "to": "group:asrank"
-        },
-        "media:asrank": {
-            "from": "paper:asrank",
-            "to": "media:asrank"
         }
     },
     "media:asrank": {
@@ -1081,17 +512,9 @@
             "from": "media:asrank",
             "to": "tag:security"
         },
-        "tag:software/tools": {
+        "tag:software_tools": {
             "from": "media:asrank",
-            "to": "tag:software/tools"
-        },
-        "paper:asrank": {
-            "from": "media:asrank",
-            "to": "paper:asrank"
-        },
-        "paper:2013_asrank": {
-            "from": "media:asrank",
-            "to": "paper:2013_asrank"
+            "to": "tag:software_tools"
         }
     },
     "tag:measurement_methodology": {
@@ -1102,34 +525,6 @@
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:measurement_methodology",
             "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_geo_locating_bgp_prefixes"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
-        "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
         }
     },
     "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
@@ -1145,754 +540,9 @@
             "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "to": "tag:security"
         },
-        "tag:software/tools": {
+        "tag:software_tools": {
             "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "tag:software/tools"
-        },
-        "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "paper:network_hygiene,_incentives,_and_regulation_deployment_of_source_address_validation_in_the_internet"
-        }
-    },
-    "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-        "tag:data": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:data"
-        },
-        "tag:mobile": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:mobile"
-        },
-        "tag:passive_data_analysis": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:passive_data_analysis"
-        },
-        "tag:qoe": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:qoe"
-        },
-        "dataset:mopeye": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "dataset:mopeye",
-            "label": "used"
-        }
-    },
-    "tag:data": {
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:data",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        },
-        "paper:2013_asrank": {
-            "from": "tag:data",
-            "to": "paper:2013_asrank"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:data",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "tag:mobile": {
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:mobile",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        }
-    },
-    "tag:passive_data_analysis": {
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:passive_data_analysis",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        },
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:passive_data_analysis",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:passive_data_analysis",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        }
-    },
-    "tag:qoe": {
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:qoe",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        }
-    },
-    "paper:2013_asrank": {
-        "tag:data": {
-            "from": "paper:2013_asrank",
-            "to": "tag:data"
-        },
-        "tag:asn": {
-            "from": "paper:2013_asrank",
-            "to": "tag:asn"
-        },
-        "tag:as_rank": {
-            "from": "paper:2013_asrank",
-            "to": "tag:as_rank"
-        },
-        "tag:topology": {
-            "from": "paper:2013_asrank",
-            "to": "tag:topology"
-        },
-        "dataset:asrank": {
-            "from": "paper:2013_asrank",
-            "to": "dataset:asrank",
-            "label": "defines"
-        },
-        "media:asrank": {
-            "from": "paper:2013_asrank",
-            "to": "media:asrank"
-        }
-    },
-    "tag:asn": {
-        "paper:2013_asrank": {
-            "from": "tag:asn",
-            "to": "paper:2013_asrank"
-        },
-        "software:pyasn": {
-            "from": "tag:asn",
-            "to": "software:pyasn"
-        }
-    },
-    "tag:as_rank": {
-        "paper:2013_asrank": {
-            "from": "tag:as_rank",
-            "to": "paper:2013_asrank"
-        }
-    },
-    "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-        "tag:network_telescope": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:network_telescope"
-        },
-        "tag:autocracy": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:autocracy"
-        },
-        "tag:passive_data_analysis": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:passive_data_analysis"
-        },
-        "tag:security": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:security"
-        },
-        "tag:digital_politics": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:digital_politics"
-        },
-        "tag:internet_measurement": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:internet_measurement"
-        },
-        "tag:cyberattacks": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "tag:cyberattacks"
-        },
-        "dataset:as_prefix": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "dataset:as_prefix",
-            "label": "used"
-        },
-        "dataset:ucsd_network_telescope": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "dataset:ucsd_network_telescope",
-            "label": "used"
-        },
-        "software:netacuity": {
-            "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "to": "software:netacuity",
-            "label": "used"
-        }
-    },
-    "tag:network_telescope": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:network_telescope",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:network_telescope",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        }
-    },
-    "tag:autocracy": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:autocracy",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        }
-    },
-    "tag:digital_politics": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:digital_politics",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        }
-    },
-    "tag:internet_measurement": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:internet_measurement",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        }
-    },
-    "tag:cyberattacks": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "tag:cyberattacks",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
-        }
-    },
-    "software:netacuity": {
-        "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "software:netacuity",
-            "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used"
-        },
-        "tag:geolocation": {
-            "from": "software:netacuity",
-            "to": "tag:geolocation"
-        },
-        "tag:geographic": {
-            "from": "software:netacuity",
-            "to": "tag:geographic"
-        },
-        "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes": {
-            "from": "software:netacuity",
-            "to": "paper:at_home_and_abroad_the_use_of_denial-of-service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used by"
-        }
-    },
-    "paper:2019_bgp_hijacking_classification": {
-        "tag:topology": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "tag:topology"
-        },
-        "tag:security": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "tag:security"
-        },
-        "tag:routing": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "tag:routing"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:as_organization": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "dataset:as_organization",
-            "label": "used"
-        },
-        "dataset:bgpmon": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "dataset:bgpmon",
-            "label": "used"
-        }
-    },
-    "software:bgpstream": {
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_bgp_hijacking_classification",
-            "label": "used"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_geo_locating_bgp_prefixes",
-            "label": "used"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "label": "used"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "label": "used"
-        },
-        "tag:topology": {
-            "from": "software:bgpstream",
-            "to": "tag:topology"
-        },
-        "tag:bgp": {
-            "from": "software:bgpstream",
-            "to": "tag:bgp"
-        },
-        "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "software:bgpstream",
-            "to": "paper:towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "label": "used by"
-        },
-        "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "software:bgpstream",
-            "to": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "label": "used by"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:bgpstream",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used by"
-        },
-        "paper:bgp_hijacking_classification": {
-            "from": "software:bgpstream",
-            "to": "paper:bgp_hijacking_classification",
-            "label": "used by"
-        },
-        "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "software:bgpstream",
-            "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used by"
-        },
-        "paper:geo-locating_bgp_prefixes": {
-            "from": "software:bgpstream",
-            "to": "paper:geo-locating_bgp_prefixes",
-            "label": "used by"
-        }
-    },
-    "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-        "tag:internet_outages": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "tag:internet_outages"
-        },
-        "tag:routing": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "tag:routing"
-        },
-        "dataset:as_prefix": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "dataset:as_prefix",
-            "label": "used"
-        }
-    },
-    "tag:internet_outages": {
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        },
-        "paper:2019_geo_locating_bgp_prefixes": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_geo_locating_bgp_prefixes"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-        "tag:internet_outages": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:internet_outages"
-        },
-        "tag:network_telescope": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:network_telescope"
-        },
-        "tag:passive_data_analysis": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:passive_data_analysis"
-        },
-        "tag:security": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:security"
-        },
-        "dataset:ucsd_network_telescope": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:ucsd_network_telescope",
-            "label": "used"
-        },
-        "dataset:caida_ioda": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:caida_ioda",
-            "label": "used"
-        }
-    },
-    "paper:2019_geo_locating_bgp_prefixes": {
-        "tag:internet_outages": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "tag:internet_outages"
-        },
-        "tag:routing": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "tag:routing"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "tag:measurement_methodology"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:maxmind_geolite": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "dataset:maxmind_geolite",
-            "label": "used"
-        },
-        "dataset:netacuity_edge": {
-            "from": "paper:2019_geo_locating_bgp_prefixes",
-            "to": "dataset:netacuity_edge",
-            "label": "used"
-        }
-    },
-    "paper:2019_how_to_find_correlated_internet_failures": {
-        "tag:internet_outages": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:internet_outages"
-        },
-        "tag:routing": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:routing"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:measurement_methodology"
-        },
-        "dataset:thunderping": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "dataset:thunderping",
-            "label": "used"
-        }
-    },
-    "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
-        "tag:measurement_methodology": {
-            "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "to": "tag:topology"
-        },
-        "tag:routing": {
-            "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "to": "tag:routing"
-        },
-        "dataset:mawi_internet_traffic": {
-            "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "to": "dataset:mawi_internet_traffic",
-            "label": "used"
-        },
-        "dataset:caida_internet_traffic": {
-            "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
-            "to": "dataset:caida_internet_traffic",
-            "label": "used"
-        }
-    },
-    "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-        "tag:measurement_methodology": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:topology"
-        },
-        "tag:software/tools": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:software/tools"
-        },
-        "dataset:itdk": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "dataset:itdk",
-            "label": "used"
-        }
-    },
-    "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-        "tag:topology": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:topology"
-        },
-        "tag:security": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:security"
-        },
-        "tag:routing": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:routing"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "software:bgpstream",
-            "label": "used"
-        }
-    },
-    "paper:2019_residential_links_under_the_weather": {
-        "tag:internet_reliability": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:internet_reliability"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:internet_outages": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:internet_outages"
-        },
-        "tag:weather": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:weather"
-        },
-        "tag:ping": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:ping"
-        },
-        "tag:data": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:data"
-        },
-        "tag:active_data_analysis": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:active_data_analysis"
-        },
-        "tag:routing": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:routing"
-        },
-        "dataset:thunderping": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "dataset:thunderping",
-            "label": "used"
-        },
-        "software:u.s._national_weather_serice_severe_weather_alert": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "software:u.s._national_weather_serice_severe_weather_alert",
-            "label": "used"
-        },
-        "dataset:maxmind": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "dataset:maxmind",
-            "label": "used"
-        }
-    },
-    "tag:internet_reliability": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:internet_reliability",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "tag:ping": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:ping",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "tag:active_data_analysis": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:active_data_analysis",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "software:u.s._national_weather_serice_severe_weather_alert": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "software:u.s._national_weather_serice_severe_weather_alert",
-            "to": "paper:2019_residential_links_under_the_weather",
-            "label": "used"
-        }
-    },
-    "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-        "tag:measurement_methodology": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:routing": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:routing"
-        },
-        "tag:topology": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:topology"
-        },
-        "tag:economics": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:economics"
-        },
-        "software:peeringdb": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:peeringdb",
-            "label": "used"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:euro-ix_ixp_service_matrix": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:euro-ix_ixp_service_matrix",
-            "label": "used"
-        },
-        "dataset:bgp_communities": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:bgp_communities",
-            "label": "used"
-        },
-        "dataset:as_organization": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:as_organization",
-            "label": "used"
-        }
-    },
-    "tag:economics": {
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:economics",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
-        }
-    },
-    "software:peeringdb": {
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:peeringdb",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
-        },
-        "tag:ixp": {
-            "from": "software:peeringdb",
-            "to": "tag:ixp"
-        },
-        "tag:topology": {
-            "from": "software:peeringdb",
-            "to": "tag:topology"
-        },
-        "paper:stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:peeringdb",
-            "to": "paper:stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used by"
-        }
-    },
-    "dataset:euro-ix_ixp_service_matrix": {
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:euro-ix_ixp_service_matrix",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
-        }
-    },
-    "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-        "tag:congestion": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:congestion"
-        },
-        "tag:routing": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:routing"
-        },
-        "tag:topology": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:topology"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:measurement_methodology"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:as_prefix": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:as_prefix",
-            "label": "used"
-        },
-        "dataset:archipelago": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:archipelago",
-            "label": "used"
-        },
-        "dataset:as_relationships": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "dataset:as_relationships",
-            "label": "used"
-        }
-    },
-    "tag:congestion": {
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:congestion",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
-        "software:manic": {
-            "from": "tag:congestion",
-            "to": "software:manic"
-        }
-    },
-    "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-        "tag:remote_peering": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:remote_peering"
-        },
-        "tag:topology": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:topology"
-        },
-        "tag:dns": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:dns"
-        },
-        "tag:peering": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:peering"
-        },
-        "tag:internet_routing": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:internet_routing"
-        },
-        "tag:anycast": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:anycast"
-        },
-        "tag:routing": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:routing"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:anycast_dataset": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "dataset:anycast_dataset",
-            "label": "used"
-        }
-    },
-    "tag:remote_peering": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:remote_peering",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "tag:dns": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:dns",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "tag:peering": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:peering",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "tag:internet_routing": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:internet_routing",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
+            "to": "tag:software_tools"
         }
     },
     "software:as_relationship": {
@@ -1901,56 +551,51 @@
             "to": "tag:topology"
         }
     },
-    "software:asrank": {
-        "software:asrank_api": {
-            "from": "software:asrank",
-            "to": "software:asrank_api"
-        }
-    },
-    "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-        "software:bgpstream": {
-            "from": "paper:profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "software:bgpstream",
-            "label": "used by"
-        }
-    },
-    "software:hi_cube": {
-        "tag:security": {
-            "from": "software:hi_cube",
-            "to": "tag:security"
-        }
-    },
-    "software:iffinder": {
-        "dataset:internet_topology_data_kit": {
-            "from": "software:iffinder",
-            "to": "dataset:internet_topology_data_kit",
-            "label": "used by"
-        }
-    },
-    "dataset:internet_topology_data_kit": {
-        "software:iffinder": {
-            "from": "dataset:internet_topology_data_kit",
-            "to": "software:iffinder",
-            "label": "used by"
-        },
-        "software:kapar": {
-            "from": "dataset:internet_topology_data_kit",
-            "to": "software:kapar",
-            "label": "used by"
-        },
-        "software:midar": {
-            "from": "dataset:internet_topology_data_kit",
-            "to": "software:midar",
-            "label": "used by"
-        }
-    },
-    "software:internet_health_report": {
+    "software:bgpstream": {
         "tag:topology": {
-            "from": "software:internet_health_report",
+            "from": "software:bgpstream",
             "to": "tag:topology"
+        },
+        "tag:bgp": {
+            "from": "software:bgpstream",
+            "to": "tag:bgp"
+        }
+    },
+    "software:coralreef": {
+        "tag:traffic": {
+            "from": "software:coralreef",
+            "to": "tag:traffic"
+        }
+    },
+    "tag:traffic": {
+        "software:coralreef": {
+            "from": "tag:traffic",
+            "to": "software:coralreef"
+        }
+    },
+    "software:corsaro": {
+        "tag:trafic": {
+            "from": "software:corsaro",
+            "to": "tag:trafic"
+        },
+        "software:ioda": {
+            "from": "software:corsaro",
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    },
+    "tag:trafic": {
+        "software:corsaro": {
+            "from": "tag:trafic",
+            "to": "software:corsaro"
         }
     },
     "software:ioda": {
+        "software:corsaro": {
+            "from": "software:ioda",
+            "to": "software:corsaro",
+            "label": "used by"
+        },
         "tag:security": {
             "from": "software:ioda",
             "to": "tag:security"
@@ -1962,12 +607,29 @@
         "tag:outages": {
             "from": "software:ioda",
             "to": "tag:outages"
+        },
+        "software:libtimeseries": {
+            "from": "software:ioda",
+            "to": "software:libtimeseries",
+            "label": "used by"
         }
     },
-    "software:kapar": {
-        "dataset:internet_topology_data_kit": {
-            "from": "software:kapar",
-            "to": "dataset:internet_topology_data_kit",
+    "software:hi_cube": {
+        "tag:security": {
+            "from": "software:hi_cube",
+            "to": "tag:security"
+        }
+    },
+    "software:internet_health_report": {
+        "tag:topology": {
+            "from": "software:internet_health_report",
+            "to": "tag:topology"
+        }
+    },
+    "software:libtimeseries": {
+        "software:ioda": {
+            "from": "software:libtimeseries",
+            "to": "software:ioda",
             "label": "used by"
         }
     },
@@ -1983,9 +645,11 @@
         "tag:ip_links": {
             "from": "software:manic",
             "to": "tag:ip_links"
-        },
+        }
+    },
+    "tag:congestion": {
         "software:manic": {
-            "from": "software:manic",
+            "from": "tag:congestion",
             "to": "software:manic"
         }
     },
@@ -2002,10 +666,37 @@
         }
     },
     "software:midar": {
-        "dataset:internet_topology_data_kit": {
+        "software:vela": {
             "from": "software:midar",
-            "to": "dataset:internet_topology_data_kit",
+            "to": "software:vela",
             "label": "used by"
+        }
+    },
+    "software:vela": {
+        "software:midar": {
+            "from": "software:vela",
+            "to": "software:midar",
+            "label": "used by"
+        }
+    },
+    "software:netacuity": {
+        "tag:geolocation": {
+            "from": "software:netacuity",
+            "to": "tag:geolocation"
+        },
+        "tag:geographic": {
+            "from": "software:netacuity",
+            "to": "tag:geographic"
+        }
+    },
+    "software:peeringdb": {
+        "tag:ixp": {
+            "from": "software:peeringdb",
+            "to": "tag:ixp"
+        },
+        "tag:topology": {
+            "from": "software:peeringdb",
+            "to": "tag:topology"
         }
     },
     "software:periscope": {
@@ -2030,195 +721,28 @@
             "to": "software:pyasn"
         }
     },
+    "tag:asn": {
+        "software:pyasn": {
+            "from": "tag:asn",
+            "to": "software:pyasn"
+        }
+    },
     "software:scamper": {
         "tag:topology": {
             "from": "software:scamper",
             "to": "tag:topology"
-        },
-        "dataset:macroscopic_topology_measurements": {
-            "from": "software:scamper",
-            "to": "dataset:macroscopic_topology_measurements",
-            "label": "used by"
-        },
-        "dataset:the_ipv4_routed_24_topology_dataset": {
-            "from": "software:scamper",
-            "to": "dataset:the_ipv4_routed_24_topology_dataset",
-            "label": "used by"
-        }
-    },
-    "dataset:macroscopic_topology_measurements": {
-        "software:scamper": {
-            "from": "dataset:macroscopic_topology_measurements",
-            "to": "software:scamper",
-            "label": "used by"
-        }
-    },
-    "dataset:the_ipv4_routed_24_topology_dataset": {
-        "software:scamper": {
-            "from": "dataset:the_ipv4_routed_24_topology_dataset",
-            "to": "software:scamper",
-            "label": "used by"
         }
     },
     "software:spoofer": {
         "tag:security": {
             "from": "software:spoofer",
             "to": "tag:security"
-        },
-        "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-            "from": "software:spoofer",
-            "to": "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "label": "used by"
-        },
-        "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer": {
-            "from": "software:spoofer",
-            "to": "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer",
-            "label": "used by"
-        },
-        "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof": {
-            "from": "software:spoofer",
-            "to": "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof",
-            "label": "used by"
-        },
-        "presentation:acm_computer_and_communications_security_(ccs)": {
-            "from": "software:spoofer",
-            "to": "presentation:acm_computer_and_communications_security_(ccs)",
-            "label": "used by"
-        },
-        "presentation:dhs_ddosd_pi_meeting": {
-            "from": "software:spoofer",
-            "to": "presentation:dhs_ddosd_pi_meeting",
-            "label": "used by"
-        },
-        "presentation:dhs_r&d_showcase": {
-            "from": "software:spoofer",
-            "to": "presentation:dhs_r&d_showcase",
-            "label": "used by"
-        },
-        "presentation:one_conference": {
-            "from": "software:spoofer",
-            "to": "presentation:one_conference",
-            "label": "used by"
-        },
-        "presentation:nznog": {
-            "from": "software:spoofer",
-            "to": "presentation:nznog",
-            "label": "used by"
-        },
-        "presentation:nanog": {
-            "from": "software:spoofer",
-            "to": "presentation:nanog",
-            "label": "used by"
-        },
-        "presentation:ssac": {
-            "from": "software:spoofer",
-            "to": "presentation:ssac",
-            "label": "used by"
-        },
-        "presentation:ausngo": {
-            "from": "software:spoofer",
-            "to": "presentation:ausngo",
-            "label": "used by"
-        },
-        "presentation:dhs_s&t_ddos_defense_meeting": {
-            "from": "software:spoofer",
-            "to": "presentation:dhs_s&t_ddos_defense_meeting",
-            "label": "used by"
-        }
-    },
-    "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
-        "software:spoofer": {
-            "from": "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer": {
-        "software:spoofer": {
-            "from": "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof": {
-        "software:spoofer": {
-            "from": "paper:using_loops_observed_in_traceroute_to_infer_the_ability_to_spoof",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:acm_computer_and_communications_security_(ccs)": {
-        "software:spoofer": {
-            "from": "presentation:acm_computer_and_communications_security_(ccs)",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:dhs_ddosd_pi_meeting": {
-        "software:spoofer": {
-            "from": "presentation:dhs_ddosd_pi_meeting",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:dhs_r&d_showcase": {
-        "software:spoofer": {
-            "from": "presentation:dhs_r&d_showcase",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:one_conference": {
-        "software:spoofer": {
-            "from": "presentation:one_conference",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:nznog": {
-        "software:spoofer": {
-            "from": "presentation:nznog",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:nanog": {
-        "software:spoofer": {
-            "from": "presentation:nanog",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:ssac": {
-        "software:spoofer": {
-            "from": "presentation:ssac",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:ausngo": {
-        "software:spoofer": {
-            "from": "presentation:ausngo",
-            "to": "software:spoofer",
-            "label": "used by"
-        }
-    },
-    "presentation:dhs_s&t_ddos_defense_meeting": {
-        "software:spoofer": {
-            "from": "presentation:dhs_s&t_ddos_defense_meeting",
-            "to": "software:spoofer",
-            "label": "used by"
         }
     },
     "software:u_s_national_weather_serice_severe_weather_alert": {
         "tag:weather": {
             "from": "software:u_s_national_weather_serice_severe_weather_alert",
             "to": "tag:weather"
-        },
-        "paper:residential_links_under_the_weather": {
-            "from": "software:u_s_national_weather_serice_severe_weather_alert",
-            "to": "paper:residential_links_under_the_weather",
-            "label": "used by"
         }
     }
 }

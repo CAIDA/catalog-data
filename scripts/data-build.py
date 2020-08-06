@@ -50,7 +50,9 @@ import datetime
 
 source_dir="sources"
 
+id_info = {}
 id_object = {}
+id_paper = {}
 id_id_link = {}
 
 id_word_score = {}
@@ -59,7 +61,7 @@ re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
 re_html = re.compile("<[^>]+>")
-re_id_illegal = re.compile("[:\s\?]+")
+re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 re_type_name = re.compile("([^\:]+):(.+)")
 re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 
@@ -75,6 +77,7 @@ id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_score_id_file = "word_score_id.json"
 
+filename_errors = {}
 
 # valid object types
 object_types = set([
@@ -89,7 +92,6 @@ object_types = set([
     "group"
 ])
 
-
 # Weights used to create word scoring for search
 weight_default = 1
 key_weight = {
@@ -99,10 +101,10 @@ key_weight = {
     "tags": 10
 }
 link_weight = {
-    "paper":.3,
-    "dataset":.5,
-    "software":.3,
-    "solutions":.3
+    "Paper":.3,
+    "Dataset":.5,
+    "Software":.3,
+    "Solutions":.3
 }
 
 type_key_w_type_w = {
@@ -138,6 +140,8 @@ type_key_w_type_w = {
     }
 }
 
+id_missing = {}
+
 def main():
 
     #######################
@@ -153,19 +157,22 @@ def main():
                 if re.search("\.json$",filename,re.IGNORECASE):
                     print ("   ",path+"/"+filename)
                     info = json.load(open(path+"/"+filename))
-                    info["__typename"] = type_.lower()
-                    object_lookup(info)
+                    info["filename"] = path+"/"+filename
+                    object_add(type_,info)
+
+    values = list(id_object.values())
+    for info in values:
+        object_finish(info)
 
     #######################
     # Check that the objects are valid
     #######################
     type_checker = {
-        "person":person_checker,
-
-        "dataset":object_checker,
-        "software":object_checker,
-        "paper":object_checker,
-        "media":object_checker
+        "Person":person_checker,
+        "Dataset":object_checker,
+        "Software":object_checker,
+        "Paper":object_checker,
+        "Media":object_checker
     }
 
     id_failed = []
@@ -175,6 +182,8 @@ def main():
             message = type_checker[type_](obj)
             if message is not None:
                 id_failed.append({"id":id_,"message":message})
+                
+    #error_print()
 
     for id_msg in id_failed:
         id_ = id_msg["id"]
@@ -291,6 +300,19 @@ def main():
     sys.exit()
 
 ###########################
+def error_add(filename, message):
+    print ("error",filename,message)
+    if filename not in filename_errors:
+        filename_errors[filename] = []
+    filename_errors[filename].append(message)
+
+def error_print():
+    for filename,errors in filename_errors.items():
+        print ("error",filename)
+        for error in errors:
+            print ("    ",error)
+
+###########################
 
 def data_print(): 
     for type,data in type_data.items():
@@ -309,154 +331,216 @@ def data_print():
 
 #############################
 
-def object_lookup_type_name(type_,name):
-    if type_ == name[0:len(type_)]:
-        obj = object_lookup_id(name)
+def id_create(type_,name,id_=None):
+    if id_ is not None:
+        m = re_type_name.search(id_)
+        if m:
+            type_,name = m.groups()
+        elif type_ is not None:
+            name = id_
+        else:
+            print ("type not defined for",id)
+            sys.exit()
+    id_ = type_+":"+re_id_illegal.sub("_",name)
+    return id_.lower()
+
+
+def object_add(type_, info): 
+
+    error = False
+    if "name" in info:
+        info["__typename"] = type_.lower()
+        if "id" not in info:
+            info["id"] = id_create(info["__typename"],info["name"])
+        else:
+            info["id"] = id_create(info["__typename"],info["name"],info["id"])
     else:
-        id_ = type_+":"+re_id_illegal.sub("_",name)
-        obj = object_lookup_id(id_)
-        obj["__typename"] = type_
-        obj["name"] = name
+        error_add(info["filename"], "failed to find name:"+json.dumps(info))
+        error = True
+    
+    if type_ == "paper":
+        if "date" not in info:
+            error_add(info["filename"], "failed to find paper's date")
+            error = True
+
+        m = re.search("^paper:(\d\d\d\d)_(.+)", info["id"])
+        if m:
+            date,id_short = m.groups()
+            id_paper[id_short] = info
+        else:
+            info["id"] = id_create(info["__typename"],info["id"])
+
+    if not error:
+        type_ = type_.title()
+        id_object[info["id"]] = info
+        info["__typename"] = type_
+        return info
+    return None
+
+def object_finish(obj):
+    for key,value in obj.items():
+        if key == "tags":
+            for i,tag in enumerate(obj[key]):
+                o = object_lookup_type_name(obj["filename"], "tag",tag)
+                if o is not None:
+                    print (tag,o)
+                    tag = obj[key][i] = o["id"]
+                    print (obj,tag)
+                    link_lookup(obj,tag)
+            
+        elif key == "links":
+            i = 0
+            while i < len(obj["links"]):
+                link = obj["links"][i]
+                print (obj,link) #debug
+                if not link_lookup(obj,link):
+                    obj["links"].pop(i)
+                else:
+                    i += 1
+
+
+        #elif key == "resources":
+        #    for resource in obj["resources"]:
+        #        print (resource) # debug 
+        #        for i,tag in enumerate(resource[key]):
+        #            resource["tags"][i] = object_lookup_type_name("tag",tag)["id"]
+
+        elif re_date_key.search(key) and type(obj[key]) == str:
+            values = re_not_digit.split(obj[key])
+            digits = ["1990","01","01","00","00","00"]
+            for i,value in enumerate(values):
+                digits[i] = value
+            #dt = datetime.datetime.strptime(" ".join(digits), "%Y %m %d %H %M %S")
+            #date = int(time.mktime(dt.timetuple()))
+            obj[key] = "%s/%s/%s/ %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
+
+        elif obj["__typename"] == "Venue" and key == "dates":
+            for date_url in obj[key]:
+                venue_add_date_url(obj,date_url["date"],date_url["url"])
+
+        elif key == "persons" or key == "venues" or key == "presenters" or key == "authors":
+                for person_org in obj[key]:
+                    for k in ["person","presenter"]:
+                        if k in person_org:
+                            id_ = person_org[k]
+                            person = object_lookup_id(obj["filename"], id_)
+                            if "name" not in person:
+                                person["name"] = id_
+                            person_org[k] = person["id"]
+                    if "venue" in person_org:
+                        venue = object_lookup_id(obj["filename"], person_org["venue"])
+                        venue["_name"] = person_org["venue"]
+                        if "date" in person_org:
+                            date = person_org["date"]
+                            if "url" in person_org:
+                                url = person_org["url"]
+                            else:
+                                url = ""
+                            venue_add_date_url(venue,date,url)
+                        person_org["venue"] = venue["id"]
+        else:
+            obj[key] = tag_convert(obj["filename"], obj[key])
     return obj
 
-def object_lookup_id(id_):
-    id_ = id_.lower()
+ 
+def object_lookup_type_name(filename, type_,name):
+    if type_ == name[0:(len(type_)+1)]:
+        name = name[(len(type_)+1):]
+    id_ = id_create(type_,name)
+    print (type_,"::",name) # debug 
+    return object_lookup({
+        "id":id_,
+        "filename":filename, 
+        "__typename":type_,
+        "name":name
+    })
+
+def object_lookup_id(filename, id_):
+    id_ = id_create(None,None,id_)
+    if id_ in id_object:
+        return id_object[id_]
+
+    print (filename, id_) # debug 
     m = re_type_name.search(id_)
     if m:
         type_,name = m.groups()
         #print (">>>",id_,type_,name)
         return object_lookup({
             "id":id_,
-            "__typename":type_
+            "filename":filename,
+            "__typename":type_.title(),
+            "name":name.replace("_"," ")
         })
     else:
         print ("failed to parse id",id_)
         sys.exit()
 
-
 def object_lookup(info):
+    print ('object_lookup:',info)
     type_ = info["__typename"] = info["__typename"].lower()
+    info["__typename"] = type_.title()
     if "id" not in info:
         if "name" in info and "__typename" in info:
-            id_ = info["__typename"]+":"+re_id_illegal.sub("_",info["name"])
-            info["id"] = id_.lower()
+            id_ = id_create(info["__typename"],info["name"])
+            info["id"] = id_
         else:
             print ("no id or name,_typename",info)
             sys.exit()
     else:
         if not re.search("^"+type_,info["id"]):
             info["id"] = info["__typename"]+":"+info["id"]
-    id_ = info["id"] = info["id"].lower()
+    id_ = info["id"]
     if id_ not in id_object:
-        id_object[id_] = {"id":id_.lower(),"__typename":info["__typename"]}
-    obj  = id_object[id_]
-
-    object_types = set(["datasets","licenses","softwares","solutions","papers","publications"])
-    for key in info.keys():
-        if key == "links" or key == "tags":
-            continue
-            
-        if key not in obj:
-            if key in object_types:
-                objs  = []
-                for i in info[key]:
-                    if type(i) == str:
-                        o = object_lookup_id(i)
-                    else:
-                        o = object_lookup(i)
-                    objs.append(o["id"])
-                obj[key] = objs
-            elif re_date_key.search(key) and type(info[key]) == str:
-                values = re_not_digit.split(info[key])
-                digits = ["1990","01","01","00","00","00"]
-                for i,value in enumerate(values):
-                    digits[i] = value
-                #dt = datetime.datetime.strptime(" ".join(digits), "%Y %m %d %H %M %S")
-                #date = int(time.mktime(dt.timetuple()))
-                obj[key] = "%s/%s/%s/ %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
-            elif obj["__typename"] == "Venue" and key == "dates":
-                for date_url in info[key]:
-                    venue_add_date_url(obj,date_url["name"],date_url["url"])
-
-            else:
-                if key == "persons" or key == "venues" or key == "presenters" or key == "authors":
-                    obj[key] = info[key]
-                    for person_org in obj[key]:
-                        for k in ["person","presenter"]:
-                            if k in person_org:
-                                id_ = person_org[k]
-                                person = object_lookup_id(id_)
-                                if "name" not in person:
-                                    person["name"] = id_
-                                person_org[k] = person["id"]
-                        if "venue" in person_org:
-                            venue = object_lookup_id(person_org["venue"])
-                            venue["_name"] = person_org["venue"]
-                            if "date" in person_org:
-                                date = person_org["date"]
-                                if "url" in person_org:
-                                    url = person_org["url"]
-                                else:
-                                    url = ""
-                                venue_add_date_url(venue,date,url)
-                            person_org["venue"] = venue["id"]
-                else:
-                    obj[key] = tag_convert(info[key])
-                           
-
-    if "tags" in info:
-        tags = [None] * len(info["tags"])
-        for i,tag in enumerate(info["tags"]):
-            tags[i] = object_lookup_type_name("tag",tag)["id"]
-            link = { "to":tags[i]}
-            link_lookup(obj["id"],link)
-        obj["tags"] = tags
-
-
-    if "links" in info:
-        for link in info["links"]:
-            link_lookup(obj["id"],link)
-
-    return obj
+        obj = object_add(info["__typename"], info)
+        if obj is not None:
+            object_finish(obj)
+            return obj
+    else:
+        return id_object[id_]
 
 def venue_add_date_url(venue, date, url):
     if "dates" not in venue:
         venue["dates"] = []
     found = False
     for date_url in venue["dates"]:
-        if date_url["name"] == date:
+        if date_url["date"] == date:
             found = True
     if not found:
-        venue["dates"].append({"name":date,"url":url})
+        venue["dates"].append({"date":date,"url":url})
 
-def tag_convert(obj,padding=""):
+def tag_convert(filename, obj,padding=""):
     type_ = type(obj)
-    #print (len(padding),padding,obj)
+    print (".",len(padding),padding,obj) # debug 
     if type_ == dict:
         for key,value in obj.items():
             if "tags" == key and type(value) == list:
                 for i,tag in enumerate(obj["tags"]):
-                    obj["tags"][i] = object_lookup_type_name("tag",tag)["id"]
+                    print ("tag", tag, obj) # debug 
+                    obj["tags"][i] = object_lookup_type_name(filename, "tag",tag)["id"]
             else:
-                obj[key] = tag_convert(key,padding + " ")
+                obj[key] = tag_convert(filename, key,padding + " ")
 
     elif type_ == list:
         for i,value in enumerate(obj):
-            obj[i] = tag_convert(value,padding + " ")
+            obj[i] = tag_convert(filename, value,padding + " ")
     #print (len(padding),padding,obj)
 
     return obj
 
-def link_lookup(id_, info):
-    id_ = id_.lower()
+def link_lookup(obj, info):
+
     if type(info) == str:
+        to = info
         info = { "to":info }
-    info["from"] = id_
-    if type(info["to"]) == str:
-        obj = object_lookup_id(info["to"])
     else:
-        obj = object_lookup(info["to"])
-    info["to"] = obj["id"]
+        to = info["to"]
+
+    if to not in id_object:
+        print (obj,"to:",to) # debug
+        error_add(obj["filename"], "missing id "+to)
+        return False
+
+    info["from"] = obj["id"]
 
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
@@ -481,6 +565,7 @@ def link_lookup(id_, info):
                     id_id_link[a_id][b_id][key] = value
         else:
             id_id_link[a_id][b_id] = link
+    return True
 
 #############################
 
@@ -532,7 +617,7 @@ def solutions_process(path):
                         skipped.append([",".join(errors), p])
                     else:
                         info["__typename"] = "solution"
-                        object_lookup(info)     
+                        object_add(info)     
     if len(skipped) > 0:
         print ("skipped")
         for msg, p in skipped:
@@ -547,22 +632,18 @@ def person_checker(person):
             name = person["name"]
         else:
             name = person["id"]
-        name = re.sub("[^:]:","",name)
+        name = re.sub("[^:]+:","",name)
         print (name)
-        name_last, name_first = re.search("([^_]+)_(.+)",name).groups()
-        person["nameFirst"] = name_first
-        person["nameLast"] = name_last
+        name_last, name_first = re.search("([^_^ ]+)[_ ](.+)",name).groups()
+        person["nameFirst"] = name_first.title()
+        person["nameLast"] = name_last.title()
     return None
 
 def object_checker(obj):
     if "name" not in obj:
         values = obj["id"].split(":")
-        print ("creating name for",obj["id"])
         obj["name"] = ":".join(values[1:]).replace("_"," ")
-
-    for key in ["tags","links","urls"]:
-        if key not in obj:
-            obj[key] = []
+        print ("creating name for",obj["name"])
 
     return None
 

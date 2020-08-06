@@ -9,7 +9,7 @@
     ],
     "links": [
         {
-            "to": "dataset:as_rank"
+            "to": "dataset:asrank"
         },
         {
             "to": "paper:asrank"

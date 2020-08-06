@@ -3,8 +3,13 @@
     "name": "Vela",
     "organization": "CAIDA",
     "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "topology",
+        "ping",
+        "traceroute",
+        "ark"
+    ],
+    "resouces": [
         {
             "name": "restricted",
             "url": "https://www.caida.org/projects/ark/vela/web-api/",

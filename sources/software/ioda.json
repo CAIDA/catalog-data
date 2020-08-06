@@ -8,7 +8,7 @@
         "darknet",
         "outages"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://ioda.caida.org/ioda/api",
@@ -136,6 +136,6 @@
         {
             "to": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
             "label": "used by"
-        },
+        }
     ]
 }

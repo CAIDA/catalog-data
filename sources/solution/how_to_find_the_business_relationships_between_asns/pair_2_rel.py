@@ -1,3 +1,4 @@
+
 #!  /usr/bin/env python3
 __author__ = "Donald Wolfson"
 __email__ = "dwolfson@zeus.caida.org"
@@ -50,91 +51,131 @@ import re
 
 ############################## Global Variables ################################
 
-# Datasets:
-as_2_cone = {}
+# Datasets
+pair_2_rel = {}
+"""
+{
+    "asn0 asn1" : -1/0/1
+}
+"""
 
 # Definitions:
 re_bz2 = re.compile(r".bz2$")
 re_txt = re.compile(r".txt$")
+# as0 as2 rel
+#  10   2  -1     10 is a provider of 2 (p2c)
+#  10   3   0     10 is a peer of 3 (p2p)
+#  10   4   1     10 is a customer of 4 (c2p)
+rel_2_name = {
+    -1 : "customer",
+    0: "peer",
+    1: "provider"
+}
 
-# File Paths:
-ppdc_ases_file = None
+# File Path:
+as_rel_file = None
 
 ################################# Main Method ##################################
 
 def main(argv):
-    global as_2_cone
+    global pair_2_rel
     global re_bz2
     global re_txt
-    global ppdc_ases_file
+    global as_rel_file
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("-p", type=str, default=None, dest="ppdc_ases_file", help="Path to an IPv4, .ppdc-ases formatted file.")
-    args = parser.parse_args() 
+    parser.add_argument("-r", type=str, default=None, dest="as_rel_file", help="Path to a .as-rel formatted file.")
+    args = parser.parse_args()
 
-    # Create IPv4 as_2_cone dataset if .ppdc-ases file is given.
-    if args.ppdc_ases_file is not None:
-        ppdc_ases_file = args.ppdc_ases_file
-        parse_ppdc_ases_file()
-
-    # Edge Case: Print help and exit if prior conditions weren't met.
-    else:
+    if args.as_rel_file is None:
         print_help()
+
+    as_rel_file = args.as_rel_file
+
+    parse_as_rel_file()
 
 ############################### Helper Methods #################################
 
 def print_help():
-    sys.stderr.write("python3 as-customer-cone.py -p /data/external/as-rank-ribs/20200101/20200101.ppdc-ases.txt.bz2")
+    sys.stderr.write("python3 pair_2_rel.py -r 20200101.as-rel.txt")
     sys.exit()
 
-# Open the given .ppdc-ases file and run parse uncommented line.
-def parse_ppdc_ases_file():
-    global ppdc_ases_file 
+
+# Open the as_rel_file and parse each line in a helper method.
+def parse_as_rel_file():
+    global as_rel_file
     global re_bz2
     global re_txt
 
-    # Parse ppdc_ases_file as an encoded .bz2 file.
-    if re_bz2.search(ppdc_ases_file):
-        with bz2.open(ppdc_ases_file, "r") as file:
+    # Parse as_rel_file as an encoded .bz2 file.
+    if re_bz2.search(as_rel_file):
+        with bz2.open(as_rel_file, "r") as file:
             curr_line = file.readline()
             while curr_line:
                 curr_line = curr_line.decode()
-                parse_ppdc_ases_line(curr_line)
+                parse_as_rel_line(curr_line)
                 curr_line = file.readline()
     
-    # Parse ppdc_ases_file as a .txt file.
-    elif re_txt.search(ppdc_ases_file):
-        with open(ppdc_ases_file, "r") as file:
+    # Parse as_rel_file as a .txt file.
+    elif re_txt.search(as_rel_file):
+        with open(as_rel_file, "r") as file:
             curr_line = file.readline()
             while curr_line:
-                parse_ppdc_ases_line(curr_line)
+                parse_as_rel_line(curr_line)
                 curr_line = file.readline()
     
     # Exit if file is neither a .bz2 or .txt file type.
     else:
-        sys.stderr.write("ppdc_ases_file must be a .txt or encoded .bz2 file.")
+        print("as_rel_file must be in a .txt or encoded .bz2 file.", file=sys.stderr)
         print_help()
 
 
-# Given an line of a .ppdc-ases file, get the asn and its Customer Cone.
-def parse_ppdc_ases_line(curr_line):
-    global as_2_cone
+# Parse a given line of the as_rel_file and map two ASes to their relationship.
+def parse_as_rel_line(curr_line):
+    global pair_2_rel
+    global rel_2_name
 
     # Edge Case: Skip any commented lines.
     if curr_line[0] == "#":
         return
 
-    customer_cone = curr_line.split()
-    asn = int(customer_cone[0])
-    customer_cone_size = len(customer_cone[1:])
+    # Get each piece of data from the current line.
+    asn0, asn1, relationship = curr_line.split("|")
 
-    # Update as_2_cone with this asn's customer_cone_size.
-    if asn not in as_2_cone:
-        as_2_cone[asn] = {}
-    
-    as_2_cone[asn]["asn"] = asn
-    as_2_cone[asn]["cone"] = customer_cone
-    as_2_cone[asn]["size"] = customer_cone_size[1:]
+    # Place both related AS's in par_2_rel based on value of ASes.
+    if (asn0 > asn1):
+        temp = asn0
+        asn0 = asn1
+        asn1 = temp
+        relationship = -1 * int(relationship)
+
+    # Replace relationship with the string version of it's value.
+    relationship = rel_2_name[int(relationship)]
+
+    key = asn0 + " " + asn1
+
+    # Add the pair's relationship if doesn't already exist.
+    if key not in pair_2_rel:
+        pair_2_rel[key] = relationship
+
+
+# Helper function to return the relationship of two given asns. 
+def get_relationship(asn0, asn1):
+    global pair_2_rel
+
+    if (asn0 > asn1):
+        temp = asn0
+        asn0 = asn1
+        asn1 = temp
+
+    key = str(asn0) + " " + str(asn1)
+
+    if key in pair_2_rel:
+        rel = pair_2_rel[key]
+        return rel
+        #return str(asn0) + "'s " + str(rel) + " is " + str(asn1)
+    else:
+        return None
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
