@@ -7,7 +7,7 @@
         "ip address",
         "alias resolution"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/motu/",

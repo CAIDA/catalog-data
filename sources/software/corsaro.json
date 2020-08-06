@@ -6,7 +6,7 @@
     "tags": [
         "traffic"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://github.com/CAIDA/corsaro3/",

@@ -5,7 +5,7 @@
     "tags": [
         "weather"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.weather.gov/alerts",

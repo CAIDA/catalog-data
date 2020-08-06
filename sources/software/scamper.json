@@ -7,7 +7,7 @@
         "topology",
         "performance measurement"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/scamper/",

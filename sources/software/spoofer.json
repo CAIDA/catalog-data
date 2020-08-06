@@ -6,7 +6,7 @@
     "tags": [
         "security"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/projects/spoofer/",

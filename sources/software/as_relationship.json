@@ -6,7 +6,7 @@
     "tags": [
         "topology"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "ihr.iijlab.net/ihr",

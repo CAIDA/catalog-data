@@ -7,7 +7,7 @@
         "security",
         "hijack detection"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.bgpartemis.org/index.html",

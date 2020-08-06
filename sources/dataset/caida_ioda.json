@@ -11,7 +11,7 @@
         "visualization"
     ],
     "dateStart": "2015.03",
-    " availability": [
+    "resources": [
         {
             "name": "restricted",
             "url": "https://ioda.caida.org/"
