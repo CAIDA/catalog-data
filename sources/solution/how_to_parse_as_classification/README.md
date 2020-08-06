@@ -17,7 +17,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The following solution shows how to parse a given AS Classification file (.as2types), and map each asn to the values found. A [script](sources/solution/how_to_parse_as_classification/as_2_class.py) has been given which takes in a single AS Classification file (-f), and an optional flag that prints out given asns to STDOUT (-a). The script can take in either .txt or encoded .gz file so you don't have to decompress the file.
+The following solution shows how to parse a given AS Classification file (.as2types), and map each asn to the values found. A [script](as_2_class.py) has been given which takes in a single AS Classification file (-f), and an optional flag that prints out given asns to STDOUT (-a). The script can take in either .txt or encoded .gz file so you don't have to decompress the file.
 
 ### Usage
 
