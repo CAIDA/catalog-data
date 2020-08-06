@@ -60,6 +60,10 @@
             "from": "tag:security",
             "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
         },
+        "software:artemis": {
+            "from": "tag:security",
+            "to": "software:artemis"
+        },
         "software:hi_cube": {
             "from": "tag:security",
             "to": "software:hi_cube"
@@ -185,6 +189,18 @@
         "software:scamper": {
             "from": "tag:topology",
             "to": "software:scamper"
+        },
+        "software:vela": {
+            "from": "tag:topology",
+            "to": "software:vela"
+        },
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "tag:topology",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:topology",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "tag:anycast": {
@@ -298,6 +314,10 @@
             "from": "dataset:as_organization",
             "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
             "label": "used"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "dataset:as_organization",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "tag:ownership": {
@@ -467,6 +487,14 @@
             "from": "dataset:as_relationships",
             "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
             "label": "used"
+        },
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "dataset:as_relationships",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
+        },
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "dataset:as_relationships",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
         }
     },
     "dataset:asrank": {
@@ -520,6 +548,10 @@
         "software:netacuity": {
             "from": "tag:geolocation",
             "to": "software:netacuity"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:geolocation",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "software:asrank_api": {
@@ -542,6 +574,21 @@
         "software:asrank": {
             "from": "software:asrank_api",
             "to": "software:asrank"
+        },
+        "paper:as_relationships_customer_cones_and_validation": {
+            "from": "software:asrank_api",
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        "paper:as_relationships_inference_and_validation": {
+            "from": "software:asrank_api",
+            "to": "paper:as_relationships_inference_and_validation",
+            "label": "used by"
+        },
+        "paper:inferring_as_relationships_dead_end_or_lively_beginning": {
+            "from": "software:asrank_api",
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
         },
         "software:asrank_ui": {
             "from": "software:asrank_api",
@@ -568,6 +615,21 @@
         "software:asrank_api": {
             "from": "software:asrank_ui",
             "to": "software:asrank_api"
+        },
+        "paper:as_relationships_customer_cones_and_validation": {
+            "from": "software:asrank_ui",
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        "paper:as_relationships_inference_and_validation": {
+            "from": "software:asrank_ui",
+            "to": "paper:as_relationships_inference_and_validation",
+            "label": "used by"
+        },
+        "paper:inferring_as_relationships_dead_end_or_lively_beginning": {
+            "from": "software:asrank_ui",
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
         }
     },
     "dataset:bgp_communities": {
@@ -1046,12 +1108,20 @@
         "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
             "from": "tag:software/tools",
             "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:software/tools",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "dataset:as_rank": {
         "group:asrank": {
             "from": "dataset:as_rank",
             "to": "group:asrank"
+        },
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "dataset:as_rank",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
         }
     },
     "paper:asrank": {
@@ -1130,6 +1200,10 @@
         "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
             "from": "tag:measurement_methodology",
             "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:measurement_methodology",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
@@ -1252,12 +1326,28 @@
         "software:pyasn": {
             "from": "tag:asn",
             "to": "software:pyasn"
+        },
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "tag:asn",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
+        },
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "tag:asn",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
+        },
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:asn",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     },
     "tag:as_rank": {
         "paper:2013_asrank": {
             "from": "tag:as_rank",
             "to": "paper:2013_asrank"
+        },
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "tag:as_rank",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
         }
     },
     "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
@@ -1452,6 +1542,11 @@
             "to": "paper:bgp_hijacking_classification",
             "label": "used by"
         },
+        "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+            "from": "software:bgpstream",
+            "to": "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "label": "used by"
+        },
         "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
             "from": "software:bgpstream",
             "to": "paper:studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
@@ -1467,6 +1562,16 @@
             "to": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
             "label": "used by"
         },
+        "paper: 2016_bgpstream a software framework for live and historical bgp data analysis": {
+            "from": "software:bgpstream",
+            "to": "paper: 2016_bgpstream a software framework for live and historical bgp data analysis",
+            "label": "used by"
+        },
+        "paper: 2015_bgpstream a software framework for live and historical bgp data analysis": {
+            "from": "software:bgpstream",
+            "to": "paper: 2015_bgpstream a software framework for live and historical bgp data analysis",
+            "label": "used by"
+        },
         "presentation:bgpstream_and_openbmp": {
             "from": "software:bgpstream",
             "to": "presentation:bgpstream_and_openbmp",
@@ -1477,14 +1582,14 @@
             "to": "presentation:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
             "label": "used by"
         },
-        "presentatino:measuring_and_monitoring_bgp": {
+        "presentation:measuring_and_monitoring_bgp": {
             "from": "software:bgpstream",
-            "to": "presentatino:measuring_and_monitoring_bgp",
+            "to": "presentation:measuring_and_monitoring_bgp",
             "label": "used by"
         },
-        "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
+        "presentation:bgpstream_a_framework_for_bgp_data_analysis": {
             "from": "software:bgpstream",
-            "to": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+            "to": "presentation:bgpstream_a_framework_for_bgp_data_analysis",
             "label": "used by"
         }
     },
@@ -1722,6 +1827,10 @@
         "paper:2019_residential_links_under_the_weather": {
             "from": "tag:ping",
             "to": "paper:2019_residential_links_under_the_weather"
+        },
+        "software:vela": {
+            "from": "tag:ping",
+            "to": "software:vela"
         }
     },
     "tag:active_data_analysis": {
@@ -1926,6 +2035,14 @@
         }
     },
     "software:artemis": {
+        "tag:security": {
+            "from": "software:artemis",
+            "to": "tag:security"
+        },
+        "tag:hijack_detection": {
+            "from": "software:artemis",
+            "to": "tag:hijack_detection"
+        },
         "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
             "from": "software:artemis",
             "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
@@ -1936,9 +2053,9 @@
             "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
             "label": "used by"
         },
-        "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+        "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
             "from": "software:artemis",
-            "to": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "to": "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
             "label": "used by"
         },
         "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time": {
@@ -1951,10 +2068,41 @@
             "to": "presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
             "label": "used by"
         },
-        "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "presentation:secure_routing_for_the_internet": {
             "from": "software:artemis",
-            "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "presentation:secure_routing_for_the_internet",
             "label": "used by"
+        },
+        "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+            "from": "software:artemis",
+            "to": "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        }
+    },
+    "tag:hijack_detection": {
+        "software:artemis": {
+            "from": "tag:hijack_detection",
+            "to": "software:artemis"
         }
     },
     "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
@@ -1971,9 +2119,9 @@
             "label": "used by"
         }
     },
-    "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+    "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
         "software:artemis": {
-            "from": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "from": "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
             "to": "software:artemis",
             "label": "used by"
         }
@@ -1992,9 +2140,44 @@
             "label": "used by"
         }
     },
-    "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
+    "presentation:secure_routing_for_the_internet": {
         "software:artemis": {
-            "from": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "from": "presentation:secure_routing_for_the_internet",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "software:artemis": {
+            "from": "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "to": "software:artemis",
             "label": "used by"
         }
@@ -2003,6 +2186,72 @@
         "tag:topology": {
             "from": "software:as_relationship",
             "to": "tag:topology"
+        },
+        "paper:as_relationships_customer_cones_and_validation": {
+            "from": "software:as_relationship",
+            "to": "paper:as_relationships_customer_cones_and_validation",
+            "label": "used by"
+        },
+        "paper:as_relationships_inference_and_validation": {
+            "from": "software:as_relationship",
+            "to": "paper:as_relationships_inference_and_validation",
+            "label": "used by"
+        },
+        "paper:inferring_as_relationships_dead_end_or_lively_beginning": {
+            "from": "software:as_relationship",
+            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "label": "used by"
+        }
+    },
+    "paper:as_relationships_customer_cones_and_validation": {
+        "software:as_relationship": {
+            "from": "paper:as_relationships_customer_cones_and_validation",
+            "to": "software:as_relationship",
+            "label": "used by"
+        },
+        "software:asrank_api": {
+            "from": "paper:as_relationships_customer_cones_and_validation",
+            "to": "software:asrank_api",
+            "label": "used by"
+        },
+        "software:asrank_ui": {
+            "from": "paper:as_relationships_customer_cones_and_validation",
+            "to": "software:asrank_ui",
+            "label": "used by"
+        }
+    },
+    "paper:as_relationships_inference_and_validation": {
+        "software:as_relationship": {
+            "from": "paper:as_relationships_inference_and_validation",
+            "to": "software:as_relationship",
+            "label": "used by"
+        },
+        "software:asrank_api": {
+            "from": "paper:as_relationships_inference_and_validation",
+            "to": "software:asrank_api",
+            "label": "used by"
+        },
+        "software:asrank_ui": {
+            "from": "paper:as_relationships_inference_and_validation",
+            "to": "software:asrank_ui",
+            "label": "used by"
+        }
+    },
+    "paper:inferring_as_relationships_dead_end_or_lively_beginning": {
+        "software:as_relationship": {
+            "from": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "to": "software:as_relationship",
+            "label": "used by"
+        },
+        "software:asrank_api": {
+            "from": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "to": "software:asrank_api",
+            "label": "used by"
+        },
+        "software:asrank_ui": {
+            "from": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+            "to": "software:asrank_ui",
+            "label": "used by"
         }
     },
     "software:asrank": {
@@ -2025,9 +2274,30 @@
             "label": "used by"
         }
     },
+    "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+        "software:bgpstream": {
+            "from": "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
     "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today": {
         "software:bgpstream": {
             "from": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "paper: 2016_bgpstream a software framework for live and historical bgp data analysis": {
+        "software:bgpstream": {
+            "from": "paper: 2016_bgpstream a software framework for live and historical bgp data analysis",
+            "to": "software:bgpstream",
+            "label": "used by"
+        }
+    },
+    "paper: 2015_bgpstream a software framework for live and historical bgp data analysis": {
+        "software:bgpstream": {
+            "from": "paper: 2015_bgpstream a software framework for live and historical bgp data analysis",
             "to": "software:bgpstream",
             "label": "used by"
         }
@@ -2046,16 +2316,21 @@
             "label": "used by"
         }
     },
-    "presentatino:measuring_and_monitoring_bgp": {
+    "presentation:measuring_and_monitoring_bgp": {
         "software:bgpstream": {
-            "from": "presentatino:measuring_and_monitoring_bgp",
+            "from": "presentation:measuring_and_monitoring_bgp",
             "to": "software:bgpstream",
+            "label": "used by"
+        },
+        "software:ioda": {
+            "from": "presentation:measuring_and_monitoring_bgp",
+            "to": "software:ioda",
             "label": "used by"
         }
     },
-    "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
+    "presentation:bgpstream_a_framework_for_bgp_data_analysis": {
         "software:bgpstream": {
-            "from": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
+            "from": "presentation:bgpstream_a_framework_for_bgp_data_analysis",
             "to": "software:bgpstream",
             "label": "used by"
         }
@@ -2080,6 +2355,31 @@
             "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
             "label": "used by"
         },
+        "presentation:the_coralreef_software_suite": {
+            "from": "software:coralreef",
+            "to": "presentation:the_coralreef_software_suite",
+            "label": "used by"
+        },
+        "presentation:monitoring_your_network_with_coralreef": {
+            "from": "software:coralreef",
+            "to": "presentation:monitoring_your_network_with_coralreef",
+            "label": "used by"
+        },
+        "presentation:coral_a_flexible_platform_for_passive_network_monitoring": {
+            "from": "software:coralreef",
+            "to": "presentation:coral_a_flexible_platform_for_passive_network_monitoring",
+            "label": "used by"
+        },
+        "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools": {
+            "from": "software:coralreef",
+            "to": "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools",
+            "label": "used by"
+        },
+        "presentation:coral_reef_software_distribution_of_coral_tools": {
+            "from": "software:coralreef",
+            "to": "presentation:coral_reef_software_distribution_of_coral_tools",
+            "label": "used by"
+        },
         "presentation:trends_in_wide_area_ip_traffic_patterns": {
             "from": "software:coralreef",
             "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
@@ -2090,6 +2390,10 @@
         "software:coralreef": {
             "from": "tag:traffic",
             "to": "software:coralreef"
+        },
+        "software:corsaro": {
+            "from": "tag:traffic",
+            "to": "software:corsaro"
         }
     },
     "software:dnsstat": {
@@ -2113,6 +2417,41 @@
             "label": "used by"
         }
     },
+    "presentation:the_coralreef_software_suite": {
+        "software:coralreef": {
+            "from": "presentation:the_coralreef_software_suite",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "presentation:monitoring_your_network_with_coralreef": {
+        "software:coralreef": {
+            "from": "presentation:monitoring_your_network_with_coralreef",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "presentation:coral_a_flexible_platform_for_passive_network_monitoring": {
+        "software:coralreef": {
+            "from": "presentation:coral_a_flexible_platform_for_passive_network_monitoring",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools": {
+        "software:coralreef": {
+            "from": "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
+    "presentation:coral_reef_software_distribution_of_coral_tools": {
+        "software:coralreef": {
+            "from": "presentation:coral_reef_software_distribution_of_coral_tools",
+            "to": "software:coralreef",
+            "label": "used by"
+        }
+    },
     "presentation:trends_in_wide_area_ip_traffic_patterns": {
         "software:coralreef": {
             "from": "presentation:trends_in_wide_area_ip_traffic_patterns",
@@ -2121,18 +2460,68 @@
         }
     },
     "software:corsaro": {
-        "tag:trafic": {
+        "tag:traffic": {
             "from": "software:corsaro",
-            "to": "tag:trafic"
+            "to": "tag:traffic"
+        },
+        "software:ioda": {
+            "from": "software:corsaro",
+            "to": "software:ioda",
+            "label": "used by"
         },
         "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
             "from": "software:corsaro",
             "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
             "label": "used by"
         },
-        "software:ioda": {
+        "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace": {
             "from": "software:corsaro",
-            "to": "software:ioda",
+            "to": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_dataset_patch_tuesday": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_three_days_of_conficker_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_darknet_scanners_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata",
+            "label": "used by"
+        },
+        "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+            "label": "used by"
+        },
+        "dataset:ucsd_network_telescope_aggregrated_ddos_metadata": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+            "label": "used by"
+        },
+        "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)": {
+            "from": "software:corsaro",
+            "to": "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)",
             "label": "used by"
         },
         "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
@@ -2143,15 +2532,6 @@
         "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic": {
             "from": "software:corsaro",
             "to": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
-            "label": "used by"
-        },
-        "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
-            "from": "software:corsaro",
-            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"
-        },
-        "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
-            "from": "software:corsaro",
-            "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
             "label": "used by"
         },
         "paper:teaching_network_security_with_ip_darkspace_data": {
@@ -2178,18 +2558,15 @@
             "from": "software:corsaro",
             "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
             "label": "used by"
-        }
-    },
-    "tag:trafic": {
-        "software:corsaro": {
-            "from": "tag:trafic",
-            "to": "software:corsaro"
-        }
-    },
-    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
-        "software:corsaro": {
-            "from": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
-            "to": "software:corsaro",
+        },
+        "presentation:2012_08_corsaro": {
+            "from": "software:corsaro",
+            "to": "presentation:2012_08_corsaro",
+            "label": "used by"
+        },
+        "presentation:2012_05_corsaro": {
+            "from": "software:corsaro",
+            "to": "presentation:2012_05_corsaro",
             "label": "used by"
         }
     },
@@ -2352,6 +2729,83 @@
             "label": "used by"
         }
     },
+    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
+        "software:corsaro": {
+            "from": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_dataset_patch_tuesday": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_three_days_of_conficker_dataset": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_darknet_scanners_dataset": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset": {
+        "software:corsaro": {
+            "from": "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:ucsd_network_telescope_aggregrated_ddos_metadata": {
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)": {
+        "software:corsaro": {
+            "from": "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
     "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
         "software:corsaro": {
             "from": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
@@ -2362,19 +2816,6 @@
     "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic": {
         "software:corsaro": {
             "from": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
-            "to": "software:corsaro",
-            "label": "used by"
-        }
-    },
-    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
-        "software:corsaro": {
-            "from": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
-            "to": "software:corsaro"
-        }
-    },
-    "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
-        "software:corsaro": {
-            "from": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
             "to": "software:corsaro",
             "label": "used by"
         }
@@ -2414,6 +2855,20 @@
             "label": "used by"
         }
     },
+    "presentation:2012_08_corsaro": {
+        "software:corsaro": {
+            "from": "presentation:2012_08_corsaro",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
+    "presentation:2012_05_corsaro": {
+        "software:corsaro": {
+            "from": "presentation:2012_05_corsaro",
+            "to": "software:corsaro",
+            "label": "used by"
+        }
+    },
     "software:hi_cube": {
         "tag:security": {
             "from": "software:hi_cube",
@@ -2421,6 +2876,14 @@
         }
     },
     "software:iffinder": {
+        "tag:ip_address": {
+            "from": "software:iffinder",
+            "to": "tag:ip_address"
+        },
+        "tag:alias_resolution": {
+            "from": "software:iffinder",
+            "to": "tag:alias_resolution"
+        },
         "dataset:internet_topology_data_kit": {
             "from": "software:iffinder",
             "to": "dataset:internet_topology_data_kit",
@@ -2435,6 +2898,42 @@
             "from": "software:iffinder",
             "to": "paper:traceroute_and_bgp_as_path_incongruities",
             "label": "used by"
+        }
+    },
+    "tag:ip_address": {
+        "software:iffinder": {
+            "from": "tag:ip_address",
+            "to": "software:iffinder"
+        },
+        "software:kapar": {
+            "from": "tag:ip_address",
+            "to": "software:kapar"
+        },
+        "software:midar": {
+            "from": "tag:ip_address",
+            "to": "software:midar"
+        },
+        "software:motu": {
+            "from": "tag:ip_address",
+            "to": "software:motu"
+        }
+    },
+    "tag:alias_resolution": {
+        "software:iffinder": {
+            "from": "tag:alias_resolution",
+            "to": "software:iffinder"
+        },
+        "software:kapar": {
+            "from": "tag:alias_resolution",
+            "to": "software:kapar"
+        },
+        "software:midar": {
+            "from": "tag:alias_resolution",
+            "to": "software:midar"
+        },
+        "software:motu": {
+            "from": "tag:alias_resolution",
+            "to": "software:motu"
         }
     },
     "dataset:internet_topology_data_kit": {
@@ -2558,13 +3057,6 @@
             "label": "used by"
         }
     },
-    "presentation:measuring_and_monitoring_bgp": {
-        "software:ioda": {
-            "from": "presentation:measuring_and_monitoring_bgp",
-            "to": "software:ioda",
-            "label": "used by"
-        }
-    },
     "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization": {
         "software:ioda": {
             "from": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
@@ -2664,19 +3156,27 @@
         }
     },
     "software:kapar": {
+        "tag:ip_address": {
+            "from": "software:kapar",
+            "to": "tag:ip_address"
+        },
+        "tag:alias_resolution": {
+            "from": "software:kapar",
+            "to": "tag:alias_resolution"
+        },
         "dataset:internet_topology_data_kit": {
             "from": "software:kapar",
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"
         },
-        "paper:internet-scale ip alias resolution techniques": {
+        "paper:internet-scale_ip_alias_resolution_techniques": {
             "from": "software:kapar",
-            "to": "paper:internet-scale ip alias resolution techniques",
+            "to": "paper:internet-scale_ip_alias_resolution_techniques",
             "label": "used by"
         },
-        "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
+        "paper:internet-scale_ipv4_alias_resolution_with_midar": {
             "from": "software:kapar",
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
             "label": "used by"
         },
         "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture": {
@@ -2690,17 +3190,22 @@
             "label": "used by"
         }
     },
-    "paper:internet-scale ip alias resolution techniques": {
+    "paper:internet-scale_ip_alias_resolution_techniques": {
         "software:kapar": {
-            "from": "paper:internet-scale ip alias resolution techniques",
+            "from": "paper:internet-scale_ip_alias_resolution_techniques",
             "to": "software:kapar",
             "label": "used by"
         }
     },
-    "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
+    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
         "software:kapar": {
-            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar",
             "to": "software:kapar",
+            "label": "used by"
+        },
+        "software:midar": {
+            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "to": "software:midar",
             "label": "used by"
         }
     },
@@ -2724,10 +3229,30 @@
         }
     },
     "software:libtimeseries": {
+        "tag:library": {
+            "from": "software:libtimeseries",
+            "to": "tag:library"
+        },
+        "tag:database": {
+            "from": "software:libtimeseries",
+            "to": "tag:database"
+        },
         "software:ioda": {
             "from": "software:libtimeseries",
             "to": "software:ioda",
             "label": "used by"
+        }
+    },
+    "tag:library": {
+        "software:libtimeseries": {
+            "from": "tag:library",
+            "to": "software:libtimeseries"
+        }
+    },
+    "tag:database": {
+        "software:libtimeseries": {
+            "from": "tag:database",
+            "to": "software:libtimeseries"
         }
     },
     "software:manic": {
@@ -2910,14 +3435,27 @@
         }
     },
     "software:midar": {
-        "dataset:internet_topology_data_kit": {
+        "tag:ip_address": {
             "from": "software:midar",
-            "to": "dataset:internet_topology_data_kit",
+            "to": "tag:ip_address"
+        },
+        "tag:alias_resolution": {
+            "from": "software:midar",
+            "to": "tag:alias_resolution"
+        },
+        "software:vela_midar_api": {
+            "from": "software:midar",
+            "to": "software:vela_midar_api",
             "label": "used by"
         },
         "software:vela": {
             "from": "software:midar",
             "to": "software:vela",
+            "label": "used by"
+        },
+        "dataset:internet_topology_data_kit": {
+            "from": "software:midar",
+            "to": "dataset:internet_topology_data_kit",
             "label": "used by"
         },
         "paper:internet-scale_ipv4_alias_resolution_with_midar": {
@@ -2934,6 +3472,18 @@
             "from": "software:midar",
             "to": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
             "label": "used by"
+        },
+        "presentation:internet-scale_alias_resolution_with_midar": {
+            "from": "software:midar",
+            "to": "presentation:internet-scale_alias_resolution_with_midar",
+            "label": "used by"
+        }
+    },
+    "software:vela_midar_api": {
+        "software:midar": {
+            "from": "software:vela_midar_api",
+            "to": "software:midar",
+            "label": "used by"
         }
     },
     "software:vela": {
@@ -2941,13 +3491,22 @@
             "from": "software:vela",
             "to": "software:midar",
             "label": "used by"
-        }
-    },
-    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
-        "software:midar": {
-            "from": "paper:internet-scale_ipv4_alias_resolution_with_midar",
-            "to": "software:midar",
-            "label": "used by"
+        },
+        "tag:topology": {
+            "from": "software:vela",
+            "to": "tag:topology"
+        },
+        "tag:ping": {
+            "from": "software:vela",
+            "to": "tag:ping"
+        },
+        "tag:traceroute": {
+            "from": "software:vela",
+            "to": "tag:traceroute"
+        },
+        "tag:ark": {
+            "from": "software:vela",
+            "to": "tag:ark"
         }
     },
     "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing": {
@@ -2955,6 +3514,23 @@
             "from": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
             "to": "software:midar",
             "label": "used by"
+        }
+    },
+    "presentation:internet-scale_alias_resolution_with_midar": {
+        "software:midar": {
+            "from": "presentation:internet-scale_alias_resolution_with_midar",
+            "to": "software:midar",
+            "label": "used by"
+        }
+    },
+    "software:motu": {
+        "tag:ip_address": {
+            "from": "software:motu",
+            "to": "tag:ip_address"
+        },
+        "tag:alias_resolution": {
+            "from": "software:motu",
+            "to": "tag:alias_resolution"
         }
     },
     "software:periscope": {
@@ -2984,6 +3560,10 @@
             "from": "software:scamper",
             "to": "tag:topology"
         },
+        "tag:performance_measurement": {
+            "from": "software:scamper",
+            "to": "tag:performance_measurement"
+        },
         "dataset:macroscopic_topology_measurements": {
             "from": "software:scamper",
             "to": "dataset:macroscopic_topology_measurements",
@@ -2994,9 +3574,9 @@
             "to": "dataset:the_ipv4_routed_24_topology_dataset",
             "label": "used by"
         },
-        "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+        "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
             "from": "software:scamper",
-            "to": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "to": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
             "label": "used by"
         },
         "paper:learning_to_extract_router_names_from_hostnames": {
@@ -3017,6 +3597,11 @@
         "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy": {
             "from": "software:scamper",
             "to": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "label": "used by"
+        },
+        "paper:resilience_of_deployed_tcp_to_blind_fin_attacks": {
+            "from": "software:scamper",
+            "to": "paper:resilience_of_deployed_tcp_to_blind_fin_attacks",
             "label": "used by"
         },
         "paper:resilience_of_deployed_tcp_to_blind_attacks": {
@@ -3073,6 +3658,17 @@
             "from": "software:scamper",
             "to": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
             "label": "used by"
+        },
+        "presentation:scamper_routeviews": {
+            "from": "software:scamper",
+            "to": "presentation:scamper_routeviews",
+            "label": "used by"
+        }
+    },
+    "tag:performance_measurement": {
+        "software:scamper": {
+            "from": "tag:performance_measurement",
+            "to": "software:scamper"
         }
     },
     "dataset:macroscopic_topology_measurements": {
@@ -3089,9 +3685,9 @@
             "label": "used by"
         }
     },
-    "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+    "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
         "software:scamper": {
-            "from": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "from": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
             "to": "software:scamper",
             "label": "used by"
         }
@@ -3120,6 +3716,13 @@
     "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy": {
         "software:scamper": {
             "from": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "paper:resilience_of_deployed_tcp_to_blind_fin_attacks": {
+        "software:scamper": {
+            "from": "paper:resilience_of_deployed_tcp_to_blind_fin_attacks",
             "to": "software:scamper",
             "label": "used by"
         }
@@ -3190,6 +3793,13 @@
     "paper:identifying_ipv6_network_problems_in_the_dual-stack_world": {
         "software:scamper": {
             "from": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "presentation:scamper_routeviews": {
+        "software:scamper": {
+            "from": "presentation:scamper_routeviews",
             "to": "software:scamper",
             "label": "used by"
         }
@@ -3281,6 +3891,144 @@
             "from": "software:u_s_national_weather_serice_severe_weather_alert",
             "to": "paper:residential_links_under_the_weather",
             "label": "used by"
+        }
+    },
+    "tag:traceroute": {
+        "software:vela": {
+            "from": "tag:traceroute",
+            "to": "software:vela"
+        }
+    },
+    "tag:ark": {
+        "software:vela": {
+            "from": "tag:ark",
+            "to": "software:vela"
+        }
+    },
+    "solution:how_to_find_the_business_relationship_between_asns": {
+        "tag:asn": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:asn"
+        },
+        "tag:as_relationship": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:as_relationship"
+        },
+        "tag:as_rank": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:as_rank"
+        },
+        "tag:ipv4": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:ipv4"
+        },
+        "dataset:as_relationships": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "dataset:as_relationships"
+        },
+        "dataset:as_rank": {
+            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "to": "dataset:as_rank"
+        }
+    },
+    "tag:as_relationship": {
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "tag:as_relationship",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
+        }
+    },
+    "tag:ipv4": {
+        "solution:how_to_find_the_business_relationship_between_asns": {
+            "from": "tag:ipv4",
+            "to": "solution:how_to_find_the_business_relationship_between_asns"
+        },
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "tag:ipv4",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
+        }
+    },
+    "solution:solution:how-to-find-an-asns-customer-cone": {
+        "tag:asn": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "tag:asn"
+        },
+        "tag:as_relationships": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "tag:as_relationships"
+        },
+        "tag:customer_cone": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "tag:customer_cone"
+        },
+        "tag:ipv4": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "tag:ipv4"
+        },
+        "tag:topology": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "tag:topology"
+        },
+        "dataset:as_relationships": {
+            "from": "solution:solution:how-to-find-an-asns-customer-cone",
+            "to": "dataset:as_relationships"
+        }
+    },
+    "tag:as_relationships": {
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "tag:as_relationships",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
+        }
+    },
+    "tag:customer_cone": {
+        "solution:solution:how-to-find-an-asns-customer-cone": {
+            "from": "tag:customer_cone",
+            "to": "solution:solution:how-to-find-an-asns-customer-cone"
+        }
+    },
+    "solution:solution:getting_an_asns_name_country_organization": {
+        "tag:measurement_methodology": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:topology"
+        },
+        "tag:software/tools": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:software/tools"
+        },
+        "tag:asn": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:asn"
+        },
+        "tag:geolocation": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:geolocation"
+        },
+        "tag:organization": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:organization"
+        },
+        "tag:country": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "tag:country"
+        },
+        "dataset:as_organization": {
+            "from": "solution:solution:getting_an_asns_name_country_organization",
+            "to": "dataset:as_organization"
+        }
+    },
+    "tag:organization": {
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:organization",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
+        }
+    },
+    "tag:country": {
+        "solution:solution:getting_an_asns_name_country_organization": {
+            "from": "tag:country",
+            "to": "solution:solution:getting_an_asns_name_country_organization"
         }
     }
 }

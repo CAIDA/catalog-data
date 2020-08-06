@@ -97,7 +97,6 @@
         {
             "to": "presentation:scamper_routeviews",
             "label": "used by"
-        },
-        
+        }
     ]
 }

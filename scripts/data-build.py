@@ -47,6 +47,7 @@ import copy
 import re
 import time
 import datetime
+import markdown2
 
 source_dir="sources"
 
@@ -144,7 +145,7 @@ def main():
     #######################
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
-        if fname == "solutions":
+        if fname == "solution":
             solutions_process(path)
         elif fname in object_types:
             print ("loading",path)
@@ -204,7 +205,7 @@ def main():
         id_objs = json.load(open(id_object_file,"r"))
     else:
         id_objs = {}
-    temp="""
+
     date = time.strftime("%Y/%m/%d %H:%M:%S")
     for id_,obj in id_object.items():
         if id_ in id_objs:
@@ -225,8 +226,8 @@ def main():
         for key in ["dateCreated","dateLastUpdated"]:
             if key not in obj:
                 obj[key] = date
-    """
 
+    # Clean up 
     date_type_key= {
         "dateset":"dateStart",
         "paper":"datePublished",
@@ -495,6 +496,7 @@ def solutions_process(path):
                 solutions_dir.add(root+"/"+fname)
         else:
             for fname in files:
+                print (fname)
                 if root in solutions_dir and re_readme_md.search(fname):
                     p = root +"/"+fname
                     info = None
@@ -504,16 +506,17 @@ def solutions_process(path):
                         for line in f:
                             #print (line.rstrip())
                             if info is not None:
-                                info["context"] += line
+                                info["content"] += line
                             elif re.search("~~~",line):
                                 if inside:
                                     if data == "":
                                         break
                                     try:
-                                        info = json.loads(data)
-                                    except Exception as e:
-                                        print (p)
                                         print (data)
+                                        info = json.loads(data)
+                                        info["content"] = ""
+                                    except Exception as e:
+                                        print ("error in "+p)
                                         raise e
                                     info["context"] = ""
                                     data = None
@@ -530,10 +533,13 @@ def solutions_process(path):
                     if "id" not in info:
                         errors.append("no id")
 
+
                     if len(errors) > 0:
                         skipped.append([",".join(errors), p])
                     else:
+                        info["id"] = "solution:"+info["id"]
                         info["__typename"] = "solution"
+                        info["content"] = markdown2.markdown(info["content"])
                         object_lookup(info)     
     if len(skipped) > 0:
         print ("skipped")

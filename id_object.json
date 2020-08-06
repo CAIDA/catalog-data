@@ -2487,14 +2487,32 @@
             }
         ],
         "licenses": [
-            "license:bsd_4_clause_uc"
+            "license:bsd_3_clause"
         ],
-        "tags": [],
+        "tags": [
+            "tag:security",
+            "tag:hijack_detection"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "license:bsd_3_clause": {
+        "id": "license:bsd_3_clause",
+        "__typename": "license",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:hijack_detection": {
+        "id": "tag:hijack_detection",
+        "__typename": "tag",
+        "name": "hijack detection",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "paper:artemis_neutralizing_bgp_hijacking_within_a_minute": {
         "id": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
@@ -2518,12 +2536,16 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
-    "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
-        "id": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+    "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking": {
+        "id": "paper:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+        "__typename": "paper",
+        "name": "artemis real-time detection and automatic mitigation for bgp prefix hijacking",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time": {
         "id": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
@@ -2539,12 +2561,47 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
-    "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute": {
-        "id": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+    "presentation:secure_routing_for_the_internet": {
+        "id": "presentation:secure_routing_for_the_internet",
         "__typename": "presentation",
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute": {
+        "id": "presentation:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:as_relationship": {
         "id": "software:as_relationship",
@@ -2580,6 +2637,39 @@
         "dateCreated": "2020/07/17 13:22:21",
         "dateLastUpdated": "2020/07/17 13:22:21",
         "date": "2020/07/17 13:22:21"
+    },
+    "paper:as_relationships_customer_cones_and_validation": {
+        "id": "paper:as_relationships_customer_cones_and_validation",
+        "__typename": "paper",
+        "name": "as relationships customer cones and validation",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "paper:as_relationships_inference_and_validation": {
+        "id": "paper:as_relationships_inference_and_validation",
+        "__typename": "paper",
+        "name": "as relationships inference and validation",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "paper:inferring_as_relationships_dead_end_or_lively_beginning": {
+        "id": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
+        "__typename": "paper",
+        "name": "inferring as relationships dead end or lively beginning",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "tag:api": {
         "id": "tag:api",
@@ -2622,6 +2712,17 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis": {
+        "id": "paper:bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+        "__typename": "paper",
+        "name": "bgpstream a software framework for live and historical bgp data analysis",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
     "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today": {
         "id": "paper:to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
         "__typename": "paper",
@@ -2632,6 +2733,28 @@
         "dateCreated": "2020/07/30 12:50:50",
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
+    },
+    "paper: 2016_bgpstream a software framework for live and historical bgp data analysis": {
+        "id": "paper: 2016_bgpstream a software framework for live and historical bgp data analysis",
+        "__typename": "paper",
+        "name": " 2016 bgpstream a software framework for live and historical bgp data analysis",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "paper: 2015_bgpstream a software framework for live and historical bgp data analysis": {
+        "id": "paper: 2015_bgpstream a software framework for live and historical bgp data analysis",
+        "__typename": "paper",
+        "name": " 2015 bgpstream a software framework for live and historical bgp data analysis",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "presentation:bgpstream_and_openbmp": {
         "id": "presentation:bgpstream_and_openbmp",
@@ -2647,19 +2770,19 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
-    "presentatino:measuring_and_monitoring_bgp": {
-        "id": "presentatino:measuring_and_monitoring_bgp",
-        "__typename": "presentatino",
+    "presentation:measuring_and_monitoring_bgp": {
+        "id": "presentation:measuring_and_monitoring_bgp",
+        "__typename": "presentation",
         "dateCreated": "2020/07/30 12:50:50",
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
-    "presentatino:bgpstream_a_framework_for_bgp_data_analysis": {
-        "id": "presentatino:bgpstream_a_framework_for_bgp_data_analysis",
-        "__typename": "presentatino",
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+    "presentation:bgpstream_a_framework_for_bgp_data_analysis": {
+        "id": "presentation:bgpstream_a_framework_for_bgp_data_analysis",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:coralreef": {
         "id": "software:coralreef",
@@ -2727,6 +2850,41 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
+    "presentation:the_coralreef_software_suite": {
+        "id": "presentation:the_coralreef_software_suite",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:monitoring_your_network_with_coralreef": {
+        "id": "presentation:monitoring_your_network_with_coralreef",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:coral_a_flexible_platform_for_passive_network_monitoring": {
+        "id": "presentation:coral_a_flexible_platform_for_passive_network_monitoring",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools": {
+        "id": "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:coral_reef_software_distribution_of_coral_tools": {
+        "id": "presentation:coral_reef_software_distribution_of_coral_tools",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
     "presentation:trends_in_wide_area_ip_traffic_patterns": {
         "id": "presentation:trends_in_wide_area_ip_traffic_patterns",
         "__typename": "presentation",
@@ -2751,32 +2909,13 @@
             "license:bsd_4_clause_uc"
         ],
         "tags": [
-            "tag:trafic"
+            "tag:traffic"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
-    },
-    "tag:trafic": {
-        "id": "tag:trafic",
-        "__typename": "tag",
-        "name": "trafic",
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
-    },
-    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
-        "id": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
-        "__typename": "paper",
-        "name": "analysis of unidirectional ip traffic to darkspace with an educational data kit",
-        "tags": [],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:ioda": {
         "id": "software:ioda",
@@ -2807,6 +2946,127 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
+    "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit": {
+        "id": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+        "__typename": "paper",
+        "name": "analysis of unidirectional ip traffic to darkspace with an educational data kit",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace": {
+        "id": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
+        "__typename": "dataset",
+        "name": "ucsd network telescope educational dataset analysis of unidirectional ip traffic to darkspace",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_dataset_patch_tuesday": {
+        "id": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
+        "__typename": "dataset",
+        "name": "ucsd network telescope dataset patch tuesday",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
+        "id": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+        "__typename": "dataset",
+        "name": "ucsd network telescope aggregated flow dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/07/30 12:50:50",
+        "dateLastUpdated": "2020/07/30 12:50:50",
+        "date": "2020/07/30 12:50:50"
+    },
+    "dataset:ucsd_network_telescope_three_days_of_conficker_dataset": {
+        "id": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+        "__typename": "dataset",
+        "name": "ucsd network telescope three days of conficker dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_darknet_scanners_dataset": {
+        "id": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+        "__typename": "dataset",
+        "name": "ucsd network telescope darknet scanners dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata": {
+        "id": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata",
+        "__typename": "dataset",
+        "name": "ucsd network telescope daily randomly and uniformly spoofed denial-of-service rsdos attack metadata",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset": {
+        "id": "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset",
+        "__typename": "dataset",
+        "name": "the caida industry evaluation near-real-time network telescope dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset": {
+        "id": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+        "__typename": "dataset",
+        "name": "ucsd network telescope two days in november 2008 dataset",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:ucsd_network_telescope_aggregrated_ddos_metadata": {
+        "id": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+        "__typename": "dataset",
+        "name": "ucsd network telescope aggregrated ddos metadata",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)": {
+        "id": "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)",
+        "__typename": "dataset",
+        "name": "caida ucsd network telescope traffic samples (formerly the backscatter dataset)",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
     "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem": {
         "id": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
         "__typename": "paper",
@@ -2822,28 +3082,6 @@
         "id": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
         "__typename": "paper",
         "name": "the day after patch tuesday effects observable in ip darkspace traffic",
-        "tags": [],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
-    },
-    "dataset:ucsd_network_telescope_aggregated_flow_dataset": {
-        "id": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
-        "__typename": "dataset",
-        "name": "ucsd network telescope aggregated flow dataset",
-        "tags": [],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
-    },
-    "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation": {
-        "id": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
-        "__typename": "paper",
-        "name": "gaining insight into as-level outages through analysis of internet background radiation",
         "tags": [],
         "links": [],
         "urls": [],
@@ -2906,6 +3144,20 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
+    "presentation:2012_08_corsaro": {
+        "id": "presentation:2012_08_corsaro",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "presentation:2012_05_corsaro": {
+        "id": "presentation:2012_05_corsaro",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
     "software:hi_cube": {
         "id": "software:hi_cube",
         "__typename": "software",
@@ -2949,12 +3201,31 @@
         "licenses": [
             "license:bsd_4_clause_uc"
         ],
-        "tags": [],
+        "tags": [
+            "tag:ip_address",
+            "tag:alias_resolution"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:ip_address": {
+        "id": "tag:ip_address",
+        "__typename": "tag",
+        "name": "ip address",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:alias_resolution": {
+        "id": "tag:alias_resolution",
+        "__typename": "tag",
+        "name": "alias resolution",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "dataset:internet_topology_data_kit": {
         "id": "dataset:internet_topology_data_kit",
@@ -3097,13 +3368,6 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
-    "presentation:measuring_and_monitoring_bgp": {
-        "id": "presentation:measuring_and_monitoring_bgp",
-        "__typename": "presentation",
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
-    },
     "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization": {
         "id": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
         "__typename": "presentation",
@@ -3218,12 +3482,15 @@
         "licenses": [
             "license:gnu general public license version 2"
         ],
-        "tags": [],
+        "tags": [
+            "tag:ip_address",
+            "tag:alias_resolution"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "license:gnu general public license version 2": {
         "id": "license:gnu general public license version 2",
@@ -3232,21 +3499,21 @@
         "dateLastUpdated": "2020/07/17 13:22:21",
         "date": "2020/07/17 13:22:21"
     },
-    "paper:internet-scale ip alias resolution techniques": {
-        "id": "paper:internet-scale ip alias resolution techniques",
+    "paper:internet-scale_ip_alias_resolution_techniques": {
+        "id": "paper:internet-scale_ip_alias_resolution_techniques",
         "__typename": "paper",
         "name": "internet-scale ip alias resolution techniques",
         "tags": [],
         "links": [],
         "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
-    "paper:internet-scale_ipv4_alias_resolution_with_midar:": {
-        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
+        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar",
         "__typename": "paper",
-        "name": "internet-scale ipv4 alias resolution with midar:",
+        "name": "internet-scale ipv4 alias resolution with midar",
         "tags": [],
         "links": [],
         "urls": [],
@@ -3292,12 +3559,15 @@
         "licenses": [
             "license:bsd_2_clause"
         ],
-        "tags": [],
+        "tags": [
+            "tag:library",
+            "tag:database"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "license:bsd_2_clause": {
         "id": "license:bsd_2_clause",
@@ -3305,6 +3575,22 @@
         "dateCreated": "2020/07/30 12:50:50",
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
+    },
+    "tag:library": {
+        "id": "tag:library",
+        "__typename": "tag",
+        "name": "library",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:database": {
+        "id": "tag:database",
+        "__typename": "tag",
+        "name": "database",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:manic": {
         "id": "software:manic",
@@ -3491,12 +3777,26 @@
         "licenses": [
             "license:gnu general public license version 2"
         ],
-        "tags": [],
+        "tags": [
+            "tag:ip_address",
+            "tag:alias_resolution"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "software:vela_midar_api": {
+        "id": "software:vela_midar_api",
+        "__typename": "software",
+        "name": "vela midar api",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:vela": {
         "id": "software:vela",
@@ -3514,23 +3814,17 @@
             }
         ],
         "licenses": [],
-        "tags": [],
+        "tags": [
+            "tag:topology",
+            "tag:ping",
+            "tag:traceroute",
+            "tag:ark"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
-    },
-    "paper:internet-scale_ipv4_alias_resolution_with_midar": {
-        "id": "paper:internet-scale_ipv4_alias_resolution_with_midar",
-        "__typename": "paper",
-        "name": "internet-scale ipv4 alias resolution with midar",
-        "tags": [],
-        "links": [],
-        "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing": {
         "id": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
@@ -3542,6 +3836,13 @@
         "dateCreated": "2020/07/30 12:50:50",
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
+    },
+    "presentation:internet-scale_alias_resolution_with_midar": {
+        "id": "presentation:internet-scale_alias_resolution_with_midar",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "software:motu": {
         "id": "software:motu",
@@ -3559,12 +3860,15 @@
         "licenses": [
             "license:gnu general public license version 2"
         ],
-        "tags": [],
+        "tags": [
+            "tag:ip_address",
+            "tag:alias_resolution"
+        ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "tag:web": {
         "id": "tag:web",
@@ -3658,13 +3962,22 @@
             "license:gnu general public license version 2"
         ],
         "tags": [
-            "tag:topology"
+            "tag:topology",
+            "tag:performance_measurement"
         ],
         "links": [],
         "urls": [],
         "dateCreated": "2020/07/17 13:22:21",
-        "dateLastUpdated": "2020/07/18 16:43:13",
-        "date": "2020/07/18 16:43:13"
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:performance_measurement": {
+        "id": "tag:performance_measurement",
+        "__typename": "tag",
+        "name": "performance measurement",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "dataset:macroscopic_topology_measurements": {
         "id": "dataset:macroscopic_topology_measurements",
@@ -3688,16 +4001,16 @@
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
     },
-    "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
-        "id": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+    "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet": {
+        "id": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
         "__typename": "paper",
-        "name": "scamper: a scalable and extensible packet prober for active measurement of the internet",
+        "name": "scamper a scalable and extensible packet prober for active measurement of the internet",
         "tags": [],
         "links": [],
         "urls": [],
-        "dateCreated": "2020/07/30 12:50:50",
-        "dateLastUpdated": "2020/07/30 12:50:50",
-        "date": "2020/07/30 12:50:50"
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "paper:learning_to_extract_router_names_from_hostnames": {
         "id": "paper:learning_to_extract_router_names_from_hostnames",
@@ -3742,6 +4055,17 @@
         "dateCreated": "2020/07/30 12:50:50",
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
+    },
+    "paper:resilience_of_deployed_tcp_to_blind_fin_attacks": {
+        "id": "paper:resilience_of_deployed_tcp_to_blind_fin_attacks",
+        "__typename": "paper",
+        "name": "resilience of deployed tcp to blind fin attacks",
+        "tags": [],
+        "links": [],
+        "urls": [],
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
     },
     "paper:resilience_of_deployed_tcp_to_blind_attacks": {
         "id": "paper:resilience_of_deployed_tcp_to_blind_attacks",
@@ -3853,6 +4177,13 @@
         "dateLastUpdated": "2020/07/30 12:50:50",
         "date": "2020/07/30 12:50:50"
     },
+    "presentation:scamper_routeviews": {
+        "id": "presentation:scamper_routeviews",
+        "__typename": "presentation",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
     "software:spoofer": {
         "id": "software:spoofer",
         "__typename": "software",
@@ -3961,5 +4292,127 @@
         "dateCreated": "2020/07/17 13:22:21",
         "dateLastUpdated": "2020/07/18 16:43:13",
         "date": "2020/07/18 16:43:13"
+    },
+    "tag:traceroute": {
+        "id": "tag:traceroute",
+        "__typename": "tag",
+        "name": "traceroute",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "tag:ark": {
+        "id": "tag:ark",
+        "__typename": "tag",
+        "name": "ark",
+        "dateCreated": "2020/08/05 14:51:13",
+        "dateLastUpdated": "2020/08/05 14:51:13",
+        "date": "2020/08/05 14:51:13"
+    },
+    "solution:how_to_find_the_business_relationship_between_asns": {
+        "id": "solution:how_to_find_the_business_relationship_between_asns",
+        "__typename": "solution",
+        "visibility": "public",
+        "name": "How to find the business relationship between asns",
+        "description": "Using .as-rel file, or AS Rank to map a pair of given asns to their relationship.",
+        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>The following solution has two scripts. One script handles a <a href=\"pair_2_rel.py\">local input</a>, and one that <a href=\"api_2_rel.py\">uses AS Rank's API</a>. Both produce a dictionary, <code>pair_2_rel</code> which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.</p>\n\n<h2>Usage</h2>\n\n<p>Below is an example of using the local file script to parse a .as-rel file to create a mapping between a pair of asns and their relationship. This file can take in either .txt or encoded .bz2 files.</p>\n\n<p><code>bash\npython3 pair_2_rel.py -r 20200101.as-rel.txt\n</code></p>\n\n<p>For the api version of the script, you'll need to import <a href=\"https://pypi.org/project/graphqlclient/#description\">graphqlclient</a>. Below is how to install the package:</p>\n\n<p><code>bash\npip3 install graphqlclient\n</code></p>\n\n<p>Below is an example of how to run the api script to create a mapping between as pairs and their relationships. </p>\n\n<p><code>bash\npython3 api_2_rel.py\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is the helper method used to parse a given line of the .as-rel file in the <a href=\"pair_2_rel.py\">local file script</a>. This method updates the dictionary, <code>pair_2_rel</code> by sorting the two asns by value prior to mapping the pair to their relationship.</p>\n\n<p>~~~Python</p>\n\n<h1>Parse a given line of the as<em>rel</em>file and map two ASes to their relationship.</h1>\n\n<p>def parse<em>as</em>rel<em>line(curr</em>line):\n    global pair<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\n# Get each piece of data from the current line.\nasn0, asn1, relationship = curr_line.split(\"|\")\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * int(relationship)\n\n# Replace relationship with the string version of it's value.\nrelationship = rel_2_name[int(relationship)]\n\nkey = asn0 + \" \" + asn1\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = relationship\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below are two helper methods used in the <a href=\"api_2_rel.py\">api script</a>. The first helper method is the AS Rank Query, and what data is taken from the API. The second helper method shows what is done with the data taken from the API. The second method assumes the input is a dictionary of the keys and values within the \"node\" section of the query's format. </p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>pair</em>2<em>rel(curr</em>line):\n    global pair<em>2</em>rel\n    global name<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Get the values from the current line.\nrelationship = name_2_rel[curr_line[\"relationship\"]]\nasn0 = int(curr_line[\"asn0\"][\"asn\"])\nasn1 = int(curr_line[\"asn1\"][\"asn\"])\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * relationship\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = rel_2_name[relationship]\n</code></pre>\n\n<p>~~~</p>\n\n<p>This helper method is offered to show how to easily access a relationship in pair<em>2</em>rel in either script. This method also shows how to format two given asns to match the key format of pair<em>2</em>rel. The commented out return line could be helpful for testing, or to better understand what the relationship between the ases mean.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper function to format two given asns into a key for as<em>pair</em>2_rel.</h1>\n\n<p>def get<em>relationship(asn0, asn1):\n    global pair</em>2_rel</p>\n\n<pre><code>if (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Return the relationship, or return None if the key isn't valid.\nif key in pair_2_rel:\n    rel = pair_2_rel[key]\n    return rel\n    # return str(asn0) + \"'s \" + str(rel) + \" is \" + str(asn1)\nelse:\n    return None\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Caveats</h3>\n\n<p>A pair of asns is sorted by their values in ascending order. Ex: <code>10 15</code>, you'll never see a key formatted as: <code>15 10</code>. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: <code>get_relationship(ans0, asn1)</code> is provided.</p>\n\n<h3>File Format: .as-rel</h3>\n\n<p>Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with \"#\" since they will not be needed.</p>\n\n<p>~~~text</p>\n\n<h1>source:topology|BGP|<data>|<system>|<monitor></h1>\n\n<p><asn0>|<asn1>|<relationship>\n~~~</p>\n",
+        "context": "",
+        "tags": [
+            "tag:asn",
+            "tag:as_relationship",
+            "tag:as_rank",
+            "tag:ipv4"
+        ],
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:as_relationship": {
+        "id": "tag:as_relationship",
+        "__typename": "tag",
+        "name": "as relationship",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:ipv4": {
+        "id": "tag:ipv4",
+        "__typename": "tag",
+        "name": "IPv4",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "solution:solution:how-to-find-an-asns-customer-cone": {
+        "id": "solution:solution:how-to-find-an-asns-customer-cone",
+        "__typename": "solution",
+        "visibility": "public",
+        "name": "How to find an ASNs customer cone",
+        "description": "The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.",
+        "content": "<p>The following <a href=\"as-customer-cone.py\">script</a> produces a dictionary as<em>2</em>cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.</p>\n\n<p>~~~json\n{\n    \"asn0\" : {\n        \"asn\" : \"asn0\",\n        \"cone\" : [ \"asn0\", \"asn1\", \"...\", \"asnM\" ],\n        \"size\" : 0\n    },\n}\n~~~</p>\n\n<h3>Usage</h3>\n\n<p>The dataset that is used for this script can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.</p>\n\n<p>~~~bash\npython3 as-customer-cone.py -p 20200101.ppdc-ases.txt\n~~~</p>\n\n<p>Below is the helper method the script uses to parses the .ppdc-ases file line-by-line to update as<em>2</em>cone with a mapping between a given asn, its cone, and cone size.</p>\n\n<p>~~~Python</p>\n\n<h1>Given an line of a .ppdc-ases file, get the asn and its Customer Cone.</h1>\n\n<p>def parse<em>ppdc</em>ases<em>line(curr</em>line):\n    global as<em>2</em>cone</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\ncustomer_cone = curr_line.split()\nasn = int(customer_cone[0])\ncustomer_cone_size = len(customer_cone[1:])\n\n# Update as_2_cone with this asn's customer_cone_size.\nif asn not in as_2_cone:\n    as_2_cone[asn] = {}\n\nas_2_cone[asn][\"asn\"] = asn\nas_2_cone[asn][\"cone\"] = customer_cone\nas_2_cone[asn][\"size\"] = customer_cone_size[1:]\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS</h3>\n\n<ul>\n<li>AS stands for Autonomous system</li>\n<li>It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).</li>\n<li>It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.</li>\n<li>Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.</li>\n<li>Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.</li>\n<li>More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></li>\n</ul>\n\n<h3>What is an ASN</h3>\n\n<ul>\n<li>Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</li>\n</ul>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing polocy between two ASes.</li>\n<li>The three most commo types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<h3>What is a Customer Cone</h3>\n\n<ul>\n<li>A customer cone is the set of ASes, prefixes, or addresses that can be reached from a given AS following only customer links.</li>\n<li>An AS A's AS customer cone as the AS A itself plus all the ASes that can be reached from A following only p2c links in BGP paths we observed.\n<ul>\n<li>In other words, A's customer cone contains A, plus A's customers, plus its customers' customers, and so on.</li>\n</ul></li>\n<li>The size of the customer cone of an AS reflects the number of other elements (ASes,  prefixes, or addresses) found in it's set.</li>\n<li>An AS in the customer cone is assumed to pay, directly or indirectly, for transit, and provides a coarse metric of the size or influence of an AS in the routing system.</li>\n</ul>\n\n<h3>File Format: .ppdc-ases</h3>\n\n<p>For the purpose of this solution, we'll be skipping over any commented lines. Each line is a customer cone where asn0 is the \"head\" of the cone and all asns after is are within its cone.</p>\n\n<p>~~~text</p>\n\n<h1>inferred clique:</h1>\n\n<h1>total size: ...</h1>\n\n<p><asn0>|<asn1>|...|<asnM>\n~~~</p>\n",
+        "context": "",
+        "tags": [
+            "tag:asn",
+            "tag:as_relationships",
+            "tag:customer_cone",
+            "tag:ipv4",
+            "tag:topology"
+        ],
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:as_relationships": {
+        "id": "tag:as_relationships",
+        "__typename": "tag",
+        "name": "as relationships",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:customer_cone": {
+        "id": "tag:customer_cone",
+        "__typename": "tag",
+        "name": "customer cone",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "solution:solution:getting_an_asns_name_country_organization": {
+        "id": "solution:solution:getting_an_asns_name_country_organization",
+        "__typename": "solution",
+        "visibility": "public",
+        "name": "How to get an ASN's name, organization and country?",
+        "description": "Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
+        "content": "<h3><ins> Mapping ASN's to country </ins></h3>\n\n<p><em>AS to Organization Mapping Datasets:</em> <a href=\"https://www.caida.org/data/as-organizations/\">link</a></p>\n\n<p>One way to map a ASN to a country is by mapping to the <strong>country of its organization.</strong> </p>\n\n<p>The AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The <code>country</code> field is stored on the organization field format. </p>\n\n<p>Example of the AS organization in a test file:\n~~~</p>\n\n<h1>format: org<em>id|changed|org</em>name|country|source</h1>\n\n<p>LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN</p>\n\n<h1>format: aut|changed|aut<em>name|org</em>id|opaque_id|source</h1>\n\n<p>1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~</p>\n\n<h3>Explanation of the data fields</h3>\n\n<hr />\n\n<h2>Organization fields</h2>\n\n<p><strong>org_id</strong> : unique ID for the given organization \\\n <strong>changed</strong> : the changed date provided by its WHOIS entry \\\n <strong>name</strong>    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n <strong>country</strong> : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n <strong>source</strong>  : the RIR or NIR database which contained this entry </p>\n\n<hr />\n\n<h2>AS fields</h2>\n\n<p><strong>aut</strong>     : the AS number or asn \\\n<strong>changed</strong> : the changed date provided by its WHOIS entry \\\n<strong>aut<em>name</strong> : the name provided for the individual AS number \\\n<strong>org</em>id</strong>  : maps to an organization entry \\\n<strong>opaque_id</strong>   : opaque identifier used by RIR extended delegation format \\\n<strong>source</strong>  : the RIR or NIR database which was contained this entry </p>\n\n<h3><ins> Solution </ins></h3>\n\n<p>The following script returns a dictionary <code>asn_info</code> that maps an ASN id to other field values <code>asn</code>, <code>changed</code>, <code>asn_name</code>, <code>org_id</code>, <code>source</code>, <code>org_name</code> and <code>country</code> in the following format:\\\n{'12285': {<code>asn</code>: '12285', <code>changed</code>: ' ', <code>asn_name</code>: ' ', \n<code>org_id</code>: ' ', <code>source</code>: '', <code>org_name</code>: ' ', <code>country</code>: ' ' }</p>\n\n<p>~~~python\nimport re\nimport sys</p>\n\n<p>re_format= re.compile(\"# format:(.+)\")</p>\n\n<p>org<em>info = {}\nasn</em>info = {}</p>\n\n<h1>Pass in test dataset as filename</h1>\n\n<p>with open(filename) as f:\n    for line in f:\n        m = re<em>format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut</em>name' with 'asn<em>name'\n                keys[2] = 'asn</em>name'</p>\n\n<pre><code>    # skips over comments\n    if len(line) == 0 or line[0] == \"#\":\n        continue\n\n    values = line.rstrip().split(\"|\")\n\n    info = {}\n\n    for i,key in enumerate(keys):\n        info[keys[i]] = values[i]\n\n\n    if \"asn\" == keys[0]:\n        org_id = info[\"org_id\"]\n        if org_id in org_info:\n            for key in [\"org_name\",\"country\"]:\n                info[key] = org_info[org_id][key]\n\n        asn_info[values[0]] = info\n\n    elif \"org_id\" == keys[0]:\n        org_info[values[0]] = info\n    else:\n        print (\"unknown type\",keys[0],file= sys.stderr)\n</code></pre>\n\n<h1>Contains the asn mapping to other field values in this format:</h1>\n\n<h1>{'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN',</h1>\n\n<h1>'org<em>id': '111S-ARIN', 'source': 'ARIN', 'org</em>name': 'One Eleven Internet Services', 'country': 'US' }</h1>\n\n<h1>print(asn_info)</h1>\n\n<p>~~~</p>\n\n<h3><ins> Background </ins></h3>\n\n<p><strong>What is an AS?</strong>\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></p>\n\n<p><strong>What is an ASN?</strong>\\\n    \u2022 Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</p>\n\n<p><strong>What is an ASN's organization?</strong>\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. </p>\n\n<p><strong>What is an ASN's country?</strong> \\\n    \u2022 The country where the ASN's organization is located. </p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an <strong>oversimplification</strong>, as the <code>country</code> would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. </p>\n",
+        "context": "",
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:software/tools",
+            "tag:asn",
+            "tag:geolocation",
+            "tag:organization",
+            "tag:country"
+        ],
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:organization": {
+        "id": "tag:organization",
+        "__typename": "tag",
+        "name": "organization",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
+    },
+    "tag:country": {
+        "id": "tag:country",
+        "__typename": "tag",
+        "name": "country",
+        "dateCreated": "2020/08/05 16:41:49",
+        "dateLastUpdated": "2020/08/05 16:41:49",
+        "date": "2020/08/05 16:41:49"
     }
 }
