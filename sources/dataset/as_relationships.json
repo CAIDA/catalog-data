@@ -7,7 +7,7 @@
         "topology"
     ],
     "dateStart": "2013.02",
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/data/as-relationships/",

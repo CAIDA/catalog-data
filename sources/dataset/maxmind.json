@@ -9,7 +9,7 @@
     ],
     "dateStart": "2007.02",
     "status": "ongoing",
-    "availability": [
+    "resources": [
         {
             "name": "commercial",
             "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",

@@ -4,9 +4,10 @@
     "organization": "CAIDA",
     "description": "IPv6 and IPv4 active traceroute probing and ping.",
     "tags": [
-        "topology"
+        "topology",
+        "performance measurement"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/scamper/",
@@ -18,15 +19,15 @@
     ],
     "links": [
         {
-            "to": "dataset:Macroscopic_Topology_Measurements",
+            "to": "dataset:macroscopic_topology_measurements",
             "label": "used by"
         },
         {
-            "to": "dataset:the_IPv4_Routed_24_Topology_Dataset",
+            "to": "dataset:the_ipv4_routed_24_topology_dataset",
             "label": "used by"
         },
         {
-            "to": "paper:scamper:_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "to": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
             "label": "used by"
         },
         {
@@ -43,6 +44,10 @@
         },
         {
             "to": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "label": "used by"
+        },
+        {
+            "to": "paper:resilience_of_deployed_tcp_to_blind_fin_attacks",
             "label": "used by"
         },
         {
@@ -87,6 +92,10 @@
         },
         {
             "to": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:scamper_routeviews",
             "label": "used by"
         }
     ]

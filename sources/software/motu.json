@@ -3,8 +3,11 @@
     "name": "Motu",
     "organization": "CAIDA",
     "description": "Dealiases pairs of IPv4 addresses.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "ip address",
+        "alias resolution"
+    ],
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/motu/",
