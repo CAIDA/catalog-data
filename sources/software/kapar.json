@@ -3,11 +3,14 @@
     "name": "kapar",
     "organization": "CAIDA",
     "description": "Graph-based IP alias resolution.",
-    "tags": [],
+    "tags": [
+        "ip address",
+        "alias resolution"
+    ],
     "availability": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.caida.org/tools/measurement/kapar/",
             "tags": []
         }
     ],
@@ -20,11 +23,11 @@
             "label": "used by"
         },
         {
-            "to": "paper:Internet-Scale IP Alias Resolution Techniques",
+            "to": "paper:internet-scale_ip_alias_resolution_techniques",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar:",
+            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
             "label": "used by"
         },
         {
