@@ -14,55 +14,74 @@
 
 ## Solution
 
-Given a list of IP addresses, this following function will return a list of correseponding IXP names. It takes in the following arguments:
-- Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/data/ixps/) under ixs_*.jsonl files
-- List of IP addresses
+Given a list of IP addresses, this following solution will return a list of correseponding IXP names.
 
+load_traceroute() takes in one input:
+- `path`: Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/data/ixps/) under ixs_*.jsonl files
+and outputs:
+- `ixpdb`: pyasn database
+- `diction`: Dictionary to map to names of IXPs
+
+annotate_traceroute() takes in three inputs:
+
+- List of IP addresses
+- `ixpdb`: pyasn database (from load_traceroute())
+- `diction`: Dictionary to map to names of IXPs (from load_traceroute())
+- `ips`: List of ip addresses
 **Usage:** `python3 ixp-annotations.py [path to jsonl file] [ip address] [ip address] ...`
 
-i.e. `python3 ixp-annotations.py ixp.jsonl '198.32.231.77' '10'` will yield `['npIX PTS', None]`
+i.e. `python3 ixp-annotations.py ixp.jsonl '198.32.231.77' '10'` will yield 
+~~~
+Invalid IP:  10
+['npIX PTS', None]
+~~~
 
 ~~~python
 
 import json
-import ipaddress
+import numpy as np
+import pyasn
+import os
 
-def annotate_traceroute(path, ips):
+def load_traceroute(path):
+    temp_file = "_ixp.dat"
+    with open(path) as f:
+        next(f)
+        data = []
+        diction = {}
+        i = 1
+        for line in f:
+            obj = json.loads(line)
+            name = obj['name']
+            diction[i] = name
+            recorded_ipv4 = list(map(lambda x: x+"\t%d"%i, obj['prefixes']['ipv4']))
+            recorded_ipv6 = list(map(lambda x: x+"\t%d"%i, obj['prefixes']['ipv6']))
+            data+=(recorded_ipv4+recorded_ipv6)
+            i+=1
+        hdrtxt = '; IP-ASN32-DAT file\n; Original file : <Path to a rib file>\n; Converted on  : temp\n; CIDRs         : 512490\n;'
+        np.savetxt(temp_file, data, header=hdrtxt,fmt='%s')
+        ixpdb = pyasn.pyasn(temp_file)
+        os.remove(temp_file)
+        return ixpdb, diction
+                
+def annotate_traceroute(ixpdb, diction, ips):
     """
     Inputs a path to data file and a list of IP addresses and returns a corresponding list of IXP names.
     """
     # Converts all into IP address format, appends None if not IP address
-    ips_format = []
+    final = []
     for ip in ips:
         try:
-            ips_format.append(ipaddress.ip_address(ip))
-        except: 
-            ips_format.append(None)
-    final_set = [None]*len(ips)
-
-    with open(path) as f:
-        # skips first row (comment)
-        next(f)
-        for line in f:
-            obj = json.loads(line)
-            name = obj['name']
-            recorded_ipv4 = list(map(ipaddress.ip_network, obj['prefixes']['ipv4']))
-            recorded_ipv6 = list(map(ipaddress.ip_network, obj['prefixes']['ipv6']))
-            for find in range(len(ips_format)):
-                ele = ips_format[find]
-                if ele != None:
-                    # checks if ipv4 or ipv6
-                    if ele.version == 4:
-                        for ipv4 in recorded_ipv4:
-                            if ele in ipv4:
-                                final_set[find] = name
-                    elif ele.version == 6:
-                         for ipv6 in recorded_ipv6:
-                            if ele in ipv6:
-                                final_set[find] = name 
-                    else:
-                        continue                      
-    print(final_set)
+            ixpdb.lookup(ip)
+        except ValueError:
+            print("Invalid IP: ", ip)
+            final.append(None)
+            continue  
+        if ixpdb.lookup(ip)[1]:
+            final.append(diction[ixpdb.lookup(ip)[0]])
+        else:
+            final.append(None)                  
+    print(final)
 ~~~
 
 ## Background
@@ -71,5 +90,18 @@ def annotate_traceroute(path, ips):
 - An IXP is a physical infrastructure that allow Internet Service Providers (ISPs), Content Delivery Networks(CDNs), and other organizations to exchange Internet traffic between their networks
 - [IXPs are managed by one of the following](https://www.internetsociety.org/issues/ixps/): non-profit organizations, associations of ISPs, operator-neutral for-profit companies, university or government agencies, informal associations of networks
 
-### Caveats
-- Assumes dataset contains valid IP addresses
+### What is an IP address?
+- IP addresses are unique identifiers that connect devices to the Internet network for communication purposes
+
+### What is a prefix?
+- An IP address has two sections: host and network
+- The network section makes up the first portion, and the host section makes up the seond
+- Thus, each network address (prefix) consists of a number of unique host addresses
+- The goal of this solution is to determine which IXP a host IP addresses belongs to through checking whether a host IP is within range of provided prefixes
+
+### Why use pyasn?
+- pyasn allows for quick lookups to determine whether an IP address is within a prefix
+- For the purpose of this solution, we've used pyasn to match to a number corresponding to a name of an IP address
+
+## Caveats
+- Requires permission to write files
