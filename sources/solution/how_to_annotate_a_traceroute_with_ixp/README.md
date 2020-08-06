@@ -108,13 +108,13 @@ def annotate_traceroute(ixpdb, diction, ips):
 
 ### What is a prefix?
 - An IP address has two sections: host and network
-- The network section makes up the first portion, and the host section makes up the seond
+- The network section makes up the first portion and the host section makes up the seond
 - Thus, each network address (prefix) consists of a number of unique host addresses
 - The goal of this solution is to determine which IXP a host IP addresses belongs to through checking whether a host IP is within range of provided prefixes
 
 ### Why use pyasn?
 - pyasn allows for quick lookups to determine whether an IP address is within a prefix
-- For the purpose of this solution, we've used pyasn to match to a number corresponding to a name of an IP address
+- For the purpose of this solution, we've used pyasn to match to a number corresponding to an IXP name of an IP address
 
 ## Caveats
 - Requires permission to write files
