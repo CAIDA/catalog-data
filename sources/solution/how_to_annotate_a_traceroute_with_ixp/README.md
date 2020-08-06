@@ -18,6 +18,7 @@ Given a list of IP addresses, this following solution will return a list of corr
 
 load_traceroute() takes in one input:
 - `path`: Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/data/ixps/) under ixs_*.jsonl files
+
 and outputs:
 - `ixpdb`: pyasn database
 - `diction`: Dictionary to map to names of IXPs
@@ -28,6 +29,9 @@ annotate_traceroute() takes in three inputs:
 - `ixpdb`: pyasn database (from load_traceroute())
 - `diction`: Dictionary to map to names of IXPs (from load_traceroute())
 - `ips`: List of ip addresses
+
+and prints:
+- `final`: Array indicating corresponding IXP or invalid IP address note
 **Usage:** `python3 ixp-annotations.py [path to jsonl file] [ip address] [ip address] ...`
 
 i.e. `python3 ixp-annotations.py ixp.jsonl '198.32.231.77' '10'` will yield 
