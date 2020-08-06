@@ -80,21 +80,20 @@ def annotate_traceroute(ixpdb, diction, ips):
     Inputs a path to data file and a list of IP addresses and returns a corresponding list of IXP names.
     """
     # Converts all into IP address format, appends None if not IP address
-    final = []
-    for ip in ips:
-        # Checks of address given is an IP address
+    ixp_list = [None]*len(ips)
+    for index in range(len(ips)):
+        # Checks if address is valid
         try:
-            ixpdb.lookup(ip)
+            ixpdb.lookup(ips[index])
         except ValueError:
-            print("Invalid IP: ", ip)
-            final.append(None)
-            continue \
-        # Searches for IP address in database; maps to name
-        if ixpdb.lookup(ip)[1]:
-            final.append(diction[ixpdb.lookup(ip)[0]])
+            print("Invalid IP: ", ips[index])
+            continue  
+        # Looks up IP address in IXP database
+        if ixpdb.lookup(ips[index])[1]:
+            ixp_list[index] = diction[ixpdb.lookup(ips[index])[0]]
         else:
-            final.append(None)                  
-    print(final)
+            continue                
+    print(ixp_list)
 ~~~
 
 ## Background
