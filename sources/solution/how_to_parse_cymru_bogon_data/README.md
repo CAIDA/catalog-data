@@ -15,9 +15,12 @@
 
 This solution requires pyasn: [pyasn github](https://github.com/hadiasghari/pyasn)
 
-This solution utilizes two inputs:
-- The bogon dataset found here: https://www.caida.org/data/bogons/ 
-- List of IP addresses
+bogon_load() takes in one input:
+- `path`: path to the bogon dataset found here: https://www.caida.org/data/bogons/ 
+
+bogon_check_ip() takes in two inputs:
+- `ips`: a list of IP addresses
+- `bogondb`: the result from bogon_load()
 
 **Usage:** `python3 bogon.py [bogon dataset] [ip address] [ip address]....`
 i.e.`python3 bogon.py 2020-05-13.fullbogons-ipv4.txt 0.0.0.1 10 5.44.248.1 1.1.1.1` yields 
@@ -67,6 +70,7 @@ def bogon_check_ip(ips, bogondb):
         else:
             final.append(False)
     print(final)
+    
 ~~~
 
 ## Background
