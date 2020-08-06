@@ -44,12 +44,16 @@ import pyasn
 import os
 
 def load_traceroute(path):
+    """
+    Parses provided IXP dataset and creates a pyasn compatible database and dictionary to be used in the next function.
+    """
     temp_file = "_ixp.dat"
     with open(path) as f:
         next(f)
         data = []
         diction = {}
         i = 1
+        # Gathers data from files and sets up format
         for line in f:
             obj = json.loads(line)
             name = obj['name']
@@ -58,9 +62,11 @@ def load_traceroute(path):
             recorded_ipv6 = list(map(lambda x: x+"\t%d"%i, obj['prefixes']['ipv6']))
             data+=(recorded_ipv4+recorded_ipv6)
             i+=1
+        # Writes data into file
         hdrtxt = '; IP-ASN32-DAT file\n; Original file : <Path to a rib file>\n; Converted on  : temp\n; CIDRs         : 512490\n;'
         np.savetxt(temp_file, data, header=hdrtxt,fmt='%s')
         ixpdb = pyasn.pyasn(temp_file)
+        # Removes created file
         os.remove(temp_file)
         return ixpdb, diction
                 
@@ -71,12 +77,14 @@ def annotate_traceroute(ixpdb, diction, ips):
     # Converts all into IP address format, appends None if not IP address
     final = []
     for ip in ips:
+        # Checks of address given is an IP address
         try:
             ixpdb.lookup(ip)
         except ValueError:
             print("Invalid IP: ", ip)
             final.append(None)
-            continue  
+            continue \
+        # Searches for IP address in database; maps to name
         if ixpdb.lookup(ip)[1]:
             final.append(diction[ixpdb.lookup(ip)[0]])
         else:
