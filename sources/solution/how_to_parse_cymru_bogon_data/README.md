@@ -15,44 +15,57 @@
 
 This solution requires pyasn: [pyasn github](https://github.com/hadiasghari/pyasn)
 
-This solution utilizes three inputs:
+This solution utilizes two inputs:
 - The bogon dataset found here: https://www.caida.org/data/bogons/ 
-- IP ASN dataset ([more information here](https://github.com/hadiasghari/pyasn))
 - List of IP addresses
 
-**Usage:** `python3 bogon.py [bogon dataset] [ip asn file] [ip address] [ip address]....`
-i.e.`python3 bogon.py 2020-05-13.fullbogons-ipv4.txt ipasn_20200730.dat "127.1.2.3" "10"`
+**Usage:** `python3 bogon.py [bogon dataset] [ip address] [ip address]....`
+i.e.`python3 bogon.py 2020-05-13.fullbogons-ipv4.txt 0.0.0.1 10 5.44.248.1 1.1.1.1` yields 
+~~~
+Invalid IP:  10
+[True, False, True, False]
+~~~
 
 ~~~python
 import pyasn
-bogon_temp_file = "_bogon.db"
+import numpy as np
+import os
+
 def bogon_load(path):
     """
-    Loads in bogon data as an array "_bogon.db"
+    Loads bogon dataset into memory.
     """
+    temp_file = "_bogon.dat"
     f = open(path, "r")
     ips = []
-    # skips first comment line
     next(f)
     for line in f.readlines():
-        ips.append(line.replace('\n', ''))
-    return ips
-    // write to bogon
-    // load bogon
-    bogondb = pyasn.pyasn(bogon_temp_file)
-
-    remove bogondb
-
+        ips.append(line.replace('\n',"") + "\t1")
+    hdrtxt = '; IP-ASN32-DAT file\n; Original file : <Path to a rib file>\n; Converted on  : temp\n; CIDRs         : 512490\n;'
+    np.savetxt(temp_file, ips, header=hdrtxt,fmt='%s')
+    bogondb = pyasn.pyasn('_bogon.dat')
+    os.remove(temp_file)
+    return bogondb
 
 def bogon_check_ip(ips, bogondb):
     """
     Checks whether a given IP address is bogon
     """
-    #loads in ip asn dataset
-    final = [False]*len(ips)
+    final = []
     for ip in ips:
-       if bogondb.lookup(ip):
-           final[ip] = True
+        # Check if IP is valid
+        try:
+            bogondb.lookup(ip)
+        except ValueError:
+            print("Invalid IP: ", ip)
+            final.append(False)
+            continue
+        
+        # Look up IP
+        if bogondb.lookup(ip)[1]:
+            final.append(True)
+        else:
+            final.append(False)
     print(final)
 ~~~
 
@@ -65,3 +78,9 @@ def bogon_check_ip(ips, bogondb):
 ### What is a Bogon IP Address?
 - Bogon addresses have not been allocated by IANA or any of the RIRs
 - These addresses congregate to make up what is known as "bogus space"
+- This space includes reserved space
+- Make sure to download the latest bogon file, because the ranges are subject to change
+
+### What is pyasn?
+- pyasn is a package that allows for very quick lookups of addresses
+- We've made a temporary file that allows us to quickly look up whether an IP address is within a bogon prefix
