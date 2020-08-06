@@ -32,6 +32,7 @@ annotate_traceroute() takes in three inputs:
 
 and prints:
 - `final`: Array indicating corresponding IXP or invalid IP address note
+
 **Usage:** `python3 ixp-annotations.py [path to jsonl file] [ip address] [ip address] ...`
 
 i.e. `python3 ixp-annotations.py ixp.jsonl '198.32.231.77' '10'` will yield 
