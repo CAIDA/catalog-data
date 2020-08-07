@@ -31,9 +31,9 @@
             "from": "tag:security",
             "to": "group:asrank"
         },
-        "media:asrank": {
+        "media:2013_as_relationships_imc": {
             "from": "tag:security",
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:security",
@@ -117,9 +117,9 @@
             "from": "tag:topology",
             "to": "group:asrank"
         },
-        "media:asrank": {
+        "media:2013_as_relationships_imc": {
             "from": "tag:topology",
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:topology",
@@ -798,9 +798,9 @@
             "from": "tag:software_tools",
             "to": "group:asrank"
         },
-        "media:asrank": {
+        "media:2013_as_relationships_imc": {
             "from": "tag:software_tools",
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:software_tools",
@@ -840,38 +840,30 @@
             "from": "paper:2013_asrank",
             "to": "dataset:asrank",
             "label": "defines"
-        },
-        "media:asrank": {
-            "from": "paper:2013_asrank",
-            "to": "media:asrank"
         }
     },
-    "media:asrank": {
+    "media:2013_as_relationships_imc": {
         "tag:measurement_methodology": {
-            "from": "media:asrank",
+            "from": "media:2013_as_relationships_imc",
             "to": "tag:measurement_methodology"
         },
         "tag:topology": {
-            "from": "media:asrank",
+            "from": "media:2013_as_relationships_imc",
             "to": "tag:topology"
         },
         "tag:security": {
-            "from": "media:asrank",
+            "from": "media:2013_as_relationships_imc",
             "to": "tag:security"
         },
         "tag:software_tools": {
-            "from": "media:asrank",
+            "from": "media:2013_as_relationships_imc",
             "to": "tag:software_tools"
-        },
-        "paper:2013_asrank": {
-            "from": "media:asrank",
-            "to": "paper:2013_asrank"
         }
     },
     "tag:measurement_methodology": {
-        "media:asrank": {
+        "media:2013_as_relationships_imc": {
             "from": "tag:measurement_methodology",
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
             "from": "tag:measurement_methodology",

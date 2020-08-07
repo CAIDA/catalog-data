@@ -3,7 +3,7 @@
     "id": "how_to_annotate_a_traceroute_with_ixp",
     "name": "How to Annotate a Traceroute with IXP",
     "description": "The following solution will return a list of IXP names given IP addresses",
-    tags:[
+    "tags": [
       "ixps", 
       "internet exchange points", 
       "ip address",

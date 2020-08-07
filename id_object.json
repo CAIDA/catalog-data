@@ -28,15 +28,15 @@
         "dateStart": "2007/02/01/ 00:00:00",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "restricted",
+                "url": "https://www.caida.org/projects/ark/",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [
             {
@@ -48,8 +48,8 @@
         "filename": "sources/dataset/archipelago.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:as_organization": {
         "id": "dataset:as_organization",
@@ -64,22 +64,22 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/data/as-organizations/",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/as_organization.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:as_prefix": {
         "id": "dataset:as_prefix",
@@ -94,22 +94,22 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/data/routing/routeviews-prefix2as.xml",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/as_prefix.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:as_relationships": {
         "id": "dataset:as_relationships",
@@ -122,22 +122,22 @@
         "dateStart": "2013/02/01/ 00:00:00",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/data/as-relationships/",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/as_relationships.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:asrank": {
         "id": "dataset:asrank",
@@ -152,8 +152,8 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "http://www.caida.org/data/as-organizations/",
                 "tags": [
                     "tag:file"
                 ]
@@ -179,8 +179,8 @@
         "filename": "sources/dataset/asrank.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "dataset:bgp_communities": {
         "id": "dataset:bgp_communities",
@@ -195,22 +195,22 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/data/bgp-communities/",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/bgp_communities.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:bgpmon": {
         "id": "dataset:bgpmon",
@@ -254,20 +254,20 @@
         "dateStart": "2015/03/01/ 00:00:00",
         "resources": [
             {
-                "name": "name",
-                "url": "url"
+                "name": "restricted",
+                "url": "https://ioda.caida.org/"
             }
         ],
         "status": "ongoing",
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/caida_ioda.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:euro_ix_ixp_service_matrix": {
         "id": "dataset:euro_ix_ixp_service_matrix",
@@ -312,22 +312,22 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/data/internet-topology-data-kit/",
                 "tags": [
                     "tag:file"
                 ]
             }
         ],
         "licenses": [
-            "license:BSD-4-Clause-UC"
+            "license:bsd_4_clause_uc"
         ],
         "links": [],
         "filename": "sources/dataset/itdk.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "dataset:mawi_internet_traffic": {
         "id": "dataset:mawi_internet_traffic",
@@ -352,8 +352,8 @@
         "status": "ongoing",
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "commercial",
+                "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",
                 "tags": [
                     "tag:file"
                 ]
@@ -363,8 +363,8 @@
         "filename": "sources/dataset/maxmind.json",
         "__typename": "Dataset",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "dataset:maxmind_geolite": {
         "id": "dataset:maxmind_geolite",
@@ -472,15 +472,15 @@
         ],
         "availability": [
             {
-                "format": "format",
-                "url": "url"
+                "format": "PDF",
+                "url": "https://www.caida.org/publications/presentations/2019/network_hygiene_incentives_regulation_ccs/network_hygiene_incentives_regulation_ccs.pdf"
             }
         ],
         "filename": "sources/group/asrank.json",
         "__typename": "Group",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "license:bsd_4_clause_uc": {
         "id": "license:bsd_4_clause_uc",
@@ -510,8 +510,8 @@
         "dateLastUpdated": "2020/08/06 15:27:16",
         "date": "2020/08/06 15:27:16"
     },
-    "media:asrank": {
-        "id": "media:asrank",
+    "media:2013_as_relationships_imc": {
+        "id": "media:2013_as_relationships_imc",
         "type": "presentation",
         "name": "AS Relationships, Customer Cones, and Validation",
         "tags": [
@@ -531,9 +531,9 @@
         "links": [],
         "filename": "sources/media/2013_as_relationships_imc.json",
         "__typename": "Media",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateCreated": "2020/08/06 22:27:35",
+        "dateLastUpdated": "2020/08/06 22:27:35",
+        "date": "2020/08/06 22:27:35"
     },
     "media:ipv4_history_viz_interactive": {
         "id": "media:ipv4_history_viz_interactive",
@@ -553,8 +553,8 @@
         "type": "PRESENTATION",
         "availability": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "URL",
+                "url": "https://www.caida.org/publications/visualizations/ipv4-history/",
                 "tags": [
                     "tag:url",
                     "tag:presentation"
@@ -564,8 +564,8 @@
         "filename": "sources/media/ipv4_history_viz_interactive.json",
         "__typename": "Media",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "media:ipv4_history_viz_video": {
         "id": "media:ipv4_history_viz_video",
@@ -653,17 +653,13 @@
                 "to": "dataset:asrank",
                 "label": "defines",
                 "from": "paper:2013_asrank"
-            },
-            {
-                "to": "media:asrank",
-                "from": "paper:2013_asrank"
             }
         ],
         "filename": "sources/paper/2013_asrank.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:27:35",
+        "date": "2020/08/06 22:27:35"
     },
     "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
         "id": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
@@ -695,7 +691,7 @@
                 "organization": "Unknown"
             },
             {
-                "person": "person:chang_rocky_k._c.",
+                "person": "person:chang_rocky_k_c_",
                 "organization": "Unknown"
             },
             {
@@ -707,7 +703,7 @@
                 "organization": "Unknown"
             },
             {
-                "person": "person:mok_ricky_k._p.",
+                "person": "person:mok_ricky_k_p_",
                 "organization": "Unknown"
             }
         ],
@@ -718,11 +714,11 @@
                 "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
             }
         ],
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
         "id": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
@@ -741,15 +737,15 @@
         "caida_paper_id": "paper679",
         "authors": [
             {
-                "person": "person:lutscher_philipp_m.",
+                "person": "person:lutscher_philipp_m_",
                 "organization": "Unknown"
             },
             {
-                "person": "person:weidmann_nils_b.",
+                "person": "person:weidmann_nils_b_",
                 "organization": "Unknown"
             },
             {
-                "person": "person:roberts_margaret_e.",
+                "person": "person:roberts_margaret_e_",
                 "organization": "Unknown"
             },
             {
@@ -782,11 +778,11 @@
                 "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
             }
         ],
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "paper:2019_bgp_hijacking_classification": {
         "id": "paper:2019_bgp_hijacking_classification",
@@ -838,11 +834,11 @@
                 "from": "paper:2019_bgp_hijacking_classification"
             }
         ],
-        "filename": "sources/paper/bgp_hijacking_classification.json",
+        "filename": "sources/paper/2019_bgp_hijacking_classification.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
         "id": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
@@ -887,11 +883,11 @@
                 "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane"
             }
         ],
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
         "id": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
@@ -919,7 +915,7 @@
                 "organization": "Unknown"
             },
             {
-                "person": "person:m&eacute;rindol_pascal",
+                "person": "person:m_eacute_rindol_pascal",
                 "organization": "Unknown"
             },
             {
@@ -947,11 +943,11 @@
                 "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
             }
         ],
-        "filename": "sources/paper/chocolatine_outage_detection_for_internet_background_radiation.json",
+        "filename": "sources/paper/2019_chocolatine_outage_detection_for_internet_background_radiation.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "paper:2019_geo_locating_bgp_prefixes": {
         "id": "paper:2019_geo_locating_bgp_prefixes",
@@ -999,11 +995,11 @@
                 "from": "paper:2019_geo_locating_bgp_prefixes"
             }
         ],
-        "filename": "sources/paper/geo_locating_bgp_prefixes.json",
+        "filename": "sources/paper/2019_geo_locating_bgp_prefixes.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_how_to_find_correlated_internet_failures": {
         "id": "paper:2019_how_to_find_correlated_internet_failures",
@@ -1045,11 +1041,11 @@
                 "from": "paper:2019_how_to_find_correlated_internet_failures"
             }
         ],
-        "filename": "sources/paper/how_to_find_correlated_internet_failures.json",
+        "filename": "sources/paper/2019_how_to_find_correlated_internet_failures.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
         "id": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
@@ -1100,11 +1096,11 @@
                 "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic"
             }
         ],
-        "filename": "sources/paper/hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "filename": "sources/paper/2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
         "id": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
@@ -1138,11 +1134,11 @@
                 "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
             }
         ],
-        "filename": "sources/paper/learning_regexes_to_extract_router_names_from_hostnames.json",
+        "filename": "sources/paper/2019_learning_regexes_to_extract_router_names_from_hostnames.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
         "id": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
@@ -1184,11 +1180,11 @@
                 "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
             }
         ],
-        "filename": "sources/paper/profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "filename": "sources/paper/2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_residential_links_under_the_weather": {
         "id": "paper:2019_residential_links_under_the_weather",
@@ -1205,7 +1201,7 @@
             "tag:active_data_analysis",
             "tag:routing"
         ],
-        "caida_paper_id": "paper688",
+        "pubdb_id": "paper688",
         "authors": [
             {
                 "person": "person:padmanabhan_ramakrishna",
@@ -1241,11 +1237,19 @@
                 "from": "paper:2019_residential_links_under_the_weather"
             }
         ],
-        "filename": "sources/paper/residential_links_under_the_weather.json",
+        "bibtexFields": {
+            "author": "{Padmanabhan, R. and Schulman, A. and Levin, D. and Spring, N.}",
+            "title": "{{Residential Links Under the Weather}}",
+            "bookTitle": "{ACM SIGCOMM}",
+            "month": "{Aug}",
+            "year": "{2019}",
+            "keywords": "{measurement methodology   data   routing   active data analysis}"
+        },
+        "filename": "sources/paper/2019_residential_links_under_the_weather.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:54:38",
+        "date": "2020/08/06 22:54:38"
     },
     "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
         "id": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
@@ -1312,11 +1316,11 @@
                 "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
             }
         ],
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
         "id": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
@@ -1340,7 +1344,7 @@
                 "organization": "Unknown"
             },
             {
-                "person": "person:alvarez-hamelin_j._ignacio",
+                "person": "person:alvarez_hamelin_j_ignacio",
                 "organization": "Unknown"
             },
             {
@@ -1370,11 +1374,11 @@
                 "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
             }
         ],
-        "filename": "sources/paper/studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "filename": "sources/paper/2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
         "id": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
@@ -1429,11 +1433,11 @@
                 "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
             }
         ],
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
         "__typename": "Paper",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "alvarez_hamelin_j_ignacio": {
         "id": "alvarez_hamelin_j_ignacio",
@@ -1521,15 +1525,15 @@
         "nameLast": "claffy",
         "names": [
             {
-                "first": "first",
-                "last": "last"
+                "first": "Kimberley",
+                "last": "Claffy"
             }
         ],
         "filename": "sources/person/claffy_kc.json",
         "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "clark_david": {
         "id": "clark_david",
@@ -2032,8 +2036,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.bgpartemis.org/index.html",
                 "tags": []
             }
         ],
@@ -2044,8 +2048,8 @@
         "filename": "sources/software/artemis.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:as_relationship": {
         "id": "software:as_relationship",
@@ -2057,8 +2061,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "ihr.iijlab.net/ihr",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2071,8 +2075,8 @@
         "filename": "sources/software/as_relationship.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:asrank_api": {
         "id": "software:asrank_api",
@@ -2085,8 +2089,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://api.asrank.caida.org/v2/docs",
                 "tags": [
                     "tag:api"
                 ]
@@ -2104,8 +2108,8 @@
         "filename": "sources/software/asrank_api.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:asrank_ui": {
         "id": "software:asrank_ui",
@@ -2118,8 +2122,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "asrank.caida.org",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2141,8 +2145,8 @@
         "filename": "sources/software/asrank_ui.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:bgpstream": {
         "id": "software:bgpstream",
@@ -2155,8 +2159,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://bgpstream.caida.org/docs/api",
                 "tags": [
                     "tag:api"
                 ]
@@ -2200,8 +2204,8 @@
         "filename": "sources/software/bgpstream.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:coralreef": {
         "id": "software:coralreef",
@@ -2213,8 +2217,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/coralreef/",
                 "tags": []
             }
         ],
@@ -2225,8 +2229,8 @@
         "filename": "sources/software/coralreef.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:corsaro": {
         "id": "software:corsaro",
@@ -2238,8 +2242,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://github.com/CAIDA/corsaro3/",
                 "tags": []
             }
         ],
@@ -2256,8 +2260,8 @@
         "filename": "sources/software/corsaro.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:hi_cube": {
         "id": "software:hi_cube",
@@ -2269,8 +2273,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "restricted",
+                "url": "https://hicube.caida.org",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2282,8 +2286,8 @@
         "filename": "sources/software/hi_cube.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:iffinder": {
         "id": "software:iffinder",
@@ -2296,8 +2300,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/iffinder/",
                 "tags": []
             }
         ],
@@ -2308,8 +2312,8 @@
         "filename": "sources/software/iffinder.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:internet_health_report": {
         "id": "software:internet_health_report",
@@ -2321,8 +2325,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "ihr.iijlab.net/ihr",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2331,8 +2335,8 @@
         "filename": "sources/software/internet_health_report.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:ioda": {
         "id": "software:ioda",
@@ -2346,8 +2350,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://ioda.caida.org/ioda/api",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2360,8 +2364,8 @@
         "filename": "sources/software/ioda.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:kapar": {
         "id": "software:kapar",
@@ -2374,20 +2378,20 @@
         ],
         "availability": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/kapar/",
                 "tags": []
             }
         ],
         "licenses": [
-            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+            "license:gnu_general_public_license_version_2"
         ],
         "links": [],
         "filename": "sources/software/kapar.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "software:libtimeseries": {
         "id": "software:libtimeseries",
@@ -2400,8 +2404,8 @@
         ],
         "resources": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://github.com/caida/libtimeseries/",
                 "tags": []
             }
         ],
@@ -2418,8 +2422,8 @@
         "filename": "sources/software/libtimeseries.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:manic": {
         "id": "software:manic",
@@ -2433,8 +2437,8 @@
         ],
         "availability": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "restricted",
+                "url": "https://api.manic.caida.org/v1/",
                 "tags": [
                     "tag:api"
                 ]
@@ -2452,8 +2456,8 @@
         "filename": "sources/software/manic.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:midar": {
         "id": "software:midar",
@@ -2466,13 +2470,13 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/midar/",
                 "tags": []
             }
         ],
         "licenses": [
-            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+            "license:gnu_general_public_license_version_2"
         ],
         "links": [
             {
@@ -2484,8 +2488,8 @@
         "filename": "sources/software/midar.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "software:motu": {
         "id": "software:motu",
@@ -2498,20 +2502,20 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/motu/",
                 "tags": []
             }
         ],
         "licenses": [
-            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+            "license:gnu_general_public_license_version_2"
         ],
         "links": [],
         "filename": "sources/software/motu.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "software:netacuity": {
         "id": "software:netacuity",
@@ -2524,8 +2528,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "commercial",
+                "url": "www.digitalelement.com/solutions",
                 "tags": [
                     "tag:web"
                 ]
@@ -2538,8 +2542,8 @@
         "filename": "sources/software/netacuity.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:peeringdb": {
         "id": "software:peeringdb",
@@ -2551,8 +2555,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.peeringdb.com/",
                 "tags": [
                     "tag:ui"
                 ]
@@ -2562,8 +2566,8 @@
         "filename": "sources/software/peeringdb.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:periscope": {
         "id": "software:periscope",
@@ -2575,8 +2579,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "upcoming",
+                "url": "",
                 "tags": []
             }
         ],
@@ -2585,8 +2589,8 @@
         "filename": "sources/software/periscope.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:pyasn": {
         "id": "software:pyasn",
@@ -2599,8 +2603,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://pypi.org/project/pyasn/",
                 "tags": [
                     "tag:code"
                 ]
@@ -2612,8 +2616,8 @@
         "filename": "sources/software/pyasn.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:scamper": {
         "id": "software:scamper",
@@ -2626,20 +2630,20 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/tools/measurement/scamper/",
                 "tags": []
             }
         ],
         "licenses": [
-            "license:GNU GENERAL PUBLIC LICENSE Version 2"
+            "license:gnu_general_public_license_version_2"
         ],
         "links": [],
         "filename": "sources/software/scamper.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "software:spoofer": {
         "id": "software:spoofer",
@@ -2651,20 +2655,20 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.caida.org/projects/spoofer/",
                 "tags": []
             }
         ],
         "licenses": [
-            "license:GNU GENERAL PUBLIC LICENSE Version 3"
+            "license:gnu_general_public_license_version_3"
         ],
         "links": [],
         "filename": "sources/software/spoofer.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "software:u_s_national_weather_serice_severe_weather_alert": {
         "id": "software:u_s_national_weather_serice_severe_weather_alert",
@@ -2675,8 +2679,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "public",
+                "url": "https://www.weather.gov/alerts",
                 "tags": [
                     "tag:api"
                 ]
@@ -2686,8 +2690,8 @@
         "filename": "sources/software/u_s_national_weather_serice_severe_weather_alert.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "software:vela": {
         "id": "software:vela",
@@ -2702,8 +2706,8 @@
         ],
         "resouces": [
             {
-                "name": "name",
-                "url": "url",
+                "name": "restricted",
+                "url": "https://www.caida.org/projects/ark/vela/web-api/",
                 "tags": [
                     "tag:api"
                 ]
@@ -2714,8 +2718,8 @@
         "filename": "sources/software/vela.json",
         "__typename": "Software",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:53:00",
+        "date": "2020/08/06 22:53:00"
     },
     "solution:how_to_find_the_business_relationship_between_asns": {
         "id": "solution:how_to_find_the_business_relationship_between_asns",
@@ -2740,11 +2744,11 @@
         ],
         "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>The following solution has two scripts. One script handles a <a href=\"pair_2_rel.py\">local input</a>, and one that <a href=\"api_2_rel.py\">uses AS Rank's API</a>. Both produce a dictionary, <code>pair_2_rel</code> which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.</p>\n\n<h2>Usage</h2>\n\n<p>Below is an example of using the local file script to parse a .as-rel file to create a mapping between a pair of asns and their relationship. This file can take in either .txt or encoded .bz2 files.</p>\n\n<p><code>bash\npython3 pair_2_rel.py -r 20200101.as-rel.txt\n</code></p>\n\n<p>For the api version of the script, you'll need to import <a href=\"https://pypi.org/project/graphqlclient/#description\">graphqlclient</a>. Below is how to install the package:</p>\n\n<p><code>bash\npip3 install graphqlclient\n</code></p>\n\n<p>Below is an example of how to run the api script to create a mapping between as pairs and their relationships. </p>\n\n<p><code>bash\npython3 api_2_rel.py\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is the helper method used to parse a given line of the .as-rel file in the <a href=\"pair_2_rel.py\">local file script</a>. This method updates the dictionary, <code>pair_2_rel</code> by sorting the two asns by value prior to mapping the pair to their relationship.</p>\n\n<p>~~~Python</p>\n\n<h1>Parse a given line of the as<em>rel</em>file and map two ASes to their relationship.</h1>\n\n<p>def parse<em>as</em>rel<em>line(curr</em>line):\n    global pair<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\n# Get each piece of data from the current line.\nasn0, asn1, relationship = curr_line.split(\"|\")\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * int(relationship)\n\n# Replace relationship with the string version of it's value.\nrelationship = rel_2_name[int(relationship)]\n\nkey = asn0 + \" \" + asn1\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = relationship\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below are two helper methods used in the <a href=\"api_2_rel.py\">api script</a>. The first helper method is the AS Rank Query, and what data is taken from the API. The second helper method shows what is done with the data taken from the API. The second method assumes the input is a dictionary of the keys and values within the \"node\" section of the query's format. </p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>pair</em>2<em>rel(curr</em>line):\n    global pair<em>2</em>rel\n    global name<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Get the values from the current line.\nrelationship = name_2_rel[curr_line[\"relationship\"]]\nasn0 = int(curr_line[\"asn0\"][\"asn\"])\nasn1 = int(curr_line[\"asn1\"][\"asn\"])\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * relationship\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = rel_2_name[relationship]\n</code></pre>\n\n<p>~~~</p>\n\n<p>This helper method is offered to show how to easily access a relationship in pair<em>2</em>rel in either script. This method also shows how to format two given asns to match the key format of pair<em>2</em>rel. The commented out return line could be helpful for testing, or to better understand what the relationship between the ases mean.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper function to format two given asns into a key for as<em>pair</em>2_rel.</h1>\n\n<p>def get<em>relationship(asn0, asn1):\n    global pair</em>2_rel</p>\n\n<pre><code>if (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Return the relationship, or return None if the key isn't valid.\nif key in pair_2_rel:\n    rel = pair_2_rel[key]\n    return rel\n    # return str(asn0) + \"'s \" + str(rel) + \" is \" + str(asn1)\nelse:\n    return None\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Caveats</h3>\n\n<p>A pair of asns is sorted by their values in ascending order. Ex: <code>10 15</code>, you'll never see a key formatted as: <code>15 10</code>. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: <code>get_relationship(ans0, asn1)</code> is provided.</p>\n\n<h3>File Format: .as-rel</h3>\n\n<p>Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with \"#\" since they will not be needed.</p>\n\n<p>~~~text</p>\n\n<h1>source:topology|BGP|<data>|<system>|<monitor></h1>\n\n<p><asn0>|<asn1>|<relationship>\n~~~</p>\n",
         "context": "",
-        "__typename": "Sources/Solution/How_To_Find_The_Business_Relationships_Between_Asns/Readme.Md",
         "filename": "sources/solution/how_to_find_the_business_relationships_between_asns/README.md",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "__typename": "Solution",
+        "dateCreated": "2020/08/06 23:55:08",
+        "dateLastUpdated": "2020/08/06 23:57:45",
+        "date": "2020/08/06 23:57:45"
     },
     "solution:solution_how_to_find_an_asns_customer_cone": {
         "id": "solution:solution_how_to_find_an_asns_customer_cone",
@@ -2766,11 +2770,11 @@
         ],
         "content": "<p>The following <a href=\"as-customer-cone.py\">script</a> produces a dictionary as<em>2</em>cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.</p>\n\n<p>~~~json\n{\n    \"asn0\" : {\n        \"asn\" : \"asn0\",\n        \"cone\" : [ \"asn0\", \"asn1\", \"...\", \"asnM\" ],\n        \"size\" : 0\n    },\n}\n~~~</p>\n\n<h3>Usage</h3>\n\n<p>The dataset that is used for this script can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.</p>\n\n<p>~~~bash\npython3 as-customer-cone.py -p 20200101.ppdc-ases.txt\n~~~</p>\n\n<p>Below is the helper method the script uses to parses the .ppdc-ases file line-by-line to update as<em>2</em>cone with a mapping between a given asn, its cone, and cone size.</p>\n\n<p>~~~Python</p>\n\n<h1>Given an line of a .ppdc-ases file, get the asn and its Customer Cone.</h1>\n\n<p>def parse<em>ppdc</em>ases<em>line(curr</em>line):\n    global as<em>2</em>cone</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\ncustomer_cone = curr_line.split()\nasn = int(customer_cone[0])\ncustomer_cone_size = len(customer_cone[1:])\n\n# Update as_2_cone with this asn's customer_cone_size.\nif asn not in as_2_cone:\n    as_2_cone[asn] = {}\n\nas_2_cone[asn][\"asn\"] = asn\nas_2_cone[asn][\"cone\"] = customer_cone\nas_2_cone[asn][\"size\"] = customer_cone_size[1:]\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS</h3>\n\n<ul>\n<li>AS stands for Autonomous system</li>\n<li>It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).</li>\n<li>It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.</li>\n<li>Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.</li>\n<li>Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.</li>\n<li>More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></li>\n</ul>\n\n<h3>What is an ASN</h3>\n\n<ul>\n<li>Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</li>\n</ul>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing polocy between two ASes.</li>\n<li>The three most commo types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<h3>What is a Customer Cone</h3>\n\n<ul>\n<li>A customer cone is the set of ASes, prefixes, or addresses that can be reached from a given AS following only customer links.</li>\n<li>An AS A's AS customer cone as the AS A itself plus all the ASes that can be reached from A following only p2c links in BGP paths we observed.\n<ul>\n<li>In other words, A's customer cone contains A, plus A's customers, plus its customers' customers, and so on.</li>\n</ul></li>\n<li>The size of the customer cone of an AS reflects the number of other elements (ASes,  prefixes, or addresses) found in it's set.</li>\n<li>An AS in the customer cone is assumed to pay, directly or indirectly, for transit, and provides a coarse metric of the size or influence of an AS in the routing system.</li>\n</ul>\n\n<h3>File Format: .ppdc-ases</h3>\n\n<p>For the purpose of this solution, we'll be skipping over any commented lines. Each line is a customer cone where asn0 is the \"head\" of the cone and all asns after is are within its cone.</p>\n\n<p>~~~text</p>\n\n<h1>inferred clique:</h1>\n\n<h1>total size: ...</h1>\n\n<p><asn0>|<asn1>|...|<asnM>\n~~~</p>\n",
         "context": "",
-        "__typename": "Sources/Solution/How_To_Find_An_Asns_Customer_Cone/Readme.Md",
         "filename": "sources/solution/how_to_find_an_asns_customer_cone/README.md",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "__typename": "Solution",
+        "dateCreated": "2020/08/06 23:55:08",
+        "dateLastUpdated": "2020/08/06 23:57:45",
+        "date": "2020/08/06 23:57:45"
     },
     "solution:solution_getting_an_asns_name_country_organization": {
         "id": "solution:solution_getting_an_asns_name_country_organization",
@@ -2794,11 +2798,11 @@
         ],
         "content": "<h3><ins> Mapping ASN's to country </ins></h3>\n\n<p><em>AS to Organization Mapping Datasets:</em> <a href=\"https://www.caida.org/data/as-organizations/\">link</a></p>\n\n<p>One way to map a ASN to a country is by mapping to the <strong>country of its organization.</strong> </p>\n\n<p>The AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The <code>country</code> field is stored on the organization field format. </p>\n\n<p>Example of the AS organization in a test file:\n~~~</p>\n\n<h1>format: org<em>id|changed|org</em>name|country|source</h1>\n\n<p>LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN</p>\n\n<h1>format: aut|changed|aut<em>name|org</em>id|opaque_id|source</h1>\n\n<p>1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~</p>\n\n<h3>Explanation of the data fields</h3>\n\n<hr />\n\n<h2>Organization fields</h2>\n\n<p><strong>org_id</strong> : unique ID for the given organization \\\n <strong>changed</strong> : the changed date provided by its WHOIS entry \\\n <strong>name</strong>    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n <strong>country</strong> : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n <strong>source</strong>  : the RIR or NIR database which contained this entry </p>\n\n<hr />\n\n<h2>AS fields</h2>\n\n<p><strong>aut</strong>     : the AS number or asn \\\n<strong>changed</strong> : the changed date provided by its WHOIS entry \\\n<strong>aut<em>name</strong> : the name provided for the individual AS number \\\n<strong>org</em>id</strong>  : maps to an organization entry \\\n<strong>opaque_id</strong>   : opaque identifier used by RIR extended delegation format \\\n<strong>source</strong>  : the RIR or NIR database which was contained this entry </p>\n\n<h3><ins> Solution </ins></h3>\n\n<p>The following script returns a dictionary <code>asn_info</code> that maps an ASN id to other field values <code>asn</code>, <code>changed</code>, <code>asn_name</code>, <code>org_id</code>, <code>source</code>, <code>org_name</code> and <code>country</code> in the following format:\\\n{'12285': {<code>asn</code>: '12285', <code>changed</code>: ' ', <code>asn_name</code>: ' ', \n<code>org_id</code>: ' ', <code>source</code>: '', <code>org_name</code>: ' ', <code>country</code>: ' ' }</p>\n\n<p>~~~python\nimport re\nimport sys</p>\n\n<p>re_format= re.compile(\"# format:(.+)\")</p>\n\n<p>org<em>info = {}\nasn</em>info = {}</p>\n\n<h1>Pass in test dataset as filename</h1>\n\n<p>with open(filename) as f:\n    for line in f:\n        m = re<em>format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut</em>name' with 'asn<em>name'\n                keys[2] = 'asn</em>name'</p>\n\n<pre><code>    # skips over comments\n    if len(line) == 0 or line[0] == \"#\":\n        continue\n\n    values = line.rstrip().split(\"|\")\n\n    info = {}\n\n    for i,key in enumerate(keys):\n        info[keys[i]] = values[i]\n\n\n    if \"asn\" == keys[0]:\n        org_id = info[\"org_id\"]\n        if org_id in org_info:\n            for key in [\"org_name\",\"country\"]:\n                info[key] = org_info[org_id][key]\n\n        asn_info[values[0]] = info\n\n    elif \"org_id\" == keys[0]:\n        org_info[values[0]] = info\n    else:\n        print (\"unknown type\",keys[0],file= sys.stderr)\n</code></pre>\n\n<h1>Contains the asn mapping to other field values in this format:</h1>\n\n<h1>{'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN',</h1>\n\n<h1>'org<em>id': '111S-ARIN', 'source': 'ARIN', 'org</em>name': 'One Eleven Internet Services', 'country': 'US' }</h1>\n\n<h1>print(asn_info)</h1>\n\n<p>~~~</p>\n\n<h3><ins> Background </ins></h3>\n\n<p><strong>What is an AS?</strong>\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></p>\n\n<p><strong>What is an ASN?</strong>\\\n    \u2022 Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</p>\n\n<p><strong>What is an ASN's organization?</strong>\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. </p>\n\n<p><strong>What is an ASN's country?</strong> \\\n    \u2022 The country where the ASN's organization is located. </p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an <strong>oversimplification</strong>, as the <code>country</code> would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. </p>\n",
         "context": "",
-        "__typename": "Sources/Solution/Getting_An_Asns_Name_Country_Organization/Readme.Md",
         "filename": "sources/solution/getting_an_asns_name_country_organization/Readme.md",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "__typename": "Solution",
+        "dateCreated": "2020/08/06 23:55:08",
+        "dateLastUpdated": "2020/08/06 23:57:45",
+        "date": "2020/08/06 23:57:45"
     },
     "venue:acm_computer_and_communications_security_ccs": {
         "id": "venue:acm_computer_and_communications_security_ccs",
@@ -3002,14 +3006,14 @@
     },
     "person:luckie_matthew": {
         "id": "person:luckie_matthew",
-        "name": "Luckie, Matthew",
         "filename": "sources/media/2013_as_relationships_imc.json",
+        "__typename": "Person",
+        "name": "luckie matthew",
         "nameLast": "Luckie",
         "nameFirst": "Matthew",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "venue:acm_internet_measurement_conference_imc": {
         "id": "venue:acm_internet_measurement_conference_imc",
@@ -3101,748 +3105,748 @@
     },
     "person:huffaker_bradley": {
         "id": "person:huffaker_bradley",
-        "name": "Huffaker, Bradley",
         "filename": "sources/paper/2013_asrank.json",
+        "__typename": "Person",
+        "name": "huffaker bradley",
         "nameLast": "Huffaker",
         "nameFirst": "Bradley",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:claffy_kc": {
         "id": "person:claffy_kc",
-        "name": "Claffy, Kc",
         "filename": "sources/paper/2013_asrank.json",
+        "__typename": "Person",
+        "name": "claffy kc",
         "nameLast": "Claffy",
         "nameFirst": "Kc",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:dhamdhere_amogh": {
         "id": "person:dhamdhere_amogh",
-        "name": "Dhamdhere, Amogh",
         "filename": "sources/paper/2013_asrank.json",
+        "__typename": "Person",
+        "name": "dhamdhere amogh",
         "nameLast": "Dhamdhere",
         "nameFirst": "Amogh",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:giotsas_vasileios": {
         "id": "person:giotsas_vasileios",
-        "name": "Giotsas, Vasileios",
         "filename": "sources/paper/2013_asrank.json",
+        "__typename": "Person",
+        "name": "giotsas vasileios",
         "nameLast": "Giotsas",
         "nameFirst": "Vasileios",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:mobile": {
         "id": "tag:mobile",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Tag",
         "name": "mobile",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:passive_data_analysis": {
         "id": "tag:passive_data_analysis",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Tag",
         "name": "passive data analysis",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:qoe": {
         "id": "tag:qoe",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Tag",
         "name": "QoE",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "person:zhang_shiwei": {
         "id": "person:zhang_shiwei",
-        "name": "Zhang, Shiwei",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "zhang shiwei",
         "nameLast": "Zhang",
         "nameFirst": "Shiwei",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:li_weichao": {
         "id": "person:li_weichao",
-        "name": "Li, Weichao",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "li weichao",
         "nameLast": "Li",
         "nameFirst": "Weichao",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:wu_daoyuan": {
         "id": "person:wu_daoyuan",
-        "name": "Wu, Daoyuan",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "wu daoyuan",
         "nameLast": "Wu",
         "nameFirst": "Daoyuan",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:jin_bo": {
         "id": "person:jin_bo",
-        "name": "Jin, Bo",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "jin bo",
         "nameLast": "Jin",
         "nameFirst": "Bo",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:chang_rocky_k._c.": {
-        "id": "person:chang_rocky_k._c.",
-        "name": "Chang, Rocky K. C.",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
-        "nameLast": "Chang",
-        "nameFirst": "Rocky K. C.",
+    "person:chang_rocky_k_c_": {
+        "id": "person:chang_rocky_k_c_",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "name": "chang rocky k c ",
+        "nameLast": "Chang",
+        "nameFirst": "Rocky K C ",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:gao_debin": {
         "id": "person:gao_debin",
-        "name": "Gao, Debin",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "gao debin",
         "nameLast": "Gao",
         "nameFirst": "Debin",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:wang_yi": {
         "id": "person:wang_yi",
-        "name": "Wang, Yi",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
+        "__typename": "Person",
+        "name": "wang yi",
         "nameLast": "Wang",
         "nameFirst": "Yi",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:mok_ricky_k._p.": {
-        "id": "person:mok_ricky_k._p.",
-        "name": "Mok, Ricky K. P.",
-        "filename": "sources/paper/an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
-        "nameLast": "Mok",
-        "nameFirst": "Ricky K. P.",
+    "person:mok_ricky_k_p_": {
+        "id": "person:mok_ricky_k_p_",
+        "filename": "sources/paper/2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild.json",
         "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "name": "mok ricky k p ",
+        "nameLast": "Mok",
+        "nameFirst": "Ricky K P ",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:network_telescope": {
         "id": "tag:network_telescope",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Tag",
         "name": "network telescope",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:autocracy": {
         "id": "tag:autocracy",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Tag",
         "name": "autocracy",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:digital_politics": {
         "id": "tag:digital_politics",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Tag",
         "name": "digital politics",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:internet_measurement": {
         "id": "tag:internet_measurement",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Tag",
         "name": "Internet measurement",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:cyberattacks": {
         "id": "tag:cyberattacks",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Tag",
         "name": "cyberattacks",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
-    "person:lutscher_philipp_m.": {
-        "id": "person:lutscher_philipp_m.",
-        "name": "Lutscher, Philipp M.",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+    "person:lutscher_philipp_m_": {
+        "id": "person:lutscher_philipp_m_",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "__typename": "Person",
+        "name": "lutscher philipp m ",
         "nameLast": "Lutscher",
-        "nameFirst": "Philipp M.",
-        "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "nameFirst": "Philipp M ",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:weidmann_nils_b.": {
-        "id": "person:weidmann_nils_b.",
-        "name": "Weidmann, Nils B.",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+    "person:weidmann_nils_b_": {
+        "id": "person:weidmann_nils_b_",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "__typename": "Person",
+        "name": "weidmann nils b ",
         "nameLast": "Weidmann",
-        "nameFirst": "Nils B.",
-        "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "nameFirst": "Nils B ",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:roberts_margaret_e.": {
-        "id": "person:roberts_margaret_e.",
-        "name": "Roberts, Margaret E.",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
-        "nameLast": "Roberts",
-        "nameFirst": "Margaret E.",
+    "person:roberts_margaret_e_": {
+        "id": "person:roberts_margaret_e_",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
         "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "name": "roberts margaret e ",
+        "nameLast": "Roberts",
+        "nameFirst": "Margaret E ",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:jonker_mattijs": {
         "id": "person:jonker_mattijs",
-        "name": "Jonker, Mattijs",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "__typename": "Person",
+        "name": "jonker mattijs",
         "nameLast": "Jonker",
         "nameFirst": "Mattijs",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:king_alistair": {
         "id": "person:king_alistair",
-        "name": "King, Alistair",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "__typename": "Person",
+        "name": "king alistair",
         "nameLast": "King",
         "nameFirst": "Alistair",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:dainotti_alberto": {
         "id": "person:dainotti_alberto",
-        "name": "Dainotti, Alberto",
-        "filename": "sources/paper/at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
+        "__typename": "Person",
+        "name": "dainotti alberto",
         "nameLast": "Dainotti",
         "nameFirst": "Alberto",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:cho_shinyoung": {
         "id": "person:cho_shinyoung",
-        "name": "Cho, Shinyoung",
-        "filename": "sources/paper/bgp_hijacking_classification.json",
+        "filename": "sources/paper/2019_bgp_hijacking_classification.json",
+        "__typename": "Person",
+        "name": "cho shinyoung",
         "nameLast": "Cho",
         "nameFirst": "Shinyoung",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:fontugne_romain": {
         "id": "person:fontugne_romain",
-        "name": "Fontugne, Romain",
-        "filename": "sources/paper/bgp_hijacking_classification.json",
+        "filename": "sources/paper/2019_bgp_hijacking_classification.json",
+        "__typename": "Person",
+        "name": "fontugne romain",
         "nameLast": "Fontugne",
         "nameFirst": "Romain",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:cho_kenjiro": {
         "id": "person:cho_kenjiro",
-        "name": "Cho, Kenjiro",
-        "filename": "sources/paper/bgp_hijacking_classification.json",
+        "filename": "sources/paper/2019_bgp_hijacking_classification.json",
+        "__typename": "Person",
+        "name": "cho kenjiro",
         "nameLast": "Cho",
         "nameFirst": "Kenjiro",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:gill_phillipa": {
         "id": "person:gill_phillipa",
-        "name": "Gill, Phillipa",
-        "filename": "sources/paper/bgp_hijacking_classification.json",
+        "filename": "sources/paper/2019_bgp_hijacking_classification.json",
+        "__typename": "Person",
+        "name": "gill phillipa",
         "nameLast": "Gill",
         "nameFirst": "Phillipa",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:internet_outages": {
         "id": "tag:internet_outages",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
         "__typename": "Tag",
         "name": "internet outages",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "person:holterbach_thomas": {
         "id": "person:holterbach_thomas",
-        "name": "Holterbach, Thomas",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "__typename": "Person",
+        "name": "holterbach thomas",
         "nameLast": "Holterbach",
         "nameFirst": "Thomas",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:molero_edgar_costa": {
         "id": "person:molero_edgar_costa",
-        "name": "Molero, Edgar Costa",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "__typename": "Person",
+        "name": "molero edgar costa",
         "nameLast": "Molero",
         "nameFirst": "Edgar Costa",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:apostolaki_maria": {
         "id": "person:apostolaki_maria",
-        "name": "Apostolaki, Maria",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "__typename": "Person",
+        "name": "apostolaki maria",
         "nameLast": "Apostolaki",
         "nameFirst": "Maria",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:vissicchio_stefano": {
         "id": "person:vissicchio_stefano",
-        "name": "Vissicchio, Stefano",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "__typename": "Person",
+        "name": "vissicchio stefano",
         "nameLast": "Vissicchio",
         "nameFirst": "Stefano",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:vanbever_laurent": {
         "id": "person:vanbever_laurent",
-        "name": "Vanbever, Laurent",
-        "filename": "sources/paper/blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "filename": "sources/paper/2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane.json",
+        "__typename": "Person",
+        "name": "vanbever laurent",
         "nameLast": "Vanbever",
         "nameFirst": "Laurent",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:guillot_andreas": {
         "id": "person:guillot_andreas",
-        "name": "Guillot, Andreas",
-        "filename": "sources/paper/chocolatine_outage_detection_for_internet_background_radiation.json",
+        "filename": "sources/paper/2019_chocolatine_outage_detection_for_internet_background_radiation.json",
+        "__typename": "Person",
+        "name": "guillot andreas",
         "nameLast": "Guillot",
         "nameFirst": "Andreas",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:winter_philipp": {
         "id": "person:winter_philipp",
-        "name": "Winter, Philipp",
-        "filename": "sources/paper/chocolatine_outage_detection_for_internet_background_radiation.json",
+        "filename": "sources/paper/2019_chocolatine_outage_detection_for_internet_background_radiation.json",
+        "__typename": "Person",
+        "name": "winter philipp",
         "nameLast": "Winter",
         "nameFirst": "Philipp",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:m&eacute;rindol_pascal": {
-        "id": "person:m&eacute;rindol_pascal",
-        "name": "M&Eacute;Rindol, Pascal",
-        "filename": "sources/paper/chocolatine_outage_detection_for_internet_background_radiation.json",
-        "nameLast": "M&Eacute;Rindol",
-        "nameFirst": "Pascal",
+    "person:m_eacute_rindol_pascal": {
+        "id": "person:m_eacute_rindol_pascal",
+        "filename": "sources/paper/2019_chocolatine_outage_detection_for_internet_background_radiation.json",
         "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "name": "m eacute rindol pascal",
+        "nameLast": "M",
+        "nameFirst": "Eacute Rindol Pascal",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:pelsser_cristel": {
         "id": "person:pelsser_cristel",
-        "name": "Pelsser, Cristel",
-        "filename": "sources/paper/chocolatine_outage_detection_for_internet_background_radiation.json",
+        "filename": "sources/paper/2019_chocolatine_outage_detection_for_internet_background_radiation.json",
+        "__typename": "Person",
+        "name": "pelsser cristel",
         "nameLast": "Pelsser",
         "nameFirst": "Cristel",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:padmanabhan_ramakrishna": {
         "id": "person:padmanabhan_ramakrishna",
-        "name": "Padmanabhan, Ramakrishna",
-        "filename": "sources/paper/geo_locating_bgp_prefixes.json",
+        "filename": "sources/paper/2019_geo_locating_bgp_prefixes.json",
+        "__typename": "Person",
+        "name": "padmanabhan ramakrishna",
         "nameLast": "Padmanabhan",
         "nameFirst": "Ramakrishna",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:schulman_aaron": {
         "id": "person:schulman_aaron",
-        "name": "Schulman, Aaron",
-        "filename": "sources/paper/how_to_find_correlated_internet_failures.json",
+        "filename": "sources/paper/2019_how_to_find_correlated_internet_failures.json",
+        "__typename": "Person",
+        "name": "schulman aaron",
         "nameLast": "Schulman",
         "nameFirst": "Aaron",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:levin_dave": {
         "id": "person:levin_dave",
-        "name": "Levin, Dave",
-        "filename": "sources/paper/how_to_find_correlated_internet_failures.json",
+        "filename": "sources/paper/2019_how_to_find_correlated_internet_failures.json",
+        "__typename": "Person",
+        "name": "levin dave",
         "nameLast": "Levin",
         "nameFirst": "Dave",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:spring_neil": {
         "id": "person:spring_neil",
-        "name": "Spring, Neil",
-        "filename": "sources/paper/how_to_find_correlated_internet_failures.json",
+        "filename": "sources/paper/2019_how_to_find_correlated_internet_failures.json",
+        "__typename": "Person",
+        "name": "spring neil",
         "nameLast": "Spring",
         "nameFirst": "Neil",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:kepner_jeremy": {
         "id": "person:kepner_jeremy",
-        "name": "Kepner, Jeremy",
-        "filename": "sources/paper/hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "filename": "sources/paper/2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "__typename": "Person",
+        "name": "kepner jeremy",
         "nameLast": "Kepner",
         "nameFirst": "Jeremy",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:gadepally_vijay": {
         "id": "person:gadepally_vijay",
-        "name": "Gadepally, Vijay",
-        "filename": "sources/paper/hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "filename": "sources/paper/2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "__typename": "Person",
+        "name": "gadepally vijay",
         "nameLast": "Gadepally",
         "nameFirst": "Vijay",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:michaleas_peter": {
         "id": "person:michaleas_peter",
-        "name": "Michaleas, Peter",
-        "filename": "sources/paper/hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "filename": "sources/paper/2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "__typename": "Person",
+        "name": "michaleas peter",
         "nameLast": "Michaleas",
         "nameFirst": "Peter",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:milechin_lauren": {
         "id": "person:milechin_lauren",
-        "name": "Milechin, Lauren",
-        "filename": "sources/paper/hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "filename": "sources/paper/2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic.json",
+        "__typename": "Person",
+        "name": "milechin lauren",
         "nameLast": "Milechin",
         "nameFirst": "Lauren",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:testart_cecilia": {
         "id": "person:testart_cecilia",
-        "name": "Testart, Cecilia",
-        "filename": "sources/paper/profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "filename": "sources/paper/2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "__typename": "Person",
+        "name": "testart cecilia",
         "nameLast": "Testart",
         "nameFirst": "Cecilia",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:richter_philipp": {
         "id": "person:richter_philipp",
-        "name": "Richter, Philipp",
-        "filename": "sources/paper/profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "filename": "sources/paper/2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "__typename": "Person",
+        "name": "richter philipp",
         "nameLast": "Richter",
         "nameFirst": "Philipp",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:clark_david": {
         "id": "person:clark_david",
-        "name": "Clark, David",
-        "filename": "sources/paper/profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "filename": "sources/paper/2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table.json",
+        "__typename": "Person",
+        "name": "clark david",
         "nameLast": "Clark",
         "nameFirst": "David",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:internet_reliability": {
         "id": "tag:internet_reliability",
-        "filename": "sources/paper/residential_links_under_the_weather.json",
+        "filename": "sources/paper/2019_residential_links_under_the_weather.json",
         "__typename": "Tag",
         "name": "Internet reliability",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:ping": {
         "id": "tag:ping",
-        "filename": "sources/paper/residential_links_under_the_weather.json",
+        "filename": "sources/paper/2019_residential_links_under_the_weather.json",
         "__typename": "Tag",
         "name": "ping",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:active_data_analysis": {
         "id": "tag:active_data_analysis",
-        "filename": "sources/paper/residential_links_under_the_weather.json",
+        "filename": "sources/paper/2019_residential_links_under_the_weather.json",
         "__typename": "Tag",
         "name": "active data analysis",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:economics": {
         "id": "tag:economics",
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
         "__typename": "Tag",
         "name": "economics",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "person:jin_yuchen": {
         "id": "person:jin_yuchen",
-        "name": "Jin, Yuchen",
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
+        "__typename": "Person",
+        "name": "jin yuchen",
         "nameLast": "Jin",
         "nameFirst": "Yuchen",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:scott_colin": {
         "id": "person:scott_colin",
-        "name": "Scott, Colin",
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
+        "__typename": "Person",
+        "name": "scott colin",
         "nameLast": "Scott",
         "nameFirst": "Colin",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:krishnamurthy_arvind": {
         "id": "person:krishnamurthy_arvind",
-        "name": "Krishnamurthy, Arvind",
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
+        "__typename": "Person",
+        "name": "krishnamurthy arvind",
         "nameLast": "Krishnamurthy",
         "nameFirst": "Arvind",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:shenker_scott": {
         "id": "person:shenker_scott",
-        "name": "Shenker, Scott",
-        "filename": "sources/paper/stable_and_practical_as_relationship_inference_with_problink.json",
+        "filename": "sources/paper/2019_stable_and_practical_as_relationship_inference_with_problink.json",
+        "__typename": "Person",
+        "name": "shenker scott",
         "nameLast": "Shenker",
         "nameFirst": "Scott",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:congestion": {
         "id": "tag:congestion",
-        "filename": "sources/paper/studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "filename": "sources/paper/2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
         "__typename": "Tag",
         "name": "congestion",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "person:carisimo_esteban": {
         "id": "person:carisimo_esteban",
-        "name": "Carisimo, Esteban",
-        "filename": "sources/paper/studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "filename": "sources/paper/2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "__typename": "Person",
+        "name": "carisimo esteban",
         "nameLast": "Carisimo",
         "nameFirst": "Esteban",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:selmo_carlos": {
         "id": "person:selmo_carlos",
-        "name": "Selmo, Carlos",
-        "filename": "sources/paper/studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "filename": "sources/paper/2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
+        "__typename": "Person",
+        "name": "selmo carlos",
         "nameLast": "Selmo",
         "nameFirst": "Carlos",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
-    "person:alvarez-hamelin_j._ignacio": {
-        "id": "person:alvarez-hamelin_j._ignacio",
-        "name": "Alvarez-Hamelin, J. Ignacio",
-        "filename": "sources/paper/studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
-        "nameLast": "Alvarez-Hamelin",
-        "nameFirst": "J. Ignacio",
+    "person:alvarez_hamelin_j_ignacio": {
+        "id": "person:alvarez_hamelin_j_ignacio",
+        "filename": "sources/paper/2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores.json",
         "__typename": "Person",
-        "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "name": "alvarez hamelin j ignacio",
+        "nameLast": "Alvarez",
+        "nameFirst": "Hamelin J Ignacio",
+        "dateCreated": "2020/08/06 22:16:08",
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:remote_peering": {
         "id": "tag:remote_peering",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
         "__typename": "Tag",
         "name": "Remote Peering",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:dns": {
         "id": "tag:dns",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
         "__typename": "Tag",
         "name": "dns",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:peering": {
         "id": "tag:peering",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
         "__typename": "Tag",
         "name": "Peering",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "tag:internet_routing": {
         "id": "tag:internet_routing",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
         "__typename": "Tag",
         "name": "Internet Routing",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 17:34:56",
+        "date": "2020/08/06 17:34:56"
     },
     "person:bian_rui": {
         "id": "person:bian_rui",
-        "name": "Bian, Rui",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "__typename": "Person",
+        "name": "bian rui",
         "nameLast": "Bian",
         "nameFirst": "Rui",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:hao_shuai": {
         "id": "person:hao_shuai",
-        "name": "Hao, Shuai",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "__typename": "Person",
+        "name": "hao shuai",
         "nameLast": "Hao",
         "nameFirst": "Shuai",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:wang_haining": {
         "id": "person:wang_haining",
-        "name": "Wang, Haining",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "__typename": "Person",
+        "name": "wang haining",
         "nameLast": "Wang",
         "nameFirst": "Haining",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "person:cotton_chase": {
         "id": "person:cotton_chase",
-        "name": "Cotton, Chase",
-        "filename": "sources/paper/towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "filename": "sources/paper/2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering.json",
+        "__typename": "Person",
+        "name": "cotton chase",
         "nameLast": "Cotton",
         "nameFirst": "Chase",
-        "__typename": "Person",
         "dateCreated": "2020/08/06 15:27:16",
-        "dateLastUpdated": "2020/08/06 15:27:16",
-        "date": "2020/08/06 15:27:16"
+        "dateLastUpdated": "2020/08/06 22:16:08",
+        "date": "2020/08/06 22:16:08"
     },
     "tag:hijack_detection": {
         "id": "tag:hijack_detection",
@@ -3852,6 +3856,15 @@
         "dateCreated": "2020/08/06 15:27:16",
         "dateLastUpdated": "2020/08/06 15:27:16",
         "date": "2020/08/06 15:27:16"
+    },
+    "license:bsd_3_clause": {
+        "id": "license:bsd_3_clause",
+        "name": "bsd_3_clause",
+        "filename": "sources/software/artemis.json",
+        "__typename": "License",
+        "dateCreated": "2020/08/06 23:32:14",
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "tag:ui": {
         "id": "tag:ui",
@@ -3898,6 +3911,15 @@
         "dateLastUpdated": "2020/08/06 15:27:16",
         "date": "2020/08/06 15:27:16"
     },
+    "license:gnu_general_public_license_version_2": {
+        "id": "license:gnu_general_public_license_version_2",
+        "name": "GNU GENERAL PUBLIC LICENSE Version 2",
+        "filename": "sources/software/kapar.json",
+        "__typename": "License",
+        "dateCreated": "2020/08/06 23:32:14",
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
+    },
     "tag:library": {
         "id": "tag:library",
         "filename": "sources/software/libtimeseries.json",
@@ -3915,6 +3937,15 @@
         "dateCreated": "2020/08/06 15:27:16",
         "dateLastUpdated": "2020/08/06 15:27:16",
         "date": "2020/08/06 15:27:16"
+    },
+    "license:bsd_2_clause": {
+        "id": "license:bsd_2_clause",
+        "name": "bsd_2_clause",
+        "filename": "sources/software/libtimeseries.json",
+        "__typename": "License",
+        "dateCreated": "2020/08/06 23:32:14",
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "tag:interdomain_links": {
         "id": "tag:interdomain_links",
@@ -3969,6 +4000,15 @@
         "dateCreated": "2020/08/06 15:27:16",
         "dateLastUpdated": "2020/08/06 15:27:16",
         "date": "2020/08/06 15:27:16"
+    },
+    "license:gnu_general_public_license_version_3": {
+        "id": "license:gnu_general_public_license_version_3",
+        "name": "GNU GENERAL PUBLIC LICENSE Version 3",
+        "filename": "sources/software/spoofer.json",
+        "__typename": "License",
+        "dateCreated": "2020/08/06 23:32:14",
+        "dateLastUpdated": "2020/08/06 23:32:14",
+        "date": "2020/08/06 23:32:14"
     },
     "tag:traceroute": {
         "id": "tag:traceroute",

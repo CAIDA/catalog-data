@@ -351,16 +351,16 @@ def id_create(type_,name,id_=None):
 
 
 def object_add(type_, info): 
-    type_ = type_.title()
+    if info["id"] == "paper:2019_residential_links_under_the_weather":
+        print (info)
+    info["__typename"] = type_ = type_.title()
 
     error = False
     if type_ == "Person":
         if "nameLast" not in info:
-            error_add(info["filename"], "failed to find nameLast:"+json.dumps(info))
-            error = True
-        if "nameFirst" not in info:
-            error_add(info["filename"], "failed to find nameFirst:"+json.dumps(info))
-            error = True
+            info["nameLast"] = info["id"].split("_")[0].title()
+        if "nameLast" not in info:
+            info["nameLast"] = " ".join(info["id"].split("_")[1:]).title()
 
     else:
         if "name" in info:
@@ -389,7 +389,6 @@ def object_add(type_, info):
 
     if not error:
         id_object[info["id"]] = info
-        info["__typename"] = type_
         return info
     return None
 
@@ -438,9 +437,8 @@ def object_finish(obj):
                             person = object_lookup_id(obj["filename"], id_)
                             if person is None:
                                 names = id_[7:].title().split("_")
-                                print ("---------------------------------")#debug 
-                                nameLast = names[0]
-                                nameFirst = " ".join(names[1:])
+                                nameLast = names[0].title()
+                                nameFirst = " ".join(names[1:]).title()
                                 name = nameLast+", "+nameFirst
                                 person = object_add("Person", {
                                     "id":id_,
@@ -449,11 +447,6 @@ def object_finish(obj):
                                     "nameLast":nameLast,
                                     "nameFirst":nameFirst
                                     })
-                                if "nameLast" not in person:
-                                    person["nameLast"] = person["id"].split("_")[0].title()
-                                if "nameLast" not in person:
-                                    person["nameLast"] = " ".join(person["id"].split("_")[1:]).title()
-                            print (person) #debug 
                             person_org[k] = person["id"]
                     if "venue" in person_org:
                         venue = object_lookup_id(obj["filename"], person_org["venue"])
@@ -467,6 +460,18 @@ def object_finish(obj):
                                 url = ""
                             venue_add_date_url(venue,date,url)
                         person_org["venue"] = venue["id"]
+        elif key == "licenses":
+            licenses = list(obj[key])
+            for i,id_ in enumerate(licenses):
+                id_2 = id_create(None,None,id_);
+                if id_2 not in id_object:
+                    name = id_[8:]
+                    object_add("License", {
+                        "id":id_2,
+                        "name":id_[8:],
+                        "filename":obj["filename"]
+                    })
+                obj[key][i] = id_object[id_2]["id"]
         else:
             obj[key] = tag_convert(obj["filename"], obj[key])
     return obj
@@ -542,7 +547,7 @@ def tag_convert(filename, obj,padding=""):
                 for i,tag in enumerate(obj["tags"]):
                     obj["tags"][i] = object_lookup_type_name(filename, "tag",tag)["id"]
             else:
-                obj[key] = tag_convert(filename, key,padding + " ")
+                obj[key] = tag_convert(filename, value,padding + " ")
 
     elif type_ == list:
         for i,value in enumerate(obj):
@@ -601,7 +606,6 @@ def solutions_process(path):
                 solutions_dir.add(root+"/"+fname)
         else:
             for fname in files:
-                print (fname)
                 if root in solutions_dir and re_readme_md.search(fname):
                     p = root +"/"+fname
                     info = None
@@ -609,7 +613,6 @@ def solutions_process(path):
                         inside = False
                         data = None
                         for line in f:
-                            #print (line.rstrip())
                             if info is not None:
                                 info["content"] += line
                             elif re.search("~~~",line):
@@ -620,11 +623,13 @@ def solutions_process(path):
                                         info = json.loads(data)
                                         if "id" not in info:
                                             info["id"] = root.split("/")[-1]
+                                        info["id"] = "solution:"+info["id"]
                                         info["content"] = ""
                                         info["context"] = ""
                                         data = None
                                     except ValueError as e:
                                         print ("error in "+p)
+                                        print (e)
                                         print ("parse failure",data)
                                         break
                                 else:
@@ -642,11 +647,9 @@ def solutions_process(path):
                     if len(errors) > 0:
                         skipped.append([",".join(errors), p])
                     else:
-                        info["id"] = "solution:"+info["id"]
-                        info["__typename"] = "solution"
                         info["content"] = markdown2.markdown(info["content"])
                         info["filename"] = p
-                        object_add(p, info)     
+                        object_add("Solution", info)     
     if len(skipped) > 0:
         print ("skipped")
         for msg, p in skipped:
@@ -662,7 +665,6 @@ def person_checker(person):
         else:
             name = person["id"]
         name = re.sub("[^:]+:","",name)
-        print (name)
         name_last, name_first = re.search("([^_^ ]+)[_ ](.+)",name).groups()
         person["nameFirst"] = name_first.title()
         person["nameLast"] = name_last.title()

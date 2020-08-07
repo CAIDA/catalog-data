@@ -3,8 +3,8 @@
     "id": "how_to_parse_cymru_bogon_data",
     "name": "How to Parse CYMRU Bogan Data",
     "description": "The following solution will output whether an IP address is bogon",
-    links: [data:bogons],
-    tags:[
+    "links": ["data:bogons"],
+    "tags":[
       "bogon", 
       "bogon address", 
       "ip address",

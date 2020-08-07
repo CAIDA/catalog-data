@@ -3,8 +3,8 @@
     "id": "how_to_get_the_range_of_allocated_or_reserved_asns",
     "name": "How to get the range of allocated or reserved asns?",
     "description": "The following solution will create two dictionaries listing the ranges in which AS numbers: one compressed, one not compressed.",
-    "question": "How to get the range of reserved and allocated ASNs"
-    tags:[
+    "question": "How to get the range of reserved and allocated ASNs",
+    "tags":[
       "asn", 
       "iana", 
       "autonomous system"
