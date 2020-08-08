@@ -182,9 +182,9 @@ def main():
     for id_,obj in id_object.items():
         type_ = obj["__typename"]
         if type_ in type_checker:
-            message = type_checker[type_](obj)
-            if message is not None:
-                id_failed.append({"id":id_,"message":message})
+            type_checker[type_](obj)
+            #if message is not None:
+            #    id_failed.append({"id":id_,"message":message})
                 
     for id_msg in id_failed:
         id_ = id_msg["id"]
@@ -662,7 +662,7 @@ def object_checker(obj):
             obj["name"] = ":".join(values[1:]).replace("_"," ")
             print ("creating name for",obj["name"])
 
-    return False
+    return True
 
 #############################
 
