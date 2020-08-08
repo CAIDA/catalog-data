@@ -30,7 +30,6 @@ def main():
         
 
     for fname in sys.argv[1:]:
-        print (fname)
         missing = []
         info = json.load(open(fname,"r"))
         changed = False
