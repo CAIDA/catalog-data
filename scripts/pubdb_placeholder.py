@@ -43,7 +43,9 @@ def main():
                             del info[key]
                 if "date" in info and re.search("\d\d\d\d\.\d",info["date"]):
                     year,mon = info["date"].split(".")
-                    info["date"] = year+".0"+mon
+                    if len(mon) < 2:
+                        mon = "0"+mon
+                    info["date"] = year+"."+mon
         if "authors" in obj:
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
@@ -73,14 +75,17 @@ def main():
             obj["links"] = links
         if obj["__typename"] == "paper":
             obj["bibtexFields"] =  {}
-            for key in ["type", "booktitle","institution","journal","volume","pages"]:
+            for key in ["type", "booktitle","institution","journal","volume","venue","pages","peerReviewedYes","bibtex","year","mon"]:
                 if key in obj and len(obj[key]) > 0:
                     obj["bibtexFields"][key] = obj[key]
                 del obj[key]
 
-        if "datePublished" in obj:
-            year,mon = obj["datePublished"].split(".")
-            obj["date"] = obj["datePublished"] = year+".0"+mon
+        #if "datePublished" in obj:
+            #year,mon = obj["datePublished"].split(".")
+            #if len(mon) < 2:
+                #mon = "0"+mon
+            #print (year,mon)
+            #obj["date"] = obj["datePublished"] = year+"."+mon
 
 
         #print (obj["filename"])
