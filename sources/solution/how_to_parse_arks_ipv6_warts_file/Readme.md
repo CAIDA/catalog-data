@@ -26,7 +26,17 @@
 
 ## <ins> Solution </ins> ## 
 
-Mapping ipv6 addresses to asns
+This solution creates a list of ip addresses from an [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/. ).
+
+create_ips() takes in one input: \
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ). \
+
+In order to run the function:\
+• Install [scamper] (  https://www.caida.org/tools/measurement/scamper/ )\
+• Download the [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ).\
+• 
+
+
 
 
 ## <ins> Background </ins> ## 
