@@ -22,34 +22,34 @@
     ],
     "links": [
         {
-            "to": "software:MANIC"
+            "to": "software:manic"
         },
         {
-            "to": "presentation:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "to": "media:2017_investigating_causes_congestion_african_imc",
             "label": "used by"
         },
         {
-            "to": "presentation:measurement_and_analysis_of_internet_congestion_manic",
+            "to": "media:2018_manic_aims",
             "label": "used by"
         },
         {
-            "to": "paper:inferring_persistent_interdomain_congestion",
+            "to": "paper:2018_inferring_persistent_interdomain_congestion",
             "label": "used by"
         },
         {
-            "to": "paper:policy_implications_of_third-party_measurement_of_interdomain_congestion_on_the_internet",
+            "to": "paper:2018_policy_implications_third_party_measurement",
             "label": "used by"
         },
         {
-            "to": "paper:investigating_the_causes_of_congestion_on_the_african_ixp_substrate",
+            "to": "paper:2017_investigating_causes_congestion_african",
             "label": "used by"
         },
         {
-            "to": "paper:tcp_congestion_signatures",
+            "to": "paper:2017_tcp_congestion_signatures",
             "label": "used by"
         },
         {
-            "to": "paper:challenges_in_inferring_internet_congestion_using_throughput_measurements",
+            "to": "paper:2017_challenges_inferring_internet_congestion",
             "label": "used by"
         },
         {
@@ -57,19 +57,19 @@
             "label": "used by"
         },
         {
-            "to": "paper:policy_challenges_in_mapping_internet_interdomain_congestion",
+            "to": "paper:2016_policy_challenges_mapping_internet",
             "label": "used by"
         },
         {
-            "to": "paper:measuring_interdomain_congestion_and_its_impact_on_qoe",
+            "to": "paper:2015_measuring_interdomain_congestion",
             "label": "used by"
         },
         {
-            "to": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "to": "paper:2014_challenges_inferring_interdomain_congestion",
             "label": "used by"
         },
         {
-            "to": "paper:measurement_and_analysis_of_internet_interconnection_and_congestion,",
+            "to": "paper:2014_measurement_analysis_internet_interconnection",
             "label": "used by"
         }
     ]

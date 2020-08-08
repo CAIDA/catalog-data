@@ -18,41 +18,48 @@
         "license:bsd_3_clause"
     ],
     "links": [
-
         {
             "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
         },
         {
-            "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+            "to": "paper:2018_survey_among_network_operators",
             "label": "used by"
         },
         {
-            "to": "paper:2017_artemis_real_time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "to": "paper:artemis_real_time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
             "label": "used by"
         },
         {
-            "to": "media:2017_artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "to": "media:artemis_an_open_source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
             "label": "used by"
         },
         {
-            "to": "media:2017_auto_configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "to": "media:auto_configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
             "label": "used by"
         },
         {
-            "to": "media:2017_secure_routing_for_the_internet",
+            "to": "media:secure_routing_for_the_internet",
             "label": "used by"
         },
         {
-            "to": "media:2018_artemis_anrw",
+            "to": "media:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
         },
         {
-            "to": "media:2018_artemis_ripe",
+            "to": "media:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
         },
         {
-            "to": "media:2018_artemis_aims",
+            "to": "media:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
         }
     ]
