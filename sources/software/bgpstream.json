@@ -53,39 +53,31 @@
             "label": "used by"
         },
         {
-            "to": "paper:2020_to_filter_or_not_to_filter_measuring_the_benefits_of_registering_in_the_rpki_today",
+            "to": "media:2015_bgpstream_imc",
             "label": "used by"
         },
         {
-            "to": "presentation:2017_bgpstream_and_openbmp",
+            "to": "media:2015_bgpstream_ripe",
             "label": "used by"
         },
         {
-            "to": "paper: 2016_BGPStream A Software Framework for Live and Historical BGP Data Analysis",
+            "to": "media:2016_bgpstream_imc",
             "label": "used by"
         },
         {
-            "to": "paper: 2015_BGPStream A Software Framework for Live and Historical BGP Data Analysis",
+            "to": "media:2015_bgpstream_mplane",
             "label": "used by"
         },
         {
-            "to": "presentation:2017_bgpstream_and_openbmp",
+            "to": "media:2016_bgpstream_framework_historical_nanog",
             "label": "used by"
         },
         {
-            "to": "presentation:2017_bgpstream_a_software_framework_for_live_and_historical_bgp_data_analysis",
+            "to": "media:2017_bgpstream_openbmp_cisco",
             "label": "used by"
         },
         {
-            "to": "presentatino:2015_measuring_and_monitoring_bgp",
-            "label": "used by"
-        },
-        {
-            "to": "presentatino:2015_bgpstream_a_framework_for_bgp_data_analysis",
-            "label": "used by"
-        },
-        {
-            "to": "presentation:2017_bgpstream_irtf",
+            "to": "media:2016_bgpstream_2016_romatre",
             "label": "used by"
         }
     ]

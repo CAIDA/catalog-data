@@ -8,11 +8,11 @@
     ],
     "links": [
         {
-            "to": "Paper:How_to_find_correlated_Internet_failures",
+            "to": "paper:2019_how_find_correlated_internet",
             "label": "used by"
         },
         {
-            "to": "Paper:Residential_Links_Under_the_Weather",
+            "to": "Paper:2019_Residential_Links_Under_the_Weather",
             "label": "used by"
         }
     ]

@@ -87,7 +87,6 @@ object_types = set([
     "license",
     "person",
     "paper",
-    "venue",
     "software",
     "media",
     "group"
@@ -156,10 +155,13 @@ def main():
             type_ = fname
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
-                    print ("   ",path+"/"+filename)
+                    #print ("   ",path+"/"+filename)
                     info = json.load(open(path+"/"+filename))
                     info["filename"] = path+"/"+filename
-                    object_add(type_,info)
+                    obj = object_add(type_,info)
+                    if obj is None:
+                        print ("parse error   ",path+"/"+filename)
+
 
     values = list(id_object.values())
     for info in values:
@@ -169,7 +171,7 @@ def main():
     # Check that the objects are valid
     #######################
     type_checker = {
-        "Person":person_checker,
+        "Person":person_add_names,
         "Dataset":object_checker,
         "Software":object_checker,
         "Paper":object_checker,
@@ -189,21 +191,6 @@ def main():
         msg = id_msg["message"]
         print ("removing[",msg,"]",id_)
         del id_object[id_]
-
-    #######################
-    # look for missing ids
-    #######################
-    for obj in id_object.values():
-        errors = []
-        if "links" in obj:
-            for link in obj["links"]:
-                id_ = link["to"]
-                if id_ not in id_object:
-                    errors.append([obj["id"],"links",id_])
-        if len(errors) > 0:
-            for id_message_id in errors:
-                id0,message,id1 = id_message_id
-                print("missing",id0, message, id1)
 
     #######################
     # add dates
@@ -247,14 +234,16 @@ def main():
     for obj in id_object.values():
         type_ = obj["__typename"]
         key = "------"
-        if type_ == "media" and "venue" in obj:
+        #if type_ == "media" and "venue" in obj:
+        if type_ == "media":
             date = None
-            for venue in obj["venue"]:
-                if date is None or venue["date"] > date:
-                    date = venu["date"]
+            #for venue in obj["venue"]:
+                #if date is None or venue["date"] > date:
+                    #date = venu["date"]
             if date is not None:
                 obj["date"] = date
-        elif type == "venue" and "dates" in obj:
+        #elif type == "venue" and "dates" in obj:
+        elif "dates" in obj:
             date = None
             for d in obj["dates"]:
                 if date is None or d["date"] > date:
@@ -344,34 +333,27 @@ def id_create(type_,name,id_=None):
         elif type_ is not None:
             name = id_
         else:
-            print ("type not defined for",id)
-            sys.exit()
+            return None
     id_ = type_+":"+re_id_illegal.sub("_",name)
     return id_.lower()
 
 
 def object_add(type_, info): 
-    if info["id"] == "paper:2019_residential_links_under_the_weather":
-        print (info)
     info["__typename"] = type_ = type_.title()
 
     error = False
     if type_ == "Person":
-        if "nameLast" not in info:
-            info["nameLast"] = info["id"].split("_")[0].title()
-        if "nameLast" not in info:
-            info["nameLast"] = " ".join(info["id"].split("_")[1:]).title()
+        person_add_names(info)
 
-    else:
-        if "name" in info:
-            info["__typename"] = type_.title()
-            if "id" not in info:
-                info["id"] = id_create(info["__typename"],info["name"])
-            else:
-                info["id"] = id_create(info["__typename"],info["name"],info["id"])
+    if "name" in info:
+        info["__typename"] = type_.title()
+        if "id" not in info:
+            info["id"] = id_create(info["__typename"],info["name"])
         else:
-            error_add(info["filename"], "failed to find name:"+json.dumps(info))
-            error = True
+            info["id"] = id_create(info["__typename"],info["name"],info["id"])
+    else:
+        error_add(info["filename"], "failed to find name:"+json.dumps(info))
+        error = True
     
     if type_ == "paper":
         if "datePublished"  in info:
@@ -393,23 +375,22 @@ def object_add(type_, info):
     return None
 
 def object_finish(obj):
+
+        ############
+        # links 
+        ############
+    if "links" in obj:
+        for link in obj["links"]:
+            link_add(obj,link)
+        del obj["links"]
+
     for key,value in obj.items():
         if key == "tags":
-            for i,tag in enumerate(obj[key]):
+            for i,tag in enumerate(obj["tags"]):
                 o = object_lookup_type_name(obj["filename"], "tag",tag)
                 if o is not None:
-                    tag = obj[key][i] = o["id"]
-                    link_lookup(obj,tag)
-            
-        elif key == "links":
-            i = 0
-            while i < len(obj["links"]):
-                link = obj["links"][i]
-                if not link_lookup(obj,link):
-                    obj["links"].pop(i)
-                else:
-                    i += 1
-
+                    tag = obj["tags"][i] = o["id"]
+                    link_add(obj,tag)
 
         #elif key == "resources":
         #    for resource in obj["resources"]:
@@ -425,9 +406,9 @@ def object_finish(obj):
             #date = int(time.mktime(dt.timetuple()))
             obj[key] = "%s/%s/%s/ %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
 
-        elif obj["__typename"] == "Venue" and key == "dates":
-            for date_url in obj[key]:
-                venue_add_date_url(obj,date_url["date"],date_url["url"])
+        #elif obj["__typename"] == "Venue" and key == "dates":
+        #    for date_url in obj[key]:
+        #        venue_add_date_url(obj,date_url["date"],date_url["url"])
 
         elif key == "persons" or key == "venues" or key == "presenters" or key == "authors":
                 for person_org in obj[key]:
@@ -436,30 +417,24 @@ def object_finish(obj):
                             id_ = person_org[k].lower()
                             person = object_lookup_id(obj["filename"], id_)
                             if person is None:
-                                names = id_[7:].title().split("_")
-                                nameLast = names[0].title()
-                                nameFirst = " ".join(names[1:]).title()
-                                name = nameLast+", "+nameFirst
-                                person = object_add("Person", {
-                                    "id":id_,
-                                    "name":name,
-                                    "filename":obj["filename"],
-                                    "nameLast":nameLast,
-                                    "nameFirst":nameFirst
-                                    })
+                                person = { 
+                                    "id":id_, 
+                                    "filename":obj["filename"] 
+                                }
+                                person = object_add("Person", person_add_names(person))
                             person_org[k] = person["id"]
-                    if "venue" in person_org:
-                        venue = object_lookup_id(obj["filename"], person_org["venue"])
-                        if venue is not None:
-                            venue["_name"] = person_org["venue"]
-                        if "date" in person_org:
-                            date = person_org["date"]
-                            if "url" in person_org:
-                                url = person_org["url"]
-                            else:
-                                url = ""
-                            venue_add_date_url(venue,date,url)
-                        person_org["venue"] = venue["id"]
+                    #if "venue" in person_org:
+                        #venue = object_lookup_id(obj["filename"], person_org["venue"])
+                        #if venue is not None:
+                            #venue["_name"] = person_org["venue"]
+                        #if "date" in person_org:
+                            #date = person_org["date"]
+                            #if "url" in person_org:
+                                #url = person_org["url"]
+                            #else:
+                                #url = ""
+                            #venue_add_date_url(venue,date,url)
+                        #person_org["venue"] = venue["id"]
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
@@ -476,8 +451,6 @@ def object_finish(obj):
             obj[key] = tag_convert(obj["filename"], obj[key])
     return obj
 
-
- 
 def object_lookup_type_name(filename, type_,name):
     if type_ == name[0:(len(type_)+1)]:
         name = name[(len(type_)+1):]
@@ -497,11 +470,14 @@ def object_lookup_id(filename, id_):
     m = re_type_name.search(id_)
     if m:
         type_,name = m.groups()
+        if type_ == "Person":
+            return None
+
         return object_lookup({
             "id":id_,
             "filename":filename,
             "__typename":type_.title(),
-            "name":name.replace("_"," ")
+            "name":name.replace("_"," ").title()
         })
     else:
         print ("failed to parse id",id_)
@@ -556,13 +532,19 @@ def tag_convert(filename, obj,padding=""):
 
     return obj
 
-def link_lookup(obj, info):
+def link_add(obj,info):
 
     if type(info) == str:
+        to_original = info
         to = id_create(None,None,info)
-        info = { "to":info }
+        info = { "to":to }
     else:
+        to_original = info["to"]
         to = info["to"] = id_create(None,None,info["to"])
+
+    if to is None:
+        error_add(obj["filename"],"invalid id "+to_original)
+        return None
 
     if to not in id_object:
         error_add(obj["filename"], "missing id "+to)
@@ -640,8 +622,8 @@ def solutions_process(path):
                     errors = []
                     if info is None:
                         info = {}
-                    if "visibility" not in info or "public" != info["visibility"].lower():
-                        errors.append("invisible")
+                    #if "visibility" not in info or "public" != info["visibility"].lower():
+                        #errors.append("invisible")
 
 
                     if len(errors) > 0:
@@ -658,25 +640,29 @@ def solutions_process(path):
 
 #############################
 
-def person_checker(person):
-    if "nameFirst" not in person or "nameLast" not in person:
-        if "name" in person:
-            name = person["name"]
-        else:
-            name = person["id"]
-        name = re.sub("[^:]+:","",name)
-        name_last, name_first = re.search("([^_^ ]+)[_ ](.+)",name).groups()
-        person["nameFirst"] = name_first.title()
-        person["nameLast"] = name_last.title()
-    return None
+def person_add_names(person):
+    if "name" in person and ", " in person["name"]:
+        names = person["name"].split(", ")
+        person["nameFirst"] = names[0]
+        person["nameLast"] = names[1]
+    else:
+        if "nameFirst" not in person or "nameLast" not in person:
+            names = person["id"][7:].split("_")
+            person["nameLast"] = names[0].title()
+            person["nameFirst"] = " ".join(names[1:]).title()
+        person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    return True
 
 def object_checker(obj):
     if "name" not in obj:
-        values = obj["id"].split(":")
-        obj["name"] = ":".join(values[1:]).replace("_"," ")
-        print ("creating name for",obj["name"])
+        if "Person" == obj["__typename"]:
+            obj["name"] = obj["nameLast"]+", "+obj["nameFirst"]
+        else:
+            values = obj["id"].split(":")
+            obj["name"] = ":".join(values[1:]).replace("_"," ")
+            print ("creating name for",obj["name"])
 
-    return None
+    return False
 
 #############################
 
@@ -746,6 +732,28 @@ def word_freq_get(value):
                     word_freq[w] = 1
     #print (json.dumps(word_freq,indent=4))
     return word_freq
+
+###################
+#
+###################
+def id_lookup(id_):
+    if id_ in seen:
+        return id_
+
+    yearless = id_yearless(id_)
+    print ("looking from",yearless)
+    if id_yearless in name_id:
+        return name_id[id_yearless]
+
+    print ("failed to find", id_)
+    return None
+
+def id_yearless(id_):
+    m = re.search("(.+):(\d\d\d\d)_(.+)",id_)
+    if m:
+        type_,date,name = m.groups()
+        return type_+":"+name
+    return id_
 
 main()
 

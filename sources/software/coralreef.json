@@ -22,36 +22,30 @@
             "label": "used by"
         },
         {
-            "to": "paper:the_architecture_of_coralreef_an_internet_traffic_monitoring_software_suite",
+            "to": "paper:2001_coralapps",
+            "label": "defines"
+        },
+        {
+            "to": "paper:2001_coralarch",
             "label": "used by"
         },
         {
-            "to": "paper:the_coralreef_software_suite_as_a_tool_for_system_and_network_administrators",
-            "label": "used by"
+            "to": "media:2004_coralreef_lincoln"
         },
         {
-            "to": "presentation:the_coralreef_software_suite",
-            "label": "used by"
+            "to": "media:2001_usenix0112"
         },
         {
-            "to": "presentation:monitoring_your_network_with_coralreef",
-            "label": "used by"
+            "to": "media:1999_usenix0112"
         },
         {
-            "to": "presentation:coral_a_flexible_platform_for_passive_network_monitoring",
-            "label": "used by"
+            "to": "media:1999_usenix0112"
         },
         {
-            "to": "presentation:coralreef_platform_for_passive_network_monitoring_collection_of_coral_tools",
-            "label": "used by"
+            "to": "media:1999_coralreefoverview"
         },
         {
-            "to": "presentation:coral_reef_software_distribution_of_coral_tools",
-            "label": "used by"
-        },
-        {
-            "to": "presentation:trends_in_wide_area_ip_traffic_patterns",
-            "label": "used by"
+            "to": "media:1999_isma9901_coralreef"
         }
     ]
 }
