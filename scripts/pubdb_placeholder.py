@@ -44,6 +44,10 @@ def main():
                 if "date" in info and re.search("\d\d\d\d\.\d",info["date"]):
                     year,mon = info["date"].split(".")
                     info["date"] = year+".0"+mon
+        if "authors" in obj:
+            for info in obj["authors"]:
+                key_to_key(info,"organization","organizations")
+
         if "links" in obj:
             links = []
             obj["resources"] = []
@@ -78,7 +82,8 @@ def main():
             year,mon = obj["datePublished"].split(".")
             obj["date"] = obj["datePublished"] = year+".0"+mon
 
-        print (obj["filename"])
+
+        #print (obj["filename"])
         json.dump(obj,open(obj["filename"],"w"),indent=4)
         #print (json.dumps(obj,indent=4))
 
