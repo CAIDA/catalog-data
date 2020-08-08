@@ -13,7 +13,7 @@
         "active data analysis",
         "routing"
     ],
-    "caida_paper_id": "paper688",
+    "pubdb_id": "paper688",
     "authors": [
         {
             "person": "person:Padmanabhan_Ramakrishna",
@@ -45,5 +45,13 @@
             "to": "dataset:MaxMind",
             "label": "used"
         }
-    ]
+    ],
+    "bibtexFields": {
+       "author":"{Padmanabhan, R. and Schulman, A. and Levin, D. and Spring, N.}",
+       "title":"{{Residential Links Under the Weather}}",
+       "bookTitle":"{ACM SIGCOMM}",
+       "month":"{Aug}",
+       "year":"{2019}",
+       "keywords":"{measurement methodology   data   routing   active data analysis}"
+    }
 }
