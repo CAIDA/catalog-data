@@ -712,10 +712,13 @@ def word_freq_get(value):
             total = len(words)
             for word in words:
                 word = word.lower()
-                if word in word_freq:
-                    word_freq[word] += 1/total
-                else:
-                    word_freq[word] = 1/total
+                if len(word) > 1 and not re.search("^[^a-z]+$",word): 
+                    if word in word_freq:
+                        word_freq[word] += 1/total
+                    else:
+                        word_freq[word] = 1/total
+                #else:
+                #    print (word)
 
     elif list == type_ or dict == type_:
         if list == type_:

@@ -32,7 +32,9 @@ def main():
         #print (obj["__typename"], obj["id"])
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
+        obj["resources"] = []
         if "presenters" in obj:
+            obj["type"] = "PRESENTATION"
             for info in obj["presenters"]:
                 key_to_key(info,"name","person")
                 key_to_key(info,"organization","organizations")
@@ -52,7 +54,6 @@ def main():
 
         if "links" in obj:
             links = []
-            obj["resources"] = []
             for link in obj["links"]:
                 m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",link["to"])
                 if m:
@@ -70,22 +71,27 @@ def main():
                 else:
                     obj["resources"].append({
                         "name":link["label"],
-                        "url":link["to"]
+                        "url":link["to"],
+                        "tags":[]
                     })
             obj["links"] = links
         if obj["__typename"] == "paper":
             obj["bibtexFields"] =  {}
-            for key in ["type", "booktitle","institution","journal","volume","venue","pages","peerReviewedYes","bibtex","year","mon"]:
-                if key in obj and len(obj[key]) > 0:
-                    obj["bibtexFields"][key] = obj[key]
-                del obj[key]
+            for key_from in ["type", "booktitle","institution","journal","volume","venue","pages","peerReviewedYes","bibtex","year","mon"]:
+                if key_from in obj and len(obj[key_from]) > 0:
+                    if key_from == "booktitle":
+                        key_to = "bookTitle"
+                    else:
+                        key_to = key_from
 
-        #if "datePublished" in obj:
-            #year,mon = obj["datePublished"].split(".")
-            #if len(mon) < 2:
-                #mon = "0"+mon
-            #print (year,mon)
-            #obj["date"] = obj["datePublished"] = year+"."+mon
+                    obj["bibtexFields"][key_to] = obj[key_from]
+                    del obj[key_from]
+
+        if "datePublished" in obj:
+            year,mon = obj["datePublished"].split(".")
+            if len(mon) < 2:
+                mon = "0"+mon
+            obj["date"] = obj["datePublished"] = year+"."+mon
 
 
         #print (obj["filename"])
