@@ -1,0 +1,49 @@
+{
+    "id": "2012_dust_report",
+    "name": "DUST 2012 Workshop Report",
+    "datePublished": "2012.10",
+    "description": "On May 14-15, 2012, CAIDA hosted the first international Workshop on Darkspace and UnSolicited Traffic Analysis\r\n(DUST 2012) to provide a forum for discussion of the\r\nscience, engineering, and policy challenges associated with\r\ndarkspace and unsolicited traffic analysis. This report captures threads discussed at the workshop and lists resulting\r\ncollaborations.\r\n\r\nSlides and other materials related to the workshop are available at the [DUST 2012 website](https://www.caida.org/workshops/dust/1205/).",
+    "tags": [
+        "workshop report",
+        "network telescope"
+    ],
+    "pubdb_id": "paper515",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:zseby_tanja",
+            "organization": [
+                "Fraunhofer Institute for Open Communication Systems (FOKUS), Berlin"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:809",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/dust_report/dust_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1788",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/publications/papers/2012/dust_report/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "42",
+        "number": "5",
+        "pages": "49-53",
+        "linkedObjects": ""
+    }
+}

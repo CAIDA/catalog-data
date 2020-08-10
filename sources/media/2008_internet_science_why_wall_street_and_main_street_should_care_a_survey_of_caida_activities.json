@@ -1,0 +1,21 @@
+{
+    "id": "2008_kc_wall_street",
+    "name": "Internet Science: Why Wall Street and Main Street Should Care (a survey of CAIDA activities)",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "policy",
+        "active data analysis",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhssri_infosec_technology_transition_council_meeting",
+            "date": "2008.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/kc_wall_street/kc_wall_street.pdf"
+    ]
+}

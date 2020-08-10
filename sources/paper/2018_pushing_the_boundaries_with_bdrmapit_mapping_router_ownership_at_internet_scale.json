@@ -1,0 +1,80 @@
+{
+    "id": "2018_pushing_boundaries_bdrmapit",
+    "name": "Pushing the Boundaries with bdrmapIT: Mapping Router Ownership at Internet Scale",
+    "datePublished": "2018.11",
+    "description": "Two complementary approaches to mapping network boundaries from traceroute paths recently emerged. Both approaches apply heuristics to inform inferences extracted from traceroute measurement campaigns. bdrmap used targeted traceroutes from a specific network, alias resolution probing techniques, and AS relationship inferences, to infer the boundaries of that specific network and the other networks attached at each boundary. MAPIT tackled the ambitious challenge of inferring all AS-level network boundaries in a massive archived collection of traceroutes launched from many different networks. Both were substantial contributions to the state-of-the-art, and inspired a collaboration to explore the potential to combine the approaches. We present and evaluate bdrmapIT , the result of that exploration, which yielded a more complete, accurate, and general solution to this persistent and central challenge of Internet topology research. bdrmapIT achieves 91.8%- 98.8% accuracy when mapping AS boundaries in two Internet-wide traceroute datasets, vastly improving on MAP-IT \u2019s coverage without sacrificing bdrmap \u2019s ability to map a single network. The bdrmapIT source code is available at https://git.io/fAsI0",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology",
+        "congestion"
+    ],
+    "pubdb_id": "paper660",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:marder_alexander",
+            "organization": [
+                "University of Pennsylvania"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:smith_jonathan",
+            "organization": [
+                "University of Pennsylvania"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2040",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3278532.3278538"
+        },
+        {
+            "from": "PubDBlinkId:2041",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/pushing_boundaries_bdrmapit/pushing_boundaries_bdrmapit.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2052",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2018/pushing_boundaries_bdrmapit_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "56-69",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2018_inferring_persistent_interdomain_congestion_sigcomm",
+    "name": "Inferring Persistent Interdomain Congestion",
+    "tags": [
+        "congestion",
+        "measurement methodology",
+        "passive data analysis",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "acm_sigcomm",
+            "date": "2018.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/inferring_persistent_interdomain_congestion_sigcomm/inferring_persistent_interdomain_congestion_sigcomm.pdf",
+        "https://www.caida.org/publications/papers/2018/inferring_persistent_interdomain_congestion/"
+    ]
+}

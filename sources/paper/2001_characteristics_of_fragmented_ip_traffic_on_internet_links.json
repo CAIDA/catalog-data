@@ -1,0 +1,54 @@
+{
+    "id": "2001_Frag",
+    "name": "Characteristics of fragmented IP traffic on Internet links",
+    "datePublished": "2001.4",
+    "description": "Fragmented IP traffic is a poorly understood\ncomponent of the overall mix of traffic on the Internet.\nMany assertions about the nature and extent of fragmented\ntraffic are anecdotal rather than empirical. In this paper\nwe examine the causes and attributes of measured fragment\ntraffic, in particular, the effects of NFS, streaming media,\nnetworked video games, tunneled traffic, and the prevalence\nof packet fragmentation due to improperly configured machines.\n\nTo understand the prevalence, causes, and effects of fragmented\nIP traffic, we have collected and analyzed seven\nmulti-day traces from four sources. These sources include\na university commodity access link, two highly aggregated\ncommercial exchange points, and a local NAP. Although\nthere is no practical method of ascertaining whether any\ndata provide a representative sample of all Internet traffic,\nwe include data sources that cover several different types\nof WANs with traffic from commercial entities, educational\nand research institutions, and large government facilities.\n\nThe dominant causes of fragmentation are streaming media\nand tunneled traffic. Although rumored to be the main\nimpetus for IP packet fragmentation, NFS is not among the\ntop ten causes.\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper126",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:503",
+            "label": "gzipped postscript",
+            "to": "frag.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:502",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/Frag/frag.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "83-97",
+        "linkedObjects": ""
+    }
+}

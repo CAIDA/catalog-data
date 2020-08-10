@@ -1,0 +1,56 @@
+{
+    "id": "2008_realistic_topology_modeling",
+    "name": "Realistic Topology Modeling for the Internet BGP Infrastructure ",
+    "datePublished": "2008.9",
+    "description": "The complexity and dynamics of Border Gateway Protocol (BGP), the only inter-domain routing protocol available for the Internet, is driving the need for efficient, scalable, realistic and meaningful network simulations. To properly simulate the behavior of BGP as currently deployed, one requires both a realistic topology and a realistic model of BGP. Although a large number of topology generators are available, they have limitations in either their scalability or in the ability to model AS relationships. In this work, we describe the methodology employed to efficiently construct meaningful large scale simulations of the order of a several thousand autonomous systems using parallel and distributed simulations thereby leveraging the power of multiprocessors and clusters of workstations. Using the Georgia Tech Network Simulator (GTNetS) as the framework, we simulate a realistic topology constructed from the BGP routing table updates collected by RouteViews and further incorporate the policy constraints based on the autonomous systems relationships inferred by the Cooperative Association for Internet Data Analysis (CAIDA). Our BGP model (called BGP++) found in GTNetS is built from the open source Zebra BGP implementation, which is deployed in a number of existing Internet Autonomous Systems. Using BGP++ and our topology generation methods, we show how the simulations can be used to study the effect of using BGP anycasting at DNS root servers on the several BGP metrics, including convergence time and churn.\n",
+    "tags": [
+        "dns",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper26",
+    "venue": "ieee_symposium_on_modeling_analysis_and_simulation_of_computers_and_telecommunication_systems_mascots",
+    "authors": [
+        {
+            "person": "person:raghavan_veena",
+            "organization": [
+                "Department of ECE Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Department of ECE Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:jaafar_talal",
+            "organization": [
+                "Department of ECE Georgia Institute of Technology"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:662",
+            "label": "IEEExplore (subscription required)",
+            "to": "http://ieeexplore.ieee.org/xpls/abs_all.jsp?isnumber=4770548&arnumber=4770576&count=47&index=27"
+        },
+        {
+            "from": "PubDBlinkId:663",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/realistic_topology_modeling/realistic_topology_modeling.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Symposium on Modeling, Analysis and Simulation of Computers and Telecommunication Systems (MASCOTS)",
+        "institution": "Georgia Institute of Technology Department of ECE",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "1-8",
+        "linkedObjects": ""
+    }
+}

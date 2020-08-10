@@ -1,0 +1,40 @@
+{
+    "id": "2015_infrastructure_support_qoe",
+    "name": "Infrastructure to support QoE measurement",
+    "datePublished": "2015.10",
+    "description": "Quality of Experience (QoE) is a measure of whether a use of the Internet meets the needs and (\u201creasonable\u201d) expectations of the user and provider in the context of any specific application. But QoE is a subjective measure of quality. While quality of service (QOS) is used to describe the technical parameters of any service (peak speed, latency, jitter, packet loss), assessment of QoE is application-specific. Impairments to QoE derive in part from underlying QoS parameters (e.g., jitter impairs voice QoE but not email), and can arise anywhere in the network. \r\n\r\nCAIDA and MIT have demonstrated a research method that can detect such congestion at points of interconnection, and found that business contention (usually well- reported in the press) correlates with evidence of substantial persistent congestion at points of interconnection \u2013 some episodes have persisted for days or months. Our current research method focuses on measuring persistent rather than instantaneous congestion, but with instrumentation and refinement of such methods, the research community could develop tools that they, the consumer or the FCC could use to gather evidence on whether jitter is arising at points of interconnection or elsewhere in the network.'' A white paper at the NSF/FCC Workshop on [Tracking Quality of Experience in the Internet](https://citp.princeton.edu/qoe-logistics/) in October 2015.",
+    "tags": [
+        "policy",
+        "overview",
+        "congestion",
+        "QoE"
+    ],
+    "pubdb_id": "paper596",
+    "venue": "workshop_on_tracking_quality_of_experience_in_the_internet",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1645",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/infrastructure_support_qoe/infrastructure_support_qoe.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Tracking Quality of Experience in the Internet",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

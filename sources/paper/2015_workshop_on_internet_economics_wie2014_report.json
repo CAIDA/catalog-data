@@ -1,0 +1,51 @@
+{
+    "id": "2015_wie2014_report",
+    "name": "Workshop on Internet Economics (WIE2014) Report",
+    "datePublished": "2015.7",
+    "description": "On December 10-11 2014, we hosted the 4th interdisciplinary Workshop on Internet Economics (WIE) at the UC San Diego\u2019s Supercomputer Center. This workshop series provides a forum for researchers, Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to inform current and emerging regulatory and policy debates. The objective for this year\u2019s workshop was a structured consideration of whether and how policy-makers should try to shape the future of the Internet. To structure the discussion about policy, we began the workshop with a list of potential aspirations for our future telecommunications infrastructure (a list we had previously collated), and asked participants to articulate an aspiration or fear they had about the future of the Internet, which we summarized and discussed on the second day. The focus on aspirations was motivated by the high-level observation that before discussing regulation, we must agree on the objective of the regulation, and why the intended outcome is justified. In parallel, we used a similar format as in previous years: a series of focused sessions, where 3-4 presenters each prepared 10-minute talks on issues in recent regulatory discourse, followed by in-depth discussions. This report highlights the discussions and presents relevant open research questions identified by participants. Slides presented and a copy of this report are available at https://www.caida.org/workshops/wie/1412/.",
+    "tags": [
+        "economics",
+        "policy",
+        "workshop report",
+        "congestion"
+    ],
+    "pubdb_id": "paper580",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1605",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/wie2014_report/wie2014_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1606",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1412"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "45",
+        "number": "3",
+        "pages": "43-48",
+        "linkedObjects": ""
+    }
+}

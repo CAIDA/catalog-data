@@ -1,0 +1,17 @@
+{
+    "id": "2006_old_b_root",
+    "name": "128.9.0.107",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "oarc",
+            "date": "2006.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/old_b_root/old_b_root.pdf"
+    ]
+}

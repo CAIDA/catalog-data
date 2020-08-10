@@ -1,0 +1,21 @@
+{
+    "id": "2016_dhs_impact_project_impact",
+    "name": "DHS IMPACT Project: CAIDA update",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "dhs_impact_pi_meeting",
+            "date": "2016.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/dhs_impact_project_impact/dhs_impact_project_impact.pdf"
+    ]
+}

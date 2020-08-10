@@ -1,0 +1,25 @@
+{
+    "id": "2016_measuring_internet_interconnection_nanog",
+    "name": "Measuring Internet Interconnection Performance Metrics: an exercise to inform public policy",
+    "tags": [
+        "topology",
+        "routing",
+        "economics"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2016.2"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2016.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/measuring_internet_interconnection_nanog/measuring_internet_interconnection_nanog.pdf",
+        "https://www.youtube.com/watch?v=2GE8qShOoJ4"
+    ]
+}

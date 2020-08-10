@@ -9,13 +9,13 @@
     ],
     "links": [
         {
-            "to": "dataset:as_rank"
+            "to": "dataset:asrank"
         },
         {
-            "to": "paper:asrank"
+            "to": "paper:2013_asrank"
         },
         {
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         {
             "to": "software:asrank_api"

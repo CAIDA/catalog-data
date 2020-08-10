@@ -1,5 +1,6 @@
 {
-    "id": "jonker_mattijs",
-    "nameFirst": "Mattijs",
-    "nameLast": "Jonker"
+    "person": "person:jonker_mattijs",
+    "organization": [
+        "University of Twente"
+    ]
 }

@@ -1,0 +1,42 @@
+{
+    "id": "2006_ditl_proposal",
+    "name": "A Day in the Life of the Internet: Proposed community-wide experiment",
+    "datePublished": "2006.10",
+    "description": "In 2001 the U.S. National Academy of Sciences convened a workshop to assess the state of networking research, and, in pursuit of objectivity and fresh insights, arranged for more than half of the attendees to be from other fields, in this case computer science. Among the most memorable conclusions: .. the outsiders expressed the view that the network research community should not devote all or even the majority of its time to fixing current Internet problems. Instead, networking research should more aggressively seek to develop new ideas and approaches. A program that does this would be centered on the three M's - measurement of the Internet, modeling of the Internet, and making disruptive prototypes.",
+    "tags": [
+        "data",
+        "education",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "dns"
+    ],
+    "pubdb_id": "paper40",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:18",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/ditl_proposal/ditl_proposal.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "36",
+        "number": "5",
+        "pages": "39-40",
+        "linkedObjects": ""
+    }
+}

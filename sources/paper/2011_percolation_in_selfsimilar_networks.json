@@ -1,0 +1,64 @@
+{
+    "id": "2011_percolation_self_similar_networks",
+    "name": "Percolation in Self-Similar Networks ",
+    "datePublished": "2011.1",
+    "description": "We provide a simple proof that graphs in a general class of self-similar networks have zero percolation threshold. The considered self-similar networks include random scale-free graphs with given expected node degrees and zero clustering, scale-free graphs with finite clustering and metric structure, growing scale-free networks, and many real networks. The proof and the derivation of the giant component size do not require the assumption that networks are treelike. Our results rely only on the observation that self-similar networks possess a hierarchy of nested subgraphs whose average degree grows with their depth in the hierarchy. We conjecture that this property is pivotal for percolation in networks.",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper486",
+    "venue": "physical_review_letters",
+    "authors": [
+        {
+            "person": "person:serrano_mirian \u00e1ngeles",
+            "organization": [
+                "Departament de Qu\u00edmica F\u00edsica, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:761",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1010.5793"
+        },
+        {
+            "from": "PubDBlinkId:760",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevLett.106.048701"
+        },
+        {
+            "from": "PubDBlinkId:754",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/percolation_self_similar_networks/percolation_self_similar_networks.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1555",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2011/netsci_percolation_selfsimilar/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review Letters",
+        "volume": "106",
+        "number": "4",
+        "pages": "048701",
+        "linkedObjects": ""
+    }
+}

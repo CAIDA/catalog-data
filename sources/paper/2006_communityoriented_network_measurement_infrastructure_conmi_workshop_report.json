@@ -1,0 +1,58 @@
+{
+    "id": "2006_conmi",
+    "name": "Community-Oriented Network Measurement Infrastructure (CONMI) Workshop Report",
+    "datePublished": "2006.4",
+    "description": "This report summarizes issues discussed at the first CONMI workshop held on 30 March 2005 in Boston, Massachusetts. Sponsored\r\nby the National Science Foundation\u2019s Office of Cyberinfrastructure (OCI-0532233), the workshop was intended to begin\r\na discussion regarding the viability and utility of a community-oriented network measurement infrastructure. This report was\r\npublished 20 December 2005 online at: https://www.caida.org/outreach/workshops/conmi/",
+    "tags": [
+        "policy",
+        "topology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper47",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": []
+        },
+        {
+            "person": "person:crovella_mark",
+            "organization": []
+        },
+        {
+            "person": "person:friedman_timur",
+            "organization": []
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": []
+        },
+        {
+            "person": "person:spring_neil",
+            "organization": []
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:693",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/conmi/conmi-workshop2006.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1791",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/conmi/0503/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "36",
+        "number": "2",
+        "pages": "41-48",
+        "linkedObjects": ""
+    }
+}

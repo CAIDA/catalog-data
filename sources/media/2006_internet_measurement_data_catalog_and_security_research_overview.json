@@ -1,0 +1,19 @@
+{
+    "id": "2006_colleen_wide0611_datcat",
+    "name": "Internet Measurement Data Catalog and Security Research Overview",
+    "tags": [
+        "data",
+        "software/tools",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "wide",
+            "date": "2006.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/colleen_wide0611_datcat/colleen_wide0611_datcat.pdf"
+    ]
+}

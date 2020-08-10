@@ -1,0 +1,54 @@
+{
+    "id": "2001_Frag-IMW",
+    "name": "Characteristics of Fragmented Traffic on Internet Links",
+    "datePublished": "2001.11",
+    "description": "Fragmented IP traffic is a unique component\r\nof the overall mix of traffic on the Internet. Many assertions\r\nabout the nature and extent of fragmented traffic are\r\nanecdotal rather than empirical. In this paper we examine\r\nthe causes and attributes of measured fragment traffic and\r\ncontrast those results with commonly cited beliefs. In particular,\r\nthe effects of NFS, streaming media, networked video\r\ngames, and tunneled traffic are quantified, and we estimate\r\nthe prevalence of packet fragmentation due to improperly\r\nconfigured machines.\r\nTo understand the prevalence, causes, and effects of fragmented\r\nIP traffic, we have collected and analyzed seven\r\nmulti-day traces from three sources. These sources include a\r\nuniversity commodity access link, a highly aggregated commercial\r\nexchange point, and a local NAP. Although there\r\nis no practical method of ascertaining whether any data\r\nprovide a representative sample of all Internet traffic, we\r\ndo include data sources that cover several different types\r\nof WANs with traffic from commercial entities, educational\r\nand research institutions, and large government facilities.\r\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper96",
+    "venue": "internet_measurement_workshop_imw",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:687",
+            "label": "gzipped postscript",
+            "to": "FRAG-IMW.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:686",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/Frag-IMW/Frag-IMW.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Internet Measurement Workshop (IMW)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "83-97",
+        "linkedObjects": ""
+    }
+}

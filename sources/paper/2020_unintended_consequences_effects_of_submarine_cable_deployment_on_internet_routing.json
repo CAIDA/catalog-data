@@ -1,0 +1,67 @@
+{
+    "id": "2020_unintended_consequences",
+    "name": "Unintended consequences: Effects of submarine cable deployment on Internet routing",
+    "datePublished": "2020.3",
+    "description": "We use traceroute and BGP data from globally distributed Internet measurement infrastructures to study the impact of a noteworthy submarine cable launch connecting Africa to South America. We leverage archived data from RIPE Atlas and CAIDA Ark platforms, as well as custom measurements from strategic vantage points, to quantify the differences in end-to-end latency and path lengths before and after deployment of this new South-Atlantic cable. We find that ASes operating in South America significantly benefit from this new cable, with reduced latency to all measured African countries. More surprising is that end-to-end latency to/from some regions of the world, including intra-African paths towards Angola, increased after switching to the cable. We track these unintended consequences to suboptimally circuitous IP paths that traveled from Africa to Europe, possibly North America, and South America before traveling back to Africa over the cable. Although some suboptimalities are expected given the lack of peering among neighboring ASes in the developing world, we found two other causes: (i) problematic intra-domain routing within a single Angolese network, and (ii) suboptimal routing/traffic engineering by its BGP neighbors. After notifying the operating AS of our results, we found that most of these suboptimalities were subsequently resolved. We designed our method to generalize to the study of other cable deployments or outages and share our code to promote reproducibility and extension of our work'' This paper was awarded Best Paper at PAM 2020.",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper697",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:fanou_rod\u00e9rick",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2245",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/unintended_consequences/unintended_consequences.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2252",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2020/unintended_consequences_pam/"
+        },
+        {
+            "from": "PubDBlinkId:2255",
+            "label": "Related Video",
+            "to": "https://www.youtube.com/watch?v=g9-fQKlDOaM"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

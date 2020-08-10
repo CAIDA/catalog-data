@@ -1,5 +1,6 @@
 {
-    "id": "pelsser_cristel",
-    "nameFirst": "Cristel",
-    "nameLast": "Pelsser"
+    "person": "person:pelsser_cristel",
+    "organization": [
+        "ICube, University of Strasbourg"
+    ]
 }

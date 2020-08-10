@@ -1,0 +1,54 @@
+{
+    "id": "2017_aims2017_report",
+    "name": "The 9th Workshop on Active Internet Measurements (AIMS-9) Report",
+    "datePublished": "2017.10",
+    "description": "For almost a decade, CAIDA has hosted its Workshop on Active Internet Measurements (AIMS-9). This workshop series provides a forum for stakeholders in Internet active measurement projects to communicate their interests and concerns, and explore cooperative approaches to maximizing the collective benefit of deployed infrastructure and gathered measurements. On 1-3 March 2017, CAIDA hosted the ninth Workshop on Active Internet Measurements (AIMS-9). Materials related to the workshop are at https://www.caida.org/workshops/aims/1703/.",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper632",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1900",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3155055.3155060"
+        },
+        {
+            "from": "PubDBlinkId:1896",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/aims2017_report/aims2017_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1901",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/aims/1703/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "47",
+        "number": "5",
+        "pages": "4",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "id": "2003_mcastworkchar",
+    "name": "Wide-Area IP Multicast Traffic Characterization",
+    "datePublished": "2003.1",
+    "description": "\nIP multicast is gaining acceptance among service providers as the protocols and infrastructure mature.\nYet characteristics of multicast traffic remain poorly understood. Using passive OC-12 monitors we observe multicast\ntraffic on links connecting aggregated customers and peer\nnetworks to our native multicast backbone network. We first\nrefine existing traffic flow profiling methodologies via an exploration of temporal differences in multicast packet trains.\nBased on this framework we collect multicast flow traces\nfrom four geographically dispersed nodes in the network\nover a one-month period. We present multicast-specific traffic patterns and characteristics including: packet and flow\nsize distributions, packet duplication, packet fragmentation,\naddress accumulation and address space distributions. We\nalso analyze the distribution of sources per multicast group\nand the implications of our observations on the applicability\nof emerging single-source protocols. Analysis reveals results\ncontrary to prevailing wisdom, including: (i) a preponderance of single-packet flows; (ii) a highly variable packet size\ndistribution, with many large packets and strong modes; (iii) \nthe existence of fragmented multicast traffic; and (iv) an insignificant number of simultaneous multiple-source groups.\nBased on our analysis, we recommend policies for deployment and improvements to protocol implementations.\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper100",
+    "venue": "ieee_network",
+    "authors": [
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)",
+                "Worldcom Advanced Internet Technology"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:64",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/mcastworkchar/mcastworkchar.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Network",
+        "volume": "17 No. 1, Jan-Feb 2003",
+        "number": "",
+        "pages": "8-15",
+        "linkedObjects": ""
+    }
+}

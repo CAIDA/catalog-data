@@ -1,0 +1,49 @@
+{
+    "id": "1995_mism",
+    "name": "Measured interference of security mechanisms with network performance",
+    "datePublished": "1995.6",
+    "description": "We illustrate the measured interference of network security mechanisms\r\nwith network performance. In particular, using encryption, such as that\r\noffered by Kerberos for interactive rlogin sessions, can have a\r\nsignificant adverse impact in situations where lower network layers\r\n(e.g., modems) try to perform compression to optimize transmission\r\nperformance. Such interaction between network layers poses an acute\r\nproblem for low-speed (e.g., dial-up) lines. Although it is no\r\nsurprise that encryption precludes the ability to perform subsequent\r\ncompression, it is worth examining its implication for the recent\r\npopularity of adding network security mechanisms to extant\r\napplications. The example we show is symbolic of a more general issue\r\nin distributed system engineering: if both security and performance are\r\ndesign goals, security cannot be an afterthought without expecting a\r\nsignificant loss in performance. We must thus design security as well\r\nas performance _into_ the architecture, rather than on top of it.\r\n\r\n",
+    "tags": [
+        "security"
+    ],
+    "pubdb_id": "paper164",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:gross_andrew",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:191",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1995/mism/secvsp.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

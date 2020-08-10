@@ -1,0 +1,19 @@
+{
+    "id": "2017_detecting_analyzing_peering_infrastructure_aims",
+    "name": "Detecting and Analyzing Peering Infrastructure Outages",
+    "tags": [
+        "topology",
+        "measurement methodology",
+        "internet outages"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2017.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/detecting_analyzing_peering_infrastructure_aims/detecting_analyzing_peering_infrastructure_aims.pdf"
+    ]
+}

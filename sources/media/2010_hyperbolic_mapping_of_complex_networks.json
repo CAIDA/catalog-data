@@ -1,0 +1,19 @@
+{
+    "id": "2010_mmds_hyperbolic_mapping_complex_networks",
+    "name": "Hyperbolic mapping of complex networks",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "algorithms_for_modern_massive_data_sets_mmds",
+            "date": "2010.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/papers/2010/sustaining_internet_hyperbolic",
+        "https://www.caida.org/publications/presentations/2010/mmds_hyperbolic_mapping_complex_networks/mmds_hyperbolic_mapping_complex_networks.zip"
+    ]
+}

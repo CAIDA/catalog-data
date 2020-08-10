@@ -1,5 +1,6 @@
 {
-    "id": "krishnamurthy_arvind",
-    "nameFirst": "Arvind",
-    "nameLast": "Krishnamurthy"
+    "person": "person:krishnamurthy_arvind",
+    "organization": [
+        "University of Washington"
+    ]
 }

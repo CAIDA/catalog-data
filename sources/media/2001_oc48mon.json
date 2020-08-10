@@ -1,0 +1,18 @@
+{
+    "id": "2001_oc48mon2001",
+    "name": "OC48MON",
+    "tags": [
+        "measurement methodology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "caida",
+            "date": "2001.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/oc48mon2001/index.html"
+    ]
+}

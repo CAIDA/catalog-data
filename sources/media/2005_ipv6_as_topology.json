@@ -1,0 +1,18 @@
+{
+    "id": "2005_caidawide050311_as_topology",
+    "name": "IPv6 AS topology",
+    "tags": [
+        "topology",
+        "ipv6"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "wide",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/caidawide050311_as_topology//workshops/wide/0503/slides/huffaker.pdf"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "2017_ioda_cns",
+    "name": "Internet Outage Detection & Analysis",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "routing",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "center_for_network_systems_cns_research_review",
+            "date": "2017.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/ioda_cns/ioda_cns.pdf",
+        "https://www.caida.org/projects/ioda/"
+    ]
+}

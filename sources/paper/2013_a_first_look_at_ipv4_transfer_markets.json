@@ -1,0 +1,67 @@
+{
+    "id": "2013_first_look_transfer_markets",
+    "name": "A First Look at IPv4 Transfer Markets",
+    "datePublished": "2013.12",
+    "description": "In February 2011 the Internet Assigned Numbers Authority (IANA) exhausted its free pool of IPv4 addresses, and the regional registries (RIRs) have started to run out of IPv4 addresses as well. As RIRs have started rationing allocations, IPv4 transfer markets have emerged as a new mechanism to acquire IPv4 addresses. Barring a few high-profile exceptions, IPv4 transfers have largely flown under the radar. In this work, we use the lists of transfers published by three RIRs to characterize the transfer market - the types of players involved, the sizes and characteristics of transferred address blocks, and the visibility of transferred address blocks in the routing table before and after the transfer. Next, we take first steps toward detecting address transfers using BGP data from the Routeviews and RIPE repositories from 2004-2013. We identify reasons why legitimate changes in prefix origin could be mistakenly inferred to be transfers, and implement a series of 10 filters that remove 86% of candidate transfers. Our results indicate that BGP-based detection of transfers is prone to false positives due to significant noise in BGP data, while some transfers remain undetectable as they involve non-BGP speakers. We describe some additional data sources and analysis techniques that may help reveal an opaque market for IPv4 address block transfers.",
+    "tags": [
+        "economics",
+        "routing",
+        "ipv6"
+    ],
+    "pubdb_id": "paper544",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:livadariu_ioana",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1265",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2535372.2535416"
+        },
+        {
+            "from": "PubDBlinkId:1264",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/first_look_transfer_markets/first_look_transfer_markets.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1393",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2013/first_look_ipv4_transfer_conext/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "7-12 ",
+        "linkedObjects": ""
+    }
+}

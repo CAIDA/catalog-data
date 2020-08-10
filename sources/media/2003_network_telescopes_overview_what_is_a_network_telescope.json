@@ -1,0 +1,20 @@
+{
+    "id": "2003_lisa_telescope03",
+    "name": "Network Telescopes Overview: What is a Network Telescope?",
+    "tags": [
+        "network telescope",
+        "security",
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "2003.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/lisa_telescope03/lisa_telescope03.pdf"
+    ]
+}

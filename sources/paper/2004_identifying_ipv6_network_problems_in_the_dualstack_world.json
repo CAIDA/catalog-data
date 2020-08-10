@@ -1,0 +1,59 @@
+{
+    "id": "2004_dualstack",
+    "name": "Identifying IPv6 Network Problems in the Dual-Stack World",
+    "datePublished": "2004.9",
+    "description": "One of the major hurdles limiting IPv6 adoption is the existence\r\nof poorly managed experimental IPv6 sites that negatively\r\naffect the perceived quality of the IPv6 Internet. To\r\nassist network operators in improving IPv6 networks, we are\r\nexploring methods to identify wide-area IPv6 network problems.\r\nOur approach makes use of parallel IPv4 and IPv6\r\nconnectivity to dual-stacked nodes.\r\n\r\nWe identify the existence of an IPv6 path problem by\r\ncomparing IPv6 delay measurements to IPv4 delay measurements.\r\nOur test results indicate that the majority of\r\nIPv6 paths have delay characteristics comparable to those\r\nof IPv4, although a small number of paths exhibit a much\r\nlarger delay with IPv6. Thus, we hope to improve the quality\r\nof the IPv6 Internet by identifying the worst set of problems.\r\n\r\nOur methodology is simple. We create a list of systems\r\nwith IPv6 and IPv4 addresses in actual use by monitoring\r\nDNS messages. We then measure delay to each address in order\r\nto select a few systems per site based on their IPv6:IPv4\r\nresponse-time ratios. Finally, we run traceroute with Path\r\nMTU discovery to the selected systems and then visualize\r\nthe results for comparative path analysis. This paper\r\npresents the tools used to support this study, and the results\r\nof our measurements conducted from two locations in\r\nJapan and one in Spain.\r\n",
+    "tags": [
+        "dns",
+        "ipv6",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper74",
+    "venue": "acm_sigcomm_network_troubleshooting_workshop",
+    "authors": [
+        {
+            "person": "person:cho_kenjiro",
+            "organization": [
+                "Sony Computer Science Labs, Inc.",
+                "WIDE Project"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego",
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:466",
+            "label": "gzipped postscript",
+            "to": "dualstack.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:465",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/dualstack/dualstack.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Network Troubleshooting Workshop",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "283-288",
+        "linkedObjects": ""
+    }
+}

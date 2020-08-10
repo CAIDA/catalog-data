@@ -1,0 +1,18 @@
+{
+    "id": "2015_bgp_hackathon_imc",
+    "name": "BGP Hackathon",
+    "tags": [
+        "routing",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2015.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/bgp_hackathon_imc/bgp_hackathon_imc.pdf"
+    ]
+}

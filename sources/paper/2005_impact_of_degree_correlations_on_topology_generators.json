@@ -1,0 +1,61 @@
+{
+    "id": "2005_impactdegcorr",
+    "name": "Impact of Degree Correlations on Topology Generators",
+    "datePublished": "2005.8",
+    "description": "Internet topology analysis has attracted a lot of attention in recent years, since its relationship to a variety of networking technologies and phenomena is not only fundamental but generally poorly understood. Performance of applications and protocols, especially routing protocols, robustness of the network under attack, traffic engineering, etc., depend crucially on the topology of the network. In this work we focus on two cornerstones of Internet topology research: 1) knowledge of realistic network topologies; and 2) availability of tools to generate them. ",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper56",
+    "venue": "acm_sigcomm_poster",
+    "authors": [
+        {
+            "person": "person:mahadevan_priya",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:356",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/impactdegcorr/impactdegcorr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Poster",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

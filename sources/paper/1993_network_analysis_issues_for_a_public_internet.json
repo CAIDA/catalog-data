@@ -1,0 +1,43 @@
+{
+    "id": "1993_naip",
+    "name": "Network analysis issues for a public Internet",
+    "datePublished": "1993.5",
+    "description": "\n\nWhile initially conceived as a dedicated communications facility for\nthe United States federal government, today's Internet aggregates\ntraffic from among a far wider set of constituencies. Pooling resources\nof so many constituents into a massively interconnected environment\nraises the issue of resource and cost allocation. In this paper we\ndescribe the importance of network analysis in support of resource\nattribution and evaluate a number of examples. We offer evidence to\nsupport our hypothesis that, in the face of the current evolution of\nglobal information infrastructure, vastly expanding both in ubiquity\nand sophistication of applications, Internet policy considerations and\nnetwork analysis must begin to interact in ways not previously\nrecognized or implemented. In particular, as the scale of, access to,\nand commercialization of the Internet broadens, cost allocation among\n(even globally) shared resources will require the development of new\naccounting and billing models to accommodate the wide range of players\nand services.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper175",
+    "venue": "public_access_to_the_internet_a_harvard_jfk_school_workshop",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:101",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/naip/public.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Public Access to the Internet, A Harvard JFK School Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

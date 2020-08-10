@@ -1,0 +1,49 @@
+{
+    "id": "2005_flowest",
+    "name": "A Robust System for Accurate Real-time Summaries of Internet Traffic",
+    "datePublished": "2005.6",
+    "description": "Good performance under extreme workloads and isolation between the resource consumption of concurrent jobs are perennial design goals of computer systems ranging from multitasking servers to network routers. In this paper we present a specialized system that computes multiple summaries of IP traffic in real time and achieves robustness and isolation between tasks in a novel way: by automatically adapting the parameters of the summarization algorithms. In traditional systems, anomalous network behavior such as denial of service attacks or worms can overwhelm the memory or CPU, making the system produce meaningless results exactly when measurement is needed most. In contrast, our measurement system reacts by gracefully degrading the accuracy of the affected summaries.\r\n\r\nThe types of summaries we compute are widely used by network administrators monitoring the workloads of their networks: the ports sending the most traffic, the IP addresses sending or receiving the most traffic or opening the most connections, etc. We evaluate and compare many existing algorithmic solutions for computing these summaries, as well as two new solutions we propose here: \"flow sample and hold\" and \"Bloom filter tuple set counting\". Compared to previous solutions, these new solutions offer better memory versus accuracy tradeoffs and have more predictable resource consumption. Finally, we evaluate the actual implementation of a complete system that combines the best of these algorithms.\r\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper59",
+    "venue": "sigmetrics",
+    "authors": [
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:estan_cristian",
+            "organization": [
+                "Computer Sciences Department, University of Wisconsin-Madison"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:446",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/flowest/flowest-sigmetrics0505.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "SIGMETRICS",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "85-96",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2011_analysis_internet_outages_censorship",
+    "name": "Analysis of Country-wide Internet Outages Caused by Censorship",
+    "tags": [
+        "security",
+        "policy",
+        "routing",
+        "passive data analysis",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2011.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/analysis_internet_outages_censorship/analysis_internet_outages_censorship.pdf",
+        "https://www.caida.org/publications/papers/2011/outages_censorship"
+    ]
+}

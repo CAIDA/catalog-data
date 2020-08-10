@@ -1,0 +1,23 @@
+{
+    "id": "2006_dns_root_traffic_iepg",
+    "name": "DNS root traffic: how do anycast instances behave?",
+    "tags": [
+        "dns",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "dns_rssac_meeting",
+            "date": "2006.3"
+        },
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "internet_engineering_and_planning_group_iepg",
+            "date": "2006.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/dns_root_traffic_iepg/dns_root_traffic_iepg.pdf"
+    ]
+}

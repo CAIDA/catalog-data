@@ -1,0 +1,50 @@
+{
+    "id": "1999_otter",
+    "name": "Otter: A general-purpose network visualization tool",
+    "datePublished": "1999.6",
+    "description": "Otter is a new CAIDA tool for visualizing arbitrary network data that\r\ncan be expressed as a set of nodes, links or paths. We developed Otter\r\nto handle visualization tasks for a wide variety of Internet data we\r\ndeal with in our research, including data sets on topology, workload,\r\nperformance, and routing. We have used Otter to visualize: multicast\r\nand unicast topology databases, core BGP routing tables, reachability\r\nand delay measurements, SNMP data, and web site directory structures.\r\nOtter's strength is in its data independence: it can handle any\r\nformatted data set consisting of links and nodes.\r\n\r\nOtter achieves its versatility in what data it can process by using a\r\ndata format specification prepended to each input file. This\r\nspecification stipulates attributes of each object in the data file,\r\nwhich Otter uses to tailor its visualizations and even adapt its user\r\ninterface to a specific data domain. We describe and provide examples\r\nof Otter's visualization features, how it achieves data independence,\r\npresent case studies of Otter's utility in practice, and outline\r\npossible future directions for Otter.\r\n\r\n",
+    "tags": [
+        "software/tools",
+        "visualization"
+    ],
+    "pubdb_id": "paper141",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:460",
+            "label": "HTML",
+            "to": "otter.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

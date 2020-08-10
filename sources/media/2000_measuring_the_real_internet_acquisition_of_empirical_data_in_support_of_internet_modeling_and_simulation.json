@@ -1,0 +1,19 @@
+{
+    "id": "2000_nmsdata",
+    "name": "measuring the 'real' Internet: acquisition of empirical data in support of Internet modeling and simulation",
+    "tags": [
+        "data",
+        "overview",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "caida",
+            "date": "2000.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/nmsdata/index.html"
+    ]
+}

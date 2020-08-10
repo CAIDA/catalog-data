@@ -1,0 +1,18 @@
+{
+    "id": "2016_interactive_access_internet_topology_gateways",
+    "name": "Interactive Access to Internet Topology Data",
+    "tags": [
+        "software/tools",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "gateways_conference",
+            "date": "2016.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/interactive_access_internet_topology_gateways/interactive_access_internet_topology_gateways.pdf"
+    ]
+}

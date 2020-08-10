@@ -1,0 +1,17 @@
+{
+    "id": "2001_bwestdb",
+    "name": "WAN Bandwidth Estimation",
+    "tags": [
+        "bandwidth estimation"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Masini, Stefano",
+            "venue": "caida",
+            "date": "2001.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/bwestdb/index.html"
+    ]
+}

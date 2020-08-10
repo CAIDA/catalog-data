@@ -1,0 +1,73 @@
+{
+    "id": "2015_ipv6_as_relationships",
+    "name": "IPv6 AS Relationships, Cliques, and Congruence",
+    "datePublished": "2015.3",
+    "description": "There is increasing evidence that IPv6 deployment is maturing as a response to the exhaustion of unallocated IPv4 address blocks, leading to gradual convergence of the IPv4 and IPv6 topologies in terms of structure and routing paths. However, the lack of a fully-connected\r\ntransit-free clique in IPv6, as well as a different economic evolution than IPv4, implies that existing IPv4 AS relationship algorithms will not accurately infer relationships between autonomous systems in IPv6, encumbering our ability to model and understand IPv6 AS topology evolution. We modify CAIDA\u201bs IPv4 relationship inference algorithm to accurately infer IPv6 relationships using publicly available BGP data. We validate 24.9% of our 41,589 c2p and p2p inferences for July 2014 to have a 99.3% and 94.5% PPV, respectively. Using these inferred relationships, we analyze the BGP-observed IPv4 and IPv6 AS topologies, and find that ASes are converging toward the same relationship types in IPv4 and IPv6, but disparities remain due to differences in the transit-free clique and the influence of Hurricane Electric in IPv6.",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology",
+        "ipv6"
+    ],
+    "pubdb_id": "paper571",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1590",
+            "label": "Data Supplement",
+            "to": "http://data.caida.org/datasets/2015-asrank6-data-supplement"
+        },
+        {
+            "from": "PubDBlinkId:2146",
+            "label": "DOI",
+            "to": "https://doi.org/10.1007/978-3-319-15509-8_9"
+        },
+        {
+            "from": "PubDBlinkId:1589",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/ipv6_as_relationships/ipv6_as_relationships.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1595",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2015/ipv6_as_relationships_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM) ",
+        "institution": " test",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "111-122",
+        "linkedObjects": ""
+    }
+}

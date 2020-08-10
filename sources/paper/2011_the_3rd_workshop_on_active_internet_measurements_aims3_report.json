@@ -1,0 +1,44 @@
+{
+    "id": "2011_aims_report",
+    "name": "The 3rd Workshop on Active Internet Measurements (AIMS-3) Report",
+    "datePublished": "2011.7",
+    "description": "On February 10-12, 2011, CAIDA hosted the third Workshop on Active Internet Measurements (AIMS-3) as part of our series of Internet Statistics and Metrics Analysis (ISMA) workshops. As with the previous two AIMS workshops, the goals were to further our understanding of the potential and limitations of active measurement research and infrastructure in the wide-area Internet, and to promote cooperative solutions and coordinated strategies to address future data needs of the network and security research communities. For three years, the workshop has fostered interdisciplinary conversation among researchers, operators, and government, focused on analysis of goals, means, and emerging issues in active Internet measurement projects. The first workshop emphasized discussion of existing hardware and software platforms for macroscopic measurement and mapping of Internet properties, in particular those related to cybersecurity. The second workshop included more performance evaluation and data-sharing approaches. This year we expanded the workshop agenda to include active measurement topics of more recent interest: broadband performance; gauging IPv6 deployment; and measurement activities in international research networks.'' Final Report of the ISMA 2010 AIMS-3 Workshop on Active Internet Measurements in La Jolla, California, February 2011.",
+    "tags": [
+        "measurement methodology",
+        "workshop report",
+        "ipv6"
+    ],
+    "pubdb_id": "paper480",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:748",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/aims_report/aims_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1404",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/isma/1102/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "41",
+        "number": "3",
+        "pages": "37-42",
+        "linkedObjects": ""
+    }
+}

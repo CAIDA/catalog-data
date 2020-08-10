@@ -1,0 +1,65 @@
+{
+    "id": "2004_diversity",
+    "name": "Their share: diversity and disparity in IP traffic",
+    "datePublished": "2004.4",
+    "description": "The need to service populations of high diversity in the face\nof high disparity affects all aspects of network operation: planning, routing, \nengineering, security, and accounting. We analyze diversity/disparity\nfrom the perspective of selecting a boundary between mice and elephants\nin IP traffic aggregated by route, e.g., destination AS. Our goal is to find\na concise quantifier of size disparity for IP addresses, prefixes, policy\natoms and ASes, similar to the oft-quoted 80/20 split (e.g., 80% of volume \nin 20% of sources). We define crossover as the fraction c of total\nvolume contributed by a complementary fraction 1 - c of large objects.\nStudying sources and sinks at two Tier 1 backbones and one university,\nwe find that splits of 90/10 and 95/5 are common for IP traffic. We\ncompare the crossover diversity to common analytic models for size distributions \nsuch as Pareto/Zipf. We find that AS traffic volumes (by byte)\nare top-heavy and can only be approximated by Pareto with alpha = 0.5,\nand that empirical distributions are often close to Weibull with shape\nparameter 0.2-0.3. We also find that less than 20 ASes send or receive\n50% of all traffic in both backbones' samples, a disparity that can simplify \ntraffic engineering. Our results are useful for developers of traffic\nmodels, generators and simulators, for router testers and operators of\nhigh-speed networks.'' Support for this work is provided by DARPA NMS (N66001-01-1-8909), DOE Contract No: DE-FC02-01ER 25466, and by NSF ANI-0221172, with support from the DHS/NCS.",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper85",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:gao_ruomei",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:312",
+            "label": "gzipped postscript",
+            "to": "diversity.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:313",
+            "label": "html",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:311",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/diversity/diversity.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "113-125",
+        "linkedObjects": ""
+    }
+}

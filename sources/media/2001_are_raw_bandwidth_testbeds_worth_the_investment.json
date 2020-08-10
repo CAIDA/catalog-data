@@ -1,0 +1,18 @@
+{
+    "id": "2001_extreme0001",
+    "name": "are raw bandwidth testbeds worth the investment?",
+    "tags": [
+        "measurement methodology",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Mathis, Matt",
+            "venue": "extreme_networking",
+            "date": "2001.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/extreme0001/index.html"
+    ]
+}

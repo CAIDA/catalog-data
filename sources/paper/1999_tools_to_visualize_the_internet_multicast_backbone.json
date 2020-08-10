@@ -1,0 +1,50 @@
+{
+    "id": "1999_manta",
+    "name": "Tools to visualize the Internet multicast backbone",
+    "datePublished": "1999.6",
+    "description": "For the last several years, the Internet multicast backbone has been a growing part of the Internet infrastructure, and of strategic interest to the network research community experimenting with\r\nmulticast technologies. In particular, the MBONE has been a deployment testbed for scalable distribution of group audio and video streams. Rapid growth in topology and traffic volume of the\r\nmulticast infrastructure has brought inevitable scaling problems, not the least of which is the increased negative impact incurred by accidental misconfiguration of MBONE nodes. In pursuit of\r\ninsight into the MBONE topology, its growth characteristics, and the extent of the transition from the tunnel-based architecture to the deployment of native multicast, we developed and applied\r\nvisualization tools to the database of connectivity information collected with the mwatch [MWAT] utility from University College London. We have used two separate visualization tools for this\r\ntask: MantaRay [MANTA], for geographic-map based depiction of MBONE data collected by mrinfo queries; and otter [OTTER], for topological visualizations of the same data. \r\n\r\nMantaRay and Otter are part of the fleet of tools from the Cooperative Association for Internet Data Analysis (CAIDA) for visualizing various sets of Internet data. Both tools are Java-based\r\nand allow users to select parts of the data, focus or zoom in on particular areas, color by various parameters, and generally explore multicast topologies. \r\n\r\n",
+    "tags": [
+        "software/tools",
+        "visualization"
+    ],
+    "pubdb_id": "paper140",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:462",
+            "label": "HTML",
+            "to": "manta.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

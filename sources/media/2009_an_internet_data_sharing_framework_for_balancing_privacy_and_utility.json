@@ -1,0 +1,20 @@
+{
+    "id": "2009_engaging_data",
+    "name": "An Internet Data Sharing Framework For Balancing Privacy and Utility",
+    "tags": [
+        "policy",
+        "measurement methodology",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "engaging_data_first_international_forum_on_the_application_and_management_of_personal_electronic_information",
+            "date": "2009.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/engaging_data/engaging_data.pdf",
+        "https://www.caida.org/publications/papers/2009/engaging_data"
+    ]
+}

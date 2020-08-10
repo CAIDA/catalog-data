@@ -1,0 +1,61 @@
+{
+    "id": "2009_greedy_forwarding_embedded",
+    "name": "Greedy Forwarding in Scale-Free Networks Embedded in Hyperbolic Metric Spaces",
+    "datePublished": "2009.9",
+    "description": "Routing information is the most basic and, perhaps, the most complicated function that networks perform. Conventional wisdom states that to find paths to destinations through the complex network maze, nodes must communicate and exchange information about the status of their connections to other nodes. This communication overhead is considered one of the most serious scaling limitations of our primary communication technologies today, including the Internet and emerging wireless and sensor networks.\r\n\r\nIn many other networks in nature however, nodes can efficiently communicate, even though they do not exchange any information about the current global state of the network topology. Milgram's 1969 experiments showed a classic demonstration of this surprising effect: humans can find paths to destinations through their social acquaintance network, even though no human has global knowledge of its structure. Much later, Jon Kleinberg offered the first popular explanation. In his model, each node, in addition to being a part of the graph representing the global network topology, resides in a coordinate space - a grid embedded in the Euclidean plane. The coordinates of a node in the plane, its address, abstracts the information about the destination in Milgram's experiments. Each node knows:\r\n\r\n1. its coordinates;\r\n2. the coordinates of its neighbors; and\r\n3. the coordinates of the destination written on the packet. Given these three pieces of information, the node can route greedily by selecting its direct neighbor closest to the destination in the plane.\r\n\r\nClearly, the described greedy forwarding strategy can be efficient only if the network topology is in some way congruent with the underlying space. Therefore, the Kleinberg model stands closer to the beginning of an explanation for Milgram's experiment than to its end. The model does not (try to) reproduce the basic topological properties of social networks through which messages were traveling in Milgram's experiments. For instance, the Kleinberg model produces only k-regular graphs while social networks, the Internet, and many other complex networks are known to be scale-free, meaning that:\r\n\r\n1. the distribution P(k) of node degrees k in a network follows power laws P(k) ~ k^y with exponent y often lying between 2 and 3; and\r\n2. the network has strong clustering, i.e., a large number of triangular subgraphs.\r\n\r\nOur work follows Kleinberg's formalism. We assume that nodes in the Internet and other complex networks exist in some spaces that underlie the observed network topologies. We call these spaces hidden metric spaces. The observed network topology is coupled to the hidden space geometry in the following way: a link between two nodes in the topology exists with a certain probability that depends on the distance between two nodes in the hidden geometry. One possible and plausible explanation for the Kleinberg model's inability to naturally produce scale-free topologies is that the spaces hidden beneath the Internet and other real networks are not Euclidean planes. The main results of our work is that if we model hidden spaces as non-Euclidean hyperbolic spaces, then their negative curvature leads to:\r\n\r\n1. natural emergence of scale-free topologies constructed over such hidden spaces; and\r\n2. extremely efficient greedy forwarding on these topologies, achieving almost 100% reachability and optimal (i.e., shortest) path lengths, even under dynamic network conditions.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper15",
+    "venue": "acm_sigmetrics_performance_evaluation_review",
+    "authors": [
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:431",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/greedy_forwarding_embedded/greedy_forwarding_embedded.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1566",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2009/mama_greedy_forwarding/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "ACM SIGMETRICS Performance Evaluation Review",
+        "volume": "37",
+        "number": "2",
+        "pages": "15-17",
+        "linkedObjects": ""
+    }
+}

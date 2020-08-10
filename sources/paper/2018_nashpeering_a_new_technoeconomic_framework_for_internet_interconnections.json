@@ -1,0 +1,63 @@
+{
+    "id": "2018_nash_peering",
+    "name": "Nash-Peering: A New Techno-Economic Framework for Internet Interconnections",
+    "datePublished": "2018.4",
+    "description": "The current framework of Internet interconnections, based on transit and settlement-free peering relations, has systemic problems that often cause peering disputes. Repeated high-profile incidents show that this unfortunate state of affairs stands in the way of better Internet performance, sometimes even leading to large-scale Internet outages. We propose a new techno-economic interconnection framework called Nash- Peering, which is based on the principles of Nash Bargaining in game theory and economics. Nash-Peering constitutes a radical departure from current interconnection practices, providing a broader and more economically efficient set of interdomain relations. In particular, the direction of payment is not determined by the direction of traffic or by rigid customer-provider relationships but based on which AS benefits more from the interconnection. We argue that Nash-Peering can address the root cause of various types of peering disputes.",
+    "tags": [
+        "economics",
+        "policy",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper667",
+    "venue": "ieee_global_internet_symposium_gi",
+    "authors": [
+        {
+            "person": "person:zarchy_doron",
+            "organization": [
+                "Hebrew University of Jerusalem"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:schapira_michael",
+            "organization": [
+                "Hebrew University of Jerusalem"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2073",
+            "label": "DOI",
+            "to": "https://doi.org/10.1109/INFCOMW.2018.8406865"
+        },
+        {
+            "from": "PubDBlinkId:2072",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/nash_peering/nash_peering.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Global Internet Symposium (GI)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

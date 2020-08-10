@@ -1,0 +1,20 @@
+{
+    "id": "2003_internetworking03",
+    "name": "Atom-based Routing",
+    "tags": [
+        "routing",
+        "topology",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Verkaik, Patrick",
+            "venue": "internetworking",
+            "date": "2003.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/internetworking03/atoms.internetworking03.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/internetworking03/atoms.internetworking03.pdf"
+    ]
+}

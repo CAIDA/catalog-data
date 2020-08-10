@@ -1,0 +1,22 @@
+{
+    "id": "2015_mapping_internet_interdomain_congestion_aims",
+    "name": "Mapping Internet Interdomain Congestion",
+    "tags": [
+        "topology",
+        "policy",
+        "measurement methodology",
+        "data",
+        "active data analysis",
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/mapping_internet_interdomain_congestion_aims/mapping_internet_interdomain_congestion_aims.pdf"
+    ]
+}

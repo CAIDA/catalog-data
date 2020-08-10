@@ -1,0 +1,18 @@
+{
+    "id": "2009_netmap",
+    "name": "netmap: the mini-Ark project",
+    "tags": [
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "widecasfi",
+            "date": "2009.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/netmap/netmap.pdf"
+    ]
+}

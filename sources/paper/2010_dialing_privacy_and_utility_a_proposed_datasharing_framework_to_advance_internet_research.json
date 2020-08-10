@@ -1,0 +1,46 @@
+{
+    "id": "2010_dialing_privacy_utility",
+    "name": "Dialing privacy and utility: a proposed data-sharing framework to advance Internet research ",
+    "datePublished": "2010.7",
+    "description": "We re-visit the common assumption that privacy risks of\r\nsharing Internet infrastructure data outweigh the benefits,\r\nand suggest that we have a window of opportunity in which\r\nto apply methods for undertaking empirical Internet research\r\nthat can lower privacy risks while achieving research utility.\r\nThe current default, defensive posture to not share network\r\ndata derives from the purgatory formed by the gaps in regulation and law, commercial pressures, and evolving considerations of both threat models and ethical behavior. We\r\npropose a mechanism for moving the Internet research stakeholder community beyond the relatively siloed, below-the-radar data sharing practices and into a more reputable and\r\npervasive scientific discipline, by self-regulating through a\r\ntransparent and repeatable sharing framework.\r\n",
+    "tags": [
+        "policy",
+        "trends",
+        "overview",
+        "data sharing"
+    ],
+    "pubdb_id": "paper2",
+    "venue": "ieee_security_privacy",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/dialing_privacy_utility/dialing_privacy_utility.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Security & Privacy",
+        "volume": "8",
+        "number": "4",
+        "pages": "31-39",
+        "linkedObjects": ""
+    }
+}

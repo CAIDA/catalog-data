@@ -1,0 +1,27 @@
+{
+    "id": "2012_micdhs_caida_overview",
+    "name": "CAIDA Research Overview",
+    "tags": [
+        "overview",
+        "measurement methodology",
+        "data",
+        "security",
+        "network telescope",
+        "trends",
+        "routing",
+        "topology",
+        "trends",
+        "policy",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "micdhs_meeting_for_cyber_security_cooperation",
+            "date": "2012.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/micdhs_caida_overview/micdhs_caida_overview.pdf"
+    ]
+}

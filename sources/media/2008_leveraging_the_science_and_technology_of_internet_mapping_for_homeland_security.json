@@ -1,0 +1,18 @@
+{
+    "id": "2008_internet_mapping_security",
+    "name": "Leveraging the Science and Technology of Internet Mapping for Homeland Security",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_cybersecurity_pi_meeting",
+            "date": "2008.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/internet_mapping_security/internet_mapping_security.pdf",
+        "https://www.caida.org/publications/papers/2009/internet_mapping"
+    ]
+}

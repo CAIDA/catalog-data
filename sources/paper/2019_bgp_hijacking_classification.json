@@ -1,0 +1,68 @@
+{
+    "id": "2019_bgp_hijacking_classification",
+    "name": "BGP Hijacking Classification",
+    "datePublished": "2019.6",
+    "description": "Recent reports show that BGP hijacking has increased substantially. BGP hijacking allows malicious ASes to obtain IP prefixes for spamming as well as intercepting or blackholing traffic. While systems to prevent hijacks are hard to deploy and require the cooperation of many other organizations, techniques to detect hijacks have been a popular area of study. In this paper, we classify detected hijack events in order to document BGP detectors output and understand the nature of reported events. We introduce four categories of BGP hijack: typos, prepending mistakes, origin changes, and forged AS paths. We leverage AS hegemony \u2013 a measure of dependency in AS relationship \u2013 to identify forged AS paths in a fast and efficient way. Besides, we utilize heuristic approaches to find common operators\u2019 mistakes such as typos and AS prepending mistakes. The proposed approach classifies our collected ground truth into four categories with 95.71% accuracy. We characterize publicly reported alarms (e.g. BGPMon) with our trained classifier and find 4%, 1%, and 2% of typos, prepend mistakes, and BGP hijacking with a forged AS path, respectively.",
+    "tags": [
+        "routing",
+        "security",
+        "topology"
+    ],
+    "pubdb_id": "paper677",
+    "venue": "network_traffic_measurement_and_analysis_conference_tma",
+    "authors": [
+        {
+            "person": "person:cho_shinyoung",
+            "organization": [
+                "Stony Brook University"
+            ]
+        },
+        {
+            "person": "person:fontugne_romain",
+            "organization": [
+                "IIJ Research Lab"
+            ]
+        },
+        {
+            "person": "person:cho_kenjiro",
+            "organization": [
+                "IIJ Research Lab"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:gill_phillipa",
+            "organization": [
+                "UMass Amherst"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2238",
+            "label": "DOI",
+            "to": "https://doi.org/10.23919/TMA.2019.8784511"
+        },
+        {
+            "from": "PubDBlinkId:2126",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/bgp_hijacking_classification/bgp_hijacking_classification.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Network Traffic Measurement and Analysis Conference (TMA)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

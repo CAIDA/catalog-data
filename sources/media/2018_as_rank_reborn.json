@@ -1,0 +1,31 @@
+{
+    "id": "2018_asrank_reborn",
+    "name": "AS Rank Reborn",
+    "tags": [
+        "topology",
+        "visualization",
+        "software/tools",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "uc_san_diego",
+            "date": "2018.3"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_measurement_and_political_science_workshop_imaps",
+            "date": "2018.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/asrank_reborn/asrank_reborn.pdf",
+        "http://asrank.caida.org/"
+    ]
+}

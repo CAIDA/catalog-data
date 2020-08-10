@@ -1,0 +1,43 @@
+{
+    "id": "1995_pnsc",
+    "name": "Post-NSFNET statistics collection",
+    "datePublished": "1995.6",
+    "description": "As the NSFNET backbone service migrates into a commercial environment,\r\nso will access to the only set of publicly available statistics for a\r\nlarge national U.S. backbone. The transition to the new NSFNET\r\nprogram, with commercially operated services providing both regional\r\nservice as well as cross-service provider switching points, or Network\r\nAccess Points (NAPs), will render statistics collection a much more\r\ndifficult endeavor. In this paper we discuss issues and complexities of\r\nstatistics collection at recently deployed global network access points\r\nsuch as the U.S. federal NAPs.\r\n\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper162",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:98",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1995/pnsc/postns.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2017_bgpstream_openbmp_cisco",
+    "name": "BGPStream and OpenBMP",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "software/tools",
+        "topology",
+        "security",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "cisco",
+            "date": "2017.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/bgpstream_openbmp_cisco/bgpstream_openbmp_cisco.pdf",
+        "https://www.caida.org/publications/papers/2016/bgpstream/"
+    ]
+}

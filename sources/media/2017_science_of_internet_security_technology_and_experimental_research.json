@@ -1,0 +1,22 @@
+{
+    "id": "2017_sister_pi_jan",
+    "name": "Science of Internet Security: Technology and Experimental Research",
+    "tags": [
+        "internet outages",
+        "security",
+        "topology",
+        "routing",
+        "active data analysis",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_imam_mid_term_meeting",
+            "date": "2017.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/sister_pi_jan/sister_pi_jan.pdf"
+    ]
+}

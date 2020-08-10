@@ -1,0 +1,20 @@
+{
+    "id": "2012_irnc_data_sharing_case_study",
+    "name": "CAIDA: A Data Sharing Case Study",
+    "tags": [
+        "overview",
+        "policy",
+        "data",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Polterock, Joshua",
+            "venue": "security_at_the_cyber_border_exploring_cybersecurity_for_international_research_network_connections",
+            "date": "2012.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/irnc_data_sharing_case_study/irnc_data_sharing_case_study.pdf"
+    ]
+}

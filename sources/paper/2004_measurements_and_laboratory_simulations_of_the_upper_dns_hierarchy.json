@@ -1,0 +1,61 @@
+{
+    "id": "2004_dnspam",
+    "name": "Measurements and Laboratory Simulations of the Upper DNS Hierarchy",
+    "datePublished": "2004.4",
+    "description": "\nGiven that the global DNS system, especially at the higher root and top-levels, experiences significant query loads, we seek to answer the following questions: (1) How does the choice of DNS caching software for local resolvers affect query load at the higher levels? (2) How do DNS caching implementations spread the query load among a set of higher level DNS servers? To answer these questions we did case studies of workday DNS traffic at the University of California San Diego (USA), the University of Auckland (New Zealand), and the University of Colorado at Boulder (USA). We also tested various DNS caching implementations in fully controlled laboratory experiments. This paper presents the results of our analysis of real and simulated DNS traffic. We make recommendations to network administrators and software developers aimed at improving the overall DNS system.\n",
+    "tags": [
+        "dns",
+        "caching"
+    ],
+    "pubdb_id": "paper83",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:47",
+            "label": "gzipped postscript",
+            "to": "dnspam.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:48",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/dnspam/dnspam.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "147-157",
+        "linkedObjects": ""
+    }
+}

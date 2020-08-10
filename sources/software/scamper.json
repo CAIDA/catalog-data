@@ -4,12 +4,13 @@
     "organization": "CAIDA",
     "description": "IPv6 and IPv4 active traceroute probing and ping.",
     "tags": [
-        "topology"
+        "topology",
+        "performance measurement"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.caida.org/tools/measurement/scamper/",
             "tags": []
         }
     ],
@@ -18,11 +19,83 @@
     ],
     "links": [
         {
-            "to": "dataset:Macroscopic_Topology_Measurements",
+            "to": "dataset:macroscopic_topology_measurements",
             "label": "used by"
         },
         {
-            "to": "dataset:the_IPv4_Routed_24_Topology_Dataset",
+            "to": "dataset:the_ipv4_routed_24_topology_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "label": "used by"
+        },
+        {
+            "to": "paper:learning_to_extract_router_names_from_hostnames",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_impact_router_outages_as",
+            "label": "used by"
+        },
+        {
+            "to": "paper:bdrmap_inference_of_borders_between_ip_networks",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_dont_forget_lock",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_resilience_deployed_tcp_blind",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_resilience_deployed_tcp_blind",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_challenges_inferring_interdomain_congestion",
+            "label": "used by"
+        },
+        {
+            "to": "paper:speedtrap_internet_scale_ipv6_alias_resolution",
+            "label": "used by"
+        },
+        {
+            "to": "paper:measuring_the_deployment_of_ipv6_topology_routing_and_performance",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2012_revealing_mpls_tunnels",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2011_crooked_traceroute",
+            "label": "used by"
+        },
+        {
+            "to": "paper:measuring_path_mtu_discovery_behaviour",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2008_traceroute_probe_method",
+            "label": "used by"
+        },
+        {
+            "to": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2004_dualstack",
+            "label": "used by"
+        },
+        {
+            "to": "media:2020_scamper_routeviews_kismet",
             "label": "used by"
         }
     ]

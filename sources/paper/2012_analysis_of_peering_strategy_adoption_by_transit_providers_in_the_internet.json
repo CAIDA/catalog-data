@@ -1,0 +1,55 @@
+{
+    "id": "2012_analysis_peering_strategy_adoption",
+    "name": "Analysis of peering strategy adoption by transit providers in the Internet",
+    "datePublished": "2012.3",
+    "description": "The Internet is a complex and dynamic interconnection of about 40,000 Autonomous Systems (ASes). A link in this context represents a business agreement between the corresponding two ASes that they can exchange traffic under various policy and capacity constraints. Each AS X follows a peering strategy (or \u201fpeering policy\u201c) that is used to determine whether X will accept to peer with another AS Y. Even though they vary in their details, most peering policies can be grouped in three distinct classes: Restrictive (X peers only if necessary to avoid Internet partitioning; typically used by Tier-1 transit providers), Selective (X peers only with ASes that have comparable traffic volume), and Open (X is willing to peer with everyone, except its customers). The conventional wisdom is that transit providers use Restrictive or Selective peering, so that they can engage other ASes as their customers, and thus increase their transit revenues. In the last few years, however, there is evidence that an increasing fraction of the interdomain traffic flows through peering links between content providers (or CDNs) and access providers that serve end users. A major fraction of the Internet\u201bs traffic thus bypasses intermediate transit providers, and flows directly from producers to consumers. So, a question that motivated this study is: How are transit providers reacting to the previous peering trend?",
+    "tags": [
+        "economics",
+        "topology"
+    ],
+    "pubdb_id": "paper557",
+    "venue": "netecon",
+    "authors": [
+        {
+            "person": "person:lodhi_aemen",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1364",
+            "label": "PDF (abstract only)",
+            "to": "analysis_peering_strategy_adoption.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1551",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/analysis_peering_strategy_simula/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "NetEcon",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "217",
+        "linkedObjects": ""
+    }
+}

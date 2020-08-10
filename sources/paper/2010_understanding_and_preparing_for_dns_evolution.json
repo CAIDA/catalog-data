@@ -1,0 +1,77 @@
+{
+    "id": "2010_understanding_dns_evolution",
+    "name": "Understanding and preparing for DNS evolution ",
+    "datePublished": "2010.4",
+    "description": "The Domain Name System (DNS) is a crucial component of today.s Internet. The top layer of the DNS hierarchy (the root name- servers) is facing dramatic changes: cryptographically signing the root zone with DNSSEC, deploying Internationalized Top-Level Domain (TLD) Names (IDNs), and addition of other new global Top Level Domains (TLDs). ICANN has stated plans to deploy all of these changes in the next year or two, and there is growing interest in measurement, testing, and provisioning for foreseen (or unforeseen) complications. We describe the Day-in-the-Life annual datasets available to characterize workload at the root servers, and we provide some analysis of the last several years of these datasets as a baseline for operational preparation, additional research, and informed policy. We confirm some trends from previous years, including the low fraction of clients (0.55% in 2009) still generating most misconfigured \"pollution\", which constitutes the vast majority of observed queries to the root servers. We present new results on security-related attributes of the client population: an increase in the prevalence of DNS source port randomization, a short-term measure to improve DNS security; and a surprising decreasing trend in the fraction of DNSSEC-capable clients. Our insights on IPv6 data are limited to the nodes who collected IPv6 traffic, which does show growth. These statistics serve as a baseline for the impending transition to DNSSEC. We also report lessons learned from our global trace collection experiments, including improvements to future measurements that will help answer critical questions in the evolving DNS landscape. ",
+    "tags": [
+        "dns",
+        "routing",
+        "topology",
+        "ipv6"
+    ],
+    "pubdb_id": "paper5",
+    "venue": "traffic_monitoring_and_analysis_workshop_tma",
+    "authors": [
+        {
+            "person": "person:castro_sebastian",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "NZRS"
+            ]
+        },
+        {
+            "person": "person:zhang_min",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:john_wolfgang",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Chalmers University of Technology"
+            ]
+        },
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "DNS-OARC"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2293",
+            "label": "Data Supplement",
+            "to": "roottraffic/index.xml"
+        },
+        {
+            "from": "PubDBlinkId:714",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/understanding_dns_evolution/understanding_dns_evolution.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1562",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/dns_evolution/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Traffic Monitoring and Analysis Workshop (TMA)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "1-6",
+        "linkedObjects": ""
+    }
+}

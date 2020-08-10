@@ -1,0 +1,69 @@
+{
+    "id": "2016_periscope",
+    "name": "Periscope: Unifying Looking Glass Querying",
+    "datePublished": "2016.3",
+    "description": "Looking glasses (LG) servers enhance our visibility into Internet connectivity and performance by offering a set of distributed vantage points that allow both data plane and control plane measurements. However, the lack of input and output standardization and limitations in querying frequency have hindered the development of automated measurement tools that would allow systematic use of LGs. In this paper we introduce Periscope, a publicly-accessible overlay that unifies LGs into a single platform and automates the discovery and use of LG capabilities. The system architecture combines crowd-sourced and cloud-hosted querying mechanisms to automate and scale the available querying resources. Periscope can handle large bursts of requests, with an intelligent controller coordinating multiple concurrent user queries without violating the various LG querying rate limitations. As of December 2015 Periscope has automatically extracted 1,691 LG nodes in 297 Autonomous Systems. We show that Periscope significantly extends our view of Internet topology obtained through RIPE Atlas and CAIDA's Ark, while the combination of traceroute and BGP measurements allows more sophisticated measurement studies.",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "routing",
+        "topology",
+        "software/tools",
+        "congestion"
+    ],
+    "pubdb_id": "paper602",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2133",
+            "label": "DOI",
+            "to": "https://doi.org/10.1007/978-3-319-30505-9_14"
+        },
+        {
+            "from": "PubDBlinkId:1737",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/periscope/periscope.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1754",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2016/periscope_pam/"
+        },
+        {
+            "from": "PubDBlinkId:1794",
+            "label": "Related Software/Tool",
+            "to": "https://www.caida.org/tools/utilities/looking-glass-api/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

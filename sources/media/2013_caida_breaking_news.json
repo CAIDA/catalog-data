@@ -1,0 +1,22 @@
+{
+    "id": "2013_caida_breaking_news",
+    "name": "CAIDA Breaking News",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "network telescope",
+        "overview",
+        "topology",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2013.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/caida_breaking_news/caida_breaking_news.pdf"
+    ]
+}

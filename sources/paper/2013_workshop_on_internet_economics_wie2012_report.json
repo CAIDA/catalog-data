@@ -1,0 +1,55 @@
+{
+    "id": "2013_wie2012_report",
+    "name": "Workshop on Internet Economics (WIE2012) Report",
+    "datePublished": "2013.7",
+    "description": "On December 12-13 2012, CAIDA and the Massachusetts Institute of Technology (MIT) hosted the (invitation-only) 3rd interdisciplinary Workshop on Internet Economics (WIE) at the University of California\u201bs San Diego Supercomputer Center. The goal of this workshop series is to provide a forum for researchers, commercial Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to empirically inform current and emerging regulatory and policy debates. The theme for this year\u201bs workshop was \u201cDefinitions and Data\u201c. This report describes the discussions and presents relevant open research questions identified by participants.",
+    "tags": [
+        "economics",
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper531",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2167",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2500098.2500113"
+        },
+        {
+            "from": "PubDBlinkId:1232",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/wie2012_report/wie2012_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1399",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1212/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "43",
+        "number": "3",
+        "pages": "95-100",
+        "linkedObjects": ""
+    }
+}

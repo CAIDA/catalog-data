@@ -1,0 +1,68 @@
+{
+    "id": "2011_crooked_traceroute",
+    "name": "Measured Impact of Crooked Traceroute",
+    "datePublished": "2011.1",
+    "description": "Data collected using traceroute-based algorithms underpins research into the Internet's router-level topology, though it is possible to infer false links from this data. One source of false inference is the combination of per-flow load-balancing, in which more than one path is active from a given source to destination, and classic traceroute, which varies the UDP destination port number or ICMP checksum of successive probe packets, which can cause per-flow load-balancers to treat successive packets as distinct flows and forward them along different paths. Consequently, successive probe packets can solicit responses from unconnected routers, leading to the inference of false links. This paper examines the inaccuracies induced from such false inferences, both on macroscopic and ISP topology mapping. We collected macroscopic topology data to 365k destinations, with techniques that both do and do not try to capture load balancing phenomena. We then use alias resolution techniques to infer if a measurement artifact of classic traceroute induces a false router-level link. This technique detected that 2.71% and 0.76% of the links in our UDP and ICMP graphs were falsely inferred due to the presence of load-balancing. We conclude that most per-flow load-balancing does not induce false links when macroscopic topology is inferred using classic traceroute. The effect of false links on ISP topology mapping is possibly much worse, because the degrees of a tier-1 ISP's routers derived from classic traceroute were inflated by a median factor of 2.9 as compared to those inferred with Paris traceroute. ",
+    "tags": [
+        "active data analysis",
+        "passive data analysis",
+        "topology",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper487",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:murrell_david",
+            "organization": [
+                "University of Waikato"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:759",
+            "label": "CCR Online",
+            "to": "http://ccr.sigcomm.org/online/?q=node/724"
+        },
+        {
+            "from": "PubDBlinkId:755",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/crooked_traceroute/crooked_traceroute.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1556",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2011/crooked_traceroute/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "41",
+        "number": "1",
+        "pages": "14-21",
+        "linkedObjects": ""
+    }
+}

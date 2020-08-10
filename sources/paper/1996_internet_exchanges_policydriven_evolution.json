@@ -1,0 +1,43 @@
+{
+    "id": "1996_nap",
+    "name": "Internet Exchanges: Policy-Driven Evolution",
+    "datePublished": "1996.9",
+    "description": "Internet exchanges are systems within the Internet which enable\nnetworks to meet and exchange data and control information. In order to\nenable networks to meet and exchange information, Internet exchanges\n(IXs) must do much more than merely forward packets. They must provide\na robust environment in which differences between the attached client\nnetworks, such as in technologies used by different networks or in\nadministrative and operational policies and procedures, do not become\nbarriers to interconnection. Additionally, they must have policies that\ndo not hinder competition between classes of attached networks (such as\nthe often conflicting business interests of large, nationwide networks\nversus smaller, regional networks). Two policies which have had a\ntremendous effect on the configuration of today's Internet are\ncommercialization, the use of the Internet for commercial as well as\nresearch and educational purposes, and privatization, the\nimplementation and operation of the Internet networks by the private\nsector rather than the government sector. The interaction between the\npolicies of commercialization and privatization and the evolution of\nInternet exchanges is examined here in detail.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper153",
+    "venue": "coordination_and_administration_of_the_internet_workshop",
+    "authors": [
+        {
+            "person": "person:chinoy_bilal",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:salo_timothy",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:342",
+            "label": "HTML",
+            "to": "nap.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Coordination and Administration of the Internet Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

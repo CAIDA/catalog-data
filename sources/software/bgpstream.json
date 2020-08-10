@@ -7,7 +7,7 @@
         "topology",
         "BGP"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://bgpstream.caida.org/docs/api",
@@ -21,27 +21,63 @@
     ],
     "links": [
         {
-            "to": "Paper:Towards_Passive_Analysis_of_Anycast_in_Global_Routing_Unintended_Impact_of_Remote_Peering",
+            "to": "software:internet_outage_detection_and_analysis",
             "label": "used by"
         },
         {
-            "to": "Paper:Profiling_BGP_Serial_Hijackers_Capturing_Persistent_Misbehavior_in_the_Global_Routing_Table",
+            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
             "label": "used by"
         },
         {
-            "to": "Paper:Stable_and_Practical_AS_Relationship_Inference_with_ProbLink",
+            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
             "label": "used by"
         },
         {
-            "to": "Paper:BGP_hijacking_classification",
+            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
             "label": "used by"
         },
         {
-            "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+            "to": "paper:2019_bgp_hijacking_classification",
             "label": "used by"
         },
         {
-            "to": "Paper:Geo-Locating_BGP_prefixes",
+            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_studying_evolution_content_providers",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_geo_locating_bgp_prefixes",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_imc",
+            "label": "used by"
+        },
+        {
+            "to": "media:2015_bgpstream_ripe",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_imc",
+            "label": "used by"
+        },
+        {
+            "to": "media:2015_bgpstream_mplane",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_framework_historical_nanog",
+            "label": "used by"
+        },
+        {
+            "to": "media:2017_bgpstream_openbmp_cisco",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_2016_romatre",
             "label": "used by"
         }
     ]

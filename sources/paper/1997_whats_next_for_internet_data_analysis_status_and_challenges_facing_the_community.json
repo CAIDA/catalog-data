@@ -1,0 +1,43 @@
+{
+    "id": "1997_ieee97",
+    "name": "What's next for Internet data analysis? Status and challenges facing the community",
+    "datePublished": "1997.10",
+    "description": "Most large providers currently collect basic statistics on the\nperformance of their own infrastructure, typically including\nmeasurements of utilization, availability, and possibly rudimentary\nassessments of delay and throughput. In today's commercial Internet,\nthe only baseline against which organizations can calibrate their\nnetworks is past performance data; no data or even standard formats are\navailable against which to compare performance with other networks or\nagainst an industry norm, nor are there reliable data with which\ncustomers can assess performance of providers. Data characterization\nand traffic flow analysis are also virtually non-existent at this time,\nyet they remain essential for understanding the internal dynamics of\nthe Internet infrastructure.\n\nIncreasingly, both customers and providers need information on\nend-to-end performance and traffic flows, beyond the realm of what is\nrealistically controllable by individual networks or users. Path\nperformance measurement tools enable users and operators to better\nevaluate and compare providers and to monitor service quality. Many of\nthese tools treat the Internet as a black box, measuring end-to-end\ncharacteristics, e.g., packet latency and loss (ping) and reachability\n(traceroute), from points originating and terminating outside\nindividual networks. Traffic flow characterization tools focus on the\nbehavior and inner-workings of these wide area networks.\n\nThis paper has two goals. We first provide background on the current\nInternet architecture and describe how measurements are a key element\nin the development of a robust and financially successful commercial\nInternet. We then discuss the current state of Internet metrics\nanalysis and steps underway within various forums, particularly the\nCooperative Association for Internet Data Analysis (CAIDA) and the\nNational Laboratory for Applied Network Research (NLANR), to encourage\nthe development and deployment of Internet performance monitoring and\nworkload characterization tools.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper148",
+    "venue": "proceedings_of_the_ieee",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:monk_tracie",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:478",
+            "label": "HTML",
+            "to": "ieee97.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Proceedings of the IEEE",
+        "volume": "85",
+        "number": "10",
+        "pages": "1563-71",
+        "linkedObjects": ""
+    }
+}

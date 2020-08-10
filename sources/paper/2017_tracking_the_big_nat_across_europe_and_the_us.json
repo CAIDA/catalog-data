@@ -1,0 +1,67 @@
+{
+    "id": "2017_tracking_big_nat_across",
+    "name": "Tracking the Big NAT across Europe and the U.S.",
+    "datePublished": "2017.4",
+    "description": "Carrier Grade NAT (CGN) mechanisms enable ISPs to share a single IPv4 address across multiple customers, thus offering an immediate solution to the IPv4 address scarcity problem. In this paper, we perform a large scale active measurement campaign to detect CGNs in fixed broadband networks using NAT Revelio \u2013 a tool we have developed and validated. Revelio enables us to actively determine from within residential networks the type of upstream network address translation, namely NAT at the home gateway (customer-grade NAT) or NAT in the ISP (Carrier Grade NAT). We demonstrate the generality of the methodology by deploying Revelio in the FCC Measuring Broadband America testbed operated by SamKnows and also in the RIPE Atlas testbed. We enhance Revelio to actively discover from within any home network the type of upstream NAT configuration (i.e., simple home NAT or Carrier Grade NAT). We ran an active large-scale measurement study of CGN usage from 5,121 measurement vantage points within over 60 different ISPs operating in Europe and the United States. We found that 10% of the ISPs we tested have some form of CGN deployment. We validate our results with four ISPs at the IP level and, reported to the ground truth we collected, we conclude that Revelio was 100% accurate in determining the upstream NAT configuration for all the corresponding lines. To the best of our knowledge, this represents the largest active measurement study of (confirmed) CGN deployments at the IP level in fixed broadband networks to date.",
+    "tags": [
+        "ipv6",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper629",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:mandalari_anna maria",
+            "organization": [
+                "University Carlos III of Madrid"
+            ]
+        },
+        {
+            "person": "person:lutu_andra",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bagnulo_marcelo",
+            "organization": [
+                "University Carlos III of Madrid"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1882",
+            "label": "arXiv",
+            "to": "https://arxiv.org/abs/1704.01296"
+        },
+        {
+            "from": "PubDBlinkId:1881",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/tracking_big_nat_across/tracking_big_nat_across.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "id": "2012_bgp-traceroute_report",
+    "name": "Border Gateway Protocol (BGP) and Traceroute Data Workshop Report",
+    "datePublished": "2012.7",
+    "description": "On Monday, 22 August 2011, CAIDA hosted a one-day workshop to discuss scalable measurement and analysis of BGP and traceroute topology data, and practical applications of such data analysis including tracking of macroscopic censorship and filtering activities on the Internet. Discussion topics included: the surprisingly stability in the number of BGP updates over time; techniques for improving measurement and analysis of inter-domain routing policies; an update on Colorado State's BGPMon instrumentation; using BGP data to improve the interpretation of traceroute data, both for real-time diagnostics (e.g., AS traceroute) and for large-scale topology mapping; using both BGP and traceroute data to support detection and mapping infrastructure integrity, including different types of of filtering and censorship; and use of BGP data to analyze existing and proposed approaches to securing the interdomain routing system. This report briefly summarizes the presentations and discussions that followed. '' Final Report of the Border Gateway Protocol (BGP) and Traceroute Data Workshop in La Jolla, California, August 2011.",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper477",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:799",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2317307.2317313"
+        },
+        {
+            "from": "PubDBlinkId:745",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/bgp-traceroute_report/bgp-traceroute_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1789",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/bgp-traceroute/1108/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "42",
+        "number": "3",
+        "pages": "28-31",
+        "linkedObjects": ""
+    }
+}

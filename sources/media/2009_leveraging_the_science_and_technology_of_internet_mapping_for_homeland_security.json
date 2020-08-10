@@ -1,0 +1,24 @@
+{
+    "id": "2009_cybersec_leveraging_2009",
+    "name": "Leveraging the Science and Technology of Internet Mapping for Homeland Security",
+    "tags": [
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "policy",
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_cybersecurity_pi_meeting",
+            "date": "2009.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/projects/ark/",
+        "https://www.caida.org/publications/presentations/2009/cybersec_leveraging_2009/cybersec_leveraging_2009.pdf",
+        "https://www.caida.org/publications/papers/2009/internet_mapping"
+    ]
+}

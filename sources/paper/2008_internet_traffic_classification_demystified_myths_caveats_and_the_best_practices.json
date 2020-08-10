@@ -1,0 +1,73 @@
+{
+    "id": "2008_classification_demystified",
+    "name": "Internet Traffic Classification Demystified: Myths, Caveats, and the Best Practices",
+    "datePublished": "2008.12",
+    "description": "Recent research on Internet traffic classification algorithms has yielded a flurry of proposed approaches for distinguishing types of traffic, but no systematic comparison of the various algorithms. This fragmented approach to traffic classification research leaves the operational community with no basis for consensus on what approach to use when, and how to interpret results. In this work we critically revisit traffic classification by conducting a thorough evaluation of three classification approaches, based on transport layer ports, host behavior, and flow features. A strength of our work is the broad range of data against which we test the three classification approaches: seven traces with payload collected in Japan, Korea, and the US. The diverse geographic locations, link characteristics and application traffic mix in these data allowed us to evaluate the approaches under a wide variety of conditions. We analyze the advantages and limitations of each approach, evaluate methods to overcome the limitations, and extract insights and recommendations for both the study and practical application of traffic classification. We make our software, classifiers, and data available for researchers interested in validating or extending this work.\r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper22",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:kim_hyunchul",
+            "organization": [
+                "Seoul National University, Korea"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:barman_dhiman",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        },
+        {
+            "person": "person:faloutsos_michalis",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        },
+        {
+            "person": "person:lee_kiyoung",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:336",
+            "label": "Data Supplement",
+            "to": "http://mmlab.snu.ac.kr/~hkim/code-data-access.html"
+        },
+        {
+            "from": "PubDBlinkId:335",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/classification_demystified/classification_demystified.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

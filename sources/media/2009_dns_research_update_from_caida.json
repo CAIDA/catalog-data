@@ -1,0 +1,21 @@
+{
+    "id": "2009_rssac_dns",
+    "name": "DNS Research Update from CAIDA",
+    "tags": [
+        "passive data analysis",
+        "active data analysis",
+        "data",
+        "trends",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dns_rssac_meeting",
+            "date": "2009.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/rssac_dns/rssac_dns.pdf"
+    ]
+}

@@ -1,5 +1,6 @@
 {
-    "id": "schulman_aaron",
-    "nameFirst": "Aaron",
-    "nameLast": "Schulman"
+    "person": "person:schulman_aaron",
+    "organization": [
+        "University of California, San Diego (UCSD)"
+    ]
 }

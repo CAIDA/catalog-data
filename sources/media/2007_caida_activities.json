@@ -1,0 +1,17 @@
+{
+    "id": "2007_terena_caida",
+    "name": "CAIDA Activities",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "terena_networking_conference",
+            "date": "2007.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/terena_caida/terena_caida.pdf"
+    ]
+}

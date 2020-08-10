@@ -1,0 +1,50 @@
+{
+    "id": "1995_pmi",
+    "name": "A parameterizable methodology for Internet traffic flow profiling",
+    "datePublished": "1995.3",
+    "description": "We present a parametrizable methodology for profiling Internet traffic\nflows at a variety of granularities. Our methodology differs from many\nprevious studies that have concentrated on end-point definitions of\nflows in terms of state derived from observing the explicit opening and\nclosing of TCP connections.\n\nInstead, our model defines flows based on traffic satisfying various\ntemporal and spatial locality conditions, as observed at internal\npoints of the network. This approach to flow characterization helps\naddress some central problems in networking based on the Internet\nmodel. Among them are route caching, resource reservation at multiple\nservice levels, usage based accounting, and the integration of IP\ntraffic over an ATM fabric. We first define the parameter space and\nthen concentrate on metrics characterizing both individual flows as\nwell as the aggregate flow profile. We consider various granularities\nof the definition of a flow, such as by destination network, host-pair,\nor host and port quadruple. We include some measurements based on case\nstudies we undertook, which yield significant insights into some\naspects of Internet traffic, including demonstrating (i) the brevity of\na significant fraction of IP flows at a variety of traffic aggregation\ngranularities, (ii) that the number of host-pair IP flows is not\nsignificantly larger than the number of destination network flows, and\n(iii) that schemes for caching traffic information could significantly\nbenefit from using application information.\n\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper163",
+    "venue": "ieee_journal_on_selected_areas_in_communications",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:416",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1995/pmi/JSAC-flows.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Journal on Selected Areas in Communications",
+        "volume": "13",
+        "number": "8",
+        "pages": "1481-94",
+        "linkedObjects": ""
+    }
+}

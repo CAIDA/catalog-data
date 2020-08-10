@@ -1,0 +1,20 @@
+{
+    "id": "2012_structure_evolution_internet_wite",
+    "name": "The Structure and Evolution of the AS-level Internet",
+    "tags": [
+        "economics",
+        "passive data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "workshop_on_internet_topology_and_economics",
+            "date": "2012.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/structure_evolution_internet_wite/structure_evolution_internet_wite.pdf"
+    ]
+}

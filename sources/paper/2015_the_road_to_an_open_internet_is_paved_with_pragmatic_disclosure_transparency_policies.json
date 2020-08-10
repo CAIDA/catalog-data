@@ -1,0 +1,55 @@
+{
+    "id": "2015_road_open_internet_paved",
+    "name": "The Road to an Open Internet is Paved with Pragmatic Disclosure & Transparency Policies",
+    "datePublished": "2015.9",
+    "description": "Ensuring a healthy ecosystem for broadband services is critical to securing the future of a healthy and open Internet. From the perspective of social welfare maximization, this means collective management of the decision-making regarding how we design, operate, provide access to, use, and pay for our broadband access networks. Realizing this collective goal requires balancing the interests of multiple market participants that are often in conflict and evolve in light of changing technical, business, and policy conditions.\r\n\r\nThe efficiency of markets and regulatory interventions depends on whether decision-makers at all market levels are appropriately informed. This requires the selective sharing of information. Consumers need information about their broadband access options in order to make informed decisions about which (if any) broadband services to subscribe to, how to use those services, and what investments to make in complementary assets (devices, content, applications). Providers of content, applications, and other complementary goods and services need to know about broadband access options to appropriately position their offerings in the market. And, regulators need information about broadband access options to design and enforce policies that will promote competition and ensure appropriate market choices exist.\r\n\r\nAll of these stakeholders need information about broadband service availability, pricing, performance, and to the extent discernible, about trends and plans that will shape future options. Furthermore, broadband access service providers either already possess or may more easily obtain a great deal of the information needed by market participants. However, the information sharing challenges are far from simple. Different stakeholders need different information, information is costly to collect and share, and to the extent it impacts market outcomes, has strategic value. For example, better informed consumers might be more inclined to switch providers, thereby intensifying price competition; while better informed regulators may be better able to limit supra-competitive profit opportunities. Additionally, sharing of too much information about the performance of specific broadband connections might threaten subscriber privacy or render broadband networks more vulnerable to attack.\r\n\r\nDisclosure and Transparency (D&T) policies comprise a toolset of rules, processes, and mechanisms that are used by market participants to help structure and manage the flow of information that is needed for informed decision-making. D&T policies comprise a significant component of the regulatory provisions in the FCC's 2015 OIO, which sets forth the FCC's approach for regulating providers of broadband access services. The focus of this paper is on providing a framework with which to interpret the OIO's D&T provisions within the larger market context. The OIO's specific D&T provisions are just one component of the tools and mechanisms that shape how broadband management relevant information is discovered, shared, and interpreted. Other regulatory provisions in the OIO and other market mechanisms such as performance testing platforms interact with the explicit D&T provisions that mandate specific obligations and responsibilities. As we shall explain, the richness of D&T tools is desirable in order to address the complex and diverse questions that arise in the context of broadband management requiring information sharing. Moreover, understanding how these D&T policy tools interact and complement (or substitute) for each other is helpful if these tools are to be appropriately applied and appreciated. Application of these tools should be nuanced and evolvable to incentivize cooperation and voluntary disclosure by the ISPs while also safeguarding the interests of end users and intermediaries in the broadband Internet ecosystem.\r\n\r\nIn Section 2, we review the specific D&T provisions in the FCC's 2015 OIO and situate these within the larger D&T policy framework. We introduce a meta-tool, the D&T Coordinator, to assist in better understanding the landscape of potential interventions and with which to contrast the relative merits of different interventions in different contexts.\r\n\r\nIn Section 3, we apply our framework to divergent prototypical examples of the sorts of questions that confront the challenge of how to best manage broadband networks. At one end, we have what appears to be the narrow and specific question of crafting an appropriate set of D&T policies to ensure adequate reporting of packet loss by ISPs. At the other extreme, we consider open-ended questions that relate to society's aspirations or goals for what the Internet and broadband services should be. We argue that an assortment of D&T tools are needed for the array of questions confronting broadband stakeholders, but with different emphasis, because the contexts within which they arise engage both specific and general, closed and open-ended details to be addressed appropriately.\r\n\r\nSection 4 offers our concluding summary and directions for future work.",
+    "tags": [
+        "policy",
+        "data sharing"
+    ],
+    "pubdb_id": "paper614",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:lehr_william",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1784",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.2139/ssrn.2587718"
+        },
+        {
+            "from": "PubDBlinkId:1783",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/road_open_internet_paved/road_open_internet_paved.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

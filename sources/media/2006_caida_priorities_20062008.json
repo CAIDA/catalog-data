@@ -1,0 +1,17 @@
+{
+    "id": "2006_widecnrs",
+    "name": "caida priorities: 2006-2008",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "wide",
+            "date": "2006.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/widecnrs/caida2006priorities.pdf"
+    ]
+}

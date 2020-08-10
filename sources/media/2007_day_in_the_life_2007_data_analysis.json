@@ -1,0 +1,18 @@
+{
+    "id": "2007_castro_ditl_analysis",
+    "name": "'Day in the Life 2007' Data Analysis",
+    "tags": [
+        "passive data analysis",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Castro, Sebastian",
+            "venue": "oarc",
+            "date": "2007.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/castro_ditl_analysis/castro_ditl_analysis.pdf"
+    ]
+}

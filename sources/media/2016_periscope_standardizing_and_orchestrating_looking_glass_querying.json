@@ -1,0 +1,19 @@
+{
+    "id": "2016_periscope_nanog",
+    "name": "Periscope: Standardizing and Orchestrating Looking Glass Querying",
+    "tags": [
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2016.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/periscope_nanog/periscope_nanog.pdf",
+        "https://www.youtube.com/watch?v=sEa1vo7S2ac&index=14&list=PLO8DR5ZGla8hcpeEDSBNPE5OrZf70iXZg"
+    ]
+}

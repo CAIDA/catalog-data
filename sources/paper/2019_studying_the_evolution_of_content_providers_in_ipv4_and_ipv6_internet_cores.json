@@ -1,0 +1,65 @@
+{
+    "id": "2019_studying_evolution_content_providers",
+    "name": "Studying the Evolution of Content Providers in IPv4 and IPv6 Internet Cores",
+    "datePublished": "2019.9",
+    "description": "There is recent evidence that the core of the Internet, which was formerly dominated by large transit providers, has been reshaped after the transition to a multimedia-oriented network, first by general-purpose CDNs and now by private CDNs. In this work we use k-cores, an element of graph theory, to define which ASes compose the core of the Internet and to track the evolution of the core since 1999. Specifically, we investigate whether large players in the Internet content and CDN ecosystem belong to the core and, if so, since when. In addition, we examine differences between the IPv4 and IPv6 cores. We further investigate regional differences in the evolution of large content providers. Finally, we show that the core of the Internet has incorporated an increasing number of content ASes in recent years. To enable reproducibility of this work, we provide a website to allow interactive analysis of our datasets to detect, for example, \u201cup and coming\u201d ASes using customized queries.'' This pre-print version of the paper is an extension of a [previous paper](https://www.caida.org/publications/papers/2018/studying_evolution_content_providers/) presented at TMA in Jun 2018.",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology",
+        "congestion"
+    ],
+    "pubdb_id": "paper686",
+    "venue": "elsevier_computer_communications_journal",
+    "authors": [
+        {
+            "person": "person:carisimo_esteban",
+            "organization": [
+                "CONICET",
+                "University of Buenos Aires"
+            ]
+        },
+        {
+            "person": "person:selmo_carlos",
+            "organization": [
+                "Buenos Aires Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:alvarez-hamelin_j. ignacio",
+            "organization": [
+                "CONICET",
+                "University of Buenos Aires"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2186",
+            "label": "DOI",
+            "to": "https://doi.org/10.1016/j.comcom.2019.05.022"
+        },
+        {
+            "from": "PubDBlinkId:2185",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/studying_evolution_content_providers/studying_evolution_content_providers.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Elsevier Computer Communications Journal",
+        "volume": "145",
+        "number": "",
+        "pages": "54-65",
+        "linkedObjects": ""
+    }
+}

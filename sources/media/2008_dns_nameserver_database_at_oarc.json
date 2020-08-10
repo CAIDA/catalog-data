@@ -1,0 +1,20 @@
+{
+    "id": "2008_wide_dw_dnsdb",
+    "name": "DNS nameserver database at OARC",
+    "tags": [
+        "active data analysis",
+        "dns",
+        "measurement methodology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/workshops/wide/0801/slides/dw-dnsdb.pdf"
+    ]
+}

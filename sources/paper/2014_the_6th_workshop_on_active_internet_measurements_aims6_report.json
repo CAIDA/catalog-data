@@ -1,0 +1,60 @@
+{
+    "id": "2014_aims6_report",
+    "name": "The 6th Workshop on Active Internet Measurements (AIMS6) Report",
+    "datePublished": "2014.10",
+    "description": "On 26-27 March 2014, CAIDA hosted the sixth Workshop on Active Internet Measurements (AIMS-6) as part of our series of Internet Statistics and Metrics Analysis (ISMA) workshops. As with previous AIMS workshops, the goals were to further our understanding of the potential and limitations of active measurement research and infrastructure in the wide-area Internet, and to promote cooperative solutions and coordinated strategies between academics, industry, policymakers, and funding agencies in the area of active Internet measurement. This year, we explored capabilities and opportunities for network measurement in the wireless domain, and research infrastructure to support it. Participants found the workshop content challengingly diverse, with substantial knowledge exchange regarding the wireless research infrastructure landscape(s) and existing measurement capabilities. But attendees agreed that the conversation was only beginning, and that some challenges merit further discussion, such as finding consensus on standard metrics to measure, and constructing a road map for wireless measurement research infrastructure and activities for the next decade. This report describes topics discussed at the workshop, and summarizes participants' views of priorities for future funding as well as follow-on workshops in this area. \r\n\r\nMaterials related to the workshop are available at [https://www.caida.org/workshops/aims/1403/](https://www.caida.org/workshops/aims/1403/).",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper569",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:wittie_mike",
+            "organization": [
+                "Montana State University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2155",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2677046.2677054"
+        },
+        {
+            "from": "PubDBlinkId:1407",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/aims6_report/aims6_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1408",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/aims/1403/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "5",
+        "pages": "39-44",
+        "linkedObjects": ""
+    }
+}

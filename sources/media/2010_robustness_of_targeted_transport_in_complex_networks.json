@@ -1,0 +1,19 @@
+{
+    "id": "2010_delft_robustness_complex_networks",
+    "name": "Robustness of Targeted Transport in Complex Networks",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "robustness_of_complex_networks",
+            "date": "2010.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/delft_robustness_complex_networks/delft_robustness_complex_networks.pptx",
+        "http://collegerama.tudelft.nl/mediasite/Viewer/?peid=a1b8c85279e841b0b2eb8422eab0d0b31d"
+    ]
+}

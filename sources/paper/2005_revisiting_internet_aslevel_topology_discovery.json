@@ -1,0 +1,54 @@
+{
+    "id": "2005_pam-topology",
+    "name": "Revisiting Internet AS-level Topology Discovery",
+    "datePublished": "2005.3",
+    "description": "The development of veracious models of the Internet topology has received a lot of attention in the last few years. Many proposed\nmodels are based on topologies derived from RouteViews BGP table\ndumps (BTDs). However, BTDs do not capture all AS-links of the Internet topology and most importantly the number of the hidden AS-links\nis unknown, resulting in AS-graphs of questionable quality. As a first\nstep to address this problem, we introduce a new AS-topology discovery\nmethodology that results in more complete and accurate graphs. More\nover, we use data available from existing measurement facilities, circumventing the burden of additional measurement infrastructure. We deploy\nour methodology and construct an AS-topology that has at least 61.5%\nmore AS-links than BTD-derived AS-topologies we examined. Finally,\nwe analyze the temporal and topological properties of the augmented\ngraph and pinpoint the dierences from BTD-derived AS-topologies.",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper66",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:254",
+            "label": "DOI",
+            "to": "http://springerlink.metapress.com/content/m28htt830wp2/"
+        },
+        {
+            "from": "PubDBlinkId:255",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/pam-topology/pam-topology.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "177-188",
+        "linkedObjects": ""
+    }
+}

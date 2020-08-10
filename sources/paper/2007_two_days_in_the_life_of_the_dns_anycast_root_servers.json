@@ -1,0 +1,69 @@
+{
+    "id": "2007_dns_anycast",
+    "name": "Two Days in the Life of the DNS Anycast Root Servers",
+    "datePublished": "2007.4",
+    "description": "Abstract: The DNS root nameservers routinely use anycast in order to\r\nimprove their service to clients and increase their resilience against\r\nvarious types of failures. We study DNS traffic collected over a two-day\r\nperiod in January 2006 at anycast instances for the C, F and K root\r\nnameservers. We analyze how anycast DNS service affects the worldwide\r\npopulation of Internet users. To determine whether clients actually use\r\nthe instance closest to them, we examine client locations for each root\r\ninstance, and the geographic distances between a server and its clients.\r\nWe find that frequently the choice, which is entirely determined by BGP\r\nrouting, is not the geographically closest one. We also consider\r\nspecific AS paths and investigate some cases where local instances have\r\na higher than usual proportion of non-local clients. We conclude that\r\noverall, anycast roots significantly localize DNS traffic, thereby\r\nimproving DNS service to clients worldwide.\r\n\r\n",
+    "tags": [
+        "dns",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper38",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:liu_ziqian",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:15",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/dns_anycast/dns_anycast.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1570",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2006/brad_wide0611_anycast_analysis/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA), Beijing Jiaotong University, and The University of Auckland",
+        "bibtex": "",
+        "journal": "Passive and Active Network Measurement Workshop (PAM)",
+        "volume": "4427",
+        "number": "",
+        "pages": "125-134",
+        "linkedObjects": ""
+    }
+}

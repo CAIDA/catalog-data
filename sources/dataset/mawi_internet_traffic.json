@@ -3,7 +3,7 @@
     "name": "MAWI Internet Traffic",
     "links": [
         {
-            "to": "Paper:Hypersparse_Neural_Network_Analysis_of_Large-Scale_Internet_Traffic",
+            "to": "paper:2019_hypersparse_neural_network_analysis",
             "label": "used by"
         }
     ]

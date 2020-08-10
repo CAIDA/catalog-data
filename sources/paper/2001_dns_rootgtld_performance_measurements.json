@@ -1,0 +1,60 @@
+{
+    "id": "2001_DNSPerfMeas",
+    "name": "DNS Root/gTLD Performance Measurements",
+    "datePublished": "2001.12",
+    "description": "The Internet Domain Name System (DNS) is an essential part of the Internet\r\ninfrastructure. Each web site or email lookup involves traversing a\r\ntree-structure distributed database to complete the mapping from a hostname to\r\nan IP address. The root and top level domain (TLD) nameservers form the\r\nhighest level of authority over the Internet naming hierarchy, and are thus\r\npotentially involved in reaching any and every URL or email address we seek.\r\nWe use passive measurements to analyze performance of these critical\r\nnameservers from a client network's viewpoint.\r\n\r\nWe use NeTraMet meters on a university campus to take passive measurements of\r\nDNS response time, request loss rate and request load to the root and gTLD\r\n(generic top level domain, e.g., .com, .net, .org) servers.\r\n\r\nFrom these measurements we produce strip charts that are useful for day-to-day\r\nmonitoring of one's Internet connectivity, since they reveal changes in\r\nnetwork behaviour on paths between one's local network and the global servers\r\nwithout the need to actively inject traffic into the network. We are\r\ndeveloping a monitoring tool to produce such plots in near real time.\r\n'' The original publication of this paper was granted to USENIX. Copyright to this work is retained by the authors. Permission is granted for the noncommercial reproduction of the complete work for educational or research purposes.",
+    "tags": [
+        "dns",
+        "visualization"
+    ],
+    "pubdb_id": "paper110",
+    "venue": "usenix_lisa",
+    "authors": [
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:700",
+            "label": "gzipped postscript",
+            "to": "dpm.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:699",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/DNSPerfMeas/dpm.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1579",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/rssac-0112/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Usenix LISA",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

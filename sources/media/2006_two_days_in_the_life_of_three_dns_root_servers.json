@@ -1,0 +1,24 @@
+{
+    "id": "2006_brad_wide0611_anycast_analysis",
+    "name": "Two days in the life of three DNS root servers",
+    "tags": [
+        "dns",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "dns_rssac_meeting",
+            "date": "2006.11"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "wide",
+            "date": "2006.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/brad_wide0611_anycast_analysis/brad_wide0611_anycast_analysis.pdf",
+        "https://www.caida.org/publications/papers/2007/dns_anycast"
+    ]
+}

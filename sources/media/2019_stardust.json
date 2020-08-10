@@ -1,0 +1,20 @@
+{
+    "id": "2019_stardust_aims",
+    "name": "STARDUST",
+    "tags": [
+        "routing",
+        "topology",
+        "security",
+        "network telescope"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2019.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/stardust_aims/stardust_aims.pdf"
+    ]
+}

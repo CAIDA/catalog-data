@@ -1,0 +1,49 @@
+{
+    "id": "2001_tdt01",
+    "name": "Traffic dynamics testbed",
+    "datePublished": "2001.3",
+    "description": "\n\nHistorically, network testbeds have focused on issues relating to\neither high bandwidth or advanced services. For various reasons nearly\nall testbeds carry little traffic beyond a few chosen applications.\nNetworks that carry heavy \"routine\" traffic are off limits to network\nresearchers. This deep dichotomy in network usage has prevented nearly\nall effective research in traffic dynamics. We need to have a way to\nstudy how traffic is affected by other traffic, in the presence of\nadvanced services. Specifically, we are proposing the development of a\nTraffic Dynamics Testbed (TDT). This testbed would not only provide\nvery high bandwidth links based on leading edge technologies, but also\nallow for the broader study of how all layers of this infrastructure\ninteract and support a wide range of traffic types and services.\nTraffic restrictions associated with previous testbed initiatives have\ncreated an artificial traffic-less environment. A critical component of\nthe Traffic Dynamics Testbed would be the inclusion of\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper123",
+    "venue": "large_scale_networking_lsn_workshop",
+    "authors": [
+        {
+            "person": "person:mathis_matt",
+            "organization": [
+                "Pittsburgh Supercomputer Center"
+            ]
+        },
+        {
+            "person": "person:huntoon_gwendolyn",
+            "organization": [
+                "Pittsburgh Supercomputer Center"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:77",
+            "label": "HTML",
+            "to": "tdt01.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Large Scale Networking (LSN) Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

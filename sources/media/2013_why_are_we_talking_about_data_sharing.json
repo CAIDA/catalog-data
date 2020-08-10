@@ -1,0 +1,18 @@
+{
+    "id": "2013_talking_about_data_sharing",
+    "name": "Why Are We Talking About Data Sharing?",
+    "tags": [
+        "data",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2013.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/talking_about_data_sharing/talking_about_data_sharing.pdf"
+    ]
+}

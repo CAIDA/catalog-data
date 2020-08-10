@@ -1,0 +1,43 @@
+{
+    "id": "1996_cooperation",
+    "name": "Cooperation in Internet data acquisition and analysis",
+    "datePublished": "1996.9",
+    "description": "The Internet is emerging from a sheltered adolescence, growing at\r\nexponential proportions, full of potential and promise, but still\r\nrelatively ignorant of the real world. It now faces a crossroads.\r\nCitizens, corporations and governments are waking to the opportunities\r\npresented by a truly connected global economy, and reexamining\r\nfundamental principles of intellectual property law and communications\r\nin light of the realities of cyberspace. Organizational behavior and\r\nboundaries, business practices and financial systems are also adapting\r\nto the new medium. Society is at the forefront of the information\r\nrevolution.\r\n\r\nThe number of North American Internet service providers pioneering this\r\nrevolution now stands at over 3,000, approximately a dozen of which\r\nqualify as national backbone providers. Internationally, the number of\r\nInternet hosts has almost doubled over the year ending July 1996,\r\nreaching 12,881,000. Domains quadrupled over this period to 488,000.1/\r\nCompetition is fierce among the builders and operators of this nascent\r\ninfrastructure, driven by demands for additional capacity and new\r\ncustomers. However, neither the industry nor the research community\r\nthat developed and nurtured the early Internet are spending significant\r\nattention on assessing current robustness or future capacity needs.\r\n\r\nThis paper has three goals. We first provide background on the current\r\nInternet architecture and describe why measurements are a key element\r\nin the development of a robust and financially successful commercial\r\nInternet. We then discuss the current state of Internet metrics\r\nanalysis and steps underway within the Internet Engineering Task Force\r\n(IETF) as well as other arenas to encourage the development and\r\ndeployment of Internet performance monitoring and workload\r\ncharacterization tools. Finally, we offer a model for a cooperative\r\nassociation for Internet data analysis among Internet competitors.\r\n\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper158",
+    "venue": "coordination_and_administration_of_the_internet_workshop",
+    "authors": [
+        {
+            "person": "person:monk_tracie",
+            "organization": [
+                "DynaCorp"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:426",
+            "label": "HTML",
+            "to": "cooperation.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Coordination and Administration of the Internet Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

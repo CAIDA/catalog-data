@@ -1,0 +1,76 @@
+{
+    "id": "2019_challenges_inferring_spoofed_traffic",
+    "name": "Challenges in Inferring Spoofed Traffic at IXPs",
+    "datePublished": "2019.12",
+    "description": "Ascertaining that a network will forward spoofed traffic usually requires an active probing vantage point in that network, effectively preventing a comprehensive view of this global Internet vulnerability. Recently, researchers have proposed using Internet Exchange Points (IXPs) as observatories to detect spoofed packets, by leveraging Autonomous System (AS) topology knowledge extracted from Border Gateway Protocol (BGP) data to infer which source addresses should legitimately appear across parts of the IXP switch fabric. We demonstrate that the existing literature does not capture several fundamental challenges to this approach, including noise in BGP data sources, heuristic AS relationship inference, and idiosyncrasies in IXP interconnectivity fabrics. We propose a novel method to navigate these challenges, leveraging _customer cone_ semantics of AS relationships to guide precise classification of inter-domain traffic as in-cone, out-of-cone (_spoofed_), unverifiable, bogon, and unassigned. We apply our method to a mid-size IXP with approximately 200 members, and find an upper bound volume of out-of-cone traffic to be more than an order of magnitude less than the previous method inferred on the same data. Our work illustrates the subtleties of scientific assessments of operational Internet infrastructure, and the need for a community focus on reproducing and repeating previous methods.",
+    "tags": [
+        "security",
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper692",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:m\u00fcller_lucas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:barcellos_marinho",
+            "organization": [
+                "Universidade Federal do Rio Grande do Sul (UFRGS)",
+                "University of Waikato"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2229",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/3359989.3365422"
+        },
+        {
+            "from": "PubDBlinkId:2215",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/challenges_inferring_spoofed_traffic/challenges_inferring_spoofed_traffic.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2216",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/challenges_inferring_spoofed_traffic_conext/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

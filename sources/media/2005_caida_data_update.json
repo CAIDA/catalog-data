@@ -1,0 +1,17 @@
+{
+    "id": "2005_data_update_wide",
+    "name": "Caida Data Update",
+    "tags": [
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "wide",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/data_update_wide/data_update_wide.pdf"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "2019_wie2018_report",
+    "name": "Workshop on Internet Economics (WIE2018) Final Report",
+    "datePublished": "2019.4",
+    "description": "On 12-13 December 2018, CAIDA hosted the 9th interdisciplinary Workshop on Internet Economics (WIE) at the UC San Diego's Supercomputer Center. This workshop series provides a forum for researchers, Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to exchange views on current and emerging regulatory and policy debates.\r\n\r\nTo try to add clarity to a range of vigorous policy debates, and in pursuit of specific, actionable objectives, for this year's meeting the organizers used a slightly different approach to structuring the agenda. Each attendee chose a specific policy goal or harm, and structured their presentation to answer three questions:\r\n\r\n1. What data is needed to measure progress toward/away from this goal/harm? \r\n2. What methods do you propose to gather such data? \r\n3. Who are the right entities to gather such data, and how should such data be managed and shared? \r\n\r\nWith a specific focus on measurement challenges, the topics we discussed included: analyzing the evolution of the Internet in a layered-platform context to gain new insights; measurement and analysis of economic impacts of new technologies using old tools; security and trustworthiness, reach (universal service) and reachability, sustainability of investment into Internet infrastructure, as well as infrastructure to measure the Internet.",
+    "tags": [
+        "congestion",
+        "economics",
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper665",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2148",
+            "label": "CCR Online",
+            "to": "https://ccronline.sigcomm.org/2019/workshop-on-internet-economics-wie2018-final-report/"
+        },
+        {
+            "from": "PubDBlinkId:2151",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3336937.3336941"
+        },
+        {
+            "from": "PubDBlinkId:2064",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/wie2018_report/wie2018_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2065",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1812/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "49",
+        "number": "2",
+        "pages": "25-30",
+        "linkedObjects": ""
+    }
+}

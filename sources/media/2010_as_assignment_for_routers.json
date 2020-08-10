@@ -1,0 +1,29 @@
+{
+    "id": "2010_as_assignment",
+    "name": "AS Assignment for Routers",
+    "tags": [
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "widecasfi",
+            "date": "2010.4"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2010.2"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2010.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/as_assignment/as_assignment.pdf"
+    ]
+}

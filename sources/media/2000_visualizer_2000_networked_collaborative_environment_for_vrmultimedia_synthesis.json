@@ -1,0 +1,17 @@
+{
+    "id": "2000_vrmulti",
+    "name": "VisualizeR 2000: Networked Collaborative Environment for VR-Multimedia Synthesis",
+    "tags": [
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Murray, Margaret",
+            "venue": "sdsc",
+            "date": "2000.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/vrmulti/index.html"
+    ]
+}

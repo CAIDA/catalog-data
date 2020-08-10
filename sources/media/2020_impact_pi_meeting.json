@@ -1,0 +1,21 @@
+{
+    "id": "2020_impact_pi_mar",
+    "name": "IMPACT PI Meeting",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "active data analysis",
+        "overview",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_impact_pi_meeting",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/impact_pi_mar/impact_pi_mar.pdf"
+    ]
+}

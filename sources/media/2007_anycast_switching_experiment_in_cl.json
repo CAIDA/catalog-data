@@ -1,0 +1,18 @@
+{
+    "id": "2007_castro_cl_anycast",
+    "name": "Anycast switching experiment in .CL",
+    "tags": [
+        "topology",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Castro, Sebastian",
+            "venue": "wide",
+            "date": "2007.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/castro_cl_anycast/castro_cl_anycast.pdf"
+    ]
+}

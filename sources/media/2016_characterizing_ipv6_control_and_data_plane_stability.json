@@ -1,0 +1,20 @@
+{
+    "id": "2016_characterizing_ipv6_control_infocom",
+    "name": "Characterizing IPv6 control and data plane stability",
+    "tags": [
+        "ipv6",
+        "internet id consumption",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Livadariu, Ioana",
+            "venue": "ieee_conference_on_computer_communications_infocom",
+            "date": "2016.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/characterizing_ipv6_control_infocom/characterizing_ipv6_control_infocom.pdf",
+        "https://www.caida.org/publications/papers/2016/characterizing_ipv6_control/"
+    ]
+}

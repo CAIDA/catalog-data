@@ -1,0 +1,20 @@
+{
+    "id": "2017_inferring_bgp_blackholing_internet_imc",
+    "name": "Inferring BGP Blackholing in the Internet",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/inferring_bgp_blackholing_internet_imc/inferring_bgp_blackholing_internet_imc.pdf",
+        "https://www.caida.org/publications/papers/2017/inferring_bgp_blackholing_activity/"
+    ]
+}

@@ -1,5 +1,6 @@
 {
-    "id": "gao_debin",
-    "nameFirst": "Debin",
-    "nameLast": "Gao"
+    "person": "person:gao_debin",
+    "organization": [
+        "Singapore Management University"
+    ]
 }

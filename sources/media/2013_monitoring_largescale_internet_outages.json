@@ -1,0 +1,23 @@
+{
+    "id": "2013_monitoring_largescale_internet_outages_fcc",
+    "name": "Monitoring Large-scale Internet Outages",
+    "tags": [
+        "active data analysis",
+        "internet outages",
+        "passive data analysis",
+        "policy",
+        "routing",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "federal_communications_commission_fcc",
+            "date": "2013.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/monitoring_largescale_internet_outages_fcc/monitoring_largescale_internet_outages_fcc.pdf",
+        "https://www.caida.org/publications/papers/2014/outages_censorship"
+    ]
+}

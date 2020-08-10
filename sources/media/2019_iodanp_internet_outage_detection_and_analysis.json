@@ -1,0 +1,21 @@
+{
+    "id": "2019_ioda-np_dhsst",
+    "name": "IODA-NP: Internet Outage Detection and Analysis",
+    "tags": [
+        "internet outages",
+        "routing",
+        "overview",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "dhs_st_cybersecurity_and_innovation_showcase",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/ioda-np_dhsst/ioda-np_dhsst.pdf",
+        "https://www.caida.org/projects/ioda/"
+    ]
+}

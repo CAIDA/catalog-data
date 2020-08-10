@@ -1,0 +1,21 @@
+{
+    "id": "2017_investigating_causes_congestion_african_imc",
+    "name": "Investigating the Causes of Congestion on the African IXP substrate",
+    "tags": [
+        "active data analysis",
+        "congestion",
+        "measurement methodology",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fanou, Rod\u00e9rick",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/investigating_causes_congestion_african_imc/investigating_causes_congestion_african_imc.pdf",
+        "https://www.caida.org/publications/papers/2017/investigating_causes_congestion_african/"
+    ]
+}

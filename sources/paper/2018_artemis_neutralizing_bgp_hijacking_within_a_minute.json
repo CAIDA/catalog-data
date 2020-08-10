@@ -1,0 +1,89 @@
+{
+    "id": "2018_artemis_tr",
+    "name": "ARTEMIS: Neutralizing BGP Hijacking within a Minute",
+    "datePublished": "2018.1",
+    "description": "BGP prefix hijacking is a critical threat to Internet organizations and users. Despite the availability of several defense approaches (ranging from RPKI to popular third-party services), none of them solves the problem adequately in practice. They suffer from: (i) lack of detection comprehensiveness, allowing sophisticated attackers to evade detection, (ii) limited accuracy, especially in the case of third-party detection, (iii) delayed verification and mitigation of incidents, reaching up to days, and (iv) lack of privacy and of flexibility in post-hijack counteractions, from the side of network operators. In this work, we propose ARTEMIS, a defense approach (a) based on accurate and fast detection operated by the AS itself, leveraging the pervasiveness of publicly available BGP monitoring services and their recent shift towards real-time streaming, thus (b) enabling flexible and fast mitigation of hijacking events. Compared to previous work, our approach combines characteristics desirable to network operators such as comprehensiveness, accuracy, speed, privacy, and flexibility. Finally, we show through real-world experiments that, with the ARTEMIS approach, prefix hijacking can be neutralized within a minute.",
+    "tags": [
+        "passive data analysis",
+        "routing",
+        "security",
+        "software/tools",
+        "topology"
+    ],
+    "pubdb_id": "paper645",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:sermpezis_pavlos",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:kotronis_vasileios",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:gigis_petros",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)",
+                "University of Crete"
+            ]
+        },
+        {
+            "person": "person:cicalese_danilo",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Telecom ParisTech"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2128",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3232755.3234554"
+        },
+        {
+            "from": "PubDBlinkId:1963",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/artemis_tr/artemis_tr.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1978",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2018/artemis_anrw/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

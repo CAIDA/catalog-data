@@ -1,0 +1,58 @@
+{
+    "id": "2011_moving_forward_building_ethics",
+    "name": "Moving Forward, Building an Ethics Community (Panel Statements) ",
+    "datePublished": "2011.3",
+    "description": "The organizing question around which this panel at WECSR 2011 rallied was how to move toward building a nation-state-agnostic ethics community in computer security research. '' From the proceedings of the Workshop on Ethics in Computer Security Research (WECSR) in March 2011. ",
+    "tags": [
+        "policy",
+        "trends",
+        "data sharing"
+    ],
+    "pubdb_id": "paper485",
+    "venue": "workshop_on_ethics_in_computer_security_research_wecsr",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Elchemy, Inc."
+            ]
+        },
+        {
+            "person": "person:stavrou_angelos",
+            "organization": [
+                "George Mason University"
+            ]
+        },
+        {
+            "person": "person:mchugh_john",
+            "organization": [
+                "Redjack"
+            ]
+        },
+        {
+            "person": "person:christin_nicolas",
+            "organization": [
+                "INI/CyLab, Carnegie Mellon University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:753",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/moving_forward_building_ethics/moving_forward_building_ethics.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Ethics in Computer Security Research (WECSR)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "id": "2013_evolution_internet_k-dense",
+    "name": "Evolution of the Internet k-Dense Structure",
+    "datePublished": "2013.10",
+    "description": "As the Internet autonomous system (AS)-level topology grows over time, some of its structural properties remain unchanged. Such time-invariant properties are generally interesting because they tend to reflect some fundamental processes or constraints behind Internet growth. As has been shown before, the time-invariant structural properties of the Internet include some most basic ones, such as the degree distribution or clustering. Here, we add to this time-invariant list a nontrivial property-- k-dense decomposition. This property is derived from a recursive form of edge multiplicity, defined as the number of triangles that share a given edge. We show that after proper normalization, the k-dense decomposition of the Internet has remained stable over the last decade, even though the Internet size has approximately doubled, and so has the k-density of its k-densest core. This core consists mostly of content providers peering at Internet eXchange Points, and it only loosely overlaps with the high-degree or high-rank AS core, consisting mostly of tier-1 transit providers. We thus show that high degrees and high k-densities reflect two different Internet-specific properties of ASes (transit versus content providers). As a consequence, even though degrees and k-densities of nodes are correlated, the relative fluctuations are strong, and related to that, random graphs with the same degree distribution or even degree correlations as in the Internet, do not reproduce its k-dense decomposition. Therefore an interesting open question is what Internet topology models or generators can fully explain or at least reproduce the k-dense properties of the Internet.",
+    "tags": [
+        "network geometry",
+        "passive data analysis",
+        "topology"
+    ],
+    "pubdb_id": "paper561",
+    "venue": "ieeeacm_transactions_on_networking",
+    "authors": [
+        {
+            "person": "person:orsini_chiara",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Institute of Informatics and Telematics, Italian National Research Council (IIT/CNR)",
+                "University of Pisa"
+            ]
+        },
+        {
+            "person": "person:gregori_enrico",
+            "organization": [
+                "Institute of Informatics and Telematics, Italian National Research Council (IIT/CNR)"
+            ]
+        },
+        {
+            "person": "person:lenzini_luciano",
+            "organization": [
+                "University of Pisa"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1382",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1301.5938"
+        },
+        {
+            "from": "PubDBlinkId:1381",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/TNET.2013.2282756"
+        },
+        {
+            "from": "PubDBlinkId:1380",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/evolution_internet_k-dense/evolution_internet_k-dense.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE/ACM Transactions on Networking",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

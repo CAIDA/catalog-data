@@ -1,0 +1,19 @@
+{
+    "id": "2006_nanog_wessels_0602",
+    "name": "DNS Cache Poisoners Lazy, Stupid, or Evil?",
+    "tags": [
+        "dns",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2006.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/nanog_wessels_0602/nanog_wessels_0602.pdf",
+        "http://www.nanog.org/mtg-0602/real/poisoners.ram"
+    ]
+}

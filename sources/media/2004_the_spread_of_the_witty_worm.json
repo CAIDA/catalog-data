@@ -1,0 +1,24 @@
+{
+    "id": "2004_witty_worm",
+    "name": "The Spread of the Witty Worm",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "san_diego_regional_information_watch_sdriw",
+            "date": "2004.6"
+        },
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "2004.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/witty_worm/witty_worm_lisa.pdf",
+        "https://www.caida.org/publications/presentations/2004/witty_worm/witty_worm_sdriw.pdf",
+        "https://www.caida.org/publications/papers/2004/witty"
+    ]
+}

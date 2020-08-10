@@ -1,5 +1,6 @@
 {
-    "id": "cotton_chase",
-    "nameFirst": "Chase",
-    "nameLast": "Cotton"
+    "person": "person:cotton_chase",
+    "organization": [
+        "University of Delaware"
+    ]
 }

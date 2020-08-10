@@ -1,0 +1,42 @@
+{
+    "id": "2020_atrt3_minority_statement",
+    "name": "Third Accountability and Transparency Review Team (ATRT3) Report - Minority Statement",
+    "datePublished": "2020.5",
+    "description": "As a member of ATRT3 review team, and per the current Operating Procedures for Specific Reviews, I (kc claffy) respectfully object to ATRT3\u2019s recommendation on the future of reviews. The report recommends terminating all Specific Reviews except their own (ATRT): the Security, Stability, and Resiliency Review (SSR), the Competition, Consumer Trust, and Consumer Choice Review (CCT) and the Registration Directory Service (RDS) Review (formerly WHOIS Review). More precisely, the report recommends to suspend any further SSR or RDS reviews until and unless a future ATRT deems them necessary again, and to allow only one additional CCT review, but not until after the next round of new gTLDs. The report recommends replacing these terminated reviews with a single new holistic review approximately every 8 years, a remarkably long time for the Internet industry. In addition, the report recommends terminating all independent organizational reviews and replacing them with self-directed, i.e., not independent, \u201ccontinuous improvement programs which have to produce a status report at least every three years.\u201d Implementing these changes would require substantial changes to ICANN\u2019s Bylaws.",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper705",
+    "venue": "icann_third_accountability_and_transparency_review_team_atrt3",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2290",
+            "label": "Full Report",
+            "to": "https://www.caida.org/publications/papers/2020/atrt3_report/"
+        },
+        {
+            "from": "PubDBlinkId:2287",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/atrt3_minority_statement/atrt3_minority_statement.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "ICANN Third Accountability and Transparency Review Team (ATRT3)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

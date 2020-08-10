@@ -1,0 +1,21 @@
+{
+    "id": "2002_Distance",
+    "name": "Distance metrics in the Internet",
+    "tags": [
+        "topology",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fomenkov, Marina",
+            "venue": "ieee_international_telecommunications_symposium_its",
+            "date": "2002.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/Distance/its2002.ps.gz",
+        "https://www.caida.org/publications/presentations/2002/Distance/its2002.html",
+        "https://www.caida.org/publications/presentations/2002/Distance/its2002.pdf",
+        "https://www.caida.org/publications/papers/2002/Distance"
+    ]
+}

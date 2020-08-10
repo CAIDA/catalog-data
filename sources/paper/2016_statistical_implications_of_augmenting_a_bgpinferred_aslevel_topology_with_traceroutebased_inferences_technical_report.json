@@ -1,0 +1,53 @@
+{
+    "id": "2016_statistical_implications_augmenting_bgp-tr",
+    "name": "Statistical implications of augmenting a BGP-inferred AS-level topology with traceroute-based inferences - Technical Report",
+    "datePublished": "2016.11",
+    "description": "The limitations of a BGP-inferred AS-level topology are generally understood, but the impact of various types of missing links on various topology properties and characteristics remains an open question. As part of CAIDA's continuing work to improve the completeness, accuracy, and richness of the measured AS-level Internet graphs, we developed a methodology to combine different types of data into a comprehensive (\"combined\") Internet topology. \r\n\r\nOur methodology has three steps: deriving a base graph from AS paths observed in publicly available BGP by breaking AS paths into AS links; augmenting this base graph with traceroute-derived inferred AS links (corresponding to only the first AS hop in the traceroute, for methodological reasons); and extracting AS level topology data from multilateral peering registration information in European Internet eXchange Point (IXP) route server data. Specifically, we examined how the introduction of 241,459 additional peering links (a 136% increase over the BGP graph) and 144 additional nodes (0.3% increase) inferred from traceroute and Internet eXchange (IX) data changed the topological properties of the ASlevel graph originally derived from the BGP data. Notably, only 6.8% of the ASes in the original BGP-based graph gained additional links. Of those ASes, links were primarily added to medium degree ASes, and ASes classified as edge ASes remained largely unaffected. For all four metrics we used to define the peripheral part of the graphs (customer cone, coreness, eccentricity, node betweenness), the change of the relative size of this part was 3% or less between the BGP-based and the combined graphs. One of the primary insights of this exercise is that for the largest and smallest degree ASes, BGP measurements capture connectivity characteristics well, but for many middle-degree ASes, additional connectivity not visible in global BGP data repositories is revealed by traceroute-based inferences.",
+    "tags": [
+        "topology",
+        "active data analysis",
+        "visualization",
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper623",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1833",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/statistical_implications_augmenting_bgp-tr/statistical_implications_augmenting_bgp-tr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

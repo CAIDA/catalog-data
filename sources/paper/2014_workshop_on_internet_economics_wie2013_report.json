@@ -1,0 +1,56 @@
+{
+    "id": "2014_wie2013_report",
+    "name": "Workshop on Internet Economics (WIE2013) Report",
+    "datePublished": "2014.7",
+    "description": "On December 12-13 2013, CAIDA and the Massachusetts Institute of Technology (MIT) hosted the (invitation-only) 4th interdisciplinary Workshop on Internet Economics (WIE) at the University of California\u201bs San Diego Supercomputer Center. This workshop series provides a forum for researchers, commercial Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to inform current and emerging regulatory and policy debates. The theme for this year\u201bs workshop was the economic health of the Internet ecosystem, including emphasis on the cost of and revenue sources to support content delivery, the quality of user experience, economic and policy influences on and effects of emerging specialized services, and the role of data in evaluating ecosystem health. This report describes the discussions and presents relevant open research questions identified by participants. Slides presented at the workshop and a copy of this final report are available at https://www.caida.org/workshops/wie/1312/.",
+    "tags": [
+        "economics",
+        "policy",
+        "workshop report",
+        "congestion"
+    ],
+    "pubdb_id": "paper550",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2163",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2656877.2656895"
+        },
+        {
+            "from": "PubDBlinkId:1344",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/wie2013_report/wie2013_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1398",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1312/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "3",
+        "pages": "116-119",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2018_policy_implications_third-party_measurement_tprc",
+    "name": "Policy Implications of Third-Party Measurement of Interdomain Congestion on the Internet",
+    "tags": [
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "policy",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Clark, David",
+            "venue": "telecommunications_policy_research_conference_tprc",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/policy_implications_third-party_measurement_tprc/policy_implications_third-party_measurement_tprc.pdf",
+        "https://www.caida.org/publications/papers/2018/policy_implications_third-party_measurement/"
+    ]
+}

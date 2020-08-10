@@ -1,5 +1,7 @@
 {
-    "id": "holterbach_thomas",
-    "nameFirst": "Thomas",
-    "nameLast": "Holterbach"
+    "person": "person:holterbach_thomas",
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+        "ETH Z\u00fcrich"
+    ]
 }

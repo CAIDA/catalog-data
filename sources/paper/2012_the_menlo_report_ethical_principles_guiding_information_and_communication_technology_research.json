@@ -1,0 +1,50 @@
+{
+    "id": "2012_menlo_report_actual_formatted",
+    "name": "The Menlo Report: Ethical Principles Guiding Information and Communication Technology Research",
+    "datePublished": "2012.8",
+    "description": "This report proposes a framework for ethical guidelines for computer and information security research, based on the principles set forth in the 1979 Belmont Report, a seminal guide for ethical research in the biomedical and behavioral sciences. Despite its age, the Belmont Report\u201bs insightful abstraction renders it a valuable cornerstone for other domains. We describe how the three principles in the Belmont report can be usefully applied in fields related to research about or involving information and communication technology. ICT research raises new challenges resulting from interactions between humans and communications technologies. In particular, today\u201bs ICT research contexts contend with ubiquitously connected network environments, overlaid with varied, often discordant legal regimes and social norms. We illustrate the application of these principles to information systems security research \u2014 a critical infrastructure priority with broad impact and demonstrated potential for widespread harm \u2014 although we expect the proposed framework to be relevant to other disciplines, including those targeted by the Belmont report but now operating in more complex and interconnected contexts.\r\n\r\nWe first outline the scope and motivation for this document, including a historical summary of the conceptual framework for traditional human subjects research, and the landscape of ICT research stakeholders. We review four core ethical principles, the three from the Belmont Report (Respect for Persons, Beneficence, and Justice) and an additional principle Respect for Law and Public Interest. We propose standard methods to operationalize these principles in the domain of research involving information and communication technology: identification of stakeholders and informed consent; balancing risks and benefits; fairness and equity; and compliance, transparency and accountability, respectively. We also describe how these principles and applications can be supported through assistive external oversight by ethical review boards, and internal self-evaluation tools such as an Ethical Impact Assessment.\r\n\r\nThe intent of this report is to help clarify how the characteristics of ICT raise new potential for harm and to show how a reinterpretation of ethical principles and their application can lay the groundwork for ethically defensible research.\r\n'' First published in December 11 with a a 60-day notice and request for comments, the DHS Menlo Report was later amended in August 2012 in response to comments following the federal register process. A [companion report](https://www.caida.org/publications/papers/2013/menlo_report_companion_actual_formatted) was later made available.",
+    "tags": [
+        "data sharing",
+        "overview",
+        "policy"
+    ],
+    "pubdb_id": "paper552",
+    "venue": "us_department_of_homeland_security",
+    "authors": [
+        {
+            "person": "person:dittrich_david",
+            "organization": [
+                "University of Washington"
+            ]
+        },
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1349",
+            "label": "Companion Report",
+            "to": "https://www.caida.org/publications/papers/2013/menlo_report_companion_actual_formatted/"
+        },
+        {
+            "from": "PubDBlinkId:1351",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/menlo_report_actual_formatted/menlo_report_actual_formatted.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "U.S. Department of Homeland Security",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

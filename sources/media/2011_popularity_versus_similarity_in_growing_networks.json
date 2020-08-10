@@ -1,0 +1,20 @@
+{
+    "id": "2011_ima_popularity_vs_similarity",
+    "name": "Popularity versus Similarity in Growing Networks",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "institute_for_mathematics_and_its_applications_ima",
+            "date": "2011.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/ima_popularity_vs_similarity/ima_popularity_vs_similarity.pptx",
+        "https://www.caida.org/publications/papers/2012/popularity_vs_similarity"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": "1999_Nae4hansen",
+    "name": "Internet measurement and data analysis: passive and active measurement",
+    "datePublished": "1999.8",
+    "description": "\n\nThe infrastructure of the Internet can be considered the cybernetic\nequivalent of an ecosystem. The last mile connections from the Internet\nto homes and businesses are supplied by thousands of capillaries, small\nand medium sized Internet Service Providers (ISPs), which are in turn\ninterconnected by `arteries' maintained by transit (backbone)\nproviders. The global infrastructure of the Internet consists of a\ncomplex array of competing telecommunications carriers and providers, a\nvery difficult infrastructure to analyze diagnostically except within\nthe borders of an individual provider's network. Nonetheless, insights\ninto the overall health and scalability of the system are critical to\nthe Internet's successful evolution.\n\n",
+    "tags": [
+        "overview"
+    ],
+    "pubdb_id": "paper138",
+    "venue": "american_statistical_association",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:mccreary_sean",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:92",
+            "label": "HTML",
+            "to": "Nae4hansen.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "American Statistical Association",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

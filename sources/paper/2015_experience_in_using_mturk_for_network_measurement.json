@@ -1,0 +1,67 @@
+{
+    "id": "2015_experience_using_mturk",
+    "name": "Experience in using MTurk for Network Measurement",
+    "datePublished": "2015.8",
+    "description": "Conducting sound measurement studies of the global Internet is inherently difficult. The collected data significantly depends on vantage point(s), sampling strategies, security policies, or measurement populations -- and conclusions drawn from the data can be sensitive to these biases. Crowdsourcing is a promising approach to address these challenges, although the epistemological implications have not yet received substantial attention by the research community. We share our findings from leveraging Amazon's Mechanical Turk (MTurk) system for three distinct network measurement tasks. We describe our failure to outsource to MTurk an execution of a security measurement tool, our subsequent successful integration of a simple yet meaningful measurement within a HIT, and finally the successful use of MTurk to quickly provide focused small sample sets that could not be obtained easily via alternate means. Finally, we discuss the implications of our experiences for other crowdsourced measurement research.",
+    "tags": [
+        "measurement methodology",
+        "ipv6",
+        "security"
+    ],
+    "pubdb_id": "paper625",
+    "venue": "acm_sigcomm_workshop_on_crowdsourcing_and_crowdsharing_of_big_internet_data_c2bid",
+    "authors": [
+        {
+            "person": "person:huz_gokay",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1850",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2787394.2787399"
+        },
+        {
+            "from": "PubDBlinkId:1848",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/experience_using_mturk/experience_using_mturk.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1849",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2015/experience_using_mechanical_turk_c2bid/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Workshop on Crowdsourcing and crowdsharing of Big (Internet) Data (C2B(I)D)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

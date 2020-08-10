@@ -1,0 +1,67 @@
+{
+    "id": "2016_anticipating_policy_social_implications_ndn",
+    "name": "Anticipating Policy and Social Implications of Named Data Networking",
+    "datePublished": "2016.12",
+    "description": "The Internet has become a critical platform for economic, political, cultural, and social activity. The technology behind the Internet continues to evolve, with ramifications for not only the technologies that govern network and application functions, but also for social, economic, and legal concerns. Internet protocols impact not only the basic performance and reliability of Internet services, but also impact debates about fairness issues in content delivery, free speech, trust and cybersecurity, privacy and intellectual property, and control over content.\r\n\r\nThis article discusses a proposed future Internet architecture that changes how data is delivered over the Internet. Named Data Networking (NDN) is a prominent example within the broader research field of information-centric networking (ICN). We cannot fully predict how changing protocols will change policy outcomes: social impacts of technology are caused by an interdependent mix of technological decisions, user decisions, and social and policy contexts. But if we take seriously the notion that running code shapes rights, behavior, and governance, then analyzing how NDN would alter that code\u2014the technical infrastructure we rely on every day\u2014is an important challenge.\r\n\r\nThis article addresses this challenge by beginning a conversation about the social impacts of NDN, with a particular focus on content producers and consumers. We describe the building blocks of NDN; its request-response data exchange is inspired by the Web, but functions at a more fundamental level in the protocol stack. NDN uses data names for routing and forwarding, provides per-packet data signatures, and leverages in-network storage.a We provide a scenario to illustrate the interactions of these building blocks and describe how the proposed changes could expand options for free speech, security, privacy, and anonymity, while raising new challenges regarding data retention and forgetting. We will address impacts for governments and content industries caused by changing the way networked data is identified, handled, and routed as well as examine how these changes raise new challenges and possibilities for ensuring neutrality across public networks. Taken together, this anticipatory analysis suggests research questions and areas of technical focus for ongoing NDN research, and helps us better understand the potential consequences of information-centric networking.",
+    "tags": [
+        "overview",
+        "topology",
+        "policy"
+    ],
+    "pubdb_id": "paper627",
+    "venue": "communications_of_the_acm",
+    "authors": [
+        {
+            "person": "person:shilton_katie",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        },
+        {
+            "person": "person:burke_jeffrey",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1866",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2915915"
+        },
+        {
+            "from": "PubDBlinkId:1864",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/anticipating_policy_social_implications_ndn/anticipating_policy_social_implications_ndn.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1865",
+            "label": "Related Tech Report",
+            "to": "https://www.caida.org/publications/papers/2014/world_on_ndn/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Communications of the ACM",
+        "volume": "59",
+        "number": "12",
+        "pages": "92-101",
+        "linkedObjects": ""
+    }
+}

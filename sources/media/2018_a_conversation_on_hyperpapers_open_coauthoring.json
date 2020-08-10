@@ -1,0 +1,25 @@
+{
+    "id": "2018_hyperpapers_open_coauthoring_aims",
+    "name": "A Conversation on Hyperpapers & Open Co-Authoring",
+    "tags": [
+        "education",
+        "policy",
+        "software/tools",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        },
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "dagstuhl_seminar",
+            "date": "2018.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/hyperpapers_open_coauthoring_aims/hyperpapers_open_coauthoring_aims.pdf"
+    ]
+}

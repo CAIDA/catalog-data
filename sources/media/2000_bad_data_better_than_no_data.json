@@ -1,0 +1,19 @@
+{
+    "id": "2000_darpa0010",
+    "name": "bad data better than no data?",
+    "tags": [
+        "data",
+        "overview",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "darpa_pi_meeting",
+            "date": "2000.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/darpa0010/index.html"
+    ]
+}

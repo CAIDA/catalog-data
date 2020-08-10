@@ -1,0 +1,19 @@
+{
+    "id": "2008_frag_hyperbolic_embedding",
+    "name": "Application of Hyperbolic Embedding in Overlay Network Construction",
+    "tags": [
+        "peer-to-peer",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Papadopoulos, Fragkiskos",
+            "venue": "santa_fe_institute_sfi",
+            "date": "2008.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/frag_hyperbolic_embedding/frag_hyperbolic_embedding.pdf"
+    ]
+}

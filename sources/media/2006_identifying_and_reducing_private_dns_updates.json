@@ -1,0 +1,17 @@
+{
+    "id": "2006_wide2006-03_rfc1918",
+    "name": "Identifying and Reducing Private DNS Updates",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shang, Hao",
+            "venue": "wide",
+            "date": "2006.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/papers/2006/private_dns_updates"
+    ]
+}

@@ -3,11 +3,14 @@
     "name": "MIDAR",
     "organization": "CAIDA",
     "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "ip address",
+        "alias resolution"
+    ],
+    "resouces": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.caida.org/tools/measurement/midar/",
             "tags": []
         }
     ],
@@ -16,7 +19,31 @@
     ],
     "links": [
         {
-            "to": "dataset:internet_Topology_Data_Kit",
+            "to": "software:vela_midar_api",
+            "label": "used by"
+        },
+        {
+            "to": "software:vela",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:internet_topology_data_kit",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2013_alias_resolution_midar",
+            "label": "used by"
+        },
+        {
+            "to": "paper:internet_scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "label": "used by"
+        },
+        {
+            "to": "paper:unintended_consequences_effects_of_submarine_cable_deployment_on_internet_routing",
+            "label": "used by"
+        },
+        {
+            "to": "media:2010_alias_resolution_midar",
             "label": "used by"
         }
     ]

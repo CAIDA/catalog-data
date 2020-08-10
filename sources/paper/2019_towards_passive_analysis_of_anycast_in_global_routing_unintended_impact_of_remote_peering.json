@@ -1,0 +1,74 @@
+{
+    "id": "2019_towards_passive_analysis_anycast",
+    "name": "Towards Passive Analysis of Anycast in Global Routing: Unintended Impact of Remote Peering",
+    "datePublished": "2019.7",
+    "description": "Anycast has been widely adopted by today\u2019s Internet services, including DNS, CDN, and DDoS protection, in which the same IP address is announced from distributed locations and clients are directed to the topologically-nearest service replica. Prior research has focused on various aspects of anycast, either its usage in particular services such as DNS or characterizing its adoption by Internetwide active probing methods. In this paper, we first explore an alternative approach to characterize anycast based on previously collected global BGP routing information. Leveraging state-of-the-art active measurement results as near-ground-truth, our passive method without requiring any Internet-wide probes can achieve 90% accuracy in detecting anycast prefixes. More importantly, our approach uncovers anycast prefixes that have been missed by prior datasets based on active measurements. While investigating the root causes of inaccuracy, we reveal that anycast routing has been entangled with the increased adoption of remote peering, a type of layer-2 interconnection where an IP network may peer at an IXP remotely without being physically present at the IXP. The invisibility of remote peering from layer-3 breaks the assumption of the shortest AS paths on BGP and causes an unintended impact on anycast performance. We identify such cases from BGP routing information and observe that at least 19.2% of anycast prefixes have been potentially impacted by remote peering.",
+    "tags": [
+        "routing",
+        "dns",
+        "topology"
+    ],
+    "pubdb_id": "paper678",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:bian_rui",
+            "organization": [
+                "University of Delaware"
+            ]
+        },
+        {
+            "person": "person:hao_shuai",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:wang_haining",
+            "organization": [
+                "University of Delaware"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:cotton_chase",
+            "organization": [
+                "University of Delaware"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2129",
+            "label": "CCR Online",
+            "to": "https://ccronline.sigcomm.org/2019/ccr-july-2019/towards-passive-analysis-of-anycast-in-global-routing-unintended-impact-of-remote-peering/"
+        },
+        {
+            "from": "PubDBlinkId:2130",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/towards_passive_analysis_anycast/towards_passive_analysis_anycast.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "49",
+        "number": "3",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

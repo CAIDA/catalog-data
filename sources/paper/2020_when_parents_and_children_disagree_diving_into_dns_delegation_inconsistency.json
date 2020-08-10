@@ -1,0 +1,80 @@
+{
+    "id": "2020_when_parents_children_disagree",
+    "name": "When parents and children disagree: Diving into DNS delegation inconsistency",
+    "datePublished": "2020.3",
+    "description": "The Domain Name System (DNS) is a hierarchical, decentralized, and distributed database. A key mechanism that enables the DNS to be hierarchical and distributed is delegation of responsibility from parent to child zones\u2014typically managed by different entities. RFC1034 states that authoritative nameserver (NS) records at both parent and child should be \"consistent and remain so\", but we find inconsistencies for over 13M second-level domains. We classify the type of inconsistencies we observe, and the behavior of resolvers in the face of such inconsistencies, using RIPE Atlas to probe our experimental domain configured for different scenarios. Our results underline the risk such inconsistencies pose to the availability of misconfigured domains.",
+    "tags": [
+        "dns",
+        "security"
+    ],
+    "pubdb_id": "paper699",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:sommese_raffaele",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:moura_giovane c.m.",
+            "organization": [
+                "SIDN Labs"
+            ]
+        },
+        {
+            "person": "person:jonker_mattijs",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:van rijswijk-deij_roland",
+            "organization": [
+                "NLnet Labs",
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sperotto_anna",
+            "organization": [
+                "University of Twente"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2254",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/when_parents_children_disagree/when_parents_children_disagree.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2263",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2020/when_parents_children_disagree_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "id": "2015_how_to_throw_the_race",
+    "name": "How to Throw the Race to the Bottom: Revisiting Signals for Ethical and Legal Research Using Online Data",
+    "datePublished": "2015.2",
+    "description": "With research using data available online, researcher conduct is not fully prescribed or proscribed by formal ethical codes of conduct or law because of ill-fitting \"expectations signals\" \u2014 indicators of legal and ethical risk. This article describes where these ordering forces breakdown in the context of online research and suggests how to identify and respond to these grey areas by applying common legal and ethical tenets that run across evolving models. It is intended to advance the collective dialogue work-in-progress toward a path that revisits and harmonizes more appropriate ethical and legal signals for research using online data between and among researchers, oversight entities, policymakers and society.",
+    "tags": [
+        "data sharing",
+        "policy"
+    ],
+    "pubdb_id": "paper574",
+    "venue": "acm_sigcas_computers_and_society",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1647",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2738210.2738211"
+        },
+        {
+            "from": "PubDBlinkId:1582",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/how_to_throw_the_race/how_to_throw_the_race.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCAS Computers and Society",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

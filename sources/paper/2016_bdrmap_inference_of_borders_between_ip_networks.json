@@ -1,0 +1,79 @@
+{
+    "id": "2016_bdrmap",
+    "name": "bdrmap: Inference of Borders Between IP Networks",
+    "datePublished": "2016.11",
+    "description": "We tackle the tedious and unsolved problem of automatically and correctly inferring network boundaries in traceroute. We explain why such a conceptually simple task is so hard in the real world, and how lack of progress has impeded a wide range of research and development efforts for decades. We develop and validate a method that uses targeted traceroutes, knowledge of traceroute idiosyncrasies, and codification of topological constraints in a structured set of heuristics, to correctly identify interdomain links at the granularity of individual border routers. In this study we focus on the network boundaries we have most confidence we can accurately infer in the presence of sampling bias: interdomain links attached to the network launching the traceroute. We develop a scalable implementation of our algorithm and validate it against ground truth information provided by four networks on 3,277 links, which showed 96.3% - 98.9% of our inferences were correct.\r\n\r\nWith 19 vantage points (VPs) distributed across a large U.S. broadband provider, we use our method to reveal the tremendous density of router-level interconnection between some ASes. In January 2016, the broad- band provider had 45 router-level links with a Tier-1 peer. We also quantify the VP deployment required to observe this ISP's interdomain connectivity, with 17 VPs required to observe all 45 links. Our method forms the cornerstone of the system we are building to map interdomain performance, and we release our code.",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology",
+        "congestion"
+    ],
+    "pubdb_id": "paper621",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1819",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2987443.2987467"
+        },
+        {
+            "from": "PubDBlinkId:1818",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/bdrmap/bdrmap.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1834",
+            "label": "Related Code",
+            "to": "https://www.caida.org/tools/measurement/scamper/"
+        },
+        {
+            "from": "PubDBlinkId:1835",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2016/bdrmap_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "381-396",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2006_dw_wrong_with_dns",
+    "name": "Whats Wrong With The DNS",
+    "tags": [
+        "dns",
+        "data",
+        "overview",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "ripe_meeting",
+            "date": "2006.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/dw_wrong_with_dns/dw_wrong_with_dns.pdf"
+    ]
+}

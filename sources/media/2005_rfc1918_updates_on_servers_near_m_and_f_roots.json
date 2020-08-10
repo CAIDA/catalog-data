@@ -1,0 +1,17 @@
+{
+    "id": "2005_rfc1918",
+    "name": "RFC1918 updates on servers near M and F roots",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "oarc",
+            "date": "2005.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/rfc1918/rfc1918.pdf"
+    ]
+}

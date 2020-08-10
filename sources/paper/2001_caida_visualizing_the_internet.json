@@ -1,0 +1,37 @@
+{
+    "id": "2001_caida",
+    "name": "CAIDA: Visualizing the Internet",
+    "datePublished": "2001.1",
+    "description": "Internet usage is increasing as access to the Net grows critical for\r\nengineering, research, and all sorts of collaborative activities. It is\r\ndifficult to imagine how the dynamically changing topological\r\ninfrastructure of the Internet looks at any particular moment. As yet,\r\nwe understand little about the impact that changes in traffic,\r\ntopology, protocols, and business practices have on this new virtual\r\nfrontier.\r\n\r\n",
+    "tags": [
+        "overview"
+    ],
+    "pubdb_id": "paper119",
+    "venue": "internet_computing_online",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:222",
+            "label": "HTML",
+            "to": "caida.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Internet Computing Online",
+        "volume": "",
+        "number": "",
+        "pages": "88",
+        "linkedObjects": ""
+    }
+}

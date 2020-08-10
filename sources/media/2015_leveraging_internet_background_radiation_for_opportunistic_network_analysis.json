@@ -1,0 +1,21 @@
+{
+    "id": "2015_leveraging_internet_background_imc",
+    "name": "Leveraging Internet Background Radiation for Opportunistic Network Analysis",
+    "tags": [
+        "measurement methodology",
+        "security",
+        "network telescope",
+        "internet outages"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Benson, Karyn",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2015.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/leveraging_internet_background_imc/leveraging_internet_background_imc.pdf",
+        "https://www.caida.org/publications/papers/2015/leveraging_internet_background_radiation"
+    ]
+}

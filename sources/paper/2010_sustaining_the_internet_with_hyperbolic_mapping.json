@@ -1,0 +1,66 @@
+{
+    "id": "2010_sustaining_internet_hyperbolic",
+    "name": "Sustaining the Internet with Hyperbolic Mapping",
+    "datePublished": "2010.10",
+    "description": "The Internet infrastructure is severely stressed. Rapidly growing overheads associated with the primary function of the Internet---routing information packets between any two computers in the world---cause concerns among Internet experts that the existing Internet routing architecture may not sustain even another decade. Here we present a method to map the Internet to a hyperbolic space. Guided with the constructed map, which we release with this paper, Internet routing exhibits scaling properties close to theoretically best possible, thus resolving serious scaling limitations that the Internet faces today. Besides this immediate practical viability, our network mapping method can provide a different perspective on the community structure in complex networks.",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "pubdb_id": "paper492",
+    "venue": "nature_communications",
+    "authors": [
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "University of Cyprus"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:788",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:757",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1038/ncomms1063"
+        },
+        {
+            "from": "PubDBlinkId:742",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/sustaining_internet_hyperbolic/sustaining_internet_hyperbolic.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1558",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/mmds_hyperbolic_mapping_complex_networks/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Nature Communications",
+        "volume": "1",
+        "number": "62",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

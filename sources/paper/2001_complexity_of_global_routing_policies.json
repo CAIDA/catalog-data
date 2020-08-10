@@ -1,0 +1,48 @@
+{
+    "id": "2001_CGR",
+    "name": "Complexity of global routing policies",
+    "datePublished": "2001.7",
+    "description": "In this paper we introduce a framework for analyzing\nBGP connectivity, and evaluate a number of new complexity\nmeasures for a union of core backbone BGP tables. Sensitive to engineering resource limitations of router memory\nand CPU cycles, we focus on techniques to estimate redundancy of the merged tables, in particular how many entries\nare essential for complete and correct routing.\n\nWe introduced the notion of policy atoms as part\nof a calculus in routing table analysis. We found that the\nnumber of atoms and individual counts of atoms with a given\nnumber of prefixes properly scale with the Internet's growth\nand with filtering of prefixes by length. We show that the\nuse of atoms can potentially reduce the number of route\nannouncements by a factor of two, with all routing policies\nbeing preserved. Atoms thus represent Internet properties\nin an accurate way, yet with much smaller complexity.\n\nSeveral of our analysis results suggest that commonly\nheld Internet engineering beliefs require re-consideration.\nWe find that more specific routes had a relatively constant\nshare of routes in backbone tables across 2000/2001. On\nthe other hand, the churn of more specific routes was much\nlarger than that of top prefixes. We also find that deaggregation of existing announcements is a second major source\n(beyond announcement of recently allocated address space)\nof new top (least specific) prefixes in global BGP tables.\nWe also provide examples of misconguration and noise in\nBGP data, including multi-origin prefixes, AS paths with\napparent routing loops (some of them due to typographical\nerrors, other actual loops undetected by local BGP speakers), inadvertent transit through customer ASes.\n",
+    "tags": [
+        "routing"
+    ],
+    "pubdb_id": "paper115",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:235",
+            "label": "gzipped postscript",
+            "to": "cgr.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:234",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/CGR/cgr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

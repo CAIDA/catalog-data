@@ -1,0 +1,55 @@
+{
+    "id": "2008_self_similarity",
+    "name": "Self-similarity of complex networks and hidden metric spaces",
+    "datePublished": "2008.2",
+    "description": "We demonstrate that the self-similarity of some scale-free networks with respect to a simple degree thresholding\r\nrenormalization scheme finds a natural interpretation in the assumption that network\r\nnodes exist in hidden metric spaces. Clustering, i.e., cycles of length three, plays a crucial role in this\r\nframework as a topological reflection of the triangle inequality in the hidden geometry. We prove that\r\na class of hidden variable models with underlying metric spaces are able to accurately reproduce the\r\nself-similarity properties that we measured in the real networks. Our findings indicate that hidden\r\ngeometries underlying these real networks are a plausible explanation for their observed topologies\r\nand, in particular, for their self-similarity with respect to the degree-based renormalization.\r\n\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper33",
+    "venue": "physical_review_letters",
+    "authors": [
+        {
+            "person": "person:serrano_mirian \u00e1ngeles",
+            "organization": [
+                "Institute of Theoretical Physics, LBS, SB, EPFL"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:670",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevLett.100.078701"
+        },
+        {
+            "from": "PubDBlinkId:671",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/self_similarity/self_similarity.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Institute of Theoretical Physics, Cooperative Association for Internet Data Analysis (CAIDA), and Universitat de Barcelona",
+        "bibtex": "",
+        "journal": "Physical Review Letters",
+        "volume": "100",
+        "number": "078701",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

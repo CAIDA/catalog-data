@@ -1,0 +1,19 @@
+{
+    "id": "2009_complex_as_evolution",
+    "name": "Evolution of the Internet AS-Level Ecosystem",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "international_conference_on_complex_sciences_complex",
+            "date": "2009.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/complex_as_evolution/complex_as_evolution.pdf",
+        "https://www.caida.org/publications/papers/2010/AS_evolution"
+    ]
+}

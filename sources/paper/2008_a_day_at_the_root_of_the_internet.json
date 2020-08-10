@@ -1,0 +1,63 @@
+{
+    "id": "2008_root_internet",
+    "name": "A Day at the Root of the Internet",
+    "datePublished": "2008.10",
+    "description": "We analyzed the largest simultaneous collection of full-payload packet traces from a core component of the global Internet infrastructure ever made available to academic researchers. Our dataset consists of three large samples of global DNS traffic collected during three annual 'Day in the Life of the Internet' (DITL) experiments in January 2006, January 2007, and March 2008. Building on our previous comparison of DITL 2006 and DITL 2007 DNS datasets [28], we venture to extract historical trends, comparisons with other data sources, and interpretations, including traffic growth, usage patterns, impact of anycast distribution, and persistent problems in the root nameserver system that reflect ominously on the global Internet. Most notably, the data consistently reveals an extraordinary amount of DNS pollution - an estimated 98% of the traffic at the root servers should not be there at all. Unfortunately, there is no clear path to reducing the pollution, so root server operators, and those who finance them, must perpetually overprovision to handle this pollution. Our study presents the most complete characterization to date of traffic reaching the roots, and while the study does not adequately fulfill the 'Day in the Life of the Internet' vision, it does succeed at unequivocally demonstrating that the infrastructure on which we are all now betting our professional, personal, and political lives deserves a closer and more scientific look.\r\n",
+    "tags": [
+        "dns",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper23",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:castro_sebastian",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "The Measurement Factory, Inc."
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:727",
+            "label": "CCR Online",
+            "to": "http://ccr.sigcomm.org/online/?q=node/418"
+        },
+        {
+            "from": "PubDBlinkId:726",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/root_internet/root_internet.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "38",
+        "number": "5",
+        "pages": "41-46",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "id": "2016_bgp_hackathon_2016_report",
+    "name": "The BGP Hackathon 2016 Report",
+    "datePublished": "2016.7",
+    "description": "Internet routes \u2013 controlled by the Border Gateway Protocol (BGP) \u2013 carry our communication and our commerce, yet many aspects of routing are opaque to even network operators, and BGP is known to contribute to performance, reliability, and security problems. The research and operations communities have developed a set of tools and data sources for understanding and experimenting with BGP, and on February 2016 we organized the first BGP Hackathon, themed around live measurement and monitoring of Internet routing. The Hackathon included students, researchers, operators, providers, policymakers, and funding agencies, working together on projects to measure, visualize, and improve routing or the tools we use to study routing. This report describes the tools used at the Hackathon and presents an overview of the projects. The Hackathon was a success, and we look forward to future iterations.",
+    "tags": [
+        "routing",
+        "software/tools",
+        "workshop report"
+    ],
+    "pubdb_id": "paper615",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:katz-bassett_ethan",
+            "organization": [
+                "University of Southern California"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)",
+                "University of Crete"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1795",
+            "label": "CCR Online",
+            "to": "https://ccronline.sigcomm.org/2016/the-bgp-hackathon-2016-report-2/"
+        },
+        {
+            "from": "PubDBlinkId:1796",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/bgp_hackathon_2016_report/bgp_hackathon_2016_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1799",
+            "label": "Related Workshop",
+            "to": "/workshops/bgp-hackathon/1602/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

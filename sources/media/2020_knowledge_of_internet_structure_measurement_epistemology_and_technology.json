@@ -1,0 +1,21 @@
+{
+    "id": "2020_kismet_nsfexpo",
+    "name": "Knowledge of Internet Structure: Measurement, Epistemology, and Technology",
+    "tags": [
+        "data sharing",
+        "data",
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "nsf_accelerator_convergence_expo",
+            "date": "2020.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/kismet_nsfexpo/kismet_nsfexpo.pdf",
+        "https://www.caida.org/projects/kismet/"
+    ]
+}

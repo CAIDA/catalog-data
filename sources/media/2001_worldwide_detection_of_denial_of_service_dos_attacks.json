@@ -1,0 +1,18 @@
+{
+    "id": "2001_usenix0108_dos",
+    "name": "Worldwide Detection of Denial of Service DoS Attacks",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "usenix",
+            "date": "2001.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/usenix0108_dos/index.htm",
+        "https://www.caida.org/publications/presentations/2001/usenix0108_dos/usenix0108_dos.pdf"
+    ]
+}

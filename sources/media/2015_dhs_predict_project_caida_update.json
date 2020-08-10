@@ -1,0 +1,21 @@
+{
+    "id": "2015_predict_pi_jan",
+    "name": "DHS PREDICT Project: CAIDA Update",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2015.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/predict_pi_jan/predict_pi_jan.pdf"
+    ]
+}

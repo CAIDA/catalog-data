@@ -1,0 +1,20 @@
+{
+    "id": "2020_unintended_consequences_pam",
+    "name": "Unintended consequences: Effects of submarine cable deployment on Internet routing",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fanou, Rod\u00e9rick",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/unintended_consequences_pam/unintended_consequences_pam.pdf",
+        "https://www.caida.org/publications/papers/2020/unintended_consequences/"
+    ]
+}

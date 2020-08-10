@@ -1,0 +1,20 @@
+{
+    "id": "2015_measuring_monitoring_bgp_ietf",
+    "name": "Measuring and Monitoring BGP",
+    "tags": [
+        "routing",
+        "software/tools",
+        "internet outages"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "internet_engineering_task_force_ietf",
+            "date": "2015.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/measuring_monitoring_bgp_ietf/measuring_monitoring_bgp_ietf.pdf",
+        "https://youtu.be/H15AkkW5Aj0?t=1h22m"
+    ]
+}

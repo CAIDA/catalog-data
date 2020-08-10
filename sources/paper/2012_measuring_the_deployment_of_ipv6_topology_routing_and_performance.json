@@ -1,0 +1,75 @@
+{
+    "id": "2012_measuring_deployment_ipv6",
+    "name": "Measuring the Deployment of IPv6: Topology, Routing and Performance",
+    "datePublished": "2012.11",
+    "description": "We use historical BGP data and recent active measurements to analyze trends in the growth, structure, dynamics and performance of the evolving IPv6 Internet, and compare them to the evolution of IPv4. We find that the IPv6 network is maturing, albeit slowly. While most core Internet transit providers have deployed IPv6, edge networks are lagging. Early IPv6 network deployment was stronger in Europe and the Asia-Pacific region, than in North America. Current IPv6 network deployment still shows the same pattern. The IPv6 topology is characterized by a single dominant player \u2014 Hurricane Electric \u2014 which appears in a large fraction of IPv6 AS paths, and is more dominant in IPv6 than the most dominant player in IPv4. Routing dynamics in the IPv6 topology are largely similar to those in IPv4, and churn in both networks grows at the same rate as the underlying topologies. Our measurements suggest that performance over IPv6 paths is comparable to that over IPv4 paths if the AS-level paths are the same, but can be much worse than IPv4 if the AS-level paths differ.",
+    "tags": [
+        "topology",
+        "routing",
+        "passive data analysis",
+        "ipv6"
+    ],
+    "pubdb_id": "paper518",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:aben_emile",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:817",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/measuring_deployment_ipv6/measuring_deployment_ipv6.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1546",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/measuring_deployment_ipv6_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "537-550",
+        "linkedObjects": ""
+    }
+}

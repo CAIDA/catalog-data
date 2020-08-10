@@ -1,0 +1,21 @@
+{
+    "id": "2008_predict_pi_may",
+    "name": "CAIDA participation in PREDICT",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2008.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/predict_pi_may/predict_pi_may.pdf"
+    ]
+}

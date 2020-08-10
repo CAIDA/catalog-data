@@ -1,0 +1,62 @@
+{
+    "id": "2004_p2p-dying",
+    "name": "Is P2P dying or just hiding?",
+    "datePublished": "2004.12",
+    "description": "Recent reports in the popular media suggest a significant\ndecrease in peer-to-peer (P2P) file-sharing traffic, attributed\nto the public's response to legal threats. Have we reached the end\nof the P2P revolution? In pursuit of legitimate data to verify this\nhypothesis, we embark on a more accurate measurement effort of\nP2P traffic at the link level. In contrast to previous efforts we introduce\ntwo novel elements in our methodology. First, we measure\ntraffic of all known popular P2P protocols. Second, we go beyond\nthe \"known port\" limitation by reverse engineering the protocols\nand identifying characteristic strings in the payload. We find that,\nif measured accurately, P2P traffic has never declined; indeed we\nhave never seen the proportion of p2p traffic decrease over time\n(any change is an increase) in any of our data sources.\n",
+    "tags": [
+        "passive data analysis",
+        "peer-to-peer"
+    ],
+    "pubdb_id": "paper71",
+    "venue": "global_internet_and_next_generation_networks",
+    "authors": [
+        {
+            "person": "person:karagiannis_thomas",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:faloutsos_michalis",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:535",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/p2p-dying/p2p-dying.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Global Internet and Next Generation Networks",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

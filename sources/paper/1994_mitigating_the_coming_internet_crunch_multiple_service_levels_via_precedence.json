@@ -1,0 +1,60 @@
+{
+    "id": "1994_mcic",
+    "name": "Mitigating the coming Internet crunch: multiple service levels via Precedence",
+    "datePublished": "1994.11",
+    "description": "The current architecture and implementation of the Internet assumes a vast aggregation of traffic from many sources and stochastic distribution of traffic both in space (traffic source) and time (burstiness of traffic volume). Given this general assumption, Internet components typically have little if any ability to control the volume and distribution of incoming traffic. As a result the network, particularly from the perspective of the router, is vulnerable to significant consumption of networking resources by high-volume applications, with possibly little stochastic behavior, from a few users. This often impacts the overall profile of network traffic as aggregated from many clients. An example is the continuous flows introduced by real time applications such as packet audio, video, or rapidly changing graphics.\r\n\r\nThis situation creates a time window where applications exist on a network not designed for them, but before an appropriately architected network can augment the current infrastructure and cope with the new type of workload. We propose a scheme for voluntarily setting Internet traffic priorities by end-users and applications, using the existing 3-bit Precedence field in the Internet Protocol header.\r\n\r\nOur proposal has three elements. First, network routers would queue incoming packets by IP Precedence value instead of the customary single-threaded FIFO. Second, users and their applications would voluntarily use different and appropriate precedence values in their outgoing transmissions according to some defined criteria. Third, network service providers may monitor the precedence levels of traffic entering their network, and use some mechanism such as a quota system to discourage users from setting high precedence values on all their traffic. All three elements can be implemented gradually and selectively across the Internet infrastructure, providing a smooth transition path from the present system. The experience we gain from an implementation will furthermore provide a valuable knowledge base from which to develop sound accounting and billing mechanisms and policies in the future.\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper165",
+    "venue": "journal_of_high_speed_networks",
+    "authors": [
+        {
+            "person": "person:bohn_roger",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:wolff_stephen",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:834",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.3233/JHS-1994-3402"
+        },
+        {
+            "from": "PubDBlinkId:413",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/mcic/mcic.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Journal of High Speed Networks",
+        "volume": "3",
+        "number": "4",
+        "pages": "335-349",
+        "linkedObjects": ""
+    }
+}

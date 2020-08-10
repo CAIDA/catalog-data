@@ -1,0 +1,80 @@
+{
+    "id": "2019_tracking_deployment_ipv6",
+    "name": "Tracking the deployment of IPv6: Topology, routing and performance",
+    "datePublished": "2019.12",
+    "description": "We use historical BGP data and recent active measurements to analyze trends in the growth, structure, dynamics and performance of the evolving IPv6 Internet, and compare them to the evolution of IPv4. We find that the IPv6 network is maturing, albeit slowly, and notably IPv6 growth at the AS-level appears to have slowed after 2012. While most core Internet transit providers have deployed IPv6, edge networks are lagging. Early IPv6 network deployment was stronger in Europe and the Asia-Pacific region, than in North America. Current IPv6 network deployment still shows the same pattern. The IPv6 topology is characterized by a single dominant player \u2013 Hurricane Electric \u2013 which appears in a large fraction of IPv6 AS paths, and is more dominant in IPv6 than the most dominant player in IPv4. Routing dynamics in the IPv6 topology are largely similar to those in IPv4, and churn in both networks grows at the same rate as the underlying topologies. Our measurements suggest that performance over IPv6 paths is now largely comparable to (or better than) that over IPv4 paths.",
+    "tags": [
+        "ipv6",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper693",
+    "venue": "computer_networks",
+    "authors": [
+        {
+            "person": "person:jia_siyuan",
+            "organization": [
+                "Northeastern University, Shenyang, China"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:aben_emile",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        },
+        {
+            "person": "person:claffy_kimberly",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2228",
+            "label": "DOI",
+            "to": "https://doi.org/10.1016/j.comnet.2019.106947"
+        },
+        {
+            "from": "PubDBlinkId:2219",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/tracking_deployment_ipv6/tracking_deployment_ipv6.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Computer Networks",
+        "volume": "165",
+        "number": "106947",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

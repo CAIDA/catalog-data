@@ -1,0 +1,61 @@
+{
+    "id": "2012_revealing_mpls_tunnels",
+    "name": "Revealing MPLS tunnels obscured from traceroute",
+    "datePublished": "2012.4",
+    "description": "Operators have deployed Multiprotocol Label Switching\r\n(MPLS) in the Internet for over a decade. However, its impact on Internet topology measurements is not well known,\r\nand it is possible for some MPLS configurations to lead to\r\nfalse router-level links in maps derived from traceroute data.\r\nIn this paper, we introduce a measurement-based classification of MPLS tunnels, identifying tunnels where IP hops are\r\nrevealed but not explicitly tagged as label switching routers,\r\nas well as tunnels that obscure the underlying path. Using a large-scale dataset we collected, we show that paths\r\nfrequently cross MPLS tunnels in today\u201bs Internet: in our\r\ndata, at least 30% of the paths we tested traverse an MPLS\r\ntunnel. We also propose and evaluate several methods to\r\nreveal MPLS tunnels that are not explicitly flagged as such:\r\nwe discover that their fraction is significant (up to half the\r\nexplicit tunnel quantity) but most of them do not obscure\r\nIP-level topology discovery.",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper507",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "Universit\u00e9 de Li\u00e8ge, Li\u00e8ge, Belgium"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:m\u00e9rindol_pascal",
+            "organization": [
+                "Universit\u00e9 de Strasbourg, Strasbourg, France"
+            ]
+        },
+        {
+            "person": "person:pansiot_jean-jacques",
+            "organization": [
+                "Universit\u00e9 de Strasbourg, Strasbourg, France"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:791",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2185376.2185388"
+        },
+        {
+            "from": "PubDBlinkId:792",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/revealing_mpls_tunnels/revealing_mpls_tunnels.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "42",
+        "number": "2",
+        "pages": "87-93",
+        "linkedObjects": ""
+    }
+}

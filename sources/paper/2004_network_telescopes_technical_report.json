@@ -1,0 +1,62 @@
+{
+    "id": "2004_tr-2004-04",
+    "name": "Network Telescopes: Technical Report",
+    "datePublished": "2004.7",
+    "description": "A network telescope is a portion of routed IP address space in which\r\nlittle or no legitimate traffic exists. Monitoring unexpected traffic\r\narriving at a network telescope provides the opportunity to view\r\nremote network security events such as various forms of flooding\r\ndenial-of-service attacks, infection of hosts by Internet worms, and\r\nnetwork scanning. In this paper, we examine the effects of the scope\r\nand locality of network telescopes on accurate measurement of both\r\npandemic incidents (the spread of an Internet worm) and endemic\r\nincidents (denial-of-service attacks) on the Internet. In particular,\r\nwe study the relationship between the size of the network telescope\r\nand its ability to detect network events, characterize its precision\r\nin determining event duration and rate, and discuss practical\r\nconsiderations in the deployment of network telescopes.\r\n",
+    "tags": [
+        "security",
+        "measurement methodology",
+        "network telescope"
+    ],
+    "pubdb_id": "paper73",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:voelker_geoffrey",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:40",
+            "label": "gzipped postscript",
+            "to": "tr-2004-04.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:41",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/tr-2004-04/tr-2004-04.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2009_aims_ip_router_mapping",
+    "name": "IP-to-Router Mapping Techniques",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Keys, Ken",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2009.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/aims_ip_router_mapping/aims_ip_router_mapping.pdf"
+    ]
+}

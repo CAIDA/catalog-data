@@ -1,0 +1,17 @@
+{
+    "id": "2008_wide_josh-bulk_dns",
+    "name": "Bulk DNS Lookup Service",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Polterock, Joshua",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_josh-bulk_dns//workshops/wide/0801/slides/josh-bulk_dns.pdf"
+    ]
+}

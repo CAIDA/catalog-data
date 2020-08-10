@@ -1,0 +1,18 @@
+{
+    "id": "2008_wide_dw_ditl-lessons",
+    "name": "Lessons from DITL 2007 - and what we should do different in 2008",
+    "tags": [
+        "passive data analysis",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/workshops/wide/0801/slides/dw-ditl-lessons.pdf"
+    ]
+}

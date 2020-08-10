@@ -1,0 +1,37 @@
+{
+    "id": "1998_fcc-98",
+    "name": "Comments by CAIDA concerning the FCC's review of the acquisition of MCI Communications Corp. by Worldcom, Inc.",
+    "datePublished": "1998.4",
+    "description": "The Cooperative Association for Internet Data Analysis (CAIDA) would\nlike to take this opportunity to comment on the quality of the data\nunderlying evaluation of the proposed MCI-Worldcom merger. CAIDA is a\ncollaborative undertaking by industry and government to promote greater\ncooperation in the engineering and maintenance of a robust, scalable\nglobal Internet infrastructure. CAIDA provides a neutral framework for\ncompetitors to work together to address current and future operational\nand engineering requirements of the commercial Internet. CAIDA's\ncurrent focus is on developing and deploying traffic measurement and\nanalysis tools to support engineering level decision-making and related\ncollaborations.\n\nThe views presented below concern the inadequacies of the data upon\nwhich the Federal Communications Commission (FCC) is basing its\nInternet-related decisions and the industry-wide failure to acquire and\nanalyze basic traffic statistics in support of business, operational,\nand regulatory decisions affecting the Internet. We [CAIDA] are not\nqualified to reflect on the economic merits or business implications of\nthe proposed merger, and question the ability of any party, including\nthe FCC, to make thoughtful decisions in this matter given the poor\nquality of the data and analyses associated with the commercial\nInternet.\n\nThe lack of reliable traffic information is ubiquitous in the Internet\nsector. The absence of detailed engineering-level data directly affects\nthe quality of Internet service providers' operational and capacity\ndecisions, the ability of government to make well-reasoned regulatory\nand economic decisions, and the ability of Internet hardware and\nsoftware vendors to develop adequate specifications for future\nproducts. The current MCI-Worldcom discussions provide an important\nopportunity for the FCC, as well as the Internet service providers and\nsuppliers, to take steps to ensure that future decisions will be based\non a detailed understanding of the facts and trends underpinning this\nstrategic industry.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper143",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:caida_",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:482",
+            "label": "HTML",
+            "to": "fcc-98.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

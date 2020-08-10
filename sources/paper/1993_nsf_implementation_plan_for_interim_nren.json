@@ -1,0 +1,49 @@
+{
+    "id": "1993_nipin",
+    "name": "NSF implementation plan for interim NREN",
+    "datePublished": "1993.1",
+    "description": "This document outlines an architecture and implementation plan for the National Science Foundation's Interagency Interim National Research and Education Network (NREN) component of the HPCC Program. The Interagency Interim NREN is intended as a near term research and development program to extend the capabilities and breadth of connectivity of today's research and education (R&amp;E) networks. This network will provide not only the opportunity for agency backbones and mid-level networks to connect to NSF-funded networks, but also act as a limited testbed for new technologies in the migration to a gigabit NREN. In order to ensure a smooth transition to a national gigabit network infrastructure which can support the combined requirements of federal agencies, the U.S. research and educational institutions, and industrial collaborations with U.S. R\\&amp;E institutions, the National Science Foundation has collaborated with other federal agencies in establishing this framework for the Interagency Interim NREN.\r\n\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper172",
+    "venue": "journal_on_high_speed_networking",
+    "authors": [
+        {
+            "person": "person:aiken_robert",
+            "organization": [
+                "National Science Foundation (NSF)"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:ford_peter",
+            "organization": [
+                "Los Alamos National Laboratory"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:375",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/nipin/iinren.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Journal on High Speed Networking",
+        "volume": "2",
+        "number": "1",
+        "pages": "1-25",
+        "linkedObjects": ""
+    }
+}

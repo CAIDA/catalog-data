@@ -1,0 +1,50 @@
+{
+    "id": "2011_geocompare-tr",
+    "name": "Geocompare: a comparison of public and commercial geolocation databases - Technical Report ",
+    "datePublished": "2011.5",
+    "description": "We attempt a systematic quantitative comparison of currently available geolocation service providers. We add depth to previous contributions by analyzing inconsistencies across databases for different geographic (RIR) regions and organization (Autonomous Systems) types. We compare results on a country granularity, using a methodology that compares each database against the majority vote across all databases with answers for a given IP address. On a finer granularity than country, rigorous formal comparison gets trickier. Unlike the discrete country labels, coordinates can have nominally different values yet still represent approximately the same location, We compare the databases at a lat-long granularity using an 80 km threshold for two lat-longs coordinates to be in the same geographic region. We describe our process for selecting this threshold, and our centroid-based algorithm for comparing database lat-long results against a majority of responses from the set of databases we evaluated. While not a foolproof methodology - the databases could all be converging to the same wrong answers over time - it assumes that database providers successfully work toward improving the accuracy of their databases over time. In the absence of substantial ground truth, our method offers a systematic way to study the geolocation databases to reveal insights, summarized at the end of the paper. We intend to re-run the comparison experiment using additional databases later in 2011; we welcome constructive feedback on the methodology so we can further improve our next experiment. '' Abstract for the technical report \"Geocompare: a comparison of public and commercial geolocation databases\" authored by Bradley Huffaker, Marina Fomenkov, and kc claffy, published in May 2011. Presented at the Network Mapping and Measurement Conference (NMMC) in May 2011.",
+    "tags": [
+        "overview",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper484",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:752",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/geocompare-tr/geocompare-tr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

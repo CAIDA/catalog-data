@@ -1,0 +1,19 @@
+{
+    "id": "2003_incongruity",
+    "name": "Traceroute and BGP AS Path Incongruities",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "internetworking",
+            "date": "2003.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/incongruity/incongruity.pdf",
+        "https://www.caida.org/publications/papers/2003/ASP"
+    ]
+}

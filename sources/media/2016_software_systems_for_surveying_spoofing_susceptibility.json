@@ -1,0 +1,21 @@
+{
+    "id": "2016_software_systems_surveying_spoofing_dhsrd",
+    "name": "Software Systems for Surveying Spoofing Susceptibility",
+    "tags": [
+        "security",
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_rd_showcase_and_technical_workshop",
+            "date": "2016.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/software_systems_surveying_spoofing_dhsrd/software_systems_surveying_spoofing_dhsrd.pdf",
+        "https://www.caida.org/projects/spoofer/"
+    ]
+}

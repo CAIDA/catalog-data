@@ -1,0 +1,55 @@
+{
+    "id": "2010_internet_is_flat",
+    "name": "The Internet is Flat: Modeling the Transition from a Transit Hierarchy to a Peering Mesh",
+    "datePublished": "2010.12",
+    "description": "Recent measurements and anecdotal evidence indicate that the Internet ecosystem is rapidly evolving from a multi-tier hierarchy built mostly with transit (customer-provider) links to a dense mesh formed with mostly peering links. This transition can have major impact on the global Internet economy as well as on the traffic flow and topological structure of the Internet. In this paper, we study this evolutionary transition with an agent-based network formation model that captures key aspects of the interdomain ecosystem, viz., interdomain traffic flow and routing, provider and peer selection strategies, geographical constraints, and the economics of transit and peering interconnections. The model predicts several substantial differences between the Hierarchical Internet and the Flat Internet in terms of topological structure, path lengths, interdomain traffic flow, and the profitability of transit providers. We also quantify the effect of the three factors driving this evolutionary transition. Finally, we examine a hypothetical scenario in which a large content provider produces more than half of the total Internet traffic.",
+    "tags": [
+        "policy",
+        "topology",
+        "economics"
+    ],
+    "pubdb_id": "paper326",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1360",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/1921168.1921196"
+        },
+        {
+            "from": "PubDBlinkId:677",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/internet_is_flat/internet_is_flat.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1557",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/internet_is_flat/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "volume": "",
+        "number": "21",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

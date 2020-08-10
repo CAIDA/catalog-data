@@ -1,0 +1,20 @@
+{
+    "id": "2013_universal_laws_structural_dynamics_darpa",
+    "name": "The Universal Laws of Structural Dynamics in Large Graphs",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "darpa_graphtheoretic_research_in_algorithms_and_the_phenomenology_of_social_networks_graphs",
+            "date": "2013.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/universal_laws_structural_dynamics_darpa/universal_laws_structural_dynamics_darpa.pptx",
+        "http://htwins.net/scale/"
+    ]
+}

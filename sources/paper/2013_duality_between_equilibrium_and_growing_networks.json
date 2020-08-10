@@ -1,0 +1,55 @@
+{
+    "id": "2013_duality_equilibrium_growing_networks",
+    "name": "Duality between equilibrium and growing networks",
+    "datePublished": "2013.8",
+    "description": "In statistical physics any given system can be either at an equilibrium or away from it. Networks are not an exception. Most network models can be classified as either equilibrium or growing. Here we show that under certain conditions there exists an equilibrium formulation for any growing network model, and vice versa. The equivalence between the equilibrium and nonequilibrium formulations is exact not only asymptotically, but even for any finite system size. The required conditions are satisfied in random geometric graphs in general and causal sets in particular, and to a large extent in some real networks.",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper533",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:ostilli_massimo",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1234",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1302.3530"
+        },
+        {
+            "from": "PubDBlinkId:1235",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevE.88.022808"
+        },
+        {
+            "from": "PubDBlinkId:1236",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/duality_equilibrium_growing_networks/duality_equilibrium_growing_networks.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "88",
+        "number": "2",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

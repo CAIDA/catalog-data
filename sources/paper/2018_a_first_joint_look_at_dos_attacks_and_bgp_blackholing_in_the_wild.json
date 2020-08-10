@@ -1,0 +1,69 @@
+{
+    "id": "2018_dos_attacks_and_bgp",
+    "name": "A First Joint Look at DoS Attacks and BGP Blackholing in the Wild",
+    "datePublished": "2018.10",
+    "description": "BGP blackholing is an operational countermeasure that builds upon the capabilities of BGP to achieve DoS mitigation. Although empirical evidence of blackholing activities are documented in literature, a clear understanding of how blackholing is used in practice when attacks occur is still missing.\r\nThis paper presents a first joint look at DoS attacks and BGP blackholing in the wild. We do this on the basis of two complementary data sets of DoS attacks, inferred from a large network telescope and DoS honeypots, and on a data set of blackholing events. All data sets span a period of three years, thus providing a longitudinal overview of operational deployment of blackholing during DoS attacks.",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "network telescope",
+        "security",
+        "routing"
+    ],
+    "pubdb_id": "paper657",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:jonker_mattijs",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:pras_aiko",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sperotto_anna",
+            "organization": [
+                "University of Twente"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2028",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3278532.3278571"
+        },
+        {
+            "from": "PubDBlinkId:2027",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/dos_attacks_and_bgp/dos_attacks_and_bgp.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2038",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2018/first_look_at_dos_attacks_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

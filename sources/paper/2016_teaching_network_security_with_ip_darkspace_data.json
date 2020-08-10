@@ -1,0 +1,69 @@
+{
+    "id": "2016_teaching_network_security",
+    "name": "Teaching Network Security With IP Darkspace Data",
+    "datePublished": "2016.2",
+    "description": "This paper presents a network security laboratory project for teaching network traffic anomaly detection methods to electrical engineering students. The project design follows a research-oriented teaching principle, enabling students to make their own discoveries in real network traffic, using data captured from a large IP darkspace monitor operated at the University of California, San Diego (UCSD). Although darkspace traffic does not include bidirectional conversations (only attempts to initiate them), it contains traffic related to or actually perpetrating a variety of network attacks originating from millions of Internet addresses around the world. This breadth of coverage makes this darkspace data an excellent choice for a hands-on study of Internet attack detection techniques. In addition, darkspace data is less privacy-critical than other network traces, because it contains only unwanted network traffic and no legitimate communication. In the lab exercises presented, students learn about network security challenges, search for suspicious anomalies in network traffic, and gain experience in presenting and interpreting their own findings. They acquire not only security-specific technical skills but also general knowledge in statistical data analysis and data mining techniques. They are also encouraged to discover new phenomena in the data, which helps to ignite their general interest in science and engineering research. The Vienna University of Technology, Austria, first implemented this laboratory during the summer semester 2014, with a class of 41 students. With the help of the Center for Applied Internet Data Analysis (CAIDA) at UCSD, all exercises and IP darkspace data are publicly available.",
+    "tags": [
+        "security",
+        "passive data analysis",
+        "education",
+        "software/tools",
+        "network telescope"
+    ],
+    "pubdb_id": "paper581",
+    "venue": "ieee_transactions_on_education",
+    "authors": [
+        {
+            "person": "person:zseby_tanja",
+            "organization": [
+                "Vienna University of Technology"
+            ]
+        },
+        {
+            "person": "person:v\u00e1zquez_f\u00e9lix iglesias",
+            "organization": [
+                "Vienna University of Technology"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1613",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/TE.2015.2417512"
+        },
+        {
+            "from": "PubDBlinkId:1615",
+            "label": "Lab Material",
+            "to": "http://www.tc.tuwien.ac.at/netsec-lab"
+        },
+        {
+            "from": "PubDBlinkId:1612",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/teaching_network_security/teaching_network_security.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Transactions on Education",
+        "volume": "59",
+        "number": "1",
+        "pages": "1-7",
+        "linkedObjects": ""
+    }
+}

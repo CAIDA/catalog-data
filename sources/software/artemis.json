@@ -3,16 +3,64 @@
     "name": "ARTEMIS",
     "organization": "CAIDA",
     "description": "Measures and analyzes passive Internet traffic monitor data.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "security",
+        "hijack detection"
+    ],
+    "resources": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.bgpartemis.org/index.html",
             "tags": []
         }
     ],
     "licenses": [
-        "license:bsd_4_clause_uc"
+        "license:bsd_3_clause"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2018_survey_among_network_operators",
+            "label": "used by"
+        },
+        {
+            "to": "paper:artemis_real_time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "label": "used by"
+        },
+        {
+            "to": "media:artemis_an_open_source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "label": "used by"
+        },
+        {
+            "to": "media:auto_configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "label": "used by"
+        },
+        {
+            "to": "media:secure_routing_for_the_internet",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_05_artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "label": "used by"
+        }
+    ]
 }

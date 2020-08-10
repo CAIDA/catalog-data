@@ -1,0 +1,50 @@
+{
+    "id": "2004_ton_dispersion",
+    "name": "Packet Dispersion Techniques and Capacity Estimation",
+    "datePublished": "2004.12",
+    "description": "The packet pair technique aims to estimate the capacity of a path (bottleneck bandwidth) from the dispersion of two equal-sized probing packets sent back-to-back. It has also been argued that the dispersion of longer packet bursts (packet trains) can estimate the available bandwidth of a path. This paper examines such packet pair and packet train dispersion techniques in depth. First we demonstrate that, in general, packet pair bandwidth measurements follow a multimodal distribution, and explain the causes of multiple local modes. The path capacity is a local mode, often different than the global mode of this distribution. We illustrate the effects of network load, cross traffic packet size variability, and probing packet size on the bandwidth distribution of packet pairs. We then switch to the dispersion of long packet trains. The mean of the packet train dispersion distribution corresponds to a bandwidth metric that we refer to as Average Dispersion Rate (ADR). We show that the ADR is a lower bound of the capacity and an upper bound of the available bandwidth of a path. Putting all pieces together, we present a capacity estimation methodology that has been implemented in a tool called _pathrate_. We report on our experiences with _pathrate_ after having measured hundreds of Internet paths over the last three years.",
+    "tags": [
+        "bandwidth estimation",
+        "software/tools"
+    ],
+    "pubdb_id": "paper69",
+    "venue": "ieeeacm_transactions_on_networking",
+    "authors": [
+        {
+            "person": "person:dovrolis_constantinos",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:ramanathan_parameswaran",
+            "organization": [
+                "University of Wisconsin at Madison"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:515",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/ton_dispersion/ton_dispersion.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE/ACM Transactions on Networking",
+        "volume": "12",
+        "number": "6",
+        "pages": "963-977",
+        "linkedObjects": ""
+    }
+}

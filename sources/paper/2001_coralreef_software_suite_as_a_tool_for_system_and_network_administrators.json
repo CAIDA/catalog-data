@@ -1,0 +1,66 @@
+{
+    "id": "2001_CoralApps",
+    "name": "CoralReef software suite as a tool for system and network administrators",
+    "datePublished": "2001.12",
+    "description": "Until now, system administrators have lacked a flexible real-time network\ntraffic flow monitoring package. Such a package must provide a wide\nrange of services but remain flexible enough for rapid in-house\ncustomizations. Existing passive data collection tools are typically\nnarrow in scope, designed for specific tasks from packet capture\n(tcpdump) to accounting (NeTraMet). In response, CAIDA has created the\nCoralReef suite designed to provide network administrators and\nreserachers with a consistent interface for a wide range of network\nanalysis applications, from raw capture to flows analysis to real-time\nreport generation. CoralReef provides a convenient set of passive data\ntools for a diverse audience.\n\nCoralReef is a package of device drivers, libraries, classes, and\napplications. We briefly outline the architecture and provide relevant case\nstudies and examples of CoralReef's use as applied to real-world networking\nsituations. We will show how CoralReef is a powerful, extensible, and\nconvenient package for network monitoring and reporting.\n",
+    "tags": [
+        "software/tools"
+    ],
+    "pubdb_id": "paper112",
+    "venue": "usenix_lisa",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:koga_ryan",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:lagache_edouard",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:340",
+            "label": "gzipped postscript",
+            "to": "CoralApps.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:339",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/CoralApps/CoralApps.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Usenix LISA",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "4-7",
+        "linkedObjects": ""
+    }
+}

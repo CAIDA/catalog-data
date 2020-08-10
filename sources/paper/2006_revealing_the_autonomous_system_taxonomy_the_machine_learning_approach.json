@@ -1,0 +1,56 @@
+{
+    "id": "2006_revealingas",
+    "name": "Revealing the Autonomous System Taxonomy: The Machine Learning Approach",
+    "datePublished": "2006.3",
+    "description": "Although the Internet AS-level topology has been extensively studied over the past few years, little is known about the details of the AS taxonomy. An AS \"node\" can represent a wide variety of organizations, e.g., large ISP, or small private business, university, with vastly different network characteristics, external connectivity patterns, network growth tendencies, and other properties that we can hardly neglect while working on veracious Internet representations in simulation environments. In this paper, we introduce a radically new approach based on machine learning techniques to map all the ASes in the Internet into a natural AS taxonomy. We successfully classify 95.3% of ASes with expected accuracy of 78.1%. We release to the community the AS-level topology dataset augmented with: 1) the AS taxonomy information and 2) the set of AS attributes we used to classify ASes. We believe that this dataset will serve as an invaluable addition to further understanding of the structure and evolution of the Internet.\r\n\r\nThe file [as2attr.tgz](https://www.caida.org/data/as-taxonomy/as2attr.tgz) includes the set of AS attributes we extracted from CAIDA, RouteViews, and Internet Routing Registries data. Each line contains the following tab delimited fields: 1) AS number, 2) organization description record, 3) number of inferred providers, 4) number of inferred peers, 5) number of inferred customers, 6) equivalent number of /24 prefixes covering all the advertised IP space, 7) number of advertised IP prefixes, and 8) inferred AS class. The classes are encoded with the following acronyms: \"t1\" for large ISPs, \"t2\" for small ISPs, \"edu\" for Universities, \"ix\" for IXPs, \"nic\" for NICs, \"comp\" for Customers and \"abstained\" for ASes for which the algorithm did not make a prediction.\r\n\r\nThe file [as_rel.tgz](https://www.caida.org/data/as-taxonomy/as_rel.tgz) includes the AS graph annotated with inferred AS relationships. Our inference is based on heuristics we developed in our previous work. In particular, customer-to-provider relationships are inferred using the methodology of the paper [Inferring AS Relationships: Dead End or Lively Beginning?](https://www.caida.org/publications/papers/2005/asrelationships/), while peer-to-peer links are inferred using the methodology of the paper \"AS Relationships: Inferance and Validation\", which is currently under submission (we hope to post a link here soon). Each line in as_rel.txt is a triplet: A B C, where A B reflects an AS link and C the AS relationship: if (C==0) A B is a p2p link; if (C=-1) A is a customer of B; and if (C==1) A is a provider of B. Each AS link is listed twice as A B and B A. Note that few of the AS numbers listed in as_rel.txt are missing from as2attr.txt, since in the latter we include only the AS numbers for which all six attributes were available. ",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper50",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:25",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/revealingas/revealingas.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

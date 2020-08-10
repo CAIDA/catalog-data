@@ -3,16 +3,24 @@
     "name": "libtimeseries",
     "organization": "CAIDA",
     "description": "C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "library",
+        "database"
+    ],
+    "resources": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://github.com/caida/libtimeseries/",
             "tags": []
         }
     ],
     "licenses": [
-        "license:bsd_4_clause_uc"
+        "license:bsd_2_clause"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "software:ioda",
+            "label": "used by"
+        }
+    ]
 }

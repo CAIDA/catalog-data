@@ -22,7 +22,55 @@
     ],
     "links": [
         {
-            "to": "software:MANIC"
+            "to": "software:manic"
+        },
+        {
+            "to": "media:2017_investigating_causes_congestion_african_imc",
+            "label": "used by"
+        },
+        {
+            "to": "media:2018_manic_aims",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2018_inferring_persistent_interdomain_congestion",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2018_policy_implications_third_party_measurement",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_investigating_causes_congestion_african",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_tcp_congestion_signatures",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_challenges_inferring_internet_congestion",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_bdrmap",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_policy_challenges_mapping_internet",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_measuring_interdomain_congestion",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_challenges_inferring_interdomain_congestion",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_measurement_analysis_internet_interconnection",
+            "label": "used by"
         }
     ]
 }
