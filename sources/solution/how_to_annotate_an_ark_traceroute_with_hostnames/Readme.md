@@ -4,7 +4,13 @@
     "visibility": "public",
     "name": "How to annotate an ark traceroute with hostnames?",
     "description": "Parsing ark warts file and annotating IPs with the hostnames.",
-    "links": [{}],
+    "links": [{
+        "to": "dataset:ipv4_prefix_probing_dataset",
+        "to": "dataset:ipv4_routed_24_topology_dataset",
+        "to": "dataset:ipv6_allpref_topology_dataset",
+        "to": "dataset:ipv4_dnsnames_dataset",
+        "to": "dataset:ipv6_dnsnames_dataset"
+        }],
     "tags": [
         "topology",
         "software/tools",
@@ -18,7 +24,11 @@
 The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
 ## **<ins> Solution </ins>**
-Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:`{'ip address': 'hostname'}`.
+The full script could be found in `parse_ark_traceroute.py`
+**Usage:** ` python parse_ark_traceroute.py -t <traceroute dataset> -d <dns dataset>` 
+
+Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:\
+`{'ip address': 'hostname'}`.
  ~~~python
 # reading DNS file
 def load_dns_file(dns_file):
@@ -34,10 +44,13 @@ def load_dns_file(dns_file):
                 dns[line[1]] = line[2]
 ~~~
 
-Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format. Note that there could be multiple IPs in a hop. \
+Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format.  The method returns source, each hop and destination of a traceroute in sequence. \
+ `[source, hop_1, hop_2, ... , hop_n, destination]`
+
+Note that there could be multiple IPs in a hop.
 Set `single_IP` to True to get None value if there are multiple IPs in a hop.\
 Set `single_IP` to False to get all IPs in each hop. For more examples, please read Caveats below.\
-The method returns source, each hop and destination of a traceroute in sequence. `[source, hop_1, hop_2, ... , hop_n, destination]`
+
 ~~~python
 def parse_trace(trace, single_IP=False):
     global dns
@@ -86,6 +99,7 @@ def parse_trace(trace, single_IP=False):
     return ips, hostnames
             
 ~~~
+
 ##  **<ins> Background </ins>**
 
 ### What is a Traceroute?
@@ -94,10 +108,7 @@ More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Trace
 
 ### What is Scamper?
 Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. \
-Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. \
-The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. \
-A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. \
-
+Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. \
 
 More information on Scampper can be found [here](https://www.caida.org/tools/measurement/scamper/) \
 Download source code from [here](https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz) \
