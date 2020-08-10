@@ -34,14 +34,17 @@ def main():
                                     id_add(solution_path, "solution", filename)
                 elif re.search("json$",fname): 
                     obj = json.load(open(fname,"r"))
-                    id_add(fname, type_, obj["id"])
-                    if "name" in obj:
-                        name = id_create(fname, type_,obj["name"])
-                        #if "evolution" in name:
-                            #print (obj["id"])
-                            #print (name)
-                            #print ()
-                        name_id[name] = id_create(fname, type_,obj["id"])
+                    if "id" in obj:
+                        id_add(fname, type_, obj["id"])
+                        if "name" in obj:
+                            name = id_create(fname, type_,obj["name"])
+                            #if "evolution" in name:
+                                #print (obj["id"])
+                                #print (name)
+                                #print ()
+                            name_id[name] = id_create(fname, type_,obj["id"])
+                    else:
+                        print ("failed to find id in ", fname)
 
     nothing_found = True
 
