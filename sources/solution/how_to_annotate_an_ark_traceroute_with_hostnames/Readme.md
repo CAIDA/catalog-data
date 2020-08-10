@@ -139,7 +139,7 @@ Directory: `/datasets/topology/ark/ipv6/dns-names`
 ### <ins> Caveats </ins>
 Note that there could be multiple IP addresses to a single hop. So there are two versions. 
 
-Support multiple IPs: Set `single_IP` to False
+**Support multiple IPs:** \
 Set `single_IP` to False to get all IPs in each hop. 
 ~~~    
 ips, hostnames = parse_trace(trace,single_IP=False)
@@ -149,7 +149,7 @@ ips == [["10.1.2.3"],[],["10.0.0.1","2.1.1.2"]]
 hostnames: [["www.caida.org"],[],["cat.caida.org",None]]
 ~~~
 
-Support only single IP:
+**Support only single IP:** \
 Set `single_IP` to True to get None value if there are multiple IPs in a hop. 
 ~~~
 ips, hostnames = parse_trace(trace,single_IP=True)
