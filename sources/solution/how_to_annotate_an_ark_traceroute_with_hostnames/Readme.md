@@ -24,7 +24,7 @@
 The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
 ## **<ins> Solution </ins>**
-The full script could be found in `parse_ark_traceroute.py` \
+The full script could be found in [parse_ark_traceroute.py](https://github.com/CAIDA/catalog-data/blob/how_to_annotate_an_ark_traceroute_with_hostnames/sources/solution/how_to_annotate_an_ark_traceroute_with_hostnames/parse_ark_traceroute.py) \
 **Usage:** ` python parse_ark_traceroute.py -t <traceroute dataset> -d <dns dataset>` 
 
 Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:\
@@ -36,7 +36,7 @@ def load_dns_file(dns_file):
     with open(dns_file) as f:
         for line in f:
             line = line.split()
-            if len(line)==2: # missing hostname
+            if len(line) == 2: # missing hostname
                 continue
             elif line[2] == "FAIL.SERVER-FAILURE.in-addr.arpa" or line[2] == "FAIL.NON-AUTHORITATIVE.in-addr.arpa":
                 continue
@@ -67,7 +67,7 @@ def parse_trace(trace, single_IP=False):
     # hops
     for h in trace.hops:
         if single_IP:
-            if len(h.address.split(','))>=2:
+            if len(h.address.split(',')) >= 2:
                 ips.append(None)
                 hostnames.append(None)
             else: # sinle ip in a hop
