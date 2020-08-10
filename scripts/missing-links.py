@@ -43,10 +43,6 @@ def main():
                             #print ()
                         name_id[name] = id_create(fname, type_,obj["id"])
 
-
-
-
-        
     nothing_found = True
 
     for fname in sys.argv[1:]:
