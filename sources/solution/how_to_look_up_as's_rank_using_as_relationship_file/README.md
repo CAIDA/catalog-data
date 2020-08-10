@@ -17,7 +17,7 @@
 
 ## **<ins>Introduction</ins>**
 
-This solution helps classify an asn based upon its relationships to other asns. The following [script](rel_2_class.py) takes in all AS Relationships from a local .as-rel file to determine every asn's classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The classifications for each asn is then printed to STDOUT. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
+This solution helps classify an asn based upon its relationships to other asns. The following [script](rel_2_class.py) takes in all AS Relationships from a local .as-rel file to determine every asn's classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The classifications for each asn is then printed to STDOUT.
 
 ### Usage
 
