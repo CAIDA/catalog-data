@@ -8,15 +8,59 @@
     "tags": [
         "topology",
         "software/tools",
+        "ASN",
+        "geolocation",
+        "country"
     ]
 }
 ~~~
 ## **<ins> Introduction </ins>**
 
 ## **<ins> Solution </ins>**
-
+Return the annotated AS relationship in the following format.
+{
+"asn0": {"asn1":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]},
+"asn1": {"asn0":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]}
+}
 ~~~python
+def load_rel_geo(as_file, geo_file):
 
+    re_format = re.compile("# format:(.+)")
+    geo_info = {}
+
+    with open(geo_file, 'r') as f:
+        for line in f:
+            m = re_format.search(line)
+            if m:
+                keys = m.group(1).strip().split("|")
+
+            #skip comment of empty line
+            if line[0] == "#" or len(line) == 0:
+                continue
+
+            line = line.strip().split("|")
+            info={}
+            for i in range(len(keys)):
+                info[keys[i]] = line[i]
+
+            if info['lid'] not in geo_info:
+                geo_info[info['lid']] = info
+
+    with open(as_file, 'r') as f:
+        for line in f:
+            if line[0] == "#" or len(line)==0:
+                continue
+
+            line = line.strip().split("|")
+            if line[2]:
+                source = geo_info[line[2].split(",")[0]]
+            try:
+                dest = geo_info[line[3].split(",")[0]]
+            except:
+                dest = {}
+
+            as_rel_geo = {line[0]: {line[1]: [source, dest]}, line[1]: {line[0]: [source, dest]}}
+            #print(as_rel_geo) 
 ~~~
 
 
@@ -49,7 +93,8 @@
 
 
 ### Dataset ###
-AS Relationships -- with geographic annotations
+#### AS Relationships -- with geographic annotations
+The Internet is composed of thousands of ISPs that operate individual parts of the Internet infrastructure. ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. Understanding the geographic nature of these relationships can facilitate activities such as: realistic simulation of AS path prediction; application performance estimation; predicting the likelihood that two ASes will interconnect; and visualizing the geographic distribution of networks.
 More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
 
 
