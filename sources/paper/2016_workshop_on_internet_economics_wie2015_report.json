@@ -1,0 +1,57 @@
+{
+    "id": "2016_wie2015_report",
+    "name": "Workshop on Internet Economics (WIE2015) Report",
+    "datePublished": "2016.7",
+    "description": "On December 16-17 2015, we hosted the 5th interdisciplinary Workshop on Internet Economics (WIE) at the UC San Diego\u2019s Supercomputer Center. This workshop series provides a forum for researchers, Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to inform current and emerging regulatory and policy debates.\r\n\r\nThe FCC\u2019s latest open Internet order ostensibly changes the landscape of regulation by using Title II as its basis. This year we discussed the implications of Title II (common- carrier-based) regulation for issues we have looked at in the past, or those shaping current policy conversations. Discussion topics included differentiated services on the public Internet, evolving approaches to interconnection across different segments of the ecosystem (e.g., content to access), QoE and QoS measurement techniques and their limitations, interconnection measurement and modeling challenges and opportunities, and transparency. The format was a series of focused sessions, where presenters prepared 10-minute talks on relevant issues, followed by in-depth discussions. This report highlights the discussions and presents relevant open research questions identified by participants.",
+    "tags": [
+        "economics",
+        "policy",
+        "workshop report",
+        "congestion",
+        "QoE"
+    ],
+    "pubdb_id": "paper608",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1793",
+            "label": "CCR Online",
+            "to": "https://ccronline.sigcomm.org/2016/workshop-on-internet-economics-wie2015-report/"
+        },
+        {
+            "from": "PubDBlinkId:1762",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/wie2015_report/wie2015_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1763",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1512/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "id": "2007_compact_routing",
+    "name": "On Compact Routing for the Internet",
+    "datePublished": "2007.7",
+    "description": "The Internet's routing system is facing stresses due to its\r\npoor fundamental scaling properties. Compact routing is\r\na research field that studies fundamental limits of routing\r\nscalability and designs algorithms that try to meet these\r\nlimits. In particular, compact routing research shows that\r\nshortest-path routing, forming a core of traditional routing\r\nalgorithms, cannot guarantee routing table (RT) sizes that\r\non all network topologies grow slower than linearly as functions\r\nof the network size. However, there are plenty of compact\r\nrouting schemes that relax the shortest-path requirement\r\nand allow for improved, sublinear RT size scaling that\r\nis mathematically provable for all static network topologies.\r\nIn particular, there exist compact routing schemes designed\r\nfor grids, trees, and Internet-like topologies that offer RT\r\nsizes that scale logarithmically with the network size.\r\n\r\nIn this paper, we demonstrate that in view of recent results\r\nin compact routing research, such logarithmic scaling\r\non Internet-like topologies is fundamentally impossible in\r\nthe presence of topology dynamics or topology-independent\r\n(flat) addressing. We use analytic arguments to show that\r\nthe number of routing control messages per topology change\r\ncannot scale better than linearly on Internet-like topologies.\r\nWe also employ simulations to confirm that logarithmic RT\r\nsize scaling gets broken by topology-independent addressing,\r\na cornerstone of popular locator-identifier split proposals\r\naiming at improving routing scaling in the presence of\r\nnetwork topology dynamics or host mobility. These pessimistic\r\nfindings lead us to the conclusion that a fundamental\r\nre-examination of assumptions behind routing models\r\nand abstractions is needed in order to find a routing architecture\r\nthat would be able to scale \"indefinitely.\"\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper37",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fall_kevin",
+            "organization": [
+                "Intel Research, Berkeley"
+            ]
+        },
+        {
+            "person": "person:brady_arthur",
+            "organization": [
+                "Tufts University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:437",
+            "label": "DOI",
+            "to": "http://portal.acm.org/citation.cfm?doid=1273445.1273450"
+        },
+        {
+            "from": "PubDBlinkId:439",
+            "label": "gzipped postscript",
+            "to": "compact_routing.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:438",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/compact_routing/compact_routing.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "37",
+        "number": "3",
+        "pages": "41-52",
+        "linkedObjects": ""
+    }
+}

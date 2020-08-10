@@ -1,0 +1,18 @@
+{
+    "id": "2006_isma0605_priya",
+    "name": "A Basis for Systematic Analysis of Network Topologies",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Mahadevan, Priya",
+            "venue": "isma_workshop_on_the_internet_topology_wit",
+            "date": "2006.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/isma0605_priya/isma0605_priya.pdf",
+        "https://www.caida.org/publications/papers/2006/tr-2006-01"
+    ]
+}

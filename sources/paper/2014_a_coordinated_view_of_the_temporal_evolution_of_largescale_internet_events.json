@@ -1,0 +1,68 @@
+{
+    "id": "2014_coordinated_view_internet_events",
+    "name": "A Coordinated View of the Temporal Evolution of Large-scale Internet Events",
+    "datePublished": "2014.1",
+    "description": "We present a method to visualize large-scale Internet events, such as a large region losing connectivity, or a stealth probe of the entire IPv4 address space. We apply a well-known technique in information visualization \u2014 multiple coordinated views \u2014 to Internet-specific data. We animate these coordinated views to study the temporal evolution of an event along different dimensions, including geographic spread, topological (address space) coverage, and traffic impact. We explain the techniques we used to create the visualization, and using two recent case studies we describe how this capability to simultaneously view multiple dimensions of events enabled greater insight into their properties.'' Originally from the Proceedings of the Workshop on Internet Visualization (WIV) in November 2012.",
+    "tags": [
+        "measurement methodology",
+        "security",
+        "internet outages",
+        "network telescope"
+    ],
+    "pubdb_id": "paper517",
+    "venue": "computing",
+    "authors": [
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:828",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/s00607-013-0288-2"
+        },
+        {
+            "from": "PubDBlinkId:823",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/coordinated_view_internet_events/coordinated_view_internet_events.pdf"
+        },
+        {
+            "from": "PubDBlinkId:812",
+            "label": "Supplemental Animations",
+            "to": "supplemental/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Computing",
+        "volume": "96",
+        "number": "1",
+        "pages": "53-65",
+        "linkedObjects": ""
+    }
+}

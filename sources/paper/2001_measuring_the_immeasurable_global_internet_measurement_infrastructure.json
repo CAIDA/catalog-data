@@ -1,0 +1,53 @@
+{
+    "id": "2001_MeasInfra",
+    "name": "Measuring the Immeasurable: Global Internet Measurement Infrastructure",
+    "datePublished": "2001.4",
+    "description": "The cooperative anarchy of the global Internet defies easy\ncharacterization or measurement of its behavior. Fortunately, lack\nof global understanding has not stalled the advancement of network\nengineering technologies that enable and support Internet growth\n- for the moment. Both Internet users and providers can benefit\nfrom measurements that detect and isolate Internet problems, and\nidentify traffic bottlenecks. Yet it is neither practical nor\nparticularly effective to monitor and measure every single link.\nCommon sense supports the establishment of a measurement infrastructure\nstrategically designed to yield maximal Internet coverage\nat reasonable cost.\nHowever, while individual\nISPs monitor their own infrastructure and quality of service,\nbusiness and other practical concerns\noften prevent sharing of such information.\nWe survey existing public and mission-specific Internet\nmeasurement infrastructures, comparing them using a variety of\ncriteria. Community awareness of similar measurement activities\nwill hopefully facilitate opportunities for collaboration,\nleveraging experiences and investment across groups.\nCataloguing these sources of Internet measurements also\nprovides operations researchers with places to seek\ntopology, workload, performance, and routing data\nthat can help them refine\nmetrics and methodologies for effective management of the\nglobal Internet.\n",
+    "tags": [
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper125",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:murray_margaret",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:83",
+            "label": "gzipped postscript",
+            "to": "measurement.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:85",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/MeasInfra/measurement.pdf"
+        },
+        {
+            "from": "PubDBlinkId:84",
+            "label": "related analysis",
+            "to": "/research/performance/measinfra/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "159-167",
+        "linkedObjects": ""
+    }
+}

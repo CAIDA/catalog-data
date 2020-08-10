@@ -1,0 +1,56 @@
+{
+    "id": "2011_twelve_years_evolution",
+    "name": "Twelve Years in the Evolution of the Internet Ecosystem",
+    "datePublished": "2011.9",
+    "description": "Our goal is to understand the evolution of the autonomous system (AS) ecosystem over the last 12 years. Instead of focusing on abstract topological properties, we classify ASes into a number of types depending on their function and business type. Furthermore, we consider the semantics of inter-AS links: customer\u2014provider versus peering relations. We find that the available historic datasets from RouteViews and RIPE are not sufficient to infer the evolution of peering links, and so we restrict our focus to customer\u2014provider links. Our findings highlight some important trends in the evolution of the Internet over the last 12 years and hint at what the Internet is heading toward. After an exponential increase phase until 2001, the Internet has settled into a slower exponential growth in terms of both ASes and inter-AS links. The growth is mostly due to enterprise networks and content/access providers at the periphery of the Internet. The average path length remains almost constant, mostly due to the increasing multihoming degree of transit and content/access providers. The AS types differ significantly from each other with respect to their rewiring activity; content/access providers are the most active. A few large transit providers act as \u201fattractors\u201c or \u201frepellers\u201c of customers. For many providers, strong attractiveness precedes strong repulsiveness by 3\u20149 months. Finally, in terms of regional growth, we find that the AS ecosystem is now larger and more dynamic in Europe than in North America.",
+    "tags": [
+        "passive data analysis",
+        "topology",
+        "economics",
+        "data"
+    ],
+    "pubdb_id": "paper496",
+    "venue": "ieeeacm_transactions_on_networking",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:764",
+            "label": "Data supplement",
+            "to": "supplement/"
+        },
+        {
+            "from": "PubDBlinkId:765",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/TNET.2011.2119327"
+        },
+        {
+            "from": "PubDBlinkId:767",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/twelve_years_evolution/twelve_years_evolution.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE/ACM Transactions on Networking",
+        "volume": "19",
+        "number": "5",
+        "pages": "1420-1433",
+        "linkedObjects": ""
+    }
+}

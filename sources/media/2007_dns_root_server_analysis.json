@@ -1,0 +1,20 @@
+{
+    "id": "2007_hash_dns_root",
+    "name": "DNS Root Server Analysis",
+    "tags": [
+        "passive data analysis",
+        "dns",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hash, Haven",
+            "venue": "wide",
+            "date": "2007.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/hash_dns_root/hash_dns_root.pdf",
+        "https://www.caida.org/publications/papers/2007/dns_anycast"
+    ]
+}

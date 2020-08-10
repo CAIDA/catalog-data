@@ -1,0 +1,18 @@
+{
+    "id": "2006_wide2006-03_cuttlefish",
+    "name": "cuttlefish: diurnal and geographic animated GIF generating tool",
+    "tags": [
+        "visualization",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "wide",
+            "date": "2006.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/wide2006-03_cuttlefish/cuttlefish.pdf"
+    ]
+}

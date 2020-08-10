@@ -1,0 +1,55 @@
+{
+    "id": "2003_RAD-full",
+    "name": "Radon spectroscopy of inter-packet delay",
+    "datePublished": "2003.3",
+    "description": "\nWe demonstrate the feasibility of Internet spectroscopy techniques for analysis of rate limiting, packet interarrival delay and passive bitrate estimation of cell- or slot-based broadband connections. Working with highly diverse packet trace data, we find that delay's quantization in micro- and millisecond range is ubiquitous in today's Internet and that different providers have strong preferences for specific delay quanta in their infrastructures.\n",
+    "tags": [
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper91",
+    "venue": "ieee_highspeed_networking_workshop",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_ryan",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:56",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/RAD-full/rad-full.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE High-speed networking workshop",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

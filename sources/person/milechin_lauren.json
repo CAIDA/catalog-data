@@ -1,5 +1,6 @@
 {
-    "id": "milechin_lauren",
-    "nameFirst": "Lauren",
-    "nameLast": "Milechin"
+    "person": "person:milechin_lauren",
+    "organization": [
+        "Massachusetts Institute of Technology (MIT)"
+    ]
 }

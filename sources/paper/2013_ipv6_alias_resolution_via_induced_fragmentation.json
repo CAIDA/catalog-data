@@ -1,0 +1,68 @@
+{
+    "id": "2013_ipv6_alias_resolution_induced",
+    "name": "IPv6 Alias Resolution via Induced Fragmentation",
+    "datePublished": "2013.3",
+    "description": "Discovering router-level IPv6 topologies is important to understanding IPv6 growth, structure, and evolution and relation to IPv4. This work presents a fingerprint-based IPv6 alias resolution technique that induces fragmented responses from IPv6 router interfaces. We leverage the way in which IPv6 implements fragmentation to provide reliable inferences. We demonstrate perfect alias resolution accuracy in a controlled environment, and on a small subset of the production IPv6 Internet for which we have ground-truth. Internet-wide testing finds that over 70% of IPv6 interfaces probed respond to the test. Our promising results suggest a valuable technique to aid IPv6 topology discovery.",
+    "tags": [
+        "topology",
+        "routing",
+        "passive data analysis",
+        "ipv6"
+    ],
+    "pubdb_id": "paper525",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:brinkmeyer_william",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:rohrer_justin",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2169",
+            "label": "DOI",
+            "to": "https://doi.org/10.1007/978-3-642-36516-4_16"
+        },
+        {
+            "from": "PubDBlinkId:832",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/ipv6_alias_resolution_induced/ipv6_alias_resolution_induced.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1544",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2013/ipv6_alias_resolution_induced_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "158-167",
+        "linkedObjects": ""
+    }
+}

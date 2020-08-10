@@ -1,5 +1,6 @@
 {
-    "id": "richter_philipp",
-    "nameFirst": "Philipp",
-    "nameLast": "Richter"
+    "person": "person:richter_philipp",
+    "organization": [
+        "TU Berlin"
+    ]
 }

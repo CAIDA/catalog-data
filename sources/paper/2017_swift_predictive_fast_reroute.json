@@ -1,0 +1,62 @@
+{
+    "id": "2017_swift",
+    "name": "SWIFT: Predictive Fast Reroute",
+    "datePublished": "2017.8",
+    "description": "Network operators often face the problem of remote outages in transit networks leading to significant (sometimes on the order of minutes) downtimes. The issue is that BGP, the Internet routing protocol, often converges slowly upon such outages, as large bursts of messages have to be processed and propagated router by router. \r\n\r\nIn this paper, we present SWIFT, a fast-reroute framework which enables routers to restore connectivity in few seconds upon remote outages. SWIFT is based on two novel techniques. First, SWIFT deals with slow outage notification by predicting the overall extent of a remote failure out of few control-plane (BGP) messages. The key insight is that significant inference speed can be gained at the price of some accuracy. Second, SWIFT introduces a new dataplane encoding scheme, which enables quick and flexible update of the affected forwarding entries. SWIFT is deployable on existing devices, without modifying BGP.\r\n\r\nWe present a complete implementation of SWIFT and demonstrate that it is both fast and accurate. In our experiments with real BGP traces, SWIFT predicts the extent of a remote outage in few seconds with an accuracy of \u21e090% and can restore connectivity for 99% of the affected destinations.",
+    "tags": [
+        "routing",
+        "internet outages"
+    ],
+    "pubdb_id": "paper630",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:holterbach_thomas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "ETH Z\u00fcrich"
+            ]
+        },
+        {
+            "person": "person:vissicchio_stefano",
+            "organization": [
+                "University College London"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vanbever_laurent",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2002",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3098822.3098856"
+        },
+        {
+            "from": "PubDBlinkId:1889",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/swift/swift.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2003_nanog0310",
+    "name": "An Update on Anomalous DNS Behavior",
+    "tags": [
+        "dns",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2003.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/nanog0310/nanog0310.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/nanog0310/nanog0310.pdf"
+    ]
+}

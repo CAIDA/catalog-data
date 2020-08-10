@@ -1,0 +1,17 @@
+{
+    "id": "2004_caidaview",
+    "name": "Caida 2004-2006 view",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "intel",
+            "date": "2004.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/caidaview/caidaview.pdf"
+    ]
+}

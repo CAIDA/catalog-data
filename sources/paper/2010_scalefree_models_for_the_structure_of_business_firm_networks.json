@@ -1,0 +1,72 @@
+{
+    "id": "2010_scalefreestructurebusiness",
+    "name": "Scale-free models for the structure of business firm networks",
+    "datePublished": "2010.3",
+    "description": "We study firm collaborations in the life sciences and the information and communication technology sectors. We propose an approach to characterize industrial leadership using k-shell decomposition, with top-ranking firms in terms of market value in higher k-shell layers. We find that the life sciences industry network consists of three distinct components: a \"nucleus,\" which is a small well-connected subgraph, \"tendrils,\" which are small subgraphs consisting of small degree nodes connected exclusively to the nucleus, and a \"bulk body,\" which consists of the majority of nodes. Industrial leaders, i.e., the largest companies in terms of market value, are in the highest k-shells of both networks. The nucleus of the life sciences sector is very stable: once a firm enters the nucleus, it is likely to stay there for a long time. At the same time we do not observe the above three components in the information and communication technology sector. We also conduct a systematic study of these three components in random scale-free networks. Our results suggest that the sizes of the nucleus and the tendrils in scale-free networks decrease as the exponent of the power-law degree distribution &#955; increases, and disappear for &#955;&ge;3. We compare the k-shell structure of random scale-free model networks with two real-world business firm networks in the life sciences and in the information and communication technology sectors. We argue that the observed behavior of the k-shell structure in the two industries is consistent with the coexistence of both preferential and random agreements in the evolution of industrial networks.\r\n",
+    "tags": [
+        "topology",
+        "network geometry"
+    ],
+    "pubdb_id": "paper188",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Center for Polymer Studies, Boston University"
+            ]
+        },
+        {
+            "person": "person:riccaboni_massimo",
+            "organization": [
+                "Center for Polymer Studies, Boston University",
+                "DISA University of Trento"
+            ]
+        },
+        {
+            "person": "person:havlin_shlomo",
+            "organization": [
+                "Center for Polymer Studies, Boston University",
+                "Department of Physics, Bar-Ilan University",
+                "Minerva Center"
+            ]
+        },
+        {
+            "person": "person:pammolli_fabio",
+            "organization": [
+                "Center for Polymer Studies, Boston University",
+                "IMT Institute for Advanced Studies"
+            ]
+        },
+        {
+            "person": "person:stanley_h. eugene",
+            "organization": [
+                "Center for Polymer Studies, Boston University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:144",
+            "label": "DOI",
+            "to": "http://link.aps.org/doi/10.1103/PhysRevE.81.036117"
+        },
+        {
+            "from": "PubDBlinkId:145",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/scalefreestructurebusiness/scalefreestructurebusiness.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "81",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

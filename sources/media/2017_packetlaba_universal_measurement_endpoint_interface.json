@@ -1,0 +1,20 @@
+{
+    "id": "2017_packetlab_caidawide",
+    "name": "PacketLab:A Universal Measurement Endpoint Interface",
+    "tags": [
+        "measurement methodology",
+        "security",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "caidawide",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/packetlab_caidawide/packetlab_caidawide.pdf",
+        "https://www.caida.org/publications/papers/2017/packetlab/"
+    ]
+}

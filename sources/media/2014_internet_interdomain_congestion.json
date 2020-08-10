@@ -1,0 +1,20 @@
+{
+    "id": "2014_internet_interdomain_congestion_nanog",
+    "name": "Internet Interdomain Congestion ",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2014.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/internet_interdomain_congestion_nanog/internet_interdomain_congestion_nanog.pdf",
+        "https://www.caida.org/publications/papers/2014/measurement_analysis_internet_interconnection"
+    ]
+}

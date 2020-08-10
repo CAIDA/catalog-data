@@ -1,0 +1,20 @@
+{
+    "id": "2012_hyperbolic_routing_ndn",
+    "name": "Hyperbolic routing in NDN",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "named_data_network_ndn_retreat",
+            "date": "2012.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/hyperbolic_routing_ndn/hyperbolic_routing_ndn.pdf",
+        "https://www.caida.org/publications/papers/2010/sustaining_internet_hyperbolic"
+    ]
+}

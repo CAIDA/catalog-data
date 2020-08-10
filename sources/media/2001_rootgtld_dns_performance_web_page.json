@@ -1,0 +1,20 @@
+{
+    "id": "2001_iepg-0108",
+    "name": "Root/gTLD DNS Performance Web Page",
+    "tags": [
+        "dns",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "internet_engineering_and_planning_group_iepg",
+            "date": "2001.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/iepg-0108/iepg-200108.ps.gz",
+        "https://www.caida.org/publications/presentations/2001/iepg-0108/iepg-200108.pdf",
+        "https://www.caida.org/publications/papers/2001/DNSPerfMeas"
+    ]
+}

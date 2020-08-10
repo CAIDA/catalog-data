@@ -1,0 +1,84 @@
+{
+    "id": "2014_measurement_analysis_internet_interconnection",
+    "name": "Measurement and Analysis of Internet Interconnection and Congestion",
+    "datePublished": "2014.9",
+    "description": "This paper examines the nature of congestion in the interior of the Internet: its location and its intensity. We present results of a new method for probing the Internet which allows us to detect the presence of congestion on specific links. We are particularly interested in the links that interconnect ISPs, including what are called peering links. There is little data on the extent of congestion across interconnection links, leaving users to wonder if peering links are properly engineered, or whether they are a major source of problems transferring data across the Internet.\r\n\r\nQuestions about congestion are an important part of the current debates about reasonable network management. Our results suggest that peering connections are properly provisioned in the majority of cases, and the locations of major congestion are associated with specific sources of high-volume flows, specifically from the Content Delivery Networks (CDNs) and dominant content providers such as Netflix and Google. We see variation in the congestion patterns among these different sources that suggests differences in business relationships among them. We argue that a major goal for the industry is to work out methods of cooperation among different ISPs and higher-level services (who may be competitors in the market) so as to jointly achieve cost-effective delivery of data with maximum quality of service and quality of experience. We discuss some of the problems that must be addressed in this coordination exercise, as well as some of the barriers.\r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "policy",
+        "data",
+        "active data analysis",
+        "economics",
+        "topology",
+        "congestion"
+    ],
+    "pubdb_id": "paper562",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:lehr_william",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2157",
+            "label": "DOI",
+            "to": "https://doi.org/10.2139/ssrn.2417573"
+        },
+        {
+            "from": "PubDBlinkId:1384",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/measurement_analysis_internet_interconnection/measurement_analysis_internet_interconnection.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

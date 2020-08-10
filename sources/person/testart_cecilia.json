@@ -1,5 +1,6 @@
 {
-    "id": "testart_cecilia",
-    "nameFirst": "Cecilia",
-    "nameLast": "Testart"
+    "person": "person:testart_cecilia",
+    "organization": [
+        "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+    ]
 }

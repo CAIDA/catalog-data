@@ -1,0 +1,51 @@
+{
+    "id": "2010_framework_ethical_research",
+    "name": "A Framework for Understanding and Applying Ethical Principles in Network and Security Research ",
+    "datePublished": "2010.1",
+    "description": "Current information and communications technology poses a variety of ethical challenges for researchers. In this paper, we present an intellectual framework for understanding and applying ethical principles in networking and security research rooted in the guidance suggested by an ongoing Department of Homeland Security working group on ethics. By providing this prototype ethical impact assessment, we seek to encourage community feedback on the working group's nascent efforts and spur researchers to concretely evaluate the ethical impact of their work.\r\n",
+    "tags": [
+        "trends",
+        "overview",
+        "data sharing"
+    ],
+    "pubdb_id": "paper8",
+    "venue": "workshop_on_ethics_in_computer_security_research_wecsr",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bailey_michael",
+            "organization": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "person": "person:maughan_douglas",
+            "organization": [
+                "US Department of Homeland Security"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:6",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/framework_ethical_research/framework_ethical_research.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Ethics in Computer Security Research (WECSR)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

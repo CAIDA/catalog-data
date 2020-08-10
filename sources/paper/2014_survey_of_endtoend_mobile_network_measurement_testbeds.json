@@ -1,0 +1,72 @@
+{
+    "id": "2014_survey_end_to_end_mobile",
+    "name": "Survey of End-to-End Mobile Network Measurement Testbeds",
+    "datePublished": "2014.11",
+    "description": "Mobile (cellular) networks enable innovation, but can also stifle it and lead to user frustration when network performance falls below expectations. As mobile networks become the predominant method of Internet access, research, development, and regulatory communities have taken an increased interest in measuring mobile network performance and its impact on user experience. In this survey we examine current approaches to end-to-end mobile network performance measurement, diagnosis, and application prototyping. We compare available tools and their shortcomings with respect to the needs of researchers, developers, regulators, and the public. We intend for this survey to provide a comprehensive view of currently active efforts and some auspicious directions for future work in mobile network measurement and mobile application performance evaluation.",
+    "tags": [
+        "software/tools",
+        "measurement methodology",
+        "mobile"
+    ],
+    "pubdb_id": "paper570",
+    "venue": "arxiv_csni14115003",
+    "authors": [
+        {
+            "person": "person:goel_utkarsh",
+            "organization": [
+                "Montana State University"
+            ]
+        },
+        {
+            "person": "person:wittie_mike",
+            "organization": [
+                "Montana State University"
+            ]
+        },
+        {
+            "person": "person:claffy_kimberly",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:le_andrew",
+            "organization": [
+                "Mintybit"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1515",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1411.5003"
+        },
+        {
+            "from": "PubDBlinkId:2156",
+            "label": "DOI",
+            "to": "https://doi.org/10.1109/COMST.2015.2485979"
+        },
+        {
+            "from": "PubDBlinkId:1516",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/survey_end_to_end_mobile/survey_end_to_end_mobile.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1780",
+            "label": "PDF (2016 version)",
+            "to": "https://www.caida.org/publications/papers/2016/survey_end_end_mobile/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "arXiv cs.NI/1411.5003",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

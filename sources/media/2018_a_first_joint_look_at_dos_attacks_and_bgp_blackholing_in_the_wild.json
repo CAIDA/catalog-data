@@ -1,0 +1,23 @@
+{
+    "id": "2018_first_look_at_dos_attacks_imc",
+    "name": "A First Joint Look at DoS Attacks and BGP Blackholing in the Wild",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "network telescope",
+        "routing",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Jonker, Mattijs",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2018.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/first_look_at_dos_attacks_imc/first_look_at_dos_attacks_imc.pdf",
+        "https://www.caida.org/publications/papers/2018/dos_attacks_and_bgp/",
+        "https://bluejeans.com/playback/s/SZ8oYWVLJfSh5IukQEVbFtmYAXN4eCE2a3x6QxjbtINlOq8PQA75RWpYiAgKRVXi"
+    ]
+}

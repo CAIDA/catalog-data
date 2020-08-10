@@ -1,0 +1,79 @@
+{
+    "id": "2009_gt_architecture",
+    "name": "GT: picking up the truth from the ground for Internet traffic",
+    "datePublished": "2009.10",
+    "description": "Much of Internet traffic modeling, firewall, and intrusion detection research requires traces where some ground truth regarding application and protocol is associated with each packet or flow. This paper presents the design, development and experimental evaluation of gt, an open source software toolset for associating ground truth information with Internet traffic traces. By probing the monitored host's kernel to obtain information on active Internet sessions, gt gathers ground truth at the application level. Preliminary experimental results show that gt's effectiveness comes at little cost in terms of overhead on the hosting machines. Furthermore, when coupled with other packet inspection mechanisms, gt can derive ground truth not only in terms of applications (e.g., e-mail), but also in terms of protocols (e.g., SMTP vs. POP3).\r\n",
+    "tags": [
+        "passive data analysis",
+        "measurement methodology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper11",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:gringoli_francesco",
+            "organization": [
+                "Universita di Brescia"
+            ]
+        },
+        {
+            "person": "person:salgarelli_luca",
+            "organization": [
+                "Universita di Brescia"
+            ]
+        },
+        {
+            "person": "person:dusi_maurizio",
+            "organization": [
+                "Universita di Brescia"
+            ]
+        },
+        {
+            "person": "person:cascarano_niccolo",
+            "organization": [
+                "Politecnico di Torino"
+            ]
+        },
+        {
+            "person": "person:risso_fulvio",
+            "organization": [
+                "Politecnico di Torino"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:7",
+            "label": "CCR Online",
+            "to": "http://www.sigcomm.org/sites/default/files/ccr/papers/2009/October/1629607-1629610.pdf"
+        },
+        {
+            "from": "PubDBlinkId:803",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/1629607.1629610"
+        },
+        {
+            "from": "PubDBlinkId:8",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/gt_architecture/gt_architecture.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

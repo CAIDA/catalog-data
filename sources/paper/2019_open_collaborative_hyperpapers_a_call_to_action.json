@@ -1,0 +1,78 @@
+{
+    "id": "2019_open_collaborative_hyperpapers",
+    "name": "Open Collaborative Hyperpapers: A Call to Action",
+    "datePublished": "2019.1",
+    "description": "Drawing on discussions at various venues, we envision a publishing ecosystem for Internet science, supporting publications that are self-contained, interactive, multi-level, open, and collaborative. These publications, which we dub hyperpapers, not only address issues with reproducibility and verifiability of research in Internet science and measurement, but have the potential to increase the impact of our work and change how collaborations work in the field. This note announces initial experiments with Internet measurement hyperpapers with the help of common, tested technologies in data science and software development, and is a call to action to others to come build out this vision with us.",
+    "tags": [
+        "measurement methodology",
+        "data"
+    ],
+    "pubdb_id": "paper680",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:holz_ralph",
+            "organization": [
+                "University of Sydney"
+            ]
+        },
+        {
+            "person": "person:k\u00fchlewind_mirja",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        },
+        {
+            "person": "person:lutu_andra",
+            "organization": [
+                "Telefonica Research"
+            ]
+        },
+        {
+            "person": "person:sommers_joel",
+            "organization": [
+                "Colgate University"
+            ]
+        },
+        {
+            "person": "person:trammell_brian",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2175",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3314212.3314218"
+        },
+        {
+            "from": "PubDBlinkId:2173",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/open_collaborative_hyperpapers/open_collaborative_hyperpapers.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2174",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2018/hyperpapers_open_coauthoring_aims/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "49",
+        "number": "1",
+        "pages": "31-33",
+        "linkedObjects": ""
+    }
+}

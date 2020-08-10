@@ -1,0 +1,56 @@
+{
+    "id": "2012_analysis_internetwide_probing_darknets",
+    "name": "Analysis of Internet-wide Probing using Darknets",
+    "datePublished": "2012.10",
+    "description": "Recent analysis of traffic reaching the UCSD Network Telescope (a /8 darknet) revealed a sophisticated botnet scanning event that covertly scanned the entire IPv4 space in about 12 days. We only serendipitously discovered this event while studying a completely unrelated behavior (censorship episode in Egypt in February 2011), but we carefully studied the scan, including validating and crosscorrelating our observations with other large data set shared by others. We would like to extend these strategies to detect other large-scale malicious events. We suspect the fight against malware will benefit greatly (and perhaps require) collaborative sharing of diverse large-scale security-related data sets. We hope to discuss both the technical and the data-sharing policy aspects of this challenge at the workshop.",
+    "tags": [
+        "security",
+        "measurement methodology",
+        "network telescope"
+    ],
+    "pubdb_id": "paper519",
+    "venue": "building_analysis_datasets_and_gathering_experience_returns_for_security_badgers",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kimberly",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:818",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/analysis_internetwide_probing_darknets/analysis_internetwide_probing_darknets.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1547",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/analysis_darknets_badgers/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Building Analysis Datasets and Gathering Experience Returns for Security (BADGERS)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

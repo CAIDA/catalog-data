@@ -1,0 +1,17 @@
+{
+    "id": "2018_manic_aims",
+    "name": "Measurement and Analysis of Internet Congestion (MANIC)",
+    "tags": [
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/manic_aims/manic_aims.pdf"
+    ]
+}

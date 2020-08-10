@@ -1,0 +1,66 @@
+{
+    "id": "2016_nat_revelio",
+    "name": "NAT Revelio: Detecting NAT444 in the ISP",
+    "datePublished": "2016.3",
+    "description": "In this paper, we propose NAT Revelio, a novel test suite and methodology for detecting NAT deployments beyond the home gateway, also known as NAT444 (e.g., Carrier Grade NAT). Since NAT444 solutions may impair performance for some users, understanding the extent of NAT444 deployment in the Internet is of interest to policymakers, ISPs, and users. We perform an initial validation of the NAT Revelio test suite within a controlled NAT444 trial environment involving operational residential lines managed by a large operator in the UK. We leverage access to a unique SamKnows deployment in the UK and collect information about the existence of NAT444 solutions from 2,000 homes and 26 ISPs. To demonstrate the flexibility of NAT Revelio, we also deployed it in project BISmark, an open platform for home broadband internet research. We analyze the results and discuss our findings.",
+    "tags": [
+        "ipv6",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper605",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:lutu_andra",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:bagnulo_marcelo",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1748",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-319-30505-9_12"
+        },
+        {
+            "from": "PubDBlinkId:1747",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/nat_revelio/nat_revelio.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1749",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2016/nat_revelio_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

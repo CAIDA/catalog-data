@@ -1,0 +1,89 @@
+{
+    "id": "2012_network_cosmology",
+    "name": "Network Cosmology",
+    "datePublished": "2012.11",
+    "description": "Prediction and control of the dynamics of complex networks is a central problem in network science. Structural and dynamical similarities of different real networks suggest that some universal laws might accurately describe the dynamics of these networks, albeit the nature and common origin of such laws remain elusive. Here we show that the causal network representing the large-scale structure of spacetime in our accelerating universe is a power-law graph with strong clustering, similar to many complex networks such as the Internet, social, or biological networks. We prove that this structural similarity is a consequence of the asymptotic equivalence between the large-scale growth dynamics of complex networks and causal networks. This equivalence suggests that unexpectedly similar laws govern the dynamics of complex networks and spacetime in the universe, with implications to network science and cosmology.",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "pubdb_id": "paper506",
+    "venue": "nature_scientific_reports",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sinkovits_robert",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:rideout_david",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:meyer_david",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:785",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1203.2109"
+        },
+        {
+            "from": "PubDBlinkId:783",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:824",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1038/srep00793"
+        },
+        {
+            "from": "PubDBlinkId:784",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/network_cosmology/network_cosmology.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1545",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/network_cosmology_netsci/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Nature Scientific Reports",
+        "volume": "2",
+        "number": "793",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

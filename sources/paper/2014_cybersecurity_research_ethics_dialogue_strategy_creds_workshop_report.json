@@ -1,0 +1,61 @@
+{
+    "id": "2014_creds2013_report",
+    "name": "Cyber-security Research Ethics Dialogue & Strategy (CREDS) Workshop Report",
+    "datePublished": "2014.4",
+    "description": "The inaugural Cyber-security Research Ethics Dialogue & Strategy Workshop was held on May 23, 2013, in conjunction with the IEEE Security Privacy Symposium in San Francisco, California. CREDS embraced the theme of \"ethics-by-design\" in the context of cyber security research, and aimed to: Educate participants about underlying ethics principles and applications; Discuss ethical frameworks and how they are applied across the various stakeholders and respective communities who are involved; Impart recommendations about how ethical frameworks can be used to inform policymakers in evaluating the ethical underpinning of critical policy decisions; Explore cyber security research ethics techniques, tools, standards and practices so researchers can apply ethical principles within their research methodologies; and discuss specific case vignettes and explore the ethical implications of common research acts and omissions.'' Originally published as a technical report in October 2013.",
+    "tags": [
+        "policy",
+        "trends",
+        "workshop report",
+        "data sharing"
+    ],
+    "pubdb_id": "paper536",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bailey_michael",
+            "organization": [
+                "University of Michigan"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1358",
+            "label": "CCR",
+            "to": "http://www.sigcomm.org/node/3486"
+        },
+        {
+            "from": "PubDBlinkId:2158",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2602204.2602217"
+        },
+        {
+            "from": "PubDBlinkId:1240",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/creds2013_report/creds2013_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1787",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/creds/1305/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "2",
+        "pages": "76-79",
+        "linkedObjects": ""
+    }
+}

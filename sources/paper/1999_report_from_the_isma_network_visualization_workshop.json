@@ -1,0 +1,37 @@
+{
+    "id": "1999_isma9904",
+    "name": "Report from the ISMA Network Visualization Workshop",
+    "datePublished": "1999.4",
+    "description": "On April 15-16, 1999 CAIDA hosted an Internet Statistics and Metrics\nAnalysis (ISMA) workshop on Network Visualization. The meeting engaged\nresearchers and practitioners experienced in both the visualization and\nnetworking fields in discussions aimed at identifying:\n\n* current priorities and areas of commonality in the visualization and networking field, both research and operational networking;\n* the kinds of visualizations that are most useful to specific networking groups, including researchers, hardware/software vendors, Internet service\n providers, and users;\n* areas for data aggregation and analysis that can enhance the utility of visualizations of networking data; and\n* critical next steps associated with visualizing network topologies, connectivity, routing, performance, and other traffic data.\n\nParticipation at the workshop was by invitation-only based on\nindividuals' current involvement in these topics. Approximately 55% of\nattendees were from the research and education fields; the remainder\nrepresented Internet service providers (ISPs), network access points\n(NAPs), or vendors. The meeting was held at the San Diego Supercomputer\nCenter (SDSC) on the campus of the University of California, San Diego\n(UCSD), and was sponsored by the Cooperative Association for Internet\nData Analysis (CAIDA) and funded by the National Science Foundation\n(NSF) under grant number ANI-9996248.\n\n",
+    "tags": [
+        "visualization"
+    ],
+    "pubdb_id": "paper136",
+    "venue": "internet_statistics_and_metrics_analysis_isma",
+    "authors": [
+        {
+            "person": "person:caida_",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:487",
+            "label": "HTML",
+            "to": "isma9904.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Internet Statistics and Metrics Analysis (ISMA)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

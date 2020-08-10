@@ -1,0 +1,54 @@
+{
+    "id": "2002_EGR",
+    "name": "Internet Expansion, Refinement, and Churn",
+    "datePublished": "2002.1",
+    "description": "We analyze the evolution of the global Internet interdomain routing system on AS, prefix and IP address level granularities,\nusing snapshots of RouteViews BGP tables from 1997 to 2001. We introduce the notion of semiglobally routed\nprefixes, those present in the majority of backbone tables, and classify them into standalone -- those which have no subsets,\nno supersets; root -- have subsets, but no supersets; and subset, or more specific, which are subsets of other blocks.\n\nUsing these distinctions we find that from 1999 to 2001 many measures of routing system complexity demonstrated\nstability in the form of slow growth, dynamic equilibrium, and occasional contraction.\n\nWe find that many net change measures reflect contributions of opposite sign, and that true measure of variation, or\nchurn, is the sum of their absolute magnitudes rather than the difference. Appearance and disappearance of prefixes, ASes\nand RouteViews peers, as well as status changes (an AS changing from transit to non-transit, or a prefix shifting from a\nstandalone prefix to a root prefix) are instances of routing system churn. One advantage of using our notion of semiglobal\nprefixes is that they exhibit less churn than global prefixes (those prefixes common to all backbone tables) and as such\nallow for derivation of more robust macroscopic statistics about the routing system.\n\nWe study route prefix instability at a medium time granularity for late 2001 using 2-hour snapshots of BGP tables,\nand find that half of all prefix reannouncements (flips) are contributed by 1% of all ASes, with government networks,\ntelecoms in developing countries and major backbone ISPs at the top of the list of instability contributors. Small ASes\n(those who originate only a few prefixes into the global routing system) do not contribute more than their fair share of\neither route entries or churn to the global routing system. We conclude that during 1999-2001 many Internet metrics were\nstable, and that the routing system's growth and instability are mostly caused by large and medium-sized ISPs.\n",
+    "tags": [
+        "routing"
+    ],
+    "pubdb_id": "paper108",
+    "venue": "european_transactions_on_telecommunications",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:511",
+            "label": "gzipped postscript",
+            "to": "EGR.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:510",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2002/EGR/EGR.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "European Transactions on Telecommunications",
+        "volume": "13",
+        "number": "1",
+        "pages": "33-51",
+        "linkedObjects": ""
+    }
+}

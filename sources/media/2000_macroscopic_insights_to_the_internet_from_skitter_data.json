@@ -1,0 +1,18 @@
+{
+    "id": "2000_isma00_brad",
+    "name": "Macroscopic Insights to the Internet from skitter Data",
+    "tags": [
+        "topology",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2000.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/workshops/isma/0012/talks/brad/"
+    ]
+}

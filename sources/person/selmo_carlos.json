@@ -1,5 +1,6 @@
 {
-    "id": "selmo_carlos",
-    "nameFirst": "Carlos",
-    "nameLast": "Selmo"
+    "person": "person:selmo_carlos",
+    "organization": [
+        "Buenos Aires Institute of Technology"
+    ]
 }

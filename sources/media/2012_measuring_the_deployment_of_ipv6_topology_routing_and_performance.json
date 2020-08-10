@@ -1,0 +1,22 @@
+{
+    "id": "2012_measuring_deployment_ipv6_imc",
+    "name": "Measuring the Deployment of IPv6: Topology, Routing, and Performance",
+    "tags": [
+        "active data analysis",
+        "ipv6",
+        "passive data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2012.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/measuring_deployment_ipv6_imc/measuring_deployment_ipv6_imc.pdf",
+        "https://www.caida.org/publications/papers/2012/measuring_deployment_ipv6"
+    ]
+}

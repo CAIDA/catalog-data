@@ -1,0 +1,41 @@
+{
+    "id": "2012_one_way_traffic_iatmon",
+    "name": "One-way Traffic Monitoring with iatmon",
+    "datePublished": "2012.3",
+    "description": "During the last decade, unsolicited one-way Internet traffic has been used to study malicious activity on the Internet. Researchers usually observe such traffic using network telescopes deployed on darkspace (unused address space). When darkspace observations began ten years ago, one-way traffic was minimal. Over the last five years, however, traffic levels have risen so that they are now high enough to require more subtle differentiation - raw packet and byte or even port counts make it hard to discern and distinguish new activities.\r\n\r\nTo make changes in composition of one-way traffic aggregates more detectable, we have developed iatmon (Inter-Arrival Time Monitor), a freely available measurement and analysis tool that allows one to separate one-way traffic into clearly-defined subsets. Initially we have implemented two subsetting schemes; source types, based on the schema proposed in J. Treurniet's \"A network activity classification schema and its application to scan detection\"; and inter-arrival-time (IAT) groups that summarise source behaviour over time.\r\n\r\nWe use 14 types and 10 groups, giving us a matrix of 140 type-and-group subsets. Each subset constitutes only a fraction of the total traffic, so changes within the subsets are easily observable when changes in total traffic levels might not even be noticeable.\r\n\r\nWe report on our experience with this tool to observe changes in one-way traffic at the UCSD network telescope over the first half of 2011.\r\n\r\nDaily average plots of source numbers and their traffic volumes show clear long-term changes in several of our types and groups.",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "software/tools",
+        "network telescope"
+    ],
+    "pubdb_id": "paper504",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:780",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/one_way_traffic_iatmon/one_way_traffic_iatmon.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

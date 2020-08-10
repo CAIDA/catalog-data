@@ -1,0 +1,48 @@
+{
+    "id": "2015_anchoring_policy_development_ict",
+    "name": "Anchoring policy development around stable points: an approach to regulating the co-evolving ICT ecosystem",
+    "datePublished": "2015.8",
+    "description": "The daunting pace of innovation in the information and communications technology (ICT) landscape, a landscape of technology and business structure, is a well-known but under-appreciated reality. In contrast, the rate of policy and regulatory innovation is much slower, partly due to its inherently more deliberative character. We describe this disparity in terms of the natural rates of change in different parts of the ecosystem, and examine why it has impeded attempts to impose effective regulation on the telecommunications industry. We explain why a recent movement to reduce this disparity by increasing the pace of regulation - adaptive regulation - faces five obstacles that may hinder its feasibility in the ICT ecosystem. As a means to achieve more sustainable regulatory frameworks for ICT industries, we introduce an approach based on finding stable points in the system architecture. We explore the origin and role of these stable points in a rapidly evolving system, and argue that they can provide a means to support development of policies, including adaptive regulation approaches, that are more likely to survive the rapid pace of evolution in technology.\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper566",
+    "venue": "telecommunications_policy",
+    "authors": [
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1994",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1016/j.telpol.2015.07.003"
+        },
+        {
+            "from": "PubDBlinkId:1388",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/anchoring_policy_development_ict/anchoring_policy_development_ict.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Telecommunications Policy",
+        "volume": "39",
+        "number": "10",
+        "pages": "848-860",
+        "linkedObjects": ""
+    }
+}

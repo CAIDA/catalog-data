@@ -1,0 +1,100 @@
+{
+    "id": "2010_influential_spreaders",
+    "name": "Identification of influential spreaders in complex networks",
+    "datePublished": "2010.8",
+    "description": "Networks portray a multitude of interactions through which people meet, ideas are spread, and infectious diseases propagate within a society. Identifying the most efficient \"spreaders\" in a network is an important step to optimize the use of available resources and ensure the more efficient spread of information. Here we show that, in contrast to common belief, the most influential spreaders in a social network do not correspond to the best connected people or to the most central people (high betweenness centrality). Instead, we find: (i) The most efficient spreaders are those located within the core of the network as identified by the k-shell decomposition analysis. (ii) When multiple spreaders are considered simultaneously, the distance between them becomes the crucial parameter that determines the extend of the spreading. Furthermore, we find that-- in the case of infections that do not confer immunity on recovered individuals-- the infection persists in the high k-shell layers of the network under conditions where hubs may not be able to preserve the infection. Our analysis provides a plausible route for an optimal design of efficient dissemination strategies. \r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper4",
+    "venue": "nature_physics",
+    "authors": [
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Center for Polymer Studies, Boston University",
+                "Physics Department, Boston University"
+            ]
+        },
+        {
+            "person": "person:gallos_lazaros",
+            "organization": [
+                "Levich Institute",
+                "Physics Department, University of Thessaloniki"
+            ]
+        },
+        {
+            "person": "person:havlin_shlomo",
+            "organization": [
+                "Department of Physics, Bar-Ilan University",
+                "Minerva Center"
+            ]
+        },
+        {
+            "person": "person:liljeros_fredrik",
+            "organization": [
+                "Department of Sociology, Stockholm University"
+            ]
+        },
+        {
+            "person": "person:muchnik_lev",
+            "organization": [
+                "Information Operations and Management Sciences Stern School of Business"
+            ]
+        },
+        {
+            "person": "person:stanley_h. eugene",
+            "organization": [
+                "Center for Polymer Studies, Boston University",
+                "Physics Department, Boston University"
+            ]
+        },
+        {
+            "person": "person:makse_hern\u00e1n",
+            "organization": [
+                "Levich Institute",
+                "Physics Department, City College of New York"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:722",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1001.5285"
+        },
+        {
+            "from": "PubDBlinkId:768",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1038/nphys1746"
+        },
+        {
+            "from": "PubDBlinkId:720",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/influential_spreaders/influential_spreaders.pdf"
+        },
+        {
+            "from": "PubDBlinkId:721",
+            "label": "Press Coverage",
+            "to": "press/"
+        },
+        {
+            "from": "PubDBlinkId:1561",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2011/decisionmaking_identifying_influential_spreaders/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Nature Physics",
+        "volume": "6",
+        "number": "11",
+        "pages": "888-893",
+        "linkedObjects": ""
+    }
+}

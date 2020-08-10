@@ -1,0 +1,26 @@
+{
+    "id": "2011_as_core_visualizing",
+    "name": "AS Core: Visualizing the Internet",
+    "tags": [
+        "data",
+        "overview",
+        "topology",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "different_angles_on_network_complexity_engineering_and_science_dances",
+            "date": "2011.4"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ucsd_cse_perspectives_in_computer_science",
+            "date": "2011.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/as_core_visualizing/as_core_visualizing.pdf",
+        "https://www.caida.org/publications/papers/2001/caida/"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": "2002_Myths2002",
+    "name": "Internet measurement: myths about Internet data",
+    "tags": [
+        "measurement methodology",
+        "active data analysis",
+        "passive data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "2001.12"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "caida",
+            "date": "2002.7"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2002.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/Myths2002/myths2002.tar.gz",
+        "https://www.caida.org/publications/presentations/2002/Myths2002/index.html",
+        "https://www.caida.org/publications/presentations/2002/Myths2002/datamyths.ram"
+    ]
+}

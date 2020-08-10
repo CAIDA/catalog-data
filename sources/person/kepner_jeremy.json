@@ -1,5 +1,6 @@
 {
-    "id": "kepner_jeremy",
-    "nameFirst": "Jeremy",
-    "nameLast": "Kepner"
+    "person": "person:kepner_jeremy",
+    "organization": [
+        "Massachusetts Institute of Technology (MIT)"
+    ]
 }

@@ -1,0 +1,18 @@
+{
+    "id": "2004_security_collection_wide",
+    "name": "Security Data Collection at CAIDA",
+    "tags": [
+        "data",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "wide",
+            "date": "2004.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/security_collection_wide/security_collection_wide.pdf"
+    ]
+}

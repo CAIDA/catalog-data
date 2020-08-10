@@ -1,0 +1,68 @@
+{
+    "id": "2016_reasons_dynamic_addresses_change",
+    "name": "Reasons Dynamic Addresses Change",
+    "datePublished": "2016.11",
+    "description": "Applications often use IP addresses as end host identifiers based on the assumption that IP addresses do not change frequently, even when dynamically assigned. The validity of this assumption depends upon the duration of time that an IP address continues to be assigned to the same end host, and this duration in turn, depends upon the various causes that can induce the currently assigned IP address to change. In this work, we identify different causes that can lead to an address change and analyze their effect in ISPs around the world using data gathered from 3,038 RIPE Atlas probes hosted across 929 ASes and 156 countries across all 12 months of 2015. Our observations reveal information about ISP practices, outages, and dynamic address prefixes. For example, we found 20 ISPs around the world that periodically reassign addresses after a fixed period, typically a multiple of 24 hours. We also found that address changes are correlated with network and power outages occurring at customer premises equipment (CPE) devices. Furthermore, almost half of the address changes we observed on the same CPE were to an entirely different BGP-routed prefix.",
+    "tags": [
+        "routing",
+        "measurement methodology",
+        "ipv6"
+    ],
+    "pubdb_id": "paper620",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:padmanabhan_ramakrishna",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:aben_emile",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:spring_neil",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1817",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2987443.2987461"
+        },
+        {
+            "from": "PubDBlinkId:1816",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/reasons_dynamic_addresses_change/reasons_dynamic_addresses_change.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

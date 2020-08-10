@@ -1,0 +1,17 @@
+{
+    "id": "2004_analysis_ddos_nanog",
+    "name": "Analysis of the December DDoS Attack Against SCO",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2004.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/analysis_ddos_nanog/analysis_ddos_nanog.pdf"
+    ]
+}

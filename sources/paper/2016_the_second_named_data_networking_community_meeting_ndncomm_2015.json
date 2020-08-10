@@ -1,0 +1,79 @@
+{
+    "id": "2016_second_ndncomm",
+    "name": "The Second Named Data Networking Community Meeting (NDNcomm 2015)",
+    "datePublished": "2016.1",
+    "description": "This report is a brief summary of the second NDN Community Meeting held at UCLA in Los Angeles, California on September 28\u201329, 2015. The meeting provided a platform for the attendees from 63 institutions across 13 countries to exchange their recent NDN research and development results, to debate existing and proposed functionality in NDN forwarding, routing, and security, and to provide feedback to the NDN architecture design evolution.",
+    "tags": [
+        "overview",
+        "topology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper599",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:afanasyev_alexander",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:yu_yingdi",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:burke_jeffrey",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polterock_josh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2131",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2875951.2875961"
+        },
+        {
+            "from": "PubDBlinkId:1651",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/second_ndncomm/second_ndncomm.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1662",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/ndn/1509/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "46",
+        "number": "1",
+        "pages": "58-63",
+        "linkedObjects": ""
+    }
+}

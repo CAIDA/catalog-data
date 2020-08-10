@@ -1,0 +1,19 @@
+{
+    "id": "2020_scamper_routeviews_kismet",
+    "name": "Scamper + RouteViews",
+    "tags": [
+        "routing",
+        "topology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "workshop_on_active_internet_measurements_knowledge_of_internet_structure_measurement_epistemology_and_technology_aimskismet",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/scamper_routeviews_kismet/scamper_routeviews_kismet.pdf"
+    ]
+}

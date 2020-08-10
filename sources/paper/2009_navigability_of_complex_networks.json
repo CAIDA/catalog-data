@@ -1,0 +1,65 @@
+{
+    "id": "2009_navigability_complex_networks",
+    "name": "Navigability of Complex Networks",
+    "datePublished": "2009.1",
+    "description": "Routing information through networks is a universal phenomenon in both natural and manmade complex systems. When each node has full knowledge of the global network connectivity, finding efficient communication paths is merely a matter of distributed computation. However, in many real networks nodes communicate efficiently even without such global intelligence. Here we show that the peculiar structural characteristics of observable complex networks are exactly the characteristics needed to maximize their communication efficiency without global knowledge. We also describe a general mechanism that explains this connection between network structure and function. This mechanism relies on the presence of a metric space hidden behind an observable network. Our findings suggest that real networks in nature have underlying metric spaces that remain undiscovered. Their discovery would have enormous practical applications ranging from routing in the Internet and searching social networks, to studying information flows in neural, gene regulatory networks, or signaling pathways.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper19",
+    "venue": "nature_physics",
+    "authors": [
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:203",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1038/nphys1130"
+        },
+        {
+            "from": "PubDBlinkId:205",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/navigability_complex_networks/navigability_complex.pdf"
+        },
+        {
+            "from": "PubDBlinkId:206",
+            "label": "Press Coverage",
+            "to": "press/index.xml"
+        },
+        {
+            "from": "PubDBlinkId:1567",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/decisionmaking_navigability_complex_networks/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Nature Physics",
+        "volume": "5",
+        "number": "1",
+        "pages": "74-80",
+        "linkedObjects": ""
+    }
+}

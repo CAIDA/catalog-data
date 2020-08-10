@@ -1,0 +1,20 @@
+{
+    "id": "2013_first_look_ipv4_transfer_conext",
+    "name": "A First Look at IPv4 Transfer Markets",
+    "tags": [
+        "economics",
+        "ipv6",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Livadariu, Ioana",
+            "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+            "date": "2013.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/first_look_ipv4_transfer_conext/first_look_ipv4_transfer_conext.pdf",
+        "https://www.caida.org/publications/papers/2013/first_look_transfer_markets"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2006_commons200610",
+    "name": "Cooperative Measurement and Modeling of Open Networked Systems (COMMONS) proposal",
+    "tags": [
+        "data",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "muni_wireless_conference",
+            "date": "2006.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/commons200610/commons200610.pdf",
+        "https://www.caida.org/publications/papers/2008/commons"
+    ]
+}

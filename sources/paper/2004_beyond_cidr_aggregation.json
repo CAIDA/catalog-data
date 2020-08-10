@@ -1,0 +1,73 @@
+{
+    "id": "2004_tr-2004-01",
+    "name": "Beyond CIDR Aggregation",
+    "datePublished": "2004.2",
+    "description": "\nPreviously Broido and Claffy analysed the global Internet interdomain routing system based on BGP policy atoms: equivalence classes of prefixes based on common AS path as observed from a number of topological locations [6] [7]. In this report we define a variant of policy atoms, called declared atoms. Declared atoms constitute an aggregation mechanism complementary to CIDR aggregation. We describe a new routing architecture, called atomised routing, based on BGP and declared atoms. Atomised routing aims for a reduction in the number of routed objects in the default-free zone of the Internet (around 20k declared atoms covering around 113k prefixes), and an improved convergence behaviour of the interdomain routing system. We also demonstrate the viability of incremental deployment of atomised routing.\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper84",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:verkaik_patrick",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:gao_ruomei",
+            "organization": [
+                "College of Computing, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:van der pol_ronald",
+            "organization": [
+                "NLnet Labs"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:49",
+            "label": "gzipped postscript",
+            "to": "tr-2004-01.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:50",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/tr-2004-01/tr-2004-01.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

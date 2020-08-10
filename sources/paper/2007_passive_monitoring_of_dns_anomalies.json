@@ -1,0 +1,57 @@
+{
+    "id": "2007_dns_anomalies",
+    "name": "Passive Monitoring of DNS Anomalies",
+    "datePublished": "2007.7",
+    "description": "We collected DNS responses at the University of Auckland\r\nInternet gateway in an SQL database, and analyzed them to detect unusual\r\nbehaviour. Our DNS response data have included typo squatter\r\ndomains, fast flux domains and domains being (ab)used by spammers.\r\nWe observe that current attempts to reduce spam have greatly increased\r\nthe number of A records being resolved. We also observe that the data\r\nlocality of DNS requests diminishes because of domains advertised in\r\nspam.\r\n",
+    "tags": [
+        "passive data analysis",
+        "measurement methodology",
+        "dns"
+    ],
+    "pubdb_id": "paper36",
+    "venue": "conference_on_detection_of_intrusions_malware_and_vulnerability_assessment_dimva",
+    "authors": [
+        {
+            "person": "person:zdrnja_bojan",
+            "organization": [
+                "University of Auckland, New Zealand"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        },
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "The Measurement Factory, Inc."
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:14",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/dns_anomalies/dns_anomalies.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1569",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2007/brownlee_anomalies/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Conference on Detection of Intrusions & Malware, and Vulnerability Assessment (DIMVA)",
+        "institution": "University of Auckland, New Zealand and Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "4579",
+        "number": "",
+        "pages": "129-139",
+        "linkedObjects": ""
+    }
+}

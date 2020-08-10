@@ -1,0 +1,19 @@
+{
+    "id": "2001_dns0701",
+    "name": "thoughts on measurement and management of the DNS system",
+    "tags": [
+        "dns",
+        "policy",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "computer_science_and_telecommunications_board_cstb",
+            "date": "2001.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/dns0701/index.html"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2009_aims_ark_update",
+    "name": "Archipelago Measurement Infrastrucure: Updates and Analyses",
+    "tags": [
+        "topology",
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2009.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/aims_ark_update/aims_ark_update.pdf"
+    ]
+}

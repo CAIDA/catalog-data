@@ -1,0 +1,19 @@
+{
+    "id": "2015_bgpstream_mplane",
+    "name": "BGPStream: a framework for historical analysis and real-time monitoring of BGP data",
+    "tags": [
+        "internet outages",
+        "routing",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "mplane_workshop",
+            "date": "2015.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/bgpstream_mplane/bgpstream_mplane.pdf"
+    ]
+}

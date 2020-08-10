@@ -1,0 +1,19 @@
+{
+    "id": "2019_how_find_correlated_internet_pam",
+    "name": "How to find correlated Internet failures",
+    "tags": [
+        "routing",
+        "internet outages"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Padmanabhan, Ramakrishna",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/how_find_correlated_internet_pam/how_find_correlated_internet_pam.pdf",
+        "https://www.caida.org/publications/papers/2019/how_find_correlated_internet"
+    ]
+}

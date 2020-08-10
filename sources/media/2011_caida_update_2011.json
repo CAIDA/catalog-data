@@ -1,0 +1,25 @@
+{
+    "id": "2011_caidawidecasfi_caida_update",
+    "name": "CAIDA Update 2011",
+    "tags": [
+        "overview",
+        "measurement methodology",
+        "data",
+        "security",
+        "trends",
+        "routing",
+        "topology",
+        "trends",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "widecasfi",
+            "date": "2011.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/caidawidecasfi_caida_update/caidawidecasfi_caida_update.pdf"
+    ]
+}

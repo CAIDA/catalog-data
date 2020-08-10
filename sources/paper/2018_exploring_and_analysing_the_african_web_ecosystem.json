@@ -1,0 +1,76 @@
+{
+    "id": "2018_exploring_analysing_african_web",
+    "name": "Exploring and Analysing the African Web Ecosystem",
+    "datePublished": "2018.11",
+    "description": "It is well known that Internet infrastructure deployment is progressing at a rapid pace in the African continent. A flurry of recent research has quantified this, highlighting the expansion of its underlying connectivity network. However, improving the infrastructure is not useful without appropriately provisioned services to exploit it. This paper measures the availability and utilisation of web infrastructure in Africa. Whereas others have explored web infrastructure in developed regions, we shed light on practices in developing regions. To achieve this, we apply a comprehensive measurement methodology to collect data from a variety of sources. We first focus on Google to reveal that its content infrastructure in Africa is, indeed, expanding. That said, we find that much of its web content is still served from the US and Europe, despite being the most popular website in many African countries. We repeat the same analysis across a number of other regionally popular websites to find that even top African websites prefer to host their content abroad. To explore the reasons for this, we evaluate some of the major bottlenecks facing content delivery networks (CDNs) in Africa. Amongst other factors, we find a lack of peering between the networks hosting our probes, preventing the sharing of CDN servers, as well as poorly configured DNS resolvers. Finally, our mapping of middleboxes in the region reveals that there is a greater presence of transparent proxies in Africa than in Europe or the US. We conclude the work with a number of suggestions for alleviating the issues observed.",
+    "tags": [
+        "dns",
+        "active data analysis",
+        "topology",
+        "congestion",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper663",
+    "venue": "acm_transactions_on_the_web_tweb",
+    "authors": [
+        {
+            "person": "person:fanou_rod\u00e9rick",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:tyson_gareth",
+            "organization": [
+                "Queen Mary University of London, United Kingdom"
+            ]
+        },
+        {
+            "person": "person:leao fernandes_eder",
+            "organization": [
+                "Queen Mary University of London, United Kingdom"
+            ]
+        },
+        {
+            "person": "person:francois_pierre",
+            "organization": [
+                "Independent Contributor"
+            ]
+        },
+        {
+            "person": "person:valera_francisco",
+            "organization": [
+                "Universidad Carlos III de Madrid (UC3M)"
+            ]
+        },
+        {
+            "person": "person:sathiaseelan_arjuna",
+            "organization": [
+                "University of Cambridge, United Kingdom"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2056",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3213897"
+        },
+        {
+            "from": "PubDBlinkId:2055",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/exploring_analysing_african_web/exploring_analysing_african_web.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM Transactions on the Web (TWEB)",
+        "volume": "12",
+        "number": "",
+        "pages": "26",
+        "linkedObjects": ""
+    }
+}

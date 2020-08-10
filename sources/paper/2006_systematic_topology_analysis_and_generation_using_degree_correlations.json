@@ -1,0 +1,65 @@
+{
+    "id": "2006_dk_series",
+    "name": "Systematic Topology Analysis and Generation Using Degree Correlations",
+    "datePublished": "2006.9",
+    "description": "Researchers have proposed a variety of metrics to measure important graph properties, for instance, in social, biological, and computer networks. Values for a particular graph metric may capture a graph's resilience to failure or its routing efficiency. Knowledge of appropriate metric values may influence the engineering of future topologies, repair strategies in the face of failure, and understanding of fundamental properties of existing networks. Unfortunately, there are typically no algorithms to generate graphs matching one or more proposed metrics and there is little understanding of the relationships among individual metrics or their applicability to different settings.\r\n\r\nWe present a new, systematic approach for analyzing network topologies. We first introduce the dK-series of probability distributions specifying all degree correlations within d-sized subgraphs of a given graph G. Increasing values of d capture progressively more properties of G at the cost of more complex representation of the probability distribution. Using this series, we can quantitatively measure the distance between two graphs and construct random graphs that accurately reproduce virtually all metrics proposed in the literature. The nature of the dK-series implies that it will also capture any future metrics that may be proposed. Using our approach, we construct graphs for d = 0, 1, 2, 3 and demonstrate that these graphs reproduce, with increasing accuracy, important properties of measured and modeled Internet topologies. We find that the d = 2 case is sufficient for most practical purposes, while d = 3 essentially reconstructs the Internet AS- and router-level topologies exactly. We hope that a systematic method to analyze and synthesize topologies offers a significant improvement to the set of tools available to network topology and protocol researchers.",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper45",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:mahadevan_priya",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fall_kevin",
+            "organization": [
+                "Intel Research, Berkeley"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:528",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/1151659.1159930"
+        },
+        {
+            "from": "PubDBlinkId:529",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/dk_series/dk_series.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1571",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2006/dima_dkseries_liafa/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "135-146",
+        "linkedObjects": ""
+    }
+}

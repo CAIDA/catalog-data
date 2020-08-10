@@ -1,0 +1,21 @@
+{
+    "id": "2019_empirical_study_mobile_network_behavior_iwqos",
+    "name": "An Empirical Study of Mobile Network Behavior and Application Performance in the Wild",
+    "tags": [
+        "data",
+        "mobile",
+        "passive data analysis",
+        "QoE"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Zhang, Shiwei",
+            "venue": "ieeeacm_international_symposium_on_quality_of_service_iwqos",
+            "date": "2019.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/empirical_study_mobile_network_behavior_iwqos/empirical_study_mobile_network_behavior_iwqos.pdf",
+        "https://www.caida.org/publications/papers/2019/empirical_study_mobile_network_behavior/"
+    ]
+}

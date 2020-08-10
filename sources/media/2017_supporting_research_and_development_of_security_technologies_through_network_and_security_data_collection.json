@@ -1,0 +1,21 @@
+{
+    "id": "2017_supporting_research_development_security_dhsrd",
+    "name": "Supporting Research and Development of Security Technologies Through Network and Security Data Collection",
+    "tags": [
+        "routing",
+        "data",
+        "measurement methodology",
+        "policy",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_rd_showcase_and_technical_workshop",
+            "date": "2017.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/supporting_research_development_security_dhsrd/supporting_research_development_security_dhsrd.pdf"
+    ]
+}

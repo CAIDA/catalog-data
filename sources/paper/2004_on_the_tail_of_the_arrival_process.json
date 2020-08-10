@@ -1,0 +1,49 @@
+{
+    "id": "2004_tailarrival",
+    "name": "On the tail of the arrival process",
+    "datePublished": "2004.10",
+    "description": "We examine the cause of the tail of the distribution of the number of packet and byte arrivals at backbone\r\nrouters. One possible cause is that sometimes there are a large number of active connections resulting in a large\r\nnumber of arrivals in a short period of time. Another possibility is that the tail is due to one or a few very fast\r\nconnections. By examining time-stamped packet headers from several backbone links, we find that the tail is\r\nneither strictly from many users nor strictly from fast connections. Rather, at some times and some time-scales,\r\nwe find that the tail (the skewness of the distribution in particular) is strongly influenced by the tail of the\r\ndistribution of the number of active connections, while at other times, the tail of the number of arrivals is due\r\nto the tail of the distribution of the connection bit-rates.\r\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper67",
+    "venue": "information_technologies_and_communications_itcom",
+    "authors": [
+        {
+            "person": "person:shah_khushboo",
+            "organization": [
+                "Department of Electrical Engineering, University of Southern California"
+            ]
+        },
+        {
+            "person": "person:bohacek_stephan",
+            "organization": [
+                "University of Delaware"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:38",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/tailarrival/tailarrival.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Information Technologies and Communications (ITCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

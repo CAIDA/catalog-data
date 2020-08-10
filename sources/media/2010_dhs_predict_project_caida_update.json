@@ -1,0 +1,21 @@
+{
+    "id": "2010_predict_pi_feb",
+    "name": "DHS PREDICT project: CAIDA update",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2010.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/predict_pi_feb/predict_pi_feb.pdf"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2001_ietf_dnsdamage",
+    "name": "DNS Damage - Measurements at a Root Server",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Nemeth, Evi",
+            "venue": "internet_engineering_task_force_ietf",
+            "date": "2001.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/ietf_dnsdamage/ietf_dnsdamage.html"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2006_anomaly_sampling",
+    "name": "Anomaly Sampling (bringing diversity to network security)",
+    "tags": [
+        "security",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "intimate_workshop",
+            "date": "2006.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/anomaly_sampling/anomaly_sampling.pdf"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "2019_dynamic_property_enforcement_programmable",
+    "name": "Dynamic Property Enforcement in Programmable Data Planes",
+    "datePublished": "2019.5",
+    "description": "Network programmers can currently deploy an arbitrary set of protocols in forwarding devices through data plane programming languages such as P4. However, as any other type of software, P4 programs are subject to bugs and misconfigurations. Network verification tools have been proposed as a means of ensuring that the network behaves as expected, but these tools typically require programmers to manually model P4 programs, are limited in terms of the properties they can guarantee and frequently face severe scalability issues. In this paper, we argue for a novel approach to this problem. Rather than statically inspecting a network configuration looking for bugs, we propose to enforce networking properties at runtime. To this end, we developed P4box, a system for deploying runtime monitors in programmable data planes. Our results show that P4box allows programmers to easily express a broad range of properties. Moreover, we demonstrate that runtime monitors represent a small overhead to network devices in terms of latency and resource consumption.",
+    "tags": [
+        "security",
+        "routing"
+    ],
+    "pubdb_id": "paper683",
+    "venue": "ifip_networking",
+    "authors": [
+        {
+            "person": "person:neves_miguel",
+            "organization": [
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:levchenko_kirill",
+            "organization": [
+                "University of Illinois at Urbana-Champaign, Illinois (UIUC)"
+            ]
+        },
+        {
+            "person": "person:barcellos_marinho",
+            "organization": [
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2239",
+            "label": "DOI",
+            "to": "https://doi.org/10.23919/IFIPNetworking.2019.8816830"
+        },
+        {
+            "from": "PubDBlinkId:2182",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/dynamic_property_enforcement_programmable/dynamic_property_enforcement_programmable.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IFIP Networking",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

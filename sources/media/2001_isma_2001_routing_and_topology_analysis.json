@@ -1,0 +1,18 @@
+{
+    "id": "2001_isma01_kcopening",
+    "name": "ISMA 2001: routing and topology analysis",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2001.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/isma01_kcopening//workshops/isma/0112/talks/kc01/"
+    ]
+}

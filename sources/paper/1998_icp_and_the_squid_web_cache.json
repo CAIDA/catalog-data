@@ -1,0 +1,48 @@
+{
+    "id": "1998_icp-sq",
+    "name": "ICP and the Squid web cache",
+    "datePublished": "1998.3",
+    "description": "We describe the structure and functionality of the Internet Cache\nProtocol (ICP) and its implementation in the Squid Web Caching\nsoftware. ICP is a lightweight message format used for communication\namong Web caches. Caches exchange ICP queries and replies to gather\ninformation to use in selecting the most appropriate location from\nwhich to retrieve an object.\n\nWe present background on the history of ICP, and discuss issues in ICP\ndeployment, efficiency, security, and interaction with other aspects of\nWeb trac behavior. We catalog successes, failures, and lessons learned\nfrom using ICP to deploy a global Web cache hierarchy.\n\n",
+    "tags": [
+        "caching"
+    ],
+    "pubdb_id": "paper146",
+    "venue": "ieee_journal_on_selected_areas_in_communications",
+    "authors": [
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "University of Colorado at Boulder"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:476",
+            "label": "gzipped postscript",
+            "to": "icp-sq.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:475",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1998/icp-sq/icp-sq.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Journal on Selected Areas in Communications",
+        "volume": "16",
+        "number": "3",
+        "pages": "345-57",
+        "linkedObjects": ""
+    }
+}

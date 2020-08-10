@@ -1,0 +1,84 @@
+{
+    "id": "2017_look_at_router_geolocation",
+    "name": "A Look at Router Geolocation in Public and Commercial Databases",
+    "datePublished": "2017.11",
+    "description": "Internet measurement research frequently needs to map infrastructure components, such as routers, to their physical locations. Although public and commercial geolocation services are often used for this purpose, their accuracy when applied to network infrastructure has not been previously assessed. Prior work focused on evaluating the overall accuracy of geolocation databases, which is dominated by their performance on end-user IP addresses. In this work, we evaluate the reliability of router geolocation in databases. We use a dataset of about 1.64M router interface IP addresses extracted from the CAIDA Ark dataset to examine the country- and city-level coverage and consistency of popular public and commercial geolocation databases. We also create and provide a ground-truth dataset of 16,586 router interface addresses and locations, with city-level accuracy, and we use it to evaluate the databases\u2019 accuracy with a regional breakdown analysis. Our results show that the databases are not reliable for geolocating routers and that there is room to improve their country- and city-level accuracy. Based on our results, we present a set of recommendations to researchers concerning using the geolocation databases to geolocate routers.",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "active data analysis"
+    ],
+    "pubdb_id": "paper634",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:gharaibeh_manaf",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:shah_anant",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:zhang_han",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:ensafi_roya",
+            "organization": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_christos",
+            "organization": [
+                "Colorado State University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1905",
+            "label": "Data Supplement",
+            "to": "https://www.caida.org/data/request_user_info_forms/geolocated-router.xml"
+        },
+        {
+            "from": "PubDBlinkId:1904",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3131365.3131380"
+        },
+        {
+            "from": "PubDBlinkId:1902",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/look_at_router_geolocation/look_at_router_geolocation.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1935",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2017/look_at_router_geolocation_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

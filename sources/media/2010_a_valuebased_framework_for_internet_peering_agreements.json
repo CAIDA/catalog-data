@@ -1,0 +1,21 @@
+{
+    "id": "2010_framework_peering_agreements_nanog",
+    "name": "A Value-based Framework for Internet Peering Agreements ",
+    "tags": [
+        "economics",
+        "policy",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2010.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/framework_peering_agreements_nanog/framework_peering_agreements_nanog.pdf",
+        "https://www.caida.org/publications/papers/2010/framework_peering_agreements"
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "id": "2005_top_modeling_as",
+    "name": "Towards a Topology Generator Modeling AS Relationships",
+    "datePublished": "2005.11",
+    "description": "The development of realistic topology generators is a problem that has attracted significant attention the last few years. There exist a number of competing approaches to construction of random graphs reproducing important properties of real networks. Unfortunately, all the existing approaches do not capture an inherent aspect of many real networks: links in real networks represent relationships, which can be of several types reflecting different properties. Such link type inhomogeneity is present in the AS topology of the Internet, which is a intermix of customer-to- provider (c2p), peer-to-peer (p2p) and sibling-to-sibling (s2s) relationships. It also exists in social networks (different types of social relationships), in biological networks (different types of protein interactions) and in many other real networks. Node relationships not only provide additional information on the network topology structure, but more significantly, they represent an indispensable aspect of real networks, and this aspect needs to be properly modeled for many practical applications. Consider for example the case of using synthetic AS topologies to simulate a new routing protocol. In order to realistically simulate routing in a synthetic AS topology, we need to take into account how policies affect routing decisions. However, this is not possible with existing topology generators since they solely model the network connectivity properties without incorporating any insight about the relationships between nodes. In this work we address this problem by introducing a framework for modeling different relationships found in real networks. We use our framework to model AS relationships in the Internet and to develop an AS topology generator that generates AS graphs with realistic connectivity properties as well as realistic AS relationships.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper53",
+    "venue": "ieee_international_conference_on_network_protocols",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sundaram_ravi",
+            "organization": [
+                "Northeastern University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:30",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/top_modeling_as/top_modeling_as.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE International Conference on Network Protocols",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

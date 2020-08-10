@@ -1,0 +1,55 @@
+{
+    "id": "2013_genesis-cba",
+    "name": "GENESIS-CBA: an agent-based model of peer evaluation and selection in the internet interdomain network",
+    "datePublished": "2013.4",
+    "description": "We propose an agent-based model for peer selection in the Internet at the Autonomous System (AS) level. The proposed model, GENESIS-CBA, is based on realistic constraints and provider selection mechanism, with ASes acting in a myopic and decentralized manner to optimize a cost-related fitness function. We introduce a new peering scheme, Cost-Benefit-Analysis, which, unlike existing peering strategies, gives ASes the ability to analyze the impact of each peering link on their economic fitness. Using this analysis, ASes engage in only those peering relations that can have a positive impact on their fitness. ",
+    "tags": [
+        "economics",
+        "topology"
+    ],
+    "pubdb_id": "paper541",
+    "venue": "complex_adaptive_systems_modeling",
+    "authors": [
+        {
+            "person": "person:lodhi_aemen",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1255",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1186/2194-3206-1-10"
+        },
+        {
+            "from": "PubDBlinkId:1256",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/genesis-cba/genesis-cba.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Complex Adaptive Systems Modeling",
+        "volume": "1",
+        "number": "10",
+        "pages": "1-29",
+        "linkedObjects": ""
+    }
+}

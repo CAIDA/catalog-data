@@ -1,0 +1,19 @@
+{
+    "id": "2008_bcnet_hyperbolic_geometry_scale_free",
+    "name": "Hyperbolic geometry and scale-free topology of complex networks",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "bcnet_workshop",
+            "date": "2008.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/bcnet_hyperbolic_geometry_scale_free/bcnet_hyperbolic_geometry_scale_free.pdf",
+        "https://www.caida.org/publications/papers/2010/greedy_forwarding_dynamic"
+    ]
+}

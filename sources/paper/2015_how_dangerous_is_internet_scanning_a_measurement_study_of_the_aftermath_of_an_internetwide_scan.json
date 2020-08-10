@@ -1,0 +1,63 @@
+{
+    "id": "2015_how_dangerous_internet_scanning",
+    "name": "How Dangerous Is Internet Scanning? A Measurement Study of the Aftermath of an Internet-Wide Scan",
+    "datePublished": "2015.4",
+    "description": "Internet scanning is a de facto background traffic noise that is not clear if it poses a dangerous threat, i.e., what happens to scanned hosts? what is the success rate of scanning? and whether the problem is worth investing significant effort and money on mitigating it, e.g., by filtering unwanted traffic? In this work we take a first look into Internet scanning from the point of view of scan repliers using a unique combination of data sets which allows us to estimate how many hosts replied to scanners and whether they were subsequently attacked in an actual network. To contain our analysis, we focus on a specific interesting scanning event that was orchestrated by the Sality botnet during February 2011 which scanned the entire IPv4 address space. By analyzing unsampled NetFlow records, we show that 2% of the scanned hosts actually replied to the scanners. Moreover, by correlating scan replies with IDS alerts from the same network, we show that significant exploitation activity followed towards the repliers, which eventually led to an estimated 8% of compromised repliers. These observations suggest that Internet scanning is dangerous: in our university network, at least 142 scanned hosts were eventually compromised. World-wide, the number of hosts that were compromised in response to the studied event is likely much larger.",
+    "tags": [
+        "security",
+        "measurement methodology",
+        "network telescope"
+    ],
+    "pubdb_id": "paper582",
+    "venue": "traffic_monitoring_and_analysis_workshop_tma",
+    "authors": [
+        {
+            "person": "person:raftopoulos_elias",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:glatz_eduard",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "ETH Z\u00fcrich",
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1616",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-319-17172-2_11"
+        },
+        {
+            "from": "PubDBlinkId:1650",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/how_dangerous_internet_scanning/how_dangerous_internet_scanning.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Traffic Monitoring and Analysis Workshop (TMA)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "9053",
+        "number": "",
+        "pages": "158-172",
+        "linkedObjects": ""
+    }
+}

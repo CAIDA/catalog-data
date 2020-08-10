@@ -1,0 +1,22 @@
+{
+    "id": "2015_road_to_open_internet_ensr",
+    "name": "The Road to an Open Internet is Paved With Pragmatic Disclosure & Transparency Policies",
+    "tags": [
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "telecommunications_policy_research_conference_tprc",
+            "date": "2015.9"
+        },
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "acm_sigcomm_workshop_on_ethics_in_networked_systems_research",
+            "date": "2015.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/road_to_open_internet_ensr/road_to_open_internet_ensr.pdf"
+    ]
+}

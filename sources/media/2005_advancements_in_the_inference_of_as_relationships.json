@@ -1,0 +1,18 @@
+{
+    "id": "2005_caidawide050311_fontas_as_relationships",
+    "name": "Advancements in the inference of AS relationships",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dimitropoulos, Xenofontas",
+            "venue": "wide",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/workshops/wide/0503/slides/dimitropoulos.ppt"
+    ]
+}

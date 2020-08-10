@@ -1,0 +1,64 @@
+{
+    "id": "2016_policy_challenges_mapping_internet",
+    "name": "Policy challenges in mapping Internet interdomain congestion",
+    "datePublished": "2016.10",
+    "description": "Interconnection links connecting access providers to their peers, transit providers and major content providers are a potential point of discriminatory treatment and impairment of user experience. In the U.S., the FCC has asserted regulatory authority over those links, although they have acknowledged they lack sufficient expertise to develop appropriate regulations thus far. Without a basis of knowledge that relates measurement to justified inferences about actual impairment, different actors can put forward opportunistic interpretations of data to support their points of view. \r\n\r\nWe introduce a topology-aware model of interconnection, to add clarity to a recent proliferation of data and claims, and to elucidate our own beliefs about how to measure interconnection links of access providers, and how policymakers should interpret the results. We use six case studies that span data sets offered by access providers, edge providers, academic researchers, and one mandated by the FCC. This last example reflects our recent experience as the Independent Measurement Experts that worked with the FCC and AT&T in establishing a measurement methodology for reporting on the state of AT&T\u2019s interconnection links. These case studies show how our conceptual model can guide a critical analysis of what is or should be measured and reported, and how to soundly interpret these measurements. We conclude with insights gained in the process of defining the AT&T/DirecTV methodology and in the process of defining and applying our conceptual model.",
+    "tags": [
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "policy",
+        "topology"
+    ],
+    "pubdb_id": "paper619",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2005",
+            "label": "DOI",
+            "to": "https://dx.doi.org/10.2139/ssrn.2756868"
+        },
+        {
+            "from": "PubDBlinkId:1808",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/policy_challenges_mapping_internet/policy_challenges_mapping_internet.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

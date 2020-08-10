@@ -1,0 +1,63 @@
+{
+    "id": "2000_asia_paper",
+    "name": "Measurements of the Internet topology in the Asia-Pacific Region",
+    "datePublished": "2000.7",
+    "description": "CAIDA, the Cooperative Association for Internet Data Analysis, has done\r\na study of network connectivity in the Asia-Pacific region. The focus\r\nis on network latency and performance, autonomous system (AS) and\r\ncountry peering, and third party transit. Using ICMP packets from nine\r\ngeographically diverse monitors we collect data that includes the\r\nforward IP path and the round-trip delay to about 2000 destinations\r\n(mostly web servers) in the Asia-Pacific region. From these IP paths\r\nand delay values we gather statistics about transit providers, peering,\r\nand the appropriateness of our metrics to measure the Internet.\r\n\r\n",
+    "tags": [
+        "topology",
+        "active data analysis"
+    ],
+    "pubdb_id": "paper130",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Colorado at Boulder"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:87",
+            "label": "HTML",
+            "to": "asia_paper.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

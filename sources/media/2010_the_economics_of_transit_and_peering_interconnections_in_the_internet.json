@@ -1,0 +1,24 @@
+{
+    "id": "2010_economics_interconnections",
+    "name": "The Economics of Transit and Peering Interconnections in the Internet",
+    "tags": [
+        "topology",
+        "routing",
+        "economics"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "university_of_new_south_wales",
+            "date": "2010.11"
+        },
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "nicta",
+            "date": "2010.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/economics_interconnections/economics_interconnections.ppt"
+    ]
+}

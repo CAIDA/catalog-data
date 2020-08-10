@@ -1,0 +1,58 @@
+{
+    "id": "2006_impl_top_discovery_algorithm",
+    "name": "Implementation and Deployment of a Distributed Network Topology Discovery Algorithm",
+    "datePublished": "2006.3",
+    "description": "In the past few years, the network measurement\r\ncommunity has been interested in the problem of internet topology\r\ndiscovery using a large number (hundreds or thousands) of\r\nmeasurement monitors. The standard way to obtain information\r\nabout the internet topology is to use the traceroute tool from\r\na small number of monitors. Recent papers have made the case\r\nthat increasing the number of monitors will give a more accurate\r\nview of the topology. However, scaling up the number of monitors\r\nis not a trivial process. Duplication of effort close to the monitors\r\nwastes time by reexploring well-known parts of the network, and\r\nclose to destinations might appear to be a distributed denialof\r\nservice (DDoS) attack as the probes converge from a set of\r\nsources towards a given destination. In prior work, authors of\r\nthis report proposed Doubletree, an algorithm for cooperative\r\ntopology discovery, that reduces the load on the network, i.e.,\r\nrouter IP interfaces and end-hosts, while discovering almost\r\nas many nodes and links as standard approaches based on\r\ntraceroute. This report presents our open-source and freely\r\ndownloadable implementation of Doubletree in a tool we call\r\ntraceroute@home. We describe the deployment and validation\r\nof traceroute@home on the PlanetLab testbed and we report\r\non the lessons learned from this experience. We discuss how\r\ntraceroute@home can be developed further and discuss ideas for\r\nfuture improvements.\r\n",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper49",
+    "venue": "arxiv_csni060362",
+    "authors": [
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Laboratoire LiP6/CNRS Universit\u00e9 Pierre & Marie Curie"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:friedman_timur",
+            "organization": [
+                "Laboratoire LiP6/CNRS Universit\u00e9 Pierre & Marie Curie"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:24",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/impl_top_discovery_algorithm/impl_top_discovery_algorithm.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "arXiv cs.NI/060362",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

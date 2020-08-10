@@ -1,0 +1,84 @@
+{
+    "id": "2005_pam-bwest",
+    "name": "Comparison of Public End-to-End Bandwidth Estimation Tools on High-Speed Links",
+    "datePublished": "2005.3",
+    "description": "In this paper we present results of a series of bandwidth estimation\r\nexperiments conducted on a high-speed testbed at the San Diego Supercomputer\r\nCenter and on OC-48 and GigE paths in real world networks. We test and compare\r\npublicly available bandwidth estimation tools: _abing, pathchirp, pathload,_\r\nand _Spruce_. We also tested _Iperf_ which measures achievable TCP throughput. In\r\nthe lab we used two different sources of known and reproducible cross-traffic in\r\na fully controlled environment. In real world networks we had a complete knowledge\r\nof link capacities and had access to SNMP counters for independent cross-traffic\r\nverification. We compare the accuracy and other operational characteristics\r\nof the tools and analyze factors impacting their performance.\r\n",
+    "tags": [
+        "bandwidth estimation",
+        "software/tools"
+    ],
+    "pubdb_id": "paper62",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:shriram_alok",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:murray_margaret",
+            "organization": [
+                "Texas Advanced Computing Center, University of Texas at Austin"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:525",
+            "label": "html",
+            "to": "/projects/bwest/reports/tool-comparison-supplement.xml"
+        },
+        {
+            "from": "PubDBlinkId:524",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/pam-bwest/pam-bwest.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1573",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2005/pam2005_bwest/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "3431",
+        "number": "",
+        "pages": "306-320",
+        "linkedObjects": ""
+    }
+}

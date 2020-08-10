@@ -1,0 +1,21 @@
+{
+    "id": "2002_usenix_sec",
+    "name": "Network Telescopes: Observing Small or Distant Security Events",
+    "tags": [
+        "network telescope",
+        "security",
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "usenix",
+            "date": "2002.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/usenix_sec/index.html",
+        "http://www.idg.net/ic_933548_1794_9-1000.html"
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "id": "2019_at_home_abroad",
+    "name": "At Home and Abroad: The Use of Denial-of-service Attacks during Elections in Nondemocratic Regimes",
+    "datePublished": "2019.7",
+    "description": "In this article, we study the political use of denial-of-service (DoS) attacks, a particular form of cyberattack that disables web services by flooding them with high levels of data traffic. We argue that websites in nondemocratic regimes should be especially prone to this type of attack, particularly around political focal points such as elections. This is due to two mechanisms: governments employ DoS attacks to censor regime-threatening information, while at the same time, activists use DoS attacks as a tool to publicly undermine the government's authority. We analyze these mechanisms by relying on measurements of DoS attacks based on large-scale Internet traffic data. Our results show that in authoritarian countries, elections indeed increase the number of DoS attacks. However, these attacks do not seem to be directed primarily against the country itself but rather against other states that serve as hosts for news websites from this country.",
+    "tags": [
+        "passive data analysis",
+        "security",
+        "network telescope"
+    ],
+    "pubdb_id": "paper679",
+    "venue": "journal_of_conflict_resolution",
+    "authors": [
+        {
+            "person": "person:lutscher_philipp m.",
+            "organization": [
+                "University of Konstanz"
+            ]
+        },
+        {
+            "person": "person:weidmann_nils b.",
+            "organization": [
+                "University of Konstanz"
+            ]
+        },
+        {
+            "person": "person:roberts_margaret e.",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:jonker_mattijs",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2171",
+            "label": "DOI",
+            "to": "https://doi.org/10.1177/0022002719861676"
+        },
+        {
+            "from": "PubDBlinkId:2172",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/at_home_abroad/at_home_abroad.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Journal of Conflict Resolution",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

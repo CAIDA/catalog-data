@@ -1,0 +1,18 @@
+{
+    "id": "2003_infocom0304",
+    "name": "Internet Quarantine: Requirements for Containing Self-Propagating Code",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "ieee_conference_on_computer_communications_infocom",
+            "date": "2003.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/infocom0304/infocom0304.pdf",
+        "https://www.caida.org/publications/papers/2003/quarantine"
+    ]
+}

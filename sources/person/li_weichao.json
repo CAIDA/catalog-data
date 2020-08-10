@@ -1,5 +1,7 @@
 {
-    "id": "li_weichao",
-    "nameFirst": "Weichao",
-    "nameLast": "Li"
+    "person": "person:li_weichao",
+    "organization": [
+        "Peng Cheng Laboratory, P.R. China",
+        "Southern University of Science and Technology, P.R. China"
+    ]
 }

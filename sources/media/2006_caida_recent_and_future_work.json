@@ -1,0 +1,17 @@
+{
+    "id": "2006_recent_future_wide",
+    "name": "CAIDA Recent and Future Work",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "wide",
+            "date": "2006.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/recent_future_wide/recent_future_wide.pdf"
+    ]
+}

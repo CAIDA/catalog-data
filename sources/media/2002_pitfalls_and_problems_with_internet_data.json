@@ -1,0 +1,19 @@
+{
+    "id": "2002_ipam0203",
+    "name": "Pitfalls and Problems with Internet Data",
+    "tags": [
+        "data",
+        "software/tools",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "institute_for_pure_and_applied_mathematics_ipam",
+            "date": "2002.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/ipam0203/ipam0203.pdf"
+    ]
+}

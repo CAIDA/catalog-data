@@ -1,0 +1,58 @@
+{
+    "id": "2006_eval_top_discovery_algorithm",
+    "name": "Evaluation of a Large-Scale Topology Discovery Algorithm",
+    "datePublished": "2006.10",
+    "description": "In the past few years, the network measurement community\r\nhas been interested in the problem of internet topology discovery using\r\na large number (hundreds or thousands) of measurement monitors. The\r\nstandard way to obtain information about the internet topology is to\r\nuse the traceroute tool from a small number of monitors. Recent papers\r\nhave made the case that increasing the number of monitors will give a\r\nmore accurate view of the topology. However, scaling up the number of\r\nmonitors is not a trivial process. Duplication of effort close to the mon\r\nitors wastes time by reexploring well-known parts of the network, and\r\nclose to destinations might appear to be a distributed denial-of-service\r\n(DDoS) attack as the probes converge from a set of sources towards a\r\ngiven destination. In prior work, authors of this paper proposed Double\r\ntree, an algorithm for cooperative topology discovery, that reduces the\r\nload on the network, i.e., router IP interfaces and end-hosts, while dis\r\ncovering almost as many nodes and links as standard approaches based\r\non traceroute. This paper presents our open-source and freely download\r\nable implementation of Doubletree in a tool we call traceroute@home.\r\nWe evaluate the performance of our implementation on the PlanetLab\r\ntestbed and discuss a large-scale monitoring infrastructure that could\r\nbenefit of Doubletree.\r\n",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper44",
+    "venue": "ieee_international_workshop_on_ip_operations_management",
+    "authors": [
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Laboratoire LiP6/CNRS Universit\u00e9 Pierre & Marie Curie"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:friedman_timur",
+            "organization": [
+                "Laboratoire LiP6/CNRS Universit\u00e9 Pierre & Marie Curie"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:21",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/eval_top_discovery_algorithm/eval_top_discovery_algorithm.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE International Workshop on IP Operations & Management",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA) and Universit\u00e9 Pierre & Marie Curie",
+        "bibtex": "",
+        "journal": "",
+        "volume": "4268",
+        "number": "",
+        "pages": "193-204",
+        "linkedObjects": ""
+    }
+}

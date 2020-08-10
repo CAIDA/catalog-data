@@ -1,0 +1,54 @@
+{
+    "id": "2004_bioinformatics",
+    "name": "Visualising very large phylogenetic trees in three dimensional hyperbolic space",
+    "datePublished": "2004.4",
+    "description": "\n Common existing phylogenetic tree visualisation tools are not able to\n display readable trees with more than a few thousand nodes. These\n existing methodologies are based in two dimensional space. We introduce\n the idea of visualising phylogenetic trees in three dimensional\n hyperbolic space with the Walrus graph visualisation tool and have\n developed a conversion tool that enables the conversion of standard\n phylogenetic tree formats to Walrus' format. With Walrus, it becomes\n possible to visualise and navigate phylogenetic trees with more than\n 100,000 nodes. Walrus enables desktop visualisation of very large\n phylogenetic trees in 3 dimensional hyperbolic space. This application\n is potentially useful for visualisation of the tree of life and for\n functional genomics derivatives, like The Adaptive Evolution Database\n (TAED).\n",
+    "tags": [
+        "visualization"
+    ],
+    "pubdb_id": "paper79",
+    "venue": "bmc_bioinformatics",
+    "authors": [
+        {
+            "person": "person:hughes_timothy",
+            "organization": [
+                "Bergen Centre for Computational Science, University of Bergen, Norway"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:liberles_david",
+            "organization": [
+                "Bergen Centre for Computational Science, University of Bergen, Norway"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:43",
+            "label": "HTML",
+            "to": "http://www.biomedcentral.com/1471-2105/5/48"
+        },
+        {
+            "from": "PubDBlinkId:44",
+            "label": "PDF",
+            "to": "http://www.biomedcentral.com/content/pdf/1471-2105-5-48.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "BMC Bioinformatics",
+        "volume": "5",
+        "number": "",
+        "pages": "48",
+        "linkedObjects": ""
+    }
+}

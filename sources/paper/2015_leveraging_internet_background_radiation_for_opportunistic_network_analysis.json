@@ -1,0 +1,74 @@
+{
+    "id": "2015_leveraging_internet_background_radiation",
+    "name": "Leveraging Internet Background Radiation for Opportunistic Network Analysis",
+    "datePublished": "2015.10",
+    "description": "For more than a decade, unsolicited traffic sent to unused regions of the address space has provided valuable insight into malicious Internet activities. In this paper, we explore the utility of this traffic, known as Internet Background Radiation (IBR), for a different purpose: as a data source of Internet-wide measurements. We collect and analyze IBR from two large darknets, carefully deconstructing its various components and characterizing them along dimensions applicable to Internet-wide measurements. Intuitively, IBR can provide insight into network properties when traffic from that network contains relevant information and is of sufficient volume. We turn this intuition into a scientific investigation, examining which networks send IBR, identifying components of IBR that enable opportunistic network inferences, and characterizing the frequency and granularity of traffic sources. We also consider the influences of time of collection and position in the address space on our results. We leverage IBR properties in three case studies to show that IBR can supplement existing techniques by improving coverage and/or diversity of analyzable networks while reducing measurement overhead. Our main contribution is a new framework for understanding the circumstances and properties for which unsolicited traffic is an appropriate data source for inference of macroscopic Internet properties, which can help other researchers assess its utility for a given study.",
+    "tags": [
+        "network telescope",
+        "measurement methodology",
+        "security",
+        "internet outages"
+    ],
+    "pubdb_id": "paper588",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:benson_karyn",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:snoeren_alex",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:kallitsis_michalis",
+            "organization": [
+                "Merit Network, Inc."
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2138",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2815675.2815702"
+        },
+        {
+            "from": "PubDBlinkId:1629",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/leveraging_internet_background_radiation/leveraging_internet_background_radiation.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1659",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2015/leveraging_internet_background_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

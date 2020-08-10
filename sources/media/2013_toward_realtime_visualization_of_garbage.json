@@ -1,0 +1,21 @@
+{
+    "id": "2013_realtime_visualization_garbage",
+    "name": "Toward Realtime Visualization of Garbage",
+    "tags": [
+        "internet outages",
+        "network telescope",
+        "passive data analysis",
+        "security",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2013.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/realtime_visualization_garbage/realtime_visualization_garbage.pdf"
+    ]
+}

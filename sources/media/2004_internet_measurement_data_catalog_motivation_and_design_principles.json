@@ -1,0 +1,18 @@
+{
+    "id": "2004_datcat_principles_imc",
+    "name": "Internet Measurement Data Catalog: Motivation and Design Principles",
+    "tags": [
+        "data",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2004.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/datcat_principles_imc/datcat_principles_imc.pdf"
+    ]
+}

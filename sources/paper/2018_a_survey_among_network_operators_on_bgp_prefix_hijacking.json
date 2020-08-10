@@ -1,0 +1,64 @@
+{
+    "id": "2018_survey_among_network_operators",
+    "name": "A Survey among Network Operators on BGP Prefix Hijacking",
+    "datePublished": "2018.1",
+    "description": "BGP prefix hijacking is a threat to Internet operators and users. Several mechanisms or modifications to BGP that protect the Internet against it have been proposed. However, the reality is that most operators have not deployed them and are reluctant to do so in the near future. Instead, they rely on basic \u2013and often inefficient\u2013 proactive defenses to reduce the impact of hijacking events, or on detection based on third party services and reactive approaches that might take up to several hours. In this work, we present the results of a survey we conducted among 75 network operators to study: (a) the operators\u2019 awareness of BGP prefix hijacking attacks, (b) presently used defenses (if any) against BGP prefix hijacking, (c) the willingness to adopt new defense mechanisms, and (d) reasons that may hinder the deployment of BGP prefix hijacking defenses.We expect the findings of this survey to increase the understanding of existing BGP hijacking defenses and the needs of network operators, as well as contribute towards designing new defense mechanisms that satisfy the requirements of the operators.",
+    "tags": [
+        "security",
+        "routing",
+        "passive data analysis",
+        "topology"
+    ],
+    "pubdb_id": "paper652",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:sermpezis_pavlos",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:kotronis_vasileios",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "Foundation for Research and Technology - Hellas, Institute of Computer Science (FORTH-ICS)",
+                "University of Crete"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1991",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3211852.3211862"
+        },
+        {
+            "from": "PubDBlinkId:1990",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/survey_among_network_operators/survey_among_network_operators.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "48",
+        "number": "1",
+        "pages": "64-69",
+        "linkedObjects": ""
+    }
+}

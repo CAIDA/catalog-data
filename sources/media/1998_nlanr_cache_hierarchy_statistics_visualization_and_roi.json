@@ -1,0 +1,19 @@
+{
+    "id": "1998_Nanog9802",
+    "name": "NLANR cache hierarchy statistics visualization, and roi",
+    "tags": [
+        "caching",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "1998.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/1998/Nanog9802/index.html",
+        "https://www.caida.org/publications/papers/1998/plankton"
+    ]
+}

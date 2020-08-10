@@ -1,0 +1,50 @@
+{
+    "id": "1994_itf",
+    "name": "Internet traffic flow profiling",
+    "datePublished": "1994.3",
+    "description": "The current Internet aggregates flows of traffic among many\nend systems, users, and applications. Characterizing the nature of these\nflows will be critical to accomodating the increasing number and\ndiversity of the Internet traffic flows. We present a methodology for\nprofiling Internet traffic flows at a variety of flow granularities. Our\nmethodology for modeling flows differs from many previous studies that\nhave concentrated on end-point definitions of flows defined by TCP\nconnections using the SYN and FIN control mechanism. Instead, we focus\non the IP layer and define flows based on traffic satisfying various\ntemporal and spatial locality conditions, as observed at internal points\nof the network. This approach to the definition and characterization of\nnetwork flows may help address some central problems for networking\nbased on the Internet model. Among them are route caching, resource\nreservation at multiple service levels, usage based accounting, and the\nintegration of IP traffic over an ATM fabric. In this paper we first\ndefine the parameter space and then concentrate on metrics\ncharacterizing individual flows, including flow duration and flow volume\nin both packets and bytes. We consider various granularities of the\ndefinition of a flow, such as by destination network, host pair, or host\nand port quadruple. Our measurements demonstrate (i) the brevity of a\nsignificant fraction of IP flows (ii) that the number of host-pair IP\nflows is not significantly larger than the destination network flows,\nand (iii) that schemes for caching traffic information could benefit by\nmaching caching decisions taking into account higher layer information.\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper169",
+    "venue": "applied_network_research_san_diego_supercomputer_center",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:543",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/itf/flows.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Applied Network Research, San Diego Supercomputer Center",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

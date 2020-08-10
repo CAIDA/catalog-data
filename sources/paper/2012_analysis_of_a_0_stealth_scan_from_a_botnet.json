@@ -1,0 +1,77 @@
+{
+    "id": "2012_analysis_slash_zero",
+    "name": "Analysis of a \"/0\" Stealth Scan from a Botnet",
+    "datePublished": "2012.11",
+    "description": "Botnets are the most common vehicle of cyber-criminal activity. They are used for spamming, phishing, denial of service attacks, brute-force cracking, stealing private information, and cyber warfare. Botnets carry out network scans for several reasons, including searching for vulnerable machines to infect and recruit into the botnet, probing networks for enumeration or penetration, etc. We present the measurement and analysis of a horizontal scan of the entire IPv4 address space conducted by the Sality botnet in February of last year. This 12-day scan originated from approximately 3 million distinct IP addresses, and used a heavily coordinated and unusually covert scanning strategy to try to discover and compromise VoIP-related (SIP server) infrastructure. We observed this event through the UCSD Network Telescope, a /8 darknet continuously receiving large amounts of unsolicited traffic, and we correlate this traffic data with other public sources of data to validate our inferences. Sality is one of the largest botnets ever identified by researchers, its behavior represents ominous advances in the evolution of modern malware: the use of more sophisticated stealth scanning strategies by millions of coordinated bots, targeting critical voice communications infrastructure. This work offers a detailed dissection of the botnet\u201bs scanning behavior, including general methods to correlate, visualize, and extrapolate botnet behavior across the global Internet.'' A version of this paper was later published in [2014](https://www.caida.org/publications/papers/2014/analysis_slash_zero/) to IEEE/ACM Transactions on Networking (ToN).",
+    "tags": [
+        "measurement methodology",
+        "security"
+    ],
+    "pubdb_id": "paper543",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kimberly",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:papale_ferdinando",
+            "organization": [
+                "University of Napoli Federico II, Napoli, Italy"
+            ]
+        },
+        {
+            "person": "person:pescap\u00e8_antonio",
+            "organization": [
+                "University of Napoli Federico II, Napoli, Italy"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1262",
+            "label": "Data Supplement",
+            "to": "/publications/papers/2015/analysis_slash_zero/supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:1260",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2398776.2398778"
+        },
+        {
+            "from": "PubDBlinkId:1261",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/analysis_slash_zero/analysis_slash_zero.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1263",
+            "label": "Related Presentation (video)",
+            "to": "/publications/presentations/2012/analysis_stealth_scan_lisa/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "1-14 ",
+        "linkedObjects": ""
+    }
+}

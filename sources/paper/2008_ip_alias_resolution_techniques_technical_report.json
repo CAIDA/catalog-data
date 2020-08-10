@@ -1,0 +1,50 @@
+{
+    "id": "2008_alias_resolution_techreport",
+    "name": "IP Alias Resolution Techniques: Technical Report",
+    "datePublished": "2008.12",
+    "description": "The well-known traceroute probing method discovers links between interfaces on Internet routers. IP alias resolution, the process of identifying IP addresses belonging to the same router, is a critical step in producing Internet topology maps. We compare known alias resolution techniques, and suggest a practical combination of techniques that can produce the most accurate and complete IP-to-router mapping.\r\n'' The latest version, 1.1 (2009-01-19), is available as well as the original version published in December of 2008.",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "software/tools",
+        "topology"
+    ],
+    "pubdb_id": "paper21",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:299",
+            "label": "latest version (1.1, PDF)",
+            "to": "alias_resolution_techreport.pdf"
+        },
+        {
+            "from": "PubDBlinkId:300",
+            "label": "original version (1.0, PDF)",
+            "to": "alias_resolution_techreport_1.0.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1488",
+            "label": "Related Paper",
+            "to": "https://www.caida.org/publications/papers/2008/alias_resolution_techreport"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

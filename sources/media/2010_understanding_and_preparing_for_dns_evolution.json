@@ -1,0 +1,21 @@
+{
+    "id": "2010_dns_evolution",
+    "name": "Understanding and Preparing for DNS Evolution",
+    "tags": [
+        "dns",
+        "passive data analysis",
+        "security",
+        "trends"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: John, Wolfgang",
+            "venue": "traffic_monitoring_and_analysis",
+            "date": "2010.4"
+        }
+    ],
+    "links": [
+        "http://www.multimedia.ethz.ch/conferences/2010/pam/?doi=10.3930/ETHZ/AV-66edc155-a4c0-4374-bb70-836e76cce3a0&autostart=true",
+        "https://www.caida.org/publications/presentations/2010/dns_evolution/dns_evolution.pdf"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2005_dns_statistics_collector",
+    "name": "DNS Statistics Collector",
+    "tags": [
+        "visualization",
+        "measurement methodology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "oarc",
+            "date": "2005.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/dns_statistics_collector/dns_statistics_collector.pdf"
+    ]
+}

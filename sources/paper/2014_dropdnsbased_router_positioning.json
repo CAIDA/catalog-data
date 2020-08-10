@@ -1,0 +1,67 @@
+{
+    "id": "2014_drop",
+    "name": "DRoP:DNS-based Router Positioning",
+    "datePublished": "2014.7",
+    "description": "Determining the physical locations of Internet routers is crucial for characterizing Internet infrastructure and understanding geographic pathways of global routing, as well as for creating Point-of-Presence (POP) level maps. These tasks require good router geolocations. Yet current commercial geolocation efforts focus predominantly on geolocating clients and servers, that is, edge hosts rather than routers in the core of the network. In this paper we focus on geolocating Internet routers, using a methodology for extracting and decoding geography-related strings from fully qualified domain names (hostnames). We first compiled an extensive dictionary associating geographic strings (e.g., airport codes) with geophysical locations. We then searched a large set of router hostnames for these strings, assuming each autonomous naming domain uses geographic hints consistently within that domain. We used topology and performance data continually collected by our global measurement\r\ninfrastructure to ascertain whether a given hint appears to co-locate different hostnames in which it is found. Finally, generalized geolocation hints into domain-specific rule sets. We generated a total of 1,711 rules covering 1,398 different domains and validated them using domain-specific ground truth we gathered for six domains. Unlike previous efforts which relied on labor-intensive domain-specific manual analysis, our process for inferring the domain specific heuristics is automated, representing a measurable advance in the state-of-the-art of methods for geolocating Internet resources.",
+    "tags": [
+        "active data analysis",
+        "dns",
+        "network geometry",
+        "topology"
+    ],
+    "pubdb_id": "paper558",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1962",
+            "label": "Data Supplement",
+            "to": "http://data.caida.org/datasets/2014-ccr-drop-data-supplement/"
+        },
+        {
+            "from": "PubDBlinkId:2164",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2656877.2656879"
+        },
+        {
+            "from": "PubDBlinkId:1365",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/drop/drop.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1386",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2014/drop_ddec_dhs/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "3",
+        "pages": "6-13",
+        "linkedObjects": ""
+    }
+}

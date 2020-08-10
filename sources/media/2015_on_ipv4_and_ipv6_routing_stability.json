@@ -1,0 +1,20 @@
+{
+    "id": "2015_ipv4_ipv6_routing_stability_aims",
+    "name": "On IPv4 and IPv6 Routing Stability",
+    "tags": [
+        "routing",
+        "ipv6",
+        "internet id consumption",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Livadariu, Ioana",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/ipv4_ipv6_routing_stability_aims/ipv4_ipv6_routing_stability_aims.pdf"
+    ]
+}

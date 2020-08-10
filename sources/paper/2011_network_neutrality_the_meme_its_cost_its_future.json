@@ -1,0 +1,47 @@
+{
+    "id": "2011_network_neutrality",
+    "name": "\"Network Neutrality\": the meme, its cost, its future",
+    "datePublished": "2011.9",
+    "description": "In June 2011 I participated on a panel on network neutrality hosted at the June cybersecurity meeting of the DHS/SRI Infosec Technology Transition Council (ITTC), where \"experts and leaders from the government, private, financial, IT, venture capitalist,and academia and science sectors came together to address the problem of identity theft and related criminal activity on the Internet.\" I recently wrote up some of my thoughts on that panel, including what network neutrality has to do with cybersecurity.",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper502",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:802",
+            "label": "CCR Online",
+            "to": "http://www.sigcomm.org/sites/default/files/ccr/papers/2011/October/2043165-2043172.pdf"
+        },
+        {
+            "from": "PubDBlinkId:778",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2043165.2043172"
+        },
+        {
+            "from": "PubDBlinkId:777",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/network_neutrality/network_neutrality.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "41",
+        "number": "1",
+        "pages": "44-45",
+        "linkedObjects": ""
+    }
+}

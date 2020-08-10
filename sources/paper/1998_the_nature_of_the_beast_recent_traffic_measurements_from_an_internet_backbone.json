@@ -1,0 +1,61 @@
+{
+    "id": "1998_Inet98",
+    "name": "The nature of the beast: Recent traffic measurements from an Internet backbone",
+    "datePublished": "1998.7",
+    "description": "\r\nAs described in last years Inet '97 paper [1], MCI has implemented a\r\nhigh-performance, low-cost monitoring system that can monitor Internet\r\ntraffic (cell/packet headers) and perform analyses, and deployed them\r\non OC-3 trunks within iMCI's backbone and also within the NSF-sponsored\r\nvBNS (very High performance Backbone Service). This publicly-available\r\ntool facilitates measurement and analysis of high-speed OC-3, and now\r\nOC-12, trunks that carry hundreds of thousands of simultaneous flows.\r\nAs a follow up to last year's paper, we provide some new data analyses\r\nas well as comparisons with last year's data that may suggest trends in\r\nchanging workload profiles. All the data in this paper is based on\r\nrecent wide-area MCI Internet backbone traffic as recorded by the Coral\r\nmonitors.\r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "software/tools"
+    ],
+    "pubdb_id": "paper144",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:miller_greg",
+            "organization": [
+                "MCI/vBNS"
+            ]
+        },
+        {
+            "person": "person:thompson_kevin",
+            "organization": [
+                "MCI/vBNS"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:95",
+            "label": "gzipped postscript",
+            "to": "Inet98.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:96",
+            "label": "HTML",
+            "to": "Inet98.html"
+        },
+        {
+            "from": "PubDBlinkId:97",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1998/Inet98/Inet98.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

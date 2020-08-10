@@ -1,0 +1,56 @@
+{
+    "id": "2009_tr-2009-02",
+    "name": "Greedy Forwarding in Dynamic Scale-Free Networks Embedded in Hyperbolic Metric Spaces: Technical Report",
+    "datePublished": "2009.7",
+    "description": "In this paper we show that complex (scale-free) network topologies naturally emerge from hyperbolic metric spaces. The\r\nhyperbolic geometry can be used to facilitate maximally efficient greedy forwarding on these topologies where packets can find\r\ntheir destinations with 100% probability following almost optimal, i.e., shortest paths, without the need for global topology\r\nknowledge. We demonstrate that this remarkable efficiency is robust under dynamic network conditions. Our findings suggest that\r\nforwarding information through complex networks, e.g., like the Internet, may be possible without the current overhead of routing\r\nprotocols, and may also find practical applications in overlay networks for tasks such as application-level routing, information\r\nsharing, and data distribution.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper16",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:9",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/tr-2009-02/tr-2009-02.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

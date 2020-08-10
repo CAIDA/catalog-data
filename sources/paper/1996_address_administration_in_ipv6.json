@@ -1,0 +1,54 @@
+{
+    "id": "1996_aai6",
+    "name": "Address administration in IPv6",
+    "datePublished": "1996.10",
+    "description": "As the Internet begins to enter the popular scope, portending large\r\nscale changes in how society will operate, important questions have\r\nemerged regarding issues of fairness and responsibility with respect to\r\nseveral aspects of the base Internet architecture.\r\n\r\nThe questions are many, and all have cumbersome legal, financial, and\r\ncultural ramifications. We focus here on only one: the addressing\r\nmodel. Addresses are the technical cornerstone of the Internet's\r\nability to move data from sender to any connected receiver. The shape\r\nof the address space ultimately determines the effective scalability\r\nand constrains the financial model of the network. We contrast two\r\nmodels of address assignment, provider and geographic based, expanding\r\non Tsuchiya's analysis, and explore their ramifications.\r\n\r\nOne difficulty in discussing address space is that although its\r\neffective use is essential for the technical feasibility of Internet\r\noperation, the ownership of address space and the responsibility for\r\njustifying its use remain ill-defined. There are several revealing\r\nanalogies in other spheres, e.g., spectrum assignment and international\r\ntelephony. Like spectrum bands, IP address space is a finite and\r\ncontended resource that requires careful assignment and management. We\r\nnote also that it has been, and continues to be, particularly\r\nchallenging for regulatory bodies to create and enforce equitable and\r\nconsistent policies for spectrum allocation.\r\n\r\nInternet addressing policy must be constructed out of a careful balance among: \r\n\r\n* service requirements of end users\r\n* base technology of the network\r\n* cost effectiveness of service provision\r\n* ability of providers to regain infrastructure costs\r\n* use of the Internet as a fundamental technology of society as a the phone system\r\n\r\nAlthough the IETF has entertained discussion of addressing policy\r\nincluding all of the above issues, the Internet has reached a stage of\r\nmaturity and breadth of scope that requires wider debate of these\r\nissues.",
+    "tags": [
+        "policy",
+        "ipv6"
+    ],
+    "pubdb_id": "paper156",
+    "venue": "ieee_symposium_on_information_visualization",
+    "authors": [
+        {
+            "person": "person:hoffman_eric",
+            "organization": [
+                "Ipsilon"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:244",
+            "label": "gzipped postscript",
+            "to": "geogaddr.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:242",
+            "label": "HTML",
+            "to": "aai6.html"
+        },
+        {
+            "from": "PubDBlinkId:243",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1996/aai6/geogaddr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Symposium on Information Visualization",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "id": "2008_wide_emile_ditl",
+    "name": "DITL 2008 and DatCat",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "dns",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Aben, Emile",
+            "venue": "widecasfi",
+            "date": "2008.8"
+        },
+        {
+            "presenter": "Author: Aben, Emile",
+            "venue": "moment",
+            "date": "2008.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_emile_ditl/wide_emile_ditl.pdf"
+    ]
+}

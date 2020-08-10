@@ -1,0 +1,19 @@
+{
+    "id": "2019_ethical_internet_measurement_canvas",
+    "name": "Ethical Internet measurement: From outages to anonymity",
+    "tags": [
+        "internet outages",
+        "visualization",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Winter, Philipp",
+            "venue": "canvas_workshop",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/ethical_internet_measurement_canvas/ethical_internet_measurement_canvas.pdf"
+    ]
+}

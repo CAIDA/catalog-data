@@ -1,0 +1,43 @@
+{
+    "id": "1994_wtc",
+    "name": "Web traffic characterization: an assessment of the impact of caching documents from the NCSA's web server",
+    "datePublished": "1994.10",
+    "description": "We analyze two days of queries to\r\nthe popular NCSA Mosaic server to assess\r\nthe geographic distribution of the\r\ntransaction requests.\r\nThe wide geographic\r\ndiversity of query sources present a strong\r\ncase for deployment of\r\ngeographically distributed caching mechanisms\r\nto improve server efficiency.\r\n\r\nThe NCSA web server consists of\r\nfour servers in a cluster. We\r\nshow time series of bandwidth and transaction\r\ndemands for both individual servers as well\r\nas aggregated statistics for the server cluster.\r\n\r\nWe then break down the transaction load\r\nby geographic areas, specifically nine\r\nzones within the United States.\r\nWe analyze the impact of caching the results of\r\nrepetitive queries from the same areas,\r\nin terms of reduction of flows from the main server.\r\nWe present metrics the reflect the\r\nimplications of such savings if there were\r\nusage-based costs for using the backbone\r\nthat would connect several cache sites.\r\nWe investigate multiple timeouts for\r\nthat cached objects, and visualize the results.\r\n\r\nWe also discuss future issues that\r\ncaching will inevitably force us to face,\r\nsuch as mechanisms for redirecting queries initially\r\ndestined for a central server to a preferred\r\ncache site. The preferred cache site may be a function\r\nof not only geographic proximity, but also\r\ncurrent load on nearby servers or network links.\r\nSuch refinements in the web architecture\r\nwill be essential to the stability of the\r\nnetwork as the web continues to grow,\r\nand operational geographic analysis of\r\nqueries to archive and library servers will\r\nbe fundamental to its effective evolution.",
+    "tags": [
+        "caching"
+    ],
+    "pubdb_id": "paper167",
+    "venue": "second_international_world_wide_web_www_conference",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:408",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/wtc/2iwwwc.cache.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Second International World Wide Web (WWW) Conference",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

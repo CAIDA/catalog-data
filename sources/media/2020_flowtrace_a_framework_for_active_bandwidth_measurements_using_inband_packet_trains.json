@@ -1,0 +1,21 @@
+{
+    "id": "2020_flowtrace_pam",
+    "name": "FlowTrace: A Framework for Active Bandwidth Measurements using In-band Packet Trains",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "QoE"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Ahmed, Adnan",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/flowtrace_pam/flowtrace_pam.pdf",
+        "https://www.caida.org/publications/papers/2020/flowtrace/",
+        "https://www.youtube.com/watch?v=R2gmoGVoohk"
+    ]
+}

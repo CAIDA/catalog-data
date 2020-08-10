@@ -1,0 +1,50 @@
+{
+    "id": "1993_ffb",
+    "name": "A framework for flow-based accounting on the Internet",
+    "datePublished": "1993.9",
+    "description": "\r\nWe describe steps toward an accounting mechanism to attribute Internet\r\nresource consumption based on service quality. Our objective is not to\r\ndescribe a complete accounting and billing system. Rather we advocate\r\ntaking advantage of existing Internet instrumentation to implement\r\nincremental improvements in the short to medium term. Experience from\r\nthese improvements can enable us to make more eduacted progress towards\r\na comprehensive Internet accounting system.\r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper176",
+    "venue": "ieee_singapore_international_conference_on_networks_sicon",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:102",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/ffb/accting.sg.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Singapore International Conference on Networks (SICON)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

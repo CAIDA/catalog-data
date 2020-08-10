@@ -1,0 +1,45 @@
+{
+    "id": "2011_hidden_variables_bipartite",
+    "name": "Hidden variables in bipartite networks",
+    "datePublished": "2011.8",
+    "description": "We introduce and study random bipartite networks with hidden variables. Nodes in these networks are characterized by hidden variables that control the appearance of links between node pairs. We derive analytic expressions for the degree distribution, degree correlations, the distribution of the number of common neighbors, and the bipartite clustering coefficient in these networks. We also establish the relationship between degrees of nodes in original bipartite networks and in their unipartite projections. We further demonstrate how hidden variable formalism can be applied to analyze topological properties of networks in certain bipartite network models, and verify our analytical results in numerical simulations. ",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper478",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:746",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/hidden_variables_bipartite/hidden_variables_bipartite.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "82",
+        "number": "026114",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

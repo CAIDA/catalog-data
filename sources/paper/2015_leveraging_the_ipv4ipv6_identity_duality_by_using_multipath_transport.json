@@ -1,0 +1,76 @@
+{
+    "id": "2015_leveraging_ipv4ipv6_identity_duality",
+    "name": "Leveraging the IPv4/IPv6 Identity Duality by using Multi-Path Transport",
+    "datePublished": "2015.4",
+    "description": "With the 20th anniversary of IPv6 nearing quickly, a growing number of Internet service providers (ISPs) now offer their customers both IPv6 and IPv4 connectivity. This makes multi-homing with IPv4 and IPv6 increasingly common even with just a single ISP connection. Furthermore, the growing popularity of multi-path transport, especially Multi-Path TCP (MPTCP) that is the extension of the well-known Transmission Control Protocol (TCP), leads to the question of whether this identity duality can be utilized for improving application performance in addition to providing resilience. In this paper, we first investigate the AS-level congruency of IPv4 and IPv6 paths in the Internet. We find that more than 60% of the current IPv4 and IPv6 AS-paths are non-congruent at the AS-level, which motivates us to explore how MPTCP can utilize the IPv4/IPv6 identity duality to improve data transfer performance. Our results show that MPTCP, even with a single dual-stack Internet connection, can significantly improve the end-to-end performance when the underlying paths are noncongruent. The extent of the improvement can reach up to the aggregate of the IPv4 and IPv6 bandwidths.",
+    "tags": [
+        "ipv6",
+        "measurement methodology",
+        "routing",
+        "topology",
+        "internet id consumption"
+    ],
+    "pubdb_id": "paper587",
+    "venue": "ieee_global_internet_symposium_gi",
+    "authors": [
+        {
+            "person": "person:livadariu_ioana",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:ferlin_simone",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:alay_\u00f6zg\u00fc",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dreibholz_thomas",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2147",
+            "label": "DOI",
+            "to": "https://doi.org/10.1109/INFCOMW.2015.7179403"
+        },
+        {
+            "from": "PubDBlinkId:1626",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/leveraging_ipv4ipv6_identity_duality/leveraging_ipv4ipv6_identity_duality.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Global Internet Symposium (GI)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

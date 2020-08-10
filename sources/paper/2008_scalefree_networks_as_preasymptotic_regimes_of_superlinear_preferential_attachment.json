@@ -1,0 +1,48 @@
+{
+    "id": "2008_scale_free_pre_asymptotic",
+    "name": "Scale-free networks as pre-asymptotic regimes of super-linear preferential attachment",
+    "datePublished": "2008.8",
+    "description": "We study the following paradox associated with networks growing according to super-linear preferential attachment: super-linear preference cannot produce scale-free networks in the thermodynamic limit, but there are super-linearly growing network models that perfectly match the structure of some real scale-free networks, such as the Internet. We calculate the degree distribution in super-linearly growing networks with arbitrary average degree, and confirm that in the true thermodynamic limit, these networks are indeed degenerate, i.e., almost all nodes have low degrees. We then show that super-linear growth has vast pre-asymptotic regimes whose depths depend both on the average degree in the network and on how super-linear the preference kernel is. We demonstrate that a super-linearly growing network model can reproduce, in its pre-asymptotic regime, the structure of a real network, if the model captures some sufficiently strong structural constraints -- rich-club connectivity, for example. These findings suggest that real scale-free networks of finite size may exist in pre-asymptotic regimes of network evolution processes that lead to degenerate network formations in the thermodynamic limit.\r\n",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper31",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:krapivsky_paul",
+            "organization": [
+                "Department of Physics, Boston University"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:674",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevE.78.026114"
+        },
+        {
+            "from": "PubDBlinkId:675",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/scale_free_pre_asymptotic/scale_free_pre_asymptotic.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "78",
+        "number": "026114",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

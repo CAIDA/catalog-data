@@ -1,0 +1,54 @@
+{
+    "id": "2019_toward_theory_harms_internet",
+    "name": "Toward a Theory of Harms in the Internet Ecosystem",
+    "datePublished": "2019.9",
+    "description": "One foundational justification for regulatory intervention is that there are harms occurring of a character that create a public interest in mitigating them. This paper is concerned with such harms that arise in the Internet ecosystem. Looking at news headlines for the last few years, it may seem that the range of such harms is unbounded. Hoping to add some order to the chaos, we undertake an effort to classify harms in the Internet ecosystem, in pursuit of a more or less complete taxonomy of harms. Our goal in structuring this taxonomy is to facilitate conversations and ideas to help mitigate harms in a more systematic way, as opposed to fighting an endless defensive battle against whatever happens next.\r\n\r\nThe background we bring to this paper is on the one hand architectural--how the Internet ecosystem is actually structured---and on the other hand empirical--how we should measure the Internet to best understand what is happening. If everything were wonderful about the Internet today, the need to measure and understand would not be so compelling. A justification for measurement follows from its ability to shed light on problems and challenges. Sustained measurement or compelled reporting of data, and the analysis of the collected data, generally comes at considerable effort and cost, so must be justified by an argument that it will shed light on something important. This reasoning naturally motivates our taxonomy of things that are wrong--what we call harms. That is where we, the research community generally, and governments should focus attention. We do not intend this paper as a catalog of pessimism, but to help define an action agenda for the research community and for governments. The structure of the paper proceeds \"up the layers\", from technology to society. For harms that are closer to the technology, we can be more specific about the harms, and more specific about possible measurements and remedies, and actors that could undertake them.\r\n\r\nOne motivation for this paper is that we believe the Internet ecosystem is at an inflection point. The Internet has revolutionized our ability to store, move, and process information, including information about people, and we are only at the beginning of understanding its impact on society and how to manage and mitigate harms resulting from unregulated commercial use of these capabilities. Current events suggest that now is a point of transition from laissez-faire to regulation. However, the path to good regulation is not obvious, and now is the time for the research community to think hard about what advice to give the governments of the world, and what sort of data can back up that advice. Our highest-level goal for this paper is to contribute to a conversation along those lines.",
+    "tags": [
+        "overview",
+        "policy"
+    ],
+    "pubdb_id": "paper684",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2198",
+            "label": "DOI",
+            "to": "https://dx.doi.org/10.2139/ssrn.3443341"
+        },
+        {
+            "from": "PubDBlinkId:2183",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/toward_theory_harms_internet/toward_theory_harms_internet.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2223",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/toward_theory_harms_internet_tprc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

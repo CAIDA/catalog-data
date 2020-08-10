@@ -1,0 +1,79 @@
+{
+    "id": "2019_hypersparse_neural_network_analysis",
+    "name": "Hypersparse Neural Network Analysis of Large-Scale Internet Traffic",
+    "datePublished": "2019.9",
+    "description": "The Internet is transforming our society, necessitating a quantitative understanding of Internet traffic. Our team collects and curates the largest publicly available Internet traffic data containing 50 billion packets. Utilizing a novel hypersparse neural network analysis of \u201cvideo\u201d streams of this traffic using 10,000 processors in the MIT SuperCloud reveals a new phenomena: the importance of otherwise unseen leaf nodes and isolated links in Internet traffic. Our neural network approach further shows that a two-parameter modified Zipf-Mandelbrot distribution accurately describes a wide variety of source/destination statistics on moving sample windows ranging from 100,000 to 100,000,000 packets over collections that span years and continents. The inferred model parameters distinguish different network streams and the model leaf parameter strongly correlates with the fraction of the traffic in different underlying network topologies. The hypersparse neural network pipeline is highly adaptable and different network statistics and training models can be incorporated with simple changes to the image filter functions.",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "routing"
+    ],
+    "pubdb_id": "paper681",
+    "venue": "ieee_high_performance_extreme_computing_conference_hpec",
+    "authors": [
+        {
+            "person": "person:kepner_jeremy",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)"
+            ]
+        },
+        {
+            "person": "person:cho_kenjiro",
+            "organization": [
+                "IIJ Research Lab"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:gadepally_vijay",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)"
+            ]
+        },
+        {
+            "person": "person:michaleas_peter",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)"
+            ]
+        },
+        {
+            "person": "person:milechin_lauren",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2177",
+            "label": "arXiv",
+            "to": "https://arxiv.org/abs/1904.04396"
+        },
+        {
+            "from": "PubDBlinkId:2233",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/HPEC.2019.8916263"
+        },
+        {
+            "from": "PubDBlinkId:2176",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/hypersparse_neural_network_analysis/hypersparse_neural_network_analysis.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE High Performance Extreme Computing Conference (HPEC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

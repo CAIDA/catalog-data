@@ -1,0 +1,23 @@
+{
+    "id": "2008_ugis0301",
+    "name": "Understanding Global Internet Health",
+    "tags": [
+        "security",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "caida",
+            "date": "2003.1"
+        },
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "santa_fe_institute_sfi",
+            "date": "2008.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/ugis0301/ugis0301.pdf"
+    ]
+}

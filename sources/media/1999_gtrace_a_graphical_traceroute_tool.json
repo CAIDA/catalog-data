@@ -1,0 +1,18 @@
+{
+    "id": "1999_gtrace",
+    "name": "GTrace - A Graphical Traceroute Tool",
+    "tags": [
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Periakaruppan, Ram",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "1999.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/1999/gtrace/gtrace.pdf",
+        "https://www.caida.org/publications/papers/1999/GTrace"
+    ]
+}

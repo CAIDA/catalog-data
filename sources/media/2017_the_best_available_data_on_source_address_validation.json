@@ -1,0 +1,20 @@
+{
+    "id": "2017_best_available_data_one",
+    "name": "The Best Available Data on Source Address Validation",
+    "tags": [
+        "topology",
+        "routing",
+        "active data analysis",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "one_conference",
+            "date": "2017.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/best_available_data_one/best_available_data_one.pdf"
+    ]
+}

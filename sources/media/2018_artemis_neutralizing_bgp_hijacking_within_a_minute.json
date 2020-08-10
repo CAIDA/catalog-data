@@ -1,0 +1,19 @@
+{
+    "id": "2018_artemis_aims",
+    "name": "ARTEMIS: Neutralizing BGP Hijacking within a Minute",
+    "tags": [
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/artemis_aims/artemis_aims.pdf",
+        "https://www.caida.org/publications/papers/2018/artemis/"
+    ]
+}

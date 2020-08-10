@@ -1,0 +1,19 @@
+{
+    "id": "2011_interdomain_interconnection",
+    "name": "An Agent-based Model of Interdomain Interconnection in the Internet",
+    "tags": [
+        "topology",
+        "routing",
+        "economics"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "different_angles_on_network_complexity_engineering_and_science_dances",
+            "date": "2011.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/interdomain_interconnection/interdomain_interconnection.pdf"
+    ]
+}

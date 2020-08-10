@@ -1,5 +1,6 @@
 {
-    "id": "vissicchio_stefano",
-    "nameFirst": "Stefano",
-    "nameLast": "Vissicchio"
+    "person": "person:vissicchio_stefano",
+    "organization": [
+        "University College London"
+    ]
 }

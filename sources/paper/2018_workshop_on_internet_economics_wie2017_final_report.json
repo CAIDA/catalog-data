@@ -1,0 +1,62 @@
+{
+    "id": "2018_wie2017_report",
+    "name": "Workshop on Internet Economics (WIE2017) Final Report",
+    "datePublished": "2018.7",
+    "description": "On December 13-14 2017, CAIDA hosted the 8th interdisciplinary Workshop on Internet Economics (WIE) at the UC San Diego's Supercomputer Center. This workshop series provides a forum for researchers, Internet facilities and service providers, technologists, economists, theorists, policy makers, and other stakeholders to exchange views on current and emerging regulatory and policy debates. The FCC's expected decision (released during the workshop, on 14 December 2017) - to repeal the 2015 classification of broadband Internet access service as a telecommunications (common carrier) service - set the stage for vigorous discussion on what type of data can inform debate, development, and empirical evaluation of public policies we will need for Internet services in the future.",
+    "tags": [
+        "congestion",
+        "economics",
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper650",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huston_geoff",
+            "organization": [
+                "APNIC"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2114",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3276799.3276805"
+        },
+        {
+            "from": "PubDBlinkId:1984",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/wie2017_report/wie2017_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1985",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1712/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "48",
+        "number": "3",
+        "pages": "4",
+        "linkedObjects": ""
+    }
+}

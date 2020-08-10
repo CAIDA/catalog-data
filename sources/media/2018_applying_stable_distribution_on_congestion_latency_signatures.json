@@ -1,0 +1,20 @@
+{
+    "id": "2018_applying_stable_distribution_congestion_aims",
+    "name": "Applying Stable distribution on congestion latency signatures",
+    "tags": [
+        "congestion",
+        "measurement methodology",
+        "topology",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Carisimo, Esteban",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/applying_stable_distribution_congestion_aims/applying_stable_distribution_congestion_aims.pdf"
+    ]
+}

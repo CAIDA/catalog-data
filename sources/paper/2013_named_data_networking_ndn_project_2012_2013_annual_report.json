@@ -1,0 +1,140 @@
+{
+    "id": "2013_named_data_networking_2012-2013",
+    "name": "Named Data Networking (NDN) Project 2012 - 2013 Annual Report",
+    "datePublished": "2013.10",
+    "description": "Today's Internet's hourglass architecture centers on a universal network layer (i.e., IP) which implements the minimal functionality necessary for global interconnectivity. This thin waist enabled the Internet's explosive growth by allowing both lower and upper layer technologies to innovate independently. However, IP was designed to create a communication network , where packets named only communication endpoints. Sustained growth in e-commerce, digital media, social networking, and smartphone applications has led to dominant use of the Internet as a distribution network. Distribution networks are fundamentally more general than communication networks, and solving distribution problems via a point-to-point communication protocol is complex and error-prone.",
+    "tags": [
+        "topology",
+        "overview"
+    ],
+    "pubdb_id": "paper576",
+    "venue": "named_data_networking_ndn",
+    "authors": [
+        {
+            "person": "person:jacobson_van",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:burke_jeffrey",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:estrin_deborah",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_beichuan",
+            "organization": [
+                "University of Arizona"
+            ]
+        },
+        {
+            "person": "person:tsudik_gene",
+            "organization": [
+                "University of California, Irvine (UCI)"
+            ]
+        },
+        {
+            "person": "person:claffy_kimberly",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:massey_dan",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_christos",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:ohm_paul",
+            "organization": [
+                "University of Colorado at Boulder"
+            ]
+        },
+        {
+            "person": "person:abdelzaher_tarek",
+            "organization": [
+                "University of Illinois at Urbana-Champaign, Illinois (UIUC)"
+            ]
+        },
+        {
+            "person": "person:shilton_katie",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        },
+        {
+            "person": "person:wang_lan",
+            "organization": [
+                "University of Memphis"
+            ]
+        },
+        {
+            "person": "person:yeh_edmund",
+            "organization": [
+                "Northeastern University"
+            ]
+        },
+        {
+            "person": "person:uzun_ersin",
+            "organization": [
+                "Palo Alto Research Center (PARC)"
+            ]
+        },
+        {
+            "person": "person:edens_glenn",
+            "organization": [
+                "Palo Alto Research Center (PARC)"
+            ]
+        },
+        {
+            "person": "person:crowley_patrick",
+            "organization": [
+                "Washington University in St. Louis"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1587",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/named_data_networking_2012-2013/named_data_networking_2012-2013.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Named Data Networking (NDN)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2010_netsci_identifying_influential_spreaders",
+    "name": "Identification of Influential Spreaders in Complex Networks",
+    "tags": [
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kitsak, Maksim",
+            "venue": "future_internet_and_society_a_complex_systems_perspective",
+            "date": "2010.10"
+        },
+        {
+            "presenter": "Author: Kitsak, Maksim",
+            "venue": "international_school_and_conference_on_network_science_netsci",
+            "date": "2010.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/netsci_identifying_influential_spreaders/netsci_identifying_influential_spreaders.pdf",
+        "https://www.caida.org/publications/papers/2010/influential_spreaders"
+    ]
+}

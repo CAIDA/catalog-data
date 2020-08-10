@@ -1,0 +1,19 @@
+{
+    "id": "2013_lessons_learned_measuring_sandy_fcc",
+    "name": "Lessons Learned by 'Measuring' the Internet During/After the Sandy Storm",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "fcc_workshop_on_network_resiliency",
+            "date": "2013.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/lessons_learned_measuring_sandy_fcc/lessons_learned_measuring_sandy_fcc.pdf"
+    ]
+}

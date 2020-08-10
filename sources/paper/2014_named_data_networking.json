@@ -1,0 +1,91 @@
+{
+    "id": "2014_named_data_networking",
+    "name": "Named Data Networking",
+    "datePublished": "2014.7",
+    "description": "Named Data Networking (NDN) is one of five projects funded by the U.S. National Science Foundation under its Future Internet Architecture Program. NDN has its roots in an earlier project, Content-Centric Networking (CCN), which Van Jacobson first publicly presented in 2006. The NDN project investigates Jacobson's proposed evolution from today's host-centric network architecture (IP) to a data-centric network architecture (NDN). This conceptually simple shift has far-reaching implications for how we design, develop, deploy, and use networks and applications. We describe the motivation and vision of this new architecture, and its basic components and operations. We also provide a snapshot of its current design, development status, and research challenges. More information about the project, including prototype implementations, publications, and annual reports, is available on named-data.net.",
+    "tags": [
+        "overview",
+        "topology"
+    ],
+    "pubdb_id": "paper560",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:afanasyev_alexander",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:burke_jeffrey",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:jacobson_van",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:crowley_patrick",
+            "organization": [
+                "Washington University in St. Louis"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_christos",
+            "organization": [
+                "Colorado State University"
+            ]
+        },
+        {
+            "person": "person:wang_lan",
+            "organization": [
+                "University of Memphis"
+            ]
+        },
+        {
+            "person": "person:zhang_beichuan",
+            "organization": [
+                "University of Arizona"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2162",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2656877.2656887"
+        },
+        {
+            "from": "PubDBlinkId:1376",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/named_data_networking/named_data_networking.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "3",
+        "pages": "66-73",
+        "linkedObjects": ""
+    }
+}

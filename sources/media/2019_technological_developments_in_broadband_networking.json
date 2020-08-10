@@ -1,0 +1,22 @@
+{
+    "id": "2019_technological_developments_broadband_networking_ftc",
+    "name": "Technological Developments in Broadband Networking",
+    "tags": [
+        "topology",
+        "overview",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ftc_hearing",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/technological_developments_broadband_networking_ftc/technological_developments_broadband_networking_ftc.pdf",
+        "https://www.project-disco.org/competition/032219-ftc-hearing-10-competition-consumer-protection-issues-in-us-broadband-markets/",
+        "https://www.ftc.gov/news-events/audio-video/video/ftc-hearing-10-march-20-session-1-competition-consumer-protection",
+        "https://www.caida.org/publications/presentations/2019/technological_developments_broadband_networking_ftc/"
+    ]
+}

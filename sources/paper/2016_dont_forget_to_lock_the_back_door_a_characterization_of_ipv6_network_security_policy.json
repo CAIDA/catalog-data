@@ -1,0 +1,62 @@
+{
+    "id": "2016_dont_forget_lock",
+    "name": "Don't Forget to Lock the Back Door! A Characterization of IPv6 Network Security Policy",
+    "datePublished": "2016.2",
+    "description": "There is growing operational awareness of the challenges in securely operating IPv6 networks. Through a measurement study of 520,000 dual-stack servers and 25,000 dual-stack routers, we examine the extent to which security policy codified in IPv4 has also been deployed in IPv6. We find several high-value target applications with a comparatively open security policy in IPv6 including: (i) SSH, Telnet, SNMP, are more than twice as open on routers in IPv6 as they are in IPv4; (ii) nearly half of routers with BGP open were only open in IPv6; and (iii) in the server dataset, SNMP was twice as open in IPv6 as in IPv4. We conduct a detailed study of where port blocking policy is being applied and find that protocol openness discrepancies are consistent within network boundaries, suggesting a systemic failure in organizations to deploy consistent security policy. We successfully communicate our findings with twelve network operators and all twelve confirm that the relative openness was unintentional. Ten of the twelve immediately moved to deploy a congruent IPv6 security policy, reflecting real operational concern. Finally, we revisit the belief that the security impact of this comparative openness in IPv6 is mitigated by the infeasibility of IPv6 network-wide scanning\u2014we find that, for both of our datasets, host addressing practices make discovering these high-value hosts feasible by scanning alone. To help operators accurately measure their own IPv6 security posture, we make our probing system publicly available.",
+    "tags": [
+        "ipv6",
+        "security",
+        "routing"
+    ],
+    "pubdb_id": "paper601",
+    "venue": "network_and_distributed_systems_security_ndss",
+    "authors": [
+        {
+            "person": "person:czyz_jakub",
+            "organization": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:allman_mark",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:bailey_michael",
+            "organization": [
+                "University of Illinois at Urbana-Champaign, Illinois (UIUC)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2132",
+            "label": "DOI",
+            "to": "https://doi.org/10.14722/ndss.2016.23047"
+        },
+        {
+            "from": "PubDBlinkId:1693",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/dont_forget_lock/dont_forget_lock.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Network and Distributed Systems Security (NDSS)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

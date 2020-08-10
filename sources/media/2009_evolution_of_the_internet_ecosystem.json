@@ -1,0 +1,19 @@
+{
+    "id": "2009_socalnegt_evolution_ecosystem",
+    "name": "Evolution of the Internet Ecosystem",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "southern_california_symposium_on_network_economics_and_game_theory_socal_negt",
+            "date": "2009.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/socalnegt_evolution_ecosystem/socalnegt_evolution_ecosystem.pdf",
+        "https://www.caida.org/publications/papers/2009/AS_evolution"
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "id": "2001_OSD",
+    "name": "Internet topology: connectivity of IP graphs",
+    "datePublished": "2001.8",
+    "description": "In this paper we introduce a framework for analyzing\nlocal properties of Internet connectivity. We compare BGP\nand probed topology data, finding that currently probed\ntopology data yields much denser coverage of AS-level connectivity.\nWe describe data acquisition and construction of\nseveral IP-level graphs derived from a collection of 220M\nskitter traceroutes. We find that a graph consisting of IP\nnodes and links contains 90.5% of its 629K nodes in the\n_acyclic subgraph_. In particular, 55% of the IP nodes are in\ntrees. Full bidirectional connectivity is observed for a _giant\ncomponent_ containing 8.3% of IP nodes.\n\nWe analyze the same structures (trees, acyclic part, core,\ngiant component) for other combinatorial models of Internet\n(IP-level) topology, including arc graphs and place-holder\ngraphs. We also show that Weibull distrbution\n<i>N</i>{<i>X</i>&nbsp;&gt;<i>x</i>}&nbsp;=&nbsp;<i>a</i>&nbsp;exp(-(<i>x</i>/<i>b</i>)<i><sup>c</sup></i>\napproximates outdegree distribution\nwith 10-15% relative accuracy in the region of\ngeneric object sizes, spanning two to three orders of magnitude\nup to the point where sizes become unique.\n\nThe extended version of this paper includes dynamic\nand functorial properties of Internet topology, including\nproperties of and diffusion on aggregated graphs,\ninvariance of a reachability function's shape regardless of\nnode choice or aggregation level, analysis of topological resilience\nunder wide range of scenarios. We also demonstrate\nthat the Weibull distribution provides a good fit to a\nvariety of local object sizes.\n",
+    "tags": [
+        "active data analysis",
+        "topology"
+    ],
+    "pubdb_id": "paper114",
+    "venue": "spie_international_symposium_on_convergence_of_it_and_communication",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:507",
+            "label": "gzipped postscript",
+            "to": "topologylocal.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:506",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/OSD/topologylocal.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "SPIE International Symposium on Convergence of IT and Communication",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "172-187",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "id": "2007_as_relationships_inference",
+    "name": "AS Relationships: Inference and Validation",
+    "datePublished": "2007.1",
+    "description": "\nResearch on performance, robustness, and evolution of the global Internet is fundamentally handicapped without accurate and complete knowledge of the nature and structure of the contractual relationships between Autonomous Systems (ASs). In this work, we first examine the state-of-the-art in inferring AS relationships. We carefully analyze existing techniques and pinpoint limitations and inadequacies associated with them. We then introduce new, improved heuristics addressing the problems we have identified. Seeking to increase the value and reliability of our inference results, we then proceed to direct validation. We perform a survey with ASs' network administrators to collect information on the actual connectivity and policies of the surveyed ASs. Based on the survey results, we find that our new AS relationship inference techniques achieve high levels of accuracy: we correctly infer 96.5% customer to provider (c2p), 82.8% peer to peer (p2p), and 90.3% sibling to sibling (s2s) relationships. We then cross-compare the reported AS connectivity with the AS connectivity data contained in BGP tables. We regret to report that BGP tables miss up to 86.2% of the true adjacencies of the surveyed ASs. The majority of the missing links are of the p2p type, meaning that, in reality, peering links are likely to be more dominant than have been previously reported or conjectured. Finally, to make our results easily accessible and practically useful for the community, we open an AS relationship repository where we archive, on a weekly basis, and make publicly available the complete Internet AS-level topologies enriched with AS relationship information for every pair of AS neighbors.\n",
+    "tags": [
+        "routing",
+        "topology",
+        "policy"
+    ],
+    "pubdb_id": "paper42",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:19",
+            "label": "DOI",
+            "to": "http://portal.acm.org/citation.cfm?doid=1198255.1198259"
+        },
+        {
+            "from": "PubDBlinkId:20",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/as_relationships_inference/as_relationships_inference.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "37",
+        "number": "1",
+        "pages": "29-40",
+        "linkedObjects": ""
+    }
+}

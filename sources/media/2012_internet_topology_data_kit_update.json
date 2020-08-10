@@ -1,0 +1,20 @@
+{
+    "id": "2012_itdk_update_widecasfi",
+    "name": "Internet Topology Data Kit Update",
+    "tags": [
+        "data",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "caidawidecasfi_joint_measurement_workshop",
+            "date": "2012.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/itdk_update_widecasfi/itdk_update_widecasfi.pdf",
+        "https://www.caida.org/publications/papers/2012/topocompare-tr"
+    ]
+}

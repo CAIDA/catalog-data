@@ -1,0 +1,81 @@
+{
+    "id": "2016_bgpstream",
+    "name": "BGPStream: a software framework for live and historical BGP data analysis",
+    "datePublished": "2016.11",
+    "description": "We present BGPStream, an open-source software framework for the analysis of both historical and real-time Border Gateway Protocol (BGP) measurement data. Although BGP is a crucial operational component of the Internet infrastructure, and is the subject of research in the areas of Internet performance, security, topology, protocols, economics, etc., there is no efficient way of processing large amounts of distributed and/or live BGP measurement data. BGPStream fills this gap, enabling efficient investigation of events, rapid prototyping, and building complex tools large-scale monitoring applications (e.g., detection of connectivity disruptions or BGP hijacking attacks). We discuss the goals and architecture of BGPStream. We apply the components of the framework to different scenarios, and we describe the development and deployment of complex services for global Internet monitoring that we built on top of it.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "routing",
+        "security",
+        "software/tools",
+        "topology"
+    ],
+    "pubdb_id": "paper607",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:orsini_chiara",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:giordano_danilo",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1758",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:1823",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2987443.2987482"
+        },
+        {
+            "from": "PubDBlinkId:1814",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/bgpstream/bgpstream.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1841",
+            "label": "Related Presentation",
+            "to": "/publications/presentations/2016/bgpstream_imc"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

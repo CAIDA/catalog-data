@@ -1,0 +1,20 @@
+{
+    "id": "2020_when_parents_children_disagree_pam",
+    "name": "When parents and children disagree: Diving into DNS delegation inconsistency",
+    "tags": [
+        "dns",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Sommese, Raffaele",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/when_parents_children_disagree_pam/when_parents_children_disagree_pam.pdf",
+        "https://www.caida.org/publications/papers/2020/when_parents_children_disagree/",
+        "https://www.youtube.com/watch?v=JtVZv8Ujzzw"
+    ]
+}

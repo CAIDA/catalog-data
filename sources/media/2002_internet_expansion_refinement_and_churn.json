@@ -1,0 +1,20 @@
+{
+    "id": "2002_nanog0202",
+    "name": "Internet expansion, refinement, and churn",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2002.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/nanog0202/index.html",
+        "https://www.caida.org/publications/papers/2002/EGR/",
+        "https://www.caida.org/publications/papers/2002/EGR"
+    ]
+}

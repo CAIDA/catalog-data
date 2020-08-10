@@ -1,0 +1,56 @@
+{
+    "id": "2004_topspeedworms",
+    "name": "The Top Speed of Flash Worms",
+    "datePublished": "2004.10",
+    "description": "Flash worms follow a precomputed spread tree using prior knowledge\r\nof all systems vulnerable to the worm's exploit. In previous\r\nwork we suggested that a flash worm could saturate one million\r\nvulnerable hosts on the Internet in under 30 seconds. We\r\ngrossly over-estimated.\r\n\r\nIn this paper, we revisit the problem in the context of single\r\npacket UDP worms (inspired by Slammer and Witty). Simulating\r\na flash version of Slammer, calibrated by current Internet latency\r\nmeasurements and observed worm packet delivery rates, we show\r\nthat a worm could saturate 95% of one million vulnerable hosts on\r\nthe Internet in 510 milliseconds. A similar worm using a TCP based\r\nservice could 95% saturate in 1.3 seconds.\r\n\r\nThe speeds above are achieved with flat infection trees and packets\r\nsent at line rates. Such worms are vulnerable to recently proposed\r\nworm containment techniques. To avoid this,\r\nflash worms should slow down and use deeper, narrower trees. We\r\nexplore the resilience of such spread trees when the list of vulnerable\r\naddresses is inaccurate. Finally, we explore the implications\r\nof flash worms for containment defenses: such defenses must correlate\r\ninformation from multiple sites in order to detect the worm,\r\nbut the speed of the worm will defeat this correlation unless a certain\r\nfraction of traffic is artificially delayed in case it later proves to\r\nbe a worm.\r\n",
+    "tags": [
+        "network telescope",
+        "security"
+    ],
+    "pubdb_id": "paper68",
+    "venue": "acm_workshop_on_rapid_malcode_worm",
+    "authors": [
+        {
+            "person": "person:staniford_stuart",
+            "organization": [
+                "Nevis Networks"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:paxson_vern",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:weaver_nicholas",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:517",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/topspeedworms/topspeed-worm04.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Workshop on Rapid Malcode (WORM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "33-42",
+        "linkedObjects": ""
+    }
+}

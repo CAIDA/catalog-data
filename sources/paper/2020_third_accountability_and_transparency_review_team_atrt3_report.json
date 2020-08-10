@@ -1,0 +1,126 @@
+{
+    "id": "2020_atrt3_report",
+    "name": "Third Accountability and Transparency Review Team (ATRT3) Report",
+    "datePublished": "2020.5",
+    "description": "The third Accountability and Transparency Review Team (ATRT3) strived diligently with the assistance of the ICANN support teams to maintain the process, budget, and schedule identified and agreed upon by the team in April of 2019. Circumstances surrounding the COVID-19 pandemic led to completing the Final Report approximately 55 days beyond the Bylaw-mandated one year, but within budget and proposed terms of reference. ATRT3 is grateful to the Board for their allowance and understanding. Over the course of its work, several unforeseen events have occurred that ATRT3 considers subjects for accountability and transparency review of the Board, the ICANN organization (org), and the community. ATRT3 discussed and made conscious decisions to not address some specific items due to where we were in the process at the time they were raised or occurred, the events not having drawn to a conclusion, unavailability of documents to review, lack of consensus to undertake the topic, and our limitations on time, resource, and budget. We do however wish to highlight these issues to ensure the ICANN community that these are indeed important issues for the accountability and transparency of ICANN. ",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper706",
+    "venue": "icann_third_accountability_and_transparency_review_team_atrt3",
+    "authors": [
+        {
+            "person": "person:bachollet_sebastien",
+            "organization": [
+                "Unaffiliated"
+            ]
+        },
+        {
+            "person": "person:langdon-orr_cheryl",
+            "organization": [
+                "Hovtek Pty Ltd."
+            ]
+        },
+        {
+            "person": "person:nanghaka_daniel",
+            "organization": [
+                "ILICIT Africa"
+            ]
+        },
+        {
+            "person": "person:scartezini_vanda",
+            "organization": [
+                "University of Sao Paulo"
+            ]
+        },
+        {
+            "person": "person:getschko_demi",
+            "organization": [
+                "NIC.br"
+            ]
+        },
+        {
+            "person": "person:yue_liu",
+            "organization": [
+                "CAICT"
+            ]
+        },
+        {
+            "person": "person:blanc_jacques",
+            "organization": [
+                "ProDomaines"
+            ]
+        },
+        {
+            "person": "person:kane_patrick",
+            "organization": [
+                "Verisign"
+            ]
+        },
+        {
+            "person": "person:karanicolas_michael",
+            "organization": [
+                "Centre for Law and Democracy"
+            ]
+        },
+        {
+            "person": "person:kleinwaechter_wolfgang",
+            "organization": [
+                "Medienstadt Leipzig e.V."
+            ]
+        },
+        {
+            "person": "person:novoa_osvaldo",
+            "organization": [
+                "Antel"
+            ]
+        },
+        {
+            "person": "person:sogbesan_adetola",
+            "organization": [
+                "Chace Systems Limited"
+            ]
+        },
+        {
+            "person": "person:nasr_ramet",
+            "organization": [
+                "Peyvand Azad Co."
+            ]
+        },
+        {
+            "person": "person:akkerhuis_jaap",
+            "organization": [
+                "NLnet Labs"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2289",
+            "label": "Minority Statement",
+            "to": "https://www.caida.org/publications/papers/2020/atrt3_minority_statement/"
+        },
+        {
+            "from": "PubDBlinkId:2288",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/atrt3_report/atrt3_report.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "ICANN Third Accountability and Transparency Review Team (ATRT3)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

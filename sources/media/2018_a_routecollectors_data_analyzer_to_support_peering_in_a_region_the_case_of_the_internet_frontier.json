@@ -1,0 +1,18 @@
+{
+    "id": "2018_route-collectors_data_analyzer_aims",
+    "name": "A Route-collectors Data Analyzer to support peering in a region: the case of the Internet frontier",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fanou, Rod\u00e9rick",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/route-collectors_data_analyzer_aims/route-collectors_data_analyzer_aims.pdf"
+    ]
+}

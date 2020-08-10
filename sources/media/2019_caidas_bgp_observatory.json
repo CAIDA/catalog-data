@@ -1,0 +1,18 @@
+{
+    "id": "2019_caidas_bgp_observatory_aims",
+    "name": "CAIDA's BGP Observatory",
+    "tags": [
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2019.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/caidas_bgp_observatory_aims/caidas_bgp_observatory_aims.pdf"
+    ]
+}

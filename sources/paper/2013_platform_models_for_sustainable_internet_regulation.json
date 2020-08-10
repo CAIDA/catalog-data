@@ -1,0 +1,49 @@
+{
+    "id": "2013_platform_models_sustainable",
+    "name": "Platform Models for Sustainable Internet Regulation",
+    "datePublished": "2013.8",
+    "description": "The dynamic nature of the telecommunications industry, with its rapidly changing technology and industry structure, presents a serious challenge to the theory and practice of regulation, which has a slower time scale and a tendency to embed assumptions about technology and industry into regulation. This paper proposes a model that attempts to capture two durable and persistent features of today\u201bs telecommunications ecosystem: the use of layered platforms to implement desired functionality; and interconnection between actors at different platform layers. We use platform theory, and in particular theories of multi-sided platforms (MSPs), to focus on key technical and business aspects of today\u201bs industry. We use an MSP-aware layered model of the ecosystem to explore several recent and impending innovations in the ecosystem that have been naively conflated with the global Internet, illuminate their differences, and describe how regulators could use our model to more rigorously consider them. Finally, to illustrate its potential as a baseline for future research, we briefly consider how this model can help scope consistent policy discourse of three open questions: specialized services, minimum quality regulations (\u201fthe dirt road\u201c problem), and structural separation. ",
+    "tags": [
+        "economics",
+        "policy"
+    ],
+    "pubdb_id": "paper534",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2166",
+            "label": "DOI",
+            "to": "https://doi.org/10.2139/ssrn.2242600"
+        },
+        {
+            "from": "PubDBlinkId:1237",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/platform_models_sustainable/platform_models_sustainable.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

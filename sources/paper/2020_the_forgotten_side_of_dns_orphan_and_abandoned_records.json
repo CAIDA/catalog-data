@@ -1,0 +1,68 @@
+{
+    "id": "2020_forgotten_side_dns",
+    "name": "The Forgotten Side of DNS: Orphan and Abandoned Records",
+    "datePublished": "2020.6",
+    "description": "DNS zone administration is a complex task involving manual work and several entities and can therefore result in misconfigurations. Orphan records are one of these misconfigurations, in which a glue record for a delegation that does not exist anymore is forgotten in the zone file. Orphan records are a security hazard to third-party domains that have these records in their delegation, as an attacker may easily hijack such domains by registering the domain associated with the orphan. The goal of this paper is to quantify this misconfiguration, extending previous work by Kalafut et al., by identifying a new type of glue record misconfiguration \u2013 which we refer to as abandoned records \u2013 and by performing a broader characterization. Our results highlight how the situation has changed, not always for the better, compared to a decade-old study.",
+    "tags": [
+        "dns",
+        "topology"
+    ],
+    "pubdb_id": "paper704",
+    "venue": "workshop_on_traffic_measurements_for_cybersecurity",
+    "authors": [
+        {
+            "person": "person:sommese_raffaele",
+            "organization": [
+                "Design and Analysis of Communication Systems (DACS)"
+            ]
+        },
+        {
+            "person": "person:jonker_mattijs",
+            "organization": [
+                "Design and Analysis of Communication Systems (DACS)"
+            ]
+        },
+        {
+            "person": "person:van rijswijk-deij_roland",
+            "organization": [
+                "Design and Analysis of Communication Systems (DACS)"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sperotto_anna",
+            "organization": [
+                "Design and Analysis of Communication Systems (DACS)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2286",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/forgotten_side_dns/forgotten_side_dns.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Traffic Measurements for Cybersecurity",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

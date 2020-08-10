@@ -1,0 +1,18 @@
+{
+    "id": "2003_lisa03",
+    "name": "Internet Governance",
+    "tags": [
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "2003.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/lisa03/internet_governance.2003.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/lisa03/internet_governance.2003.pdf"
+    ]
+}

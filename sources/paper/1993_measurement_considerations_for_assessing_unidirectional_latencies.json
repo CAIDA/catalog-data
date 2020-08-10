@@ -1,0 +1,50 @@
+{
+    "id": "1993_mcau",
+    "name": "Measurement considerations for assessing unidirectional latencies",
+    "datePublished": "1993.9",
+    "description": "This paper presents a study of single direction latencies to\r\nselected destinations of the Internet utilizing a variety of paths. The\r\nobjective is to demonstrate that round-trip latencies are an\r\ninsufficient and sometimes misleading method to determine unidirectional\r\ndelays. This claim has significant implications for high-speed,\r\nmulti-application, wide-area, traffic aggregating networking\r\nenvironments which often require predictability of precise delay.\r\n\r\nAssuming that a round trip path is symetric and dividing a RTT\r\nin half to find the latency in either the outgoing or incoming\r\ntranmission path is highly inaccurate as there are both static and\r\ndu\\ynamic reasons for the paths traversed by packets between hosts to be\r\nasymetric. The static reason is that the route may be permanently\r\nconfigured to be asymetric because of network harware limitations (for\r\nexample simplex links). The dynamic reasons for asymetrically datagram\r\npaths are resource contentions between other components in the network.\r\nDigitial continuous media networked applications require good\r\npredicatability of unidirectional network delays, which simply halving\r\nthe RTT cannot give.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper181",
+    "venue": "journal_of_internetworking",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:367",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/mcau/single.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Journal of Internetworking",
+        "volume": "4",
+        "number": "3",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

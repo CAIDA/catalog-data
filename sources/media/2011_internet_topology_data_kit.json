@@ -1,0 +1,20 @@
+{
+    "id": "2011_itdk",
+    "name": "Internet Topology Data Kit",
+    "tags": [
+        "topology",
+        "software/tools",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2011.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/itdk/itdk.pdf",
+        "https://www.caida.org/publications/papers/2012/topocompare-tr"
+    ]
+}
