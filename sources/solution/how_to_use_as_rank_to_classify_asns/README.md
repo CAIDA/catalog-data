@@ -18,7 +18,7 @@
 
 ## **<ins>Introduction</ins>**
 
-This solution helps classify an asn based upon relationship with other asns. The following [script](api_2_class.py) takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The script then prints to STDOUT the classification of requested asns. More information on the classifications can be found [here](###Data-Structure-Format:-as_2_class). 
+This solution helps classify an asn based upon relationship with other asns. The following [script](api_2_class.py) takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The script then prints to STDOUT the classification of requested asns.
 
 ### Usage
 
