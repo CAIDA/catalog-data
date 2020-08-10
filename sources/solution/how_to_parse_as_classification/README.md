@@ -76,6 +76,19 @@ def get_asn(asn):
         print(json.dumps(as_2_data[asn])
 ~~~
 
+Below is a helper method offered to update ```as_2_data``` with a given asn, key, and value. This method is not directly used in the script, although could be used by the user to update ```as_2_data``` with individual values. Implementations of this method could allow a user to give an input of each value to be placed inside ```as_2_data``` manually.
+
+~~~Python
+# Given an asn, update as_2_data with the given key and value.
+def update_as2data(asn, key, value):
+    global as_2_data
+
+    # Edge Case: Insert the asn if it doesn't already exist.
+    if asn not in as_2_data:
+        as_2_data[asn] = {}
+    as_2_data[asn][key] = value
+~~~
+
 ## **<ins>Background</ins>**
 
 ### What is AS Classification?

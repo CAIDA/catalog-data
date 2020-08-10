@@ -172,5 +172,16 @@ def get_asn(asn):
     else:
         print(json.dumps(as_2_data[asn]))
 
+
+# Given an asn, update as_2_data with the given key and value.
+def update_as2data(asn, key, value):
+    global as_2_data
+
+    # Edge Case: Insert the asn if it doesn't already exist.
+    if asn not in as_2_data:
+        as_2_data[asn] = {}
+    as_2_data[asn][key] = value
+
+
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
