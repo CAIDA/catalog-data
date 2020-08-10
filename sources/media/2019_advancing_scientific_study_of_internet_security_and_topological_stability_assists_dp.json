@@ -1,0 +1,22 @@
+{
+    "id": "2019_assists_dhsst",
+    "name": "Advancing Scientific Study of Internet Security and Topological Stability (ASSISTS DP)",
+    "tags": [
+        "security",
+        "data sharing",
+        "policy",
+        "topology",
+        "software/tools",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_st_cybersecurity_and_innovation_showcase",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/assists_dhsst/assists_dhsst.pdf"
+    ]
+}

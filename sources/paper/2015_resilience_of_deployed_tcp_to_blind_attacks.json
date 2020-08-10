@@ -1,0 +1,67 @@
+{
+    "id": "2015_resilience_deployed_tcp_blind",
+    "name": "Resilience of Deployed TCP to Blind Attacks",
+    "datePublished": "2015.10",
+    "description": "As part of TCP\u2019s steady evolution, recent standards have recommended mechanisms to protect against weaknesses in TCP. But adoption, configuration, and deployment of TCP improvements can be slow. In this work, we consider the resilience of deployed TCP implementations to blind in-window attacks, where an off-path adversary disrupts an established connection by sending a packet that the victim believes came from its peer, causing data corruption or connection reset. We tested operating systems (and middleboxes deployed in front) of webservers in the wild in September 2015 and found 22% of connections vulnerable to in-window SYN and reset packets, 30% vulnerable to in-window data packets, and 38.4% vulnerable to at least one of three in-window attacks we tested. We also tested out-of-window packets and found that while few deployed systems were vulnerable to reset and SYN packets, 5.4% of connections accepted in-window data with an invalid acknowledgment number. In addition to evaluating commodity TCP stacks, we found vulnerabilities in 12 of 14 of the routers and switches we characterized \u2013 critical network infrastructure where the potential impact of any TCP vulnerabilities is particularly acute. This surprisingly high level of extant vulnerabilities in the most mature Internet transport protocol in use today is a perfect illustration of the Internet\u2019s fragility. Embedded in historical context, it also provides a strong case for more systematic, scientific, and longitudinal measurement and quantitative analysis of fundamental properties of critical Internet infrastructure, as well as for the importance of better mechanisms to get best security practices deployed.",
+    "tags": [
+        "security",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper594",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:wu_tiange",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:allman_mark",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2137",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2815675.2815700"
+        },
+        {
+            "from": "PubDBlinkId:1643",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/resilience_deployed_tcp_blind/resilience_deployed_tcp_blind.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

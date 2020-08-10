@@ -1,0 +1,22 @@
+{
+    "id": "2012_coordinated_view_wiv",
+    "name": "A Coordinated View of Large-Scale Internet Events",
+    "tags": [
+        "internet outages",
+        "network telescope",
+        "passive data analysis",
+        "security",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "workshop_on_internet_visualization_wiv",
+            "date": "2012.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/coordinated_view_wiv/coordinated_view_wiv.pdf",
+        "https://www.caida.org/publications/papers/2013/coordinated_view_internet_events/"
+    ]
+}

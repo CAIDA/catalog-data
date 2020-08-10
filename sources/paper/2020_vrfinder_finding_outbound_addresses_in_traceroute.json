@@ -1,0 +1,62 @@
+{
+    "id": "2020_vrfinder",
+    "name": "vrfinder: Finding Outbound Addresses in Traceroute",
+    "datePublished": "2020.6",
+    "description": "Current methods to analyze the Internet\u2019s router-level topology with paths collected using traceroute assume that the source address for each router in the path is either an inbound or off-path address on each router. In this work, we show that outbound addresses are common in our Internet-wide traceroute dataset collected by CAIDA's Ark vantage points in January 2020, accounting for 1.7% \u2013 5.8% of the addresses seen at some point before the end of a traceroute. This phenomenon can lead to mistakes in Internet topology analysis, such as inferring router ownership and identifying interdomain links. We hypothesize that the primary contributor to outbound addresses is Layer 3 Virtual Private Networks (L3VPNs), and propose vrfinder, a technique for identifying L3VPN outbound addresses in traceroute collections. We validate vrfinder against ground truth from two large research and education networks, demonstrating high precision (100.0%) and recall (82.1% \u2013 95.3%). We also show the benefit of accounting for L3VPNs in traceroute analysis through extensions to bdrmapIT, increasing the accuracy of its router ownership inferences for L3VPN outbound addresses from 61.5% - 79.4% to 88.9% - 95.5%.",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "routing"
+    ],
+    "pubdb_id": "paper702",
+    "venue": "sigmetrics",
+    "authors": [
+        {
+            "person": "person:marder_alexander",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2272",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/vrfinder/vrfinder.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2281",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2020/vrfinder_sigmetrics/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "SIGMETRICS",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2011_archipelago",
+    "name": "Archipelago Measurement Infrastructure Updates",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2011.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/archipelago/archipelago.pdf"
+    ]
+}

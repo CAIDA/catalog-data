@@ -1,0 +1,61 @@
+{
+    "id": "2013_menlo_report_companion_actual_formatted",
+    "name": "Applying Ethical Principles to Information and Communication Technology Research: A Companion to the Menlo Report",
+    "datePublished": "2013.10",
+    "description": "Researchers are faced with time-driven competitive pressures to research and publish, to achieve tenure, and to deliver on grant funding proposals. That ethical considerations can be incongruent with these incentives is neither novel nor unique to information and communication technology (ICT) research. Those conducting ICT research (ICTR) do, however, face a different breed of tensions that can impact research ethics risks. Unfortunately, institutionalized guidance on the protection of research subjects has not kept pace with the rapid transformations in information technology and infrastructure that have catalyzed changes in research substance and mechanics. \r\n\r\nThe Menlo Report summarizes a set of basic principles to guide the identification and resolution of ethical issues in research about or involving ICT. It illuminates a need to interpret and extend traditional ethical principles to enable ICT researchers and oversight entities to appropriately and consistently assess and render ethically defensible research. The framework it proposes can support current and potential institutional mechanisms that are well served to implement and enforce these principles, such as a research ethics board (REB). The Menlo Report is not an official policy statement of the Department of Homeland Security, but rather, offers guidance primarily for ICT researchers in\r\nacademia and the private sector who may be funded by the government, as well as corporate and independent researchers, professional societies, publication review committees, and funding agencies.\r\n\r\nThis Companion is a complement to the Menlo Report that details the principles and applications more granularly and illustrates their implementation in real and synthetic case studies. It is fundamentally intended for the benefit of society, by illuminating the potential for harm to humans (either directly or indirectly) and by helping researchers understand and preempt or minimize these risks in the lifecycle of their research. '' First published in January 2012 as a companion to the original 2011 version of the DHS [Menlo Report](https://www.caida.org/publications/papers/2012/menlo_report_actual_formatted/), this document was later amended in October 2013 to reflect the changes made in response to comments following the federal register process. A stylized print-formatted copy of the companion is presented here.",
+    "tags": [
+        "data sharing",
+        "policy",
+        "overview"
+    ],
+    "pubdb_id": "paper551",
+    "venue": "us_department_of_homeland_security",
+    "authors": [
+        {
+            "person": "person:dittrich_david",
+            "organization": [
+                "University of Washington"
+            ]
+        },
+        {
+            "person": "person:bailey_michael",
+            "organization": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1346",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.2139/ssrn.2342036"
+        },
+        {
+            "from": "PubDBlinkId:1348",
+            "label": "Menlo Report",
+            "to": "https://www.caida.org/publications/papers/2012/menlo_report_actual_formatted/"
+        },
+        {
+            "from": "PubDBlinkId:1347",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/menlo_report_companion_actual_formatted/menlo_report_companion_actual_formatted.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "U.S. Department of Homeland Security",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

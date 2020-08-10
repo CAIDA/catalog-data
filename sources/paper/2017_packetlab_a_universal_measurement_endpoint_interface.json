@@ -1,0 +1,80 @@
+{
+    "id": "2017_packetlab",
+    "name": "PacketLab: A Universal Measurement Endpoint Interface",
+    "datePublished": "2017.11",
+    "description": "The right vantage point is critical to the success of any active measurement. However, most research groups cannot afford to design, deploy, and maintain their own network of measurement endpoints, and thus rely measurement infrastructure shared by others. Unfortunately, the mechanism by which we share access to measurement endpoints today is not frictionless; indeed, issues of compatibility, trust, and a lack of incentives get in the way of efficiently sharing measurement infrastructure. We propose PacketLab, a universal measurement endpoint interface that lowers the barriers faced by experimenters and measurement endpoint operators. PacketLab is built on two key ideas: It moves the measurement logic out of the endpoint to a separate experiment control server, making each endpoint a lightweight packet source/sink. At the same time, it provides a way to delegate access to measurement endpoints while retaining fine-grained control over how one\u2019s endpoints are used by others, allowing research groups to share measurement infrastructure with each other with little overhead. By making the endpoint interface simple, we also make it easier to deploy measurement endpoints on any device anywhere, for any period of time the owner chooses. We offer PacketLab as a candidate measurement interface that can accommodate the research community\u2019s demand for future global-scale Internet measurement.",
+    "tags": [
+        "measurement methodology",
+        "security",
+        "software/tools"
+    ],
+    "pubdb_id": "paper638",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:levchenko_kirill",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:allman_mark",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:paxson_vern",
+            "organization": [
+                "The ICSI Center for Internet Research - ICIR",
+                "University of California, Berkeley"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1912",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3131365.3131396"
+        },
+        {
+            "from": "PubDBlinkId:1913",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/packetlab/packetlab.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1942",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2017/packetlab_caidawide/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

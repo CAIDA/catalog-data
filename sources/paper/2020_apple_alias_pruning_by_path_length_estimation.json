@@ -1,0 +1,45 @@
+{
+    "id": "2020_apple",
+    "name": "APPLE: Alias Pruning by Path Length Estimation",
+    "datePublished": "2020.3",
+    "description": "Uncovering the Internet\u2019s router graph is vital to accurate measurement and analysis. In this paper, we present a new technique for resolving router IP aliases that complements existing techniques. Our approach, Alias Pruning by Path Length Estimation (apple), avoids relying on router manufacturer and operating system specific implementations of IP. Instead, it filters potential router aliases seen in traceroute by comparing the reply path length from each address to a distributed set of vantage points. We evaluated our approach on Internet-wide collections of IPv4 and IPv6 traceroutes. We compared apple\u2019s router alias inferences against router configurations from two R&E networks, finding no false positives. Moreover, apple\u2019s coverage of the potential alias pairs in the ground truth networks rivals the current state-of-the-art in IPv4, and far exceeds existing techniques in IPv6. We also show that apple complements existing alias resolution techniques, increasing the total number of inferred alias pairs by 109.6% in IPv4, and by 1071.5% in IPv6.",
+    "tags": [
+        "ipv6",
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper701",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:marder_alexander",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2271",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/apple/apple.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2276",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2020/apple_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "249-263",
+        "linkedObjects": ""
+    }
+}

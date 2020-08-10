@@ -1,0 +1,55 @@
+{
+    "id": "2015_ethics_research_development_creds",
+    "name": "Ethics Research & Development Summary: Cyber-security Research Ethics Decision Support (CREDS) Tool",
+    "datePublished": "2015.8",
+    "description": "This research & development summary addresses the workshop\u2019s call for ethical, social scientific or legal research that reflects on - or aims to guide - technical research and projects in the field of computer and data communication networks, especially minimizing the potential harm while enabling a broad range of Internet research to be conducted.",
+    "tags": [
+        "policy",
+        "data sharing",
+        "overview"
+    ],
+    "pubdb_id": "paper591",
+    "venue": "acm_sigcomm_workshop_on_ethics_in_networked_systems_research",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2139",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2793013.2793017"
+        },
+        {
+            "from": "PubDBlinkId:1632",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/ethics_research_development_creds/ethics_research_development_creds.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1776",
+            "label": "Related Workshop",
+            "to": "http://conferences.sigcomm.org/sigcomm/2015/netethics.php"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Workshop on Ethics in Networked Systems Research",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

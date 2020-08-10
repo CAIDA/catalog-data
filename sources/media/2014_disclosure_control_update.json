@@ -1,0 +1,18 @@
+{
+    "id": "2014_disclosure_control_predict_pi",
+    "name": "Disclosure Control Update",
+    "tags": [
+        "overview",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2014.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/disclosure_control_predict_pi/disclosure_control_predict_pi.pdf"
+    ]
+}

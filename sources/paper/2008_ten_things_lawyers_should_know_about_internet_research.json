@@ -1,0 +1,37 @@
+{
+    "id": "2008_lawyers_top_ten",
+    "name": "Ten Things Lawyers Should Know About Internet Research",
+    "datePublished": "2008.8",
+    "description": "Updating legal frameworks to accommodate technological\r\nadvancement of communications capabilities requires first\r\nupdating other legal frameworks to accommodate empirically\r\ngrounded research into what we have built, how it is used,\r\nand what it costs to sustain. Unfortunately for -- and\r\ndue to -- well-intentioned policymakers, our scientific\r\nknowledge about the Internet is weak because researchers\r\nare typically not allowed access to any data on operational\r\nnetwork infrastructure for privacy reasons. This data\r\naccess problem was recognized long ago for its detrimental\r\nimpact on infrastructure protection capabilities; many\r\npublic and private sector efforts have failed to solve it.\r\nPublic policy intended to protect individual user privacy\r\nplaces the research community in the absurd situation\r\nof not being able to do the most basic network research\r\neven on the networks established explicitly to support\r\nacademic network research. Despite the methodological\r\nlimitations of Internet science today, the few data\r\npoints available suggest a dire picture of the future.\r\nBut while the situation overwhelmingly indicates the\r\nneed for a closer objective look, the only people with\r\nmeasurement capability on publicly accessible network\r\ninfrastructure today are tasked with inferring as much\r\nprivate information on individual users as possible --\r\nwhether it's to target terrorists or ads. The traditional\r\nmode of getting data from public infrastructures to\r\ninform policymaking -- regulating its collection -- \r\nis a quixotic path, since the government regulatory\r\nagencies have as much reason to be reluctant as providers\r\nregarding disclosure of how the Internet is engineered,\r\nused, and financed. Less surprising with hindsight, the\r\nopaqueness of the infrastructure to empirical analysis\r\nhas generated many problematic responses from rigidly\r\ncircumscribed communities trying to get their jobs done.\r\nAs dismal as it sounds though, the news is not all bad --\r\nthere is a reason everyone wants to be connected to all\r\nthe world's knowledge, as well as eachother, besides its\r\nstatus as the most powerful complex system ever created\r\nby man. The Internet's practical promise for individual\r\nfreedom, democratic engagement, and economic empowerment\r\nis also unparalleled. Moreover, even in the dim light of\r\nthe profoundly needed but underattended interdisciplinary\r\nresearch into the network, we can ascertain some concrete\r\nconstraints on the possible range of policy solutions,\r\nwhich all involve increasing the congruity between what\r\nwe legislate and what we know.\r\n\r\nPrimary Subject Area: \r\n1. Network Competition, Policy and Management\r\n\r\nSecondary Subject Areas: \r\n2. Next Generation and all-IP Networks: Policy, Regulatory, Architectural\r\nand Societal Issues \r\n'' This paper was originally written as a CAIDA blog series, \"[top ten things lawyers should know about the Internet](http://blog.caida.org/best_available_data/2008/04/16/top-ten-things-lawyers-should-know-about-internet-research-1/)\"",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper27",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:383",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/lawyers_top_ten/lawyers_top_ten.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "MISC",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

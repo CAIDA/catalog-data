@@ -1,0 +1,108 @@
+{
+    "id": "2010_aims_report",
+    "name": "The ISMA 2010 AIMS-2 - Workshop on Active Internet Measurements Report",
+    "datePublished": "2010.9",
+    "description": "On February 8-10, 2010, CAIDA hosted the second Workshop on Active Internet Measurements (AIMS-2) as part of our series of Internet Statistics and Metrics Analysis (ISMA) workshops. The goals of this workshop were to further our understanding of the potential and limitations of active measurement research and infrastructure in the wide-area Internet, and to promote cooperative solutions and coordinated strategies to addressing future data needs of the network and security research communities. The three-day workshop included presentations, group discussion and analysis, and focused interaction between participating researchers, operators, and policymakers from all over the world. This report describes the motivation and findings of the workshop, and reviews progress on recommendations developed at the 1st Active Internet Measurements Workshop in 2009.'' Final Report of the ISMA 2010 AIMS-2 Workshop on Active Internet Measurements in La Jolla, California, February 2010.",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper488",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:aben_emile",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:haga_peter",
+            "organization": [
+                "Eotvos Lorand University"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:shavitt_yuvall",
+            "organization": [
+                "Tel Aviv University"
+            ]
+        },
+        {
+            "person": "person:aug\u00e9_jordan",
+            "organization": [
+                "UPMC Paris Universitas"
+            ]
+        },
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:bustamante_fabian",
+            "organization": [
+                "Northwestern University"
+            ]
+        },
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        },
+        {
+            "person": "person:friedman_timur",
+            "organization": [
+                "UPMC Paris Universitas"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:738",
+            "label": "HTML",
+            "to": "aims_report.xml"
+        },
+        {
+            "from": "PubDBlinkId:737",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/aims_report/aims_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1405",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/isma/1002/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "40",
+        "number": "5",
+        "pages": "53-58",
+        "linkedObjects": ""
+    }
+}

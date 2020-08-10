@@ -1,0 +1,20 @@
+{
+    "id": "2019_learning_extract_router_names_imc",
+    "name": "Learning to Extract Router Names from Hostnames",
+    "tags": [
+        "measurement methodology",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2019.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/learning_extract_router_names_imc/learning_extract_router_names_imc.pdf",
+        "https://www.caida.org/publications/papers/2019/learning_regexes_extract_router/"
+    ]
+}

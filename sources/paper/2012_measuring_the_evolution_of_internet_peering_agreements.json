@@ -1,0 +1,68 @@
+{
+    "id": "2012_measuring_evolution_internet_peering",
+    "name": "Measuring the Evolution of Internet Peering Agreements",
+    "datePublished": "2012.5",
+    "description": "There is much interest in studying the structure and evolution of the Internet at the Autonomous System (AS) level. However, limitations of public data sources in detecting settlement-free peering links meant that prior work focused almost exclusively on transit links. In this work, we explore the possibility of studying the full connectivity of a small set of ASes, which we call usable monitors. Usable monitors, while a subset of the ASes that provide BGP feeds to Routeviews/RIPE collectors, are better suited to an evolutionary study than other ASes. We propose CMON, an algorithm to classify the links of usable monitors as transit or non-transit. We classify usable monitors as transit providers (large and small), content producers, content consumers and education/research networks. We highlight key differences in the evolution of connectivity of usable monitors, and measure transitions between different relationships for the same pair of ASes.\r\n",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology",
+        "economics"
+    ],
+    "pubdb_id": "paper514",
+    "venue": "ifip_networking",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:cherukuru_himalatha",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1359",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-642-30054-7_11"
+        },
+        {
+            "from": "PubDBlinkId:806",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/measuring_evolution_internet_peering/measuring_evolution_internet_peering.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1550",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/measuring_evolution_peering/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IFIP Networking",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "7290",
+        "number": "",
+        "pages": "136-148",
+        "linkedObjects": ""
+    }
+}

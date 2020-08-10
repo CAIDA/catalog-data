@@ -1,0 +1,23 @@
+{
+    "id": "2016_bgpstream_imc",
+    "name": "BGPStream: A Software Framework for Live and Historical BGP Data Analysis",
+    "tags": [
+        "topology",
+        "software/tools",
+        "security",
+        "routing",
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2016.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/bgpstream_imc/bgpstream_imc.pdf",
+        "https://www.caida.org/publications/presentations/2016/bgpstream_imc//publications/papers/2016/bgpstream/"
+    ]
+}

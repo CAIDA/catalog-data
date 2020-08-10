@@ -1,0 +1,21 @@
+{
+    "id": "2014_drop_ddec_dhs",
+    "name": "DRoP: DNS-based Router Positioning & DDec: DNS Decoding ",
+    "tags": [
+        "active data analysis",
+        "dns",
+        "network geometry",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "dhs_site_visit_caida",
+            "date": "2014.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/drop_ddec_dhs/drop_ddec_dhs.pdf",
+        "https://www.caida.org/publications/papers/2014/drop/"
+    ]
+}

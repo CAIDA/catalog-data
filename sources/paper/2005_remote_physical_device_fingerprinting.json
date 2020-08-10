@@ -1,0 +1,50 @@
+{
+    "id": "2005_fingerprinting",
+    "name": "Remote physical device fingerprinting",
+    "datePublished": "2005.5",
+    "description": " We introduce the area of remote physical device fingerprinting, or fingerprinting a physical device, as opposed to an operating system\n or class of devices, remotely, and without the fingerprinted device's known cooperation. We accomplish this goal by exploiting small,\n microscopic deviations in device hardware: clock skews. Our techniques do not require any modification to the fingerprinted devices. Our\n techniques report consistent measurements when the measurer is thousands of miles, multiple hops, and tens of milliseconds away from the\n fingerprinted device, and when the fingerprinted device is connected to the Internet from different locations and via different access\n technologies. Further, one can apply our passive and semi-passive techniques when the fingerprinted device is behind a NAT or firewall,\n and also when the device's system time is maintained via NTP or SNTP. One can use our techniques to obtain information about whether two\n devices on the Internet, possibly shifted in time or IP addresses, are actually the same physical device. Example applications include:\n computer forensics; tracking, with some probability, a physical device as it connects to the Internet from different public access\n points; counting the number of devices behind a NAT even when the devices use constant or random IP IDs; remotely probing a block of\n addresses to determine if the addresses correspond to virtual hosts, e.g., as part of a virtual honeynet; and unanonymizing anonymized\n network traces.\n'' Won one of three \"highest rated paper awards\" at the IEEE Symposium on Security and Privacy.",
+    "tags": [
+        "measurement methodology",
+        "security"
+    ],
+    "pubdb_id": "paper61",
+    "venue": "ieee_transactions_on_dependable_and_secure_computing",
+    "authors": [
+        {
+            "person": "person:kohno_tadayoshi",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:302",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/fingerprinting/KohnoBroidoClaffy05-devicefingerprinting.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "IEEE Transactions on Dependable and Secure Computing",
+        "volume": "2",
+        "number": "2",
+        "pages": "93-108",
+        "linkedObjects": ""
+    }
+}

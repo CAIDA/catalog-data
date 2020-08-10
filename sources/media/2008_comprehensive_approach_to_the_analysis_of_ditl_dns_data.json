@@ -1,0 +1,20 @@
+{
+    "id": "2008_wide_castro-analysis_tools",
+    "name": "Comprehensive approach to the analysis of DITL DNS data",
+    "tags": [
+        "dns",
+        "overview",
+        "passive data analysis",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Castro, Sebastian",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_castro-analysis_tools//workshops/wide/0801/slides/castro-analysis_tools.pdf"
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "id": "2015_schematizing_trust_ndn",
+    "name": "Schematizing Trust in Named Data Networking",
+    "datePublished": "2015.9",
+    "description": "Securing communication in network applications involves many complex tasks that can be daunting even for security experts. The Named Data Networking (NDN) architecture builds data authentication into the network layer by requiring all applications to sign and authenticate every data packet. To make this authentication usable, the decision about which keys can sign which data and the procedure of signature verification need to be automated. This paper explores the ability of NDN to enable such automation through the use of trust schemas. Trust schemas can provide data consumers an automatic way to discover which keys to use to authenticate individual data packets, and provide data producers an automatic decision process about which keys to use to sign data packets and, if keys are missing, how to create keys while ensuring that they are used only within a narrowly defined scope (\"the least privilege principle\"). We have developed a set of trust schemas for several prototype NDN applications with different trust models of varying complexity. Our experience suggests that this approach has the potential of being generally applicable to a wide range of NDN applications.",
+    "tags": [
+        "security",
+        "policy"
+    ],
+    "pubdb_id": "paper606",
+    "venue": "acm_conference_on_informationcentric_networking_icn",
+    "authors": [
+        {
+            "person": "person:yu_yingdi",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:afanasyev_alexander",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:jacobson_van",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1756",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2810156.2810170"
+        },
+        {
+            "from": "PubDBlinkId:1755",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/schematizing_trust_ndn/schematizing_trust_ndn.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Conference on Information-Centric Networking (ICN)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": " 177-186",
+        "linkedObjects": ""
+    }
+}

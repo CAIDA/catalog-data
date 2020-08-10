@@ -1,0 +1,19 @@
+{
+    "id": "2013_inferring_multilateral_peering_conext",
+    "name": "Inferring Multilateral Peering ",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+            "date": "2013.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/inferring_multilateral_peering_conext/inferring_multilateral_peering_conext.pdf",
+        "https://www.caida.org/publications/papers/2013/inferring_multilateral_peering"
+    ]
+}

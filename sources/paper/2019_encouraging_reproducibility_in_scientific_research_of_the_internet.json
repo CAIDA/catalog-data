@@ -1,0 +1,61 @@
+{
+    "id": "2019_encouraging_reproducibility_scientific_research",
+    "name": "Encouraging Reproducibility in Scientific Research of the Internet",
+    "datePublished": "2019.1",
+    "description": "Reproducibility of research in Computer Science (CS) and in the field of networking in particular is a well-recognized problem. For several reasons, including the sensitive and/or proprietary nature of some Internet measurements, the networking research community pays limited attention to the of reproducibility of results, instead tending to accept papers that appear plausible. This article summarises a 2.5 day long Dagstuhl seminar on Encouraging Reproducibility in Scientific Research of the Internet held in October 2018. The seminar discussed challenges to improving reproducibility of scientific Internet research, and developed a set of recommendations that we as a community can undertake to initiate a cultural change toward reproducibility of our work. It brought together people both from academia and industry to set expectations and formulate concrete recommendations for reproducible research. This iteration of the seminar was scoped to computer networking research, although the outcomes are likely relevant for a broader audience from multiple interdisciplinary fields.'' Published in 2019, this report documents a paper presented at [Dagstuhl Seminar 18412](https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18412) in October 2018.",
+    "tags": [
+        "overview",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper685",
+    "venue": "dagstuhl_reports",
+    "authors": [
+        {
+            "person": "person:bajpai_vaibhav",
+            "organization": [
+                "TU Munich"
+            ]
+        },
+        {
+            "person": "person:bonaventure_olivier",
+            "organization": [
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:karrenberg_daniel",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2188",
+            "label": "DOI",
+            "to": "https://doi.org/10.4230/DagRep.8.10.41"
+        },
+        {
+            "from": "PubDBlinkId:2184",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/encouraging_reproducibility_scientific_research/encouraging_reproducibility_scientific_research.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Dagstuhl Reports",
+        "volume": "8",
+        "number": "10",
+        "pages": "41-62",
+        "linkedObjects": ""
+    }
+}

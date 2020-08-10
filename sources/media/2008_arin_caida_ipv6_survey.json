@@ -1,0 +1,20 @@
+{
+    "id": "2008_wide_huffaker_ipv6_survey",
+    "name": "ARIN & CAIDA IPv6 Survey",
+    "tags": [
+        "routing",
+        "trends",
+        "policy",
+        "ipv6"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "widecasfi",
+            "date": "2008.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_huffaker_ipv6_survey/wide_huffaker_ipv6_survey.pdf"
+    ]
+}

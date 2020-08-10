@@ -1,0 +1,17 @@
+{
+    "id": "2006_dima_dkseries_liafa",
+    "name": "dK-series: Systematic Topology Analysis and Generation Using Degree Correlations",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "laboratoire_dinformatique_algorithmique_fondements_et_applications_liafa",
+            "date": "2006.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/dima_dkseries_liafa/dima_dkseries_liafa.pdf"
+    ]
+}

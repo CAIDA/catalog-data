@@ -1,5 +1,6 @@
 {
-    "id": "jin_yuchen",
-    "nameFirst": "Yuchen",
-    "nameLast": "Jin"
+    "person": "person:jin_yuchen",
+    "organization": [
+        "University of Washington"
+    ]
 }

@@ -1,0 +1,45 @@
+{
+    "id": "2003_netramet",
+    "name": "Integrating Active Methods and Flow Meters - an implementation using NeTraMet",
+    "datePublished": "2003.4",
+    "description": "\nThe purpose of this paper is to present an implementation\nof a method that combines active and passive methods to\nmeasure and estimate the main performance parameters in IP\nnetworks. More specifically the method integrates performance\nand flow measurements. The main features of the method and an\nimplementation using the flow meter NeTraMet are described.\nTest results for packet delays and delay variations, losses and\nthroughput are presented. Applications to monitoring of traffic\nfrom server-based networks and an adaptive monitoring system\nare also considered.\n",
+    "tags": [
+        "software/tools",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper92",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:lindh_thomas",
+            "organization": [
+                "KTH, Royal Institute of Technology, IMIT, Sweden"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:57",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/netramet/ntm-oam-pam2003.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "KTH and CAIDA/U. Auckland",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

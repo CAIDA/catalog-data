@@ -1,5 +1,6 @@
 {
-    "id": "fontugne_romain",
-    "nameFirst": "Romain",
-    "nameLast": "Fontugne"
+    "person": "person:fontugne_romain",
+    "organization": [
+        "IIJ Research Lab"
+    ]
 }

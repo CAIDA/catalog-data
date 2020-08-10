@@ -1,0 +1,17 @@
+{
+    "id": "2007_terena_security",
+    "name": "Current Network Security Threats: DoS, Viruses, Worms, Botnets",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "terena_networking_conference",
+            "date": "2007.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/terena_security/terena_security.pdf"
+    ]
+}

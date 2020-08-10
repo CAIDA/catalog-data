@@ -1,0 +1,20 @@
+{
+    "id": "2015_ipv6_as_relationships_pam",
+    "name": "IPv6 AS Relationships, Clique, and Congruence",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/ipv6_as_relationships_pam/ipv6_as_relationships_pam.pdf",
+        "https://www.caida.org/publications/papers/2015/ipv6_as_relationships/"
+    ]
+}

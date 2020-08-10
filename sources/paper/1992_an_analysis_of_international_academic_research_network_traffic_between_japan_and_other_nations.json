@@ -1,0 +1,55 @@
+{
+    "id": "1992_aiar",
+    "name": "An analysis of international academic research network traffic between Japan and other nations",
+    "datePublished": "1992.1",
+    "description": "International IP network traffic is evaluated for applications\r\nutilizing the TCP transport protocol. This evaluation is based on an\r\nanalysis study performed in January 1992 across an infrastructural\r\nconnection between Japan and the PACCOM network. This traffic\r\nmeasurement allows and examination of the current stats of\r\ninternational information flow. Such analyses are a first, and\r\nessential, step toward a better understanding of the type, quantity,\r\nand breadth the of international traffic flow. They can provide not\r\nonly confirmation or refutation of intuitions and existing paradigms\r\nrelated to data exchanges, but also a fundamental framework upon which\r\nto base future network management, planning and design.\r\n\r\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper182",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:asaba_toshiya",
+            "organization": [
+                "ISR, Recruit Co, Ltd."
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:nakamura_osamu",
+            "organization": [
+                "Computer Center University of Tokyo"
+            ]
+        },
+        {
+            "person": "person:murai_jun",
+            "organization": [
+                "Department of Environmental Information, Keio University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:246",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1992/aiar/inet92.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

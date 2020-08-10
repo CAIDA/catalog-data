@@ -1,0 +1,21 @@
+{
+    "id": "2013_measuring_adoption_ipv6_tip",
+    "name": "Measuring and Modeling the Adoption of IPv6",
+    "tags": [
+        "active data analysis",
+        "ipv6",
+        "passive data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "tip",
+            "date": "2013.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/measuring_adoption_ipv6_tip/measuring_adoption_ipv6_tip.pdf"
+    ]
+}

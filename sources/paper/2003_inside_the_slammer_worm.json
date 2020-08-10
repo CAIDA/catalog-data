@@ -1,0 +1,75 @@
+{
+    "id": "2003_sapphire2",
+    "name": "Inside the Slammer Worm",
+    "datePublished": "2003.8",
+    "description": "The Slammer worm spread so quickly that human response was ineffective. In January 2003, it packed a benign payload, but its disruptive capacity was surprising. Why was it so effective and what new challenges does this new breed of worm pose? \r\n\r\nSlammer (sometimes called Sapphire) was the fastest computer worm in history. As it began spreading throughout the Internet, the worm infected more than 90 percent of vulnerable hosts within 10 minutes, causing significant disruption to financial, transportation, and government institutions and precluding any human-based response. In this article, we describe how it achieved its rapid growth, dissect portions of the worm to study some of its flaws, and look at our defensive effectiveness against it and its successors.\r\n\r\nSlammer began to infect hosts slightly before 05:30 UTC on Saturday, 25 January 2003, by exploiting a buffer-overflow vulnerability in computers on the Internet running Microsoft's SQL Server or Microsoft SQL Server Desktop Engine (MSDE) 2000. David Litchfield of Next Generation Security Software discovered this underlying indexing service weakness in July 2002; Microsoft released a patch for the vulnerability before the vulnerability was publicly disclosed (www.microsoft.com/security/slammer.asp). Exploiting this vulnerability, the worm infected at least 75,000 hosts, perhaps considerably more, and caused network outages and unforeseen consequences such as canceled airline flights, interference with elections, and ATM failures.\r\n'' Support for this work was provided by NSF, DARPA, Silicon Defense, Cisco Systems, AT&T, NIST, and CAIDA members.",
+    "tags": [
+        "security",
+        "network telescope"
+    ],
+    "pubdb_id": "paper87",
+    "venue": "ieee_security_and_privacy",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:paxson_vern",
+            "organization": [
+                "Lawrence Berkeley National Laboratory (LBNL)",
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:staniford_stuart",
+            "organization": [
+                "Silicon Defense"
+            ]
+        },
+        {
+            "person": "person:weaver_nicholas",
+            "organization": [
+                "Silicon Defense",
+                "University of California, Berkeley"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:287",
+            "label": "HTML",
+            "to": "sapphire.xml"
+        },
+        {
+            "from": "PubDBlinkId:288",
+            "label": "Original Analysis",
+            "to": "/research/security/sapphire/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Security and Privacy",
+        "volume": "1",
+        "number": "4",
+        "pages": "33-39",
+        "linkedObjects": ""
+    }
+}

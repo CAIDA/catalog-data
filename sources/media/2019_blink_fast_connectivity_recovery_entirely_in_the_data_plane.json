@@ -1,0 +1,19 @@
+{
+    "id": "2019_blink_nsdi",
+    "name": "Blink: Fast Connectivity Recovery Entirely in the Data Plane",
+    "tags": [
+        "routing",
+        "internet outages"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Holterbach, Thomas",
+            "venue": "usenix_symposium_on_networked_systems_design_and_implementation_nsdi",
+            "date": "2019.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/blink_nsdi/blink_nsdi.pdf",
+        "https://www.caida.org/publications/papers/2019/blink/"
+    ]
+}

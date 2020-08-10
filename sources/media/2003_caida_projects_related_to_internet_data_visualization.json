@@ -1,0 +1,19 @@
+{
+    "id": "2003_viz_tokyo",
+    "name": "CAIDA projects related to Internet data visualization",
+    "tags": [
+        "data",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "sony_computer_science_laboratories_inc",
+            "date": "2003.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/viz_tokyo/viz_tokyo.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/viz_tokyo/index.html"
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": "2004_internetlike_graphs",
+    "name": "Compact Routing on Internet-Like Graphs",
+    "datePublished": "2004.3",
+    "description": "The Thorup-Zwick (TZ) compact routing scheme is the first generic stretch-3 routing scheme delivering a nearly optimal per-node memory upper bound. Using both direct analysis and simulation, we derive the stretch distribution of this routing scheme on Internet-like inter-domain topologies. By investigating the TZ scheme on random graphs with power-law node degree distributions, Pk&cong;k-&#947;, we find that the average TZ stretch is quite low and virtually independent of &#947;. In particular, for the Internet inter-domain graph with &#947;&cong;2.1, the average TZ stretch is around 1.1, with up to 70% of all pairwise paths being stretch-1 (shortest possible). As the network grows, the average stretch slowly decreases. We find routing table sizes to be very small (around 50 records for 104-node networks), well below their theoretical upper bounds. Furthermore, we find that both the average shortest path length (i.e. distance) d&sim; and width of the distance distribution &#963; observed in the real Internet inter-AS graph have values that are very close to the minimums of the average stretch in the d&sim; and &#963; -directions. This leads us to the discovery of a unique critical point of the average TZ stretch as a function of d&sim; and &#963;. The Internet's distance distribution is located in a close neighborhood of this point. This is remarkable given the fact that the Internet inter-domain topology has evolved without any direct attention paid to properties of the stretch distribution. It suggests the average stretch function may be an indirect indicator of the optimization criteria influencing the Internet's inter-domain topology evolution.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper80",
+    "venue": "ieee_conference_on_computer_communications_infocom",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fall_kevin",
+            "organization": [
+                "Intel Research, Berkeley"
+            ]
+        },
+        {
+            "person": "person:yang_xiaowei",
+            "organization": [
+                "Massachusetts Institute of Technology (MIT)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:691",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/INFCOM.2004.1354495"
+        },
+        {
+            "from": "PubDBlinkId:692",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/internetlike_graphs/internetlike_graphs.PDF"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Computer Communications (INFOCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

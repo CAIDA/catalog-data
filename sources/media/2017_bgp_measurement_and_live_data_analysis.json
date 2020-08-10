@@ -1,0 +1,22 @@
+{
+    "id": "2017_bgp_measurement_live_data_tma",
+    "name": "BGP measurement and live data analysis",
+    "tags": [
+        "topology",
+        "software/tools",
+        "security",
+        "routing",
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "phd_school_on_network_traffic_measurement_and_analysis_conference_tma",
+            "date": "2017.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/bgp_measurement_live_data_tma/bgp_measurement_live_data_tma.pdf"
+    ]
+}

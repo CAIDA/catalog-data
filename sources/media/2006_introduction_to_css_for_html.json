@@ -1,0 +1,17 @@
+{
+    "id": "2006_ken_css",
+    "name": "Introduction to CSS for HTML",
+    "tags": [
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Keys, Ken",
+            "venue": "caida",
+            "date": "2006.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/ken_css/slides/"
+    ]
+}

@@ -1,5 +1,6 @@
 {
-    "id": "dainotti_alberto",
-    "nameFirst": "Alberto",
-    "nameLast": "Dainotti"
+    "person": "person:dainotti_alberto",
+    "organization": [
+        "University of Napoli Federico II, Napoli, Italy"
+    ]
 }

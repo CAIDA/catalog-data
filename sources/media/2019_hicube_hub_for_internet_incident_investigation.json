@@ -1,0 +1,20 @@
+{
+    "id": "2019_hicube_dhsst",
+    "name": "HI-CUBE: Hub for Internet Incident Investigation",
+    "tags": [
+        "data sharing",
+        "security",
+        "data",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "dhs_st_cybersecurity_and_innovation_showcase",
+            "date": "2019.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/hicube_dhsst/hicube_dhsst.pdf"
+    ]
+}

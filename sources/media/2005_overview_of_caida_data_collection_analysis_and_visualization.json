@@ -1,0 +1,18 @@
+{
+    "id": "2005_iij",
+    "name": "Overview of CAIDA Data Collection Analysis and Visualization",
+    "tags": [
+        "data",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_initiative_japan_iij",
+            "date": "2005.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/iij/iij2005.pdf"
+    ]
+}

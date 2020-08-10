@@ -1,0 +1,18 @@
+{
+    "id": "1999_ISMA9901_coralreef",
+    "name": "CoralReef: platform for passive network monitoring collection of coral tools",
+    "tags": [
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Bachman, Nancy",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "1999.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/1999/ISMA9901_coralreef/index.html"
+    ]
+}

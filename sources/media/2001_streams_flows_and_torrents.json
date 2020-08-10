@@ -1,0 +1,18 @@
+{
+    "id": "2001_pam2001_sft",
+    "name": "Streams Flows and Torrents",
+    "tags": [
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2001.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/pam2001_sft/index.html",
+        "https://www.caida.org/publications/papers/2001/StreamsFlowsTorrents"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2005_pam-topology",
+    "name": "Revisiting Internet AS-level Topology Discovery",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dimitropoulos, Xenofontas",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/pam-topology/BGPlay.avi",
+        "https://www.caida.org/publications/presentations/2005/pam-topology/PAM2005-revisiting.pdf",
+        "https://www.caida.org/publications/papers/2005/pam-topology"
+    ]
+}

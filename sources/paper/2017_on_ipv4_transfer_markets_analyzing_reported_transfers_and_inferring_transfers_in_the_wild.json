@@ -1,0 +1,56 @@
+{
+    "id": "2017_ipv4_transfer_markets_wild",
+    "name": "On IPv4 transfer markets: Analyzing reported transfers and inferring transfers in the wild",
+    "datePublished": "2017.10",
+    "description": "IPv4 Transfer Markets have recently emerged as a mechanism for prolonging the usability of IPv4 address space. They facilitate the trading of IPv4 address space, which constitutes a radical shift transforming IPv4 addresses from a free resource to a commodity. In this paper, we conduct a comprehensive analysis of all IPv4 transfers that are published by three regional Internet registries. We analyze the overall evolution of transfer markets, whether they lead to a healthy redistribution of IP addresses, and the interplay between transfers and IPv6 adoption. We find that, to a large extent, IPv4 transfers serve their intended purpose by moving IP blocks from those with excess to those in need - transferred address blocks appear to be routed after the transfer, the utilization of transferred blocks is greater after the transfer date and a high percentage of the transferred space comes from legacy space. We have also proposed a methodology for detecting IPv4 transfers in the wild that tracks changes in origins of IP prefixes in the global routing table. This method yields promising results, yet it produces a large number of false positives due to the noisy nature of routing data. We have investigated the cause of these false positives and verified that they can be reduced to a volume analyzable by a human operator.",
+    "tags": [
+        "economics",
+        "ipv6",
+        "routing"
+    ],
+    "pubdb_id": "paper643",
+    "venue": "elsevier_computer_communications_journal",
+    "authors": [
+        {
+            "person": "person:livadariu_ioana",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1949",
+            "label": "DOI",
+            "to": "https://doi.org/10.1016/j.comcom.2017.07.012"
+        },
+        {
+            "from": "PubDBlinkId:1948",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/ipv4_transfer_markets_wild/ipv4_transfer_markets_wild.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Elsevier Computer Communications Journal",
+        "volume": "111",
+        "number": "",
+        "pages": "105-119",
+        "linkedObjects": ""
+    }
+}

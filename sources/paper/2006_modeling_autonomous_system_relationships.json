@@ -1,0 +1,46 @@
+{
+    "id": "2006_modeling_as",
+    "name": "Modeling Autonomous System Relationships",
+    "datePublished": "2006.5",
+    "description": "The development of realistic topology generators that produce faithful replicas of Internet topologies is critical for conducting realistic simulation studies of Internet protocols. Despite the volume of research in this area the last several years, current topology generators fail to capture an inherent aspect of the autonomous system (AS) topology of the Internet, namely the fact that AS links reflect business agreements between competing entities, which impose restrictions on how traffic is routed between ASs. These restrictions result in inflated AS paths and generally in suboptimal routing in the Internet. In this work, we first evaluate the importance of modeling AS relationships when conducting accurate and realistic simulation studies. We demonstrate that ignoring AS relationships produces different simulation results than modeling AS relationships based on known relationships between Internet Internet Service Providers (ISPs). Then, we introduce a framework for generating synthetic AS topologies annotated with realistic relationships. In addition to modeling the degree distribution of a network, which is the property that most existing topology generators model, our framework also models new properties that capture the characteristics of AS relationships. Finally, we propose a novel algorithm for generating synthetic graphs, annotated with AS relationships, that reproduce these AS relationships-aware properties.\r\n",
+    "tags": [
+        "routing",
+        "topology",
+        "policy"
+    ],
+    "pubdb_id": "paper48",
+    "venue": "principles_of_advanced_and_distributed_simulation_pads",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:23",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/modeling_as/modeling_as.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Principles of Advanced and Distributed Simulation (PADS)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA) and Georgia Tech",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "143-149",
+        "linkedObjects": ""
+    }
+}

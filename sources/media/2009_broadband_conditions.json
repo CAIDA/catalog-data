@@ -1,0 +1,19 @@
+{
+    "id": "2009_broadband",
+    "name": "Broadband Conditions",
+    "tags": [
+        "policy",
+        "data",
+        "trends"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ntia_broadband_technology_opportunities_program",
+            "date": "2009.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/broadband/ntia_bp.pdf"
+    ]
+}

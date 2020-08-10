@@ -1,0 +1,17 @@
+{
+    "id": "2002_maya_intro",
+    "name": "Maya 4.0 Introduction Seminar",
+    "tags": [
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Jakubiec, Oliver",
+            "venue": "sdsc",
+            "date": "2002.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/maya_intro/slides.html"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "id": "2015_measuring_interdomain_congestion",
+    "name": "Measuring Interdomain Congestion and its Impact on QoE",
+    "datePublished": "2015.10",
+    "description": "We have developed a method to localize and quantify interdomain congestion in the Internet. Our Time Sequence Latency Probes (TSLP) method depends on two facts: Internet traffic patterns are typically diurnal, and queues increase packet delay through a router during periods of adjacent link congestion. Repeated round trip delay measurements from a single test point to the two edges of a congested link will show sustained increased latency to the far (but not to the near) side of the link. We are designing and implementing a system for network-wide measurement of congestion using the TSLP method. We plan to support QoE measurements on this system to complement our measurement of QoS metrics such as delay and loss rate.'' A position paper at the NSF/FCC Workshop on [Tracking Quality of Experience in the Internet](https://citp.princeton.edu/qoe-logistics/) in October 2015.",
+    "tags": [
+        "active data analysis",
+        "data",
+        "policy",
+        "topology",
+        "measurement methodology",
+        "congestion",
+        "QoE"
+    ],
+    "pubdb_id": "paper595",
+    "venue": "workshop_on_tracking_quality_of_experience_in_the_internet",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1644",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/measuring_interdomain_congestion/measuring_interdomain_congestion.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Tracking Quality of Experience in the Internet",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

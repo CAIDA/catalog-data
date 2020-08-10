@@ -1,0 +1,57 @@
+{
+    "id": "2014_approaches_to_transparency_aimed",
+    "name": "Approaches to transparency aimed at minimizing harm and maximizing investment",
+    "datePublished": "2014.9",
+    "description": "Embedded in a challenging legal and historical context, the FCC must act in the short term to address concerns about harmful discriminatory behavior. But its actions should be consistent with an effective, long-term approach that might ultimately reflect a change in legal framing and authority. In this comment we do not express a preference among short-term options, e.g., section 706 vs. Title II. Instead we suggest steps that would support any short-term option chosen by the FCC, but also inform debate about longer term policy options. Our suggestions are informed by recent research on Internet connectivity structure and performance, from technical as well as business perspectives, and our motivation is enabling fact-based policy. Our line of reasoning is as follows.\r\n\r\n1) Recent discourse about Internet regulation has focused on whether or how to regulate discrimination rather than on its possible harms and benefits. For four reasons, we advocate explicit attention to possible harms, their causes, and means to prevent them. First, the court has stated that while the FCC cannot ban traffic discrimination unless it reclassifies Internet access providers under Title II, the FCC does have the authority to remedy harms. Second, a focus on harms provides a possible way to govern specialized services, which are currently not subject to traffic management constraints. Third, if the FCC chooses Title II, it will open up many questions about which parts to enforce, which will require a discussion of the harms vs. benefits of selective forbearance. Fourth, any new regulatory framework would be well-served by a thorough understanding of potential harms and benefits that result from behavior of various actors.\r\n\r\n2) Impaired quality of experience (QoE) is a meaningful indicator of harm, essential to effective regulatory analysis focused on harms, but not well-understood. Unfortunately, tools to measure and analyze QoE today are primitive, which is a key obstacle to using it as part of a sound basis for regulation. The FCC should promote research, tools and capabilities to measure, quantify, and characterize QoE, and explore metrics of service quality that better reflect our understanding of QoS and QoE for a range of applications. \r\n\r\n3) Interconnection is not separable from discrimination when evaluating harmful behavior, since interconnection practices can induce harms \r\nthat do not materially differ from those induced by discrimination. Different modes of connection raise different potential harms, and an overall analysis of such harms can suggest reasonable constraints on ISP and edge provider behavior.\r\n\r\n4) One such constraint is that to the extent that terminating monopoly ISPs are under no obligation to peer, they should have to provide uncongested interconnection (peering and transit) links. However, this approach requires cognizance of the distinction between small edge providers (\"congestion-takers\") and large edge providers (\"congestion-makers\"). That is, large edge providers who can send enough traffic volume to induce congestion, must responsibly manage their traffic sources and negotiate in good faith for direct interconnection or other solutions where appropriate, so that ISPs can reasonably fulfill their obligation.\r\n\r\n5) A longer-term challenge is to create a regulatory framework that promotes improvements in infrastructure performance, robustness, and security while also promoting freedom and innovation in a highly dynamic ecosystem. An examination of the Internet ecosystem from an industrial platform perspective can help scope consistent policy discourse, in particular around specialized services, and anchor a framework that balances these aspirations.\r\n\r\n6) A regulatory requirement for transparent consideration of harms and benefits will support any direction the FCC chooses This requirement brings four challenges: ensuring such analyses are sufficiently detailed to allow independent, third-party evaluation; obtaining independent evaluations from objective parties; adapting to changing reasonable expectations about QoE over time; and capturing specific as well as more general societal harms, such as the effects of under-investment in capacity.'' Comment In the Matter of Protecting and Promoting the Open Internet, GN Docket No. 14-28.",
+    "tags": [
+        "policy",
+        "economics",
+        "congestion",
+        "QoE"
+    ],
+    "pubdb_id": "paper568",
+    "venue": "federal_communications_commission_fcc_commission_documents",
+    "authors": [
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1395",
+            "label": "FCC document",
+            "to": "http://www.fcc.gov/document/protecting-and-promoting-open-internet-nprm"
+        },
+        {
+            "from": "PubDBlinkId:1394",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/approaches_to_transparency_aimed/approaches_to_transparency_aimed.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Federal Communications Commission (FCC) Commission Documents",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

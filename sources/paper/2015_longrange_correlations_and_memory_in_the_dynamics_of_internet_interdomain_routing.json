@@ -1,0 +1,63 @@
+{
+    "id": "2015_long_range_correlations_memory",
+    "name": "Long-Range Correlations and Memory in the Dynamics of Internet Interdomain Routing",
+    "datePublished": "2015.11",
+    "description": "Data transfer is one of the main functions of the Internet. The Internet consists of a large number of interconnected subnetworks or domains, known as Autonomous Systems (ASes). Due to privacy and other reasons the information about what route to use to reach devices within other ASes is not readily available to any given AS. The Border Gateway Protocol (BGP) is responsible for discovering and distributing this reachability information to all ASes. Since the topology of the Internet is highly dynamic, all ASes constantly exchange and update this reachability information in small chunks, known as routing control packets or BGP updates. In the view of the quick growth of the Internet there are significant concerns with the scalability of the BGP updates and the efficiency of the BGP routing in general. Motivated by these issues we conduct a systematic time series analysis of BGP update rates. We find that BGP update time series are extremely volatile, exhibit long-term correlations and memory effects, similar to seismic time series, or temperature and stock market price fluctuations. The presented statistical characterization of BGP update dynamics could serve as a basis for validation of existing and developing better models of Internet interdomain routing.",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology",
+        "overview"
+    ],
+    "pubdb_id": "paper600",
+    "venue": "plos_one",
+    "authors": [
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "Northeastern University"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:havlin_shlomo",
+            "organization": [
+                "Department of Physics, Bar-Ilan University"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "Northeastern University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1671",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1371/journal.pone.0141481"
+        },
+        {
+            "from": "PubDBlinkId:1670",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/long_range_correlations_memory/long_range_correlations_memory.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "PLOS ONE",
+        "volume": "",
+        "number": "",
+        "pages": "1-12",
+        "linkedObjects": ""
+    }
+}

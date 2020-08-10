@@ -1,0 +1,20 @@
+{
+    "id": "2018_who_shuts_down_internet_imaps",
+    "name": "Who shuts down the Internet and why?",
+    "tags": [
+        "internet outages",
+        "network telescope",
+        "routing",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Winter, Philipp",
+            "venue": "internet_measurement_and_political_science_workshop_imaps",
+            "date": "2018.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/who_shuts_down_internet_imaps/who_shuts_down_internet_imaps.pdf"
+    ]
+}

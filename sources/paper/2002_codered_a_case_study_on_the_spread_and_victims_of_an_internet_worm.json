@@ -1,0 +1,56 @@
+{
+    "id": "2002_codered",
+    "name": "Code-Red: a case study on the spread and victims of an Internet worm",
+    "datePublished": "2002.11",
+    "description": "On July 19, 2001, more than 359,000 computers\r\nconnected to the Internet were infected with the Code-Red\r\n(CRv2) worm in less than 14 hours. The cost of this\r\nepidemic, including subsequent strains of Code-Red, is estimated\r\nto be in excess of $2.6 billion. Despite the global\r\ndamage caused by this attack, there have been few serious\r\nattempts to characterize the spread of the worm, partly\r\ndue to the challenge of collecting global information about\r\nworms. Using a technique that enables global detection of\r\nworm spread, we collected and analyzed data over a period\r\nof 45 days beginning July 2nd, 2001 to determine the characteristics\r\nof the spread of Code-Red throughout the Internet.\r\n\r\nIn this paper, we describe the methodology we use to trace\r\nthe spread of Code-Red, and then describe the results of our\r\ntrace analyses. We first detail the spread of the Code-Red\r\nand CodeRedII worms in terms of infection and deactivation\r\nrates. Even without being optimized for spread of infection,\r\nCode-Red infection rates peaked at over 2,000 hosts per\r\nminute. We then examine the properties of the infected host\r\npopulation, including geographic location, weekly and diurnal\r\ntime effects, top-level domains, and ISPs. We demonstrate\r\nthat the worm was an international event, infection activity\r\nexhibited time-of-day effects, and found that, although\r\nmost attention focused on large corporations, the Code-Red\r\nworm primarily preyed upon home and small business users.\r\nWe also qualified the effects of DHCP on measurements of\r\ninfected hosts and determined that IP addresses are not an\r\naccurate measure of the spread of a worm on timescales\r\nlonger than 24 hours. Finally, the experience of the Code-Red\r\nworm demonstrates that wide-spread vulnerabilities in\r\nInternet hosts can be exploited quickly and dramatically,\r\nand that techniques other than host patching are required\r\nto mitigate Internet worms.\r\n",
+    "tags": [
+        "passive data analysis",
+        "security",
+        "network telescope"
+    ],
+    "pubdb_id": "paper102",
+    "venue": "internet_measurement_workshop_imw",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brown_jeffery",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:458",
+            "label": "gzipped postscript",
+            "to": "codered.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:457",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2002/codered/codered.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Internet Measurement Workshop (IMW)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "273-284",
+        "linkedObjects": ""
+    }
+}

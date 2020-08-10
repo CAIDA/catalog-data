@@ -1,0 +1,55 @@
+{
+    "id": "1992_ar",
+    "name": "1992 annual report of the research progress of the Applied Network Research (ANR) group at SDSC",
+    "datePublished": "1992.12",
+    "description": "This annual report presents the progress of Applied Network Research\nGroup at the San Diego Supercomputer Center (SDSC) and the University\nof California, San Diego (UCSD) during the past year. Research topics\ninclude: analysis of the existing data and instrumentation of the\nNSFNET; sampling network traffic data in wide area environments;\nend-to-end delay and jitter across wide-area networks; routing\nstability and characteristics; reliability and quality of service\nmetrics; performance evaluation of a multimedia application; and\nindividual statistics of interest for performance evaluation and\nmodeling in a wide area environment. We also include research efforts\noutside the scope of this proposal but within the scope of the larger\nANR research agenda, such as our involvement with the CASA gigabit\nnetwork infrastructure and our participation in NSF's NREN Engineering\nGroup.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper183",
+    "venue": "applied_network_research_san_diego_supercomputer_center",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:chinoy_bilal",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:369",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1992/ar/anr-annual-1992.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Applied Network Research, San Diego Supercomputer Center",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "SDSC Report GA-A21224",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

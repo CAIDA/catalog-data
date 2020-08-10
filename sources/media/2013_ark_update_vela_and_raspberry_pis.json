@@ -1,0 +1,19 @@
+{
+    "id": "2013_ark_vela_raspberry_pi_aims",
+    "name": "Ark Update: Vela and Raspberry Pi's",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2013.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/ark_vela_raspberry_pi_aims/ark_vela_raspberry_pi_aims.pdf"
+    ]
+}

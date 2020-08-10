@@ -1,0 +1,17 @@
+{
+    "id": "2003_cisco_internet_worms",
+    "name": "Internet Worms: Current Capabilities in Awareness, Detection, Response",
+    "tags": [
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "cisco",
+            "date": "2003.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/cisco_internet_worms/cisco_internet_worms.pdf"
+    ]
+}

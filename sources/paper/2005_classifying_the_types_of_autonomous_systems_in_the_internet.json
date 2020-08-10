@@ -1,0 +1,62 @@
+{
+    "id": "2005_aschar",
+    "name": "Classifying the Types of Autonomous Systems in the Internet",
+    "datePublished": "2005.8",
+    "description": "The AS-level topology of the Internet has attracted extensive\r\nresearch attention the last few years. Measuring the\r\ntopology of the Internet, analyzing the properties of Internet\r\ntopology graphs, and generating Internet-like synthetic\r\ngraphs are prominent research topics in the field. Although\r\nthe Internet AS topology has been studied extensively, less is\r\nknown about the individual ASs, the entities that comprise\r\naggregation units in the BGP routing system. In general, AS\r\nnumbers are used by service providers, companies, universities\r\nand other organizations that connect to the Internet\r\nusing BGP. However, the nature of the organizations that\r\nuse AS numbers has not been systematically investigated\r\nyet. Statistical knowledge of the ASs in the Internet is essential\r\nnot only to identifying the types of ASs that drive\r\nAS number exhaustion, but also to modeling the structure\r\nand evolution of Internet topology. In this work we initiate\r\ndevelopment of an Internet AS taxonomy by proposing an\r\ninitial classification scheme based on empirically observed\r\ndifferences among AS characteristics.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper55",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:32",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/aschar/aschar.pdf"
+        },
+        {
+            "from": "PubDBlinkId:31",
+            "label": "Poster (pdf)",
+            "to": "aschar-poster.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

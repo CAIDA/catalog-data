@@ -1,0 +1,20 @@
+{
+    "id": "2013_gaining_insight_outages_tma",
+    "name": "Gaining Insight into AS-level Outages through Analysis of Internet Background Radiation",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Benson, Karyn",
+            "venue": "traffic_monitoring_and_analysis_workshop_tma",
+            "date": "2013.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/gaining_insight_outages_tma/gaining_insight_outages_tma.pdf",
+        "https://www.caida.org/publications/papers/2013/gaining_insight_outages"
+    ]
+}

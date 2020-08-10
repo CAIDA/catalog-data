@@ -1,0 +1,21 @@
+{
+    "id": "2013_speedtrap_imc",
+    "name": "Speedtrap: Internet-Scale IPv6 Alias Resolution",
+    "tags": [
+        "ipv6",
+        "measurement methodology",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2013.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/speedtrap_imc/speedtrap_imc.pdf",
+        "https://www.caida.org/publications/papers/2013/speedtrap"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2010_alias_resolution_midar",
+    "name": "Internet-Scale Alias Resolution with MIDAR",
+    "tags": [
+        "topology",
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Keys, Ken",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2010.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/alias_resolution_midar/alias_resolution_midar.pdf",
+        "https://www.caida.org/publications/papers/2011/midar-tr"
+    ]
+}

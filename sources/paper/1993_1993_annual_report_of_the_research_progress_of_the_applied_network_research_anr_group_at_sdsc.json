@@ -1,0 +1,55 @@
+{
+    "id": "1993_1993ar",
+    "name": "1993 annual report of the research progress of the Applied Network Research (ANR) group at SDSC",
+    "datePublished": "1993.12",
+    "description": "We present the 1993 annual report on research efforts of the San Diego\nSupercomputer Center's Applied Network Research group (ANR). Our\nprojects were undertaken in collaboration with the Computer Systems\nLaboratory of the University of California in San Diego (CSL), as well\nas a number of other researchers across the country.\n\nThis year, we continued our research on network analysis and modeling,\nas well as advanced network technologies including the CASA gigabit\ntestbed. Our research topics include issues of network access,\ninstrumentation for the accurate gathering of performance statistics,\naccounting, and quality of service in the Internet.\n\nWe hope interested parties within the Internet research community will\nfind this report helpful in understanding our research agenda. We also\nwish to use this report to stimulate further discussion and interaction\namong researchers pursuing similar projects and goals.",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper173",
+    "venue": "applied_network_research_san_diego_supercomputer_center",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:chinoy_bilal",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:404",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/1993ar/anr-annual-1993.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Applied Network Research, San Diego Supercomputer Center",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "SDSC Report GA-A21648",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

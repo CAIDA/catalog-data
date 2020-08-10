@@ -1,0 +1,79 @@
+{
+    "id": "2009_aims_report",
+    "name": "The Workshop on Active Internet Measurements (AIMS) Report",
+    "datePublished": "2009.10",
+    "description": "Measuring the global Internet is a perpetually challenging task for technical as well as economic and policy reasons, which leaves\r\nscientists as well as policymakers navigating critical questions in their field with little if any empirical grounding. On February 12-13, 2009, CAIDA hosted the Workshop on Active Internet Measurements (AIMS) as part of our series of Internet Statistics and Metrics Analysis (ISMA) workshops which provide a venue for researchers, operators, and policymakers to exchange ideas and perspectives. The two-day workshop included presentations, discussion after each presentation, and breakout sessions focused on how to increase potential and mitigate limitations of active measurements in the wide area Internet. We identified relevant stakeholders who may support and/or oppose measurement, and explored how collaborative solutions might maximize the benefit of research at minimal cost. This report describes the findings of the workshop, outlines open research problems identified by participants, and concludes with recommendations that can benefit both Internet science and communications policy.\r\n\r\nSlides from workshop presentations are linked from the [ISMA 2009 Workshop on Active Internet Measurements](https://www.caida.org/workshops/isma/0902/) page.\r\n",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper10",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:katz-bassett_ethan",
+            "organization": [
+                "University of Washington"
+            ]
+        },
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "BBN",
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:cox_beverly",
+            "organization": [
+                "Laboratory for Telecommunications Sciences"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:182",
+            "label": "HTML",
+            "to": "aims_report.xml"
+        },
+        {
+            "from": "PubDBlinkId:183",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/aims_report/aims_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1406",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/isma/0902/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "39",
+        "number": "5",
+        "pages": "32-36",
+        "linkedObjects": ""
+    }
+}

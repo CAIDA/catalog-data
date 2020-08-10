@@ -1,0 +1,20 @@
+{
+    "id": "2010_internet_is_flat",
+    "name": "The Internet is Flat: Modeling the Transition from a Transit Hierarchy to a Peering Mesh",
+    "tags": [
+        "routing",
+        "topology",
+        "economics"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+            "date": "2010.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/internet_is_flat/internet_is_flat.pptx",
+        "https://www.caida.org/publications/papers/2010/internet_is_flat"
+    ]
+}

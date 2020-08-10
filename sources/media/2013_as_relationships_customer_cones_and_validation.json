@@ -1,0 +1,20 @@
+{
+    "id": "2013_as_relationships_imc",
+    "name": "AS Relationships, Customer Cones, and Validation ",
+    "tags": [
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2013.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/as_relationships_imc/as_relationships_imc.pdf",
+        "https://www.caida.org/publications/papers/2013/asrank"
+    ]
+}

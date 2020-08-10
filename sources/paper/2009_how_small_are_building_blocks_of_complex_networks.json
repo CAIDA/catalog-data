@@ -1,0 +1,72 @@
+{
+    "id": "2009_small_blocks_complex_nets",
+    "name": "How Small Are Building Blocks of Complex Networks",
+    "datePublished": "2009.9",
+    "description": "Network motifs are small building blocks of complex networks, such as gene regulatory networks. The frequent appearance of a motif may be an indication of some network-specific utility for that motif, such as speeding up the response times of gene circuits. However, the precise nature of the connection between motifs and the global structure and function of networks remains unclear. Here we show that the global structure of some real networks is statistically determined by the distributions of local motifs of size at most 3, once we augment motifs to include node degree information. That is, remarkably, the global properties of these networks are fixed by the probability of the presence of links between node triples, once this probability accounts for the degree of the individual nodes. We consider a social web of trust, protein interactions, scientific collaborations, air transportation, the Internet, and a power grid. In all cases except the power grid, random networks that maintain the degree-enriched connectivity profiles for node triples in the original network reproduce all its local and global properties. This finding provides an alternative statistical explanation for motif significance. It also impacts research on network topology modeling and generation. Such models and generators are guaranteed to reproduce essential local and global network properties as soon as they reproduce their 3-node connectivity statistics. ",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper13",
+    "venue": "arxiv_physicssocph09081143",
+    "authors": [
+        {
+            "person": "person:jamakovic_almerima",
+            "organization": [
+                "TNO Information and Communication Technology,Netherlands Organisation for Applied Scientific Research"
+            ]
+        },
+        {
+            "person": "person:mahadevan_priya",
+            "organization": [
+                "HP Labs"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:786",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/0908.1143"
+        },
+        {
+            "from": "PubDBlinkId:304",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/small_blocks_complex_nets/small_blocks_complex_nets.pdf"
+        },
+        {
+            "from": "PubDBlinkId:305",
+            "label": "Supplemental text on dK-series and dK annnotations",
+            "to": "https://www.caida.org/research/topology/dk/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "arXiv physics.soc-ph/0908.1143",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

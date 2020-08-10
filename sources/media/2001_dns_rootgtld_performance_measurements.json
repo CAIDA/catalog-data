@@ -1,0 +1,19 @@
+{
+    "id": "2001_rssac-0112",
+    "name": "DNS Root/gTLD Performance Measurements",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "internet_engineering_task_force_ietf",
+            "date": "2001.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/rssac-0112/rssac-200112.ps.gz",
+        "https://www.caida.org/publications/presentations/2001/rssac-0112/rssac-200112.pdf",
+        "https://www.caida.org/publications/papers/2001/DNSPerfMeas"
+    ]
+}

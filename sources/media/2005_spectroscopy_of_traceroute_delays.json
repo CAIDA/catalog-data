@@ -1,0 +1,19 @@
+{
+    "id": "2005_pam2005_spectroscopy",
+    "name": "Spectroscopy of Traceroute Delays",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/pam2005_spectroscopy/pam2005_spectroscopy.pdf",
+        "https://www.caida.org/publications/papers/2005/pam-spectroscopy"
+    ]
+}

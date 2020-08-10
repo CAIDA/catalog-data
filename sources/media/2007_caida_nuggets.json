@@ -1,0 +1,22 @@
+{
+    "id": "2007_nuggets2007-09",
+    "name": "caida nuggets",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "national_institute_of_standards_and_technology_nist",
+            "date": "2007.9"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ibmcambridge",
+            "date": "2007.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/nuggets2007-09/nuggets2007-09.pdf"
+    ]
+}

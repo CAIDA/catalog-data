@@ -1,0 +1,57 @@
+{
+    "id": "1996_vgtm",
+    "name": "Visualizing the global topology of the MBone",
+    "datePublished": "1996.10",
+    "description": "We present a case study of visualizing the global topology of \r\nthe Internet MBone. The MBone is the Internet's multicast backbone. Multicast is \r\nthe most efficient way of distributing data from one sender to multiple \r\nreceivers with minimal packet duplication. Developed and initially deployed by \r\nresearchers within the Internet community, the MBone has been extremely popular \r\nfor efficient transmission across the Internet of real-time video and audio \r\nstreams such as conferences, meetings, congressional sessions, and NASA shuttle \r\nlaunches. The MBone, like the Internet itself, grew exponentially with no \r\ncentral authority. The resulting suboptimal topology is of growing concern to \r\nnetwork providers and the multicast research community. \r\n\r\nWe create a geographic representation of the tunnel structure as arcs on a \r\nglobe by resolving the latitude and longitude of MBone routers. The interactive \r\n3D maps permit an immediate understanding of the global structure unavailable \r\nfrom the data in its original form as lines of text with only hostnames and IP \r\naddresses. Data visualization techniques such as grouping and thresholding allow \r\nfurther analysis of specific aspects of the MBone topology. We distribute the \r\ninteractive 3D maps through the World-Wide Web using the VRML file format, thus \r\nallowing network maintainers throughout the world to analyze the structure more \r\neffectively than would be possible with still pictures or pre-made videos. \r\n",
+    "tags": [
+        "active data analysis",
+        "topology",
+        "visualization"
+    ],
+    "pubdb_id": "paper160",
+    "venue": "ieee_symposium_on_information_visualization",
+    "authors": [
+        {
+            "person": "person:munzner_tamara",
+            "organization": [
+                "Stanford University"
+            ]
+        },
+        {
+            "person": "person:hoffman_eric",
+            "organization": [
+                "Ipsilon"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fenner_bill",
+            "organization": [
+                "Xerox PARC"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:420",
+            "label": "HTML",
+            "to": "mbone/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Symposium on Information Visualization",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "85-92, 129",
+        "linkedObjects": ""
+    }
+}

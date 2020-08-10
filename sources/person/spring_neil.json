@@ -1,5 +1,4 @@
 {
-    "id": "spring_neil",
-    "nameFirst": "Neil",
-    "nameLast": "Spring"
+    "person": "person:spring_neil",
+    "organization": []
 }

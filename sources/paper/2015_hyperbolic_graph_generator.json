@@ -1,0 +1,57 @@
+{
+    "id": "2015_hyperbolic_graph_generator",
+    "name": "Hyperbolic graph generator",
+    "datePublished": "2015.6",
+    "description": "Networks representing many complex systems in nature and society share some common structural properties like heterogeneous degree distributions and strong clustering. Recent research on network geometry has shown that those real networks can be adequately modeled as random geometric graphs in hyperbolic spaces. In this paper, we present a computer program to generate such graphs. Besides realworld-like networks, the program can generate random graphs from other well-known graph ensembles, such as the soft configuration model, random geometric graphs on a circle, or Erd\u0151s\u2013R\u00e9nyi random graphs. The simulations show a good match between the expected values of different network structural properties and the corresponding empirical values measured in generated graphs, confirming the accurate behavior of the program.",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper586",
+    "venue": "computer_physics_communications",
+    "authors": [
+        {
+            "person": "person:aldecoa_rodrigo",
+            "organization": [
+                "Northeastern University"
+            ]
+        },
+        {
+            "person": "person:orsini_chiara",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Northeastern University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1623",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1016/j.cpc.2015.05.028"
+        },
+        {
+            "from": "PubDBlinkId:1622",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/hyperbolic_graph_generator/hyperbolic_graph_generator.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Computer Physics Communications",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

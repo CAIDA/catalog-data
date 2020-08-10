@@ -1,0 +1,48 @@
+{
+    "id": "2011_underneath_the_hood",
+    "name": "Underneath the hood: ownership vs. stewardship of the internet",
+    "datePublished": "2011.9",
+    "description": "I recently published this essay on CircleID on my thoughts on ICANN's recent decision to launch .XXX and the larger new gTLD program this year. Among other observations, I describe how .XXX marks a historical inflection point, where ICANN's board formally abandoned any responsibility to present an understanding of the ramifications of probable negative externalities (\"harms\") in setting its policies. That ICANN chose to relinquish this responsibility puts the U.S. government in the awkward position of trying to tighten the few inadequate controls that remain over ICANN, and leaves individual and responsible corporate citizens in the unenviable yet familiar position of bracing for the consequences. ",
+    "tags": [
+        "dns",
+        "policy"
+    ],
+    "pubdb_id": "paper501",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:801",
+            "label": "CCR Online",
+            "to": "http://www.sigcomm.org/sites/default/files/ccr/papers/2011/October/2043165-2043173.pdf"
+        },
+        {
+            "from": "PubDBlinkId:775",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2043165.2043173"
+        },
+        {
+            "from": "PubDBlinkId:776",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/underneath_the_hood/underneath_the_hood.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "41",
+        "number": "5",
+        "pages": "46-47",
+        "linkedObjects": ""
+    }
+}

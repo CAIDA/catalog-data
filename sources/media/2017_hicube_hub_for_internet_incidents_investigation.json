@@ -1,0 +1,20 @@
+{
+    "id": "2017_hi_cube_hub",
+    "name": "HI-Cube - Hub for Internet Incidents Investigation",
+    "tags": [
+        "security",
+        "active data analysis",
+        "data",
+        "data sharing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "dhs_impact_pi_meeting",
+            "date": "2017.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/hi_cube_hub/hi_cube_hub.pdf"
+    ]
+}

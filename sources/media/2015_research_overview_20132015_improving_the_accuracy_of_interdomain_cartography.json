@@ -1,0 +1,20 @@
+{
+    "id": "2015_improving_accuracy_inter_domain_cartography_dhs",
+    "name": "Research Overview 2013-2015 Improving the accuracy of inter-domain cartography ",
+    "tags": [
+        "measurement methodology",
+        "overview",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "dhs_site_visit_caida",
+            "date": "2015.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/improving_accuracy_inter_domain_cartography_dhs/improving_accuracy_inter_domain_cartography_dhs.pdf"
+    ]
+}

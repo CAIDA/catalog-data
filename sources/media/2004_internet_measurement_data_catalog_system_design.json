@@ -1,0 +1,19 @@
+{
+    "id": "2004_datcat_design_imc",
+    "name": "Internet Measurement Data Catalog System Design",
+    "tags": [
+        "data",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2004.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/datcat_design_imc/datcat_design_imc.pdf",
+        "https://www.caida.org/publications/papers/2005/ccr_imdc"
+    ]
+}

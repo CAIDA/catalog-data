@@ -1,0 +1,86 @@
+{
+    "id": "2019_qflow",
+    "name": "QFlow: A Reinforcement Learning Approach to High QoE Video Streaming over Wireless Networks",
+    "datePublished": "2019.7",
+    "description": "Wireless Internet access has brought legions of heterogeneous applications all sharing the same resources. However, current wireless edge networks that cater to worst or average case performance lack the agility to best serve these diverse sessions. Simultaneously, software reconfigurable infrastructure has become increasingly mainstream to the point that dynamic per packet and per flow decisions are possible at multiple layers of the communications stack. Exploiting such reconfigurability requires the design of a system that can enable a configuration, measure the impact on the application performance (Quality of Experience), and adaptively select a new configuration. Effectively, this feedback loop is a Markov Decision Process whose parameters are unknown. The goal of this work is to design, develop and demonstrate QFlow that instantiates this feedback loop as an application of reinforcement learning (RL). Our context is that of reconfigurable (priority) queueing, and we use the popular application of video streaming as our use case. We develop both model-free and model-based RL approaches that are tailored to the problem of determining which clients should be assigned to which queue at each decision period. Through experimental validation, we show how the RL-based control policies on QFlow are able to schedule the right clients for prioritization in a high-load scenario to outperform the status quo, as well as the best known solutions with over 25% improvement in QoE, and a perfect QoE score of 5 over 85% of the time.",
+    "tags": [
+        "measurement methodology",
+        "QoE",
+        "mobile"
+    ],
+    "pubdb_id": "paper674",
+    "venue": "acm_international_symposium_on_mobile_ad_hoc_networking_and_computing_mobihoc",
+    "authors": [
+        {
+            "person": "person:bhattacharyya_rajarshi",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:bura_archana",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:rengarajan_desik",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:rumuly_mason",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:shakkottai_srinivas",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:kalathil_dileep",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2119",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3323679.3326523"
+        },
+        {
+            "from": "PubDBlinkId:2118",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/qflow/qflow.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM International Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

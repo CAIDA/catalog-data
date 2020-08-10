@@ -1,0 +1,18 @@
+{
+    "id": "2008_wide_castro-ditl_comparison",
+    "name": "DNS: comparison of 2006 and 2007 snapshots",
+    "tags": [
+        "dns",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Castro, Sebastian",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/workshops/wide/0801/slides/castro-ditl_comparison.pdf"
+    ]
+}

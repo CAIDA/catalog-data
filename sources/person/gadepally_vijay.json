@@ -1,5 +1,6 @@
 {
-    "id": "gadepally_vijay",
-    "nameFirst": "Vijay",
-    "nameLast": "Gadepally"
+    "person": "person:gadepally_vijay",
+    "organization": [
+        "Massachusetts Institute of Technology (MIT)"
+    ]
 }

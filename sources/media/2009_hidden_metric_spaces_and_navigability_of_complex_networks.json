@@ -1,0 +1,18 @@
+{
+    "id": "2009_find_hidden_metric_spaces",
+    "name": "Hidden Metric Spaces and Navigability of Complex Networks",
+    "tags": [
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "nets_find",
+            "date": "2009.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/find_hidden_metric_spaces/find_hidden_metric_spaces.pdf",
+        "https://www.caida.org/publications/papers/2008/self_similarity"
+    ]
+}

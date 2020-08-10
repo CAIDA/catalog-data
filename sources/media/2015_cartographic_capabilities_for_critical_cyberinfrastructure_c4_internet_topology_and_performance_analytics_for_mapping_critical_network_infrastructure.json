@@ -1,0 +1,23 @@
+{
+    "id": "2015_cartographic_capabilities_dhs",
+    "name": "Cartographic Capabilities for Critical Cyberinfrastructure ('C4'): Internet topology and performance analytics for mapping critical network infrastructure",
+    "tags": [
+        "active data analysis",
+        "data",
+        "economics",
+        "measurement methodology",
+        "overview",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_reverse_site_visit_caida",
+            "date": "2015.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/cartographic_capabilities_dhs/cartographic_capabilities_dhs.pdf"
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "id": "1993_cei",
+    "name": "CIDR and the evolution of the Internet",
+    "datePublished": "1993.5",
+    "description": "The tremendous growth of the Internet has resulted in several efforts\naddressing the need to be able to address and route the global public\nInternet. Many of these efforts call for large changes in the deployed\nInternet infrastructure. We believe a prudent course of action includes\nextending the usable life of IPv4 while evaluating the use of these new\ntechnologies. This requires incremental changes in the IPv4 routing\ntechnology base, but more importantly it will require additional\ncoordination and management among the Internet service providers. We\nalso believe that extending the life of IPv4 includes getting higher\nutilization of the IPv4 address space. Several strategies, mostly\nadministrative in nature, are proposed to conserve the use of IP\naddress space.\n\n",
+    "tags": [
+        "policy",
+        "routing"
+    ],
+    "pubdb_id": "paper177",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:ford_peter",
+            "organization": [
+                "Los Alamos National Laboratory"
+            ]
+        },
+        {
+            "person": "person:rekhter_yakov",
+            "organization": [
+                "Watson Research Center, IBM Corp."
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:545",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/cei/inet93.cidr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "2016_remote_peering_jedi_ripe",
+    "name": "The Remote Peering Jedi",
+    "tags": [
+        "software/tools",
+        "topology",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "ripe_meeting",
+            "date": "2016.10"
+        },
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "workshop_on_internet_economics_wie",
+            "date": "2016.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/remote_peering_jedi_ripe/remote_peering_jedi_ripe.pdf",
+        "https://ripe73.ripe.net/archives/video/1455",
+        "https://www.youtube.com/watch?v=Yawg2aRrrj8"
+    ]
+}

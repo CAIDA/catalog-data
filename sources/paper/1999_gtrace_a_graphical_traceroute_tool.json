@@ -1,0 +1,50 @@
+{
+    "id": "1999_GTrace",
+    "name": "GTrace - A Graphical Traceroute Tool",
+    "datePublished": "1999.11",
+    "description": "\r\nTraceroute, originally\r\nwritten by Van Jacobson in 1988, has become a\r\nclassic tool for determining the routes that\r\npackets take from a source host to a destination\r\nhost. It does not provide any information\r\nregarding the physical location of each node\r\nalong the route, which makes it difficult to\r\neffectively identify geographically circuitous\r\nunicast routing. Indeed, there are examples of\r\npaths between hosts just a few miles apart that\r\ncross the entire United States and back,\r\nphenomena not immediately evident from the\r\ntextual output of traceroute. While such path\r\ninformation may not be of much interest to many\r\nend users, it can provide valuable insight to\r\nsystem administrators, network engineers,\r\noperators and analysts. We present a tool that\r\ndepicts geographically the IP path information\r\nthat traceroute provides, drawing the nodes on a\r\nworld map according to their latitude/longitude\r\ncoordinates.\r\n\r\n",
+    "tags": [
+        "software/tools"
+    ],
+    "pubdb_id": "paper142",
+    "venue": "usenix_lisa",
+    "authors": [
+        {
+            "person": "person:periakaruppan_ram",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Colorado at Boulder"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Colorado at Boulder"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:93",
+            "label": "gzipped postscript",
+            "to": "GTrace.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:94",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1999/GTrace/GTrace.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Usenix LISA",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

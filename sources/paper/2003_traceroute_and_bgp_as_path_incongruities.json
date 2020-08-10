@@ -1,0 +1,55 @@
+{
+    "id": "2003_ASP",
+    "name": "Traceroute and BGP AS Path Incongruities",
+    "datePublished": "2003.3",
+    "description": "Researchers investigating topics such as performance, stability, and\ngrowth of the Internet often turn to BGP routing tables to obtain\nInternet topology. BGP routing tables provide a mapping from address\nprefixes to autonomous system (AS) paths. Our study, based on\nhundreds of thousands of traceroutes from three locations worldwide,\ncategorizes differences between AS paths obtained from BGP routing\ntables and AS paths derived from traceroute paths. We find much of\nthe disparity results from 'exchange points ASes' (which rarely appear\nin BGP paths) and by groups of 'ASes under the same ownership'. We\nintroduce a new AS relationship, 'common ownership', that reflects the\ncomplexities of real-world business relationships and practices. We\nconjecture that the observed difference in size between the cores of\nan AS graph derived from BGP and an AS graph derived from traceroute\nis due to the visibility of peering at exchange points in traceroute\npaths.\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper95",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:348",
+            "label": "gzipped postscript",
+            "to": "asp-incon.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:347",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/ASP/asp-incon.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

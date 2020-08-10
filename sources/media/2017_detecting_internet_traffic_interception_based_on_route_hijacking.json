@@ -1,0 +1,21 @@
+{
+    "id": "2017_detecting_internet_traffic_interception_route_techex",
+    "name": "Detecting Internet Traffic Interception based on Route Hijacking",
+    "tags": [
+        "routing",
+        "topology",
+        "software/tools",
+        "security",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "internet2_technology_exchange",
+            "date": "2017.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/detecting_internet_traffic_interception_route_techex/detecting_internet_traffic_interception_route_techex.pdf"
+    ]
+}

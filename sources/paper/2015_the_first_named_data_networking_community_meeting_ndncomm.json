@@ -1,0 +1,73 @@
+{
+    "id": "2015_first_ndncomm",
+    "name": "The First Named Data Networking Community Meeting (NDNcomm)",
+    "datePublished": "2015.4",
+    "description": "This report is a brief summary of the first NDN Community Meeting held at UCLA in Los Angeles, California on September 4-5, 2014. The meeting provided a platform for the attendees from 39 institutions across seven countries to exchange their recent NDN research and development results, to debate existing and proposed\r\nfunctionality in security support, and to provide feedback into the NDN architecture design evolution.",
+    "tags": [
+        "workshop report",
+        "overview",
+        "topology"
+    ],
+    "pubdb_id": "paper573",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polterock_josh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:afanasyev_alexander",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:burke_jeffrey",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        },
+        {
+            "person": "person:zhang_lixia",
+            "organization": [
+                "University of California, Los Angeles (UCLA)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2144",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2766330.2766336"
+        },
+        {
+            "from": "PubDBlinkId:1536",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/first_ndncomm/first_ndncomm.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1663",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/ndn/1409/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "45",
+        "number": "1",
+        "pages": "32-37",
+        "linkedObjects": ""
+    }
+}

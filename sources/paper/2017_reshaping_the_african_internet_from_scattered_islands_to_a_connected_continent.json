@@ -1,0 +1,64 @@
+{
+    "id": "2017_reshaping_african_internet",
+    "name": "Reshaping the African Internet: From Scattered Islands to a Connected Continent",
+    "datePublished": "2017.11",
+    "description": "There is an increasing awareness amongst developing regions on the importance of localizing Internet traffic in the quest for fast, affordable, and available Internet access. In this paper, we focus on Africa, where 37 IXPs are currently interconnecting local ISPs, but mostly at the country level. An option to enrich connectivity on the continent and incentivize content providers to establish presence in the region is to interconnect ISPs present at isolated IXPs by creating a distributed IXP layout spanning the continent. The goal of this paper is to investigate whether such IXP interconnection would be possible, and if successful, to estimate the best-case benefits that could be realized in terms of traffic localization and performance. Our hope is that quantitatively demonstrating the benefits will provide incentives for ISPs to intensify their peering relationships in the region. However, it is challenging to estimate this best-case scenario, due to numerous economic, political, and geographical factors influencing the region. Towards this end, we begin with a thorough analysis of the environment in Africa. We then investigate a naive approach to IXP interconnection, which shows that a theoretically optimal solution would be infeasible in practice due to the prevailing socio-economic conditions in the region. We therefore provide an innovative, realistic four-step interconnection scheme to achieve the distributed IXP layout that considers and parameterizes external socio-economic factors using publicly available datasets. We demonstrate that our constrained solution doubles the percentage of continental intra-African paths, reduces their lengths, and drastically decreases the median of their RTTs as well as RTTs to ASes hosting the top 10 global and top 10 regional Alexa websites. Our approach highlights how, given real-world constraints, a solution requires careful considerations in order to be practically realizable.",
+    "tags": [
+        "economics",
+        "passive data analysis",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper640",
+    "venue": "elsevier_computer_communications_journal",
+    "authors": [
+        {
+            "person": "person:fanou_rod\u00e9rick",
+            "organization": [
+                "IMDEA Networks Institute",
+                "University Carlos III of Madrid"
+            ]
+        },
+        {
+            "person": "person:valera_francisco",
+            "organization": [
+                "University Carlos III of Madrid"
+            ]
+        },
+        {
+            "person": "person:francois_pierre",
+            "organization": [
+                "Cisco Systems, Inc, Trento, Italy"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2000",
+            "label": "DOI",
+            "to": "https://doi.org/10.1016/j.comcom.2017.09.006"
+        },
+        {
+            "from": "PubDBlinkId:1928",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/reshaping_african_internet/reshaping_african_internet.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Elsevier Computer Communications Journal",
+        "volume": "113",
+        "number": "",
+        "pages": "25-42",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2019_challenges_building_accurate_web_speed_aims",
+    "name": "Challenges of building accurate web speed tests for high-speed access links",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Mok, Ricky",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2019.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/challenges_building_accurate_web_speed_aims/challenges_building_accurate_web_speed_aims.pdf"
+    ]
+}

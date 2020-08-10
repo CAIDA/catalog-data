@@ -1,0 +1,55 @@
+{
+    "id": "2000_DSOM-00",
+    "name": "A scalable architecture for monitoring and visualizing multicast statistics",
+    "datePublished": "2000.12",
+    "description": "\n\nAn understanding of certain network functions is critical for suc-\ncessful network management. Managers must have insight into net-\nwork topology, protocol performance and fault detection/isolation.\nThe ability to obtain such insight iseven more critical when try-\ning to support evolving technologies like multicast. With these\ntechnologies, the pace of change is high, modifications to routing\nmechanisms are frequent, and faults are common. In this paper we\nintroduce Mantra, a tool we have developed to monitor multicast.\nMantra collects, analyzes, and visualizes network-layer (routing and\ntopology) data about the global multicast infrastructure. The two\nmost important functions of Mantra are: (1) monitoring multicast\nnetworks on a global scale; and (2) presenting results in the form\nof intuitive visualizations. To achieve accurate monitoring, Mantra\ncollects data from several topologically and geographically diverse\nnetworks. For the purpose of presentation, Mantra uses several in-\nteractive visualization mechanisms to present statistics, topology\nmaps and geographic properties. Another noteworthy feature of\nMantra is its exible and scalable architecture. This architecture\nhelps keep our monitoring erts current with the fast pace of mul-\nticast developments. It also enables us to expand Mantra's moni-\ntoring scope to more networks and larger data sets.\n\n",
+    "tags": [
+        "visualization",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper134",
+    "venue": "distributed_systems_operations_and_management",
+    "authors": [
+        {
+            "person": "person:rajvaidya_prashant",
+            "organization": [
+                "Department of Computer Science, University of California, Santa Barbara"
+            ]
+        },
+        {
+            "person": "person:almeroth_kevin",
+            "organization": [
+                "Department of Computer Science, University of California, Santa Barbara"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:89",
+            "label": "gzipped postscript",
+            "to": "DSOM-00.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:90",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2000/DSOM-00/DSOM-00.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Distributed Systems: Operations and Management",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

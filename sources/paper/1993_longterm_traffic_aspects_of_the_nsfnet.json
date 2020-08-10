@@ -1,0 +1,49 @@
+{
+    "id": "1993_lta",
+    "name": "Long-term traffic aspects of the NSFNET",
+    "datePublished": "1993.5",
+    "description": "We present the architecture for data collection for the T3 NSFNET backbone service, and difficulties with using the collected statistics for long-term network forecasting of certain traffic aspects. We describe\r\nrelevant aspects of the T3 backbone architecture, describe the instrumentation for the statistics collection process, and how it differs from that on the T1 backbone. We then present long-term NSFNET data to\r\nelucidate long term trends in both the reachability of Internet components via the NSFNET as well as the growing cross-section of traffic. We focus on the difficulties of forecasting and planning for these two\r\ntraffic aspects in an infrastructure whose protocol architecture and instrumentation for data collection was not designed to support such objectives.\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper180",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:103",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/lta/inet93.NSFNETtraffic.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

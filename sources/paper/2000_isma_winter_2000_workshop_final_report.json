@@ -1,0 +1,39 @@
+{
+    "id": "2000_isma0012",
+    "name": "ISMA Winter 2000 Workshop - Final Report",
+    "datePublished": "2000.12",
+    "description": "Although the number of routed prefixes and autonomous systems (ASes) grows exponentially, our understanding of global inter-domain Internet routing fails to keep pace. To improve the routing system, we need to understand better how it works now, starting with calibrating various methods used to analyze routing dynamics today. The workshop agenda first covered public sources of global routing data and simple growth curves of routes, address space, and AS number utilization. We then focused on uses of this data for routing modeling and analysis, including applications to traffic engineering. We had a session on analysis of massive topology data sets, and on tools for simulating very large (million-node) networks. The final session was a special interlude on techniques for bandwidth estimation. In this report we'll briefly capture the main points from each speaker, and then summarize highlights and results from the workshop perceived by the participants.",
+    "tags": [
+        "routing",
+        "topology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper128",
+    "venue": "internet_statistics_and_metrics_analysis_isma",
+    "authors": [
+        {
+            "person": "person:caida_",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:86",
+            "label": "HTML",
+            "to": "isma0012.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Internet Statistics and Metrics Analysis (ISMA)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

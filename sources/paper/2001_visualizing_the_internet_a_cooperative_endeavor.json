@@ -1,0 +1,37 @@
+{
+    "id": "2001_visualizing_internet_cooperative_endeavor",
+    "name": "Visualizing the Internet: A Co-operative Endeavor",
+    "datePublished": "2001.4",
+    "description": "Internet usage is increasing as access to the Net grows critical for engineering, research, and all sorts of collaborative activities. It is difficult to imagine how the dynamically changing topology or workload of the Internet infrastructure looks at any particular moment. As yet, we understand little about the impact that changes in traffic, topology, protocols, and business practices have on this new virtual frontier.",
+    "tags": [
+        "overview"
+    ],
+    "pubdb_id": "paper651",
+    "venue": "journal_of_computer_resource_management",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1986",
+            "label": "HTML",
+            "to": "paper.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Journal of Computer Resource Management",
+        "volume": "1",
+        "number": "102",
+        "pages": "17-18",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "id": "1999_isma9901",
+    "name": "ISMA passive measurement data and analysis, workshop report",
+    "datePublished": "1999.1",
+    "description": "On January 14-15, 1999 CAIDA hosted an Internet Statistics and Metrics\nAnalysis (ISMA) workshop focused on passive monitoring and analysis of\nInternet traffic data. The meeting was intended to engage researchers\nand practitioners experienced in this field in discussions aimed at:\n \n* calibrating what each group is doing in this arena\n* identifying the how these efforts fit within the context of 'the field'\n* clarifying critical priorities and next steps\n\nFifty-four (54) individuals participated, representing Internet service\nproviders (ISPs), the research and education (R&E) community, and\nvendors. Each participant completed survey questions summarizing their\ninterests and current activities in the field. Their responses are\navailable at: https://www.caida.org/workshops/isma/9901/invitees.xml\n\nThe ISMA workshop was held at the San Diego Supercomputer Center (SDSC)\non the campus of the University of California, San Diego (UCSD). The\nmeeting was sponsored by the Cooperative Association for Internet Data\nAnalysis (CAIDA).\n\nDemonstrations of several collection and analysis tools were conducted:\n\n* cflowd by Daniel McRobb,\n* Coral by Hans-Werner Braun,\n* CoralReef by David Moore,\n* DAG by Ian Graham, Stephen Donnelly and Jed Martens,\n* NetraMet by Nevil Brownlee.\n\nTutorials were also conducted immediately following the workshop, for cflowd, CoralReef, and NetraMet.\n\n",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper135",
+    "venue": "internet_statistics_and_metrics_analysis_isma",
+    "authors": [
+        {
+            "person": "person:caida_",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:472",
+            "label": "HTML",
+            "to": "isma9901.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Internet Statistics and Metrics Analysis (ISMA)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

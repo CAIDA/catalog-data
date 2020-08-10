@@ -1,0 +1,19 @@
+{
+    "id": "2010_geolocation_tools",
+    "name": "Geolocation Comparison: CAIDA's Geolocation Tools Comparison",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2010.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/geolocation_tools/geolocation_tools.pdf"
+    ]
+}

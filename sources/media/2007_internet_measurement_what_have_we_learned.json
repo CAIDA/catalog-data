@@ -1,0 +1,19 @@
+{
+    "id": "2007_measurement_learn",
+    "name": "Internet measurement: what have we learned?",
+    "tags": [
+        "measurement methodology",
+        "data",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "university_of_waikato_department_of_computer_science_seminars",
+            "date": "2007.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/measurement_learn/measurement_learn.pdf"
+    ]
+}

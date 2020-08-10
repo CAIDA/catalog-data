@@ -1,0 +1,44 @@
+{
+    "id": "1994_tsm",
+    "name": "A Time-Series Model of Long-Term Traffic on the NSFNET Backbone",
+    "datePublished": "1994.5",
+    "description": "\r\nWe used time series analysis to create detailed forecasts of future NSFNET backbone traffic. The resulting ARIMA model made quite accurate forecasts of\r\ntraffic levels up to a year in advance. It appears that the model can make reasonable predictions for two or more years into the future, suggesting that ARIMA\r\nmodeling has great promise as a tool for long-range NSFNET forecasting and planning. \r\n\r\n",
+    "tags": [
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper171",
+    "venue": "ieee_conference_on_communications_icc",
+    "authors": [
+        {
+            "person": "person:groschwitz_nancy",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:99",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/tsm/lttsm.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Communications (ICC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "1400-1404",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "id": "2012_topocompare-tr",
+    "name": "Internet Topology Data Comparison",
+    "datePublished": "2012.5",
+    "description": "Internet topology maps are an important tool for those who seek to describe, analyze, or model various aspects of the Internet\u201bs structure, behavior, and evolution. While different methods of measuring topology yield substantially different views of the Internet, many studies rely on only a single data source, sometimes outdated or incomplete, or mix fundamentally different data sources into a single topology. \r\n\r\nThese compromises may undermine the fidelity of derived models and integrity of analysis results. We report on the results of our systematic comparison of Internet topologies derived from different data sources and characterizing the Internet at three granularities relevant to research as well as operations of network infrastructure: IP address (interface), router, and Autonomous System (AS).",
+    "tags": [
+        "dns",
+        "topology"
+    ],
+    "pubdb_id": "paper516",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:811",
+            "label": "Original HTML",
+            "to": "/research/topology/topo_comparison/"
+        },
+        {
+            "from": "PubDBlinkId:810",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/topocompare-tr/topocompare-tr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

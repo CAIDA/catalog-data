@@ -1,0 +1,22 @@
+{
+    "id": "2008_arin_survey",
+    "name": "ARIN & CAIDA IPv6 Survey Results",
+    "tags": [
+        "active data analysis",
+        "data",
+        "internet id consumption",
+        "policy",
+        "ipv6"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "arin",
+            "date": "2008.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/arin_survey/arin_survey.pdf",
+        "https://www.caida.org/publications/presentations/2008/arin_survey/arin_survey_qs.pdf"
+    ]
+}

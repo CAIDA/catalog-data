@@ -1,0 +1,50 @@
+{
+    "id": "2011_tracking_ipv6_evolution",
+    "name": "Tracking IPv6 Evolution: Data We Have and Data We Need",
+    "datePublished": "2011.7",
+    "description": "Exhaustion of the Internet addressing authority's (IANA) available IPv4 address space, which occurred in February 2011, is finally exerting exogenous pressure on network operators to begin to deploy IPv6. There are two possible outcomes from this transition. IPv6 may be widely adopted and embraced, causing many existing methods to measure and monitor the Internet to be ineffective. A second possibility is that IPv6 languishes, transition mechanisms fail, or performance suffers. Either scenario requires data, measurement, and analysis to inform technical, business, and policy decisions. We survey available data that have allowed limited tracking of IPv6 deployment thus far, describe additional types of data that would support better tracking, and offer a perspective on the challenging future of IPv6 evolution.'' Note that the version of the paper hosted at CAIDA includes color figures, while the CCR version has the figures in black and white. ",
+    "tags": [
+        "measurement methodology",
+        "data",
+        "policy",
+        "ipv6"
+    ],
+    "pubdb_id": "paper481",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:762",
+            "label": "CCR Online",
+            "to": "http://ccr.sigcomm.org/online/?q=node/745"
+        },
+        {
+            "from": "PubDBlinkId:749",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/tracking_ipv6_evolution/tracking_ipv6_evolution.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1554",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2011/cans_tracking_ipv6_evolution/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "43",
+        "number": "3",
+        "pages": "43-48",
+        "linkedObjects": ""
+    }
+}

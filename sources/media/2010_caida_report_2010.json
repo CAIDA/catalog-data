@@ -1,0 +1,17 @@
+{
+    "id": "2010_caida_update",
+    "name": "CAIDA Report 2010",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "widecasfi",
+            "date": "2010.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/caida_update/caida_update.pdf"
+    ]
+}

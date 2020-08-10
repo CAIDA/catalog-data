@@ -1,0 +1,66 @@
+{
+    "id": "2001_Rssac2001a",
+    "name": "Macroscopic Internet Topology and Performance Measurements From the DNS Root Name Servers",
+    "datePublished": "2001.12",
+    "description": "We describe active measurements of topology and end-to-end latency characteristics between several of the DNS root servers and a subset of their clients using the skitter tool developed by CAIDA. We gather a sample of clients for each monitored DNS root server, combine these samples into a common target list and then actively probe these targets and analyze their\nconnectivity. \nWe identify the subsets of destinations that have large latency connections to all\ninstrumented root name servers and discuss their geographical make-up. Our goal is to build an\nanalytical framework for evaluating the optimality of root server placement and its impact on the\nefficiency of the DNS service. The skitter tool and the methodology we propose can also be used\nfor monitoring the end-to-end performance in large networks and for assessing the optimality of\nweb servers placement in general.\n'' The original publication of this paper was granted to USENIX. Copyright to this work is retained by the authors. Permission is granted for the noncommercial reproduction of the complete work for educational or research purposes.",
+    "tags": [
+        "dns",
+        "visualization"
+    ],
+    "pubdb_id": "paper111",
+    "venue": "usenix_lisa",
+    "authors": [
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:294",
+            "label": "gzipped postscript",
+            "to": "rssac_lisa.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:292",
+            "label": "HTML",
+            "to": "rssac.html"
+        },
+        {
+            "from": "PubDBlinkId:293",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/Rssac2001a/rssac_lisa.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Usenix LISA",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

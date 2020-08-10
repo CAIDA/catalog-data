@@ -1,5 +1,6 @@
 {
-    "id": "giotsas_vasileios",
-    "nameFirst": "Vasileios",
-    "nameLast": "Giotsas"
+    "person": "person:giotsas_vasileios",
+    "organization": [
+        "University College London"
+    ]
 }

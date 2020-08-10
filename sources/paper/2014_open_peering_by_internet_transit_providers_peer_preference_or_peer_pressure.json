@@ -1,0 +1,57 @@
+{
+    "id": "2014_open_peering_transit_providers",
+    "name": "Open Peering by Internet Transit Providers: Peer Preference or Peer Pressure?",
+    "datePublished": "2014.4",
+    "description": "Peering agreements between Autonomous Systems affect not only the flow of interdomain traffic but also the economics of the entire Internet ecosystem. The conventional wisdom is that transit providers are selective in choosing their settlement-free peers because they prefer to offer revenue-generating transit service to others. Surprisingly, however, a large percentage of transit providers use an Open peering strategy. What causes this large-scale adoption of Open peering, especially among transit providers? More importantly, what is the impact of this peering trend on the economic performance of the population of transit providers? We approach these questions through game-theoretic modeling and agent-based simulations, capturing the dynamics of peering strategy adoption, inter-network formation and interdomain traffic flow. We explain why transit providers gravitate towards Open peering even though that move may be detrimental \r\nto their economic fitness. Finally, we examine the impact of an Open peering variant that requires some coordination among providers. ",
+    "tags": [
+        "policy",
+        "economics",
+        "topology",
+        "routing"
+    ],
+    "pubdb_id": "paper545",
+    "venue": "ieee_conference_on_computer_communications_infocom",
+    "authors": [
+        {
+            "person": "person:lodhi_aemen",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2159",
+            "label": "DOI",
+            "to": "https://doi.org/10.1109/INFOCOM.2014.6848203"
+        },
+        {
+            "from": "PubDBlinkId:1266",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/open_peering_transit_providers/open_peering_transit_providers.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Computer Communications (INFOCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

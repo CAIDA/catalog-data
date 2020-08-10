@@ -1,0 +1,18 @@
+{
+    "id": "2004_workload_collection_isma",
+    "name": "Workload Data Collection Efforts",
+    "tags": [
+        "data",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2004.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/workload_collection_isma/workload_collection_isma.pdf"
+    ]
+}

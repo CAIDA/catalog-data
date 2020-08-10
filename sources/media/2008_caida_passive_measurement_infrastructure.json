@@ -1,0 +1,23 @@
+{
+    "id": "2008_wide_emile_passive_measurement",
+    "name": "CAIDA Passive Measurement Infrastructure",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Aben, Emile",
+            "venue": "moment",
+            "date": "2008.9"
+        },
+        {
+            "presenter": "Author: Aben, Emile",
+            "venue": "caidawidecasfi_joint_measurement_workshop",
+            "date": "2008.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_emile_passive_measurement/wide_emile_passive_measurement.pdf"
+    ]
+}

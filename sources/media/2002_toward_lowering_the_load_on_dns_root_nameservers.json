@@ -1,0 +1,18 @@
+{
+    "id": "2002_nanog0210",
+    "name": "Toward Lowering the Load on DNS Root Nameservers",
+    "tags": [
+        "dns",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2002.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/nanog0210/duane.pdf"
+    ]
+}

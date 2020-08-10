@@ -1,0 +1,88 @@
+{
+    "id": "2016_new_approaches_old_challenges-tr",
+    "name": "New Approaches to Old Challenges with AS Traceroute",
+    "datePublished": "2016.11",
+    "description": "We review the methodological challenges in the state-of-the-art capabilities for real-time inference of paths that packets travel across the Internet, at the granularity of network service providers, i.e., autonomous system, or ASes. AS path inferences based on control-plane (BGP) data lead to inaccuracies, so researchers have attempted to use traceroute-based inferences to mitigate these inaccuracies, although without a formal framework for doing so. In this work, we improve the state-of-the-art technology for inferring AS paths traversed by traceroute probes in three ways: (i) we introduce a framework to systematically evaluate when different approaches lead to wrong inferences; (ii) we present a methodology that by combining previous and novel inference heuristics yields better accuracy; (iii) we implement in a software tool this methodology and two other methodologies for comparative evaluation. We describe the process we used to construct AS-level paths, the set of heuristics we use to evaluate them, and the tool in which we implemented these heuristics. A more comprehensive evaluation and refinement of these heuristics is future work; we report on the current state of one of the most daunting unresolved measurement challenges on the Internet.'' Contact authors or info@caida.org for a draft copy of this technical report.",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "software/tools",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper624",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:faggiani_adriano",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:orsini_chiara",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1844",
+            "label": "Related Tool",
+            "to": "https://www.caida.org/tools/utilities/astraceroute/"
+        },
+        {
+            "from": "PubDBlinkId:1843",
+            "label": "Request a copy by email",
+            "to": "mailto:info@caida.org"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

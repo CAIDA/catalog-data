@@ -1,0 +1,49 @@
+{
+    "id": "2009_navigating_ultrasmall",
+    "name": "Navigating ultrasmall worlds in ultrashort time",
+    "datePublished": "2009.2",
+    "description": "Random scale-free networks are ultrasmall worlds. The average length of the shortest paths in networks of size N scales as lnlnN. Here we show that these ultrasmall worlds can be navigated in ultrashort time. Greedy routing on scale-free networks embedded in metric spaces finds paths with the average length scaling also as lnlnN. Greedy routing uses only local information to navigate a network. Nevertheless, it finds asymptotically the shortest paths, a direct computation of which requires global topology knowledge. Our findings imply that the peculiar structure of complex networks ensures that the lack of global topological awareness has asymptotically no impact on the length of communication paths. These results have important consequences for communication systems such as the Internet, where maintaining knowledge of current topology is a major scalability bottleneck. \r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper17",
+    "venue": "physical_review_letters",
+    "authors": [
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:10",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevLett.102.058701"
+        },
+        {
+            "from": "PubDBlinkId:11",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/navigating_ultrasmall/navigating_ultrasmall.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review Letters",
+        "volume": "102",
+        "number": "058701",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

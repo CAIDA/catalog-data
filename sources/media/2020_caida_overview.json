@@ -1,0 +1,21 @@
+{
+    "id": "2020_caida_overview_iij",
+    "name": "CAIDA Overview",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_initiative_japan_iij",
+            "date": "2020.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/caida_overview_iij/caida_overview_iij.pdf"
+    ]
+}

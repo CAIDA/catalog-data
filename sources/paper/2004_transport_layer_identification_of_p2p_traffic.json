@@ -1,0 +1,56 @@
+{
+    "id": "2004_p2p-layerid",
+    "name": "Transport Layer Identification of P2P Traffic",
+    "datePublished": "2004.10",
+    "description": "Since the emergence of peer-to-peer (P2P) networking in the\r\nlate '90s, P2P applications have multiplied, evolved and established\r\nthemselves as the leading 'growth app' of Internet\r\ntraffic workload. In contrast to first-generation P2P networks\r\nwhich used well-defined port numbers, current P2P\r\napplications have the ability to disguise their existence through\r\nthe use of arbitrary ports. As a result, reliable estimates of\r\nP2P traffic require examination of packet payload, a methodological\r\nlandmine from legal, privacy, technical, logistic, and\r\nfiscal perspectives. Indeed, access to user payload is often\r\nrendered impossible by one of these factors, inhibiting trustworthy\r\nestimation of P2P traffic growth and dynamics. In\r\nthis paper, we develop a systematic methodology to identify\r\nP2P flows at the transport layer, i.e., based on connection\r\npatterns of P2P networks, and without relying on packet\r\npayload. We believe our approach is the first method for\r\ncharacterizing P2P traffic using only knowledge of network\r\ndynamics rather than any user payload. To evaluate our\r\nmethodology, we also develop a payload technique for P2P\r\ntraffic identification, by reverse engineering and analyzing\r\nthe nine most popular P2P protocols, and demonstrate its\r\nefficacy with the discovery of P2P protocols in our traces\r\nthat were previously unknown to us. Finally, our results\r\nindicate that P2P traffic continues to grow unabatedly, contrary\r\nto reports in the popular media.\r\n",
+    "tags": [
+        "passive data analysis",
+        "peer-to-peer"
+    ],
+    "pubdb_id": "paper70",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:karagiannis_thomas",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:faloutsos_michalis",
+            "organization": [
+                "University of California, Riverside (UCR)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:39",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/p2p-layerid/p2p-layerid.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "121-134",
+        "linkedObjects": ""
+    }
+}

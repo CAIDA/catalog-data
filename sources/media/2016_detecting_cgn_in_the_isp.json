@@ -1,0 +1,19 @@
+{
+    "id": "2016_detecting_cgn_isp_aims",
+    "name": "Detecting CGN in the ISP",
+    "tags": [
+        "topology",
+        "internet id consumption",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2016.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/detecting_cgn_isp_aims/detecting_cgn_isp_aims.pdf"
+    ]
+}

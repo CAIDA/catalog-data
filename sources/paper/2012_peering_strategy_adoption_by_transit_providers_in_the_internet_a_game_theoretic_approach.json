@@ -1,0 +1,60 @@
+{
+    "id": "2012_peering_strategy_adoption",
+    "name": "Peering Strategy Adoption by Transit Providers in the Internet: A Game Theoretic Approach",
+    "datePublished": "2012.9",
+    "description": "The Internet is composed of tens of thousands of Autonomous Systems (ASes)which interconnect with one another through customer provider (transit) and settlement-free peering links. Their interconnection objectives are a function of their business type e.g., transit providers, content providers, enterprise customers etc. In order to achieve these objectives the ASes adopt a set of criteria which are used to assess potential and existing settlement-free peering relationships. These relationships are bilateral in nature, i.e., for two ASes x and y to establish a peering relationship, they must satisfy each other\u201bs peering criteria. The set of criteria used by an AS for assessing potential peering relationships is referred to as its peering policy. We commonly observe three peering policies publicized by ASes in PeeringDB, an open portal where ASes voluntarily share information about their peering policies, \u2014 Restrictive, Selective and Open. These peering policies are explained in a later section.\r\n\r\nThe peering strategy adoption by ASes of different categories taken from a recent snapshot of PeeringDB showed that Open is the\r\ndominant peering strategy among all AS categories, with more than 60% of ASes in each category using Open peering. The fact that\r\n64% of NSPs (transit providers) use Open peering is especially surprising since transit providers prefer other ASes as their customers\r\nrather than peers. Why do transit providers tend to peer openly? \r\n\r\nIn our work we use an agent-based computational model, GENESIS, to study peering strategy adoption by transit providers. Our computational model incorporates most of the real world constraints e.g., geographic co-location, skewed distribution of traffic,\r\neconomies of scale, multiple transit prices per AS etc. We employed computational modeling as incorporation of all these constraints\r\nin an analytical model quickly renders the model intractable. In that work we find that peering decisions are interdependent and\r\nmyopic decisions and lack of coordination among ASes results in Open peering as an attractor among peering strategies for transit\r\nproviders. Interestingly, we observe that this adoption of Open peering results in loss of economic fitness for a majority of transit\r\nproviders. Further, large scale adoption of Open peering results in stable equilibria.\r\n\r\nIn this paper we use game theoretic analysis to gain further insight into peering strategy adoption by transit providers in the Internet. We employ a much simplified variant of GENESIS in our current work to keep the analytical approach tractable. Our analytical results corroborate our previous simulation based results. Our results show that when transit providers have complete information\r\nabout co-located providers they can optimize their economic fitness by adopting Selective peering strategy. Further, any uncertainty in\r\nthe system causes the providers to gravitate towards Open peering, a suboptimal equilibrium.",
+    "tags": [
+        "economics",
+        "topology"
+    ],
+    "pubdb_id": "paper556",
+    "venue": "acm_sigmetrics_performance_evaluation_review",
+    "authors": [
+        {
+            "person": "person:lodhi_aemen",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "School of Computer Science, Georgia Institute of Technology"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1363",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2381056.2381066"
+        },
+        {
+            "from": "PubDBlinkId:1362",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/peering_strategy_adoption/peering_strategy_adoption.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1549",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2012/analysis_peering_strategy_dances/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGMETRICS Performance Evaluation Review",
+        "volume": "40",
+        "number": "2",
+        "pages": "38-41",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2015_improving_as_level_topology_aims",
+    "name": "Improving CAIDA's AS Level Topology",
+    "tags": [
+        "overview",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/improving_as_level_topology_aims/improving_as_level_topology_aims.pdf"
+    ]
+}

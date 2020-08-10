@@ -1,0 +1,43 @@
+{
+    "id": "1993_nas",
+    "name": "Network analysis in support of Internet policy requirements",
+    "datePublished": "1993.5",
+    "description": "In this paper we describe the importance of network analysis in support of policy considerations and evaluate a number of examples. We propound and support our hypothesis that, in the face of today's critical era in the evolution of global information infrastructure, Internet policy considerations and network analysis must begin to interact in ways not previously recognized or implemented. ",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper174",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:100",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/nas/inet93.policy.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "id": "2015_network_geometry_inference",
+    "name": "Network geometry inference using common neighbors",
+    "datePublished": "2015.8",
+    "description": "We introduce and explore a method for inferring hidden geometric coordinates of nodes in complex networks based on the number of common neighbors between the nodes. We compare this approach to the HyperMap method, which is based only on the connections (and disconnections) between the nodes, i.e., on the links that the nodes have (or do not have). We find that for high degree nodes, the common-neighbors approach yields a more accurate inference than the link-based method, unless heuristic periodic adjustments (or \u201ccorrection steps\u201d) are used in the latter. The common-neighbors approach is computationally intensive, requiring O(t4) running time to map a network of t nodes, versus O(t3) in the link-based method. But we also develop a hybrid method with O(t3) running time, which combines the common-neighbors and link-based approaches, and we explore a heuristic that reduces its running time further to O(t2), without significant reduction in the mapping accuracy. We apply this method to the autonomous systems (ASs) Internet, and we reveal how soft communities of ASs evolve over time in the similarity space. We further demonstrate the method's predictive power by forecasting future links between ASs. Taken altogether, our results advance our understanding of how to efficiently and accurately map real networks to their latent geometric spaces, which is an important necessary step toward understanding the laws that govern the dynamics of nodes in these spaces, and the fine-grained dynamics of network connections.",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper610",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "Cyprus University of Technology"
+            ]
+        },
+        {
+            "person": "person:aldecoa_rodrigo",
+            "organization": [
+                "Northeastern University"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "Northeastern University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1773",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevE.92.022807"
+        },
+        {
+            "from": "PubDBlinkId:1772",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/network_geometry_inference/network_geometry_inference.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "92",
+        "number": "2",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

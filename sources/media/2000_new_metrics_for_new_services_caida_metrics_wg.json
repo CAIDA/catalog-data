@@ -1,0 +1,17 @@
+{
+    "id": "2000_iperf0002",
+    "name": "New Metrics for New Services: CAIDA Metrics WG",
+    "tags": [
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "xiwtiperf",
+            "date": "2000.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/iperf0002/index.htm"
+    ]
+}

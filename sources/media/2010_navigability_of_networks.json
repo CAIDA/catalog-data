@@ -1,0 +1,20 @@
+{
+    "id": "2010_cisebio_navigability_networks",
+    "name": "Navigability of Networks",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "nsf_workshop_on_shared_organizing_principles_in_the_computing_and_biological_sciences",
+            "date": "2010.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/cisebio_navigability_networks/cisebio_navigability_networks.ppt",
+        "https://www.caida.org/publications/papers/2009/navigability_complex_networks"
+    ]
+}

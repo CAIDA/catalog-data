@@ -1,0 +1,43 @@
+{
+    "id": "1997_rfc2186",
+    "name": "IETF RFC 2186: Internet Cache Protocol (ICP), version 2",
+    "datePublished": "1997.9",
+    "description": "This document describes version 2 of the Internet Cache Protocol\r\n(ICPv2) as currently implemented in two World-Wide Web proxy cache\r\npackages. ICP is a lightweight message format used for\r\ncommunicating among Web caches. ICP is used to exchange hints about\r\nthe existence of URLs in neighbor caches. Caches exchange ICP queries\r\nand replies to gather information to use in selecting the most\r\nappropriate location from which to retrieve an object.\r\n\r\nThis document describes only the format and fields of ICP messages. A\r\ncompanion document (RFC2187) describes the application of ICP to Web\r\ncaches. Several independent caching implementations now use ICP, and\r\nwe consider it important to codify the existing practical uses of ICP\r\nfor those trying to implement, deploy, and extend its use for their own\r\npurposes.\r\n\r\n",
+    "tags": [
+        "caching"
+    ],
+    "pubdb_id": "paper150",
+    "venue": "internet_engineering_task_force_ietf",
+    "authors": [
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:248",
+            "label": "HTML",
+            "to": "rfc2186.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "MISC",
+        "booktitle": "",
+        "institution": "Internet Engineering Task Force (IETF)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

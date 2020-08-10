@@ -1,0 +1,78 @@
+{
+    "id": "2005_tr-2005-02",
+    "name": "Lessons from Three Views of the Internet Topology: Technical Report",
+    "datePublished": "2005.6",
+    "description": "Network topology plays a vital role in understanding the performance of\nnetwork applications and protocols. Thus, recently there has been\ntremendous interest in generating realistic network topologies. Such work\nmust begin with an understanding of existing network topologies, which\ntoday typically consists of a relatively small number of data sources. In\nthis paper, we calculate an extensive set of important characteristics of\nInternet AS-level topologies extracted from the three data sources most\nfrequently used by the research community: traceroutes, BGP, and WHOIS.\nWe find that traceroute and BGP topologies are similar to one another but\ndiffer substantially from the WHOIS topology. We discuss the\ninterplay between the properties of the data sources that result from\nspecific data collection mechanisms and the resulting topology views. We\nfind that, among metrics widely considered, the joint degree\ndistribution appears to fundamentally characterize\nInternet AS-topologies: it narrowly defines values for other\nimportant metrics. We also introduce an evaluation criteria for the\naccuracy oftopology generators and verify previous observations that\ngenerators solely reproducing degree distributions cannot capture the\nfull spectrum of critical topological characteristics of any of the\nthree topologies. Finally, we release to the community the input\ntopology datasets, along with the scripts and output of our calculations.\nThis supplement should enable researchers to validate their models\nagainst real data and to make more informed selection of topology data\nsources for their specific needs.\n",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper57",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:mahadevan_priya",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:353",
+            "label": "Data Supplement",
+            "to": "/research/topology/as_topo_comparisons/"
+        },
+        {
+            "from": "PubDBlinkId:354",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/tr-2005-02/tr-2005-02.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

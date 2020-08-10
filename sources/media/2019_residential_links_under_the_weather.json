@@ -1,0 +1,23 @@
+{
+    "id": "2019_residential_links_under_weather_sigcomm",
+    "name": "Residential Links Under the Weather",
+    "tags": [
+        "routing",
+        "data",
+        "measurement methodology",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Padmanabhan, Ramakrishna",
+            "venue": "acm_sigcomm",
+            "date": "2019.8"
+        }
+    ],
+    "links": [
+        "https://conferences.sigcomm.org/sigcomm/2019/files/slides/paper_3_4.key",
+        "https://www.caida.org/publications/presentations/2019/residential_links_under_weather_sigcomm/residential_links_under_weather_sigcomm.pdf",
+        "https://www.caida.org/publications/papers/2019/residential_links_under_weather/",
+        "https://dl.acm.org/ft_gateway.cfm?id=3342084&ftid=2080728&dwn=1&CFID=153853516&CFTOKEN=83cd046e67f484a4-561F895A-CC29-7729-70CF6744AE201ECC"
+    ]
+}

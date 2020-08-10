@@ -1,0 +1,18 @@
+{
+    "id": "2011_dances_hms_bipartite",
+    "name": "Do Bipartite Networks Have Metric Structure?",
+    "tags": [
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kitsak, Maksim",
+            "venue": "different_angles_on_network_complexity_engineering_and_science_dances",
+            "date": "2011.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/dances_hms_bipartite/dances_hms_bipartite.pdf",
+        "https://www.caida.org/publications/papers/2011/hidden_variables_bipartite"
+    ]
+}

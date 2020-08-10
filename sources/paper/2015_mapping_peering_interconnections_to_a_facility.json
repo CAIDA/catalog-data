@@ -1,0 +1,81 @@
+{
+    "id": "2015_mapping_peering_interconnections",
+    "name": "Mapping Peering Interconnections to a Facility",
+    "datePublished": "2015.12",
+    "description": "Annotating Internet interconnections with robust physical coordinates at the level of a building facilitates network management including interdomain troubleshooting, but also has practical value for helping to locate points of attacks, congestion, or instability on the Internet. But, like most other aspects of Internet interconnection, its geophysical locus is generally not public; the facility used for a given link must be inferred to construct a macroscopic map of peering. We develop a methodology, called constrained facility search, to infer the physical interconnection facility where an interconnection occurs among all possible candidates. We rely on publicly available data about the presence of networks at different facilities, and execute traceroute measurements from more than 8,500 available measurement servers scattered around the world to identify the technical approach used to establish an interconnection. A key insight of our method is that inference of the technical approach for an interconnection sufficiently constrains the number of candidate facilities such that it is often possible to identify the specific facility where a given interconnection occurs. Validation via private communication with operators confirms the accuracy of our method, which outperforms heuristics based on naming schemes and IP geolocation. Our study also reveals the multiple roles that routers play at interconnection facilities; in many cases the same router implements both private interconnections and public peerings, in some cases via multiple Internet exchange points. Our study also sheds light on peering engineering strategies used by different types of networks around the globe.",
+    "tags": [
+        "topology",
+        "measurement methodology",
+        "routing",
+        "active data analysis",
+        "congestion"
+    ],
+    "pubdb_id": "paper598",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:smaragdakis_georgios",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1867",
+            "label": "Data Supplement",
+            "to": "supplemental/ip_facilities_public.txt"
+        },
+        {
+            "from": "PubDBlinkId:2136",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2716281.2836122"
+        },
+        {
+            "from": "PubDBlinkId:1648",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/mapping_peering_interconnections/mapping_peering_interconnections.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1685",
+            "label": "Related Presentation",
+            "to": "/publications/presentations/2015/mapping_peering_interconnections_conext/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

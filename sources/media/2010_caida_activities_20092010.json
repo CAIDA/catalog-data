@@ -1,0 +1,17 @@
+{
+    "id": "2010_quilt_caida_activities",
+    "name": "CAIDA Activities, 2009-2010",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fomenkov, Marina",
+            "venue": "the_quilt",
+            "date": "2010.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/quilt_caida_activities/quilt_caida_activities.pdf"
+    ]
+}

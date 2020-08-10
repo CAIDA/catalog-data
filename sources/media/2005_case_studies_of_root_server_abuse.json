@@ -1,0 +1,18 @@
+{
+    "id": "2005_root_server_abuse",
+    "name": "Case Studies of Root Server Abuse",
+    "tags": [
+        "security",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "wide",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/root_server_abuse/root_server_abuse.pdf"
+    ]
+}

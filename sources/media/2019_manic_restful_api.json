@@ -1,0 +1,19 @@
+{
+    "id": "2019_manic_restful_api_aims",
+    "name": "MANIC Restful API",
+    "tags": [
+        "congestion",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fanou, Rod\u00e9rick",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2019.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/manic_restful_api_aims/manic_restful_api_aims.pdf",
+        "https://www.caida.org/projects/manic/"
+    ]
+}

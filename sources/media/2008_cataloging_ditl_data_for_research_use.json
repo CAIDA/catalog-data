@@ -1,0 +1,19 @@
+{
+    "id": "2008_wide_emile-cataloging_ditl_data",
+    "name": "Cataloging DITL data for research use",
+    "tags": [
+        "data",
+        "overview",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Aben, Emile",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_emile-cataloging_ditl_data//workshops/wide/0801/slides/emile-cataloging_ditl_data.pdf"
+    ]
+}

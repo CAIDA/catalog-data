@@ -1,0 +1,27 @@
+{
+    "id": "2018_studying_evolution_content_providers_tma",
+    "name": "Studying the Evolution of Content Providers in the Internet Core",
+    "tags": [
+        "congestion",
+        "topology",
+        "measurement methodology",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Carisimo, Esteban",
+            "venue": "network_traffic_measurement_and_analysis_conference_tma",
+            "date": "2018.6"
+        },
+        {
+            "presenter": "Author: Carisimo, Esteban",
+            "venue": "network_operators_group_of_latin_america_and_the_carribean_lacnog",
+            "date": "2018.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/studying_evolution_content_providers_tma/studying_evolution_content_providers_tma.pdf",
+        "https://www.caida.org/publications/presentations/2018/studying_evolution_content_providers_tma/studying_evolution_content_providers_lacnog.pdf",
+        "https://www.caida.org/publications/papers/2018/studying_evolution_content_providers/"
+    ]
+}

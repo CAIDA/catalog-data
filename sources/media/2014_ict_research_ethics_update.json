@@ -1,0 +1,23 @@
+{
+    "id": "2014_ict_research_ethics_predict_pi",
+    "name": "ICT Research Ethics Update",
+    "tags": [
+        "overview",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2014.6"
+        },
+        {
+            "presenter": "Author: Kenneally, Erin",
+            "venue": "ieee_security_privacy_symposium",
+            "date": "2014.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/ict_research_ethics_predict_pi/ict_research_ethics_predict_pi.pdf"
+    ]
+}

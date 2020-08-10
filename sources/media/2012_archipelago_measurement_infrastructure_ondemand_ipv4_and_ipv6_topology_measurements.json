@@ -1,0 +1,20 @@
+{
+    "id": "2012_aims_ark_on_demand",
+    "name": "Archipelago Measurement Infrastructure: On-Demand IPv4 and IPv6 Topology Measurements",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "software/tools",
+        "ipv6"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2012.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/aims_ark_on_demand/aims_ark_on_demand.pdf"
+    ]
+}

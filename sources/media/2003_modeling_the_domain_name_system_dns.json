@@ -1,0 +1,20 @@
+{
+    "id": "2003_nmspi0305",
+    "name": "modeling the Domain Name System (DNS)",
+    "tags": [
+        "dns",
+        "measurement methodology",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "nms_pi_meeting",
+            "date": "2003.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/nmspi0305/index.html",
+        "https://www.caida.org/publications/presentations/2003/nmspi0305/nmspi0305.pdf"
+    ]
+}

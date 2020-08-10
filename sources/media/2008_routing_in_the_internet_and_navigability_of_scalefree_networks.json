@@ -1,0 +1,22 @@
+{
+    "id": "2008_krioukov_euvarious",
+    "name": "Routing in the Internet and Navigability of Scale-Free Networks",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "various",
+            "date": "2008.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/krioukov_euvarious/krioukov_ch.pdf",
+        "https://www.caida.org/publications/papers/2008/scale_free_pre_asymptotic",
+        "https://www.caida.org/publications/presentations/2008/krioukov_euvarious/krioukov_sfi.pdf",
+        "https://www.caida.org/publications/presentations/2008/krioukov_euvarious/krioukov_barcelona.pdf",
+        "https://www.caida.org/publications/presentations/2008/krioukov_euvarious/krioukov_mallorca.pdf"
+    ]
+}

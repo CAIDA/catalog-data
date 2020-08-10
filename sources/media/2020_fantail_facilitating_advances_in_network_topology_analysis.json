@@ -1,0 +1,19 @@
+{
+    "id": "2020_fantail_kismet",
+    "name": "FANTAIL: Facilitating Advances in Network Topology Analysis",
+    "tags": [
+        "routing",
+        "topology",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "workshop_on_active_internet_measurements_knowledge_of_internet_structure_measurement_epistemology_and_technology_aimskismet",
+            "date": "2020.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/fantail_kismet/fantail_kismet.pdf"
+    ]
+}

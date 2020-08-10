@@ -1,0 +1,60 @@
+{
+    "id": "2005_pam-spectroscopy",
+    "name": "Spectroscopy of traceroute delays",
+    "datePublished": "2005.3",
+    "description": "[NOTE: This is an updated version of the paper published in _Proceedings\r\nof PAM 2005_. The hardcopy version published by Springer includes the deprecated version, while the electronic\r\nproceedings include this updated version. The updated paper correctly accounts for \r\nthe specific timestamp behavior, previously unknown to the authors,\r\nof the particular version of the firmware used in the Dag GE card of our\r\nexperiments.]\r\n\r\nWe analyze delays of traceroute probes, i.e. packets that elicit ICMP\r\nTimeExceeded messages, for a full range of probe sizes up to 9000 bytes as observed\r\non unloaded high-end routers. Our ultimate motivation is to use traceroute\r\nRTTs for Internet mapping of router and PoP (ISP point-of-presence) level nodes,\r\nincluding potentially gleaning information on equipment models, link technologies,\r\ncapacities, latencies, and spatial positions. To our knowledge it is the first\r\nstudy to examine in a reliable testbed setting the detailed statistics of ICMP response\r\ngeneration.\r\n\r\nWe find that two fundamental assumptions about ICMP\r\nmay not hold in some cases in modern routers, namely that\r\nICMP delays are a linear function of packet size\r\nand that ICMP generation rate is equal to the capacity\r\nof the interface on which probes are received.\r\nThe primary causes of these violations appear to be\r\ninternal segmentation of packets into cells \r\nand limiting of ICMP\r\npacket rates and bit rates inside a router.\r\nOur results suggest that the linear\r\nmodel of packet delay as a function of packet size merits \r\nrevisiting for certain router models and time resolutions.\r\nOur findings also suggest possibilities of \r\ndeveloping new techniques for bandwidth estimation and \r\nrouter fingerprinting.\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper63",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:521",
+            "label": "gzipped PDF (1MB)",
+            "to": "pam-spectroscopy-corrected.pdf.gz"
+        },
+        {
+            "from": "PubDBlinkId:520",
+            "label": "PDF (15MB)",
+            "to": "pam-spectroscopy-corrected.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1574",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2005/pam2005_spectroscopy/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "178-291",
+        "linkedObjects": ""
+    }
+}

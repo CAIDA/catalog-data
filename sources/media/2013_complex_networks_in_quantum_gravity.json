@@ -1,0 +1,20 @@
+{
+    "id": "2013_complex_networks_quantum_gravity_iqc",
+    "name": "Complex networks in quantum gravity",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "institute_of_quantum_computing_iqc",
+            "date": "2013.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/complex_networks_quantum_gravity_iqc/complex_networks_quantum_gravity_iqc.pptx",
+        "http://htwins.net/scale/"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": "dagstuhl_seminar",
+    "name": "Dagstuhl Seminar",
+    "description": "",
+    "dates": {
+        "date": "2018.10",
+        "url": "https://www.dagstuhl.de/en/program/calendar/semhp/?semnr=18412"
+    },
+    "tags": []
+}

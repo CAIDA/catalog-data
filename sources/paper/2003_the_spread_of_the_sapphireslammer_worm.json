@@ -1,0 +1,81 @@
+{
+    "id": "2003_sapphire",
+    "name": "The Spread of the Sapphire/Slammer Worm",
+    "datePublished": "2003.1",
+    "description": "The Sapphire Worm was the fastest computer worm in history. As it\r\nbegan spreading throughout the Internet, it doubled in size every 8.5\r\nseconds. It infected more than 90 percent of vulnerable hosts within\r\n10 minutes.\r\n\r\nThe worm (also called Slammer) began to infect hosts slightly\r\nbefore 05:30 UTC on Saturday, January 25. Sapphire exploited a\r\nbuffer overflow vulnerability in computers on the Internet running\r\nMicrosoft's SQL Server or MSDE 2000 (Microsoft SQL Server Desktop\r\nEngine). This weakness in an underlying indexing service was\r\ndiscovered in July 2002; Microsoft released a patch for the\r\nvulnerability before it was announced. The worm\r\ninfected at least 75,000 hosts, perhaps considerably more, and caused\r\nnetwork outages and such unforeseen consequences as canceled airline\r\nflights, interference with elections, and ATM failures. Several\r\ndisassembled versions of the source code of the worm are\r\navailable.\r\n\r\nPropagation speed was Sapphire's novel feature: in the first minute, the infected population doubled in size every 8.5 (&plusmn;1) seconds. The worm achieved its full scanning rate (over 55 million scans per second) after approximately three minutes, after which the rate of growth slowed down somewhat because significant portions of the network did not have enough bandwidth to allow it to operate unhindered. Most vulnerable machines were infected within 10-minutes of the worm's release. Although worms with this rapid propagation had been predicted on theoretical grounds, the spread of Sapphire provides the first real incident demonstrating the capabilities of a high-speed worm. By comparison, it was two orders magnitude faster than the Code Red worm, which infected over 359,000 hosts on July 19th, 2001. In comparison, the Code Red worm population had a leisurely doubling time of about 37 minutes. \r\n\r\nWhile Sapphire did not contain a malicious payload, it caused considerable harm simply by overloading networks and taking database servers out of operation. Many individual sites lost connectivity as their access bandwidth was saturated by local copies of the worm and there were several reports of Internet backbone disruption (although most backbone providers appear to have remained stable throughout the epidemic). It is important to realize that if the worm had carried a malicious payload, had attacked a more widespread vulnerability, or had targeted a more popular service, the effects would likely have been far more severe. \r\n\r\nThis document is a preliminary analysis of the Sapphire worm, principally focused on determining the speed and scope of its spread and the mechanisms that were used to achieve this result. \r\n'' Support for this work was provided by NSF, DARPA, Silicon Defense, Cisco Systems, AT&T, NIST, and CAIDA members.",
+    "tags": [
+        "passive data analysis",
+        "security",
+        "network telescope"
+    ],
+    "pubdb_id": "paper98",
+    "venue": "caida_icsi_silicon_defense_uc_berkeley_eecs_and_uc_san_diego_cse",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:paxson_vern",
+            "organization": [
+                "Lawrence Berkeley National Laboratory (LBNL)",
+                "The ICSI Center for Internet Research - ICIR"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:staniford_stuart",
+            "organization": [
+                "Silicon Defense"
+            ]
+        },
+        {
+            "person": "person:weaver_nicholas",
+            "organization": [
+                "Silicon Defense",
+                "University of California, Berkeley"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:268",
+            "label": "Analysis",
+            "to": "/research/security/sapphire/"
+        },
+        {
+            "from": "PubDBlinkId:269",
+            "label": "HTML",
+            "to": "sapphire.html"
+        },
+        {
+            "from": "PubDBlinkId:270",
+            "label": "IEEE Security and Privacy article",
+            "to": "/publications/papers/2003/sapphire2/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "CAIDA, ICSI, Silicon Defense, UC Berkeley EECS and UC San Diego CSE",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

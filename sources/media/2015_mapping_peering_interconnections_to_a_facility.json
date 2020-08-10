@@ -1,0 +1,21 @@
+{
+    "id": "2015_mapping_peering_interconnections_conext",
+    "name": "Mapping Peering Interconnections to a Facility",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+            "date": "2015.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/mapping_peering_interconnections_conext/mapping_peering_interconnections_conext.pdf",
+        "https://www.caida.org/publications/presentations/2015/mapping_peering_interconnections_conext//publications/papers/2015/mapping_peering_interconnections/"
+    ]
+}

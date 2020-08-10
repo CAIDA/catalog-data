@@ -1,0 +1,44 @@
+{
+    "id": "2013_irnc_report-tr",
+    "name": "International Research Network Connections: Usage and Value Measurement",
+    "datePublished": "2013.5",
+    "description": "The NSF's International Research Networks Connections (IRNC) Program1 supports the research and education community by funding globally interoperable high-bandwidth infrastructure, coordinated experimental services, and human network community building. At the January 2013 IRNC principal investigator (PI) meeting, one area of discussion was measurement capabilities and opportunities that could provide NSF and others with greater insight into what science projects are supported internationally through this program. This note summarizes discussions at the meeting, including each project's current measurement activities, and consensus on several concrete directions that would support greater visibility into IRNC infrastructure operations, usage, and value.",
+    "tags": [
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper528",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polterock_josh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:837",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/irnc_report-tr/irnc_report-tr.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

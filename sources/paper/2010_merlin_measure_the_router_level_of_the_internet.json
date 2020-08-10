@@ -1,0 +1,62 @@
+{
+    "id": "2010_merlin",
+    "name": "MERLIN: MEasure the Router Level of the INternet",
+    "datePublished": "2010.10",
+    "description": "The Internet topology discovery has been an extensive research subject those last years. While the raw data is collected using large traceroute campaigns, additional probing and/or extensive computation are required to gather subsets of IP addresses into single identifiers corresponding to routers. This process, known as alias resolution, leads to a router level map of the Internet. In this paper, we push further the Internet router level mapping with a new probing tool called MERLIN. MERLIN is based on mrinfo, a multicast management tool. mrinfo is able to silently collect all IPv4 multicast enabled interfaces of a router and all its multicast links towards its neighbors: it does not need or rely on any alias resolution mechanism. In addition, MERLIN comes with the advantage of being much more scalable than standard data gathering techniques. In this paper, we deploy and evaluate the performance of MERLIN. We demonstrate that the use of several vantage points is crucial to circumvent IGMP filtering in order to collect large amounts of routers. We also investigate the completeness of MERLIN by providing a lower bound on the proportion of information that it may miss. Finally, our dataset and the MERLIN implementation are freely available.",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper489",
+    "venue": "universit\u00e9_catholique_de_louvain",
+    "authors": [
+        {
+            "person": "person:m\u00e9rindol_pascal",
+            "organization": [
+                "LSIIT Universit\u00e9 de Strasbourg"
+            ]
+        },
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        },
+        {
+            "person": "person:pansiot_jean-jacques",
+            "organization": [
+                "LSIIT Universit\u00e9 de Strasbourg"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "WAND Network Research Group Waikato University"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:739",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/merlin/merlin.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Universit\u00e9 catholique de Louvain",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "3",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

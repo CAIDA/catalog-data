@@ -1,0 +1,21 @@
+{
+    "id": "2014_internet_garbage_ndsaa",
+    "name": "Internet Garbage: Storage, Access, and Analysis",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "network telescope",
+        "overview",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "workshop_on_network_data_storage_access_and_analysis_ndsaa",
+            "date": "2014.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/internet_garbage_ndsaa/internet_garbage_ndsaa.pdf"
+    ]
+}

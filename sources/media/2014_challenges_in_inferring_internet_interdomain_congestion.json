@@ -1,0 +1,23 @@
+{
+    "id": "2014_challenges_inferring_internet_interdomain_congestion_imc",
+    "name": "Challenges in Inferring Internet Interdomain Congestion",
+    "tags": [
+        "active data analysis",
+        "data",
+        "policy",
+        "topology",
+        "measurement methodology",
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2014.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/challenges_inferring_internet_interdomain_congestion_imc/challenges_inferring_internet_interdomain_congestion_imc.pdf",
+        "https://www.caida.org/publications/papers/2014/challenges_inferring_interdomain_congestion"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2015_bgpstream_aims",
+    "name": "BGPstream",
+    "tags": [
+        "routing",
+        "internet outages",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/bgpstream_aims/bgpstream_aims.pdf"
+    ]
+}

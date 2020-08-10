@@ -1,0 +1,50 @@
+{
+    "id": "1999_webmatters99",
+    "name": "Internet Tomography",
+    "datePublished": "1999.1",
+    "description": "The infrastructure of the Internet can be considered as the cyber\nequivalent of an ecosystem. At its heart is a mesh of interconnected\nbackbone networks. This core is rapidly evolving and provides the\nunderpinnings that will be vital for future national and international\ncommunications.\n\nThe last mile connections from the Internet to homes and businesses are\nsupplied by thousands of small and medium sized Internet Service\nProviders (ISPs), which are in turn interconnected by 'arteries'\nmaintained by transit (backbone) providers. The global infrastructure\nof the Internet consists of a complex array of telecommunications\ncarriers and providers, a very difficult infrastructure to analyze\ndiagnostically except within the borders of any individual network.\nNonetheless it is critical for the evolution of the Internet that\ninsights into its overall health and scalability are obtained.\n\nThis paper is a copy of the one found at [http://www.nature.com/nature/webmatters/tomog/tomog.html](http://www.nature.com/nature/webmatters/tomog/tomog.html).",
+    "tags": [
+        "overview",
+        "visualization"
+    ],
+    "pubdb_id": "paper139",
+    "venue": "nature",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:monk_tracie",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:mcrobb_daniel",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:485",
+            "label": "HTML",
+            "to": "webmatters99.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Nature",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

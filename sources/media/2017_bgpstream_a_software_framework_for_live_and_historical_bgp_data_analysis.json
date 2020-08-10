@@ -1,0 +1,23 @@
+{
+    "id": "2017_bgpstream_irtf",
+    "name": "BGPStream: A Software Framework for Live and Historical BGP Data Analysis ",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "routing",
+        "software/tools",
+        "topology",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "internet_engineering_task_force_ietf",
+            "date": "2017.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/bgpstream_irtf/bgpstream_irtf.pdf",
+        "https://www.caida.org/publications/papers/2016/bgpstream/"
+    ]
+}

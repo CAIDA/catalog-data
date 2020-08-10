@@ -1,0 +1,21 @@
+{
+    "id": "2003_dimacs0309",
+    "name": "Network Telescopes",
+    "tags": [
+        "network telescope",
+        "security",
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "center_for_discrete_mathematics_and_theoretical_computer_science_dimacs",
+            "date": "2003.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/dimacs0309/dimacs200309.pdf",
+        "https://www.caida.org/publications/papers/2004/tr-2004-04"
+    ]
+}

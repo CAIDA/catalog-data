@@ -1,0 +1,19 @@
+{
+    "id": "2005_problems_collection_conmi",
+    "name": "current problems in data collection and analysis",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "communityoriented_network_measurement_infrastructure_workshop_conmi",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/problems_collection_conmi/problems_collection_conmi.pdf"
+    ]
+}

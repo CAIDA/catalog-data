@@ -1,0 +1,63 @@
+{
+    "id": "2020_ripe_ipmap_active_geolocation",
+    "name": "RIPE IPmap Active Geolocation: Mechanism and Performance Evaluation",
+    "datePublished": "2020.4",
+    "description": "Knowledge about the geographic locations of Internet routers and servers is highly valuable for research on various aspects of Internet structure, performance, economics, and security. Whereas databases for geolocation are commercially available and targeted mostly at end hosts, RIPE offers an open IPmap platform, including its single-radius engine, for geolocation of core Internet infrastructure. This paper introduces the research community to the IPmap single-radius engine and evaluates effectiveness of this method versus commercial geolocation databases NetAcuity and GeoLite2. Access to ground truth constitutes a major challenge in conducting such evaluation studies. The paper collects IP addresses for its study from three sources: virtual machines from the Ring of the Netherlands Network Operators\u2019 Group, M-Lab Pods operated by Google, and CAIDA\u2019s Ark monitors. The ground truth dataset is further diversified through addition of IP addresses that are small latency away from Ark monitors. The evaluation considers accuracy, coverage, and consistency of geolocation as well as effectiveness of the single-radius method for different types of autonomous systems. The paper manually analyzes a problematic case where single-radius mistakenly geolocates an IP address of a Budapest-based router to Vienna. Finally, the paper provides recommendations to both users and developers of the single-radius method and discusses limitations of the reported evaluation. The main conclusion is that the IPmap single-radius engine geolocates core Internet infrastructure more accurately than the considered commercial databases and that Internet researchers can greatly benefit from using the IPmap platform for their geolocation needs.",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "routing"
+    ],
+    "pubdb_id": "paper700",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:du_ben",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:candela_massimo",
+            "organization": [
+                "University of Pisa"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:snoeren_alex",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2270",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/ripe_ipmap_active_geolocation/ripe_ipmap_active_geolocation.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "50",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}
