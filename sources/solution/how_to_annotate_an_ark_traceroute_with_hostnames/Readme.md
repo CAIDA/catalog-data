@@ -24,7 +24,7 @@
 The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
 ## **<ins> Solution </ins>**
-The full script could be found in `parse_ark_traceroute.py`
+The full script could be found in `parse_ark_traceroute.py` \
 **Usage:** ` python parse_ark_traceroute.py -t <traceroute dataset> -d <dns dataset>` 
 
 Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:\
@@ -47,9 +47,9 @@ def load_dns_file(dns_file):
 Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format.  The method returns source, each hop and destination of a traceroute in sequence. \
  `[source, hop_1, hop_2, ... , hop_n, destination]`
 
-Note that there could be multiple IPs in a hop.
-Set `single_IP` to True to get None value if there are multiple IPs in a hop.\
-Set `single_IP` to False to get all IPs in each hop. For more examples, please read Caveats below.\
+Note that there could be multiple IPs in a hop. \
+Set `single_IP` to True to get None value if there are multiple IPs in a hop. \
+Set `single_IP` to False to get all IPs in each hop. For more examples, please read Caveats below.
 
 ~~~python
 def parse_trace(trace, single_IP=False):
@@ -108,7 +108,7 @@ More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Trace
 
 ### What is Scamper?
 Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. \
-Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. \
+Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
 
 More information on Scampper can be found [here](https://www.caida.org/tools/measurement/scamper/) \
 Download source code from [here](https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz) \
