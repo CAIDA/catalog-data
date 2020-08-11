@@ -37,12 +37,18 @@ def load_rel_geo(as_file, geo_file):
     count = 0
     with open(as_file, 'r') as f:
         for line in f:
+
+            # skip comment and empty line
             if line[0] == "#" or len(line)==0:
                 continue
 
             line = line.strip().split("|")
+
+            # get geolocation info of asn_0
             if line[2]:
                 source = geo_info[line[2].split(",")[0]]
+
+            # get geolocation info of asn_1
             try:
                 dest = geo_info[line[3].split(",")[0]]
             except:

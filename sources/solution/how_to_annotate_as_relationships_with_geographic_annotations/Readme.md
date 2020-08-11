@@ -3,8 +3,10 @@
     "id": "how_to_annotate_as_relationships_with_geographic_annotations",
     "visibility": "public",
     "name": "How to annotate as relationships with geographic annotations?",
-    "description": "",
-    "links": [{}],
+    "description": "Annotating as relationships with geographic annotations",
+    "links": [{
+        "to": "dataset:as_relationships_with_geographic_annotations"
+        }],
     "tags": [
         "topology",
         "software/tools",
@@ -15,13 +17,14 @@
 }
 ~~~
 ## **<ins> Introduction </ins>**
+The solution annotates AS relationships with geographic annotations.
 
 ## **<ins> Solution </ins>**
-Return the annotated AS relationship in the following format.
-{
-"asn0": {"asn1":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]},
-"asn1": {"asn0":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]}
-}
+
+The full script could be found in annotate_as_relationships_with_geo.py
+**Usage:** `python parse_ark_traceroute.py -a <as-relationship dataset> -l <location dataset>`
+
+Below is the method used to load geo information from location file and AS relationships from AS-relationship file. Store geolocation information in `geo_info` with dictionary format.  
 ~~~python
 def load_rel_geo(as_file, geo_file):
 
@@ -34,7 +37,7 @@ def load_rel_geo(as_file, geo_file):
             if m:
                 keys = m.group(1).strip().split("|")
 
-            #skip comment of empty line
+            #skip comment and empty line
             if line[0] == "#" or len(line) == 0:
                 continue
 
@@ -48,19 +51,33 @@ def load_rel_geo(as_file, geo_file):
 
     with open(as_file, 'r') as f:
         for line in f:
+
+            #skip comment and empty line
             if line[0] == "#" or len(line)==0:
                 continue
-
+            
             line = line.strip().split("|")
-            if line[2]:
+
+            # get geolocation info of asn_0
+            if line[2]: 
                 source = geo_info[line[2].split(",")[0]]
+            
+            # get geolocation info of asn_1
             try:
                 dest = geo_info[line[3].split(",")[0]]
             except:
                 dest = {}
-
             as_rel_geo = {line[0]: {line[1]: [source, dest]}, line[1]: {line[0]: [source, dest]}}
             #print(as_rel_geo) 
+~~~
+
+Return the annotated AS relationships in the following format.
+~~~
+return format
+{
+"asn0": {"asn1":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]},
+"asn1": {"asn0":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]}
+}
 ~~~
 
 
@@ -94,8 +111,10 @@ def load_rel_geo(as_file, geo_file):
 
 ### Dataset ###
 #### AS Relationships -- with geographic annotations
-The Internet is composed of thousands of ISPs that operate individual parts of the Internet infrastructure. ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. Understanding the geographic nature of these relationships can facilitate activities such as: realistic simulation of AS path prediction; application performance estimation; predicting the likelihood that two ASes will interconnect; and visualizing the geographic distribution of networks.
-More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
+- ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. 
+- These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. 
+- Download `as-rel-geo.txt` for as-relationship dataset and `locations.txt` for location file
+- More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
 
 
 ### <ins> Caveats </ins>
