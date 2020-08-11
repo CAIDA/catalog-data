@@ -93,7 +93,7 @@ link_weight = {
     "Paper":.3,
     "Dataset":.5,
     "Software":.3,
-    "Solutions":.3
+    "Recipe":.3
 }
 
 type_key_w_type_w = {
@@ -608,8 +608,8 @@ def recipe_process(path):
                                         if "id" not in info:
                                             info["id"] = root.split("/")[-1]
                                         info["id"] = "recipe:"+info["id"]
+                                        info["__typename"] = "Recipe"
                                         info["content"] = ""
-                                        info["context"] = ""
                                         data = None
                                     except ValueError as e:
                                         print ("error in "+p)
@@ -633,7 +633,7 @@ def recipe_process(path):
                     else:
                         info["content"] = markdown2.markdown(info["content"])
                         info["filename"] = p
-                        object_add("Solution", info)     
+                        object_add("Recipe", info)     
     if len(skipped) > 0:
         print ("skipped")
         for msg, p in skipped:
