@@ -80,17 +80,6 @@ word_score_id_file = "word_score_id.json"
 
 filename_errors = {}
 
-# valid object types
-object_types = set([
-    "dataset",
-    "solution",
-    "license",
-    "person",
-    "paper",
-    "software",
-    "media",
-    "group"
-])
 
 # Weights used to create word scoring for search
 weight_default = 1
@@ -104,7 +93,7 @@ link_weight = {
     "Paper":.3,
     "Dataset":.5,
     "Software":.3,
-    "Solutions":.3
+    "Recipe":.3
 }
 
 type_key_w_type_w = {
@@ -144,12 +133,23 @@ id_missing = {}
 
 def main():
 
+    # valid object types
+    object_types = set([
+        "dataset",
+        "license",
+        "person",
+        "paper",
+        "software",
+        "media",
+        "group"
+    ])
+
     #######################
     #######################
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
-        if fname == "solution":
-            solutions_process(path)
+        if fname == "solution" or fname == "recipe":
+            recipe_process(path)
         elif fname in object_types:
             print ("loading",path)
             type_ = fname
@@ -334,6 +334,8 @@ def id_create(type_,name,id_=None):
             name = id_
         else:
             return None
+    if type_ == "solution":
+        type_ = "recipe"
     id_ = type_+":"+re_id_illegal.sub("_",name)
     return id_.lower()
 
@@ -579,16 +581,16 @@ def link_add(obj,info):
 
 #############################
 
-def solutions_process(path):
-    solutions_dir = set()
+def recipe_process(path):
+    recipe_dir = set()
     skipped = []
     for root, dirs, files in os.walk(path):
         if root == path:
             for fname in dirs:
-                solutions_dir.add(root+"/"+fname)
+                recipe_dir.add(root+"/"+fname)
         else:
             for fname in files:
-                if root in solutions_dir and re_readme_md.search(fname):
+                if root in recipe_dir and re_readme_md.search(fname):
                     p = root +"/"+fname
                     info = None
                     with open(p) as f:
@@ -605,9 +607,9 @@ def solutions_process(path):
                                         info = json.loads(data)
                                         if "id" not in info:
                                             info["id"] = root.split("/")[-1]
-                                        info["id"] = "solution:"+info["id"]
+                                        info["id"] = "recipe:"+info["id"]
+                                        info["__typename"] = "Recipe"
                                         info["content"] = ""
-                                        info["context"] = ""
                                         data = None
                                     except ValueError as e:
                                         print ("error in "+p)
@@ -631,7 +633,7 @@ def solutions_process(path):
                     else:
                         info["content"] = markdown2.markdown(info["content"])
                         info["filename"] = p
-                        object_add("Solution", info)     
+                        object_add("Recipe", info)     
     if len(skipped) > 0:
         print ("skipped")
         for msg, p in skipped:

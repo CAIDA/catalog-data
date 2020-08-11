@@ -1,8 +1,8 @@
-# How to use AS Rank to classify asns
+ How to use AS Rank to classify asns
 
 ~~~json
 {
-    "id" : "solution:how_to_use_as_rank_to_classify_asns",
+    "id" : "how_to_use_as_rank_to_classify_asns",
     "visibility" : "public",
     "name" : "How to use AS Rank to classify asns",
     "description" : "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
