@@ -1,0 +1,89 @@
+{
+    "id": "2018_dynamic_interconnection_exchange",
+    "name": "Dynam-IX: a Dynamic Interconnection eXchange",
+    "datePublished": "2018.8",
+    "description": "Internet connectivity is changing: Autonomous Systems (ASes) can now reach hundreds of networks directly through Internet eXchange Points (IXPs), while reducing latency, and improving traffic delivery performance and competitiveness. Despite these benefits, any pair of ASes needs first to agree on exchanging traffic. Establishing interconnections is mostly a manual and lengthy process that is heavily influenced by personal relationships and brand image. As a result, ASes miss interconnection opportunities and prefer long-term agreements, at the expense of a potential mismatch between actual delivery performance and current Internet traffic dynamics. We posit that IXPs have a large unexplored potential to improve wide-area traffic delivery performance as they offer a rich path diversity that could be leveraged to enable responsiveness to traffic dynamics (e.g., traffic surges, link failures). Facilitating interconnection via IXPs poses two major challenges: (i) How to quickly negotiate an agreement? (ii) How to decide which networks can be trusted to route traffic? To address these challenges, we propose Dynam-IX. Differently from previous academic work and industry initiatives, our approach addresses both aspects while keeping the privacy of the interconnection policies, which is a concern for most network operators.'' Poster version that won 3rd Place in the Student Research Competition at ACM SIGCOMM. The full corresponding paper was later published at CoNEXT 2018.",
+    "tags": [
+        "routing",
+        "topology",
+        "congestion"
+    ],
+    "pubdb_id": "paper658",
+    "venue": "acm_sigcomm_poster",
+    "authors": [
+        {
+            "person": "person:marcos_pedro ",
+            "organization": [
+                "Universidade Federal do Rio Grande (FURG)",
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        },
+        {
+            "person": "person:chiesa_marco",
+            "organization": [
+                "KTH, Royal Institute of Technology, IMIT, Sweden"
+            ]
+        },
+        {
+            "person": "person:m\u00fcller_lucas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        },
+        {
+            "person": "person:kathiravelu_pradeeban ",
+            "organization": [
+                "INESC-ID",
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        },
+        {
+            "person": "person:dietzel_christoph",
+            "organization": [
+                "DE-CIX",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:canini_marco",
+            "organization": [
+                "King Abdullah University of Science and Technology (KAUST)"
+            ]
+        },
+        {
+            "person": "person:barcellos_marinho",
+            "organization": [
+                "Universidade Federal do Rio Grande do Sul (UFRGS)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2030",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3234200.3234218"
+        },
+        {
+            "from": "PubDBlinkId:2060",
+            "label": "Full Paper",
+            "to": "https://www.caida.org/publications/papers/2018/dynam-ix"
+        },
+        {
+            "from": "PubDBlinkId:2029",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/dynamic_interconnection_exchange/dynamic_interconnection_exchange.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Poster",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

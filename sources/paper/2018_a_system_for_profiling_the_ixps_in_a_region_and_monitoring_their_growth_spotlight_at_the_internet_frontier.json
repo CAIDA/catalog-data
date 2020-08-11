@@ -1,0 +1,70 @@
+{
+    "id": "2018_system_for_profiling_ixps",
+    "name": "A System for Profiling the IXPs in a Region and Monitoring their Growth: Spotlight at the Internet Frontier",
+    "datePublished": "2018.12",
+    "description": "This work aims at designing and implementing a system able to profile and help manage the set of IXPs in an Internet region. As part of the Internet Society's strategy to help monitor and understand the evolution of IXPs in a particular region, a route-collector data analyzer tool was developed before being deployed and tested in AfriNIC. In fact, traffic localization efforts in the African peering ecosystem would be more sustained and their efficacy assessed if they were supported by a platform, which evaluates and reports in real-time about their impact on the Internet. We thus built the \"African\" Route-collectors Data Analyzer (ARDA), an open source web platform for analyzing publicly available routing information collected since 2005 by local route-collectors. ARDA evaluates pre-defined metrics that picture the status of the interconnection at local, national, and regional levels. It shows that a small proportion of AfriNIC ASes (roughly 17%) are peering in the region. Through them, 58% of all African networks are visible at one IXP or more. These have been static from April to September 2017, and even February 2018, underlining the need for increased efforts to improve local interconnectivity. We show how ARDA can help detect the impact of policies on the growth of local IXPs, or continually provide the community with up-to-date empirical data on the evolution of the IXP substrate. Given its features, this tool will be a helpful compass for stakeholders in the quest for better traffic localization and new interconnection opportunities in the targeted region.",
+    "tags": [
+        "active data analysis",
+        "congestion",
+        "measurement methodology",
+        "topology"
+    ],
+    "pubdb_id": "paper662",
+    "venue": "international_journal_for_network_management_ijnm",
+    "authors": [
+        {
+            "person": "person:fanou_rod\u00e9rick",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:sanchez-ag\u00fcero_v\u00edctor",
+            "organization": [
+                "IMDEA Networks Institute",
+                "Universidad Carlos III de Madrid (UC3M)"
+            ]
+        },
+        {
+            "person": "person:valera_francisco",
+            "organization": [
+                "Universidad Carlos III de Madrid (UC3M)"
+            ]
+        },
+        {
+            "person": "person:mwangi_michuki",
+            "organization": [
+                "Internet Society (ISOC)"
+            ]
+        },
+        {
+            "person": "person:coffin_jane",
+            "organization": [
+                "Internet Society (ISOC)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2054",
+            "label": "DOI",
+            "to": "https://doi.org/10.1002/nem.2056"
+        },
+        {
+            "from": "PubDBlinkId:2053",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/system_for_profiling_ixps/system_for_profiling_ixps.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "International Journal for Network Management (IJNM)",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

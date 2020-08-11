@@ -1,0 +1,50 @@
+{
+    "id": "1994_tlg",
+    "name": "Tracking long-term growth of the NSFNET",
+    "datePublished": "1994.3",
+    "description": "We present the architecture for data collection for the NSFNET\nbackbone and difficulties with using the collected statistics\nfor long-term network forecasting of certain traffic aspects. We describe relevant aspects of the NSFNET backbone architecture and the instrumentation for statistics collection.\n\nWe then present long-term NSFNET data to elucidate long-term trends in both the reachability of Internet components via the NSFNET as well as the growing cross-section of traffic. We focus on the difficulties of forecasting and planning in an infrastructure whose protocol architecture and instrumentation for data collection was not designed to support such objectives.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper170",
+    "venue": "communications_of_the_acm",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:406",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/tlg/cacm.94.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Communications of the ACM",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,69 @@
+{
+    "id": "2001_StreamsFlowsTorrents",
+    "name": "Streams, Flows and Torrents",
+    "datePublished": "2001.4",
+    "description": "RTFM (RFCs 2720-2724) considers network traffic as being made up of bidirectional flows, which are arbitrary groupings of packets defined only by attributes of their end-points. This paper extends RTFM's view of traffic by adding two further concepts, _streams_ and _torrents_. Streams are individual IP sessions (e.g. TCP or UDP) between ports on pairs of hosts, while a torrent refers to all traffic on a link. \r\n\r\nWe present stream measurement work using a meter located at UCSD (University of California, San Diego) to measure response times for DNS requests to the global root and gTLD nameservers. This example shows how to configure NeTraMet to collect flow data for stream-based flow metrics, and demonstrates the usefulness of global DNS response plots for network operations.'' This paper extends the RTFM (RFCs 2720-2724) definition of network traffic as bidirectional flows by adding the concepts of streams and torrents. Example analysis demonstrates useful traffic analysis based on collecting flow data for stream-based flow metrics.",
+    "tags": [
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper118",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "IT Systems & Services - ITSS, The University of Auckland"
+            ]
+        },
+        {
+            "person": "person:murray_margaret",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:278",
+            "label": "DNS root ruleset for UCSD",
+            "to": "dns-root-ucsd.srl"
+        },
+        {
+            "from": "PubDBlinkId:282",
+            "label": "gzipped postscript",
+            "to": "netramet.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:279",
+            "label": "HTML",
+            "to": "sft.xml"
+        },
+        {
+            "from": "PubDBlinkId:280",
+            "label": "NeTraMet",
+            "to": "/tools/measurement/netramet/"
+        },
+        {
+            "from": "PubDBlinkId:281",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/StreamsFlowsTorrents/netramet.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1580",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/pam2001/sft/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "id": "2010_framework_peering_agreements",
+    "name": "A Value-based Framework for Internet Peering Agreements",
+    "datePublished": "2010.10",
+    "description": "Internet Service Providers (ISPs) use complex peering policies, stipulating various rules for peering with other networks. Peering strategy is often considered a \"black art\" rather than science, and the outcome of a peering negotiation can depend on factors that are neither technical nor economic. Consequently, ISPs are required to make difficult decisions about the set of networks they should peer with, and the price they should demand/offer to ensure a stable peering link. We propose a quantitative framework for settlement-free and paid-peering links, based on the \"value\" of a peering link, i.e., the benefit that networks see from that link. We first study a solution where a centralized oracle determines a provably stable, optimal and fair price for a paid-peering link, based on perfect knowledge of the revenues and costs of each network. We next show that with perfect knowledge, the centralized solution can be implemented individually by the peering networks. We then study the effects of inaccurate estimation of peering value by the peering networks. Finally, we examine how value-based peering affects the density of peering links, the nature of end-to-end paths, and the profitability of various network types in the global Internet.",
+    "tags": [
+        "policy",
+        "routing",
+        "topology",
+        "economics"
+    ],
+    "pubdb_id": "paper491",
+    "venue": "international_teletraffic_congress_itc",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dovrolis_constantine",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:francois_pierre",
+            "organization": [
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:741",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/framework_peering_agreements/framework_peering_agreements.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1560",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/framework_peering_agreements/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Teletraffic Congress (ITC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

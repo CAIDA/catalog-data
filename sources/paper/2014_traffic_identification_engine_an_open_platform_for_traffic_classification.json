@@ -1,0 +1,57 @@
+{
+    "id": "2014_traffic_identification_engine",
+    "name": "Traffic Identification Engine: An Open Platform for Traffic Classification",
+    "datePublished": "2014.3",
+    "description": "The availability of open source traffic classification systems designed for both experimental and operational use, can facilitate collaboration, convergence on standard definitions and procedures, and reliable evaluation of techniques. In this article, we describe Traffic Identification Engine (TIE), an open source tool for network traffic classification, which we started developing in 2008 to promote sharing common implementations and data in this field. We designed TIE\u201bs architecture and functionalities focusing on the evaluation, comparison, and combination of different traffic classification techniques, which can be applied to both live traffic and previously captured traffic traces. Through scientific collaborations, and thanks to the support of the open source community, this platform gradually evolved over the past five years, supporting an increasing number of functionalities, some of which we highlight in this article through sample use cases.",
+    "tags": [
+        "data sharing",
+        "measurement methodology",
+        "passive data analysis",
+        "security"
+    ],
+    "pubdb_id": "paper554",
+    "venue": "ieee_network",
+    "authors": [
+        {
+            "person": "person:de donato_walter",
+            "organization": [
+                "University of Napoli Federico II, Napoli, Italy"
+            ]
+        },
+        {
+            "person": "person:pescap\u00e8_antonio",
+            "organization": [
+                "University of Napoli Federico II, Napoli, Italy"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1357",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/MNET.2014.6786614"
+        },
+        {
+            "from": "PubDBlinkId:1356",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/traffic_identification_engine/traffic_identification_engine.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Network",
+        "volume": "28",
+        "number": "2",
+        "pages": "56-64",
+        "linkedObjects": ""
+    }
+}

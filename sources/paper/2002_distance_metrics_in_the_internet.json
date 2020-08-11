@@ -1,0 +1,72 @@
+{
+    "id": "2002_Distance",
+    "name": "Distance Metrics in the Internet",
+    "datePublished": "2002.9",
+    "description": "We consider and compare four Internet distance metrics and\r\nanalyze the predictive power of these metrics in selecting, from a given\r\nsource, the lowest latency destination from among a candidate set. The four\r\nmetrics are: IP path length; autonomous system (AS) path length; great circle\r\ngeographic distance; and previously measured round trip time (RTT).\r\nWe describe general properties of these four metrics and, using an unprecedented\r\nvolume of real Internet macroscopic topology and RTT data, compare\r\ntheir correlation with actual RTT to the destination. The new methodology\r\nwe propose for testing different metrics is suitable for evaluating new\r\ndistance estimation techniques as they become available.\r\n",
+    "tags": [
+        "active data analysis",
+        "topology"
+    ],
+    "pubdb_id": "paper103",
+    "venue": "ieee_international_telecommunications_symposium_its",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:plummer_daniel",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:533",
+            "label": "gzipped postscript",
+            "to": "distance.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:532",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2002/Distance/distance.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1578",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2002/Distance/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE International Telecommunications Symposium (ITS)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "200-202",
+        "linkedObjects": ""
+    }
+}

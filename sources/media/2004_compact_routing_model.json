@@ -1,0 +1,17 @@
+{
+    "id": "2004_caidawide0404_dima",
+    "name": "Compact routing model",
+    "tags": [
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "wide",
+            "date": "2004.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/caidawide0404_dima/intro-idrws.pdf"
+    ]
+}

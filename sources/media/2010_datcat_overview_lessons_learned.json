@@ -1,0 +1,20 @@
+{
+    "id": "2010_gec_datcat",
+    "name": "DatCat: Overview, Lessons Learned",
+    "tags": [
+        "data",
+        "software/tools",
+        "trends",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "nsf_geni_engineering_conference_gec",
+            "date": "2010.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/gec_datcat/gec_datcat.pdf"
+    ]
+}

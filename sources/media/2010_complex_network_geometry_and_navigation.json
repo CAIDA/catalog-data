@@ -1,0 +1,19 @@
+{
+    "id": "2010_dances",
+    "name": "Complex network geometry and navigation",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "different_angles_on_network_complexity_engineering_and_science_dances",
+            "date": "2010.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/dances/dances_complex_network_geometry.pptx"
+    ]
+}

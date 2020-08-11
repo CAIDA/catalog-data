@@ -1,0 +1,18 @@
+{
+    "id": "2019_ripe_ipmap_single_radius_ripe",
+    "name": "RIPE IPmap Single-Radius: Experience and Evaluation",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Du, Ben",
+            "venue": "ripe_meeting",
+            "date": "2019.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/ripe_ipmap_single_radius_ripe/ripe_ipmap_single_radius_ripe.pdf"
+    ]
+}

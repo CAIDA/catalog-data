@@ -1,0 +1,18 @@
+{
+    "id": "2006_dima_ietf67_scalability_routing",
+    "name": "Scalability of Routing: Compactness and Dynamics",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "internet_engineering_task_force_ietf",
+            "date": "2006.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/dima_ietf67_scalability_routing/dima_ietf67_scalability_routing.pdf"
+    ]
+}

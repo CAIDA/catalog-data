@@ -1,0 +1,56 @@
+{
+    "id": "2012_replaying_geometric_growth",
+    "name": "Replaying the Geometric Growth of Complex Networks and Application to the AS Internet",
+    "datePublished": "2012.12",
+    "description": "Our growing dependence on networks has inspired a burst of research activity in the field of network science. One focus of this research is to derive network models capable of explaining common structural characteristics of large real networks, such as the Internet, social networks, and many other complex networks. A particular goal is to understand how these characteristics affect the various processes that run on top of these networks, such as routing, information sharing, data distribution, searching, and epidemics. Understanding the mechanisms that shape the structure and drive the evolution of real networks can also have important applications in designing more efficient recommender and collaborative filtering systems, and for predicting missing and future links - an important problem in many disciplines.\r\n\r\nKrioukov et al. have shown that there are intrinsic connections between complex network topologies and hyperbolic geometry, since the former exhibit hierarchical, tree-like organization, while the latter is the geometry of trees. Following Krioukov et al., Papadopoulos et al., have recently shown that trade-offs between popularity and similarity shape the structure and dynamics of growing complex networks, and that these trade-offs in network dynamics give rise to hyperbolic geometry. The work in Papadopoulos et al. introduces a simple model for constructing synthetic growing networks in the hyperbolic plane, which simultaneously exhibit many common structural and dynamical characteristics of real networks. We call the model of Papadopoulos et al. the Popularity\u00d7Similarity Optimization (PSO) model.\r\n\r\nGiven the ability of the PSO model to construct synthetic growing networks that resemble real networks across a wide range of structural and dynamical characteristics, an interesting question is whether one can reverse the synthesis, and given a real network, map (embed) the network into the hyperbolic plane, in a way congruent with the PSO model. Our main contribution in this work is an affirmative answer to this question and a systematic framework that accomplishes this task, by replaying the network\u201bs geometric growth. The proposed framework, called HyperMap, is quite simple and it is supported by theoretical analysis. We apply this framework to the Autonomous Systems (AS) topology of the real Internet and show that it produces meaningful results, identifying communities of ASs that belong to the same geographic region. Further, we show that the proposed framework has a remarkable predictive power, demonstrated by its ability to predict missing links with high precision. While we consider here the AS Internet topology and the prediction of missing links, there are also other interesting areas where the proposed framework could find applications, e.g., in community detection, and in the prediction of future links.'' Presented at Workshop on MAthematical performance Modeling and Analysis (MAMA) in June 2012.",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper521",
+    "venue": "acm_sigmetrics_performance_evaluation_review",
+    "authors": [
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "Cyprus University of Technology"
+            ]
+        },
+        {
+            "person": "person:psomas_constantinos",
+            "organization": [
+                "Cyprus University of Technology"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:830",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2425248.2425277"
+        },
+        {
+            "from": "PubDBlinkId:821",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/replaying_geometric_growth/replaying_geometric_growth.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGMETRICS Performance Evaluation Review",
+        "volume": "40",
+        "number": "3",
+        "pages": "104-106",
+        "linkedObjects": ""
+    }
+}

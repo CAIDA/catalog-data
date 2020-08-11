@@ -1,5 +1,6 @@
 {
     "id": "koga_ryan",
-    "nameFirst": "Ryan",
-    "nameLast": "Koga"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+    ]
 }

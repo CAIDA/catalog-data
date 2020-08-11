@@ -1,0 +1,19 @@
+{
+    "id": "2011_ipv6_hither_thither_yon",
+    "name": "IPv6: hither, thither, and yon",
+    "tags": [
+        "topology",
+        "policy",
+        "ipv6"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2011.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/ipv6_hither_thither_yon/ipv6_hither_thither_yon.pdf"
+    ]
+}

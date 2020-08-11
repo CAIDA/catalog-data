@@ -1,0 +1,21 @@
+{
+    "id": "2019_network_hygiene_incentives_regulation_ccs",
+    "name": "Network Hygiene, Incentives, and Regulation: Deployment of Source Address Validation in the Internet",
+    "tags": [
+        "measurement methodology",
+        "security",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_computer_and_communications_security_ccs",
+            "date": "2019.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/network_hygiene_incentives_regulation_ccs/network_hygiene_incentives_regulation_ccs.pdf",
+        "https://www.caida.org/publications/papers/2019/network_hygiene_incentives_regulation/"
+    ]
+}

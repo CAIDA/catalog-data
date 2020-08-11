@@ -1,0 +1,73 @@
+{
+    "id": "2014_volume_based_transit_pricing",
+    "name": "Volume-based Transit Pricing: Is 95 The Right Percentile?",
+    "datePublished": "2014.3",
+    "description": "The 95th percentile billing mechanism has been an industry de facto standard for transit providers for well over a decade. While the simplicity of the scheme makes it attractive as a billing mechanism, dramatic evolution in traffic patterns, associated interconnection practices and industry structure over the last two decades motivates an obvious question: is it still appropriate? In this paper, we evaluate the 95th percentile pricing mechanism from the perspective of transit providers, using a decade of traffic statistics from SWITCH (a large research/academic network), and more recent traffic statistics from 3 Internet Exchange Points (IXPs). We find that over time, heavy-inbound and heavy-hitter networks are able to achieve a lower 95th-to-average ratio than heavy-inbound and moderate-hitter networks, possibly due to their ability to better manage their traffic profile. The 95th percentile traffic volume also does not necessarily reflect the cost burden to the provider, motivating our exploration of an alternative metric that better captures the costs imposed on a network. We define the provision ratio for a customer, which captures its contribution to the provider\u201bs peak load.",
+    "tags": [
+        "measurement methodology",
+        "economics"
+    ],
+    "pubdb_id": "paper547",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:reddyvari raja_vamseedhar",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:scicchitano_alessandra",
+            "organization": [
+                "SWITCH, Switzerland"
+            ]
+        },
+        {
+            "person": "person:shakkottai_srinivas",
+            "organization": [
+                "Texas A&M University, College Station"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:leinen_simon",
+            "organization": [
+                "SWITCH, Switzerland"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1366",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-319-04918-2_8"
+        },
+        {
+            "from": "PubDBlinkId:1269",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/volume_based_transit_pricing/volume_based_transit_pricing.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "8362",
+        "number": "",
+        "pages": "77-87 ",
+        "linkedObjects": ""
+    }
+}

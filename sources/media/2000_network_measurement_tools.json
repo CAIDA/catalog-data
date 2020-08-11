@@ -1,0 +1,19 @@
+{
+    "id": "2000_esnet0004",
+    "name": "Network Measurement Tools",
+    "tags": [
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Monk, Tracie",
+            "venue": "caida",
+            "date": "2000.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/esnet0004/index.htm",
+        "https://www.caida.org/publications/presentations/2000/esnet0004/tracieesnet_0004.PPT"
+    ]
+}

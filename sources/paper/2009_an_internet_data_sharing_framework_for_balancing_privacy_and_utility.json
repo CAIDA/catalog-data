@@ -1,0 +1,52 @@
+{
+    "id": "2009_engaging_data",
+    "name": "An Internet Data Sharing Framework For Balancing Privacy and Utility",
+    "datePublished": "2009.10",
+    "description": "We re-visit the common assumption that privacy risks\r\nof sharing Internet infrastructure data outweigh the\r\nbenefits, and suggest that we have a window of opportunity in which to apply methods for undertaking empirical Internet research that can lower privacy risks while\r\nachieving research utility. The current default, defensive posture to not share network data derives from the\r\npurgatory formed by the gaps in regulation and law,\r\ncommercial pressures, and evolving considerations of\r\nboth threat models and ethical behavior. We propose\r\nsteps for moving the Internet research stakeholder community beyond the relatively siloed, below-the-radar\r\ndata sharing practices and into a more reputable and\r\npervasive scientific discipline, by self-regulating through\r\na transparent and repeatable sharing framework.\r\n",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "policy",
+        "data sharing"
+    ],
+    "pubdb_id": "paper12",
+    "venue": "engaging_data_first_international_forum_on_the_application_and_management_of_personal_electronic_information",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:716",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/engaging_data/engaging_data.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1565",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2009/engaging_data/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Engaging Data: First International Forum on the Application and Management of Personal Electronic Information",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

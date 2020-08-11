@@ -1,0 +1,50 @@
+{
+    "id": "2019_quince",
+    "name": "QUINCE: A unified crowdsourcing-based QoE measurement platform",
+    "datePublished": "2019.8",
+    "description": "Assessing QoE in situ is a challenging task. Researchers have employed crowdsourcing-based approaches to achieve scale and diversity of subjects, but not without confounding factors. Apart from subjective bias of users, environmental factors introduce variance to QoE measurements. We propose QUINCE, a QoE measurement platform, which uses a gamified approach to enable longitudinal study with repeated and varying measurements in a single platform. We leveraged existing Internet measurement data and infrastructures to integrate three different types of network and QoE measurements to yield a more comprehensive view of subjects. Our preliminarily results show that QUINCE achieves a high level of engagement from subjects and collects data that is useful for correlating network performance and YouTube video streaming QoE.",
+    "tags": [
+        "topology",
+        "routing",
+        "QoE",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper696",
+    "venue": "acm_sigcomm_poster",
+    "authors": [
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:kawaguti_ginga",
+            "organization": []
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2244",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/quince/quince.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Poster",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

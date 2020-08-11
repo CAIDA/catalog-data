@@ -1,0 +1,19 @@
+{
+    "id": "2017_crowdtrace_aims",
+    "name": "Crowdtrace: Tracerouting and measuring the QoE from the crowd",
+    "tags": [
+        "measurement methodology",
+        "software/tools",
+        "QoE"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Mok, Ricky",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2017.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/crowdtrace_aims/crowdtrace_aims.pdf"
+    ]
+}

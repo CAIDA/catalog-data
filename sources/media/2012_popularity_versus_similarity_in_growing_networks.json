@@ -1,0 +1,20 @@
+{
+    "id": "2012_caltech_popularity_versus_similarity",
+    "name": "Popularity versus Similarity in Growing Networks",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "caltech_social_science_seminars",
+            "date": "2012.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/caltech_popularity_versus_similarity/caltech_popularity_versus_similarity.pdf",
+        "https://www.caida.org/publications/papers/2012/popularity_vs_similarity"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2013_duality_between_static_dynamic_nist",
+    "name": "Duality Between Static and Dynamic Networks",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "nistbell_labs_workshop_on_largescale_complex_networks",
+            "date": "2013.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/duality_between_static_dynamic_nist/duality_between_static_dynamic_nist.pdf",
+        "https://www.caida.org/publications/papers/2013/duality_equilibrium_growing_networks"
+    ]
+}

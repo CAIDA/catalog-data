@@ -1,0 +1,43 @@
+{
+    "id": "1996_cache96",
+    "name": "Evolution of the NLANR cache hierarchy: Global configuration challenges",
+    "datePublished": "1996.11",
+    "description": "World-Wide Web caches are designed to alleviate some of the\nproblems imposed by ever-increasing Internet traffic growth.\nCaching is noticeably different from mirroring or replicating;\nIt is mostly transparent to end users, and because caches are \nclient-driven, they automatically adjust to accommodate\npopular objects based on user access patterns.\n\nThe National Science Foundation has provided funding to develop a\nprototype hierarchy of World-Wide Web caches, \nwhich have been in operation since December 1995.\nThis paper describes our initial experiences and observations\nwhile operating the caches. In particular we focus on the\nadministrative requirements for configuring and tuning a \ncache for its best performance in the global hierarchy.\n",
+    "tags": [
+        "caching"
+    ],
+    "pubdb_id": "paper147",
+    "venue": "national_laboratory_for_applied_network_research_nlanr",
+    "authors": [
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:470",
+            "label": "HTML",
+            "to": "cache96.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "National Laboratory for Applied Network Research (NLANR)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

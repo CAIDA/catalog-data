@@ -1,0 +1,65 @@
+{
+    "id": "2003_3rdparty",
+    "name": "On Third-party Addresses in Traceroute Paths",
+    "datePublished": "2003.4",
+    "description": "Traceroute IP paths are often used in studies of Internet topology and\r\nrouting. Though producing one of the best available router-level maps\r\nof forward paths, traceroute is susceptible to several types of\r\ninaccuracies. However, no one to date has quantified the magnitude of\r\nthese inaccuracies in real-world traceroute paths. We make an initial\r\nattempt by reporting on the observed frequency of one type of\r\ninaccuracy---third-party addresses. A third-party address is the\r\naddress of a router interface that does not lie in the actual path\r\ntaken by packets. Based on an examination of thousands of\r\ntraceroute paths from six locations worldwide and the application of\r\nseveral metrics, we find that the situations in which third-party\r\naddresses can occur to be relatively uncommon. They mostly occur\r\nwithin a few hops of the destination (that is, at the destination\r\nedge of the network), with multihoming being their most likely cause.\r\nOur conclusion is that third-party addresses cannot be a significant\r\nsource of AS map distortions.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper93",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:58",
+            "label": "gzipped postscript",
+            "to": "3rdparty.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:59",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/3rdparty/3rdparty.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1577",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2003/pam0304/"
+        },
+        {
+            "from": "PubDBlinkId:60",
+            "label": "Slides",
+            "to": "/publications/presentations/2003/pam0304/pam2003-3rdparty.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

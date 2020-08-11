@@ -1,0 +1,18 @@
+{
+    "id": "2008_wide_josh-ditl_summary",
+    "name": "DITL 2007 Collection Summary",
+    "tags": [
+        "data",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Polterock, Joshua",
+            "venue": "wide",
+            "date": "2008.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/wide_josh-ditl_summary//workshops/wide/0801/slides/josh-ditl_summary.pdf"
+    ]
+}

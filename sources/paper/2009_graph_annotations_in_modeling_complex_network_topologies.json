@@ -1,0 +1,55 @@
+{
+    "id": "2009_graph_annotations",
+    "name": "Graph Annotations in Modeling Complex Network Topologies",
+    "datePublished": "2009.10",
+    "description": "The coarsest approximation of the structure of a complex network, such as the Internet, is a simple\nundirected unweighted graph. This approximation, however, loses too much detail. In reality,\nobjects represented by vertices and edges in such a graph possess some nontrivial internal structure\nthat varies across and differentiates among distinct types of links or nodes. In this work, we\nabstract such additional information as network annotations. We introduce a network topology\nmodeling framework that treats annotations as an extended correlation profile of a network. Assuming\nwe have this profile measured for a given network, we present an algorithm to rescale it in\norder to construct networks of varying size that still reproduce the original measured annotation\nprofile.\n\nUsing this methodology,we accurately capture the network properties essential for realistic simulations\nof network applications and protocols, or any other simulations involving complex network\ntopologies, including modeling and simulation of network evolution. We apply our approach to the\nAutonomous System (AS) topology of the Internet annotated with business relationships between\nASs. This topology captures the large-scale structure of the Internet. In depth understanding of\nthis structure and tools to model it are cornerstones of research on future Internet architectures\nand designs. We find that our techniques are able to accurately capture the structure of annotation\ncorrelations within this topology, thus reproducing a number of its important properties in\nsynthetically-generated random graphs.\n",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper34",
+    "venue": "acm_transactions_on_modeling_and_computer_simulation_tomacs",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "IBM Research, Zurich"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:168",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/graph_annotations/graph_annotations.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM Transactions on Modeling and Computer Simulation (TOMACS)",
+        "volume": "19",
+        "number": "4",
+        "pages": "17",
+        "linkedObjects": ""
+    }
+}

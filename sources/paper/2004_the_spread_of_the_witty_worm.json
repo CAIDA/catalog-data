@@ -1,0 +1,59 @@
+{
+    "id": "2004_witty",
+    "name": "The Spread of the Witty Worm",
+    "datePublished": "2004.8",
+    "description": "On Friday, 19 March 2004, at approximately 8:45 p.m. Pacific Standard Time\r\n(PST), an Internet worm began to spread, targeting a buffer overflow\r\nvulnerability in several Internet Security Systems (ISS) products,\r\nincluding its RealSecure Network,\r\n\r\nRealSecure Server Sensor, RealSecure Desktop, and BlackICE. The worm took\r\nadvantage of a security flaw in these firewall applications that eEye\r\nDigital Security discovered earlier in March. Once the Witty worm--so\r\ncalled because its payload contained the phrase, \"(^.^) insert witty\r\nmessage here (^,^)\"--infects a computer, it deletes a randomly chosen\r\nsection of the hard drive, which, over time, renders the machine unusable.\r\n\r\nWhile the Witty worm is only the latest in a string of self-propagating\r\nremote exploits, it distinguishes itself through several interesting\r\nfeatures:\r\n\r\n* It was the first widely propagated Internet worm to carry a\r\ndestructive payload.\r\n* It started in an organized manner with an order of magnitude more\r\nground-zero hosts than any previous worm.\r\n* It represents the shortest known interval between vulnerability\r\ndisclosure and worm release--it began spreading the day after the ISS\r\nvulnerability was publicized.\r\n* It spread through a host population in which every compromised host\r\nwas proactive in securing its computers and networks.\r\n* It spread through a population almost an order of magnitude smaller\r\nthan that of previous worms, demonstrating worms' viability as an automated\r\nmechanism to rapidly compromise machines on the Internet, even in niches\r\nwithout a software monopoly.\r\n\r\nIn this article, we share a global view of the worm's spread, with\r\nparticular attention to these worrisome features.'' The Cisco Systems University Research Program, the US National Science Foundation, DARPA, the US Department of Homeland Security, and CAIDA members provided support for this work.",
+    "tags": [
+        "security",
+        "network telescope"
+    ],
+    "pubdb_id": "paper72",
+    "venue": "ieee_security_and_privacy",
+    "authors": [
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:317",
+            "label": "Animations",
+            "to": "https://www.caida.org/research/security/witty/#Animations"
+        },
+        {
+            "from": "PubDBlinkId:318",
+            "label": "HTML",
+            "to": "https://www.caida.org/publications/papers/2004/witty/mal.xml"
+        },
+        {
+            "from": "PubDBlinkId:316",
+            "label": "Original Analysis",
+            "to": "https://www.caida.org/research/security/witty/"
+        },
+        {
+            "from": "PubDBlinkId:1576",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2004/witty_worm/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Security and Privacy",
+        "volume": "2",
+        "number": "4",
+        "pages": "46-50",
+        "linkedObjects": ""
+    }
+}

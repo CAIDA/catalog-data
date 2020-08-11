@@ -1,0 +1,17 @@
+{
+    "id": "2005_caidawide050311",
+    "name": "caida update",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "wide",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/caidawide050311//workshops/wide/0503/slides/caidawide050311.pdf"
+    ]
+}

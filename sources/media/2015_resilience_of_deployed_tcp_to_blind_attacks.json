@@ -1,0 +1,19 @@
+{
+    "id": "2015_resilience_deployed_tcp_blind_imc",
+    "name": "Resilience of Deployed TCP to Blind Attacks",
+    "tags": [
+        "routing",
+        "security",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2015.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/resilience_deployed_tcp_blind_imc/resilience_deployed_tcp_blind_imc.pdf"
+    ]
+}

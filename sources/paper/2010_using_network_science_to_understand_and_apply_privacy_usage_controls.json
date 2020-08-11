@@ -1,0 +1,39 @@
+{
+    "id": "2010_using_network_science_privacy",
+    "name": "Using Network Science To Understand and Apply Privacy Usage Controls?",
+    "datePublished": "2010.9",
+    "description": "Information privacy (IP) is an evolution of control tug-o-war between individual rights and interests, social responsibility, and innovation. When users overtly interact with or passively engage a website, social networking or otherwise, they enter a privacy risk zone. Most often, they cannot be sure whether data is surreptitiously being collected, will be used, or further disclosed in ways that contravene their privacy preferences. While we have evolved the 'state of the art' to obligate sites to disclose their privacy collection, use and disclosure policies, protections nevertheless hinge on ex ante user trust that websites will walk the talk.\r\n\r\nA privacy solution steeped in information use restrictions and obligations can be approached by better engineering the identification and application of the underlying reasonable expectations upon which our privacy controls (laws, policies, standards) operate. I propose that the solution must be derived from the nature of the space creating the problem to begin with, specifically, that a scale-free problem demands a solution derived from scale-free network science.\r\n\r\nIt seems intuitive that privacy harms are not tied to whether you're at home, or in a park, with a crowd, or in a public phone booth -- yet the trigger for whether we have a reasonable expectation of privacy (REP) is still largely tethered to the contours demarcating public-private spaces. In general, if one's behavior is conducted in 'private' then REP attaches, but if it is exposed to the 'public' then surveillance, tracking, collection, and use of that information is fair game. How do we play the game, however, when our privacy is tethered to information that is decoupled from our persons across the Web ecosystem that does not intuitively fall along public-private boundaries?\r\n\r\nWe lack a consistent, objective measurement for assessing reasonable expectation of privacy and need to realign standards and their applications to more empirically reflect the contours of the Internetwork environment in which the privacy risks occur and privacy interests need protection. This paper proposes a new way to domesticate REP by using models from network science.\r\n\r\nThis paper advocates approaching this problem from the conceptual strategy that information privacy is a complex adaptive system. Other legal scholarship has applied this strategy to legal contexts such as environmental policy, intellectual property law, common law jurisprudence, Internet jurisdiction, and information privacy torts. This approach advocates the novel application of network science to a broader value that underpins many of our privacy controls-reasonable expectation of privacy. It suggests that there is a co-evolution between privacy controls (laws, regulations, standards) and informal norms. From this position, REP should be both a top-down and bottom-up tenet, where social norms of what citizens should reasonably expect to be afforded privacy protection should influence our controls, and our controls should shape our REP. As such, an information privacy regime that is predominated by the latter, governance-imposed notion of REP does not objectively reflect the reality of REP 'in the trenches' and threatens to institutionalize a fiction that results in inefficiencies and disrespect for ordering forces that protect individual rights and fosters social good and innovation.\r\n\r\nWe can infer the incongruity between legacy-driven measures of REP and the changed normative expectations wrought by the Internetwork environment from contemporary controversies surrounding online social networking, geo-location based services, targeted behavioral advertising, and data anonymization. Using a network science model, we may be able to harmonize the understandings and applications of REP across associated privacy controls such as the 4th Amendment, ECPA, FOIA, self-regulatory standards, consumer protection regulations, privacy torts, civil discovery rules, and private contracts and policies. Finally, network science techniques may enable us to operationalize REP into a more predictable, coherent, empirical framework for descriptive evidentiary proof and prescriptive risk management.",
+    "tags": [
+        "policy",
+        "data sharing"
+    ],
+    "pubdb_id": "paper495",
+    "venue": "w3c_workshop_on_privacy_and_data_usage_control",
+    "authors": [
+        {
+            "person": "person:kenneally_erin",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Elchemy, Inc."
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:763",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/using_network_science_privacy/using_network_science_privacy.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "W3C Workshop on Privacy and Data Usage Control",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

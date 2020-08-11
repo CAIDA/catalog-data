@@ -1,0 +1,18 @@
+{
+    "id": "2011_decisionmaking_percolation_selfsimilar",
+    "name": "Percolation in self-similar networks",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "decision_making_bridging_psychophysics_and_neurophysiology",
+            "date": "2011.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/decisionmaking_percolation_selfsimilar/decisionmaking_percolation_selfsimilar.pptx",
+        "https://www.caida.org/publications/papers/2011/percolation_self_similar_networks"
+    ]
+}

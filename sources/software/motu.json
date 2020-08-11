@@ -3,7 +3,10 @@
     "name": "Motu",
     "organization": "CAIDA",
     "description": "Dealiases pairs of IPv4 addresses.",
-    "tags": [],
+    "tags": [
+        "ip address",
+        "alias resolution"
+    ],
     "resources": [
         {
             "name": "public",

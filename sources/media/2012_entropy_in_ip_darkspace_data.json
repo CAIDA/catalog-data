@@ -1,0 +1,20 @@
+{
+    "id": "2012_flocon_entropy_in_ip_darkspace",
+    "name": "Entropy in IP Darkspace Data",
+    "tags": [
+        "security",
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Zseby, Tanja",
+            "venue": "flocon",
+            "date": "2012.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/flocon_entropy_in_ip_darkspace/flocon_entropy_in_ip_darkspace.pdf",
+        "https://www.caida.org/publications/papers/2014/nightlights_entropy"
+    ]
+}

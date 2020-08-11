@@ -1,0 +1,18 @@
+{
+    "id": "2007_dns_survey",
+    "name": "A Recent DNS Survey",
+    "tags": [
+        "dns",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "oarc",
+            "date": "2007.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/dns_survey/dns_survey.pdf"
+    ]
+}

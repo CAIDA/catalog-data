@@ -1,0 +1,44 @@
+{
+    "id": "1996_metricsurvey",
+    "name": "A survey of Internet statistics / metrics activities",
+    "datePublished": "1996.6",
+    "description": "In this paper, we present a survey of the current activities in Internet performance and workload measurement. The environment is dynamic enough that we can only provide an indicator of the growing activity and interest surrounding this important topic; we apologize for anyone omitted. Hopefully, through the hyperlinks and other references, readers will be able to followup directly with the various researchers and organizations who have (or plan) initiatives relating to the collection, analysis and/or presentation of Internet statistics.\r\n\r\nWe also outline in this paper a recommendation for the establishment of a `provider consortium' to facilitate cooperation. The National Laboratory for Applied Networking Research (NLANR) is working to develop a framework for such a collaboration, and believes that it could serve as an appropriate forum for... facilitating the identification, development and deployment of measurement tools across the Internet; providing commercial providers with a neutral, confidential vehicle for data sharing and analysis; providing networking researchers and the general Internet community with additional realtime data on Internet traffic flow patterns; and enhancing communications among commercial Internet service providers, exchange/peering point providers and the broader Internet community. \r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper159",
+    "venue": "national_laboratory_for_applied_network_research_nlanr",
+    "authors": [
+        {
+            "person": "person:monk_tracie",
+            "organization": [
+                "DynaCorp"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:422",
+            "label": "HTML",
+            "to": "metricsurvey.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "National Laboratory for Applied Network Research (NLANR)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

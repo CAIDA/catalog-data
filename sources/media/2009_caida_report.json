@@ -1,0 +1,17 @@
+{
+    "id": "2009_caida_report",
+    "name": "CAIDA Report",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fomenkov, Marina",
+            "venue": "widecasfi",
+            "date": "2009.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/caida_report/caida_report.pdf"
+    ]
+}

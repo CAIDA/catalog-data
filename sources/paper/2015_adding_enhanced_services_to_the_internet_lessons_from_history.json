@@ -1,0 +1,61 @@
+{
+    "id": "2015_adding_enhanced_services_internet",
+    "name": "Adding Enhanced Services to the Internet: Lessons from History",
+    "datePublished": "2015.9",
+    "description": "We revisit the last 35 years of history related to the design and specification of Quality of Service (QoS) on the Internet, in hopes of offering some clarity to the current debates around service differentiation. We describe the continual failure to get QoS capabilities deployed on the public Internet, including the technical challenges of the 1980s and 1990s, the market-oriented (business) challenges of the 1990s and 2000s, and recent regulatory challenges. Our historical perspective draws on, among other things, our own work from the 1990s that offered proposals for supporting enhanced services using the Internet Protocol (IP) suite, and our attempts to engage both industry and policymakers in understanding the dynamics of the Internet ecosystem. In short, the engineering community successfully developed protocols and mechanisms to implement enhanced services (QoS), and a few individual service providers have deployed them internally or in trusted two-party scenarios. The long-standing failure has been to deploy this capability across the public Internet.\r\n\r\nWe reflect on lessons learned from the history of this failure, the resulting tensions and risks, and their implications for the future of Internet infrastructure regulation. First, the continued failure of QoS over the last three decades derives from political and economic (business) obstacles as well as technical obstacles. The competitive nature of the industry, and a long history of anti-trust regulation (at least in the U.S.) conflicts with the need for competing providers to agree on protocols that require sharing operational data with each other to parameterize and verify committed service qualities. Second, QoS technology can yield benefits as well as harms, so policymaking should focus on harms rather than mechanisms. To assure the benefit to consumers, regulators may need to require transparency about the state of congestion and provisioning on networks using such mechanisms. Third, using QoE as the basis for any regulation will require research, tools and capabilities to measure, quantify, and characterize QoE, and developing metrics of service quality that better reflect our understanding of QoS and QoE for a range of applications. Finally, profound shifts in interconnection arrangements suggest a reshaping of the debate over QoS on the public Internet. Some access networks are interconnecting their private IP-based network platforms to support enhanced services, and using this interconnected platform to vertically integrate infrastructure and applications. Access networks are also connecting directly to large content providers to minimize the risk of performance impairments. These changes trigger new regulatory concerns over the fate of the public Internet, including capital investment incentives and gaps across different bodies of law.\r\n\r\nBarriers to the deployment of scalable interprovider QoS may be unsurmountable, but since any Internet of the future will face them, it is worth developing a systematic understanding to the challenge of enhanced services, and documenting successes and failures over the history of the Internet as carefully as possible.'' An updated version of this paper was published in 2016.",
+    "tags": [
+        "policy",
+        "overview",
+        "congestion",
+        "QoE"
+    ],
+    "pubdb_id": "paper589",
+    "venue": "telecommunications_policy_research_conference_tprc",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2141",
+            "label": "DOI",
+            "to": "https://doi.org/10.2139/ssrn.2587262"
+        },
+        {
+            "from": "PubDBlinkId:2075",
+            "label": "JIP version",
+            "to": "https://www.caida.org/publications/papers/2016/adding_enhanced_services_internet"
+        },
+        {
+            "from": "PubDBlinkId:1630",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/adding_enhanced_services_internet/adding_enhanced_services_internet.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1641",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2015/adding_enhanced_services_internet_tprc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Telecommunications Policy Research Conference (TPRC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

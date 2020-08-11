@@ -1,0 +1,57 @@
+{
+    "id": "1998_plankton",
+    "name": "Visualization of the growth and topology of the NLANR caching hierarchy",
+    "datePublished": "1998.6",
+    "description": "As the [NLANR Caching Hierarchy](http://ircache.nlanr.net), has\r\nincreased in size and complexity, researchers and users have had a more\r\ndifficult time depicting a comprehensive view of the overall topology.\r\n[Planet Cache](http://ircache.nlanr.net/Cache/cacheviz.html) was one of\r\nthe first attempts at visualizing the hierarchy, but was not\r\nsufficiently flexible to customize views of subsets of the topology by\r\nspecific attributes. CAIDA has expanded Planet Cache's visualization to\r\ninclude both topological and geographical depictions of the hierarchy.\r\nWe have also invested in converting from VRML to a Java implementation\r\nto facilitate more interactive visualization. Our Java implementation\r\nallows the user to tailor the complexity, focus, and topological layout\r\nto match their specific visualization objectives. This ability to\r\ncustomize the visualization, combined with the universal availability\r\nthat the web and Java provide, allows a much larger set of users to\r\naccess data on the global caching infrastructure and gain insight into\r\ntheir own position in the hierarchy. While our goal is a universally\r\naccessible visualization tool, problems with the platform independence\r\nof Java and privacy sensitivities with respect to transcribing even\r\nlogical topology information have resulted in our rendering some of the\r\nmore useful aspects of the visualization only in standalone\r\n('non-applet') mode.\r\n\r\nDespite these drawbacks, the user-friendly interface and the visually\r\ninformative and dynamic nature of both the standalone and the applet\r\nversion are vast improvements over currently available tools, and\r\nprovide a good basis for future analysis.\r\n\r\n",
+    "tags": [
+        "caching",
+        "visualization"
+    ],
+    "pubdb_id": "paper145",
+    "venue": "international_www_caching_workshop",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:jung_jaeyeon",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Korean Advanced Institute of Science and Technology"
+            ]
+        },
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:424",
+            "label": "HTML",
+            "to": "plankton.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International WWW Caching Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "2131-9",
+        "linkedObjects": ""
+    }
+}

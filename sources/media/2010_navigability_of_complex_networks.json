@@ -1,0 +1,19 @@
+{
+    "id": "2010_decisionmaking_navigability_complex_networks",
+    "name": "Navigability of complex networks",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "decision_making_a_psychophysics_application_of_network_science",
+            "date": "2010.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/decisionmaking_navigability_complex_networks/decisionmaking_navigability_complex_networks.pdf"
+    ]
+}

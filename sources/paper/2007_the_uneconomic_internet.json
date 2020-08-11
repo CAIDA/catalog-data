@@ -1,0 +1,56 @@
+{
+    "id": "2007_ieeecon",
+    "name": "The (un)Economic Internet?",
+    "datePublished": "2007.5",
+    "description": "\nThe Internet Economics track will address how economic and policy issues relate\nto the emergence of the Internet as critical infrastructure. Here, the authors\nprovide a historical overview of internetworking, identifying key transitions that\nhave contributed to the Internet's development and penetration. Its core\narchitecture wasn't designed to serve as critical communications infrastructure\nfor society, but developed far beyond the expectations of the original funding\nagencies, architects, developers, and early users. The incongruence between the\nInternet's underlying architecture and current use and expectations, however,\nmeans we can no longer study Internet technology in isolation from the political\nand economic context in which it is deployed.\n",
+    "tags": [
+        "routing",
+        "topology",
+        "policy"
+    ],
+    "pubdb_id": "paper39",
+    "venue": "ieee_internet_computing",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:meinrath_sascha",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bradner_scott",
+            "organization": [
+                "Harvard University"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:16",
+            "label": "HTML",
+            "to": "ieeecon.xml"
+        },
+        {
+            "from": "PubDBlinkId:17",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/ieeecon/ieeecon.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Internet Computing",
+        "volume": "11",
+        "number": "3",
+        "pages": "53-58",
+        "linkedObjects": ""
+    }
+}

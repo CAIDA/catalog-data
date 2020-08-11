@@ -1,0 +1,20 @@
+{
+    "id": "2005_pam2005_bwest",
+    "name": "Comparison of Public End-to-End Bandwidth Estimation tools on High-Speed Links",
+    "tags": [
+        "bandwidth estimation",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shriram, Alok",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2005.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/pam2005_bwest/pam2005_bwest.pdf",
+        "https://www.caida.org/publications/presentations/2005/pam2005_bwest/pam2005_bwest.ppt",
+        "https://www.caida.org/publications/papers/2005/pam-bwest"
+    ]
+}

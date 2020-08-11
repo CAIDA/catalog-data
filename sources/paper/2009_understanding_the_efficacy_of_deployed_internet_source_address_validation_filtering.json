@@ -1,0 +1,65 @@
+{
+    "id": "2009_imc_spoofer",
+    "name": "Understanding the Efficacy of Deployed Internet Source Address Validation Filtering",
+    "datePublished": "2009.11",
+    "description": "IP source address forgery, or \"spoofing,\" is a long-recognized consequence of the Internet's lack of packet-level authenticity. Despite historical precedent and filtering and tracing efforts, attackers continue to utilize spoofing for anonymity, indirection, and amplification. Using a distributed infrastructure and approximately 12,000 active measurement clients, we collect data on the prevalence and efficacy of current best practice source address validation techniques. Of clients able to test their provider's source-address filtering rules, we find 31% able to successfully spoof an arbitrary, routable source address, while 77% of clients otherwise unable to spoof can forge an address within their own /24 subnetwork. We uncover significant differences in filtering depending upon network geographic region, type, and size. Our new tracefilter tool for filter location inference finds 80% of filters implemented a single IP hop from sources, with over 95% of blocked packets observably filtered within the source's autonomous system. Finally, we provide initial longitudinal results on the evolution of spoofing revealing no mitigation improvement over four years of measurement. Our analysis provides an empirical basis for evaluating incentive and coordination issues surrounding existing and future Internet packet authentication strategies. ",
+    "tags": [
+        "measurement methodology",
+        "policy",
+        "routing",
+        "security",
+        "topology",
+        "trends"
+    ],
+    "pubdb_id": "paper9",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:berger_arthur",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1649",
+            "label": "Data Supplement",
+            "to": "http://data.caida.org/datasets/spoofer/2009-imc-spoofer-data-supplement/"
+        },
+        {
+            "from": "PubDBlinkId:185",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2009/imc_spoofer/imc_spoofer.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

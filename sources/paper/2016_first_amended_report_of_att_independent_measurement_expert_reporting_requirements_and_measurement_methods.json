@@ -1,0 +1,72 @@
+{
+    "id": "2016_att_ime_first_amended_report",
+    "name": "First Amended Report of AT&T Independent Measurement Expert: Reporting requirements and measurement methods",
+    "datePublished": "2016.6",
+    "description": "In compliance with the merger Order between AT&T and DirecTV, AT&T has engaged CAIDA to serve as the Independent Measurement Expert (IME) as described in the Memorandum Opinion and Order (\u201dFCC Order\u201d), Appendix B, V: Internet Interconnection Disclosure Requirements. As described in this appendix, our task is to develop a proposed methodology for measurement and reporting of data, in the context of the following obligation imposed on AT&T.\r\n\r\nThe structure of this document is as follows. Section 2 specifies the disclosure exemption. Section 3 described the reporting requirements on interconnecting parties, connectivity and traffic management details. Sections 4 and 5 catalog the data that AT&T must collect, and methods to collect it. We distinguish the process of collection from the reporting that results from the measurements. Section 6 specifies the nature of the reporting.\r\n\r\nIn a separate filing, titled \u201cReport of AT&T Independent Measurement Expert: Background and supporting arguments for our analysis\u201d we provide our rationale for our data sharing requirements and specific measurement methodologies.'' Acting as an independent contractor, CAIDA will conduct measurements and assessments of performance characteristics of traffic exchanged at AT&T Internet Interconnection Points located within the United States. ",
+    "tags": [
+        "measurement methodology",
+        "policy",
+        "data"
+    ],
+    "pubdb_id": "paper617",
+    "venue": "federal_communications_commission_fcc",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1806",
+            "label": "Justification (companion document)",
+            "to": "https://www.caida.org/publications/papers/2016/att_ime_justification/"
+        },
+        {
+            "from": "PubDBlinkId:1801",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/att_ime_first_amended_report/att_ime_first_amended_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1802",
+            "label": "Project page",
+            "to": "https://www.caida.org/funding/att-interconnection/"
+        },
+        {
+            "from": "PubDBlinkId:1807",
+            "label": "Related Presentations",
+            "to": "https://www.caida.org/publications/presentations/2016/measuring_internet_interconnection_nanog/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "MISC",
+        "booktitle": "",
+        "institution": "Federal Communications Commission (FCC)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

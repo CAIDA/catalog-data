@@ -1,0 +1,21 @@
+{
+    "id": "2018_pushing_boundaries_bdrmapit_imc",
+    "name": "Pushing the Boundaries with bdrmapIT: Mapping Router Ownership at Internet Scale",
+    "tags": [
+        "congestion",
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Marder, Alexander",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2018.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/pushing_boundaries_bdrmapit_imc/pushing_boundaries_bdrmapit_imc.pdf",
+        "https://www.caida.org/publications/papers/2018/pushing_boundaries_bdrmapit/"
+    ]
+}

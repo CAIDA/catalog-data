@@ -1,0 +1,79 @@
+{
+    "id": "2005_potemkin",
+    "name": "Scalability, Fidelity and Containment in the Potemkin Virtual Honeyfarm",
+    "datePublished": "2005.10",
+    "description": "\nThe rapid evolution of large-scale worms, viruses and botnets have made Internet malware a pressing concern. Such infections are at the root of modern scourges including DDoS extortion, on-line identity theft, SPAM, phishing, and piracy.\nHowever, the most widely used tools for gathering intelligence on new malware - network honeypots - have forced investigators to choose between monitoring activity at a large scale or capturing behavior with high fidelity. In this paper, we describe an approach to minimize this tension and improve honeypot scalability by up to six orders of magnitude while still closely emulating the execution behavior of individual Internet hosts. We have built a prototype honeyfarm system, called Potemkin, that exploits virtual machines, aggressive memory sharing, and late binding of resources to achieve this goal. While still an immature implementation, Potemkin has emulated over 64,000 Internet honeypots in live test runs, using only a handful of physical servers.\n\n",
+    "tags": [
+        "security"
+    ],
+    "pubdb_id": "paper29",
+    "venue": "acm_symposium_on_operating_system_principles_sosp",
+    "authors": [
+        {
+            "person": "person:vrable_michael",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:ma_justin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:chen_jay",
+            "organization": [
+                "Dept. of Computer Science, Courant Institute of Mathematical Sciences, New York University"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vandekieft_erik",
+            "organization": [
+                "IBM, North Carolina"
+            ]
+        },
+        {
+            "person": "person:snoeren_alex",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:voelker_geoffrey",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:12",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/potemkin/potemkin.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "UCSD Department of Computer Science and Engineering",
+        "bibtex": "",
+        "journal": "ACM Symposium on Operating System Principles (SOSP)",
+        "volume": "39",
+        "number": "5",
+        "pages": "148-162",
+        "linkedObjects": ""
+    }
+}

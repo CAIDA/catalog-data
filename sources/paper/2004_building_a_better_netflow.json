@@ -1,0 +1,72 @@
+{
+    "id": "2004_betternetflow",
+    "name": "Building a Better NetFlow",
+    "datePublished": "2004.9",
+    "description": "Network operators need to determine the composition of the traffic\r\nmix on links when looking for dominant applications, users, or\r\nestimating traffic matrices. Cisco's NetFlow has evolved into a\r\nsolution that satisfies this need by reporting flow records that\r\nsummarize a sample of the traffic traversing the link. But sampled\r\nNetFlow has shortcomings that hinder the collection and analysis\r\nof traffic data. First, during flooding attacks router memory and\r\nnetwork bandwidth consumed by flow records can increase beyond what\r\nis available; second, selecting the right static sampling rate is\r\ndifficult because no single rate gives the right tradeoff of memory\r\nuse versus accuracy for all traffic mixes; third, the heuristics\r\nrouters use to decide when a flow is reported are a poor match to\r\nmost applications that work with time bins; finally, it is impossible\r\nto estimate without bias the number of active flows for aggregates\r\nwith non-TCP traffic.\r\n\r\nIn this paper we propose Adaptive NetFlow, deployable through an\r\nupdate to router software, which addresses many shortcomings of\r\nNetFlow by dynamically adapting the sampling rate to achieve\r\nrobustness without sacrificing accuracy. To enable counting of\r\nnon-TCP flows, we propose an optional Flow Counting Extension that\r\nrequires augmenting existing hardware at routers. Both our proposed\r\nsolutions readily provide descriptions of the traffic of progressively\r\nsmaller sizes. Transmitting these at progressively higher levels\r\nof reliability allows graceful degradation of the accuracy of traffic\r\nreports in response to network congestion on the reporting path.'' An [extended version](https://www.caida.org/publications/papers/2004/tr-2004-03/) of this paper is available as a technical report.",
+    "tags": [
+        "measurement methodology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper75",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:estan_cristian",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:varghese_george",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:328",
+            "label": "gzipped postscript",
+            "to": "betternetflow.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:326",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/betternetflow/betternetflow.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1575",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2004/sigcomm0409netflow/"
+        },
+        {
+            "from": "PubDBlinkId:327",
+            "label": "Slides",
+            "to": "/publications/presentations/2004/sigcomm0409netflow/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "245-256",
+        "linkedObjects": ""
+    }
+}

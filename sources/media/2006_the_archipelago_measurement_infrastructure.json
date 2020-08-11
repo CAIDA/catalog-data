@@ -1,0 +1,19 @@
+{
+    "id": "2006_young_wide0611_ark",
+    "name": "The Archipelago Measurement Infrastructure",
+    "tags": [
+        "topology",
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "wide",
+            "date": "2006.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/young_wide0611_ark/young_wide0611_ark.pdf"
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "id": "2013_inferring_multilateral_peering",
+    "name": "Inferring Multilateral Peering",
+    "datePublished": "2013.12",
+    "description": "The AS topology incompleteness problem is derived from difficulties in the discovery of p2p links, and is amplified\r\nby the increasing popularity of Internet eXchange Points (IXPs) to support peering interconnection. We describe,\r\nimplement, and validate a method for discovering currently invisible IXP peering links by mining BGP communities\r\nused by IXP route servers to implement multilateral peering (MLP), including communities that signal the intent to restrict announcements to a subset of participants at a given IXP. Using route server data juxtaposed with a mapping of\r\nBGP community values, we can infer 206K p2p links from 13 large European IXPs, four times more p2p links than what is directly observable in public BGP data. The advantages of the proposed technique are threefold. First, it utilizes existing BGP data sources and does not require the deployment of additional vantage points nor the acquisition of private data. Second, it requires only a few active queries, facilitating repeatability of the measurements. Finally, it offers a new source of data regarding the dense establishment of MLP at IXPs.",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper535",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "University College London"
+            ]
+        },
+        {
+            "person": "person:zhou_shi",
+            "organization": [
+                "University College London"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1238",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2535372.2535390"
+        },
+        {
+            "from": "PubDBlinkId:1239",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/inferring_multilateral_peering/inferring_multilateral_peering.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1542",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2013/inferring_multilateral_peering_conext/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "247-258",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "2002_dns0209",
+    "name": "measurement and analysis of the root DNS system: update",
+    "tags": [
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ripe_meeting",
+            "date": "2002.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/dns0209/index.html"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": "1997_data-inet97",
+    "name": "Internet data acquisition and analysis: Status and next steps",
+    "datePublished": "1997.3",
+    "description": "Most large providers currently collect basic statistics on the\nperformance of their own infrastructure, typically including\nmeasurements of utilization, availability, and possibly rudimentary\nassessments of delay and throughput. In today's commercial Internet,\nthe only baseline against which these networks can evaluate performance\nis their past performance metrics. No data or even standard formats are\navailable against which to compare performance with other networks or\nagainst some baseline. Nor are there reliable performance data that \nusers can use to assess the performance of providers. Data\ncharacterization and traffic flow analysis are also virtually\nnon-existent at this time, yet they remain essential to for\nunderstanding the internal dynamics of the Internet infrastructure.\n\nIncreasingly, both users and providers need information on end-to-end\nperformance and traffic flows, beyond the realm of what is\nrealistically controllable by individual networks or users. Path\nperformance measurement tools enable users and providers to better \nevaluate and compare providers and to monitor service quality. Many of\nthese tools treat the Internet as a black box, measuring end-to-end\ncharacteristics, e.g., response time and packet loss (ping) and\nreachability (traceroute), from points originating and terminating \noutside individual networks. Traffic flow characterization tools focus\non the internal dynamics of individual networks and cross-provider \ntraffic flows, enabling network architects to: better engineer and\noperate networks, better understand global traffic trends and behavior,\nand better adopt / respond to new technologies and protocols as they\nare introduced into the infrastructure.\n\nThis paper has three goals. We first provide background on the current \nInternet architecture and describe why measurements are a key element\nin the development of a robust and financially successful commercial\nInternet. We then discuss the current state of Internet metrics\nanalysis and steps underway within various forums to encourage the\ndevelopment and deployment of Internet performance monitoring and\nworkload characterization tools. Finally, we describe the rationale and\nnear-term plans for the Cooperative Association for Internet Data\nAnalysis (CAIDA).\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper149",
+    "venue": "national_laboratory_for_applied_network_research_nlanr",
+    "authors": [
+        {
+            "person": "person:monk_tracie",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:480",
+            "label": "HTML",
+            "to": "data-inet97.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "National Laboratory for Applied Network Research (NLANR)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

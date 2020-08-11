@@ -1,0 +1,21 @@
+{
+    "id": "2013_ipv6_alias_resolution_nps",
+    "name": "Large Scale IPv6 Alias Resolution",
+    "tags": [
+        "ipv6",
+        "measurement methodology",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "naval_postgraduate_school_nps",
+            "date": "2013.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/ipv6_alias_resolution_nps/ipv6_alias_resolution_nps.pdf",
+        "https://www.caida.org/publications/papers/2013/speedtrap"
+    ]
+}

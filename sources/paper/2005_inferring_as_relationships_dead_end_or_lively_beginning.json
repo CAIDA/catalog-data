@@ -1,0 +1,68 @@
+{
+    "id": "2005_asrelationships",
+    "name": "Inferring AS Relationships: Dead End or Lively Beginning?",
+    "datePublished": "2005.5",
+    "description": "Abstract. Recent techniques for inferring business relationships between ASs have yielded maps that have extremely few invalid BGP\r\npaths in the terminology of Gao. However, some relationships inferred by these newer algorithms are incorrect, leading to the deduction\r\nof unrealistic AS hierarchies. We investigate this problem and discover\r\nwhat causes it. Having obtained such insight, we generalize the problem\r\nof AS relationship inference as a multiobjective optimization problem\r\nwith node-degree-based corrections to the original objective function of\r\nminimizing the number of invalid paths. We solve the generalized version of the problem using the semidefinite programming relaxation of\r\nthe MAX2SAT problem. Keeping the number of invalid paths small, we\r\nobtain a more veracious solution than that yielded by recent heuristics.\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper60",
+    "venue": "workshop_on_efficient_and_experimental_algorithms_wea",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "School of Electrical and Computer Engineering, Georgia Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:riley_george",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:33",
+            "label": "DOI",
+            "to": "http://www.springerlink.com/content/qap5gn11fc0upluu/"
+        },
+        {
+            "from": "PubDBlinkId:34",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/asrelationships/as_relationships.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Efficient and Experimental Algorithms (WEA)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "113-125",
+        "linkedObjects": ""
+    }
+}

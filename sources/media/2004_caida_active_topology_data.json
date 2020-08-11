@@ -1,0 +1,19 @@
+{
+    "id": "2004_ismatopology",
+    "name": "CAIDA Active Topology Data",
+    "tags": [
+        "data",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2004.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/ismatopology/ismatopology.ps.gz",
+        "https://www.caida.org/publications/presentations/2004/ismatopology/ismatopology.pdf"
+    ]
+}

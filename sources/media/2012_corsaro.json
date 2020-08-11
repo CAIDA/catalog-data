@@ -1,0 +1,20 @@
+{
+    "id": "2012_dust_corsaro",
+    "name": "Corsaro",
+    "tags": [
+        "software/tools",
+        "passive data analysis",
+        "measurement methodology",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: King, Alistair",
+            "venue": "international_workshop_on_darkspace_and_unsolicited_traffic_analysis_dust",
+            "date": "2012.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/dust_corsaro/dust_corsaro.pdf"
+    ]
+}

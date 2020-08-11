@@ -1,0 +1,18 @@
+{
+    "id": "2005_dns_cache_poisoners",
+    "name": "Searching for DNS Cache Poisoners",
+    "tags": [
+        "dns",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "oarc",
+            "date": "2005.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/dns_cache_poisoners/dns_cache_poisoners.pdf"
+    ]
+}

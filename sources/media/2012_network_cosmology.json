@@ -1,0 +1,19 @@
+{
+    "id": "2012_pcgm_network_cosmology",
+    "name": "Network Cosmology",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "pacific_coast_gravity_meeting_pcgm",
+            "date": "2012.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/pcgm_network_cosmology/pcgm_network_cosmology.pptx"
+    ]
+}

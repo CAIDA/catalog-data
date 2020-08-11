@@ -1,0 +1,21 @@
+{
+    "id": "2014_predict_pi_jan",
+    "name": "DHS PREDICT project: CAIDA update",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "overview",
+        "security",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Fomenkov, Marina",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2014.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/predict_pi_jan/predict_pi_jan.pdf"
+    ]
+}

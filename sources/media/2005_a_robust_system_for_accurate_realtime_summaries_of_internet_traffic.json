@@ -1,0 +1,24 @@
+{
+    "id": "2005_summaries_internet_traffic",
+    "name": "A Robust System for Accurate Real-time Summaries of Internet Traffic",
+    "tags": [
+        "software/tools",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "intimate_workshop",
+            "date": "2005.7"
+        },
+        {
+            "presenter": "Author: Moore, David",
+            "venue": "acm_sigmetrics",
+            "date": "2005.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/summaries_internet_traffic/summaries_internet_traffic.pdf",
+        "https://www.caida.org/publications/papers/2005/flowest"
+    ]
+}

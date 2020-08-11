@@ -1,0 +1,19 @@
+{
+    "id": "2012_caida_asrank_nanog",
+    "name": "CAIDA's AS-rank: measuring the influence of ASes on Internet Routing",
+    "tags": [
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2012.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/caida_asrank_nanog/caida_asrank_nanog.pdf"
+    ]
+}

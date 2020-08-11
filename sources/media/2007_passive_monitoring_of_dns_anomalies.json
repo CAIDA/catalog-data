@@ -1,0 +1,20 @@
+{
+    "id": "2007_brownlee_anomalies",
+    "name": "Passive Monitoring of DNS Anomalies",
+    "tags": [
+        "passive data analysis",
+        "measurement methodology",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "conference_on_detection_of_intrusions_and_malware_and_vulnerability_assessment_dimva",
+            "date": "2007.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/brownlee_anomalies/brownlee_anomalies.pdf",
+        "https://www.caida.org/publications/papers/2007/dns_anomalies"
+    ]
+}

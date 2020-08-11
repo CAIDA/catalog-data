@@ -1,0 +1,49 @@
+{
+    "id": "2012_wie11_report",
+    "name": "Workshop on Internet Economics (WIE2011) Report",
+    "datePublished": "2012.4",
+    "description": "The second Workshop on Internet Economics, hosted by CAIDA\r\nand Georgia Institute of Technology on December 1-2, 2011, brought together network technology and policy researchers with providers of commercial Internet facilities and services (network operators) to further explore the common objective of framing an agenda for the emerging but empirically stunted field of Internet infrastructure economics. This report describes the workshop discussions and presents relevant open research questions identified by its participants.'' Final Report of the 2nd Workshop on Internet Economics (WIE'11) in La Jolla, California, which was held in December 2011.",
+    "tags": [
+        "economics",
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper503",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:787",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2185376.2185394"
+        },
+        {
+            "from": "PubDBlinkId:779",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/wie11_report/wie11_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1400",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/1112/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "42",
+        "number": "2",
+        "pages": "110-114",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "id": "2013_day_after_patch_tuesday",
+    "name": "The Day After Patch Tuesday: Effects Observable in IP Darkspace Traffic",
+    "datePublished": "2013.3",
+    "description": "We investigated how Patch Tuesday affects the volume and characteristics of malicious and unwanted traffic as observed by a large IPv4 (/8) darkspace monitor over the first six months of 2012. We did not discover significant changes in overall traffic volume following Patch Tuesday, but we found a significant increase of the number of active hosts sending to our darkspace monitor the day after Patch Tuesday for all six investigated months. Our early results suggest the effects of Patch Tuesday are worth deeper investigation. Detecting time intervals during which new sources become active can help tune sampling methods toward activity periods that likely contain more interesting information (i.e., many new malicious sources) than other time periods.",
+    "tags": [
+        "network telescope",
+        "security"
+    ],
+    "pubdb_id": "paper522",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:zseby_tanja",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Fraunhofer Institute for Open Communication Systems (FOKUS), Berlin"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1313",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-642-36516-4_32"
+        },
+        {
+            "from": "PubDBlinkId:826",
+            "label": "PDF (abstract only)",
+            "to": "day_after_patch_tuesday.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "7799",
+        "number": "",
+        "pages": "273-275",
+        "linkedObjects": ""
+    }
+}

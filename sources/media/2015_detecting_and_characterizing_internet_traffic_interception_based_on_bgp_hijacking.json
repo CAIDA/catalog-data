@@ -1,0 +1,19 @@
+{
+    "id": "2015_detecting_characterizing_interception_hijacking_aims",
+    "name": "Detecting and Characterizing Internet Traffic Interception based on BGP Hijacking",
+    "tags": [
+        "routing",
+        "security",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/detecting_characterizing_interception_hijacking_aims/detecting_characterizing_interception_hijacking_aims.pdf"
+    ]
+}

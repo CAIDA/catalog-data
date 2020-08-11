@@ -1,0 +1,68 @@
+{
+    "id": "2020_filter_not_filter",
+    "name": "To Filter or not to Filter: Measuring the Benefits of Registering in the RPKI Today",
+    "datePublished": "2020.1",
+    "description": "Securing the Internet\u2019s inter-domain routing system against illicit prefix advertisements by third-party networks remains a great concern for the research, standardization, and operator communities. After many unsuccessful attempts to deploy additional security mechanisms for BGP, we now witness increasing adoption of the RPKI (Resource Public Key Infrastructure). Backed by strong cryptography, the RPKI allows network operators to register their BGP prefixes together with the legitimate Autonomous System (AS) number that may originate them via BGP. Recent research shows an encouraging trend: an increasing number of networks around the globe start to register their prefixes in the RPKI. While encouraging, the actual benefit of registering prefixes in the RPKI eventually depends on whether transit providers in the Internet enforce the RPKI\u2019s content, i.e., configure their routers to validate prefix announcements and filter invalid BGP announcements. In this work, we present a broad empirical study tackling the question: To what degree does registration in the RPKI protect a network from illicit announcements of their prefixes, such as prefix hijacks? To this end, we first present a longitudinal study of filtering behavior of transit providers in the Internet, and second we carry out a detailed study of the visibility of legitimate and illegitimate prefix announcements in the global routing table, contrasting prefixes registered in the RPKI with those not registered. We find that an increasing number of transit and access providers indeed do enforce RPKI filtering, which translates to a direct benefit for the networks using the RPKI in the case of illicit announcements of their address space. Our findings bode well for further RPKI adoption and for increasing routing security in the Internet.",
+    "tags": [
+        "routing",
+        "security",
+        "topology"
+    ],
+    "pubdb_id": "paper695",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:testart_cecilia",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:richter_philipp",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2240",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/filter_not_filter/filter_not_filter.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2266",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2020/filter_not_filter_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

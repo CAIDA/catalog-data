@@ -1,0 +1,73 @@
+{
+    "id": "2010_hyperbolic_geometry_complex",
+    "name": "Hyperbolic Geometry of Complex Networks",
+    "datePublished": "2010.10",
+    "description": "We develop a geometric framework to study the structure and function of complex networks. We assume that hyperbolic geometry underlies these networks, and we show that with this assumption, heterogeneous degree distributions and strong clustering in complex networks emerge naturally as simple reflections of the negative curvature and metric property of the underlying hyperbolic geometry. Conversely, we show that if a network has some metric structure, and if the network degree distribution is heterogeneous, then the network has an effective hyperbolic geometry underneath. We then establish a mapping between our geometric framework and statistical mechanics of complex networks. This mapping interprets edges in a network as non-interacting fermions whose energies are hyperbolic distances between nodes, while the auxiliary fields coupled to edges are linear functions of these energies or distances. The geometric network ensemble subsumes the standard configuration model and classical random graphs as two limiting cases with degenerate geometric structures. Finally, we show that targeted transport processes without global topology knowledge, made possible by our geometric framework, are maximally efficient, according to all efficiency measures, in networks with strongest heterogeneity and clustering, and that this efficiency is remarkably robust with respect to even catastrophic disturbances and damages to the network structure.",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "pubdb_id": "paper490",
+    "venue": "physical_review_e",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "University of Cyprus"
+            ]
+        },
+        {
+            "person": "person:kitsak_maksim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:758",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1103/PhysRevE.82.036106"
+        },
+        {
+            "from": "PubDBlinkId:740",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/hyperbolic_geometry_complex/hyperbolic_geometry_complex.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1559",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/netsci_hyperbolic_geometry_complex_networks/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Physical Review E",
+        "volume": "82",
+        "number": "036106",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

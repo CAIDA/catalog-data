@@ -1,0 +1,84 @@
+{
+    "id": "2017_inferring_bgp_blackholing_activity",
+    "name": "Inferring BGP Blackholing Activity in the Internet",
+    "datePublished": "2017.11",
+    "description": "The Border Gateway Protocol (BGP) has been used for decades as the de facto protocol to exchange reachability information among networks in the Internet. However, little is known about how this protocol is used to restrict reachability to selected destinations, e.g., that are under attack. While such a feature, BGP blackholing, has been available for some time, we lack a systematic study of its Internet-wide adoption, practices, and network efficacy, as well as the profile of blackholed destinations. In this paper, we develop and evaluate a methodology to automatically detect BGP blackholing activity in the wild. We apply our method to both public and private BGP datasets. We find that hundreds of networks, including large transit providers, as well as about 50 Internet exchange points (IXPs) offer blackholing service to their customers, peers, and members. Between 2014\u20132017, the number of blackholed prefixes increased by a factor of 6, peaking at 5K concurrently blackholed prefixes by up to 400 Autonomous Systems. We assess the effect of blackholing on the data plane using both targeted active measurements as well as passive datasets, finding that blackholing is indeed highly effective in dropping traffic before it reaches its destination, though it also discards legitimate traffic. We augment our findings with an analysis of the target IP addresses of blackholing. Our tools and insights are relevant for operators considering offering or using BGP blackholing services as well as for researchers studying DDoS mitigation in the Internet.",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "topology",
+        "security"
+    ],
+    "pubdb_id": "paper644",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:smaragdakis_georgios",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:dietzel_christoph",
+            "organization": [
+                "DE-CIX",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:richter_philipp",
+            "organization": [
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:feldmann_anja",
+            "organization": [
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:berger_arthur",
+            "organization": [
+                "Akamai",
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1999",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3131365.3131379"
+        },
+        {
+            "from": "PubDBlinkId:1959",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/inferring_bgp_blackholing_activity/inferring_bgp_blackholing_activity.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1960",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2017/inferring_bgp_blackholing_internet_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

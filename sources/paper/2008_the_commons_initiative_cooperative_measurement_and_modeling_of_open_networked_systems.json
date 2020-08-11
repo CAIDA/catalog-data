@@ -1,0 +1,44 @@
+{
+    "id": "2008_commons",
+    "name": "The COMMONS Initiative: Cooperative Measurement and Modeling of Open Networked Systems",
+    "datePublished": "2008.7",
+    "description": "Over the past several years, interest in municipal wireless and community networking has increased dramatically. Thus far, these initiatives have generally focused on networking local communities. The next evolution in network-ing involves peering these networks together. Research on broadband service provision is desperately needed to help forge new national telecommunications policies and inspire innovation in networking technologies.\n\nWith this goal in mind, the Cooperative Association for Internet Data Analysis (CAIDA) held a workshop to discuss -- and ultimately propose -- collaboration among researchers and networks to simultaneously solve three acute and growing problems facing the Internet. First, there exists a self-reported financial crisis in the Internet infrastructure provider industry that poses a threat to broadband growth and American competitiveness. Second, a data acquisition crisis has stunted the field of network science. Finally, emerging community, municipal, regional, and state networks need additional broadband connectivity but face limited provider, service level, and usage options.\n\nThe Cooperative Measurement and Modeling of Open Networked Systems (COMMONS) Initiative proposes to build or partner with a collaborative national backbone to connect participating community, municipal, regional, and state networks to one another and to the global Internet. The COMMONS provides a platform for Internet researchers to study this infrastructure. It also provides a low-cost medium for networks to peer with one another. This approach will provide vital research results for policymakers across the country and around the world.\n\nPart II of this article describes the findings from the initial COMMONS Strategy Workshop held in December 2006. Part III outlines relevant open research problems identified by the participants. Part IV proposes a framework for the end-to-end interconnection of networks at all levels on a national scale. Finally, the article concludes with a discussion of the steps necessary to bring about such a networking arrangement. Further, this section highlights the potential benefits to the scientific community, network operators and developers, key decision makers, and the general public.\n",
+    "tags": [
+        "education",
+        "policy"
+    ],
+    "pubdb_id": "paper32",
+    "venue": "commlaw_conspectus",
+    "authors": [
+        {
+            "person": "person:meinrath_sascha",
+            "organization": [
+                "Wireless Future Program, The New America Foundation"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:164",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/commons/commons_commlaw_cua.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "CommLaw Conspectus",
+        "volume": "16",
+        "number": "2",
+        "pages": "407-42",
+        "linkedObjects": ""
+    }
+}

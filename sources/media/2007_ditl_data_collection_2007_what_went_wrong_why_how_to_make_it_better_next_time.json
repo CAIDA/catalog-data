@@ -1,0 +1,19 @@
+{
+    "id": "2007_wessels_ditl",
+    "name": "DITL data collection 2007: what went wrong, why, how to make it better next time",
+    "tags": [
+        "data",
+        "dns",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "wide",
+            "date": "2007.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/wessels_ditl/wessels_ditl.pdf"
+    ]
+}

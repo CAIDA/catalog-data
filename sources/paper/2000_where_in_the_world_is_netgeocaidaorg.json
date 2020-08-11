@@ -1,0 +1,55 @@
+{
+    "id": "2000_inet_netgeo",
+    "name": "Where in the world is netgeo.caida.org?",
+    "datePublished": "2000.7",
+    "description": "When your packets travel through the Internet, where exactly do they\r\ngo? How many users of your web site live in Europe? How will your\r\nInternet service be affected by a new trans-pacific cable? To answer\r\nthese questions you need geographic information. Internet researchers\r\nfrequently need to map their observed data to specific places. But IP\r\naddresses, Autonomous System numbers, and hostnames are values in a\r\nlogical hierarchy; they contain no geographic information. There is no\r\nauthoritative database for mapping these identifiers to locations, so\r\nseveral sources of network information must be used, and these sources\r\nmay be conflicting or incomplete. The large size of the typical data\r\nset used in Internet research makes manually mapping many thousands of\r\nIP addresses to locations impractical and imprecise; an automated\r\nsolution is required. In this paper we describe NetGeo, a tool that\r\novercomes these obstacles.\r\n\r\nNetGeo is a tool that maps IP addresses, domain names, and Autonomous\r\nSystem (AS) numbers to geographic locations. NetGeo has significant\r\npotential to support a variety of tasks: automatic selection of\r\ngeographically nearby mirror sites; ISP decisions on where to deploy\r\nnew infrastructure, traffic flow analysis for tariff policy research;\r\nregionally-based advertising design, etc. NetGeo is currently being\r\nused both in a graphical traceroute tool and for studies of\r\nconnectivity and traffic flow between countries.\r\n\r\nNetGeo can be accessed interactively via the web and through Java and\r\nPerl APIs. The NetGeo back-end consists of a database and a collection\r\nof Perl scripts for address parsing and heuristic analysis of whois\r\nrecords. To reduce the load on whois servers and to improve\r\nperformance, NetGeo caches geographic information parsed from previous\r\nqueries.\r\n\r\nPrior to the development of NetGeo, Internet geographic information was\r\nnot easily available. We look forward to many creative uses of this\r\ntool as researchers become aware of its availability.\r\n\r\n",
+    "tags": [
+        "software/tools"
+    ],
+    "pubdb_id": "paper132",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:periakaruppan_ram",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:donohoe_jim",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:489",
+            "label": "HTML",
+            "to": "inet_netgeo.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

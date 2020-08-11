@@ -1,0 +1,23 @@
+{
+    "id": "2016_mapping_internet_interdomain_congestion_watch",
+    "name": "Mapping Internet Interdomain Congestion",
+    "tags": [
+        "active data analysis",
+        "data",
+        "policy",
+        "measurement methodology",
+        "topology",
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kimberly",
+            "venue": "nsf_washington_area_trustworthy_computing_hour_watch",
+            "date": "2016.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/mapping_internet_interdomain_congestion_watch/mapping_internet_interdomain_congestion_watch.pdf",
+        "http://www.tvworldwide.com/events/nsf/160818/"
+    ]
+}

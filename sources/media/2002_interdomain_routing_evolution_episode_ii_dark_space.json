@@ -1,0 +1,17 @@
+{
+    "id": "2002_arin0402",
+    "name": "Inter-domain routing evolution - Episode II: Dark Space",
+    "tags": [
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "arin",
+            "date": "2002.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/arin0402/arin0402.pdf"
+    ]
+}

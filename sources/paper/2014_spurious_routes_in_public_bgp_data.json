@@ -1,0 +1,44 @@
+{
+    "id": "2014_spurious_routes_public_bgp",
+    "name": "Spurious Routes in Public BGP Data",
+    "datePublished": "2014.7",
+    "description": "Researchers depend on public BGP data to understand the structure and evolution of the AS topology, as well as the operational security and resiliency of BGP. BGP data is provided voluntarily by network operators who establish BGP sessions with route collectors that record this data. In this paper, we show how trivial it is for a single vantage point (VP) to introduce thousands of spurious routes into the collection by providing examples of five VPs that did so. We explore the impact these misbehaving VPs had on AS relationship inference, showing these misbehaving VPs introduced thousands of AS links that did not exist, and caused relationship inferences for links that did exist to be corrupted. We evaluate methods to automatically identify misbehaving VPs, although we find the result unsatisfying because the limitations of real-world BGP practices and AS relationship inference algorithms produce signatures similar to those created by misbehaving VPs. The most recent misbehaving VP we discovered added thousands of spurious routes for nine consecutive months until 8 November 2012. This misbehaving VP barely impacts (0.1%) our validation of our AS relationship inferences, but this number may be misleading since most of our validation data relies on BGP and RPSL which validates only existing links, rather than asserting the non-existence of links. We have only a few assertions of non-existent routes, all received via our public-facing website that allows operators to provide validation data through our interactive feedback mechanism. We only discovered this misbehavior because two independent operators corrected some inferences, and we noticed\r\nthat the spurious routes all came from the same VP. This event highlights the limitations of even the best available topology data, and provides additional evidence that comprehensive ground truth validation from operators is essential to scientific research on Internet topology.",
+    "tags": [
+        "routing",
+        "topology",
+        "active data analysis"
+    ],
+    "pubdb_id": "paper559",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2161",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2656877.2656880"
+        },
+        {
+            "from": "PubDBlinkId:1367",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/spurious_routes_public_bgp/spurious_routes_public_bgp.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "3",
+        "pages": "15-21",
+        "linkedObjects": ""
+    }
+}

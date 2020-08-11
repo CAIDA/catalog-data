@@ -1,0 +1,75 @@
+{
+    "id": "2015_investigating_excessive_delays_mobile",
+    "name": "Investigating Excessive Delays in Mobile Broadband Networks",
+    "datePublished": "2015.8",
+    "description": "Systematic monitoring of performance characteristics of mobile broadband networks can help users, operators, and regulators understand this increasingly critical infrastructure. We report the results of a measurement study of round trip delays in two mobile networks in Norway using over 200 geographically distributed subscriptions for a period of one month. In general, we find high variation in delay within the same radio access type and RRC state. Across both networks we study, we observe connections with round trip delays of several seconds, often multiple times per hour, that are more frequent when nodes are moving. Correlating these extreme delay events with available metadata, we find they are related to handovers, radio state transitions, and retransmissions at the link and physical layers.",
+    "tags": [
+        "measurement methodology",
+        "active data analysis",
+        "congestion",
+        "mobile"
+    ],
+    "pubdb_id": "paper590",
+    "venue": "acm_sigcomm_workshop_on_all_things_cellular_atc",
+    "authors": [
+        {
+            "person": "person:larson_natalie",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:baltr\u016bnas_d\u017eiugas",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:kvalbein_amund",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2140",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2785971.2785980"
+        },
+        {
+            "from": "PubDBlinkId:1631",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/investigating_excessive_delays_mobile/investigating_excessive_delays_mobile.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Workshop on All Things Cellular (ATC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

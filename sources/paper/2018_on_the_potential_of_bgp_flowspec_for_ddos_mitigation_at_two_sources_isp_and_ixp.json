@@ -1,0 +1,75 @@
+{
+    "id": "2018_potential_bgp_flowspec",
+    "name": "On the Potential of BGP Flowspec for DDoS Mitigation at Two Sources: ISP and IXP",
+    "datePublished": "2018.8",
+    "description": "Distributed Denial of Service (DDoS) attacks are a major threat to the Internet ecosystem. DDoS cannot only exhaust resources of end systems but also of provider uplinks. Ideally, DDoS attacks are mitigated close to the attacker, and mitigation only affects malicious traffic. Mitigation on inter-domain level is commonly implemented with remotely triggered blackholing (RTBH). Blackholing enables the victim domain to mark the (usually /32) IP prefix under attack using BGP communities. Based on this tagging, adjacent peers can filter traffic to the victim to prevent over-load. Although RTBH is an easy to implement, cost-efficient and effective mitigation solution, it faces a significant draw-back: since all traffic to the victim is discarded, the victim becomes completely unreachable. A more fine grained filtering is provided in BGP Flowspec [3], which supports filtering rules \u2013 exchanged through BGP \u2013 for 12 different components (e.g., source and destination address, TCP flags). In this poster, we aim for a better understanding of DDoS traffic from an inter-domain perspective. We analyze malicious traffic based on passive measurements from a national Internet Service Provider and from a large regional Internet Exchange Point. In contrast to previous work (e.g., [2]), we try to characterize collateral damage that occurs while blackholing DDoS traffic, compared to the benefits of deploying Flowspec. Our ongoing analysis shows that (i) current blackholing drops significant portion of valid traffic whereas BGP Flowspec requires very little additional information to improve the situation, (ii) an IXP is a good vantage point to deploy Flowspec close to the attacker.",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "network telescope",
+        "security"
+    ],
+    "pubdb_id": "paper656",
+    "venue": "acm_sigcomm_poster",
+    "authors": [
+        {
+            "person": "person:hinze_nico",
+            "organization": [
+                "Freie Universit\u00e4t Berlin"
+            ]
+        },
+        {
+            "person": "person:nawrocki_marcin",
+            "organization": [
+                "Freie Universit\u00e4t Berlin"
+            ]
+        },
+        {
+            "person": "person:jonker_mattijs",
+            "organization": [
+                "University of Twente"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:schmidt_thomas c.",
+            "organization": [
+                "HAW Hamburg"
+            ]
+        },
+        {
+            "person": "person:w\u00e4hlisch_matthias",
+            "organization": [
+                "Freie Universit\u00e4t Berlin"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2024",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3234200.3234209"
+        },
+        {
+            "from": "PubDBlinkId:2025",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/potential_bgp_flowspec/potential_bgp_flowspec.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Poster",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

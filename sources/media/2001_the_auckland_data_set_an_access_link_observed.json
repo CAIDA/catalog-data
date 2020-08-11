@@ -1,0 +1,18 @@
+{
+    "id": "2001_itc14_alo",
+    "name": "The Auckland Data Set: An Access Link Observed",
+    "tags": [
+        "passive data analysis",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "international_teletraffic_congress_itc",
+            "date": "2001.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/itc14_alo/index.html"
+    ]
+}

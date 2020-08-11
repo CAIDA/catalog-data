@@ -1,0 +1,79 @@
+{
+    "id": "2007_wit",
+    "name": "The Workshop on Internet Topology (WIT) Report",
+    "datePublished": "2007.1",
+    "description": "Internet topology analysis has recently experienced a surge of interest in computer science, physics, and the mathematical sciences. However, researchers from these different disciplines tend to approach the same problem from different angles. As a result, the field of Internet topology analysis and modeling must untangle sets of inconsistent findings, conflicting claims, and contradicting statements.\r\n\r\nOn May 10-12, 2006, CAIDA hosted the Workshop on Internet topology (WIT). By bringing together a group of researchers spanning the areas of computer science, physics, and the mathematical sciences, the workshop aimed to improve communication across these scientific disciplines, enable interdisciplinary crossfertilization, identify commonalities in the different approaches, promote synergy where it exists, and utilize the richness that results from exploring similar problems from multiple perspectives.\r\n\r\nThis report describes the findings of the workshop, outlines a set of relevant open research problems identified by participants, and concludes with recommendations that can benefit all scientific communities interested in Internet topology research.\r\n\r\n",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper41",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:chung_fan",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vespignani_alessandro",
+            "organization": [
+                "Center for Biocomplexity, Indiana University",
+                "Department of Physics, Indiana University",
+                "School of Informatics Indiana University"
+            ]
+        },
+        {
+            "person": "person:willinger_walter",
+            "organization": [
+                "AT&T Research"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:396",
+            "label": "DOI",
+            "to": "http://portal.acm.org/citation.cfm?doid=1198255.1198267"
+        },
+        {
+            "from": "PubDBlinkId:397",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2007/wit/wit.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1790",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/isma/0605/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

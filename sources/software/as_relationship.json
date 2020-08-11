@@ -17,5 +17,14 @@
     ],
     "licenses": [
         "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "paper:2013_asrank",
+            "label": "used by"
+        },
+        {
+            "to": "media:2013_as_relationships_imc"
+        }
     ]
 }

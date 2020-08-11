@@ -1,0 +1,18 @@
+{
+    "id": "2010_visualizing_geolocated",
+    "name": "Visualizing geolocated Internet measurements",
+    "tags": [
+        "visualization",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Squarcella, Claudio",
+            "venue": "ripe_meeting",
+            "date": "2010.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/visualizing_geolocated/visualizing_geolocated.pdf"
+    ]
+}

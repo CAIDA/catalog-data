@@ -1,0 +1,20 @@
+{
+    "id": "2014_inferring_complex_as_relationships_imc",
+    "name": "Inferring Complex AS Relationships",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2014.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/inferring_complex_as_relationships_imc/inferring_complex_as_relationships_imc.pdf",
+        "https://www.caida.org/publications/presentations/2013/as_relationships_imc/as_relationships_imc.pdf"
+    ]
+}

@@ -1,5 +1,6 @@
 {
     "id": "dhamdhere_amogh",
-    "nameFirst": "Amogh",
-    "nameLast": "Dhamdhere"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+    ]
 }

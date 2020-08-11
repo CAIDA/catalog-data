@@ -1,0 +1,43 @@
+{
+    "id": "1996_hoffman",
+    "name": "Geographic addressing reconsidered",
+    "datePublished": "1996.9",
+    "description": "Humans have not inhabited Cyberspace long enough or in sufficient diversity to have developed a \r\nSocial Contract which conforms to the strange new conditions of that world. Laws developed prior \r\nto consensus usually serve the already established few who can get them passed and not society as \r\na whole. \r\n\r\nThe addressing model of the Internet constrains the shape of the routing system and charging \r\nmodel. There is only one concrete proposal, provider-based, currently under consideration for the \r\nmanagement of the next generation IP address space (IPv6), despite concerns about its \r\nramifications. In this paper we outline a counter proposal called Metro addressing and examine \r\nsome of the technical and business issues that would result from its adoption.\r\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper155",
+    "venue": "coordination_and_administration_of_the_internet_workshop",
+    "authors": [
+        {
+            "person": "person:hoffman_eric",
+            "organization": [
+                "Ipsilon"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:350",
+            "label": "HTML",
+            "to": "hoffman.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Coordination and Administration of the Internet Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

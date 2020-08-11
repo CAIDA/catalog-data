@@ -1,0 +1,17 @@
+{
+    "id": "2006_isma0605_fontas",
+    "name": "A New Approach to Topology Generation: Random Annotated Graphs",
+    "tags": [
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dimitropoulos, Xenofontas",
+            "venue": "isma_workshop_on_the_internet_topology_wit",
+            "date": "2006.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/isma0605_fontas/isma0605_fontas.pdf"
+    ]
+}

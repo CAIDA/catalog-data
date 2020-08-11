@@ -1,0 +1,32 @@
+{
+    "id": "2013_caida_research_overview",
+    "name": "CAIDA Research Overview",
+    "tags": [
+        "data",
+        "internet outages",
+        "ipv6",
+        "measurement methodology",
+        "network telescope",
+        "overview",
+        "policy",
+        "security",
+        "topology",
+        "trends",
+        "visualization"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "network_mapping_and_measurement_conference_nmmc",
+            "date": "2013.5"
+        },
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "cisco_nerd_lunch",
+            "date": "2013.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/caida_research_overview/caida_research_overview.pdf"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2014_second_look_detecting_addresses_pam",
+    "name": "A second look at \u201fDetecting third-party addresses in traceroute traces with the IP timestamp option\u201c",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Luckie, Matthew",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2014.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2014/second_look_detecting_addresses_pam/second_look_detecting_addresses_pam.pdf",
+        "https://www.caida.org/publications/papers/2014/second_look_detecting_addresses/"
+    ]
+}

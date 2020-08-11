@@ -1,0 +1,18 @@
+{
+    "id": "2007_wessels_ipv4_heatmap",
+    "name": "IPv4 Heatmap",
+    "tags": [
+        "visualization",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "oarc",
+            "date": "2007.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2007/wessels_ipv4_heatmap/wessels_ipv4_heatmap.pdf"
+    ]
+}

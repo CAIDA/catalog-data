@@ -1,0 +1,22 @@
+{
+    "id": "2018_asrank_iij",
+    "name": "AS Rank",
+    "tags": [
+        "visualization",
+        "topology",
+        "overview",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_initiative_japan_iij",
+            "date": "2018.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/asrank_iij/asrank_iij.pdf",
+        "http://asrank.caida.org/",
+        "https://seminar-materials.iijlab.net/iijlab-seminar/iijlab-seminar-20181211.mp4"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "id": "2001_NTMintro",
+    "name": "Using NeTraMet for Production Traffic Measurement",
+    "datePublished": "2001.5",
+    "description": "When monitoring network traffic, a flow measurement approach can provide the\nadvantage of data reduction in near real-time. RTFM, the IETF's standard,\ngeneralised architecture for measuring traffic flows, and NeTraMet, an\nopen-source implementation of that architecture, are introduced. The results\nof a NeTraMet usage survey are presented, together with a detailed description\nof the NeTraMet components and the ways they can be used to construct traffic\nflow measurement systems for any particular network. Nifty, an X Window\nnear-real-time traffic flow analyser, is also described. Experiences with\nNeTraMet are summarised, highlighting its usefulness in building customised\nflow measurement system.\n\n",
+    "tags": [
+        "measurement methodology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper109",
+    "venue": "integrated_management_strategies_for_the_new_millenium",
+    "authors": [
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "University of Auckland, New Zealand"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:704",
+            "label": "gzipped postscript",
+            "to": "ntm.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:703",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/NTMintro/ntm.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Integrated Management Strategies for the New Millenium",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "213-226",
+        "linkedObjects": ""
+    }
+}

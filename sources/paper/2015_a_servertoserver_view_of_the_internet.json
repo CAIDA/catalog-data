@@ -1,0 +1,76 @@
+{
+    "id": "2015_server_server_view_internet",
+    "name": "A Server-to-Server View of the Internet",
+    "datePublished": "2015.12",
+    "description": "While the performance characteristics of access networks and end-user-to-server paths are well-studied, measuring the performance of the Internet's _core_ remains, largely, an uncharted territory. With more content being moved closer to the end-user, server-to-server paths have increased in length and have a significant role in dictating the quality of services offered by content and service providers. In this paper, we present a large-scale study of the effects of _routing_ changes and _congestion_ on the end-to-end latencies of server-to-server paths in the core of the Internet. \r\n\r\nWe exploit the distributed platform of a large content delivery network, composed of thousands of servers around the globe, to assess the performance characteristics of the Internet\u2019s core. We conduct measurement campaigns between thousands of server pairs, in both forward and reverse directions, and analyze the performance characteristics of server-to-server paths over both long durations (months) and short durations (hours). Our analyses show that there is a large variation in the frequency of routing changes. While routing changes typically have marginal or no impact on the end-to-end round-trip times (RTTs), 20% of them impact IPv4 (IPv6) paths by at least 26 ms (31 ms). We highlight how dual-stack servers can be utilized to reduce server-to-server latencies by up to 50 ms. Our results indicate that significant daily oscillations in end-to-end RTTs of server-to-server paths is not the norm, but does occur, and, in most cases, contributes about a 20 ms increase in server-to-server path latencies.",
+    "tags": [
+        "routing",
+        "ipv6",
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "topology",
+        "congestion"
+    ],
+    "pubdb_id": "paper612",
+    "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+    "authors": [
+        {
+            "person": "person:chandrasekaran_balakrishnan",
+            "organization": [
+                "Duke University"
+            ]
+        },
+        {
+            "person": "person:smaragdakis_georgios",
+            "organization": [
+                "Akamai",
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:berger_arthur",
+            "organization": [
+                "Akamai",
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:ng_keung-chi",
+            "organization": [
+                "Akamai"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2135",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/2716281.2836125"
+        },
+        {
+            "from": "PubDBlinkId:1775",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/server_server_view_internet/server_server_view_internet.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

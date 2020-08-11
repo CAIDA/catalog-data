@@ -1,0 +1,19 @@
+{
+    "id": "2015_periscope_unifying_looking_wie",
+    "name": "Periscope: Unifying Looking Glass querying ",
+    "tags": [
+        "topology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "workshop_on_internet_economics_wie",
+            "date": "2015.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/periscope_unifying_looking_wie/periscope_unifying_looking_wie.pdf",
+        "https://www.caida.org/publications/papers/2016/periscope/"
+    ]
+}

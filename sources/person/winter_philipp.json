@@ -1,5 +1,6 @@
 {
     "id": "winter_philipp",
-    "nameFirst": "Philipp",
-    "nameLast": "Winter"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+    ]
 }

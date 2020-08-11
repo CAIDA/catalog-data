@@ -1,0 +1,19 @@
+{
+    "id": "2011_crooked_traceroute",
+    "name": "Measured Impact of Crooked Traceroute",
+    "tags": [
+        "topology",
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "isma_workshop_on_active_internet_measurements_aims",
+            "date": "2011.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/crooked_traceroute/crooked_traceroute.pptx",
+        "https://www.caida.org/publications/papers/2011/crooked_traceroute"
+    ]
+}

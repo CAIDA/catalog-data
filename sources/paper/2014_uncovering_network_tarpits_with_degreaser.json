@@ -1,0 +1,57 @@
+{
+    "id": "2014_uncovering_network_tarpits_degreaser",
+    "name": "Uncovering Network Tarpits with Degreaser",
+    "datePublished": "2014.12",
+    "description": "Network tarpits, whereby a single host or appliance can masquerade as many fake hosts on a network and slow network scanners, are a form of defensive cyber-deception. In this work, we develop degreaser, an efficient fingerprinting tool to remotely detect tarpits. In addition to validating our tool in a controlled environment, we use degreaser to perform an Internet-wide scan. We discover tarpits of non-trivial size in the wild (prefixes as large as /16), and characterize their distribution and behavior. We then show how tarpits pollute existing network measurement surveys that are tarpit-naive, e.g. Internet census data, and how degreaser can improve the accuracy of such surveys. Lastly, our findings suggest several ways in which to advance the realism of current network tarpits, thereby raising the bar on tarpits as an operational security mechanism.",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "security",
+        "active data analysis"
+    ],
+    "pubdb_id": "paper564",
+    "venue": "annual_computer_security_applications_conference_acsac",
+    "authors": [
+        {
+            "person": "person:alt_lance",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:beverly_robert",
+            "organization": [
+                "Naval Postgraduate School"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1396",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2664243.2664285"
+        },
+        {
+            "from": "PubDBlinkId:1397",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/uncovering_network_tarpits_degreaser/uncovering_network_tarpits_degreaser.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Annual Computer Security Applications Conference (ACSAC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

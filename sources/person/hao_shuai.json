@@ -1,5 +1,6 @@
 {
     "id": "hao_shuai",
-    "nameFirst": "Shuai",
-    "nameLast": "Hao"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+    ]
 }

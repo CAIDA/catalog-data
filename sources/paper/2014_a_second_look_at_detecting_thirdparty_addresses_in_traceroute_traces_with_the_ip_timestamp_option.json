@@ -1,0 +1,55 @@
+{
+    "id": "2014_second_look_detecting_addresses",
+    "name": "A Second Look at Detecting Third-Party Addresses in Traceroute Traces with the IP Timestamp Option",
+    "datePublished": "2014.3",
+    "description": "Artifacts in traceroute measurement output can lead to false inferences of AS-level links and paths when used to deduce AS topology. One traceroute artifact is caused by routers that respond to traceroute probes with a source address not in the path towards the destination, i.e. an off-path address. The most well-known traceroute artifact, the third-party address, is caused by off-path addresses that map to ASes not in the corresponding BGP path. In PAM 2013, Marchetta et al. proposed a technique to detect off-path addresses in traceroute paths.\r\nTheir technique assumed that a router IP address reported in a traceroute path towards a destination was off-path if, in a subsequent probe towards the same destination, the router did not insert a timestamp into a pre-specified timestamp option in the probe\u201bs IP header. However, no standard precisely defines how routers should handle the pre-specified timestamp option, and implementations are inconsistent. Marchetta et al. claimed that most IP addresses in a traceroute path are off-path, and that consecutive off-path addresses are common. They reported no\r\nvalidation of their results. We cross-validate their approach with a first-principles approach, rooted in the assumption that subnets between connected routers are often /30 or /31 because routers are often connected with point-to-point links. We infer if an address in a traceroute path corresponds to the interface on a router that received the packet (the inbound interface) by attempting to infer if its /30 or /31 subnet mate is an alias of the previous hop. We traceroute from 8 Ark monitors to 80K randomly chosen destinations, and find that most observed addresses are configured on the in-bound interface on a point-to-point link connecting two routers, i.e. are on-path. Because the technique from reports 70.9%\u201474.9% of these addresses as being off-path, we conclude it is not reliable at inferring which addresses are off-path or third-party. ",
+    "tags": [
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper549",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1341",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-319-04918-2_5"
+        },
+        {
+            "from": "PubDBlinkId:1340",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/second_look_detecting_addresses/second_look_detecting_addresses.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1537",
+            "label": "Related Presentation",
+            "to": "/publications/presentations/2014/second_look_detecting_addresses_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "8362",
+        "number": "",
+        "pages": "46-55",
+        "linkedObjects": ""
+    }
+}

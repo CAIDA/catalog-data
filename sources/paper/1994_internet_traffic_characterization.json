@@ -1,0 +1,43 @@
+{
+    "id": "1994_itc",
+    "name": "Internet traffic characterization",
+    "datePublished": "1994.6",
+    "description": "Traffic statistics normally collected during day-to-day operation of wide-area datagram networks are frequently insufficient for researchers to use in studying the workloads and performance of these realistic environments. As wide-area networks become more ubiquitous and service expectations rise, current methods for collecting data will become even less suitable. We examine ways to improve techniques for statistics collection so that the resulting data will enable researchers, and indeed service providers themselves, to develop more accurate Internet traffic models.\r\n\r\nWe first provide a taxonomy of traffic characterization tasks. We then use operationally collected statistics to characterize traffic of the T1 and T3 NSFNET backbones. Because current infrastructural statistics collection is oriented toward either short term operational requirements or periodic simplistic traffic reports to funding agencies, this data \r\nis often not conducive to assessing network workload or performance; we evaluate to what extent they are useful for tasks in the taxonomy, and propose improvements in current statistics collection architectures, with particular application to the NSFNET backbone. We include an investigation of the effects of sampling to characterize traffic and evaluate performance in a high-speed wide-area network environment.\r\n\r\nIn the second part of the thesis we focus on items in the outlined taxonomy that are not conducive to investigation using operationally collected statistics. These items mostly involve short-term aspects of Internet flows, which operationally collected statistics fail to expose. We develop a general methodology for use in assessing Internet flow profiles and their impact on an aggregate Internet workload. Our methodology for profiling flows differs from many previous studies that have concentrated on end-point definitions of flows defined by TCP connections using the TCP SYN and FIN control mechanism. We focus on the IP layer and define flows based on traffic satisfying various temporal and spatial locality conditions, as observed at internal points of the network. We first define the parameter space and then concentrate on metrics characterizing both individual flows and the aggregate flow. Metrics of individual flows include: volume in \r\npackets and bytes per flow, and flow duration. Metrics of the aggregate flow, or workload characteristics from the network perspective, include: counts of the number of active, new, and timed out flows per time interval; flow \r\ninterarrival and arrival processes; and flow locality metrics. Applying the methodology to our measurements yields significant observations of the Internet infrastructure, which have implications for performance requirements \r\nof routers at Internet hotspots, general and specialized flow-based routing algorithms, future usage-based accounting requirements, and traffic prioritization.\r\n\r\nFinally, we discuss trends that will affect how Internet service providers collect statistics in the future. Improvements in operational statistics collection, such as support for flow assessment, will help networking activities along various time horizons, from defining service quality patterns to long-term capacity planning. We offer a unique combination of operational and research perspectives, allowing us to reduce the gaps among (1) what network service providers need; (2) what statistics service providers can provide; and (3) what network analysis requires.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper168",
+    "venue": "uc_san_diego",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:189",
+            "label": "gzipped postscript",
+            "to": "itc.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:188",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1994/itc/kc-thesis94.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "PHDTHESIS",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

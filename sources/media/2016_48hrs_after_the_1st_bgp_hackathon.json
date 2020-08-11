@@ -1,0 +1,24 @@
+{
+    "id": "2016_48hrs_after_1st_bgp_nanog",
+    "name": "48hrs after the 1st BGP Hackathon",
+    "tags": [
+        "routing",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2016.2"
+        },
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2016.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/48hrs_after_1st_bgp_nanog/48hrs_after_1st_bgp_nanog.pdf",
+        "https://www.youtube.com/watch?v=ZG_87XLHk2Y"
+    ]
+}

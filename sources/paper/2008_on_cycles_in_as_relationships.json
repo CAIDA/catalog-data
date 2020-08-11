@@ -1,0 +1,55 @@
+{
+    "id": "2008_cycles_relationships",
+    "name": "On Cycles in AS Relationships",
+    "datePublished": "2008.7",
+    "description": "Several users of our AS relationship inference data, released with cs/0604017, asked us why it contained AS relationship cycles, e.g., cases where AS A is a provider of AS B, B is a provider of C, and C is a provider of A, or other cycle types. Having been answering these questions in private communications, we have eventually decided to write down our answers here for future reference. \r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper28",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "IBM Research, Zurich"
+            ]
+        },
+        {
+            "person": "person:serrano_mirian \u00e1ngeles",
+            "organization": [
+                "IFISC (CSIC-UIB)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:789",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/1384609.1384624"
+        },
+        {
+            "from": "PubDBlinkId:541",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/cycles_relationships/cycles_relationships.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "38",
+        "number": "3",
+        "pages": "102-104",
+        "linkedObjects": ""
+    }
+}

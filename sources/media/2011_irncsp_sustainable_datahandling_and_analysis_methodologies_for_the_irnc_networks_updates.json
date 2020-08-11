@@ -1,0 +1,20 @@
+{
+    "id": "2011_irnc_updates",
+    "name": "IRNC-SP: Sustainable data-handling and analysis methodologies for the IRNC networks: Updates",
+    "tags": [
+        "active data analysis",
+        "ipv6",
+        "passive data analysis",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "nsf_international_research_network_connections_irnc_pi_meeting",
+            "date": "2011.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/irnc_updates/irnc_updates.pdf"
+    ]
+}

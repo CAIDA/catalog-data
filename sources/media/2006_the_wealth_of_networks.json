@@ -1,0 +1,19 @@
+{
+    "id": "2006_wealthofnetworks",
+    "name": "The Wealth of Networks",
+    "tags": [
+        "policy",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Vest, Tom",
+            "venue": "sdsc",
+            "date": "2006.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/wealthofnetworks/wealthofnetworks.pdf",
+        "http://cichannel.sdsc.edu/16023.ram"
+    ]
+}

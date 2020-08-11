@@ -1,0 +1,19 @@
+{
+    "id": "2010_teranet_optimal_routing",
+    "name": "Optimal routing in a hyperbolically mapped Internet",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "toward_evolutive_routing_algorithms_for_scalefreeinternetlike_networks_teranet",
+            "date": "2010.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/teranet_optimal_routing/teranet_optimal_routing.zip"
+    ]
+}

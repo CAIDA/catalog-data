@@ -1,0 +1,50 @@
+{
+    "id": "2005_pam-tcpdynamics",
+    "name": "A Study of Burstiness in TCP Flows",
+    "datePublished": "2005.3",
+    "description": "\nWe study the burstiness of TCP flows at the packet level. We\naggregate packets into entities we call \"flights\". We show, using a simple\nmodel of TCP dynamics, that delayed-acks and window dynamics would\npotentially cause flights at two different timescales in a TCP flow - the\nlower at the order of 5-10 ms (sub-RTT) and the higher at about 10 times\nthis value (order of an RTT seen by the flow). The model suggests that\nflight sizes would be small at the lower timescale, regardless of the network environment. The model also predicts that the network conditions\nrequired for the occurrence of flights at the larger timescale are either\nlarge buffers or large available bandwidths - both of which result in\na high bandwidth delay product environment. We argue that these two\nconditions indicate that the TCP flow does not operate in a congestion\ncontrol region, either because the source of traffic is unaware of congestion or because there is so much bandwidth that congestion control\nis not required. We verify our model by passive Internet measurement.\nUsing the trace files obtained, we collect statistics on flights at the two\ntimescales in terms of their frequency and size. We also find the dependence of the sizes and frequency of flights on the Internet environment in\nwhich they occurred. The results concur strongly with our hypothesis on\nthe origins of flights, leading us to the conclusion that flights are effective\nindicators of excess resource in the Internet. ",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper65",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:shakkottai_srinivas",
+            "organization": [
+                "University of Illinois at Urbana-Champaign, Illinois (UIUC)"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:37",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/pam-tcpdynamics/pam-tcpdynamics.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "13-26",
+        "linkedObjects": ""
+    }
+}

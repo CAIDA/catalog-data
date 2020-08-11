@@ -1,5 +1,7 @@
 {
     "id": "beverly_robert",
-    "nameFirst": "Robert",
-    "nameLast": "Beverly"
+    "organization": [
+        "Massachusetts Institute of Technology (MIT)",
+        "Worldcom Advanced Internet Technology"
+    ]
 }

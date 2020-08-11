@@ -1,0 +1,37 @@
+{
+    "id": "1999_Nae",
+    "name": "Internet measurement and data analysis: topology, workload, performance and routing statistics",
+    "datePublished": "1999.3",
+    "description": "We discuss the collection, analysis and visualization of four forms of\r\nInternet traffic data: network topology, workload, performance, and\r\nrouting. Topology data describe network link infrastructure at a\r\nvariety of `protocol' layers. Workload measurements involve the\r\ncollection of traffic information from a point within a network, e.g.,\r\ndata collected by a router or switch or by an independent device\r\npassively monitoring traffic as it traverses a network link.\r\nPerformance measurements involve the introduction of traffic into the\r\nnetwork for the purpose of monitoring delay between specific\r\nend-points. Routing data includes data from Border Gateway Protocol\r\n(BGP) routing tables, which reflect the transit relationships between\r\nindividual Autonomous Systems (ASes) at a given point in time. We\r\ndescribe highlights from these topic areas and their role in the state\r\nof Internet measurement and data analysis today.\r\n\r\n",
+    "tags": [
+        "overview"
+    ],
+    "pubdb_id": "paper137",
+    "venue": "national_academy_of_engineering_nae_workshop",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:91",
+            "label": "HTML",
+            "to": "Nae.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "National Academy of Engineering (NAE) Workshop",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

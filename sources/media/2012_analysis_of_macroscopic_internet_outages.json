@@ -1,0 +1,22 @@
+{
+    "id": "2012_cse91_internet_outages",
+    "name": "Analysis of macroscopic Internet Outages",
+    "tags": [
+        "passive data analysis",
+        "security",
+        "policy",
+        "data",
+        "measurement methodology",
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ucsd_cse_perspectives_in_computer_science",
+            "date": "2012.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/cse91_internet_outages/cse91_internet_outages.pdf"
+    ]
+}

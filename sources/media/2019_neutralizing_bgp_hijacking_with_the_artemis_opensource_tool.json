@@ -1,0 +1,18 @@
+{
+    "id": "2019_neutralizing_bgp_hijacking_quilt",
+    "name": "Neutralizing BGP Hijacking with the ARTEMIS Open-source Tool",
+    "tags": [
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "the_quilt",
+            "date": "2019.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/neutralizing_bgp_hijacking_quilt/neutralizing_bgp_hijacking_quilt.pdf"
+    ]
+}

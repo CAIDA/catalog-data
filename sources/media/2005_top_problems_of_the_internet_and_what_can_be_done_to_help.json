@@ -1,0 +1,17 @@
+{
+    "id": "2005_topproblemsnet",
+    "name": "top problems of the Internet and what can be done to help",
+    "tags": [
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "auscert",
+            "date": "2005.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/topproblemsnet/topproblemsnet.pdf"
+    ]
+}

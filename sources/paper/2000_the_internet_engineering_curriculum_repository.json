@@ -1,0 +1,56 @@
+{
+    "id": "2000_inet_iec",
+    "name": "The Internet Engineering Curriculum Repository",
+    "datePublished": "2000.7",
+    "description": "The Internet Engineering Curriculum Repository (IEC) project includes\r\nan archive of teaching and laboratory materials focused on networking\r\nthat are appropriate for a wide variety of classes. This dynamic\r\ncollection of materials makes it easier for faculty to keep their\r\ncourses up to date and complete. It also captures some one-time events,\r\nsuch as colloquium talks, plenary addresses, and conference\r\npresentations that can enrich a student's understanding of a topic. We\r\nalso discuss laboratory components of classes that can be built with\r\nindustry/academia cooperation to improve the educational experience.\r\n\r\n",
+    "tags": [
+        "education"
+    ],
+    "pubdb_id": "paper133",
+    "venue": "international_networking_conference_inet",
+    "authors": [
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Colorado at Boulder"
+            ]
+        },
+        {
+            "person": "person:ott_theresa",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:thompson_kevin",
+            "organization": [
+                "MCI Worldcom"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:88",
+            "label": "HTML",
+            "to": "inet_iec.html"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "International Networking Conference (INET)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

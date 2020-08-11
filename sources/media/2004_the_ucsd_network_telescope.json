@@ -1,0 +1,37 @@
+{
+    "id": "2004_ucsd_network_telescope",
+    "name": "The UCSD Network Telescope",
+    "tags": [
+        "network telescope",
+        "security",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "ccied_site_visit",
+            "date": "2004.11"
+        },
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "lincoln_labs",
+            "date": "2004.9"
+        },
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "bbn",
+            "date": "2004.9"
+        },
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "equinix_gigabit_peering_forum",
+            "date": "2004.9"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/ucsd_network_telescope/ucsd_network_telescope_bbn.pdf",
+        "https://www.caida.org/publications/presentations/2004/ucsd_network_telescope/ucsd_network_telescope_ccied.pdf",
+        "https://www.caida.org/publications/presentations/2004/ucsd_network_telescope/ucsd_network_telescope_equinix.pdf",
+        "https://www.caida.org/publications/presentations/2004/ucsd_network_telescope/ucsd_network_telescope_lincoln.pdf"
+    ]
+}

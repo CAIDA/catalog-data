@@ -1,0 +1,53 @@
+{
+    "id": "2020_wie2019_report",
+    "name": "Workshop on Internet Economics (WIE-KISMET 2019) report",
+    "datePublished": "2020.1",
+    "description": "On 9-11 December 2019, CAIDA hosted the 10th interdisciplinary Workshop on Internet Economics (WIE) at UC San Diego\u2019s Supercomputer Center. This workshop series provides a forum for researchers, Internet facilities and service providers, technologists, economists, theorists, policymakers, and other stakeholders to exchange views on current and emerging economic and policy debates. This year\u2019s meeting had a narrower focus than in years past, motivated by a new NSF-funded project being launched at CAIDA: KISMET (Knowledge of Internet Structure: Measurement, Epistemology, and Technology). The objective of the KISMET project is to improve the security and resilience of key Internet systems by collecting and curating infrastructure data in a form that facilitates query, integration and analysis. This project is a part of NSF\u2019s new Convergence Accelerator program, which seeks to support fundamental scientific exploration by creating partnerships across public and private sectors to solve problems of national importance.",
+    "tags": [
+        "workshop report",
+        "policy",
+        "economics",
+        "congestion",
+        "security",
+        "topology"
+    ],
+    "pubdb_id": "paper694",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2222",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2020/wie2019_report/wie2019_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2221",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/kismet/1912/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

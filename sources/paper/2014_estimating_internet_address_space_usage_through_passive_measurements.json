@@ -1,0 +1,87 @@
+{
+    "id": "2014_passive_ip_space_usage_estimation",
+    "name": "Estimating Internet address space usage through passive measurements",
+    "datePublished": "2014.1",
+    "description": "One challenge in understanding the evolution of Internet infrastructure is the lack of systematic mechanisms for monitoring the extent to which allocated IP addresses are actually used. Address utilization has been monitored via actively scanning the entire IPv4 address space. We evaluate the potential to leverage passive network traffic measurements in addition to or instead of active probing. Passive traffic measurements introduce no network traffic overhead, do not rely on unfiltered responses to probing, and could potentially apply to IPv6 as well. We investigate two challenges in using passive traffic for address utilization inference: the limited visibility of a single observation point; and the presence of spoofed IP addresses in packets that can distort results by implying faked addresses are active. We propose a methodology for removing such spoofed traffic on both darknets and live networks, which yields results comparable to inferences made from active probing. Our preliminary analysis reveals a number of promising findings, including novel insight into the usage of the IPv4 address space that would expand with additional vantage points.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "security",
+        "network telescope",
+        "internet outages"
+    ],
+    "pubdb_id": "paper540",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:benson_karyn",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:kallitsis_michalis",
+            "organization": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "person": "person:glatz_eduard",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1252",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:1253",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2567561.2567568"
+        },
+        {
+            "from": "PubDBlinkId:1254",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/passive_ip_space_usage_estimation/passive_ip_space_usage_estimation.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "44",
+        "number": "1",
+        "pages": "42-49",
+        "linkedObjects": ""
+    }
+}

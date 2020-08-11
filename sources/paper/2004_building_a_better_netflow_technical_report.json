@@ -1,0 +1,62 @@
+{
+    "id": "2004_tr-2004-03",
+    "name": "Building a Better NetFlow: Technical Report",
+    "datePublished": "2004.6",
+    "description": "Network operators need to determine the composition of the traffic\nmix on links when looking for dominant applications, users, or\nestimating traffic matrices. Cisco's NetFlow has evolved into a\nsolution that satisfies this need by reporting flow records that\nsummarize a sample of the traffic traversing the link. But sampled\nNetFlow has shortcomings that hinder the collection and analysis\nof traffic data. First, during flooding attacks router memory and\nnetwork bandwidth consumed by flow records can increase beyond what\nis available; second, selecting the right static sampling rate is\ndifficult because no single rate gives the right tradeoff of memory\nuse versus accuracy for all traffic mixes; third, the heuristics\nrouters use to decide when a flow is reported are a poor match to\nmost applications that work with time bins; finally, it is impossible\nto estimate without bias the number of active flows for aggregates\nwith non-TCP traffic.\n\nIn this paper we propose Adaptive NetFlow, deployable through an\nupdate to router software, which addresses many shortcomings of\nNetFlow by dynamically adapting the sampling rate to achieve\nrobustness without sacrificing accuracy. To enable counting of\nnon-TCP flows, we propose an optional Flow Counting Extension that\nrequires augmenting existing hardware at routers. Both our proposed\nsolutions readily provide descriptions of the traffic of progressively\nsmaller sizes. Transmitting these at progressively higher levels\nof reliability allows graceful degradation of the accuracy of traffic\nreports in response to network congestion on the reporting path.\n\nNote: This technical report contains additional proofs of lemmas\nand more detailed measurement results.'' This is an extended version of a [paper](https://www.caida.org/publications/papers/2004/betternetflow/) presented at SIGCOMM'04, Aug. 30-Sept. 3, 2004, Portland, Oregon, USA. Copyright 2004 ACM 1-58113-862-8/04/0008.",
+    "tags": [
+        "measurement methodology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper77",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:estan_cristian",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:varghese_george",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:322",
+            "label": "gzipped postscript",
+            "to": "tr-2004-03.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:321",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/tr-2004-03/tr-2004-03.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2004_data_collection",
+    "name": "Data Collection/Provision at CAIDA",
+    "tags": [
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "lincoln_labs",
+            "date": "2004.9"
+        },
+        {
+            "presenter": "Author: Shannon, Colleen",
+            "venue": "dhs_predict_pi_meeting",
+            "date": "2004.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2004/data_collection/data_collection_dhs.pdf",
+        "https://www.caida.org/publications/presentations/2004/data_collection/data_collection_lincoln.pdf"
+    ]
+}

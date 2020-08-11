@@ -1,0 +1,20 @@
+{
+    "id": "2008_nanog_dw_ditl",
+    "name": "Day In The Life of the Internet 2008 Data Collection Event",
+    "tags": [
+        "data",
+        "measurement methodology",
+        "dns"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Wessels, Duane",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "2008.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2008/nanog_dw_ditl/ditl-2008.pdf",
+        "https://www.caida.org/publications/papers/2006/ditl_proposal"
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "id": "2010_estimating_routing_symmetry",
+    "name": "Estimating Routing Symmetry on Single Links by Passive Flow Measurements",
+    "datePublished": "2010.3",
+    "description": "The assumption of routing symmetry is often embedded into traffic\r\nanalysis and classification tools. This paper uses passively captured\r\nnetwork data to estimate the amount of traffic actually routed\r\nsymmetrically on a specic link. We propose a Flow-Based Symmetry\r\nEstimator (FSE) a set of metrics to assess symmetry in terms of\r\nflows, packets and bytes, which disregards inherently asymmetrical\r\ntraffic such as UDP, ICMP and TCP background radiation. This\r\nnormalized metric allows fair comparison of symmetry across different\r\nlinks. We evaluate our method on a large heterogeneous dataset,\r\nand confirm anecdotal reports that routing symmetry typically does\r\nnot hold for non-edge Internet links, and decreases as one moves\r\ntoward core backbone links, due to routing policy complexity. Our\r\nproposed metric for traffic asymmetry induced by routing policies will\r\nhelp the community improve traffic characterization techniques and\r\nformats, but also support quantitative formalization of routing\r\npolicy effects on links in the wild.\r\n\r\n",
+    "tags": [
+        "data",
+        "passive data analysis",
+        "measurement methodology",
+        "routing",
+        "software/tools"
+    ],
+    "pubdb_id": "paper1",
+    "venue": "acm_international_workshop_on_traffic_analysis_and_classification_trac",
+    "authors": [
+        {
+            "person": "person:john_wolfgang",
+            "organization": [
+                "Chalmers University of Technology"
+            ]
+        },
+        {
+            "person": "person:dusi_maurizio",
+            "organization": [
+                "Universita degli Studi di Brescia"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/estimating_routing_symmetry/estimating_routing_symmetry.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1563",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2010/estimating_routing_symmetry/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "ACM International Workshop on TRaffic Analysis and Classification (TRAC)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

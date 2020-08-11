@@ -4,7 +4,7 @@
     "organization": "CAIDA",
     "description": "Extensible framework for large-scale analysis of passive trace data.",
     "tags": [
-        "trafic"
+        "traffic"
     ],
     "resources": [
         {
@@ -18,11 +18,51 @@
     ],
     "links": [
         {
-            "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "to": "software:ioda",
             "label": "used by"
         },
         {
-            "to": "software:ioda",
+            "to": "paper:2014_analysis_unidirectional_ip_traffic",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial_of_service_rsdos_attack_metadata",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:the_caida_industry_evaluation_near_real_time_network_telescope_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:caida_ucsd_network_telescope_traffic_samples_formerly_the_backscatter_dataset",
             "label": "used by"
         },
         {
@@ -37,27 +77,31 @@
             "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"
         },
         {
-            "to": "paper:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "to": "paper:2016_teaching_network_security",
             "label": "used by"
         },
         {
-            "to": "paper:teaching_network_security_with_ip_darkspace_data",
+            "to": "paper:2012_dust_report",
             "label": "used by"
         },
         {
-            "to": "paper:dust_2012_workshop_report",
+            "to": "paper:nightlights_entropy_based_metrics_for_classifying_darkspace_traffic_patterns",
             "label": "used by"
         },
         {
-            "to": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
+            "to": "paper:2012_analysis_internetwide_probing_darknets",
             "label": "used by"
         },
         {
-            "to": "paper:analysis_of_internet-wide_probing_using_darknets",
+            "to": "paper:2013_aims5_report",
             "label": "used by"
         },
         {
-            "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
+            "to": "media:2012_08_corsaro",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_05_corsaro",
             "label": "used by"
         }
     ]

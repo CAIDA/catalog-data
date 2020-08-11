@@ -1,0 +1,73 @@
+{
+    "id": "2006_private_dns_updates",
+    "name": "The Windows of Private DNS Updates",
+    "datePublished": "2006.7",
+    "description": "This work is motivated by the observation of one particular type\r\nof unwanted traffic - dynamic DNS updates for private (RFC1918)\r\naddresses, which leaks to global network. This spurious traffic not\r\nonly wastes network resources but also jeopardizes security and\r\nprivacy of users.\r\nWe first look at the magnitude of these updates on two independent\r\nAS112 [1] servers. We then analyze which operating systems\r\nare responsible for these updates by using three levels of signature\r\ntechniques and find that over 97% of updates come from Windows\r\nsystems. While newer versions of Windows OSes are more stringent\r\nin sending private DNS updates, we did not observe an overall\r\ndecreasing trend due to this evolution. Users, software vendors,\r\nand system administrators can take steps to reduce this RFC1918\r\ntraffic. However, since most end users are unlikely to interfere with\r\nvendor default settings, it should be the responsibility of software\r\nvendor and system administrators to take positive action to fix this\r\nproblem.\r\n",
+    "tags": [
+        "dns",
+        "security",
+        "policy"
+    ],
+    "pubdb_id": "paper46",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:shang_hao",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:22",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/private_dns_updates/private_dns_updates.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2292",
+            "label": "Related Analysis",
+            "to": "rfc1918_analysis.xml"
+        },
+        {
+            "from": "PubDBlinkId:2291",
+            "label": "Related Tutorial",
+            "to": "disable_dns_updates.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "36",
+        "number": "3",
+        "pages": "93-98",
+        "linkedObjects": ""
+    }
+}

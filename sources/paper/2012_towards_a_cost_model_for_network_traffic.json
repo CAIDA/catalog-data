@@ -1,0 +1,61 @@
+{
+    "id": "2012_cost_model_network_traffic",
+    "name": "Towards a Cost Model for Network Traffic",
+    "datePublished": "2012.1",
+    "description": "We develop a holistic cost model that operators can use to help\r\nevaluate the costs of various routing and peering decisions. Using\r\nreal traffic data from a large carrier network, we show how network\r\noperators can use this cost model to significantly reduce the cost of\r\ncarrying traffic in their networks. We find that adjusting the routing\r\nfor a small fraction of total flows (and total traffic volume) significantly reduces cost in many cases. We also show how operators can use the cost model both to evaluate potential peering arrangements\r\nand for other network operations problems.\r\n",
+    "tags": [
+        "economics",
+        "routing"
+    ],
+    "pubdb_id": "paper513",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:motiwala_murtaza",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:feamster_nick",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:lakhina_anukool",
+            "organization": [
+                "Guavus"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:805",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2096149.2096157"
+        },
+        {
+            "from": "PubDBlinkId:804",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2012/cost_model_network_traffic/cost_model_network_traffic.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "42",
+        "number": "1",
+        "pages": "54-60",
+        "linkedObjects": ""
+    }
+}

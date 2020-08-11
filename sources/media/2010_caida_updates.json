@@ -1,0 +1,17 @@
+{
+    "id": "2010_sysnet_caida_updates",
+    "name": "CAIDA Updates",
+    "tags": [
+        "overview"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "ucsd_cse_syslunch",
+            "date": "2010.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/sysnet_caida_updates/sysnet_caida_updates.pdf"
+    ]
+}

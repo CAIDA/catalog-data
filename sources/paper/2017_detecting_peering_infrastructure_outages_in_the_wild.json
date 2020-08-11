@@ -1,0 +1,86 @@
+{
+    "id": "2017_detecting_peering_infrastructure_outages",
+    "name": "Detecting Peering Infrastructure Outages in the Wild",
+    "datePublished": "2017.8",
+    "description": "Peering infrastructures, namely, colocation facilities and Internet exchange points, are located in every major city, have hundreds of network members, and support hundreds of thousands of interconnections around the globe. These infrastructures are well provisioned and managed, but outages have to be expected, e.g., due to power failures, human errors, attacks, and natural disasters. However, little is known about the frequency and impact of outages at these critical infrastructures with high peering concentration. \r\nIn this paper, we develop a novel and lightweight methodology for detecting peering infrastructure outages. Our methodology relies on the observation that BGP communities, announced with routing updates, are an excellent and yet unexplored source of information allowing us to pinpoint outage locations with high accuracy. We build and operate a system that can locate the epi- center of infrastructure outages at the level of a building and track the reaction of networks in near real-time. Our analysis unveils four times as many outages as compared to those publicly reported over the past five years. Moreover, we show that such outages have significant impact on remote networks and peering infrastructures. Our study provides a unique view of the Internet\u2019s behavior under stress that often goes unreported.",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "routing",
+        "topology",
+        "active data analysis",
+        "congestion"
+    ],
+    "pubdb_id": "paper631",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:dietzel_christoph",
+            "organization": [
+                "DE-CIX",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:smaragdakis_georgios",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)",
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:feldmann_anja",
+            "organization": [
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:berger_arthur",
+            "organization": [
+                "Akamai",
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:aben_emile",
+            "organization": [
+                "RIPE NCC, Amsterdam, The Netherlands"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2001",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3098822.3098855"
+        },
+        {
+            "from": "PubDBlinkId:1890",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2017/detecting_peering_infrastructure_outages/detecting_peering_infrastructure_outages.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1938",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2017/detecting_peering_infrastructure_outages_sigcomm/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

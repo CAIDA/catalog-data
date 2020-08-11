@@ -1,0 +1,48 @@
+{
+    "id": "1992_isr",
+    "name": "Injecting inter-autonomous system routes into intra-autonomous system routing: a performance analysis",
+    "datePublished": "1992.1",
+    "description": "The current TCP/IP Internet may be modeled as an arbitrary\ninterconnection of autonomous systems (AS). An AS is defined to be a\ncollection of internetwork routers managed and administered by a single\nauthority or organization. Typically an AS uses a single routing\nprotocol within its boundaries to generate and propagate routing\ninformation. In this paper we analyse the performance of a technique\nthat injects only partial reachability information derived from the\ninter-AS routing into the intra-AS routing.\n\nThis performance evaluation is based on traffic data obtained from the\nNSFNET backbone. We show, for instance, that injecting just 10% of the\ntotal inter-AS reachability information into the intra-AS routing\npermits the forwarding of at least 85% of the transit traffic without\nresorting to fallback _fault_ mechanisms.",
+    "tags": [
+        "routing"
+    ],
+    "pubdb_id": "paper187",
+    "venue": "internetworking_research_and_experience",
+    "authors": [
+        {
+            "person": "person:rekhter_yakov",
+            "organization": [
+                "Watson Research Center, IBM Corp."
+            ]
+        },
+        {
+            "person": "person:chinoy_bilal",
+            "organization": [
+                "San Diego Supercomputer Center, University of California, San Diego (SDSC/UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:162",
+            "label": "gzipped postscript",
+            "to": "inject.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:161",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1992/isr/inject.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Internetworking: Research and Experience",
+        "volume": "3",
+        "number": "",
+        "pages": "189-202",
+        "linkedObjects": ""
+    }
+}

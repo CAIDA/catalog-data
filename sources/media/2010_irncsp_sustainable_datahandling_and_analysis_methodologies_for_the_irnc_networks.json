@@ -1,0 +1,20 @@
+{
+    "id": "2010_irnc_sp",
+    "name": "IRNC-SP: Sustainable data-handling and analysis methodologies for the IRNC networks",
+    "tags": [
+        "active data analysis",
+        "ipv6",
+        "passive data analysis",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Polterock, Joshua",
+            "venue": "nsf_international_research_network_connections_irnc_workshop",
+            "date": "2010.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/irnc_sp/irnc_sp.pdf"
+    ]
+}

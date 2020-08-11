@@ -1,0 +1,59 @@
+{
+    "id": "2015_bgpstream-tr",
+    "name": "BGPStream: a software framework for live and historical BGP data analysis",
+    "datePublished": "2015.10",
+    "description": "We present the design and implementation of BGPStream, an open-source software framework for the analysis of both historical and real-time Border Gateway Protocol (BGP) measurement data. Although BGP is a crucial operational component of the Internet infrastructure, and is the subject of research in the areas of Internet performance, security, topology, protocols, economics, etc., there is no standard and efficient way of processing large amounts of distributed and/or live BGP measurement data. BGPStream fills this gap, enabling efficient investigation of events, rapid prototyping, and building complex tools and efficient large-scale monitoring applications (e.g., detection of connectivity disruptions or BGP hijacking attacks). We discuss the design choices and challenges in the development of BGPStream. We apply the components of the framework to different scenarios, and we describe the development and deployment of complex services for global Internet monitoring that we built on top of it.",
+    "tags": [
+        "routing",
+        "topology",
+        "software/tools",
+        "passive data analysis",
+        "measurement methodology",
+        "security"
+    ],
+    "pubdb_id": "paper597",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:orsini_chiara",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1646",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/bgpstream-tr/bgpstream-tr.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1777",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2016/bgpstream_framework_historical_nanog/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

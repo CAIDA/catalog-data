@@ -1,0 +1,54 @@
+{
+    "id": "2008_dns_visual",
+    "name": "Influence Maps - a novel 2-D visualization of massive geographically distributed data sets",
+    "datePublished": "2008.10",
+    "description": "As the Internet has become critical infrastructure penetrating many aspects of modern society, a better understanding of its behavior is of great interest to a range of fields from science to public policy. Characteristic patterns of Internet often vary with geography, and coherent study of these geographical trends is important to optimizing operations, engineering, and capacity and service planning. However, the massive volumes of data, and its wide geographic dispersion challenge common mapping and visualizing techniques. In this paper, we present a novel visualization technique -- the Influence Map -- which renders a compressed representation of geospatially distributed Internet data.\r\n\r\nWe apply this new technique to illustrate the behavior of a critical Internet service -- specifically, the observed interactions between DNS root name servers and their clients. Efficient visualizations of these datasets reveal relationships between Internet services and users on a macroscopic scale and improve our ability to model geography-related Internet features. ",
+    "tags": [
+        "active data analysis",
+        "data",
+        "dns",
+        "software/tools",
+        "topology",
+        "visualization"
+    ],
+    "pubdb_id": "paper24",
+    "venue": "internet_protocol_forum",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:433",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/dns_visual/dns_visual.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "Internet Protocol Forum",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

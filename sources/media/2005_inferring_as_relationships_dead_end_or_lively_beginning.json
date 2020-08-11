@@ -1,0 +1,19 @@
+{
+    "id": "2005_asrelationships",
+    "name": "Inferring AS Relationships: Dead End or Lively Beginning?",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dimitropoulos, Xenofontas",
+            "venue": "workshop_on_efficient_and_experimental_algorithms_wea",
+            "date": "2005.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2005/asrelationships/WEA2005-inferring.pdf",
+        "https://www.caida.org/publications/papers/2005/asrelationships"
+    ]
+}

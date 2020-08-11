@@ -1,0 +1,54 @@
+{
+    "id": "2013_itmgen_first_principles",
+    "name": "ITMgen - A First-principles Approach to Generating Synthetic Interdomain Traffic Matrices",
+    "datePublished": "2013.6",
+    "description": "We present the design and evaluation of ITMgen, a tool for generating synthetic but representative Interdomain Traffic Matrices (ITMs). ITMgen is motivated by the observation that gravity-based models do not reflect application level or regional characteristics of Internet traffic. ITMgen works at the level of connections, taking into account the relative sizes of ASes, their popularity with respect to various applications, and the relation between forward and reverse traffic for different application types. The necessary parameters for integrating application types and the distribution of content popularity can be realistically estimated by combining public sources like Alexa that capture traffic trends at a macro level with local traffic sampling (NetFlow, DPI) for providing an additional enhancement layer at the micro level. Using the above philosophy we demonstrate that we can synthesize ITMs that match real-world measurements closer than the current state of the art. In addition, the modular design philosophy of ITMgen makes it easy to integrate additional enhancement layers that improve the accuracy of our existing implementation.",
+    "tags": [
+        "economics",
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper527",
+    "venue": "ieee_international_conference_on_communications_icc",
+    "authors": [
+        {
+            "person": "person:mikians_jakub",
+            "organization": []
+        },
+        {
+            "person": "person:laoutaris_nikolaos",
+            "organization": []
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": []
+        },
+        {
+            "person": "person:barlet-ros_pere",
+            "organization": []
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1355",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1109/ICC.2013.6654910"
+        },
+        {
+            "from": "PubDBlinkId:835",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2013/itmgen_first_principles/itmgen_first_principles.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE International Conference on Communications (ICC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "2507 - 2512 ",
+        "linkedObjects": ""
+    }
+}

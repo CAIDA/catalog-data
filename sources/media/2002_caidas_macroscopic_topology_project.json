@@ -1,0 +1,20 @@
+{
+    "id": "2002_SkitterOverview",
+    "name": "CAIDA's Macroscopic Topology Project",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "symposium_on_applications_and_the_internet_saint",
+            "date": "2002.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2002/SkitterOverview/nara_2002.ps.gz",
+        "https://www.caida.org/publications/presentations/2002/SkitterOverview/nara_2002.pdf",
+        "https://www.caida.org/publications/papers/2002/SkitterOverview"
+    ]
+}

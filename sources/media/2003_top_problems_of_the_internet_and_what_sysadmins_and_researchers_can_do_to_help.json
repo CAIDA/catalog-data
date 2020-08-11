@@ -1,0 +1,19 @@
+{
+    "id": "2003_netproblems_lisa03",
+    "name": "top problems of the Internet and what sysadmins and researchers can do to help",
+    "tags": [
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "usenix_large_installation_system_administration_lisa",
+            "date": "2003.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/netproblems_lisa03/netproblems_lisa2003.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/netproblems_lisa03/html/index.html",
+        "https://www.caida.org/publications/presentations/2003/netproblems_lisa03/netproblems_lisa2003.pdf"
+    ]
+}

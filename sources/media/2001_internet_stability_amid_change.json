@@ -1,0 +1,17 @@
+{
+    "id": "2001_BGP2001dec",
+    "name": "Internet stability amid change",
+    "tags": [
+        "routing"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2001.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/BGP2001dec/index.html"
+    ]
+}

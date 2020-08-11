@@ -1,0 +1,37 @@
+{
+    "id": "2000_ieee0001",
+    "name": "Measuring the Internet",
+    "datePublished": "2000.1",
+    "description": "Internet traffic behavior has been resistant to modeling. The reasons\nderive from the Internet's evolution as a composition of independently\ndeveloped and deployed (and by no means synergistic) protocols,\ntechnologies, and core applications. Moreover, this evolution, though\n\"punctuated\" by new technologies, has experienced no equilibrium thus\nfar.\n\nThe state of the art, or lack thereof, in high-speed measurement is\nneither surprising nor profound. It is a natural consequence of the\neconomic imperatives in the current industry, where empirically\ngrounded research in wide-area Internet modeling has been an obvious\ncasualty. Specifically, the engineering know-how required to develop\nadvanced measurement technologies, whether in software or hardware, is\nessentially the same skill set required to develop advanced routing and\nswitching capabilities. Since the latter draw far greater interest, and\nprofit, from the marketplace, it is where the industry allocates\nengineering talent.\n\nA common complaint about traffic measurement studies is that they do\nnot sustain relevance in this environment where traffic, technology,\nand topology change faster than we can measure them. Moreover, the\nproliferation of media and protocols make the acquisition of traffic\ndata almost prohibitively complicated and costly. And finally, the time\nrequired to analyze and validate data means that most research efforts\nare obsolete by the time findings are published.\n\nThus, far from having an analytic handle on the Internet, we lack in\nmost cases the ability even to measure traffic at a granularity that\nwould enable infrastructure-level research. As a result, while the core\nof the Internet continues its rapid evolution, measurement and modeling\nof it progress at a leisurely pace.\n\n",
+    "tags": [
+        "policy"
+    ],
+    "pubdb_id": "paper129",
+    "venue": "ieee_internet_computing",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:497",
+            "label": "HTML",
+            "to": "ieee0001.xml"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "IEEE Internet Computing",
+        "volume": "4",
+        "number": "1",
+        "pages": "73-75",
+        "linkedObjects": ""
+    }
+}

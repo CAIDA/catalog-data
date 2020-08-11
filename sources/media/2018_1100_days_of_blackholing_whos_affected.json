@@ -1,0 +1,19 @@
+{
+    "id": "2018_1100_days_blackholing_aims",
+    "name": "1100 Days of Blackholing Who\u2019s Affected?",
+    "tags": [
+        "security",
+        "measurement methodology",
+        "network telescope"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Jonker, Mattijs",
+            "venue": "workshop_on_active_internet_measurements_aims",
+            "date": "2018.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/1100_days_blackholing_aims/1100_days_blackholing_aims.pdf"
+    ]
+}

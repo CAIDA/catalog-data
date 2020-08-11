@@ -1,0 +1,19 @@
+{
+    "id": "2016_bgpstream_2016_romatre",
+    "name": "BGPStream 2016",
+    "tags": [
+        "internet outages",
+        "routing",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "roma_tre_university",
+            "date": "2016.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/bgpstream_2016_romatre/bgpstream_2016_romatre.pdf"
+    ]
+}

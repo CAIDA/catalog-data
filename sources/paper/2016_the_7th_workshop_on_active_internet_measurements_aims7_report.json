@@ -1,0 +1,48 @@
+{
+    "id": "2016_aims2015_report",
+    "name": "The 7th Workshop on Active Internet Measurements (AIMS-7) Report",
+    "datePublished": "2016.1",
+    "description": "On 31 March - 2 April 2015, CAIDA hosted the seventh Workshop on Active Internet Measurements (AIMS-7) as part of our series of Internet Statistics and Metrics Analysis (ISMA) workshops. As with previous AIMS workshops, the goals were to further our understanding of the potential and limitations of active measurement research and infrastructure in the wide-area Internet, and to promote cooperative solutions and coordinated strategies between academics, industry, policymakers, and funding agencies. This report describes topics discussed at the workshop, including current state of Ark and related infrastructure, current and proposed experiments using these infrastructures, and participants\u2019 views of challenges and priorities. Materials related to the workshop are at [https://www.caida.org/workshops/aims/1503/](https://www.caida.org/workshops/aims/1503/).",
+    "tags": [
+        "workshop report",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper593",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1786",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2875951.2875960"
+        },
+        {
+            "from": "PubDBlinkId:1637",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2016/aims2015_report/aims2015_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1638",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/aims/1503/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "46",
+        "number": "1",
+        "pages": "50-57",
+        "linkedObjects": ""
+    }
+}

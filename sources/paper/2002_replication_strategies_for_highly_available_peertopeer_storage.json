@@ -1,0 +1,55 @@
+{
+    "id": "2002_fudico",
+    "name": "Replication Strategies for Highly Available Peer-to-Peer Storage ",
+    "datePublished": "2002.5",
+    "description": "In the past few years, peer-to-peer networks have become an extremely popular mechanism\r\nfor large-scale content sharing. Unlike traditional client-server applications,\r\nwhich centralize the management of data in a few highly reliable servers, peer-to-peer\r\nsystems distribute the burden of data storage, computation, communications and administration\r\namong thousands of individual client workstations. While the popularity\r\nof this approach, exemplified by systems such as Gnutella, was driven by the\r\npopularity of unrestricted music distribution, newer work has expanded the potential\r\napplication base to generalized distributed file systems, persistent anonymous\r\npublishing, as well as support for high-quality video distribution. The widespread\r\nattraction of the peer-to-peer model arises primarily from its potential for both\r\nlow-cost scalability and enhanced availability. Ideally a peer-to-peer system could ef-\r\nficiently multiplex the resources and connectivity of its workstations across all of its\r\nusers while at the same time protecting its users from transient or persistent failures in\r\na subset of its components.\r\n\r\nHowever, these goals are not trivially engineered. First-generation peer-to-peer\r\nsystems, such as Gnutella, scaled poorly due to the overhead in locating content within\r\nthe network. Consequently, developing efficient lookup algorithms has consumed most\r\nof the recent academic work in this area. The challenges in providing high\r\navailability to such systems is more poorly understood and only now being studied.\r\nIn particular, unlike traditional distributed systems, the individual components of a\r\npeer-to-peer system experience an order of magnitude worse availability -- individually\r\nadministered workstations may be turned on and off, join and leave the system, have intermittent\r\nconnectivity, and are constructed from low-cost low-reliability components.\r\nOne recent study of a popular peer-to-peer file sharing system found that the majority\r\nof peers had application-level availability rates of under 20 percent.\r\n\r\nAs a result, all peer-to-peer systems must employ some form of replication to provide\r\nacceptable service to their users. In systems such as Gnutella, this replication\r\noccurs implicitly as each file downloaded by a user is implicitly replicated at the user's\r\nworkstation. However, since these systems do not explicitly manage replication or\r\nmask failures, the availability of an object is fundamentally linked to its popularity and\r\nusers have to repeatedly access different replicas until they find one on an available\r\nhost. Next-generation peer-to-peer storage systems, such as the Cooperative File System\r\n(CFS), recognize the need to mask failures from the user and implement a basic\r\nreplication strategy that is independent of the user workload.\r\n\r\nWhile most peer-to-peer systems employ some form of data redundancy to cope\r\nwith failure, these solutions are not well-matched to the underlying host failure distribution\r\nor the level of availability desired by users. Consequently, it remains unclear\r\nwhat availability guarantees can be made using existing systems, or conversely how to\r\nbest achieve a desired level of availability using the mechanisms available.\r\n\r\nIn our work we are exploring replication strategy design trade-offs along several\r\ninterdependent axes: Replication granularity, replica placement, and application characteristics,\r\neach of which we address in subsequent sections. The closest analog to our\r\nwork is that of Weatherspoon and Kubiatowicz who compare the availability provided\r\nby erasure coding and whole file replication under particular failure assumptions.\r\nThe most critical differences between this work and our own revolve around the failure\r\nmodel. In particular,Weatherspoon and Kubiatowicz focus on disk failure as the dominant\r\nfactor in data availability and consequently miss the distinction between short and\r\nlong time scales that is critical to deployed peer-to-peer systems. Consequently, their\r\nmodel is likely to overestimate true file availability in this environment.\r\n",
+    "tags": [
+        "peer-to-peer"
+    ],
+    "pubdb_id": "paper105",
+    "venue": "future_directions_in_distributed_computing_fudico",
+    "authors": [
+        {
+            "person": "person:bhagwan_ranjita",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:voelker_geoffrey",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:513",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2002/fudico/fudico2002.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Future Directions in Distributed Computing (FuDiCO)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

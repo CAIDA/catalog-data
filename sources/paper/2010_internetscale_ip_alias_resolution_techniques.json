@@ -1,0 +1,41 @@
+{
+    "id": "2010_alias_resolution",
+    "name": "Internet-Scale IP Alias Resolution Techniques",
+    "datePublished": "2010.1",
+    "description": "The well-known traceroute probing method discovers links between interfaces on Internet routers. IP alias resolution, the process of identifying IP addresses belonging to the same router, is a critical step in producing Internet topology maps. We compare the performance and accuracy of known alias resolution techniques, propose some enhancements, and suggest a practical combination of techniques that can produce the most accurate and complete IP-to-router mapping at macroscopic scale.",
+    "tags": [
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "software/tools",
+        "topology"
+    ],
+    "pubdb_id": "paper3",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:3",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/alias_resolution/alias_resolution.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "40",
+        "number": "1",
+        "pages": "50-55",
+        "linkedObjects": ""
+    }
+}

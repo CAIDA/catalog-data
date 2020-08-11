@@ -1,0 +1,21 @@
+{
+    "id": "2017_challenges_inferring_internet_congestion_imc",
+    "name": "Challenges in Inferring Internet Congestion Using Throughput Measurements",
+    "tags": [
+        "congestion",
+        "measurement methodology",
+        "passive data analysis",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dhamdhere, Amogh",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/challenges_inferring_internet_congestion_imc/challenges_inferring_internet_congestion_imc.pdf",
+        "https://www.caida.org/publications/papers/2017/challenges_inferring_internet_congestion/"
+    ]
+}

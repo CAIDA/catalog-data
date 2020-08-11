@@ -1,0 +1,76 @@
+{
+    "id": "2014_challenges_inferring_interdomain_congestion",
+    "name": "Challenges in Inferring Internet Interdomain Congestion",
+    "datePublished": "2014.11",
+    "description": "We introduce and demonstrate the utility of a method to localize and quantify inter-domain congestion in the Internet. Our Time Sequence Latency Probes (TSLP) method depends on two facts: Internet traffic patterns are typically diurnal, and queues increase packet delay through a router during periods of adjacent link congestion. Repeated round trip delay measurements from a single test point to the two edges of a congested link will show sustained increased latency to the far (but not to the near) side of the link, a delay pattern that differs from the typical diurnal pattern of an uncongested link. We describe our technique and its surprising potential, carefully analyze the biggest challenge with the methodology (interdomain router-level topology inference), describe other less severe challenges, and present initial results that are sufficiently promising to motivate further attention to overcoming the challenges.",
+    "tags": [
+        "active data analysis",
+        "data",
+        "measurement methodology",
+        "policy",
+        "topology",
+        "congestion"
+    ],
+    "pubdb_id": "paper567",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1530",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1145/2663716.2663741"
+        },
+        {
+            "from": "PubDBlinkId:1529",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/challenges_inferring_interdomain_congestion/challenges_inferring_interdomain_congestion.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1534",
+            "label": "Related Presentation",
+            "to": "/publications/presentations/2014/challenges_inferring_internet_interdomain_congestion_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "15-22",
+        "linkedObjects": ""
+    }
+}

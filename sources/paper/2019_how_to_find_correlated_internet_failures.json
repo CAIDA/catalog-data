@@ -1,0 +1,74 @@
+{
+    "id": "2019_how_find_correlated_internet",
+    "name": "How to Find Correlated Internet Failures",
+    "datePublished": "2019.3",
+    "description": "Even as residential users increasingly rely upon the Internet, connectivity sometimes fails. Characterizing small-scale failures of last mile networks is essential to improving Internet reliability. In this paper, we develop and evaluate an approach to detect Internet failure events that affect multiple users simultaneously using measurements from the Thunderping project. Thunderping probes addresses across the U.S. when the areas in which they are geo-located are affected by severe weather alerts. It detects a disruption event when an IP address ceases to respond to pings. In this paper, we focus on simultaneous disruptions of multiple addresses that are related to each other by geography and ISP, and thus are indicative of a shared cause. Using binomial testing, we detect groups of per-IP disruptions that are unlikely to have happened independently. We characterize these dependent disruption events and present results that challenge conventional wisdom on how such outages affect Internet address blocks.",
+    "tags": [
+        "internet outages",
+        "routing",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper670",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:padmanabhan_ramakrishna",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Maryland, College Park"
+            ]
+        },
+        {
+            "person": "person:schulman_aaron",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:levin_dave",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        },
+        {
+            "person": "person:spring_neil",
+            "organization": [
+                "University of Maryland, College Park"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2149",
+            "label": "DOI",
+            "to": "https://doi.org/10.1007/978-3-030-15986-3_14"
+        },
+        {
+            "from": "PubDBlinkId:2095",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/how_find_correlated_internet/how_find_correlated_internet.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2096",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/how_find_correlated_internet_pam/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

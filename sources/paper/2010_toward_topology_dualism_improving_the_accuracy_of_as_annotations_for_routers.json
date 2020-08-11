@@ -1,0 +1,62 @@
+{
+    "id": "2010_as_assignment",
+    "name": "Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers",
+    "datePublished": "2010.4",
+    "description": "To describe, analyze, and model the topological and structural characteristics of the Internet, researchers use Internet maps constructed at the router or autonomous system (AS) level. Although progress has been made on each front individually, a dual graph representing connectivity of routers with AS labels remains an elusive goal. We take steps toward merging the router-level and AS-level views of the Internet. We start from a collection of traces, i.e. sequences of IP addresses obtained with large-scale traceroute measurements from a distributed set of vantage points. We use state-of-the-art alias resolution techniques to identify interfaces belonging to the same router. We develop novel heuristics to assign routers to ASes, producing an AS-router dual graph. We validate our router assignment heuristics using data provided by tier-1 and tier-2 ISPs and five research networks, and show that we successfully assign 80% of routers with interfaces from multiple ASes to the correct AS. When we include routers with interfaces from a single AS, the accuracy drops to 71%, due to the 24% of total inferred routers for which our measurement or alias resolution fails to find an interface belonging to the correct AS. We use our dual graph construct to estimate economic properties of the AS-router dual graph, such as the number of internal and border routers owned by different types of ASes. We also demonstrate how our techniques can improve IP-AS mapping, including resolving up to 62% of\r\nfalse loops we observed in AS paths derived from traceroutes.\r\n",
+    "tags": [
+        "active data analysis",
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper6",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:4",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:5",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/as_assignment/as_assignment.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

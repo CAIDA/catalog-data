@@ -1,0 +1,19 @@
+{
+    "id": "2003_wiapp03",
+    "name": "Spectroscopy of Private DNS Update Sources",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "ieee_workshop_on_internet_applications_wiapp",
+            "date": "2003.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/wiapp03/sdu.wiapp03.slides.ps.gz",
+        "https://www.caida.org/publications/presentations/2003/wiapp03/sdu.wiapp03.slides.pdf"
+    ]
+}

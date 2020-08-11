@@ -1,0 +1,55 @@
+{
+    "id": "1993_tcnb",
+    "name": "Traffic characteristics of the T1 NSFNET backbone",
+    "datePublished": "1993.1",
+    "description": "This paper presents the results of a measurement study of the T1 NSFNET\r\nbackbone. We first discuss the measurement environment and approach to\r\ndata collection. We then present measurements results for: long-term\r\ngrowth in traffic volume, including attribution to domains and\r\nprotocols; trend in average packet size on the network, both over long\r\nand medium term intervals; most popular sources, destinations, and site\r\npairs; traffic locality; international distribution of traffic; mean\r\nutilization statistics, both of the overall backbone as well as of\r\nspecific links of interest; and delay statistics.\r\n\r\n",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper178",
+    "venue": "ieee_conference_on_computer_communications_infocom",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        },
+        {
+            "person": "person:polyzos_george",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:braun_hans-werner",
+            "organization": [
+                "Applied Network Research, San Diego Supercomputer Center, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:379",
+            "label": "gzipped postscript",
+            "to": "nsfnet-t1-stats.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:378",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/1993/tcnb/nsfnet-t1-stats.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Computer Communications (INFOCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "2",
+        "number": "",
+        "pages": "885-893",
+        "linkedObjects": ""
+    }
+}

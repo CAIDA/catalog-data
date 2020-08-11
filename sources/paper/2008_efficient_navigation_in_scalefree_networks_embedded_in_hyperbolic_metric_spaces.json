@@ -1,0 +1,56 @@
+{
+    "id": "2008_efficient_navigation_scale_free",
+    "name": "Efficient Navigation in Scale-Free Networks Embedded in Hyperbolic Metric Spaces",
+    "datePublished": "2008.5",
+    "description": "In this work we show that: i) the roughly hierarchical structure of complex networks is congruent with negatively curved geometries hidden beneath the observed topologies; ii) the most straightforward mapping of nodes to spaces of negative curvature naturally leads to the emergence of scale-free topologies; and iii) greedy routing on this embedding is efficient for these topologies, achieving both 100% reachability and optimal path lengths, even under dynamic network conditions. The critical important question left by this work is whether the topologies of real networks can be mapped into appropriate hidden hyperbolic metric spaces.\r\n\r\n",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "pubdb_id": "paper30",
+    "venue": "arxiv_condmatstatmech08051266",
+    "authors": [
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:papadopoulos_fragkiskos",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bogu\u00f1\u00e1_mari\u00e1n",
+            "organization": [
+                "Departament de F\u00edsica Fonamental, Universitat de Barcelona"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:13",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2008/efficient_navigation_scale_free/efficient_navigation_scale_free.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "arXiv cond-mat.stat-mech/0805.1266",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

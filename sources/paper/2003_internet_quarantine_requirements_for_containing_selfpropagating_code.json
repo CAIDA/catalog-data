@@ -1,0 +1,60 @@
+{
+    "id": "2003_quarantine",
+    "name": "Internet Quarantine: Requirements for Containing Self-Propagating Code",
+    "datePublished": "2003.4",
+    "description": "It has been clear since 1988 that self-propagating\r\ncode can quickly spread across a network by exploiting homoge-neous\r\nsecurity vulnerabilities. However, the last few years have\r\nseen a dramatic increase in the frequency and virulence of such\r\n\"worm\" outbreaks. For example, the Code-Red worm epidemics\r\nof 2001 infected hundreds of thousands of Internet hosts in a very\r\nshort period - incurring enormous operational expense to track\r\ndown, contain, and repair each infected machine. In response\r\nto this threat, there is considerable effort focused on developing\r\ntechnical means for detecting and containing worm infections\r\nbefore they can cause such damage.\r\n\r\nThis paper does not propose a particular technology to address\r\nthis problem, but instead focuses on a more basic question: How\r\nwell will any such approach contain a worm epidemic on the\r\nInternet? We describe the design space of worm containment\r\nsystems using three key parameters- reaction time, contain-ment\r\nstrategy and deployment scenario. Using a combination of\r\nanalytic modeling and simulation, we describe how each of these\r\ndesign factors impacts the dynamics of a worm epidemic and,\r\nconversely, the minimum engineering requirements necessary to\r\ncontain the spread of a given worm. While our analysis cannot\r\nprovide definitive guidance for engineering defenses against all\r\nfuture threats, we demonstrate the lower bounds that any such\r\nsystem must exceed to be useful today. Unfortunately, our results\r\nsuggest that there are significant technological and administrative\r\ngaps to be bridged before an effective defense can be provided\r\nin today's Internet.\r\n",
+    "tags": [
+        "security"
+    ],
+    "pubdb_id": "paper99",
+    "venue": "ieee_conference_on_computer_communications_infocom",
+    "authors": [
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:shannon_colleen",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:voelker_geoffrey",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:savage_stefan",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:695",
+            "label": "gzipped postscript",
+            "to": "quarantine.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:694",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/quarantine/worm-infocom03.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Computer Communications (INFOCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "1901-1910",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2000_xmlweb",
+    "name": "CAIDA's XML-based Web Publishing Environment",
+    "tags": [
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Murray, Margaret",
+            "venue": "caida",
+            "date": "2000.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/xmlweb/index.html",
+        "https://www.caida.org/publications/presentations/2000/xmlweb/xmlweb.ppt"
+    ]
+}

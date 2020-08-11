@@ -1,0 +1,20 @@
+{
+    "id": "2016_as_intro_visualization_ucsd",
+    "name": "Autonomous Systems (AS) Introduction and Visualization",
+    "tags": [
+        "visualization",
+        "topology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "uc_san_diego",
+            "date": "2016.1"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/as_intro_visualization_ucsd/supplemental/",
+        "https://www.caida.org/publications/presentations/2016/as_intro_visualization_ucsd/as_intro_visualization_ucsd.pdf"
+    ]
+}

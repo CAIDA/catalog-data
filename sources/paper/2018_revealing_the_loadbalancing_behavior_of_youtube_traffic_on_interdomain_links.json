@@ -1,0 +1,69 @@
+{
+    "id": "2018_revealing_load_balancing_behavior",
+    "name": "Revealing the Load-balancing Behavior of YouTube Traffic on Interdomain Links",
+    "datePublished": "2018.3",
+    "description": "For the last decade, YouTube has consistently been a dominant source of traffic on the Internet. To improve the quality of experience (QoE) for YouTube users, broadband access providers and Google apply techniques to load balance the extraordinary volume of web requests and traffic. We use traceroute-based measurement methods to infer these techniques for assigning YouTube requests to specific Google video content caches, including the interconnection links between the access providers and Google. We then use a year of measurements (mid2016 to mid-2017) collected from SamKnows probes hosted by broadband customers spanning a major ISP in the U.S. and three ISPs in Europe. We investigate two possible causes of different interdomain link usage behavior. We also compare the YouTube video cache hostnames and IPs observed by the probes, and find that the selection of video cache has little impact on BGP selection of interdomain links.",
+    "tags": [
+        "bandwidth estimation",
+        "caching",
+        "congestion",
+        "measurement methodology",
+        "QoE"
+    ],
+    "pubdb_id": "paper647",
+    "venue": "passive_and_active_measurement_conference_pam",
+    "authors": [
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bajpai_vaibhav",
+            "organization": [
+                "Technische Universitat Munchen, Germany"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1982",
+            "label": "Data Supplement",
+            "to": "http://data.caida.org/datasets/2018-pam-youtube-load-balancing"
+        },
+        {
+            "from": "PubDBlinkId:1998",
+            "label": "DOI",
+            "to": "http://dx.doi.org/10.1007/978-3-319-76481-8_17"
+        },
+        {
+            "from": "PubDBlinkId:1966",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/revealing_load_balancing_behavior/revealing_load_balancing_behavior.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Measurement Conference (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

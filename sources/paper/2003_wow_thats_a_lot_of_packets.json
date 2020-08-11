@@ -1,0 +1,53 @@
+{
+    "id": "2003_dnspackets",
+    "name": "Wow, That's a lot of packets",
+    "datePublished": "2003.4",
+    "description": "\nIn this paper we characterize DNS clients that send large numbers\nof queries to root DNS servers. Analysis of trace data from the two\nF root servers shows a number of interesting characteristics. Many\nroot server clients send an excessive number of packets. We describe\na few of the busiest sources in detail. After classifying each\nquery from the trace, we find that a very small percentage of the\ntotal traffic is legitimate.\n",
+    "tags": [
+        "dns"
+    ],
+    "pubdb_id": "paper97",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:wessels_duane",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:61",
+            "label": "gzipped postscript",
+            "to": "/publications/papers/2003/dnspackets/wessels-pam2003.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:62",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/dnspackets//publications/papers/2003/dnspackets/wessels-pam2003.pdf"
+        },
+        {
+            "from": "PubDBlinkId:63",
+            "label": "Press Coverage",
+            "to": "/publications/papers/2003/dnspackets/press/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2010_reno_epidemics_social_nets",
+    "name": "Epidemics in Social Networks",
+    "tags": [
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Kitsak, Maksim",
+            "venue": "university_of_nevada_reno",
+            "date": "2010.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2010/reno_epidemics_social_nets/reno_epidemics_social_nets.pdf",
+        "https://www.caida.org/publications/presentations/2010/reno_epidemics_social_nets/reno_epidemics_social_nets.pptx"
+    ]
+}

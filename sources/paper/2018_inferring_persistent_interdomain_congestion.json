@@ -1,0 +1,104 @@
+{
+    "id": "2018_inferring_persistent_interdomain_congestion",
+    "name": "Inferring Persistent Interdomain Congestion",
+    "datePublished": "2018.8",
+    "description": "There is significant interest in the technical and policy communities regarding the extent,scope, and consumer harm of persistent interdomain congestion. We provide empirical grounding for discussions of interdomain congestion by developing a system and method to measure congestion on thousands of interdomain links without direct access to them. We implement a system based on the Time Series Latency Probes (TSLP) technique that identifies links with evidence of recurring congestion suggestive of an under-provisioned link. We deploy our system at 86 vantage points worldwide and show that congestion inferred using our lightweight TSLP method correlates with other metrics of interconnection performance impairment. We use our method to study interdomain links of eight large U.S. broadband access providers from March 2016 to December 2017, and validate our inferences against ground-truth traffic statistics from two of the providers. For the period of time over which we gathered measurements, we did not find evidence of widespread endemic congestion on interdomain links between access ISPs and directly connected transit and content providers, although some such links exhibited recurring congestion patterns. We describe limitations, open challenges, and a path toward the use of this method for large-scale third-party monitoring of the Internet interconnection ecosystem.'' This paper was awarded Best Paper at SIGCOMM 2018.",
+    "tags": [
+        "congestion",
+        "measurement methodology",
+        "passive data analysis",
+        "topology"
+    ],
+    "pubdb_id": "paper655",
+    "venue": "acm_sigcomm",
+    "authors": [
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:gamero-garrido_alexander",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:akiwate_gautam",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:gogia_kabir",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:bajpai_vaibhav",
+            "organization": [
+                "TU Munich"
+            ]
+        },
+        {
+            "person": "person:snoeren_alex",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2017",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3230543.3230549"
+        },
+        {
+            "from": "PubDBlinkId:2018",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/inferring_persistent_interdomain_congestion/inferring_persistent_interdomain_congestion.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2022",
+            "label": "Related Presentation",
+            "to": "/publications/presentations/2018/inferring_persistent_interdomain_congestion_sigcomm/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM SIGCOMM",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

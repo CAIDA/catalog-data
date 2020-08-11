@@ -1,0 +1,19 @@
+{
+    "id": "2016_nat_revelio_pam",
+    "name": "NAT Revelio: Detecting NAT444 in the ISP",
+    "tags": [
+        "ipv6",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2016.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2016/nat_revelio_pam/nat_revelio_pam.pdf",
+        "https://www.caida.org/publications/papers/2016/nat_revelio/"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2012_cart_capa_crit_cyber",
+    "name": "Cartographic Capabilities for Critical Cyberinfrastructure (C4) ",
+    "tags": [
+        "active data analysis",
+        "data",
+        "economics",
+        "measurement methodology",
+        "overview",
+        "software/tools",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "cyber_security_division_pi_meeting",
+            "date": "2012.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/cart_capa_crit_cyber/cart_capa_crit_cyber.pdf"
+    ]
+}

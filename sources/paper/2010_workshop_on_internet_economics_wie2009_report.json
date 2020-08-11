@@ -1,0 +1,48 @@
+{
+    "id": "2010_wie_report",
+    "name": "Workshop on Internet Economics (WIE2009) Report",
+    "datePublished": "2010.4",
+    "description": "On September 23, 2009, CAIDA hosted a virtual Workshop on Internet Economics to bring together network technology and policy researchers, commercial Internet facilities and service providers, and communications regulators to explore a common goal: _framing\r\na concrete agenda for the emerging but empirically stunted field of Internet infrastructure economics_. With participants stretching\r\nfrom Washington D.C. to Queensland, Australia, we used the electronic conference hosting facilities supported by the California Institute of Technology (CalTech) EVO Collaboration Network. This report describes the workshop discussions and identifies relevant\r\nopen research questions identified by participants.\r\n",
+    "tags": [
+        "policy",
+        "workshop report"
+    ],
+    "pubdb_id": "paper7",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:178",
+            "label": "DOI",
+            "to": "http://doi.acm.org/10.1145/1764873.1764883"
+        },
+        {
+            "from": "PubDBlinkId:179",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2010/wie_report/wie_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1401",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/wie/0909/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "40",
+        "number": "2",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

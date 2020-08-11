@@ -1,0 +1,23 @@
+{
+    "id": "2017_mapping_our_way_dhsrd",
+    "name": "Mapping our Way to a More Secure Internet",
+    "tags": [
+        "internet outages",
+        "security",
+        "routing",
+        "topology",
+        "measurement methodology",
+        "active data analysis",
+        "congestion"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_rd_showcase_and_technical_workshop",
+            "date": "2017.7"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/mapping_our_way_dhsrd/mapping_our_way_dhsrd.pdf"
+    ]
+}

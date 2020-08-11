@@ -1,0 +1,24 @@
+{
+    "id": "2015_ioda_fcc",
+    "name": "IODA - Internet Outages: Detection & Analysis",
+    "tags": [
+        "internet outages",
+        "routing",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "federal_communications_commission_fcc",
+            "date": "2015.3"
+        },
+        {
+            "presenter": "Author: Dainotti, Alberto",
+            "venue": "dhs_national_cybersecurity_and_communications_integration_center_ncicc",
+            "date": "2015.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/ioda_fcc/ioda_fcc.pdf"
+    ]
+}

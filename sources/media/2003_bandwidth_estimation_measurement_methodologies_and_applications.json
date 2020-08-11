@@ -1,0 +1,19 @@
+{
+    "id": "2003_bwest-doe",
+    "name": "bandwidth estimation: measurement methodologies and applications",
+    "tags": [
+        "bandwidth estimation",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "doe_energy_sciences_network_esnet",
+            "date": "2003.2"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/bwest-doe/index.html",
+        "https://www.caida.org/publications/papers/2003/bwestmetrics"
+    ]
+}

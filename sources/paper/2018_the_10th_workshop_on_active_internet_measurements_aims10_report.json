@@ -1,0 +1,54 @@
+{
+    "id": "2018_aims2018_report",
+    "name": "The 10th Workshop on Active Internet Measurements (AIMS-10) Report",
+    "datePublished": "2018.10",
+    "description": "On 13-15 March 2018, CAIDA hosted its tenth Workshop on Active Internet Measurements (AIMS-10). This workshop series provides a forum for stakeholders in Internet active measurement projects to communicate their interests and concerns, and explore cooperative approaches to maximizing the collective benefit of deployed infrastructure and gathered data. An overarching theme this year was how to inform new legislation of communications policy in the U.S. Given the continued limited insight into Internet operations by researchers and policymakers, we tried to focus these discussions on what data is or could be measured to shape and support current and emerging policy debates. Materials related to the workshop are at https://www.caida.org/workshops/aims/1803/.",
+    "tags": [
+        "measurement methodology",
+        "workshop report"
+    ],
+    "pubdb_id": "paper666",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2069",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3310165.3310171"
+        },
+        {
+            "from": "PubDBlinkId:2067",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/aims2018_report/aims2018_report.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2068",
+            "label": "Related Workshop",
+            "to": "https://www.caida.org/workshops/aims/1803/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "48",
+        "number": "5",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

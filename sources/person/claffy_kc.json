@@ -1,9 +1,6 @@
 {
     "id": "claffy_kc",
-    "nameFirst": "kc",
-    "nameLast": "claffy",
-    "names":[{
-        "first":"Kimberley",
-        "last":"Claffy"
-    }]
+    "organization": [
+        "Department of Computer Science and Engineering, University of California, San Diego"
+    ]
 }

@@ -1,0 +1,66 @@
+{
+    "id": "2019_learning_regexes_extract_router",
+    "name": "Learning Regexes to Extract Router Names from Hostnames",
+    "datePublished": "2019.10",
+    "description": "We present the design, implementation, evaluation, and validation of a system that automatically learns to extract router names (router identifiers) from hostnames stored by network operators in different DNS zones, which we represent by regular expressions (regexes). Our supervised-learning approach evaluates automatically generated candidate regexes against sets of hostnames for IP addresses that other alias resolution techniques previously inferred to identify interfaces on the same router. Conceptually, if three conditions hold: (1) a regex extracts the same value from a set of hostnames associated with IP addresses on the same router; (2) the value is unique to that router; and (3) the regex extracts names for multiple routers in the suffix, then we conclude the regex accurately represents the naming convention for the suffix. We train our system using router aliases inferred from active probing to learn regexes for 2550 different suffixes.\r\n\r\nWe then demonstrate the utility of this system by using the regexes to find 105% additional aliases for these suffixes. Regexes inferred in IPv4 perfectly predict aliases for \u224885% of suffixes with IPv6 aliases, i.e., IPv4 and IPv6 addresses representing the same underlying router, and find 9.0 times more routers in IPv6 than found by prior techniques.'' The data supplement is designed to be used with sc_hoiho, which is included\r\nas part of [scamper](https://www.caida.org/tools/measurement/scamper/).",
+    "tags": [
+        "topology",
+        "measurement methodology",
+        "software/tools"
+    ],
+    "pubdb_id": "paper689",
+    "venue": "acm_internet_measurement_conference_imc",
+    "authors": [
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2199",
+            "label": "Data Supplement",
+            "to": "http://data.caida.org/datasets/supplement/2019-imc-hoiho/"
+        },
+        {
+            "from": "PubDBlinkId:2231",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3355369.3355589"
+        },
+        {
+            "from": "PubDBlinkId:2203",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/learning_regexes_extract_router/learning_regexes_extract_router.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2210",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/learning_extract_router_names_imc/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ACM Internet Measurement Conference (IMC)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "id": "2006_as_topology",
+    "name": "The Internet AS-Level Topology: Three Data Sources and One Definitive Metric",
+    "datePublished": "2006.1",
+    "description": "We calculate an extensive set of characteristics for Internet AS topologies extracted from the three data sources most frequently used by the research community: traceroutes, BGP, and WHOIS. We discover that traceroute and BGP topologies are similar to one another but differ substantially from the WHOIS topology. Among the widely considered metrics, we find that the joint degree distribution appears to fundamentally characterize Internet AS topologies as well as narrowly define values for other important metrics. We discuss the interplay between the specifics of the three data collection mechanisms and the resulting topology views. In particular, we show how the data collection peculiarities explain differences in the resulting joint degree distributions of the respective topologies. Finally, we release to the community the input topology datasets, along with the scripts and output of our calculations. This supplement should enable researchers to validate their models against real data and to make more informed selection of topology data sources for their specific needs.\r\n",
+    "tags": [
+        "topology"
+    ],
+    "pubdb_id": "paper51",
+    "venue": "acm_sigcomm_computer_communication_review_ccr",
+    "authors": [
+        {
+            "person": "person:mahadevan_priya",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        },
+        {
+            "person": "person:krioukov_dmitri",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "Georgia Institute of Technology (Georgia Tech)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:vahdat_amin",
+            "organization": [
+                "University of California, San Diego (UCSD)"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:26",
+            "label": "Data Supplement",
+            "to": "/research/topology/as_topo_comparisons/"
+        },
+        {
+            "from": "PubDBlinkId:27",
+            "label": "DOI",
+            "to": "http://portal.acm.org/citation.cfm?doid=1111322.1111328"
+        },
+        {
+            "from": "PubDBlinkId:28",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2006/as_topology/as_topology.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "ARTICLE",
+        "booktitle": "",
+        "institution": "",
+        "bibtex": "",
+        "journal": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "volume": "36 No 1",
+        "number": "",
+        "pages": "17-26",
+        "linkedObjects": ""
+    }
+}

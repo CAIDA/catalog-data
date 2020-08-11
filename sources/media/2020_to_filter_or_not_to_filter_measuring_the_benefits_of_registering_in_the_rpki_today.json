@@ -1,0 +1,21 @@
+{
+    "id": "2020_filter_not_filter_pam",
+    "name": "To Filter or not to Filter: Measuring the Benefits of Registering in the RPKI Today",
+    "tags": [
+        "routing",
+        "topology",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Testart, Cecilia",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2020.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2020/filter_not_filter_pam/filter_not_filter_pam.pdf",
+        "https://www.caida.org/publications/papers/2020/filter_not_filter/",
+        "https://www.youtube.com/watch?v=p3q4RCxGcyw"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2000_isma00_andre_graphs",
+    "name": "Graphs That Make the Net Work",
+    "tags": [
+        "topology",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "internet_statistics_and_metrics_analysis_workshop_isma",
+            "date": "2000.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2000/isma00_andre_graphs//workshops/isma/0012/talks/kcandre/"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "id": "2004_tr-2004-02",
+    "name": "The RTT distribution of TCP flows on the Internet and its impact on TCP based flow control",
+    "datePublished": "2004.3",
+    "description": "It is well known that the performance of a TCP flow is affected by its round-trip time (RTT), i.e., the elapsed time between the instant a packet is released by the source to the instant the corresponding ack is received by the source. The distribution of RTTs can dramatically affect not only the data rates realized by individual flows sharing a link but also the utilization of Internet links. In this paper we present a comprehensive study of the RTT distribution for TCP traffic in the Internet.",
+    "tags": [
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper471",
+    "venue": "cooperative_association_for_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:shakkottai_srinivas",
+            "organization": [
+                "University of Illinois at Urbana-Champaign, Illinois (UIUC)"
+            ]
+        },
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:736",
+            "label": "gzipped postscript",
+            "to": "tr-2004-02.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:735",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2004/tr-2004-02/tr-2004-02.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

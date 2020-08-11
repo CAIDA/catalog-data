@@ -1,0 +1,72 @@
+{
+    "id": "2001_CoralArch",
+    "name": "The architecture of CoralReef: an Internet traffic monitoring software suite",
+    "datePublished": "2001.4",
+    "description": "Passive data collection tools have traditionally been designed for\nspecific tasks such as accounting (NeTraMet) or packet capture (tcpdump).\n[The CoralReef suite](https://www.caida.org/tools/measurement/coralreef/) was\ndesigned to provide a uniform interface to passive data for a wide range of\napplications: from raw capture to real-time report generation. CoralReef\nprovides convenient set of passive data tools for a diverse audience, from\nnetwork administrators to researchers.\n\nThe CoralReef architecture is based on a toolbox paradigm. The base\nprogramming interface is implemented in a C library named libcoral. In\norder to allow users to write a single program to access many data sources,\nlibcoral provides a consistent API for capture cards from multiple\nproviders on ATM, POS, and 10-100-1000 ethernet capture cards from multiple\nvendors, as well as pcap interfaces. In addition, libcoral provides a\nconsistent interface to many packet capture file formats including: all\ncoral formats (NLANR formats included), pcap, DAG ATM, and DAG POS. This\nAPI satisfies an important design goal of providing multiple ways to\napproach the same problem. The libcoral API can operate on ATM cells,\nblocks of cells, or network packets, one at a time or via callbacks; the\napplication developer can use whichever is most convenient. NeTraMet and\nVern Paxson's Bro are two applications that have been adapted to use the\nCoral API. To facilitate rapid prototyping and development, another design\ngoal is to provide the same interface in C/C++ and Perl. Because the Perl\nmodule CRL.pm directly calls the C routines, Perl scripts using CRL.pm\nperform well enough for many data analysis applications. Additional\nlibraries and modules have been provided to perform more complex tasks.\nThere are libraries and Perl modules for doing AS lookups from BGP routing\ntables and others for determining geographic locations via NetGeo.\nCoralReef includes modules for the storage and manipulation of frequently\ncollected data including: source and destination hosts, IP protocols,\nports, and amounts of traffic in bytes, packets and flows. These modules\nprovide methods to automatically aggregate data into other table types and\nallow for efficiently selecting those entries that generate the most\ntraffic. For example, it is possible to convert an AS table of byte/packet\ncounts into a country table with a single method call. Higher level\napplications are written using these building blocks, so that for example\ncreating an IP or AS matrix is accomplished with just a small Perl program,\nwhile larger programs (such as the realtime report generator t2_report) are\nmore complex arrangements of the same building blocks.",
+    "tags": [
+        "software/tools"
+    ],
+    "pubdb_id": "paper122",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:keys_ken",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:moore_david",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:koga_ryan",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:lagache_edouard",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:tesch_michael",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:214",
+            "label": "gzipped postscript",
+            "to": "coralreef.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:213",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2001/CoralArch/coralreef.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

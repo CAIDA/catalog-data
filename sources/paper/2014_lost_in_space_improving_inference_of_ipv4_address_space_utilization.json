@@ -1,0 +1,105 @@
+{
+    "id": "2014_lost_in_space",
+    "name": "Lost in Space: Improving Inference of IPv4 Address Space Utilization",
+    "datePublished": "2014.10",
+    "description": "One challenge in understanding the evolution of Internet infrastructure is the lack of systematic mechanisms for monitoring the extent to which allocated IP addresses are actually used. In this paper we try to advance the science of inferring IPv4 address space utilization by analyzing and correlating results obtained through different types of measurements. We have previously studied an approach based on passive measurements that can reveal used portions of the address space unseen by active approaches. In this paper, we study such passive approaches in detail, extending our methodology to four different types of vantage points, identifying traffic components that most significantly contribute to discovering used IPv4 network blocks. We then combine the results we obtained through passive measurements together with data from active measurement studies, as well as measurements from BGP and additional datasets available to researchers. Through the analysis of this large collection of heterogeneous datasets, we substantially improve the state of the art in terms of: (i) understanding the challenges and opportunities in using passive and active techniques to study address utilization; and (ii) knowledge of the utilization of the IPv4 space.",
+    "tags": [
+        "measurement methodology",
+        "passive data analysis",
+        "security",
+        "routing",
+        "network telescope",
+        "internet outages"
+    ],
+    "pubdb_id": "paper555",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:benson_karyn",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:king_alistair",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:glatz_eduard",
+            "organization": [
+                "ETH Z\u00fcrich"
+            ]
+        },
+        {
+            "person": "person:dimitropoulos_xenofontas",
+            "organization": [
+                "Politecnico di Torino"
+            ]
+        },
+        {
+            "person": "person:richter_philipp",
+            "organization": [
+                "TU Berlin"
+            ]
+        },
+        {
+            "person": "person:finamore_alessandro",
+            "organization": [
+                "Politecnico di Torino"
+            ]
+        },
+        {
+            "person": "person:snoeren_alex",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1410",
+            "label": "arXiv",
+            "to": "http://arxiv.org/abs/1410.6858"
+        },
+        {
+            "from": "PubDBlinkId:1361",
+            "label": "Data Supplement",
+            "to": "supplemental/"
+        },
+        {
+            "from": "PubDBlinkId:1409",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2014/lost_in_space/lost_in_space.pdf"
+        },
+        {
+            "from": "PubDBlinkId:1636",
+            "label": "PDF (2015 version)",
+            "to": "https://www.caida.org/publications/papers/2015/lost_in_space/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

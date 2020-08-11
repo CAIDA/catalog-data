@@ -1,0 +1,44 @@
+{
+    "id": "2015_inventory_aspirations_internets_future",
+    "name": "An Inventory of Aspirations for the Internet's future",
+    "datePublished": "2015.4",
+    "description": "The goal of this paper is to consider possible future desirable properties of the Internet, and how we might achieve them. We have cataloged a list of aspirations for a future Internet, e.g., ubiquitous access, supporting a wide range of applications, providing a platform for innovation or even to enable some purported universal value such as global connectedness. We catalog these aspirations in order to subject them to critical analysis, and motivate a debate over which of them are desirable, well-specified, realistic and achievable. Our list of aspirations is not original to us, nor do we agree with all of them. We have tried to collate what others have said, so we can consider it all at once.'' This is a draft copy of an unfinished white paper.",
+    "tags": [
+        "overview",
+        "policy"
+    ],
+    "pubdb_id": "paper579",
+    "venue": "center_for_applied_internet_data_analysis_caida",
+    "authors": [
+        {
+            "person": "person:clark_david",
+            "organization": [
+                "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:1604",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2015/inventory_aspirations_internets_future/inventory_aspirations_internets_future.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "TECHREPORT",
+        "booktitle": "",
+        "institution": "Center for Applied Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

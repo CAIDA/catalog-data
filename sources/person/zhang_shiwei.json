@@ -1,5 +1,7 @@
 {
     "id": "zhang_shiwei",
-    "nameFirst": "Shiwei",
-    "nameLast": "Zhang"
+    "organization": [
+        "Peng Cheng Laboratory, P.R. China",
+        "Southern University of Science and Technology, P.R. China"
+    ]
 }

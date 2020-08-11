@@ -1,0 +1,19 @@
+{
+    "id": "2011_ndn_optimal_routing",
+    "name": "Optimal routing in complex networks",
+    "tags": [
+        "routing",
+        "topology",
+        "network geometry"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "named_data_network_ndn_pi_meeting",
+            "date": "2011.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2011/ndn_optimal_routing/ndn_optimal_routing.pptx"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "id": "2013_inferring_latent_geometries_real",
+    "name": "Inferring latent geometries of real networks",
+    "tags": [
+        "network geometry",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Krioukov, Dmitri",
+            "venue": "santa_fe_institute_structure_statistical_inference_and_dynamics_in_networks_from_graphs_to_rich_data_workshop",
+            "date": "2013.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2013/inferring_latent_geometries_real/inferring_latent_geometries_real.pptx"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "2012_dust_iatmon",
+    "name": "One way Traffic Monitoring with iatmon",
+    "tags": [
+        "security",
+        "passive data analysis",
+        "measurement methodology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Brownlee, Nevil",
+            "venue": "international_workshop_on_darkspace_and_unsolicited_traffic_analysis_dust",
+            "date": "2012.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2012/dust_iatmon/dust_iatmon.pdf",
+        "https://www.caida.org/publications/papers/2012/one_way_traffic_iatmon"
+    ]
+}

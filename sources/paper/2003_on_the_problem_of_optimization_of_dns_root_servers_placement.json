@@ -1,0 +1,60 @@
+{
+    "id": "2003_dnsplacement",
+    "name": "On the problem of optimization of DNS root servers' placement",
+    "datePublished": "2003.4",
+    "description": "The Domain Name System (DNS) is a critical component\nof the modern Internet. It provides a critical link between\nhuman users and Internet routing infrastructure by mapping\nhost names to IP addresses. The DNS is a hierarchy\nof distributed system of servers anchored at 13 DNS root\nservers.\n\nIn this paper we examine the macroscopic connectivity\nbetween the DNS root servers and the worldwide population\nof their clients. We study the impact of the geographical\nlocations of root servers on the latency of server-client\nconnections. We also propose a methodology to estimate the\neffects of root servers' relocation.\n\nWe found that all root servers can be clustered in four\ngroups that closely correlate with their geographical positions.\nServers in the same group are nearly indistinguishable\nfor their clients in terms of latency and can replace one\nanother in providing DNS services to the clients. M-root, the\nonly root server in Asia, is in a group of its own and, therefore,\nis the most crucial for its clients in terms of the latency\nincrease in case of its unavailability. Clients in Europe appear\nto be relatively underprovisioned and may merit an additional\nroot server. Clients in North America appear overprovisioned.\nOne of the US servers may be a suitable candidate\nfor relocation to a different region of the world.",
+    "tags": [
+        "dns"
+    ],
+    "pubdb_id": "paper94",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:lee_tony",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:huffaker_bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:fomenkov_marina",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:450",
+            "label": "gzipped postscript",
+            "to": "dnsplacement.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:449",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/dnsplacement/dnsplacement.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

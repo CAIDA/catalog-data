@@ -1,0 +1,20 @@
+{
+    "id": "2019_profiling_bgp_serial_hijackers_imc",
+    "name": "Profiling BGP Serial Hijackers: Capturing Persistent Misbehavior in the Global Routing Table",
+    "tags": [
+        "routing",
+        "security",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Testart, Cecilia",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2019.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/profiling_bgp_serial_hijackers_imc/profiling_bgp_serial_hijackers_imc.pdf",
+        "https://www.caida.org/publications/papers/2019/profiling_bgp_serial_hijackers/"
+    ]
+}

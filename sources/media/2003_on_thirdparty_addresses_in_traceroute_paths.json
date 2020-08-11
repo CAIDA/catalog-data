@@ -1,0 +1,19 @@
+{
+    "id": "2003_pam0304",
+    "name": "On Third-party Addresses in Traceroute Paths",
+    "tags": [
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Hyun, Young",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2003.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2003/pam0304/pam2003-3rdparty.pdf",
+        "https://www.caida.org/publications/papers/2003/3rdparty"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "2015_measuring_characterizing_ipv6_router_pam",
+    "name": "Measuring and Characterizing IPv6 Router Availability",
+    "tags": [
+        "active data analysis",
+        "internet outages",
+        "security",
+        "ipv6",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Beverly, Robert",
+            "venue": "passive_and_active_measurement_conference_pam",
+            "date": "2015.3"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2015/measuring_characterizing_ipv6_router_pam/measuring_characterizing_ipv6_router_pam.pdf",
+        "https://www.caida.org/publications/papers/2015/measuring_characterizing_ipv6_router/"
+    ]
+}

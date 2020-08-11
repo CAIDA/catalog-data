@@ -1,0 +1,68 @@
+{
+    "id": "2018_inferring_carrier_grade_nat",
+    "name": "Inferring Carrier-Grade NAT Deployment in the Wild",
+    "datePublished": "2018.4",
+    "description": "Given the increasing scarcity of IPv4 addresses, network operators are resorting to measures to expand their address pool or prolong the life of existing addresses. One such approach is Carrier-Grade NAT (CGN), where many end-users in a network share a single public IPv4 address. There is limited data about the prevalence of CGN, despite the implications on performance, security, and ultimately, the adoption of IPv6. In this work, we present passive measurement-based techniques for detecting CGN deployments across the entire Internet, without the requirement of access to machines behind a CGN. Specifically, we identify patterns in how client IP addresses are observed at MLab servers and at the UCSD network telescope to infer whether those clients are behind a CGN. We apply our methods on data collected from 2014 to 2016. We find that CGN deployment is increasing rapidly. Overall, we infer that 4.1K autonomous systems are deploying CGN, 6 times the number inferred by the most recent studies.",
+    "tags": [
+        "ipv6",
+        "measurement methodology",
+        "network telescope"
+    ],
+    "pubdb_id": "paper648",
+    "venue": "ieee_conference_on_computer_communications_infocom",
+    "authors": [
+        {
+            "person": "person:livadariu_ioana",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:benson_karyn",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:elmokashfi_ahmed",
+            "organization": [
+                "Simula Research Laboratory"
+            ]
+        },
+        {
+            "person": "person:dainotti_alberto",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2127",
+            "label": "DOI",
+            "to": "https://doi.org/10.1109/INFOCOM.2018.8486223"
+        },
+        {
+            "from": "PubDBlinkId:1967",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2018/inferring_carrier_grade_nat/inferring_carrier_grade_nat.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE Conference on Computer Communications (INFOCOM)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

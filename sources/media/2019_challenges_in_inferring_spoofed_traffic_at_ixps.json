@@ -1,0 +1,21 @@
+{
+    "id": "2019_challenges_inferring_spoofed_traffic_conext",
+    "name": "Challenges in Inferring Spoofed Traffic at IXPs",
+    "tags": [
+        "routing",
+        "topology",
+        "security",
+        "active data analysis"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: M\u00fcller, Lucas",
+            "venue": "acm_sigcomm_conference_on_emerging_networking_experiments_and_technologies_conext",
+            "date": "2019.12"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2019/challenges_inferring_spoofed_traffic_conext/challenges_inferring_spoofed_traffic_conext.pdf",
+        "https://www.caida.org/publications/papers/2019/challenges_inferring_spoofed_traffic/"
+    ]
+}

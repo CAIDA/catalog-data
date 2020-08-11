@@ -1,5 +1,6 @@
 {
     "id": "huffaker_bradley",
-    "nameFirst": "Bradley",
-    "nameLast": "Huffaker"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+    ]
 }

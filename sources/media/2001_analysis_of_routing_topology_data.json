@@ -1,0 +1,19 @@
+{
+    "id": "2001_routingtopology2001",
+    "name": "analysis of routing & topology data",
+    "tags": [
+        "routing",
+        "topology",
+        "data"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Broido, Andre",
+            "venue": "caida",
+            "date": "2001.10"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2001/routingtopology2001/index.html"
+    ]
+}

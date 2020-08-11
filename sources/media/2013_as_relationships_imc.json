@@ -1,0 +1,24 @@
+{
+    "id": "2013_as_relationships_imc",
+    "type":"presentation",
+    "name": "AS Relationships, Customer Cones, and Validation",
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "security",
+        "software/tools"
+    ],
+    "presenters": [
+        {
+            "person": "person:luckie_matthew",
+            "venue": "venue:acm_internet_measurement_conference_imc",
+            "date": "2013.10",
+            "url": "http://conferences.sigcomm.org/imc/2013/"
+        }
+    ],
+    "links": [
+        {
+            "to": "paper:asrank"
+        }
+    ]
+}

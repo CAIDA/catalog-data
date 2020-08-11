@@ -1,0 +1,19 @@
+{
+    "id": "2006_sane200605_kc",
+    "name": "Internet measurement: what have we learned?",
+    "tags": [
+        "measurement methodology",
+        "data",
+        "policy"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "system_administration_and_network_engineering_conference_sane",
+            "date": "2006.5"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2006/sane200605_kc/sane200605_kc.pdf"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "id": "2009_ark_overview",
+    "name": "Archipelago Measurement Infrastructure",
+    "tags": [
+        "active data analysis",
+        "data",
+        "ipv6",
+        "measurement methodology",
+        "overview",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "africaasia_forum_workshop",
+            "date": "2009.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2009/ark_overview/ark_overview.pdf"
+    ]
+}

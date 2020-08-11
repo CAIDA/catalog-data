@@ -1,0 +1,20 @@
+{
+    "id": "2018_software_systems_survey_spoofing_ddosd",
+    "name": "Software Systems to Survey Spoofing Susceptibility",
+    "tags": [
+        "topology",
+        "routing",
+        "active data analysis",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Claffy, Kc",
+            "venue": "dhs_ddosd_pi_meeting",
+            "date": "2018.4"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2018/software_systems_survey_spoofing_ddosd/software_systems_survey_spoofing_ddosd.pdf"
+    ]
+}

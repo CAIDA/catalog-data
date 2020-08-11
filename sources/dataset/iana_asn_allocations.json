@@ -1,0 +1,11 @@
+{
+    "id": "iana_asn_allocations",
+    "name": "IANA ASN allocations",
+    "organization": "CAIDA",
+    "description": "Dataset of ASN allocation ranges collected from IANA.",
+    "tags": [
+        "asn",
+        "as numbers",
+        "iana"
+    ]
+}

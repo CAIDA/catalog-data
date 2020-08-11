@@ -1,0 +1,55 @@
+{
+    "id": "2003_dnsspectroscopy-full",
+    "name": "Spectroscopy of DNS Update Traffic",
+    "datePublished": "2003.6",
+    "description": "We study attempts to dynamically update DNS records for private (RFC1918) addresses, by analyzing the frequency spectrum of updates observed at an authoritative nameserver for these addresses. We developed a binary autocorrelation algorithm and discovered that updates come in infinite series with periods of 60 or 75 minutes. We identify both periods as default settings of out-of-the-box Microsoft Windows 2000 and XP DNS software. Identifying this common property of end-user environments helps to understand users' behavior on the Internet. To our knowledge this is the first study of the global impact of dynamic DNS.\r\n",
+    "tags": [
+        "dns",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper82",
+    "venue": "workshop_on_internet_applications_wiapp",
+    "authors": [
+        {
+            "person": "person:broido_andre",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:nemeth_evi",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:45",
+            "label": "gzipped postscript",
+            "to": "dnsspectroscopy-full.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:46",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2003/dnsspectroscopy-full/dnsspectroscopy-full.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Workshop on Internet Applications (WIAPP)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

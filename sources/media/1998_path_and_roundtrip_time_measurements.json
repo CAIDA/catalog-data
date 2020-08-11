@@ -1,0 +1,18 @@
+{
+    "id": "1998_nanog9806",
+    "name": "Path and Round-Trip Time Measurements",
+    "tags": [
+        "measurement methodology",
+        "software/tools"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Mcrobb, Daniel",
+            "venue": "north_american_network_operators_group_nanog",
+            "date": "1998.6"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/1998/nanog9806/index.html"
+    ]
+}

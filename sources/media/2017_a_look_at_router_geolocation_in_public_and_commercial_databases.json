@@ -1,0 +1,25 @@
+{
+    "id": "2017_look_at_router_geolocation_imc",
+    "name": "A Look at Router Geolocation in Public and Commercial Databases",
+    "tags": [
+        "active data analysis",
+        "measurement methodology",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2017.11"
+        },
+        {
+            "presenter": "Author: Huffaker, Bradley",
+            "venue": "internet_initiative_japan_iij",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/look_at_router_geolocation_imc/look_at_router_geolocation_imc.pdf",
+        "https://www.caida.org/publications/papers/2017/look_at_router_geolocation/"
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "id": "2000_AIX0005",
+    "name": "Trends in wide area IP traffic patterns - A view from Ames Internet Exchange",
+    "datePublished": "2000.9",
+    "description": "We report results from a longitudinal analysis of the IP traffic\r\nworkload seen at a single measurement site inside a major Internet\r\ntraffic exchange point. Using data collected by the NLANR/MOAT Network\r\nAnalysis Infrastructure (NAI) project [NAI] and analysis software from\r\nCAIDA's CoralReef project [CoralReef], we present trends in application\r\nusage seen at the NASA Ames Internet Exchange over 10 months, from May\r\n1999 through March 2000. We show changes in the fraction of traffic\r\nfrom streaming media and online gaming, as well as an increase in\r\ntraffic from new applications such as Napster and IPSEC tunneling. We\r\nalso show that our data does not indicate any overall change in the\r\nTCP/UDP traffic ratio at the Ames Internet Exchange during this period,\r\nor significant differences from the analyses by MCI Worldcom and CAIDA\r\nin 1998.",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper131",
+    "venue": "itc_specialist_seminar",
+    "authors": [
+        {
+            "person": "person:mccreary_sean",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:495",
+            "label": "gzipped postscript",
+            "to": "AIX0005.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:493",
+            "label": "HTML",
+            "to": "AIX0005.html"
+        },
+        {
+            "from": "PubDBlinkId:494",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2000/AIX0005/AIX0005.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "ITC Specialist Seminar",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

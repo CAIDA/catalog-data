@@ -1,0 +1,43 @@
+{
+    "id": "2005_pam-streamlife",
+    "name": "Some Observations of Internet Stream Lifetimes",
+    "datePublished": "2005.3",
+    "description": "\nWe present measurements of stream lifetimes in California and at Auckland.\nWe suggest that one could ignore streams with less than six packets,\nsince they usually account for 10% or less of the total bytes.\nHowever, we often observe large bursts of small 'attack' streams; we remark\nthat a strategy of `focusing on the elephants' can be upset by\nsuch 'attack' streams.\n",
+    "tags": [
+        "passive data analysis"
+    ],
+    "pubdb_id": "paper64",
+    "venue": "passive_and_active_network_measurement_workshop_pam",
+    "authors": [
+        {
+            "person": "person:brownlee_nevil",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                "University of Auckland, New Zealand"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:35",
+            "label": "gzipped postscript",
+            "to": "pam-streamlife.ps.gz"
+        },
+        {
+            "from": "PubDBlinkId:36",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2005/pam-streamlife/pam-streamlife.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Passive and Active Network Measurement Workshop (PAM)",
+        "institution": "Cooperative Association for Internet Data Analysis (CAIDA)",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "265-277",
+        "linkedObjects": ""
+    }
+}

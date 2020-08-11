@@ -1,0 +1,23 @@
+{
+    "id": "2017_detecting_peering_infrastructure_outages_sigcomm",
+    "name": "Detecting Peering Infrastructure Outages in the Wild",
+    "tags": [
+        "active data analysis",
+        "congestion",
+        "internet outages",
+        "measurement methodology",
+        "routing",
+        "topology"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Giotsas, Vasileios",
+            "venue": "acm_sigcomm",
+            "date": "2017.8"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/detecting_peering_infrastructure_outages_sigcomm/detecting_peering_infrastructure_outages_sigcomm.pdf",
+        "https://www.caida.org/publications/papers/2017/detecting_peering_infrastructure_outages/"
+    ]
+}

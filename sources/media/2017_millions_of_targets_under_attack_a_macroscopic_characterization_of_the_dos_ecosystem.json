@@ -1,0 +1,21 @@
+{
+    "id": "2017_millions_targets_under_attack_imc",
+    "name": "Millions of Targets Under Attack: a Macroscopic Characterization of the DoS Ecosystem",
+    "tags": [
+        "internet outages",
+        "measurement methodology",
+        "network telescope",
+        "security"
+    ],
+    "venues": [
+        {
+            "presenter": "Author: Jonker, Mattijs",
+            "venue": "acm_internet_measurement_conference_imc",
+            "date": "2017.11"
+        }
+    ],
+    "links": [
+        "https://www.caida.org/publications/presentations/2017/millions_targets_under_attack_imc/millions_targets_under_attack_imc.pdf",
+        "https://www.caida.org/publications/papers/2017/millions_targets_under_attack/"
+    ]
+}

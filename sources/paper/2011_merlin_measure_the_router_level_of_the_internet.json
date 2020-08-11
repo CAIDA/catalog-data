@@ -1,0 +1,62 @@
+{
+    "id": "2011_merlin",
+    "name": "MERLIN: MEasure the Router Level of the INternet",
+    "datePublished": "2011.6",
+    "description": "The Internet topology discovery has been an extensive research subject those last years. While the raw data is collected using large traceroute campaigns, additional probing and/or extensive computation are required to gather subsets of IP addresses into single identifiers corresponding to routers. This alias resolution process leads to a router level map of the Internet. In this paper, we push further the Internet router level mapping with a new probing tool called MERLIN. \r\n\r\nMERLIN takes advantage of mrinfo, a multicast management tool that silently collects all IPv4 multicast enabled interfaces of a router and all its multicast links towards its neighbors. Our new probing tool fixes mrinfo technical limitations and eases the deployment of multicast probing campaign. We deploy and evaluate the performance of MERLIN at large scale. We investigate the completeness of MERLIN by providing a lower bound on the proportion of information that it may miss. We also demonstrate that the use of several vantage points is crucial to circumvent IGMP filtering in order to increase the amount of collected routers. MERLIN is a valuable tool for the understanding of the router level topology of the Internet. '' From the proceedings of the Conference on Next Generation Internet (NGI 2011) in June 2011.",
+    "tags": [
+        "topology",
+        "measurement methodology"
+    ],
+    "pubdb_id": "paper482",
+    "venue": "conference_on_next_generation_internet",
+    "authors": [
+        {
+            "person": "person:m\u00e9rindol_pascal",
+            "organization": [
+                "LSIIT Universit\u00e9 de Strasbourg"
+            ]
+        },
+        {
+            "person": "person:donnet_benoit",
+            "organization": [
+                "Universit\u00e9 catholique de Louvain"
+            ]
+        },
+        {
+            "person": "person:pansiot_jean-jacques",
+            "organization": [
+                "LSIIT Universit\u00e9 de Strasbourg"
+            ]
+        },
+        {
+            "person": "person:luckie_matthew",
+            "organization": [
+                "WAND Network Research Group Waikato University"
+            ]
+        },
+        {
+            "person": "person:hyun_young",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:750",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2011/merlin/merlin.pdf"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "Conference on Next Generation Internet",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}
