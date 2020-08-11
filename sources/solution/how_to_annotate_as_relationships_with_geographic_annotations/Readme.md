@@ -21,10 +21,10 @@ The solution annotates AS relationships with geographic annotations.
 
 ## **<ins> Solution </ins>**
 
-The full script could be found in annotate_as_relationships_with_geo.py
-**Usage:** `python parse_ark_traceroute.py -a <as-relationship dataset> -l <location dataset>`
+The full script could be found in annotate_as_relationships_with_geo.py \
+**Usage:** `python annotate_as_relationships_with_geo.py -a <as-relationship dataset> -l <location dataset>`
 
-Below is the method used to load geo information from location file and AS relationships from AS-relationship file. Store geolocation information in `geo_info` with dictionary format.  
+Below is the method used to load geolocation info from location dataset and store them in `geo_info` in dictionary. Then load AS relationships from AS-relationship dataset, map corresponding geolocation info and return annotated AS relationships in `as_rel_geo`.   
 ~~~python
 def load_rel_geo(as_file, geo_file):
 
@@ -73,7 +73,6 @@ def load_rel_geo(as_file, geo_file):
 
 Return the annotated AS relationships in the following format.
 ~~~
-return format
 {
 "asn0": {"asn1":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]},
 "asn1": {"asn0":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]}
@@ -110,11 +109,8 @@ return format
 
 
 ### Dataset ###
-#### AS Relationships -- with geographic annotations
+#### AS Relationships - with geographic annotations
 - ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. 
 - These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. 
-- Download `as-rel-geo.txt` for as-relationship dataset and `locations.txt` for location file
+- Download `as-rel-geo.txt` for as-relationship dataset and `locations.txt` for location dataset.
 - More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
-
-
-### <ins> Caveats </ins>
