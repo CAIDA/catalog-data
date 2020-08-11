@@ -134,7 +134,7 @@ def parse_ppdc_ases_line(curr_line):
     
     as_2_cone[asn]["asn"] = asn
     as_2_cone[asn]["cone"] = customer_cone
-    as_2_cone[asn]["size"] = customer_cone_size
+    as_2_cone[asn]["size"] = customer_cone_size[1:]
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])

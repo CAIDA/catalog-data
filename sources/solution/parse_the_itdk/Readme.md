@@ -1,6 +1,6 @@
 ~~~json
 {
-    "name": "How to get a router's IPs, ASN, neighbors, and geographic location.",
+    "name": "Parse CAIDA's ITDK for a router's IPs, ASN, neighbors, and geographic location.",
     "description":"Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
     "links": ["dataset:AS_Organization"],
     "tags": [
@@ -37,7 +37,10 @@ The following script combines the information across the four files into a dicti
         "country":"CO",
         "region":"34",
         "city": "Bogota"
-     }
+     },
+     "links": [
+        {"to":"dataset:internet_topology_data_kit"}
+    ]
 }
 ~~~
 

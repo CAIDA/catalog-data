@@ -11,7 +11,7 @@
         "visualization"
     ],
     "dateStart": "2015.03",
-    " availability": [
+    "resources": [
         {
             "name": "restricted",
             "url": "https://ioda.caida.org/"
@@ -23,7 +23,7 @@
     ],
     "links": [
         {
-            "to": "Paper:Chocolatine_Outage_Detection_for_Internet_Background_Radiation",
+            "to": "paper:2019_chocolatine",
             "label": "used by"
         }
     ]

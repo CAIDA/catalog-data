@@ -7,7 +7,7 @@
         "ip address",
         "alias resolution"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/midar/",
@@ -23,23 +23,27 @@
             "label": "used by"
         },
         {
+            "to": "software:vela",
+            "label": "used by"
+        },
+        {
             "to": "dataset:internet_topology_data_kit",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "to": "paper:2013_alias_resolution_midar",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "to": "paper:2011_midar-tr",
             "label": "used by"
         },
         {
-            "to": "paper:unintended_consequences:_effects_of_submarine_cable_deployment_on_internet_routing",
+            "to": "paper:2020_unintended_consequences",
             "label": "used by"
         },
         {
-            "to": "presentation:internet-scale_alias_resolution_with_midar",
+            "to": "media:2010_alias_resolution_midar",
             "label": "used by"
         }
     ]

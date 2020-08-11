@@ -6,7 +6,7 @@
     "tags": [
         "topology"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "ihr.iijlab.net/ihr",
@@ -20,16 +20,11 @@
     ],
     "links": [
         {
-            "to": "paper:as_relationships_customer_cones_and_validation",
+            "to": "paper:2013_asrank",
             "label": "used by"
         },
         {
-            "to": "paper:as_relationships_inference_and_validation",
-            "label": "used by"
-        },
-        {
-            "to": "paper:inferring_as_relationships_dead_end_or_lively_beginning",
-            "label": "used by"
+            "to": "media:2013_as_relationships_imc"
         }
     ]
 }

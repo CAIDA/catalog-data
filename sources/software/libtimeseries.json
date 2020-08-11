@@ -7,7 +7,7 @@
         "library",
         "database"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://github.com/caida/libtimeseries/",
@@ -21,6 +21,6 @@
         {
             "to": "software:ioda",
             "label": "used by"
-        },
+        }
     ]
 }

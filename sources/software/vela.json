@@ -9,7 +9,7 @@
         "traceroute",
         "ark"
     ],
-    "availability": [
+    "resouces": [
         {
             "name": "restricted",
             "url": "https://www.caida.org/projects/ark/vela/web-api/",
