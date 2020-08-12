@@ -2,10 +2,9 @@ import argparse
 import re
 
 def main():
-    directory = "../../../../dataset/"
     parser = argparse.ArgumentParser()
-    parser.add_argument("-a", type=str, dest = "as_file", default="201603.as-rel-geo.txt", help="")
-    parser.add_argument("-l", type=str, dest="geo_file", default ="201603.locations.txt", help="")
+    parser.add_argument("-a", type=str, dest="as_file", default=None, help="Please enter the file name of AS dataset")
+    parser.add_argument("-l", type=str, dest="geo_file", default=None, help="Please enter the file name of geo info dataset")
     args = parser.parse_args()
     load_rel_geo(directory+ args.as_file, directory+ args.geo_file)
 
@@ -55,7 +54,8 @@ def load_rel_geo(as_file, geo_file):
                 dest = {}
 
             as_rel_geo = {line[0]: {line[1]: [source, dest]}, line[1]: {line[0]: [source, dest]}}
-            #print(as_rel_geo) 
+            print(as_rel_geo) 
+            input("press")
 
 if __name__ == "__main__":
     main()

@@ -24,7 +24,7 @@ The solution annotates AS relationships with geographic annotations.
 The full script could be found in annotate_as_relationships_with_geo.py \
 **Usage:** `python annotate_as_relationships_with_geo.py -a <as-relationship dataset> -l <location dataset>`
 
-Below is the method used to load geolocation info from location dataset and store them in `geo_info` in dictionary. Then load AS relationships from AS-relationship dataset, map corresponding geolocation info and return annotated AS relationships in `as_rel_geo`.   
+Below is the method used to load geolocation info from location dataset and store them in `geo_info` in dictionary. Then load AS relationships from AS-relationship dataset, map ASN with corresponding geolocation info and return annotated AS relationships in `as_rel_geo`.   
 ~~~python
 def load_rel_geo(as_file, geo_file):
 
@@ -74,14 +74,28 @@ def load_rel_geo(as_file, geo_file):
 Return the annotated AS relationships in the following format.
 ~~~
 {
-"asn0": {"asn1":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]},
-"asn1": {"asn0":[{"country":"US","city":"San Diego"},{"country":"US","city":"LA"}]}
+asn0: {asn1: [{geo_info_ans0}, {geo_info_ans1}]},
+asn1: {asn0: [{geo_info_ans0}, {geo_info_ans1}]}
 }
+
+# details of geo_info_ans
+{'lid': '', 'continent': '', 'country': '', 'region': '', 'city': '', 'lat': '', 'lon': '', 'pop': ''}
 ~~~
 
+Example of return value. Note that if geolocation info of the ASN is not in `geo_info`, it would return empty `{}`.
+~~~
 
+{'2': {'34': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}, '34': {'2': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}}
+~~~
  
 ##  **<ins> Background </ins>**
+
+### Dataset ###
+#### AS Relationships - with geographic annotations
+- ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. 
+- These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. 
+- Download `as-rel-geo.txt` for as-relationship dataset and `locations.txt` for location dataset.
+- More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
 
 ### What is an AS
 
@@ -108,9 +122,4 @@ Return the annotated AS relationships in the following format.
 - More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)
 
 
-### Dataset ###
-#### AS Relationships - with geographic annotations
-- ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. 
-- These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. 
-- Download `as-rel-geo.txt` for as-relationship dataset and `locations.txt` for location dataset.
-- More information and download dataset [here](https://www.caida.org/data/as-relationships-geo/)
+
