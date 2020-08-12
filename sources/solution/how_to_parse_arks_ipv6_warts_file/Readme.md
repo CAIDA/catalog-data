@@ -3,7 +3,7 @@
 ~~~
 {
     "name": "How to parse arks ipv6 warts file?",
-    "descriptions": ""
+    "descriptions": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns."
     "links": ["software:pyasn","software:scamper", "dataset:as_prefix"],
     "tags": [
         "measurement methodology",
@@ -91,9 +91,21 @@ def create_asns():
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
 More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute). 
 
+### TTL ### 
+TTL stands for Time To Live. When a TCP packet is sent, its TTL is set, which is the number of routers (hops) it can pass through before the packet is discarded. As the packet passes through a router the TTL is decremented until, when the TTL reaches zero, the packet is destroyed and an ICMP "time exceeded" message is returned. The return message's TTL is set by the terminating router when it creates the packet, and decremented normally.
+
+More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node77.html ). 
 
 
 ### Traceroute data field description ###
+
+| Data Field       |   Meaning                                                                                        |
+| -------------    | -----------------------------------------------------------------------------------------------  |
+| probe_ttl        | This is the TTL set in the probe packet when it left the monitor                                 |
+| reply_ttl        | This is the TTL value in the packet that was received by the monitor                             |                                          | icmp_ttl         | This is the remaining TTL value after it has been decremented by the intermediate routers.       |
+|  icmp_ttl        | This is the remaining TTL value after it has been decremented by the intermediate routers.       | 
+
+
 ### IPv6 address ###
 • An *IPv6 address* is a 128-bit unique address that is used to recognize a computer network or a machine. All computers on the same data network share the same IPv6 address.\
 • IPv6 addressing is a successor to IPv4 addressing. \
@@ -139,4 +151,6 @@ Detailed installation instructions and more information on Usage and IPASN data 
 
 
 ## <ins> Caveats </ins> ##
-• **Multi-origin AS**: A multi-origin AS occurs when a given BGP prefix is announced by more than one AS.  Suppose some prefix 10.0.0.0/8 is announced in the BGP table by both AS 10 and AS 20. Then an address in that prefix, like 10.0.0.1, will map to both AS 10 and AS 20.  This is indicated by using the pseudo AS number 10_20.  If AS 30 also announces that prefix, then you would see 10_20_30.
+• **Multi-origin AS**: A multi-origin AS occurs when a given BGP prefix is announced by more than one AS. These multi-origin AS are dropped when creating the pyasn object i.e this script ignores multi-origin AS. 
+ 
+
