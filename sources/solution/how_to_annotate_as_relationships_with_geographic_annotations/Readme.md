@@ -84,7 +84,6 @@ asn1: {asn0: [{geo_info_ans0}, {geo_info_ans1}]}
 
 Example of return value. Note that if geolocation info of the ASN is not in `geo_info`, it would return empty `{}`.
 ~~~
-
 {'2': {'34': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}, '34': {'2': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}}
 ~~~
  
