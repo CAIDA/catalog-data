@@ -17,30 +17,83 @@
 ~~~
 
 
-
-
 ## <ins> Introduction </ins> ##
 
-
+The following solution parses through an [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/. ) and produces a sorted list of ipv6 addresses and asns. 
 
 
 ## <ins> Solution </ins> ## 
 
-This solution creates a list of ip addresses from an [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/. ).
+The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/solution/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
+**Usage:** `python parse_arks_ipv6_warts.py -t sc_to_json_file -p .prefix2as6 file -d .dat file`
+
+### Datasets ###
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ). \
+• `.prefix2as6 file`: Datasets can be downloaded [here]( http://data.caida.org/datasets/routing/routeviews6-prefix2as/
+ ). \
+• `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
+
+### Methods ### 
 create_ips() takes in one input: \
 • `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ). \
+• Note that ips are listed in the following order: `src, ip1, ip2, ip3..ipn, dst` 
+where `ip1 - ipn` are listed in increasing order of probe-ttl values. 
 
-In order to run the function:\
-• Install [scamper] (  https://www.caida.org/tools/measurement/scamper/ )\
-• Download the [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ).\
-• 
+~~~python
+def create_ips(sc_to_json_file):
+    '''
+    Parse JSON object and create list of ip addresses. 
+    '''
+    global ips
 
+    # Load JSON object in a list 
+    data = []
+    for line in open(sc_to_json_file, 'r'):
+        data.append(json.loads(line)) 
 
+    # Parse through data and create list of ips
+    # ips are sorted by increasing probe ttl values 
+    for elem in data:
+        ips.append(elem['src'])
+        hops = elem["hops"]
+        for hop in hops:
+            ips.append(hop["addr"])
+        ips.append(elem['dst'])
+    print(ips)
+~~~
+    
+We then create a `pyasn` object from a .prefix2as6 file, iterate through the list of ipv6 addresses and create a list of asns using pyasn's `lookup`.  
 
+The method create_asns() produces the list of asns:
+~~~python
+def create_asns():
+    '''
+     Create list of asns from pyasn lookup
+    '''
+    global ips
+    global asn_db 
+
+    asns = []
+    for ip in ips:
+        try:
+            asn, prefix = asn_db.lookup(ip)
+        except ValueError:
+            print("No corresponding asn for ", ip)
+        asns.append(asn)
+    # print(asns)
+
+~~~
 
 ## <ins> Background </ins> ## 
 
+### Traceroute ###
+Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
+More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute). 
+
+
+
+### Traceroute data field description ###
 ### IPv6 address ###
 • An *IPv6 address* is a 128-bit unique address that is used to recognize a computer network or a machine. All computers on the same data network share the same IPv6 address.\
 • IPv6 addressing is a successor to IPv4 addressing. \
