@@ -1,0 +1,24 @@
+{
+    "id": "2020_artemis_uknof45",
+    "type":"presentation",
+    "name": "ARTEMIS: an Open-source Tool for Detecting BGP Prefix Hijacking in Real Time",
+    "tags": [
+        "hijeck",
+        "BGP prefix",
+        "security",
+        "software/tools"
+    ],
+    "presenters": [
+        {
+            "person": "person:petros_gigis",
+            "venue": "venue:the_uk_network_operators_forum",
+            "date": "2020.01",
+            "url": "https://www.youtube.com/watch?v=j-W_960F_xE"
+        }
+    ],
+    "links": [
+        {
+            "to": "paper:2018_artemis"
+        }
+    ]
+}
