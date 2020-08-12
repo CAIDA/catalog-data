@@ -62,9 +62,6 @@ def main():
     # Create list of asns
     create_asns()
 
-    # Create ipv6 to asn mapping
-    create_ipv6_asn_map()
-
 ############################### Helper Methods #################################
 
 def create_ips(sc_to_json_file):
@@ -78,9 +75,11 @@ def create_ips(sc_to_json_file):
         data.append(json.loads(line)) 
 
     for elem in data:
+        ips.append(elem['src'])
         hops = elem["hops"]
         for hop in hops:
             ips.append(hop["addr"])
+        ips.append(elem['dst'])
     # print(ips)
 
 def create_asn_db_body(curr_line):
@@ -138,21 +137,5 @@ def create_asns():
             print("No corresponding asn for ", ip)
         asns.append(asn)
     # print(asns)
-
-def create_ipv6_asn_map():
-    '''
-    Map ipv6 addresses to asns using pyasn lookup
-    '''
-    global ips
-    global asn_db
-
-    ip2asn = {}
-    for ip in ips:
-        try:
-            asn, prefix = asn_db.lookup(ip)
-            ip2asn[ip] = asn
-        except ValueError as error:
-            print(str(error))
-    # print(ip2asn)
 
 main()
