@@ -1,5 +1,6 @@
 {
     "id": "vanbever_laurent",
-    "nameFirst": "Laurent",
-    "nameLast": "Vanbever"
+    "organization": [
+        "ETH Z\u00fcrich"
+    ]
 }

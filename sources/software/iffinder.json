@@ -7,7 +7,7 @@
         "ip address",
         "alias resolution"
     ],
-    "resouces": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/iffinder/",

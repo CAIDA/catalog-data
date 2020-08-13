@@ -1,5 +1,6 @@
 {
     "id": "levin_dave",
-    "nameFirst": "Dave",
-    "nameLast": "Levin"
+    "organization": [
+        "University of Maryland, College Park"
+    ]
 }

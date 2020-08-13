@@ -1,5 +1,6 @@
 {
     "id": "guillot_andreas",
-    "nameFirst": "Andreas",
-    "nameLast": "Guillot"
+    "organization": [
+        "ICube, University of Strasbourg"
+    ]
 }

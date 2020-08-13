@@ -1,5 +1,7 @@
 {
     "id": "shenker_scott",
-    "nameFirst": "Scott",
-    "nameLast": "Shenker"
+    "organization": [
+        "International Computer Science Institute (ICSI)",
+        "University of California, Berkeley"
+    ]
 }

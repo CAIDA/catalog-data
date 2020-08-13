@@ -1,5 +1,6 @@
 {
     "id": "wu_daoyuan",
-    "nameFirst": "Daoyuan",
-    "nameLast": "Wu"
+    "organization": [
+        "Singapore Management University"
+    ]
 }

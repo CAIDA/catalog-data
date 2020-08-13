@@ -1,5 +1,8 @@
 {
     "id": "carisimo_esteban",
-    "nameFirst": "Esteban",
-    "nameLast": "Carisimo"
+    "organization": [
+        "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+        "CONICET",
+        "University of Buenos Aires"
+    ]
 }

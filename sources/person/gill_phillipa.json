@@ -1,5 +1,6 @@
 {
     "id": "gill_phillipa",
-    "nameFirst": "Phillipa",
-    "nameLast": "Gill"
+    "organization": [
+        "UMass Amherst"
+    ]
 }

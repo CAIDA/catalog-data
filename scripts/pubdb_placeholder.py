@@ -18,7 +18,11 @@ def main():
             for fname in os.listdir(p):
                 fname = p+"/"+fname
                 if re.search("json$",fname): 
-                    obj = json.load(open(fname,"r"))
+                    try:
+                        obj = json.load(open(fname,"r"))
+                    except ValueError as e:
+                        print (fname)
+                        raise e
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
                         name = id_create(fname, type_,obj["name"])

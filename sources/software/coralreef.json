@@ -6,7 +6,7 @@
     "tags": [
         "traffic"
     ],
-    "resouces": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/coralreef/",

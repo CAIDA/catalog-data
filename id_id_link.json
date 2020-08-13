@@ -16,11 +16,6 @@
         "tag:anycast": {
             "from": "dataset:anycast_dataset",
             "to": "tag:anycast"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "dataset:anycast_dataset",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "label": "used"
         }
     },
     "paper:2019_towards_passive_analysis_anycast": {
@@ -560,10 +555,6 @@
             "from": "tag:security",
             "to": "media:2019_stardust_dust"
         },
-        "media:2020_artemis_uknof45": {
-            "from": "tag:security",
-            "to": "media:2020_artemis_uknof45"
-        },
         "media:2020_caidas_bgp_hijacking_observatory_kismet": {
             "from": "tag:security",
             "to": "media:2020_caidas_bgp_hijacking_observatory_kismet"
@@ -828,10 +819,6 @@
             "from": "tag:security",
             "to": "paper:2019_chocolatine"
         },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:security",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        },
         "paper:2019_dynamic_property_enforcement_programmable": {
             "from": "tag:security",
             "to": "paper:2019_dynamic_property_enforcement_programmable"
@@ -843,10 +830,6 @@
         "paper:2019_profiling_bgp_serial_hijackers": {
             "from": "tag:security",
             "to": "paper:2019_profiling_bgp_serial_hijackers"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:security",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
         },
         "paper:2020_dns_in_iot": {
             "from": "tag:security",
@@ -2474,10 +2457,6 @@
             "from": "tag:topology",
             "to": "paper:2019_learning_regexes_extract_router"
         },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:topology",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
-        },
         "paper:2019_network_hygiene_incentives_regulation": {
             "from": "tag:topology",
             "to": "paper:2019_network_hygiene_incentives_regulation"
@@ -2486,17 +2465,9 @@
             "from": "tag:topology",
             "to": "paper:2019_profiling_bgp_serial_hijackers"
         },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:topology",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
-        },
         "paper:2019_quince": {
             "from": "tag:topology",
             "to": "paper:2019_quince"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:topology",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
         },
         "paper:2019_stable_practical_as_relationship": {
             "from": "tag:topology",
@@ -2506,17 +2477,9 @@
             "from": "tag:topology",
             "to": "paper:2019_studying_evolution_content_providers"
         },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:topology",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
         "paper:2019_towards_passive_analysis_anycast": {
             "from": "tag:topology",
             "to": "paper:2019_towards_passive_analysis_anycast"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:topology",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         },
         "paper:2019_tracking_deployment_ipv6": {
             "from": "tag:topology",
@@ -2586,37 +2549,33 @@
             "from": "tag:topology",
             "to": "software:vela"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:topology",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         },
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_find_an_asns_customer_cone": {
             "from": "tag:topology",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_find_an_asns_customer_cone"
         },
-        "solution:parse_the_itdk": {
+        "recipe:parse_the_itdk": {
             "from": "tag:topology",
-            "to": "solution:parse_the_itdk"
+            "to": "recipe:parse_the_itdk"
         },
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:topology",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "tag:anycast": {
         "dataset:anycast_dataset": {
             "from": "tag:anycast",
             "to": "dataset:anycast_dataset"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:anycast",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         }
     },
     "dataset:archipelago": {
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
+        "paper:2019_studying_evolution_content_providers": {
             "from": "dataset:archipelago",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "to": "paper:2019_studying_evolution_content_providers",
             "label": "used by"
         },
         "tag:topology": {
@@ -2628,42 +2587,42 @@
             "to": "tag:active_measurement"
         }
     },
-    "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
+    "paper:2019_studying_evolution_content_providers": {
         "dataset:archipelago": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "from": "paper:2019_studying_evolution_content_providers",
             "to": "dataset:archipelago",
             "label": "used by"
         },
-        "software:bgpstream": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
         "dataset:as_prefix": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "from": "paper:2019_studying_evolution_content_providers",
             "to": "dataset:as_prefix",
-            "label": "used"
+            "label": "used by"
         },
         "dataset:as_relationships": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "from": "paper:2019_studying_evolution_content_providers",
             "to": "dataset:as_relationships",
-            "label": "used"
+            "label": "used by"
         },
-        "tag:congestion": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:congestion"
+        "tag:measurement_methodology": {
+            "from": "paper:2019_studying_evolution_content_providers",
+            "to": "tag:measurement_methodology"
         },
         "tag:routing": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "from": "paper:2019_studying_evolution_content_providers",
             "to": "tag:routing"
         },
         "tag:topology": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
+            "from": "paper:2019_studying_evolution_content_providers",
             "to": "tag:topology"
         },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "to": "tag:measurement_methodology"
+        "tag:congestion": {
+            "from": "paper:2019_studying_evolution_content_providers",
+            "to": "tag:congestion"
+        },
+        "software:bgpstream": {
+            "from": "paper:2019_studying_evolution_content_providers",
+            "to": "software:bgpstream",
+            "label": "used by"
         }
     },
     "tag:active_measurement": {
@@ -2704,18 +2663,13 @@
             "from": "dataset:as_organization",
             "to": "tag:ownership"
         },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
+        "recipe:parse_the_itdk": {
             "from": "dataset:as_organization",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
+            "to": "recipe:parse_the_itdk"
         },
-        "solution:parse_the_itdk": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "dataset:as_organization",
-            "to": "solution:parse_the_itdk"
-        },
-        "solution:solution_getting_an_asns_name_country_organization": {
-            "from": "dataset:as_organization",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "paper:2019_network_hygiene_incentives_regulation": {
@@ -2818,22 +2772,22 @@
             "to": "dataset:bgpmon",
             "label": "used by"
         },
-        "software:bgpstream": {
+        "tag:routing": {
             "from": "paper:2019_bgp_hijacking_classification",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "tag:topology": {
-            "from": "paper:2019_bgp_hijacking_classification",
-            "to": "tag:topology"
+            "to": "tag:routing"
         },
         "tag:security": {
             "from": "paper:2019_bgp_hijacking_classification",
             "to": "tag:security"
         },
-        "tag:routing": {
+        "tag:topology": {
             "from": "paper:2019_bgp_hijacking_classification",
-            "to": "tag:routing"
+            "to": "tag:topology"
+        },
+        "software:bgpstream": {
+            "from": "paper:2019_bgp_hijacking_classification",
+            "to": "software:bgpstream",
+            "label": "used by"
         }
     },
     "tag:ownership": {
@@ -2875,16 +2829,6 @@
             "from": "dataset:as_prefix",
             "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
             "label": "used"
-        },
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "dataset:as_prefix",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "label": "used"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "dataset:as_prefix",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
         }
     },
     "paper:2019_at_home_abroad": {
@@ -2908,39 +2852,6 @@
         "software:netacuity": {
             "from": "paper:2019_at_home_abroad",
             "to": "software:netacuity",
-            "label": "used by"
-        }
-    },
-    "paper:2019_studying_evolution_content_providers": {
-        "dataset:as_prefix": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "dataset:as_prefix",
-            "label": "used by"
-        },
-        "dataset:as_relationships": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "dataset:as_relationships",
-            "label": "used by"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:routing": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "tag:routing"
-        },
-        "tag:topology": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "tag:topology"
-        },
-        "tag:congestion": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "tag:congestion"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_studying_evolution_content_providers",
-            "to": "software:bgpstream",
             "label": "used by"
         }
     },
@@ -2996,18 +2907,21 @@
             "from": "dataset:as_relationships",
             "to": "tag:topology"
         },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "dataset:as_relationships",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
         },
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
             "from": "dataset:as_relationships",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
         },
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_use_as_rank_to_classify_asns": {
             "from": "dataset:as_relationships",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
+        },
+        "recipe:how_to_find_an_asns_customer_cone": {
+            "from": "dataset:as_relationships",
+            "to": "recipe:how_to_find_an_asns_customer_cone"
         }
     },
     "dataset:asrank": {
@@ -3040,9 +2954,13 @@
             "to": "paper:2013_asrank",
             "label": "defines"
         },
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "dataset:asrank",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
+        },
+        "recipe:how_to_use_as_rank_to_classify_asns": {
+            "from": "dataset:asrank",
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
         }
     },
     "software:asrank_api": {
@@ -3126,13 +3044,13 @@
             "from": "tag:geolocation",
             "to": "software:pyipmeta"
         },
-        "solution:parse_the_itdk": {
+        "recipe:parse_the_itdk": {
             "from": "tag:geolocation",
-            "to": "solution:parse_the_itdk"
+            "to": "recipe:parse_the_itdk"
         },
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:geolocation",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "dataset:bgp_communities": {
@@ -3148,11 +3066,6 @@
         "tag:topology": {
             "from": "dataset:bgp_communities",
             "to": "tag:topology"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:bgp_communities",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
         }
     },
     "dataset:bgpmon": {
@@ -4291,10 +4204,6 @@
             "from": "tag:routing",
             "to": "paper:2019_blink"
         },
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "tag:routing",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane"
-        },
         "paper:2019_challenges_inferring_spoofed_traffic": {
             "from": "tag:routing",
             "to": "paper:2019_challenges_inferring_spoofed_traffic"
@@ -4311,10 +4220,6 @@
             "from": "tag:routing",
             "to": "paper:2019_how_find_correlated_internet"
         },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:routing",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
         "paper:2019_hypersparse_neural_network_analysis": {
             "from": "tag:routing",
             "to": "paper:2019_hypersparse_neural_network_analysis"
@@ -4327,25 +4232,13 @@
             "from": "tag:routing",
             "to": "paper:2019_profiling_bgp_serial_hijackers"
         },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "tag:routing",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table"
-        },
         "paper:2019_quince": {
             "from": "tag:routing",
             "to": "paper:2019_quince"
         },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:routing",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
         "paper:2019_residential_links_under_weather": {
             "from": "tag:routing",
             "to": "paper:2019_residential_links_under_weather"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:routing",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
         },
         "paper:2019_stable_practical_as_relationship": {
             "from": "tag:routing",
@@ -4355,17 +4248,9 @@
             "from": "tag:routing",
             "to": "paper:2019_studying_evolution_content_providers"
         },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:routing",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
-        },
         "paper:2019_towards_passive_analysis_anycast": {
             "from": "tag:routing",
             "to": "paper:2019_towards_passive_analysis_anycast"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:routing",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         },
         "paper:2019_tracking_deployment_ipv6": {
             "from": "tag:routing",
@@ -4405,9 +4290,9 @@
             "from": "dataset:bogons",
             "to": "tag:security"
         },
-        "solution:how_to_parse_cymru_bogon_data": {
+        "recipe:how_to_parse_cymru_bogon_data": {
             "from": "dataset:bogons",
-            "to": "solution:how_to_parse_cymru_bogon_data"
+            "to": "recipe:how_to_parse_cymru_bogon_data"
         }
     },
     "dataset:caida_internet_traffic": {
@@ -4471,11 +4356,6 @@
         "tag:visualization": {
             "from": "dataset:caida_ioda",
             "to": "tag:visualization"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:caida_ioda",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "label": "used"
         }
     },
     "paper:2019_chocolatine": {
@@ -4737,11 +4617,6 @@
         "tag:topology": {
             "from": "dataset:euro_ix_ixp_service_matrix",
             "to": "tag:topology"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "dataset:euro_ix_ixp_service_matrix",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
         }
     },
     "tag:ixp": {
@@ -4785,29 +4660,37 @@
             "from": "tag:asn",
             "to": "software:pyipmeta"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:asn",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         },
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "tag:asn",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
         },
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
             "from": "tag:asn",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
         },
-        "solution:parse_the_itdk": {
+        "recipe:how_to_use_as_rank_to_classify_asns": {
             "from": "tag:asn",
-            "to": "solution:parse_the_itdk"
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
         },
-        "solution:how_to_get_the_range_of_allocated_or_reserved_asns": {
+        "recipe:how_to_find_an_asns_customer_cone": {
             "from": "tag:asn",
-            "to": "solution:how_to_get_the_range_of_allocated_or_reserved_asns"
+            "to": "recipe:how_to_find_an_asns_customer_cone"
         },
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:parse_the_itdk": {
             "from": "tag:asn",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:parse_the_itdk"
+        },
+        "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
+            "from": "tag:asn",
+            "to": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns"
+        },
+        "recipe:getting_an_asns_name_country_organization": {
+            "from": "tag:asn",
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "tag:as_numbers": {
@@ -4821,13 +4704,13 @@
             "from": "tag:iana",
             "to": "dataset:iana_asn_allocations"
         },
-        "solution:how_to_get_range_of_allocated_or_reserved_ips": {
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
             "from": "tag:iana",
-            "to": "solution:how_to_get_range_of_allocated_or_reserved_ips"
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
         },
-        "solution:how_to_get_the_range_of_allocated_or_reserved_asns": {
+        "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
             "from": "tag:iana",
-            "to": "solution:how_to_get_the_range_of_allocated_or_reserved_asns"
+            "to": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns"
         }
     },
     "dataset:ipv4_routed_24_topology_dataset": {
@@ -4874,11 +4757,6 @@
         "tag:topology": {
             "from": "dataset:itdk",
             "to": "tag:topology"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "dataset:itdk",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "label": "used"
         },
         "software:iffinder": {
             "from": "dataset:itdk",
@@ -4954,17 +4832,17 @@
         "tag:geographic": {
             "from": "dataset:maxmind",
             "to": "tag:geographic"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "dataset:maxmind",
-            "to": "paper:2019_residential_links_under_the_weather",
-            "label": "used"
         }
     },
     "paper:2019_residential_links_under_weather": {
         "dataset:maxmind": {
             "from": "paper:2019_residential_links_under_weather",
             "to": "dataset:maxmind",
+            "label": "used by"
+        },
+        "dataset:thunderping": {
+            "from": "paper:2019_residential_links_under_weather",
+            "to": "dataset:thunderping",
             "label": "used by"
         },
         "media:2019_residential_links_under_weather_sigcomm": {
@@ -4986,6 +4864,11 @@
         "tag:active_data_analysis": {
             "from": "paper:2019_residential_links_under_weather",
             "to": "tag:active_data_analysis"
+        },
+        "software:u_s_national_weather_serice_severe_weather_alert": {
+            "from": "paper:2019_residential_links_under_weather",
+            "to": "software:u_s_national_weather_serice_severe_weather_alert",
+            "label": "used by"
         }
     },
     "tag:geographic": {
@@ -5043,11 +4926,6 @@
             "from": "dataset:mopeye",
             "to": "paper:2019_empirical_study_mobile_network_behavior",
             "label": "used by"
-        },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "dataset:mopeye",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "label": "used"
         }
     },
     "paper:2019_empirical_study_mobile_network_behavior": {
@@ -5101,9 +4979,9 @@
             "to": "paper:2019_how_find_correlated_internet",
             "label": "used by"
         },
-        "paper:2019_residential_links_under_the_weather": {
+        "paper:2019_residential_links_under_weather": {
             "from": "dataset:thunderping",
-            "to": "paper:2019_residential_links_under_the_weather",
+            "to": "paper:2019_residential_links_under_weather",
             "label": "used by"
         },
         "tag:weather": {
@@ -5113,11 +4991,6 @@
         "tag:active_measurement": {
             "from": "dataset:thunderping",
             "to": "tag:active_measurement"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "dataset:thunderping",
-            "to": "paper:2019_how_to_find_correlated_internet_failures",
-            "label": "used"
         }
     },
     "paper:2019_how_find_correlated_internet": {
@@ -5148,63 +5021,10 @@
             "label": "used by"
         }
     },
-    "paper:2019_residential_links_under_the_weather": {
-        "dataset:thunderping": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "dataset:thunderping",
-            "label": "used by"
-        },
-        "software:u_s_national_weather_serice_severe_weather_alert": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "software:u_s_national_weather_serice_severe_weather_alert",
-            "label": "used"
-        },
-        "dataset:maxmind": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "dataset:maxmind",
-            "label": "used"
-        },
-        "tag:internet_reliability": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:internet_reliability"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:internet_outages": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:internet_outages"
-        },
-        "tag:weather": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:weather"
-        },
-        "tag:ping": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:ping"
-        },
-        "tag:data": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:data"
-        },
-        "tag:active_data_analysis": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:active_data_analysis"
-        },
-        "tag:routing": {
-            "from": "paper:2019_residential_links_under_the_weather",
-            "to": "tag:routing"
-        }
-    },
     "tag:weather": {
         "dataset:thunderping": {
             "from": "tag:weather",
             "to": "dataset:thunderping"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:weather",
-            "to": "paper:2019_residential_links_under_the_weather"
         },
         "software:u_s_national_weather_serice_severe_weather_alert": {
             "from": "tag:weather",
@@ -5220,11 +5040,6 @@
         "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
             "from": "dataset:ucsd_network_telescope",
             "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
-            "label": "used"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "dataset:ucsd_network_telescope",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
             "label": "used"
         },
         "software:corsaro": {
@@ -5734,10 +5549,6 @@
             "from": "tag:software_tools",
             "to": "media:2019_network_hygiene_incentives_regulation_ccs"
         },
-        "media:2020_artemis_uknof45": {
-            "from": "tag:software_tools",
-            "to": "media:2020_artemis_uknof45"
-        },
         "media:2020_scamper_routeviews_kismet": {
             "from": "tag:software_tools",
             "to": "media:2020_scamper_routeviews_kismet"
@@ -5906,25 +5717,21 @@
             "from": "tag:software_tools",
             "to": "paper:2019_learning_regexes_extract_router"
         },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:software_tools",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
-        },
         "paper:2019_network_hygiene_incentives_regulation": {
             "from": "tag:software_tools",
             "to": "paper:2019_network_hygiene_incentives_regulation"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:software_tools",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         },
-        "solution:parse_the_itdk": {
+        "recipe:parse_the_itdk": {
             "from": "tag:software_tools",
-            "to": "solution:parse_the_itdk"
+            "to": "recipe:parse_the_itdk"
         },
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:software_tools",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "media:1997_ietf199712": {
@@ -7974,10 +7781,6 @@
             "from": "tag:measurement_methodology",
             "to": "paper:2019_how_find_correlated_internet"
         },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
         "paper:2019_hypersparse_neural_network_analysis": {
             "from": "tag:measurement_methodology",
             "to": "paper:2019_hypersparse_neural_network_analysis"
@@ -7989,10 +7792,6 @@
         "paper:2019_learning_regexes_extract_router": {
             "from": "tag:measurement_methodology",
             "to": "paper:2019_learning_regexes_extract_router"
-        },
-        "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames"
         },
         "paper:2019_network_hygiene_incentives_regulation": {
             "from": "tag:measurement_methodology",
@@ -8010,17 +7809,9 @@
             "from": "tag:measurement_methodology",
             "to": "paper:2019_quince"
         },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
         "paper:2019_residential_links_under_weather": {
             "from": "tag:measurement_methodology",
             "to": "paper:2019_residential_links_under_weather"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
         },
         "paper:2019_stable_practical_as_relationship": {
             "from": "tag:measurement_methodology",
@@ -8029,10 +7820,6 @@
         "paper:2019_studying_evolution_content_providers": {
             "from": "tag:measurement_methodology",
             "to": "paper:2019_studying_evolution_content_providers"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:measurement_methodology",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
         },
         "paper:2020_apple": {
             "from": "tag:measurement_methodology",
@@ -8058,17 +7845,17 @@
             "from": "tag:measurement_methodology",
             "to": "paper:2020_vrfinder"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:measurement_methodology",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         },
-        "solution:parse_the_itdk": {
+        "recipe:parse_the_itdk": {
             "from": "tag:measurement_methodology",
-            "to": "solution:parse_the_itdk"
+            "to": "recipe:parse_the_itdk"
         },
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:measurement_methodology",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "media:1998_isma9808": {
@@ -9578,10 +9365,6 @@
             "from": "tag:data",
             "to": "paper:2018_policy_implications_third_party_measurement"
         },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:data",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        },
         "paper:2019_empirical_study_mobile_network_behavior": {
             "from": "tag:data",
             "to": "paper:2019_empirical_study_mobile_network_behavior"
@@ -9589,10 +9372,6 @@
         "paper:2019_open_collaborative_hyperpapers": {
             "from": "tag:data",
             "to": "paper:2019_open_collaborative_hyperpapers"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:data",
-            "to": "paper:2019_residential_links_under_the_weather"
         },
         "paper:2019_residential_links_under_weather": {
             "from": "tag:data",
@@ -10146,10 +9925,6 @@
             "from": "tag:active_data_analysis",
             "to": "paper:2019_challenges_inferring_spoofed_traffic"
         },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:active_data_analysis",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
         "paper:2019_residential_links_under_weather": {
             "from": "tag:active_data_analysis",
             "to": "paper:2019_residential_links_under_weather"
@@ -10449,10 +10224,6 @@
         "paper:2019_towards_passive_analysis_anycast": {
             "from": "tag:dns",
             "to": "paper:2019_towards_passive_analysis_anycast"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:dns",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         },
         "paper:2020_dns_in_iot": {
             "from": "tag:dns",
@@ -11114,9 +10885,9 @@
             "from": "tag:passive_data_analysis",
             "to": "paper:2018_survey_among_network_operators"
         },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
+        "paper:2019_empirical_study_mobile_network_behavior": {
             "from": "tag:passive_data_analysis",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
+            "to": "paper:2019_empirical_study_mobile_network_behavior"
         },
         "paper:2019_at_home_abroad": {
             "from": "tag:passive_data_analysis",
@@ -11129,14 +10900,6 @@
         "paper:2019_chocolatine": {
             "from": "tag:passive_data_analysis",
             "to": "paper:2019_chocolatine"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:passive_data_analysis",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
-        },
-        "paper:2019_empirical_study_mobile_network_behavior": {
-            "from": "tag:passive_data_analysis",
-            "to": "paper:2019_empirical_study_mobile_network_behavior"
         }
     },
     "media:2001_extreme0001": {
@@ -11664,10 +11427,6 @@
         "paper:2019_chocolatine": {
             "from": "tag:network_telescope",
             "to": "paper:2019_chocolatine"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:network_telescope",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
         }
     },
     "media:2003_bwest_doe": {
@@ -14521,10 +14280,6 @@
             "from": "tag:economics",
             "to": "paper:2019_regulation_when_platforms_layered"
         },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "tag:economics",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink"
-        },
         "paper:2019_stable_practical_as_relationship": {
             "from": "tag:economics",
             "to": "paper:2019_stable_practical_as_relationship"
@@ -15601,17 +15356,9 @@
             "from": "tag:internet_outages",
             "to": "paper:2019_blink"
         },
-        "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane"
-        },
         "paper:2019_chocolatine": {
             "from": "tag:internet_outages",
             "to": "paper:2019_chocolatine"
-        },
-        "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation"
         },
         "paper:2019_geo_locating_bgp_prefixes": {
             "from": "tag:internet_outages",
@@ -15620,14 +15367,6 @@
         "paper:2019_how_find_correlated_internet": {
             "from": "tag:internet_outages",
             "to": "paper:2019_how_find_correlated_internet"
-        },
-        "paper:2019_how_to_find_correlated_internet_failures": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_how_to_find_correlated_internet_failures"
-        },
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:internet_outages",
-            "to": "paper:2019_residential_links_under_the_weather"
         }
     },
     "media:2012_analysis_peering_strategy_dances": {
@@ -17230,10 +16969,6 @@
         "paper:2019_studying_evolution_content_providers": {
             "from": "tag:congestion",
             "to": "paper:2019_studying_evolution_content_providers"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "tag:congestion",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores"
         },
         "paper:2019_wie2018_report": {
             "from": "tag:congestion",
@@ -19196,10 +18931,6 @@
             "from": "tag:qoe",
             "to": "paper:2018_revealing_load_balancing_behavior"
         },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:qoe",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        },
         "paper:2019_empirical_study_mobile_network_behavior": {
             "from": "tag:qoe",
             "to": "paper:2019_empirical_study_mobile_network_behavior"
@@ -20134,10 +19865,6 @@
             "from": "paper:2018_artemis",
             "to": "media:2018_artemis_ripe"
         },
-        "media:2020_artemis_uknof45": {
-            "from": "paper:2018_artemis",
-            "to": "media:2020_artemis_uknof45"
-        },
         "tag:passive_data_analysis": {
             "from": "paper:2018_artemis",
             "to": "tag:passive_data_analysis"
@@ -20959,10 +20686,6 @@
             "from": "tag:mobile",
             "to": "paper:2017_named_data_networking_2016_2017"
         },
-        "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-            "from": "tag:mobile",
-            "to": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild"
-        },
         "paper:2019_empirical_study_mobile_network_behavior": {
             "from": "tag:mobile",
             "to": "paper:2019_empirical_study_mobile_network_behavior"
@@ -21496,45 +21219,6 @@
             "to": "tag:topology"
         }
     },
-    "media:2020_artemis_uknof45": {
-        "paper:2018_artemis": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "paper:2018_artemis"
-        },
-        "tag:hijeck": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "tag:hijeck"
-        },
-        "tag:bgp_prefix": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "tag:bgp_prefix"
-        },
-        "tag:security": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "tag:security"
-        },
-        "tag:software_tools": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "tag:software_tools"
-        },
-        "software:artemis": {
-            "from": "media:2020_artemis_uknof45",
-            "to": "software:artemis",
-            "label": "used by"
-        }
-    },
-    "tag:hijeck": {
-        "media:2020_artemis_uknof45": {
-            "from": "tag:hijeck",
-            "to": "media:2020_artemis_uknof45"
-        }
-    },
-    "tag:bgp_prefix": {
-        "media:2020_artemis_uknof45": {
-            "from": "tag:bgp_prefix",
-            "to": "media:2020_artemis_uknof45"
-        }
-    },
     "media:2020_caida_overview_iij": {
         "tag:active_data_analysis": {
             "from": "media:2020_caida_overview_iij",
@@ -21902,21 +21586,29 @@
             "from": "tag:ipv4",
             "to": "media:ipv4_history_viz_video"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:ipv4",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         },
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "tag:ipv4",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
         },
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
             "from": "tag:ipv4",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
         },
-        "solution:how_to_get_range_of_allocated_or_reserved_ips": {
+        "recipe:how_to_use_as_rank_to_classify_asns": {
             "from": "tag:ipv4",
-            "to": "solution:how_to_get_range_of_allocated_or_reserved_ips"
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
+        },
+        "recipe:how_to_find_an_asns_customer_cone": {
+            "from": "tag:ipv4",
+            "to": "recipe:how_to_find_an_asns_customer_cone"
+        },
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
+            "from": "tag:ipv4",
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
         }
     },
     "tag:sankey": {
@@ -24916,9 +24608,13 @@
             "from": "tag:as_rank",
             "to": "paper:2013_asrank"
         },
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "tag:as_rank",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
+        },
+        "recipe:how_to_use_as_rank_to_classify_asns": {
+            "from": "tag:as_rank",
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
         }
     },
     "paper:2013_day_after_patch_tuesday": {
@@ -26809,29 +26505,6 @@
             "to": "tag:workshop_report"
         }
     },
-    "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild": {
-        "dataset:mopeye": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "dataset:mopeye",
-            "label": "used"
-        },
-        "tag:data": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:data"
-        },
-        "tag:mobile": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:mobile"
-        },
-        "tag:passive_data_analysis": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:passive_data_analysis"
-        },
-        "tag:qoe": {
-            "from": "paper:2019_an_empirical_study_of_mobile_network_behavior_and_application_performance_in_the_wild",
-            "to": "tag:qoe"
-        }
-    },
     "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes": {
         "dataset:as_prefix": {
             "from": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
@@ -26921,35 +26594,30 @@
             "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes"
         }
     },
-    "software:bgpstream": {
-        "paper:2019_bgp_hijacking_classification": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_bgp_hijacking_classification",
-            "label": "used"
+    "paper:2019_dynamic_property_enforcement_programmable": {
+        "tag:security": {
+            "from": "paper:2019_dynamic_property_enforcement_programmable",
+            "to": "tag:security"
         },
+        "tag:routing": {
+            "from": "paper:2019_dynamic_property_enforcement_programmable",
+            "to": "tag:routing"
+        }
+    },
+    "paper:2019_encouraging_reproducibility_scientific_research": {
+        "tag:overview": {
+            "from": "paper:2019_encouraging_reproducibility_scientific_research",
+            "to": "tag:overview"
+        },
+        "tag:measurement_methodology": {
+            "from": "paper:2019_encouraging_reproducibility_scientific_research",
+            "to": "tag:measurement_methodology"
+        }
+    },
+    "software:bgpstream": {
         "paper:2019_geo_locating_bgp_prefixes": {
             "from": "software:bgpstream",
             "to": "paper:2019_geo_locating_bgp_prefixes",
-            "label": "used"
-        },
-        "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "label": "used"
-        },
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
-        },
-        "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
-            "label": "used"
-        },
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "software:bgpstream",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
             "label": "used"
         },
         "paper:2019_towards_passive_analysis_anycast": {
@@ -26965,6 +26633,11 @@
         "paper:2019_stable_practical_as_relationship": {
             "from": "software:bgpstream",
             "to": "paper:2019_stable_practical_as_relationship",
+            "label": "used by"
+        },
+        "paper:2019_bgp_hijacking_classification": {
+            "from": "software:bgpstream",
+            "to": "paper:2019_bgp_hijacking_classification",
             "label": "used by"
         },
         "paper:2019_studying_evolution_content_providers": {
@@ -27011,88 +26684,6 @@
             "to": "tag:bgp"
         }
     },
-    "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane": {
-        "dataset:as_prefix": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "dataset:as_prefix",
-            "label": "used"
-        },
-        "tag:internet_outages": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "tag:internet_outages"
-        },
-        "tag:routing": {
-            "from": "paper:2019_blink_fast_connectivity_recovery_entirely_in_the_data_plane",
-            "to": "tag:routing"
-        }
-    },
-    "paper:2019_chocolatine_outage_detection_for_internet_background_radiation": {
-        "dataset:ucsd_network_telescope": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:ucsd_network_telescope",
-            "label": "used"
-        },
-        "dataset:caida_ioda": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "dataset:caida_ioda",
-            "label": "used"
-        },
-        "tag:internet_outages": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:internet_outages"
-        },
-        "tag:network_telescope": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:network_telescope"
-        },
-        "tag:passive_data_analysis": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:passive_data_analysis"
-        },
-        "tag:security": {
-            "from": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
-            "to": "tag:security"
-        }
-    },
-    "paper:2019_dynamic_property_enforcement_programmable": {
-        "tag:security": {
-            "from": "paper:2019_dynamic_property_enforcement_programmable",
-            "to": "tag:security"
-        },
-        "tag:routing": {
-            "from": "paper:2019_dynamic_property_enforcement_programmable",
-            "to": "tag:routing"
-        }
-    },
-    "paper:2019_encouraging_reproducibility_scientific_research": {
-        "tag:overview": {
-            "from": "paper:2019_encouraging_reproducibility_scientific_research",
-            "to": "tag:overview"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_encouraging_reproducibility_scientific_research",
-            "to": "tag:measurement_methodology"
-        }
-    },
-    "paper:2019_how_to_find_correlated_internet_failures": {
-        "dataset:thunderping": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "dataset:thunderping",
-            "label": "used"
-        },
-        "tag:internet_outages": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:internet_outages"
-        },
-        "tag:routing": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:routing"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_how_to_find_correlated_internet_failures",
-            "to": "tag:measurement_methodology"
-        }
-    },
     "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic": {
         "dataset:mawi_internet_traffic": {
             "from": "paper:2019_hypersparse_neural_network_analysis_of_large_scale_internet_traffic",
@@ -27117,25 +26708,6 @@
             "to": "tag:routing"
         }
     },
-    "paper:2019_learning_regexes_to_extract_router_names_from_hostnames": {
-        "dataset:itdk": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "dataset:itdk",
-            "label": "used"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:topology"
-        },
-        "tag:software_tools": {
-            "from": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
-            "to": "tag:software_tools"
-        }
-    },
     "paper:2019_open_collaborative_hyperpapers": {
         "media:2018_hyperpapers_open_coauthoring_aims": {
             "from": "paper:2019_open_collaborative_hyperpapers",
@@ -27148,25 +26720,6 @@
         "tag:data": {
             "from": "paper:2019_open_collaborative_hyperpapers",
             "to": "tag:data"
-        }
-    },
-    "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table": {
-        "software:bgpstream": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "tag:topology": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:topology"
-        },
-        "tag:security": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:security"
-        },
-        "tag:routing": {
-            "from": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "to": "tag:routing"
         }
     },
     "paper:2019_qflow": {
@@ -27209,154 +26762,6 @@
         "tag:policy": {
             "from": "paper:2019_regulation_when_platforms_layered",
             "to": "tag:policy"
-        }
-    },
-    "software:u_s_national_weather_serice_severe_weather_alert": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "software:u_s_national_weather_serice_severe_weather_alert",
-            "to": "paper:2019_residential_links_under_the_weather",
-            "label": "used"
-        },
-        "tag:weather": {
-            "from": "software:u_s_national_weather_serice_severe_weather_alert",
-            "to": "tag:weather"
-        }
-    },
-    "tag:internet_reliability": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:internet_reliability",
-            "to": "paper:2019_residential_links_under_the_weather"
-        }
-    },
-    "tag:ping": {
-        "paper:2019_residential_links_under_the_weather": {
-            "from": "tag:ping",
-            "to": "paper:2019_residential_links_under_the_weather"
-        },
-        "software:vela": {
-            "from": "tag:ping",
-            "to": "software:vela"
-        }
-    },
-    "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-        "software:peeringdb": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:peeringdb",
-            "label": "used"
-        },
-        "software:bgpstream": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:euro_ix_ixp_service_matrix": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:euro_ix_ixp_service_matrix",
-            "label": "used"
-        },
-        "dataset:bgp_communities": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:bgp_communities",
-            "label": "used"
-        },
-        "dataset:as_organization": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "dataset:as_organization",
-            "label": "used"
-        },
-        "tag:measurement_methodology": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:routing": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:routing"
-        },
-        "tag:topology": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:topology"
-        },
-        "tag:economics": {
-            "from": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "to": "tag:economics"
-        }
-    },
-    "software:peeringdb": {
-        "paper:2019_stable_and_practical_as_relationship_inference_with_problink": {
-            "from": "software:peeringdb",
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
-            "label": "used"
-        },
-        "paper:2019_stable_practical_as_relationship": {
-            "from": "software:peeringdb",
-            "to": "paper:2019_stable_practical_as_relationship",
-            "label": "used by"
-        },
-        "tag:ixp": {
-            "from": "software:peeringdb",
-            "to": "tag:ixp"
-        },
-        "tag:topology": {
-            "from": "software:peeringdb",
-            "to": "tag:topology"
-        }
-    },
-    "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-        "software:bgpstream": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "software:bgpstream",
-            "label": "used"
-        },
-        "dataset:anycast_dataset": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "dataset:anycast_dataset",
-            "label": "used"
-        },
-        "tag:remote_peering": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:remote_peering"
-        },
-        "tag:topology": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:topology"
-        },
-        "tag:dns": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:dns"
-        },
-        "tag:peering": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:peering"
-        },
-        "tag:internet_routing": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:internet_routing"
-        },
-        "tag:anycast": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:anycast"
-        },
-        "tag:routing": {
-            "from": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
-            "to": "tag:routing"
-        }
-    },
-    "tag:remote_peering": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:remote_peering",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "tag:peering": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:peering",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
-        }
-    },
-    "tag:internet_routing": {
-        "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering": {
-            "from": "tag:internet_routing",
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering"
         }
     },
     "paper:2019_tracking_deployment_ipv6": {
@@ -27506,11 +26911,6 @@
         "paper:2018_survey_among_network_operators": {
             "from": "software:artemis",
             "to": "paper:2018_survey_among_network_operators",
-            "label": "used by"
-        },
-        "media:2020_artemis_uknof45": {
-            "from": "software:artemis",
-            "to": "media:2020_artemis_uknof45",
             "label": "used by"
         },
         "media:2019_neutralizing_bgp_hijacking_aims": {
@@ -28013,17 +27413,17 @@
             "from": "tag:ip_address",
             "to": "software:motu"
         },
-        "solution:how_to_parse_cymru_bogon_data": {
+        "recipe:how_to_parse_cymru_bogon_data": {
             "from": "tag:ip_address",
-            "to": "solution:how_to_parse_cymru_bogon_data"
+            "to": "recipe:how_to_parse_cymru_bogon_data"
         },
-        "solution:how_to_get_range_of_allocated_or_reserved_ips": {
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
             "from": "tag:ip_address",
-            "to": "solution:how_to_get_range_of_allocated_or_reserved_ips"
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
         },
-        "solution:how_to_annotate_a_traceroute_with_ixp": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
             "from": "tag:ip_address",
-            "to": "solution:how_to_annotate_a_traceroute_with_ixp"
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
         }
     },
     "tag:alias_resolution": {
@@ -28275,6 +27675,21 @@
             "to": "tag:alias_resolution"
         }
     },
+    "software:peeringdb": {
+        "paper:2019_stable_practical_as_relationship": {
+            "from": "software:peeringdb",
+            "to": "paper:2019_stable_practical_as_relationship",
+            "label": "used by"
+        },
+        "tag:ixp": {
+            "from": "software:peeringdb",
+            "to": "tag:ixp"
+        },
+        "tag:topology": {
+            "from": "software:peeringdb",
+            "to": "tag:topology"
+        }
+    },
     "software:periscope": {
         "tag:bgp": {
             "from": "software:periscope",
@@ -28310,9 +27725,9 @@
             "from": "software:pyipmeta",
             "to": "tag:geolocation"
         },
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "software:pyipmeta",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         }
     },
     "tag:python": {
@@ -28473,304 +27888,373 @@
             "to": "tag:security"
         }
     },
+    "software:u_s_national_weather_serice_severe_weather_alert": {
+        "paper:2019_residential_links_under_weather": {
+            "from": "software:u_s_national_weather_serice_severe_weather_alert",
+            "to": "paper:2019_residential_links_under_weather",
+            "label": "used by"
+        },
+        "tag:weather": {
+            "from": "software:u_s_national_weather_serice_severe_weather_alert",
+            "to": "tag:weather"
+        }
+    },
+    "tag:ping": {
+        "software:vela": {
+            "from": "tag:ping",
+            "to": "software:vela"
+        }
+    },
     "tag:ark": {
         "software:vela": {
             "from": "tag:ark",
             "to": "software:vela"
         }
     },
-    "solution:map_ipv4_address_to_asn": {
+    "recipe:map_ipv4_address_to_asn": {
         "software:pyipmeta": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "software:pyipmeta"
         },
         "tag:measurement_methodology": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:measurement_methodology"
         },
         "tag:topology": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:topology"
         },
         "tag:software_tools": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:software_tools"
         },
         "tag:asn": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:asn"
         },
         "tag:ipv4": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:ipv4"
         },
         "tag:ipv4_prefix": {
-            "from": "solution:map_ipv4_address_to_asn",
+            "from": "recipe:map_ipv4_address_to_asn",
             "to": "tag:ipv4_prefix"
         }
     },
     "tag:ipv4_prefix": {
-        "solution:map_ipv4_address_to_asn": {
+        "recipe:map_ipv4_address_to_asn": {
             "from": "tag:ipv4_prefix",
-            "to": "solution:map_ipv4_address_to_asn"
+            "to": "recipe:map_ipv4_address_to_asn"
         }
     },
-    "solution:how_to_find_the_business_relationship_between_asns": {
+    "recipe:how_to_find_the_business_relationship_between_asns": {
         "dataset:as_relationships": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "dataset:as_relationships"
         },
         "dataset:asrank": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "dataset:asrank"
         },
         "tag:asn": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "tag:asn"
         },
         "tag:as_relationship": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "tag:as_relationship"
         },
         "tag:as_rank": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "tag:as_rank"
         },
         "tag:ipv4": {
-            "from": "solution:how_to_find_the_business_relationship_between_asns",
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
             "to": "tag:ipv4"
         }
     },
     "tag:as_relationship": {
-        "solution:how_to_find_the_business_relationship_between_asns": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
             "from": "tag:as_relationship",
-            "to": "solution:how_to_find_the_business_relationship_between_asns"
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
+        },
+        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
+            "from": "tag:as_relationship",
+            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
+        },
+        "recipe:how_to_use_as_rank_to_classify_asns": {
+            "from": "tag:as_relationship",
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
         }
     },
-    "solution:how_to_parse_cymru_bogon_data": {
+    "recipe:how_to_parse_cymru_bogon_data": {
         "dataset:bogons": {
-            "from": "solution:how_to_parse_cymru_bogon_data",
+            "from": "recipe:how_to_parse_cymru_bogon_data",
             "to": "dataset:bogons"
         },
         "tag:bogon": {
-            "from": "solution:how_to_parse_cymru_bogon_data",
+            "from": "recipe:how_to_parse_cymru_bogon_data",
             "to": "tag:bogon"
         },
         "tag:bogon_address": {
-            "from": "solution:how_to_parse_cymru_bogon_data",
+            "from": "recipe:how_to_parse_cymru_bogon_data",
             "to": "tag:bogon_address"
         },
         "tag:ip_address": {
-            "from": "solution:how_to_parse_cymru_bogon_data",
+            "from": "recipe:how_to_parse_cymru_bogon_data",
             "to": "tag:ip_address"
         },
         "tag:ip": {
-            "from": "solution:how_to_parse_cymru_bogon_data",
+            "from": "recipe:how_to_parse_cymru_bogon_data",
             "to": "tag:ip"
         }
     },
     "tag:bogon": {
-        "solution:how_to_parse_cymru_bogon_data": {
+        "recipe:how_to_parse_cymru_bogon_data": {
             "from": "tag:bogon",
-            "to": "solution:how_to_parse_cymru_bogon_data"
+            "to": "recipe:how_to_parse_cymru_bogon_data"
         }
     },
     "tag:bogon_address": {
-        "solution:how_to_parse_cymru_bogon_data": {
+        "recipe:how_to_parse_cymru_bogon_data": {
             "from": "tag:bogon_address",
-            "to": "solution:how_to_parse_cymru_bogon_data"
+            "to": "recipe:how_to_parse_cymru_bogon_data"
         }
     },
     "tag:ip": {
-        "solution:how_to_parse_cymru_bogon_data": {
+        "recipe:how_to_parse_cymru_bogon_data": {
             "from": "tag:ip",
-            "to": "solution:how_to_parse_cymru_bogon_data"
+            "to": "recipe:how_to_parse_cymru_bogon_data"
         },
-        "solution:how_to_get_range_of_allocated_or_reserved_ips": {
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
             "from": "tag:ip",
-            "to": "solution:how_to_get_range_of_allocated_or_reserved_ips"
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
         },
-        "solution:how_to_annotate_a_traceroute_with_ixp": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
             "from": "tag:ip",
-            "to": "solution:how_to_annotate_a_traceroute_with_ixp"
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
         }
     },
-    "solution:solution_how_to_find_an_asns_customer_cone": {
+    "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
         "dataset:as_relationships": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
             "to": "dataset:as_relationships"
         },
         "tag:asn": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:asn"
+        },
+        "tag:as_relationship": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:as_relationship"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:ipv4"
+        }
+    },
+    "recipe:how_to_use_as_rank_to_classify_asns": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "dataset:as_relationships"
+        },
+        "dataset:asrank": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "dataset:asrank"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:asn"
+        },
+        "tag:as_rank": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:as_rank"
+        },
+        "tag:as_relationship": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:as_relationship"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:ipv4"
+        }
+    },
+    "recipe:how_to_find_an_asns_customer_cone": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "dataset:as_relationships"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
             "to": "tag:asn"
         },
         "tag:as_relationships": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_find_an_asns_customer_cone",
             "to": "tag:as_relationships"
         },
         "tag:customer_cone": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_find_an_asns_customer_cone",
             "to": "tag:customer_cone"
         },
         "tag:ipv4": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_find_an_asns_customer_cone",
             "to": "tag:ipv4"
         },
         "tag:topology": {
-            "from": "solution:solution_how_to_find_an_asns_customer_cone",
+            "from": "recipe:how_to_find_an_asns_customer_cone",
             "to": "tag:topology"
         }
     },
     "tag:as_relationships": {
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_find_an_asns_customer_cone": {
             "from": "tag:as_relationships",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_find_an_asns_customer_cone"
         }
     },
     "tag:customer_cone": {
-        "solution:solution_how_to_find_an_asns_customer_cone": {
+        "recipe:how_to_find_an_asns_customer_cone": {
             "from": "tag:customer_cone",
-            "to": "solution:solution_how_to_find_an_asns_customer_cone"
+            "to": "recipe:how_to_find_an_asns_customer_cone"
         }
     },
-    "solution:how_to_get_range_of_allocated_or_reserved_ips": {
+    "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
         "tag:ipv4": {
-            "from": "solution:how_to_get_range_of_allocated_or_reserved_ips",
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
             "to": "tag:ipv4"
         },
         "tag:iana": {
-            "from": "solution:how_to_get_range_of_allocated_or_reserved_ips",
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
             "to": "tag:iana"
         },
         "tag:ip_address": {
-            "from": "solution:how_to_get_range_of_allocated_or_reserved_ips",
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
             "to": "tag:ip_address"
         },
         "tag:ip": {
-            "from": "solution:how_to_get_range_of_allocated_or_reserved_ips",
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
             "to": "tag:ip"
         }
     },
-    "solution:parse_the_itdk": {
+    "recipe:parse_the_itdk": {
         "dataset:as_organization": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "dataset:as_organization"
         },
         "tag:measurement_methodology": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "tag:measurement_methodology"
         },
         "tag:topology": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "tag:topology"
         },
         "tag:software_tools": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "tag:software_tools"
         },
         "tag:asn": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "tag:asn"
         },
         "tag:geolocation": {
-            "from": "solution:parse_the_itdk",
+            "from": "recipe:parse_the_itdk",
             "to": "tag:geolocation"
         }
     },
-    "solution:how_to_annotate_a_traceroute_with_ixp": {
+    "recipe:how_to_annotate_a_traceroute_with_ixp": {
         "tag:ixps": {
-            "from": "solution:how_to_annotate_a_traceroute_with_ixp",
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
             "to": "tag:ixps"
         },
         "tag:internet_exchange_points": {
-            "from": "solution:how_to_annotate_a_traceroute_with_ixp",
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
             "to": "tag:internet_exchange_points"
         },
         "tag:ip_address": {
-            "from": "solution:how_to_annotate_a_traceroute_with_ixp",
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
             "to": "tag:ip_address"
         },
         "tag:ip": {
-            "from": "solution:how_to_annotate_a_traceroute_with_ixp",
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
             "to": "tag:ip"
         }
     },
     "tag:ixps": {
-        "solution:how_to_annotate_a_traceroute_with_ixp": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
             "from": "tag:ixps",
-            "to": "solution:how_to_annotate_a_traceroute_with_ixp"
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
         }
     },
     "tag:internet_exchange_points": {
-        "solution:how_to_annotate_a_traceroute_with_ixp": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
             "from": "tag:internet_exchange_points",
-            "to": "solution:how_to_annotate_a_traceroute_with_ixp"
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
         }
     },
-    "solution:how_to_get_the_range_of_allocated_or_reserved_asns": {
+    "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
         "tag:asn": {
-            "from": "solution:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
             "to": "tag:asn"
         },
         "tag:iana": {
-            "from": "solution:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
             "to": "tag:iana"
         },
         "tag:autonomous_system": {
-            "from": "solution:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
             "to": "tag:autonomous_system"
         }
     },
     "tag:autonomous_system": {
-        "solution:how_to_get_the_range_of_allocated_or_reserved_asns": {
+        "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
             "from": "tag:autonomous_system",
-            "to": "solution:how_to_get_the_range_of_allocated_or_reserved_asns"
+            "to": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns"
         }
     },
-    "solution:solution_getting_an_asns_name_country_organization": {
+    "recipe:getting_an_asns_name_country_organization": {
         "dataset:as_organization": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "dataset:as_organization"
         },
         "tag:measurement_methodology": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:measurement_methodology"
         },
         "tag:topology": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:topology"
         },
         "tag:software_tools": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:software_tools"
         },
         "tag:asn": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:asn"
         },
         "tag:geolocation": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:geolocation"
         },
         "tag:organization": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:organization"
         },
         "tag:country": {
-            "from": "solution:solution_getting_an_asns_name_country_organization",
+            "from": "recipe:getting_an_asns_name_country_organization",
             "to": "tag:country"
         }
     },
     "tag:organization": {
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:organization",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "tag:country": {
-        "solution:solution_getting_an_asns_name_country_organization": {
+        "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:country",
-            "to": "solution:solution_getting_an_asns_name_country_organization"
+            "to": "recipe:getting_an_asns_name_country_organization"
         }
     }
 }

@@ -10,33 +10,54 @@ seen = set()
 name_id = {}
 
 def main():
+    if len(sys.argv) < 1:
+        print ("Failed to any filenames")
+        sys.exit()
+
     load_ids("media","data/PANDA-Presentations-json.pl.json")
     load_ids("paper","data/PANDA-Papers-json.pl.json")
     for type_ in os.listdir("sources"):
-        p = "sources/"+type_
-        if os.path.isdir(p):
-            for fname in os.listdir(p):
-                fname = p+"/"+fname
-                if re.search("json$",fname): 
+        #print ("loading",type_)
+        path = "sources/"+type_
+        if os.path.isdir(path):
+            for filename in os.listdir(path):
+                fname = path+"/"+filename
+                if type_ == "solution":
+                    if os.path.isdir(fname):
+                        for solution in os.listdir(fname):
+                            solution_path = fname+"/"+solution
+                            if re.search("readme.md",solution_path,re.IGNORECASE):
+                                info = solution_parse(solution_path)
+                                if "id" in info:
+                                    id_add(solution_path, "solution", info["id"])
+                                else:
+                                    id_add(solution_path, "solution", filename)
+                elif re.search("json$",fname): 
                     obj = json.load(open(fname,"r"))
-                    id_add(fname, type_, obj["id"])
-                    if "name" in obj:
-                        name = id_create(fname, type_,obj["name"])
-                        #if "evolution" in name:
-                            #print (obj["id"])
-                            #print (name)
-                            #print ()
-                        name_id[name] = id_create(fname, type_,obj["id"])
-        
+                    if "id" in obj:
+                        id_add(fname, type_, obj["id"])
+                        if "name" in obj:
+                            name = id_create(fname, type_,obj["name"])
+                            #if "evolution" in name:
+                                #print (obj["id"])
+                                #print (name)
+                                #print ()
+                            name_id[name] = id_create(fname, type_,obj["id"])
+                    else:
+                        print ("failed to find id in ", fname)
+
+    nothing_found = True
 
     for fname in sys.argv[1:]:
-        print (fname)
+        if "sources/solution" in fname:
+            info = solution_parse(fname)
+        else:
+            info = json.load(open(fname,"r"))
         missing = []
-        info = json.load(open(fname,"r"))
         changed = False
         if "links" in info:
             for i,link in enumerate(info["links"]):
-                if type(link) == "string":
+                if type(link) == str:
                     to = link
                     changed = True
                     found = id_lookup(to)
@@ -48,6 +69,7 @@ def main():
                 else:
                     #link["oo"] = link["to"]
                     to = id_create(fname, None,link["to"])
+                    to = "solution:getting_an_asns_name_country_organization"
                     found = id_lookup(to)
                     if found is None:
                         missing.append(link["to"])
@@ -72,13 +94,18 @@ def main():
             print (fname)
             for missed in missing:
                 print ("    ",missed)
+            nothing_found = False
 
-        if changed:
-            print ("updating",fname)
-            json.dump(info,open(fname,"w"),indent=4)
+        #if changed:
+            #print ("updating",fname)
+            #json.dump(info,open(fname,"w"),indent=4)
             #print (json.dumps(info,indent=4))
 
+    if nothing_found:
+        print ("no missing ids found")
+
 def load_ids(type_,filename):
+    #print ("loading",filename)
     for obj in json.load(open(filename,"r")):
         id_add(filename, type_, obj["id"])
 
@@ -126,5 +153,26 @@ def id_yearless(id_):
         type_,date,name = m.groups()
         return type_+":"+name
     return id_
-    
+
+def solution_parse(fname): 
+    with open(fname,"r") as f:
+        data = None
+        for line in f:
+            if re.search("~~~",line):
+                if data is None:
+                    data = ""
+                else:
+                    break
+            elif data is not None:
+                data += line
+        if data is not None:
+            try: 
+                info = json.loads(data)
+            except ValueError as e:
+                print ("parse failure",fname)
+                print (e)
+                info = {}
+            return info
+    return {}
+
 main()
