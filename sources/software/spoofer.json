@@ -18,11 +18,11 @@
     ],
     "links": [
         {
-            "to": "paper:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "paper:2019_network_hygiene_incentives_regulation",
             "label": "used by"
         },
         {
-            "to": "paper:using_crowdsourcing_marketplaces_for_network_measurements_the_case_of_spoofer",
+            "to": "paper:2018_using_crowdsourcing_marketplaces",
             "label": "used by"
         },
         {
@@ -30,7 +30,7 @@
             "label": "used by"
         },
         {
-            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "media:2019_network_hygiene_incentives_regulation_ccs/",
             "label": "used by"
         },
         {

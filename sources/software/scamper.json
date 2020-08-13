@@ -19,19 +19,19 @@
     ],
     "links": [
         {
-            "to": "dataset:macroscopic_topology_measurements",
+            "to": "dataset:itdk",
             "label": "used by"
         },
         {
-            "to": "dataset:the_ipv4_routed_24_topology_dataset",
+            "to": "dataset:ipv4_routed_24_topology_dataset",
             "label": "used by"
         },
         {
-            "to": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "to": "paper:2010_scamper",
             "label": "used by"
         },
         {
-            "to": "paper:learning_to_extract_router_names_from_hostnames",
+            "to": "paper:2019_learning_regexes_extract_router",
             "label": "used by"
         },
         {
@@ -39,7 +39,7 @@
             "label": "used by"
         },
         {
-            "to": "paper:bdrmap_inference_of_borders_between_ip_networks",
+            "to": "paper:2016_bdrmap",
             "label": "used by"
         },
         {
@@ -63,11 +63,11 @@
             "label": "used by"
         },
         {
-            "to": "paper:speedtrap_internet_scale_ipv6_alias_resolution",
+            "to": "paper:2013_speedtrap",
             "label": "used by"
         },
         {
-            "to": "paper:measuring_the_deployment_of_ipv6_topology_routing_and_performance",
+            "to": "paper:2012_measuring_deployment_ipv6",
             "label": "used by"
         },
         {
@@ -79,7 +79,7 @@
             "label": "used by"
         },
         {
-            "to": "paper:measuring_path_mtu_discovery_behaviour",
+            "to": "paper:2010_measuring_path_mtu",
             "label": "used by"
         },
         {
@@ -87,7 +87,7 @@
             "label": "used by"
         },
         {
-            "to": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+            "to": "paper:2005_inferring_mtu",
             "label": "used by"
         },
         {

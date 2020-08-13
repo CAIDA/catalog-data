@@ -18,7 +18,11 @@ def main():
             for fname in os.listdir(p):
                 fname = p+"/"+fname
                 if re.search("json$",fname): 
-                    obj = json.load(open(fname,"r"))
+                    try:
+                        obj = json.load(open(fname,"r"))
+                    except ValueError as e:
+                        print (fname)
+                        raise e
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
                         name = id_create(fname, type_,obj["name"])
@@ -109,7 +113,7 @@ def load_ids(type_,filename):
         id_add(filename, type_, obj["id"])
         original = "sources/"+type_+"/"+obj["id"]+".json"
         if not os.path.exists(original):
-            obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__placeholder.json"
+            obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
             objects.append(obj)
 
 

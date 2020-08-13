@@ -60,7 +60,10 @@ id_word_score = {}
 
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
+
 re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
+re_word = re.compile("^[a-z]+$",re.IGNORECASE)
+
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 re_type_name = re.compile("([^\:]+):(.+)")
@@ -157,12 +160,14 @@ def main():
             type_ = fname
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
-                    print ("   ",path+"/"+filename)
-                    info = json.load(open(path+"/"+filename))
-                    info["filename"] = path+"/"+filename
-                    obj = object_add(type_,info)
-                    if obj is None:
-                        print ("parse error   ",path+"/"+filename)
+                    try:
+                        info = json.load(open(path+"/"+filename))
+                        info["filename"] = path+"/"+filename
+                        obj = object_add(type_,info)
+                        if obj is None:
+                            print ("parse error   ",path+"/"+filename)
+                    except ValueError as e:
+                        print (path+"/"+filename)
 
 
     values = list(id_object.values())
@@ -200,7 +205,7 @@ def main():
     if os.path.exists(id_object_file):
         try:
             id_objs = json.load(open(id_object_file,"r"))
-        except ValueError:
+        except ValueError as e:
             print ('decoding JSON filed on'+id_object_file)
             id_objs = {}
     else:
@@ -290,7 +295,8 @@ def main():
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
 
     print ("writing",word_score_id_file)
-    json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    json.dump(word_score_id, open(word_score_id_file,"w"))
 
 
     sys.exit()
@@ -338,7 +344,9 @@ def id_create(type_,name,id_=None):
             return None
     if type_ == "solution":
         type_ = "recipe"
-    id_ = type_+":"+re_id_illegal.sub("_",name)
+    name = re_id_illegal.sub("_",name)
+    name = re.sub("_+$","",re.sub("^_+","",name))
+    id_ = type_+":"+name
     return id_.lower()
 
 
@@ -721,7 +729,7 @@ def word_freq_get(value):
             total = len(words)
             for word in words:
                 word = word.lower()
-                if len(word) > 1 and not re.search("^[^a-z]+$",word): 
+                if len(word) > 1 and re_word.search(word): 
                     if word in word_freq:
                         word_freq[word] += 1/total
                     else:

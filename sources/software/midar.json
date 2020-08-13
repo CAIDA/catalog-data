@@ -19,15 +19,11 @@
     ],
     "links": [
         {
-            "to": "software:vela_midar_api",
-            "label": "used by"
-        },
-        {
             "to": "software:vela",
             "label": "used by"
         },
         {
-            "to": "dataset:internet_topology_data_kit",
+            "to": "dataset:itdk",
             "label": "used by"
         },
         {
@@ -35,11 +31,11 @@
             "label": "used by"
         },
         {
-            "to": "paper:internet_scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "to": "paper:2011_midar-tr",
             "label": "used by"
         },
         {
-            "to": "paper:unintended_consequences_effects_of_submarine_cable_deployment_on_internet_routing",
+            "to": "paper:2020_unintended_consequences",
             "label": "used by"
         },
         {
