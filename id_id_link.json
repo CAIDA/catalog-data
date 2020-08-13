@@ -885,6 +885,10 @@
             "from": "tag:topology",
             "to": "dataset:as_relationships"
         },
+        "dataset:as_relationships_geo": {
+            "from": "tag:topology",
+            "to": "dataset:as_relationships_geo"
+        },
         "dataset:asrank": {
             "from": "tag:topology",
             "to": "dataset:asrank"
@@ -2517,6 +2521,30 @@
             "from": "tag:topology",
             "to": "paper:2020_wie2019_report"
         },
+        "recipe:map_ipv4_address_to_asn": {
+            "from": "tag:topology",
+            "to": "recipe:map_ipv4_address_to_asn"
+        },
+        "recipe:how_to_find_an_asns_customer_cone": {
+            "from": "tag:topology",
+            "to": "recipe:how_to_find_an_asns_customer_cone"
+        },
+        "recipe:parse_the_itdk": {
+            "from": "tag:topology",
+            "to": "recipe:parse_the_itdk"
+        },
+        "recipe:getting_an_asns_name_country_organization": {
+            "from": "tag:topology",
+            "to": "recipe:getting_an_asns_name_country_organization"
+        },
+        "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+            "from": "tag:topology",
+            "to": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "tag:topology",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
+        },
         "software:as_relationship": {
             "from": "tag:topology",
             "to": "software:as_relationship"
@@ -2548,22 +2576,6 @@
         "software:vela": {
             "from": "tag:topology",
             "to": "software:vela"
-        },
-        "recipe:map_ipv4_address_to_asn": {
-            "from": "tag:topology",
-            "to": "recipe:map_ipv4_address_to_asn"
-        },
-        "recipe:how_to_find_an_asns_customer_cone": {
-            "from": "tag:topology",
-            "to": "recipe:how_to_find_an_asns_customer_cone"
-        },
-        "recipe:parse_the_itdk": {
-            "from": "tag:topology",
-            "to": "recipe:parse_the_itdk"
-        },
-        "recipe:getting_an_asns_name_country_organization": {
-            "from": "tag:topology",
-            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "tag:anycast": {
@@ -2924,6 +2936,16 @@
             "to": "recipe:how_to_find_an_asns_customer_cone"
         }
     },
+    "dataset:as_relationships_geo": {
+        "tag:topology": {
+            "from": "dataset:as_relationships_geo",
+            "to": "tag:topology"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "dataset:as_relationships_geo",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
+        }
+    },
     "dataset:asrank": {
         "software:asrank_api": {
             "from": "dataset:asrank",
@@ -3028,6 +3050,18 @@
             "from": "tag:geolocation",
             "to": "dataset:netacuity_edge"
         },
+        "recipe:parse_the_itdk": {
+            "from": "tag:geolocation",
+            "to": "recipe:parse_the_itdk"
+        },
+        "recipe:getting_an_asns_name_country_organization": {
+            "from": "tag:geolocation",
+            "to": "recipe:getting_an_asns_name_country_organization"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "tag:geolocation",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
+        },
         "software:asrank_api": {
             "from": "tag:geolocation",
             "to": "software:asrank_api"
@@ -3043,14 +3077,6 @@
         "software:pyipmeta": {
             "from": "tag:geolocation",
             "to": "software:pyipmeta"
-        },
-        "recipe:parse_the_itdk": {
-            "from": "tag:geolocation",
-            "to": "recipe:parse_the_itdk"
-        },
-        "recipe:getting_an_asns_name_country_organization": {
-            "from": "tag:geolocation",
-            "to": "recipe:getting_an_asns_name_country_organization"
         }
     },
     "dataset:bgp_communities": {
@@ -4652,14 +4678,6 @@
             "from": "tag:asn",
             "to": "paper:2013_asrank"
         },
-        "software:pyasn": {
-            "from": "tag:asn",
-            "to": "software:pyasn"
-        },
-        "software:pyipmeta": {
-            "from": "tag:asn",
-            "to": "software:pyipmeta"
-        },
         "recipe:map_ipv4_address_to_asn": {
             "from": "tag:asn",
             "to": "recipe:map_ipv4_address_to_asn"
@@ -4691,6 +4709,18 @@
         "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:asn",
             "to": "recipe:getting_an_asns_name_country_organization"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "tag:asn",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
+        },
+        "software:pyasn": {
+            "from": "tag:asn",
+            "to": "software:pyasn"
+        },
+        "software:pyipmeta": {
+            "from": "tag:asn",
+            "to": "software:pyipmeta"
         }
     },
     "tag:as_numbers": {
@@ -5732,6 +5762,14 @@
         "recipe:getting_an_asns_name_country_organization": {
             "from": "tag:software_tools",
             "to": "recipe:getting_an_asns_name_country_organization"
+        },
+        "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+            "from": "tag:software_tools",
+            "to": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "tag:software_tools",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
         }
     },
     "media:1997_ietf199712": {
@@ -12142,6 +12180,10 @@
         "paper:2020_apple": {
             "from": "tag:ipv6",
             "to": "paper:2020_apple"
+        },
+        "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+            "from": "tag:ipv6",
+            "to": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames"
         }
     },
     "media:2005_caidawide050311_brownlee": {
@@ -21609,6 +21651,10 @@
         "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
             "from": "tag:ipv4",
             "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
+        },
+        "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+            "from": "tag:ipv4",
+            "to": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames"
         }
     },
     "tag:sankey": {
@@ -26902,6 +26948,456 @@
             "to": "tag:topology"
         }
     },
+    "recipe:map_ipv4_address_to_asn": {
+        "software:pyipmeta": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "software:pyipmeta"
+        },
+        "tag:measurement_methodology": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:topology"
+        },
+        "tag:software_tools": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:software_tools"
+        },
+        "tag:asn": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:asn"
+        },
+        "tag:ipv4": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:ipv4"
+        },
+        "tag:ipv4_prefix": {
+            "from": "recipe:map_ipv4_address_to_asn",
+            "to": "tag:ipv4_prefix"
+        }
+    },
+    "software:pyipmeta": {
+        "recipe:map_ipv4_address_to_asn": {
+            "from": "software:pyipmeta",
+            "to": "recipe:map_ipv4_address_to_asn"
+        },
+        "tag:asn": {
+            "from": "software:pyipmeta",
+            "to": "tag:asn"
+        },
+        "tag:python": {
+            "from": "software:pyipmeta",
+            "to": "tag:python"
+        },
+        "tag:geolocation": {
+            "from": "software:pyipmeta",
+            "to": "tag:geolocation"
+        }
+    },
+    "tag:ipv4_prefix": {
+        "recipe:map_ipv4_address_to_asn": {
+            "from": "tag:ipv4_prefix",
+            "to": "recipe:map_ipv4_address_to_asn"
+        },
+        "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+            "from": "tag:ipv4_prefix",
+            "to": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames"
+        }
+    },
+    "recipe:how_to_find_the_business_relationship_between_asns": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "dataset:as_relationships"
+        },
+        "dataset:asrank": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "dataset:asrank"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:asn"
+        },
+        "tag:as_relationship": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:as_relationship"
+        },
+        "tag:as_rank": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:as_rank"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_find_the_business_relationship_between_asns",
+            "to": "tag:ipv4"
+        }
+    },
+    "tag:as_relationship": {
+        "recipe:how_to_find_the_business_relationship_between_asns": {
+            "from": "tag:as_relationship",
+            "to": "recipe:how_to_find_the_business_relationship_between_asns"
+        },
+        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
+            "from": "tag:as_relationship",
+            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
+        },
+        "recipe:how_to_use_as_rank_to_classify_asns": {
+            "from": "tag:as_relationship",
+            "to": "recipe:how_to_use_as_rank_to_classify_asns"
+        }
+    },
+    "recipe:how_to_parse_cymru_bogon_data": {
+        "dataset:bogons": {
+            "from": "recipe:how_to_parse_cymru_bogon_data",
+            "to": "dataset:bogons"
+        },
+        "tag:bogon": {
+            "from": "recipe:how_to_parse_cymru_bogon_data",
+            "to": "tag:bogon"
+        },
+        "tag:bogon_address": {
+            "from": "recipe:how_to_parse_cymru_bogon_data",
+            "to": "tag:bogon_address"
+        },
+        "tag:ip_address": {
+            "from": "recipe:how_to_parse_cymru_bogon_data",
+            "to": "tag:ip_address"
+        },
+        "tag:ip": {
+            "from": "recipe:how_to_parse_cymru_bogon_data",
+            "to": "tag:ip"
+        }
+    },
+    "tag:bogon": {
+        "recipe:how_to_parse_cymru_bogon_data": {
+            "from": "tag:bogon",
+            "to": "recipe:how_to_parse_cymru_bogon_data"
+        }
+    },
+    "tag:bogon_address": {
+        "recipe:how_to_parse_cymru_bogon_data": {
+            "from": "tag:bogon_address",
+            "to": "recipe:how_to_parse_cymru_bogon_data"
+        }
+    },
+    "tag:ip_address": {
+        "recipe:how_to_parse_cymru_bogon_data": {
+            "from": "tag:ip_address",
+            "to": "recipe:how_to_parse_cymru_bogon_data"
+        },
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
+            "from": "tag:ip_address",
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
+        },
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
+            "from": "tag:ip_address",
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
+        },
+        "software:iffinder": {
+            "from": "tag:ip_address",
+            "to": "software:iffinder"
+        },
+        "software:kapar": {
+            "from": "tag:ip_address",
+            "to": "software:kapar"
+        },
+        "software:midar": {
+            "from": "tag:ip_address",
+            "to": "software:midar"
+        },
+        "software:motu": {
+            "from": "tag:ip_address",
+            "to": "software:motu"
+        }
+    },
+    "tag:ip": {
+        "recipe:how_to_parse_cymru_bogon_data": {
+            "from": "tag:ip",
+            "to": "recipe:how_to_parse_cymru_bogon_data"
+        },
+        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
+            "from": "tag:ip",
+            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
+        },
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
+            "from": "tag:ip",
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
+        }
+    },
+    "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "dataset:as_relationships"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:asn"
+        },
+        "tag:as_relationship": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:as_relationship"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
+            "to": "tag:ipv4"
+        }
+    },
+    "recipe:how_to_use_as_rank_to_classify_asns": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "dataset:as_relationships"
+        },
+        "dataset:asrank": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "dataset:asrank"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:asn"
+        },
+        "tag:as_rank": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:as_rank"
+        },
+        "tag:as_relationship": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:as_relationship"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_use_as_rank_to_classify_asns",
+            "to": "tag:ipv4"
+        }
+    },
+    "recipe:how_to_find_an_asns_customer_cone": {
+        "dataset:as_relationships": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "dataset:as_relationships"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "tag:asn"
+        },
+        "tag:as_relationships": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "tag:as_relationships"
+        },
+        "tag:customer_cone": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "tag:customer_cone"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "tag:ipv4"
+        },
+        "tag:topology": {
+            "from": "recipe:how_to_find_an_asns_customer_cone",
+            "to": "tag:topology"
+        }
+    },
+    "tag:as_relationships": {
+        "recipe:how_to_find_an_asns_customer_cone": {
+            "from": "tag:as_relationships",
+            "to": "recipe:how_to_find_an_asns_customer_cone"
+        }
+    },
+    "tag:customer_cone": {
+        "recipe:how_to_find_an_asns_customer_cone": {
+            "from": "tag:customer_cone",
+            "to": "recipe:how_to_find_an_asns_customer_cone"
+        }
+    },
+    "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
+        "tag:ipv4": {
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
+            "to": "tag:ipv4"
+        },
+        "tag:iana": {
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
+            "to": "tag:iana"
+        },
+        "tag:ip_address": {
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
+            "to": "tag:ip_address"
+        },
+        "tag:ip": {
+            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
+            "to": "tag:ip"
+        }
+    },
+    "recipe:parse_the_itdk": {
+        "dataset:as_organization": {
+            "from": "recipe:parse_the_itdk",
+            "to": "dataset:as_organization"
+        },
+        "tag:measurement_methodology": {
+            "from": "recipe:parse_the_itdk",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "recipe:parse_the_itdk",
+            "to": "tag:topology"
+        },
+        "tag:software_tools": {
+            "from": "recipe:parse_the_itdk",
+            "to": "tag:software_tools"
+        },
+        "tag:asn": {
+            "from": "recipe:parse_the_itdk",
+            "to": "tag:asn"
+        },
+        "tag:geolocation": {
+            "from": "recipe:parse_the_itdk",
+            "to": "tag:geolocation"
+        }
+    },
+    "recipe:how_to_annotate_a_traceroute_with_ixp": {
+        "tag:ixps": {
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
+            "to": "tag:ixps"
+        },
+        "tag:internet_exchange_points": {
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
+            "to": "tag:internet_exchange_points"
+        },
+        "tag:ip_address": {
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
+            "to": "tag:ip_address"
+        },
+        "tag:ip": {
+            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
+            "to": "tag:ip"
+        }
+    },
+    "tag:ixps": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
+            "from": "tag:ixps",
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
+        }
+    },
+    "tag:internet_exchange_points": {
+        "recipe:how_to_annotate_a_traceroute_with_ixp": {
+            "from": "tag:internet_exchange_points",
+            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
+        }
+    },
+    "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
+        "tag:asn": {
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "to": "tag:asn"
+        },
+        "tag:iana": {
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "to": "tag:iana"
+        },
+        "tag:autonomous_system": {
+            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
+            "to": "tag:autonomous_system"
+        }
+    },
+    "tag:autonomous_system": {
+        "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
+            "from": "tag:autonomous_system",
+            "to": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns"
+        }
+    },
+    "recipe:getting_an_asns_name_country_organization": {
+        "dataset:as_organization": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "dataset:as_organization"
+        },
+        "tag:measurement_methodology": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:topology"
+        },
+        "tag:software_tools": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:software_tools"
+        },
+        "tag:asn": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:asn"
+        },
+        "tag:geolocation": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:geolocation"
+        },
+        "tag:organization": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:organization"
+        },
+        "tag:country": {
+            "from": "recipe:getting_an_asns_name_country_organization",
+            "to": "tag:country"
+        }
+    },
+    "tag:organization": {
+        "recipe:getting_an_asns_name_country_organization": {
+            "from": "tag:organization",
+            "to": "recipe:getting_an_asns_name_country_organization"
+        }
+    },
+    "tag:country": {
+        "recipe:getting_an_asns_name_country_organization": {
+            "from": "tag:country",
+            "to": "recipe:getting_an_asns_name_country_organization"
+        },
+        "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+            "from": "tag:country",
+            "to": "recipe:how_to_annotate_as_relationships_with_geographic_annotations"
+        }
+    },
+    "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
+        "tag:topology": {
+            "from": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
+            "to": "tag:topology"
+        },
+        "tag:software_tools": {
+            "from": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
+            "to": "tag:software_tools"
+        },
+        "tag:ipv4": {
+            "from": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
+            "to": "tag:ipv4"
+        },
+        "tag:ipv4_prefix": {
+            "from": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
+            "to": "tag:ipv4_prefix"
+        },
+        "tag:ipv6": {
+            "from": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
+            "to": "tag:ipv6"
+        }
+    },
+    "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
+        "dataset:as_relationships_geo": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "dataset:as_relationships_geo"
+        },
+        "tag:topology": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "tag:topology"
+        },
+        "tag:software_tools": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "tag:software_tools"
+        },
+        "tag:asn": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "tag:asn"
+        },
+        "tag:geolocation": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "tag:geolocation"
+        },
+        "tag:country": {
+            "from": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
+            "to": "tag:country"
+        }
+    },
     "software:artemis": {
         "paper:2018_artemis": {
             "from": "software:artemis",
@@ -27396,36 +27892,6 @@
             "to": "tag:alias_resolution"
         }
     },
-    "tag:ip_address": {
-        "software:iffinder": {
-            "from": "tag:ip_address",
-            "to": "software:iffinder"
-        },
-        "software:kapar": {
-            "from": "tag:ip_address",
-            "to": "software:kapar"
-        },
-        "software:midar": {
-            "from": "tag:ip_address",
-            "to": "software:midar"
-        },
-        "software:motu": {
-            "from": "tag:ip_address",
-            "to": "software:motu"
-        },
-        "recipe:how_to_parse_cymru_bogon_data": {
-            "from": "tag:ip_address",
-            "to": "recipe:how_to_parse_cymru_bogon_data"
-        },
-        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
-            "from": "tag:ip_address",
-            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
-        },
-        "recipe:how_to_annotate_a_traceroute_with_ixp": {
-            "from": "tag:ip_address",
-            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
-        }
-    },
     "tag:alias_resolution": {
         "software:iffinder": {
             "from": "tag:alias_resolution",
@@ -27712,24 +28178,6 @@
             "to": "software:pyasn"
         }
     },
-    "software:pyipmeta": {
-        "tag:asn": {
-            "from": "software:pyipmeta",
-            "to": "tag:asn"
-        },
-        "tag:python": {
-            "from": "software:pyipmeta",
-            "to": "tag:python"
-        },
-        "tag:geolocation": {
-            "from": "software:pyipmeta",
-            "to": "tag:geolocation"
-        },
-        "recipe:map_ipv4_address_to_asn": {
-            "from": "software:pyipmeta",
-            "to": "recipe:map_ipv4_address_to_asn"
-        }
-    },
     "tag:python": {
         "software:pyipmeta": {
             "from": "tag:python",
@@ -27909,352 +28357,6 @@
         "software:vela": {
             "from": "tag:ark",
             "to": "software:vela"
-        }
-    },
-    "recipe:map_ipv4_address_to_asn": {
-        "software:pyipmeta": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "software:pyipmeta"
-        },
-        "tag:measurement_methodology": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:topology"
-        },
-        "tag:software_tools": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:software_tools"
-        },
-        "tag:asn": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:asn"
-        },
-        "tag:ipv4": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:ipv4"
-        },
-        "tag:ipv4_prefix": {
-            "from": "recipe:map_ipv4_address_to_asn",
-            "to": "tag:ipv4_prefix"
-        }
-    },
-    "tag:ipv4_prefix": {
-        "recipe:map_ipv4_address_to_asn": {
-            "from": "tag:ipv4_prefix",
-            "to": "recipe:map_ipv4_address_to_asn"
-        }
-    },
-    "recipe:how_to_find_the_business_relationship_between_asns": {
-        "dataset:as_relationships": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "dataset:as_relationships"
-        },
-        "dataset:asrank": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "dataset:asrank"
-        },
-        "tag:asn": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "tag:asn"
-        },
-        "tag:as_relationship": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "tag:as_relationship"
-        },
-        "tag:as_rank": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "tag:as_rank"
-        },
-        "tag:ipv4": {
-            "from": "recipe:how_to_find_the_business_relationship_between_asns",
-            "to": "tag:ipv4"
-        }
-    },
-    "tag:as_relationship": {
-        "recipe:how_to_find_the_business_relationship_between_asns": {
-            "from": "tag:as_relationship",
-            "to": "recipe:how_to_find_the_business_relationship_between_asns"
-        },
-        "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
-            "from": "tag:as_relationship",
-            "to": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file"
-        },
-        "recipe:how_to_use_as_rank_to_classify_asns": {
-            "from": "tag:as_relationship",
-            "to": "recipe:how_to_use_as_rank_to_classify_asns"
-        }
-    },
-    "recipe:how_to_parse_cymru_bogon_data": {
-        "dataset:bogons": {
-            "from": "recipe:how_to_parse_cymru_bogon_data",
-            "to": "dataset:bogons"
-        },
-        "tag:bogon": {
-            "from": "recipe:how_to_parse_cymru_bogon_data",
-            "to": "tag:bogon"
-        },
-        "tag:bogon_address": {
-            "from": "recipe:how_to_parse_cymru_bogon_data",
-            "to": "tag:bogon_address"
-        },
-        "tag:ip_address": {
-            "from": "recipe:how_to_parse_cymru_bogon_data",
-            "to": "tag:ip_address"
-        },
-        "tag:ip": {
-            "from": "recipe:how_to_parse_cymru_bogon_data",
-            "to": "tag:ip"
-        }
-    },
-    "tag:bogon": {
-        "recipe:how_to_parse_cymru_bogon_data": {
-            "from": "tag:bogon",
-            "to": "recipe:how_to_parse_cymru_bogon_data"
-        }
-    },
-    "tag:bogon_address": {
-        "recipe:how_to_parse_cymru_bogon_data": {
-            "from": "tag:bogon_address",
-            "to": "recipe:how_to_parse_cymru_bogon_data"
-        }
-    },
-    "tag:ip": {
-        "recipe:how_to_parse_cymru_bogon_data": {
-            "from": "tag:ip",
-            "to": "recipe:how_to_parse_cymru_bogon_data"
-        },
-        "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
-            "from": "tag:ip",
-            "to": "recipe:how_to_get_range_of_allocated_or_reserved_ips"
-        },
-        "recipe:how_to_annotate_a_traceroute_with_ixp": {
-            "from": "tag:ip",
-            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
-        }
-    },
-    "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
-        "dataset:as_relationships": {
-            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
-            "to": "dataset:as_relationships"
-        },
-        "tag:asn": {
-            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
-            "to": "tag:asn"
-        },
-        "tag:as_relationship": {
-            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
-            "to": "tag:as_relationship"
-        },
-        "tag:ipv4": {
-            "from": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
-            "to": "tag:ipv4"
-        }
-    },
-    "recipe:how_to_use_as_rank_to_classify_asns": {
-        "dataset:as_relationships": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "dataset:as_relationships"
-        },
-        "dataset:asrank": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "dataset:asrank"
-        },
-        "tag:asn": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "tag:asn"
-        },
-        "tag:as_rank": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "tag:as_rank"
-        },
-        "tag:as_relationship": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "tag:as_relationship"
-        },
-        "tag:ipv4": {
-            "from": "recipe:how_to_use_as_rank_to_classify_asns",
-            "to": "tag:ipv4"
-        }
-    },
-    "recipe:how_to_find_an_asns_customer_cone": {
-        "dataset:as_relationships": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "dataset:as_relationships"
-        },
-        "tag:asn": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "tag:asn"
-        },
-        "tag:as_relationships": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "tag:as_relationships"
-        },
-        "tag:customer_cone": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "tag:customer_cone"
-        },
-        "tag:ipv4": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "tag:ipv4"
-        },
-        "tag:topology": {
-            "from": "recipe:how_to_find_an_asns_customer_cone",
-            "to": "tag:topology"
-        }
-    },
-    "tag:as_relationships": {
-        "recipe:how_to_find_an_asns_customer_cone": {
-            "from": "tag:as_relationships",
-            "to": "recipe:how_to_find_an_asns_customer_cone"
-        }
-    },
-    "tag:customer_cone": {
-        "recipe:how_to_find_an_asns_customer_cone": {
-            "from": "tag:customer_cone",
-            "to": "recipe:how_to_find_an_asns_customer_cone"
-        }
-    },
-    "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
-        "tag:ipv4": {
-            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
-            "to": "tag:ipv4"
-        },
-        "tag:iana": {
-            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
-            "to": "tag:iana"
-        },
-        "tag:ip_address": {
-            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
-            "to": "tag:ip_address"
-        },
-        "tag:ip": {
-            "from": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
-            "to": "tag:ip"
-        }
-    },
-    "recipe:parse_the_itdk": {
-        "dataset:as_organization": {
-            "from": "recipe:parse_the_itdk",
-            "to": "dataset:as_organization"
-        },
-        "tag:measurement_methodology": {
-            "from": "recipe:parse_the_itdk",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "recipe:parse_the_itdk",
-            "to": "tag:topology"
-        },
-        "tag:software_tools": {
-            "from": "recipe:parse_the_itdk",
-            "to": "tag:software_tools"
-        },
-        "tag:asn": {
-            "from": "recipe:parse_the_itdk",
-            "to": "tag:asn"
-        },
-        "tag:geolocation": {
-            "from": "recipe:parse_the_itdk",
-            "to": "tag:geolocation"
-        }
-    },
-    "recipe:how_to_annotate_a_traceroute_with_ixp": {
-        "tag:ixps": {
-            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
-            "to": "tag:ixps"
-        },
-        "tag:internet_exchange_points": {
-            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
-            "to": "tag:internet_exchange_points"
-        },
-        "tag:ip_address": {
-            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
-            "to": "tag:ip_address"
-        },
-        "tag:ip": {
-            "from": "recipe:how_to_annotate_a_traceroute_with_ixp",
-            "to": "tag:ip"
-        }
-    },
-    "tag:ixps": {
-        "recipe:how_to_annotate_a_traceroute_with_ixp": {
-            "from": "tag:ixps",
-            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
-        }
-    },
-    "tag:internet_exchange_points": {
-        "recipe:how_to_annotate_a_traceroute_with_ixp": {
-            "from": "tag:internet_exchange_points",
-            "to": "recipe:how_to_annotate_a_traceroute_with_ixp"
-        }
-    },
-    "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
-        "tag:asn": {
-            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
-            "to": "tag:asn"
-        },
-        "tag:iana": {
-            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
-            "to": "tag:iana"
-        },
-        "tag:autonomous_system": {
-            "from": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
-            "to": "tag:autonomous_system"
-        }
-    },
-    "tag:autonomous_system": {
-        "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
-            "from": "tag:autonomous_system",
-            "to": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns"
-        }
-    },
-    "recipe:getting_an_asns_name_country_organization": {
-        "dataset:as_organization": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "dataset:as_organization"
-        },
-        "tag:measurement_methodology": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:measurement_methodology"
-        },
-        "tag:topology": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:topology"
-        },
-        "tag:software_tools": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:software_tools"
-        },
-        "tag:asn": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:asn"
-        },
-        "tag:geolocation": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:geolocation"
-        },
-        "tag:organization": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:organization"
-        },
-        "tag:country": {
-            "from": "recipe:getting_an_asns_name_country_organization",
-            "to": "tag:country"
-        }
-    },
-    "tag:organization": {
-        "recipe:getting_an_asns_name_country_organization": {
-            "from": "tag:organization",
-            "to": "recipe:getting_an_asns_name_country_organization"
-        }
-    },
-    "tag:country": {
-        "recipe:getting_an_asns_name_country_organization": {
-            "from": "tag:country",
-            "to": "recipe:getting_an_asns_name_country_organization"
         }
     }
 }

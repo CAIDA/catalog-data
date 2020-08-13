@@ -4,7 +4,6 @@
     "visibility": "public",
     "name": "How to annotate an ark traceroute with hostnames?",
     "description": "Parsing ark warts file and annotating IPs with the hostnames.",
-    "links": [{}],
     "tags": [
         "topology",
         "software/tools",

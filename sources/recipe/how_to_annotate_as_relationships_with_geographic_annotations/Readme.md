@@ -5,7 +5,7 @@
     "name": "How to annotate as relationships with geographic annotations?",
     "description": "Annotating as relationships with geographic annotations",
     "links": [{
-        "to": "dataset:as_relationships_with_geographic_annotations"
+        "to": "dataset:as_relationships_geo"
         }],
     "tags": [
         "topology",
