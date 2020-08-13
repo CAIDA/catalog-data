@@ -19,7 +19,7 @@
 
 ## <ins> Introduction </ins> ##
 
-The following solution parses through an [arks ipv6 warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/. ) and produces a sorted list of ipv6 addresses and asns. 
+The following solution parses through an [arks ipv6 warts file](https://www.caida.org/data/request_user_info_forms/ark.xml ) and produces a sorted list of ipv6 addresses and asns. 
 
 
 ## <ins> Solution </ins> ## 
@@ -29,14 +29,22 @@ The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/
 **Usage:** `python parse_arks_ipv6_warts.py -t sc_to_json_file -p .prefix2as6 file -d .dat file`
 
 ### Datasets ###
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ). \
-• `.prefix2as6 file`: Datasets can be downloaded [here]( http://data.caida.org/datasets/routing/routeviews6-prefix2as/
- ). \
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. \
+Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). \
+• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). \
 • `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
 
 ### Methods ### 
 create_ips() takes in one input: \
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( http://data.caida.org/datasets/topology/ark/ipv6/probe-data/ ). \
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/data/request_user_info_forms/ark.xml).\
+Instructions to obtain .json file: 
+
+~~~bash
+$ gunzip topo-v6.l8.20200101.1577836855.yxu-ca.warts.gz
+$ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json    
+~~~
+    
+    
 • Note that ips are listed in the following order: `src, ip1, ip2, ip3..ipn, dst` 
 where `ip1 - ipn` are listed in increasing order of probe-ttl values. 
 
