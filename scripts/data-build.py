@@ -90,7 +90,9 @@ key_weight = {
     "__typename":0,
     "id":0,
     "name": 10,
-    "tags": 10
+    "tags": 10,
+    "description": 5,
+    "content": 3
 }
 link_weight = {
     "Paper":.3,
@@ -549,8 +551,13 @@ def link_add(obj,info):
         to = id_create(None,None,info)
         info = { "to":to }
     else:
-        to_original = info["to"]
-        to = info["to"] = id_create(None,None,info["to"])
+        if "to" in info:
+            to_original = info["to"]
+            to = info["to"] = id_create(None,None,info["to"])
+        else:
+            error_add(obj["filename"],"link has no to"+json.dumps(info))
+            return None
+
 
     if to is None:
         error_add(obj["filename"],"invalid id "+to_original)
