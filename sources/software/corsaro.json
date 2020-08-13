@@ -38,9 +38,6 @@
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset"
-        },
-        {
             "to": "paper:2016_teaching_network_security",
             "label": "used by"
         },

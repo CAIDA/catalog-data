@@ -158,7 +158,6 @@ def main():
             type_ = fname
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
-<<<<<<< HEAD
                     try:
                         info = json.load(open(path+"/"+filename))
                         info["filename"] = path+"/"+filename
@@ -167,14 +166,6 @@ def main():
                             print ("parse error   ",path+"/"+filename)
                     except ValueError as e:
                         print (path+"/"+filename)
-=======
-                    print ("   ",path+"/"+filename)
-                    info = json.load(open(path+"/"+filename))
-                    info["filename"] = path+"/"+filename
-                    obj = object_add(type_,info)
-                    if obj is None:
-                        print ("parse error   ",path+"/"+filename)
->>>>>>> master
 
 
     values = list(id_object.values())
@@ -302,7 +293,8 @@ def main():
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
 
     print ("writing",word_score_id_file)
-    json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    json.dump(word_score_id, open(word_score_id_file,"w"))
 
 
     sys.exit()
@@ -350,13 +342,9 @@ def id_create(type_,name,id_=None):
             return None
     if type_ == "solution":
         type_ = "recipe"
-<<<<<<< HEAD
     name = re_id_illegal.sub("_",name)
     name = re.sub("_+$","",re.sub("^_+","",name))
     id_ = type_+":"+name
-=======
-    id_ = type_+":"+re_id_illegal.sub("_",name)
->>>>>>> master
     return id_.lower()
 
 
