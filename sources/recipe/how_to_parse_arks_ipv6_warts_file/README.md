@@ -24,15 +24,22 @@ The following solution parses through an [arks ipv6 warts file](https://www.caid
 
 ## <ins> Solution </ins> ## 
 
-The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/solution/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
-
-**Usage:** `python parse_arks_ipv6_warts.py -t sc_to_json_file -p .prefix2as6 file -d .dat file`
+The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/recipe/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
 ### Datasets ###
 • `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. \
 Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). \
-• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). \
+• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). Make sure to unzip before use in script.\
 • `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
+
+**Example Usage:** 
+~~~bash 
+
+$ gunzip topo-v6.l8.20200101.1577836855.yxu-ca.warts.gz
+$ gunzip routeviews-rv6-20200101-1200.pfx2as.gz
+$ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json 
+$ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.pfx2as -d test.dat
+~~~
 
 ### Methods ### 
 create_ips() takes in one input: \
@@ -41,7 +48,7 @@ Instructions to obtain .json file:
 
 ~~~bash
 $ gunzip topo-v6.l8.20200101.1577836855.yxu-ca.warts.gz
-$ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json    
+$ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json 
 ~~~
     
     
