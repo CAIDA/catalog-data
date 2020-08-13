@@ -21,10 +21,6 @@
     ],
     "links": [
         {
-            "to": "software:internet_outage_detection_and_analysis",
-            "label": "used by"
-        },
-        {
             "to": "paper:2019_towards_passive_analysis_anycast",
             "label": "used by"
         },

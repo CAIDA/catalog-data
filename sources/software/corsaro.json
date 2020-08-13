@@ -26,43 +26,7 @@
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial_of_service_rsdos_attack_metadata",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:the_caida_industry_evaluation_near_real_time_network_telescope_dataset",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
-            "label": "used by"
-        },
-        {
-            "to": "dataset:caida_ucsd_network_telescope_traffic_samples_formerly_the_backscatter_dataset",
+            "to": "dataset:ucsd_network_telescope",
             "label": "used by"
         },
         {

@@ -40,12 +40,21 @@
         "tag:topology": {
             "from": "paper:2019_towards_passive_analysis_anycast",
             "to": "tag:topology"
+        },
+        "software:bgpstream": {
+            "from": "paper:2019_towards_passive_analysis_anycast",
+            "to": "software:bgpstream",
+            "label": "used by"
         }
     },
     "tag:security": {
         "dataset:anycast_dataset": {
             "from": "tag:security",
             "to": "dataset:anycast_dataset"
+        },
+        "dataset:bogons": {
+            "from": "tag:security",
+            "to": "dataset:bogons"
         },
         "dataset:caida_ioda": {
             "from": "tag:security",
@@ -551,6 +560,10 @@
             "from": "tag:security",
             "to": "media:2019_stardust_dust"
         },
+        "media:2020_artemis_uknof45": {
+            "from": "tag:security",
+            "to": "media:2020_artemis_uknof45"
+        },
         "media:2020_caidas_bgp_hijacking_observatory_kismet": {
             "from": "tag:security",
             "to": "media:2020_caidas_bgp_hijacking_observatory_kismet"
@@ -904,6 +917,10 @@
         "dataset:euro_ix_ixp_service_matrix": {
             "from": "tag:topology",
             "to": "dataset:euro_ix_ixp_service_matrix"
+        },
+        "dataset:ipv4_routed_24_topology_dataset": {
+            "from": "tag:topology",
+            "to": "dataset:ipv4_routed_24_topology_dataset"
         },
         "dataset:itdk": {
             "from": "tag:topology",
@@ -1889,6 +1906,10 @@
             "from": "tag:topology",
             "to": "paper:2005_impactdegcorr"
         },
+        "paper:2005_inferring_mtu": {
+            "from": "tag:topology",
+            "to": "paper:2005_inferring_mtu"
+        },
         "paper:2005_pam_topology": {
             "from": "tag:topology",
             "to": "paper:2005_pam_topology"
@@ -2069,6 +2090,10 @@
             "from": "tag:topology",
             "to": "paper:2010_internet_is_flat"
         },
+        "paper:2010_measuring_path_mtu": {
+            "from": "tag:topology",
+            "to": "paper:2010_measuring_path_mtu"
+        },
         "paper:2010_merlin": {
             "from": "tag:topology",
             "to": "paper:2010_merlin"
@@ -2076,6 +2101,10 @@
         "paper:2010_scalefreestructurebusiness": {
             "from": "tag:topology",
             "to": "paper:2010_scalefreestructurebusiness"
+        },
+        "paper:2010_scamper": {
+            "from": "tag:topology",
+            "to": "paper:2010_scamper"
         },
         "paper:2010_sustaining_internet_hyperbolic": {
             "from": "tag:topology",
@@ -2709,6 +2738,10 @@
             "from": "paper:2019_network_hygiene_incentives_regulation",
             "to": "media:2019_network_hygiene_incentives_regulation_ccs"
         },
+        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+            "from": "paper:2019_network_hygiene_incentives_regulation",
+            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet"
+        },
         "tag:measurement_methodology": {
             "from": "paper:2019_network_hygiene_incentives_regulation",
             "to": "tag:measurement_methodology"
@@ -2724,6 +2757,11 @@
         "tag:security": {
             "from": "paper:2019_network_hygiene_incentives_regulation",
             "to": "tag:security"
+        },
+        "software:spoofer": {
+            "from": "paper:2019_network_hygiene_incentives_regulation",
+            "to": "software:spoofer",
+            "label": "used by"
         }
     },
     "paper:2019_stable_practical_as_relationship": {
@@ -2757,6 +2795,11 @@
         "tag:economics": {
             "from": "paper:2019_stable_practical_as_relationship",
             "to": "tag:economics"
+        },
+        "software:bgpstream": {
+            "from": "paper:2019_stable_practical_as_relationship",
+            "to": "software:bgpstream",
+            "label": "used by"
         },
         "software:peeringdb": {
             "from": "paper:2019_stable_practical_as_relationship",
@@ -2861,6 +2904,11 @@
         "tag:network_telescope": {
             "from": "paper:2019_at_home_abroad",
             "to": "tag:network_telescope"
+        },
+        "software:netacuity": {
+            "from": "paper:2019_at_home_abroad",
+            "to": "software:netacuity",
+            "label": "used by"
         }
     },
     "paper:2019_studying_evolution_content_providers": {
@@ -2913,6 +2961,11 @@
         "tag:routing": {
             "from": "paper:2019_blink",
             "to": "tag:routing"
+        },
+        "software:ioda": {
+            "from": "paper:2019_blink",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "tag:bgp": {
@@ -3068,6 +3121,10 @@
         "software:netacuity": {
             "from": "tag:geolocation",
             "to": "software:netacuity"
+        },
+        "software:pyipmeta": {
+            "from": "tag:geolocation",
+            "to": "software:pyipmeta"
         },
         "solution:parse_the_itdk": {
             "from": "tag:geolocation",
@@ -4343,6 +4400,16 @@
             "to": "paper:2020_vrfinder"
         }
     },
+    "dataset:bogons": {
+        "tag:security": {
+            "from": "dataset:bogons",
+            "to": "tag:security"
+        },
+        "solution:how_to_parse_cymru_bogon_data": {
+            "from": "dataset:bogons",
+            "to": "solution:how_to_parse_cymru_bogon_data"
+        }
+    },
     "dataset:caida_internet_traffic": {
         "paper:2019_hypersparse_neural_network_analysis": {
             "from": "dataset:caida_internet_traffic",
@@ -4714,6 +4781,10 @@
             "from": "tag:asn",
             "to": "software:pyasn"
         },
+        "software:pyipmeta": {
+            "from": "tag:asn",
+            "to": "software:pyipmeta"
+        },
         "solution:map_ipv4_address_to_asn": {
             "from": "tag:asn",
             "to": "solution:map_ipv4_address_to_asn"
@@ -4759,6 +4830,41 @@
             "to": "solution:how_to_get_the_range_of_allocated_or_reserved_asns"
         }
     },
+    "dataset:ipv4_routed_24_topology_dataset": {
+        "tag:active": {
+            "from": "dataset:ipv4_routed_24_topology_dataset",
+            "to": "tag:active"
+        },
+        "tag:topology": {
+            "from": "dataset:ipv4_routed_24_topology_dataset",
+            "to": "tag:topology"
+        },
+        "tag:traceroute": {
+            "from": "dataset:ipv4_routed_24_topology_dataset",
+            "to": "tag:traceroute"
+        },
+        "software:scamper": {
+            "from": "dataset:ipv4_routed_24_topology_dataset",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "tag:active": {
+        "dataset:ipv4_routed_24_topology_dataset": {
+            "from": "tag:active",
+            "to": "dataset:ipv4_routed_24_topology_dataset"
+        }
+    },
+    "tag:traceroute": {
+        "dataset:ipv4_routed_24_topology_dataset": {
+            "from": "tag:traceroute",
+            "to": "dataset:ipv4_routed_24_topology_dataset"
+        },
+        "software:vela": {
+            "from": "tag:traceroute",
+            "to": "software:vela"
+        }
+    },
     "dataset:itdk": {
         "paper:2019_learning_regexes_extract_router": {
             "from": "dataset:itdk",
@@ -4773,6 +4879,26 @@
             "from": "dataset:itdk",
             "to": "paper:2019_learning_regexes_to_extract_router_names_from_hostnames",
             "label": "used"
+        },
+        "software:iffinder": {
+            "from": "dataset:itdk",
+            "to": "software:iffinder",
+            "label": "used by"
+        },
+        "software:kapar": {
+            "from": "dataset:itdk",
+            "to": "software:kapar",
+            "label": "used by"
+        },
+        "software:midar": {
+            "from": "dataset:itdk",
+            "to": "software:midar",
+            "label": "used by"
+        },
+        "software:scamper": {
+            "from": "dataset:itdk",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "paper:2019_learning_regexes_extract_router": {
@@ -4796,6 +4922,11 @@
         "tag:software_tools": {
             "from": "paper:2019_learning_regexes_extract_router",
             "to": "tag:software_tools"
+        },
+        "software:scamper": {
+            "from": "paper:2019_learning_regexes_extract_router",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "dataset:mawi_internet_traffic": {
@@ -5010,6 +5141,11 @@
         "tag:measurement_methodology": {
             "from": "paper:2019_how_find_correlated_internet",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "paper:2019_how_find_correlated_internet",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2019_residential_links_under_the_weather": {
@@ -5090,6 +5226,11 @@
             "from": "dataset:ucsd_network_telescope",
             "to": "paper:2019_chocolatine_outage_detection_for_internet_background_radiation",
             "label": "used"
+        },
+        "software:corsaro": {
+            "from": "dataset:ucsd_network_telescope",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "group:asrank": {
@@ -5131,10 +5272,18 @@
             "from": "paper:2013_asrank",
             "to": "group:asrank"
         },
+        "media:2013_as_relationships_imc": {
+            "from": "paper:2013_asrank",
+            "to": "media:2013_as_relationships_imc"
+        },
         "dataset:asrank": {
             "from": "paper:2013_asrank",
             "to": "dataset:asrank",
             "label": "defines"
+        },
+        "media:2013_as_rank_aims5_2013": {
+            "from": "paper:2013_asrank",
+            "to": "media:2013_as_rank_aims5_2013"
         },
         "tag:data": {
             "from": "paper:2013_asrank",
@@ -5170,6 +5319,10 @@
         "group:asrank": {
             "from": "media:2013_as_relationships_imc",
             "to": "group:asrank"
+        },
+        "paper:2013_asrank": {
+            "from": "media:2013_as_relationships_imc",
+            "to": "paper:2013_asrank"
         },
         "tag:measurement_methodology": {
             "from": "media:2013_as_relationships_imc",
@@ -5580,6 +5733,10 @@
         "media:2019_network_hygiene_incentives_regulation_ccs": {
             "from": "tag:software_tools",
             "to": "media:2019_network_hygiene_incentives_regulation_ccs"
+        },
+        "media:2020_artemis_uknof45": {
+            "from": "tag:software_tools",
+            "to": "media:2020_artemis_uknof45"
         },
         "media:2020_scamper_routeviews_kismet": {
             "from": "tag:software_tools",
@@ -7349,6 +7506,10 @@
             "from": "tag:measurement_methodology",
             "to": "paper:2005_fingerprinting"
         },
+        "paper:2005_inferring_mtu": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:2005_inferring_mtu"
+        },
         "paper:2005_pam_spectroscopy": {
             "from": "tag:measurement_methodology",
             "to": "paper:2005_pam_spectroscopy"
@@ -7417,9 +7578,17 @@
             "from": "tag:measurement_methodology",
             "to": "paper:2010_estimating_routing_symmetry"
         },
+        "paper:2010_measuring_path_mtu": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:2010_measuring_path_mtu"
+        },
         "paper:2010_merlin": {
             "from": "tag:measurement_methodology",
             "to": "paper:2010_merlin"
+        },
+        "paper:2010_scamper": {
+            "from": "tag:measurement_methodology",
+            "to": "paper:2010_scamper"
         },
         "paper:2011_aims_report": {
             "from": "tag:measurement_methodology",
@@ -7979,7 +8148,8 @@
         },
         "software:coralreef": {
             "from": "media:1998_coralreefoverview",
-            "to": "software:coralreef"
+            "to": "software:coralreef",
+            "label": "used by"
         }
     },
     "media:1998_nanog9806": {
@@ -8029,7 +8199,8 @@
         },
         "software:coralreef": {
             "from": "media:1999_isma9901_coralreef",
-            "to": "software:coralreef"
+            "to": "software:coralreef",
+            "label": "used by"
         }
     },
     "media:1999_isma9901_measspec": {
@@ -10294,6 +10465,10 @@
         "paper:2020_when_parents_children_disagree": {
             "from": "tag:dns",
             "to": "paper:2020_when_parents_children_disagree"
+        },
+        "software:dnsstat": {
+            "from": "tag:dns",
+            "to": "software:dnsstat"
         }
     },
     "media:2000_nmsdata": {
@@ -11093,7 +11268,8 @@
         },
         "software:coralreef": {
             "from": "media:2001_usenix0112",
-            "to": "software:coralreef"
+            "to": "software:coralreef",
+            "label": "used by"
         }
     },
     "media:2002_distance": {
@@ -11721,7 +11897,8 @@
         },
         "software:coralreef": {
             "from": "media:2004_coralreef_lincoln",
-            "to": "software:coralreef"
+            "to": "software:coralreef",
+            "label": "used by"
         }
     },
     "media:2004_data_collection": {
@@ -15688,6 +15865,11 @@
         "tag:passive_data_analysis": {
             "from": "media:2012_corsaro_widecasfi",
             "to": "tag:passive_data_analysis"
+        },
+        "software:corsaro": {
+            "from": "media:2012_corsaro_widecasfi",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "media:2012_cse91_internet_outages": {
@@ -15768,6 +15950,11 @@
         "tag:security": {
             "from": "media:2012_dust_corsaro",
             "to": "tag:security"
+        },
+        "software:corsaro": {
+            "from": "media:2012_dust_corsaro",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "media:2012_dust_darkspace_data_sharing": {
@@ -15850,6 +16037,11 @@
         "paper:2012_extracting_benefit_from_harm": {
             "from": "media:2012_extract_benefit_from_harm_sigcomm_2012",
             "to": "paper:2012_extracting_benefit_from_harm"
+        },
+        "software:ioda": {
+            "from": "media:2012_extract_benefit_from_harm_sigcomm_2012",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2012_extracting_benefit_from_harm": {
@@ -15942,6 +16134,11 @@
         "paper:2011_outages_censorship": {
             "from": "media:2012_internet_outages",
             "to": "paper:2011_outages_censorship"
+        },
+        "software:ioda": {
+            "from": "media:2012_internet_outages",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2012_irnc_data_sharing_case_study": {
@@ -16124,11 +16321,6 @@
         "tag:visualization": {
             "from": "media:2012_micdhs_caida_overview",
             "to": "tag:visualization"
-        },
-        "software:ioda": {
-            "from": "media:2012_micdhs_caida_overview",
-            "to": "software:ioda",
-            "label": "used by"
         }
     },
     "media:2012_pcgm_network_cosmology": {
@@ -16299,6 +16491,10 @@
         "tag:topology": {
             "from": "media:2013_as_rank_aims5_2013",
             "to": "tag:topology"
+        },
+        "paper:2013_asrank": {
+            "from": "media:2013_as_rank_aims5_2013",
+            "to": "paper:2013_asrank"
         }
     },
     "media:2013_caida_breaking_news": {
@@ -16371,6 +16567,11 @@
         "tag:visualization": {
             "from": "media:2013_caida_research_overview",
             "to": "tag:visualization"
+        },
+        "software:ioda": {
+            "from": "media:2013_caida_research_overview",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2013_caida_update_predict_pi": {
@@ -17472,6 +17673,11 @@
         "tag:software_tools": {
             "from": "media:2015_bgpstream_aims",
             "to": "tag:software_tools"
+        },
+        "software:ioda": {
+            "from": "media:2015_bgpstream_aims",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2015_bgpstream_mplane": {
@@ -17490,6 +17696,11 @@
         "software:bgpstream": {
             "from": "media:2015_bgpstream_mplane",
             "to": "software:bgpstream",
+            "label": "used by"
+        },
+        "software:ioda": {
+            "from": "media:2015_bgpstream_mplane",
+            "to": "software:ioda",
             "label": "used by"
         }
     },
@@ -17729,6 +17940,11 @@
         "tag:measurement_methodology": {
             "from": "media:2015_ioda_fcc",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2015_ioda_fcc",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2015_ipv4_ipv6_routing_stability_aims": {
@@ -17844,6 +18060,11 @@
         "tag:measurement_methodology": {
             "from": "media:2015_lost_in_space_raim",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2015_lost_in_space_raim",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2015_lost_in_space": {
@@ -17997,6 +18218,11 @@
         "tag:security": {
             "from": "paper:2015_measuring_characterizing_ipv6_router",
             "to": "tag:security"
+        },
+        "software:ioda": {
+            "from": "paper:2015_measuring_characterizing_ipv6_router",
+            "to": "software:ioda",
+            "label": "used by"
         },
         "software:scamper": {
             "from": "paper:2015_measuring_characterizing_ipv6_router",
@@ -18259,6 +18485,11 @@
             "from": "media:2016_bgpstream_framework_historical_nanog",
             "to": "software:bgpstream",
             "label": "used by"
+        },
+        "software:ioda": {
+            "from": "media:2016_bgpstream_framework_historical_nanog",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2016_bgpstream_imc": {
@@ -18289,6 +18520,11 @@
         "software:bgpstream": {
             "from": "media:2016_bgpstream_imc",
             "to": "software:bgpstream",
+            "label": "used by"
+        },
+        "software:ioda": {
+            "from": "media:2016_bgpstream_imc",
+            "to": "software:ioda",
             "label": "used by"
         }
     },
@@ -18478,6 +18714,11 @@
         "tag:measurement_methodology": {
             "from": "media:2016_leveraging_internet_background_radiation_kbenson",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2016_leveraging_internet_background_radiation_kbenson",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2016_mapping_internet_interdomain_congestion_watch": {
@@ -18805,6 +19046,11 @@
         "tag:topology": {
             "from": "paper:2016_bgpstream",
             "to": "tag:topology"
+        },
+        "software:ioda": {
+            "from": "paper:2016_bgpstream",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2017_bgpstream_openbmp_cisco": {
@@ -19397,6 +19643,11 @@
         "tag:overview": {
             "from": "media:2017_ioda_aims",
             "to": "tag:overview"
+        },
+        "software:ioda": {
+            "from": "media:2017_ioda_aims",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2017_ioda_cns": {
@@ -19415,6 +19666,11 @@
         "tag:overview": {
             "from": "media:2017_ioda_cns",
             "to": "tag:overview"
+        },
+        "software:ioda": {
+            "from": "media:2017_ioda_cns",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2017_ioda_sdsc": {
@@ -19433,6 +19689,11 @@
         "tag:overview": {
             "from": "media:2017_ioda_sdsc",
             "to": "tag:overview"
+        },
+        "software:ioda": {
+            "from": "media:2017_ioda_sdsc",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2017_look_at_router_geolocation_imc": {
@@ -19534,6 +19795,11 @@
         "tag:topology": {
             "from": "media:2017_mapping_our_way_iij",
             "to": "tag:topology"
+        },
+        "software:ioda": {
+            "from": "media:2017_mapping_our_way_iij",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2017_millions_targets_under_attack_imc": {
@@ -19578,6 +19844,11 @@
         "tag:network_telescope": {
             "from": "paper:2017_millions_targets_under_attack",
             "to": "tag:network_telescope"
+        },
+        "software:corsaro": {
+            "from": "paper:2017_millions_targets_under_attack",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "media:2017_packetlab_caidawide": {
@@ -19843,6 +20114,11 @@
         "tag:topology": {
             "from": "media:2018_artemis_aims",
             "to": "tag:topology"
+        },
+        "software:artemis": {
+            "from": "media:2018_artemis_aims",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "paper:2018_artemis": {
@@ -19857,6 +20133,10 @@
         "media:2018_artemis_ripe": {
             "from": "paper:2018_artemis",
             "to": "media:2018_artemis_ripe"
+        },
+        "media:2020_artemis_uknof45": {
+            "from": "paper:2018_artemis",
+            "to": "media:2020_artemis_uknof45"
         },
         "tag:passive_data_analysis": {
             "from": "paper:2018_artemis",
@@ -19877,6 +20157,11 @@
         "tag:topology": {
             "from": "paper:2018_artemis",
             "to": "tag:topology"
+        },
+        "software:artemis": {
+            "from": "paper:2018_artemis",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "media:2018_artemis_anrw": {
@@ -19895,6 +20180,11 @@
         "paper:2018_artemis_tr": {
             "from": "media:2018_artemis_anrw",
             "to": "paper:2018_artemis_tr"
+        },
+        "software:artemis": {
+            "from": "media:2018_artemis_anrw",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "media:2018_artemis_ripe": {
@@ -19909,6 +20199,11 @@
         "tag:topology": {
             "from": "media:2018_artemis_ripe",
             "to": "tag:topology"
+        },
+        "software:artemis": {
+            "from": "media:2018_artemis_ripe",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "media:2018_asrank_iij": {
@@ -20192,6 +20487,11 @@
         "tag:overview": {
             "from": "media:2018_ioda_np_paridine",
             "to": "tag:overview"
+        },
+        "software:ioda": {
+            "from": "media:2018_ioda_np_paridine",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2018_manic_aims": {
@@ -20380,6 +20680,11 @@
         "tag:measurement_methodology": {
             "from": "media:2018_sister_pi_apr",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2018_sister_pi_apr",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2018_software_systems_survey_spoofing_ddosd": {
@@ -20822,6 +21127,11 @@
         "tag:measurement_methodology": {
             "from": "media:2019_ioda_np_aims",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2019_ioda_np_aims",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2019_ioda_np_dhsst": {
@@ -20840,6 +21150,11 @@
         "tag:measurement_methodology": {
             "from": "media:2019_ioda_np_dhsst",
             "to": "tag:measurement_methodology"
+        },
+        "software:ioda": {
+            "from": "media:2019_ioda_np_dhsst",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2019_ioda_np_paridine_final": {
@@ -20858,6 +21173,11 @@
         "tag:overview": {
             "from": "media:2019_ioda_np_paridine_final",
             "to": "tag:overview"
+        },
+        "software:ioda": {
+            "from": "media:2019_ioda_np_paridine_final",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "media:2019_learning_extract_router_names_imc": {
@@ -20922,6 +21242,11 @@
         "tag:topology": {
             "from": "media:2019_network_hygiene_incentives_regulation_ccs",
             "to": "tag:topology"
+        },
+        "software:spoofer": {
+            "from": "media:2019_network_hygiene_incentives_regulation_ccs",
+            "to": "software:spoofer",
+            "label": "used by"
         }
     },
     "media:2019_neutralizing_bgp_hijacking_aims": {
@@ -20932,6 +21257,11 @@
         "tag:security": {
             "from": "media:2019_neutralizing_bgp_hijacking_aims",
             "to": "tag:security"
+        },
+        "software:artemis": {
+            "from": "media:2019_neutralizing_bgp_hijacking_aims",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "media:2019_neutralizing_bgp_hijacking_quilt": {
@@ -20942,6 +21272,11 @@
         "tag:topology": {
             "from": "media:2019_neutralizing_bgp_hijacking_quilt",
             "to": "tag:topology"
+        },
+        "software:artemis": {
+            "from": "media:2019_neutralizing_bgp_hijacking_quilt",
+            "to": "software:artemis",
+            "label": "used by"
         }
     },
     "media:2019_profiling_bgp_serial_hijackers_imc": {
@@ -20978,6 +21313,11 @@
         "tag:topology": {
             "from": "paper:2019_profiling_bgp_serial_hijackers",
             "to": "tag:topology"
+        },
+        "software:bgpstream": {
+            "from": "paper:2019_profiling_bgp_serial_hijackers",
+            "to": "software:bgpstream",
+            "label": "used by"
         }
     },
     "media:2019_residential_links_under_weather_sigcomm": {
@@ -21154,6 +21494,45 @@
         "tag:topology": {
             "from": "paper:2020_apple",
             "to": "tag:topology"
+        }
+    },
+    "media:2020_artemis_uknof45": {
+        "paper:2018_artemis": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "paper:2018_artemis"
+        },
+        "tag:hijeck": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "tag:hijeck"
+        },
+        "tag:bgp_prefix": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "tag:bgp_prefix"
+        },
+        "tag:security": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "tag:security"
+        },
+        "tag:software_tools": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "tag:software_tools"
+        },
+        "software:artemis": {
+            "from": "media:2020_artemis_uknof45",
+            "to": "software:artemis",
+            "label": "used by"
+        }
+    },
+    "tag:hijeck": {
+        "media:2020_artemis_uknof45": {
+            "from": "tag:hijeck",
+            "to": "media:2020_artemis_uknof45"
+        }
+    },
+    "tag:bgp_prefix": {
+        "media:2020_artemis_uknof45": {
+            "from": "tag:bgp_prefix",
+            "to": "media:2020_artemis_uknof45"
         }
     },
     "media:2020_caida_overview_iij": {
@@ -21407,6 +21786,11 @@
         "tag:measurement_methodology": {
             "from": "paper:2020_unintended_consequences",
             "to": "tag:measurement_methodology"
+        },
+        "software:midar": {
+            "from": "paper:2020_unintended_consequences",
+            "to": "software:midar",
+            "label": "used by"
         }
     },
     "media:2020_vrfinder_sigmetrics": {
@@ -21558,6 +21942,10 @@
         }
     },
     "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "paper:2019_network_hygiene_incentives_regulation": {
+            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "paper:2019_network_hygiene_incentives_regulation"
+        },
         "tag:measurement_methodology": {
             "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "to": "tag:measurement_methodology"
@@ -21573,11 +21961,6 @@
         "tag:software_tools": {
             "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
             "to": "tag:software_tools"
-        },
-        "software:spoofer": {
-            "from": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
-            "to": "software:spoofer",
-            "label": "used by"
         }
     },
     "paper:1992_aiar": {
@@ -22768,6 +23151,31 @@
             "to": "tag:topology"
         }
     },
+    "paper:2005_inferring_mtu": {
+        "tag:measurement_methodology": {
+            "from": "paper:2005_inferring_mtu",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "paper:2005_inferring_mtu",
+            "to": "tag:topology"
+        },
+        "tag:mtu": {
+            "from": "paper:2005_inferring_mtu",
+            "to": "tag:mtu"
+        },
+        "software:scamper": {
+            "from": "paper:2005_inferring_mtu",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
+    "tag:mtu": {
+        "paper:2005_inferring_mtu": {
+            "from": "tag:mtu",
+            "to": "paper:2005_inferring_mtu"
+        }
+    },
     "paper:2005_pam_bwest": {
         "media:2005_pam2005_bwest": {
             "from": "paper:2005_pam_bwest",
@@ -23096,6 +23504,11 @@
         "tag:topology": {
             "from": "paper:2008_alias_resolution_techreport",
             "to": "tag:topology"
+        },
+        "software:kapar": {
+            "from": "paper:2008_alias_resolution_techreport",
+            "to": "software:kapar",
+            "label": "used by"
         }
     },
     "paper:2008_classification_demystified": {
@@ -23478,6 +23891,11 @@
         "tag:topology": {
             "from": "paper:2010_as_assignment",
             "to": "tag:topology"
+        },
+        "software:iffinder": {
+            "from": "paper:2010_as_assignment",
+            "to": "software:iffinder",
+            "label": "used by"
         }
     },
     "paper:2010_dialing_privacy_utility": {
@@ -23628,6 +24046,21 @@
             "to": "tag:economics"
         }
     },
+    "paper:2010_measuring_path_mtu": {
+        "tag:measurement_methodology": {
+            "from": "paper:2010_measuring_path_mtu",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "paper:2010_measuring_path_mtu",
+            "to": "tag:topology"
+        },
+        "software:scamper": {
+            "from": "paper:2010_measuring_path_mtu",
+            "to": "software:scamper",
+            "label": "used by"
+        }
+    },
     "paper:2010_merlin": {
         "tag:topology": {
             "from": "paper:2010_merlin",
@@ -23646,6 +24079,21 @@
         "tag:network_geometry": {
             "from": "paper:2010_scalefreestructurebusiness",
             "to": "tag:network_geometry"
+        }
+    },
+    "paper:2010_scamper": {
+        "tag:measurement_methodology": {
+            "from": "paper:2010_scamper",
+            "to": "tag:measurement_methodology"
+        },
+        "tag:topology": {
+            "from": "paper:2010_scamper",
+            "to": "tag:topology"
+        },
+        "software:scamper": {
+            "from": "paper:2010_scamper",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "paper:2010_sustaining_internet_hyperbolic": {
@@ -23805,6 +24253,16 @@
         "tag:topology": {
             "from": "paper:2011_midar_tr",
             "to": "tag:topology"
+        },
+        "software:kapar": {
+            "from": "paper:2011_midar_tr",
+            "to": "software:kapar",
+            "label": "used by"
+        },
+        "software:midar": {
+            "from": "paper:2011_midar_tr",
+            "to": "software:midar",
+            "label": "used by"
         }
     },
     "paper:2011_moving_forward_building_ethics": {
@@ -23871,6 +24329,11 @@
         "tag:network_telescope": {
             "from": "paper:2011_outages_censorship",
             "to": "tag:network_telescope"
+        },
+        "software:ioda": {
+            "from": "paper:2011_outages_censorship",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2011_percolation_self_similar_networks": {
@@ -24055,6 +24518,11 @@
         "tag:internet_outages": {
             "from": "paper:2012_extracting_benefit_from_harm",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2012_extracting_benefit_from_harm",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2012_gaining_insight_outages": {
@@ -24099,6 +24567,11 @@
         "tag:network_telescope": {
             "from": "paper:2013_gaining_insight_outages",
             "to": "tag:network_telescope"
+        },
+        "software:ioda": {
+            "from": "paper:2013_gaining_insight_outages",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2012_genesis": {
@@ -24153,6 +24626,11 @@
         "tag:ipv6": {
             "from": "paper:2012_measuring_deployment_ipv6",
             "to": "tag:ipv6"
+        },
+        "software:scamper": {
+            "from": "paper:2012_measuring_deployment_ipv6",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "paper:2012_measuring_evolution_internet_peering": {
@@ -24451,6 +24929,11 @@
         "tag:security": {
             "from": "paper:2013_day_after_patch_tuesday",
             "to": "tag:security"
+        },
+        "software:corsaro": {
+            "from": "paper:2013_day_after_patch_tuesday",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "paper:2013_duality_equilibrium_growing_networks": {
@@ -24609,6 +25092,11 @@
         "tag:topology": {
             "from": "paper:2013_speedtrap",
             "to": "tag:topology"
+        },
+        "software:scamper": {
+            "from": "paper:2013_speedtrap",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "paper:2013_wie2012_report": {
@@ -24720,6 +25208,11 @@
         "tag:network_telescope": {
             "from": "paper:2014_coordinated_view_internet_events",
             "to": "tag:network_telescope"
+        },
+        "software:ioda": {
+            "from": "paper:2014_coordinated_view_internet_events",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2014_creds2013_report": {
@@ -24851,6 +25344,11 @@
         "tag:network_telescope": {
             "from": "paper:2014_nightlights_entropy",
             "to": "tag:network_telescope"
+        },
+        "software:corsaro": {
+            "from": "paper:2014_nightlights_entropy",
+            "to": "software:corsaro",
+            "label": "used by"
         }
     },
     "paper:2014_open_peering_transit_providers": {
@@ -24907,6 +25405,11 @@
         "tag:internet_outages": {
             "from": "paper:2014_outages_censorship",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2014_outages_censorship",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2014_passive_ip_space_usage_estimation": {
@@ -24929,6 +25432,11 @@
         "tag:internet_outages": {
             "from": "paper:2014_passive_ip_space_usage_estimation",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2014_passive_ip_space_usage_estimation",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2014_platform_models_sustainable_regulation": {
@@ -25021,6 +25529,11 @@
         "tag:active_data_analysis": {
             "from": "paper:2014_uncovering_network_tarpits_degreaser",
             "to": "tag:active_data_analysis"
+        },
+        "software:ioda": {
+            "from": "paper:2014_uncovering_network_tarpits_degreaser",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2014_using_peeringdb_understand_peering": {
@@ -25281,6 +25794,11 @@
         "tag:internet_outages": {
             "from": "paper:2015_leveraging_internet_background_radiation",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2015_leveraging_internet_background_radiation",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2015_leveraging_ipv4ipv6_identity_duality": {
@@ -25604,6 +26122,11 @@
             "from": "paper:2016_bdrmap",
             "to": "software:manic",
             "label": "used by"
+        },
+        "software:scamper": {
+            "from": "paper:2016_bdrmap",
+            "to": "software:scamper",
+            "label": "used by"
         }
     },
     "paper:2016_bgp_hackathon_2016_report": {
@@ -25663,6 +26186,11 @@
         "tag:internet_outages": {
             "from": "paper:2016_lost_in_space",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2016_lost_in_space",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2016_named_data_networking_2015_2016": {
@@ -25965,6 +26493,11 @@
         "tag:internet_outages": {
             "from": "paper:2017_swift",
             "to": "tag:internet_outages"
+        },
+        "software:ioda": {
+            "from": "paper:2017_swift",
+            "to": "software:ioda",
+            "label": "used by"
         }
     },
     "paper:2017_tracking_big_nat_across": {
@@ -26241,6 +26774,11 @@
         "tag:security": {
             "from": "paper:2018_using_crowdsourcing_marketplaces",
             "to": "tag:security"
+        },
+        "software:spoofer": {
+            "from": "paper:2018_using_crowdsourcing_marketplaces",
+            "to": "software:spoofer",
+            "label": "used by"
         }
     },
     "paper:2018_wie2017_report": {
@@ -26345,6 +26883,11 @@
             "to": "paper:2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes",
             "label": "used"
         },
+        "paper:2019_at_home_abroad": {
+            "from": "software:netacuity",
+            "to": "paper:2019_at_home_abroad",
+            "label": "used by"
+        },
         "tag:geolocation": {
             "from": "software:netacuity",
             "to": "tag:geolocation"
@@ -26408,6 +26951,21 @@
             "from": "software:bgpstream",
             "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
             "label": "used"
+        },
+        "paper:2019_towards_passive_analysis_anycast": {
+            "from": "software:bgpstream",
+            "to": "paper:2019_towards_passive_analysis_anycast",
+            "label": "used by"
+        },
+        "paper:2019_profiling_bgp_serial_hijackers": {
+            "from": "software:bgpstream",
+            "to": "paper:2019_profiling_bgp_serial_hijackers",
+            "label": "used by"
+        },
+        "paper:2019_stable_practical_as_relationship": {
+            "from": "software:bgpstream",
+            "to": "paper:2019_stable_practical_as_relationship",
+            "label": "used by"
         },
         "paper:2019_studying_evolution_content_providers": {
             "from": "software:bgpstream",
@@ -26940,9 +27498,44 @@
         }
     },
     "software:artemis": {
+        "paper:2018_artemis": {
+            "from": "software:artemis",
+            "to": "paper:2018_artemis",
+            "label": "used by"
+        },
         "paper:2018_survey_among_network_operators": {
             "from": "software:artemis",
             "to": "paper:2018_survey_among_network_operators",
+            "label": "used by"
+        },
+        "media:2020_artemis_uknof45": {
+            "from": "software:artemis",
+            "to": "media:2020_artemis_uknof45",
+            "label": "used by"
+        },
+        "media:2019_neutralizing_bgp_hijacking_aims": {
+            "from": "software:artemis",
+            "to": "media:2019_neutralizing_bgp_hijacking_aims",
+            "label": "used by"
+        },
+        "media:2019_neutralizing_bgp_hijacking_quilt": {
+            "from": "software:artemis",
+            "to": "media:2019_neutralizing_bgp_hijacking_quilt",
+            "label": "used by"
+        },
+        "media:2018_artemis_anrw": {
+            "from": "software:artemis",
+            "to": "media:2018_artemis_anrw",
+            "label": "used by"
+        },
+        "media:2018_artemis_aims": {
+            "from": "software:artemis",
+            "to": "media:2018_artemis_aims",
+            "label": "used by"
+        },
+        "media:2018_artemis_ripe": {
+            "from": "software:artemis",
+            "to": "media:2018_artemis_ripe",
             "label": "used by"
         },
         "tag:security": {
@@ -26976,6 +27569,11 @@
         }
     },
     "software:coralreef": {
+        "software:dnsstat": {
+            "from": "software:coralreef",
+            "to": "software:dnsstat",
+            "label": "used by"
+        },
         "paper:2001_coralapps": {
             "from": "software:coralreef",
             "to": "paper:2001_coralapps",
@@ -26988,23 +27586,38 @@
         },
         "media:2004_coralreef_lincoln": {
             "from": "software:coralreef",
-            "to": "media:2004_coralreef_lincoln"
+            "to": "media:2004_coralreef_lincoln",
+            "label": "used by"
         },
         "media:2001_usenix0112": {
             "from": "software:coralreef",
-            "to": "media:2001_usenix0112"
+            "to": "media:2001_usenix0112",
+            "label": "used by"
         },
         "media:1998_coralreefoverview": {
             "from": "software:coralreef",
-            "to": "media:1998_coralreefoverview"
+            "to": "media:1998_coralreefoverview",
+            "label": "used by"
         },
         "media:1999_isma9901_coralreef": {
             "from": "software:coralreef",
-            "to": "media:1999_isma9901_coralreef"
+            "to": "media:1999_isma9901_coralreef",
+            "label": "used by"
         },
         "tag:traffic": {
             "from": "software:coralreef",
             "to": "tag:traffic"
+        }
+    },
+    "software:dnsstat": {
+        "software:coralreef": {
+            "from": "software:dnsstat",
+            "to": "software:coralreef",
+            "label": "used by"
+        },
+        "tag:dns": {
+            "from": "software:dnsstat",
+            "to": "tag:dns"
         }
     },
     "tag:traffic": {
@@ -27028,6 +27641,21 @@
             "to": "paper:2014_analysis_unidirectional_ip_traffic",
             "label": "used by"
         },
+        "dataset:ucsd_network_telescope": {
+            "from": "software:corsaro",
+            "to": "dataset:ucsd_network_telescope",
+            "label": "used by"
+        },
+        "paper:2017_millions_targets_under_attack": {
+            "from": "software:corsaro",
+            "to": "paper:2017_millions_targets_under_attack",
+            "label": "used by"
+        },
+        "paper:2013_day_after_patch_tuesday": {
+            "from": "software:corsaro",
+            "to": "paper:2013_day_after_patch_tuesday",
+            "label": "used by"
+        },
         "paper:2016_teaching_network_security": {
             "from": "software:corsaro",
             "to": "paper:2016_teaching_network_security",
@@ -27038,6 +27666,11 @@
             "to": "paper:2012_dust_report",
             "label": "used by"
         },
+        "paper:2014_nightlights_entropy": {
+            "from": "software:corsaro",
+            "to": "paper:2014_nightlights_entropy",
+            "label": "used by"
+        },
         "paper:2012_analysis_internetwide_probing_darknets": {
             "from": "software:corsaro",
             "to": "paper:2012_analysis_internetwide_probing_darknets",
@@ -27046,6 +27679,16 @@
         "paper:2013_aims5_report": {
             "from": "software:corsaro",
             "to": "paper:2013_aims5_report",
+            "label": "used by"
+        },
+        "media:2012_corsaro_widecasfi": {
+            "from": "software:corsaro",
+            "to": "media:2012_corsaro_widecasfi",
+            "label": "used by"
+        },
+        "media:2012_dust_corsaro": {
+            "from": "software:corsaro",
+            "to": "media:2012_dust_corsaro",
             "label": "used by"
         },
         "tag:traffic": {
@@ -27059,6 +27702,21 @@
             "to": "software:corsaro",
             "label": "used by"
         },
+        "media:2019_ioda_np_paridine_final": {
+            "from": "software:ioda",
+            "to": "media:2019_ioda_np_paridine_final",
+            "label": "used by"
+        },
+        "media:2019_ioda_np_aims": {
+            "from": "software:ioda",
+            "to": "media:2019_ioda_np_aims",
+            "label": "used by"
+        },
+        "media:2019_ioda_np_dhsst": {
+            "from": "software:ioda",
+            "to": "media:2019_ioda_np_dhsst",
+            "label": "used by"
+        },
         "media:2019_how_find_correlated_internet_pam": {
             "from": "software:ioda",
             "to": "media:2019_how_find_correlated_internet_pam",
@@ -27069,14 +27727,44 @@
             "to": "media:2018_who_shuts_down_internet_imaps",
             "label": "used by"
         },
+        "media:2018_ioda_np_paridine": {
+            "from": "software:ioda",
+            "to": "media:2018_ioda_np_paridine",
+            "label": "used by"
+        },
+        "media:2018_sister_pi_apr": {
+            "from": "software:ioda",
+            "to": "media:2018_sister_pi_apr",
+            "label": "used by"
+        },
         "media:2017_mapping_our_way_dhsrd": {
             "from": "software:ioda",
             "to": "media:2017_mapping_our_way_dhsrd",
             "label": "used by"
         },
-        "media:2015_bgp_stream_imc": {
+        "media:2017_mapping_our_way_iij": {
             "from": "software:ioda",
-            "to": "media:2015_bgp_stream_imc",
+            "to": "media:2017_mapping_our_way_iij",
+            "label": "used by"
+        },
+        "media:2017_ioda_cns": {
+            "from": "software:ioda",
+            "to": "media:2017_ioda_cns",
+            "label": "used by"
+        },
+        "media:2017_ioda_aims": {
+            "from": "software:ioda",
+            "to": "media:2017_ioda_aims",
+            "label": "used by"
+        },
+        "media:2017_ioda_sdsc": {
+            "from": "software:ioda",
+            "to": "media:2017_ioda_sdsc",
+            "label": "used by"
+        },
+        "media:2016_bgpstream_imc": {
+            "from": "software:ioda",
+            "to": "media:2016_bgpstream_imc",
             "label": "used by"
         },
         "media:2016_bgpstream_2016_romatre": {
@@ -27084,9 +27772,24 @@
             "to": "media:2016_bgpstream_2016_romatre",
             "label": "used by"
         },
+        "media:2016_leveraging_internet_background_radiation_kbenson": {
+            "from": "software:ioda",
+            "to": "media:2016_leveraging_internet_background_radiation_kbenson",
+            "label": "used by"
+        },
+        "media:2016_bgpstream_framework_historical_nanog": {
+            "from": "software:ioda",
+            "to": "media:2016_bgpstream_framework_historical_nanog",
+            "label": "used by"
+        },
         "media:2015_leveraging_internet_background_imc": {
             "from": "software:ioda",
             "to": "media:2015_leveraging_internet_background_imc",
+            "label": "used by"
+        },
+        "media:2015_bgpstream_mplane": {
+            "from": "software:ioda",
+            "to": "media:2015_bgpstream_mplane",
             "label": "used by"
         },
         "media:2015_measuring_monitoring_bgp_ietf": {
@@ -27094,9 +27797,19 @@
             "to": "media:2015_measuring_monitoring_bgp_ietf",
             "label": "used by"
         },
+        "media:2015_lost_in_space_raim": {
+            "from": "software:ioda",
+            "to": "media:2015_lost_in_space_raim",
+            "label": "used by"
+        },
         "media:2015_bgpstream_ripe": {
             "from": "software:ioda",
             "to": "media:2015_bgpstream_ripe",
+            "label": "used by"
+        },
+        "media:2015_bgp_stream_imc": {
+            "from": "software:ioda",
+            "to": "media:2015_bgp_stream_imc",
             "label": "used by"
         },
         "media:2015_measuring_characterizing_ipv6_router_pam": {
@@ -27104,14 +27817,19 @@
             "to": "media:2015_measuring_characterizing_ipv6_router_pam",
             "label": "used by"
         },
+        "media:2015_ioda_fcc": {
+            "from": "software:ioda",
+            "to": "media:2015_ioda_fcc",
+            "label": "used by"
+        },
+        "media:2015_bgpstream_aims": {
+            "from": "software:ioda",
+            "to": "media:2015_bgpstream_aims",
+            "label": "used by"
+        },
         "media:2013_monitoring_largescale_internet_outages_fcc": {
             "from": "software:ioda",
             "to": "media:2013_monitoring_largescale_internet_outages_fcc",
-            "label": "used by"
-        },
-        "media:2012_micdhs_caida_overview": {
-            "from": "software:ioda",
-            "to": "media:2012_micdhs_caida_overview",
             "label": "used by"
         },
         "media:2013_gaining_insight_outages_tma": {
@@ -27129,6 +27847,11 @@
             "to": "media:2013_realtime_visualization_garbage",
             "label": "used by"
         },
+        "media:2013_caida_research_overview": {
+            "from": "software:ioda",
+            "to": "media:2013_caida_research_overview",
+            "label": "used by"
+        },
         "media:2012_coordinated_view_wiv": {
             "from": "software:ioda",
             "to": "media:2012_coordinated_view_wiv",
@@ -27139,9 +27862,89 @@
             "to": "media:2012_analysis_darknets_badgers",
             "label": "used by"
         },
+        "media:2012_internet_outages": {
+            "from": "software:ioda",
+            "to": "media:2012_internet_outages",
+            "label": "used by"
+        },
+        "media:2012_extract_benefit_from_harm_sigcomm_2012": {
+            "from": "software:ioda",
+            "to": "media:2012_extract_benefit_from_harm_sigcomm_2012",
+            "label": "used by"
+        },
         "media:2011_analysis_internet_outages_censorship": {
             "from": "software:ioda",
             "to": "media:2011_analysis_internet_outages_censorship",
+            "label": "used by"
+        },
+        "paper:2019_blink": {
+            "from": "software:ioda",
+            "to": "paper:2019_blink",
+            "label": "used by"
+        },
+        "paper:2019_how_find_correlated_internet": {
+            "from": "software:ioda",
+            "to": "paper:2019_how_find_correlated_internet",
+            "label": "used by"
+        },
+        "paper:2017_swift": {
+            "from": "software:ioda",
+            "to": "paper:2017_swift",
+            "label": "used by"
+        },
+        "paper:2016_bgpstream": {
+            "from": "software:ioda",
+            "to": "paper:2016_bgpstream",
+            "label": "used by"
+        },
+        "paper:2016_lost_in_space": {
+            "from": "software:ioda",
+            "to": "paper:2016_lost_in_space",
+            "label": "used by"
+        },
+        "paper:2015_leveraging_internet_background_radiation": {
+            "from": "software:ioda",
+            "to": "paper:2015_leveraging_internet_background_radiation",
+            "label": "used by"
+        },
+        "paper:2015_measuring_characterizing_ipv6_router": {
+            "from": "software:ioda",
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
+            "label": "used by"
+        },
+        "paper:2014_outages_censorship": {
+            "from": "software:ioda",
+            "to": "paper:2014_outages_censorship",
+            "label": "used by"
+        },
+        "paper:2014_uncovering_network_tarpits_degreaser": {
+            "from": "software:ioda",
+            "to": "paper:2014_uncovering_network_tarpits_degreaser",
+            "label": "used by"
+        },
+        "paper:2014_coordinated_view_internet_events": {
+            "from": "software:ioda",
+            "to": "paper:2014_coordinated_view_internet_events",
+            "label": "used by"
+        },
+        "paper:2014_passive_ip_space_usage_estimation": {
+            "from": "software:ioda",
+            "to": "paper:2014_passive_ip_space_usage_estimation",
+            "label": "used by"
+        },
+        "paper:2013_gaining_insight_outages": {
+            "from": "software:ioda",
+            "to": "paper:2013_gaining_insight_outages",
+            "label": "used by"
+        },
+        "paper:2012_extracting_benefit_from_harm": {
+            "from": "software:ioda",
+            "to": "paper:2012_extracting_benefit_from_harm",
+            "label": "used by"
+        },
+        "paper:2011_outages_censorship": {
+            "from": "software:ioda",
+            "to": "paper:2011_outages_censorship",
             "label": "used by"
         },
         "tag:security": {
@@ -27169,6 +27972,16 @@
         }
     },
     "software:iffinder": {
+        "dataset:itdk": {
+            "from": "software:iffinder",
+            "to": "dataset:itdk",
+            "label": "used by"
+        },
+        "paper:2010_as_assignment": {
+            "from": "software:iffinder",
+            "to": "paper:2010_as_assignment",
+            "label": "used by"
+        },
         "paper:2003_asp": {
             "from": "software:iffinder",
             "to": "paper:2003_asp",
@@ -27238,6 +28051,11 @@
         }
     },
     "software:kapar": {
+        "dataset:itdk": {
+            "from": "software:kapar",
+            "to": "dataset:itdk",
+            "label": "used by"
+        },
         "paper:2010_alias_resolution": {
             "from": "software:kapar",
             "to": "paper:2010_alias_resolution",
@@ -27246,6 +28064,16 @@
         "paper:2013_alias_resolution_midar": {
             "from": "software:kapar",
             "to": "paper:2013_alias_resolution_midar",
+            "label": "used by"
+        },
+        "paper:2011_midar_tr": {
+            "from": "software:kapar",
+            "to": "paper:2011_midar_tr",
+            "label": "used by"
+        },
+        "paper:2008_alias_resolution_techreport": {
+            "from": "software:kapar",
+            "to": "paper:2008_alias_resolution_techreport",
             "label": "used by"
         },
         "tag:ip_address": {
@@ -27380,9 +28208,24 @@
             "to": "software:vela",
             "label": "used by"
         },
+        "dataset:itdk": {
+            "from": "software:midar",
+            "to": "dataset:itdk",
+            "label": "used by"
+        },
         "paper:2013_alias_resolution_midar": {
             "from": "software:midar",
             "to": "paper:2013_alias_resolution_midar",
+            "label": "used by"
+        },
+        "paper:2011_midar_tr": {
+            "from": "software:midar",
+            "to": "paper:2011_midar_tr",
+            "label": "used by"
+        },
+        "paper:2020_unintended_consequences": {
+            "from": "software:midar",
+            "to": "paper:2020_unintended_consequences",
             "label": "used by"
         },
         "media:2010_alias_resolution_midar": {
@@ -27454,10 +28297,59 @@
             "to": "software:pyasn"
         }
     },
+    "software:pyipmeta": {
+        "tag:asn": {
+            "from": "software:pyipmeta",
+            "to": "tag:asn"
+        },
+        "tag:python": {
+            "from": "software:pyipmeta",
+            "to": "tag:python"
+        },
+        "tag:geolocation": {
+            "from": "software:pyipmeta",
+            "to": "tag:geolocation"
+        },
+        "solution:map_ipv4_address_to_asn": {
+            "from": "software:pyipmeta",
+            "to": "solution:map_ipv4_address_to_asn"
+        }
+    },
+    "tag:python": {
+        "software:pyipmeta": {
+            "from": "tag:python",
+            "to": "software:pyipmeta"
+        }
+    },
     "software:scamper": {
+        "dataset:itdk": {
+            "from": "software:scamper",
+            "to": "dataset:itdk",
+            "label": "used by"
+        },
+        "dataset:ipv4_routed_24_topology_dataset": {
+            "from": "software:scamper",
+            "to": "dataset:ipv4_routed_24_topology_dataset",
+            "label": "used by"
+        },
+        "paper:2010_scamper": {
+            "from": "software:scamper",
+            "to": "paper:2010_scamper",
+            "label": "used by"
+        },
+        "paper:2019_learning_regexes_extract_router": {
+            "from": "software:scamper",
+            "to": "paper:2019_learning_regexes_extract_router",
+            "label": "used by"
+        },
         "paper:2017_impact_router_outages_as": {
             "from": "software:scamper",
             "to": "paper:2017_impact_router_outages_as",
+            "label": "used by"
+        },
+        "paper:2016_bdrmap": {
+            "from": "software:scamper",
+            "to": "paper:2016_bdrmap",
             "label": "used by"
         },
         "paper:2016_dont_forget_lock": {
@@ -27485,6 +28377,16 @@
             "to": "paper:2014_challenges_inferring_interdomain_congestion",
             "label": "used by"
         },
+        "paper:2013_speedtrap": {
+            "from": "software:scamper",
+            "to": "paper:2013_speedtrap",
+            "label": "used by"
+        },
+        "paper:2012_measuring_deployment_ipv6": {
+            "from": "software:scamper",
+            "to": "paper:2012_measuring_deployment_ipv6",
+            "label": "used by"
+        },
         "paper:2012_revealing_mpls_tunnels": {
             "from": "software:scamper",
             "to": "paper:2012_revealing_mpls_tunnels",
@@ -27495,9 +28397,19 @@
             "to": "paper:2011_crooked_traceroute",
             "label": "used by"
         },
+        "paper:2010_measuring_path_mtu": {
+            "from": "software:scamper",
+            "to": "paper:2010_measuring_path_mtu",
+            "label": "used by"
+        },
         "paper:2008_traceroute_probe_method": {
             "from": "software:scamper",
             "to": "paper:2008_traceroute_probe_method",
+            "label": "used by"
+        },
+        "paper:2005_inferring_mtu": {
+            "from": "software:scamper",
+            "to": "paper:2005_inferring_mtu",
             "label": "used by"
         },
         "paper:2004_dualstack": {
@@ -27526,14 +28438,24 @@
         }
     },
     "software:spoofer": {
+        "paper:2019_network_hygiene_incentives_regulation": {
+            "from": "software:spoofer",
+            "to": "paper:2019_network_hygiene_incentives_regulation",
+            "label": "used by"
+        },
+        "paper:2018_using_crowdsourcing_marketplaces": {
+            "from": "software:spoofer",
+            "to": "paper:2018_using_crowdsourcing_marketplaces",
+            "label": "used by"
+        },
         "paper:2017_using_loops_observed_traceroute": {
             "from": "software:spoofer",
             "to": "paper:2017_using_loops_observed_traceroute",
             "label": "used by"
         },
-        "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet": {
+        "media:2019_network_hygiene_incentives_regulation_ccs": {
             "from": "software:spoofer",
-            "to": "media:network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet",
+            "to": "media:2019_network_hygiene_incentives_regulation_ccs",
             "label": "used by"
         },
         "media:2017_best_available_data_one": {
@@ -27551,12 +28473,6 @@
             "to": "tag:security"
         }
     },
-    "tag:traceroute": {
-        "software:vela": {
-            "from": "tag:traceroute",
-            "to": "software:vela"
-        }
-    },
     "tag:ark": {
         "software:vela": {
             "from": "tag:ark",
@@ -27564,6 +28480,10 @@
         }
     },
     "solution:map_ipv4_address_to_asn": {
+        "software:pyipmeta": {
+            "from": "solution:map_ipv4_address_to_asn",
+            "to": "software:pyipmeta"
+        },
         "tag:measurement_methodology": {
             "from": "solution:map_ipv4_address_to_asn",
             "to": "tag:measurement_methodology"
@@ -27628,6 +28548,10 @@
         }
     },
     "solution:how_to_parse_cymru_bogon_data": {
+        "dataset:bogons": {
+            "from": "solution:how_to_parse_cymru_bogon_data",
+            "to": "dataset:bogons"
+        },
         "tag:bogon": {
             "from": "solution:how_to_parse_cymru_bogon_data",
             "to": "tag:bogon"

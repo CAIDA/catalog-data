@@ -155,16 +155,14 @@ def main():
             type_ = fname
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
-                    #print ("   ",path+"/"+filename)
                     try:
                         info = json.load(open(path+"/"+filename))
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
-                    except ValueError e:
+                    except ValueError as e:
                         print (path+"/"+filename)
-                        sys.exit()
                         raise e
 
 
@@ -203,7 +201,7 @@ def main():
     if os.path.exists(id_object_file):
         try:
             id_objs = json.load(open(id_object_file,"r"))
-        except ValueError e:
+        except ValueError as e:
             print ('decoding JSON filed on'+id_object_file)
             id_objs = {}
     else:
@@ -339,7 +337,9 @@ def id_create(type_,name,id_=None):
             name = id_
         else:
             return None
-    id_ = type_+":"+re_id_illegal.sub("_",name)
+    name = re_id_illegal.sub("_",name)
+    name = re.sub("_+$","",re.sub("^_+","",name))
+    id_ = type_+":"+name
     return id_.lower()
 
 

@@ -172,7 +172,7 @@
         {
             "to": "paper:2017_swift",
             "label": "used by"
-        }
+        },
         {
             "to": "paper:2016_bgpstream",
             "label": "used by"

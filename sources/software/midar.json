@@ -19,15 +19,11 @@
     ],
     "links": [
         {
-            "to": "software:vela_midar_api",
-            "label": "used by"
-        },
-        {
             "to": "software:vela",
             "label": "used by"
         },
         {
-            "to": "dataset:internet_topology_data_kit",
+            "to": "dataset:itdk",
             "label": "used by"
         },
         {

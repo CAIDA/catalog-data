@@ -31,35 +31,11 @@
             "label": "used by"
         },
         {
-            "to": "media:2019_artemis_an_open_source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
-            "label": "used by"
-        },
-        {
-            "to": "media:2019_auto_configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
-            "label": "used by"
-        },
-        {
-            "to": "media:2018_11_artemis_neutralizing_bgp_hijacking_within_a_minute",
-            "label": "used by"
-        },
-        {
-            "to": "media:2018_08_artemis_neutralizing_bgp_hijacking_within_a_minute",
-            "label": "used by"
-        },
-        {
             "to": "media:2019_neutralizing_bgp_hijacking_aims",
             "label": "used by"
         },
         {
             "to": "media:2019_neutralizing_bgp_hijacking_quilt",
-            "label": "used by"
-        },
-        {
-            "to": "media:2018_07_16_artemis_neutralizing_bgp_hijacking_within_a_minute",
-            "label": "used by"
-        },
-        {
-            "to": "media:2018_07_06_artemis_neutralizing_bgp_hijacking_within_a_minute",
             "label": "used by"
         },
         {

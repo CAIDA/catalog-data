@@ -109,7 +109,7 @@ def load_ids(type_,filename):
         id_add(filename, type_, obj["id"])
         original = "sources/"+type_+"/"+obj["id"]+".json"
         if not os.path.exists(original):
-            obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__placeholder.json"
+            obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
             objects.append(obj)
 
 
