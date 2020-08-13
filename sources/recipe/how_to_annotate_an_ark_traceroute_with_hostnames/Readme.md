@@ -9,8 +9,8 @@
         "topology",
         "software/tools",
         "IPv4",
-        "IPv4 prefix"
-        "IPv6",
+        "IPv4 prefix",
+        "IPv6"
     ]
 }
 ~~~
