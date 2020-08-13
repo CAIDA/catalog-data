@@ -156,11 +156,16 @@ def main():
             for filename in sorted(os.listdir(path)):
                 if re.search("\.json$",filename,re.IGNORECASE):
                     #print ("   ",path+"/"+filename)
-                    info = json.load(open(path+"/"+filename))
-                    info["filename"] = path+"/"+filename
-                    obj = object_add(type_,info)
-                    if obj is None:
-                        print ("parse error   ",path+"/"+filename)
+                    try:
+                        info = json.load(open(path+"/"+filename))
+                        info["filename"] = path+"/"+filename
+                        obj = object_add(type_,info)
+                        if obj is None:
+                            print ("parse error   ",path+"/"+filename)
+                    except ValueError e:
+                        print (path+"/"+filename)
+                        sys.exit()
+                        raise e
 
 
     values = list(id_object.values())
@@ -198,7 +203,7 @@ def main():
     if os.path.exists(id_object_file):
         try:
             id_objs = json.load(open(id_object_file,"r"))
-        except ValueError:
+        except ValueError e:
             print ('decoding JSON filed on'+id_object_file)
             id_objs = {}
     else:
