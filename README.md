@@ -3,16 +3,23 @@ This contains the source JSON files used to build the catalog's databases.
 The source JSON files are found in the source directory.  These are combined 
 to build id_id_link.json, id_object.json, and word_score_id.json. 
 
+There are three derived files generated from the object meta data.
+- id_object.json : a id to object dictionary, it has all the object data execpt for links
+- id_id_link.json : stores the link files in {from,to,label} nested dictionaries
+- word_score_id.json : dictionry for each word of scores and id pairs.
+
+These are made by two scripts:
+- scripts/pubdb_placeholder.py : creates the pubdb objects
+- scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
 ## Build the compiled data
-If you have updated the source files.  You will need to recompile the catalog json files, commit
-the updated data files, and then push to the server.  If you want to make it public, you will need
-to merge those files into v1. 
+Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
+
 ~~~
-python3 scripts/data-build.py
-git commit -a 
-git push
+make
 ~~~
+
+You can also do ```make clean``` to remove the pubdb files and id_\* files. 
 
 ### Possible Solutions:
 - Introduction to PANDA
