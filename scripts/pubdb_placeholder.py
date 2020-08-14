@@ -19,11 +19,10 @@ def main():
         if os.path.isdir(p):
             for fname in os.listdir(p):
                 fname = p+"/"+fname
-                if re.search("json$",fname): 
+                if re.search("json$",fname) and "__" not in fname: 
                     try:
                         obj = json.load(open(fname,"r"))
                     except ValueError as e:
-                        print (fname)
                         raise e
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
@@ -47,6 +46,7 @@ def main():
                 for key in ["name","person"]:
                     if key in info:
                         info["person"] = "person:"+info[key]
+                        person_create(obj["id"],info["person"])
                         if key != "person":
                             del info[key]
                 if "date" in info and re.search("\d\d\d\d\.\d",info["date"]):
@@ -100,9 +100,11 @@ def main():
             obj["date"] = obj["datePublished"] = year+"."+mon
 
 
-        #print (obj["filename"])
         json.dump(obj,open(obj["filename"],"w"),indent=4)
-        #print (json.dumps(obj,indent=4))
+
+    for obj in id_person.values():
+        json.dump(obj,open(obj["filename"],"w"),indent=4)
+
 
 def key_to_key(obj,key_a,key_b):
     if key_a in obj:
@@ -146,4 +148,19 @@ def id_yearless(id_):
         return type_+":"+name
     return id_
     
+
+id_person = {}
+def person_create(filename, obj):
+    id_ = utils.id_create("filename",'person',obj)
+    if id_ not in id_person:
+        if obj[:7] == "person:":
+            nameLast,nameFirst = obj[7:].split("__")
+        else:
+            nameLast,nameFirst = obj.split("__")
+        person = {
+            "id": id_,
+            "__typename":"person",
+            "filename":"sources/person/"+id_[7:]+"__pubdb.json", "nameLast": nameLast.replace("_"," ").title(), "nameFirst": nameFirst.replace("_"," ").title()
+        }
+        id_person[id_] = person
 main()

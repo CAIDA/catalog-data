@@ -22,7 +22,7 @@ def id_create(filename, type_,id_):
             if "__" in name:
                 names = name.split("__")
             else:
-                names = nane.split(",")
+                names = name.split(",")
             for i,name in enumerate(names):
                 name = re_id_illegal.sub("_",name)
                 names[i] = re.sub("_+$","",re.sub("^_+","",name))
@@ -40,4 +40,4 @@ def id_create(filename, type_,id_):
     else:
         name = re_id_illegal.sub("_",name)
         name = re.sub("_+$","",re.sub("^_+","",name))
-    return type_+":"+name.lower()
+    return type_.lower()+":"+name.lower()

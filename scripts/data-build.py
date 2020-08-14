@@ -184,6 +184,7 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
+    print ("adding dates")
     for obj in list(id_object.values()):
         object_date_add(obj)
 
@@ -220,6 +221,7 @@ def main():
         for obj in id_object.values():
             object_score_update(obj)
         
+    print ("adding words")
     word_score_id = {}
     for id_,word_score in id_word_score.items():
         for word,score in word_score.items():
@@ -334,9 +336,9 @@ def object_add(type_, info):
     if "name" in info:
         info["__typename"] = type_.title()
         if "id" not in info:
-            info["id"] = utils.id_create(info["__typename"],info["name"])
+            info["id"] = utils.id_create(info["filename"], info["__typename"],info["name"])
         else:
-            info["id"] = utils.id_create(info["__typename"],info["name"],info["id"])
+            info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
     else:
         error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
@@ -353,7 +355,7 @@ def object_add(type_, info):
             date,id_short = m.groups()
             id_paper[id_short] = info
         else:
-            info["id"] = utils.id_create(info["__typename"],info["id"])
+            info["id"] = utils.id_create(filename, info["__typename"],info["id"])
 
     if not error:
         id_object[info["id"]] = info
@@ -409,7 +411,7 @@ def object_finish(obj):
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
-                id_2 = utils.id_create(None,None,id_);
+                id_2 = utils.id_create(obj["filename"],None,id_);
                 if id_2 not in id_object:
                     name = id_[8:]
                     object_add("License", {
@@ -436,7 +438,7 @@ def person_lookup_id(filename, id_):
 def object_lookup_type_name(filename, type_,name):
     if type_ == name[0:(len(type_)+1)]:
         name = name[(len(type_)+1):]
-    id_ = utils.id_create(type_,name)
+    id_ = utils.id_create(filename, type_,name)
     return object_lookup({
         "id":id_,
         "filename":filename, 
@@ -445,7 +447,7 @@ def object_lookup_type_name(filename, type_,name):
     })
 
 def object_lookup_id(filename, id_):
-    id_ = utils.id_create(None,None,id_)
+    id_ = utils.id_create(filename,None,id_)
     if id_ in id_object:
         return id_object[id_]
 
