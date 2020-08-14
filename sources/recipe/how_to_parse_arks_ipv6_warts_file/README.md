@@ -29,16 +29,15 @@ The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/
 ### Datasets ###
 • `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. \
 Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). \
-• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). Make sure to unzip before use in script.\
+• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). The script can accept both .gz files as well as unzipped .prefix2as6 files. \
 • `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
 
 **Example Usage:** 
 ~~~bash 
 
 $ gunzip topo-v6.l8.20200101.1577836855.yxu-ca.warts.gz
-$ gunzip routeviews-rv6-20200101-1200.pfx2as.gz
 $ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json 
-$ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.pfx2as -d test.dat
+$ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.pfx2as.gz -d test.dat
 ~~~
 
 ### Methods ### 
