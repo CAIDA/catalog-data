@@ -49,6 +49,7 @@ import time
 import datetime
 import markdown2
 import subprocess
+import lib.utils as utils
 
 source_dir="sources"
 
@@ -322,22 +323,6 @@ def data_print():
 
 #############################
 
-def id_create(type_,name,id_=None):
-    if id_ is not None:
-        m = re_type_name.search(id_)
-        if m:
-            type_,name = m.groups()
-        elif type_ is not None:
-            name = id_
-        else:
-            return None
-    if type_ == "solution":
-        type_ = "recipe"
-    name = re_id_illegal.sub("_",name)
-    name = re.sub("_+$","",re.sub("^_+","",name))
-    id_ = type_+":"+name
-    return id_.lower()
-
 
 def object_add(type_, info): 
     info["__typename"] = type_ = type_.title()
@@ -349,9 +334,9 @@ def object_add(type_, info):
     if "name" in info:
         info["__typename"] = type_.title()
         if "id" not in info:
-            info["id"] = id_create(info["__typename"],info["name"])
+            info["id"] = utils.id_create(info["__typename"],info["name"])
         else:
-            info["id"] = id_create(info["__typename"],info["name"],info["id"])
+            info["id"] = utils.id_create(info["__typename"],info["name"],info["id"])
     else:
         error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
@@ -368,7 +353,7 @@ def object_add(type_, info):
             date,id_short = m.groups()
             id_paper[id_short] = info
         else:
-            info["id"] = id_create(info["__typename"],info["id"])
+            info["id"] = utils.id_create(info["__typename"],info["id"])
 
     if not error:
         id_object[info["id"]] = info
@@ -424,7 +409,7 @@ def object_finish(obj):
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
-                id_2 = id_create(None,None,id_);
+                id_2 = utils.id_create(None,None,id_);
                 if id_2 not in id_object:
                     name = id_[8:]
                     object_add("License", {
@@ -451,7 +436,7 @@ def person_lookup_id(filename, id_):
 def object_lookup_type_name(filename, type_,name):
     if type_ == name[0:(len(type_)+1)]:
         name = name[(len(type_)+1):]
-    id_ = id_create(type_,name)
+    id_ = utils.id_create(type_,name)
     return object_lookup({
         "id":id_,
         "filename":filename, 
@@ -460,7 +445,7 @@ def object_lookup_type_name(filename, type_,name):
     })
 
 def object_lookup_id(filename, id_):
-    id_ = id_create(None,None,id_)
+    id_ = utils.id_create(None,None,id_)
     if id_ in id_object:
         return id_object[id_]
 
@@ -485,7 +470,7 @@ def object_lookup(info):
     info["__typename"] = type_.title()
     if "id" not in info:
         if "name" in info and "__typename" in info:
-            id_ = id_create(info["__typename"],info["name"])
+            id_ = utils.id_create(info["__typename"],info["name"])
             info["id"] = id_
         else:
             print ("no id or name,_typename",info)
@@ -523,12 +508,12 @@ def link_add(obj,info):
 
     if type(info) == str:
         to_original = info
-        to = id_create(None,None,info)
+        to = utils.id_create(None,None,info)
         info = { "to":to }
     else:
         if "to" in info:
             to_original = info["to"]
-            to = info["to"] = id_create(None,None,info["to"])
+            to = info["to"] = utils.id_create(None,None,info["to"])
         else:
             error_add(obj["filename"],"link has no to"+json.dumps(info))
             return None

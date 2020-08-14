@@ -1,10 +1,12 @@
 #! /usr/bin/env python3
+__author__ = "Bradley Huffaker"
+__email__ = "<bradley@caida.org>"
 import json
 import re
 import os
 import sys
+import lib.utils as utils
 
-re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 objects = []
 seen = set()
 name_id = {}
@@ -25,12 +27,12 @@ def main():
                         raise e
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
-                        name = id_create(fname, type_,obj["name"])
+                        name = utils.id_create(fname, type_,obj["name"])
                         #if "evolution" in name:
                             #print (obj["id"])
                             #print (name)
                             #print ()
-                        name_id[name] = id_create(fname, type_,obj["id"])
+                        name_id[name] = utils.id_create(fname, type_,obj["id"])
         
     for obj in objects:
         #print (obj["__typename"], obj["id"])
@@ -66,7 +68,7 @@ def main():
                         type_ = "paper"
                     elif type_ == "presentations":
                         type_ = "media"
-                    id_ = id_create(obj["filename"],type_,date+"_"+id_)
+                    id_ = utils.id_create(obj["filename"],type_,date+"_"+id_)
                     if id_ in seen:
                         links.append({
                             "to":id_,
@@ -108,42 +110,24 @@ def key_to_key(obj,key_a,key_b):
         del obj[key_a]
 
 def load_ids(type_,filename):
-    for obj in json.load(open(filename,"r")):
-        obj["__typename"] = type_
-        id_add(filename, type_, obj["id"])
-        original = "sources/"+type_+"/"+obj["id"]+".json"
-        if not os.path.exists(original):
-            obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
-            objects.append(obj)
+    try:
+        for obj in json.load(open(filename,"r")):
+            obj["__typename"] = type_
+            id_add(filename, type_, obj["id"])
+            original = "sources/"+type_+"/"+obj["id"]+".json"
+            if not os.path.exists(original):
+                obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
+                objects.append(obj)
+    except ValueError as e:
+        print ("JSON error in",filename)
+        raise e
 
 
 def id_add(filename, type_,id_):
-    id_ = id_create(filename, type_,id_)
+    id_ = utils.id_create(filename, type_,id_)
     yearless = id_yearless(id_)
     name_id[yearless] = id_
     seen.add(id_)
-
-def id_create(filename, type_,id_):
-    if id_ is not None:
-        if ":" in id_:
-            values = id_.split(":")
-            type_ = values[0]
-            name = "_".join(values[1:])
-        elif type_ is not None:
-            name = id_
-        else:
-            print (filename, "type not defined for",id)
-            sys.exit()
-    else:
-        print (filename, "id not defined")
-        sys.exit()
-    if type_ == "presentation":
-        type_ = "media"
-      
-    name = re_id_illegal.sub("_",name)
-    name = re.sub("_+$","",re.sub("^_+","",name))
-    id_ = type_+":"+name
-    return id_.lower()
 
 def id_lookup(id_):
     if id_ in seen:
