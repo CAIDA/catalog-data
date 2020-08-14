@@ -6,11 +6,17 @@
     "links":[
         {"to":"media:ipv4_history_viz_video"}
     ],
+    "date":"2020.08",
     "type":"PRESENTATION",
-    "availability":[{
+    "resources":[{
         "name":"URL",
         "url":"https://www.caida.org/publications/visualizations/ipv4-history/",
         "tags":["url","presentation"]
         }
+    ],
+    "authors":[
+        "person:nicole_lee",
+        "person:huffaker_bradley",
+        "person:claffy_kc"
     ]
 }
