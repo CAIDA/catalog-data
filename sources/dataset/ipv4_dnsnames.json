@@ -1,0 +1,30 @@
+{
+    "id": "ipv4_dnsnames",
+    "name": "IPv4 DNS names",
+    "organization": "CAIDA",
+    "description": "DNS names are useful for obtaining additional information about routers and hosts making up the Internet topology. For example, DNS names of routers often encode the link type (backbone vs. access), link capacity, Point of Presence (PoP), and geographic location. We have DNS Names data starting March 2008.",
+    "tags": [
+        "topology",
+        "dns",
+        "ipv4"
+    ],
+    "dateStart": "2008.03",
+    "status": "ongoing",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to":"dataset:ipv4_routed_24_topology"
+        }
+    ]
+}
