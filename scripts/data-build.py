@@ -82,9 +82,9 @@ re_not_digit = re.compile("[^\d]+")
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_score_id_file = "word_score_id.json"
+pubdb_links_file = "data/pubdb_links.json"
 
 filename_errors = {}
-
 
 # Weights used to create word scoring for search
 weight_default = 1
@@ -215,6 +215,16 @@ def main():
         del id_object[id_]
 
     #######################
+    # pubdb links
+    #######################
+    if os.path.exists(pubdb_links_file):
+        print ("loading",pubdb_links_file)
+        pub_links_load(pubdb_links_file)
+    else:
+        print("failed to file",pubdb_links_file)
+        print("    type 'make links'")
+
+    #######################
     # ca
     #######################
     for i in range(0,10):
@@ -233,6 +243,8 @@ def main():
 
     #for score_id in word_score_id["rank"]:
         #print ("   ",score_id)
+
+
 
     #######################
     # print files
@@ -635,7 +647,7 @@ def person_add_names(person):
                 names = person["id"].split("_")
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
-        person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    person["name"] = person["nameLast"]+", "+person["nameFirst"]
     #print (person["id"])
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
     return True
@@ -745,6 +757,15 @@ def id_yearless(id_):
         type_,date,name = m.groups()
         return type_+":"+name
     return id_
+
+def pub_links_load(filename):
+    for link in json.load(open(filename,"r")):
+        if link[0] in id_object and link[1] in id_object:
+            obj = {
+                "filename":filename,
+                "id":link[0]
+                }
+            link_add(obj,link[1])
 
 main()
 

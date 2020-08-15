@@ -360,6 +360,13 @@
                 "tags": [
                     "tag:file"
                 ]
+            },
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/active/internet-topology-data-kit",
+                "tags": [
+                    "tag:file"
+                ]
             }
         ],
         "licenses": [
@@ -370,6 +377,35 @@
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2007/02/01 00:00:00"
+    },
+    "dataset:ixps": {
+        "id": "dataset:ixps",
+        "name": "Internet eXchange Points (IXPs) Dataset",
+        "organization": "CAIDA",
+        "description": "An Internet eXchange Point (IX or IXP) is a physical infrastructure used by Internet service providers (ISPs) and content delivery networks (CDNs) to exchange Internet traffic between their networks (Autonomous Systems - ASes). An IXP can be distributed and located in numerous data centers (aka facilities), and a single facility can contain mutliple IXPs. Each IXP has a prefix, or collection of prefixes, which are used by companies/ASes to address machines within the IXP infrastructure. An AS connected to a given IXP is known as a member of that IXP. Internet traffic exchange through an IXP makes use of Border Gateway Protocol (BGP) that recognizes ISPs and CDNs by their Autonomous System Numbers (ASNs).",
+        "tags": [
+            "tag:topology",
+            "tag:ixp"
+        ],
+        "dateStart": "2018/02/01 00:00:00",
+        "status": "ongoing",
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/ixps",
+                "tags": [
+                    "tag:file"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:bsd_4_clause_uc"
+        ],
+        "filename": "sources/dataset/ixps.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2018/02/01 00:00:00"
     },
     "dataset:mawi_internet_traffic": {
         "id": "dataset:mawi_internet_traffic",
@@ -440,6 +476,31 @@
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2007/02/01 00:00:00"
+    },
+    "dataset:passive_equinix_nyc": {
+        "id": "dataset:passive_equinix_nyc",
+        "name": "Passive Monitor: equinix-nyc",
+        "organization": "CAIDA",
+        "description": "The equinix-nyc Internet data collection monitor is located at an Equinix datacenter in New York, New York.",
+        "tags": [
+            "tag:passive"
+        ],
+        "dateStart": "2008/02/01 00:00:00",
+        "status": "complete",
+        "resources": [
+            {
+                "name": "restricted",
+                "url": "https://www.caida.org/data/monitors/passive-equinix-nyc.xml",
+                "tags": [
+                    "tag:file"
+                ]
+            }
+        ],
+        "filename": "sources/dataset/passive_equinix_nyc.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2008/02/01 00:00:00"
     },
     "dataset:spoofer": {
         "id": "dataset:spoofer",
@@ -48392,7 +48453,7 @@
     "person:aben__emile": {
         "id": "person:aben__emile",
         "__typename": "Person",
-        "filename": "sources/person/Aben__Emile__pubdb.json",
+        "filename": "sources/person/aben__emile__pubdb.json",
         "nameLast": "Aben",
         "nameFirst": "Emile",
         "name": "Aben, Emile",
@@ -48403,805 +48464,10 @@
     "person:ahmed__adnan": {
         "id": "person:ahmed__adnan",
         "__typename": "Person",
-        "filename": "sources/person/Ahmed__Adnan__pubdb.json",
+        "filename": "sources/person/ahmed__adnan__pubdb.json",
         "nameLast": "Ahmed",
         "nameFirst": "Adnan",
         "name": "Ahmed, Adnan",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:bachman__nancy": {
-        "id": "person:bachman__nancy",
-        "__typename": "Person",
-        "filename": "sources/person/Bachman__Nancy__pubdb.json",
-        "nameLast": "Bachman",
-        "nameFirst": "Nancy",
-        "name": "Bachman, Nancy",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:bauer__steven": {
-        "id": "person:bauer__steven",
-        "__typename": "Person",
-        "filename": "sources/person/Bauer__Steven__pubdb.json",
-        "nameLast": "Bauer",
-        "nameFirst": "Steven",
-        "name": "Bauer, Steven",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:benson__karyn": {
-        "id": "person:benson__karyn",
-        "__typename": "Person",
-        "filename": "sources/person/Benson__Karyn__pubdb.json",
-        "nameLast": "Benson",
-        "nameFirst": "Karyn",
-        "name": "Benson, Karyn",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:beverly__robert": {
-        "id": "person:beverly__robert",
-        "organization": [
-            "Massachusetts Institute of Technology (MIT)",
-            "Worldcom Advanced Internet Technology"
-        ],
-        "nameLast": "Beverly",
-        "nameFirst": "Robert",
-        "name": "Beverly, Robert",
-        "filename": "sources/person/beverly__robert.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:broido__andre": {
-        "id": "person:broido__andre",
-        "__typename": "Person",
-        "filename": "sources/person/Broido__Andre__pubdb.json",
-        "nameLast": "Broido",
-        "nameFirst": "Andre",
-        "name": "Broido, Andre",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:brownlee__nevil": {
-        "id": "person:brownlee__nevil",
-        "__typename": "Person",
-        "filename": "sources/person/Brownlee__Nevil__pubdb.json",
-        "nameLast": "Brownlee",
-        "nameFirst": "Nevil",
-        "name": "Brownlee, Nevil",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:carisimo__esteban": {
-        "id": "person:carisimo__esteban",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego",
-            "CONICET",
-            "University of Buenos Aires"
-        ],
-        "nameLast": "Carisimo",
-        "nameFirst": "Esteban",
-        "name": "Carisimo, Esteban",
-        "filename": "sources/person/carisimo__esteban.json",
-        "__typename": "Person",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:castro__sebastian": {
-        "id": "person:castro__sebastian",
-        "__typename": "Person",
-        "filename": "sources/person/Castro__Sebastian__pubdb.json",
-        "nameLast": "Castro",
-        "nameFirst": "Sebastian",
-        "name": "Castro, Sebastian",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:claffy__kimberly": {
-        "id": "person:claffy__kimberly",
-        "__typename": "Person",
-        "filename": "sources/person/Claffy__Kimberly__pubdb.json",
-        "nameLast": "Claffy",
-        "nameFirst": "Kimberly",
-        "name": "Claffy, Kimberly",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:clark__david": {
-        "id": "person:clark__david",
-        "organization": [
-            "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
-        ],
-        "nameLast": "Clark",
-        "nameFirst": "David",
-        "name": "Clark, David",
-        "filename": "sources/person/clark__david.json",
-        "__typename": "Person",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:dainotti__alberto": {
-        "id": "person:dainotti__alberto",
-        "organization": [
-            "University of Napoli Federico II, Napoli, Italy"
-        ],
-        "nameLast": "Dainotti",
-        "nameFirst": "Alberto",
-        "name": "Dainotti, Alberto",
-        "filename": "sources/person/dainotti__alberto.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:dhamdhere__amogh": {
-        "id": "person:dhamdhere__amogh",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego"
-        ],
-        "nameLast": "Dhamdhere",
-        "nameFirst": "Amogh",
-        "name": "Dhamdhere, Amogh",
-        "filename": "sources/person/dhamdhere__amogh.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:dimitropoulos__xenofontas": {
-        "id": "person:dimitropoulos__xenofontas",
-        "__typename": "Person",
-        "filename": "sources/person/Dimitropoulos__Xenofontas__pubdb.json",
-        "nameLast": "Dimitropoulos",
-        "nameFirst": "Xenofontas",
-        "name": "Dimitropoulos, Xenofontas",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:dovrolis__constantine": {
-        "id": "person:dovrolis__constantine",
-        "__typename": "Person",
-        "filename": "sources/person/Dovrolis__Constantine__pubdb.json",
-        "nameLast": "Dovrolis",
-        "nameFirst": "Constantine",
-        "name": "Dovrolis, Constantine",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:du__ben": {
-        "id": "person:du__ben",
-        "__typename": "Person",
-        "filename": "sources/person/Du__Ben__pubdb.json",
-        "nameLast": "Du",
-        "nameFirst": "Ben",
-        "name": "Du, Ben",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:fanou__rod_rick": {
-        "id": "person:fanou__rod_rick",
-        "__typename": "Person",
-        "filename": "sources/person/fanou__rod_rick__pubdb.json",
-        "nameLast": "Fanou",
-        "nameFirst": "Rod\u00e9rick",
-        "name": "Fanou, Rod\u00e9rick",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:fomenkov__marina": {
-        "id": "person:fomenkov__marina",
-        "__typename": "Person",
-        "filename": "sources/person/Fomenkov__Marina__pubdb.json",
-        "nameLast": "Fomenkov",
-        "nameFirst": "Marina",
-        "name": "Fomenkov, Marina",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:francois__pierre": {
-        "id": "person:francois__pierre",
-        "__typename": "Person",
-        "filename": "sources/person/Francois__Pierre__pubdb.json",
-        "nameLast": "Francois",
-        "nameFirst": "Pierre",
-        "name": "Francois, Pierre",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:gamero_garrido__alex": {
-        "id": "person:gamero_garrido__alex",
-        "__typename": "Person",
-        "filename": "sources/person/gamero_garrido__alex__pubdb.json",
-        "nameLast": "Gamero-Garrido",
-        "nameFirst": "Alex",
-        "name": "Gamero-Garrido, Alex",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:giotsas__vasileios": {
-        "id": "person:giotsas__vasileios",
-        "organization": [
-            "University College London"
-        ],
-        "nameLast": "Giotsas",
-        "nameFirst": "Vasileios",
-        "name": "Giotsas, Vasileios",
-        "filename": "sources/person/giotsas__vasileios.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:hash__haven": {
-        "id": "person:hash__haven",
-        "__typename": "Person",
-        "filename": "sources/person/Hash__Haven__pubdb.json",
-        "nameLast": "Hash",
-        "nameFirst": "Haven",
-        "name": "Hash, Haven",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:holterbach__thomas": {
-        "id": "person:holterbach__thomas",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego",
-            "ETH Z\u00fcrich"
-        ],
-        "nameLast": "Holterbach",
-        "nameFirst": "Thomas",
-        "name": "Holterbach, Thomas",
-        "filename": "sources/person/holterbach__thomas.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:huffaker__bradley": {
-        "id": "person:huffaker__bradley",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego"
-        ],
-        "nameLast": "Huffaker",
-        "nameFirst": "Bradley",
-        "name": "Huffaker, Bradley",
-        "filename": "sources/person/huffaker__bradley.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:hyun__young": {
-        "id": "person:hyun__young",
-        "__typename": "Person",
-        "filename": "sources/person/Hyun__Young__pubdb.json",
-        "nameLast": "Hyun",
-        "nameFirst": "Young",
-        "name": "Hyun, Young",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:jakubiec__oliver": {
-        "id": "person:jakubiec__oliver",
-        "__typename": "Person",
-        "filename": "sources/person/Jakubiec__Oliver__pubdb.json",
-        "nameLast": "Jakubiec",
-        "nameFirst": "Oliver",
-        "name": "Jakubiec, Oliver",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:jin__yuchen": {
-        "id": "person:jin__yuchen",
-        "organization": [
-            "University of Washington"
-        ],
-        "nameLast": "Jin",
-        "nameFirst": "Yuchen",
-        "name": "Jin, Yuchen",
-        "filename": "sources/person/jin__yuchen.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:john__wolfgang": {
-        "id": "person:john__wolfgang",
-        "__typename": "Person",
-        "filename": "sources/person/John__Wolfgang__pubdb.json",
-        "nameLast": "John",
-        "nameFirst": "Wolfgang",
-        "name": "John, Wolfgang",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:jonker__mattijs": {
-        "id": "person:jonker__mattijs",
-        "organization": [
-            "University of Twente"
-        ],
-        "nameLast": "Jonker",
-        "nameFirst": "Mattijs",
-        "name": "Jonker, Mattijs",
-        "filename": "sources/person/jonker__mattijs.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:kenneally__erin": {
-        "id": "person:kenneally__erin",
-        "__typename": "Person",
-        "filename": "sources/person/Kenneally__Erin__pubdb.json",
-        "nameLast": "Kenneally",
-        "nameFirst": "Erin",
-        "name": "Kenneally, Erin",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:keys__ken": {
-        "id": "person:keys__ken",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego"
-        ],
-        "nameLast": "Keys",
-        "nameFirst": "Ken",
-        "name": "Keys, Ken",
-        "filename": "sources/person/keys__ken.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:kim__hyun_chul": {
-        "id": "person:kim__hyun_chul",
-        "__typename": "Person",
-        "filename": "sources/person/kim__hyun_chul__pubdb.json",
-        "nameLast": "Kim",
-        "nameFirst": "Hyun-Chul",
-        "name": "Kim, Hyun-Chul",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:king__alistair": {
-        "id": "person:king__alistair",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego"
-        ],
-        "nameLast": "King",
-        "nameFirst": "Alistair",
-        "name": "King, Alistair",
-        "filename": "sources/person/king__alistair.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:kitsak__maksim": {
-        "id": "person:kitsak__maksim",
-        "__typename": "Person",
-        "filename": "sources/person/Kitsak__Maksim__pubdb.json",
-        "nameLast": "Kitsak",
-        "nameFirst": "Maksim",
-        "name": "Kitsak, Maksim",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:kotronis__vasileios": {
-        "id": "person:kotronis__vasileios",
-        "__typename": "Person",
-        "filename": "sources/person/Kotronis__Vasileios__pubdb.json",
-        "nameLast": "Kotronis",
-        "nameFirst": "Vasileios",
-        "name": "Kotronis, Vasileios",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:krioukov__dmitri": {
-        "id": "person:krioukov__dmitri",
-        "__typename": "Person",
-        "filename": "sources/person/Krioukov__Dmitri__pubdb.json",
-        "nameLast": "Krioukov",
-        "nameFirst": "Dmitri",
-        "name": "Krioukov, Dmitri",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:livadariu__ioana": {
-        "id": "person:livadariu__ioana",
-        "__typename": "Person",
-        "filename": "sources/person/Livadariu__Ioana__pubdb.json",
-        "nameLast": "Livadariu",
-        "nameFirst": "Ioana",
-        "name": "Livadariu, Ioana",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:luckie__matthew": {
-        "id": "person:luckie__matthew",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego",
-            "National Laboratory for Applied Network Research - NLANR, San Diego Supercomputer Center, University of California, San Diego",
-            "University of Waikato"
-        ],
-        "nameLast": "Luckie",
-        "nameFirst": "Matthew",
-        "name": "Luckie, Matthew",
-        "filename": "sources/person/luckie__matthew.json",
-        "__typename": "Person",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:mahadevan__priya": {
-        "id": "person:mahadevan__priya",
-        "__typename": "Person",
-        "filename": "sources/person/Mahadevan__Priya__pubdb.json",
-        "nameLast": "Mahadevan",
-        "nameFirst": "Priya",
-        "name": "Mahadevan, Priya",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:marder__alexander": {
-        "id": "person:marder__alexander",
-        "__typename": "Person",
-        "filename": "sources/person/Marder__Alexander__pubdb.json",
-        "nameLast": "Marder",
-        "nameFirst": "Alexander",
-        "name": "Marder, Alexander",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:masini__stefano": {
-        "id": "person:masini__stefano",
-        "__typename": "Person",
-        "filename": "sources/person/Masini__Stefano__pubdb.json",
-        "nameLast": "Masini",
-        "nameFirst": "Stefano",
-        "name": "Masini, Stefano",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:mathis__matt": {
-        "id": "person:mathis__matt",
-        "__typename": "Person",
-        "filename": "sources/person/Mathis__Matt__pubdb.json",
-        "nameLast": "Mathis",
-        "nameFirst": "Matt",
-        "name": "Mathis, Matt",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:mcrobb__daniel": {
-        "id": "person:mcrobb__daniel",
-        "__typename": "Person",
-        "filename": "sources/person/McRobb__Daniel__pubdb.json",
-        "nameLast": "Mcrobb",
-        "nameFirst": "Daniel",
-        "name": "Mcrobb, Daniel",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:meinrath__sascha": {
-        "id": "person:meinrath__sascha",
-        "__typename": "Person",
-        "filename": "sources/person/Meinrath__Sascha__pubdb.json",
-        "nameLast": "Meinrath",
-        "nameFirst": "Sascha",
-        "name": "Meinrath, Sascha",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:mok__ricky": {
-        "id": "person:mok__ricky",
-        "__typename": "Person",
-        "filename": "sources/person/Mok__Ricky__pubdb.json",
-        "nameLast": "Mok",
-        "nameFirst": "Ricky",
-        "name": "Mok, Ricky",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:monk__tracie": {
-        "id": "person:monk__tracie",
-        "__typename": "Person",
-        "filename": "sources/person/Monk__Tracie__pubdb.json",
-        "nameLast": "Monk",
-        "nameFirst": "Tracie",
-        "name": "Monk, Tracie",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:moore__david": {
-        "id": "person:moore__david",
-        "__typename": "Person",
-        "filename": "sources/person/Moore__David__pubdb.json",
-        "nameLast": "Moore",
-        "nameFirst": "David",
-        "name": "Moore, David",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:murray__margaret": {
-        "id": "person:murray__margaret",
-        "__typename": "Person",
-        "filename": "sources/person/Murray__Margaret__pubdb.json",
-        "nameLast": "Murray",
-        "nameFirst": "Margaret",
-        "name": "Murray, Margaret",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:m_ller__lucas": {
-        "id": "person:m_ller__lucas",
-        "__typename": "Person",
-        "filename": "sources/person/m_ller__lucas__pubdb.json",
-        "nameLast": "M\u00fcller",
-        "nameFirst": "Lucas",
-        "name": "M\u00fcller, Lucas",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:nemeth__evi": {
-        "id": "person:nemeth__evi",
-        "__typename": "Person",
-        "filename": "sources/person/Nemeth__Evi__pubdb.json",
-        "nameLast": "Nemeth",
-        "nameFirst": "Evi",
-        "name": "Nemeth, Evi",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:orsini__chiara": {
-        "id": "person:orsini__chiara",
-        "__typename": "Person",
-        "filename": "sources/person/Orsini__Chiara__pubdb.json",
-        "nameLast": "Orsini",
-        "nameFirst": "Chiara",
-        "name": "Orsini, Chiara",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:padmanabhan__ramakrishna": {
-        "id": "person:padmanabhan__ramakrishna",
-        "organization": [
-            "University of Maryland, College Park"
-        ],
-        "nameLast": "Padmanabhan",
-        "nameFirst": "Ramakrishna",
-        "name": "Padmanabhan, Ramakrishna",
-        "filename": "sources/person/padmanabhan__ramakrishna.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:papadopoulos__fragkiskos": {
-        "id": "person:papadopoulos__fragkiskos",
-        "__typename": "Person",
-        "filename": "sources/person/Papadopoulos__Fragkiskos__pubdb.json",
-        "nameLast": "Papadopoulos",
-        "nameFirst": "Fragkiskos",
-        "name": "Papadopoulos, Fragkiskos",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:periakaruppan__ram": {
-        "id": "person:periakaruppan__ram",
-        "__typename": "Person",
-        "filename": "sources/person/Periakaruppan__Ram__pubdb.json",
-        "nameLast": "Periakaruppan",
-        "nameFirst": "Ram",
-        "name": "Periakaruppan, Ram",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:polterock__joshua": {
-        "id": "person:polterock__joshua",
-        "__typename": "Person",
-        "filename": "sources/person/Polterock__Joshua__pubdb.json",
-        "nameLast": "Polterock",
-        "nameFirst": "Joshua",
-        "name": "Polterock, Joshua",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:shang__hao": {
-        "id": "person:shang__hao",
-        "__typename": "Person",
-        "filename": "sources/person/Shang__Hao__pubdb.json",
-        "nameLast": "Shang",
-        "nameFirst": "Hao",
-        "name": "Shang, Hao",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:shannon__colleen": {
-        "id": "person:shannon__colleen",
-        "__typename": "Person",
-        "filename": "sources/person/Shannon__Colleen__pubdb.json",
-        "nameLast": "Shannon",
-        "nameFirst": "Colleen",
-        "name": "Shannon, Colleen",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:shriram__alok": {
-        "id": "person:shriram__alok",
-        "__typename": "Person",
-        "filename": "sources/person/Shriram__Alok__pubdb.json",
-        "nameLast": "Shriram",
-        "nameFirst": "Alok",
-        "name": "Shriram, Alok",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:sommese__raffaele": {
-        "id": "person:sommese__raffaele",
-        "__typename": "Person",
-        "filename": "sources/person/Sommese__Raffaele__pubdb.json",
-        "nameLast": "Sommese",
-        "nameFirst": "Raffaele",
-        "name": "Sommese, Raffaele",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:squarcella__claudio": {
-        "id": "person:squarcella__claudio",
-        "__typename": "Person",
-        "filename": "sources/person/Squarcella__Claudio__pubdb.json",
-        "nameLast": "Squarcella",
-        "nameFirst": "Claudio",
-        "name": "Squarcella, Claudio",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:testart__cecilia": {
-        "id": "person:testart__cecilia",
-        "organization": [
-            "Massachusetts Institute of Technology's Computer Science & Artificial Intelligence Laboratory (MIT/CSAIL)"
-        ],
-        "nameLast": "Testart",
-        "nameFirst": "Cecilia",
-        "name": "Testart, Cecilia",
-        "filename": "sources/person/testart__cecilia.json",
-        "__typename": "Person",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:verkaik__patrick": {
-        "id": "person:verkaik__patrick",
-        "__typename": "Person",
-        "filename": "sources/person/Verkaik__Patrick__pubdb.json",
-        "nameLast": "Verkaik",
-        "nameFirst": "Patrick",
-        "name": "Verkaik, Patrick",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:vest__tom": {
-        "id": "person:vest__tom",
-        "__typename": "Person",
-        "filename": "sources/person/Vest__Tom__pubdb.json",
-        "nameLast": "Vest",
-        "nameFirst": "Tom",
-        "name": "Vest, Tom",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:wessels__duane": {
-        "id": "person:wessels__duane",
-        "__typename": "Person",
-        "filename": "sources/person/Wessels__Duane__pubdb.json",
-        "nameLast": "Wessels",
-        "nameFirst": "Duane",
-        "name": "Wessels, Duane",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:winter__philipp": {
-        "id": "person:winter__philipp",
-        "organization": [
-            "CAIDA, San Diego Supercomputer Center, University of California San Diego"
-        ],
-        "nameLast": "Winter",
-        "nameFirst": "Philipp",
-        "name": "Winter, Philipp",
-        "filename": "sources/person/winter__philipp.json",
-        "__typename": "Person",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:zhang__min": {
-        "id": "person:zhang__min",
-        "__typename": "Person",
-        "filename": "sources/person/Zhang__Min__pubdb.json",
-        "nameLast": "Zhang",
-        "nameFirst": "Min",
-        "name": "Zhang, Min",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:zhang__shiwei": {
-        "id": "person:zhang__shiwei",
-        "organization": [
-            "Peng Cheng Laboratory, P.R. China",
-            "Southern University of Science and Technology, P.R. China"
-        ],
-        "nameLast": "Zhang",
-        "nameFirst": "Shiwei",
-        "name": "Zhang, Shiwei",
-        "filename": "sources/person/zhang__shiwei.json",
-        "__typename": "Person",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "person:zseby__tanja": {
-        "id": "person:zseby__tanja",
-        "__typename": "Person",
-        "filename": "sources/person/Zseby__Tanja__pubdb.json",
-        "nameLast": "Zseby",
-        "nameFirst": "Tanja",
-        "name": "Zseby, Tanja",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49231,6 +48497,50 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:bachman__nancy": {
+        "id": "person:bachman__nancy",
+        "__typename": "Person",
+        "filename": "sources/person/bachman__nancy__pubdb.json",
+        "nameLast": "Bachman",
+        "nameFirst": "Nancy",
+        "name": "Bachman, Nancy",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:bauer__steven": {
+        "id": "person:bauer__steven",
+        "__typename": "Person",
+        "filename": "sources/person/bauer__steven__pubdb.json",
+        "nameLast": "Bauer",
+        "nameFirst": "Steven",
+        "name": "Bauer, Steven",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:benson__karyn": {
+        "id": "person:benson__karyn",
+        "__typename": "Person",
+        "filename": "sources/person/benson__karyn__pubdb.json",
+        "nameLast": "Benson",
+        "nameFirst": "Karyn",
+        "name": "Benson, Karyn",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:beverly__robert": {
+        "id": "person:beverly__robert",
+        "__typename": "Person",
+        "filename": "sources/person/beverly__robert__pubdb.json",
+        "nameLast": "Beverly",
+        "nameFirst": "Robert",
+        "name": "Beverly, Robert",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:bian__rui": {
         "id": "person:bian__rui",
         "organization": [
@@ -49241,6 +48551,50 @@
         "name": "Bian, Rui",
         "filename": "sources/person/bian__rui.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:broido__andre": {
+        "id": "person:broido__andre",
+        "__typename": "Person",
+        "filename": "sources/person/broido__andre__pubdb.json",
+        "nameLast": "Broido",
+        "nameFirst": "Andre",
+        "name": "Broido, Andre",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:brownlee__nevil": {
+        "id": "person:brownlee__nevil",
+        "__typename": "Person",
+        "filename": "sources/person/brownlee__nevil__pubdb.json",
+        "nameLast": "Brownlee",
+        "nameFirst": "Nevil",
+        "name": "Brownlee, Nevil",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:carisimo__esteban": {
+        "id": "person:carisimo__esteban",
+        "__typename": "Person",
+        "filename": "sources/person/carisimo__esteban__pubdb.json",
+        "nameLast": "Carisimo",
+        "nameFirst": "Esteban",
+        "name": "Carisimo, Esteban",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:castro__sebastian": {
+        "id": "person:castro__sebastian",
+        "__typename": "Person",
+        "filename": "sources/person/castro__sebastian__pubdb.json",
+        "nameLast": "Castro",
+        "nameFirst": "Sebastian",
+        "name": "Castro, Sebastian",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49296,6 +48650,28 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:claffy__kimberly": {
+        "id": "person:claffy__kimberly",
+        "__typename": "Person",
+        "filename": "sources/person/claffy__kimberly__pubdb.json",
+        "nameLast": "Claffy",
+        "nameFirst": "Kimberly",
+        "name": "Claffy, Kimberly",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:clark__david": {
+        "id": "person:clark__david",
+        "__typename": "Person",
+        "filename": "sources/person/clark__david__pubdb.json",
+        "nameLast": "Clark",
+        "nameFirst": "David",
+        "name": "Clark, David",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:cotton__chase": {
         "id": "person:cotton__chase",
         "organization": [
@@ -49306,6 +48682,83 @@
         "name": "Cotton, Chase",
         "filename": "sources/person/cotton__chase.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:dainotti__alberto": {
+        "id": "person:dainotti__alberto",
+        "__typename": "Person",
+        "filename": "sources/person/dainotti__alberto__pubdb.json",
+        "nameLast": "Dainotti",
+        "nameFirst": "Alberto",
+        "name": "Dainotti, Alberto",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:dhamdhere__amogh": {
+        "id": "person:dhamdhere__amogh",
+        "__typename": "Person",
+        "filename": "sources/person/dhamdhere__amogh__pubdb.json",
+        "nameLast": "Dhamdhere",
+        "nameFirst": "Amogh",
+        "name": "Dhamdhere, Amogh",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:dimitropoulos__xenofontas": {
+        "id": "person:dimitropoulos__xenofontas",
+        "__typename": "Person",
+        "filename": "sources/person/dimitropoulos__xenofontas__pubdb.json",
+        "nameLast": "Dimitropoulos",
+        "nameFirst": "Xenofontas",
+        "name": "Dimitropoulos, Xenofontas",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:dovrolis__constantine": {
+        "id": "person:dovrolis__constantine",
+        "__typename": "Person",
+        "filename": "sources/person/dovrolis__constantine__pubdb.json",
+        "nameLast": "Dovrolis",
+        "nameFirst": "Constantine",
+        "name": "Dovrolis, Constantine",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:du__ben": {
+        "id": "person:du__ben",
+        "__typename": "Person",
+        "filename": "sources/person/du__ben__pubdb.json",
+        "nameLast": "Du",
+        "nameFirst": "Ben",
+        "name": "Du, Ben",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:fanou__rod_rick": {
+        "id": "person:fanou__rod_rick",
+        "__typename": "Person",
+        "filename": "sources/person/fanou__rod_rick__pubdb.json",
+        "nameLast": "Fanou",
+        "nameFirst": "Rod\u00e9rick",
+        "name": "Fanou, Rod\u00e9rick",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:fomenkov__marina": {
+        "id": "person:fomenkov__marina",
+        "__typename": "Person",
+        "filename": "sources/person/fomenkov__marina__pubdb.json",
+        "nameLast": "Fomenkov",
+        "nameFirst": "Marina",
+        "name": "Fomenkov, Marina",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49324,6 +48777,17 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:francois__pierre": {
+        "id": "person:francois__pierre",
+        "__typename": "Person",
+        "filename": "sources/person/francois__pierre__pubdb.json",
+        "nameLast": "Francois",
+        "nameFirst": "Pierre",
+        "name": "Francois, Pierre",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:gadepally__vijay": {
         "id": "person:gadepally__vijay",
         "organization": [
@@ -49334,6 +48798,17 @@
         "name": "Gadepally, Vijay",
         "filename": "sources/person/gadepally__vijay.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:gamero_garrido__alex": {
+        "id": "person:gamero_garrido__alex",
+        "__typename": "Person",
+        "filename": "sources/person/gamero_garrido__alex__pubdb.json",
+        "nameLast": "Gamero-Garrido",
+        "nameFirst": "Alex",
+        "name": "Gamero-Garrido, Alex",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49366,6 +48841,17 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:giotsas__vasileios": {
+        "id": "person:giotsas__vasileios",
+        "__typename": "Person",
+        "filename": "sources/person/giotsas__vasileios__pubdb.json",
+        "nameLast": "Giotsas",
+        "nameFirst": "Vasileios",
+        "name": "Giotsas, Vasileios",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:guillot__andreas": {
         "id": "person:guillot__andreas",
         "organization": [
@@ -49394,6 +48880,61 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:hash__haven": {
+        "id": "person:hash__haven",
+        "__typename": "Person",
+        "filename": "sources/person/hash__haven__pubdb.json",
+        "nameLast": "Hash",
+        "nameFirst": "Haven",
+        "name": "Hash, Haven",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:holterbach__thomas": {
+        "id": "person:holterbach__thomas",
+        "__typename": "Person",
+        "filename": "sources/person/holterbach__thomas__pubdb.json",
+        "nameLast": "Holterbach",
+        "nameFirst": "Thomas",
+        "name": "Holterbach, Thomas",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:huffaker__bradley": {
+        "id": "person:huffaker__bradley",
+        "__typename": "Person",
+        "filename": "sources/person/huffaker__bradley__pubdb.json",
+        "nameLast": "Huffaker",
+        "nameFirst": "Bradley",
+        "name": "Huffaker, Bradley",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:hyun__young": {
+        "id": "person:hyun__young",
+        "__typename": "Person",
+        "filename": "sources/person/hyun__young__pubdb.json",
+        "nameLast": "Hyun",
+        "nameFirst": "Young",
+        "name": "Hyun, Young",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:jakubiec__oliver": {
+        "id": "person:jakubiec__oliver",
+        "__typename": "Person",
+        "filename": "sources/person/jakubiec__oliver__pubdb.json",
+        "nameLast": "Jakubiec",
+        "nameFirst": "Oliver",
+        "name": "Jakubiec, Oliver",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:jin__bo": {
         "id": "person:jin__bo",
         "organization": [
@@ -49406,6 +48947,50 @@
         "filename": "sources/person/jin__bo.json",
         "__typename": "Person",
         "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:jin__yuchen": {
+        "id": "person:jin__yuchen",
+        "__typename": "Person",
+        "filename": "sources/person/jin__yuchen__pubdb.json",
+        "nameLast": "Jin",
+        "nameFirst": "Yuchen",
+        "name": "Jin, Yuchen",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:john__wolfgang": {
+        "id": "person:john__wolfgang",
+        "__typename": "Person",
+        "filename": "sources/person/john__wolfgang__pubdb.json",
+        "nameLast": "John",
+        "nameFirst": "Wolfgang",
+        "name": "John, Wolfgang",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:jonker__mattijs": {
+        "id": "person:jonker__mattijs",
+        "__typename": "Person",
+        "filename": "sources/person/jonker__mattijs__pubdb.json",
+        "nameLast": "Jonker",
+        "nameFirst": "Mattijs",
+        "name": "Jonker, Mattijs",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:kenneally__erin": {
+        "id": "person:kenneally__erin",
+        "__typename": "Person",
+        "filename": "sources/person/kenneally__erin__pubdb.json",
+        "nameLast": "Kenneally",
+        "nameFirst": "Erin",
+        "name": "Kenneally, Erin",
+        "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
@@ -49423,6 +49008,50 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:keys__ken": {
+        "id": "person:keys__ken",
+        "__typename": "Person",
+        "filename": "sources/person/keys__ken__pubdb.json",
+        "nameLast": "Keys",
+        "nameFirst": "Ken",
+        "name": "Keys, Ken",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:kim__hyun_chul": {
+        "id": "person:kim__hyun_chul",
+        "__typename": "Person",
+        "filename": "sources/person/kim__hyun_chul__pubdb.json",
+        "nameLast": "Kim",
+        "nameFirst": "Hyun-Chul",
+        "name": "Kim, Hyun-Chul",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:king__alistair": {
+        "id": "person:king__alistair",
+        "__typename": "Person",
+        "filename": "sources/person/king__alistair__pubdb.json",
+        "nameLast": "King",
+        "nameFirst": "Alistair",
+        "name": "King, Alistair",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:kitsak__maksim": {
+        "id": "person:kitsak__maksim",
+        "__typename": "Person",
+        "filename": "sources/person/kitsak__maksim__pubdb.json",
+        "nameLast": "Kitsak",
+        "nameFirst": "Maksim",
+        "name": "Kitsak, Maksim",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:koga__ryan": {
         "id": "person:koga__ryan",
         "organization": [
@@ -49433,6 +49062,28 @@
         "name": "Koga, Ryan",
         "filename": "sources/person/koga__ryan.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:kotronis__vasileios": {
+        "id": "person:kotronis__vasileios",
+        "__typename": "Person",
+        "filename": "sources/person/kotronis__vasileios__pubdb.json",
+        "nameLast": "Kotronis",
+        "nameFirst": "Vasileios",
+        "name": "Kotronis, Vasileios",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:krioukov__dmitri": {
+        "id": "person:krioukov__dmitri",
+        "__typename": "Person",
+        "filename": "sources/person/krioukov__dmitri__pubdb.json",
+        "nameLast": "Krioukov",
+        "nameFirst": "Dmitri",
+        "name": "Krioukov, Dmitri",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49491,6 +49142,28 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:livadariu__ioana": {
+        "id": "person:livadariu__ioana",
+        "__typename": "Person",
+        "filename": "sources/person/livadariu__ioana__pubdb.json",
+        "nameLast": "Livadariu",
+        "nameFirst": "Ioana",
+        "name": "Livadariu, Ioana",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:luckie__matthew": {
+        "id": "person:luckie__matthew",
+        "__typename": "Person",
+        "filename": "sources/person/luckie__matthew__pubdb.json",
+        "nameLast": "Luckie",
+        "nameFirst": "Matthew",
+        "name": "Luckie, Matthew",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:lutscher__philipp_m": {
         "id": "person:lutscher__philipp_m",
         "filename": "sources/paper/2019_at_home_and_abroad_the_use_of_denial_of_service_attacks_during_elections_in_nondemocratic_regimes.json",
@@ -49510,6 +49183,83 @@
         "__typename": "Person",
         "name": "M&eacute;rindol, Pascal",
         "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:m_ller__lucas": {
+        "id": "person:m_ller__lucas",
+        "__typename": "Person",
+        "filename": "sources/person/m_ller__lucas__pubdb.json",
+        "nameLast": "M\u00fcller",
+        "nameFirst": "Lucas",
+        "name": "M\u00fcller, Lucas",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:mahadevan__priya": {
+        "id": "person:mahadevan__priya",
+        "__typename": "Person",
+        "filename": "sources/person/mahadevan__priya__pubdb.json",
+        "nameLast": "Mahadevan",
+        "nameFirst": "Priya",
+        "name": "Mahadevan, Priya",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:marder__alexander": {
+        "id": "person:marder__alexander",
+        "__typename": "Person",
+        "filename": "sources/person/marder__alexander__pubdb.json",
+        "nameLast": "Marder",
+        "nameFirst": "Alexander",
+        "name": "Marder, Alexander",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:masini__stefano": {
+        "id": "person:masini__stefano",
+        "__typename": "Person",
+        "filename": "sources/person/masini__stefano__pubdb.json",
+        "nameLast": "Masini",
+        "nameFirst": "Stefano",
+        "name": "Masini, Stefano",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:mathis__matt": {
+        "id": "person:mathis__matt",
+        "__typename": "Person",
+        "filename": "sources/person/mathis__matt__pubdb.json",
+        "nameLast": "Mathis",
+        "nameFirst": "Matt",
+        "name": "Mathis, Matt",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:mcrobb__daniel": {
+        "id": "person:mcrobb__daniel",
+        "__typename": "Person",
+        "filename": "sources/person/mcrobb__daniel__pubdb.json",
+        "nameLast": "Mcrobb",
+        "nameFirst": "Daniel",
+        "name": "Mcrobb, Daniel",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:meinrath__sascha": {
+        "id": "person:meinrath__sascha",
+        "__typename": "Person",
+        "filename": "sources/person/meinrath__sascha__pubdb.json",
+        "nameLast": "Meinrath",
+        "nameFirst": "Sascha",
+        "name": "Meinrath, Sascha",
+        "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
@@ -49541,6 +49291,17 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:mok__ricky": {
+        "id": "person:mok__ricky",
+        "__typename": "Person",
+        "filename": "sources/person/mok__ricky__pubdb.json",
+        "nameLast": "Mok",
+        "nameFirst": "Ricky",
+        "name": "Mok, Ricky",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:mok__ricky_k_p": {
         "id": "person:mok__ricky_k_p",
         "nameFirst": "Ricky K. P.",
@@ -49563,6 +49324,83 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:monk__tracie": {
+        "id": "person:monk__tracie",
+        "__typename": "Person",
+        "filename": "sources/person/monk__tracie__pubdb.json",
+        "nameLast": "Monk",
+        "nameFirst": "Tracie",
+        "name": "Monk, Tracie",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:moore__david": {
+        "id": "person:moore__david",
+        "__typename": "Person",
+        "filename": "sources/person/moore__david__pubdb.json",
+        "nameLast": "Moore",
+        "nameFirst": "David",
+        "name": "Moore, David",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:murray__margaret": {
+        "id": "person:murray__margaret",
+        "__typename": "Person",
+        "filename": "sources/person/murray__margaret__pubdb.json",
+        "nameLast": "Murray",
+        "nameFirst": "Margaret",
+        "name": "Murray, Margaret",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:nemeth__evi": {
+        "id": "person:nemeth__evi",
+        "__typename": "Person",
+        "filename": "sources/person/nemeth__evi__pubdb.json",
+        "nameLast": "Nemeth",
+        "nameFirst": "Evi",
+        "name": "Nemeth, Evi",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:orsini__chiara": {
+        "id": "person:orsini__chiara",
+        "__typename": "Person",
+        "filename": "sources/person/orsini__chiara__pubdb.json",
+        "nameLast": "Orsini",
+        "nameFirst": "Chiara",
+        "name": "Orsini, Chiara",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:padmanabhan__ramakrishna": {
+        "id": "person:padmanabhan__ramakrishna",
+        "__typename": "Person",
+        "filename": "sources/person/padmanabhan__ramakrishna__pubdb.json",
+        "nameLast": "Padmanabhan",
+        "nameFirst": "Ramakrishna",
+        "name": "Padmanabhan, Ramakrishna",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:papadopoulos__fragkiskos": {
+        "id": "person:papadopoulos__fragkiskos",
+        "__typename": "Person",
+        "filename": "sources/person/papadopoulos__fragkiskos__pubdb.json",
+        "nameLast": "Papadopoulos",
+        "nameFirst": "Fragkiskos",
+        "name": "Papadopoulos, Fragkiskos",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:pelsser__cristel": {
         "id": "person:pelsser__cristel",
         "organization": [
@@ -49573,6 +49411,28 @@
         "name": "Pelsser, Cristel",
         "filename": "sources/person/pelsser__cristel.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:periakaruppan__ram": {
+        "id": "person:periakaruppan__ram",
+        "__typename": "Person",
+        "filename": "sources/person/periakaruppan__ram__pubdb.json",
+        "nameLast": "Periakaruppan",
+        "nameFirst": "Ram",
+        "name": "Periakaruppan, Ram",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:polterock__joshua": {
+        "id": "person:polterock__joshua",
+        "__typename": "Person",
+        "filename": "sources/person/polterock__joshua__pubdb.json",
+        "nameLast": "Polterock",
+        "nameFirst": "Joshua",
+        "name": "Polterock, Joshua",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49645,6 +49505,28 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:shang__hao": {
+        "id": "person:shang__hao",
+        "__typename": "Person",
+        "filename": "sources/person/shang__hao__pubdb.json",
+        "nameLast": "Shang",
+        "nameFirst": "Hao",
+        "name": "Shang, Hao",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:shannon__colleen": {
+        "id": "person:shannon__colleen",
+        "__typename": "Person",
+        "filename": "sources/person/shannon__colleen__pubdb.json",
+        "nameLast": "Shannon",
+        "nameFirst": "Colleen",
+        "name": "Shannon, Colleen",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:shenker__scott": {
         "id": "person:shenker__scott",
         "organization": [
@@ -49660,6 +49542,28 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:shriram__alok": {
+        "id": "person:shriram__alok",
+        "__typename": "Person",
+        "filename": "sources/person/shriram__alok__pubdb.json",
+        "nameLast": "Shriram",
+        "nameFirst": "Alok",
+        "name": "Shriram, Alok",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:sommese__raffaele": {
+        "id": "person:sommese__raffaele",
+        "__typename": "Person",
+        "filename": "sources/person/sommese__raffaele__pubdb.json",
+        "nameLast": "Sommese",
+        "nameFirst": "Raffaele",
+        "name": "Sommese, Raffaele",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:spring__neil": {
         "id": "person:spring__neil",
         "organization": [],
@@ -49669,6 +49573,28 @@
         "filename": "sources/person/spring__neil.json",
         "__typename": "Person",
         "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:squarcella__claudio": {
+        "id": "person:squarcella__claudio",
+        "__typename": "Person",
+        "filename": "sources/person/squarcella__claudio__pubdb.json",
+        "nameLast": "Squarcella",
+        "nameFirst": "Claudio",
+        "name": "Squarcella, Claudio",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:testart__cecilia": {
+        "id": "person:testart__cecilia",
+        "__typename": "Person",
+        "filename": "sources/person/testart__cecilia__pubdb.json",
+        "nameLast": "Testart",
+        "nameFirst": "Cecilia",
+        "name": "Testart, Cecilia",
+        "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
@@ -49682,6 +49608,28 @@
         "name": "Vanbever, Laurent",
         "filename": "sources/person/vanbever__laurent.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:verkaik__patrick": {
+        "id": "person:verkaik__patrick",
+        "__typename": "Person",
+        "filename": "sources/person/verkaik__patrick__pubdb.json",
+        "nameLast": "Verkaik",
+        "nameFirst": "Patrick",
+        "name": "Verkaik, Patrick",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:vest__tom": {
+        "id": "person:vest__tom",
+        "__typename": "Person",
+        "filename": "sources/person/vest__tom__pubdb.json",
+        "nameLast": "Vest",
+        "nameFirst": "Tom",
+        "name": "Vest, Tom",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -49740,6 +49688,28 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:wessels__duane": {
+        "id": "person:wessels__duane",
+        "__typename": "Person",
+        "filename": "sources/person/wessels__duane__pubdb.json",
+        "nameLast": "Wessels",
+        "nameFirst": "Duane",
+        "name": "Wessels, Duane",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:winter__philipp": {
+        "id": "person:winter__philipp",
+        "__typename": "Person",
+        "filename": "sources/person/winter__philipp__pubdb.json",
+        "nameLast": "Winter",
+        "nameFirst": "Philipp",
+        "name": "Winter, Philipp",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "person:wu__daoyuan": {
         "id": "person:wu__daoyuan",
         "organization": [
@@ -49750,6 +49720,39 @@
         "name": "Wu, Daoyuan",
         "filename": "sources/person/wu__daoyuan.json",
         "__typename": "Person",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:zhang__min": {
+        "id": "person:zhang__min",
+        "__typename": "Person",
+        "filename": "sources/person/zhang__min__pubdb.json",
+        "nameLast": "Zhang",
+        "nameFirst": "Min",
+        "name": "Zhang, Min",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:zhang__shiwei": {
+        "id": "person:zhang__shiwei",
+        "__typename": "Person",
+        "filename": "sources/person/zhang__shiwei__pubdb.json",
+        "nameLast": "Zhang",
+        "nameFirst": "Shiwei",
+        "name": "Zhang, Shiwei",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "person:zseby__tanja": {
+        "id": "person:zseby__tanja",
+        "__typename": "Person",
+        "filename": "sources/person/zseby__tanja__pubdb.json",
+        "nameLast": "Zseby",
+        "nameFirst": "Tanja",
+        "name": "Zseby, Tanja",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -50818,6 +50821,15 @@
         "__typename": "Tag",
         "name": "geographic",
         "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:passive": {
+        "id": "tag:passive",
+        "filename": "sources/dataset/passive_equinix_nyc.json",
+        "__typename": "Tag",
+        "name": "passive",
+        "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
