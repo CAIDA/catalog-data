@@ -19,25 +19,24 @@
     ],
     "links": [
         {
-            "to": "dataset:internet_topology_data_kit",
+            "to": "dataset:itdk",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ip_alias_resolution_techniques",
+            "to": "paper:2010_alias_resolution",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar",
+            "to": "paper:2013_alias_resolution_midar",
             "label": "used by"
         },
         {
-            "to": "paper:internet-scale_ipv4_alias_resolution_with_midar_system_architecture",
+            "to": "paper:2011_midar-tr",
             "label": "used by"
         },
         {
-            "to": "paper:ip_alias_resolution_techniques",
+            "to": "paper:2008_alias_resolution_techreport",
             "label": "used by"
-
-        }    
+        }
     ]
 }

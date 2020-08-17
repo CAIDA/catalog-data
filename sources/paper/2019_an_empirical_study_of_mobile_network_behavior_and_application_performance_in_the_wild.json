@@ -1,0 +1,96 @@
+{
+    "id": "2019_empirical_study_mobile_network_behavior",
+    "name": "An Empirical Study of Mobile Network Behavior and Application Performance in the Wild",
+    "datePublished": "2019.6",
+    "description": "Monitoring mobile network performance is critical for optimizing the QoE of mobile apps. Until now, few studies have considered the actual network performance that mobile apps experience in a per-app or per-server granularity. In this paper, we analyze a two-year-long dataset collected by a crowdsourcing per-app measurement tool to gain new insights into mobile network behavior and application performance. We observe that only a small portion of WiFi networks can work in high-speed mode, and more than one-third of the observed ISPs still have not deployed 4G networks. For cellular networks, the DNS settings on smartphones can have a significant impact on mobile app network performance. Moreover, we notice that instant messaging (IM) and voice over IP (VoIP) services nowadays are not as performant as Web services, because the traffic using XMPP experiences longer latencies than HTTPS. We propose an automatic performance degradation detection and localization method for finding possible network problems in our huge, imbalanced and sparse dataset. Our evaluation and case studies show that our method is effective and the running time is acceptable.",
+    "tags": [
+        "data",
+        "passive data analysis",
+        "mobile",
+        "QoE"
+    ],
+    "pubdb_id": "paper673",
+    "venue": "ieeeacm_international_symposium_on_quality_of_service_iwqos",
+    "authors": [
+        {
+            "person": "person:zhang_shiwei",
+            "organization": [
+                "Peng Cheng Laboratory, P.R. China",
+                "Southern University of Science and Technology, P.R. China"
+            ]
+        },
+        {
+            "person": "person:li_weichao",
+            "organization": [
+                "Peng Cheng Laboratory, P.R. China",
+                "Southern University of Science and Technology, P.R. China"
+            ]
+        },
+        {
+            "person": "person:wu_daoyuan",
+            "organization": [
+                "Singapore Management University"
+            ]
+        },
+        {
+            "person": "person:jin_bo",
+            "organization": [
+                "Peng Cheng Laboratory, P.R. China",
+                "Southern University of Science and Technology, P.R. China"
+            ]
+        },
+        {
+            "person": "person:chang_rocky k. c.",
+            "organization": [
+                "Hong Kong Polytechnic University"
+            ]
+        },
+        {
+            "person": "person:gao_debin",
+            "organization": [
+                "Singapore Management University"
+            ]
+        },
+        {
+            "person": "person:wang_yi",
+            "organization": [
+                "Peng Cheng Laboratory, P.R. China",
+                "Southern University of Science and Technology, P.R. China"
+            ]
+        },
+        {
+            "person": "person:mok_ricky k. p.",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2120",
+            "label": "DOI",
+            "to": "https://doi.org/10.1145/3326285.3329039"
+        },
+        {
+            "from": "PubDBlinkId:2117",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/empirical_study_mobile_network_behavior/empirical_study_mobile_network_behavior.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2154",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/empirical_study_mobile_network_behavior_iwqos"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "IEEE/ACM International Symposium on Quality of Service (IWQoS)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": ""
+    }
+}

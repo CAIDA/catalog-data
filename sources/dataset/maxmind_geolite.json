@@ -5,7 +5,7 @@
     "status": "ongoing",
     "links": [
         {
-            "to": "Paper:Geo-Locating_BGP_prefixes",
+            "to": "paper:2019_geo_locating_bgp_prefixes",
             "label": "used by"
         }
     ]

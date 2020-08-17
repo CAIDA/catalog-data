@@ -6,7 +6,7 @@
     "tags": [
         "traffic"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://github.com/CAIDA/corsaro3/",
@@ -22,83 +22,47 @@
             "label": "used by"
         },
         {
-            "to": "paper:analysis_of_unidirectional_ip_traffic_to_darkspace_with_an_educational_data_kit",
+            "to": "paper:2014_analysis_unidirectional_ip_traffic",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_educational_dataset_analysis_of_unidirectional_ip_traffic_to_darkspace",
+            "to": "dataset:ucsd_network_telescope",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_dataset_patch_tuesday",
+            "to": "paper:2017_millions_targets_under_attack",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_aggregated_flow_dataset",
+            "to": "paper:2013_day_after_patch_tuesday",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_three_days_of_conficker_dataset",
+            "to": "paper:2016_teaching_network_security",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_darknet_scanners_dataset",
+            "to": "paper:2012_dust_report",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_daily_randomly_and_uniformly_spoofed_denial-of-service_rsdos_attack_metadata",
+            "to": "paper:2014_nightlights_entropy",
             "label": "used by"
         },
         {
-            "to": "dataset:the_caida_industry_evaluation_near-real-time_network_telescope_dataset",
+            "to": "paper:2012_analysis_internetwide_probing_darknets",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_two_days_in_november_2008_dataset",
+            "to": "paper:2013_aims5_report",
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope_aggregrated_ddos_metadata",
+            "to": "media:2012_corsaro_widecasfi",
             "label": "used by"
         },
         {
-            "to": "dataset:caida_ucsd_network_telescope_traffic_samples_(formerly_the_backscatter_dataset)",
-            "label": "used by"
-        },
-        {
-            "to": "paper:millions_of_targets_under_attack_a_macroscopic_characterization_of_the_dos_ecosystem",
-            "label": "used by"
-        },
-        {
-            "to": "paper:the_day_after_patch_tuesday_effects_observable_in_ip_darkspace_traffic",
-            "label": "used by"
-        },
-        {
-            "to": "paper:teaching_network_security_with_ip_darkspace_data",
-            "label": "used by"
-        },
-        {
-            "to": "paper:dust_2012_workshop_report",
-            "label": "used by"
-        },
-        {
-            "to": "paper:nightlights_entropy-based_metrics_for_classifying_darkspace_traffic_patterns",
-            "label": "used by"
-        },
-        {
-            "to": "paper:analysis_of_internet-wide_probing_using_darknets",
-            "label": "used by"
-        },
-        {
-            "to": "paper:the_5th_workshop_on_active_internet_measurements_aims-5_report",
-            "label": "used by"
-        },
-        {
-            "to": "presentation:2012_08_corsaro",
-            "label": "used by"
-        },
-        {
-            "to": "presentation:2012_05_corsaro",
+            "to": "media:2012_dust_corsaro",
             "label": "used by"
         }
     ]

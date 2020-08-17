@@ -5,9 +5,9 @@
     "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
     "tags": [
         "ip address",
-         "alias resolution"
+        "alias resolution"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/iffinder/",
@@ -19,15 +19,15 @@
     ],
     "links": [
         {
-            "to": "dataset:internet_topology_data_kit",
+            "to": "dataset:itdk",
             "label": "used by"
         },
         {
-            "to": "paper:toward_topology_dualism:_improving_the_accuracy_of_as_annotations_for_routers",
+            "to": "paper:2010_as_assignment",
             "label": "used by"
         },
         {
-            "to": "paper:traceroute_and_bgp_as_path_incongruities",
+            "to": "paper:2003_asp",
             "label": "used by"
         }
     ]
