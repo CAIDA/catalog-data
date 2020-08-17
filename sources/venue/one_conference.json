@@ -1,0 +1,10 @@
+{
+    "id": "one_conference",
+    "name": "One Conference",
+    "description": "",
+    "dates": {
+        "date": "2017.5",
+        "url": "https://www.dhpa.nl/agenda/ncsc-one-conference-2017/"
+    },
+    "tags": []
+}

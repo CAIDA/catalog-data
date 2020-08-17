@@ -6,7 +6,7 @@
     "tags": [
         "security"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "restricted",
             "url": "https://hicube.caida.org",

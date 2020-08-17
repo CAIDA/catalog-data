@@ -7,10 +7,10 @@
         "topology",
         "geolocation"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
-            "url": "asrank.caida.org/api",
+            "url": "https://api.asrank.caida.org/v2/docs",
             "tags": [
                 "API"
             ]
@@ -21,10 +21,13 @@
     ],
     "links": [
         {
-            "to": "software:asrank"
+            "to": "software:asrank_ui"
         },
         {
-            "to": "Dataset:asrank"
+            "to": "dataset:asrank"
+        },
+        {
+            "to": "paper:2013_asrank"
         }
     ]
 }

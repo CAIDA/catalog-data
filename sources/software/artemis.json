@@ -3,41 +3,48 @@
     "name": "ARTEMIS",
     "organization": "CAIDA",
     "description": "Measures and analyzes passive Internet traffic monitor data.",
-    "tags": [],
-    "availability": [
+    "tags": [
+        "security",
+        "hijack detection"
+    ],
+    "resources": [
         {
             "name": "public",
-            "url": "",
+            "url": "https://www.bgpartemis.org/index.html",
             "tags": []
         }
     ],
     "licenses": [
-        "license:bsd_4_clause_uc"
+        "license:bsd_3_clause"
     ],
     "links": [
         {
-            "to": "paper:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "paper:2018_artemis",
             "label": "used by"
         },
         {
-            "to": "paper:a_survey_among_network_operators_on_bgp_prefix_hijacking",
+            "to": "paper:2018_survey_among_network_operators",
             "label": "used by"
         },
         {
-            "to": "presentation:artemis_real-time_detection_and_automatic_mitigation_for_bgp_prefix_hijacking",
+            "to": "media:2019_neutralizing_bgp_hijacking_aims",
             "label": "used by"
         },
         {
-            "to": "presentation:artemis_an_open-source_tool_for_detecting_bgp_prefix_hijacking_in_real_time",
+            "to": "media:2019_neutralizing_bgp_hijacking_quilt",
             "label": "used by"
         },
         {
-            "to" :"presentation:auto-configuring_bgp_monitoring_and_hijack_detection_tools_in_real_time",
+            "to": "media:2018_artemis_anrw",
             "label": "used by"
         },
         {
-            "to": "presentation:artemis_neutralizing_bgp_hijacking_within_a_minute",
+            "to": "media:2018_artemis_aims",
             "label": "used by"
         },
+        {
+            "to": "media:2018_artemis_ripe",
+            "label": "used by"
+        }
     ]
 }
