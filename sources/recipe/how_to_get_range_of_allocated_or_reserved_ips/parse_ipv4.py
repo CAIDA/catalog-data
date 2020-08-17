@@ -3,6 +3,9 @@ import sys
 import more_itertools as mit
 
 def parse_ip_assignees(csv_path):
+    """
+    Parses the IP address csv to ranges in which designations occupy. Takes in a path to the csv file and outputs a dictionary.
+    """
     ip = pd.read_csv(csv_path).reset_index()
     ip["Designation"] = ip["Designation"].apply(lambda x: x.lower().replace("administered by", "").strip())
 
@@ -15,6 +18,9 @@ def parse_ip_assignees(csv_path):
     return ip
 
 def parse_ip_compressed(csv_path):
+    """
+    Parses the IP address csv to ranges IP addresses are either reserved, allocated, or legacy. Takes in a path to the csv file and outputs a dictionary.
+    """
     ip = pd.read_csv(csv_path).reset_index()
     ip["Status [1]"] == ip["Status [1]"].apply(lambda x: x.lower())
 
