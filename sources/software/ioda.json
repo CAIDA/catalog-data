@@ -8,7 +8,7 @@
         "darknet",
         "outages"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://ioda.caida.org/ioda/api",
@@ -22,120 +22,201 @@
     ],
     "links": [
         {
-            "to": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "to": "media:2019_ioda-np_paridine_final",
             "label": "used by"
         },
         {
-            "to": "presentation:ioda-np_detecting_outages_affecting_the_internet’s_edge",
+            "to": "media:2019_ioda-np_aims",
             "label": "used by"
         },
         {
-            "to": "presentation:ioda-np_internet_outage_detection_and_analysis",
+            "to": "media:2019_ioda-np_dhsst",
             "label": "used by"
         },
         {
-            "to": "presentation:how_to_find_correlated_internet_failures",
+            "to": "media:2019_how_find_correlated_internet_pam",
             "label": "used by"
         },
         {
-            "to": "presentation:who_shuts_down_the_internet_and_why",
+            "to": "media:2018_who_shuts_down_internet_imaps",
             "label": "used by"
         },
         {
-            "to": "presentation:ioda-np_multi-source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+            "to": "media:2018_ioda-np_paridine",
             "label": "used by"
         },
         {
-            "to": "presentation:science_of_internet_security:_technology_and_experimental_research",
+            "to": "media:2018/sister_pi_apr",
             "label": "used by"
         },
         {
-            "to": "presentation:mapping_our_way_to_a_more_secure_internet",
+            "to": "media:2017_mapping_our_way_dhsrd",
             "label": "used by"
         },
         {
-            "to": "presentation:internet_outages_detection_&_analysis",
+            "to": "media:2017_mapping_our_way_iij",
             "label": "used by"
         },
         {
-            "to": "presentation:bgpstream",
+            "to": "media:2017/ioda_cns",
             "label": "used by"
         },
         {
-            "to": "presentation:bgpstream_2016",
+            "to": "media:2017_ioda_aims",
             "label": "used by"
         },
         {
-            "to": "presentation:leveraging_internet_background_radiation_for_opportunistic_network_analysis",
+            "to": "media:2017_ioda_sdsc",
             "label": "used by"
         },
         {
-            "to": "presentation:bgpstream_a_framework_for_historical_analysis_and_real-time_monitoring_of_bgp_data",
+            "to": "media:2016_bgpstream_imc",
             "label": "used by"
         },
         {
-            "to": "presentation:measuring_and_monitoring_bgp",
+            "to": "media:2016_bgpstream_2016_romatre",
             "label": "used by"
         },
         {
-            "to": "presentation:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+            "to": "media:2016_leveraging_internet_background_radiation_kbenson",
             "label": "used by"
         },
         {
-            "to": "presentation:bgpstream-an_open_source_framework_for_live/historical_bgp_data_analysis",
+            "to": "media:2016_bgpstream_framework_historical_nanog",
             "label": "used by"
         },
         {
-            "to": "presentation:ioda-nternet_outages:_detection_&_analysis",
+            "to": "media:2015_leveraging_internet_background_imc",
             "label": "used by"
         },
         {
-            "to": "presentation:bgpstream",
+            "to": "media:2015_bgpstream_mplane",
             "label": "used by"
         },
         {
-            "to": "presentation:ioda-internet_outages:_detection_&_analysis",
+            "to": "media:2015_measuring_monitoring_bgp_ietf",
             "label": "used by"
         },
         {
-            "to": "presentation:measuring_and_characterizing_ipv6_router_availability",
+            "to": "media:2015_lost_in_space_raim",
             "label": "used by"
         },
         {
-            "to": "presentation:monitoring_large-scale_internet_outages",
+            "to": "media:2015_bgpstream_ripe",
             "label": "used by"
         },
         {
-            "to": "presentation:caida_research_overview",
+            "to": "media:2015_bgp_stream_imc",
             "label": "used by"
         },
         {
-            "to": "presentation:gaining_insight_into_as-level_outages_through_analysis_of_internet_background_radiation",
+            "to": "media:2015_measuring_characterizing_ipv6_router_pam",
             "label": "used by"
         },
         {
-            "to": "presentation:lessons_learned_by_measuring_the_internet_during/after_the_sandy_storm",
+            "to": "media:2015_ioda_fcc",
             "label": "used by"
         },
         {
-            "to": "presentation:toward_realtime_visualization_of_garbage",
+            "to": "media:2015_bgpstream_aims",
             "label": "used by"
         },
         {
-            "to": "presentation:a_coordinated_view_of_large-scale_internet_events",
+            "to": "media:2013_monitoring_largescale_internet_outages_fcc",
             "label": "used by"
         },
         {
-            "to": "presentation:analysis_of_internet-wide_probing_using_darknets",
+            "to": "media:2013_gaining_insight_outages_tma",
             "label": "used by"
         },
         {
-            "to": "presentation:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+            "to": "media:2013_lessons_learned_measuring_sandy_fcc",
             "label": "used by"
         },
         {
-            "to": "presentation:analysis_of_country-wide_internet_outages_caused_by_censorship",
+            "to": "media:2013_realtime_visualization_garbage",
             "label": "used by"
         },
+        {
+            "to": "media:2013_caida_research_overview",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_coordinated_view_wiv",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_analysis_darknets_badgers",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_internet_outages",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_extract_benefit_from_harm_sigcomm_2012",
+            "label": "used by"
+        },
+        {
+            "to": "media:2011_analysis_internet_outages_censorship",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_blink",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_how_find_correlated_internet",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_swift",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_bgpstream",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_lost_in_space",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_leveraging_internet_background_radiation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_outages_censorship",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_uncovering_network_tarpits_degreaser",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_coordinated_view_internet_events",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_passive_ip_space_usage_estimation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2013_gaining_insight_outages",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2012_extracting_benefit_from_harm",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2011_outages_censorship",
+            "label": "used by"
+        }
+
     ]
 }

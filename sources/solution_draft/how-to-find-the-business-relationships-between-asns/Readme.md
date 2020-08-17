@@ -61,7 +61,7 @@ def parse_as_rel_line(curr_line):
         pair_2_rel[key] = relationship
 ~~~
 
-This helper method is offered to show how to easily access a relationship in pair_2_rel. This method also show how to format two given asns to match the key format of pair_2_rel. The commented out return line could be helpful for testign, and to see how the given asns were formatted if their key exists.
+This helper method is offered to show how to easily access a relationship in pair_2_rel. This method also show how to format two given asns to match the key format of pair_2_rel. The commented out return line could be helpful for testing, and to see how the given asns were formatted if their key exists.
 
 ~~~Python
 # Helper function to format two given asns into a key for as_pair_2_rel. 
@@ -89,7 +89,7 @@ def get_relationship(asn0, asn1):
 ### What is an AS Relationship
 
 - An AS Relationship is the determined routing policy between two ASes.
-- The three most commo types of AS Relationships are:
+- The three most common types of AS Relationships are:
   - customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),
   - peer-to-peer (p2p),
   - sibling-to-sibling (s2s)

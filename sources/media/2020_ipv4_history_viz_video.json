@@ -1,0 +1,16 @@
+{
+    "id": "ipv4_history_viz_video",
+    "type":"VIDEO",
+    "date":"2020.09",
+    "name": "IPv4 History Visualization Video",
+    "description": "An animated video detailing the history of IPv4, using a Sankey diagram to visualize the flow of IPv4 address allocations since inception in 1977, through various address management organizations and policies.",
+    "tags":["ipv4", "sankey", "video"],
+    "links":[
+        {"to":"media:ipv4_history_viz_interactive"}
+    ],
+    "authors":[
+        "person:lee_nicole",
+        "person:huffaker_bradley",
+        "person:claffy_kc"
+    ]
+}
