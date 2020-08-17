@@ -1,0 +1,21 @@
+{
+    "id": "pyipmeta",
+    "name": "pyipmeta",
+    "organization": "CAIDA",
+    "description": "PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.",
+    "tags": [
+        "asn",
+        "python",
+        "geolocation"
+    ],
+    "resources": [
+        {
+            "name": "getrepo",
+            "url": "https://github.com/CAIDA/pyipmeta",
+            "tags": ["github"]
+        }
+    ],
+    "licenses": [
+        "license:bsd_3_clause"
+    ]
+}

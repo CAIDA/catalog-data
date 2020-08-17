@@ -1,0 +1,24 @@
+{
+    "id": "2010_scamper",
+    "name": "Scamper: a scalable and extensible packet prober for active measurement of the internet",
+    "datePublished": "2010.01",
+    "description": "Large scale active measurement of the Internet requires appropriate software support. The better tools that we have for executing consistent and systematic measurements, the more confidence we can have in the results. This paper presents scamper, a powerful open-source packet-prober for active measurement of the Internet designed to stand alone from coordination mechanisms. We built scamper and populated it with specific measurement techniques, making design decisions aimed at allowing Internet researchers to focus on scientific experiments rather than building accurate instrumentation.",
+    "tags": [
+        "measurement methodology",
+        "topology"
+    ],
+    "authors": [
+        {
+            "person": "person:Luckie_Matthew",
+            "organizations": [
+                "University of Waikato"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.caida.org/tools/measurement/scamper/scamper.pdf"
+        }
+    ]
+}

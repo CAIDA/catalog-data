@@ -1,0 +1,20 @@
+{
+    "id": "passive_equinix_nyc",
+    "name": "Passive Monitor: equinix-nyc",
+    "organization": "CAIDA",
+    "description": "The equinix-nyc Internet data collection monitor is located at an Equinix datacenter in New York, New York.",
+    "tags": [
+        "passive"
+    ],
+    "dateStart": "2008.02",
+    "status": "complete",
+    "resources": [
+        {
+            "name": "restricted",
+            "url": "https://www.caida.org/data/monitors/passive-equinix-nyc.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

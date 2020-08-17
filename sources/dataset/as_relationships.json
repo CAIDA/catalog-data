@@ -7,7 +7,7 @@
         "topology"
     ],
     "dateStart": "2013.02",
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/data/as-relationships/",
@@ -21,7 +21,7 @@
     ],
     "links": [
         {
-            "to": "Paper:Studying_the_evolution_of_content_providers_in_IPv4_and_IPv6_internet_cores",
+            "to": "paper:2019_studying_evolution_content_providers",
             "label": "used by"
         }
     ]
