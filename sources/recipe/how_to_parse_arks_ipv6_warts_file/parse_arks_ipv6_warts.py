@@ -106,30 +106,25 @@ def create_asn_db():
 
     # Create the dat_file to write parsed data from the prefix_2_as6_file.
     with open(dat_file, "w") as out_file:
-
-        # Open prefix_2_as6_file as an encoded .gz file.
+        lines = []
+            # Open prefix_2_as6_file as an encoded .gz file.
         if re.search(r".gz$", prefix_2_as6_file, re.IGNORECASE):
             with gzip.open(prefix_2_as6_file, "rb") as in_file:
-            # Iterate over lines in in_file and write/format them to out_file
-                curr_line = in_file.readline()
-                while curr_line:
-                    curr_line = curr_line.decode()
-                    parsed_line = create_asn_db_body(curr_line)
-                    # Only write to out_file if parsed_line was necessary data.
-                    if parsed_line is not None:
-                        out_file.write(parsed_line)
-                    curr_line = in_file.readline()
-
-        # Else open prefix2as6 file as unzipped .prefix2as6 file 
+            # Iterate over lines in in_file and append each decoded line
+                for line in in_file:
+                    lines.append(line.decode())
         else:
+            # Else open prefix2as6 file as unzipped .prefix2as6 file
             with open(prefix_2_as6_file, 'r') as in_file:
-                curr_line = in_file.readline()
-                while curr_line:
-                    parsed_line = create_asn_db_body(curr_line)
-                    # Only write to out_file if parsed_line was necessary data.
-                    if parsed_line is not None:
-                        out_file.write(parsed_line)
-                    curr_line = in_file.readline()
+                # Iterate over lines in in_file and append line
+                for line in in_file:
+                    lines.append(line)
+        
+        for line in lines:
+            parsed_line = create_asn_db_body(line)
+            # Only write to out_file if parsed_line was necessary data.
+            if parsed_line is not None:
+                out_file.write(parsed_line)
 
     # Create the asn_db with the dat_file that was just created.
     try:
@@ -153,6 +148,6 @@ def create_asns():
         except ValueError:
             print("No corresponding asn for ", ip)
         asns.append(asn)
-    # print(asns)
+    print(asns)
 
 main()
