@@ -1,8 +1,8 @@
 ~~~json
 {
     "name": "Parse CAIDA's ITDK for a router's IPs, ASN, neighbors, and geographic location.",
-    "description":"Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
-    "links": ["dataset:AS_Organization"],
+    "description":" The following solution will help the user create a Python dictionary that contains a router's IPs, ASN, neighbors, and geographic location",
+    "links": ["dataset:itdk"],
     "tags": [
         "measurement methodology",
         "topology",
@@ -69,7 +69,7 @@ PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))[0]
 
 def node_lookup(nid):
     """
-    To check whether nid is in the ndoes.
+    To check whether nid is in the nodes.
     If not, create one in nodes.
 
     param: string, input node id
@@ -253,17 +253,10 @@ print ("placeholder: ",$placeholder_total,"\n");
 
 
 ## **<ins> Background </ins>**
-### Caveats
-
- #### Placeholder Nodes ###
-
-• Placeholder nodes are the non-response hops in the traceroute. \
-• Generally, placeholder nodes are ignored. \
-• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
-
 
 ### Explanation of the Data Files ###
 *Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
+The datasets are located in `ark/ipv4/itdk`
 
 #### midar-iff.nodes.bz2
 The nodes file lists the set of interfaces that were inferred to be on each router. \
@@ -273,7 +266,6 @@ Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
 
-
 #### midar-iff.links.bz2
 The links file lists the set of routers and router interfaces that were inferred to be sharing each link. \
 Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. \
@@ -282,7 +274,6 @@ If it is known which router interface is connected to the link, then the interfa
 ~~~
 link L1: N27677807:1.0.0.1 N106961
 ~~~
-
 
 #### midar-iff.nodes.as.bz2
 The node-AS file assigns an AS number to each node found in the nodes file.\
@@ -298,4 +289,11 @@ The node-geolocation file contains the geographic location for each node in the 
 node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
 ~~~
     
-More information on ITDK dataset can be found [here](https://www.caida.org/data/request_user_info_forms/ark.xml)
+More information on ITDK dataset can be found [here](https://www.caida.org/data/internet-topology-data-kit/)
+
+### Caveats
+ #### Placeholder Nodes ###
+
+• Placeholder nodes are the non-response hops in the traceroute. \
+• Generally, placeholder nodes are ignored. \
+• Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
