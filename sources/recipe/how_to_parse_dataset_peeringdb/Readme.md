@@ -22,7 +22,7 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 
 The full script could be found in `parse_peeringdb.py` \
 **Usage:** `python parse_peeringdb.py -sq <.sqlite file> -j <.json file> -get <objects type> -id <target id>`
-- `-sq`: *(Optional)(Note)*Input .qlite file 
+- `-sq`: *(Optional)(Note)* Input .qlite file 
 - `-j`: *(Optional)(Note)* Input .json file 
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
 - `-id`: *(Optional)* Id of the single object that you would like to retrieve 
