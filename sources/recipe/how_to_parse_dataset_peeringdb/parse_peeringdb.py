@@ -11,7 +11,9 @@ def main():
     parser.add_argument('-id', dest='single_id', type=int)
     args = parser.parse_args()
 
-    if args.json_dataset and args.type and not args.single_id:
+    if args.json_dataset and args.sqlite_dataset:
+        print("The script could only parse one kind of file format at one time.")
+    elif args.json_dataset and args.type and not args.single_id:
         print(get_object(args.json_dataset, args.type))
     elif args.json_dataset and args.type and args.single_id:
         print(get_single_object(args.json_dataset, args.type, args.single_id))
