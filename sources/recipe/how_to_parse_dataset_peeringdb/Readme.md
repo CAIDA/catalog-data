@@ -8,6 +8,10 @@
         "to": "dataset:peeringdb"
         }],
     "tags": [
+        "PeeringDB",
+        "ASN",
+        "topology",
+        "geolocation"
     ]
 }
 ~~~
@@ -18,8 +22,8 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 
 The full script could be found in `parse_peeringdb.py` \
 **Usage:** `python parse_peeringdb.py -sq <.sqlite file> -j <.json file> -get <objects type> -id <target id>`
-- `-sq`:
-- `-j`: 
+- `-sq`: *(Optional)(Note)*Input .qlite file 
+- `-j`: *(Optional)(Note)* Input .json file 
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
 - `-id`: *(Optional)* Id of the single object that you would like to retrieve 
 
@@ -94,10 +98,8 @@ def get_sqlite_single_object(filename, type, target_id):
 - More information and download dataset [here](https://www.caida.org/data/peeringdb/)
 
 #### Type of Objects
-- Type of objects in `.json` dataset
-`ix`, `ixfac`, `net`, `ixlan`, `as_set`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`\
-- Type of ojects in `.sqlite` dataset
-`mgmtFacilities`, `mgmtPublics`, `mgmtPublicsFacilities`, `mgmtPublicsIPs`, `peerParticipants`, `peerParticipantsContacts`, `peerParticipantsPrivates`, `peerParticipantsPublics`
+- Type of objects in `.json` dataset: `ix`, `ixfac`, `net`, `ixlan`, `as_set`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`
+- Type of ojects in `.sqlite` dataset: `mgmtFacilities`, `mgmtPublics`, `mgmtPublicsFacilities`, `mgmtPublicsIPs`, `peerParticipants`, `peerParticipantsContacts`, `peerParticipantsPrivates`, `peerParticipantsPublics`
 
 - More information click [PeeringDB API](https://www.peeringdb.com/apidocs/)
 
@@ -106,6 +108,6 @@ def get_sqlite_single_object(filename, type, target_id):
 
 - The sqlite3 module was written by Gerhard Häring. It provides a SQL interface compliant with the DB-API 2.0 specification described by PEP 249.
 
-- More information click [here])(https://docs.python.org/3/library/sqlite3.html)
+- More information click [here](https://docs.python.org/3/library/sqlite3.html)
 
 
