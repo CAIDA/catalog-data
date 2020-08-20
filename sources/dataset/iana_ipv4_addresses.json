@@ -1,6 +1,6 @@
 {
-    "id": "iana_ip_addresses",
-    "name": "IANA IP Addresses",
+    "id": "iana_ipv4_addresses",
+    "name": "IANA IPv4 Addresses",
     "organization": "IANA",
     "description": "Dataset of current IPv4 address allocations documented by IANA.",
     "tags": [
@@ -17,6 +17,14 @@
                 "csv",
                 "iana"
             ]
+        }
+    ],
+        "links": [
+        {
+            "to": "dataset:iana_asn_allocations",
+        },
+        {
+            "to": "dataset:iana_ipv6_addresses",
         }
     ]
 }
