@@ -21,13 +21,11 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 ## **<ins> Solution </ins>**
 
 The full script could be found in `parse_peeringdb.py` \
-**Usage:** `python parse_peeringdb.py -sq <.sqlite file> -j <.json file> -get <objects type> -id <target id>`
-- `-sq`: *(Optional)(Note)* Input .qlite file 
-- `-j`: *(Optional)(Note)* Input .json file 
+**Usage:** `python parse_peeringdb.py d <input dataset> -get <objects type> -id <target id>`
+- `-d`: *(Required)* Input dataset. Note that the script only supports dataset in `.sqlite` and `.json` format.
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
 - `-id`: *(Optional)* Id of the single object that you would like to retrieve 
 
-Note that the script only supports dataset in `.sqlite` and `.json` format and could only parse one kind of format at one time. \
 Below are the methods used to read and parse data in .json file.   
 ~~~python 
 # read data in json file

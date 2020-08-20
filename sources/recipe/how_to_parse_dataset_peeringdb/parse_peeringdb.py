@@ -5,24 +5,22 @@ import json
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-j", dest='json_dataset', default = None)
-    parser.add_argument('-sq', dest='sqlite_dataset', default=None)
+    parser.add_argument('-d', dest='dataset', default=None, help='')
     parser.add_argument('-get', dest='type', type=str, help='Input what kind of object you would like to get.')
     parser.add_argument('-id', dest='single_id', type=int)
     args = parser.parse_args()
 
-    if args.json_dataset and args.sqlite_dataset:
-        print("The script could only parse one kind of file format at one time.")
-    elif args.json_dataset and args.type and not args.single_id:
-        print(get_object(args.json_dataset, args.type))
-    elif args.json_dataset and args.type and args.single_id:
-        print(get_single_object(args.json_dataset, args.type, args.single_id))
+    if args.dataset.endswith('.json') and args.type and not args.single_id:
+        print(get_object(args.dataset, args.type))
+    elif args.dataset.endswith('.json') and args.type and args.single_id:
+        print(get_single_object(args.dataset, args.type, args.single_id))
 
-    elif args.sqlite_dataset and args.type and not args.single_id:
-        print(get_sqlite_object(args.sqlite_dataset, args.type)) 
+    elif args.dataset.endswith('.sqlite') and args.type and not args.single_id:
+        print(get_sqlite_object(args.dataset, args.type)) 
 
-    elif args.sqlite_dataset and args.type and args.single_id:
-        print(get_sqlite_single_object(args.sqlite_dataset, args.type, args.single_id)) 
+    elif args.dataset.endswith('.sqlite') and args.type and args.single_id:
+        print(get_sqlite_single_object(args.dataset, args.type, args.single_id))
+
 
 def get_json_data(filename):
     with open(filename) as f:
