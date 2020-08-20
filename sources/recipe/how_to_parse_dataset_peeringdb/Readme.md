@@ -21,12 +21,12 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 ## **<ins> Solution </ins>**
 
 The full script could be found in `parse_peeringdb.py` \
-**Usage:** `python parse_peeringdb.py d <input dataset> -get <objects type> -id <target id>`
+**Usage:** `python parse_peeringdb.py -d <input dataset> -get <objects type> -id <target id>`
 - `-d`: *(Required)* Input dataset. Note that the script only supports dataset in `.sqlite` and `.json` format.
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
 - `-id`: *(Optional)* Id of the single object that you would like to retrieve 
 
-Below are the methods used to read and parse data in .json file.   
+Below are the methods used to read and parse data in `.json` file.   
 ~~~python 
 # read data in json file
 def get_json_data(filename):
@@ -47,7 +47,7 @@ def get_single_object(filename, type, target_id):
             return item
 
 ~~~
-Below are the methods used to read and parse data in .sqlite file.   
+Below are the methods used to read and parse data in `.sqlite` file.   
 ~~~python 
 
 import sqlite3
@@ -98,14 +98,11 @@ def get_sqlite_single_object(filename, type, target_id):
 #### Type of Objects
 - Type of objects in `.json` dataset: `ix`, `ixfac`, `net`, `ixlan`, `as_set`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`
 - Type of ojects in `.sqlite` dataset: `mgmtFacilities`, `mgmtPublics`, `mgmtPublicsFacilities`, `mgmtPublicsIPs`, `peerParticipants`, `peerParticipantsContacts`, `peerParticipantsPrivates`, `peerParticipantsPublics`
-
 - More information click [PeeringDB API](https://www.peeringdb.com/apidocs/)
 
 ### sqlite3
-- SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. Some applications can use SQLite for internal data storage. It’s also possible to prototype an application using SQLite and then port the code to a larger database such as PostgreSQL or Oracle.
-
+- SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. 
 - The sqlite3 module was written by Gerhard Häring. It provides a SQL interface compliant with the DB-API 2.0 specification described by PEP 249.
-
 - More information click [here](https://docs.python.org/3/library/sqlite3.html)
 
 
