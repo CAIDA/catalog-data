@@ -73,7 +73,7 @@ def parse_trace(trace, single_IP=False):
     # hops
     for h in trace.hops:
         if single_IP:
-            if len(h.address.split(','))>=2:
+            if len(h.address.split(',')) >= 2:
                 ips.append(None)
                 hostnames.append(None)
 
