@@ -3,7 +3,6 @@
     "id": "how_to_get_range_of_allocated_or_reserved_ips",
     "name": "How to get the range of allocated or reserved IPs?",
     "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed without specific designations, one with designations.",
-    "question": "How to get the range of reserved and allocated ASNs",
      "links": [{"to":"dataset:iana_ip_addresses"}]
     tags:[
       "ipv4", 
