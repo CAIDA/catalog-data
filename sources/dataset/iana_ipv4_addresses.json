@@ -21,10 +21,10 @@
     ],
         "links": [
         {
-            "to": "dataset:iana_asn_allocations",
+            "to": "dataset:iana_asn_allocations"
         },
         {
-            "to": "dataset:iana_ipv6_addresses",
+            "to": "dataset:iana_ipv6_addresses"
         }
     ]
 }

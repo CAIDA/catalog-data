@@ -30,10 +30,10 @@
     ],
         "links": [
         {
-            "to": "dataset:iana_ipv4_addresses",
+            "to": "dataset:iana_ipv4_addresses"
         },
         {
-            "to": "dataset:iana_ipv6_addresses",
+            "to": "dataset:iana_ipv6_addresses"
         }
     ]
 }
