@@ -1,0 +1,22 @@
+{
+    "id": "iana_ip_addresses",
+    "name": "IANA IP Addresses",
+    "organization": "IANA",
+    "description": "Dataset of current IPv4 address allocations documented by IANA.",
+    "tags": [
+        "ipv4",
+        "iana"
+    ],
+    "resources": [
+        {
+            "name": "ipv4",
+            "url": "https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv",
+            "tags": [
+                "file",
+                "ipv4",
+                "csv",
+                "iana"
+            ]
+        }
+    ]
+}
