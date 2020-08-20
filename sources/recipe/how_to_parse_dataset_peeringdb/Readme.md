@@ -96,13 +96,29 @@ def get_sqlite_single_object(filename, type, target_id):
 - More information and download dataset [here](https://www.caida.org/data/peeringdb/)
 
 #### Type of Objects
-- Type of objects in `.json` dataset: `ix`, `ixfac`, `net`, `ixlan`, `as_set`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`
+- Type of objects in `.json` dataset: `ix`, `ixfac`, `net`, `ixlan`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`
 - Type of ojects in `.sqlite` dataset: `mgmtFacilities`, `mgmtPublics`, `mgmtPublicsFacilities`, `mgmtPublicsIPs`, `peerParticipants`, `peerParticipantsContacts`, `peerParticipantsPrivates`, `peerParticipantsPublics`
 - More information click [PeeringDB API](https://www.peeringdb.com/apidocs/)
+
+| object | description |
+|-----------|------------------|
+|  ix    |   Internet Exchange Point: the physical infrastructure through which Internet service providers (ISPs) and content delivery networks (CDNs) exchange Internet traffic between their networks. |
+|  fac   |  Facility (Datacenter): a physical location where the IX has infrastructure, a single IX may have multiple facilities |
+|  org   |  Organization |
+|  poc   |  Network Point of Contact | 
+|  net   |  Network |
+|  ixfac |  Internet Exchange / Facility presence: combines facility and ix / net information |
+|  ixlan |  Internet Exchange Network Information: abstraction of the physical ix |
+|  ixpfx |  Internet Exchange Prefix: IPv4 / IPv6 range used on an ixlan |
+|  netfac|  Network / Facility presence: combines net and facility information|
+|  netixlan | Network to Internet Exchange connection: combines ix and net information |
+
+
 
 ### sqlite3
 - SQLite is a C library that provides a lightweight disk-based database that doesn’t require a separate server process and allows accessing the database using a nonstandard variant of the SQL query language. 
 - The sqlite3 module was written by Gerhard Häring. It provides a SQL interface compliant with the DB-API 2.0 specification described by PEP 249.
+
 - More information click [here](https://docs.python.org/3/library/sqlite3.html)
 
 
