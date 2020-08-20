@@ -95,24 +95,36 @@ def get_sqlite_single_object(filename, type, target_id):
 - PeeringDB, a non-profit member-based organization, has been established to support practical needs of network operators. However, it is also a valuable source of information for researchers. The first version of PeeringDB resided in a MySQL database, which was not scalable and lacked security features and data validation mechanisms. It presented potential risks of exposing contact information to spammers, and contained typos. Starting at the end of March 2016, PeeringDB switched to a new data schema and API.
 - More information and download dataset [here](https://www.caida.org/data/peeringdb/)
 
-#### Type of Objects
-- Type of objects in `.json` dataset: `ix`, `ixfac`, `net`, `ixlan`, `fac`, `netfac`, `org`, `ixpfx`, `netixlan`, `poc`
-- Type of ojects in `.sqlite` dataset: `mgmtFacilities`, `mgmtPublics`, `mgmtPublicsFacilities`, `mgmtPublicsIPs`, `peerParticipants`, `peerParticipantsContacts`, `peerParticipantsPrivates`, `peerParticipantsPublics`
-- More information click [PeeringDB API](https://www.peeringdb.com/apidocs/)
+#### Objects type in datasets
 
-| object | description |
-|-----------|------------------|
-|  ix    |   Internet Exchange Point: the physical infrastructure through which Internet service providers (ISPs) and content delivery networks (CDNs) exchange Internet traffic between their networks. |
-|  fac   |  Facility (Datacenter): a physical location where the IX has infrastructure, a single IX may have multiple facilities |
-|  org   |  Organization |
-|  poc   |  Network Point of Contact | 
-|  net   |  Network |
-|  ixfac |  Internet Exchange / Facility presence: combines facility and ix / net information |
-|  ixlan |  Internet Exchange Network Information: abstraction of the physical ix |
-|  ixpfx |  Internet Exchange Prefix: IPv4 / IPv6 range used on an ixlan |
-|  netfac|  Network / Facility presence: combines net and facility information|
-|  netixlan | Network to Internet Exchange connection: combines ix and net information |
+- Objects type in `.json` dataset:
+- [PeeringDB API](https://www.peeringdb.com/apidocs/)
 
+| Object     | Description |
+|------------|-------------|
+|  ix        |   Internet Exchange Point: the physical infrastructure through which Internet service providers (ISPs) and content delivery networks (CDNs) exchange Internet traffic between their networks |
+|  fac       | Facility (Datacenter): a physical location where the IX has infrastructure, a single IX may have multiple facilities |
+|  org       | Organization |
+|  poc       | Network Point of Contact | 
+|  net       | Network: network information |
+|  ixfac     | Internet Exchange / Facility presence: combines facility and ix / net information |
+|  ixlan     | Internet Exchange Network Information: abstraction of the physical ix |
+|  ixpfx     | Internet Exchange Prefix: IPv4 / IPv6 range used on an ixlan |
+|  netfac    | Network / Facility presence: combines net and facility information|
+|  netixlan  |Network to Internet Exchange connection: combines ix and net information |
+
+- Objects type in `.sqlite` dataset: 
+
+| Object     | Description |
+|------------|-------------|    
+|  mgmtFacilities           |  Facility |
+|  mgmtPublic               |  Internet Exchange Point|
+|  mgmtPublicsFacilities    |  Internet Exchange / Facility presence: combines facility and ix / net information |
+|  mgmtPublicsIPs           |  IP address of public| 
+|  peerParticipants         |  Network |
+|  peerParticipantsContacts |  Network Point of Contact  |
+|  peerParticipantsPrivates |  Internet Exchange Network Information: abstraction of the physical ix |
+|  peerParticipantsPublics  |  Network to Internet Exchange connection: combines ix and net information |
 
 
 ### sqlite3
