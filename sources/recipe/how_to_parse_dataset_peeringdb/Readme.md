@@ -107,11 +107,11 @@ def get_sqlite_single_object(filename, type, target_id):
 |  org       | Organization |
 |  poc       | Network Point of Contact | 
 |  net       | Network: network information |
-|  ixfac     | Internet Exchange / Facility presence: combines facility and ix / net information |
+|  ixfac     | Internet Exchange / Facility presence: combines facility and ix information |
 |  ixlan     | Internet Exchange Network Information: abstraction of the physical ix |
 |  ixpfx     | Internet Exchange Prefix: IPv4 / IPv6 range used on an ixlan |
-|  netfac    | Network / Facility presence: combines net and facility information|
-|  netixlan  |Network to Internet Exchange connection: combines ix and net information |
+|  netfac    | Network / Facility presence: combines net and facility information |
+|  netixlan  | Network to Internet Exchange connection: combines ix and net information |
 
 - Objects type in `.sqlite` dataset: 
 
@@ -119,12 +119,12 @@ def get_sqlite_single_object(filename, type, target_id):
 |------------|-------------|    
 |  mgmtFacilities           |  Facility |
 |  mgmtPublic               |  Internet Exchange Point|
-|  mgmtPublicsFacilities    |  Internet Exchange / Facility presence: combines facility and ix / net information |
-|  mgmtPublicsIPs           |  IP address of public| 
+|  mgmtPublicsFacilities    |  Internet Exchange / Facility presence: similar to combine facility and ix information |
+|  mgmtPublicsIPs           |  IP address of Publics| 
 |  peerParticipants         |  Network |
 |  peerParticipantsContacts |  Network Point of Contact  |
 |  peerParticipantsPrivates |  Internet Exchange Network Information: abstraction of the physical ix |
-|  peerParticipantsPublics  |  Network to Internet Exchange connection: combines ix and net information |
+|  peerParticipantsPublics  |  Network to Internet Exchange connection: similar to combine ix and net information |
 
 
 ### sqlite3
