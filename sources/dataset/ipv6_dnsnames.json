@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "DNS names are useful for obtaining additional information about routers and hosts making up the Internet topology. For example, DNS names of routers often encode the link type (backbone vs. access), link capacity, Point of Presence (PoP), and geographic location. We have IPv6 DNS Names data starting June 2014.",
     "tags": [
-        "topology"
+        "topology",
+        "ipv6"
     ],
     "dateStart": "2014.06",
     "status": "ongoing",
