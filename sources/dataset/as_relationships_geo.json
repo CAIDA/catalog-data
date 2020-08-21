@@ -1,0 +1,23 @@
+{
+    "id": "as_relationships_geo",
+    "name": "AS Relationships",
+    "organization": "CAIDA",
+    "description": "Accurate knowledge of AS business relationships is relevant to both technical and economic aspects of the Internet's inter-domain structure. Firstly, AS relationships determine routing policies that introduce a non-trivial set of constraints to paths over which Internet traffic can flow. This has implications for network robustness, traffic engineering, macroscopic topology measurement strategies, and other research and operational considerations. Secondly, macroscopic analysis of AS relationships not only yields insight into the economic underpinnings of business realities in the current Internet, it also provides a solid validation framework for economy-based modeling of Internet topology evolution. Indeed, the Internet AS-level topology and its evolutionary dynamics are consequences of business decisions that Internet players make. Therefore, the ability to infer AS relationships is a promising tool for understanding and modeling the economic forces that drive the evolution of the Internet topology and its hierarchy.",
+    "tags": [
+        "topology"
+    ],
+    "dateStart": "2017.03",
+    "status":"complete",
+    "resources": [
+        {
+            "name": "public",
+            "url": "http://data.caida.org/datasets/as-relationships-geo",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ]
+}

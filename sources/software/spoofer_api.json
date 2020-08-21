@@ -1,0 +1,27 @@
+{
+    "id": "spoofer_api",
+    "name": "Spoofer API",
+    "organization": "CAIDA",
+    "description": "REST API to public anonymized Spoofer test results",
+    "tags": [
+        "security"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://api.spoofer.caida.org/",
+            "tags": []
+        }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 3"
+    ],
+    "links": [
+        {
+            "to": "software:spoofer_client"
+        },
+        {
+            "to": "software:spoofer_ui"
+        }
+    ]
+}

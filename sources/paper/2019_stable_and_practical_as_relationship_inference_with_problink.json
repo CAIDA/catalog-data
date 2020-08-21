@@ -1,0 +1,82 @@
+{
+    "id": "2019_stable_practical_as_relationship",
+    "name": "Stable and Practical AS Relationship Inference with ProbLink",
+    "datePublished": "2019.2",
+    "description": "Knowledge of the business relationships between Autonomous Systems (ASes) is essential to understanding the behavior of the Internet routing system. Despite significant progress in the development of relationship inference algorithms, the resulting inferences are impractical for many critical real-world applications, cannot offer adequate predictability in the configuration of routing policies, and suffer from inference oscillations. To achieve more practical and stable relationship inference, we first illuminate the root causes of the contradiction between these shortcomings and the near-perfect validation results for AS-Rank, the state-of-the-art relationship inference algorithm. Using a \"naive\" inference approach as a benchmark, we find that available validation datasets over-represent AS links with easier inference requirements. We identify which types of links are harder to infer and develop appropriate validation subsets to enable more representative evaluation.\r\n\r\nWe then develop a probabilistic algorithm, ProbLink, to overcome the challenges in inferring hard links, such as nonvalley-free routing, limited visibility, and non-conventional peering practices. ProbLink reveals key AS-interconnection features derived from stochastically informative signals. Compared to AS-Rank, our approach reduces the error rate for all links by 1.6x and, importantly, by up to 6.1x for various types of hard links. We demonstrate the practical significance of our improvements by evaluating their impact on three applications. Compared to the current state-of-theart, ProbLink increases the precision and recall of route leak detection by 4.1x and 3.4x respectively, reveals 27% more complex relationships, and increases the precision of predicting the impact of selective advertisements by 34%.'' The ProbLink code is available in the [ProbLink Github repo](https://github.com/YuchenJin/ProbLink).",
+    "tags": [
+        "topology",
+        "routing",
+        "measurement methodology",
+        "economics"
+    ],
+    "pubdb_id": "paper671",
+    "venue": "usenix_symposium_on_networked_systems_design_and_implementation_nsdi",
+    "authors": [
+        {
+            "person": "person:jin_yuchen",
+            "organization": [
+                "University of Washington"
+            ]
+        },
+        {
+            "person": "person:scott_colin",
+            "organization": [
+                "International Computer Science Institute (ICSI)",
+                "University of California, Berkeley"
+            ]
+        },
+        {
+            "person": "person:dhamdhere_amogh",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:giotsas_vasileios",
+            "organization": [
+                "University of Lancaster"
+            ]
+        },
+        {
+            "person": "person:krishnamurthy_arvind",
+            "organization": [
+                "University of Washington"
+            ]
+        },
+        {
+            "person": "person:shenker_scott",
+            "organization": [
+                "International Computer Science Institute (ICSI)",
+                "University of California, Berkeley"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "from": "PubDBlinkId:2202",
+            "label": "Data Supplement",
+            "to": "https://homes.cs.washington.edu/~yuchenj/problink-as-relationships/"
+        },
+        {
+            "from": "PubDBlinkId:2097",
+            "label": "PDF",
+            "to": "https://www.caida.org/publications/papers/2019/stable_practical_as_relationship/stable_practical_as_relationship.pdf"
+        },
+        {
+            "from": "PubDBlinkId:2098",
+            "label": "Related Presentation",
+            "to": "https://www.caida.org/publications/presentations/2019/stable_practical_relationship_inference_nsdi/"
+        }
+    ],
+    "bibtexFields": {
+        "type": "INPROCEEDINGS",
+        "booktitle": "USENIX Symposium on Networked Systems Design and Implementation (NSDI)",
+        "institution": "",
+        "bibtex": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "581-597",
+        "linkedObjects": ""
+    }
+}

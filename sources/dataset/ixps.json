@@ -1,0 +1,24 @@
+{
+    "id": "ixps",
+    "name": "Internet eXchange Points (IXPs) Dataset",
+    "organization": "CAIDA",
+    "description": "An Internet eXchange Point (IX or IXP) is a physical infrastructure used by Internet service providers (ISPs) and content delivery networks (CDNs) to exchange Internet traffic between their networks (Autonomous Systems - ASes). An IXP can be distributed and located in numerous data centers (aka facilities), and a single facility can contain mutliple IXPs. Each IXP has a prefix, or collection of prefixes, which are used by companies/ASes to address machines within the IXP infrastructure. An AS connected to a given IXP is known as a member of that IXP. Internet traffic exchange through an IXP makes use of Border Gateway Protocol (BGP) that recognizes ISPs and CDNs by their Autonomous System Numbers (ASNs).",
+    "tags": [
+        "topology",
+        "ixp"
+    ],
+    "dateStart": "2018.02",
+    "status": "ongoing",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/ixps",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ]
+}

@@ -12,10 +12,10 @@
             "to": "dataset:asrank"
         },
         {
-            "to": "paper:asrank"
+            "to": "paper:2013_asrank"
         },
         {
-            "to": "media:asrank"
+            "to": "media:2013_as_relationships_imc"
         },
         {
             "to": "software:asrank_api"
@@ -23,12 +23,5 @@
         {
             "to": "software:asrank_ui"
         }
-    ],
-    "availability":[
-        {
-            "format":"PDF",
-            "url":"https://www.caida.org/publications/presentations/2019/network_hygiene_incentives_regulation_ccs/network_hygiene_incentives_regulation_ccs.pdf"
-        }
     ]
-
 }
