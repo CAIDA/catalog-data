@@ -15,6 +15,13 @@
             "tags": [
                 "file"
             ]
+        },
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/active/internet-topology-data-kit",
+            "tags": [
+                "file"
+            ]
         }
     ],
     "licenses": [

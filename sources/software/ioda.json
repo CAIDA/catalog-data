@@ -22,15 +22,15 @@
     ],
     "links": [
         {
-            "to": "media:ioda_np_internet_outage_detection_and_analysis",
+            "to": "media:2019_ioda-np_paridine_final",
             "label": "used by"
         },
         {
-            "to": "media:ioda_np_detecting_outages_affecting_the_internet_s_edge",
+            "to": "media:2019_ioda-np_aims",
             "label": "used by"
         },
         {
-            "to": "media:ioda_np_internet_outage_detection_and_analysis",
+            "to": "media:2019_ioda-np_dhsst",
             "label": "used by"
         },
         {
@@ -42,11 +42,11 @@
             "label": "used by"
         },
         {
-            "to": "media:ioda_np_multi_source_realtime_detection_of_macroscopic_internet_connectivity_disruption",
+            "to": "media:2018_ioda-np_paridine",
             "label": "used by"
         },
         {
-            "to": "media:science_of_internet_security_technology_and_experimental_research",
+            "to": "media:2018/sister_pi_apr",
             "label": "used by"
         },
         {
@@ -54,11 +54,23 @@
             "label": "used by"
         },
         {
-            "to": "media:internet_outages_detection_analysis",
+            "to": "media:2017_mapping_our_way_iij",
             "label": "used by"
         },
         {
-            "to": "media:2015_bgp_stream_imc",
+            "to": "media:2017/ioda_cns",
+            "label": "used by"
+        },
+        {
+            "to": "media:2017_ioda_aims",
+            "label": "used by"
+        },
+        {
+            "to": "media:2017_ioda_sdsc",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_imc",
             "label": "used by"
         },
         {
@@ -66,11 +78,19 @@
             "label": "used by"
         },
         {
+            "to": "media:2016_leveraging_internet_background_radiation_kbenson",
+            "label": "used by"
+        },
+        {
+            "to": "media:2016_bgpstream_framework_historical_nanog",
+            "label": "used by"
+        },
+        {
             "to": "media:2015_leveraging_internet_background_imc",
             "label": "used by"
         },
         {
-            "to": "media:bgpstream_a_framework_for_historical_analysis_and_real_time_monitoring_of_bgp_data",
+            "to": "media:2015_bgpstream_mplane",
             "label": "used by"
         },
         {
@@ -78,7 +98,7 @@
             "label": "used by"
         },
         {
-            "to": "media:lost_in_space_improving_inference_of_ipv4_address_space_utilization",
+            "to": "media:2015_lost_in_space_raim",
             "label": "used by"
         },
         {
@@ -86,15 +106,7 @@
             "label": "used by"
         },
         {
-            "to": "media:ioda_nternet_outages_detection_analysis",
-            "label": "used by"
-        },
-        {
             "to": "media:2015_bgp_stream_imc",
-            "label": "used by"
-        },
-        {
-            "to": "media:ioda_internet_outages_detection_analysis",
             "label": "used by"
         },
         {
@@ -102,11 +114,15 @@
             "label": "used by"
         },
         {
-            "to": "media:2013_monitoring_largescale_internet_outages_fcc",
+            "to": "media:2015_ioda_fcc",
             "label": "used by"
         },
         {
-            "to": "media:2012_micdhs_caida_overview",
+            "to": "media:2015_bgpstream_aims",
+            "label": "used by"
+        },
+        {
+            "to": "media:2013_monitoring_largescale_internet_outages_fcc",
             "label": "used by"
         },
         {
@@ -122,6 +138,10 @@
             "label": "used by"
         },
         {
+            "to": "media:2013_caida_research_overview",
+            "label": "used by"
+        },
+        {
             "to": "media:2012_coordinated_view_wiv",
             "label": "used by"
         },
@@ -130,12 +150,73 @@
             "label": "used by"
         },
         {
-            "to": "media:extracting_benefit_from_harm_using_malware_pollution_to_analyze_the_impact_of_political_and_geophysical_events_on_the_internet",
+            "to": "media:2012_internet_outages",
+            "label": "used by"
+        },
+        {
+            "to": "media:2012_extract_benefit_from_harm_sigcomm_2012",
             "label": "used by"
         },
         {
             "to": "media:2011_analysis_internet_outages_censorship",
             "label": "used by"
+        },
+        {
+            "to": "paper:2019_blink",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_how_find_correlated_internet",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_swift",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_bgpstream",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_lost_in_space",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_leveraging_internet_background_radiation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_outages_censorship",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_uncovering_network_tarpits_degreaser",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_coordinated_view_internet_events",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_passive_ip_space_usage_estimation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2013_gaining_insight_outages",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2012_extracting_benefit_from_harm",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2011_outages_censorship",
+            "label": "used by"
         }
+
     ]
 }

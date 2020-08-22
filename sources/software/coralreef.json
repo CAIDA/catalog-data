@@ -30,22 +30,28 @@
             "label": "used by"
         },
         {
-            "to": "media:2004_coralreef_lincoln"
+            "to": "media:2004_coralreef_lincoln",
+            "label": "used by"
         },
         {
-            "to": "media:2001_usenix0112"
+            "to": "media:2001_usenix0112",
+            "label": "used by"
         },
         {
-            "to": "media:2001_usenix0112"
+            "to": "media:2001_usenix0112",
+            "label": "used by"
         },
         {
-            "to": "media:2001_usenix0112"
+            "to": "media:2001_usenix0112",
+            "label": "used by"
         },
         {
-            "to": "media:1998_coralreefoverview"
+            "to": "media:1998_coralreefoverview",
+            "label": "used by"
         },
         {
-            "to": "media:1999_isma9901_coralreef"
+            "to": "media:1999_isma9901_coralreef",
+            "label": "used by"
         }
     ]
 }

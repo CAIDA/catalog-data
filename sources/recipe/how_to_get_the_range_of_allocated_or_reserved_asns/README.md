@@ -3,7 +3,7 @@
     "id": "how_to_get_the_range_of_allocated_or_reserved_asns",
     "name": "How to get the range of allocated or reserved asns?",
     "description": "The following solution will create two dictionaries listing the ranges in which AS numbers: one compressed, one not compressed.",
-    "question": "How to get the range of reserved and allocated ASNs",
+     "links": [{"to":"dataset:iana_as_numbers"}],
     "tags":[
       "asn", 
       "iana", 
@@ -99,6 +99,9 @@ def combine(csv_path16, csv_path32):
     return pd.concat([current_16, current_32])
 
 def iana_asn_asignees(csv_path16, csv_path32):
+    """
+    Takes in two IANA files (one for 32-bit and one for 16-bit asn) and returns a dictionary with ranges by assignee.
+    """
     current = combine(csv_path16, csv_path32)
     current["Description"] = current["Description"].apply(lambda x: clean_designation_names(x.lower()))
     current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
@@ -117,6 +120,9 @@ def iana_asn_asignees(csv_path16, csv_path32):
     return asn
 
 def iana_asn_compressed(csv_path16, csv_path32): 
+    """
+    Takes in two IANA files (one for 32-bit and one for 16-bit asn) and returns a dictionary with allocated or reserved ranges.
+    """
     current = combine(csv_path16, csv_path32)
     current["Description"] = current["Description"].apply(lambda x: simplify(x.lower()))
     current["Number"] = current["Number"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])
@@ -156,4 +162,3 @@ def iana_asn_compressed(csv_path16, csv_path32):
 ## Caveats
 - This solution uses only the current datasets provided by IANA
 - This solution combines the 16-bit and 32-bit csv files, so both must be provided
-- You can access the 

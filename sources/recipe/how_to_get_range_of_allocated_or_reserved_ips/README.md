@@ -1,15 +1,19 @@
 ~~~
 {
-    "id": "how_to_get_range_of_allocated_or_reserved_ips",
-    "name": "How to get the range of allocated or reserved IPs?",
-    "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed with out specific designations, one with designations.",
-    "question": "How to get the range of reserved and allocated ASNs",
-    "tags": [
-      "ipv4", 
-      "iana", 
-      "ip address",
-      "ip"
-    ]
+  "id": "how_to_get_range_of_allocated_or_reserved_ips",
+  "name": "How to get the range of allocated or reserved IPs?",
+  "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed without specific designations, one with designations.",
+  "links": [
+    {
+      "to": "dataset:iana_ipv4_addresses"
+    }
+  ],
+  "tags": [
+    "ipv4",
+    "iana",
+    "ip address",
+    "ip"
+  ]
 }
 ~~~
 
@@ -32,6 +36,9 @@ import sys
 import more_itertools as mit
 
 def parse_ip_assignees(csv_path):
+    """
+    Parses the IP address csv to ranges in which designations occupy. Takes in a path to the csv file and outputs a dictionary.
+    """
     ip = pd.read_csv(csv_path).reset_index()
     ip["Designation"] = ip["Designation"].apply(lambda x: x.lower().replace("administered by", "").strip())
 
@@ -44,6 +51,9 @@ def parse_ip_assignees(csv_path):
     return ip
 
 def parse_ip_compressed(csv_path):
+    """
+    Parses the IP address csv to ranges IP addresses are either reserved, allocated, or legacy. Takes in a path to the csv file and outputs a dictionary.
+    """
     ip = pd.read_csv(csv_path).reset_index()
     ip["Status [1]"] == ip["Status [1]"].apply(lambda x: x.lower())
 

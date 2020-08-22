@@ -21,27 +21,19 @@
     ],
     "links": [
         {
-            "to": "software:internet_outage_detection_and_analysis",
+            "to": "paper:2019_towards_passive_analysis_anycast",
             "label": "used by"
         },
         {
-            "to": "paper:2019_towards_passive_analysis_of_anycast_in_global_routing_unintended_impact_of_remote_peering",
+            "to": "paper:2019_profiling_bgp_serial_hijackers",
             "label": "used by"
         },
         {
-            "to": "paper:2019_profiling_bgp_serial_hijackers_capturing_persistent_misbehavior_in_the_global_routing_table",
-            "label": "used by"
-        },
-        {
-            "to": "paper:2019_stable_and_practical_as_relationship_inference_with_problink",
+            "to": "paper:2019_stable_practical_as_relationship",
             "label": "used by"
         },
         {
             "to": "paper:2019_bgp_hijacking_classification",
-            "label": "used by"
-        },
-        {
-            "to": "paper:2019_studying_the_evolution_of_content_providers_in_ipv4_and_ipv6_internet_cores",
             "label": "used by"
         },
         {
