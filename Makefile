@@ -1,4 +1,4 @@
-run:pubdb
+run:
 	python3 scripts/data-build.py
 
 force:pubdb
