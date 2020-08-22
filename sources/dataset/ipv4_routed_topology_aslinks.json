@@ -24,6 +24,9 @@
     "links": [
         {
             "to":"dataset:ipv4_routed_24_topology"
+        },
+        {
+            "to":"dataset:as_prefix"
         }
     ]
 }

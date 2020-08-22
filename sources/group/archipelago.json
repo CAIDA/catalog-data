@@ -27,7 +27,7 @@
             "to": "dataset:ipv4_dnsnames"
         },
         {
-            "to": "dataset:itdk"
+            "to": "dataset:internet-topology-data-kit"
         },
         {
             "to": "dataset:ipv6_allpref_topology"

@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/internet-topology-data-kit/",
+            "url": "https://www.caida.org/data/active/ipv6_aslinks_dataset.xml",
             "tags": [
                 "file"
             ]
@@ -23,7 +23,7 @@
     ],
     "links": [
         {
-            "to":"dataset:ipv6_allpref_topology"
+            "to":"dataset:ipv6_aslinks_dataset"
         }
     ]
 }
