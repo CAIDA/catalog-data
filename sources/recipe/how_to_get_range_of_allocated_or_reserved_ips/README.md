@@ -5,7 +5,7 @@
   "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed without specific designations, one with designations.",
   "links": [
     {
-      "to": "dataset:iana_ip_addresses"
+      "to": "dataset:iana_ipv4_addresses"
     }
   ],
   "tags": [

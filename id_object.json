@@ -43,6 +43,35 @@
         "dateLastUpdated": "2020.08",
         "date": "2007/02/01 00:00:00"
     },
+    "dataset:as_classification": {
+        "id": "dataset:as_classification",
+        "name": "AS Classification",
+        "organization": "CAIDA",
+        "description": "This page documents our method for classifying Autonomous Systems (ASes) according to their business type.",
+        "tags": [
+            "tag:topology",
+            "tag:asn"
+        ],
+        "status": "ongoing",
+        "dateStart": "2015/08/01 00:00:00",
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/data/as-classification/",
+                "tags": [
+                    "tag:file"
+                ]
+            }
+        ],
+        "licenses": [
+            "license:bsd_4_clause_uc"
+        ],
+        "filename": "sources/dataset/as_classification.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2015/08/01 00:00:00"
+    },
     "dataset:as_organization": {
         "id": "dataset:as_organization",
         "name": "AS Organization",
@@ -305,6 +334,42 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "dataset:iana_as_numbers": {
+        "id": "dataset:iana_as_numbers",
+        "name": "IANA AS Numbers",
+        "organization": "IANA",
+        "description": "Dataset of current autonomous system (AS) number allocations documented by IANA.",
+        "tags": [
+            "tag:asn",
+            "tag:iana",
+            "tag:autonomous_system_numbers"
+        ],
+        "resources": [
+            {
+                "name": "asn_16_bit",
+                "url": "https://www.iana.org/assignments/as-numbers/as-numbers-1.csv",
+                "tags": [
+                    "tag:file",
+                    "tag:csv",
+                    "tag:asn"
+                ]
+            },
+            {
+                "name": "asn_32_bit",
+                "url": "https://www.iana.org/assignments/as-numbers/as-numbers-2.csv",
+                "tags": [
+                    "tag:file",
+                    "tag:csv",
+                    "tag:asn"
+                ]
+            }
+        ],
+        "filename": "sources/dataset/iana_as_numbers.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "dataset:iana_asn_allocations": {
         "id": "dataset:iana_asn_allocations",
         "name": "IANA ASN allocations",
@@ -320,6 +385,71 @@
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.07",
         "date": "2020.07"
+    },
+    "dataset:iana_ipv4_addresses": {
+        "id": "dataset:iana_ipv4_addresses",
+        "name": "IANA IPv4 Addresses",
+        "organization": "IANA",
+        "description": "Dataset of current IPv4 address allocations documented by IANA.",
+        "tags": [
+            "tag:ipv4",
+            "tag:iana"
+        ],
+        "resources": [
+            {
+                "name": "ipv4",
+                "url": "https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv",
+                "tags": [
+                    "tag:file",
+                    "tag:ipv4",
+                    "tag:csv",
+                    "tag:iana"
+                ]
+            }
+        ],
+        "filename": "sources/dataset/iana_ipv4_addresses.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "dataset:iana_ipv6_addresses": {
+        "id": "dataset:iana_ipv6_addresses",
+        "name": "IANA IPv6 Addresses",
+        "organization": "IANA",
+        "description": "Dataset of current IPv6 address allocations as documented by IANA.",
+        "tags": [
+            "tag:ipv6",
+            "tag:iana"
+        ],
+        "resources": [
+            {
+                "name": "unicast",
+                "url": "https://www.iana.org/assignments/ipv6-unicast-address-assignments/ipv6-unicast-address-assignments.csv",
+                "tags": [
+                    "tag:file",
+                    "tag:ipv6",
+                    "tag:csv",
+                    "tag:iana",
+                    "tag:unicast"
+                ]
+            },
+            {
+                "name": "ipv6_address_space",
+                "url": "https://www.iana.org/assignments/ipv6-address-space/ipv6-address-space-1.csv",
+                "tags": [
+                    "tag:file",
+                    "tag:ipv6",
+                    "tag:csv",
+                    "tag:iana"
+                ]
+            }
+        ],
+        "filename": "sources/dataset/iana_ipv6_addresses.json",
+        "__typename": "Dataset",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
     },
     "dataset:ipv4_routed_24_topology_dataset": {
         "id": "dataset:ipv4_routed_24_topology_dataset",
@@ -50822,6 +50952,15 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "tag:asn": {
+        "id": "tag:asn",
+        "filename": "sources/dataset/as_classification.json",
+        "__typename": "Tag",
+        "name": "asn",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.07",
+        "date": "2020.07"
+    },
     "tag:ownership": {
         "id": "tag:ownership",
         "filename": "sources/dataset/as_organization.json",
@@ -50894,14 +51033,32 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
-    "tag:asn": {
-        "id": "tag:asn",
-        "filename": "sources/dataset/iana_asn_allocations.json",
+    "tag:iana": {
+        "id": "tag:iana",
+        "filename": "sources/dataset/iana_as_numbers.json",
         "__typename": "Tag",
-        "name": "asn",
+        "name": "iana",
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.07",
         "date": "2020.07"
+    },
+    "tag:autonomous_system_numbers": {
+        "id": "tag:autonomous_system_numbers",
+        "filename": "sources/dataset/iana_as_numbers.json",
+        "__typename": "Tag",
+        "name": "autonomous system numbers",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:csv": {
+        "id": "tag:csv",
+        "filename": "sources/dataset/iana_as_numbers.json",
+        "__typename": "Tag",
+        "name": "csv",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
     },
     "tag:as_numbers": {
         "id": "tag:as_numbers",
@@ -50912,14 +51069,32 @@
         "dateLastUpdated": "2020.07",
         "date": "2020.07"
     },
-    "tag:iana": {
-        "id": "tag:iana",
-        "filename": "sources/dataset/iana_asn_allocations.json",
+    "tag:ipv4": {
+        "id": "tag:ipv4",
+        "filename": "sources/dataset/iana_ipv4_addresses.json",
         "__typename": "Tag",
-        "name": "iana",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.07",
-        "date": "2020.07"
+        "name": "ipv4",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:ipv6": {
+        "id": "tag:ipv6",
+        "filename": "sources/dataset/iana_ipv6_addresses.json",
+        "__typename": "Tag",
+        "name": "ipv6",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:unicast": {
+        "id": "tag:unicast",
+        "filename": "sources/dataset/iana_ipv6_addresses.json",
+        "__typename": "Tag",
+        "name": "unicast",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
     },
     "tag:active": {
         "id": "tag:active",
@@ -51083,15 +51258,6 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
-    "tag:ipv6": {
-        "id": "tag:ipv6",
-        "filename": "sources/media/2005_caidawide050311_as_topology__pubdb.json",
-        "__typename": "Tag",
-        "name": "ipv6",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
     "tag:peer_to_peer": {
         "id": "tag:peer_to_peer",
         "filename": "sources/media/2005_oida2005-06__pubdb.json",
@@ -51187,15 +51353,6 @@
         "filename": "sources/media/2019_network_hygiene_incentives_and_regulation_deployment_of_source_address_validation_in_the_internet.json",
         "__typename": "Author",
         "name": "Luckie Matthew",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ipv4": {
-        "id": "tag:ipv4",
-        "filename": "sources/media/2020_ipv4_history_viz_interactive.json",
-        "__typename": "Tag",
-        "name": "ipv4",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
