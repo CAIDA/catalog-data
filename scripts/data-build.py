@@ -583,6 +583,7 @@ def recipe_process(path):
                 if root in recipe_dir and re_readme_md.search(fname):
                     filename = root +"/"+fname
                     info = None
+                    errors = []
                     with open(filename) as f:
                         inside = False
                         data = None
@@ -603,16 +604,15 @@ def recipe_process(path):
                                         info["content"] = ""
                                         data = None
                                     except ValueError as e:
-                                        print ("error in "+p)
-                                        print (e)
-                                        print ("parse failure",data)
+                                        errors.append("json error in "+filename+"\n")
+                                        #print (e)
+                                        #print ("parse failure",data)
                                         break
                                 else:
                                     data = ""
                                 inside = not inside
                             elif data is not None:
                                 data += line
-                    errors = []
                     if info is None:
                         info = {}
                     #if "visibility" not in info or "public" != info["visibility"].lower():
