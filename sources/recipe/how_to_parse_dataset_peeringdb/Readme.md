@@ -21,7 +21,7 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 ## **<ins> Solution </ins>**
 
 The full script could be found in `parse_peeringdb.py` \
-Download PeeringDB dataset [here](https://www.caida.org/data/peeringdb/)\
+Download PeeringDB dataset [here](https://www.caida.org/data/peeringdb/).\
 **Usage:** `python parse_peeringdb.py -d <input dataset> -get <objects type> -id <target id>`
 - `-d`: *(Required)* Input dataset. Note that the script only supports dataset in `.sqlite` and `.json` format.
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
