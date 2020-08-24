@@ -2,7 +2,7 @@
 {
     "id": "how_to_parse_dataset_peeringdb",
     "visibility": "public",
-    "name": "How to dataset PeeringDB?",
+    "name": "How to parse dataset PeeringDB",
     "description": "Parse the data collected by PeeringDB and return a dictionary",
     "links": [{
         "to": "dataset:peeringdb"
@@ -21,10 +21,11 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 ## **<ins> Solution </ins>**
 
 The full script could be found in `parse_peeringdb.py` \
+Download PeeringDB dataset [here](https://www.caida.org/data/peeringdb/)\
 **Usage:** `python parse_peeringdb.py -d <input dataset> -get <objects type> -id <target id>`
 - `-d`: *(Required)* Input dataset. Note that the script only supports dataset in `.sqlite` and `.json` format.
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
-- `-id`: *(Optional)* Id of the single object that you would like to retrieve 
+- `-id`: *(Optional)* Id of the single object that you would like to retrieve. Input type should be integer. 
 
 Below are the methods used to read and parse data in `.json` file.   
 ~~~python 
