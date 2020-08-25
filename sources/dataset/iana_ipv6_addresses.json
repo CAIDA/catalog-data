@@ -1,0 +1,41 @@
+{
+    "id": "iana_ipv6_addresses",
+    "name": "IANA IPv6 Addresses",
+    "organization": "IANA",
+    "description": "Dataset of current IPv6 address allocations as documented by IANA.",
+    "tags": [
+        "ipv6",
+        "iana"
+    ],
+    "resources": [
+        {
+            "name": "unicast",
+            "url": "https://www.iana.org/assignments/ipv6-unicast-address-assignments/ipv6-unicast-address-assignments.csv",
+            "tags": [
+                "file",
+                "ipv6",
+                "csv",
+                "iana",
+                "unicast"
+            ]
+        },
+        {
+            "name": "ipv6_address_space",
+            "url": "https://www.iana.org/assignments/ipv6-address-space/ipv6-address-space-1.csv",
+            "tags": [
+                "file",
+                "ipv6",
+                "csv",
+                "iana"
+            ]
+        }
+    ],
+        "links": [
+        {
+            "to": "dataset:iana_asn_allocations"
+        },
+        {
+            "to": "dataset:iana_ipv4_addresses"
+        }
+    ]
+}
