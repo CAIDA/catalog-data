@@ -10,7 +10,6 @@ pubdb: scripts/data-build.py scripts/lib/utils.py data/PANDA-Papers-json.pl.json
 	touch pubdb
 
 links:
-	./scripts/pubdb_links.py
 
 clean:
 	rm pubdb sources/*/*__pubdb.json id_id_link.json word_score_id.json
