@@ -47,7 +47,7 @@ import copy
 import re
 import time
 import datetime
-import markdown2
+#import markdown2
 import subprocess
 import lib.utils as utils
 
@@ -622,7 +622,7 @@ def recipe_process(path):
                     if len(errors) > 0:
                         skipped.append([",".join(errors), filename])
                     else:
-                        info["content"] = markdown2.markdown(info["content"])
+                        #info["content"] = markdown2.markdown(info["content"])
                         obj = object_add("Recipe", info)     
     if len(skipped) > 0:
         print ("skipped")
