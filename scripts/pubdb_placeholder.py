@@ -34,6 +34,7 @@ def main():
                         name_id[name] = utils.id_create(fname, type_,obj["id"])
         
     for obj in objects:
+        #print (json.dumps(obj, indent=4))
         #print (obj["__typename"], obj["id"])
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
@@ -58,7 +59,17 @@ def main():
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
 
+        found = False
+
         if "links" in obj:
+            url_base = None
+            if obj["__typename"] == "paper":
+                url_base = "https://www.caida.org/publications/papers/"+obj["datePublished"][:4]+"/"+obj["id"][5:]
+            #for link in obj["links"]:
+                #m = re.search("(.+)/[^\/]+.pdf$",link["to"])
+                #if link["label"] == "PDF" and m:
+                    #url_base = m.groups()[0]
+
             links = []
             for link in obj["links"]:
                 m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",link["to"])
@@ -75,12 +86,25 @@ def main():
                             "url":link["to"]
                         })
                 else:
+                    url = link["to"]
+                    if url[0] == "/":
+                        url = "https://www.caida.org"+url
+                    elif url[:4] != "http" and url[:6] != "mailto":
+
+                        if url_base: 
+                            url = url_base+"/"+url
+                        else:
+                            print ("found:",url)
+                            found = True
                     obj["resources"].append({
                         "name":link["label"],
                         "url":link["to"],
                         "tags":[]
                     })
             obj["links"] = links
+        if found:
+            print (json.dumps(obj, indent=4))
+
         if obj["__typename"] == "paper":
             obj["bibtexFields"] =  {}
             for key_from in ["type", "booktitle","institution","journal","volume","venue","pages","peerReviewedYes","bibtex","year","mon"]:
