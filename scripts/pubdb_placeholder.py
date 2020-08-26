@@ -57,7 +57,6 @@ def main():
                     info["date"] = year+"."+mon
                     if "date" not in obj or obj["date"] < info["date"]:
                         obj["date"] = info["date"]
-                        print (obj["date"])
         if "authors" in obj:
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
