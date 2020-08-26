@@ -318,6 +318,11 @@ def object_date_add(obj):
     if "date" not in obj:
         obj["date"] = obj["dateLastUpdated"]
 
+    parts = re.split("[^\d]+",obj["date"])
+    if len(parts) < 2:
+        parts[2] = "01"
+    obj["date"] = parts[0]+"."+parts[1]
+
 ###########################
 
 def data_print(): 
