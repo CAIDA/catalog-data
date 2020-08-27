@@ -11,6 +11,8 @@ objects = []
 seen = set()
 name_id = {}
 
+id_person = {}
+
 def main():
     load_ids("media","data/PANDA-Presentations-json.pl.json")
     load_ids("paper","data/PANDA-Papers-json.pl.json")
@@ -19,19 +21,26 @@ def main():
         if os.path.isdir(p):
             for fname in os.listdir(p):
                 fname = p+"/"+fname
-                if re.search("json$",fname) and "__" not in fname: 
+                if re.search("json$",fname):
                     try:
                         obj = json.load(open(fname,"r"))
                     except ValueError as e:
                         raise e
-                    id_add(fname, type_, obj["id"])
+                    id_ = id_add(fname, type_, obj["id"])
+                    if type_ == "person" and "names" in obj:
+                        obj["filename"] = fname
+                        for n in obj["names"]:
+                            id_alias = utils.id_create(fname,'person',
+                                n["nameLast"]+"__"+n["nameFirst"])
+                            id_person[id_alias] = obj
+
                     if "name" in obj:
                         name = utils.id_create(fname, type_,obj["name"])
                         #if "evolution" in name:
                             #print (obj["id"])
                             #print (name)
                             #print ()
-                        name_id[name] = utils.id_create(fname, type_,obj["id"])
+                        id_ = name_id[name] = utils.id_create(fname, type_,obj["id"])
         
     for obj in objects:
         #print (json.dumps(obj, indent=4))
@@ -126,10 +135,14 @@ def main():
             obj["date"] = obj["datePublished"] = year+"."+mon
 
 
-        json.dump(obj,open(obj["filename"],"w"),indent=4)
+        filename = obj["filename"].replace("__pubdb","")
+        if not os.path.exists(filename):
+            json.dump(obj,open(obj["filename"],"w"),indent=4)
 
     for obj in id_person.values():
-        json.dump(obj,open(obj["filename"],"w"),indent=4)
+        filename = obj["filename"].replace("__pubdb","")
+        if not os.path.exists(filename):
+            json.dump(obj,open(obj["filename"],"w"),indent=4)
 
 
 def key_to_key(obj,key_a,key_b):
@@ -156,6 +169,7 @@ def id_add(filename, type_,id_):
     yearless = id_yearless(id_)
     name_id[yearless] = id_
     seen.add(id_)
+    return id_
 
 def id_lookup(id_):
     if id_ in seen:
@@ -175,7 +189,6 @@ def id_yearless(id_):
     return id_
     
 
-id_person = {}
 def person_create(filename, obj):
     id_ = utils.id_create("filename",'person',obj)
     if id_ not in id_person:
