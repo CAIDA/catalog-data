@@ -1,0 +1,25 @@
+{
+    "id": "as_classification",
+    "name": "AS Classification",
+    "organization": "CAIDA",
+    "description": "This page documents our method for classifying Autonomous Systems (ASes) according to their business type.",
+    "tags": [
+        "topology",
+        "asn"
+
+    ],
+    "status":"ongoing",
+    "dateStart": "2015.08",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/as-classification/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ]
+}
