@@ -1,0 +1,19 @@
+{
+    "id": "ipv6_dnsnames_dataset",
+    "name": "The IPv6 DNS Names Dataset",
+    "description": "The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addresses seen in the traces of the IPv6 Topology Dataset.",
+    "tags": [
+        "active",
+        "topology",
+        "traceroute",
+        "dns",
+        "IPv6"
+    ],
+    "status": "active",
+    "resources": [
+        {
+            "name": "webpage",
+            "url": "https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml"
+        }
+    ]
+}
