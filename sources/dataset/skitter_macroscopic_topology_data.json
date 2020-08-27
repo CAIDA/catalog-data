@@ -2,7 +2,7 @@
     "id": "skitter_macroscopic_topology_data",
     "name": "Skitter Macroscopic Topology Data",
     "organization": "CAIDA",
-    "description": "First released in 1998, skitter is a tool for actively probing the Internet in order to analyze topology and performance. Skitter was also used in reference to the Macroscopic Topology Measurements Project and the Skitter infrastructure, which has since been replaced with the Archipelago (Ark) infrastructure.",
+    "description": "First released in 1998, skitter is a tool for actively probing the Internet in order to analyze topology and performance. Skitter was also used in reference to the Macroscopic Topology Measurements Project and the Skitter infrastructure, which has since been replaced with the Archipelago (Ark) infrastructure. On Feb 8, 2008, after 10 years of data collection and 4TB of data, we deactivated skitter data collection and transitioned to our next generation topology measurement infrastructure named Archipelago (Ark). We already perform large-scale topology measurements on Ark, and we recommend researchers use this new dataset, which employs an improved measurement methodology. The new IPv4 Routed /24 Topology Dataset collected on Ark extends back to Sep 13, 2007 and overlaps with the last five months of skitter data.",
     "tags": [
         "topology",
         "ipv4",

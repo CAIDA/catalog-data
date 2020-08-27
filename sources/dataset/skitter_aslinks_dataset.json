@@ -14,7 +14,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/skitter-itdk/",
+            "url": "https://www.caida.org/data/active/skitter_aslinks_dataset.xml",
             "tags": [
                 "file"
             ]
