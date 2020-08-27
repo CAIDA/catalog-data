@@ -33,11 +33,11 @@
             "label": "used"
         },
         {
-            "to": "dataset:MaxMind_GeoLite",
+            "to": "software:maxmind_geolite",
             "label": "used"
         },
         {
-            "to": "dataset:Netacuity_Edge",
+            "to": "software:netacuity",
             "label": "used"
         }
     ]
