@@ -647,9 +647,9 @@ def person_add_names(person):
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
-                names = person["id"][7:].split("_")
+                names = person["id"][7:].split("__")
             else:
-                names = person["id"].split("_")
+                names = person["id"].split("__")
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
