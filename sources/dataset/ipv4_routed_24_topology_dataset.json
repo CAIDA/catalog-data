@@ -5,7 +5,8 @@
     "tags": [
         "active",
         "topology",
-        "traceroute"
+        "traceroute",
+        "ipv4"
     ],
     "status": "active",
     "resources": [

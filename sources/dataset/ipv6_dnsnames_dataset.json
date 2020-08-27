@@ -7,7 +7,7 @@
         "topology",
         "traceroute",
         "dns",
-        "IPv6"
+        "ipv6"
     ],
     "status": "active",
     "resources": [
