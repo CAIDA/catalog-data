@@ -1,0 +1,28 @@
+{
+    "id": "skitter_macroscopic_topology_data",
+    "name": "Skitter Macroscopic Topology Data",
+    "organization": "CAIDA",
+    "description": "First released in 1998, skitter is a tool for actively probing the Internet in order to analyze topology and performance. Skitter was also used in reference to the Macroscopic Topology Measurements Project and the Skitter infrastructure, which has since been replaced with the Archipelago (Ark) infrastructure.",
+    "tags": [
+        "topology",
+        "ipv4",
+        "deactivated",
+        "skitter"
+    ],
+    "dateStart": "1998",
+    "dateEnd":"2008.02",
+    "status": "complete",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/measurement/skitter/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": []
+}
