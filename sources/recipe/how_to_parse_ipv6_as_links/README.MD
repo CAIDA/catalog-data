@@ -1,3 +1,24 @@
+## Visibility - Which monitors saw which ipv6 AS links ##
+~~~
+{
+  "name": "Visibility/Which monitors saw which ipv6 AS links on selected date?",
+  "descriptions": "This solution parses through an arks ipv6 AS links file and produces an object mapping monitor ID to city, country and AS links.",
+  "links": [
+    "dataset:as_links"
+  ],
+  "tags": [
+    "measurement methodology",
+    "topology",
+    "software/tools",
+    "asn",
+    "ipv6",
+    "ipv6 prefix"
+  ]
+}
+~~~
+
+
+
 ## <ins> Introduction </ins> ##
 
 
