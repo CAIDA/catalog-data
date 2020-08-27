@@ -200,6 +200,7 @@ def main():
         "Media":object_checker
     }
 
+    print ("checking objects")
     id_failed = []
     for id_,obj in id_object.items():
         type_ = obj["__typename"]

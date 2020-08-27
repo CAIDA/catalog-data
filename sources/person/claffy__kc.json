@@ -5,5 +5,12 @@
     ],
     "nameLast": "Claffy",
     "nameFirst": "Kc",
-    "name": "Claffy, Kc"
+    "name": "Claffy, Kc",
+    "names": [ 
+        {
+            "nameLast":"Claffy",
+            "nameFirst":"Kimberly"
+        }
+    ]
+
 }
