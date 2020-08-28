@@ -16,7 +16,7 @@
     ]
 }
 ~~~
-### <ins> Mapping ASN's to country </ins> ###
+###  Mapping ASN's to country 
 *AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)
 
 One way to map a ASN to a country is by mapping to the **country of its organization.** 
@@ -36,7 +36,7 @@ LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
 1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN
 ~~~
 
-### Explanation of the data fields ###
+### Explanation of the data fields 
 
 --------------------
 Organization fields
@@ -62,7 +62,7 @@ AS fields
 **source**  : the RIR or NIR database which was contained this entry 
 
     
-### <ins> Solution </ins> ###
+### Solution 
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
 {'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', 
 `org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
@@ -121,7 +121,7 @@ with open(filename) as f:
 # print(asn_info)       
             
 ~~~
-### <ins> Background </ins> ###
+### Background 
 
 **What is an AS?**\
  • AS stands for Autonomous system.\
@@ -140,7 +140,7 @@ with open(filename) as f:
 **What is an ASN's country?** \
     • The country where the ASN's organization is located. 
     
-### <ins> Caveats </ins> ###
+### <ins> Caveats </ins> 
 
 For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. 
 In other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. 

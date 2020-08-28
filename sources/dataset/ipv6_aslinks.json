@@ -1,0 +1,29 @@
+{
+    "id": "ipv6_aslinks",
+    "name": "IPv6 AS Links",
+    "organization": "CAIDA",
+    "description": "This dataset is useful for studying the topology of the Internet at the level of Autonomous Systems (ASes), which are approximately network(s) under a single administrative control. ASes are an important abstraction because they are the \"unit of routing policy\" in the routing system of the global Internet. ASes peer with each other to exchange traffic, and these peering relationships define the high-level global Internet topology. For the purposes of analysis, these peering relationships are represented with an AS graph, where nodes represent ASes and links represent peering relationships.",
+    "tags": [
+        "topology",
+        "ipv6"
+    ],
+    "dateStart": "2008.12",
+    "status": "ongoing",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/active/ipv6_aslinks_dataset.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to":"dataset:ipv6_aslinks_dataset"
+        }
+    ]
+}

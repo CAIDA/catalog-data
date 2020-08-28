@@ -1,4 +1,4 @@
-## How to use PyBGPStream ##
+## How to use PyBGPStream 
 ~~~
 {
   "name": "How to use PyBGPStream?",
@@ -17,13 +17,13 @@
 
 The following solution provides an in-depth explanation of how to install and use **PyBGPStream** with an example. 
 
- ## <ins> Introduction </ins> ##
+ ## <ins> Introduction </ins> 
 PyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. 
 
 PyBGPStream provides two Python modules, `_pybgpstream`, a low-level (almost) direct interface to the [libBGPStream]( https://bgpstream.caida.org/ ) C API, and `pybgpstream`, a high-level 'Pythonic' interface to the functionality provided by `_pybgpstream`. 
 
 
-### Solution ###
+### Solution 
 
 The following code snippet demonstrates the use of **PyBGPStream**.\
 The script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_use_pybgpstream/sources/solution/how_to_use_pybgspstream/pybgpstream-example.py ).
@@ -57,10 +57,10 @@ for elem in stream:
 • `prefix`: The IP address prefix 
 
 
-## <ins> Background </ins>  ##
+## <ins> Background </ins>  
 
 
-###  Definitions ### 
+###  Definitions  
 • **Organization** : Each ASN can be mapped to an organization that controls multiple AS's over its network.\
 • **Customer** : ASes at lower levels are customers who pay ISPs (providers) at higher levels in exchange for access to the rest of the Internet. \
 • **Peer** : Peer-to-peer links (p2p) connects two ISPs who have agreed to exchange traffic on a quid pro quo basis. Peers should exchange traffic only between each other and each other's customers. \
@@ -74,7 +74,7 @@ More information on AS relationships can be found [here]( https://asrank.caida.o
 
 
 
-### Installation ###
+### Installation 
 To get started using PyBGPStream, first [install libBGPStream]( https://bgpstream.caida.org/docs/install/pybgpstream ).
 
 Then, you should be able to install PyBGPStream using pip: 
@@ -135,7 +135,7 @@ These scripts can be found [here]( https://bgpstream.caida.org/docs/tutorials/py
  ). 
  
  
- ## Caveats ## 
+ ## Caveats 
  • The script includes the line `stream.add_rib_period_filter(86400)`\
  • This limits BGPStream to download the full first BGP dump. \
  • More information on `add_rib_period_filter` and other **pybgpstream** methods can be found [here]( https://bgpstream.caida.org/docs/api/pybgpstream/_pybgpstream.html ).

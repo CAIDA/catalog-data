@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="362.75 49.73828 520.036 419.6574" width="520.036" height="419.6574">
+=======
+<svg version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="341.078 49.73828 541.708 425.27966" width="541.708" height="425.27966">
+>>>>>>> ark
   <defs>
     <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 8 3 0 0 0 9 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="975.0061" descent="-216.99524" font-weight="700">
       <font-face-src>
@@ -13,8 +17,15 @@
       </font-face-src>
     </font-face>
   </defs>
+<<<<<<< HEAD
   <metadata> Produced by OmniGraffle 7.17.3\n2020-08-20 17:07:01 +0000</metadata>
   <g id="Canvas_1" fill-opacity="1" stroke="none" stroke-dasharray="none" stroke-opacity="1" fill="none">
+=======
+  <metadata> Produced by OmniGraffle 7.17 
+    <dc:date>2020-08-14 01:57:28 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill="none" fill-opacity="1">
+>>>>>>> ark
     <title>Canvas 1</title>
     <rect fill="white" x="362.75" y="49.73828" width="520.036" height="419.6574"/>
     <g id="Canvas_1_Layer_1">
@@ -36,7 +47,7 @@
       </g>
       <g id="Graphic_9">
         <text transform="translate(806.76 120)" fill="black">
-          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="0" y="16">solution</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="700" fill="black" x="0" y="16">recipe</tspan>
         </text>
       </g>
       <g id="Line_12">

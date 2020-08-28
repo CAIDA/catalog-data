@@ -20,10 +20,10 @@
     ]
 }
 ~~~
-## **<ins> Introduction </ins>**
+## Introduction
 The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
-## **<ins> Solution </ins>**
+##  Solution
 The full script could be found in [parse_ark_traceroute.py](https://github.com/CAIDA/catalog-data/blob/how_to_annotate_an_ark_traceroute_with_hostnames/sources/solution/how_to_annotate_an_ark_traceroute_with_hostnames/parse_ark_traceroute.py) \
 **Usage:** ` python parse_ark_traceroute.py -t <traceroute dataset> -d <dns dataset>` 
 
@@ -101,7 +101,7 @@ def parse_trace(trace, single_IP=False):
             
 ~~~
 
-##  **<ins> Background </ins>**
+## Background 
 
 ### What is a Traceroute?
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
@@ -115,7 +115,7 @@ Scamper's native output file format is called **warts**: a warts file contains s
 - Download source code from [here](https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz) 
 - Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
-### Dataset ###
+### Dataset
 #### IPv4 Prefix-Probing Traceroute Dataset
 More information and download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml) \
 Directory:` /datasets/topology/ark/ipv4/prefix-probing`

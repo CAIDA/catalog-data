@@ -19,7 +19,7 @@
     ],
     "links": [
         {
-            "to": "dataset:itdk",
+            "to": "dataset:internet-topology-data-kit",
             "label": "used by"
         },
         {
