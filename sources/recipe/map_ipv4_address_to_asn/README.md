@@ -23,11 +23,11 @@
 }
 ~~~
 
-### PyIPMeta ###
+### PyIPMeta
 
 PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.
 
-#### Pre-requisites ####
+#### Pre-requisites
 
 Before installing PyIPMeta, you will need:\
 • [libipmeta(>= 3.0.0)]( https://github.com/CAIDA/libipmeta)\
@@ -40,7 +40,7 @@ Detailed installation and usage instructions [here]( https://github.com/CAIDA/py
 
 The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
 
-### Map between ips and origin asns using PyIPMeta ###
+### Map between ips and origin asns using PyIPMeta
 
 For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta)\
 More data can be found at http://data.caida.org/datasets/routing/routeviews-prefix2as/
@@ -85,7 +85,7 @@ for ip in ips:
 # print(ip2asn)
 ~~~
 
-### <ins> Background </ins> ###
+### Background
 
 **What is an IPv4 address prefix?** \
 • An *IP address* is a 32-bit unique address that is used to recognize a computer network or a machine. All computers on   the same data network share the same IP address.\
@@ -122,14 +122,14 @@ It finds the prefix matching the given IP address and returns the corresponding 
  • It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\
  • More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)
 
-### <ins> Caveats </ins> ###
+### Caveats
 • **Multi-origin AS** : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\
 This makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's.  \
 • **Third-party AS's** \
 • Border routers may use a third-party address when responding to traceroute probes. \
 • A third-party address is an IP address corresponding to an AS that is not on the path toward a destination.
 
-### <ins> Note: </ins> ###
+### Note:
 • `pyasn` can also be used for mapping between ipv4 addresses and origin asns.\
 • The `pyasn` object is be initialized using an IPASN datafile. \
 • It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.\

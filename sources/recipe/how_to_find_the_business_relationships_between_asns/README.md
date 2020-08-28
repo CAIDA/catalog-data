@@ -16,7 +16,7 @@
 }
 ~~~
 
-## **<ins>Introduction</ins>**
+## Introduction
 
 The following solution has two scripts. One script handles a [local input](pair_2_rel.py), and one that [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, ```pair_2_rel``` which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.
 
@@ -152,7 +152,7 @@ def get_relationship(asn0, asn1):
         return None
 ~~~
 
-## **<ins>Background</ins>**
+## Background
 
 ### What is an AS Relationship
 

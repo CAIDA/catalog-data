@@ -16,10 +16,10 @@
     ]
 }
 ~~~
-## **<ins> Introduction </ins>**
+## Introduction
 The solution annotates AS relationships with geographic annotations.
 
-## **<ins> Solution </ins>**
+## Solution
 
 The full script could be found in annotate_as_relationships_with_geo.py \
 **Usage:** `python annotate_as_relationships_with_geo.py -a <as-relationship dataset> -l <location dataset>`
@@ -87,7 +87,7 @@ Example of return value. Note that if geolocation info of the ASN is not in `geo
 {'2': {'34': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}, '34': {'2': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}}
 ~~~
  
-##  **<ins> Background </ins>**
+##  Background
 
 ### Dataset ###
 #### AS Relationships - with geographic annotations
