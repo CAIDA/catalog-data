@@ -16,7 +16,7 @@
     ]
 }
 ~~~
-### <ins> Mapping ASN's to country </ins> 
+###  Mapping ASN's to country 
 *AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)
 
 One way to map a ASN to a country is by mapping to the **country of its organization.** 
@@ -62,7 +62,7 @@ AS fields
 **source**  : the RIR or NIR database which was contained this entry 
 
     
-### <ins> Solution </ins> 
+### Solution 
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:\
 {'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', 
 `org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
@@ -121,7 +121,7 @@ with open(filename) as f:
 # print(asn_info)       
             
 ~~~
-### <ins> Background </ins> 
+### Background 
 
 **What is an AS?**\
  • AS stands for Autonomous system.\
