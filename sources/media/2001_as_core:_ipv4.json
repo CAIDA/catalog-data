@@ -1,0 +1,28 @@
+{
+    "id": "2001_as_core:_ipv4",
+    "name": "2001 AS Core: IPv4",
+    "description": "",
+    "tags":[
+        "skitter",
+        "ipv4",
+        "poster",
+        "as_core"
+    ],
+    "links":[
+        {"to":"dataset:skitter_internet_topology_data_kit"}
+    ],
+    "date":"2001.06",
+    "type":"POSTER",
+    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2001-jul-ipv4-standalone-1600x1333.png",
+    "resources":[
+        {
+            "name":"URL",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2001-jul-ipv4-standalone-1600x1333.png",
+            "tags":[
+                "url",
+                "poster"
+            ]
+        }
+    ],
+    "authors":[]
+}

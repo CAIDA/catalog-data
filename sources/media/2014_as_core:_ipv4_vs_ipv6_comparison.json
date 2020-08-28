@@ -1,0 +1,37 @@
+{
+    "id": "2014_as_core:_ipv4_vs_ipv6_comparison",
+    "name": "2014 AS Core: IPv4 vs IPv6 comparison",
+    "description": "37,541,408 IP addresses, 31,075,574 IP links, 263 million destinations, 92.4% of globally routable network prefixes, 37,197 Autonomous Systems (ASes), 130,095 peering sessions. Data collected from 74 monitors located in 33 countries on 6 continents.  51,884 IPv6 addresses, 133,988 IPv6 links, 3.3 million destinations, 76.1% of globally routeable network prefixes, 4,337 Autonomous Systems (ASes), 16,856 peering sessions. Data collected from 33 Ark monitors located in 21 countries on 6 continents.",
+    "tags":[
+        "ark",
+        "ipv4",
+        "ipv6",
+        "poster",
+        "analysis",
+        "as_core"
+    ],
+    "links":[
+        {"to":"dataset:internet_topology_data_kit"},
+        {"to":"dataset:as_relationships"}
+    ],
+    "date":"2014.01",
+    "type":"POSTER",
+    "image":"https://www.caida.org/research/topology/as_core_network/pics/2014/ascore-2014-jan-ipv4v6-poster-2000x1294.png",
+    "resources":[
+        {
+            "name":"URL",
+            "url":"https://www.caida.org/research/topology/as_core_network/2014/",
+            "tags":[
+                "url",
+                "poster"
+            ]
+        }
+    ],
+    "authors":[
+        "person:huffaker_bradley",
+        "person:claffy_kc",
+        "person:hyun_young",
+        "person:luckie_matthew",
+        "person:on_hanh"
+    ]
+}
