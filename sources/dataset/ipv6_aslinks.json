@@ -23,7 +23,7 @@
     ],
     "links": [
         {
-            "to":"dataset:ipv6_aslinks_dataset"
+            "to":"dataset:ipv6_aslinks"
         }
     ]
 }
