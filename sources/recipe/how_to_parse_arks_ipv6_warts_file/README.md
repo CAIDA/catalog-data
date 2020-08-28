@@ -21,12 +21,12 @@
 ~~~
 
 
-## <ins> Introduction </ins>
+## Introduction
 
 The following solution parses through an [arks ipv6 warts file](https://www.caida.org/data/request_user_info_forms/ark.xml ) and produces a sorted list of ipv6 addresses and asns. 
 
 
-## <ins> Solution </ins>
+## Solution
 
 The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/recipe/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
@@ -103,7 +103,7 @@ def create_asns():
 
 ~~~
 
-## <ins> Background </ins> 
+## Background
 
 ### Traceroute 
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
@@ -168,5 +168,5 @@ Detailed installation instructions and more information on Usage and IPASN data 
 
 
 
-## <ins> Caveats </ins> 
+## Caveats
 • **Multi-origin AS**: A multi-origin AS occurs when a given BGP prefix is announced by more than one AS. These multi-origin AS are dropped when creating the pyasn object i.e this script ignores multi-origin AS. 

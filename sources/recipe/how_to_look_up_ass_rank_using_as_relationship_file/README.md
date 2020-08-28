@@ -15,7 +15,7 @@
 }
 ~~~
 
-## **<ins>Introduction</ins>**
+## Introduction
 
 This solution helps classify an asn based upon its relationships to other asns. The following [script](rel_2_class.py) takes in all AS Relationships from a local .as-rel file to determine every asn's classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The classifications for each asn is then printed to STDOUT.
 
@@ -28,7 +28,7 @@ Below is an example of how to run the script on AS Relationships dataset from Ja
 python3 api_2_class.py -r 20200101.as-rel.txt > output.jsonl
 ```
 
-## **<ins>Solution</ins>**
+## Solution
 
 Below is a helper method used to parse a given line from a .as-rel file. This is called once opening the given file and iterating over each line. The line is split into it's three values, which are then used to update ```as_2_data``` with each asn's providers and customers.
 
@@ -94,7 +94,7 @@ def update_classifications():
             as_2_class[asn]["class"] = "middle"
 ~~~
 
-## **<ins>Background</ins>**
+## Background
 
 ### What is an AS Relationship?
 - An AS Relationship is the determined routing policy between two ASes.
