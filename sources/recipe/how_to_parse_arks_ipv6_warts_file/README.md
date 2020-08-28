@@ -1,5 +1,5 @@
 
-## How to parse arks ipv6 warts file ##
+## How to parse arks ipv6 warts file
 ~~~
 {
   "name": "How to parse arks ipv6 warts file?",
@@ -21,16 +21,16 @@
 ~~~
 
 
-## <ins> Introduction </ins> ##
+## <ins> Introduction </ins>
 
 The following solution parses through an [arks ipv6 warts file](https://www.caida.org/data/request_user_info_forms/ark.xml ) and produces a sorted list of ipv6 addresses and asns. 
 
 
-## <ins> Solution </ins> ## 
+## <ins> Solution </ins>
 
 The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/recipe/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
-### Datasets ###
+### Datasets
 • `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. \
 Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). \
 • `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). The script can accept both .gz files as well as unzipped .prefix2as6 files. \
@@ -44,7 +44,7 @@ $ sc_warts2json topo-v6.l8.20200101.1577836855.yxu-ca.warts > test.json
 $ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.pfx2as.gz -d test.dat
 ~~~
 
-### Methods ### 
+### Methods  
 create_ips() takes in one input: \
 • `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/data/request_user_info_forms/ark.xml).\
 Instructions to obtain .json file: 
@@ -103,19 +103,19 @@ def create_asns():
 
 ~~~
 
-## <ins> Background </ins> ## 
+## <ins> Background </ins> 
 
-### Traceroute ###
+### Traceroute 
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
 More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute). 
 
-### TTL ### 
+### TTL 
 TTL stands for Time To Live. When a TCP packet is sent, its TTL is set, which is the number of routers (hops) it can pass through before the packet is discarded. As the packet passes through a router the TTL is decremented until, when the TTL reaches zero, the packet is destroyed and an ICMP "time exceeded" message is returned. The return message's TTL is set by the terminating router when it creates the packet, and decremented normally.
 
 More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node77.html ). 
 
 
-### Traceroute data field description ###
+### Traceroute data field description 
 
 | Data Field       |   Meaning                                                                                        |
 | -------------    | -----------------------------------------------------------------------------------------------  |
@@ -124,7 +124,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 |  icmp_ttl        | This is the remaining TTL value after it has been decremented by the intermediate routers.       | 
 
 
-### IPv6 address ###
+### IPv6 address 
 • An *IPv6 address* is a 128-bit unique address that is used to recognize a computer network or a machine. All computers on the same data network share the same IPv6 address.\
 • IPv6 addressing is a successor to IPv4 addressing. \
 • An IPv4 address is 32 bit, whereas an IPv6 address is 128 bit. \
@@ -136,7 +136,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 • More information on IPv6 addresses and prefixes found [here]( https://docs.oracle.com/cd/E19253-01/816-4554/6maoq01nv/index.html ).
 
 
-### Scamper ###
+### Scamper 
 
 • The Scamper utility is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion.\
 • Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. \
@@ -145,12 +145,12 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 More information on Scamper found [here]( https://www.caida.org/tools/measurement/scamper/
  ).
 
-### pyasn ###
+### pyasn 
 **pyasn** is a Python extension module that enables very fast IP address to Autonomous System Number lookups. Current state and Historical lookups can be done, based on the MRT/RIB BGP archive used as input. 
 
 **pyasn** is different from other ASN lookup tools in that it provides offline and historical lookups. It provides utility scripts for users to build their own lookup databases based on any MRT/RIB archive. This makes pyasn much faster than online dig/whois/json lookups.
 
-#### Installation ####
+#### Installation 
 ~~~
 $ pip install pyasn -- pre
 ~~~
@@ -168,5 +168,5 @@ Detailed installation instructions and more information on Usage and IPASN data 
 
 
 
-## <ins> Caveats </ins> ##
+## <ins> Caveats </ins> 
 • **Multi-origin AS**: A multi-origin AS occurs when a given BGP prefix is announced by more than one AS. These multi-origin AS are dropped when creating the pyasn object i.e this script ignores multi-origin AS. 
