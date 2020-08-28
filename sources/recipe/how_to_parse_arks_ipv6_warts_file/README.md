@@ -3,7 +3,7 @@
 ~~~
 {
   "name": "How to parse arks ipv6 warts file?",
-  "descriptions": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns.",
+  "description": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns.",
   "links": [
     "software:pyasn",
     "software:scamper",
