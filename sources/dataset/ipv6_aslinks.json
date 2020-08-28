@@ -20,5 +20,10 @@
     ],
     "licenses": [
         "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to":"dataset:ipv6_aslinks"
+        }
     ]
 }
