@@ -2,7 +2,7 @@
 ~~~
 {
   "name": "How to use PyBGPStream?",
-  "descriptions": "Gives a simple example of using PyBGPStream",
+  "description": "Gives a simple example of using PyBGPStream",
   "links": [
     "software:bgpstream"
   ],
