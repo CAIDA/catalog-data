@@ -43,7 +43,8 @@ def main():
                         id_ = name_id[name] = utils.id_create(fname, type_,obj["id"])
         
     for obj in objects:
-        #print (json.dumps(obj, indent=4))
+        #if obj["__typename"] == "media":
+        #    print (json.dumps(obj, indent=4))
         #print (obj["__typename"], obj["id"])
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")

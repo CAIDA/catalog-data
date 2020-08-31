@@ -1,6 +1,6 @@
 ~~~
 {
-  "question": "How to find the origin ASN for a IPv4 address with Python?",
+  "name": "How to find the origin ASN for a IPv4 address with Python?",
   "description": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns.",
   "links": [
     {

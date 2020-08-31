@@ -63,8 +63,9 @@ id_word_score = {}
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
-re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
-re_word = re.compile("^[a-z]+$",re.IGNORECASE)
+re_not_word = re.compile("[\s ,\?\.\(\)\:_]+")
+re_word = re.compile("^[a-z0-9]+$",re.IGNORECASE)
+re_year = re.compile("^(\d\d\d\d)")
 
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
@@ -89,51 +90,21 @@ filename_errors = {}
 # Weights used to create word scoring for search
 weight_default = 1
 key_weight = {
-    "__typename":0,
-    "id":0,
     "name": 10,
-    "tags": 10,
-    "description": 5,
-    "content": 3
-}
-link_weight = {
-    "Paper":.3,
-    "Dataset":.5,
-    "Software":.3,
-    "Recipe":.3
-}
-
-type_key_w_type_w = {
-    "datasets": {
-        "key_weights": [
-            ["name", 10],
-            ["description",1],
-            ["tags",.5]
-        ],
-        "link_weights":[ 
-            ["papers",.5],
-        ]
-    },
-    "papers": {
-        "key_weights": [
-            ["name", 10],
-            ["description",8]
-        ],
-        "type_weights":[ 
-            ["tags",.5],
-            ["datasets", .5]
-        ]
-    },
-    "papers": {
-        "key_weights": [
-            ["name", 10],
-            ["description",8]
-        ],
-        "type_weights":[ 
-            ["tags",.5],
-            ["datasets", .5]
-        ]
-    }
+    "nameLast": 10,
+    "nameFirst":10,
+    "date":10,
+    "visibility":5,
+    "organization":5,
+    "status":5,
+    "tags": 5,
+    "person": 5,
+    "venue": 5,
+    "publisher": 3,
+    "description": 3,
+    "content": 2,
+    "resources":1,
+    "type":1
 }
 
 id_missing = {}
@@ -228,9 +199,8 @@ def main():
     #######################
     # ca
     #######################
-    for i in range(0,10):
-        for obj in id_object.values():
-            object_score_update(obj)
+    for obj in id_object.values():
+        object_score_update(obj)
         
     print ("adding words")
     word_score_id = {}
@@ -672,40 +642,76 @@ def object_checker(obj):
 
 #############################
 
-def object_score_update(obj, recursive=False):
+key_word_seen = set()
+key_word_skip = set(["bibtexFields","pubdb_id","linkedObjects","__typename","filename","id","licenses","url","image"])
+def object_score_update(obj):
     word_score = {"":1}
     for key,value in obj.items():
-        if key in key_weight:
+        if key == "tags":
             weight = key_weight[key]
-        else:
-            weight = weight_default
-
-        if weight == 0:
-            continue
-
-        word_freq = word_freq_get(value)
-        for word,freq in word_freq.items():
-            word = word.lower()
-            if word not in word_score:
-                word_score[word] = weight*freq
-            else:
-                word_score[word] += weight*freq 
-    id1 = obj["id"]
-    if id1 in id_id_link:
-        for id2 in id_id_link[id1].keys():
-            if id2 in id_word_score:
-                if id1[0:3] == "tag" or id2[0:3] == "tag":
-                    wieght = 0
+            for tag in obj["tags"]:
+                word_score_add(word_score, tag[4:], weight)
+        elif key[0:4] == "date":
+            word_score_date(word_score, value)
+        elif key == "resources":
+            weight = key_weight["date"]
+            for resource in obj["resources"]:
+                for word,freq in word_freq_get(resource["name"]).items():
+                    word_score_add(word_score, word, freq*weight)
+        elif key == "presenters" or key == "authors":
+            for presenter in obj[key]:
+                if type(presenter) == str: 
+                    person = presenter
                 else:
-                    wieght = .1
-                if wieght > 0:
-                    for word,score in id_word_score[id2].items():
-                        if word not in word_score:
-                            word_score[word] = wieght*score
-                        else:
-                            word_score[word] += wieght*score
+                    if "person" in presenter:
+                        person = presenter["person"]
+                    else:
+                        person = None
+                    if "date" in presenter:
+                        word_score_date(word_score, presenter["date"])
+                    if "organizations" in presenter:
+                        for org in presenter["organizations"]:
+                            word_score_add(word_score, org, key_weight["organization"])
+                if person is not None:
+                    person = person[7:]
+                    for word,freq in word_freq_get(person).items():
+                        word_score_add(word_score, word, key_weight["person"])
 
-    id_word_score[id1] = word_score
+        elif key in key_weight:
+            weight = key_weight[key]
+
+            for word,freq in word_freq_get(value).items():
+                word_score_add(word_score, word, freq*weight)
+
+        #elif key not in key_word_seen:
+            #if key not in key_word_skip:
+                #print (obj["filename"], key,value)
+                #key_word_seen.add(key)
+
+    #id1 = obj["id"]
+    #if id1 in id_id_link:
+        #for id2 in id_id_link[id1].keys():
+            #if id2[0:3] == "tag":
+                #for word in id_object[id2]["name"]:
+                    #if word not in word_score:
+                        #word_score[word] = weight
+                    #else:
+                        #word_score[word] += weight
+
+    id_word_score[obj["id"]] = word_score
+
+def word_score_date(word_score, value):
+    weight = key_weight["date"]
+    m = re_year.search(value)
+    if m:
+        word_score_add(word_score, m.groups()[0], weight)
+
+def word_score_add(word_score, word, freq):
+    word = word.lower()
+    if word not in word_score:
+        word_score[word] = freq
+    else:
+        word_score[word] += freq 
 
 def word_freq_get(value):
     word_freq = {}
