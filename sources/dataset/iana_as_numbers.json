@@ -8,6 +8,7 @@
         "iana",
         "autonomous system numbers"
     ],
+    "status":"ongoing",
     "resources": [
         {
             "name": "asn_16_bit",

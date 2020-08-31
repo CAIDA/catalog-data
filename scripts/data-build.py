@@ -287,7 +287,35 @@ def object_date_add(obj):
                 obj["date"] = obj[key]
 
     if "date" not in obj:
-        obj["date"] = obj["dateLastUpdated"]
+        t_ = obj["__typename"]
+        if t_ == "Dataset" and obj["id"] in id_id_link:
+
+            if "dateEnd" in obj:
+                obj["date"] = obj["dateEnd"]
+            elif "dateStart" in obj:
+                obj["date"] = obj["dateStart"]
+            else:
+                for id_ in id_id_link[obj["id"]]:
+                    if id_ in id_object:
+                        o = id_object[id_]
+                        if o["__typename"] == "Paper" and "datePublished" in o:
+                            d = o["datePublished"]
+                            if "date" not in obj or obj["date"] > d:
+                                obj["date"] = d
+                        if o["__typename"] == "Media" and "presenters" in o:
+                            for p in o["presenters"]:
+                                if "date" in p:
+                                    d = p["date"]
+                                    if "date" not in obj or obj["date"] > d:
+                                        obj["date"] = d
+
+            if "date" not in obj and "status" in obj and obj["status"] == "ongoing":
+                obj["date"] = obj["dateLastUpdated"]
+            #if "date" not in obj:
+                #error_add(obj["filename"], "failed to find date for "+obj["id"])
+                #obj["date"] = obj["dateCreated"]
+        elif t_ == "recipe" or t_ =="tag" or t_ == "person" or t_ == "group":
+            obj["date"] = obj["dateLastUpdated"]
 
     parts = re.split("[^\d]+",obj["date"])
     if len(parts) < 2:
