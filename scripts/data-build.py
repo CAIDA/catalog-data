@@ -281,7 +281,7 @@ def object_date_add(obj):
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
     else:
-        for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
+        for type_key in [["Dataset","dateStart"], ["Media","datePublished"]]:
             type_,key = type_key
             if obj["__typename"] == type_ and key in obj:
                 obj["date"] = obj[key]
@@ -309,18 +309,17 @@ def object_date_add(obj):
                                     if "date" not in obj or obj["date"] > d:
                                         obj["date"] = d
 
-            if "date" not in obj and "status" in obj and obj["status"] == "ongoing":
-                obj["date"] = obj["dateLastUpdated"]
             #if "date" not in obj:
                 #error_add(obj["filename"], "failed to find date for "+obj["id"])
                 #obj["date"] = obj["dateCreated"]
-        elif t_ == "recipe" or t_ =="tag" or t_ == "person" or t_ == "group":
+        elif t_ == "recipe" or t_ =="tag" or t_ == "person" or t_ == "group" or t_ == "software":
             obj["date"] = obj["dateLastUpdated"]
 
-    parts = re.split("[^\d]+",obj["date"])
-    if len(parts) < 2:
-        parts[2] = "01"
-    obj["date"] = parts[0]+"."+parts[1]
+    if "date" in obj:
+        parts = re.split("[^\d]+",obj["date"])
+        if len(parts) < 2:
+            parts[2] = "01"
+        obj["date"] = parts[0]+"."+parts[1]
 
 ###########################
 
