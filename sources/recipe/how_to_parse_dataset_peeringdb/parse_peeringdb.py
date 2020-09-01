@@ -5,9 +5,9 @@ import json
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', dest='dataset', default=None, help='')
+    parser.add_argument('-d', dest='dataset', default=None, help='Input dataset filename.')
     parser.add_argument('-get', dest='type', type=str, help='Input what kind of object you would like to get.')
-    parser.add_argument('-id', dest='single_id', type=int)
+    parser.add_argument('-id', dest='single_id', type=int, help='Input the id of single object you would like to get.')
     args = parser.parse_args()
 
     if args.dataset.endswith('.json') and args.type and not args.single_id:
