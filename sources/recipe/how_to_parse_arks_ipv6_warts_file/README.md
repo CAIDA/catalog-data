@@ -2,7 +2,7 @@
 ## How to parse arks ipv6 warts file
 ~~~
 {
-  "name": "How to parse arks ipv6 warts file?",
+  "name": "How to parse Ark IPv6 warts file?",
   "description": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns.",
   "links": [
     "software:pyasn",
