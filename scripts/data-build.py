@@ -221,7 +221,7 @@ def main():
 
     print ("writing",word_id_score_file)
     #json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
-    json.dump(word_id_score, open(word_id_score_file,"w"))
+    json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
 
 ###########################
 def error_add(filename, message):
