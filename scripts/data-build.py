@@ -200,7 +200,7 @@ def main():
     # ca
     #######################
     for obj in id_object.values():
-        object_score_update(obj)
+        object_word_update(obj)
         
     print ("adding words")
     word_id_score = {}
@@ -664,7 +664,7 @@ def object_checker(obj):
 
 key_word_seen = set()
 key_word_skip = set(["bibtexFields","pubdb_id","linkedObjects","__typename","filename","id","licenses","url","image"])
-def object_score_update(obj):
+def object_word_update(obj):
     word_score = {"":1}
     for key,value in obj.items():
         if key == "tags":
@@ -676,8 +676,7 @@ def object_score_update(obj):
         elif key == "resources":
             weight = key_weight["date"]
             for resource in obj["resources"]:
-                for word,freq in word_freq_get(resource["name"]).items():
-                    word_score_add(word_score, word, freq*weight)
+                word_score_add(word_score, resource["name"], weight)
         elif key == "presenters" or key == "authors":
             for presenter in obj[key]:
                 if type(presenter) == str: 
@@ -694,8 +693,7 @@ def object_score_update(obj):
                             word_score_add(word_score, org, key_weight["organization"])
                 if person is not None:
                     person = person[7:]
-                    for word,freq in word_freq_get(person).items():
-                        word_score_add(word_score, word, key_weight["person"])
+                    word_score_add(word_score, person, key_weight["person"])
 
         elif key in key_weight:
             weight = key_weight[key]
@@ -726,12 +724,13 @@ def word_score_date(word_score, value):
     if m:
         word_score_add(word_score, m.groups()[0], weight)
 
-def word_score_add(word_score, word, freq):
-    word = word.lower()
-    if word not in word_score:
-        word_score[word] = freq
-    else:
-        word_score[word] += freq 
+def word_score_add(word_score, string, weight):
+    for word,freq in word_freq_get(string).items():
+        word = word.lower()
+        if word not in word_score:
+            word_score[word] = freq*weight
+        else:
+            word_score[word] += freq*weight
 
 def word_freq_get(value):
     word_freq = {}

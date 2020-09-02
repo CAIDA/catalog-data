@@ -4,7 +4,6 @@
     "description": "An animated slideshow presentation of the history of IPv4, using a Sankey diagram to visualize the flow of IPv4 address allocations since inception in 1977, through various address management organizations and policies.",
     "tags":["ipv4", "sankey", "presentation"],
     "links":[
-        {"to":"media:ipv4_history_viz_video"}
     ],
     "date":"2020.08",
     "type":"PRESENTATION",
@@ -15,8 +14,17 @@
         }
     ],
     "authors":[
-        "person:lee_nicole",
-        "person:huffaker_bradley",
-        "person:claffy_kc"
+        {
+            "person":"person:lee_nicole",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        },
+        {
+            "person":"person:huffaker__bradley",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        },
+        {
+            "person":"person:claffy__kc",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
