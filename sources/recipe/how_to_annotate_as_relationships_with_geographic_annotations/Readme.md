@@ -21,7 +21,7 @@ The solution annotates AS relationships with geographic annotations.
 
 ## Solution
 
-The full script could be found in annotate_as_relationships_with_geo.py \
+The full script could be found in annotate_as_relationships_with_geo.py 
 **Usage:** `python annotate_as_relationships_with_geo.py -a <as-relationship dataset> -l <location dataset>`
 
 Below is the method used to load geolocation info from location dataset and store them in `geo_info` in dictionary. Then load AS relationships from AS-relationship dataset, map ASN with corresponding geolocation info and return annotated AS relationships in `as_rel_geo`.   

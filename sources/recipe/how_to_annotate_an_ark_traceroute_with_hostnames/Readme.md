@@ -24,10 +24,10 @@
 The solution parses traceroutes in ark warts file and annotates IPs with hostnames. 
 
 ##  Solution
-The full script could be found in [parse_ark_traceroute.py](https://github.com/CAIDA/catalog-data/blob/how_to_annotate_an_ark_traceroute_with_hostnames/sources/solution/how_to_annotate_an_ark_traceroute_with_hostnames/parse_ark_traceroute.py) \
+The full script could be found in [parse_ark_traceroute.py](https://github.com/CAIDA/catalog-data/blob/how_to_annotate_an_ark_traceroute_with_hostnames/sources/solution/how_to_annotate_an_ark_traceroute_with_hostnames/parse_ark_traceroute.py) 
 **Usage:** ` python parse_ark_traceroute.py -t <traceroute dataset> -d <dns dataset>` 
 
-Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:\
+Below is the method used to load IPs with corresponding hostnames into the dictionary `dns` with the following format:
 `{'ip address': 'hostname'}`.
  ~~~python
 # reading DNS file
@@ -44,7 +44,7 @@ def load_dns_file(dns_file):
                 dns[line[1]] = line[2]
 ~~~
 
-Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format.  The method returns source, each hop and destination of a traceroute in sequence. \
+Below is the method used to parse .warts file and return a traceroute's `ips` and `hostname` in list format.  The method returns source, each hop and destination of a traceroute in sequence. 
  `[source, hop_1, hop_2, ... , hop_n, destination]`
 
 **Note** that there could be multiple IPs in a hop. 
@@ -108,7 +108,7 @@ Traceroute is a computer network diagnostic command for displaying possible rout
 More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
 
 ### What is Scamper?
-Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. \
+Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. 
 Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
 
 - More information on Scampper can be found [here](https://www.caida.org/tools/measurement/scamper/) 
@@ -117,29 +117,29 @@ Scamper's native output file format is called **warts**: a warts file contains s
 
 ### Dataset
 #### IPv4 Prefix-Probing Traceroute Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml) \
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml) 
 Directory:` /datasets/topology/ark/ipv4/prefix-probing`
 
 #### The IPv4 Routed /24 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml) \
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml) 
 Directory: `/datasets/topology/ark/ipv4/probe-data`
 
 #### Ark IPv6 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml) \
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml) 
 `Directory: /datasets/topology/ark/ipv6/probe-data`
 
 #### IPv4 Routed /24 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml) \
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml) 
 Directory: `/datasets/topology/ark/ipv4/dns-names`
 
 #### The IPv6 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml) \
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml) 
 Directory: `/datasets/topology/ark/ipv6/dns-names`
 
 ### <ins> Caveats </ins>
 Note that there could be multiple IP addresses to a single hop. So there are two versions. 
 
-**Support multiple IPs:** \
+**Support multiple IPs:** 
 Set `single_IP` to False to get all IPs in each hop. 
 ~~~    
 ips, hostnames = parse_trace(trace,single_IP=False)
@@ -149,7 +149,7 @@ ips == [["10.1.2.3"],[],["10.0.0.1","2.1.1.2"]]
 hostnames: [["www.caida.org"],[],["cat.caida.org",None]]
 ~~~
 
-**Support only single IP:** \
+**Support only single IP:** 
 Set `single_IP` to True to get None value if there are multiple IPs in a hop. 
 ~~~
 ips, hostnames = parse_trace(trace,single_IP=True)

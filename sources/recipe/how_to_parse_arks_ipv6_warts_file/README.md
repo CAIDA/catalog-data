@@ -31,9 +31,9 @@ The following solution parses through an [arks ipv6 warts file](https://www.caid
 The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/recipe/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
 ### Datasets
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. \
-Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). \
-• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). The script can accept both .gz files as well as unzipped .prefix2as6 files. \
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. 
+Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). 
+• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). The script can accept both .gz files as well as unzipped .prefix2as6 files. 
 • `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
 
 **Example Usage:** 
@@ -45,8 +45,8 @@ $ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.
 ~~~
 
 ### Methods  
-create_ips() takes in one input: \
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/data/request_user_info_forms/ark.xml).\
+create_ips() takes in one input: 
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/data/request_user_info_forms/ark.xml).
 Instructions to obtain .json file: 
 
 ~~~bash
@@ -125,21 +125,21 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 
 
 ### IPv6 address 
-• An *IPv6 address* is a 128-bit unique address that is used to recognize a computer network or a machine. All computers on the same data network share the same IPv6 address.\
-• IPv6 addressing is a successor to IPv4 addressing. \
-• An IPv4 address is 32 bit, whereas an IPv6 address is 128 bit. \
-• **IPv6 Prefix** - The leftmost fields of the IPv6 address contain the prefix, which is used for routing IPv6 packets. \
-• IPv6 prefixes have the following format:\
-`prefix/length in bits` \
-• e.g. Consider the IPv6 address : `2001:db8:3c4d:0015:0000:0000:1a2f:1a2b/48` \
-• In this case, 48 is the length of the prefix, i.e. the IPv6 prefix is the first 48 bits of the IP address - `2001:db8:3c4d` \
+• An *IPv6 address* is a 128-bit unique address that is used to recognize a computer network or a machine. All computers on the same data network share the same IPv6 address.
+• IPv6 addressing is a successor to IPv4 addressing. 
+• An IPv4 address is 32 bit, whereas an IPv6 address is 128 bit. 
+• **IPv6 Prefix** - The leftmost fields of the IPv6 address contain the prefix, which is used for routing IPv6 packets. 
+• IPv6 prefixes have the following format:
+`prefix/length in bits` 
+• e.g. Consider the IPv6 address : `2001:db8:3c4d:0015:0000:0000:1a2f:1a2b/48` 
+• In this case, 48 is the length of the prefix, i.e. the IPv6 prefix is the first 48 bits of the IP address - `2001:db8:3c4d` 
 • More information on IPv6 addresses and prefixes found [here]( https://docs.oracle.com/cd/E19253-01/816-4554/6maoq01nv/index.html ).
 
 
 ### Scamper 
 
-• The Scamper utility is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion.\
-• Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. \
+• The Scamper utility is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion.
+• Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
 • Scamper supports both **IPv6** and **IPv4** probing. 
 
 More information on Scamper found [here]( https://www.caida.org/tools/measurement/scamper/
