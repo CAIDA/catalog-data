@@ -97,8 +97,8 @@ compiler.
 
 If the required libraries are installed systemwide, then
 ~~~
-    ./configure
-    make
+./configure
+make
 ~~~
 should be all that's required.  However, if a library is installed
 somewhere that configure cannot find it, you can use
@@ -148,7 +148,7 @@ You can simply use the `preprocess-graph` perl script to convert an
 a graph file required by `distance`, `betweenness` and `components`.
 For example,
 ~~~
-    ./preprocess-graph < input_file > output_file
+./preprocess-graph < input_file > output_file   
 ~~~
 
 ### How to use
@@ -158,28 +158,28 @@ argument on the command line, and returns results on stdout:
     ./topology_stats input_file > output_file
 ~~~
 There are options to dump some of the data used (for further analysis):\
-    `-O` <\output filename> designates the prefix for dump filename, used below. \
-    `-d` dumps the CCDF of degree distribution, the clustering coefficients,
+    `-O`: < output filename > designates the prefix for dump filename, used below. \
+    `-d`: dumps the CCDF of degree distribution, the clustering coefficients,
        and the average neighbor degrees. \
-    `-l` dumps the clustering coeffients and average neighbor degrees as above,
+    `-l`: dumps the clustering coeffients and average neighbor degrees as above,
        but binned logarithmically. \
-    `-v` dumps the clustering coeffients and average neighbor degrees as above,
+    `-v`: dumps the clustering coeffients and average neighbor degrees as above,
        but binned by number of data points, calculated backwards from the
-       long tail. \
+       long tail. 
 
 The `distance`, `betweenness`, and `components` programs read input data
 from stdin and return results on stdout:
 ~~~
-    ./distance < input_file > output_file
-    ./betweenness < input_file > output_file
-    ./components [-o component_file] < input_file
+./distance < input_file > output_file
+./betweenness < input_file > output_file
+./components [-o component_file] < input_file
 ~~~
 
 
 ### Example output
-The following are the results of running on the [skitter dataset](http://www.caida.org/research/topology/as_topo_comparisons/)
+The following are the results of running on the [skitter dataset](http://www.caida.org/research/topology/as_topo_comparisons/).
 
-`topology_stats` output:
+**`topology_stats` output:**
 ~~~
 Number of nodes:    9204
 Number of edges:    28959
@@ -218,7 +218,7 @@ graph diameter = 7
 min degree in graph center = 1
 max degree in graph periphery = 1
 ~~~
-`betweenness` output:
+**`betweenness` output:**
 ~~~
 loaded 9204 nodes, 28959 undirected links, 42352206 pairs
 min node betweenness = 0.0000e+00
@@ -228,7 +228,7 @@ min edge betweenness = 2.3617e-08
 average edge betweenness = 1.0760e-04
 max edge betweenness = 8.6025e-03
 ~~~
-`components` output:
+**`components` output:**
 ~~~
 loaded 9204 nodes, 28959 undirected links
 component at node 1: 9200 nodes, 28957 undirected links
