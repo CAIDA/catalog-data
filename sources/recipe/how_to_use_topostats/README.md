@@ -17,7 +17,7 @@
 ## **<ins> Introduction </ins>**
 This package of programs calculates various statistics on network topologies.
 - The computed statistics are defined in the paper ["Lessons from Three Views of the Internet Topology: Technical Report"](http://www.caida.org/publications/papers/2005/tr-2005-02/)
-= A sample of the computed statistics is available at [here](http://www.caida.org/research/topology/as_topo_comparisons/master.xml)
+- A sample of the computed statistics is available at [here](http://www.caida.org/research/topology/as_topo_comparisons/master.xml)
 - Download [topostats-1.1beta.tar.gz](https://www.caida.org/tools/utilities/topostats/dists/topostats-1.1beta.tar.gz)
 - Also available on [GitHub](https://github.com/CAIDA/topostats)
 
@@ -75,10 +75,10 @@ The 3 main programs included in this package are named `topology_stats`,
   - average node/edge betweenness
   - max node/edge betweenness
 
-This package also includes two additional utilities.  The 'components'
+This package also includes two additional utilities.  The `components`
 program lets the user view the connected components in the input graph.
 It also allows the user to extract the largest connected component
-into a separate file for further analysis.  The 'distance' program,
+into a separate file for further analysis.  The `distance` program,
 in particular, only works on a connected graph, so the user should
 create a file with just one connected component when running 'distance'.
 
@@ -88,12 +88,8 @@ needed by the `distance`, `betweenness`, and `components` programs.
 See below for details on how to use these programs.
 
 ### Requirements and compilation
-This package requires the GNU Scientific Library (GSL)
-(http://www.gnu.org/software/gsl/) and the Judy array library
-(http://judy.sourceforge.net/).
-
-It also requires perl for preprocessing input data and a modern C/C++
-compiler.
+- This package requires the [GNU Scientific Library (GSL)](http://www.gnu.org/software/gsl/) and the [Judy array library](http://judy.sourceforge.net/).
+- It also requires perl for preprocessing input data and a modern C/C++ compiler.
 
 If the required libraries are installed systemwide, then
 ~~~
