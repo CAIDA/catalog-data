@@ -103,7 +103,7 @@ make
 should be all that's required.  However, if a library is installed
 somewhere that configure cannot find it, you can use
 ~~~
-    ./configure --with-inclibprefix=<path_to_library>
+ㄇ./configure --with-inclibprefix=<path_to_library>
 ~~~
 
 ### Input format
