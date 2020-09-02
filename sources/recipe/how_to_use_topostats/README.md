@@ -5,19 +5,19 @@
     "visibility": "public",
     "description": "This package of programs calculates various statistics on network topologies.",
     "links": [{
-        "to": "dataset:"
+        "to": "dataset:as_topo_comparisons"
+        "to": "software:topostats"
         }],
     "tags": [
         "topology",
         "software/tools",
-        "ASN",
-        "geolocation",
-        "country"
     ]
 }
 ~~~
 ## **<ins> Introduction </ins>**
 This package of programs calculates various statistics on network topologies.
+- The computed statistics are defined in the paper ["Lessons from Three Views of the Internet Topology: Technical Report"](http://www.caida.org/publications/papers/2005/tr-2005-02/)
+= A sample of the computed statistics is available at [here](http://www.caida.org/research/topology/as_topo_comparisons/master.xml)
 - Download [topostats-1.1beta.tar.gz](https://www.caida.org/tools/utilities/topostats/dists/topostats-1.1beta.tar.gz)
 - Also available on [GitHub](https://github.com/CAIDA/topostats)
 
@@ -31,7 +31,7 @@ The 3 main programs included in this package are named `topology_stats`,
 `distance`, and `betweenness`.  There are also 2 utility programs named
 `components` and `preprocess-graph`, which are discussed further below.
 
-The `topology_stats` program computes:
+**The `topology_stats` program computes:**
 - Average degree metrics:
   - number of nodes
   - number of edges
@@ -58,7 +58,7 @@ The `topology_stats` program computes:
   - fringe size
   - max degree in fringe
 
-The `distance` program computes:
+**The `distance` program computes:**
 - Distance metrics:
   - average distance
   - std deviation of distance
@@ -69,7 +69,7 @@ The `distance` program computes:
   - min degree in center
   - max degree in periphery
 
-The `betweenness` program computes:
+**The `betweenness` program computes:**
 - Betweenness metrics:
   - min node/edge betweenness
   - average node/edge betweenness
@@ -82,8 +82,8 @@ into a separate file for further analysis.  The 'distance' program,
 in particular, only works on a connected graph, so the user should
 create a file with just one connected component when running 'distance'.
 
-The 'preprocess-graph' program converts an input graph into a format
-needed by the 'distance', 'betweenness', and 'components' programs.
+The `preprocess-graph` program converts an input graph into a format
+needed by the `distance`, `betweenness`, and `components` programs.
 
 See below for details on how to use these programs.
 
@@ -103,7 +103,7 @@ make
 should be all that's required.  However, if a library is installed
 somewhere that configure cannot find it, you can use
 ~~~
-ㄇ./configure --with-inclibprefix=<path_to_library>
+./configure --with-inclibprefix=<path_to_library>
 ~~~
 
 ### Input format
