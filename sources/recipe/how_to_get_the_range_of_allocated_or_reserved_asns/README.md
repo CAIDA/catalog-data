@@ -11,7 +11,7 @@
     ],
     "authors":[
         {
-            "person":"person:lee_nicole",
+            "person": "person:lee__nicole",
             "organizations":["CAIDA, San Diego Supercomputer Center, University Of California San Diego"]
         }
     ]

@@ -11,6 +11,12 @@
     ],
     "tags" : [
         "security"
+    ],
+    "authors":[
+        {
+            "person": "koga__ryan",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

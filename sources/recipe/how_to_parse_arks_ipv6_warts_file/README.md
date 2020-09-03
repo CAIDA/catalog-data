@@ -1,23 +1,23 @@
 
 ## How to parse arks ipv6 warts file
-~~~
+~~~json
 {
-  "name": "How to parse Ark IPv6 warts file?",
-  "description": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns.",
-  "links": [
-    "software:pyasn",
-    "software:scamper",
-    "dataset:as_prefix"
-  ],
-  "tags": [
-    "measurement methodology",
-    "topology",
-    "software/tools",
-    "asn",
-    "ipv6",
-    "ipv6 prefix"
-  ],
-  "authors":[
+    "name": "How to parse Ark IPv6 warts file?",
+    "description": "This solution parses through an arks ipv6 warts file and produces a sorted list of ips and asns.",
+    "links": [
+        "software:pyasn",
+        "software:scamper",
+        "dataset:as_prefix"
+    ],
+    "tags": [
+        "measurement methodology",
+        "topology",
+        "software/tools",
+        "asn",
+        "ipv6",
+        "ipv6 prefix"
+    ],
+    "authors":[
         {
             "person": "person:pathak__pooja",
             "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]

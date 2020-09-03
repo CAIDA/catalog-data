@@ -17,6 +17,12 @@
         "geolocation",
         "link",
         "node_id"
+    ],
+    "authors":[
+        {
+            "person": "lu__louis",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

@@ -14,8 +14,11 @@
     "ip address",
     "ip"
   ],
-    "authors":[
-    "person:lee_nicole"
+  "authors":[
+        {
+            "person": "lee__nicole",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

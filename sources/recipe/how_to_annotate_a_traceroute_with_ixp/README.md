@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
     "id": "how_to_annotate_a_traceroute_with_ixp",
     "name": "How to Annotate a Traceroute with IXP",
@@ -10,7 +10,10 @@
       "ip"
     ],
     "authors":[
-    "person:lee_nicole"
+        {
+            "person": "lee__nicole",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

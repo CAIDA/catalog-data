@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
     "id": "how_to_annotate_as_relationships_with_geographic_annotations",
     "visibility": "public",
@@ -13,6 +13,12 @@
         "ASN",
         "geolocation",
         "country"
+    ],
+    "authors":[
+        {
+            "person": "person:lu__louis",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

@@ -11,7 +11,13 @@
         "ASN",
         "as classification",
         "IPv4"
-    ]   
+    ],
+    "authors":[
+        {
+            "person": "wolfson__donald",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
 }
 ~~~
 
