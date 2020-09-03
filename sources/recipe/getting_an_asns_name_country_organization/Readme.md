@@ -14,6 +14,12 @@
         "organization",
         "country"
     ]
+    "authors":[
+        {
+            "person": "person:pathak__pooja",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
+    ]
 }
 ~~~
 ###  Mapping ASN's to country 
