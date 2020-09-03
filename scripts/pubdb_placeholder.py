@@ -23,6 +23,7 @@ def main():
                     try:
                         obj = json.load(open(fname,"r"))
                     except ValueError as e:
+                        print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
