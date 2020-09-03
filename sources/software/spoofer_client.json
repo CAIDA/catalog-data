@@ -119,5 +119,11 @@
             "to":"media:2005_the_spoofer_project_nanog_34",
             "label":"used by"
         }
+    ], 
+    "authors":[
+        {
+            "person": "person:koga__ryan",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
     ]
 }
