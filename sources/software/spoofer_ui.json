@@ -40,6 +40,22 @@
             "label": "used by"
         },
         {
+            "to": "paper:2013_longitudinal_analysis_of_ip_source_spoofing", 
+            "label": "used by"
+        }, 
+        {
+            "to": "paper:2009_efficacy_of_deployed_internet_source_address_validation", 
+            "label": "used by"
+        },
+        {
+            "to": "paper:2007_tracefilter_tool_for_locating_network_source_address_validation", 
+            "label": "used by"
+        }, 
+        {
+            "to": "paper:2005_spoofer_project_inferring_extent_of_source_address_filtering", 
+            "label": "used by"
+        },
+        {
             "to": "media:2019_challenges_inferring_spoofed_traffic_conext",
             "label": "used by"
         },
@@ -90,6 +106,14 @@
         {
             "to": "media:2015_software_systems_surveying_spoofing_dhs",
             "label": "used by"
-        }
+        },
+        {
+            "to": "media:2009_efficacy_of_deployed_internet_source_address_validation", 
+            "label": "used by"
+        }, 
+        {
+            "to": "media:2009_ip_spoofer_project", 
+            "label": "used by"
+        }   
     ]
 }
