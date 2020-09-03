@@ -20,6 +20,12 @@
     "ipv4",
     "ipv4 prefix"
   ]
+  "authors":[
+        {
+            "person": "person:pathak__pooja",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
+    ]
 }
 ~~~
 

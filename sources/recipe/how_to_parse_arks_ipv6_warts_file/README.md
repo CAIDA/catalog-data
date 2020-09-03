@@ -17,6 +17,12 @@
     "ipv6",
     "ipv6 prefix"
   ]
+  "authors":[
+        {
+            "person": "person:pathak__pooja",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
+    ]
 }
 ~~~
 
