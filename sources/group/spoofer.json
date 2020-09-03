@@ -117,6 +117,15 @@
         {
             "to": "media:2009_ip_spoofer_project", 
             "label": "used by"
-        }  
+        }, 
+        {
+            "to":"media:2005_the_spoofer_project_nanog_34",
+            "label":"used by"
+        }
+    ], 
+    "authors":[
+        {
+            "person": "person:koga__ryan",
+        }
     ]
 }
