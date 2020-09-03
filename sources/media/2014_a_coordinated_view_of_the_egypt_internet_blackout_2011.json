@@ -1,0 +1,31 @@
+{
+    "id": "2014_a_coordinated_view_of_the_egypt_internet_blackout_2011",
+    "name": "A Coordinated View of the Temporal Evolution of Large-scale Internet Events",
+    "description": "To visualize large-scale Internet events, such as a large region losing connectivity, or a stealth probe of the entire IPv4 address space, we coordinated views to study the temporal evolution of an event along different dimensions, including geographic spread, topological (address space) coverage, and traffic impact. In early 2011, there was a government-mandated Internet blackout in Egypt, which isolated the country from the rest of the Internet for more than five days. The view pictured combines a geographical representation of Egypt region along with animations of the source addresses observed during the event, both at a global level, and from the 41.0.0.0/8 network delegated to AfriNIC.",
+    "tags": [
+        "topology",
+    ],
+    "links": [
+        {
+            "to":"paper:2014_coordinated_view_internet_events"
+        }
+    ],
+    "date": "2014.01",
+    "type": "VISAULIZATION",
+    "image": "https://www.caida.org/publications/papers/2014/coordinated_view_internet_events/supplemental/egypt.composite.0174.png",
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/publications/papers/2014/coordinated_view_internet_events/",
+            "tags": [
+                "url"
+            ]
+        },
+    ],
+    "authors":[
+        "person:huffaker_bradley",
+        "person:claffy_kc",
+        "person:dainotti_alberto",
+        "person:king_alistair"
+    ]
+}

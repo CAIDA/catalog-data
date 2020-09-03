@@ -1,0 +1,36 @@
+{
+    "id": "2017_spoofer_video_what_is_ip_spoofing",
+    "name": "Spoofer video: What is IP Spoofing?",
+    "description": "Over the past several months, CAIDA, in collaboration with Matthew Luckie at the University of Waikato, has upgraded Rob Beverly's original spoofing measurement system, developing new client tools for measuring IPv4 and IPv6 spoofing capabilities, along with services that provide reporting and allow users to opt-in or out of sharing the data publicly. Watch the video \"What is IP Spoofing?\" for an overview of what IP spoofing is and how you can install Spoofer and help.",
+    "tags": [
+        "spoofer",
+        "security",
+        "IPv4"
+    ],
+    "presenters": [],
+    "links": [
+        {
+            "to": "software:spoofer_client",
+        }
+    ],
+    "date": "2017.05",
+    "type": "VIDEO",
+    "image": "https://www.caida.org/images/spoofer-whatisipspoofing_300h250.png",
+    "resources": [
+        {
+            "name": "Video",
+            "url": "https://www.youtube.com/watch?v=rxN4zWTNSds",
+            "tags": [
+                "url",
+                "video"
+            ]
+        },
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/projects/spoofer/",
+            "tags": [
+                "url",
+            ]
+        }
+    ],
+}

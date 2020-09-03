@@ -1,0 +1,26 @@
+{
+    "id": "2013_ark_respberry_pi_based_network_monitor",
+    "name": "Ark Raspberry Pi-based Network Monitor",
+    "description": "We are now deploying small, inexpensive network measurement nodes, based on the Raspberry Pi, in the Ark measurement infrastructure. Although tiny, a Raspberry Pi is as capable as a desktop system of several generations ago and offers a flexible Linux-powered programmable platform for conducting networking research. These systems can be placed anywhere that is convenient for a hosting site, including on someone's desk, and the transition from deploying traditional rack-mounted servers to Raspberry Pi's will allow us to scale up the Ark infrastructure.",
+    "tags": [
+        "ark",
+        "measurement methodology",
+        "topology"
+    ],
+    "presenters": [
+    ],
+    "links": [],
+    "date": "2013.02",
+    "type": "VISUALIZATION",
+    "image": "https://www.caida.org/images/ark-raspi-monitor_300h250.png",
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/projects/ark/",
+            "tags": [
+                "url"
+            ]
+        }
+    ],
+    "authors":[]
+}

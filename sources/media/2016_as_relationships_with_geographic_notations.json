@@ -1,0 +1,31 @@
+{
+    "id": "2016_as_relationships_with_geographic_notations",
+    "name": "AS Relationships with geographic notations",
+    "description": "In addition to understanding the routing policies between networks (autonomous systems), understanding where those networks interconnect is relevant to both technical and economic aspects of the Internet's inter-domain structure and stability. We offer an annotated version of our AS relationships data set that estimates the geographic location of links between pairs of networks.",
+    "tags": [
+        "as",
+        "geolocation",
+        "topology"
+    ],
+    "presenters": [],
+    "links": [
+        {
+            "to": "dataset:as_relationships_geo"
+        }
+    ],
+    "date": "2016.09",
+    "type": "VISAULIZATION",
+    "image": "https://www.caida.org/images/as-relationships-geo_300h250.png",
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/data/as-relationships-geo/",
+            "tags": [
+                "url"
+            ]
+        },
+    ],
+    "authors":[]
+    
+    
+}
