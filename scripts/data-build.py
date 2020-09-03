@@ -47,7 +47,7 @@ import copy
 import re
 import time
 import datetime
-#import markdown2
+import markdown2
 import subprocess
 import lib.utils as utils
 
@@ -63,9 +63,8 @@ id_word_score = {}
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
-re_not_word = re.compile("[\s ,\?\.\(\)\:_]+")
-re_word = re.compile("^[a-z0-9]+$",re.IGNORECASE)
-re_year = re.compile("^(\d\d\d\d)")
+re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
+re_word = re.compile("^[a-z]+$",re.IGNORECASE)
 
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
@@ -82,7 +81,7 @@ re_not_digit = re.compile("[^\d]+")
 
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
-word_id_score_file = "word_id_score.json"
+word_score_id_file = "word_score_id.json"
 pubdb_links_file = "data/pubdb_links.json"
 
 filename_errors = {}
@@ -90,21 +89,51 @@ filename_errors = {}
 # Weights used to create word scoring for search
 weight_default = 1
 key_weight = {
+    "__typename":0,
+    "id":0,
     "name": 10,
-    "nameLast": 10,
-    "nameFirst":10,
-    "date":10,
-    "visibility":5,
-    "organization":5,
-    "status":5,
-    "tags": 5,
-    "person": 5,
-    "venue": 5,
-    "publisher": 3,
-    "description": 3,
-    "content": 2,
-    "resources":1,
-    "type":1
+    "tags": 10,
+    "description": 5,
+    "content": 3
+}
+link_weight = {
+    "Paper":.3,
+    "Dataset":.5,
+    "Software":.3,
+    "Recipe":.3
+}
+
+type_key_w_type_w = {
+    "datasets": {
+        "key_weights": [
+            ["name", 10],
+            ["description",1],
+            ["tags",.5]
+        ],
+        "link_weights":[ 
+            ["papers",.5],
+        ]
+    },
+    "papers": {
+        "key_weights": [
+            ["name", 10],
+            ["description",8]
+        ],
+        "type_weights":[ 
+            ["tags",.5],
+            ["datasets", .5]
+        ]
+    },
+    "papers": {
+        "key_weights": [
+            ["name", 10],
+            ["description",8]
+        ],
+        "type_weights":[ 
+            ["tags",.5],
+            ["datasets", .5]
+        ]
+    }
 }
 
 id_missing = {}
@@ -146,6 +175,8 @@ def main():
                         obj = object_add(type_,info)
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
+                    except json.decoder.JSONDecodeError as e:
+                        print ("error",filename, e)
                     except ValueError as e:
                         print (path+"/"+filename)
         else:
@@ -171,7 +202,6 @@ def main():
         "Media":object_checker
     }
 
-    print ("checking objects")
     id_failed = []
     for id_,obj in id_object.items():
         type_ = obj["__typename"]
@@ -199,16 +229,24 @@ def main():
     #######################
     # ca
     #######################
-    for obj in id_object.values():
-        object_word_update(obj)
+    for i in range(0,10):
+        for obj in id_object.values():
+            object_score_update(obj)
         
     print ("adding words")
-    word_id_score = {}
+    word_score_id = {}
     for id_,word_score in id_word_score.items():
         for word,score in word_score.items():
-            if word not in word_id_score:
-                word_id_score[word] = {}
-            word_id_score[word][id_] = score
+            if word not in word_score_id:
+                word_score_id[word] = []
+            word_score_id[word].append([score,id_])
+    for word,score_ids in word_score_id.items():
+        word_score_id[word] = sorted(score_ids,reverse=True)
+
+    #for score_id in word_score_id["rank"]:
+        #print ("   ",score_id)
+
+
 
     #######################
     # print files
@@ -219,9 +257,9 @@ def main():
     print ("writing",id_id_link_file)
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
 
-    print ("writing",word_id_score_file)
-    #json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
-    json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
+    print ("writing",word_score_id_file)
+    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    json.dump(word_score_id, open(word_score_id_file,"w"))
 
 ###########################
 def error_add(filename, message):
@@ -274,45 +312,13 @@ def object_date_add(obj):
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
     else:
-        for type_key in [["Dataset","dateStart"], ["Media","datePublished"]]:
+        for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
             type_,key = type_key
             if obj["__typename"] == type_ and key in obj:
                 obj["date"] = obj[key]
 
     if "date" not in obj:
-        t_ = obj["__typename"]
-        if t_ == "Dataset" and obj["id"] in id_id_link:
-
-            if "dateEnd" in obj:
-                obj["date"] = obj["dateEnd"]
-            elif "dateStart" in obj:
-                obj["date"] = obj["dateStart"]
-            else:
-                for id_ in id_id_link[obj["id"]]:
-                    if id_ in id_object:
-                        o = id_object[id_]
-                        if o["__typename"] == "Paper" and "datePublished" in o:
-                            d = o["datePublished"]
-                            if "date" not in obj or obj["date"] > d:
-                                obj["date"] = d
-                        if o["__typename"] == "Media" and "presenters" in o:
-                            for p in o["presenters"]:
-                                if "date" in p:
-                                    d = p["date"]
-                                    if "date" not in obj or obj["date"] > d:
-                                        obj["date"] = d
-
-            #if "date" not in obj:
-                #error_add(obj["filename"], "failed to find date for "+obj["id"])
-                #obj["date"] = obj["dateCreated"]
-        elif t_ == "recipe" or t_ =="tag" or t_ == "person" or t_ == "group" or t_ == "software":
-            obj["date"] = obj["dateLastUpdated"]
-
-    if "date" in obj:
-        parts = re.split("[^\d]+",obj["date"])
-        if len(parts) < 2:
-            parts[2] = "01"
-        obj["date"] = parts[0]+"."+parts[1]
+        obj["date"] = obj["dateLastUpdated"]
 
 ###########################
 
@@ -579,7 +585,6 @@ def recipe_process(path):
                 if root in recipe_dir and re_readme_md.search(fname):
                     filename = root +"/"+fname
                     info = None
-                    errors = []
                     with open(filename) as f:
                         inside = False
                         data = None
@@ -600,15 +605,16 @@ def recipe_process(path):
                                         info["content"] = ""
                                         data = None
                                     except ValueError as e:
-                                        errors.append("json error in "+filename+"\n")
-                                        #print (e)
-                                        #print ("parse failure",data)
-                                        break
+                                        print ("error in "+data)
+                                        print (e)
+                                        print ("parse failure",data)
+                                        return
                                 else:
                                     data = ""
                                 inside = not inside
                             elif data is not None:
                                 data += line
+                    errors = []
                     if info is None:
                         info = {}
                     #if "visibility" not in info or "public" != info["visibility"].lower():
@@ -618,7 +624,7 @@ def recipe_process(path):
                     if len(errors) > 0:
                         skipped.append([",".join(errors), filename])
                     else:
-                        #info["content"] = markdown2.markdown(info["content"])
+                        info["content"] = markdown2.markdown(info["content"])
                         obj = object_add("Recipe", info)     
     if len(skipped) > 0:
         print ("skipped")
@@ -638,9 +644,9 @@ def person_add_names(person):
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
-                names = person["id"][7:].split("__")
+                names = person["id"][7:].split("_")
             else:
-                names = person["id"].split("__")
+                names = person["id"].split("_")
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
@@ -662,75 +668,40 @@ def object_checker(obj):
 
 #############################
 
-key_word_seen = set()
-key_word_skip = set(["bibtexFields","pubdb_id","linkedObjects","__typename","filename","id","licenses","url","image"])
-def object_word_update(obj):
+def object_score_update(obj, recursive=False):
     word_score = {"":1}
     for key,value in obj.items():
-        if key == "tags":
+        if key in key_weight:
             weight = key_weight[key]
-            for tag in obj["tags"]:
-                word_score_add(word_score, tag[4:], weight)
-        elif key[0:4] == "date":
-            word_score_date(word_score, value)
-        elif key == "resources":
-            weight = key_weight["date"]
-            for resource in obj["resources"]:
-                word_score_add(word_score, resource["name"], weight)
-        elif key == "presenters" or key == "authors":
-            for presenter in obj[key]:
-                if type(presenter) == str: 
-                    person = presenter
-                else:
-                    if "person" in presenter:
-                        person = presenter["person"]
-                    else:
-                        person = None
-                    if "date" in presenter:
-                        word_score_date(word_score, presenter["date"])
-                    if "organizations" in presenter:
-                        for org in presenter["organizations"]:
-                            word_score_add(word_score, org, key_weight["organization"])
-                if person is not None:
-                    person = person[7:]
-                    word_score_add(word_score, person, key_weight["person"])
-
-        elif key in key_weight:
-            weight = key_weight[key]
-
-            for word,freq in word_freq_get(value).items():
-                word_score_add(word_score, word, freq*weight)
-
-        #elif key not in key_word_seen:
-            #if key not in key_word_skip:
-                #print (obj["filename"], key,value)
-                #key_word_seen.add(key)
-
-    #id1 = obj["id"]
-    #if id1 in id_id_link:
-        #for id2 in id_id_link[id1].keys():
-            #if id2[0:3] == "tag":
-                #for word in id_object[id2]["name"]:
-                    #if word not in word_score:
-                        #word_score[word] = weight
-                    #else:
-                        #word_score[word] += weight
-
-    id_word_score[obj["id"]] = word_score
-
-def word_score_date(word_score, value):
-    weight = key_weight["date"]
-    m = re_year.search(value)
-    if m:
-        word_score_add(word_score, m.groups()[0], weight)
-
-def word_score_add(word_score, string, weight):
-    for word,freq in word_freq_get(string).items():
-        word = word.lower()
-        if word not in word_score:
-            word_score[word] = freq*weight
         else:
-            word_score[word] += freq*weight
+            weight = weight_default
+
+        if weight == 0:
+            continue
+
+        word_freq = word_freq_get(value)
+        for word,freq in word_freq.items():
+            word = word.lower()
+            if word not in word_score:
+                word_score[word] = weight*freq
+            else:
+                word_score[word] += weight*freq 
+    id1 = obj["id"]
+    if id1 in id_id_link:
+        for id2 in id_id_link[id1].keys():
+            if id2 in id_word_score:
+                if id1[0:3] == "tag" or id2[0:3] == "tag":
+                    wieght = 0
+                else:
+                    wieght = .1
+                if wieght > 0:
+                    for word,score in id_word_score[id2].items():
+                        if word not in word_score:
+                            word_score[word] = wieght*score
+                        else:
+                            word_score[word] += wieght*score
+
+    id_word_score[id1] = word_score
 
 def word_freq_get(value):
     word_freq = {}
