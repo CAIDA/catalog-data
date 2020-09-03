@@ -19,7 +19,7 @@
     "asn",
     "ipv4",
     "ipv4 prefix"
-  ]
+  ],
   "authors":[
         {
             "person": "person:pathak__pooja",

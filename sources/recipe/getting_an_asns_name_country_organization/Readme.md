@@ -13,7 +13,7 @@
         "geolocation",
         "organization",
         "country"
-    ]
+    ],
     "authors":[
         {
             "person": "person:pathak__pooja",

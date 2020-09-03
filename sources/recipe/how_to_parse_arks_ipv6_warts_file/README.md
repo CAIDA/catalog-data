@@ -16,7 +16,7 @@
     "asn",
     "ipv6",
     "ipv6 prefix"
-  ]
+  ],
   "authors":[
         {
             "person": "person:pathak__pooja",

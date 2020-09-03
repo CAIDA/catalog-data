@@ -11,7 +11,7 @@
     "topology",
     "software/tools",
     "asn"
-  ]
+  ],
   "authors":[
         {
             "person": "person:pathak__pooja",
