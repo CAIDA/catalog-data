@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "REST API to public anonymized Spoofer test results",
     "tags": [
-        "security"
+        "security",
+        "spoofer"
     ],
     "resources": [
         {
@@ -22,6 +23,11 @@
         },
         {
             "to": "software:spoofer_ui"
+        }
+    ],
+    "authors":[
+        {
+            "person": "person:koga__ryan",
         }
     ]
 }
