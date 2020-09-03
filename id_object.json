@@ -19229,6 +19229,48 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "media:2019_atlas_and_ark_data_ripe": {
+        "id": "media:2019_atlas_and_ark_data_ripe",
+        "name": "Atlas & Ark data in Google BigQuery",
+        "description": "",
+        "tags": [
+            "tag:active_data_analysis",
+            "tag:measurement_methodology",
+            "tag:topology"
+        ],
+        "presenters": [
+            {
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego",
+                    "RIPE NCC, Amsterdam, The Netherlands"
+                ],
+                "venue": "RIPE Meeting",
+                "date": "2019.10",
+                "url": "https://ripe79.ripe.net/",
+                "person": "person:strowes__stephen"
+            }
+        ],
+        "linkedObjects": "",
+        "__typename": "Media",
+        "filename": "sources/media/2019_atlas_and_ark_data_ripe__pubdb.json",
+        "pubdb_id": "presentation583",
+        "resources": [
+            {
+                "name": "PDF",
+                "url": "https://www.caida.org/publications/presentations/2019/atlas_and_ark_data_ripe/atlas_and_ark_data_ripe.pdf",
+                "tags": []
+            },
+            {
+                "name": "Related Video",
+                "url": "https://ripe79.ripe.net/archives/video/195/",
+                "tags": []
+            }
+        ],
+        "type": "PRESENTATION",
+        "date": "2019/10/01 00:00:00",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09"
+    },
     "media:2019_blink_nsdi": {
         "id": "media:2019_blink_nsdi",
         "name": "Blink: Fast Connectivity Recovery Entirely in the Data Plane",
@@ -20479,6 +20521,44 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
+    },
+    "media:2020_dibbs_ei_cssi": {
+        "id": "media:2020_dibbs_ei_cssi",
+        "name": "DIBBS EI: Platform for Applied Network Data Analysis (PANDA)",
+        "description": "",
+        "tags": [
+            "tag:active_data_analysis",
+            "tag:passive_data_analysis",
+            "tag:overview",
+            "tag:software_tools",
+            "tag:security"
+        ],
+        "presenters": [
+            {
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ],
+                "venue": "NSF CSSI PI Meeting",
+                "date": "2020.02",
+                "url": "https://cssi-pi-community.github.io/2020-meeting/",
+                "person": "person:claffy__kc"
+            }
+        ],
+        "linkedObjects": "",
+        "__typename": "Media",
+        "filename": "sources/media/2020_dibbs_ei_cssi__pubdb.json",
+        "pubdb_id": "presentation582",
+        "resources": [
+            {
+                "name": "PDF",
+                "url": "https://www.caida.org/publications/presentations/2020/dibbs_ei_cssi/dibbs_ei_cssi.pdf",
+                "tags": []
+            }
+        ],
+        "type": "PRESENTATION",
+        "date": "2020/02/01 00:00:00",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09"
     },
     "media:2020_fantail_kismet": {
         "id": "media:2020_fantail_kismet",
@@ -48045,6 +48125,90 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08"
     },
+    "paper:2020_lessons_learned_organizing_pam": {
+        "id": "paper:2020_lessons_learned_organizing_pam",
+        "name": "Lessons Learned Organizing the PAM 2020 Virtual Conference",
+        "datePublished": "2020/07/01 00:00:00",
+        "description": "Due to the COVID-19 pandemic, the organizing committee of the 2020 edition of the Passive and Active Measurement (PAM) conference decided to organize it as a virtual event. Unfortunately, little is known about designing and organizing virtual academic conferences in the networking domain and their impacts on the participants\u2019 experience. In this editorial note, we first provide challenges and rationale for various organizational decisions we made in designing the virtual format of PAM 2020. We then illustrate the key results from a questionnaire-based survey of participants\u2019 experience showing that, while virtual conferences have the potential to broaden participation and strengthen focus on technical content, they face serious challenges in promoting social interactions and broadening the scope of discussions. We conclude with key takeaways, lessons learned, and suggestions for future virtual conferences distilled from this experience.",
+        "annotation": "",
+        "tags": [
+            "tag:passive_data_analysis",
+            "tag:active_data_analysis"
+        ],
+        "pubdb_id": "paper708",
+        "authors": [
+            {
+                "person": "person:misa__chris",
+                "organizations": [
+                    "University of Oregon"
+                ]
+            },
+            {
+                "person": "person:guse__dennis",
+                "organizations": [
+                    "Independent Contributor"
+                ]
+            },
+            {
+                "person": "person:hohlfeld__oliver",
+                "organizations": [
+                    "Brandenburg University of Technology"
+                ]
+            },
+            {
+                "person": "person:durairajan__ramakrishnan",
+                "organizations": [
+                    "University of Oregon"
+                ]
+            },
+            {
+                "person": "person:sperotto__anna",
+                "organizations": [
+                    "University of Twente"
+                ]
+            },
+            {
+                "person": "person:dainotti__alberto",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            },
+            {
+                "person": "person:rejaie__reza",
+                "organizations": [
+                    "University of Oregon"
+                ]
+            }
+        ],
+        "booktitle": "",
+        "journal": "",
+        "volume": "",
+        "number": "",
+        "pages": "",
+        "linkedObjects": "",
+        "__typename": "Paper",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "publisher": "ACM SIGCOMM Computer Communication Review (CCR)",
+        "resources": [
+            {
+                "name": "DOI",
+                "url": "https://doi.org/10.1145/3411740.3411747",
+                "tags": []
+            },
+            {
+                "name": "PDF",
+                "url": "https://www.caida.org/publications/papers/2020/lessons_learned_organizing_pam/lessons_learned_organizing_pam.pdf",
+                "tags": []
+            }
+        ],
+        "bibtexFields": {
+            "type": "TECHREPORT",
+            "institution": "ACM SIGCOMM Computer Communication Review (CCR)"
+        },
+        "date": "2020/07/01 00:00:00",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09"
+    },
     "paper:2020_policy_challenges_mapping_internet": {
         "id": "paper:2020_policy_challenges_mapping_internet",
         "name": "Policy challenges in mapping Internet interdomain congestion",
@@ -49587,6 +49751,17 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:strowes__stephen": {
+        "id": "person:strowes__stephen",
+        "__typename": "Person",
+        "filename": "sources/person/strowes__stephen__pubdb.json",
+        "nameLast": "Strowes",
+        "nameFirst": "Stephen",
+        "name": "Strowes, Stephen",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "person:testart__cecilia": {
         "id": "person:testart__cecilia",
         "__typename": "Person",
@@ -49753,243 +49928,6 @@
         "nameLast": "Zseby",
         "nameFirst": "Tanja",
         "name": "Zseby, Tanja",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:map_ipv4_address_to_asn": {
-        "id": "recipe:map_ipv4_address_to_asn",
-        "name": "How to find the origin ASN for a IPv4 address with Python?",
-        "descriptions": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns.",
-        "tags": [
-            "tag:measurement_methodology",
-            "tag:topology",
-            "tag:software_tools",
-            "tag:asn",
-            "tag:ipv4",
-            "tag:ipv4_prefix"
-        ],
-        "filename": "sources/recipe/map_ipv4_address_to_asn/README.md",
-        "__typename": "Recipe",
-        "content": "<h3>PyIPMeta</h3>\n\n<p>PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.</p>\n\n<h4>Pre-requisites</h4>\n\n<p>Before installing PyIPMeta, you will need:\\\n\u2022 <a href=\"https://github.com/CAIDA/libipmeta\">libipmeta(&gt;= 3.0.0)</a>\\\n\u2022 Python setuptools (<code>sudo apt install python-setuptools</code> on Ubuntu) \\\n\u2022 Python development headers (<code>sudo apt install python-dev</code> on Ubuntu)</p>\n\n<p>Detailed installation and usage instructions <a href=\"https://github.com/CAIDA/pyipmeta \">here</a>.</p>\n\n<h1>solution</h1>\n\n<p>The following script returns a dictionary <code>ip2asn</code> that maps ips to origin asns. </p>\n\n<h3>Map between ips and origin asns using PyIPMeta</h3>\n\n<p>For this solution, clone <strong>PyIPMeta</strong> from <a href=\"https://github.com/CAIDA/pyipmeta\">here</a>\\\nMore data can be found at http://data.caida.org/datasets/routing/routeviews-prefix2as/</p>\n\n<p>Sample ips.txt found <a href=\"http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz\">here</a></p>\n\n<p><strong>Usage</strong> : <code>$ python3 ip_asn.py -i ips.txt</code></p>\n\n<p>~~~python\nimport _pyipmeta \nimport argparse</p>\n\n<p>parser = argparse.ArgumentParser()\nparser.add<em>argument('-i', dest = 'ips</em>file', default = '', help = 'Please enter the file name of the ips file')\nargs = parser.parse_args()</p>\n\n<p>ipm = _pyipmeta.IpMeta()</p>\n\n<h1>print(\"Getting/enabling pfx2as provider (using included test data)\")</h1>\n\n<p>prov = ipm.get<em>provider</em>by<em>name(\"pfx2as\")\nprint(ipm.enable</em>provider(prov, \"-f http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/03/routeviews-rv2-20170329-0200.pfx2as.gz\"))\nprint()</p>\n\n<h1>Create list of ips from test file</h1>\n\n<p>ips = []\nwith open(args.ips_file) as f:\n    for line in f:\n        line = line.rstrip().split(\"\\t\")[1]\n        ips.append(line)</p>\n\n<h1>Map between ipv4 addresses and origin asns</h1>\n\n<p>ip2asn = {}\nfor ip in ips:\n    if ipm.lookup(ip):\n        (res,) =  ipm.lookup(ip)\n        if res.get('asns'):\n            ip2asn[ip] = res.get('asns')[-1]</p>\n\n<h1>print(ip2asn)</h1>\n\n<p>~~~</p>\n\n<h3><ins> Background </ins></h3>\n\n<p><strong>What is an IPv4 address prefix?</strong> \\\n\u2022 An <em>IP address</em> is a 32-bit unique address that is used to recognize a computer network or a machine. All computers on   the same data network share the same IP address.\\\n\u2022 An IPv4 address is typically written in decimal format as 4 8-bit fields separated by a period. Eg. 182.24.0.0/18 \\\n\u2022 An <em>IPv4 address prefix</em> is the prefix of an IPv4 address. \\\n\u2022 e.g. Consider the IPV4 address : 182.24.0.0/18 \\\n\u2022 In this case, 18 is the length of the prefix. \\\n\u2022 The prefix is the first 18 bits of the IP address. \\\n\u2022 More information on IPv4 addresses can be found <a href=\"https://docs.oracle.com/cd/E19455-01/806-0916/6ja85399u/index.html#:~:text=The%20IPv4%20address%20is%20a,bit%20fields%20separated%20by%20periods \">here</a></p>\n\n<p><strong>What is forwarding/How does forwarding work?</strong> \\\n\u2022 Fowarding means sending incoming information packets to the appropriate destination interface. This is done by routers with the help of a forwarding table. \\\n\u2022 Routers scan the destination IP prefix and locate a match using a forwarding table to determine the packet's next hop. \\\n\u2022 In cases of prefix overlap, where an incoming IP prefix map may match multiple IP entries in the table, the <em>Longest Prefix Matching Rule</em> is used to determine the next hop. </p>\n\n<p><strong>What is the Longest Prefix Matching Rule?</strong> \\\n\u2022 Longest Prefix Match is an algorithm to lookup the destination an IP prefix\u2019s next hop from the router. \\\nIt finds the prefix matching the given IP address and returns the corresponding router node.\\\n\u2022 The router which corresponds to the IP address with the longest matching prefix is selected as the destination router node.\\\n\u2022 Consider the following example:\n| IP Prefix        |   Router      |\n| -------------    | ------------- |\n| 192.168.20.16/28 | A             |\n| 192.168.0.0/16   | B             |</p>\n\n<p>\u2022 For example, for the given incoming IP address:  192.168.20.19 \\\n\u2022 <strong>Node A</strong> is selected as the destination router node as it contains the <em>longer matching prefix</em> i.e. 192.168.20.16 \\\n\u2022 Source: <a href=\"https://www.lewuathe.com/longest-prefix-match-with-trie-tree.html \">link</a> \\\n\u2022 More information can be found <a href=\"https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ \">here</a></p>\n\n<p><strong>What is an AS?</strong>\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>\u2022 <strong>Multi-origin AS</strong> : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\\\nThis makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's.  \\\n\u2022 <strong>Third-party AS's</strong> \\\n\u2022 Border routers may use a third-party address when responding to traceroute probes. \\\n\u2022 A third-party address is an IP address corresponding to an AS that is not on the path toward a destination.</p>\n\n<h3><ins> Note: </ins></h3>\n\n<p>\u2022 <code>pyasn</code> can also be used for mapping between ipv4 addresses and origin asns.\\\n\u2022 The <code>pyasn</code> object is be initialized using an IPASN datafile. \\\n\u2022 It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.\\\n\u2022 Detailed installation instructions and more information on Usage and IPASN data files <a href=\"https://github.com/hadiasghari/pyasn \">found here</a>.\\\n\u2022 Note that the current <code>pyipmeta</code> <strong>does not support</strong> <code>ipv6</code>, whereas <code>pyasn</code> does. </p>\n\n<p>However, <code>pyipmeyta</code> provides <strong>greater flexbility</strong> as it provides the geographical information as well. </p>\n\n<p>For example, <code>ipm.lookup('192.172.226.97')</code> returns:</p>\n\n<p><code>[{'connection_speed': '', 'city': '', 'asn_ip_count': 0, 'post_code': '', 'lat_long': (37.750999450683594, -97.8219985961914), 'region': '', 'area_code': 0, 'asns': [], 'continent_code': 'NA', 'metro_code': 0, 'matched_ip_count': 1, 'region_code': 0, 'country_code': 'US', 'id': 223, 'polygon_ids': []}]</code></p>\n\n<p>\u2022 This object can then be parsed to map between IP addresses and origin asns. </p>\n",
-        "dateCreated": "2019.12",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_find_the_business_relationship_between_asns": {
-        "id": "recipe:how_to_find_the_business_relationship_between_asns",
-        "visibility": "public",
-        "name": "How to find the business relationship between asns",
-        "description": "Using .as-rel file, or AS Rank to map a pair of given asns to their relationship.",
-        "tags": [
-            "tag:asn",
-            "tag:as_relationship",
-            "tag:as_rank",
-            "tag:ipv4"
-        ],
-        "filename": "sources/recipe/how_to_find_the_business_relationships_between_asns/README.md",
-        "__typename": "Recipe",
-        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>The following solution has two scripts. One script handles a <a href=\"pair_2_rel.py\">local input</a>, and one that <a href=\"api_2_rel.py\">uses AS Rank's API</a>. Both produce a dictionary, <code>pair_2_rel</code> which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.</p>\n\n<h2>Usage</h2>\n\n<p>Below is an example of using the local file script to parse a .as-rel file to create a mapping between a pair of asns and their relationship. This file can take in either .txt or encoded .bz2 files.</p>\n\n<p><code>bash\npython3 pair_2_rel.py -r 20200101.as-rel.txt\n</code></p>\n\n<p>For the api version of the script, you'll need to import <a href=\"https://pypi.org/project/graphqlclient/#description\">graphqlclient</a>. Below is how to install the package:</p>\n\n<p><code>bash\npip3 install graphqlclient\n</code></p>\n\n<p>Below is an example of how to run the api script to create a mapping between as pairs and their relationships. </p>\n\n<p><code>bash\npython3 api_2_rel.py\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is the helper method used to parse a given line of the .as-rel file in the <a href=\"pair_2_rel.py\">local file script</a>. This method updates the dictionary, <code>pair_2_rel</code> by sorting the two asns by value prior to mapping the pair to their relationship.</p>\n\n<p>~~~Python</p>\n\n<h1>Parse a given line of the as<em>rel</em>file and map two ASes to their relationship.</h1>\n\n<p>def parse<em>as</em>rel<em>line(curr</em>line):\n    global pair<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\n# Get each piece of data from the current line.\nasn0, asn1, relationship = curr_line.split(\"|\")\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * int(relationship)\n\n# Replace relationship with the string version of it's value.\nrelationship = rel_2_name[int(relationship)]\n\nkey = asn0 + \" \" + asn1\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = relationship\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below are two helper methods used in the <a href=\"api_2_rel.py\">api script</a>. The first helper method is the AS Rank Query, and what data is taken from the API. The second helper method shows what is done with the data taken from the API. The second method assumes the input is a dictionary of the keys and values within the \"node\" section of the query's format. </p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>pair</em>2<em>rel(curr</em>line):\n    global pair<em>2</em>rel\n    global name<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Get the values from the current line.\nrelationship = name_2_rel[curr_line[\"relationship\"]]\nasn0 = int(curr_line[\"asn0\"][\"asn\"])\nasn1 = int(curr_line[\"asn1\"][\"asn\"])\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * relationship\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = rel_2_name[relationship]\n</code></pre>\n\n<p>~~~</p>\n\n<p>This helper method is offered to show how to easily access a relationship in pair<em>2</em>rel in either script. This method also shows how to format two given asns to match the key format of pair<em>2</em>rel. The commented out return line could be helpful for testing, or to better understand what the relationship between the ases mean.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper function to format two given asns into a key for as<em>pair</em>2_rel.</h1>\n\n<p>def get<em>relationship(asn0, asn1):\n    global pair</em>2_rel</p>\n\n<pre><code>if (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Return the relationship, or return None if the key isn't valid.\nif key in pair_2_rel:\n    rel = pair_2_rel[key]\n    return rel\n    # return str(asn0) + \"'s \" + str(rel) + \" is \" + str(asn1)\nelse:\n    return None\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Caveats</h3>\n\n<p>A pair of asns is sorted by their values in ascending order. Ex: <code>10 15</code>, you'll never see a key formatted as: <code>15 10</code>. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: <code>get_relationship(ans0, asn1)</code> is provided.</p>\n\n<h3>File Format: .as-rel</h3>\n\n<p>Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with \"#\" since they will not be needed.</p>\n\n<p>~~~text</p>\n\n<h1>source:topology|BGP|<data>|<system>|<monitor></h1>\n\n<p><asn0>|<asn1>|<relationship>\n~~~</p>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_parse_cymru_bogon_data": {
-        "id": "recipe:how_to_parse_cymru_bogon_data",
-        "name": "How to Parse CYMRU Bogan Data",
-        "description": "The following solution will output whether an IP address is bogon",
-        "tags": [
-            "tag:bogon",
-            "tag:bogon_address",
-            "tag:ip_address",
-            "tag:ip"
-        ],
-        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
-        "__typename": "Recipe",
-        "content": "<h2>Solution</h2>\n\n<p>This solution requires pyasn: <a href=\"https://github.com/hadiasghari/pyasn\">pyasn github</a></p>\n\n<p>bogon_load() takes in one input:\n- <code>path</code>: path to the bogon dataset found here: https://www.caida.org/data/bogons/ </p>\n\n<p>bogon<em>check</em>ip() takes in two inputs:\n- <code>ips</code>: a list of IP addresses\n- <code>bogondb</code>: the result from bogon_load()</p>\n\n<p><strong>Usage:</strong> <code>python3 bogon.py [bogon dataset] [ip address] [ip address]....</code></p>\n\n<p>i.e.<code>python3 bogon.py 2020-05-13.fullbogons-ipv4.txt 0.0.0.1 10 5.44.248.1 1.1.1.1</code> yields \n~~~\nInvalid IP:  10\n[True, False, True, False]\n~~~</p>\n\n<p><strong>Code:</strong>\n~~~python\nimport pyasn\nimport numpy as np\nimport os</p>\n\n<p>def bogon<em>load(path):\n    \"\"\"\n    Loads bogon dataset into memory.\n    \"\"\"\n    temp</em>file = \"<em>bogon.dat\"\n    f = open(path, \"r\")\n    ips = []\n    next(f)\n    for line in f.readlines():\n        ips.append(line.replace('\\n',\"\") + \"\\t1\")\n    hdrtxt = '; IP-ASN32-DAT file\\n; Original file : <Path to a rib file>\\n; Converted on  : temp\\n; CIDRs         : 512490\\n;'\n    np.savetxt(temp</em>file, ips, header=hdrtxt,fmt='%s')\n    bogondb = pyasn.pyasn('<em>bogon.dat')\n    os.remove(temp</em>file)\n    return bogondb</p>\n\n<p>def bogon<em>check</em>ip(ips, bogondb):\n    \"\"\"\n    Checks whether a given IP address is bogon\n    \"\"\"\n    is_bogon = [False]*len(ips)\n    for index in range(len(ips)):\n        # Check if IP is valid\n        try:\n            bogondb.lookup(ips[index])\n        except ValueError:\n            print(\"Invalid IP: \", ips[index])\n            continue</p>\n\n<pre><code>    # Look up IP\n    if bogondb.lookup(ips[index])[1]:\n        is_bogon[index] = True\n    else:\n        continue\nprint(is_bogon)\n</code></pre>\n\n<p>~~~</p>\n\n<h2>Background</h2>\n\n<h3>What is an IP address?</h3>\n\n<ul>\n<li>IP addresses are unique 32-bit numbers allocated to identify devices in the Internet Protocol</li>\n<li>An address is allocated to entities by an organization named IANA and organizations named RIRs</li>\n</ul>\n\n<h3>What is a Bogon IP Address?</h3>\n\n<ul>\n<li>Bogon addresses have not been allocated by IANA or any of the RIRs</li>\n<li>These addresses congregate to make up what is known as \"bogus space\"</li>\n<li>This space includes reserved space</li>\n<li>Make sure to download the latest bogon file, because the ranges are subject to change</li>\n</ul>\n\n<h3>What is pyasn?</h3>\n\n<ul>\n<li>pyasn is a package that allows for very quick lookups of addresses</li>\n<li>We've made a temporary file that allows us to quickly look up whether an IP address is within a bogon prefix</li>\n</ul>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_use_as_rank_to_classify_asns": {
-        "id": "recipe:how_to_use_as_rank_to_classify_asns",
-        "visibility": "public",
-        "name": "How to use AS Rank to classify asns",
-        "description": "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
-        "tags": [
-            "tag:asn",
-            "tag:as_rank",
-            "tag:as_relationship",
-            "tag:ipv4"
-        ],
-        "filename": "sources/recipe/how_to_use_as_rank_to_classify_asns/README.md",
-        "__typename": "Recipe",
-        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>This solution helps classify an asn based upon relationship with other asns. The following <a href=\"api_2_class.py\">script</a> takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, <code>as_2_data</code>. This data is then used to determine classifications, which are stored in a dictionary labeled <code>as_2_class</code>. The script then prints to STDOUT the classification of requested asns.</p>\n\n<h3>Usage</h3>\n\n<p>Below is an example of how to run the script to classify the asns 3356 and 10, sending their classifications to a .jsonl file. You must use the -a flag, and provide at least on asn to classify. For classifying multiple asns, provide a comma seperated list with no spaces.\n- Note: This script calls the API until all AS Relationships are found, and this can take a significant amount of time.</p>\n\n<p><code>bash\npython3 api_2_class.py -a 3356,10 &gt; output.jsonl\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is are two helper methods used to get a query from the ASRank API, and parse it. The first method shows all the data that is taken from ASRank, with the most important being in the \"node\" segment. This segment is then given to the second helper method which updates a dictionary named <code>as_2_data</code> tracking an asn's provider and customers.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>as</em>2<em>data(curr</em>line):\n    global as<em>2</em>data\n    global asns</p>\n\n<pre><code># Get the values from the current line.\nrelationship = curr_line[\"relationship\"]\nasn0 = curr_line[\"asn0\"][\"asn\"]\nasn1 = curr_line[\"asn1\"][\"asn\"]\n\n# Edge Case: Skip this line if asn0 and ans1 are not in asns.\nif asn0 not in asns and asn1 not in asns:\n    return\n\n# Edge Case: Create objects for asn0 or asn1 if they are not in as_2_data.\nif asn0 not in as_2_data:\n    as_2_data[asn0] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\nif asn1 not in as_2_data:\n    as_2_data[asn1] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\n\n# If asn0's provider is asn1 increase asn0's customers, and asn1's providers\nif relationship is \"provider\":\n    as_2_data[asn0][\"providers\"].add(asn1)\n    as_2_data[asn1][\"customers\"].add(asn0)\n# Else if asn0's customer is asn1.\nelif relationship is \"customer\":\n    as_2_data[asn0][\"customers\"].add(asn0)\n    as_2_data[asn1][\"providers\"].add(asn1)\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below is a helper method used to iterate over <code>as_2_data</code> to update <code>as_2_class</code> by determining what classification to use.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method use to update as<em>2</em>class with data from as<em>2</em>data.</h1>\n\n<p>def update<em>classifications():\n    global as</em>2<em>class\n    global as</em>2_data</p>\n\n<pre><code># Iterate over each asn in as_2_data.\nfor asn in as_2_data:\n    # Edge Case: Create a dictionary for the asn if it doesn't exist.\n    if asn not in as_2_class:\n        as_2_class[asn] = {\n            \"asn\" : asn,\n            \"class\" : None\n        }\n    # If asn has no providers, then it is transit free.\n    if len(as_2_data[asn][\"providers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"transit free\" \n    # Else if asn has no customers. then it is an edge.\n    elif len(as_2_data[asn][\"customers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"edge\"\n    # Else asn has some providers and customers, then it is a middle.\n    else:\n        as_2_class[asn][\"class\"] = \"middle\"\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship?</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Data Structure Format: as<em>2</em>data</h3>\n\n<p>~~~Python\n{\n    \"asn0\" : {\n        \"providers\" : set(),        # Set of asns that are providers to asn0.\n        \"customers\" : set()         # Set of asns that are customers to asn0.\n    }\n}\n~~~</p>\n\n<h3>Data Structure Format: as<em>2</em>class</h3>\n\n<p>~~~Python\n{\n    # asn0 has zero providers.\n    \"asn0\" : { \"asn\":\"asn0\", \"class\":\"transit free\" },\n    # asn1 has both providers and customers.\n    \"asn1\" : { \"asn\":\"asn1\", \"class\":\"middle\" },\n    # asn2 has zero customers.\n    \"asn2\" : { \"asn\":\"asn2\", \"class\":\"edge\" }\n}\n~~~</p>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_find_an_asns_customer_cone": {
-        "id": "recipe:how_to_find_an_asns_customer_cone",
-        "visibility": "public",
-        "name": "How to find an ASNs customer cone",
-        "description": "The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.",
-        "tags": [
-            "tag:asn",
-            "tag:as_relationships",
-            "tag:customer_cone",
-            "tag:ipv4",
-            "tag:topology"
-        ],
-        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
-        "__typename": "Recipe",
-        "content": "<p>The following <a href=\"as-customer-cone.py\">script</a> produces a dictionary as<em>2</em>cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.</p>\n\n<p>~~~json\n{\n    \"asn0\" : {\n        \"asn\" : \"asn0\",\n        \"cone\" : [ \"asn0\", \"asn1\", \"...\", \"asnM\" ],\n        \"size\" : 0\n    },\n}\n~~~</p>\n\n<h3>Usage</h3>\n\n<p>The dataset that is used for this script can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.</p>\n\n<p>~~~bash\npython3 as-customer-cone.py -p 20200101.ppdc-ases.txt\n~~~</p>\n\n<p>Below is the helper method the script uses to parses the .ppdc-ases file line-by-line to update as<em>2</em>cone with a mapping between a given asn, its cone, and cone size.</p>\n\n<p>~~~Python</p>\n\n<h1>Given an line of a .ppdc-ases file, get the asn and its Customer Cone.</h1>\n\n<p>def parse<em>ppdc</em>ases<em>line(curr</em>line):\n    global as<em>2</em>cone</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\ncustomer_cone = curr_line.split()\nasn = int(customer_cone[0])\ncustomer_cone_size = len(customer_cone[1:])\n\n# Update as_2_cone with this asn's customer_cone_size.\nif asn not in as_2_cone:\n    as_2_cone[asn] = {}\n\nas_2_cone[asn][\"asn\"] = asn\nas_2_cone[asn][\"cone\"] = customer_cone\nas_2_cone[asn][\"size\"] = customer_cone_size[1:]\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS</h3>\n\n<ul>\n<li>AS stands for Autonomous system</li>\n<li>It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).</li>\n<li>It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.</li>\n<li>Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.</li>\n<li>Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.</li>\n<li>More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></li>\n</ul>\n\n<h3>What is an ASN</h3>\n\n<ul>\n<li>Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</li>\n</ul>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing polocy between two ASes.</li>\n<li>The three most commo types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<h3>What is a Customer Cone</h3>\n\n<ul>\n<li>A customer cone is the set of ASes, prefixes, or addresses that can be reached from a given AS following only customer links.</li>\n<li>An AS A's AS customer cone as the AS A itself plus all the ASes that can be reached from A following only p2c links in BGP paths we observed.\n<ul>\n<li>In other words, A's customer cone contains A, plus A's customers, plus its customers' customers, and so on.</li>\n</ul></li>\n<li>The size of the customer cone of an AS reflects the number of other elements (ASes,  prefixes, or addresses) found in it's set.</li>\n<li>An AS in the customer cone is assumed to pay, directly or indirectly, for transit, and provides a coarse metric of the size or influence of an AS in the routing system.</li>\n</ul>\n\n<h3>File Format: .ppdc-ases</h3>\n\n<p>For the purpose of this solution, we'll be skipping over any commented lines. Each line is a customer cone where asn0 is the \"head\" of the cone and all asns after is are within its cone.</p>\n\n<p>~~~text</p>\n\n<h1>inferred clique:</h1>\n\n<h1>total size: ...</h1>\n\n<p><asn0>|<asn1>|...|<asnM>\n~~~</p>\n",
-        "dateCreated": "2020.06",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_get_range_of_allocated_or_reserved_ips": {
-        "id": "recipe:how_to_get_range_of_allocated_or_reserved_ips",
-        "name": "How to get the range of allocated or reserved IPs?",
-        "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed with out specific designations, one with designations.",
-        "question": "How to get the range of reserved and allocated ASNs",
-        "tags": [
-            "tag:ipv4",
-            "tag:iana",
-            "tag:ip_address",
-            "tag:ip"
-        ],
-        "filename": "sources/recipe/how_to_get_range_of_allocated_or_reserved_ips/README.md",
-        "__typename": "Recipe",
-        "content": "<h2>Solution</h2>\n\n<p>This solution will return two dictionaries - one compressed (with only allocated, legacy, and reserved keys) and one with specific /8 IP designations. </p>\n\n<p><strong>Usage</strong>: </p>\n\n<p>You can either enter a path to the current IANA IPv4 csv.</p>\n\n<p>This link will download the latest available IPv4 space registry:\nhttps://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv</p>\n\n<p><code>python3 parse_ipv4.py [path to csv]</code></p>\n\n<p>~~~python\nimport pandas as pd\nimport sys\nimport more_itertools as mit</p>\n\n<p>def parse<em>ip</em>assignees(csv<em>path):\n    ip = pd.read</em>csv(csv<em>path).reset</em>index()\n    ip[\"Designation\"] = ip[\"Designation\"].apply(lambda x: x.lower().replace(\"administered by\", \"\").strip())</p>\n\n<pre><code>consec = (lambda x: [list(group) for group in mit.consecutive_groups(list(x))])\n\nip = (ip.drop(ip.columns.difference([\"index\",\"Designation\"]), axis=1)\n.groupby([\"Designation\"])[\"index\"]\n.apply(lambda x: [[y[0], y[-1]] for y in consec(x)])\n.to_dict())\nreturn ip\n</code></pre>\n\n<p>def parse<em>ip</em>compressed(csv<em>path):\n    ip = pd.read</em>csv(csv<em>path).reset</em>index()\n    ip[\"Status [1]\"] == ip[\"Status [1]\"].apply(lambda x: x.lower())</p>\n\n<pre><code>consec = (lambda x: [list(group) for group in mit.consecutive_groups(list(x))])\n\nip = (ip.drop(ip.columns.difference([\"index\",\"Status [1]\"]), axis=1)\n.groupby([\"Status [1]\"])[\"index\"]\n.apply(lambda x: [[y[0], y[-1]] for y in consec(x)])\n.to_dict())\nreturn ip\n</code></pre>\n\n<p>print(parse<em>ip</em>assignees(sys.argv[1]), parse<em>ip</em>compressed(sys.argv[1]))\n ~~~</p>\n\n<p>## Background</p>\n\n<p>### What is an IP address?</p>\n\n<ul>\n<li>An IP address is a fundamental concept in the Internet Protocol</li>\n<li>They are uniquely assigned labels assigned to devices in order route information to and from other devices in the network</li>\n<li><p>Each IP address is 32-bits, separated into four 8-bit numbers</p>\n\n<h3>What is a /8 address?</h3></li>\n<li><p>The first 8-bits of the IP address</p></li>\n<li><p>Least specific; most /8 addresses are assigned to RIRs, or Regional Internet Registries, who allocate IP addresses to organizations in their respective regions</p>\n\n<h3>What do the compressed designations mean?</h3></li>\n<li><p><strong>Legacy</strong>: Either assigned to an organization or administered by an RIR. Legacy is used for blocks that have been assigned before the establishment of the RIRs.</p></li>\n<li><strong>Allocated</strong>: Allocated to an RIR</li>\n<li><p><strong>Reserved</strong>: Reserved for special purposes</p>\n\n<h2>Caveats</h2></li>\n<li><p>This has been made specifically for the current IANA file</p></li>\n</ul>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:parse_the_itdk": {
-        "name": "Parse CAIDA's ITDK for a router's IPs, ASN, neighbors, and geographic location.",
-        "description": "Using the ASN's organizatoin's country in WHOIS to map an ASN to the country of it's headquarters.",
-        "tags": [
-            "tag:measurement_methodology",
-            "tag:topology",
-            "tag:software_tools",
-            "tag:asn",
-            "tag:geolocation"
-        ],
-        "id": "recipe:parse_the_itdk",
-        "filename": "sources/recipe/parse_the_itdk/Readme.md",
-        "__typename": "Recipe",
-        "content": "<p></p>\n",
-        "dateCreated": "2019.12",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_annotate_a_traceroute_with_ixp": {
-        "id": "recipe:how_to_annotate_a_traceroute_with_ixp",
-        "name": "How to Annotate a Traceroute with IXP",
-        "description": "The following solution will return a list of IXP names given IP addresses",
-        "tags": [
-            "tag:ixps",
-            "tag:internet_exchange_points",
-            "tag:ip_address",
-            "tag:ip"
-        ],
-        "filename": "sources/recipe/how_to_annotate_a_traceroute_with_ixp/README.md",
-        "__typename": "Recipe",
-        "content": "<h2>Solution</h2>\n\n<p>Given a list of IP addresses, this following solution will return a list of correseponding IXP names.</p>\n\n<p>load<em>traceroute() takes in one input:\n- <code>path</code>: Path to jsonl file of IXPs, which can be found here: <a href=\"https://www.caida.org/data/ixps/\">ixps dataset</a> under ixs</em>*.jsonl files</p>\n\n<p>and outputs:\n- <code>ixpdb</code>: pyasn database\n- <code>diction</code>: Dictionary to map to names of IXPs</p>\n\n<p>annotate_traceroute() takes in three inputs:</p>\n\n<ul>\n<li>List of IP addresses</li>\n<li><code>ixpdb</code>: pyasn database (from load_traceroute())</li>\n<li><code>diction</code>: Dictionary to map to names of IXPs (from load_traceroute())</li>\n<li><code>ips</code>: List of ip addresses</li>\n</ul>\n\n<p>and prints:\n- <code>final</code>: Array indicating corresponding IXP or invalid IP address note</p>\n\n<p><strong>Usage:</strong> <code>python3 ixp-annotations.py [path to jsonl file] [ip address] [ip address] ...</code></p>\n\n<p>i.e. <code>python3 ixp-annotations.py ixp.jsonl '198.32.231.77' '10'</code> will yield \n~~~\nInvalid IP:  10\n['npIX PTS', None]\n~~~</p>\n\n<p>~~~python</p>\n\n<p>import json\nimport numpy as np\nimport pyasn\nimport os</p>\n\n<p>def load<em>traceroute(path):\n    \"\"\"\n    Parses provided IXP dataset and creates a pyasn compatible database and dictionary to be used in the next function.\n    \"\"\"\n    temp</em>file = \"<em>ixp.dat\"\n    with open(path) as f:\n        next(f)\n        data = []\n        diction = {}\n        i = 1\n        # Gathers data from files and sets up format\n        for line in f:\n            obj = json.loads(line)\n            name = obj['name']\n            diction[i] = name\n            recorded</em>ipv4 = list(map(lambda x: x+\"\\t%d\"%i, obj['prefixes']['ipv4']))\n            recorded<em>ipv6 = list(map(lambda x: x+\"\\t%d\"%i, obj['prefixes']['ipv6']))\n            data+=(recorded</em>ipv4+recorded<em>ipv6)\n            i+=1\n        # Writes data into file\n        hdrtxt = '; IP-ASN32-DAT file\\n; Original file : <Path to a rib file>\\n; Converted on  : temp\\n; CIDRs         : 512490\\n;'\n        np.savetxt(temp</em>file, data, header=hdrtxt,fmt='%s')\n        ixpdb = pyasn.pyasn(temp<em>file)\n        # Removes created file\n        os.remove(temp</em>file)\n        return ixpdb, diction</p>\n\n<p>def annotate<em>traceroute(ixpdb, diction, ips):\n    \"\"\"\n    Inputs a path to data file and a list of IP addresses and returns a corresponding list of IXP names.\n    \"\"\"\n    # Converts all into IP address format, appends None if not IP address\n    ixp</em>list = [None]*len(ips)\n    for index in range(len(ips)):\n        # Checks if address is valid\n        try:\n            ixpdb.lookup(ips[index])\n        except ValueError:\n            print(\"Invalid IP: \", ips[index])\n            continue <br />\n        # Looks up IP address in IXP database\n        if ixpdb.lookup(ips[index])[1]:\n            ixp<em>list[index] = diction[ixpdb.lookup(ips[index])[0]]\n        else:\n            continue <br />\n    print(ixp</em>list)\n~~~</p>\n\n<h2>Background</h2>\n\n<h3>What is an Internet Exchange Point (IXP)?</h3>\n\n<ul>\n<li>An IXP is a physical infrastructure that allow Internet Service Providers (ISPs), Content Delivery Networks(CDNs), and other organizations to exchange Internet traffic between their networks</li>\n<li><a href=\"https://www.internetsociety.org/issues/ixps/\">IXPs are managed by one of the following</a>: non-profit organizations, associations of ISPs, operator-neutral for-profit companies, university or government agencies, informal associations of networks</li>\n</ul>\n\n<h3>What is an IP address?</h3>\n\n<ul>\n<li>IP addresses are unique identifiers that connect devices to the Internet network for communication purposes</li>\n</ul>\n\n<h3>What is a prefix?</h3>\n\n<ul>\n<li>An IP address has two sections: host and network</li>\n<li>The network section makes up the first portion and the host section makes up the seond</li>\n<li>Thus, each network address (prefix) consists of a number of unique host addresses</li>\n<li>The goal of this solution is to determine which IXP a host IP addresses belongs to through checking whether a host IP is within range of provided prefixes</li>\n</ul>\n\n<h3>Why use pyasn?</h3>\n\n<ul>\n<li>pyasn allows for quick lookups to determine whether an IP address is within a prefix</li>\n<li>For the purpose of this solution, we've used pyasn to match to a number corresponding to an IXP name of an IP address</li>\n</ul>\n\n<h2>Caveats</h2>\n\n<ul>\n<li>Requires permission to write files</li>\n</ul>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_get_the_range_of_allocated_or_reserved_asns": {
-        "id": "recipe:how_to_get_the_range_of_allocated_or_reserved_asns",
-        "name": "How to get the range of allocated or reserved asns?",
-        "description": "The following solution will create two dictionaries listing the ranges in which AS numbers: one compressed, one not compressed.",
-        "question": "How to get the range of reserved and allocated ASNs",
-        "tags": [
-            "tag:asn",
-            "tag:iana",
-            "tag:autonomous_system"
-        ],
-        "filename": "sources/recipe/how_to_get_the_range_of_allocated_or_reserved_asns/README.md",
-        "__typename": "Recipe",
-        "content": "<h2>Solution</h2>\n\n<p>This solution will return two dictionaries - one compressed (with only allocated and reserved keys) and one with designations. </p>\n\n<p><strong>Usage</strong>: </p>\n\n<p>The function <code>iana_asn_asignee</code> inputs two dataframe paths - one for the IANA's 16-bit asn csv file and one for IANA's 32-bit asn csv file, and returns a dictionary with designation names. The function <code>iana_asn_compressed</code> returns a dictionary with all designations converted to \"allocated,\" revealing only the ranges of allocated and reserved numbers. </p>\n\n<p>These links will automatically download the current IANA ASN space registries:</p>\n\n<ul>\n<li>16-bit: https://www.iana.org/assignments/as-numbers/as-numbers-1.csv</li>\n<li>32-bit: https://www.iana.org/assignments/as-numbers/as-numbers-2.csv</li>\n</ul>\n\n<p><code>$ python3 current-asn.py [16-bit csv file path] [32-bit csv file path]</code></p>\n\n<p>~~~python \nimport pandas as pd\nimport argparse\nimport os</p>\n\n<p>def aggregate<em>ranges(ls):\n    \"\"\"\n    Helper function that aggregates consecutive lists of ranges into a single range.\n    \"\"\"\n    final = []\n    i = 0\n    if len(ls) == 1:\n        return ls\n    curr</em>range = ls[0]\n    while i != len(ls)-1:\n        i+=1\n        current = ls[i]\n        if ((curr<em>range[0] &lt;= current[1]) and (curr</em>range[0] &gt;= current[0])) or ((curr<em>range[0] &lt;= current[0]) and (curr</em>range[1] &gt;= current[0])):\n            curr<em>range = [min([curr</em>range[0], current[0]]), max([current[1], curr<em>range[1]])]\n            if i == len(ls)-1:\n                final.append(curr</em>range)\n                return final\n            continue\n            current = ls[i]\n        if (curr<em>range[1] + 1 == current[0]) or (curr</em>range[1] == current[0]):\n            curr<em>range[1] = current[1]\n            if i == len(ls)-1:\n                final.append(curr</em>range)\n                return final\n        else:\n            final.append(curr<em>range)\n            if i == len(ls)-1:\n                final.append(current)\n                return final\n            else:\n                curr</em>range = current\n    return final</p>\n\n<p>def simplify(x):\n    \"\"\"\n    Helper function returns either \"reserved\", \"unassigned\", or \"allocated\"\n    \"\"\"\n    if 'reserved' in x:\n        return 'reserved'\n    if 'unassigned' in x:\n        return 'unassigned'\n    else:\n        return 'allocated'</p>\n\n<p>def clean<em>designation</em>names(x):\n    \"\"\"\n    Helper function returns either \"reserved\", \"unassigned\", or \"allocated\"\n    \"\"\"\n    if 'reserved' in x:\n        return 'reserved'\n    if 'unassigned' in x:\n        return 'unassigned'\n    else:\n        return x.replace('assigned by', '').strip()</p>\n\n<p>def combine(csv<em>path16, csv</em>path32):\n    \"\"\"\n    Combines 16-bit and 32-bit csv files.\n    \"\"\" <br />\n    current<em>16 = pd.read</em>csv(csv<em>path16)\n    current</em>32 = pd.read<em>csv(csv</em>path32)\n    current<em>32 = current</em>32.loc[current<em>32[\"Number\"] != '0-65535']\n    return pd.concat([current</em>16, current_32])</p>\n\n<p>def iana<em>asn</em>asignees(csv<em>path16, csv</em>path32):\n    current = combine(csv<em>path16, csv</em>path32)\n    current[\"Description\"] = current[\"Description\"].apply(lambda x: clean<em>designation</em>names(x.lower()))\n    current[\"Number\"] = current[\"Number\"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])</p>\n\n<pre><code>asn = (current\n.drop(current.columns.difference(['Number','Description']), axis=1)\n.groupby(\"Description\")[\"Number\"]\n.apply(list)\n.apply(aggregate_ranges)).to_dict()\n\ntry:\n    del asn['unallocated']\nexcept KeyError:\n    pass\n\nreturn asn\n</code></pre>\n\n<p>def iana<em>asn</em>compressed(csv<em>path16, csv</em>path32): \n    current = combine(csv<em>path16, csv</em>path32)\n    current[\"Description\"] = current[\"Description\"].apply(lambda x: simplify(x.lower()))\n    current[\"Number\"] = current[\"Number\"].apply(lambda x: [int(x), int(x)] if '-' not in x else [int(x.split('-')[0]), int(x.split('-')[1])])</p>\n\n<pre><code>asn = (current\n.drop(current.columns.difference(['Number','Description']), axis=1)\n.groupby(\"Description\")[\"Number\"]\n.apply(list)\n.apply(aggregate_ranges)).to_dict()\n\ntry:\n    del asn['unallocated']\nexcept KeyError:\n    pass\n\nreturn asn\n</code></pre>\n\n<h1>print(iana<em>asn</em>asignees(csv1path, csv2path), iana<em>asn</em>compressed(csv1path, csv2path))</h1>\n\n<p>~~~</p>\n\n<h2>Background</h2>\n\n<h3>What is ASN?</h3>\n\n<ul>\n<li>ASN is short for autonomous system numbers</li>\n<li>ASNs are assigned to Autonomous Systems (AS), which are sub networks that amalgamate to form the Internet network</li>\n<li>Autonomous systems are allocated to unique ASN first through IANA, then through their region's Regional Internet Registry</li>\n<li>Information about the ASNs have been gathered from IANA, an organization that manages and records IP address and ASN allocations</li>\n</ul>\n\n<h2>Why are two files needed?</h2>\n\n<ul>\n<li>ASNs began as 16-bit numbers, meaning that there were previously only 65,000 unique numbers. In the early 2010s, a steady growth of the Internet network revealed the need for expansion. They thus began using 32-bits to allow for more unique numbers</li>\n<li>IANA currently formats the datasets so that 16-bit allocations are separate from 32-bit allocations. This solution will combine the two datasets to return all of the number ranges</li>\n<li>Note: The numbers are directly transferable as 32-bit allocations start from where the 16-bit allocations end</li>\n</ul>\n\n<h2>Caveats</h2>\n\n<ul>\n<li>This solution uses only the current datasets provided by IANA</li>\n<li>This solution combines the 16-bit and 32-bit csv files, so both must be provided</li>\n<li>You can access the </li>\n</ul>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:getting_an_asns_name_country_organization": {
-        "id": "recipe:getting_an_asns_name_country_organization",
-        "visibility": "public",
-        "name": "How to get an ASN's name, organization and country?",
-        "description": "Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
-        "tags": [
-            "tag:measurement_methodology",
-            "tag:topology",
-            "tag:software_tools",
-            "tag:asn",
-            "tag:geolocation",
-            "tag:organization",
-            "tag:country"
-        ],
-        "filename": "sources/recipe/getting_an_asns_name_country_organization/Readme.md",
-        "__typename": "Recipe",
-        "content": "<h3><ins> Mapping ASN's to country </ins></h3>\n\n<p><em>AS to Organization Mapping Datasets:</em> <a href=\"https://www.caida.org/data/as-organizations/\">link</a></p>\n\n<p>One way to map a ASN to a country is by mapping to the <strong>country of its organization.</strong> </p>\n\n<p>The AS Organization files contain two different types of entries: AS numbers and\norganizations.\\\nThe two data types are divided by lines that start with\n'# format....'.\\\nAn example can be found below.\\\nNote: The <code>country</code> field is stored on the organization field format. </p>\n\n<p>Example of the AS organization in a test file:\n~~~</p>\n\n<h1>format: org<em>id|changed|org</em>name|country|source</h1>\n\n<p>LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN</p>\n\n<h1>format: aut|changed|aut<em>name|org</em>id|opaque_id|source</h1>\n\n<p>1|20120224|LVLT-1|LVLT-ARIN|e5e3b9c13678dfc483fb1f819d70883c_ARIN|ARIN\n~~~</p>\n\n<h3>Explanation of the data fields</h3>\n\n<hr />\n\n<h2>Organization fields</h2>\n\n<p><strong>org_id</strong> : unique ID for the given organization \\\n <strong>changed</strong> : the changed date provided by its WHOIS entry \\\n <strong>name</strong>    : the name of the organization. The name could be selected from the AUT entry tied to the\n               organization, the AUT entry with the largest customer cone,\n               listed for the organization (if there existed an stand alone\n               organization), or a human maintained file. \\\n <strong>country</strong> : The country where the organization is located. Some WHOIS provide this field as a individual field. In other                cases we infer it from the addresses \\\n <strong>source</strong>  : the RIR or NIR database which contained this entry </p>\n\n<hr />\n\n<h2>AS fields</h2>\n\n<p><strong>aut</strong>     : the AS number or asn \\\n<strong>changed</strong> : the changed date provided by its WHOIS entry \\\n<strong>aut<em>name</strong> : the name provided for the individual AS number \\\n<strong>org</em>id</strong>  : maps to an organization entry \\\n<strong>opaque_id</strong>   : opaque identifier used by RIR extended delegation format \\\n<strong>source</strong>  : the RIR or NIR database which was contained this entry </p>\n\n<h3><ins> Solution </ins></h3>\n\n<p>The following script returns a dictionary <code>asn_info</code> that maps an ASN id to other field values <code>asn</code>, <code>changed</code>, <code>asn_name</code>, <code>org_id</code>, <code>source</code>, <code>org_name</code> and <code>country</code> in the following format:\\\n{'12285': {<code>asn</code>: '12285', <code>changed</code>: ' ', <code>asn_name</code>: ' ', \n<code>org_id</code>: ' ', <code>source</code>: '', <code>org_name</code>: ' ', <code>country</code>: ' ' }</p>\n\n<p>~~~python\nimport re\nimport sys</p>\n\n<p>re_format= re.compile(\"# format:(.+)\")</p>\n\n<p>org<em>info = {}\nasn</em>info = {}</p>\n\n<h1>Pass in test dataset as filename</h1>\n\n<p>with open(filename) as f:\n    for line in f:\n        m = re<em>format.search(line)\n        if m:\n            keys = m.group(1).rstrip().split(\",\")\n            keys = keys[0].split(\"|\")\n            if keys[0] == 'aut':\n                # Replace all instances of 'aut' with 'asn'\n                keys[0] = 'asn'\n                # Replace all instances of 'aut</em>name' with 'asn<em>name'\n                keys[2] = 'asn</em>name'</p>\n\n<pre><code>    # skips over comments\n    if len(line) == 0 or line[0] == \"#\":\n        continue\n\n    values = line.rstrip().split(\"|\")\n\n    info = {}\n\n    for i,key in enumerate(keys):\n        info[keys[i]] = values[i]\n\n\n    if \"asn\" == keys[0]:\n        org_id = info[\"org_id\"]\n        if org_id in org_info:\n            for key in [\"org_name\",\"country\"]:\n                info[key] = org_info[org_id][key]\n\n        asn_info[values[0]] = info\n\n    elif \"org_id\" == keys[0]:\n        org_info[values[0]] = info\n    else:\n        print (\"unknown type\",keys[0],file= sys.stderr)\n</code></pre>\n\n<h1>Contains the asn mapping to other field values in this format:</h1>\n\n<h1>{'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN',</h1>\n\n<h1>'org<em>id': '111S-ARIN', 'source': 'ARIN', 'org</em>name': 'One Eleven Internet Services', 'country': 'US' }</h1>\n\n<h1>print(asn_info)</h1>\n\n<p>~~~</p>\n\n<h3><ins> Background </ins></h3>\n\n<p><strong>What is an AS?</strong>\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 Each AS is responsible for routing traffic within itself. This is known as intra-AS routing. \\\n \u2022 Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing. \\\n \u2022 More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></p>\n\n<p><strong>What is an ASN?</strong>\\\n    \u2022 Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</p>\n\n<p><strong>What is an ASN's organization?</strong>\\\n    \u2022 Each ASN can be mapped to a organization that controls multiple AS's over its network. </p>\n\n<p><strong>What is an ASN's country?</strong> \\\n    \u2022 The country where the ASN's organization is located. </p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an <strong>oversimplification</strong>, as the <code>country</code> would represent the ASN's headquarters but not the physical infrastructure. \nIn other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. </p>\n",
-        "dateCreated": "2019.12",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_annotate_an_ark_traceroute_with_hostnames": {
-        "id": "recipe:how_to_annotate_an_ark_traceroute_with_hostnames",
-        "visibility": "public",
-        "name": "How to annotate an ark traceroute with hostnames?",
-        "description": "Parsing ark warts file and annotating IPs with the hostnames.",
-        "tags": [
-            "tag:topology",
-            "tag:software_tools",
-            "tag:ipv4",
-            "tag:ipv4_prefix",
-            "tag:ipv6"
-        ],
-        "filename": "sources/recipe/how_to_annotate_an_ark_traceroute_with_hostnames/Readme.md",
-        "__typename": "Recipe",
-        "content": "<h2><strong><ins> Introduction </ins></strong></h2>\n\n<p>The solution parses traceroutes in ark warts file and annotates IPs with hostnames. </p>\n\n<h2><strong><ins> Solution </ins></strong></h2>\n\n<p>Below is the method used to load IPs with corresponding hostnames into the dictionary <code>dns</code> with the following format:<code>{'ip address': 'hostname'}</code>.\n ~~~python</p>\n\n<h1>reading DNS file</h1>\n\n<p>def load<em>dns</em>file(dns<em>file):\n    global dns\n    with open(dns</em>file) as f:\n        for line in f:\n            line = line.split()\n            if len(line)==2: # missing hostname\n                continue\n            elif line[2] == \"FAIL.SERVER-FAILURE.in-addr.arpa\" or line[2] == \"FAIL.NON-AUTHORITATIVE.in-addr.arpa\":\n                continue\n            else:\n                dns[line[1]] = line[2]\n~~~</p>\n\n<p>Below is the method used to parse .warts file and return a traceroute's <code>ips</code> and <code>hostname</code> in list format. Note that there could be multiple IPs in a hop. Set <code>single_IP</code> to True to get None value if there are multiple IPs in a hop. Set <code>single_IP</code> to False to get all IPs in each hop. For more examples, please read Caveats below.\nThe method returns source, each hop and destination of a traceroute in sequence. <code>[source, hop_1, hop_2, ... , hop_n, destination]</code>\n~~~python\ndef parse<em>trace(trace, single</em>IP=False):\n    global dns\n    ips = []\n    hostnames = []</p>\n\n<pre><code># source\nif trace.src_address:\n    ips.append(trace.src_address)\n    if trace.src_address in dns:\n        hostnames.append(dns[trace.src_address])\n    else:\n        hostnames.append(None)\n# hops\nfor h in trace.hops:\n    if single_IP:\n        if len(h.address.split(','))&gt;=2:\n            ips.append(None)\n            hostnames.append(None)\n        else: # sinle ip in a hop\n            ips.append(h.address)\n\n            if h.address in dns:\n                hostnames.append(dns[h.address])\n            else:\n                hostnames.append(None)\n    else: # support multiple ips\n        hop_hostnames = []\n        hop_ips = h.address.split(',')\n        ips.append(hop_ips)\n        for ip in hop_ips:\n            if ip in dns:\n                hop_hostnames.append(dns[ip])\n            else:\n                hop_hostnames.append(None)\n        hostnames.append(hop_hostnames)\n\n# destination\nif trace.dst_address:\n    ips.append(trace.dst_address)\n    if trace.dst_address in dns:\n        hostnames.append(dns[trace.dst_address])\n    else:\n        hostnames.append(None)\n\nreturn ips, hostnames\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins> Background </ins></strong></h2>\n\n<h3>What is a Traceroute?</h3>\n\n<p>Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.\nMore information can be found on <a href=\"https://en.wikipedia.org/wiki/Traceroute\">Wikipedia</a></p>\n\n<h3>What is Scamper?</h3>\n\n<p>Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.</p>\n\n<p>More information on Scampper can be found <a href=\"https://www.caida.org/tools/measurement/scamper/\">here</a>\nDownload source code from <a href=\"https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz\">here</a>\nRead Warts format in Python please read <a href=\"https://github.com/drakkar-lig/scamper-pywarts\">pywarts</a></p>\n\n<h3>Dataset</h3>\n\n<h4>IPv4 Prefix-Probing Traceroute Dataset</h4>\n\n<p>More information and download dataset <a href=\"https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml\">here</a></p>\n\n<h4>The IPv4 Routed /24 Topology Dataset</h4>\n\n<p>More information and download dataset <a href=\"https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml\">here</a></p>\n\n<h4>Ark IPv6 Topology Dataset</h4>\n\n<p>More information and download dataset <a href=\"https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml\">here</a></p>\n\n<h4>IPv4 Routed /24 DNS Names Dataset</h4>\n\n<p>More information and download dataset <a href=\"https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml\">here</a></p>\n\n<h4>The IPv6 DNS Names Dataset</h4>\n\n<p>More information and download dataset <a href=\"https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml\">here</a></p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>Note that there could be multiple IP addresses to a single hop. So there are two versions. </p>\n\n<p>Support multiple IPs: Set <code>single_IP</code> to False\nSet <code>single_IP</code> to False to get all IPs in each hop. \n~~~ <br />\nips, hostnames = parse<em>trace(trace,single</em>IP=False)</p>\n\n<h1>Return format</h1>\n\n<p>ips == [[\"10.1.2.3\"],[],[\"10.0.0.1\",\"2.1.1.2\"]]\nhostnames: [[\"www.caida.org\"],[],[\"cat.caida.org\",None]]\n~~~</p>\n\n<p>Support only single IP:\nSet <code>single_IP</code> to True to get None value if there are multiple IPs in a hop. \n~~~\nips, hostnames = parse<em>trace(trace,single</em>IP=True)</p>\n\n<h1>Return format</h1>\n\n<p>ips == [\"10.1.2.3\", None, None]\nhostnames: [\"www.caida.org\", None, None]\n~~~</p>\n",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_annotate_as_relationships_with_geographic_annotations": {
-        "id": "recipe:how_to_annotate_as_relationships_with_geographic_annotations",
-        "visibility": "public",
-        "name": "How to annotate as relationships with geographic annotations?",
-        "description": "Annotating as relationships with geographic annotations",
-        "tags": [
-            "tag:topology",
-            "tag:software_tools",
-            "tag:asn",
-            "tag:geolocation",
-            "tag:country"
-        ],
-        "filename": "sources/recipe/how_to_annotate_as_relationships_with_geographic_annotations/Readme.md",
-        "__typename": "Recipe",
-        "content": "<h2><strong><ins> Introduction </ins></strong></h2>\n\n<p>The solution annotates AS relationships with geographic annotations.</p>\n\n<h2><strong><ins> Solution </ins></strong></h2>\n\n<p>The full script could be found in annotate<em>as</em>relationships<em>with</em>geo.py \\\n<strong>Usage:</strong> <code>python annotate_as_relationships_with_geo.py -a &lt;as-relationship dataset&gt; -l &lt;location dataset&gt;</code></p>\n\n<p>Below is the method used to load geolocation info from location dataset and store them in <code>geo_info</code> in dictionary. Then load AS relationships from AS-relationship dataset, map ASN with corresponding geolocation info and return annotated AS relationships in <code>as_rel_geo</code>. <br />\n~~~python\ndef load<em>rel</em>geo(as<em>file, geo</em>file):</p>\n\n<pre><code>re_format = re.compile(\"# format:(.+)\")\ngeo_info = {}\n\nwith open(geo_file, 'r') as f:\n    for line in f:\n        m = re_format.search(line)\n        if m:\n            keys = m.group(1).strip().split(\"|\")\n\n        #skip comment and empty line\n        if line[0] == \"#\" or len(line) == 0:\n            continue\n\n        line = line.strip().split(\"|\")\n        info={}\n        for i in range(len(keys)):\n            info[keys[i]] = line[i]\n\n        if info['lid'] not in geo_info:\n            geo_info[info['lid']] = info\n\nwith open(as_file, 'r') as f:\n    for line in f:\n\n        #skip comment and empty line\n        if line[0] == \"#\" or len(line)==0:\n            continue\n\n        line = line.strip().split(\"|\")\n\n        # get geolocation info of asn_0\n        if line[2]: \n            source = geo_info[line[2].split(\",\")[0]]\n\n        # get geolocation info of asn_1\n        try:\n            dest = geo_info[line[3].split(\",\")[0]]\n        except:\n            dest = {}\n        as_rel_geo = {line[0]: {line[1]: [source, dest]}, line[1]: {line[0]: [source, dest]}}\n        #print(as_rel_geo)\n</code></pre>\n\n<p>~~~</p>\n\n<p>Return the annotated AS relationships in the following format.\n~~~\n{\nasn0: {asn1: [{geo<em>info</em>ans0}, {geo<em>info</em>ans1}]},\nasn1: {asn0: [{geo<em>info</em>ans0}, {geo<em>info</em>ans1}]}\n}</p>\n\n<h1>details of geo<em>info</em>ans</h1>\n\n<p>{'lid': '', 'continent': '', 'country': '', 'region': '', 'city': '', 'lat': '', 'lon': '', 'pop': ''}\n~~~</p>\n\n<p>Example of return value. Note that if geolocation info of the ASN is not in <code>geo_info</code>, it would return empty <code>{}</code>.\n~~~\n{'2': {'34': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}, '34': {'2': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}}\n~~~</p>\n\n<h2><strong><ins> Background </ins></strong></h2>\n\n<h3>Dataset</h3>\n\n<h4>AS Relationships - with geographic annotations</h4>\n\n<ul>\n<li>ISPs engage in both formal and informal relationships to collectively and ubiquitously route traffic in the Internet. </li>\n<li>These relationships turn into reality when two companies create physical connections between their networks, either by simply connecting two routers in a single location, or connecting pairs of routers in many different cities. </li>\n<li>Download <code>as-rel-geo.txt</code> for as-relationship dataset and <code>locations.txt</code> for location dataset.</li>\n<li>More information and download dataset <a href=\"https://www.caida.org/data/as-relationships-geo/\">here</a></li>\n</ul>\n\n<h3>What is an AS</h3>\n\n<ul>\n<li>AS stands for Autonomous system</li>\n<li>It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).</li>\n<li>It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.</li>\n<li>Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.</li>\n<li>Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.</li>\n<li>More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></li>\n</ul>\n\n<h3>What is an ASN</h3>\n\n<ul>\n<li>Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</li>\n</ul>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing polocy between two ASes.</li>\n<li>The three most commo types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n",
-        "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "recipe:how_to_look_up_as_s_rank_using_as_relationship_file": {
-        "id": "recipe:how_to_look_up_as_s_rank_using_as_relationship_file",
-        "visibility": "public",
-        "name": "How to look up AS's rank using AS Relationship file",
-        "description": "Using a given AS Relationship, classify all asns into three catagories: tansit free, middle, edge",
-        "tags": [
-            "tag:asn",
-            "tag:as_relationship",
-            "tag:ipv4"
-        ],
-        "filename": "sources/recipe/how_to_look_up_ass_rank_using_as_relationship_file/README.md",
-        "__typename": "Recipe",
-        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>This solution helps classify an asn based upon its relationships to other asns. The following <a href=\"rel_2_class.py\">script</a> takes in all AS Relationships from a local .as-rel file to determine every asn's classification. This is done by getting the number of providers and customers of each asn, storing them in a dictionary labeled, <code>as_2_data</code>. This data is then used to determine classifications, which are stored in a dictionary labeled <code>as_2_class</code>. The classifications for each asn is then printed to STDOUT.</p>\n\n<h3>Usage</h3>\n\n<p>Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>.\n- Note: This script can take in both .txt and encoded .bz2 files, so you don't have to decode the downloaded datasets.</p>\n\n<p><code>bash\npython3 api_2_class.py -r 20200101.as-rel.txt &gt; output.jsonl\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is a helper method used to parse a given line from a .as-rel file. This is called once opening the given file and iterating over each line. The line is split into it's three values, which are then used to update <code>as_2_data</code> with each asn's providers and customers.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method that takes in a line from the .as-rel file to update as<em>2</em>data.</h1>\n\n<p>def parse<em>as</em>rel<em>line(curr</em>line):\n    global as<em>2</em>data\n    global rel<em>2</em>name</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\n# curr_line format: &lt;asn0&gt;|&lt;asn1&gt;|&lt;relationship&gt;\nasn0, asn1, relationship = curr_line.split(\"|\")\n\n# Edge Case: Create objects for asn0 or asn1 if they are not in as_2_data.\nif asn0 not in as_2_data:\n    as_2_data[asn0] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\nif asn1 not in as_2_data:\n    as_2_data[asn1] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\n\n# If asn0's provider is asn1 add to asn0's customers, and asn1's providers.\nif rel_2_name[int(relationship)] == \"provider\":\n    as_2_data[asn0][\"providers\"].add(asn1)\n    as_2_data[asn1][\"customers\"].add(asn0)\n# Else if asn0's customer is asn1.\nelif rel_2_name[int(relationship)] == \"customer\":\n    as_2_data[asn0][\"customers\"].add(asn1)\n    as_2_data[asn1][\"providers\"].add(asn0)\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below is a helper method used to iterate over <code>as_2_data</code> to update <code>as_2_class</code> by determining what classification to used based on a given asn's providers and customers.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method use to update as<em>2</em>class with data from as<em>2</em>data.</h1>\n\n<p>def update<em>classifications():\n    global as</em>2<em>class\n    global as</em>2_data</p>\n\n<pre><code># Iterate over each asn in as_2_data.\nfor asn in as_2_data:\n    # Edge Case: Create a dictionary for the asn if it doesnn't exist.\n    if asn not in as_2_class:\n        as_2_class[asn] = {\n            \"asn\" : asn,\n            \"class\" : None\n        }\n    # If asn has no providers, then it is transit free.\n    if len(as_2_data[asn][\"providers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"transit free\" \n    # Else if asn has no customers. then it is an edge.\n    elif len(as_2_data[asn][\"customers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"edge\"\n    # Else asn has some providers and customers, then it is a middle.\n    else:\n        as_2_class[asn][\"class\"] = \"middle\"\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship?</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>Data Structure Format: as<em>2</em>data</h3>\n\n<p>~~~Python\n{\n    \"asn0\" : {\n        \"providers\" : set(),        # Set of asns that are providers to asn0.\n        \"customers\" : set()         # Set of asns that are customers to asn0.\n    }\n}\n~~~</p>\n\n<h3>Data Structure Format: as<em>2</em>class</h3>\n\n<p>~~~Python\n{\n    # asn0 has zero providers.\n    \"asn0\" : { \"asn\":\"asn0\", \"class\":\"transit free\" },\n    # asn1 has both providers and customers.\n    \"asn1\" : { \"asn\":\"asn1\", \"class\":\"middle\" },\n    # asn2 has zero customers.\n    \"asn2\" : { \"asn\":\"asn2\", \"class\":\"edge\" }\n}\n~~~</p>\n\n<h3>Data Structure Format: rel<em>2</em>name</h3>\n\n<p>~~~Python\nrel<em>2</em>name = {\n    -1 : \"customer\",\n    0: \"peer\",\n    1: \"provider\"\n}\n~~~</p>\n",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -50575,30 +50513,6 @@
             "license:gnu_general_public_license_version_2"
         ],
         "filename": "sources/software/scamper.json",
-        "__typename": "Software",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "software:spoofer": {
-        "id": "software:spoofer",
-        "name": "Spoofer",
-        "organization": "CAIDA",
-        "description": "Source address validation measurement program that measures susceptibility to spoofed source address IP packets.",
-        "tags": [
-            "tag:security"
-        ],
-        "resources": [
-            {
-                "name": "public",
-                "url": "https://www.caida.org/projects/spoofer/",
-                "tags": []
-            }
-        ],
-        "licenses": [
-            "license:gnu_general_public_license_version_3"
-        ],
-        "filename": "sources/software/spoofer.json",
         "__typename": "Software",
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
@@ -54422,6 +54336,61 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "person:misa__chris": {
+        "id": "person:misa__chris",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "__typename": "Person",
+        "name": "Misa,  Chris",
+        "nameLast": "Misa",
+        "nameFirst": " Chris",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "person:guse__dennis": {
+        "id": "person:guse__dennis",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "__typename": "Person",
+        "name": "Guse,  Dennis",
+        "nameLast": "Guse",
+        "nameFirst": " Dennis",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "person:hohlfeld__oliver": {
+        "id": "person:hohlfeld__oliver",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "__typename": "Person",
+        "name": "Hohlfeld,  Oliver",
+        "nameLast": "Hohlfeld",
+        "nameFirst": " Oliver",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "person:durairajan__ramakrishnan": {
+        "id": "person:durairajan__ramakrishnan",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "__typename": "Person",
+        "name": "Durairajan,  Ramakrishnan",
+        "nameLast": "Durairajan",
+        "nameFirst": " Ramakrishnan",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "person:rejaie__reza": {
+        "id": "person:rejaie__reza",
+        "filename": "sources/paper/2020_lessons_learned_organizing_pam__pubdb.json",
+        "__typename": "Person",
+        "name": "Rejaie,  Reza",
+        "nameLast": "Rejaie",
+        "nameFirst": " Reza",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "person:candela__massimo": {
         "id": "person:candela__massimo",
         "filename": "sources/paper/2020_ripe_ipmap_active_geolocation__pubdb.json",
@@ -54441,123 +54410,6 @@
         "nameLast": "Moura",
         "nameFirst": " Giovane C M",
         "dateCreated": "2020.08",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ipv4_prefix": {
-        "id": "tag:ipv4_prefix",
-        "filename": "sources/recipe/map_ipv4_address_to_asn/README.md",
-        "__typename": "Tag",
-        "name": "ipv4 prefix",
-        "dateCreated": "2019.12",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:as_relationship": {
-        "id": "tag:as_relationship",
-        "filename": "sources/recipe/how_to_find_the_business_relationships_between_asns/README.md",
-        "__typename": "Tag",
-        "name": "as relationship",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:bogon": {
-        "id": "tag:bogon",
-        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
-        "__typename": "Tag",
-        "name": "bogon",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:bogon_address": {
-        "id": "tag:bogon_address",
-        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
-        "__typename": "Tag",
-        "name": "bogon address",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ip_address": {
-        "id": "tag:ip_address",
-        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
-        "__typename": "Tag",
-        "name": "ip address",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ip": {
-        "id": "tag:ip",
-        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
-        "__typename": "Tag",
-        "name": "ip",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:as_relationships": {
-        "id": "tag:as_relationships",
-        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
-        "__typename": "Tag",
-        "name": "as relationships",
-        "dateCreated": "2020.06",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:customer_cone": {
-        "id": "tag:customer_cone",
-        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
-        "__typename": "Tag",
-        "name": "customer cone",
-        "dateCreated": "2020.06",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ixps": {
-        "id": "tag:ixps",
-        "filename": "sources/recipe/how_to_annotate_a_traceroute_with_ixp/README.md",
-        "__typename": "Tag",
-        "name": "ixps",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:internet_exchange_points": {
-        "id": "tag:internet_exchange_points",
-        "filename": "sources/recipe/how_to_annotate_a_traceroute_with_ixp/README.md",
-        "__typename": "Tag",
-        "name": "internet exchange points",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:autonomous_system": {
-        "id": "tag:autonomous_system",
-        "filename": "sources/recipe/how_to_get_the_range_of_allocated_or_reserved_asns/README.md",
-        "__typename": "Tag",
-        "name": "autonomous system",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:organization": {
-        "id": "tag:organization",
-        "filename": "sources/recipe/getting_an_asns_name_country_organization/Readme.md",
-        "__typename": "Tag",
-        "name": "organization",
-        "dateCreated": "2019.12",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:country": {
-        "id": "tag:country",
-        "filename": "sources/recipe/getting_an_asns_name_country_organization/Readme.md",
-        "__typename": "Tag",
-        "name": "country",
-        "dateCreated": "2019.12",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
@@ -54602,6 +54454,15 @@
         "filename": "sources/software/coralreef.json",
         "__typename": "Tag",
         "name": "traffic",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:ip_address": {
+        "id": "tag:ip_address",
+        "filename": "sources/software/iffinder.json",
+        "__typename": "Tag",
+        "name": "ip address",
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
@@ -54719,15 +54580,6 @@
         "filename": "sources/software/scamper.json",
         "__typename": "Tag",
         "name": "performance measurement",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "license:gnu_general_public_license_version_3": {
-        "id": "license:gnu_general_public_license_version_3",
-        "name": "GNU GENERAL PUBLIC LICENSE Version 3",
-        "filename": "sources/software/spoofer.json",
-        "__typename": "License",
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"

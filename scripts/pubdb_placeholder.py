@@ -14,6 +14,7 @@ name_id = {}
 def main():
     load_ids("media","data/PANDA-Presentations-json.pl.json")
     load_ids("paper","data/PANDA-Papers-json.pl.json")
+    error = False
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -22,6 +23,10 @@ def main():
                 if re.search("json$",fname) and "__" not in fname: 
                     try:
                         obj = json.load(open(fname,"r"))
+                    except json.decoder.JSONDecodeError as e:
+                        error = True
+                        print ("error",fname, e)
+                        continue
                     except ValueError as e:
                         print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
@@ -34,6 +39,9 @@ def main():
                             #print ()
                         name_id[name] = utils.id_create(fname, type_,obj["id"])
         
+    if error:
+        sys.exit(1)
+
     for obj in objects:
         #print (obj["__typename"], obj["id"])
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
@@ -121,6 +129,8 @@ def load_ids(type_,filename):
             if not os.path.exists(original):
                 obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
                 objects.append(obj)
+    except json.decoder.JSONDecodeError as e:
+        print ("error",fname, e)
     except ValueError as e:
         print ("JSON error in",filename)
         raise e

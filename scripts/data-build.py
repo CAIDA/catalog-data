@@ -175,6 +175,8 @@ def main():
                         obj = object_add(type_,info)
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
+                    except json.decoder.JSONDecodeError as e:
+                        print ("error",filename, e)
                     except ValueError as e:
                         print (path+"/"+filename)
         else:
@@ -603,10 +605,10 @@ def recipe_process(path):
                                         info["content"] = ""
                                         data = None
                                     except ValueError as e:
-                                        print ("error in "+p)
+                                        print ("error in "+data)
                                         print (e)
                                         print ("parse failure",data)
-                                        break
+                                        return
                                 else:
                                     data = ""
                                 inside = not inside
