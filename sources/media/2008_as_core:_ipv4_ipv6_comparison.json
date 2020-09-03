@@ -1,0 +1,61 @@
+{
+    "id": "2008_as_core:_ipv4_vs_ipv6_comparison",
+    "name": "2008 AS Core: IPv4 vs IPv6 comparison",
+    "description": "4,853,991 IP addresses, 5,682,419 IP links, 48 million destinations, 94.9% of globally routable network prefixes, 17,791 Autonomous Systems (ASes), 50,333 peering sessions. Data collected from 13 monitors located in 11 countries on 3 continents. 4,752 IPv6 addresses, 17,036 IPv6 links, 2,358 destinations, 80% of globally routable network prefixes, 489 Autonomous Systems (ASes), 1,904 peering sessions. Data collected from 56 contributors in 53 different cities located in 9 countries on 3 continents.",
+    "tags":[
+        "ark",
+        "ipv4",
+        "ipv6",
+        "poster",
+        "analysis",
+        "as_core",
+        "scamper",
+        "ripe_ncc"
+    ],
+    "links":[
+
+    ],
+    "date":"2008.01",
+    "type":"POSTER",
+    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png",
+    "resources":[
+        {
+            "name":"URL",
+            "url":"https://www.caida.org/research/topology/as_core_network/2008/ipv6.xml",
+            "tags":[
+                "url",
+                "poster"
+            ]
+        }
+    ],
+    "authors":[
+        "person:huffaker_bradley",
+        "person:claffy_kc",
+        "person:luckie_matthew",
+        "person:gall_alexander",
+        "person:johansson_andreas",
+        "person:prado_antonio",
+        "person:querubin_antonio",
+        "person:alcantara_fernandez_azael",
+        "person:schmidt_bernhard",
+        "person:dreisbach_brad",
+        "person:fitzgerald_brian",
+        "person:morrow_chris",
+        "person:morr_derek",
+        "person:kerneis_gabriel",
+        "person:huston_geoff",
+        "person:doering_gert",
+        "person:beijnum_van_iljitsch",
+        "person:pick_philippe_jean",
+        "person:kristoff_john",
+        "person:osmon_john",
+        "person:cho_kenjiro",
+        "person:jaeger_kurt",
+        "person:millnert_martin",
+        "person:arnold_mathieu",
+        "person:vieira_nuno",
+        "person:robert_ollivier",
+        "person:abt_sabastian",
+        "person:kerr_shane"
+    ]
+}

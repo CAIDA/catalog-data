@@ -7,7 +7,7 @@
         "topology",
         "performance measurement"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/scamper/",
@@ -19,85 +19,84 @@
     ],
     "links": [
         {
-            "to": "dataset:macroscopic_topology_measurements",
+            "to": "dataset:internet-topology-data-kit",
             "label": "used by"
         },
         {
-            "to": "dataset:the_ipv4_routed_24_topology_dataset",
+            "to": "dataset:ipv4_routed_24_topology",
             "label": "used by"
         },
         {
-            "to": "paper:scamper_a_scalable_and_extensible_packet_prober_for_active_measurement_of_the_internet",
+            "to": "paper:2010_scamper",
             "label": "used by"
         },
         {
-            "to": "paper:learning_to_extract_router_names_from_hostnames",
+            "to": "paper:2019_learning_regexes_extract_router",
             "label": "used by"
         },
         {
-            "to": "paper:the_impact_of_router_outages_on_the_as-level_internet",
+            "to": "paper:2017_impact_router_outages_as",
             "label": "used by"
         },
         {
-            "to": "paper:bdrmap_inference_of_borders_between_ip_networks",
+            "to": "paper:2016_bdrmap",
             "label": "used by"
         },
         {
-            "to": "paper:don't_forget_to_lock_the_back_door!_a_characterization_of_ipv6_network_security_policy",
+            "to": "paper:2016_dont_forget_lock",
             "label": "used by"
         },
         {
-            "to": "paper:resilience_of_deployed_tcp_to_blind_fin_attacks",
+            "to": "paper:2017_resilience_deployed_tcp_blind",
             "label": "used by"
         },
         {
-            "to": "paper:resilience_of_deployed_tcp_to_blind_attacks",
+            "to": "paper:2015_resilience_deployed_tcp_blind",
             "label": "used by"
         },
         {
-            "to": "paper:measuring_and_characterizing_ipv6_router_availability",
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
             "label": "used by"
         },
         {
-            "to": "paper:challenges_in_inferring_internet_interdomain_congestion",
+            "to": "paper:2014_challenges_inferring_interdomain_congestion",
             "label": "used by"
         },
         {
-            "to": "paper:speedtrap_internet-scale_ipv6_alias_resolution",
+            "to": "paper:2013_speedtrap",
             "label": "used by"
         },
         {
-            "to": "paper:measuring_the_deployment_of_ipv6:_topology,_routing_and_performance",
+            "to": "paper:2012_measuring_deployment_ipv6",
             "label": "used by"
         },
         {
-            "to": "paper:revealing_mpls_tunnels_obscured_from_traceroute",
+            "to": "paper:2012_revealing_mpls_tunnels",
             "label": "used by"
         },
         {
-            "to": "paper:measured_impact_of_crooked_traceroute",
+            "to": "paper:2011_crooked_traceroute",
             "label": "used by"
         },
         {
-            "to": "paper:measuring_path_mtu_discovery_behaviour",
+            "to": "paper:2010_measuring_path_mtu",
             "label": "used by"
         },
         {
-            "to": "paper:traceroute_probe_method_and_forward_ip_path_inference",
+            "to": "paper:2008_traceroute_probe_method",
             "label": "used by"
         },
         {
-            "to": "paper:inferring_and_debugging_path_mtu_discovery_failures",
+            "to": "paper:2005_inferring_mtu",
             "label": "used by"
         },
         {
-            "to": "paper:identifying_ipv6_network_problems_in_the_dual-stack_world",
+            "to": "paper:2004_dualstack",
             "label": "used by"
         },
         {
-            "to": "presentation:scamper_routeviews",
+            "to": "media:2020_scamper_routeviews_kismet",
             "label": "used by"
-        },
-        
+        }
     ]
 }
