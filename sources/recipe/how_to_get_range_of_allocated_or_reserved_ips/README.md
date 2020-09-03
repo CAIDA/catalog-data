@@ -15,7 +15,10 @@
     "ip"
   ],
     "authors":[
-    "person:lee_nicole"
+        {
+            "person":"person:lee_nicole",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
     ]
 }
 ~~~
