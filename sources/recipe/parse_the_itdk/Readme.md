@@ -1,9 +1,9 @@
 ~~~json
 {
     "id" : "parse_the_itdk",
-    "visibility" : "public",
-    "name": "Parse CAIDA's Internet Topology Data Kit (ITDK)",
-    "description": "Parse the ITDK for an ASes', links, interfaces, and geographic location.",
+    "name": "Parse CAIDA's ITDK for a router's IPs, ASN, neighbors, and geographic location.",
+    "description":" The following solution will help the user create a Python dictionary that contains a router's IPs, ASN, neighbors, and geographic location",
+
     "links": [
         {
             "to": "dataset:internet-topology-data-kit"
@@ -17,13 +17,34 @@
         "geolocation",
         "link",
         "node_id"
+    ],
+    "authors":[
+        {
+            "person": "lu__louis",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~
 
-## **<ins>Introduction</ins>**
 
-This solution should help the user parse the Internet Topology Data Kit (ITDK) to map a node's ID to the ASN, its interfaces (IPs), links to other nodes (IP Layer links), and its geolocation.
+## Introduction
+
+This solution parses through ITDK datasets and stores a node's `node id`, `isp`, `asn` and `location` as a json object. 
+The relevant `node` information is extracted from 4 different files: 
+- `node id` and `isp` from **nodes.bz2** 
+- `asn` from **nodes.as.bz2** 
+- `neighbors` from **links.bz2** 
+- `location` from **nodes.geo.bz2**
+
+
+## Solution
+
+This solution has a [script](parse_itdk.py) which takes in four files and creates a dictionary, ```as_2_data``` which maps an AS to the data found in all files. The four files are a Nodes File (```-n```), Node-AS File (```-a```), Links File (```-l```), and a Node-Geolocation File (```-g```). The file also has an extra flag (```-p```) which takes in a comma sperated list of ASes which will have their data printed to STDOUT. 
+
+To download the four files, you can access the data [here](https://www.caida.org/data/internet-topology-data-kit/). You'll need a .nodes, .nodes.as, nodes.geo, and a .links file. The script can handle both .bz2 and .txt file extensions so you don't need to decode the files.
+
+The way the the script works is by first parsing the Nodes-AS file and mapping a ```node_id``` to its corresponding asn which is used in all other files. Next, the script parses the Links file to create objects in the dictionary ```as_2_data```, and updates each object with links to other ASes. Then the script parses the Nodes file which updates ```as_2_data```'s existing objects with interfaces found in the file. Finally, the script parses the Nodes-Geolocation file to update the existing objects in ```as_2_data``` with data found in the file.
 
 ~~~json
 {
@@ -41,20 +62,68 @@ This solution should help the user parse the Internet Topology Data Kit (ITDK) t
 }
 ~~~
 
-## **<ins>Solution</ins>**
-
-This solution has a [script](parse_itdk.py) which takes in four files and creates a dictionary, ```as_2_data``` which maps an AS to the data found in all files. The four files are a Nodes File (```-n```), Node-AS File (```-a```), Links File (```-l```), and a Node-Geolocation File (```-g```). The file also has an extra flag (```-p```) which takes in a comma sperated list of ASes which will have their data printed to STDOUT. 
-
-To download the four files, you can access the data [here](https://www.caida.org/data/internet-topology-data-kit/). You'll need a .nodes, .nodes.as, nodes.geo, and a .links file. The script can handle both .bz2 and .txt file extensions so you don't need to decode the files.
-
-The way the the script works is by first parsing the Nodes-AS file and mapping a ```node_id``` to its corresponding asn which is used in all other files. Next, the script parses the Links file to create objects in the dictionary ```as_2_data```, and updates each object with links to other ASes. Then the script parses the Nodes file which updates ```as_2_data```'s existing objects with interfaces found in the file. Finally, the script parses the Nodes-Geolocation file to update the existing objects in ```as_2_data``` with data found in the file.
-
 ### Usage
 
 Below is an example of how to run the script, and print the AS 3356's data to STDOUT.
 
 ~~~bash
 python3 parse_itdk.py -a midar-iff.nodes.as.bz2 -l midar-iff.links.txt -n midar-iff.nodes.txt -g midar-iff.nodes.geo.txt -p 3356
+~~~
+
+
+### Placeholder Perl Code 
+This Perl code parse nodes.bz2 file only and identify the placeholder nodes.
+~~~Perl
+#! A/opt/local/bin/perl
+# Many nodes in the ITDK are placeholder nodes.
+# this are the non response hops in the traceroute
+#   12.0.0.1  * 123.3.2.3
+# We don't know what machine is there, but we know there is a machine between
+# 12.0.0.1 and 123.3.2.3.
+# In most analysis, we want to ignore placeholders.
+# You identify placeholders by their IP addresses.
+# Placeholder nodes have reserved IP addresses
+# The following Perl code identifies placeholders
+use warnings;
+use strict;
+
+use Socket qw(PF_INET SOCK_STREAM pack_sockaddr_in inet_aton);
+
+
+use constant MASK_3 => unpack("N",inet_aton("224.0.0.0"));
+use constant PREFIX_224 => MASK_3;
+use constant MASK_8 => unpack("N",inet_aton("255.0.0.0"));
+use constant PREFIX_0 => unpack("N",inet_aton("0.0.0.0"));
+
+my $nodes_total = 0;
+my $placeholder_total = 0;
+
+while (<>) {
+    next if (/#/);
+    my ($node,$nid,@addrs) = split /\s+/;
+    my $placeholder;
+    foreach my $addr (@addrs) {
+        my $net = inet_aton($addr);
+        my $binary = unpack("N", $net);
+        if ((($binary & MASK_3) == PREFIX_224)
+            || (($binary & MASK_8) == PREFIX_0)) {
+            $placeholder = 1;
+            last;
+        }
+    }
+    if (not $placeholder) {
+        $nodes_total += 1;
+    } else {
+        $placeholder_total += 1;
+    }
+
+    #print ("$not_place_holder_node $nodes_total $placeholder_total\n");
+    # Only process the none placeholder nodes
+    #last if ($nodes_total > 10);
+}
+
+print ("nodes_total: ",$nodes_total,"\n");
+print ("placeholder: ",$placeholder_total,"\n");
 ~~~
 
 ### Parsing the Nodes-AS file, and map node_ids to ASes:
@@ -220,7 +289,7 @@ def get_as_data(asn):
         print(as_2_data[asn])
 ~~~
 
-## **<ins>Background</ins>**
+## Background
 
  - What is Internet Topology Data Kit (ITDK)?
    - The ITDK contains data about connectivity and routing gathered from a large cross-section of the global Internet. 
@@ -231,28 +300,45 @@ def get_as_data(asn):
    - The Node-Geolocation file contains the geographic location for each node in the nodes file. We use MaxMind's GeoLite City database for the geographic mapping.
    - More information can be found [here](https://www.caida.org/data/internet-topology-data-kit/)
 
-### Format: Nodes File
+### Explanation of the Data Files 
+*Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
+The datasets are located in `ark/ipv4/itdk`
 
-~~~text
-node <node_id>:   <i1>   <i2>   ...   <in>
+#### midar-iff.nodes.bz2
+The nodes file lists the set of interfaces that were inferred to be on each router. 
+Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
+**File format**: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
+~~~
+node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
 
-### Format: Links File
-
-~~~text
-link <link_id>:   <N1>:i1   <N2>:i2   [<N3>:[i3]]   ..   [<Nm>:[im]]
+#### midar-iff.links.bz2
+The links file lists the set of routers and router interfaces that were inferred to be sharing each link. 
+Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
+If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
+**File format**: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
+~~~
+link L1: N27677807:1.0.0.1 N106961
 ~~~
 
-### Format: Node-AS File
-
-~~~text
-node.AS   <node_id>   <AS>   <method>
+#### midar-iff.nodes.as.bz2
+The node-AS file assigns an AS number to each node found in the nodes file.
+**File format**: node.AS   <node_id>   <AS>   <method>
+~~~
+node.AS N1 31655 refinement
 ~~~
 
-### Format: Node-Geolocation File
-
-~~~text
-node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
-
-node.geo   <node_id>:   <latitude>   <longitude>    <method>
+#### midar-iff.nodes.geo.bz
+The node-geolocation file contains the geographic location for each node in the nodes file.
+**File format**: node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
 ~~~
+node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
+~~~
+    
+More information on ITDK dataset can be found [here](https://www.caida.org/data/internet-topology-data-kit/)
+
+### Caveats
+
+- Placeholder nodes are the non-response hops in the traceroute. 
+- Generally, placeholder nodes are ignored. 
+- Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.

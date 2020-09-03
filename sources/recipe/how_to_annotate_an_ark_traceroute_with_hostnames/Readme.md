@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
     "id": "how_to_annotate_an_ark_traceroute_with_hostnames",
     "visibility": "public",
@@ -17,6 +17,12 @@
         "IPv4",
         "IPv4 prefix",
         "IPv6"
+    ],
+    "authors":[
+        {
+            "person": "person:lu__louis",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

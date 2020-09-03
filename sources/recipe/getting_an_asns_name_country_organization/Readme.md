@@ -17,7 +17,7 @@
     "authors":[
         {
             "person": "person:pathak__pooja",
-            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]
 }
