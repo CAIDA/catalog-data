@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Web pages that display various summaries of results from the Spoofer project",
     "tags": [
-        "security"
+        "security",
+        "spoofer"
     ],
     "resources": [
         {
