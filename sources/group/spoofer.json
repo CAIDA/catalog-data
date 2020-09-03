@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Source address validation measurement project that measures susceptibility to spoofed source address IP packets",
     "tags": [
-        "security"
+        "security",
+        "spoofer"
     ],
     "resources": [
         {
