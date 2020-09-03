@@ -1,4 +1,5 @@
 import re
+import sys
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 def id_create(filename, type_,id_):
     if id_ is not None:
