@@ -46,9 +46,9 @@
         {
             "to": "paper:2013_longitudinal_analysis_of_ip_source_spoofing", 
             "label": "used by"
-        }, 
+        },
         {
-            "to": "paper:2009_efficacy_of_deployed_internet_source_address_validation", 
+            "to": "paper:2009_imc_spoofer", 
             "label": "used by"
         },
         {
