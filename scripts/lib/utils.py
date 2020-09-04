@@ -1,5 +1,7 @@
 import re
+import sys
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
+
 def id_create(filename, type_,id_):
     if id_ is not None:
         if ":" in id_:
@@ -9,11 +11,10 @@ def id_create(filename, type_,id_):
         elif type_ is not None:
             name = id_
         else:
-            print (filename, "type not defined for",id)
-            sys.exit()
+            raise Exception(filename+" "+id_+" has type and type is None")
     else:
-        print (filename, "id not defined")
-        sys.exit()
+        raise Exception(filename+" id is None")
+
     if type_ == "presentation":
         type_ = "media"
 

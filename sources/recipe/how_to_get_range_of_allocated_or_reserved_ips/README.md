@@ -1,15 +1,25 @@
 ~~~
 {
-    "id": "how_to_get_range_of_allocated_or_reserved_ips",
-    "name": "How to get the range of allocated or reserved IPs?",
-    "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed without specific designations, one with designations.",
-    "question": "How to get the range of reserved and allocated ASNs"
-    tags:[
-      "ipv4", 
-      "iana", 
-      "ip address",
-      "ip"
-    ]
+  "id": "how_to_get_range_of_allocated_or_reserved_ips",
+  "name": "How to get the range of allocated or reserved IPs?",
+  "description": "The following solution will create two dictionaries listing the designations of IP addresses, one compressed without specific designations, one with designations.",
+  "links": [
+    {
+      "to": "dataset:iana_ipv4_addresses"
+    }
+  ],
+  "tags": [
+    "ipv4",
+    "iana",
+    "ip address",
+    "ip"
+  ],
+  "authors":[
+        {
+            "person": "lee__nicole",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+  ]
 }
 ~~~
 

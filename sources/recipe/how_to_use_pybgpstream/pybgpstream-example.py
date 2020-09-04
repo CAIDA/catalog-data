@@ -70,4 +70,3 @@ for elem in stream:
     # Get prefix 
     if "prefix" in elem.fields:
         prefix = elem.fields["prefix"]
-        

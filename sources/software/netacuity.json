@@ -2,7 +2,8 @@
     "id": "netacuity",
     "name": "Netacuity",
     "organization": "Digital Elements",
-    "description": "IP Geolocation Service",
+    "description": "Digital Element’s geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more—information that is proven to help improve the relevance, reach and response of online activities.",
+    "status":"Ongoing",
     "tags": [
         "geolocation",
         "geographic"
@@ -10,7 +11,7 @@
     "resources": [
         {
             "name": "commercial",
-            "url": "www.digitalelement.com/solutions",
+            "url": "http://www.digitalelement.com/solutions",
             "tags": [
                 "WEB"
             ]

@@ -42,7 +42,6 @@ def main():
                             for resource in obj["resources"]:
                                 if "url" in resource and len(resource["url"]) > 10:
                                     url = url_cleaner(resource["url"])
-                                    print (url)
                                     url_id[url] = id_
                     except ValueError as e:
                         print (fname)

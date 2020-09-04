@@ -1,0 +1,41 @@
+{
+    "id": "2007_as_core:_ipv4_with_analysis",
+    "name": "2007 AS Core: IPv4 with analysis",
+    "description": "760,922 IP addresses, 1,400,796 IP links, 1 million destinations, 26.7% of globally routable network prefixes, 12,465 Autonomous Systems (ASes), 35,589 peering sessions.",
+    "tags":[
+        "ark",
+        "ipv4",
+        "poster",
+        "analysis",
+        "as_core"
+    ],
+    "links":[],
+    "date":"2007.08",
+    "type":"POSTER",
+    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2007-jul-ipv4-poster.pdf",
+    "resources":[
+        {
+            "name":"URL",
+            "url":"https://www.caida.org/research/topology/as_core_network/2007/",
+            "tags":[
+                "url",
+                "poster"
+            ]
+        }
+    ],
+    "authors":[
+        "person:huffaker_bradley",
+        "person:claffy_kc",
+        "person:hyun_young",
+        "person:broido_andre",
+        "person:fomenkov_marina",
+        "person:andersen_dan",
+        "person:keys_ken",
+        "person:moore_david",
+        "person:koga_ryan",
+        "person:lakhina_anukool",
+        "person:mcrobb_daniel",
+        "person:jakubiec_oliver",
+        "person:hecht_lisa"
+    ]
+}

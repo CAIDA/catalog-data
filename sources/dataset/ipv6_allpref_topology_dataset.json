@@ -1,0 +1,19 @@
+{
+    "id": "ipv6_allpref_topology_dataset",
+    "name": "Ark IPv6 Topology Dataset",
+    "description": "The IPv6 Topology Dataset contains information useful for studying the IP- and AS-topology of the IPv6 Internet. The focus of this measurement is on discovering topology and not on finding responding destinations.",
+    "tags": [
+        "active",
+        "topology",
+        "traceroute",
+        "ark",
+        "ipv6"
+    ],
+    "status": "active",
+    "resources": [
+        {
+            "name": "webpage",
+            "url": "https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml"
+        }
+    ]
+}

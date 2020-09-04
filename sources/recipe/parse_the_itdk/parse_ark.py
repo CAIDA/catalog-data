@@ -19,7 +19,7 @@ PREFIX_0 = struct.unpack("!I", socket.inet_aton("0.0.0.0"))[0]
 
 def node_lookup(nid):
     """
-    To check whether nid is in the ndoes.
+    To check whether nid is in the nodes.
     If not, then create one in nodes.
 
     param: string, input node id
