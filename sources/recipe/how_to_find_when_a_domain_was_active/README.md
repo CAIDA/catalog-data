@@ -10,6 +10,12 @@
     "tags" : [
         "last active",
         "dzdb"
+    ],
+    "authors":[
+        {
+            "person": "person:pillai__vinay",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
     ]
 }
 ~~~
