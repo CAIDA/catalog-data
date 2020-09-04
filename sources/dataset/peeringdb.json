@@ -1,0 +1,27 @@
+{
+    "id": "peeringdb",
+    "name": "PeeringDB",
+    "organization": "CAIDA",
+    "description": " PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks",
+    "tags": [
+        "topology",
+        "peeringdb"
+    ],
+    "dateStart": "2010.07",
+    "status": "ongoing",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/peeringdb/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "to": "paper:2014_using_peeringdb_understand_peering/using_peeringdb_understand_peering",
+            "label": "used by"
+        }
+    ]
+}
