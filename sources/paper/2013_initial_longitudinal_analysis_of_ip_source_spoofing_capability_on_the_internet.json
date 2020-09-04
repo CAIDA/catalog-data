@@ -1,0 +1,38 @@
+{
+    "id": "2013_initial_longitudinal_analysis_of_ip_source_spoofing_on_the_internet",
+    "name": "Initial Longitudinal Analysis of IP Source Spoofing Capability on the Internet",
+    "datePublished": "2013.07",
+    "publisher":"IMC 13",
+    "description": "The Spoofer project originated in 2005 as the result of discussions over the general ability to successfully send spoofed-source IP packets across the Internet. Our approach was to develop a measurement software client that volunteers across the Internet could download and run from their networks, testing their own ability to send various types of spoofed packets from their network to our server, which collects and aggregates test results.  We publish aggregated data analysis and summary statistics via our State of IP Spoofing summary page, with several more detailed academic publications",
+    "tags": [
+        "cyber security",
+        "routing security",
+        "security"
+    ],
+    "authors": [
+        {
+            "person": "person:beverly_robert",
+            "organizations": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:koga_ryan",
+            "organizations": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "person": "person:claffy_kc",
+            "organizations": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },        
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.internetsociety.org/wp-content/uploads/2017/08/Initial20Longitudinal20Analysis20of20IP20Source20Spoofing20Capability20on20the20Internet.pdf"
+        }
+    ]
+}
