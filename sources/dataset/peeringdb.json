@@ -2,7 +2,7 @@
     "id": "peeringdb",
     "name": "PeeringDB",
     "organization": "CAIDA",
-    "description": " PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks",
+    "description": "PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks",
     "tags": [
         "topology",
         "peeringdb"
