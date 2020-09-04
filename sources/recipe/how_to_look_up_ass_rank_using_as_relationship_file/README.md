@@ -14,7 +14,7 @@
     ],
     "authors":[
         {
-            "person": "wolfson__donald",
+            "person": "person:wolfson_donald",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]  
