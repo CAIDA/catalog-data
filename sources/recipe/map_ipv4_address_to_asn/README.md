@@ -1,23 +1,33 @@
 ~~~
 {
-    "question": "How to find the origin ASN for a IPv4 address with Python?",
-    "descriptions": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns."
-    "links": [{"to":"software:pyipmeta"},{"to":"dataset:as_prefix"}],
-    "id":"map_ipv4_address_to_asn",
-    "name": "How to find the origin ASN for a IPv4 address with Python?",
-    "descriptions": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns.",
-    "links": ["software:pyipmeta"],
-    "tags": [
-        "measurement methodology",
-        "topology",
-        "software/tools",
-        "asn",
-        "ipv4",
-        "ipv4 prefix"
+  "name": "How to find the origin ASN for a IPv4 address with Python?",
+  "description": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns.",
+  "links": [
+    {
+      "to": "software:pyipmeta"
+    },
+    {
+      "to": "dataset:as_prefix"
+    }
+  ],
+  "id": "map_ipv4_address_to_asn",
+  "name": "How to find the origin ASN for a IPv4 address with Python?",
+  "tags": [
+    "measurement methodology",
+    "topology",
+    "software/tools",
+    "asn",
+    "ipv4",
+    "ipv4 prefix"
+  ],
+  "authors":[
+        {
+            "person": "person:pathak__pooja",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
     ]
 }
-
-
+~~~
 ### PyIPMeta ###
 
 PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.
