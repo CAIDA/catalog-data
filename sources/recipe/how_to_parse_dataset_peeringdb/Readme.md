@@ -13,6 +13,12 @@
         "topology",
         "geolocation"
     ]
+    "author": [
+        {
+            "person": "person:lu__louis",
+            "organization": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
 }
 ~~~
 ## **<ins> Introduction </ins>**
