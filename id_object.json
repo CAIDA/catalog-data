@@ -553,6 +553,36 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "group:spoofer": {
+        "id": "group:spoofer",
+        "name": "Spoofer",
+        "organization": "CAIDA",
+        "description": "Source address validation measurement project that measures susceptibility to spoofed source address IP packets",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/projects/spoofer/",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:gnu_general_public_license_version_3"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan"
+            }
+        ],
+        "filename": "sources/group/spoofer.json",
+        "__typename": "Group",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "license:bsd_4_clause_uc": {
         "id": "license:bsd_4_clause_uc",
         "name": "BSD-4-Clause (University of California-Specific)",
@@ -4859,6 +4889,31 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "media:2005_mit_spoofer_project": {
+        "id": "media:2005_mit_spoofer_project",
+        "type": "presentation",
+        "name": "The Spoofer Project",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security",
+            "tag:spoofing",
+            "tag:tracefilter"
+        ],
+        "presenters": [
+            {
+                "person": "person:beverly__robert",
+                "venue": "venue:nanog_34",
+                "date": "2005.05",
+                "url": "https://archive.nanog.org/meetings/nanog34/presentations/beverly.pdf"
+            }
+        ],
+        "filename": "sources/media/2005_mit_spoofer_project.json",
+        "__typename": "Media",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "media:2005_oida2005_06": {
         "id": "media:2005_oida2005_06",
         "name": "[Ii]nternet [applications] drivers of growth: 2005-2015",
@@ -8632,6 +8687,56 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
+    },
+    "media:2009_spoofer_aims": {
+        "id": "media:2009_spoofer_aims",
+        "type": "presentation",
+        "name": "IP Spoofer Project",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security",
+            "tag:spoofing",
+            "tag:tracefilter"
+        ],
+        "presenters": [
+            {
+                "person": "person:beverly__robert",
+                "venue": "venue:isma_aims_2009",
+                "date": "2009.02",
+                "url": "https://www.caida.org/workshops/isma/0902/slides/rbeverly.pdf"
+            }
+        ],
+        "filename": "sources/media/2009_spoofer_aims.json",
+        "__typename": "Media",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "media:2009_spoofer_imc": {
+        "id": "media:2009_spoofer_imc",
+        "type": "presentation",
+        "name": "Understanding the Efficacy of Deployed Internet Source Address Validation Filtering",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security",
+            "tag:spoofing",
+            "tag:tracefilter"
+        ],
+        "presenters": [
+            {
+                "person": "person:beverly__robert",
+                "venue": "venue:acm_internet_measurement_conference_imc",
+                "date": "2009.11",
+                "url": "http://www.rbeverly.net/research/papers/spoofer-imc09-presentation.pdf"
+            }
+        ],
+        "filename": "sources/media/2009_spoofer_imc.json",
+        "__typename": "Media",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
     },
     "media:2009_telefonica_dk_series_hms": {
         "id": "media:2009_telefonica_dk_series_hms",
@@ -28930,6 +29035,45 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08"
     },
+    "paper:2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet": {
+        "id": "paper:2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet",
+        "name": "The Spoofer Project: Inferring the Extent of Source Address Filtering on the Internet",
+        "datePublished": "2005/07/01 00:00:00",
+        "publisher": "USENIX SRUTI 2005",
+        "description": "To understand the current state of network filtering, this paper presents an Internet-wide active measurement spoofing project. Our findings suggest that a large portion of the Internet is vulnerable to spoofing and concerted attacks employing spoofing remain a serious concern.",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security",
+            "tag:internet_architecture",
+            "tag:spoofing"
+        ],
+        "authors": [
+            {
+                "person": "person:beverly__robert",
+                "organizations": [
+                    "MIT Computer Science and Artificial Intelligence Laboratory"
+                ]
+            },
+            {
+                "person": "person:bauer__steven",
+                "organizations": [
+                    "MIT Computer Science and Artificial Intelligence Laboratory"
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "PDF",
+                "url": "https://www.usenix.org/legacy/events/sruti05/tech/full_papers/beverly/beverly.pdf"
+            }
+        ],
+        "filename": "sources/paper/2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet.json",
+        "__typename": "Paper",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2005/07/01 00:00:00"
+    },
     "paper:2005_top_modeling_as": {
         "id": "paper:2005_top_modeling_as",
         "name": "Towards a Topology Generator Modeling AS Relationships",
@@ -30313,6 +30457,47 @@
         "date": "2007/08/01 00:00:00",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08"
+    },
+    "paper:2007_tracefilter_a_tool_for_locating_network_source_address_validation_filters": {
+        "id": "paper:2007_tracefilter_a_tool_for_locating_network_source_address_validation_filters",
+        "name": "Tracefilter: A Tool for Locating Network Source Address Validation Filters",
+        "datePublished": "2007/08/01 00:00:00",
+        "publisher": "USENIX Security 2007",
+        "description": "This research examines where in the Internet source address validation filters are employed. We introduce \u201ctracefilter,\u201d a new, novel filter location technique. Our initial results from live Internet measurements find 80% of filters within two hops of sources",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security",
+            "tag:internet_architecture",
+            "tag:ttl",
+            "tag:tracefilter"
+        ],
+        "authors": [
+            {
+                "person": "person:beverly__robert",
+                "organizations": [
+                    "MIT Computer Science and Artificial Intelligence Laboratory"
+                ]
+            },
+            {
+                "person": "person:bauer__steven",
+                "organizations": [
+                    "MIT Computer Science and Artificial Intelligence Laboratory"
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "PDF",
+                "type": "POSTER",
+                "url": "http://rbeverly.net/research/papers/tracefilter-sec07.pdf"
+            }
+        ],
+        "filename": "sources/paper/2007_tracefilter_a_tool_for_locating_network_source_address_validation_filters.json",
+        "__typename": "Paper",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2007/08/01 00:00:00"
     },
     "paper:2007_wit": {
         "id": "paper:2007_wit",
@@ -36424,6 +36609,49 @@
         "date": "2013/12/01 00:00:00",
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08"
+    },
+    "paper:2013_initial_longitudinal_analysis_of_ip_source_spoofing_on_the_internet": {
+        "id": "paper:2013_initial_longitudinal_analysis_of_ip_source_spoofing_on_the_internet",
+        "name": "Initial Longitudinal Analysis of IP Source Spoofing Capability on the Internet",
+        "datePublished": "2013/07/01 00:00:00",
+        "publisher": "Internet Society Article 2013",
+        "description": "The Spoofer project originated in 2005 as the result of discussions over the general ability to successfully send spoofed-source IP packets across the Internet. Our approach was to develop a measurement software client that volunteers across the Internet could download and run from their networks, testing their own ability to send various types of spoofed packets from their network to our server, which collects and aggregates test results.  We publish aggregated data analysis and summary statistics via our State of IP Spoofing summary page, with several more detailed academic publications",
+        "tags": [
+            "tag:cyber_security",
+            "tag:routing_security",
+            "tag:security"
+        ],
+        "authors": [
+            {
+                "person": "person:beverly__robert",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            },
+            {
+                "person": "person:koga__ryan",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            },
+            {
+                "person": "person:claffy__kc",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            }
+        ],
+        "resources": [
+            {
+                "name": "URL",
+                "url": "https://www.internetsociety.org/resources/doc/2013/initial-longitudinal-analysis-of-ip-source-spoofing-capability-on-the-internet/"
+            }
+        ],
+        "filename": "sources/paper/2013_initial_longitudinal_analysis_of_ip_source_spoofing_capability_on_the_internet.json",
+        "__typename": "Paper",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2013/07/01 00:00:00"
     },
     "paper:2013_ipv6_alias_resolution_induced": {
         "id": "paper:2013_ipv6_alias_resolution_induced",
@@ -49932,6 +50160,151 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "recipe:map_ipv4_address_to_asn": {
+        "name": "How to find the origin ASN for a IPv4 address with Python?",
+        "description": "The following solution uses libipmeta's `PyIPMeta` to map between ipv4 addresses and origin asns.",
+        "id": "recipe:map_ipv4_address_to_asn",
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:software_tools",
+            "tag:asn",
+            "tag:ipv4",
+            "tag:ipv4_prefix"
+        ],
+        "authors": [
+            {
+                "person": "person:pathak__pooja",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            }
+        ],
+        "filename": "sources/recipe/map_ipv4_address_to_asn/README.md",
+        "__typename": "Recipe",
+        "content": "<h3>PyIPMeta</h3>\n\n<p>PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.</p>\n\n<h4>Pre-requisites</h4>\n\n<p>Before installing PyIPMeta, you will need:\\\n\u2022 <a href=\"https://github.com/CAIDA/libipmeta\">libipmeta(&gt;= 3.0.0)</a>\\\n\u2022 Python setuptools (<code>sudo apt install python-setuptools</code> on Ubuntu) \\\n\u2022 Python development headers (<code>sudo apt install python-dev</code> on Ubuntu)</p>\n\n<p>Detailed installation and usage instructions <a href=\"https://github.com/CAIDA/pyipmeta \">here</a>.</p>\n\n<h1>solution</h1>\n\n<p>The following script returns a dictionary <code>ip2asn</code> that maps ips to origin asns. </p>\n\n<h3>Map between ips and origin asns using PyIPMeta</h3>\n\n<p>For this solution, clone <strong>PyIPMeta</strong> from <a href=\"https://github.com/CAIDA/pyipmeta\">here</a>\\\nMore data can be found at http://data.caida.org/datasets/routing/routeviews-prefix2as/</p>\n\n<p>Sample ips.txt found <a href=\"http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz\">here</a></p>\n\n<p><strong>Usage</strong> : <code>$ python3 ip_asn.py -i ips.txt</code></p>\n\n<p>~~~python\nimport _pyipmeta \nimport argparse</p>\n\n<p>parser = argparse.ArgumentParser()\nparser.add<em>argument('-i', dest = 'ips</em>file', default = '', help = 'Please enter the file name of the ips file')\nargs = parser.parse_args()</p>\n\n<p>ipm = _pyipmeta.IpMeta()</p>\n\n<h1>print(\"Getting/enabling pfx2as provider (using included test data)\")</h1>\n\n<p>prov = ipm.get<em>provider</em>by<em>name(\"pfx2as\")\nprint(ipm.enable</em>provider(prov, \"-f http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/03/routeviews-rv2-20170329-0200.pfx2as.gz\"))\nprint()</p>\n\n<h1>Create list of ips from test file</h1>\n\n<p>ips = []\nwith open(args.ips_file) as f:\n    for line in f:\n        line = line.rstrip().split(\"\\t\")[1]\n        ips.append(line)</p>\n\n<h1>Map between ipv4 addresses and origin asns</h1>\n\n<p>ip2asn = {}\nfor ip in ips:\n    if ipm.lookup(ip):\n        (res,) =  ipm.lookup(ip)\n        if res.get('asns'):\n            ip2asn[ip] = res.get('asns')[-1]</p>\n\n<h1>print(ip2asn)</h1>\n\n<p>~~~</p>\n\n<h3><ins> Background </ins></h3>\n\n<p><strong>What is an IPv4 address prefix?</strong> \\\n\u2022 An <em>IP address</em> is a 32-bit unique address that is used to recognize a computer network or a machine. All computers on   the same data network share the same IP address.\\\n\u2022 An IPv4 address is typically written in decimal format as 4 8-bit fields separated by a period. Eg. 182.24.0.0/18 \\\n\u2022 An <em>IPv4 address prefix</em> is the prefix of an IPv4 address. \\\n\u2022 e.g. Consider the IPV4 address : 182.24.0.0/18 \\\n\u2022 In this case, 18 is the length of the prefix. \\\n\u2022 The prefix is the first 18 bits of the IP address. \\\n\u2022 More information on IPv4 addresses can be found <a href=\"https://docs.oracle.com/cd/E19455-01/806-0916/6ja85399u/index.html#:~:text=The%20IPv4%20address%20is%20a,bit%20fields%20separated%20by%20periods \">here</a></p>\n\n<p><strong>What is forwarding/How does forwarding work?</strong> \\\n\u2022 Fowarding means sending incoming information packets to the appropriate destination interface. This is done by routers with the help of a forwarding table. \\\n\u2022 Routers scan the destination IP prefix and locate a match using a forwarding table to determine the packet's next hop. \\\n\u2022 In cases of prefix overlap, where an incoming IP prefix map may match multiple IP entries in the table, the <em>Longest Prefix Matching Rule</em> is used to determine the next hop. </p>\n\n<p><strong>What is the Longest Prefix Matching Rule?</strong> \\\n\u2022 Longest Prefix Match is an algorithm to lookup the destination an IP prefix\u2019s next hop from the router. \\\nIt finds the prefix matching the given IP address and returns the corresponding router node.\\\n\u2022 The router which corresponds to the IP address with the longest matching prefix is selected as the destination router node.\\\n\u2022 Consider the following example:\n| IP Prefix        |   Router      |\n| -------------    | ------------- |\n| 192.168.20.16/28 | A             |\n| 192.168.0.0/16   | B             |</p>\n\n<p>\u2022 For example, for the given incoming IP address:  192.168.20.19 \\\n\u2022 <strong>Node A</strong> is selected as the destination router node as it contains the <em>longer matching prefix</em> i.e. 192.168.20.16 \\\n\u2022 Source: <a href=\"https://www.lewuathe.com/longest-prefix-match-with-trie-tree.html \">link</a> \\\n\u2022 More information can be found <a href=\"https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ \">here</a></p>\n\n<p><strong>What is an AS?</strong>\\\n \u2022 AS stands for Autonomous system.\\\n \u2022 It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). \\\n \u2022 It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.\\\n \u2022 More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></p>\n\n<h3><ins> Caveats </ins></h3>\n\n<p>\u2022 <strong>Multi-origin AS</strong> : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).\\\nThis makes it more challenging to interpret the appearance of a matching destination IP address, as the address could be on a router operated by any one of the origin AS's.  \\\n\u2022 <strong>Third-party AS's</strong> \\\n\u2022 Border routers may use a third-party address when responding to traceroute probes. \\\n\u2022 A third-party address is an IP address corresponding to an AS that is not on the path toward a destination.</p>\n\n<h3><ins> Note: </ins></h3>\n\n<p>\u2022 <code>pyasn</code> can also be used for mapping between ipv4 addresses and origin asns.\\\n\u2022 The <code>pyasn</code> object is be initialized using an IPASN datafile. \\\n\u2022 It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.\\\n\u2022 Detailed installation instructions and more information on Usage and IPASN data files <a href=\"https://github.com/hadiasghari/pyasn \">found here</a>.\\\n\u2022 Note that the current <code>pyipmeta</code> <strong>does not support</strong> <code>ipv6</code>, whereas <code>pyasn</code> does. </p>\n\n<p>However, <code>pyipmeyta</code> provides <strong>greater flexbility</strong> as it provides the geographical information as well. </p>\n\n<p>For example, <code>ipm.lookup('192.172.226.97')</code> returns:</p>\n\n<p><code>[{'connection_speed': '', 'city': '', 'asn_ip_count': 0, 'post_code': '', 'lat_long': (37.750999450683594, -97.8219985961914), 'region': '', 'area_code': 0, 'asns': [], 'continent_code': 'NA', 'metro_code': 0, 'matched_ip_count': 1, 'region_code': 0, 'country_code': 'US', 'id': 223, 'polygon_ids': []}]</code></p>\n\n<p>\u2022 This object can then be parsed to map between IP addresses and origin asns. </p>\n",
+        "dateCreated": "2019.12",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "recipe:how_to_check_if_an_asn_supports_sav": {
+        "id": "recipe:how_to_check_if_an_asn_supports_sav",
+        "name": "How to check if an ASN supports SAV",
+        "description": "Instructions and an example script to demonstrate the Spoofer Data API",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            }
+        ],
+        "filename": "sources/recipe/how_to_check_if_an_asn_supports_sav/README.md",
+        "__typename": "Recipe",
+        "content": "<p>The included <a href=\"dump-spoofer-api-after.pl\">Perl script</a> gives an example of how to programmatically retrieve results from the Spoofer Data API.  It assumes the local system has <a href=\"https://curl.haxx.se/\">curl</a> installed as well as the JSON::XS and Getopt::Long PERL packages.</p>\n\n<p>This command-line returns all public Spoofer measurement sessions after May 1, 2020 for ASN 3356:</p>\n\n<p>~~~bash\nperl dump-spoofer-api-after.pl --date \"1 May 2020\" --asn 3356\n~~~</p>\n\n<p>It will return a single JSON record for each session found.  The relevant fields for determining that a session detected spoofability are <code>privatespoof</code>, <code>privatespoof6</code>, <code>routedspoof</code>, and <code>routedspoof6</code></p>\n\n<p>A status of <code>received</code> indicates that a packet with a spoofed source address was received by CAIDA's servers and indicates that SAV is not deployed for that client's network.</p>\n\n<p>~~~json\n{\"@id\":\"/sessions/891176\",\"@type\":\"Session\",\"asn4\":\"3356\",\"asn6\":null,\"client4\":\"4.30.179.0/24\",\"client6\":null,\"country\":\"usa\",\"nat4\":true,\"nat6\":null,\"privatespoof\":\"blocked\",\"privatespoof6\":null,\"routedspoof\":\"blocked\",\"routedspoof6\":null,\"session\":891176,\"timestamp\":\"2020-05-07T14:34:59+00:00\"}\n{\"@id\":\"/sessions/894351\",\"@type\":\"Session\",\"asn4\":\"3356\",\"asn6\":null,\"client4\":\"8.9.89.0/24\",\"client6\":null,\"country\":\"usa\",\"nat4\":true,\"nat6\":null,\"privatespoof\":\"blocked\",\"privatespoof6\":null,\"routedspoof\":\"blocked\",\"routedspoof6\":null,\"session\":894351,\"timestamp\":\"2020-05-13T11:12:51+00:00\"}\n~~~</p>\n\n<h2>Background</h2>\n\n<p>The CAIDA Spoofer Data API provides a public data interface to the publicly shareable data collected by the Spoofer project.  It is found at <a href=\"https://api.spoofer.caida.org/\">https://api.spoofer.caida.org/</a></p>\n\n<h3>Endpoints</h3>\n\n<p>GET /sessions\n: Retrieves the collection of Session resources</p>\n\n<p>GET /sessions/{id}\n: Retrieves a specific Session resource.</p>\n\n<h3>Rules of Usage</h3>\n\n<p>CAIDA places no limit on the amount of requests, however, we ask that you send a message to spoofer-info at caida dot org if you plan to regularly do more than 1000 requests/day.  The <a href=\"https://www.caida.org/home/legal/aua/\">CAIDA Master Acceptable Use Agreement (AUA)</a> terms and conditions apply.</p>\n\n<h3>Data Model</h3>\n\n<p>The data model contains a unique integer identifier for each session with a timestamp and parameters for read access, the IPv4 client address, the IPv6 client address, the country, NAT4 address, NAT6 address, and information about private and routed addresses. The API allows the user to query based on date, sessionid, or by Autonomous System Number (ASN).  The API returns a paginated list of measurement sessions.</p>\n\n<p>The Spoofer Data API provides native support for <a href=\"https://api-platform.com/docs/core/pagination/\">pagination</a> in the collection results it returns. Each page contains 30 items per page by default. The code chunk below displays the heart of the <code>dump-spoofer-api-after.pl</code> script: a while loop that handles the paginated results returned by the API.</p>\n\n<p>~~~perl\nwhile(1)\n{\n    print STDERR \"page $page\\n\";</p>\n\n<pre><code>my $obj;\nopen(CURL, \"$cmd |\") or die \"could not curl\";\nwhile(&lt;CURL&gt;)\n{\n    chomp;\n    $obj = decode_json($_);\n}\nclose CURL;\nlast if(!defined($obj));\n\nforeach my $member (@{$obj-&gt;{\"hydra:member\"}})\n{\n    my $str = encode_json($member);\n    print \"$str\\n\";\n}\n\nif(defined($obj-&gt;{\"hydra:view\"}) &amp;&amp;\n    defined($obj-&gt;{\"hydra:view\"}{\"hydra:next\"}))\n{\n    my $next = $obj-&gt;{\"hydra:view\"}{\"hydra:next\"};\n    $cmd = \"curl -s -X GET \\\"$api$next\\\" -H \\\"$accept\\\"\";\n}\nelse\n{\n    last;\n}\n$page++;\n</code></pre>\n\n<p>}\n~~~</p>\n\n<h3>Documentation (auto-generated)</h3>\n\n<p>At <a href=\"https://api.spoofer.caida.org/\">https://api.spoofer.caida.org/</a> you will see the Spoofer API 1.0.0 documentation. To expand the documentation for each endpoint, click the GET buttons. Once expanded, each endpoint displays the example parameters with buttons to \"Try it out.\" The try it out button provides a graphical interface that allows the user to build and execute queries to the Spoofer API and see the example responses.</p>\n",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "recipe:how_to_find_an_asns_summarized_spoofing_status": {
+        "id": "recipe:how_to_find_an_asns_summarized_spoofing_status",
+        "name": "How to find an ASN's summarized spoofing status",
+        "description": "Directions to Spoofer web pages which show spoofing status",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            }
+        ],
+        "filename": "sources/recipe/how_to_find_an_asns_summarized_spoofing_status/README.md",
+        "__typename": "Recipe",
+        "content": "<p>The Spoofer web pages present multiple different summaries of spoofing results.  <a href=\"https://spoofer.caida.org/as_stats.php\">https://spoofer.caida.org/as_stats.php</a> shows a top-level view of all the ASNs where Spoofer tests were run within the last year.  Clicking on any of the listed ASNs will give a more detailed page showing the spoofing status broken down by IP block (/24 for IPv4 and /40 for IPv6).  For example, <a href=\"https://spoofer.caida.org/as.php?asn=37645\">https://spoofer.caida.org/as.php?asn=37645</a> shows many IP blocks, some of which have seen evidence of spoofing and some of which haven't.  These blocks are by default sorted by spoofing status, but can also be sorted by any of the column headers.</p>\n\n<h2>Background</h2>\n\n<h3>What is IP spoofing?</h3>\n\n<p>IP spoofing is the practice of forging various portions of the Internet Protocol (IP) header. Because a vast majority of Internet traffic, applications, and servers use IP, IP spoofing has important security implications.</p>\n\n<h3>What is this project?</h3>\n\n<p>The Spoofer Project seeks to understand the Internet's vulnerability to different types of spoofed-source IP address attacks.  The Spoofer client program attempts to send a series of spoofed UDP packets to servers distributed throughout the world. These packets are designed to test:</p>\n\n<ul>\n<li>Different classes of spoofed IPv4 and IPv6 addresses, including private and routable</li>\n<li>Ability to spoof neighboring, adjacent addresses</li>\n<li>Ability to spoof inbound (towards the client) and outbound (from the client)</li>\n<li>Where along the path filtering is observed</li>\n<li>Presence of a NAT device along the path</li>\n</ul>\n\n<h3>Where can I learn more?</h3>\n\n<p>FAQ:  https://www.caida.org/projects/spoofer/faq.xml</p>\n",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "recipe:how_to_find_the_business_relationship_between_asns": {
+        "id": "recipe:how_to_find_the_business_relationship_between_asns",
+        "visibility": "public",
+        "name": "How to find the business relationship between asns",
+        "description": "Using .as-rel file, or AS Rank to map a pair of given asns to their relationship.",
+        "tags": [
+            "tag:asn",
+            "tag:as_relationship",
+            "tag:as_rank",
+            "tag:ipv4"
+        ],
+        "filename": "sources/recipe/how_to_find_the_business_relationships_between_asns/README.md",
+        "__typename": "Recipe",
+        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>The following solution has two scripts. One script handles a <a href=\"pair_2_rel.py\">local input</a>, and one that <a href=\"api_2_rel.py\">uses AS Rank's API</a>. Both produce a dictionary, <code>pair_2_rel</code> which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.</p>\n\n<h2>Usage</h2>\n\n<p>Below is an example of using the local file script to parse a .as-rel file to create a mapping between a pair of asns and their relationship. This file can take in either .txt or encoded .bz2 files.</p>\n\n<p><code>bash\npython3 pair_2_rel.py -r 20200101.as-rel.txt\n</code></p>\n\n<p>For the api version of the script, you'll need to import <a href=\"https://pypi.org/project/graphqlclient/#description\">graphqlclient</a>. Below is how to install the package:</p>\n\n<p><code>bash\npip3 install graphqlclient\n</code></p>\n\n<p>Below is an example of how to run the api script to create a mapping between as pairs and their relationships. </p>\n\n<p><code>bash\npython3 api_2_rel.py\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is the helper method used to parse a given line of the .as-rel file in the <a href=\"pair_2_rel.py\">local file script</a>. This method updates the dictionary, <code>pair_2_rel</code> by sorting the two asns by value prior to mapping the pair to their relationship.</p>\n\n<p>~~~Python</p>\n\n<h1>Parse a given line of the as<em>rel</em>file and map two ASes to their relationship.</h1>\n\n<p>def parse<em>as</em>rel<em>line(curr</em>line):\n    global pair<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\n# Get each piece of data from the current line.\nasn0, asn1, relationship = curr_line.split(\"|\")\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * int(relationship)\n\n# Replace relationship with the string version of it's value.\nrelationship = rel_2_name[int(relationship)]\n\nkey = asn0 + \" \" + asn1\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = relationship\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below are two helper methods used in the <a href=\"api_2_rel.py\">api script</a>. The first helper method is the AS Rank Query, and what data is taken from the API. The second helper method shows what is done with the data taken from the API. The second method assumes the input is a dictionary of the keys and values within the \"node\" section of the query's format. </p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>pair</em>2<em>rel(curr</em>line):\n    global pair<em>2</em>rel\n    global name<em>2</em>rel\n    global rel<em>2</em>name</p>\n\n<pre><code># Get the values from the current line.\nrelationship = name_2_rel[curr_line[\"relationship\"]]\nasn0 = int(curr_line[\"asn0\"][\"asn\"])\nasn1 = int(curr_line[\"asn1\"][\"asn\"])\n\n# Place both related AS's in par_2_rel based on value of ASes.\nif (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n    relationship = -1 * relationship\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Add the pair's relationship if doesn't already exist.\nif key not in pair_2_rel:\n    pair_2_rel[key] = rel_2_name[relationship]\n</code></pre>\n\n<p>~~~</p>\n\n<p>This helper method is offered to show how to easily access a relationship in pair<em>2</em>rel in either script. This method also shows how to format two given asns to match the key format of pair<em>2</em>rel. The commented out return line could be helpful for testing, or to better understand what the relationship between the ases mean.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper function to format two given asns into a key for as<em>pair</em>2_rel.</h1>\n\n<p>def get<em>relationship(asn0, asn1):\n    global pair</em>2_rel</p>\n\n<pre><code>if (asn0 &gt; asn1):\n    temp = asn0\n    asn0 = asn1\n    asn1 = temp\n\nkey = str(asn0) + \" \" + str(asn1)\n\n# Return the relationship, or return None if the key isn't valid.\nif key in pair_2_rel:\n    rel = pair_2_rel[key]\n    return rel\n    # return str(asn0) + \"'s \" + str(rel) + \" is \" + str(asn1)\nelse:\n    return None\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Caveats</h3>\n\n<p>A pair of asns is sorted by their values in ascending order. Ex: <code>10 15</code>, you'll never see a key formatted as: <code>15 10</code>. This reduces memory by ensuring two asns won't have both of their relationships in the dictionary. However this means the user has to sort the asns prior to accessing the data. This is why the helper method: <code>get_relationship(ans0, asn1)</code> is provided.</p>\n\n<h3>File Format: .as-rel</h3>\n\n<p>Below is an example of the possible lines found in a .as-rel file. For the purpose of this solution and script, we will ignore all line that start with \"#\" since they will not be needed.</p>\n\n<p>~~~text</p>\n\n<h1>source:topology|BGP|<data>|<system>|<monitor></h1>\n\n<p><asn0>|<asn1>|<relationship>\n~~~</p>\n",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "recipe:how_to_parse_cymru_bogon_data": {
+        "id": "recipe:how_to_parse_cymru_bogon_data",
+        "name": "How to Parse CYMRU Bogan Data",
+        "description": "The following solution will output whether an IP address is bogon",
+        "tags": [
+            "tag:bogon",
+            "tag:bogon_address",
+            "tag:ip_address",
+            "tag:ip"
+        ],
+        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
+        "__typename": "Recipe",
+        "content": "<h2>Solution</h2>\n\n<p>This solution requires pyasn: <a href=\"https://github.com/hadiasghari/pyasn\">pyasn github</a></p>\n\n<p>bogon_load() takes in one input:\n- <code>path</code>: path to the bogon dataset found here: https://www.caida.org/data/bogons/ </p>\n\n<p>bogon<em>check</em>ip() takes in two inputs:\n- <code>ips</code>: a list of IP addresses\n- <code>bogondb</code>: the result from bogon_load()</p>\n\n<p><strong>Usage:</strong> <code>python3 bogon.py [bogon dataset] [ip address] [ip address]....</code></p>\n\n<p>i.e.<code>python3 bogon.py 2020-05-13.fullbogons-ipv4.txt 0.0.0.1 10 5.44.248.1 1.1.1.1</code> yields \n~~~\nInvalid IP:  10\n[True, False, True, False]\n~~~</p>\n\n<p><strong>Code:</strong>\n~~~python\nimport pyasn\nimport numpy as np\nimport os</p>\n\n<p>def bogon<em>load(path):\n    \"\"\"\n    Loads bogon dataset into memory.\n    \"\"\"\n    temp</em>file = \"<em>bogon.dat\"\n    f = open(path, \"r\")\n    ips = []\n    next(f)\n    for line in f.readlines():\n        ips.append(line.replace('\\n',\"\") + \"\\t1\")\n    hdrtxt = '; IP-ASN32-DAT file\\n; Original file : <Path to a rib file>\\n; Converted on  : temp\\n; CIDRs         : 512490\\n;'\n    np.savetxt(temp</em>file, ips, header=hdrtxt,fmt='%s')\n    bogondb = pyasn.pyasn('<em>bogon.dat')\n    os.remove(temp</em>file)\n    return bogondb</p>\n\n<p>def bogon<em>check</em>ip(ips, bogondb):\n    \"\"\"\n    Checks whether a given IP address is bogon\n    \"\"\"\n    is_bogon = [False]*len(ips)\n    for index in range(len(ips)):\n        # Check if IP is valid\n        try:\n            bogondb.lookup(ips[index])\n        except ValueError:\n            print(\"Invalid IP: \", ips[index])\n            continue</p>\n\n<pre><code>    # Look up IP\n    if bogondb.lookup(ips[index])[1]:\n        is_bogon[index] = True\n    else:\n        continue\nprint(is_bogon)\n</code></pre>\n\n<p>~~~</p>\n\n<h2>Background</h2>\n\n<h3>What is an IP address?</h3>\n\n<ul>\n<li>IP addresses are unique 32-bit numbers allocated to identify devices in the Internet Protocol</li>\n<li>An address is allocated to entities by an organization named IANA and organizations named RIRs</li>\n</ul>\n\n<h3>What is a Bogon IP Address?</h3>\n\n<ul>\n<li>Bogon addresses have not been allocated by IANA or any of the RIRs</li>\n<li>These addresses congregate to make up what is known as \"bogus space\"</li>\n<li>This space includes reserved space</li>\n<li>Make sure to download the latest bogon file, because the ranges are subject to change</li>\n</ul>\n\n<h3>What is pyasn?</h3>\n\n<ul>\n<li>pyasn is a package that allows for very quick lookups of addresses</li>\n<li>We've made a temporary file that allows us to quickly look up whether an IP address is within a bogon prefix</li>\n</ul>\n",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "recipe:how_to_use_as_rank_to_classify_asns": {
+        "id": "recipe:how_to_use_as_rank_to_classify_asns",
+        "visibility": "public",
+        "name": "How to use AS Rank to classify asns",
+        "description": "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
+        "tags": [
+            "tag:asn",
+            "tag:as_rank",
+            "tag:as_relationship",
+            "tag:ipv4"
+        ],
+        "filename": "sources/recipe/how_to_use_as_rank_to_classify_asns/README.md",
+        "__typename": "Recipe",
+        "content": "<h2><strong><ins>Introduction</ins></strong></h2>\n\n<p>This solution helps classify an asn based upon relationship with other asns. The following <a href=\"api_2_class.py\">script</a> takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, <code>as_2_data</code>. This data is then used to determine classifications, which are stored in a dictionary labeled <code>as_2_class</code>. The script then prints to STDOUT the classification of requested asns.</p>\n\n<h3>Usage</h3>\n\n<p>Below is an example of how to run the script to classify the asns 3356 and 10, sending their classifications to a .jsonl file. You must use the -a flag, and provide at least on asn to classify. For classifying multiple asns, provide a comma seperated list with no spaces.\n- Note: This script calls the API until all AS Relationships are found, and this can take a significant amount of time.</p>\n\n<p><code>bash\npython3 api_2_class.py -a 3356,10 &gt; output.jsonl\n</code></p>\n\n<h2><strong><ins>Solution</ins></strong></h2>\n\n<p>Below is are two helper methods used to get a query from the ASRank API, and parse it. The first method shows all the data that is taken from ASRank, with the most important being in the \"node\" segment. This segment is then given to the second helper method which updates a dictionary named <code>as_2_data</code> tracking an asn's provider and customers.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method of the formatted query.</h1>\n\n<p>def as<em>links</em>query(first, offset):\n    return [\n        \"asnLinks\",\n        \"\"\"{\n        asnLinks(first:%s, offset:%s) {\n            totalCount\n            pageInfo {\n                first\n                hasNextPage\n            }\n            edges {\n                node {\n                    relationship\n                    asn0 {\n                        asn\n                    }\n                    asn1 {\n                        asn\n                    }\n                    numberPaths\n                }\n            } \n        }\n    }\"\"\"  % (first, offset)\n    ]</p>\n\n<h1>Helper method that takes in a dict to create a pair relationship.</h1>\n\n<p>def update<em>as</em>2<em>data(curr</em>line):\n    global as<em>2</em>data\n    global asns</p>\n\n<pre><code># Get the values from the current line.\nrelationship = curr_line[\"relationship\"]\nasn0 = curr_line[\"asn0\"][\"asn\"]\nasn1 = curr_line[\"asn1\"][\"asn\"]\n\n# Edge Case: Skip this line if asn0 and ans1 are not in asns.\nif asn0 not in asns and asn1 not in asns:\n    return\n\n# Edge Case: Create objects for asn0 or asn1 if they are not in as_2_data.\nif asn0 not in as_2_data:\n    as_2_data[asn0] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\nif asn1 not in as_2_data:\n    as_2_data[asn1] = {\n        \"providers\" : set(),\n        \"customers\" : set()\n    }\n\n# If asn0's provider is asn1 increase asn0's customers, and asn1's providers\nif relationship is \"provider\":\n    as_2_data[asn0][\"providers\"].add(asn1)\n    as_2_data[asn1][\"customers\"].add(asn0)\n# Else if asn0's customer is asn1.\nelif relationship is \"customer\":\n    as_2_data[asn0][\"customers\"].add(asn0)\n    as_2_data[asn1][\"providers\"].add(asn1)\n</code></pre>\n\n<p>~~~</p>\n\n<p>Below is a helper method used to iterate over <code>as_2_data</code> to update <code>as_2_class</code> by determining what classification to use.</p>\n\n<p>~~~Python</p>\n\n<h1>Helper method use to update as<em>2</em>class with data from as<em>2</em>data.</h1>\n\n<p>def update<em>classifications():\n    global as</em>2<em>class\n    global as</em>2_data</p>\n\n<pre><code># Iterate over each asn in as_2_data.\nfor asn in as_2_data:\n    # Edge Case: Create a dictionary for the asn if it doesn't exist.\n    if asn not in as_2_class:\n        as_2_class[asn] = {\n            \"asn\" : asn,\n            \"class\" : None\n        }\n    # If asn has no providers, then it is transit free.\n    if len(as_2_data[asn][\"providers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"transit free\" \n    # Else if asn has no customers. then it is an edge.\n    elif len(as_2_data[asn][\"customers\"]) == 0:\n        as_2_class[asn][\"class\"] = \"edge\"\n    # Else asn has some providers and customers, then it is a middle.\n    else:\n        as_2_class[asn][\"class\"] = \"middle\"\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS Relationship?</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing policy between two ASes.</li>\n<li>The three most common types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<p>~~~text\nas0 as1 rel\n10   2  -1     10's customer is 2 (p2c)\n10   3   0     10's peer is 3 (p2p)\n10   4   1     10's provider is 4 (c2p)\n~~~</p>\n\n<h3>What is the ASRank API?</h3>\n\n<ul>\n<li>ASRank is CAIDA's ranking of Autonomous Systems and organizations.</li>\n<li>This API uses GraphQL for API requests which can be seen in the <code>as_links_query(first, offset)</code> method.</li>\n<li>For more information on ASRank, click <a href=\"https://asrank.caida.org/\">here</a>.</li>\n<li>For more information on ASRank's API, click <a href=\"https://api.asrank.caida.org/v2/docs\">here</a>.</li>\n</ul>\n\n<h3>Data Structure Format: as<em>2</em>data</h3>\n\n<p>~~~Python\n{\n    \"asn0\" : {\n        \"providers\" : set(),        # Set of asns that are providers to asn0.\n        \"customers\" : set()         # Set of asns that are customers to asn0.\n    }\n}\n~~~</p>\n\n<h3>Data Structure Format: as<em>2</em>class</h3>\n\n<p>~~~Python\n{\n    # asn0 has zero providers.\n    \"asn0\" : { \"asn\":\"asn0\", \"class\":\"transit free\" },\n    # asn1 has both providers and customers.\n    \"asn1\" : { \"asn\":\"asn1\", \"class\":\"middle\" },\n    # asn2 has zero customers.\n    \"asn2\" : { \"asn\":\"asn2\", \"class\":\"edge\" }\n}\n~~~</p>\n",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "recipe:how_to_find_an_asns_customer_cone": {
+        "id": "recipe:how_to_find_an_asns_customer_cone",
+        "visibility": "public",
+        "name": "How to find an ASNs customer cone",
+        "description": "The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.",
+        "tags": [
+            "tag:asn",
+            "tag:as_relationships",
+            "tag:customer_cone",
+            "tag:ipv4",
+            "tag:topology"
+        ],
+        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
+        "__typename": "Recipe",
+        "content": "<p>The following <a href=\"as-customer-cone.py\">script</a> produces a dictionary as<em>2</em>cone that maps an ASN to it's customer cone and size. The script has one flag: -p (.ppdc-ases) since you'll only need to provide a .ppdc-ases file in either a .txt or encoded .bz2 format.</p>\n\n<p>~~~json\n{\n    \"asn0\" : {\n        \"asn\" : \"asn0\",\n        \"cone\" : [ \"asn0\", \"asn1\", \"...\", \"asnM\" ],\n        \"size\" : 0\n    },\n}\n~~~</p>\n\n<h3>Usage</h3>\n\n<p>The dataset that is used for this script can be downloaded <a href=\"https://www.caida.org/data/as-relationships/\">here</a>. Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.</p>\n\n<p>~~~bash\npython3 as-customer-cone.py -p 20200101.ppdc-ases.txt\n~~~</p>\n\n<p>Below is the helper method the script uses to parses the .ppdc-ases file line-by-line to update as<em>2</em>cone with a mapping between a given asn, its cone, and cone size.</p>\n\n<p>~~~Python</p>\n\n<h1>Given an line of a .ppdc-ases file, get the asn and its Customer Cone.</h1>\n\n<p>def parse<em>ppdc</em>ases<em>line(curr</em>line):\n    global as<em>2</em>cone</p>\n\n<pre><code># Edge Case: Skip any commented lines.\nif curr_line[0] == \"#\":\n    return\n\ncustomer_cone = curr_line.split()\nasn = int(customer_cone[0])\ncustomer_cone_size = len(customer_cone[1:])\n\n# Update as_2_cone with this asn's customer_cone_size.\nif asn not in as_2_cone:\n    as_2_cone[asn] = {}\n\nas_2_cone[asn][\"asn\"] = asn\nas_2_cone[asn][\"cone\"] = customer_cone\nas_2_cone[asn][\"size\"] = customer_cone_size[1:]\n</code></pre>\n\n<p>~~~</p>\n\n<h2><strong><ins>Background</ins></strong></h2>\n\n<h3>What is an AS</h3>\n\n<ul>\n<li>AS stands for Autonomous system</li>\n<li>It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider).</li>\n<li>It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.</li>\n<li>Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.</li>\n<li>Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.</li>\n<li>More information on AS can be found <a href=\"https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html\">here</a> and <a href=\"https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf\">here</a></li>\n</ul>\n\n<h3>What is an ASN</h3>\n\n<ul>\n<li>Each AS is assigned a unique ASN, or <em>Autonomous System Number</em> that allows it to be uniquely identified during routing.</li>\n</ul>\n\n<h3>What is an AS Relationship</h3>\n\n<ul>\n<li>An AS Relationship is the determined routing polocy between two ASes.</li>\n<li>The three most commo types of AS Relationships are:\n<ul>\n<li>customer-to-provider (c2p) (or if looked at from the opposite direction,  provider-to-customer p2c),</li>\n<li>peer-to-peer (p2p),</li>\n<li>sibling-to-sibling (s2s)</li>\n</ul></li>\n<li>A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.</li>\n<li>An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.</li>\n<li>More information on AS Relationships can be found <a href=\"https://www.caida.org/data/as-relationships/\">here</a></li>\n</ul>\n\n<h3>What is a Customer Cone</h3>\n\n<ul>\n<li>A customer cone is the set of ASes, prefixes, or addresses that can be reached from a given AS following only customer links.</li>\n<li>An AS A's AS customer cone as the AS A itself plus all the ASes that can be reached from A following only p2c links in BGP paths we observed.\n<ul>\n<li>In other words, A's customer cone contains A, plus A's customers, plus its customers' customers, and so on.</li>\n</ul></li>\n<li>The size of the customer cone of an AS reflects the number of other elements (ASes,  prefixes, or addresses) found in it's set.</li>\n<li>An AS in the customer cone is assumed to pay, directly or indirectly, for transit, and provides a coarse metric of the size or influence of an AS in the routing system.</li>\n</ul>\n\n<h3>File Format: .ppdc-ases</h3>\n\n<p>For the purpose of this solution, we'll be skipping over any commented lines. Each line is a customer cone where asn0 is the \"head\" of the cone and all asns after is are within its cone.</p>\n\n<p>~~~text</p>\n\n<h1>inferred clique:</h1>\n\n<h1>total size: ...</h1>\n\n<p><asn0>|<asn1>|...|<asnM>\n~~~</p>\n",
+        "dateCreated": "2020.06",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "software:artemis": {
         "id": "software:artemis",
         "name": "ARTEMIS",
@@ -50518,6 +50891,96 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "software:spoofer_api": {
+        "id": "software:spoofer_api",
+        "name": "Spoofer API",
+        "organization": "CAIDA",
+        "description": "REST API to public anonymized Spoofer test results",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://api.spoofer.caida.org/",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:gnu_general_public_license_version_3"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan"
+            }
+        ],
+        "filename": "sources/software/spoofer_api.json",
+        "__typename": "Software",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "software:spoofer_client": {
+        "id": "software:spoofer_client",
+        "name": "Spoofer Client",
+        "organization": "CAIDA",
+        "description": "Source address validation measurement program that sends spoofed source address IP packets",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://www.caida.org/projects/spoofer/#software",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:gnu_general_public_license_version_3"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan"
+            }
+        ],
+        "filename": "sources/software/spoofer_client.json",
+        "__typename": "Software",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "software:spoofer_ui": {
+        "id": "software:spoofer_ui",
+        "name": "Spoofer UI",
+        "organization": "CAIDA",
+        "description": "Web pages that display various summaries of results from the Spoofer project",
+        "tags": [
+            "tag:security",
+            "tag:spoofer"
+        ],
+        "resources": [
+            {
+                "name": "public",
+                "url": "https://spoofer.caida.org/summary.php",
+                "tags": []
+            }
+        ],
+        "licenses": [
+            "license:gnu_general_public_license_version_3"
+        ],
+        "authors": [
+            {
+                "person": "person:koga__ryan"
+            }
+        ],
+        "filename": "sources/software/spoofer_ui.json",
+        "__typename": "Software",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "software:u_s_national_weather_serice_severe_weather_alert": {
         "id": "software:u_s_national_weather_serice_severe_weather_alert",
         "name": "U.S. National Weather Serice:Severe Weather Alert",
@@ -50566,6 +51029,31 @@
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
+    },
+    "recipe:how_to_use_pybgpstream": {
+        "name": "How to use PyBGPStream?",
+        "description": "Gives a simple example of using PyBGPStream",
+        "tags": [
+            "tag:measurement_methodology",
+            "tag:topology",
+            "tag:software_tools",
+            "tag:asn"
+        ],
+        "authors": [
+            {
+                "person": "person:pathak__pooja",
+                "organizations": [
+                    "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+                ]
+            }
+        ],
+        "id": "recipe:how_to_use_pybgpstream",
+        "filename": "sources/solution/how_to_use_pybgpstream/README.md",
+        "__typename": "Recipe",
+        "content": "<p>The following solution provides an in-depth explanation of how to install and use <strong>PyBGPStream</strong> with an example. </p>\n\n<p>## <ins> Introduction </ins> ##\nPyBGPStream is a Python library that provides a high-level interface for live and historical BGP data analysis. See http://bgpstream.caida.org for more information about BGPStream. </p>\n\n<p>PyBGPStream provides two Python modules, <code>_pybgpstream</code>, a low-level (almost) direct interface to the <a href=\"https://bgpstream.caida.org/ \">libBGPStream</a> C API, and <code>pybgpstream</code>, a high-level 'Pythonic' interface to the functionality provided by <code>_pybgpstream</code>. </p>\n\n<h3>Solution</h3>\n\n<p>The following code snippet demonstrates the use of <strong>PyBGPStream</strong>.\\\nThe script can be found <a href=\"https://github.com/CAIDA/catalog-data/blob/how_to_use_pybgpstream/sources/solution/how_to_use_pybgspstream/pybgpstream-example.py \">here</a>.</p>\n\n<p>~~~python</p>\n\n<p>import pybgpstream</p>\n\n<h1>Create PyBGPStream instance</h1>\n\n<p>stream = pybgpstream.BGPStream(\n    from<em>time=\"2017-07-07 00:00:00\", until</em>time=\"2017-07-07 00:10:00 UTC\",\n    collectors=[\"route-views.sg\", \"route-views.eqix\"],\n    record_type=\"updates\", <br />\n)</p>\n\n<h1>This should limit BGPStream to download the full first BGP dump</h1>\n\n<p>stream.add<em>rib</em>period_filter(86400)</p>\n\n<p>for elem in stream:\n    # record fields can be accessed directly from elem\n    # print(elem)\n    print(elem.fields)\n    # {'next-hop': '27.111.228.201', 'as-path': '133165 4637 174 13188', 'communities': {'4637:32502', '4637:32412', '4637:32026', '4637:60952'}, 'prefix': '37.57.179.0/24'} <br />\n~~~\n<code>elem.fields</code> returns a dictionary in the following format: \\\n<code>{'next-hop': '', 'as-path': '', 'communities': {':', ':', ':', ':'}, 'prefix': ''}</code></p>\n\n<p>\u2022 <code>next-hop</code>: The next IP address hop \\\n\u2022 <code>as-path</code>: The as path followed by the IP address \\\n\u2022 <code>communities</code>: The communities (a set of strings in the canonical \u201casn:value\u201d format)\\\n\u2022 <code>prefix</code>: The IP address prefix </p>\n\n<h2><ins> Background </ins></h2>\n\n<h3>Definitions ###</h3>\n\n<p>\u2022 <strong>Organization</strong> : Each ASN can be mapped to an organization that controls multiple AS's over its network.\\\n\u2022 <strong>Customer</strong> : ASes at lower levels are customers who pay ISPs (providers) at higher levels in exchange for access to the rest of the Internet. \\\n\u2022 <strong>Peer</strong> : Peer-to-peer links (p2p) connects two ISPs who have agreed to exchange traffic on a quid pro quo basis. Peers should exchange traffic only between each other and each other's customers. \\\n\u2022 <strong>Origin AS</strong>: An IP address and prefix can be traced back to an AS, known as the origin AS. \\\n\u2022 <strong>Prefix</strong>: An <em>IP address prefix</em> is the prefix of an IPv4 address. \\\n\u2022 e.g. Consider the IPV4 address : 182.24.0.0/18 \\\n\u2022 In this case, 18 is the length of the prefix. \\\n\u2022 The prefix is the first 18 bits of the IP address. </p>\n\n<p>More information on AS relationships can be found <a href=\"https://asrank.caida.org/about \">here</a>.</p>\n\n<h3>Installation</h3>\n\n<p>To get started using PyBGPStream, first <a href=\"https://bgpstream.caida.org/docs/install/pybgpstream \">install libBGPStream</a>.</p>\n\n<p>Then, you should be able to install PyBGPStream using pip: </p>\n\n<p>~~~\n$ pip install pybgpstream\n~~~ </p>\n\n<p>Alternatively, to install PyBGPStream from source either clone the <a href=\"https://github.com/CAIDA/bgpstream\n \">Github repository</a> (PyBGPStream is located in the <code>pybgpstream</code> subdirectory), or download a <a href=\"https://bgpstream.caida.org/download \">source tarball</a> and then run:\n~~~ \n $ python setup.py build \n $ python setup.py install\n~~~ \n For more information on installing PyBGPStream, please see the detailed <a href=\"https://bgpstream.caida.org/docs/install/pybgpstream \">installation instructions</a> on the BGPStream website. </p>\n\n<p>Please see the <a href=\"https://bgpstream.caida.org/docs/api/pybgpstream \">PyBGPStream API documentation</a> and the <a href=\"https://bgpstream.caida.org/docs/tutorials/pybgpstream \">PyBGPStream tutorial</a> for more information about using PyBGPStream.</p>\n\n<p>### Explanation ###\n\u2022 PyBGPStream is used to extract information from BGP collectors and BGP elems. See more information on BGP collectors <a href=\"https://learn.nsrc.org/bgp/route_collectors#:~:text=A%20route%20collector%20is%20usually,collector%20does%20not%20forward%20packets.\">here</a></p>\n\n<p>The first step in each pybgpstream script is to import the modules and create a BGPStream instance. </p>\n\n<p>~~~python \nimport pybgpstream</p>\n\n<p>stream = pybgpstream.BGPStream(\n    from<em>time=\"2017-07-07 00:00:00\", until</em>time=\"2017-07-07 00:10:00 UTC\",\n    collectors=[\"route-views.sg\", \"route-views.eqix\"],\n    record_type=\"updates\",\n    # filter=\"peer 11666 and prefix more 210.180.0.0/16\"\n    ) \n~~~</p>\n\n<p>The BGPStream instance contains a few added filters to narrow the stream - \\\n\u2022 <strong>from<em>time</strong> : Specifies start time of the stream. <code>\"2017-07-07 00:00:00\"</code>\\\n\u2022 <strong>until</em>time</strong>: Specifies end time of the stream. <code>\"2017-07-07 00:10:00 UTC\"</code> \\\n\u2022 <strong>collectors</strong>: Narrows the stream to specific collectors. \\\n\u2022 <strong>record_type</strong>: <code>updates</code> narrows the stream to only updates (i.e not RIB dumps) \\\n\u2022 <strong>filter</strong>: Specifies flexible filter conditions. More on filters <a href=\"https://github.com/CAIDA/libbgpstream/blob/master/FILTERING\n \">here</a></p>\n\n<p>At this point we can start the stream, and repeatedly ask for new BGP elems. Each time a valid record is read, we extract from it the elems that it contains and print the record and elem fields. If a non-valid record is found, we do not attempt to extract elems.</p>\n\n<p>~~~python \nfor elem in stream:\n    # record fields can be accessed directly from elem\n    # print(elem)\n    print(elem.fields)\n~~~</p>\n\n<p><strong>PyBGPStream</strong> can be used to - \\\n\u2022 Map between MOAS ipv4 addresses and their prefixes \\\n\u2022 Measure the extent of AS Path Inflation \\\n\u2022 Find ipv4 addresses associated with certain communities </p>\n\n<p>These scripts can be found <a href=\"https://bgpstream.caida.org/docs/tutorials/pybgpstream\n \">here</a>. </p>\n\n<p>## Caveats ## \n \u2022 The script includes the line <code>stream.add_rib_period_filter(86400)</code>\\\n \u2022 This limits BGPStream to download the full first BGP dump. \\\n \u2022 More information on <code>add_rib_period_filter</code> and other <strong>pybgpstream</strong> methods can be found <a href=\"https://bgpstream.caida.org/docs/api/pybgpstream/_pybgpstream.html \">here</a>.</p>\n",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
     },
     "tag:security": {
         "id": "tag:security",
@@ -50765,6 +51253,24 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "tag:spoofer": {
+        "id": "tag:spoofer",
+        "filename": "sources/group/spoofer.json",
+        "__typename": "Tag",
+        "name": "spoofer",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "license:gnu_general_public_license_version_3": {
+        "id": "license:gnu_general_public_license_version_3",
+        "name": "GNU GENERAL PUBLIC LICENSE Version 3",
+        "filename": "sources/group/spoofer.json",
+        "__typename": "License",
+        "dateCreated": "2020.08",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "tag:overview": {
         "id": "tag:overview",
         "filename": "sources/media/1998_Caida.june98__pubdb.json",
@@ -50872,6 +51378,42 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
+    },
+    "tag:cyber_security": {
+        "id": "tag:cyber_security",
+        "filename": "sources/media/2005_mit_spoofer_project.json",
+        "__typename": "Tag",
+        "name": "cyber security",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "tag:routing_security": {
+        "id": "tag:routing_security",
+        "filename": "sources/media/2005_mit_spoofer_project.json",
+        "__typename": "Tag",
+        "name": "routing security",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "tag:spoofing": {
+        "id": "tag:spoofing",
+        "filename": "sources/media/2005_mit_spoofer_project.json",
+        "__typename": "Tag",
+        "name": "spoofing",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "tag:tracefilter": {
+        "id": "tag:tracefilter",
+        "filename": "sources/media/2005_mit_spoofer_project.json",
+        "__typename": "Tag",
+        "name": "tracefilter",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
     },
     "tag:peer_to_peer": {
         "id": "tag:peer_to_peer",
@@ -51816,6 +52358,15 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "tag:internet_architecture": {
+        "id": "tag:internet_architecture",
+        "filename": "sources/paper/2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet.json",
+        "__typename": "Tag",
+        "name": "internet architecture",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
     "person:sundaram__ravi": {
         "id": "person:sundaram__ravi",
         "filename": "sources/paper/2005_top_modeling_as__pubdb.json",
@@ -51914,6 +52465,15 @@
         "dateCreated": "2020.08",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
+    },
+    "tag:ttl": {
+        "id": "tag:ttl",
+        "filename": "sources/paper/2007_tracefilter_a_tool_for_locating_network_source_address_validation_filters.json",
+        "__typename": "Tag",
+        "name": "ttl",
+        "dateCreated": "2020.09",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
     },
     "person:chung__fan": {
         "id": "person:chung__fan",
@@ -54413,6 +54973,89 @@
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
     },
+    "tag:ipv4_prefix": {
+        "id": "tag:ipv4_prefix",
+        "filename": "sources/recipe/map_ipv4_address_to_asn/README.md",
+        "__typename": "Tag",
+        "name": "ipv4 prefix",
+        "dateCreated": "2019.12",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "person:pathak__pooja": {
+        "id": "person:pathak__pooja",
+        "filename": "sources/recipe/map_ipv4_address_to_asn/README.md",
+        "__typename": "Person",
+        "name": "Pathak,  Pooja",
+        "nameLast": "Pathak",
+        "nameFirst": " Pooja",
+        "dateCreated": "2019.12",
+        "dateLastUpdated": "2020.09",
+        "date": "2020.09"
+    },
+    "tag:as_relationship": {
+        "id": "tag:as_relationship",
+        "filename": "sources/recipe/how_to_find_the_business_relationships_between_asns/README.md",
+        "__typename": "Tag",
+        "name": "as relationship",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:bogon": {
+        "id": "tag:bogon",
+        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
+        "__typename": "Tag",
+        "name": "bogon",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:bogon_address": {
+        "id": "tag:bogon_address",
+        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
+        "__typename": "Tag",
+        "name": "bogon address",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:ip_address": {
+        "id": "tag:ip_address",
+        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
+        "__typename": "Tag",
+        "name": "ip address",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:ip": {
+        "id": "tag:ip",
+        "filename": "sources/recipe/how_to_parse_cymru_bogon_data/README.md",
+        "__typename": "Tag",
+        "name": "ip",
+        "dateCreated": "2020.07",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:as_relationships": {
+        "id": "tag:as_relationships",
+        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
+        "__typename": "Tag",
+        "name": "as relationships",
+        "dateCreated": "2020.06",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
+    "tag:customer_cone": {
+        "id": "tag:customer_cone",
+        "filename": "sources/recipe/how_to_find_an_asns_customer_cone/README.md",
+        "__typename": "Tag",
+        "name": "customer cone",
+        "dateCreated": "2020.06",
+        "dateLastUpdated": "2020.08",
+        "date": "2020.08"
+    },
     "tag:hijack_detection": {
         "id": "tag:hijack_detection",
         "filename": "sources/software/artemis.json",
@@ -54454,15 +55097,6 @@
         "filename": "sources/software/coralreef.json",
         "__typename": "Tag",
         "name": "traffic",
-        "dateCreated": "2020.07",
-        "dateLastUpdated": "2020.08",
-        "date": "2020.08"
-    },
-    "tag:ip_address": {
-        "id": "tag:ip_address",
-        "filename": "sources/software/iffinder.json",
-        "__typename": "Tag",
-        "name": "ip address",
         "dateCreated": "2020.07",
         "dateLastUpdated": "2020.08",
         "date": "2020.08"
