@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Web pages that display various summaries of results from the Spoofer project",
     "tags": [
-        "security"
+        "security",
+        "spoofer"
     ],
     "resources": [
         {
@@ -37,6 +38,22 @@
         },
         {
             "to": "paper:2017_using_loops_observed_traceroute",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2013_initial_longitudinal_analysis_of_ip_source_spoofing_on_the_internet", 
+            "label": "used by"
+        }, 
+        {
+            "to": "paper:2009_imc_spoofer", 
+            "label": "used by"
+        },
+        {
+            "to": "paper:2007_tracefilter_a_tool_for_locating_network_source_address_validation_filters", 
+            "label": "used by"
+        }, 
+        {
+            "to": "paper:2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet", 
             "label": "used by"
         },
         {
@@ -90,6 +107,23 @@
         {
             "to": "media:2015_software_systems_surveying_spoofing_dhs",
             "label": "used by"
+        },
+        {
+            "to": "media:2009_spoofer_imc", 
+            "label": "used by"
+        }, 
+        {
+            "to": "media:2009_spoofer_aims", 
+            "label": "used by"
+        },
+        {
+            "to":"media:2005_mit_spoofer_project",
+            "label":"used by"
+        }
+    ], 
+    "authors":[
+        {
+            "person": "person:koga__ryan"
         }
     ]
 }

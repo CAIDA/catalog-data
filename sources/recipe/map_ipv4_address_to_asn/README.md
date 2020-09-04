@@ -28,7 +28,6 @@
     ]
 }
 ~~~
-
 ### PyIPMeta
 
 PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.

@@ -16,6 +16,7 @@ id_person = {}
 def main():
     load_ids("media","data/PANDA-Presentations-json.pl.json")
     load_ids("paper","data/PANDA-Papers-json.pl.json")
+    error = False
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -24,7 +25,12 @@ def main():
                 if re.search("json$",fname):
                     try:
                         obj = json.load(open(fname,"r"))
+                    except json.decoder.JSONDecodeError as e:
+                        error = True
+                        print ("error",fname, e)
+                        continue
                     except ValueError as e:
+                        print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
                     id_ = id_add(fname, type_, obj["id"])
                     if type_ == "person" and "names" in obj:
@@ -42,6 +48,9 @@ def main():
                             #print ()
                         id_ = name_id[name] = utils.id_create(fname, type_,obj["id"])
         
+    if error:
+        sys.exit(1)
+
     for obj in objects:
         #if obj["__typename"] == "media":
         #    print (json.dumps(obj, indent=4))
@@ -160,6 +169,8 @@ def load_ids(type_,filename):
             if not os.path.exists(original):
                 obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
                 objects.append(obj)
+    except json.decoder.JSONDecodeError as e:
+        print ("error",fname, e)
     except ValueError as e:
         print ("JSON error in",filename)
         raise e

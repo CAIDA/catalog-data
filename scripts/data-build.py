@@ -146,6 +146,8 @@ def main():
                         obj = object_add(type_,info)
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
+                    except json.decoder.JSONDecodeError as e:
+                        print ("error",filename, e.toString())
                     except ValueError as e:
                         print (path+"/"+filename)
         else:
@@ -187,6 +189,11 @@ def main():
         del id_object[id_]
 
     #######################
+    # printing errors
+    #######################
+    error_print()
+
+    #######################
     # pubdb links
     #######################
     if os.path.exists(pubdb_links_file):
@@ -225,17 +232,21 @@ def main():
 
 ###########################
 def error_add(filename, message):
-    print ("error",filename,message)
     if filename not in filename_errors:
         filename_errors[filename] = []
     filename_errors[filename].append(message)
 
 def error_print():
+    if len(filename_errors) > 0:
+        print ("")
+
     for filename,errors in filename_errors.items():
         print ("error",filename)
         for error in errors:
             print ("    ",error)
 
+    if len(filename_errors) > 0:
+        print ("")
 
 ########################### 
 # Date
@@ -380,6 +391,7 @@ def object_finish(obj):
             link_add(obj,link)
         del obj["links"]
 
+
     for key,value in obj.items():
         if key == "tags":
             for i,tag in enumerate(obj["tags"]):
@@ -407,15 +419,29 @@ def object_finish(obj):
         #        venue_add_date_url(obj,date_url["date"],date_url["url"])
 
         elif key == "persons" or key == "venues" or key == "presenters" or key == "authors":
-                for person_org in obj[key]:
+                dirty = []
+                i = 0
+                while i < len(obj[key]):
+                    person_org = obj[key][i]
+                    error = False
                     if type(person_org) == dict:
                         for k in ["person","presenter"]:
                             if k in person_org:
                                 person = person_lookup_id(obj["filename"],person_org[k])
-                                person_org[k] = person["id"]
+                                if person is not None:
+                                    person_org[k] = person["id"]
+                                else:
+                                    error = True
                     elif type(person_org) == str and person_org[7:] == "person:":
                         person = person_lookup_id(obj["filename"],person_org)
-                        obj[key][i] = person["id"]
+                        if person is not None:
+                            obj[key][i] = person["id"]
+                        else:
+                            error = True
+                    if error:
+                        del obj[key][i]
+                    else:
+                        i += 1
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
@@ -434,7 +460,14 @@ def object_finish(obj):
 
 def person_lookup_id(filename, id_):
     id_ = id_.lower()
-    person = object_lookup_id(filename, id_)
+    if ":" in id_:
+        if "person:" in id_:
+            person = object_lookup_id(filename, id_)
+        else:
+            error_add(filename, "expected person found "+id_)
+            return None
+    else:
+        person = object_lookup_id(filename, "person:"+id_)
     if person is None:
         person = { 
             "id":id_, 
@@ -571,15 +604,13 @@ def recipe_process(path):
     skipped = []
     obj = None
     for root, dirs, files in os.walk(path):
-        if root == path:
-            for fname in dirs:
-                recipe_dir.add(root+"/"+fname)
-        else:
+        error = False
+        if re.search(path+"/[^/]+$",root):
             for fname in files:
-                if root in recipe_dir and re_readme_md.search(fname):
+                if re_readme_md.search(fname):
+                #if root in recipe_dir and re_readme_md.search(fname):
                     filename = root +"/"+fname
                     info = None
-                    errors = []
                     with open(filename) as f:
                         inside = False
                         data = None
@@ -600,7 +631,8 @@ def recipe_process(path):
                                         info["content"] = ""
                                         data = None
                                     except ValueError as e:
-                                        errors.append("json error in "+filename+"\n")
+                                        error = True
+                                        error_add(filename, e.__str__())
                                         #print (e)
                                         #print ("parse failure",data)
                                         break
@@ -615,17 +647,8 @@ def recipe_process(path):
                         #errors.append("invisible")
 
 
-                    if len(errors) > 0:
-                        skipped.append([",".join(errors), filename])
-                    else:
-                        #info["content"] = markdown2.markdown(info["content"])
-                        obj = object_add("Recipe", info)     
-    if len(skipped) > 0:
-        print ("skipped")
-        for msg, p in skipped:
-            print ("    ",msg,p)
-
-    return obj
+                    if not error: 
+                        object_add("Recipe", info)     
 
 
 #############################

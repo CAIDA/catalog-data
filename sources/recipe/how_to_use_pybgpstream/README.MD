@@ -20,7 +20,6 @@
     ]
 }
 ~~~
-
 The following solution provides an in-depth explanation of how to install and use **PyBGPStream** with an example. 
 
  ## <ins> Introduction </ins> 

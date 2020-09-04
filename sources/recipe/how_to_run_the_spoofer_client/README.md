@@ -10,7 +10,8 @@
         {"to":"software:spoofer_client"}
     ],
     "tags" : [
-        "security"
+        "security",
+        "spoofer"
     ],
     "authors":[
         {

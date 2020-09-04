@@ -10,7 +10,8 @@
         {"to":"software:spoofer_api"}
     ],
     "tags" : [
-        "security"
+        "security",
+        "spoofer"
     ],
     "authors":[
         {
