@@ -10,7 +10,6 @@
         "security"
     ],
     "links": [],
-    "caida_paper_id": "",
     "authors": [
         {
             "person": "person:beverly_robert",
@@ -33,8 +32,8 @@
     ],
     "resources": [
         {
-            "name": "PDF",
-            "url": "https://www.internetsociety.org/wp-content/uploads/2017/08/Initial20Longitudinal20Analysis20of20IP20Source20Spoofing20Capability20on20the20Internet.pdf"
+            "name": "URL",
+            "url": "https://www.internetsociety.org/resources/doc/2013/initial-longitudinal-analysis-of-ip-source-spoofing-capability-on-the-internet/"
         }
     ]
 }
