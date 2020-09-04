@@ -15,13 +15,7 @@
             "venue": "venue:acm_internet_measurement_conference_imc",
             "date": "2009.11",
             "url": "http://www.rbeverly.net/research/papers/spoofer-imc09-presentation.pdf"
-        },
-        {
-            "person": "person:berger_arthur",
-            "venue": "venue:acm_internet_measurement_conference_imc",
-            "date": "2009.11",
-            "url": "http://www.rbeverly.net/research/papers/spoofer-imc09-presentation.pdf"
-        }
+        }   
     ],
     "links": []
 }
