@@ -13,15 +13,10 @@
     ],
     "date":"2003.04",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2003-apr-ipv4-standalone-1600x1333.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2003-apr-ipv4-standalone-1600x1333.png",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2003-apr-ipv4-standalone-1600x1333.png"
         }
     ],
     "authors":[]

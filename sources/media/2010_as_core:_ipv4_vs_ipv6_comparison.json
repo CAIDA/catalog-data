@@ -16,15 +16,22 @@
     ],
     "date":"2010.08",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2010-aug-ipv4v6-poster-1600x1075.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2010/",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2010/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2010-aug-ipv4v6-poster-1600x1075.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2010-aug-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2010-aug-ipv6-standalone-1600x1333.png"
         }
     ],
     "authors":[

@@ -16,12 +16,12 @@
     "type":"POSTER",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/animation.xml",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2002-apr-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/animation.xml"
         }
     ],
     "authors":[]

@@ -13,15 +13,14 @@
     ],
     "date":"2000.10",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"GIF",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png"
         }
     ],
     "authors":[

@@ -17,15 +17,26 @@
     ],
     "date":"2008.01",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2008/ipv6.xml",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2008/ipv6.xml"
+        },
+        {
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2008/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv6-standalone-1600x1333.png"
         }
     ],
     "authors":[
