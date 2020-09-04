@@ -33,7 +33,7 @@ Download PeeringDB dataset [here](https://www.caida.org/data/peeringdb/).\
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
 - `-id`: *(Optional)* Id of the single object that you would like to retrieve. Input type should be integer. 
 
-Below are the methods used to read and parse data in `.json` file.   
+Below are the methods used to read and parse data in `json` file.   
 ~~~python 
 # read data in json file
 def get_json_data(filename):
@@ -54,7 +54,7 @@ def get_single_object(filename, type, target_id):
             return item
 
 ~~~
-Below are the methods used to read and parse data in `.sqlite` file.   
+Below are the methods used to read and parse data in `sqlite` file.   
 ~~~python 
 
 import sqlite3
@@ -100,6 +100,7 @@ def get_sqlite_single_object(filename, type, target_id):
 #### PeeringDB
 - An online database of peering policies, traffic volumes and geographic presence of participating networks. 
 - PeeringDB, a non-profit member-based organization, has been established to support practical needs of network operators. However, it is also a valuable source of information for researchers. The first version of PeeringDB resided in a MySQL database, which was not scalable and lacked security features and data validation mechanisms. It presented potential risks of exposing contact information to spammers, and contained typos. Starting at the end of March 2016, PeeringDB switched to a new data schema and API.
+- The old v1 format is available from July 29, 2010 through March 13, 2016 as `sql` and `sqlite` files. The new v2 format is available from May 27, 2016 to March 10, 2018 as `sqlite` files, and from March 11, 2016 onwards as `json` files.
 - More information and download dataset [here](https://www.caida.org/data/peeringdb/)
 
 #### Objects type in datasets
@@ -125,7 +126,7 @@ def get_sqlite_single_object(filename, type, target_id):
 | Object     | Description |
 |------------|-------------|    
 |  mgmtFacilities           |  Facility |
-|  mgmtPublic               |  Internet Exchange Point|
+|  mgmtPublics              |  Internet Exchange Point|
 |  mgmtPublicsFacilities    |  Internet Exchange / Facility presence: similar to combine facility and ix information |
 |  mgmtPublicsIPs           |  IP address of Publics| 
 |  peerParticipants         |  Network |
