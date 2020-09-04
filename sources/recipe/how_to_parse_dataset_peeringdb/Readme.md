@@ -12,7 +12,7 @@
         "ASN",
         "topology",
         "geolocation"
-    ]
+    ],
     "author": [
         {
             "person": "person:lu__louis",
