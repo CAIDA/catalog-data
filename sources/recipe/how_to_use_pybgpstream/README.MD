@@ -1,5 +1,5 @@
 ## How to use PyBGPStream 
-~~~
+~~~json
 {
   "name": "How to use PyBGPStream?",
   "description": "Gives a simple example of using PyBGPStream",
