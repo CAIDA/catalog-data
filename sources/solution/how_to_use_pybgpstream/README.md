@@ -1,18 +1,25 @@
 ## How to use PyBGPStream ##
 ~~~
 {
-    "name": "How to use PyBGPStream?",
-    "descriptions": "Gives a simple example of using PyBGPStream"
-    "links": ["software:bgpstream"],
-    "tags": [
-        "measurement methodology",
-        "topology",
-        "software/tools",
-        "asn",
+  "name": "How to use PyBGPStream?",
+  "description": "Gives a simple example of using PyBGPStream",
+  "links": [
+    "software:bgpstream"
+  ],
+  "tags": [
+    "measurement methodology",
+    "topology",
+    "software/tools",
+    "asn"
+  ],
+  "authors":[
+        {
+            "person": "person:pathak__pooja",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        }
     ]
 }
 ~~~
-
 The following solution provides an in-depth explanation of how to install and use **PyBGPStream** with an example. 
 
  ## <ins> Introduction </ins> ##
