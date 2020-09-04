@@ -19,11 +19,11 @@
     ],
     "links": [
         {
-            "to": "dataset:itdk",
+            "to": "dataset:internet-topology-data-kit",
             "label": "used by"
         },
         {
-            "to": "dataset:ipv4_routed_24_topology_dataset",
+            "to": "dataset:ipv4_routed_24_topology",
             "label": "used by"
         },
         {

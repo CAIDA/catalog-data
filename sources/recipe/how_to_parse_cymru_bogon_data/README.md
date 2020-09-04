@@ -1,14 +1,20 @@
-~~~
+~~~json
 {
     "id": "how_to_parse_cymru_bogon_data",
     "name": "How to Parse CYMRU Bogan Data",
     "description": "The following solution will output whether an IP address is bogon",
     "links": ["dataset:bogons"],
     "tags":[
-      "bogon", 
-      "bogon address", 
-      "ip address",
-      "ip"
+        "bogon", 
+        "bogon address", 
+        "ip address",
+        "ip"
+    ],
+    "authors":[
+        {
+            "person": "person:lee__nicole",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University Of California San Diego"]
+        }
     ]
 }
 ~~~

@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
     "id": "how_to_annotate_as_relationships_with_geographic_annotations",
     "visibility": "public",
@@ -13,15 +13,21 @@
         "ASN",
         "geolocation",
         "country"
+    ],
+    "authors":[
+        {
+            "person": "person:lu__louis",
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~
-## **<ins> Introduction </ins>**
+## Introduction
 The solution annotates AS relationships with geographic annotations.
 
-## **<ins> Solution </ins>**
+## Solution
 
-The full script could be found in annotate_as_relationships_with_geo.py \
+The full script could be found in annotate_as_relationships_with_geo.py 
 **Usage:** `python annotate_as_relationships_with_geo.py -a <as-relationship dataset> -l <location dataset>`
 
 Below is the method used to load geolocation info from location dataset and store them in `geo_info` in dictionary. Then load AS relationships from AS-relationship dataset, map ASN with corresponding geolocation info and return annotated AS relationships in `as_rel_geo`.   
@@ -87,7 +93,7 @@ Example of return value. Note that if geolocation info of the ASN is not in `geo
 {'2': {'34': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}, '34': {'2': [{'lid': 'Newark-DE-US', 'continent': 'NA', 'country': 'US', 'region': 'DE', 'city': 'Newark', 'lat': '39.6046', 'lon': '-75.7463', 'pop': '0'}, {}]}}
 ~~~
  
-##  **<ins> Background </ins>**
+##  Background
 
 ### Dataset ###
 #### AS Relationships - with geographic annotations

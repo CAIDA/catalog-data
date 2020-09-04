@@ -8,7 +8,7 @@
         "routing",
         "measurement methodology"
     ],
-    "caida_paper_id": "paper675",
+    "pubdb_id": "paper675",
     "authors": [
         {
             "person": "person:Winter_Philipp",
@@ -33,11 +33,11 @@
             "label": "used"
         },
         {
-            "to": "dataset:MaxMind_GeoLite",
+            "to": "software:maxmind_geolite",
             "label": "used"
         },
         {
-            "to": "dataset:Netacuity_Edge",
+            "to": "software:netacuity",
             "label": "used"
         }
     ]

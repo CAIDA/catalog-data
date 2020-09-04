@@ -7,7 +7,7 @@
         "ip address",
         "alias resolution"
     ],
-    "availability": [
+    "resources": [
         {
             "name": "public",
             "url": "https://www.caida.org/tools/measurement/kapar/",
@@ -19,7 +19,7 @@
     ],
     "links": [
         {
-            "to": "dataset:itdk",
+            "to": "dataset:internet-topology-data-kit",
             "label": "used by"
         },
         {

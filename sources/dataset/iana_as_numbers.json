@@ -1,0 +1,40 @@
+{
+    "id": "iana_as_numbers",
+    "name": "IANA AS Numbers",
+    "organization": "IANA",
+    "description": "Dataset of current autonomous system (AS) number allocations documented by IANA.",
+    "tags": [
+        "asn",
+        "iana",
+        "autonomous system numbers"
+    ],
+    "status":"ongoing",
+    "resources": [
+        {
+            "name": "asn_16_bit",
+            "url": "https://www.iana.org/assignments/as-numbers/as-numbers-1.csv",
+            "tags": [
+                "file",
+                "csv",
+                "asn"
+            ]
+        },
+        {
+            "name": "asn_32_bit",
+            "url": "https://www.iana.org/assignments/as-numbers/as-numbers-2.csv",
+            "tags": [
+                "file",
+                "csv",
+                "asn"
+            ]
+        }
+    ],
+        "links": [
+        {
+            "to": "dataset:iana_ipv4_addresses"
+        },
+        {
+            "to": "dataset:iana_ipv6_addresses"
+        }
+    ]
+}

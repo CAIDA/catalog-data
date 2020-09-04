@@ -2,22 +2,46 @@
     "id": "vela",
     "name": "Vela",
     "organization": "CAIDA",
-    "description": "Vela is an on-demand topology measurement service of CAIDA's Archipelago Measurement Infrastructure. Includes the Henya query system. Access limited to academic researchers.",
+    "description": "Vela provides an easy way for researchers to conduct on-demand topology measurements on Ark. Users can conduct ping and traceroute measurements in IPv4 and IPv6 using ICMP, UDP, or TCP from any Ark monitor.\n There are two interfaces to Vela, a command-line interface and a web-based interface. The command-line interface is useful for conducting large-scale feedback-driven, dynamic measurements under the full control of the user's own program (written in any language of the user's choosing, such as Perl, Python, Ruby, or C). The web interface is useful for interactively performing ad-hoc exploratory measurements.",
     "tags": [
         "topology",
-        "ping",
-        "traceroute",
-        "ark"
+        "geolocation",
+        "ui",
+        "api"
     ],
     "resources": [
         {
-            "name": "restricted",
+            "name": "UI",
+            "url": "https://www.caida.org/projects/ark/vela/",
+            "tags": []
+        },
+        {
+            "name": "API",
             "url": "https://www.caida.org/projects/ark/vela/web-api/",
-            "tags": [
-                "API"
-            ]
+            "tags": []
+        },
+        {
+            "name": "API MIDAR",
+            "url": "https://www.caida.org/projects/ark/vela/midar-api/",
+            "tags": []
+        },
+        {
+            "name": "API aliasq",
+            "url": "https://www.caida.org/projects/ark/vela/aliasq-api/",
+            "tags": []
+        },
+        {
+            "name": "python code",
+            "url": "https://www.caida.org/projects/ark/vela/web-api/vela-api",
+            "tags": []
         }
     ],
-    "licenses": [],
-    "links": []
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "links": [
+        {
+            "to": "dataset:ipv4_routed_24_topology"
+        }
+    ]
 }
