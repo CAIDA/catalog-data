@@ -1,0 +1,35 @@
+{
+    "id": "2005_the_spoofer_project_inferring_the_extent_of_source_address_filtering_on_the_internet",
+    "name": "The Spoofer Project: Inferring the Extent of Source Address Filtering on the Internet",
+    "datePublished": "2005.07",
+    "publisher": "USENIX SRUTI 2005",
+    "description": "To understand the current state of network filtering, this paper presents an Internet-wide active measurement spoofing project. Our findings suggest that a large portion of the Internet is vulnerable to spoofing and concerted attacks employing spoofing remain a serious concern.",
+    "tags": [
+        "cyber security",
+        "routing security",
+        "security", 
+        "internet architecture",
+        "spoofing",
+    ],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:beverly_robert",
+            "organizations": [
+                "MIT Computer Science and Artificial Intelligence Laboratory"
+            ]
+        },
+        {
+            "person": "person:bauer_steven",
+            "organizations": [
+                "MIT Computer Science and Artificial Intelligence Laboratory"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.usenix.org/legacy/events/sruti05/tech/full_papers/beverly/beverly.pdf"
+        }
+    ]
+}
