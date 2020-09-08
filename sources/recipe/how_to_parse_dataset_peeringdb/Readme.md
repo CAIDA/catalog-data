@@ -5,14 +5,14 @@
     "name": "How to parse dataset PeeringDB",
     "description": "Parse the data collected by PeeringDB and return a dictionary",
     "links": [{
-        "to": "dataset:peeringdb"
+        "to": "dataset:peeringdb_archive"
         }],
     "tags": [
         "PeeringDB",
         "ASN",
         "topology",
         "geolocation"
-    ]
+    ],
     "author": [
         {
             "person": "person:lu__louis",
