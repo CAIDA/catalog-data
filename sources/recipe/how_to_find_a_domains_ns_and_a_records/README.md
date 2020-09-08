@@ -1,3 +1,4 @@
+
 # How to use DZDB to get all nameserver and ip records for a domain
 
 ~~~json
@@ -25,7 +26,87 @@
 The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers.
 
 ## **<ins>Solution</ins>**
-The script relies on the below function to handle querying the dzdb api. T
+The script will return a JavaScript object that contains the nameserver and domain responses for the queried domain. 
+```javascript
+    const googleDomainRecords = await getDomainRecords("google.com");
+    console.log(googleDomainRecords); 
+```
+For instance, the above code snippet will output the following object
+``` javascript
+{
+   "type":"domain",
+   "link":"/domains/GOOGLE.COM",
+   "name":"GOOGLE.COM",
+   "nameservers":[
+      {
+         "type":"nameserver",
+         "link":"/nameservers/NS2.GOOGLE.COM",
+         "name":"NS2.GOOGLE.COM",
+         "response":{
+            "type":"nameserver",
+            "link":"/nameservers/NS2.GOOGLE.COM",
+            "name":"NS2.GOOGLE.COM",
+            "domains":[
+               {
+                  "type":"domain",
+                  "link":"/domains/HUMSI.ORG",
+                  "name":"HUMSI.ORG",
+                  "firstseen":"2020-09-08T00:00:00Z"
+               },
+               ...
+            ],
+            "archive_domains":[
+               {
+                  "type":"domain",
+                  "link":"/domains/TEZOY.COM",
+                  "name":"TEZOY.COM",
+                  "firstseen":"2020-09-07T00:00:00Z",
+                  "lastseen":"2020-09-07T00:00:00Z"
+               },
+               ...
+            ],
+            "domain_count":8220,
+            "archive_domain_count":51901,
+            "ipv4":[
+               {
+                  "type":"ip",
+                  "link":"/ip/216.239.34.10",
+                  "name":"216.239.34.10",
+                  "version":4
+               }
+            ],
+            "ipv4_count":1,
+            "archive_ipv4_count":0,
+            "ipv6":[
+               {
+                  "type":"ip",
+                  "link":"/ip/2001:4860:4802:34::a",
+                  "name":"2001:4860:4802:34::a",
+                  "version":6,
+                  "firstseen":"2018-02-23T00:00:00Z"
+               }
+            ],
+            "ipv6_count":1,
+            "archive_ipv6_count":0,
+            "zone":{
+               "name":"COM",
+               "firstseen":"2011-04-11T00:00:00Z",
+               "lastseen":"2020-09-08T00:00:00Z"
+            }
+         }
+      },
+      ...
+   ],
+   "nameserver_count":4,
+   "archive_nameserver_count":0,
+   "zone":{
+      "name":"COM",
+      "firstseen":"2011-04-11T00:00:00Z",
+      "lastseen":"2020-09-08T00:00:00Z"
+   }
+}
+```
+The script relies on the below function to handle querying the dzdb api.
 ```javascript
 // Simplified API querying object
 const dns = (function(){

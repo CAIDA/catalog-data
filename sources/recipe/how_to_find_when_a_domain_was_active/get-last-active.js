@@ -1,3 +1,26 @@
+const dns = (function(){
+    const corsProxy = "https://cors-anywhere.herokuapp.com";
+    const baseURL = "https://dns.coffee/api";
+    const getQueryUrl = (useCorsProxy, args)=>{
+        const urlParts = [baseURL,...args]
+        if(useCorsProxy){
+            urlParts.unshift(corsProxy);
+        }
+        return urlParts.join("/");
+    }
+    return {
+        get(...args){
+            return fetch(getQueryUrl(this.useCorsProxy, args)).then((response)=>{
+                if(response.ok){
+                    return response.json().then((response)=>response.data);
+                }
+                throw Error("API Query Failed");
+            });
+        },
+        useCorsProxy:true
+    }
+})();
+
 // Find when a domain was last active
 function getDomainLastActive(domain){
     return dns.get("domains",domain).then((response)=>{
