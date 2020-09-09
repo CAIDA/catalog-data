@@ -1,0 +1,30 @@
+{
+    "id": "caida_whois_dumps",
+    "name": "CAIDA whois dumps",
+    "organization": "CAIDA",
+    "description": "CAIDA"S whois dumps archive",
+    "tags": [
+        "security",
+        "outages",
+        "darknet",
+        "active measurement",
+        "visualization"
+    ],
+    "dateStart": "2003.07",
+    "resources": [
+        {
+            "name": "contact data-info@caida.org",
+            "url": "emailto:data-info@caida.org"
+        }
+    ],
+    "status": "ongoing",
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": [
+        {
+            "to": "paper:2019_chocolatine",
+            "label": "used by"
+        }
+    ]
+}
