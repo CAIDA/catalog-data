@@ -2,7 +2,7 @@
 {
     "id" : "how_to_parse_skitter_itdk",
     "name": "How to Parse Skitter Internet Topology Data Kit (ITDK)",
-    "description":"The following solution will help the user create a ...",
+    "description":"The following solution will help the user parse CAIDA's Datsets from the Skitter ITDK",
 
     "links": [
         {
@@ -20,3 +20,19 @@
     ]
 }
 ~~~
+
+## Introduction
+
+## Solution
+
+### Usage
+
+~~~bash
+~~~
+
+## Background
+
+### Explanation of the Data Files 
+
+### Caveats
+
