@@ -22,7 +22,7 @@
 }
 ~~~
 
-The Spoofer web pages present multiple different summaries of spoofing results.  <https://spoofer.caida.org/as_stats.php> shows a top-level view of all the ASNs where Spoofer tests were run within the last year.  Clicking on any of the listed ASNs will give a more detailed page showing the spoofing status broken down by IP block (/24 for IPv4 and /40 for IPv6).  For example, <https://spoofer.caida.org/as.php?asn=37645> shows many IP blocks, some of which have seen evidence of spoofing and some of which haven't.  These blocks are by default sorted by spoofing status, but can also be sorted by any of the column headers.
+The Spoofer web pages present multiple different summaries of spoofing results.  <https://spoofer.caida.org/as_stats.php> shows a top-level view of all the ASNs where Spoofer tests were run within the last year.  Clicking on any of the listed ASNs will give a more detailed page showing the spoofing status broken down by IP block (/24 for IPv4 and /40 for IPv6).  For example, <https://spoofer.caida.org/as.php?asn=7922> shows many IP blocks, some of which have seen evidence of spoofing and some of which haven't.  These blocks are by default sorted by spoofing status, but can also be sorted by any of the column headers.
 
 ## Background
 
