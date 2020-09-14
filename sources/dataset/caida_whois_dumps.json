@@ -2,13 +2,13 @@
     "id": "caida_whois_dumps",
     "name": "CAIDA whois dumps",
     "organization": "CAIDA",
-    "description": "CAIDA"S whois dumps archive",
+    "description": "CAIDA's whois dumps archive",
     "tags": [
-        "security",
-        "outages",
-        "darknet",
-        "active measurement",
-        "visualization"
+        "RIR",
+        "internet",
+        "whois",
+        "",
+        ""
     ],
     "dateStart": "2003.07",
     "resources": [
@@ -28,3 +28,4 @@
         }
     ]
 }
+
