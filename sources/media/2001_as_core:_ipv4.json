@@ -5,11 +5,15 @@
     "tags":[
         "skitter",
         "ipv4",
+        "routed 24",
+        "prefix2as",
         "poster",
         "as_core"
     ],
     "links":[
-        {"to":"dataset:skitter_internet_topology_data_kit"}
+        {"to":"dataset:skitter_internet_topology_data_kit"},
+        {"to":"as_prefix"},
+        {"to":"ipv4_routed_24_topology"}
     ],
     "date":"2001.07",
     "type":"POSTER",

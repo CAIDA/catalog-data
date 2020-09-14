@@ -13,7 +13,8 @@
         "ripe_ncc"
     ],
     "links":[
-
+        {"to":"as_prefix"},
+        {"to":"ipv4_routed_24_topology"}
     ],
     "date":"2008.01",
     "type":"POSTER",

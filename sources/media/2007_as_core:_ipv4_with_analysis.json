@@ -4,12 +4,18 @@
     "description": "760,922 IP addresses, 1,400,796 IP links, 1 million destinations, 26.7% of globally routable network prefixes, 12,465 Autonomous Systems (ASes), 35,589 peering sessions.",
     "tags":[
         "ark",
+        "scamper",
         "ipv4",
+        "routed 24",
+        "prefix2as",
         "poster",
         "analysis",
         "as_core"
     ],
-    "links":[],
+    "links":[
+        {"to":"as_prefix"},
+        {"to":"ipv4_routed_24_topology"}
+    ],
     "date":"2007.08",
     "type":"POSTER",
     "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2007-jul-ipv4-poster.pdf",

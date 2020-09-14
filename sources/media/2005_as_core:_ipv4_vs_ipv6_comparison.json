@@ -6,12 +6,16 @@
         "skitter",
         "ipv4",
         "ipv6",
+        "routed 24",
+        "prefix2as",
         "poster",
         "analysis",
         "as_core"
     ],
     "links":[
-        {"to":"dataset:skitter_internet_topology_data_kit"}
+        {"to":"dataset:skitter_internet_topology_data_kit"},
+        {"to":"as_prefix"},
+        {"to":"ipv4_routed_24_topology"}
     ],
     "date":"2005.04",
     "type":"POSTER",

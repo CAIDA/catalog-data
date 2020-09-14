@@ -6,12 +6,14 @@
         "ark",
         "ipv4",
         "ipv6",
+        "routed 24",
         "poster",
         "analysis",
         "as_core"
     ],
     "links":[
         {"to":"dataset:internet_topology_data_kit"},
+        {"to":"ipv4_routed_24_topology"},
         {"to":"dataset:as_relationships"}
     ],
     "date":"2013.01",
