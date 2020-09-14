@@ -1,16 +1,65 @@
+#!  /usr/bin/env python3
+__author__ = "Nicole Lee"
+__email__ = "nlee@zeus.caida.org"
+# This software is Copyright (C) 2020 The Regents of the University of
+# California. All Rights Reserved. Permission to copy, modify, and
+# distribute this software and its documentation for educational, research
+# and non-profit purposes, without fee, and without a written agreement is
+# hereby granted, provided that the above copyright notice, this paragraph
+# and the following three paragraphs appear in all copies. Permission to
+# make commercial use of this software may be obtained by contacting:
+#
+# Office of Innovation and Commercialization
+#
+# 9500 Gilman Drive, Mail Code 0910
+#
+# University of California
+#
+# La Jolla, CA 92093-0910
+#
+# (858) 534-5815
+#
+# invent@ucsd.edu
+#
+# This software program and documentation are copyrighted by The Regents of
+# the University of California. The software program and documentation are
+# supplied “as is”, without any accompanying services from The Regents. The
+# Regents does not warrant that the operation of the program will be
+# uninterrupted or error-free. The end-user understands that the program
+# was developed for research purposes and is advised not to rely
+# exclusively on the program for any reason.
+#
+# IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR
+# DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+# INCLUDING LOST PR OFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+# DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF
+# THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
+# DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+# ENHANCEMENTS, OR MODIFICATIONS.
+
+################################## Imports #####################################
 import json
 import argparse
 import numpy as np
 import pyasn
 import os
 
-parser = argparse.ArgumentParser(description='Finds IXP annotations.')
-parser.add_argument('path', metavar='p', type=str,
-                    help='path to ixp dataset')
-parser.add_argument('list', metavar='l', nargs='+', type=str,
-                    help='list of ip addresses')
-args = parser.parse_args()
+################################# Main Method ##################################
+def main():
+    parser = argparse.ArgumentParser(description='Finds IXP annotations.')
+    parser.add_argument('path', metavar='p', type=str,
+                        help='path to ixp dataset')
+    parser.add_argument('list', metavar='l', nargs='+', type=str,
+                        help='list of ip addresses')
+    args = parser.parse_args()
 
+    ixpdb, diction = load_traceroute(args.path)
+    return annotate_traceroute(ixpdb, diction, args.list)
+
+############################### Helper Methods #################################
 def load_traceroute(path):
     temp_file = "_ixp.dat"
     with open(path) as f:
@@ -31,7 +80,8 @@ def load_traceroute(path):
         ixpdb = pyasn.pyasn(temp_file)
         os.remove(temp_file)
         return ixpdb, diction
-                
+
+
 def annotate_traceroute(ixpdb, diction, ips):
     """
     Inputs a path to data file and a list of IP addresses and returns a corresponding list of IXP names.
@@ -51,6 +101,4 @@ def annotate_traceroute(ixpdb, diction, ips):
     print(ixp_list)
 
 if __name__ == '__main__':
-    # annotate_traceroute(args.path, args.list)
-    ixpdb, diction = load_traceroute(args.path)
-    annotate_traceroute(ixpdb, diction, args.list)
+    main()
