@@ -12,8 +12,8 @@
     ],
     "links":[
         {"to":"dataset:skitter_internet_topology_data_kit"},
-        {"to":"as_prefix"},
-        {"to":"ipv4_routed_24_topology"}
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"}
     ],
     "date":"2003.04",
     "type":"POSTER",

@@ -4,7 +4,6 @@
     "description": "760,922 IP addresses, 1,400,796 IP links, 1 million destinations, 26.7% of globally routable network prefixes, 12,465 Autonomous Systems (ASes), 35,589 peering sessions.",
     "tags":[
         "ark",
-        "scamper",
         "ipv4",
         "routed 24",
         "prefix2as",
@@ -13,8 +12,9 @@
         "as_core"
     ],
     "links":[
-        {"to":"as_prefix"},
-        {"to":"ipv4_routed_24_topology"}
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"},
+        {"to":"software:scamper"}
     ],
     "date":"2007.08",
     "type":"POSTER",

@@ -13,7 +13,7 @@
     ],
     "links":[
         {"to":"dataset:internet_topology_data_kit"},
-        {"to":"ipv4_routed_24_topology"},
+        {"to":"dataset:ipv4_routed_24_topology"},
         {"to":"dataset:as_relationships"}
     ],
     "date":"2010.08",

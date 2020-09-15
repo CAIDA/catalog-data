@@ -9,12 +9,12 @@
         "poster",
         "analysis",
         "as_core",
-        "scamper",
         "ripe_ncc"
     ],
     "links":[
-        {"to":"as_prefix"},
-        {"to":"ipv4_routed_24_topology"}
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"},
+        {"to":"software:scamper"}
     ],
     "date":"2008.01",
     "type":"POSTER",
