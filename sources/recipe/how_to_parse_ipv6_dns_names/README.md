@@ -26,7 +26,7 @@
 
 ## Introduction
 
-This recipe should show the user how to parse a given IPv6 DNS Names file to map an ip address to its respective hostname. This recipe comes with the following [script](sources/recipe/how_to_parse_ipv6_dns_names/ip_2_hostname.py) which has the code to handle this solution. Code snippets below show key features of the code that are most usefull. The script has two flags, ```-d``` which is a path to a DNS Names file, and ```-i``` which is an optional comma seperated list of ip address which will have their hostnames printed to STDOUT if possible.
+This recipe should show the user how to parse a given IPv6 DNS Names file to map an ip address to its respective hostname. This recipe comes with the following [script](https://github.com/CAIDA/catalog-data/blob/how_to_parse_ipv6_dns_names/sources/recipe/how_to_parse_ipv6_dns_names/ip_2_hostname.py) which has the code to handle this solution. Code snippets below show key features of the code that are most usefull. The script has two flags, ```-d``` which is a path to a DNS Names file, and ```-i``` which is an optional comma seperated list of ip address. The ip addresses given in the ```-i``` flag will have their hostnames printed to STDOUT if possible.
 
 ## Solution
 
@@ -43,7 +43,7 @@ python3 ip_2_hostname.py -d dns-names.l8.20200101.txt -i 2001:5a0:2000:500::1,20
 ### Parsing DNS Names File Line-By-Line
 
 ~~~Python
-# Given an line of a DNS Names File, map each line's ip address to its hostname.
+# Given a line of a DNS Names File, map each line's ip address to its hostname.
 def parse_dns_names_line(curr_line):
     global ip_2_hostname
 

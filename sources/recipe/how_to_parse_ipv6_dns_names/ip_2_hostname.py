@@ -125,7 +125,7 @@ def parse_dns_names_file():
         print_help()
 
 
-# Given an line of a DNS Names File, map each line's ip address to its hostname.
+# Given a line of a DNS Names File, map this line's ip address to its hostname.
 def parse_dns_names_line(curr_line):
     global ip_2_hostname
 
