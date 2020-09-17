@@ -10,7 +10,7 @@
     "presenters": [],
     "links": [
         {
-            "to": "software:spoofer_client",
+            "to": "software:spoofer_client"
         }
     ],
     "date": "2017.05",
@@ -29,8 +29,8 @@
             "name": "URL",
             "url": "https://www.caida.org/projects/spoofer/",
             "tags": [
-                "url",
+                "url"
             ]
         }
-    ],
+    ]
 }

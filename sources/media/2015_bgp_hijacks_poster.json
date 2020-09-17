@@ -4,13 +4,11 @@
     "description": "A one page poster describing the NSF funded research project, \"Detecting and Characterizing Internet Traffic Interception based on BGP Hijacking\".",
     "tags": [
         "BGP",
-        "poster"
-        "security",
+        "poster",
+        "security"
     ],
-    "presenters": [
-    ],
-    "links": [
-    ],
+    "presenters": [],
+    "links": [],
     "date": "2015.01",
     "type": "POSTER",
     "image": "https://www.caida.org/images/hijacks-2015-jan-poster_300h250.png",
@@ -31,7 +29,7 @@
                 "url",
                 "poster"
             ]
-        },
+        }
     ],
     "authors":[
         {

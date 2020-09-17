@@ -3,7 +3,7 @@
     "name": "A Coordinated View of the Temporal Evolution of Large-scale Internet Events",
     "description": "To visualize large-scale Internet events, such as a large region losing connectivity, or a stealth probe of the entire IPv4 address space, we coordinated views to study the temporal evolution of an event along different dimensions, including geographic spread, topological (address space) coverage, and traffic impact. In early 2011, there was a government-mandated Internet blackout in Egypt, which isolated the country from the rest of the Internet for more than five days. The view pictured combines a geographical representation of Egypt region along with animations of the source addresses observed during the event, both at a global level, and from the 41.0.0.0/8 network delegated to AfriNIC.",
     "tags": [
-        "topology",
+        "topology"
     ],
     "links": [
         {
@@ -20,7 +20,7 @@
             "tags": [
                 "url"
             ]
-        },
+        }
     ],
     "authors":[
         {
