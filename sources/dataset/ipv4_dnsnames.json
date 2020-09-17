@@ -16,7 +16,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+            "url": "https://www.caida.org/data/active/ipv4_dnsnames.xml",
             "tags": [
                 "file"
             ]
