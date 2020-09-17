@@ -6,33 +6,42 @@
         "ark",
         "ipv4",
         "ipv6",
+        "routed 24",
         "poster",
         "analysis",
         "as_core"
     ],
     "links":[
         {"to":"dataset:internet_topology_data_kit"},
+        {"to":"dataset:ipv4_routed_24_topology"},
         {"to":"dataset:as_relationships"}
     ],
     "date":"2009.01",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2009-jan-ipv4v6-poster-1600x1068.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2009/",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2009/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2009-jan-ipv4v6-poster-1600x1068.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2009-jan-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2009-jan-ipv6-standalone-1600x1333.png"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:claffy_kc",
-        "person:hyun_young",
-        "person:luckie_matthew",
-        "person:lyu_connie",
-        "person:hsu_jennifer"
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:luckie__matthew",
+        "person:lyu__connie",
+        "person:hsu__jennifer"
     ]
 }

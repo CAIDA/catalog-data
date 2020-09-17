@@ -5,37 +5,47 @@
     "tags":[
         "ark",
         "ipv4",
+        "routed 24",
+        "prefix2as",
         "poster",
         "analysis",
         "as_core"
     ],
-    "links":[],
+    "links":[
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"},
+        {"to":"software:scamper"}
+    ],
     "date":"2007.08",
     "type":"POSTER",
     "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2007-jul-ipv4-poster.pdf",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2007/",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2007/"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2007-aug-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PDF",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2007-jul-ipv4-poster.pdf"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:claffy_kc",
-        "person:hyun_young",
-        "person:broido_andre",
-        "person:fomenkov_marina",
-        "person:andersen_dan",
-        "person:keys_ken",
-        "person:moore_david",
-        "person:koga_ryan",
-        "person:lakhina_anukool",
-        "person:mcrobb_daniel",
-        "person:jakubiec_oliver",
-        "person:hecht_lisa"
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:broido__andre",
+        "person:fomenkov__marina",
+        "person:andersen__dan",
+        "person:keys__ken",
+        "person:moore__david",
+        "person:koga__ryan",
+        "person:lakhina__anukool",
+        "person:mcrobb__daniel",
+        "person:jakubiec__oliver",
+        "person:hecht__lisa"
     ]
 }

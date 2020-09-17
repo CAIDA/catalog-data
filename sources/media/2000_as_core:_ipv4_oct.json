@@ -4,35 +4,38 @@
     "description": "626,773 IP addresses, 1,007,723 IP links, 52% of globally routable network prefixes; 7,563 ASes (81% of A Ses present in RouteViews BGP tables on October 15, 2000), 25,005 peering sessions.",
     "tags":[
         "skitter",
+        "routed 24",
+        "prefix2as",
         "ipv4",
         "poster",
         "as_core"
     ],
     "links":[
-        {"to":"dataset:skitter_internet_topology_data_kit"}
+        {"to":"dataset:skitter_internet_topology_data_kit"},
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"}
     ],
     "date":"2000.10",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"GIF",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:broido_andre",
-        "person:claffy_kc",
-        "person:fomenkov_marina",
-        "person:keys_ken",
-        "person:lagache_edouard",
-        "person:moore_david",
-        "person:mcrobb_daniel",
-        "person:jakubiec_oliver"
+        "person:huffaker__bradley",
+        "person:broido__andre",
+        "person:claffy__kc",
+        "person:fomenkov__marina",
+        "person:keys__ken",
+        "person:lagache__edouard",
+        "person:moore__david",
+        "person:mcrobb__daniel",
+        "person:jakubiec__oliver"
     ]
 }

@@ -9,53 +9,65 @@
         "poster",
         "analysis",
         "as_core",
-        "scamper",
         "ripe_ncc"
     ],
     "links":[
-
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"},
+        {"to":"software:scamper"}
     ],
     "date":"2008.01",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2008/ipv6.xml",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2008/ipv6.xml"
+        },
+        {
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2008/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2008-jan-ipv6-standalone-1600x1333.png"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:claffy_kc",
-        "person:luckie_matthew",
-        "person:gall_alexander",
-        "person:johansson_andreas",
-        "person:prado_antonio",
-        "person:querubin_antonio",
-        "person:alcantara_fernandez_azael",
-        "person:schmidt_bernhard",
-        "person:dreisbach_brad",
-        "person:fitzgerald_brian",
-        "person:morrow_chris",
-        "person:morr_derek",
-        "person:kerneis_gabriel",
-        "person:huston_geoff",
-        "person:doering_gert",
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:luckie__matthew",
+        "person:gall__alexander",
+        "person:johansson__andreas",
+        "person:prado__antonio",
+        "person:querubin__antonio",
+        "person:alcantara__fernandez_azael",
+        "person:schmidt__bernhard",
+        "person:dreisbach__brad",
+        "person:fitzgerald__brian",
+        "person:morrow__chris",
+        "person:morr__derek",
+        "person:kerneis__gabriel",
+        "person:huston__geoff",
+        "person:doering__gert",
         "person:beijnum_van_iljitsch",
         "person:pick_philippe_jean",
-        "person:kristoff_john",
-        "person:osmon_john",
-        "person:cho_kenjiro",
-        "person:jaeger_kurt",
-        "person:millnert_martin",
-        "person:arnold_mathieu",
-        "person:vieira_nuno",
-        "person:robert_ollivier",
-        "person:abt_sabastian",
-        "person:kerr_shane"
+        "person:kristoff__john",
+        "person:osmon__john",
+        "person:cho__kenjiro",
+        "person:jaeger__kurt",
+        "person:millnert__martin",
+        "person:arnold__mathieu",
+        "person:vieira__nuno",
+        "person:robert__ollivier",
+        "person:abt__sabastian",
+        "person:kerr__shane"
     ]
 }
