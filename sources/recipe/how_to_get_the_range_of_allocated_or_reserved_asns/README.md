@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
     "id": "how_to_get_the_range_of_allocated_or_reserved_asns",
     "name": "How to get the range of allocated or reserved asns?",
@@ -8,6 +8,12 @@
       "asn", 
       "iana", 
       "autonomous system"
+    ],
+    "authors":[
+        {
+            "person": "person:lee__nicole",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University Of California San Diego"]
+        }
     ]
 }
 ~~~

@@ -1,14 +1,59 @@
+#!  /usr/bin/env python3
+__author__ = "Nicole Lee"
+__email__ = "nlee@zeus.caida.org"
+# This software is Copyright (C) 2020 The Regents of the University of
+# California. All Rights Reserved. Permission to copy, modify, and
+# distribute this software and its documentation for educational, research
+# and non-profit purposes, without fee, and without a written agreement is
+# hereby granted, provided that the above copyright notice, this paragraph
+# and the following three paragraphs appear in all copies. Permission to
+# make commercial use of this software may be obtained by contacting:
+#
+# Office of Innovation and Commercialization
+#
+# 9500 Gilman Drive, Mail Code 0910
+#
+# University of California
+#
+# La Jolla, CA 92093-0910
+#
+# (858) 534-5815
+#
+# invent@ucsd.edu
+#
+# This software program and documentation are copyrighted by The Regents of
+# the University of California. The software program and documentation are
+# supplied “as is”, without any accompanying services from The Regents. The
+# Regents does not warrant that the operation of the program will be
+# uninterrupted or error-free. The end-user understands that the program
+# was developed for research purposes and is advised not to rely
+# exclusively on the program for any reason.
+#
+# IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR
+# DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+# INCLUDING LOST PR OFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+# DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF
+# THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
+# DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+# ENHANCEMENTS, OR MODIFICATIONS.
+
+################################## Imports #####################################
 import pandas as pd
 import argparse
 import os
 
+################################# Main Method ##################################
+def main():
+    parser = argparse.ArgumentParser(description='Returns full and compressed dictionaries of ranges.')
+    parser.add_argument('csv1', help='iana 16-bit csv asn file')
+    parser.add_argument('csv2', help='iana 32-bit csv asn file')
+    args = parser.parse_args()
+    print(iana_asn_asignees(args.csv1, args.csv2), iana_asn_compressed(args.csv1, args.csv2))
 
-parser = argparse.ArgumentParser(description='Returns full and compressed dictionaries of ranges.')
-parser.add_argument('csv1', help='iana 16-bit csv asn file')
-parser.add_argument('csv2', help='iana 32-bit csv asn file')
-args = parser.parse_args()
-
-
+############################### Helper Methods #################################
 def aggregate_ranges(ls):
     """
     Aggregates consecutive lists of ranges into a single range.
@@ -119,7 +164,7 @@ def iana_asn_compressed(csv_path16, csv_path32):
 
 if __name__ == "__main__":
     try:
-        print(iana_asn_asignees(args.csv1, args.csv2), iana_asn_compressed(args.csv1, args.csv2))
+        main()
     except FileNotFoundError:
         print("File does not exist")
 

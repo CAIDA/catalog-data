@@ -13,6 +13,12 @@
         "customer cone",
         "IPv4",
         "topology"
+    ],
+    "authors":[
+        {
+            "person": "person:wolfson__donald",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~

@@ -12,11 +12,17 @@
         "as rank",
         "as relationship",
         "IPv4"
+    ],
+    "authors":[
+        {
+            "person": "person:wolfson__donald",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
     ]
 }
 ~~~
 
-## **<ins>Introduction</ins>**
+## Introduction
 
 This solution helps classify an asn based upon relationship with other asns. The following [script](api_2_class.py) takes in a list of asns the user wants to classify, and calls the ASRank API to gather AS Relationships of the asns. This is done by getting an asns total number of providers and customers, storing them in a dictionary labeled, ```as_2_data```. This data is then used to determine classifications, which are stored in a dictionary labeled ```as_2_class```. The script then prints to STDOUT the classification of requested asns.
 
@@ -29,7 +35,7 @@ Below is an example of how to run the script to classify the asns 3356 and 10, s
 python3 api_2_class.py -a 3356,10 > output.jsonl
 ```
 
-## **<ins>Solution</ins>**
+## Solution
 
 Below is are two helper methods used to get a query from the ASRank API, and parse it. The first method shows all the data that is taken from ASRank, with the most important being in the "node" segment. This segment is then given to the second helper method which updates a dictionary named ```as_2_data``` tracking an asn's provider and customers.
 
@@ -124,7 +130,7 @@ def update_classifications():
             as_2_class[asn]["class"] = "middle"
 ~~~
 
-## **<ins>Background</ins>**
+## Background
 
 ### What is an AS Relationship?
 - An AS Relationship is the determined routing policy between two ASes.

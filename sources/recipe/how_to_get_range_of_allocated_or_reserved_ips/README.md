@@ -1,4 +1,4 @@
-~~~
+~~~json
 {
   "id": "how_to_get_range_of_allocated_or_reserved_ips",
   "name": "How to get the range of allocated or reserved IPs?",
@@ -13,6 +13,12 @@
     "iana",
     "ip address",
     "ip"
+  ],
+  "authors":[
+        {
+            "person": "person:lee__nicole",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
   ]
 }
 ~~~

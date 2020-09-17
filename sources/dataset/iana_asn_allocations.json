@@ -3,6 +3,13 @@
     "name": "IANA ASN allocations",
     "organization": "CAIDA",
     "description": "Dataset of ASN allocation ranges collected from IANA.",
+    "status":"ongoing",
+    "resources": [
+        {
+            "name": "public/restricted",
+            "url": "https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
+        }
+    ],
     "tags": [
         "asn",
         "as numbers",

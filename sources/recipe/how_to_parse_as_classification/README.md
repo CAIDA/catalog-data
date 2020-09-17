@@ -11,7 +11,13 @@
         "ASN",
         "as classification",
         "IPv4"
-    ]   
+    ],
+    "authors":[
+        {
+            "person": "person:wolfson__donald",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
 }
 ~~~
 
@@ -23,7 +29,7 @@ The following solution shows how to parse a given AS Classification file (.as2ty
 
 To use this script, you will need to have a .as2types file, which can be downloaded [here](https://www.caida.org/data/as-classification/).
 
-To just parse the given .as2types file and just updated a dictionary labeled ```as_2_data```, use this input:
+To parse the given .as2types file and just update a dictionary labeled ```as_2_data```, use this input:
 
 ```bash
 python3 as_2_class.py -f 20200101.as2types.txt.gz
