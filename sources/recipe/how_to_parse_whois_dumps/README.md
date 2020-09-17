@@ -32,3 +32,5 @@
 
 
 ## Background 
+
+Include the table of object types in each file 
