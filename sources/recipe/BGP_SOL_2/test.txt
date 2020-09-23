@@ -1,4 +1,0 @@
-starting stream...
-peer asn: 6830 as path: ['6447', '6830', '1299', '16509'] communities: {'17152:1', '6830:17000', '6830:33104', '6830:17415'} timestamp: 20-09-23 11:45:14
-peer asn: 24875 as path: ['6447', '24875', '1299', '16509'] communities: set() timestamp: 20-09-23 11:45:14
-peer asn: 5394 as path: ['6447', '5394', '1299', '16509'] communities: set() timestamp: 20-09-23 11:45:15

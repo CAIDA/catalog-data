@@ -1,0 +1,84 @@
+~~~json
+{
+    "id" : "how_to_print_asn_paths_from_pybgpstream",
+    "name": "How to print asn paths from pybgpstream",
+    "description":"The recipe should show how to print specifc asn paths using data from pybgpstream.",
+
+    "links": [
+        {
+            "to": "software:bgpstream"
+        }
+    ],
+    "tags": [
+        "asn",
+    ],
+    "authors":[
+        {
+            "person": "person:wolfson__donald",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
+}
+~~~
+
+
+## Introduction
+
+This solution should show the user how to print specific asn paths records and elements taking from pybgpstream. The solution prints all records from a BGPStream from the routeviews-stream project, and filtering by the router, amsix. This problem runs for a very long time, and if you're testing with this program, it's recommend you interrupt the script in your terminal after a couple minutes to see what the data looks like.
+
+## Solution
+
+```python
+#!/usr/bin/env python3
+
+from pybgpstream import BGPStream
+from ipaddress import ip_network
+import time
+import sys
+import requests
+
+# Initialize BGPStream, with routeviews-stream project, filtering for amsix.
+stream = BGPStream(project="routeviews-stream", filter="router amsix")
+# The stream will not load new data till its done with the current pulled data.
+stream.set_live_mode()
+print("starting stream...", file=sys.stderr)
+for record in stream.records():
+    rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(record.time))
+    for elem in record:
+        prefix = ip_network(elem.fields['prefix'])
+        # Only print elements that are announcements (BGPElem.type = "A").
+        if elem.type == "A":
+            as_path = elem.fields['as-path'].split(" ")
+            # Print all elements with 16509 in the path.
+            if '16509' in as_path:
+                print(f"peer asn: {elem.peer_asn} as path: {as_path} "
+                      f"communities: {elem.fields['communities']} "
+                      f"timestamp: {rec_time}")
+```
+
+### Usage
+
+To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above.
+
+```bash
+pip3 install pybgpstream
+```
+
+To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
+
+```bash
+./example.py > output.txt
+```
+
+## Background
+
+What is pybgpstream?
+ - pybgpstream is a Python open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.
+ - For more information on how to use pybgpstream, you can find their documentation [here](https://bgpstream.caida.org/docs)
+ - For more information on how else to use pybgpstream, you can also visit our page [here](https://dev.catalog.caida.org/details/recipe/how_to_use_pybgpstream)
+What does it mean to check the elem.type in the solution code?
+ - The element type is part of the BGPElem class which can be found [here](https://bgpstream.caida.org/docs/api/pybgpstream/_pybgpstream.html#bgpelem).
+   - "The type of the element, can be one of ‘R’ (ribs), ‘A’ (announcement), ‘W’ (withdrawal), ‘S’ (peer state), ‘’. (basestring, readonly)" - Documentation
+
+### Caveats
+ - This script will run through all bgpstream records until it is complete. This will take a long time, it is recommend the user manually interrupts the script after a couple minutes if they don't intend to use or want all the data that will be printed.
