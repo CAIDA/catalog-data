@@ -10,14 +10,11 @@ import requests
 
 if __name__ == '__main__':
     #Initialize BGPStream and set it's data interfaces options
-    bs = BGPStream(
-            project="routeviews-stream",
-            filter="router amsix",
-            )
-    bs.set_live_mode()
-    print("starting stream...")
+    stream = BGPStream(project="routeviews-stream", filter="router amsix")
+    stream.set_live_mode()
+    print("starting stream...", file=sys.stderr)
     while True:
-        for rec in bs.records():
+        for rec in stream.records():
             rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(rec.time))
             for elem in rec:
                 prefix = ip_network(elem.fields['prefix'])
