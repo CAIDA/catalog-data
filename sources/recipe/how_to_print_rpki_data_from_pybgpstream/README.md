@@ -2,8 +2,7 @@
 {
     "id" : "how_to_print_rpki_data_from_pybgpstream",
     "name": "How to print rpki data from pybgpstream",
-    "description":"",
-
+    "description":"This solution should show the user how to get RPKI data from interfaces taken from a pybgpstream.",
     "links": [
         {
             "to": "software:bgpstream"
