@@ -10,7 +10,7 @@
         }
     ],
     "tags": [
-        "asn",
+        "asn"
     ],
     "authors":[
         {
