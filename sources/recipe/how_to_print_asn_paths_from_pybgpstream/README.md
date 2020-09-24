@@ -21,10 +21,9 @@
 }
 ~~~
 
-
 ## Introduction
 
-This solution should show the user how to print specific asn paths records and elements taking from pybgpstream. The solution prints all records from a BGPStream from the routeviews-stream project, and filtering by the router, amsix. This problem runs for a very long time, and if you're testing with this program, it's recommend you interrupt the script in your terminal after a couple minutes to see what the data looks like.
+This solution should show the user how to print specific asn paths taken from records and elements of a pybgpstream. The solution prints the path from the BGPStream after specifying the routeviews-stream project, and filtering by the router, amsix. This problem runs for a  long time, and if you're testing with this program, it's recommend you interrupt the script in your terminal after a couple minutes to see what the data looks like.
 
 ## Solution
 
@@ -49,7 +48,7 @@ for record in stream.records():
         # Only print elements that are announcements (BGPElem.type = "A").
         if elem.type == "A":
             as_path = elem.fields['as-path'].split(" ")
-            # Print all elements with 16509 in the path.
+            # Print all elements with the asn 16509 in the path.
             if '16509' in as_path:
                 print(f"peer asn: {elem.peer_asn} as path: {as_path} "
                       f"communities: {elem.fields['communities']} "
@@ -81,4 +80,5 @@ What does it mean to check the elem.type in the solution code?
    - "The type of the element, can be one of ‘R’ (ribs), ‘A’ (announcement), ‘W’ (withdrawal), ‘S’ (peer state), ‘’. (basestring, readonly)" - Documentation
 
 ### Caveats
+- The script above uses specific inputs when initializing the BGPStream object meaning their is more data that can be taken by adjusting these inputs. Playing around with the inputs for ```stream``` will result in different outputs. Check out the pybgpstream documetentation to find ways to adjust the BGPStream with other inputs.
  - This script will run through all bgpstream records until it is complete. This will take a long time, it is recommend the user manually interrupts the script after a couple minutes if they don't intend to use or want all the data that will be printed.

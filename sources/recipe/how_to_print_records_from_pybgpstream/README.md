@@ -96,4 +96,4 @@ What is pybgpstream?
 
 ### Caveats
  - This script only prints the first 100 elements in the record of the specified BGPStream. 
-   - Playing around with the inputs for ```stream``` will result in different output. Check out the pybgpstream docuemtentation to find how to adjust the BGPStream with other inputs.
+   - Playing around with the inputs for ```stream``` will result in different output. Check out the pybgpstream documetentation to find how to adjust the BGPStream with other inputs.
