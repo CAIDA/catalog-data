@@ -5,23 +5,22 @@
     "tags":[
         "skitter",
         "ipv4",
+        "routed 24",
+        "prefix2as",
         "poster",
         "as_core"
     ],
     "links":[
-        {"to":"dataset:skitter_internet_topology_data_kit"}
+        {"to":"dataset:skitter_internet_topology_data_kit"},
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"}
     ],
-    "date":"2001.06",
+    "date":"2001.07",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2001-jul-ipv4-standalone-1600x1333.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2001-jul-ipv4-standalone-1600x1333.png",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2001-jul-ipv4-standalone-1600x1333.png"
         }
     ],
     "authors":[]

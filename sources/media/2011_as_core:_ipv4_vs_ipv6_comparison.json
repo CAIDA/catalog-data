@@ -16,22 +16,29 @@
     ],
     "date":"2011.04",
     "type":"POSTER",
-    "image":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2011-apr-ipv4v6-poster-1600x894.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2011/",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2011/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2011-apr-ipv4v6-poster-1600x894.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2011-apr-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2011-apr-ipv6-standalone-1600x1333.png"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:claffy_kc",
-        "person:hyun_young",
-        "person:luckie_matthew",
-        "person:cheng_justin"
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:luckie__matthew",
+        "person:cheng__justin"
     ]
 }

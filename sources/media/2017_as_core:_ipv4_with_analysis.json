@@ -18,21 +18,25 @@
     "image":"https://www.caida.org/research/topology/as_core_network/pics/2017/ascore-2017-feb-ipv4-poster-2048x1518.png",
     "resources":[
         {
-            "name":"URL",
-            "url":"https://www.caida.org/research/topology/as_core_network/2017/",
-            "tags":[
-                "url",
-                "poster"
-            ]
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2017/"
+        },
+        {
+            "name":"PNG",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/2017/ascore-2017-feb-ipv4-poster-2048x1518.png"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/2017/ascore-2017-feb-ipv4-standalone-1000x1037.png"
         }
     ],
     "authors":[
-        "person:huffaker_bradley",
-        "person:claffy_kc",
-        "person:hyun_young",
-        "person:luckie_matthew",
-        "person:marder_alex",
-        "person:dhamdhere_amogh",
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:luckie__matthew",
+        "person:marder__alex",
+        "person:dhamdhere__amogh",
         "person:nguyen_d_anh"
     ]
 }
