@@ -10,11 +10,12 @@
         {"to":"software:spoofer_client"}
     ],
     "tags" : [
-        "security"
+        "security",
+        "spoofer"
     ],
     "authors":[
         {
-            "person": "koga__ryan",
+            "person": "person:koga__ryan",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]

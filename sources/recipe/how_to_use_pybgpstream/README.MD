@@ -1,5 +1,5 @@
 ## How to use PyBGPStream 
-~~~
+~~~json
 {
   "name": "How to use PyBGPStream?",
   "description": "Gives a simple example of using PyBGPStream",
@@ -20,7 +20,6 @@
     ]
 }
 ~~~
-
 The following solution provides an in-depth explanation of how to install and use **PyBGPStream** with an example. 
 
  ## <ins> Introduction </ins> 
