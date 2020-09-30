@@ -1,5 +1,5 @@
 {
-    "id": "2007_as_core:_ipv4_with_analysis",
+    "id": "2007_as_core_ipv4_with_analysis",
     "name": "2007 AS Core: IPv4 with analysis",
     "description": "760,922 IP addresses, 1,400,796 IP links, 1 million destinations, 26.7% of globally routable network prefixes, 12,465 Autonomous Systems (ASes), 35,589 peering sessions.",
     "tags":[
