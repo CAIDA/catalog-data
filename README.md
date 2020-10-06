@@ -1,37 +1,21 @@
-<img src="/images/catalog-logo.png" width="80px"> **CAIDA's Resource Catalog Data**
+### Catalog Data
+This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org)'s database.
 
-This contains the source JSON files used to build the [CAIDA's catalog](https://catalog.caida.org/).
-The source JSON files are found in the source directory.  
+### wiki links
+- [overview of the JSON files](https://github.com/CAIDA/catalog-data/wiki/overview).
+- [how to write a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-make-a-recipe)
+- [how to write a paper](https://github.com/CAIDA/catalog-data/wiki/how-to-make-a-paper)
 
-## How to contribute
+### code 
+- [[scripts/data-build.py]] compiled to generate the database files
+    - id_object.json : id to object data
+    - id_id_link.json : neighbors list of an id's labeled neighbors
+    - word_score_id.json : dictionary 
+- [[scripts/pubdb_placeholder.py]] : converts the pubdb dumps to the catalog JSON format
+- [[scripts/pubdb_links.py]]: updates the links from pubdb dumps
 
-If you would like to contribute to the catalog:
-  - [how to contribute](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute) to the catalog
-  - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe) to the catalog
-
-## Overview of these files
-
-These are combined to build id_id_link.json, id_object.json, and word_score_id.json. 
-
-There are three derived files generated from the object meta data.
-- id_object.json : a id to object dictionary, it has all the object data execpt for links
-- id_id_link.json : stores the link files in {from,to,label} nested dictionaries
-- word_score_id.json : dictionry for each word of scores and id pairs.
-
-These are made by two scripts:
-- scripts/pubdb_placeholder.py : creates the pubdb objects
-- scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
-
-## Build the catalog data
-You will need to have b4 installed in python3.  You can do this using
-virtualenv.
-~~~bash
-virtualenv env
-source env/bin/activate
-pip3 install bs4
-~~~
-
-Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
+## 
+Generate the database json files by typing ```make``` on the command line.  
 
 ~~~
 # If you haven't activated virtualenv yet
@@ -42,3 +26,5 @@ make
 ~~~
 
 You can also do ```make clean``` to remove the pubdb files and id_\* files. 
+
+
