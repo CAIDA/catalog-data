@@ -43,11 +43,9 @@ import argparse
 import json
 import sys
 import os
-import copy
 import re
 import time
 import datetime
-import markdown2
 import subprocess
 import lib.utils as utils
 

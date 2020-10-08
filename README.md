@@ -13,9 +13,21 @@ These are made by two scripts:
 - scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
 ## Build the compiled data
+You will need to have b4 install in python3.  You can do this using
+virtualenv.
+~~~bash
+virtualenv env
+source env/bin/active
+pip3 install bs4
+~~~
+
 Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
 
 ~~~
+# If you haven't activated virtualenv yet
+# You need only do this once per shell
+source env/bin/active 
+
 make
 ~~~
 
