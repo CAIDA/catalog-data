@@ -46,7 +46,7 @@ Objects are removed from the matching set if their type is not in the types set.
 
    |   key    |    value     | 
    |----------|--------------|
-   |   types  |   comma separated list of target types | 
-   |          |   types=dataset types=media,recipe     |
+   |   types  |   comma separated list of target types <br>  types=dataset  &nbsp;&nbsp;&nbsp;  types=media,recipe | 
+   |          |       |
 
 The resulting set of matching objects is return. 
