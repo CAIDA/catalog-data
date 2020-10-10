@@ -6,8 +6,8 @@
     "links": [ ],
     "tags": [
         "search",
-        "catalog",
-        "faq"
+        "catalog help",
+        "catalog"
     ],
     "authors":[
         {
