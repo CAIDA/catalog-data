@@ -1,0 +1,23 @@
+{
+    "id": "dzdb",
+    "name": "DZDB",
+    "organization": "CAIDA",
+    "description": "is CAIDA's database of tld zone file data, which tracks the history of a zone's domain, nameserver, and ip records.",
+    "tags": [
+        "topology",
+        "dns"
+    ],
+    "dateStart": "2011.04",
+    "status": "ongoing",
+    "licenses": [
+        "license:bsd_2_clause_simplified"
+    ],
+    "links": [
+        {
+            "to": "software:dzdb_api"
+        },
+        {
+            "to": "dataset:dzdb"
+        }
+    ]
+}
