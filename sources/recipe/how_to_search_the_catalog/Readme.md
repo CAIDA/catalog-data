@@ -25,7 +25,8 @@ One of the primary ways people can interact with the catalog is with a search qu
 A search query is an unordered collection of object ids, key value pairs, and words
 that returns a matching set of objects. The search query is generated from the search
 field. The search query can be understood to be a set of AND operations.  An object
-matches a search query if it matches all parts of the search query.
+matches a search query if it matches all parts of the search query. The search query is 
+captilization insensitive.
 
 First the search field is split into tokens on white space.  Tokens that contain the `=` character are processed as key value pairs (`types=dataset`).
 Tokens that contain a `:` character are processed as object ids (`dataset:asrank`). 
@@ -37,6 +38,8 @@ If no words are provided, all objects considered to match set.
 
 If object ids are found in the search query, objects are removed from the matching set 
 if they do not have a direct link to all the objects with a matching object id. 
+It's important to note that an object's id is not its type and name, but its type and shortName.
+For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogons".
 
 Currently we only support the key word `types`.  If `types` is provided, then it's value is split 
 on the `,` character into a set of types and stored in the `types` set.  
@@ -46,6 +49,5 @@ Objects are removed from the matching set if their type is not in the `types` se
    |   key    |    value     | 
    |----------|--------------|
    |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
-   |          |       |
 
 The resulting set of matching objects is returned. 
