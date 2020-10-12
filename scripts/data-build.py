@@ -79,8 +79,7 @@ re_not_digit = re.compile("[^\d]+")
 
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
-id_word_score_file = "id_word_score.json"
-word_score_id_file = "word_score_id.json"
+word_id_score_file = "word_id_score.json"
 pubdb_links_file = "data/pubdb_links.json"
 
 filename_errors = {}
@@ -233,24 +232,16 @@ def main():
     #######################
     # ca
     #######################
-    for i in range(0,10):
-        for obj in id_object.values():
-            object_score_update(obj)
-        
     print ("adding words")
-    word_score_id = {}
+    for obj in id_object.values():
+        object_score_update(obj)
+        
+    word_id_score = {}
     for id_,word_score in id_word_score.items():
         for word,score in word_score.items():
-            if word not in word_score_id:
-                word_score_id[word] = []
-            word_score_id[word].append([score,id_])
-    for word,score_ids in word_score_id.items():
-        word_score_id[word] = sorted(score_ids,reverse=True)
-
-    #for score_id in word_score_id["rank"]:
-        #print ("   ",score_id)
-
-
+            if word not in word_id_score:
+                word_id_score[word] = {}
+            word_id_score[word][id_] = score;
 
     #######################
     # print files
@@ -261,13 +252,9 @@ def main():
     print ("writing",id_id_link_file)
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
 
-    print ("writing",word_score_id_file)
-    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
-    json.dump(word_score_id, open(word_score_id_file,"w"))
-
-    print ("writing",id_word_score_file)
-    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
-    json.dump(id_word_score, open(id_word_score_file,"w"))
+    print ("writing",word_id_score_file)
+    json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
+    #json.dump(word_score_id, open(word_id_score_file,"w"))
 
 ###########################
 def error_add(filename, message):
@@ -693,7 +680,7 @@ def object_checker(obj):
 #############################
 
 def object_score_update(obj, recursive=False):
-    word_score = {"":1}
+    word_score = {}
     for key,value in obj.items():
         if key in key_weight:
             weight = key_weight[key]
@@ -704,6 +691,7 @@ def object_score_update(obj, recursive=False):
             continue
 
         word_freq = word_freq_get(value)
+
         for word,freq in word_freq.items():
             word = word.lower()
             if word not in word_score:
