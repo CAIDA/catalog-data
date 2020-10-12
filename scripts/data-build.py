@@ -92,7 +92,8 @@ key_weight = {
     "name": 10,
     "tags": 10,
     "description": 5,
-    "content": 3
+    "content": 3,
+    "authors": 3
 }
 link_weight = {
     "Paper":.3,
@@ -698,29 +699,30 @@ def object_score_update(obj, recursive=False):
                 word_score[word] = weight*freq
             else:
                 word_score[word] += weight*freq 
-    id1 = obj["id"]
-    if id1 in id_id_link:
-        for id2 in id_id_link[id1].keys():
-            if id2 in id_word_score:
-                if id1[0:3] == "tag" or id2[0:3] == "tag":
-                    wieght = 0
-                else:
-                    wieght = .1
-                if wieght > 0:
-                    for word,score in id_word_score[id2].items():
-                        if word not in word_score:
-                            word_score[word] = wieght*score
-                        else:
-                            word_score[word] += wieght*score
 
-    id_word_score[id1] = word_score
+    id_word_score[obj["id"]] = word_score
 
+seen_value = set()
 def word_freq_get(value):
     word_freq = {}
     type_ = type(value)
     if str == type_:
-        if value in id_word_score:
-            word_freq = id_word_score[value]
+        if value in id_object:
+            obj = id_object[value];
+            t = obj["__typename"]
+            keys = []
+            if t == "Person":
+                keys  = ["nameFirst","nameLast"]
+            elif t == "Tag":
+                keys = ["name"]
+            #else:
+                #if t not in seen_value:
+                    #print (t)
+                    #seen_value.add(t)
+
+            for key in keys:
+                if key in obj:
+                    word_freq[obj[key].lower()] = 1.0/len(keys)
         else:
             words = re_not_word.split(re_html.sub("",value))
             total = len(words)
