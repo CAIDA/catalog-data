@@ -231,7 +231,7 @@ def main():
         print("    type 'make links'")
 
     #######################
-    # ca
+    # parse out the words from the fields
     #######################
     print ("adding words")
     for obj in id_object.values():
@@ -243,6 +243,18 @@ def main():
             if word not in word_id_score:
                 word_id_score[word] = {}
             word_id_score[word][id_] = score;
+
+    #######################
+    # Remove empty arrays 
+    #######################
+    print ("removing empty obj arrays")
+    for obj in id_object.values():
+        keys = []
+        for key, value in obj.items():
+            if list == type(value) and len(value) == 0:
+                keys.append(key)
+        for key in keys:
+            del obj[key];
 
     #######################
     # print files
