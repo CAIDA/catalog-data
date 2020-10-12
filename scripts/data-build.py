@@ -79,6 +79,7 @@ re_not_digit = re.compile("[^\d]+")
 
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
+id_word_score_file = "id_word_score.json"
 word_score_id_file = "word_score_id.json"
 pubdb_links_file = "data/pubdb_links.json"
 
@@ -263,6 +264,10 @@ def main():
     print ("writing",word_score_id_file)
     #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
     json.dump(word_score_id, open(word_score_id_file,"w"))
+
+    print ("writing",id_word_score_file)
+    #json.dump(word_score_id, open(word_score_id_file,"w"),indent=4)
+    json.dump(id_word_score, open(id_word_score_file,"w"))
 
 ###########################
 def error_add(filename, message):
