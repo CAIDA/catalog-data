@@ -35,7 +35,8 @@ The script will return a JavaScript object that contains the nameserver and doma
 
 For instance, the above code snippet will output the following object:
 
-~~~javascript
+~~~
+
 {
    "type":"domain",
    "link":"/domains/GOOGLE.COM",
@@ -112,7 +113,7 @@ For instance, the above code snippet will output the following object:
 
 The script relies on the below function to handle querying the dzdb api.
 
-~~~javascript
+~~~
 // Simplified API querying object
 const dns = (function(){
     const corsProxy = "https://cors-anywhere.herokuapp.com";
