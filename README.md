@@ -3,6 +3,11 @@ This contains the source JSON files used to build the [CAIDA's catalog](https://
 The source JSON files are found in the source directory.  These are combined 
 to build id_id_link.json, id_object.json, and word_score_id.json. 
 
+If you would like to contribute to the catalog:
+  - [how to contribute](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute) to the catalog
+  - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe) to the catalog
+
+
 There are three derived files generated from the object meta data.
 - id_object.json : a id to object dictionary, it has all the object data execpt for links
 - id_id_link.json : stores the link files in {from,to,label} nested dictionaries
@@ -20,7 +25,6 @@ virtualenv env
 source env/bin/active
 pip3 install bs4
 ~~~
-
 
 Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
 
