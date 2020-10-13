@@ -26,6 +26,7 @@ The script makes queries to the dzdb api to determine if a domain is still activ
 
 ## **<ins>Solution</ins>**
 The script relies on the below function to handle querying the dzdb api.
+
 ~~~javascript
 // Simplified API querying object
 const dns = (function(){
@@ -51,13 +52,16 @@ const dns = (function(){
     }
 })();
 ~~~
+
 This helper function can be used independently for making queries to the API, and simplifies the process of making queries, including the adding of a CORS proxy to the requests. 
+
 ~~~javascript
 dns.useCorsProxy = false; // Flag to use CORS proxy for requests (defaults to true)
 dns.get('domains','google.com'); // Queries https://dns.coffee/api/domains/google.com
 dns.get('/domains/google.com'); // Also accepts the format of the link returned in api responses
 dns.get('zones','com');
 ~~~
+
 ## **<ins>Background</ins>**
 ### What is a zone 
 A DNS zone is a group of hostnames that is managed by a single individual or organization (Ex. The COM zone is the group of all .com domains).

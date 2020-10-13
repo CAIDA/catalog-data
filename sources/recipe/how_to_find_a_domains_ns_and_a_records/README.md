@@ -33,7 +33,8 @@ The script will return a JavaScript object that contains the nameserver and doma
     console.log(googleDomainRecords); 
 ~~~
 
-For instance, the above code snippet will output the following object
+For instance, the above code snippet will output the following object:
+
 ~~~javascript
 {
    "type":"domain",
