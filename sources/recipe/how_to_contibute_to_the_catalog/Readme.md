@@ -6,7 +6,7 @@
     "links": [ "software:catalog" ],
     "tags": [
         "contibute",
-        "catalog help",
+        "catalog help"
     ],
     "authors":[
         {
