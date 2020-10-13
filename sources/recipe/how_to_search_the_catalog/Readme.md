@@ -3,7 +3,7 @@
     "id" : "how_to_search_the_catalog",
     "name": "How to search the catalog",
     "description":"Overview of the more advanced catalog search features.",
-    "links": [ ],
+    "links": [ "software:catalog" ],
     "tags": [
         "search",
         "catalog help",
