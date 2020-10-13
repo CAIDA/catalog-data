@@ -1,5 +1,5 @@
 ## Catalog Data
-This contains the source JSON files used to build the catalog's databases.
+This contains the source JSON files used to build the [CAIDA's catalog](https://catalog.caida.org/).
 The source JSON files are found in the source directory.  These are combined 
 to build id_id_link.json, id_object.json, and word_score_id.json. 
 
