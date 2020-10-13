@@ -12,7 +12,7 @@ These are made by two scripts:
 - scripts/pubdb_placeholder.py : creates the pubdb objects
 - scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
-## Build the compiled data
+## Build the catalog data
 You will need to have b4 install in python3.  You can do this using
 virtualenv.
 ~~~bash
