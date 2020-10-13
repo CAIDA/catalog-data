@@ -22,6 +22,7 @@
     ]
 }
 ~~~
+
 ###  Mapping ASN's to country 
 *AS to Organization Mapping Datasets:* [link](https://www.caida.org/data/as-organizations/)
 
@@ -35,6 +36,7 @@ An example can be found below.
 Note: The `country` field is stored on the organization field format. 
 
 Example of the AS organization in a test file:
+
 ~~~
 # format: org_id|changed|org_name|country|source
 LVLT-ARIN|20120130|Level 3 Communications, Inc.|US|ARIN
@@ -70,8 +72,8 @@ AS fields
     
 ### Solution 
 The following script returns a dictionary `asn_info` that maps an ASN id to other field values `asn`, `changed`, `asn_name`, `org_id`, `source`, `org_name` and `country` in the following format:
-{'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', 
-`org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
+
+    {'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', `org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
 
  ~~~python
 import re
