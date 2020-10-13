@@ -1,12 +1,16 @@
 ## Catalog Data
 This contains the source JSON files used to build the [CAIDA's catalog](https://catalog.caida.org/).
-The source JSON files are found in the source directory.  These are combined 
-to build id_id_link.json, id_object.json, and word_score_id.json. 
+The source JSON files are found in the source directory.  
+
+## How to contribute
 
 If you would like to contribute to the catalog:
   - [how to contribute](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute) to the catalog
   - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe) to the catalog
 
+## Overview of these files
+
+These are combined to build id_id_link.json, id_object.json, and word_score_id.json. 
 
 There are three derived files generated from the object meta data.
 - id_object.json : a id to object dictionary, it has all the object data execpt for links
