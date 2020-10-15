@@ -71,6 +71,8 @@ re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 re_date_key = re.compile("^date",re.IGNORECASE)
 re_not_digit = re.compile("[^\d]+")
 
+repo_url_default = "https://github.com:CAIDA/catalog-data"
+
 # Weight used to create id scoring for search
 # currently not used.
 # id_score_node_weight = 20
@@ -665,29 +667,34 @@ def replace_markdown_urls(repo_url, line):
 
 def get_url():
     filename = ".git/config"
-    re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
-    re_url = re.compile("\s+url = ([^\s]+)")
-    url = None
-    with open(filename) as f:
-        origin_found = False
-        for line in f:
-            m = re_remote.search(line)
-            if m:
-                type_, source = m.groups()
-                if "remote" == type_ and "origin" == source:
-                    origin_found = True
+    if os.path.exists(filename):
+        re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
+        re_url = re.compile("\s+url = ([^\s]+)")
+        url = None
+        with open(filename) as f:
+            origin_found = False
+            for line in f:
+                m = re_remote.search(line)
+                if m:
+                    type_, source = m.groups()
+                    if "remote" == type_ and "origin" == source:
+                        origin_found = True
+                    else:
+                        origin_found = False
                 else:
-                    origin_found = False
-            else:
-                m = re_url.search(line)
-                if origin_found and m:
+                    m = re_url.search(line)
+                    if origin_found and m:
 
-                    url = m.group(1).replace(":","/")
-                    url = re.sub('.+\@','https://', re.sub(".git$","",url ))
-                    break
-    if url is None:
-        url = "https://github.com:CAIDA/catalog-data"
-        error_add(filename, "failed to find origin url, using "+url)
+                        url = m.group(1).replace(":","/")
+                        url = re.sub('.+\@','https://', re.sub(".git$","",url ))
+                        break
+        if url is None:
+            url = repo_url_default
+            error_add(filename, "failed to find origin url, using "+url)
+    else:
+        url = repo_url_default
+        error_add(filename, "does not exist")
+
     return url
 
 #############################
