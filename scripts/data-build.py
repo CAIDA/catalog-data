@@ -39,7 +39,6 @@
 # ENHANCEMENTS, OR MODIFICATIONS.
 __author__ = "Bradley Huffaker"
 __email__ = "<bradley@caida.org>"
-import argparse
 import json
 import sys
 import os
@@ -71,6 +70,8 @@ re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 
 re_date_key = re.compile("^date",re.IGNORECASE)
 re_not_digit = re.compile("[^\d]+")
+
+repo_url_default = "https://github.com:CAIDA/catalog-data"
 
 # Weight used to create id scoring for search
 # currently not used.
@@ -607,6 +608,7 @@ def link_add(obj,info):
 #############################
 
 def recipe_process(path):
+    rep_url = get_url()+"/blob/master/"
     recipe_dir = set()
     skipped = []
     obj = None
@@ -622,8 +624,16 @@ def recipe_process(path):
                         inside = False
                         data = None
                         for line in f:
+                            # process content after JSON 
                             if info is not None:
                                 info["content"] += line
+
+                                line = replace_markdown_urls(rep_url+root, line)
+                                #if re_markdown_url.search(line):
+                                    #print (line.rstrip())
+
+
+                            # process JSON 
                             elif re.search("~~~",line):
                                 if inside:
                                     if data == "":
@@ -655,8 +665,50 @@ def recipe_process(path):
                         #errors.append("invisible")
 
                     if not error: 
-                        object_add("Recipe", info)     
+                        object_add("Recipe", info)
+re_markdown_url = re.compile("^(.*\[[^\]]+\]\(\s*)([^\)]+)(\).*)")
+def replace_markdown_urls(repo_url, line):
+    m = re_markdown_url.search(line)
+    if m:
+        before,url,after = m.groups()
+        #print (before, "|", url, "|", after)
+        if url[0:4] != "http":
+            url = repo_url +"/"+url
+        return replace_markdown_urls(repo_url, before)+url+replace_markdown_urls(repo_url, after)
+    else:
+        return line
 
+def get_url():
+    filename = ".git/config"
+    if os.path.exists(filename):
+        re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
+        re_url = re.compile("\s+url = ([^\s]+)")
+        url = None
+        with open(filename) as f:
+            origin_found = False
+            for line in f:
+                m = re_remote.search(line)
+                if m:
+                    type_, source = m.groups()
+                    if "remote" == type_ and "origin" == source:
+                        origin_found = True
+                    else:
+                        origin_found = False
+                else:
+                    m = re_url.search(line)
+                    if origin_found and m:
+
+                        url = m.group(1).replace(":","/")
+                        url = re.sub('.+\@','https://', re.sub(".git$","",url ))
+                        break
+        if url is None:
+            url = repo_url_default
+            error_add(filename, "failed to find origin url, using "+url)
+    else:
+        url = repo_url_default
+        error_add(filename, "does not exist")
+
+    return url
 
 #############################
 
