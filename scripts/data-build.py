@@ -71,7 +71,7 @@ re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 re_date_key = re.compile("^date",re.IGNORECASE)
 re_not_digit = re.compile("[^\d]+")
 
-repo_url_default = "https://github.com:CAIDA/catalog-data"
+repo_url_default = "https://github.com/CAIDA/catalog-data"
 
 # Weight used to create id scoring for search
 # currently not used.
