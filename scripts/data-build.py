@@ -626,11 +626,10 @@ def recipe_process(path):
                         for line in f:
                             # process content after JSON 
                             if info is not None:
-                                info["content"] += line
-
                                 line = replace_markdown_urls(rep_url+root, line)
                                 #if re_markdown_url.search(line):
                                     #print (line.rstrip())
+                                info["content"] += line
 
 
                             # process JSON 
