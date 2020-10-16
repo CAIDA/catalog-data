@@ -11,6 +11,9 @@ objects = []
 seen = set()
 name_id = {}
 
+re_ids_only = re.compile("^[a-z_\s:]+$")
+re_whitespace = re.compile("\s+")
+
 def main():
     load_ids("media","data/PANDA-Presentations-json.pl.json")
     load_ids("paper","data/PANDA-Papers-json.pl.json")
@@ -107,6 +110,16 @@ def main():
             if len(mon) < 2:
                 mon = "0"+mon
             obj["date"] = obj["datePublished"] = year+"."+mon
+
+        if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
+            linked = obj["linkedObjects"]
+            if re_ids_only.search(linked):
+                for to_id in re_whitespace.split(linked):
+                    obj["links"].append(to_id)
+                print (obj["linkedObjects"])
+            else:
+                print (obj["id"], "failed to parse linkedObject `"+linked+"'")
+
 
 
         json.dump(obj,open(obj["filename"],"w"),indent=4)

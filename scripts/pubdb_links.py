@@ -25,14 +25,16 @@ invalid_id = set([
 
 pubdb_links_file = "data/pubdb_links.json"
 
-re_ids_only = re.compile("^[a-z_\s:]+$")
-re_whitespace = re.compile("\s+")
-
 def url_cleaner(url):
     return re.sub("https?://", "", re.sub("[/,\.\)]+$","",url))
 
 def main():
     links = set()
+    if not os.path.exists(files_dir):
+        print ("error:",files_dir," does not exits",file=sys.stderr);
+        sys.exit(1)
+    sys.exit()
+
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -59,6 +61,9 @@ def main():
     for type_,filename in [["media","data/PANDA-Presentations-json.pl.json"], 
         ["paper","data/PANDA-Papers-json.pl.json"]]:
         for obj in json.load(open(filename,"r")):
+            if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
+                continue
+
             id_ = utils.id_create(filename, type_, obj["id"])
             failed = None
             if "links" in obj:
@@ -66,7 +71,7 @@ def main():
                     if "to" in link:
                         m = re.search("(\d\d\d\d/[^\/]+/[^/]+.pdf$)",link["to"])
                         if m:
-                            fname = "data/files/"+m.group(1)
+                            fname = data_dir+"/"+m.group(1)
                             found = None
                             if os.path.exists(fname):
                                 found = fname
@@ -98,17 +103,6 @@ def main():
                                                         #if not os.path.exists(filename):
                                                             #download("http://"+url,filename)
                                                         #sys.exit()
-                            else:
-                                failed = fname
-            if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
-                linked = obj["linkedObjects"]
-                if re_ids_only.search(linked):
-                    id0 = obj["id"]
-                    for id1 in re_whitespace.split(linked): 
-                        link = [id0,id1]
-                        links.add(json.dumps(link))
-                else:
-                    print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 
     with open(pubdb_links_file,"w") as f:
         print ("writing",pubdb_links_file)
