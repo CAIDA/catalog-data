@@ -46,7 +46,8 @@ def main():
                             for resource in obj["resources"]:
                                 if "url" in resource and len(resource["url"]) > 10:
                                     url = url_cleaner(resource["url"])
-                                    url_id[url] = id_
+                                    if "media" not in id_ or resource["name"] == "pdf":
+                                        url_id[url] = id_
                     except ValueError as e:
                         print (fname)
                         raise e
