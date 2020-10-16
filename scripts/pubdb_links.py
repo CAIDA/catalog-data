@@ -25,10 +25,14 @@ invalid_id = set([
 
 pubdb_links_file = "data/pubdb_links.json"
 
+re_ids_only = re.compile("^[a-z_\s:]+$")
+re_whitespace = re.compile("\s+")
+
 def url_cleaner(url):
     return re.sub("https?://", "", re.sub("[/,\.\)]+$","",url))
 
 def main():
+    links = set()
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -51,9 +55,6 @@ def main():
                             #print (name)
                             #print ()
                         name_id[name] = utils.id_create(fname, type_,obj["id"])
-    print ()
-    seen = set()
-    links = []
     for type_,filename in [["media","data/PANDA-Presentations-json.pl.json"], 
         ["paper","data/PANDA-Papers-json.pl.json"]]:
         for obj in json.load(open(filename,"r")):
@@ -83,10 +84,7 @@ def main():
                                             url = url_cleaner(m.group(1))
                                             if url in url_id:
                                                 link = [id_,url_id[url]]
-                                                l = json.dumps(link)
-                                                if l not in seen:
-                                                    links.append(link)
-                                                    seen.add(l)
+                                                links.add(json.dumps(link))
                                             else:
                                                 m = re.search("www.caida.org/data/([^/]+)",url)
                                                 if m: 
@@ -101,12 +99,19 @@ def main():
                                                         #sys.exit()
                             else:
                                 failed = fname
-            #if failed is not None:
-                #print (id_,failed)
+            if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
+                linked = obj["linkedObjects"]
+                if re_ids_only.search(linked):
+                    id0 = obj["id"]
+                    for id1 in re_whitespace.split(linked): 
+                        link = [id0,id1]
+                        links.add(json.dumps(link))
+                else:
+                    print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 
     with open(pubdb_links_file,"w") as f:
         print ("writing",pubdb_links_file)
-        json.dump(links,f,indent=4)
+        json.dump(list(links),f,indent=4)
 
 
 def download(url, filename):
