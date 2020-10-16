@@ -298,7 +298,10 @@ id_date = {}
 def id_date_load(filename):
     global id_date
     if os.path.exists(filename):
-        id_date = json.load(open(filename,"r"))
+        try:
+            id_date = json.load(open(filename,"r"))
+        except ValueError as e:
+            error_add(filename, e.__str__())
 
 def object_date_add(obj):
     for key in ["dateCreated","dateLastUpdated"]:
