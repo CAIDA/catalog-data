@@ -19,7 +19,7 @@
 ~~~
 
 
-### search query
+### Search Query
 
 "``types=dataset topology``" , "``asn``" , "``recipe=paper,recipe tag:topology``"
 
@@ -31,6 +31,7 @@ matches a search query if it matches all parts of the search query. The search q
 captilization insensitive.
 
 ### key/value, ids, and words
+
 First the search field is split into tokens on white space.  Tokens that contain the `=` character are processed as key value pairs (`types=dataset`).
 Tokens that contain a `:` character are processed as object ids (`dataset:asrank`). 
 All other tokens are processed as words.

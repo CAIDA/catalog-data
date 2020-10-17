@@ -10,7 +10,7 @@
     "dateStart": "2007.02",
     "resources": [
         {
-            "name": "the catalog",
+            "name": "public",
             "url": "https://catalog.caida.org"
         }
     ],
