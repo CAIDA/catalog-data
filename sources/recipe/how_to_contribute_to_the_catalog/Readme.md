@@ -18,11 +18,11 @@
     ],
     "resources": [
         {
-            "name":"contribute general",
+            "name":"how to contribute",
             "url":"https://github.com/CAIDA/catalog-data/wiki/how-to-contribute"
         },
         {
-            "name":"contribute recipe",
+            "name":"contribute a recipe",
             "url":"https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe"
         }
     ]
@@ -46,7 +46,7 @@ catalog to include non-CAIDA resources. The general process is to fork, update, 
   
    1. update/add JSON files related to your contribution
   
-   1. check with ```make``` tha your JSON is valid and doesn't contain unknown ids
+   1. check with ```make``` that your JSON is valid and doesn't contain unknown ids
   
    1. pull against the CAIDA's copy of the repo.
 
