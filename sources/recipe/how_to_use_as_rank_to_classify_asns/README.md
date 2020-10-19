@@ -31,9 +31,9 @@ This solution helps classify an asn based upon relationship with other asns. The
 Below is an example of how to run the script to classify the asns 3356 and 10, sending their classifications to a .jsonl file. You must use the -a flag, and provide at least on asn to classify. For classifying multiple asns, provide a comma seperated list with no spaces.
 - Note: This script calls the API until all AS Relationships are found, and this can take a significant amount of time.
 
-```bash
+~~~bash
 python3 api_2_class.py -a 3356,10 > output.jsonl
-```
+~~~
 
 ## Solution
 

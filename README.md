@@ -1,4 +1,5 @@
-## Catalog Data
+<img src="/images/catalog-logo.png" width="80px"> **CAIDA's Resource Catalog Data**
+
 This contains the source JSON files used to build the [CAIDA's catalog](https://catalog.caida.org/).
 The source JSON files are found in the source directory.  
 
