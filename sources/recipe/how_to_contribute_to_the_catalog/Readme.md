@@ -33,9 +33,7 @@
 ### Search Query
 
 Thank you for considering contributing to CAIDA's catalog. The current version of 
-the catalog's data is built from a set of JSON files which are stored in [github](https://github.com/CAIDA/catalog-data).  
-
-   - [https://github.com/CAIDA/catalog-data](https://github.com/CAIDA/catalog-data)
+the catalog's data is built from a set of JSON files which are stored in [https://github.com/CAIDA/catalog-data](https://github.com/CAIDA/catalog-data).
    
 
 Contributions and updates are welcome from all comers. We are interested in expanding the
