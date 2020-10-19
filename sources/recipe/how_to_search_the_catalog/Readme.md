@@ -59,7 +59,7 @@ A search query can be generated from a search string by splitting the string on 
 |----------------|-------------|
 | ``types=dataset topology`` | search for datasets with the word 'topology' in a text field |
 | ``asn`` | search for all objects with the word 'asn' in a text field |
-| ``software:bgpstream`` | search for objects directl linked to the object ``software:bgpstream`` |
+| ``software:bgpstream`` | search for objects directly linked to the object ``software:bgpstream`` |
 | ``bgpstream`` | search for objects with the string "bgpstream" in a field or child's field | 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
 
