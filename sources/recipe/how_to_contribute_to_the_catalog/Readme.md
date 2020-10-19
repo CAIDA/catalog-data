@@ -35,7 +35,7 @@
 Thank you for considering contributing to CAIDA's catalog. The current version of 
 the catalog's data is built from a set of JSON files which are stored in [github](https://github.com/CAIDA/catalog-data).  
 
-   - [github.com/CAIDA/catalog-data](https://github.com/CAIDA/catalog-data)
+   - [https://github.com/CAIDA/catalog-data](https://github.com/CAIDA/catalog-data)
 
 Contributions and updates are welcome from all comers. We are interested in expanding the
 catalog to include non-CAIDA resources. The general process is to fork, update, check, and pull.
