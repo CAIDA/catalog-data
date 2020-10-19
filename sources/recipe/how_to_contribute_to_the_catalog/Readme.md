@@ -18,11 +18,11 @@
     ],
     "resources": [
         {
-            "name":"contribute general",
+            "name":"how to contribute",
             "url":"https://github.com/CAIDA/catalog-data/wiki/how-to-contribute"
         },
         {
-            "name":"contribute recipe",
+            "name":"contribute a recipe",
             "url":"https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe"
         }
     ]
@@ -35,19 +35,20 @@
 Thank you for considering contributing to CAIDA's catalog. The current version of 
 the catalog's data is built from a set of JSON files which are stored in [github](https://github.com/CAIDA/catalog-data).  
 
-    [CAIDA/catalog-data](https://github.com/CAIDA/catalog-data)
+   - [https://github.com/CAIDA/catalog-data](https://github.com/CAIDA/catalog-data)
+   
 
 Contributions and updates are welcome from all comers. We are interested in expanding the
 catalog to include non-CAIDA resources. The general process is to fork, update, check, and pull.
 
-overview of process:
+### overview of process:
 
-  1. fork the current catalog-data repo
+   1. fork the current catalog-data repo
   
-  1. update/add JSON files related to your contribution
+   1. update/add JSON files related to your contribution
   
-  1. check with ```make``` tha your JSON is valid and doesn't contain unknown ids
+   1. check with ```make``` that your JSON is valid and doesn't contain unknown ids
   
-  1. pull against the CAIDA's copy of the repo.
+   1. pull against the CAIDA's copy of the repo.
 
 Let us know if you have any questions <a href="mailto:catalog-info@caida.org">catalog-info@caida.org</a>.
