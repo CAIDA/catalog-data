@@ -7,7 +7,7 @@
         "software:catalog" 
     ],
     "tags": [
-        "contibute",
+        "contribute",
         "catalog help"
     ],
     "authors":[
