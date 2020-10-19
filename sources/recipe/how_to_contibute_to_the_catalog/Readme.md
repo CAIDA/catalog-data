@@ -39,9 +39,13 @@ Contributions and updates are welcome from all comers.  We are interested in exp
 catalog to include non CAIDA resources. The general process is to fork, update, check, and pull.
 
 overview of process:
-1. fork the current catalog-data repo
-1. update/add JSON files related to your contribution
-1. check with ```make``` tha your JSON is valid and doesn't contain unknown ids
-1. pull against the CAIDA's copy of the repo.
+
+  1. fork the current catalog-data repo
+  
+  1. update/add JSON files related to your contribution
+  
+  1. check with ```make``` tha your JSON is valid and doesn't contain unknown ids
+  
+  1. pull against the CAIDA's copy of the repo.
 
 Let us know if you have any questions <a href="mailto:catalog-info@caida.org">catalog-info@caida.org</a>.
