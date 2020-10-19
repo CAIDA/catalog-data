@@ -21,7 +21,7 @@
 
 ### Search Query
 
-"``types=dataset topology``" , "``asn``" , "``recipe=paper,recipe tag:topology``"
+**examples:** "``types=dataset topology``" , "``asn``" , "``recipe=paper,recipe tag:topology``"
 
 One of the primary ways people can interact with the catalog is with a search query. 
 A search query is an unordered collection of object ids, key value pairs, and words
