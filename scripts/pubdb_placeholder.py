@@ -62,8 +62,6 @@ def main():
                             del info[key]
                 if "date" in info:
                     date = utils.date_parse(info["date"])
-                    if "catalog" in obj["id"]:
-                        print (info["date"], date)
                     if date is not None:
                         info["date"] = date
                         if "date" not in obj or obj["date"] < info["date"]:
@@ -115,7 +113,6 @@ def main():
             if re_ids_only.search(linked):
                 for to_id in re_whitespace.split(linked):
                     obj["links"].append(to_id)
-                print (obj["linkedObjects"])
             else:
                 print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 
