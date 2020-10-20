@@ -1,7 +1,7 @@
 run:pubdb
 	python3 scripts/data-build.py
 
-pubdb: scripts/pubdb_placeholder.py scripts/pubdb_links.py data/PANDA-Papers-json.pl.json data/PANDA-Presentations-json.pl.json
+pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py data/PANDA-Papers-json.pl.json data/PANDA-Presentations-json.pl.json
 	python3 scripts/pubdb_placeholder.py
 	touch pubdb
 

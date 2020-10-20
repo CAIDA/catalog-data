@@ -335,6 +335,7 @@ def object_date_add(obj):
 
     if "date" not in obj:
         obj["date"] = obj["dateLastUpdated"]
+    obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
