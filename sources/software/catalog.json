@@ -4,13 +4,12 @@
     "organization": "CAIDA",
     "description": "CAIDA's resource catalog provides a rich context graph of the relationships between papers, presentations, datasets, and software.  It also provides recipes that help to understand and use those resources.",
     "tags": [
-        "topology",
-        "active measurement"
+        "catalog"
     ],
     "dateStart": "2007.02",
     "resources": [
         {
-            "name": "the catalog",
+            "name": "public",
             "url": "https://catalog.caida.org"
         }
     ],

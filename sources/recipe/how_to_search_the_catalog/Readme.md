@@ -19,45 +19,45 @@
 ~~~
 
 
-### search query
+### Search Query
 
-"``types=dataset topology``" , "``asn``" , "``recipe=paper,recipe tag:topology``"
+One of the primary ways people can interact with the catalog is with a search query. A search query is a search against the catalog for objects linked against a set of object ids, matching a set of types, and/or containing a set of words. A search query is a case insentive unordered collection of object ids, key/value pairs, and words.
 
-One of the primary ways people can interact with the catalog is with a search query. 
-A search query is an unordered collection of object ids, key value pairs, and words
-that returns a matching set of objects. The search query is generated from the search
-field. The search query can be understood to be a set of AND operations.  An object
-matches a search query if it matches all parts of the search query. The search query is 
-captilization insensitive.
+A search query can be generated from a search string by splitting the string on white space into tokens and dividing the tokens into ids, key/value pairs, and words.
 
-### key/value, ids, and words
-First the search field is split into tokens on white space.  Tokens that contain the `=` character are processed as key value pairs (`types=dataset`).
-Tokens that contain a `:` character are processed as object ids (`dataset:asrank`). 
-All other tokens are processed as words.
-
-| type | meannging | examples |
+| type | meaning | examples |
 |------|------------|---------|
-| key/value ``(key)=(value)`` | a key and a value pair  | types=dataset,recipe | 
-| id      ``(type):(shortName)``  | an object id | dataset:asrank , tag:asn | 
-| word      | anything that doesn't match the above |
+| **key/value** ``(key)=(value)`` | a key and a value pair  | types=dataset,recipe | 
+| **id**      ``(type):(shortName)``  | an object id | dataset:asrank , tag:asn | 
+| **word**      | anything that doesn't match the above |
 
-First the words are processed to find the set of objects that contain all the words 
-in a combination of their fields and placed into the matching set. 
-If no words are provided, all objects considered to match set.
+- **words**
 
-If object ids are found in the search query, objects are removed from the matching set 
-if they do not have a direct link to all the objects with a matching object id. 
-It's important to note that an object's id is not its type and name, but its type and shortName.
-For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogons".
+   An object is added to the matching set if it contains all the supplied words in a text field (''name'', ''organization'', etc) or 
+   a child's text field ("paper's author's organization"). If no words are provided, all objects are added to the matching set.
 
-### key/value pairs 
-Currently we only support the key word `types`.  If `types` is provided, then it's value is split 
-on the `,` character into a set of types and stored in the `types` set.  
-If the `types` key is not provided, then all types are placed into the `types` set.  
-Objects are removed from the matching set if their type is not in the `types` set.
+- **key/value pairs**
 
-   |   key    |    value     | 
-   |----------|--------------|
-   |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
+   Currently the catalog only support's the key word ``types``.  
 
-The resulting set of matching objects is returned. 
+   - **Types** is a comma deliminated set of object types (``dataset,recipe``), the *type set*.  Objects are removed from
+   the matching set if thier type is not contained in the *type set*.  If types is not provided, all types are considered valid.
+
+      |   key    |    value     | 
+      |----------|--------------|
+      |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
+      
+- **ids**
+
+   An object is removed from the matching set unless it is directly linked to all objects with an id (``dataset:asrank``, ``software:bgpstream``) in the search query.
+   It's important to note that an object's id is not its type and name, but its type and shortName.
+   For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogons".
+
+### example search strings
+
+|  search string | explination | 
+|----------------|-------------|
+| ``types=dataset topology`` | search for datasets with the word 'topology' in a text field |
+| ``asn`` | search for all objects with the word 'asn' in a text field |
+| ``recipe=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
+
