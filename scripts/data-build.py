@@ -61,7 +61,7 @@ re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
 re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
-re_word = re.compile("^[a-z]+$",re.IGNORECASE)
+re_word = re.compile("^[a-z0-9]+$",re.IGNORECASE)
 
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
