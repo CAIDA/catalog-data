@@ -3,10 +3,14 @@
     "name": "Spoofer",
     "dateStart": "2007.02",
     "status": "ongoing",
+    "tags":["caida","spoof"],
     "links": [
         {
             "to": "paper:2019_network_hygiene_incentives_regulation",
             "label": "used by"
+        },
+        {
+            "to":"software:spoofer_api"
         }
     ]
 }

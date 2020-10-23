@@ -3,6 +3,7 @@
     "name": "A Coordinated View of the Temporal Evolution of Large-scale Internet Events",
     "description": "A one page poster describing the NSF funded research project, \"Detecting and Characterizing Internet Traffic Interception based on BGP Hijacking\".",
     "tags": [
+        "caida",
         "BGP",
         "poster",
         "security"

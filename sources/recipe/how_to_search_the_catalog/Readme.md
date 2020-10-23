@@ -29,14 +29,20 @@ A search query can be generated from a search string by splitting the string on 
 |------|------------|---------|
 | **key/value** ``(key)=(value)`` | a key and a value pair  | types=dataset,recipe | 
 | **id**      ``(type):(shortName)``  | an object id | dataset:asrank , tag:asn | 
+| **-id**      ``-(type):(shortName)``  | an object id | -dataset:asrank , -tag:asn | 
 | **word**      | anything that doesn't match the above |
+| **-word**      | anything that doesn't match the above |
 
-- **words**
+- **words** (rank)
 
    An object is added to the matching set if it contains all the supplied words in a text field (''name'', ''organization'', etc) or 
    a child's text field ("paper's author's organization"). If no words are provided, all objects are added to the matching set.
 
-- **key/value pairs**
+    - **-word** (-rank)
+
+       A **-** in front of the word. Reverse it's meaning and removes objects from the matching set if the word is found in a field.
+
+- **key/value pairs** (types=paper,dataset)
 
    Currently the catalog only support's the key word ``types``.  
 
@@ -47,11 +53,15 @@ A search query can be generated from a search string by splitting the string on 
       |----------|--------------|
       |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
       
-- **ids**
+- **ids** (tag:topology)
 
    An object is removed from the matching set unless it is directly linked to all objects with an id (``dataset:asrank``, ``software:bgpstream``) in the search query.
    It's important to note that an object's id is not its type and name, but its type and shortName.
    For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogons".
+
+    - **-id** (-tag:topology)
+
+       A **-** in front of the id. Reverse it's meaning and removes objects from the matching set if it is linked against the object.
 
 ### example search strings
 

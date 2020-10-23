@@ -3,6 +3,7 @@
     "name": "Correlating country IP reputation",
     "description": "We analyzed the reputation of a country's Internet (IPv4) addresses by examining the number of blacklisted IPv4 addresses that geolocate to a given country. We compared this indicator with two qualitative measures of each country's governance. We found a correlation exists between perceived corruption and fraction of blacklisted IP addresses.",
     "tags": [
+        "caida",
         "IPv4",
         "country",
         "analysis",

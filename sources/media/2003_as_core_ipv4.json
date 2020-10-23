@@ -3,6 +3,7 @@
     "name": "2003 AS Core: IPv4",
     "description": "1,134,634 IP addresses, 2,434,073 IP links, 865,000 destinations, 62% of globally routable network prefixes; 11,411 ASes (73% of ASes present in RouteViews BGP tables on May 8, 2003), 32,209 peering sessions.",
     "tags":[
+        "caida",
         "skitter",
         "ipv4",
         "routed 24",

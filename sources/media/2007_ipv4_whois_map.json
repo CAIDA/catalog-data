@@ -3,6 +3,7 @@
     "name": "IPv4 WHOIS Map (2007)",
     "description": "A visualization of the characteristics of IPv4 \"whois\" data from the five Regional Internet Registries (RIRs).",
     "tags": [
+        "caida",
         "IPv4",
         "whois"
     ],

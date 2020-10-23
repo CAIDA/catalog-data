@@ -23,7 +23,7 @@ def main():
         if os.path.isdir(p):
             for fname in os.listdir(p):
                 fname = p+"/"+fname
-                if re.search("json$",fname) and "__" not in fname: 
+                if re.search("json$",fname) and "__pubdb" not in fname: 
                     try:
                         obj = json.load(open(fname,"r"))
                     except json.decoder.JSONDecodeError as e:
@@ -46,6 +46,7 @@ def main():
         sys.exit(1)
 
     for obj in objects:
+        obj["tags"].append("caida")
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
         obj["resources"] = []

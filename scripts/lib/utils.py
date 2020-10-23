@@ -1,5 +1,6 @@
 import re
 import sys
+import traceback
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
 re_year = re.compile("^(\d\d\d\d)[^\d]*(.*)")

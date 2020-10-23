@@ -3,6 +3,7 @@
     "name": "2017 AS Core: IPv4 with analysis",
     "description": "Almost 50 million IP addresses, 36 million IP links 47,610 Autonomous Systems (ASes), 148,455 links. Data collected from 121 monitors located in 42 countries on 6 continents.",
     "tags":[
+        "caida",
         "ark",
         "ipv4",
         "poster",
