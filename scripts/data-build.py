@@ -795,7 +795,7 @@ def word_freq_get(value):
             words = re_not_word.split(re_html.sub("",value.lower() ))
             total = len(words)
             for word in words:
-                if len(word) > 1 and re_word.search(word): 
+                if len(word) > 0 and re_word.search(word): 
                     if word in word_freq:
                         word_freq[word] += 1/total
                     else:
