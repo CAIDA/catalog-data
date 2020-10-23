@@ -28,10 +28,8 @@ A search query can be generated from a search string by splitting the string on 
 | type | meaning | examples |
 |------|------------|---------|
 | **key/value** ``(key)=(value)`` | a key and a value pair  | types=dataset,recipe | 
-| **id**      ``(type):(shortName)``  | an object id | dataset:asrank , tag:asn | 
-| **-id**      ``-(type):(shortName)``  | an object id | -dataset:asrank , -tag:asn | 
-| **word**      | anything that doesn't match the above |
-| **-word**      | anything that doesn't match the above |
+| **id** , -**id**      ``(type):(shortName)``  | an object id | dataset:asrank , -tag:asn | 
+| **word** , -**word**     | anything that doesn't match the above | rank , -topology |
 
 - **words** (rank)
 
@@ -40,7 +38,7 @@ A search query can be generated from a search string by splitting the string on 
 
     - **-word** (-rank)
 
-       A **-** in front of the word. Reverse it's meaning and removes objects from the matching set if the word is found in a field.
+       A **-** in front of the word, reverse it's meaning and removes objects from the matching set if the word is found in a field.
 
 - **key/value pairs** (types=paper,dataset)
 
@@ -61,7 +59,7 @@ A search query can be generated from a search string by splitting the string on 
 
     - **-id** (-tag:topology)
 
-       A **-** in front of the id. Reverse it's meaning and removes objects from the matching set if it is linked against the object.
+       A **-** in front of the id, reverse it's meaning and removes objects from the matching set if it is linked against the object.
 
 ### example search strings
 
@@ -72,4 +70,6 @@ A search query can be generated from a search string by splitting the string on 
 | ``software:bgpstream`` | search for objects directly linked to the object ``software:bgpstream`` |
 | ``bgpstream`` | search for objects with the string "bgpstream" in a field or child's field | 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
+| ``rank -dataset:asrank`` | searchs for objects with the word rank , not linked to dataset:asrank | 
+| ``-caida`` | searchs for objects that do not contain the word caida | 
 
