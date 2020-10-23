@@ -70,4 +70,6 @@ A search query can be generated from a search string by splitting the string on 
 | ``software:bgpstream`` | search for objects directly linked to the object ``software:bgpstream`` |
 | ``bgpstream`` | search for objects with the string "bgpstream" in a field or child's field | 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
+| ``rank -dataset:asrank`` | searchs for objects with the word rank , not linked to dataset:asrank | 
+| ``-caida`` | searchs for objects that do not contain the word caida | 
 
