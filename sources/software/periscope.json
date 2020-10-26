@@ -9,8 +9,8 @@
     ],
     "resources": [
         {
-            "name": "upcoming",
-            "url": "",
+            "name": "restricted",
+            "url": "https://www.caida.org/tools/utilities/looking-glass-api/",
             "tags": []
         }
     ],
