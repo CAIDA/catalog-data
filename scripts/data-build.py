@@ -324,7 +324,7 @@ def object_date_add(obj):
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
 
-    if obj["__typename"] == "media" and "presenters" in obj:
+    if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
