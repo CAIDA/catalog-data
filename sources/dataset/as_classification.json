@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "This page documents our method for classifying Autonomous Systems (ASes) according to their business type.",
     "tags": [
+        "caida",
         "topology",
         "asn"
 

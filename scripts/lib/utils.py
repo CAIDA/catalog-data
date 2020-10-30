@@ -1,6 +1,10 @@
 import re
 import sys
+import traceback
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
+
+re_year = re.compile("^(\d\d\d\d)[^\d]*(.*)")
+re_num = re.compile("(\d{1,2})[^\d]*(.*)")
 
 def id_create(filename, type_,id_):
     if id_ is not None:
@@ -42,3 +46,26 @@ def id_create(filename, type_,id_):
         name = re_id_illegal.sub("_",name)
         name = re.sub("_+$","",re.sub("^_+","",name))
     return type_.lower()+":"+name.lower()
+
+
+def date_parse(value):
+    m = re_year.search(value)
+    if m:
+        year, rest = m.groups()
+        mon, day = None, None
+        m = re_num.search(rest)
+        if m:
+            mon, rest = m.groups()
+            if len(mon) < 2:
+                mon = "0"+mon
+            m = re_num.search(rest)
+            if m:
+                day, rest = m.groups()
+                if len(day) < 2:
+                    day = "0"+day
+                return year+"."+mon+"."+day
+            else:
+                return year+"."+mon
+        else:
+            return year
+    return None

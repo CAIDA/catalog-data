@@ -3,6 +3,7 @@
     "name": "2000 AS Core: IPv4",
     "description": "626,773 IP addresses, 1,007,723 IP links, 52% of globally routable network prefixes; 7,563 ASes (81% of A Ses present in RouteViews BGP tables on October 15, 2000), 25,005 peering sessions.",
     "tags":[
+        "caida",
         "skitter",
         "routed 24",
         "prefix2as",

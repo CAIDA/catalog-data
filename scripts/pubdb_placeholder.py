@@ -23,7 +23,7 @@ def main():
         if os.path.isdir(p):
             for fname in os.listdir(p):
                 fname = p+"/"+fname
-                if re.search("json$",fname) and "__" not in fname: 
+                if re.search("json$",fname) and "__pubdb" not in fname: 
                     try:
                         obj = json.load(open(fname,"r"))
                     except json.decoder.JSONDecodeError as e:
@@ -46,7 +46,7 @@ def main():
         sys.exit(1)
 
     for obj in objects:
-        #print (obj["__typename"], obj["id"])
+        obj["tags"].append("caida")
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
         obj["resources"] = []
@@ -61,11 +61,12 @@ def main():
                         person_create(obj["id"],info["person"])
                         if key != "person":
                             del info[key]
-                if "date" in info and re.search("\d\d\d\d\.\d",info["date"]):
-                    year,mon = info["date"].split(".")
-                    if len(mon) < 2:
-                        mon = "0"+mon
-                    info["date"] = year+"."+mon
+                if "date" in info:
+                    date = utils.date_parse(info["date"])
+                    if date is not None:
+                        info["date"] = date
+                        if "date" not in obj or obj["date"] < info["date"]:
+                            obj["date"] = info["date"]
         if "authors" in obj:
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
@@ -106,17 +107,13 @@ def main():
                     del obj[key_from]
 
         if "datePublished" in obj:
-            year,mon = obj["datePublished"].split(".")
-            if len(mon) < 2:
-                mon = "0"+mon
-            obj["date"] = obj["datePublished"] = year+"."+mon
+            obj["date"] = utils.date_parse(obj["datePublished"])
 
         if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
             linked = obj["linkedObjects"]
             if re_ids_only.search(linked):
                 for to_id in re_whitespace.split(linked):
                     obj["links"].append(to_id)
-                print (obj["linkedObjects"])
             else:
                 print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 

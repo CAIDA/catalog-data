@@ -60,8 +60,9 @@ id_word_score = {}
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
-re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
-re_word = re.compile("^[a-z]+$",re.IGNORECASE)
+#re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
+re_not_word = re.compile("[^a-z^A-Z^0-9]+")
+re_word = re.compile("^[a-zA-Z0-9]+$",re.IGNORECASE)
 
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
@@ -236,7 +237,7 @@ def main():
     #######################
     print ("adding words")
     for obj in id_object.values():
-        object_score_update(obj)
+        word_scoring(obj)
         
     word_id_score = {}
     for id_,word_score in id_word_score.items():
@@ -323,7 +324,7 @@ def object_date_add(obj):
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
 
-    if obj["__typename"] == "media" and "presenters" in obj:
+    if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
@@ -335,6 +336,7 @@ def object_date_add(obj):
 
     if "date" not in obj:
         obj["date"] = obj["dateLastUpdated"]
+    obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
@@ -746,7 +748,7 @@ def object_checker(obj):
 
 #############################
 
-def object_score_update(obj, recursive=False):
+def word_scoring(obj, recursive=False):
     word_score = {}
     for key,value in obj.items():
         if key in key_weight:
@@ -790,11 +792,10 @@ def word_freq_get(value):
                 if key in obj:
                     word_freq[obj[key].lower()] = 1.0/len(keys)
         else:
-            words = re_not_word.split(re_html.sub("",value))
+            words = re_not_word.split(re_html.sub("",value.lower() ))
             total = len(words)
             for word in words:
-                word = word.lower()
-                if len(word) > 1 and re_word.search(word): 
+                if len(word) > 0 and re_word.search(word): 
                     if word in word_freq:
                         word_freq[word] += 1/total
                     else:
