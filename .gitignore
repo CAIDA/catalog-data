@@ -7,3 +7,4 @@ sources/*/*__pubdb.json
 id_word_score.json
 pubdb
 scripts/lib/__pycache__/
+.DS_Store
