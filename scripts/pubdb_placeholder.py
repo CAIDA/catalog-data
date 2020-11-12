@@ -107,6 +107,11 @@ def main():
                     obj["bibtexFields"][key_to] = obj[key_from]
                     del obj[key_from]
 
+            obj["resources"].append({
+                "name":"bibtex",
+                "url":"https://www.caida.org/publications/papers/"+obj["id"][:4]+"/"+obj["id"][5:]+"/bibtex.html"
+                })
+
         if "datePublished" in obj:
             obj["date"] = utils.date_parse(obj["datePublished"])
 
