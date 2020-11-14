@@ -564,12 +564,12 @@ def link_add(obj,info):
 
     if type(info) == str:
         to_original = info
-        to = utils.id_create(None,None,info)
+        to = utils.id_create(obj["filename"],None,info)
         info = { "to":to }
     else:
         if "to" in info:
             to_original = info["to"]
-            to = info["to"] = utils.id_create(None,None,info["to"])
+            to = info["to"] = utils.id_create(obj["filename"],None,info["to"])
         else:
             error_add(obj["filename"],"link has no to"+json.dumps(info))
             return None
