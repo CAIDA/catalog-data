@@ -564,7 +564,6 @@ def link_add(obj,info):
 
     if type(info) == str:
         to_original = info
-        print (info)
         to = utils.id_create(obj["filename"],None,info)
         info = { "to":to }
     else:

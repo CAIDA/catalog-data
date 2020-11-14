@@ -45,6 +45,7 @@ def main():
     if error:
         sys.exit(1)
 
+    print ("processing objects")
     for obj in objects:
         obj["tags"].append("caida")
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
@@ -106,6 +107,11 @@ def main():
                     obj["bibtexFields"][key_to] = obj[key_from]
                     del obj[key_from]
 
+            obj["resources"].append({
+                "name":"bibtex",
+                "url":"https://www.caida.org/publications/papers/"+obj["id"][:4]+"/"+obj["id"][5:]+"/bibtex.html"
+                })
+
         if "datePublished" in obj:
             obj["date"] = utils.date_parse(obj["datePublished"])
 
@@ -131,6 +137,7 @@ def key_to_key(obj,key_a,key_b):
         del obj[key_a]
 
 def load_ids(type_,filename):
+    print ("loading", filename)
     try:
         for obj in json.load(open(filename,"r")):
             obj["__typename"] = type_
