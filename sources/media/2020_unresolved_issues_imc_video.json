@@ -1,5 +1,5 @@
 {
-    "id": "2020_unresolved_issues_imc",
+    "id": "2020_unresolved_issues_imc_video",
     "name": "Unresolved Issues: Prevalence, Persistence, and Perils of Lame Delegations",
     "description": "",
     "tags": [
@@ -18,28 +18,14 @@
             "person": "person:Akiwate__Gautam"
         }
     ],
-    "links": [
-        {
-            "to": "paper:2020_unresolved_issues",
-            "url": "https://www.caida.org/publications/papers/2020/unresolved_issues/"
-        }
-    ],
-    "linkedObjects": "",
-    "__typename": "media",
-    "filename": "sources/media/2020_unresolved_issues_imc__pubdb.json",
-    "pubdb_id": "presentation589",
+    "links": ["to": "paper:2020_unresolved_issues","media:2020_unresolved_issues_imc"],
     "resources": [
         {
-            "name": "PDF",
-            "url": "https://www.caida.org/publications/presentations/2020/unresolved_issues_imc/unresolved_issues_imc.pdf",
-            "tags": []
-        },
-        {
-            "name": "Related Video",
+            "name": "Video",
             "url": "https://youtu.be/y9wRHyrpPbc",
-            "tags": []
+            "tags": ["video"]
         }
     ],
-    "type": "PRESENTATION",
+    "type": "VIDEO",
     "date": "2020.10"
 }
