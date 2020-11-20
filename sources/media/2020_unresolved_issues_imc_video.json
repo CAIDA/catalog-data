@@ -1,0 +1,45 @@
+{
+    "id": "2020_unresolved_issues_imc",
+    "name": "Unresolved Issues: Prevalence, Persistence, and Perils of Lame Delegations",
+    "description": "",
+    "tags": [
+        "dns",
+        "security",
+        "caida"
+    ],
+    "presenters": [
+        {
+            "organizations": [
+                "University of California, San Diego (UCSD)"
+            ],
+            "venue": "ACM Internet Measurement Conference (IMC)",
+            "date": "2020.10",
+            "url": "https://conferences.sigcomm.org/imc/2020/",
+            "person": "person:Akiwate__Gautam"
+        }
+    ],
+    "links": [
+        {
+            "to": "paper:2020_unresolved_issues",
+            "url": "https://www.caida.org/publications/papers/2020/unresolved_issues/"
+        }
+    ],
+    "linkedObjects": "",
+    "__typename": "media",
+    "filename": "sources/media/2020_unresolved_issues_imc__pubdb.json",
+    "pubdb_id": "presentation589",
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.caida.org/publications/presentations/2020/unresolved_issues_imc/unresolved_issues_imc.pdf",
+            "tags": []
+        },
+        {
+            "name": "Related Video",
+            "url": "https://youtu.be/y9wRHyrpPbc",
+            "tags": []
+        }
+    ],
+    "type": "PRESENTATION",
+    "date": "2020.10"
+}
