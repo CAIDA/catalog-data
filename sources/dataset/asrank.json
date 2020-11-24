@@ -11,25 +11,12 @@
     "status": "ongoing",
     "resources": [
         {
-            "name": "public",
-            "url": "http://www.caida.org/data/as-organizations/",
-            "tags": [
-                "file"
-            ]
+            "name":"API",
+            "url":"/details/software/asrank_api"
         }
     ],
-    "licenses": [
-        "license:bsd_4_clause_uc"
-    ],
+    "licenses": [ "caida-aua" ],
     "links": [
-        {
-            "to": "software:asrank_api"
-        },
-        {
-            "to": "software:asrank_ui"
-        },
-        {
-            "to": "dataset:asrank"
-        }
+        "software:asrank_api", "software:asrank_ui", "dataset:as_relationships", "dataset:as_organization"
     ]
 }
