@@ -18,7 +18,7 @@
             "person": "person:Akiwate__Gautam"
         }
     ],
-    "links": ["to": "paper:2020_unresolved_issues","media:2020_unresolved_issues_imc"],
+    "links": ["paper:2020_unresolved_issues","media:2020_unresolved_issues_imc"],
     "resources": [
         {
             "name": "Video",

@@ -176,10 +176,10 @@ def main():
                         obj = object_add(type_,info)
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
-                    except json.decoder.JSONDecodeError as e:
-                        print ("error",filename, e.toString())
-                    except ValueError as e:
-                        print (path+"/"+filename)
+                    except Exception as e:
+                        print ("\nerror",path+"/"+filename)
+                        print ("    ",e)
+                        sys.exit()
         else:
             obj = None
 
@@ -458,7 +458,7 @@ def object_finish(obj):
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
-                id_2 = utils.id_create(obj["filename"],None,id_);
+                id_2 = utils.id_create(obj["filename"],"license",id_);
                 if id_2 not in id_object:
                     name = id_[8:]
                     object_add("License", {
