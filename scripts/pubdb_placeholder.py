@@ -11,7 +11,7 @@ objects = []
 seen = set()
 name_id = {}
 
-re_ids_only = re.compile("^[a-z_\s:]+$")
+re_ids_only = re.compile("^[a-z_\s:\d]+$")
 re_whitespace = re.compile("\s+")
 
 def main():
@@ -116,7 +116,7 @@ def main():
             obj["date"] = utils.date_parse(obj["datePublished"])
 
         if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
-            linked = obj["linkedObjects"]
+            linked = obj["linkedObjects"].lower().strip()
             if re_ids_only.search(linked):
                 for to_id in re_whitespace.split(linked):
                     obj["links"].append(to_id)
