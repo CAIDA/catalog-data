@@ -1,0 +1,16 @@
+{
+    "id": "trace_stats",
+    "name": "Trace Statistics for CAIDA Passive OC48 and OC192 Traces",
+    "organization": "CAIDA",
+    "description": "Statistics for the 2002/2003 OC48 and the monthly OC192 traces can be found in the tables below. Additional information can be found on the Statistical information for the CAIDA Anonymized Internet Traces page. On the OC192 monitors an hour-long trace is recorded once a month, usually (but not always) on the third Thursday of each month between 13:00 UTC and 14:00 UTC.",
+    "tags": [
+        "ipv4",
+        "ipv6",
+        "packets"
+    ],
+    "dateStart": "2002.08",
+    "status": "ongoing",
+    "resources": [],
+    "licenses": [ "caida-aua" ],
+    "links": []
+}
