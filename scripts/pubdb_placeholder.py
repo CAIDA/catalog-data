@@ -50,7 +50,8 @@ def main():
         obj["tags"].append("caida")
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
-        obj["resources"] = []
+        resources_front = []
+        resources_back = []
         if "presenters" in obj:
             obj["type"] = "PRESENTATION"
             for info in obj["presenters"]:
@@ -89,11 +90,15 @@ def main():
                             "url":link["to"]
                         })
                 else:
-                    obj["resources"].append({
+                    resource = {
                         "name":link["label"],
                         "url":link["to"],
                         "tags":[]
-                    })
+                    }
+                    if re.search("^pdf$", resource["name"], re.IGNORECASE):
+                        resources_front.append(resource)
+                    else:
+                        resources_back.append(resource)
             obj["links"] = links
         if obj["__typename"] == "paper":
             obj["bibtexFields"] =  {}
@@ -107,10 +112,12 @@ def main():
                     obj["bibtexFields"][key_to] = obj[key_from]
                     del obj[key_from]
 
-            obj["resources"].append({
+            resources_front.append({
                 "name":"bibtex",
                 "url":"https://www.caida.org/publications/papers/"+obj["id"][:4]+"/"+obj["id"][5:]+"/bibtex.html"
                 })
+        resources_front.extend(resources_back);
+        obj["resources"] = resources_front
 
         if "datePublished" in obj:
             obj["date"] = utils.date_parse(obj["datePublished"])
