@@ -11,8 +11,12 @@
     "status": "ongoing",
     "resources": [
         {
-            "name":"API",
-            "url":"/details/software/asrank_api"
+            "name":"relationships",
+            "url":"https://www.caida.org/data/as-relationships/"
+        },
+        {
+            "name":"organizations",
+            "url":"https://www.caida.org/data/as-organizations/"
         }
     ],
     "licenses": [ "caida-aua" ],
