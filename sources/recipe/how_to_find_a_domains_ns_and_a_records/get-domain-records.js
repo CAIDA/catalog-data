@@ -1,4 +1,3 @@
-var apiKey = "3d96d7727879410498f037d10e64277d";
 // var apiKey = "YOUR_API_KEY_HERE";
 
 const fetch = require("node-fetch");
