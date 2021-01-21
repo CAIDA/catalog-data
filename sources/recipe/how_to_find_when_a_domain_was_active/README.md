@@ -58,7 +58,6 @@ const dns = (function(){
 This helper function can be used independently for making queries to the API, and simplifies the process of making queries, including the adding of a CORS proxy to the requests. 
 
 ~~~
-dns.useCorsProxy = false; // Flag to use CORS proxy for requests (defaults to true)
 dns.get('domains','google.com'); // Queries https://dns.coffee/api/domains/google.com
 dns.get('/domains/google.com'); // Also accepts the format of the link returned in api responses
 dns.get('zones','com');
