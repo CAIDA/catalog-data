@@ -1,23 +1,28 @@
+var apiKey = "YOUR_KEY_HERE";
+
+const fetch = require("node-fetch");
+
 const dns = (function(){
-    const corsProxy = "https://cors-anywhere.herokuapp.com";
-    const baseURL = "https://dns.coffee/api";
-    const getQueryUrl = (useCorsProxy, args)=>{
+    const baseURL = "https://api.dns.coffee/api/v0";
+    const getQueryUrl = (args)=>{
         const urlParts = [baseURL,...args]
-        if(useCorsProxy){
-            urlParts.unshift(corsProxy);
-        }
         return urlParts.join("/");
     }
     return {
         get(...args){
-            return fetch(getQueryUrl(this.useCorsProxy, args)).then((response)=>{
+            return fetch(getQueryUrl(args), {
+                method: 'GET',
+                headers: {
+                    "Accept": 'application/json',
+                    "X-API-Key": apiKey
+                }
+            }).then((response)=>{
                 if(response.ok){
                     return response.json().then((response)=>response.data);
                 }
                 throw Error("API Query Failed");
             });
         },
-        useCorsProxy:true
     }
 })();
 
@@ -25,7 +30,7 @@ const dns = (function(){
 function getDomainLastActive(domain){
     return dns.get("domains",domain).then((response)=>{
         // If no lastseen is set, domain is still active
-        return response.lastseen;
+        return response.last_seen;
     })    
 }
 

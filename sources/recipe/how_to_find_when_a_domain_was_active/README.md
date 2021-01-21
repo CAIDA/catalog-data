@@ -25,30 +25,32 @@
 The script makes queries to the dzdb api to determine if a domain is still active. The api response contains first-seen and last-seen timestamp properties to which can be used to determine when a domain was last found in a zone file.
 
 ## **<ins>Solution</ins>**
-The script relies on the below function to handle querying the dzdb api.
+The script relies on the below function to handle querying the dzdb api. The dzdb api requres an API key; contact research@dns.coffee to request a key.
 
 ~~~
-// Simplified API querying object
+var apiKey = "YOUR_KEY_HERE";
+
 const dns = (function(){
-    const corsProxy = "https://cors-anywhere.herokuapp.com";
-    const baseURL = "https://dns.coffee/api";
-    const getQueryUrl = (useCorsProxy, args)=>{
+    const baseURL = "https://api.dns.coffee/api/v0";
+    const getQueryUrl = (args)=>{
         const urlParts = [baseURL,...args]
-        if(useCorsProxy){
-            urlParts.unshift(corsProxy);
-        }
         return urlParts.join("/");
     }
     return {
         get(...args){
-            return fetch(getQueryUrl(this.useCorsProxy, args)).then((response)=>{
+            return fetch(getQueryUrl(args), {
+                method: 'GET',
+                headers: {
+                    "Accept": 'application/json',
+                    "X-API-Key": apiKey
+                }
+            }).then((response)=>{
                 if(response.ok){
                     return response.json().then((response)=>response.data);
                 }
                 throw Error("API Query Failed");
             });
         },
-        useCorsProxy:true
     }
 })();
 ~~~

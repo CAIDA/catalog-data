@@ -9,8 +9,8 @@
     ],
     "resources": [
         {
-            "name": "public",
-            "url": "https://dns.coffee/api/",
+            "name": "restricted",
+            "url": "https://api.dns.coffee/api/v0",
             "tags": [
                 "API"
             ]

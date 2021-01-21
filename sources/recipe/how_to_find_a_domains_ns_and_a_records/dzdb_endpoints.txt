@@ -1,0 +1,59 @@
+Auth
+- https://api.dns.coffee/doc/#/auth/auth_validate
+    - 
+
+Domains
+- https://api.dns.coffee/doc/#/domains/domain_info
+    - https://dns.coffee/domains/YLYOFB45N.COM
+- https://api.dns.coffee/doc/#/domains/domain_archive_nameservers
+    - https://dns.coffee/domains/YLYOFB45N.COM
+- https://api.dns.coffee/doc/#/domains/domain_current_nameservers
+    - https://dns.coffee/domains/YLYOFB45N.COM
+- https://api.dns.coffee/doc/#/domains/random_domain
+    - 
+
+Feeds
+- https://api.dns.coffee/doc/#/feeds/feeds_domains_moved
+    -
+- https://api.dns.coffee/doc/#/feeds/feeds_domains_new
+    -
+- https://api.dns.coffee/doc/#/feeds/feeds_domains_old
+    -
+- https://api.dns.coffee/doc/#/feeds/feeds_nameservers_moved
+    -
+- https://api.dns.coffee/doc/#/feeds/feeds_nameservers_new
+    -
+- https://api.dns.coffee/doc/#/feeds/feeds_nameservers_old
+    -
+
+IP
+- https://api.dns.coffee/doc/#/ip/ip_info
+    - https://dns.coffee/ip/127.0.0.1
+- https://api.dns.coffee/doc/#/ip/ip_archive_nameservers
+    - https://dns.coffee/ip/127.0.0.1
+- https://api.dns.coffee/doc/#/ip/ip_current_nameservers
+    - https://dns.coffee/ip/127.0.0.1
+
+Nameservers 
+- https://api.dns.coffee/doc/#/nameservers/nameserver_info
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_archive_domains
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_current_domains
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_archive_ipv4
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_current_ipv4
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_archive_ipv6
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+- https://api.dns.coffee/doc/#/nameservers/nameserver_current_ipv6
+    - https://dns.coffee/nameservers/NS1.EXAMPLE.COM
+
+Zones
+- https://api.dns.coffee/doc/#/zones/zone_info
+    - https://dns.coffee/zones/com
+- https://api.dns.coffee/doc/#/zones/zone_archive_nameservers
+    - https://dns.coffee/zones/com
+- https://api.dns.coffee/doc/#/zones/zone_current_nameservers
+    - https://dns.coffee/zones/com
