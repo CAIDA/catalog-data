@@ -1,5 +1,4 @@
-var apiKey = "3d96d7727879410498f037d10e64277d";
-// var apiKey = "YOUR_API_KEY_HERE";
+var apiKey = "YOUR_API_KEY_HERE";
 
 const fetch = require("node-fetch");
 
@@ -18,12 +17,28 @@ const dns = (function(){
                     "X-API-Key": apiKey
                 }
             }).then((response)=>{
-                if(response.ok){
-                    return response.json().then((response)=>response.data);
-                }
-                // console.log(response)
-                throw Error("API Query Failed");
-            });
+                const rootPromise = new Promise(async (rootResolve, rootReject) => {
+                    if(response.ok) {
+                        data =  response.json().then((response)=>response.data);
+                        rootResolve(data)
+                    } else if(response.status == '429') {
+                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after efaults to 2 seconds
+                        // Attempts to retry fetch after delay
+                        const promise = new Promise((resolve) => {
+                            setTimeout(function() {
+                                 data =  dns.get(args.join("/"))
+                                 resolve(data)
+                            }, delay)    
+                        }) 
+                        let responseData = await promise;
+                        rootResolve(responseData)
+                    } else {
+                        console.log(response)
+                        throw Error("API Query Failed");
+                    }
+                });
+                 return rootPromise; 
+            }) 
         },
     }
 })();
@@ -31,59 +46,48 @@ const dns = (function(){
 // Get all NS and A/AAAA data for a domain
 async function getDomainRecords(domain){
     const domainData = await dns.get(`domains/${domain}`);
-    const domainNameservers = await dns.get(`/domains/${domain}/nameservers/current`)
-    const nameservers = [];
+    const domainNameservers = await dns.get(`domains/${domain}/nameservers/current`)
+    const zone = await dns.get(`zones/${domainData.zone}`)
+    domainData.zone = zone
 
-    dns.get("zones", domainData.zone).then((zoneData) => {domainData.zone = zoneData})
 
     const nameserverPromises = domainNameservers.map((nameserver) => {
-        return dns.get(`/nameservers/${nameserver.name}`).then((nameserverData) => {
-            nameservers.push(nameserverData)  
-            // dns.get(`/nameservers/${nameserverData.name}/domains/current`).then((nameserverDomain) => {
-            //     nameserverData.domains = nameserverDomain
-            // })
+        return dns.get(`nameservers/${nameserver.name}`)
+        .then((nameserverData) => {
+            // Collect domain and ip data for each nameserver
+            let promise = new Promise(async (domainResolve) => {
+                getDomainData = async () => {
+                    const archive = await dns.get(`nameservers/${nameserverData.name}/domains/archive`)
+                    const current = await dns.get(`nameservers/${nameserverData.name}/domains/current`)
+                    const ipv4 = await dns.get(`nameservers/${nameserverData.name}/ipv4/current`)
+                    const ipv6 = await dns.get(`nameservers/${nameserverData.name}/ipv6/current`)
 
-        })
+                    nameserverData.archive_domains = archive
+                    nameserverData.domains = current
+                    nameserverData.ipv4 = ipv4
+                    nameserverData.ipv6 = ipv6 
+
+                    return nameserverData
+                }
+                data = await getDomainData()
+                domainResolve(data)
+            }).then((nameserverDomains) => {
+                if (!domainData.response) {
+                    domainData.response = []
+                }
+                domainData.response.push(nameserverDomains)
+            }); return promise
+        }) 
     })
 
 
-
     return Promise.all(nameserverPromises).then(() => {
-        domainData.response = nameservers
-    }).then(() => {
         return domainData
-    })    
+    })
 }
 
 async function run(){
-    const googleDomainRecords = await getDomainRecords("example.com");
+    const googleDomainRecords = await getDomainRecords("google.com");
     console.log(googleDomainRecords); 
 }
 run();
-
-
-
-// const nameserverPromises = []
-// const nameservers = []
-// const nameserverList = new Promise((resolve, reject) => {
-//     domainNameservers.forEach((nameserver)=>{
-//         nameserverPromises.push(dns.get(`/nameservers/${nameserver.name}`)
-//             .then((nameserverData)=>{
-//                 nameserver.response = nameserverData;
-//                 return nameserver
-//             }).then((nameserver) => {
-//                 nameservers.push(nameserver).then((nameservers) => {
-//                     resolve(nameservers)
-//                 })
-//             }).catch((error)=>{
-//                 nameserver.hazardous=true;
-//             }));
-//         })
-//     });
-
-// nameserverList.then((nameservers) => {
-//     domainData.nameservers = nameservers
-//     console.log(domainData)
-// })
-
-// return domainData;
