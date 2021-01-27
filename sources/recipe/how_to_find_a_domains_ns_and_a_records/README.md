@@ -125,7 +125,7 @@ const dns = (function(){
                     "X-API-Key": apiKey
                 }
             }).then((response)=>{
-                const rootPromise = new Promise(async (rootResolve, rootReject) => {
+                const rootPromise = new Promise(async (rootResolve) => {
                     if(response.ok) {
                         data =  response.json().then((response)=>response.data);
                         rootResolve(data)
