@@ -22,7 +22,7 @@ const dns = (function(){
                         data =  response.json().then((response)=>response.data);
                         rootResolve(data)
                     } else if(response.status == '429') {
-                        let delay = response.headers.get('retry-after')*1000 || 2000
+                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after efaults to 2 seconds
                         // Attempts to retry fetch after delay
                         const promise = new Promise((resolve) => {
                             setTimeout(function() {
@@ -71,11 +71,11 @@ async function getDomainRecords(domain){
                 data = await getDomainData()
                 domainResolve(data)
             }).then((nameserverDomains) => {
-                if (!domainData.response) {
-                    domainData.response = []
+                if (!domainData.nameservers) {
+                    domainData.nameservers = []
                 }
 
-                domainData.response.push(nameserverDomains)
+                domainData.nameservers.push(nameserverDomains)
 
             }); return promise
         }) 
@@ -88,7 +88,7 @@ async function getDomainRecords(domain){
 }
 
 async function run(){
-    const googleDomainRecords = await getDomainRecords("example.com");
+    const googleDomainRecords = await getDomainRecords("google.com");
     console.log(JSON.stringify(googleDomainRecords, null, 1)); 
 }
 run();
