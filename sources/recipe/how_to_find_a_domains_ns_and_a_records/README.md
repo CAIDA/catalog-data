@@ -14,7 +14,7 @@
     ],
     "authors":[
         {
-            "person": "person:pillai__vinay",
+            "person": ["person:pillai__vinay", "person:lee__nicole"],
             "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
         }
     ]
@@ -23,14 +23,14 @@
 
 ## **<ins>Introduction</ins>**
 
-The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DZDB API, which requres an API Key. You may request an API key by contacting research@dns.coffee. 
+The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DNS Coffee (DZDB) API, which requres an API Key. You may request an API key by contacting research@dns.coffee. 
 
 ## **<ins>Solution</ins>**
 The script will return a JavaScript object that contains the nameserver and domain responses for the queried domain. 
 
 ~~~javascript
     const googleDomainRecords = await getDomainRecords("google.com");
-    console.log(googleDomainRecords); 
+    console.log(JSON.stringify(googleDomainRecords, null, 2)); 
 ~~~
 
 For instance, the above code snippet will output the following object:
@@ -165,3 +165,5 @@ dns.get('zones','com');
 A DNS zone is a group of hostnames that is managed by a single individual or organization (Ex. The COM zone is the group of all .com domains).
 ### What is a zone file
 A zone file is a text file which contains the domain, nameserver, ip, and other relationships for the hostnames in a particular zone. DZDB tracks these relationships, and makes it possible to query for all the nameservers associated with a given domain, as well as all the ips associated with those nameservers.
+## Notes on DNS Coffee API
+The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by contacting research@dns.coffee. 
