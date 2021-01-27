@@ -74,14 +74,14 @@ For instance, the above code snippet will output the following object:
           "last_seen": "2021-01-25T00:00:00Z"
         },
         ...
-        ],
+      ],
      "domains": [
         {
           "name": "PRIVATEBROKE.COM",
           "first_seen": "2021-01-26T00:00:00Z"
         },
         ...
-        ],
+     ],
     "ipv4": [
         {
           "name": "216.239.36.10",
