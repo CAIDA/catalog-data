@@ -22,7 +22,7 @@ const dns = (function(){
                         data =  response.json().then((response)=>response.data);
                         rootResolve(data)
                     } else if(response.status == '429') {
-                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after efaults to 2 seconds
+                        let delay = response.headers.get('retry-after')*1000 || 2000
                         // Attempts to retry fetch after delay
                         const promise = new Promise((resolve) => {
                             setTimeout(function() {
