@@ -62,11 +62,10 @@ async function getDomainRecords(domain){
                     const ipv4 = await dns.get(`nameservers/${nameserverData.name}/ipv4/current`)
                     const ipv6 = await dns.get(`nameservers/${nameserverData.name}/ipv6/current`)
 
-                    nameserverData.archive_domains = archive
+                    nameserverData['archive_domains'] = archive
                     nameserverData.domains = current
                     nameserverData.ipv4 = ipv4
                     nameserverData.ipv6 = ipv6 
-
                     return nameserverData
                 }
                 data = await getDomainData()
@@ -75,7 +74,9 @@ async function getDomainRecords(domain){
                 if (!domainData.response) {
                     domainData.response = []
                 }
+
                 domainData.response.push(nameserverDomains)
+
             }); return promise
         }) 
     })
@@ -87,7 +88,7 @@ async function getDomainRecords(domain){
 }
 
 async function run(){
-    const googleDomainRecords = await getDomainRecords("google.com");
-    console.log(googleDomainRecords); 
+    const googleDomainRecords = await getDomainRecords("example.com");
+    console.log(JSON.stringify(googleDomainRecords, null, 1)); 
 }
 run();
