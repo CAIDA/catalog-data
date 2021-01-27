@@ -125,12 +125,28 @@ const dns = (function(){
                     "X-API-Key": apiKey
                 }
             }).then((response)=>{
-                if(response.ok){
-                    return response.json().then((response)=>response.data);
-                }
-                // console.log(response)
-                throw Error("API Query Failed");
-            });
+                const rootPromise = new Promise(async (rootResolve, rootReject) => {
+                    if(response.ok) {
+                        data =  response.json().then((response)=>response.data);
+                        rootResolve(data)
+                    } else if(response.status == '429') { // case if rate-limit is reached
+                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after defaults to 2 seconds
+                        // Attempts to retry fetch after delay
+                        const promise = new Promise((resolve) => {
+                            setTimeout(function() {
+                                 data =  dns.get(args.join("/"))
+                                 resolve(data)
+                            }, delay)    
+                        }) 
+                        let responseData = await promise;
+                        rootResolve(responseData)
+                    } else {
+                        console.log(response)
+                        throw Error("API Query Failed");
+                    }
+                });
+                 return rootPromise; 
+            }) 
         },
     }
 })();
