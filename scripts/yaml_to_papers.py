@@ -114,10 +114,10 @@ def main(argv):
 
     data_papers = args.data_papers
 
-    # Update seen_papers with papers currently in catalog-data/sources/paper/
+    # Update seen_papers with papers currently in sources/paper/
     update_seen_papers()
 
-    # Update seen_authors with all authors found in catalog-data/sources/person/
+    # Update seen_authors with all authors found in sources/person/
     update_seen_authors()
 
     # Parse data_papers and create a new file for each paper.
@@ -159,7 +159,7 @@ def update_seen_authors():
         authors[author_name] = data
 
 
-# Opens a give .graph-info file and sends each line to a helper method.
+# Opens a give .yaml file and parses each paper listed between delimeters.
 def parse_data_papers():
     global re_yml
     global data_papers
@@ -207,6 +207,8 @@ def parse_data_papers():
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
 def parse_paper(curr_paper):
+    global authors
+
     # Dictionary that will be printed as a JSON.
     paper = {}
 
@@ -217,28 +219,48 @@ def parse_paper(curr_paper):
     for line in curr_paper:
         # Split the current line between the TOPKEY, and its value.
         line = line.split(":")
-        line[1] = line[1].strip()
+
+        # Edge Case: Skip empty lines.
+        if len(line) <= 0:
+            continue
 
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
             paper["id"] = line[1].replace('"',"")
                     
         elif "TYPE" in line[0]:
-            # Unsure what to do for this TOPKEY
+            # TODO: Unsure what to do for this TOPKEY
             pass
 
         elif "AUTHOR" in line[0]:
-            authors = line[1].replace('"',"").split(";")
-
             # Create a list of authors.
-            if "authors" not in curr_paper:
+            if "authors" not in paper:
                 paper["authors"] = []
+
+            # Handle the two seperate ways that authors can be stored.
+            authors = line[1].replace('"',"")
+
+            # Author's are either split by semicolon, or last name initial.
+            if ";" in line[1]:
+                authors = authors.split(";")
+            else:
+                authors = authors.split(".,")
 
             # Iterate over each author and add there an object for them.
             for author in authors:
-                author = author.split(",")
-                author = "person:{}_{}".format(author[0], author[1])
-                paper["authors"].append({"person":author})
+                author = author.strip()
+                author = re.split(r"\W+", author)
+                
+                # Format author's name into ID format.
+                author_id = ""
+                for name_part in author:
+                    if len(name_part) >= 1:
+                        author_id += "{}__".format(name_part)
+                author_id = author_id[:-2]
+
+                paper["authors"].append({
+                    "person":"person:{}".format(author_id)
+                })
                     
         elif "GEOLOC" in line[0]:
             locations = line[1].replace('"',"").split(";")
