@@ -74,19 +74,131 @@ topkeys = {
     "URL",
     "ABS",
     "PLACE",
-    "PUBLISH"
+    "PUBLISH",
+    "REMARK"
 }
 type_2_bibtex = {
     "in_proceedings":"INPROCEEDINGS",   # Workshops, conference proceedings.
     "in_journal":"ARTICLE",             # Official published journal, magazine article.
     "online":"?",                       # Online publication (e.g. arxiv, preprint).
     "tech. report":"TECHREPORT",        # Technical reports.
+    "tech report":"TECHREPORT",
+    "tech_report":"TECHREPORT",
     "in_book":"?",                      # Chapter in a book.
     "BSc thesis":"?",                   # Not so common, bachelors thesis.
+    "BA thesis":"?",
     "MSc thesis":"?",                   # Masters thesis.
     "!PhD thesis":"PHDTHESIS",          # PhD thesis.
+    "PhD thesis":"PHDTHESIS",
     "class report":"?",                 # Not so common.
-    "presentation":"?"                  # Not so common.
+    "presentation":"?",                 # Not so common.
+    "patent":"?"
+}
+topkey_2_dataset = {
+  # "Anonymized Internet Traces -> traces"
+  "passive-stats"                     : "passive-metadata",
+  "passive-realtime"                  : "?",
+  "passive-generic"                   : "?",
+  "passive-ipv6day-and-ipv6launch"    : "passive-ipv6launch-pcap",
+  "passive-oc48"                      : "passive-oc48-pcap",
+  "passive-2007"                      : "passive-2007-pcap",
+  "passive-2008"                      : "passive-2008-pcap",
+  "passive_2008"                      : "passive-2008-pcap",
+  "passive-2009"                      : "passive-2009-pcap",
+  "passive-2010"                      : "passive-2010-pcap",
+  "passive-2011"                      : "passive-2011-pcap",
+  "passive-2012"                      : "passive-2012-pcap",
+  "passive-2013"                      : "passive-2013-pcap",
+  "passive-2014"                      : "passive-2014-pcap",
+  "passive_2014"                      : "passive-2014-pcap",
+  "passive-2015"                      : "passive-2015-pcap",
+  "passive-2016"                      : "passive-2016-pcap",
+  "passive-2017"                      : "passive-2017-pcap",
+  "passive-2018"                      : "passive-2018-pcap",
+  "passive-2019"                      : "passive-2019-pcap",
+
+  # "Topology with Archipelago -> ark"
+  "topology-generic"                  : "?",
+  "topology-ark-ipv4-traceroute"      : "ipv4_routed_24_topology",
+  "topology-ark-ipv6-traceroute"      : "ipv6_allpref_topology",
+  "topology-ark-itdk"                 : "internet-topology-data-kit",
+  "topology-itdk"                     : "internet-topology-data-kit",
+  "topology-ark-ipv4-prefix-probing"  : "ipv4_prefix_probing_dataset",
+  "topology-ark-ipv4-aslinks"         : "ipv4_routed_topology_aslinks",
+  "topology-ark-ipv6-aslinks"         : "ipv6_aslinks",
+  "topology-ark-ipv6-routed48"        : "ipv6_allpref_topology",
+  "topology-ark-ipv6_traceroute"      : "ipv6_allpref_topology",
+  "topology-ark-dnsnames"             : ["ipv4_dnsnames","ipv6_dnsnames"],
+  "topology-ark-dns-names"            : ["ipv4_dnsnames","ipv6_dnsnames"], 
+  "topology-ark-tod"                  : "?",
+  "topology-ark-activity"             : "?",
+  "topology-ark-vela"                 : "tool-vela",
+
+  # "Topology with Skitter -> skitter"
+  "topology-skitter-ipv4"             : "skitter-traceroute",
+  "topology-skitter-itdk"             : "skitter_internet_topology_data_kit",
+  "toplogoy-skitter-itdk"             : "skitter_internet_topology_data_kit",
+  "topology-skitter-aslinks"          : "skitter_aslinks_dataset",
+  "topology-skitter-rlinks"           : "skitter_macroscopic_topology_data",
+  "skitter-router-adjacencies"        : "skitter_router_level_topology_measurements",
+
+  # "Topology with BGP -> bgp"
+  "topology-as-relationships"         : "as_relationships",
+  "topology-as-classification"        : "as_classification",
+  "topology-as-organization"          : "as_organization",
+  "topology-as-organizations"         : "as_organization",
+  "as-organizations"                  : "as_organization",
+  "topology-as-rank"                  : "asrank",
+  "routeviews-generic"                : "?",
+  "routeviews-prefix2as"              : "as-prefix",
+  "topology-prefix2as"                : "as-prefix",
+  "topology-routeviews-prefix2as"     : "as-prefix",
+
+  # "UCSD Network Telescope -> telescope"
+  "telescope-generic"                 : "ucsd_network_telescope",
+  "telescope-2days-2008"              : "telescope-anon-twodays",
+  "telescope-3days-conficker"         : "telescope-anon-conficker",
+  "telescope-sipscan"                 : "telescope-sipsc",
+  "telescope-patch-tuesday"           : "corsaro-patch-tuesday",
+  "telescope-educational"             : "telescope-educational",
+  "telescope-real-time"               : "ucsd_network_telescope",
+  "backscatter-generic"               : "?",
+  "backscatter-tocs"                  : "backscatter-tocs-originals",
+  "backscatter-2004-2005"             : "telescope-backscatter",
+  "backscatter-2006"                  : "telescope-backscatter",
+  "backscatter-2007"                  : "telescope-backscatter",
+  "backscatter-2008"                  : "telescope-backscatter",
+  "backscatter-2009"                  : "telescope-backscatter",
+  "witty worm"                        : "telescope-witty-worm",
+  "code-red worm"                     : "telescope-codered-worm",
+
+  # "Denial of Service Attacks -> ddos"
+  "ddos-generic"                      : "?",
+  "ddos-20070804"                     : "ddos-attack-2007",
+  "ddos-20070806"                     : "ddos-attack-2007",
+
+  # "Other Datasets -> other"
+  "dns-rtt-generic"                   : "?",
+  "dns-root-gtld-rtt"                 : "dns-root-gtld-rtt",
+  "peeringdb"                         : "peeringdb_archive",
+  "ixps"                              : "ixps",
+
+  # "Paper Data and Tools -> paper"
+  "complex_as_relationships"          : "2014-complex-data-supplement",
+  "2006-pam-as-taxonomy"              : "2006-pam-as-taxonomy",
+  "2016-periscope"                    : "?",
+  "2013-midar"                        : "ark-midar",
+
+  # Software
+  "bgpstream"                         : "software:bgpstream",
+  "scamper"                           : "software:scamper",
+  "iffinder"                          : "software:iffinder",
+  "mapnet"                            : "software:mapnet",  # TODO: Add software
+  "coralreef"                         : "software:coralreef",
+  "datcat"                            : "software:datcat", # TODO: Add software
+  "dolphin"                           : "software:dolphin", # TODO: Add software
+  "asfinder"                          : "software:asfinder",# TODO: Add software
+  "netgeo"                            : "software:netgeo" # TODO: Add software
 }
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
@@ -101,7 +213,11 @@ def main(argv):
     global seen_papers
     global seen_authors
     global author_data
+    global topkeys
+    global topkey_2_dataset
     global re_yml
+    global re_jsn
+    global re_pbd
     global data_papers
 
     parser = argparse.ArgumentParser()
@@ -212,8 +328,8 @@ def parse_paper(curr_paper):
 
     # Dictionary that will be printed as a JSON.
     paper = {
-        "__typename":"paper"
-        "bibtexFields":{}
+        "__typename":"paper",
+        "bibtextFields":{}
     }
 
     # Split the current paper into each line.
@@ -233,7 +349,7 @@ def parse_paper(curr_paper):
             paper["id"] = line[1].replace('"',"")
                     
         elif "TYPE" in line[0]:
-            type = line[1].replace('"',"")
+            type = line[1].replace('"',"").strip()
             paper["bibtextFields"]["type"] = type_2_bibtex[type]
 
         elif "AUTHOR" in line[0]:
@@ -293,13 +409,39 @@ def parse_paper(curr_paper):
             paper["date"] = date
         
         elif "TOPKEY" in line[0]:
-            # TODO:
-            pass
+            datasets = line[1].replace('"',"").split(",")
+            # Edge Case: Add list for links if missing.
+            if "links" not in paper:
+                paper["links"] = []
+            
+            # Iterate over each dataset and link them to catalog datasets.
+            for dataset in datasets:
+                # Remove any whitespace.
+                dataset = dataset.strip().lower()
+
+                # Map the topkey_dataset to a catalog-data dataset.
+                try:
+                    dataset = topkey_2_dataset[dataset]
+                except:
+                    if len(dataset) == 0:
+                        continue
+                    dataset = topkey_2_dataset[dataset.replace(" ", "-")]
+
+                # Append link to the dataset.
+                if "software:" in dataset:
+                    paper["links"].append({
+                        "to":"{}".format(dataset)
+                    })
+                else:
+                    paper["links"].append({
+                        "to":"dataset:{}".format(dataset)
+                    })
+
 
         elif "SERIAL" in line[0]:
             publisher = line[1].replace('"',"") 
             paper["publisher"] = publisher
-            paper["bibtexFields"]["journal"] = publisher
+            paper["bibtextFields"]["journal"] = publisher
 
         elif "VOLUME" in line[0]:
             # TODO:
@@ -337,7 +479,11 @@ def parse_paper(curr_paper):
             pass
 
         elif "PUBLISH" in line[0]:
-            paper["bibtexFields"]["institutions"] = line[1].replace('"',"")
+            paper["bibtextFields"]["institutions"] = line[1].replace('"',"")
+        
+        elif "REMARK" in line[0]:
+            # TODO:
+            pass
 
 
 # Helper function to update author_data.
