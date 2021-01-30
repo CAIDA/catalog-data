@@ -433,10 +433,16 @@ def parse_paper(curr_paper):
                         "to":"{}".format(dataset)
                     })
                 else:
-                    paper["links"].append({
-                        "to":"dataset:{}".format(dataset)
-                    })
-
+                    # Edge Case: Handles datasets that are mapped to lists.
+                    if isinstance(dataset, list):
+                        for data in dataset:
+                            paper["links"].append({
+                                "to":"dataset:{}".format(dataset)
+                            })
+                    else:
+                        paper["links"].append({
+                            "to":"dataset:{}".format(dataset)
+                        })
 
         elif "SERIAL" in line[0]:
             publisher = line[1].replace('"',"") 
