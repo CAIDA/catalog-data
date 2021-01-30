@@ -44,7 +44,6 @@ __email__ = "dwolfson@zeus.caida.org"
 
 import argparse
 import json
-import bz2
 import sys
 import re
 import os
@@ -53,6 +52,8 @@ import os
 
 # Datasets
 seen_papers = set()     # Will hold all found paper IDs.
+seen_authors = set()    # Will hold all found author IDs.
+authors = {}            # Will map all authors IDs to their JSON.
 
 # Definitions
 topkeys = {
@@ -98,6 +99,8 @@ data_papers = None
 
 def main(argv):
     global seen_papers
+    global seen_authors
+    global authors
     global re_yml
     global data_papers
 
@@ -113,6 +116,9 @@ def main(argv):
 
     # Update seen_papers with papers currently in catalog-data/sources/paper/
     update_seen_papers()
+
+    # Update seen_authors with all authors found in catalog-data/sources/person/
+    update_seen_authors()
 
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
@@ -130,6 +136,27 @@ def update_seen_papers():
 
         file = file.split("__")[0]
         seen_papers.add(file)
+
+
+# Add each author's ID to seen_authors, and their JSON data to authors.
+def update_seen_authors():
+    global seen_authors
+    global authors
+
+    for file in os.listdir("sources/person"):
+        # Edge Case: Skip if file is not .json.
+        if not re_jsn.search(file):
+            continue
+
+        # Open the file and save its data.
+        file = "sources/person/{}".format(file)
+        with open(file, "r") as opened_file:
+            data = json.load(opened_file)
+        
+        # Store the author's data.
+        author_name = data["id"].split(":")[1]
+        seen_authors.add(author_name)
+        authors[author_name] = data
 
 
 # Opens a give .graph-info file and sends each line to a helper method.
@@ -196,11 +223,11 @@ def parse_paper(curr_paper):
         if "MARKER" in line[0]:
             paper["id"] = line[1].replace('"',"")
                     
-        else if "TYPE" in line[0]:
+        elif "TYPE" in line[0]:
             # Unsure what to do for this TOPKEY
             pass
 
-        else if "AUTHOR" in line[0]:
+        elif "AUTHOR" in line[0]:
             authors = line[1].replace('"',"").split(";")
 
             # Create a list of authors.
@@ -213,69 +240,69 @@ def parse_paper(curr_paper):
                 author = "person:{}_{}".format(author[0], author[1])
                 paper["authors"].append({"person":author})
                     
-        else if "GEOLOC" in line[0]:
+        elif "GEOLOC" in line[0]:
             locations = line[1].replace('"',"").split(";")
 
-            # Edge Case: If only one lacation given, set all authors location.
-            if len(location) == 1:
+            # Edge Case: If only one location given, set all authors location.
+            if len(locations) == 1:
                 for author in paper["authors"]:
-                    author["organizations"] = [ location[0] ]
+                    author["organizations"] = [ locations[0] ]
             else:
                 for location, author in zip(locations, paper["authors"]):
                     if not "organizations" in author:
-                        author["organizations"] = [ location ]
+                        author["organizations"] = [ locations ]
 
-        else if "TITLE" in line[0]:
+        elif "TITLE" in line[0]:
             paper["name"] = line[1].replace('"',"")
 
-        else if "YEAR" in line[0]:
+        elif "YEAR" in line[0]:
             paper["datePublished"] = line[1].replace('"',"")
         
-        else if "TOPKEY" in line[0]:
+        elif "TOPKEY" in line[0]:
             # TODO:
             pass
 
-        else if "SERIAL" in line[0]:
+        elif "SERIAL" in line[0]:
             # TODO:
             pass
 
-        else if "VOLUME" in line[0]:
+        elif "VOLUME" in line[0]:
             # TODO:
             pass
         
-        else if "CHAPTER" in line[0]:
+        elif "CHAPTER" in line[0]:
             # TODO:
             pass
 
-        else if "ARTICLE" in line[0]:
+        elif "ARTICLE" in line[0]:
             # TODO:
             pass
 
-        else if "PAGE" in line[0]:
+        elif "PAGE" in line[0]:
             # TODO:
             pass
 
-        else if "CTITLE" in line[0]:
+        elif "CTITLE" in line[0]:
             # TODO:
             pass
 
-        else if "DOI" in line[0]:
+        elif "DOI" in line[0]:
             # TODO:
             pass
 
-        else if "URL" in line[0]:
+        elif "URL" in line[0]:
             # TODO:
             pass
 
-        else if "ABS" in line[0]:
+        elif "ABS" in line[0]:
             # TODO:
             pass
 
-        else if "PLACE" in line[0]:
+        elif "PLACE" in line[0]:
             # TODO:
             pass
 
-        else if "PUBLISH" in line[0]:
+        elif "PUBLISH" in line[0]:
             # TODO:
             pass
 
