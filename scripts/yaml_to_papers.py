@@ -53,7 +53,7 @@ import os
 # Datasets
 seen_papers = set()     # Will hold all found paper IDs.
 seen_authors = set()    # Will hold all found author IDs.
-authors = {}            # Will map all authors IDs to their JSON.
+author_data = {}            # Will map all authors IDs to their JSON.
 
 # Definitions
 topkeys = {
@@ -100,7 +100,7 @@ data_papers = None
 def main(argv):
     global seen_papers
     global seen_authors
-    global authors
+    global author_data
     global re_yml
     global data_papers
 
@@ -138,10 +138,10 @@ def update_seen_papers():
         seen_papers.add(file)
 
 
-# Add each author's ID to seen_authors, and their JSON data to authors.
+# Add each author's ID to seen_authors, and their JSON data to author_data.
 def update_seen_authors():
     global seen_authors
-    global authors
+    global author_data
 
     for file in os.listdir("sources/person"):
         # Edge Case: Skip if file is not .json.
@@ -156,7 +156,7 @@ def update_seen_authors():
         # Store the author's data.
         author_name = data["id"].split(":")[1]
         seen_authors.add(author_name)
-        authors[author_name] = data
+        author_data[author_name] = data
 
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
@@ -207,7 +207,7 @@ def parse_data_papers():
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
 def parse_paper(curr_paper):
-    global authors
+    global author_data
 
     # Dictionary that will be printed as a JSON.
     paper = {}
@@ -265,14 +265,19 @@ def parse_paper(curr_paper):
         elif "GEOLOC" in line[0]:
             locations = line[1].replace('"',"").split(";")
 
-            # Edge Case: If only one location given, set all authors location.
-            if len(locations) == 1:
+            # Edge Case: Apply the single location to all authors.
+            if len(locations) != len(paper["authors"]):
                 for author in paper["authors"]:
-                    author["organizations"] = [ locations[0] ]
-            else:
-                for location, author in zip(locations, paper["authors"]):
-                    if not "organizations" in author:
-                        author["organizations"] = [ locations ]
+                    author_id = author["person"].split(":")[1]
+                    author_orgs = update_author_data(author_id, locations[0])
+                    author["oganizations"] = author_orgs
+                continue
+            
+            # Iterate over each location and author object.
+            for location, author in zip(locations, paper["authors"]):
+                author_id = author["person"].split(":")[1]
+                author_orgs = update_author_data(author_id, location)
+                author["oganizations"] = author_orgs
 
         elif "TITLE" in line[0]:
             paper["name"] = line[1].replace('"',"")
@@ -328,6 +333,40 @@ def parse_paper(curr_paper):
             # TODO:
             pass
 
+
+# Helper function to update author_data.
+#   @input author_id: The formatted ID for the current author.
+#   @input location: The organization that will be added.
+#   @return author_orgs: The list of this author's organizations.
+def update_author_data(author_id, organization):
+    global author_data
+
+    # Add author from author_data, else the current location.
+    if author_id in author_data and"organization" in author_data[author_id]:
+        # Edge Case: Add the current or to org if missing.
+        if organization not in author_data[author_id]["organization"]:
+            author_obj = author_data[author_id]
+            author_obj["organization"].append(organization)
+    else:
+        # Add the author to author_data
+        name = author_id.split("__")
+        first_name = name[-1]
+        last_name = " ".join(map(str, name[:-1]))
+        file_path = "sources/person/{}.json".format(author_id)
+
+        # Add the author object to the author_data.
+        author_data[author_id] = {
+            "id":"person:{}".format(author_id),
+            "__typename":"person",
+            "filename":file_path,
+            "nameLast":first_name,
+            "nameFirst":last_name,
+            "organization":[
+                organization
+            ]
+        }
+        author_orgs = author_data[author_id]["organization"]
+        return author_orgs
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
