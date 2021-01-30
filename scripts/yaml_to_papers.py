@@ -76,17 +76,17 @@ topkeys = {
     "PLACE",
     "PUBLISH"
 }
-type_2_value = {
-    "in_proceedings",   # Workshops, conference proceedings.
-    "in_journal",       # Official published journal, magazine article.
-    "online",           # Online publication (e.g. arxiv, preprint).
-    "tech. report",     # Technical reports.
-    "in_book",          # Chapter in a book.
-    "BSc thesis",       # Not so common, bachelors thesis.
-    "MSc thesis",       # Masters thesis.
-    "!PhD thesis",      # PhD thesis.
-    "class report",     # Not so common.
-    "presentation"      # Not so common.
+type_2_bibtex = {
+    "in_proceedings":"INPROCEEDINGS",   # Workshops, conference proceedings.
+    "in_journal":"ARTICLE",             # Official published journal, magazine article.
+    "online":"?",                       # Online publication (e.g. arxiv, preprint).
+    "tech. report":"TECHREPORT",        # Technical reports.
+    "in_book":"?",                      # Chapter in a book.
+    "BSc thesis":"?",                   # Not so common, bachelors thesis.
+    "MSc thesis":"?",                   # Masters thesis.
+    "!PhD thesis":"PHDTHESIS",          # PhD thesis.
+    "class report":"?",                 # Not so common.
+    "presentation":"?"                  # Not so common.
 }
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
@@ -208,9 +208,13 @@ def parse_data_papers():
 # Pull out all necessary meta data from the given paper and print a JSON file.
 def parse_paper(curr_paper):
     global author_data
+    global type_2_bibtex
 
     # Dictionary that will be printed as a JSON.
-    paper = {}
+    paper = {
+        "__typename":"paper"
+        "bibtexFields":{}
+    }
 
     # Split the current paper into each line.
     curr_paper = curr_paper.split("\n")
@@ -229,8 +233,8 @@ def parse_paper(curr_paper):
             paper["id"] = line[1].replace('"',"")
                     
         elif "TYPE" in line[0]:
-            # TODO: Unsure what to do for this TOPKEY
-            pass
+            type = line[1].replace('"',"")
+            paper["bibtextFields"]["type"] = type_2_bibtex[type]
 
         elif "AUTHOR" in line[0]:
             # Create a list of authors.
@@ -280,18 +284,22 @@ def parse_paper(curr_paper):
                 author["oganizations"] = author_orgs
 
         elif "TITLE" in line[0]:
-            paper["name"] = line[1].replace('"',"")
+            title = line[1].replace('"',"")
+            paper["name"] = title
 
         elif "YEAR" in line[0]:
-            paper["datePublished"] = line[1].replace('"',"")
+            date = line[1].replace('"',"").replace("-",".")
+            paper["datePublished"] = date
+            paper["date"] = date
         
         elif "TOPKEY" in line[0]:
             # TODO:
             pass
 
         elif "SERIAL" in line[0]:
-            # TODO:
-            pass
+            publisher = line[1].replace('"',"") 
+            paper["publisher"] = publisher
+            paper["bibtexFields"]["journal"] = publisher
 
         elif "VOLUME" in line[0]:
             # TODO:
@@ -322,16 +330,14 @@ def parse_paper(curr_paper):
             pass
 
         elif "ABS" in line[0]:
-            # TODO:
-            pass
+           paper["description"] = line[1].replace('"',"")
 
         elif "PLACE" in line[0]:
             # TODO:
             pass
 
         elif "PUBLISH" in line[0]:
-            # TODO:
-            pass
+            paper["bibtexFields"]["institutions"] = line[1].replace('"',"")
 
 
 # Helper function to update author_data.
