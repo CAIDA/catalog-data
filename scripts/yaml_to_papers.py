@@ -329,7 +329,8 @@ def parse_paper(curr_paper):
     # Dictionary that will be printed as a JSON.
     paper = {
         "__typename":"paper",
-        "bibtextFields":{}
+        "bibtextFields":{},
+        "resources":[]
     }
 
     # Split the current paper into each line.
@@ -339,6 +340,7 @@ def parse_paper(curr_paper):
     for line in curr_paper:
         # Split the current line between the TOPKEY, and its value.
         line = line.split(":")
+        line[1] = line[1].replace('"',"").strip()
 
         # Edge Case: Skip empty lines.
         if len(line) <= 0:
@@ -346,10 +348,10 @@ def parse_paper(curr_paper):
 
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
-            paper["id"] = line[1].replace('"',"")
+            paper["id"] = line[1]
                     
         elif "TYPE" in line[0]:
-            type = line[1].replace('"',"").strip()
+            type = line[1]
             paper["bibtextFields"]["type"] = type_2_bibtex[type]
 
         elif "AUTHOR" in line[0]:
@@ -358,7 +360,7 @@ def parse_paper(curr_paper):
                 paper["authors"] = []
 
             # Handle the two seperate ways that authors can be stored.
-            authors = line[1].replace('"',"")
+            authors = line[1]
 
             # Author's are either split by semicolon, or last name initial.
             if ";" in line[1]:
@@ -383,7 +385,7 @@ def parse_paper(curr_paper):
                 })
                     
         elif "GEOLOC" in line[0]:
-            locations = line[1].replace('"',"").split(";")
+            locations = line[1].split(";")
 
             # Edge Case: Apply the single location to all authors.
             if len(locations) != len(paper["authors"]):
@@ -400,16 +402,16 @@ def parse_paper(curr_paper):
                 author["oganizations"] = author_orgs
 
         elif "TITLE" in line[0]:
-            title = line[1].replace('"',"")
+            title = line[1]
             paper["name"] = title
 
         elif "YEAR" in line[0]:
-            date = line[1].replace('"',"").replace("-",".")
+            date = line[1].replace("-",".")
             paper["datePublished"] = date
             paper["date"] = date
         
         elif "TOPKEY" in line[0]:
-            datasets = line[1].replace('"',"").split(",")
+            datasets = line[1].split(",")
             # Edge Case: Add list for links if missing.
             if "links" not in paper:
                 paper["links"] = []
@@ -445,37 +447,50 @@ def parse_paper(curr_paper):
                         })
 
         elif "SERIAL" in line[0]:
-            publisher = line[1].replace('"',"") 
+            publisher = line[1]
             paper["publisher"] = publisher
             paper["bibtextFields"]["journal"] = publisher
 
         elif "VOLUME" in line[0]:
-            # TODO:
-            pass
+            volume = line[1]
+            paper["bibtextFields"]["volume"] = volume
         
         elif "CHAPTER" in line[0]:
-            # TODO:
+            # TODO: Unknown what to put for this.
             pass
 
         elif "ARTICLE" in line[0]:
-            # TODO:
+            # TODO: Unknow what to put for this.
             pass
 
         elif "PAGE" in line[0]:
-            # TODO:
-            pass
+            pages = line[1]
+            paper["pages"] = pages
+            paper["bibtextFields"]["pages"] = pages
 
         elif "CTITLE" in line[0]:
-            # TODO:
-            pass
+            conference_title = line[1] 
+            paper["publisher"] = conference_title
+            paper["bibtextFields"]["bookTitle"] = conference_title
 
         elif "DOI" in line[0]:
-            # TODO:
-            pass
+            doi = line[1]
+            
+            # Edge Case: Handle DOI's that aren't URLs.
+            if "https://dl.acm.org/doi/" not in doi:
+                doi = "https://dl.acm.org/doi/{}".format(doi)
+            
+            paper["resources"].append({
+                "name":"DOI",
+                "url":doi
+            })
 
         elif "URL" in line[0]:
-            # TODO:
-            pass
+            url = line[1]
+            paper["resources"].append({
+                "name":"URL",
+                "url":url
+            })
 
         elif "ABS" in line[0]:
            paper["description"] = line[1].replace('"',"")
