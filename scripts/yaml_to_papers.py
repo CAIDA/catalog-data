@@ -43,6 +43,7 @@ __email__ = "dwolfson@zeus.caida.org"
 ################################## Imports #####################################
 
 import argparse
+import difflib
 import json
 import sys
 import re
@@ -104,14 +105,12 @@ topkey_2_dataset = {
   "passive-oc48"                      : "passive-oc48-pcap",
   "passive-2007"                      : "passive-2007-pcap",
   "passive-2008"                      : "passive-2008-pcap",
-  "passive_2008"                      : "passive-2008-pcap",
   "passive-2009"                      : "passive-2009-pcap",
   "passive-2010"                      : "passive-2010-pcap",
   "passive-2011"                      : "passive-2011-pcap",
   "passive-2012"                      : "passive-2012-pcap",
   "passive-2013"                      : "passive-2013-pcap",
   "passive-2014"                      : "passive-2014-pcap",
-  "passive_2014"                      : "passive-2014-pcap",
   "passive-2015"                      : "passive-2015-pcap",
   "passive-2016"                      : "passive-2016-pcap",
   "passive-2017"                      : "passive-2017-pcap",
@@ -138,7 +137,6 @@ topkey_2_dataset = {
   # "Topology with Skitter -> skitter"
   "topology-skitter-ipv4"             : "skitter-traceroute",
   "topology-skitter-itdk"             : "skitter_internet_topology_data_kit",
-  "toplogoy-skitter-itdk"             : "skitter_internet_topology_data_kit",
   "topology-skitter-aslinks"          : "skitter_aslinks_dataset",
   "topology-skitter-rlinks"           : "skitter_macroscopic_topology_data",
   "skitter-router-adjacencies"        : "skitter_router_level_topology_measurements",
@@ -147,13 +145,10 @@ topkey_2_dataset = {
   "topology-as-relationships"         : "as_relationships",
   "topology-as-classification"        : "as_classification",
   "topology-as-organization"          : "as_organization",
-  "topology-as-organizations"         : "as_organization",
   "as-organizations"                  : "as_organization",
   "topology-as-rank"                  : "asrank",
   "routeviews-generic"                : "?",
   "routeviews-prefix2as"              : "as-prefix",
-  "topology-prefix2as"                : "as-prefix",
-  "topology-routeviews-prefix2as"     : "as-prefix",
 
   # "UCSD Network Telescope -> telescope"
   "telescope-generic"                 : "ucsd_network_telescope",
@@ -183,6 +178,7 @@ topkey_2_dataset = {
   "dns-root-gtld-rtt"                 : "dns-root-gtld-rtt",
   "peeringdb"                         : "peeringdb_archive",
   "ixps"                              : "ixps",
+  "spoofer"                           : "spoofer",
 
   # "Paper Data and Tools -> paper"
   "complex_as_relationships"          : "2014-complex-data-supplement",
@@ -199,7 +195,8 @@ topkey_2_dataset = {
   "datcat"                            : "software:datcat", # TODO: Add software
   "dolphin"                           : "software:dolphin", # TODO: Add software
   "asfinder"                          : "software:asfinder",# TODO: Add software
-  "netgeo"                            : "software:netgeo" # TODO: Add software
+  "netgeo"                            : "software:netgeo", # TODO: Add software
+  "ioda"                              : "software:ioda"
 }
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
@@ -448,13 +445,32 @@ def parse_paper(curr_paper):
                 # Remove any whitespace.
                 dataset = dataset.strip().lower()
 
-                # Map the topkey_dataset to a catalog-data dataset.
-                try:
+                # Try to map the current dataset to a catalog dataset.
+                if dataset in topkey_2_dataset:
                     dataset = topkey_2_dataset[dataset]
-                except:
-                    if len(dataset) == 0:
-                        continue
+                elif len(dataset) == 0:
+                    continue
+                elif dataset.replace(" ", "-") in topkey_2_dataset:
                     dataset = topkey_2_dataset[dataset.replace(" ", "-")]
+                elif dataset.replace("_", "-") in topkey_2_dataset:
+                    dataset = topkey_2_dataset[dataset.replace("_", "-")]
+                else:
+                    keys = topkey_2_dataset.keys()
+                    closest_match = difflib.get_close_matches(dataset, keys, 1)
+                   
+                    # Edge Case: Reverse the dataset if no match, then give up.
+                    if len(closest_match) == 0:
+                        dataset = dataset.replace(" ", "-").replace("_", "-")
+                        dataset = dataset.split("-")
+                        dataset.reverse()
+                        dataset = "-".join(map(str, dataset))
+                        if dataset in topkey_2_dataset:
+                            dataset = topkey_2_dataset[dataset]
+                        else:
+                            continue
+                    else:
+                        dataset = topkey_2_dataset[closest_match[0]]
+
 
                 # Append link to the dataset.
                 if "software:" in dataset:
