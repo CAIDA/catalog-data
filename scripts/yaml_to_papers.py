@@ -97,7 +97,7 @@ type_2_bibtex = {
 }
 topkey_2_dataset = {
   # "Anonymized Internet Traces -> traces"
-  "passive-stats"                     : "passive-metadata",
+  "passive-stats"                     : "passive-metadata", # TODO:
   "passive-realtime"                  : "?",
   "passive-generic"                   : "?",
   "passive-ipv6day-and-ipv6launch"    : "passive-ipv6launch-pcap",
@@ -323,6 +323,7 @@ def parse_data_papers():
 
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
+#   @input curr_paper: A string where each \n is another TOPKEY.
 def parse_paper(curr_paper):
     global author_data
     global type_2_bibtex
