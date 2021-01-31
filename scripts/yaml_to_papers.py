@@ -289,7 +289,7 @@ def parse_data_papers():
     global data_papers
     global topkeys
 
-    # Parse data_papers as an encoded .bz2 file.
+    # Parse data_papers file.
     if re_yml.search(data_papers):
         with open(data_papers, "r") as file:
             # Will store all the data for the current paper.

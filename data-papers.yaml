@@ -1,7 +1,738 @@
 
+---
+
+MARKER : "2020_M_Apostolaki_ez"
+TYPE   : "online"
+AUTHOR : "Apostolaki, Maria; Maire, Cedric; Vanbever, Laurent"
+TITLE  : "PERIMETER: A network-layer attack on the anonymity of cryptocurrencies"
+YEAR   : "2021-03"
+VOLUME : "25"
+PAGE   : "(19 pages)"
+URL    : "https://nsg.ee.ethz.ch/fileadmin/user_upload/publications/perimeter.pdf"
+TOPKEY : "topology-as-relationships, ixps"
+GEOLOC : "Zurich, CH"
+ABS    : "Abstract. Cryptocurrencies are widely used today for anonymous transactions. Such currencies rely on a peer-to-peer network where users can broadcast transactions containing their pseudonyms and ask for approval. Previous research has
+shown that application-level eavesdroppers, namely nodes connected to a large portion of the Bitcoin peer-to-peer network are able to deanonymize multiple users by tracing back the source of transactions. Yet, such attacks are highly visible as
+the attacker needs to maintain thousands of outbound connections. Moreover, they can be mitigated by purely application-layer countermeasures. This paper presents a stealthier and harder-to-mitigate attack exploiting the interactions between the networking and application layers. Particularly, the adversary combines her access over Internet infrastructure with application-layer information to deanonymize transactions. We show that PERIMETER is practical in today’s Internet, achieves high accuracy in Bitcoin, and generalizes to encrypted cryptocurrencies."
 
 ---
 
+MARKER : "2020_A_Todd_imc"
+TYPE   : "in_journal"
+AUTHOR : "Todd, Arnold; He, Jia; Jiang, Weifan; Calder, Matt; Cunha, Italo; Giotsas, Vasileios; Katz-Bassett, Ethan"
+TITLE  : "Cloud Provider Connectivity in the Flat Internet"
+CTITLE : "Internet Measurement Conf. (IMC)"
+YEAR   : "2020-10"
+DOI    : "10.1145/3419394"
+PAGE   : "230-246"
+URL    : "https://doi.org/10.1145/3419394.3423613"
+TOPKEY : "topoplogy-as-relationships, topology-as-organization, topology-generic, routeviews-prefix2as"
+GEOLOC : "NY, US; NY, US; NY, US; NY, US; Belo Horizonte, BR; Lancaster, UK; NY, US;"
+ABS    : "The Tier-1 ISPs have been considered the Internet’s backbone since the dawn of the modern Internet 30 years ago, as they guarantee global reachability. However, their influence and importance are waning as Internet flattening decreases the demand for transit services and increases the importance of
+private interconnections. Conversely, major cloud providers –
+Amazon, Google, IBM, and Microsoft– are gaining in importance as more services are hosted on their infrastructures. They ardently support Internet flattening and are rapidly expanding their global footprints, which enables them to bypass the Tier-1 ISPs and other large transit providers to reach many destinations. In this paper we seek to quantify the extent to which the cloud providers’ can bypass the Tier-1 ISPs and other large transit providers. We conduct comprehensive measurements to identify the neighbor networks of the major cloud providers and combine them with AS relationship inferences to model the Internet’s AS-level topology to calculate a new metric, hierarchy-free reachability, which characterizes the reachability a network can achieve without traversing the networks of the Tier-1 and Tier-2 ISPs. We show that the cloud providers are able to reach over 76% of the Internet without traversing the Tier-1 and Tier-2 ISPs, more than virtually every other network."
+
+---
+
+MARKER : "2020_R_Barik_cn"
+TYPE   : "in_journal"
+AUTHOR : "Barik, Runa; Welzl, Michael; Fairhurst, Gorry; Elmokashfi, Ahmed; Dreibholz, Thomas; Gjessing, Stein"
+TITLE  : "On the usability of transport protocols other than TCP: A home gateway and internet path traversal study"
+YEAR   : "2020-05"
+SERIAL : "Computer Networks"
+VOLUME : "173"
+PAGE   : "(15 pages)"
+URL    : "https://www.sciencedirect.com/science/article/abs/pii/S138912861931446X"
+TOPKEY : "topology-as-relationships"
+GEOLOC : "Oslo, NO; Oslo, NO; Aberdeen, SC; Oslo, NO; Oslo, NO; Oslo, NO"
+ABS    : "Network APIs are moving towards protocol agility, where applications express their needs but not a static protocol binding, and it is up to the layer below the API to choose a suitable protocol. The IETF Transport Services (TAPS) Working Group is standardizing a protocol-independent transport API and offering guidance to implementers. Apple’s recent “Network.framework” is specifically designed to allow such late and dynamic binding of protocols. When the network stack autonomously chooses and configures a protocol, it must first test which protocols are locally available and which work end-to-end (“protocol racing”). For this, it is important to know the set of available options, and which protocols should be tried first: Does it make sense to offer unchecked payload delivery, as with UDP-Lite? Is a UDP-based protocol like QUIC always a better choice, or should native SCTP be tried? This paper develops answers to such questions via (i) a NAT study in a local testbed, (ii) bidirectional Internet tests, (iii) a large scale Internet measurement campaign. The examined protocols are: SCTP, DCCP, UDP-Lite, UDP with a zero checksum and three different UDP encapsulations."
+
+---
+
+MARKER : "2020_D_Chen_compeleceng"
+TYPE   : "in_journal"
+AUTHOR : "Chen, Di; Ba, Yang; Qiu, Han; Zhu, Junhu; Wang, Qingxian"
+GEOLOC : "Zhengzhou, CH"
+TITLE  : "ISRchain: Achieving efficient interdomain secure routing with blockchain"
+YEAR   : "2020-05"
+VOLUME : "83"
+PAGE   : "(14 pages)"
+URL    : "https://doi.org/10.1016/j.compeleceng.2020.106584"
+TOPKEY : "topology-generic, routeviews-prefix2as"
+ABS    : "Extensive efforts have been made for securing interdomain routing during the last two decades, but the highly centralized nature and complex management of existing security solutions impede their deployment progress. This paper presents ISRchain, a blockchain-based interdomain secure routing framework. We utilize blockchain as a distributed, tamper-proof, and traceable ledger to store the distributions of Internet number resources consistently and design a smart contract-based mechanism for route origin verification, AS adjacency attestation, and route policy compliance check. ISRchain decouples the data required for route validation from routing protocols to work independently without requiring any changes in the current interdomain routing system. We conduct extensive experiments to evaluate ISRchain’s performance by simulating Internet resource allocation in the real world and show its effectiveness and efficiency by performing two case studies with BHARTI Airtel prefix hijack in 2015 and Google route leak in 2017. Experimental results demonstrate the feasibility of ISRchain for securing interdomain routing."
+
+---
+
+MARKER : "2020_T_Czachorski_IEEE_19872265"
+TYPE   : "in_proceedings"
+AUTHOR : "Czachorski, Tadeusz; Gelenbe, Erol; Kuaban Suila, Godlove; Marek, Dariusv"
+GEOLOC : "Gliwice, PL"
+TITLE  : "Transient Behavior of a Network Router"
+YEAR   : "2020_07"
+DOI	  : "10.1109/TSP49548.2020.9163477"
+CTITLE : "2020 43rd International Conference on Telecommunications and Signal Processing (TSP)"
+PAGE   : "(6 pages)"
+URL    : "https://ieeexplore.ieee.org/abstract/document/9163477?casa_token=7SEcU1KeJk8AAAAA:I9tydv6Tn3Po4usIufmQkoxOkZ_4qpcTCgqMElTuJ0ukPlSPNifLhCk6PDlr3AWnT-4l6wuKD4A"
+TOPKEY : "passive_2016"
+ABS    : "The broader use of Software Defined Network (SDN) controllers creates periodic changes in topology and traffic rates at routers that adapt the network to changes in network conditions. Thus the transient behaviour of network components, and in particular routers, is becoming of great interest. Since standard queueing models are difficult to analyze under time-varying conditions, we propose a tractable diffusion approximation for both the transient and steady-state behaviour of a network router. In particular, the analysis provides the steady-state and transient delay and packet loss probability as a function of traffic load and other characteristics. Using these results, we show that when SDN routers change the paths of flows frequently, the network's behaviour may often be far from its steady-state behaviour. Therefore any network optimization conducted with the help of SDN should not be based on steady-state behaviour, but rather on some metrics related to the time-dependent network behaviour."
+
+---
+
+MARKER : "2020_T_Czachorski_SMARTY"
+TYPE   : "in_proceedings"
+AUTHOR : "Czachorski, Tadeusz; Gelenbe, Erol; Kuaban Suila, Godlove; Marek, Dariusv"
+GEOLOC : "Gliwice, PL"
+TITLE  : "Time Dependent Diffusion Model for Security Driven Software Defined Networks"
+YEAR   : "2020_08"
+CTITLE : "The Second International Workshop on Stochastic Modeling and Applied Research of Technology: SMARTY 2020"
+PAGE   : "(19 pages)"
+URL    : "https://www.researchgate.net/profile/Erol_Gelenbe/publication/343905098_Time_Dependent_Diffusion_Model_for_Security_Driven_Software_Defined_Networks/links/5f4763a7458515a88b710965/Time-Dependent-Diffusion-Model-for-Security-Driven-Software-Defined-Networks.pdf"
+TOPKEY : "passive_2016"
+ABS    : "We present a model of a Software Defined Network (SDN)
+where frequent changes in routing and traffic rates at routers are needed to respond to the security, quality of service (QoS), and energy savings requirements of applications such as the Internet of Things. Such frequent path and traffic changes introduce time-dependent network behaviours, and standard queueing models are not well adapted to analyse the transient regime, we propose a tractable diffusion approximation for both the transient and steady-state behaviour. Our model can represent any network topology transmitting time-dependent flows with routing changes, and computes queue length and delay distributions at each network node and along complete paths between senders and receivers. Using realistic router parameters, we show that transients occupy a significant fraction of system time, so that the optimisation conducted with SDN controllers needs to include the effect of time-dependent behaviours."
+
+---
+
+MARKER : "2020_T_Czarchorski"
+TYPE   : "online"
+AUTHOR : "Czachorski, Tadeusz; Gelenbe, Erol; Kuaban Suila, Godlove; Marek, Dariusv"
+GEOLOC : "Gliwice, PL"
+TITLE  : "Dynamics of Software Defined Networks: Diffusion Models"
+YEAR   : "2020_04"
+DOI	  : "10.13140/RG.2.2.16981.17120"
+PAGE   : "(7 pages)"
+URL    : "https://www.researchgate.net/publication/340535806_Dynamics_of_Software_Defined_Networks_Diffusion_Models"
+TOPKEY : "passive-2016"
+ABS    : "Software Deﬁned Networks (SDN) dynamically modify the paths of Internet ﬂows in response to quality of service or security needs, and hence frequently modify traﬃc levels at network routers. We therefore investigate the time-dependent performance of a small network of nodes that represent SDN forwarders, modelled as G/G/1/N queueing stations. To predict the duration of transient regimes in forwarders, a diﬀusion approximation is developed and conﬁrms that transient periods play a signiﬁcant role in the performance of SDN."
+
+---
+
+MARKER : "2020_M_Gharaibeh_CS"
+TYPE   : "tech. report"
+AUTHOR : "Gharaeibeh, Manaf; Papadopoulos, Christos; Heidemann, John; Partridge, Craig"
+GEOLOC : "Fort Collins, CO, US; Fort Collins, CO, US; Los Angeles, CA, US; Fort Collins, CO, US"
+TITLE  : "Delay-based Identification of Internet Block Movement"
+YEAR   : "2020_04"
+PAGE   : "(19 pages)"
+URL    : "https://www.cs.colostate.edu/TechReports/Reports/2020/tr20-101.pdf"
+TOPKEY : "topology-ark-itdk"
+ABS    : "Some IP blocks occasionally change their physical location, such as when blocks are transferred to different organizations, or repurposed within an organization. IP geolocation systems need to identify such changes to provide accurate results for location-dependent applications such as geo-blocking and online fraud prevention. We propose an efficient method to identify IP blocks that move, since full geolocation is expensive and unnecessary for blocks that do not move. Our approach uses persistent changes in latency as an indicator of block movement, tracking all ping-responsive IPv4 /24 blocks from a handful of globally distributed vantage points. We estimate around 2.1% of the 3.77M /24 blocks we studied have changed location at least once in the last 3 months of 2018. We find that the remaining blocks were consistently RTT-stable during the same period, suggesting that their locations were also stable. We validate a random sample of blocks we identify as moving and confirm 80% (41 of 51) through traceroutes."
+
+---
+
+MARKER : "2020_V_Giotsas_IEEE_ACM"
+TYPE   : "in_journal"
+AUTHOR : "Giotsas, Vasileios; Nomikos, George; Kotronis, Vasileios; Serpezis, Pavlos; Gigis, Petros; Manassakis, Lefteris; Dietzel, Christoph; Konstantaras, Stravros; Dimitropoulos, Xenofontas"
+GEOLOC : "Heraklion, GR; Lancaster, UK; Heraklion, GR; Thessaloniki, GR; London, UK; Heraklion, GR; Berlin, DE; Amsterdam, NL; Heraklion, GR"
+TITLE  : "O Peer, Where Art Thou? Uncovering Remote Peering Interconnections at IXPs"
+YEAR   : "2020_10"
+DOI	  : "10.1109/TNET.2020.3025945"
+SERIAL : "IEEE/ACM Transactions on Networking"
+VOLUME : ""
+PAGE   : "(16 pages)"
+URL    : "https://ieeexplore.ieee.org/abstract/document/9238446/metrics#metrics"
+TOPKEY : "routeviews-prefix2as, topology-as-relationships, topology-generic, "
+ABS    : "Internet eXchange Points (IXPs) are Internet hubs that mainly provide the switching infrastructure to interconnect networks and exchange traffic. While the initial goal of IXPs was to bring together networks residing in the same city or country, and thus keep local traffic local, this model is gradually shifting. Many networks connect to IXPs without having physical presence at their switching infrastructure. This practice, called Remote Peering, is changing the Internet topology and economy, and has become the subject of a contentious debate within the network operators' community. However, despite the increasing attention it attracts, the understanding of the characteristics and impact of remote peering is limited. In this work, we introduce and validate a heuristic methodology for discovering remote peers at IXPs. We (i) identify critical remote peering inference challenges, (ii) infer remote peers with high accuracy (>97%) and coverage (94%) per IXP, and (iii) characterize different aspects of the remote peering ecosystem by applying our methodology to 30 large IXPs. We observe that remote peering is a significantly common practice in all the studied IXPs; for the largest IXPs, remote peers account for 40% of their member base. We also show that today, IXP growth is mainly driven by remote peering, which contributes two times more than local peering."
+
+---
+
+MARKER : "2020_J_Grailet_IEEE"
+TYPE   : "in_journal"
+AUTHOR : "Grailet, Jean-Francois; Donnet, Benoit"
+GEOLOC : "Liege, BE"
+TITLE  : "Virtual Insanity: Linear Subnet Discovery"
+YEAR   : "2020-06"
+DOI	  : "10.1109/TNSM.2020.2976859"
+SERIAL : "IEEE Transactions on Network and Service Management"
+VOLUME : "17"
+PAGE   : "1268-1281"
+URL    : "https://ieeexplore.ieee.org/abstract/document/9016121?casa_token=ipquHyZZKMIAAAAA:CBDHApktrRfwLHLBIvzKFsEuyBcJNdRUMeiS3QBD2E62LZlmCXop3CR4JD20RmVx0Y45qS0jEo8"
+TOPKEY : "topology-as-rank, topology-as-relationships"
+ABS    : "Over the past two decades, the research community has developed many approaches to study the Internet topology. In particular, starting from 2007, various tools explored the inference of subnets, i.e., sets of devices located on the same connection medium which can communicate directly with each other at the link layer. In this paper, we first discuss how today's traffic engineering policies increase the difficulty of subnet inference. We carefully characterize typical difficulties and quantify them in the wild. Next, we introduce WISE (Wide and lInear Subnet inferencE), a new tool which tackles those difficulties and discovers, in a linear time, large networks subnets. Based on two ground truth networks, we demonstrate that WISE outperforms state-of-the-art tools. Then, through large-scale measurements, we show that the selection of a vantage point with WISE has a marginal effect regarding accuracy. Finally, we discuss how subnets can be used to infer neighborhoods (i.e., aggregates of subnets located at most one hop from each other). We discuss how these neighborhoods can lead to bipartite models of the Internet and present validation results and an evaluation of neighborhoods in the wild, using WISE. Both our code and data are freely available."
+
+---
+
+MARKER : "2020_H_He_JPCS"
+TYPE   : "in_journal"
+AUTHOR : "He, Hanyue"
+GEOLOC : "Beijin, CN"
+TITLE  : "Relationship between Network Traffic Topology Map and Degree of Competition"
+YEAR   : "2020_01"
+DOI	  : ":10.1088/1742-6596/1449/1/012082"
+SERIAL : "Journal of Physics: Conference Series"
+VOLUME : "1449
+PAGE   : "(5 pages)"
+URL    : "https://www.researchgate.net/publication/339082321_Relationship_between_Network_Traffic_Topology_Map_and_Degree_of_Competition"
+TOPKEY : "topology-as-relationships"
+ABS    : "This project will examine the relationship between the degree of competition between access providers and the price of Internet access in a particular country, as well as the impact of access  provider  topological  characteristics  on  price  and  quality.  Its  purpose  is  to  understand whether greater competition will result in lower network access prices. This project uses a scatter plot to show the relationship between these variables and attempts to build a model to express this  relationship.  The  data  used  in  this  project  includes  Internet  access  prices  and  topology information of Internet Service  Providers (ISPs). The  data set is from the  author's previously published  article  'Establishing  a  database  of  competition  between  ISPs  based  on  Python language'. The purpose of this paper is to demonstrate the relationship between the price and the bandwidth of the Internet access and the competition among access provider by the method of data  analysis. And  at  the  end,  we  increase  the  accuracy  of  the  model  by  adding  the  possible influence variables."
+
+---
+
+MARKER : "2019_N_Ivkin_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Ivkin, Nikita; Yu, Zhuolong; Braverman, Vladimir; Jin, Xin"
+GEOLOC : "Baltimor, MD, US"
+TITLE  : "QPipe: quantiles sketch fully in the data plane"
+YEAR   : "2019_12"
+DOI	  : "10.1145/3359989.3365433"
+CTITLE : "CoNEXT '19: Proceedings of the 15th International Conference on Emerging Networking Experiments And Technologies"
+PAGE   : "(7 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3359989.3365433"
+TOPKEY : "dns-root-gtld-rtt, topology-ark-dnsnames, passive-2016"
+ABS    : "Efficient network management requires collecting a variety of statistics over the packet flows. Monitoring the flows directly in the data plane allows the system to detect anomalies faster. However, monitoring algorithms have to handle a throughput of 109 packets per second and to maintain a very low memory footprint. Widely adopted sampling-based approaches suffer from low accuracy in estimations. Thus, it is natural to ask: "Is it possible to maintain important statistics in the data plane using small memory footprint?". In this paper, we answer this question in affirmative for an important case of quantiles. We introduce QPipe, the first quantiles sketching algorithm that can be implemented entirely in the data plane. Our main technical contribution is an on-the-plane implementation of a variant of SweepKLL [27] algorithm. Specifically, we give novel implementations of argmin(), the major building block of SweepKLL which are usually not supported in the data plane of the commodity switch. We prototype QPipe in P4 and compare its performance with a sampling-based baseline. Our evaluations demonstrate 10× memory reduction for a fixed approximation error and 90× error improvement for a fixed amount of memory. We conclude that QPipe can be an attractive alternative to sampling-based methods."
+
+---
+
+MARKER : "2020_S_Karapoola_CC"
+TYPE   : "in_journal"
+AUTHOR : "Karapoola, Sareena; Vairam, Prasanna Karthik; Raman, Shankar; Kamakoti, V."
+GEOLOC : "Chennai, IN"
+TITLE  : "Net-Police: A network patrolling service for effective mitigation of volumetric DDoS attacks"
+YEAR   : "2020_01"
+SERIAL : "Computer Communications"
+VOLUME : "150"
+PAGE   : "483-454"
+URL    : "https://doi.org/10.1016/j.comcom.2019.11.034"
+TOPKEY : "topology-as-relationships, topology-generic"
+ABS    : "Volumetric Distributed Denial of Service (DDoS) attacks are a significant concern for information technology-based organizations. These attacks result in significant revenue losses in terms of wastage of resources and unavailability of services at the victim (e.g., business websites, DNS servers, etc.) as well as the Internet Service Providers (ISPs) along the path of the attack. The state-of-the-art DDoS mitigation mechanisms attempt to alleviate the losses at either the victim or the ISPs, but not both. In this paper, we present Net-Police, which is a traffic patrolling system for DDoS mitigation. Net-Police identifies the sources of attack so that filters can be employed at these sources in order to quickly mitigate the attack. Such a solution effectively prevents the flow of malicious traffic across the ISP networks, thereby benefiting the ISPs also. Net-Police patrols the network by designating a small number of routers as dynamic packet taggers, to prune benign regions in the network, and localize the search to the Autonomous Systems (AS) from which the attack originates. We evaluate the proposed solution on 257 real-world topologies from the Internet Topology Zoo library and the Internet AS level topology. The paper also presents details of our hardware test-bed platform consisting of 30 routers on which network services such as Net-Police can be implemented and studied for on-field feasibility. Our experiments reveal that Net-Police performs better than the state-of-the-art cloud-based and traceback-based solutions in terms of ISP bandwidth savings and availability of the victim to legitimate clients."
+
+---
+
+MARKER : "2020_X_Ke_IEEE"
+TYPE   : "in_journal"
+AUTHOR : "Ke, Xiangyu; Khan, Arijit; Al Hasan, Mohommad; Rezvansangsari, Rojin"
+GEOLOC : "Singapore, SG; Singapore, SG; Indianapolis, IN, US; Singapore, SG"
+TITLE  : "Reliability Maximization in Uncertain Graphs"
+YEAR   : "2020_04"
+DOI	  : "10.1109/TKDE.2020.2987570"
+SERIAL : "IEEE Transactions on Knowledge and Data Engineering"
+PAGE   : "(18 pages)"
+URL    : "https://ieeexplore.ieee.org/abstract/document/9068469/authors#authors"
+TOPKEY : "topology-generic"
+ABS    : "Network reliability measures the probability that a target node is reachable from a source node in an uncertain graph, i.e., a graph where every edge is associated with a probability of existence. In this paper, we investigate the novel and fundamental problem of adding a small number of edges in the uncertain network for maximizing the reliability between a given pair of nodes. We study the NP -hardness and the approximation hardness of our problem, and design effective, scalable solutions. Furthermore, we consider extended versions of our problem (e.g., multiple source and target nodes can be provided as input) to support and demonstrate a wider family of queries and applications, including sensor network reliability maximization and social influence maximization. Experimental results validate the effectiveness and efficiency of the proposed algorithms."
+
+---
+
+MARKER : "2020_S_Osat_PRR"
+TYPE   : "in_journal"
+AUTHOR : "Osat, Saeed; Radicchi, Filippo; Papadopoulos, Fragkiskos"
+GEOLOC : "Moscow, RU; Bloomington, IN, US; Limassol, CY"
+TITLE  : "k-core structure of real multiplex networks"
+YEAR   : "2020_05"
+SERIAL : "Phys. Rev. Research 2"
+PAGE   : "(14 pages)"
+URL    : "https://doi.org/10.1103/PhysRevResearch.2.023176"
+TOPKEY : "topology-ark-ipv6-aslinks"
+ABS    : "Multiplex networks are convenient mathematical representations for many real-world—biological, social and technological—systems of interacting elements, where pairwise interactions among elements have different flavors. Previous studies pointed out that real-world multiplex networks display significant interlayer correlations—degree-degree correlation, edge overlap, node similarities—able to make them robust against
+random and targeted failures of their individual components. Here, we show that interlayer correlations are important also in the characterization of their k-core structure, namely, the organization in shells of nodes with an increasingly high degree. Understanding of k-core structures is important in the study of spreading processes taking place on networks, as for example in the identification of influential spreaders and the emergence of localization phenomena. We find that, if the degree distribution of the network is heterogeneous, then a strong k-core structure is well predicted by significantly positive degree-degree correlations. However, if the network degree distribution is homogeneous, then strong k-core structure is due to positive correlations at the level of node similarities. We reach our conclusions by analyzing different real-world multiplex networks, introducing novel techniques for controlling interlayer correlations of networks without changing their structure, and taking advantage of synthetic network models with tunable levels of interlayer correlations."
+
+---
+
+MARKER : "2020_M_Pariset_EPFL"
+TYPE   : "BSc thesis"
+AUTHOR : "Pariset, Matteo; Ford, Bryan; Basescu, Cristina"
+GEOLOC : "Lausanne, CH"
+TITLE  : "Applying Approximate Distance Oracles to Internet Routing"
+YEAR   : "2020_6"
+PUBLISH: "Swiss Federal Institute of Technology Lausanne"
+PAGE   : "(22 pages)"
+URL    : "https://www.epfl.ch/labs/dedis/wp-content/uploads/2020/06/report-2020-1-Matteo-Pariset-Compact-Routing-Internet.pdf"
+TOPKEY : "topology-as-rank"
+ABS    : "In order to reach their destinations, IP packets must go through multiple physical devices, across several IP networks. The process of selecting their path is called routing and relies on information shared among routers using a routing protocol. In the Internet, different protocols are used at different scales. For instance, Open Shortest Path First (OSPF) is typically used for routing packets between sub-networks belonging to the same organization whereas Border Gateway Protocol (BGP) is the de facto standard for global Internet routing. It operates at the level of Autonomous Systems (ASes), administrative entities which are identified by unique autonomous system numbers (ASNs). BGP is a stretch-1 routing protocol which selects paths based on prefix announcement rules and AS-specific policies."
+
+---
+
+MARKER : "2020_D_Prashar_JCIM"
+TYPE   : "in_journal"
+AUTHOR : "Prashar, Deepak; Jha, Sudan"
+GEOLOC : "Phagwara, India; "
+TITLE  : "A novel approach for Spam Email Filtering Using Machine Learning"
+YEAR   : "2020_05"
+DOI	  : "10.5281/zenodo.3715417"
+SERIAL : "Journal of Cybersecurity and Information Management (JCIM)"
+VOLUME : "2"
+PAGE   : "44-57"
+URL    : "https://www.researchgate.net/publication/341284592_A_novel_approach_for_Spam_Email_Filtering_Using_Machine_Learning"
+TOPKEY : "telescope-3days-conficker"
+ABS    : "Spam emails also known as unsolicited emails (maybe commercial or maybe not) i.e. those mails which are sent without our request or concern. Email spam is the practice of sending unwanted emails, mostly contains commercial messages to randomly generated persons. In the internet email spam is widespread because of such low cost of sending emails other than any other means of communication. It is important to filter spam emails because most of the malicious activities performed in the internet done through email spamming. Though there are many spam filters are available we still get huge amount of spam emails. This is not because the filters are not accurate & effective; the reason is the generation of quick and effective counters of the algorithm used in the filters. In our project we used mainly three supervised learning algorithms namely Linear SVC, Multinomial NB, and k-NN to implement the filter. We used these algorithms to train the system about spam email by using the feature called word count vector which is generated by processing a dataset filled with existing emails containing both spam and legitimate emails. The full process of the project and the result of the execution by implementing the three models/algorithms are discussed."
+
+---
+
+MARKER : "2020_SS_Tomar_IJIT"
+TYPE   : "in_journal"
+AUTHOR : "Sing Tomar, Shailendra; Rawat, Anil; Vyavahare, Prakash D.; Tokebar, Sanjiv"
+GEOLOC : "Pradesh, IN; "
+TITLE  : "Conceptual model for comparison of IPv6 ISPs based on IPv4 traffic profiles
+"
+YEAR   : "2020_04"
+SERIAL : "International Journal of Information Technology "
+VOLUME : "2"
+PAGE   : "1171–1182"
+URL    : "https://doi.org/10.1007/s41870-020-00453-5"
+TOPKEY : "topology-generic, topology-ark-ipv6-aslinks, topology-ark-ipv6-routed48"
+ABS    : "The slow adoption of IPv6 protocol by organizations has led to internet service providers (ISP) investing minimal resources in setting up IPv6 Internet connectivity, ultimately resulting in sub optimally tuned IPv6 Internet routing fabric. The altogether different IPv6 packet header with more bits for the IP address, no header checksum, and no intermediate fragmentation features, are expected to give a palpably different experience to the users. With different levels of expertise and different connectivity links to the Internet, available with different ISPs, responses of the destined networks may also vary for each ISP. Therefore, it is worth to investigate ISP wise IPv6 Internet responses from an organization user’s point of view. In this paper, we present a research methodology to estimate IPv6 responses to the users of an organization for destinations present in current IPv4 traffic profile, without actually accessing the IPv6 network. We use publicly available centre for applied internet data analysis (CAIDA) IPv6 topology and autonomous systems (AS) links datasets to analyse and infer the intermediate AS level responses, for estimating responses between source and destination networks. As a case study, we take three Indian ISPs and apply the methodology to compare ISP wise responses for a network of about 2000 nodes. The results of the same are presented in this paper. We conclude that considering all other factors to be the same, the best possible quality of experience (QoE) for the Internet users of the organization, can be achieved by smart selection of the IPv6 ISP."
+
+---
+
+MARKER : "2020_J_Sonneveld"
+TYPE   : "BSc thesis"
+AUTHOR : "Sonneveld, Jotte"
+GEOLOC : "Enschede, NL"
+TITLE  : "A Gravitational Approach for Ranking Autonomous Systems in Large Autonomous System Networks"
+YEAR   : "2020"
+PAGE   : "(9 pages)"
+URL    : "http://essay.utwente.nl/82064/"
+TOPKEY : "topology-as-rank, topology-as-relationships"
+PUBLISH: "University of Twente"
+ABS    : "An Autonomous System (AS) is a group of host IP addresses, known as routing prefixes, that share common routing policies. Multiple ASes interact with each other through a massive network of links which reflect customer-provider and peer-to-peer partnerships among network operators. Such partnerships form an Autonomous System Network (ASN) that connects millions of hosts around the world and gives shape to the topology of the Internet. The ranking of ASes in an ASN allows researchers to acquire important insights into the complex structure of the Internet. ASes are ranked by the Center for Applied Internet Data Analysis (CAIDA) by their customer cone size, which is the number of direct and indirect customers. While the customer cone size and other similar metrics represent an intuitive way to measure the rank of ASes, they suffer from low monotonicity, making it difficult to discriminate among ASes with the same measurements. In this research we propose a new approach for ranking ASes within the ASN, measuring customer cones by exploiting a gravitational approach used in Network Theory to quantify the influence of nodes in a complex graph and their capacity to become good spreaders. We will also propose an efficient algorithm to measure gravitational metrics by exploiting the fact that customer cones form large Directed Acyclic Graphs, in order to handle large ASNs with dozens of thousands of nodes and links."
+
+---
+
+MARKER : "2020_K_Subramani_arxiv"
+TYPE   : "online"
+AUTHOR : "Subramani, Karthika; Perdisci, Roberto; Konte, Maria"
+GEOLOC : "Athens, GA, US; Athens, GA, US; Atlanta, GA, US"
+TITLE  : "IXmon: Detecting and Analyzing DRDoS Attacks at Internet Exchange Points"
+YEAR   : "2020_6"
+PAGE   : "(13 pages)"
+URL    : "https://arxiv.org/abs/2006.12555"
+TOPKEY : "topology-as-relationships"
+ABS    : "Distributed reflective denial of service (DRDoS) attacks are a popular choice among adversaries. In fact, one of the largest DDoS attacks ever recorded, reaching a peak of 1.3Tbps against GitHub, was a memcached-based DRDoS attack. More recently, a record-breaking 2.3Tbps attack against Amazon AWS was due to a CLDAP-based DRDoS attack. Although reflective attacks have been known for years, DRDoS attacks are unfortunately still popular and largely unmitigated. In this paper, we study in-the-wild DRDoS attacks observed from a large Internet exchange point (IXP) and provide a number of security-relevant measurements and insights.
+To enable this study, we first developed IXmon, an open-source DRDoS detection system specifically designed for deployment at large IXP-like network connectivity providers and peering hubs. We deployed IXmon at Southern Crossroads (SoX), an IXP-like hub that provides both peering and upstream Internet connectivity services to more than 20 research and education (R&E) networks in the South-East United States. In a period of about 21 months, IXmon detected more than 900 DRDoS attacks towards 31 different victim ASes. An analysis of the real-world DRDoS attacks detected by our system shows that most DRDoS attacks are short lived, lasting only a few minutes, but that large-volume, long-lasting, and highly-distributed attacks against R&E networks are not uncommon. We then use the results of our analysis to discuss possible attack mitigation approaches that can be deployed at the IXP level, before the attack traffic overwhelms the victim's network bandwidth."
+
+---
+
+MARKER : "2020_T_Wang_USENIX"
+TYPE   : "in_proceedings"
+AUTHOR : "Wang, Toa; Zhu, Hang; Ruffym Fabian; Jin, Xin; Sivaraman, Anirudh; Ports, Dan R. K.; Panda, Aurojit"
+GEOLOC : "New York City, NY, US; Baltimore, MY, US; New York City, NY, US; Baltimore, MY, US; New York City, NY, US; New York City, NY, US; New York City, NY, US"
+TITLE  : "Multitenancy for fast and programmable networks in the cloud"
+YEAR   : "2020"
+CTITLE : "12th USENIX Workshop on Hot Topics in Cloud Computing, HotCloud 2020, co-located with USENIX ATC 2020"
+PAGE   : "(8 pages)"
+URL    : "https://www.usenix.org/conference/hotcloud20/presentation/wang"
+TOPKEY : "passive-2019"
+ABS    : "Fast and programmable network devices are now readily available, both in the form of programmable switches and smart network-interface cards. Going forward, we envision that these devices will be widely deployed in the networks of cloud providers (e.g., AWS, Azure, and GCP) and exposed as a programmable surface for cloud customers—similar to how cloud customers can today rent CPUs, GPUs, FPGAs, and ML accelerators. Making this vision a reality requires us to develop a mechanism to share the resources of a programmable network device across multiple cloud tenants. In other words, we need to provide multitenancy on these devices. In this position paper, we design compile and run-time approaches to multitenancy. We present preliminary results showing that our design provides both efficient resource utilization and isolation of tenant programs from each other."
+
+---
+
+MARKER : "2020_J_Hypolite_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Hypolite, Joel; Sonchack, John; Hershkop, Shlomo; Dautenhahn, Nathan; DeHon, Andre; Smith, Jonathan M."
+GEOLOC : "Philadelphia, PA, US; Princeton, NJ, US; Philadelphia, PA, US; Houston, TX, US; Philadelphia, PA, US; Philadelphia, PA, US"
+TITLE  : "DeepMatch: Practical Deep Packet Inspection in the Data Planeusing Network Processors"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3386367.3431290"
+TOPKEY : "passive-2019"
+ABS    : "Restricting data plane processing to packet headers precludes analysis of payloads to improve routing and security decisions. DeepMatch delivers line-rate regular expression matching on payloads using Network Processors (NPs). It further supports packet reordering to match patterns in flows that cross packet boundaries. Our evaluation shows that an implementation of DeepMatch, on a 40 Gbps Netronome NFP-6000 SmartNIC, achieves up to line rate for streams of unrelated packets and up to 20 Gbps when searches span multiple packets within a flow. In contrast with prior work, this throughput is data-independent and adds no burstiness. DeepMatch opens new opportunities for programmable data planes."
+
+---
+
+MARKER : "2020_Y_Zhou_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Zhou, Yu; Zhang, Dai; Gao, Kai; Sun, Chen; Cao, Jiamin; Wang, Yangyan; Xu, Mingwei; We, Jianping"
+GEOLOC : "Beijing, CN; Beijing, CN; Chengdu, CN; Beijing, CN; Beijing, CN; Beijing, CN; Beijing, CN; Beijing, CN"
+TITLE  : "Newton: intent-driven network traffic monitoring"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3386367.3431298"
+TOPKEY : "passive-2014"
+ABS    : "Monitoring network traffic based on operators’ intents is essen-tial to today’s networks. As the bandwidth and size of networks increase steeply, monitoring systems shall fulfill the requirements of on-demand network monitoring for ever-growing traffic volumes. However, existing monitoring systems either cannot satisfy operators’ intents on demand or introduce substantial monitoring overheads. In this paper, we present Newton, an intent-driven traffic monitor that enables specifying operators’ intents with traffic monitoring queries and supports dynamic and scalable network-wide queries. Specifically, Newton 1) empowers operators to dynamically create, remove, and update on-data-plane queries without interrupting normal packet forwarding, 2) conducts systematic optimizations to achieve precise network traffic monitoring, and 3) executes network-wide queries with high resilience to dynamic network status. Evaluation results show that Newton improves the flexibility, scalability, and resource efficiency of traffic monitoring, demonstrating its great potential to be deployed in large-scale programmable networks."
+
+---
+
+MARKER : "2020_P_Reviriego_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Reviriego, Pedro; Pontarelli, Solvatore"
+GEOLOC : "Madrid, ES; Rome, IT"
+TITLE  : "When Filtering is not Possible Caching Negatives withFingerprints Comes to the Rescue"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(8 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3386367.3431300"
+TOPKEY : "passive-2015, passive-2019"
+ABS    : "Bloom filters are widely used in networking to accelerate checks and in particular to avoid accessing slow memories when a match will not be found. Unfortunately, filtering requires several on-chip memory bits per element and thus when the tables are large and the on-chip memory small is not applicable. In those cases, caching the most frequently accessed elements on-chip seems the only viable option. However, the key is typically formed by several packet header fields, which means that each cache entry consumes a significant amount of on-chip memory bits. In this paper, an efficient scheme to cache negatives, that is elements that will not find a match on the table is presented. In more detail, the proposed scheme enables the caching of negatives using less than 16 bits per entry regardless of the size of the key. This translates to a reduction of at least 6x in the size of the cache when used for example flow tracking."
+
+---
+
+MARKER : "2020_L_Prehn_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Prehn, Lars; Lichtblau, Franziska; Feldmann, Anja"
+GEOLOC : "Saarbrucken, DE"
+TITLE  : "When wells run dry: the 2020 IPv4 address market"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(9 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3386367.3431301"
+TOPKEY : "topology-generic"
+ABS    : "With the recent IPv4 address exhaustion, many networks can no longer rely on requesting additional IPv4 addresses space. They resort to new ways to obtain addresses: buying and leasing. In this paper, we first shed light on the recent economic trends of the IPv4 buying market by augmenting transfer statistics with public and private pricing information from four large IPv4 brokers. We infer the size of the IPv4 leasing market through two different data sources: routing information observed from BGP collectors and RDAP databases operated by the Regional Internet Registries. We find that neither of those sources alone is capable of estimating the full market size. We relate our findings to discussions with 13 IPv4 brokers and summarize how networks handle their demand for obtaining IPv4 addresses in 2020."
+
+---
+
+MARKER : "2020_CH_Song_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Hwan Song, Cha; Govindan Kannan, Pravein; Kian Hsiang Low, Byan; Choon Chan, Mun"
+GEOLOC : "Singapore, SG"
+TITLE  : "FCM-Sketch: Generic Network Measurementswith Data Plane Support"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3386367.3432729"
+TOPKEY : "passive-2019"
+ABS    : "Sketches have successfully provided accurate and fine-grained measurements (e.g., flow size and heavy hitters) which are imperative for network management. In particular, Count-Min (CM) sketch is widely utilized in many applications due to its simple design and ease of implementation. There have been many efforts to build monitoring frameworks based on Count-Min sketch. However, these frameworks either support very specific measurement tasks or they cannot be implemented on high-speed programmable hardware (PISA).
+In this work, we propose FCM, a framework that is designed to support generic network measurement with high accuracy. Our key contribution is FCM-Sketch, a data structure that has a lightweight implementation on the emerging PISA programmable switches. FCM-Sketch can also be used as a substitute for CM-Sketch in applications that use CM-Sketch. We have implemented FCM-Sketch on a commodity programmable switch (Barefoot Tofino) using the P4 language. Our evaluation shows that FCM-Sketch can reduce the errors in many measurement tasks by 50% to 80% compared to CM-Sketch and other state-of-the-art approaches."
+
+---
+
+MARKER : "2020_T_Krenc_CONEXT"
+TYPE   : "in_proceedings"
+AUTHOR : "Krenc, Thomas; Beverly, Robert; Smaragdakis, Georgios"
+GEOLOC : "Monterey, CA, US, Monterey, CA, US, Berlin, DE"
+TITLE  : "Keep your Communities Clean: Exploring the Routing MessageImpact of BGP Communities"
+YEAR   : "2020_10"
+CTITLE : "CoNEXT '20: Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies"
+PAGE   : "(8 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3386367.3432731"
+TOPKEY : "topology-as-classification"
+ABS    : "BGP communities are widely used to tag prefix aggregates for policy, traffic engineering, and inter-AS signaling. Because individual ASes define their own community semantics, many ASes blindly propagate communities they do not recognize. Prior research has shown the potential security vulnerabilities when communities are not filtered. This work sheds light on a second unintended side-effect of communities and permissive propagation: an increase in unnecessary BGP routing messages. Due to its transitive property, a change in the community attribute induces update messages throughout established routes, just updating communities. We ground our work by characterizing the handling of updates with communities, including when filtered, on multiple real-world BGP implementations in controlled laboratory experiments. We then examine 10 years of BGP messages observed in the wild at two route collector systems. In 2020, approximately 25% of all announcements modify the community attribute, but retain the AS path of the most recent announcement; an additional 25% update neither community nor AS path. Using predictable beacon prefixes, we demonstrate that communities lead to an increase in update messages both at the tagging AS and at neighboring ASes that neither add nor filter communities. This effect is prominent for geolocation communities during path exploration: on a single day, 63% of all unique community attributes are revealed exclusively due to global withdrawals."
+
+---
+
+MARKER : "2019_RB_Basat_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Ben Basat, Ran; Einziger, Gil; Gong, Junzhi; Moraney, Jalil; Raz, Danny"
+GEOLOC : "Cambridge, MA; Beersheba, IL; Cambridge, MA; Haifa, IL; Haifa, IL"
+TITLE  : "q-MAX: A Unified Scheme for Improving NetworkMeasurement Throughput"
+YEAR   : "2019_10"
+CTITLE : "IMC '19: Proceedings of the Internet Measurement Conference"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3355369.3355569"
+TOPKEY : "2018-passive"
+ABS    : "Network measurement is an essential building block for a variety of network applications such as traffic engineering, quality of service, load-balancing and intrusion detection. Maintaining a per-flow state is often impractical due to the large number of flows, and thus modern systems use complex data structures that are updated with each incoming packet. Therefore, designing measurement applications that operate at line speed is a significant challenge in this domain.
+In this work, we address this challenge by providing a unified mechanism that improves the update time of a variety of network algorithms. We do so by identifying, studying, and optimizing a common algorithmic pattern that we call q-MAX. The goal is to maintain the largest q values in a stream of packets. We formally analyze the problem and introduce interval and sliding window algorithms that have a worst-case constant update time. We show that our algorithms perform up to X20 faster than library algorithms, and using these new algorithms for several popular measurement applications yields a throughput improvement of up to X12 on real network traces. Finally, we implemented the scheme within Open vSwitch, a state of the art virtual switch. We show that q-MAX based monitoring runs in line speed while current monitoring techniques are significantly slower."
+
+---
+
+MARKER : "2019_A_Raman_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Raman, Aravindh; Joglekar, Sagar; De Cristofaro, Emiliano; Sastry, Nishanth; Tyson, Gareth"
+GEOLOC : "London, UK"
+TITLE  : "Challenges in the Decentralised Web:The Mastodon Case"
+YEAR   : "2019_10"
+CTITLE : "IMC '19: Proceedings of the Internet Measurement Conference"
+PAGE   : "(13 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3355369.3355572"
+TOPKEY : "topology-as-rank"
+ABS    : "The Decentralised Web (DW) has recently seen a renewed momentum, with a number of DW platforms like Mastodon, PeerTube, and Hubzilla gaining increasing traction. These offer alternatives to traditional social networks like Twitter, YouTube, and Facebook, by enabling the operation of web infrastructure and services without centralised ownership or control. Although their services differ greatly, modern DW platforms mostly rely on two key innovations: first, their open source software allows anybody to setup independent servers ("instances") that people can sign-up to and use within a local community; and second, they build on top of federation protocols so that instances can mesh together, in a peer-to-peer fashion, to offer a globally integrated platform.
+In this paper, we present a measurement-driven exploration of these two innovations, using a popular DW microblogging platform (Mastodon) as a case study. We focus on identifying key challenges that might disrupt continuing efforts to decentralise the web, and empirically highlight a number of properties that are creating natural pressures towards re-centralisation. Finally, our measurements shed light on the behaviour of both administrators (i.e., people setting up instances) and regular users who sign-up to the platforms, also discussing a few techniques that may address some of the issues observed."
+
+---
+
+MARKER : "2019_T_Chung_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Chung, Taejoong; Aben, Emile; Bruijnzeels, Tim; Chandrasekaran, Balakrishnan; Choffnes, David; Levin, Dave; M. Maggs, Bruce; Mislove, Alan; van Rijswijk-Deij, Roland; Rula, John; Sullivan, Nick"
+GEOLOC : "Rochester, NY, US; Amsterdam, NL; Amsterdam, NL; Saarbrucken, DE; Boston, MA, US; College Park, MD, US; Durham, NC, US; Boston, MA, US; Enschede, NL; Cambridge, MA, US; San Francisco, CA, US"
+TITLE  : "RPKI is Coming of Age"
+YEAR   : "2019_10"
+CTITLE : "IMC '19: Proceedings of the Internet Measurement Conference"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3355369.3355596"
+TOPKEY : "topology-as-organizations, topology-as-relationships"
+ABS    : "Despite its critical role in Internet connectivity, the Border Gateway Protocol (BGP) remains highly vulnerable to attacks such as prefix hijacking, where an Autonomous System (AS) announces routes for IP space it does not control. To address this issue, the Resource Public Key Infrastructure (RPKI) was developed starting in 2008, with deployment beginning in 2011. This paper performs the first comprehensive, longitudinal study of the deployment, coverage, and quality of RPKI.
+We use a unique dataset containing all RPKI Route Origin Authorizations (ROAs) from the moment RPKI was first deployed, more than 8 years ago. We combine this dataset with BGP announcements from more than 3,300 BGP collectors worldwide. Our analysis shows the after a gradual start, RPKI has seen a rapid increase in adoption over the past two years. We also show that although misconfigurations were rampant when RPKI was first deployed (causing many announcements to appear as invalid) they are quite rare today. We develop a taxonomy of invalid RPKI announcements, then quantify their prevalence. We further identify suspicious announcements indicative of prefix hijacking and present case studies of likely hijacks.
+Overall, we conclude that while misconfigurations still do occur, RPKI is "ready for the big screen," and routing security can be increased by dropping invalid announcements. To foster reproducibility and further studies, we release all RPKI data and the tools we used to analyze it into the public domain."
+
+---
+
+
+MARKER : "2019_B_Yeganeh_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Yeganah, Bahador; Durairajan, Ramakrishnan; Rejaie, Reza; Willinger, Walter"
+GEOLOC : "Eugene, OR, US; Eugene, OR, US; Eugene, OR, US; Princeton, NJ, US"
+TITLE  : "How Cloud Traffic Goes Hiding:A Study of Amazon’s Peering Fabric"
+YEAR   : "2019_10"
+CTITLE : "IMC '19: Proceedings of the Internet Measurement Conference"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3355369.3355602"
+TOPKEY : "topology-as-relationships, ipxs"
+ABS    : "The growing demand for an ever-increasing number of cloud services is profoundly transforming the Internet's interconnection or peering ecosystem, and one example is the emergence of "virtual private interconnections (VPIs)". However, due to the underlying technologies, these VPIs are not publicly visible and traffic traversing them remains largely hidden as it bypasses the public Internet. In particular, existing techniques for inferring Internet interconnections are unable to detect these VPIs and are also incapable of mapping them to the physical facility or geographic region where they are established.
+In this paper, we present a third-party measurement study aimed at revealing all the peerings between Amazon and the rest of the Internet. We describe our technique for inferring these peering links and pay special attention to inferring the VPIs associated with this largest cloud provider. We also present and evaluate a new method for pinning (i.e., geo-locating) each end of the inferred interconnections or peering links. Our study provides a first look at Amazon's peering fabric. In particular, by grouping Amazon's peerings based on their key features, we illustrate the specific role that each group plays in how Amazon peers with other networks."
+
+---
+
+MARKER : "2019_P_Richter_ICM"
+TYPE   : "in_proceedings"
+AUTHOR : "Richter, Philipp; Berger, Arthur"
+GEOLOC : "Cambridge, MA, US"
+TITLE  : "Scanning the Scanners: Sensing the Internet from a MassivelyDistributed Network Telescope"
+YEAR   : "2019_10"
+CTITLE : "IMC '19: Proceedings of the Internet Measurement Conference"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3355369.3355595"
+TOPKEY : "passive-2018"
+ABS    : "Scanning of hosts on the Internet to identify vulnerable devices and services is a key component in many of today's cyberattacks. Tracking this scanning activity, in turn, provides an excellent signal to assess the current state-of-affairs for many vulnerabilities and their exploitation. So far, studies tracking scanning activity have relied on unsolicited traffic captured in darknets, focusing on random scans of the address space. In this work, we track scanning activity through the lens of unsolicited traffic captured at the firewalls of some 89,000 hosts of a major Content Distribution Network (CDN). Our vantage point has two distinguishing features compared to darknets: (i) it is distributed across some 1,300 networks, and (ii) its servers are live, offering services and thus emitting traffic. While all servers receive a baseline level of probing from Internet-wide scans, i.e., scans targeting random subsets of or the entire IPv4 space, we show that some 30% of all logged scan traffic is the result of localized scans. We find that localized scanning campaigns often target narrow regions in the address space, and that their characteristics in terms of target selection strategy and scanned services differ vastly from the more widely known Internet-wide scans. Our observations imply that conventional darknets can only partially illuminate scanning activity, and may severely underestimate widespread attempts to scan and exploit individual services in specific prefixes or networks. Our methods can be adapted for individual network operators to assess if they are subjected to targeted scanning activity."
+
+---
+
+MARKER : "2020_Y_Huang_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Huang, Yuchen; Rabinovich, Michael; Al-Dalky, Rami"
+GEOLOC : "Cleveland, OH, US"
+TITLE  : "FlashRoute: Efficient Traceroute on a Massive Scale"
+YEAR   : "2020_10"
+CTITLE : "IMC '20: Proceedings of the ACM Internet Measurement Conference"
+PAGE   : "(13 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3419394.3423619"
+TOPKEY : "topology-generic"
+ABS    : "We propose a new traceroute tool, FlashRoute for efficient large-scale topology discovery. FlashRoute reduces the time required for tracerouting the entire /24 IPv4 address space by a factor of three and half compared to previous state of the art. Additionally, we present a new technique to measure hop-distance to a destination using a single probe and uncover a bias of the influential ISI Census hitlist [18] in topology discovery."
+
+---
+
+MARKER : "2020_Z_Jin_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Jin, Zitong; Shi, Xingang; Yang, Yan; Yin, Xia; Wang, Zhiliang; Wu, Jianping"
+GEOLOC : "Beijing, China"
+TITLE  : "TopoScope: Recover AS Relationships From Fragmentary Observations"
+YEAR   : "2020_10"
+CTITLE : "IMC '20: Proceedings of the ACM Internet Measurement Conference"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3419394.3423627"
+TOPKEY : "topology-as-organization"
+ABS    : "Knowledge of the Internet topology and the business relationships between Autonomous Systems (ASes) is the basis for studying many aspects of the Internet. Despite the significant progress achieved by latest inference algorithms, their inference results still suffer from errors on some critical links due to limited data, thus hindering many applications that rely on the inferred relationships. We take an in-depth analysis on the challenges inherent in the data, especially the limited coverage and biased concentration of the vantage points (VPs). Some aspects of them have been largely overlooked but will become more exacerbated when the Internet further grows. Then we develop TopoScope, a framework for accurately recovering AS relationships from such fragmentary observations. TopoScope uses ensemble learning and Bayesian Network to mitigate the observation bias originating not only from a single VP, but also from the uneven distribution of available VPs. It also discovers the intrinsic similarities between groups of adjacent links, and infers the relationships on hidden links that are not directly observable. Compared to state-of-the-art inference algorithms, TopoScope reduces the inference error by up to 2.7-4 times, discovers the relationships for around 30,000 upper layer hidden AS links, and is still more accurate and stable under more incomplete or biased observations."
+
+---
+
+MARKER : "2020_Z_Lin_ICM"
+TYPE   : "in_proceedings"
+AUTHOR : "Lin, Zinan; Jain, Alankar; Wang, Chen; Fanti, Giulia; Sekar"
+GEOLOC : "Pittsburgh, PA, US; Pittsburgh, PA, US; New York, NY, US; Pittsburgh, PA, US; Pittsburgh, PA, US"
+TITLE  : "Using GANs for Sharing Networked Time Series Data:Challenges, Initial Promise, and Open Questions"
+YEAR   : "2020_10"
+CTITLE : "IMC '20: Proceedings of the ACM Internet Measurement Conference"
+PAGE   : "(20 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3419394.3423643"
+TOPKEY : "topology-ark-itdk"
+ABS    : "Limited data access is a longstanding barrier to data-driven research and development in the networked systems community. In this work, we explore if and how generative adversarial networks (GANs) can be used to incentivize data sharing by enabling a generic framework for sharing synthetic datasets with minimal expert knowledge. As a specific target, our focus in this paper is on time series datasets with metadata (e.g., packet loss rate measurements with corresponding ISPs). We identify key challenges of existing GAN approaches for such workloads with respect to fidelity (e.g., long-term dependencies, complex multidimensional relationships, mode collapse) and privacy (i.e., existing guarantees are poorly understood and can sacrifice fidelity). To improve fidelity, we design a custom workflow called DoppelGANger (DG) and demonstrate that across diverse real-world datasets (e.g., bandwidth measurements, cluster requests, web sessions) and use cases (e.g., structural characterization, predictive modeling, algorithm comparison), DG achieves up to 43% better fidelity than baseline models. Although we do not resolve the privacy problem in this work, we identify fundamental challenges with both classical notions of privacy and recent advances to improve the privacy properties of GANs, and suggest a potential roadmap for addressing these challenges. By shedding light on the promise and challenges, we hope our work can rekindle the conversation on workflows for data sharing."
+
+---
+
+MARKER : "2020_C_Deccio_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Deccio, Casey; Hilton, Alden; Briggs, Michael; Avery, Trevin; Richardson, Robert"
+GEOLOC : "Provo, UT, US"
+TITLE  : "Behind Closed Doors: A Network Tale of Spoofing, Intrusion,and False DNS Security"
+YEAR   : "2020_10"
+CTITLE : "IMC '20: Proceedings of the ACM Internet Measurement Conference"
+PAGE   : "(13 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3419394.3423649"
+TOPKEY : "spoofer"
+ABS    : "Networks not employing destination-side source address validation (DSAV) expose themselves to a class of pernicious attacks which could be easily prevented by filtering inbound traffic purporting to originate from within the network. In this work, we survey the pervasiveness of networks vulnerable to infiltration using spoofed addresses internal to the network. We issue recursive Domain Name System (DNS) queries to a large set of known DNS servers worldwide, using various spoofed-source addresses. We classify roughly half of the 62,000 networks (autonomous systems) we tested as vulnerable to infiltration due to lack of DSAV. As an illustration of the dangers these networks expose themselves to, we demonstrate the ability to fingerprint the operating systems of internal DNS servers. Additionally, we identify nearly 4,000 DNS server instances vulnerable to cache poisoning attacks due to insufficient---and often non-existent---source port randomization, a vulnerability widely publicized 12 years ago."
+
+---
+
+MARKER : "2020_V_Giotsas_IMC"
+TYPE   : "in_proceedings"
+AUTHOR : "Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; V. Madhyastha; Katz-Bassett, Ethan"
+GEOLOC : "Lancashire, UK; New York City, NY, US; Gerais, Brazil;  Belo Horizonte, Brazil; New York City, NY, US; Ann Arbor, MI, US; New York City, NY, US"
+TITLE  : "Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes"
+YEAR   : "2020_10"
+CTITLE : "IMC '20: Proceedings of the ACM Internet Measurement Conference"
+PAGE   : "(19 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3419394.3423654"
+TOPKEY : "topology-ark-dnsnames, topology-generic"
+ABS    : "Many systems rely on traceroutes to monitor or characterize the Internet. The quality of the systems' inferences depends on the completeness and freshness of the traceroutes, but the refreshing of traceroutes is constrained by limited resources at vantage points. Previous approaches predict which traceroutes are likely out-of-date in order to allocate measurements, or monitor BGP feeds for changes that overlap traceroutes. Both approaches miss many path changes for reasons including the difficulty in predicting changes and the coarse granularity of BGP paths.
+This paper presents techniques to identify out-of-date traceroutes without issuing any measurements, even if a change is not visible at BGP granularity. We base our techniques on two observations. First, although BGP updates encode routes at AS granularity, routers issue updates when they change intra-domain routes or peering points within the same AS path. Second, route changes correlate across paths, and many publicly available traceroutes exist. Our techniques maintain an atlas of traceroutes by monitoring BGP updates and publicly available traceroutes for signals to mark overlapping atlas traceroutes as stale. We focus our analysis of traceroute path changes at the granularity of border router IPs which provides an abstraction finer than AS- or PoP-level but is not affected by the periodicity of intra-domain load balancers. Our evaluation indicates that 80% of the traceroutes that our techniques signal as stale have indeed changed, even though the AS hops remained the same. Our techniques combine to identify 79% of all border IP changes, without issuing a single online measurement."
+
+---
+
+MARKER : "2019_P_London_ACM"
+TYPE   : "in_journal"
+AUTHOR : "London, Palma; Vardi, Shai; Wierman, Adam"
+GEOLOC : "Pasadena, CA, USA; West Lafayette, IN, US; Pasadena, CA, US"
+TITLE  : "Logarithmic Communication for DistributedOptimization in Multi-Agent Systems"
+YEAR   : "2019_12"
+Serial : "Proceedings of the ACM on Measurement and Analysis of Computing Systems"
+PAGE   : "(29 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3366696"
+TOPKEY : "topology-as-relationships"
+ABS    : "Classically, the design of multi-agent systems is approached using techniques from distributed optimization such as dual descent and consensus algorithms. Such algorithms depend on convergence to global consensus before any individual agent can determine its local action. This leads to challenges with respect to communication overhead and robustness, and improving algorithms with respect to these measures has been a focus of the community for decades.
+This paper presents a new approach for multi-agent system design based on ideas from the emerging field of local computation algorithms. The framework we develop, LOcal Convex Optimization (LOCO), is the first local computation algorithm for convex optimization problems and can be applied in a wide-variety of settings. We demonstrate the generality of the framework via applications to Network Utility Maximization (NUM) and the distributed training of Support Vector Machines (SVMs), providing numerical results illustrating the improvement compared to classical distributed optimization approaches in each case."
+
+---
+
+MARKER : "2019_Y_Zhou_ACM"
+TYPE   : "in_journal"
+AUTHOR : "Zhou, You; Zhang, Youlin; Ma, Chaoyi; Chen, Shigang; O. Odegbile, Olufemi"
+GEOLOC : "Gainesville, Fl, US"
+TITLE  : "Generalized Sketch Families for Network TrafficMeasurement"
+YEAR   : "2019_12"
+SERIAL : "Proceedings of the ACM on Measurement and Analysis of Computing Systems"
+PAGE   : "(34 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3366699"
+TOPKEY : "passive-2015"
+ABS    : "Traffic measurement provides critical information for network management, resource allocation, traffic engineering, and attack detection. Most prior art has been geared towards specific application needs with specific performance objectives. To support diverse requirements with efficient and future-proof implementation, this paper takes a new approach to establish common frameworks, each for a family of traffic measurement solutions that share the same implementation structure, providing a high level of generality, for both size and spread measurements and for all flows. The designs support many options of performance-overhead tradeoff with as few as one memory update per packet and as little space as several bits per flow on average. Such a family-based approach will unify implementation by removing redundancy from different measurement tasks and support reconfigurability in a plug-n-play manner. We demonstrate the connection and difference in the design of these traffic measurement families and perform experimental comparisons on hardware/software platforms to find their tradeoff, which provide practical guidance for which solutions to use under given performance goals."
+
+---
+
+MARKER : "2019_N_Ivkin_ACM"
+TYPE   : "in_journal"
+AUTHOR : "Ivkin, Nikita; Ben Basat, Ran; Liu, Zaoxing; Einziger, Gil; Friedman, Roy; Braverman, Vladimir"
+GEOLOC : "New York, NY, US; Boston, MA, US; Pittsburgh, PA, US; Beersheba, IL; Haifa, IL; Baltimore, MD, US"
+TITLE  : "I Know What You Did Last Summer: Network Monitoring using Interval Queries"
+YEAR   : "2019_12"
+SERIAL : "Proceedings of the ACM on Measurement and Analysis of Computing Systems"
+PAGE   : "(28 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3366709"
+TOPKEY : "passive-2014, passive-2016, passive-2018"
+ABS    : "Modern network telemetry systems collect and analyze massive amounts of raw data in a space efficient manner. These require advanced capabilities such as drill down queries that allow iterative refinement of the search space. We present a first integral solution that (i) enables multiple measurement tasks inside the same data structure, (ii) supports specifying the time frame of interest as part of its queries, and (iii) is sketch-based and thus space efficient. Namely, our approach allows the user to define both the measurement task (e.g., heavy hitters, entropy estimation, count distinct, etc.) and the time frame of relevance (e.g., 5PM-6PM) at query time. Our approach provides accuracy guarantees and is the only space-efficient solution that offers such capabilities. Finally, we demonstrate how our system can be used for accurately pinpointing the start of a realistic DDoS attack."
+
+---
+
+MARKER : "2020_Y_Pi_ACM"
+TYPE   : "in_journal"
+AUTHOR : "Pi, Yibo; Jamin, Sugih; Danzig, Peter; Qian, Feng"
+GEOLOC : "Ann Arbor, MI, US; Ann Arbor, MI, US; Palo Alto, CA US; Minneapolis, MN, US"
+TITLE  : "Latency Imbalance Among Internet Load-Balanced Paths: A Cloud-Centric View"
+YEAR   : "2020_06"
+SERIAL : "Proceedings of the ACM on Measurement and Analysis of Computing Systems"
+PAGE   : "(29 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3392150"
+TOPKEY : "routeviews-prefix2as, topology-itdk, topology-as-relationships"
+ABS    : "Load balancers choose among load-balanced paths to distribute traffic as if it makes no difference using one path or another. This work shows that the latency difference between load-balanced paths (called latency imbalance ), previously deemed insignificant, is now prevalent from the perspective of the cloud and affects various latency-sensitive applications. In this work, we present the first large-scale measurement study of latency imbalance from a cloud-centric view. Using public cloud around the globe, we measure latency imbalance both between data centers (DCs) in the cloud and from the cloud to the public Internet. Our key findings include that 1) Amazon's and Alibaba's clouds together have latency difference between load-balanced paths larger than 20ms to 21% of public IPv4 addresses; 2) Google's secret in having lower latency imbalance than other clouds is to use its own well-balanced private WANs to transit traffic close to the destinations and that 3) latency imbalance is also prevalent between DCs in the cloud, where 8 pairs of DCs are found to have load-balanced paths with latency difference larger than 40ms. We further evaluate the impact of latency imbalance on three applications (i.e., NTP, delay-based geolocation and VoIP) and propose potential solutions to improve application performance. Our experiments show that all three applications can benefit from considering latency imbalance, where the accuracy of delay-based geolocation can be greatly improved by simply changing how \textttping measures the minimum path latency."
+
+---
+
+MARKER : "2020_B_Guillermo_PAM"
+TYPE   : "in_book"
+AUTHOR : "Baltra, Guillermo; Heidemann, John"
+GEOLOC : "Los Angeles, CA, US"
+TITLE  : "Improving Coverage of Internet Outage Detection in Sparse Blocks"
+YEAR   : "2020_03"
+SERIAL : "Passive and Active Measurement"
+PAGE   : "(17 pages)"
+URL    : "https://www.researchgate.net/publication/339990230_Improving_Coverage_of_Internet_Outage_Detection_in_Sparse_Blocks"
+TOPKEY : "ioda"
+ABS    : "There is a growing interest in carefully observing the reliability of the Internet’s edge. Outage information can inform our understanding of Internet reliability and planning, and it can help guide operations. Active outage detection methods provide results for more than 3M blocks, and passive methods more than 2M, but both are challenged by sparse blocks where few addresses respond or send traffic. We propose a new Full Block Scanning (FBS) algorithm to improve coverage for active scanning by providing reliable results for sparse blocks by gathering more information before making a decision. FBS identifies sparse blocks and takes additional time before making decisions about their outages, thereby addressing previous concerns about false outages while preserving strict limits on probe rates. We show that FBS can improve coverage by correcting 1.2M blocks that would otherwise be too sparse to correctly report, and potentially adding 1.7M additional blocks. FBS can be applied retroactively to existing datasets to improve prior coverage and accuracy."
+
+---
+
+MARKER : "2020_E_Rye_NIA"
+TYPE   : "online"
+AUTHOR : "C. Rye, Erik; Beverly, Robert"
+GEOLOC : "Monterey, CA, US"
+TITLE  : "Discovering the IPv6 Network Periphery"
+YEAR   : "2020_01"
+SERIAL : "Networking and Internet Architecture"
+PAGE   : "(16 pages)"
+URL    : "https://arxiv.org/abs/2001.08684"
+TOPKEY : "topology-as-classification, topology-ark-ipv6-routed48, topology-ark-activity"
+ABS    : "We consider the problem of discovering the IPv6 network periphery, i.e., the last hop router connecting endhosts in the IPv6 Internet. Finding the IPv6 periphery using active probing is challenging due to the IPv6 address space size, wide variety of provider addressing and subnetting schemes, and incomplete topology traces. As such, existing topology mapping systems can miss the large footprint of the IPv6 periphery, disadvantaging applications ranging from IPv6 census studies to geolocation and network resilience. We introduce "edgy," an approach to explicitly discover the IPv6 network periphery, and use it to find >~64M IPv6 periphery router addresses and >~87M links to these last hops -- several orders of magnitude more than in currently available IPv6 topologies. Further, only 0.2% of edgy's discovered addresses are known to existing IPv6 hitlists."
+
+---
+
+MARKER : "2020_B_Yeganeh_PAM"
+TYPE   : "in_book"
+AUTHOR : "Yeganeh, Bahador; Durairajan, Ramakrishnan; Rejale, Reza; Willinger, Walter"
+GEOLOC : "Euegene, OR, US; Euegene, OR, US; Euegene, OR, US; Princeton, NJ, US"
+TITLE  : "A First Comparative Characterization of Multi-cloud Connectivity in Today’s Internet"
+YEAR   : "2020_03"
+SERIAL : "Passive and Active Measurement"
+PAGE   : "(17 pages)"
+URL    : "https://www.researchgate.net/publication/339995263_A_First_Comparative_Characterization_of_Multi-cloud_Connectivity_in_Today's_Internet"
+TOPKEY : "topology-as-organizations, topology-skitter-itdk
+"
+ABS    : "Today’s enterprises are adopting multi-cloud strategies at an unprecedented pace. Here, a multi-cloud strategy specifies end-to-end connectivity between the multiple cloud providers (CPs) that an enterprise relies on to run its business. This adoption is fueled by the rapid build-out of global-scale private backbones by the large CPs, a rich private peering fabric that interconnects them, and the emergence of new third-party private connectivity providers (e.g., DataPipe, HopOne, etc.). However, little is known about the performance aspects, routing issues, and topological features associated with currently available multi-cloud connectivity options. To shed light on the tradeoffs between these available connectivity options, we take a cloud-to-cloud perspective and present in this paper the results of a cloud-centric measurement study of a coast-to-coast multi-cloud deployment that a typical modern enterprise located in the US may adopt. We deploy VMs in two regions (i.e., VA and CA) of each one of three large cloud providers (i.e., AWS, Azure, and GCP) and connect them using three different options: (i) transit provider-based best-effort public Internet (BEP), (ii) third-party provider-based private (TPP) connectivity, and (iii) CP-based private (CPP) connectivity. By performing active measurements in this real-world multi-cloud deployment, we provide new insights into variability in the performance of TPP, the stability in performance and topology of CPP, and the absence of transit providers for CPP."
+
+---
+
+MARKER : "2020_X_Chen_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Chen, Xiaoqi; Landau-Feibish, Shir; Braverman, Mark; Rexford, Jennifer"
+GEOLOC : "Princeton, NJ, US"
+TITLE  : "BeauCoup: Answering Many Network Traffic Queries, One Memory Update at a Time"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3387514.3405865"
+TOPKEY : "passive-2018
+ABS    : "Network administrators constantly monitor network traffic for congestion and attacks. They need to perform a large number of measurements on the traffic simultaneously, to detect different types of anomalies such as heavy hitters or super-spreaders. Existing techniques often focus on a single statistic (e.g., traffic volume) or traffic attribute (e.g., destination IP). However, performing numerous heterogeneous measurements within the constrained memory architecture of modern network devices poses significant challenges, due to the limited number of memory accesses allowed per packet. We propose BeauCoup, a system based on the coupon collector problem, that supports multiple distinct counting queries simultaneously while making only a small constant number of memory accesses per packet. We implement BeauCoup on PISA commodity programmable switches, satisfying the strict memory size and access constraints while using a moderate portion of other data-plane hardware resources. Evaluations show BeauCoup achieves the same accuracy as other sketch-based or sampling-based solutions using 4x fewer memory access."
+
+---
+
+MARKER : "2020_L_Yu_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Yu, Liangcheng; Sonchack, John; Liu, Vincent"
+GEOLOC : "Philadelphia, PA, US; Princeton, NJ, US; Philadelphia, PA, US"
+TITLE  : "Mantis: Reactive Programmable Switches"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3387514.3405870"
+TOPKEY : "passive-2019"
+ABS    : "For modern data center switches, the ability to---with minimum latency and maximum flexibility--- react to current network conditions is important for managing increasingly dynamic networks. The traditional approach to implementing this type of behavior is through a control plane that is orders of magnitude slower than the speed at which typical data center congestion events occur. More recent alternatives like programmable switches can remember statistics about passing traffic and adjust behavior accordingly, but unfortunately, their capabilities severely limit what can be done. In this paper, we present Mantis, a framework for implementing fine-grained reactive behavior on today's programmable switches with the help of a specialized reactive control plane architecture. Mantis is, thus, a combination of language for specifying dynamic components of packet processing and an optimized, general, and safe control loop for implementing them. Mantis provides a simple-to-reason-about set of abstractions for users, and the Mantis control plane can react to changes in the network in 10s of μs."
+
+---
+
+MARKER : "2020_J_Gong_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Gong, Junzhi; Li, Yuliang; Anwer, Bilal; Shaikh, Aman; Yu, Minlan"
+GEOLOC : "Cambridge, MA, US"
+TITLE  : "Microscope: Queue-based Performance Diagnosis for Network Functions"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(14 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3387514.3405876"
+TOPKEY : "passive-generic"
+ABS    : "By moving monolithic network appliances to software running on commodity hardware, network function virtualization allows flexible resource sharing among network functions and achieves scalability with low cost. However, due to resource contention, network functions can suffer from performance problems that are hard to diagnose. In particular, when many flows traverse a complex topology of NF instances, it is hard to pinpoint root causes for a flow experiencing performance issues such as low throughput or high latency. Simply maintaining resource counters at individual NFs is not sufficient since the effect of resource contention can propagate across NFs and over time. In this paper, we introduce Microscope, a performance diagnosis tool, for network functions that leverages queuing information at NFs to identify the root causes (i.e., resources, NFs, traffic patterns of flows etc.). Our evaluation on realistic NF chains and traffic shows that we can correctly capture root causes behind 89.7% of performance impairments, up to 2.5 times more than the state-of-the-art tools with low overhead."
+
+---
+
+MARKER : "2020_Q_Huang_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Huang, Qun; Sun, Haifeng; P. C. Lee, Patrick; Bai, Wei; Zhu, Feng; Bao, Yungang"
+GEOLOC : "Beijing, CN; Beijing, CN; Hong Kong, HK; Redmond, WA, US; Beijing, CN; Beijing, CN"
+TITLE  : "OmniMon: Re-architecting Network Telemetry with Resource Efficiency and Full Accuracy"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(18 pages)"
+URL    : "https://dl.acm.org/doi/10.1145/3387514.3405877"
+TOPKEY : "passive_2018"
+ABS    : "Network telemetry is essential for administrators to monitor massive data traffic in a network-wide manner. Existing telemetry solutions often face the dilemma between resource efficiency (i.e., low CPU, memory, and bandwidth overhead) and full accuracy (i.e., error-free and holistic measurement). We break this dilemma via a network-wide architectural design OmniMon, which simultaneously achieves resource efficiency and full accuracy in flow-level telemetry for large-scale data centers. OmniMon carefully coordinates the collaboration among different types of entities in the whole network to execute telemetry operations, such that the resource constraints of each entity are satisfied without compromising full accuracy. It further addresses consistency in network-wide epoch synchronization and accountability in error-free packet loss inference. We prototype OmniMon in DPDK and P4. Testbed experiments on commodity servers and Tofino switches demonstrate the effectiveness of OmniMon over state-of-the-art telemetry designs."
+
+---
+
+MARKER : "2020_N_Atre_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Atre, Nirav; Sherry, Justine; Wang, Weina; S. Berger, Daniel"
+GEOLOC : "Pittsburgh, PA, US"
+TITLE  : "Caching with Delayed Hits"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(19 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3387514.3405883"
+TOPKEY : "passive_2019"
+ABS    : "Caches are at the heart of latency-sensitive systems. In this paper, we identify a growing challenge for the design of latency-minimizing caches called delayed hits. Delayed hits occur at high throughput, when multiple requests to the same object queue up before an outstanding cache miss is resolved. This effect increases latencies beyond the predictions of traditional caching models and simulations; in fact, caching algorithms are designed as if delayed hits simply didn't exist. We show that traditional caching strategies -- even so called 'optimal' algorithms -- can fail to minimize latency in the presence of delayed hits. We design a new, latency-optimal offline caching algorithm called belatedly which reduces average latencies by up to 45% compared to the traditional, hit-rate optimal Belady's algorithm. Using belatedly as our guide, we show that incorporating an object's 'aggregate delay' into online caching heuristics can improve latencies for practical caching systems by up to 40%. We implement a prototype, Minimum-AggregateDelay (mad), within a CDN caching node. Using a CDN production trace and backends deployed in different geographic locations, we show that mad can reduce latencies by 12-18% depending on the backend RTTs."
+
+---
+
+MARKER : "2020_A_Rashelbach_SIGCOMM"
+TYPE   : "in_proceedings"
+AUTHOR : "Rashelbach, Alon; Rottenstreich, Ori; Silberstein, Mark"
+GEOLOC : "Haifa, IL"
+TITLE  : "A Computational Approach to Packet Classification"
+YEAR   : "2020_07"
+CTITLE : "Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication"
+PAGE   : "(15 pages)"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3387514.3405886"
+TOPKEY : "passive-2019"
+ABS    : "Multi-field packet classification is a crucial component in modern software-defined data center networks. To achieve high throughput and low latency, state-of-the-art algorithms strive to fit the rule lookup data structures into on-die caches; however, they do not scale well with the number of rules.
+We present a novel approach, NuevoMatch, which improves the memory scaling of existing methods. A new data structure, Range Query Recursive Model Index (RQ-RMI), is the key component that enables NuevoMatch to replace most of the accesses to main memory with model inference computations. We describe an efficient training algorithm that guarantees the correctness of the RQ-RMI-based classification. The use of RQ-RMI allows the rules to be compressed into model weights that fit into the hardware cache. Further, it takes advantage of the growing support for fast neural network processing in modern CPUs, such as wide vector instructions, achieving a rate of tens of nanoseconds per lookup.
+Our evaluation using 500K multi-field rules from the standard ClassBench benchmark shows a geometric mean compression factor of 4.9x, 8x, and 82x, and average performance improvement of 2.4x, 2.6x, and 1.6x in throughput compared to CutSplit, NeuroCuts, and TupleMerge, all state-of-the-art algorithms1."
+
+---
 
 MARKER : "2019_r_niranjana_springer_20191408"
 TYPE   : "in_journal"
