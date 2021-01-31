@@ -214,6 +214,7 @@ def main(argv):
     global seen_papers
     global seen_authors
     global author_data
+    global papers
     global topkeys
     global topkey_2_dataset
     global re_yml
@@ -239,6 +240,9 @@ def main(argv):
 
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
+
+    # Print all the papers found to their respective JSON files.
+    print_papers()
 
 ############################### Helper Methods #################################
 
@@ -298,7 +302,6 @@ def parse_data_papers():
                 if "---" in curr_line:
                     if len(curr_paper) != 0:
                         parse_paper(curr_paper)
-                        return
                     curr_paper = ""
                     curr_line = file.readline()
                     continue
@@ -401,24 +404,26 @@ def parse_paper(curr_paper):
                 paper["authors"].append({
                     "person":"person:{}".format(author_id)
                 })
+
+                # Add missing authors to author_data.
+                if author_id not in author_data:
+                    add_author(author_id)
                     
         elif "GEOLOC" in line[0]:
             locations = line[1].split(";")
 
             # Edge Case: Apply the single location to all authors.
-            if len(locations) != len(paper["authors"]):
+            if len(locations) == 1 and len(paper["authors"]) != 1:
                 location = locations[0].strip()
                 for author in paper["authors"]:
                     author_id = author["person"].split(":")[1]
-                    author_orgs = update_author_data(author_id, location)
-                    author["oganizations"] = author_orgs
+                    update_author_data(author_id, location)
                 continue
             
             # Iterate over each location and author object.
             for location, author in zip(locations, paper["authors"]):
                 author_id = author["person"].split(":")[1]
-                author_orgs = update_author_data(author_id, location.strip())
-                author["oganizations"] = author_orgs
+                update_author_data(author_id, location.strip())
 
         elif "TITLE" in line[0]:
             title = line[1]
@@ -501,6 +506,15 @@ def parse_paper(curr_paper):
             })
 
         elif "URL" in line[0]:
+            
+            # Edge Case: DOI was (likely) given in the URL block.
+            if len(line) <= 2:
+                paper["resources"].append({
+                    "name":"URL",
+                    "url":"https://dl.acm.org/doi/{}".format(line[1])
+                })
+                continue
+
             url = "{}:{}".format(line[1], line[2].replace('"',""))
             paper["resources"].append({
                 "name":"URL",
@@ -519,8 +533,9 @@ def parse_paper(curr_paper):
             else:
                 paper["annotation"] += " {}".format(line[1])
 
-    # Store the current paper
-    papers[paper["id"]] = paper
+    # Only add papers that have ID.
+    if "id" in paper:
+        papers[paper["id"]] = paper
 
 
 # Helper function to update author_data.
@@ -538,24 +553,50 @@ def update_author_data(author_id, organization):
             author_obj["organization"].append(organization)
     else:
         # Add the author to author_data
-        name = author_id.split("__")
-        first_name = name[-1]
-        last_name = " ".join(map(str, name[:-1]))
-        file_path = "sources/person/{}.json".format(author_id)
+        add_author(author_id)
+        # Add the organization.
+        author_data[author_id]["organization"].append(organization)
 
-        # Add the author object to the author_data.
-        author_data[author_id] = {
-            "id":"person:{}".format(author_id),
-            "__typename":"person",
-            "filename":file_path,
-            "nameLast":first_name,
-            "nameFirst":last_name,
-            "organization":[
-                organization
-            ]
-        }
-        author_orgs = author_data[author_id]["organization"]
-        return author_orgs
+    return author_data[author_id]["organization"]
+
+
+# Helper function add an author to author_data.
+#   @input author_id: The formatted ID for the current author.
+def add_author(author_id):
+    global author_data
+
+    # Add the author to author_data
+    name = author_id.split("__")
+    first_name = name[-1]
+    last_name = " ".join(map(str, name[:-1]))
+    file_path = "sources/person/{}.json".format(author_id)
+
+    author_data[author_id] = {
+        "id":"person:{}".format(author_id),
+        "__typename":"person",
+        "filename":file_path,
+        "nameLast":first_name,
+        "nameFirst":last_name,
+        "organization":[]
+    }
+
+
+# Print each paper to their respective JSON files.
+def print_papers():
+    global seen_authors
+    global author_data
+    global seen_papers
+    global papers
+
+    # Iterate over each paper and print their JSON.
+    for paper_id in papers:
+        paper = papers[paper_id]
+        # Update any author data incase new organizations were added.
+        for author_object in paper["authors"]:
+            author_id = author_object["person"].split(":")[1]
+            author_orgs = author_data[author_id]["organization"]
+            author_object["organizations"] = author_orgs
+        print(json.dumps(paper, indent=4))
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
