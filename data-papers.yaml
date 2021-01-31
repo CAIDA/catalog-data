@@ -26,7 +26,7 @@ YEAR   : "2020-10"
 DOI    : "10.1145/3419394"
 PAGE   : "230-246"
 URL    : "https://doi.org/10.1145/3419394.3423613"
-TOPKEY : "topoplogy-as-relationships, topology-as-organization, topology-generic, routeviews-prefix2as"
+TOPKEY : "topology-as-relationships, topology-as-organization, topology-generic, routeviews-prefix2as"
 GEOLOC : "NY, US; NY, US; NY, US; NY, US; Belo Horizonte, BR; Lancaster, UK; NY, US;"
 ABS    : "The Tier-1 ISPs have been considered the Internet’s backbone since the dawn of the modern Internet 30 years ago, as they guarantee global reachability. However, their influence and importance are waning as Internet flattening decreases the demand for transit services and increases the importance of
 private interconnections. Conversely, major cloud providers –
