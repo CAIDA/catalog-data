@@ -244,6 +244,9 @@ def main(argv):
     # Print all the papers found to their respective JSON files.
     print_papers()
 
+    # Print all the papers found to their respective JSON files.
+    print_authors()
+
 ############################### Helper Methods #################################
 
 # Add each paper's ID to seen_papers from the source/paper directory.
@@ -583,9 +586,7 @@ def add_author(author_id):
 
 # Print each paper to their respective JSON files.
 def print_papers():
-    global seen_authors
     global author_data
-    global seen_papers
     global papers
 
     # Iterate over each paper and print their JSON.
@@ -602,6 +603,24 @@ def print_papers():
         file_path = "sources/paper/{}.json".format(paper_id)
         with open(file_path, "w") as paper_file:
             print(json.dumps(paper, indent=4), file=paper_file)
+
+
+# Print each author to their respective JSON files.
+def print_authors():
+    global seen_authors
+    global author_data
+
+    # Iterate over each author and print their JSON.
+    for author_id in author_data:
+        author = author_data[author_id]
+        if "filename" in author:
+            file_path = author["filename"]
+        else:
+            file_path = "sources/person/{}.json".format(author_id)
+
+        # Create a new file, or update the current file for each paper.
+        with open(file_path, "w") as author_file:
+           print(json.dumps(author, indent=4), file=author_file)
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
