@@ -53,7 +53,8 @@ import os
 # Datasets
 seen_papers = set()     # Will hold all found paper IDs.
 seen_authors = set()    # Will hold all found author IDs.
-author_data = {}            # Will map all authors IDs to their JSON.
+author_data = {}        # Will map all authors IDs to their JSON.
+papers = {}             # Will hold each paper.     
 
 # Definitions
 topkeys = {
@@ -80,7 +81,7 @@ topkeys = {
 type_2_bibtex = {
     "in_proceedings":"INPROCEEDINGS",   # Workshops, conference proceedings.
     "in_journal":"ARTICLE",             # Official published journal, magazine article.
-    "online":"?",                       # Online publication (e.g. arxiv, preprint).
+    "online":"ARTICLE",                 # Online publication (e.g. arxiv, preprint).
     "tech. report":"TECHREPORT",        # Technical reports.
     "tech report":"TECHREPORT",
     "tech_report":"TECHREPORT",
@@ -91,7 +92,7 @@ type_2_bibtex = {
     "!PhD thesis":"PHDTHESIS",          # PhD thesis.
     "PhD thesis":"PHDTHESIS",
     "class report":"?",                 # Not so common.
-    "presentation":"?",                 # Not so common.
+    "presentation":"PRESENTATION",      # Not so common.
     "patent":"?"
 }
 topkey_2_dataset = {
@@ -297,6 +298,7 @@ def parse_data_papers():
                 if "---" in curr_line:
                     if len(curr_paper) != 0:
                         parse_paper(curr_paper)
+                        return
                     curr_paper = ""
                     curr_line = file.readline()
                     continue
@@ -325,6 +327,7 @@ def parse_data_papers():
 def parse_paper(curr_paper):
     global author_data
     global type_2_bibtex
+    global papers
 
     # Dictionary that will be printed as a JSON.
     paper = {
@@ -353,7 +356,7 @@ def parse_paper(curr_paper):
             name = line[1]
 
             # Edge Case: Skip seen papers.
-            if name in seen_papers:
+            if name in seen_papers or name in papers:
                 return
 
             paper["id"] = name
@@ -404,16 +407,17 @@ def parse_paper(curr_paper):
 
             # Edge Case: Apply the single location to all authors.
             if len(locations) != len(paper["authors"]):
+                location = locations[0].strip()
                 for author in paper["authors"]:
                     author_id = author["person"].split(":")[1]
-                    author_orgs = update_author_data(author_id, locations[0])
+                    author_orgs = update_author_data(author_id, location)
                     author["oganizations"] = author_orgs
                 continue
             
             # Iterate over each location and author object.
             for location, author in zip(locations, paper["authors"]):
                 author_id = author["person"].split(":")[1]
-                author_orgs = update_author_data(author_id, location)
+                author_orgs = update_author_data(author_id, location.strip())
                 author["oganizations"] = author_orgs
 
         elif "TITLE" in line[0]:
@@ -475,7 +479,7 @@ def parse_paper(curr_paper):
             paper["number"] = number
 
         elif "PAGE" in line[0]:
-            pages = line[1]
+            pages = line[1].replace("(", "").replace(")", "")
             paper["pages"] = pages
             paper["bibtextFields"]["pages"] = pages
 
@@ -497,7 +501,7 @@ def parse_paper(curr_paper):
             })
 
         elif "URL" in line[0]:
-            url = line[1]
+            url = "{}:{}".format(line[1], line[2].replace('"',""))
             paper["resources"].append({
                 "name":"URL",
                 "url":url
@@ -510,10 +514,13 @@ def parse_paper(curr_paper):
             paper["bibtextFields"]["institutions"] = line[1].replace('"',"")
         
         elif "REMARK" in line[0] or "PLACE" in line[0]:
-            if len(paper["annotation"] != 0):
+            if "annotation" not in paper or len(paper["annotation"]) != 0:
                 paper["annotation"] = line[1]
             else:
                 paper["annotation"] += " {}".format(line[1])
+
+    # Store the current paper
+    papers[paper["id"]] = paper
 
 
 # Helper function to update author_data.
