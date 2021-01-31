@@ -53,7 +53,6 @@ import os
 
 # Datasets
 seen_papers = set()     # Will hold all found paper IDs.
-seen_authors = set()    # Will hold all found author IDs.
 author_data = {}        # Will map all authors IDs to their JSON.
 papers = {}             # Will hold each paper.     
 
@@ -209,7 +208,6 @@ data_papers = None
 
 def main(argv):
     global seen_papers
-    global seen_authors
     global author_data
     global papers
     global topkeys
@@ -232,8 +230,8 @@ def main(argv):
     # Update seen_papers with papers currently in sources/paper/
     update_seen_papers()
 
-    # Update seen_authors with all authors found in sources/person/
-    update_seen_authors()
+    # Update author_data with all authors found in sources/person/
+    update_author_data()
 
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
@@ -259,9 +257,8 @@ def update_seen_papers():
         seen_papers.add(file)
 
 
-# Add each author's ID to seen_authors, and their JSON data to author_data.
-def update_seen_authors():
-    global seen_authors
+# Add each author's JSON data to author_data.
+def update_author_data():
     global author_data
 
     for file in os.listdir("sources/person"):
@@ -276,7 +273,6 @@ def update_seen_authors():
         
         # Store the author's data.
         author_name = data["id"].split(":")[1]
-        seen_authors.add(author_name)
         author_data[author_name] = data
 
 
@@ -417,13 +413,13 @@ def parse_paper(curr_paper):
                 location = locations[0].strip()
                 for author in paper["authors"]:
                     author_id = author["person"].split(":")[1]
-                    update_author_data(author_id, location)
+                    add_author_data(author_id, location)
                 continue
             
             # Iterate over each location and author object.
             for location, author in zip(locations, paper["authors"]):
                 author_id = author["person"].split(":")[1]
-                update_author_data(author_id, location.strip())
+                add_author_data(author_id, location.strip())
 
         elif "TITLE" in line[0]:
             title = line[1]
@@ -561,7 +557,7 @@ def parse_paper(curr_paper):
 #   @input author_id: The formatted ID for the current author.
 #   @input location: The organization that will be added.
 #   @return author_orgs: The list of this author's organizations.
-def update_author_data(author_id, organization):
+def add_author_data(author_id, organization):
     global author_data
 
     # Add author from author_data, else the current location.
@@ -623,7 +619,6 @@ def print_papers():
 
 # Print each author to their respective JSON files.
 def print_authors():
-    global seen_authors
     global author_data
 
     # Iterate over each author and print their JSON.
