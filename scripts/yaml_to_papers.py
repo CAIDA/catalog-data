@@ -590,8 +590,8 @@ def add_author(author_id):
         "id":"person:{}".format(author_id),
         "__typename":"person",
         "filename":file_path,
-        "nameLast":first_name,
-        "nameFirst":last_name,
+        "nameLast":last_name,
+        "nameFirst":first_name,
         "organization":[]
     }
 
