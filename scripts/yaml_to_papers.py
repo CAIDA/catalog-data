@@ -591,12 +591,17 @@ def print_papers():
     # Iterate over each paper and print their JSON.
     for paper_id in papers:
         paper = papers[paper_id]
+        
         # Update any author data incase new organizations were added.
         for author_object in paper["authors"]:
             author_id = author_object["person"].split(":")[1]
             author_orgs = author_data[author_id]["organization"]
             author_object["organizations"] = author_orgs
-        print(json.dumps(paper, indent=4))
+        
+        # Create a new file for each paper.
+        file_path = "sources/paper/{}.json".format(paper_id)
+        with open(file_path, "w") as paper_file:
+            print(json.dumps(paper, indent=4), file=paper_file)
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
