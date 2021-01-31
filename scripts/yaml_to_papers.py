@@ -340,15 +340,30 @@ def parse_paper(curr_paper):
     for line in curr_paper:
         # Split the current line between the TOPKEY, and its value.
         line = line.split(":")
-        line[1] = line[1].replace('"',"").strip()
 
         # Edge Case: Skip empty lines.
-        if len(line) <= 0:
+        if len(line) <= 1:
             continue
+        
+        # Remove any whitespace, and the quotes around the data.
+        line[1] = line[1].replace('"',"").strip()
 
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
-            paper["id"] = line[1]
+            name = line[1]
+
+            # Edge Case: Skip seen papers.
+            if name in seen_papers:
+                return
+
+            paper["id"] = name
+
+            year = line[1][:4]
+            bibtext = "https://www.caida.org/publications/papers/{}/{}/bibtex.html".format(year, name[5:])
+            paper["resources"].append({
+                "name":"bibtex",
+                "url":bibtext
+            })  
                     
         elif "TYPE" in line[0]:
             type = line[1]
@@ -455,13 +470,9 @@ def parse_paper(curr_paper):
             volume = line[1]
             paper["bibtextFields"]["volume"] = volume
         
-        elif "CHAPTER" in line[0]:
-            # TODO: Unknown what to put for this.
-            pass
-
-        elif "ARTICLE" in line[0]:
-            # TODO: Unknow what to put for this.
-            pass
+        elif "CHAPTER" in line[0] or "ARTICLE" in line[0]:
+            number = line[1]
+            paper["number"] = number
 
         elif "PAGE" in line[0]:
             pages = line[1]
@@ -495,16 +506,14 @@ def parse_paper(curr_paper):
         elif "ABS" in line[0]:
            paper["description"] = line[1].replace('"',"")
 
-        elif "PLACE" in line[0]:
-            # TODO:
-            pass
-
         elif "PUBLISH" in line[0]:
             paper["bibtextFields"]["institutions"] = line[1].replace('"',"")
         
-        elif "REMARK" in line[0]:
-            # TODO:
-            pass
+        elif "REMARK" in line[0] or "PLACE" in line[0]:
+            if len(paper["annotation"] != 0):
+                paper["annotation"] = line[1]
+            else:
+                paper["annotation"] += " {}".format(line[1])
 
 
 # Helper function to update author_data.
@@ -515,7 +524,7 @@ def update_author_data(author_id, organization):
     global author_data
 
     # Add author from author_data, else the current location.
-    if author_id in author_data and"organization" in author_data[author_id]:
+    if author_id in author_data and "organization" in author_data[author_id]:
         # Edge Case: Add the current or to org if missing.
         if organization not in author_data[author_id]["organization"]:
             author_obj = author_data[author_id]
