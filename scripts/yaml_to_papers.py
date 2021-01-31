@@ -427,9 +427,13 @@ def parse_paper(curr_paper):
             paper["name"] = title
 
         elif "YEAR" in line[0]:
-            date = line[1].replace("-",".")
+            date = line[1].replace("-",".").replace("_",".")
             paper["datePublished"] = date
             paper["date"] = date
+            dates = date.split(".")
+            paper["bibtextFields"]["year"] = dates[0]
+            if len(dates) == 2:
+                paper["bibtextFields"]["month"] = dates[1]
         
         elif "TOPKEY" in line[0]:
             datasets = line[1].split(",")
