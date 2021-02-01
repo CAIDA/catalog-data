@@ -576,7 +576,7 @@ def add_author(author_id):
     name = author_id.split("__")
     first_name = name[-1]
     last_name = " ".join(map(str, name[:-1]))
-    file_path = "sources/person/{}.json".format(author_id)
+    file_path = "sources/person/{}__externallinks.json".format(author_id)
 
     author_data[author_id] = {
         "id":"person:{}".format(author_id),
@@ -604,7 +604,7 @@ def print_papers():
             author_object["organizations"] = author_orgs
         
         # Create a new file for each paper.
-        file_path = "sources/paper/{}.json".format(paper_id)
+        file_path = "sources/paper/{}__extrernallinks.json".format(paper_id)
         with open(file_path, "w") as paper_file:
             print(json.dumps(paper, indent=4), file=paper_file)
 
@@ -625,7 +625,7 @@ def print_authors():
         if "filename" in author:
             file_path = author["filename"]
         else:
-            file_path = "sources/person/{}.json".format(author_id)
+            file_path = "sources/person/{}__externallinks.json".format(author_id)
 
         # Create a new file, or update the current file for each paper.
         with open(file_path, "w") as author_file:
