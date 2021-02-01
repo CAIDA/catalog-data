@@ -335,6 +335,7 @@ def parse_paper(curr_paper):
             continue
         
         # Remove any whitespace, and the quotes around the data.
+        line[1] = ":".join(map(str, line[1:]))
         line[1] = line[1].replace('"',"").strip()
 
         # Check which TOPKEY is used for the current line.
@@ -404,7 +405,7 @@ def parse_paper(curr_paper):
                 author_id = author["person"].split(":")[1]
                 add_author_data(author_id, location.strip())
 
-        elif "TITLE" in line[0]:
+        elif "TITLE" in line[0] and "CTITLE" not in line[0]:
             title = line[1]
             paper["name"] = title
 
