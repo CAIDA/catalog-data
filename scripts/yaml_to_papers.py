@@ -78,23 +78,6 @@ topkeys = {
     "PUBLISH",
     "REMARK"
 }
-type_2_bibtex = {
-    "in_proceedings":"INPROCEEDINGS",   # Workshops, conference proceedings.
-    "in_journal":"ARTICLE",             # Official published journal, magazine article.
-    "online":"ARTICLE",                 # Online publication (e.g. arxiv, preprint).
-    "tech. report":"TECHREPORT",        # Technical reports.
-    "tech report":"TECHREPORT",
-    "tech_report":"TECHREPORT",
-    "in_book":"?",                      # Chapter in a book.
-    "BSc thesis":"?",                   # Not so common, bachelors thesis.
-    "BA thesis":"?",
-    "MSc thesis":"?",                   # Masters thesis.
-    "!PhD thesis":"PHDTHESIS",          # PhD thesis.
-    "PhD thesis":"PHDTHESIS",
-    "class report":"?",                 # Not so common.
-    "presentation":"PRESENTATION",      # Not so common.
-    "patent":"?"
-}
 topkey_2_dataset = {
   # "Anonymized Internet Traces -> traces"
   "passive-stats"                     : "passive-metadata", # TODO:
@@ -332,8 +315,11 @@ def parse_paper(curr_paper):
     # Dictionary that will be printed as a JSON.
     paper = {
         "__typename":"paper",
+        "type":"paper",
+        "authors":[],
         "bibtextFields":{},
-        "resources":[]
+        "links":[],
+        "resources":[],
     }
 
     # Split the current paper into each line.
@@ -370,13 +356,9 @@ def parse_paper(curr_paper):
                     
         elif "TYPE" in line[0]:
             type = line[1]
-            paper["bibtextFields"]["type"] = type_2_bibtex[type]
+            paper["bibtextFields"]["type"] = type
 
         elif "AUTHOR" in line[0]:
-            # Create a list of authors.
-            if "authors" not in paper:
-                paper["authors"] = []
-
             # Handle the two seperate ways that authors can be stored.
             authors = line[1]
 
@@ -437,10 +419,7 @@ def parse_paper(curr_paper):
         
         elif "TOPKEY" in line[0]:
             datasets = line[1].split(",")
-            # Edge Case: Add list for links if missing.
-            if "links" not in paper:
-                paper["links"] = []
-            
+
             # Iterate over each dataset and link them to catalog datasets.
             for dataset in datasets:
                 # Remove any whitespace.
@@ -542,7 +521,7 @@ def parse_paper(curr_paper):
             })
 
         elif "ABS" in line[0]:
-           paper["description"] = line[1].replace('"',"")
+            paper["description"] = line[1].replace('"',"")
 
         elif "PUBLISH" in line[0]:
             paper["bibtextFields"]["institutions"] = line[1].replace('"',"")
