@@ -53,6 +53,7 @@ import os
 
 # Datasets
 seen_papers = set()     # Will hold all found paper IDs.
+seen_authors = set()    # Will hold all found author IDs.
 author_data = {}        # Will map all authors IDs to their JSON.
 papers = {}             # Will hold each paper.     
 
@@ -191,6 +192,7 @@ data_papers = None
 
 def main(argv):
     global seen_papers
+    global seen_authors
     global author_data
     global papers
     global topkeys
@@ -242,6 +244,7 @@ def update_seen_papers():
 
 # Add each author's JSON data to author_data.
 def update_author_data():
+    global seen_authors
     global author_data
 
     for file in os.listdir("sources/person"):
@@ -257,6 +260,7 @@ def update_author_data():
         # Store the author's data.
         author_name = data["id"].split(":")[1]
         author_data[author_name] = data
+        seen_authors.add(author_name)
 
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
@@ -342,7 +346,7 @@ def parse_paper(curr_paper):
         if "MARKER" in line[0]:
             name = line[1]
 
-            # Edge Case: Skip seen papers.
+            # Edge Case: Skip seen or repeated papers.
             if name in seen_papers or name in papers:
                 return
 
@@ -607,11 +611,17 @@ def print_papers():
 
 # Print each author to their respective JSON files.
 def print_authors():
+    global seen_authors
     global author_data
 
     # Iterate over each author and print their JSON.
     for author_id in author_data:
         author = author_data[author_id]
+
+        # Edge Case: Skip updating author objects that already exist.
+        if author_id in seen_authors:
+            continue
+
         if "filename" in author:
             file_path = author["filename"]
         else:
