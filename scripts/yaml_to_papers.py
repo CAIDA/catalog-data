@@ -496,36 +496,39 @@ def parse_paper(curr_paper):
         elif "DOI" in line[0]:
             doi = line[1]
             
-            # Edge Case: Handle DOI's that aren't URLs.
-            if "https://dl.acm.org/doi/" not in doi:
-                doi = "https://dl.acm.org/doi/{}".format(doi)
+            # Currently unsure if this is a good way to handle DOI's.
+            # # Edge Case: Handle DOI's that aren't URLs.
+            # if "https:" not in doi:
+            #     doi = "https://dl.acm.org/doi/{}".format(doi)
             
             paper["resources"].append({
                 "name":"DOI",
-                "url":doi
+                "doi":doi
             })
 
         elif "URL" in line[0]:
             
-            # Edge Case: DOI was (likely) given in the URL block.
-            if len(line) <= 2:
-                paper["resources"].append({
-                    "name":"URL",
-                    "url":"https://dl.acm.org/doi/{}".format(line[1])
-                })
-                continue
+            url = line[1]
 
-            url = "{}:{}".format(line[1], line[2].replace('"',""))
+            # Currently unsure if this is a good way to handle DOI's.
+            # # Edge Case: DOI was (likely) given in the URL block.
+            # if "http" not in url:
+            #     paper["resources"].append({
+            #         "name":"URL",
+            #         "url":"https://dl.acm.org/doi/{}".format(line[1])
+            #     })
+            #     continue
+
             paper["resources"].append({
                 "name":"URL",
                 "url":url
             })
 
         elif "ABS" in line[0]:
-            paper["description"] = line[1].replace('"',"")
+            paper["description"] = line[1]
 
         elif "PUBLISH" in line[0]:
-            paper["bibtextFields"]["institutions"] = line[1].replace('"',"")
+            paper["bibtextFields"]["institutions"] = line[1]
         
         elif "REMARK" in line[0] or "PLACE" in line[0]:
             if "annotation" not in paper or len(paper["annotation"]) != 0:
