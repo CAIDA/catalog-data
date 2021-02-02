@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to use DZDB to find when a domain was active",
     "description" : "Using the DZDB API, query a domain and determine when it was last active",
-    "links": [{"to":"dataset:dzdb"},{"to":"software:dzdb_api"}],
+    "links": [{"to":"dataset:dzdb"},{"to":"software:dzdb_api"},{"to":"recipe:how_to_find_a_domains_ns_and_a_records"}],
     "tags" : [
         "last active",
         "dzdb"
@@ -86,4 +86,4 @@ A DNS zone is a group of hostnames that is managed by a single individual or org
 ### What is a zone file
 A zone file is a text file which contains the domain, nameserver, ip, and other relationships for the hostnames in a particular zone. DZDB tracks the daily changes to the TLD zone files, and records when a particular domain is first and last seen in the zone files.
 ### Notes on DNS Coffee API
-The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by contacting research@dns.coffee. 
+The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by contacting research@dns.coffee. To view a more comprehensive usage of the API, visit the "How to use DZDB to get all nameserver and ip records for a domain" recipe.
