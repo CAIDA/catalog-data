@@ -14,7 +14,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "caida.org/data/passive/passive_oc48_dataset.xml",
+            "url": "https://www.caida.org/data/passive/passive_2007_dataset.xml",
             "tags": [
                 "file"
             ]
