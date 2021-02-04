@@ -157,8 +157,8 @@ topkey_2_dataset = {
   "ddos-20070806"                     : "ddos-attack-2007",
 
   # "Other Datasets -> other"
-  "dns-rtt-generic"                   : "?",
-  "dns-root-gtld-rtt"                 : "dns-root-gtld-rtt",
+  "dns-rtt-generic"                   : "software:dnsstat",
+  "dns-root-gtld-rtt"                 : "dns_root_gtld_rtt",
   "peeringdb"                         : "peeringdb_archive",
   "ixps"                              : "ixps",
   "spoofer"                           : "spoofer",
