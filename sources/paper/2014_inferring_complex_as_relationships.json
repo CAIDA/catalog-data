@@ -1,0 +1,49 @@
+{
+    "id": "2014_inferring_complex_as_relationships",
+    "name": "Inferring Complex AS Relationships",
+    "datePublished": "2014.11",
+    "description": "The traditional approach of modeling relationships between ASes abstracts relationship types into three broad categories: transit, peering, and sibling. More complicated configurations exist, and understanding them may advance our knowledge of Internet economics and improve models of routing. We use BGP, traceroute, and geolocation data to extend CAIDA's AS relationship inference algorithm to infer two types of complex relationships: hybrid relationships, where two ASes have different relationships at different interconnection points, and partial transit relationships, which restrict the scope of a customer relationship to the provider's peers and customers. Using this new algorithm, we find 4.5% of the 90,272 provider-customer relationships observed in March 2014 were complex, including 1,071 hybrid relationships and 2,955 partial-transit relationships. Because most peering relationships are invisible, we believe these numbers are lower bounds. We used feedback from operators, and relationships encoded in BGP communities and RPSL, to validate 20% and 6.9% of our partial transit and hybrid inferences, respectively, and found our inferences have 92.9% and 97.0% positive predictive values. Hybrid relationships are not only established between large transit providers; in 57% of the inferred hybrid transit/peering relationships the customer had a customer cone of fewer than 5 ASes.",
+    "tags": [
+        "as relationships"
+    ],
+    "authors": [
+        {
+            "person": "person:Luckie_Matthew",
+            "organizations": [
+                "University of Waikato"
+            ]
+        },
+        {
+            "person": "person:giotsas__vasileios",
+            "organization": [
+                "University College London"
+            ]
+        },
+        {
+            "person": "person:huffaker__bradley",
+            "organization": [
+                "CAIDA, San Diego Supercomputer Center, University of California San Diego"
+            ]
+        },
+        {
+            "id": "person:claffy__kc",
+            "organization": [
+                "Department of Computer Science and Engineering, University of California, San Diego"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.caida.org/publications/papers/2014/inferring_complex_as_relationships/inferring_complex_as_relationships.pdf"
+        },
+        {
+            "name": "Public",
+            "url": "https://www.caida.org/publications/papers/2014/inferring_complex_as_relationships/"
+        },
+        {
+            "name": "Data Supplement",
+            "url": "https://publicdata.caida.org/datasets/2014-complex-data-supplement/"
+        }
+    ]
+}

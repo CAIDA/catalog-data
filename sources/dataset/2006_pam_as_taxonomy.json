@@ -1,0 +1,27 @@
+{
+    "id": "2006_pam_as_taxonomy",
+    "tags": [
+        "topology"
+    ],
+    "dateStart": "2006-03-01",
+    "organization": "CAIDA",
+    "status": "snapshot",
+    "dateEnd": "2006-03-01",
+    "access": "served",
+    "name": "Paper: AS Taxonomy Repository, PAM 2006",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/as-taxonomy",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "Data supplement for paper X. Dimitropoulos, D. Krioukov, G. Riley, and k. claffy, \"Revealing the Autonomous System Taxonomy: The Machine Learning Approach\", in Passive and Active Network Measurement Workshop (PAM), Mar 2006.  Copy of cider:/www/wcs/live-root/www-caida-org/data/active/as_taxonomy Consists of two files: as2attr.tgz and as_rel.tgz ",
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_public_aua"
+    ],
+    "links": []
+}

@@ -164,12 +164,10 @@ topkey_2_dataset = {
   "spoofer"                           : "spoofer",
 
   # "Paper Data and Tools -> paper"
-  "complex_as_relationships"          : "2014-complex-data-supplement",
-  "2006-pam-as-taxonomy"              : "2006-pam-as-taxonomy",
-  "2016-periscope"                    : "?",
-  "2013-midar"                        : "ark-midar",
-
-  # Software
+  "complex_as_relationships"          : "paper:2014_inferring_complex_as_relationships",
+  "2006-pam-as-taxonomy"              : "2006_pam_as_taxonomy",
+  "2016-periscope"                    : "software:periscope_looking_glass_api" # TODO: Add software,
+  "2013-midar"                        : "software:midar",
   "bgpstream"                         : "software:bgpstream",
   "scamper"                           : "software:scamper",
   "iffinder"                          : "software:iffinder",
@@ -458,7 +456,7 @@ def parse_paper(curr_paper):
 
 
                 # Append link to the dataset.
-                if "software:" in dataset:
+                if "software:" in dataset or "paper:" in dataset:
                     paper["links"].append({
                         "to":"{}".format(dataset)
                     })
