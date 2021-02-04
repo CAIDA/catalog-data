@@ -1,0 +1,31 @@
+{
+    "id": "passive_statistics",
+    "name": "Passive Statistics",
+    "organization": "CAIDA",
+    "description": "CAIDA routinely collects traces on several backbone OC192 links: equinix-chicago (since April 2008) and equinix-sanjose (since July 2008). These monthly traces of one hour each are provided to interested researchers on request in pcap files containing payload-stripped, anonymized traffic organized in the annual datasets listed below.",
+    "tags": [
+        "caida",
+        "passive",
+        "statistics"
+    ],
+    "status": "complete",
+    "dateStart":"2008.03",
+    "dateEnd":"2019.01",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/passive_trace_statistics.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "TODO"
+    ],
+    "links": [
+        {
+            "to": "dataset:passive_ipv6_launch"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "id": "passive_oc48",
+    "name": "OC48 Peering Point Traces",
+    "organization": "CAIDA",
+    "description": "This dataset contains anonymized passive traces taken at a west coast OC48 peering link for a large ISP in 2002 and 2003.",
+    "tags": [
+        "caida",
+        "passive",
+        "peering"
+    ],
+    "status": "complete",
+    "dateStart":"2011.06",
+    "dateEnd":"2012.06",
+    "resources": [
+        {
+            "name": "public",
+            "url": "caida.org/data/passive/passive_oc48_dataset.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "TODO"
+    ],
+    "links": [
+        {
+            "to": "software:coralreef"
+        }
+    ]
+}
