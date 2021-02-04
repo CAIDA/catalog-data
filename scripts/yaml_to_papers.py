@@ -101,7 +101,7 @@ topkey_2_dataset = {
   "passive-2019"                      : "passive-2008-2019",
 
   # "Topology with Archipelago -> ark"
-  "topology-generic"                  : "?",
+  "topology-generic"                  : "software:archipelago",
   "topology-ark-ipv4-traceroute"      : "ipv4_routed_24_topology",
   "topology-ark-ipv6-traceroute"      : "ipv6_allpref_topology",
   "topology-ark-itdk"                 : "internet-topology-data-kit",
@@ -113,9 +113,9 @@ topkey_2_dataset = {
   "topology-ark-ipv6_traceroute"      : "ipv6_allpref_topology",
   "topology-ark-dnsnames"             : ["ipv4_dnsnames","ipv6_dnsnames"],
   "topology-ark-dns-names"            : ["ipv4_dnsnames","ipv6_dnsnames"], 
-  "topology-ark-tod"                  : "?",
-  "topology-ark-activity"             : "?",
-  "topology-ark-vela"                 : "tool-vela",
+  "topology-ark-tod"                  : "software:vela",
+  "topology-ark-activity"             : "software:archipelago",
+  "topology-ark-vela"                 : "software:vela",
 
   # "Topology with Skitter -> skitter"
   "topology-skitter-ipv4"             : "skitter-traceroute",
