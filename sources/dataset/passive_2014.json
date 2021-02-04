@@ -1,6 +1,6 @@
 {
-    "id": "passive_2008-2019",
-    "name": "Anonymized Internet Traces (April 2008 - January 2019)",
+    "id": "passive_2014",
+    "name": "Anonymized Internet Traces 2014",
     "organization": "CAIDA",
     "description": "CAIDA's passive traces dataset contains traces collected from high-speed monitors on a commercial backbone link. The data collection started in April 2008 and ended in January 2019. These data are useful for research on the characteristics of Internet traffic, including application breakdown, security events, geographic and topological distribution, flow volume and duration. For an overview of all traces see the trace statistics page)",
     "tags": [
@@ -8,12 +8,10 @@
         "passive"
     ],
     "status": "complete",
-    "dateStart":"2008.04",
-    "dateEnd":"2019.01",
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/passive/passive_dataset.xml",
+            "url": "https://www.caida.org/data/passive/passive_2014_dataset.xml",
             "tags": [
                 "file"
             ]
@@ -24,7 +22,7 @@
     ],
     "links": [
         {
-            "to":"software:coralreef"
+            "to": "dataset:passive_2008-2019"
         }
     ]
 }
