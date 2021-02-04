@@ -1,6 +1,6 @@
 {
     "id": "ipv4_routed_24_topology",
-    "name": "The IPv4 Routed /24 Topology Dataset",
+    "name": "IPv4 Routed /24 Topology",
     "description": "This dataset contains information useful for studying the topology of the Internet. Data is collected by a globally distributed set of Ark monitors. The monitors use team-probing to distribute the work of probing the destinations among the available monitors.  We collect data by sending scamper probes continuously to destination IP addresses. Destinations are selected randomly from each routed IPv4 /24 prefix on the Internet such that a random address in each prefix is probed approximately every 24 hours (one probing cycle). Because team-probing distributes the probing work across all monitors, a single destination /24 will be probed by only one monitor in each probing cycle.",
     "tags": [
         "active",
@@ -9,6 +9,7 @@
         "ipv4"
     ],
     "status": "active",
+    "dataStart":"2007.09",
     "resources": [
         {
             "name": "public/restricted",
