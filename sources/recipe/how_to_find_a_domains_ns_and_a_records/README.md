@@ -14,7 +14,11 @@
     ],
     "authors":[
         {
-            "person": "person:pillai__vinay",
+            "person": "person:pillai__vinay", 
+            "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        },
+        {
+            "person": "person:lee__nicole",
             "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
         }
     ]
@@ -23,14 +27,14 @@
 
 ## **<ins>Introduction</ins>**
 
-The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers.
+The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DNS Coffee (DZDB) API, which requres an API Key. You may request an API key by contacting research@dns.coffee. 
 
 ## **<ins>Solution</ins>**
 The script will return a JavaScript object that contains the nameserver and domain responses for the queried domain. 
 
 ~~~javascript
     const googleDomainRecords = await getDomainRecords("google.com");
-    console.log(googleDomainRecords); 
+    console.log(JSON.stringify(googleDomainRecords, null, 2)); 
 ~~~
 
 For instance, the above code snippet will output the following object:
@@ -38,111 +42,123 @@ For instance, the above code snippet will output the following object:
 ~~~
 
 {
-   "type":"domain",
-   "link":"/domains/GOOGLE.COM",
-   "name":"GOOGLE.COM",
-   "nameservers":[
-      {
-         "type":"nameserver",
-         "link":"/nameservers/NS2.GOOGLE.COM",
-         "name":"NS2.GOOGLE.COM",
-         "response":{
-            "type":"nameserver",
-            "link":"/nameservers/NS2.GOOGLE.COM",
-            "name":"NS2.GOOGLE.COM",
-            "domains":[
-               {
-                  "type":"domain",
-                  "link":"/domains/HUMSI.ORG",
-                  "name":"HUMSI.ORG",
-                  "firstseen":"2020-09-08T00:00:00Z"
-               },
-               ...
-            ],
-            "archive_domains":[
-               {
-                  "type":"domain",
-                  "link":"/domains/TEZOY.COM",
-                  "name":"TEZOY.COM",
-                  "firstseen":"2020-09-07T00:00:00Z",
-                  "lastseen":"2020-09-07T00:00:00Z"
-               },
-               ...
-            ],
-            "domain_count":8220,
-            "archive_domain_count":51901,
-            "ipv4":[
-               {
-                  "type":"ip",
-                  "link":"/ip/216.239.34.10",
-                  "name":"216.239.34.10",
-                  "version":4
-               }
-            ],
-            "ipv4_count":1,
-            "archive_ipv4_count":0,
-            "ipv6":[
-               {
-                  "type":"ip",
-                  "link":"/ip/2001:4860:4802:34::a",
-                  "name":"2001:4860:4802:34::a",
-                  "version":6,
-                  "firstseen":"2018-02-23T00:00:00Z"
-               }
-            ],
-            "ipv6_count":1,
-            "archive_ipv6_count":0,
-            "zone":{
-               "name":"COM",
-               "firstseen":"2011-04-11T00:00:00Z",
-               "lastseen":"2020-09-08T00:00:00Z"
-            }
-         }
-      },
-      ...
-   ],
-   "nameserver_count":4,
-   "archive_nameserver_count":0,
-   "zone":{
-      "name":"COM",
-      "firstseen":"2011-04-11T00:00:00Z",
-      "lastseen":"2020-09-08T00:00:00Z"
-   }
+  "name": "GOOGLE.COM",
+  "nameserver_count": 4,
+  "archive_nameserver_count": 0,
+  "zone": {
+    "name": "COM",
+    "nameserver_count": 13,
+    "archive_nameserver_count": 0,
+    "import_data": {
+      "first_date": "2011-04-11T00:00:00Z",
+      "last_date": "2021-01-26T00:00:00Z",
+      "zone": "COM",
+      "records": 372976659,
+      "domains": 150301702,
+      "count": 3354
+    },
+    "root": {
+      "first_import": "2011-04-11T00:00:00Z",
+      "last_import": "2021-01-26T00:00:00Z"
+    }
+  },
+  "nameservers": [
+    {
+      "name": "NS2.GOOGLE.COM",
+      "domain_count": 8768,
+      "archive_domain_count": 54076,
+      "ipv4_count": 1,
+      "archive_ipv4_count": 0,
+      "ipv6_count": 1,
+      "archive_ipv6_count": 0,
+      "archive_domains": [
+        {
+          "name": "POWERWALLSIAM.COM",
+          "first_seen": "2021-01-25T00:00:00Z",
+          "last_seen": "2021-01-25T00:00:00Z"
+        },
+        ...
+      ],
+     "domains": [
+        {
+          "name": "PRIVATEBROKE.COM",
+          "first_seen": "2021-01-26T00:00:00Z"
+        },
+        ...
+     ],
+    "ipv4": [
+        {
+          "name": "216.239.36.10",
+          "version": 4
+        }
+      ],
+      "ipv6": [
+        {
+          "name": "2001:4860:4802:36::a",
+          "version": 6,
+          "first_seen": "2018-02-23T00:00:00Z"
+        }
+      ]
+    },
+    ...
+      ]
+    }
+  ]
 }
+    
 ~~~
 
 The script relies on the below function to handle querying the dzdb api.
 
 ~~~
 // Simplified API querying object
+var apiKey = "YOUR_API_KEY_HERE";
+
 const dns = (function(){
-    const corsProxy = "https://cors-anywhere.herokuapp.com";
-    const baseURL = "https://dns.coffee/api";
-    const getQueryUrl = (useCorsProxy, args)=>{
+    const baseURL = "https://api.dns.coffee/api/v0";
+    const getQueryUrl = (args)=>{
         const urlParts = [baseURL,...args]
-        if(useCorsProxy){
-            urlParts.unshift(corsProxy);
-        }
         return urlParts.join("/");
     }
     return {
         get(...args){
-            return fetch(getQueryUrl(this.useCorsProxy, args)).then((response)=>{
-                if(response.ok){
-                    return response.json().then((response)=>response.data);
+            return fetch(getQueryUrl(args), {
+                method: 'GET',
+                headers: {
+                    "Accept": 'application/json',
+                    "X-API-Key": apiKey
                 }
-                throw Error("API Query Failed");
-            });
+            }).then((response)=>{
+                const rootPromise = new Promise(async (rootResolve) => {
+                    if(response.ok) {
+                        data =  response.json().then((response)=>response.data);
+                        rootResolve(data)
+                    } else if(response.status == '429') { // case if rate-limit is reached
+                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after defaults to 2 seconds
+                        // Attempts to retry fetch after delay
+                        const promise = new Promise((resolve) => {
+                            setTimeout(function() {
+                                 data =  dns.get(args.join("/"))
+                                 resolve(data)
+                            }, delay)    
+                        }) 
+                        let responseData = await promise;
+                        rootResolve(responseData)
+                    } else {
+                        console.log(response)
+                        throw Error("API Query Failed");
+                    }
+                });
+                 return rootPromise; 
+            }) 
         },
-        useCorsProxy:true
     }
 })();
 ~~~
 
-This helper function can be used independently for making queries to the API, and simplifies the process of making queries, including the adding of a CORS proxy to the requests. 
+This helper function can be used independently for making queries to the API, and simplifies the process of making queries. 
 
 ~~~javascript
-dns.useCorsProxy = false; // Flag to use CORS proxy for requests (defaults to true)
 dns.get('domains','google.com'); // Queries https://dns.coffee/api/domains/google.com
 dns.get('/domains/google.com'); // Also accepts the format of the link returned in api responses
 dns.get('zones','com');
@@ -153,3 +169,5 @@ dns.get('zones','com');
 A DNS zone is a group of hostnames that is managed by a single individual or organization (Ex. The COM zone is the group of all .com domains).
 ### What is a zone file
 A zone file is a text file which contains the domain, nameserver, ip, and other relationships for the hostnames in a particular zone. DZDB tracks these relationships, and makes it possible to query for all the nameservers associated with a given domain, as well as all the ips associated with those nameservers.
+### Notes on DNS Coffee API
+The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by contacting research@dns.coffee. 
