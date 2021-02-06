@@ -4,6 +4,7 @@ word_score_id.json
 word_id_score.json
 # generated from pubdb
 sources/*/*__pubdb.json
+sources/*/*__externallinks.json
 id_word_score.json
 pubdb
 scripts/lib/__pycache__/
