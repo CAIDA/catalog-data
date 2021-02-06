@@ -1,0 +1,29 @@
+{
+    "id": "2014_dolphin_bulk_dns_resolution_tool",
+    "name": "Dolphin: Bulk DNS Resolution Tool",
+    "description": "This slideset was presented at: DHS Site Visit (CAIDA) (June 2014)",
+    "tags": [
+        "caida",
+        "topology",
+        "active data analysis",
+        "measurement methodology"
+    ],
+    "links": [],
+    "date": "2014.06",
+    "type": "PRESENTATION",
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/publications/presentations/2014/dolphin_dhs/",
+            "tags": [
+                "url"
+            ]
+        }
+    ],
+    "authors":[
+        {
+            "person": "hyun__young",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
+}

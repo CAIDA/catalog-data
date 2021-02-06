@@ -152,7 +152,7 @@ topkey_2_dataset = {
   "code-red worm"                     : "telescope_codered_worm",
 
   # "Denial of Service Attacks -> ddos"
-  "ddos-generic"                      : "?",
+  "ddos-generic"                      : "telescope_ddos",
   "ddos-20070804"                     : "ddos-attack-2007",
   "ddos-20070806"                     : "ddos-attack-2007",
 
@@ -166,19 +166,20 @@ topkey_2_dataset = {
   # "Paper Data and Tools -> paper"
   "complex_as_relationships"          : "paper:2014_inferring_complex_as_relationships",
   "2006-pam-as-taxonomy"              : "2006_pam_as_taxonomy",
-  "2016-periscope"                    : "software:periscope_looking_glass_api" # TODO: Add software,
+  "2016-periscope"                    : "software:periscope_looking_glass_api",
   "2013-midar"                        : "software:midar",
   "bgpstream"                         : "software:bgpstream",
   "scamper"                           : "software:scamper",
   "iffinder"                          : "software:iffinder",
-  "mapnet"                            : "software:mapnet",  # TODO: Add software
+  "mapnet"                            : "software:mapnet",
   "coralreef"                         : "software:coralreef",
-  "datcat"                            : "software:datcat", # TODO: Add software
-  "dolphin"                           : "software:dolphin", # TODO: Add software
-  "asfinder"                          : "software:asfinder",# TODO: Add software
-  "netgeo"                            : "software:netgeo", # TODO: Add software
+  "datcat"                            : "software:datcat",
+  "dolphin"                           : "media:2014_dolphin_bulk_dns_resolution_tool",
+  "asfinder"                          : "software:coralreef",
+  "netgeo"                            : "software:netgeo",
   "ioda"                              : "software:ioda"
 }
+alternate_links = ["software:", "media:", "paper:"]
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
 re_pbd = re.compile(r"__pubdb")
@@ -195,6 +196,7 @@ def main(argv):
     global papers
     global topkeys
     global topkey_2_dataset
+    global alternate_links
     global re_yml
     global re_jsn
     global re_pbd
@@ -313,6 +315,7 @@ def parse_paper(curr_paper):
     global author_data
     global type_2_bibtex
     global papers
+    global alternate_links
 
     # Dictionary that will be printed as a JSON.
     paper = {
@@ -342,7 +345,7 @@ def parse_paper(curr_paper):
 
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
-            name = line[1]
+            name = line[1].replace(" ", "")
 
             # Edge Case: Skip seen or repeated papers.
             if name in seen_papers or name in papers:
@@ -358,8 +361,8 @@ def parse_paper(curr_paper):
             })  
                     
         elif "TYPE" in line[0]:
-            type = line[1]
-            paper["bibtextFields"]["type"] = type
+            paper_type = line[1]
+            paper["bibtextFields"]["type"] = paper_type
 
         elif "AUTHOR" in line[0]:
             # Handle the two seperate ways that authors can be stored.
@@ -456,16 +459,21 @@ def parse_paper(curr_paper):
 
 
                 # Append link to the dataset.
-                if "software:" in dataset or "paper:" in dataset:
-                    paper["links"].append({
-                        "to":"{}".format(dataset)
-                    })
-                else:
+                alternate_link = False
+                for alternate in alternate_links:
+                    if alternate in dataset:
+                        paper["links"].append({
+                            "to":"{}".format(dataset)
+                        })
+                        alternate_link = True
+
+                # So long as the dataset isn't an alternate link, add it.
+                if not alternate_link:
                     # Edge Case: Handles datasets that are mapped to lists.
-                    if isinstance(dataset, list):
+                    if type(dataset) is list:
                         for data in dataset:
                             paper["links"].append({
-                                "to":"dataset:{}".format(dataset)
+                                "to":"dataset:{}".format(data)
                             })
                     else:
                         paper["links"].append({
@@ -497,30 +505,13 @@ def parse_paper(curr_paper):
 
         elif "DOI" in line[0]:
             doi = line[1]
-            
-            # Currently unsure if this is a good way to handle DOI's.
-            # # Edge Case: Handle DOI's that aren't URLs.
-            # if "https:" not in doi:
-            #     doi = "https://dl.acm.org/doi/{}".format(doi)
-            
             paper["resources"].append({
                 "name":"DOI",
                 "doi":doi
             })
 
         elif "URL" in line[0]:
-            
             url = line[1]
-
-            # Currently unsure if this is a good way to handle DOI's.
-            # # Edge Case: DOI was (likely) given in the URL block.
-            # if "http" not in url:
-            #     paper["resources"].append({
-            #         "name":"URL",
-            #         "url":"https://dl.acm.org/doi/{}".format(line[1])
-            #     })
-            #     continue
-
             paper["resources"].append({
                 "name":"URL",
                 "url":url
@@ -602,7 +593,7 @@ def print_papers():
             author_object["organizations"] = author_orgs
         
         # Create a new file for each paper.
-        file_path = "sources/paper/{}__extrernallinks.json".format(paper_id)
+        file_path = "sources/paper/{}__externallinks.json".format(paper_id)
         with open(file_path, "w") as paper_file:
             print(json.dumps(paper, indent=4), file=paper_file)
 

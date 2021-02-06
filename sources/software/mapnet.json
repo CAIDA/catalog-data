@@ -1,0 +1,24 @@
+{
+    "id": "mapnet",
+    "name": "Mapnet: Macroscopic Internet Visualization and Measurement",
+    "organization": "CAIDA",
+    "description": "Mapnet is a tool for visualizing the infrastructure of multiple international backbone providers simultaneously. Each backbone infrastructure is divided into a group of nodes (POPs) and pipes between these nodes, drawing them based on their geographical location on a map of the world.",
+    "tags": [
+        "api",
+        "pop"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/mapnet/",
+            "tags": []
+        },
+        {
+            "name":"Mapnet Java-based Applet",
+            "url": "https://www.caida.org/tools/visualization/mapnet/Backbones/",
+            "tags": []
+        }
+    ],
+    "licenses": [],
+    "links": []
+}

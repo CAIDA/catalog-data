@@ -25,7 +25,7 @@
     ],
     "links": [
         {
-            "to": "ucsd_network_telescope"
+            "to": "dataset:ucsd_network_telescope"
         }
     ]
 }
