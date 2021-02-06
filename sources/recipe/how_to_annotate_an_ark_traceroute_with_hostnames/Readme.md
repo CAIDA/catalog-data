@@ -9,7 +9,7 @@
         "to": "dataset:ipv4_routed_24_topology_dataset",
         "to": "dataset:ipv6_allpref_topology_dataset",
         "to": "dataset:ipv4_dnsnames_dataset",
-        "to": "dataset:ipv6_dnsnames_dataset"
+        "to": "dataset:ipv6_dnsnames"
         }],
     "tags": [
         "topology",
