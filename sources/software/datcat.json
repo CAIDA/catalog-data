@@ -1,0 +1,19 @@
+{
+    "id": "datcat",
+    "name": "Metadata Management Software Tools to Support Cybersecurity Research and Development of Sustainable Cyberinfrastructure (DatCat)",
+    "organization": "CAIDA",
+    "description": "The focus of this project is on enhancing the utility of Internet Measurement Data Catalog (IMDC) for the needs of cybersecurity and cyberinfrastructure research community as well as in support of the new NSF Data Sharing Policy.",
+    "tags": [
+        "project",
+        "cybersecurity"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/funding/sdci-datcat/summary.xml/",
+            "tags": []
+        }
+    ],
+    "licenses": [],
+    "links": []
+}

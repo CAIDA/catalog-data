@@ -642,8 +642,7 @@ YEAR   : "2020_03"
 SERIAL : "Passive and Active Measurement"
 PAGE   : "(17 pages)"
 URL    : "https://www.researchgate.net/publication/339995263_A_First_Comparative_Characterization_of_Multi-cloud_Connectivity_in_Today's_Internet"
-TOPKEY : "topology-as-organizations, topology-skitter-itdk
-"
+TOPKEY : "topology-as-organizations, topology-skitter-itdk"
 ABS    : "Today’s enterprises are adopting multi-cloud strategies at an unprecedented pace. Here, a multi-cloud strategy specifies end-to-end connectivity between the multiple cloud providers (CPs) that an enterprise relies on to run its business. This adoption is fueled by the rapid build-out of global-scale private backbones by the large CPs, a rich private peering fabric that interconnects them, and the emergence of new third-party private connectivity providers (e.g., DataPipe, HopOne, etc.). However, little is known about the performance aspects, routing issues, and topological features associated with currently available multi-cloud connectivity options. To shed light on the tradeoffs between these available connectivity options, we take a cloud-to-cloud perspective and present in this paper the results of a cloud-centric measurement study of a coast-to-coast multi-cloud deployment that a typical modern enterprise located in the US may adopt. We deploy VMs in two regions (i.e., VA and CA) of each one of three large cloud providers (i.e., AWS, Azure, and GCP) and connect them using three different options: (i) transit provider-based best-effort public Internet (BEP), (ii) third-party provider-based private (TPP) connectivity, and (iii) CP-based private (CPP) connectivity. By performing active measurements in this real-world multi-cloud deployment, we provide new insights into variability in the performance of TPP, the stability in performance and topology of CPP, and the absence of transit providers for CPP."
 
 ---
