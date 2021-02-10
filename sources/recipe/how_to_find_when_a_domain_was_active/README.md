@@ -25,7 +25,7 @@
 The script makes queries to the dzdb api to determine if a domain is still active. The api response contains first-seen and last-seen timestamp properties to which can be used to determine when a domain was last found in a zone file.
 
 ## **<ins>Solution</ins>**
-The script relies on the below function to handle querying the dzdb api. The dzdb api requres an API key; contact research@dns.coffee to request a key.
+The script relies on the below function to handle querying the dzdb api. The dzdb api requres an API key; fill out the form [here](https://www.caida.org/data/request_user_info_forms/dzdb.xml) to request a key.
 
 ~~~
 var apiKey = "YOUR_KEY_HERE";
