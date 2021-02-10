@@ -23,7 +23,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DZDB API, which requres an API Key. You may request an API key by contacting research@dns.coffee. 
+The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DZDB API, which requres an API Key. You may request an API key by filling out the form [here](https://www.caida.org/data/request_user_info_forms/dzdb.xml). 
 
 ## **<ins>Solution</ins>**
 The script will return a JavaScript object that contains the nameserver and domain responses for the queried domain. 
