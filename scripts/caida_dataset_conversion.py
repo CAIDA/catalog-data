@@ -54,7 +54,10 @@ import os
 id_2_object = {}
 seen_datasets = set()
 seen_softwares = set()
+<<<<<<< HEAD
 seen_urls = set()
+=======
+>>>>>>> issue #109 Created initial script
 
 # Definitions:
 re_json = re.compile(r".json")
