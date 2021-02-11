@@ -1,4 +1,4 @@
-run:pubdb externallinks
+run:pubdb externallinks caida
 	python3 scripts/data-build.py
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py data/PANDA-Papers-json.pl.json data/PANDA-Presentations-json.pl.json
@@ -8,6 +8,9 @@ pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py 
 externallinks: scripts/yaml_to_papers.py
 	python3 scripts/yaml_to_papers.py -d data/data-papers.yaml
 
+caida: scripts/caida_dataset_conversion.py
+	python3 scripts/caida_dataset_conversion.py -p ../catalog-data-caida/sources/
+
 # This was used to backfill historic papers and presentations
 data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
@@ -15,3 +18,4 @@ data/pubdb_links.json:
 clean:
 	rm pubdb sources/*/*__pubdb.json id_id_link.json word_id_score.json
 	rm sources/*/*__externallinks.json
+	rm sources/*/*__caida.json
