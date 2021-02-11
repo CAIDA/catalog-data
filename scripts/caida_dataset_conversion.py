@@ -54,6 +54,7 @@ import os
 id_2_object = {}
 seen_datasets = set()
 seen_softwares = set()
+seen_urls = set()
 
 # Definitions:
 re_json = re.compile(r".json")
@@ -84,13 +85,13 @@ def main(argv):
     update_seen_softwares()
     parse_catalog_data_caida()
     print_datasets()
-    # create_one_dataset()
 
 ############################### Helper Methods #################################
 
 # Map all known dataset ID's to seen_datasets.
 def update_seen_datasets():
     global seen_datasets
+    global seen_urls
 
     # Iterate over each dataset JSON and keep track of their IDs.
     for file in os.listdir("sources/dataset"):
@@ -98,18 +99,36 @@ def update_seen_datasets():
         if not re_json.search(file):
             continue
         
+        # Open the file to grab the URL.
+        with open("sources/dataset/{}".format(file), "r") as curr_file:
+            curr_file = json.load(curr_file)
+            if "resources" in curr_file:
+                for resource in curr_file["resources"]:
+                    if "url" in resource:
+                        seen_urls.add(resource["url"])
+
+
         seen_datasets.add(file[:file.index(".")])
 
 
 # Map all known software ID's to seen_softwares.
 def update_seen_softwares():
     global seen_softwares
+    global seen_urls
 
     # Iterate over each software JSON and keep track of their IDs.
     for file in os.listdir("sources/software"):
         # Edge Case: Skip if file is not a .json file.
         if not re_json.search(file):
             continue
+
+        # Open the file to grab the URL.
+        with open("sources/software/{}".format(file), "r") as curr_file:
+            curr_file = json.load(curr_file)
+            if "resources" in curr_file:
+                for resource in curr_file["resources"]:
+                    if "url" in resource:
+                        seen_urls.add(resource["url"])
         
         seen_softwares.add(file[:file.index(".")])
 
@@ -119,6 +138,7 @@ def parse_catalog_data_caida():
     global id_2_object
     global seen_datasets
     global seen_softwares
+    global seen_urls
     global re_mkdn
     global re_mdta
     global re_dlim
@@ -130,7 +150,7 @@ def parse_catalog_data_caida():
         if not re_mkdn.search(file):
             continue
 
-        file_name = file[:file.index(".")]
+        file_name = file[:file.index(".")].replace("-", "_")
         file_path = "{}{}".format(path, file)
 
         # Edge Case: Skip files that have already been seen.
@@ -138,7 +158,7 @@ def parse_catalog_data_caida():
             continue     
 
         # Edge Case: Skip any seen softwares.
-        if "tool-" in file_name and file_name[file_name.index("-") + 1:] in seen_softwares:
+        if "tool_" in file_name and file_name[file_name.index("_") + 1 :] in seen_softwares:
                 continue
 
         # Iterate over file and grab all the metadata.
@@ -158,6 +178,17 @@ def parse_catalog_data_caida():
                     # Replace Markdown Syntax to human readable.
                     curr_metadata = curr_metadata.replace('\\"', "'")
                     curr_metadata = json.loads(curr_metadata)
+
+                    # Edge Case: Don't add objects with duplicate urls.
+                    if "resources" in curr_metadata:
+                        for resource in curr_metadata["resources"]:
+                            if "url" in resource:
+                                if resource["url"] in seen_urls:
+                                    found_metadata = False
+                                elif "{}/".format(resource["url"]) in seen_urls:
+                                    found_metadata = False
+                                else:
+                                    seen_urls.add(resource["url"]) 
                     break
 
                 # Parse all data within the metadata block.
@@ -165,41 +196,28 @@ def parse_catalog_data_caida():
                     curr_metadata += curr_line.strip()
 
                 curr_line = curr_file.readline()
-        
+
         # Parse the curr_metadata for JSON object.
-        id_2_object[file_name] = curr_metadata
+        if found_metadata:
+            id_2_object[file_name] = curr_metadata
 
 
 # Print all found datasets to individual JSON objects.
 def print_datasets():
     global id_2_object
 
+    # Iterate over each file and make individual JSON objects.
     for file_id in id_2_object:
-        if "tool-" in file_id:
-            file_id = file_id[file_id.index("-") + 1:] 
-            file_path = "sources/software/{}".format(file_id)
+        # Edge Case: Update path based which software or dataset.
+        if "tool_" in file_id:
+            file_name = file_id[file_id.index("_") + 1:] 
+            file_path = "sources/software/{}__caida.json".format(file_name)
         else:
-            file_path = "sources/dataset/{}".format(file_id)
+            file_path = "sources/dataset/{}__caida.json".format(file_id)
 
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
-
-
-# Print one large JSON dataset to catalog-data/data
-def create_one_dataset():
-    global metadata_path
-    global id_2_object
-
-    output_list = []
-
-    # Create a list of all JSON objects.
-    for file_id in id_2_object:
-        output_list.append(json.dumps(id_2_object[file_id], indent=4))
-
-    # Create and open one JSON file to load all JSON objects to.
-    with open(metadata_path, "w") as output_file:
-        print("\n".join(output_list))
         
 
 # Run the script given the inputs from the terminal.
