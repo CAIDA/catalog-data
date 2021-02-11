@@ -61,7 +61,6 @@ re_json = re.compile(r".json")
 re_mkdn = re.compile(r".md")
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
-metadata_path = "data/catalog-data-caida-metadata.json"
 
 # File Paths:
 path = None
@@ -85,9 +84,13 @@ def main(argv):
     if not os.path.exists(path):
         return
 
+    # Keep track of all existing datasets.
     update_seen_datasets()
+    # Keep track of all existing sofwares.
     update_seen_softwares()
+    # Parse all .md file in the given path.
     parse_catalog_data_caida()
+    # Print all found JSON objects to individual JSON files.
     print_datasets()
 
 ############################### Helper Methods #################################
@@ -230,6 +233,7 @@ def print_datasets():
         else:
             file_path = "sources/dataset/{}__caida.json".format(file_id)
 
+        # Write the JSON object to the file.
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
