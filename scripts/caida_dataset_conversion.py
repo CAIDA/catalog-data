@@ -216,11 +216,19 @@ def parse_catalog_data_caida():
                     if "name" not in curr_metadata:
                         name = curr_metadata["id"].replace("_", " ").upper()
                         curr_metadata["name"] = name
+
+                    # Edge Case: Remove broken tags.
+                    for i in range(0, len(curr_metadata["tags"])):
+                        if " )" in curr_metadata["tags"][i]:
+                            del curr_metadata["tags"][i]
+                            
                     break
 
                 # Parse all data within the metadata block.
                 if found_metadata:
-                    curr_metadata += curr_line.strip()
+                    # Don't add lines with messed up metadata.
+                    if "Series([]" not in curr_line and "NaN" not in curr_line:
+                        curr_metadata += curr_line.strip().replace("\\n", "")
 
                 curr_line = curr_file.readline()
 
