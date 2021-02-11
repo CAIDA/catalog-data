@@ -60,6 +60,7 @@ re_json = re.compile(r".json")
 re_mkdn = re.compile(r".md")
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
+metadata_path = "data/catalog-data-caida-metadata.json"
 
 # File Paths:
 path = None
@@ -82,6 +83,8 @@ def main(argv):
     update_seen_datasets()
     update_seen_softwares()
     parse_catalog_data_caida()
+    print_datasets()
+    # create_one_dataset()
 
 ############################### Helper Methods #################################
 
@@ -128,13 +131,18 @@ def parse_catalog_data_caida():
             continue
 
         file_name = file[:file.index(".")]
+        file_path = "{}{}".format(path, file)
 
         # Edge Case: Skip files that have already been seen.
-        if file_name in seen_datasets or file_name in seen_softwares:
+        if file_name in seen_datasets or file_name in id_2_object:
             continue     
 
+        # Edge Case: Skip any seen softwares.
+        if "tool-" in file_name and file_name[file_name.index("-") + 1:] in seen_softwares:
+                continue
+
         # Iterate over file and grab all the metadata.
-        with open(file, "r") as curr_file:
+        with open(file_path, "r") as curr_file:
             found_metadata = False
             curr_metadata = ""
             curr_line = curr_file.readline()
@@ -142,9 +150,14 @@ def parse_catalog_data_caida():
                 # Base Case: Start parsing metadata once starting delim found.
                 if re_mdta.search(curr_line):
                     found_metadata = True
+                    curr_line = curr_file.readline()
+                    continue
 
                 # Base Case: End parsing curr_file once ending delim found.
-                if re_dlim.search(curr_line):
+                if re_dlim.search(curr_line) and not re_mdta.search(curr_line):
+                    # Replace Markdown Syntax to human readable.
+                    curr_metadata = curr_metadata.replace('\\"', "'")
+                    curr_metadata = json.loads(curr_metadata)
                     break
 
                 # Parse all data within the metadata block.
@@ -154,8 +167,40 @@ def parse_catalog_data_caida():
                 curr_line = curr_file.readline()
         
         # Parse the curr_metadata for JSON object.
-        print(curr_metadata)
-        return
+        id_2_object[file_name] = curr_metadata
+
+
+# Print all found datasets to individual JSON objects.
+def print_datasets():
+    global id_2_object
+
+    for file_id in id_2_object:
+        if "tool-" in file_id:
+            file_id = file_id[file_id.index("-") + 1:] 
+            file_path = "sources/software/{}".format(file_id)
+        else:
+            file_path = "sources/dataset/{}".format(file_id)
+
+        curr_file = json.dumps(id_2_object[file_id], indent=4)
+        with open(file_path, "w") as output_file:
+            output_file.write(curr_file)
+
+
+# Print one large JSON dataset to catalog-data/data
+def create_one_dataset():
+    global metadata_path
+    global id_2_object
+
+    output_list = []
+
+    # Create a list of all JSON objects.
+    for file_id in id_2_object:
+        output_list.append(json.dumps(id_2_object[file_id], indent=4))
+
+    # Create and open one JSON file to load all JSON objects to.
+    with open(metadata_path, "w") as output_file:
+        print("\n".join(output_list))
+        
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
