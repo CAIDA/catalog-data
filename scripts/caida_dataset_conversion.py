@@ -54,16 +54,14 @@ import os
 id_2_object = {}
 seen_datasets = set()
 seen_softwares = set()
-<<<<<<< HEAD
 seen_urls = set()
-=======
->>>>>>> issue #109 Created initial script
 
 # Definitions:
 re_json = re.compile(r".json")
 re_mkdn = re.compile(r".md")
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
+metadata_path = "data/catalog-data-caida-metadata.json"
 
 # File Paths:
 path = None
@@ -266,7 +264,6 @@ def print_datasets():
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
-        
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
