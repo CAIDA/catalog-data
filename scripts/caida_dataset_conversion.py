@@ -105,7 +105,10 @@ def update_seen_datasets():
             if "resources" in curr_file:
                 for resource in curr_file["resources"]:
                     if "url" in resource:
-                        seen_urls.add(resource["url"])
+                        url = resource["url"]
+                        if "/active" in url:
+                            seen_urls.add(url.replace("/active", ""))
+                        seen_urls.add(url)
 
 
         seen_datasets.add(file[:file.index(".")])
@@ -128,7 +131,10 @@ def update_seen_softwares():
             if "resources" in curr_file:
                 for resource in curr_file["resources"]:
                     if "url" in resource:
-                        seen_urls.add(resource["url"])
+                        url = resource["url"]
+                        if "/active" in url:
+                            seen_urls.add(url.replace("/active", ""))
+                        seen_urls.add(url)
         
         seen_softwares.add(file[:file.index(".")])
 
