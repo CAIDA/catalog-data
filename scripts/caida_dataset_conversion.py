@@ -61,7 +61,6 @@ re_json = re.compile(r".json")
 re_mkdn = re.compile(r".md")
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
-metadata_path = "data/catalog-data-caida-metadata.json"
 
 # File Paths:
 path = None
