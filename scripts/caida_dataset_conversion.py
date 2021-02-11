@@ -67,6 +67,14 @@ path = None
 
 ################################# Main Method ##################################
 
+"""
+    File will iterate over all markdown files in catalog-data-caida/sources,
+    and create individual JSON objects based on their metadata with the name
+    strucutre following: object_id__caida.json
+    Requires the catalog-data-caida directory to exist in this path:
+        ../catalog-data-caida/sources/
+"""
+
 def main(argv):
     global path
 
