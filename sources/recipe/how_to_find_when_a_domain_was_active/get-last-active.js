@@ -1,23 +1,45 @@
+var apiKey = "YOUR_KEY_HERE";
+
+const fetch = require("node-fetch");
+
 const dns = (function(){
-    const corsProxy = "https://cors-anywhere.herokuapp.com";
-    const baseURL = "https://dns.coffee/api";
-    const getQueryUrl = (useCorsProxy, args)=>{
+    const baseURL = "https://api.dns.coffee/api/v0";
+    const getQueryUrl = (args)=>{
         const urlParts = [baseURL,...args]
-        if(useCorsProxy){
-            urlParts.unshift(corsProxy);
-        }
         return urlParts.join("/");
     }
     return {
         get(...args){
-            return fetch(getQueryUrl(this.useCorsProxy, args)).then((response)=>{
-                if(response.ok){
-                    return response.json().then((response)=>response.data);
+            return fetch(getQueryUrl(args), {
+                method: 'GET',
+                headers: {
+                    "Accept": 'application/json',
+                    "X-API-Key": apiKey
                 }
-                throw Error("API Query Failed");
-            });
+            }).then((response)=>{
+                const rootPromise = new Promise(async (rootResolve) => {
+                    if(response.ok) {
+                        data =  response.json().then((response)=>response.data);
+                        rootResolve(data)
+                    } else if(response.status == '429') {
+                        let delay = response.headers.get('retry-after')*1000 || 2000 // Retry after defaults to 2 seconds
+                        // Attempts to retry fetch after delay
+                        const promise = new Promise((resolve) => {
+                            setTimeout(function() {
+                                 data =  dns.get(args.join("/"))
+                                 resolve(data)
+                            }, delay)    
+                        }) 
+                        let responseData = await promise;
+                        rootResolve(responseData)
+                    } else {
+                        console.log(response)
+                        throw Error("API Query Failed");
+                    }
+                });
+                 return rootPromise; 
+            }) 
         },
-        useCorsProxy:true
     }
 })();
 
@@ -25,7 +47,7 @@ const dns = (function(){
 function getDomainLastActive(domain){
     return dns.get("domains",domain).then((response)=>{
         // If no lastseen is set, domain is still active
-        return response.lastseen;
+        return response.last_seen;
     })    
 }
 

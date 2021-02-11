@@ -472,6 +472,10 @@ def object_finish(obj):
 
 
 def person_lookup_id(filename, id_):
+    if (type(id_) != str):
+        error_add(filename, "person id wrong type found:"+str(type(id_))+" wanted str : "+json.dumps(id_))
+        return None
+
     id_ = id_.lower()
     if ":" in id_:
         if "person:" in id_:
