@@ -81,6 +81,10 @@ def main(argv):
     else:
         path = args.path
 
+    # Edge Case: Exit if path given doesn't exist.
+    if not os.path.exists(path):
+        return
+
     update_seen_datasets()
     update_seen_softwares()
     parse_catalog_data_caida()
