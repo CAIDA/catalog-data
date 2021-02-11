@@ -210,10 +210,11 @@ def parse_catalog_data_caida():
                                     found_metadata = False
                                 else:
                                     seen_urls.add(resource["url"]) 
+                    curr_metadata["id"] = curr_metadata["id"].replace("-", "_")
 
                     # Edge Case: Replace missing names with ID.
                     if "name" not in curr_metadata:
-                        name = curr_metadata["id"].replace("-", " ").upper()
+                        name = curr_metadata["id"].replace("_", " ").upper()
                         curr_metadata["name"] = name
                     break
 
