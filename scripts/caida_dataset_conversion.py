@@ -199,6 +199,11 @@ def parse_catalog_data_caida():
                                     found_metadata = False
                                 else:
                                     seen_urls.add(resource["url"]) 
+
+                    # Edge Case: Replace missing names with ID.
+                    if "name" not in curr_metadata:
+                        name = curr_metadata["id"].replace("-", " ").upper()
+                        curr_metadata["name"] = name
                     break
 
                 # Parse all data within the metadata block.
