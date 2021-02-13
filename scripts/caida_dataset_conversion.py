@@ -221,6 +221,15 @@ def parse_catalog_data_caida():
                     for i in range(0, len(curr_metadata["tags"])):
                         if " )" in curr_metadata["tags"][i]:
                             del curr_metadata["tags"][i]
+
+                    # Edge Case: Remove 0 length lists from objects.
+                    remove_keys = set()
+                    for key in curr_metadata:
+                        if len(curr_metadata[key]) == 0:
+                            remove_keys.add(key)
+                    
+                    for key in remove_keys:
+                        del curr_metadata[key]
                             
                     break
 
