@@ -18,7 +18,7 @@
             ]
         }
     ],
-    "description": "1hr of traffic from a DDoS attack on 2007/08/04 20:50:08-21:56:16 UTC.  This type of denial-of-service attack attempts to block access to the targeted server by consuming computing resources on the server and by consuming all of the bandwidth of the network connecting the server to the Internet. Only attack traffic to the victim and responses to the attack from the victim are included in the traces. Non-attack traffic has as much as possible been removed. IP addresses are anonymized. ",
+    "description": "1hr of traffic from a DDoS attack on 2007/08/04 20:50:08-21:56:16 UTC.  This type of denial-of-service attack attempts to block access to the targeted server by consuming computing resources on the server and by consuming all of the bandwidth of the network connecting the server to the Internet. Only attack traffic to the victim and responses to the attack from the victim are included in the traces. Non-attack traffic has as much as possible been removed. IP addresses are anonymized.",
     "licenses": [
         "license:BSD-4-Clause-UC",
         "license:caida_aua"

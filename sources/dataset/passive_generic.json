@@ -17,9 +17,7 @@
             ]
         }
     ],
-    "licenses": [
-        "TODO"
-    ],
+    "licenses": [],
     "links": [
         {
             "to": "dataset:passive_equinix_nyc"
@@ -28,16 +26,16 @@
             "to": "dataset:passive_realtime"
         },
         {
-            "to": "dataset:passive_statistics"
+            "to": "dataset:passive_metadata"
         },
         {
-            "to": "dataset:passive_ipv6_launch"
+            "to": "dataset:passive_ipv6launch_pcap"
         },
         {
-            "to": "dataset:passive_oc48"
+            "to": "dataset:passive_oc48_pcap"
         },
         {
-            "to": "dataset:passive_2007"
+            "to": "dataset:passive_2007_pcap"
         },
         {
             "to": "dataset:passive_2008-2019"

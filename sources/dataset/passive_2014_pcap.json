@@ -1,24 +1,29 @@
 {
-    "id": "passive_2010",
-    "name": "Anonymized Internet Traces 2010",
+    "id": "passive_2014_pcap",
+    "name": "Anonymized Internet Traces 2014",
     "organization": "CAIDA",
     "description": "CAIDA's passive traces dataset contains traces collected from high-speed monitors on a commercial backbone link. The data collection started in April 2008 and ended in January 2019. These data are useful for research on the characteristics of Internet traffic, including application breakdown, security events, geographic and topological distribution, flow volume and duration. For an overview of all traces see the trace statistics page)",
     "tags": [
         "caida",
-        "passive"
+        "passive",
+        "traffic"
     ],
     "status": "complete",
+    "access": "served",
+    "dateStart": "2014.01",
+    "dateEnd": "2014.12",
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/passive/passive_2010_dataset.xml",
+            "url": "https://www.caida.org/data/passive/passive_2014_dataset.xml",
             "tags": [
                 "file"
             ]
         }
     ],
     "licenses": [
-        "TODO"
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua"
     ],
     "links": [
         {

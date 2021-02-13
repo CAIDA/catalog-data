@@ -20,7 +20,9 @@
         }
     ],
     "licenses": [
-        "TODO"
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua",
+        "license:caida_public_aua"
     ],
     "links": [
         {

@@ -1,5 +1,5 @@
 {
-    "id": "passive_oc48",
+    "id": "passive_oc48_pcap",
     "name": "OC48 Peering Point Traces",
     "organization": "CAIDA",
     "description": "This dataset contains anonymized passive traces taken at a west coast OC48 peering link for a large ISP in 2002 and 2003.",
@@ -9,19 +9,22 @@
         "peering"
     ],
     "status": "complete",
-    "dateStart":"2011.06",
-    "dateEnd":"2012.06",
+    "dateStart":"2002.08",
+    "dateEnd":"2003.04",
+    "access": "served",
     "resources": [
         {
             "name": "public",
-            "url": "caida.org/data/passive/passive_oc48_dataset.xml",
+            "url": "https://www.caida.org/data/passive/passive_oc48_dataset.xml",
             "tags": [
                 "file"
             ]
         }
     ],
     "licenses": [
-        "TODO"
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua",
+        "license:caida_public_aua"
     ],
     "links": [
         {
