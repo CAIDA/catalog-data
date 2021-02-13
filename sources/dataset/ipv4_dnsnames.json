@@ -2,9 +2,11 @@
     "id": "ipv4_dnsnames",
     "name": "IPv4 DNS names",
     "organization": "CAIDA",
-    "description": "DNS names are useful for obtaining additional information about routers and hosts making up the Internet topology. For example, DNS names of routers often encode the link type (backbone vs. access), link capacity, Point of Presence (PoP), and geographic location. We have DNS Names data starting March 2008.",
+    "description": "The IPv4 Routed /24 DNS Names dataset provides fully-qualified domain names for IP addresses seen in the traces of the IPv4 Routed /24 Topology Dataset. We also provide the DNS query and response traffic resulting from the DNS lookups required to construct the DNS Names dataset.",
     "tags": [
+        "active",
         "topology",
+        "traceroute",
         "dns",
         "ipv4"
     ],
