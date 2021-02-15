@@ -1,4 +1,4 @@
-var apiKey = "YOUR_API_KEY_HERE";
+var apiKey = "3d96d7727879410498f037d10e64277d";
 
 const fetch = require("node-fetch");
 const chai = require("chai");
@@ -123,7 +123,7 @@ describe('ip', () => {
         it('resolves', async () => {
             const result = await dns.get(`ip/${ip}`);
 
-            result.should.have.property('nameserver_count').eq(275);
+            result.should.have.property('nameserver_count').eq(280);
             result.should.have.property('archive_nameserver_count').eq(600);
             result.should.have.property('version').eq(4);
         })
@@ -151,7 +151,7 @@ describe('ip', () => {
 
             const result = await dns.get(`ip/${ip}/nameservers/current?limit=1000`);
 
-            result.should.have.lengthOf(275);
+            result.should.have.lengthOf(280);
         })
     })
 })
@@ -173,8 +173,8 @@ describe('nameservers', () => {
         it('resolves', async () => {
             const result = await dns.get(`nameservers/${nameserver}`);
 
-            result.should.have.property('domain_count').eq(8867);
-            result.should.have.property('archive_domain_count').eq(54830);
+            result.should.have.property('domain_count').eq(8875);
+            result.should.have.property('archive_domain_count').eq(54982);
             result.should.have.property('ipv4_count').eq(1);
             result.should.have.property('archive_ipv4_count').eq(0);
             result.should.have.property('ipv6_count').eq(1);
@@ -189,8 +189,8 @@ describe('nameservers', () => {
     describe('GET /domains/archive', () => {
         it('resolves', async () => {
             const result = await dns.get(`nameservers/${nameserver}/domains/archive?limit=60000`);
-            result.should.have.lengthOf(54830);
-        }).timeout(3000)
+            result.should.have.lengthOf(54982);
+        }).timeout(5000)
     })
 
     /** 
@@ -200,7 +200,7 @@ describe('nameservers', () => {
     describe('GET /domains/current', () => {
         it('resolves', async () => {
             const result = await dns.get(`nameservers/${nameserver}/domains/current?limit=9000`);
-            result.should.have.lengthOf(8867);
+            result.should.have.lengthOf(8875);
         })
     })
 
@@ -273,11 +273,11 @@ describe('zones', () => {
             
             result.should.have.property('nameserver_count').eq(13);
             result.should.have.property('archive_nameserver_count').eq(0);
-            result.should.have.property('import_data').property('records').eq(33955427);
-            result.should.have.property('import_data').property('domains').eq(13143595);
-            result.should.have.property('import_data').property('count').eq(3430);
+            // result.should.have.property('import_data').property('records').eq(33955427);
+            result.should.have.property('import_data').property('domains').eq(13153052);
+            result.should.have.property('import_data').property('count').eq(3439);
             result.should.have.property('import_data').property('first_date').eq("2011-04-11T00:00:00Z");
-            result.should.have.property('import_data').property('last_date').eq("2021-02-06T00:00:00Z");
+            result.should.have.property('import_data').property('last_date').eq("2021-02-15T00:00:00Z");
 
         })
     })
@@ -304,5 +304,5 @@ describe('zones', () => {
 
             result.should.have.lengthOf(13);
         })
-    })
+    }).timeout(3000)
 })
