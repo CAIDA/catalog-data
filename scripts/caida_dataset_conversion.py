@@ -64,6 +64,7 @@ re_dlim = re.compile(r"~~~")
 
 # File Paths:
 path = None
+path_ids = "data/data_id__caida.json"
 
 ################################# Main Method ##################################
 
@@ -77,9 +78,11 @@ path = None
 
 def main(argv):
     global path
+    global path_ids
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", type=str, default=None, dest="path", help="Path to catalog-data-caida/sources")
+    parser.add_argument("-i", type=str, default=None, dest="path_ids", help="Path to a json file to map file paths to IDs.")
     args = parser.parse_args()
 
     # Edge Case: Exit if no path given.
@@ -91,6 +94,10 @@ def main(argv):
     # Edge Case: Exit if path given doesn't exist.
     if not os.path.exists(path):
         return
+
+    # Assign a given path_ids value, else use the default.
+    if args.path_ids != None:
+        path_ids = args.path_ids
 
     # Keep track of all existing datasets.
     update_seen_datasets()
@@ -249,6 +256,10 @@ def parse_catalog_data_caida():
 # Print all found datasets to individual JSON objects.
 def print_datasets():
     global id_2_object
+    global path_ids
+
+    # Will map a file_path to its ID.
+    path_2_id = {}
 
     # Iterate over each file and make individual JSON objects.
     for file_id in id_2_object:
@@ -259,10 +270,16 @@ def print_datasets():
         else:
             file_path = "sources/dataset/{}__caida.json".format(file_id)
 
+        path_2_id[file_path] = file_id
+
         # Write the JSON object to the file.
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
+        
+    # Print a JSON mapping all made files to their IDs.
+    with open(path_ids, "w") as output_file:
+        output_file.write(json.dumps(path_2_id, indent=4))
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
