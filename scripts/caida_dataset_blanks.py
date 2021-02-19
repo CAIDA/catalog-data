@@ -81,7 +81,10 @@ def print_datasets():
 
     # Iterate over each path and make a blank JSON file for them.
     for path in path_2_id:
-        data = { "id":path_2_id[path] }
+        data = { 
+            "id":path_2_id[path],
+            "name":path_2_id[path].upper().replace("_", " ")
+        }
 
         with open(path, "w") as output_file:
             output_file.write(json.dumps(data, indent=4))
