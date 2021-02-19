@@ -1,3 +1,6 @@
+CATALOG_DATA_CAIDA_PATH = ../catalog-data-caida/sources/
+CATALOG_DATA_CAIDA_FILE = data/data_id__caida.json
+
 run:pubdb externallinks caida
 	python3 scripts/data-build.py
 
@@ -9,7 +12,14 @@ externallinks: scripts/yaml_to_papers.py
 	python3 scripts/yaml_to_papers.py -d data/data-papers.yaml
 
 caida: scripts/caida_dataset_conversion.py
-	python3 scripts/caida_dataset_conversion.py -p ../catalog-data-caida/sources/
+	@if [ -d ${CATALOG_DATA_CAIDA_PATH} ]; then \
+		echo "python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE}"; \
+		python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE} ; \
+	fi
+	@if [ ! -d ${CATALOG_DATA_CAIDA_PATH} && -f ${CATALOG_DATA_CAIDA_FILE} ]; then \
+		echo "python3 scripts/caida_dataset_blanks.py -i ${CATALOG_DATA_CAIDA_FILE}"; \
+		python3 scripts/caida_dataset_blanks.py -i ${CATALOG_DATA_CAIDA_FILE} ; \
+	fi
 
 # This was used to backfill historic papers and presentations
 data/pubdb_links.json:
@@ -18,4 +28,6 @@ data/pubdb_links.json:
 clean:
 	rm pubdb sources/*/*__pubdb.json id_id_link.json word_id_score.json
 	rm sources/*/*__externallinks.json
-	rm sources/*/*__caida.json
+	@if [ -f sources/*/*__caida.json ]; then \
+		rm sources/*/*__caida.json ; \
+	fi
