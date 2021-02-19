@@ -16,7 +16,7 @@ caida: scripts/caida_dataset_conversion.py
 		echo "python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE}"; \
 		python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE} ; \
 	fi
-	@if [ ! -d ${CATALOG_DATA_CAIDA_PATH} && -f ${CATALOG_DATA_CAIDA_FILE} ]; then \
+	@if [ ! -d ${CATALOG_DATA_CAIDA_PATH} ]; then \
 		echo "python3 scripts/caida_dataset_blanks.py -i ${CATALOG_DATA_CAIDA_FILE}"; \
 		python3 scripts/caida_dataset_blanks.py -i ${CATALOG_DATA_CAIDA_FILE} ; \
 	fi
@@ -28,6 +28,4 @@ data/pubdb_links.json:
 clean:
 	rm pubdb sources/*/*__pubdb.json id_id_link.json word_id_score.json
 	rm sources/*/*__externallinks.json
-	@if [ -f sources/*/*__caida.json ]; then \
-		rm sources/*/*__caida.json ; \
-	fi
+	rm sources/*/*__caida.json
