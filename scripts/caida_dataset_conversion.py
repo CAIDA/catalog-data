@@ -59,7 +59,7 @@ import os
     datasets prior to finding new ones in catalog-data-caida to avoid 
     duplicates. The metadata included will help produce unique JSON objects for
     each file based on what's given. The file also produces a JSON mapping each
-    new file path to its ID.
+    new file path to its ID with extension __caida.json.
 """
 
 

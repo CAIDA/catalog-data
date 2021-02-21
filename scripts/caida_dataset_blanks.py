@@ -55,7 +55,8 @@ import os
     on data/data_id__caida.json which is a JSON mapping a file paths to an ID of
     an object that needs to be made. The optional input -i overrides the path to
     a different JSON list of paths and IDs. For each key:value pair, a new JSON
-    file is made at the given path with the ID and a name using the ID.
+    file is made at the given path with the ID and name with the extension 
+    __caida.json.
 """
 
 ############################## Global Variables ################################

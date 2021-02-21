@@ -49,6 +49,16 @@ import sys
 import re
 import os
 
+#################################### Header ####################################
+
+"""
+    This script will create unique JSON objects based on metadata stored in the
+    YAML file, data/data-papers.yaml. Each paper found is parsed for its TOPKEYS
+    which map to manually inputted data about the paper. This script produces
+    objects for papers, software, and media. Each new object is writted to its
+    respective directory with the tag __externallinks.json.
+"""
+
 ############################## Global Variables ################################
 
 # Datasets
