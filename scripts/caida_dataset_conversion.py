@@ -48,6 +48,21 @@ import sys
 import re
 import os
 
+#################################### Header ####################################
+
+"""
+    This script will produce blank JSON objects (datasets, software, etc) based
+    on the local directory, catalog-data-caida/sources which holds metadata of
+    caida datasets and software in markdown files.
+    
+    The script will first check for all currently available softwares and 
+    datasets prior to finding new ones in catalog-data-caida to avoid 
+    duplicates. The metadata included will help produce unique JSON objects for
+    each file based on what's given. The file also produces a JSON mapping each
+    new file path to its ID.
+"""
+
+
 ############################## Global Variables ################################
 
 # Datasets:
@@ -67,14 +82,6 @@ path = None
 path_ids = "data/data_id__caida.json"
 
 ################################# Main Method ##################################
-
-"""
-    File will iterate over all markdown files in catalog-data-caida/sources,
-    and create individual JSON objects based on their metadata with the name
-    strucutre following: object_id__caida.json
-    Requires the catalog-data-caida directory to exist in this path:
-        ../catalog-data-caida/sources/
-"""
 
 def main(argv):
     global path

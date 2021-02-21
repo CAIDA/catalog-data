@@ -48,6 +48,16 @@ import sys
 import re
 import os
 
+#################################### Header ####################################
+
+"""
+    This script will produce blank JSON objects (datasets, software, etc) based
+    on data/data_id__caida.json which is a JSON mapping a file paths to an ID of
+    an object that needs to be made. The optional input -i overrides the path to
+    a different JSON list of paths and IDs. For each key:value pair, a new JSON
+    file is made at the given path with the ID and a name using the ID.
+"""
+
 ############################## Global Variables ################################
 
 # File Paths:
