@@ -1,0 +1,44 @@
+{
+    "id": "passive_generic",
+    "name": "Passive Generic",
+    "organization": "CAIDA",
+    "description": "CAIDA collects several different data types at geographically and topologically diverse locations, and makes this data available to the research community to the extent possible while preserving the privacy of individuals and organizations who donate data or network access.",
+    "tags": [
+        "caida",
+        "passive"
+    ],
+    "status": "complete",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [],
+    "links": [
+        {
+            "to": "dataset:passive_equinix_nyc"
+        },
+        {
+            "to": "dataset:passive_realtime"
+        },
+        {
+            "to": "dataset:passive_metadata"
+        },
+        {
+            "to": "dataset:passive_ipv6launch_pcap"
+        },
+        {
+            "to": "dataset:passive_oc48_pcap"
+        },
+        {
+            "to": "dataset:passive_2007_pcap"
+        },
+        {
+            "to": "dataset:passive_2008-2019"
+        }
+    ]
+}

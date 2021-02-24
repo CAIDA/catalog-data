@@ -1,0 +1,19 @@
+{
+    "id": "netgeo",
+    "name": "NetGeo - The Internet Geographic Database",
+    "organization": "CAIDA",
+    "description": "NetGeo has not been actively maintained since 1999, and this will probably not change in the foreseeable future. As a result, there are several known major issues affecting accuracy and service availability. Please be warned that NetGeo may give wildly incorrect results, especially for recently allocated or re-assigned IP addresses. Also, domain-name lookups are no longer supported.",
+    "tags": [
+        "api",
+        "ases"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/netgeo/",
+            "tags": []
+        }
+    ],
+    "licenses": [],
+    "links": []
+}

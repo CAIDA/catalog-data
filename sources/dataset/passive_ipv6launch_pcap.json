@@ -1,0 +1,30 @@
+{
+    "id": "passive_ipv6launch_pcap",
+    "name": "Anonymized Internet Traces IPv6 Day/Launch",
+    "organization": "CAIDA",
+    "description": "This dataset contains three anonymized passive traffic traces from CAIDA's equinix-chicago and equinix-sanjose monitors on high-speed Internet backbone links taken during IPv6 Day on 8 June 2011, and three additional traces from the equinix-sanjose monitor taken during IPv6 Launch Day on 6 June 2012 (the Chicago monitors were offline on IPv6 Launch Day).",
+    "tags": [
+        "caida",
+        "passive",
+        "ipv6",
+        "traffic"
+    ],
+    "status": "complete",
+    "access": "internal",
+    "dateStart":"2011.06",
+    "dateEnd":"2012.06",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/passive_ipv6day_and_ipv6launch_dataset.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua"
+    ],
+    "links": []
+}

@@ -1,0 +1,30 @@
+{
+    "id": "passive_2007_pcap",
+    "name": "Anonymized Internet 2007 Traces",
+    "organization": "CAIDA",
+    "description": "This dataset was retired on 11 January 2010, and is no longer available. This dataset contains anonymized passive traffic traces from CAIDA's AMPATH monitor on an OC12 link at the AMPATH Internet Exchange during the DITL 2007 measurement event. The payload has been removed from all packets.",
+    "tags": [
+        "caida",
+        "passive",
+        "2007",
+        "traffic"
+    ],
+    "status": "complete",
+    "access": "served",
+    "dateStart":"2007.01",
+    "dateEnd":"2007.12",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/passive_2007_dataset.xml",
+            "tags": [
+                "file"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua"
+    ],
+    "links": []
+}

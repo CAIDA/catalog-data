@@ -1,0 +1,32 @@
+{
+    "id": "telescope_codered_worm",
+    "tags": [
+        "security",
+        "worm"
+    ],
+    "dateStart": "2001-07-19",
+    "organization": "CAIDA",
+    "status": "complete",
+    "dateEnd": "2001-08-20",
+    "access": "served",
+    "name": "Code Red worm dataset",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/codered_worms_dataset.xml",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "Summary files for the Code Red Worm dataset.",
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_public_aua"
+    ],
+    "links": [
+        {
+            "to": "dataset:ucsd_network_telescope"
+        }
+    ]
+}
