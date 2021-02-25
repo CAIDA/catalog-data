@@ -517,7 +517,7 @@ def parse_paper(curr_paper):
             doi = line[1]
             paper["resources"].append({
                 "name":"DOI",
-                "doi":doi
+                "url":doi
             })
 
         elif "URL" in line[0]:
