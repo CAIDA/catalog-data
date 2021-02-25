@@ -8,8 +8,8 @@ pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py 
 	python3 scripts/pubdb_placeholder.py
 	touch pubdb
 
-externallinks: scripts/yaml_to_papers.py
-	python3 scripts/yaml_to_papers.py -d data/data-papers.yaml
+externallinks: scripts/externallinks_placeholder.py
+	python3 scripts/externallinks_placeholder.py -d data/data-papers.yaml
 
 caida: scripts/caida_dataset_conversion.py
 	@if [ -d ${CATALOG_DATA_CAIDA_PATH} ]; then \

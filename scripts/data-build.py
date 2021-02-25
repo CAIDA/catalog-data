@@ -193,9 +193,9 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    #print ("adding dates")
-    #for obj in list(id_object.values()):
-        #object_date_add(obj)
+    print ("adding dates")
+    for obj in list(id_object.values()):
+        object_date_add(obj)
 
     #######################
     # Check that the objects are valid
