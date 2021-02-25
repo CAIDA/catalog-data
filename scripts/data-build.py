@@ -1,4 +1,4 @@
-#!  /usr/bin/env python3
+
 # This software is Copyright (C) 2018 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -734,6 +734,10 @@ def person_add_names(person):
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    for key in ["nameFirst","nameLast"]:
+        if key not in person or person[key] is None:
+            person[key] = ""
+            print ("failed to find",key,person)
     #print (person["id"])
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
     return True
