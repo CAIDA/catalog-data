@@ -47,6 +47,30 @@ def id_create(filename, type_,id_):
         name = re.sub("_+$","",re.sub("^_+","",name))
     return type_.lower()+":"+name.lower()
 
+person_seen = {}
+person_seen_fname = {}
+def person_seen_add(fname,person): 
+    names = [person]
+    if "names" in person:
+        for name in person["names"]:
+            names.append(name)
+    for name in names:
+        n = name["nameLast"].lower()+";"+name["nameFirst"].lower()
+        if n not in person_seen:
+            person_seen[n] = person
+            person_seen_fname[n] = fname
+        else:
+            print ("duplicate",person["id"])
+            print ("    ",person_seen_fname[n])
+            print ("    ",fname)
+
+
+def person_seen_check(nameLast, nameFirst):
+    n = nameLast.lower()+";"+nameFirst.lower()
+    if n in person_seen:
+        return person_seen[n]
+    return None
+
 
 def date_parse(value):
     m = re_year.search(value)

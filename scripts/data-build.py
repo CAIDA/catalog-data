@@ -161,6 +161,7 @@ def main():
 
     #######################
     #######################
+    seen_id = {}
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname == "solution" or fname == "recipe":
@@ -174,6 +175,11 @@ def main():
                         info = json.load(open(path+"/"+filename))
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
+                        id = obj["id"]
+                        if id in seen_id:
+                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                        else:
+                            seen_id[id] = filename
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
                     except Exception as e:
@@ -187,9 +193,9 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates")
-    for obj in list(id_object.values()):
-        object_date_add(obj)
+    #print ("adding dates")
+    #for obj in list(id_object.values()):
+        #object_date_add(obj)
 
     #######################
     # Check that the objects are valid
