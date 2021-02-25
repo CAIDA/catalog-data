@@ -62,8 +62,7 @@ import os
 ############################## Global Variables ################################
 
 # Datasets
-seen_papers = set()     # Will hold all found paper IDs.
-seen_authors = set()    # Will hold all found author IDs.
+seen_ids = set()        # Will hold all the current IDs
 author_data = {}        # Will map all authors IDs to their JSON.
 papers = {}             # Will hold each paper.     
 
@@ -192,7 +191,8 @@ topkey_2_dataset = {
 alternate_links = ["software:", "media:", "paper:"]
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
-re_pbd = re.compile(r"__pubdb")
+re_pubdb = re.compile(r"__pubdb")
+re_ext = re.compile(r"__externallinks")
 
 # File Paths
 data_papers = None
@@ -207,9 +207,6 @@ def main(argv):
     global topkeys
     global topkey_2_dataset
     global alternate_links
-    global re_yml
-    global re_jsn
-    global re_pbd
     global data_papers
 
     parser = argparse.ArgumentParser()
@@ -222,11 +219,8 @@ def main(argv):
 
     data_papers = args.data_papers
 
-    # Update seen_papers with papers currently in sources/paper/
-    update_seen_papers()
-
-    # Update author_data with all authors found in sources/person/
-    update_author_data()
+    # Add the current set of paper and persons
+    add_seen_ids(["sources/paper","sources/person"])
 
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
@@ -240,37 +234,17 @@ def main(argv):
 ############################### Helper Methods #################################
 
 # Add each paper's ID to seen_papers from the source/paper directory.
-def update_seen_papers():
-    global seen_papers
+def add_seen_ids(dirs):
+    global seen_ids
 
-    for file in os.listdir("sources/paper"):
-        # Edge Case: Skip if file is not .json and excludes __pubdb from name.
-        if not re_jsn.search(file) and not re_pbd.search(file):
-            continue
-
-        file = file.split("__")[0]
-        seen_papers.add(file)
-
-
-# Add each author's JSON data to author_data.
-def update_author_data():
-    global seen_authors
-    global author_data
-
-    for file in os.listdir("sources/person"):
-        # Edge Case: Skip if file is not .json.
-        if not re_jsn.search(file):
-            continue
-
-        # Open the file and save its data.
-        file = "sources/person/{}".format(file)
-        with open(file, "r") as opened_file:
-            data = json.load(opened_file)
-        
-        # Store the author's data.
-        author_name = data["id"].split(":")[1]
-        author_data[author_name] = data
-        seen_authors.add(author_name)
+    for d in dirs:
+        for fname in os.listdir(d):
+            # Edge Case: Skip if file is not .json.
+            if re_jsn.search(fname) and not re_pubdb.search(fname) and not re_ext.search(fname):
+                with open(d+"/"+fname, "r") as opened_file:
+                    data = json.load(opened_file)
+                
+                seen_ids.add(data["id"])
 
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
@@ -356,10 +330,6 @@ def parse_paper(curr_paper):
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
             name = line[1].replace(" ", "")
-
-            # Edge Case: Skip seen or repeated papers.
-            if name in seen_papers or name in papers:
-                return
 
             paper["id"] = name
 
@@ -603,14 +573,14 @@ def print_papers():
             author_object["organizations"] = author_orgs
         
         # Create a new file for each paper.
-        file_path = "sources/paper/{}__externallinks.json".format(paper_id)
-        with open(file_path, "w") as paper_file:
-            print(json.dumps(paper, indent=4), file=paper_file)
+        if paper_id not in seen_ids:
+            file_path = "sources/paper/{}__externallinks.json".format(paper_id)
+            with open(file_path, "w") as paper_file:
+                print(json.dumps(paper, indent=4), file=paper_file)
 
 
 # Print each author to their respective JSON files.
 def print_authors():
-    global seen_authors
     global author_data
 
     # Iterate over each author and print their JSON.
@@ -618,7 +588,7 @@ def print_authors():
         author = author_data[author_id]
 
         # Edge Case: Skip updating author objects that already exist.
-        if author_id in seen_authors:
+        if author_id in seen_ids:
             continue
 
         if "filename" in author:
