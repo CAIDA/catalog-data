@@ -48,6 +48,7 @@ import json
 import sys
 import re
 import os
+import lib.utils as utils
 
 #################################### Header ####################################
 
@@ -268,7 +269,7 @@ def parse_data_papers():
                 # Base Case: Parse current paper once delimeter is found.
                 if "---" in curr_line:
                     if len(curr_paper) != 0:
-                        parse_paper(curr_paper)
+                        parse_paper(data_papers, curr_paper)
                     curr_paper = ""
                     curr_line = file.readline()
                     continue
@@ -295,7 +296,7 @@ def parse_data_papers():
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
 #   @input curr_paper: A string where each \n is another TOPKEY.
-def parse_paper(curr_paper):
+def parse_paper(fname, curr_paper):
     global author_data
     global type_2_bibtex
     global papers
@@ -331,14 +332,7 @@ def parse_paper(curr_paper):
         if "MARKER" in line[0]:
             name = line[1].replace(" ", "")
 
-            paper["id"] = name
-
-            year = line[1][:4]
-            bibtext = "https://www.caida.org/publications/papers/{}/{}/bibtex.html".format(year, name[5:])
-            paper["resources"].append({
-                "name":"bibtex",
-                "url":bibtext
-            })  
+            paper["id"] = utils.id_create(fname, "paper", name)
                     
         elif "TYPE" in line[0]:
             paper_type = line[1]
