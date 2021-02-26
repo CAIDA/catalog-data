@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addresses seen in the traces of the IPv6 Topology Dataset.",
     "tags": [
+        "caida",
         "active",
         "topology",
         "traceroute",

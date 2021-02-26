@@ -447,10 +447,20 @@ def object_finish(obj):
                     person_org = obj[key][i]
                     error = False
                     if type(person_org) == dict:
+                        caida = False
+                        if "organizations" in person_org:
+                            for org in person_org["organizations"]:
+                                if re.search("caida", org, re.IGNORECASE):
+                                    caida = True
                         for k in ["person","presenter"]:
                             if k in person_org:
                                 person = person_lookup_id(obj["filename"],person_org[k])
                                 if person is not None:
+                                    if caida:
+                                        if "tags" not in person:
+                                            person["tags"] = ["caida"]
+                                        else:
+                                            person["tags"].append("caida")
                                     person_org[k] = person["id"]
                                 else:
                                     error = True

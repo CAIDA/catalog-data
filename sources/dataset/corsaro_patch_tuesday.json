@@ -1,6 +1,7 @@
 {
     "id": "corsaro_patch_tuesday",
     "tags": [
+        "caida",
         "security",
         "telescope"
     ],

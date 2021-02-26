@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "The IPv6 Topology Dataset contains information useful for studying the IP- and AS-topology of the IPv6 Internet. The focus of this measurement is on discovering topology and not on finding responding destinations. A globally distributed set of Archipelago (Ark) monitors has continuously collected this data since December 12, 2008.",
     "tags": [
+        "caida",
         "topology",
         "topology",
         "traceroute",

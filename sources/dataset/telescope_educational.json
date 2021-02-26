@@ -1,6 +1,7 @@
 {
     "id": "telescope_educational",
     "tags": [
+        "caida",
         "security",
         "telescope"
     ],

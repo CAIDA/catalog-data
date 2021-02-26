@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "CAIDA's Macroscopic Internet Topology Data Kit (ITDK) contains data for researchers about connectivity, routing and latency gathered from a large cross-section of the global Internet. This page introduces the first two ITDKs made available in 2002 and 2003. For the most recent ITDK datasets please see the updated Macroscopic Internet Topology Data Kit page.",
     "tags": [
+        "caida",
         "topology",
         "ipv4",
         "retired",

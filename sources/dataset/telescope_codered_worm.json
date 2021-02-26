@@ -1,6 +1,7 @@
 {
     "id": "telescope_codered_worm",
     "tags": [
+        "caida",
         "security",
         "worm"
     ],

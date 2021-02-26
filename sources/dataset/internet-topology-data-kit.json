@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "The ITDK contains data about connectivity and routing gathered from a large cross-section of the global Internet. This dataset is useful for studying the topology of the Internet at the router-level, among other uses.",
     "tags": [
+        "caida",
         "topology",
         "ipv4"
     ],

@@ -1,6 +1,7 @@
 {
     "id": "telescope_sipscan",
     "tags": [
+        "caida",
         "security",
         "telescope"
     ],

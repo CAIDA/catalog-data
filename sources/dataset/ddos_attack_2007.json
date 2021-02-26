@@ -1,6 +1,7 @@
 {
     "id": "ddos_attack_2007",
     "tags": [
+        "caida",
         "security"
     ],
     "dateStart": "2007-08-04",

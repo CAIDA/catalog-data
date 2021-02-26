@@ -3,6 +3,7 @@
     "name": "DynamIPs: Analyzing address assignment practices in IPv4 and IPv6 (Video)",
     "description": "",
     "tags": [
+        "caida",
         "dual-stack",
         "dynamic assignment",
         "ipv6",

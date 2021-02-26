@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "This is an archive of AS links observed by CAIDA's Skitter-based Macroscopic Topology Project per 24 hour period. The skitter infrastructure was retired on February 8, 2008 in favor of the next generation Archipelago (Ark) topology measurement infrastructure. Current AS Links data is available in the IPv4 Routed /24 AS Links Dataset.",
     "tags": [
+        "caida",
         "topology",
         "ipv4",
         "skitter"

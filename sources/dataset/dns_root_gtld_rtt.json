@@ -1,6 +1,7 @@
 {
     "id": "dns_root_gtld_rtt",
     "tags": [
+        "caida",
         "DNS"
     ],
     "dateStart": "2002.01",

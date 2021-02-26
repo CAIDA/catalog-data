@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "IODA's visualizations can contain both false positives and false negatives: A sudden drop in a time series is not guaranteed to be an outage, so be careful when interpreting IODA's data.",
     "tags": [
+        "caida",
         "security",
         "outages",
         "darknet",

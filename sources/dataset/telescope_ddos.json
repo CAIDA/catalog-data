@@ -1,6 +1,7 @@
 {
     "id": "telescope_ddos",
     "tags": [
+        "caida",
         "security"
     ],
     "dateStart": "2008-02",
