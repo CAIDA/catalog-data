@@ -1,6 +1,6 @@
 #!  /usr/bin/env python3
-__author__ = "Donald Wolfson"
-__email__ = "dwolfson@zeus.caida.org"
+__author__ = "Donald Wolfson, Bradley Huffaker"
+__email__ = "dwolfson@zeus.caida.org, bhuffaker@ucsd.edu"
 # This software is Copyright (C) 2020 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -57,7 +57,7 @@ import lib.utils as utils
     YAML file, data/data-papers.yaml. Each paper found is parsed for its TOPKEYS
     which map to manually inputted data about the paper. This script produces
     objects for papers, software, and media. Each new object is writted to its
-    respective directory with the tag __externallinks.json.
+    respective directory with the tag ___externallinks.json.
 """
 
 ############################## Global Variables ################################
@@ -192,8 +192,8 @@ topkey_2_dataset = {
 alternate_links = ["software:", "media:", "paper:"]
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
-re_pubdb = re.compile(r"__pubdb")
-re_ext = re.compile(r"__externallinks")
+re_pubdb = re.compile(r"___pubdb")
+re_ext = re.compile(r"___externallinks")
 
 # File Paths
 data_papers = None
@@ -512,7 +512,7 @@ def add_author(fname, last_name, first_name):
     if person is None:
         author_id = utils.id_create(fname, "person", last_name+"__"+first_name)
         if author_id not in author_data:
-            file_path = "sources/person/{}__externallinks.json".format(author_id)
+            file_path = "sources/person/{}___externallinks.json".format(author_id)
 
             author_data[author_id] = {
                 "id":"person:{}".format(author_id),
@@ -540,7 +540,7 @@ def print_papers():
         
         # Create a new file for each paper.
         if paper_id not in seen_ids:
-            file_path = "sources/paper/{}__externallinks.json".format(paper_id)
+            file_path = "sources/paper/{}___externallinks.json".format(paper_id)
             with open(file_path, "w") as paper_file:
                 print(json.dumps(paper, indent=4), file=paper_file)
 
@@ -555,7 +555,7 @@ def print_authors():
             if "filename" in author:
                 file_path = author["filename"]
             else:
-                file_path = "sources/person/{}__externallinks.json".format(author_id)
+                file_path = "sources/person/{}___externallinks.json".format(author_id)
 
             # Create a new file, or update the current file for each paper.
             with open(file_path, "w") as author_file:
