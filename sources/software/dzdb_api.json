@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "restricted",
-            "url": "https://api.dns.coffee/api/v0",
+            "url": "https://api.dns.coffee/api/",
             "tags": [
                 "API"
             ]
