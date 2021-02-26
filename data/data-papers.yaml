@@ -304,7 +304,7 @@ To enable this study, we first developed IXmon, an open-source DRDoS detection s
 
 MARKER : "2020_T_Wang_USENIX"
 TYPE   : "in_proceedings"
-AUTHOR : "Wang, Toa; Zhu, Hang; Ruffym Fabian; Jin, Xin; Sivaraman, Anirudh; Ports, Dan R. K.; Panda, Aurojit"
+AUTHOR : "Wang, Toa; Zhu, Hang; Fabian, Ruffym; Jin, Xin; Sivaraman, Anirudh; Ports, Dan R. K.; Panda, Aurojit"
 GEOLOC : "New York City, NY, US; Baltimore, MY, US; New York City, NY, US; Baltimore, MY, US; New York City, NY, US; New York City, NY, US; New York City, NY, US"
 TITLE  : "Multitenancy for fast and programmable networks in the cloud"
 YEAR   : "2020"
@@ -507,7 +507,7 @@ ABS    : "Knowledge of the Internet topology and the business relationships betw
 
 MARKER : "2020_Z_Lin_ICM"
 TYPE   : "in_proceedings"
-AUTHOR : "Lin, Zinan; Jain, Alankar; Wang, Chen; Fanti, Giulia; Sekar"
+AUTHOR : "Lin, Zinan; Jain, Alankar; Wang, Chen; Fanti, Giulia; Sekar, V."
 GEOLOC : "Pittsburgh, PA, US; Pittsburgh, PA, US; New York, NY, US; Pittsburgh, PA, US; Pittsburgh, PA, US"
 TITLE  : "Using GANs for Sharing Networked Time Series Data:Challenges, Initial Promise, and Open Questions"
 YEAR   : "2020_10"
@@ -535,7 +535,7 @@ ABS    : "Networks not employing destination-side source address validation (DSA
 
 MARKER : "2020_V_Giotsas_IMC"
 TYPE   : "in_proceedings"
-AUTHOR : "Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; V. Madhyastha; Katz-Bassett, Ethan"
+AUTHOR : "Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; Madhyastha, V.; Katz-Bassett, Ethan"
 GEOLOC : "Lancashire, UK; New York City, NY, US; Gerais, Brazil;  Belo Horizonte, Brazil; New York City, NY, US; Ann Arbor, MI, US; New York City, NY, US"
 TITLE  : "Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes"
 YEAR   : "2020_10"
@@ -1908,7 +1908,7 @@ ABS    : "Distributed denial of service (DDoS) attacks pose a severe threat to e
 
 MARKER : "2018_tmt_cqn_kvn_2019605"
 TYPE   : "in_proceedings"
-AUTHOR : "Thang, T. M., Nguyen, C. Q., Nguyen., K. V."
+AUTHOR : "Thang, T. M.; Nguyen, C. Q.; Nguyen, K. V."
 TITLE  : "Synflood Spoofed Source DDoS Attack Defense Based on Packet ID Anomaly Detection with Bloom Filter"
 CTITLE : "Asian Conf. on Defense Technology (ACDT)"
 YEAR   : "2018"
@@ -2018,7 +2018,7 @@ ABS    : "Computer networks play an important role in modern industrial environm
 
 MARKER : "2018_gsc_vs_ms_2019700"
 TYPE   : "in_journal"
-AUTHOR : "Chhabra, G. S., Singh, V., Singh, M."
+AUTHOR : "Chhabra, G. S.; Singh, V.; Singh, M."
 TITLE  : "Hadoop-based analytic framework for cyber forensics"
 SERIAL : "International Journal of Communication Systems"
 YEAR   : "2018"
@@ -6341,7 +6341,7 @@ ABS    : "This paper concerns the problem of finding persistent items in distrib
 ---
 MARKER : "2018_p_gill_imc"
 TYPE   : "in_proceedings"
-AUTHOR : "Singh, R., Dunna, A., Gill, P."
+AUTHOR : "Singh, R.; Dunna, A.; Gill, P."
 TITLE  : "Characterizing the deployment and performance of multi-CDNs"
 CTITLE : "Internet Measurement Conference (IMC)"
 YEAR   : "2018-10"
@@ -7849,7 +7849,7 @@ ABS    : "IP lookup is a core operation in packet forwarding, which is implement
 ---
 MARKER : "2018_p_goyal_arxiv_1802_08730"
 TYPE   : "online"
-AUTHOR : "Goyal, P., Narayan, A., Cangialosi, F., Raghavan, D., Narayana, S., Alizadeh, M., Balakrishnan, H."
+AUTHOR : "Goyal, P.; Narayan, A.; Cangialosi, F.; Raghavan, D.; Narayana, S.; Alizadeh, M.; Balakrishnan, H."
 TITLE  : "Elasticity detection: A building block for Internet congestion control"
 PUBLISH: "arxiv.org"
 YEAR   : "2018-02"
@@ -11533,7 +11533,7 @@ ABS    : "Internet in recent years has become a huge set of channels for content
 ---
 MARKER : "2016_d_hintze_mascots"
 TYPE   : "in_proceedings"
-AUTHOR : "Hintze, D, Rice, A."
+AUTHOR : "Hintze, D; Rice, A."
 TITLE  : "Picky: efficient and reproducible sharing of large datasets using Merkle-trees"
 CTITLE : "Symp. on Modeling, Analysis and Simulation of Computer and Telecommunication Systems (MASCOTS)"
 PAGE   : "(9 pages)"
@@ -11786,7 +11786,7 @@ ABS    : "A sketch-guided filtering scheme for assisting superspreader detection
 ---
 MARKER : "2016_z_liu_sigcomm_101"
 TYPE   : "in_proceedings"
-AUTHOR : "Liu, Z., Manousis, A., Vorsanger, X., Sekar, V., Braverman, V."
+AUTHOR : "Liu, Z., Manousis, A.; Vorsanger, X.; Sekar, V.; Braverman, V."
 TITLE  : "One sketch to rule them all: Rethinking network flow monitoring with UnivMon"
 CTITLE : "ACM SIGCOMM"
 YEAR   : "2016-08"
@@ -12337,7 +12337,7 @@ ABS    : "Brute-force attacks are omnipresent and manyfold on the Internet, and 
 ---
 MARKER : "2016_r_singh_arxiv_1606_02230"
 TYPE   : "online"
-AUTHOR : "Singh, R., Koo, H., Miramirkhani, N., Miraj F., Akoglu, L., Gill P."
+AUTHOR : "Singh, R., Koo, H.; Miramirkhani, N.; Miraj, F.; Akoglu, L.; Gill, P."
 TITLE  : "The politics of routing: Investigating the relationship between AS connectivity and Internet freedom"
 PUBLISH: "arxiv.org"
 YEAR   : "2016-06"
@@ -13057,7 +13057,7 @@ ABS    : "Net-flow fingerprint technique provides better efficiency in areas suc
 ---
 MARKER : "2016_h_lim_arxiv_1603_04387"
 TYPE   : "online"
-AUTHOR : "Lim, H., Sekar, V., Abe, Y., Anderson, D.G."
+AUTHOR : "Lim, H.; Sekar, V.; Abe, Y.; Anderson, D.G."
 TITLE  : "NetMemex: Providing full-fidelity traffic archival"
 PUBLISH: "arxiv.org"
 PAGE   : "(14 pages)"
@@ -13477,7 +13477,7 @@ REMARK : "In Chinese"
 ---
 MARKER : "2015_v_guilisano_eswa_42_9620"
 TYPE   : "in_journal"
-AUTHOR : "Gulisano, V., Zori, M., Fu, Z, Peris, R., Paptriantafilou, M., Martinez, M."
+AUTHOR : "Gulisano, V., Zori, M., Fu, Z.; Peris, R., Paptriantafilou, M., Martinez, M."
 TITLE  : "STONE: A streaming DDoS defense framework"
 SERIAL : "J. Expert System with Applications"
 YEAR   : "2015-12"
@@ -13795,7 +13795,7 @@ ABS    : "With the advent of online services, the Internet has become extremely 
 ---
 MARKER : "2015_y_purwanto_icwt"
 TYPE   : "in_proceedings"
-AUTHOR : "Purwanto, Y., Kuspriyanto, Hendrawan, Rahardjo, B."
+AUTHOR : "Purwanto, Y.; Kuspriyanto; Hendrawan; Rahardjo, B."
 TITLE  : "Statistical analysis on aggregate and flow based traffic features distribution"
 CTITLE : "Conf. on Wireless and Telematics (ICWT)"
 YEAR   : "2015-11"
@@ -13928,7 +13928,7 @@ ABS    : "Recently, a botnet based DDoS (Distributed Denial of Service) attack, 
 ---
 MARKER : "2015_z_liu_hotnets"
 TYPE   : "in_proceedings"
-AUTHOR : "Liu, Z., Vorsanger, G., Braverman, V., Sekar, V."
+AUTHOR : "Liu, Z., Vorsanger, G.; Braverman, V.; Sekar, V."
 TITLE  : "Enabling a 'RISC' approach for Software-Defined Monitoring using universal streaming"
 CTITLE : "ACM Workshop on Hot Topics in Networks (HotNets)"
 YEAR   : "2015-11"
@@ -16460,7 +16460,7 @@ ABS    : "Understanding the Internet's topological structure continues to be fra
 ---
 MARKER : "2014_y_purwanto_ictssa"
 TYPE   : "in_proceedings"
-AUTHOR : "Purwanto, Y., Kuspriyanto, Hendrawan, Rahardjo, B."
+AUTHOR : "Purwanto, Y.; Kuspriyanto; Hendrawan; Rahardjo, B."
 TITLE  : "Traffic anomaly detection in DDos flooding attack"
 CTITLE : "Conf. on Telecommunication Systems Services and Applications (TSSA)"
 YEAR   : "2014-10"
@@ -16956,7 +16956,7 @@ ABS    : "Prevalent computing devices with networking capabilities have become c
 ---
 MARKER : "2014_r_pecori_iwcmc_328"
 TYPE   : "in_proceedings"
-AUTHOR : "Pecori, R, Veltri, L."
+AUTHOR : "Pecori, R; Veltri, L."
 CTITLE : "Wireless Communications and Mobile Computing (IWCMC)"
 TITLE  : "A statistical blind technique for recognition of internet traffic with dependence enforcement"
 PAGE   : "328-333"
@@ -17916,7 +17916,7 @@ ABS    : "Most organizations or CERTs deploy and operate Intrusion Detection Sys
 ---
 MARKER : "2014_s_orzen_sami"
 TYPE   : "in_proceedings"
-AUTHOR : "Orzen, S.-N."
+AUTHOR : "Orzen, Stefano-Niko"
 TITLE  : "Domain relations in trees arborescence for interaction search on persistent routing availability"
 CTITLE : "Symp. on Applied Machine Intelligence and Informatics (SAMI)"
 YEAR   : "2014-01"
@@ -17928,7 +17928,7 @@ REMARK : "Krill request 4537 (2013/02/14) from Orzen for topology-ark"
 ---
 MARKER : "2014_f_tan_arxiv_1401_0412"
 TYPE   : "online"
-AUTHOR : "Tan, F, Wu, J., Xia, Y., Tse, C.K."
+AUTHOR : "Tan, F.; Wu, J.; Xia, Y.; Tse, C.K."
 TITLE  : "Traffic congestion in interconnected complex networks"
 PUBLISH: "arxiv.org"
 PAGE   : "(8 pages)"
@@ -18156,7 +18156,7 @@ ABS    : "Large-scale botnet attacks against Internet links using low-rate flows
 ---
 MARKER : "2013_b_eriksson_conext_405"
 TYPE   : "in_proceedings"
-AUTHOR : "Eriksson, B, Durairajan, R., Barford, P."
+AUTHOR : "Eriksson, B; Durairajan, R.; Barford, P."
 TITLE  : "RiskRoute: A framework for mitigating network outage threats"
 CTITLE : "ACM Conf. on Emerging Networking Experiments and Technologies (CoNEXT)"
 PAGE   : "405-416"
@@ -18252,7 +18252,7 @@ ABS    : "The position of the nodes within a network topology largely determines
 ---
 MARKER : "2013_s_huang_iclanov"
 TYPE   : "in_proceedings"
-AUTHOR : "Huang S.Y., Huang Y."
+AUTHOR : "Huang, S.Y.; Huang, Y."
 TITLE  : "Network forensic analysis using growing hierarchical SOM"
 CTITLE : "IEEE ICDM workshop on Incremental clustering, concept drift and novelty detection (IClaNov)"
 PAGE   : "536-543"
@@ -23246,7 +23246,7 @@ GEOLOC : "Beijing, CN; Evanston, IL, US; Evanston, IL, US; Beijing, CN"
 ---
 MARKER : "2010_b_dou_physica_a_389_2310"
 TYPE   : "in_journal"
-AUTHOR : "Dou, B-L, Wang, X-G, Zhang, S-Y"
+AUTHOR : "Dou, B-L; Wang, X-G; Zhang, S-Y"
 TITLE  : "Robustness of networks against cascading failures"
 SERIAL : "Physica A: Statistical Mechanics and its Applications"
 VOLUME : "389 (11)"

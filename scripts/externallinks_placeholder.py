@@ -221,7 +221,8 @@ def main(argv):
     data_papers = args.data_papers
 
     # Add the current set of paper and persons
-    add_seen_ids(["sources/paper","sources/person"])
+    add_seen_ids(["sources/paper"])
+    add_seen_authors("sources/person")
 
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
@@ -247,6 +248,16 @@ def add_seen_ids(dirs):
                 
                 seen_ids.add(data["id"])
 
+# Add each paper's ID to seen_papers from the source/paper directory.
+def add_seen_authors(d):
+    for fname in os.listdir(d):
+        # Edge Case: Skip if file is not .json.
+        if re_jsn.search(fname) and not re_pubdb.search(fname) and not re_ext.search(fname):
+            f = d+'/'+fname
+            with open(f, "r") as opened_file:
+                person = json.load(opened_file)
+                person['already_found'] = True
+                utils.person_seen_add(f,person)
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
 def parse_data_papers():
@@ -330,9 +341,7 @@ def parse_paper(fname, curr_paper):
 
         # Check which TOPKEY is used for the current line.
         if "MARKER" in line[0]:
-            name = line[1].replace(" ", "")
-
-            paper["id"] = utils.id_create(fname, "paper", name)
+            paper["id"] = utils.id_create(fname, "paper", line[1])
                     
         elif "TYPE" in line[0]:
             paper_type = line[1]
@@ -340,49 +349,35 @@ def parse_paper(fname, curr_paper):
 
         elif "AUTHOR" in line[0]:
             # Handle the two seperate ways that authors can be stored.
-            authors = line[1]
-
-            # Author's are either split by semicolon, or last name initial.
-            if ";" in line[1]:
-                authors = authors.split(";")
-            else:
-                authors = authors.split(".,")
+            authors = []
+            for author in re.split(";\s*", re.sub("\.\s*,",";",line[1])):
+                names = re.split("\s*,\s*", author)
+                if len(names) == 4:
+                    authors.append(names[0]+", "+names[1])
+                    authors.append(names[2]+", "+names[3])
+                else:
+                    authors.append(author)
 
             # Iterate over each author and add there an object for them.
             for author in authors:
                 author = author.strip()
-                author = re.split(r"\W+", author)
+                #author = re.split(r"\W+", author)
+                if re.search("\s*,\s*",author):
+                    last_name, first_name = re.split("\s*,\s*",author)
+                elif not re.search("^[a-z]+$", author, re.IGNORECASE):
+                    print ("unparseable", line[1])
+                    print ("    ",[last_name, first_name])
+                    first_name = ""
+                    last_name = author
+                author_id = add_author(fname, last_name, first_name);
                 
-                # Format author's name into ID format.
-                author_id = ""
-                for name_part in author:
-                    if len(name_part) >= 1:
-                        author_id += "{}__".format(name_part)
-                author_id = author_id[:-2]
-
                 paper["authors"].append({
-                    "person":"person:{}".format(author_id)
+                    "person":author_id
                 })
-
-                # Add missing authors to author_data.
-                if author_id not in author_data:
-                    add_author(author_id)
                     
-        elif "GEOLOC" in line[0]:
-            locations = line[1].split(";")
-
-            # Edge Case: Apply the single location to all authors.
-            if len(locations) == 1 and len(paper["authors"]) != 1:
-                location = locations[0].strip()
-                for author in paper["authors"]:
-                    author_id = author["person"].split(":")[1]
-                    add_author_data(author_id, location)
-                continue
-            
-            # Iterate over each location and author object.
-            for location, author in zip(locations, paper["authors"]):
-                author_id = author["person"].split(":")[1]
-                add_author_data(author_id, location.strip())
+        # Geo is the country the data request came from.
+        # It is not the organization
+        # elif "GEOLOC" in line[0]:
 
         elif "TITLE" in line[0] and "CTITLE" not in line[0]:
             title = line[1]
@@ -508,47 +503,30 @@ def parse_paper(fname, curr_paper):
         papers[paper["id"]] = paper
 
 
-# Helper function to update author_data.
-#   @input author_id: The formatted ID for the current author.
-#   @input location: The organization that will be added.
-#   @return author_orgs: The list of this author's organizations.
-def add_author_data(author_id, organization):
-    global author_data
-
-    # Add author from author_data, else the current location.
-    if author_id in author_data and "organization" in author_data[author_id]:
-        # Edge Case: Add the current or to org if missing.
-        if organization not in author_data[author_id]["organization"]:
-            author_obj = author_data[author_id]
-            author_obj["organization"].append(organization)
-    else:
-        # Add the author to author_data
-        add_author(author_id)
-        # Add the organization.
-        author_data[author_id]["organization"].append(organization)
-
-    return author_data[author_id]["organization"]
-
-
 # Helper function add an author to author_data.
 #   @input author_id: The formatted ID for the current author.
-def add_author(author_id):
+def add_author(fname, last_name, first_name):
     global author_data
+    person = utils.person_seen_check(last_name, first_name)
 
-    # Add the author to author_data
-    name = author_id.split("__")
-    first_name = name[-1]
-    last_name = " ".join(map(str, name[:-1]))
-    file_path = "sources/person/{}__externallinks.json".format(author_id)
+    if person is None:
+        author_id = utils.id_create(fname, "person", last_name+"__"+first_name)
+        if author_id not in author_data:
+            file_path = "sources/person/{}__externallinks.json".format(author_id)
 
-    author_data[author_id] = {
-        "id":"person:{}".format(author_id),
-        "__typename":"person",
-        "filename":file_path,
-        "nameLast":last_name,
-        "nameFirst":first_name,
-        "organization":[]
-    }
+            author_data[author_id] = {
+                "id":"person:{}".format(author_id),
+                "__typename":"person",
+                "filename":file_path,
+                "nameLast":last_name,
+                "nameFirst":first_name,
+                "organizations":[]
+            }
+
+    else:
+        author_id = person["id"]
+
+    return author_id
 
 
 # Print each paper to their respective JSON files.
@@ -559,12 +537,6 @@ def print_papers():
     # Iterate over each paper and print their JSON.
     for paper_id in papers:
         paper = papers[paper_id]
-        
-        # Update any author data incase new organizations were added.
-        for author_object in paper["authors"]:
-            author_id = author_object["person"].split(":")[1]
-            author_orgs = author_data[author_id]["organization"]
-            author_object["organizations"] = author_orgs
         
         # Create a new file for each paper.
         if paper_id not in seen_ids:
@@ -578,21 +550,18 @@ def print_authors():
     global author_data
 
     # Iterate over each author and print their JSON.
-    for author_id in author_data:
-        author = author_data[author_id]
+    for author in author_data.values():
+        if "already_found" not in author:
+            if "filename" in author:
+                file_path = author["filename"]
+            else:
+                file_path = "sources/person/{}__externallinks.json".format(author_id)
 
-        # Edge Case: Skip updating author objects that already exist.
-        if author_id in seen_ids:
-            continue
-
-        if "filename" in author:
-            file_path = author["filename"]
+            # Create a new file, or update the current file for each paper.
+            with open(file_path, "w") as author_file:
+               print(json.dumps(author, indent=4), file=author_file)
         else:
-            file_path = "sources/person/{}__externallinks.json".format(author_id)
-
-        # Create a new file, or update the current file for each paper.
-        with open(file_path, "w") as author_file:
-           print(json.dumps(author, indent=4), file=author_file)
+            print ("skipping", author)
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])
