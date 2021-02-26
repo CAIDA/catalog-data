@@ -29,3 +29,4 @@ clean:
 	rm -f pubdb sources/*/*__pubdb.json id_id_link.json word_id_score.json
 	rm -f sources/*/*__externallinks.json
 	rm -f sources/*/*__caida.json
+	rm -f sources/*/*___*.json

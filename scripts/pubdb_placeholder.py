@@ -23,7 +23,7 @@ def main():
         if os.path.isdir(p):
             for fname in os.listdir(p):
                 fname = p+"/"+fname
-                if re.search("json$",fname) and "__pubdb" not in fname: 
+                if re.search("json$",fname) and "___pubdb" not in fname: 
                     try:
                         obj = json.load(open(fname,"r"))
                     except json.decoder.JSONDecodeError as e:
@@ -154,7 +154,7 @@ def load_ids(type_,filename):
             id_add(filename, type_, obj["id"])
             original = "sources/"+type_+"/"+obj["id"]+".json"
             if not os.path.exists(original):
-                obj["filename"] = "sources/"+type_+"/"+obj["id"]+"__pubdb.json"
+                obj["filename"] = "sources/"+type_+"/"+obj["id"]+"___pubdb.json"
                 objects.append(obj)
     except json.decoder.JSONDecodeError as e:
         print ("error",fname, e)
