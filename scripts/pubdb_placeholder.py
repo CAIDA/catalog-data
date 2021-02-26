@@ -41,6 +41,8 @@ def main():
                             #print (name)
                             #print ()
                         name_id[name] = utils.id_create(fname, type_,obj["id"])
+                    if type_ == "person":
+                        utils.person_seen_add(fname, obj)
         
     if error:
         sys.exit(1)
@@ -135,7 +137,8 @@ def main():
         json.dump(obj,open(obj["filename"],"w"),indent=4)
 
     for obj in id_person.values():
-        json.dump(obj,open(obj["filename"],"w"),indent=4)
+        if "already_exists" not in obj:
+            json.dump(obj,open(obj["filename"],"w"),indent=4)
 
 
 def key_to_key(obj,key_a,key_b):
@@ -186,16 +189,21 @@ def id_yearless(id_):
 
 id_person = {}
 def person_create(filename, obj):
-    id_ = utils.id_create("filename",'person',obj)
-    if id_ not in id_person:
-        if obj[:7] == "person:":
-            nameLast,nameFirst = obj[7:].split("__")
-        else:
-            nameLast,nameFirst = obj.split("__")
-        person = {
-            "id": id_,
-            "__typename":"person",
-            "filename":"sources/person/"+id_[7:]+"__pubdb.json", "nameLast": nameLast.replace("_"," ").title(), "nameFirst": nameFirst.replace("_"," ").title()
-        }
-        id_person[id_] = person
+    if obj[:7] == "person:":
+        nameLast,nameFirst = obj[7:].split("__")
+    else:
+        nameLast,nameFirst = obj.split("__")
+    person = utils.person_seen_check(nameLast,nameFirst)
+    if person is None:
+        id_ = utils.id_create("filename",'person',obj)
+        if id_ not in id_person:
+            person = {
+                "id": id_,
+                "__typename":"person",
+                "filename":"sources/person/"+id_[7:]+"__pubdb.json", "nameLast": nameLast.replace("_"," ").title(), "nameFirst": nameFirst.replace("_"," ").title()
+            }
+            id_person[id_] = person
+    elif person["id"] not in id_person:
+        person["already_exists"] = True
+        id_person[person["id"]] = person
 main()

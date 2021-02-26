@@ -1,4 +1,4 @@
-#!  /usr/bin/env python3
+
 # This software is Copyright (C) 2018 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -161,6 +161,7 @@ def main():
 
     #######################
     #######################
+    seen_id = {}
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname == "solution" or fname == "recipe":
@@ -174,6 +175,11 @@ def main():
                         info = json.load(open(path+"/"+filename))
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
+                        id = obj["id"]
+                        if id in seen_id:
+                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                        else:
+                            seen_id[id] = filename
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
                     except Exception as e:
@@ -734,6 +740,10 @@ def person_add_names(person):
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    for key in ["nameFirst","nameLast"]:
+        if key not in person or person[key] is None:
+            person[key] = ""
+            print ("failed to find",key,person)
     #print (person["id"])
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
     return True
