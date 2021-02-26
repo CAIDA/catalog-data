@@ -193,7 +193,7 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates")
+    print ("adding dates (skipping '*___*'")
     for obj in list(id_object.values()):
         object_date_add(obj)
 
@@ -315,13 +315,16 @@ def object_date_add(obj):
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
-            if key == "dateCreated":
-                cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
-            else:
-                cmd = "git log --format=%aD -1 -- "
+            if not re.search("___", obj["filename"]):
+                if key == "dateCreated":
+                    cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
+                else:
+                    cmd = "git log --format=%aD -1 -- "
 
-            result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
-            values = result.decode().lower().split(" ")
+                result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
+                values = result.decode().lower().split(" ")
+            else:
+                values = []
             date = datetime.date.today().strftime("%Y.%m")
             if len(values) >= 4:
                 if values[2] in mon_index:
