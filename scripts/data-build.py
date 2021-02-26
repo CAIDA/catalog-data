@@ -324,7 +324,6 @@ def object_date_add(obj):
                 result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
                 values = result.decode().lower().split(" ")
             else:
-                print ("skipping",obj["filename"])
                 values = []
             date = datetime.date.today().strftime("%Y.%m")
             if len(values) >= 4:
