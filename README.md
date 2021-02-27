@@ -1,7 +1,17 @@
-## Catalog Data
-This contains the source JSON files used to build the catalog's databases.
-The source JSON files are found in the source directory.  These are combined 
-to build id_id_link.json, id_object.json, and word_score_id.json. 
+<img src="/images/catalog-logo.png" width="80px"> **CAIDA's Resource Catalog Data**
+
+This contains the source JSON files used to build the [CAIDA's catalog](https://catalog.caida.org/).
+The source JSON files are found in the source directory.  
+
+## How to contribute
+
+If you would like to contribute to the catalog:
+  - [how to contribute](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute) to the catalog
+  - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe) to the catalog
+
+## Overview of these files
+
+These are combined to build id_id_link.json, id_object.json, and word_score_id.json. 
 
 There are three derived files generated from the object meta data.
 - id_object.json : a id to object dictionary, it has all the object data execpt for links
@@ -12,26 +22,23 @@ These are made by two scripts:
 - scripts/pubdb_placeholder.py : creates the pubdb objects
 - scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
-## Build the compiled data
+## Build the catalog data
+You will need to have b4 installed in python3.  You can do this using
+virtualenv.
+~~~bash
+virtualenv env
+source env/bin/activate
+pip3 install bs4
+~~~
+
 Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
 
 ~~~
+# If you haven't activated virtualenv yet
+# You need only do this once per shell
+source env/bin/activate 
+
 make
 ~~~
 
 You can also do ```make clean``` to remove the pubdb files and id_\* files. 
-
-### Possible Solutions:
-- Introduction to PANDA
-- Introductino to Internet Data
-
-### Possible questions:
-- What is the current packet size distribution? 
-- How many IP addresses are allocated to Africa? 
-- How do I download a json representing the values in asran.caida.org/asns?
-- How do I get a full rib file from BGPSteam?
-- How many ASs do not block spoofed source addresses?
-- How do I get an AS's name?
-- How do I get a list of prefixes belong to a given IXP?
-- Is list of ASes (A,B,C,D>..) directly connected on today's BGP tables, and since when have they been?
-- What is a MOAS and how should you resolve them?

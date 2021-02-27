@@ -9,7 +9,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "ihr.iijlab.net/ihr",
+            "url": "https://ihr.iijlab.net/ihr/en-us/",
             "tags": [
                 "UI"
             ]

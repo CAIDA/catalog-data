@@ -1,4 +1,4 @@
-#!  /usr/bin/env python3
+
 # This software is Copyright (C) 2018 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -39,15 +39,12 @@
 # ENHANCEMENTS, OR MODIFICATIONS.
 __author__ = "Bradley Huffaker"
 __email__ = "<bradley@caida.org>"
-import argparse
 import json
 import sys
 import os
-import copy
 import re
 import time
 import datetime
-#import markdown2
 import subprocess
 import lib.utils as utils
 
@@ -63,9 +60,9 @@ id_word_score = {}
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
-re_not_word = re.compile("[\s ,\?\.\(\)\:_]+")
-re_word = re.compile("^[a-z0-9]+$",re.IGNORECASE)
-re_year = re.compile("^(\d\d\d\d)")
+#re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
+re_not_word = re.compile("[^a-z^A-Z^0-9]+")
+re_word = re.compile("^[a-zA-Z0-9]+$",re.IGNORECASE)
 
 re_html = re.compile("<[^>]+>")
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
@@ -74,6 +71,8 @@ re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 
 re_date_key = re.compile("^date",re.IGNORECASE)
 re_not_digit = re.compile("[^\d]+")
+
+repo_url_default = "https://github.com/CAIDA/catalog-data"
 
 # Weight used to create id scoring for search
 # currently not used.
@@ -90,21 +89,52 @@ filename_errors = {}
 # Weights used to create word scoring for search
 weight_default = 1
 key_weight = {
+    "__typename":0,
+    "id":0,
     "name": 10,
-    "nameLast": 10,
-    "nameFirst":10,
-    "date":10,
-    "visibility":5,
-    "organization":5,
-    "status":5,
-    "tags": 5,
-    "person": 5,
-    "venue": 5,
-    "publisher": 3,
-    "description": 3,
-    "content": 2,
-    "resources":1,
-    "type":1
+    "tags": 10,
+    "description": 5,
+    "content": 3,
+    "authors": 3
+}
+link_weight = {
+    "Paper":.3,
+    "Dataset":.5,
+    "Software":.3,
+    "Recipe":.3
+}
+
+type_key_w_type_w = {
+    "datasets": {
+        "key_weights": [
+            ["name", 10],
+            ["description",1],
+            ["tags",.5]
+        ],
+        "link_weights":[ 
+            ["papers",.5],
+        ]
+    },
+    "papers": {
+        "key_weights": [
+            ["name", 10],
+            ["description",8]
+        ],
+        "type_weights":[ 
+            ["tags",.5],
+            ["datasets", .5]
+        ]
+    },
+    "papers": {
+        "key_weights": [
+            ["name", 10],
+            ["description",8]
+        ],
+        "type_weights":[ 
+            ["tags",.5],
+            ["datasets", .5]
+        ]
+    }
 }
 
 id_missing = {}
@@ -131,6 +161,7 @@ def main():
 
     #######################
     #######################
+    seen_id = {}
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname == "solution" or fname == "recipe":
@@ -144,12 +175,17 @@ def main():
                         info = json.load(open(path+"/"+filename))
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
+                        id = obj["id"]
+                        if id in seen_id:
+                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                        else:
+                            seen_id[id] = filename
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
-                    except json.decoder.JSONDecodeError as e:
-                        print ("error",filename, e.toString())
-                    except ValueError as e:
-                        print (path+"/"+filename)
+                    except Exception as e:
+                        print ("\nerror",path+"/"+filename)
+                        print ("    ",e)
+                        sys.exit()
         else:
             obj = None
 
@@ -157,7 +193,7 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates")
+    print ("adding dates ( skipping '*___*' )")
     for obj in list(id_object.values()):
         object_date_add(obj)
 
@@ -173,7 +209,6 @@ def main():
         "Media":object_checker
     }
 
-    print ("checking objects")
     id_failed = []
     for id_,obj in id_object.items():
         type_ = obj["__typename"]
@@ -204,18 +239,30 @@ def main():
         print("    type 'make links'")
 
     #######################
-    # ca
+    # parse out the words from the fields
     #######################
-    for obj in id_object.values():
-        object_word_update(obj)
-        
     print ("adding words")
+    for obj in id_object.values():
+        word_scoring(obj)
+        
     word_id_score = {}
     for id_,word_score in id_word_score.items():
         for word,score in word_score.items():
             if word not in word_id_score:
                 word_id_score[word] = {}
-            word_id_score[word][id_] = score
+            word_id_score[word][id_] = score;
+
+    #######################
+    # Remove empty arrays 
+    #######################
+    print ("removing empty obj arrays")
+    for obj in id_object.values():
+        keys = []
+        for key, value in obj.items():
+            if list == type(value) and len(value) == 0:
+                keys.append(key)
+        for key in keys:
+            del obj[key];
 
     #######################
     # print files
@@ -227,8 +274,8 @@ def main():
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
 
     print ("writing",word_id_score_file)
-    #json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
     json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
+    #json.dump(word_score_id, open(word_id_score_file,"w"))
 
 ###########################
 def error_add(filename, message):
@@ -258,20 +305,26 @@ id_date = {}
 def id_date_load(filename):
     global id_date
     if os.path.exists(filename):
-        id_date = json.load(open(filename,"r"))
+        try:
+            id_date = json.load(open(filename,"r"))
+        except ValueError as e:
+            error_add(filename, e.__str__())
 
 def object_date_add(obj):
     for key in ["dateCreated","dateLastUpdated"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
-            if key == "dateCreated":
-                cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
-            else:
-                cmd = "git log --format=%aD -1 -- "
+            if not re.search("___", obj["filename"]):
+                if key == "dateCreated":
+                    cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
+                else:
+                    cmd = "git log --format=%aD -1 -- "
 
-            result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
-            values = result.decode().lower().split(" ")
+                result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
+                values = result.decode().lower().split(" ")
+            else:
+                values = []
             date = datetime.date.today().strftime("%Y.%m")
             if len(values) >= 4:
                 if values[2] in mon_index:
@@ -280,50 +333,19 @@ def object_date_add(obj):
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
 
-    if obj["__typename"] == "media" and "presenters" in obj:
+    if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
     else:
-        for type_key in [["Dataset","dateStart"], ["Media","datePublished"]]:
+        for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
             type_,key = type_key
             if obj["__typename"] == type_ and key in obj:
                 obj["date"] = obj[key]
 
     if "date" not in obj:
-        t_ = obj["__typename"]
-        if t_ == "Dataset" and obj["id"] in id_id_link:
-
-            if "dateEnd" in obj:
-                obj["date"] = obj["dateEnd"]
-            elif "dateStart" in obj:
-                obj["date"] = obj["dateStart"]
-            else:
-                for id_ in id_id_link[obj["id"]]:
-                    if id_ in id_object:
-                        o = id_object[id_]
-                        if o["__typename"] == "Paper" and "datePublished" in o:
-                            d = o["datePublished"]
-                            if "date" not in obj or obj["date"] > d:
-                                obj["date"] = d
-                        if o["__typename"] == "Media" and "presenters" in o:
-                            for p in o["presenters"]:
-                                if "date" in p:
-                                    d = p["date"]
-                                    if "date" not in obj or obj["date"] > d:
-                                        obj["date"] = d
-
-            #if "date" not in obj:
-                #error_add(obj["filename"], "failed to find date for "+obj["id"])
-                #obj["date"] = obj["dateCreated"]
-        elif t_ == "recipe" or t_ =="tag" or t_ == "person" or t_ == "group" or t_ == "software":
-            obj["date"] = obj["dateLastUpdated"]
-
-    if "date" in obj:
-        parts = re.split("[^\d]+",obj["date"])
-        if len(parts) < 2:
-            parts[2] = "01"
-        obj["date"] = parts[0]+"."+parts[1]
+        obj["date"] = obj["dateLastUpdated"]
+    obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
@@ -425,10 +447,20 @@ def object_finish(obj):
                     person_org = obj[key][i]
                     error = False
                     if type(person_org) == dict:
+                        caida = False
+                        if "organizations" in person_org:
+                            for org in person_org["organizations"]:
+                                if re.search("caida", org, re.IGNORECASE):
+                                    caida = True
                         for k in ["person","presenter"]:
                             if k in person_org:
                                 person = person_lookup_id(obj["filename"],person_org[k])
                                 if person is not None:
+                                    if caida:
+                                        if "tags" not in person:
+                                            person["tags"] = ["caida"]
+                                        else:
+                                            person["tags"].append("caida")
                                     person_org[k] = person["id"]
                                 else:
                                     error = True
@@ -445,7 +477,7 @@ def object_finish(obj):
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
-                id_2 = utils.id_create(obj["filename"],None,id_);
+                id_2 = utils.id_create(obj["filename"],"license",id_);
                 if id_2 not in id_object:
                     name = id_[8:]
                     object_add("License", {
@@ -459,6 +491,10 @@ def object_finish(obj):
 
 
 def person_lookup_id(filename, id_):
+    if (type(id_) != str):
+        error_add(filename, "person id wrong type found:"+str(type(id_))+" wanted str : "+json.dumps(id_))
+        return None
+
     id_ = id_.lower()
     if ":" in id_:
         if "person:" in id_:
@@ -551,12 +587,12 @@ def link_add(obj,info):
 
     if type(info) == str:
         to_original = info
-        to = utils.id_create(None,None,info)
+        to = utils.id_create(obj["filename"],None,info)
         info = { "to":to }
     else:
         if "to" in info:
             to_original = info["to"]
-            to = info["to"] = utils.id_create(None,None,info["to"])
+            to = info["to"] = utils.id_create(obj["filename"],None,info["to"])
         else:
             error_add(obj["filename"],"link has no to"+json.dumps(info))
             return None
@@ -600,6 +636,7 @@ def link_add(obj,info):
 #############################
 
 def recipe_process(path):
+    rep_url = get_url()+"/blob/master/"
     recipe_dir = set()
     skipped = []
     obj = None
@@ -615,8 +652,15 @@ def recipe_process(path):
                         inside = False
                         data = None
                         for line in f:
+                            # process content after JSON 
                             if info is not None:
+                                line = replace_markdown_urls(rep_url+root, line)
+                                #if re_markdown_url.search(line):
+                                    #print (line.rstrip())
                                 info["content"] += line
+
+
+                            # process JSON 
                             elif re.search("~~~",line):
                                 if inside:
                                     if data == "":
@@ -641,15 +685,57 @@ def recipe_process(path):
                                 inside = not inside
                             elif data is not None:
                                 data += line
+                    errors = []
                     if info is None:
                         info = {}
                     #if "visibility" not in info or "public" != info["visibility"].lower():
                         #errors.append("invisible")
 
-
                     if not error: 
-                        object_add("Recipe", info)     
+                        object_add("Recipe", info)
+re_markdown_url = re.compile("^(.*\[[^\]]+\]\(\s*)([^\)]+)(\).*)")
+def replace_markdown_urls(repo_url, line):
+    m = re_markdown_url.search(line)
+    if m:
+        before,url,after = m.groups()
+        #print (before, "|", url, "|", after)
+        if url[0:4] != "http":
+            url = repo_url +"/"+url
+        return replace_markdown_urls(repo_url, before)+url+replace_markdown_urls(repo_url, after)
+    else:
+        return line
 
+def get_url():
+    filename = ".git/config"
+    if os.path.exists(filename):
+        re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
+        re_url = re.compile("\s+url = ([^\s]+)")
+        url = None
+        with open(filename) as f:
+            origin_found = False
+            for line in f:
+                m = re_remote.search(line)
+                if m:
+                    type_, source = m.groups()
+                    if "remote" == type_ and "origin" == source:
+                        origin_found = True
+                    else:
+                        origin_found = False
+                else:
+                    m = re_url.search(line)
+                    if origin_found and m:
+
+                        url = m.group(1).replace(":","/")
+                        url = re.sub('.+\@','https://', re.sub(".git$","",url ))
+                        break
+        if url is None:
+            url = repo_url_default
+            error_add(filename, "failed to find origin url, using "+url)
+    else:
+        url = repo_url_default
+        error_add(filename, "does not exist")
+
+    return url
 
 #############################
 
@@ -661,12 +747,16 @@ def person_add_names(person):
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
-                names = person["id"][7:].split("__")
+                names = person["id"][7:].split("_")
             else:
-                names = person["id"].split("__")
+                names = person["id"].split("_")
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    for key in ["nameFirst","nameLast"]:
+        if key not in person or person[key] is None:
+            person[key] = ""
+            print ("failed to find",key,person)
     #print (person["id"])
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
     return True
@@ -685,88 +775,54 @@ def object_checker(obj):
 
 #############################
 
-key_word_seen = set()
-key_word_skip = set(["bibtexFields","pubdb_id","linkedObjects","__typename","filename","id","licenses","url","image"])
-def object_word_update(obj):
-    word_score = {"":1}
+def word_scoring(obj, recursive=False):
+    word_score = {}
     for key,value in obj.items():
-        if key == "tags":
+        if key in key_weight:
             weight = key_weight[key]
-            for tag in obj["tags"]:
-                word_score_add(word_score, tag[4:], weight)
-        elif key[0:4] == "date":
-            word_score_date(word_score, value)
-        elif key == "resources":
-            weight = key_weight["date"]
-            for resource in obj["resources"]:
-                word_score_add(word_score, resource["name"], weight)
-        elif key == "presenters" or key == "authors":
-            for presenter in obj[key]:
-                if type(presenter) == str: 
-                    person = presenter
-                else:
-                    if "person" in presenter:
-                        person = presenter["person"]
-                    else:
-                        person = None
-                    if "date" in presenter:
-                        word_score_date(word_score, presenter["date"])
-                    if "organizations" in presenter:
-                        for org in presenter["organizations"]:
-                            word_score_add(word_score, org, key_weight["organization"])
-                if person is not None:
-                    person = person[7:]
-                    word_score_add(word_score, person, key_weight["person"])
+        else:
+            weight = weight_default
 
-        elif key in key_weight:
-            weight = key_weight[key]
+        if weight == 0:
+            continue
 
-            for word,freq in word_freq_get(value).items():
-                word_score_add(word_score, word, freq*weight)
+        word_freq = word_freq_get(value)
 
-        #elif key not in key_word_seen:
-            #if key not in key_word_skip:
-                #print (obj["filename"], key,value)
-                #key_word_seen.add(key)
-
-    #id1 = obj["id"]
-    #if id1 in id_id_link:
-        #for id2 in id_id_link[id1].keys():
-            #if id2[0:3] == "tag":
-                #for word in id_object[id2]["name"]:
-                    #if word not in word_score:
-                        #word_score[word] = weight
-                    #else:
-                        #word_score[word] += weight
+        for word,freq in word_freq.items():
+            word = word.lower()
+            if word not in word_score:
+                word_score[word] = weight*freq
+            else:
+                word_score[word] += weight*freq 
 
     id_word_score[obj["id"]] = word_score
 
-def word_score_date(word_score, value):
-    weight = key_weight["date"]
-    m = re_year.search(value)
-    if m:
-        word_score_add(word_score, m.groups()[0], weight)
-
-def word_score_add(word_score, string, weight):
-    for word,freq in word_freq_get(string).items():
-        word = word.lower()
-        if word not in word_score:
-            word_score[word] = freq*weight
-        else:
-            word_score[word] += freq*weight
-
+seen_value = set()
 def word_freq_get(value):
     word_freq = {}
     type_ = type(value)
     if str == type_:
-        if value in id_word_score:
-            word_freq = id_word_score[value]
+        if value in id_object:
+            obj = id_object[value];
+            t = obj["__typename"]
+            keys = []
+            if t == "Person":
+                keys  = ["nameFirst","nameLast"]
+            elif t == "Tag":
+                keys = ["name"]
+            #else:
+                #if t not in seen_value:
+                    #print (t)
+                    #seen_value.add(t)
+
+            for key in keys:
+                if key in obj:
+                    word_freq[obj[key].lower()] = 1.0/len(keys)
         else:
-            words = re_not_word.split(re_html.sub("",value))
+            words = re_not_word.split(re_html.sub("",value.lower() ))
             total = len(words)
             for word in words:
-                word = word.lower()
-                if len(word) > 1 and re_word.search(word): 
+                if len(word) > 0 and re_word.search(word): 
                     if word in word_freq:
                         word_freq[word] += 1/total
                     else:

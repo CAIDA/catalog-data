@@ -1,8 +1,10 @@
 {
     "id": "2013_as_relationships_imc",
+    "date":"2013.10",
     "type":"presentation",
     "name": "AS Relationships, Customer Cones, and Validation",
     "tags": [
+        "caida",
         "measurement methodology",
         "topology",
         "security",
@@ -10,7 +12,7 @@
     ],
     "presenters": [
         {
-            "person": "person:luckie_matthew",
+            "person": "person:luckie__matthew",
             "venue": "venue:acm_internet_measurement_conference_imc",
             "date": "2013.10",
             "url": "http://conferences.sigcomm.org/imc/2013/"

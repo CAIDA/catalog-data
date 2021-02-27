@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "The equinix-nyc Internet data collection monitor is located at an Equinix datacenter in New York, New York.",
     "tags": [
+        "caida",
         "passive"
     ],
     "dateStart": "2008.02",

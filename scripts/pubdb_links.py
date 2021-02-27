@@ -29,6 +29,12 @@ def url_cleaner(url):
     return re.sub("https?://", "", re.sub("[/,\.\)]+$","",url))
 
 def main():
+    links = set()
+    if not os.path.exists(files_dir):
+        print ("error:",files_dir," does not exits",file=sys.stderr);
+        sys.exit(1)
+    sys.exit()
+
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -42,7 +48,8 @@ def main():
                             for resource in obj["resources"]:
                                 if "url" in resource and len(resource["url"]) > 10:
                                     url = url_cleaner(resource["url"])
-                                    url_id[url] = id_
+                                    if "media" not in id_ or resource["name"] == "pdf":
+                                        url_id[url] = id_
                     except ValueError as e:
                         print (fname)
                         raise e
@@ -51,12 +58,12 @@ def main():
                             #print (name)
                             #print ()
                         name_id[name] = utils.id_create(fname, type_,obj["id"])
-    print ()
-    seen = set()
-    links = []
     for type_,filename in [["media","data/PANDA-Presentations-json.pl.json"], 
         ["paper","data/PANDA-Papers-json.pl.json"]]:
         for obj in json.load(open(filename,"r")):
+            if "linkedObjects" in obj and len(obj["linkedObjects"]) > 0:
+                continue
+
             id_ = utils.id_create(filename, type_, obj["id"])
             failed = None
             if "links" in obj:
@@ -64,7 +71,7 @@ def main():
                     if "to" in link:
                         m = re.search("(\d\d\d\d/[^\/]+/[^/]+.pdf$)",link["to"])
                         if m:
-                            fname = "data/files/"+m.group(1)
+                            fname = data_dir+"/"+m.group(1)
                             found = None
                             if os.path.exists(fname):
                                 found = fname
@@ -83,10 +90,7 @@ def main():
                                             url = url_cleaner(m.group(1))
                                             if url in url_id:
                                                 link = [id_,url_id[url]]
-                                                l = json.dumps(link)
-                                                if l not in seen:
-                                                    links.append(link)
-                                                    seen.add(l)
+                                                links.add(json.dumps(link))
                                             else:
                                                 m = re.search("www.caida.org/data/([^/]+)",url)
                                                 if m: 
@@ -99,14 +103,10 @@ def main():
                                                         #if not os.path.exists(filename):
                                                             #download("http://"+url,filename)
                                                         #sys.exit()
-                            else:
-                                failed = fname
-            #if failed is not None:
-                #print (id_,failed)
 
     with open(pubdb_links_file,"w") as f:
         print ("writing",pubdb_links_file)
-        json.dump(links,f,indent=4)
+        json.dump(list(links),f,indent=4)
 
 
 def download(url, filename):

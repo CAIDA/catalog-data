@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "CAIDA releases the adjacency matrix of the Internet router-level graph computed from the ITDK0304 skitter data collected between Apr 21 and May 8, 2003.",
     "tags": [
+        "caida",
         "topology",
         "ipv4",
         "retired",

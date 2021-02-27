@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "free",
-            "url": "https://https://dev.maxmind.com/geoip/geoip2/geolite2/",
+            "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",
             "tags": [
                 "WEB"
             ]

@@ -1,0 +1,26 @@
+{
+    "id": "2017_the_net_nuetrality_debate",
+    "name": "The Net Neutrality Debate",
+    "description": "Net Neutrality has become a bit of a political football. We don't have even close to enough data to truly litigate the net neutrality debate in an equitable way. We don't know enough. You need measurement.\" In this series of short clips, KC Claffy, founder and director of the Center for Applied Internet Data Analysis (CAIDA) at SDSC, brings us up to speed on some of the key issues surrounding the Net Neutrality debate. Watch the video \"The Net Neutrality Debate\", part of a series on Net Neutrality and Why We Need to Measure the Internet.",
+    "tags": [
+        "spoofer",
+        "security"
+    ],
+    "presenters": [],
+    "links": [],
+    "date": "2019.03",
+    "type": "VIDEO",
+    "resources": [
+        {
+            "name": "Video",
+            "url": "https://www.youtube.com/watch?v=ZZX3OJ3YNz4&list=PLyckeMIsNe---GwK8bOjD9ReTxeoK3dq9&index=1"
+        }
+    ],
+    "authors":[
+        {
+            "person":"person:claffy__kc",
+            "organizations":["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
+    
+}

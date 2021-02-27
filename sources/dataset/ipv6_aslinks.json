@@ -4,6 +4,7 @@
     "organization": "CAIDA",
     "description": "This dataset is useful for studying the topology of the Internet at the level of Autonomous Systems (ASes), which are approximately network(s) under a single administrative control. ASes are an important abstraction because they are the \"unit of routing policy\" in the routing system of the global Internet. ASes peer with each other to exchange traffic, and these peering relationships define the high-level global Internet topology. For the purposes of analysis, these peering relationships are represented with an AS graph, where nodes represent ASes and links represent peering relationships.",
     "tags": [
+        "caida",
         "topology",
         "ipv6"
     ],

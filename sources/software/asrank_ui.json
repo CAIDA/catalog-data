@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "asrank.caida.org",
+            "url": "https://asrank.caida.org/",
             "tags": [
                 "UI"
             ]

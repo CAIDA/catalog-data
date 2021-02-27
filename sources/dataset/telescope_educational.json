@@ -1,0 +1,33 @@
+{
+    "id": "telescope_educational",
+    "tags": [
+        "caida",
+        "security",
+        "telescope"
+    ],
+    "dateStart": "2012.04",
+    "organization": "CAIDA",
+    "status": "complete",
+    "dateEnd": "2012.04",
+    "access": "served",
+    "name": "Telescope Educational",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/telescope-educational_dataset.xml",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "This covers the now-public educational telescope data from April 2012, which was restricted prior to 20 May 2014). The restricted version was taken offline on 1 Jun 2014. ",
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_public_aua"
+    ],
+    "links": [
+        {
+            "to": "dataset:ucsd_network_telescope"
+        }
+    ]
+}

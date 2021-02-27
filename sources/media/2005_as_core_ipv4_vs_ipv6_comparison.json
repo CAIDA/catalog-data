@@ -1,0 +1,60 @@
+{
+    "id": "2005_as_core_ipv4_vs_ipv6_comparison",
+    "name": "2005 AS Core: IPv4 vs IPv6 comparison",
+    "description": "926,201 IP addresses, 2,000,796 IP links, 865,000 destinations, 50% of globally routable network prefixes; 10,131 ASes (78% of ASes present in RouteViews BGP tables on Apr 17, 2005), 29,191 peering sessions. 2,913 IPv6 addresses, 7,905 IPv6 links, 333 Autonomous Systems (ASes), 1,304 peering sessions. Data collected from 17 contributors on 3 continents.",
+    "tags":[
+        "caida",
+        "skitter",
+        "ipv4",
+        "ipv6",
+        "routed 24",
+        "prefix2as",
+        "poster",
+        "analysis",
+        "as_core"
+    ],
+    "links":[
+        {"to":"dataset:skitter_internet_topology_data_kit"},
+        {"to":"dataset:as_prefix"},
+        {"to":"dataset:ipv4_routed_24_topology"}
+    ],
+    "date":"2005.04",
+    "type":"POSTER",
+    "resources":[
+        {
+            "name":"web page",
+            "url":"https://www.caida.org/research/topology/as_core_network/2005/"
+        },
+        {
+            "name":"PNG IPv4",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2005-apr-ipv4-standalone-1600x1333.png"
+        },
+        {
+            "name":"PNG IPv6",
+            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2005-apr-ipv6-standalone-1600x1333.png"
+        }
+    ],
+    "authors":[
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:broido__andre",
+        "person:fomenkov__marina",
+        "person:andersen__dan",
+        "person:keys__ken",
+        "person:moore__david",
+        "person:luckie__matthew",
+        "person:bieringer__peter",
+        "person:cerveny__bill",
+        "person:cho__kenjiro",
+        "person:burke__dave",
+        "person:doering__gert",
+        "person:hicks__john",
+        "person:lawson__daniel",
+        "person:lucistnik__pav",
+        "person:malone__david",
+        "person:michaelson__george",
+        "person:owens__bill",
+        "person:vixie__paul"
+    ]
+}

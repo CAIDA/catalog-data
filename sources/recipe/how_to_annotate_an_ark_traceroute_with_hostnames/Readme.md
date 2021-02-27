@@ -7,9 +7,9 @@
     "links": [{
         "to": "dataset:ipv4_prefix_probing_dataset",
         "to": "dataset:ipv4_routed_24_topology_dataset",
-        "to": "dataset:ipv6_allpref_topology_dataset",
-        "to": "dataset:ipv4_dnsnames_dataset",
-        "to": "dataset:ipv6_dnsnames_dataset"
+        "to": "dataset:ipv6_allpref_topology",
+        "to": "dataset:ipv4_dnsnames",
+        "to": "dataset:ipv6_dnsnames"
         }],
     "tags": [
         "topology",
@@ -131,15 +131,15 @@ More information and download dataset [here](https://www.caida.org/data/active/i
 Directory: `/datasets/topology/ark/ipv4/probe-data`
 
 #### Ark IPv6 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology.xml) 
 `Directory: /datasets/topology/ark/ipv6/probe-data`
 
 #### IPv4 Routed /24 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames.xml) 
 Directory: `/datasets/topology/ark/ipv4/dns-names`
 
 #### The IPv6 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames.xml) 
 Directory: `/datasets/topology/ark/ipv6/dns-names`
 
 ### <ins> Caveats </ins>

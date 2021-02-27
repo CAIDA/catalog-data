@@ -1,0 +1,35 @@
+{
+    "id": "telescope_backscatter",
+    "tags": [
+        "caida",
+        "security",
+        "ddos",
+        "spoofing"
+    ],
+    "dateStart": "2004.5",
+    "organization": "CAIDA",
+    "status": "complete",
+    "dateEnd": "2008.11",
+    "access": "served",
+    "name": "UCSD Network Telescope Traffic Samples",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/backscatter_dataset.xml",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "Week-long collections (one week per quarter) of responses to spoofed traffic sent by DoS attack victims to the UCSD Network Telescope between 2004 and 2008. Includes backscatter during DITL-2008. ",
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua",
+        "license:caida_public_aua"
+    ],
+    "links": [
+        {
+            "to": "dataset:ucsd_network_telescope"
+        }
+    ]
+}

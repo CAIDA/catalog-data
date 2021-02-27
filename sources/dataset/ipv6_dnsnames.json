@@ -2,9 +2,13 @@
     "id": "ipv6_dnsnames",
     "name": "IPv6 DNS names",
     "organization": "CAIDA",
-    "description": "DNS names are useful for obtaining additional information about routers and hosts making up the Internet topology. For example, DNS names of routers often encode the link type (backbone vs. access), link capacity, Point of Presence (PoP), and geographic location. We have IPv6 DNS Names data starting June 2014.",
+    "description": "The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addresses seen in the traces of the IPv6 Topology Dataset.",
     "tags": [
+        "caida",
+        "active",
         "topology",
+        "traceroute",
+        "dns",
         "ipv6"
     ],
     "dateStart": "2014.06",
@@ -12,7 +16,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml",
+            "url": "https://www.caida.org/data/active/ipv6_dnsnames.xml",
             "tags": [
                 "file"
             ]

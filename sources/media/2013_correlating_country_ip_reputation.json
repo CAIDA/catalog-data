@@ -1,0 +1,29 @@
+{
+    "id": "2013_correlating_country_ip_reputation",
+    "name": "Correlating country IP reputation",
+    "description": "We analyzed the reputation of a country's Internet (IPv4) addresses by examining the number of blacklisted IPv4 addresses that geolocate to a given country. We compared this indicator with two qualitative measures of each country's governance. We found a correlation exists between perceived corruption and fraction of blacklisted IP addresses.",
+    "tags": [
+        "caida",
+        "IPv4",
+        "country",
+        "analysis",
+        "country",
+        "geolocation"
+    ],
+    "presenters": [],
+    "links": [],
+    "date": "2013.07",
+    "type": "VISAULIZATION",
+    "image": "https://www.caida.org/images/country-level-ip-reputation_300h250.png",
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/research/policy/country-level-ip-reputation/",
+            "tags": [
+                "url"
+            ]
+        }
+    ],
+    "authors":[]
+    
+}

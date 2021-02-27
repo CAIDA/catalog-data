@@ -43,5 +43,5 @@ The Spoofer Project seeks to understand the Internet's vulnerability to differen
 
 ### Where can I learn more?
 
-Screenshots of the client in use:  https://www.caida.org/projects/spoofer/screenshots.xml
-FAQ:  https://www.caida.org/projects/spoofer/faq.xml
+- Screenshots of the client in use:  https://www.caida.org/projects/spoofer/screenshots.xml
+- FAQ:  https://www.caida.org/projects/spoofer/faq.xml

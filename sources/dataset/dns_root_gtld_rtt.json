@@ -1,0 +1,29 @@
+{
+    "id": "dns_root_gtld_rtt",
+    "tags": [
+        "caida",
+        "DNS"
+    ],
+    "dateStart": "2002.01",
+    "organization": "CAIDA",
+    "status": "complete",
+    "dateEnd": "2019.08",
+    "access": "served",
+    "name": "DNS root/gTLD RTT data.",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/data/passive/dns_root_gtld_rtt_dataset.xml",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "Contains DNS roundtrip time (RTT) information useful for studying conditions within the global Internet, and the way it has changed over the last few years.  Served online as the public dns-root-gtld-rtt dataset. (was restricted before 2014-03-02). ",
+    "licenses": [
+        "license:BSD-4-Clause-UC",
+        "license:caida_aua",
+        "license:caida_public_aua"
+    ],
+    "links": []
+}

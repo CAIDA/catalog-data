@@ -1,0 +1,20 @@
+{
+    "id": "catalog",
+    "name": "CAIDA's resource catalog",
+    "organization": "CAIDA",
+    "description": "CAIDA's resource catalog provides a rich context graph of the relationships between papers, presentations, datasets, and software.  It also provides recipes that help to understand and use those resources.",
+    "tags": [
+        "catalog"
+    ],
+    "dateStart": "2007.02",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://catalog.caida.org"
+        }
+    ],
+    "licenses": [
+        "license:BSD-4-Clause-UC"
+    ],
+    "links": []
+}

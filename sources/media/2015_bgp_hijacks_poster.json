@@ -1,0 +1,62 @@
+{
+    "id": "2015_bgp_hijacks_poster",
+    "name": "A Coordinated View of the Temporal Evolution of Large-scale Internet Events",
+    "description": "A one page poster describing the NSF funded research project, \"Detecting and Characterizing Internet Traffic Interception based on BGP Hijacking\".",
+    "tags": [
+        "caida",
+        "BGP",
+        "poster",
+        "security"
+    ],
+    "presenters": [],
+    "links": [],
+    "date": "2015.01",
+    "type": "POSTER",
+    "image": "https://www.caida.org/images/hijacks-2015-jan-poster_300h250.png",
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.caida.org/publications/posters/eps/hijacks-2015-jan-poster.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "poster"
+            ]
+        },
+        {
+            "name": "URL",
+            "url": "https://www.caida.org/publications/posters/#security",
+            "tags": [
+                "url",
+                "poster"
+            ]
+        }
+    ],
+    "authors":[
+        {
+            "person": "asturiano_vasco",
+            "organizations": []
+        },
+        {
+            "person": "claffy_kc",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        },
+        {
+            "person": "dainotti_alberto",
+            "organizations": ["University of Napoli Federico II, Napoli, Italy"]
+        },
+        {
+            "person": "gill_philllipa",
+            "organizations": ["UMass Amherst"]
+        },
+        {
+            "person": "king_alistair",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        },
+        {
+            "person": "orsini_chiara",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }
+    ]
+    
+}
