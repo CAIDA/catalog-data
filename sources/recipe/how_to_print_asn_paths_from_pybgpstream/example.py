@@ -19,8 +19,8 @@ for record in stream.records():
         # Only print elements that are announcements (BGPElem.type = "A").
         if elem.type == "A":
             as_path = elem.fields['as-path'].split(" ")
-            # Print all elements with 16509 in the path.
-            if '16509' in as_path:
-                print(f"peer asn: {elem.peer_asn} as path: {as_path} "
-                      f"communities: {elem.fields['communities']} "
-                      f"timestamp: {rec_time}")
+            # Print all elements with 3356 in the path.
+            if '3356' in as_path:
+                print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
+                      f"Communities: {elem.fields['communities']} "
+                      f"Timestamp: {rec_time}")
