@@ -193,7 +193,7 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates (skipping '*___*'")
+    print ("adding dates ( skipping '*___*' )")
     for obj in list(id_object.values()):
         object_date_add(obj)
 
