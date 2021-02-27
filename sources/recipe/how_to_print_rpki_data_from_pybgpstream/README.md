@@ -31,9 +31,9 @@ This recipe should show the user how to use pybgpstream to print RPKI data using
 
 The output from the routeviews API is a json of the interface (ip address), and its parent asn, data on its stability and timestamp.
 
-For example, an interafce pulled from pybgpstream may be ```2001:7fb:fe0c::/48```. This interface is then placed in the link to the API in the code below. This link produces a json output which is then printed to STDOUT. For this example, you may get a similar output to this:
+For example, an interafce pulled from pybgpstream may be `2001:7fb:fe0c::/48`. This interface is then placed in the link to the API in the code below. This link produces a json output which is then printed to STDOUT. For this example, you may get a similar output to this:
 
-```json
+```text
 {
     '2001:7fb:fe0c::/48': {
         'asn': [
@@ -44,7 +44,7 @@ For example, an interafce pulled from pybgpstream may be ```2001:7fb:fe0c::/48``
 }
 ```
 
-The data can also be seen on the API itself by follwing this [link](https://api.routeviews.org/rpki?prefix=77.94.15.0/24).
+The data can also be seen on the API itself by follwing this [link](https://api.routeviews.org/rpki?prefix=2001:7fb:fe0c::/48).
 
 ```python
 #!/usr/bin/env python3
