@@ -26,7 +26,7 @@
 
 ## Introduction
 
-This recipe should show the user how to parse a given IPv6 DNS Names file to map an ip address to its respective hostname. This recipe comes with the following [script](https://github.com/CAIDA/catalog-data/blob/how_to_parse_ipv6_dns_names/sources/recipe/how_to_parse_ipv6_dns_names/ip_2_hostname.py) which has the code to handle this solution. Code snippets below show key features of the code that are most usefull. The script has two flags, ```-d``` which is a path to a DNS Names file, and ```-i``` which is an optional comma seperated list of ip address. The ip addresses given in the ```-i``` flag will have their hostnames printed to STDOUT if possible.
+This recipe should show the user how to parse a given IPv6 DNS Names file to map an ip address to its respective hostname. This recipe comes with the following [script](https://github.com/CAIDA/catalog-data/blob/how_to_parse_ipv6_dns_names/sources/recipe/how_to_parse_ipv6_dns_names/ip_2_hostname.py) which has the code to handle this solution. Code snippets below show key features of the code that are most usefull. The script has two flags, `-d` which is a path to a DNS Names file, and `-i` which is an optional comma seperated list of ip address. The ip addresses given in the `-i` flag will have their hostnames printed to STDOUT if possible.
 
 ## Solution
 
@@ -81,7 +81,7 @@ def print_hostname(ip_address):
   - The IPv6 DNS Names dataset provides fully-qualified domain names for IPv6 addresses seen in the traces of the IPv6 Topology Dataset.
 - What is DNS Names Dataset used for?
   - DNS names are useful for obtaining additional information about routers and hosts making up the Internet topology. 
-    - For example, DNS names of routers often encode the link type (backbone vs. access), link capacity, Point of Presence (PoP), and geographic location.
+    - For example, DNS names of routers often encode the link type: backbone vs. access, link capacity, Point of Presence (PoP), and geographic location.
 
 ### DNS Names File Format:
 
