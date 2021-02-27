@@ -2,7 +2,7 @@
 {
     "id" : "how_to_print_records_from_pybgpstream",
     "name": "How to print records from pybgpstream",
-    "description":"The recipe should show how to print elements from a records of pybgpstream data.",
+    "description":"The recipe should show how to print elements from records of pybgpstream data.",
 
     "links": [
         {
