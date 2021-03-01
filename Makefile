@@ -1,5 +1,5 @@
 CATALOG_DATA_CAIDA_PATH = ../catalog-data-caida/sources/
-CATALOG_DATA_CAIDA_FILE = data/data_id__caida.json
+CATALOG_DATA_CAIDA_FILE = data/data_id___caida.json
 
 run:clean_placeholders scripts/data-build.py pubdb externallinks caida 
 	python3 scripts/data-build.py

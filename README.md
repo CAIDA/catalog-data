@@ -31,7 +31,18 @@ source env/bin/activate
 pip3 install bs4
 ~~~
 
-Both of these scripts can be run using the [Makefile](Makefile).  Simply type ```make```.
+All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
+If you have access to this repo you should clone it, if not then it's IDs will be 
+supplied by data/data_id___caida.json.
+~~~
+clone git@github.com:CAIDA/catalog-data-caida.git
+~~~
+
+This will be handled by the [Makefile](Makefile).
+~~~
+make
+~~~
+
 
 ~~~
 # If you haven't activated virtualenv yet
