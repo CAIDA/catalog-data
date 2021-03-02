@@ -542,7 +542,6 @@ def print_papers():
         if paper_id not in seen_ids:
             id_ = paper_id.split(":")[1]
             file_path = "sources/paper/{}___externallinks.json".format(id_)
-            print (file_path)
             with open(file_path, "w") as paper_file:
                 print(json.dumps(paper, indent=4), file=paper_file)
 
