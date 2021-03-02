@@ -510,7 +510,7 @@ def add_author(fname, last_name, first_name):
     person = utils.person_seen_check(last_name, first_name)
 
     if person is None:
-        author_id = utils.id_create(fname, "person", last_name+"__"+first_name)
+        type_,author_id = utils.id_create(fname, "person", last_name+"__"+first_name).split(":")
         if author_id not in author_data:
             file_path = "sources/person/{}___externallinks.json".format(author_id)
 
@@ -540,7 +540,9 @@ def print_papers():
         
         # Create a new file for each paper.
         if paper_id not in seen_ids:
-            file_path = "sources/paper/{}___externallinks.json".format(paper_id)
+            id_ = paper_id.split(":")[1]
+            file_path = "sources/paper/{}___externallinks.json".format(id_)
+            print (file_path)
             with open(file_path, "w") as paper_file:
                 print(json.dumps(paper, indent=4), file=paper_file)
 
@@ -555,7 +557,7 @@ def print_authors():
             if "filename" in author:
                 file_path = author["filename"]
             else:
-                file_path = "sources/person/{}___externallinks.json".format(author_id)
+                file_path = "sources/person/{}___externallinks.json".format(author_id).split(":")
 
             # Create a new file, or update the current file for each paper.
             with open(file_path, "w") as author_file:
