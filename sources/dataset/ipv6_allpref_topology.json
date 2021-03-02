@@ -13,7 +13,7 @@
     "resources": [
         {
             "name": "webpage",
-            "url": "https://www.caida.org/data/active/ipv6_allpref_topology.xml",
+            "url": "https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml",
             "tags": [
                 "file"
             ]
