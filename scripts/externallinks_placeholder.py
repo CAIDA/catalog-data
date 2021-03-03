@@ -318,7 +318,7 @@ def parse_paper(fname, curr_paper):
         "__typename":"paper",
         "type":"paper",
         "authors":[],
-        "bibtextFields":{},
+        "bibtexFields":{},
         "links":[],
         "resources":[],
     }
@@ -348,7 +348,7 @@ def parse_paper(fname, curr_paper):
                     
         elif "TYPE" in line[0]:
             paper_type = line[1]
-            paper["bibtextFields"]["type"] = paper_type
+            paper["bibtexFields"]["type"] = paper_type
 
         elif "AUTHOR" in line[0]:
             # Handle the two seperate ways that authors can be stored.
@@ -404,9 +404,9 @@ def parse_paper(fname, curr_paper):
             if date:
                 paper["datePublished"] = date
                 paper["date"] = date
-                paper["bibtextFields"]["year"] = year
+                paper["bibtexFields"]["year"] = year
                 if month:
-                    paper["bibtextFields"]["month"] = month
+                    paper["bibtexFields"]["month"] = month
         
         elif "TOPKEY" in line[0]:
             datasets = line[1].split(",")
@@ -468,11 +468,11 @@ def parse_paper(fname, curr_paper):
         elif "SERIAL" in line[0]:
             publisher = line[1]
             paper["publisher"] = publisher
-            paper["bibtextFields"]["journal"] = publisher
+            paper["bibtexFields"]["journal"] = publisher
 
         elif "VOLUME" in line[0]:
             volume = line[1]
-            paper["bibtextFields"]["volume"] = volume
+            paper["bibtexFields"]["volume"] = volume
         
         elif "CHAPTER" in line[0] or "ARTICLE" in line[0]:
             number = line[1]
@@ -481,12 +481,12 @@ def parse_paper(fname, curr_paper):
         elif "PAGE" in line[0]:
             pages = line[1].replace("(", "").replace(")", "")
             paper["pages"] = pages
-            paper["bibtextFields"]["pages"] = pages
+            paper["bibtexFields"]["pages"] = pages
 
         elif "CTITLE" in line[0]:
             conference_title = line[1] 
             paper["publisher"] = conference_title
-            paper["bibtextFields"]["bookTitle"] = conference_title
+            paper["bibtexFields"]["bookTitle"] = conference_title
 
         elif "DOI" in line[0]:
             doi = line[1]
@@ -506,7 +506,7 @@ def parse_paper(fname, curr_paper):
             paper["description"] = line[1]
 
         elif "PUBLISH" in line[0]:
-            paper["bibtextFields"]["institutions"] = line[1]
+            paper["bibtexFields"]["institutions"] = line[1]
         
         elif "REMARK" in line[0] or "PLACE" in line[0]:
             if "annotation" not in paper or len(paper["annotation"]) != 0:
