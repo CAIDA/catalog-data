@@ -326,7 +326,10 @@ def parse_paper(fname, curr_paper):
     # Split the current paper into each line.
     curr_paper = curr_paper.split("\n")
     
+    re_year = re.compile("(\d\d\d\d)")
+    re_year_month = re.compile("(\d\d\d\d).(\d\d)")
     # Iterate over each line of the current paper.
+    found = False
     for line in curr_paper:
         # Split the current line between the TOPKEY, and its value.
         line = line.split(":")
@@ -339,7 +342,7 @@ def parse_paper(fname, curr_paper):
         line[1] = ":".join(map(str, line[1:]))
         line[1] = line[1].replace('"',"").strip()
 
-        # Check which TOPKEY is used for the current line.
+        # Check which TOPKEY is used for the current line
         if "MARKER" in line[0]:
             paper["id"] = utils.id_create(fname, "paper", line[1])
                     
@@ -384,13 +387,26 @@ def parse_paper(fname, curr_paper):
             paper["name"] = title
 
         elif "YEAR" in line[0]:
-            date = line[1].replace("-",".").replace("_",".")
-            paper["datePublished"] = date
-            paper["date"] = date
-            dates = date.split(".")
-            paper["bibtextFields"]["year"] = dates[0]
-            if len(dates) == 2:
-                paper["bibtextFields"]["month"] = dates[1]
+            date_str = line[1]
+            m = re_year_month.search(date_str)
+            date = None
+            year = None
+            month = None
+            if m:
+                year = m.group(1)
+                month = m.group(2)
+                date = year+"."+month
+            else:
+                m = re_year.search(date_str)
+                if m:
+                    year = m.group(1)
+                    date = year
+            if date:
+                paper["datePublished"] = date
+                paper["date"] = date
+                paper["bibtextFields"]["year"] = year
+                if month:
+                    paper["bibtextFields"]["month"] = month
         
         elif "TOPKEY" in line[0]:
             datasets = line[1].split(",")
