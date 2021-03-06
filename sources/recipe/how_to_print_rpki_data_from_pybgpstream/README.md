@@ -68,7 +68,7 @@ for record in stream.records():
 
 ### Usage
 
-To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above.
+To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above. If there are any issue, look [here](https://bgpstream.caida.org/docs/install) for more help.
 
 ```bash
 pip3 install pybgpstream
