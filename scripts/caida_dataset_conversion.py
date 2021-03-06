@@ -193,7 +193,7 @@ def parse_catalog_data_caida():
 
         # Edge Case: Skip any seen softwares.
         if "tool_" in file_name and file_name[file_name.index("_") + 1 :] in seen_softwares:
-                continue
+            continue
 
         # Iterate over file and grab all the metadata.
         with open(file_path, "r") as curr_file:
@@ -230,23 +230,40 @@ def parse_catalog_data_caida():
                         name = curr_metadata["id"].replace("_", " ").upper()
                         curr_metadata["name"] = name
 
+                    # Edge Case: Remove tool_ from softwares.
+                    if "tool_" in curr_metadata["id"]:
+                        new_name = curr_metadata["id"][5::]
+                        curr_metadata["id"] = new_name
+
+                    # Edge Case: Add CAIDA as organization if missing key.
+                    if "organization" not in curr_metadata:
+                        curr_metadata["organization"] = "CAIDA"
+
                     # Edge Case: Add CAIDA as a tag to all datasets.
                     if "tags" not in curr_metadata:
                         curr_metadata["tags"] = []
-                    if "CAIDA" in curr_metada["tags"]:
-                        curr_metadata["tags"].append("CAIDA")
+                    if "CAIDA" in curr_metadata["organization"]:
+                        if "CAIDA" not in curr_metadata["tags"]:
+                            curr_metadata["tags"].append("CAIDA")
+                    else:
+                        # Add third party organization of tags.
+                        third_party = curr_metadata["organization"]
+                        if third_party not in curr_metadata["tags"]:
+                            curr_metadata["tags"].append(third_party.upper())
 
                     # Edge Case: Remove broken tags.
+                    remove_indexes = set()
                     for i in range(0, len(curr_metadata["tags"])):
                         if " )" in curr_metadata["tags"][i]:
-                            del curr_metadata["tags"][i]
+                            remove_indexes.add(i)
+                    for index in remove_indexes:
+                        del curr_metadata["tags"][index]
 
                     # Edge Case: Remove 0 length lists from objects.
                     remove_keys = set()
                     for key in curr_metadata:
                         if len(curr_metadata[key]) == 0:
                             remove_keys.add(key)
-                    
                     for key in remove_keys:
                         del curr_metadata[key]
                             
@@ -281,17 +298,34 @@ def print_datasets():
             file_path = "sources/software/{}___caida.json".format(file_name)
         else:
             file_path = "sources/dataset/{}___caida.json".format(file_id)
+            file_name = file_id
 
-        path_2_id[file_path] = file_id
+        path_2_id[file_id] = {
+            "path": file_path,
+            "name": id_2_object[file_id]["name"],
+            "id": file_name
+        }
 
         # Write the JSON object to the file.
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
-        
+    
     # Print a JSON mapping all made files to their IDs.
     with open(path_ids, "w") as output_file:
-        output_file.write(json.dumps(path_2_id, indent=4))
+        sorted_keys = sorted(path_2_id.keys())
+        output_file.write("[\n")
+        for key in sorted_keys:
+            curr_obj = path_2_id[key]
+            output_file.write("\t{\n")
+            output_file.write("\t\t\"id\": \"{}\",\n".format(curr_obj["id"]))
+            output_file.write("\t\t\"name\": \"{}\",\n".format(curr_obj["name"]))
+            output_file.write("\t\t\"file_path\": \"{}\"\n".format(curr_obj["path"]))
+            if key == sorted_keys[-1]:
+                output_file.write("\t}\n")
+            else:
+                output_file.write("\t},\n")
+        output_file.write("]\n")
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])

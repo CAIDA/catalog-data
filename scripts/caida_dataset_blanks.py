@@ -62,7 +62,7 @@ import os
 ############################## Global Variables ################################
 
 # File Paths:
-path_ids = "data/data_id__caida.json"
+path_ids = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
