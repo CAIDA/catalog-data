@@ -79,7 +79,7 @@ re_dlim = re.compile(r"~~~")
 
 # File Paths:
 path = None
-path_ids = "data/data_id__caida.json"
+path_ids = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
@@ -230,6 +230,12 @@ def parse_catalog_data_caida():
                         name = curr_metadata["id"].replace("_", " ").upper()
                         curr_metadata["name"] = name
 
+                    # Edge Case: Add CAIDA as a tag to all datasets.
+                    if "tags" not in curr_metadata:
+                        curr_metadata["tags"] = []
+                    if "CAIDA" in curr_metada["tags"]:
+                        curr_metadata["tags"].append("CAIDA")
+
                     # Edge Case: Remove broken tags.
                     for i in range(0, len(curr_metadata["tags"])):
                         if " )" in curr_metadata["tags"][i]:
@@ -272,9 +278,9 @@ def print_datasets():
         # Edge Case: Update path based which software or dataset.
         if "tool_" in file_id:
             file_name = file_id[file_id.index("_") + 1:] 
-            file_path = "sources/software/{}__caida.json".format(file_name)
+            file_path = "sources/software/{}___caida.json".format(file_name)
         else:
-            file_path = "sources/dataset/{}__caida.json".format(file_id)
+            file_path = "sources/dataset/{}___caida.json".format(file_id)
 
         path_2_id[file_path] = file_id
 
