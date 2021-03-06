@@ -28,7 +28,7 @@ A search query can be generated from a search string by splitting the string on 
 | type | meaning | examples |
 |------|------------|---------|
 | **key/value** ``(key)=(value)`` | a key and a value pair  | types=dataset,recipe | 
-| **id** , -**id**      ``(type):(shortName)``  | an object id | dataset:asrank , -tag:asn | 
+| **id** , -**id**      ``(type):(shortName)``  | an object id | dataset:as_rank_online , -tag:asn | 
 | **word** , -**word**     | anything that doesn't match the above | rank , -topology |
 
 - **words** (rank)
@@ -53,9 +53,9 @@ A search query can be generated from a search string by splitting the string on 
       
 - **ids** (tag:topology)
 
-   An object is removed from the matching set unless it is directly linked to all objects with an id (``dataset:asrank``, ``software:bgpstream``) in the search query.
+   An object is removed from the matching set unless it is directly linked to all objects with an id (``dataset:as_rank_online``, ``software:bgpstream``) in the search query.
    It's important to note that an object's id is not its type and name, but its type and shortName.
-   For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogons".
+   For example, the dataset "How to Parse CYMRU Bogan Data"'s short name is "bogons" so it's id is "dataset:bogon-cymru-dumps".
 
     - **-id** (-tag:topology)
 
@@ -70,6 +70,6 @@ A search query can be generated from a search string by splitting the string on 
 | ``software:bgpstream`` | search for objects directly linked to the object ``software:bgpstream`` |
 | ``bgpstream`` | search for objects with the string "bgpstream" in a field or child's field | 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
-| ``rank -dataset:asrank`` | searchs for objects with the word rank , not linked to dataset:asrank | 
+| ``rank -dataset:as_rank_online`` | searchs for objects with the word rank , not linked to dataset:as_rank_online | 
 | ``-caida`` | searchs for objects that do not contain the word caida | 
 

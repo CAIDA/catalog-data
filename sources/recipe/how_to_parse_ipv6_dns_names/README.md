@@ -6,7 +6,7 @@
 
     "links": [
         {
-            "to": "dataset:ipv6_dnsnames"
+            "to": "dataset:ark_ipv6_dns_names"
         }
     ],
     "tags": [

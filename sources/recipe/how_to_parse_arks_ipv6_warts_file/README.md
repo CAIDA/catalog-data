@@ -7,7 +7,7 @@
     "links": [
         "software:pyasn",
         "software:scamper",
-        "dataset:as_prefix"
+        "dataset:routeviews_ipv4_prefix2as"
     ],
     "tags": [
         "measurement methodology",

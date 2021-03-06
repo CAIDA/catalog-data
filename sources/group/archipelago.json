@@ -18,25 +18,28 @@
             "to": "software:archipelago"
         },
         {
-            "to": "dataset:ipv4_routed_24_topology"
+            "to": "dataset:ark_ipv4_traceroute"
         },
         {
-            "to": "dataset:ipv4_routed_topology_aslinks"
+            "to": "dataset:ark_ipv4_aslinks"
         },
         {
-            "to": "dataset:ipv4_dnsnames"
+            "to": "dataset:ark_ipv4_dns_names"
         },
         {
-            "to": "dataset:internet-topology-data-kit"
+            "to": "dataset:ark_itdk"
         },
         {
-            "to": "dataset:ipv6_allpref_topology"
+            "to": "dataset:ark_ipv6_traceroute"
         },
         {
-            "to": "dataset:ipv6_aslinks"
+            "to": "dataset:ark_ipv6_routed48"
         },
         {
-            "to": "dataset:ipv6_dnsnames"
+            "to": "dataset:ark_ipv6_aslinks"
+        },
+        {
+            "to": "dataset:ark_ipv6_dns_names"
         },
         {
             "to": "software:vela"

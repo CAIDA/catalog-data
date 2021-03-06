@@ -13,8 +13,8 @@
         "ripe_ncc"
     ],
     "links":[
-        {"to":"dataset:as_prefix"},
-        {"to":"dataset:ipv4_routed_24_topology"},
+        {"to":"dataset:routeviews_ipv4_prefix2as"},
+        {"to":"dataset:ark_ipv4_traceroute"},
         {"to":"software:scamper"}
     ],
     "date":"2008.01",

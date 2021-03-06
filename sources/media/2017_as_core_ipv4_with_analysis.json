@@ -11,8 +11,8 @@
         "as_core"
     ],
     "links":[
-        {"to":"dataset:internet_topology_data_kit"},
-        {"to":"dataset:as_relationships"}
+        {"to":"dataset:ark_itdk"},
+        {"to":"dataset:as_relationships_serial_1"}
     ],
     "date":"2017.02",
     "type":"POSTER",

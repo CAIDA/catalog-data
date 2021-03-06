@@ -70,7 +70,7 @@
      "volume": "45",   
      "number": "2",   
      "pages": "",
-     "linkedObjects": "dataset:internet_topology_data_kit  dataset:as_relationships  dataset:as_organization  dataset:as_prefix"
+     "linkedObjects": "dataset:ark_itdk  dataset:as_relationships_serial_1  dataset:as_organizations  dataset:routeviews_ipv4_prefix2as"
 
   },   
 

@@ -21,7 +21,7 @@
     ],
     "links": [
         {
-            "to": "dataset:as_organization"
+            "to": "dataset:as_organizations"
         }
     ]
 }

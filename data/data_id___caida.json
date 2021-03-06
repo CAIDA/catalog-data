@@ -100,6 +100,11 @@
 		"file_path": "sources/dataset/ark_ipv4_aslinks___caida.json"
 	},
 	{
+		"id": "ark_ipv4_dns_names",
+		"name": "Ark IPv4 Routed /24 DNS Names",
+		"file_path": "sources/dataset/ark_ipv4_dns_names___caida.json"
+	},
+	{
 		"id": "ark_ipv4_dns_traffic",
 		"name": "Ark DNS traffic measurements",
 		"file_path": "sources/dataset/ark_ipv4_dns_traffic___caida.json"
@@ -273,6 +278,11 @@
 		"id": "as_relationships_serial_1",
 		"name": "AS Relationships (serial-1)",
 		"file_path": "sources/dataset/as_relationships_serial_1___caida.json"
+	},
+	{
+		"id": "as_relationships_serial_2",
+		"name": "AS Relationships (serial-2)",
+		"file_path": "sources/dataset/as_relationships_serial_2___caida.json"
 	},
 	{
 		"id": "asymmetry_test",
@@ -600,9 +610,19 @@
 		"file_path": "sources/dataset/passive_2008_dag___caida.json"
 	},
 	{
+		"id": "passive_2008_pcap",
+		"name": "Anonymized Internet Traces 2008",
+		"file_path": "sources/dataset/passive_2008_pcap___caida.json"
+	},
+	{
 		"id": "passive_2009_dag",
 		"name": "Unanonymized Internet Traces 2009",
 		"file_path": "sources/dataset/passive_2009_dag___caida.json"
+	},
+	{
+		"id": "passive_2009_pcap",
+		"name": "Anonymized Internet Traces 2009",
+		"file_path": "sources/dataset/passive_2009_pcap___caida.json"
 	},
 	{
 		"id": "passive_2010_dag",
@@ -610,9 +630,19 @@
 		"file_path": "sources/dataset/passive_2010_dag___caida.json"
 	},
 	{
+		"id": "passive_2010_pcap",
+		"name": "Anonymized Internet Traces 2010",
+		"file_path": "sources/dataset/passive_2010_pcap___caida.json"
+	},
+	{
 		"id": "passive_2011_dag",
 		"name": "Unanonymized Internet Traces 2011",
 		"file_path": "sources/dataset/passive_2011_dag___caida.json"
+	},
+	{
+		"id": "passive_2011_pcap",
+		"name": "Anonymized Internet Traces 2011",
+		"file_path": "sources/dataset/passive_2011_pcap___caida.json"
 	},
 	{
 		"id": "passive_2012_dag",
@@ -620,14 +650,29 @@
 		"file_path": "sources/dataset/passive_2012_dag___caida.json"
 	},
 	{
+		"id": "passive_2012_pcap",
+		"name": "Anonymized Internet Traces 2012",
+		"file_path": "sources/dataset/passive_2012_pcap___caida.json"
+	},
+	{
 		"id": "passive_2013_dag",
 		"name": "Unanonymized Internet Traces 2013",
 		"file_path": "sources/dataset/passive_2013_dag___caida.json"
 	},
 	{
+		"id": "passive_2013_pcap",
+		"name": "Anonymized Internet Traces 2013",
+		"file_path": "sources/dataset/passive_2013_pcap___caida.json"
+	},
+	{
 		"id": "passive_2014_dag",
 		"name": "Unanonymized Internet Traces 2014",
 		"file_path": "sources/dataset/passive_2014_dag___caida.json"
+	},
+	{
+		"id": "passive_2014_pcap",
+		"name": "Anonymized Internet Traces 2014",
+		"file_path": "sources/dataset/passive_2014_pcap___caida.json"
 	},
 	{
 		"id": "passive_2015_dag",
@@ -645,14 +690,29 @@
 		"file_path": "sources/dataset/passive_2016_dag___caida.json"
 	},
 	{
+		"id": "passive_2016_pcap",
+		"name": "Anonymized Internet Traces 2016",
+		"file_path": "sources/dataset/passive_2016_pcap___caida.json"
+	},
+	{
 		"id": "passive_2018_dag",
 		"name": "Unanonymized Internet Traces 2018",
 		"file_path": "sources/dataset/passive_2018_dag___caida.json"
 	},
 	{
+		"id": "passive_2018_pcap",
+		"name": "Anonymized Internet Traces 2018",
+		"file_path": "sources/dataset/passive_2018_pcap___caida.json"
+	},
+	{
 		"id": "passive_2019_dag",
 		"name": "Unanonymized Internet Traces 2019",
 		"file_path": "sources/dataset/passive_2019_dag___caida.json"
+	},
+	{
+		"id": "passive_2019_pcap",
+		"name": "Anonymized Internet Traces 2019",
+		"file_path": "sources/dataset/passive_2019_pcap___caida.json"
 	},
 	{
 		"id": "passive_ipv6launch_dag",
@@ -663,6 +723,11 @@
 		"id": "passive_ipv6launch_pcap",
 		"name": "Anonymized Internet Traces IPv6 Day/Launch",
 		"file_path": "sources/dataset/passive_ipv6launch_pcap___caida.json"
+	},
+	{
+		"id": "passive_merged_pcap",
+		"name": "Anonymized Internet Traces April 2008 - January 2019",
+		"file_path": "sources/dataset/passive_merged_pcap___caida.json"
 	},
 	{
 		"id": "passive_metadata",
@@ -713,6 +778,16 @@
 		"id": "router_outages",
 		"name": "Raw data for Router Outages paper",
 		"file_path": "sources/dataset/router_outages___caida.json"
+	},
+	{
+		"id": "routeviews_ipv4_prefix2as",
+		"name": "RouteViews IPv4 Prefix to AS mappings",
+		"file_path": "sources/dataset/routeviews_ipv4_prefix2as___caida.json"
+	},
+	{
+		"id": "routeviews_ipv4_prefix2as_coalesced",
+		"name": "RouteViews IPv4 Prefix to AS mappings - coalesced",
+		"file_path": "sources/dataset/routeviews_ipv4_prefix2as_coalesced___caida.json"
 	},
 	{
 		"id": "routeviews_ipv6_prefix2as",
@@ -793,6 +868,11 @@
 		"id": "telescope_live",
 		"name": "UCSD Real-time Network Telescope",
 		"file_path": "sources/dataset/telescope_live___caida.json"
+	},
+	{
+		"id": "telescope_live_sampler",
+		"name": "Telescope Live (Near-Real-Time) Sampler",
+		"file_path": "sources/dataset/telescope_live_sampler___caida.json"
 	},
 	{
 		"id": "telescope_nersc",

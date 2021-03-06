@@ -8,8 +8,8 @@
         "to": "dataset:ipv4_prefix_probing_dataset",
         "to": "dataset:ipv4_routed_24_topology_dataset",
         "to": "dataset:ipv6_allpref_topology",
-        "to": "dataset:ipv4_dnsnames",
-        "to": "dataset:ipv6_dnsnames"
+        "to": "dataset:ark_ipv4_dns_names",
+        "to": "dataset:ark_ipv6_dns_names"
         }],
     "tags": [
         "topology",

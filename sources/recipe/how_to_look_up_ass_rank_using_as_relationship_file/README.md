@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to look up AS's rank using AS Relationship file",
     "description" : "Using a given AS Relationship, classify all asns into three catagories: tansit free, middle, edge",
-    "links": [{"to":"dataset:as_relationships"}],
+    "links": [{"to":"dataset:as_relationships_serial_1"}],
     "tags" : [
         "ASN",
         "as relationship",

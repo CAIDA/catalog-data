@@ -13,8 +13,8 @@ import traceback
 
 url_id = {
     "www.caida.org/data/active/ipv4_prefix_probing_dataset.xml":"dataset:ipv4_routed_24_topology_dataset",
-    "www.caida.org/data/as-or":"dataset:as_organization",
-    "www.caida.org/data/as-relatio":"dataset:as_relationships",
+    "www.caida.org/data/as-or":"dataset:as_organizations",
+    "www.caida.org/data/as-relatio":"dataset:as_relationships_serial_1",
     "www.caida.org/data/active/as-relationships":"datasetas_relationships"
 }
 

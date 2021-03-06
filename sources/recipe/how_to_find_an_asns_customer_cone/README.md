@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to find an ASNs customer cone",
     "description" : "The following solution will help the user create a Python dictionary where the key is a given asn, and the values are the asn, it's customer cone, and customer cone size. This solution and script is usable for IPv4.",
-    "links": [{"to":"dataset:as_relationships"}],
+    "links": [{"to":"dataset:as_relationships_serial_1"}],
     "tags" : [
         "ASN",
         "as relationships",
