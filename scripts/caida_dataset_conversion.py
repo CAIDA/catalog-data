@@ -212,18 +212,18 @@ def parse_catalog_data_caida():
                     # Replace Markdown Syntax to human readable.
                     curr_metadata = curr_metadata.replace('\\"', "'")
                     curr_metadata = json.loads(curr_metadata)
-
-                    # Edge Case: Don't add objects with duplicate urls.
-                    if "resources" in curr_metadata:
-                        for resource in curr_metadata["resources"]:
-                            if "url" in resource:
-                                if resource["url"] in seen_urls:
-                                    found_metadata = False
-                                elif "{}/".format(resource["url"]) in seen_urls:
-                                    found_metadata = False
-                                else:
-                                    seen_urls.add(resource["url"]) 
                     curr_metadata["id"] = curr_metadata["id"].replace("-", "_")
+                    # Decided to skip this due to overlapping urls.
+                    # # Edge Case: Don't add objects with duplicate urls.
+                    # if "resources" in curr_metadata:
+                    #     for resource in curr_metadata["resources"]:
+                    #         if "url" in resource:
+                    #             if resource["url"] in seen_urls:
+                    #                 found_metadata = False
+                    #             elif "{}/".format(resource["url"]) in seen_urls:
+                    #                 found_metadata = False
+                    #             else:
+                    #                 seen_urls.add(resource["url"]) 
 
                     # Edge Case: Replace missing names with ID.
                     if "name" not in curr_metadata:
@@ -266,7 +266,7 @@ def parse_catalog_data_caida():
                             remove_keys.add(key)
                     for key in remove_keys:
                         del curr_metadata[key]
-                            
+
                     break
 
                 # Parse all data within the metadata block.
