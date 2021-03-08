@@ -5,7 +5,8 @@
     "description": "CAIDA's Periscope Looking Glass API is a middleware interface to looking glass server nodes, with with options to retreive measurements status, search by type of measurement, and create new measurements.",
     "tags": [
         "api",
-        "measurement"
+        "measurement",
+        "caida"
     ],
     "resources": [
         {

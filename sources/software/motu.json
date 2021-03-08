@@ -5,7 +5,8 @@
     "description": "Dealiases pairs of IPv4 addresses.",
     "tags": [
         "ip address",
-        "alias resolution"
+        "alias resolution",
+        "caida"
     ],
     "resources": [
         {

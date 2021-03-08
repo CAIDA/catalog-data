@@ -5,7 +5,8 @@
     "description": "The focus of this project is on enhancing the utility of Internet Measurement Data Catalog (IMDC) for the needs of cybersecurity and cyberinfrastructure research community as well as in support of the new NSF Data Sharing Policy.",
     "tags": [
         "project",
-        "cybersecurity"
+        "cybersecurity",
+        "caida"
     ],
     "resources": [
         {

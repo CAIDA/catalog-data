@@ -5,7 +5,8 @@
     "description": "Measures and analyzes passive Internet traffic monitor data.",
     "tags": [
         "security",
-        "hijack detection"
+        "hijack detection",
+        "caida"
     ],
     "resources": [
         {

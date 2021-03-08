@@ -5,7 +5,8 @@
     "description": "BGPStream is an open-source software framework for live and historical BGP data analysis, supporting scientific research, operational monitoring, and post-event analysis.",
     "tags": [
         "topology",
-        "BGP"
+        "BGP",
+        "caida"
     ],
     "resources": [
         {

@@ -5,7 +5,8 @@
     "description": "Source address validation measurement program that sends spoofed source address IP packets",
     "tags": [
         "security",
-        "spoofer"
+        "spoofer",
+        "caida"
     ],
     "resources": [
         {

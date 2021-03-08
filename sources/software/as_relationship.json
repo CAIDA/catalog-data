@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Measures an AS's centrality",
     "tags": [
-        "topology"
+        "topology",
+        "caida"
     ],
     "resources": [
         {

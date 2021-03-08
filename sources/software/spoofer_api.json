@@ -5,7 +5,8 @@
     "description": "REST API to public anonymized Spoofer test results",
     "tags": [
         "security",
-        "spoofer"
+        "spoofer",
+        "caida"
     ],
     "resources": [
         {

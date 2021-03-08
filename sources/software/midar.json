@@ -5,7 +5,8 @@
     "description": "Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
     "tags": [
         "ip address",
-        "alias resolution"
+        "alias resolution",
+        "caida"
     ],
     "resources": [
         {

@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "HI-CUBE is a web-based prototype platform for processing, storing, investigating, and correlating diverse streams of large-scale Internet security-related data.",
     "tags": [
-        "security"
+        "security",
+        "caida"
     ],
     "resources": [
         {

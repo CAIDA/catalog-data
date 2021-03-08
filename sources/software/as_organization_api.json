@@ -5,7 +5,8 @@
     "description": "Provides API to the AS to organization dataset.",
     "tags": [
         "topology",
-        "geolocation"
+        "geolocation",
+        "caida"
     ],
     "resources": [
         {

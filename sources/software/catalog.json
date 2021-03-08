@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "CAIDA's resource catalog provides a rich context graph of the relationships between papers, presentations, datasets, and software.  It also provides recipes that help to understand and use those resources.",
     "tags": [
-        "catalog"
+        "catalog",
+        "caida"
     ],
     "dateStart": "2007.02",
     "resources": [

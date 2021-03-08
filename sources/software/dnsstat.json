@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "The dnsstat (crl_dnsstat) package is based on CAIDA's CoralReef suite, containing only the parts of CoralReef needed to collect statistics on DNS queries..",
     "tags": [
-        "dns"
+        "dns",
+        "caida"
     ],
     "resources": [
         {

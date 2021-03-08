@@ -5,7 +5,8 @@
     "description": "Graph-based IP alias resolution.",
     "tags": [
         "ip address",
-        "alias resolution"
+        "alias resolution",
+        "caida"
     ],
     "resources": [
         {

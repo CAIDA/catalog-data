@@ -5,7 +5,8 @@
     "description": "Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
     "tags": [
         "ip address",
-        "alias resolution"
+        "alias resolution",
+        "caida"
     ],
     "resources": [
         {

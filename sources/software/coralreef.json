@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Measures and analyzes passive Internet traffic monitor data.",
     "tags": [
-        "traffic"
+        "traffic",
+        "caida"
     ],
     "resources": [
         {

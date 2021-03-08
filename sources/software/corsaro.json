@@ -4,7 +4,8 @@
     "organization": "CAIDA",
     "description": "Extensible framework for large-scale analysis of passive trace data.",
     "tags": [
-        "traffic"
+        "traffic",
+        "caida"
     ],
     "resources": [
         {

@@ -5,7 +5,8 @@
     "description": "Web pages that display various summaries of results from the Spoofer project",
     "tags": [
         "security",
-        "spoofer"
+        "spoofer",
+        "caida"
     ],
     "resources": [
         {

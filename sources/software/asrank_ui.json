@@ -5,7 +5,8 @@
     "description": "User Interface to AS Rank",
     "tags": [
         "topology",
-        "geolocation"
+        "geolocation",
+        "caida"
     ],
     "resources": [
         {

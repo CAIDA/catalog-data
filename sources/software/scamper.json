@@ -5,7 +5,8 @@
     "description": "IPv6 and IPv4 active traceroute probing and ping.",
     "tags": [
         "topology",
-        "performance measurement"
+        "performance measurement",
+        "caida"
     ],
     "resources": [
         {
