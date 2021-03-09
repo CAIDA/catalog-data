@@ -155,6 +155,9 @@ def parse_catalog_data_caida():
     global re_dlim
     global path
 
+    # number skipped with no description
+    number_skipped_no_description = 0
+
     # Iterate over each file in catalog-data-caida/sources.
     for file in os.listdir(path):
         # Edge Case: Skip if file is not a .md file.
@@ -164,14 +167,6 @@ def parse_catalog_data_caida():
         file_name = file[:file.index(".")].replace("-", "_")
         file_path = "{}{}".format(path, file)
 
-        # Edge Case: Skip files that have already been seen.
-        if file_name in seen_datasets or file_name in id_2_object:
-            continue     
-
-        # Edge Case: Skip any seen softwares.
-        if "tool_" in file_name and file_name[file_name.index("_") + 1 :] in seen_softwares:
-            continue
-
         metadata = parse_metadata(file_path)
         # not including private datasets
         if "visibility" not in metadata or metadata["visibility"] != "private":
@@ -179,6 +174,11 @@ def parse_catalog_data_caida():
                 print ("duplicate id",metadata["id"])
                 print ("    ",metadata["id"])
                 print ("    ",seen_id["id"])
+                continue
+
+            # If it has no description skip it
+            if "description" not in metadata or re.search("^\s*$", metadata["description"]):
+                number_skipped_no_description += 1
                 continue
 
             # Edge Case: Replace missing names with ID.
@@ -218,6 +218,8 @@ def parse_catalog_data_caida():
                 print ("    ",metadata["filename"])
             else:
                 id_2_object[metadata["id"]] = metadata
+
+    print ("   number skipped no desc:", number_skipped_no_description)
 
 re_section = re.compile("^~~~([^\n]+)")
 def parse_metadata(filename):
