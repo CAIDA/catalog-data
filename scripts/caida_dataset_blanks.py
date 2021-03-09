@@ -62,7 +62,7 @@ import os
 ############################## Global Variables ################################
 
 # File Paths:
-path_ids = "data/data_id___caida.json"
+data_id_filename = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
@@ -75,30 +75,26 @@ def main(argv):
 
     # Assign a given path_ids value, else use the default.
     if args.path_ids != None:
-        path_ids = args.path_ids
+        filename = args.path_ids
+    else:
+        filename = data_id_filename
     
     # Print all datasets listed to their paths with just IDs.
-    print_datasets()
+    print_datasets(filename)
 
 ############################### Helper Methods #################################
 
 # Print all found datasets to individual JSON objects.
-def print_datasets():
-    global path_ids
+def print_datasets(filename):
 
     # Load the JSON file into a dictionary.
-    with open(path_ids, "r") as id_file:
-        path_2_id = json.load(id_file)
+    with open(filename, "r") as f:
+        objects = json.load(f)
 
     # Iterate over each path and make a blank JSON file for them.
-    for blank_file in path_2_id:
-        data = { 
-            "id":blank_file["id"],
-            "name":blank_file["name"]
-        }
-
-        with open(blank_file["file_path"], "w") as output_file:
-            output_file.write(json.dumps(data, indent=4))
+    for obj in objects:
+        with open(obj["filename"], "w") as output_file:
+            output_file.write(json.dumps(obj, indent=4))
 
 
 # Run the script given the inputs from the terminal.

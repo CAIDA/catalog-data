@@ -201,26 +201,23 @@ def parse_catalog_data_caida():
             if "CAIDA" in metadata["organization"]:
                 if "caida" not in metadata["tags"]:
                     metadata["tags"].append("caida")
-            else:
-                # Add third party organization of tags.
-                third_party = metadata["organization"]
-                if third_party not in metadata["tags"]:
-                    metadata["tags"].append(third_party.upper())
-
-            # Edge Case: Remove broken tags.
-            remove_indexes = set()
-            for i, value in enumerate(metadata["tags"]):
-                metadata[i] = utils.id_create(file_path,"tag", value).split(":")[1]
 
             # Edge Case: Remove 0 length lists from objects.
-            remove_keys = set()
-            for key in metadata:
-                if len(metadata[key]) == 0:
-                    remove_keys.add(key)
-            for key in remove_keys:
+            keys = []
+            for key,value in metadata.items():
+                if type(value) == str and re.search("^\s*$", value):
+                    keys.append(key)
+            for key in keys:
                 del metadata[key]
 
-            id_2_object[metadata["id"]] = metadata
+            # Store the metadata
+            id_ = metadata["id"]
+            if id_ in id_2_object:
+                print ("duplicate",id_)
+                print ("    ",id_2_object["filename"])
+                print ("    ",metadata["filename"])
+            else:
+                id_2_object[metadata["id"]] = metadata
 
 re_section = re.compile("^~~~([^\n]+)")
 def parse_metadata(filename):
@@ -280,44 +277,62 @@ def print_datasets():
     global id_2_object
     global path_ids
 
-    # Will map a file_path to its ID.
-    path_2_id = {}
-
     # Iterate over each file and make individual JSON objects.
-    for file_id in id_2_object:
+    for id_,obj in id_2_object.items():
         # Edge Case: Update path based which software or dataset.
-        if "tool_" in file_id:
-            file_name = file_id[file_id.index("_") + 1:] 
-            file_path = "sources/software/{}___caida.json".format(file_name)
+        if "tool_" in id_:
+            type_ = "software"
+            #id_ = obj["id"] = id_[id_.index("_") + 1:] 
         else:
-            file_path = "sources/dataset/{}___caida.json".format(file_id)
-            file_name = file_id
-
-        path_2_id[file_id] = {
-            "path": file_path,
-            "name": id_2_object[file_id]["name"],
-            "id": file_name
-        }
+            type_ = "dataset"
+        filename = "sources/%s/%s___caida.json" % (type_, id_)
+        print (filename)
+        obj["filename"] = filename
 
         # Write the JSON object to the file.
-        curr_file = json.dumps(id_2_object[file_id], indent=4)
-        with open(file_path, "w") as output_file:
+        curr_file = json.dumps(id_2_object[id_], indent=4)
+        with open(filename, "w") as output_file:
             output_file.write(curr_file)
     
     # Print a JSON mapping all made files to their IDs.
     with open(path_ids, "w") as output_file:
-        sorted_keys = sorted(path_2_id.keys())
+        ids = sorted(id_2_object.keys())
         output_file.write("[\n")
-        for key in sorted_keys:
-            curr_obj = path_2_id[key]
-            output_file.write("\t{\n")
-            output_file.write("\t\t\"id\": \"{}\",\n".format(curr_obj["id"]))
-            output_file.write("\t\t\"name\": \"{}\",\n".format(curr_obj["name"]))
-            output_file.write("\t\t\"file_path\": \"{}\"\n".format(curr_obj["path"]))
-            if key == sorted_keys[-1]:
-                output_file.write("\t}\n")
+        for id_ in ids:
+            obj = id_2_object[id_]
+            strings = []
+
+            for key in ["id","name","filename", "organization", "description", "status", "dateCreated", "dateLastUpdated"]:
+                if key in obj:
+                    strings.append('    "'+key+'":'+json.dumps(obj[key]))
+
+            for key in ["tags","licenses"]:
+                if key in obj:
+                    strings.append('    "'+key+'":'+json.dumps(sorted(obj[key])))
+                    
+            if "resources" in obj:
+                r = []
+                for res in obj["resources"]:
+                    for key in ["name","url"]:
+                        if key in res:
+                            r.append('"'+key+'":'+json.dumps(res[key]))
+                    for k in ["tags"]:
+                        if k in res:
+                            r.append('"'+k+'":'+json.dumps(sorted(res[k])))
+                strings.append('    "resources": [\n'
+                        +'       {\n         '
+                        +',\n         '.join(r)
+                        +'\n       }\n'
+                        +'   ]')
+            #sys.stdout.write(",\n".join(strings)+"\n")
+            #sys.stdout.write("\n")
+
+            output_file.write("  {\n")
+            output_file.write(",\n".join(strings)+"\n")
+            if id_ == ids[-1]:
+                output_file.write("  }\n")
             else:
-                output_file.write("\t},\n")
+                output_file.write("  },\n")
         output_file.write("]\n")
 
 # Run the script given the inputs from the terminal.

@@ -1,977 +1,2567 @@
 [
-	{
-		"id": "2006-ccr-as-level-topology",
-		"name": "Paper: 'AS-level topology', CCR 2006",
-		"file_path": "sources/dataset/2006-ccr-as-level-topology___caida.json"
-	},
-	{
-		"id": "2006-pam-as-taxonomy",
-		"name": "Paper: AS Taxonomy Repository, PAM 2006",
-		"file_path": "sources/dataset/2006-pam-as-taxonomy___caida.json"
-	},
-	{
-		"id": "2008-imc-trmethod",
-		"name": "2008-IMC-TRMETHOD",
-		"file_path": "sources/dataset/2008-imc-trmethod___caida.json"
-	},
-	{
-		"id": "2009-imc-spoofer",
-		"name": "2009-IMC-SPOOFER",
-		"file_path": "sources/dataset/2009-imc-spoofer___caida.json"
-	},
-	{
-		"id": "2010-pam-as-annotations",
-		"name": "2010-PAM-AS-ANNOTATIONS",
-		"file_path": "sources/dataset/2010-pam-as-annotations___caida.json"
-	},
-	{
-		"id": "2011-ccr-crooked-traceroute",
-		"name": "2011-CCR-CROOKED-TRACEROUTE",
-		"file_path": "sources/dataset/2011-ccr-crooked-traceroute___caida.json"
-	},
-	{
-		"id": "2013-imc-asrank",
-		"name": "2013-IMC-ASRANK",
-		"file_path": "sources/dataset/2013-imc-asrank___caida.json"
-	},
-	{
-		"id": "2013-ton-alias-resolution",
-		"name": "2013-TON-ALIAS-RESOLUTION",
-		"file_path": "sources/dataset/2013-ton-alias-resolution___caida.json"
-	},
-	{
-		"id": "2014-ccr-drop",
-		"name": "DNS-based Router Positioning",
-		"file_path": "sources/dataset/2014-ccr-drop___caida.json"
-	},
-	{
-		"id": "2014-imc-complex",
-		"name": "Inferring Complex AS Relationships",
-		"file_path": "sources/dataset/2014-imc-complex___caida.json"
-	},
-	{
-		"id": "2014-pam-asrank-2ndlook",
-		"name": "2014-PAM-ASRANK-2NDLOOK",
-		"file_path": "sources/dataset/2014-pam-asrank-2ndlook___caida.json"
-	},
-	{
-		"id": "2015-imc-blind",
-		"name": "2015-IMC-BLIND",
-		"file_path": "sources/dataset/2015-imc-blind___caida.json"
-	},
-	{
-		"id": "2015-pam-asrank6",
-		"name": "PAM 2015 IPv6 AS rank IPv6",
-		"file_path": "sources/dataset/2015-pam-asrank6___caida.json"
-	},
-	{
-		"id": "2017-imc-rsdos-targets",
-		"name": "CAIDA Randomly and Uniformly Spoofed Denial-of-Service Attack Metadata",
-		"file_path": "sources/dataset/2017-imc-rsdos-targets___caida.json"
-	},
-	{
-		"id": "2017-sigcomm-router-outages",
-		"name": "Paper: SIGCOMM 2017 Router Outages",
-		"file_path": "sources/dataset/2017-sigcomm-router-outages___caida.json"
-	},
-	{
-		"id": "2018-pam-youtube-load-balancing",
-		"name": "PAM 2018 YouTube load-balancing behavior",
-		"file_path": "sources/dataset/2018-pam-youtube-load-balancing___caida.json"
-	},
-	{
-		"id": "2020-unintended-consequences",
-		"name": "PAM 2020 Unintended consequences",
-		"file_path": "sources/dataset/2020-unintended-consequences___caida.json"
-	},
-	{
-		"id": "aol-500k-users",
-		"name": "AOL 500k User Session",
-		"file_path": "sources/dataset/aol-500k-users___caida.json"
-	},
-	{
-		"id": "ark-iff-20140416",
-		"name": "Midar run ???",
-		"file_path": "sources/dataset/ark-iff-20140416___caida.json"
-	},
-	{
-		"id": "ark-ipv4-aslinks",
-		"name": "Ark IPv4 Routed /24 AS Links",
-		"file_path": "sources/dataset/ark-ipv4-aslinks___caida.json"
-	},
-	{
-		"id": "ark-ipv4-dns-names",
-		"name": "Ark IPv4 Routed /24 DNS Names",
-		"file_path": "sources/dataset/ark-ipv4-dns-names___caida.json"
-	},
-	{
-		"id": "ark-ipv4-dns-traffic",
-		"name": "Ark DNS traffic measurements",
-		"file_path": "sources/dataset/ark-ipv4-dns-traffic___caida.json"
-	},
-	{
-		"id": "ark-ipv4-prefix-probing",
-		"name": "Ark IPv4 prefix-probing data",
-		"file_path": "sources/dataset/ark-ipv4-prefix-probing___caida.json"
-	},
-	{
-		"id": "ark-ipv4-tnt",
-		"name": "IPv4 TNT MPLS Topology",
-		"file_path": "sources/dataset/ark-ipv4-tnt___caida.json"
-	},
-	{
-		"id": "ark-ipv4-traceroute",
-		"name": "Ark IPv4 Routed /24 Topology",
-		"file_path": "sources/dataset/ark-ipv4-traceroute___caida.json"
-	},
-	{
-		"id": "ark-ipv6-aslinks",
-		"name": "Ark IPv6 Topology AS Links",
-		"file_path": "sources/dataset/ark-ipv6-aslinks___caida.json"
-	},
-	{
-		"id": "ark-ipv6-dns-names",
-		"name": "Ark IPv6 Topology DNS Names",
-		"file_path": "sources/dataset/ark-ipv6-dns-names___caida.json"
-	},
-	{
-		"id": "ark-ipv6-routed48",
-		"name": "Ark IPv6 Routed /48 Topology",
-		"file_path": "sources/dataset/ark-ipv6-routed48___caida.json"
-	},
-	{
-		"id": "ark-ipv6-traceroute",
-		"name": "Ark IPv6 Topology",
-		"file_path": "sources/dataset/ark-ipv6-traceroute___caida.json"
-	},
-	{
-		"id": "ark-itdk",
-		"name": "Ark IPv4 ITDKs",
-		"file_path": "sources/dataset/ark-itdk___caida.json"
-	},
-	{
-		"id": "ark-midar-20110414",
-		"name": "Midar run 2011-04-14",
-		"file_path": "sources/dataset/ark-midar-20110414___caida.json"
-	},
-	{
-		"id": "ark-midar-20110418",
-		"name": "Midar run 2011-04-18",
-		"file_path": "sources/dataset/ark-midar-20110418___caida.json"
-	},
-	{
-		"id": "ark-midar-20110418-analysis",
-		"name": "Midar run 2011-04-18 (analysis)",
-		"file_path": "sources/dataset/ark-midar-20110418-analysis___caida.json"
-	},
-	{
-		"id": "ark-midar-20111024",
-		"name": "Midar run 2011-10-24",
-		"file_path": "sources/dataset/ark-midar-20111024___caida.json"
-	},
-	{
-		"id": "ark-midar-20120723",
-		"name": "Midar run 2012-07-23",
-		"file_path": "sources/dataset/ark-midar-20120723___caida.json"
-	},
-	{
-		"id": "ark-midar-20130422",
-		"name": "Midar run 2013-04-22",
-		"file_path": "sources/dataset/ark-midar-20130422___caida.json"
-	},
-	{
-		"id": "ark-midar-20130724",
-		"name": "Midar run 2013-07-24",
-		"file_path": "sources/dataset/ark-midar-20130724___caida.json"
-	},
-	{
-		"id": "ark-midar-20140421",
-		"name": "Midar run 2014-04-21",
-		"file_path": "sources/dataset/ark-midar-20140421___caida.json"
-	},
-	{
-		"id": "ark-midar-20141203",
-		"name": "Midar run 2014-12-03",
-		"file_path": "sources/dataset/ark-midar-20141203___caida.json"
-	},
-	{
-		"id": "ark-midar-20150831",
-		"name": "Midar run 2015-08-31",
-		"file_path": "sources/dataset/ark-midar-20150831___caida.json"
-	},
-	{
-		"id": "ark-midar-20160329",
-		"name": "Midar run 2016-03-29",
-		"file_path": "sources/dataset/ark-midar-20160329___caida.json"
-	},
-	{
-		"id": "ark-midar-20160920",
-		"name": "Midar run 2016-09-20",
-		"file_path": "sources/dataset/ark-midar-20160920___caida.json"
-	},
-	{
-		"id": "ark-midar-20170207",
-		"name": "Midar run 2017-02-07",
-		"file_path": "sources/dataset/ark-midar-20170207___caida.json"
-	},
-	{
-		"id": "ark-midar-20170828",
-		"name": "Midar run 2017-08-28",
-		"file_path": "sources/dataset/ark-midar-20170828___caida.json"
-	},
-	{
-		"id": "ark-midar-20180301",
-		"name": "Midar run 2018-03-01",
-		"file_path": "sources/dataset/ark-midar-20180301___caida.json"
-	},
-	{
-		"id": "ark-monitor-cfg",
-		"name": "Config files from all Ark nodes",
-		"file_path": "sources/dataset/ark-monitor-cfg___caida.json"
-	},
-	{
-		"id": "as-classification",
-		"name": "AS Classification",
-		"file_path": "sources/dataset/as-classification___caida.json"
-	},
-	{
-		"id": "as-facilities-map",
-		"name": "AS facilities mapping",
-		"file_path": "sources/dataset/as-facilities-map___caida.json"
-	},
-	{
-		"id": "as-organizations",
-		"name": "AS to organizations mappings",
-		"file_path": "sources/dataset/as-organizations___caida.json"
-	},
-	{
-		"id": "as-rank-disk",
-		"name": "AS Rank Database Input",
-		"file_path": "sources/dataset/as-rank-disk___caida.json"
-	},
-	{
-		"id": "as-rank-online",
-		"name": "AS Rank",
-		"file_path": "sources/dataset/as-rank-online___caida.json"
-	},
-	{
-		"id": "as-rank-ribs",
-		"name": "AS Relationships RIBs",
-		"file_path": "sources/dataset/as-rank-ribs___caida.json"
-	},
-	{
-		"id": "as-relationships-201206-201311",
-		"name": "AS Relationships (2012/06-2013-11)",
-		"file_path": "sources/dataset/as-relationships-201206-201311___caida.json"
-	},
-	{
-		"id": "as-relationships-geo",
-		"name": "AS Relationships with geographic annotations",
-		"file_path": "sources/dataset/as-relationships-geo___caida.json"
-	},
-	{
-		"id": "as-relationships-pre-201206",
-		"name": "AS Relationships (pre-2012-06)",
-		"file_path": "sources/dataset/as-relationships-pre-201206___caida.json"
-	},
-	{
-		"id": "as-relationships-serial-1",
-		"name": "AS Relationships (serial-1)",
-		"file_path": "sources/dataset/as-relationships-serial-1___caida.json"
-	},
-	{
-		"id": "as-relationships-serial-2",
-		"name": "AS Relationships (serial-2)",
-		"file_path": "sources/dataset/as-relationships-serial-2___caida.json"
-	},
-	{
-		"id": "asymmetry-test",
-		"name": "ASYMMETRY-TEST",
-		"file_path": "sources/dataset/asymmetry-test___caida.json"
-	},
-	{
-		"id": "backscatter-2001-non-anon",
-		"name": "backscatter 2001 non anon",
-		"file_path": "sources/dataset/backscatter-2001-non-anon___caida.json"
-	},
-	{
-		"id": "backscatter-raw",
-		"name": "Original backscatter traces",
-		"file_path": "sources/dataset/backscatter-raw___caida.json"
-	},
-	{
-		"id": "backscatter-tocs-originals",
-		"name": "Backscatter datasets for TOCS paper",
-		"file_path": "sources/dataset/backscatter-tocs-originals___caida.json"
-	},
-	{
-		"id": "bdk",
-		"name": "BDK",
-		"file_path": "sources/dataset/bdk___caida.json"
-	},
-	{
-		"id": "bdrmap",
-		"name": "Border mapping dataset",
-		"file_path": "sources/dataset/bdrmap___caida.json"
-	},
-	{
-		"id": "bgp-communities",
-		"name": "BGP Community Dictionary Dataset",
-		"file_path": "sources/dataset/bgp-communities___caida.json"
-	},
-	{
-		"id": "bgpstream",
-		"name": "bgpstream.caida.org",
-		"file_path": "sources/dataset/bgpstream___caida.json"
-	},
-	{
-		"id": "bogon-cymru-dumps",
-		"name": "Bogon files from Cymru",
-		"file_path": "sources/dataset/bogon-cymru-dumps___caida.json"
-	},
-	{
-		"id": "caidaspy",
-		"name": "CAIDASPY",
-		"file_path": "sources/dataset/caidaspy___caida.json"
-	},
-	{
-		"id": "comcast-ping",
-		"name": "COMCAST-PING",
-		"file_path": "sources/dataset/comcast-ping___caida.json"
-	},
-	{
-		"id": "complete-dns-lookups",
-		"name": "DNS lookups",
-		"file_path": "sources/dataset/complete-dns-lookups___caida.json"
-	},
-	{
-		"id": "congestion-bdr",
-		"name": "Congestion bordermap data",
-		"file_path": "sources/dataset/congestion-bdr___caida.json"
-	},
-	{
-		"id": "congestion-link",
-		"name": "Congestion link data",
-		"file_path": "sources/dataset/congestion-link___caida.json"
-	},
-	{
-		"id": "congestion-loss",
-		"name": "Congestion loss data",
-		"file_path": "sources/dataset/congestion-loss___caida.json"
-	},
-	{
-		"id": "congestion-targets",
-		"name": "Congestion targets data",
-		"file_path": "sources/dataset/congestion-targets___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2013",
-		"name": "Congestion TSP data for 2013",
-		"file_path": "sources/dataset/congestion-tsp-2013___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2014",
-		"name": "Congestion TSP data for 2014 (.out.gz files only)",
-		"file_path": "sources/dataset/congestion-tsp-2014___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2015",
-		"name": "Congestion TSP data for 2015 (.out.gz files only)",
-		"file_path": "sources/dataset/congestion-tsp-2015___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2016",
-		"name": "Congestion TSP data for 2016 (.out.gz files only)",
-		"file_path": "sources/dataset/congestion-tsp-2016___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2017",
-		"name": "Congestion TSP data for 2017 (.out.gz files only)",
-		"file_path": "sources/dataset/congestion-tsp-2017___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2018",
-		"name": "Congestion TSP data for 2018 (.out.gz files only)",
-		"file_path": "sources/dataset/congestion-tsp-2018___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2019",
-		"name": "Congestion TSP data for 2019",
-		"file_path": "sources/dataset/congestion-tsp-2019___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2020",
-		"name": "Congestion TSP data",
-		"file_path": "sources/dataset/congestion-tsp-2020___caida.json"
-	},
-	{
-		"id": "congestion-tsp-2021",
-		"name": "Congestion TSP data",
-		"file_path": "sources/dataset/congestion-tsp-2021___caida.json"
-	},
-	{
-		"id": "corsaro-dos",
-		"name": "UCSD Telescope Corsaro dos data",
-		"file_path": "sources/dataset/corsaro-dos___caida.json"
-	},
-	{
-		"id": "corsaro-flowtuple",
-		"name": "UCSD Telescope Corsaro flowtuples",
-		"file_path": "sources/dataset/corsaro-flowtuple___caida.json"
-	},
-	{
-		"id": "corsaro-patch-tuesday",
-		"name": "Corsaro Patch Tuesday",
-		"file_path": "sources/dataset/corsaro-patch-tuesday___caida.json"
-	},
-	{
-		"id": "dataadm",
-		"name": "Meta data related to dataadm tasks",
-		"file_path": "sources/dataset/dataadm___caida.json"
-	},
-	{
-		"id": "datcat-oracle-dump",
-		"name": "DATCAT-ORACLE-DUMP",
-		"file_path": "sources/dataset/datcat-oracle-dump___caida.json"
-	},
-	{
-		"id": "ddos-attack-2007",
-		"name": "DDoS 2007 attack",
-		"file_path": "sources/dataset/ddos-attack-2007___caida.json"
-	},
-	{
-		"id": "ddos-attack-2007-raw",
-		"name": "DDOS-ATTACK-2007-RAW",
-		"file_path": "sources/dataset/ddos-attack-2007-raw___caida.json"
-	},
-	{
-		"id": "dhs-imam-ipv4-transfers",
-		"name": "DHS-IMAM-IPV4-TRANSFERS",
-		"file_path": "sources/dataset/dhs-imam-ipv4-transfers___caida.json"
-	},
-	{
-		"id": "dns-chile-daily-traces",
-		"name": "DNS-CHILE-DAILY-TRACES",
-		"file_path": "sources/dataset/dns-chile-daily-traces___caida.json"
-	},
-	{
-		"id": "dns-root-gtld-rtt",
-		"name": "DNS root/gTLD RTT data",
-		"file_path": "sources/dataset/dns-root-gtld-rtt___caida.json"
-	},
-	{
-		"id": "dnsstat",
-		"name": "DNSSTAT",
-		"file_path": "sources/dataset/dnsstat___caida.json"
-	},
-	{
-		"id": "fcc-mba",
-		"name": "Measuring Broadband America",
-		"file_path": "sources/dataset/fcc-mba___caida.json"
-	},
-	{
-		"id": "gadm",
-		"name": "Global Adminstrative Areas",
-		"file_path": "sources/dataset/gadm___caida.json"
-	},
-	{
-		"id": "gatech-botnet",
-		"name": "GATECH-BOTNET",
-		"file_path": "sources/dataset/gatech-botnet___caida.json"
-	},
-	{
-		"id": "geographic",
-		"name": "Geographic Info",
-		"file_path": "sources/dataset/geographic___caida.json"
-	},
-	{
-		"id": "geoloc-ping",
-		"name": "GEOLOC-PING",
-		"file_path": "sources/dataset/geoloc-ping___caida.json"
-	},
-	{
-		"id": "geoloc-ping-20140530",
-		"name": "GEOLOC-PING-20140530",
-		"file_path": "sources/dataset/geoloc-ping-20140530___caida.json"
-	},
-	{
-		"id": "geolocated-router",
-		"name": "Geolocated Router Dataset",
-		"file_path": "sources/dataset/geolocated-router___caida.json"
-	},
-	{
-		"id": "geonames",
-		"name": "Geonames",
-		"file_path": "sources/dataset/geonames___caida.json"
-	},
-	{
-		"id": "gt-bgp",
-		"name": "GT-BGP",
-		"file_path": "sources/dataset/gt-bgp___caida.json"
-	},
-	{
-		"id": "hostip",
-		"name": "HOSTIP",
-		"file_path": "sources/dataset/hostip___caida.json"
-	},
-	{
-		"id": "icann-czds",
-		"name": "Zone files from ICANN CZDS",
-		"file_path": "sources/dataset/icann-czds___caida.json"
-	},
-	{
-		"id": "internetcensus2012",
-		"name": "INTERNETCENSUS2012",
-		"file_path": "sources/dataset/internetcensus2012___caida.json"
-	},
-	{
-		"id": "ipv4-2013-census",
-		"name": "IPv4 2013 Census Dataset",
-		"file_path": "sources/dataset/ipv4-2013-census___caida.json"
-	},
-	{
-		"id": "ipv6-collection-200801",
-		"name": "IPv6 Topology Collection 200801",
-		"file_path": "sources/dataset/ipv6-collection-200801___caida.json"
-	},
-	{
-		"id": "isc-domain-survey",
-		"name": "ISC-DOMAIN-SURVEY",
-		"file_path": "sources/dataset/isc-domain-survey___caida.json"
-	},
-	{
-		"id": "isi-lander",
-		"name": "ISI-LANDER",
-		"file_path": "sources/dataset/isi-lander___caida.json"
-	},
-	{
-		"id": "ixps",
-		"name": "Internet eXchange Points Dataset",
-		"file_path": "sources/dataset/ixps___caida.json"
-	},
-	{
-		"id": "kleinberg-wikipedia",
-		"name": "KLEINBERG-WIKIPEDIA",
-		"file_path": "sources/dataset/kleinberg-wikipedia___caida.json"
-	},
-	{
-		"id": "logs-ms08-067",
-		"name": "LOGS-MS08-067",
-		"file_path": "sources/dataset/logs-ms08-067___caida.json"
-	},
-	{
-		"id": "maxmind-geolite-dumps",
-		"name": "MAXMIND-GEOLITE-DUMPS",
-		"file_path": "sources/dataset/maxmind-geolite-dumps___caida.json"
-	},
-	{
-		"id": "natural-earth",
-		"name": "Natural Earth data",
-		"file_path": "sources/dataset/natural-earth___caida.json"
-	},
-	{
-		"id": "netacuity-dumps",
-		"name": "NETACUITY-DUMPS",
-		"file_path": "sources/dataset/netacuity-dumps___caida.json"
-	},
-	{
-		"id": "netflow-sdsc",
-		"name": "NETFLOW-SDSC",
-		"file_path": "sources/dataset/netflow-sdsc___caida.json"
-	},
-	{
-		"id": "open-resolver-survey-200710",
-		"name": "OPEN-RESOLVER-SURVEY-200710",
-		"file_path": "sources/dataset/open-resolver-survey-200710___caida.json"
-	},
-	{
-		"id": "passive-2007-dag",
-		"name": "Unanonymized Internet Traces 2007",
-		"file_path": "sources/dataset/passive-2007-dag___caida.json"
-	},
-	{
-		"id": "passive-2007-pcap",
-		"name": "Anonymized Internet Traces 2007",
-		"file_path": "sources/dataset/passive-2007-pcap___caida.json"
-	},
-	{
-		"id": "passive-2008-dag",
-		"name": "Unanonymized Internet Traces 2008",
-		"file_path": "sources/dataset/passive-2008-dag___caida.json"
-	},
-	{
-		"id": "passive-2008-pcap",
-		"name": "Anonymized Internet Traces 2008",
-		"file_path": "sources/dataset/passive-2008-pcap___caida.json"
-	},
-	{
-		"id": "passive-20080319-00",
-		"name": "Packet headers 1st Chicago trace (2008)",
-		"file_path": "sources/dataset/passive-20080319-00___caida.json"
-	},
-	{
-		"id": "passive-20080319-19",
-		"name": "Flow files for 2nd Chicago trace",
-		"file_path": "sources/dataset/passive-20080319-19___caida.json"
-	},
-	{
-		"id": "passive-2009-dag",
-		"name": "Unanonymized Internet Traces 2009",
-		"file_path": "sources/dataset/passive-2009-dag___caida.json"
-	},
-	{
-		"id": "passive-2009-pcap",
-		"name": "Anonymized Internet Traces 2009",
-		"file_path": "sources/dataset/passive-2009-pcap___caida.json"
-	},
-	{
-		"id": "passive-2010-dag",
-		"name": "Unanonymized Internet Traces 2010",
-		"file_path": "sources/dataset/passive-2010-dag___caida.json"
-	},
-	{
-		"id": "passive-2010-pcap",
-		"name": "Anonymized Internet Traces 2010",
-		"file_path": "sources/dataset/passive-2010-pcap___caida.json"
-	},
-	{
-		"id": "passive-2011-dag",
-		"name": "Unanonymized Internet Traces 2011",
-		"file_path": "sources/dataset/passive-2011-dag___caida.json"
-	},
-	{
-		"id": "passive-2011-pcap",
-		"name": "Anonymized Internet Traces 2011",
-		"file_path": "sources/dataset/passive-2011-pcap___caida.json"
-	},
-	{
-		"id": "passive-2012-dag",
-		"name": "Unanonymized Internet Traces 2012",
-		"file_path": "sources/dataset/passive-2012-dag___caida.json"
-	},
-	{
-		"id": "passive-2012-pcap",
-		"name": "Anonymized Internet Traces 2012",
-		"file_path": "sources/dataset/passive-2012-pcap___caida.json"
-	},
-	{
-		"id": "passive-2013-dag",
-		"name": "Unanonymized Internet Traces 2013",
-		"file_path": "sources/dataset/passive-2013-dag___caida.json"
-	},
-	{
-		"id": "passive-2013-pcap",
-		"name": "Anonymized Internet Traces 2013",
-		"file_path": "sources/dataset/passive-2013-pcap___caida.json"
-	},
-	{
-		"id": "passive-2014-dag",
-		"name": "Unanonymized Internet Traces 2014",
-		"file_path": "sources/dataset/passive-2014-dag___caida.json"
-	},
-	{
-		"id": "passive-2014-pcap",
-		"name": "Anonymized Internet Traces 2014",
-		"file_path": "sources/dataset/passive-2014-pcap___caida.json"
-	},
-	{
-		"id": "passive-2015-dag",
-		"name": "Unanonymized Internet Traces 2015",
-		"file_path": "sources/dataset/passive-2015-dag___caida.json"
-	},
-	{
-		"id": "passive-2015-pcap",
-		"name": "Anonymized Internet Traces 2015",
-		"file_path": "sources/dataset/passive-2015-pcap___caida.json"
-	},
-	{
-		"id": "passive-2016-dag",
-		"name": "Unanonymized Internet Traces 2016",
-		"file_path": "sources/dataset/passive-2016-dag___caida.json"
-	},
-	{
-		"id": "passive-2016-pcap",
-		"name": "Anonymized Internet Traces 2016",
-		"file_path": "sources/dataset/passive-2016-pcap___caida.json"
-	},
-	{
-		"id": "passive-2018-dag",
-		"name": "Unanonymized Internet Traces 2018",
-		"file_path": "sources/dataset/passive-2018-dag___caida.json"
-	},
-	{
-		"id": "passive-2018-pcap",
-		"name": "Anonymized Internet Traces 2018",
-		"file_path": "sources/dataset/passive-2018-pcap___caida.json"
-	},
-	{
-		"id": "passive-2019-dag",
-		"name": "Unanonymized Internet Traces 2019",
-		"file_path": "sources/dataset/passive-2019-dag___caida.json"
-	},
-	{
-		"id": "passive-2019-pcap",
-		"name": "Anonymized Internet Traces 2019",
-		"file_path": "sources/dataset/passive-2019-pcap___caida.json"
-	},
-	{
-		"id": "passive-ipv6launch-dag",
-		"name": "Unanonymized Internet Traces IPv6 Day/Launch",
-		"file_path": "sources/dataset/passive-ipv6launch-dag___caida.json"
-	},
-	{
-		"id": "passive-ipv6launch-pcap",
-		"name": "Anonymized Internet Traces IPv6 Day/Launch",
-		"file_path": "sources/dataset/passive-ipv6launch-pcap___caida.json"
-	},
-	{
-		"id": "passive-merged-pcap",
-		"name": "Anonymized Internet Traces April 2008 - January 2019",
-		"file_path": "sources/dataset/passive-merged-pcap___caida.json"
-	},
-	{
-		"id": "passive-metadata",
-		"name": "Passive Metadata",
-		"file_path": "sources/dataset/passive-metadata___caida.json"
-	},
-	{
-		"id": "passive-oc48-dag",
-		"name": "PASSIVE-OC48-DAG",
-		"file_path": "sources/dataset/passive-oc48-dag___caida.json"
-	},
-	{
-		"id": "passive-oc48-pcap",
-		"name": "OC48 Peering Point Traces",
-		"file_path": "sources/dataset/passive-oc48-pcap___caida.json"
-	},
-	{
-		"id": "passive-oc48-pcap-paix",
-		"name": "PASSIVE-OC48-PCAP-PAIX",
-		"file_path": "sources/dataset/passive-oc48-pcap-paix___caida.json"
-	},
-	{
-		"id": "passive-sampler",
-		"name": "Anonymized Internet Traces sampler",
-		"file_path": "sources/dataset/passive-sampler___caida.json"
-	},
-	{
-		"id": "peeringdb-dumps",
-		"name": "PEERINGDB-DUMPS",
-		"file_path": "sources/dataset/peeringdb-dumps___caida.json"
-	},
-	{
-		"id": "plab-results",
-		"name": "PLAB-RESULTS",
-		"file_path": "sources/dataset/plab-results___caida.json"
-	},
-	{
-		"id": "radargun-201204",
-		"name": "RADARGUN-201204",
-		"file_path": "sources/dataset/radargun-201204___caida.json"
-	},
-	{
-		"id": "ripe-atlas-dumps",
-		"name": "Ripe Atlas daily dumps",
-		"file_path": "sources/dataset/ripe-atlas-dumps___caida.json"
-	},
-	{
-		"id": "router-outages",
-		"name": "Raw data for Router Outages paper",
-		"file_path": "sources/dataset/router-outages___caida.json"
-	},
-	{
-		"id": "routeviews-ipv4-prefix2as",
-		"name": "RouteViews IPv4 Prefix to AS mappings",
-		"file_path": "sources/dataset/routeviews-ipv4-prefix2as___caida.json"
-	},
-	{
-		"id": "routeviews-ipv4-prefix2as-coalesced",
-		"name": "RouteViews IPv4 Prefix to AS mappings - coalesced",
-		"file_path": "sources/dataset/routeviews-ipv4-prefix2as-coalesced___caida.json"
-	},
-	{
-		"id": "routeviews-ipv6-prefix2as",
-		"name": "RouteViews IPv6 Prefix to AS mappings",
-		"file_path": "sources/dataset/routeviews-ipv6-prefix2as___caida.json"
-	},
-	{
-		"id": "skitter-aslinks",
-		"name": "Skitter AS Links",
-		"file_path": "sources/dataset/skitter-aslinks___caida.json"
-	},
-	{
-		"id": "skitter-itdk",
-		"name": "Skitter ITDK",
-		"file_path": "sources/dataset/skitter-itdk___caida.json"
-	},
-	{
-		"id": "skitter-router-adjacencies",
-		"name": "Skitter Router Adjacencies",
-		"file_path": "sources/dataset/skitter-router-adjacencies___caida.json"
-	},
-	{
-		"id": "skitter-traceroute",
-		"name": "Skitter traceroute dataset",
-		"file_path": "sources/dataset/skitter-traceroute___caida.json"
-	},
-	{
-		"id": "snapp-i2net",
-		"name": "SNAPP-I2NET",
-		"file_path": "sources/dataset/snapp-i2net___caida.json"
-	},
-	{
-		"id": "spoofer-data",
-		"name": "Spoofer data",
-		"file_path": "sources/dataset/spoofer-data___caida.json"
-	},
-	{
-		"id": "telegeography",
-		"name": "TELEGEOGRAPHY",
-		"file_path": "sources/dataset/telegeography___caida.json"
-	},
-	{
-		"id": "telescope-anon-conficker",
-		"name": "Three days of Conficker",
-		"file_path": "sources/dataset/telescope-anon-conficker___caida.json"
-	},
-	{
-		"id": "telescope-anon-twodays",
-		"name": "Two-Days-in-2008 Telescope Dataset",
-		"file_path": "sources/dataset/telescope-anon-twodays___caida.json"
-	},
-	{
-		"id": "telescope-backscatter",
-		"name": "UCSD Network Telescope Traffic Samples",
-		"file_path": "sources/dataset/telescope-backscatter___caida.json"
-	},
-	{
-		"id": "telescope-codered-worm",
-		"name": "Code Red worm dataset",
-		"file_path": "sources/dataset/telescope-codered-worm___caida.json"
-	},
-	{
-		"id": "telescope-daily-rsdos",
-		"name": "Aggregated Daily RSDoS Attack Metadata",
-		"file_path": "sources/dataset/telescope-daily-rsdos___caida.json"
-	},
-	{
-		"id": "telescope-darknet-scanners",
-		"name": "Telescope Darknet Scanners",
-		"file_path": "sources/dataset/telescope-darknet-scanners___caida.json"
-	},
-	{
-		"id": "telescope-educational",
-		"name": "Telescope Educational",
-		"file_path": "sources/dataset/telescope-educational___caida.json"
-	},
-	{
-		"id": "telescope-live",
-		"name": "UCSD Real-time Network Telescope",
-		"file_path": "sources/dataset/telescope-live___caida.json"
-	},
-	{
-		"id": "telescope-live-sampler",
-		"name": "Telescope Live (Near-Real-Time) Sampler",
-		"file_path": "sources/dataset/telescope-live-sampler___caida.json"
-	},
-	{
-		"id": "telescope-nersc",
-		"name": "UCSD Telescope data at NERSC",
-		"file_path": "sources/dataset/telescope-nersc___caida.json"
-	},
-	{
-		"id": "telescope-raw",
-		"name": "TELESCOPE-RAW",
-		"file_path": "sources/dataset/telescope-raw___caida.json"
-	},
-	{
-		"id": "telescope-sipscan",
-		"name": "Telescope Sipscan dataset",
-		"file_path": "sources/dataset/telescope-sipscan___caida.json"
-	},
-	{
-		"id": "telescope-sipscan-fates",
-		"name": "Botnet Stealth Scan (fates@postech.ac.kr)",
-		"file_path": "sources/dataset/telescope-sipscan-fates___caida.json"
-	},
-	{
-		"id": "telescope-witty-worm",
-		"name": "Witty Worm dataset",
-		"file_path": "sources/dataset/telescope-witty-worm___caida.json"
-	},
-	{
-		"id": "telescope-worms-raw",
-		"name": "Raw worm-related telescope pcap files (Code Red, Witty)",
-		"file_path": "sources/dataset/telescope-worms-raw___caida.json"
-	},
-	{
-		"id": "timestamps",
-		"name": "TIMESTAMPS",
-		"file_path": "sources/dataset/timestamps___caida.json"
-	},
-	{
-		"id": "tool-arkutil",
-		"name": "Ruby Ark utilities",
-		"file_path": "sources/dataset/tool-arkutil___caida.json"
-	},
-	{
-		"id": "tool-bgpstream",
-		"name": "(py)bgpstream tarballs",
-		"file_path": "sources/dataset/tool-bgpstream___caida.json"
-	},
-	{
-		"id": "tool-coralreef",
-		"name": "CoralReef tarball",
-		"file_path": "sources/dataset/tool-coralreef___caida.json"
-	},
-	{
-		"id": "tool-corsaro",
-		"name": "Corsaro tarball",
-		"file_path": "sources/dataset/tool-corsaro___caida.json"
-	},
-	{
-		"id": "tool-henya",
-		"name": "Henya query system",
-		"file_path": "sources/dataset/tool-henya___caida.json"
-	},
-	{
-		"id": "tool-vela",
-		"name": "Vela: On-Demand Topology Measurement Service",
-		"file_path": "sources/dataset/tool-vela___caida.json"
-	},
-	{
-		"id": "topology-sampler",
-		"name": "Topology industry evaluation dataset",
-		"file_path": "sources/dataset/topology-sampler___caida.json"
-	},
-	{
-		"id": "topology-truth",
-		"name": "Ground truth for topology",
-		"file_path": "sources/dataset/topology-truth___caida.json"
-	},
-	{
-		"id": "topology-truth-orig",
-		"name": "TOPOLOGY-TRUTH-ORIG",
-		"file_path": "sources/dataset/topology-truth-orig___caida.json"
-	},
-	{
-		"id": "ucsd-tap-20070514",
-		"name": "UCSD-TAP-20070514",
-		"file_path": "sources/dataset/ucsd-tap-20070514___caida.json"
-	},
-	{
-		"id": "ucsd-tap-2008ditl",
-		"name": "UCSD-TAP-2008DITL",
-		"file_path": "sources/dataset/ucsd-tap-2008ditl___caida.json"
-	},
-	{
-		"id": "whois-database-dumps",
-		"name": "Dumps of Whois db from various registries",
-		"file_path": "sources/dataset/whois-database-dumps___caida.json"
-	},
-	{
-		"id": "wide",
-		"name": "WIDE",
-		"file_path": "sources/dataset/wide___caida.json"
-	}
+  {
+    "id":"2006-ccr-as-level-topology",
+    "name":"Paper: 'AS-level topology', CCR 2006",
+    "filename":"sources/dataset/2006-ccr-as-level-topology___caida.json",
+    "organization":"CAIDA",
+    "description":"Published data supplement for paper P. Mahadevan, D. Krioukov, M. Fomenkov, B. Huffaker, X. Dimitropoulos, k. claffy, and A. Vahdat, \"The Internet AS-Level Topology: Three Data Sources and One Definitive Metric\", ACM SIGCOMM Computer Communication Review (CCR), vol. 36 No 1, pp. 17-26, Jan 2006 ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2006/as_topology",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2006-pam-as-taxonomy",
+    "name":"Paper: AS Taxonomy Repository, PAM 2006",
+    "filename":"sources/dataset/2006-pam-as-taxonomy___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper X. Dimitropoulos, D. Krioukov, G. Riley, and k. claffy, \"Revealing the Autonomous System Taxonomy: The Machine Learning Approach\", in Passive and Active Network Measurement Workshop (PAM), Mar 2006.  Copy of cider:/www/wcs/live-root/www-caida-org/data/active/as_taxonomy Consists of two files: as2attr.tgz and as_rel.tgz ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-taxonomy",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2008-imc-trmethod",
+    "name":"2008-IMC-TRMETHOD",
+    "filename":"sources/dataset/2008-imc-trmethod___caida.json",
+    "organization":"CAIDA",
+    "description":"Traceroute Probe Method 2008-08 Dataset Traceroute paths from 8 vantage points on Ark to a variety of destinations using up to 6 different probing methods.  Data supplement for paper   M. Luckie, Y. Hyun, and B. Huffaker,   \"Traceroute Probe Method and Forward IP Path Inference\",   Proc. Internet Measurement Conference (IMC),   Vouliagmeni, Greece, Oct 2008, pp. 311-324, ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/trmethod-200808.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2009-imc-spoofer",
+    "name":"2009-IMC-SPOOFER",
+    "filename":"sources/dataset/2009-imc-spoofer___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement to paper R. Beverly, A. Berger, Y. Hyun, and k. claffy, \"Understanding the Efficacy of Deployed Internet Source Address Validation Filtering\", in Internet Measurement Conference (IMC), Nov 2009. ",
+    "status":"snapshot",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2009/imc_spoofer",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2010-pam-as-annotations",
+    "name":"2010-PAM-AS-ANNOTATIONS",
+    "filename":"sources/dataset/2010-pam-as-annotations___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper   B. Huffaker, A. Dhamdhere, M. Fomenkov, and k. claffy,   \"Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers\",   in Passive and Active Network Measurement Workshop (PAM), Apr 2010.  This data supplement was available as part of the restricted Ark topology data (until 1-Feb 2014??). After that is was made public. Here all downloads are lumped together into a single 'public' count. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2010/as_assignment",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2011-ccr-crooked-traceroute",
+    "name":"2011-CCR-CROOKED-TRACEROUTE",
+    "filename":"sources/dataset/2011-ccr-crooked-traceroute___caida.json",
+    "organization":"CAIDA",
+    "description":"Unpublished data supplement for paper M. Luckie, A. Dhamdhere, k. claffy, and D. Murrell \"Measured Impact of Crooked Traceroute\" ACM SIGCOMM Computer Communication Review (CCR), vol. 41, no. 1, pp. 14--21, Jan 2011. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2011/crooked_traceroute",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2013-imc-asrank",
+    "name":"2013-IMC-ASRANK",
+    "filename":"sources/dataset/2013-imc-asrank___caida.json",
+    "organization":"CAIDA",
+    "description":"Unpublished data supplement for paper M. Luckie, B. Huffaker, k. claffy, A. Dhamdhere, and V. Giotsas \"AS Relationships, Customer Cones, and Validation\" in Internet Measurement Conference (IMC), Oct 2013, pp. 243--256. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2013/asrank",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2013-ton-alias-resolution",
+    "name":"2013-TON-ALIAS-RESOLUTION",
+    "filename":"sources/dataset/2013-ton-alias-resolution___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper K. Keys, Y. Hyun, M. Luckie, and k. claffy, \"Internet-Scale IPv4 Alias Resolution with MIDAR\", IEEE/ACM Transactions on Networking, vol. 21, no. 2, pp. 383--399, Apr 2013. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2013/alias_resolution_midar",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2014-ccr-drop",
+    "name":"DNS-based Router Positioning",
+    "filename":"sources/dataset/2014-ccr-drop___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper DRoP:DNS-based Router Positioning B. Huffaker, M. Fomenkov, and k. claffy in: ACM SIGCOMM Computer Communication Review (CCR), vol. 44, no. 3, pp. 6-13, Jul 2014. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2014/drop",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2014-imc-complex",
+    "name":"Inferring Complex AS Relationships",
+    "filename":"sources/dataset/2014-imc-complex___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper Inferring Complex AS Relationships V. Giotsas, M. Luckie, B. Huffaker, and k. claffy in: Internet Measurement Conference (IMC), Nov 2014, pp. 23--30. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2014/inferring_complex_as_relationships",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2014-pam-asrank-2ndlook",
+    "name":"2014-PAM-ASRANK-2NDLOOK",
+    "filename":"sources/dataset/2014-pam-asrank-2ndlook___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains ISI hitlist information. Unpublished data supplement for   M. Luckie and k. claffy   \"A Second Look at Detecting Third-Party Addresses in Traceroute Traces with the IP Timestamp Option\"   in Passive and Active Network Measurement Workshop (PAM), Mar 2014, vol. 8362, pp. 46--55. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2014/second_look_detecting_addresses"
+       }
+   ]
+  },
+  {
+    "id":"2015-imc-blind",
+    "name":"2015-IMC-BLIND",
+    "filename":"sources/dataset/2015-imc-blind___caida.json",
+    "organization":"CAIDA",
+    "description":"Unpublished data supplement for paper \"Resilience of Deployed TCP to Blind Attacks\" Luckie et al., IMC 2015, Oct 28-30, Tokyo, JP ",
+    "status":"snapshot",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2015/resilience_deployed_tcp_blind",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2015-pam-asrank6",
+    "name":"PAM 2015 IPv6 AS rank IPv6",
+    "filename":"sources/dataset/2015-pam-asrank6___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper IPv6 AS Relationships, Clique, and Congruence V. Giotsas, M. Luckie, B. Huffaker, and k. claffy in: Proc. PAM, Lecture Notes in Computer Science, Volume 8995, 2015, pp 111-122 ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2015/ipv6_as_relationships",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2017-imc-rsdos-targets",
+    "name":"CAIDA Randomly and Uniformly Spoofed Denial-of-Service Attack Metadata",
+    "filename":"sources/dataset/2017-imc-rsdos-targets___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper \"Millions of Targets Under Attack: a Macroscopic Characterization of the DoS Ecosystem\" M. Jonker, A. King, J. Krupp, C. Rossow, A. Sperotto, and A. Dainotti, Internet Measurement Conference (IMC), Nov 2017.  It contains information about the DoS activity seen in the UCSD Network Telescope. ",
+    "status":"snapshot",
+    "tags":["caida", "dos", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/rsdos-targets/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2017-sigcomm-router-outages",
+    "name":"Paper: SIGCOMM 2017 Router Outages",
+    "filename":"sources/dataset/2017-sigcomm-router-outages___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper The Impact of router outages on the AS-level Internet M. Luckie, R. Beverly in: Proc. Sigcomm 2017, pp. 488-501 ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2017/impact_router_outages_as",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2018-pam-youtube-load-balancing",
+    "name":"PAM 2018 YouTube load-balancing behavior",
+    "filename":"sources/dataset/2018-pam-youtube-load-balancing___caida.json",
+    "organization":"CAIDA",
+    "description":"Data supplement for paper Revealing the Load-balancing Behavior of YouTube Traffic on Interdomain Links V. Bajpai, R. Mok, A. Dhamdhere, and k. claffy in Passive and Active Measurement Conference (PAM), Mar 2018. ",
+    "status":"snapshot",
+    "tags":["caida", "congestion", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2018/revealing_load_balancing_behavior",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"2020-unintended-consequences",
+    "name":"PAM 2020 Unintended consequences",
+    "filename":"sources/dataset/2020-unintended-consequences___caida.json",
+    "organization":"Series([], )",
+    "description":"Data supplement for paper Unintended consequences: Effects of submarine cable deployment on Internet routing R. Fanou, B. Huffaker, R. Mok, and k. claffy in Passive and Active Measurement Conference (PAM), Mar 2020. ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2020/unintended_consequences/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"aol-500k-users",
+    "name":"AOL 500k User Session",
+    "filename":"sources/dataset/aol-500k-users___caida.json",
+    "organization":"Series([], )",
+    "description":"This a local copy CAIDA downloaded of the AOL 500k User Session dataset that AOL research put on their website for a very short period of time. This copy was downloaded from a site that mirrored the data. Data integrity was verified with an md5 checksum from various independent sources. (Emile Aben, August 2006) ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"ark-iff-20140416",
+    "name":"Midar run ???",
+    "filename":"sources/dataset/ark-iff-20140416___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ??? ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"ark-ipv4-aslinks",
+    "name":"Ark IPv4 Routed /24 AS Links",
+    "filename":"sources/dataset/ark-ipv4-aslinks___caida.json",
+    "organization":"CAIDA",
+    "description":"Data from the IPv4 Routed /24 Topology Dataset are processed by using RouteViews BGP data to identify the Autonomous System (AS) associated with each responding IP address and collapsing the original probed IP paths into a set of links between ASes. ",
+    "status":"complete",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_routed_topology_aslinks_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv4-dns-names",
+    "name":"Ark IPv4 Routed /24 DNS Names",
+    "filename":"sources/dataset/ark-ipv4-dns-names___caida.json",
+    "organization":"CAIDA",
+    "description":"The IPv4 Routed /24 DNS Names Dataset provides fully-qualified domain names for IP addresses seen in the traces of the IPv4 Routed /24 Topology Dataset ",
+    "status":"ongoing",
+    "tags":["DNS", "ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv4-dns-traffic",
+    "name":"Ark DNS traffic measurements",
+    "filename":"sources/dataset/ark-ipv4-dns-traffic___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains quarterly samples of the DNS query and response traffic resulting from the DNS lookups. No longer ongoing; last data are from April 2014. ",
+    "status":"complete",
+    "tags":["DNS", "ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv4-prefix-probing",
+    "name":"Ark IPv4 prefix-probing data",
+    "filename":"sources/dataset/ark-ipv4-prefix-probing___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset results from traceroute-based measurements running on the Archipelago (Ark) measurement infrastructure. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv4-tnt",
+    "name":"IPv4 TNT MPLS Topology",
+    "filename":"sources/dataset/ark-ipv4-tnt___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset results from traceroute-based measurements running on the Archipelago (Ark) measurement infrastructure. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_tnt_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv4-traceroute",
+    "name":"Ark IPv4 Routed /24 Topology",
+    "filename":"sources/dataset/ark-ipv4-traceroute___caida.json",
+    "organization":"CAIDA",
+    "description":"These are all the Ark IPv4 team-probing data, collected by a globally distributed set of Archipelago (Ark) monitors. IPv4 Routed /24 Topology dataset. It contains information useful for studying the IP and AS topology of the IPv4 Internet. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv6-aslinks",
+    "name":"Ark IPv6 Topology AS Links",
+    "filename":"sources/dataset/ark-ipv6-aslinks___caida.json",
+    "organization":"CAIDA",
+    "description":"Data from the IPv6 Topology Dataset are processed by using RouteViews BGP data to identify the Autonomous System (AS) associated with each responding IP address and collapsing the original probed IP paths into a set of links between ASes. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv6_aslinks_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv6-dns-names",
+    "name":"Ark IPv6 Topology DNS Names",
+    "filename":"sources/dataset/ark-ipv6-dns-names___caida.json",
+    "organization":"CAIDA",
+    "description":"The IPv6 DNS Names Dataset provides fully-qualified domain names for IP addresses seen in the traces of the IPv6 Topology Dataset ",
+    "status":"ongoing",
+    "tags":["DNS", "ark", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv6-routed48",
+    "name":"Ark IPv6 Routed /48 Topology",
+    "filename":"sources/dataset/ark-ipv6-routed48___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset contains information useful for studying the IP- and AS-topology of the IPv6 Internet. The goal of these measurements is to discover how much subnetting exists in IPv6 prefixes announced in BGP. ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv6_routed_48_topology_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-ipv6-traceroute",
+    "name":"Ark IPv6 Topology",
+    "filename":"sources/dataset/ark-ipv6-traceroute___caida.json",
+    "organization":"CAIDA",
+    "description":"These are all the Ark IPv6 probing data, collected by a globally distributed set of IPv6-enabled Archipelago (Ark) monitors. These data contain information useful for studying the IP and AS topology of the IPv6 Internet. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-itdk",
+    "name":"Ark IPv4 ITDKs",
+    "filename":"sources/dataset/ark-itdk___caida.json",
+    "organization":"CAIDA",
+    "description":"Ark-based Internet Topology Data Kits ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/internet-topology-data-kit",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ark-midar-20110414",
+    "name":"Midar run 2011-04-14",
+    "filename":"sources/dataset/ark-midar-20110414___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"ark-midar-20110418",
+    "name":"Midar run 2011-04-18",
+    "filename":"sources/dataset/ark-midar-20110418___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20110418-analysis",
+    "name":"Midar run 2011-04-18 (analysis)",
+    "filename":"sources/dataset/ark-midar-20110418-analysis___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run 2011-04-18 (analysis) ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20111024",
+    "name":"Midar run 2011-10-24",
+    "filename":"sources/dataset/ark-midar-20111024___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20120723",
+    "name":"Midar run 2012-07-23",
+    "filename":"sources/dataset/ark-midar-20120723___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20130422",
+    "name":"Midar run 2013-04-22",
+    "filename":"sources/dataset/ark-midar-20130422___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20130724",
+    "name":"Midar run 2013-07-24",
+    "filename":"sources/dataset/ark-midar-20130724___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20140421",
+    "name":"Midar run 2014-04-21",
+    "filename":"sources/dataset/ark-midar-20140421___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20141203",
+    "name":"Midar run 2014-12-03",
+    "filename":"sources/dataset/ark-midar-20141203___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar runs ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20150831",
+    "name":"Midar run 2015-08-31",
+    "filename":"sources/dataset/ark-midar-20150831___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20160329",
+    "name":"Midar run 2016-03-29",
+    "filename":"sources/dataset/ark-midar-20160329___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20160920",
+    "name":"Midar run 2016-09-20",
+    "filename":"sources/dataset/ark-midar-20160920___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20170207",
+    "name":"Midar run 2017-02-07",
+    "filename":"sources/dataset/ark-midar-20170207___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20170828",
+    "name":"Midar run 2017-08-28",
+    "filename":"sources/dataset/ark-midar-20170828___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run 2017-08-28 ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-midar-20180301",
+    "name":"Midar run 2018-03-01",
+    "filename":"sources/dataset/ark-midar-20180301___caida.json",
+    "organization":"CAIDA",
+    "description":"Midar run 2018-01-01 ",
+    "status":"snapshot",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"ark-monitor-cfg",
+    "name":"Config files from all Ark nodes",
+    "filename":"sources/dataset/ark-monitor-cfg___caida.json",
+    "organization":"CAIDA",
+    "description":"Ark node configuration info collected by ark-monitor-cfg.sh YYYYMMDD.fstab.gz YYYYMMDD.hosts.allow.gz YYYYMMDD.txt.gz YYYYMMDD.interfaces.txt.gz YYYYMMDD.netstat.txt.gz YYYYMMDD.ntp.txt.gz YYYYMMDD.resolv.conf.gz YYYYMMDD.ssh_host_key.gz YYYYMMDD.ssh_host_key.pub.gz ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"as-classification",
+    "name":"AS Classification",
+    "filename":"sources/dataset/as-classification___caida.json",
+    "organization":"CAIDA",
+    "status":"ongoing",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-classification",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-facilities-map",
+    "name":"AS facilities mapping",
+    "filename":"sources/dataset/as-facilities-map___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset created in April 2017 contains information about geographic locations of interconnection facilities, and autonomous systems (ASes) that have peering interconnections at those facilities. We describe the methodology of mapping peering interconnections to interconnection facilities (and in some cases to Internet eXchange points - IXPs). [an earlier version of this dataset (10.23721/107/1364448) was withdrawn from Impact] ",
+    "status":"complete",
+    "tags":["caida", "infrastructure", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-facilities",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-organizations",
+    "name":"AS to organizations mappings",
+    "filename":"sources/dataset/as-organizations___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains AS to organization mappings derived from the quarterly WHOIS dumps ",
+    "status":"ongoing",
+    "tags":["caida", "infrastructure", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-organizations",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-rank-disk",
+    "name":"AS Rank Database Input",
+    "filename":"sources/dataset/as-rank-disk___caida.json",
+    "organization":"CAIDA",
+    "description":"AS Rank database input files   ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"as-rank-online",
+    "name":"AS Rank",
+    "filename":"sources/dataset/as-rank-online___caida.json",
+    "organization":"CAIDA\n CAIDA",
+    "description":"The logs in /www/logs/old (from the old as-rank server ra) where integrated with the monthly as-rank logs on athena on 2010/08/05. So the bulk logs are no longer needed.  /www/logs/old/as-rank-80.access.log:16/Jul/2008 05/Jan/2010 covers 16/Jul/2008 05/Jan/2010.  All logs got erased 2018/01 when the AS rank server was migrated from FreeBSD to Ubuntu. Only 2018/01 and later remains. ",
+    "status":"ongoing\n ongoing",
+    "tags":["ark", "caida", "tool", "topology\n topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://as-rank.caida.org",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-rank-ribs",
+    "name":"AS Relationships RIBs",
+    "filename":"sources/dataset/as-rank-ribs___caida.json",
+    "organization":"third party",
+    "description":"RIB files from RV/RIS originally used by Matthew for as-rank paper RIB files are downloaded from a list of BGP collectors. ",
+    "status":"ongoing",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"as-relationships-201206-201311",
+    "name":"AS Relationships (2012/06-2013-11)",
+    "filename":"sources/dataset/as-relationships-201206-201311___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains the public as-relationships data as it was offered on https://as-rank.caida.org/data from 6 September 2012 until 5 November 2013.  This fileset contains AS links annotated with inferred relationships (provider-customer, peer-to-peer, sibling-to-sibling). Each file contains a full AS graph derived from a set of RouteViews BGP table snapshots.  The as_relationships dataset is a single file.  Also see: as-relationships-pre-201206 as-relationships-serial-1 as-relationships-serial-2 ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"as-relationships-geo",
+    "name":"AS Relationships with geographic annotations",
+    "filename":"sources/dataset/as-relationships-geo___caida.json",
+    "organization":"CAIDA",
+    "description":"This fileset contains an annotated version of AS relationships dataset that estimates the geographic location of links between pairs of networks. Served online as the public \"AS Relationships with geographic annontations\"  ",
+    "status":"snapshot",
+    "tags":["caida", "geolocation", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-relationships-geo/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-relationships-pre-201206",
+    "name":"AS Relationships (pre-2012-06)",
+    "filename":"sources/dataset/as-relationships-pre-201206___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains the public as-relationships data as it was offered on https://as-rank.caida.org/data until 6 September 2012.  This fileset contains AS links annotated with inferred relationships (provider-customer, peer-to-peer, sibling-to-sibling). Each file contains a full AS graph derived from a set of RouteViews BGP table snapshots.  The dataset is organized in annual directories: /data/YYYY/as-rel.YYYYMMDD.a0.01000.txt  Also see: as-relationships-201206-201311 as-relationships-serial-1 as-relationships-serial-2 ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"as-relationships-serial-1",
+    "name":"AS Relationships (serial-1)",
+    "filename":"sources/dataset/as-relationships-serial-1___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains AS links annotated with inferred relationships. Each file contains a full AS graph derived from a set of RouteViews BGP table snapshots. Served online in the public AS Relationships dataset. Online since 5 November 2013.  Also see: as-relationships-as-relationships-pre-201206 as-relationships-as-relationships-201206-201311 as-relationships-as-relationships-serial2 ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-relationships",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"as-relationships-serial-2",
+    "name":"AS Relationships (serial-2)",
+    "filename":"sources/dataset/as-relationships-serial-2___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains AS links annotated with inferred relationships. Each file contains a full AS graph derived from a set of RouteViews BGP table snapshots, 5-days of Ark traceroutes, and multilateral peering. Served online in the public AS Relationships dataset. ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/as-relationships",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"asymmetry-test",
+    "name":"ASYMMETRY-TEST",
+    "filename":"sources/dataset/asymmetry-test___caida.json",
+    "organization":"Series([], )",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"backscatter-2001-non-anon",
+    "name":"backscatter 2001 non anon",
+    "filename":"sources/dataset/backscatter-2001-non-anon___caida.json",
+    "organization":"CAIDA",
+    "description":"The original backscatter dataset used to study spoofed-source denial-of-service attacks. Deprecated by the backscatter-tocs dataset, which provides this data and data from the subsequent two years with the destination IP addresses zeroed out. i ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"backscatter-raw",
+    "name":"Original backscatter traces",
+    "filename":"sources/dataset/backscatter-raw___caida.json",
+    "organization":"CAIDA",
+    "description":"Original UCSD Telescope traces for online backscatter datasets: Week-long collections of responses to spoofed traffic sent by denial-of-service attack victims and received by the UCSD Network Telescope between Feb 2008 and Nov 2008. One week per quarter is included in this dataset. Also includes backscatter during DITL-2008.  These files are also stored at NERSC, so they are not archived to irori. ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"backscatter-tocs-originals",
+    "name":"Backscatter datasets for TOCS paper",
+    "filename":"sources/dataset/backscatter-tocs-originals___caida.json",
+    "organization":"CAIDA",
+    "description":"Responses to spoofed traffic sent by denial-of-service attack victims and received by the UCSD Network Telescope between January 2001 and February 2004. This dataset was used for the creation of the Transactions on Computer Science journal paper \"Inferring Internet Denial-of-Service Activity.\" ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2006/backscatter_dos",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"bdk",
+    "name":"BDK",
+    "filename":"sources/dataset/bdk___caida.json",
+    "organization":"CAIDA",
+    "status":"complete",
+    "tags":["caida", "tbd"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"bdrmap",
+    "name":"Border mapping dataset",
+    "filename":"sources/dataset/bdrmap___caida.json",
+    "organization":"CAIDA",
+    "description":"Border routers owned by the network hosting Ark VPs with the connected neighbor routers ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/bdrmap_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"bgp-communities",
+    "name":"BGP Community Dictionary Dataset",
+    "filename":"sources/dataset/bgp-communities___caida.json",
+    "organization":"CAIDA",
+    "description":"Provides information about geographical locations encoded in BGP Community attributes. Focuses on Location-Encoding Ingress Communities which label the location where the prefix entered the network.  Geolocation information encoded by network operators into the Community attributes they set up for their networks is extracted.  This information then can be used as a crowd-sourcing mechanism to acquire accurate location information for occurring BGP IPv4 updates. ",
+    "status":"snapshot",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/bgp-communities",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"bgpstream",
+    "name":"bgpstream.caida.org",
+    "filename":"sources/dataset/bgpstream___caida.json",
+    "organization":"CAIDA",
+    "description":"BGPStream is the open-source software framework for live and historical BGP data analysis.  The anchor file was set up to process the BGPStream weblogs. ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://bgpstream.caida.org/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"bogon-cymru-dumps",
+    "name":"Bogon files from Cymru",
+    "filename":"sources/dataset/bogon-cymru-dumps___caida.json",
+    "organization":"third party",
+    "description":"Daily download of bogon files (plain text) from Cymru: https://www.team-cymru.org/Services/Bogons/http.html ",
+    "status":"ongoing",
+    "tags":["census"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/bogons/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"caidaspy",
+    "name":"CAIDASPY",
+    "filename":"sources/dataset/caidaspy___caida.json",
+    "organization":"Series([], )",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"comcast-ping",
+    "name":"COMCAST-PING",
+    "filename":"sources/dataset/comcast-ping___caida.json",
+    "organization":"CAIDA",
+    "description":"Backup of parts of Amoghs congestion project. The primary copy of the congestion data is in beamer:/project/comcast-ping. Three subdirectories are backed up to nabu: tsp-indir, TSP and influxdb. (tsp-indir now is congestion-tsp; in TSP all bdrmap.warts files are excluded) ",
+    "status":"complete",
+    "tags":["caida", "performance"],
+    "licenses":["license:BSD-4-Clause-UC"]
+  },
+  {
+    "id":"complete-dns-lookups",
+    "name":"DNS lookups",
+    "filename":"sources/dataset/complete-dns-lookups___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset contains PTR and SOA DNS lookups of every routed IPv4 address.  We use our own parallel DNS query tool (qr) to perform the DNS lookups from a single host at CAIDA over a period of 3-4 weeks. ",
+    "status":"ongoing",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/complete_dns_lookups_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"congestion-bdr",
+    "name":"Congestion bordermap data",
+    "filename":"sources/dataset/congestion-bdr___caida.json",
+    "organization":"CAIDA",
+    "description":"Border map measurement data from congestion project (only warts files; log files not included) ",
+    "status":"ongoing",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-link",
+    "name":"Congestion link data",
+    "filename":"sources/dataset/congestion-link___caida.json",
+    "organization":"CAIDA",
+    "description":"Results of link discovery for target list creation from bordermap data. ",
+    "status":"ongoing",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-loss",
+    "name":"Congestion loss data",
+    "filename":"sources/dataset/congestion-loss___caida.json",
+    "organization":"CAIDA",
+    "description":"Loss measurement data from congestion project ",
+    "status":"ongoing",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-targets",
+    "name":"Congestion targets data",
+    "filename":"sources/dataset/congestion-targets___caida.json",
+    "organization":"Series([], )",
+    "description":"Targets data from congestion project ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2013",
+    "name":"Congestion TSP data for 2013",
+    "filename":"sources/dataset/congestion-tsp-2013___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2014",
+    "name":"Congestion TSP data for 2014 (.out.gz files only)",
+    "filename":"sources/dataset/congestion-tsp-2014___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2015",
+    "name":"Congestion TSP data for 2015 (.out.gz files only)",
+    "filename":"sources/dataset/congestion-tsp-2015___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2016",
+    "name":"Congestion TSP data for 2016 (.out.gz files only)",
+    "filename":"sources/dataset/congestion-tsp-2016___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"congestion-tsp-2017",
+    "name":"Congestion TSP data for 2017 (.out.gz files only)",
+    "filename":"sources/dataset/congestion-tsp-2017___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2018",
+    "name":"Congestion TSP data for 2018 (.out.gz files only)",
+    "filename":"sources/dataset/congestion-tsp-2018___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2019",
+    "name":"Congestion TSP data for 2019",
+    "filename":"sources/dataset/congestion-tsp-2019___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2020",
+    "name":"Congestion TSP data",
+    "filename":"sources/dataset/congestion-tsp-2020___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"complete",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"congestion-tsp-2021",
+    "name":"Congestion TSP data",
+    "filename":"sources/dataset/congestion-tsp-2021___caida.json",
+    "organization":"CAIDA",
+    "description":"TSP measurement data from congestion project ",
+    "status":"ongoing",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"corsaro-dos",
+    "name":"UCSD Telescope Corsaro dos data",
+    "filename":"sources/dataset/corsaro-dos___caida.json",
+    "organization":"CAIDA",
+    "description":"Archival aggregated rsdos data in Corsaro format. ",
+    "status":"ongoing",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"corsaro-flowtuple",
+    "name":"UCSD Telescope Corsaro flowtuples",
+    "filename":"sources/dataset/corsaro-flowtuple___caida.json",
+    "organization":"CAIDA",
+    "description":"Archival aggregated flowtuple Telescope data in Corsaro format ",
+    "status":"ongoing",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"corsaro-patch-tuesday",
+    "name":"Corsaro Patch Tuesday",
+    "filename":"sources/dataset/corsaro-patch-tuesday___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset contains data from darkspace observations in the first six months of 2012.  The data has been preprocessed (aggregated) with the Corsaro Software Suite,  and is split into files that each contain one hour of data.  ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-patch-tuesday_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"dataadm",
+    "name":"Meta data related to dataadm tasks",
+    "filename":"sources/dataset/dataadm___caida.json",
+    "organization":"Series([], )",
+    "description":"Data-admin files ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"datcat-oracle-dump",
+    "name":"DATCAT-ORACLE-DUMP",
+    "filename":"sources/dataset/datcat-oracle-dump___caida.json",
+    "organization":"Series([], )",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ddos-attack-2007",
+    "name":"DDoS 2007 attack",
+    "filename":"sources/dataset/ddos-attack-2007___caida.json",
+    "organization":"CAIDA",
+    "description":"1hr of traffic from a DDoS attack on 2007/08/04 20:50:08-21:56:16 UTC.  This type of denial-of-service attack attempts to block access to the targeted server by consuming computing resources on the server and by consuming all of the bandwidth of the network connecting the server to the Internet. Only attack traffic to the victim and responses to the attack from the victim are included in the traces. Non-attack traffic has as much as possible been removed. IP addresses are anonymized. ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/ddos-20070804_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ddos-attack-2007-raw",
+    "name":"DDOS-ATTACK-2007-RAW",
+    "filename":"sources/dataset/ddos-attack-2007-raw___caida.json",
+    "organization":"CAIDA",
+    "description":"Includes the original traces for the restricted \"DDoS Attack 2007\" dataset ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dhs-imam-ipv4-transfers",
+    "name":"DHS-IMAM-IPV4-TRANSFERS",
+    "filename":"sources/dataset/dhs-imam-ipv4-transfers___caida.json",
+    "organization":"CAIDA",
+    "description":"Unpublished data deliverable for DHS-IMAM proposal Also: cvs/Proposals/2015/dhs-imam-tasks/deliverables/inferIPv4transfersinBGP/data ",
+    "status":"complete",
+    "tags":["NaN", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dns-chile-daily-traces",
+    "name":"DNS-CHILE-DAILY-TRACES",
+    "filename":"sources/dataset/dns-chile-daily-traces___caida.json",
+    "organization":"third party",
+    "description":"The data in this directory is DNS data on nic.cl provided by Sebastian Castro Avila <secastro@caida.org> / <sebastian@nic.cl> The AUP of the data is still to be determined by nic.cl emile 2007-02-28 ",
+    "status":"complete",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dns-root-gtld-rtt",
+    "name":"DNS root/gTLD RTT data",
+    "filename":"sources/dataset/dns-root-gtld-rtt___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains DNS roundtrip time (RTT) information useful for studying conditions within the global Internet, and the way it has changed over the last few years.  Served online as the public dns-root-gtld-rtt dataset. (was restricted before 2014-03-02). ",
+    "status":"complete",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/dns_root_gtld_rtt_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"dnsstat",
+    "name":"DNSSTAT",
+    "filename":"sources/dataset/dnsstat___caida.json",
+    "organization":"CAIDA",
+    "description":"Corrupt file a-root.2002-08-29.dnsstat.gz ",
+    "status":"snapshot",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"fcc-mba",
+    "name":"Measuring Broadband America",
+    "filename":"sources/dataset/fcc-mba___caida.json",
+    "organization":"third party",
+    "description":"Downloaded from https://www.fcc.gov/reports-research/reports/measuring-broadband-america/raw-data-measuring-broadband-america-2015 https://www.fcc.gov/reports-research/reports/measuring-broadband-america/raw-data-measuring-broadband-america-2016 Description on those websites   The FCC initiated its Measuring Broadband America (MBA) program in 2010 and   has since then provided periodic reports on a sample set of consumers served   by Internet Service Providers (ISPs) who serve approximately eighty-five   percent of broadband consumers in the United States. In consultation with   the program stakeholders, the FCC has agreed to base each MBA report upon a   single reference month. The definition of a reference month allows all   participants to be compared across the same time frame. Reference months are   extensively audited for data integrity to help achieve a high level of   accuracy in reports and the data set for the reference month associated with   each report is released with the report. The FCC only uses data gathered in   agreed-upon reference months and audited according to the established   methodologies in the comparative analysis of ISPs included in its reports. ",
+    "status":"complete",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"gadm",
+    "name":"Global Adminstrative Areas",
+    "filename":"sources/dataset/gadm___caida.json",
+    "organization":"third party",
+    "description":"Downloaded from www.gadm.org?? ",
+    "status":"snapshot",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"gatech-botnet",
+    "name":"GATECH-BOTNET",
+    "filename":"sources/dataset/gatech-botnet___caida.json",
+    "organization":"third party",
+    "description":"Downloaded from GaTech following Predict request ",
+    "status":"complete",
+    "tags":["security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"geographic",
+    "name":"Geographic Info",
+    "filename":"sources/dataset/geographic___caida.json",
+    "organization":"CAIDA",
+    "description":"Currently there are two datafiles: countries.jsonl and airports.jsonl They combine information from the wikipedia and geonames. They were created using scripts from https://github.com/CAIDA/geo-tools. ",
+    "status":"ongoing",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"geoloc-ping",
+    "name":"GEOLOC-PING",
+    "filename":"sources/dataset/geoloc-ping___caida.json",
+    "organization":"CAIDA",
+    "description":"Geoloc-ping runs ",
+    "status":"snapshot",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"geoloc-ping-20140530",
+    "name":"GEOLOC-PING-20140530",
+    "filename":"sources/dataset/geoloc-ping-20140530___caida.json",
+    "organization":"CAIDA",
+    "description":"Geoloc-ping runs ",
+    "status":"snapshot",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"geolocated-router",
+    "name":"Geolocated Router Dataset",
+    "filename":"sources/dataset/geolocated-router___caida.json",
+    "organization":"CAIDA",
+    "description":"A collection of router interface IP addresses geolocated to the city level. 11,857 IP addressed geolocated based on DNS names and 4,838 IP addresses geolocated based on RTT proximity to RIPE Atlas probes. The DNS-based data was created on May 15, 2016. The RTT-proximity data was created from measurements collected on May 25, 2016. The total number of addresses in the dataset is 16586 (109 addresses found to be common between the two sources of data with very similar locations).  Data supplement for paper M. Gharaibeh, A. Shah, B. Huffaker, H. Zhang, R. Ensafi, and C. Papadopoulos, A Look at Router Geolocation in Public and Commercial Databases, Proc. Internet Measurement Conference (IMC), Nov 2017. ",
+    "status":"snapshot",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2017/router_geolocation",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"geonames",
+    "name":"Geonames",
+    "filename":"sources/dataset/geonames___caida.json",
+    "organization":"third party",
+    "description":"Geonames files downloaded from https://download.geonames.org/export/dump/ ",
+    "status":"ongoing",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"gt-bgp",
+    "name":"GT-BGP",
+    "filename":"sources/dataset/gt-bgp___caida.json",
+    "organization":"third party",
+    "status":"snapshot",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"hostip",
+    "name":"HOSTIP",
+    "filename":"sources/dataset/hostip___caida.json",
+    "organization":"third party",
+    "status":"complete",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"icann-czds",
+    "name":"Zone files from ICANN CZDS",
+    "filename":"sources/dataset/icann-czds___caida.json",
+    "organization":"third party",
+    "description":"Dumps of Zone files files from ICANN Centralized Zone Data Service https://czds.icann.org/ Done daily since Apr 2019 for download to nabu (IP address: 192.172.226.24). ",
+    "status":"ongoing",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"internetcensus2012",
+    "name":"INTERNETCENSUS2012",
+    "filename":"sources/dataset/internetcensus2012___caida.json",
+    "organization":"third party",
+    "status":"complete",
+    "tags":["census"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ipv4-2013-census",
+    "name":"IPv4 2013 Census Dataset",
+    "filename":"sources/dataset/ipv4-2013-census___caida.json",
+    "organization":"CAIDA",
+    "description":"List of IPv4 /24 address blocks labeled with their origin AS and inferred utilization mode. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/ipv4_2013_census_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"ipv6-collection-200801",
+    "name":"IPv6 Topology Collection 200801",
+    "filename":"sources/dataset/ipv6-collection-200801___caida.json",
+    "organization":"CAIDA",
+    "description":"IPv6 topology data collected at various dates using the tool scamper. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/how-to/scamper/ipv6-collection-200801",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"isc-domain-survey",
+    "name":"ISC-DOMAIN-SURVEY",
+    "filename":"sources/dataset/isc-domain-survey___caida.json",
+    "organization":"third party",
+    "description":"Two corrupt files in this dataset    2002/Q2/data/arpa.gz    2002/Q2/data/jp.gz ",
+    "status":"complete",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"isi-lander",
+    "name":"ISI-LANDER",
+    "filename":"sources/dataset/isi-lander___caida.json",
+    "organization":"third party",
+    "status":"ongoing",
+    "tags":["census"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"ixps",
+    "name":"Internet eXchange Points Dataset",
+    "filename":"sources/dataset/ixps___caida.json",
+    "organization":"CAIDA",
+    "description":"Provides information about IXPs and their geographic locations, facilities, prefixes, and member ASes. Derived by combining information from PeeringDB, Hurricane Electric, Packet Clearning House, Wikipedia, BGP Looking Glass, and GeoNames  ",
+    "status":"ongoing",
+    "tags":["caida", "infrastructure"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/ixps",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"kleinberg-wikipedia",
+    "name":"KLEINBERG-WIKIPEDIA",
+    "filename":"sources/dataset/kleinberg-wikipedia___caida.json",
+    "organization":"Series([], )",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"logs-ms08-067",
+    "name":"LOGS-MS08-067",
+    "filename":"sources/dataset/logs-ms08-067___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains Conficker logs from Andre and Rick (?) Contains a corrupt gzipped file: andre-logs/server1/access.log.19-01-09.gz ",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"maxmind-geolite-dumps",
+    "name":"MAXMIND-GEOLITE-DUMPS",
+    "filename":"sources/dataset/maxmind-geolite-dumps___caida.json",
+    "organization":"third party",
+    "description":"Historic archive of MaxMind Geolite db files. Files on MaxMind site are checked monthly for changes ",
+    "status":"ongoing",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"natural-earth",
+    "name":"Natural Earth data",
+    "filename":"sources/dataset/natural-earth___caida.json",
+    "organization":"third party",
+    "description":"Downloaded from www.naturalearthdata.com ?? ",
+    "status":"snapshot",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"netacuity-dumps",
+    "name":"NETACUITY-DUMPS",
+    "filename":"sources/dataset/netacuity-dumps___caida.json",
+    "organization":"third party",
+    "description":"Historic archive of Netacuity db files. Files on Netacuity site are checked daily for changes. Files in the Edge-processed subdirectory, and the file country_codes.csv are used in IODA processing. The group for these files needs to be set to d-netacq, with world read-permission switched off. ",
+    "status":"ongoing",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"netflow-sdsc",
+    "name":"NETFLOW-SDSC",
+    "filename":"sources/dataset/netflow-sdsc___caida.json",
+    "organization":"CAIDA",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"open-resolver-survey-200710",
+    "name":"OPEN-RESOLVER-SURVEY-200710",
+    "filename":"sources/dataset/open-resolver-survey-200710___caida.json",
+    "organization":"CAIDA",
+    "description":"pcap and database dumps for open resolver survey 200710 ",
+    "status":"snapshot",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2007-dag",
+    "name":"Unanonymized Internet Traces 2007",
+    "filename":"sources/dataset/passive-2007-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized 50-hour packet header trace at AMPATH Intl Internet Exchange in Miami, Florida, for DITL-2007-01-09 (not anonymized). ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2007-pcap",
+    "name":"Anonymized Internet Traces 2007",
+    "filename":"sources/dataset/passive-2007-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2007 Dataset. Derived from OC12 traces on Ampath monitors. Was restricted dataset, but has been retired. The pcap files have been deleted. The original dag files are in fileset passive-2007-dag. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"passive-2008-dag",
+    "name":"Unanonymized Internet Traces 2008",
+    "filename":"sources/dataset/passive-2008-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2008 Dataset. Contains 03,04,05,06,07,08,09,10,11,12 Months 03,06,07,08,11 are archived. Months 04,05,09,10,12 are NOT archived. This includes the 20080918 San Jose dirA trace with timestamp erros. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2008-pcap",
+    "name":"Anonymized Internet Traces 2008",
+    "filename":"sources/dataset/passive-2008-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for OC192 traces on Equinix San Jose and Chicago monitors. Contains months 03,04,05,06,07,08,09,10,11,12 Months 03,06,07,08,11 are archived; months 04,05,09,10,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-20080319-00",
+    "name":"Packet headers 1st Chicago trace (2008)",
+    "filename":"sources/dataset/passive-20080319-00___caida.json",
+    "organization":"CAIDA",
+    "description":"Anonymized and unanonymized packet headers (upto transport layer, inclusive) for the first Chicago trace on 2008-03-19 00 UT (not part of passive-2008). ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"passive-20080319-19",
+    "name":"Flow files for 2nd Chicago trace",
+    "filename":"sources/dataset/passive-20080319-19___caida.json",
+    "organization":"CAIDA",
+    "description":"Flow files for the second Chicago trace on 2008-03-19 19 UT The packet headers are part of passive-2008 dataset. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2009-dag",
+    "name":"Unanonymized Internet Traces 2009",
+    "filename":"sources/dataset/passive-2009-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2009 Dataset. Contains 01,02,03,04,05,06,07,08,09,10,11,12 Months 03,04,07,10 are archived. Months 01,02,05,06,08,09,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2009-pcap",
+    "name":"Anonymized Internet Traces 2009",
+    "filename":"sources/dataset/passive-2009-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for  OC192 traces on Equinix San Jose and Chicago monitors. Contains months 01,02,03,04,05,06,07,08,09,10,11,12. Months 03,04,07,10 are archived; months 01,02,05,06,08,09,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2010-dag",
+    "name":"Unanonymized Internet Traces 2010",
+    "filename":"sources/dataset/passive-2010-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2010 Dataset. Contains 01,02,03,04,06,07,08,09,10,11,12. Months 03,04,09,10 are archived. Months 01,02,06,07,08,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2010-pcap",
+    "name":"Anonymized Internet Traces 2010",
+    "filename":"sources/dataset/passive-2010-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for for OC192 traces on Equinix San Jose and Chicago monitors. Contains months 01,02,03,04,06,07,08,09,10,11,12. Months 03,04,09,10 are archived; months 01,02,06,07,08,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2011-dag",
+    "name":"Unanonymized Internet Traces 2011",
+    "filename":"sources/dataset/passive-2011-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2011 Dataset. Contains months 01,02,03,04,05,07,08,09,10,11,12,. Months 02,04,07,12 are archived. Months 01,03,05,08,09,10,11 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"passive-2011-pcap",
+    "name":"Anonymized Internet Traces 2011",
+    "filename":"sources/dataset/passive-2011-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for OC192 traces on Equinix San Jose and Chicago monitors. Contains months 01,02,03,04,05,07,08,09,10,11,12. Months 02,04,07,12 are archived; months 01,03,05,08,09,10,11 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2012-dag",
+    "name":"Unanonymized Internet Traces 2012",
+    "filename":"sources/dataset/passive-2012-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2012 Dataset. Contains months 01,02,03,0418,0419,05,0621,07,08,09,10,11,12. Months 01,0418,09,10 are archived. Months 02,03,0419,05,0621,07,08,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2012-pcap",
+    "name":"Anonymized Internet Traces 2012",
+    "filename":"sources/dataset/passive-2012-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for OC192 traces on Equinix San Jose and Chicago monitors. Contains months 01,02,03,04,05,06,07,08,09,10,11 and 12. Months 01,04,09,10 are archived; months 02,03,05,0621,07,08,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2013-dag",
+    "name":"Unanonymized Internet Traces 2013",
+    "filename":"sources/dataset/passive-2013-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2013 Dataset. Contains months 01,02,03,0418,0425,0516,0529,06,07,08,09,10,11,12. Months 01,0529,08,10 are archived. Months 02,03,0416,0425,0516,06,07,09,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2013-pcap",
+    "name":"Anonymized Internet Traces 2013",
+    "filename":"sources/dataset/passive-2013-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2013 Dataset. Derived from OC192 traces on Equinix San Jose and Chicago monitors. Contains months 01,02,03,04,05,06,07,08,09,10,11 and 12. Months 01,05,08,10 are archived; months 02,03,04,06,07,09,11,12 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2014-dag",
+    "name":"Unanonymized Internet Traces 2014",
+    "filename":"sources/dataset/passive-2014-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2014 Dataset. Contains months 01,02,03,04,05,06,08,09,10,11,12 Months 03,06,09,12 are archive. Months 01,02,04,05,07,08,10,11 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2014-pcap",
+    "name":"Anonymized Internet Traces 2014",
+    "filename":"sources/dataset/passive-2014-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2014 Dataset. Derived from OC192 traces on Equinix San Jose and Chicago monitors. Contains months 03,06,09,12. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2015-dag",
+    "name":"Unanonymized Internet Traces 2015",
+    "filename":"sources/dataset/passive-2015-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2015 Dataset. Contains months 01,02,03,04,05,06,07,09,09,10,11,12. Months 02,05,09,12 are archived. Months 01,03,04,06,07,08,10,11 are NOT archived. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2015-pcap",
+    "name":"Anonymized Internet Traces 2015",
+    "filename":"sources/dataset/passive-2015-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2015 Dataset. Derived from OC192 traces on Equinix San Jose and Chicago monitors. Contains months 02,05,09,12. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2016-dag",
+    "name":"Unanonymized Internet Traces 2016",
+    "filename":"sources/dataset/passive-2016-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2016 Dataset Contains months 01,02,03,04. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"passive-2016-pcap",
+    "name":"Anonymized Internet Traces 2016",
+    "filename":"sources/dataset/passive-2016-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2016 Dataset. Derived from OC192 traces on Equinix San Jose and Chicago monitors. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2018-dag",
+    "name":"Unanonymized Internet Traces 2018",
+    "filename":"sources/dataset/passive-2018-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2018 Dataset Contains months 03 through 12. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2018-pcap",
+    "name":"Anonymized Internet Traces 2018",
+    "filename":"sources/dataset/passive-2018-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2018 Dataset. Derived from 10G traces on Equinix NYC monitor. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-2019-dag",
+    "name":"Unanonymized Internet Traces 2019",
+    "filename":"sources/dataset/passive-2019-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces 2019 Dataset Contains months 01-12. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-2019-pcap",
+    "name":"Anonymized Internet Traces 2019",
+    "filename":"sources/dataset/passive-2019-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces 2019 Dataset. Derived from 10G traces on Equinix NYC monitor. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-ipv6launch-dag",
+    "name":"Unanonymized Internet Traces IPv6 Day/Launch",
+    "filename":"sources/dataset/passive-ipv6launch-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized packet headers (upto transport layer, inclusive) used to create Anonymized Internet Traces on IPv6 Day and IPv6 Launch Day Dataset. Contains traces taken on IPv6 Day (2011-06-08) and IPv6 Launch (2012-06-06). ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-ipv6launch-pcap",
+    "name":"Anonymized Internet Traces IPv6 Day/Launch",
+    "filename":"sources/dataset/passive-ipv6launch-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces on IPv6 Day and IPv6 Launch Day Dataset. Contains traces taken on IPv6 Day (2011-06-08) and IPv6 Launch (2012-06-06). ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_ipv6day_and_ipv6launch_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-merged-pcap",
+    "name":"Anonymized Internet Traces April 2008 - January 2019",
+    "filename":"sources/dataset/passive-merged-pcap___caida.json",
+    "organization":"Series([], )",
+    "description":"Packet headers (upto transport layer, inclusive) for Anonymized Internet Traces Dataset. Derived from 10G traces collected from high-speed monitors on a commercial backbone links. ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-metadata",
+    "name":"Passive Metadata",
+    "filename":"sources/dataset/passive-metadata___caida.json",
+    "organization":"CAIDA",
+    "description":"Meta data for all passive monthly traces, incl. chicago and sanjose monitors. This includes the files used to generate the public trace stats. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_trace_statistics.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-oc48-dag",
+    "name":"PASSIVE-OC48-DAG",
+    "filename":"sources/dataset/passive-oc48-dag___caida.json",
+    "organization":"CAIDA",
+    "description":"Unanonymized, payload-stripped OC48 traces from PAIX and MFN peering points  PAIX                         MFN  20030507-170000.UTC          20020814-160000.UTC 20040122-220000.UTC          20030115-180000.UTC 20040317-180000.UTC          20030424-070000.UTC 20040408-023000.UTC          20030507-070000.UTC 20040422-030000.UTC 20040429-023000.UTC 20041201-220000.UTC 20041225-220000.UTC 20050113-220000.UTC 20050121-220000.UTC 20050202-220000.UTC 20050302-220000.UTC  The first three MFN traces (2002-09, 2003-01, 2003-04) are the raw data for the passive-oc48-pcap fileset (available online as public dataset, and through Impact). ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-oc48-pcap",
+    "name":"OC48 Peering Point Traces",
+    "filename":"sources/dataset/passive-oc48-pcap___caida.json",
+    "organization":"CAIDA",
+    "description":"Traces collected at MFN network on  August  14, 2002    January 15, 2003    April   24, 2003   Traces are anonymized with Cryptopan This was the restricted \"passive-oc48\" dataset  until beginning 2014. Currently this is the public \"passive-oc48\" dataset.  These used to be three separate Impact datasets (with DOIs 10.23721/107/1353517, 10.23721/107/1353518, 10.23721/107/1353519) They were merged in Jan 2018. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_oc48_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"passive-oc48-pcap-paix",
+    "name":"PASSIVE-OC48-PCAP-PAIX",
+    "filename":"sources/dataset/passive-oc48-pcap-paix___caida.json",
+    "organization":"CAIDA",
+    "description":"Anonymized OC48 trace collected at PAIX peering point on 20040225-180000.UTC. This trace contains payload. This must be the PAIX-I dataset from the paper Hyun-chul, K. et al., Internet Traffic Classification Demystified: Myths, Caveats, and the Best Practices, ACM SIGCOMM CoNEXT (2008) ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"passive-sampler",
+    "name":"Anonymized Internet Traces sampler",
+    "filename":"sources/dataset/passive-sampler___caida.json",
+    "organization":"CAIDA",
+    "description":"Passive sampler offered to researchers at commercial organizations when they request Anonymized Internet Traces. These data are part of the 2008 Anonymized Traces datasets. This fileset is only used to track downloads of the passive sampler data. ",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/passive_sampler_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"peeringdb-dumps",
+    "name":"PEERINGDB-DUMPS",
+    "filename":"sources/dataset/peeringdb-dumps___caida.json",
+    "organization":"third party",
+    "description":"MySQL dumps for Amoghs internet economics projects Version 1 upto 2016-03-14, data are online. Version 2 from 2016-05-27 to 2018-03-10   2017-10-12 to 2018-03-10 removed (duplicate of 2017-10-11)   sqlit upto 2017-10-11   json since 2018-03-11 ",
+    "status":"ongoing",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"plab-results",
+    "name":"PLAB-RESULTS",
+    "filename":"sources/dataset/plab-results___caida.json",
+    "organization":"Series([], )",
+    "description":"Results from Albertos plab program ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"radargun-201204",
+    "name":"RADARGUN-201204",
+    "filename":"sources/dataset/radargun-201204___caida.json",
+    "organization":"CAIDA",
+    "description":"Radar gun ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"ripe-atlas-dumps",
+    "name":"Ripe Atlas daily dumps",
+    "filename":"sources/dataset/ripe-atlas-dumps___caida.json",
+    "organization":"Series([], )",
+    "description":"Downloads of hourly traceroute files from Ripe Atlas repository\t ",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://data-store.ripe.net/datasets/atlas-daily-dumps/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"router-outages",
+    "name":"Raw data for Router Outages paper",
+    "filename":"sources/dataset/router-outages___caida.json",
+    "organization":"CAIDA",
+    "description":"Raw data for paper The Impact of router outages on the AS-level Internet M. Luckie, R. Beverly in: Proc. Sigcomm 2017 (there is an additional data supplement: 2017-sigcomm-router-outages) ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"routeviews-ipv4-prefix2as",
+    "name":"RouteViews IPv4 Prefix to AS mappings",
+    "filename":"sources/dataset/routeviews-ipv4-prefix2as___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains IPv4 Prefix to Autonomous System (AS) mappings derived from RouteViews data (https://www.routeviews.org). ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"routeviews-ipv4-prefix2as-coalesced",
+    "name":"RouteViews IPv4 Prefix to AS mappings - coalesced",
+    "filename":"sources/dataset/routeviews-ipv4-prefix2as-coalesced___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains IPv4 Prefix to AS mappings derived from RouteViews data. This s a coalesced version of the CAIDA pfx2as data. Files have adjacent prefixes with the AS or AS set combined, and have more specific prefixes removed if covered by a wider prefix with the same AS or AS set. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"routeviews-ipv6-prefix2as",
+    "name":"RouteViews IPv6 Prefix to AS mappings",
+    "filename":"sources/dataset/routeviews-ipv6-prefix2as___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains IPv6 Prefix to Autonomous System (AS) mappings derived from RouteViews data (https://www.routeviews.org). ",
+    "status":"ongoing",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"skitter-aslinks",
+    "name":"Skitter AS Links",
+    "filename":"sources/dataset/skitter-aslinks___caida.json",
+    "organization":"CAIDA",
+    "description":"as-links (aka. as-adjacencies) derived from skitter traces The skitter infrastructure was retired on February 8, 2008 in favor of the next generation  Archipelago (Ark)     topology measurement infrastructure. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/active/skitter_aslinks_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"skitter-itdk",
+    "name":"Skitter ITDK",
+    "filename":"sources/dataset/skitter-itdk___caida.json",
+    "organization":"CAIDA",
+    "description":"Skitter-derived Internet Topology Data Kits IDK0204, ITDK0304 and ITDK0404 IDK0204 and ITDK0304: this is the public skitter ITDK dataset. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/skitter-itdk",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"skitter-router-adjacencies",
+    "name":"Skitter Router Adjacencies",
+    "filename":"sources/dataset/skitter-router-adjacencies___caida.json",
+    "organization":"CAIDA",
+    "description":"Skitter is a tool for actively probing the Internet in order to analyze topology and performance. The skitter dataset contains forward IP paths from a source to many destinations, round trip times (RTT). The data can be used to track persistent routing changes, and to visualize network connectivity. Copy of cider:/www/wcs/live-root/www-caida-org/tools/measurement/skitter/router_topology Consists of two files: itdk0304_rlinks_directed.gz and itdk0304_rlinks_undirected.gz ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/router-adjacencies",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"skitter-traceroute",
+    "name":"Skitter traceroute dataset",
+    "filename":"sources/dataset/skitter-traceroute___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains raw traceroute measurements from skitter. Most of these data are served online as a public topology dataset. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/measurement/skitter",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"snapp-i2net",
+    "name":"SNAPP-I2NET",
+    "filename":"sources/dataset/snapp-i2net___caida.json",
+    "organization":"third party",
+    "description":"Downloaded from https://snapp2.bldc.grnoc.iu.edu/caida/ 2013-11-27 Some empty directories were deleted.   1159  1216  1217  1247  1248  1432  1483  2308  2487  2488   9210  9230  9246  9243 ",
+    "status":"complete",
+    "tags":["tbd"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"spoofer-data",
+    "name":"Spoofer data",
+    "filename":"sources/dataset/spoofer-data___caida.json",
+    "organization":"CAIDA",
+    "status":"complete",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"telegeography",
+    "name":"TELEGEOGRAPHY",
+    "filename":"sources/dataset/telegeography___caida.json",
+    "organization":"third party",
+    "description":"Files downloaded by Amogh from TeleGeography.com (?) ",
+    "status":"complete",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"telescope-anon-conficker",
+    "name":"Three days of Conficker",
+    "filename":"sources/dataset/telescope-anon-conficker___caida.json",
+    "organization":"CAIDA",
+    "description":"Data from the UCSD Network Telescope for three days between November 2008 and January 2009, exactly one month apart. The first day (21 November 2008) covers the onset of the Conficker A infection. On the second day, 21 December 2008, only Conficker A was active; and during the third and final day (21 January 2009) both Conficker A and B were active. No attempt has been made to identify or filter any packets as specifically Conficker-related. The pcap files only contain packet headers; payload has been removed. The destination network addresses have been masked by zeroing the first eight bits of the IP address. ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-3days-conficker_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-anon-twodays",
+    "name":"Two-Days-in-2008 Telescope Dataset",
+    "filename":"sources/dataset/telescope-anon-twodays___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset contains two full days of trace data from the UCSD Network Telescope: 2008-11-12 and 2008-11-19. These dates precede our detection of the Conficker A Worm on 2008-11-21. The dataset consists of 48 compressed pcap files each containing one hour of traffic observed by the UCSD Network Telescope The pcap files only contain packet headers; payload has been removed. The destination network addresses have been masked by zeroing the first eight bits of the IP address ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-2days-2008_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-backscatter",
+    "name":"UCSD Network Telescope Traffic Samples",
+    "filename":"sources/dataset/telescope-backscatter___caida.json",
+    "organization":"CAIDA",
+    "description":"Week-long collections (one week per quarter) of responses to spoofed traffic sent by DoS attack victims to the UCSD Network Telescope between 2004 and 2008. Includes backscatter during DITL-2008. ",
+    "status":"complete",
+    "tags":[" ddos", " spoofing", "caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/backscatter_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-codered-worm",
+    "name":"Code Red worm dataset",
+    "filename":"sources/dataset/telescope-codered-worm___caida.json",
+    "organization":"CAIDA",
+    "description":"Summary files for the Code Red Worm dataset ",
+    "status":"complete",
+    "tags":["caida", "security", "worm"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/codered_worms_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-daily-rsdos",
+    "name":"Aggregated Daily RSDoS Attack Metadata",
+    "filename":"sources/dataset/telescope-daily-rsdos___caida.json",
+    "organization":"CAIDA",
+    "description":"Consists of daily files of unsolicited traffic captured by  the UCSD Network Telescope traces and aggregated into the  csv format. Must be analyzed at CAIDA machines (currently thor). The entire data is at swift. ",
+    "status":"ongoing",
+    "tags":["caida", "dos", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-daily-rsdos.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-darknet-scanners",
+    "name":"Telescope Darknet Scanners",
+    "filename":"sources/dataset/telescope-darknet-scanners___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains IP addresses that conduct scans of UCSDs network telescope. We use Bro's parameters (same source IP address is used to contact 25 unique destinations on the same port/protocol) within 5 minutes. ",
+    "status":"complete",
+    "tags":["caida", "scan", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-darknet-scanners_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-educational",
+    "name":"Telescope Educational",
+    "filename":"sources/dataset/telescope-educational___caida.json",
+    "organization":"CAIDA",
+    "description":"This covers the now-public educational telescope data from April 2012, which was restricted prior to 20 May 2014). The restricted version was taken offline on 1 Jun 2014. ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-educational_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-live",
+    "name":"UCSD Real-time Network Telescope",
+    "filename":"sources/dataset/telescope-live___caida.json",
+    "organization":"CAIDA",
+    "description":"Keeps track of the live pcap telescope data available on the telescope data server (currently thor). The on-disk data cover only the nominal 60-day window we keep on disk. Files that roll out of the windo are still archived to NERSC.  To get accurate information about file counts and size (since 2013-07-01) check the history for this fileset, or the history of telescope-nersc. ",
+    "status":"ongoing",
+    "tags":["caida", "telescope", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-near-real-time_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-live-sampler",
+    "name":"Telescope Live (Near-Real-Time) Sampler",
+    "filename":"sources/dataset/telescope-live-sampler___caida.json",
+    "organization":"CAIDA",
+    "description":"Sample of near-real time telescope data. CAIDA continously captures traffic from the UCSD Network Telescope. The resulting traffic traces become available in near-real time as one-hour long compressed pcap files. A moving time window, approximately covering the most recent two months of data, are stored on spinning disk, and are available for analysis.  Was in Impact for a while, and also available as a restricted Telescope dataset. Dataset actually never physically existed, and we never gave access. ",
+    "status":"snapshot",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-near-real-time_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-nersc",
+    "name":"UCSD Telescope data at NERSC",
+    "filename":"sources/dataset/telescope-nersc___caida.json",
+    "organization":"CAIDA",
+    "description":"Keeps track of all pcap files currently archived in the NERSC HPSS tape archive from the file   telescope-nersc.history. That file contains names and compressed file sizes for all pcap files stored at NERSC. ",
+    "status":"ongoing",
+    "tags":["caida", "telescope", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"telescope-raw",
+    "name":"TELESCOPE-RAW",
+    "filename":"sources/dataset/telescope-raw___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains the raw data for the telescope \"2 days in November 2008\" and \"3 days of Conficker\" datasets ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"telescope-sipscan",
+    "name":"Telescope Sipscan dataset",
+    "filename":"sources/dataset/telescope-sipscan___caida.json",
+    "organization":"CAIDA",
+    "description":"Supplementary, public data for IMC-2012 paper Analysis of a /0 Stealth Scan from a Botnet by A. Dainotti, A. King, K. Claffy, F. Papale, and A. Pescape ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/publications/papers/2015/analysis_slash_zero/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-sipscan-fates",
+    "name":"Botnet Stealth Scan (fates@postech.ac.kr)",
+    "filename":"sources/dataset/telescope-sipscan-fates___caida.json",
+    "organization":"CAIDA",
+    "description":"Customized dataset provided to fates@postech.ac.kr in August 2012 ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"telescope-witty-worm",
+    "name":"Witty Worm dataset",
+    "filename":"sources/dataset/telescope-witty-worm___caida.json",
+    "organization":"CAIDA",
+    "description":"This dataset contains information useful for studying the spread of the Witty worm. Data were collected on the UCSD Network Telescope between Fri Mar 19 20:01:40 PST 2004 and Wed Mar 25 00:01:40 PST 2004.  The dataset is exclusively available through Impact.  Up until Feb 2014 the dataset was online in two portions, one public, one restricted. After Feb 2014 the whole Witty dataset was public until mid-2016.  The publicly available set of files contains summarized information that does not individually identify infected computers. These are the files in witty/summaries/public.  The restricted-access set of files that do contain more sensitive information, including packet traces containing complete IP and UDP headers and partial payload received from hosts spreading the Witty worm March 19-24, 2004. It also includes routing tables and summaries. These are the files in witty/data and witty/summaries/restricted/. ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope", "warm"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/witty_worm_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"telescope-worms-raw",
+    "name":"Raw worm-related telescope pcap files (Code Red, Witty)",
+    "filename":"sources/dataset/telescope-worms-raw___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains raw data for the Witty Worm and Code Red worms datasets? AFAIK these are raw telescope files that should be archived to NERSC (maybe already are?).  ",
+    "status":"complete",
+    "tags":["caida", "security", "telescope", "warm"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"timestamps",
+    "name":"TIMESTAMPS",
+    "filename":"sources/dataset/timestamps___caida.json",
+    "organization":"Series([], )",
+    "status":"Series([], )",
+    "tags":[" )", "Series([]"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"tool-arkutil",
+    "name":"Ruby Ark utilities",
+    "filename":"sources/dataset/tool-arkutil___caida.json",
+    "organization":"third party",
+    "description":"RubyGem containing utility classes used by the Archipelago measurement infrastructure and the MIDAR alias-resolution system. Only used to track downloads. ",
+    "status":"ongoing",
+    "tags":["library", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/utilities/arkutil/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"tool-bgpstream",
+    "name":"(py)bgpstream tarballs",
+    "filename":"sources/dataset/tool-bgpstream___caida.json",
+    "organization":"CAIDA",
+    "description":"BGPStream is the open-source software framework for live and historical BGP data analysis.  The anchor file was set up to process the BGPStream weblogs. The bgpstream tool is also available from CAIDAs github repository, so this only provides a lower limit on downloads. ",
+    "status":"ongoing",
+    "tags":[" tool", "caida", "data analysis", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://bgpstream.caida.org/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"tool-coralreef",
+    "name":"CoralReef tarball",
+    "filename":"sources/dataset/tool-coralreef___caida.json",
+    "organization":"CAIDA",
+    "description":"CoralReef is a comprehensive software suite developed by CAIDA to collect and analyze data from passive Internet traffic monitors, in real time or from trace files. The package includes support for standard network interfaces and specialized high performance monitoring devices, programming APIs for C and perl, and applications for capture, analysis, and web report generation. ",
+    "status":"ongoing",
+    "tags":["caida", "measurement analysis", "tool", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/measurement/coralreef",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"tool-corsaro",
+    "name":"Corsaro tarball",
+    "filename":"sources/dataset/tool-corsaro___caida.json",
+    "organization":"CAIDA",
+    "description":"Corsaro is a software suite for performing large-scale analysis of trace data. It was specifically designed to be used with passive traces captured by darknets, but the overall structure is generic enough to be used with any type of passive trace data.  ",
+    "status":"ongoing",
+    "tags":["caida", "measurement analysis", "tool", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/measurement/corsaro/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"tool-henya",
+    "name":"Henya query system",
+    "filename":"sources/dataset/tool-henya___caida.json",
+    "organization":"CAIDA",
+    "description":"Henya is CAIDA's large-scale Internet topology query system which provides remote search of traceroute data without requiring data downloads. Henya includes built-in analyses and visualizations for commonly occuring needs, and is intended to be responsive enough for interactive data exploration. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/utilities/henya",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"tool-vela",
+    "name":"Vela: On-Demand Topology Measurement Service",
+    "filename":"sources/dataset/tool-vela___caida.json",
+    "organization":"CAIDA",
+    "description":"Vela is the on-demand topology measurement service of CAIDA's Archipelago (Ark) infrastructure. ",
+    "status":"ongoing",
+    "tags":["ark", "caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/projects/ark/vela",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"topology-sampler",
+    "name":"Topology industry evaluation dataset",
+    "filename":"sources/dataset/topology-sampler___caida.json",
+    "organization":"CAIDA",
+    "description":"Topology sampler offered to researchers at commercial organizations when they request restricted Ark topology data. These data are part of the Ark data. This fileset is only used to track downloads of the topology sampler data. The dataset was taken offline in April 2014 when all Ark topology data older than 2 years were made public. ",
+    "status":"snapshot",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://data.caida.org/datasets/topology-sampler",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"topology-truth",
+    "name":"Ground truth for topology",
+    "filename":"sources/dataset/topology-truth___caida.json",
+    "organization":"third party",
+    "description":"Contains ground truth data for topology, organized by date and organization. Directories with \"dns\" in the name are from reverse dns lookups, those  without \"dns\" are dumps directly from cogent's db. ",
+    "status":"complete",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"topology-truth-orig",
+    "name":"TOPOLOGY-TRUTH-ORIG",
+    "filename":"sources/dataset/topology-truth-orig___caida.json",
+    "organization":"CAIDA",
+    "description":"Contains ground truth data for topology, organized by date and organization. Directories with \"dns\" in the name are from reverse dns lookups, those  without \"dns\" are dumps directly from cogent's db. ",
+    "status":"complete",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"ucsd-tap-20070514",
+    "name":"UCSD-TAP-20070514",
+    "filename":"sources/dataset/ucsd-tap-20070514___caida.json",
+    "organization":"CAIDA",
+    "description":"2hr unanonymized trace on all ucsd links we could monitor, contains payload,  ",
+    "status":"snapshot",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"ucsd-tap-2008ditl",
+    "name":"UCSD-TAP-2008DITL",
+    "filename":"sources/dataset/ucsd-tap-2008ditl___caida.json",
+    "organization":"CAIDA",
+    "description":"~ 2hr trace on all ucsd links we could tap, due to human error there are large gaps in this trace. non-anonymized, payload stripped ",
+    "status":"snapshot",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"whois-database-dumps",
+    "name":"Dumps of Whois db from various registries",
+    "filename":"sources/dataset/whois-database-dumps___caida.json",
+    "organization":"third party",
+    "description":"Bulk whois dumps from the five registries (AFRINIC, APNIC, ARIN, LACNIC, RIPE), allocation and delegation files. ",
+    "status":"ongoing",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"wide",
+    "name":"WIDE",
+    "filename":"sources/dataset/wide___caida.json",
+    "organization":"CAIDA",
+    "status":"complete",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  }
 ]
