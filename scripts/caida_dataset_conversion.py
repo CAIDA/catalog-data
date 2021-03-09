@@ -286,7 +286,6 @@ def print_datasets():
         else:
             type_ = "dataset"
         filename = "sources/%s/%s___caida.json" % (type_, id_)
-        print (filename)
         obj["filename"] = filename
 
         # Write the JSON object to the file.
