@@ -62,7 +62,7 @@ import os
 ############################## Global Variables ################################
 
 # File Paths:
-path_ids = "data/data_id__caida.json"
+path_ids = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
@@ -91,13 +91,13 @@ def print_datasets():
         path_2_id = json.load(id_file)
 
     # Iterate over each path and make a blank JSON file for them.
-    for path in path_2_id:
+    for blank_file in path_2_id:
         data = { 
-            "id":path_2_id[path],
-            "name":path_2_id[path].upper().replace("_", " ")
+            "id":blank_file["id"],
+            "name":blank_file["name"]
         }
 
-        with open(path, "w") as output_file:
+        with open(blank_file["file_path"], "w") as output_file:
             output_file.write(json.dumps(data, indent=4))
 
 

@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to use AS Rank to classify asns",
     "description" : "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
-    "links": [{"to":"dataset:as_relationships"},{"to":"dataset:asrank"}],
+    "links": [{"to":"dataset:as_relationships_serial_1"},{"to":"dataset:as_rank_online"}],
     "tags" : [
         "ASN",
         "as rank",

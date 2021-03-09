@@ -47,6 +47,7 @@ import json
 import sys
 import re
 import os
+import lib.utils as utils
 
 #################################### Header ####################################
 
@@ -67,6 +68,7 @@ import os
 
 # Datasets:
 id_2_object = {}
+seen_id = {} # stores the id to filename of current ids
 seen_datasets = set()
 seen_softwares = set()
 seen_urls = set()
@@ -79,7 +81,7 @@ re_dlim = re.compile(r"~~~")
 
 # File Paths:
 path = None
-path_ids = "data/data_id__caida.json"
+path_ids = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
@@ -106,65 +108,40 @@ def main(argv):
     if args.path_ids != None:
         path_ids = args.path_ids
 
-    # Keep track of all existing datasets.
-    update_seen_datasets()
-    # Keep track of all existing sofwares.
-    update_seen_softwares()
+    # store existing ids
+    add_seen_ids("sources");
+
     # Parse all .md file in the given path.
     parse_catalog_data_caida()
+
     # Print all found JSON objects to individual JSON files.
     print_datasets()
 
 ############################### Helper Methods #################################
 
-# Map all known dataset ID's to seen_datasets.
-def update_seen_datasets():
-    global seen_datasets
-    global seen_urls
+# Add each paper's ID to seen_papers from the source/paper directory.
+def add_seen_ids(source_dir):
+    global seen_ids
 
-    # Iterate over each dataset JSON and keep track of their IDs.
-    for file in os.listdir("sources/dataset"):
-        # Edge Case: Skip if file is not a .json file.
-        if not re_json.search(file):
-            continue
-        
-        # Open the file to grab the URL.
-        with open("sources/dataset/{}".format(file), "r") as curr_file:
-            curr_file = json.load(curr_file)
-            if "resources" in curr_file:
-                for resource in curr_file["resources"]:
-                    if "url" in resource:
-                        url = resource["url"]
-                        if "/active" in url:
-                            seen_urls.add(url.replace("/active", ""))
-                        seen_urls.add(url)
-
-        seen_datasets.add(file[:file.index(".")])
-
-
-# Map all known software ID's to seen_softwares.
-def update_seen_softwares():
-    global seen_softwares
-    global seen_urls
-
-    # Iterate over each software JSON and keep track of their IDs.
-    for file in os.listdir("sources/software"):
-        # Edge Case: Skip if file is not a .json file.
-        if not re_json.search(file):
-            continue
-
-        # Open the file to grab the URL.
-        with open("sources/software/{}".format(file), "r") as curr_file:
-            curr_file = json.load(curr_file)
-            if "resources" in curr_file:
-                for resource in curr_file["resources"]:
-                    if "url" in resource:
-                        url = resource["url"]
-                        if "/active" in url:
-                            seen_urls.add(url.replace("/active", ""))
-                        seen_urls.add(url)
-        
-        seen_softwares.add(file[:file.index(".")])
+    re_placeholder = re.compile(r"___")
+    for fname in sorted(os.listdir(source_dir)):
+        path = source_dir+"/"+fname
+        if os.path.isdir(path):
+            type_ = fname
+            for filename in sorted(os.listdir(path)):
+                if re.search("\.json$",filename,re.IGNORECASE):
+                    try:
+                        info = json.load(open(path+"/"+filename))
+                        info["filename"] = path+"/"+filename
+                        id = info["id"] = utils.id_create(info["filename"], type_, info["id"])
+                        if id in seen_id:
+                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                        else:
+                            seen_id[id] = filename
+                    except Exception as e:
+                        print ("\nerror",path+"/"+filename)
+                        print ("    ",e)
+                        sys.exit()
 
 
 # Parse of all .md objects in catalog-data-caida/sources.
@@ -193,70 +170,109 @@ def parse_catalog_data_caida():
 
         # Edge Case: Skip any seen softwares.
         if "tool_" in file_name and file_name[file_name.index("_") + 1 :] in seen_softwares:
+            continue
+
+        metadata = parse_metadata(file_path)
+        # not including private datasets
+        if "visibility" not in metadata or metadata["visibility"] != "private":
+            if metadata["id"] in seen_id:
+                print ("duplicate id",metadata["id"])
+                print ("    ",metadata["id"])
+                print ("    ",seen_id["id"])
                 continue
 
-        # Iterate over file and grab all the metadata.
-        with open(file_path, "r") as curr_file:
-            found_metadata = False
-            curr_metadata = ""
-            curr_line = curr_file.readline()
-            while curr_line:
-                # Base Case: Start parsing metadata once starting delim found.
-                if re_mdta.search(curr_line):
-                    found_metadata = True
-                    curr_line = curr_file.readline()
-                    continue
+            # Edge Case: Replace missing names with ID.
+            if "name" not in metadata:
+                name = metadata["id"].replace("_", " ").upper()
+                metadata["name"] = name
 
-                # Base Case: End parsing curr_file once ending delim found.
-                if re_dlim.search(curr_line) and not re_mdta.search(curr_line):
-                    # Replace Markdown Syntax to human readable.
-                    curr_metadata = curr_metadata.replace('\\"', "'")
-                    curr_metadata = json.loads(curr_metadata)
+            # Edge Case: Remove tool_ from softwares.
+            if "tool_" in metadata["id"]:
+                new_name = metadata["id"][5::]
+                metadata["id"] = new_name
 
-                    # Edge Case: Don't add objects with duplicate urls.
-                    if "resources" in curr_metadata:
-                        for resource in curr_metadata["resources"]:
-                            if "url" in resource:
-                                if resource["url"] in seen_urls:
-                                    found_metadata = False
-                                elif "{}/".format(resource["url"]) in seen_urls:
-                                    found_metadata = False
-                                else:
-                                    seen_urls.add(resource["url"]) 
-                    curr_metadata["id"] = curr_metadata["id"].replace("-", "_")
+            # Edge Case: Add CAIDA as organization if missing key.
+            if "organization" not in metadata:
+                metadata["organization"] = "CAIDA"
 
-                    # Edge Case: Replace missing names with ID.
-                    if "name" not in curr_metadata:
-                        name = curr_metadata["id"].replace("_", " ").upper()
-                        curr_metadata["name"] = name
+            # Edge Case: Add CAIDA as a tag to all datasets.
+            if "tags" not in metadata:
+                metadata["tags"] = []
+            if "CAIDA" in metadata["organization"]:
+                if "caida" not in metadata["tags"]:
+                    metadata["tags"].append("caida")
+            else:
+                # Add third party organization of tags.
+                third_party = metadata["organization"]
+                if third_party not in metadata["tags"]:
+                    metadata["tags"].append(third_party.upper())
 
-                    # Edge Case: Remove broken tags.
-                    for i in range(0, len(curr_metadata["tags"])):
-                        if " )" in curr_metadata["tags"][i]:
-                            del curr_metadata["tags"][i]
+            # Edge Case: Remove broken tags.
+            remove_indexes = set()
+            for i, value in enumerate(metadata["tags"]):
+                metadata[i] = utils.id_create(file_path,"tag", value).split(":")[1]
 
-                    # Edge Case: Remove 0 length lists from objects.
-                    remove_keys = set()
-                    for key in curr_metadata:
-                        if len(curr_metadata[key]) == 0:
-                            remove_keys.add(key)
-                    
-                    for key in remove_keys:
-                        del curr_metadata[key]
-                            
-                    break
+            # Edge Case: Remove 0 length lists from objects.
+            remove_keys = set()
+            for key in metadata:
+                if len(metadata[key]) == 0:
+                    remove_keys.add(key)
+            for key in remove_keys:
+                del metadata[key]
 
-                # Parse all data within the metadata block.
-                if found_metadata:
-                    # Don't add lines with messed up metadata.
-                    if "Series([]" not in curr_line and "NaN" not in curr_line:
-                        curr_metadata += curr_line.strip().replace("\\n", "")
+            id_2_object[metadata["id"]] = metadata
 
-                curr_line = curr_file.readline()
+re_section = re.compile("^~~~([^\n]+)")
+def parse_metadata(filename):
+    section = None
+    buffer = {}
+    content = False
+    metadata = None
+    with open(filename) as f:
+        for line in f:
+            # everything after '=== content ===' is placed inside content unprocessed
+            if content:
+                metadata["content"] += line
 
-        # Parse the curr_metadata for JSON object.
-        if found_metadata:
-            id_2_object[file_name] = curr_metadata
+            if section is not None:
+                if "~~~" == line.rstrip():
+                    if "metadata" == section:
+                        try:
+                            metadata = json.loads(buffer)
+                            metadata["filename"] = filename
+                        except json.decoder.JSONDecodeError as e:
+                            print ("json parse error in metadata",filename, e,file=sys.stderr)
+                            return None
+                    elif metadata is None:
+                        print("found section '"+section+"' before '~~~metadata' in",filename, file=sys.stderr)
+                        return None
+                    else:
+                        parts = section.split("~")
+                        current = metadata
+                        for part in parts[:-1]:
+                            if part not in current:
+                                current[part] = {}
+                            current = current[part]
+
+                        current[parts[-1]] = buffer
+                    section = None
+                    buffer = None
+                else:
+                    buffer += line
+            elif "=== content ===" == line.rstrip():
+                if metadata is None:
+                    print("found '=== content ===' before ~~~metadata in",filename, file=sys.stderr)
+                    return None
+                content = True
+                metadata["content"] = ""
+
+            else:
+                m = re_section.search(line)
+                if m:
+                    section = m.group(1)
+                    buffer = ""
+
+    return metadata
 
 
 # Print all found datasets to individual JSON objects.
@@ -272,20 +288,37 @@ def print_datasets():
         # Edge Case: Update path based which software or dataset.
         if "tool_" in file_id:
             file_name = file_id[file_id.index("_") + 1:] 
-            file_path = "sources/software/{}__caida.json".format(file_name)
+            file_path = "sources/software/{}___caida.json".format(file_name)
         else:
-            file_path = "sources/dataset/{}__caida.json".format(file_id)
+            file_path = "sources/dataset/{}___caida.json".format(file_id)
+            file_name = file_id
 
-        path_2_id[file_path] = file_id
+        path_2_id[file_id] = {
+            "path": file_path,
+            "name": id_2_object[file_id]["name"],
+            "id": file_name
+        }
 
         # Write the JSON object to the file.
         curr_file = json.dumps(id_2_object[file_id], indent=4)
         with open(file_path, "w") as output_file:
             output_file.write(curr_file)
-        
+    
     # Print a JSON mapping all made files to their IDs.
     with open(path_ids, "w") as output_file:
-        output_file.write(json.dumps(path_2_id, indent=4))
+        sorted_keys = sorted(path_2_id.keys())
+        output_file.write("[\n")
+        for key in sorted_keys:
+            curr_obj = path_2_id[key]
+            output_file.write("\t{\n")
+            output_file.write("\t\t\"id\": \"{}\",\n".format(curr_obj["id"]))
+            output_file.write("\t\t\"name\": \"{}\",\n".format(curr_obj["name"]))
+            output_file.write("\t\t\"file_path\": \"{}\"\n".format(curr_obj["path"]))
+            if key == sorted_keys[-1]:
+                output_file.write("\t}\n")
+            else:
+                output_file.write("\t},\n")
+        output_file.write("]\n")
 
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])

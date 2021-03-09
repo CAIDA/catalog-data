@@ -13,9 +13,9 @@
         "as_core"
     ],
     "links":[
-        {"to":"dataset:internet_topology_data_kit"},
-        {"to":"dataset:ipv4_routed_24_topology"},
-        {"to":"dataset:as_relationships"}
+        {"to":"dataset:ark_itdk"},
+        {"to":"dataset:ark_ipv4_traceroute"},
+        {"to":"dataset:as_relationships_serial_1"}
     ],
     "date":"2013.01",
     "type":"POSTER",

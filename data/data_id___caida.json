@@ -1,0 +1,977 @@
+[
+	{
+		"id": "2006-ccr-as-level-topology",
+		"name": "Paper: 'AS-level topology', CCR 2006",
+		"file_path": "sources/dataset/2006-ccr-as-level-topology___caida.json"
+	},
+	{
+		"id": "2006-pam-as-taxonomy",
+		"name": "Paper: AS Taxonomy Repository, PAM 2006",
+		"file_path": "sources/dataset/2006-pam-as-taxonomy___caida.json"
+	},
+	{
+		"id": "2008-imc-trmethod",
+		"name": "2008-IMC-TRMETHOD",
+		"file_path": "sources/dataset/2008-imc-trmethod___caida.json"
+	},
+	{
+		"id": "2009-imc-spoofer",
+		"name": "2009-IMC-SPOOFER",
+		"file_path": "sources/dataset/2009-imc-spoofer___caida.json"
+	},
+	{
+		"id": "2010-pam-as-annotations",
+		"name": "2010-PAM-AS-ANNOTATIONS",
+		"file_path": "sources/dataset/2010-pam-as-annotations___caida.json"
+	},
+	{
+		"id": "2011-ccr-crooked-traceroute",
+		"name": "2011-CCR-CROOKED-TRACEROUTE",
+		"file_path": "sources/dataset/2011-ccr-crooked-traceroute___caida.json"
+	},
+	{
+		"id": "2013-imc-asrank",
+		"name": "2013-IMC-ASRANK",
+		"file_path": "sources/dataset/2013-imc-asrank___caida.json"
+	},
+	{
+		"id": "2013-ton-alias-resolution",
+		"name": "2013-TON-ALIAS-RESOLUTION",
+		"file_path": "sources/dataset/2013-ton-alias-resolution___caida.json"
+	},
+	{
+		"id": "2014-ccr-drop",
+		"name": "DNS-based Router Positioning",
+		"file_path": "sources/dataset/2014-ccr-drop___caida.json"
+	},
+	{
+		"id": "2014-imc-complex",
+		"name": "Inferring Complex AS Relationships",
+		"file_path": "sources/dataset/2014-imc-complex___caida.json"
+	},
+	{
+		"id": "2014-pam-asrank-2ndlook",
+		"name": "2014-PAM-ASRANK-2NDLOOK",
+		"file_path": "sources/dataset/2014-pam-asrank-2ndlook___caida.json"
+	},
+	{
+		"id": "2015-imc-blind",
+		"name": "2015-IMC-BLIND",
+		"file_path": "sources/dataset/2015-imc-blind___caida.json"
+	},
+	{
+		"id": "2015-pam-asrank6",
+		"name": "PAM 2015 IPv6 AS rank IPv6",
+		"file_path": "sources/dataset/2015-pam-asrank6___caida.json"
+	},
+	{
+		"id": "2017-imc-rsdos-targets",
+		"name": "CAIDA Randomly and Uniformly Spoofed Denial-of-Service Attack Metadata",
+		"file_path": "sources/dataset/2017-imc-rsdos-targets___caida.json"
+	},
+	{
+		"id": "2017-sigcomm-router-outages",
+		"name": "Paper: SIGCOMM 2017 Router Outages",
+		"file_path": "sources/dataset/2017-sigcomm-router-outages___caida.json"
+	},
+	{
+		"id": "2018-pam-youtube-load-balancing",
+		"name": "PAM 2018 YouTube load-balancing behavior",
+		"file_path": "sources/dataset/2018-pam-youtube-load-balancing___caida.json"
+	},
+	{
+		"id": "2020-unintended-consequences",
+		"name": "PAM 2020 Unintended consequences",
+		"file_path": "sources/dataset/2020-unintended-consequences___caida.json"
+	},
+	{
+		"id": "aol-500k-users",
+		"name": "AOL 500k User Session",
+		"file_path": "sources/dataset/aol-500k-users___caida.json"
+	},
+	{
+		"id": "ark-iff-20140416",
+		"name": "Midar run ???",
+		"file_path": "sources/dataset/ark-iff-20140416___caida.json"
+	},
+	{
+		"id": "ark-ipv4-aslinks",
+		"name": "Ark IPv4 Routed /24 AS Links",
+		"file_path": "sources/dataset/ark-ipv4-aslinks___caida.json"
+	},
+	{
+		"id": "ark-ipv4-dns-names",
+		"name": "Ark IPv4 Routed /24 DNS Names",
+		"file_path": "sources/dataset/ark-ipv4-dns-names___caida.json"
+	},
+	{
+		"id": "ark-ipv4-dns-traffic",
+		"name": "Ark DNS traffic measurements",
+		"file_path": "sources/dataset/ark-ipv4-dns-traffic___caida.json"
+	},
+	{
+		"id": "ark-ipv4-prefix-probing",
+		"name": "Ark IPv4 prefix-probing data",
+		"file_path": "sources/dataset/ark-ipv4-prefix-probing___caida.json"
+	},
+	{
+		"id": "ark-ipv4-tnt",
+		"name": "IPv4 TNT MPLS Topology",
+		"file_path": "sources/dataset/ark-ipv4-tnt___caida.json"
+	},
+	{
+		"id": "ark-ipv4-traceroute",
+		"name": "Ark IPv4 Routed /24 Topology",
+		"file_path": "sources/dataset/ark-ipv4-traceroute___caida.json"
+	},
+	{
+		"id": "ark-ipv6-aslinks",
+		"name": "Ark IPv6 Topology AS Links",
+		"file_path": "sources/dataset/ark-ipv6-aslinks___caida.json"
+	},
+	{
+		"id": "ark-ipv6-dns-names",
+		"name": "Ark IPv6 Topology DNS Names",
+		"file_path": "sources/dataset/ark-ipv6-dns-names___caida.json"
+	},
+	{
+		"id": "ark-ipv6-routed48",
+		"name": "Ark IPv6 Routed /48 Topology",
+		"file_path": "sources/dataset/ark-ipv6-routed48___caida.json"
+	},
+	{
+		"id": "ark-ipv6-traceroute",
+		"name": "Ark IPv6 Topology",
+		"file_path": "sources/dataset/ark-ipv6-traceroute___caida.json"
+	},
+	{
+		"id": "ark-itdk",
+		"name": "Ark IPv4 ITDKs",
+		"file_path": "sources/dataset/ark-itdk___caida.json"
+	},
+	{
+		"id": "ark-midar-20110414",
+		"name": "Midar run 2011-04-14",
+		"file_path": "sources/dataset/ark-midar-20110414___caida.json"
+	},
+	{
+		"id": "ark-midar-20110418",
+		"name": "Midar run 2011-04-18",
+		"file_path": "sources/dataset/ark-midar-20110418___caida.json"
+	},
+	{
+		"id": "ark-midar-20110418-analysis",
+		"name": "Midar run 2011-04-18 (analysis)",
+		"file_path": "sources/dataset/ark-midar-20110418-analysis___caida.json"
+	},
+	{
+		"id": "ark-midar-20111024",
+		"name": "Midar run 2011-10-24",
+		"file_path": "sources/dataset/ark-midar-20111024___caida.json"
+	},
+	{
+		"id": "ark-midar-20120723",
+		"name": "Midar run 2012-07-23",
+		"file_path": "sources/dataset/ark-midar-20120723___caida.json"
+	},
+	{
+		"id": "ark-midar-20130422",
+		"name": "Midar run 2013-04-22",
+		"file_path": "sources/dataset/ark-midar-20130422___caida.json"
+	},
+	{
+		"id": "ark-midar-20130724",
+		"name": "Midar run 2013-07-24",
+		"file_path": "sources/dataset/ark-midar-20130724___caida.json"
+	},
+	{
+		"id": "ark-midar-20140421",
+		"name": "Midar run 2014-04-21",
+		"file_path": "sources/dataset/ark-midar-20140421___caida.json"
+	},
+	{
+		"id": "ark-midar-20141203",
+		"name": "Midar run 2014-12-03",
+		"file_path": "sources/dataset/ark-midar-20141203___caida.json"
+	},
+	{
+		"id": "ark-midar-20150831",
+		"name": "Midar run 2015-08-31",
+		"file_path": "sources/dataset/ark-midar-20150831___caida.json"
+	},
+	{
+		"id": "ark-midar-20160329",
+		"name": "Midar run 2016-03-29",
+		"file_path": "sources/dataset/ark-midar-20160329___caida.json"
+	},
+	{
+		"id": "ark-midar-20160920",
+		"name": "Midar run 2016-09-20",
+		"file_path": "sources/dataset/ark-midar-20160920___caida.json"
+	},
+	{
+		"id": "ark-midar-20170207",
+		"name": "Midar run 2017-02-07",
+		"file_path": "sources/dataset/ark-midar-20170207___caida.json"
+	},
+	{
+		"id": "ark-midar-20170828",
+		"name": "Midar run 2017-08-28",
+		"file_path": "sources/dataset/ark-midar-20170828___caida.json"
+	},
+	{
+		"id": "ark-midar-20180301",
+		"name": "Midar run 2018-03-01",
+		"file_path": "sources/dataset/ark-midar-20180301___caida.json"
+	},
+	{
+		"id": "ark-monitor-cfg",
+		"name": "Config files from all Ark nodes",
+		"file_path": "sources/dataset/ark-monitor-cfg___caida.json"
+	},
+	{
+		"id": "as-classification",
+		"name": "AS Classification",
+		"file_path": "sources/dataset/as-classification___caida.json"
+	},
+	{
+		"id": "as-facilities-map",
+		"name": "AS facilities mapping",
+		"file_path": "sources/dataset/as-facilities-map___caida.json"
+	},
+	{
+		"id": "as-organizations",
+		"name": "AS to organizations mappings",
+		"file_path": "sources/dataset/as-organizations___caida.json"
+	},
+	{
+		"id": "as-rank-disk",
+		"name": "AS Rank Database Input",
+		"file_path": "sources/dataset/as-rank-disk___caida.json"
+	},
+	{
+		"id": "as-rank-online",
+		"name": "AS Rank",
+		"file_path": "sources/dataset/as-rank-online___caida.json"
+	},
+	{
+		"id": "as-rank-ribs",
+		"name": "AS Relationships RIBs",
+		"file_path": "sources/dataset/as-rank-ribs___caida.json"
+	},
+	{
+		"id": "as-relationships-201206-201311",
+		"name": "AS Relationships (2012/06-2013-11)",
+		"file_path": "sources/dataset/as-relationships-201206-201311___caida.json"
+	},
+	{
+		"id": "as-relationships-geo",
+		"name": "AS Relationships with geographic annotations",
+		"file_path": "sources/dataset/as-relationships-geo___caida.json"
+	},
+	{
+		"id": "as-relationships-pre-201206",
+		"name": "AS Relationships (pre-2012-06)",
+		"file_path": "sources/dataset/as-relationships-pre-201206___caida.json"
+	},
+	{
+		"id": "as-relationships-serial-1",
+		"name": "AS Relationships (serial-1)",
+		"file_path": "sources/dataset/as-relationships-serial-1___caida.json"
+	},
+	{
+		"id": "as-relationships-serial-2",
+		"name": "AS Relationships (serial-2)",
+		"file_path": "sources/dataset/as-relationships-serial-2___caida.json"
+	},
+	{
+		"id": "asymmetry-test",
+		"name": "ASYMMETRY-TEST",
+		"file_path": "sources/dataset/asymmetry-test___caida.json"
+	},
+	{
+		"id": "backscatter-2001-non-anon",
+		"name": "backscatter 2001 non anon",
+		"file_path": "sources/dataset/backscatter-2001-non-anon___caida.json"
+	},
+	{
+		"id": "backscatter-raw",
+		"name": "Original backscatter traces",
+		"file_path": "sources/dataset/backscatter-raw___caida.json"
+	},
+	{
+		"id": "backscatter-tocs-originals",
+		"name": "Backscatter datasets for TOCS paper",
+		"file_path": "sources/dataset/backscatter-tocs-originals___caida.json"
+	},
+	{
+		"id": "bdk",
+		"name": "BDK",
+		"file_path": "sources/dataset/bdk___caida.json"
+	},
+	{
+		"id": "bdrmap",
+		"name": "Border mapping dataset",
+		"file_path": "sources/dataset/bdrmap___caida.json"
+	},
+	{
+		"id": "bgp-communities",
+		"name": "BGP Community Dictionary Dataset",
+		"file_path": "sources/dataset/bgp-communities___caida.json"
+	},
+	{
+		"id": "bgpstream",
+		"name": "bgpstream.caida.org",
+		"file_path": "sources/dataset/bgpstream___caida.json"
+	},
+	{
+		"id": "bogon-cymru-dumps",
+		"name": "Bogon files from Cymru",
+		"file_path": "sources/dataset/bogon-cymru-dumps___caida.json"
+	},
+	{
+		"id": "caidaspy",
+		"name": "CAIDASPY",
+		"file_path": "sources/dataset/caidaspy___caida.json"
+	},
+	{
+		"id": "comcast-ping",
+		"name": "COMCAST-PING",
+		"file_path": "sources/dataset/comcast-ping___caida.json"
+	},
+	{
+		"id": "complete-dns-lookups",
+		"name": "DNS lookups",
+		"file_path": "sources/dataset/complete-dns-lookups___caida.json"
+	},
+	{
+		"id": "congestion-bdr",
+		"name": "Congestion bordermap data",
+		"file_path": "sources/dataset/congestion-bdr___caida.json"
+	},
+	{
+		"id": "congestion-link",
+		"name": "Congestion link data",
+		"file_path": "sources/dataset/congestion-link___caida.json"
+	},
+	{
+		"id": "congestion-loss",
+		"name": "Congestion loss data",
+		"file_path": "sources/dataset/congestion-loss___caida.json"
+	},
+	{
+		"id": "congestion-targets",
+		"name": "Congestion targets data",
+		"file_path": "sources/dataset/congestion-targets___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2013",
+		"name": "Congestion TSP data for 2013",
+		"file_path": "sources/dataset/congestion-tsp-2013___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2014",
+		"name": "Congestion TSP data for 2014 (.out.gz files only)",
+		"file_path": "sources/dataset/congestion-tsp-2014___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2015",
+		"name": "Congestion TSP data for 2015 (.out.gz files only)",
+		"file_path": "sources/dataset/congestion-tsp-2015___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2016",
+		"name": "Congestion TSP data for 2016 (.out.gz files only)",
+		"file_path": "sources/dataset/congestion-tsp-2016___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2017",
+		"name": "Congestion TSP data for 2017 (.out.gz files only)",
+		"file_path": "sources/dataset/congestion-tsp-2017___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2018",
+		"name": "Congestion TSP data for 2018 (.out.gz files only)",
+		"file_path": "sources/dataset/congestion-tsp-2018___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2019",
+		"name": "Congestion TSP data for 2019",
+		"file_path": "sources/dataset/congestion-tsp-2019___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2020",
+		"name": "Congestion TSP data",
+		"file_path": "sources/dataset/congestion-tsp-2020___caida.json"
+	},
+	{
+		"id": "congestion-tsp-2021",
+		"name": "Congestion TSP data",
+		"file_path": "sources/dataset/congestion-tsp-2021___caida.json"
+	},
+	{
+		"id": "corsaro-dos",
+		"name": "UCSD Telescope Corsaro dos data",
+		"file_path": "sources/dataset/corsaro-dos___caida.json"
+	},
+	{
+		"id": "corsaro-flowtuple",
+		"name": "UCSD Telescope Corsaro flowtuples",
+		"file_path": "sources/dataset/corsaro-flowtuple___caida.json"
+	},
+	{
+		"id": "corsaro-patch-tuesday",
+		"name": "Corsaro Patch Tuesday",
+		"file_path": "sources/dataset/corsaro-patch-tuesday___caida.json"
+	},
+	{
+		"id": "dataadm",
+		"name": "Meta data related to dataadm tasks",
+		"file_path": "sources/dataset/dataadm___caida.json"
+	},
+	{
+		"id": "datcat-oracle-dump",
+		"name": "DATCAT-ORACLE-DUMP",
+		"file_path": "sources/dataset/datcat-oracle-dump___caida.json"
+	},
+	{
+		"id": "ddos-attack-2007",
+		"name": "DDoS 2007 attack",
+		"file_path": "sources/dataset/ddos-attack-2007___caida.json"
+	},
+	{
+		"id": "ddos-attack-2007-raw",
+		"name": "DDOS-ATTACK-2007-RAW",
+		"file_path": "sources/dataset/ddos-attack-2007-raw___caida.json"
+	},
+	{
+		"id": "dhs-imam-ipv4-transfers",
+		"name": "DHS-IMAM-IPV4-TRANSFERS",
+		"file_path": "sources/dataset/dhs-imam-ipv4-transfers___caida.json"
+	},
+	{
+		"id": "dns-chile-daily-traces",
+		"name": "DNS-CHILE-DAILY-TRACES",
+		"file_path": "sources/dataset/dns-chile-daily-traces___caida.json"
+	},
+	{
+		"id": "dns-root-gtld-rtt",
+		"name": "DNS root/gTLD RTT data",
+		"file_path": "sources/dataset/dns-root-gtld-rtt___caida.json"
+	},
+	{
+		"id": "dnsstat",
+		"name": "DNSSTAT",
+		"file_path": "sources/dataset/dnsstat___caida.json"
+	},
+	{
+		"id": "fcc-mba",
+		"name": "Measuring Broadband America",
+		"file_path": "sources/dataset/fcc-mba___caida.json"
+	},
+	{
+		"id": "gadm",
+		"name": "Global Adminstrative Areas",
+		"file_path": "sources/dataset/gadm___caida.json"
+	},
+	{
+		"id": "gatech-botnet",
+		"name": "GATECH-BOTNET",
+		"file_path": "sources/dataset/gatech-botnet___caida.json"
+	},
+	{
+		"id": "geographic",
+		"name": "Geographic Info",
+		"file_path": "sources/dataset/geographic___caida.json"
+	},
+	{
+		"id": "geoloc-ping",
+		"name": "GEOLOC-PING",
+		"file_path": "sources/dataset/geoloc-ping___caida.json"
+	},
+	{
+		"id": "geoloc-ping-20140530",
+		"name": "GEOLOC-PING-20140530",
+		"file_path": "sources/dataset/geoloc-ping-20140530___caida.json"
+	},
+	{
+		"id": "geolocated-router",
+		"name": "Geolocated Router Dataset",
+		"file_path": "sources/dataset/geolocated-router___caida.json"
+	},
+	{
+		"id": "geonames",
+		"name": "Geonames",
+		"file_path": "sources/dataset/geonames___caida.json"
+	},
+	{
+		"id": "gt-bgp",
+		"name": "GT-BGP",
+		"file_path": "sources/dataset/gt-bgp___caida.json"
+	},
+	{
+		"id": "hostip",
+		"name": "HOSTIP",
+		"file_path": "sources/dataset/hostip___caida.json"
+	},
+	{
+		"id": "icann-czds",
+		"name": "Zone files from ICANN CZDS",
+		"file_path": "sources/dataset/icann-czds___caida.json"
+	},
+	{
+		"id": "internetcensus2012",
+		"name": "INTERNETCENSUS2012",
+		"file_path": "sources/dataset/internetcensus2012___caida.json"
+	},
+	{
+		"id": "ipv4-2013-census",
+		"name": "IPv4 2013 Census Dataset",
+		"file_path": "sources/dataset/ipv4-2013-census___caida.json"
+	},
+	{
+		"id": "ipv6-collection-200801",
+		"name": "IPv6 Topology Collection 200801",
+		"file_path": "sources/dataset/ipv6-collection-200801___caida.json"
+	},
+	{
+		"id": "isc-domain-survey",
+		"name": "ISC-DOMAIN-SURVEY",
+		"file_path": "sources/dataset/isc-domain-survey___caida.json"
+	},
+	{
+		"id": "isi-lander",
+		"name": "ISI-LANDER",
+		"file_path": "sources/dataset/isi-lander___caida.json"
+	},
+	{
+		"id": "ixps",
+		"name": "Internet eXchange Points Dataset",
+		"file_path": "sources/dataset/ixps___caida.json"
+	},
+	{
+		"id": "kleinberg-wikipedia",
+		"name": "KLEINBERG-WIKIPEDIA",
+		"file_path": "sources/dataset/kleinberg-wikipedia___caida.json"
+	},
+	{
+		"id": "logs-ms08-067",
+		"name": "LOGS-MS08-067",
+		"file_path": "sources/dataset/logs-ms08-067___caida.json"
+	},
+	{
+		"id": "maxmind-geolite-dumps",
+		"name": "MAXMIND-GEOLITE-DUMPS",
+		"file_path": "sources/dataset/maxmind-geolite-dumps___caida.json"
+	},
+	{
+		"id": "natural-earth",
+		"name": "Natural Earth data",
+		"file_path": "sources/dataset/natural-earth___caida.json"
+	},
+	{
+		"id": "netacuity-dumps",
+		"name": "NETACUITY-DUMPS",
+		"file_path": "sources/dataset/netacuity-dumps___caida.json"
+	},
+	{
+		"id": "netflow-sdsc",
+		"name": "NETFLOW-SDSC",
+		"file_path": "sources/dataset/netflow-sdsc___caida.json"
+	},
+	{
+		"id": "open-resolver-survey-200710",
+		"name": "OPEN-RESOLVER-SURVEY-200710",
+		"file_path": "sources/dataset/open-resolver-survey-200710___caida.json"
+	},
+	{
+		"id": "passive-2007-dag",
+		"name": "Unanonymized Internet Traces 2007",
+		"file_path": "sources/dataset/passive-2007-dag___caida.json"
+	},
+	{
+		"id": "passive-2007-pcap",
+		"name": "Anonymized Internet Traces 2007",
+		"file_path": "sources/dataset/passive-2007-pcap___caida.json"
+	},
+	{
+		"id": "passive-2008-dag",
+		"name": "Unanonymized Internet Traces 2008",
+		"file_path": "sources/dataset/passive-2008-dag___caida.json"
+	},
+	{
+		"id": "passive-2008-pcap",
+		"name": "Anonymized Internet Traces 2008",
+		"file_path": "sources/dataset/passive-2008-pcap___caida.json"
+	},
+	{
+		"id": "passive-20080319-00",
+		"name": "Packet headers 1st Chicago trace (2008)",
+		"file_path": "sources/dataset/passive-20080319-00___caida.json"
+	},
+	{
+		"id": "passive-20080319-19",
+		"name": "Flow files for 2nd Chicago trace",
+		"file_path": "sources/dataset/passive-20080319-19___caida.json"
+	},
+	{
+		"id": "passive-2009-dag",
+		"name": "Unanonymized Internet Traces 2009",
+		"file_path": "sources/dataset/passive-2009-dag___caida.json"
+	},
+	{
+		"id": "passive-2009-pcap",
+		"name": "Anonymized Internet Traces 2009",
+		"file_path": "sources/dataset/passive-2009-pcap___caida.json"
+	},
+	{
+		"id": "passive-2010-dag",
+		"name": "Unanonymized Internet Traces 2010",
+		"file_path": "sources/dataset/passive-2010-dag___caida.json"
+	},
+	{
+		"id": "passive-2010-pcap",
+		"name": "Anonymized Internet Traces 2010",
+		"file_path": "sources/dataset/passive-2010-pcap___caida.json"
+	},
+	{
+		"id": "passive-2011-dag",
+		"name": "Unanonymized Internet Traces 2011",
+		"file_path": "sources/dataset/passive-2011-dag___caida.json"
+	},
+	{
+		"id": "passive-2011-pcap",
+		"name": "Anonymized Internet Traces 2011",
+		"file_path": "sources/dataset/passive-2011-pcap___caida.json"
+	},
+	{
+		"id": "passive-2012-dag",
+		"name": "Unanonymized Internet Traces 2012",
+		"file_path": "sources/dataset/passive-2012-dag___caida.json"
+	},
+	{
+		"id": "passive-2012-pcap",
+		"name": "Anonymized Internet Traces 2012",
+		"file_path": "sources/dataset/passive-2012-pcap___caida.json"
+	},
+	{
+		"id": "passive-2013-dag",
+		"name": "Unanonymized Internet Traces 2013",
+		"file_path": "sources/dataset/passive-2013-dag___caida.json"
+	},
+	{
+		"id": "passive-2013-pcap",
+		"name": "Anonymized Internet Traces 2013",
+		"file_path": "sources/dataset/passive-2013-pcap___caida.json"
+	},
+	{
+		"id": "passive-2014-dag",
+		"name": "Unanonymized Internet Traces 2014",
+		"file_path": "sources/dataset/passive-2014-dag___caida.json"
+	},
+	{
+		"id": "passive-2014-pcap",
+		"name": "Anonymized Internet Traces 2014",
+		"file_path": "sources/dataset/passive-2014-pcap___caida.json"
+	},
+	{
+		"id": "passive-2015-dag",
+		"name": "Unanonymized Internet Traces 2015",
+		"file_path": "sources/dataset/passive-2015-dag___caida.json"
+	},
+	{
+		"id": "passive-2015-pcap",
+		"name": "Anonymized Internet Traces 2015",
+		"file_path": "sources/dataset/passive-2015-pcap___caida.json"
+	},
+	{
+		"id": "passive-2016-dag",
+		"name": "Unanonymized Internet Traces 2016",
+		"file_path": "sources/dataset/passive-2016-dag___caida.json"
+	},
+	{
+		"id": "passive-2016-pcap",
+		"name": "Anonymized Internet Traces 2016",
+		"file_path": "sources/dataset/passive-2016-pcap___caida.json"
+	},
+	{
+		"id": "passive-2018-dag",
+		"name": "Unanonymized Internet Traces 2018",
+		"file_path": "sources/dataset/passive-2018-dag___caida.json"
+	},
+	{
+		"id": "passive-2018-pcap",
+		"name": "Anonymized Internet Traces 2018",
+		"file_path": "sources/dataset/passive-2018-pcap___caida.json"
+	},
+	{
+		"id": "passive-2019-dag",
+		"name": "Unanonymized Internet Traces 2019",
+		"file_path": "sources/dataset/passive-2019-dag___caida.json"
+	},
+	{
+		"id": "passive-2019-pcap",
+		"name": "Anonymized Internet Traces 2019",
+		"file_path": "sources/dataset/passive-2019-pcap___caida.json"
+	},
+	{
+		"id": "passive-ipv6launch-dag",
+		"name": "Unanonymized Internet Traces IPv6 Day/Launch",
+		"file_path": "sources/dataset/passive-ipv6launch-dag___caida.json"
+	},
+	{
+		"id": "passive-ipv6launch-pcap",
+		"name": "Anonymized Internet Traces IPv6 Day/Launch",
+		"file_path": "sources/dataset/passive-ipv6launch-pcap___caida.json"
+	},
+	{
+		"id": "passive-merged-pcap",
+		"name": "Anonymized Internet Traces April 2008 - January 2019",
+		"file_path": "sources/dataset/passive-merged-pcap___caida.json"
+	},
+	{
+		"id": "passive-metadata",
+		"name": "Passive Metadata",
+		"file_path": "sources/dataset/passive-metadata___caida.json"
+	},
+	{
+		"id": "passive-oc48-dag",
+		"name": "PASSIVE-OC48-DAG",
+		"file_path": "sources/dataset/passive-oc48-dag___caida.json"
+	},
+	{
+		"id": "passive-oc48-pcap",
+		"name": "OC48 Peering Point Traces",
+		"file_path": "sources/dataset/passive-oc48-pcap___caida.json"
+	},
+	{
+		"id": "passive-oc48-pcap-paix",
+		"name": "PASSIVE-OC48-PCAP-PAIX",
+		"file_path": "sources/dataset/passive-oc48-pcap-paix___caida.json"
+	},
+	{
+		"id": "passive-sampler",
+		"name": "Anonymized Internet Traces sampler",
+		"file_path": "sources/dataset/passive-sampler___caida.json"
+	},
+	{
+		"id": "peeringdb-dumps",
+		"name": "PEERINGDB-DUMPS",
+		"file_path": "sources/dataset/peeringdb-dumps___caida.json"
+	},
+	{
+		"id": "plab-results",
+		"name": "PLAB-RESULTS",
+		"file_path": "sources/dataset/plab-results___caida.json"
+	},
+	{
+		"id": "radargun-201204",
+		"name": "RADARGUN-201204",
+		"file_path": "sources/dataset/radargun-201204___caida.json"
+	},
+	{
+		"id": "ripe-atlas-dumps",
+		"name": "Ripe Atlas daily dumps",
+		"file_path": "sources/dataset/ripe-atlas-dumps___caida.json"
+	},
+	{
+		"id": "router-outages",
+		"name": "Raw data for Router Outages paper",
+		"file_path": "sources/dataset/router-outages___caida.json"
+	},
+	{
+		"id": "routeviews-ipv4-prefix2as",
+		"name": "RouteViews IPv4 Prefix to AS mappings",
+		"file_path": "sources/dataset/routeviews-ipv4-prefix2as___caida.json"
+	},
+	{
+		"id": "routeviews-ipv4-prefix2as-coalesced",
+		"name": "RouteViews IPv4 Prefix to AS mappings - coalesced",
+		"file_path": "sources/dataset/routeviews-ipv4-prefix2as-coalesced___caida.json"
+	},
+	{
+		"id": "routeviews-ipv6-prefix2as",
+		"name": "RouteViews IPv6 Prefix to AS mappings",
+		"file_path": "sources/dataset/routeviews-ipv6-prefix2as___caida.json"
+	},
+	{
+		"id": "skitter-aslinks",
+		"name": "Skitter AS Links",
+		"file_path": "sources/dataset/skitter-aslinks___caida.json"
+	},
+	{
+		"id": "skitter-itdk",
+		"name": "Skitter ITDK",
+		"file_path": "sources/dataset/skitter-itdk___caida.json"
+	},
+	{
+		"id": "skitter-router-adjacencies",
+		"name": "Skitter Router Adjacencies",
+		"file_path": "sources/dataset/skitter-router-adjacencies___caida.json"
+	},
+	{
+		"id": "skitter-traceroute",
+		"name": "Skitter traceroute dataset",
+		"file_path": "sources/dataset/skitter-traceroute___caida.json"
+	},
+	{
+		"id": "snapp-i2net",
+		"name": "SNAPP-I2NET",
+		"file_path": "sources/dataset/snapp-i2net___caida.json"
+	},
+	{
+		"id": "spoofer-data",
+		"name": "Spoofer data",
+		"file_path": "sources/dataset/spoofer-data___caida.json"
+	},
+	{
+		"id": "telegeography",
+		"name": "TELEGEOGRAPHY",
+		"file_path": "sources/dataset/telegeography___caida.json"
+	},
+	{
+		"id": "telescope-anon-conficker",
+		"name": "Three days of Conficker",
+		"file_path": "sources/dataset/telescope-anon-conficker___caida.json"
+	},
+	{
+		"id": "telescope-anon-twodays",
+		"name": "Two-Days-in-2008 Telescope Dataset",
+		"file_path": "sources/dataset/telescope-anon-twodays___caida.json"
+	},
+	{
+		"id": "telescope-backscatter",
+		"name": "UCSD Network Telescope Traffic Samples",
+		"file_path": "sources/dataset/telescope-backscatter___caida.json"
+	},
+	{
+		"id": "telescope-codered-worm",
+		"name": "Code Red worm dataset",
+		"file_path": "sources/dataset/telescope-codered-worm___caida.json"
+	},
+	{
+		"id": "telescope-daily-rsdos",
+		"name": "Aggregated Daily RSDoS Attack Metadata",
+		"file_path": "sources/dataset/telescope-daily-rsdos___caida.json"
+	},
+	{
+		"id": "telescope-darknet-scanners",
+		"name": "Telescope Darknet Scanners",
+		"file_path": "sources/dataset/telescope-darknet-scanners___caida.json"
+	},
+	{
+		"id": "telescope-educational",
+		"name": "Telescope Educational",
+		"file_path": "sources/dataset/telescope-educational___caida.json"
+	},
+	{
+		"id": "telescope-live",
+		"name": "UCSD Real-time Network Telescope",
+		"file_path": "sources/dataset/telescope-live___caida.json"
+	},
+	{
+		"id": "telescope-live-sampler",
+		"name": "Telescope Live (Near-Real-Time) Sampler",
+		"file_path": "sources/dataset/telescope-live-sampler___caida.json"
+	},
+	{
+		"id": "telescope-nersc",
+		"name": "UCSD Telescope data at NERSC",
+		"file_path": "sources/dataset/telescope-nersc___caida.json"
+	},
+	{
+		"id": "telescope-raw",
+		"name": "TELESCOPE-RAW",
+		"file_path": "sources/dataset/telescope-raw___caida.json"
+	},
+	{
+		"id": "telescope-sipscan",
+		"name": "Telescope Sipscan dataset",
+		"file_path": "sources/dataset/telescope-sipscan___caida.json"
+	},
+	{
+		"id": "telescope-sipscan-fates",
+		"name": "Botnet Stealth Scan (fates@postech.ac.kr)",
+		"file_path": "sources/dataset/telescope-sipscan-fates___caida.json"
+	},
+	{
+		"id": "telescope-witty-worm",
+		"name": "Witty Worm dataset",
+		"file_path": "sources/dataset/telescope-witty-worm___caida.json"
+	},
+	{
+		"id": "telescope-worms-raw",
+		"name": "Raw worm-related telescope pcap files (Code Red, Witty)",
+		"file_path": "sources/dataset/telescope-worms-raw___caida.json"
+	},
+	{
+		"id": "timestamps",
+		"name": "TIMESTAMPS",
+		"file_path": "sources/dataset/timestamps___caida.json"
+	},
+	{
+		"id": "tool-arkutil",
+		"name": "Ruby Ark utilities",
+		"file_path": "sources/dataset/tool-arkutil___caida.json"
+	},
+	{
+		"id": "tool-bgpstream",
+		"name": "(py)bgpstream tarballs",
+		"file_path": "sources/dataset/tool-bgpstream___caida.json"
+	},
+	{
+		"id": "tool-coralreef",
+		"name": "CoralReef tarball",
+		"file_path": "sources/dataset/tool-coralreef___caida.json"
+	},
+	{
+		"id": "tool-corsaro",
+		"name": "Corsaro tarball",
+		"file_path": "sources/dataset/tool-corsaro___caida.json"
+	},
+	{
+		"id": "tool-henya",
+		"name": "Henya query system",
+		"file_path": "sources/dataset/tool-henya___caida.json"
+	},
+	{
+		"id": "tool-vela",
+		"name": "Vela: On-Demand Topology Measurement Service",
+		"file_path": "sources/dataset/tool-vela___caida.json"
+	},
+	{
+		"id": "topology-sampler",
+		"name": "Topology industry evaluation dataset",
+		"file_path": "sources/dataset/topology-sampler___caida.json"
+	},
+	{
+		"id": "topology-truth",
+		"name": "Ground truth for topology",
+		"file_path": "sources/dataset/topology-truth___caida.json"
+	},
+	{
+		"id": "topology-truth-orig",
+		"name": "TOPOLOGY-TRUTH-ORIG",
+		"file_path": "sources/dataset/topology-truth-orig___caida.json"
+	},
+	{
+		"id": "ucsd-tap-20070514",
+		"name": "UCSD-TAP-20070514",
+		"file_path": "sources/dataset/ucsd-tap-20070514___caida.json"
+	},
+	{
+		"id": "ucsd-tap-2008ditl",
+		"name": "UCSD-TAP-2008DITL",
+		"file_path": "sources/dataset/ucsd-tap-2008ditl___caida.json"
+	},
+	{
+		"id": "whois-database-dumps",
+		"name": "Dumps of Whois db from various registries",
+		"file_path": "sources/dataset/whois-database-dumps___caida.json"
+	},
+	{
+		"id": "wide",
+		"name": "WIDE",
+		"file_path": "sources/dataset/wide___caida.json"
+	}
+]

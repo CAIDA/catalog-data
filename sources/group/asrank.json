@@ -9,7 +9,7 @@
     ],
     "links": [
         {
-            "to": "dataset:asrank"
+            "to": "dataset:as_rank_online"
         },
         {
             "to": "paper:2013_asrank"

@@ -27,7 +27,7 @@
             "label": "used by"
         },
         {
-            "to": "dataset:ucsd_network_telescope",
+            "to": "dataset:telescope_raw",
             "label": "used by"
         },
         {

@@ -16,6 +16,43 @@ This repo contains the source JSON files used to build the CAIDA resource catalo
 
 ## 
 Generate the database json files by typing ```make``` on the command line.  
+If you would like to contribute to the catalog:
+  - [how to contribute](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute) to the catalog
+  - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe) to the catalog
+
+## Overview of these files
+
+These are combined to build id_id_link.json, id_object.json, and word_score_id.json. 
+
+There are three derived files generated from the object meta data.
+- id_object.json : a id to object dictionary, it has all the object data execpt for links
+- id_id_link.json : stores the link files in {from,to,label} nested dictionaries
+- word_score_id.json : dictionry for each word of scores and id pairs.
+
+These are made by two scripts:
+- scripts/pubdb_placeholder.py : creates the pubdb objects
+- scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
+
+## Build the catalog data
+You will need to have b4 installed in python3.  You can do this using
+virtualenv.
+~~~bash
+virtualenv env
+source env/bin/activate
+pip3 install bs4
+~~~
+
+All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
+If you have access to this repo you should clone it, if not then it's IDs will be 
+supplied by data/data_id___caida.json.
+~~~
+clone git@github.com:CAIDA/catalog-data-caida.git
+~~~
+
+This will be handled by the [Makefile](Makefile).
+~~~
+make
+~~~
 
 ~~~
 # If you haven't activated virtualenv yet

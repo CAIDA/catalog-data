@@ -12,9 +12,9 @@
         "as_core"
     ],
     "links":[
-        {"to":"dataset:skitter_internet_topology_data_kit"},
-        {"to":"dataset:as_prefix"},
-        {"to":"dataset:ipv4_routed_24_topology"}
+        {"to":"dataset:skitter_itdk"},
+        {"to":"dataset:routeviews_ipv4_prefix2as"},
+        {"to":"dataset:ark_ipv4_traceroute"}
     ],
     "date":"2000.01",
     "type":"POSTER",

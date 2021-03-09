@@ -42,7 +42,7 @@
     ],
     "links": [
         {
-            "to": "dataset:ipv4_routed_24_topology"
+            "to": "dataset:ark_ipv4_traceroute"
         }
     ]
 }

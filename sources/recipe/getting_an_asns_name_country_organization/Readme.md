@@ -4,7 +4,7 @@
     "visibility": "public",
     "name": "How to get an ASN's name, organization and country?",
     "description":"Using the ASN's organization's country in WHOIS to map an ASN to the country of it's headquarters.",
-    "links": [{"to":"dataset:AS_Organization"}],
+    "links": [{"to":"dataset:as_organizations"}],
     "tags": [
         "measurement methodology",
         "topology",
