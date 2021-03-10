@@ -659,6 +659,7 @@
     "name":"AS Classification",
     "filename":"sources/dataset/as-classification___caida.json",
     "organization":"CAIDA",
+    "description":"Inferred classified Autonomous Systems (ASes) by their business type.",
     "status":"ongoing",
     "tags":["ark", "caida", "topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
@@ -2136,8 +2137,9 @@
     "name":"Spoofer data",
     "filename":"sources/dataset/spoofer-data___caida.json",
     "organization":"CAIDA",
+    "description":"Crowd sourced reports on the ability to spoof IPv4 addresses from a specific prefix.",
     "status":"complete",
-    "tags":["caida", "security"],
+    "tags":["caida", "security", "spoofing"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
