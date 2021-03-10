@@ -6,7 +6,6 @@ run:clean_placeholders scripts/data-build.py pubdb externallinks caida
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py data/PANDA-Papers-json.pl.json data/PANDA-Presentations-json.pl.json
 	python3 scripts/pubdb_placeholder.py
-	touch pubdb
 
 externallinks: scripts/externallinks_placeholder.py
 	python3 scripts/externallinks_placeholder.py -d data/data-papers.yaml
@@ -32,7 +31,6 @@ clean: clean_placeholders
 	rm -f sources/*/*__pubdb.json id_id_link.json word_id_score.json
 
 clean_placeholders:
-	rm -f pubdb
 	rm -f sources/*/*__pubdb.json
 	rm -f sources/*/*__externallinks.json
 	rm -f sources/*/*__caida.json
