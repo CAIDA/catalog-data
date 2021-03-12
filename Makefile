@@ -31,7 +31,7 @@ clean: clean_placeholders
 	rm -f sources/*/*__pubdb.json id_id_link.json word_id_score.json
 
 clean_placeholders:
-	rm pubdb
+	rm -f pubdb
 	rm -f sources/*/*__pubdb.json
 	rm -f sources/*/*__externallinks.json
 	rm -f sources/*/*__caida.json
