@@ -1,4 +1,4 @@
-
+#!  /usr/bin/env python3
 # This software is Copyright (C) 2018 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -57,6 +57,8 @@ id_id_link = {}
 
 id_word_score = {}
 
+authorName_object = {}
+
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
 
@@ -83,6 +85,7 @@ id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 pubdb_links_file = "data/pubdb_links.json"
+authorName_object_file = "authorName_object.json"
 
 filename_errors = {}
 
@@ -264,11 +267,20 @@ def main():
         for key in keys:
             del obj[key];
 
+    ######################
+    # Convert set to list
+    ######################
+    for name,obj in authorName_object.items():
+        authorName_object[name] = list(obj)
+
     #######################
     # print files
     #######################
     print ("writing",id_object_file)
     json.dump(id_object, open(id_object_file,"w"),indent=4)
+
+    print ("writing",authorName_object_file)
+    json.dump(authorName_object, open(authorName_object_file,"w"),indent=4)
 
     print ("writing",id_id_link_file)
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
@@ -443,6 +455,7 @@ def object_finish(obj):
         elif key == "persons" or key == "venues" or key == "presenters" or key == "authors":
                 dirty = []
                 i = 0
+                persons = set()
                 while i < len(obj[key]):
                     person_org = obj[key][i]
                     error = False
@@ -455,6 +468,7 @@ def object_finish(obj):
                         for k in ["person","presenter"]:
                             if k in person_org:
                                 person = person_lookup_id(obj["filename"],person_org[k])
+                                persons.add(person["id"])
                                 if person is not None:
                                     if caida:
                                         if "tags" not in person:
@@ -466,6 +480,7 @@ def object_finish(obj):
                                     error = True
                     elif type(person_org) == str and person_org[7:] == "person:":
                         person = person_lookup_id(obj["filename"],person_org)
+                        persons.add(person["id"])
                         if person is not None:
                             obj[key][i] = person["id"]
                         else:
@@ -474,6 +489,9 @@ def object_finish(obj):
                         del obj[key][i]
                     else:
                         i += 1
+                for person_id in persons:
+                    link_add(obj, person_id)
+                    authorName_add(obj, person_id)
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
@@ -582,6 +600,14 @@ def tag_convert(filename, obj,padding=""):
     #print (len(padding),padding,obj)
 
     return obj
+
+def authorName_add(obj, person_id):
+    first_name, last_name = person_id.split(":")[1].split("__")
+    i = obj["id"]
+    for name in [first_name, last_name]:
+        if name not in authorName_object:
+            authorName_object[name] = set()
+        authorName_object[name].add(i)
 
 def link_add(obj,info):
 
