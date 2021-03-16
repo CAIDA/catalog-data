@@ -57,7 +57,7 @@ id_id_link = {}
 
 id_word_score = {}
 
-authorName_object = {}
+personName_object = {}
 
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
@@ -85,7 +85,7 @@ id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 pubdb_links_file = "data/pubdb_links.json"
-authorName_object_file = "authorName_object.json"
+personName_object_file = "personName_object.json"
 
 filename_errors = {}
 
@@ -292,8 +292,8 @@ def main():
     ######################
     # Convert set to list
     ######################
-    for name,obj in authorName_object.items():
-        authorName_object[name] = list(obj)
+    for name,obj in personName_object.items():
+        personName_object[name] = list(obj)
 
 
 
@@ -305,8 +305,8 @@ def main():
     print ("writing",id_object_file)
     json.dump(id_object, open(id_object_file,"w"),indent=4)
 
-    print ("writing",authorName_object_file)
-    json.dump(authorName_object, open(authorName_object_file,"w"),indent=4)
+    print ("writing",personName_object_file)
+    json.dump(personName_object, open(personName_object_file,"w"),indent=4)
 
     print ("writing",id_id_link_file)
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
@@ -520,7 +520,7 @@ def object_finish(obj):
                         i += 1
                 for person_id in persons:
                     link_add(obj, person_id)
-                    authorName_add(obj, person_id)
+                    personName_add(obj, person_id)
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
@@ -630,13 +630,13 @@ def tag_convert(filename, obj,padding=""):
 
     return obj
 
-def authorName_add(obj, person_id):
+def personName_add(obj, person_id):
     first_name, last_name = person_id.split(":")[1].split("__")
     i = obj["id"]
     for name in [first_name, last_name]:
-        if name not in authorName_object:
-            authorName_object[name] = set()
-        authorName_object[name].add(i)
+        if name not in personName_object:
+            personName_object[name] = set()
+        personName_object[name].add(i)
 
 def link_add(obj,info,p=False):
 

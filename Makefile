@@ -36,3 +36,4 @@ clean_placeholders:
 	rm -f sources/*/*__externallinks.json
 	rm -f sources/*/*__caida.json
 	rm -f sources/*/*___*.json
+	rm -f *json
