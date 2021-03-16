@@ -200,6 +200,28 @@ def main():
     for obj in list(id_object.values()):
         object_date_add(obj)
 
+    ######################
+    # tag objects linked to caida_data
+    ######################
+    tag_caida_data = "tag:caida_data"
+    tag_obj = id_object[tag_caida_data] = {"__typename":"Tag", "id":"tag:caida_data", "filename":sys.argv[0]}
+    ids = set()
+    for id0,id_link in id_id_link.items():
+        obj0 = id_object[id0]
+        if obj0["__typename"] == "Dataset" and "tag:caida" in obj0["tags"]:
+            for id1 in id_link.keys():
+                obj1 = id_object[id1]
+                if obj1["__typename"] != "Tag" and "tag:caida_data" not in obj1["tags"]:
+                    if "tags" not in obj1:
+                        obj1["tags"] = []
+                    ids.add(obj1["id"])
+                    obj1["tags"].append(tag_caida_data)
+
+    ######################
+    link = {"to":tag_caida_data}
+    for id_ in ids:
+        link_add(id_object[id_], link)
+
     #######################
     # Check that the objects are valid
     #######################
@@ -272,6 +294,10 @@ def main():
     ######################
     for name,obj in authorName_object.items():
         authorName_object[name] = list(obj)
+
+
+
+
 
     #######################
     # print files
@@ -424,6 +450,9 @@ def object_finish(obj):
         for link in obj["links"]:
             link_add(obj,link)
         del obj["links"]
+
+    if "tags" not in obj:
+        obj["tags"] = []
 
 
     for key,value in obj.items():
@@ -609,7 +638,7 @@ def authorName_add(obj, person_id):
             authorName_object[name] = set()
         authorName_object[name].add(i)
 
-def link_add(obj,info):
+def link_add(obj,info,p=False):
 
     if type(info) == str:
         to_original = info
@@ -633,7 +662,6 @@ def link_add(obj,info):
         return False
 
     info["from"] = obj["id"]
-
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
         a_id = info[a]
