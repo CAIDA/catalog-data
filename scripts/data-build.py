@@ -57,7 +57,8 @@ id_id_link = {}
 
 id_word_score = {}
 
-personName_object = {}
+personName_ids = {}
+type_ids = {}
 
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
@@ -85,7 +86,8 @@ id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 pubdb_links_file = "data/pubdb_links.json"
-personName_object_file = "personName_object.json"
+personName_ids_file = "personName_ids.json"
+type_ids_file = "type_ids.json"
 
 filename_errors = {}
 
@@ -292,8 +294,19 @@ def main():
     ######################
     # Convert set to list
     ######################
-    for name,obj in personName_object.items():
-        personName_object[name] = list(obj)
+    for name,obj in personName_ids.items():
+        personName_ids[name] = list(obj)
+
+
+    ######################
+    # Create a type index
+    ######################
+    type_ids = {}
+    for obj in id_object.values():
+        t = obj["__typename"]
+        if t not in type_ids:
+            type_ids[t] = []
+        type_ids[t].append(obj["id"])
 
     #######################
     # print files
@@ -301,8 +314,11 @@ def main():
     print ("writing",id_object_file)
     json.dump(id_object, open(id_object_file,"w"),indent=4)
 
-    print ("writing",personName_object_file)
-    json.dump(personName_object, open(personName_object_file,"w"),indent=4)
+    print ("writing",personName_ids_file)
+    json.dump(personName_ids, open(personName_ids_file,"w"),indent=4)
+
+    print ("writing",type_ids_file)
+    json.dump(type_ids, open(type_ids_file,"w"),indent=4)
 
     print ("writing",id_id_link_file)
     json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
@@ -630,9 +646,9 @@ def personName_add(obj, person_id):
     first_name, last_name = person_id.split(":")[1].split("__")
     i = obj["id"]
     for name in [first_name, last_name]:
-        if name not in personName_object:
-            personName_object[name] = set()
-        personName_object[name].add(i)
+        if name not in personName_ids:
+            personName_ids[name] = set()
+        personName_ids[name].add(i)
 
 def link_add(obj,info,p=False):
 
