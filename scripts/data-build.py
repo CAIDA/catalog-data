@@ -203,7 +203,7 @@ def main():
     ######################
     # tag objects linked to caida_data
     ######################
-    tag_caida_data = "tag:caida_data"
+    tag_caida_data = "tag:used_caida_data"
     tag_obj = id_object[tag_caida_data] = {"__typename":"Tag", "id":"tag:caida_data", "filename":sys.argv[0]}
     ids = set()
     for id0,id_link in id_id_link.items():
