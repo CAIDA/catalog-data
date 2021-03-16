@@ -168,6 +168,9 @@ def parse_catalog_data_caida():
         file_path = "{}{}".format(path, file)
 
         metadata = parse_metadata(file_path)
+        if metadata is None:
+            continue 
+
         # not including private datasets
         if "visibility" not in metadata or metadata["visibility"] != "private":
             if metadata["id"] in seen_id:
@@ -240,7 +243,7 @@ def parse_metadata(filename):
                             metadata = json.loads(buffer)
                             metadata["filename"] = filename
                         except json.decoder.JSONDecodeError as e:
-                            print ("json parse error in metadata",filename, e,file=sys.stderr)
+                            print ("   json parse error in metadata",filename, e,file=sys.stderr)
                             return None
                     elif metadata is None:
                         print("found section '"+section+"' before '~~~metadata' in",filename, file=sys.stderr)
