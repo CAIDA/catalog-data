@@ -50,6 +50,7 @@ A search query can be generated from a search string by splitting the string on 
       |   key    |    value     | 
       |----------|--------------|
       |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
+      |   persons | comma separated list of person's names<br> persons=john will returns all persons with john in thier name |  
       
 - **ids** (tag:topology)
 
