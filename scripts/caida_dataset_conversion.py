@@ -243,6 +243,7 @@ def parse_metadata(filename):
                             metadata = json.loads(buffer)
                             metadata["filename"] = filename
                         except json.decoder.JSONDecodeError as e:
+                            print (buffer)
                             print ("   json parse error in metadata",filename, e,file=sys.stderr)
                             return None
                     elif metadata is None:
