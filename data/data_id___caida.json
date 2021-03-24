@@ -274,10 +274,10 @@
     "id":"dataset:2020_unintended_consequences",
     "name":"PAM 2020 Unintended consequences",
     "filename":"sources/dataset/2020_unintended_consequences___caida.json",
-    "organization":"Series([], )",
+    "organization":"CAIDA",
     "description":"Data supplement for paper Unintended consequences: Effects of submarine cable deployment on Internet routing R. Fanou, B. Huffaker, R. Mok, and k. claffy in Passive and Active Measurement Conference (PAM), Mar 2020. ",
-    "status":"Series([], )",
-    "tags":[" )", "Series([]"],
+    "status":"snapshot",
+    "tags":["bgp", "caida", "topology", "traceroute"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
        {
@@ -1236,16 +1236,6 @@
          "tags":["file"]
        }
    ]
-  },
-  {
-    "id":"dataset:spoofer_data",
-    "name":"Spoofer data",
-    "filename":"sources/dataset/spoofer_data___caida.json",
-    "organization":"CAIDA",
-    "description":"Seeking to minimize Internet's susceptibility to spoofed DDoS attacks, we are developing and supporting open-source software tools to assess and report on the deployment of source address validation (SAV) best anti-spoofing practices. This project includes applied research, software development, new data analytics, systems integration, operations and maintenance, and an interactive analysis and reporting service.",
-    "status":"complete",
-    "tags":["caida", "security", "spoofing"],
-    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
     "id":"dataset:telescope_anon_conficker",
