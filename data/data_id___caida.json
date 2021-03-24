@@ -1238,6 +1238,16 @@
    ]
   },
   {
+    "id":"dataset:spoofer_data",
+    "name":"Spoofer data",
+    "filename":"sources/dataset/spoofer_data___caida.json",
+    "organization":"CAIDA",
+    "description":"Seeking to minimize Internet's susceptibility to spoofed DDoS attacks, we are developing and supporting open-source software tools to assess and report on the deployment of source address validation (SAV) best anti-spoofing practices. This project includes applied research, software development, new data analytics, systems integration, operations and maintenance, and an interactive analysis and reporting service.",
+    "status":"complete",
+    "tags":["caida", "security", "spoofing"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
     "id":"dataset:telescope_anon_conficker",
     "name":"Three days of Conficker",
     "filename":"sources/dataset/telescope_anon_conficker___caida.json",
