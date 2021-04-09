@@ -1,0 +1,23 @@
+{
+    "id": "beluga",
+    "name": "Beluga",
+    "organization": "CAIDA",
+    "description": "Beluga provides a real-time graph of RTTs and packet loss to an end host, showing both total round trip time and per-hop round trip time. It also shows a historical statistical breakdown of RTTs, to allow trend analysis.",
+    "tags": [
+        "Visualization",
+        "topology",
+        "performance",
+        "measurement",
+        "caida"
+    ],
+    "dateStart": "2002.08",
+    "resources": [
+        {
+            "name": "restricted",
+            "url": "https://www.caida.org/catalog/software/beluga",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

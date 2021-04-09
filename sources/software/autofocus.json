@@ -1,0 +1,18 @@
+{
+    "id": "autofocus",
+    "name": "AutoFocus",
+    "organization": "CAIDA",
+    "description": "AutoFocus is a traffic analysis and visualization tool that describes the traffic mix of a link through textual reports and time series plots.",
+    "tags": [
+        "traffic",
+        "measurement"
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/measurement/autofocus/",
+            "tags": []
+        }
+    ]
+}
