@@ -5,7 +5,7 @@
     "description": "AutoFocus is a traffic analysis and visualization tool that describes the traffic mix of a link through textual reports and time series plots.",
     "tags": [
         "traffic",
-        "measurement"
+        "measurement",
         "caida"
     ],
     "resources": [
