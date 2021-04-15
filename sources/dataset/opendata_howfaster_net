@@ -18,8 +18,8 @@
             "url": "https://open.data.howfaster.net/",
             "tag": [
                 "file",
-				"csv",
-				"json"
+		"csv",
+		"json"
             ]
         },
         {
@@ -27,6 +27,7 @@
             "url": "https://ftp.osuosl.org/pub/cybercomplex/howfaster/",
             "tags": [
                 "file",
+		"ftp",
                 "csv",
                 "json"
             ]
