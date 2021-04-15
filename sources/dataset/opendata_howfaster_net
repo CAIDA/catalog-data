@@ -18,8 +18,8 @@
             "url": "https://open.data.howfaster.net/",
             "tag": [
                 "file",
-				"csv",
-				"json"
+		"csv",
+		"json"
             ]
         },
         {
@@ -27,12 +27,15 @@
             "url": "https://ftp.osuosl.org/pub/cybercomplex/howfaster/",
             "tags": [
                 "file",
+                "ftp",
                 "csv",
                 "json"
             ]
         }
     ],
     "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
-    "licenses": [],
+    "licenses": [
+        "license:odbl_v10.json"
+    ],
     "links": []
 }
