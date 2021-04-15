@@ -35,7 +35,7 @@
     ],
     "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
     "licenses": [
-        "license:odbl_v10.json"
+        "license:odbl_v10"
     ],
     "links": []
 }
