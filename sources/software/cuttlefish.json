@@ -1,0 +1,20 @@
+{
+    "id": "cuttlefish",
+    "name": "Cuttlefish",
+    "organization": "CAIDA",
+    "description": "Cuttlefish produces animated GIFs that reveal the interplay between the diurnal and geographical patterns of displayed data. By showing how the sun's shadow covers the world map, Cuttlefish clearly depicts the time of day at a given geographic region, while moving graphs illustrate the relationship between local time and the visualized events.",
+    "tags": [
+        "visualization",
+        "traffic",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/cuttlefish/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

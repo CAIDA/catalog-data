@@ -1,0 +1,20 @@
+{
+    "id": "skitter",
+    "name": "Skitter",
+    "organization": "CAIDA",
+    "description": "First released in 1998, skitter is a tool for actively probing the Internet in order to analyze topology and performance.",
+    "tags": [
+        "topology",
+        "measurement",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "restricted",
+            "url": "https://www.caida.org/tools/measurement/skitter/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

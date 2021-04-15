@@ -1,0 +1,21 @@
+{
+    "id": "walrus",
+    "name": "Walrus",
+    "organization": "CAIDA",
+    "description": "Walrus is a tool for interactively visualizing large directed graphs in three-dimensional space. By employing a fisheye-like distortion, it provides a display that simultaneously shows local detail and the global context.",
+    "tags": [
+        "visualization",
+        "topology",
+        "caida"
+    ],
+    "dateStart": "2001.10",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/walrus/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

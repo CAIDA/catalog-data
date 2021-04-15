@@ -1,0 +1,19 @@
+{
+    "id": "topostats",
+    "name": "Topostats",
+    "organization": "CAIDA",
+    "description": "Topostats is a package of programs that calculate various statistics on network topologies (that is, on graphs). The computed statistics are defined in the paper 'Lessons from Three Views of the Internet Topology: Technical Report', which also gives a sample of the computed statistics. The topostats package computes most but not all of these statistics, and this package does not itself make any plots.",
+    "tags": [
+        "topology",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/topostats/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

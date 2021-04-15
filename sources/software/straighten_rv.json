@@ -1,0 +1,21 @@
+{
+    "id": "straighten_rv",
+    "name": "StraightenRV",
+    "organization": "CAIDA",
+    "description": "The rv2atoms package contains perl scripts which analyze and process a Route Views table and compute BGP policy atoms.",
+    "tags": [
+        "topology",
+        "data analysis",
+        "caida"
+    ],
+    "dateStart": "2002.10",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/straighten_rv/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

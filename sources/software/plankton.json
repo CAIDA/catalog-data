@@ -1,0 +1,21 @@
+{
+    "id": "plankton",
+    "name": "Plankton",
+    "organization": "CAIDA",
+    "description": "Plankton allows user to interact with the caching hierarchy.",
+    "tags": [
+        "visualization",
+        "topology",
+        "caida"
+    ],
+    "dateStart": "1998.11",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/plankton/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}
