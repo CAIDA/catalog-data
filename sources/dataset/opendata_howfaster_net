@@ -4,7 +4,9 @@
         "geolocation",
         "geographic",
         "routes",
-		"security"
+		"security",
+		"topology",
+		"active measurement"
     ],
     "dateStart": "2020.09",
     "organization": "Cyber-Complex Foundation",
@@ -12,10 +14,21 @@
     "name": "Open.Data HowFaster.NET",
     "resources": [
         {
-            "name": "public",
+            "name": "Public - Main mirror",
             "url": "https://open.data.howfaster.net/",
             "tag": [
-                "file"
+                "file",
+				"csv",
+				"json"
+            ]
+        },
+        {
+            "name": "Public - Additional mirror",
+            "url": "https://ftp.osuosl.org/pub/cybercomplex/howfaster/",
+            "tags": [
+                "file",
+                "csv",
+                "json"
             ]
         }
     ],
