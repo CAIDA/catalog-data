@@ -1,0 +1,25 @@
+{
+    "id": "opendata_howfaster_net",
+    "tags": [
+        "geolocation",
+        "geographic",
+        "routes",
+		"security"
+    ],
+    "dateStart": "2020.09",
+    "organization": "Cyber-Complex Foundation",
+    "status": "ongoing",
+    "name": "Open.Data HowFaster.NET",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://open.data.howfaster.net/",
+            "tag": [
+                "file"
+            ]
+        }
+    ],
+    "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
+    "licenses": [],
+    "links": []
+}
