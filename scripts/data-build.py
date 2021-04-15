@@ -670,7 +670,7 @@ def link_add(obj,info,p=False):
         return None
 
     if to not in id_object:
-        error_add(obj["filename"], "missing id "+to)
+        error_add(obj["filename"], "can't find id "+to)
         return False
 
     info["from"] = obj["id"]
