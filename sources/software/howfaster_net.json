@@ -5,7 +5,7 @@
     "description": "A web portal that presents data and visualizations about the topology of the Internet. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
     "tags": [
         "CCF",
-		"iThena",
+        "iThena",
         "geolocation",
         "geographic",
         "routes",
@@ -22,8 +22,8 @@
             "name": "public",
             "url": "https://howfaster.net",
             "tags": [
-				"web"
-			]
+                "web"
+            ]
         }
     ],
     "licenses": [],
@@ -31,5 +31,5 @@
         {
             "to": "dataset:opendata_howfaster_net",
             "label": "used by"
-        }
+        }]
 }
