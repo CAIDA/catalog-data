@@ -4,9 +4,13 @@
         "geolocation",
         "geographic",
         "routes",
-		"security",
-		"topology",
-		"active measurement"
+        "security",
+        "topology",
+        "active measurement",
+        "bgp",
+        "traces",
+        "ipv4",
+        "infrastructure"
     ],
     "dateStart": "2020.09",
     "organization": "Cyber-Complex Foundation",
