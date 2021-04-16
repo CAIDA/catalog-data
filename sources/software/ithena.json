@@ -22,9 +22,9 @@
             "name": "public",
             "url": "https://ithena.net",
             "tags": [
-				"web",
-				"cross-platform"
-			]
+                "web",
+                "cross-platform"
+            ]
         }
     ],
     "licenses": [],
@@ -36,5 +36,5 @@
         {
             "to": "software:howfaster_net",
             "label": "used by"
-        }
+        }]
 }
