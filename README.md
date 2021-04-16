@@ -1,5 +1,5 @@
 ### Catalog Data
-This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org)'s database.
+This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org))'s database.
 
 ### wiki links
 - [overview of the JSON files](https://github.com/CAIDA/catalog-data/wiki/overview).
