@@ -1,12 +1,18 @@
 {
     "id": "opendata_howfaster_net",
     "tags": [
+        "CCF",
+        "iThena",
         "geolocation",
         "geographic",
         "routes",
-		"security",
-		"topology",
-		"active measurement"
+        "security",
+        "topology",
+        "active measurement",
+        "bgp",
+        "traces",
+        "ipv4",
+        "infrastructure"
     ],
     "dateStart": "2020.09",
     "organization": "Cyber-Complex Foundation",
@@ -16,10 +22,10 @@
         {
             "name": "Public - Main mirror",
             "url": "https://open.data.howfaster.net/",
-            "tag": [
+            "tags": [
                 "file",
-		"csv",
-		"json"
+                "csv",
+                "json"
             ]
         },
         {
@@ -35,7 +41,12 @@
     ],
     "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
     "licenses": [
-        "license:odbl_v10"
+        "license:odbl_v10",
+        "license:dbcl_v10"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "software:howfaster_net",
+            "label": "used by"
+        }]
 }
