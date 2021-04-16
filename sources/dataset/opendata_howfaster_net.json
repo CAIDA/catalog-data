@@ -1,6 +1,8 @@
 {
     "id": "opendata_howfaster_net",
     "tags": [
+        "CCF",
+        "iThena",
         "geolocation",
         "geographic",
         "routes",
@@ -20,10 +22,10 @@
         {
             "name": "Public - Main mirror",
             "url": "https://open.data.howfaster.net/",
-            "tag": [
+            "tags": [
                 "file",
-		"csv",
-		"json"
+                "csv",
+                "json"
             ]
         },
         {
@@ -42,5 +44,9 @@
         "license:odbl_v10",
         "license:dbcl_v10"
     ],
-    "links": []
+    "links": [
+        {
+            "to": "software:howfaster_net",
+            "label": "used by"
+        }
 }
