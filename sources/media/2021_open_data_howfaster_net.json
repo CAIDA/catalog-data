@@ -1,0 +1,46 @@
+{
+    "id": "2021_open_data_howfaster_net",
+    "name": "Open.Data HowFaster.NET: Open Internet network measurements datasets",
+    "description": "The event refers to the problem area of the structure of the global Internet. This structure may look different in different regions of the world. The event will include both theoretical introduction and more practical elements. We will answer many questions and problems concerning network access and data transmission. The event will be located in the areas of data aggregation / processing / analysis, computer networks and security. Topics will be based on two projects implemented by the Cyber-Complex Foundation: iThena and HowFaster.NET. The main aspect of the problems concerns data made available under open licenses. The presentation was made as part of Open data Day 2021.",
+    "tags": [
+        "CCF",
+        "iThena",
+        "HowFaster.NET",
+        "bgp",
+        "presentation",
+        "security",
+        "routes",
+        "traces",
+        "infrastructure",
+        "big data"
+    ],
+    "presenters": [],
+    "links": [],
+    "date": "2021.03.06",
+    "type": "PRESENTATION",
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://howfaster.net/files/presentations/OPEN_DATA_DAY_2021_OPEN.DATA_HOWFASTER.NET.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "presentation"
+            ]
+        },
+        {
+            "name": "URL",
+            "url": "https://odd.howfaster.net",
+            "tags": [
+                "url",
+                "presentation"
+            ]
+        }
+    ],
+    "authors":[
+        {
+            "person": "person:swierczewski_lukasz",
+            "organizations": ["Cyber-Complex Foundation, Poland"]
+        }
+    ]
+}
