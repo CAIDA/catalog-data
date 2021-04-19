@@ -14,7 +14,13 @@
         "infrastructure",
         "big data"
     ],
-    "presenters": [],
+    "presenters": [
+        {
+            "person": "person:swierczewski__lukasz",
+            "venue": "venue:open_data_day_2021",
+            "date": "2021.03.06",
+            "url": "https://opendataday.org/"
+        }],
     "links": [],
     "date": "2021.03.06",
     "type": "PRESENTATION",
@@ -39,7 +45,7 @@
     ],
     "authors":[
         {
-            "person": "person:swierczewski_lukasz",
+            "person": "person:swierczewski__lukasz",
             "organizations": ["Cyber-Complex Foundation, Poland"]
         }
     ]

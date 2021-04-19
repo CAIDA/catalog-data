@@ -1,0 +1,44 @@
+{
+    "id": "2020_lvee_online_edition_ithena",
+    "name": " iThena Project: Distributed measurements and analysis of the global Internet – BOINC (Berkeley Open Infrastructure for Network Computing) and Big Data environment​",
+    "description": "Presentation the iThena project initiative realized on the BOINC platform.",
+    "tags": [
+        "CCF",
+        "iThena",
+		"HowFaster.NET",
+        "bgp",
+        "presentation",
+        "security",
+        "routes",
+        "traces",
+        "infrastructure",
+        "big data"
+    ],
+    "presenters": [
+        {
+            "person": "person:swierczewski__lukasz",
+            "venue": "venue:lvee_2020_online_edition",
+            "date": "2020.12.19",
+            "url": "https://opendataday.org/"
+        }],
+    "links": [],
+    "date": "2020.12.19",
+    "type": "PRESENTATION",
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "http://cybercomplex.net/docs/LVEE_2020_ONLINE_EDITION_SWIERCZEWSKI.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "presentation"
+            ]
+        }
+    ],
+    "authors":[
+        {
+            "person": "person:swierczewski__lukasz",
+            "organizations": ["Cyber-Complex Foundation, Poland"]
+        }
+    ]
+}
