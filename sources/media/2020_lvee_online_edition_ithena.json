@@ -5,7 +5,7 @@
     "tags": [
         "CCF",
         "iThena",
-		"HowFaster.NET",
+	"HowFaster.NET",
         "bgp",
         "presentation",
         "security",
@@ -17,7 +17,7 @@
     "presenters": [
         {
             "person": "person:swierczewski__lukasz",
-            "venue": "venue:lvee_2020_online_edition",
+            "venue": "lvee_2020_online_edition",
             "date": "2020.12.19",
             "url": "https://opendataday.org/"
         }],
