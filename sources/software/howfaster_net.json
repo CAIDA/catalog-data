@@ -31,5 +31,14 @@
         {
             "to": "dataset:opendata_howfaster_net",
             "label": "used by"
-        }]
+        },
+        {
+            "to": "media:2021_open_data_howfaster_net",
+            "label": "used by"
+        },
+        {
+            "to": "media:2020_lvee_online_edition_ithena",
+            "label": "used by"
+        }
+    ]
 }

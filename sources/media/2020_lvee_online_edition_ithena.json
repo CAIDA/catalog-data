@@ -17,7 +17,10 @@
     "presenters": [
         {
             "person": "person:swierczewski__lukasz",
-            "venue": "lvee_2020_online_edition",
+            "organizations": [
+                "Cyber-Complex Foundation, Poland"
+            ],
+            "venue": "LVEE 2020 ONLINE EDITION",
             "date": "2020.12.19",
             "url": "https://opendataday.org/"
         }],
