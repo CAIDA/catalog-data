@@ -198,9 +198,9 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates ( skipping '*___*' )")
-    for obj in list(id_object.values()):
-        object_date_add(obj)
+    #print ("adding dates ( skipping '*___*' )")
+    #for obj in list(id_object.values()):
+        #object_date_add(obj)
 
     ######################
     # tag objects linked to caida_data
@@ -307,6 +307,10 @@ def main():
         if t not in type_ids:
             type_ids[t] = []
         type_ids[t].append(obj["id"])
+
+    # Removing the private objects
+    print ("removing private")
+    remove_private(id_object, id_id_link)
 
     #######################
     # print files
@@ -911,6 +915,35 @@ def word_freq_get(value):
                     word_freq[w] = 1
     #print (json.dumps(word_freq,indent=4))
     return word_freq
+
+###########################
+
+def is_private(obj):
+    return "visibility" in obj and obj["visibility"] == "private"
+
+def remove_private(id_object, id_id_link):
+    private = []
+    for id0,id_link in id_id_link.items():
+        obj = id_object[id0]
+        if is_private(obj):
+            private.append(id0)
+        else:
+            p = []
+            for id1 in id_link.keys():
+                obj = id_object[id1]
+                if is_private(obj):
+                    p.append(id1)
+            for id1 in p:
+                del id_link[id1]
+    for id in private:
+        del id_id_link[id]
+
+    private = []
+    for id, obj in id_object.items():
+        if is_private(obj):
+            private.append(id)
+    for id in private:
+        del id_object[id]
 
 ###################
 #

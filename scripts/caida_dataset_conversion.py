@@ -162,62 +162,68 @@ def parse_catalog_data_caida():
     for file in os.listdir(path):
         # Edge Case: Skip if file is not a .md file.
         if not re_mkdn.search(file):
+            print ("   skipping",file)
             continue
+
 
         file_name = file[:file.index(".")].replace("-", "_")
         file_path = "{}{}".format(path, file)
 
         metadata = parse_metadata(file_path)
         # not including private datasets
-        if "visibility" not in metadata or metadata["visibility"] != "private":
-            if metadata["id"] in seen_id:
-                print ("duplicate id",metadata["id"])
-                print ("    ",metadata["id"])
-                print ("    ",seen_id["id"])
-                continue
+        if metadata["id"] in seen_id:
+            print ("duplicate id",metadata["id"])
+            print ("    ",metadata["id"])
+            print ("    ",seen_id["id"])
+            continue
 
-            # If it has no description skip it
-            if "description" not in metadata or re.search("^\s*$", metadata["description"]):
-                number_skipped_no_description += 1
-                continue
+        # If it has no description skip it
+        if "description" not in metadata or re.search("^\s*$", metadata["description"]):
+            number_skipped_no_description += 1
+            continue
 
-            # Edge Case: Replace missing names with ID.
-            if "name" not in metadata:
-                name = metadata["id"].replace("_", " ").upper()
-                metadata["name"] = name
+        # Edge Case: Remove tool_ from softwares.
+        if re.search("tool[-_]", metadata["id"]):
+            new_name = metadata["id"][5::]
+            metadata["id"] = new_name
+            type_ = "software"
+        else:
+            type_ = "dataset"
 
-            # Edge Case: Remove tool_ from softwares.
-            if "tool_" in metadata["id"]:
-                new_name = metadata["id"][5::]
-                metadata["id"] = new_name
+        metadata["id"] = utils.id_create(file_path, type_, metadata["id"])
 
-            # Edge Case: Add CAIDA as organization if missing key.
-            if "organization" not in metadata:
-                metadata["organization"] = "CAIDA"
+        # Edge Case: Replace missing names with ID.
+        if "name" not in metadata:
+            name = metadata["id"].replace("_", " ").upper()
+            metadata["name"] = name
 
-            # Edge Case: Add CAIDA as a tag to all datasets.
-            if "tags" not in metadata:
-                metadata["tags"] = []
-            if "CAIDA" in metadata["organization"]:
-                if "caida" not in metadata["tags"]:
-                    metadata["tags"].append("caida")
+        # Edge Case: Add CAIDA as organization if missing key.
+        if "organization" not in metadata:
+            metadata["organization"] = "CAIDA"
 
-            # Edge Case: Remove 0 length lists from objects.
-            keys = []
-            for key,value in metadata.items():
-                if type(value) == str and re.search("^\s*$", value):
-                    keys.append(key)
-            for key in keys:
-                del metadata[key]
+        # Edge Case: Add CAIDA as a tag to all datasets.
+        if "tags" not in metadata:
+            metadata["tags"] = []
+        if "CAIDA" in metadata["organization"]:
+            if "caida" not in metadata["tags"]:
+                metadata["tags"].append("caida")
 
-            # Store the metadata
-            id_ = metadata["id"]
-            if id_ in id_2_object:
-                print ("duplicate",id_)
-                print ("    ",id_2_object["filename"])
-                print ("    ",metadata["filename"])
-            else:
-                id_2_object[metadata["id"]] = metadata
+        # Edge Case: Remove 0 length lists from objects.
+        keys = []
+        for key,value in metadata.items():
+            if type(value) == str and re.search("^\s*$", value):
+                keys.append(key)
+        for key in keys:
+            del metadata[key]
+
+        # Store the metadata
+        id_ = metadata["id"]
+        if id_ in id_2_object:
+            print ("duplicate",id_)
+            print ("    ",id_2_object["filename"])
+            print ("    ",metadata["filename"])
+        else:
+            id_2_object[metadata["id"]] = metadata
 
     print ("   number skipped no desc:", number_skipped_no_description)
 
@@ -303,7 +309,12 @@ def print_datasets():
             obj = id_2_object[id_]
             strings = []
 
-            for key in ["id","name","filename", "organization", "description", "status", "dateCreated", "dateLastUpdated"]:
+            if "visibility" not in obj or obj["visibility"] != "private":
+                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated"]
+            else:
+                keys = ["id", "name", "visibility"]
+
+            for key in keys:
                 if key in obj:
                     strings.append('    "'+key+'":'+json.dumps(obj[key]))
 
