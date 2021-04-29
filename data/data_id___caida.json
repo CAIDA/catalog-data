@@ -35,7 +35,7 @@
   },
   {
     "id":"dataset:2008_imc_trmethod",
-    "name":"DATASET:2008 IMC TRMETHOD",
+    "name":"2008-IMC-TRMETHOD",
     "filename":"sources/dataset/dataset:2008_imc_trmethod___caida.json",
     "organization":"CAIDA",
     "description":"Traceroute Probe Method 2008-08 Dataset Traceroute paths from 8 vantage points on Ark to a variety of destinations using up to 6 different probing methods.  Data supplement for paper   M. Luckie, Y. Hyun, and B. Huffaker,   \"Traceroute Probe Method and Forward IP Path Inference\",   Proc. Internet Measurement Conference (IMC),   Vouliagmeni, Greece, Oct 2008, pp. 311-324, ",
@@ -52,7 +52,7 @@
   },
   {
     "id":"dataset:2009_imc_spoofer",
-    "name":"DATASET:2009 IMC SPOOFER",
+    "name":"2009-IMC-SPOOFER",
     "filename":"sources/dataset/dataset:2009_imc_spoofer___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement to paper R. Beverly, A. Berger, Y. Hyun, and k. claffy, \"Understanding the Efficacy of Deployed Internet Source Address Validation Filtering\", in Internet Measurement Conference (IMC), Nov 2009. ",
@@ -69,7 +69,7 @@
   },
   {
     "id":"dataset:2010_pam_as_annotations",
-    "name":"DATASET:2010 PAM AS ANNOTATIONS",
+    "name":"2010-PAM-AS-ANNOTATIONS",
     "filename":"sources/dataset/dataset:2010_pam_as_annotations___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement for paper   B. Huffaker, A. Dhamdhere, M. Fomenkov, and k. claffy,   \"Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers\",   in Passive and Active Network Measurement Workshop (PAM), Apr 2010.  This data supplement was available as part of the restricted Ark topology data (until 1-Feb 2014??). After that is was made public. Here all downloads are lumped together into a single 'public' count. ",
@@ -86,7 +86,7 @@
   },
   {
     "id":"dataset:2011_ccr_crooked_traceroute",
-    "name":"DATASET:2011 CCR CROOKED TRACEROUTE",
+    "name":"2011-CCR-CROOKED-TRACEROUTE",
     "filename":"sources/dataset/dataset:2011_ccr_crooked_traceroute___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper M. Luckie, A. Dhamdhere, k. claffy, and D. Murrell \"Measured Impact of Crooked Traceroute\" ACM SIGCOMM Computer Communication Review (CCR), vol. 41, no. 1, pp. 14--21, Jan 2011. ",
@@ -103,7 +103,7 @@
   },
   {
     "id":"dataset:2013_imc_asrank",
-    "name":"DATASET:2013 IMC ASRANK",
+    "name":"2013-IMC-ASRANK",
     "filename":"sources/dataset/dataset:2013_imc_asrank___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper M. Luckie, B. Huffaker, k. claffy, A. Dhamdhere, and V. Giotsas \"AS Relationships, Customer Cones, and Validation\" in Internet Measurement Conference (IMC), Oct 2013, pp. 243--256. ",
@@ -120,7 +120,7 @@
   },
   {
     "id":"dataset:2013_ton_alias_resolution",
-    "name":"DATASET:2013 TON ALIAS RESOLUTION",
+    "name":"2013-TON-ALIAS-RESOLUTION",
     "filename":"sources/dataset/dataset:2013_ton_alias_resolution___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement for paper K. Keys, Y. Hyun, M. Luckie, and k. claffy, \"Internet-Scale IPv4 Alias Resolution with MIDAR\", IEEE/ACM Transactions on Networking, vol. 21, no. 2, pp. 383--399, Apr 2013. ",
@@ -171,7 +171,7 @@
   },
   {
     "id":"dataset:2014_pam_asrank_2ndlook",
-    "name":"DATASET:2014 PAM ASRANK 2NDLOOK",
+    "name":"2014-PAM-ASRANK-2NDLOOK",
     "filename":"sources/dataset/dataset:2014_pam_asrank_2ndlook___caida.json",
     "organization":"CAIDA",
     "description":"Contains ISI hitlist information. Unpublished data supplement for   M. Luckie and k. claffy   \"A Second Look at Detecting Third-Party Addresses in Traceroute Traces with the IP Timestamp Option\"   in Passive and Active Network Measurement Workshop (PAM), Mar 2014, vol. 8362, pp. 46--55. ",
@@ -187,7 +187,7 @@
   },
   {
     "id":"dataset:2015_imc_blind",
-    "name":"DATASET:2015 IMC BLIND",
+    "name":"2015-IMC-BLIND",
     "filename":"sources/dataset/dataset:2015_imc_blind___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper \"Resilience of Deployed TCP to Blind Attacks\" Luckie et al., IMC 2015, Oct 28-30, Tokyo, JP ",
@@ -863,7 +863,7 @@
   },
   {
     "id":"dataset:comcast_ping",
-    "name":"DATASET:COMCAST PING",
+    "name":"COMCAST-PING",
     "visibility":"private",
     "tags":["caida", "performance"],
     "licenses":["license:BSD-4-Clause-UC"]
@@ -1043,21 +1043,21 @@
   },
   {
     "id":"dataset:ddos_attack_2007_raw",
-    "name":"DATASET:DDOS ATTACK 2007 RAW",
+    "name":"DDOS-ATTACK-2007-RAW",
     "visibility":"private",
     "tags":["caida", "security"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:dhs_imam_ipv4_transfers",
-    "name":"DATASET:DHS IMAM IPV4 TRANSFERS",
+    "name":"DHS-IMAM-IPV4-TRANSFERS",
     "visibility":"private",
     "tags":["NaN", "caida"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
     "id":"dataset:dns_chile_daily_traces",
-    "name":"DATASET:DNS CHILE DAILY TRACES",
+    "name":"DNS-CHILE-DAILY-TRACES",
     "visibility":"private",
     "tags":["DNS"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
@@ -1081,7 +1081,7 @@
   },
   {
     "id":"dataset:dnsstat",
-    "name":"DATASET:DNSSTAT",
+    "name":"DNSSTAT",
     "visibility":"private",
     "tags":["DNS", "caida"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1102,7 +1102,7 @@
   },
   {
     "id":"dataset:gatech_botnet",
-    "name":"DATASET:GATECH BOTNET",
+    "name":"GATECH-BOTNET",
     "visibility":"private",
     "tags":["security"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
@@ -1116,14 +1116,14 @@
   },
   {
     "id":"dataset:geoloc_ping",
-    "name":"DATASET:GEOLOC PING",
+    "name":"GEOLOC-PING",
     "visibility":"private",
     "tags":["caida", "geolocation"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:geoloc_ping_20140530",
-    "name":"DATASET:GEOLOC PING 20140530",
+    "name":"GEOLOC-PING-20140530",
     "visibility":"private",
     "tags":["caida", "geolocation"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1195,7 +1195,7 @@
   },
   {
     "id":"dataset:isc_domain_survey",
-    "name":"DATASET:ISC DOMAIN SURVEY",
+    "name":"ISC-DOMAIN-SURVEY",
     "visibility":"private",
     "tags":["DNS"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1219,14 +1219,14 @@
   },
   {
     "id":"dataset:logs_ms08_067",
-    "name":"DATASET:LOGS MS08 067",
+    "name":"LOGS-MS08-067",
     "visibility":"private",
     "tags":["caida", "security"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:maxmind_geolite_dumps",
-    "name":"DATASET:MAXMIND GEOLITE DUMPS",
+    "name":"MAXMIND-GEOLITE-DUMPS",
     "visibility":"private",
     "tags":["geolocation"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
@@ -1240,14 +1240,14 @@
   },
   {
     "id":"dataset:netacuity_dumps",
-    "name":"DATASET:NETACUITY DUMPS",
+    "name":"NETACUITY-DUMPS",
     "visibility":"private",
     "tags":["geolocation"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
   },
   {
     "id":"dataset:open_resolver_survey_200710",
-    "name":"DATASET:OPEN RESOLVER SURVEY 200710",
+    "name":"OPEN-RESOLVER-SURVEY-200710",
     "visibility":"private",
     "tags":["DNS", "caida"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1614,7 +1614,7 @@
   },
   {
     "id":"dataset:passive_oc48_dag",
-    "name":"DATASET:PASSIVE OC48 DAG",
+    "name":"PASSIVE-OC48-DAG",
     "visibility":"private",
     "tags":["caida", "traffic"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1638,7 +1638,7 @@
   },
   {
     "id":"dataset:passive_oc48_pcap_paix",
-    "name":"DATASET:PASSIVE OC48 PCAP PAIX",
+    "name":"PASSIVE-OC48-PCAP-PAIX",
     "visibility":"private",
     "tags":["caida", "traffic"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
@@ -1662,21 +1662,21 @@
   },
   {
     "id":"dataset:peeringdb_dumps",
-    "name":"DATASET:PEERINGDB DUMPS",
+    "name":"PEERINGDB-DUMPS",
     "visibility":"private",
     "tags":["topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:plab_results",
-    "name":"DATASET:PLAB RESULTS",
+    "name":"PLAB-RESULTS",
     "visibility":"private",
     "tags":["caida", "private"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:radargun_201204",
-    "name":"DATASET:RADARGUN 201204",
+    "name":"RADARGUN-201204",
     "visibility":"private",
     "tags":["caida", "topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
@@ -1823,7 +1823,7 @@
   },
   {
     "id":"dataset:snapp_i2net",
-    "name":"DATASET:SNAPP I2NET",
+    "name":"SNAPP-I2NET",
     "visibility":"private",
     "tags":["tbd"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
@@ -1841,7 +1841,7 @@
   },
   {
     "id":"dataset:telegeography",
-    "name":"DATASET:TELEGEOGRAPHY",
+    "name":"TELEGEOGRAPHY",
     "visibility":"private",
     "tags":["topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
@@ -2005,7 +2005,7 @@
   },
   {
     "id":"dataset:telescope_raw",
-    "name":"DATASET:TELESCOPE RAW",
+    "name":"TELESCOPE-RAW",
     "visibility":"private",
     "tags":["caida", "security", "telescope"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
@@ -2081,21 +2081,21 @@
   },
   {
     "id":"dataset:topology_truth_orig",
-    "name":"DATASET:TOPOLOGY TRUTH ORIG",
+    "name":"TOPOLOGY-TRUTH-ORIG",
     "visibility":"private",
     "tags":["caida", "topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
   },
   {
     "id":"dataset:ucsd_tap_20070514",
-    "name":"DATASET:UCSD TAP 20070514",
+    "name":"UCSD-TAP-20070514",
     "visibility":"private",
     "tags":["caida", "traffic"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:ucsd_tap_2008ditl",
-    "name":"DATASET:UCSD TAP 2008DITL",
+    "name":"UCSD-TAP-2008DITL",
     "visibility":"private",
     "tags":["caida", "traffic"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
