@@ -40,17 +40,16 @@ A search query can be generated from a search string by splitting the string on 
 
        A **-** in front of the word, reverse it's meaning and removes objects from the matching set if the word is found in a field.
 
-- **key/value pairs** (types=paper,dataset)
+- **key=value(s) pairs** (types=paper,dataset)
 
-   Currently the catalog only support's the key word ``types``.  
+   Each key/value pair has a single key, which defines the type of value, and a comma seperated list of values. The list of values is processed as a "or" operator,
+   i.e. an object is returned if it matches any of the values. 
 
-   - **Types** is a comma deliminated set of object types (``dataset,recipe``), the *type set*.  Objects are removed from
-   the matching set if thier type is not contained in the *type set*.  If types is not provided, all types are considered valid.
-
-      |   key    |    value     | 
-      |----------|--------------|
-      |   types  |   comma separated list of target types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe` | 
-      |   persons | comma separated list of person's names<br> persons=john will returns all persons with john in thier name |  
+     |   key    |    value     | 
+     |----------|--------------|
+     |   types  |  comma separated list of object types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe`  | 
+     |   persons | comma separated list of strings matching part of a person's names<br> `persons=john` will returns all persons with john in thier name  |  
+     |   ids     | comma seperated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
       
 - **ids** (tag:topology)
 
@@ -73,4 +72,5 @@ A search query can be generated from a search string by splitting the string on 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
 | ``rank -dataset:as_rank_online`` | searchs for objects with the word rank , not linked to dataset:as_rank_online | 
 | ``-caida`` | searchs for objects that do not contain the word caida | 
+| ``ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`` | return the objects with an id 2021_wie2020_report or media:2020_lvee_online_edition_ithena |
 
