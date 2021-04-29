@@ -1,0 +1,21 @@
+{
+    "id": "plot_latlong",
+    "name": "Plot-latlong",
+    "organization": "CAIDA",
+    "description": "plot-latlong is a simple tool for plotting points on geographic maps given a list of latitude/longitude pairs.",
+    "tags": [
+        "geographic",
+        "visualization",
+        "caida"
+    ],
+    "dateStart": "2003.10",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/plot-latlong/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

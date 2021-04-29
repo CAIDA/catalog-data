@@ -35,7 +35,7 @@
   },
   {
     "id":"dataset:2008_imc_trmethod",
-    "name":"DATASET:2008 IMC TRMETHOD",
+    "name":"2008-IMC-TRMETHOD",
     "filename":"sources/dataset/2008_imc_trmethod___caida.json",
     "organization":"CAIDA",
     "description":"Traceroute Probe Method 2008-08 Dataset Traceroute paths from 8 vantage points on Ark to a variety of destinations using up to 6 different probing methods.  Data supplement for paper   M. Luckie, Y. Hyun, and B. Huffaker,   \"Traceroute Probe Method and Forward IP Path Inference\",   Proc. Internet Measurement Conference (IMC),   Vouliagmeni, Greece, Oct 2008, pp. 311-324, ",
@@ -52,7 +52,7 @@
   },
   {
     "id":"dataset:2009_imc_spoofer",
-    "name":"DATASET:2009 IMC SPOOFER",
+    "name":"2009-IMC-SPOOFER",
     "filename":"sources/dataset/2009_imc_spoofer___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement to paper R. Beverly, A. Berger, Y. Hyun, and k. claffy, \"Understanding the Efficacy of Deployed Internet Source Address Validation Filtering\", in Internet Measurement Conference (IMC), Nov 2009. ",
@@ -69,7 +69,7 @@
   },
   {
     "id":"dataset:2010_pam_as_annotations",
-    "name":"DATASET:2010 PAM AS ANNOTATIONS",
+    "name":"2010-PAM-AS-ANNOTATIONS",
     "filename":"sources/dataset/2010_pam_as_annotations___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement for paper   B. Huffaker, A. Dhamdhere, M. Fomenkov, and k. claffy,   \"Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers\",   in Passive and Active Network Measurement Workshop (PAM), Apr 2010.  This data supplement was available as part of the restricted Ark topology data (until 1-Feb 2014??). After that is was made public. Here all downloads are lumped together into a single 'public' count. ",
@@ -86,7 +86,7 @@
   },
   {
     "id":"dataset:2011_ccr_crooked_traceroute",
-    "name":"DATASET:2011 CCR CROOKED TRACEROUTE",
+    "name":"2011-CCR-CROOKED-TRACEROUTE",
     "filename":"sources/dataset/2011_ccr_crooked_traceroute___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper M. Luckie, A. Dhamdhere, k. claffy, and D. Murrell \"Measured Impact of Crooked Traceroute\" ACM SIGCOMM Computer Communication Review (CCR), vol. 41, no. 1, pp. 14--21, Jan 2011. ",
@@ -103,7 +103,7 @@
   },
   {
     "id":"dataset:2013_imc_asrank",
-    "name":"DATASET:2013 IMC ASRANK",
+    "name":"2013-IMC-ASRANK",
     "filename":"sources/dataset/2013_imc_asrank___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper M. Luckie, B. Huffaker, k. claffy, A. Dhamdhere, and V. Giotsas \"AS Relationships, Customer Cones, and Validation\" in Internet Measurement Conference (IMC), Oct 2013, pp. 243--256. ",
@@ -120,7 +120,7 @@
   },
   {
     "id":"dataset:2013_ton_alias_resolution",
-    "name":"DATASET:2013 TON ALIAS RESOLUTION",
+    "name":"2013-TON-ALIAS-RESOLUTION",
     "filename":"sources/dataset/2013_ton_alias_resolution___caida.json",
     "organization":"CAIDA",
     "description":"Data supplement for paper K. Keys, Y. Hyun, M. Luckie, and k. claffy, \"Internet-Scale IPv4 Alias Resolution with MIDAR\", IEEE/ACM Transactions on Networking, vol. 21, no. 2, pp. 383--399, Apr 2013. ",
@@ -171,7 +171,7 @@
   },
   {
     "id":"dataset:2014_pam_asrank_2ndlook",
-    "name":"DATASET:2014 PAM ASRANK 2NDLOOK",
+    "name":"2014-PAM-ASRANK-2NDLOOK",
     "filename":"sources/dataset/2014_pam_asrank_2ndlook___caida.json",
     "organization":"CAIDA",
     "description":"Contains ISI hitlist information. Unpublished data supplement for   M. Luckie and k. claffy   \"A Second Look at Detecting Third-Party Addresses in Traceroute Traces with the IP Timestamp Option\"   in Passive and Active Network Measurement Workshop (PAM), Mar 2014, vol. 8362, pp. 46--55. ",
@@ -187,7 +187,7 @@
   },
   {
     "id":"dataset:2015_imc_blind",
-    "name":"DATASET:2015 IMC BLIND",
+    "name":"2015-IMC-BLIND",
     "filename":"sources/dataset/2015_imc_blind___caida.json",
     "organization":"CAIDA",
     "description":"Unpublished data supplement for paper \"Resilience of Deployed TCP to Blind Attacks\" Luckie et al., IMC 2015, Oct 28-30, Tokyo, JP ",
@@ -286,6 +286,20 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:aol_500k_users",
+    "name":"AOL 500k User Session",
+    "visibility":"private",
+    "tags":["traffic", "user queries"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:ark_iff_20140416",
+    "name":"Midar run ???",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
     "id":"dataset:ark_ipv4_aslinks",
@@ -490,6 +504,118 @@
    ]
   },
   {
+    "id":"dataset:ark_midar_20110414",
+    "name":"Midar run 2011-04-14",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20110418",
+    "name":"Midar run 2011-04-18",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20110418_analysis",
+    "name":"Midar run 2011-04-18 (analysis)",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20111024",
+    "name":"Midar run 2011-10-24",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20120723",
+    "name":"Midar run 2012-07-23",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20130422",
+    "name":"Midar run 2013-04-22",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20130724",
+    "name":"Midar run 2013-07-24",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20140421",
+    "name":"Midar run 2014-04-21",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20141203",
+    "name":"Midar run 2014-12-03",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20150831",
+    "name":"Midar run 2015-08-31",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20160329",
+    "name":"Midar run 2016-03-29",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20160920",
+    "name":"Midar run 2016-09-20",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20170207",
+    "name":"Midar run 2017-02-07",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20170828",
+    "name":"Midar run 2017-08-28",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_midar_20180301",
+    "name":"Midar run 2018-03-01",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ark_monitor_cfg",
+    "name":"Config files from all Ark nodes",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
     "id":"dataset:as_classification",
     "name":"AS Classification",
     "filename":"sources/dataset/as_classification___caida.json",
@@ -541,9 +667,17 @@
    ]
   },
   {
+    "id":"dataset:as_rank_disk",
+    "name":"AS Rank Database Input",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:as_rank_online",
     "name":"AS Rank",
     "filename":"sources/dataset/as_rank_online___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"The logs in /www/logs/old (from the old as-rank server ra) where integrated with the monthly as-rank logs on athena on 2010/08/05. So the bulk logs are no longer needed.  /www/logs/old/as-rank-80.access.log:16/Jul/2008 05/Jan/2010 covers 16/Jul/2008 05/Jan/2010.  All logs got erased 2018/01 when the AS rank server was migrated from FreeBSD to Ubuntu. Only 2018/01 and later remains. ",
     "status":"ongoing",
@@ -556,6 +690,20 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:as_rank_ribs",
+    "name":"AS Relationships RIBs",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:as_relationships_201206_201311",
+    "name":"AS Relationships (2012/06-2013-11)",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:as_relationships_geo",
@@ -573,6 +721,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:as_relationships_pre_201206",
+    "name":"AS Relationships (pre-2012-06)",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:as_relationships_serial_1",
@@ -609,9 +764,31 @@
    ]
   },
   {
+    "id":"dataset:asymmetry_test",
+    "name":"ASYMMETRY-TEST",
+    "visibility":"private",
+    "tags":["passive traces"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:backscatter_2001_non_anon",
+    "name":"backscatter 2001 non anon",
+    "visibility":"private",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:backscatter_raw",
+    "name":"Original backscatter traces",
+    "visibility":"private",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
     "id":"dataset:backscatter_tocs_originals",
     "name":"Backscatter datasets for TOCS paper",
     "filename":"sources/dataset/backscatter_tocs_originals___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"Responses to spoofed traffic sent by denial-of-service attack victims and received by the UCSD Network Telescope between January 2001 and February 2004. This dataset was used for the creation of the Transactions on Computer Science journal paper \"Inferring Internet Denial-of-Service Activity.\" ",
     "status":"complete",
@@ -624,6 +801,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:bdk",
+    "name":"BDK",
+    "visibility":"private",
+    "tags":["tbd"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
   },
   {
     "id":"dataset:bdrmap",
@@ -660,9 +844,24 @@
    ]
   },
   {
+    "id":"dataset:bgpstream",
+    "name":"bgpstream.caida.org",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://bgpstream.caida.org/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
     "id":"dataset:bogon_cymru_dumps",
     "name":"Bogon files from Cymru",
     "filename":"sources/dataset/bogon_cymru_dumps___caida.json",
+    "visibility":"public",
     "organization":"third party",
     "description":"Daily download of bogon files (plain text) from Cymru: https://www.team-cymru.org/Services/Bogons/http.html ",
     "status":"ongoing",
@@ -675,6 +874,20 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:caidaspy",
+    "name":"CAIDASPY",
+    "visibility":"private",
+    "tags":["traces"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:comcast_ping",
+    "name":"COMCAST-PING",
+    "visibility":"private",
+    "tags":["caida", "performance"],
+    "licenses":["license:BSD-4-Clause-UC"]
   },
   {
     "id":"dataset:complete_dns_lookups",
@@ -692,6 +905,104 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:congestion_bdr",
+    "name":"Congestion bordermap data",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_link",
+    "name":"Congestion link data",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_loss",
+    "name":"Congestion loss data",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_targets",
+    "name":"Congestion targets data",
+    "visibility":"private",
+    "tags":["ark", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2013",
+    "name":"Congestion TSP data for 2013",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2014",
+    "name":"Congestion TSP data for 2014 (.out.gz files only)",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2015",
+    "name":"Congestion TSP data for 2015 (.out.gz files only)",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2016",
+    "name":"Congestion TSP data for 2016 (.out.gz files only)",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2017",
+    "name":"Congestion TSP data for 2017 (.out.gz files only)",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2018",
+    "name":"Congestion TSP data for 2018 (.out.gz files only)",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2019",
+    "name":"Congestion TSP data for 2019",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2020",
+    "name":"Congestion TSP data",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:congestion_tsp_2021",
+    "name":"Congestion TSP data",
+    "visibility":"private",
+    "tags":["caida", "congestion"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:corsaro_dos",
+    "name":"UCSD Telescope Corsaro dos data",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:corsaro_flowtuple",
@@ -728,6 +1039,20 @@
    ]
   },
   {
+    "id":"dataset:dataadm",
+    "name":"Meta data related to dataadm tasks",
+    "visibility":"private",
+    "tags":["caida", "dataadm", "private"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:datcat_oracle_dump",
+    "name":"DATCAT-ORACLE-DUMP",
+    "visibility":"private",
+    "tags":["data", "oracle"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:ddos_attack_2007",
     "name":"DDoS 2007 attack",
     "filename":"sources/dataset/ddos_attack_2007___caida.json",
@@ -743,6 +1068,27 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:ddos_attack_2007_raw",
+    "name":"DDOS-ATTACK-2007-RAW",
+    "visibility":"private",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:dhs_imam_ipv4_transfers",
+    "name":"DHS-IMAM-IPV4-TRANSFERS",
+    "visibility":"private",
+    "tags":["NaN", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:dns_chile_daily_traces",
+    "name":"DNS-CHILE-DAILY-TRACES",
+    "visibility":"private",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
   },
   {
     "id":"dataset:dns_root_gtld_rtt",
@@ -762,6 +1108,55 @@
    ]
   },
   {
+    "id":"dataset:dnsstat",
+    "name":"DNSSTAT",
+    "visibility":"private",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:fcc_mba",
+    "name":"Measuring Broadband America",
+    "visibility":"private",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:gadm",
+    "name":"Global Adminstrative Areas",
+    "visibility":"private",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:gatech_botnet",
+    "name":"GATECH-BOTNET",
+    "visibility":"private",
+    "tags":["security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:geographic",
+    "name":"Geographic Info",
+    "visibility":"private",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:geoloc_ping",
+    "name":"GEOLOC-PING",
+    "visibility":"private",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:geoloc_ping_20140530",
+    "name":"GEOLOC-PING-20140530",
+    "visibility":"private",
+    "tags":["caida", "geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:geolocated_router",
     "name":"Geolocated Router Dataset",
     "filename":"sources/dataset/geolocated_router___caida.json",
@@ -777,6 +1172,41 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:geonames",
+    "name":"Geonames",
+    "visibility":"private",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:gt_bgp",
+    "name":"GT-BGP",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:hostip",
+    "name":"HOSTIP",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:icann_czds",
+    "name":"Zone files from ICANN CZDS",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:internetcensus2012",
+    "name":"INTERNETCENSUS2012",
+    "visibility":"private",
+    "tags":["census"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:ipv4_2013_census",
@@ -813,6 +1243,20 @@
    ]
   },
   {
+    "id":"dataset:isc_domain_survey",
+    "name":"ISC-DOMAIN-SURVEY",
+    "visibility":"private",
+    "tags":["DNS"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:isi_lander",
+    "name":"ISI-LANDER",
+    "visibility":"private",
+    "tags":["census"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
     "id":"dataset:ixps",
     "name":"Internet eXchange Points Dataset",
     "filename":"sources/dataset/ixps___caida.json",
@@ -828,6 +1272,62 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:kleinberg_wikipedia",
+    "name":"KLEINBERG-WIKIPEDIA",
+    "visibility":"private",
+    "tags":["graph"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:logs_ms08_067",
+    "name":"LOGS-MS08-067",
+    "visibility":"private",
+    "tags":["caida", "security"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:maxmind_geolite_dumps",
+    "name":"MAXMIND-GEOLITE-DUMPS",
+    "visibility":"private",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:natural_earth",
+    "name":"Natural Earth data",
+    "visibility":"private",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:netacuity_dumps",
+    "name":"NETACUITY-DUMPS",
+    "visibility":"private",
+    "tags":["geolocation"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:netflow_sdsc",
+    "name":"NETFLOW-SDSC",
+    "visibility":"private",
+    "tags":["traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:open_resolver_survey_200710",
+    "name":"OPEN-RESOLVER-SURVEY-200710",
+    "visibility":"private",
+    "tags":["DNS", "caida"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:passive_2007_dag",
+    "name":"Unanonymized Internet Traces 2007",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_2007_pcap",
@@ -847,6 +1347,27 @@
    ]
   },
   {
+    "id":"dataset:passive_20080319_00",
+    "name":"Packet headers 1st Chicago trace (2008)",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:passive_20080319_19",
+    "name":"Flow files for 2nd Chicago trace",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:passive_2008_dag",
+    "name":"Unanonymized Internet Traces 2008",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_2008_pcap",
     "name":"Anonymized Internet Traces 2008",
     "filename":"sources/dataset/passive_2008_pcap___caida.json",
@@ -862,6 +1383,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_2009_dag",
+    "name":"Unanonymized Internet Traces 2009",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_2009_pcap",
@@ -881,6 +1409,13 @@
    ]
   },
   {
+    "id":"dataset:passive_2010_dag",
+    "name":"Unanonymized Internet Traces 2010",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_2010_pcap",
     "name":"Anonymized Internet Traces 2010",
     "filename":"sources/dataset/passive_2010_pcap___caida.json",
@@ -896,6 +1431,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_2011_dag",
+    "name":"Unanonymized Internet Traces 2011",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
     "id":"dataset:passive_2011_pcap",
@@ -915,6 +1457,13 @@
    ]
   },
   {
+    "id":"dataset:passive_2012_dag",
+    "name":"Unanonymized Internet Traces 2012",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_2012_pcap",
     "name":"Anonymized Internet Traces 2012",
     "filename":"sources/dataset/passive_2012_pcap___caida.json",
@@ -930,6 +1479,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_2013_dag",
+    "name":"Unanonymized Internet Traces 2013",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_2013_pcap",
@@ -949,6 +1505,13 @@
    ]
   },
   {
+    "id":"dataset:passive_2014_dag",
+    "name":"Unanonymized Internet Traces 2014",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_2014_pcap",
     "name":"Anonymized Internet Traces 2014",
     "filename":"sources/dataset/passive_2014_pcap___caida.json",
@@ -964,6 +1527,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_2015_dag",
+    "name":"Unanonymized Internet Traces 2015",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_2015_pcap",
@@ -983,6 +1553,13 @@
    ]
   },
   {
+    "id":"dataset:passive_2016_dag",
+    "name":"Unanonymized Internet Traces 2016",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
     "id":"dataset:passive_2016_pcap",
     "name":"Anonymized Internet Traces 2016",
     "filename":"sources/dataset/passive_2016_pcap___caida.json",
@@ -998,6 +1575,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_2018_dag",
+    "name":"Unanonymized Internet Traces 2018",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_2018_pcap",
@@ -1017,6 +1601,13 @@
    ]
   },
   {
+    "id":"dataset:passive_2019_dag",
+    "name":"Unanonymized Internet Traces 2019",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_2019_pcap",
     "name":"Anonymized Internet Traces 2019",
     "filename":"sources/dataset/passive_2019_pcap___caida.json",
@@ -1032,6 +1623,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:passive_ipv6launch_dag",
+    "name":"Unanonymized Internet Traces IPv6 Day/Launch",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
   },
   {
     "id":"dataset:passive_ipv6launch_pcap",
@@ -1085,6 +1683,13 @@
    ]
   },
   {
+    "id":"dataset:passive_oc48_dag",
+    "name":"PASSIVE-OC48-DAG",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_oc48_pcap",
     "name":"OC48 Peering Point Traces",
     "filename":"sources/dataset/passive_oc48_pcap___caida.json",
@@ -1102,6 +1707,13 @@
    ]
   },
   {
+    "id":"dataset:passive_oc48_pcap_paix",
+    "name":"PASSIVE-OC48-PCAP-PAIX",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:passive_sampler",
     "name":"Anonymized Internet Traces sampler",
     "filename":"sources/dataset/passive_sampler___caida.json",
@@ -1117,6 +1729,48 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:peeringdb_dumps",
+    "name":"PEERINGDB-DUMPS",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:plab_results",
+    "name":"PLAB-RESULTS",
+    "visibility":"private",
+    "tags":["caida", "private"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:radargun_201204",
+    "name":"RADARGUN-201204",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:ripe_atlas_dumps",
+    "name":"Ripe Atlas daily dumps",
+    "visibility":"private",
+    "tags":["ripe-atlas", "traceroute"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_publi:c_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://data-store.ripe.net/datasets/atlas-daily-dumps/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"dataset:router_outages",
+    "name":"Raw data for Router Outages paper",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
     "id":"dataset:routeviews_ipv4_prefix2as",
@@ -1238,13 +1892,28 @@
    ]
   },
   {
+    "id":"dataset:snapp_i2net",
+    "name":"SNAPP-I2NET",
+    "visibility":"private",
+    "tags":["tbd"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:spoofer_data",
     "name":"Spoofer data",
     "filename":"sources/dataset/spoofer_data___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"Seeking to minimize Internet's susceptibility to spoofed DDoS attacks, we are developing and supporting open-source software tools to assess and report on the deployment of source address validation (SAV) best anti-spoofing practices. This project includes applied research, software development, new data analytics, systems integration, operations and maintenance, and an interactive analysis and reporting service.",
     "status":"complete",
     "tags":["caida", "security", "spoofing"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
+  },
+  {
+    "id":"dataset:telegeography",
+    "name":"TELEGEOGRAPHY",
+    "visibility":"private",
+    "tags":["topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"]
   },
   {
@@ -1384,6 +2053,34 @@
    ]
   },
   {
+    "id":"dataset:telescope_live_sampler",
+    "name":"Telescope Live (Near-Real-Time) Sampler",
+    "visibility":"private",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/data/passive/telescope-near-real-time_dataset.xml",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"dataset:telescope_nersc",
+    "name":"UCSD Telescope data at NERSC",
+    "visibility":"private",
+    "tags":["caida", "telescope", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:telescope_raw",
+    "name":"TELESCOPE-RAW",
+    "visibility":"private",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
     "id":"dataset:telescope_sipscan",
     "name":"Telescope Sipscan dataset",
     "filename":"sources/dataset/telescope_sipscan___caida.json",
@@ -1399,6 +2096,13 @@
          "tags":["file"]
        }
    ]
+  },
+  {
+    "id":"dataset:telescope_sipscan_fates",
+    "name":"Botnet Stealth Scan (fates@postech.ac.kr)",
+    "visibility":"private",
+    "tags":["caida", "security", "telescope"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"dataset:telescope_witty_worm",
@@ -1418,9 +2122,94 @@
    ]
   },
   {
+    "id":"dataset:telescope_worms_raw",
+    "name":"Raw worm-related telescope pcap files (Code Red, Witty)",
+    "visibility":"private",
+    "tags":["caida", "security", "telescope", "warm"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:timestamps",
+    "name":"TIMESTAMPS",
+    "visibility":"private",
+    "tags":["private"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:topology_sampler",
+    "name":"Topology industry evaluation dataset",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://data.caida.org/datasets/topology-sampler",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"dataset:topology_truth",
+    "name":"Ground truth for topology",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:topology_truth_orig",
+    "name":"TOPOLOGY-TRUTH-ORIG",
+    "visibility":"private",
+    "tags":["caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ucsd_tap_20070514",
+    "name":"UCSD-TAP-20070514",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:ucsd_tap_2008ditl",
+    "name":"UCSD-TAP-2008DITL",
+    "visibility":"private",
+    "tags":["caida", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_aua", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:whois_database_dumps",
+    "name":"Dumps of Whois db from various registries",
+    "visibility":"private",
+    "tags":["topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"dataset:wide",
+    "name":"WIDE",
+    "visibility":"private",
+    "tags":["traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+  },
+  {
+    "id":"software:arkutil",
+    "name":"Ruby Ark utilities",
+    "visibility":"private",
+    "tags":["library", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/utilities/arkutil/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
     "id":"software:bgpstream",
     "name":"(py)bgpstream tarballs",
     "filename":"sources/software/bgpstream___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"BGPStream is the open-source software framework for live and historical BGP data analysis.  The anchor file was set up to process the BGPStream weblogs. The bgpstream tool is also available from CAIDAs github repository, so this only provides a lower limit on downloads. ",
     "status":"ongoing",
@@ -1438,6 +2227,7 @@
     "id":"software:coralreef",
     "name":"CoralReef tarball",
     "filename":"sources/software/coralreef___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"CoralReef is a comprehensive software suite developed by CAIDA to collect and analyze data from passive Internet traffic monitors, in real time or from trace files. The package includes support for standard network interfaces and specialized high performance monitoring devices, programming APIs for C and perl, and applications for capture, analysis, and web report generation. ",
     "status":"ongoing",
@@ -1452,9 +2242,38 @@
    ]
   },
   {
+    "id":"software:corsaro",
+    "name":"Corsaro tarball",
+    "visibility":"private",
+    "tags":["caida", "measurement analysis", "tool", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/measurement/corsaro/",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
+    "id":"software:henya",
+    "name":"Henya query system",
+    "visibility":"private",
+    "tags":["ark", "caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/tools/utilities/henya",
+         "tags":["file"]
+       }
+   ]
+  },
+  {
     "id":"software:vela",
     "name":"Vela: On-Demand Topology Measurement Service",
     "filename":"sources/software/vela___caida.json",
+    "visibility":"public",
     "organization":"CAIDA",
     "description":"Vela is the on-demand topology measurement service of CAIDA's Archipelago (Ark) infrastructure. ",
     "status":"ongoing",

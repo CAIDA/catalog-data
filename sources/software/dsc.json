@@ -1,0 +1,20 @@
+{
+    "id": "dsc",
+    "name": "Dsc",
+    "organization": "CAIDA",
+    "description": "dsc is a system for collecting and presenting statistics from busy DNS servers.",
+    "tags": [
+        "dns",
+        "traffic",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/dsc/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

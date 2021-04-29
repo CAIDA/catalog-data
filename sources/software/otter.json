@@ -1,0 +1,20 @@
+{
+    "id": "otter",
+    "name": "Otter",
+    "organization": "CAIDA",
+    "description": "Developed in 1999, Otter is a historical CAIDA tool used for visualizing arbitrary network data that can be expressed as a set of nodes, links or paths. Otter was developed to handle visualization tasks for a wide variety of Internet data, including data sets on topology, workload, performance, and routing. Otter is in maintained and continues to be supported by, but is no longer actively developed by CAIDA.",
+    "tags": [
+        "visualization",
+        "topology",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/otter/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

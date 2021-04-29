@@ -80,13 +80,11 @@ re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
 
 # File Paths:
-path = None
 path_ids = "data/data_id___caida.json"
 
 ################################# Main Method ##################################
 
 def main(argv):
-    global path
     global path_ids
 
     parser = argparse.ArgumentParser()
@@ -98,10 +96,10 @@ def main(argv):
     if args.path == None:
         return
     else:
-        path = args.path
+        source_dir = args.path
 
     # Edge Case: Exit if path given doesn't exist.
-    if not os.path.exists(path):
+    if not os.path.exists(source_dir):
         return
 
     # Assign a given path_ids value, else use the default.
@@ -112,7 +110,7 @@ def main(argv):
     add_seen_ids("sources");
 
     # Parse all .md file in the given path.
-    parse_catalog_data_caida()
+    parse_catalog_data_caida(source_dir)
 
     # Print all found JSON objects to individual JSON files.
     print_datasets()
@@ -129,15 +127,16 @@ def add_seen_ids(source_dir):
         if os.path.isdir(path):
             type_ = fname
             for filename in sorted(os.listdir(path)):
+                file_path = path+"/"+filename
                 if re.search("\.json$",filename,re.IGNORECASE) and not re_placeholder.search(filename):
                     try:
-                        info = json.load(open(path+"/"+filename))
-                        info["filename"] = path+"/"+filename
+                        info = json.load(open(file_path))
+                        info["filename"] = file_path
                         id = info["id"] = utils.id_create(info["filename"], type_, info["id"])
                         if id in seen_id:
                             print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
                         else:
-                            seen_id[id] = info["filename"]
+                            seen_id[id] = file_path
                     except Exception as e:
                         print ("\nerror",path+"/"+filename)
                         print ("    ",e)
@@ -145,7 +144,7 @@ def add_seen_ids(source_dir):
 
 
 # Parse of all .md objects in catalog-data-caida/sources.
-def parse_catalog_data_caida():
+def parse_catalog_data_caida(source_dir):
     global id_2_object
     global seen_datasets
     global seen_softwares
@@ -153,7 +152,6 @@ def parse_catalog_data_caida():
     global re_mkdn
     global re_mdta
     global re_dlim
-    global path
 
     # number skipped with no description
     number_skipped_no_description = 0
@@ -161,63 +159,67 @@ def parse_catalog_data_caida():
     re_md = re.compile("\.md$", re.IGNORECASE)
 
     # Iterate over each file in catalog-data-caida/sources.
-    for file in os.listdir(path):
-        # Edge Case: Skip if file is not a .md file.
-        if not re_mkdn.search(file):
-            continue
+    for type_ in sorted(os.listdir(source_dir)):
+        path = source_dir+type_+"/"
+        if os.path.isdir(path):
+            for file in sorted(os.listdir(path)):
 
-        file_name = file[:file.index(".")].replace("-", "_")
-        file_path = "{}{}".format(path, file)
+                # Edge Case: Skip if file is not a .md file.
+                if not re_mkdn.search(file):
+                    print ("   skipping",file)
+                    continue
 
-        metadata = parse_metadata(file_path)
-        if metadata is None:
-            continue 
 
-        # not including private datasets
-        if "visibility" not in metadata or metadata["visibility"] != "private":
-            if metadata["id"] in seen_id:
-                print ("duplicate id",metadata["id"])
-                print ("            ",metadata["filename"])
-                print ("            ",seen_id[metadata["id"]])
-                continue
+                file_name = file[:file.index(".")].replace("-", "_")
+                file_path = path+file
 
-            # If it has no description skip it
-            if "description" not in metadata or re.search("^\s*$", metadata["description"]):
-                print ("   no description:",file_path)
-                continue
+                metadata = parse_metadata(file_path)
+                metadata['filename'] = file_path
 
-            # Edge Case: Replace missing names with ID.
-            if "name" not in metadata:
-                name = metadata["id"].replace("_", " ").upper()
-                metadata["name"] = name
+                # Edge Case: Replace missing names with ID.
+                if "name" not in metadata:
+                    name = metadata["id"].replace("_", " ").upper()
+                    metadata["name"] = name
 
-            # Edge Case: Add CAIDA as organization if missing key.
-            if "organization" not in metadata:
-                metadata["organization"] = "CAIDA"
+                id_ = metadata["id"] = utils.id_create(file_path, type_, metadata["id"])
+                # not including private datasets
+                if id_ in seen_id:
+                    print ("duplicate id",id_)
+                    print ("    ",file_path)
+                    print ("    ",seen_id[id_])
+                    continue
+                if id_ in id_2_object:
+                    print ("duplicate",id_)
+                    print ("    ",id_2_object[id_]["filename"])
+                    print ("    ",metadata["filename"])
+                    continue 
+                else:
+                    id_2_object[metadata["id"]] = metadata
 
-            # Edge Case: Add CAIDA as a tag to all datasets.
-            if "tags" not in metadata:
-                metadata["tags"] = []
-            if "CAIDA" in metadata["organization"]:
-                if "caida" not in metadata["tags"]:
-                    metadata["tags"].append("caida")
+                # If it has no description skip it
+                if "description" not in metadata or re.search("^\s*$", metadata["description"]):
+                    number_skipped_no_description += 1
+                    continue
 
-            # Edge Case: Remove 0 length lists from objects.
-            keys = []
-            for key,value in metadata.items():
-                if type(value) == str and re.search("^\s*$", value):
-                    keys.append(key)
-            for key in keys:
-                del metadata[key]
+                # Edge Case: Add CAIDA as organization if missing key.
+                if "organization" not in metadata:
+                    metadata["organization"] = "CAIDA"
 
-            # Store the metadata
-            id_ = metadata["id"]
-            if id_ in id_2_object:
-                print ("duplicate",id_)
-                print ("    ",id_2_object["filename"])
-                print ("    ",metadata["filename"])
-            else:
-                id_2_object[metadata["id"]] = metadata
+                # Edge Case: Add CAIDA as a tag to all datasets.
+                if "tags" not in metadata:
+                    metadata["tags"] = []
+                if "CAIDA" in metadata["organization"]:
+                    if "caida" not in metadata["tags"]:
+                        metadata["tags"].append("caida")
+
+                # Edge Case: Remove 0 length lists from objects.
+                keys = []
+                for key,value in metadata.items():
+                    if type(value) == str and re.search("^\s*$", value):
+                        keys.append(key)
+                for key in keys:
+                    del metadata[key]
+
 
 re_section = re.compile("^~~~([^\n]+)")
 def parse_metadata(filename):
@@ -237,13 +239,6 @@ def parse_metadata(filename):
                     if "metadata" == section:
                         try:
                             metadata = json.loads(buffer)
-                            id_ = metadata["id"]
-                            if re_tool.search(id_):
-                                t = "software"
-                                metadata["id"] = id_ = id_[5::]
-                            else:
-                                t = "dataset"
-                            metadata["id"] = utils.id_create(filename, t, id_)
                             metadata["filename"] = filename
                         except json.decoder.JSONDecodeError as e:
                             print (buffer)
@@ -306,7 +301,12 @@ def print_datasets():
             obj = id_2_object[id_]
             strings = []
 
-            for key in ["id","name","filename", "organization", "description", "status", "dateCreated", "dateLastUpdated"]:
+            if "visibility" not in obj or obj["visibility"] != "private":
+                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated"]
+            else:
+                keys = ["id", "name", "visibility"]
+
+            for key in keys:
                 if key in obj:
                     strings.append('    "'+key+'":'+json.dumps(obj[key]))
 

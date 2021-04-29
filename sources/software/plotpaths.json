@@ -1,0 +1,20 @@
+{
+    "id": "plotpaths",
+    "name": "PlotPaths",
+    "organization": "CAIDA",
+    "description": "PlotPaths displays forward and reverse network path data from a single source to one or more destinations.",
+    "tags": [
+        "visualization",
+        "topology",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/plotpaths/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

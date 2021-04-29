@@ -1,0 +1,20 @@
+{
+    "id": "dbats",
+    "name": "DBATS",
+    "organization": "CAIDA",
+    "description": "DBATS is a high performance time series database engine optimized for inserting/updating values for many series simultaneously. DBATS can easily sustain write speeds of more than 1.6 million values per second, and CAIDA has used DBATS databases with more than 40 million distinct series.",
+    "tags": [
+        "library",
+        "database library",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/dbats/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

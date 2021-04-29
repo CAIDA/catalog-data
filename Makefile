@@ -1,7 +1,7 @@
 CATALOG_DATA_CAIDA_PATH = catalog-data-caida/sources/
 CATALOG_DATA_CAIDA_FILE = data/data_id___caida.json
 
-run:clean_placeholders scripts/data-build.py pubdb externallinks caida 
+run:clean_placeholders pubdb externallinks caida scripts/data-build.py
 	python3 scripts/data-build.py
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py data/PANDA-Papers-json.pl.json data/PANDA-Presentations-json.pl.json

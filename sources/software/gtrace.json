@@ -1,0 +1,21 @@
+{
+    "id": "gtrace",
+    "name": "GTrace",
+    "organization": "CAIDA",
+    "description": "GTrace is a graphical front-end to traceroute. It uses a combination of methods to determine or guess at the physical location of a node in a traceroute path.",
+    "tags": [
+        "visualization",
+        "topology",
+        "caida"
+    ],
+    "dateStart": "1999.11",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/visualization/gtrace/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

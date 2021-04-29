@@ -1,0 +1,21 @@
+{
+    "id": "flowscan",
+    "name": "FlowScan",
+    "organization": "CAIDA",
+    "description": "Authored in 2000, FlowScan analyzes and reports on Internet Protocol (IP) flow data exported by routers. Consisting of Perl scripts and modules, FlowScan binds together (1) a flow collection engine (a patched version of cflowd), (2) a high performance database (Round Robin Database - RRD), and (3) a visualization tool (RRDtool). FlowScan produces graph images that provide a continuous, near real-time view of the network border traffic.",
+    "tags": [
+        "visualization",
+        "traffic",
+        "caida"
+    ],
+    "dateStart": "2001.02",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/flowscan/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "router_to_as_assignment",
+    "name": "RouterToAsAssignment",
+    "organization": "CAIDA",
+    "description": "The RouterToAsAssignment tool assigns each router from a router-level graph of the Internet to the Autonomous System (AS) that owns that router. We presented our router-AS assignment techniques in our PAM 2010 paper. The RouterToAsAssignment code takes as input a router-level topology of the format described in our Macroscopic Internet Topology Data Kit. For each router in the dataset, RouterToAsAssignment infers the AS (from among the ASes that have interfaces on that router) that owns that router. RouterToAsAssignment uses the Election+Degree heuristic to assign routers to ASes.",
+    "tags": [
+        "topology",
+        "caida"
+    ],
+    "dateStart": "2010.06",
+    "resources": [
+        {
+            "name": "public",
+            "url": "https://www.caida.org/tools/utilities/router-to-as-assignment/",
+            "tags": [
+                "file"
+            ]
+        }
+    ]
+}
