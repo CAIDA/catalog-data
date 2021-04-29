@@ -93,7 +93,8 @@ def print_datasets(filename):
 
     # Iterate over each path and make a blank JSON file for them.
     for obj in objects:
-        with open(obj["filename"], "w") as output_file:
+        file_path = "sources/"+obj["id"].replace(":","/",1)+"___caida.json"
+        with open(file_path, "w") as output_file:
             output_file.write(json.dumps(obj, indent=4))
 
 
