@@ -2192,9 +2192,27 @@
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
+    "id":"media:2007_ipv4_whois_map",
+    "name":"IPv4 WHOIS Map (2007)",
+    "filename":"sources/media/2007_ipv4_whois_map___caida.json",
+    "organization":"CAIDA",
+    "description":"A visualization of the characteristics of IPv4 \"whois\" data from the five Regional Internet Registries (RIRs).",
+    "tags":["IPv4", "caida", "whois"],
+    "resources": [
+       {
+         "name":"URL",
+         "url":"https://www.caida.org/research/id-consumption/whois-map/",
+         "tags":["url"]
+       }
+   ]
+  },
+  {
     "id":"software:arkutil",
     "name":"Ruby Ark utilities",
-    "visibility":"private",
+    "filename":"sources/software/arkutil___caida.json",
+    "organization":"third party",
+    "description":"RubyGem containing utility classes used by the Archipelago measurement infrastructure and the MIDAR alias-resolution system. Only used to track downloads. ",
+    "status":"ongoing",
     "tags":["library", "tool", "topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
@@ -2209,7 +2227,6 @@
     "id":"software:bgpstream",
     "name":"(py)bgpstream tarballs",
     "filename":"sources/software/bgpstream___caida.json",
-    "visibility":"public",
     "organization":"CAIDA",
     "description":"BGPStream is the open-source software framework for live and historical BGP data analysis.  The anchor file was set up to process the BGPStream weblogs. The bgpstream tool is also available from CAIDAs github repository, so this only provides a lower limit on downloads. ",
     "status":"ongoing",
@@ -2244,7 +2261,10 @@
   {
     "id":"software:corsaro",
     "name":"Corsaro tarball",
-    "visibility":"private",
+    "filename":"sources/software/corsaro___caida.json",
+    "organization":"CAIDA",
+    "description":"Corsaro is a software suite for performing large-scale analysis of trace data. It was specifically designed to be used with passive traces captured by darknets, but the overall structure is generic enough to be used with any type of passive trace data.  ",
+    "status":"ongoing",
     "tags":["caida", "measurement analysis", "tool", "traffic"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
@@ -2258,7 +2278,10 @@
   {
     "id":"software:henya",
     "name":"Henya query system",
-    "visibility":"private",
+    "filename":"sources/software/henya___caida.json",
+    "organization":"CAIDA",
+    "description":"Henya is CAIDA's large-scale Internet topology query system which provides remote search of traceroute data without requiring data downloads. Henya includes built-in analyses and visualizations for commonly occuring needs, and is intended to be responsive enough for interactive data exploration. ",
+    "status":"ongoing",
     "tags":["ark", "caida", "tool", "topology"],
     "licenses":["license:BSD-4-Clause-UC"],
     "resources": [
