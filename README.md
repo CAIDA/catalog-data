@@ -27,7 +27,7 @@ and markdown files stored in the catalog-data-caida repository.  The  pubdb is a
     parse a static dump here [PANDA-Papers-json.pl.json](data/PANDA-Papers-json.pl.json) and [PANDA-Presentations-json.pl.json](data/PANDA-Presentations-json.pl.json).
 The raw caida metadata files are kept in catalog-data-caida to allow a different set of permissions. 
 
-The original and convert JSON files are parsed by [data-build.py](scripts/data-build.py] are then used to generate: 
+The original and convert JSON files are parsed by [data-build.py](scripts/data-build.py) are then used to generate: 
 - id_object.json : a id to object dictionary, it has all the object data execpt for links
 - id_id_link.json : stores the link files in {from,to,label} nested dictionaries
 - word_score_id.json : dictionry for each word of scores and id pairs.
