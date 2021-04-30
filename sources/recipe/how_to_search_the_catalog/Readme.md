@@ -63,7 +63,7 @@ A search query can be generated from a search string by splitting the string on 
 
 ### example search strings
 
-|  search string | explination | 
+|  search string | explanation | 
 |----------------|-------------|
 | ``types=dataset topology`` | search for datasets with the word 'topology' in a text field |
 | ``asn`` | search for all objects with the word 'asn' in a text field |
@@ -72,5 +72,5 @@ A search query can be generated from a search string by splitting the string on 
 | ``types=paper,recipe tag:topology`` | search for papers or recipes with the tag 'topology' | 
 | ``rank -dataset:as_rank_online`` | searchs for objects with the word rank , not linked to dataset:as_rank_online | 
 | ``-caida`` | searchs for objects that do not contain the word caida | 
-| ``ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`` | return the objects with an id 2021_wie2020_report or media:2020_lvee_online_edition_ithena |
+| ``ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`` | return the objects with an id 2021_wie2020_report and media:2020_lvee_online_edition_ithena |
 
