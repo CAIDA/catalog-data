@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/data/realtime/",
+            "url": "https://catalog.caida.org/search?query=types=dataset%20caida",
             "tags": [
                 "file"
             ]

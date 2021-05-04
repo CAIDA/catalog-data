@@ -302,7 +302,7 @@ def get_as_data(asn):
    - The Links File lists the set of routers and router interfaces that were inferred to be sharing each link. Note that these are IP layer links, not physical cables or graph edges. More than two nodes can share the same IP link if the nodes are all connected to the same layer 2 switch (POS, ATM, Ethernet, etc).
    - The Node-AS file assigns an AS to each node found in the nodes file. We use our final bordermapIT assignment heuristic to infer the owner AS of each node.
    - The Node-Geolocation file contains the geographic location for each node in the nodes file. We use MaxMind's GeoLite City database for the geographic mapping.
-   - More information can be found [here](https://www.caida.org/data/ark_itdk/)
+   - More information can be found [here](https://www.caida.org/catalog/datasets/internet-topology-data-kit/)
 
 ### Explanation of the Data Files 
 *Download ITDK Datasets:* [link](https://www.caida.org/catalog/datasets/request_user_info_forms/ark)
@@ -339,7 +339,7 @@ The node-geolocation file contains the geographic location for each node in the 
 node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
 ~~~
     
-More information on ITDK dataset can be found [here](https://www.caida.org/data/ark_itdk/)
+More information on ITDK dataset can be found [here](https://www.caida.org/catalog/datasets/internet-topology-data-kit/)
 
 ### Caveats
 
