@@ -32,7 +32,4 @@ clean: clean_placeholders
 
 clean_placeholders:
 	rm -f pubdb
-	rm -f sources/*/*__pubdb.json
-	rm -f sources/*/*__externallinks.json
-	rm -f sources/*/*__caida.json
-	rm -f sources/*/*___*.json
+	python3 scripts/remove_placeholders.py
