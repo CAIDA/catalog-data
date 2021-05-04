@@ -29,7 +29,7 @@
 
 ## Introduction
 
-The following solution parses through an [arks ipv6 warts file](https://www.caida.org/data/request_user_info_forms/ark.xml ) and produces a sorted list of ipv6 addresses and asns. 
+The following solution parses through an [arks ipv6 warts file](https://www.caida.org/catalog/datasets/request_user_info_forms/ark ) and produces a sorted list of ipv6 addresses and asns. 
 
 
 ## Solution
@@ -37,9 +37,9 @@ The following solution parses through an [arks ipv6 warts file](https://www.caid
 The full script can be found [here]( https://github.com/CAIDA/catalog-data/blob/how_to_parse_arks_ipv6_warts_file/sources/recipe/how_to_parse_arks_ipv6_warts_file/parse_arks_ipv6_warts.py ).
 
 ### Datasets
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a warts file. 
-Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/data/request_user_info_forms/ark.xml ). 
-• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/data/routing/routeviews-prefix2as.xml ). The script can accept both .gz files as well as unzipped .prefix2as6 files. 
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/catalog/software/scamper/man/sc_warts2json.1.pdf) method on a warts file. 
+Warts files can be found under /datasets/topology/ark/ipv6/probe-data [here](  https://www.caida.org/catalog/datasets/request_user_info_forms/ark ). 
+• `.prefix2as6 file`: Datasets can be downloaded [here]( https://www.caida.org/catalog/datasets/routeviews-prefix2as ). The script can accept both .gz files as well as unzipped .prefix2as6 files. 
 • `.dat file`: Name of the .dat file used for ipv6 prefix to AS mapping. 
 
 **Example Usage:** 
@@ -52,7 +52,7 @@ $ python3 parse_arks_ipv6_warts.py -t test.json -p routeviews-rv6-20200101-1200.
 
 ### Methods  
 create_ips() takes in one input: 
-• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/tools/measurement/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/data/request_user_info_forms/ark.xml).
+• `sc_to_json_file`: This is the json file produced as a result of running the [sc_warts2json](https://www.caida.org/catalog/software/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/catalog/datasets/request_user_info_forms/ark).
 Instructions to obtain .json file: 
 
 ~~~bash
@@ -148,7 +148,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 • Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
 • Scamper supports both **IPv6** and **IPv4** probing. 
 
-More information on Scamper found [here]( https://www.caida.org/tools/measurement/scamper/
+More information on Scamper found [here]( https://www.caida.org/catalog/software/scamper/
  ).
 
 ### pyasn 

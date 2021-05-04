@@ -30,7 +30,7 @@ This recipe should show the user how to parse a given IPv6 DNS Names file to map
 
 ## Solution
 
-For this solution, you will need to download a IPv6 DNS Names file from CAIDA's website which can be done [here](https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml).
+For this solution, you will need to download a IPv6 DNS Names file from CAIDA's website which can be done [here](https://www.caida.org/catalog/datasets/ipv6_dnsnames_dataset).
 
 ### Usage
 

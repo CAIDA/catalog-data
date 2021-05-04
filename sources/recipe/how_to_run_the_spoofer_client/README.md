@@ -22,7 +22,7 @@
 }
 ~~~
 
-On [the Spoofer download page](https://www.caida.org/projects/spoofer/#software), select the build that matches your operating system.  Once downloaded, the Windows and MacOS installers will step you through installation, while installing on Ubuntu uses the command `apt-add-repository ppa:spoofer-dev/spoofer`.  If none of those work, the source code can be downloaded to build it yourself.
+On [the Spoofer download page](https://www.caida.org/projects/spoofer/#download-client-software), select the build that matches your operating system.  Once downloaded, the Windows and MacOS installers will step you through installation, while installing on Ubuntu uses the command `apt-add-repository ppa:spoofer-dev/spoofer`.  If none of those work, the source code can be downloaded to build it yourself.
 
 Once installed, the client should begin automated testing, but the scheduler can be paused with the "Pause Scheduler" button and tests can be manually run with the "Start Tests" button.
 
@@ -43,5 +43,5 @@ The Spoofer Project seeks to understand the Internet's vulnerability to differen
 
 ### Where can I learn more?
 
-- Screenshots of the client in use:  https://www.caida.org/projects/spoofer/screenshots.xml
-- FAQ:  https://www.caida.org/projects/spoofer/faq.xml
+- Screenshots of the client in use:  https://www.caida.org/projects/spoofer/screenshots
+- FAQ:  https://www.caida.org/projects/spoofer/faq

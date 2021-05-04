@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/graphing/",
+            "url": "https://www.caida.org/catalog/software/graphing/",
             "tags": [
                 "file"
             ]

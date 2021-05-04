@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/visualization/otter/",
+            "url": "https://www.caida.org/catalog/software/otter/",
             "tags": [
                 "file"
             ]

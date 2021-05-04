@@ -24,7 +24,7 @@
 
 ## Introduction
 
-The following solution has two scripts. One script handles a [local input](pair_2_rel.py), and one that [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, ```pair_2_rel``` which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded [here](https://www.caida.org/data/as-relationships/). The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.
+The following solution has two scripts. One script handles a [local input](pair_2_rel.py), and one that [uses AS Rank's API](api_2_rel.py). Both produce a dictionary, ```pair_2_rel``` which maps a pair of given asns to their relationship. The local file script has one flag: -r which takes in a path to a .as-rel file, this can be downloaded [here](https://www.caida.org/catalog/datasets/as-relationships/). The api script has in input, and just calls the api until all as relationships have been found. This script is significantly slower compared to the local file version.
 
 ## Usage
 
@@ -169,7 +169,7 @@ def get_relationship(asn0, asn1):
   - sibling-to-sibling (s2s)
 - A p2p link connects two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.
 - An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.
-- More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)
+- More information on AS Relationships can be found [here](https://www.caida.org/catalog/datasets/as-relationships/)
 
 ~~~text
 as0 as1 rel

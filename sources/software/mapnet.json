@@ -11,12 +11,12 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/visualization/mapnet/",
+            "url": "https://www.caida.org/catalog/software/mapnet/",
             "tags": []
         },
         {
             "name":"Mapnet Java-based Applet",
-            "url": "https://www.caida.org/tools/visualization/mapnet/Backbones/",
+            "url": "https://www.caida.org/catalog/software/mapnet/Backbones/",
             "tags": []
         }
     ],

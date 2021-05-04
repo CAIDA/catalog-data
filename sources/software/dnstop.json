@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/dnstop/",
+            "url": "https://www.caida.org/catalog/software/dnstop/",
             "tags": [
                 "file"
             ]

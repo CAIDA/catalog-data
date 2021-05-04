@@ -117,29 +117,29 @@ More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Trace
 Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. 
 Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
 
-- More information on Scampper can be found [here](https://www.caida.org/tools/measurement/scamper/) 
-- Download source code from [here](https://www.caida.org/tools/measurement/scamper/code/scamper-cvs-20200717.tar.gz) 
+- More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
+- Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
 - Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
 ### Dataset
 #### IPv4 Prefix-Probing Traceroute Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml) 
+More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv4_prefix_probing_dataset) 
 Directory:` /datasets/topology/ark/ipv4/prefix-probing`
 
 #### The IPv4 Routed /24 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml) 
+More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset) 
 Directory: `/datasets/topology/ark/ipv4/probe-data`
 
 #### Ark IPv6 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology) 
 `Directory: /datasets/topology/ark/ipv6/probe-data`
 
 #### IPv4 Routed /24 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames) 
 Directory: `/datasets/topology/ark/ipv4/dns-names`
 
 #### The IPv6 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames.xml) 
+More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames) 
 Directory: `/datasets/topology/ark/ipv6/dns-names`
 
 ### <ins> Caveats </ins>

@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/topostats/",
+            "url": "https://www.caida.org/catalog/software/topostats/",
             "tags": [
                 "file"
             ]

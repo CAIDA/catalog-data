@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/router-to-as-assignment/",
+            "url": "https://www.caida.org/catalog/software/router-to-as-assignment/",
             "tags": [
                 "file"
             ]

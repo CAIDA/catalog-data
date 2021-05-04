@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/funding/sdci-datcat/summary.xml/",
+            "url": "https://www.caida.org/funding/sdci-datcat/summary/",
             "tags": []
         }
     ],

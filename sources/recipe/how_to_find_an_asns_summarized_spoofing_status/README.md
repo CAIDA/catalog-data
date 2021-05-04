@@ -41,4 +41,4 @@ The Spoofer Project seeks to understand the Internet's vulnerability to differen
 
 ### Where can I learn more?
 
-FAQ:  https://www.caida.org/projects/spoofer/faq.xml
+FAQ:  https://www.caida.org/projects/spoofer/faq

@@ -21,11 +21,11 @@
     "resources":[
         {
             "name":"GIF",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascorePosterOct2000.gif"
+            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascorePosterOct2000.gif"
         },
         {
             "name":"PNG IPv4",
-            "url":"https://www.caida.org/research/topology/as_core_network/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png"
+            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png"
         }
     ],
     "authors":[

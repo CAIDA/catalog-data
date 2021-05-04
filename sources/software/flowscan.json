@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/flowscan/",
+            "url": "https://www.caida.org/catalog/software/flowscan/",
             "tags": [
                 "file"
             ]

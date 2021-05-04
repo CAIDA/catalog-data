@@ -36,7 +36,7 @@ The following [script](as-customer-cone.py) produces a dictionary as_2_cone that
 
 ### Usage
 
-The dataset that is used for this script can be downloaded [here](https://www.caida.org/data/as-relationships/). Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.
+The dataset that is used for this script can be downloaded [here](https://www.caida.org/catalog/datasets/as-relationships/). Below is an example of running the script to get IPv4 customer cones from January 1, 2020. Reminder, this script can handle both .txt and .bz2 files.
 
 ~~~bash
 python3 as-customer-cone.py -p 20200101.ppdc-ases.txt
@@ -75,7 +75,7 @@ def parse_ppdc_ases_line(curr_line):
 - It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.
 - Each AS is responsible for routing traffic within itself. This is known as intra-AS routing.
 - Each AS can also route traffic between itself and other autonomous systems. This is known as inter-AS routing.
-- More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://www.caida.org/publications/presentations/2016/as_intro_topology_wind/as_intro_topology_wind.pdf)
+- More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://catalog.caida.org/details/media/2016_as_intro_topology_windas_intro_topology_wind.pdf)
 
 ### What is an ASN
 
@@ -90,7 +90,7 @@ def parse_ppdc_ases_line(curr_line):
   - sibling-to-sibling (s2s)
 - A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.
 - An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.
-- More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)
+- More information on AS Relationships can be found [here](https://www.caida.org/catalog/datasets/as-relationships/)
 
 ### What is a Customer Cone
 

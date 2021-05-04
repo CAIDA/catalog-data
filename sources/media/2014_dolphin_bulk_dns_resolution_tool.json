@@ -14,7 +14,7 @@
     "resources": [
         {
             "name": "URL",
-            "url": "https://www.caida.org/publications/presentations/2014/dolphin_dhs/",
+            "url": "https://catalog.caida.org/details/media/2014_dolphin_dhs",
             "tags": [
                 "url"
             ]

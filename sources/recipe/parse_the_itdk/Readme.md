@@ -46,7 +46,7 @@ The relevant `node` information is extracted from 4 different files:
 
 This solution has a [script](parse_itdk.py) which takes in four files and creates a dictionary, ```as_2_data``` which maps an AS to the data found in all files. The four files are a Nodes File (```-n```), Node-AS File (```-a```), Links File (```-l```), and a Node-Geolocation File (```-g```). The file also has an extra flag (```-p```) which takes in a comma sperated list of ASes which will have their data printed to STDOUT. 
 
-To download the four files, you can access the data [here](https://www.caida.org/data/internet-topology-data-kit/). You'll need a .nodes, .nodes.as, nodes.geo, and a .links file. The script can handle both .bz2 and .txt file extensions so you don't need to decode the files.
+To download the four files, you can access the data [here](https://www.caida.org/catalog/datasets/internet-topology-data-kit/). You'll need a .nodes, .nodes.as, nodes.geo, and a .links file. The script can handle both .bz2 and .txt file extensions so you don't need to decode the files.
 
 The way the the script works is by first parsing the Nodes-AS file and mapping a ```node_id``` to its corresponding asn which is used in all other files. Next, the script parses the Links file to create objects in the dictionary ```as_2_data```, and updates each object with links to other ASes. Then the script parses the Nodes file which updates ```as_2_data```'s existing objects with interfaces found in the file. Finally, the script parses the Nodes-Geolocation file to update the existing objects in ```as_2_data``` with data found in the file.
 
@@ -305,7 +305,7 @@ def get_as_data(asn):
    - More information can be found [here](https://www.caida.org/data/ark_itdk/)
 
 ### Explanation of the Data Files 
-*Download ITDK Datasets:* [link](https://www.caida.org/data/request_user_info_forms/ark.xml)
+*Download ITDK Datasets:* [link](https://www.caida.org/catalog/datasets/request_user_info_forms/ark)
 The datasets are located in `ark/ipv4/itdk`
 
 #### midar-iff.nodes.bz2

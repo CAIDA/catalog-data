@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/visualization/plot-latlong/",
+            "url": "https://www.caida.org/catalog/software/plot-latlong/",
             "tags": [
                 "file"
             ]

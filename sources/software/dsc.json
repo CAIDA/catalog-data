@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/dsc/",
+            "url": "https://www.caida.org/catalog/software/dsc/",
             "tags": [
                 "file"
             ]

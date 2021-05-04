@@ -23,7 +23,7 @@
 This solution requires pyasn: [pyasn github](https://github.com/hadiasghari/pyasn)
 
 bogon_load() takes in one input:
-- `path`: path to the bogon dataset found here: https://www.caida.org/data/bogons/ 
+- `path`: path to the bogon dataset found here: https://www.caida.org/catalog/datasets/bogons/ 
 
 bogon_check_ip() takes in two inputs:
 - `ips`: a list of IP addresses

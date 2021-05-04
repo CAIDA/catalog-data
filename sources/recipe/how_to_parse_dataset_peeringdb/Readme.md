@@ -27,7 +27,7 @@ The solution parse the data collected by PeeringDB and return a dictionary.
 ## **<ins> Solution </ins>**
 
 The full script could be found in `parse_peeringdb.py` \
-Download PeeringDB dataset [here](https://www.caida.org/data/peeringdb/).\
+Download PeeringDB dataset [here](https://www.caida.org/catalog/datasets/peeringdb/).\
 **Usage:** `python parse_peeringdb.py -d <input dataset> -get <objects type> -id <target id>`
 - `-d`: *(Required)* Input dataset. Note that the script only supports dataset in `.sqlite` and `.json` format.
 - `-get`: *(Required)* Type of the objects that you would like to retrieve 
@@ -101,7 +101,7 @@ def get_sqlite_single_object(filename, type, target_id):
 - An online database of peering policies, traffic volumes and geographic presence of participating networks. 
 - PeeringDB, a non-profit member-based organization, has been established to support practical needs of network operators. However, it is also a valuable source of information for researchers. The first version of PeeringDB resided in a MySQL database, which was not scalable and lacked security features and data validation mechanisms. It presented potential risks of exposing contact information to spammers, and contained typos. Starting at the end of March 2016, PeeringDB switched to a new data schema and API.
 - The old v1 format is available from July 29, 2010 through March 13, 2016 as `sql` and `sqlite` files. The new v2 format is available from May 27, 2016 to March 10, 2018 as `sqlite` files, and from March 11, 2016 onwards as `json` files.
-- More information and download dataset [here](https://www.caida.org/data/peeringdb/)
+- More information and download dataset [here](https://www.caida.org/catalog/datasets/peeringdb/)
 
 #### Objects type in datasets
 

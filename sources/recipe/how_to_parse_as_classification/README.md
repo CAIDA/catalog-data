@@ -27,7 +27,7 @@ The following solution shows how to parse a given AS Classification file (.as2ty
 
 ### Usage
 
-To use this script, you will need to have a .as2types file, which can be downloaded [here](https://www.caida.org/data/as-classification/).
+To use this script, you will need to have a .as2types file, which can be downloaded [here](https://www.caida.org/catalog/datasets/as-classification/).
 
 To parse the given .as2types file and just update a dictionary labeled ```as_2_data```, use this input:
 
@@ -102,7 +102,7 @@ def update_as2data(asn, key, value):
   - AS Classification is file type that maps and AS to an assumed type of business (class).
   - This data is used to train a machine-learning classifier.
   - Using the self-reported data from [PeeringDB](https://www.peeringdb.com/), this data catagorizes PeeringDB classifications into three catagories, combining some of PeeringDB's classification into one classification.
-  - More information about AS Classification can be found [here](https://www.caida.org/data/as-classification/)
+  - More information about AS Classification can be found [here](https://www.caida.org/catalog/datasets/as-classification/)
 
 ### What do the Source and Classifications mean?
 

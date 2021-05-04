@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/hyperbolic-graph-generator/",
+            "url": "https://www.caida.org/catalog/software/hyperbolic-graph-generator/",
             "tags": [
                 "file"
             ]

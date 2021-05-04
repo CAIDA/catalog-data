@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/utilities/dnsstat/",
+            "url": "https://www.caida.org/catalog/software/dnsstat/",
             "tags": []
         }
     ],

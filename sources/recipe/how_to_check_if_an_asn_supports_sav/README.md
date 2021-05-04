@@ -53,7 +53,7 @@ GET /sessions/{id}
 
 ### Rules of Usage
 
-CAIDA places no limit on the amount of requests, however, we ask that you send a message to spoofer-info at caida dot org if you plan to regularly do more than 1000 requests/day.  The [CAIDA Master Acceptable Use Agreement (AUA)](https://www.caida.org/home/legal/aua/) terms and conditions apply.
+CAIDA places no limit on the amount of requests, however, we ask that you send a message to spoofer-info at caida dot org if you plan to regularly do more than 1000 requests/day.  The [CAIDA Master Acceptable Use Agreement (AUA)](https://www.caida.org/about/legal/aua/) terms and conditions apply.
 
 ### Data Model
 

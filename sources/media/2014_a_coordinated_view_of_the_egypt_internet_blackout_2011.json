@@ -13,11 +13,11 @@
     ],
     "date": "2014.01",
     "type": "VISAULIZATION",
-    "image": "https://www.caida.org/publications/papers/2014/coordinated_view_internet_events/supplemental/egypt.composite.0174.png",
+    "image": "https://catalog.caida.org/details/paper/2014_coordinated_view_internet_events/supplemental/egypt.composite.0174.png",
     "resources": [
         {
             "name": "URL",
-            "url": "https://www.caida.org/publications/papers/2014/coordinated_view_internet_events/",
+            "url": "https://catalog.caida.org/details/paper/2014_coordinated_view_internet_events/",
             "tags": [
                 "url"
             ]

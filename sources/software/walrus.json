@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/visualization/walrus/",
+            "url": "https://www.caida.org/catalog/software/walrus/",
             "tags": [
                 "file"
             ]

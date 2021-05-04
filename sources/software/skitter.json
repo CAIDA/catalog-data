@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "restricted",
-            "url": "https://www.caida.org/tools/measurement/skitter/",
+            "url": "https://www.caida.org/catalog/software/skitter/",
             "tags": [
                 "file"
             ]

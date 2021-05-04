@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/measurement/scamper/",
+            "url": "https://www.caida.org/catalog/software/scamper/",
             "tags": []
         }
     ],

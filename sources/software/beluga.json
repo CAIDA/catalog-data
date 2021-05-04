@@ -14,7 +14,7 @@
     "resources": [
         {
             "name": "restricted",
-            "url": "https://www.caida.org/tools/measurement/beluga",
+            "url": "https://www.caida.org/catalog/software/beluga",
             "tags": [
                 "file"
             ]

@@ -29,7 +29,7 @@
 The script makes queries to the dzdb api to determine if a domain is still active. The api response contains first-seen and last-seen timestamp properties to which can be used to determine when a domain was last found in a zone file.
 
 ## **<ins>Solution</ins>**
-The script relies on the below function to handle querying the dzdb api. The dzdb api requres an API key; fill out the form [here](https://www.caida.org/data/request_user_info_forms/dzdb.xml).
+The script relies on the below function to handle querying the dzdb api. The dzdb api requres an API key; fill out the form [here](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb).
 
 ~~~
 var apiKey = "YOUR_KEY_HERE";
@@ -90,4 +90,4 @@ A DNS zone is a group of hostnames that is managed by a single individual or org
 ### What is a zone file
 A zone file is a text file which contains the domain, nameserver, ip, and other relationships for the hostnames in a particular zone. DZDB tracks the daily changes to the TLD zone files, and records when a particular domain is first and last seen in the zone files.
 ### Notes on DNS Coffee API
-The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by filling out the form [here](https://www.caida.org/data/request_user_info_forms/dzdb.xml). To view a more comprehensive usage of the API, visit the "How to use DZDB to get all nameserver and ip records for a domain" recipe.
+The DNS Coffee API utilized in this recipe aids in querying data from the zone file. Documentation for the API can be found [here](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by filling out the form [here](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). To view a more comprehensive usage of the API, visit the "How to use DZDB to get all nameserver and ip records for a domain" recipe.

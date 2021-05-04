@@ -27,7 +27,7 @@ This solution helps classify an asn based upon its relationships to other asns. 
 
 ### Usage
 
-Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downloaded [here](https://www.caida.org/data/as-relationships/).
+Below is an example of how to run the script on AS Relationships dataset from Jan 1st, 2020, sending the classifications to a .jsonl file. You must use the -r flag, and provide a path to a local .as-rel file. AS Relationship datasets can be downloaded [here](https://www.caida.org/catalog/datasets/as-relationships/).
 - Note: This script can take in both .txt and encoded .bz2 files, so you don't have to decode the downloaded datasets.
 
 ```bash
@@ -110,7 +110,7 @@ def update_classifications():
   - sibling-to-sibling (s2s)
 - A p2p link connect two ISPs who have agreed to exchange traffic between each other and their customer's. This can allow growing ISPs savings on transit costs compared to c2p relationships.
 - An s2s link connects two ASes with a common administrative boundary. Such links usually appear as a result of mergers and acquisitions, or under certain network management scenarios.
-- More information on AS Relationships can be found [here](https://www.caida.org/data/as-relationships/)
+- More information on AS Relationships can be found [here](https://www.caida.org/catalog/datasets/as-relationships/)
 
 ~~~text
 as0 as1 rel

@@ -24,7 +24,7 @@
 Given a list of IP addresses, this following solution will return a list of correseponding IXP names.
 
 load_traceroute() takes in one input:
-- `path`: Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/data/ixps/) under ixs_*.jsonl files
+- `path`: Path to jsonl file of IXPs, which can be found here: [ixps dataset](https://www.caida.org/catalog/datasets/ixps/) under ixs_*.jsonl files
 
 and outputs:
 - `ixpdb`: pyasn database

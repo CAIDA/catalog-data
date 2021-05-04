@@ -9,7 +9,7 @@
     "type":"PRESENTATION",
     "resources":[{
         "name":"URL",
-        "url":"https://www.caida.org/publications/visualizations/ipv4-history/",
+        "url":"https://www.caida.org/catalog/media/visualizations/ipv4-history/",
         "tags":["url","presentation"]
         }
     ],

@@ -11,7 +11,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/tools/measurement/kapar/",
+            "url": "https://www.caida.org/catalog/software/kapar/",
             "tags": []
         }
     ],
@@ -32,7 +32,7 @@
             "label": "used by"
         },
         {
-            "to": "paper:2011_midar-tr",
+            "to": "paper:2011_midar_tr",
             "label": "used by"
         },
         {
