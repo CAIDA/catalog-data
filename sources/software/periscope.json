@@ -10,7 +10,7 @@
     "resources": [
         {
             "name": "restricted",
-            "url": "https://www.caida.org/tools/utilities/looking-glass-api/",
+            "url": "https://www.caida.org/catalog/software/looking-glass-api/",
             "tags": []
         }
     ],
