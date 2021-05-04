@@ -12,7 +12,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://catalog.caida.org/search?query=types=dataset%20caida",
+            "url": "https://catalog.caida.org/search?query=types=dataset%20tag:caida%20monitor",
             "tags": [
                 "file"
             ]
