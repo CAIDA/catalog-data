@@ -11,7 +11,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2006/as_topology",
+         "url":"https://catalog.caida.org/details/paper/2006_as_topology",
          "tags":["file"]
        }
    ]
@@ -28,7 +28,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-taxonomy",
+         "url":"https://www.caida.org/catalog/datasets/as-taxonomy",
          "tags":["file"]
        }
    ]
@@ -45,7 +45,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/trmethod-200808.xml",
+         "url":"https://www.caida.org/catalog/datasets/trmethod-200808/",
          "tags":["file"]
        }
    ]
@@ -62,7 +62,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2009/imc_spoofer",
+         "url":"https://catalog.caida.org/details/paper/2009_imc_spoofer",
          "tags":["file"]
        }
    ]
@@ -79,7 +79,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2010/as_assignment",
+         "url":"https://catalog.caida.org/details/paper/2010_as_assignment",
          "tags":["file"]
        }
    ]
@@ -96,7 +96,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2011/crooked_traceroute",
+         "url":"https://catalog.caida.org/details/paper/2011_crooked_traceroute",
          "tags":["file"]
        }
    ]
@@ -113,7 +113,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2013/asrank",
+         "url":"https://catalog.caida.org/details/paper/2013_asrank",
          "tags":["file"]
        }
    ]
@@ -130,7 +130,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2013/alias_resolution_midar",
+         "url":"https://catalog.caida.org/details/paper/2013_alias_resolution_midar",
          "tags":["file"]
        }
    ]
@@ -147,7 +147,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2014/drop",
+         "url":"https://catalog.caida.org/details/paper/2014_drop",
          "tags":["file"]
        }
    ]
@@ -164,7 +164,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2014/inferring_complex_as_relationships",
+         "url":"https://catalog.caida.org/details/paper/2014_inferring_complex_as_relationships",
          "tags":["file"]
        }
    ]
@@ -181,7 +181,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2014/second_look_detecting_addresses"
+         "url":"https://catalog.caida.org/details/paper/2014_second_look_detecting_addresses"
        }
    ]
   },
@@ -197,7 +197,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2015/resilience_deployed_tcp_blind",
+         "url":"https://catalog.caida.org/details/paper/2015_resilience_deployed_tcp_blind",
          "tags":["file"]
        }
    ]
@@ -214,7 +214,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2015/ipv6_as_relationships",
+         "url":"https://catalog.caida.org/details/paper/2015_ipv6_as_relationships",
          "tags":["file"]
        }
    ]
@@ -231,7 +231,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/rsdos-targets/",
+         "url":"https://www.caida.org/catalog/datasets/rsdos-targets/",
          "tags":["file"]
        }
    ]
@@ -248,7 +248,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2017/impact_router_outages_as",
+         "url":"https://catalog.caida.org/details/paper/2017_impact_router_outages_as",
          "tags":["file"]
        }
    ]
@@ -265,7 +265,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2018/revealing_load_balancing_behavior",
+         "url":"https://catalog.caida.org/details/paper/2018_revealing_load_balancing_behavior",
          "tags":["file"]
        }
    ]
@@ -282,7 +282,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2020/unintended_consequences/",
+         "url":"https://catalog.caida.org/details/paper/2020_unintended_consequences/",
          "tags":["file"]
        }
    ]
@@ -313,7 +313,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv4_routed_topology_aslinks_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_routed_topology_aslinks_dataset/",
          "tags":["file"]
        }
    ]
@@ -330,10 +330,10 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_dnsnames_dataset",
          "tags":["file"],
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/ipv4_dnsnames_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_dnsnames_dataset",
          "tags":["file"]
        }
    ]
@@ -367,10 +367,10 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_prefix_probing_dataset",
          "tags":["file"],
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/ipv4_prefix_probing_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_prefix_probing_dataset",
          "tags":["file"]
        }
    ]
@@ -387,10 +387,10 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv4_tnt_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_tnt_dataset",
          "tags":["file"],
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/ipv4_tnt_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_tnt_dataset",
          "tags":["file"]
        }
    ]
@@ -407,10 +407,10 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset",
          "tags":["file"],
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/ipv4_routed_24_topology_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_routed_24_topology_dataset",
          "tags":["file"]
        }
    ]
@@ -427,7 +427,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv6_aslinks_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv6_aslinks_dataset",
          "tags":["file"]
        }
    ]
@@ -444,7 +444,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv6_dnsnames_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv6_dnsnames_dataset",
          "tags":["file"]
        }
    ]
@@ -461,7 +461,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv6_routed_48_topology_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv6_routed_48_topology_dataset",
          "tags":["file"]
        }
    ]
@@ -478,7 +478,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset",
          "tags":["file"]
        }
    ]
@@ -495,10 +495,10 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/internet-topology-data-kit",
+         "url":"https://www.caida.org/catalog/datasets/internet-topology-data-kit",
          "tags":["file"],
          "name":"restricted",
-         "url":"https://www.caida.org/data/internet-topology-data-kit",
+         "url":"https://www.caida.org/catalog/datasets/internet-topology-data-kit",
          "tags":["file"]
        }
    ]
@@ -627,7 +627,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-classification",
+         "url":"https://www.caida.org/catalog/datasets/as-classification",
          "tags":["file"]
        }
    ]
@@ -644,7 +644,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/as-facilities",
+         "url":"https://www.caida.org/catalog/datasets/as-facilities",
          "tags":["file"]
        }
    ]
@@ -661,7 +661,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-organizations",
+         "url":"https://www.caida.org/catalog/datasets/as-organizations",
          "tags":["file"]
        }
    ]
@@ -717,7 +717,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-relationships-geo/",
+         "url":"https://www.caida.org/catalog/datasets/as-relationships-geo/",
          "tags":["file"]
        }
    ]
@@ -741,7 +741,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-relationships",
+         "url":"https://www.caida.org/catalog/datasets/as-relationships",
          "tags":["file"]
        }
    ]
@@ -758,7 +758,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/as-relationships",
+         "url":"https://www.caida.org/catalog/datasets/as-relationships",
          "tags":["file"]
        }
    ]
@@ -797,7 +797,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2006/backscatter_dos",
+         "url":"https://catalog.caida.org/details/paper/2006_backscatter_dos",
          "tags":["file"]
        }
    ]
@@ -821,7 +821,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/bdrmap_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/bdrmap_dataset/",
          "tags":["file"]
        }
    ]
@@ -838,7 +838,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/bgp-communities",
+         "url":"https://www.caida.org/catalog/datasets/bgp-communities",
          "tags":["file"]
        }
    ]
@@ -870,7 +870,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/bogons/",
+         "url":"https://www.caida.org/catalog/datasets/bogons/",
          "tags":["file"]
        }
    ]
@@ -901,7 +901,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/complete_dns_lookups_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/complete_dns_lookups_dataset",
          "tags":["file"]
        }
    ]
@@ -1016,7 +1016,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/telescope-flowtuple.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-flowtuple",
          "tags":["file"]
        }
    ]
@@ -1033,7 +1033,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-patch-tuesday_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-patch-tuesday_dataset",
          "tags":["file"]
        }
    ]
@@ -1064,7 +1064,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/ddos-20070804_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ddos-20070804_dataset",
          "tags":["file"]
        }
    ]
@@ -1102,7 +1102,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/dns_root_gtld_rtt_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/dns_root_gtld_rtt_dataset",
          "tags":["file"]
        }
    ]
@@ -1168,7 +1168,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2017/router_geolocation",
+         "url":"https://catalog.caida.org/details/paper/2017_router_geolocation",
          "tags":["file"]
        }
    ]
@@ -1220,7 +1220,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/active/ipv4_2013_census_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/ipv4_2013_census_dataset",
          "tags":["file"]
        }
    ]
@@ -1237,7 +1237,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/how-to/scamper/ipv6-collection-200801",
+         "url":"https://www.caida.org/catalog/datasets/how-to/scamper/ipv6-collection-200801",
          "tags":["file"]
        }
    ]
@@ -1268,7 +1268,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/ixps",
+         "url":"https://www.caida.org/catalog/datasets/ixps",
          "tags":["file"]
        }
    ]
@@ -1341,7 +1341,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1379,7 +1379,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1403,7 +1403,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1427,7 +1427,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1451,7 +1451,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1475,7 +1475,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1499,7 +1499,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1523,7 +1523,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1547,7 +1547,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1571,7 +1571,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1595,7 +1595,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1619,7 +1619,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1643,7 +1643,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_ipv6day_and_ipv6launch_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_ipv6day_and_ipv6launch_dataset",
          "tags":["file"]
        }
    ]
@@ -1660,7 +1660,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_dataset",
          "tags":["file"]
        }
    ]
@@ -1677,7 +1677,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/passive_trace_statistics.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_trace_statistics/",
          "tags":["file"]
        }
    ]
@@ -1701,7 +1701,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/passive_oc48_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_oc48_dataset",
          "tags":["file"]
        }
    ]
@@ -1725,7 +1725,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/passive_sampler_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/passive_sampler_dataset",
          "tags":["file"]
        }
    ]
@@ -1784,7 +1784,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "url":"https://www.caida.org/catalog/datasets/routeviews-prefix2as",
          "tags":["file"]
        }
    ]
@@ -1801,7 +1801,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "url":"https://www.caida.org/catalog/datasets/routeviews-prefix2as",
          "tags":["file"]
        }
    ]
@@ -1818,7 +1818,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/routing/routeviews-prefix2as.xml",
+         "url":"https://www.caida.org/catalog/datasets/routeviews-prefix2as",
          "tags":["file"]
        }
    ]
@@ -1835,7 +1835,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/active/skitter_aslinks_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/skitter_aslinks_dataset",
          "tags":["file"]
        }
    ]
@@ -1852,7 +1852,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/skitter-itdk",
+         "url":"https://www.caida.org/catalog/datasets/skitter-itdk",
          "tags":["file"]
        }
    ]
@@ -1862,14 +1862,14 @@
     "name":"Skitter Router Adjacencies",
     "filename":"sources/dataset/skitter_router_adjacencies___caida.json",
     "organization":"CAIDA",
-    "description":"Skitter is a tool for actively probing the Internet in order to analyze topology and performance. The skitter dataset contains forward IP paths from a source to many destinations, round trip times (RTT). The data can be used to track persistent routing changes, and to visualize network connectivity. Copy of cider:/www/wcs/live-root/www-caida-org/tools/measurement/skitter/router_topology Consists of two files: itdk0304_rlinks_directed.gz and itdk0304_rlinks_undirected.gz ",
+    "description":"Skitter is a tool for actively probing the Internet in order to analyze topology and performance. The skitter dataset contains forward IP paths from a source to many destinations, round trip times (RTT). The data can be used to track persistent routing changes, and to visualize network connectivity. Copy of cider:/www/wcs/live-root/www-caida-org/catalog/software/skitter/router_topology Consists of two files: itdk0304_rlinks_directed.gz and itdk0304_rlinks_undirected.gz ",
     "status":"complete",
     "tags":["Topology with Skitter", "caida", "skitter", "skitter-router-adjacencies", "topology"],
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/router-adjacencies",
+         "url":"https://www.caida.org/catalog/datasets/router-adjacencies",
          "tags":["file"]
        }
    ]
@@ -1886,7 +1886,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/tools/measurement/skitter",
+         "url":"https://www.caida.org/catalog/software/skitter",
          "tags":["file"]
        }
    ]
@@ -1928,7 +1928,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-3days-conficker_dataset.xml",
+         "url":"https://www.caida.org/data/passive/telescope-3days-conficker_dataset",
          "tags":["file"]
        }
    ]
@@ -1945,7 +1945,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-2days-2008_dataset.xml",
+         "url":"https://www.caida.org/data/passive/telescope-2days-2008_dataset",
          "tags":["file"]
        }
    ]
@@ -1962,7 +1962,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/backscatter_dataset.xml",
+         "url":"https://www.caida.org/data/passive/backscatter_dataset",
          "tags":["file"]
        }
    ]
@@ -1979,7 +1979,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/codered_worms_dataset.xml",
+         "url":"https://www.caida.org/data/passive/codered_worms_dataset",
          "tags":["file"]
        }
    ]
@@ -1996,7 +1996,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/telescope-daily-rsdos.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-daily-rsdos",
          "tags":["file"]
        }
    ]
@@ -2013,7 +2013,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-darknet-scanners_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-darknet-scanners_dataset",
          "tags":["file"]
        }
    ]
@@ -2030,7 +2030,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-educational_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-educational_dataset",
          "tags":["file"]
        }
    ]
@@ -2047,7 +2047,7 @@
     "resources": [
        {
          "name":"restricted",
-         "url":"https://www.caida.org/data/passive/telescope-near-real-time_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-near-real-time_dataset",
          "tags":["file"]
        }
    ]
@@ -2061,7 +2061,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-near-real-time_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/telescope-near-real-time_dataset",
          "tags":["file"]
        }
    ]
@@ -2092,7 +2092,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/publications/papers/2015/analysis_slash_zero/",
+         "url":"https://catalog.caida.org/details/paper/2015_analysis_slash_zero/",
          "tags":["file"]
        }
    ]
@@ -2116,7 +2116,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/witty_worm_dataset.xml",
+         "url":"https://www.caida.org/catalog/datasets/witty_worm_dataset",
          "tags":["file"]
        }
    ]
@@ -2192,6 +2192,21 @@
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
+    "id":"media:2007_cl_animated_maps",
+    "name":"Animated Maps of Two Days of DNS Workload for the .CL Chilean ccTLD",
+    "filename":"sources/media/2007_cl_animated_maps___caida.json",
+    "organization":"CAIDA",
+    "description":"The DNS workload animated maps show the number of queries and clients seen by one of the .CL nameservers in Chile and its hourly variation along two days of traces beginning on July 3rd 2007 at 21:00 (UTC). The animation provides a view of the world map and colors countries based on the load that each country originates. The use of a terminator to show the sun's shadow helps depict potential diurnal patterns in the displayed data.",
+    "tags":["caida", "dns"],
+    "resources": [
+       {
+         "name":"URL",
+         "url":"https://www.caida.org/catalog/media/animations/cl/",
+         "tags":["url"]
+       }
+   ]
+  },
+  {
     "id":"media:2007_ipv4_whois_map",
     "name":"IPv4 WHOIS Map (2007)",
     "filename":"sources/media/2007_ipv4_whois_map___caida.json",
@@ -2201,7 +2216,7 @@
     "resources": [
        {
          "name":"URL",
-         "url":"https://www.caida.org/research/id-consumption/whois-map/",
+         "url":"https://www.caida.org/archive/id-consumption/whois-map/",
          "tags":["url"]
        }
    ]
@@ -2218,7 +2233,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/tools/utilities/arkutil/",
+         "url":"https://www.caida.org/catalog/software/arkutil/",
          "tags":["file"]
        }
    ]
@@ -2253,7 +2268,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/tools/measurement/coralreef",
+         "url":"https://www.caida.org/catalog/software/coralreef",
          "tags":["file"]
        }
    ]
@@ -2283,14 +2298,7 @@
     "description":"Henya is CAIDA's large-scale Internet topology query system which provides remote search of traceroute data without requiring data downloads. Henya includes built-in analyses and visualizations for commonly occuring needs, and is intended to be responsive enough for interactive data exploration. ",
     "status":"ongoing",
     "tags":["ark", "caida", "tool", "topology"],
-    "licenses":["license:BSD-4-Clause-UC"],
-    "resources": [
-       {
-         "name":"public",
-         "url":"https://www.caida.org/tools/utilities/henya",
-         "tags":["file"]
-       }
-   ]
+    "licenses":["license:BSD-4-Clause-UC"]
   },
   {
     "id":"software:vela",
