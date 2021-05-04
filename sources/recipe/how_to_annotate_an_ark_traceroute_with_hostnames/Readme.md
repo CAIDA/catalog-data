@@ -131,15 +131,15 @@ More information and download dataset [here](https://www.caida.org/catalog/datas
 Directory: `/datasets/topology/ark/ipv4/probe-data`
 
 #### Ark IPv6 Topology Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_allpref_topology) 
+More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset) 
 `Directory: /datasets/topology/ark/ipv6/probe-data`
 
 #### IPv4 Routed /24 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv4_dnsnames) 
+More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv4_dnsnames_dataset) 
 Directory: `/datasets/topology/ark/ipv4/dns-names`
 
 #### The IPv6 DNS Names Dataset
-More information and download dataset [here](https://www.caida.org/data/active/ipv6_dnsnames) 
+More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv6_dnsnames_dataset) 
 Directory: `/datasets/topology/ark/ipv6/dns-names`
 
 ### <ins> Caveats </ins>
