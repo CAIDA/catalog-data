@@ -1,5 +1,5 @@
 #!  /usr/bin/env python3
-# This software is Copyright (C) 2018 The Regents of the University of
+# This software is Copyright (C) 2021 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
 # and non-profit purposes, without fee, and without a written agreement is
