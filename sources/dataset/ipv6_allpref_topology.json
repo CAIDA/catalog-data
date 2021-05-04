@@ -14,7 +14,7 @@
     "resources": [
         {
             "name": "webpage",
-            "url": "https://www.caida.org/data/active/ipv6_allpref_topology_dataset.xml",
+            "url": "https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset",
             "tags": [
                 "file"
             ]
