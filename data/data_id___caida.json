@@ -1928,7 +1928,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-3days-conficker_dataset",
+         "url":"https://catalog.caida.org/details/dataset/telescope_anon_conficker",
          "tags":["file"]
        }
    ]
@@ -1945,7 +1945,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/telescope-2days-2008_dataset",
+         "url":"https://catalog.caida.org/details/dataset/telescope_anon_twodays",
          "tags":["file"]
        }
    ]
@@ -1962,7 +1962,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/backscatter_dataset",
+         "url":"https://catalog.caida.org/details/dataset/telescope_backscatter",
          "tags":["file"]
        }
    ]
@@ -1979,7 +1979,7 @@
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/data/passive/codered_worms_dataset",
+         "url":"https://catalog.caida.org/details/dataset/telescope_codered_worm",
          "tags":["file"]
        }
    ]
