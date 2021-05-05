@@ -78,6 +78,9 @@ def main():
         if "links" in obj:
             links = []
             for link in obj["links"]:
+                if link["label"] == "DOI":
+                    obj["doi"] = link["to"]
+                   
                 m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",link["to"])
                 if m:
                     type_,date, id_ = m.groups()
