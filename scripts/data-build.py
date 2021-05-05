@@ -75,7 +75,10 @@ re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
 re_date_key = re.compile("^date",re.IGNORECASE)
 re_not_digit = re.compile("[^\d]+")
 
+re_placeholder = re.compile("___")
+
 repo_url_default = "https://github.com/CAIDA/catalog-data"
+
 
 # Weight used to create id scoring for search
 # currently not used.
@@ -198,9 +201,9 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    #print ("adding dates ( skipping '*___*' )")
-    #for obj in list(id_object.values()):
-        #object_date_add(obj)
+    print ("adding dates ( skipping '*___*' )")
+    for obj in list(id_object.values()):
+        object_date_add(obj)
 
     ######################
     # tag objects linked to caida_data
@@ -369,7 +372,7 @@ def object_date_add(obj):
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
-            if not re.search("___", obj["filename"]):
+            if not re_placeholder.search(obj["filename"]):
                 if key == "dateCreated":
                     cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
                 else:

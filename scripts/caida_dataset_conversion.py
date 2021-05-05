@@ -78,6 +78,9 @@ re_json = re.compile(r"\.json$", re.IGNORECASE)
 re_mkdn = re.compile(r"\.md$", re.IGNORECASE)
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
+re_html = re.compile(r"\.html$", re.IGNORECASE)
+re_md = re.compile(r"\.md$", re.IGNORECASE)
+re_all_white_space = re.compile(r"^\s*$")
 
 # File Paths:
 path_ids = "data/data_id___caida.json"
@@ -169,12 +172,10 @@ def parse_catalog_data_caida(source_dir):
                     print ("   skipping",file)
                     continue
 
-
                 file_name = file[:file.index(".")].replace("-", "_")
                 file_path = path+file
 
                 metadata = parse_metadata(file_path)
-                metadata['filename'] = file_path
 
                 # Edge Case: Replace missing names with ID.
                 if "name" not in metadata:
@@ -225,14 +226,15 @@ re_section = re.compile("^~~~([^\n]+)")
 def parse_metadata(filename):
     section = None
     buffer = {}
-    content = False
+    content = None
     metadata = None
     re_tool = re.compile("^tool[_-]")
+    files = []
     with open(filename) as f:
         for line in f:
             # everything after '=== content ===' is placed inside content unprocessed
-            if content:
-                metadata["content"] += line
+            if content is not None:
+                content += line
 
             if section is not None:
                 if "~~~" == line.rstrip():
@@ -248,14 +250,19 @@ def parse_metadata(filename):
                         print("found section '"+section+"' before '~~~metadata' in",filename, file=sys.stderr)
                         return None
                     else:
-                        parts = section.split("~")
                         current = metadata
-                        for part in parts[:-1]:
-                            if part not in current:
-                                current[part] = {}
-                            current = current[part]
 
-                        current[parts[-1]] = buffer
+                        f = "text"
+                        if re_html.search(section):
+                            f = "html"
+                        elif re_md.search(section):
+                            f = "md"
+
+                        files.append({
+                            "name":section,
+                            "format":f,
+                            "content":buffer
+                        })
                     section = None
                     buffer = None
                 else:
@@ -264,15 +271,38 @@ def parse_metadata(filename):
                 if metadata is None:
                     print("found '=== content ===' before ~~~metadata in",filename, file=sys.stderr)
                     return None
-                content = True
-                metadata["content"] = ""
+                content = ""
 
             else:
                 m = re_section.search(line)
                 if m:
-                    section = m.group(1)
+                    parts = m.group(1).split("~")
                     buffer = ""
+                    if len(parts) > 0:
+                        section = parts[0]
+                        if section == "files":
+                            if len(parts) > 1:
+                                section = parts[1]
+                            else:
+                                section = None
 
+        if content is not None:
+            files.append({
+                "name":"content",
+                "format":"html",
+                "content":content
+            })
+
+        files_clean = []
+        for info in files:
+            if not re_all_white_space.search(info["content"]):
+                files_clean.append(info)
+
+        if len(files_clean) > 0:
+            if "files" not in metadata:
+                metadata["files"] = files_clean
+            else:
+                metadata["files"].extend(files_clean)
     return metadata
 
 
