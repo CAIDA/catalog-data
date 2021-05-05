@@ -2281,14 +2281,7 @@
     "description":"Corsaro is a software suite for performing large-scale analysis of trace data. It was specifically designed to be used with passive traces captured by darknets, but the overall structure is generic enough to be used with any type of passive trace data.  ",
     "status":"ongoing",
     "tags":["caida", "measurement analysis", "tool", "traffic"],
-    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
-    "resources": [
-       {
-         "name":"public",
-         "url":"https://www.caida.org/tools/measurement/corsaro/",
-         "tags":["file"]
-       }
-   ]
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"software:henya",
