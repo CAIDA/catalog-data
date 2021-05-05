@@ -80,7 +80,7 @@ re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
 re_html = re.compile(r"\.html$", re.IGNORECASE)
 re_md = re.compile(r"\.md$", re.IGNORECASE)
-re_all_white_space = re.compile(r"^\s*$")
+re_not_white_space = re.compile(r"[^\s]")
 
 # File Paths:
 path_ids = "data/data_id___caida.json"
@@ -229,7 +229,7 @@ def parse_metadata(filename):
     content = None
     metadata = None
     re_tool = re.compile("^tool[_-]")
-    files = []
+    tabs = []
     with open(filename) as f:
         for line in f:
             # everything after '=== content ===' is placed inside content unprocessed
@@ -258,7 +258,7 @@ def parse_metadata(filename):
                         elif re_md.search(section):
                             f = "md"
 
-                        files.append({
+                        tabs.append({
                             "name":section,
                             "format":f,
                             "content":buffer
@@ -286,23 +286,23 @@ def parse_metadata(filename):
                             else:
                                 section = None
 
-        if content is not None:
-            files.append({
+        tabs_clean = []
+        if content is not None and re_not_white_space.search(content):
+            tabs_clean.append({
                 "name":"content",
-                "format":"html",
+                "format":"markdown",
                 "content":content
             })
 
-        files_clean = []
-        for info in files:
-            if not re_all_white_space.search(info["content"]):
-                files_clean.append(info)
+        for tab in tabs:
+            if re_not_white_space.search(tab["content"]):
+                tabs_clean.append(tab)
 
-        if len(files_clean) > 0:
-            if "files" not in metadata:
-                metadata["files"] = files_clean
+        if len(tabs_clean) > 0:
+            if "tabs" not in metadata:
+                metadata["tabs"] = tabs_clean
             else:
-                metadata["files"].extend(files_clean)
+                metadata["tabs"].extend(tabs_clean)
     return metadata
 
 
@@ -332,7 +332,7 @@ def print_datasets():
             strings = []
 
             if "visibility" not in obj or obj["visibility"] != "private":
-                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated", "files"]
+                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated", "tabs"]
             else:
                 keys = ["id", "name", "visibility"]
 
