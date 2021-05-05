@@ -289,7 +289,7 @@ def parse_metadata(filename):
         tabs_clean = []
         if content is not None and re_not_white_space.search(content):
             tabs_clean.append({
-                "name":"description",
+                "name":"content",
                 "format":"markdown",
                 "content":content
             })
