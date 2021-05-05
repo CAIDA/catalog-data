@@ -332,7 +332,7 @@ def print_datasets():
             strings = []
 
             if "visibility" not in obj or obj["visibility"] != "private":
-                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated"]
+                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated", "files"]
             else:
                 keys = ["id", "name", "visibility"]
 
