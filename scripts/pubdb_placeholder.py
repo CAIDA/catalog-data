@@ -160,7 +160,7 @@ def load_ids(type_,filename):
                 obj["filename"] = "sources/"+type_+"/"+obj["id"]+"___pubdb.json"
                 objects.append(obj)
     except json.decoder.JSONDecodeError as e:
-        print ("error",fname, e)
+        print ("error",filename, e)
     except ValueError as e:
         print ("JSON error in",filename)
         raise e
