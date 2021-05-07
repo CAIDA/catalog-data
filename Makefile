@@ -10,11 +10,11 @@ pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py 
 externallinks: scripts/externallinks_placeholder.py
 	python3 scripts/externallinks_placeholder.py -d data/data-papers.yaml
 
-caida: scripts/caida_dataset_conversion.py
+caida: scripts/caida_placeholder.py scripts/caida_dataset_blanks.py
 	@if [ -d ${CATALOG_DATA_CAIDA_PATH} ]; \
 		then \
-		echo "python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE}"; \
-		python3 scripts/caida_dataset_conversion.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE} ; \
+		echo "python3 scripts/caida_placeholder.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE}"; \
+		python3 scripts/caida_placeholder.py -p ${CATALOG_DATA_CAIDA_PATH} -i ${CATALOG_DATA_CAIDA_FILE} ; \
 	fi; \
 
 	@if [ ! -d ${CATALOG_DATA_CAIDA_PATH} ]; \
