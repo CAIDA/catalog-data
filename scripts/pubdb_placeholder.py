@@ -5,6 +5,7 @@ import json
 import re
 import os
 import sys
+import argparse
 import lib.utils as utils
 
 objects = []
@@ -14,9 +15,14 @@ name_id = {}
 re_ids_only = re.compile("^[a-z_\s:\d]+$")
 re_whitespace = re.compile("\s+")
 
+parser = argparse.ArgumentParser()
+parser.add_argument("-p", dest="papers_file", type=str, required=True)
+parser.add_argument("-m", dest="media_file", type=str, required=True)
+args = parser.parse_args()
+
 def main():
-    load_ids("media","data/PANDA-Presentations-json.pl.json")
-    load_ids("paper","data/PANDA-Papers-json.pl.json")
+    load_ids("paper","papers",args.papers_file)
+    load_ids("media","presentations",args.media_file)
     error = False
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
@@ -149,10 +155,11 @@ def key_to_key(obj,key_a,key_b):
         obj[key_b] = obj[key_a]
         del obj[key_a]
 
-def load_ids(type_,filename):
+def load_ids(type_,key, filename):
     print ("loading", filename)
     try:
-        for obj in json.load(open(filename,"r")):
+        data = json.load(open(filename,"r"))
+        for obj in data[key]:
             obj["__typename"] = type_
             id_add(filename, type_, obj["id"])
             original = "sources/"+type_+"/"+obj["id"]+".json"
