@@ -1,0 +1,23 @@
+{
+    "id": "libsea",
+    "name": "LibSea",
+    "organization": "CAIDA",
+    "description": "There are many graph file formats and graph libraries available today. However, most are proprietary, ad-hoc, limited in expressiveness, too verbose, or lacking in scalability. LibSea is both a file format and a Java library for representing large directed graphs on disk and in memory. Scalability to graphs with as many as one million nodes has been the primary goal. Additional goals have been expressiveness, compactness, and support for application-specific conventions and policies.",
+    "tags": [
+        "library",
+        "topology",
+        "caida"
+    ],
+    "resources": [
+        {
+            "name": "contact for access",
+            "url": "mailto:info@caida.org",
+            "tags": [
+                "email"
+            ]
+        }
+    ],
+    "licenses": [
+        "license:GNU LESSER GENERAL PUBLIC LICENSE"
+    ]
+}
