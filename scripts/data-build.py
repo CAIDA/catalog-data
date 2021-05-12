@@ -863,14 +863,17 @@ def word_scoring(obj, recursive=False):
 
         for word,freq in word_freq.items():
             word = word.lower()
-            if word not in word_score:
-                word_score[word] = weight*freq
-            else:
-                word_score[word] += weight*freq 
+            if len(word) > 1:
+                if word not in word_score:
+                    word_score[word] = weight*freq
+                else:
+                    word_score[word] += weight*freq 
 
     id_word_score[obj["id"]] = word_score
 
 seen_value = set()
+re_not_letter = re.compile("[^a-z^A-z]+")
+re_not_empty = re.compile("[^\s]")
 def word_freq_get(value):
     word_freq = {}
     type_ = type(value)
@@ -917,6 +920,18 @@ def word_freq_get(value):
                 else:
                     word_freq[w] = 1
     #print (json.dumps(word_freq,indent=4))
+
+    # additoinal words
+    words = list(word_freq.keys())
+    for word in words:
+        if re_not_letter.search(word):
+            for w in re_not_letter.split(word):
+                if len(w) > 1 and re_not_empty.search(w):
+                    if w in word_freq:
+                        word_freq[w] += word_freq[word]
+                    else:
+                        word_freq[w] = 1
+
     return word_freq
 
 ###########################
