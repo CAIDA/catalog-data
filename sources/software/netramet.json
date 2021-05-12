@@ -17,5 +17,8 @@
                 "file"
             ]
         }
+    ],
+    "licenses": [
+        "license:GNU GENERAL PUBLIC LICENSE Version 2"
     ]
 }

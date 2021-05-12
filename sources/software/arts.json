@@ -1,0 +1,20 @@
+{
+    "id": "arts",
+    "name": "arts++",
+    "organization": "CAIDA",
+    "description": "ARTS is a binary file format specification for storing network data. Initially developed at ANS by David Bolen in 1992, ARTS was licensed to CAIDA in March of 1998.",
+    "tags": [
+        "utilities",
+        "caida"
+    ],
+    "dateStart": "1998.10",
+    "resources": [
+        {
+            "name": "contact for access",
+            "url": "mailto:info@caida.org",
+            "tags": [
+                "email"
+            ]
+        }
+    ]
+}
