@@ -88,17 +88,24 @@ def main():
                     obj["doi"] = link["to"]
                    
                 m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",link["to"])
+                id_ = None
                 if m:
                     type_,date, id_ = m.groups()
                     if type_ == "papers":
                         type_ = "paper"
                     elif type_ == "presentations":
                         type_ = "media"
-                    id_ = utils.id_create(obj["filename"],type_,date+"_"+id_)
-                    if id_ in seen:
+
+                m = re.search("https://catalog.caida.org/details/([^\/]+)/([^/]+)",link["to"])
+                if m:
+                    type_,id_ = m.groups()
+                    id_ = utils.id_create(obj["filename"],type_,id_)
+
+
+                if id_ is not None and id_ in seen:
                         links.append({
                             "to":id_,
-                            "url":link["to"]
+                            "label":link["label"]
                         })
                 else:
                     resource = {
