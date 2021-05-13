@@ -55,6 +55,7 @@ A search query can be generated from a search string by splitting the string on 
      |   types  |  comma separated list of object types <br>  `types=dataset`  &nbsp;&nbsp;&nbsp;  `types=media,recipe`  | 
      |   persons | comma separated list of strings matching part of a person's names<br> `persons=john` will returns all persons with john in thier name  |  
      |   ids     | comma seperated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
+     | dates | comma seperated list of dates which supports year (2015) or year.mon (2015.03) |
       
 - **ids** (tag:topology)
 
