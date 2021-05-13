@@ -24,6 +24,11 @@
 One of the primary ways people can interact with the catalog is with a search query. A search query is a search against the catalog for objects linked against a set of object ids, matching a set of types, and/or containing a set of words. A search query is a case insentive unordered collection of object ids, key/value pairs, and words.
 
 A search query can be generated from a search string by splitting the string on white space into tokens and dividing the tokens into ids, key/value pairs, and words.
+<style>
+    table {
+        border-style: solid;
+    }
+</style>
 
 | type | meaning | examples |
 |------|------------|---------|
