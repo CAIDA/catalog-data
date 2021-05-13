@@ -25,8 +25,8 @@ One of the primary ways people can interact with the catalog is with a search qu
 
 A search query can be generated from a search string by splitting the string on white space into tokens and dividing the tokens into ids, key/value pairs, and words.
 <style>
-    table {
-        border-style: solid;
+    table, th, td {
+        border: 1px solid black;
     }
 </style>
 
