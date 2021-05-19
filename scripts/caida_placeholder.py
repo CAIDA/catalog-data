@@ -76,6 +76,7 @@ seen_urls = set()
 # Definitions:
 re_json = re.compile(r"\.json$", re.IGNORECASE)
 re_mkdn = re.compile(r"\.md$", re.IGNORECASE)
+re_json = re.compile(r"\.json$", re.IGNORECASE)
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
 re_html = re.compile(r"\.html$", re.IGNORECASE)
@@ -167,15 +168,19 @@ def parse_catalog_data_caida(source_dir):
         if os.path.isdir(path):
             for file in sorted(os.listdir(path)):
 
-                # Edge Case: Skip if file is not a .md file.
-                if not re_mkdn.search(file):
-                    print ("   skipping",file)
-                    continue
 
                 file_name = file[:file.index(".")].replace("-", "_")
                 file_path = path+file
 
-                metadata = parse_metadata(file_path)
+                # Edge Case: Skip if file is not a .md file.
+                if re_mkdn.search(file):
+                    metadata = parse_metadata(file_path)
+                elif re_json.search(file):
+                    with open(file_path) as f:
+                        metadata = json.load(f)
+                else:
+                    print ("   skipping",file)
+                    continue
 
                 # Edge Case: Replace missing names with ID.
                 if "name" not in metadata:
