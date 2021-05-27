@@ -176,8 +176,13 @@ def parse_catalog_data_caida(source_dir):
                 if re_mkdn.search(file):
                     metadata = parse_metadata(file_path)
                 elif re_json.search(file):
-                    with open(file_path) as f:
-                        metadata = json.load(f)
+                    try:
+                        with open(file_path) as f:
+                            metadata = json.load(f)
+                    except Exception as e:
+                        print ("\nerror:",file_path)
+                        print ("    ",e)
+                        sys.exit(1)
                 else:
                     print ("   skipping",file)
                     continue

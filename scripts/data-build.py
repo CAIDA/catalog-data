@@ -193,7 +193,7 @@ def main():
                     except Exception as e:
                         print ("\nerror",path+"/"+filename)
                         print ("    ",e)
-                        sys.exit()
+                        sys.exit(1)
         else:
             obj = None
 
