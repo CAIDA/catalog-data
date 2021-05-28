@@ -220,7 +220,8 @@ def main():
                     if "tags" not in obj1:
                         obj1["tags"] = []
                     ids.add(obj1["id"])
-                    obj1["tags"].append(tag_caida_data)
+                    if tag_caida_data not in obj1["tags"]:
+                        obj1["tags"].append(tag_caida_data)
 
     ######################
     link = {"to":tag_caida_data}
