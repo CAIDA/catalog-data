@@ -48,6 +48,12 @@ import datetime
 import subprocess
 import lib.utils as utils
 
+# used to plural
+import nltk
+nltk.download('wordnet')
+from nltk.stem.wordnet import WordNetLemmatizer
+Lem = WordNetLemmatizer()
+
 source_dir="sources"
 
 id_info = {}
@@ -59,6 +65,8 @@ id_word_score = {}
 
 personName_ids = {}
 type_ids = {}
+
+singular_plural = {}
 
 re_tag = re.compile("^tag:")
 re_only_white_space = re.compile("^\s*$")
@@ -275,6 +283,8 @@ def main():
     print ("adding words")
     for obj in id_object.values():
         word_scoring(obj)
+    # Add in alternative plural/singlar
+    word_add_plurals()
         
     word_id_score = {}
     for id_,word_score in id_word_score.items():
@@ -849,7 +859,9 @@ def object_checker(obj):
 
 #############################
 
+
 def word_scoring(obj, recursive=False):
+    global singlar_plural
     word_score = {}
     for key,value in obj.items():
         if key in key_weight:
@@ -862,13 +874,19 @@ def word_scoring(obj, recursive=False):
 
         word_freq = word_freq_get(value)
 
-        for word,freq in word_freq.items():
-            word = word.lower()
-            if len(word) > 1:
-                if word not in word_score:
-                    word_score[word] = weight*freq
-                else:
-                    word_score[word] += weight*freq 
+        for word_original,freq in word_freq.items():
+            if len(word_original) > 1:
+                word_original = word_original.lower()
+                first = True
+                for word in [word_original, Lem.lemmatize(word_original)]:
+                    if word and (first or word != word_original):
+                        first = False
+                        if word != word_original:
+                            singular_plural[word] = word_original
+                        if word not in word_score:
+                            word_score[word] = weight*freq
+                        else:
+                            word_score[word] += weight*freq 
 
     id_word_score[obj["id"]] = word_score
 
@@ -934,6 +952,25 @@ def word_freq_get(value):
                         word_freq[w] = 1
 
     return word_freq
+
+
+# Couldn't find a package that converted to singular to plural
+# So used this method to record that information
+def word_add_plurals():
+    for id_,word_score in id_word_score.items():
+        plural_score = {}
+        for word,score in word_score.items():
+            if word in singular_plural:
+                plural = singular_plural[word]
+                if plural in plural_score:
+                    plural_score[plural] += score
+                else:
+                    plural_score[plural] = score
+        for plural,score in plural_score.items():
+            if plural in word_score:
+                plural_score[plural] += score
+            else:
+                word_score[plural] = score
 
 ###########################
 
