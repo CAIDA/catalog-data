@@ -408,7 +408,7 @@ def object_date_add(obj):
     else:
         for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
             type_,key = type_key
-            if obj["__typename"] == type_ and key in obj and "date" not in obj:
+            if obj["__typename"] == type_ and key in obj:
                 date = utils.date_parse(obj[key])
                 if date:
                     obj["date"] = date
