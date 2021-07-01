@@ -184,7 +184,7 @@ topkey_2_dataset = {
   "mapnet"                            : "software:mapnet",
   "coralreef"                         : "software:coralreef",
   "datcat"                            : "software:datcat",
-  "dolphin"                           : "media:2014_dolphin_bulk_dns_resolution_tool",
+  "dolphin"                           : "media:2014_dolphin_dhs",
   "asfinder"                          : "software:coralreef",
   "netgeo"                            : "software:netgeo",
   "ioda"                              : "software:ioda"

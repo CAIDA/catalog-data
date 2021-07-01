@@ -73,6 +73,9 @@ def person_seen_check(nameLast, nameFirst):
 
 
 def date_parse(value):
+    t = type(value)
+    if t != str:
+        return None
     m = re_year.search(value)
     if m:
         year, rest = m.groups()
@@ -87,9 +90,9 @@ def date_parse(value):
                 day, rest = m.groups()
                 if len(day) < 2:
                     day = "0"+day
-                return year+"."+mon+"."+day
+                return year+"-"+mon+"-"+day
             else:
-                return year+"."+mon
+                return year+"-"+mon
         else:
             return year
     return None

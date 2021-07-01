@@ -393,7 +393,7 @@ def object_date_add(obj):
                 values = result.decode().lower().split(" ")
             else:
                 values = []
-            date = datetime.date.today().strftime("%Y.%m")
+            date = datetime.date.today().strftime("%Y-%m")
             if len(values) >= 4:
                 if values[2] in mon_index:
                     date = values[3]+"."+mon_index[values[2]]
@@ -409,7 +409,9 @@ def object_date_add(obj):
         for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
             type_,key = type_key
             if obj["__typename"] == type_ and key in obj:
-                obj["date"] = obj[key]
+                date = utils.date_parse(obj[key])
+                if date:
+                    obj["date"] = date;
 
     if "date" not in obj:
         obj["date"] = obj["dateLastUpdated"]
