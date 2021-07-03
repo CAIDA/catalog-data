@@ -418,7 +418,7 @@ def object_date_add(obj):
     key = "dateEnd"
     if key in obj:
         if obj[key].lower() == "ongoing":
-            obj["date"] = today
+            obj[key] = obj["date"] = today
         else:
             date = utils.date_parse(obj[key])
             if date:
