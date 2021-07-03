@@ -3,9 +3,6 @@ import sys
 import traceback
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
-re_year = re.compile("^(\d\d\d\d)[^\d]*(.*)")
-re_num = re.compile("(\d{1,2})[^\d]*(.*)")
-
 def id_create(filename, type_,id_):
     if id_ is not None:
         if ":" in id_:
@@ -71,6 +68,9 @@ def person_seen_check(nameLast, nameFirst):
         return person_seen[n]
     return None
 
+
+re_year = re.compile("^\s*(\d\d\d\d)[^\d]*(.*)")
+re_num = re.compile("(\d{1,2})[^\d]*(.*)")
 
 def date_parse(value):
     t = type(value)

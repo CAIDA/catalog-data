@@ -507,13 +507,16 @@ def object_finish(obj):
         #            resource["tags"][i] = object_lookup_type_name("tag",tag)["id"]
 
         elif re_date_key.search(key) and type(obj[key]) == str:
-            values = re_not_digit.split(obj[key])
-            digits = ["1990","01","01","00","00","00"]
-            for i,value in enumerate(values):
-                digits[i] = value
-            #dt = datetime.datetime.strptime(" ".join(digits), "%Y %m %d %H %M %S")
+            date = utils.date_parse(obj[key])
+            if date:
+                obj[key] = date
+            #values = re_not_digit.split(obj[key])
+            #digits = ["1990","01","01","00","00","00"]
+            #for i,value in enumerate(values):
+                #digits[i] = value
+            ##dt = datetime.datetime.strptime(" ".join(digits), "%Y %m %d %H %M %S")
             #date = int(time.mktime(dt.timetuple()))
-            obj[key] = "%s/%s/%s %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
+            #obj[key] = "%s/%s/%s %s:%s:%s" % (digits[0],digits[1],digits[2],digits[3],digits[4],digits[5])
 
         #elif obj["__typename"] == "Venue" and key == "dates":
         #    for date_url in obj[key]:
