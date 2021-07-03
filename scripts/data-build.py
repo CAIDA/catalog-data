@@ -379,6 +379,8 @@ def id_date_load(filename):
             error_add(filename, e.__str__())
 
 def object_date_add(obj):
+    today = datetime.date.today().strftime("%Y-%m")
+
     for key in ["dateCreated","dateLastUpdated"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
@@ -393,7 +395,7 @@ def object_date_add(obj):
                 values = result.decode().lower().split(" ")
             else:
                 values = []
-            date = datetime.date.today().strftime("%Y-%m")
+            date = today
             if len(values) >= 4:
                 if values[2] in mon_index:
                     date = values[3]+"."+mon_index[values[2]]
@@ -413,8 +415,11 @@ def object_date_add(obj):
                 if date:
                     obj["date"] = date
                     obj[key] = date
-    for key in ["dateEnd"]:
-        if key in obj:
+    key = "dateEnd"
+    if key in obj:
+        if obj[key].lower() == "ongoing":
+            obj["date"] = today
+        else:
             date = utils.date_parse(obj[key])
             if date:
                 obj[key] = date
