@@ -1,9 +1,12 @@
 import re
 import sys
 import traceback
+import unidecode
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
 def id_create(filename, type_,id_):
+    id_ = unidecode.unidecode(id_)
+
     if id_ is not None:
         if ":" in id_:
             values = id_.split(":")
@@ -42,6 +45,7 @@ def id_create(filename, type_,id_):
     else:
         name = re_id_illegal.sub("_",name)
         name = re.sub("_+$","",re.sub("^_+","",name))
+
     return type_.lower()+":"+name.lower()
 
 person_seen = {}
