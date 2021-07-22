@@ -15,7 +15,8 @@
         "bgp",
         "traces",
         "ipv4",
-        "infrastructure"
+        "infrastructure",
+        "BOINC"
     ],
     "resources": [
         {
@@ -43,6 +44,10 @@
         },
         {
             "to": "media:2020_lvee_online_edition_ithena",
+            "label": "used by"
+        },
+        {
+            "to": "media:2021_yavaconf_ithena",
             "label": "used by"
         }
     ]

@@ -1,0 +1,48 @@
+{
+    "id": "2021_yavaconf_ithena",
+    "name": "Ya!vaConf 2021: BOINC + Elastic Stack = architecture for data collection, gathering, processing and archiving in the context of the iThena distributed computing project",
+    "description": "This presentation is about the BOINC project: iThena and Elastic Stack software, which is a subsystem for data collection, assembly, processing and archiving. The presentation will show the assumptions of the project and its architecture, as well as the results, which are also available under an open-data license.",
+    "tags": [
+        "CCF",
+        "iThena",
+        "HowFaster.NET",
+        "bgp",
+        "presentation",
+        "security",
+        "routes",
+        "traces",
+        "infrastructure",
+        "big data",
+        "BOINC"
+    ],
+    "presenters": [
+        {
+            "person": "person:swierczewski__lukasz",
+            "organizations": [
+                "Cyber-Complex Foundation, Poland"
+            ],
+            "venue": "Ya!vaConf 2021",
+            "date": "2021.06.24",
+            "url": "https://yavaconf.com/"
+        }],
+    "links": [],
+    "date": "2021.06.24",
+    "type": "PRESENTATION",
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://cybercomplex.net/docs/YAVA_CONF_2021_BOINC_ELK_ITHENA.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "presentation"
+            ]
+        }
+    ],
+    "authors":[
+        {
+            "person": "person:swierczewski__lukasz",
+            "organizations": ["Cyber-Complex Foundation, Poland"]
+        }
+    ]
+}
