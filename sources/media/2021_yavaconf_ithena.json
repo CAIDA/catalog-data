@@ -25,7 +25,12 @@
             "date": "2021.06.24",
             "url": "https://yavaconf.com/"
         }],
-    "links": [],
+    "links": [
+        {
+            "to": "media:2021_open_data_howfaster_net",
+            "label": "used by"
+        }
+    ],
     "date": "2021.06.24",
     "type": "PRESENTATION",
     "resources": [
