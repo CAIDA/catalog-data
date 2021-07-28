@@ -172,7 +172,8 @@ def main():
         "paper",
         "software",
         "media",
-        "group"
+        "group",
+        "venue"
     ])
 
     #######################
@@ -407,6 +408,12 @@ def object_date_add(obj):
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = person_venue["date"]
+            if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
+                vid = person_venue["venue"]
+                if vid in id_object:
+                    person_venue["venue"] = id_object[vid]["name"]
+                else:
+                    print ("    missing venue:",person_venue["venue"])
     else:
         for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
             type_,key = type_key
