@@ -2282,13 +2282,13 @@
     "filename":"sources/software/archipelago___caida.json",
     "organization":"CAIDA",
     "description":" CAIDA deploys and maintains a globally distributed measurement platform we call Archipelago (Ark). We grow the infrastructure by distributing hardware measurement nodes (2nd gen. Raspberry Pi) with as much geographical and topological diversity as we can to improve our view of the global Internet. Our primary goals with the Ark infrastructure are to:<br> <ul><li> reduce the effort needed to develop and deploy sophisticated large-scale measurements, and</li> <li>provide a step toward a community-oriented measurement infrastructure by allowing collaborators to run their vetted measurement tasks on a security-hardened distributed platform.</li></ul><br> Ark is tailored specifically for active network measurement. This allows Ark to be simpler than some other general-purpose distributed experimental platforms, and it allows us to concentrate on providing facilities that directly address the needs of networking research. In particular, we provide a facility for communication and coordination that makes it easier to write distributed measurements that must work together to achieve a goal. We are working on providing a high-level API to ease the challenges of writing measurement tools. Our goal is to lower the barrier to bringing novel and interesting measurement techniques to life.",
-    "tags":["active measurement", "caida", "geographic", "topology"],
-    "licenses":["license:bsd_4_clause_uc"],
+    "tags":["active measurement", "caida", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"],
     "resources": [
        {
-         "name":"public",
+         "name":"restricted",
          "url":"https://www.caida.org/projects/ark/",
-         "tags":["overview"]
+         "tags":["file"]
        }
    ]
   },
@@ -2299,16 +2299,13 @@
     "organization":"third party",
     "description":"RubyGem containing utility classes used by the Archipelago measurement infrastructure and the MIDAR alias-resolution system. Only used to track downloads. ",
     "status":"ongoing",
-    "tags":["ark", "library", "ruby", "topology"],
-    "licenses":["license:bsd_4_clause_uc", "license:caida_public_aua", "license:gnu_gpl_v2plus"],
+    "tags":["ark", "library", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/arkutil/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/arkutil/downloads/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2318,13 +2315,13 @@
     "filename":"sources/software/artemis___caida.json",
     "organization":"CAIDA",
     "description":"Measures and analyzes passive Internet traffic monitor data.",
-    "tags":["bgp", "caida", "hijack detection", "measurement", "security"],
+    "tags":["caida", "hijack detection", "security"],
     "licenses":["license:bsd_3_clause"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.bgpartemis.org/index.html",
-         "tags":["web app"]
+         "tags":[]
        }
    ]
   },
@@ -2334,8 +2331,7 @@
     "filename":"sources/software/arts___caida.json",
     "organization":"CAIDA",
     "description":"ARTS is a binary file format specification for storing network data. Initially developed at ANS by David Bolen in 1992, ARTS was licensed to CAIDA in March of 1998.",
-    "tags":["caida", "file format", "utilities"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "utilities"],
     "resources": [
        {
          "name":"contact for access",
@@ -2350,7 +2346,7 @@
     "filename":"sources/software/as_organization_api___caida.json",
     "organization":"CAIDA",
     "description":"Provides API to the AS to organization dataset.",
-    "tags":["API", "AS", "caida", "geolocation", "topology"],
+    "tags":["caida", "geolocation", "topology"],
     "licenses":["license:bsd_4_clause_uc"],
     "resources": [
        {
@@ -2366,13 +2362,13 @@
     "filename":"sources/software/as_relationship___caida.json",
     "organization":"CAIDA",
     "description":"Measures an AS's centrality",
-    "tags":["AS", "caida", "measurement", "topology"],
+    "tags":["caida", "topology"],
     "licenses":["license:bsd_4_clause_uc"],
     "resources": [
        {
          "name":"public",
          "url":"https://ihr.iijlab.net/ihr/en-us/",
-         "tags":["web app"]
+         "tags":["UI"]
        }
    ]
   },
@@ -2382,7 +2378,7 @@
     "filename":"sources/software/asrank_api___caida.json",
     "organization":"CAIDA",
     "description":"is CAIDA's ranking of Autonomous Systems (AS) (which approximately map to Internet Service Providers) and organizations (Orgs) (which are a collection of one or more ASes). This ranking is derived from topological data collected by CAIDA's Archipelago Measurement Infrastructure and Border Gateway Protocol (BGP) routing data collected by the Route Views Project and RIPE NCC.<br> ASes and Orgs are ranked by their customer cone size, which is the number of their direct and indirect customers. Note: We do not have data to rank ASes (ISPs) by traffic, revenue, users, or any other non-topological metric.",
-    "tags":["API", "AS", "bgp", "caida", "geolocation", "topology"],
+    "tags":["caida", "geolocation", "topology"],
     "licenses":["license:bsd_4_clause_uc"],
     "resources": [
        {
@@ -2398,13 +2394,13 @@
     "filename":"sources/software/asrank_ui___caida.json",
     "organization":"CAIDA",
     "description":"User Interface to AS Rank",
-    "tags":["AS", "bgp", "caida", "geolocation", "topology"],
+    "tags":["caida", "geolocation", "topology"],
     "licenses":["license:bsd_4_clause_uc"],
     "resources": [
        {
          "name":"public",
          "url":"https://asrank.caida.org/",
-         "tags":["web app"]
+         "tags":["UI"]
        }
    ]
   },
@@ -2415,15 +2411,11 @@
     "organization":"CAIDA",
     "description":"AutoFocus is a traffic analysis and visualization tool that describes the traffic mix of a link through textual reports and time series plots.",
     "tags":["caida", "measurement", "traffic"],
-    "licenses":["license:uc_research_use_license"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/autofocus/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/autofocus/AutoFocus-1.0.1.tar.gz",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2433,13 +2425,12 @@
     "filename":"sources/software/beluga___caida.json",
     "organization":"CAIDA",
     "description":"Beluga provides a real-time graph of RTTs and packet loss to an end host, showing both total round trip time and per-hop round trip time. It also shows a historical statistical breakdown of RTTs, to allow trend analysis.",
-    "tags":["Visualization", "caida", "measurement", "performance", "topology", "traceroute"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["Visualization", "caida", "measurement", "performance", "topology"],
     "resources": [
        {
          "name":"restricted",
          "url":"https://www.caida.org/catalog/software/beluga",
-         "tags":["overview"]
+         "tags":["file"]
        }
    ]
   },
@@ -2450,16 +2441,13 @@
     "organization":"CAIDA",
     "description":"BGPStream is the open-source software framework for live and historical BGP data analysis.  The anchor file was set up to process the BGPStream weblogs. The bgpstream tool is also available from CAIDAs github repository, so this only provides a lower limit on downloads. ",
     "status":"ongoing",
-    "tags":["bgp", "caida", "data analysis", "measurement", "topology"],
-    "licenses":["license:bsd_4_clause_uc", "license:caida_public_aua", "license:gnu_gpl_v2"],
+    "tags":[" tool", "caida", "data analysis", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
        {
          "name":"public",
          "url":"https://bgpstream.caida.org/docs/api",
-         "tags":["API"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/cflowd/download/",
-         "tags":["public"]
+         "tags":["API"]
        }
    ]
   },
@@ -2470,7 +2458,7 @@
     "organization":"CAIDA",
     "description":"CAIDA's resource catalog provides a rich context graph of the relationships between papers, presentations, datasets, and software.  It also provides recipes that help to understand and use those resources.",
     "tags":["caida", "catalog"],
-    "licenses":["license:bsd_4_clause_uc"],
+    "licenses":["license:BSD-4-Clause-UC"],
     "resources": [
        {
          "name":"public",
@@ -2484,16 +2472,12 @@
     "filename":"sources/software/cflowd___caida.json",
     "organization":"CAIDA",
     "description":"cflowd is a flow analysis tool that was used for analyzing Cisco's NetFlow enabled switching method. The current release (described below) includes the collections, storage, and basic analysis modules for cflowd and for arts++ libraries. This analysis package permits data collection and analysis by ISPs and network engineers in support of capacity planning, trends analysis, and characterization of workloads in a network service provider environment. Other areas where cflowd may prove useful include usage tracking for Web hosting, accounting and billing, network planning and analysis, network monitoring, developing user profiles, data warehousing and mining, as well as security-related investigations.",
-    "tags":["analysis", "caida", "measurement", "traffic"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "tags":["caida", "measurement", "traffic"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/cflowd",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/cflowd/download/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2505,16 +2489,13 @@
     "organization":"CAIDA",
     "description":"CoralReef is a comprehensive software suite developed by CAIDA to collect and analyze data from passive Internet traffic monitors, in real time or from trace files. The package includes support for standard network interfaces and specialized high performance monitoring devices, programming APIs for C and perl, and applications for capture, analysis, and web report generation. ",
     "status":"ongoing",
-    "tags":["caida", "measurement analysis", "traffic"],
-    "licenses":["license:bsd_4_clause_uc", "license:caida_public_aua", "license:uc_research_use_license"],
+    "tags":["caida", "measurement analysis", "tool", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/coralreef",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/coralreef/dists/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2525,8 +2506,8 @@
     "organization":"CAIDA",
     "description":"Corsaro is a software suite for performing large-scale analysis of trace data. It was specifically designed to be used with passive traces captured by darknets, but the overall structure is generic enough to be used with any type of passive trace data.  ",
     "status":"ongoing",
-    "tags":["caida", "measurement analysis", "traffic"],
-    "licenses":["license:bsd_4_clause_uc", "license:caida_public_aua", "license:gnu_gpl_v3plus"]
+    "tags":["caida", "measurement analysis", "tool", "traffic"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
     "id":"software:cuttlefish",
@@ -2534,16 +2515,12 @@
     "filename":"sources/software/cuttlefish___caida.json",
     "organization":"CAIDA",
     "description":"Cuttlefish produces animated GIFs that reveal the interplay between the diurnal and geographical patterns of displayed data. By showing how the sun's shadow covers the world map, Cuttlefish clearly depicts the time of day at a given geographic region, while moving graphs illustrate the relationship between local time and the visualized events.",
-    "tags":["caida", "diurnal patterns", "geographic", "traffic", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["caida", "traffic", "visualization"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/cuttlefish/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/cuttlefish/code/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2553,13 +2530,13 @@
     "filename":"sources/software/datcat___caida.json",
     "organization":"CAIDA",
     "description":"The focus of this project is on enhancing the utility of Internet Measurement Data Catalog (IMDC) for the needs of cybersecurity and cyberinfrastructure research community as well as in support of the new NSF Data Sharing Policy.",
-    "tags":["caida", "measurement", "project", "security"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["caida", "cybersecurity", "project"],
+    "licenses":[],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/funding/sdci-datcat/summary/",
-         "tags":["overview"]
+         "tags":[]
        }
    ]
   },
@@ -2570,15 +2547,11 @@
     "organization":"CAIDA",
     "description":"DBATS is a high performance time series database engine optimized for inserting/updating values for many series simultaneously. DBATS can easily sustain write speeds of more than 1.6 million values per second, and CAIDA has used DBATS databases with more than 40 million distinct series.",
     "tags":["caida", "database library", "library"],
-    "licenses":["license:gnu_gpl_v2plus"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/dbats/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/dbats/downloads/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2589,15 +2562,11 @@
     "organization":"CAIDA",
     "description":"dnstop is a libpcap application (ala tcpdump) that displays various tables of DNS traffic on your network, including tables of source and destination IP addresses, query types, top level domains and second level domains.",
     "tags":["caida", "dns", "traffic"],
-    "licenses":["license:bsd_2_clause_simplified"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/dnstop/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"http://dns.measurement-factory.com/tools/dnstop/src/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2608,15 +2577,12 @@
     "organization":"CAIDA",
     "description":"The dnsstat (crl_dnsstat) package is based on CAIDA's CoralReef suite, containing only the parts of CoralReef needed to collect statistics on DNS queries..",
     "tags":["caida", "dns"],
-    "licenses":["license:bsd_3_clause", "license:uc_research_use_license"],
+    "licenses":["license:bsd_3_clause"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/dnsstat/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/dnsstat/dnsstat-3.5.0.tar.gz",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2627,12 +2593,11 @@
     "organization":"CAIDA",
     "description":"dsc is a system for collecting and presenting statistics from busy DNS servers.",
     "tags":["caida", "dns", "traffic"],
-    "licenses":["license:bsd_3_clause", "license:mit"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/dsc/",
-         "tags":["overview"]
+         "tags":["file"]
        }
    ]
   },
@@ -2642,7 +2607,7 @@
     "filename":"sources/software/dzdb_api___caida.json",
     "organization":"CAIDA",
     "description":"DZDB is CAIDA's database of tld zone file data, which tracks the history of a zone's domain, nameserver, and IP records. This API allows querying the zone file collection maintained by DNS Coffee.",
-    "tags":["API", "caida", "dns", "topology"],
+    "tags":["caida", "dns", "topology"],
     "licenses":["license:bsd_2_clause_simplified"],
     "resources": [
        {
@@ -2664,7 +2629,7 @@
        {
          "name":"public",
          "url":"https://www.caida.org/projects/fantail/",
-         "tags":["web app"]
+         "tags":["file"]
        }
    ]
   },
@@ -2674,16 +2639,12 @@
     "filename":"sources/software/flowscan___caida.json",
     "organization":"CAIDA",
     "description":"Authored in 2000, FlowScan analyzes and reports on Internet Protocol (IP) flow data exported by routers. Consisting of Perl scripts and modules, FlowScan binds together (1) a flow collection engine (a patched version of cflowd), (2) a high performance database (Round Robin Database - RRD), and (3) a visualization tool (RRDtool). FlowScan produces graph images that provide a continuous, near real-time view of the network border traffic.",
-    "tags":["analysis", "caida", "traffic", "visualization"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "tags":["caida", "traffic", "visualization"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/flowscan/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/flowscan/pub/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2693,16 +2654,12 @@
     "filename":"sources/software/geoplot___caida.json",
     "organization":"CAIDA",
     "description":"GeoPlot is a light-weight java applet which allows users to create a geographical image of a data set. The applet provides the user with many options to represent the data set. Basically, GeoPlot plots a set of nodes and a set of lines that connect these nodes on an image specified by the user.",
-    "tags":["caida", "geographic", "topology", "visualization"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "topology", "visualization"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/geoplot/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/geoplot/download/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2713,12 +2670,11 @@
     "organization":"CAIDA",
     "description":"Chart::Graph is a module that provides on-the-fly graphing to several graphing programs in perl.",
     "tags":["caida", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
     "resources": [
        {
-         "name":"download",
+         "name":"public",
          "url":"https://www.caida.org/catalog/software/graphing/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2728,16 +2684,12 @@
     "filename":"sources/software/gtrace___caida.json",
     "organization":"CAIDA",
     "description":"GTrace is a graphical front-end to traceroute. It uses a combination of methods to determine or guess at the physical location of a node in a traceroute path.",
-    "tags":["caida", "topology", "traceroute", "visualization"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "topology", "visualization"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/gtrace/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/gtrace/installing/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2748,8 +2700,8 @@
     "organization":"CAIDA",
     "description":"Henya is CAIDA's large-scale Internet topology query system which provides remote search of traceroute data without requiring data downloads. Henya includes built-in analyses and visualizations for commonly occuring needs, and is intended to be responsive enough for interactive data exploration. ",
     "status":"ongoing",
-    "tags":["ark", "caida", "topology", "traceroute", "visualization"],
-    "licenses":["license:bsd_4_clause_uc", "license:gnu_gpl_v3"]
+    "tags":["ark", "caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"]
   },
   {
     "id":"software:hi_cube",
@@ -2763,7 +2715,7 @@
        {
          "name":"restricted",
          "url":"https://hicube.caida.org",
-         "tags":["web app"]
+         "tags":["UI"]
        }
    ]
   },
@@ -2773,16 +2725,12 @@
     "filename":"sources/software/hyperbolic_graph_generator___caida.json",
     "organization":"CAIDA",
     "description":"The Hyperbolic-Graph-Generator (hg_graph) is a package of tools to generate graphs embedded in the hyperbolic plane, and to compute the efficiency of greedy forwarding in these graphs.",
-    "tags":["caida", "measurement", "topology"],
-    "licenses":["license:gnu_gpl_v3"],
+    "tags":["caida", "topology"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/hyperbolic-graph-generator/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/hyperbolic-graph-generator/downloads/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -2792,8 +2740,8 @@
     "filename":"sources/software/iatmon___caida.json",
     "organization":"CAIDA",
     "description":"During the last decade, unsolicited one-way Internet traffic has been used to study malicious activity on the Internet. To make changes in composition of one-way traffic aggregates more detectable, we have developed iatmon (Inter-Arrival Time Monitor), a freely available measurement and analysis tool that allows one to separate one-way traffic into clearly-defined subsets.",
-    "tags":["caida", "measurement analysis", "traffic", "workload"],
-    "licenses":["license:gnu_gpl_v3"],
+    "tags":["caida", "measurement analysis", "workload"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
     "resources": [
        {
          "name":"contact for access",
@@ -2809,15 +2757,12 @@
     "organization":"CAIDA",
     "description":"Discovers IPv4 addresses belonging to the same router (aliases) using the common source technique.",
     "tags":["alias resolution", "caida", "ip address"],
-    "licenses":["license:bsd_4_clause_uc", "license:uc_research_use_license"],
+    "licenses":["license:bsd_4_clause_uc"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/iffinder/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/iffinder/download/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2833,7 +2778,7 @@
        {
          "name":"public",
          "url":"https://ioda.caida.org/ioda/api",
-         "tags":["API"]
+         "tags":["UI"]
        }
    ]
   },
@@ -2843,16 +2788,13 @@
     "filename":"sources/software/kapar___caida.json",
     "organization":"CAIDA",
     "description":"Graph-based IP alias resolution.",
-    "tags":["alias resolution", "caida", "ip address", "measurement", "topology"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["alias resolution", "caida", "ip address"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/kapar/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/kapar/downloads/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2863,7 +2805,7 @@
     "organization":"CAIDA",
     "description":"There are many graph file formats and graph libraries available today. However, most are proprietary, ad-hoc, limited in expressiveness, too verbose, or lacking in scalability. LibSea is both a file format and a Java library for representing large directed graphs on disk and in memory. Scalability to graphs with as many as one million nodes has been the primary goal. Additional goals have been expressiveness, compactness, and support for application-specific conventions and policies.",
     "tags":["caida", "library", "topology"],
-    "licenses":["license:gnu_lesser_gpl_v2.1plus"],
+    "licenses":["license:GNU LESSER GENERAL PUBLIC LICENSE"],
     "resources": [
        {
          "name":"contact for access",
@@ -2879,12 +2821,12 @@
     "organization":"CAIDA",
     "description":"C library that provides a high-performance abstraction layer for efficiently writing to time series databases.",
     "tags":["caida", "database", "library"],
-    "licenses":["license:bsd_2_clause_simplified"],
+    "licenses":["license:bsd_2_clause"],
     "resources": [
        {
-         "name":"download source",
+         "name":"public",
          "url":"https://github.com/caida/libtimeseries/",
-         "tags":["GitHub"]
+         "tags":[]
        }
    ]
   },
@@ -2910,16 +2852,16 @@
     "filename":"sources/software/mapnet___caida.json",
     "organization":"CAIDA",
     "description":"Mapnet is a tool for visualizing the infrastructure of multiple international backbone providers simultaneously. Each backbone infrastructure is divided into a group of nodes (POPs) and pipes between these nodes, drawing them based on their geographical location on a map of the world.",
-    "tags":["POP", "api", "caida", "measurement", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["api", "caida", "pop"],
+    "licenses":[],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/mapnet/",
-         "tags":["overview"],
+         "tags":[],
          "name":"Mapnet Java-based Applet",
          "url":"https://www.caida.org/catalog/software/mapnet/backbones/",
-         "tags":["overview"]
+         "tags":[]
        }
    ]
   },
@@ -2929,13 +2871,13 @@
     "filename":"sources/software/marinda___caida.json",
     "organization":"CAIDA",
     "description":"Marinda is a tuple space implementation in the Ruby programming language, and is used for decentralized communication and coordination which can simplify network programming in a distributed system. It provides, for example, message-oriented synchronous and asynchronous group communication, a persistent connection, and automatic marshaling of structured data.",
-    "tags":["caida", "communication", "distributed systems", "ruby"],
-    "licenses":["license:gnu_gpl_v3"],
+    "tags":["caida"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
     "resources": [
        {
-         "name":"download source",
+         "name":"Github",
          "url":"https://github.com/CAIDA/marinda",
-         "tags":["GitHub"]
+         "tags":["direct_download"]
        }
    ]
   },
@@ -2945,16 +2887,13 @@
     "filename":"sources/software/midar___caida.json",
     "organization":"CAIDA",
     "description":"Identifies IPv4 addresses belonging to the same router (aliases) using shared monotonic IP ID counters.",
-    "tags":["alias resolution", "caida", "ip address", "topology"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "tags":["alias resolution", "caida", "ip address"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/midar/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/midar/downloads/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2964,16 +2903,13 @@
     "filename":"sources/software/motu___caida.json",
     "organization":"CAIDA",
     "description":"Dealiases pairs of IPv4 addresses.",
-    "tags":["alias resolution", "caida", "ip address", "ipv4", "topology"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "tags":["alias resolution", "caida", "ip address"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/motu/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/motu/downloads/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -2984,12 +2920,12 @@
     "organization":"CAIDA",
     "description":"mper is a probing engine that clients can use to conduct network measurements using ICMP, UDP, and TCP probes.",
     "tags":["caida", "performance measurement", "topology"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
-         "name":"download source",
+         "name":"Github",
          "url":"https://github.com/CAIDA/mper",
-         "tags":["GitHub"]
+         "tags":["direct_download"]
        }
    ]
   },
@@ -2999,16 +2935,13 @@
     "filename":"sources/software/netgeo___caida.json",
     "organization":"CAIDA",
     "description":"NetGeo has not been actively maintained since 1999, and this will probably not change in the foreseeable future. As a result, there are several known major issues affecting accuracy and service availability. Please be warned that NetGeo may give wildly incorrect results, especially for recently allocated or re-assigned IP addresses. Also, domain-name lookups are no longer supported.",
-    "tags":["AS", "api", "caida", "database", "geographic", "ip address"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["api", "ases", "caida"],
+    "licenses":[],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/netgeo/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/netgeo/NetGeoClient-1.1.tar.gz",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -3018,16 +2951,13 @@
     "filename":"sources/software/netramet___caida.json",
     "organization":"CAIDA",
     "description":"NeTraMet is an open-source (GPL) implementation of the RTFM architecture for Network Traffic Flow Measurement, developed and supported by Nevil Brownlee at the University of Auckland. Nevil also developed a version of NeTraMet which uses the CoralReef library to read packet headers. This 'CoralCoralReef NeTraMet meter' can work with any CoralReef data source; it has been tested on both CAIDA and NLANR trace files, and on DAG and Apptel ATM interface cards.",
-    "tags":["caida", "measurement", "measurement analysis", "traffic", "workload"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["caida", "measurement", "measurement analysis", "workload"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/netramet/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/netramet/download/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3038,15 +2968,11 @@
     "organization":"CAIDA",
     "description":"Developed in 1999, Otter is a historical CAIDA tool used for visualizing arbitrary network data that can be expressed as a set of nodes, links or paths. Otter was developed to handle visualization tasks for a wide variety of Internet data, including data sets on topology, workload, performance, and routing. Otter is in maintained and continues to be supported by, but is no longer actively developed by CAIDA.",
     "tags":["caida", "topology", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/otter/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/otter/source/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3056,13 +2982,13 @@
     "filename":"sources/software/periscope___caida.json",
     "organization":"CAIDA",
     "description":"Periscope is a unified interface to public looking glass servers.",
-    "tags":["bgp", "caida"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["BGP", "caida"],
+    "licenses":[],
     "resources": [
        {
          "name":"restricted",
          "url":"https://www.caida.org/catalog/software/looking-glass-api/",
-         "tags":["overview"]
+         "tags":[]
        }
    ]
   },
@@ -3071,14 +2997,14 @@
     "name":"Periscope Looking Glass API",
     "filename":"sources/software/periscope_looking_glass_api___caida.json",
     "organization":"CAIDA",
-    "description":"CAIDA's Periscope Looking Glass API is a middleware interface to looking glass server nodes, with options to retreive measurements status, search by type of measurement, and create new measurements.",
+    "description":"CAIDA's Periscope Looking Glass API is a middleware interface to looking glass server nodes, with with options to retreive measurements status, search by type of measurement, and create new measurements.",
     "tags":["api", "caida", "measurement"],
-    "licenses":["license:uc_research_use_license"],
+    "licenses":[],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/looking-glass-api/",
-         "tags":["overview"]
+         "tags":[]
        }
    ]
   },
@@ -3089,15 +3015,11 @@
     "organization":"CAIDA",
     "description":"Plankton allows user to interact with the caching hierarchy.",
     "tags":["caida", "topology", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/plankton/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/plankton/source/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3108,15 +3030,11 @@
     "organization":"CAIDA",
     "description":"plot-latlong is a simple tool for plotting points on geographic maps given a list of latitude/longitude pairs.",
     "tags":["caida", "geographic", "visualization"],
-    "licenses":["license:uc_research_use_license"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/plot-latlong/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/plot-latlong/plot-latlong-0.3.tar.gz",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3126,16 +3044,12 @@
     "filename":"sources/software/plotpaths___caida.json",
     "organization":"CAIDA",
     "description":"PlotPaths displays forward and reverse network path data from a single source to one or more destinations.",
-    "tags":["caida", "geographic", "topology", "visualization"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "topology", "visualization"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/plotpaths/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://caida.org/catalog/software/plotpaths/plotpaths.tar.gz",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3145,13 +3059,13 @@
     "filename":"sources/software/pyipmeta___caida.json",
     "organization":"CAIDA",
     "description":"PyIPMeta is a Python library that provides a high-level interface for historical and realtime geolocation metadata lookups using Maxmind GeoIP and/or NetAcuity (Digital Element) geolocation databases.",
-    "tags":["asn", "caida", "database", "geolocation", "python"],
+    "tags":["asn", "caida", "geolocation", "python"],
     "licenses":["license:bsd_3_clause"],
     "resources": [
        {
-         "name":"download source",
+         "name":"getrepo",
          "url":"https://github.com/CAIDA/pyipmeta",
-         "tags":["GitHub"]
+         "tags":["github"]
        }
    ]
   },
@@ -3161,13 +3075,13 @@
     "filename":"sources/software/rb_mperio___caida.json",
     "organization":"CAIDA",
     "description":"rb-mperio is a RubyGem for writing network measurement scripts in Ruby that use the mper probing engine.",
-    "tags":["caida", "performance measurement", "ruby", "topology"],
-    "licenses":["license:gnu_gpl_v2plus"],
+    "tags":["caida", "performance measurement", "topology"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
-         "name":"download source",
+         "name":"Github",
          "url":"https://github.com/CAIDA/rb-mperio",
-         "tags":["GitHub"]
+         "tags":["direct_download"]
        }
    ]
   },
@@ -3177,16 +3091,12 @@
     "filename":"sources/software/router_to_as_assignment___caida.json",
     "organization":"CAIDA",
     "description":"The RouterToAsAssignment tool assigns each router from a router-level graph of the Internet to the Autonomous System (AS) that owns that router. We presented our router-AS assignment techniques in our PAM 2010 paper. The RouterToAsAssignment code takes as input a router-level topology of the format described in our Macroscopic Internet Topology Data Kit. For each router in the dataset, RouterToAsAssignment infers the AS (from among the ASes that have interfaces on that router) that owns that router. RouterToAsAssignment uses the Election+Degree heuristic to assign routers to ASes.",
-    "tags":["AS", "caida", "topology"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "topology"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/router-to-as-assignment/",
-         "tags":["overview"],
-         "name":"source code",
-         "url":"https://www.caida.org/catalog/software/router-to-as-assignment/RouterToAsAssignment.pl",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3196,16 +3106,13 @@
     "filename":"sources/software/scamper___caida.json",
     "organization":"CAIDA",
     "description":"IPv6 and IPv4 active traceroute probing and ping.",
-    "tags":["caida", "ip address", "performance measurement", "topology", "traceroute"],
-    "licenses":["license:gnu_gpl_v2"],
+    "tags":["caida", "performance measurement", "topology"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/scamper/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/scamper/code/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -3215,16 +3122,12 @@
     "filename":"sources/software/skitter___caida.json",
     "organization":"CAIDA",
     "description":"First released in 1998, skitter is a tool for actively probing the Internet in order to analyze topology and performance. In Feb 8 2008, after 10 years of data collection and 4TB of data, we deactivated skitter data collection and transitioned to our next generation topology measurement infrastructure named Archipelago (Ark).",
-    "tags":["ark", "caida", "measurement", "performance", "rtt", "skitter", "topology"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["ark", "caida", "measurement", "performance", "rtt", "topology"],
     "resources": [
        {
-         "name":"public",
+         "name":"restricted",
          "url":"https://www.caida.org/catalog/software/skitter/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/skitter/sample_code/",
-         "tags":["sample code"]
+         "tags":["file"]
        }
    ]
   },
@@ -3234,13 +3137,13 @@
     "filename":"sources/software/spoofer_api___caida.json",
     "organization":"CAIDA",
     "description":"REST API to public anonymized Spoofer test results",
-    "tags":["api", "caida", "security", "spoofer"],
-    "licenses":["license:gnu_gpl_v3"],
+    "tags":["caida", "security", "spoofer"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
     "resources": [
        {
          "name":"public",
          "url":"https://api.spoofer.caida.org/",
-         "tags":["API"]
+         "tags":[]
        }
    ]
   },
@@ -3251,15 +3154,12 @@
     "organization":"CAIDA",
     "description":"Source address validation measurement program that sends spoofed source address IP packets",
     "tags":["caida", "security", "spoofer"],
-    "licenses":["license:gnu_gpl_v3"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
     "resources": [
        {
          "name":"public",
-         "url":"https://www.caida.org/projects/spoofer/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/projects/spoofer/downloads/",
-         "tags":["public"]
+         "url":"https://www.caida.org/projects/spoofer/#download-client-software",
+         "tags":[]
        }
    ]
   },
@@ -3270,15 +3170,12 @@
     "organization":"CAIDA",
     "description":"Web pages that display various summaries of results from the Spoofer project",
     "tags":["caida", "security", "spoofer"],
-    "licenses":["license:gnu_gpl_v3"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
     "resources": [
        {
          "name":"public",
          "url":"https://spoofer.caida.org/summary.php",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/projects/spoofer/downloads/",
-         "tags":["public"]
+         "tags":[]
        }
    ]
   },
@@ -3288,16 +3185,12 @@
     "filename":"sources/software/straighten_rv___caida.json",
     "organization":"CAIDA",
     "description":"The rv2atoms package contains perl scripts which analyze and process a Route Views table and compute BGP policy atoms.",
-    "tags":["bgp", "caida", "data analysis", "topology"],
-    "licenses":["license:uc_research_use_license"],
+    "tags":["caida", "data analysis", "topology"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/straighten_rv/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/straighten_rv/download/",
-         "tags":["public"]
+         "tags":["file"]
        }
    ]
   },
@@ -3307,19 +3200,12 @@
     "filename":"sources/software/topostats___caida.json",
     "organization":"CAIDA",
     "description":"Topostats is a package of programs that calculate various statistics on network topologies (that is, on graphs). The computed statistics are defined in the paper 'Lessons from Three Views of the Internet Topology: Technical Report', which also gives a sample of the computed statistics. The topostats package computes most but not all of these statistics, and this package does not itself make any plots.",
-    "tags":["caida", "library", "topology"],
-    "licenses":["license:gnu_gpl_v3"],
+    "tags":["caida", "topology"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/topostats/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/topostats/dists/",
-         "tags":["public"],
-         "name":"source code",
-         "url":"https://github.com/CAIDA/topostats",
-         "tags":["GitHub"]
+         "tags":["file"]
        }
    ]
   },
@@ -3331,13 +3217,13 @@
     "organization":"CAIDA",
     "description":"Vela is the on-demand topology measurement service of CAIDA's Archipelago (Ark) infrastructure. ",
     "status":"ongoing",
-    "tags":["ark", "caida", "topology"],
-    "licenses":["license:bsd_4_clause_uc", "license:gnu_gpl_v3plus"],
+    "tags":["ark", "caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/projects/ark/vela",
-         "tags":["overview"]
+         "tags":["file"]
        }
    ]
   },
@@ -3348,18 +3234,11 @@
     "organization":"CAIDA",
     "description":"Walrus is a tool for interactively visualizing large directed graphs in three-dimensional space. By employing a fisheye-like distortion, it provides a display that simultaneously shows local detail and the global context.",
     "tags":["caida", "topology", "visualization"],
-    "licenses":["license:gnu_gpl_v2"],
     "resources": [
        {
          "name":"public",
          "url":"https://www.caida.org/catalog/software/walrus/",
-         "tags":["overview"],
-         "name":"download",
-         "url":"https://www.caida.org/catalog/software/walrus/download/",
-         "tags":["public"],
-         "name":"source code",
-         "url":"https://github.com/CAIDA/walrus",
-         "tags":["GitHub"]
+         "tags":["file"]
        }
    ]
   }
