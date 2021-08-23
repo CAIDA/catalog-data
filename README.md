@@ -41,9 +41,9 @@ These are made by two scripts:
 You will need to have b4 installed in python3.  You can do this using
 virtualenv.
 ~~~bash
-virtualenv env
+python3 -m venv env
 source env/bin/activate
-pip3 install bs4
+pip3 install -r requirements.txt
 ~~~
 
 All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
