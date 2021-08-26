@@ -17,7 +17,7 @@
             "venue": "ACM SIGCOMM Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
             "date": "2020.12",
             "url": "https://conferences2.sigcomm.org/co-next/2020/",
-            "person": "person:Padmanabhan__Ramakrishnan"
+            "person": "person:Padmanabhan__Ramakrishna"
         }
     ],
     "links": ["paper:2020_dynamips","media:2020_dynamips_conext"],
