@@ -2452,6 +2452,23 @@
    ]
   },
   {
+    "id":"software:bgpview",
+    "name":"BGPView",
+    "filename":"sources/software/bgpview___caida.json",
+    "organization":"CAIDA",
+    "description":"BGPView is a set of highly optimized data structures and libraries for (re-)construction, transport and analysis of BGP \"routing tables\".",
+    "tabs":[{"name": "content", "format": "markdown", "content": "For a detailed description of BGPView, see Section 6.2 of the\n[BGPStream paper](https://www.caida.org/publications/papers/2016/bgpstream/bgpstream.pdf).\n\nAt a high level, the goal of BGPView is to facilitate the inference of\n\"Global\" routing tables at a finer granularity than the RIB dumps\nprovided by the RouteViews and RIPE RIS projects. For example,\ncurrently RouteViews collectors export a snapshot of their RIB (a \"RIB\ndump\") every 2 hours -- for RIPE RIS this is once every 8 hours. For\napplications where latency matters (e.g., near-realtime event\ndetection), and/or are interested in observing short-duration events,\nthey cannot rely on these RIB dumps alone (i.e., using RouteViews\ndata, they would only be able to observe events that last at least 2\nhours, and with up to 2 hours of latency).\n\nThe normal approach to solving this problem is to write some code that\nstarts with a RIB dump, and then incrementally applies update\ninformation to approximate the state of each peer's routing table at\nany point in time. Then, depending on the application, one can either\nreact to specific events (e.g., a prefix is announced, withdrawn,\netc.) or, periodically walk through these routing tables and perform\nanalysis on the entire \"global\" routing table (or, \"inferred\"\nRIB). BGPView is designed to make it simple to write analysis code in\nthe latter model, with all of the details of obtaining the raw BGP\ndata, processing it, and inferring the routing table for each peer are\nabstracted away from the user. The user is instead able to focus on\nwriting an analysis kernel (a \"BGPView Consumer\") that is invoked\nevery time a new inferred RIB (a \"BGPView\") is available.\n"}],
+    "tags":["bgp", "caida", "data analysis", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://github.com/CAIDA/bgpview",
+         "tags":["library"]
+       }
+   ]
+  },
+  {
     "id":"software:catalog",
     "name":"CAIDA's resource catalog",
     "filename":"sources/software/catalog___caida.json",
