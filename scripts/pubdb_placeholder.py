@@ -163,9 +163,13 @@ def key_to_key(obj,key_a,key_b):
         del obj[key_a]
 
 def load_ids(type_,key, filename):
-    print ("loading", filename)
+    print ("loading", key, filename)
     try:
         data = json.load(open(filename,"r"))
+        if key not in data:
+            print ("   JSON file needs to contain an array of",key)
+            sys.exit(-1)
+
         for obj in data[key]:
             obj["__typename"] = type_
             id_add(filename, type_, obj["id"])
