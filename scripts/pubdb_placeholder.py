@@ -80,7 +80,7 @@ def main():
         if "authors" in obj:
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
-
+        
         if "links" in obj:
             links = []
             for link in obj["links"]:
@@ -120,7 +120,7 @@ def main():
             obj["links"] = links
         if obj["__typename"] == "paper":
             obj["bibtexFields"] =  {}
-            for key_from in ["type", "booktitle","institution","journal","volume","venue","pages","peerReviewedYes","bibtex","year","mon"]:
+            for key_from in ["type", "booktitle","institution","journal","volume","publisher","venue","pages","peerReviewedYes","bibtex","year","mon"]:
                 if key_from in obj and len(obj[key_from]) > 0:
                     if key_from == "booktitle":
                         key_to = "bookTitle"
@@ -128,7 +128,8 @@ def main():
                         key_to = key_from
 
                     obj["bibtexFields"][key_to] = obj[key_from]
-                    del obj[key_from]
+                    if key_from != "publisher":
+                        del obj[key_from]
 
             resources_front.append({
                 "name":"bibtex",
