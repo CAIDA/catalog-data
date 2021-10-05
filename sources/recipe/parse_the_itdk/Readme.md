@@ -320,7 +320,7 @@ node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.1
 The links file lists the set of routers and router interfaces that were inferred to be sharing each link. 
 Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
 If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
-**File format**: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
+**File format**: link <link_id>: &nbsp; &lt;N<sub>1</sub>&gt;:i<sub>1</sub> &nbsp;  &lt;N<sub>2</sub>&gt;:i<sub>2</sub> &nbsp;  &lt;N<sub>3</sub>&gt;:i<sub>3</sub> &nbsp;  ... &nbsp;  &lt;N<sub>m</sub>&gt;:i<sub>m</sub> <br/>
 ~~~
 link L1: N27677807:1.0.0.1 N106961
 ~~~
