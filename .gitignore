@@ -8,7 +8,6 @@ type_ids.json
 sources/*/*__pubdb.json
 sources/*/*__externallinks.json
 sources/*/*__caida.json
-data/data_id__caida.json
 id_word_score.json
 pubdb
 scripts/lib/__pycache__/
