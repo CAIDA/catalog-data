@@ -310,8 +310,11 @@ The datasets are located in `ark/ipv4/itdk`
 
 #### midar-iff.nodes.bz2
 The nodes file lists the set of interfaces that were inferred to be on each router. 
-Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>. <br/>
-**File format**: node <node_id>: &nbsp; <i<sub>1</sub>> &nbsp; <i<sub>2</sub>> &nbsp; ... &nbsp; <i<sub>n</sub>> <br/>
+Each line indicates that a node `node_id` has interfaces i<sub>1</sub> to i<sub>n</sub>.
+
+
+**File format**: node &lt;node_id&gt;: &nbsp; &lt;i<sub>1</sub>&gt; &nbsp; &lt;i<sub>2</sub>&gt; &nbsp; ... &nbsp; &lt;i<sub>n</sub>&gt; 
+
 ~~~
 node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.116.108 5.2.116.142
 ~~~
@@ -319,22 +322,29 @@ node N1:  5.2.116.4 5.2.116.28 5.2.116.66 5.2.116.70 5.2.116.78 5.2.116.88 5.2.1
 #### midar-iff.links.bz2
 The links file lists the set of routers and router interfaces that were inferred to be sharing each link. 
 Each line indicates that a link `link_id` connects nodes N<sub>1</sub> to N<sub>m</sub>. 
-If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.<br/>
-**File format**: link <link_id>: &nbsp; <N<sub>1</sub>>:i<sub>1</sub> &nbsp;  <N<sub>2</sub>>:i<sub>2</sub> &nbsp;  <N<sub>3</sub>>:i<sub>3</sub> &nbsp;  ... &nbsp;  <N<sub>m</sub>>:i<sub>m</sub> <br/>
+If it is known which router interface is connected to the link, then the interface address is given after the node ID separated by a colon.
+
+
+**File format**: link &lt;link_id&gt;: &nbsp; &lt;N<sub>1</sub>&gt;:i<sub>1</sub> &nbsp;  &lt;N<sub>2</sub>&gt;:i<sub>2</sub> &nbsp;  &lt;N<sub>3</sub>&gt;:i<sub>3</sub> &nbsp;  ... &nbsp;  &lt;N<sub>m</sub>&gt;:i<sub>m</sub>
+
 ~~~
 link L1: N27677807:1.0.0.1 N106961
 ~~~
 
 #### midar-iff.nodes.as.bz2
 The node-AS file assigns an AS number to each node found in the nodes file.
-**File format**: node.AS   <node_id>   <AS>   <method>
+
+
+**File format**: node.AS   &lt;node_id&gt;   &lt;AS&gt;   &lt;method&gt;
 ~~~
 node.AS N1 31655 refinement
 ~~~
 
 #### midar-iff.nodes.geo.bz
 The node-geolocation file contains the geographic location for each node in the nodes file.
-**File format**: node.geo   <node_id>:   <continent>   <country>   <region>   <city>   <latitude>   <longitude>
+
+
+**File format**: node.geo   &lt;node_id&gt;:   &lt;continent&gt;   &lt;country&gt;   &lt;region&gt;   &lt;city&gt;   &lt;latitude&gt;   &lt;longitude&gt;
 ~~~
 node.geo N4: SA CO 34 Bogota 4.60971 -74.08175       
 ~~~
