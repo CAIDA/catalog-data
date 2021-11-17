@@ -292,6 +292,22 @@
    ]
   },
   {
+    "id":"dataset:2020_imc_hoiho",
+    "name":"2020 IMC HOIHO",
+    "filename":"sources/dataset/2020_imc_hoiho___caida.json",
+    "organization":"CAIDA",
+    "description":"This public dataset contains the data used to train our system to learn regular expressions that extract ASNs from router hostnames.",
+    "status":"ongoing",
+    "tags":["caida", "ipv4", "itdk", "scamper"],
+    "licenses":[],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://publicdata.caida.org/datasets/supplement/2020-imc-hoiho/"
+       }
+   ]
+  },
+  {
     "id":"dataset:2020_unintended_consequences",
     "name":"PAM 2020 Unintended consequences",
     "filename":"sources/dataset/2020_unintended_consequences___caida.json",

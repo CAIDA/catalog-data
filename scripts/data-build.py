@@ -48,6 +48,8 @@ import datetime
 import subprocess
 import lib.utils as utils
 
+import binascii
+
 # used to plural
 import nltk
 nltk.download('wordnet')
@@ -61,6 +63,15 @@ id_object = {}
 id_paper = {}
 id_id_link = {}
 
+# Score weights
+SCORE_WEIGHT = {
+    "name":16,
+    "id":8,
+    "tags":4,
+    "link":2,
+    "other":1
+}
+SCORE_WEIGHT_LINK = SCORE_WEIGHT["link"]
 id_word_score = {}
 
 personName_ids = {}
@@ -284,6 +295,13 @@ def main():
     print ("adding words")
     for obj in id_object.values():
         word_scoring(obj)
+    for id0, id1_link in id_id_link.items():
+        w_s0 = id_word_score[id0]
+        for id1 in id1_link.keys():
+            if id0 < id1:
+                w_s1 = id_word_score[id1]
+                word_scoring_link(w_s0, w_s1)
+                word_scoring_link(w_s1, w_s0)
     # Add in alternative plural/singlar
     word_add_plurals()
         
@@ -895,23 +913,46 @@ def word_scoring(obj, recursive=False):
         if weight == 0:
             continue
 
-        word_freq = word_freq_get(value)
+        for key,value in obj.items():
+            word_freq = word_freq_get(value)
+            if key in SCORE_WEIGHT:
+                weight = SCORE_WEIGHT[key]
 
-        for word_original,freq in word_freq.items():
-            if len(word_original) > 1:
-                word_original = word_original.lower()
-                first = True
+            else:
+                weight = SCORE_WEIGHT["other"]
+
+            for word_original, freq in word_freq.items():
                 for word in [word_original, Lem.lemmatize(word_original)]:
-                    if word and (first or word != word_original):
-                        first = False
-                        if word != word_original:
-                            singular_plural[word] = word_original
-                        if word not in word_score:
-                            word_score[word] = weight*freq
-                        else:
-                            word_score[word] += weight*freq 
-
+                    if word not in word_score:
+                        word_score[word] = weight
+                    else:
+                        word_score[word] = word_score[word] | weight
+                    #print (key,weight, word, format(word_score[word],'b'))
     id_word_score[obj["id"]] = word_score
+
+def word_scoring_link(w_s0, w_s1):
+    for word, score in w_s1.items():
+        if score > SCORE_WEIGHT_LINK:
+            if word not in w_s0:
+                w_s0[word] = SCORE_WEIGHT_LINK
+            else:
+                w_s0[word] = w_s0[word] | SCORE_WEIGHT_LINK
+
+        # word_freq = word_freq_get(value)
+        # 
+        # for word_original,freq in word_freq.items():
+        #    if len(word_original) > 1:
+        #        word_original = word_original.lower()
+        #        first = True
+        #        for word in [word_original, Lem.lemmatize(word_original)]:
+        #            if word and (first or word != word_original):
+        #                first = False
+        #                if word != word_original:
+        #                    singular_plural[word] = word_original
+        #                if word not in word_score:
+        #                    word_score[word] = weight*freq
+        #                else:
+        #                    word_score[word] += weight*freq 
 
 seen_value = set()
 re_not_letter = re.compile("[^a-z^A-z]+")
@@ -975,7 +1016,6 @@ def word_freq_get(value):
                         word_freq[w] = 1
 
     return word_freq
-
 
 
 # Couldn't find a package that converted to singular to plural
@@ -1057,4 +1097,3 @@ def pub_links_load(filename):
             link_add(obj,link[1])
 
 main()
-
