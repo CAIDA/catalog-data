@@ -291,6 +291,17 @@ def main():
         print("    type 'make links'")
 
     #######################
+    # count none_tab_links
+    #######################
+    for id, obj in id_object.items():
+        num_links = 0
+        if id in id_id_link:
+            for i in id_id_link[id].keys():
+                if id_object[i]["__typename"] != "Tag":
+                    num_links += 1
+        id_object[id]["num_links_not_tag"] = num_links
+
+    #######################
     # parse out the words from the fields
     #######################
     print ("adding words")
