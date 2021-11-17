@@ -56,6 +56,10 @@ def main():
     print ("processing objects")
     for obj in objects:
         obj["tags"].append("caida")
+        if "annotation" in obj and re.search("Best Paper", obj["annotation"]):
+            print ("best paper")
+            obj["tags"].append("best_paper")
+
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
         resources_front = []
@@ -151,6 +155,7 @@ def main():
 
 
         json.dump(obj,open(obj["filename"],"w"),indent=4)
+
 
     for obj in id_person.values():
         if "already_exists" not in obj:
