@@ -57,7 +57,6 @@ def main():
     for obj in objects:
         obj["tags"].append("caida")
         if "annotation" in obj and re.search("Best Paper", obj["annotation"]):
-            print ("best paper")
             obj["tags"].append("best_paper")
 
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
