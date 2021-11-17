@@ -64,12 +64,13 @@ id_paper = {}
 id_id_link = {}
 
 # Score weights
+# The score encodes that the word exist at a given level.
 SCORE_WEIGHT = {
     "name":16,
     "id":8,
     "tags":4,
-    "link":2,
-    "other":1
+    "other":2,
+    "link":1
 }
 SCORE_WEIGHT_LINK = SCORE_WEIGHT["link"]
 id_word_score = {}
@@ -932,11 +933,9 @@ def word_scoring(obj, recursive=False):
 
 def word_scoring_link(w_s0, w_s1):
     for word, score in w_s1.items():
-        if score > SCORE_WEIGHT_LINK:
-            if word not in w_s0:
-                w_s0[word] = SCORE_WEIGHT_LINK
-            else:
-                w_s0[word] = w_s0[word] | SCORE_WEIGHT_LINK
+        # If the weight comes from more then a link, and it already is included in the object 
+        if score > SCORE_WEIGHT_LINK and word in w_s0:
+            w_s0[word] = w_s0[word] | SCORE_WEIGHT_LINK
 
         # word_freq = word_freq_get(value)
         # 
