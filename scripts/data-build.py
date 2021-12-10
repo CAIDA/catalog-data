@@ -784,7 +784,6 @@ def recipe_process(path):
                                     #print (line.rstrip())
                                 info["content"] += line
 
-
                             # process JSON 
                             elif re.search("~~~",line):
                                 if inside:
@@ -810,6 +809,9 @@ def recipe_process(path):
                                 inside = not inside
                             elif data is not None:
                                 data += line
+                        
+                        #if "content" in info:
+                        #    info["content"] = markdown.markdown(info["content"])
                     errors = []
                     if info is None:
                         info = {}
