@@ -53,10 +53,12 @@ def main():
     if error:
         sys.exit(1)
 
+    re_best = re.compile("Best\s*Paper")#, re.IGNORECASE)
+    re_distinguished = re.compile("Distinguished\s*Paper")#, re.IGNORECASE)
     print ("processing objects")
     for obj in objects:
         obj["tags"].append("caida")
-        if "annotation" in obj and re.search("Best Paper", obj["annotation"]):
+        if "annotation" in obj and (re_best.search(obj["annotation"]) or re_distinguished.search(obj["annotation"])):
             obj["tags"].append("best_paper")
 
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
