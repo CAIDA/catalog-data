@@ -59,7 +59,7 @@ def main():
     for obj in objects:
         obj["tags"].append("caida")
         if "annotation" in obj and (re_best.search(obj["annotation"]) or re_distinguished.search(obj["annotation"])):
-            obj["tags"].append("best_paper")
+            obj["tags"].append("best paper")
 
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
