@@ -9,7 +9,10 @@
       "measurement methodology",
       "caida"
     ],
-    "links": ["software:bdrmapit"],
+    "links": [
+        "software:bdrmapit",
+        "paper:2018_pushing_boundaries_bdrmapit"
+    ],
     "authors":[
         {
             "person": "person:isacmlee",
