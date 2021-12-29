@@ -1,6 +1,6 @@
 ~~~json
 {
-    "id": "how_to_run_bdrmapit_on_collection_of_wart_files",
+    "id": "how_to_run_bdrmapit",
     "name": "How to run bdrmapIT on a collection of wart files",
     "description": "The following recipe will provide an example of running bdrmapIT on a collection of wart files.",
     "tags": [
