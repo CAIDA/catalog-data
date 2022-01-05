@@ -112,6 +112,18 @@ def main():
                             "to":id_,
                             "label":link["label"]
                         })
+                elif "label" in link and (
+                        re.search("^PDF$", link["label"], re.IGNORECASE)
+                        or 
+                        re.search("^HTML$", link["label"], re.IGNORECASE)):
+                    if "access" not in obj:
+                        obj["access"] = []
+                    obj["access"].append({
+                        "access":"public",
+                        "url":link["to"],
+                        "tags":link["label"]
+                    })
+                    print (obj["access"][-1])
                 else:
                     resource = {
                         "name":link["label"],
