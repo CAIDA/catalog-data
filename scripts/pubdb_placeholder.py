@@ -123,7 +123,6 @@ def main():
                         "url":link["to"],
                         "tags":link["label"]
                     })
-                    print (obj["access"][-1])
                 else:
                     resource = {
                         "name":link["label"],
