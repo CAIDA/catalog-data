@@ -5,16 +5,17 @@
     "description": "PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks",
     "tags": [
         "topology",
-        "peeringdb"
+        "peeringdb",
+        "api"
     ],
     "dateStart": "2010.07",
     "status": "ongoing",
     "resources": [
         {
             "name": "public",
-            "url": "https://www.caida.org/catalog/datasets/peeringdb/",
+            "url": "https://www.peeringdb.com/apidocs/",
             "tags": [
-                "file"
+                "api"
             ]
         }
     ],

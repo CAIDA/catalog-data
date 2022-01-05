@@ -9,7 +9,7 @@
     "resources": [
         {
             "name": "public",
-            "url": "https://www.peeringdb.com/",
+            "url": "https://www.peeringdb.com/apidocs/",
             "tags": [
                 "UI"
             ]

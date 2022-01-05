@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to use DZDB to find when a domain was active",
     "description" : "Using the DZDB API, query a domain and determine when it was last active",
-    "links": [{"to":"dataset:dzdb"},{"to":"software:dzdb_api"},{"to":"recipe:how_to_find_a_domains_ns_and_a_records"}],
+    "links": [{"to":"software:dzdb_api"},{"to":"recipe:how_to_find_a_domains_ns_and_a_records"}],
     "tags" : [
         "last active",
         "dzdb"

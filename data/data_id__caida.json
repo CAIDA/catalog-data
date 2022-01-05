@@ -1800,11 +1800,23 @@
    ]
   },
   {
-    "id":"dataset:peeringdb_dumps",
-    "name":"PEERINGDB-DUMPS",
-    "visibility":"private",
-    "tags":["topology"],
-    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
+    "id":"dataset:peeringdb_archive",
+    "name":"PEERINGDB ARCHIVE",
+    "filename":"sources/dataset/peeringdb_archive___caida.json",
+    "visibility":"public",
+    "organization":"CAIDA",
+    "description":"CAIDA manages the only repository of daily snapshots of historic PeeringDB data. The repository consists of two parts, version 1 and version 2. Daily snapshots of version 1 are available as sql and sqlite files covering July 29, 2010, to March 13, 2016. In 2016 peeringDB switched to a new format. These new version 2 data are available as sql files from May 27, 2016, to March 10, 2018; and as json files from March 11, 2018, onwards.<p>PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks. PeeringDB, a non-profit member-based organization, has been established to support practical needs of network operators. However, it is also a valuable source of information for researchers. The first version of PeeringDB resided in a MySQL database, which was not scalable and lacked security features and data validation mechanisms. It presented potential risks of exposing contact information to spammers, and contained typos. Starting at the end of March 2016, PeeringDB switched to a new data schema and API.",
+    "status":"ongoing",
+    "tabs":[{"name": "README.txt", "format": "text", "content": "This dataset is a repository of daily snapshots of historic PeeringDB data.\nThe repository consists of two parts, version 1 and version 2.\n\nThe old v1 format is available from July 29, 2010 through March 13,\n2016 as sql and sqlite files. The new v2 format is available from May 27,\n2016 to March 10, 2018 as sqlite files, and from March 11, 2016 onwards\nas json files.\n\n----------------------\n\npeeringDB v2 sync stopped working Jan 22, 2017 due to a schema change\nand the previous version of the peeringdb python module was not able\nto handle it. \n\nThe sync process was dying midway through the process, so all the\nchanges from the master copy would not be synced to our local copy.\n\nDiscovered Aug 8, 2017.\n\nUpdated python peeringdb module and django-peeringdb module, which\nseems to have fixed it. However, files from Jan 22, 2017 to Aug 9,\n2017 will not have an up-to-date database. \n\nFixed Aug 15, 2017.\n\n-------------------------\n\nThe sync process started breaking again Oct 10, 2017. This fixed\nby upgrading python-peeringdb or django. The\npython-peeringdb module hadn't seen much dev activity so it seemed\nlike this was not going to get fixed. \n\nThe files from Oct 10, 2017 to March 11, 2018 are bascially not\nupdated, i.e., they are the same as october 9, 2017. \n\nOn March 11, 2018, a new script was rolled out that downloads the whole\nDB using the new RESTful API. The script downloads the API spec, and\nthen all the data from each endpoint. It creates a master json file\nwith the API spec and data for all the endpoints. \n\nRegular downloads using this method started March 11 ,2018. \n------------------------------------------------------------------\nThere is an August 28 - September 6 2019 gap when the data was not\nupdated due to the error resulting from the OS upgrade on the\nmachine collecting the data. \n------------------------------------------------------------------\n\n"}],
+    "tags":["asn", "caida", "ixp", "topology"],
+    "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/catalog/datasets/peeringdb/",
+         "tags":["direct download"]
+       }
+   ]
   },
   {
     "id":"dataset:plab_results",
