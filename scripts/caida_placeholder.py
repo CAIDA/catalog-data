@@ -82,6 +82,7 @@ re_dlim = re.compile(r"~~~")
 re_html = re.compile(r"\.html$", re.IGNORECASE)
 re_md = re.compile(r"\.md$", re.IGNORECASE)
 re_not_white_space = re.compile(r"[^\s]")
+re_json_content = re.compile(r"^[\s]*?<",re.IGNORECASE)
 
 # File Paths:
 path_ids = "data/data_id___caida.json"
@@ -240,8 +241,8 @@ def parse_metadata(filename):
     metadata = None
     re_tool = re.compile("^tool[_-]")
     tabs = []
-    with open(filename) as f:
-        for line in f:
+    with open(filename) as file:
+        for line in file:
             # everything after '=== content ===' is placed inside content unprocessed
             if content is not None:
                 content += line
@@ -261,7 +262,6 @@ def parse_metadata(filename):
                         return None
                     else:
                         current = metadata
-
                         f = "text"
                         if re_html.search(section):
                             f = "html"
@@ -298,9 +298,13 @@ def parse_metadata(filename):
 
         tabs_clean = []
         if content is not None and re_not_white_space.search(content):
+            if (re_json_content.search(content)):
+                f = "html"
+            else:
+                f = "markdown"
             tabs_clean.append({
                 "name":"content",
-                "format":"markdown",
+                "format": f,
                 "content":content
             })
 
