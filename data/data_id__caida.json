@@ -2268,7 +2268,7 @@
     "tags":["caida", "dns"],
     "resources": [
        {
-         "name":"URL",
+         "name":"video",
          "url":"https://www.caida.org/catalog/media/animations/cl/",
          "tags":["url"]
        }
@@ -2283,7 +2283,7 @@
     "tags":["IPv4", "caida", "whois"],
     "resources": [
        {
-         "name":"URL",
+         "name":"video",
          "url":"https://www.caida.org/archive/id-consumption/whois-map/",
          "tags":["url"]
        }
@@ -2366,22 +2366,6 @@
          "name":"public",
          "url":"https://api.data.caida.org/as2org/v1/doc",
          "tags":["API"]
-       }
-   ]
-  },
-  {
-    "id":"software:as_relationship",
-    "name":"AS Relationship",
-    "filename":"sources/software/as_relationship___caida.json",
-    "organization":"CAIDA",
-    "description":"Measures an AS's centrality",
-    "tags":["caida", "topology"],
-    "licenses":["license:bsd_4_clause_uc"],
-    "resources": [
-       {
-         "name":"public",
-         "url":"https://ihr.iijlab.net/ihr/en-us/",
-         "tags":["UI"]
        }
    ]
   },
