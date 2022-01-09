@@ -108,6 +108,7 @@ repo_url_default = "https://github.com/CAIDA/catalog-data"
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
+access_word_id_file = "access_word_id.json"
 pubdb_links_file = "data/pubdb_links.json"
 personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
@@ -301,6 +302,21 @@ def main():
                     num_links += 1
         id_object[id]["num_links_not_tag"] = num_links
 
+    ######################
+    # Parse out the access words 
+    ######################
+    access_word_ids = {}
+    for obj in id_object.values():
+        print (obj["filename"])
+        if "access" in obj:
+            for access in obj["access"]:
+                word = access["access"]
+                print (word)
+                if word not in access_word_ids:
+                    access_word_ids[word] = []
+                access_word_ids[word].append(obj["id"])
+
+
     #######################
     # parse out the words from the fields
     #######################
@@ -374,7 +390,9 @@ def main():
 
     print ("writing",word_id_score_file)
     json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
-    #json.dump(word_score_id, open(word_id_score_file,"w"))
+    
+    print ("writing",access_word_id_file)
+    json.dump(access_word_ids, open(access_word_id_file,"w"),indent=4)
 
 ###########################
 def error_add(filename, message):
