@@ -56,6 +56,7 @@ A search query can be generated from a search string by splitting the string on 
      |   persons | comma separated list of strings matching part of a person's names<br> `persons=john` will returns all persons with john in thier name  |  
      |   ids     | comma seperated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
      | dates | comma seperated list of dates which supports year (2015) or year.mon (2015.03) |
+     | access | comma seperated list of access links types (public, restricted, unavailable, commerical) |
      | links | comma seperated list of object ids or strings `links=paper:2021_wie2020_report,telescope` <br> searchs by neighbor.  If an id, matchs are neighbors of the id's object. <br> If a string, matches are neighbors of objects with the string in a field.  |
       
 - **ids** (tag:topology)
