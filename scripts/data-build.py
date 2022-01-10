@@ -307,11 +307,9 @@ def main():
     ######################
     access_word_ids = {}
     for obj in id_object.values():
-        print (obj["filename"])
         if "access" in obj:
             for access in obj["access"]:
                 word = access["access"]
-                print (word)
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])

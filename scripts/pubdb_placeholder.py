@@ -122,7 +122,7 @@ def main():
                         obj["access"].append({
                             "access":"public",
                             "url":link["to"],
-                            "tags":link["label"]
+                            "tags":[link["label"]]
                         })
                     resource = {
                         "name":link["label"],
