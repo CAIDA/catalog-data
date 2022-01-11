@@ -552,12 +552,26 @@ def object_finish(obj):
 
 
     for key,value in obj.items():
-        if key == "tags":
-            for i,tag in enumerate(obj["tags"]):
-                o = object_lookup_type_name(obj["filename"], "tag",tag)
-                if o is not None:
-                    tag = obj["tags"][i] = o["id"]
-                    link_add(obj,tag)
+        if (key == "tags" or key == "access") and obj[key]:
+            objects = []
+            filename = obj["filename"];
+            if key == "tags":
+                objects = [obj]
+            else:
+                for i, access in enumerate(obj["access"]):
+                    if "tags" in access:
+                        objects.append(access)
+            for o in objects:
+                for i,tag in enumerate(o["tags"]):
+                    t = object_lookup_type_name(filename, "tag",tag)
+                    if t is not None:
+                        tid = o["tags"][i] = t["id"]
+                        link_add(obj,tid)
+        elif key == "access":
+                    o = object_lookup_type_name(obj["filename"], "tag",tag)
+                    if o is not None:
+                        tag = obj["tags"][i] = o["id"]
+                        link_add(obj,tag)
 
         #elif key == "resources":
         #    for resource in obj["resources"]:
