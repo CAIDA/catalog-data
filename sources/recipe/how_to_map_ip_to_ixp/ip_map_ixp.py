@@ -20,7 +20,7 @@ def exportCSV(ips, ixs):
     file.write(data)
 def printIXs(ips, ixs):
     for ip in ips:
-        if findIndex(ip, ixs) != "none":
+        if findIndex(ip, ixs) is not None:
             print(ip, "|", ixs[findIndex(ip, ixs)]['ix_id'], "|", ixs[findIndex(ip, ixs)]['name'])
 
 
