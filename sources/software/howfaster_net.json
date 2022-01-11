@@ -1,33 +1,7 @@
 {
     "id": "howfaster_net",
     "name": "HowFaster.NET",
-    "organization": "Cyber-Complex Foundation",
     "description": "A web portal that presents data and visualizations about the topology of the Internet. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
-    "tags": [
-        "CCF",
-        "iThena",
-        "geolocation",
-        "geographic",
-        "routes",
-        "security",
-        "topology",
-        "active measurement",
-        "bgp",
-        "traces",
-        "ipv4",
-        "infrastructure",
-        "BOINC"
-    ],
-    "resources": [
-        {
-            "name": "public",
-            "url": "https://howfaster.net",
-            "tags": [
-                "web"
-            ]
-        }
-    ],
-    "licenses": [],
     "links": [
         {
             "to": "dataset:opendata_howfaster_net",
@@ -45,5 +19,31 @@
             "to": "media:2021_yavaconf_ithena",
             "label": "used by"
         }
-    ]
+    ],
+    "tags": [
+        "CCF",
+        "iThena",
+        "geolocation",
+        "geographic",
+        "routes",
+        "security",
+        "topology",
+        "active measurement",
+        "bgp",
+        "traces",
+        "ipv4",
+        "infrastructure",
+        "BOINC"
+    ],
+    "access": [
+        {
+            "url": "https://howfaster.net",
+            "tags": [
+                "web"
+            ],
+            "access": "public"
+        }
+    ],
+    "licenses": [],
+    "organization": "Cyber-Complex Foundation"
 }

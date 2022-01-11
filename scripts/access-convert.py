@@ -136,7 +136,7 @@ def obj_update(obj):
                 resource["access"] = "public"
                 resource.pop('name', None)
                 accesses.append(resource)
-            elif "file" in resource["tags"]:
+            elif "file" in resource["tags"] or "API" in resource["tags"] or "api" in resource["tags"]:
                 resource["access"] = "public"
                 accesses.append(resource)
             else:

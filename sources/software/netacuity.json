@@ -1,29 +1,29 @@
 {
     "id": "netacuity",
     "name": "Netacuity",
-    "organization": "Digital Elements",
-    "description": "Digital Element’s geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more—information that is proven to help improve the relevance, reach and response of online activities.",
-    "status":"Ongoing",
-    "tags": [
-        "geolocation",
-        "geographic"
-    ],
-    "resources": [
-        {
-            "name": "commercial",
-            "url": "http://www.digitalelement.com/solutions",
-            "tags": [
-                "WEB"
-            ]
-        }
-    ],
-    "licenses": [
-        "license:netacuity"
-    ],
+    "description": "Digital Element\u2019s geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more\u2014information that is proven to help improve the relevance, reach and response of online activities.",
     "links": [
         {
             "to": "paper:2019_at_home_abroad",
             "label": "used by"
         }
-    ]
+    ],
+    "tags": [
+        "geolocation",
+        "geographic"
+    ],
+    "access": [
+        {
+            "url": "http://www.digitalelement.com/solutions",
+            "tags": [
+                "WEB"
+            ],
+            "access": "commercial"
+        }
+    ],
+    "licenses": [
+        "license:netacuity"
+    ],
+    "organization": "Digital Elements",
+    "status": "Ongoing"
 }
