@@ -5,10 +5,11 @@
     "id" : "how_to_map_ip_to_ixp",
     "visibility" : "public",
     "name" : "How to map an IP address to a Internet eXchange Point (IXP)",
-    "description" : "",
+    "description" : "Maps each IP address to it's Internet Exchange Point.",
     "links" : [{"to" : "dataset:ixps"}],
     "tags" : [
-        "IPv4"
+        "IPv4",
+        "IXP"
     ],
     "authors":[
         {
