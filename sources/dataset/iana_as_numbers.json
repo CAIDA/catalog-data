@@ -9,7 +9,7 @@
         "autonomous system numbers"
     ],
     "status":"ongoing",
-    "resources": [
+    "access": [
         {
             "name": "asn_16_bit",
             "url": "https://www.iana.org/assignments/as-numbers/as-numbers-1.csv",
@@ -17,7 +17,8 @@
                 "file",
                 "csv",
                 "asn"
-            ]
+            ],
+            "access": "public"
         },
         {
             "name": "asn_32_bit",
@@ -26,7 +27,8 @@
                 "file",
                 "csv",
                 "asn"
-            ]
+            ],
+            "access": "public"
         }
     ],
         "links": [
@@ -38,3 +40,5 @@
         }
     ]
 }
+
+

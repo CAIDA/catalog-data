@@ -8,7 +8,7 @@
         "iana"
     ],
     "status":"ongoing",
-    "resources": [
+    "access": [
         {
             "name": "unicast",
             "url": "https://www.iana.org/assignments/ipv6-unicast-address-assignments/ipv6-unicast-address-assignments.csv",
@@ -18,7 +18,8 @@
                 "csv",
                 "iana",
                 "unicast"
-            ]
+            ],
+            "access": "public"
         },
         {
             "name": "ipv6_address_space",
@@ -28,7 +29,8 @@
                 "ipv6",
                 "csv",
                 "iana"
-            ]
+            ],
+            "access": "public"
         }
     ],
         "links": [
@@ -40,3 +42,4 @@
         }
     ]
 }
+

@@ -19,15 +19,23 @@
     ],
     "date":"2002.04",
     "type":"POSTER",
-    "resources":[
+    "access": [
         {
-            "name":"PNG IPv4",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2002-apr-ipv4-standalone-1600x1333.png"
+            "name": "PNG IPv4",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2002-apr-ipv4-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"web page",
-            "url":"https://www.caida.org/projects/cartography/as-core/animation"
+            "url": "https://www.caida.org/projects/cartography/as-core/animation",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
         }
     ],
     "authors":[]
 }
+

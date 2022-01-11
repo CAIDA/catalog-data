@@ -19,13 +19,16 @@
         }
     ],
     "links": ["paper:2020_unresolved_issues","media:2020_unresolved_issues_imc"],
-    "resources": [
+    "access": [
         {
-            "name": "Video",
             "url": "https://youtu.be/y9wRHyrpPbc",
-            "tags": ["video"]
+            "tags": [
+                "video"
+            ],
+            "access": "public"
         }
     ],
     "type": "VIDEO",
     "date": "2020.10"
 }
+

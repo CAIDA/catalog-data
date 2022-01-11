@@ -18,22 +18,36 @@
     "date":"2014.01",
     "type":"POSTER",
     "image":"https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv4v6-poster-2000x1294.png",
-    "resources":[
+    "access": [
         {
-            "name":"web page",
-            "url":"https://www.caida.org/projects/cartography/as-core/2014/"
+            "url": "https://www.caida.org/projects/cartography/as-core/2014/",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv4v6-poster-2000x1294.png"
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv4v6-poster-2000x1294.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv4",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv4-standalone-1600x1333.png"
+            "name": "PNG IPv4",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv4-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv6",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv6-standalone-1600x1333.png"
+            "name": "PNG IPv6",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/2014/ascore-2014-jan-ipv6-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -44,3 +58,4 @@
         "person:on__hanh"
     ]
 }
+

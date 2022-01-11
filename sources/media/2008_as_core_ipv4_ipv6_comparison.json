@@ -19,26 +19,43 @@
     ],
     "date":"2008.01",
     "type":"POSTER",
-    "resources":[
+    "access": [
         {
-            "name":"web page",
-            "url":"https://www.caida.org/projects/cartography/as-core/2008/ipv6"
+            "url": "https://www.caida.org/projects/cartography/as-core/2008/ipv6",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
         },
         {
-            "name":"web page",
-            "url":"https://www.caida.org/projects/cartography/as-core/2008/"
+            "url": "https://www.caida.org/projects/cartography/as-core/2008/",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png"
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv4v6-poster-1600x1067.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv4",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv4-standalone-1600x1333.png"
+            "name": "PNG IPv4",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv4-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv6",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv6-standalone-1600x1333.png"
+            "name": "PNG IPv6",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2008-jan-ipv6-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -72,3 +89,4 @@
         "person:kerr__shane"
     ]
 }
+

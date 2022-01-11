@@ -8,7 +8,7 @@
         "iana"
     ],
     "status":"ongoing",
-    "resources": [
+    "access": [
         {
             "name": "ipv4",
             "url": "https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv",
@@ -17,7 +17,8 @@
                 "ipv4",
                 "csv",
                 "iana"
-            ]
+            ],
+            "access": "public"
         }
     ],
         "links": [
@@ -29,3 +30,4 @@
         }
     ]
 }
+

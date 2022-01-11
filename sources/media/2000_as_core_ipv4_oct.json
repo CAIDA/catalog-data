@@ -18,14 +18,21 @@
     ],
     "date":"2000.10",
     "type":"POSTER",
-    "resources":[
+    "access": [
         {
-            "name":"GIF",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascorePosterOct2000.gif"
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascorePosterOct2000.gif",
+            "tags": [
+                "GIF"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv4",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png"
+            "name": "PNG IPv4",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2000-oct-ipv4-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -40,3 +47,4 @@
         "person:jakubiec__oliver"
     ]
 }
+

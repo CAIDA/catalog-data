@@ -15,15 +15,16 @@
     "date": "2013.07",
     "type": "VISAULIZATION",
     "image": "https://www.caida.org/images/slider/country-level-ip-reputation_300h250.png",
-    "resources": [
+    "access": [
         {
-            "name": "URL",
             "url": "https://www.caida.org/archive/policy/country-level-ip-reputation/",
             "tags": [
                 "url"
-            ]
+            ],
+            "access": "public"
         }
     ],
     "authors":[]
     
 }
+

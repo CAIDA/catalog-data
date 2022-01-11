@@ -7,9 +7,10 @@
     ],
     "date":"2020.08",
     "type":"PRESENTATION",
-    "resources":[{
-        "name":"URL",
+    "access":[
+        {
         "url":"https://www.caida.org/catalog/media/visualizations/ipv4-history/",
+        "access":"public",
         "tags":["url","presentation"]
         }
     ],

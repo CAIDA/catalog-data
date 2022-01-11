@@ -19,22 +19,36 @@
     ],
     "date":"2009.01",
     "type":"POSTER",
-    "resources":[
+    "access": [
         {
-            "name":"web page",
-            "url":"https://www.caida.org/projects/cartography/as-core/2009/"
+            "url": "https://www.caida.org/projects/cartography/as-core/2009/",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv4v6-poster-1600x1068.png"
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv4v6-poster-1600x1068.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv4",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv4-standalone-1600x1333.png"
+            "name": "PNG IPv4",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv4-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         },
         {
-            "name":"PNG IPv6",
-            "url":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv6-standalone-1600x1333.png"
+            "name": "PNG IPv6",
+            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2009-jan-ipv6-standalone-1600x1333.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -46,3 +60,4 @@
         "person:hsu__jennifer"
     ]
 }
+

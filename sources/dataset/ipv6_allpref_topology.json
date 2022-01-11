@@ -11,13 +11,14 @@
         "caida"
     ],
     "status": "ongoing",
-    "resources": [
+    "access": [
         {
             "name": "webpage",
             "url": "https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset",
             "tags": [
                 "file"
-            ]
+            ],
+            "access": "public"
         }
     ],
     "licenses": [
@@ -25,3 +26,4 @@
     ],
     "links": []
 }
+

@@ -17,14 +17,15 @@
     "date": "2016.09",
     "type": "VISAULIZATION",
     "image": "https://www.caida.org/images/slider/as-relationships-geo_300h250.png",
-    "resources": [
+    "access": [
         {
-            "name": "URL",
             "url": "https://www.caida.org/catalog/datasets/as-relationships-geo/",
             "tags": [
                 "url"
-            ]
+            ],
+            "access": "public"
         }
     ],
     "authors":[]
 }
+

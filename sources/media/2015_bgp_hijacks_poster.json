@@ -15,21 +15,24 @@
     "image": "https://www.caida.org/images/slider/hijacks-2015-jan-poster_300h250.png",
     "resources": [
         {
-            "name": "PDF",
-            "url": "https://www.caida.org/catalog/media/posters/images/hijacks-2015-jan-poster.pdf",
-            "tags": [
-                "url",
-                "pdf",
-                "poster"
-            ]
-        },
-        {
             "name": "URL",
             "url": "https://www.caida.org/catalog/media/posters/#security",
             "tags": [
                 "url",
                 "poster"
             ]
+        }
+    ],
+    "access": [
+        {
+            "url": "https://www.caida.org/catalog/media/posters/images/hijacks-2015-jan-poster.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "poster",
+                "PDF"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -60,3 +63,4 @@
     ]
     
 }
+

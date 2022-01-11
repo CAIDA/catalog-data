@@ -29,21 +29,24 @@
     "type": "PRESENTATION",
     "resources": [
         {
-            "name": "PDF",
-            "url": "https://howfaster.net/files/presentations/OPEN_DATA_DAY_2021_OPEN.DATA_HOWFASTER.NET.pdf",
-            "tags": [
-                "url",
-                "pdf",
-                "presentation"
-            ]
-        },
-        {
             "name": "URL",
             "url": "https://odd.howfaster.net",
             "tags": [
                 "url",
                 "presentation"
             ]
+        }
+    ],
+    "access": [
+        {
+            "url": "https://howfaster.net/files/presentations/OPEN_DATA_DAY_2021_OPEN.DATA_HOWFASTER.NET.pdf",
+            "tags": [
+                "url",
+                "pdf",
+                "presentation",
+                "PDF"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -53,3 +56,4 @@
         }
     ]
 }
+

@@ -18,7 +18,7 @@
     "organization": "Cyber-Complex Foundation",
     "status": "ongoing",
     "name": "Open.Data HowFaster.NET",
-    "resources": [
+    "access": [
         {
             "name": "Public - Main mirror",
             "url": "https://open.data.howfaster.net/",
@@ -26,7 +26,8 @@
                 "file",
                 "csv",
                 "json"
-            ]
+            ],
+            "access": "public"
         },
         {
             "name": "Public - Additional mirror",
@@ -36,7 +37,8 @@
                 "ftp",
                 "csv",
                 "json"
-            ]
+            ],
+            "access": "public"
         }
     ],
     "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
@@ -50,3 +52,4 @@
             "label": "used by"
         }]
 }
+

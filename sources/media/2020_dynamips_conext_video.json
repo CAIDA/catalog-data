@@ -21,13 +21,16 @@
         }
     ],
     "links": ["paper:2020_dynamips","media:2020_dynamips_conext"],
-    "resources": [
+    "access": [
         {
-            "name": "Video",
             "url": "https://youtu.be/Rwqu4AxZ1i8",
-            "tags": ["video"]
+            "tags": [
+                "video"
+            ],
+            "access": "public"
         }
     ],
     "type": "VIDEO",
     "date": "2020.12"
 }
+

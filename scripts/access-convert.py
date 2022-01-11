@@ -44,6 +44,7 @@ import json
 import sys
 import os
 import re
+from collections import OrderedDict
 
 parser = argparse.ArgumentParser()
 parser.add_argument("files", nargs="+", type=str, help="single json object file")
@@ -53,10 +54,12 @@ re_json = re.compile("json$")
 re_markdown = re.compile("md$")
 re_id_illegal = re.compile("[^\d^a-z^A-Z]+")
 re_type_id = re.compile("[^\:]+:(.+)")
+re_access = re.compile('^\s+"access":\s*\[')
+
+re_start = re.compile('^\s*"resources":\s*\[')
+re_end = re.compile('^\s*\],$')
 
 def main():
-    re_start = re.compile('^\s*"resources":\s*\[')
-    re_end = re.compile('^\s*\],$')
     match = False
     for fname in args.files:
         #print (fname)
@@ -67,55 +70,78 @@ def main():
                 "before":"",
                 "after":""
             }
-            r_buffer = None
+            access_created = False
+            access_found = False
+            buffer = ""
+            depth = 0
             for line in fin:
-                if state == "during":
-                    if re_end.search(line):
-                        r_buffer += "]}"
-                        obj = obj_update(r_buffer)
-                        encoded = "\n".join(json.dumps(obj,indent=4).split("\n")[1:-1])+",\n"
-                        content["resources"] = encoded
-                        state = "after"
-                    else:
-                        r_buffer += line
-                elif obj is None and re_start.search(line):
-                    r_buffer = '{"resources":['
-                    state = "during"
+                buffer += line
+            obj = json.loads(buffer)
+            if "access" in obj:
+                print (fname,"skipping ------ access_found")
+            else:
+                obj = obj_update(obj)
+                if obj and "access" in obj:
+                    o = OrderedDict()
+                    for key in ["id","name","type","image","description","date","dateStart","dateEnd","links","tags","access","resources","presenters","licenses","tabs"]:
+                        if key in obj:
+                            o[key] = obj[key]
+                    for key,value in obj.items():
+                        if key not in o:
+                            o[key] = value
+                    print(fname)
+                    #fout = sys.stdout
+                    #if fout:
+                    with open (fname,"w") as fout:
+                        encoded = json.dumps(o,indent=4)
+                        print (encoded)
+                        fout.write(encoded)
                 else:
-                    content[state] += line
-            fin.close()
-            fout = sys.stdout
-            if "resources" in content:
-                for state in ["before","resources","after"]:
-                    fout.write(content[state])
+                    print (fname,"skipping ------")
+                    print (buffer)
 
-def obj_update(text):
-    obj = json.loads(text)
+
+def tags_add(tags, value):
+    if value not in tags:
+        tags.append(value)
+
+def obj_update(obj):
     if "resources" in obj:
         resources = []
         accesses = []
         for resource in obj["resources"]:
+            if "tags" not in resource:
+                resource["tags"] = []
             if resource["name"] == "public" or resource["name"] == "restricted" or resource["name"] == "commercial":
                 resource["access"] = resource["name"]
                 resource.pop('name', None)
                 accesses.append(resource)
             elif resource["name"] == "PDF" or resource["name"] == "web page":
                 resource["access"] = "public"
-                resource["tags"] = [resource["name"]]
+                tags_add(resource["tags"],resource["name"])
                 resource.pop('name', None)
                 accesses.append(resource)
             elif resource["name"].lower() == "video":
                 resource["access"] = "public"
-                resource["tags"] = ["video"]
+                tags_add(resource["tags"],"video")
                 resource.pop('name', None)
                 accesses.append(resource)
             elif resource["name"][:3] == "PNG" or resource["name"][:3] == "GIF":
                 resource["access"] = "public"
-                resource["tags"] = [resource["name"][:3]]
+                tags_add(resource["tags"],resource["name"][:3])
                 if len(resource["name"]) == 3:
                     resource.pop('name', None)
                 accesses.append(resource)
+            elif resource["name"].lower() == "url":
+                resource["access"] = "public"
+                resource.pop('name', None)
+                accesses.append(resource)
+            elif "file" in resource["tags"]:
+                resource["access"] = "public"
+                accesses.append(resource)
             else:
+                if len(resource["tags"]) < 1:
+                    resource.pop("tags", None)
                 resources.append(resource)
         if len(resources) > 0:
             obj["resources"] = resources

@@ -14,13 +14,13 @@
     "date": "2014.01",
     "type": "VISAULIZATION",
     "image": "https://catalog.caida.org/details/paper/2014_coordinated_view_internet_events/supplemental/egypt.composite.0174.png",
-    "resources": [
+    "access": [
         {
-            "name": "URL",
             "url": "https://catalog.caida.org/details/paper/2014_coordinated_view_internet_events/",
             "tags": [
                 "url"
-            ]
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -42,3 +42,4 @@
         }
     ]
 }
+

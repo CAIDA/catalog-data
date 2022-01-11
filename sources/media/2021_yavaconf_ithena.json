@@ -33,15 +33,16 @@
     ],
     "date": "2021.06.24",
     "type": "PRESENTATION",
-    "resources": [
+    "access": [
         {
-            "name": "PDF",
             "url": "https://cybercomplex.net/docs/YAVA_CONF_2021_BOINC_ELK_ITHENA.pdf",
             "tags": [
                 "url",
                 "pdf",
-                "presentation"
-            ]
+                "presentation",
+                "PDF"
+            ],
+            "access": "public"
         }
     ],
     "authors":[
@@ -51,3 +52,4 @@
         }
     ]
 }
+
