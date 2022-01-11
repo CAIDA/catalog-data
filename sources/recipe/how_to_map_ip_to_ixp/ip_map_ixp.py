@@ -33,7 +33,7 @@ args = parser.parse_args()
 #Open ixp jsonl and convert into dictionary entries:
 def parseJSONL(ixpJSONL):
     ixs = {}
-    key = 0
+    index = 0
     #Test if file exists.
     try:
         open(ixpJSONL)
@@ -42,11 +42,11 @@ def parseJSONL(ixpJSONL):
         return
 
     #Reads every line in JSONL file.
-    for i in open(ixpJSONL):
-        #Add dictionary index if line not a comment.
-        if i[0] != '#':
-            ixs[key] = json.loads(i)
-            key += 1
+    for line in open(ixpJSONL):
+        #Add dictionary index if line is not a comment.
+        if line[0] != '#':
+            ixs[index] = json.loads(line)
+            index += 1
     #Return completed dictionary
     return ixs
 
@@ -59,8 +59,8 @@ def parseIPs(ipFile):
         return
 
     ips = []
-    for i in open(args.ip_list):
-        ips.append(i.rstrip('\n\r'))
+    for line in open(args.ip_list):
+        ips.append(line.rstrip('\n\r'))
     return ips
 
 
