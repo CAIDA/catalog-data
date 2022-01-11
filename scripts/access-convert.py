@@ -64,21 +64,35 @@ def main():
     for fname in args.files:
         #print (fname)
         with open (fname) as fin:
-            obj = None
-            state = "before"
-            content = {
-                "before":"",
-                "after":""
-            }
-            access_created = False
-            access_found = False
-            buffer = ""
             depth = 0
-            for line in fin:
-                buffer += line
+
+            buffer_before = ""
+            buffer = ""
+            buffer_after = ""
+            if re.search("json$",fname,re.IGNORECASE):
+                markdown = False
+                for line in fin:
+                    buffer += line
+            elif re.search("md$",fname, re.IGNORECASE):
+                markdown = True
+                state = "before"
+                for line in fin:
+                    if state == "before":
+                        buffer_before += line 
+                        if re.search("^~~~metadata",line):
+                            state = "inside"
+                    elif state == "inside" and not line == "~~~\n":
+                        buffer += line
+                    else:
+                        buffer_after += line
+                        state = "after"
+                
+
+
             obj = json.loads(buffer)
             if "access" in obj:
-                print (fname,"skipping ------ access_found")
+                # print (fname,"skipping ------ access_found")
+                pass
             else:
                 obj = obj_update(obj)
                 if obj and "access" in obj:
@@ -95,7 +109,12 @@ def main():
                     with open (fname,"w") as fout:
                         encoded = json.dumps(o,indent=4)
                         print (encoded)
-                        fout.write(encoded)
+                        if markdown:
+                            fout.write(buffer_before)
+                            fout.write(encoded+"\n")
+                            fout.write(buffer_after)
+                        else:
+                            fout.write(encoded)
                 else:
                     print (fname,"skipping ------")
                     print (buffer)
@@ -135,6 +154,16 @@ def obj_update(obj):
             elif resource["name"].lower() == "url":
                 resource["access"] = "public"
                 resource.pop('name', None)
+                accesses.append(resource)
+            elif "github" in resource["url"]:
+                resource["access"] = "public"
+                resource["tags"] = ["code"]
+                resource.pop('name', None)
+                accesses.append(resource)
+            elif "mailto:" in resource["url"]:
+                resource["access"] = "restricted"
+                resource["tags"] = ["email"]
+                resource["name"] = resource["url"][7:]
                 accesses.append(resource)
             elif "file" in resource["tags"] or "API" in resource["tags"] or "api" in resource["tags"]:
                 resource["access"] = "public"

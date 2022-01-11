@@ -220,7 +220,9 @@ def main():
             obj = None
 
 
+    print ("processing obj")
     for obj in list(id_object.values()):
+        print (obj["filename"])
         object_finish(obj)
 
     print ("adding dates ( skipping '*___*' )")
