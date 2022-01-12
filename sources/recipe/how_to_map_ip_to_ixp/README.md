@@ -31,14 +31,16 @@ To use this script two files are required, a file containing IP addresses (one p
 To map all IPs to IXs and print to terminal:
 
 ~~~bash
-python3 ip_ixp.py -i <ip_file> -ix ixs_202110.jsonl
+python3 ip_map_ixp.py -i <ip_file> -ix <ixs_file>
 ~~~
 
 To map all IPs to IXs and save to file:
 
 ~~~bash
-python3 ip_ixp.py -i <ip_file> -ix ixs_202110.jsonl -o <output_file>
+python3 ip_map_ixp.py -i <ip_file> -ix <ixs_file> -o <output_file>
 ~~~
+
+A sample IP file can be found [here](https://github.com/CAIDA/catalog-data/blob/294-how-to-map-ip-to-ixp/sources/recipe/how_to_map_ip_to_ixp/ip.txt).
 
 ## <b><u>Solution</u></b>
 
@@ -47,7 +49,7 @@ Below are code samples from the available script showing how to parse and map an
 ~~~Python
 def parseJSONL(ixpJSONL):
     ixs = {}
-    key = 0
+    index = 0
     #Test if file exists.
     try:
         open(ixpJSONL)
@@ -56,11 +58,11 @@ def parseJSONL(ixpJSONL):
         return
 
     #Reads every line in JSONL file.
-    for i in open(ixpJSONL):
-        #Add dictionary index if line not a comment.
-        if i[0] != '#':
-            ixs[key] = json.loads(i)
-            key += 1
+    for line in open(ixpJSONL):
+        #Add dictionary index if line is not a comment.
+        if line[0] != '#':
+            ixs[index] = json.loads(line)
+            index += 1
     #Return completed dictionary
     return ixs
 ~~~
@@ -69,7 +71,6 @@ Below is a function for parsing the IP Address file:
 
 ~~~Python
 def parseIPs(ipFile):
-    #Test if file exists.
     try:
         open(ipFile)
     except:
@@ -77,11 +78,8 @@ def parseIPs(ipFile):
         return
 
     ips = []
-    #Get every line in file.
-    for i in open(args.ip_list):
-        if i[0] != '#':
-            #Strip IP of newline or carriage return then append to list.
-            ips.append(i.rstrip('\n\r'))
+    for line in open(args.ip_list):
+        ips.append(line.rstrip('\n\r'))
     return ips
 ~~~
 
@@ -101,13 +99,14 @@ def findIndex(ip, ixps):
 
 ## <b><u>Background</u></b>
 
-### <b>What is a IXP?</b>
+### <b> What is an Internet Exchange Point (IXP)? </b>
 
-An Internet eXchange Point is a point at which multiple different networks connect to exchange traffic. Some of these networks include ISPs, CDNs, and Mobile Service Providers.
+An IXP is a physical infrastructure that allow Internet Service Providers (ISPs), Content Delivery Networks(CDNs), and other organizations to exchange Internet traffic between their networks.
+IXPs are managed by one of the following: non-profit organizations, associations of ISPs, operator-neutral for-profit companies, university or government agencies, informal associations of networks.
 
-### <b> Why are they important? </b>
+### <b> What is an IP address? </b>
 
-IXPs allow internet traffic to be redirected when connectivity issues arive, they also allow for routing traffic through faster/shorter routes to a destination.
+IP addresses are unique identifiers that connect devices to the Internet network for communication purposes.
 
 ### <b> IP File Format </b>
 
