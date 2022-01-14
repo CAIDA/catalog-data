@@ -38,6 +38,19 @@ These are made by two scripts:
 - scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
 ## Build the catalog data
+### Windows
+If you are on a windows system. You will need to install a Linux system. 
+- https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview
+
+Then run the following commands:
+~~~
+sudo apt install make 
+sudo apt install python3-pip
+pip3 install -r requirements.txt 
+python3 -m nltk.downloader all
+~~~
+
+### Make the module 
 You will need to have b4 installed in python3.  You can do this using
 virtualenv.
 ~~~bash
