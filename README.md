@@ -50,7 +50,7 @@ pip3 install -r requirements.txt
 python3 -m nltk.downloader all
 ~~~
 
-### Make the module 
+### Unix/Mac
 You will need to have b4 installed in python3.  You can do this using
 virtualenv.
 ~~~bash
@@ -59,6 +59,7 @@ source env/bin/activate
 pip3 install -r requirements.txt
 ~~~
 
+### Run make
 All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
 If you have access to this repo you should clone it, if not then it's IDs will be 
 supplied by data/data_id___caida.json.
