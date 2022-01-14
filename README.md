@@ -38,6 +38,7 @@ These are made by two scripts:
 - scripts/data-build.py : creates the id_object.json, id_id_link.json, and word_score.id objects
 
 ## Build the catalog data
+
 ### Windows
 If you are on a windows system. You will need to install a Linux system. 
 - https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview
