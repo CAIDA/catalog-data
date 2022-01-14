@@ -40,7 +40,7 @@ These are made by two scripts:
 ## Build the catalog data
 
 ### Windows
-If you are on a windows system. You will need to install a Linux system. 
+If you are on a Windows system, you will need to install a Linux terminal for Windows.
 - https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview
 
 Then run the following commands:
@@ -62,7 +62,7 @@ pip3 install -r requirements.txt
 
 ### Run make
 All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
-If you have access to this repo you should clone it, if not then it's IDs will be 
+If you have access to this repo you should clone it, if not then its IDs will be 
 supplied by data/data_id___caida.json.
 ~~~
 clone git@github.com:CAIDA/catalog-data-caida.git
