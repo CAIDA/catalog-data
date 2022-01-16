@@ -25,7 +25,11 @@
 ~~~
 
 ## Introduction 
-The following recipe provides an explanation of bdrmapIT as well as an in-depth walkthrough on running bdrmapIT on a collection of wart files. 
+The following recipe provides an explanation of bdrmapIT as well as an in-depth walkthrough on running bdrmapIT on a collection of wart files to map IPs to routers. 
+
+### Purpose: why map IPs to the same router?
+Mapping IPs to the same router is crucial in understanding router-level topology and network ownership and boundaries. Mapping router ownership will faciliate research in interdomain congestion and the use of bdrmapIT can allow the creation for border mapping tools. These tools can assist in regulatory efforts, identify links between Internet netowrks, address network diagnostic challenges, and help estimate network traffic. 
+
 
 ## Background
 Check [Pushing the Boundaries with bdrmapIT: Mapping Router
