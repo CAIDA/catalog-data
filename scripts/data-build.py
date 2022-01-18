@@ -478,9 +478,16 @@ def object_date_add(obj):
             if date:
                 obj[key] = date
 
-    if "date" not in obj:
-        obj["date"] = obj["dateLastUpdated"]
-    obj["date"] = utils.date_parse(obj["date"])
+    if obj["__typename"] == "Dataset":
+        if "dateStart" in obj:
+            obj["date"] = obj["dateStart"]
+        else:
+            error_add(obj["filename"],"dataset requires dateStart")
+            obj.pop("date",None)
+    else:
+        if "date" not in obj:
+            obj["date"] = obj["dateLastUpdated"]
+        obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
