@@ -366,7 +366,12 @@ def parse_paper(fname, curr_paper):
                 author = author.strip()
                 #author = re.split(r"\W+", author)
                 if re.search("\s*,\s*",author):
-                    last_name, first_name = re.split("\s*,\s*",author)
+                    try:
+                        last_name, first_name = re.split("\s*,\s*",author)
+                    except Exception as e:
+                        print("Error:", "Author:", author)
+                        print ("    ",e)
+                        sys.exit(1)
                 elif not re.search("^[a-z]+$", author, re.IGNORECASE):
                     print ("unparseable", line[1])
                     print ("    ",[last_name, first_name])
