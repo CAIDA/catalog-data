@@ -397,16 +397,21 @@ def main():
 def error_add(filename, message):
     if filename not in filename_errors:
         filename_errors[filename] = []
-    filename_errors[filename].append(message)
+    filename_errors[filename].append(["  error",message])
+
+def warning_add(filename, message):
+    if filename not in filename_errors:
+        filename_errors[filename] = []
+    filename_errors[filename].append(["warning",message])
 
 def error_print():
     if len(filename_errors) > 0:
         print ("")
 
-    for filename,errors in filename_errors.items():
-        print ("error",filename)
-        for error in errors:
-            print ("    ",error)
+    for filename,type_messages in filename_errors.items():
+        print (filename)
+        for t,m in type_messages:
+            print ("    ",t+":",m)
 
     if len(filename_errors) > 0:
         print ("")
@@ -482,7 +487,7 @@ def object_date_add(obj):
         if "dateStart" in obj:
             obj["date"] = obj["dateStart"]
         else:
-            error_add(obj["filename"],"dataset requires dateStart")
+            warning_add(obj["filename"],"dataset requires dateStart")
             obj.pop("date",None)
     else:
         if "date" not in obj:
