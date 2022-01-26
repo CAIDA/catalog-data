@@ -411,7 +411,11 @@ def error_print():
     for filename,type_messages in filename_errors.items():
         print (filename)
         for t,m in type_messages:
-            print ("    ",t+":",m)
+            if "error" in t:
+                color_code = "31" # red
+            else:
+                color_code = "1" # black
+            print ("    \033["+color_code+"m",t+":",m,"\033[0m")
 
     if len(filename_errors) > 0:
         print ("")
