@@ -349,6 +349,7 @@ def print_datasets():
                 keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated", "tabs"]
             else:
                 keys = ["id", "name", "visibility"]
+            keys.append("dateStart")
 
             for key in keys:
                 if key in obj:
