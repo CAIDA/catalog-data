@@ -41,12 +41,41 @@ Traceroute is a computer network diagnostic command for displaying possible rout
 More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
 
 ### What is Scamper?
-Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. 
-Scamper's native output file format is called **warts**: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. 
+Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
 
 - More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
 - Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
 - Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
+
+#### trace data
+| field | definition | 
+|------|-----------|
+| version | warts version used for the file |
+| type | type of warts data collected | 
+| userid | ... |
+| method | ... |
+|  |  |
+|------|-----------|
+| src | ... |
+| dst | ... |
+| icmp_sum | ... |
+| stop_reason | ... |
+| stop_data | ... |
+| start | ... |
+|------|-----------|
+
+
+
+
+
+#### hop data
+| field | definition | 
+|------|----------|
+| addr | IP address of machine that sent TTL expired message | 
+| prob_ttl | the TTL set in the prob packet | 
+|....|.....|
+
+
 
 ### Dataset
 #### IPv4 Prefix-Probing Traceroute Dataset
