@@ -47,33 +47,57 @@ Scamper is designed to actively probe destinations in the Internet in parallel (
 - Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
 - Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
-#### trace data
+### trace data
 | field | definition | 
 |------|-----------|
 | version | warts version used for the file |
 | type | type of warts data collected | 
-| userid | ... |
-| method | ... |
-|  |  |
+| userid | unset user id |
+| method | method to collect the data |
+| | |
+| src | source: IP address of the target of trace |
+| dst | destination: IP address of the target of the trace |
+| icmp_sum | sum of error-reporting protocols used |
+| stop_reason | reason trace stopped |
+| stop_data | data that stopped trace |
+
+#### trace [start] data
+| field | definition | 
 |------|-----------|
-| src | ... |
-| dst | ... |
-| icmp_sum | ... |
-| stop_reason | ... |
-| stop_data | ... |
-| start | ... |
+| start | stores 3 types of start times |
+| sec | start time in seconds |
+| usec | start time in microseconds |
+| ftime | start time in full date/time format |
+
+#### trace data ll
+| field | definition | 
 |------|-----------|
+| hop_count | max hops in a trace |
+| attempts | number of attempts made |
+| hoplimit | Specifies the maximum time to live (TTL) or hop limit. The range for valid values is 1 - 255. The default is 30. |
+| firsthop | location of the first hop |
+| wait | Specifies how long to wait for a response. The range for valid values is 1 - 255. The default is 5 seconds. |
+| wait_probe | standard wait time before each probe |
+| tos | Specifies the Type of Service value (tos) in the probe packets. The range for valid values is 0 - 255. The default is 0. This parameter applies only to IPv4 destinations and is ignored for IPv6 destinations. |
+| probe_size | specifies the size of probes sent |
 
 
-
-
-
-#### hop data
+### hop data
 | field | definition | 
 |------|----------|
 | addr | IP address of machine that sent TTL expired message | 
 | prob_ttl | the TTL set in the prob packet | 
-|....|.....|
+| probe_size | ... |
+| rtt | ... |
+| reply_ttl | ... |
+| reply_tos | ... |
+| reply_size | ... |
+| reply_ipid | ... |
+| icmp_type | ... |
+| icmp_code | ... |
+| icmp_q_ttl | ... |
+| icmp_q_ipl | ... |
+| icmp_q_tos | ... |
 
 
 
