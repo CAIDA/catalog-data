@@ -827,18 +827,18 @@ def recipe_process(path):
     for root, dirs, files in os.walk(path):
         error = False
         if re.search(path+"/[^/]+$",root):
+            tabs = []
+            info = None
             for fname in files:
+                filename = root +"/"+fname
                 if re_readme_md.search(fname):
-                #if root in recipe_dir and re_readme_md.search(fname):
-                    filename = root +"/"+fname
-                    info = None
                     with open(filename) as f:
                         inside = False
                         data = None
                         for line in f:
                             # process content after JSON 
                             if info is not None:
-                                line = replace_markdown_urls(rep_url+root, line)
+                                #line = replace_markdown_urls(rep_url+root, line)
                                 #if re_markdown_url.search(line):
                                     #print (line.rstrip())
                                 info["content"] += line
@@ -879,6 +879,25 @@ def recipe_process(path):
 
                     if not error: 
                         object_add("Recipe", info)
+                elif os.path.isfile(filename) and fname[0] != ".":
+                    print (filename)
+                    with open(filename,"r") as fin:
+                        tab_content = None
+                        for line in fin:
+                            if tab_content is None:
+                                tab_content = line
+                            else:
+                                tab_content += line
+                        tabs.append({
+                            "name":fname,
+                            "format":"text",
+                            "content":tab_content
+                        })
+            if len(tabs) > 0 and info is not None:
+                if "tabs" in info:
+                    info["tabs"].extend(tabs)
+                else:
+                    info["tabs"] = tabs
 re_markdown_url = re.compile("^(.*\[[^\]]+\]\(\s*)([^\)]+)(\).*)")
 def replace_markdown_urls(repo_url, line):
     m = re_markdown_url.search(line)
