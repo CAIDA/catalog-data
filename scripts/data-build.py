@@ -889,7 +889,7 @@ def recipe_process(path):
                             else:
                                 tab_content += line
                         tabs.append({
-                            "name":"fname",
+                            "name":fname,
                             "format":"text",
                             "content":tab_content
                         })
