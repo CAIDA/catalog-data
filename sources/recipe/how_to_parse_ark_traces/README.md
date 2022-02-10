@@ -47,7 +47,7 @@ Scamper is designed to actively probe destinations in the Internet in parallel (
 - Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
 - Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
-### trace data
+### Trace data
 | field | definition | 
 |------|-----------|
 | version | warts version used for the file |
@@ -57,11 +57,11 @@ Scamper is designed to actively probe destinations in the Internet in parallel (
 | | |
 | src | source: IP address of the target of trace |
 | dst | destination: IP address of the target of the trace |
-| icmp_sum | sum of error-reporting protocols used |
+| icmp_sum | sum of error-reporting protocols used for the checksum to see if the ICMP header is corrupt or not|
 | stop_reason | reason trace stopped |
 | stop_data | data that stopped trace |
 
-#### trace [start] data
+#### Trace [start] data
 | field | definition | 
 |------|-----------|
 | start | stores 3 types of start times |
@@ -69,7 +69,7 @@ Scamper is designed to actively probe destinations in the Internet in parallel (
 | usec | start time in microseconds |
 | ftime | start time in full date/time format |
 
-#### trace data ll
+#### Trace Data ll
 | field | definition | 
 |------|-----------|
 | hop_count | max hops in a trace |
@@ -82,22 +82,22 @@ Scamper is designed to actively probe destinations in the Internet in parallel (
 | probe_size | specifies the size of probes sent |
 
 
-### hop data
+### Hop Data
 | field | definition | 
 |------|----------|
 | addr | IP address of machine that sent TTL expired message | 
-| prob_ttl | the TTL set in the prob packet | 
-| probe_size | ... |
-| rtt | ... |
-| reply_ttl | ... |
-| reply_tos | ... |
-| reply_size | ... |
-| reply_ipid | ... |
-| icmp_type | ... |
-| icmp_code | ... |
-| icmp_q_ttl | ... |
+| prob_ttl | This is the TTL set in the probe packet when it left the monitor | 
+| probe_size | This is the probe size of the probe packet when it left the monitor |
+| rtt | This is the Round-trip time (RTT), the duration, measured in milliseconds, from when the probe packet sent its request to when it receives a response from the monitor |
+| reply_ttl | This is the TTL value in the packet that was received by the monitor |
+| reply_tos | This is the TOS value in the packet that was received by the monitor |
+| reply_size | This is the SIZE value in the packet that was received by the monitor |
+| reply_ipid | This is the IP identifier (IP-ID),a 16 (32) bits field in the IPv4 (v6) header [24], in the packet that was received by the monitor |
+| icmp_type | This is the type of ICMP message found in the hop |
+| icmp_code | This specifies what kind of ICMP message was found in the hop |
+| icmp_q_ttl | This is the remaining TTL value after it has been decremented by the intermediate routers |
 | icmp_q_ipl | ... |
-| icmp_q_tos | ... |
+| icmp_q_tos | This is the ICMP's term of service found in the hop |
 
 
 
