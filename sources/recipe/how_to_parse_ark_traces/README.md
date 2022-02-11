@@ -61,6 +61,23 @@ Traceroute to 2607:f2c0:e784:350b:ba27:ebff:fe3e:2007,  12 hops,  603 bytes
 
 ~~~
 
+~~~bash
+Traceroute to 172.20.153.134,  12 hops,  507 bytes
+
+1) Hop Address: 172.20.153.129 | RTT: 0.280 ms
+2) Hop Address: 172.20.203.25 | RTT: 3.498 ms
+3) Hop Address: 195.166.130.250 | RTT: 32.069 ms
+4) Hop Address: 84.93.253.87 | RTT: 33.772 ms
+5) Hop Address: 195.99.125.140 | RTT: 33.261 ms
+6) Hop Address: 109.159.252.164 | RTT: 40.711 ms
+7) Hop Address: 166.49.214.194 | RTT: 34.315 ms
+8) Hop Address: 94.142.107.90 | RTT: 34.078 ms
+9) Hop Address: 213.140.35.240 | RTT: 113.703 ms
+10) Hop Address: 84.16.15.66 | RTT: 124.135 ms
+11) Hop Address: 94.142.99.190 | RTT: 217.819 ms
+16) Hop Address: 152.255.150.71 | RTT: 245.726 ms
+
+~~~
 
 ### Script Details 
 parse_from_cmd.py: 
