@@ -38,43 +38,64 @@ The following solution parses through an [arks ipv4/ipv6 warts files](https://ww
 **Example Usage:** 
 ~~~bash 
 
-$ sc_warts2json < .warts file > | python parse_trace_routes.py 
+$ python parse_from_cmd.py -f < .warts file >
 ~~~
 
-### Methods  
-simple_ip_path() takes in one input: 
-• `ark_trace`: This is a single line in the the json file produced as a result of running the [sc_warts2json](https://www.caida.org/catalog/software/scamper/man/sc_warts2json.1.pdf) method on a [warts file]( https://www.caida.org/catalog/datasets/request_user_info_forms/ark)
+**Example Output:** 
+~~~bash 
+
+Traceroute to 2607:f2c0:e784:350b:ba27:ebff:fe3e:2007,  12 hops,  603 bytes
+
+1) Hop Address: 2607:f2c0:e784:350b:b6fb:e4ff:fe8e:d68f | RTT: 0.322 ms
+2) Hop Address: 2607:f798:10:308b:0:672:3122:22 | RTT: 24.801 ms
+3) Hop Address: 2607:f2c0:ffff:f200:0:1:19:2 | RTT: 14.542 ms
+4) Hop Address: 2607:f2c0:ffff:f200:0:1:19:1 | RTT: 14.185 ms
+5) Hop Address: 2607:f2c0:ffff:1:3:2:0:130 | RTT: 13.204 ms
+7) Hop Address: 2001:2000:3018:12a::1 | RTT: 60.769 ms
+8) Hop Address: 2001:2000:3018:91::1 | RTT: 58.790 ms
+9) Hop Address: 2001:2000:3018:56::1 | RTT: 36.067 ms
+10) Hop Address: 2001:2000:3018:40::1 | RTT: 45.551 ms
+11) Hop Address: 2001:2000:3018:a4::1 | RTT: 59.673 ms
+12) Hop Address: 2001:2000:3080:ce5::2 | RTT: 95.878 ms
+15) Hop Address: 2001:1248:2:100f:ff:ff00:c85e:5dd6 | RTT: 8994.708 ms
+
+~~~
+
+
+### Script Details 
+parse_from_cmd.py: 
+• Is a very simple program that takes a warts file as its standard input and prints all records it found
+
+
 
 ~~~python
-def simple_ip_path(ark_trace):
-    
-    simple_trace_path_text = '-> traceroute to {} ({}), {} hops max, {} byte packets\n'
-    simple_hop_path_text = '\t{}) Hop Address: {} ({}) | RTT: {:.3f} ms'
-    
-    trace_dst_ip = ark_trace['dst']
-    trace_dst_name = socket.getfqdn(ark_trace['dst'])
-    trace_hop_count = ark_trace['hop_count']
-    trace_byte_packets = ark_trace['probe_count']
-    
-    path_counter = 1
-    
-    print(simple_trace_path_text.format(trace_dst_name, trace_dst_ip, 
-                                        trace_hop_count, trace_byte_packets))
-    print('{')
-    
-    hops = ark_trace['hops']
-    
-    for hop in hops:
+import warts
+import sys
+import argparse
+from warts.traceroute import Traceroute
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-f", type= str, default=None, dest= "warts_file", help="Path to a .warts file.")
+args = parser.parse_args()
+
+if args.warts_file is None:
+        print("warts_file not found")
+        print(sys.argv[0],"-f warts_file")
+        sys.exit()
         
-        hop_addr_ip = hop['addr']
-        hop_addr_name = socket.getfqdn(hop['addr'])
-          
-        hop_rtt = hop['rtt']
-        
-        print(simple_hop_path_text.format(path_counter, hop_addr_name, hop_addr_ip, hop_rtt))
-        path_counter += 1
-    
-    print('}')
+warts_file = args.warts_file
+
+with open(warts_file, 'rb') as f:
+    while True:
+        record = warts.parse_record(f)
+        if record == None:
+            break
+        print('\n')
+        print(record)
+        if isinstance(record, Traceroute):
+            for hop in record.hops:
+                print(hop)
+            print('\n')
 ~~~
 
 
