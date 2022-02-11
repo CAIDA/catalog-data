@@ -44,7 +44,7 @@ $ python parse_from_cmd.py -f < .warts file >
 **Example Output:** 
 ~~~bash 
 
-Traceroute to 2607:f2c0:e784:350b:ba27:ebff:fe3e:2007,  12 hops,  603 bytes
+Traceroute to 2607:f2c0:e784:350b:ba27:ebff:fe3e:2007,  15 hops,  603 bytes
 
 1) Hop Address: 2607:f2c0:e784:350b:b6fb:e4ff:fe8e:d68f | RTT: 0.322 ms
 2) Hop Address: 2607:f798:10:308b:0:672:3122:22 | RTT: 24.801 ms
@@ -62,7 +62,7 @@ Traceroute to 2607:f2c0:e784:350b:ba27:ebff:fe3e:2007,  12 hops,  603 bytes
 ~~~
 
 ~~~bash
-Traceroute to 172.20.153.134,  12 hops,  507 bytes
+Traceroute to 172.20.153.134,  16 hops,  507 bytes
 
 1) Hop Address: 172.20.153.129 | RTT: 0.280 ms
 2) Hop Address: 172.20.203.25 | RTT: 3.498 ms
