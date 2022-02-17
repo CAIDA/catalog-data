@@ -31,9 +31,12 @@
 }
 ~~~
 
-## Introduction
+## Introduction:
 
 The following solution parses through an [arks ipv4/ipv6 warts files](https://www.caida.org/catalog/datasets/request_user_info_forms/ark ) and produces a simple traceroute in the following order: src, ip1, ip2, ip3..ipn, dst where ip1 - ipn are listed in increasing order of probe-ttl values
+
+### Solution:
+For this solution, we used Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts). You will need to have this on your computer in-addition to our modified "traceroute.py" file to run this recipe. 
 
 **Example Usage:** 
 ~~~bash 
