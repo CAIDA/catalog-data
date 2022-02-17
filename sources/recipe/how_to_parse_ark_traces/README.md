@@ -1,4 +1,4 @@
-## How to parse through ark IPv4/IPv6 traceroutes
+# How to parse through ark IPv4/IPv6 traceroutes:
 ~~~json
 {
     "id": "how_to_parse_ark_traces",
@@ -35,7 +35,7 @@
 
 The following solution parses through an [arks ipv4/ipv6 warts files](https://www.caida.org/catalog/datasets/request_user_info_forms/ark ) and produces a simple traceroute in the following order: src, ip1, ip2, ip3..ipn, dst where ip1 - ipn are listed in increasing order of probe-ttl values
 
-### Solution:
+### Solution -
 For this solution, we used Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts). You will need to have this on your computer in-addition to our modified "traceroute.py" file to run this recipe. 
 
 **Example Usage:** 
@@ -82,7 +82,7 @@ Traceroute to 172.20.153.134,  16 hops,  507 bytes
 
 ~~~
 
-### Script Details 
+### Script Details: 
 parse_from_cmd.py: 
 • Is a very simple program that takes a warts file as its standard input and prints all records it found
 
@@ -119,7 +119,14 @@ with open(warts_file, 'rb') as f:
 ~~~
 
 
-## Background 
+## Background: 
+
+### What is Scamper?
+Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
+
+- More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
+- Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
+- Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
 ### What is a Traceroute?
 Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
@@ -130,7 +137,7 @@ TTL stands for Time To Live. When a TCP packet is sent, its TTL is set, which is
 
 More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node77.html ). 
 
-### Trace data
+#### Trace data -
 | field | definition | 
 |------|-----------|
 | version | warts version used for the file |
@@ -144,7 +151,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 | stop_reason | reason trace stopped |
 | stop_data | data that stopped trace |
 
-#### Trace [start] data
+#### Trace [start] data -
 | field | definition | 
 |------|-----------|
 | start | stores 3 types of start times |
@@ -152,7 +159,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 | usec | start time in microseconds |
 | ftime | start time in full date/time format |
 
-#### Trace Data ll
+#### Trace Data ll -
 | field | definition | 
 |------|-----------|
 | hop_count | max hops in a trace |
@@ -165,7 +172,7 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 | probe_size | specifies the size of probes sent |
 
 
-### Hop Data
+### Hop Data -
 | field | definition | 
 |------|----------|
 | addr | IP address of machine that sent TTL expired message | 
@@ -181,14 +188,6 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 | icmp_q_ttl | This is the remaining TTL value after it has been decremented by the intermediate routers |
 | icmp_q_ipl | ip length field in the quoted message |
 | icmp_q_tos | This is the ICMP's term of service found in the hop |
-
-
-### What is Scamper?
-Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
-
-- More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
-- Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
-- Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
 
 ### Dataset
 #### IPv4 Prefix-Probing Traceroute Dataset
