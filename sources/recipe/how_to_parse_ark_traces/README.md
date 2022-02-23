@@ -24,7 +24,7 @@
     ],
     "authors":[
         {
-            "person": "zabegalin__sasha",
+            "person": "person:sashazabegalin",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]
@@ -33,10 +33,98 @@
 
 ## Introduction:
 
-The following solution parses through an [arks ipv4/ipv6 warts files](https://www.caida.org/catalog/datasets/request_user_info_forms/ark ) and produces a simple traceroute in the following order: src, ip1, ip2, ip3..ipn, dst where ip1 - ipn are listed in increasing order of probe-ttl values
+The following solution parses through an [arks ipv4/ipv6 warts files](https://www.caida.org/catalog/datasets/request_user_info_forms/ark ) and produces a simple traceroute in the following order: src, ip1, ip2, ip3..ipn, dst where ip1 - ipn are listed in increasing order of probe-ttl values.
 
-### Solution -
-For this solution, we used Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts). You will need to have this on your computer in-addition to our modified "traceroute.py" file to run this recipe. 
+## Background: 
+
+### What is Scamper?
+Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
+
+- More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
+- Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
+- Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
+
+### What is a Traceroute?
+Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
+More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
+
+#### --> TTL 
+TTL stands for Time To Live. When a TCP packet is sent, its TTL is set, which is the number of routers (hops) it can pass through before the packet is discarded. As the packet passes through a router the TTL is decremented until, when the TTL reaches zero, the packet is destroyed and an ICMP "time exceeded" message is returned. The return message's TTL is set by the terminating router when it creates the packet, and decremented normally.
+
+More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node77.html ). 
+
+#### Trace data -
+| field | definition | 
+|------|-----------|
+| version | warts version used for the file |
+| type | type of warts data collected | 
+| userid | unset user id |
+| method | method to collect the data |
+| | |
+| src | source: IP address of the target of trace |
+| dst | destination: IP address of the target of the trace |
+| icmp_sum | sum of error-reporting protocols used for the checksum to see if the ICMP header is corrupt or not|
+| stop_reason | reason trace stopped |
+| stop_data | data that stopped trace |
+
+#### Trace [start] data -
+| field | definition | 
+|------|-----------|
+| start | stores 3 types of start times |
+| sec | start time in seconds |
+| usec | start time in microseconds |
+| ftime | start time in full date/time format |
+
+#### Trace Data ll -
+| field | definition | 
+|------|-----------|
+| hop_count | max hops in a trace |
+| attempts | number of attempts made |
+| hoplimit | Specifies the maximum time to live (TTL) or hop limit. The range for valid values is 1 - 255. The default is 30. |
+| firsthop | location of the first hop |
+| wait | Specifies how long to wait for a response. The range for valid values is 1 - 255. The default is 5 seconds. |
+| wait_probe | standard wait time before each probe |
+| tos | Specifies the Type of Service value (tos) in the probe packets. The range for valid values is 0 - 255. The default is 0. This parameter applies only to IPv4 destinations and is ignored for IPv6 destinations. |
+| probe_size | specifies the size of probes sent |
+
+
+### Hop Data -
+| field | definition | 
+|------|----------|
+| addr | IP address of machine that sent TTL expired message | 
+| prob_ttl | This is the TTL set in the probe packet when it left the monitor | 
+| probe_size | This is the probe size of the probe packet when it left the monitor |
+| rtt | This is the Round-trip time (RTT), the duration, measured in milliseconds, from when the probe packet sent its request to when it receives a response from the monitor |
+| reply_ttl | This is the TTL value in the packet that was received by the monitor |
+| reply_tos | This is the TOS value in the packet that was received by the monitor |
+| reply_size | This is the SIZE value in the packet that was received by the monitor |
+| reply_ipid | This is the IP identifier (IP-ID),a 16 (32) bits field in the IPv4 (v6) header [24], in the packet that was received by the monitor |
+| icmp_type | This is the type of ICMP message found in the hop |
+| icmp_code | This specifies what kind of ICMP message was found in the hop |
+| icmp_q_ttl | This is the remaining TTL value after it has been decremented by the intermediate routers |
+| icmp_q_ipl | ip length field in the quoted message |
+| icmp_q_tos | This is the ICMP's term of service found in the hop |
+
+## Getting Started -
+For this solution, we used Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts). **You will need to have this on your computer in-addition to our modified "traceroute.py" file to run this recipe.** Once you have cloned the recipe to your local machine, replace the **cloned** "traceroute.py" with the **recipe's** "traceroute.py."
+
+### Drakker Lig's Scamper-Pywarts Installation
+
+For Python 3 (recommended):
+
+```shell
+pip3 install scamper-pywarts
+```
+
+If you simply use `pip`, make sure it installs for the expected version of Python on
+your system:
+
+```shell
+pip install scamper-pywarts
+```
+
+### Running Script
+--> Before procedding, make sure you have Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts) cloned to your repositiory as well as replaced the cloned "traceroute.py" with the recipe's "traceroute.py." <--
 
 **Example Usage:** 
 ~~~bash 
@@ -117,77 +205,6 @@ with open(warts_file, 'rb') as f:
                 print(hop)
             print('\n')
 ~~~
-
-
-## Background: 
-
-### What is Scamper?
-Scamper is designed to actively probe destinations in the Internet in parallel (at a specified packets-per-second rate) so that bulk data can be collected in a timely fashion. Scamper's native output file format is called warts: a warts file contains substantial meta data surrounding each individual measurement conducted, as well as substantial detail of responses received. The measurements conducted can range from simple to complex. An example of a simple measurement is where a single measurement method (e.g. traceroute) is used on a list of IP addresses to conduct a bulk measurement. A more complex measurement might be where the outcome of a previous test influences what happens next: for example, for each hop in a traceroute path, infer the address of the outgoing interface for the previous hop. Complex measurements are conducted by connecting to a running scamper process with a driver program which contains the logic.
-
-- More information on Scampper can be found [here](https://www.caida.org/catalog/software/scamper/) 
-- Download source code from [here](https://www.caida.org/catalog/software/scamper/code/scamper-cvs-20200717.tar.gz) 
-- Read Warts format in Python please read [pywarts](https://github.com/drakkar-lig/scamper-pywarts) 
-
-### What is a Traceroute?
-Traceroute is a computer network diagnostic command for displaying possible routes (paths) and measuring transit delays of packets across an Internet Protocol (IP) network.
-More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Traceroute)
-
-#### --> TTL 
-TTL stands for Time To Live. When a TCP packet is sent, its TTL is set, which is the number of routers (hops) it can pass through before the packet is discarded. As the packet passes through a router the TTL is decremented until, when the TTL reaches zero, the packet is destroyed and an ICMP "time exceeded" message is returned. The return message's TTL is set by the terminating router when it creates the packet, and decremented normally.
-
-More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marshall/Internet/node77.html ). 
-
-#### Trace data -
-| field | definition | 
-|------|-----------|
-| version | warts version used for the file |
-| type | type of warts data collected | 
-| userid | unset user id |
-| method | method to collect the data |
-| | |
-| src | source: IP address of the target of trace |
-| dst | destination: IP address of the target of the trace |
-| icmp_sum | sum of error-reporting protocols used for the checksum to see if the ICMP header is corrupt or not|
-| stop_reason | reason trace stopped |
-| stop_data | data that stopped trace |
-
-#### Trace [start] data -
-| field | definition | 
-|------|-----------|
-| start | stores 3 types of start times |
-| sec | start time in seconds |
-| usec | start time in microseconds |
-| ftime | start time in full date/time format |
-
-#### Trace Data ll -
-| field | definition | 
-|------|-----------|
-| hop_count | max hops in a trace |
-| attempts | number of attempts made |
-| hoplimit | Specifies the maximum time to live (TTL) or hop limit. The range for valid values is 1 - 255. The default is 30. |
-| firsthop | location of the first hop |
-| wait | Specifies how long to wait for a response. The range for valid values is 1 - 255. The default is 5 seconds. |
-| wait_probe | standard wait time before each probe |
-| tos | Specifies the Type of Service value (tos) in the probe packets. The range for valid values is 0 - 255. The default is 0. This parameter applies only to IPv4 destinations and is ignored for IPv6 destinations. |
-| probe_size | specifies the size of probes sent |
-
-
-### Hop Data -
-| field | definition | 
-|------|----------|
-| addr | IP address of machine that sent TTL expired message | 
-| prob_ttl | This is the TTL set in the probe packet when it left the monitor | 
-| probe_size | This is the probe size of the probe packet when it left the monitor |
-| rtt | This is the Round-trip time (RTT), the duration, measured in milliseconds, from when the probe packet sent its request to when it receives a response from the monitor |
-| reply_ttl | This is the TTL value in the packet that was received by the monitor |
-| reply_tos | This is the TOS value in the packet that was received by the monitor |
-| reply_size | This is the SIZE value in the packet that was received by the monitor |
-| reply_ipid | This is the IP identifier (IP-ID),a 16 (32) bits field in the IPv4 (v6) header [24], in the packet that was received by the monitor |
-| icmp_type | This is the type of ICMP message found in the hop |
-| icmp_code | This specifies what kind of ICMP message was found in the hop |
-| icmp_q_ttl | This is the remaining TTL value after it has been decremented by the intermediate routers |
-| icmp_q_ipl | ip length field in the quoted message |
-| icmp_q_tos | This is the ICMP's term of service found in the hop |
 
 ### Dataset
 - #### IPv4 Prefix-Probing Traceroute Dataset
