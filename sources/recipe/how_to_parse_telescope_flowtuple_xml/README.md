@@ -61,6 +61,12 @@ Once submitted, <b>allow for five to ten business days for your request to be pr
 
 <b>Note: all analysis must be performed on CAIDA computers; download of raw data is not allowed.</b> 
 
+#### If you are affiliated with CAIDA or are a CAIDA employee... 
+Please fill out these links instead:
+* https://www.caida.org/about/legal/cfua/
+* https://www.caida.org/about/legal/dataprivacy_agreement/
+* https://www.caida.org/about/legal/sudoua/
+
 ## Accessing a CAIDA VM 
 Once you have gained access to the telescope flowtuple data, please see walkthrough [here](https://stardust.caida.org/docs/accessingthevm/).
 
