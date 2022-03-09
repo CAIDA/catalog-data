@@ -108,7 +108,15 @@ More information on TTL can be found [here]( http://users.cs.cf.ac.uk/Dave.Marsh
 ## Getting Started -
 For this solution, we used Drakker Lig's [scamper-pywarts] (https://github.com/drakkar-lig/scamper-pywarts). **You will need to have this on your computer in-addition to our modified "traceroute.py" file to run this recipe.** Once you have cloned the recipe to your local machine, replace the **cloned** "traceroute.py" with the **recipe's** "traceroute.py."
 
-### Drakker Lig's Scamper-Pywarts Installation
+
+### Installation
+-------
+If you are working on a fresh virtual environment be sure to - 
+
+```shell
+pip install six
+```
+-------
 
 For Python 3 (recommended):
 
