@@ -62,7 +62,7 @@ GEOLOC: "Saitama, JP"
 ---
 MARKER: "2016_g_oliver_arxiv_05179"
 TYPE: "online"
-AUTHOR: "Oliver, G., Scheitle Q., Gebhard, S., Carle, G."
+AUTHOR: "Oliver, G., Scheitle, Q., Gebhard, S., Carle, G."
 TITLE: "Scanning the IPv6 internet: towards a comprehensive hitlist"
 YEAR: "2016-00"
 TOPKEY: "routeviews-prefix2as"
