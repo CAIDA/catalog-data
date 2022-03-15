@@ -59,6 +59,8 @@ python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt
 ~~~
+### download NLTK
+https://www.nltk.org/data.html (own-1.4)
 
 ### Run make
 All the CAIDA datasets are stored in catalog-data-caida, which has restricted access.
