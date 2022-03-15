@@ -761,7 +761,14 @@ def tag_convert(filename, obj,padding=""):
     return obj
 
 def personName_add(obj, person_id):
-    first_name, last_name = person_id.split(":")[1].split("__")
+    #print (json.dumps(obj))
+    names = person_id.split(":")[1].split("__")
+    if len(names) == 2:
+        first_name, last_name = names
+    else:
+        error_add(obj["filename"],"failed to parse person `"+person_id+"'")
+        last_name = names[0]
+        first_name = ""
     i = obj["id"]
     for name in [first_name, last_name]:
         if name not in personName_ids:
@@ -880,19 +887,20 @@ def recipe_process(path):
                     if not error: 
                         object_add("Recipe", info)
                 elif os.path.isfile(filename) and fname[0] != ".":
-                    print (filename)
-                    with open(filename,"r") as fin:
-                        tab_content = None
-                        for line in fin:
-                            if tab_content is None:
-                                tab_content = line
-                            else:
-                                tab_content += line
-                        tabs.append({
-                            "name":fname,
-                            "format":"text",
-                            "content":tab_content
-                        })
+                    extention = filename.split(".")[-1].lower()
+                    if extention in ["py","pl","txt","md"]:
+                        with open(filename,"r") as fin:
+                            tab_content = None
+                            for line in fin:
+                                if tab_content is None:
+                                    tab_content = line
+                                else:
+                                    tab_content += line
+                            tabs.append({
+                                "name":fname,
+                                "format":"text",
+                                "content":tab_content
+                            })
             if len(tabs) > 0 and info is not None:
                 if "tabs" in info:
                     info["tabs"].extend(tabs)
