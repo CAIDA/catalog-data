@@ -9,7 +9,7 @@
         "to": "dataset:ipv4_prefix_probing_dataset",
         "to": "dataset:ipv4_routed_24_topology_dataset",
         "to": "dataset:ipv6_allpref_topology",
-        "to": "dataset:ipv6_routed_48_topology_dataset"
+        "to": "dataset:ark_ipv6_routed48"
         }],
     "tags": [
         "topology",
@@ -24,7 +24,7 @@
     ],
     "authors":[
         {
-            "person": "person:sashazabegalin",
+            "person": "person:sasha__zabegalin",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]
