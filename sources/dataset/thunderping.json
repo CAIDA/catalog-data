@@ -2,6 +2,7 @@
     "id": "thunderping",
     "name": "Thunderping",
     "description": "ThunderPing that measures the connectivity of residential Internet hosts before, during, and after forecast periods of severe weather. ThunderPing uses weather alerts from the US National Weather Service to choose a set of residential host addresses to ping from several vantage points on the Internet.",
+    "dateStart": "2011",
     "tags": [
         "weather",
         "active measurement"

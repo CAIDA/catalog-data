@@ -4,6 +4,7 @@
     "organization": "IANA",
     "description": "Dataset of ASN allocation ranges collected from IANA.",
     "status":"ongoing",
+    "dateStart":"1997-11",
     "resources": [
         {
             "name": "public/restricted",

@@ -397,16 +397,25 @@ def main():
 def error_add(filename, message):
     if filename not in filename_errors:
         filename_errors[filename] = []
-    filename_errors[filename].append(message)
+    filename_errors[filename].append(["  error",message])
+
+def warning_add(filename, message):
+    if filename not in filename_errors:
+        filename_errors[filename] = []
+    filename_errors[filename].append(["warning",message])
 
 def error_print():
     if len(filename_errors) > 0:
         print ("")
 
-    for filename,errors in filename_errors.items():
-        print ("error",filename)
-        for error in errors:
-            print ("    ",error)
+    for filename,type_messages in filename_errors.items():
+        print (filename)
+        for t,m in type_messages:
+            if "error" in t:
+                color_code = "31" # red
+            else:
+                color_code = "1" # black
+            print ("    \033["+color_code+"m",t+":",m,"\033[0m")
 
     if len(filename_errors) > 0:
         print ("")
@@ -478,9 +487,16 @@ def object_date_add(obj):
             if date:
                 obj[key] = date
 
-    if "date" not in obj:
-        obj["date"] = obj["dateLastUpdated"]
-    obj["date"] = utils.date_parse(obj["date"])
+    if obj["__typename"] == "Dataset":
+        if "dateStart" in obj:
+            obj["date"] = obj["dateStart"]
+        else:
+            warning_add(obj["filename"],"dataset requires dateStart")
+            obj.pop("date",None)
+    else:
+        if "date" not in obj:
+            obj["date"] = obj["dateLastUpdated"]
+        obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
@@ -745,7 +761,14 @@ def tag_convert(filename, obj,padding=""):
     return obj
 
 def personName_add(obj, person_id):
-    first_name, last_name = person_id.split(":")[1].split("__")
+    #print (json.dumps(obj))
+    names = person_id.split(":")[1].split("__")
+    if len(names) == 2:
+        first_name, last_name = names
+    else:
+        error_add(obj["filename"],"failed to parse person `"+person_id+"'")
+        last_name = names[0]
+        first_name = ""
     i = obj["id"]
     for name in [first_name, last_name]:
         if name not in personName_ids:
@@ -811,18 +834,18 @@ def recipe_process(path):
     for root, dirs, files in os.walk(path):
         error = False
         if re.search(path+"/[^/]+$",root):
+            tabs = []
+            info = None
             for fname in files:
+                filename = root +"/"+fname
                 if re_readme_md.search(fname):
-                #if root in recipe_dir and re_readme_md.search(fname):
-                    filename = root +"/"+fname
-                    info = None
                     with open(filename) as f:
                         inside = False
                         data = None
                         for line in f:
                             # process content after JSON 
                             if info is not None:
-                                line = replace_markdown_urls(rep_url+root, line)
+                                #line = replace_markdown_urls(rep_url+root, line)
                                 #if re_markdown_url.search(line):
                                     #print (line.rstrip())
                                 info["content"] += line
@@ -863,6 +886,26 @@ def recipe_process(path):
 
                     if not error: 
                         object_add("Recipe", info)
+                elif os.path.isfile(filename) and fname[0] != ".":
+                    extention = filename.split(".")[-1].lower()
+                    if extention in ["py","pl","txt","md"]:
+                        with open(filename,"r") as fin:
+                            tab_content = None
+                            for line in fin:
+                                if tab_content is None:
+                                    tab_content = line
+                                else:
+                                    tab_content += line
+                            tabs.append({
+                                "name":fname,
+                                "format":"text",
+                                "content":tab_content
+                            })
+            if len(tabs) > 0 and info is not None:
+                if "tabs" in info:
+                    info["tabs"].extend(tabs)
+                else:
+                    info["tabs"] = tabs
 re_markdown_url = re.compile("^(.*\[[^\]]+\]\(\s*)([^\)]+)(\).*)")
 def replace_markdown_urls(repo_url, line):
     m = re_markdown_url.search(line)
