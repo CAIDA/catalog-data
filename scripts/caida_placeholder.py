@@ -237,7 +237,11 @@ re_section = re.compile("^~~~([^\n]+)")
 def parse_metadata(filename):
     section = None
     buffer = {}
+
     content = None
+    content_name = None
+    re_content = re.compile("^\s*===\s+(.+)\s*===")
+
     metadata = None
     re_tool = re.compile("^tool[_-]")
     tabs = []
@@ -245,6 +249,15 @@ def parse_metadata(filename):
         for line in file:
             # everything after '=== content ===' is placed inside content unprocessed
             if content is not None:
+                m = re_content.search(line)
+                if m:
+                    tabs.append({
+                        "name":content_name,
+                        "format":"markdown",
+                        "content":content
+                    })
+                    content_name = m.groups(1)
+                    content = ""
                 content += line
 
             if section is not None:
@@ -284,30 +297,36 @@ def parse_metadata(filename):
                 content = ""
 
             else:
-                m = re_section.search(line)
-                if m:
-                    parts = m.group(1).split("~")
-                    buffer = ""
-                    if len(parts) > 0:
-                        section = parts[0]
-                        if section == "files":
-                            if len(parts) > 1:
-                                section = parts[1]
-                            else:
-                                section = None
+                m = re_content.search(line)
+                if m: 
+                    content_name = m.group(1)
+                    content = ""
+                else:
+                    m = re_section.search(line)
+                    if m:
+                        parts = m.group(1).split("~")
+                        buffer = ""
+                        if len(parts) > 0:
+                            section = parts[0]
+                            if section == "files":
+                                if len(parts) > 1:
+                                    section = parts[1]
+                                else:
+                                    section = None
 
-        tabs_clean = []
-        if content is not None and re_not_white_space.search(content):
-            if (re_tab_content.search(content)):
-                f = "html"
-            else:
-                f = "markdown"
-            tabs_clean.append({
+        if content is not None:
+        #if content is not None and re_not_white_space.search(content):
+            #if (re_tab_content.search(content)):
+                #f = "html"
+            #else:
+                #f = "markdown"
+            tabs.append({
                 "name":"content",
-                "format": f,
+                "format": "markdown",
                 "content":content
             })
 
+        tabs_clean = []
         for tab in tabs:
             if re_not_white_space.search(tab["content"]):
                 tabs_clean.append(tab)
