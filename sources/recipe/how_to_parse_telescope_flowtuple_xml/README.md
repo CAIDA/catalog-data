@@ -12,11 +12,11 @@
       "UCSD Network Telescope"
     ],
     "links": [
-        "dataset:corsaro_flowtype",
+        "dataset:telescope_live"
     ],
     "authors":[
         {
-            "person": "person:isacmlee",
+            "person": "person:lee__isac",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]
