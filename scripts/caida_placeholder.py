@@ -79,10 +79,6 @@ re_mkdn = re.compile(r"\.md$", re.IGNORECASE)
 re_json = re.compile(r"\.json$", re.IGNORECASE)
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
-re_html = re.compile(r"\.html$", re.IGNORECASE)
-re_md = re.compile(r"\.md$", re.IGNORECASE)
-re_not_white_space = re.compile(r"[^\s]")
-re_tab_content = re.compile(r"^[\s]*?<[ \S]*?>",re.IGNORECASE)
 
 # File Paths:
 path_ids = "data/data_id___caida.json"
@@ -175,7 +171,10 @@ def parse_catalog_data_caida(source_dir):
 
                 # Edge Case: Skip if file is not a .md file.
                 if re_mkdn.search(file):
-                    metadata = parse_metadata(file_path)
+                    metadata = utils.parse_markdown(file_path)
+                    if metadata is None:
+                        print ("\nerror: failed to parse",file_path)
+                        sys.exit(1)
                 elif re_json.search(file):
                     try:
                         with open(file_path) as f:
@@ -210,8 +209,8 @@ def parse_catalog_data_caida(source_dir):
 
                 # If it has no description skip it
                 if "description" not in metadata or re.search("^\s*$", metadata["description"]):
+                    print ("no description: ", file_path)
                     number_skipped_no_description += 1
-                    continue
 
                 # Edge Case: Add CAIDA as organization if missing key.
                 if "organization" not in metadata:
@@ -231,112 +230,7 @@ def parse_catalog_data_caida(source_dir):
                         keys.append(key)
                 for key in keys:
                     del metadata[key]
-
-
-re_section = re.compile("^~~~([^\n]+)")
-def parse_metadata(filename):
-    section = None
-    buffer = {}
-
-    content = None
-    content_name = None
-    re_content = re.compile("^\s*===\s+(.+)\s*===")
-
-    metadata = None
-    re_tool = re.compile("^tool[_-]")
-    tabs = []
-    with open(filename) as file:
-        for line in file:
-            # everything after '=== content ===' is placed inside content unprocessed
-            if content is not None:
-                m = re_content.search(line)
-                if m:
-                    tabs.append({
-                        "name":content_name,
-                        "format":"markdown",
-                        "content":content
-                    })
-                    content_name = m.groups(1)
-                    content = ""
-                content += line
-
-            if section is not None:
-                if "~~~" == line.rstrip():
-                    if "metadata" == section:
-                        try:
-                            metadata = json.loads(buffer)
-                            metadata["filename"] = filename
-                        except json.decoder.JSONDecodeError as e:
-                            print (buffer)
-                            print ("   json parse error in metadata",filename, e,file=sys.stderr)
-                            return None
-                    elif metadata is None:
-                        print("found section '"+section+"' before '~~~metadata' in",filename, file=sys.stderr)
-                        return None
-                    else:
-                        current = metadata
-                        f = "text"
-                        if re_html.search(section):
-                            f = "html"
-                        elif re_md.search(section):
-                            f = "md"
-
-                        tabs.append({
-                            "name":section,
-                            "format":f,
-                            "content":buffer
-                        })
-                    section = None
-                    buffer = None
-                else:
-                    buffer += line
-            elif "=== content ===" == line.rstrip():
-                if metadata is None:
-                    print("found '=== content ===' before ~~~metadata in",filename, file=sys.stderr)
-                    return None
-                content = ""
-
-            else:
-                m = re_content.search(line)
-                if m: 
-                    content_name = m.group(1)
-                    content = ""
-                else:
-                    m = re_section.search(line)
-                    if m:
-                        parts = m.group(1).split("~")
-                        buffer = ""
-                        if len(parts) > 0:
-                            section = parts[0]
-                            if section == "files":
-                                if len(parts) > 1:
-                                    section = parts[1]
-                                else:
-                                    section = None
-
-        if content is not None:
-        #if content is not None and re_not_white_space.search(content):
-            #if (re_tab_content.search(content)):
-                #f = "html"
-            #else:
-                #f = "markdown"
-            tabs.append({
-                "name":"content",
-                "format": "markdown",
-                "content":content
-            })
-
-        tabs_clean = []
-        for tab in tabs:
-            if re_not_white_space.search(tab["content"]):
-                tabs_clean.append(tab)
-
-        if len(tabs_clean) > 0:
-            if "tabs" not in metadata:
-                metadata["tabs"] = tabs_clean
-            else:
-                metadata["tabs"].extend(tabs_clean)
-    return metadata
+    print ("   num. skipped:", number_skipped_no_description)
 
 
 # Print all found datasets to individual JSON objects.
