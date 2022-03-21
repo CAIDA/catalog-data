@@ -896,9 +896,13 @@ def recipe_process(path):
                                     tab_content = line
                                 else:
                                     tab_content += line
+                            if extention == "md":
+                                f = "md"
+                            else:
+                                f = "text"
                             tabs.append({
                                 "name":fname,
-                                "format":"text",
+                                "format":f,
                                 "content":tab_content
                             })
             if len(tabs) > 0 and info is not None:
