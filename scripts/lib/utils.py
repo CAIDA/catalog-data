@@ -168,35 +168,39 @@ def parse_markdown(filename):
     return metadata
 
 def section_process(metadata, ender, name, buffer):
-        if name[:5] == "tabs"+ender[0]:
-            if "tabs" not in metadata:
-                metadata["tabs"] = []
+    if name[:5] == "tabs"+ender[0]:
+        if "tabs" not in metadata:
+            metadata["tabs"] = []
 
+        f = "text"
+        if ender[0] == "=":
+            f = "md"
+        elif ender[0] == "~":
             f = "text"
-            if re_html.search(buffer):
-                f = "html"
-            elif re_md.search(buffer):
-                f = "md"
-            metadata["tabs"].append({
-                "name":name[5:],
-                "format":f,
-                "content":buffer
-            })
-        else:
-            current = metadata
-            parts = name.split(ender[0])
-            i = 0
-            while i < len(parts)-1:
-                if parts[i] not in current:
-                    current[parts[i]] = {}
-                current = current[parts[i]]
-                i += 1
-            name = parts[-1]
-            if name in current:
-                value = current[name]
-                if type(value) == "list":
-                    value.append(buffer)
-                else:
-                    current[name] = [value, buffer]
+        elif re_html.search(buffer):
+            f = "html"
+        elif re_md.search(buffer):
+            f = "md"
+        metadata["tabs"].append({
+            "name":name[5:],
+            "format":f,
+            "content":buffer
+        })
+    else:
+        current = metadata
+        parts = name.split(ender[0])
+        i = 0
+        while i < len(parts)-1:
+            if parts[i] not in current:
+                current[parts[i]] = {}
+            current = current[parts[i]]
+            i += 1
+        name = parts[-1]
+        if name in current:
+            value = current[name]
+            if type(value) == "list":
+                value.append(buffer)
             else:
-                current[name] = buffer
+                current[name] = [value, buffer]
+        else:
+            current[name] = buffer
