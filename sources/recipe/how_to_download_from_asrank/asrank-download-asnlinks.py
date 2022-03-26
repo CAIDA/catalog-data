@@ -1,110 +1,145 @@
-#!  /usr/bin/env perl
-# written 2018
-# Bradley Huffaker <bhuffaker@ucsd.edu>
-use strict;
-use warnings;
-use Getopt::Std;
-use FindBin qw($Bin);
-use lib "$Bin/lib";
-use JSON;
-use Data::Dumper;
-use Utils;
+#!  /usr/bin/env python3
+__author__ = "Bradley Huffaker"
+__email__ = "<bradley@caida.org>"
+# This software is Copyright (C) 2020 The Regents of the University of
+# California. All Rights Reserved. Permission to copy, modify, and
+# distribute this software and its documentation for educational, research
+# and non-profit purposes, without fee, and without a written agreement is
+# hereby granted, provided that the above copyright notice, this paragraph
+# and the following three paragraphs appear in all copies. Permission to
+# make commercial use of this software may be obtained by contacting:
+#
+# Office of Innovation and Commercialization
+#
+# 9500 Gilman Drive, Mail Code 0910
+#
+# University of California
+#
+# La Jolla, CA 92093-0910
+#
+# (858) 534-5815
+#
+# invent@ucsd.edu
+#
+# This software program and documentation are copyrighted by The Regents of
+# the University of California. The software program and documentation are
+# supplied â€œas isâ€, without any accompanying services from The Regents. The
+# Regents does not warrant that the operation of the program will be
+# uninterrupted or error-free. The end-user understands that the program
+# was developed for research purposes and is advised not to rely
+# exclusively on the program for any reason.
+#
+# IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR
+# DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+# INCLUDING LOST PR OFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+# DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF
+# THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
+# DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+# SOFTWARE PROVIDED HEREUNDER IS ON AN â€œAS ISâ€ BASIS, AND THE UNIVERSITY OF
+# CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+# ENHANCEMENTS, OR MODIFICATIONS.
+#
+import re
+import argparse
+import sys
+import json
+import requests
+import time
 
-use LWP::UserAgent;
-use HTTP::Request;
-my $user_agent = LWP::UserAgent->new(timeout=>10);
+URL = "https://api.asrank.caida.org/v2/graphql"
 
-my ($exe) = ($0 =~ /([^\/]+)$/);
-my $usage = "usage:$exe [-h] config";
+#method to print how to run script
+def print_help():
+    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
+    
+######################################################################
+## Parameters
+######################################################################
+parser = argparse.ArgumentParser()
+parser.add_argument("-v", dest="verbose", help="prints out lots of messages", action="store_true")
+parser.add_argument("-d", dest="debug_limit", help="print only the first debug_limit", type=int)
+parser.add_argument("-f", dest="asns_file", help="loads asn from file", type=str)
+parser.add_argument("asns",nargs="*", type=str,help="ASNs we are looking up")
+args = parser.parse_args()
 
-my %opts;
-if ((!getopts("",\%opts) || $#ARGV != 0) && !defined $opts{h}) {
-    print STDERR $usage,"\n";
-    print STDERR "load the links and compare with url";
-    exit -1;
-}
-if (defined $opts{h}) {
-    Help();
-    exit;
-}
+######################################################################
+## Main code
+######################################################################
+def main():
+    #if args.asn is None:
+    #    parser.print_help()
+    #    sys.exit()
+    hasNextPage = True
 
-my $config_file = $ARGV[0];
-my $url = $ARGV[1];
-my %asn;
-my @files;
-my ($org_date, $org_url, $org_file) = ParseConfig($config_file, qw(asn_org_date asn_org_url asn_org_file));
+    first = 10
+    offset = 0
+    start = time.time()
+    asns = set()
+    for asn in args.asns:
+        asns.add(asn)
+    if args.asns_file:
+        with open(args.asns_file) as fin:
+            for asn in fin:
+                asns.add(asn.rstrip())
 
-my %type_objects;
-Download();
-PrintFile($org_file);
+    while hasNextPage:
+        query = AsnLinksQuery(first, offset, asns)
+        request = requests.post(URL,json={'query':query})
+        if request.status_code != 200:
+            print ("Query failed to run returned code of %d " % (request.status_code))
 
-sub Download {
-    foreach my $type ("asns","orgs") {
-        my $hasNextPage = 1;
-        my $first = 5000;
-        my $offset = 0;
-        while ($hasNextPage) {
-            my $url = "$org_url/$type/?dateStart=$org_date&dateEnd=$org_date&offset=$offset&first=$first";
-            #print ("url:$url\n");
-            my $req = HTTP::Request->new(GET => $url);
-            my $res= $user_agent->request($req);
-            if ($res->is_success) {
-                my $info = decode_json($res->content);
-                #print (Dumper($info));
-                $hasNextPage = $info->{pageInfo}{hasNextPage};
-                $first= $info->{pageInfo}{first};
-                $offset = $info->{"pageInfo"}{offset} + $first;
-                print ("$type $offset $info->{totalCount}\n");
-                #print ("$type total:$info->{totalCount} offset:$pageOffset page:$info->{pageInfo}{pageSize}\n");
-                if ($info->{"data"}) {
-                    foreach my $object (@{$info->{"data"}}) {
-                        if (defined $object->{orgId} and $object->{orgId} ne "null") {
-                            #print ("$type $object->{orgName}\n");
-                            push @{$type_objects{$type}}, $object;
-                        }
-                    }
+        data = request.json()
+        if not ("data" in data and "asnLinks" in data["data"]):
+            print ("Failed to parse:",data,file=sys.stderr)
+            sys.exit()
+
+        data = data["data"]["asnLinks"]
+        for node in data["edges"]:
+            print (json.dumps(node["node"]))
+
+        hasNextPage = data["pageInfo"]["hasNextPage"]
+        offset += len(data["edges"])
+
+        if args.verbose:
+            print ("    ",offset,"of",data["totalCount"], " ",time.time()-start,"(sec)",file=sys.stderr)
+            start = time.time()
+
+        if args.debug_limit and args.debug_limit < offset:
+            hasNextPage = False
+
+######################################################################
+## Queries
+######################################################################
+
+def AsnLinksQuery(first,second, asns): 
+    asns_string = '"'+"\",\"".join(asns)+'"'
+    return """{
+    asnLinks(first:%s, offset:%s, asns:[%s]) {
+        totalCount
+        pageInfo {
+            first
+            hasNextPage
+        }
+        edges {
+            node {
+                relationship
+                asn0 {
+                    asn
+                   organization {
+                    orgName
+                  }
                 }
-                #print (Dumper($info->{pageInfo}));
-            } else {
-                print $res->status_line, "\n";
-                $hasNextPage = 0;
+                asn1 {
+                    asn
+                  organization {
+                    orgName
+                  }
+                }
+                numberPaths
             }
         }
     }
-}
-
-sub PrintFile {
-    my ($filename) = @_;
-    print ("writing $filename\n");
-    open(OUT, ">$filename") || die("Unable to open $filename:$!");
-    print OUT ("# exe:$exe $ARGV[0]\n");
-    foreach my $type_keys (
-        [qw(orgs org_id changed org_name country source)],
-        [qw(asns aut changed aut_name org_id opaque_id source)]) {
-        my ($type, @keys) = @{$type_keys};
-        my $keys_string = join("|",@keys);
-        print OUT ("# format:$keys_string\n");
-        foreach my $object (@{$type_objects{$type}}) {
-            print OUT (encode_json($object)."\n");
-=cut
-            if ($type eq "orgs" || ($type eq "asns" && defined $object->{"org"} && $object->{"org"} ne "null")) {
-                my @values;
-                foreach my $key (@keys) {
-                    my $k = $key;
-                    $k = $key_key{$type}{$key} if ($key_key{$type}{$key});
-                    my $v = "";
-                    if ($k eq "changed" and $object->{$k}) {
-                        my ($year,$mon,$day) = ($object->{$k} =~ /(\d\d\d\d)-(\d\d)-(\d\d)/);
-                        $v = "$year$mon$day";
-                    } else {
-                        $v = $object->{$k} if ($object->{$k});
-                    }
-                    push @values, $v;
-                }
-                print OUT (join("|",@values),"\n");
-            }
-=cut
-        }
-    }
-    close OUT;
-}
+}""" % (str(first), str(second), asns_string)
+#run the main method
+main()
