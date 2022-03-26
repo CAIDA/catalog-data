@@ -1,7 +1,7 @@
 #!  /usr/bin/env python3
 __author__ = "Bradley Huffaker"
 __email__ = "<bradley@caida.org>"
-# This software is Copyright (C) 2020 The Regents of the University of
+# This software is Copyright (C) 2022 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
 # and non-profit purposes, without fee, and without a written agreement is
