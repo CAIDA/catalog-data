@@ -1,7 +1,7 @@
 #!  /usr/bin/env python3
 __author__ = "Bradley Huffaker"
 __email__ = "<bradley@caida.org>"
-# This software is Copyright (C) 2020 The Regents of the University of
+# This software is Copyright (C) 2022 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
 # and non-profit purposes, without fee, and without a written agreement is
@@ -82,6 +82,12 @@ def main():
         with open(args.asns_file) as fin:
             for asn in fin:
                 asns.add(asn.rstrip())
+    if len(asns) < 1:
+        parser.print_help()
+        print ("You must provide at least one ASN:")
+        print ("    ",sys.argv[0], "-f asn_file")
+        print ("    ",sys.argv[0], "195")
+        sys.exit()
 
     while hasNextPage:
         query = AsnLinksQuery(first, offset, asns)
