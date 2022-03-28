@@ -50,7 +50,7 @@
     "name":"2010-PAM-AS-ANNOTATIONS",
     "filename":"sources/dataset/2010_pam_as_annotations___caida.json",
     "organization":"CAIDA",
-    "description":"Data supplement for paper   B. Huffaker, A. Dhamdhere, M. Fomenkov, and k. claffy,   \"Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers\",   in Passive and Active Network Measurement Workshop (PAM), Apr 2010.  This data supplement was available as part of the restricted Ark topology data (until 1-Feb 2014??). After that is was made public. Here all downloads are lumped together into a single 'public' count. ",
+    "description":"Data supplement for paper   B. Huffaker, A. Dhamdhere, M. Fomenkov, and k. claffy,   \"Toward Topology Dualism: Improving the Accuracy of AS Annotations for Routers\",   in Passive and Active Network Measurement Workshop (PAM), Apr 2010.  This data supplement was available as part of the restricted Ark topology data (until 1-Feb 2014). After that is was made public. Here all downloads are lumped together into a single 'public' count. ",
     "status":"snapshot",
     "tabs":[{"name": "README.txt", "format": "text", "content": "The following datasets constitute the dual-graph representation of the Internet\nusing data collected in October 2009:\n\nnodes.20091006.gz ( node dataset)\nis the set of routers inferred by kapar. For each router, the node dataset\ncontains the set of interfaces that were inferred as being on that router.\n\nFile format:\n  node <node_id>:   <i1 >   <i2 >   ...   <in>\nindicates that kapar inferred the node with id node_id to have the n interfaces \ni1 to in\n\nlinks.20091006.gz ( link dataset)\ncontains, for each link, the set of routers and router interfaces that kapar inferred\nas sharing that link.\n\nFile format:\n  link <link_id>:   <N1>:i1 <N2 >:i2 [<N3 >:[i3]]   ...   [<Nm>:[im]]\nindicates that kapar found a link link_id connecting nodes N1 to Nm . Note that\nkapar always determines at least two nodes and the associated interfaces for\neach link. There may, however, be additional nodes on the same link due to\nthe presence of LANs or clouds with multiple attached interfaces.\n\nBy joining the node and link datasets, one can obtain for each router a set of\nknown interfaces and inferred interfaces. Known interfaces were measured directly\nand are in the node dataset; Inferred interfaces result from entries in the\nlink dataset that indicate that router r1 has a link to interface i2 on router r2,\nbut we did not see an actual interface on router r1 . The interfaces on an IP\nlink are typically assigned IP addresses from the same prefix, so we assume\nthat router r1 must have an inferred interface from the same prefix as i2.\n\nprefix2as.20091006.gz ( IP-to-AS)\ncontains the list of IP prefix to origin AS found in the BGP dumps.\n\nFile format:\n  <prefix>   <length>   <origin AS>\nWhen multiple ASes were found as the origin of the same prefix, they are\nconcatenated with an underscore.\n\nnodes.as.20091006.gz ( AS assignment dataset)\ncontains, for each router found in the node dataset, the AS that is\nthe inferred owner of that router according to to our final\nElection+Degree assignment heuristic.\n\nFile format:\n  <node_id>   <AS>   <method>\n\nas-assignment.tgz ( AS assignment code)\ncontains the code to generate the AS assignment dataset.\n\nas-rel.a0.01000.20091020.gz ( AS relationship dataset)\ncontains the business relationship associated with each link in the BGP data,\ncomputed (see above) using the AS relationships algorithm by\nDimitropolous, et al.\n\nFile format:\n  <AS1 >   <AS2 >   <rel>\n\nwhere\n  rel is -1 if AS1 is a customer of AS2\n  rel is  1 if AS1 is a provider of AS2 \n  rel is  0 if AS1 is a peer of AS2 \n  rel is  2 if AS1 is a sibling of AS2\n\n"}],
     "dateStart":"2010-01-01",
@@ -2302,6 +2302,17 @@
     "description":"NeTraMet is an open-source (GPL) implementation of the RTFM architecture for Network Traffic Flow Measurement, developed and supported by Nevil Brownlee at the University of Auckland. Nevil also developed a version of NeTraMet which uses the CoralReef library to read packet headers. This 'CoralCoralReef NeTraMet meter' can work with any CoralReef data source; it has been tested on both CAIDA and NLANR trace files, and on DAG and Apptel ATM interface cards.",
     "tags":["caida", "measurement", "measurement analysis", "workload"],
     "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 2"]
+  },
+  {
+    "id":"software:orbis",
+    "name":"Orbis",
+    "filename":"sources/software/orbis___caida.json",
+    "organization":"CAIDA",
+    "description":"Orbis is a tool for generating network topologies.",
+    "status":"ongoing",
+    "dateStart":"2008-01-01",
+    "tags":["caida", "tool", "topology"],
+    "licenses":["license:BSD-4-Clause-UC"]
   },
   {
     "id":"software:otter",
