@@ -82,6 +82,12 @@ def main():
         with open(args.asns_file) as fin:
             for asn in fin:
                 asns.add(asn.rstrip())
+    if len(asns) < 1:
+        parser.print_help()
+        print ("You must provide at least one ASN:")
+        print ("    ",sys.argv[0], "-f asn_file")
+        print ("    ",sys.argv[0], "195")
+        sys.exit()
 
     while hasNextPage:
         query = AsnLinksQuery(first, offset, asns)
