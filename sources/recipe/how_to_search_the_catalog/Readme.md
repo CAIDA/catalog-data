@@ -33,9 +33,9 @@ A search query can be generated from a search string by splitting the string int
 
 | token type | objects it searches for | examples |
 |------|------------|---------|
-| **key=value(s)** | one or more values in the key  | `types=paper`, `types=dataset,recipe` | 
-| **id** , !**id**      `(type):(shortName)`  | a specific object id | `dataset:as_rank_online` , `!tag:asn` | 
-| **word** , !**word**     | general word or phrase  | `ipv6` , `!topology` |
+| **key=value(s)** | one or more values in the key  | `types=paper` <br> `types=dataset,recipe` | 
+| **id** , !**id**      `(type):(shortName)`  | a specific object id | `dataset:as_rank_online` <br> `!tag:asn` | 
+| **word** , !**word**     | general word or phrase  | `ipv6` <br> `!topology` |
 
     
 - **key=value(s) pairs** 
@@ -44,8 +44,8 @@ A search query can be generated from a search string by splitting the string int
 
      |   key    |    value     | 
      |----------|--------------|
-     |   types  |  comma separated list of object types <br>  `types=dataset` <br> `types=media,recipe`  | 
-     |   persons | comma separated list of strings matching part of a person's names <br> `persons=john` will returns all objects associated with a person matching `john` in their name  |  
+     |   types  |  comma separated list of available object types (dataset, paper, media, recipe, software) <br>  `types=dataset` <br> `types=media,recipe` | 
+     |   persons | comma separated list of strings matching part of a person's names <br> `persons=john` (returns all objects associated with a person matching `john` in their name)  |  
      |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03`) |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
@@ -59,11 +59,11 @@ A search query can be generated from a search string by splitting the string int
 
    For example, the dataset "Bogon files from Cymru"'s short name is "bogon_cymru_dumps" so its id is `dataset:bogon-cymru-dumps`. 
 
-   People (e.g. paper authors or media presenters) are of type `person` with shortName of the format `(lastname)__(firstname)`.  For example, objects associated with David Moore can be looked up with the id `person:moore__david`
+   People (e.g. paper authors or media presenters) are of type `person` with `shortName` of the format `(lastname)__(firstname)`.  For example, objects linked to  David Moore can be matched with the id `person:moore__david`
 
     - **!id** 
 
-       A **!** in front of the id, reverse its meaning and removes objects from the matching set if it is linked to the object.
+       An exclamation point **!** in front of the id, reverse its meaning and removes objects from the matching set if it is linked to the object.
 
 - **word**
 
@@ -72,7 +72,7 @@ A search query can be generated from a search string by splitting the string int
 
     - **!word**
 
-       A **!** in front of the word, reverse it's meaning and removes objects from the matching set if the word is found in a field.
+       An exclamation point **!** in front of the word, reverse it's meaning and removes objects from the matching set if the word is found in a field.
 
 ### example search strings
 Remember, the whitespace-delimited tokens are processed as a boolean "and" operator, but the comma-delimited values in a key=value pair are processed as a boolean "or" operator.
