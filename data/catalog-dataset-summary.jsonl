@@ -1,0 +1,17 @@
+{"fileset": "as-relationships-serial-1", "dateStart": "19980101", "dateEnd": "20220301", "status": "ongoing", "filename": "anchor/.as-relationships-serial-1.FILESET"}
+{"fileset": "ddos-attack-2007", "dateStart": "20070804", "dateEnd": "20070804", "status": "complete", "filename": "anchor/.ddos-attack-2007.FILESET"}
+{"fileset": "passive-2016-pcap", "dateStart": "20160121", "dateEnd": "20160406", "status": "complete", "filename": "anchor/.passive-2016-pcap.FILESET"}
+{"fileset": "ark-ipv4-traceroute", "dateStart": "20220329", "dateEnd": "20180830", "status": "ongoing", "filename": "anchor/.ark-ipv4-traceroute.FILESET"}
+{"fileset": "ark-ipv4-dns-names", "dateStart": "20080301", "dateEnd": "20220329", "status": "ongoing", "filename": "anchor/.ark-ipv4-dns-names.FILESET"}
+{"fileset": "ark-ipv4-prefix-probing", "dateStart": "20151209", "dateEnd": "20151231", "status": "ongoing", "filename": "anchor/.ark-ipv4-prefix-probing.FILESET"}
+{"fileset": "ark-ipv4-tnt", "dateStart": "20180925", "dateEnd": "20181231", "status": "ongoing", "filename": "anchor/.ark-ipv4-tnt.FILESET"}
+{"fileset": "ark-ipv6-aslinks", "dateStart": "20081212", "dateEnd": "20220328", "status": "ongoing", "filename": "anchor/.ark-ipv6-aslinks.FILESET"}
+{"fileset": "ark-ipv6-dns-names", "dateStart": "20140530", "dateEnd": "20220329", "status": "ongoing", "filename": "anchor/.ark-ipv6-dns-names.FILESET"}
+{"fileset": "ark-ipv6-traceroute", "dateStart": "20081212", "dateEnd": "20220329", "status": "ongoing", "filename": "anchor/.ark-ipv6-traceroute.FILESET"}
+{"fileset": "as-classification", "dateStart": "20150801", "dateEnd": "20220301", "status": "ongoing", "filename": "anchor/.as-classification.FILESET"}
+{"fileset": "as-organizations", "dateStart": "20040407", "dateEnd": "20220101", "status": "ongoing", "filename": "anchor/.as-organizations.FILESET"}
+{"fileset": "as-relationships-geo", "dateStart": "201603", "dateEnd": "201603", "status": "ongoing", "filename": "anchor/.as-relationships-geo.FILESET"}
+{"fileset": "as-relationships-serial-2", "dateStart": "20151201", "dateEnd": "20220301", "status": "ongoing", "filename": "anchor/.as-relationships-serial-2.FILESET"}
+{"fileset": "icann-czds", "dateStart": "20130524", "dateEnd": "20220329", "status": "ongoing", "filename": "anchor/.icann-czds.FILESET"}
+{"fileset": "ripe-atlas-dumps", "dateStart": "20200205", "dateEnd": "20220329", "status": "ongoing", "filename": "anchor/.ripe-atlas-dumps.FILESET"}
+{"fileset": "whois-database-dumps", "dateStart": "20030701", "dateEnd": "20220101", "status": "ongoing", "filename": "anchor/.whois-database-dumps.FILESET"}

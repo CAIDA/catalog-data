@@ -330,6 +330,8 @@ def main():
                 word_scoring_link(w_s0, w_s1)
                 word_scoring_link(w_s1, w_s0)
     # Add in alternative plural/singlar
+
+    print ("adding plural")
     word_add_plurals()
         
     word_id_score = {}
