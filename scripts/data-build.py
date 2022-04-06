@@ -1213,6 +1213,6 @@ def data_load_from_summary(filename):
                         else:
                             obj[key] = metadata[key]
             else:
-                error_add(filename, "no matching id for ", dataset_id)
+                error_add(filename, "no matching id for {}".format(dataset_id))
 
 main()
