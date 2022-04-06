@@ -440,12 +440,12 @@ def id_date_load(filename):
 def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
 
-    for key in ["dateCreated","dateLastUpdated"]:
+    for key in ["dateCreated","dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
             if not re_placeholder.search(obj["filename"]):
-                if key == "dateCreated":
+                if key == "dateCreated" or key == "dateObjectCreated":
                     cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
                 else:
                     cmd = "git log --format=%aD -1 -- "
