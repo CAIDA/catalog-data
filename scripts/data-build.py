@@ -447,12 +447,25 @@ def id_date_load(filename):
 def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
 
-    for key in ["dateCreated","dateLastUpdated"]:
+    if obj["__typename"] == "venue":
+        if "dates" in obj:
+            for date_url in obj["dates"]:
+                if "date" not in obj or obj["date"] < date_url["date"]:
+                    obj["date"] = date_url["date"]
+    else:
+        for key, value in obj.items():
+            if key[:4] == "date" and type(value) == str:
+                if obj[key].lower() == "ongoing":
+                    obj[key] = today
+                else:
+                    obj[key] = utils.date_parse(obj[key])
+
+    for key in ["dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
             if not re_placeholder.search(obj["filename"]):
-                if key == "dateCreated":
+                if key == "dateCreated" or key == "dateObjectCreated":
                     cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
                 else:
                     cmd = "git log --format=%aD -1 -- "
@@ -480,32 +493,36 @@ def object_date_add(obj):
                 else:
                     print ("    missing venue:",person_venue["venue"])
     else:
-        for type_key in [["Dataset","dateStart"], ["Paper","datePublished"]]:
-            type_,key = type_key
-            if obj["__typename"] == type_ and key in obj:
-                date = utils.date_parse(obj[key])
-                if date:
-                    obj["date"] = date
-                    obj[key] = date
-    key = "dateEnd"
-    if key in obj:
-        if obj[key].lower() == "ongoing":
-            obj[key] = obj["date"] = today
-        else:
-            date = utils.date_parse(obj[key])
-            if date:
-                obj[key] = date
-
-    if obj["__typename"] == "Dataset":
-        if "dateStart" in obj:
-            obj["date"] = obj["dateStart"]
-        else:
-            warning_add(obj["filename"],"dataset requires dateStart")
-            obj.pop("date",None)
-    else:
         if "date" not in obj:
-            obj["date"] = obj["dateLastUpdated"]
-        obj["date"] = utils.date_parse(obj["date"])
+            obj["date"] = None
+        type_key = {
+            "Dataset":["dateEnd", "dateStart"], 
+            "Paper":["datePublished"],
+            "Software":["dateCreated","dateModified"],
+            "Recipe":["dateObjectModified","dateObjectCreate"],
+            "Tag":["dateObjectModified","dateObjectCreate"]
+        }
+        type_ = obj["__typename"]
+        if type_ in type_key:
+            for key in type_key[type_]:
+                if key in obj:
+                    obj["date"] = obj[key]
+                    break
+
+    for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
+        if dst not in obj:
+            obj[dst] = obj[src]
+
+    #if obj["__typename"] == "Dataset":
+        #if "dateStart" in obj:
+            #obj["date"] = obj["dateStart"]
+        #else:
+            #warning_add(obj["filename"],"dataset requires dateStart")
+            #obj.pop("date",None)
+    #else:
+        #if "date" not in obj:
+            #obj["date"] = obj["dateLastUpdated"]
+        #obj["date"] = utils.date_parse(obj["date"])
 
 ###########################
 
