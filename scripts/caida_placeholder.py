@@ -240,9 +240,13 @@ def print_datasets():
 
     # Iterate over each file and make individual JSON objects.
     for type_id,obj in id_2_object.items():
-        # Edge Case: Update path based which software or dataset.
         type_,id_ = type_id.split(":")
-        filename = "sources/%s/%s___caida.json" % (type_, id_)
+
+        type_dir = "sources/%s" % (type_)
+        if not os.path.isdir(type_dir):
+            os.mkdir(type_dir)
+        # Edge Case: Update path based which software or dataset.
+        filename = "%s/%s___caida.json" % (type_dir, id_)
         obj["filename"] = filename
 
         # Write the JSON object to the file.

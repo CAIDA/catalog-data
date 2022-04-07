@@ -1849,6 +1849,52 @@
     "licenses":["license:BSD-4-Clause-UC", "license:caida_public_aua"]
   },
   {
+    "id":"group:archipelago",
+    "name":"Archipelago (Ark) Measurement Infrastructure",
+    "filename":"sources/group/archipelago___caida.json",
+    "organization":"CAIDA",
+    "description":"CAIDA deploys and maintains a globally distributed measurement platform we call Archipelago (Ark). We grow the infrastructure by distributing hardware measurement nodes (2nd gen. Raspberry Pi) with as much geographical and topological diversity as we can to improve our view of the global Internet. Our primary goals with the Ark infrastructure are to:\n- reduce the effort needed to develop and deploy sophisticated large-scale measurements, and\n- provide a step toward a community-oriented measurement infrastructure by allowing collaborators to run their vetted measurement tasks on a security-hardened distributed platform.",
+    "tags":["caida", "ipv4", "ipv6", "software/tools", "topology"],
+    "resources": [
+       {
+         "name":"webpage",
+         "url":"https://www.caida.org/projects/ark/",
+         "tags":[]
+       }
+   ]
+  },
+  {
+    "id":"group:asrank",
+    "name":"AS Rank",
+    "filename":"sources/group/asrank___caida.json",
+    "organization":"CAIDA",
+    "description":"A Ranking of the Internet's Automous Systems",
+    "tags":["caida", "security", "software/tools", "topology"]
+  },
+  {
+    "id":"group:spoofer",
+    "name":"Spoofer",
+    "filename":"sources/group/spoofer___caida.json",
+    "organization":"CAIDA",
+    "description":"Source address validation measurement project that measures susceptibility to spoofed source address IP packets",
+    "tags":["caida", "security", "spoofer"],
+    "licenses":["license:GNU GENERAL PUBLIC LICENSE Version 3"],
+    "resources": [
+       {
+         "name":"public",
+         "url":"https://www.caida.org/projects/spoofer/",
+         "tags":[]
+       }
+   ]
+  },
+  {
+    "id":"group:telescope",
+    "name":"UCSD Telescope Datasets",
+    "filename":"sources/group/telescope___caida.json",
+    "organization":"CAIDA",
+    "tags":["caida"]
+  },
+  {
     "id":"media:2007_cl_animated_maps",
     "name":"Animated Maps of Two Days of DNS Workload for the .CL Chilean ccTLD",
     "filename":"sources/media/2007_cl_animated_maps___caida.json",
