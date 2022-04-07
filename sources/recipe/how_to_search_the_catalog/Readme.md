@@ -34,7 +34,7 @@ A search query can be generated from a search string by splitting the string int
 | token type | objects it searches for | examples |
 |------|------------|---------|
 | **key=value(s)** | one or more values in the key  | `types=paper` <br> `types=dataset,recipe` | 
-| **id** , !**id**      `(type):(shortName)`  | a specific object id | `dataset:as_rank_online` <br> `!tag:asn` | 
+| **id** , !**id**      `(type):(shortName)`  | related objects of a given id | `dataset:as_rank_online` <br> `!tag:asn` | 
 | **word** , !**word**     | general word or phrase  | `topology` <br> `!ipv4` |
 
     
