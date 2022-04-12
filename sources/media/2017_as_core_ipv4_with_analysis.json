@@ -26,6 +26,7 @@
             "access": "public"
         },
         {
+            "name":"full poster",
             "url": "https://www.caida.org/projects/cartography/as-core/pics/2017/ascore-2017-feb-ipv4-poster-2048x1518.png",
             "tags": [
                 "PNG"
@@ -33,7 +34,7 @@
             "access": "public"
         },
         {
-            "name": "PNG IPv4",
+            "name": "IPv4 core alone",
             "url": "https://www.caida.org/projects/cartography/as-core/pics/2017/ascore-2017-feb-ipv4-standalone-1000x1037.png",
             "tags": [
                 "PNG"
