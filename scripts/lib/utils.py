@@ -174,13 +174,13 @@ def section_process(metadata, ender, name, buffer):
 
         f = "text"
         if ender[0] == "=":
-            f = "md"
+            f = "markdown"
         elif ender[0] == "~":
             f = "text"
         elif re_html.search(buffer):
             f = "html"
         elif re_md.search(buffer):
-            f = "md"
+            f = "markdown"
         metadata["tabs"].append({
             "name":name[5:],
             "format":f,

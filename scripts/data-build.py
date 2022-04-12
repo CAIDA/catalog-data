@@ -923,7 +923,7 @@ def recipe_process(path):
                                 else:
                                     tab_content += line
                             if extention == "md":
-                                f = "md"
+                                f = "markdown"
                             else:
                                 f = "text"
                             tabs.append({
