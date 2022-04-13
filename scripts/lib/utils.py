@@ -7,8 +7,15 @@ import json
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
 def id_create(filename, type_,id_):
-    id_ = unidecode.unidecode(id_)
-
+    # print(type_)
+    #if (type_ == "Person"):
+    #    print("creating id for: ",id_)
+    #id_ = unidecode.unidecode(id_)
+    unidecoded = unidecode.unidecode(id_)
+    #id_ = unidecode.unidecode(id_)
+    if unidecoded != id_:
+        print("utils.py line 17: different", unidecoded, id_)
+        id_ = unidecoded
     if id_ is not None:
         if ":" in id_:
             values = id_.split(":")
@@ -30,6 +37,7 @@ def id_create(filename, type_,id_):
                 names = name.split("__")
             else:
                 names = name.split(",")
+                #print("names", names)
             for i,name in enumerate(names):
                 name = re_id_illegal.sub("_",name)
                 names[i] = re.sub("_+$","",re.sub("^_+","",name))
@@ -52,7 +60,9 @@ def id_create(filename, type_,id_):
 
 person_seen = {}
 person_seen_fname = {}
+## TODO: when person is created, if name containes non-ascii, add alias to include the name ( in array names)
 def person_seen_add(fname,person): 
+    #print("hellooooo", person)
     names = [person]
     if "names" in person:
         for name in person["names"]:

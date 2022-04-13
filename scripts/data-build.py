@@ -47,6 +47,7 @@ import time
 import datetime
 import subprocess
 import lib.utils as utils
+import unidecode
 
 import binascii
 
@@ -192,6 +193,7 @@ def main():
     #######################
     #######################
     seen_id = {}
+    #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname == "solution" or fname == "recipe":
@@ -200,9 +202,14 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
+                print(" # 205: ", filename)
+                #if (path == 'sources/person'):               
+                #    print("filename: ",filename)
                 if re.search("\.json$",filename,re.IGNORECASE):
+                    print(" # 208 print path:", path+"/"+filename)
                     try:
                         info = json.load(open(path+"/"+filename))
+                        print(" # 210 info: ", info)
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
                         id = obj["id"]
@@ -213,7 +220,7 @@ def main():
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
                     except Exception as e:
-                        print ("\nerror",path+"/"+filename)
+                        print ("line 221\nerror",path+"/"+filename)
                         print ("    ",e)
                         sys.exit(1)
         else:
@@ -320,6 +327,7 @@ def main():
     # parse out the words from the fields
     #######################
     print ("adding words")
+    
     for obj in id_object.values():
         word_scoring(obj)
     for id0, id1_link in id_id_link.items():
@@ -549,18 +557,27 @@ def object_add(type_, info):
 
     error = False
     if type_ == "Person":
+        print(" data-build line 557: adding person in obj add")
+        # here
         person_add_names(info)
 
     if "name" in info:
         info["__typename"] = type_.title()
         if "id" not in info:
+            old_name = info["name"]
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["name"])
         else:
+            old_name = info["id"]
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
     else:
+        print("error line 570")
         error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
     
+    ## If there is a special character in the id
+    unidecode_id = unidecode.unidecode(old_name)
+    #if (unidecode_id != info["id"]):
+    #    print("different", unidecode_id)
     if type_ == "paper":
         if "datePublished"  in info:
             info["date"] = info["datePublished"]
@@ -577,6 +594,7 @@ def object_add(type_, info):
 
     if not error:
         id_object[info["id"]] = info
+        #print(info)
         return info
     return None
 
@@ -712,6 +730,7 @@ def person_lookup_id(filename, id_):
             "id":id_, 
             "filename":obj["filename"] 
         }
+        print(" data-build, line 729: object_add")
         person = object_add("Person", person_add_names(person))
     return person
 
@@ -787,7 +806,7 @@ def tag_convert(filename, obj,padding=""):
     return obj
 
 def personName_add(obj, person_id):
-    #print (json.dumps(obj))
+    #print (person_id)
     names = person_id.split(":")[1].split("__")
     if len(names) == 2:
         first_name, last_name = names
@@ -800,6 +819,7 @@ def personName_add(obj, person_id):
         if name not in personName_ids:
             personName_ids[name] = set()
         personName_ids[name].add(i)
+    #print("person name id", personName_ids)
 
 def link_add(obj,info,p=False):
 
@@ -923,7 +943,7 @@ def recipe_process(path):
                                 else:
                                     tab_content += line
                             if extention == "md":
-                                f = "markdown"
+                                f = "md"
                             else:
                                 f = "text"
                             tabs.append({
@@ -983,10 +1003,14 @@ def get_url():
 #############################
 
 def person_add_names(person):
+    #print(person)
+    person_old = person
+    
     if "name" in person and ", " in person["name"]:
         names = person["name"].split(", ")
         person["nameLast"] = names[0]
         person["nameFirst"] = names[1]
+        # print("person changed?", person)
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
@@ -996,12 +1020,32 @@ def person_add_names(person):
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    unidecoded_person = unidecode.unidecode(person["name"])
+    
+    if unidecoded_person != person["name"]:
+        print("  # 1020: data-build.py,  not the same", unidecoded_person, person["name"])
+        ## add non-unidecoded name in names array
+        utf8_names = { 'first': person["nameFirst"], 'last': person['nameLast'] }
+        #print("utf-8 na,es", utf8_names)
+        ## TODO ?
+        ## If person has names
+        '''
+        '''
+        if 'names' in person:
+            person['names'] = person['names'].extend(utf8_names)
+        else:
+            person['names'] = [utf8_names]
+            
+        print("  # names: ", person['names'])
+        
+        
     for key in ["nameFirst","nameLast"]:
         if key not in person or person[key] is None:
             person[key] = ""
             print ("failed to find",key,person)
-    #print (person["id"])
+
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
+    
     return True
 
 
@@ -1018,7 +1062,8 @@ def object_checker(obj):
 
 #############################
 
-
+## TODO: Searches through the alias if there is a person (get ascii and non ascii )
+## Could also check for aliases // add alias to dictionary here 
 def word_scoring(obj, recursive=False):
     global singlar_plural
     word_score = {}
@@ -1040,7 +1085,8 @@ def word_scoring(obj, recursive=False):
                 weight = SCORE_WEIGHT["other"]
 
             for word_original, freq in word_freq.items():
-                for word in [word_original, Lem.lemmatize(word_original)]:
+                ## TODO Add additional word, additional to LEM, add UNIDECODED version 
+                for word in [word_original, Lem.lemmatize(word_original),unidecode.unidecode(word_original)]:
                     if word not in word_score:
                         word_score[word] = weight
                     else:
