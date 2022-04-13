@@ -202,14 +202,11 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                print(" # 205: ", filename)
                 #if (path == 'sources/person'):               
                 #    print("filename: ",filename)
                 if re.search("\.json$",filename,re.IGNORECASE):
-                    print(" # 208 print path:", path+"/"+filename)
                     try:
                         info = json.load(open(path+"/"+filename))
-                        print(" # 210 info: ", info)
                         info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
                         id = obj["id"]
@@ -220,7 +217,7 @@ def main():
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
                     except Exception as e:
-                        print ("line 221\nerror",path+"/"+filename)
+                        print ("\nerror",path+"/"+filename)
                         print ("    ",e)
                         sys.exit(1)
         else:
@@ -271,10 +268,13 @@ def main():
     }
 
     id_failed = []
+    # Loop through the names in the id_object json file 
     for id_,obj in id_object.items():
         type_ = obj["__typename"]
         if type_ in type_checker:
+            ## I think it is here where the object gets person add names again
             type_checker[type_](obj)
+            
             #if message is not None:
             #    id_failed.append({"id":id_,"message":message})
                 
@@ -445,6 +445,7 @@ mon_index={"jan":"01","feb":"02","mar":"03","apr":"04","may":"05","jun":"06"
 
 id_date = {}
 def id_date_load(filename):
+    
     global id_date
     if os.path.exists(filename):
         try:
@@ -453,6 +454,8 @@ def id_date_load(filename):
             error_add(filename, e.__str__())
 
 def object_date_add(obj):
+    # if (obj["id"] == "person:kecic__zarko"):
+        # print("   * obj in date add:" ,obj)
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "venue":
@@ -520,7 +523,8 @@ def object_date_add(obj):
     for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
         if dst not in obj:
             obj[dst] = obj[src]
-
+    if (obj["id"] == "person:kecic__zarko"):
+        print("end of date def ")
     #if obj["__typename"] == "Dataset":
         #if "dateStart" in obj:
             #obj["date"] = obj["dateStart"]
@@ -557,27 +561,18 @@ def object_add(type_, info):
 
     error = False
     if type_ == "Person":
-        print(" data-build line 557: adding person in obj add")
-        # here
         person_add_names(info)
 
     if "name" in info:
         info["__typename"] = type_.title()
         if "id" not in info:
-            old_name = info["name"]
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["name"])
         else:
-            old_name = info["id"]
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
     else:
-        print("error line 570")
         error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
     
-    ## If there is a special character in the id
-    unidecode_id = unidecode.unidecode(old_name)
-    #if (unidecode_id != info["id"]):
-    #    print("different", unidecode_id)
     if type_ == "paper":
         if "datePublished"  in info:
             info["date"] = info["datePublished"]
@@ -590,11 +585,10 @@ def object_add(type_, info):
             date,id_short = m.groups()
             id_paper[id_short] = info
         else:
-            info["id"] = utils.id_create(filename, info["__typename"],info["id"])
+            info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
 
     if not error:
         id_object[info["id"]] = info
-        #print(info)
         return info
     return None
 
@@ -676,7 +670,7 @@ def object_finish(obj):
                                     if caida:
                                         if "tags" not in person:
                                             person["tags"] = ["caida"]
-                                        else:
+                                        elif "caida" not in person["tags"]:
                                             person["tags"].append("caida")
                                     person_org[k] = person["id"]
                                 else:
@@ -770,6 +764,7 @@ def object_lookup(info):
     type_ = info["__typename"] = info["__typename"].lower()
     info["__typename"] = type_.title()
     if "id" not in info:
+        print("no id in info, : ", info)
         if "name" in info and "__typename" in info:
             id_ = utils.id_create(info["__typename"],info["name"])
             info["id"] = id_
@@ -1003,14 +998,11 @@ def get_url():
 #############################
 
 def person_add_names(person):
-    #print(person)
-    person_old = person
-    
     if "name" in person and ", " in person["name"]:
         names = person["name"].split(", ")
         person["nameLast"] = names[0]
         person["nameFirst"] = names[1]
-        # print("person changed?", person)
+
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
@@ -1020,22 +1012,25 @@ def person_add_names(person):
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
-    unidecoded_person = unidecode.unidecode(person["name"])
+    unidecoded_person = unidecode.unidecode(person["id"])
     
-    if unidecoded_person != person["name"]:
-        print("  # 1020: data-build.py,  not the same", unidecoded_person, person["name"])
+    if unidecoded_person != person["id"]:
+        print("adding names")
         ## add non-unidecoded name in names array
         utf8_names = { 'first': person["nameFirst"], 'last': person['nameLast'] }
-        #print("utf-8 na,es", utf8_names)
-        ## TODO ?
-        ## If person has names
-        '''
-        '''
+
+        # Add special character names to the names array 
         if 'names' in person:
-            person['names'] = person['names'].extend(utf8_names)
+            if utf8_names not in person['names']:
+                person['names'] = person['names'] + [utf8_names]
         else:
             person['names'] = [utf8_names]
-            
+        
+        # update names to be non special characters
+        person["nameLast"] = unidecode.unidecode(person["nameLast"])
+        person["nameFirst"] = unidecode.unidecode(person["nameFirst"])
+        person["name"] = person["nameLast"]+", "+person["nameFirst"]
+        
         print("  # names: ", person['names'])
         
         
@@ -1065,6 +1060,7 @@ def object_checker(obj):
 ## TODO: Searches through the alias if there is a person (get ascii and non ascii )
 ## Could also check for aliases // add alias to dictionary here 
 def word_scoring(obj, recursive=False):
+    # print("   * scoring", obj["id"])
     global singlar_plural
     word_score = {}
     for key,value in obj.items():
@@ -1124,7 +1120,7 @@ def word_freq_get(value):
     type_ = type(value)
     if str == type_:
         if value in id_object:
-            obj = id_object[value];
+            obj = id_object[value]
             t = obj["__typename"]
             keys = []
             if t == "Person":
@@ -1140,7 +1136,7 @@ def word_freq_get(value):
                 if key in obj:
                     word_freq[obj[key].lower()] = 1.0/len(keys)
         else:
-            words = re_not_word.split(re_html.sub("",value.lower() ))
+            words = re_not_word.split(re_html.sub("",unidecode.unidecode(value.lower()) ))
             total = len(words)
             for word in words:
                 if len(word) > 0 and re_word.search(word): 
