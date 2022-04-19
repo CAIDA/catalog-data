@@ -175,7 +175,7 @@ def section_process(metadata, ender, name, buffer):
             metadata["tabs"] = []
         f = "text"
         if ender[0] == "=":
-            f = "html"
+            f = "markdown"
         elif ender[0] == "~":
             f = "text"
         elif re_html.search(buffer):
