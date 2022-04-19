@@ -171,7 +171,6 @@ def parse_catalog_data_caida(source_dir):
 
                 # Edge Case: Skip if file is not a .md file.
                 if re_mkdn.search(file):
-                    print("path: ", file_path)
                     metadata = utils.parse_markdown(file_path)
                     if metadata is None:
                         print ("\nerror: failed to parse",file_path)
