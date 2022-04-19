@@ -151,22 +151,18 @@ def parse_markdown(filename):
                     section_buffer = ""
 
         if section_buffer is not None:
-            # print("secion buffer: ", section_buffer)
             if re_not_white_space.search(section_buffer):
-                section_process(metadata, section_ender, section_name, section_buffer)
-            else:
-                print("it is empty but getting added", filename)
-            
+                section_process(metadata, section_ender, section_name, section_buffer)      
 
         if "files" in metadata:
             for name,content in metadata["files"].items():
-                section_process(metadata, "~~~", "tabs~"+name, content)
+                if re_not_white_space.search(content):
+                    section_process(metadata, "~~~", "tabs~"+name, content)
 
         if "tabs" in metadata:
             tabs = []
             for tab in metadata["tabs"]:
                 if re_not_white_space.search(tab["content"]):
-                    print("appended tab: ", section_name)
                     tabs.append(tab)
 
             if len(tabs) > 0:
@@ -177,20 +173,14 @@ def section_process(metadata, ender, name, buffer):
     if name[:5] == "tabs"+ender[0]:
         if "tabs" not in metadata:
             metadata["tabs"] = []
-
         f = "text"
         if ender[0] == "=":
-            print("HTML 1")
             f = "html"
         elif ender[0] == "~":
-            #print("text 1")
             f = "text"
         elif re_html.search(buffer):
-            #print("html 1",)
-            ## How does this elif do anyting?
             f = "html"
         elif re_md.search(buffer):
-            #print("markdown 2")
             f = "markdown"
         metadata["tabs"].append({
             "name":name[5:],
