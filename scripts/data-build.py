@@ -498,7 +498,7 @@ def object_date_add(obj):
         type_key = {
             "Dataset":["dateEnd", "dateStart"], 
             "Paper":["datePublished"],
-            "Software":["dateCreated","dateModified"],
+            "Software":["dateCreated","dateLastUpdated"],
             "Recipe":["dateObjectModified","dateObjectCreate"],
             "Tag":["dateObjectModified","dateObjectCreate"]
         }
