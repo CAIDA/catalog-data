@@ -451,7 +451,7 @@ def object_date_add(obj):
         if "dates" in obj:
             for date_url in obj["dates"]:
                 if "date" not in obj or obj["date"] < date_url["date"]:
-                    obj["date"] = date_url["date"]
+                    obj["date"] = utils.date_parse(date_url["date"])
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
@@ -462,7 +462,7 @@ def object_date_add(obj):
 
     for key in ["dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
-            obj[key] = id_date[obj["id"]][key]
+            obj[key] = utils.date_parse(id_date[obj["id"]][key])
         else:
             if not re_placeholder.search(obj["filename"]):
                 if key == "dateCreated" or key == "dateObjectCreated":
@@ -485,7 +485,7 @@ def object_date_add(obj):
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
-                obj["date"] = person_venue["date"]
+                obj["date"] = utils.date_parse(person_venue["date"])
             if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
                 vid = person_venue["venue"]
                 if vid in id_object:
