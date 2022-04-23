@@ -145,7 +145,7 @@ def parse_markdown(filename):
                 section_buffer = ""
             else:
                 m = re_section.search(line)
-                if m: 
+                if m:
                     section_ender = m.group(1)
                     section_name = m.group(2)
                     section_buffer = ""
@@ -174,13 +174,15 @@ def section_process(metadata, ender, name, buffer):
 
         f = "text"
         if ender[0] == "=":
-            f = "markdown"
+            f = "html"
         elif ender[0] == "~":
             f = "text"
-        elif re_html.search(buffer):
+        '''
+        elif re_html.search(name):
             f = "html"
         elif re_md.search(buffer):
             f = "markdown"
+        '''
         metadata["tabs"].append({
             "name":name[5:],
             "format":f,
