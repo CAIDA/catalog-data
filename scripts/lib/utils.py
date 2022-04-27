@@ -63,7 +63,6 @@ def person_seen_add(fname,person):
             names.append(name)
             
     for name in names:
-        #n = name["nameLast"].lower()+"__"+name["nameFirst"].lower()
         i = id_create(fname, "person", name["nameLast"].lower()+"__"+name["nameFirst"].lower())
         if i not in person_seen:
             person_seen[i] = person
