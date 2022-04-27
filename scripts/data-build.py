@@ -122,6 +122,8 @@ key_weight = {
     "__typename":0,
     "id":0,
     "name": 10,
+    "nameFirst": 10,
+    "nameLast": 10,
     "tags": 10,
     "description": 5,
     "content": 3,
@@ -1060,34 +1062,35 @@ def object_checker(obj):
 ## TODO: Searches through the alias if there is a person (get ascii and non ascii )
 ## Could also check for aliases // add alias to dictionary here 
 def word_scoring(obj, recursive=False):
-    # print("   * scoring", obj["id"])
     global singlar_plural
+    word_weights = []
     word_score = {}
+    
+    ## Adding words and their weights from each key 
     for key,value in obj.items():
-        if key in key_weight:
-            weight = key_weight[key]
+        word_freq = word_freq_get(value)
+        if key in SCORE_WEIGHT:
+            weight = SCORE_WEIGHT[key]
         else:
-            weight = weight_default
+            weight = SCORE_WEIGHT["other"]
+        for word_original, freq in word_freq.items():
+            word_weights.append([word_original, weight])
 
-        if weight == 0:
-            continue
+    ## Checking aliases in person and adding weights for the names
+    if obj["id"].split(":")[0] == "person" and "names" in obj:
+        for name in obj["names"]:
+            for key in ["nameFirst", "nameLast"]:
+                if key in SCORE_WEIGHT:
+                    word_weights.append([name[key], SCORE_WEIGHT[key]])
 
-        for key,value in obj.items():
-            word_freq = word_freq_get(value)
-            if key in SCORE_WEIGHT:
-                weight = SCORE_WEIGHT[key]
-
+    ## score up the weights for all the words
+    for word_original, weight in word_weights:
+        ## Add additional word, additional to LEM, add UNIDECODED version 
+        for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
+            if word not in word_score:
+                word_score[word] = weight
             else:
-                weight = SCORE_WEIGHT["other"]
-
-            for word_original, freq in word_freq.items():
-                ## TODO Add additional word, additional to LEM, add UNIDECODED version 
-                for word in [word_original, Lem.lemmatize(word_original),unidecode.unidecode(word_original)]:
-                    if word not in word_score:
-                        word_score[word] = weight
-                    else:
-                        word_score[word] = word_score[word] | weight
-                    #print (key,weight, word, format(word_score[word],'b'))
+                word_score[word] = word_score[word] | weight
     id_word_score[obj["id"]] = word_score
 
 def word_scoring_link(w_s0, w_s1):
