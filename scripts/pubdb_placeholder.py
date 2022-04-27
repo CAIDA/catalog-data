@@ -79,11 +79,8 @@ def main():
                 key_to_key(info,"name","person")
                 key_to_key(info,"organization","organizations")
                 for key in ["name","person"]:
-                    if key in info:
-                        info["person"] = "person:"+info[key]
-                        person_create(obj["filename"],info["person"])
-                        if key != "person":
-                            del info[key]
+                    if key in info:                        
+                        info['person'] = person_create(obj["filename"],info["person"])
                 if "date" in info:
                     date = utils.date_parse(info["date"])
                     if date is not None:
