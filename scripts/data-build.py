@@ -1218,7 +1218,7 @@ def data_load_from_summary(filename):
             if len(line) == 0 or line[0] == "#":
                 continue
             metadata = json.loads(line)
-            dataset_id = 'dataset:' + metadata["fileset"].replace('-','_')
+            dataset_id = utils.id_create(metadata["filename"], 'dataset', metadata["fileset"]) 
             if dataset_id in id_object:
                 obj = id_object[dataset_id]
                 for key in ["dateStart","dateEnd","status"]:
