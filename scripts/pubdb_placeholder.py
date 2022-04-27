@@ -23,7 +23,14 @@ args = parser.parse_args()
 def main():
     load_ids("paper","papers",args.papers_file)
     load_ids("media","presentations",args.media_file)
+    
+    
     error = False
+    ## load all existing ids 
+    ## parameters: sources, and the type that is calling it
+    # utils.id_check_load("sources", "pubdb")
+
+    ## Add this to utils as id_check_load()
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -52,6 +59,7 @@ def main():
         
     if error:
         sys.exit(1)
+    ## add to this end 
 
     re_best = re.compile("Best\s*Paper")#, re.IGNORECASE)
     re_distinguished = re.compile("Distinguished\s*Paper")#, re.IGNORECASE)

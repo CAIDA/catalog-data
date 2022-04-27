@@ -252,7 +252,7 @@ def add_seen_ids(dirs):
 def add_seen_authors(d):
     for fname in os.listdir(d):
         # Edge Case: Skip if file is not .json.
-        if re_jsn.search(fname) and not re_pubdb.search(fname) and not re_ext.search(fname):
+        if re_jsn.search(fname) and not re_ext.search(fname):
             f = d+'/'+fname
             with open(f, "r") as opened_file:
                 person = json.load(opened_file)
