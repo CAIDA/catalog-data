@@ -118,6 +118,7 @@ def main(argv):
 
 ############################### Helper Methods #################################
 
+## add to utils as separate funciton
 # Add each paper's ID to seen_papers from the source/paper directory.
 def add_seen_ids(source_dir):
     global seen_ids
@@ -134,10 +135,16 @@ def add_seen_ids(source_dir):
                         info = json.load(open(file_path))
                         info["filename"] = file_path
                         id = info["id"] = utils.id_create(info["filename"], type_, info["id"])
-                        if id in seen_id:
-                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
-                        else:
-                            seen_id[id] = file_path
+                        ids = [id]
+                        
+                        if type_ == "person" and "names" in info:
+                            for name in info["names"]:
+                                ids.append(utils.id_create(info["filename"], type_, name["nameLast"]+"__"+name["nameFirst"]))
+                        for id in ids:
+                            if id in seen_id:
+                                print ("1. duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                            else:
+                                seen_id[id] = file_path
                     except Exception as e:
                         print ("\nerror",path+"/"+filename)
                         print ("    ",e)

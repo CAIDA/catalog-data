@@ -52,26 +52,33 @@ def id_create(filename, type_,id_):
 
 person_seen = {}
 person_seen_fname = {}
-def person_seen_add(fname,person): 
+
+def person_seen_add(fname,person):
+    #if "id" in person:
+    #    person_seen[person["id"]] = person
+    
     names = [person]
     if "names" in person:
         for name in person["names"]:
             names.append(name)
+            
     for name in names:
-        n = name["nameLast"].lower()+";"+name["nameFirst"].lower()
-        if n not in person_seen:
-            person_seen[n] = person
-            person_seen_fname[n] = fname
+        i = id_create(fname, "person", name["nameLast"].lower()+"__"+name["nameFirst"].lower())
+        if i not in person_seen:
+            person_seen[i] = person
+            person_seen_fname[i] = fname
         else:
             print ("duplicate",person["id"])
-            print ("    ",person_seen_fname[n])
+            print ("    ",person_seen_fname[i])
             print ("    ",fname)
 
 
 def person_seen_check(nameLast, nameFirst):
-    n = nameLast.lower()+";"+nameFirst.lower()
-    if n in person_seen:
-        return person_seen[n]
+    ## Check for names and if in names, return the person_seen's id, not the name
+    #n = nameLast.lower()+";"+nameFirst.lower()
+    i = id_create("", "person", nameLast+"__"+nameFirst)
+    if i in person_seen:
+        return person_seen[i]
     return None
 
 
