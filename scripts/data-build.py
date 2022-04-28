@@ -45,10 +45,15 @@ import os
 import re
 import time
 import datetime
+import argparse
 import subprocess
 import lib.utils as utils
 
 import binascii
+
+parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
+parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
+args = parser.parse_args()
 
 # used to plural
 import nltk
@@ -379,7 +384,7 @@ def main():
     # Load date info into id_object 
     ######################
     print ("Adding dataset date info")
-    data_load_from_summary('data/catalog-dataset-summary.jsonl')
+    data_load_from_summary(args.summary_file)
 
     #######################
     # print files

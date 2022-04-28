@@ -3,8 +3,17 @@ CATALOG_DATA_CAIDA_FILE = data/data_id__caida.json
 PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
-run:clean_placeholders pubdb externallinks caida scripts/data-build.py
-	python3 scripts/data-build.py
+SUMMARY_TEMP = catalog-dataset-summary.jsonl
+SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
+SUMMARY_OPT = data/catalog-dataset-summary.jsonl
+
+run:clean_placeholders pubdb externallinks caida build 
+
+build:
+	rm -f ${SUMMARY_TEMP}
+	wget -O "${SUMMARY_TEMP}" "${SUMMARY_URL}"
+	@if [ -f ${SUMMARY_TEMP} ]; then SUMMARY_OPT=${SUMMARY_TEMP}; fi
+	python3 scripts/data-build.py -s ${SUMMARY_OPT}
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py ${PUBDB_PAPER} ${PUBDB_MEDIA}
 	python3 scripts/pubdb_placeholder.py -p ${PUBDB_PAPER} -m ${PUBDB_MEDIA}
