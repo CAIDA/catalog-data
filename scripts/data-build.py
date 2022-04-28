@@ -447,25 +447,34 @@ def id_date_load(filename):
 def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
 
-    if obj["__typename"] == "venue":
+    if obj["__typename"] == "Venue":
         if "dates" in obj:
-            for date_url in obj["dates"]:
-                if "date" not in obj or obj["date"] < date_url["date"]:
-                    obj["date"] = date_url["date"]
+            ## these lines below replace the commented out code
+            if "date" not in obj or obj["date"] < obj["dates"]["date"]:
+                obj["date"] = obj["dates"]["date"]
+            ## TODO: commented out because this code handles dates as an array, not an object
+            ## if venues change to an array of objects, handle it here
+            #for date_url in obj["dates"]:
+            #    if "date" not in obj or obj["date"] < date_url["date"]:
+            #        print(date_url)
+            #        obj["date"] = date_url["date"]
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
                 if obj[key].lower() == "ongoing":
                     obj[key] = today
-                else:
+                else:       
                     obj[key] = utils.date_parse(obj[key])
+            
 
-    for key in ["dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
+    ## Get github file modified dates 
+    for key in ["dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = id_date[obj["id"]][key]
         else:
+            # if the file is not a placeholder
             if not re_placeholder.search(obj["filename"]):
-                if key == "dateCreated" or key == "dateObjectCreated":
+                if key == "dateObjectCreated":
                     cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
                 else:
                     cmd = "git log --format=%aD -1 -- "
@@ -475,13 +484,22 @@ def object_date_add(obj):
             else:
                 values = []
             date = today
+            # if there was a date found, use as date (would not be found if placeholder)
             if len(values) >= 4:
                 if values[2] in mon_index:
                     date = values[3]+"."+mon_index[values[2]]
             obj[key] = date
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
-
+    
+    # change date start to dateCreated for software
+    if obj["__typename"] == "Software":
+        if "dateStart" in obj and "dateCreated" not in obj:
+            obj["dateCreated"] = obj["dateStart"]
+        ## if there is no dateStart or dateCreated, print warning
+        else:
+            print(f'Software {obj["id"]} missing dateStart or dateCreated.')
+    
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
@@ -498,9 +516,9 @@ def object_date_add(obj):
         type_key = {
             "Dataset":["dateEnd", "dateStart"], 
             "Paper":["datePublished"],
-            "Software":["dateCreated","dateLastUpdated"],
-            "Recipe":["dateObjectModified","dateObjectCreate"],
-            "Tag":["dateObjectModified","dateObjectCreate"]
+            "Software":["dateCreated","dateModified"],
+            "Recipe":["dateObjectModified","dateObjectCreated"],
+            "Tag":["dateObjectModified","dateObjectCreated"]
         }
         type_ = obj["__typename"]
         if type_ in type_key:
@@ -508,10 +526,12 @@ def object_date_add(obj):
                 if key in obj:
                     obj["date"] = obj[key]
                     break
+    
 
-    for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
-        if dst not in obj:
-            obj[dst] = obj[src]
+    
+    #for dst,src in [["dateCreated","dateObjectCreated"], ["dateModified","dateObjectModified"]]:
+    #    if dst not in obj:
+    #        obj[dst] = obj[src]
 
     #if obj["__typename"] == "Dataset":
         #if "dateStart" in obj:
