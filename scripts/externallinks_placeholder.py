@@ -252,7 +252,7 @@ def add_seen_ids(dirs):
 def add_seen_authors(d):
     for fname in os.listdir(d):
         # Edge Case: Skip if file is not .json.
-        if re_jsn.search(fname) and not re_pubdb.search(fname) and not re_ext.search(fname):
+        if re_jsn.search(fname) and not re_ext.search(fname):
             f = d+'/'+fname
             with open(f, "r") as opened_file:
                 person = json.load(opened_file)
@@ -522,6 +522,7 @@ def parse_paper(fname, curr_paper):
 # Helper function add an author to author_data.
 #   @input author_id: The formatted ID for the current author.
 def add_author(fname, last_name, first_name):
+    #print(fname)
     global author_data
     person = utils.person_seen_check(last_name, first_name)
 
@@ -529,7 +530,6 @@ def add_author(fname, last_name, first_name):
         type_,author_id = utils.id_create(fname, "person", last_name+"__"+first_name).split(":")
         if author_id not in author_data:
             file_path = "sources/person/{}___externallinks.json".format(author_id)
-
             author_data[author_id] = {
                 "id":"person:{}".format(author_id),
                 "__typename":"person",
