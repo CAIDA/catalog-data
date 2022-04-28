@@ -374,6 +374,13 @@ def main():
     print ("removing private")
     remove_private(id_object, id_id_link)
 
+
+    ######################
+    # Load date info into id_object 
+    ######################
+    print ("Adding dataset date info")
+    data_load_from_summary('data/catalog-dataset-summary.jsonl')
+
     #######################
     # print files
     #######################
@@ -916,7 +923,7 @@ def recipe_process(path):
                                 else:
                                     tab_content += line
                             if extention == "md":
-                                f = "md"
+                                f = "markdown"
                             else:
                                 f = "text"
                             tabs.append({
@@ -1204,5 +1211,25 @@ def pub_links_load(filename):
                 "id":link[0]
                 }
             link_add(obj,link[1])
+
+def data_load_from_summary(filename):
+    with open(filename,"r") as fin:
+        for line in fin:
+            if len(line) == 0 or line[0] == "#":
+                continue
+            metadata = json.loads(line)
+            dataset_id = 'dataset:' + metadata["fileset"].replace('-','_')
+            if dataset_id in id_object:
+                obj = id_object[dataset_id]
+                for key in ["dateStart","dateEnd","status"]:
+                    if key in metadata:
+                        if key in ["dateStart","dateEnd"]:
+                            # FIXME: Quick fix; Need to normalize data format to YYYYMMDD
+                            if (len(metadata[key]) == 8):
+                                obj[key] = datetime.datetime.strptime(metadata[key], "%Y%m%d").strftime("%Y-%m-%d")
+                        else:
+                            obj[key] = metadata[key]
+            else:
+                error_add(filename, "no matching id for {}".format(dataset_id))
 
 main()
