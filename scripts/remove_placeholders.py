@@ -52,6 +52,8 @@ for d_name in sorted(os.listdir(source_dir)):
     if os.path.isdir(d_path):
         type_count = {}
         for f_name in sorted(os.listdir(d_path)):
+            if "person" in d_path:
+                print (f_name)
             f_path = d_path+"/"+f_name
             m = re_placeholder.search(f_name)
             if os.path.isfile(f_path) and m:
