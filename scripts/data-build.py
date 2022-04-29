@@ -51,6 +51,14 @@ import unidecode
 
 import binascii
 
+######################################################################
+## Parameters
+######################################################################
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
+args = parser.parse_args()
+
 # used to plural
 import nltk
 nltk.download('wordnet')
@@ -169,14 +177,22 @@ type_key_w_type_w = {
     }
 }
 
-id_missing = {}
-
 if len(sys.argv) > 1 and sys.argv[1] == "-f":
     date_lookup_force = True
 else:
     date_lookup_force = False
 
+# id_in_catalog stores the ids that are in catalog
+# used if the catalog-data-caida directory is not here
+id_in_catalog = set()
+
 def main():
+
+    # Load ids from the catalog
+    if args.ids_file:
+        with open(args.ids_file) as fin:
+            for line in fin:
+                id_in_catalog.add(line.rstrip())
 
     id_date_load(id_object_file)
 
@@ -838,7 +854,8 @@ def link_add(obj,info,p=False):
         return None
 
     if to not in id_object:
-        error_add(obj["filename"], "can't find id "+to)
+        if to not in id_in_catalog:
+            error_add(obj["filename"], "can't find id "+to)
         return False
 
     info["from"] = obj["id"]
