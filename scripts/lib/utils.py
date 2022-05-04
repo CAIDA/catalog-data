@@ -161,14 +161,14 @@ def parse_markdown(filename):
             if re_not_white_space.search(section_buffer):
                 section_process(metadata, section_ender, section_name, section_buffer)
             else:
-                print(f'   DID NOT ADD empty: {section_name:25} tab in {metadata["id"]}' )
+                print(f'   DID NOT ADD empty: {section_name:25} tab in {filename}' )
 
         if "files" in metadata:
             for name,content in metadata["files"].items():
                 if re_not_white_space.search(content):
                     section_process(metadata, "~~~", "tabs~"+name, content)
                 else:
-                    print(f'   DID NOT ADD empty: {name:25} tab in {metadata["id"]}' )  
+                    print(f'   DID NOT ADD empty: {name:25} tab in {filename}' )  
 
         if "tabs" in metadata:
             tabs = []
@@ -176,7 +176,7 @@ def parse_markdown(filename):
                 if re_not_white_space.search(tab["content"]):
                     tabs.append(tab)
                 else:
-                    print(f'   DID NOT ADD empty: {tab["name"]:25} tab in {metadata["id"]}' )
+                    print(f'   DID NOT ADD empty: {tab["name"]:25} tab in {filename}' )
 
             if len(tabs) > 0:
                 metadata["tabs"] = tabs
