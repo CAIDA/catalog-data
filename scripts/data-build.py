@@ -252,6 +252,21 @@ def main():
     for obj in list(id_object.values()):
         object_date_add(obj)
 
+    print ("removing missing ids from id_id_links")
+    missing = []
+    for id0,id_link in id_id_link.items():
+        if id0 not in id_object:
+            missing.append(id0)
+        else:
+            m = []
+            for id1 in id_link.keys():
+                if id1 not in id_object:
+                    m.append(id1)
+            for id1 in m:
+                del id_link[id1]
+    for id0 in missing:
+        del id_id_link[id0]
+
     ######################
     # tag objects linked to caida_data
     ######################
@@ -839,28 +854,32 @@ def personName_add(obj, person_id):
 def link_add(obj,info,p=False):
 
     if type(info) == str:
-        to_original = info
-        to = utils.id_create(obj["filename"],None,info)
-        info = { "to":to }
+        id_original = info
+        id_new = utils.id_create(obj["filename"],None,info)
+        info = { "from":obj["id"], "to":id_new }
     else:
         if "to" in info:
-            to_original = info["to"]
-            to = info["to"] = utils.id_create(obj["filename"],None,info["to"])
+            info["from"] = obj["id"]
+            id_orginal = info["to"]
+            id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
+        elif "from" in info:
+            info["to"] = obj["id"]
+            id_orginal = info["from"]
+            id_new = info["form"] = utils.id_create(obj["filename"],None,info["from"])
         else:
-            error_add(obj["filename"],"link has no to"+json.dumps(info))
+            error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
 
 
-    if to is None:
-        error_add(obj["filename"],"invalid id "+to_original)
+    if id_new is None:
+        error_add(obj["filename"],"invalid id "+id_original)
         return None
 
-    if to not in id_object:
-        if to not in id_in_catalog:
-            error_add(obj["filename"], "can't find id "+to)
+    if id_new not in id_object:
+        if id_new not in id_in_catalog:
+            error_add(obj["filename"], "can't find id "+id_new)
         return False
 
-    info["from"] = obj["id"]
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
         a_id = info[a]
