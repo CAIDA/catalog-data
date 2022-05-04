@@ -80,17 +80,11 @@ re_json = re.compile(r"\.json$", re.IGNORECASE)
 re_mdta = re.compile(r"~~~metadata")
 re_dlim = re.compile(r"~~~")
 
-# File Paths:
-path_ids = "data/data_id___caida.json"
-
 ################################# Main Method ##################################
 
 def main(argv):
-    global path_ids
-
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", type=str, default=None, dest="path", help="Path to catalog-data-caida/sources")
-    parser.add_argument("-i", type=str, default=None, dest="path_ids", help="Path to a json file to map file paths to IDs.")
     args = parser.parse_args()
 
     # Edge Case: Exit if no path given.
@@ -103,10 +97,6 @@ def main(argv):
     if not os.path.exists(source_dir):
         return
 
-    # Assign a given path_ids value, else use the default.
-    if args.path_ids != None:
-        path_ids = args.path_ids
-
     # store existing ids
     add_seen_ids("sources");
 
@@ -118,6 +108,7 @@ def main(argv):
 
 ############################### Helper Methods #################################
 
+## add to utils as separate funciton
 # Add each paper's ID to seen_papers from the source/paper directory.
 def add_seen_ids(source_dir):
     global seen_ids
@@ -134,10 +125,16 @@ def add_seen_ids(source_dir):
                         info = json.load(open(file_path))
                         info["filename"] = file_path
                         id = info["id"] = utils.id_create(info["filename"], type_, info["id"])
-                        if id in seen_id:
-                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
-                        else:
-                            seen_id[id] = file_path
+                        ids = [id]
+                        
+                        if type_ == "person" and "names" in info:
+                            for name in info["names"]:
+                                ids.append(utils.id_create(info["filename"], type_, name["nameLast"]+"__"+name["nameFirst"]))
+                        for id in ids:
+                            if id in seen_id:
+                                print ("1. duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                            else:
+                                seen_id[id] = file_path
                     except Exception as e:
                         print ("\nerror",path+"/"+filename)
                         print ("    ",e)
@@ -236,7 +233,6 @@ def parse_catalog_data_caida(source_dir):
 # Print all found datasets to individual JSON objects.
 def print_datasets():
     global id_2_object
-    global path_ids
 
     # Iterate over each file and make individual JSON objects.
     for type_id,obj in id_2_object.items():
@@ -254,52 +250,5 @@ def print_datasets():
         with open(filename, "w") as output_file:
             output_file.write(curr_file)
     
-    # Print a JSON mapping all made files to their IDs.
-    with open(path_ids, "w") as output_file:
-        ids = sorted(id_2_object.keys())
-        output_file.write("[\n")
-        for id_ in ids:
-            obj = id_2_object[id_]
-            strings = []
-
-            if "visibility" not in obj or obj["visibility"] != "private":
-                keys = ["id","name","filename", "visibility", "organization", "description", "status", "dateCreated", "dateLastUpdated", "tabs"]
-            else:
-                keys = ["id", "name", "visibility"]
-            keys.append("dateStart")
-
-            for key in keys:
-                if key in obj:
-                    strings.append('    "'+key+'":'+json.dumps(obj[key]))
-
-            for key in ["tags","licenses"]:
-                if key in obj:
-                    strings.append('    "'+key+'":'+json.dumps(sorted(obj[key])))
-                    
-            if "resources" in obj:
-                r = []
-                for res in obj["resources"]:
-                    for key in ["name","url"]:
-                        if key in res:
-                            r.append('"'+key+'":'+json.dumps(res[key]))
-                    for k in ["tags"]:
-                        if k in res:
-                            r.append('"'+k+'":'+json.dumps(sorted(res[k])))
-                strings.append('    "resources": [\n'
-                        +'       {\n         '
-                        +',\n         '.join(r)
-                        +'\n       }\n'
-                        +'   ]')
-            #sys.stdout.write(",\n".join(strings)+"\n")
-            #sys.stdout.write("\n")
-
-            output_file.write("  {\n")
-            output_file.write(",\n".join(strings)+"\n")
-            if id_ == ids[-1]:
-                output_file.write("  }\n")
-            else:
-                output_file.write("  },\n")
-        output_file.write("]\n")
-
 # Run the script given the inputs from the terminal.
 main(sys.argv[1:])

@@ -6,7 +6,6 @@
     "name" : "How to run the Spoofer client",
     "description" : "The steps required to download and run the Spoofer client",
     "links": [
-        {"to":"group:spoofer"},
         {"to":"software:spoofer_client"}
     ],
     "tags" : [
