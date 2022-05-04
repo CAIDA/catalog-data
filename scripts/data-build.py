@@ -45,6 +45,7 @@ import os
 import re
 import time
 import datetime
+import argparse
 import subprocess
 import lib.utils as utils
 import unidecode
@@ -55,7 +56,8 @@ import binascii
 ## Parameters
 ######################################################################
 import argparse
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
+parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 args = parser.parse_args()
 
@@ -405,7 +407,7 @@ def main():
     # Load date info into id_object 
     ######################
     print ("Adding dataset date info")
-    data_load_from_summary('data/catalog-dataset-summary.jsonl')
+    data_load_from_summary(args.summary_file)
 
     #######################
     # print files
@@ -1280,7 +1282,7 @@ def data_load_from_summary(filename):
             if len(line) == 0 or line[0] == "#":
                 continue
             metadata = json.loads(line)
-            dataset_id = 'dataset:' + metadata["fileset"].replace('-','_')
+            dataset_id = utils.id_create(metadata["filename"], 'dataset', metadata["fileset"]) 
             if dataset_id in id_object:
                 obj = id_object[dataset_id]
                 for key in ["dateStart","dateEnd","status"]:
