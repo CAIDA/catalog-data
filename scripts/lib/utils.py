@@ -119,6 +119,7 @@ re_md = re.compile(r"\.md$", re.IGNORECASE)
 
 def parse_markdown(filename):
     section_ender = None
+    section_format = None
     section_name = None
     section_buffer = None
 
@@ -140,36 +141,58 @@ def parse_markdown(filename):
                         print("found section '"+line.rstrip()+"' before '~~~metadata' in",filename, file=sys.stderr)
                         return None
                     else:
-                        section_process(metadata, section_ender, section_name, section_buffer)
+                        section_process(metadata, section_ender, section_name, section_buffer, section_format)
                     section_name = None
                     section_buffer = None
                     section_ender = None
+                    section_format = None
                 else:
                     section_buffer += line
+            ## This is equivalent to ===tabs=content
             elif "=== content ===" == line.rstrip():
                 section_ender = "==="
                 section_name = "tabs=content"
                 section_buffer = ""
+                section_format = "html"
             else:
                 m = re_section.search(line)
-                if m: 
-                    section_ender = m.group(1)
-                    section_name = m.group(2)
+                if m:
+                    # split group 2 by semi colon
+                    split_group = m.group(2).split(";")
+                    # if there is a semi colon, there is a specified format
+                    if len(split_group) > 1:
+                        section_name =  split_group[0].strip()
+                        if split_group[1].split("=")[0] == "format":
+                            section_format = split_group[1].split("=")[1].strip()
+                            if section_format not in ["html", "markdown", "text"]:
+                                print(f'\nWARNING: Unrecognized format "{section_format}" in {filename}, acceptable formats are markdown, html, or text')
+                                section_format = "html"
+                        else:
+                            print(f'\nWARNING: Unrecognized parameter "{split_group[1].split("=")[0]}" in {filename} tab')
+                            section_format = "html"
+                    else:
+                        # default format is html
+                        section_format = "html"
+                        section_name = m.group(2)
                     section_buffer = ""
+                    section_ender = m.group(1)
 
+        ## Adds content tab
         if section_buffer is not None:
             if re_not_white_space.search(section_buffer):
-                section_process(metadata, section_ender, section_name, section_buffer)
+                section_process(metadata, section_ender, section_name, section_buffer, section_format)
             else:
                 print(f'   DID NOT ADD empty: {section_name:25} tab in {filename}' )
-
+        ## adds each file as a tab
         if "files" in metadata:
             for name,content in metadata["files"].items():
+                ## set format as text for files
+                ## TODO: Add different file formats based on file extension
                 if re_not_white_space.search(content):
-                    section_process(metadata, "~~~", "tabs~"+name, content)
+                    section_process(metadata, "~~~", "tabs~"+name, content, "text")
                 else:
                     print(f'   DID NOT ADD empty: {name:25} tab in {filename}' )  
-
+        
         if "tabs" in metadata:
             tabs = []
             for tab in metadata["tabs"]:
@@ -180,21 +203,18 @@ def parse_markdown(filename):
 
             if len(tabs) > 0:
                 metadata["tabs"] = tabs
+
     return metadata
 
-def section_process(metadata, ender, name, buffer):
+def section_process(metadata, ender, name, buffer, format):
     if name[:5] == "tabs"+ender[0]:
         if "tabs" not in metadata:
             metadata["tabs"] = []
+        
         f = "text"
-        if ender[0] == "=":
-            f = "markdown"
-        elif ender[0] == "~":
-            f = "text"
-        elif re_html.search(buffer):
-            f = "html"
-        elif re_md.search(buffer):
-            f = "markdown"
+        ## set format if it doesn't exist, (would not exist for files that turned into tabs)
+        if format is not None:
+            f = format
         metadata["tabs"].append({
             "name":name[5:],
             "format":f,
