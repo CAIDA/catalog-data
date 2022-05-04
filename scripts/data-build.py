@@ -508,7 +508,7 @@ def object_date_add(obj):
             date = today
             if len(values) >= 4:
                 if values[2] in mon_index:
-                    date = values[3]+"."+mon_index[values[2]]
+                    date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
             obj[key] = date
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
