@@ -18,4 +18,5 @@ package-lock.json
 node_modules/*
 env/*
 catalog-data-caida
-catalog-dataset-summary.jsonl
+data/_catalog-dataset-summary.jsonl
+data/_ids.txt

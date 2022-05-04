@@ -2,14 +2,16 @@ CATALOG_DATA_CAIDA_PATH = catalog-data-caida/sources/
 PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
-SUMMARY_DATA_FILE = data/catalog-dataset-summary.jsonl
-SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
 SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
-SUMMARY_TEMP = _catalog-dataset-summary.jsonl
+SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
+SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
 
 URL=https://api.catalog.caida.org/v1
-IDS_FILE=data/ids.txt
+IDS_FILE=data/_ids.txt
 
+FRESH_HOURS=23
+
+FRESH_HOUR=
 START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
@@ -24,23 +26,7 @@ else
 endif
 
 summary:
-	@ # remove the file if it older then 1 day
-	@ if [ -f ${SUMMARY_FILE} ]; then \
-		find "${SUMMARY_FILE}" -type f -mtime +23h -delete ; \
-	fi
-
-	@ # if the file doesn't exist download it 
-	@ if [ ! -f ${SUMMARY_FILE} ]; then \
-		cp "${SUMMARY_DATA_FILE}" "${SUMMARY_FILE}"; \
-		wget -O "${SUMMARY_TEMP}" "${SUMMARY_URL}"; \
-	fi
-
-	@ # If the file was successfully downloaded, use it
-	@if [ -f ${SUMMARY_TEMP} ]; then \
-		mv ${SUMMARY_TEMP} ${SUMMARY_FILE}; \
-		touch "${SUMMARY_FILE}"; \
-	fi
-
+	python3 scripts/catalog-dataset-summary-download.py -O ${SUMMARY_FILE} -l ${SUMMARY_LOCAL_FILE} ${SUMMARY_URL}
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py ${PUBDB_PAPER} ${PUBDB_MEDIA}
 	python3 scripts/pubdb_placeholder.py -p ${PUBDB_PAPER} -m ${PUBDB_MEDIA}
