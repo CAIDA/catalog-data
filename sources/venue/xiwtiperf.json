@@ -2,9 +2,10 @@
     "id": "xiwtiperf",
     "name": "XIWTIPERF",
     "description": "",
-    "dates": {
-        "date": "2000.2",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2000.2",
+            "url": ""
+        }
+    ]
 }

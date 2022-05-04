@@ -2,9 +2,10 @@
     "id": "darpa_pi_meeting",
     "name": "DARPA PI Meeting",
     "description": "",
-    "dates": {
-        "date": "1999.12",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "1999.12",
+            "url": ""
+        }
+    ]
 }

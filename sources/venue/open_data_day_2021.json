@@ -2,9 +2,10 @@
     "id": "open_data_day_2021",
     "name": "Open Data Day 2021",
     "description": "Open Data Day is an annual celebration of open data all over the world. Groups from around the world create local events on the day where they will use open data in their communities. It is an opportunity to show the benefits of open data and encourage the adoption of open data policies in government, business and civil society. All outputs are open for everyone to use and re-use.",
-    "dates": {
-        "date": "2021.03.06",
-        "url": "https://opendataday.org/"
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2021.03.06",
+            "url": "https://opendataday.org/"
+        }
+    ]
 }

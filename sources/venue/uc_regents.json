@@ -2,9 +2,10 @@
     "id": "uc_regents",
     "name": "UC Regents",
     "description": "",
-    "dates": {
-        "date": "2003.2",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2003.2",
+            "url": ""
+        }
+    ]
 }

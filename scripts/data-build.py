@@ -474,11 +474,9 @@ def id_date_load(filename):
             error_add(filename, e.__str__())
 
 def object_date_add(obj):
-    # if (obj["id"] == "person:kecic__zarko"):
-        # print("   * obj in date add:" ,obj)
     today = datetime.date.today().strftime("%Y-%m")
 
-    if obj["__typename"] == "venue":
+    if obj["__typename"] == "Venue":
         if "dates" in obj:
             for date_url in obj["dates"]:
                 if "date" not in obj or obj["date"] < date_url["date"]:
@@ -488,15 +486,18 @@ def object_date_add(obj):
             if key[:4] == "date" and type(value) == str:
                 if obj[key].lower() == "ongoing":
                     obj[key] = today
-                else:
+                else:       
                     obj[key] = utils.date_parse(obj[key])
+            
 
-    for key in ["dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
+    ## Get github file modified dates 
+    for key in ["dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
             obj[key] = utils.date_parse(id_date[obj["id"]][key])
         else:
+            # if the file is not a placeholder
             if not re_placeholder.search(obj["filename"]):
-                if key == "dateCreated" or key == "dateObjectCreated":
+                if key == "dateObjectCreated":
                     cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
                 else:
                     cmd = "git log --format=%aD -1 -- "
@@ -506,13 +507,27 @@ def object_date_add(obj):
             else:
                 values = []
             date = today
+            # if there was a date found, use as date (would not be found if placeholder)
             if len(values) >= 4:
                 if values[2] in mon_index:
                     date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
             obj[key] = date
             if obj["id"] not in id_date:
                 id_date[obj["id"]] = {}
-
+    
+    # change date start to dateCreated for software
+    if obj["__typename"] == "Software":
+        ## TODO: This logic block should go away when the software get updated
+        if "dateStart" in obj or "dateCreated" in obj:
+            if  "dateCreated" not in obj:
+                obj["dateCreated"] = obj["dateStart"]
+        ## if there is no dateStart or dateCreated, print warning
+        else:
+            if "dateStart" in obj:
+                print(f'{obj["id"]:50} has dateStart, please change to dateCreated')
+            else:
+                print(f'{obj["id"]:50} missing dateStart or dateCreated, please add dateCreated')
+    
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
@@ -530,8 +545,8 @@ def object_date_add(obj):
             "Dataset":["dateEnd", "dateStart"], 
             "Paper":["datePublished"],
             "Software":["dateCreated","dateModified"],
-            "Recipe":["dateObjectModified","dateObjectCreate"],
-            "Tag":["dateObjectModified","dateObjectCreate"]
+            "Recipe":["dateObjectModified","dateObjectCreated"],
+            "Tag":["dateObjectModified","dateObjectCreated"]
         }
         type_ = obj["__typename"]
         if type_ in type_key:
@@ -539,12 +554,11 @@ def object_date_add(obj):
                 if key in obj:
                     obj["date"] = obj[key]
                     break
+    
 
-    for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
-        if dst not in obj:
-            obj[dst] = obj[src]
-    if (obj["id"] == "person:kecic__zarko"):
-        print("end of date def ")
+    #for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
+    #    if dst not in obj:
+    #        obj[dst] = obj[src]
     #if obj["__typename"] == "Dataset":
         #if "dateStart" in obj:
             #obj["date"] = obj["dateStart"]
