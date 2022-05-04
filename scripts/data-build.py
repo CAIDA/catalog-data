@@ -45,6 +45,7 @@ import os
 import re
 import time
 import datetime
+import argparse
 import subprocess
 import lib.utils as utils
 import unidecode
@@ -55,7 +56,8 @@ import binascii
 ## Parameters
 ######################################################################
 import argparse
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
+parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 args = parser.parse_args()
 
@@ -405,7 +407,7 @@ def main():
     # Load date info into id_object 
     ######################
     print ("Adding dataset date info")
-    data_load_from_summary('data/catalog-dataset-summary.jsonl')
+    data_load_from_summary(args.summary_file)
 
     #######################
     # print files
@@ -480,7 +482,7 @@ def object_date_add(obj):
         if "dates" in obj:
             for date_url in obj["dates"]:
                 if "date" not in obj or obj["date"] < date_url["date"]:
-                    obj["date"] = date_url["date"]
+                    obj["date"] = utils.date_parse(date_url["date"])
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
@@ -491,7 +493,7 @@ def object_date_add(obj):
 
     for key in ["dateLastUpdated",  "dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
-            obj[key] = id_date[obj["id"]][key]
+            obj[key] = utils.date_parse(id_date[obj["id"]][key])
         else:
             if not re_placeholder.search(obj["filename"]):
                 if key == "dateCreated" or key == "dateObjectCreated":
@@ -514,7 +516,7 @@ def object_date_add(obj):
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
-                obj["date"] = person_venue["date"]
+                obj["date"] = utils.date_parse(person_venue["date"])
             if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
                 vid = person_venue["venue"]
                 if vid in id_object:
@@ -1280,7 +1282,7 @@ def data_load_from_summary(filename):
             if len(line) == 0 or line[0] == "#":
                 continue
             metadata = json.loads(line)
-            dataset_id = utils.id_create(filename, 'dataset:',metadata["fileset"])
+            dataset_id = utils.id_create(metadata["filename"], 'dataset', metadata["fileset"]) 
             if dataset_id in id_object:
                 obj = id_object[dataset_id]
                 for key in ["dateStart","dateEnd","status"]:

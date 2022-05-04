@@ -67,7 +67,7 @@ if os.path.exists(args.output):
     if ti_m < 24*60*60:
         print ("   ",args.output,"is fresh (less then 24 hours) not downloading")
         sys.exit()
-print ("downloadings",args.output)
+print ("   downloadings",args.output)
 
 # Open the output file
 try:
