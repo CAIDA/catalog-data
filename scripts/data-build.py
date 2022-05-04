@@ -517,11 +517,16 @@ def object_date_add(obj):
     
     # change date start to dateCreated for software
     if obj["__typename"] == "Software":
-        if "dateStart" in obj and "dateCreated" not in obj:
-            obj["dateCreated"] = obj["dateStart"]
+        ## TODO: This logic block should go away when the software get updated
+        if "dateStart" in obj or "dateCreated" in obj:
+            if  "dateCreated" not in obj:
+                obj["dateCreated"] = obj["dateStart"]
         ## if there is no dateStart or dateCreated, print warning
         else:
-            print(f'Software {obj["id"]} missing dateStart or dateCreated.')
+            if "dateStart" in obj:
+                print(f'{obj["id"]:50} has dateStart, please change to dateCreated')
+            else:
+                print(f'{obj["id"]:50} missing dateStart or dateCreated, please add dateCreated')
     
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
