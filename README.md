@@ -1,9 +1,10 @@
 ### Catalog Data
 This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org))'s database.
 
-### wiki links
+### how to links
 - [how to contribute to the catalog](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute)
      - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe)
+- [data-papers.yaml format](https://wiki.caida.org/twiki/bin/view/CAIDA/ExternalDataPaperEntry)
 
 
 ### code 

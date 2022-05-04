@@ -2,9 +2,10 @@
     "id": "nicta",
     "name": "NICTA",
     "description": "",
-    "dates": {
-        "date": "2010.11",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2010.11",
+            "url": ""
+        }
+    ]
 }

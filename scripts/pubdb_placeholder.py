@@ -23,7 +23,14 @@ args = parser.parse_args()
 def main():
     load_ids("paper","papers",args.papers_file)
     load_ids("media","presentations",args.media_file)
+    
+    
     error = False
+    ## load all existing ids 
+    ## parameters: sources, and the type that is calling it
+    # utils.id_check_load("sources", "pubdb")
+
+    ## Add this to utils as id_check_load()
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
         if os.path.isdir(p):
@@ -52,6 +59,7 @@ def main():
         
     if error:
         sys.exit(1)
+    ## add to this end 
 
     re_best = re.compile("Best\s*Paper")#, re.IGNORECASE)
     re_distinguished = re.compile("Distinguished\s*Paper")#, re.IGNORECASE)
@@ -71,11 +79,8 @@ def main():
                 key_to_key(info,"name","person")
                 key_to_key(info,"organization","organizations")
                 for key in ["name","person"]:
-                    if key in info:
-                        info["person"] = "person:"+info[key]
-                        person_create(obj["id"],info["person"])
-                        if key != "person":
-                            del info[key]
+                    if key in info:                        
+                        info['person'] = person_create(obj["filename"],info["person"])
                 if "date" in info:
                     date = utils.date_parse(info["date"])
                     if date is not None:
@@ -85,6 +90,7 @@ def main():
         if "authors" in obj:
             for info in obj["authors"]:
                 key_to_key(info,"organization","organizations")
+                info['person'] = person_create(obj["filename"], info["person"])
         
         if "links" in obj:
             links = []
@@ -172,7 +178,7 @@ def main():
 
     for obj in id_person.values():
         if "already_exists" not in obj:
-            json.dump(obj,open(obj["filename"],"w"),indent=4)
+            json.dump(obj,open(obj["outfile"],"w"),indent=4)
 
 
 def key_to_key(obj,key_a,key_b):
@@ -227,22 +233,29 @@ def id_yearless(id_):
     
 
 id_person = {}
-def person_create(filename, obj):
-    if obj[:7] == "person:":
-        nameLast,nameFirst = obj[7:].split("__")
+def person_create(filename, pid):
+    if pid[:7] == "person:":
+        nameLast,nameFirst = pid[7:].split("__")
     else:
-        nameLast,nameFirst = obj.split("__")
+        nameLast,nameFirst = pid.split("__")
     person = utils.person_seen_check(nameLast,nameFirst)
     if person is None:
-        id_ = utils.id_create("filename",'person',obj)
+        id_ = utils.id_create(filename,'person',pid)
         if id_ not in id_person:
             person = {
                 "id": id_,
                 "__typename":"person",
-                "filename":"sources/person/"+id_[7:]+"__pubdb.json", "nameLast": nameLast.replace("_"," ").title(), "nameFirst": nameFirst.replace("_"," ").title()
+                "filename":filename,
+                "outfile":"sources/person/"+id_[7:]+"___pubdb.json", 
+                "nameLast": nameLast.replace("_"," ").title(),
+                "nameFirst": nameFirst.replace("_"," ").title()
             }
             id_person[id_] = person
+        else:
+            person = id_person[id_]
     elif person["id"] not in id_person:
         person["already_exists"] = True
         id_person[person["id"]] = person
+    
+    return person["id"]
 main()

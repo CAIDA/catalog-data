@@ -2,9 +2,10 @@
     "id": "santa_fe_institute_sfi",
     "name": "Santa Fe Institute SFI",
     "description": "",
-    "dates": {
-        "date": "2008.8",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2008.8",
+            "url": ""
+        }
+    ]
 }

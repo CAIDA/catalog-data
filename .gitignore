@@ -12,8 +12,10 @@ sources/*/*__caida.json
 id_word_score.json
 pubdb
 scripts/lib/__pycache__/
+data/data_id__caida.json
 .DS_Store
 package-lock.json
 node_modules/*
 env/*
 catalog-data-caida
+catalog-dataset-summary.jsonl

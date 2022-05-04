@@ -6,7 +6,6 @@
     "name" : "How to check if an ASN supports SAV",
     "description" : "Instructions and an example script to demonstrate the Spoofer Data API",
     "links": [
-        {"to":"group:spoofer"},
         {"to":"software:spoofer_api"}
     ],
     "tags" : [

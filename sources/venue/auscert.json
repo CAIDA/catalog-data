@@ -2,9 +2,10 @@
     "id": "auscert",
     "name": "AUSCERT",
     "description": "",
-    "dates": {
-        "date": "2005.5",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2005.5",
+            "url": ""
+        }
+    ]
 }

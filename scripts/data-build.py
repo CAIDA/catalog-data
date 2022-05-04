@@ -45,10 +45,21 @@ import os
 import re
 import time
 import datetime
+import argparse
 import subprocess
 import lib.utils as utils
+import unidecode
 
 import binascii
+
+######################################################################
+## Parameters
+######################################################################
+import argparse
+parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
+parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
+parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
+args = parser.parse_args()
 
 # used to plural
 import nltk
@@ -121,6 +132,8 @@ key_weight = {
     "__typename":0,
     "id":0,
     "name": 10,
+    "nameFirst": 10,
+    "nameLast": 10,
     "tags": 10,
     "description": 5,
     "content": 3,
@@ -166,14 +179,22 @@ type_key_w_type_w = {
     }
 }
 
-id_missing = {}
-
 if len(sys.argv) > 1 and sys.argv[1] == "-f":
     date_lookup_force = True
 else:
     date_lookup_force = False
 
+# id_in_catalog stores the ids that are in catalog
+# used if the catalog-data-caida directory is not here
+id_in_catalog = set()
+
 def main():
+
+    # Load ids from the catalog
+    if args.ids_file:
+        with open(args.ids_file) as fin:
+            for line in fin:
+                id_in_catalog.add(line.rstrip())
 
     id_date_load(id_object_file)
 
@@ -192,6 +213,7 @@ def main():
     #######################
     #######################
     seen_id = {}
+    #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
         if fname == "solution" or fname == "recipe":
@@ -200,6 +222,8 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
+                #if (path == 'sources/person'):               
+                #    print("filename: ",filename)
                 if re.search("\.json$",filename,re.IGNORECASE):
                     try:
                         info = json.load(open(path+"/"+filename))
@@ -264,10 +288,13 @@ def main():
     }
 
     id_failed = []
+    # Loop through the names in the id_object json file 
     for id_,obj in id_object.items():
         type_ = obj["__typename"]
         if type_ in type_checker:
+            ## I think it is here where the object gets person add names again
             type_checker[type_](obj)
+            
             #if message is not None:
             #    id_failed.append({"id":id_,"message":message})
                 
@@ -320,6 +347,7 @@ def main():
     # parse out the words from the fields
     #######################
     print ("adding words")
+    
     for obj in id_object.values():
         word_scoring(obj)
     for id0, id1_link in id_id_link.items():
@@ -379,7 +407,7 @@ def main():
     # Load date info into id_object 
     ######################
     print ("Adding dataset date info")
-    data_load_from_summary('data/catalog-dataset-summary.jsonl')
+    data_load_from_summary(args.summary_file)
 
     #######################
     # print files
@@ -437,6 +465,7 @@ mon_index={"jan":"01","feb":"02","mar":"03","apr":"04","may":"05","jun":"06"
 
 id_date = {}
 def id_date_load(filename):
+    
     global id_date
     if os.path.exists(filename):
         try:
@@ -445,19 +474,15 @@ def id_date_load(filename):
             error_add(filename, e.__str__())
 
 def object_date_add(obj):
+    # if (obj["id"] == "person:kecic__zarko"):
+        # print("   * obj in date add:" ,obj)
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
         if "dates" in obj:
-            ## these lines below replace the commented out code
-            if "date" not in obj or obj["date"] < obj["dates"]["date"]:
-                obj["date"] = obj["dates"]["date"]
-            ## TODO: commented out because this code handles dates as an array, not an object
-            ## if venues change to an array of objects, handle it here
-            #for date_url in obj["dates"]:
-            #    if "date" not in obj or obj["date"] < date_url["date"]:
-            #        print(date_url)
-            #        obj["date"] = date_url["date"]
+            for date_url in obj["dates"]:
+                if "date" not in obj or obj["date"] < date_url["date"]:
+                    obj["date"] = utils.date_parse(date_url["date"])
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
@@ -470,7 +495,7 @@ def object_date_add(obj):
     ## Get github file modified dates 
     for key in ["dateObjectCreated", "dateObjectModified"]:
         if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
-            obj[key] = id_date[obj["id"]][key]
+            obj[key] = utils.date_parse(id_date[obj["id"]][key])
         else:
             # if the file is not a placeholder
             if not re_placeholder.search(obj["filename"]):
@@ -503,7 +528,7 @@ def object_date_add(obj):
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
-                obj["date"] = person_venue["date"]
+                obj["date"] = utils.date_parse(person_venue["date"])
             if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
                 vid = person_venue["venue"]
                 if vid in id_object:
@@ -528,11 +553,9 @@ def object_date_add(obj):
                     break
     
 
-    
-    #for dst,src in [["dateCreated","dateObjectCreated"], ["dateModified","dateObjectModified"]]:
+    #for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
     #    if dst not in obj:
     #        obj[dst] = obj[src]
-
     #if obj["__typename"] == "Dataset":
         #if "dateStart" in obj:
             #obj["date"] = obj["dateStart"]
@@ -593,7 +616,7 @@ def object_add(type_, info):
             date,id_short = m.groups()
             id_paper[id_short] = info
         else:
-            info["id"] = utils.id_create(filename, info["__typename"],info["id"])
+            info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
 
     if not error:
         id_object[info["id"]] = info
@@ -678,7 +701,7 @@ def object_finish(obj):
                                     if caida:
                                         if "tags" not in person:
                                             person["tags"] = ["caida"]
-                                        else:
+                                        elif "caida" not in person["tags"]:
                                             person["tags"].append("caida")
                                     person_org[k] = person["id"]
                                 else:
@@ -732,6 +755,7 @@ def person_lookup_id(filename, id_):
             "id":id_, 
             "filename":obj["filename"] 
         }
+        print(" data-build, line 729: object_add")
         person = object_add("Person", person_add_names(person))
     return person
 
@@ -771,6 +795,7 @@ def object_lookup(info):
     type_ = info["__typename"] = info["__typename"].lower()
     info["__typename"] = type_.title()
     if "id" not in info:
+        print("no id in info, : ", info)
         if "name" in info and "__typename" in info:
             id_ = utils.id_create(info["__typename"],info["name"])
             info["id"] = id_
@@ -807,7 +832,7 @@ def tag_convert(filename, obj,padding=""):
     return obj
 
 def personName_add(obj, person_id):
-    #print (json.dumps(obj))
+    #print (person_id)
     names = person_id.split(":")[1].split("__")
     if len(names) == 2:
         first_name, last_name = names
@@ -820,6 +845,7 @@ def personName_add(obj, person_id):
         if name not in personName_ids:
             personName_ids[name] = set()
         personName_ids[name].add(i)
+    #print("person name id", personName_ids)
 
 def link_add(obj,info,p=False):
 
@@ -841,7 +867,8 @@ def link_add(obj,info,p=False):
         return None
 
     if to not in id_object:
-        error_add(obj["filename"], "can't find id "+to)
+        if to not in id_in_catalog:
+            error_add(obj["filename"], "can't find id "+to)
         return False
 
     info["from"] = obj["id"]
@@ -943,7 +970,7 @@ def recipe_process(path):
                                 else:
                                     tab_content += line
                             if extention == "md":
-                                f = "markdown"
+                                f = "md"
                             else:
                                 f = "text"
                             tabs.append({
@@ -1007,6 +1034,7 @@ def person_add_names(person):
         names = person["name"].split(", ")
         person["nameLast"] = names[0]
         person["nameFirst"] = names[1]
+
     else:
         if "nameFirst" not in person or "nameLast" not in person:
             if "person:" in person["id"][:7]:
@@ -1016,12 +1044,35 @@ def person_add_names(person):
             person["nameLast"] = names[0].title()
             person["nameFirst"] = " ".join(names[1:]).title()
     person["name"] = person["nameLast"]+", "+person["nameFirst"]
+    unidecoded_person = unidecode.unidecode(person["id"])
+    
+    if unidecoded_person != person["id"]:
+        print("adding names")
+        ## add non-unidecoded name in names array
+        utf8_names = { 'first': person["nameFirst"], 'last': person['nameLast'] }
+
+        # Add special character names to the names array 
+        if 'names' in person:
+            if utf8_names not in person['names']:
+                person['names'] = person['names'] + [utf8_names]
+        else:
+            person['names'] = [utf8_names]
+        
+        # update names to be non special characters
+        person["nameLast"] = unidecode.unidecode(person["nameLast"])
+        person["nameFirst"] = unidecode.unidecode(person["nameFirst"])
+        person["name"] = person["nameLast"]+", "+person["nameFirst"]
+        
+        print("  # names: ", person['names'])
+        
+        
     for key in ["nameFirst","nameLast"]:
         if key not in person or person[key] is None:
             person[key] = ""
             print ("failed to find",key,person)
-    #print (person["id"])
+
     #print ("    ",person["nameLast"]+", "+person["nameFirst"])
+    
     return True
 
 
@@ -1038,34 +1089,38 @@ def object_checker(obj):
 
 #############################
 
-
+## TODO: Searches through the alias if there is a person (get ascii and non ascii )
+## Could also check for aliases // add alias to dictionary here 
 def word_scoring(obj, recursive=False):
     global singlar_plural
+    word_weights = []
     word_score = {}
+    
+    ## Adding words and their weights from each key 
     for key,value in obj.items():
-        if key in key_weight:
-            weight = key_weight[key]
+        word_freq = word_freq_get(value)
+        if key in SCORE_WEIGHT:
+            weight = SCORE_WEIGHT[key]
         else:
-            weight = weight_default
+            weight = SCORE_WEIGHT["other"]
+        for word_original, freq in word_freq.items():
+            word_weights.append([word_original, weight])
 
-        if weight == 0:
-            continue
+    ## Checking aliases in person and adding weights for the names
+    if obj["id"].split(":")[0] == "person" and "names" in obj:
+        for name in obj["names"]:
+            for key in ["nameFirst", "nameLast"]:
+                if key in SCORE_WEIGHT:
+                    word_weights.append([name[key], SCORE_WEIGHT[key]])
 
-        for key,value in obj.items():
-            word_freq = word_freq_get(value)
-            if key in SCORE_WEIGHT:
-                weight = SCORE_WEIGHT[key]
-
+    ## score up the weights for all the words
+    for word_original, weight in word_weights:
+        ## Add additional word, additional to LEM, add UNIDECODED version 
+        for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
+            if word not in word_score:
+                word_score[word] = weight
             else:
-                weight = SCORE_WEIGHT["other"]
-
-            for word_original, freq in word_freq.items():
-                for word in [word_original, Lem.lemmatize(word_original)]:
-                    if word not in word_score:
-                        word_score[word] = weight
-                    else:
-                        word_score[word] = word_score[word] | weight
-                    #print (key,weight, word, format(word_score[word],'b'))
+                word_score[word] = word_score[word] | weight
     id_word_score[obj["id"]] = word_score
 
 def word_scoring_link(w_s0, w_s1):
@@ -1098,7 +1153,7 @@ def word_freq_get(value):
     type_ = type(value)
     if str == type_:
         if value in id_object:
-            obj = id_object[value];
+            obj = id_object[value]
             t = obj["__typename"]
             keys = []
             if t == "Person":
@@ -1114,7 +1169,7 @@ def word_freq_get(value):
                 if key in obj:
                     word_freq[obj[key].lower()] = 1.0/len(keys)
         else:
-            words = re_not_word.split(re_html.sub("",value.lower() ))
+            words = re_not_word.split(re_html.sub("",unidecode.unidecode(value.lower()) ))
             total = len(words)
             for word in words:
                 if len(word) > 0 and re_word.search(word): 
@@ -1238,7 +1293,7 @@ def data_load_from_summary(filename):
             if len(line) == 0 or line[0] == "#":
                 continue
             metadata = json.loads(line)
-            dataset_id = 'dataset:' + metadata["fileset"].replace('-','_')
+            dataset_id = utils.id_create(metadata["filename"], 'dataset', metadata["fileset"]) 
             if dataset_id in id_object:
                 obj = id_object[dataset_id]
                 for key in ["dateStart","dateEnd","status"]:

@@ -2,9 +2,10 @@
     "id": "northeastern_university",
     "name": "Northeastern University",
     "description": "",
-    "dates": {
-        "date": "2013.2",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2013.2",
+            "url": ""
+        }
+    ]
 }
