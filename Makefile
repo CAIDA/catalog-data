@@ -3,9 +3,9 @@ PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
 SUMMARY_DATA_FILE = data/catalog-dataset-summary.jsonl
+SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
 SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
 SUMMARY_TEMP = _catalog-dataset-summary.jsonl
-SUMMARY_FILE = catalog-dataset-summary.jsonl
 
 URL=https://api.catalog.caida.org/v1
 IDS_FILE=data/ids.txt
@@ -16,7 +16,6 @@ END=`date +%s`
 
 
 run:clean_placeholders pubdb externallinks caida summary scripts/data-build.py
-	echo "$(wildcard ${CATALOG_DATA_CAIDA_PATH})"
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py -s ${SUMMARY_FILE}
 else
@@ -27,7 +26,7 @@ endif
 summary:
 	@ # remove the file if it older then 1 day
 	@ if [ -f ${SUMMARY_FILE} ]; then \
-		find "${SUMMARY_FILE}" -type f -mtime +1d -delete ; \
+		find "${SUMMARY_FILE}" -type f -mtime +23h -delete ; \
 	fi
 
 	@ # if the file doesn't exist download it 
@@ -59,7 +58,7 @@ data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
 
 clean: clean_placeholders
-	rm -f id_object.json id_id_link.json word_id_score.json ${SUMMARY_FILE}
+	rm -f id_object.json id_id_link.json word_id_score.json ${SUMMARY_FILE} ${IDS_FILE}
 
 clean_placeholders:
 	rm -f pubdb
