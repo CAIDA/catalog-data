@@ -1012,7 +1012,7 @@ def get_url():
             error_add(filename, "failed to find origin url, using "+url)
     else:
         url = repo_url_default
-        error_add(filename, "does not exist")
+        warning_add(filename, "does not exist (this is normal for a submodule)")
 
     return url
 
