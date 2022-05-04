@@ -46,8 +46,6 @@ import os.path
 import requests
 import time
 
-URL = "https://api.catalog.caida.org/v2/graphql"
-
 #method to print how to run script
 def print_help():
     print (sys.argv[0],"-u as-rank.caida.org/api/v1")
@@ -57,17 +55,18 @@ def print_help():
 ######################################################################
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", dest="force", help="forcing download", type=str)
+parser.add_argument("-l", dest="local_file", help="used if summaries can not be downloaded", type=str)
 parser.add_argument("-O", dest="output", help="saves to output", type=str)
 parser.add_argument("url",nargs=1, type=str,help="url")
 args = parser.parse_args()
+url = args.url[0]
 
-# get the 
+# Check output file freshness
 if os.path.exists(args.output):
     ti_m = time.time() - os.path.getmtime(args.output)
     if ti_m < 23*60*60:
         print ("   ",args.output,"is fresh (less then 23 hours) not downloading")
         sys.exit()
-print ("   downloadings",args.output)
 
 # Open the output file
 try:
@@ -76,33 +75,16 @@ except Exception as e:
     print(e,file=sys.stderr)
     sys.exit()
 
-######################################################################
-## Query
-######################################################################
-query = """
-# Write your query or mutation here
-{
-  search (query:"") {
-    totalCount
-    edges {
-      node {
-        id
-      }
-    }
-  }
-}"""
-request = requests.post(URL,json={'query':query})
+# Try to download it
+print("   downloading", url)
+request = requests.get(url)
+
+# If you fail, use the local file
 if request.status_code != 200:
-    print ("Query failed to run returned code of %d " % (request.status_code))
+    print ("   Query failed to run returned code of %d " % (request.status_code))
+    with open (args.local_file,"r") as fin:
+        for line in fin:
+            fout.write(line)
     sys.exit()
 
-data = request.json()
-current = data
-for key in ["data","search","edges"]: 
-    if key in current:
-        current = current[key]
-    else:
-        print ("Failed to parse:",data,file=sys.stderr)
-        sys.exit()
-for edge in current:
-    fout.write(edge["node"]["id"]+"\n")
+fout.write(request.text)
