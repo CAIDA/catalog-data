@@ -474,8 +474,6 @@ def id_date_load(filename):
             error_add(filename, e.__str__())
 
 def object_date_add(obj):
-    # if (obj["id"] == "person:kecic__zarko"):
-        # print("   * obj in date add:" ,obj)
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
