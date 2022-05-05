@@ -2,9 +2,10 @@
     "id": "extreme_networking",
     "name": "Extreme Networking",
     "description": "",
-    "dates": {
-        "date": "2001.1",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2001.1",
+            "url": ""
+        }
+    ]
 }

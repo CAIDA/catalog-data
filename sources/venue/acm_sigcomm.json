@@ -2,9 +2,10 @@
     "id": "acm_sigcomm",
     "name": "ACM SIGCOMM",
     "description": "",
-    "dates": {
-        "date": "2004.9",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2004.9",
+            "url": ""
+        }
+    ]
 }

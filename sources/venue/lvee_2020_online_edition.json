@@ -2,9 +2,10 @@
     "id": "lvee_2020_online_edition",
     "name": "LVEE 2020 ONLINE EDITION",
     "description": "International conference of developers and users of free / open source software",
-    "dates": {
-        "date": "2020.12.19",
-        "url": "https://lvee.org/en/"
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2020.12.19",
+            "url": "https://lvee.org/en/"
+        }
+    ]
 }

@@ -163,16 +163,21 @@ def parse_markdown(filename):
 
         if "files" in obj:
             for name,content in obj["files"].items():
-                section_process(filename, obj, "~~~", "tabs~"+name, content)
+                if type(content) == str and re_not_white_space.search(content):
+                    section_process(filename, obj, "~~~", "tabs~"+name, content)
 
         if "tabs" in obj:
             tabs = []
             for tab in obj["tabs"]:
                 if re_not_white_space.search(tab["content"]):
                     tabs.append(tab)
+                else:
+                    error_add(filename,f'tab empty named:{tab["name"]}' )
 
             if len(tabs) > 0:
                 obj["tabs"] = tabs
+            else:
+                del obj["tabs"]
     return obj
 
 def section_process(filename, obj, ender, name, buffer):
@@ -212,7 +217,7 @@ def section_process(filename, obj, ender, name, buffer):
         if "format" not in data:
             f = "text"
             if ender[0] == "=":
-                f = "markdown"
+                f = "html"
             elif ender[0] == "~":
                 f = "text"
             elif re_html.search(buffer):
@@ -244,7 +249,6 @@ def fields_parser(filename, buffer):
     try: 
         tables = []
         for table in yaml.load_all(buffer,Loader=yaml.Loader):
-            print (table)
             fields = []
             if "fields" in table:
                 fields_parser_helper(table["fields"],"",fields)
@@ -267,7 +271,6 @@ def fields_parser(filename, buffer):
         return None
 
 def fields_parser_helper(fields_dic,label,fields):
-    print (label)
     for key,value in fields_dic.items():
         if key[0] == ".":
             if type(value) is dict:
@@ -279,7 +282,6 @@ def fields_parser_helper(fields_dic,label,fields):
                 if value != "_":
                     field["dataType"] = value
                 fields.append(field)
-                print ("    ",field)
 
 ###########################
 filename_errors = {}

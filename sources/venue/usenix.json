@@ -2,9 +2,10 @@
     "id": "usenix",
     "name": "USENIX",
     "description": "",
-    "dates": {
-        "date": "2001.8",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2001.8",
+            "url": ""
+        }
+    ]
 }

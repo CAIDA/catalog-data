@@ -2,9 +2,10 @@
     "id": "workshop_on_internet_economics_wie",
     "name": "Workshop on Internet Economics WIE",
     "description": "",
-    "dates": {
-        "date": "2011.12",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2011.12",
+            "url": ""
+        }
+    ]
 }

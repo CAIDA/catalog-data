@@ -1,6 +1,4 @@
 #!  /usr/bin/env python3
-__author__ = "Bradley Huffaker"
-__email__ = "<bradley@caida.org>"
 # This software is Copyright (C) 2022 The Regents of the University of
 # California. All Rights Reserved. Permission to copy, modify, and
 # distribute this software and its documentation for educational, research
@@ -39,70 +37,25 @@ __email__ = "<bradley@caida.org>"
 # SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND THE UNIVERSITY OF
 # CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
 # ENHANCEMENTS, OR MODIFICATIONS.
-#
-import argparse
+__author__ = "Bradley Huffaker"
+__email__ = "<bradley@caida.org>"
+# used to plural
 import sys
-import os.path
-import requests
-import time
+import json
 
-URL = "https://api.catalog.caida.org/v2/graphql"
-
-#method to print how to run script
-def print_help():
-    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
-    
-######################################################################
-## Parameters
-######################################################################
-parser = argparse.ArgumentParser()
-parser.add_argument("-f", dest="force", help="forcing download", type=str)
-parser.add_argument("-O", dest="output", help="saves to output", type=str)
-parser.add_argument("url",nargs=1, type=str,help="url")
-args = parser.parse_args()
-
-# get the 
-if os.path.exists(args.output):
-    ti_m = time.time() - os.path.getmtime(args.output)
-    if ti_m < 23*60*60:
-        print ("   ",args.output,"is fresh (less then 23 hours) not downloading")
-        sys.exit()
-print ("   downloadings",args.output)
-
-# Open the output file
-try:
-    fout = open(args.output,"w")
-except Exception as e: 
-    print(e,file=sys.stderr)
-    sys.exit()
-
-######################################################################
-## Query
-######################################################################
-query = """
-# Write your query or mutation here
-{
-  search (query:"") {
-    totalCount
-    edges {
-      node {
-        id
-      }
-    }
-  }
-}"""
-request = requests.post(URL,json={'query':query})
-if request.status_code != 200:
-    print ("Query failed to run returned code of %d " % (request.status_code))
-    sys.exit()
-
-data = request.json()
-current = data
-for key in ["data","search","edges"]: 
-    if key in current:
-        current = current[key]
-    else:
-        print ("Failed to parse:",data,file=sys.stderr)
-        sys.exit()
-for edge in current:
-    fout.write(edge["node"]["id"]+"\n")
+for fname in sys.argv[1:]:
+    with open(fname) as fin:
+        try:
+            obj = json.load(fin)
+            fin.close()
+            if "dates" in obj:
+                print (fname)
+                if type(obj["dates"]) == dict:
+                    obj["dates"] = [obj["dates"]]
+                    if "tags" in obj and len(obj["tags"]) == 0:
+                        del obj["tags"]
+                    with open(fname,"w") as fout:
+                        fout.write(json.dumps(obj,indent=4))
+        except Exception as e:
+            print (fname)
+            print (e)

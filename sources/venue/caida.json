@@ -2,9 +2,10 @@
     "id": "caida",
     "name": "CAIDA",
     "description": "",
-    "dates": {
-        "date": "1998.6",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "1998.6",
+            "url": ""
+        }
+    ]
 }

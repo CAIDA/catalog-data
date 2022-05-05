@@ -2,9 +2,10 @@
     "id": "sdsc",
     "name": "SDSC",
     "description": "",
-    "dates": {
-        "date": "2000.1",
-        "url": ""
-    },
-    "tags": []
+    "dates": [
+        {
+            "date": "2000.1",
+            "url": ""
+        }
+    ]
 }
