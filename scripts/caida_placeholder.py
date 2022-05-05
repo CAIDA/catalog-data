@@ -103,6 +103,8 @@ def main(argv):
     # Parse all .md file in the given path.
     parse_catalog_data_caida(source_dir)
 
+    utils.error_print()
+
     # Print all found JSON objects to individual JSON files.
     print_datasets()
 

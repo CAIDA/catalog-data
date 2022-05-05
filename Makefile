@@ -16,7 +16,9 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
-run:clean_placeholders pubdb externallinks caida summary scripts/data-build.py
+run:clean_placeholders pubdb externallinks caida summary build
+
+build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py -s ${SUMMARY_FILE}
 else
