@@ -164,9 +164,14 @@ def parse_markdown(filename):
                         section_name =  split_group[0].strip()
                         if split_group[1].split("=")[0] == "format":
                             section_format = split_group[1].split("=")[1].strip()
-                            if section_format not in ["html", "markdown", "text"]:
+                            if section_format not in ["html", "markdown", "md", "text", "txt"]:
                                 print(f'\nWARNING: Unrecognized format "{section_format}" in {filename}, acceptable formats are markdown, html, or text')
                                 section_format = "html"
+                            # normalize short names to the full name
+                            if section_format == "md":
+                                section_format = "markdown"
+                            elif section_format == "txt":
+                                section_format = "text"
                         else:
                             print(f'\nWARNING: Unrecognized parameter "{split_group[1].split("=")[0]}" in {filename} tab')
                             section_format = "html"
