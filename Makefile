@@ -6,7 +6,7 @@ SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.
 SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
 SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
 
-URL=https://api.catalog.caida.org/v1
+URL=https://api.catalog.caida.org/v2/graphql
 IDS_FILE=data/_ids.txt
 
 FRESH_HOURS=23
@@ -16,12 +16,13 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
+run:clean_placeholders pubdb externallinks caida summary build
 
-run:clean_placeholders pubdb externallinks caida summary scripts/data-build.py
+build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py -s ${SUMMARY_FILE}
 else
-		./scripts/catalog_ids_download.py -O ${IDS_FILE} ${URL}
+		./scripts/catalog-ids-download.py -O ${IDS_FILE} ${URL}
 		python3 scripts/data-build.py -i ${IDS_FILE} -s ${SUMMARY_FILE}
 endif
 

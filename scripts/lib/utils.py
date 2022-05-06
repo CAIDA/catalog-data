@@ -3,6 +3,7 @@ import sys
 import traceback
 import unidecode
 import json
+import yaml
 
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
@@ -123,7 +124,7 @@ def parse_markdown(filename):
     section_name = None
     section_buffer = None
 
-    metadata = None
+    obj = None
     with open(filename) as file:
         for line in file:
             #print (section_name, section_ender,"|",line.rstrip())
@@ -132,16 +133,17 @@ def parse_markdown(filename):
                 if section_ender == line.rstrip():
                     if "metadata" == section_name:
                         try:
-                            metadata = json.loads(section_buffer)
-                            metadata["filename"] = filename
+                            obj = json.loads(section_buffer)
+                            obj["filename"] = filename
                         except json.decoder.JSONDecodeError as e:
                             print ("   json parse error in metadata",filename, e,file=sys.stderr)
                             return None
-                    elif metadata is None:
+                    elif obj is None:
                         print("found section '"+line.rstrip()+"' before '~~~metadata' in",filename, file=sys.stderr)
                         return None
                     else:
-                        section_process(metadata, section_ender, section_name, section_buffer, section_format)
+                        section_process(filename, obj, section_ender, section_name, section_buffer,section_format)
+
                     section_name = None
                     section_buffer = None
                     section_ender = None
@@ -185,48 +187,89 @@ def parse_markdown(filename):
         ## Adds content tab
         if section_buffer is not None:
             if re_not_white_space.search(section_buffer):
-                section_process(metadata, section_ender, section_name, section_buffer, section_format)
+                section_process(filename, obj, section_ender, section_name, section_buffer, section_format)
             else:
                 print(f'   DID NOT ADD empty: {section_name:25} tab in {filename}' )
-        ## adds each file as a tab
-        if "files" in metadata:
-            for name,content in metadata["files"].items():
-                ## set format as text for files
-                ## TODO: Add different file formats based on file extension
-                if re_not_white_space.search(content):
-                    section_process(metadata, "~~~", "tabs~"+name, content, "text")
+         ## adds each file as a tab
+        if "files" in obj:
+            for name,content in obj["files"].items():
+                if type(content) == str and re_not_white_space.search(content):
+                    section_process(filename, obj, "~~~", "tabs~"+name, content, "text")
                 else:
                     print(f'   DID NOT ADD empty: {name:25} tab in {filename}' )  
-        
-        if "tabs" in metadata:
+
+        if "tabs" in obj:
             tabs = []
-            for tab in metadata["tabs"]:
+            for tab in obj["tabs"]:
                 if re_not_white_space.search(tab["content"]):
                     tabs.append(tab)
                 else:
-                    print(f'   DID NOT ADD empty: {tab["name"]:25} tab in {filename}' )
+                    error_add(filename,f'tab empty named:{tab["name"]}' )
 
             if len(tabs) > 0:
-                metadata["tabs"] = tabs
+                obj["tabs"] = tabs
+            else:
+                del obj["tabs"]
+    return obj
 
-    return metadata
+def section_process(filename, obj, ender, name, buffer, format):
+    data = {} 
+    if ";" in name:
+        name_old = name
+        key_values = name.split(";")
+        print (name,key_values)
+        name = key_values[0]
+        for key_value in key_values[1:]:
+            if "=" not in key_value:
+                error_add(filename,"unable to parse key_value in "+name_old)
+                sys.exit(-1)
+            key, value = key_value.split("=")
+            data[key] = value
 
-def section_process(metadata, ender, name, buffer, format):
+    if "format" in data:
+        f = data["format"].lower()
+        if f == "yaml":
+            try: 
+                buffer = list(yaml.load_all(buffer,Loader=yaml.Loader))
+            except Exception as e:
+                error_add(filename, "YAML:"+e.__str__())
+                return
+
+        elif f == "fields":
+            buffer = fields_parser(filename, buffer)
+            if buffer is None:
+                return
     if name[:5] == "tabs"+ender[0]:
-        if "tabs" not in metadata:
-            metadata["tabs"] = []
-        
+        if "tabs" not in obj:
+            obj["tabs"] = []
+        data["name"] = name[5:]
+        data["content"] = buffer
         f = "text"
         ## set format if it doesn't exist, (would not exist for files that turned into tabs)
         if format is not None:
             f = format
-        metadata["tabs"].append({
-            "name":name[5:],
-            "format":f,
-            "content":buffer
-        })
+        if "format" not in data:
+            data["format"] = f
+        obj["tabs"].append(data)
+
+
+        data["name"] = name[5:]
+        data["content"] = buffer
+        if "format" not in data:
+            f = "text"
+            if ender[0] == "=":
+                f = "html"
+            elif ender[0] == "~":
+                f = "text"
+            elif re_html.search(buffer):
+                f = "html"
+            elif re_md.search(buffer):
+                f = "markdown"
+            data["format"] = f
+        obj["tabs"].append(data)
+
     else:
-        current = metadata
+        current = obj
         parts = name.split(ender[0])
         i = 0
         while i < len(parts)-1:
@@ -243,3 +286,70 @@ def section_process(metadata, ender, name, buffer, format):
                 current[name] = [value, buffer]
         else:
             current[name] = buffer
+
+def fields_parser(filename, buffer):
+    try: 
+        tables = []
+        for table in yaml.load_all(buffer,Loader=yaml.Loader):
+            fields = []
+            if "fields" in table:
+                fields_parser_helper(table["fields"],"",fields)
+            if len(fields) > 0:
+                table["fields"] = fields
+                if "anchors" in table:
+                    del table["anchors"]
+                tables.append(table)
+            else:
+                if "name" in table:
+                    error_add(filename, "field's table: "+table["name"]+" has no fields")
+                else:
+                    error_add(filename, "field's table has no name or fields")
+        if len(tables) > 0:
+            return tables
+        else:
+            return None
+    except Exception as e:
+        error_add(filename, "YAML:"+e.__str__())
+        return None
+
+def fields_parser_helper(fields_dic,label,fields):
+    for key,value in fields_dic.items():
+        if key[0] == ".":
+            if type(value) is dict:
+                fields_parser_helper(value,label+key,fields)
+            else:
+                field = {
+                    "name":label+key
+                }
+                if value != "_":
+                    field["dataType"] = value
+                fields.append(field)
+
+###########################
+filename_errors = {}
+def error_add(filename, message):
+    if filename not in filename_errors:
+        filename_errors[filename] = []
+    filename_errors[filename].append(["  error",message])
+
+def warning_add(filename, message):
+    if filename not in filename_errors:
+        filename_errors[filename] = []
+    filename_errors[filename].append(["warning",message])
+
+def error_print():
+    if len(filename_errors) > 0:
+        print ("")
+
+    for filename,type_messages in filename_errors.items():
+        print (filename)
+        for t,m in type_messages:
+            if "error" in t:
+                color_code = "31" # red
+            else:
+                color_code = "1" # black
+            print ("    \033["+color_code+"m",t+":",m,"\033[0m")
+
+    if len(filename_errors) > 0:
+        print ("")
+

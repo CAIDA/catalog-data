@@ -46,7 +46,7 @@ import os.path
 import requests
 import time
 
-URL = "https://api.catalog.caida.org/v2/graphql"
+#URL = "https://api.catalog.caida.org/v2/graphql"
 
 #method to print how to run script
 def print_help():
@@ -56,13 +56,13 @@ def print_help():
 ## Parameters
 ######################################################################
 parser = argparse.ArgumentParser()
-parser.add_argument("-f", dest="force", help="forcing download", type=str)
+parser.add_argument("-f", dest="force", help="forcing download", action='store_true')
 parser.add_argument("-O", dest="output", help="saves to output", type=str)
 parser.add_argument("url",nargs=1, type=str,help="url")
 args = parser.parse_args()
 
 # get the 
-if os.path.exists(args.output):
+if not args.force and os.path.exists(args.output):
     ti_m = time.time() - os.path.getmtime(args.output)
     if ti_m < 23*60*60:
         print ("   ",args.output,"is fresh (less then 23 hours) not downloading")
@@ -91,7 +91,7 @@ query = """
     }
   }
 }"""
-request = requests.post(URL,json={'query':query})
+request = requests.post(args.url[0],json={'query':query})
 if request.status_code != 200:
     print ("Query failed to run returned code of %d " % (request.status_code))
     sys.exit()

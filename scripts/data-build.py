@@ -227,7 +227,8 @@ def main():
                 if re.search("\.json$",filename,re.IGNORECASE):
                     try:
                         info = json.load(open(path+"/"+filename))
-                        info["filename"] = path+"/"+filename
+                        if "filename" not in info:
+                            info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
                         id = obj["id"]
                         if id in seen_id:
@@ -251,6 +252,21 @@ def main():
     print ("adding dates ( skipping '*___*' )")
     for obj in list(id_object.values()):
         object_date_add(obj)
+
+    print ("removing missing ids from id_id_links")
+    missing = []
+    for id0,id_link in id_id_link.items():
+        if id0 not in id_object:
+            missing.append(id0)
+        else:
+            m = []
+            for id1 in id_link.keys():
+                if id1 not in id_object:
+                    m.append(id1)
+            for id1 in m:
+                del id_link[id1]
+    for id0 in missing:
+        del id_id_link[id0]
 
     ######################
     # tag objects linked to caida_data
@@ -307,7 +323,7 @@ def main():
     #######################
     # printing errors
     #######################
-    error_print()
+    utils.error_print()
 
     #######################
     # pubdb links
@@ -430,33 +446,6 @@ def main():
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=4)
 
-###########################
-def error_add(filename, message):
-    if filename not in filename_errors:
-        filename_errors[filename] = []
-    filename_errors[filename].append(["  error",message])
-
-def warning_add(filename, message):
-    if filename not in filename_errors:
-        filename_errors[filename] = []
-    filename_errors[filename].append(["warning",message])
-
-def error_print():
-    if len(filename_errors) > 0:
-        print ("")
-
-    for filename,type_messages in filename_errors.items():
-        print (filename)
-        for t,m in type_messages:
-            if "error" in t:
-                color_code = "31" # red
-            else:
-                color_code = "1" # black
-            print ("    \033["+color_code+"m",t+":",m,"\033[0m")
-
-    if len(filename_errors) > 0:
-        print ("")
-
 ########################### 
 # Date
 ########################### 
@@ -471,7 +460,7 @@ def id_date_load(filename):
         try:
             id_date = json.load(open(filename,"r"))
         except ValueError as e:
-            error_add(filename, e.__str__())
+            utils.error_add(filename, e.__str__())
 
 def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
@@ -524,9 +513,9 @@ def object_date_add(obj):
         ## if there is no dateStart or dateCreated, print warning
         else:
             if "dateStart" in obj:
-                print(f'{obj["id"]:50} has dateStart, please change to dateCreated')
+                utils.error_add(obj["filename"], f'has dateStart, please change to dateCreated')
             else:
-                print(f'{obj["id"]:50} missing dateStart or dateCreated, please add dateCreated')
+                utils.error_add(obj["filename"], "missing dateStart or dateCreated, please add dateCreated")
     
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
@@ -537,7 +526,7 @@ def object_date_add(obj):
                 if vid in id_object:
                     person_venue["venue"] = id_object[vid]["name"]
                 else:
-                    print ("    missing venue:",person_venue["venue"])
+                    utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
     else:
         if "date" not in obj:
             obj["date"] = None
@@ -563,7 +552,7 @@ def object_date_add(obj):
         #if "dateStart" in obj:
             #obj["date"] = obj["dateStart"]
         #else:
-            #warning_add(obj["filename"],"dataset requires dateStart")
+            #utils.warning_add(obj["filename"],"dataset requires dateStart")
             #obj.pop("date",None)
     #else:
         #if "date" not in obj:
@@ -604,14 +593,14 @@ def object_add(type_, info):
         else:
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
     else:
-        error_add(info["filename"], "failed to find name:"+json.dumps(info))
+        utils.error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
     
     if type_ == "paper":
         if "datePublished"  in info:
             info["date"] = info["datePublished"]
         else:
-            error_add(info["filename"], "failed to find paper's date")
+            utils.error_add(info["filename"], "failed to find paper's date")
             error = True
 
         m = re.search("^paper:(\d\d\d\d)_(.+)", info["id"])
@@ -741,7 +730,7 @@ def object_finish(obj):
 
 def person_lookup_id(filename, id_):
     if (type(id_) != str):
-        error_add(filename, "person id wrong type found:"+str(type(id_))+" wanted str : "+json.dumps(id_))
+        utils.error_add(filename, "person id wrong type found:"+str(type(id_))+" wanted str : "+json.dumps(id_))
         return None
 
     id_ = id_.lower()
@@ -749,7 +738,7 @@ def person_lookup_id(filename, id_):
         if "person:" in id_:
             person = object_lookup_id(filename, id_)
         else:
-            error_add(filename, "expected person found "+id_)
+            utils.error_add(filename, "expected person found "+id_)
             return None
     else:
         person = object_lookup_id(filename, "person:"+id_)
@@ -840,7 +829,7 @@ def personName_add(obj, person_id):
     if len(names) == 2:
         first_name, last_name = names
     else:
-        error_add(obj["filename"],"failed to parse person `"+person_id+"'")
+        utils.error_add(obj["filename"],"failed to parse person `"+person_id+"'")
         last_name = names[0]
         first_name = ""
     i = obj["id"]
@@ -853,28 +842,32 @@ def personName_add(obj, person_id):
 def link_add(obj,info,p=False):
 
     if type(info) == str:
-        to_original = info
-        to = utils.id_create(obj["filename"],None,info)
-        info = { "to":to }
+        id_original = info
+        id_new = utils.id_create(obj["filename"],None,info)
+        info = { "from":obj["id"], "to":id_new }
     else:
         if "to" in info:
-            to_original = info["to"]
-            to = info["to"] = utils.id_create(obj["filename"],None,info["to"])
+            info["from"] = obj["id"]
+            id_orginal = info["to"]
+            id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
+        elif "from" in info:
+            info["to"] = obj["id"]
+            id_orginal = info["from"]
+            id_new = info["form"] = utils.id_create(obj["filename"],None,info["from"])
         else:
-            error_add(obj["filename"],"link has no to"+json.dumps(info))
+            utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
 
 
-    if to is None:
-        error_add(obj["filename"],"invalid id "+to_original)
+    if id_new is None:
+        utils.error_add(obj["filename"],"invalid id "+id_original)
         return None
 
-    if to not in id_object:
-        if to not in id_in_catalog:
-            error_add(obj["filename"], "can't find id "+to)
+    if id_new not in id_object:
+        if id_new not in id_in_catalog:
+            utils.error_add(obj["filename"], "can't find id "+id_new)
         return False
 
-    info["from"] = obj["id"]
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
         a_id = info[a]
@@ -942,7 +935,7 @@ def recipe_process(path):
                                         data = None
                                     except ValueError as e:
                                         error = True
-                                        error_add(filename, e.__str__())
+                                        utils.error_add(filename, e.__str__())
                                         #print (e)
                                         #print ("parse failure",data)
                                         break
@@ -1023,10 +1016,10 @@ def get_url():
                         break
         if url is None:
             url = repo_url_default
-            error_add(filename, "failed to find origin url, using "+url)
+            utils.error_add(filename, "failed to find origin url, using "+url)
     else:
         url = repo_url_default
-        error_add(filename, "does not exist")
+        utils.warning_add(filename, "does not exist (this is normal for a submodule)")
 
     return url
 
@@ -1308,6 +1301,6 @@ def data_load_from_summary(filename):
                         else:
                             obj[key] = metadata[key]
             else:
-                error_add(filename, "no matching id for {}".format(dataset_id))
+                utils.error_add(filename, "no matching id for {}".format(dataset_id))
 
 main()

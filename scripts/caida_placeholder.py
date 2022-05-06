@@ -103,6 +103,8 @@ def main(argv):
     # Parse all .md file in the given path.
     parse_catalog_data_caida(source_dir)
 
+    utils.error_print()
+
     # Print all found JSON objects to individual JSON files.
     print_datasets()
 
@@ -162,7 +164,6 @@ def parse_catalog_data_caida(source_dir):
         if os.path.isdir(path):
             for file in sorted(os.listdir(path)):
 
-
                 file_name = file[:file.index(".")].replace("-", "_")
                 file_path = path+file
 
@@ -176,6 +177,7 @@ def parse_catalog_data_caida(source_dir):
                     try:
                         with open(file_path) as f:
                             metadata = json.load(f)
+                            metadata["filename"] = file_path
                     except Exception as e:
                         print ("\nerror:",file_path)
                         print ("    ",e)
@@ -243,7 +245,6 @@ def print_datasets():
             os.mkdir(type_dir)
         # Edge Case: Update path based which software or dataset.
         filename = "%s/%s___caida.json" % (type_dir, id_)
-        obj["filename"] = filename
 
         # Write the JSON object to the file.
         curr_file = json.dumps(id_2_object[type_id], indent=4)
