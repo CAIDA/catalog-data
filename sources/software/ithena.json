@@ -1,6 +1,7 @@
 {
     "id": "ithena",
     "name": "iThena",
+    "dateCreated":"2019-12",
     "description": "iThena is a volunteer distributed computing project running on the Berkeley Open Infrastructure for Network Computing (BOINC). The main goal of the iThena project is to model the infrastructure of networks of the global Internet as real as possible. This modelling can be done on many levels: routers, PoPs (point of presence) and AS (autonomous systems). The model may have characteristics such as latency, bandwidth, packet loss and others. The first initiated test activity of the iThena project took place on August 29, 2019. First official message about the project was sent September 26, 2019.",
     "links": [
         {

@@ -1,6 +1,7 @@
 {
     "id": "howfaster_net",
     "name": "HowFaster.NET",
+    "dateCreated": "2020-12",
     "description": "A web portal that presents data and visualizations about the topology of the Internet. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
     "links": [
         {
