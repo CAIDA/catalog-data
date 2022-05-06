@@ -186,18 +186,15 @@ def parse_markdown(filename):
 
         ## Adds content tab
         if section_buffer is not None:
-            if re_not_white_space.search(section_buffer):
-                section_process(filename, obj, section_ender, section_name, section_buffer, section_format)
-            else:
-                print(f'   DID NOT ADD empty: {section_name:25} tab in {filename}' )
+            section_process(filename, obj, section_ender, section_name, section_buffer, section_format)
+
          ## adds each file as a tab
         if "files" in obj:
             for name,content in obj["files"].items():
-                if type(content) == str and re_not_white_space.search(content):
+                if type(content) == str:
                     section_process(filename, obj, "~~~", "tabs~"+name, content, "text")
-                else:
-                    print(f'   DID NOT ADD empty: {name:25} tab in {filename}' )  
-
+        
+        ## checks for empty tabs, if not empty, delete
         if "tabs" in obj:
             tabs = []
             for tab in obj["tabs"]:
@@ -249,22 +246,6 @@ def section_process(filename, obj, ender, name, buffer, format):
         if format is not None:
             f = format
         if "format" not in data:
-            data["format"] = f
-        obj["tabs"].append(data)
-
-
-        data["name"] = name[5:]
-        data["content"] = buffer
-        if "format" not in data:
-            f = "text"
-            if ender[0] == "=":
-                f = "html"
-            elif ender[0] == "~":
-                f = "text"
-            elif re_html.search(buffer):
-                f = "html"
-            elif re_md.search(buffer):
-                f = "markdown"
             data["format"] = f
         obj["tabs"].append(data)
 
