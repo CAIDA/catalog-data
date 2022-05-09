@@ -185,7 +185,6 @@ def section_process(filename, obj, ender, name, buffer):
     if ";" in name:
         name_old = name
         key_values = name.split(";")
-        print (name,key_values)
         name = key_values[0]
         for key_value in key_values[1:]:
             if "=" not in key_value:
