@@ -208,7 +208,7 @@ def parse_catalog_data_caida(source_dir):
 
                 # If it has no description skip it
                 if "description" not in metadata or re.search("^\s*$", metadata["description"]):
-                    print ("no description: ", file_path)
+                    utils.warning_add(file_path, "no description")
                     number_skipped_no_description += 1
 
                 # Edge Case: Add CAIDA as organization if missing key.
@@ -229,7 +229,7 @@ def parse_catalog_data_caida(source_dir):
                         keys.append(key)
                 for key in keys:
                     del metadata[key]
-    print ("   num. skipped:", number_skipped_no_description)
+    utils.warning_add("", f"Skipped: {number_skipped_no_description} resources with no description")
 
 
 # Print all found datasets to individual JSON objects.
