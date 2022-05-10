@@ -617,9 +617,9 @@ def object_add(type_, info):
 
 def object_finish(obj):
 
-        ############
-        # links 
-        ############
+    ############
+    # links 
+    ############
     if "links" in obj:
         for link in obj["links"]:
             link_add(obj,link)
@@ -632,7 +632,7 @@ def object_finish(obj):
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
             objects = []
-            filename = obj["filename"];
+            filename = obj["filename"]
             if key == "tags":
                 objects = [obj]
             else:
@@ -650,7 +650,10 @@ def object_finish(obj):
                     if o is not None:
                         tag = obj["tags"][i] = o["id"]
                         link_add(obj,tag)
-
+        elif key == "resources":
+            for resource in value:
+                if "name" not in resource:
+                    utils.error_add(obj["filename"], "resources require a name field")
         #elif key == "resources":
         #    for resource in obj["resources"]:
         #        for i,tag in enumerate(resource[key]):
