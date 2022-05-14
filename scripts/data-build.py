@@ -620,6 +620,15 @@ def object_finish(obj):
     if "tags" not in obj:
         obj["tags"] = []
 
+    # fields that media can have, from api scheme 5/13/2022
+    media_fields = ["filename","fundingSources","__typename", "id", "dateCreated", "dateLastUpdated", "dateObjectCreated", "dateObjectModified", "date", "datePublished", "name", "description", "tags", "links", "pubdb_id", "type", "content", "image", "presenters", "access", "resources", "tabs"]
+    if obj["__typename"] == 'Media':
+        fields_in_obj = obj.keys()
+        # compare the keys in the obj, and the keys allowed 
+        should_not_exist = list(set(fields_in_obj).difference(media_fields))
+        # if there are fields in obj that do not exist in scheme, print warning
+        if (len(should_not_exist) > 0):
+            utils.warning_add(obj["filename"], f"Has extra fields {','.join(should_not_exist)}")
 
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
