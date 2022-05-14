@@ -170,7 +170,8 @@ def main():
                     obj["links"].append(to_id)
             else:
                 print (obj["id"], "failed to parse linkedObject `"+linked+"'")
-
+        if "linkedObjects" in obj:
+            del obj["linkedObjects"]
 
 
         json.dump(obj,open(obj["filename"],"w"),indent=4)
