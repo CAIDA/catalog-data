@@ -22,7 +22,7 @@
     "type":"POSTER",
     "access": [
         {
-            "url": "https://www.caida.org/projects/cartography/as-core/2005/",
+            "url": "https://www.caida.org/projects/as-core/2005/",
             "tags": [
                 "web page"
             ],
@@ -30,7 +30,7 @@
         },
         {
             "name": "PNG IPv4",
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2005-apr-ipv4-standalone-1600x1333.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2005-apr-ipv4-standalone-1600x1333.png",
             "tags": [
                 "PNG"
             ],
@@ -38,7 +38,7 @@
         },
         {
             "name": "PNG IPv6",
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2005-apr-ipv6-standalone-1600x1333.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2005-apr-ipv6-standalone-1600x1333.png",
             "tags": [
                 "PNG"
             ],

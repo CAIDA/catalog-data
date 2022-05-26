@@ -1,7 +1,8 @@
 {
     "id": "netacuity",
     "name": "Netacuity",
-    "description": "Digital Element\u2019s geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more\u2014information that is proven to help improve the relevance, reach and response of online activities.",
+    "dateCreated":"2011-06",
+    "description": "Digital Element's geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more - information that is proven to help improve the relevance, reach and response of online activities.",
     "links": [
         {
             "to": "paper:2019_at_home_abroad",

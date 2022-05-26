@@ -506,16 +506,8 @@ def object_date_add(obj):
     
     # change date start to dateCreated for software
     if obj["__typename"] == "Software":
-        ## TODO: This logic block should go away when the software get updated
-        if "dateStart" in obj or "dateCreated" in obj:
-            if  "dateCreated" not in obj:
-                obj["dateCreated"] = obj["dateStart"]
-        ## if there is no dateStart or dateCreated, print warning
-        else:
-            if "dateStart" in obj:
-                utils.error_add(obj["filename"], f'has dateStart, please change to dateCreated')
-            else:
-                utils.error_add(obj["filename"], "missing dateStart or dateCreated, please add dateCreated")
+        if "dateCreated" not in obj and "dateModified" not in obj:
+            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
@@ -617,9 +609,9 @@ def object_add(type_, info):
 
 def object_finish(obj):
 
-        ############
-        # links 
-        ############
+    ############
+    # links 
+    ############
     if "links" in obj:
         for link in obj["links"]:
             link_add(obj,link)
@@ -632,7 +624,7 @@ def object_finish(obj):
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
             objects = []
-            filename = obj["filename"];
+            filename = obj["filename"]
             if key == "tags":
                 objects = [obj]
             else:
@@ -650,7 +642,10 @@ def object_finish(obj):
                     if o is not None:
                         tag = obj["tags"][i] = o["id"]
                         link_add(obj,tag)
-
+        elif key == "resources":
+            for resource in value:
+                if "name" not in resource:
+                    utils.error_add(obj["filename"], "resources require a name field")
         #elif key == "resources":
         #    for resource in obj["resources"]:
         #        for i,tag in enumerate(resource[key]):

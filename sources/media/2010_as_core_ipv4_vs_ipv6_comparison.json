@@ -21,14 +21,14 @@
     "type":"POSTER",
     "access": [
         {
-            "url": "https://www.caida.org/projects/cartography/as-core/2010/",
+            "url": "https://www.caida.org/projects/as-core/2010/",
             "tags": [
                 "web page"
             ],
             "access": "public"
         },
         {
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2010-aug-ipv4v6-poster-1600x1075.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2010-aug-ipv4v6-poster-1600x1075.png",
             "tags": [
                 "PNG"
             ],
@@ -36,7 +36,7 @@
         },
         {
             "name": "PNG IPv4",
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2010-aug-ipv4-standalone-1600x1333.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2010-aug-ipv4-standalone-1600x1333.png",
             "tags": [
                 "PNG"
             ],
@@ -44,7 +44,7 @@
         },
         {
             "name": "PNG IPv6",
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2010-aug-ipv6-standalone-1600x1333.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2010-aug-ipv6-standalone-1600x1333.png",
             "tags": [
                 "PNG"
             ],

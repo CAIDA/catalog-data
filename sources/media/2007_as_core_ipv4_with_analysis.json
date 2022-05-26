@@ -19,10 +19,10 @@
     ],
     "date":"2007.08",
     "type":"POSTER",
-    "image":"https://www.caida.org/projects/cartography/as-core/pics/ascore-2007-jul-ipv4-poster.pdf",
+    "image":"https://www.caida.org/projects/as-core/pics/ascore-2007-jul-ipv4-poster.pdf",
     "access": [
         {
-            "url": "https://www.caida.org/projects/cartography/as-core/2007/",
+            "url": "https://www.caida.org/projects/as-core/2007/",
             "tags": [
                 "web page"
             ],
@@ -30,14 +30,14 @@
         },
         {
             "name": "PNG IPv4",
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2007-aug-ipv4-standalone-1600x1333.png",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2007-aug-ipv4-standalone-1600x1333.png",
             "tags": [
                 "PNG"
             ],
             "access": "public"
         },
         {
-            "url": "https://www.caida.org/projects/cartography/as-core/pics/ascore-2007-jul-ipv4-poster.pdf",
+            "url": "https://www.caida.org/projects/as-core/pics/ascore-2007-jul-ipv4-poster.pdf",
             "tags": [
                 "PDF"
             ],
