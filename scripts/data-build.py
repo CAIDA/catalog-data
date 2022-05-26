@@ -866,7 +866,11 @@ def link_add(obj,info,p=False):
     if id_new not in id_object:
         if id_new not in id_in_catalog:
             utils.error_add(obj["filename"], "can't find id "+id_new)
-        return False
+        return None
+
+    if info["from"] == info["to"]:
+        utils.error_add(obj["filename"], "can't link to itself: "+info["from"])
+        return None
 
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
