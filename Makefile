@@ -2,6 +2,7 @@ CATALOG_DATA_CAIDA_PATH = catalog-data-caida/sources/
 PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
+
 SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
 SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
 SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
@@ -16,14 +17,19 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
+DATA_BUILD_OPTS=-s ${SUMMARY_FILE}
+
 run:clean_placeholders pubdb externallinks caida summary build
+
+dates_skip:
+	make DATA_BUILD_OPTS="-d ${DATA_BUILD_OPTS}" run
 
 build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
-		python3 scripts/data-build.py -s ${SUMMARY_FILE}
+		python3 scripts/data-build.py ${DATA_BUILD_OPTS}
 else
 		./scripts/catalog-ids-download.py -O ${IDS_FILE} ${URL}
-		python3 scripts/data-build.py -i ${IDS_FILE} -s ${SUMMARY_FILE}
+		python3 scripts/data-build.py ${DATA_BUILD_OPTS} -i ${IDS_FILE} 
 endif
 
 summary:
