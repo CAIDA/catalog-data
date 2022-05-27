@@ -1,3 +1,5 @@
 unidecode
 nltk
 bs4
+pyyaml
+requests
