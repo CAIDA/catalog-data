@@ -59,6 +59,7 @@ import argparse
 parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
+parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
 args = parser.parse_args()
 
 # used to plural
@@ -249,9 +250,12 @@ def main():
     for obj in list(id_object.values()):
         object_finish(obj)
 
-    print ("adding dates ( skipping '*___*' )")
-    for obj in list(id_object.values()):
-        object_date_add(obj)
+    if not args.dates_skip:
+        print ("adding dates ( skipping '*___*' )")
+        for obj in list(id_object.values()):
+            object_date_add(obj)
+    else:
+        print ("skipping adding dates")
 
     print ("removing missing ids from id_id_links")
     missing = []
@@ -861,7 +865,11 @@ def link_add(obj,info,p=False):
     if id_new not in id_object:
         if id_new not in id_in_catalog:
             utils.error_add(obj["filename"], "can't find id "+id_new)
-        return False
+        return None
+
+    if info["from"] == info["to"]:
+        utils.error_add(obj["filename"], "can't link to itself: "+info["from"])
+        return None
 
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b

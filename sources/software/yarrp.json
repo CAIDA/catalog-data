@@ -1,0 +1,37 @@
+{
+    "id": "yarrp",
+    "name": "Yarrp: Yelling at Random Routers Progressively",
+    "dateCreated":"2016-11",
+    "dateModified": "2019-11",
+    "description": "Yarrp is a next-generation active network topology discovery technique and tool designed for rapid mapping at Internet scales. As with traditional traceroute, Yarrp discovers router interfaces and the links between them.",
+    "links": [
+        {
+            "to": "paper:2016_r_beverly_imc_413",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_e_gaston_navpostgrad_2982",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2018_rb_rd_dp_jpr_2019808",
+            "label": "used by"
+        }
+    ],
+    "tags": [
+        "topology"
+    ],
+    "access": [
+        {
+            "url": "https://www.cmand.org/yarrp/",
+            "tags": [
+                "direct download"
+            ],
+            "access": "public"
+        }
+    ],
+     "licenses": [
+        "license:bsd_3_clause"
+    ],
+    "organization": "Center for Measurement and Analysis of Network Data"
+}
