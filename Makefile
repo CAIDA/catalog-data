@@ -21,7 +21,7 @@ DATA_BUILD_OPTS=-s ${SUMMARY_FILE}
 
 run:clean_placeholders pubdb externallinks caida summary build
 
-dates_skip:
+fast:
 	make DATA_BUILD_OPTS="-d ${DATA_BUILD_OPTS}" run
 
 build:
