@@ -5,7 +5,7 @@
     "description":"Example scripts for downloading from AS Rank's GraphQL server.",
     "links": [
         {
-            "to": "dataset:as_rank_online"
+            "to": "dataset:as_rank"
         }
     ],
     "tags": [
