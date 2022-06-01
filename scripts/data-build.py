@@ -214,6 +214,7 @@ def main():
     #######################
     #######################
     seen_id = {}
+
     #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
@@ -223,8 +224,6 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                #if (path == 'sources/person'):               
-                #    print("filename: ",filename)
                 if re.search("\.json$",filename,re.IGNORECASE):
                     try:
                         info = json.load(open(path+"/"+filename))
@@ -236,6 +235,8 @@ def main():
                             print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
                         else:
                             seen_id[id] = filename
+                        if "name" not in obj or obj["name"] == "":
+                            utils.error_add(filename, "no name in oject")
                         if obj is None:
                             print ("parse error   ",path+"/"+filename)
                     except Exception as e:
@@ -623,7 +624,9 @@ def object_finish(obj):
 
     if "tags" not in obj:
         obj["tags"] = []
-
+    
+    if "name" not in obj:
+            utils.error_add(obj["filename"], "no name")
 
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
@@ -868,7 +871,7 @@ def link_add(obj,info,p=False):
         return None
 
     if info["from"] == info["to"]:
-        utils.error_add(obj["filename"], "can't link to itself: "+info["from"])
+        utils.warning_add(obj["filename"], "can't link to itself: "+info["from"])
         return None
 
     for a_b in [["from","to"],["to","from"]]:

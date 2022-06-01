@@ -172,7 +172,7 @@ def parse_markdown(filename):
                 if re_not_white_space.search(tab["content"]):
                     tabs.append(tab)
                 else:
-                    error_add(filename,f'tab empty named:{tab["name"]}' )
+                    warning_add(filename,f'tab empty named:{tab["name"]}' )
 
             if len(tabs) > 0:
                 obj["tabs"] = tabs
