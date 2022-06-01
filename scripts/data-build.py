@@ -624,9 +624,6 @@ def object_finish(obj):
 
     if "tags" not in obj:
         obj["tags"] = []
-    
-    if "name" not in obj:
-            utils.error_add(obj["filename"], "no name")
 
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
