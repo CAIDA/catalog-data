@@ -13,12 +13,5 @@
     "licenses": [
         "license:bsd_2_clause_simplified"
     ],
-    "links": [
-        {
-            "to": "software:dzdb_api"
-        },
-        {
-            "to": "dataset:dzdb"
-        }
-    ]
+    "links": ["software:dzdb_api"]
 }
