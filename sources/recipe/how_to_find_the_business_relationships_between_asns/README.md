@@ -6,7 +6,7 @@
     "visibility" : "public",
     "name" : "How to find the business relationship between asns",
     "description" : "Using .as-rel file, or AS Rank to map a pair of given asns to their relationship.",
-    "links": [{"to":"dataset:as_relationships_serial_1"}, {"to":"dataset:as_rank_online"}],
+    "links": [{"to":"dataset:as_relationships_serial_1"}, {"to":"dataset:as_rank"}],
     "tags" : [
         "ASN",
         "as relationship",
