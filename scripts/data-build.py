@@ -856,7 +856,7 @@ def link_add(obj,info,p=False):
         elif "from" in info:
             info["to"] = obj["id"]
             id_original = info["from"]
-            id_new = info["form"] = utils.id_create(obj["filename"],None,info["from"])
+            id_new = info["from"] = utils.id_create(obj["filename"],None,info["from"])
         else:
             utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
