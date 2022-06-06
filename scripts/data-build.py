@@ -267,9 +267,9 @@ def main():
                     m.append(id1)
             for id1 in m:
                 del id_link[id1]
-    print("missing ", len(missing), "ids")
+    if len(missing) > 0:
+        utils.warning_add(f"Missing {len(missing)} ids:", f"{', '.join(str(x) for x in missing)}")
     for id0 in missing:
-        print("    ", id0)
         del id_id_link[id0]
 
     ######################
