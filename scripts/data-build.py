@@ -223,8 +223,6 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                #if (path == 'sources/person'):               
-                #    print("filename: ",filename)
                 if re.search("\.json$",filename,re.IGNORECASE):
                     try:
                         info = json.load(open(path+"/"+filename))
@@ -269,6 +267,8 @@ def main():
                     m.append(id1)
             for id1 in m:
                 del id_link[id1]
+    if len(missing) > 0:
+        utils.warning_add(f"Missing {len(missing)} ids:", f"{', '.join(str(x) for x in missing)}")
     for id0 in missing:
         del id_id_link[id0]
 
@@ -609,6 +609,7 @@ def object_add(type_, info):
     if not error:
         id_object[info["id"]] = info
         return info
+    print("line 611, error in object add for ", info["id"])
     return None
 
 def object_finish(obj):
@@ -697,24 +698,32 @@ def object_finish(obj):
                                     person_org[k] = person["id"]
                                 else:
                                     error = True
-                    elif type(person_org) == str and person_org[7:] == "person:":
-                        person = person_lookup_id(obj["filename"],person_org)
+                    # if the people are in a list of person ids
+                    elif type(person_org) == str and person_org[:7] == "person:":
+                        person = person_lookup_id(obj["filename"], person_org)
                         persons.add(person["id"])
+                        # link the object to the person as a author or presenter
                         if person is not None:
-                            obj[key][i] = person["id"]
+                            obj[key][i] = dict({"person": person["id"]})
+
                         else:
+                            utils.error_add(obj["filename"], "person is none ${person_org}")
                             error = True
                     if error:
                         del obj[key][i]
                     else:
                         i += 1
+                # add each person as a object and not a person:id link
                 for person_id in persons:
+                    # add links from the person to the obj
                     link_add(obj, person_id)
+                    # add person id to the personName_ids.json
                     personName_add(obj, person_id)
+        
         elif key == "licenses":
             licenses = list(obj[key])
             for i,id_ in enumerate(licenses):
-                id_2 = utils.id_create(obj["filename"],"license",id_);
+                id_2 = utils.id_create(obj["filename"],"license",id_)
                 if id_2 not in id_object:
                     name = id_[8:]
                     object_add("License", {
@@ -725,7 +734,6 @@ def object_finish(obj):
                 obj[key][i] = id_object[id_2]["id"]
         else:
             obj[key] = tag_convert(obj["filename"], obj[key])
-
 
 def person_lookup_id(filename, id_):
     if (type(id_) != str):
@@ -744,9 +752,8 @@ def person_lookup_id(filename, id_):
     if person is None:
         person = { 
             "id":id_, 
-            "filename":obj["filename"] 
+            "filename": filename
         }
-        print(" data-build, line 729: object_add")
         person = object_add("Person", person_add_names(person))
     return person
 
@@ -818,12 +825,11 @@ def tag_convert(filename, obj,padding=""):
     elif type_ == list:
         for i,value in enumerate(obj):
             obj[i] = tag_convert(filename, value,padding + " ")
-    #print (len(padding),padding,obj)
 
     return obj
 
+# add a person to the person id file
 def personName_add(obj, person_id):
-    #print (person_id)
     names = person_id.split(":")[1].split("__")
     if len(names) == 2:
         first_name, last_name = names
@@ -836,10 +842,8 @@ def personName_add(obj, person_id):
         if name not in personName_ids:
             personName_ids[name] = set()
         personName_ids[name].add(i)
-    #print("person name id", personName_ids)
 
 def link_add(obj,info,p=False):
-
     if type(info) == str:
         id_original = info
         id_new = utils.id_create(obj["filename"],None,info)
@@ -847,16 +851,15 @@ def link_add(obj,info,p=False):
     else:
         if "to" in info:
             info["from"] = obj["id"]
-            id_orginal = info["to"]
+            id_original = info["to"]
             id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
         elif "from" in info:
             info["to"] = obj["id"]
-            id_orginal = info["from"]
-            id_new = info["form"] = utils.id_create(obj["filename"],None,info["from"])
+            id_original = info["from"]
+            id_new = info["from"] = utils.id_create(obj["filename"],None,info["from"])
         else:
             utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
-
 
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
@@ -1046,7 +1049,6 @@ def person_add_names(person):
     unidecoded_person = unidecode.unidecode(person["id"])
     
     if unidecoded_person != person["id"]:
-        print("adding names")
         ## add non-unidecoded name in names array
         utf8_names = { 'first': person["nameFirst"], 'last': person['nameLast'] }
 
@@ -1062,15 +1064,11 @@ def person_add_names(person):
         person["nameFirst"] = unidecode.unidecode(person["nameFirst"])
         person["name"] = person["nameLast"]+", "+person["nameFirst"]
         
-        print("  # names: ", person['names'])
-        
         
     for key in ["nameFirst","nameLast"]:
         if key not in person or person[key] is None:
             person[key] = ""
             print ("failed to find",key,person)
-
-    #print ("    ",person["nameLast"]+", "+person["nameFirst"])
     
     return True
 
@@ -1082,7 +1080,6 @@ def object_checker(obj):
         else:
             values = obj["id"].split(":")
             obj["name"] = ":".join(values[1:]).replace("_"," ")
-            print ("creating name for",obj["name"])
 
     return True
 

@@ -37,27 +37,27 @@
     ],
     "authors":[
         {
-            "person": "asturiano_vasco",
+            "person": "asturiano__vasco",
             "organizations": []
         },
         {
-            "person": "claffy_kc",
+            "person": "claffy__kc",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         },
         {
-            "person": "dainotti_alberto",
+            "person": "dainotti__alberto",
             "organizations": ["University of Napoli Federico II, Napoli, Italy"]
         },
         {
-            "person": "gill_philllipa",
+            "person": "gill__philllipa",
             "organizations": ["UMass Amherst"]
         },
         {
-            "person": "king_alistair",
+            "person": "king__alistair",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         },
         {
-            "person": "orsini_chiara",
+            "person": "orsini__chiara",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]

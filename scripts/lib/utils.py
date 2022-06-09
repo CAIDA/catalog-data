@@ -54,10 +54,7 @@ def id_create(filename, type_,id_):
 person_seen = {}
 person_seen_fname = {}
 
-def person_seen_add(fname,person):
-    #if "id" in person:
-    #    person_seen[person["id"]] = person
-    
+def person_seen_add(fname,person):    
     names = [person]
     if "names" in person:
         for name in person["names"]:
