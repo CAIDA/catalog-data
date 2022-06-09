@@ -221,6 +221,8 @@ def section_process(filename, obj, ender, name, buffer):
             elif re_md.search(buffer):
                 f = "markdown"
             data["format"] = f
+        else:
+            data["format"] = data["format"].strip()
         obj["tabs"].append(data)
     else:
         current = obj

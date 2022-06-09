@@ -6,7 +6,7 @@
     "name" : "How to find an ASN's summarized spoofing status",
     "description" : "Directions to Spoofer web pages which show spoofing status",
     "links": [
-        {"to":"software:spoofer_ui"}
+        {"to":"dataset:spoofer_data"}
     ],
     "tags" : [
         "security",
