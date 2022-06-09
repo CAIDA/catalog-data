@@ -7,7 +7,7 @@
     "visibility" : "public",
     "name" : "How to use DZDB to get all nameserver and ip records for a domain",
     "description" : "Using the DZDB API, query a domain and get the combined data for its nameservers and ips",
-    "links": [{"to":"software:dzdb_api"}],
+    "links": [{"to":"dataset:dzdb"}],
     "tags" : [
         "last active",
         "dzdb"
