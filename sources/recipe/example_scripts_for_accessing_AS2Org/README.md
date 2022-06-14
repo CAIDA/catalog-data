@@ -5,7 +5,7 @@
     "name": "Example Scripts for Accessing AS2Org",
     "description": "This solution downloads the full as2org dataset for a target date, the largest AS with a given organization name, and the organization for a target AS.",
     "links": [
-        "software:as_organization_api",
+        "dataset:as_organizations",
         "dataset:as_rank",
         "recipe:how_to_download_from_asrank"
     ],
