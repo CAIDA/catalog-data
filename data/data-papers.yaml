@@ -24035,7 +24035,7 @@ ABS    : "DNS names assigned to interfaces of network devices along an end-to-en
 MARKER : "2013_w_lian_usenix_sec_573"
 TYPE   : "in_proceedings"
 AUTHOR : "Lian, W., Rescorla, E., Shacham, H., Savage, S."
-TITLE  : "Measuring the practical impact of DNSSEC deploymen"
+TITLE  : "Measuring the practical impact of DNSSEC deployment"
 CTITLE : "Usenix Security Conf. (SEC)"
 PAGE   : "573-588"
 YEAR   : "2013-08"
