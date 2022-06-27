@@ -25,19 +25,19 @@
     ],
     "authors":[
         {
-            "person": "huffaker_bradley",
+            "person": "huffaker__bradley",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         },
         {
-            "person": "claffy_kc",
+            "person": "claffy__kc",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         },
         {
-            "person": "dainotti_alberto",
+            "person": "dainotti__alberto",
             "organizations": ["University of Napoli Federico II, Napoli, Italy"]
         },
         {
-            "person": "king_alistair",
+            "person": "king__alistair",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]

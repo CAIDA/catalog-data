@@ -54,10 +54,7 @@ def id_create(filename, type_,id_):
 person_seen = {}
 person_seen_fname = {}
 
-def person_seen_add(fname,person):
-    #if "id" in person:
-    #    person_seen[person["id"]] = person
-    
+def person_seen_add(fname,person):    
     names = [person]
     if "names" in person:
         for name in person["names"]:
@@ -172,7 +169,7 @@ def parse_markdown(filename):
                 if re_not_white_space.search(tab["content"]):
                     tabs.append(tab)
                 else:
-                    error_add(filename,f'tab empty named:{tab["name"]}' )
+                    warning_add(filename,f'tab empty named:{tab["name"]}' )
 
             if len(tabs) > 0:
                 obj["tabs"] = tabs
