@@ -1,4 +1,13 @@
 ---
+MARKER : "2022_on_scale_dependence"
+TYPE   : "in_arxiv"
+AUTHOR : "Burgess, Mark"
+TITLE  : "On The Scale Dependence and Spacetime Dimension of the Internet with Causal Sets"
+YEAR   : "2022-02"
+URL    : "https://arxiv.org/abs/2203.05974"
+TOPKEY : "topology-ark-itdk"
+
+---
 MARKER : "2021_wang_y_ieee_9582212"
 TYPE   : "in_proceedings"
 AUTHOR : "Wang, Y., Wang, H., Ma, C., Chen, S., Xia, Y."
