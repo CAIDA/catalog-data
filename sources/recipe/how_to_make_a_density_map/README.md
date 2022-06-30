@@ -22,11 +22,12 @@
 
 ## Introduction
 
-The following has two notebooks. One creates a [Kernel Density Estimate (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation) geoplot based on Ookla Server locations. Data is loaded from a Mongo database. The other notebook creates a [Multivariate Map](https://en.wikipedia.org/wiki/Multivariate_map). Data contains Users and ASes.
+The following contains information on creating density maps: maps where the density of some type of thing is indicated by color or some other signifier. Two examples will be explored: first, a [Kernel Density Estimate (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation) geoplot based on the locations of Ookla servers, loaded from a Mongo database containing coordinate pairs. Second, a [Bivariate Map](https://en.wikipedia.org/wiki/Multivariate_map) (i.e., choropleth with another set of data overlaid) visualizing data of which countries ASes reside in and which countries CAIDA users reside in.
+
 
 ## Usage
 
-The notebook using [Geopandas](https://geopandas.org/en/stable/) and [Geoplot](https://residentmario.github.io/geoplot/). This means that you will need to set up a virtual environment if you are using a Jupyter Notebook. It is possible to just import Geopandas without the virtual environment if you are just running inside a Python script. Personally, I used [this](https://medium.com/analytics-vidhya/fastest-way-to-install-geopandas-in-jupyter-notebook-on-windows-8f734e11fa2b) Medium article by [Tanish Gupta](https://tanish-gupta.medium.com/) to set up my environment.
+These notebooks use [Geopandas](https://geopandas.org/en/stable/) and [Geoplot](https://residentmario.github.io/geoplot/). This means that you will need to set up a virtual environment if you are using a Jupyter Notebook. It is possible to just import Geopandas without the virtual environment if you are just running inside a Python script. Personally, I used [this](https://medium.com/analytics-vidhya/fastest-way-to-install-geopandas-in-jupyter-notebook-on-windows-8f734e11fa2b) Medium article by [Tanish Gupta](https://tanish-gupta.medium.com/) to set up my environment.
 
 To run the notebook:
 1. Activate the conda virtual env that has Geopandas by running the following command in Anaconda Prompt
@@ -111,6 +112,15 @@ The code will return: ![](https://cdn.discordapp.com/attachments/942218891952783
 
 ## Background
 
+Say you have some list of things and their locations, and you want to use these data to make some kind of map. [Geopandas](https://geopandas.org/en/stable/) and [Geoplot](https://residentmario.github.io/geoplot/) are tools to do this. This recipe provides examples for two (broad) kinds of map: heatmaps, using kernel density estimation, and choropleths.
+
+What is kernel density estimation? Kernel density estimation (KDE) is a statistical technique for taking a set of points plotted on some space, and then calculating the density of the points in a continuous fashion. Because the resulting density estimates are continuous, we get a nice smooth heatmap which shows generally where the points from our data set are and where they aren't. KDE is best suited for data sets where the somewhat precise location of each point is known; for example, if a data set contained only the country as a location, it would be more appropriate to use a choropleth instead.
+
+What is a choropleth? A choropleth is another kind of density map. Unlike heatmaps, though, choropleths only track density within given regions. For example, a choropleth of the United States might split the country up into individual states, or individual counties, and then assign each state or county a shade of color depending on some statistic related to that state or county. Importantly, density choropleths do not differentiate between different parts of the same region. A choropleth of the United States showing population density between states would *not* show the viewer that Los Angeles County has a higher population density than Death Valley.
+
+What is a multivariate map?
+
+A multivariate map is, for our purposes, a choropleth that displays the densities of more than one type of object. This can be done using different colors or a combination of a color and another indicator, like a [proportional symbol](https://en.wikipedia.org/wiki/Proportional_symbol_map). One possible use of a multivariate map is to give the viewer an intuitive sense of the correlation (or lack thereof) between two or more variables.
 
 ### Caveats
 
