@@ -72,7 +72,7 @@ def main():
     #    sys.exit()
     hasNextPage = True
 
-    first = 10
+    first = 500
     offset = 0
     start = time.time()
     asns = set()
