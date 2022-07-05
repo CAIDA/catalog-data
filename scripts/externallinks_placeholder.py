@@ -497,10 +497,13 @@ def parse_paper(fname, curr_paper):
 
         elif "URL" in line[0]:
             url = line[1]
-            paper["resources"].append({
-                "name":"URL",
-                "url":url
-            })
+            paper["access"] = [{
+                "url":url,
+                "access":"public",
+                "tags": [
+                    "PDF"
+                ]
+            }]
 
         elif "ABS" in line[0]:
             paper["description"] = line[1]
