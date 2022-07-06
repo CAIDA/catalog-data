@@ -694,9 +694,9 @@ def object_finish(obj):
                                 if person is not None:
                                     if caida:
                                         if "tags" not in person:
-                                            person["tags"] = ["caida"]
-                                        elif "caida" not in person["tags"]:
-                                            person["tags"].append("caida")
+                                            person["tags"] = []
+                                        if "tag:caida" not in person["tags"]:
+                                            person["tags"].append("tag:caida")
                                     person_org[k] = person["id"]
                                 else:
                                     error = True
