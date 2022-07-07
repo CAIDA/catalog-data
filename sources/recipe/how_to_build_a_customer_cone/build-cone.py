@@ -1,137 +1,139 @@
 #!/usr/bin/env python2
+__author__ = "Bradley Huffaker"
+__email__ = "<bradley@caida.org>"
+# This software is Copyright (C) 2022 The Regents of the University of
+# California. All Rights Reserved. Permission to copy, modify, and
+# distribute this software and its documentation for educational, research
+# and non-profit purposes, without fee, and without a written agreement is
+# hereby granted, provided that the above copyright notice, this paragraph
+# and the following three paragraphs appear in all copies. Permission to
+# make commercial use of this software may be obtained by contacting:
+#
+# Office of Innovation and Commercialization
+# 9500 Gilman Drive, Mail Code 0910
+# University of California
+# La Jolla, CA 92093-0910
+# (858) 534-5815
+#
+# invent@ucsd.edu
+#
+# This software program and documentation are copyrighted by The Regents of
+# the University of California. The software program and documentation are
+# supplied “as is”, without any accompanying services from The Regents. The
+# Regents does not warrant that the operation of the program will be
+# uninterrupted or error-free. The end-user understands that the program
+# was developed for research purposes and is advised not to rely
+# exclusively on the program for any reason.
+#
+# IN NO EVENT SHALL THE UNIVERSITY OF CALIFORNIA BE LIABLE TO ANY PARTY FOR
+# DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES,
+# INCLUDING LOST PR OFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS
+# DOCUMENTATION, EVEN IF THE UNIVERSITY OF CALIFORNIA HAS BEEN ADVISED OF
+# THE POSSIBILITY OF SUCH DAMAGE. THE UNIVERSITY OF CALIFORNIA SPECIFICALLY
+# DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE
+# SOFTWARE PROVIDED HEREUNDER IS ON AN “AS IS” BASIS, AND THE UNIVERSITY OF
+# CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES,
+# ENHANCEMENTS, OR MODIFICATIONS.
+#
 
 #import the low level _pybgpsteam library and other necessary libraries
 from pybgpstream import BGPStream
-from ipaddress import ip_network
-import time
+from datetime import date
+from datetime import timedelta
+import argparse
+
 import sys
 import requests
 
-URL = "https://api.asrank.caida.org/v2/graphql"
+parser = argparse.ArgumentParser()
+parser.add_argument("link_file", nargs=1, type=str)
+args = parser.parse_args()
 
 def main():
-    print ("This is going to take some time",file=sys.stderr)
-    peer_provider = download_links()
-    asn__cone = download_paths(peer_provider)
-    for asn,cone in asn__cone.items():
-        print (asn," ".join(cone))
+    sys.stderr.write("This is going to take some time\n")
 
-def download_links():
-    print ("Downloanding relationships",file=sys.stderr)
+    peer_provider = download_links(args.link_file[0])
+    asn__cone = download_paths(peer_provider)
+
+    print "# ASN followed by ASNs in it's customer cone"
+    print "# '1 23 4' means  ASN 1's customer cone includes ASN 23 and ASN 4"
+    for asn,cone in sorted(asn__cone.items(), key=lambda a_c: len(a_c[1]),reverse=True):
+        print asn","+",".join(sorted(cone,key=lambda a:int(a)))
+
+# Find the set of AS Relationships that are 
+# peer to peer or provider to customer.
+def download_links(filename):
+    sys.stderr.write("loading relationships\n")
     first = 1000
     offset = 0
     hasNextPage = True
 
     peer_provider = set()
-    with open("20220601.as-rel.txt") as fin:
+    with open(filename) as fin:
         for line in fin:
+            # skip comments
             if len(line) == 0 or line[0] == "#":
                 continue
             asn0, asn1, rel = line.rstrip().split("|")
+
+            # peers work in both directions
             if rel == 0:
                 peer_provider.add(asn1+" "+asn0)
                 peer_provider.add(asn0+" "+asn1)
 
+            # store the link from provider to customer 
             elif rel == -1:
                 peer_provider.add(asn1+" "+asn0)
-
             else:
                 peer_provider.add(asn0+" "+asn1)
 
     return peer_provider
 
-    while hasNextPage:
-        query = AsnLinksQuery(first, offset, asns)
-        request = requests.post(URL,json={'query':query})
-        if request.status_code != 200:
-            print ("Query failed to run returned code of %d " % (request.status_code))
-
-        data = request.json()
-        if not ("data" in data and "asnLinks" in data["data"]):
-            print ("Failed to parse:",data,file=sys.stderr)
-            sys.exit()
-
-        peer_customer = set()
-        data = data["data"]["asnLinks"]
-        for edge in data["edges"]:
-            asn0 = edge["node"]["asn0"]["asn"]
-            asn1 = edge["node"]["asn1"]["asn"]
-            rel = edge["node"]["asn1"]["relationship"]
-            if rel == "peer":
-                peer_provider.add(asn1+" "+asn0)
-                peer_provider.add(asn0+" "+asn1)
-            elif rel == "provider":
-                peer_provider.add(asn1+" "+asn0)
-            else: 
-                peer_provider.add(asn0+" "+asn1)
-
-        hasNextPage = data["pageInfo"]["hasNextPage"]
-        offset += len(data["edges"])
-        break
-
-    return peer_provider
-
-
-
-def AsnLinksQuery(first,second, asns):
-    return """{
-    asnLinks(first:%s, offset:%s) {
-        totalCount
-        pageInfo {
-            first
-            offset
-            hasNextPage
-        }
-        edges {
-            node {
-                relationship
-                asn0 {
-                    asn
-                }
-                asn1 {
-                    asn
-                }
-                numberPaths
-            }
-        }
-    }
-}""" % (str(first), str(second))
-
+# download the AS paths from BGPStream
+# crop the path to the section after the 
+# first peer or provider link, then add
+# all the remaining ASes to the preceeding 
+# ASes in the cropped path
 def download_paths(peer_provider):
 
     # The set of ASes reachable through an AS's customers
     asn__cone = {}
 
-    print ("Downloanding paths",file=sys.stderr)
+    sys.stderr.write("downloanding paths\n")
 
-    # Initialize BGPStream, with routeviews-stream project, filtering for amsix.
-    stream = BGPStream(project="routeviews-stream", filter="router amsix")
-    # The stream will not load new data till its done with the current pulled data.
-    stream.set_live_mode()
-    print("starting stream...", file=sys.stderr)
-    for record in stream.records():
-        rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(record.time))
-        for elem in record:
-            prefix = ip_network(elem.fields['prefix'])
-            # Only print elements that are announcements (BGPElem.type = "A").
-            if elem.type == "A":
-                asns = elem.fields['as-path'].split(" ")
+    # Return a rib from yesterday
+    from_time = date.today() - timedelta(days=1)
+    until_time = from_time
+    stream = BGPStream(
+        from_time=from_time.strftime("%Y-%m-%d %H:%M:%S"), until_time=until_time.strftime("%Y-%m-%d %H:%M:%S"),
+        record_type="ribs"
+    )
+    stream.add_rib_period_filter(86400) # This should limit BGPStream to download the full first BGP dump
 
-                # Skip until the first peer-peer or provider->customer link
-                i = 0
-                while i+1 < len(asns):
-                    link = asns[i]+" "+asns[i+1]
-                    i += 1
+    for elem in stream:
+        asns = elem.fields['as-path'].split(" ")
 
-                # Since an AS only announces it's customer cone it's peer or provider,
-                # The remaining ASes in the path are in it's customer cone.
-                while i < len(asns):
-                    if asns[i] not in asn__cone:
-                        asn__cone[asns[i]] = set()
-                    cone = asn__cone[asns[i]]
-                    j = i+1
-                    while j < len(asns):
-                        cone.add(asns[j])
+        # Skip until the first peer-peer or provider->customer link
+        i = 0
+        while i+1 < len(asns):
+            link = asns[i]+" "+asns[i+1] 
+            i += 1
+            if link in peer_provider:
+                break
+
+        # Since an AS only announces it's customer cone to it's peer or provider,
+        # the remaining ASes in the path are in the preciding ASes customer cone.
+        while i+1 < len(asns):
+            if asns[i] not in asn__cone:
+                asn__cone[asns[i]] = set()
+            cone = asn__cone[asns[i]]
+            j = i+1
+            while j < len(asns):
+                print (">",i,j,asns[i], asns[j])
+                cone.add(asns[j])
+                j += 1
+            i += 1
 
     return asn__cone
 
