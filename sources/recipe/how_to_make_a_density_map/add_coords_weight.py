@@ -21,4 +21,6 @@ df = pd.read_csv(args.fname, header=0)
 # combine duplicate lines and count the number of times each line appears
 df = df.value_counts(sort=False).to_frame()
 
+df.rename(axis='columns', mapper={0: 'weight'}, inplace=True)
+
 df.to_csv(path_or_buf=args.fname[0:-4]+'_with_weights.csv', index=False)
