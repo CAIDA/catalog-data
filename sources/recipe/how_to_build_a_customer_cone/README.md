@@ -3,13 +3,11 @@
 ~~~json
 {
     "id" : "how_to_build_a_customer_cone",
-    "name" : "How to build a Customer Cone",
+    "name" : "How to build a Customer Cone with BGPStream.",
     "description" : "How to build ASN customer cone using BGPStream.",
     "links": [
-        {"to":"dataset:as_rank"},
-        {"to":"software:bgpstream},
-        {"to":"recipe:how_to_print_asn_paths_from_pybgpstream"},
-        {"to":"recipe:recipe/how_to_download_from_asrank"}
+        {"to":"dataset:as_relationships_serial_1"},
+        {"to":"software:bgpstream}
     ],
     "tags" : [
         "asn",
