@@ -176,7 +176,7 @@ topkey_2_dataset = {
   # "Paper Data and Tools -> paper"
   "complex_as_relationships"          : "paper:2014_inferring_complex_as_relationships",
   "2006-pam-as-taxonomy"              : "2006_pam_as_taxonomy",
-  "2016-periscope"                    : "software:periscope_looking_glass_api",
+  "2016-periscope"                    : "software:periscope",
   "2013-midar"                        : "software:midar",
   "bgpstream"                         : "software:bgpstream",
   "scamper"                           : "software:scamper",
