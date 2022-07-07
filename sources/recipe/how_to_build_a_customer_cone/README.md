@@ -7,7 +7,7 @@
     "description" : "How to build ASN customer cone using BGPStream.",
     "links": [
         {"to":"dataset:as_relationships_serial_1"},
-        {"to":"software:bgpstream}
+        {"to":"software:bgpstream"}
     ],
     "tags" : [
         "asn",
