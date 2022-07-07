@@ -1,5 +1,3 @@
-# How to check if an ASN supports SAV
-
 ~~~json
 {
     "id" : "how_to_build_a_customer_cone",
