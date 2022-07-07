@@ -4,7 +4,7 @@
 {
     "id" : "how_to_build_a_customer_cone",
     "name" : "How to build a Customer Cone with BGPStream.",
-    "description" : "How to build ASN customer cone using BGPStream.",
+    "description" : "How to build ASN Customer Cone using AS Relationship data and BGPStream.",
     "links": [
         {"to":"dataset:as_relationships_serial_1"},
         {"to":"software:bgpstream"}
