@@ -20,6 +20,7 @@ df = pd.read_csv(args.fname, header=0)
 
 # combine duplicate lines and count the number of times each line appears
 df = df.value_counts(sort=False).to_frame()
+df.reset_index(inplace=True)
 
 df.rename(axis='columns', mapper={0: 'weight'}, inplace=True)
 
