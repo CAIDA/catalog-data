@@ -77,8 +77,6 @@ For every AS that follows an ASN in the path, include that ASN in that AS's cust
                 cone.add(asns[j])
                 j += 1
             i += 1
-
-    return asn__cone
 ~~~
 
 
