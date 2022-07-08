@@ -87,6 +87,12 @@ For every AS that follows an ASN in the path, include that ASN in that AS's cust
 1. install <a href="https://bgpstream.caida.org/v2-whats-new"> BGP Stream </a>
 1. Then run ``python3 build-download.py 20220701.as-rel.txt.bz2 > asn_cones.txt``
 
+   sample output
+   ~~~
+   # the following line means that AS 132's customer cone include AS 35 and AS 2.
+   132 35 2
+   ~~~
+
 ## Caveants
 
 It is important to point out that this will not produce exactly the same result as 
