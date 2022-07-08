@@ -193,6 +193,7 @@ main()
 
 1. download /datasets/as-relationships/serial-1/20220701.as-rel.txt.bz2 from 
 <a href="https://www.caida.org/catalog/datasets/as-relationships/">AS Relationships</a>.
+1. install <a href="https://bgpstream.caida.org/v2-whats-new"> BGP Stream </a>
 1. Then run the ``python3 build-download.py 20220701.as-rel.txt.bz2 > asn_cones.txt``
 
 ## Caveants
