@@ -23,7 +23,8 @@ df = pd.read_csv(args.fname, header=0)
 
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 
-# putting the higher GDP countries earlier in the list should optimize the algorithm
+# putting the higher GDP countries earlier in the list, for optimization
+# (I benchmarked this and it works)
 world.sort_values(ascending=False, by='gdp_md_est', ignore_index=True, inplace=True)
 
 def coord2country(lat, long):

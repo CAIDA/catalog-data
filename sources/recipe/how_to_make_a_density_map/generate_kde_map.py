@@ -33,20 +33,26 @@ if args.fname is None:
     print("You need to specify a filename with -f")
     sys.exit()
 
+# substantive part starts here:
+
 df = pd.read_csv(args.fname)
 
 # converting the dataframe to a geodataframe
 gdf = geopandas.GeoDataFrame(df, geometry=geopandas.points_from_xy(df.long, df.lat))
 gdf.drop(['lat', 'long'], axis=1, inplace=True)
 
-world_map = geopandas.read_file(geoplot.datasets.get_path(MAP_NAME))
+# loads the map file from geoplot's resources
+the_map = geopandas.read_file(geoplot.datasets.get_path(MAP_NAME))
 
-# This plots the heatmap
+# This plots the heatmap, and returns an axis object
+# We need this object in order to plot the borders map on the same axes
 ax = geoplot.kdeplot(gdf, shade=True, levels=10, cmap='Reds', figsize=(18, 12), bw_adjust=BANDWIDTH, weights=gdf['weight'])
 
-# This plots the map borders behind it (e.g. countries or US states)
-geoplot.polyplot(world_map, ax=ax, zorder=1)
+# This plots the borders map (e.g. countries or US states) on the same axes
+# that we used to plot the heatmap
+geoplot.polyplot(the_map, ax=ax, zorder=1)
 
+# Add a title
 if not args.title is None:
     matplotlib.pyplot.title(args.title)
 
