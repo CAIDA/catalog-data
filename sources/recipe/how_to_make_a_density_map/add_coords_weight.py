@@ -25,4 +25,4 @@ df.reset_index(inplace=True)
 
 df.rename(axis='columns', mapper={0: 'weight'}, inplace=True)
 
-df.to_csv(path_or_buf=args.fname[0:-4]+'_with_weights.csv', index=False)
+df.to_csv(path_or_buf=args.fname[0:-4]+'_weighted.csv', index=False)
