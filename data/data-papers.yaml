@@ -916,7 +916,7 @@ VOLUME : ""
 PAGE   : "947-953"
 DOI    : "110.1109/ICCT46805.2019.8947243"
 URL    : "https://ieeexplore.ieee.org/abstract/document/8947243"
-TOPKEY : "passive-realtime"
+TOPKEY : "passive-stats"
 GEOLOC : "Berlin, DE"
 ABS    : ""
 
@@ -1012,7 +1012,7 @@ VOLUME : ""
 PAGE   : "1-4"
 DOI    : "10.1109/ICTON.2019.8840553"
 URL    : "https://ieeexplore.ieee.org/abstract/document/8840553"
-TOPKEY : "passive-realtime"
+TOPKEY : "passive-stats"
 GEOLOC : "Shanghai, CN"
 ABS    : ""
 
@@ -1840,7 +1840,7 @@ VOLUME : "293"
 PAGE   : "27-55"
 DOI    : "10.1007/s10479-019-03511-9"
 URL    : "https://link.springer.com/article/10.1007/s10479-019-03511-9"
-TOPKEY : "passive-realtime"
+TOPKEY : "passive-stats"
 GEOLOC : "Gyeonggi, KR"
 ABS    : ""
 
@@ -5134,22 +5134,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2021_sood_i_turcomat_8655"
-TYPE   : "in_journal"
-AUTHOR : "Sood, I., Sharma, V."
-TITLE  : "Comparing Computational Intelligent Techniques for DDOS Attacks detection"
-SERIAL : "Turkish Journal of Computer and Mathematics Education"
-YEAR   : "2021-00"
-VOLUME : "12"
-PAGE   : "4774-4789"
-DOI    : ""
-URL    : "https://www.turcomat.org/index.php/turkbilmat/article/view/8655"
-TOPKEY : "ddos-20070804"
-GEOLOC : "Bhopal, IN"
-ABS    : ""
-
----
-
 MARKER : "2021_ahmed_r_techrxiv_17153213"
 TYPE   : "tech report"
 AUTHOR : "Ahmed, R., Islam, S., Shatabda, S., Islam, M., Robin, T."
@@ -5161,22 +5145,6 @@ DOI    : "10.36227/techxiv.17153213.v1"
 URL    : "https://www.techrxiv.org/articles/preprint/Intrusion_Detection_System_in_Software-Defined_Networks_Using_Machine_Learning_and_Deep_Learning_Techniques_A_Comprehensive_Survey/17153213/1"
 TOPKEY : "ddos-20070804"
 GEOLOC : "Dhaka, BD"
-ABS    : ""
-
----
-
-MARKER : "2021_sood_i_proquest_018623"
-TYPE   : "in_journal"
-AUTHOR : "Sood, I., Sharma, V."
-TITLE  : "Computational Intelligent Techniques To Detect DDOS Attacks: A Survey"
-SERIAL : "Journal of Cybersecurity"
-YEAR   : "2021-00"
-VOLUME : "3"
-PAGE   : "89-106"
-DOI    : "10.32604/jcs.2021.018623"
-URL    : "https://www.proquest.com/docview/2568299612?pq-origsite=gscholar&fromopenview=true"
-TOPKEY : "ddos-20070804"
-GEOLOC : "Bhopal, IN"
 ABS    : ""
 
 ---
@@ -5243,23 +5211,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2021_nougnanke_k_telarch_03343066"
-TYPE   : "PhD thesis"
-AUTHOR : "Nougnanke, K."
-TITLE  : "Towards ML-based Management of Software-Defined Networks"
-PUBLISH: "University of Toulouse"
-PAGE   : "1-126"
-YEAR   : "2021-07"
-URL    : "https://tel.archives-ouvertes.fr/tel-03343066/"
-TOPKEY : "passive-generic"
-GEOLOC : "Toulouse, FR"
-ABS    : ""
-
----
-
-
-
-
 MARKER : "2021_holterbach_t_ethzuri_521609"
 TYPE   : "PhD thesis"
 AUTHOR : "Holterbach, T."
@@ -5270,22 +5221,6 @@ YEAR   : "2021-12"
 URL    : "https://www.research-collection.ethz.ch/handle/20.500.11850/521609"
 TOPKEY : "topology-as-relationships, telescope-generic, passive-2013"
 GEOLOC : "Zurich, SE"
-ABS    : ""
-
----
-
-MARKER : "2021_sahin_m_ndsssymp_24051"
-TYPE   : "in_proceedings"
-AUTHOR : "Sahin, M., Aurelien, F."
-TITLE  : "Understanding and Detecting International Revenue Share Fraud"
-CTITLE : "Network and Distributed Systems Security (NDSS) Symposium 2021"
-YEAR   : "2021-02"
-VOLUME : ""
-PAGE   : "1-16"
-DOI    : "10.14722/ndss.2021.24051"
-URL    : "https://www.ndss-symposium.org/wp-content/uploads/ndss2021_4C-2_24051_paper.pdf"
-TOPKEY : "telescope-generic"
-GEOLOC : "California, US"
 ABS    : ""
 
 ---
@@ -5316,36 +5251,6 @@ DOI    : "10.1109/IWCMC51323.2021.9498743"
 URL    : "https://ieeexplore.ieee.org/abstract/document/9498743"
 TOPKEY : "ioda, bgpstream"
 GEOLOC : "Texas, US"
-ABS    : ""
-
----
-
-MARKER : "2021_nougnanke_k_hallaas_03309901"
-TYPE   : "PhD thesis"
-AUTHOR : "Nougnanke, K."
-TITLE  : "Towards ML-based Management of Software-Defined Networks"
-PUBLISH: "University of Toulouse"
-PAGE   : "1-126"
-YEAR   : "2021-09"
-URL    : "https://hal.laas.fr/tel-03309901"
-TOPKEY : "passive-generic"
-GEOLOC : "Toulouse, FR"
-ABS    : ""
-
----
-
-MARKER : "2021_padmanabhan_r_acm_3474562"
-TYPE   : "in_proceedings"
-AUTHOR : "Padmanabhan, R., Filasto, A., Xynou, M., Raman, R., Middleton, K., Zhang, M., Madory, D., Roberts, M., Dainotti, A."
-TITLE  : "A multi-perspective view of Internet censorship in Myanmar"
-CTITLE : "Proceedings of the ACM SIGCOMM 2021 Workshop on Free and Open Communications on the Internet"
-YEAR   : "2021-08"
-VOLUME : ""
-PAGE   : "27-36"
-DOI    : "10.1145/3473604.3474562"
-URL    : "https://dl.acm.org/doi/abs/10.1145/3473604.3474562"
-TOPKEY : "ioda"
-GEOLOC : "California, US"
 ABS    : ""
 
 ---
@@ -5425,21 +5330,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2021_sharma_r_lspringer_69893515"
-TYPE   : "in_book"
-AUTHOR : "Sharma, R., Chan, C., Leckie, C."
-TITLE  : "Evaluation of Collaborative Intrusion Detection System Architectures in Mobile Edge Computing"
-PUBLISH: "Springer Nature Switzerland AG 2021"
-YEAR   : "2021-11"
-PAGE   : "359–384"
-DOI    : "10.1007/978-3-030-69893-5_15"
-URL    : "https://link.springer.com/chapter/10.1007/978-3-030-69893-5_15"
-TOPKEY : "telescope-3days-conficker"
-GEOLOC : "Melbourne, AU"
-ABS    : ""
-
----
-
 MARKER : "2021_xu_k_lspringer_1683251"
 TYPE   : "in_book"
 AUTHOR : "Xu, K."
@@ -5477,7 +5367,7 @@ PUBLISH: "Obuda University"
 PAGE   : "1-112"
 YEAR   : "2021-00"
 URL    : "https://lib.uni-obuda.hu/sites/lib.uni-obuda.hu/files/Stefano_Niko_Orzen_ertekezes.pdf"
-TOPKEY : "passive-realtime"
+TOPKEY : "passive-stats"
 GEOLOC : "Budapest, HU"
 ABS    : ""
 
@@ -5908,22 +5798,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2012_werle_c_ieee_6168493"
-TYPE   : "in_proceedings"
-AUTHOR : "Werle, C., Mies, S., Zitterbart, M."
-TITLE  : "On benchmarking routing protocols"
-CTITLE : "2011 17th IEEE International Conference on Networks"
-YEAR   : "2012-03"
-VOLUME : ""
-PAGE   : "305-310"
-DOI    : "10.1109/ICON.2011.6168493"
-URL    : "https://ieeexplore.ieee.org/abstract/document/6168493"
-TOPKEY : "topology-ark-ipv4-aslinks"
-GEOLOC : "Karlsruhe, DE"
-ABS    : ""
-
----
-
 MARKER : "2014_faggiani_a_ieee_6710071"
 TYPE   : "in_journal"
 AUTHOR : "Faggiani, A., Gregori, E., Lenzini, L., Luconi, V., Vecchio, A."
@@ -5984,22 +5858,6 @@ DOI    : "10.1109/SSCI47803.2020.9308499"
 URL    : "https://ieeexplore.ieee.org/abstract/document/9308499"
 TOPKEY : "topology-ark-ipv4-traceroute"
 GEOLOC : "Nova Scotia, CA"
-ABS    : ""
-
----
-
-MARKER : "2020_fernandez_g_ieee_9020824"
-TYPE   : "in_proceedings"
-AUTHOR : "Fernandez, G., Xu, S."
-TITLE  : "A Case Study on using Deep Learning for Network Intrusion Detection"
-CTITLE : " MILCOM 2019 - 2019 IEEE Military Communications Conference"
-YEAR   : "2020-03"
-VOLUME : ""
-PAGE   : "(6)"
-DOI    : "10.1109/MILCOM47813.2019.9020824"
-URL    : "https://ieeexplore.ieee.org/abstract/document/9020824"
-TOPKEY : "topology-ark-ipv4-traceroute"
-GEOLOC : "Texas, US"
 ABS    : ""
 
 ---
@@ -6453,23 +6311,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2012_johnson_b_lspringer_3294638"
-TYPE   : "in_proceedings"
-AUTHOR : "Johnson, B., Chuang, J., Grossklags, J., Christin, N."
-TITLE  : "Metrics for Measuring ISP Badness: The Case of Spam"
-CTITLE : "International Conference on Financial Cryptography and Data Security"
-SERIAL : "Lecture Notes in Computer Science"
-YEAR   : "2012-00"
-VOLUME : "7397"
-PAGE   : "89–97"
-DOI    : "10.1007/978-3-642-32946-3_8"
-URL    : "https://link.springer.com/chapter/10.1007/978-3-642-32946-3_8"
-TOPKEY : "topology-as-relationships"
-GEOLOC : "California, US"
-ABS    : ""
-
----
-
 MARKER : "2010_miyachi_t_lspringer_17851162"
 TYPE   : "in_proceedings"
 AUTHOR : "Miyachi, T., Miwa, S., Shinoda, Y."
@@ -6583,22 +6424,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2021_hekmati_a_arxiv_01842"
-TYPE   : "online"
-AUTHOR : "Hekmati, A., Grippo, E., Krishnamachari, B."
-TITLE  : "Dataset: Large-scale Urban IoT Activity Data for DDoS Attack Emulation"
-PUBLISH: "arxiv.org"
-YEAR   : "2021-11"
-VOLUME : ""
-PAGE   : "(5)"
-DOI    : "10.48550/arXiv.2110.01842"
-URL    : "https://arxiv.org/abs/2110.01842"
-TOPKEY : "ddos-20070804"
-GEOLOC : "Coimbra, PT"
-ABS    : ""
-
----
-
 MARKER : "2021_robinson_r_lspringer_0965753"
 TYPE   : "in_proceedings"
 AUTHOR : "Robinson, R., Thomas, C."
@@ -6664,36 +6489,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2019_bogutz_r_ieee_9006537"
-TYPE   : "in_proceedings"
-AUTHOR : "Bogutz, R., Pradkin, Y., Heidemann, J."
-TITLE  : "Identifying Important Internet Outages"
-CTITLE : " 2019 IEEE International Conference on Big Data"
-YEAR   : "2019-12"
-VOLUME : ""
-PAGE   : "3002-3007"
-DOI    : "10.1109/BigData47090.2019.9006537"
-URL    : "https://ieeexplore.ieee.org/abstract/document/9006537"
-TOPKEY : "ioda"
-GEOLOC : "New Jersey, US"
-ABS    : ""
-
----
-
-MARKER : "2001_kornblum_j_upenn_1550127"
-TYPE   : "tech report"
-AUTHOR : "Kornblum, J., Smith, J."
-TITLE  : "GNOSIS: Global Network Operations Status Information System"
-PUBLISH: "University of Pennsylvania"
-PAGE   : "1-12"
-YEAR   : "2001-09"
-URL    : "https://repository.upenn.edu/cgi/viewcontent.cgi?article=1156&context=cis_reports"
-TOPKEY : "topology-skitter-rlinks"
-GEOLOC : "Pennsylvania, US"
-ABS    : ""
-
----
-
 MARKER : "2016_sisiaridis_d_acm_3003759"
 TYPE   : "in_proceedings"
 AUTHOR : "Sisiaridis, D., Carcillo, F., Markowitch, O."
@@ -6706,22 +6501,6 @@ DOI    : "10.1145/3003733.3003759"
 URL    : "https://dl.acm.org/doi/abs/10.1145/3003733.3003759"
 TOPKEY : "ddos-20070804"
 GEOLOC : "Patras, GR"
-ABS    : ""
-
----
-
-MARKER : "2017_obstfeld_j_arxiv_08666"
-TYPE   : "in_proceedings"
-AUTHOR : "Obstfeld, J., Chen, X., Frebourg, O., Sudheendra, P."
-TITLE  : "Towards Near Real-Time BGP Deep Analysis: A Big-Data Approach"
-CTITLE : "ACM Internet Measurement Conference 2017"
-YEAR   : "2017-05"
-VOLUME : ""
-PAGE   : "(7)"
-DOI    : "10.48550/arXiv.1705.08666"
-URL    : "https://arxiv.org/abs/1705.08666"
-TOPKEY : "bgpstream"
-GEOLOC : "Bedfont Lakes, UK"
 ABS    : ""
 
 ---
@@ -6743,22 +6522,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2016_folino_g_sciedir_03011"
-TYPE   : "in_journal"
-AUTHOR : "Folino, G., Sabatino, P."
-TITLE  : "Ensemble based collaborative and distributed intrusion detection systems: A survey"
-SERIAL : "Journal of Network and Computer Applications"
-YEAR   : "2016-05"
-VOLUME : "66"
-PAGE   : "1-16"
-DOI    : "10.1016/j.jnca.2016.03.011"
-URL    : "https://www.sciencedirect.com/science/article/pii/S1084804516300248"
-TOPKEY : "telescope-generic"
-GEOLOC : "Rende, IT"
-ABS    : ""
-
----
-
 MARKER : "2019_koronoiotis_n_sciedir_05041"
 TYPE   : "in_journal"
 AUTHOR : "Koroniotis, N., Moustafa, N., Sitnikova, E., Turnbull, B."
@@ -6775,20 +6538,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2005_mcpher_d_citeseer_1011169"
-TYPE   : "tech report"
-AUTHOR : "McPherson, D."
-TITLE  : "BGP Security Techniques"
-PUBLISH: ""
-PAGE   : "(28)"
-YEAR   : "2005"
-URL    : "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.169.3903&rep=rep1&type=pdf"
-TOPKEY : "backscatter-generic"
-GEOLOC : "Kyoto, JP"
-ABS    : ""
-
----
-
 MARKER : "2008_saganow_l_inass_123103"
 TYPE   : "in_journal"
 AUTHOR : "Saganowski, L., Choras, M., Renk, R., Holubowicz, W."
@@ -6801,70 +6550,6 @@ DOI    : "10.22266/ijies2008.1231.03"
 URL    : "http://www.inass.org/share/20090303214658366.pdf"
 TOPKEY : "witty worm"
 GEOLOC : "Bydgoszcz, PL"
-ABS    : ""
-
----
-
-MARKER : "2007_komisarc_p_ieee_2007366"
-TYPE   : "in_proceedings"
-AUTHOR : "Komisarczuk, P., Seifert, C., Pemberton, D., Welch, I."
-TITLE  : "Grid Enabled Internet Instruments"
-CTITLE : "IEEE GLOBECOM 2007 - IEEE Global Telecommunications Conference"
-YEAR   : "2007-11"
-VOLUME : ""
-PAGE   : "1906-1911"
-DOI    : "10.1109/GLOCOM.2007.366"
-URL    : "https://ieeexplore.ieee.org/abstract/document/4411276"
-TOPKEY : "telescope-generic"
-GEOLOC : "Washington DC, US"
-ABS    : ""
-
----
-
-MARKER : "2016_aupetit_m_ieee_7739577"
-TYPE   : "in_proceedings"
-AUTHOR : "Aupetit, M., Zhauniarovich, Y., Vasiliadis, G., Dacier, M., Boshmaf, Y."
-TITLE  : "Visualization of Actionable Knowledge to Mitigate DRDoS Attacks"
-CTITLE : "2016 IEEE Symposium on Visualization for Cyber Security (VizSec)"
-YEAR   : "2016-10"
-VOLUME : ""
-PAGE   : "(8)"
-DOI    : "10.1109/VIZSEC.2016.7739577"
-URL    : "https://ieeexplore.ieee.org/abstract/document/7739577"
-TOPKEY : "ddos-20070804"
-GEOLOC : "Maryland, US"
-ABS    : ""
-
----
-
-MARKER : "2011_chai_w_ieee_5723808"
-TYPE   : "in_journal"
-AUTHOR : "Chai, W., Wang, N., Psaras, I., Pavlou, G., Wang, C., Blas, G., Ramon-Salguero, F., Liang, L., Spirou, S., Beben, A., Hadjioannou, E."
-TITLE  : "Curling: Content-ubiquitous resolution and delivery infrastructure for next-generation services"
-SERIAL : "IEEE Communications Magazine"
-YEAR   : "2011-03"
-VOLUME : "49"
-PAGE   : "112-120"
-DOI    : "10.1109/MCOM.2011.5723808"
-URL    : "https://ieeexplore.ieee.org/abstract/document/5723808"
-TOPKEY : "topology-generic"
-GEOLOC : "London, UK"
-ABS    : ""
-
----
-
-MARKER : "2021_behera_s_ieee_9530062"
-TYPE   : "in_proceedings"
-AUTHOR : "Behera, S., Panigrahi, B., Rath, H., Karjee, J."
-TITLE  : "On Traffic Classification in Enterprise Wireless Networks"
-CTITLE : "2021 National Conference on Communications"
-YEAR   : "2021-07"
-VOLUME : ""
-PAGE   : "(6)"
-DOI    : "10.1109/NCC52529.2021.9530062"
-URL    : "https://ieeexplore.ieee.org/abstract/document/9530062"
-TOPKEY : "topology-as-classification"
-GEOLOC : "Kanpur, IN"
 ABS    : ""
 
 ---
@@ -6997,21 +6682,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2017_fontugne_r_acm_3131384"
-TYPE   : "in_proceedings"
-AUTHOR : "Fontugne, R., Pelsser, C., Aben, E., Bush, R."
-TITLE  : "Pinpointing delay and forwarding anomalies using large-scale traceroute measurements"
-CTITLE : "Proceedings of the 2017 Internet Measurement Conference"
-YEAR   : "2017-11"
-PAGE   : "15-28"
-DOI    : "10.1145/3131365.3131384"
-URL    : "https://dl.acm.org/doi/abs/10.1145/3131365.3131384"
-TOPKEY : "topology-ark-ipv4-traceroute"
-GEOLOC : "London, UK"
-ABS    : ""
-
----
-
 MARKER : "2011_mohay_g_springer_0277"
 TYPE   : "in_book"
 AUTHOR : "Mohay, G., Ahmed, E., Bhatia, S., Nadarajan, A., Ravindran, B., Tickle, A., Vijayasarathy, R."
@@ -7023,36 +6693,6 @@ DOI    : "10.1007/978-81-322-0277-6_5"
 URL    : "https://link.springer.com/chapter/10.1007/978-81-322-0277-6_5"
 TOPKEY : "code-red worm"
 GEOLOC : "Brisbane, AU"
-ABS    : ""
-
----
-
-MARKER : "2017_shah_a_ieee_8002902"
-TYPE   : "in_proceedings"
-AUTHOR : "Shah, A., Fontugne, R., Aben, E., Pelsser, C., Bush, R."
-TITLE  : "Disco: Fast, good, and cheap outage detection"
-CTITLE : "2017 Network Traffic Measurement and Analysis Conference (TMA)"
-YEAR   : "2017-06"
-VOLUME : ""
-PAGE   : "1-9"
-DOI    : "10.23919/TMA.2017.8002902"
-URL    : "https://ieeexplore.ieee.org/abstract/document/8002902"
-TOPKEY : "telescope-generic"
-GEOLOC : "Dublin, IE"
-ABS    : ""
-
----
-
-MARKER : "2012_barnes_osti_1104996"
-TYPE   : "in_proceedings"
-AUTHOR : "Barnes, P., Brase, J., Canales, T., Damante, M., Horsley, M., Jefferson, D., Soltz, R."
-TITLE  : "Livermore Computer Network Simulation Program"
-CTITLE : "LLNL-CONF-524373"
-YEAR   : "2012-03"
-PAGE   : "1-6"
-URL    : "https://www.osti.gov/servlets/purl/1104996"
-TOPKEY : "topology-ark-ipv4-aslinks, topology-generic"
-GEOLOC : "Sirmione, IT"
 ABS    : ""
 
 ---
@@ -7086,21 +6726,6 @@ ABS    : ""
 
 ---
 
-MARKER : "2005_gallati_r_eth_"
-TYPE   : "MSc thesis"
-AUTHOR : "Gallati, R."
-TITLE  : "Near Real-Time Detection of Traffic Usage Rhythm Anomalies in the Backbone"
-PUBLISH: "Swiss Federal Institute of Technology"
-PAGE   : "4-49"
-YEAR   : "2005-03"
-URL    : "https://pub.tik.ee.ethz.ch/students/2004-2005-Wi/DA-2005-03.pdf"
-TOPKEY : "passive-generic"
-GEOLOC : "Zurich, CH"
-ABS    : ""
-
----
-
-
 MARKER : "2021_pour_m_ieee_00059"
 TYPE   : "in_journal"
 AUTHOR : "Pour, M., Watson, D., Bou-Harb, E."
@@ -7128,33 +6753,6 @@ DOI    : "10.1007/978-3-030-45858-4_4"
 URL    : "https://link.springer.com/chapter/10.1007/978-3-030-45858-4_4"
 TOPKEY : "telescope-real-time"
 GEOLOC : "Texas, US"
-ABS    : ""
-
----
-
-MARKER : "2015_ngwawe_o_hdl_65229"
-TYPE   : "MSc thesis"
-AUTHOR : "Ngwawe, O."
-TITLE  : "Near Real Time Machine Driven Signature Detection, Generation and Collection"
-PUBLISH: "University of Nairobi"
-PAGE   : "1-68"
-YEAR   : "2015"
-URL    : "http://erepository.uonbi.ac.ke/handle/11295/89965"
-TOPKEY : "passive-generic"
-GEOLOC : "Nairobi, KE"
-ABS    : ""
-
----
-
-MARKER : "2011_hunter_s_rgate_706"
-TYPE   : "in_journal"
-AUTHOR : "Hunter, S., Irwin, B."
-TITLE  : "Near Real-time Aggregation and Visualisation of Hostile Network Traffic"
-YEAR   : "2011-09"
-PAGE   : "1-2"
-URL    : "https://www.researchgate.net/publication/327622653_Near_Real-time_Aggregation_and_Visualisation_of_Hostile_Network_Traffic"
-TOPKEY : "ddos-generic"
-GEOLOC : "East London, ZA"
 ABS    : ""
 
 ---
@@ -28334,7 +27932,7 @@ VOLUME : "18 (5)"
 PAGE   : "885-888" 
 YEAR   : "2014-05"
 DOI    : "10.1109/LCOMM.2014.040214.140506"
-TOPKEY : "passive-realtime"
+TOPKEY : "passive-stats"
 GEOLOC : "Madrid, ES; Rome, IT; Madrid, ES"
 ABS    : "Energy efficiency has become an important design goal for networking equipment. Traditionally routers and switches have been designed to minimize peak power consumption but they operate most of the time with settings and traffic that is far from that peak. Therefore, many elements and functions of networking equipment are being redesigned to improve energy efficiency. A common functionality in networking is flow identification that is needed in many applications. Flow identification can be implemented with Content Addressable Memories (CAMs) or alternatively with several data structures. Among those, one efficient option is Cuckoo hashing that enables fast searches and high memory utilization at the cost of complicating the insertion procedure. In this letter, first the energy efficiency of exact matching using Cuckoo hashing is analyzed and then a technique is presented to improve the energy efficiency of Cuckoo hashing. The proposed scheme is evaluated using a traffic monitoring application and compared with the traditional Cuckoo hashing. The results show that significant energy savings can be obtained by using the proposed technique."
 
