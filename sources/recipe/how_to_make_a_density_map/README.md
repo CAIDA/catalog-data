@@ -61,7 +61,8 @@ An easy way to make a choropleth is merging *your* data with this built-in GeoDa
 #### Requirements
 
 [Reverse_geocode](https://github.com/richardpenman/reverse_geocode)
-Note: on some computers and some versions of Python this package runs into character encoding errors. If you encounter these errors find where the source code of reverse_geocode is on your computer, delete \_\_init\_\_.py and replace it with the version from here: [https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py](https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py)
+
+Note: on some computers and some versions of Python this package runs into character encoding errors. If you encounter these errors find where the source code of reverse_geocode is on your computer, delete \_\_init\_\_.py and replace it with the version from here: [https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/\_\_init\_\_.py](https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py)
 
 #### Usage
 
