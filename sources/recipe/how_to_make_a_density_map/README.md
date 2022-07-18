@@ -44,9 +44,10 @@ generate_choropleth.py takes as input a CSV file with two columns: one labelled 
 
 Run the script like this:
 ```
-python generate_choropleth.py -f [name of input file] -t Title
+python generate_choropleth.py -f [name of input file]
 ```
-(adding a title is optional)
+Optional flags:
+- -t (add a title)
 
 ### Using GeoPlot
 
@@ -72,3 +73,28 @@ Run the script like this:
 ```
 python coords_to_countries.py -f [name of input file]
 ```
+
+## Generating a Heatmap
+
+generate_kde_map.py is a script that will generate a heatmap from a list longitudes and latitudes. This section will also explain how to create a heatmap using GeoPlot.
+
+add_coords_weight.py is another script which takes a list of latitudes and longitudes and counts how many times each pair occurs. This is done by coords_to_countries.py and generate_kde_map.py automatically, but those scripts do not save the resulting table. 
+
+### generate_kde_map.py
+
+#### Requirements
+
+Pandas, GeoPandas, Matplotlib, and GeoPlot.
+
+#### Usage
+
+This script takes as input a CSV file with a column for latitudes (labelled 'lat') and a column for longitudes (labelled 'long'). The input file can also have a weight column (i.e. a column counting the number of occurences of each coordinate pair) but doesn't have to. If the input file does have one, it should be labelled 'weight'.
+
+Run the script like this:
+```
+python coords_to_countries.py -f [name of input file]
+```
+Optional flags:
+- -t (add a title)
+- -b (adjust the plot smoothing by entering a number, default is 0.15 for Earth and 0.7 for US only)
+- -us (only render the United States)
