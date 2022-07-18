@@ -1,8 +1,16 @@
-import pandas as pd
-import geopandas as gpd
-from shapely.geometry import Point
+######################################################################
+# Note: If you're getting the error
+#
+# 'charmap' codec can't decode byte 0x81 in position 464
+#
+# Find __init__.py (the source code for reverse_geocode) and replace
+# it with this:
+# https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py
+######################################################################
+
 import argparse
 import sys
+import reverse_geocode as rgeo
 
 ######################################################################
 ## Parameters
@@ -21,24 +29,6 @@ if args.fname is None:
 
 df = pd.read_csv(args.fname, header=0)
 
-world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
-
-# putting the higher GDP countries earlier in the list, for optimization
-# (I benchmarked this and it works)
-world.sort_values(ascending=False, by='gdp_md_est', ignore_index=True, inplace=True)
-
-def coord2country(lat, long):
-    
-    the_point = gpd.GeoSeries([Point(long, lat)])
-    
-    # each row is a country; iterate through them to find
-    # which country the point is in
-    for row in world.itertuples():
-        if the_point.within(row.geometry)[0]:
-            return row.iso_a3
-        
-    return 'notfound'
-
 # if the input table isn't weighted, this will add weights
 # (code copied from add_coords_weight.py)
 if not df.columns.str.contains('weight', regex=False).any():
@@ -46,11 +36,13 @@ if not df.columns.str.contains('weight', regex=False).any():
     df.reset_index(inplace=True)
     df.rename(axis='columns', mapper={0: 'weight'}, inplace=True)
 
-# iterate through the input file assigning a country to each point
-df['country'] = df.apply(lambda row: coord2country(lat=row['lat'], long=row['long']), axis=1)
+# this line is really convoluted because rgeo.search() is supposed to
+# take a list of pairs, but here we only give it one
+df['country'] = df.apply(lambda row: rgeo.search([(row['lat'], row['long'])])[0]['country_code'], axis=1)
 df.drop(['lat', 'long'], inplace=True, axis=1)
 
 # combine the weights of each point by country
 df = df.groupby(['country']).sum()
 
+# save it as csv
 df.to_csv(path_or_buf=args.fname[0:-4]+'_countries.csv')

@@ -22,123 +22,52 @@
 
 ## Introduction
 
-The following contains information on creating density maps: maps where the density of some type of thing is indicated by color or some other signifier. Two examples will be explored: first, a [Kernel Density Estimate (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation) geoplot based on the locations of Ookla servers, loaded from a Mongo database containing coordinate pairs. Second, a [Bivariate Map](https://en.wikipedia.org/wiki/Multivariate_map) (i.e., choropleth with another set of data overlaid) visualizing data of which countries ASes reside in and which countries CAIDA users reside in.
+The following contains information on creating density maps, i.e. maps where the density of something is indicated by color or some other signifier. Two techniques will be explored: choropleths, in which a map is divided into regions (in this case countries) then each country is shaded based on some value, and heatmaps, which use [kernel density estimation (KDE)](https://en.wikipedia.org/wiki/Kernel_density_estimation) to produce smooth boundaries.
 
+This recipe will demonstrate how to generate such maps using a package called [GeoPlot](https://residentmario.github.io/geoplot/), which combines the geodata capabilities of GeoPandas with the rendering capabilities of Seaborn.
 
-## Usage
+## Generating a Choropleth
 
-These notebooks use [Geopandas](https://geopandas.org/en/stable/) and [Geoplot](https://residentmario.github.io/geoplot/). This means that you will need to set up a virtual environment if you are using a Jupyter Notebook. It is possible to just import Geopandas without the virtual environment if you are just running inside a Python script. Personally, I used [this](https://medium.com/analytics-vidhya/fastest-way-to-install-geopandas-in-jupyter-notebook-on-windows-8f734e11fa2b) Medium article by [Tanish Gupta](https://tanish-gupta.medium.com/) to set up my environment.
+generate_choropleth.py is a very basic script that will produce a choropleth from a table that contains country codes and corresponding values. One may also wish to use GeoPlot directly to customize their choropleths.
 
-To run the notebook:
-1. Activate the conda virtual env that has Geopandas by running the following command in Anaconda Prompt
-~~~bash
- conda activate yourenv
-~~~
-2. Launch notebook menu using:
-~~~bash
-jupyter notebook
-~~~
-3. Navigate to notebook and run
+coords_to_countries.py is another script that uses a package called reverse_geocode to convert a table of coordinate pairs to a table of country codes and values that can be used as input for generate_choropleth.py.
 
-## Code
+### generate_choropleth.py
 
-Below is the helper method used to parse a MongoDB JSON object data. It comes from [this](https://stackoverflow.com/a/60850425/16590177)  Stack Overflow answer. This method enables to load the data into a normal JSON format which we read into a Pandas data frame.
+#### Requirements
 
-~~~Python
-def read_mongoextjson_file(filename):
-    with open(filename, "r", encoding='utf8') as f:
-        # read the entire input; in a real application,
-        # you would want to read a chunk at a time
-        bsondata = '['+f.read()+']'
+GeoPandas, GeoPlot, Pandas, Matplotlib, and Pycountry_Convert.
 
-        # convert the TenGen JSON to Strict JSON
-        # here, I just convert the ObjectId and Date structures,
-        # but it's easy to extend to cover all structures listed at
-        # http://www.mongodb.org/display/DOCS/Mongo+Extended+JSON
-        jsondata = re.sub(r'ObjectId\s*\(\s*\"(\S+)\"\s*\)',
-                          r'{"$oid": "\1"}',
-                          bsondata)
-        jsondata = re.sub(r'ISODate\s*\(\s*(\S+)\s*\)',
-                          r'{"$date": \1}',
-                          jsondata)
-        jsondata = re.sub(r'NumberInt\s*\(\s*(\S+)\s*\)',
-                          r'{"$numberInt": "\1"}',
-                          jsondata)
+#### Usage
 
-        # now we can parse this as JSON, and use MongoDB's object_hook
-        # function to get rich Python data structures inside a dictionary
-        data = json.loads(jsondata, object_hook=json_util.object_hook)
+generate_choropleth.py takes as input a CSV file with two columns: one labelled 'country' which has country codes ([ISO 3166-1 A2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) and [ISO 3166-1 A3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) accepted), and one labelled 'weight' which has a value corresponding to each country (not every country has to have a value; countries with no value will be assigned a value of 0).
 
-        return data
-~~~
+Run the script like this:
+```
+python generate_choropleth.py -f [name of input file] -t Title
+```
+(adding a title is optional)
 
-<br>
-When using the Geopandas package, the documentation does not discuss multivariate maps. However, you can use base maps then plot on top of them. In the below example, a choropleth map is plotted first in `ax`. Then, a point plot is plotted on top of the `ax`.
+### Using GeoPlot
 
-~~~Python
-scheme_one = mc.FisherJenks(merged['num_users'], k=7)
+GeoPlot's choropleth function, geoplot.choropleth(), requires as input a GeoDataFrame with a geometry column (i.e. a column containing, for each region, geometric information concerning the shape and location of that region) and a column that dictates how each region will be shaded. Conveniently, GeoPandas comes with a GeoDataFrame containing the geometries of the world's countries, which can be accessed with
+```
+geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
+```
+An easy way to make a choropleth is merging *your* data with this built-in GeoDataFrame and then running geoplot.choropleth() on the merged table. Specify which column contains the density values with `hue` and specify the color of the map with `cmap`. See [documentation](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.choropleth).
 
-ax = gplt.choropleth(
-    merged,
-    hue='num_users',
-    scheme=scheme_one,
-    cmap='Blues',
-    legend=True,
-    figsize=(18,14)
-)
-gplt.pointplot(
-    merged_centroids,
-    ax=ax,
-    scale='num_ASes',
-    color='red',
-    legend=True,
-    limits=(3, 30),
-    legend_values=[400, 200, 100, 50, 25, 10],
-    legend_labels=['≤ 400 ASes', '≤ 200 ASes', '≤ 100 ASes', '≤ 50 ASes', '≤ 25 ASes', '≤ 10 ASes']
-)
-~~~
+### coords_to_countries.py
 
-Since, Geopandas is built on top of Matplotlib, you can utilize underlying  Matplotlib functions for legends an plots.
+#### Requirements
 
-~~~Python
-plt.title("ASes and Users by Country")
-ax.get_legend().set_title("Users")
-plt.savefig('ases_and_users_by_country.png')
-~~~
+[Reverse_geocode](https://github.com/richardpenman/reverse_geocode)
+Note: on some computers and some versions of Python this package runs into character encoding errors. If you encounter these errors find where the source code of reverse_geocode is on your computer, delete \_\_init\_\_.py and replace it with the version from here: [https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py](https://github.com/blushingpenguin/reverse_geocode/blob/specify_fs_encoding/__init__.py)
 
-The code will return: ![](https://cdn.discordapp.com/attachments/942218891952783421/951328638517800990/ases_and_users_by_country.png)
+#### Usage
 
+This script takes as input a CSV file with a column for latitudes (labelled 'lat') and a column for longitudes (labelled 'long'). The input file can also have a weight column (i.e. a column counting the number of occurences of each coordinate pair) but doesn't have to. If the input file does have one, it should be labelled 'weight'.
 
-
-## Background
-
-Say you have some list of things and their locations, and you want to use these data to make some kind of map. [Geopandas](https://geopandas.org/en/stable/) and [Geoplot](https://residentmario.github.io/geoplot/) are tools to do this. This recipe provides examples for two (broad) kinds of map: heatmaps, using kernel density estimation, and choropleths.
-
-What is kernel density estimation? Kernel density estimation (KDE) is a statistical technique for taking a set of points plotted on some space, and then calculating the density of the points in a continuous fashion. Because the resulting density estimates are continuous, we get a nice smooth heatmap which shows generally where the points from our data set are and where they aren't. KDE is best suited for data sets where the somewhat precise location of each point is known; for example, if a data set contained only the country as a location, it would be more appropriate to use a choropleth instead.
-
-What is a choropleth? A choropleth is another kind of density map. Unlike heatmaps, though, choropleths only track density within given regions. For example, a choropleth of the United States might split the country up into individual states, or individual counties, and then assign each state or county a shade of color depending on some statistic related to that state or county. Importantly, density choropleths do not differentiate between different parts of the same region. A choropleth of the United States showing population density between states would *not* show the viewer that Los Angeles County has a higher population density than Death Valley.
-
-What is a multivariate map?
-
-A multivariate map is, for our purposes, a choropleth that displays the densities of more than one type of object. This can be done using different colors or a combination of a color and another indicator, like a [proportional symbol](https://en.wikipedia.org/wiki/Proportional_symbol_map). One possible use of a multivariate map is to give the viewer an intuitive sense of the correlation (or lack thereof) between two or more variables.
-
-### Caveats
-
-There is an inability to control the granularity when plotting a KDE geoplot using Geoplot. To remedy this, I...
-1. Plotted points continent by continent and saved the figs to `.png` files.
-2. Drew [transparencies](https://en.wikipedia.org/wiki/Transparency_(graphic)) everywhere on the image except for the mapped area and country borders.
-3. Overlay the images and create a legend/scale using [Figma](https://www.figma.com/).
-
-An issue I faced when doing this was the scale. When I plotted continent by continent, each continent would have the same max level of density (regardless of actual density relative to each other).
-![](https://cdn.discordapp.com/attachments/579707526610681857/941869510544220160/unknown.png)
-
-> Notice how Africa has the same density as Europe and other continents
-
-To fix this, I created individual color scales based on the number of servers on each continent relative to the continent that has the most servers (South America). This allowed the scale to be accurate.
-![](https://cdn.discordapp.com/attachments/579707526610681857/941930535377313852/unknown.png)
-> Africa is considerably less intense compared to before
-
-### Potential Improvements
-1. The world map could have a higher level of granularity. However, this would mean plotting a KDE geoplot for every single country and following the process listed above.
-2. It is possible to automate the transparency and overlay part using some sort of image processing package. 
-3. Due to convenience of the packages, I filtered out some countries (Kosovo (XK), East Timor (TL), etc.) . It would be possible to hard code these situations.
+Run the script like this:
+```
+python coords_to_countries.py -f [name of input file]
+```
