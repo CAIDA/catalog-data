@@ -92,7 +92,7 @@ This script takes as input a CSV file with a column for latitudes (labelled 'lat
 
 Run the script like this:
 ```
-python coords_to_countries.py -f [name of input file]
+python generate_kde_map.py -f [name of input file]
 ```
 Optional flags:
 - -t (add a title)
