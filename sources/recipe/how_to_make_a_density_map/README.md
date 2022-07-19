@@ -51,11 +51,11 @@ Optional flags:
 
 ### Using GeoPlot
 
-GeoPlot's choropleth function, geoplot.choropleth(), requires as input a GeoDataFrame with a geometry column (i.e. a column containing, for each region, geometric information concerning the shape and location of that region) and a column that dictates how each region will be shaded. Conveniently, GeoPandas comes with a GeoDataFrame containing the geometries of the world's countries, which can be accessed with
+GeoPlot's choropleth function, `geoplot.choropleth()`, requires as input a GeoDataFrame with a geometry column (i.e. a column containing, for each region, geometric information concerning the shape and location of that region) and a column that dictates how each region will be shaded. Conveniently, GeoPandas comes with a GeoDataFrame containing the geometries of the world's countries, which can be accessed with
 ```
 geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
 ```
-An easy way to make a choropleth is merging *your* data with this built-in GeoDataFrame and then running geoplot.choropleth() on the merged table. Specify which column contains the density values with `hue` and specify the color of the map with `cmap`. See [documentation](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.choropleth).
+An easy way to make a choropleth is merging *your* data with this built-in GeoDataFrame and then running `geoplot.choropleth()` on the merged table. Specify which column contains the density values with `hue` and specify the color of the map with `cmap`. See [documentation](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.choropleth).
 
 ### coords_to_countries.py
 
@@ -98,3 +98,18 @@ Optional flags:
 - -t (add a title)
 - -b (adjust the plot smoothing by entering a number, default is 0.15 for Earth and 0.7 for US only)
 - -us (only render the United States)
+
+### Using GeoPlot
+
+GeoPlot's function for creating heatmaps is `geoplot.kdeplot()`. It takes as input a GeoDataFrame in which each row's geometry is a single point. Example code for constructing such a GeoDataFrame is
+```
+geopandas.GeoDataFrame(df, geometry=geopandas.points_from_xy(df.long, df.lat))
+```
+where `df` is a DataFrame containing latitudes and longitudes.
+
+Importantly, `kdeplot` will only render the density blobs; it won't render the map underneath it. In order to do this, and have the maps be aligned, save the axes that are returned by `kdeplot`, then use them as input for a function that can render a map, like `geoplot.polyplot()`. An example of this would be
+```
+map_axes = geoplot.kdeplot(add params here)
+geoplot.polyplot(map, ax=map_axes)
+```
+The granularity of the plot can be adjusted with the parameter `bw_adjust` and the color with `cmap`. See the [documentation provided by GeoPlot](https://residentmario.github.io/geoplot/api_reference.html?highlight=choropleth#geoplot.geoplot.kdeplot) and the [additional documentation provided by Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html#seaborn.kdeplot).
