@@ -10,7 +10,7 @@
     "tags" : [],
     "authors":[
         {
-            "person": "person:jonathan__lo",
+            "person": "person:masserfrye__richard",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]   
