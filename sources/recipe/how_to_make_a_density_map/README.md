@@ -5,12 +5,9 @@
     "id" : "how_to_create_a_density_plot",
     "visibility" : "public",
     "name" : "How to create a density plot",
-    "description" : "Using Geopandas to generate geoplots using data.",
+    "description" : "Using Geopandas to generate geoplots from data.",
     "links": [],
-    "tags" : [
-        "as relationship",
-        "as rank"
-    ],
+    "tags" : [],
     "authors":[
         {
             "person": "person:jonathan__lo",
@@ -96,7 +93,7 @@ python generate_kde_map.py -f [name of input file]
 ```
 Optional flags:
 - -t (add a title)
-- -b (adjust the plot smoothing by entering a number, default is 0.15 for Earth and 0.7 for US only)
+- -b (adjust the plot smoothing by entering a number, default is 0.15 for Earth and 0.7 for US)
 - -us (only render the United States)
 
 ### Using GeoPlot
@@ -113,3 +110,23 @@ map_axes = geoplot.kdeplot(add params here)
 geoplot.polyplot(map, ax=map_axes)
 ```
 The granularity of the plot can be adjusted with the parameter `bw_adjust` and the color with `cmap`. See the [documentation provided by GeoPlot](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.kdeplot) and the [additional documentation provided by Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html#seaborn.kdeplot).
+
+### add_coords_weight.py
+
+#### Requirements
+
+Pandas.
+
+#### Usage
+
+This script takes as input a CSV file with two columns. It counts the number of occurences of each row, condenses identical rows, and adds a new column called 'weight'.
+
+Run it like so:
+```
+python add_coords_weight.py -f [name of input file]
+```
+
+## Caveats
+
+- generate_choropleth.py only creates maps of the world, and not individual countries
+- generate_kde_map.py can only make a world map or a map of the US, and not any other country
