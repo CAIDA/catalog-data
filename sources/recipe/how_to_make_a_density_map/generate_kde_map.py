@@ -37,6 +37,13 @@ if args.fname is None:
 
 df = pd.read_csv(args.fname)
 
+# if the input table isn't weighted, this will add weights
+# (code copied from add_coords_weight.py)
+if not df.columns.str.contains('weight', regex=False).any():
+    df = df.value_counts(sort=False).to_frame()
+    df.reset_index(inplace=True)
+    df.rename(axis='columns', mapper={0: 'weight'}, inplace=True)
+
 # converting the dataframe to a geodataframe
 gdf = geopandas.GeoDataFrame(df, geometry=geopandas.points_from_xy(df.long, df.lat))
 gdf.drop(['lat', 'long'], axis=1, inplace=True)
