@@ -12,6 +12,7 @@ URL    : "https://par.nsf.gov/biblio/10107792"
 TOPKEY : "topology-generic"
 GEOLOC : "Princeton, NJ, US"
 ABS    : ""
+TAGS   : "Differential Privacy, Max-Divergence, BGP Hijack Attacks"
 
 ---
 MARKER : "2020_jjang_t_openreview_201615"
@@ -17798,7 +17799,7 @@ PUBLISH: "Colorado State Univ."
 PAGE   : "107"
 YEAR   : "2018-04"
 URL    : "https://mountainscholar.org/handle/10217/189413"
-TOPKEY : "topology-as-relationships, topology-as-rank, telescope-generic"
+TOPKEY : "topology-as-relationships, topology-as-rank"
 GEOLOC : "Fort Collins, CO, US"
 ABS    : "Today the Internet plays a critical role in our lives; we rely on it for communication, business, and more recently, smart home operations. Users expect high performance and availability of the Internet. To meet such high demands, all Internet components including routing must operate at peak efficiency. However, events that hamper the routing system over the Internet are very common, causing millions of dollars of financial loss, traffic exposed to attacks, or even loss of national connectivity. Moreover, there is sparse real-time detection and reporting of such events for the public. A key challenge in addressing such issues is lack of methodology to study, evaluate and characterize Internet connectivity. While many networks operating autonomously have made the Internet robust, the complexity in understanding how users interconnect, interact and retrieve content has also increased. Characterizing how data is routed, measuring dependency on external networks, and fast outage detection has become very necessary using public measurement infrastructures and data sources. From a regulatory standpoint, there is an immediate need for systems to detect and report routing events where a content providers routing policies may run afoul of state policies. In this dissertation, we design, build and evaluate systems that leverage existing infrastructure and report routing events in near-real time. In particular, we focus on geographic routing anomalies i.e., detours, routing failure i.e., outages, and measuring structural changes in routing policies."
 
