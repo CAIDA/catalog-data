@@ -1,3 +1,6 @@
+__author__ = "Richard Masser-Frye"
+__email__ = "<rmasserf@ucsd.edu>"
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import geopandas as gpd
@@ -7,8 +10,10 @@ import argparse
 import sys
 import matplotlib
 import matplotlib.pyplot
+import mapclassify
 
 INCOMPATIBLE_CODES = ['KOS', 'CYN', '-99']
+NUM_BINS = 8
 
 ######################################################################
 ## Parameters
@@ -16,6 +21,7 @@ INCOMPATIBLE_CODES = ['KOS', 'CYN', '-99']
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", dest="fname", help="name of csv file", type=str)
 parser.add_argument("-t", dest="title", help="title your map", type=str)
+parser.add_argument("-b", dest="bins", help="how many shades", type=int)
 args = parser.parse_args()
 
 ######################################################################
@@ -25,6 +31,9 @@ args = parser.parse_args()
 if args.fname is None:
     print("You need to specify a filename with -f")
     sys.exit()
+
+if not args.bins is None:
+    NUM_BINS = args.bins
 
 df = pd.read_csv(args.fname, header=0)
 world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
@@ -45,10 +54,15 @@ if len(df['country'][0]) == 2:
     left_merge = 'iso_a2'
 
 # Merge the database of countries with the input data
+# fillna(0) assigns 0 to countries with no input
 merged = world.merge(df, how='left', left_on=left_merge, right_on='country').fillna(0)
 
+# Create "bins" for the values to be sorted into
+# This makes the plot look a lot better trust me
+fj = mapclassify.FisherJenks(y=merged['weight'], k=NUM_BINS)
+
 # Plot the choropleth
-gplt.choropleth(merged, hue='weight', cmap='Reds', figsize=(18,14))
+gplt.choropleth(merged, hue='weight', cmap='Reds', figsize=(18,14), scheme=fj, legend=True)
 
 # Add a title
 if not args.title is None:
