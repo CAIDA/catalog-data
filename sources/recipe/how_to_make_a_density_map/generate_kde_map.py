@@ -1,3 +1,6 @@
+__author__ = "Richard Masser-Frye"
+__email__ = "<rmasserf@ucsd.edu>"
+
 import pandas as pd
 import geopandas
 import geoplot
@@ -13,7 +16,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-f", dest="fname", help="name of csv file", type=str)
 parser.add_argument("-t", dest="title", help="title your map", type=str)
 parser.add_argument("-us", dest="unitedstates", help="only show the US", action='store_true')
-parser.add_argument("-b", dest="bandwidth", help="adjust the bandwidth; set to 0.15 by default", type=int)
+parser.add_argument("-b", dest="bandwidth", help="adjust the bandwidth; set to 0.15 by default", type=float)
 args = parser.parse_args()
 
 ######################################################################
