@@ -534,7 +534,8 @@ def object_date_add(obj):
             "Paper":["datePublished"],
             "Software":["dateCreated","dateModified"],
             "Recipe":["dateObjectModified","dateObjectCreated"],
-            "Tag":["dateObjectModified","dateObjectCreated"]
+            "Tag":["dateObjectModified","dateObjectCreated"],
+            "Group":["dateObjectModified", "dateObjectCreated"]
         }
         type_ = obj["__typename"]
         if type_ in type_key:
