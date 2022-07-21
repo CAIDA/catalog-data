@@ -44,22 +44,26 @@ from datetime import timedelta
 import argparse
 
 import sys
-import requests
+import bz2
 
 parser = argparse.ArgumentParser()
 parser.add_argument("link_file", nargs=1, type=str)
+parser.add_argument("-d", "--debug", type=int, default=-1)
 args = parser.parse_args()
 
 def main():
     sys.stderr.write("This is going to take some time\n")
 
+    # Handle debug option
+    debug_count = args.debug
+
     peer_provider = download_links(args.link_file[0])
-    asn__cone = download_paths(peer_provider)
+    asn__cone = download_paths(peer_provider, debug_count)
 
     print "# ASN followed by ASNs in it's customer cone"
     print "# '1 23 4' means  ASN 1's customer cone includes ASN 23 and ASN 4"
     for asn,cone in sorted(asn__cone.items(), key=lambda a_c: len(a_c[1]),reverse=True):
-        print asn","+",".join(sorted(cone,key=lambda a:int(a)))
+        print asn + " "+" ".join(sorted(cone,key=lambda a: int(a.lstrip('{').rstrip('}'))))
 
 # Find the set of AS Relationships that are 
 # peer to peer or provider to customer.
@@ -70,7 +74,7 @@ def download_links(filename):
     hasNextPage = True
 
     peer_provider = set()
-    with open(filename) as fin:
+    with bz2.BZ2File(filename, mode='r') as fin:
         for line in fin:
             # skip comments
             if len(line) == 0 or line[0] == "#":
@@ -95,23 +99,28 @@ def download_links(filename):
 # first peer or provider link, then add
 # all the remaining ASes to the preceeding 
 # ASes in the cropped path
-def download_paths(peer_provider):
-
+def download_paths(peer_provider, debug_count):
     # The set of ASes reachable through an AS's customers
     asn__cone = {}
 
-    sys.stderr.write("downloanding paths\n")
+    sys.stderr.write("downloading paths\n")
 
-    # Return a rib from yesterday
+    # Return a rib from yesterday's first second
     from_time = date.today() - timedelta(days=1)
-    until_time = from_time
+    until_time = from_time + timedelta(seconds=1)
     stream = BGPStream(
         from_time=from_time.strftime("%Y-%m-%d %H:%M:%S"), until_time=until_time.strftime("%Y-%m-%d %H:%M:%S"),
         record_type="ribs"
     )
     stream.add_rib_period_filter(86400) # This should limit BGPStream to download the full first BGP dump
 
+    # counter
+    count = 0
     for elem in stream:
+        # Break when debug mode activated and count equals debug count
+        if (debug_count >= 0) and (count >= debug_count):
+            break
+
         asns = elem.fields['as-path'].split(" ")
 
         # Skip until the first peer-peer or provider->customer link
@@ -134,6 +143,9 @@ def download_paths(peer_provider):
                 cone.add(asns[j])
                 j += 1
             i += 1
+
+        # Increment count
+        count += 1
 
     return asn__cone
 
