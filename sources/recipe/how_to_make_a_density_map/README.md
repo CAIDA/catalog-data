@@ -23,6 +23,13 @@ The following contains information on creating density maps, i.e. maps where the
 
 This recipe will demonstrate how to generate such maps using [GeoPandas](https://geopandas.org/en/stable/index.html) and [GeoPlot](https://residentmario.github.io/geoplot/).
 
+### Installing requirements with pip
+
+All the requirements for every script in this recipe can be installed at once using pip. Download requirements.txt and then run the command
+```
+pip install -r requirements.txt
+```
+
 ## Generating a Choropleth
 
 generate_choropleth.py is a very basic script that will produce a choropleth from a table that contains country codes and corresponding values. One may also wish to use GeoPlot directly to customize their choropleths.
