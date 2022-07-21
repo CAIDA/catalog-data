@@ -54,8 +54,8 @@ into the following two most common types:
 
 
 
-By examining the set of ASes an AS can reach through it's customers, we can see the scope of 
-its customer base and compare AS "sizes". We defined this set of ASes as it's <a href="https://www.caida.org/catalog/papers/2013_asrank/asrank.pdf">
+By examining the set of ASes an AS can reach through its customers, we can see the scope of 
+its customer base and compare AS "sizes". We defined this set of ASes as its <a href="https://www.caida.org/catalog/papers/2013_asrank/asrank.pdf">
 customer cone</a> (set of ASes an AS can reach through customer links).
 Take in the AS path and crop it to the first peer-to-peer or provider-to-customer link.
 For every AS that follows an ASN in the path, include that ASN in that AS's customer cone.
@@ -113,7 +113,7 @@ For every AS that follows an ASN in the path, include that ASN in that AS's cust
 ## Caveats
 
 It is important to point out that this will not produce exactly the same result as 
-you would find on asrank.caida.org.  This is because AS Rank filters the in coming 
+you would find on asrank.caida.org.  This is because AS Rank filters the incoming 
 path to remove poisoned paths, Internet eXchange Points, and loops.  This effect
 only a small number of paths, so the differences will not be large.
 
