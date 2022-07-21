@@ -48,6 +48,7 @@ import json
 import sys
 import re
 import os
+import yaml
 import lib.utils as utils
 
 #################################### Header ####################################
@@ -227,6 +228,7 @@ def main(argv):
     # Parse data_papers and create a new file for each paper.
     parse_data_papers()
 
+
     # Print all the papers found to their respective JSON files.
     print_papers()
 
@@ -267,37 +269,9 @@ def parse_data_papers():
 
     # Parse data_papers file.
     if re_yml.search(data_papers):
-        with open(data_papers, "r") as file:
-            # Will store all the data for the current paper.
-            curr_paper = ""
-            curr_line = file.readline()
-            while curr_line:
-                # Edge Case: Skip commented lines.
-                if curr_line[0] == "#":
-                    curr_line = file.readline()
-                    continue
-
-                # Base Case: Parse current paper once delimeter is found.
-                if "---" in curr_line:
-                    if len(curr_paper) != 0:
-                        parse_paper(data_papers, curr_paper)
-                    curr_paper = ""
-                    curr_line = file.readline()
-                    continue
-                
-                # Check if the current line has one of the TOPKEY values.
-                topkey_in_line = False
-                for topkey in topkeys:
-                    if topkey in curr_line:
-                        topkey_in_line = True
-                
-                # Strip newline characters from lines without TOPKEY values.
-                if not topkey_in_line:
-                    curr_paper = curr_paper.rstrip()
-                    curr_paper += curr_line.strip()
-                else:
-                    curr_paper += curr_line.lstrip()
-                curr_line = file.readline()
+        with open(data_papers, "r") as fin:
+            for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
+                parse_paper(data_papers, paper)
 
     # Edge Case: Exit if a given file couldn't be open.
     else:
@@ -307,7 +281,7 @@ def parse_data_papers():
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
 #   @input curr_paper: A string where each \n is another TOPKEY.
-def parse_paper(fname, curr_paper):
+def parse_paper(fname, key_value):
     global author_data
     global type_2_bibtex
     global papers
@@ -323,37 +297,24 @@ def parse_paper(fname, curr_paper):
         "resources":[],
     }
 
-    # Split the current paper into each line.
-    curr_paper = curr_paper.split("\n")
-    
     re_year = re.compile("(\d\d\d\d)")
     re_year_month = re.compile("(\d\d\d\d).(\d\d)")
-    # Iterate over each line of the current paper.
-    found = False
-    for line in curr_paper:
-        # Split the current line between the TOPKEY, and its value.
-        line = line.split(":")
-
-        # Edge Case: Skip empty lines.
-        if len(line) <= 1:
-            continue
-        
+    for key, value in key_value.items():
         # Remove any whitespace, and the quotes around the data.
-        line[1] = ":".join(map(str, line[1:]))
-        line[1] = line[1].replace('"',"").strip()
+        value = value.rstrip()
 
         # Check which TOPKEY is used for the current line
-        if "MARKER" in line[0]:
-            paper["id"] = utils.id_create(fname, "paper", line[1])
+        if "MARKER" == key:
+            paper["id"] = utils.id_create(fname, "paper", value)
                     
-        elif "TYPE" in line[0]:
-            paper_type = line[1]
+        elif "TYPE" == key:
+            paper_type = value
             paper["bibtexFields"]["type"] = paper_type
 
-        elif "AUTHOR" in line[0]:
+        elif "AUTHOR" == key:
             # Handle the two seperate ways that authors can be stored.
             authors = []
-            for author in re.split(";\s*", re.sub("\.\s*,",";",line[1])):
+            for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
                 names = re.split("\s*,\s*", author)
                 if len(names) == 4:
                     authors.append(names[0]+", "+names[1])
@@ -378,16 +339,12 @@ def parse_paper(fname, curr_paper):
                     "person":author_id
                 })
                     
-        # Geo is the country the data request came from.
-        # It is not the organization
-        # elif "GEOLOC" in line[0]:
-
-        elif "TITLE" in line[0] and "CTITLE" not in line[0]:
-            title = line[1]
+        elif "TITLE" == key:
+            title = value
             paper["name"] = title
 
-        elif "YEAR" in line[0]:
-            date_str = line[1]
+        elif "YEAR" in key:
+            date_str = value
             m = re_year_month.search(date_str)
             date = None
             year = None
@@ -408,8 +365,8 @@ def parse_paper(fname, curr_paper):
                 if month:
                     paper["bibtexFields"]["month"] = month
         
-        elif "TOPKEY" in line[0]:
-            datasets = line[1].split(",")
+        elif "TOPKEY" in key:
+            datasets = value.split(",")
 
             # Iterate over each dataset and link them to catalog datasets.
             for dataset in datasets:
@@ -465,38 +422,41 @@ def parse_paper(fname, curr_paper):
                             "to":"dataset:{}".format(dataset)
                         })
 
-        elif "SERIAL" in line[0]:
-            publisher = line[1]
+        elif "TAGS" == key:
+            paper["tags"] = re.split(",\s*",value)
+
+        elif "SERIAL" == key:
+            publisher = value
             paper["publisher"] = publisher
             paper["bibtexFields"]["journal"] = publisher
 
-        elif "VOLUME" in line[0]:
-            volume = line[1]
+        elif "VOLUME" == key:
+            volume = value
             paper["bibtexFields"]["volume"] = volume
         
-        elif "CHAPTER" in line[0] or "ARTICLE" in line[0]:
-            number = line[1]
+        elif "CHAPTER" == key or "ARTICLE" == key:
+            number = value
             paper["number"] = number
 
-        elif "PAGE" in line[0]:
-            pages = line[1].replace("(", "").replace(")", "")
+        elif "PAGE" == key:
+            pages = value.replace("(", "").replace(")", "")
             paper["pages"] = pages
             paper["bibtexFields"]["pages"] = pages
 
-        elif "CTITLE" in line[0]:
-            conference_title = line[1] 
+        elif "CTITLE" == key:
+            conference_title = value
             paper["publisher"] = conference_title
             paper["bibtexFields"]["bookTitle"] = conference_title
 
-        elif "DOI" in line[0]:
-            doi = line[1]
+        elif "DOI" == key:
+            doi = value
             paper["resources"].append({
                 "name":"DOI",
                 "url":"https://dx.doi.org/"+doi
             })
 
-        elif "URL" in line[0]:
-            url = line[1]
+        elif "URL" == key:
+            url = value
             paper["access"] = [{
                 "url":url,
                 "access":"public",
@@ -505,17 +465,17 @@ def parse_paper(fname, curr_paper):
                 ]
             }]
 
-        elif "ABS" in line[0]:
-            paper["description"] = line[1]
+        elif "ABS" == key:
+            paper["description"] = value
 
-        elif "PUBLISH" in line[0]:
-            paper["bibtexFields"]["institutions"] = line[1]
+        elif "PUBLISH" == key:
+            paper["bibtexFields"]["institutions"] = value
         
-        elif "REMARK" in line[0] or "PLACE" in line[0]:
+        elif "REMARK" == key or "PLACE" == key:
             if "annotation" not in paper or len(paper["annotation"]) != 0:
-                paper["annotation"] = line[1]
+                paper["annotation"] = value
             else:
-                paper["annotation"] += " {}".format(line[1])
+                paper["annotation"] += " {}".format(value)
 
     # Only add papers that have ID.
     if "id" in paper:
@@ -554,8 +514,7 @@ def print_papers():
     global papers
 
     # Iterate over each paper and print their JSON.
-    for paper_id in papers:
-        paper = papers[paper_id]
+    for paper_id, paper in papers.items():
         
         # Create a new file for each paper.
         if paper_id not in seen_ids:
