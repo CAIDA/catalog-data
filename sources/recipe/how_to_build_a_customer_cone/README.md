@@ -49,7 +49,7 @@ that allocates and registers blocks of ASNs to ISPs and organizations.
 Although business agreements between ISPs can be complicated, the original model introduced by Gao 1 abstracts business relationships 
 into the following two most common types:
 
- 1. **customer-to-provider**: a customer pays it's provider for transit
+ 1. **customer-to-provider**: a customer pays its provider for transit
  1. **peer-to-peer (p2p)**: two peers exchange transit without paying
 
 
