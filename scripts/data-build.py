@@ -328,6 +328,19 @@ def main():
         del id_object[id_]
 
     #######################
+    # checking if group members are missing
+    #######################
+    print ("checking group members ids")
+    for obj in id_object.values():
+        if obj["__typename"] == "Group" and "members" in obj:
+            ids = []
+            for id_ in obj["members"]:
+                if id_ in id_object:
+                    ids.append(id_)
+                else:
+                    utils.error_add(obj["filename"], obj["id"]+"'s member "+id_+" not found")
+
+    #######################
     # printing errors
     #######################
     utils.error_print()
@@ -364,7 +377,6 @@ def main():
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
-
 
     #######################
     # parse out the words from the fields
