@@ -11,6 +11,7 @@
 import argparse
 import sys
 import reverse_geocode as rgeo
+import pandas as pd
 
 ######################################################################
 ## Parameters
