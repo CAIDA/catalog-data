@@ -98,7 +98,7 @@ For every AS that follows an ASN in the path, include that ASN in that AS's cust
 
 1. download /datasets/as-relationships/serial-1/20220701.as-rel.txt.bz2 from 
 <a href="https://www.caida.org/catalog/datasets/as-relationships/">AS Relationships</a>.
-2. install <a href="https://bgpstream.caida.org/v2-whats-new"> BGP Stream </a>
+2. install <a href="https://bgpstream.caida.org/v2-whats-new"> BGP Stream </a>. If your device runs Windows, follow the instructions in [How to install BGPStream on Windows](https://placeholderlink.net).
 3. Then run ``python2 build-cone.py [-d N] 20220701.as-rel.txt.bz2 > asn_cones.txt``
    (The optional ``-d`` debug option specifies program to process N traces to shorten execution time).
    This program runs on Python 2.7
@@ -110,16 +110,6 @@ For every AS that follows an ASN in the path, include that ASN in that AS's cust
    132 35 2
    ~~~
 
-### Installing BGPStream on Windows
-
-1. Install WSL with Ubuntu by following [these instructions](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#2-install-wsl).
-2. Ubuntu should appear in the start menu. Open it and [install BGPStream](https://bgpstream.caida.org/docs/install/bgpstream#ubuntu).
-3. Install Python 2.7 and PyBGPStream with the commands
-```
-sudo apt update
-sudo apt install python2-minimal
-sudo apt-get install python-pybgpstream
-```
 
 ## Caveats
 
