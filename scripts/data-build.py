@@ -207,7 +207,7 @@ def main():
         "paper",
         "software",
         "media",
-        "group",
+        "collection",
         "venue"
     ])
 
@@ -328,11 +328,11 @@ def main():
         del id_object[id_]
 
     #######################
-    # checking if group members are missing
+    # checking if collection members are missing
     #######################
-    print ("checking group members ids")
+    print ("checking collection members ids")
     for obj in id_object.values():
-        if obj["__typename"] == "Group" and "members" in obj:
+        if obj["__typename"] == "Collection" and "members" in obj:
             ids = []
             for id_ in obj["members"]:
                 if id_ in id_object:
@@ -373,7 +373,10 @@ def main():
     for obj in id_object.values():
         if "access" in obj:
             for access in obj["access"]:
-                word = access["access"]
+                if "access" in access:
+                    word = access["access"]
+                else:
+                    word = access["url"]
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
@@ -547,7 +550,7 @@ def object_date_add(obj):
             "Software":["dateCreated","dateModified"],
             "Recipe":["dateObjectModified","dateObjectCreated"],
             "Tag":["dateObjectModified","dateObjectCreated"],
-            "Group":["dateObjectModified", "dateObjectCreated"]
+            "Collection":["dateObjectModified", "dateObjectCreated"]
         }
         type_ = obj["__typename"]
         if type_ in type_key:
