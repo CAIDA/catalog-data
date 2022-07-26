@@ -4,8 +4,8 @@
 {
     "id" : "bgpstream-in-windows",
     "visibility" : "public",
-    "name" : "How to install and use BGPStream on Windows",
-    "description" : "Installing and using BGPStream on a Windows device.",
+    "name" : "How to install BGPStream on Windows",
+    "description" : "Installing BGPStream on a device running Windows 10 or 11.",
     "links": [],
     "tags" : [],
     "authors":[
