@@ -28,7 +28,7 @@ This solution should show how to print element records from a specific pybgpstre
 
 ## Solution
 
-```python
+~~~python
 #!/usr/bin/env python3
 
 # Import pybgpsteam and other necessary libraries
@@ -71,21 +71,21 @@ for record in stream.records():
             elem._maybe_field("old-state"),
             elem._maybe_field("new-state")
         ))
-```
+~~~
 
 ### Usage
 
 To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above. If there are any issue, look [here](https://bgpstream.caida.org/docs/install) for more help.
 
-```bash
+~~~bash
 pip3 install pybgpstream
-```
+~~~
 
 To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
 
-```bash
+~~~bash
 ./example.py > output.txt
-```
+~~~
 
 ## Background
 

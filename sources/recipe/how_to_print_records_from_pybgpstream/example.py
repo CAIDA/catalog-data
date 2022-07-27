@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Import pybgpsteam and other necessary libraries
+# Import pybgpstream and other necessary libraries
 from pybgpstream import BGPStream
 import time
 
