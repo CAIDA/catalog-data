@@ -22,7 +22,7 @@
     "access": [
         {
             "access": "public",
-            "url": "https://www.peeringdb.com/apidocs/",
+            "url": "https://www.peeringdb.com/",
             "tags": [
                 "api"
             ]
