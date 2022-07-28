@@ -21,6 +21,7 @@
     "links": [],
     "access": [
         {
+            "access": "public",
             "url": "https://archive.nanog.org/meetings/nanog34/presentations/beverly.pdf"
         }
     ]

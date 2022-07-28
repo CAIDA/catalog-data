@@ -21,6 +21,7 @@
     "links": [],
     "access": [
         {
+            "access": "public",
             "url": "http://www.rbeverly.net/research/papers/spoofer-imc09-presentation.pdf"
         }
     ]
