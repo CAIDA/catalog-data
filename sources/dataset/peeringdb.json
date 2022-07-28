@@ -21,7 +21,7 @@
     ],
     "access": [
         {
-            "name": "public",
+            "access": "public",
             "url": "https://www.peeringdb.com/apidocs/",
             "tags": [
                 "api"
