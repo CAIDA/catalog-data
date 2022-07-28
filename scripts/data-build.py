@@ -652,7 +652,6 @@ def object_finish(obj):
                 objects = [obj]
             else:
                 for i, access in enumerate(obj["access"]):
-                    # possile here todo
                     if 'access' not in access:
                         utils.error_add(obj["filename"], "access requires an access field")
                     if 'url' not in access:
