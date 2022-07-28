@@ -1,7 +1,7 @@
 {
     "id": "peeringdb",
     "name": "PeeringDB",
-    "organization": "CAIDA",
+    "organization": "PeeringDB",
     "description": "PeeringDB, an online database of peering policies, traffic volumes and geographic presence of participating networks",
     "tags": [
         "topology",
@@ -13,6 +13,15 @@
     "resources": [
         {
             "name": "public",
+            "url": "https://www.peeringdb.com/apidocs/",
+            "tags": [
+                "api"
+            ]
+        }
+    ],
+    "access": [
+        {
+            "access": "public",
             "url": "https://www.peeringdb.com/apidocs/",
             "tags": [
                 "api"
