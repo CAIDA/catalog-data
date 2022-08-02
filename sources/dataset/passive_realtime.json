@@ -10,9 +10,9 @@
     ],
     "dateStart":"2014",
     "status": "ongoing",
-    "resources": [
+    "access": [
         {
-            "name": "public",
+            "access": "public",
             "url": "https://catalog.caida.org/search?query=types=dataset%20tag:caida%20monitor",
             "tags": [
                 "file"

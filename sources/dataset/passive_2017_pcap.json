@@ -17,5 +17,11 @@
     ],
     "links": [
         
+    ],
+    "access": [
+        {
+            "access": "restricted",
+            "url": "https://www.caida.org/catalog/datasets/passive_dataset/"
+        }
     ]
 }
