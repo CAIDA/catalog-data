@@ -13,6 +13,17 @@
     "licenses": [
         "license:bsd_2_clause_simplified"
     ],
+    "authors": [
+        {
+            "person": "person:foster__ian"
+        },
+        {
+            "person": "person:koga__ryan",
+            "organizations": [
+                "CAIDA, San Diego Supercomputer Center, University Of California San Diego"
+            ]
+        }
+    ],
     "links": [],
     "access": [
         {
