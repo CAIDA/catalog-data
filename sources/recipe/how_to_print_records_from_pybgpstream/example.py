@@ -3,6 +3,11 @@
 # Import pybgpstream and other necessary libraries
 from pybgpstream import BGPStream
 import time
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("print_amount", nargs=1, type=int, help="Number of prints")
+args = parser.parse_args()
 
 # Initialize BGPStream, with data from routeviews-stream for router amsix.
 stream = BGPStream(project='routeviews-stream', filter="router amsix")
@@ -12,11 +17,12 @@ counter = 0
 
 # Print records yielded from stream.records() in a bgpreader-like format.
 for record in stream.records():
-    # Print the first 100 records found.
-    if counter == 100:
+    # Print the first X records found.
+    if counter >= args.print_amount[0]:
         break
     else:
         counter += 1
+
     print(record.project, record.collector, record.router)
     # Make the date is human readable
     rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(record.time))
