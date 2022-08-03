@@ -79,24 +79,26 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 
 |  search string | explanation | 
 |----------------|-------------|
-| `tag:asn`| search for objects that have the tag `asn`|
-| `!tag:caida`| search for objects that do not have the tag `caida`|
-| `tag:topology tag:ark` | search for objects that are tagged topology and ark
-| `bgpstream` | search for objects with the word `bgpstream`  | 
-| `ipv4 !ipv6` | search for objects that match `ipv4` but do not match the word `ipv6` |
-| `rank -dataset:as_rank_online` | search for objects with the word `rank` that are not linked to `dataset:as_rank_online` | 
-| `types=dataset topology` | search for datasets with the word `topology` in a text field |
-| `types=dataset topology ark` | search for datasets with the word `topology` and `ark` |
-| `types=dataset,recipe tag:topology !ark` | search for datasets or recipes with the tag `topology` without the word `ark` | 
-| `types=dataset access=public` | search for datasets that are marked as public access |
-| `types=paper routing` | search for papers with the word `routing` |
-| `types=paper tag:best_paper` | search for papers with the tag `best paper` |
-| `types=paper routing !tag:caida` | search for papers with the word `routing` without the tag `caida`|
-| `types=paper routing !tag:caida dates=2020,2021` | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
-| `types=paper persons=claffy` | search for papers authored by people with `claffy` in their name |
-| `ids=paper:2021_wie2020_report` | search for the object with the id `paper:2021_wie2020_report` |
-| `persons=claffy` | search for objects associated with people with `claffy` in their name |
-| `person:moore__david` | search for objects directly linked with the person named David Moore |
-| `links=person:claffy__kc,person:moore__david` | search for objects linked to `kc claffy` OR `David Moore`|
-| `person:claffy__kc person:moore__david` | search for objects linked to `kc claffy` AND `David Moore`|
-| `software:bgpstream` | search for objects directly linked to the object id `software:bgpstream` |
+| [links=tag:asn](https://catalog.caida.org/search?query=links=tag:asn)| search for objects that have the tag `asn`|
+| [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida)| search for objects that do not have the tag `caida`|
+| [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and ark
+| [links=bgpstream](https://catalog.caida.org/search?query=links=bgpstream) | search for objects with the word `bgpstream`  | 
+| [links=ipv4 !ipv6](https://catalog.caida.org/search?query=links=ipv4%20!ipv6) | search for objects that match `ipv4` but do not match the word `ipv6` |
+| [!links=dataset:as_relationships_serial_1 rank](https://catalog.caida.org/search?query=!links=dataset:as_relationships_serial_1%20rank) | it searches for search for objects with the word `rank` that are not linked to dataset:as_relationships_serial_1 | 
+| [types=dataset topology](https://catalog.caida.org/search?query=types=dataset%20topology) | search for datasets with the word `topology` in a text field |
+| [types=dataset topology ark](https://catalog.caida.org/search?query=types=dataset%20topology%20ark) | search for datasets with the word `topology` and `ark` |
+| [types=dataset,recipe links=tag:topology !ark](https://catalog.caida.org/search?query=types=dataset,recipe%20links=tag:topology%20!ark) | search for datasets or recipes with the tag `topology` without the word `ark` | 
+| [types=dataset access=public](https://catalog.caida.org/search?query=types=dataset%20access=public) | search for datasets that are marked as public access |
+| [types=paper routing](https://catalog.caida.org/search?query=types=paper%20routing) | search for papers with the word `routing` |
+| [types=paper links=tag:best_paper](https://catalog.caida.org/search?query=types=paper%20links=tag:best_paper) | search for papers with the tag `best paper` |
+| [types=paper routing !tag:caida](https://catalog.caida.org/search?query=types=paper%20routing%20!tag:caida) | search for papers with the word `routing` without the tag `caida`|
+| [types=paper routing !tag:caida dates=2020,2021](https://catalog.caida.org/search?query=types=paper%20routing%20!tag:caida%20dates=2020,2021) | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
+| [types=paper persons=claffy](https://catalog.caida.org/search?query=types=paper%20persons=claffy) | search for papers authored by people with `claffy` in their name |
+| [ids=paper:2021_wie2020_report](https://catalog.caida.org/search?query=ids=paper:2021_wie2020_report) | search for the object with the id `paper:2021_wie2020_report` |
+| [persons=claffy](https://catalog.caida.org/search?query=persons=claffy) | search for objects associated with people with `claffy` in their name |
+| [links=person:clark__david](https://catalog.caida.org/search?query=links=person:clark__david) | search for objects directly linked with the person named David Clark |
+| [links=person:claffy__kc,person:clark__david](https://catalog.caida.org/search?query=links=person:claffy__kc,person:clark__david) | search for objects linked to `kc claffy` OR `David Clark`|
+| [links=person:claffy__kc links=person:clark__david](https://catalog.caida.org/search?query=links=person:claffy__kc%20links=person:clark__david) | search for objects linked to `kc claffy` AND `David Clark`|
+| [links=software:bgpstream](https://catalog.caida.org/search?query=links=software:bgpstream) | search for objects directly linked to the object id `software:bgpstream` |
+| [links=collection:ucsd_telescope_datasets iot](https://catalog.caida.org/search?query=links=collection:ucsd_telescope_datasets%20iot) |  search for all papers that used telescope data to study IoT security |
+| [software:bgpstream](https://catalog.caida.org/search?query=software:bgpstream) | search for the object with id `software:bgpstream`|
