@@ -22,7 +22,6 @@
 }
 ~~~
 
-
 ## Introduction
 
 This recipe should show the user how to use pybgpstream to print RPKI data using routeviews. The solution prints json data to STDOUT with data taken from routeviews API given input ip addresses from pybgpstream. 
@@ -97,18 +96,18 @@ for record in stream.records():
 
 To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above. If there are any issue, look [here](https://bgpstream.caida.org/docs/install) for more help.
 
-```bash
+~~~bash
 pip3 install pybgpstream
-```
+~~~
 
 To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
 
 We provided the optional `-d` debug option which limits the number of traces to N, giving a user a preview of `output.txt` 
 using small portion of data in shorter execution time.
 
-```bash
+~~~bash
 ./example.py [-d N] > output.txt
-```
+~~~
 
 ## Background
 
