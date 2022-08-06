@@ -35,9 +35,10 @@ This recipe will demonstrate how to generate such maps using [GeoPandas](https:/
 ### Installing requirements with pip
 
 All the requirements for every script in this recipe can be installed at once using pip. Download requirements.txt and then run the command
-```
+
+~~~
 pip install -r requirements.txt
-```
+~~~
 
 ## Generating a Choropleth
 
@@ -58,9 +59,11 @@ GeoPandas, GeoPlot, Pandas, Matplotlib, MapClassify, and Pycountry_Convert.
 generate_choropleth.py takes as input a CSV file with two columns: one labelled 'country' which has country codes ([ISO 3166-1 A2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) and [ISO 3166-1 A3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) accepted), and one labelled 'weight' which has a value corresponding to each country (not every country has to have a value; countries with no value will be assigned a value of 0).
 
 Run the script like this:
-```
+
+~~~
 python generate_choropleth.py -f [name of input file]
-```
+~~~
+
 Optional flags:
 - -t (add a title)
 - -b (change the number of bins, see Background)
@@ -70,9 +73,11 @@ For example, the above image was generated with the command `python generate_cho
 ### Using GeoPlot
 
 GeoPlot's choropleth function, `geoplot.choropleth()`, requires as input a GeoDataFrame with a geometry column (i.e. a column containing, for each region, geometric information concerning the shape and location of that region) and a column that dictates how each region will be shaded. Conveniently, GeoPandas comes with a GeoDataFrame containing the geometries of the world's countries, which can be accessed with
-```
+
+~~~
 geopandas.read_file(geopandas.datasets.get_path('naturalearth_lowres'))
-```
+~~~
+
 An easy way to make a choropleth is merging *your* data with this built-in GeoDataFrame and then running `geoplot.choropleth()` on the merged table. Specify which column contains the density values with `hue` and specify the color of the map with `cmap`. See [documentation](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.choropleth).
 
 As explained in the Background section, using a bin system may improve the readability of your choropleth. [Mapclassify](https://pysal.org/mapclassify/api.html) is a good package for generating binning schemes.
@@ -90,9 +95,10 @@ Note: on some computers and some versions of Python reverse_geocode runs into ch
 This script takes as input a CSV file with a column for latitudes (labelled 'lat') and a column for longitudes (labelled 'long'). The input file can also have a weight column (i.e. a column counting the number of occurences of each coordinate pair) but doesn't have to. If the input file does have one, it should be labelled 'weight'.
 
 Run the script like this:
-```
+
+~~~
 python coords_to_countries.py -f [name of input file]
-```
+~~~
 
 For example, the file ookla_server_locations_countries.csv was generated with the command `python coords_to_countries.py -f ookla_server_locations.csv`
 
@@ -115,9 +121,11 @@ Pandas, GeoPandas, Matplotlib, and GeoPlot.
 This script takes as input a CSV file with a column for latitudes (labelled 'lat') and a column for longitudes (labelled 'long'). The input file can also have a weight column (i.e. a column counting the number of occurences of each coordinate pair) but doesn't have to. If the input file does have one, it should be labelled 'weight'.
 
 Run the script like this:
-```
+
+~~~
 python generate_kde_map.py -f [name of input file]
-```
+~~~
+
 Optional flags:
 - -t (add a title)
 - -b (adjust the plot smoothing by entering a number, default is 0.15 for Earth and 0.7 for US)
@@ -128,16 +136,20 @@ For example, the image above was generated with the command `python generate_kde
 ### Using GeoPlot
 
 GeoPlot's function for creating heatmaps is `geoplot.kdeplot()`. It takes as input a GeoDataFrame in which each row's geometry is a single point. Example code for constructing such a GeoDataFrame is
-```
+
+~~~
 geopandas.GeoDataFrame(df, geometry=geopandas.points_from_xy(df.long, df.lat))
-```
+~~~
+
 where `df` is a DataFrame containing latitudes and longitudes.
 
 Importantly, `kdeplot` will only render the density blobs; it won't render the map underneath it. In order to do this, and have the maps be aligned, save the axes that are returned by `kdeplot`, then use them as input for a function that can render a map, like `geoplot.polyplot()`. An example of this would be
-```
+
+~~~
 map_axes = geoplot.kdeplot(add params here)
 geoplot.polyplot(map, ax=map_axes)
-```
+~~~
+
 The granularity of the plot can be adjusted with the parameter `bw_adjust` and the color with `cmap`. See the [documentation provided by GeoPlot](https://residentmario.github.io/geoplot/api_reference.html#geoplot.geoplot.kdeplot) and the [additional documentation provided by Seaborn](https://seaborn.pydata.org/generated/seaborn.kdeplot.html#seaborn.kdeplot).
 
 ### add_coords_weight.py
@@ -151,9 +163,10 @@ Pandas.
 This script takes as input a CSV file with two columns. It counts the number of occurences of each row, condenses identical rows, and adds a new column called 'weight'.
 
 Run it like so:
-```
+
+~~~
 python add_coords_weight.py -f [name of input file]
-```
+~~~
 
 ## Background
 
