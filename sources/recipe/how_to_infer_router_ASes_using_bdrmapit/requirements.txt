@@ -1,0 +1,6 @@
+cython
+jsonschema
+traceutils>=6.15.7
+pandas
+pb-amarder
+file2
