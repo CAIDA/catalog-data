@@ -67,7 +67,8 @@ for record in stream.records():
     for elem in record:
         try:
             prefix = ip_network(elem.fields['prefix'])
-            # Only print elements that are announcements (BGPElem.type = "A").
+            # Only print elements that are announcements (BGPElem.type = "A")
+            # or ribs (BGPElem.type = "R")
             if elem.type == "A" or elem.type == "R":
                 as_path = elem.fields['as-path'].split(" ")
                 # Print all elements with specified in args.target
@@ -93,7 +94,7 @@ pip3 install pybgpstream
 
 To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
 
-The debug option `-d` allows users to limit number of traces the program goes through to N to shorten execution time.
+The debug option `-d` allows users to limit number of traces the program goes through to N to shorten execution time. Only ASN paths that include at least one of the specified ASNs will be printed.
 
 ~~~bash
 ./example.py [-d N] ASN#1 ASN#2 ... ASN#N > output.txt
