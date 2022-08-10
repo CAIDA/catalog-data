@@ -37,7 +37,8 @@ for record in stream.records():
     for elem in record:
         try:
             prefix = ip_network(elem.fields['prefix'])
-            # Only print elements that are announcements (BGPElem.type = "A").
+            # Only print elements that are announcements (BGPElem.type = "A")
+            # or ribs (BGPElem.type = "R")
             if elem.type == "A" or elem.type == "R":
                 as_path = elem.fields['as-path'].split(" ")
                 # Print all elements with specified in args.target
