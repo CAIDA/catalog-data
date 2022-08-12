@@ -525,7 +525,10 @@ def object_date_add(obj):
     # change date start to dateCreated for software
     if obj["__typename"] == "Software":
         if "dateCreated" not in obj and "dateModified" not in obj:
-            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
+            if "deprecated" in obj:
+                utils.warning_add(obj["filename"], "missing dateCreated and dateModified, but is deprecated")
+            else:
+                utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
