@@ -78,6 +78,11 @@ conda activate bdrmapit
 2. (Optional) Instead of downloading prefix2as files, you can also create them manually.
 
 **Extract origins from RIR extended delegation files**
+1. Download AS relationships file from CAIDA through here.
+2. Download AS customer cone file from CAIDA through here.
+3. Run command `./retrieve-external/retrieve_external/retrieve.py -b <start> -e <end> -d rirs rir` to extract RIR Extended Delegation file. `<start>` and `<end>` denote data collection starting and ending dates and can be written in format yyyymmdd.
+4. Create file with RIR file names through `find rirs | grep "rirs/" > rir_files.txt`. 
+5. Create `rir.prefixes` file through `rir2as -f rir_files.txt -r <AS relationship file> -c <AS customer cone file> -o rir.prefixes`. AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are names as `yyyymmdd.ppdc-ases.txt.bz2`  
 
 **Create prefix to AS mappings**
 
