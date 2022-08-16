@@ -1,3 +1,10 @@
 /bdrmapit
 .DS_Store
 /.idea
+/retrieve-external
+/rirs
+*.txt.bz2
+*.txt.gz
+*.prefixes
+*.json
+*.gz
