@@ -8,3 +8,5 @@
 *.prefixes
 *.json
 *.gz
+output.txt
+rir_files.txt
