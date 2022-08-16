@@ -5,7 +5,7 @@
     "name" : "",
     "description" : "",
     "links": [
-      {"to": "https://alexmarder.github.io/ip2as/"}
+      {"to": "dataset:"}
     ],
     "tags" : [
       "asn",
@@ -68,8 +68,18 @@ conda activate bdrmapit
 ### Infer Router ASes
 1. Activate bdrmapit environment: `conda activate bdrmapit`
 2. Go to directory *how_to_infer_router_ASes_using_bdrmapit*
-3. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/).
+3. There are three main steps to infer router ASes:
+   - Create or download prefix2as files
+   - (strongly recommended) Extract origins from RIR extended delegation files
+   - Create prefix to AS mappings
 
+**Create or download prefix2as files**
+1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/).
+2. (Optional) Instead of downloading prefix2as files, you can also create them manually.
+
+**Extract origins from RIR extended delegation files**
+
+**Create prefix to AS mappings**
 
 ## Caveats
 The program may produce some unusual output (ASN may be <=0). The table below tells user how to interpret the result.
