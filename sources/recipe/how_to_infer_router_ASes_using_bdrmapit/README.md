@@ -21,17 +21,17 @@
 ~~~
 
 ## Introduction
-This program provides an implementation on how to infer router ASes using bdrmapIT.
+This recipe provides an implementation on how to infer router ASes using bdrmapIT.
 
 ## Background
+BGP (Border Gateway Protocol) is a network protocol that consists of autonomous systems (ASes) that aims to transfer data through most efficient routes. [1] 
+Click [here](https://www.cloudflare.com/learning/security/glossary/what-is-bgp/) for more information on BGP.
 
-BGP (Border Gateway Protocol)
-An autonomous system (AS) consists of one or more network operators that uses the same routing policy.
-
-Each AS is assigned a unique AS number (ASN).
+An autonomous system (AS) consists of one or more network operators that uses the same routing policy. Each AS is assigned a unique AS number (ASN). [2] 
 Click [here](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) for more information on AS.
 
 ### bdrmapIT
+bdrmapIT 
 If you wish to learn more about bdrmapIT, click [here](https://alexmarder.github.io/bdrmapit/) to access its website.
 
 ### ip2as
@@ -100,9 +100,10 @@ ip2as -p routeviews-rv2-20220801-0400.pfx2as.gz -r rir.prefixes -R 20220801.as-r
 
 More information about this step can be found [here](https://alexmarder.github.io/ip2as/#prefix-to-as).
 
-**Result**
+**Interpreting Result**
 
-*test_output.txt* gives users a preview of the example output. 
+*test_output.txt* gives users a preview of the example output. The file is space divided where the left portion tells you the router prefix and the right portion tells which AS the router likely belongs to. 
+
 ## Caveats
 The program may produce some unusual output (ASN may be <=0). The table below tells user how to interpret the result.
 
@@ -113,3 +114,6 @@ The program may produce some unusual output (ASN may be <=0). The table below te
 | <=-100 | IXP public peering address with insufficient graph information for an AS annotation                                     |
 The unusual output information comes from the *Unusual Output* section from [this link](https://alexmarder.github.io/bdrmapit/). Visit the webpage for mor e information.
 
+## References
+1. “What Is BGP? | BGP Routing Explained | Cloudflare.” Couldflare, https://www.cloudflare.com/learning/security/glossary/what-is-bgp/. 
+2. “Autonomous System (Internet).” Wikipedia, Wikimedia Foundation, 29 July 2022, https://en.wikipedia.org/wiki/Autonomous_system_(Internet). 
