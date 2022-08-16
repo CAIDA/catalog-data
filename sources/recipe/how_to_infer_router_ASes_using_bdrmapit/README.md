@@ -5,10 +5,11 @@
     "name" : "",
     "description" : "",
     "links": [
-
+      {"to": "https://alexmarder.github.io/ip2as/"}
     ],
     "tags" : [
-    
+      "asn",
+      "bdrmapit"
     ],
     "authors":[
         {
@@ -32,6 +33,10 @@ Click [here](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) for mor
 
 ### bdrmapIT
 If you wish to learn more about bdrmapIT, click [here](https://alexmarder.github.io/bdrmapit/) to access its website.
+
+### ip2as
+
+### retrieve_external
 
 ## Instructions
 ### Prerequisites
@@ -58,9 +63,20 @@ conda activate bdrmapit
 2. `git clone https://github.com/alexmarder/retrieve-external`
 3. `cd retrieve-external`
 4. `pip install -r requirements.txt`
+5. `pip install .`
 
 ### Infer Router ASes
 1. Activate bdrmapit environment: `conda activate bdrmapit`
-2. 
+2. Go to directory *how_to_infer_router_ASes_using_bdrmapit*
+3. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/).
+
 
 ## Caveats
+The program may produce some unusual output (ASN may be <=0). The table below tells user how to interpret the result.
+
+| ASN    | Explanation                                                                                                             |
+|:-------|:------------------------------------------------------------------------------------------------------------------------|
+ | 0      | Address has no covering prefix in the prefix-to-AS mappings, and insufficient information in the graph to derive an ASN |
+| -1     | Should be rare; occurs when bdrmapIT failed to assign the router an annotation                                          |
+| <=-100 | IXP public peering address with insufficient graph information for an AS annotation                                     |
+The unusual output information comes from the *Unusual Output* section from [this link](https://alexmarder.github.io/bdrmapit/). Visit the webpage for more information.
