@@ -484,10 +484,16 @@ def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
-        if "dates" in obj:
+        if "dates" in obj and len(obj['dates']) >= 1:
             for date_url in obj["dates"]:
                 if "date" not in obj or obj["date"] < date_url["date"]:
                     obj["date"] = utils.date_parse(date_url["date"])
+        else:
+            if "date" not in obj:
+                if "deprecated" in obj:
+                    utils.warning_add(obj["filename"], "missing date(s), but is deprecated")
+                else:
+                    utils.error_add(obj["filename"], "missing date(s), please add date(s)")
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
@@ -540,6 +546,11 @@ def object_date_add(obj):
                     person_venue["venue"] = id_object[vid]["name"]
                 else:
                     utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
+        if "date" not in obj:
+            if "deprecated" in obj:
+                utils.warning_add(obj["filename"], "missing date, but is deprecated")
+            else:
+                utils.error_add(obj["filename"], "missing date, please add date")
     else:
         if "date" not in obj:
             obj["date"] = None
