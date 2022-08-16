@@ -75,7 +75,7 @@ conda activate bdrmapit
 
 **Create or download prefix2as files**
 1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/). 
-2. (Optional) Instead of downloading prefix2as files, you can also create them manually.
+2. (Optional) Instead of downloading prefix2as files from CAIDA, you can also create them manually through instructions [here](https://alexmarder.github.io/ip2as/#extracting-origin-ases-from-ribs).
 
 **Extract origins from RIR extended delegation files**
 1. Download AS relationships file and AS customer cone files from [here](https://publicdata.caida.org/datasets/as-relationships/serial-1/). AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are names as `yyyymmdd.ppdc-ases.txt.bz2`
@@ -99,6 +99,10 @@ ip2as -p routeviews-rv2-20220801-0400.pfx2as.gz -r rir.prefixes -R 20220801.as-r
 ~~~
 
 More information about this step can be found [here](https://alexmarder.github.io/ip2as/#prefix-to-as).
+
+**Result**
+
+*test_output.txt* gives users a preview of the example output. 
 ## Caveats
 The program may produce some unusual output (ASN may be <=0). The table below tells user how to interpret the result.
 
@@ -107,4 +111,5 @@ The program may produce some unusual output (ASN may be <=0). The table below te
  | 0      | Address has no covering prefix in the prefix-to-AS mappings, and insufficient information in the graph to derive an ASN |
 | -1     | Should be rare; occurs when bdrmapIT failed to assign the router an annotation                                          |
 | <=-100 | IXP public peering address with insufficient graph information for an AS annotation                                     |
-The unusual output information comes from the *Unusual Output* section from [this link](https://alexmarder.github.io/bdrmapit/). Visit the webpage for more information.
+The unusual output information comes from the *Unusual Output* section from [this link](https://alexmarder.github.io/bdrmapit/). Visit the webpage for mor e information.
+
