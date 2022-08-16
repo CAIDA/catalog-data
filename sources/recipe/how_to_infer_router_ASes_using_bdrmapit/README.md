@@ -74,18 +74,31 @@ conda activate bdrmapit
    - Create prefix to AS mappings
 
 **Create or download prefix2as files**
-1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/).
+1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/). 
 2. (Optional) Instead of downloading prefix2as files, you can also create them manually.
 
 **Extract origins from RIR extended delegation files**
-1. Download AS relationships file from CAIDA through here.
-2. Download AS customer cone file from CAIDA through here.
-3. Run command `./retrieve-external/retrieve_external/retrieve.py -b <start> -e <end> -d rirs rir` to extract RIR Extended Delegation file. `<start>` and `<end>` denote data collection starting and ending dates and can be written in format yyyymmdd.
-4. Create file with RIR file names through `find rirs | grep "rirs/" > rir_files.txt`. 
-5. Create `rir.prefixes` file through `rir2as -f rir_files.txt -r <AS relationship file> -c <AS customer cone file> -o rir.prefixes`. AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are names as `yyyymmdd.ppdc-ases.txt.bz2`  
+1. Download AS relationships file and AS customer cone files from [here](https://publicdata.caida.org/datasets/as-relationships/serial-1/). AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are names as `yyyymmdd.ppdc-ases.txt.bz2`
+2. Run command `./retrieve-external/retrieve_external/retrieve.py -b <start> -e <end> -d rirs rir` to extract RIR Extended Delegation file. `<start>` and `<end>` denote data collection starting and ending dates and can be written in format yyyymmdd.
+3. Create file with RIR file names through `find rirs | grep "rirs/" > rir_files.txt`. 
+4. Create `rir.prefixes` file through `rir2as -f rir_files.txt -r <AS relationship file> -c <AS customer cone file> -o rir.prefixes`.   
 
 **Create prefix to AS mappings**
+1. Download [PeeringDB json file](https://publicdata.caida.org/datasets/peeringdb-v2/)
+2. Download [AS-to-organization mappings](https://publicdata.caida.org/datasets/as-organizations/)
+3. Run script below to produce prefix to AS mappings
 
+~~~bash
+ip2as -p <RIB prefix file> -r rir.prefixes -R <AS relationship file> -c <Customer Cone file> -a <AS to organization mapping file> -P <peeringdb file> -o <output file>
+~~~
+
+A concrete example with actual file names:
+
+~~~bash
+ip2as -p routeviews-rv2-20220801-0400.pfx2as.gz -r rir.prefixes -R 20220801.as-rel.txt.bz2 -c 20220801.ppdc-ases.txt.bz2 -a 20220701.as-org2info.txt.gz -P peeringdb_2_dump_2021_12_31.json -o ip2as.prefixes
+~~~
+
+More information about this step can be found [here](https://alexmarder.github.io/ip2as/#prefix-to-as).
 ## Caveats
 The program may produce some unusual output (ASN may be <=0). The table below tells user how to interpret the result.
 
