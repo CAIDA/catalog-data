@@ -60,6 +60,7 @@ parser = argparse.ArgumentParser(description='Collections metadata of bgpstream 
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-r", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
 # used to plural
@@ -121,6 +122,7 @@ repo_url_default = "https://github.com/CAIDA/catalog-data"
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
+id_words_file = "id_words.json"
 access_word_id_file = "access_word_id.json"
 pubdb_links_file = "data/pubdb_links.json"
 personName_ids_file = "personName_ids.json"
@@ -443,26 +445,45 @@ def main():
     print ("Adding dataset date info")
     data_load_from_summary(args.summary_file)
 
+    ######################
+    # Create a word_id
+    ######################
+    id_words = {}
+    for word, id_score in word_id_score.items():
+        for i in id_score.keys():
+            if i not in id_words:
+                id_words[i] = set()
+            id_words[i].add(word)
+    for i,words in id_words.items():
+        id_words[i] = list(words)
+
     #######################
     # print files
     #######################
+    if args.readable_output:
+        indent = 4
+    else:
+        indent = None
     print ("writing",id_object_file)
-    json.dump(id_object, open(id_object_file,"w"),indent=4)
+    json.dump(id_object, open(id_object_file,"w"),indent=indent)
 
     print ("writing",personName_ids_file)
-    json.dump(personName_ids, open(personName_ids_file,"w"),indent=4)
+    json.dump(personName_ids, open(personName_ids_file,"w"),indent=indent)
 
     print ("writing",type_ids_file)
-    json.dump(type_ids, open(type_ids_file,"w"),indent=4)
+    json.dump(type_ids, open(type_ids_file,"w"),indent=indent)
 
     print ("writing",id_id_link_file)
-    json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
+    json.dump(id_id_link, open(id_id_link_file,"w"),indent=indent)
 
+    print ("writing",id_words_file)
+    json.dump(id_words, open(id_words_file,"w"),indent=indent)
+    
     print ("writing",word_id_score_file)
-    json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
+    json.dump(word_id_score, open(word_id_score_file,"w"),indent=indent)
     
     print ("writing",access_word_id_file)
-    json.dump(access_word_ids, open(access_word_id_file,"w"),indent=4)
+    json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
 
 ########################### 
 # Date

@@ -24,6 +24,10 @@ run:clean_placeholders pubdb external caida summary build suggestions
 fast:
 	make DATA_BUILD_OPTS="-d ${DATA_BUILD_OPTS}" run
 
+read:readable
+readable:
+	make DATA_BUILD_OPTS="-r ${DATA_BUILD_OPTS}" fast
+
 build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py ${DATA_BUILD_OPTS}
