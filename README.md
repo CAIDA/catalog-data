@@ -1,6 +1,13 @@
 ### Catalog Data
 This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org))'s database.
 
+The Makefile supports the following commands:
+- *run* (default): this will build the data files with up-to-date dates and un-indented output
+- *fast* : this will build the data files without up-to-date dates and un-indented output
+- *read*,*readable* : this will build the data files without up-to-date dates and indented output
+  this version is more human readable output
+- *clean* : this will remove all the placeholder files
+
 ### how to links
 - [how to contribute to the catalog](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute)
      - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe)
