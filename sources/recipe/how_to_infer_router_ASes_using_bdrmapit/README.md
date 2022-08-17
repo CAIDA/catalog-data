@@ -2,13 +2,17 @@
 ~~~json
 {
     "id" : "how_to_infer_router_ASes_using_bdrmapit",
-    "name" : "",
-    "description" : "",
+    "name" : "How to Infer Router ASes using bdrmapIT",
+    "description" : "Complete instruction of inferring which AS routers belong to",
     "links": [
-      {"to": "dataset:caida-prefix2as"}
+      {"to": "dataset:caida-prefix2as"},
+      {"to": "dataset:as_relationships_serial_1"},
+      {"to": "dataset:peeringdb_archive"},
+      {"to": "dataset:as_organizations"}
     ],
     "tags" : [
       "asn",
+      "bdrmap",
       "bdrmapit"
     ],
     "authors":[
@@ -64,7 +68,7 @@ conda activate bdrmapit
 5. `pip install .`
 6. Go back to parent directory `cd ..`
 
-By here, you should have *bdrmapit*, *retrieve_external*, and *ip2as* installed. Use `git show <package>` to check if these packages are installed, make sure that you're in the bdrmapit python environment.
+After you complete teh steps above, you should have *bdrmapit*, *retrieve_external*, and *ip2as* installed. Use `git show <package>` to check if these packages are installed, make sure that you're in the bdrmapit python environment.
 
 In your folder for this task you should also see two directories `retrieve-external` and `bdrmapit`. [3, 4] 
 
@@ -80,7 +84,7 @@ In your folder for this task you should also see two directories `retrieve-exter
 1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/). 
 2. (Optional) Instead of downloading prefix2as files from CAIDA, you can also create them manually through instructions [here](https://alexmarder.github.io/ip2as/#extracting-origin-ases-from-ribs).
 
-**Extract origins from RIR extended delegation files**
+**Extract origins from RIR extended delegation files (Strongly Recommended)**
 1. Download AS relationships file and AS customer cone files from [here](https://publicdata.caida.org/datasets/as-relationships/serial-1/). AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are names as `yyyymmdd.ppdc-ases.txt.bz2`
 2. Run command `./retrieve-external/retrieve_external/retrieve.py -b <start> -e <end> -d rirs rir` to extract RIR Extended Delegation file. `<start>` and `<end>` denote data collection starting and ending dates and can be written in format yyyymmdd.
 3. Create file with RIR file names through `find rirs | grep "rirs/" > rir_files.txt`. 
@@ -101,6 +105,7 @@ A concrete example with actual file names:
 ip2as -p routeviews-rv2-20220801-0400.pfx2as.gz -r rir.prefixes -R 20220801.as-rel.txt.bz2 -c 20220801.ppdc-ases.txt.bz2 -a 20220701.as-org2info.txt.gz -P peeringdb_2_dump_2021_12_31.json -o ip2as.prefixes
 ~~~
 
+If you did not extract origins from RIR extended delegation files, you can ignore `-r rirprefixes` as it's optional flag.
 More information about this step can be found [here](https://alexmarder.github.io/ip2as/#prefix-to-as). [4]
 
 **Interpreting Result**
