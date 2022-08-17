@@ -68,7 +68,7 @@ conda activate bdrmapit
 5. `pip install .`
 6. Go back to parent directory `cd ..`
 
-After you complete the steps above, you should have *bdrmapit*, *retrieve_external*, and *ip2as* installed. Use `git show <package>` to check if these packages are installed, make sure that you're in the bdrmapit python environment.
+After you complete the steps above, you should have *bdrmapit*, *retrieve_external*, and *ip2as* installed. Use `pip show <package>` to check if these packages are installed, make sure that you're in the bdrmapit python environment.
 
 In your folder for this task you should also see two directories `retrieve-external` and `bdrmapit`. [3, 4] 
 
@@ -84,11 +84,13 @@ In your folder for this task you should also see two directories `retrieve-exter
 1. Download Routeviews prefix2as files via CAIDA through [this link](https://publicdata.caida.org/datasets/routing/routeviews-prefix2as/). 
 2. (Optional) Instead of downloading prefix2as files from CAIDA, you can also create them manually through instructions [here](https://alexmarder.github.io/ip2as/#extracting-origin-ases-from-ribs).
 
-**Extract origins from RIR extended delegation files (Strongly Recommended)**
-1. Download AS relationships file and AS customer cone files from [here](https://publicdata.caida.org/datasets/as-relationships/serial-1/). AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are named as `yyyymmdd.ppdc-ases.txt.bz2`
+**Extract origins from RIR extended delegation files**
+
+Step 1 is required as we will use AS relationships file and AS customer cone file in later steps. Steps 2-4 are strongly recommended.
+1. (Required) Download AS relationships file and AS customer cone files from [here](https://publicdata.caida.org/datasets/as-relationships/serial-1/). AS relationship files are named as `yyyymmdd.as-rel.txt.bz2` and AS customer cone files are named as `yyyymmdd.ppdc-ases.txt.bz2`
 2. Run command `./retrieve-external/retrieve_external/retrieve.py -b <start> -e <end> -d rirs rir` to extract RIR Extended Delegation file. `<start>` and `<end>` denote data collection starting and ending dates and can be written in format yyyymmdd.
 3. Create file with RIR file names through `find rirs | grep "rirs/" > rir_files.txt` 
-4. Create `rir.prefixes` file through `rir2as -f rir_files.txt -r <AS relationship file> -c <AS customer cone file> -o rir.prefixes`   
+4. Create *rir.prefixes* file through `rir2as -f rir_files.txt -r <AS relationship file> -c <AS customer cone file> -o rir.prefixes`   
 
 **Create prefix to AS mappings**
 1. Download [PeeringDB json file](https://publicdata.caida.org/datasets/peeringdb-v2/)
