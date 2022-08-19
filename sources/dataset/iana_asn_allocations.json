@@ -5,9 +5,9 @@
     "description": "Dataset of ASN allocation ranges collected from IANA.",
     "status":"ongoing",
     "dateStart":"1997-11",
-    "resources": [
+    "access": [
         {
-            "name": "public/restricted",
+            "access": "public/restricted",
             "url": "https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
         }
     ],

@@ -10,16 +10,11 @@
     ],
     "dateStart": "2010.07",
     "status": "ongoing",
-    "resources": [
-        {
-            "name": "public",
-            "url": "https://www.peeringdb.com/apidocs/",
-            "tags": [
-                "api"
-            ]
-        }
-    ],
     "access": [
+        {
+            "access": "public",
+            "url": "https://www.peeringdb.com/"
+        },
         {
             "access": "public",
             "url": "https://www.peeringdb.com/apidocs/",
