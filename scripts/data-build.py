@@ -65,6 +65,7 @@ args = parser.parse_args()
 # used to plural
 import nltk
 nltk.download('wordnet')
+#nltk.download('omw-1.4')
 from nltk.stem.wordnet import WordNetLemmatizer
 Lem = WordNetLemmatizer()
 
@@ -435,11 +436,6 @@ def main():
         if t not in type_ids:
             type_ids[t] = []
         type_ids[t].append(obj["id"])
-
-    # Removing the private objects
-    print ("removing private")
-    remove_private(id_object, id_id_link)
-
 
     ######################
     # Load date info into id_object 
@@ -978,8 +974,6 @@ def recipe_process(path):
                     errors = []
                     if info is None:
                         info = {}
-                    #if "visibility" not in info or "public" != info["visibility"].lower():
-                        #errors.append("invisible")
 
                     if not error: 
                         object_add("Recipe", info)
@@ -1244,35 +1238,6 @@ def word_add_plurals():
                 plural_score[plural] += score
             else:
                 word_score[plural] = score
-
-###########################
-
-def is_private(obj):
-    return "visibility" in obj and obj["visibility"] == "private"
-
-def remove_private(id_object, id_id_link):
-    private = []
-    for id0,id_link in id_id_link.items():
-        obj = id_object[id0]
-        if is_private(obj):
-            private.append(id0)
-        else:
-            p = []
-            for id1 in id_link.keys():
-                obj = id_object[id1]
-                if is_private(obj):
-                    p.append(id1)
-            for id1 in p:
-                del id_link[id1]
-    for id in private:
-        del id_id_link[id]
-
-    private = []
-    for id, obj in id_object.items():
-        if is_private(obj):
-            private.append(id)
-    for id in private:
-        del id_object[id]
 
 ###################
 #
