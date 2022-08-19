@@ -1,0 +1,243 @@
+---
+"Anonymized Internet Traces -> traces":
+  passive-stats:
+    predict: False
+    public : True
+  passive-realtime:
+    predict: False
+    public : True
+  passive-generic:
+    predict: False
+    public : False
+  passive-ipv6day-and-ipv6launch:
+    predict: False
+    public : False
+  passive-oc48:
+    predict: True
+    public : False
+  passive-2007:
+    predict: True
+    public : False
+  passive-2008:
+    predict: False
+    public : False
+  passive-2009:
+    predict: False
+    public : False
+  passive-2010:
+    predict: False
+    public : False
+  passive-2011:
+    predict: False
+    public : False
+  passive-2012:
+    predict: False
+    public : False
+  passive-2013:
+    predict: False
+    public : False
+  passive-2014:
+    predict: False
+    public : False
+  passive-2015:
+    predict: False
+    public : False
+  passive-2016:
+    predict: False
+    public : False
+  passive-2018:
+    predict: False
+    public : False
+  passive-2019:
+    predict: False
+    public : False
+"Interconnection -> interconnection":
+  as-facilities:
+    predict: False
+    public : False
+  bdrmap:
+    predict: False
+    public : False
+  ipv4-2013-census:
+    predict: False
+    public : False
+  ixps:
+    predict: False
+    public : True
+"Topology with Archipelago -> ark":
+  topology-generic:
+    predict: False
+    public : False
+  topology-ark-ipv4-traceroute:
+    predict : True
+    public : False
+  topology-ark-ipv6-traceroute:
+    predict: True
+    public : False
+  topology-ark-itdk:
+    predict: True
+    public : False
+  topology-ark-ipv4-prefix-probing:
+    predict: True
+    public : False
+  topology-ark-ipv4-aslinks:
+    predict: False
+    public : True
+  topology-ark-ipv6-aslinks:
+    predict: False
+    public : True
+  topology-ark-ipv6-routed48:
+    predict: False
+    public : True
+  topology-ark-dnsnames:
+    predict: True
+    public : False
+  topology-ark-tod:
+    predict: False
+    public : False
+  topology-ark-activity:
+    predict: False
+    public : False
+  topology-ark-vela:
+    predict: False
+    public : False
+"Topology with Skitter -> skitter":
+  topology-skitter-ipv4:
+    predict: True
+    public : False
+  topology-skitter-itdk:
+    predict: False
+    public : True
+  topology-skitter-aslinks:
+    predict: False
+    public : True
+  topology-skitter-rlinks:
+    predict: False
+    public : True
+  skitter-router-adjacencies:
+    predict: False
+    public : True
+"Topology with BGP -> bgp":
+  topology-as-relationships:
+    predict: False
+    public : True
+  topology-as-relationships-geo:
+    predict: False
+    public : True
+  topology-as-classification:
+    predict: False
+    public : True
+  topology-as-organization:
+    predict: False
+    public : True
+  topology-as-rank:
+    predict: False
+    public : True
+  routeviews-generic:
+    predict: False
+    public : True
+  routeviews-prefix2as:
+    predict: False
+    public : True
+  topology-dns-lookups:
+    predict: False
+    public : False
+  bgp-communities:
+    predict: False
+    public : False
+"UCSD Network Telescope -> telescope":
+  telescope-generic:
+    predict: False
+    public : False
+  telescope-2days-2008:
+    predict: True
+    public : False
+  telescope-3days-conficker:
+    predict: True
+    public : False
+  telescope-sipscan:
+    predict: False
+    public : True
+  telescope-patch-tuesday:
+    predict: False
+    public : True
+  telescope-educational:
+    predict: False
+    public : True
+  telescope-real-time:
+    predict: True
+    public : False
+  telescope-flowtuple:
+    predict: True
+    public : False
+  telescope-rsdos-daily:
+    predict: True
+    public : False
+  backscatter-generic:
+    predict: True
+    public : False
+  backscatter-tocs:
+    predict: True
+    public : False
+  backscatter-2004-2005:
+    predict: True
+    public : False
+  backscatter-2006:
+    predict: True
+    public : False
+  backscatter-2007:
+    predict: True
+    public : False
+  backscatter-2008:
+    predict: True
+    public : False
+  witty worm:
+    predict: True
+    public : False
+  code-red worm:
+    predict: True
+    public : True
+  rsdos-targets:
+    predict: False
+    public : False
+"Denial of Service Attacks -> ddos":
+  ddos-generic:
+    predict: False
+    public : False
+  ddos-20070804:
+    predict: False
+    public : False
+"Other Datasets -> other":
+  dns-rtt-generic:
+    predict: False
+    public : False
+  dns-root-gtld-rtt:
+    predict: False
+    public : TrueTrue
+  peeringdb:
+    predict: False
+    public : True
+"Paper Data and Tools -> paper":
+  complex_as_relationships:
+    predict: False
+    public : True
+  2006-pam-as-taxonomy:
+    predict: False
+    public : True
+  2016-periscope:
+    predict: False
+    public : True
+  2013-midar:
+    predict: False
+    public : True
+  ioda:
+    predict: False
+    public : True
+#ignore:
+#	asfinder
+#	coralreef
+#	datcat
+#	dolphin
+#	iffinder
+#	mapnet
+#	netgeo
