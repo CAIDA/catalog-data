@@ -1,4 +1,97 @@
 ---
+
+MARKER : "2018_o_dan_ieee_8621886"
+TYPE   : "in_proceedings"
+AUTHOR : "Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian"
+TITLE  : "Distributed Reverse DNS Geolocation"
+CTITLE : "2018 IEEE International Conference on Big Data"
+YEAR   : "2018"
+VOLUME : ""
+PAGE   : "(6 pages)"
+DOI    : "10.1109/BigData.2018.8621886"
+URL    : "https://ieeexplore.ieee.org/abstract/document/8621886"
+TOPKEY : "DDec"
+GEOLOC : "Bethlehem, PA, US"
+ABS    : ""
+
+---
+
+MARKER : "2022_o_dan_acm_3457611"
+TYPE   : "in_journal"
+AUTHOR : "Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian"
+TITLE  : "IP Geolocation through Reverse DNS"
+SERIAL : "ACM Transactions on Internet Technology"
+YEAR   : "2022"
+VOLUME : "22"
+PAGE   : "1-29"
+DOI    : "https://doi.org/10.1145/3457611"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3457611"
+TOPKEY : "DDec"
+GEOLOC : "Bethlehem, PA, US"
+ABS    : ""
+---
+
+MARKER : "2019_m_rehman_arxiv_04651"
+TYPE   : "online"
+AUTHOR : "Rehman, Muzammil; GOldberg, Sharon; Choffnes, David"
+TITLE  : "Passport: Enabling Accurate Country-Level Router Geolocation using Inaccurate Sources
+"
+PUBLISH: "arxiv.org"
+YEAR   : "2019"
+VOLUME : ""
+PAGE   : "acm.org"
+URL    : "https://arxiv.org/abs/1905.04651"
+TOPKEY : "DDec"
+GEOLOC : "Boston, MA, US"
+ABS    : ""
+
+---
+
+MARKER : "2019_o_dan_proquest_13865860"
+TYPE   : "PhD thesis"
+AUTHOR : "Dan, Ovidiu"
+TITLE  : "IP Geolocation"
+PUBLISH: "Lehigh University"
+PAGE   : "(239 pages)"
+YEAR   : "2019"
+URL    : "https://www.proquest.com/docview/2238777571/previewPDF/67B74B1F03334853PQ/1?accountid=14524"
+TOPKEY : "DDec"
+GEOLOC : "Ann Arbor, MI, US"
+ABS    : ""
+
+---
+
+MARKER : "2020_v_giotsas_acm_3423654"
+TYPE   : "in_proceedings"
+AUTHOR : "Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; Madhyastha, Harsha; Katz-Bassett, Ethan"
+TITLE  : "Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes"
+CTITLE : "Proceedings of the ACM Internet Measurement Conference"
+YEAR   : "2020"
+VOLUME : ""
+PAGE   : "247-265"
+DOI    : "https://doi.org/10.1145/3419394.3423654"
+URL    : "https://dl.acm.org/doi/10.1145/3419394.3423654"
+TOPKEY : "DDec"
+GEOLOC : "Lancaster, GB"
+ABS    : ""
+
+---
+
+MARKER : "2018_j_zhu_20180702"
+TYPE   : "in_journal"
+AUTHOR : "Zhu, Jinyu; Zhang, Yu; Zeng, Liangwei; Yu, Zhuoxun; Zhang, Hongli"
+TITLE  : "Geolocation For Multi-Interface Routers"
+SERIAL : "Journal of Cyber Security"
+YEAR   : "2018"
+VOLUME : "3"
+PAGE   : "(10 pages)"
+DOI    : "10.19363/J.cnki.cn10-1380/tn.2018.07.02"
+URL    : "https://www.cnki.net/kcms/doi/10.19363/J.cnki.cn10-1380/tn.2018.07.02.html"
+TOPKEY : "DDec"
+GEOLOC : "Harbin, CN"
+ABS    : ""
+
+---
 MARKER : "2019_hans_h_parnsf_10107792"
 TYPE   : "in_journal"
 AUTHOR : "Hans, H., Yixin, S., Sameer, W., Prateek, M."
@@ -638,7 +731,7 @@ ABS    : ""
 
 MARKER : "2013_spinelli_l_ieee_6562892"
 TYPE   : "in_proceedings"
-AUTHOR : "Spinelli, L., Crovella, M., Eriksson, B."  
+AUTHOR : "Spinelli, L., Crovella, M., Eriksson, B."
 TITLE  : "AliasCluster: A lightweight approach to interface disambiguation"
 CTITLE : "2013 IEEE Conference on Computer Communications Workshops"
 YEAR   : "2013-04"
@@ -7126,7 +7219,7 @@ MARKER : "2021_a_ulmer_wol_14287"
 TYPE   : "in_journal"
 SERIAL : "Computer Graphics Forum"
 VOLUME : "40-3"
-PAGE   : "37-48" 
+PAGE   : "37-48"
 AUTHOR : "Ulmer, A., Kohlhammer, J."
 TITLE  : "ProBGP: Progressive Visual Analytics of Live BGP Updates"
 YEAR   : "2021-05"
@@ -8108,7 +8201,7 @@ AUTHOR : "Ben Basat, Ran; Chen, Xiaoqi; Einziger, Gil; Rottenstreich, Ori"
 TITLE  : "Designing Heavy-Hitter Detection Algorithms for Programmable Switches"
 SERIAL : "IEEE/ACM Transactions on Networking"
 YEAR   : "2020"
-VOLUME : "28(3)" 
+VOLUME : "28(3)"
 PAGE   : "1172-1185"
 DOI    : "10.1109/TNET.2020.2982739"
 URL    : "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9069311"
@@ -9268,8 +9361,8 @@ PAGE   : "530-531"
 DOI    : "10.1145/3386367.3431669"
 URL    : "https://dl.acm.org/doi/pdf/10.1145/3386367.3431669"
 TOPKEY : "topology-as-relationships"
-GEOLOC : "Neurinberg, DE" 
-ABS    : "" 
+GEOLOC : "Neurinberg, DE"
+ABS    : ""
 
 ---
 
@@ -9421,8 +9514,8 @@ URL    : "https://inet.haw-hamburg.de/thesis/completed/ma_jasper_eumann.pdf/@@do
 TOPKEY : "topology-as-relationships, topology-as-classification"
 GEOLOC : "Hamburg, DE"
 ABS    : ""
- 
----     
+
+---
 
 MARKER : "2020_t_mcdaniel_arxiv_3355626"
 TYPE   : "online"
@@ -9434,7 +9527,7 @@ VOLUME : ""
 PAGE   : ""
 URL    : "https://arxiv.org/pdf/2006.06576.pdf"
 TOPKEY : "topology-as-relationships"
-GEOLOC : "Knoxville, TN, US" 
+GEOLOC : "Knoxville, TN, US"
 ABS    : ""
 
 ---
@@ -9570,7 +9663,7 @@ TOPKEY : "topology-as-relationships"
 GEOLOC : "Quebec, CA"
 ABS    : ""
 
----   
+---
 
 MARKER : "2020_l_liquori_hal_3355633"
 TYPE   : "tech report"
@@ -9717,9 +9810,9 @@ TOPKEY : "topology-as-relationships"
 GEOLOC : "Delhi, IN"
 ABS    : ""
 
---- 
+---
 
-MARKER : "2021_r_morillo_ndss_3355643" 
+MARKER : "2021_r_morillo_ndss_3355643"
 TYPE   : "in_proceedings"
 AUTHOR : "Morillo, R.;  Furuness, J.; Morris, C.; Breslin, J.; Herzberg, A.; Wang, B."
 TITLE  : "ROV++: Improved Deployable Defense against BGP Hijacking"
@@ -9748,7 +9841,7 @@ GEOLOC : "Berlin, DE"
 ABS    : ""
 
 ---
- 
+
 MARKER : "2021_m_grassia_arxiv_3355645"
 TYPE   : "online"
 AUTHOR : "Grassia, M.; De Domenico, M.; Mangioni, G."
@@ -9931,7 +10024,7 @@ PAGE   : ""
 DOI    : "10.1002/dac.4065"
 URL    : "https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.4065?casa_token=lDUZm7XlVU8AAAAA%3AP2DkB98L44o8aEV_EoT5RVbKSG_h42y13r0MUTl9zqzZQauZIpQrqD7iiv0PJRrgzvs1bdP40mdwu2g"
 TOPKEY : "passive-2016"
-GEOLOC : "Hsinchu, TW"           
+GEOLOC : "Hsinchu, TW"
 ABS    : ""
 
 ---
@@ -10025,10 +10118,10 @@ PAGE   : "2330-2334"
 DOI    : "10.1109/LCOMM.2019.2947895"
 URL    : "https://ieeexplore.ieee.org/document/8873625"
 TOPKEY : "passive-2018"
-GEOLOC : "Daejeon, KR" 
+GEOLOC : "Daejeon, KR"
 ABS    : ""
 
---- 
+---
 
 MARKER : "2019_g_chrysos_fpl_3355663"
 TYPE   : "in_proceedings"
@@ -10091,7 +10184,7 @@ DOI    : "10.1038/s41598-019-53167-5"
 URL    : "https://www.nature.com/articles/s41598-019-53167-5.pdf"
 TOPKEY : "topology-as-relationships"
 GEOLOC : "Maceio, BR"
-ABS    : "" 
+ABS    : ""
 
 ---
 
@@ -10162,7 +10255,7 @@ YEAR   : "2019"
 VOLUME : ""
 PAGE   : "406-419"
 DOI    : "10.1145/3355369.3355596"
-URL    : "https://dl.acm.org/doi/pdf/10.1145/3355369.3355596" 
+URL    : "https://dl.acm.org/doi/pdf/10.1145/3355369.3355596"
 TOPKEY : "topology-as-organization, topology-as-relationships"
 GEOLOC : "Rochester, New York, NY, US"
 ABS    : ""
@@ -10346,7 +10439,7 @@ PAGE   : "(7 pages)"
 PUBLISH : "Researchgate.net"
 URL    : "https://www.researchgate.net/publication/340535806_Dynamics_of_Software_Defined_Networks_Diffusion_Models"
 TOPKEY : "passive-2016"
-ABS    : "Software Defined Networks" 
+ABS    : "Software Defined Networks"
 
 ---
 
@@ -11086,7 +11179,7 @@ PAGE   : "160-168"
 DOI    : "10.1109/NETSOFT.2019.8806649"
 URL    : "https://ieeexplore.ieee.org/document/8806649"
 TOPKEY : "passive-generic"
-GEOLOC : "Bologna, IT; Trento, IT; London, UK; Trento, IT" 
+GEOLOC : "Bologna, IT; Trento, IT; London, UK; Trento, IT"
 ABS    : "The advent of Software-Defined Networking with OpenFlow first, and subsequently the emergence of programmable data planes, has boosted lot of research around many networking aspects: monitoring, security, traffic engineering. In the context of network monitoring, most of the proposed solutions show the benefits of data plane programmability by simplifying the complexity of the network with a one big-switch abstraction. Only few papers look at network-wide solutions, but consider the network as non heterogeneous: only composed by programmable devices. In this paper, we argue that the primary challenge for a successful adoption of those solutions is the deployment problem: how to compose and monitor a network consisting of both legacy and programmable switches? We propose an approach for incrementally deploy programmable devices in an ISP network with the goal of monitoring as many distinct network flows as possible. While assessing the benefits of our solution, we realized that proposed network-wide monitoring algorithms might not be optimized for a partial deployment scenario. We then also developed a novel strategy capable of detecting network-wide heavy flows with the same accuracy of state-of-the-art solutions but by relying on less information from the data plane."
 
 
@@ -11238,7 +11331,7 @@ VOLUME : "27 (5)"
 PAGE   : "(14 pages)"
 DOI    : "10.1109/TNET.2019.2933868"
 TOPKEY : "passive-2016"
-GEOLOC : "Beijing, CN" 
+GEOLOC : "Beijing, CN"
 ABS    : "Finding top-k elephant flows is a critical task in network traffic measurement, with many applications in congestion control, anomaly detection and traffic engineering. As the line rates keep increasing in todays networks, designing accurate and fast algorithms for online identification of elephant flows becomes more and more challenging. The prior algorithms are seriously limited in achieving accuracy under the constraints of heavy traffic and small on-chip memory in use. We observe that the basic strategies adopted by these algorithms either require significant space overhead to measure the sizes of all flows or incur significant inaccuracy when deciding which flows to keep track of. In this paper, we adopt a new strategy, called count-with-exponential-decay, to achieve space-accuracy balance by actively removing small flows through decaying, while minimizing the impact on large flows, so as to achieve high precision in finding top-k elephant flows. Moreover, the proposed algorithm called HeavyKeeper incurs small, constant processing overhead per packet and thus supports high line rates. Experimental results show that HeavyKeeper algorithm achieves 99.99% precision with a small memory size, and reduces the error by around 3 orders of magnitude on average compared to the state-of-the-art"
 REMARK : "See also https://www.usenix.org/conference/atc18/presentation/gong"
 
@@ -13201,7 +13294,7 @@ ABS    : "Advancements in computing, communication, and sensing technologies are
 
 
 ---
- 
+
 MARKER : "2018_nn_mh_ebh_pc_sam_cf_2019821"
 TYPE   : "in_proceedings"
 AUTHOR : "Neshenko, N., Husak, M., Bou-Harb, E., Celeda, P., Al-Mulla, S., Fachkha, C."
@@ -14470,7 +14563,7 @@ ABS    : "This paper reports on our experience with deploying network traffic cl
 
 MARKER : "2019_rcb_dkb_20191134"
 TYPE   : "in_journal"
-AUTHOR : "Baishya, R. C., Bhattacharyya, D. K." 
+AUTHOR : "Baishya, R. C., Bhattacharyya, D. K."
 TITLE  : "A Complete Detection and Mitigation Framework to Protect a Network from DDoS Attacks"
 SERIAL : "IETE Journal of Research"
 YEAR   : "2019"
@@ -15996,7 +16089,7 @@ TITLE  : "Data-driven curation, learning and analysis for inferring evolving iot
 CTITLE : "Intl Conf. on Availability, Reliability and Security"
 ARTICLE: "6"
 PAGE   : "1-10"
-YEAR   : "2019-08" 
+YEAR   : "2019-08"
 DOI    : "10.1145/3339252.3339272"
 TOPKEY : "telescope-real-time"
 ABS    : "The insecurity of the Internet-of-Things (IoT) paradigm continues to wreak havoc in consumer and critical infrastructure realms. Several challenges impede addressing IoT security at large, including, the lack of IoT-centric data that can be collected, analyzed and correlated, due to the highly heterogeneous nature of such devices and their widespread deployments in Internet-wide environments. To this end, this paper explores macroscopic, passive empirical data to shed light on this evolving threat phenomena. This not only aims at classifying and inferring Internet-scale compromised IoT devices by solely observing such one-way network traffic, but also endeavors to uncover, track and report on orchestrated in the wild IoT botnets. Initially, to prepare the effective utilization of such data, a novel probabilistic model is designed and developed to cleanse such traffic from noise samples (i.e., misconfiguration traffic). Subsequently, several shallow and deep learning models are evaluated to ultimately design and develop a multi-window convolution neural network trained on active and passive measurements to accurately identify compromised IoT devices. Consequently, to infer orchestrated and unsolicited activities that have been generated by well-coordinated IoT botnets, hierarchical agglomerative clustering is deployed by scrutinizing a set of innovative and efficient network feature sets. By analyzing 3.6 TB of recent darknet traffic, the proposed approach uncovers a momentous 440,000 compromised IoT devices and generates evidence-based artifacts related to 350 IoT botnets. While some of these detected botnets refer to previously documented campaigns such as the Hide and Seek, Hajime and Fbot, other events illustrate evolving threats such as those with cryptojacking capabilities and those that are targeting industrial control system communication and control services."
@@ -18140,7 +18233,7 @@ TITLE  : "A study on geographic properties of Internet routing"
 SERIAL : "Computer Networks"
 VOLUME : "133"
 YEAR   : "2018-03"
-PAGE   : "183-194" 
+PAGE   : "183-194"
 DOI    : "10.1016/j.comnet.2018.01.032"
 TOPKEY : "topology-ark-ipv4-traceroute"
 GEOLOC : "Beijing, CN"
@@ -18445,9 +18538,9 @@ ABS    : "Many recent proposals for anonymous communication omit from their secu
 ---
 MARKER : "2018_n_geng_iwqos"
 TYPE   : "in_proceedings"
-AUTHOR : "Geng, N., Yang, Y., Xu, M." 
+AUTHOR : "Geng, N., Yang, Y., Xu, M."
 TITLE  : "Flow-level traffic engineering in conventional networks with hop-by-hop routing"
-CTITLE : "Symp. on Quality of Service (IWQoS)" 
+CTITLE : "Symp. on Quality of Service (IWQoS)"
 YEAR   : "2018-01"
 TOPKEY : "passive-2014,passive-2015,passive-2016"
 GEOLOC : "Beijing, CN"
@@ -20152,7 +20245,7 @@ PAGE   : "451-458"
 DOI    : "10.1145/3038912.3052571"
 TOPKEY : "topology-as-classification"
 GEOLOC : "London, UK; London, UK; London, UK; London, UK; Rome, IT; Cambridge, UK; London, UK"
-ABS    : "Headers are a critical part of HTTP, and it has been shown that they are increasingly subject to middlebox manipulation. Although this is well known, little is understood about the general regional and network trends that underpin these manipulations. In this paper, we collect data on thousands of networks to understand how they intercept HTTP headers in-the-wild. Our analysis reveals that 25% of measured ASes modify HTTP headers. Beyond this, we witness distinct trends among different regions and AS types; e.g., we observe high numbers of cache headers in poorly connected regions. Finally, we perform an in-depth analysis of the types of manipulations and how they differ across regions."  
+ABS    : "Headers are a critical part of HTTP, and it has been shown that they are increasingly subject to middlebox manipulation. Although this is well known, little is understood about the general regional and network trends that underpin these manipulations. In this paper, we collect data on thousands of networks to understand how they intercept HTTP headers in-the-wild. Our analysis reveals that 25% of measured ASes modify HTTP headers. Beyond this, we witness distinct trends among different regions and AS types; e.g., we observe high numbers of cache headers in poorly connected regions. Finally, we perform an in-depth analysis of the types of manipulations and how they differ across regions."
 
 ---
 MARKER : "2017_k_kleineberg_scirep_02910"
@@ -21597,7 +21690,7 @@ DOI    : "10.1109/CNSM.2016.7818400"
 TOPKEY : "passive-2014"
 GEOLOC : "Haifa, IL"
 ABS    : "Real time detection of flow anomalies is a critical part of wide range of management and security applications in many Cloud and NFV systems. Solutions based on per-flow records have become impossible due to the increasing traffic volumes and the limited available resources such as TCAM entries and fast counters. In this paper we study a novel dynamic control mechanism that allows detecting flow anomalies using only a limited number of counters. Starting from the simple observation that it is impossible to guarantee instantaneous detection of flow anomalies with a limited amount of counters, we study the trade-off between the time required to detect the anomaly and the number of available counters. We implemented the scheme in an OpenFlow enabled switch, where the logic is implemented in the controller, and demonstrate that it can be used to detect a single flow anomaly within large real traffic volume. To further reduce the detection time, we also implemented the scheme logic inside the switch and used the controller only for configuration. This implementation indeed yielded a faster detection and lower monitoring communication overhead while not introducing any significant observable costs at the switch itself."
- 
+
 ---
 MARKER : "2016_p_chen_j_applied_statistics"
 TYPE   : "in_journal"
@@ -23556,7 +23649,7 @@ GEOLOC : "Coimbatore, IN"
 ABS    : "Botnet is one of the most serious threats to cyber security as it provides a distributed platform for several illegal activities. Regardless of the availability of numerous methods proposed to detect botnets, still it is a challenging issue as botmasters are continuously improving bots to make them stealthier and evade detection. Most of the existing detection techniques cannot detect modern botnets in an early stage, or they are specific to command and control protocol and structures. In this paper, we propose a novel approach to detect botnets irrespective of their structures, based on network traffic flow behavior analysis and machine learning techniques. The experimental evaluation of the proposed method with real-world benchmark datasets shows the efficiency of the method. Also, the system is able to identify the new botnets with high detection accuracy and low false positive rate."
 
 ---
-MARKER : "2016_d_boro_aisc_408_143" 
+MARKER : "2016_d_boro_aisc_408_143"
 TYPE   : "in_proceedings"
 AUTHOR : "Boro, D., Basumatary, H., Goswami, T., Bhattacharyya, D.K."
 TITLE  : "UDP Flooding attack detection using information metric measure"
@@ -25429,7 +25522,7 @@ YEAR   : "2015-07"
 DOI    : "10.1049/el.2015.0999"
 TOPKEY : "passive-2014"
 GEOLOC : "Brest, FR; Yokohama, JP; Yokohama, JP; Charlottesville, VA, US; Yokohama, JP; Brest, FR; Brest, FR; Charlottesville, VA, US; Charlottesville, VA, US; Yokohama, JP"
-ABS    : "An energy-saving strategy for application-centric networks is proposed. A new architecture for energy-efficient Ethernet that meets the quality of service requirements for different classes of service is studied." 
+ABS    : "An energy-saving strategy for application-centric networks is proposed. A new architecture for energy-efficient Ethernet that meets the quality of service requirements for different classes of service is studied."
 
 ---
 MARKER : "2015_h_ding_ccr_45_20"
@@ -25486,7 +25579,7 @@ PAGE   : "176-187"
 DOI    : "10.1109/TNSM.2015.2432011"
 TOPKEY : "topology-as-relationships,2006-pam-as-taxonomy"
 GEOLOC : "Suita, JP"
-ABS    : "Content centric networking (CCN) has attracted a great deal of attention as a network that can efficiently deliver content. In CCN, content is delivered using the content name, instead of the host IP address, from cache memory implemented at routers. The nodes sending content are not explicitly indicated, and content is delivered from routers that have copies of content on the routes where the Interest packets are transmitted. Therefore, as a result of introducing CCN in ISP networks, the pattern of traffic exchanges among ISPs will change considerably. Customer ISPs normally pay a transit fee to transit ISPs based on the traffic volume transmitted on the transit links. Therefore, the introduction of CCN by ISPs will affect the profit of ISPs. CCN is introduced and operated by ISPs based on their business judgment, so it is important to estimate how CCN affects ISP profit to investigate the likelihood of CCN spreading among many ISPs. In this paper, we formalize the profit of ISPs when implementing CCN, assuming a hierarchical topology of ISPs in three levels and show that introducing CCN increases the profit of layer 2 and 3 ISPs, whereas introducing CCN decreases the profit of layer 1 ISPs. We also clarify that the effect of introducing CCN for the profit of ISPs is more remarkable as the cache capacity or the bias of content popularity increases." 
+ABS    : "Content centric networking (CCN) has attracted a great deal of attention as a network that can efficiently deliver content. In CCN, content is delivered using the content name, instead of the host IP address, from cache memory implemented at routers. The nodes sending content are not explicitly indicated, and content is delivered from routers that have copies of content on the routes where the Interest packets are transmitted. Therefore, as a result of introducing CCN in ISP networks, the pattern of traffic exchanges among ISPs will change considerably. Customer ISPs normally pay a transit fee to transit ISPs based on the traffic volume transmitted on the transit links. Therefore, the introduction of CCN by ISPs will affect the profit of ISPs. CCN is introduced and operated by ISPs based on their business judgment, so it is important to estimate how CCN affects ISP profit to investigate the likelihood of CCN spreading among many ISPs. In this paper, we formalize the profit of ISPs when implementing CCN, assuming a hierarchical topology of ISPs in three levels and show that introducing CCN increases the profit of layer 2 and 3 ISPs, whereas introducing CCN decreases the profit of layer 1 ISPs. We also clarify that the effect of introducing CCN for the profit of ISPs is more remarkable as the cache capacity or the bias of content popularity increases."
 
 ---
 MARKER : "2015_a_pares_ubar_596002"
@@ -25919,7 +26012,7 @@ MARKER : "2015_u_ayesta_ifip_networking"
 TYPE   : "in_proceedings"
 AUTHOR : "Ayesta, U.; Bertaux, L.; Carvin, D."
 TITLE  : "Non-intrusive scheduling of TCP flows"
-CTITLE : "IFIP Networking Conf." 
+CTITLE : "IFIP Networking Conf."
 PAGE   : "(9 pages)"
 YEAR   : "2015-05"
 DOI    : "10.1109/IFIPNetworking.2015.7145298"
@@ -27236,7 +27329,7 @@ TITLE  : "DDoS detection system using wavelet features and semi-supervised learn
 CTITLE : "Symp. on Security in Computing and Communications"
 SERIAL : "Communications in Computer and Information Science"
 VOLUME : "467"
-PAGE   : "291-303" 
+PAGE   : "291-303"
 YEAR   : "2014-09"
 DOI    : "10.1007/978-3-662-44966-0_28"
 TOPKEY : "ddos-20070804"
@@ -27360,7 +27453,7 @@ DOI    : "10.1109/ICCCN.2014.6911845"
 TOPKEY : "passive-2008, passive-2009, passive-2010, passive-2011, passive-2012, passive-2013"
 PLACE  : "Shanghai, CN; 4-7 Aug. 2014"
 GEOLOC : "Beijing, CN"
-ABS    : "Software-defined networking (SDN) has attracted many research interests among the networking community and has been deployed in many small to moderate networks. Although many approaches have been proposed to address the scalability issue of SDN, however, it is still an open problem whether SDN can be applied to large scale networks such as Tier-1 Internet service providers (ISP) when it works in passive mode. To address this problem, we in this paper analyze the number of flow entries that a switch needs to maintain and the number of flow setup requests per second that a controller needs to deal with, based on real data traces collected from a link between two routers in a Tier-1 ISP. The results show that, if we store a unique flow entry for every flow, SDN cannot be applied to large ISPs. In addition, if switches are required to deal with 12-tuple flow entries, SDN still cannot be applied to large Tier-1 ISPs even if we only setup unique flow entries for flows whose sizes are larger than 100 MB. However, if switches are required to deal with only 2-tuple flow entries, SDN can be applied to large Tier-1 ISPs if we only setup unique flow entries for flows whose sizes are larger than 10 MB." 
+ABS    : "Software-defined networking (SDN) has attracted many research interests among the networking community and has been deployed in many small to moderate networks. Although many approaches have been proposed to address the scalability issue of SDN, however, it is still an open problem whether SDN can be applied to large scale networks such as Tier-1 Internet service providers (ISP) when it works in passive mode. To address this problem, we in this paper analyze the number of flow entries that a switch needs to maintain and the number of flow setup requests per second that a controller needs to deal with, based on real data traces collected from a link between two routers in a Tier-1 ISP. The results show that, if we store a unique flow entry for every flow, SDN cannot be applied to large ISPs. In addition, if switches are required to deal with 12-tuple flow entries, SDN still cannot be applied to large Tier-1 ISPs even if we only setup unique flow entries for flows whose sizes are larger than 100 MB. However, if switches are required to deal with only 2-tuple flow entries, SDN can be applied to large Tier-1 ISPs if we only setup unique flow entries for flows whose sizes are larger than 10 MB."
 
 ---
 MARKER : "2014_m_barati_isbast"
@@ -27444,7 +27537,7 @@ TOPKEY : "passive-2012"
 PLACE  : "Chicago, IL, US, 17-22 Aug 2014"
 GEOLOC : "Los Angeles, CA, US; Los Angeles, CA, US; Los Angeles, CA, US; Mountain View, CA, US"
 ABS    : "Software-defined networks can enable a variety of concurrent, dynamically instantiated, measurement tasks, that provide fine-grain visibility into network traffic. Recently, there have been many proposals to configure TCAM counters in hardware switches to monitor traffic. However, the TCAM memory at switches is fundamentally limited and the accuracy of the measurement tasks is a function of the resources devoted to them on each switch. This paper describes an adaptive measurement framework, called DREAM, that dynamically adjusts the resources devoted to each measurement task, while ensuring a user-specified level of accuracy. Since the trade-off between resource usage and accuracy can depend upon the type of tasks, their parameters, and traffic characteristics, DREAM does not assume an a priori characterization of this trade-off, but instead dynamically searches for a resource allocation that is sufficient to achieve a desired level of accuracy. A prototype implementation and simulations with three network-wide measurement tasks (heavy hitter, hierarchical heavy hitter and change detection) and diverse traffic show that DREAM can support more concurrent tasks with higher accuracy than several other alternatives."
-    
+
 ---
 MARKER : "2014_l_mchale_icnp"
 TYPE   : "in_proceedings"
@@ -27929,7 +28022,7 @@ AUTHOR : "Reviriego, P., Pontarelli, S., Maestro, J.A."
 TITLE  : "Energy efficient exact matching for flow identification with cuckoo affinity hashing"
 SERIAL : "IEEE Communications Letters"
 VOLUME : "18 (5)"
-PAGE   : "885-888" 
+PAGE   : "885-888"
 YEAR   : "2014-05"
 DOI    : "10.1109/LCOMM.2014.040214.140506"
 TOPKEY : "passive-stats"
@@ -29589,7 +29682,7 @@ AUTHOR : "Pantazopoulos, P., Karaliopoulos, M., Stavrakakis, I."
 TITLE  : "On the local approximations of node centrality in Internet router-level topologies"
 CTITLE : "Workshop on Self-Organizing Systems (IWSOS)"
 SERIAL : "Lecture Notes in Computer Science (LNCS)"
-VOLUME : "8221" 
+VOLUME : "8221"
 PAGE   : "115-126"
 YEAR   : "2013-05"
 DOI    : "10.1007/978-3-642-54140-7_10"
