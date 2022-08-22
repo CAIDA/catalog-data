@@ -1,6 +1,13 @@
 ### Catalog Data
 This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org))'s database.
 
+The Makefile supports the following commands:
+- *run* (default): this will build the data files with up-to-date dates and un-indented output
+- *fast* : this will build the data files without up-to-date dates and un-indented output
+- *read*,*readable* : this will build the data files without up-to-date dates and indented output
+  this version is more human readable output
+- *clean* : this will remove all the placeholder files
+
 ### how to links
 - [how to contribute to the catalog](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute)
      - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe)
@@ -33,6 +40,8 @@ The original and convert JSON files are parsed by [data-build.py](scripts/data-b
 - id_id_link.json : stores the link files in {from,to,label} nested dictionaries
 - word_score_id.json : dictionary for each word of scores and id pairs.
 - types_ids.json : mapps the object types and the ids of that type 
+- suggestions.json : a list of suggestions for 0 results queries copied from data/suggestions.json
+  The order of suggestions in the file, is the 'default order'
 
 These are made by two scripts:
 - scripts/pubdb_placeholder.py : creates the pubdb objects

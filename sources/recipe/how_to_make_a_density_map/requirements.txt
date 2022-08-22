@@ -1,0 +1,7 @@
+geopandas
+geoplot
+pandas
+matplotlib
+pycountry_convert
+mapclassify
+reverse_geocode

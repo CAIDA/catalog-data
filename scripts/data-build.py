@@ -60,11 +60,13 @@ parser = argparse.ArgumentParser(description='Collections metadata of bgpstream 
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-r", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
 # used to plural
 import nltk
 nltk.download('wordnet')
+#nltk.download('omw-1.4')
 from nltk.stem.wordnet import WordNetLemmatizer
 Lem = WordNetLemmatizer()
 
@@ -120,6 +122,7 @@ repo_url_default = "https://github.com/CAIDA/catalog-data"
 id_object_file = "id_object.json"
 id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
+id_words_file = "id_words.json"
 access_word_id_file = "access_word_id.json"
 pubdb_links_file = "data/pubdb_links.json"
 personName_ids_file = "personName_ids.json"
@@ -207,7 +210,7 @@ def main():
         "paper",
         "software",
         "media",
-        "group",
+        "collection",
         "venue"
     ])
 
@@ -328,6 +331,19 @@ def main():
         del id_object[id_]
 
     #######################
+    # checking if collection members are missing
+    #######################
+    print ("checking collection members ids")
+    for obj in id_object.values():
+        if obj["__typename"] == "Collection" and "members" in obj:
+            ids = []
+            for id_ in obj["members"]:
+                if id_ in id_object:
+                    ids.append(id_)
+                else:
+                    utils.error_add(obj["filename"], obj["id"]+"'s member "+id_+" not found")
+
+    #######################
     # printing errors
     #######################
     utils.error_print()
@@ -360,11 +376,13 @@ def main():
     for obj in id_object.values():
         if "access" in obj:
             for access in obj["access"]:
-                word = access["access"]
+                if "access" in access:
+                    word = access["access"]
+                else:
+                    word = access["url"]
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
-
 
     #######################
     # parse out the words from the fields
@@ -421,37 +439,51 @@ def main():
             type_ids[t] = []
         type_ids[t].append(obj["id"])
 
-    # Removing the private objects
-    print ("removing private")
-    remove_private(id_object, id_id_link)
-
-
     ######################
     # Load date info into id_object 
     ######################
     print ("Adding dataset date info")
     data_load_from_summary(args.summary_file)
 
+    ######################
+    # Create a word_id
+    ######################
+    id_words = {}
+    for word, id_score in word_id_score.items():
+        for i in id_score.keys():
+            if i not in id_words:
+                id_words[i] = set()
+            id_words[i].add(word)
+    for i,words in id_words.items():
+        id_words[i] = list(words)
+
     #######################
     # print files
     #######################
+    if args.readable_output:
+        indent = 4
+    else:
+        indent = None
     print ("writing",id_object_file)
-    json.dump(id_object, open(id_object_file,"w"),indent=4)
+    json.dump(id_object, open(id_object_file,"w"),indent=indent)
 
     print ("writing",personName_ids_file)
-    json.dump(personName_ids, open(personName_ids_file,"w"),indent=4)
+    json.dump(personName_ids, open(personName_ids_file,"w"),indent=indent)
 
     print ("writing",type_ids_file)
-    json.dump(type_ids, open(type_ids_file,"w"),indent=4)
+    json.dump(type_ids, open(type_ids_file,"w"),indent=indent)
 
     print ("writing",id_id_link_file)
-    json.dump(id_id_link, open(id_id_link_file,"w"),indent=4)
+    json.dump(id_id_link, open(id_id_link_file,"w"),indent=indent)
 
+    print ("writing",id_words_file)
+    json.dump(id_words, open(id_words_file,"w"),indent=indent)
+    
     print ("writing",word_id_score_file)
-    json.dump(word_id_score, open(word_id_score_file,"w"),indent=4)
+    json.dump(word_id_score, open(word_id_score_file,"w"),indent=indent)
     
     print ("writing",access_word_id_file)
-    json.dump(access_word_ids, open(access_word_id_file,"w"),indent=4)
+    json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
 
 ########################### 
 # Date
@@ -535,7 +567,7 @@ def object_date_add(obj):
             "Software":["dateCreated","dateModified"],
             "Recipe":["dateObjectModified","dateObjectCreated"],
             "Tag":["dateObjectModified","dateObjectCreated"],
-            "Group":["dateObjectModified", "dateObjectCreated"]
+            "Collection":["dateObjectModified", "dateObjectCreated"]
         }
         type_ = obj["__typename"]
         if type_ in type_key:
@@ -637,6 +669,10 @@ def object_finish(obj):
                 objects = [obj]
             else:
                 for i, access in enumerate(obj["access"]):
+                    if 'access' not in access:
+                        utils.error_add(obj["filename"], "access requires an access field")
+                    if 'url' not in access:
+                        utils.error_add(obj["filename"], "access requires an url field")
                     if "tags" in access:
                         objects.append(access)
             for o in objects:
@@ -959,8 +995,6 @@ def recipe_process(path):
                     errors = []
                     if info is None:
                         info = {}
-                    #if "visibility" not in info or "public" != info["visibility"].lower():
-                        #errors.append("invisible")
 
                     if not error: 
                         object_add("Recipe", info)
@@ -1225,35 +1259,6 @@ def word_add_plurals():
                 plural_score[plural] += score
             else:
                 word_score[plural] = score
-
-###########################
-
-def is_private(obj):
-    return "visibility" in obj and obj["visibility"] == "private"
-
-def remove_private(id_object, id_id_link):
-    private = []
-    for id0,id_link in id_id_link.items():
-        obj = id_object[id0]
-        if is_private(obj):
-            private.append(id0)
-        else:
-            p = []
-            for id1 in id_link.keys():
-                obj = id_object[id1]
-                if is_private(obj):
-                    p.append(id1)
-            for id1 in p:
-                del id_link[id1]
-    for id in private:
-        del id_id_link[id]
-
-    private = []
-    for id, obj in id_object.items():
-        if is_private(obj):
-            private.append(id)
-    for id in private:
-        del id_object[id]
 
 ###################
 #

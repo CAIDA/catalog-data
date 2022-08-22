@@ -1,0 +1,86 @@
+[
+    {
+        "query": "links=tag:asn",
+        "description": "tagged with `asn`"
+    },
+    {
+        "query": "!links=tag:caida",
+        "description": "not tagged with `caida`"
+    },
+    {
+        "query": "bgpstream",
+        "description": "contains the word `bgpstream`  "
+    },
+    {
+        "query": "ipv4 !ipv6",
+        "description": "contains the word `ipv4` but not the word `ipv6` "
+    },
+    {
+        "query": "!links=dataset:as_relationships_serial_1 rank",
+        "description": "not linked to `dataset:as_relationships_serial_1` and contains the word `rank` "
+    },
+    {
+        "query": "types=dataset topology",
+        "description": "`datasets` with the word `topology` "
+    },
+    {
+        "query": "types=dataset topology ark",
+        "description": "`datasets` with the word `topology` and `ark` "
+    },
+    {
+        "query": "types=dataset,recipe links=tag:topology !ark",
+        "description": "`datasets` or `recipes` with the tag `topology` without the word `ark` "
+    },
+    {
+        "query": "types=dataset,recipe links=tag:topology,ark",
+        "description": "`datasets` or `recipes` with the tag `topology` or `ark` "
+    },
+    {
+        "query": "types=dataset access=public",
+        "description": "`datasets` that are marked as public access "
+    },
+    {
+        "query": "types=paper routing",
+        "description": "`papers` with the word `routing` "
+    },
+    {
+        "query": "types=paper links=tag:best_paper",
+        "description": "`papers` with the tag `best paper` "
+    },
+    {
+        "query": "types=paper routing !links=tag:caida",
+        "description": "`papers` with the word `routing` without the tag `caida`"
+    },
+    {
+        "query": "types=paper dates=2020,2021",
+        "description": "`papers` published in 2020 or 2021"
+    },
+    {
+        "query": "types=paper persons=claffy",
+        "description": "`papers` authored by people with `claffy` in their name "
+    },
+    {
+        "query": "types=paper links=person:claffy__kc",
+        "description": "`papers` linked by `kc Claffy` "
+    },
+    {
+        "query": "paper:2021_wie2020_report,person:claffy__kc",
+        "description": "objects with id `paper:2021_wie2020_report` or `person:claffy__kc` "
+    },
+    {
+        "query": "links=person:claffy__kc,person:clark__david",
+        "description": "objects linked to `kc claffy` or `David Clark`"
+    },
+    {
+        "query": "links=person:claffy__kc links=person:clark__david",
+        "description": "objects linked to `kc claffy` and `David Clark`"
+    },
+    {
+        "query": "links=software:bgpstream",
+        "description": "objects directly linked to the object `software:bgpstream` "
+    },
+    {
+        "query": "types=paper links=collection:ucsd_telescope_datasets iot",
+        "description": "`papers` that are linked to `telescope data` and contain the word `IoT`"
+    }
+]
