@@ -4767,7 +4767,7 @@ TITLE  : 'Interdomain Route Leak Mitigation: A Pragmatic Approach'
 YEAR   : 2021-08
 PAGE   : 1-108
 URL    : https://trace.tennessee.edu/utk_graddiss/6558
-TOPKEY : topology-as-relationships, topology-as-rank, ioda
+TOPKEY : topology-as-relationships, topology-as-rank, ioda, bgpstream
 GEOLOC : Tennessee, US
 ABS    : ''
 
@@ -6572,7 +6572,7 @@ YEAR   : 2021-05
 VOLUME : 40-3
 PAGE   : 37-48
 URL    : https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14287
-TOPKEY : topology-as-rank, topology-as-relationships
+TOPKEY : topology-as-rank, topology-as-relationships, bgpstream
 GEOLOC : Munich, DE
 
 ---
@@ -6645,7 +6645,7 @@ AUTHOR : Sermpezis, P., Kotronis, V., Arakdakis, K., Vakali, A.
 TITLE  : Estimating the Impact of BGP Prefix Hijacking
 YEAR   : 2021-05
 URL    : https://arxiv.org/abs/2105.02346
-TOPKEY : topology-as-relationships, routeviews-prefix2as
+TOPKEY : topology-as-relationships, routeviews-prefix2as, bgpstream
 GEOLOC : Thessaloniki, GR
 
 ---
@@ -6655,7 +6655,7 @@ AUTHOR : Smith, J.
 TITLE  : Leveraging Conventional Internet Routing Protocol Behavior to Defeat DDoS and Adverse  Networking  Conditions
 YEAR   : 2020-08
 URL    : https://trace.tennessee.edu/utk_graddiss/6888/
-TOPKEY : topology-as-rank, topology-as-relationships
+TOPKEY : topology-as-rank, topology-as-relationships, bgpstream
 GEOLOC : Knoxville, TN, US
 
 ---
@@ -6776,7 +6776,7 @@ AUTHOR : Kim, D., Andalibi, V., Camp, J.
 TITLE  : Protecting IoT Devices through Localized Detection of BGP Hijacks for Individual Things
 YEAR   : 2021-05
 DOI    : 10.1109/SPW53761.2021.00045
-TOPKEY : routeviews-generic
+TOPKEY : routeviews-generic, bgpstream
 GEOLOC : Bloomington, IN, US
 
 ---
@@ -6809,7 +6809,7 @@ AUTHOR : Brandt, M., Shulman, H.
 TITLE  : Optimized BGP Simulator for Evaluation of Internet Hijacks
 YEAR   : 2021-05
 DOI    : 10.1109/INFOCOMWKSHPS51825.2021.9484563
-TOPKEY : topology-as-relationships
+TOPKEY : topology-as-relationships, bgpstream
 GEOLOC : Darmstadt, DE
 
 ---
@@ -8668,7 +8668,7 @@ YEAR   : '2020'
 VOLUME : ''
 PAGE   : ''
 URL    : https://arxiv.org/pdf/2006.06576.pdf
-TOPKEY : topology-as-relationships
+TOPKEY : topology-as-relationships, bgpstream
 GEOLOC : Knoxville, TN, US
 ABS    : ''
 
@@ -9828,7 +9828,7 @@ TITLE  : 'Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify 
 YEAR   : '2020_10'
 PAGE   : (19 pages)
 URL    : https://dl.acm.org/doi/abs/10.1145/3419394.3423654
-TOPKEY : topology-ark-dnsnames, topology-generic
+TOPKEY : topology-ark-dnsnames, topology-generic, bgpstream
 GEOLOC : Lancashire, UK; New York City, NY, US; Gerais, BR;  Belo Horizonte, BR; New York City,  NY,  US; Ann Arbor, MI, US; New York City, NY, US
 ABS    : Many systems rely on traceroutes to monitor or characterize the Internet. The quality  of  the systems inferences depends on the completeness and freshness of the traceroutes,  but  the refreshing of traceroutes is constrained by limited resources at vantage  points.  Previous approaches predict which traceroutes are likely out-of-date in  order to  allocate measurements, or monitor BGP feeds for changes that overlap traceroutes.  Both  approaches miss many path changes for reasons including the difficulty in predicting  changes  and the coarse granularity of BGP paths. This paper presents techniques  to identify  out-of-date traceroutes without issuing any measurements, even if a  change is not  visible at BGP granularity. We base our techniques on two observations.  First,  although BGP updates encode routes at AS granularity, routers issue updates  when  they change intra-domain routes or peering points within the same AS path.  Second,  route changes correlate across paths, and many publicly available traceroutes  exist.  Our techniques maintain an atlas of traceroutes by monitoring BGP updates  and publicly  available traceroutes for signals to mark overlapping atlas traceroutes  as stale.  We focus our analysis of traceroute path changes at the granularity of  border router  IPs which provides an abstraction finer than AS- or PoP-level but  is not affected  by the periodicity of intra-domain load balancers. Our evaluation  indicates that  80% of the traceroutes that our techniques signal as stale have indeed  changed,  even though the AS hops remained the same. Our techniques combine to identify  79%  of all border IP changes, without issuing a single online measurement.
 
@@ -11546,7 +11546,7 @@ VOLUME : '48'
 PAGE   : (9 pages)
 DOI    : 10.1145/3211852.3211855
 URL    : https://dl.acm.org/citation.cfm?id=3211855
-TOPKEY : topology-generic
+TOPKEY : topology-generic, bgpstream
 GEOLOC : New York, US
 ABS    : IP anycast is a commonly used technique to share the load of a variety of global services.  For  more than one year, leveraging a lightweight technique for IP anycast detection,  enumeration  and geolocation, we perform regular IP monthly censuses. This paper  provides a  brief longitudinal study of the anycast ecosystem, and we additionally  make all  our datasets (raw measurements from PlanetLab and RIPE Atlas), results  (monthly  geolocated anycast replicas for all IP/24) and code available to the community.
 
@@ -12012,7 +12012,7 @@ VOLUME : '7'
 PAGE   : ''
 DOI    : 10.1109/ACCESS.2019.2915974
 URL    : https://ieeexplore.ieee.org/abstract/document/8710331
-TOPKEY : topology-as-rank
+TOPKEY : topology-as-rank, bgpstream
 GEOLOC : Xiaan, CN
 ABS    : Betweenness centrality measures the centrality of nodes and edges in a graph based  on  the concept of shortest paths. However, such a definition is unsuitable for uncertain  graphs  due to the uncertainty of links. In the possible-world semantics, the Monte  Carlo  method is proposed to estimate the betweenness centrality of uncertain graphs.  However,  this method is computationally intensive. To address this challenging issue,  in  this paper, we propose the concept of possible shortest paths and develop a metric  to  approximate the betweenness centrality for uncertain graphs. We demonstrate that  the  new metric of betweenness centrality generalizes the deterministic one. Unfortunately,  it  is NP-hard to enumerate all possible shortest paths between two nodes exhaustively.  To  tackle this difficulty, we design a heuristic algorithm to explore the majority  of  possible shortest paths efficiently. Our method avoids the sampling process in  the  Monte Carlo method, and thus significantly improves the computational efficiency.  We  conduct extensive experiments to evaluate the effectiveness and efficiency of  our  method. The experimental results show that our approach can approximate the  centrality  of uncertain graphs accurately with high efficiency. Finally, we apply  our method  to the Internet network to evaluate the importance of autonomous systems.
 
@@ -12039,7 +12039,7 @@ VOLUME : '0'
 PAGE   : (24 pages)
 DOI    : '0000001.0000001'
 URL    : https://www.cse.unr.edu/~mgunes/papers/19-TOMPECS-InternetPaths.pdf
-TOPKEY : topology-as-organization
+TOPKEY : topology-as-organization, bgpstream
 GEOLOC : Nevada, US
 ABS    : Interactive and multimedia applications depend on the stability of end-to-end paths  for  predictable performance and good quality of service. On the other hand, network  providers  depend on multiple paths to ensure fault tolerance and use load balancing  between  these paths to enhance the overall network throughput. In this study, we  analyze  path dynamics for both end-to-end paths and path segments within service  providers  networks using two months of measurement data from the RIPE Atlas platform,  which  collects path traces between a fixed set of source and destination pairs every  15  minutes. We observe that 78% of the end-to-end routes have at least two alternative  Autonomous  System (AS) paths with some end-to-end routes going through hundreds  of different  AS paths during the two months of analysis. While AS level paths are  often prevalent  for a day, there are considerable changes in the routing of the  trace packets over  the ASes for a longer duration of a month or longer. Analyzing  end-to-end paths  for routing anomalies, we observe that 4.4% of the path traces  (involving 18% of  the ASes) contain routing loops indicating mis-configuration of  routers. Some of  the ASes had over 100 routers involved in loops in path traces  through their networks.  We observe a much higher rate of anomalies in the AS level,  with 45% of path traces  containing an AS loop. Additionally, we discovered that  few of the ASes bounce-back  packets where some traces through their network traverse  routers in both forward  and backward directions. Determining path segments belonging  to each AS, we further  explore ingress to egress paths of ASes in addition to the  source to destination  paths within the AS. Analyzing trace segments between ingresses  and egresses of  an AS, we realized more than half of the ASes have the same router  level path between  any ingress-egress pair for the two months, but others implement  load balancing.  These results are different from earlier studies that indicated  a high level of  path dynamism. Our results indicate that the end-to-end path dynamism  is due to  the BGP level rather than the router level within ASes.
 
@@ -13995,7 +13995,7 @@ TITLE  : Validating IP prefixes and AS-paths with Blockchains
 YEAR   : 2019-06
 PAGE   : (8 pages)
 URL    : https://arxiv.org/abs/1906.03172
-TOPKEY : topology-generic, routeviews-prefix2as
+TOPKEY : topology-generic, routeviews-prefix2as, bgpstream
 GEOLOC : Heraklion, GR
 ABS    : Networks (Autonomous Systems-AS) allocate or revoke IP prefixes with the intervention  of  official Internet resource number authorities, and select and advertise policy-compliant  paths  towards these prefixes using the inter-domain routing system and its primary  enabler,  the Border Gateway Protocol (BGP). Securing BGP has been a long-term objective  of  several research and industrial efforts during the last decades, that have culminated  in  the Resource Public Key Infrastructure (RPKI) for the cryptographic verification  of  prefix-to-AS assignments. However, there is still no widely adopted solution  for  securing IP prefixes and the (AS-)paths leading to them; approaches such as  BGPsec  have seen minuscule deployment. In this work, we design and implement a Blockchain-based  system  that (i) can be used to validate both of these resource types, (ii) can work  passively  and does not require any changes in the inter-domain routing system (BGP,  RPKI),  and (iii) can be combined with currently available systems for the detection  and  mitigation of routing attacks. We present early results and insights w.r.t.  scalability.
 
@@ -15012,7 +15012,7 @@ TITLE  : 'Internet topology mining: From Big Data to Network Science'
 YEAR   : 2018-08
 PAGE   : (204 pages)
 URL    : https://scholarworks.unr.edu/handle/11714/4537
-TOPKEY : topology-as-rank
+TOPKEY : topology-as-rank, bgpstream
 GEOLOC : Reno, NV, US
 ABS    : Data has became one of the most valuable resources in todays world where we have greater  digital  presence. Large volumes of data are generated through various platforms  including  web, social networks, mobile devices, scientific instruments, infrastructure  sensors,  and variety of IoT devices. A challenge for researchers is to mine valuable  relevant  information from big data efficiently and in a timely manner. Internet  is the largest  man-made complex system whose underlying network has not been characterized  precisely.  Internet topology is shaped by tens of thousands of network providers  optimizing  local communication efficiency without a central authority. Numerous  methods and  platforms have been developed to accurately measure and analyze the  Internet topology.  In this dissertation, we perform a comprehensive analysis of  the existing Internet  topology data sets, develop and deploy our own Internet Measurement  (IM) platform  to obtain detailed topologies of Autonomous System (AS) networks,  and analyze collected  data to understand the characteristics of backbone networks.  Our results indicate  that use of multiple data sets from different vantage points  is important for building  a comprehensive picture of the Internet topology as each  data set provides a unique  contribution to the visibility of a network. Utilizing  earlier measurement data  sets, we implement an Internet topology mapping and analysis  system that collects  detailed measurements from a set of IM nodes. The Autonomous  System Mapper (ASM)  intelligently utilizes the big data collection and processing  approaches for mapping  the Internets underlying topology in order to better understand  network characteristics.  ASM discovers more than thirteen times links of all other  data repositories combined.  Analyzing collected network data, we observe that most  of the ASes have star-like  topologies where high degree hubs connect low degree  routers but tier-1 ASes often  have a power-law degree distribution in a small-world  network topology; there are  persistent routing anomalies and loops in the end-to-end  communication over the  Internet; and network paths within individual ASes are mostly  non-shortest paths  indicating load distribution by the Internet Service Providers  (ISP).
 
@@ -15785,7 +15785,7 @@ AUTHOR : Mell, P., Gueye, A., Schanzle, C.
 TITLE  : Quantifying information exposure in Internet routing
 YEAR   : 2018-04
 DOI    : 10.1109/TrustCom/BigDataSE.2018.00237
-TOPKEY : topology-ark-ipv4-traceroute, topology-as-rank
+TOPKEY : topology-ark-ipv4-traceroute, topology-as-rank, bgpstream
 GEOLOC : Gaithersburg, MD, US; College Park, MD, US; College Park, MD, US
 ABS    : Data sent over the Internet can be monitored and manipulated by intermediate entities  in  the data path from the source to the destination. For unencrypted communications  (and  some encrypted communications with known weaknesses), eavesdropping and man-in-the-middle  attacks  are possible. For encrypted communication, the identification of the communicating  endpoints  is still revealed. In addition, encrypted communications may be stored  until such  time as newly discovered weaknesses in the encryption algorithm or advances  in  computer hardware render them readable by attackers. In this work, we use public  data  to evaluate both advertised and observed routes through the Internet and measure  the  extent to which communications between pairs of countries are exposed to other  countries.  We use both physical router geolocation as well as the country of registration  of  the companies owning each router. We find a high level of information exposure;  even  physically adjacent countries use routes that involve many other countries.  We  also found that countries that are well connected tend to be more exposed. Our  analysis  indicates that there exists a tradeoff between robustness and information  exposure  in the current Internet.
 
@@ -16461,7 +16461,7 @@ TITLE  : Inferring BGP blackholing activity in the Internet
 YEAR   : 2017-11
 PAGE   : (14 pages)
 DOI    : 10.1145/3131365.3131379
-TOPKEY : topology-as-classification
+TOPKEY : topology-as-classification, bgpstream
 GEOLOC : Berlin, DE; Berlin, DE; Berlin, DE; Berlin, DE; Berlin, DE; Boston, MA, US
 ABS    : The Border Gateway Protocol (BGP) has been used for decades as the de facto protocol  to  exchange reachability information among networks in the Internet. However, little  is  known about how this protocol is used to restrict reachability to selected destinations,  e.g.,  that are under attack. While such a feature, BGP blackholing, has been available  for  some time, we lack a systematic study of its Internet-wide adoption, practices,  and  network efficacy, as well as the profile of blackholed destinations. In this  paper,  we develop and evaluate a methodology to automatically detect BGP blackholing  activity  in the wild. We apply our method to both public and private BGP datasets.  We find  that hundreds of networks, including large transit providers, as well as  about  50 Internet exchange points (IXPs) offer blackholing service to their customers,  peers,  and members. Between 2014-2017, the number of blackholed prefixes increased  by  a factor of 6, peaking at 5K concurrently blackholed prefixes by up to 400 Autonomous  Systems.  We assess the effect of blackholing on the data plane using both targeted  active  measurements as well as passive datasets, finding that blackholing is indeed  highly  effective in dropping traffic before it reaches its destination, though it  also  discards legitimate traffic. We augment our findings with an analysis of the  target  IP addresses of blackholing. Our tools and insights are relevant for operators  considering  offering or using BGP blackholing services as well as for researchers  studying  DDoS mitigation in the Internet.
 
@@ -16717,7 +16717,7 @@ TITLE  : Analysis of path stability within autonomous systems
 YEAR   : 2017-09
 PAGE   : (6 pages)
 DOI    : 10.1109/IWMN.2017.8078364
-TOPKEY : topology-as-organization
+TOPKEY : topology-as-organization, bgpstream
 GEOLOC : Reno, NV, US
 ABS    : Interactive and multimedia applications depend on the stability of end-to-end paths  on  the Internet for predictable performance and good quality of service. On the  other  hand, network providers depend on multiple paths to ensure fault tolerance  and  use load balancing between these paths to enhance the overall network throughput.  In  this study, we analyze the path dynamics within service providers networks using  a  month of measurement data from the RIPE Atlas platform which collects path traces  between  a source and a destination pair approximately every 15 minutes. Determining  path  segments belonging to each Autonomous System (AS), we explore ingress to egress  paths  of an AS in addition to source to destination paths within the AS. We observe  that  13.2% of ASes contain routing loops within their network indicating mis-configuration  of  routers. Couple of ASes had over a million loops with over 100 routers causing  loops  in path traces. Additionally, 77.6% of end-to-end routes have at least two  alternative  AS paths with some end-to-end routes going through hundreds of different  AS paths.  Analyzing trace segments between ingresses and egresses of an AS, we realized  more  than a third of the backbone ASes have consistent routing between any node  pair,  but others implement load balancing or have inconsistent routing policies  across  their network.
 
@@ -17527,7 +17527,7 @@ TITLE  : 'Hijacking bitcoin: Routing attacks on cryptocurrencies'
 YEAR   : 2017-06
 PAGE   : 375-392
 DOI    : 10.1109/SP.2017.29
-TOPKEY : topology-ark-itdk
+TOPKEY : topology-ark-itdk, bgpstream
 GEOLOC : Zurich, CH; Jerusalem, IL; Zurich, CH
 ABS    : 'As the most successful cryptocurrency to date, Bitcoin constitutes a target of choice  for  attackers. While many attack vectors have already been uncovered, one important  vector  has been left out though: attacking the currency via the Internet routing  infrastructure  itself. Indeed, by manipulating routing advertisements (BGP hijacks)  or by naturally  intercepting traffic, Autonomous Systems (ASes) can intercept and  manipulate a  large fraction of Bitcoin traffic. This paper presents the first taxonomy  of routing  attacks and their impact on Bitcoin, considering both small-scale attacks,  targeting  individual nodes, and large-scale attacks, targeting the network as a  whole. While  challenging, we show that two key properties make routing attacks practical:  (i)  the efficiency of routing manipulation; and (ii) the significant centralization  of  Bitcoin in terms of mining and routing. Specifically, we find that any network  attacker  can hijack few (<100) BGP prefixes to isolate a1/450% of the mining poweraeven  when  considering that mining pools are heavily multi-homed. We also show that on-path  network  attackers can considerably slow down block propagation by interfering with  few  key Bitcoin messages. We demonstrate the feasibility of each attack against  the  deployed Bitcoin software. We also quantify their effectiveness on the current  Bitcoin  topology using data collected from a Bitcoin supernode combined with BGP  routing  data. The potential damage to Bitcoin is worrying. By isolating parts of  the network  or delaying block propagation, attackers can cause a significant amount  of mining  power to be wasted, leading to revenue losses and enabling a wide range  of exploits  such as double spending. To prevent such effects in practice, we provide  both short  and long-term countermeasures, some of which can be deployed immediately'
 
@@ -18368,7 +18368,7 @@ TITLE  : Are we there yet? On RPKIs deployment and security
 YEAR   : 2017-02
 PAGE   : (15 pages)
 DOI    : 10.14722/ndss.2017.23123
-TOPKEY : routeviews-prefix2as
+TOPKEY : routeviews-prefix2as, bgpstream
 GEOLOC : Boston, MA, US; Jerusalem, IL; Ramat Gan, IL; Jerusalem, IL; Darmstadt, DE
 ABS    : 'The Resource Public Key Infrastructure (RPKI) binds IP address blocks to owners public  keys.  RPKI enables routers to perform Route Origin Validation (ROV), thus preventing  devastating  attacks such as IP prefix hijacking. Yet, despite extensive effort,  RPKIs deployment  is frustratingly sluggish, leaving the Internet largely insecure.  We tackle fundamental  questions regarding todays RPKIs deployment and security:  What is the adoption  status of RPKI and ROV? What are the implications for global  security of partial  adoption? What are the root-causes for slow adoption? How can  deployment be pushed  forward? We address these questions through a combination of  empirical analyses,  a survey of over 100 network practitioners, and extensive simulations.  Our main  contributions include the following. We present the first study measuring  ROV enforcement,  revealing disappointingly low adoption at the core of the Internet.  We show, in  contrast, that without almost ubiquitous ROV adoption by large ISPs  significant  security benefits cannot be attained. We next expose a critical security  vulnerability:  about a third of RPKI authorizations issued for IP prefixes do not  protect the  prefix from hijacking attacks. We examine potential reasons for scarce  adoption  of RPKI and ROV, including human error in issuing RPKI certificates and  inter-organization  dependencies, and present recommendations for addressing these  challenges.'
 
@@ -18681,7 +18681,7 @@ TITLE  : Investigating interdomain routing in the wild
 YEAR   : 2016-12
 PAGE   : (45 pages)
 URL    : http://hdl.handle.net/11401/77233
-TOPKEY : topology-as-relationships
+TOPKEY : topology-as-relationships, bgpstream
 GEOLOC : Stony Brook, NY, US
 ABS    : Models of Internet routing are critical for studies of Internet security, reliability  and  evolution, which often rely on simulations of the Internets routing system.  Accurate  models are difficult to build and suffer from a dearth of ground truth  data, as  ISPs often treat their connectivity and routing policies as trade secrets.  In this  environment, researchers rely on a number of simplifying assumptions and  models  proposed over a decade ago, which are widely criticized for their inability  to  capture routing policies employed in practice.
 
