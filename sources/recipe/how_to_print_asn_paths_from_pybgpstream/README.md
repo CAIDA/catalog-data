@@ -2,7 +2,7 @@
 {
     "id" : "how_to_print_asn_paths_from_pybgpstream",
     "name": "How to print asn paths from pybgpstream",
-    "description":"The recipe should show how to print specifc asn paths using data from pybgpstream.",
+    "description":"The recipe should show how to print specific asn paths using data from pybgpstream.",
 
     "links": [
         {
@@ -23,51 +23,82 @@
 
 ## Introduction
 
-This solution should show the user how to print specific asn paths taken from records and elements of a pybgpstream. The solution prints the path from the BGPStream after specifying the routeviews-stream project, and filtering by the router, amsix. This recipe can take some time to fully run, for testing you may wish to interupt the program after a few minutes to check if the output is what you're hoping for.
+This solution should show the user how to print specific asn paths taken from records and elements of a pybgpstream. The solution prints the path from the BGPStream after specifying the RIS-LIVE project, and filtering by the collector rrc00 to enhance performance. This recipe can take some time to fully run, for testing you may wish to interupt the program after a few minutes to check if the output is what you're hoping for.
 
 ## Solution
 
-```python
+~~~python
 #!/usr/bin/env python3
 
+#import the low level _pybgpsteam library and other necessary libraries
 from pybgpstream import BGPStream
 from ipaddress import ip_network
 import time
 import sys
-import requests
+import argparse
 
-# Initialize BGPStream, with routeviews-stream project, filtering for amsix.
-stream = BGPStream(project="routeviews-stream", filter="router amsix")
-# The stream will not load new data till its done with the current pulled data.
+parser = argparse.ArgumentParser()
+parser.add_argument("target", nargs="*", type=str, help="ASNs we are looking up")
+parser.add_argument("-d", "--debug", type=int, help="Number of traces")
+args = parser.parse_args()
+
+# Initialize BGPStream with RIPE RIS LIVE and collector rrc00
+stream = BGPStream(project="ris-live",
+                   collectors=["rrc00"],
+                   filter="collector rrc00")
+
+# The stream will not load new data till it's done with the current pulled data.
 stream.set_live_mode()
 print("starting stream...", file=sys.stderr)
+
+# Counter
+counter = 0
+
 for record in stream.records():
+    # Handles debug option
+    if args.debug is None:
+        pass
+    elif counter >= args.debug:
+        break
+    else:
+        counter += 1
+
     rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(record.time))
     for elem in record:
-        prefix = ip_network(elem.fields['prefix'])
-        # Only print elements that are announcements (BGPElem.type = "A").
-        if elem.type == "A":
-            as_path = elem.fields['as-path'].split(" ")
-            # Print all elements with the asn 3356 in the path.
-            if '3356' in as_path:
-                print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
-                      f"Communities: {elem.fields['communities']} "
-                      f"Timestamp: {rec_time}")
-```
+        try:
+            prefix = ip_network(elem.fields['prefix'])
+            # Only print elements that are announcements (BGPElem.type = "A")
+            # or ribs (BGPElem.type = "R")
+            if elem.type == "A" or elem.type == "R":
+                as_path = elem.fields['as-path'].split(" ")
+                # Print all elements with specified in args.target
+                for target in args.target:
+                    if target in as_path:
+                        print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
+                                f"Communities: {elem.fields['communities']} "
+                                f"Timestamp: {rec_time}")
+
+        # Reports and skips all KeyError
+        except KeyError as e:
+            print("KEY ERROR, element ignored: KEY=" + str(e), file=sys.stderr)
+            continue
+~~~
 
 ### Usage
 
 To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways to install, click the link above. If there are any issue, look [here](https://bgpstream.caida.org/docs/install) for more help.
 
-```bash
+~~~bash
 pip3 install pybgpstream
-```
+~~~
 
 To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
 
-```bash
-./example.py > output.txt
-```
+The debug option `-d` allows users to limit number of traces the program goes through to N to shorten execution time. Only ASN paths that include at least one of the specified ASNs will be printed.
+
+~~~bash
+./example.py [-d N] ASN#1 ASN#2 ... ASN#N > output.txt
+~~~
 
 ## Background
 
@@ -78,9 +109,9 @@ What is pybgpstream?
 
 What does it mean to check the elem.type in the solution code?
  - The element type is part of the BGPElem class which can be found [here](https://bgpstream.caida.org/docs/api/pybgpstream/_pybgpstream.html#bgpelem).
-   - "The type of the element, can be one of ‘R’ (ribs), ‘A’ (announcement), ‘W’ (withdrawal), ‘S’ (peer state), ‘’. (basestring, readonly)" - Documentation
-   - Since we are looking for 
+   - "The type of the element, can be one of ‘R’ (ribs), ‘A’ (announcement), ‘W’ (withdrawal), ‘S’ (peer state). (basestring, readonly)
+   - We look for rib and announcement type element because they include data regarding AS path.
 
 ### Caveats
 - The script above uses specific inputs when initializing the BGPStream object meaning their is more data that can be taken by adjusting these inputs. Playing around with the inputs for `stream` will result in different outputs. Check out the pybgpstream documetentation to find ways to adjust the BGPStream with other inputs.
-- This script will run through all bgpstream records until it is complete. This will take a long time, it is recommend the user manually interrupts the script after a couple minutes if they don't intend to use all the data that will be printed.
+- This script will run through all bgpstream records until it is complete. This will take a long time. It is recommended that the user to use the `-d` flag if they don't want all the data.

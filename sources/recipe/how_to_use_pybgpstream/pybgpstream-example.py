@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 __author__ = "Pooja Pathak"
 __email__ = "<pmpathak@ucsd.edu>"
 # This software is Copyright © 2020 The Regents of the University of
@@ -57,7 +57,7 @@ stream.add_rib_period_filter(86400)
 
 for elem in stream:
     # record fields can be accessed directly from elem
-    # print (elem.fields)
+    print(elem.fields)
     
     # Get next-hop 
     if "next-hop" in elem.fields:

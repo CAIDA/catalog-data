@@ -24,16 +24,21 @@
 
 ## Introduction
 
-This solution should show how to print element records from a specific pybgpstream. The solution prints the first 100 records from a BGPStream from the routeviews-stream project, and filtering by the router, amsix.
+This solution should show how to print element records from a specific pybgpstream. The solution prints the first X records (specified by user) from a BGPStream from the routeviews-stream project, and filtering by the router, amsix.
 
 ## Solution
 
-```python
+~~~python
 #!/usr/bin/env python3
 
-# Import pybgpsteam and other necessary libraries
+# Import pybgpstream and other necessary libraries
 from pybgpstream import BGPStream
 import time
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("print_amount", nargs=1, type=int, help="Number of prints")
+args = parser.parse_args()
 
 # Initialize BGPStream, with data from routeviews-stream for router amsix.
 stream = BGPStream(project='routeviews-stream', filter="router amsix")
@@ -43,11 +48,12 @@ counter = 0
 
 # Print records yielded from stream.records() in a bgpreader-like format.
 for record in stream.records():
-    # Print the first 100 records found.
-    if counter == 100:
+    # Print the first X records found.
+    if counter >= args.print_amount[0]:
         break
     else:
         counter += 1
+
     print(record.project, record.collector, record.router)
     # Make the date is human readable
     rec_time = time.strftime('%y-%m-%d %H:%M:%S', time.localtime(record.time))
@@ -71,22 +77,23 @@ for record in stream.records():
             elem._maybe_field("old-state"),
             elem._maybe_field("new-state")
         ))
-```
+~~~
 
 ### Usage
 
 To run this script, you may need to install [pybgpstream](https://bgpstream.caida.org/download). Below is how to install with pip. For other ways click the link above. If there are any issue, look [here](https://bgpstream.caida.org/docs/install) for more help.
 
-```bash
+~~~bash
 pip3 install pybgpstream
-```
+~~~
 
 To run this script, you may want to send the printed data from STDOUT to a file to reduce clutter.
 
-```bash
-./example.py > output.txt
-```
+~~~bash
+./example.py X > output.txt
+~~~
 
+- X is the number of records the user wants to print
 ## Background
 
 What is pybgpstream?
@@ -95,5 +102,4 @@ What is pybgpstream?
  - For more information on how to use pybgpstream, you can also visit our page [here](https://dev.catalog.caida.org/details/recipe/how_to_use_pybgpstream)
 
 ### Caveats
- - This script only prints the first 100 elements in the record of the specified BGPStream. 
-   - Playing around with the inputs for ```stream``` will result in different output. Check out the pybgpstream documetentation to find how to adjust the BGPStream with other inputs.
+- Playing around with the inputs for ```stream``` will result in different output. Check out the pybgpstream documetentation to find how to adjust the BGPStream with other inputs.
