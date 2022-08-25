@@ -1,89 +1,89 @@
 ---
-MARKER : 2018_o_dan_ieee_8621886
-TYPE   : in_proceedings
-AUTHOR : Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian
-TITLE  : Distributed Reverse DNS Geolocation
-CTITLE : 2018 IEEE International Conference on Big Data
-YEAR   : 2018
-VOLUME : ''
-PAGE   : (6 pages)
-DOI    : 10.1109/BigData.2018.8621886
-URL    : https://ieeexplore.ieee.org/abstract/document/8621886
-TOPKEY : DDec
-GEOLOC : Bethlehem, PA, US
-ABS    : ''
+MARKER : "2018_o_dan_ieee_8621886"
+TYPE   : "in_proceedings"
+AUTHOR : "Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian"
+TITLE  : "Distributed Reverse DNS Geolocation"
+CTITLE : "2018 IEEE International Conference on Big Data"
+YEAR   : "2018"
+VOLUME : ""
+PAGE   : "(6 pages)"
+DOI    : "10.1109/BigData.2018.8621886"
+URL    : "https://ieeexplore.ieee.org/abstract/document/8621886"
+TOPKEY : "DDec"
+GEOLOC : "Bethlehem, PA, US"
+ABS    : ""
 
 ---
-MARKER : 2022_o_dan_acm_3457611
-TYPE   : in_journal
-AUTHOR : Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian
-TITLE  : IP Geolocation through Reverse DNS
-SERIAL : ACM Transactions on Internet Technology
-YEAR   : 2022
-VOLUME : 22
-PAGE   : 1-29
-DOI    : https://doi.org/10.1145/3457611
-URL    : https://dl.acm.org/doi/abs/10.1145/3457611
-TOPKEY : DDec
-GEOLOC : Bethlehem, PA, US
-ABS    : ''
+MARKER : "2022_o_dan_acm_3457611"
+TYPE   : "in_journal"
+AUTHOR : "Dan, Ovidiu; Parikh, Vaibhav; Davison, Brian"
+TITLE  : "IP Geolocation through Reverse DNS"
+SERIAL : "ACM Transactions on Internet Technology"
+YEAR   : "2022"
+VOLUME : "22"
+PAGE   : "1-29"
+DOI    : "https://doi.org/10.1145/3457611"
+URL    : "https://dl.acm.org/doi/abs/10.1145/3457611"
+TOPKEY : "DDec"
+GEOLOC : "Bethlehem, PA, US"
+ABS    : ""
 
 ---
-MARKER : 2019_m_rehman_arxiv_04651
-TYPE   : online
-AUTHOR : Rehman, Muzammil; GOldberg, Sharon; Choffnes, David
-TITLE  : Passport: Enabling Accurate Country-Level Router Geolocation using Inaccurate Sources
-PUBLISH: arxiv.org
-YEAR   : 2019
-VOLUME : ''
-PAGE   : acm.org
-URL    : https://arxiv.org/abs/1905.04651
-TOPKEY : DDec
-GEOLOC : Boston, MA, US
-ABS    : ''
+MARKER : "2019_m_rehman_arxiv_04651"
+TYPE   : "online"
+AUTHOR : "Rehman, Muzammil; GOldberg, Sharon; Choffnes, David"
+TITLE  : "Passport: Enabling Accurate Country-Level Router Geolocation using Inaccurate Sources"
+PUBLISH: "arxiv.org"
+YEAR   : "2019"
+VOLUME : ""
+PAGE   : "acm.org"
+URL    : "https://arxiv.org/abs/1905.04651"
+TOPKEY : "DDec"
+GEOLOC : "Boston, MA, US"
+ABS    : ""
 
 ---
-MARKER : 2019_o_dan_proquest_13865860
-TYPE   : PhD thesis
-AUTHOR : Dan, Ovidiu
-TITLE  : IP Geolocation
-PUBLISH: Lehigh University
-PAGE   : (239 pages)
-YEAR   : 2019
-URL    : https://www.proquest.com/docview/2238777571/previewPDF/67B74B1F03334853PQ/1?accountid=14524
-TOPKEY : DDec
-GEOLOC : Ann Arbor, MI, US
-ABS    : ''
+MARKER : "2019_o_dan_proquest_13865860"
+TYPE   : "PhD thesis"
+AUTHOR : "Dan, Ovidiu"
+TITLE  : "IP Geolocation"
+PUBLISH: "Lehigh University"
+PAGE   : "(239 pages)"
+YEAR   : "2019"
+URL    : "https://www.proquest.com/docview/2238777571/previewPDF/67B74B1F03334853PQ/1?accountid=14524"
+TOPKEY : "DDec"
+GEOLOC : "Ann Arbor, MI, US"
+ABS    : ""
 
 ---
-MARKER : 2020_v_giotsas_acm_3423654
-TYPE   : in_proceedings
-AUTHOR : Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; Madhyastha, Harsha; Katz-Bassett, Ethan
-TITLE  : Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes
-CTITLE : Proceedings of the ACM Internet Measurement Conference
-YEAR   : 2020
-VOLUME : ''
-PAGE   : 247-265
-DOI    : https://doi.org/10.1145/3419394.3423654
-URL    : https://dl.acm.org/doi/10.1145/3419394.3423654
-TOPKEY : DDec
-GEOLOC : Lancaster, GB
-ABS    : ''
+MARKER : "2020_v_giotsas_acm_3423654"
+TYPE   : "in_proceedings"
+AUTHOR : "Giotsas, Vasileios; Koch, Thomas; Fazzion, Elverton; Cunha, Italo; Calder, Matt; Madhyastha, Harsha; Katz-Bassett, Ethan"
+TITLE  : "Reduce, Reuse, Recycle: Repurposing Existing Measurements to Identify Stale Traceroutes"
+CTITLE : "Proceedings of the ACM Internet Measurement Conference"
+YEAR   : "2020"
+VOLUME : ""
+PAGE   : "247-265"
+DOI    : "https://doi.org/10.1145/3419394.3423654"
+URL    : "https://dl.acm.org/doi/10.1145/3419394.3423654"
+TOPKEY : "DDec"
+GEOLOC : "Lancaster, GB"
+ABS    : ""
 
 ---
-MARKER : 2018_j_zhu_20180702
-TYPE   : in_journal
-AUTHOR : Zhu, Jinyu; Zhang, Yu; Zeng, Liangwei; Yu, Zhuoxun; Zhang, Hongli
-TITLE  : Geolocation For Multi-Interface Routers
-SERIAL : Journal of Cyber Security
-YEAR   : 2018
-VOLUME : 3
-PAGE   : (10 pages)
-DOI    : 10.19363/J.cnki.cn10-1380/tn.2018.07.02
-URL    : https://www.cnki.net/kcms/doi/10.19363/J.cnki.cn10-1380/tn.2018.07.02.html
-TOPKEY : DDec
-GEOLOC : Harbin, CN
-ABS    : ''
+MARKER : "2018_j_zhu_20180702"
+TYPE   : "in_journal"
+AUTHOR : "Zhu, Jinyu; Zhang, Yu; Zeng, Liangwei; Yu, Zhuoxun; Zhang, Hongli"
+TITLE  : "Geolocation For Multi-Interface Routers"
+SERIAL : "Journal of Cyber Security"
+YEAR   : "2018"
+VOLUME : "3"
+PAGE   : "(10 pages)"
+DOI    : "10.19363/J.cnki.cn10-1380/tn.2018.07.02"
+URL    : "https://www.cnki.net/kcms/doi/10.19363/J.cnki.cn10-1380/tn.2018.07.02.html"
+TOPKEY : "DDec"
+GEOLOC : "Harbin, CN"
+ABS    : ""
 
 ---
 MARKER : 2019_hans_h_parnsf_10107792
