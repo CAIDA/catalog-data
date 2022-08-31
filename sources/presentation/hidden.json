@@ -1,0 +1,53 @@
+{
+    "id": "hidden",
+    "name": "2017 AS Core: IPv4 with analysis",
+    "description": "Almost 50 million IP addresses, 36 million IP links 47,610 Autonomous Systems (ASes), 148,455 links. Data collected from 121 monitors located in 42 countries on 6 continents.",
+    "tags":[
+        "caida",
+        "ark",
+        "ipv4",
+        "poster",
+        "analysis",
+        "as_core"
+    ],
+    "links":[
+        {"to":"dataset:ark_itdk"},
+        {"to":"dataset:as_relationships_serial_1"}
+    ],
+    "date":"2017.02",
+    "image":"https://www.caida.org/projects/as-core/pics/2017/ascore-2017-feb-ipv4-poster-2048x1518.png",
+    "access": [
+        {
+            "url": "https://www.caida.org/projects/as-core/2017/",
+            "tags": [
+                "web page"
+            ],
+            "access": "public"
+        },
+        {
+            "name":"full poster",
+            "url": "https://www.caida.org/projects/as-core/pics/2017/ascore-2017-feb-ipv4-poster-2048x1518.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
+        },
+        {
+            "name": "IPv4 core alone",
+            "url": "https://www.caida.org/projects/as-core/pics/2017/ascore-2017-feb-ipv4-standalone-1000x1037.png",
+            "tags": [
+                "PNG"
+            ],
+            "access": "public"
+        }
+    ],
+    "authors":[
+        "person:huffaker__bradley",
+        "person:claffy__kc",
+        "person:hyun__young",
+        "person:luckie__matthew",
+        "person:marder__alex",
+        "person:dhamdhere__amogh",
+        "person:nguyen_d_anh"
+    ]
+}
