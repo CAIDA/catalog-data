@@ -170,16 +170,6 @@ type_key_w_type_w = {
             ["tags",.5],
             ["datasets", .5]
         ]
-    },
-    "papers": {
-        "key_weights": [
-            ["name", 10],
-            ["description",8]
-        ],
-        "type_weights":[ 
-            ["tags",.5],
-            ["datasets", .5]
-        ]
     }
 }
 
@@ -208,6 +198,7 @@ def main():
         "license",
         "person",
         "paper",
+        "presentation",
         "software",
         "media",
         "collection",
