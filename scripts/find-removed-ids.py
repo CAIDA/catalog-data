@@ -41,7 +41,7 @@ __email__ = "<bradley@caida.org>", "<vren@ucsd.edu>"
 # ENHANCEMENTS, OR MODIFICATIONS.
 #
 
-# USAGE
+# USAGE:
 # ./find-removed-ids.py > <output file>
 # We recommend outputting to a file for efficiency
 # If file not specified then program will print to stdout
