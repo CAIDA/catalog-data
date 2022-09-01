@@ -178,7 +178,6 @@ def main():
             for index, id_ in enumerate(obj["links"]):
                 if "media" in id_ and id_ not in ["media:2014_a_coordinated_view_of_the_egypt_internet_blackout_2011","media:2020_dynamips_conext_video"]:
                     obj["links"][index] = "presentation:"+id_[6:]
-                    print (obj["links"][index])
 
     # Dump objects
     for obj in id_person.values():
