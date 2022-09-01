@@ -67,8 +67,8 @@ if request.status_code == 200:
     response = request.json()
 
 # Iterate over all nodes from response
-for nodes in response["data"]["search"]["edges"]:
-    ids_current.add(nodes["node"]["id"])
+for nodeDict in response["data"]["search"]["edges"]:
+    ids_current.add(nodeDict['node']['id'])
 
 # Outputs ID
 for id in ids_current:
