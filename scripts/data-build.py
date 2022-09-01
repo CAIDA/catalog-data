@@ -874,6 +874,15 @@ def personName_add(obj, person_id):
         personName_ids[name].add(i)
 
 def link_add(obj,info,p=False):
+
+    a = []
+    for k in ["from","to"]:
+        if type(info) == str:
+            a = [info]
+        else:
+            if k in info:
+                a.append(info[k]);
+    
     if type(info) == str:
         id_original = info
         id_new = utils.id_create(obj["filename"],None,info)
@@ -899,6 +908,7 @@ def link_add(obj,info,p=False):
         if id_new not in id_in_catalog:
             utils.error_add(obj["filename"], "can't find id "+id_new)
         return None
+
 
     if info["from"] == info["to"]:
         utils.warning_add(obj["filename"], "can't link to itself: "+info["from"])

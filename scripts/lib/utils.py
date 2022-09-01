@@ -22,9 +22,6 @@ def id_create(filename, type_,id_):
     else:
         raise Exception(filename+" id is None")
 
-    if type_ == "presentation":
-        type_ = "media"
-
     if type_ == "person":
         if "__" in name or "," in name:
             if "__" in name:

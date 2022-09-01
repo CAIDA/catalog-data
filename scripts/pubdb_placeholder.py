@@ -22,9 +22,8 @@ args = parser.parse_args()
 
 def main():
     load_ids("paper","papers",args.papers_file)
-    load_ids("media","presentations",args.media_file)
-    
-    
+    load_ids("presentation","presentations",args.media_file)
+
     error = False
     ## load all existing ids 
     ## parameters: sources, and the type that is calling it
@@ -74,7 +73,6 @@ def main():
         resources_front = []
         resources_back = []
         if "presenters" in obj:
-            obj["type"] = "PRESENTATION"
             for info in obj["presenters"]:
                 key_to_key(info,"name","person")
                 key_to_key(info,"organization","organizations")
@@ -105,7 +103,7 @@ def main():
                     if type_ == "papers":
                         type_ = "paper"
                     elif type_ == "presentations":
-                        type_ = "media"
+                        type_ = "presentation"
 
                 m = re.search("https://catalog.caida.org/details/([^\/]+)/([^/]+)",link["to"])
                 if m:
@@ -172,15 +170,24 @@ def main():
                 print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 
 
+    # fix links
+    ids = set()
+    for obj in objects:
+        ids.add(obj["id"])
+        if "links" in obj and len(obj["links"]) > 0:
+            for index, id_ in enumerate(obj["links"]):
+                if "media" in id_ and id_ not in ["media:2014_a_coordinated_view_of_the_egypt_internet_blackout_2011","media:2020_dynamips_conext_video"]:
+                    obj["links"][index] = "presentation:"+id_[6:]
+                    print (obj["links"][index])
 
-        json.dump(obj,open(obj["filename"],"w"),indent=4)
-
-
+    # Dump objects
     for obj in id_person.values():
         if "already_exists" not in obj:
             json.dump(obj,open(obj["outfile"],"w"),indent=4)
 
-
+    # print objects
+    for obj in objects:
+        json.dump(obj,open(obj["filename"],"w"),indent=4)
 def key_to_key(obj,key_a,key_b):
     if key_a in obj:
         obj[key_b] = obj[key_a]
@@ -258,4 +265,5 @@ def person_create(filename, pid):
         id_person[person["id"]] = person
     
     return person["id"]
+
 main()
