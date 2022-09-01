@@ -490,9 +490,7 @@ def object_date_add(obj):
                     obj["date"] = utils.date_parse(date_url["date"])
         else:
             if "date" not in obj:
-                if "deprecated" in obj:
-                    utils.warning_add(obj["filename"], "missing date(s), but is deprecated")
-                else:
+                if "deprecated" not in obj:
                     utils.error_add(obj["filename"], "missing date(s), please add date(s)")
     else:
         for key, value in obj.items():
@@ -547,9 +545,7 @@ def object_date_add(obj):
                 else:
                     utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
         if "date" not in obj:
-            if "deprecated" in obj:
-                utils.warning_add(obj["filename"], "missing date, but is deprecated")
-            else:
+            if "deprecated" not in obj:
                 utils.error_add(obj["filename"], "missing date, please add date")
     else:
         if "date" not in obj:
@@ -569,9 +565,7 @@ def object_date_add(obj):
                     obj["date"] = obj[key]
                     break
             if obj["date"] is None:
-                if "deprecated" in obj:
-                    utils.warning_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", but is deprecated")
-                else:
+                if "deprecated" not in obj:
                     utils.error_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
     
 
