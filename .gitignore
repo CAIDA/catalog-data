@@ -5,6 +5,8 @@ word_id_score.json
 access_word_id.json
 personName_ids.json 
 type_ids.json
+suggestions.json
+id_words.json
 # generated from pubdb
 sources/*/*__pubdb.json
 sources/*/*__externallinks.json
