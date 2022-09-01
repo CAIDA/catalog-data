@@ -96,9 +96,9 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [types=paper persons=claffy](https://catalog.caida.org/search?query=types=paper%20persons=claffy) | search for papers authored by people with `claffy` in their name |
 | [ids=paper:2021\_wie2020\_report](https://catalog.caida.org/search?query=ids=paper:2021_wie2020_report) | search for the object with the id `paper:2021_wie2020_report` |
 | [persons=claffy](https://catalog.caida.org/search?query=persons=claffy) | search for objects associated with people with `claffy` in their name |
-| [links=person:clark\__david](https://catalog.caida.org/search?query=links=person:clark__david) | search for objects directly linked with the person named David Clark |
-| [links=person:claffy\__kc,person:clark\__david](https://catalog.caida.org/search?query=links=person:claffy__kc,person:clark__david) | search for objects linked to `kc claffy` OR `David Clark`|
-| [links=person:claffy\__kc links=person:clark\__david](https://catalog.caida.org/search?query=links=person:claffy__kc%20links=person:clark__david) | search for objects linked to `kc claffy` AND `David Clark`|
+| [links=person:clark\_\_david](https://catalog.caida.org/search?query=links=person:clark__david) | search for objects directly linked with the person named David Clark |
+| [links=person:claffy\_\_kc,person:clark\_\_david](https://catalog.caida.org/search?query=links=person:claffy__kc,person:clark__david) | search for objects linked to `kc claffy` OR `David Clark`|
+| [links=person:claffy\_\_kc links=person:clark\_\_david](https://catalog.caida.org/search?query=links=person:claffy__kc%20links=person:clark__david) | search for objects linked to `kc claffy` AND `David Clark`|
 | [links=software:bgpstream](https://catalog.caida.org/search?query=links=software:bgpstream) | search for objects directly linked to the object id `software:bgpstream` |
 | [links=collection:ucsd\_telescope\_datasets iot](https://catalog.caida.org/search?query=links=collection:ucsd_telescope_datasets%20iot) |  search for all papers that used telescope data to study IoT security |
 | [software:bgpstream](https://catalog.caida.org/search?query=software:bgpstream) | search for the object with id `software:bgpstream`|
