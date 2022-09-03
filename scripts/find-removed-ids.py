@@ -41,13 +41,25 @@ __email__ = "<bradley@caida.org>", "<vren@ucsd.edu>"
 # ENHANCEMENTS, OR MODIFICATIONS.
 #
 
+# PREREQUISITES:
+# Generate list of removed ids in the catalog in the format of type:name (no spacing)
+
 # USAGE:
-# ./find-removed-ids.py > <output file>
+# ./find-removed-ids.py <deleted ids> > <output file>
 # We recommend outputting to a file for efficiency
-# If file not specified then program will print to stdout
+# This script reads all ids that has been deleted from the catalog. It takes the input file of
+# deleted ids and outputs all ids that has been removed but not in current CAIDA catalog api.
 
 # imports
 import requests
+import sys
+
+# Read input file
+with open(sys.argv[1]) as fin:
+    deleted = set()
+    for line in fin:
+        # Strip spaces
+        deleted.add(line.rstrip())
 
 # Set to store each unique id
 ids_current = set()
@@ -55,7 +67,7 @@ query = """{
   search {
     edges {
        node {
-          id   
+          id
        }
     }
   }
@@ -66,10 +78,11 @@ request = requests.post("https://api.catalog.caida.org/", json={'query': query})
 if request.status_code == 200:
     response = request.json()
 
-# Iterate over all nodes from response
+# Iterate over all nodes from response and
 for nodeDict in response["data"]["search"]["edges"]:
     ids_current.add(nodeDict['node']['id'])
 
-# Outputs ID
-for id in ids_current:
-    print(id)
+# Iterate over deleted and find those NOT in catalog API
+for obj_id in deleted:
+    if obj_id not in ids_current:
+        print(obj_id)
