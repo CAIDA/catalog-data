@@ -1,0 +1,3 @@
+# collection of redirection files
+old_id, id, url, autoredirect, description
+software:dzdb_api, dataset:dzdb, , true

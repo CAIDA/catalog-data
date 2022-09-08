@@ -2,6 +2,7 @@ CATALOG_DATA_CAIDA_PATH = catalog-data-caida/sources/
 PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
+REDIRECTS_FILE=data/redirects.csv
 
 SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
 SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
@@ -17,7 +18,7 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
-DATA_BUILD_OPTS=-s ${SUMMARY_FILE}
+DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE}
 
 run:clean_placeholders pubdb external caida summary build suggestions
 
