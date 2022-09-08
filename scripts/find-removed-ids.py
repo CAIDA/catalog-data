@@ -52,14 +52,47 @@ __email__ = "<bradley@caida.org>", "<vren@ucsd.edu>"
 
 # imports
 import requests
+import subprocess
+import json
 import sys
 
-# Read input file
-with open(sys.argv[1]) as fin:
-    deleted = set()
-    for line in fin:
-        # Strip spaces
-        deleted.add(line.rstrip())
+# Get all removed files
+removed_file_command = 'git log --diff-filter=D --summary | grep "delete mode 100644" | grep ".json" | grep "sources/"'
+removed_files_raw = subprocess.run(removed_file_command, shell=True, capture_output=True, text=True)
+removed_files = set()
+for line in removed_files_raw.stdout.split('\n'):
+    # Filter out relevant objects
+    if 'dataset' in line or 'software' in line or 'media' in line or 'paper' in line:
+        line = line.lstrip(' delete mode 100644 ').rstrip()
+        removed_files.add(line)
+
+removed_ids = set()
+
+counter = 0
+for file in removed_files:
+    # Get type of file
+    file_type = file.split('/')[1]
+    # Get last git commit with the file
+    last_commit_command = 'git rev-list -n 1 --skip=1 HEAD -- ../' + file
+    last_commit_raw = subprocess.run(last_commit_command, shell=True, capture_output=True, text=True)
+    last_commit = last_commit_raw.stdout.rstrip('\n')
+    # Get file URL based on file name and commit
+    fileURL = f"https://raw.githubusercontent.com/CAIDA/catalog-data/{last_commit}/{file}"
+    # Get object id
+    file_content = requests.get(fileURL).text
+    try:
+        file_json = json.loads(file_content)
+        file_formatted = f"{file_type}:{file_json['id']}"
+        removed_ids.add(file_formatted)
+    except json.decoder.JSONDecodeError as jde:
+        print(jde, file=sys.stderr)
+
+# # Read input file
+# with open(sys.argv[1]) as fin:
+#     deleted = set()
+#     for line in fin:
+#         # Strip spaces
+#         deleted.add(line.rstrip())
 
 # Set to store each unique id
 ids_current = set()
@@ -83,6 +116,6 @@ for nodeDict in response["data"]["search"]["edges"]:
     ids_current.add(nodeDict['node']['id'])
 
 # Iterate over deleted and find those NOT in catalog API
-for obj_id in deleted:
+for obj_id in removed_ids:
     if obj_id not in ids_current:
         print(obj_id)
