@@ -207,7 +207,8 @@ def parse_catalog_data_caida(source_dir):
                     id_2_object[metadata["id"]] = metadata
 
                 # If it has no description skip it
-                if "description" not in metadata or re.search("^\s*$", metadata["description"]):
+                if ("description" not in metadata or re.search("^\s*$", metadata["description"]))  \
+                   and "deprecated" not in metadata:
                     utils.warning_add(file_path, "no description")
                     number_skipped_no_description += 1
 
