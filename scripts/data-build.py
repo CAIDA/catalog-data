@@ -58,9 +58,10 @@ import binascii
 import argparse
 parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
+parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of redirects')
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
-parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
-parser.add_argument("-r", dest="readable_output", help="indents the output to make it readaable", action='store_true')
+parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
 # used to plural
