@@ -49,6 +49,7 @@ import argparse
 import subprocess
 import lib.utils as utils
 import unidecode
+import csv
 
 import binascii
 
@@ -58,9 +59,10 @@ import binascii
 import argparse
 parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
+parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of redirects')
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
-parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
-parser.add_argument("-r", dest="readable_output", help="indents the output to make it readaable", action='store_true')
+parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
 # used to plural
@@ -334,6 +336,14 @@ def main():
                 else:
                     utils.error_add(obj["filename"], obj["id"]+"'s member "+id_+" not found")
 
+    ####################
+    # Add in any redirects (id_old -> id_new)
+    # These will all be hidden, ie not searchable
+    ####################
+    if args.redirects_file:
+        print ("adding redirects:",args.redirects_file)
+        redirects_add(args.redirects_file)
+
     #######################
     # printing errors
     #######################
@@ -418,7 +428,6 @@ def main():
     ######################
     for name,obj in personName_ids.items():
         personName_ids[name] = list(obj)
-
 
     ######################
     # Create a type index
@@ -1314,5 +1323,38 @@ def data_load_from_summary(filename):
                             obj[key] = metadata[key]
             else:
                 utils.error_add(filename, "no matching id for {}".format(dataset_id))
+
+def redirects_add(filename):
+    re_empty = re.compile("^\s*$")
+    with open ("data/redirects.csv") as fin:
+        keys = None
+        for row in csv.reader(fin, delimiter=',',quotechar='"'):
+            if len(row) < 0 or row[0][0] == '#':
+                continue
+            row = list(map(str.strip, row))
+            if keys == None:
+                keys = row
+                for i,key in enumerate(keys): 
+                    if key == "old_id" or key == "id_old":
+                        keys[i] = "id"
+            else:
+                redirect = {}
+                id_ = row[0]
+                for i,v in enumerate(row):
+                    if i == 0 or re_empty.search(v):
+                        continue
+                    redirect[keys[i]] = v
+                if id_ in id_object:
+                    utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
+                else:
+                    t,n = id_.split(":")
+                    id_object[id_] = {
+                        "__typename":t,
+                        "id":id_,
+                        "redirect":redirect,
+                        "visibility":"hidden"
+                    }
+            
+
 
 main()
