@@ -1343,7 +1343,11 @@ def redirects_add(filename):
                 for i,v in enumerate(row):
                     if i == 0 or re_empty.search(v):
                         continue
-                    redirect[keys[i]] = v
+                    if key == "autodirect":
+                        redirect[keys[i]] = True
+                    else:
+                        redirect[keys[i]] = v
+
                 if id_ in id_object:
                     utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
