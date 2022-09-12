@@ -7,20 +7,19 @@ import yaml
 
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
-def id_create(filename, type_,id_):
-    id_ = unidecode.unidecode(id_)
-
-    if id_ is not None:
-        if ":" in id_:
-            values = id_.split(":")
-            type_ = values[0]
-            name = "_".join(values[1:])
-        elif type_ is not None:
-            name = id_
-        else:
-            raise Exception(filename+" "+id_+" has key 'type, but 'type' is None")
-    else:
+def id_create(filename, type_, id_=None):
+    if id_ is None:
         raise Exception(filename+" id is None")
+
+    id_ = unidecode.unidecode(id_)
+    if ":" in id_:
+        values = id_.split(":")
+        type_ = values[0]
+        name = "_".join(values[1:])
+    elif type_ is not None:
+        name = id_
+    else:
+        raise Exception(filename+" "+id_+" has key 'type, but 'type' is None")
 
     if type_ == "presentation":
         type_ = "media"

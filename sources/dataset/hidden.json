@@ -2,5 +2,5 @@
     "id":"hidden",
     "name":"hidden",
     "visibility":"hidden",
-    "sizeTotal":"10T"
+    "sizeTotal":1000000000000
 }

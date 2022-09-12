@@ -49,6 +49,7 @@ import argparse
 import subprocess
 import lib.utils as utils
 import unidecode
+import csv
 
 import binascii
 
@@ -58,9 +59,10 @@ import binascii
 import argparse
 parser = argparse.ArgumentParser(description='Collections metadata of bgpstream users')
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
+parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of redirects')
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
-parser.add_argument("-d", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
-parser.add_argument("-r", dest="readable_output", help="indents the output to make it readaable", action='store_true')
+parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
 # used to plural
@@ -170,16 +172,6 @@ type_key_w_type_w = {
             ["tags",.5],
             ["datasets", .5]
         ]
-    },
-    "papers": {
-        "key_weights": [
-            ["name", 10],
-            ["description",8]
-        ],
-        "type_weights":[ 
-            ["tags",.5],
-            ["datasets", .5]
-        ]
     }
 }
 
@@ -208,6 +200,7 @@ def main():
         "license",
         "person",
         "paper",
+        "presentation",
         "software",
         "media",
         "collection",
@@ -343,6 +336,14 @@ def main():
                 else:
                     utils.error_add(obj["filename"], obj["id"]+"'s member "+id_+" not found")
 
+    ####################
+    # Add in any redirects (id_old -> id_new)
+    # These will all be hidden, ie not searchable
+    ####################
+    if args.redirects_file:
+        print ("adding redirects:",args.redirects_file)
+        redirects_add(args.redirects_file)
+
     #######################
     # printing errors
     #######################
@@ -428,7 +429,6 @@ def main():
     for name,obj in personName_ids.items():
         personName_ids[name] = list(obj)
 
-
     ######################
     # Create a type index
     ######################
@@ -505,10 +505,14 @@ def object_date_add(obj):
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
-        if "dates" in obj:
+        if "dates" in obj and len(obj['dates']) >= 1:
             for date_url in obj["dates"]:
                 if "date" not in obj or obj["date"] < date_url["date"]:
                     obj["date"] = utils.date_parse(date_url["date"])
+        else:
+            if "date" not in obj:
+                if "deprecated" not in obj:
+                    utils.error_add(obj["filename"], "missing date(s), please add date(s)")
     else:
         for key, value in obj.items():
             if key[:4] == "date" and type(value) == str:
@@ -544,9 +548,12 @@ def object_date_add(obj):
                 id_date[obj["id"]] = {}
     
     # change date start to dateCreated for software
-    if obj["__typename"] == "Software":
-        if "dateCreated" not in obj and "dateModified" not in obj:
-            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
+    #if obj["__typename"] == "Software":
+    #    if "dateCreated" not in obj and "dateModified" not in obj:
+    #        if "deprecated" in obj:
+    #            utils.warning_add(obj["filename"], "missing dateCreated and dateModified, but is deprecated")
+    #        else:
+    #            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
     if obj["__typename"] == "Media" and "presenters" in obj:
         for person_venue in obj["presenters"]:
@@ -558,6 +565,9 @@ def object_date_add(obj):
                     person_venue["venue"] = id_object[vid]["name"]
                 else:
                     utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
+        if "date" not in obj:
+            if "deprecated" not in obj:
+                utils.error_add(obj["filename"], "missing date, please add date")
     else:
         if "date" not in obj:
             obj["date"] = None
@@ -575,6 +585,9 @@ def object_date_add(obj):
                 if key in obj:
                     obj["date"] = obj[key]
                     break
+            if obj["date"] is None:
+                if "deprecated" not in obj:
+                    utils.error_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
     
 
     #for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
@@ -1310,5 +1323,42 @@ def data_load_from_summary(filename):
                             obj[key] = metadata[key]
             else:
                 utils.error_add(filename, "no matching id for {}".format(dataset_id))
+
+def redirects_add(filename):
+    re_empty = re.compile("^\s*$")
+    with open ("data/redirects.csv") as fin:
+        keys = None
+        for row in csv.reader(fin, delimiter=',',quotechar='"'):
+            if len(row) < 0 or row[0][0] == '#':
+                continue
+            row = list(map(str.strip, row))
+            if keys == None:
+                keys = row
+                for i,key in enumerate(keys): 
+                    if key == "old_id" or key == "id_old":
+                        keys[i] = "id"
+            else:
+                redirect = {}
+                id_ = row[0]
+                for i,v in enumerate(row):
+                    if i == 0 or re_empty.search(v):
+                        continue
+                    if key == "autodirect":
+                        redirect[keys[i]] = True
+                    else:
+                        redirect[keys[i]] = v
+
+                if id_ in id_object:
+                    utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
+                else:
+                    t,n = id_.split(":")
+                    id_object[id_] = {
+                        "__typename":t,
+                        "id":id_,
+                        "redirect":redirect,
+                        "visibility":"hidden"
+                    }
+            
+
 
 main()

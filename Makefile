@@ -2,6 +2,7 @@ CATALOG_DATA_CAIDA_PATH = catalog-data-caida/sources/
 PUBDB_PAPER= data/pubdb_output__papers.json
 PUBDB_MEDIA= data/pubdb_output__presentations.json
 
+REDIRECTS_FILE=data/redirects.csv
 
 SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
 SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
@@ -17,16 +18,17 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
-DATA_BUILD_OPTS=-s ${SUMMARY_FILE}
+DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE}
 
 run:clean_placeholders pubdb external caida summary build suggestions
 
 fast:
-	make DATA_BUILD_OPTS="-d ${DATA_BUILD_OPTS}" run
+	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
 
+human:readable
 read:readable
 readable:
-	make DATA_BUILD_OPTS="-r ${DATA_BUILD_OPTS}" fast
+	make DATA_BUILD_OPTS="-R ${DATA_BUILD_OPTS}" fast
 
 build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
