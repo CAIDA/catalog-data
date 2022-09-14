@@ -54,10 +54,6 @@ verbose = False
 PAGE_SIZE = 10000
 decoder = json.JSONDecoder()
 encoder = json.JSONEncoder()
-
-#method to print how to run script
-def print_help():
-    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
     
 ######################################################################
 ## Parameters
@@ -89,7 +85,6 @@ def main():
             did_nothing = False
     if did_nothing:
         parser.print_help()
-        sys.exit()
 
 ######################################################################
 ## Walks the list until it is empty

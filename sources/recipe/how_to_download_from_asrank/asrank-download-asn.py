@@ -50,24 +50,17 @@ URL = "https://api.asrank.caida.org/v2/graphql"
 decoder = json.JSONDecoder()
 encoder = json.JSONEncoder()
 
-#method to print how to run script
-def print_help():
-    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
-    
 ######################################################################
 ## Parameters
 ######################################################################
 parser = argparse.ArgumentParser()
-parser.add_argument("asn",type=int,help="ASN we are looking up")
+parser.add_argument("asn",type=int,help="ASN we are looking up", required=True)
 args = parser.parse_args()
 
 ######################################################################
 ## Main code
 ######################################################################
 def main():
-    if args.asn is None:
-        parser.print_help()
-        sys.exit()
     query = AsnQuery(args.asn)
     request = requests.post(URL,json={'query':query})
     if request.status_code == 200:
