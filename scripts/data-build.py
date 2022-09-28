@@ -555,16 +555,10 @@ def object_date_add(obj):
     #        else:
     #            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
-    if obj["__typename"] == "Media" and "presenters" in obj:
+    if "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = utils.date_parse(person_venue["date"])
-            if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
-                vid = person_venue["venue"]
-                if vid in id_object:
-                    person_venue["venue"] = id_object[vid]["name"]
-                else:
-                    utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
         if "date" not in obj:
             if "deprecated" not in obj:
                 utils.error_add(obj["filename"], "missing date, please add date")
@@ -750,6 +744,15 @@ def object_finish(obj):
                                     person_org[k] = person["id"]
                                 else:
                                     error = True
+
+                        # For now we are not suppporting venues as objects, so replace with just # string name
+                        if "venue" in person_org and "venue" == person_org["venue"][:5]:
+                            vid = person_org["venue"]
+                            if vid in id_object:
+                                person_org["venue"] = id_object[vid]["name"]
+                            else:
+                                utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
+                                del person_org["venue"]
                     # if the people are in a list of person ids
                     elif type(person_org) == str and person_org[:7] == "person:":
                         person = person_lookup_id(obj["filename"], person_org)
@@ -896,6 +899,15 @@ def personName_add(obj, person_id):
         personName_ids[name].add(i)
 
 def link_add(obj,info,p=False):
+
+    a = []
+    for k in ["from","to"]:
+        if type(info) == str:
+            a = [info]
+        else:
+            if k in info:
+                a.append(info[k]);
+    
     if type(info) == str:
         id_original = info
         id_new = utils.id_create(obj["filename"],None,info)
@@ -921,6 +933,7 @@ def link_add(obj,info,p=False):
         if id_new not in id_in_catalog:
             utils.error_add(obj["filename"], "can't find id "+id_new)
         return None
+
 
     if info["from"] == info["to"]:
         utils.warning_add(obj["filename"], "can't link to itself: "+info["from"])
@@ -1351,6 +1364,7 @@ def redirects_add(filename):
                 if id_ in id_object:
                     utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
+                    print (filename, id_)
                     t,n = id_.split(":")
                     id_object[id_] = {
                         "__typename":t,
