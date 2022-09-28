@@ -448,7 +448,7 @@ def parse_paper(fname, key_value):
             paper["publisher"] = conference_title
             paper["bibtexFields"]["bookTitle"] = conference_title
 
-        elif "DOI" == key:
+        elif "DOI" == key and value != "":
             doi = value
             paper["resources"].append({
                 "name":"DOI",
