@@ -556,7 +556,6 @@ def object_date_add(obj):
     #            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
     if "presenters" in obj:
-        print (obj["id"])
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = utils.date_parse(person_venue["date"])
@@ -1365,6 +1364,7 @@ def redirects_add(filename):
                 if id_ in id_object:
                     utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
+                    print (filename, id_)
                     t,n = id_.split(":")
                     id_object[id_] = {
                         "__typename":t,

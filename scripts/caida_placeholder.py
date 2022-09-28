@@ -240,6 +240,7 @@ def print_datasets():
     # Iterate over each file and make individual JSON objects.
     for type_id,obj in id_2_object.items():
         type_,id_ = type_id.split(":")
+        obj["id"] = id_
 
         type_dir = "sources/%s" % (type_)
         if not os.path.isdir(type_dir):

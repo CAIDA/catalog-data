@@ -40,7 +40,7 @@ media:2019_extracting_cybersecurity_metrics_cyrie, presentation:2019_extracting_
 media:2016_measuring_internet_interconnection_nanog, presentation:2016_measuring_internet_interconnection_nanog, , true
 media:2009_netmap, presentation:2009_netmap, , true
 media:2006_wide2006-03_ipv4consumption, presentation:2006_wide2006-03_ipv4consumption, , true
-media:presentation:2009_spoofer_imc, presentation:presentation:2009_spoofer_imc, , true
+media:2009_spoofer_imc, presentation:2009_spoofer_imc, , true
 media:2012_analysis_stealth_scan_lisa, presentation:2012_analysis_stealth_scan_lisa, , true
 media:2003_regents030227, presentation:2003_regents030227, , true
 media:2003_bwest0308, presentation:2003_bwest0308, , true
@@ -249,7 +249,7 @@ media:2004_network_telescopes_buatt, presentation:2004_network_telescopes_buatt,
 media:1999_soa9905, presentation:1999_soa9905, , true
 media:2022_caida_measurement_data_infrastructure_overview, presentation:2022_caida_measurement_data_infrastructure_overview, , true
 media:2006_isma0605_fontas, presentation:2006_isma0605_fontas, , true
-media:presentation:2005_mit_spoofer_project, presentation:presentation:2005_mit_spoofer_project, , true
+media:2005_mit_spoofer_project, presentation:2005_mit_spoofer_project, , true
 media:2017_ioda_aims, presentation:2017_ioda_aims, , true
 media:2010_predict_pi_feb, presentation:2010_predict_pi_feb, , true
 media:2006_dns_root_traffic_iepg, presentation:2006_dns_root_traffic_iepg, , true
@@ -551,7 +551,7 @@ media:2001_isma01_brad, presentation:2001_isma01_brad, , true
 media:2013_duality_between_static_dynamic_nist, presentation:2013_duality_between_static_dynamic_nist, , true
 media:2005_caidawide050311_brownlee, presentation:2005_caidawide050311_brownlee, , true
 media:2009_topology_updates, presentation:2009_topology_updates, , true
-media:presentation:2009_spoofer_aims, presentation:presentation:2009_spoofer_aims, , true
+media:2009_spoofer_aims, presentation:2009_spoofer_aims, , true
 media:2011_predict_pi_mar, presentation:2011_predict_pi_mar, , true
 media:2009_xunlei, presentation:2009_xunlei, , true
 media:2006_oecd2006-03, presentation:2006_oecd2006-03, , true
