@@ -1351,24 +1351,25 @@ def redirects_add(filename):
                     if key == "old_id" or key == "id_old":
                         keys[i] = "id"
             else:
-                redirect = {}
+                deprecated = {}
                 id_ = row[0]
                 for i,v in enumerate(row):
                     if i == 0 or re_empty.search(v):
                         continue
                     if keys[i] == "autoredirect":
-                        redirect[keys[i]] = True
+                        deprecated[keys[i]] = True
                     else:
-                        redirect[keys[i]] = v
+                        deprecated[keys[i]] = v
 
                 if id_ in id_object:
-                    utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
+                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
                     t,n = id_.split(":")
                     id_object[id_] = {
                         "__typename":t.capitalize(),
                         "id":id_,
-                        "deprecated":redirect,
+                        "name": "redirect",
+                        "deprecated":deprecated,
                         "visibility":"hidden"
                     }
             
