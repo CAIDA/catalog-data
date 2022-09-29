@@ -228,7 +228,7 @@ def main():
                         obj = object_add(type_,info)
                         id = obj["id"]
                         if id in seen_id:
-                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                             utils.warning_add(filename, "duplicate id found in\n "+ seen_id[id])
                         else:
                             seen_id[id] = filename
                         if "name" not in obj or obj["name"] == "":
