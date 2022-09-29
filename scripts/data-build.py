@@ -1368,6 +1368,7 @@ def redirects_add(filename):
                     id_object[id_] = {
                         "__typename":t.capitalize(),
                         "id":id_,
+                        "name": "redirect",
                         "deprecated":redirect,
                         "visibility":"hidden"
                     }
