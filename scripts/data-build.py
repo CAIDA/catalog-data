@@ -1344,7 +1344,7 @@ def redirects_add(filename):
         for row in csv.reader(fin, delimiter=',',quotechar='"'):
             if len(row) < 0 or row[0][0] == '#':
                 continue
-            row = list(map(str.strip, row))
+            row = list(map(str.strip, row)) 
             if keys == None:
                 keys = row
                 for i,key in enumerate(keys): 
@@ -1356,7 +1356,7 @@ def redirects_add(filename):
                 for i,v in enumerate(row):
                     if i == 0 or re_empty.search(v):
                         continue
-                    if key == "autodirect":
+                    if keys[i] == "autoredirect":
                         redirect[keys[i]] = True
                     else:
                         redirect[keys[i]] = v
@@ -1364,12 +1364,11 @@ def redirects_add(filename):
                 if id_ in id_object:
                     utils.error_add(filename, "redirect "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
-                    print (filename, id_)
                     t,n = id_.split(":")
                     id_object[id_] = {
-                        "__typename":t,
+                        "__typename":t.capitalize(),
                         "id":id_,
-                        "redirect":redirect,
+                        "deprecated":redirect,
                         "visibility":"hidden"
                     }
             
