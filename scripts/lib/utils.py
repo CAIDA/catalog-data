@@ -4,6 +4,7 @@ import traceback
 import unidecode
 import json
 import yaml
+from jsonschema import validate
 
 re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
 
@@ -20,9 +21,6 @@ def id_create(filename, type_, id_=None):
         name = id_
     else:
         raise Exception(filename+" "+id_+" has key 'type, but 'type' is None")
-
-    if type_ == "presentation":
-        type_ = "media"
 
     if type_ == "person":
         if "__" in name or "," in name:
@@ -193,15 +191,27 @@ def section_process(filename, obj, ender, name, buffer):
         f = data["format"].lower()
         if f == "yaml":
             try: 
-                buffer = list(yaml.load_all(buffer,Loader=yaml.Loader))
+                tables = []
+                for table in list(yaml.load_all(buffer,Loader=yaml.Loader)):
+                    tables.append(table)
             except Exception as e:
                 error_add(filename, "YAML:"+e.__str__())
-                return
+                return 
+
+            for table in tables:
+                try:
+                    if name.lower() == "datatables":
+                        validate(instance={}, schema=table)
+                except Exception as e:
+                    error_add(filename, "YAML:"+e.__str__())
+                    return 
+            buffer = tables
 
         elif f == "fields":
             buffer = fields_parser(filename, buffer)
             if buffer is None:
                 return
+            
 
     if name[:5] == "tabs"+ender[0]:
         if "tabs" not in obj:

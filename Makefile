@@ -23,12 +23,14 @@ DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE}
 run:clean_placeholders pubdb external caida summary build suggestions
 
 fast:
-	make DATA_BUILD_OPTS="-d ${DATA_BUILD_OPTS}" run
+	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
 
+human:readable
 read:readable
 readable:
-	make DATA_BUILD_OPTS="-r ${DATA_BUILD_OPTS}" fast
+	make DATA_BUILD_OPTS="-R ${DATA_BUILD_OPTS}" fast
 
+data: build
 build:
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py ${DATA_BUILD_OPTS}

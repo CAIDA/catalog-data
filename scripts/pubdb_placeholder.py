@@ -22,9 +22,8 @@ args = parser.parse_args()
 
 def main():
     load_ids("paper","papers",args.papers_file)
-    load_ids("media","presentations",args.media_file)
-    
-    
+    load_ids("presentation","presentations",args.media_file)
+
     error = False
     ## load all existing ids 
     ## parameters: sources, and the type that is calling it
@@ -71,10 +70,7 @@ def main():
 
         key_to_key(obj,"pubdb_presentation_id","pubdb_id")
         key_to_key(obj,"venue","publisher")
-        resources_front = []
-        resources_back = []
         if "presenters" in obj:
-            obj["type"] = "PRESENTATION"
             for info in obj["presenters"]:
                 key_to_key(info,"name","person")
                 key_to_key(info,"organization","organizations")
@@ -92,73 +88,51 @@ def main():
                 key_to_key(info,"organization","organizations")
                 info['person'] = person_create(obj["filename"], info["person"])
         
+        links = []
         if "links" in obj:
-            links = []
+            access = []
             for link in obj["links"]:
                 if link["label"] == "DOI":
                     obj["doi"] = link["to"]
+                    continue
                    
-                m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",link["to"])
                 id_ = None
+                m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",
+                        link["to"])
                 if m:
                     type_,date, id_ = m.groups()
                     if type_ == "papers":
                         type_ = "paper"
                     elif type_ == "presentations":
-                        type_ = "media"
-
-                m = re.search("https://catalog.caida.org/details/([^\/]+)/([^/]+)",link["to"])
-                if m:
-                    type_,id_ = m.groups()
-                    id_ = utils.id_create(obj["filename"],type_,id_)
-
-
-                if id_ is not None and id_ in seen:
-                        links.append({
-                            "to":id_,
-                            "label":link["label"]
-                        })
+                        type_ = "presentation"
                 else:
-                    if "label" in link and (
-                            re.search("^PDF$", link["label"], re.IGNORECASE)
-                            or 
-                            re.search("^HTML$", link["label"], re.IGNORECASE)):
-                        if "access" not in obj:
-                            obj["access"] = []
-                        obj["access"].append({
-                            "access":"public",
-                            "url":link["to"],
-                            "tags":[link["label"]]
-                        })
-                    resource = {
-                        "name":link["label"],
+                    for regex in [re.compile("https://catalog.caida.org/details/([^\/]+)/([^/]+)"),
+                        re.compile("https://catalog.caida.org/([^\/]+)/([^/]+)")]:
+                        m = regex.search(link["to"])
+                        if m:
+                            type_,id_ = m.groups()
+                            break
+
+                if id_ is not None:# and id_ in seen:
+                    if type_ == "media":
+                        type_ = "presentation"
+                    links.append({
+                        "to":type_+":"+id_,
+                        "label":link["label"]
+                    })
+
+                else:
+                    if "access" not in obj:
+                        obj["access"] = []
+                    access.append({
+                        "access":"public",
                         "url":link["to"],
-                        "tags":[]
-                    }
-                    if re.search("^pdf$", resource["name"], re.IGNORECASE):
-                        resources_front.append(resource)
-                    else:
-                        resources_back.append(resource)
-            obj["links"] = links
-        if obj["__typename"] == "paper":
-            obj["bibtexFields"] =  {}
-            for key_from in ["type", "booktitle","institution","journal","volume","publisher","venue","pages","peerReviewedYes","bibtex","year","mon"]:
-                if key_from in obj and len(obj[key_from]) > 0:
-                    if key_from == "booktitle":
-                        key_to = "bookTitle"
-                    else:
-                        key_to = key_from
+                        "tags":[link["label"]]
+                    })
+            del obj["links"]
 
-                    obj["bibtexFields"][key_to] = obj[key_from]
-                    if key_from != "publisher":
-                        del obj[key_from]
-
-            resources_front.append({
-                "name":"bibtex",
-                "url":"https://www.caida.org/publications/papers/"+obj["id"][:4]+"/"+obj["id"][5:]+"/bibtex.html"
-                })
-        resources_front.extend(resources_back);
-        obj["resources"] = resources_front
+            if len(access) > 0:
+                obj["access"] = access
 
         if "datePublished" in obj:
             obj["date"] = utils.date_parse(obj["datePublished"])
@@ -167,20 +141,30 @@ def main():
             linked = obj["linkedObjects"].lower().strip()
             if re_ids_only.search(linked):
                 for to_id in re_whitespace.split(linked):
-                    obj["links"].append(to_id)
+                    links.append(to_id)
             else:
                 print (obj["id"], "failed to parse linkedObject `"+linked+"'")
 
+        if len(links) > 0:
+            obj["links"] = links
 
+    # fix links
+    ids = set()
+    for obj in objects:
+        ids.add(obj["id"])
+        if "links" in obj and len(obj["links"]) > 0:
+            for index, id_ in enumerate(obj["links"]):
+                if "media" in id_ and id_ not in ["media:2014_a_coordinated_view_of_the_egypt_internet_blackout_2011","media:2020_dynamips_conext_video"]:
+                    obj["links"][index] = "presentation:"+id_[6:]
 
-        json.dump(obj,open(obj["filename"],"w"),indent=4)
-
-
+    # Dump objects
     for obj in id_person.values():
         if "already_exists" not in obj:
             json.dump(obj,open(obj["outfile"],"w"),indent=4)
 
-
+    # print objects
+    for obj in objects:
+        json.dump(obj,open(obj["filename"],"w"),indent=4)
 def key_to_key(obj,key_a,key_b):
     if key_a in obj:
         obj[key_b] = obj[key_a]
@@ -258,4 +242,5 @@ def person_create(filename, pid):
         id_person[person["id"]] = person
     
     return person["id"]
+
 main()

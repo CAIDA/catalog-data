@@ -49,6 +49,7 @@ import argparse
 import subprocess
 import lib.utils as utils
 import unidecode
+import csv
 
 import binascii
 
@@ -227,7 +228,7 @@ def main():
                         obj = object_add(type_,info)
                         id = obj["id"]
                         if id in seen_id:
-                            print ("duplicate id found in\n   ",filename,"\n   ", seen_id[id])
+                             utils.warning_add(filename, "duplicate id found in\n "+ seen_id[id])
                         else:
                             seen_id[id] = filename
                         if "name" not in obj or obj["name"] == "":
@@ -335,6 +336,14 @@ def main():
                 else:
                     utils.error_add(obj["filename"], obj["id"]+"'s member "+id_+" not found")
 
+    ####################
+    # Add in any redirects (id_old -> id_new)
+    # These will all be hidden, ie not searchable
+    ####################
+    if args.redirects_file:
+        print ("adding redirects:",args.redirects_file)
+        redirects_add(args.redirects_file)
+
     #######################
     # printing errors
     #######################
@@ -419,7 +428,6 @@ def main():
     ######################
     for name,obj in personName_ids.items():
         personName_ids[name] = list(obj)
-
 
     ######################
     # Create a type index
@@ -547,16 +555,10 @@ def object_date_add(obj):
     #        else:
     #            utils.error_add(obj["filename"], "missing dateCreated and dateModified, please add dateCreated or dateModified")
     
-    if obj["__typename"] == "Media" and "presenters" in obj:
+    if "presenters" in obj:
         for person_venue in obj["presenters"]:
             if "date" in person_venue:
                 obj["date"] = utils.date_parse(person_venue["date"])
-            if "venue" in person_venue and "venue" == person_venue["venue"][:5]:
-                vid = person_venue["venue"]
-                if vid in id_object:
-                    person_venue["venue"] = id_object[vid]["name"]
-                else:
-                    utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
         if "date" not in obj:
             if "deprecated" not in obj:
                 utils.error_add(obj["filename"], "missing date, please add date")
@@ -742,6 +744,15 @@ def object_finish(obj):
                                     person_org[k] = person["id"]
                                 else:
                                     error = True
+
+                        # For now we are not suppporting venues as objects, so replace with just # string name
+                        if "venue" in person_org and "venue" == person_org["venue"][:5]:
+                            vid = person_org["venue"]
+                            if vid in id_object:
+                                person_org["venue"] = id_object[vid]["name"]
+                            else:
+                                utils.error_add(obj["filename"], f'missing venue: {person_venue["venue"]}')
+                                del person_org["venue"]
                     # if the people are in a list of person ids
                     elif type(person_org) == str and person_org[:7] == "person:":
                         person = person_lookup_id(obj["filename"], person_org)
@@ -888,6 +899,15 @@ def personName_add(obj, person_id):
         personName_ids[name].add(i)
 
 def link_add(obj,info,p=False):
+
+    a = []
+    for k in ["from","to"]:
+        if type(info) == str:
+            a = [info]
+        else:
+            if k in info:
+                a.append(info[k]);
+    
     if type(info) == str:
         id_original = info
         id_new = utils.id_create(obj["filename"],None,info)
@@ -913,6 +933,7 @@ def link_add(obj,info,p=False):
         if id_new not in id_in_catalog:
             utils.error_add(obj["filename"], "can't find id "+id_new)
         return None
+
 
     if info["from"] == info["to"]:
         utils.warning_add(obj["filename"], "can't link to itself: "+info["from"])
@@ -1315,5 +1336,43 @@ def data_load_from_summary(filename):
                             obj[key] = metadata[key]
             else:
                 utils.error_add(filename, "no matching id for {}".format(dataset_id))
+
+def redirects_add(filename):
+    re_empty = re.compile("^\s*$")
+    with open ("data/redirects.csv") as fin:
+        keys = None
+        for row in csv.reader(fin, delimiter=',',quotechar='"'):
+            if len(row) < 0 or row[0][0] == '#':
+                continue
+            row = list(map(str.strip, row)) 
+            if keys == None:
+                keys = row
+                for i,key in enumerate(keys): 
+                    if key == "old_id" or key == "id_old":
+                        keys[i] = "id"
+            else:
+                deprecated = {}
+                id_ = row[0]
+                for i,v in enumerate(row):
+                    if i == 0 or re_empty.search(v):
+                        continue
+                    if keys[i] == "autoredirect":
+                        deprecated[keys[i]] = True
+                    else:
+                        deprecated[keys[i]] = v
+
+                if id_ in id_object:
+                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
+                else:
+                    t,n = id_.split(":")
+                    id_object[id_] = {
+                        "__typename":t.capitalize(),
+                        "id":id_,
+                        "name": "redirect",
+                        "deprecated":deprecated,
+                        "visibility":"hidden"
+                    }
+            
+
 
 main()

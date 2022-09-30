@@ -155,6 +155,7 @@ def parse_catalog_data_caida(source_dir):
 
     # number skipped with no description
     number_skipped_no_description = 0
+    number_duplicate = 0
 
     re_md = re.compile("\.md$", re.IGNORECASE)
 
@@ -194,14 +195,15 @@ def parse_catalog_data_caida(source_dir):
                 id_ = metadata["id"] = utils.id_create(file_path, type_, metadata["id"])
                 # not including private datasets
                 if id_ in seen_id:
-                    print ("duplicate id",id_)
-                    print ("    ",file_path)
-                    print ("    ",seen_id[id_])
+                    utils.warning_add(id_, file_path+" duplicate of "+ seen_id[id_])
+                    number_duplicate += 1
                     continue
                 if id_ in id_2_object:
+                    utils.warning_add(metadata["filename"], id_+" duplicate of "+id_2_object[id_]["filename"])
                     print ("duplicate",id_)
                     print ("    ",id_2_object[id_]["filename"])
                     print ("    ",metadata["filename"])
+                    number_duplicate += 1
                     continue 
                 else:
                     id_2_object[metadata["id"]] = metadata
@@ -231,6 +233,7 @@ def parse_catalog_data_caida(source_dir):
                 for key in keys:
                     del metadata[key]
     utils.warning_add("", f"Skipped: {number_skipped_no_description} resources with no description")
+    utils.warning_add("", f"Skipped: {number_duplicate} resources that are duplicates")
 
 
 # Print all found datasets to individual JSON objects.
@@ -240,6 +243,7 @@ def print_datasets():
     # Iterate over each file and make individual JSON objects.
     for type_id,obj in id_2_object.items():
         type_,id_ = type_id.split(":")
+        obj["id"] = id_
 
         type_dir = "sources/%s" % (type_)
         if not os.path.isdir(type_dir):

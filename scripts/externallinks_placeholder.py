@@ -185,12 +185,12 @@ topkey_2_dataset = {
   "mapnet"                            : "software:mapnet",
   "coralreef"                         : "software:coralreef",
   "datcat"                            : "software:datcat",
-  "dolphin"                           : "media:2014_dolphin_dhs",
+  "dolphin"                           : "presentation:2014_dolphin_dhs",
   "asfinder"                          : "software:coralreef",
   "netgeo"                            : "software:netgeo",
   "ioda"                              : "software:ioda"
 }
-alternate_links = ["software:", "media:", "paper:"]
+alternate_links = ["software:", "media:", "paper:", "presentation:"]
 re_yml = re.compile(r".yaml")
 re_jsn = re.compile(r".json")
 re_pubdb = re.compile(r"___pubdb")
@@ -448,7 +448,7 @@ def parse_paper(fname, key_value):
             paper["publisher"] = conference_title
             paper["bibtexFields"]["bookTitle"] = conference_title
 
-        elif "DOI" == key:
+        elif "DOI" == key and value != "":
             doi = value
             paper["resources"].append({
                 "name":"DOI",

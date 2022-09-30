@@ -49,10 +49,6 @@ import time
 
 URL = "https://api.asrank.caida.org/v2/graphql"
 
-#method to print how to run script
-def print_help():
-    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
-    
 ######################################################################
 ## Parameters
 ######################################################################
@@ -67,9 +63,6 @@ args = parser.parse_args()
 ## Main code
 ######################################################################
 def main():
-    #if args.asn is None:
-    #    parser.print_help()
-    #    sys.exit()
     hasNextPage = True
 
     first = 500
