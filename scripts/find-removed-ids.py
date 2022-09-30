@@ -66,7 +66,7 @@ for line in removed_files_raw.stdout.split('\n'):
         line = line.lstrip(' delete mode 100644 ').rstrip()
         removed_files.add(line)
 
-removed_ids = set()
+removed_ids = list()
 
 counter = 0
 for file in removed_files:
@@ -83,7 +83,8 @@ for file in removed_files:
     try:
         file_json = json.loads(file_content)
         file_formatted = f"{file_type}:{file_json['id']}"
-        removed_ids.add(file_formatted)
+        temp_list = [file_formatted, file, last_commit]
+        removed_ids.append(temp_list)
     except json.decoder.JSONDecodeError as jde:
         print(jde, file=sys.stderr)
 
@@ -117,5 +118,5 @@ for nodeDict in response["data"]["search"]["edges"]:
 
 # Iterate over deleted and find those NOT in catalog API
 for obj_id in removed_ids:
-    if obj_id not in ids_current:
+    if obj_id[0] not in ids_current:
         print(obj_id)
