@@ -977,7 +977,7 @@ def recipe_process(path):
             tabs = []
             info = None
             for fname in files:
-                assets_dir = re.sub("^sources","assets",root)
+                assets_dir = re.sub("^sources","/assets",root)
                 filename = root +"/"+fname
                 if re_readme_md.search(fname):
                     with open(filename) as f:
