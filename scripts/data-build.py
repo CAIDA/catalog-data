@@ -977,6 +977,7 @@ def recipe_process(path):
             tabs = []
             info = None
             for fname in files:
+                assets_dir = re.sub("^sources","assets",root)
                 filename = root +"/"+fname
                 if re_readme_md.search(fname):
                     with open(filename) as f:
@@ -985,9 +986,9 @@ def recipe_process(path):
                         for line in f:
                             # process content after JSON 
                             if info is not None:
+                                line = replace_markdown_urls(assets_dir,line)
                                 #line = replace_markdown_urls(rep_url+root, line)
                                 #if re_markdown_url.search(line):
-                                    #print (line.rstrip())
                                 info["content"] += line
 
                             # process JSON 
@@ -1007,8 +1008,6 @@ def recipe_process(path):
                                     except ValueError as e:
                                         error = True
                                         utils.error_add(filename, e.__str__())
-                                        #print (e)
-                                        #print ("parse failure",data)
                                         break
                                 else:
                                     data = ""
@@ -1048,17 +1047,38 @@ def recipe_process(path):
                     info["tabs"].extend(tabs)
                 else:
                     info["tabs"] = tabs
-re_markdown_url = re.compile("^(.*\[[^\]]+\]\(\s*)([^\)]+)(\).*)")
-def replace_markdown_urls(repo_url, line):
-    m = re_markdown_url.search(line)
-    if m:
-        before,url,after = m.groups()
-        #print (before, "|", url, "|", after)
-        if url[0:4] != "http":
-            url = repo_url +"/"+url
-        return replace_markdown_urls(repo_url, before)+url+replace_markdown_urls(repo_url, after)
-    else:
-        return line
+
+re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))(.*)", re.IGNORECASE)
+re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
+re_url_absolute = re.compile("^https?:")
+re_mailto = re.compile("^mailto:")
+
+def replace_markdown_urls(assets_dir,line):
+    temp = line
+    for regex in [re_markdown_url, re_html_url]:
+        found = True
+        index_code = []
+        while found:
+            m = regex.search(line)
+            if m:
+                before, label, url, after = m.groups()
+                url = url.strip()
+                if not re_url_absolute.search(url) and not re_mailto.search(url):
+                    url = f"{assets_dir}/{url}"
+                index = "\0"+str(len(index_code))+":"
+                index_code.append([index,label+url])
+                line = before+index+after
+                found = True
+            else:
+                found = False
+        for index,code in reversed(index_code):
+            line = re.sub(index,code,line)
+
+    #if "assets" in line:
+        #print (before)
+        #print (line)
+    return line
+
 
 def get_url():
     filename = ".git/config"
