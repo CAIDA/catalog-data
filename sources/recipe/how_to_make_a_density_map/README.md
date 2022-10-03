@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## Generating a Choropleth
 
-![choropleth](images/choropleth1.png)
+<img style="width:100%" src="images/choropleth1.png"/>
 
 **generate_choropleth.py** is a very basic script that will produce a choropleth from a table that contains country codes and corresponding values. One may also wish to use GeoPlot directly to customize their choropleths.
 
@@ -104,7 +104,7 @@ For example, the file ookla_server_locations_countries.csv was generated with th
 
 ## Generating a Heatmap
 
-![heatmap](images/heatmap1.png)
+<img style="width:100%" src="images/heatmap1.png"/>
 
 **generate_kde_map.py** is a script that will generate a heatmap from a list longitudes and latitudes. This section will also explain how to create a heatmap using GeoPlot.
 
