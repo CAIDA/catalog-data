@@ -19800,7 +19800,7 @@ ABS    : The routes used in the Internets interdomain routing system are a rich 
 ---
 MARKER : 2016_t_krenc_imc_469
 TYPE   : in_proceedings
-AUTHOR : Krenc, T., Feldmann, A.
+AUTHOR : Krenc, Thomas, Feldmann, A.
 TITLE  : 'BGP prefix delegations: A deep dive'
 YEAR   : 2016-11
 PAGE   : 469-475
