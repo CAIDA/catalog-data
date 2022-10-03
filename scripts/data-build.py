@@ -1075,7 +1075,7 @@ def replace_markdown_urls(assets_dir,line):
         for index,code in reversed(index_code):
             line = re.sub(index,code,line)
 
-    if "choropleth1" in line:
+    if "asrank-download-asn" in line:
         print (line)
     return line
 
