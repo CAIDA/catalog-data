@@ -1050,12 +1050,13 @@ def recipe_process(path):
 
 re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))(.*)", re.IGNORECASE)
 re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
+re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
 re_url_absolute = re.compile("^https?:")
 re_mailto = re.compile("^mailto:")
 
 def replace_markdown_urls(assets_dir,line):
     temp = line
-    for regex in [re_markdown_url, re_html_url]:
+    for regex in [re_markdown_url, re_html_url, re_image_url]:
         found = True
         index_code = []
         while found:
@@ -1074,9 +1075,8 @@ def replace_markdown_urls(assets_dir,line):
         for index,code in reversed(index_code):
             line = re.sub(index,code,line)
 
-    #if "assets" in line:
-        #print (before)
-        #print (line)
+    if "choropleth1" in line:
+        print (line)
     return line
 
 
