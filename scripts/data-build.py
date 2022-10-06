@@ -1384,14 +1384,18 @@ def redirects_add(filename):
                 if id_ in id_object:
                     utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
-                    t,n = id_.split(":")
-                    id_object[id_] = {
-                        "__typename":t.capitalize(),
-                        "id":id_,
-                        "name": "redirect",
-                        "deprecated":deprecated,
-                        "visibility":"hidden"
-                    }
+                    values = id_.split(":")
+                    if len(values) == 2:
+                        t,n = values
+                        id_object[id_] = {
+                            "__typename":t.capitalize(),
+                            "id":id_,
+                            "name": "redirect",
+                            "deprecated":deprecated,
+                            "visibility":"hidden"
+                        }
+                    else:
+                        utils.error_add(filename,"failed to parse id: "+id_)
             
 
 
