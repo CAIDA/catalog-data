@@ -45,21 +45,21 @@ This solution parses through ITDK datasets and stores a node's `node id`, `isp`,
 GraphQL works with the standard set of HTTP tools (see 4 simple ways to call a GraphQL API).
 
 #### ASN
-[asrank-download-asn.py](how_to_download_from_asrank/asrank-download-asn.py) is a simple Python script that can be used to 
+[asrank-download-asn.py](asrank-download-asn.py) is a simple Python script that can be used to 
 download a single ASN. It can also be used as a template to write your own script.
 ~~~
 python3 asrank-download-asn.py 701
 ~~~
 
 #### ASN Links
-[asrank-download-asnLinks.py](how_to_download_from_asrank/asrank-download-asnLinks.py) is a simple Python script that can be used to 
+[asrank-download-asnLinks.py](asrank-download-asnLinks.py) is a simple Python script that can be used to 
 download a ASN links. It can also be used as a template to write your own script.
 ~~~
 python3 asrank-download-asnLink.py 701 8245 > links.jsonl
 ~~~
 
 #### ASN all
-[asrank-download.py](how_to_download_from_asrank/asrank-download.py) is a more complex Python script that can be 
+[asrank-download.py](asrank-download.py) is a more complex Python script that can be 
 used as-is to download all the ASNs, organizations, or ASN links. The following 
 arguments will cause the script to download all the asns, organizations, and 
 asnLinks into their respective files.
