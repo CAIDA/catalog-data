@@ -16,6 +16,10 @@
         {
             "person": "person:wolfson__donald",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
+        }, 
+        {
+            "person": "Victor Ren",
+            "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]
 }
@@ -77,6 +81,7 @@ for record in stream.records():
                         print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
                                 f"Communities: {elem.fields['communities']} "
                                 f"Timestamp: {rec_time}")
+                        break
 
         # Reports and skips all KeyError
         except KeyError as e:
