@@ -1068,15 +1068,13 @@ def replace_markdown_urls(assets_dir,line):
                     url = f"{assets_dir}/{url}"
                 index = "\0"+str(len(index_code))+":"
                 index_code.append([index,label+url])
-                line = before+index+after
+                line = "\n"+before+index+after
                 found = True
             else:
                 found = False
         for index,code in reversed(index_code):
             line = re.sub(index,code,line)
 
-    if "choropleth1" in line:
-        print (line)
     return line
 
 
