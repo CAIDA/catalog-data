@@ -54,7 +54,7 @@ encoder = json.JSONEncoder()
 ## Parameters
 ######################################################################
 parser = argparse.ArgumentParser()
-parser.add_argument("asn",type=int,help="ASN we are looking up", required=True)
+parser.add_argument("asn",type=int,help="ASN we are looking up")
 args = parser.parse_args()
 
 ######################################################################
