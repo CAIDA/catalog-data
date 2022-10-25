@@ -81,7 +81,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 |----------------|-------------|
 | [links=tag:asn](https://catalog.caida.org/search?query=links=tag:asn)| search for objects that have the tag `asn`|
 | [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida)| search for objects that do not have the tag `caida`|
-| [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and ark
+| [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and ark |
 | [links=bgpstream](https://catalog.caida.org/search?query=links=bgpstream) | search for objects with the word `bgpstream`  | 
 | [links=ipv4 !ipv6](https://catalog.caida.org/search?query=links=ipv4%20!ipv6) | search for objects that match `ipv4` but do not match the word `ipv6` |
 | [!links=dataset:as\_relationships\_serial_1 rank](https://catalog.caida.org/search?query=!links=dataset:as_relationships_serial_1%20rank) | it searches for search for objects with the word `rank` that are not linked to dataset:as_relationships_serial_1 | 
