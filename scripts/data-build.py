@@ -1048,9 +1048,9 @@ def recipe_process(path):
                 else:
                     info["tabs"] = tabs
 
-re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))(.*)", re.IGNORECASE)
-re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
-re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
+re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
+re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
 re_url_absolute = re.compile("^https?:")
 re_mailto = re.compile("^mailto:")
 
@@ -1068,7 +1068,7 @@ def replace_markdown_urls(assets_dir,line):
                     url = f"{assets_dir}/{url}"
                 index = "\0"+str(len(index_code))+":"
                 index_code.append([index,label+url])
-                line = "\n"+before+index+after
+                line = before+index+after
                 found = True
             else:
                 found = False
