@@ -1,0 +1,23 @@
+{
+    "id": "hidden",
+    "name": "hidden",
+    "dateCreated":"2020-04",
+    "description": "An example software that has been show deperated",
+    "tags": [
+        "topology"
+    ],
+    "visibility":"hidden",
+    "deprecated": {
+        "id":"software:graphing"
+    },
+    "access": [
+        {
+            "url": "https://ihr.iijlab.net/ihr/en-us/",
+            "tags": [
+                "UI"
+            ],
+            "access": "public"
+        }
+    ],
+    "organization": "IIJ Labs"
+}
