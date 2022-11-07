@@ -175,6 +175,21 @@ type_key_w_type_w = {
     }
 }
 
+##################################
+# Enumrated types 
+##################################
+
+enum_type_key_values = {
+    "_all_":{
+        "visibility":["public","links","hidden","private"],
+    },
+    "Software":{
+        "status":["supported","unsupported","deprecated"]
+    }
+}
+
+
+
 if len(sys.argv) > 1 and sys.argv[1] == "-f":
     date_lookup_force = True
 else:
@@ -344,10 +359,6 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
-    #######################
-    # printing errors
-    #######################
-    utils.error_print()
 
     #######################
     # pubdb links
@@ -456,6 +467,24 @@ def main():
             id_words[i].add(word)
     for i,words in id_words.items():
         id_words[i] = list(words)
+
+
+    #######################
+    # check dataset status
+    #######################
+    for obj in id_object.values():
+        for t in ["_all_", obj["__typename"]]:
+            if t in enum_type_key_values:
+                for key,valid_values in enum_type_key_values[t].items():
+                    if key in obj and obj[key] not in valid_values:
+                        utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
+                        del obj[key]
+
+    #######################
+    # printing errors
+    #######################
+    utils.error_print()
+
 
     #######################
     # print files

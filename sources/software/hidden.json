@@ -7,6 +7,7 @@
         "topology"
     ],
     "visibility":"hidden",
+    "status":"deprecated",
     "deprecated": {
         "id":"software:graphing"
     },
