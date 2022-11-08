@@ -697,7 +697,6 @@ def object_add(type_, info):
 re_third_party = re.compile("third party",re.IGNORECASE)
 third_party_found = False
 def organization_ids_add(org, id_):
-    print (org,id_)
     if re_third_party.search(id_):
         if not third_party_found:
             print ('ignoring organization "third party"', file=sys.stderr)
@@ -724,24 +723,25 @@ def object_finish(obj):
         obj["tags"] = []
 
     # Add if CAIDA is organization
-    if "caida" not in obj["tags"]:
-        is_caida = False
-        if "organization" in obj:
-            org = obj["organization"]
-            organization_ids_add(org, obj["id"])
-            if re_caida.search(org) or re_caida_long.search(org):
-                is_caida = True
+    is_caida = False
+    if "organization" in obj:
+        org = obj["organization"]
+        organization_ids_add(org, obj["id"])
+        if re_caida.search(org) or re_caida_long.search(org):
+            is_caida = True
 
-        for key in ["authors", "presenters"]:
-            if key in obj:
-                for person_org in obj[key]:
-                    if "organizatoins" in person_org:
-                        for org in person_org["organizations"]:
-                            organization_ids_add(org, obj["id"])
-                            if re_caida.search(org) or re_caida_long.search(org):
-                                is_caida = True
+    for key in ["authors", "presenters"]:
+        if key in obj:
+            for person_org in obj[key]:
+                if "organizatoins" in person_org:
+                    for org in person_org["organizations"]:
+                        organization_ids_add(org, obj["id"])
+                        if re_caida.search(org) or re_caida_long.search(org):
+                            is_caida = True
 
-        if is_caida:
+    if is_caida and "caida":
+        organization_ids_add("CAIDA", obj["id"])
+        if "caida" not in obj["tags"]:
             obj["tags"].append("caida")
 
     for key,value in obj.items():
