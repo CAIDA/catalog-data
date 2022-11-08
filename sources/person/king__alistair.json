@@ -1,6 +1,6 @@
 {
     "id": "person:king__alistair",
-    "organization": [
+    "organizations": [
         "CAIDA, San Diego Supercomputer Center, University of California San Diego"
     ],
     "nameLast": "King",

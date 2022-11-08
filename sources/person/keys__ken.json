@@ -1,6 +1,6 @@
 {
     "id": "person:keys__ken",
-    "organization": [
+    "organizations": [
         "CAIDA, San Diego Supercomputer Center, University of California San Diego"
     ],
     "nameLast": "Keys",

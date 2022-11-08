@@ -78,6 +78,7 @@ id_info = {}
 id_object = {}
 id_paper = {}
 id_id_link = {}
+organization_ids = {}
 
 # Score weights
 # The score encodes that the word exist at a given level.
@@ -126,9 +127,11 @@ id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 id_words_file = "id_words.json"
 access_word_id_file = "access_word_id.json"
-pubdb_links_file = "data/pubdb_links.json"
+organization_ids_file = "organization_ids.json"
 personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
+
+pubdb_links_file = "data/pubdb_links.json"
 
 filename_errors = {}
 
@@ -514,6 +517,12 @@ def main():
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
 
+    #################
+    for org,ids in organization_ids.items():
+        organization_ids[org] = list(ids)
+    print ("writing",organization_ids_file)
+    json.dump(organization_ids, open(organization_ids_file,"w"),indent=indent)
+
 ########################### 
 # Date
 ########################### 
@@ -684,6 +693,23 @@ def object_add(type_, info):
     print("line 611, error in object add for ", info["id"])
     return None
 
+# Helper function 
+re_third_party = re.compile("third party",re.IGNORECASE)
+third_party_found = False
+def organization_ids_add(org, id_):
+    print (org,id_)
+    if re_third_party.search(id_):
+        if not third_party_found:
+            print ('ignoring organization "third party"', file=sys.stderr)
+            third_party_found  = True
+        return
+
+    if org not in organization_ids:
+        organization_ids[org] = set()
+    organization_ids[org].add(id_)
+
+re_caida = re.compile("caida",re.IGNORECASE)
+re_caida_long = re.compile("Center for Applied Internet Data Analysis",re.IGNORECASE)
 def object_finish(obj):
 
     ############
@@ -696,6 +722,27 @@ def object_finish(obj):
 
     if "tags" not in obj:
         obj["tags"] = []
+
+    # Add if CAIDA is organization
+    if "caida" not in obj["tags"]:
+        is_caida = False
+        if "organization" in obj:
+            org = obj["organization"]
+            organization_ids_add(org, obj["id"])
+            if re_caida.search(org) or re_caida_long.search(org):
+                is_caida = True
+
+        for key in ["authors", "presenters"]:
+            if key in obj:
+                for person_org in obj[key]:
+                    if "organizatoins" in person_org:
+                        for org in person_org["organizations"]:
+                            organization_ids_add(org, obj["id"])
+                            if re_caida.search(org) or re_caida_long.search(org):
+                                is_caida = True
+
+        if is_caida:
+            obj["tags"].append("caida")
 
     for key,value in obj.items():
         if (key == "tags" or key == "access") and obj[key]:
