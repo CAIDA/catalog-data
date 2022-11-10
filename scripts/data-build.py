@@ -175,6 +175,21 @@ type_key_w_type_w = {
     }
 }
 
+##################################
+# Enumrated types 
+##################################
+
+enum_type_key_values = {
+    "_all_":{
+        "visibility":["public","links","hidden","private"],
+    },
+    "Software":{
+        "status":["supported","unsupported","deprecated"]
+    }
+}
+
+
+
 if len(sys.argv) > 1 and sys.argv[1] == "-f":
     date_lookup_force = True
 else:
@@ -344,10 +359,6 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
-    #######################
-    # printing errors
-    #######################
-    utils.error_print()
 
     #######################
     # pubdb links
@@ -456,6 +467,24 @@ def main():
             id_words[i].add(word)
     for i,words in id_words.items():
         id_words[i] = list(words)
+
+
+    #######################
+    # check dataset status
+    #######################
+    for obj in id_object.values():
+        for t in ["_all_", obj["__typename"]]:
+            if t in enum_type_key_values:
+                for key,valid_values in enum_type_key_values[t].items():
+                    if key in obj and obj[key] not in valid_values:
+                        utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
+                        del obj[key]
+
+    #######################
+    # printing errors
+    #######################
+    utils.error_print()
+
 
     #######################
     # print files
@@ -1048,9 +1077,9 @@ def recipe_process(path):
                 else:
                     info["tabs"] = tabs
 
-re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))(.*)", re.IGNORECASE)
-re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
-re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)(.*)",re.IGNORECASE)
+re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
+re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
 re_url_absolute = re.compile("^https?:")
 re_mailto = re.compile("^mailto:")
 
@@ -1384,14 +1413,18 @@ def redirects_add(filename):
                 if id_ in id_object:
                     utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
                 else:
-                    t,n = id_.split(":")
-                    id_object[id_] = {
-                        "__typename":t.capitalize(),
-                        "id":id_,
-                        "name": "redirect",
-                        "deprecated":deprecated,
-                        "visibility":"hidden"
-                    }
+                    values = id_.split(":")
+                    if len(values) == 2:
+                        t,n = values
+                        id_object[id_] = {
+                            "__typename":t.capitalize(),
+                            "id":id_,
+                            "name": "redirect",
+                            "deprecated":deprecated,
+                            "visibility":"hidden"
+                        }
+                    else:
+                        utils.error_add(filename,"failed to parse id: "+id_)
             
 
 

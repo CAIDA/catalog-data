@@ -8,12 +8,11 @@
       {"to": "dataset:caida-prefix2as"},
       {"to": "dataset:as_relationships_serial_1"},
       {"to": "dataset:peeringdb_archive"},
-      {"to": "dataset:as_organizations"}
+      {"to": "dataset:as_organizations"},
+      {"to": "software:bdrmapit"}
     ],
     "tags" : [
-      "asn",
-      "bdrmap",
-      "bdrmapit"
+      "asn"
     ],
     "authors":[
         {
