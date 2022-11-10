@@ -4,7 +4,7 @@ PUBDB_MEDIA= data/pubdb_output__presentations.json
 
 REDIRECTS_FILE=data/redirects.csv
 
-SUMMARY_URL = https://users.caida.org/~lpascual/catalog/catalog-dataset-summary.jsonl
+SUMMARY_URL = https://users.caida.org/~dataadm/catalog/catalog-dataset-summary.jsonl
 SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
 SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
 
