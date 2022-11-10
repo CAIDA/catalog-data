@@ -1,0 +1,223 @@
+{
+    "id": "ioda",
+    "name": "IODA",
+    "dateCreated":"2012-08-31",
+    "dateModified":"2021-08-31",
+    "description": "IODA is a CAIDA project to develop an operational prototype system that monitors the Internet, in near-realtime, to identify macroscopic Internet outages affecting the edge of the network, i.e., significantly impacting an AS or a large fraction of a country. As of August 2021, the IODA project has moved to Georgia Tech with PI Alberto Dainotti.",
+    "links": [
+        {
+            "to": "presentation:2019_ioda-np_paridine_final",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2019_ioda-np_aims",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2019_ioda-np_dhsst",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2019_how_find_correlated_internet_pam",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2018_who_shuts_down_internet_imaps",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2018_ioda-np_paridine",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2018/sister_pi_apr",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2017_mapping_our_way_dhsrd",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2017_mapping_our_way_iij",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2017/ioda_cns",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2017_ioda_aims",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2017_ioda_sdsc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2016_bgpstream_imc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2016_bgpstream_2016_romatre",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2016_leveraging_internet_background_radiation_kbenson",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2016_bgpstream_framework_historical_nanog",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_leveraging_internet_background_imc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_bgpstream_mplane",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_measuring_monitoring_bgp_ietf",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_lost_in_space_raim",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_bgpstream_ripe",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_bgp_stream_imc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_measuring_characterizing_ipv6_router_pam",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_ioda_fcc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2015_bgpstream_aims",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2013_monitoring_largescale_internet_outages_fcc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2013_gaining_insight_outages_tma",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2013_lessons_learned_measuring_sandy_fcc",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2013_realtime_visualization_garbage",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2013_caida_research_overview",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2012_coordinated_view_wiv",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2012_analysis_darknets_badgers",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2012_internet_outages",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2012_extract_benefit_from_harm_sigcomm_2012",
+            "label": "used by"
+        },
+        {
+            "to": "presentation:2011_analysis_internet_outages_censorship",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_blink",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2019_how_find_correlated_internet",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2017_swift",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_bgpstream",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2016_lost_in_space",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_leveraging_internet_background_radiation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2015_measuring_characterizing_ipv6_router",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_outages_censorship",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_uncovering_network_tarpits_degreaser",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_coordinated_view_internet_events",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_passive_ip_space_usage_estimation",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2013_gaining_insight_outages",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2012_extracting_benefit_from_harm",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2011_outages_censorship",
+            "label": "used by"
+        }
+    ],
+    "tags": [
+        "security",
+        "darknet",
+        "outages"
+    ],
+    "access": [
+        {
+            "url": "https://ioda.inetintel.cc.gatech.edu",
+            "tags": [
+                "webpage"
+            ],
+            "access": "public"
+        }
+    ],
+    "licenses": [
+        "license:bsd_4_clause_uc"
+    ],
+    "organization": "Georgia Institute of Technology"
+}
