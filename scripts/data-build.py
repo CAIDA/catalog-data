@@ -1420,9 +1420,9 @@ def data_load_from_summary(filename):
                 continue
             metadata = json.loads(line)
             metadata["filename"] = filename
-            dataset_id = utils.id_create(metadata["filename"], 'dataset', metadata["fileset"]) 
-            if dataset_id in id_object:
-                obj = id_object[dataset_id]
+            catalog_id = metadata["catalog_id"]
+            if catalog_id in id_object:
+                obj = id_object[catalog_id]
                 for key in ["dateStart","dateEnd","status"]:
                     if key in metadata:
                         if key in ["dateStart","dateEnd"]:
@@ -1432,7 +1432,7 @@ def data_load_from_summary(filename):
                         else:
                             obj[key] = metadata[key]
             else:
-                utils.error_add(filename, "no matching id for {}".format(dataset_id))
+                utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
 def redirects_add(filename):
     re_empty = re.compile("^\s*$")
