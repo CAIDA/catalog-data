@@ -212,7 +212,6 @@ def section_process(filename, obj, ender, name, buffer):
             if buffer is None:
                 return
 
-    print (name, len(buffer))
             
 
     if name[:5] == "tabs"+ender[0]:
