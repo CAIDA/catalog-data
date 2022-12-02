@@ -212,8 +212,6 @@ def section_process(filename, obj, ender, name, buffer):
             if buffer is None:
                 return
 
-            
-
     if name[:5] == "tabs"+ender[0]:
         if "tabs" not in obj:
             obj["tabs"] = []
