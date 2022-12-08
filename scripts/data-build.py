@@ -1342,7 +1342,8 @@ def word_scoring(obj, recursive=False):
     for word_original, weight in word_weights:
         ## Add additional word, additional to LEM, add UNIDECODED version 
         if word_original is not None: 
-            for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
+#            for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
+            for word in [word_original]:
                 if word not in word_score:
                     word_score[word] = weight
                 else:
