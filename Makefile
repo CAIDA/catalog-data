@@ -63,7 +63,7 @@ data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
 
 clean: clean_placeholders
-	rm -f id_object.json id_id_link.json word_id_score.json ${SUMMARY_FILE} ${IDS_FILE} suggestions.json
+	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} suggestions.json
 
 clean_placeholders:
 	rm -f pubdb
