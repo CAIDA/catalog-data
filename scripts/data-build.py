@@ -84,14 +84,15 @@ organization_ids = {}
 
 # Score weights
 # The score encodes that the word exist at a given level.
-SCORE_WEIGHT = {
-    "name":16,
-    "id":8,
+WORD_SCORE_WEIGHT = {
+    "name":32,
+    "id":16,
+    "category":8,
     "tags":4,
     "other":2,
     "link":1
 }
-SCORE_WEIGHT_LINK = SCORE_WEIGHT["link"]
+WORD_SCORE_WEIGHT_LINK = WORD_SCORE_WEIGHT["link"]
 id_word_score = {}
 
 personName_ids = {}
@@ -133,12 +134,16 @@ organization_ids_file = "organization_ids.json"
 personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
 
+# We will be scoring based on the depth
+category_id_depth_file = "category_id_depth.json"
+
 pubdb_links_file = "data/pubdb_links.json"
 
 filename_errors = {}
 
 # Weights used to create word scoring for search
 weight_default = 1
+temp="""
 key_weight = {
     "__typename":0,
     "id":0,
@@ -179,6 +184,7 @@ type_key_w_type_w = {
         ]
     }
 }
+"""
 
 ##################################
 # Enumrated types 
@@ -344,6 +350,13 @@ def main():
         del id_object[id_]
 
     #######################
+    # Remove keys with None values
+    #######################
+    print ("removing keys with none values")
+    for obj in id_object.values():
+        remove_keys_with_none_value(obj["filename"], None,obj)
+
+    #######################
     # checking if collection members are missing
     #######################
     print ("checking collection members ids")
@@ -426,6 +439,12 @@ def main():
             if word not in word_id_score:
                 word_id_score[word] = {}
             word_id_score[word][id_] = score;
+
+    #######################
+    # set up category depths
+    #######################
+    print ("adding categories")
+    category_id_depth = category_id_depth_build()
 
     #######################
     # Remove empty arrays 
@@ -518,6 +537,9 @@ def main():
     
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
+
+    print ("writing",category_id_depth_file)
+    json.dump(category_id_depth, open(category_id_depth_file,"w"),indent=indent)
 
     #################
     for org,ids in organization_ids.items():
@@ -654,6 +676,44 @@ def data_print():
         print ("writing",fname)
         with open (fname,"w") as f:
             f.write(json.dumps(data,indent=4, sort_keys=True))
+
+#############################
+def remove_keys_with_none_value(filename, path, obj):
+    t = type(obj)
+    if t == dict:
+        iter_ = obj.items()
+    elif t == list:
+        iter_ = enumerate(obj)
+    else:
+        iter_ = None 
+
+    if iter_ is not None:
+        nones = []
+        nested = []
+        for key, value in iter_:
+
+            if path is None:
+                path_key = key
+            else:
+                if t == dict:
+                    path_key = path+"->"+key
+                else:
+                    path_key = path+"["+str(key)+"]"
+
+            if value is None:
+                nones.append([path_key, key])
+            elif type(value) is dict or type(value) is list:
+                nested.append([path_key, value])
+
+        for path_key, key in nones:
+            utils.warning_add(filename, "none value for "+path_key)
+            if t == dict:
+                del obj[key]
+            else:
+                del obj[key:key+1]
+
+        for path_key,child in nested:
+            remove_keys_with_none_value(filename, path_key, child)
 
 #############################
 
@@ -1245,7 +1305,6 @@ def object_checker(obj):
     return True
 
 #############################
-
 ## TODO: Searches through the alias if there is a person (get ascii and non ascii )
 ## Could also check for aliases // add alias to dictionary here 
 def word_scoring(obj, recursive=False):
@@ -1256,35 +1315,54 @@ def word_scoring(obj, recursive=False):
     ## Adding words and their weights from each key 
     for key,value in obj.items():
         word_freq = word_freq_get(value)
-        if key in SCORE_WEIGHT:
-            weight = SCORE_WEIGHT[key]
+        if key in WORD_SCORE_WEIGHT:
+            weight = WORD_SCORE_WEIGHT[key]
         else:
-            weight = SCORE_WEIGHT["other"]
+            weight = WORD_SCORE_WEIGHT["other"]
         for word_original, freq in word_freq.items():
             word_weights.append([word_original, weight])
+
+    ## Adding categories from the schema
+    if "schema" in obj:
+        categories = set()
+        for table in obj["schema"]:
+            category_depth = {}
+            word_scoring_category(table, categories)
+        for category in categories:
+            word_weights.append([category, WORD_SCORE_WEIGHT["category"]],)
 
     ## Checking aliases in person and adding weights for the names
     if obj["id"].split(":")[0] == "person" and "names" in obj:
         for name in obj["names"]:
             for key in ["nameFirst", "nameLast"]:
-                if key in SCORE_WEIGHT:
-                    word_weights.append([name[key], SCORE_WEIGHT[key]])
+                if key in WORD_SCORE_WEIGHT:
+                    word_weights.append([name[key], WORD_SCORE_WEIGHT[key]])
 
     ## score up the weights for all the words
     for word_original, weight in word_weights:
         ## Add additional word, additional to LEM, add UNIDECODED version 
-        for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
-            if word not in word_score:
-                word_score[word] = weight
-            else:
-                word_score[word] = word_score[word] | weight
+        if word_original is not None: 
+#            for word in [word_original, Lem.lemmatize(word_original), unidecode.unidecode(word_original)]:
+            for word in [word_original]:
+                if word not in word_score:
+                    word_score[word] = weight
+                else:
+                    word_score[word] = word_score[word] | weight
     id_word_score[obj["id"]] = word_score
 
+def word_scoring_category(info,categories):
+    if "category" in info:
+        categories.add(info["category"])
+
+    if "properties" in info:
+        for prop in info["properties"].values():
+            word_scoring_category(prop, categories)
+        
 def word_scoring_link(w_s0, w_s1):
     for word, score in w_s1.items():
         # If the weight comes from more then a link, and it already is included in the object 
-        if score > SCORE_WEIGHT_LINK and word in w_s0:
-            w_s0[word] = w_s0[word] | SCORE_WEIGHT_LINK
+        if score > WORD_SCORE_WEIGHT_LINK and word in w_s0:
+            w_s0[word] = w_s0[word] | WORD_SCORE_WEIGHT_LINK
 
         # word_freq = word_freq_get(value)
         # 
@@ -1383,6 +1461,30 @@ def word_add_plurals():
                 plural_score[plural] += score
             else:
                 word_score[plural] = score
+
+
+#############################
+def category_id_depth_build():
+    category_id_depth = {}
+    for id_,obj in id_object.items():
+        if "schema" in obj:
+            for table in obj["schema"]:
+                category_id_depth_build_helper(id_, table, category_id_depth)
+    return category_id_depth
+
+def category_id_depth_build_helper(id_, info, category_id_depth, depth=0):
+    space = " " * (depth+1)
+    if "category" in info:
+        category = info["category"]
+        if category not in category_id_depth:
+            category_id_depth[category] = {}
+        if id_ not in category_id_depth[category]:
+            category_id_depth[category][id_] = depth
+
+    depth += 1
+    if "properties" in info:
+        for prop in info["properties"].values():
+            category_id_depth_build_helper(id_, prop, category_id_depth, depth)
 
 ###################
 #

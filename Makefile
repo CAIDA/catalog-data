@@ -32,6 +32,7 @@ readable:
 
 data: build
 build:
+		echo "scripts/data-build.py ${DATA_BUILD_OPTS}"
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py ${DATA_BUILD_OPTS}
 else
