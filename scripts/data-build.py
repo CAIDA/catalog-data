@@ -230,7 +230,8 @@ def main():
         "software",
         "media",
         "collection",
-        "venue"
+        "venue",
+        "category"
     ])
 
     #######################
@@ -443,8 +444,9 @@ def main():
     #######################
     # set up category depths
     #######################
-    print ("adding categories")
-    category_id_depth = category_id_depth_build()
+    #print ("adding categories")
+    #category_id_depth = category_id_depth_build()
+    category_id_depth = {}
 
     #######################
     # Remove empty arrays 
@@ -1469,6 +1471,35 @@ def category_id_depth_build():
     for id_,obj in id_object.items():
         if "schema" in obj:
             for table in obj["schema"]:
+                references = set()
+                if "references" in info:
+                    refs = info["references"]
+                    while i<len(refs):
+                        missing = []
+                        for key in ["category", "name_space","keys"]:
+                            if key not in ref:
+                                missing.add(key)
+                        error_found = False
+                        if len(missing) == 0:
+                            cat_id = "category:"+ref["category"]
+                            if cat_id not in id_object:
+                                utils.error_add(filename, f'table {table["title"]}references[{i}] {cat_id} not found')
+                                error_found = True
+                            else:
+                                found = False
+                                name_space = ref["name_space"]
+                                for n in id_object[cat_id]["name_spaces"]:
+                                    if n["id"] == name_space:
+                                        found = True
+                                
+                        else:
+                            error_found = True
+                            utils.error_add(filename, f'table {table["title"]}references[{i}] doesn\'t have {", ".join(mmissing)}')
+
+                        if error_found:
+                            del refs[i]
+                        i+= 1
+
                 category_id_depth_build_helper(id_, table, category_id_depth)
     return category_id_depth
 
