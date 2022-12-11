@@ -444,9 +444,8 @@ def main():
     #######################
     # set up category depths
     #######################
-    #print ("adding categories")
-    #category_id_depth = category_id_depth_build()
-    category_id_depth = {}
+    print ("processing categories")
+    category_id_depth = schema_process()
 
     #######################
     # Remove empty arrays 
@@ -1466,44 +1465,104 @@ def word_add_plurals():
 
 
 #############################
-def category_id_depth_build():
+def schema_process():
     category_id_depth = {}
     for id_,obj in id_object.items():
         if "schema" in obj:
             for table in obj["schema"]:
-                references = set()
-                if "references" in info:
-                    refs = info["references"]
-                    while i<len(refs):
-                        missing = []
-                        for key in ["category", "name_space","keys"]:
-                            if key not in ref:
-                                missing.add(key)
-                        error_found = False
-                        if len(missing) == 0:
-                            cat_id = "category:"+ref["category"]
-                            if cat_id not in id_object:
-                                utils.error_add(filename, f'table {table["title"]}references[{i}] {cat_id} not found')
-                                error_found = True
-                            else:
-                                found = False
-                                name_space = ref["name_space"]
-                                for n in id_object[cat_id]["name_spaces"]:
-                                    if n["id"] == name_space:
-                                        found = True
-                                
-                        else:
-                            error_found = True
-                            utils.error_add(filename, f'table {table["title"]}references[{i}] doesn\'t have {", ".join(mmissing)}')
+                columns = set()
+                ref_sources = []
+                table_build_refs_columns(table, ref_sources, columns)
 
-                        if error_found:
-                            del refs[i]
-                        i+= 1
+                refs = []
+                for ref_src in ref_sources:
+                    if reference_replacer(obj["filename"], ref_src["source"], ref_src["reference"], columns):
+                        refs.append(ref_src["reference"])
 
-                category_id_depth_build_helper(id_, table, category_id_depth)
+                if len(refs) > 0:
+                    table["references"] = refs
+                elif "references" in table:
+                    del table["references"]
     return category_id_depth
 
-def category_id_depth_build_helper(id_, info, category_id_depth, depth=0):
+def table_build_refs_columns(table, ref_sources, columns):
+    if "references" in table: 
+        for i,ref in enumerate(table["references"]):
+            ref_sources.append({
+                "reference":ref,
+                "source":f"references[{i}]"
+            })
+    for name,prop in table["properties"].items():
+        table_build_refs_columns_helper(name, prop, ref_sources, columns)
+
+def table_build_refs_columns_helper(name, prop, ref_sources, columns):
+
+    if "properties" in prop:
+        cols = set()
+        for n,p in prop["properties"].items():
+            if name is not None:
+                n = name+">"+n
+            table_build_refs_columns_helper(n, p, ref_sources, cols)
+    else:
+        cols = [name]
+    for col in cols:
+        columns.add(col)
+
+    if "refers_to" in prop:
+        ref = prop["refers_to"]
+        ref["columns"] = cols
+        ref_sources.append({
+            "reference":ref,
+            "source":name
+        })
+        del prop["refers_to"]
+
+def reference_replacer(filename, source, ref, columns):
+    missing = []
+    for key in ["category", "columns"]:
+        if key not in ref:
+            missing.append(key)
+
+    # Find and replace the category
+    success = True
+    if len(missing) == 0:
+        cat_id = "category:"+ref["category"]
+        if cat_id not in id_object:
+            utils.error_add(filename, f'{source} {cat_id} not found')
+            success = False
+        else:
+            ref["category"] = id_object[cat_id]
+
+
+            # Find and replace the category
+            if "namespace" in ref:
+                namespace = ref["namespace"]
+                found = False
+                if "namespaces" in id_object[cat_id]:
+                    for n in id_object[cat_id]["namespaces"]:
+                        if n["id"] == namespace:
+                            ref["namespace"] = n
+                            found = True
+                            break
+                if not found:
+                    del ref["namespace"]
+                    utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
+            # Check all the columns exist
+            for col in ref["columns"]:
+                if col not in columns:
+                    utils.error_add(filename, f'{source} columns missing {col}')
+                    success = False
+
+    else:
+        success = False
+        utils.error_add(filename, f'{source} missing ids: {", ".join(missing)}')
+
+    return success
+
+
+
+
+def other():
     space = " " * (depth+1)
     if "category" in info:
         category = info["category"]

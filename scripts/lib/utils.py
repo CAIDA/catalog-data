@@ -6,7 +6,7 @@ import json
 import yaml
 from jsonschema import validate
 
-re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
+re_id_illegal = re.compile("[^a-z^\d^A-Z\.]+")
 
 def id_create(filename, type_, id_=None):
     if id_ is None:
