@@ -51,6 +51,7 @@ import subprocess
 import lib.utils as utils
 import unidecode
 import csv
+import copy
 
 import binascii
 
@@ -1531,7 +1532,7 @@ def reference_replacer(filename, source, ref, columns):
             utils.error_add(filename, f'{source} {cat_id} not found')
             success = False
         else:
-            ref["category"] = id_object[cat_id]
+            ref["category"] = copy.deepcopy(id_object[cat_id])
 
 
             # Find and replace the category
@@ -1541,11 +1542,13 @@ def reference_replacer(filename, source, ref, columns):
                 if "namespaces" in id_object[cat_id]:
                     for n in id_object[cat_id]["namespaces"]:
                         if n["id"] == namespace:
+                            ref["namespace"] = n
                             found = True
                             break
                 if not found:
                     del ref["namespace"]
                     utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
+                del ref["category"]["namespaces"]
             # Check all the columns exist
             for col in ref["columns"]:
                 if col not in columns:
