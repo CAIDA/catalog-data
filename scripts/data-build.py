@@ -1541,7 +1541,6 @@ def reference_replacer(filename, source, ref, columns):
                 if "namespaces" in id_object[cat_id]:
                     for n in id_object[cat_id]["namespaces"]:
                         if n["id"] == namespace:
-                            ref["namespace"] = n
                             found = True
                             break
                 if not found:
