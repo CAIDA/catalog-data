@@ -1545,10 +1545,11 @@ def reference_replacer(filename, source, ref, columns):
                             ref["namespace"] = n
                             found = True
                             break
+                    del ref["category"]["namespaces"]
+
                 if not found:
                     del ref["namespace"]
                     utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
-                del ref["category"]["namespaces"]
             # Check all the columns exist
             for col in ref["columns"]:
                 if col not in columns:
