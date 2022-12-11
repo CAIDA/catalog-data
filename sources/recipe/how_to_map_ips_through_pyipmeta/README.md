@@ -40,10 +40,11 @@ The current verion of PyIPMeta is running on Python 2
 
 ## Solution
 --------------------
-This solution will be comprized of two parts; one for SWIFT datasets and one for local datasets.
+This solution will be comprized of two parts; one for local datasets (first solution) and one for SWIFT datasets (second solution). The first solution will read through local maxmind block and location datasets (more information of maxmind datasets [here](https://dev.maxmind.com/geoip/docs/databases/city-and-country?lang=en#locations-files)) and then return geolocation data from seperate file with specified IP addresses. The second solution will also return geolocation for specified IP address, but will use SWIFT datasets instead of local ones (make sure to you have proper SWIFT credentials before using this method).
 * Example files can be found [here](./solution_examples/)
-Usage:
+
 Using local files:
+`python2 local_pyipmeta.py`
 ~~~
 #!/usr/bin/env python
 
@@ -66,6 +67,7 @@ for line in open("ipnames.txt", "r"):
     print(res)
 ~~~
 Using dataset files from (SWIFT) database:
+`python2 db_pyipmeta.py`
 ~~~
 #!/usr/bin/env python
 
