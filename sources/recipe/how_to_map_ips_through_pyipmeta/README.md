@@ -4,7 +4,9 @@
     "name" : ,
     "description": ,
     "links": [
-        
+        {"to":"dataset:maxmind"}
+        {"to":"dataset:netacuity_edge"}
+        {"to":"dataset:routeviews_ipv4_prefix2as"}
     ],
     "tags" : [
         
@@ -36,7 +38,53 @@ Methods to install PyIpMeta can be found [here](https://github.com/CAIDA/pyipmet
 The current verion of PyIPMeta is running on Python 2
 * Further information on how to install PyIpMeta can be found [here](https://github.com/CAIDA/pyipmeta)
 
-## Solution: 
+## Solution
+--------------------
+This solution will be comprized of two parts; one for SWIFT datasets and one for local datasets.
+* Example files can be found [here](./solution_examples/)
+Usage:
+Using local files:
+~~~
+#!/usr/bin/env python
+
+import _pyipmeta
+import json
+
+ipm = _pyipmeta.IpMeta()
+
+# try getting a provider that exists
+prov = ipm.get_provider_by_id(1)
+
+# enables provider with local dataset
+ipm.enable_provider(prov, "-b ./maxmind/2017-03-16.GeoLiteCity-Blocks.csv.gz -l ./maxmind/2017-03-16.GeoLiteCity-Location.csv.gz")
+
+# runs geolocation on IPs specified in file
+for line in open("ipnames.txt", "r"):
+    sline = line.strip()
+    print("Querying Maxmind for an IP address " + sline + ":")
+    (res,) = ipm.lookup(sline)
+    print(res)
+~~~
+Using dataset files from (SWIFT) database:
+~~~
+#!/usr/bin/env python
+
+import pyipmeta
+
+ipm = pyipmeta.IpMeta(providers=["maxmind"], time="20191230")
+filename = "ipnames.txt"
+for line in open("ipnames.txt", "r"):
+    sline = line.strip()
+    print("Querying Maxmind for an IP address " + sline + ":")
+    (res1,) =ipm.lookup(sline) 
+    print(res1)
+    #print(res2)
+del ipm
+~~~
+
+
+
+## Key: 
 --------------------
 The follow solution describes how to use PyIpMeta to preform historical and realtime geolocation metadata lookups on IP addresses.
 
@@ -45,19 +93,31 @@ There are two ways of providing database files to PyIpMeta, either through local
 * Swift credentials can be in environment variables or stored in a `.env` file.
 * It is recommended to use `pyipmeta` for Swift datasets and `_pyipmeta` for local datasets.
 
-## Providers
+How to get SWIFT credentials and more information about the used datasets can be found here:
+* [Maxmind](https://catalog.caida.org/dataset/maxmind) datasets
+* [NetAcuity](https://catalog.caida.org/software/netacuity) datasets
+* [CAIDA's prefix two ASN (prefix2AS)](https://catalog.caida.org/dataset/routeviews_ipv4_prefix2as) datasets
+## Providers (used for local files)
 The available providers and their options are as follows:
+* An example of the use of local maxmind is shown below:
 
 maxmind:
-* -l v1 or v2 locations file -b v1 or v2 blocks file (may be repeated)
+* Blocks and Locations file (more information can be found [here](https://dev.maxmind.com/geoip/docs/databases/city-and-country?lang=en#locations-files))
+    * `-l <file>`; where the file can either be a v1 or v2 locations file (must be used with `-b`)
+    * `-b <file>`; where the file can either be a v1 or v2 blocks file (this may be repeated for multiple block files; must be used with `-b`)
 
 netacq-edge:
-* -b ipv4 blocks file (must be used with -l)
-* -l ipv4 locations file (must be used with -b)
-* -6 ipv6 file
+* Blocks and Locations file (more information can be found [here](https://www.digitalelement.com/solutions/ip-location-targeting/netacuity/))
+    * `-b <file>`; where file is an ipv4 blocks file (must be used with `-l`)
+    * `-l <file>`; where file is an ipv4 locations file (must be used with `-b`)
+* `-6 <file>`; ipv6 file
+* `-c <file>`; country decode file
+* `-r <file>`; region decode file 
+* `-p <file>`; netacq2polygon mapping file
+* `-t <file>`; polygon table file (can be used up to 8 times to specify multiple tables)
 
 pfx2as:
-* -f pfx2as file
+* `-f <file>` pfx2as file
 
 ## Examples of usage of providers:
 * Using local database files:
@@ -65,7 +125,7 @@ pfx2as:
 import _pyipmeta
 ipm = _pyipmeta.IpMeta()
 prov = ipm.get_provider_by_name("maxmind")
-ipm.enable_provider(prov, "-b ./test/maxmind/2017-03-16.GeoLiteCity-Blocks.csv.gz -l ./test/maxmind/2017-03-16.GeoLiteCity-Location.csv.gz")
+ipm.enable_provider(prov, "-b ./maxmind/2017-03-16.GeoLiteCity-Blocks.csv.gz -l ./maxmind/2017-03-16.GeoLiteCity-Location.csv.gz")
 ~~~
 * Using automatic database download feature (Swift) with specific date:
 ~~~
