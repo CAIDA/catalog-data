@@ -379,6 +379,12 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
+    #######################
+    # duplicate slide resources
+    #######################
+    #print ("duplicating slides into paper access")
+    #duplicate_slides_in_access()
+
 
     #######################
     # pubdb links
@@ -493,7 +499,6 @@ def main():
             id_words[i].add(word)
     for i,words in id_words.items():
         id_words[i] = list(words)
-
 
     #######################
     # check dataset status
@@ -1579,6 +1584,27 @@ def other():
         for prop in info["properties"].values():
             category_id_depth_build_helper(id_, prop, category_id_depth, depth)
 
+###################
+# Duplicate slide resources in access
+###################
+def duplicate_slides_in_access():
+    for obj in id_object.values():
+        if obj["__typename"] == "Paper":
+            id_ = obj["id"]
+            if id_ in id_id_link:
+                for i in id_id_link[id_].keys():
+                    o = id_object[i]
+                    if o["__typename"] == "Presentation":
+                        if "access" not in obj:
+                            obj["access"] = [ ]
+                        obj["access"].append({
+                            "access":"public"
+                            "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
+                            "tags":[ "slides"] 
+                        })
+    sys.exit()
+
+            
 ###################
 #
 ###################
