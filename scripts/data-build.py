@@ -382,8 +382,8 @@ def main():
     #######################
     # duplicate slide resources
     #######################
-    #print ("duplicating slides into paper access")
-    #duplicate_slides_in_access()
+    print ("duplicating slides into paper access")
+    duplicate_slides_in_access()
 
 
     #######################
@@ -1598,11 +1598,10 @@ def duplicate_slides_in_access():
                         if "access" not in obj:
                             obj["access"] = [ ]
                         obj["access"].append({
-                            "access":"public"
+                            "access":"public",
                             "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
                             "tags":[ "slides"] 
                         })
-    sys.exit()
 
             
 ###################
