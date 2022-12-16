@@ -1599,15 +1599,15 @@ def duplicate_slides_in_access():
         for i in id_id_link[obj["id"]].keys():
             o = id_object[i]
             if o["__typename"] == "Presentation":
-                if "access" not in obj:
-                    obj["access"] = [ ]
-                access = tag_convert(obj["filename"], {
-                    "access":"public",
-                    "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
-                    "tags":[ "slides"] 
-                })
-                print (access)
-                obj["access"].append(access)
+                for o1, o2,label in [[obj, o, "slides"], [o, obj, "paper"]]:
+                    if "access" not in o1:
+                        o1["access"] = [ ]
+                    t,n = o2["id"].split(":")
+                    o1["access"].append(tag_convert(o1["filename"], {
+                        "access":"public",
+                        "url":f"https://catalog.caida.org/{t}/{n}",
+                        "tags":[label] 
+                    }))
 
             
 ###################
