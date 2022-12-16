@@ -1600,7 +1600,7 @@ def duplicate_slides_in_access():
                         obj["access"].append({
                             "access":"public",
                             "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
-                            "tags":[ "slides"] 
+                            "tags":[ {"__typename":"Tag","id":"slides"}] 
                         })
 
             
