@@ -1608,6 +1608,18 @@ def duplicate_slides_in_access():
                         "url":f"https://catalog.caida.org/{t}/{n}",
                         "tags":[label] 
                     }))
+                if "access" in o: 
+                    for a in o["access"]:
+                        for tag in a["tags"]:
+                            if "video" in tag:
+                                if "access" not in obj:
+                                    obj["access"] = [ ]
+                                obj["access"].append({
+                                    "access":"public",
+                                    "url":a["url"],
+                                    "tags":a["tags"]
+                                })
+
 
             
 ###################
