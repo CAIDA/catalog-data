@@ -26,8 +26,20 @@ Another Jupyter notebook with code segments that do the following:
 
 ### 20220801.gained_from_5511.txt
 
-A filtered list of paths produced by `filter_paths.ipynb`; it's all of the paths that contain ASNs that appeared in AS5511's customer cone between June and August 2022
+A filtered list of paths produced by `filter_paths.ipynb`; it consists of all of the paths that contain ASNs that appeared in AS5511's customer cone between June and August 2022. 
 
-### 20220801.lost_from_3257.txt
+Files used as input:
 
-Another filtered list of paths; ones containing ASNs lost from AS3257's cone from August to September 2022 (I think I need to fix the name)
+- `20220601.ppdc-ases.txt`
+- `20220801.ppdc-ases.txt`
+- `20220801.all-paths`
+
+### 20220901.lost_from_3257.txt
+
+Another filtered list of paths from `filter_paths.ipynb`; consists of all paths containing ASNs lost from AS3257's cone from August to September 2022.
+
+Files used as input:
+
+- `20220801.ppdc-ases.txt`
+- `20220901.ppdc-ases.txt`
+- `20220801.all-paths`
