@@ -1588,20 +1588,26 @@ def other():
 # Duplicate slide resources in access
 ###################
 def duplicate_slides_in_access():
+    objs = []
     for obj in id_object.values():
         if obj["__typename"] == "Paper":
             id_ = obj["id"]
             if id_ in id_id_link:
-                for i in id_id_link[id_].keys():
-                    o = id_object[i]
-                    if o["__typename"] == "Presentation":
-                        if "access" not in obj:
-                            obj["access"] = [ ]
-                        obj["access"].append({
-                            "access":"public",
-                            "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
-                            "tags":[ "slides"] 
-                        })
+                objs.append(obj)
+
+    for obj in objs:
+        for i in id_id_link[obj["id"]].keys():
+            o = id_object[i]
+            if o["__typename"] == "Presentation":
+                if "access" not in obj:
+                    obj["access"] = [ ]
+                access = tag_convert(obj["filename"], {
+                    "access":"public",
+                    "url":"https://catalog.caida.org/personatation/"+i.split(":")[1],
+                    "tags":[ "slides"] 
+                })
+                print (access)
+                obj["access"].append(access)
 
             
 ###################
