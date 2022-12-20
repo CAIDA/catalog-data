@@ -272,8 +272,12 @@ def main():
 
 
     print ("processing obj")
+    object_finished = set()
     for obj in list(id_object.values()):
-        object_finish(obj)
+        id_ = obj["id"]
+        if id_ not in object_finished:
+            object_finish(obj)
+            object_finished.add(id_)
 
     if not args.dates_skip:
         print ("adding dates ( skipping '*___*' )")
@@ -758,6 +762,14 @@ def object_add(type_, info):
 
     if not error:
         id_object[info["id"]] = info
+        if "id_short" in info:
+            id_short = utils.id_create(info["filename"], info["__typename"], info["id_short"])
+            if id_short not in id_object:
+                id_object[id_short] = info 
+            else:
+                utils.error_add(info["filename"], f'{id_object["id"]}\'s id_short "{id_short}" already used')
+                del info["id_short"]
+
         return info
     print("line 611, error in object add for ", info["id"])
     return None
@@ -1475,114 +1487,116 @@ def schema_process():
     category_id_depth = {}
     for id_,obj in id_object.items():
         if "schema" in obj:
-            for table in obj["schema"]:
-                columns = set()
-                ref_sources = []
-                table_build_refs_columns(table, ref_sources, columns)
+            for i, table in enumerate(obj["schema"]):
+                table_name = f"table[{i}]"
+                columns = {}
+                table_build_refs_columns(obj["filename"], table_name, table, columns)
 
-                refs = []
-                for ref_src in ref_sources:
-                    if reference_replacer(obj["filename"], ref_src["source"], ref_src["reference"], columns):
-                        refs.append(ref_src["reference"])
+                if "references" in table:
+                    refs = table["references"]
+                    if type(refs) == dict:
+                        refs = [refs]
 
-                if len(refs) > 0:
-                    table["references"] = refs
-                elif "references" in table:
-                    del table["references"]
+                    refs_clean = []
+                    for ref in refs:
+                        if reference_columns_replacer(obj["filename"], table_name, ref, columns):
+                            refs_clean.append(ref)
+
+                    if len(refs_clean) > 0:
+                        table["references"] = refs_clean
+                    else:
+                        del table["references"]
     return category_id_depth
 
-def table_build_refs_columns(table, ref_sources, columns):
-    if "references" in table: 
-        for i,ref in enumerate(table["references"]):
-            ref_sources.append({
-                "reference":ref,
-                "source":f"references[{i}]"
-            })
-    for name,prop in table["properties"].items():
-        table_build_refs_columns_helper(name, prop, ref_sources, columns)
 
-def table_build_refs_columns_helper(name, prop, ref_sources, columns):
+def table_build_refs_columns(filename, table_name, table, columns):
+    if "properties" in table:
+        for n,prop in table["properties"].items():
+            table_build_refs_columns_helper(filename, table_name, n, prop, columns)
+
+def table_build_refs_columns_helper(filename, table_name, name, prop, columns):
+    columns[name] = prop
 
     if "properties" in prop:
-        cols = set()
+        i = 0
         for n,p in prop["properties"].items():
-            if name is not None:
-                n = name+">"+n
-            table_build_refs_columns_helper(n, p, ref_sources, cols)
-    else:
-        cols = [name]
-    for col in cols:
-        columns.add(col)
+            table_build_refs_columns_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, columns)
+            i += 1
 
     if "refers_to" in prop:
-        ref = prop["refers_to"]
-        ref["columns"] = cols
-        ref_sources.append({
-            "reference":ref,
-            "source":name
-        })
-        del prop["refers_to"]
+        if not reference_replacer(filename, table_name+"."+name, prop["refers_to"]):
+            del prop["refers_to"]
 
-def reference_replacer(filename, source, ref, columns):
+def reference_replacer(filename, source, ref):
     missing = []
-    for key in ["category", "columns"]:
-        if key not in ref:
-            missing.append(key)
+    if "category" not in ref:
+        utils.error_add(filename, f'{source} must have category')
+        return False 
 
     # Find and replace the category
-    success = True
-    if len(missing) == 0:
-        cat_id = "category:"+ref["category"]
-        if cat_id not in id_object:
-            utils.error_add(filename, f'{source} {cat_id} not found')
-            success = False
+    cat_id = "category:"+ref["category"]
+    if cat_id not in id_object:
+        utils.error_add(filename, f"{source}'s {cat_id} not found")
+        return False 
+        
+    cat = ref["category"] = copy.deepcopy(id_object[cat_id])
+    for key in ["filename","num_links_not_tag"]:
+        if key in cat:
+            del cat[key]
+    if "tags" in cat and len(cat["tags"]) == 0:
+        del cat["tags"]
+
+    # Find and replace the category
+    if "namespace" in ref:
+        namespace = ref["namespace"]
+        found = False
+        if "namespaces" in id_object[cat_id]:
+            for n in id_object[cat_id]["namespaces"]:
+                if n["id"] == namespace:
+                    ref["namespace"] = n
+                    found = True
+                    break
+            del ref["category"]["namespaces"]
+
+        if not found:
+            del ref["namespace"]
+            utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
+    return True
+
+def reference_columns_replacer(filename, source, ref, columns):
+    print (ref)
+
+    if not reference_replacer(filename, source, ref):
+        return False 
+
+    # must have both category and columns 
+    if "columns" not in ref:
+        utils.error_add(filename, f'{source} missing columns')
+        return  False 
+
+    # Check all the columns exist
+    missing = []
+    for col in ref["columns"]:
+        if col not in columns:
+            missing.append(col)
+    if "columns" not in ref:
+        utils.error_add(filename, f'{source} unmatched columns: {", ".join(missing)}')
+        return False 
+
+    # If there is a single column, move the reference to that location
+    if len(ref["columns"]) == 1:
+        col_name = ref["columns"][0]
+        col = columns[col_name]
+        if "refers_to" in col:
+            utils.error_add(filename, f'{source}\'s {col_name} in both references and has refers_to\n'+
+                +'\tdiscarding references\' reference') 
         else:
-            ref["category"] = copy.deepcopy(id_object[cat_id])
+            del ref["columns"]
+            col["refers_to"] = ref
+        print (col_name, col)
+        return False 
 
-
-            # Find and replace the category
-            if "namespace" in ref:
-                namespace = ref["namespace"]
-                found = False
-                if "namespaces" in id_object[cat_id]:
-                    for n in id_object[cat_id]["namespaces"]:
-                        if n["id"] == namespace:
-                            ref["namespace"] = n
-                            found = True
-                            break
-                    del ref["category"]["namespaces"]
-
-                if not found:
-                    del ref["namespace"]
-                    utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
-            # Check all the columns exist
-            for col in ref["columns"]:
-                if col not in columns:
-                    utils.error_add(filename, f'{source} columns missing {col}')
-                    success = False
-
-    else:
-        success = False
-        utils.error_add(filename, f'{source} missing ids: {", ".join(missing)}')
-
-    return success
-
-
-
-
-def other():
-    space = " " * (depth+1)
-    if "category" in info:
-        category = info["category"]
-        if category not in category_id_depth:
-            category_id_depth[category] = {}
-        if id_ not in category_id_depth[category]:
-            category_id_depth[category][id_] = depth
-
-    depth += 1
-    if "properties" in info:
-        for prop in info["properties"].values():
-            category_id_depth_build_helper(id_, prop, category_id_depth, depth)
+    return True
 
 ###################
 # Duplicate slide resources in access
