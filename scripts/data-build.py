@@ -1490,45 +1490,59 @@ def schema_process():
         if "schema" in obj:
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
-                columns = {}
-                table_build_refs_columns(obj["filename"], table_name, table, columns)
 
                 if "references" in table:
                     refs = table["references"]
                     if type(refs) == dict:
                         refs = [refs]
+                else:
+                    refs = []
 
-                    refs_clean = []
-                    for ref in refs:
-                        if reference_columns_replacer(obj["filename"], table_name, ref, columns):
-                            refs_clean.append(ref)
+                columns = []
+                table_build_refs_columns(obj["filename"], table_name, table, refs, columns)
 
-                    if len(refs_clean) > 0:
-                        table["references"] = refs_clean
+                refs_clean = []
+                for ref in refs:
+                    if "_source" in ref:
+                        source = ref["_source"]
+                        del ref["_source"]
                     else:
-                        del table["references"]
+                        source = table_name
+                    if reference_update(obj["filename"], source, ref, columns):
+                        refs_clean.append(ref)
+
+                if len(refs_clean) > 0:
+                    table["references"] = refs_clean
+                elif "references" in table:
+                    del table["references"]
     return category_id_depth
 
 
-def table_build_refs_columns(filename, table_name, table, columns):
+def table_build_refs_columns(filename, table_name, table, refs, columns):
     if "properties" in table:
         for n,prop in table["properties"].items():
-            table_build_refs_columns_helper(filename, table_name, n, prop, columns)
+            table_build_refs_columns_helper(filename, table_name, n, prop, refs, columns)
 
-def table_build_refs_columns_helper(filename, table_name, name, prop, columns):
-    columns[name] = prop
+def table_build_refs_columns_helper(filename, table_name, name, prop, refs, columns):
 
     if "properties" in prop:
+        cols = []
         i = 0
         for n,p in prop["properties"].items():
-            table_build_refs_columns_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, columns)
+            table_build_refs_columns_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, refs, cols)
             i += 1
+    else:
+        cols = [name]
+    columns.extend(cols)
 
     if "refers_to" in prop:
-        if not reference_replacer(filename, table_name+"."+name, prop["refers_to"]):
-            del prop["refers_to"]
+        ref = prop["refers_to"]
+        ref["columns"] = cols
+        ref["_source"] = f"{table_name} {name}"
+        refs.append(ref)
+        del prop["refers_to"]
 
-def reference_replacer(filename, source, ref):
+def category_replacer(filename, source, ref):
     missing = []
     if "category" not in ref:
         utils.error_add(filename, f'{source} must have category')
@@ -1564,8 +1578,8 @@ def reference_replacer(filename, source, ref):
             utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
     return True
 
-def reference_columns_replacer(filename, source, ref, columns):
-    if not reference_replacer(filename, source, ref):
+def reference_update(filename, source, ref, columns):
+    if not category_replacer(filename, source, ref):
         return False 
 
     # must have both category and columns 
@@ -1578,21 +1592,8 @@ def reference_columns_replacer(filename, source, ref, columns):
     for col in ref["columns"]:
         if col not in columns:
             missing.append(col)
-    if "columns" not in ref:
+    if len(missing) > 0:
         utils.error_add(filename, f'{source} unmatched columns: {", ".join(missing)}')
-        return False 
-
-    # If there is a single column, move the reference to that location
-    if len(ref["columns"]) == 1:
-        col_name = ref["columns"][0]
-        col = columns[col_name]
-        if "refers_to" in col:
-            utils.error_add(filename, f'{source}\'s {col_name} in both references and has refers_to\n'+
-                +'\tdiscarding references\' reference') 
-        else:
-            del ref["columns"]
-            col["refers_to"] = ref
-        print (col_name, col)
         return False 
 
     return True
