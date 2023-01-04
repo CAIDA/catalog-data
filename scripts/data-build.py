@@ -717,7 +717,7 @@ def remove_keys_with_none_value(filename, path, obj):
                 nested.append([path_key, value])
 
         for path_key, key in nones:
-            if path_key is not None:
+            if path_key is not None and path_key != "date":
                 utils.warning_add(filename, "none value for "+path_key)
             if t == dict:
                 del obj[key]

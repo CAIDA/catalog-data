@@ -6,6 +6,7 @@
     "namespaces":[
         {
             "id":"paired_asn",
+            "id_short":"asn+asn",
             "name":"Paired ASNs"
         }
     ]
