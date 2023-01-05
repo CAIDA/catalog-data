@@ -5,6 +5,7 @@
     "namespaces":[
         {
             "id":"iana.asn",
+            "id_short":"number",
             "name":"IANA ASN Space",
             "url":"https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
         }
