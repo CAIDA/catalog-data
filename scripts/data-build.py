@@ -427,6 +427,12 @@ def main():
                 access_word_ids[word].append(obj["id"])
 
     #######################
+    # set up category depths
+    #######################
+    print ("processing categories")
+    category_id_depth = schema_process()
+
+    #######################
     # parse out the words from the fields
     #######################
     print ("adding words")
@@ -451,12 +457,6 @@ def main():
             if word not in word_id_score:
                 word_id_score[word] = {}
             word_id_score[word][id_] = score;
-
-    #######################
-    # set up category depths
-    #######################
-    print ("processing categories")
-    category_id_depth = schema_process()
 
     #######################
     # Remove empty arrays 
@@ -1344,12 +1344,11 @@ def word_scoring(obj, recursive=False):
 
     ## Adding categories from the schema
     if "schema" in obj:
-        categories = set()
+        cat_words = set()
         for table in obj["schema"]:
-            category_depth = {}
-            word_scoring_category(table, categories)
-        for category in categories:
-            word_weights.append([category, WORD_SCORE_WEIGHT["category"]],)
+            word_scoring_category_key(table,cat_words)
+        for word in cat_words:
+            word_weights.append([word, WORD_SCORE_WEIGHT["category"]],)
 
     ## Checking aliases in person and adding weights for the names
     if obj["id"].split(":")[0] == "person" and "names" in obj:
@@ -1370,13 +1369,22 @@ def word_scoring(obj, recursive=False):
                     word_score[word] = word_score[word] | weight
     id_word_score[obj["id"]] = word_score
 
-def word_scoring_category(info,categories):
+def word_scoring_category_key(info,cat_words):
     if "category" in info:
-        categories.add(info["category"])
+        cat_words.add(info["category"])
 
-    if "properties" in info:
-        for prop in info["properties"].values():
-            word_scoring_category(prop, categories)
+    if "category_keys" in info:
+        for cat_key in info["category_keys"]:
+            for key in ["category","namespace"]:
+                if key in cat_key:
+                    cat = cat_key[key]
+                    if type(cat) is dict:
+                        for k in ["id","id_short","name"]:
+                            if k in cat:
+                                w = cat[k]
+                                if "category:" in w:
+                                    w = w[9:]
+                                cat_words.add(w)
         
 def word_scoring_link(w_s0, w_s1):
     for word, score in w_s1.items():
@@ -1491,15 +1499,15 @@ def schema_process():
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
 
-                if "references" in table:
-                    refs = table["references"]
+                if "category_keys" in table:
+                    refs = table["category_keys"]
                     if type(refs) == dict:
                         refs = [refs]
                 else:
                     refs = []
 
-                columns = []
-                table_build_refs_columns(obj["filename"], table_name, table, refs, columns)
+                properties = []
+                table_build_refs_properties(obj["filename"], table_name, table, refs, properties)
 
                 refs_clean = []
                 for ref in refs:
@@ -1508,39 +1516,39 @@ def schema_process():
                         del ref["_source"]
                     else:
                         source = table_name
-                    if reference_update(obj["filename"], source, ref, columns):
+                    if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
 
                 if len(refs_clean) > 0:
-                    table["references"] = refs_clean
-                elif "references" in table:
-                    del table["references"]
+                    table["category_keys"] = refs_clean
+                elif "category_keys" in table:
+                    del table["category_keys"]
     return category_id_depth
 
 
-def table_build_refs_columns(filename, table_name, table, refs, columns):
+def table_build_refs_properties(filename, table_name, table, refs, properties):
     if "properties" in table:
         for n,prop in table["properties"].items():
-            table_build_refs_columns_helper(filename, table_name, n, prop, refs, columns)
+            table_build_refs_properties_helper(filename, table_name, n, prop, refs, properties)
 
-def table_build_refs_columns_helper(filename, table_name, name, prop, refs, columns):
+def table_build_refs_properties_helper(filename, table_name, name, prop, refs, properties):
 
     if "properties" in prop:
-        cols = []
+        props = []
         i = 0
         for n,p in prop["properties"].items():
-            table_build_refs_columns_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, refs, cols)
+            table_build_refs_properties_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, refs, props)
             i += 1
     else:
-        cols = [name]
-    columns.extend(cols)
+        props = [name]
+    properties.extend(props)
 
-    if "refers_to" in prop:
-        ref = prop["refers_to"]
-        ref["columns"] = cols
+    if "category_key" in prop:
+        ref = prop["category_key"]
+        ref["properties"] = props
         ref["_source"] = f"{table_name} {name}"
         refs.append(ref)
-        del prop["refers_to"]
+        del prop["category_key"]
 
 def category_replacer(filename, source, ref):
     missing = []
@@ -1578,20 +1586,20 @@ def category_replacer(filename, source, ref):
             utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
     return True
 
-def reference_update(filename, source, ref, columns):
+def reference_update(filename, source, ref, properties):
     if not category_replacer(filename, source, ref):
         return False 
 
     # must have both category and columns 
-    if "columns" not in ref:
-        utils.error_add(filename, f'{source} missing columns')
+    if "properties" not in ref:
+        utils.error_add(filename, f'{source} missing properties')
         return  False 
 
-    # Check all the columns exist
+    # Check all the properties exist
     missing = []
-    for col in ref["columns"]:
-        if col not in columns:
-            missing.append(col)
+    for prop in ref["properties"]:
+        if prop not in properties:
+            missing.append(prop)
     if len(missing) > 0:
         utils.error_add(filename, f'{source} unmatched columns: {", ".join(missing)}')
         return False 
