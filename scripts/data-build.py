@@ -1529,24 +1529,26 @@ def schema_process():
 def table_build_refs_properties(filename, table_name, table, refs, properties):
     if "properties" in table:
         for n,prop in table["properties"].items():
-            table_build_refs_properties_helper(filename, table_name, n, prop, refs, properties)
+            table_build_refs_properties_helper(filename, table_name, [n], prop, refs, properties)
 
-def table_build_refs_properties_helper(filename, table_name, name, prop, refs, properties):
+def table_build_refs_properties_helper(filename, table_name, names, prop, refs, properties):
 
     if "properties" in prop:
         props = []
         i = 0
         for n,p in prop["properties"].items():
-            table_build_refs_properties_helper(filename, table_name+f'.references[{i}]', name+">"+n, p, refs, props)
+            names_copy = names.copy()
+            names_copy.append(n)
+            table_build_refs_properties_helper(filename, table_name+f'.references[{i}]', names_copy, p, refs, props)
             i += 1
     else:
-        props = [name]
+        props = [names]
     properties.extend(props)
 
     if "category_key" in prop:
         ref = prop["category_key"]
         ref["properties"] = props
-        ref["_source"] = f"{table_name} {name}"
+        ref["_source"] = f"{table_name} {'>'.join(names)}"
         refs.append(ref)
         del prop["category_key"]
 
