@@ -1495,6 +1495,7 @@ def word_add_plurals():
 def schema_process():
     category_id_depth = {}
     for id_,obj in id_object.items():
+        category_namespaces = {}
         if "schema" in obj:
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
@@ -1519,10 +1520,23 @@ def schema_process():
                     if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
 
+                        c_n = ref["category"]["id"]+"+"+ref["namespace"]["id"]
+                        if c_n not in category_namespaces:
+                            category_namespaces[c_n] = {
+                                "category":ref["category"],
+                                "namespace":ref["namespace"]
+                            }
+
+
                 if len(refs_clean) > 0:
                     table["category_keys"] = refs_clean
                 elif "category_keys" in table:
                     del table["category_keys"]
+        if len(category_namespaces) > 0:
+            objs = [ ]
+            for c_n_key,c_n in (sorted(category_namespaces.items())):
+                objs.append(c_n)
+            obj["category_namespaces"] =  objs
     return category_id_depth
 
 
