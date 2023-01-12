@@ -1,0 +1,29 @@
+
+{
+    "id": "caida_whois_dumps",
+    "name": "CAIDA WHOIS Dumps",
+    "organization": "CAIDA",
+    "description": "CAIDA's WHOIS dumps archive, a general outline of files in this dataset can be found below:\\n  (date).(RIR name).db.gz is a dump of the named RIR's whois dump\\n  (date).delegated-(RIR name).txt.gz is the RIR delegation files\\n  (date).delegated-(RIR name)-extended.txt.gz is the RIR extended delegation files\\n  (date).iana.as-numbers.(txt/xml).gz is IANA's autonomous system number allocations to RIRs\\n  (date).iana.(ipv4/ipv6)-address-space.(txt/xml).gz is the ipv4/ipv6 address space registry\\n  (date).potaroo.autnum.txt.gz is a list of AS numbers and names\\n  ",
+    "dateStart": "2003.07",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "restricted"
+        }
+    ],
+    "tags": [
+        "whois"
+    ],
+    "resources": [
+        {
+            "name": "contact data-info@caida.org",
+            "url": "emailto:data-info@caida.org"
+        }
+    ],
+    "links": [
+        {
+            "to": "https://catalog.caida.org/details/media/ipv4_history_viz_interactive",
+            "label": "used by"
+        }
+    ]
+}
