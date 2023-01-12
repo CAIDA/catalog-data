@@ -33,16 +33,17 @@ location.coordindate	lat_lon	Latitude and Longitude			usdod.wgs84	wgs84	World Ge
 								longitude		
 location.airport	airport	Airports			iata.airport_alpha2	iata2	IATA airport code city	code		https://www.iata.org/en/publications/directories/code-search/
 					icao.airport_alpha3	iata3	ICAO airport code city	code		https://www.iata.org/en/publications/directories/code-search/
-location.address	address	Street Address			street_addresses	street		address city region country		
+location.address	address	Street Address			street_addresses	street		address; city; region; country		
 location.postal_code	postal	Postal Code 			postal_code	code		code		
 location.city	city	City			geonames.city_name	geoname	Geonames City names	name		
 					iata.alpha2	iata2	IATA airport codes city	code		https://www.iata.org/en/publications/directories/code-search/
-					address-postal_code-city-region-country	street		code street city region country		
+					address-postal_code-city-region-country	street		code; street; city; region; country		
 					netacuity.city_name	netac.name	Digital Element Netacuity city names	name		https://www.digitalelement.com/solutions/ip-location-targeting/
 					netacuity.city_id	netac.id	Digital Element Netacuity unique id	id		https://www.digitalelement.com/solutions/ip-location-targeting/
 					peeringdb.city_name	pf.name	PeeringDB city name	name		
 location.region	region	Region			iso.region_alpha2	ios2		code		
 location.country	country	Country			geonames.name	name	Geonames Country names	name		http://download.geonames.org/export/dump/
+					name-country_iso2		Name and Country ISO 2 	name; country		
 					iso.alpha2	iso2	ISO 3166-1 alpha-2	code		https://www.iso.org/iso-3166-country-codes.html
 					iso.alpha3	iso3	ISO 3166-1 alpha-3	code	ISO 3166-1 alpha-2 codes are two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard[1] published by the International Organization for Standardization (ISO), to represent countries, dependent territories, and special areas of geographical interest. They	https://www.iso.org/iso-3166-country-codes.html
 location.country.capital	capital	Country Capital			geonames.capital	name	Geonames Capital names	name		http://download.geonames.org/export/dump/

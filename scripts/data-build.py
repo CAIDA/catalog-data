@@ -1800,7 +1800,6 @@ def schema_load_category_from_file(fname):
                 while i < len(values):
                     if i == 0:
                         if category is not None:
-                            print (json.dumps(category,indent=4))
                             object_add("category", category)
                         category = {
                             "filename":fname,
@@ -1818,7 +1817,6 @@ def schema_load_category_from_file(fname):
                                 category["namespaces"].append(namespace)
                             if key == "attributes":
                                 value = re.split("\s*;\s*", value)
-                                print (value)
                             namespace[key] = value
                     i += 1
         if category is not None:
