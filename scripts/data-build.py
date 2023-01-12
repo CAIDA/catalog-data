@@ -64,6 +64,8 @@ parser = argparse.ArgumentParser(description='Collections metadata of bgpstream 
 parser.add_argument('-s', '--summary', dest='summary_file', help='Summary file to read additional metadata in', required=True)
 parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of redirects')
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
+parser.add_argument("-c", dest="schema_category_file", help="data schema categories", type=str)
+parser.add_argument("-d", dest="schema_dataset_file", help="data schema datasets", type=str)
 parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
 parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
@@ -426,6 +428,18 @@ def main():
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
 
+    ######################
+    # Load data schema for categories from file
+    ######################
+    print ("Adding schema's categories from",args.schema_category_file)
+    schema_load_category_from_file(args.schema_category_file)
+
+    ######################
+    # Load data schema for datasets from file
+    ######################
+    print ("Adding schemas from",args.schema_dataset_file)
+    schema_load_schema_from_file(args.schema_dataset_file)
+
     #######################
     # set up category depths
     #######################
@@ -765,11 +779,14 @@ def object_add(type_, info):
         id_object[info["id"]] = info
         if "id_short" in info:
             id_short = utils.id_create(info["filename"], info["__typename"], info["id_short"])
-            if id_short not in id_object:
-                id_object[id_short] = info 
-            else:
-                utils.error_add(info["filename"], f'{id_object["id"]}\'s id_short "{id_short}" already used')
-                del info["id_short"]
+            if id_short != info["id"]:
+                if id_short not in id_object:
+                    id_object[id_short] = info 
+                else:
+                    utils.error_add(info["filename"], f'{id_object["id"]}\'s id_short "{id_short}" already used')
+                    del info["id_short"]
+        elif type_ == "category":
+            info["id_short"] = info["id"]
 
         return info
     print("line 611, error in object add for ", info["id"])
@@ -1517,6 +1534,7 @@ def schema_process():
                         del ref["_source"]
                     else:
                         source = table_name
+
                     if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
 
@@ -1600,6 +1618,7 @@ def category_replacer(filename, source, ref):
         if not found:
             del ref["namespace"]
             utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
+            return False
     return True
 
 def reference_update(filename, source, ref, properties):
@@ -1753,5 +1772,99 @@ def redirects_add(filename):
                         utils.error_add(filename,"failed to parse id: "+id_)
             
 
+######################################33
+# Load Schema and Categories from file
+def schema_load_category_from_file(fname):
+    re_namespace = re.compile("namespace",re.IGNORECASE)
+    re_empty = re.compile("^\s*$")
+    with open(fname) as fin:
+        keys = None
+        namespace_index = None
+        category = None
+        for line in fin:
+            values = line.rstrip().split("\t")
+            if namespace_index is None:
+                for i, value in enumerate(values):
+                    if re_namespace.search(value):
+                        namespace_index = i
+                        break
+                if namespace_index is None:
+                    utils.error(fname, "Failed to find Namespace on first line")
+            elif keys is None:
+                keys = values
+            else:
+                if re_empty.search(values[0]):
+                    i = namespace_index
+                else:
+                    i = 0
+                while i < len(values):
+                    if i == 0:
+                        if category is not None:
+                            print (json.dumps(category,indent=4))
+                            object_add("category", category)
+                        category = {
+                            "filename":fname,
+                            "namespaces":[]
+                        }
+
+                    key = keys[i]
+                    value = values[i]
+                    if not re_empty.search(value):
+                        if i < namespace_index:
+                            category[key] = value
+                        else:
+                            if i == namespace_index:
+                                namespace = {}
+                                category["namespaces"].append(namespace)
+                            if key == "attributes":
+                                value = re.split("\s*;\s*", value)
+                                print (value)
+                            namespace[key] = value
+                    i += 1
+        if category is not None:
+            object_add("category",category)
+
+def schema_load_schema_from_file(fname):
+    pass
+    temp="""
+    re_empty = re.compile("^\s*$")
+    with open(fname) as fin:
+        keys = None
+        dataset = None
+
+        for line in fin:
+            values = line.rstrip().split("\t")
+            if keys is None:
+                keys = values
+            else:
+                if dataset is not None:
+
+                if re_empty.search(values[0]):
+                    i = namespace_index
+                else:
+                    i = 0
+                while i < len(values):
+                    if i == 0:
+                        if category is not None:
+                            print (json.dumps(category,indent=4))
+                            object_add("category", category)
+                        category = {
+                            "filename":fname,
+                            "namespaces":[]
+                        }
+
+                    key = keys[i]
+                    value = values[i]
+                    if not re_empty.search(value):
+                        if i < namespace_index:
+                            category[key] = value
+                        else:
+                            if i == namespace_index:
+                                namespace = {}
+                                category["namespaces"].append(namespace)
+                            namespace[key] = value
+                    i += 1
+        if category is not None:
+            object_add("category",category)"""
 
 main()

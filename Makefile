@@ -18,7 +18,16 @@ START=`date -r t +%s`
 END=`date +%s`
 ((DIFF=${START}+${END}))
 
-DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE}
+
+###### DAta Schema files
+DATA_SCHEMA_DATASETS=data/data-schema-datasets.tsv
+DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ Datasets\ -\ Sheet1.tsv 
+DATA_SCHEMA_CATEGORIES=data/data-schema-categories.tsv
+DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Data\ Schema\ Categories\ -\ Sheet1.tsv 
+
+#########
+
+DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
 run:clean_placeholders pubdb external caida summary build suggestions
 
@@ -32,6 +41,12 @@ readable:
 
 data: build
 build:
+		if [ -f ${DATA_SCHEMA_DATASETS_SRC} ]; then \
+			mv ${DATA_SCHEMA_DATASETS_SRC} ${DATA_SCHEMA_DATASETS} ; \
+		fi
+		if [ -f ${DATA_SCHEMA_CATEGORIES_SRC} ]; then \
+			mv ${DATA_SCHEMA_CATEGORIES_SRC} ${DATA_SCHEMA_CATEGORIES} ; \
+		fi
 		echo "scripts/data-build.py ${DATA_BUILD_OPTS}"
 ifneq ("$(wildcard $(CATALOG_DATA_CAIDA_PATH))","")
 		python3 scripts/data-build.py ${DATA_BUILD_OPTS}
@@ -61,6 +76,8 @@ suggestions.json: scripts/suggestions.py data/suggestions.json
 # This was used to backfill historic papers and presentations
 data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
+
+
 
 clean: clean_placeholders
 	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} suggestions.json
