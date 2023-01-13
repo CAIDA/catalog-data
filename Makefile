@@ -5,8 +5,8 @@ PUBDB_MEDIA= data/pubdb_output__presentations.json
 REDIRECTS_FILE=data/redirects.csv
 
 SUMMARY_URL = https://users.caida.org/~dataadm/catalog/catalog-dataset-summary.jsonl
-SUMMARY_LOCAL_FILE = data/catalog-dataset-summary.jsonl
-SUMMARY_FILE = data/_catalog-dataset-summary.jsonl
+SUMMARY_BACKUP_FILE = data/catalog-dataset-summary-backup.jsonl
+SUMMARY_FILE = data/catalog-dataset-summary.jsonl
 
 URL=https://api.catalog.caida.org/v2/graphql
 IDS_FILE=data/_ids.txt
@@ -56,7 +56,7 @@ else
 endif
 
 summary:
-	python3 scripts/catalog-dataset-summary-download.py -O ${SUMMARY_FILE} -l ${SUMMARY_LOCAL_FILE} ${SUMMARY_URL}
+	python3 scripts/catalog-dataset-summary-download.py -O ${SUMMARY_FILE} -b ${SUMMARY_BACKUP_FILE} ${SUMMARY_URL}
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py ${PUBDB_PAPER} ${PUBDB_MEDIA}
 	python3 scripts/pubdb_placeholder.py -p ${PUBDB_PAPER} -m ${PUBDB_MEDIA}

@@ -1073,31 +1073,31 @@ def personName_add(obj, person_id):
             personName_ids[name] = set()
         personName_ids[name].add(i)
 
-def link_add(obj,info,p=False):
+def link_add(obj,link,p=False):
 
     a = []
     for k in ["from","to"]:
-        if type(info) == str:
-            a = [info]
+        if type(link) == str:
+            a = [link]
         else:
-            if k in info:
-                a.append(info[k]);
+            if k in link:
+                a.append(link[k]);
     
-    if type(info) == str:
-        id_original = info
-        id_new = utils.id_create(obj["filename"],None,info)
-        info = { "from":obj["id"], "to":id_new }
+    if type(link) == str:
+        id_original = link
+        id_new = utils.id_create(obj["filename"],None,link)
+        link = { "from":obj["id"], "to":id_new }
     else:
-        if "to" in info:
-            info["from"] = obj["id"]
-            id_original = info["to"]
-            id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
-        elif "from" in info:
-            info["to"] = obj["id"]
-            id_original = info["from"]
-            id_new = info["from"] = utils.id_create(obj["filename"],None,info["from"])
+        if "to" in link:
+            link["from"] = obj["id"]
+            id_original = link["to"]
+            id_new = link["to"] = utils.id_create(obj["filename"],None,link["to"])
+        elif "from" in link:
+            link["to"] = obj["id"]
+            id_original = link["from"]
+            id_new = link["from"] = utils.id_create(obj["filename"],None,link["from"])
         else:
-            utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
+            utils.error_add(obj["filename"],"link has no from or to"+json.dumps(link))
             return None
 
     if id_new is None:
@@ -1110,24 +1110,24 @@ def link_add(obj,info,p=False):
         return None
 
 
-    if info["from"] == info["to"]:
-        utils.warning_add(obj["filename"], "can't link to itself: "+info["from"])
+    if link["from"] == link["to"]:
+        utils.warning_add(obj["filename"], "can't link to itself: "+link["from"])
         return None
 
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
-        a_id = info[a]
-        b_id = info[b]
-        link = {
+        a_id = link[a]
+        b_id = link[b]
+        l = {
             "from":a_id,
             "to":b_id
             }
-        if a+"_label" in info:
-            link["from_label"] = info[a+"_label"]
-        if b+"_label" in info:
-            link["to_label"] = info[b+"_label"]
-        if "label" in info:
-            link["label"] = info["label"]
+        if a+"_label" in link:
+            l["from_label"] = link[a+"_label"]
+        if b+"_label" in link:
+            l["to_label"] = link[b+"_label"]
+        if "label" in link:
+            l["label"] = link["label"]
 
         if a_id not in id_id_link:
             id_id_link[a_id] = {}
@@ -1136,7 +1136,7 @@ def link_add(obj,info,p=False):
                 if key not in id_id_link[a_id][b_id]:
                     id_id_link[a_id][b_id][key] = value
         else:
-            id_id_link[a_id][b_id] = link
+            id_id_link[a_id][b_id] = l
     return True
 
 #############################
@@ -1537,6 +1537,7 @@ def schema_process():
 
                     if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
+                        link_add(obj, { "to":ref["category"]["id"]})
 
                         c_n = ref["category"]["id"]+"+"+ref["namespace"]["id"]
                         if c_n not in category_namespaces:
@@ -1544,6 +1545,7 @@ def schema_process():
                                 "category":ref["category"],
                                 "namespace":ref["namespace"]
                             }
+                        
 
 
                 if len(refs_clean) > 0:
