@@ -438,7 +438,7 @@ def main():
     # Load data schema for datasets from file
     ######################
     print ("Adding schemas from",args.schema_dataset_file)
-    schema_load_schema_from_file(args.schema_dataset_file)
+    schema_load_category_namespace_from_file(args.schema_dataset_file)
 
     #######################
     # set up category depths
@@ -1783,7 +1783,9 @@ def schema_load_category_from_file(fname):
         keys = None
         namespace_index = None
         category = None
+        linenum = 0
         for line in fin:
+            linenum ++ 1
             values = line.rstrip().split("\t")
             if namespace_index is None:
                 for i, value in enumerate(values):
@@ -1791,7 +1793,7 @@ def schema_load_category_from_file(fname):
                         namespace_index = i
                         break
                 if namespace_index is None:
-                    utils.error(fname, "Failed to find Namespace on first line")
+                    utils.error(f'{fname}[{linenum}]', "Failed to find Namespace on first line")
             elif keys is None:
                 keys = values
             else:
@@ -1804,7 +1806,7 @@ def schema_load_category_from_file(fname):
                         if category is not None:
                             object_add("category", category)
                         category = {
-                            "filename":fname,
+                            "filename":f'{fname}[{linenum}]',
                             "namespaces":[]
                         }
 
@@ -1824,47 +1826,72 @@ def schema_load_category_from_file(fname):
         if category is not None:
             object_add("category",category)
 
-def schema_load_schema_from_file(fname):
-    pass
-    temp="""
+def schema_load_category_namespace_from_file(filename):
     re_empty = re.compile("^\s*$")
-    with open(fname) as fin:
+    with open(filename) as fin:
         keys = None
         dataset = None
+        seen = set()
 
+        category_object = {}
+        for obj in id_object.values():
+            if obj["__typename"] == "Category":
+                category_object[obj["id"][9:]] = obj
+                category_object[obj["id_short"]] = obj
+
+        linenum = 0
         for line in fin:
+            print (line.rstrip())
+            linenum += 1
             values = line.rstrip().split("\t")
             if keys is None:
                 keys = values
             else:
+                if not re_empty.search(values[0]):
+                    i = values[0]
+                    if i in id_object:
+                        dataset = id_object[i]
+                        seen = set()
+                    else:
+                        utils.error_add(f'{filename}[{linenum}]', f"failed to find dataset {i}")
+                        dataset = None
                 if dataset is not None:
-
-                if re_empty.search(values[0]):
-                    i = namespace_index
-                else:
-                    i = 0
-                while i < len(values):
-                    if i == 0:
-                        if category is not None:
-                            print (json.dumps(category,indent=4))
-                            object_add("category", category)
-                        category = {
-                            "filename":fname,
-                            "namespaces":[]
-                        }
-
-                    key = keys[i]
-                    value = values[i]
-                    if not re_empty.search(value):
-                        if i < namespace_index:
-                            category[key] = value
-                        else:
-                            if i == namespace_index:
-                                namespace = {}
-                                category["namespaces"].append(namespace)
-                            namespace[key] = value
-                    i += 1
-        if category is not None:
-            object_add("category",category)"""
+                    cat_nam  = None
+                    for i,value in enumerate(values):
+                        print (linenum," ",i,keys[i],"=",value)
+                        if keys[i] == "category" and not re_empty.search(value) and i+1 < len(values) and not re_empty.search(values[i+1]):
+                            cat = value
+                            nam = values[i+1]
+                            print ("    ",cat,nam)
+                            if cat in category_object:
+                                cat = category_object[cat]
+                                found = False
+                                for n in cat["namespaces"]:
+                                    if n["id"] == nam or ("id_short" in n and n["id_short"] == nam):
+                                        nam = n
+                                        found = True
+                                        break
+                                if found:
+                                    id_ = cat["id"]+"+"+nam["id"]
+                                    if id_ not in seen:
+                                        seen.add(id_)
+                                        cat_nam = {
+                                            "category":cat,
+                                            "namespace":nam
+                                        }
+                                        if i+2 < len(values) and not re_empty.search(values[i+2]):
+                                            cat_nam["type"] = "self"
+                                        if "category_namespaces" not in dataset:
+                                            dataset["category_namespaces"] = []
+                                        print (cat_nam)
+                                        dataset["category_namespaces"].append(cat_nam)
+                                else:
+                                    utils.error_add(f"{filename}[{linenum}]",f"failed to find {cat['id']}'s namespace {nam}")
+                            else:
+                                utils.error_add(f"{filename}[{linenum}]",f"failed to find category {cat}")
+                    if "cagtegory_namespaces" in dataset:
+                        dataset["category_namespaces"] \
+                            = sorted(dataset["category_namespaces"],key=lambda c:[c["category"]["id"],c["namespace"]["id"]])
+                        print (json.dumps(dataset["category_namespaces"],ident=4))
 
 main()
