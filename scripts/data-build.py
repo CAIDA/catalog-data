@@ -454,6 +454,8 @@ def main():
     for obj in id_object.values():
         word_scoring(obj)
     for id0, id1_link in id_id_link.items():
+        if id0 not in id_word_score:
+            id_word_score[id0] = {}
         w_s0 = id_word_score[id0]
         for id1 in id1_link.keys():
             if id0 < id1:
@@ -1114,10 +1116,27 @@ def link_add(obj,link,p=False):
         utils.warning_add(obj["filename"], "can't link to itself: "+link["from"])
         return None
 
+    links = []
     for a_b in [["from","to"],["to","from"]]:
         a,b = a_b
         a_id = link[a]
         b_id = link[b]
+
+        # Don't add links from objects to categories, instead add id_short 
+        # from categories to objects.  ie we want them to be searchable 
+        if b_id[:8] == "category":
+            if b_id in id_object and "id_short" in id_object[b_id]:
+                a = b
+                if a == "from":
+                    b = "to"
+                else:
+                    b = "from"
+                b = "from"
+                b_obj = id_object[b_id]
+                b_id = a_id
+                a_id = "category:"+b_obj["id_short"]
+            else:
+                continue
         l = {
             "from":a_id,
             "to":b_id
@@ -1128,6 +1147,7 @@ def link_add(obj,link,p=False):
             l["to_label"] = link[b+"_label"]
         if "label" in link:
             l["label"] = link["label"]
+        links.append([a_id, b_id, l])
 
         if a_id not in id_id_link:
             id_id_link[a_id] = {}
@@ -1539,12 +1559,7 @@ def schema_process():
                         refs_clean.append(ref)
                         link_add(obj, { "to":ref["category"]["id"]})
 
-                        c_n = ref["category"]["id"]+"+"+ref["namespace"]["id"]
-                        if c_n not in category_namespaces:
-                            category_namespaces[c_n] = {
-                                "category":ref["category"],
-                                "namespace":ref["namespace"]
-                            }
+                        category_namespaces_add(category_namespaces, ref)
                         
 
 
@@ -1552,12 +1567,25 @@ def schema_process():
                     table["category_keys"] = refs_clean
                 elif "category_keys" in table:
                     del table["category_keys"]
+        if len(category_namespaces) == 0 and "category_namespaces" in obj:
+            for ref in obj["category_namespaces"]:
+                category_namespaces_add(category_namespaces, ref)
+                
         if len(category_namespaces) > 0:
             objs = [ ]
             for c_n_key,c_n in (sorted(category_namespaces.items())):
                 objs.append(c_n)
+                link_add(obj, c_n["category"]["id"])
             obj["category_namespaces"] =  objs
     return category_id_depth
+
+def category_namespaces_add(category_namespaces, ref):
+    c_n = ref["category"]["id"]+"+"+ref["namespace"]["id"]
+    if c_n not in category_namespaces:
+        category_namespaces[c_n] = {
+            "category":ref["category"],
+            "namespace":ref["namespace"]
+        }
 
 
 def table_build_refs_properties(filename, table_name, table, refs, properties):
@@ -1831,6 +1859,7 @@ def schema_load_category_namespace_from_file(filename):
     with open(filename) as fin:
         keys = None
         dataset = None
+        datasets = []
         seen = set()
 
         category_object = {}
@@ -1841,7 +1870,6 @@ def schema_load_category_namespace_from_file(filename):
 
         linenum = 0
         for line in fin:
-            print (line.rstrip())
             linenum += 1
             values = line.rstrip().split("\t")
             if keys is None:
@@ -1851,6 +1879,7 @@ def schema_load_category_namespace_from_file(filename):
                     i = values[0]
                     if i in id_object:
                         dataset = id_object[i]
+                        datasets.append(dataset)
                         seen = set()
                     else:
                         utils.error_add(f'{filename}[{linenum}]', f"failed to find dataset {i}")
@@ -1858,11 +1887,9 @@ def schema_load_category_namespace_from_file(filename):
                 if dataset is not None:
                     cat_nam  = None
                     for i,value in enumerate(values):
-                        print (linenum," ",i,keys[i],"=",value)
                         if keys[i] == "category" and not re_empty.search(value) and i+1 < len(values) and not re_empty.search(values[i+1]):
                             cat = value
                             nam = values[i+1]
-                            print ("    ",cat,nam)
                             if cat in category_object:
                                 cat = category_object[cat]
                                 found = False
@@ -1883,15 +1910,14 @@ def schema_load_category_namespace_from_file(filename):
                                             cat_nam["type"] = "self"
                                         if "category_namespaces" not in dataset:
                                             dataset["category_namespaces"] = []
-                                        print (cat_nam)
                                         dataset["category_namespaces"].append(cat_nam)
                                 else:
                                     utils.error_add(f"{filename}[{linenum}]",f"failed to find {cat['id']}'s namespace {nam}")
                             else:
                                 utils.error_add(f"{filename}[{linenum}]",f"failed to find category {cat}")
-                    if "cagtegory_namespaces" in dataset:
-                        dataset["category_namespaces"] \
+        for dataset in datasets:
+            if "category_namespaces" in dataset:
+                dataset["category_namespaces"] \
                             = sorted(dataset["category_namespaces"],key=lambda c:[c["category"]["id"],c["namespace"]["id"]])
-                        print (json.dumps(dataset["category_namespaces"],ident=4))
 
 main()
