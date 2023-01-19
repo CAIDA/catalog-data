@@ -23,4 +23,5 @@ node_modules/*
 env/*
 catalog-data-caida
 data/_catalog-dataset-summary.jsonl
+data/catalog-dataset-summary.jsonl
 data/_ids.txt
