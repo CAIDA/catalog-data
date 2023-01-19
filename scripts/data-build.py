@@ -438,7 +438,7 @@ def main():
     # Load data schema for datasets from file
     ######################
     print ("Adding schemas from",args.schema_dataset_file)
-    schema_load_category_namespace_from_file(args.schema_dataset_file)
+    schema_load_category_keys_from_file(args.schema_dataset_file)
 
     #######################
     # set up category depths
@@ -1412,7 +1412,7 @@ def word_scoring_category_key(info,cat_words):
 
     if "category_keys" in info:
         for cat_key in info["category_keys"]:
-            for key in ["category","namespace"]:
+            for key in ["category","category_key"]:
                 if key in cat_key:
                     cat = cat_key[key]
                     if type(cat) is dict:
@@ -1532,7 +1532,6 @@ def word_add_plurals():
 def schema_process():
     category_id_depth = {}
     for id_,obj in id_object.items():
-        category_namespaces = {}
         if "schema" in obj:
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
@@ -1557,35 +1556,36 @@ def schema_process():
 
                     if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
-                        link_add(obj, { "to":ref["category"]["id"]})
-
-                        category_namespaces_add(category_namespaces, ref)
-                        
-
+                        link_add(table, { "to":ref["category"]["id"]})
+                        category_keys_add(table, "keys", ref)
+                        ref = ref.copy()
+                        category_keys_add(obj, "category_keys", ref)
 
                 if len(refs_clean) > 0:
                     table["category_keys"] = refs_clean
                 elif "category_keys" in table:
                     del table["category_keys"]
-        if len(category_namespaces) == 0 and "category_namespaces" in obj:
-            for ref in obj["category_namespaces"]:
-                category_namespaces_add(category_namespaces, ref)
-                
-        if len(category_namespaces) > 0:
-            objs = [ ]
-            for c_n_key,c_n in (sorted(category_namespaces.items())):
-                objs.append(c_n)
-                link_add(obj, c_n["category"]["id"])
-            obj["category_namespaces"] =  objs
     return category_id_depth
 
-def category_namespaces_add(category_namespaces, ref):
-    c_n = ref["category"]["id"]+"+"+ref["namespace"]["id"]
-    if c_n not in category_namespaces:
-        category_namespaces[c_n] = {
-            "category":ref["category"],
-            "namespace":ref["namespace"]
-        }
+def category_keys_add(obj, key, ref):
+
+    if key not in obj:
+        obj[key] = []
+    else:
+        for r in obj[key]:
+            if r["category"]["id"] == ref["category"]["id"] and r["category_key"]["id"] == ref["category_key"]["id"]:
+                return
+
+    if "category_keys" in ref["category"]:
+        cat = ref["category"].copy()
+        del cat["category_keys"]
+        ref["category"] = cat
+    obj[key].append({
+        "category":ref["category"],
+        "category_key":ref["category_key"]
+    })
+    if "__typename" in obj:
+        link_add(obj, {"to":ref["category"]["id"]})
 
 
 def table_build_refs_properties(filename, table_name, table, refs, properties):
@@ -1634,20 +1634,20 @@ def category_replacer(filename, source, ref):
         del cat["tags"]
 
     # Find and replace the category
-    if "namespace" in ref:
-        namespace = ref["namespace"]
+    if "category_key" in ref:
+        category_key = ref["category_key"]
         found = False
-        if "namespaces" in id_object[cat_id]:
-            for n in id_object[cat_id]["namespaces"]:
-                if n["id"] == namespace:
-                    ref["namespace"] = n
+        if "category_key" in id_object[cat_id]:
+            for n in id_object[cat_id]["category_key"]:
+                if n["id"] == category_key:
+                    ref["category_key"] = n
                     found = True
                     break
-            del ref["category"]["namespaces"]
+            del ref["category"]["category_key"]
 
         if not found:
-            del ref["namespace"]
-            utils.error_add(filename, f"{source}'s {cat_id}'s namespace {namespace} not found")
+            del ref["category_key"]
+            utils.error_add(filename, f"{source}'s {cat_id}'s category_key {category_key} not found")
             return False
     return True
 
@@ -1805,28 +1805,28 @@ def redirects_add(filename):
 ######################################33
 # Load Schema and Categories from file
 def schema_load_category_from_file(fname):
-    re_namespace = re.compile("namespace",re.IGNORECASE)
+    re_category_key = re.compile("category_key",re.IGNORECASE)
     re_empty = re.compile("^\s*$")
     with open(fname) as fin:
         keys = None
-        namespace_index = None
+        category_key_index = None
         category = None
         linenum = 0
         for line in fin:
             linenum ++ 1
             values = line.rstrip().split("\t")
-            if namespace_index is None:
+            if category_key_index is None:
                 for i, value in enumerate(values):
-                    if re_namespace.search(value):
-                        namespace_index = i
+                    if re_category_key.search(value):
+                        category_key_index = i
                         break
-                if namespace_index is None:
-                    utils.error(f'{fname}[{linenum}]', "Failed to find Namespace on first line")
+                if category_key_index is None:
+                    utils.error_add(f'{fname}[{linenum}]', "Failed to find category_key on first line")
             elif keys is None:
                 keys = values
             else:
                 if re_empty.search(values[0]):
-                    i = namespace_index
+                    i = category_key_index
                 else:
                     i = 0
                 while i < len(values):
@@ -1835,26 +1835,26 @@ def schema_load_category_from_file(fname):
                             object_add("category", category)
                         category = {
                             "filename":f'{fname}[{linenum}]',
-                            "namespaces":[]
+                            "category_keys":[]
                         }
 
                     key = keys[i]
                     value = values[i]
                     if not re_empty.search(value):
-                        if i < namespace_index:
+                        if i < category_key_index:
                             category[key] = value
                         else:
-                            if i == namespace_index:
-                                namespace = {}
-                                category["namespaces"].append(namespace)
-                            if key == "attributes":
+                            if i == category_key_index:
+                                category_key = {}
+                                category["category_keys"].append(category_key)
+                            if key == "properties":
                                 value = re.split("\s*;\s*", value)
-                            namespace[key] = value
+                            category_key[key] = value
                     i += 1
         if category is not None:
             object_add("category",category)
 
-def schema_load_category_namespace_from_file(filename):
+def schema_load_category_keys_from_file(filename):
     re_empty = re.compile("^\s*$")
     with open(filename) as fin:
         keys = None
@@ -1893,7 +1893,7 @@ def schema_load_category_namespace_from_file(filename):
                             if cat in category_object:
                                 cat = category_object[cat]
                                 found = False
-                                for n in cat["namespaces"]:
+                                for n in cat["category_keys"]:
                                     if n["id"] == nam or ("id_short" in n and n["id_short"] == nam):
                                         nam = n
                                         found = True
@@ -1904,20 +1904,18 @@ def schema_load_category_namespace_from_file(filename):
                                         seen.add(id_)
                                         cat_nam = {
                                             "category":cat,
-                                            "namespace":nam
+                                            "category_key":nam
                                         }
                                         if i+2 < len(values) and not re_empty.search(values[i+2]):
                                             cat_nam["type"] = "self"
-                                        if "category_namespaces" not in dataset:
-                                            dataset["category_namespaces"] = []
-                                        dataset["category_namespaces"].append(cat_nam)
+                                        category_keys_add(dataset, "category_keys", cat_nam)
                                 else:
-                                    utils.error_add(f"{filename}[{linenum}]",f"failed to find {cat['id']}'s namespace {nam}")
+                                    utils.error_add(f"{filename}[{linenum}]",f"failed to find {cat['id']}'s category_key {nam}")
                             else:
                                 utils.error_add(f"{filename}[{linenum}]",f"failed to find category {cat}")
         for dataset in datasets:
-            if "category_namespaces" in dataset:
-                dataset["category_namespaces"] \
-                            = sorted(dataset["category_namespaces"],key=lambda c:[c["category"]["id"],c["namespace"]["id"]])
+            if "category_keys" in dataset:
+                dataset["category_keys"] \
+                            = sorted(dataset["category_keys"],key=lambda c:[c["category"]["id"],c["category_key"]["id"]])
 
 main()

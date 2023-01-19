@@ -1,12 +1,12 @@
-Category					Namespace 					
-id	id_short	name	description	url	id	id_short	name	attributes	description	url
-internet.ip	ip	IP Address	An Internet Protoocal address (IP address) is a numerical label a device connected to the Internet.	https://en.wikipedia.org/wiki/IP_address	iana.ip	ip	IANA IP space	ip		
+q					category_keys					
+id	id_short	name	description	url	id	id_short	name	properties	description	url
+internet.ip.address	ip	IP Address	An Internet Protoocal address (IP address) is a numerical label a device connected to the Internet.	https://en.wikipedia.org/wiki/IP_address	iana.ip	ip	IANA IP space	ip		
 internet.ip.prefix	ip.prefix	Internet Protocol (IP) prefix	A series of consecutive IP addresses represented as a netmask X.X.X.X and a length /L (1.2.3.4/8).		network-length		IANA IP space	network; length		
-internet.ip.block	ip.block	Internet Protocol (IP) block	A series of consecutive IP addresses with a first and last address.		start-end		IANA IP space	start end		
+internet.ip.block	ip.block	Internet Protocol (IP) block	A series of consecutive IP addresses with a first and last address.		start-end		IANA IP space	start; end		
 internet.ip.port	port	Internet Port		https://en.wikipedia.org/wiki/Port_(computer_networking))	iana.port	number	IANA IP Port	port		https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt
-internet.ip.flow	flow	Internet IP Flow			flow_5_tuple	5 tuple	Flow 5 Tuple	source ip; source port; destination ip; destination port; protocal		
-internet.asn	asn	Autonomous System (AS)			iana.asn	number	IANA ASN space	asn		https://www.iana.org/assignments/as-numbers/as-numbers.xhtml
-internet.asn.name	asn.name	AS name			whois.asn.name	whois_name	WHOIS AS name space	name		
+internet.ip.flow	flow	Internet IP Flow			5_tuple		Flow 5 Tuple	source ip; source port; destination ip; destination port; protocal		
+internet.as	as	Autonomous System (AS)			iana.asn	number	IANA ASN space	asn		https://www.iana.org/assignments/as-numbers/as-numbers.xhtml
+					whois.asn.name	name	WHOIS AS name space	name		
 internet.asn.link	asn.link	Autonomous System (AS) link			asn-asn		Pair of ASNs	asn0; asn1		
 internet.asn.block	asn.block	AS Block			start-end		Start and End ASNs	start; end		
 internet.asn.cone	asn.cone	AS cutomer cone			iana.asn	asn	ASN that identifies the custome cone	asn		
@@ -20,11 +20,11 @@ internet.ixp.name	ixp.name	IXP name			caida.ixp_name	caida_name	CAIDA's name for
 internet.hostname	hostname	Internet hostname			doman_name_space	name	Doman Name Space 	name		
 internet.router	router	Internet router	A computer which routers packets on the Internet.		caida.itdk.router_id	caida_id	CAIDA's ITDK router ID	id		
 organization	org	organization			caida.org_id	caida	CAIDA org Id	id		
-					whois.ir.org_name	whois_name	WHOIS Internet Registry organization name	name		
+					whois.registry.org_name	whois_name	WHOIS Internet Registry organization name	name		
 					rir.org_opaqueid	rir	WHOIS organization opaque ID	id		
 					peeringdb.org_id					
 					stock_market.stock_symbol	stock	Stock Market company stock symbols	symbol		https://en.wikipedia.org/wiki/Ticker_symbol
-organization.ir	ir	Internet Registry (IR)			ir.ir_name	name	Internet Regerstery organization name space	name		https://www.nro.net/about/rirs/the-internet-registry-system/
+organization.ir	registry	Internet Registry (IR)			registry.registry_name	name	Internet Regerstery organization name space	name		https://www.nro.net/about/rirs/the-internet-registry-system/
 rc_project	rc_project	Route Collection Projects	Projects collecting BGP tables		rc_project.rcp_name	name	RCP names	name		
 rc_project.bgp_collector	bgp_collector	RCP BGP Collector			rc_project.collector_name	name	RCP BGP Collector names	name		
 location	location	location			caida.ixp.geo_id		Location in CAIDA's IXP dataset			
