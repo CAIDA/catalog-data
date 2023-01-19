@@ -19,16 +19,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-p", dest="papers_file", type=str, required=True)
 parser.add_argument("-m", dest="media_file", type=str, required=True)
 args = parser.parse_args()
+    
 
 def main():
-    load_ids("paper","papers",args.papers_file)
-    load_ids("presentation","presentations",args.media_file)
+    if not load_ids("paper","papers",args.papers_file)  \
+        or not load_ids("presentation","presentations",args.media_file):
+        sys.exit(1)
 
-    error = False
     ## load all existing ids 
     ## parameters: sources, and the type that is calling it
     # utils.id_check_load("sources", "pubdb")
 
+    error = False
     ## Add this to utils as id_check_load()
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
@@ -187,9 +189,12 @@ def load_ids(type_,key, filename):
                 objects.append(obj)
     except json.decoder.JSONDecodeError as e:
         print ("error",filename, e)
+        return False 
     except ValueError as e:
         print ("JSON error in",filename)
+        return False 
         raise e
+    return True
 
 
 def id_add(filename, type_,id_):
