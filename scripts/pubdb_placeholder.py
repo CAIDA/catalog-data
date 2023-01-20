@@ -20,17 +20,18 @@ parser.add_argument("-p", dest="papers_file", type=str, required=True)
 parser.add_argument("-m", dest="media_file", type=str, required=True)
 args = parser.parse_args()
     
+error = False
 
 def main():
     if not load_ids("paper","papers",args.papers_file)  \
         or not load_ids("presentation","presentations",args.media_file):
+        utils.error_print()
         sys.exit(1)
 
     ## load all existing ids 
     ## parameters: sources, and the type that is calling it
     # utils.id_check_load("sources", "pubdb")
 
-    error = False
     ## Add this to utils as id_check_load()
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
@@ -41,8 +42,7 @@ def main():
                     try:
                         obj = json.load(open(fname,"r"))
                     except json.decoder.JSONDecodeError as e:
-                        error = True
-                        print ("error",fname, e)
+                        error_add(fname, e)
                         continue
                     except ValueError as e:
                         print ("-----------\nJSON ERROR in ",fname,"\n")
@@ -59,6 +59,7 @@ def main():
                         utils.person_seen_add(fname, obj)
         
     if error:
+        utils.error_print()
         sys.exit(1)
     ## add to this end 
 
@@ -150,6 +151,10 @@ def main():
         if len(links) > 0:
             obj["links"] = links
 
+    if error:
+        utils.error_print()
+        sys.exit(1)
+
     # fix links
     ids = set()
     for obj in objects:
@@ -167,6 +172,8 @@ def main():
     # print objects
     for obj in objects:
         json.dump(obj,open(obj["filename"],"w"),indent=4)
+    
+
 def key_to_key(obj,key_a,key_b):
     if key_a in obj:
         obj[key_b] = obj[key_a]
@@ -188,10 +195,10 @@ def load_ids(type_,key, filename):
                 obj["filename"] = "sources/"+type_+"/"+obj["id"]+"___pubdb.json"
                 objects.append(obj)
     except json.decoder.JSONDecodeError as e:
-        print ("error",filename, e)
+        error_add(filename, e)
         return False 
     except ValueError as e:
-        print ("JSON error in",filename)
+        error_add(filename, "invalid JSON format")
         return False 
         raise e
     return True
@@ -219,6 +226,11 @@ def id_yearless(id_):
         type_,date,name = m.groups()
         return type_+":"+name
     return id_
+
+def error_add(filename, message):
+    global error
+    utils.error_add(filename,message)
+    error = True
     
 
 id_person = {}
