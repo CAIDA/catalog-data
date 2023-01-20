@@ -443,8 +443,10 @@ def main():
     #######################
     # set up category depths
     #######################
-    print ("processing categories")
-    category_id_depth = schema_process()
+    print ("not processing categories")
+    # print ("processing categories")
+    # category_id_depth = schema_process()
+    category_id_depth = {}
 
     #######################
     # parse out the words from the fields
@@ -1556,7 +1558,7 @@ def schema_process():
 
                     if reference_update(obj["filename"], source, ref, properties):
                         refs_clean.append(ref)
-                        link_add(table, { "to":ref["category"]["id"]})
+                        link_add(obj, { "to":ref["category"]["id"]})
                         category_keys_add(table, "keys", ref)
                         ref = ref.copy()
                         category_keys_add(obj, "category_keys", ref)
@@ -1580,6 +1582,7 @@ def category_keys_add(obj, key, ref):
         cat = ref["category"].copy()
         del cat["category_keys"]
         ref["category"] = cat
+
     obj[key].append({
         "category":ref["category"],
         "category_key":ref["category_key"]
