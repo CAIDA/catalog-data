@@ -27,7 +27,7 @@ DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Data\ Schema\ Categories\ -\ Sheet1.tsv
 
 #########
 
-DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS} -D -R
+DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
 run:clean_placeholders pubdb external caida summary build suggestions
 
