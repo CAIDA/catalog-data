@@ -594,3 +594,5 @@ media:2019_ioda_np_dhsst, presentation:2019_ioda_np_dhsst, , true
 media:2019_geo_locating_bgp_prefixes_tma, presentation:2019_geo_locating_bgp_prefixes_tma, , true
 media:2002_iepg_0203, presentation:2002_iepg_0203, , true
 media:2001_rssac_0112, presentation:2001_rssac_0112, , true
+dataset:routeviews_ipv4_prefix2as, dataset:routeviews_prefix2as, , true
+dataset:routeviews_ipv6_prefix2as, dataset:routeviews_prefix2as, , true
