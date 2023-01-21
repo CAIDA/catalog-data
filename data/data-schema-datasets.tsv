@@ -173,3 +173,18 @@ dataset:2020_unintended_consequences				ip	iana.ip
 				as	iana.asn											
 				city	iata3											
 				ip.path	ip_list											
+																
+dataset:passive_2019_pcap				ip	iana.ip											
+				ip.flow	5_tuple											
+																
+dataset:passive_merged_pcap				ip	iana.ip											
+				ip.flow	5_tuple											
+																
+dataset:passive_metadata				ip	iana.ip											
+				ip.flow	5_tuple											
+																
+dataset:passive_2018_pcap				ip	iana.ip											
+				ip.flow	5_tuple											
+																
+dataset:passive_sampler				ip	iana.ip											
+				ip.flow	5_tuple											
