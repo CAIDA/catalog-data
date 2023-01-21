@@ -18,11 +18,11 @@ dataset:as_rank	ASN Information	asn		as	iana.asn	S									rank,cliqueMember,see
 		├ capital		city	geo_name											
 		└continent		continent	iso.alpha2											
 		source		registry	name											
-	AsnLink	asn0		as	iana.asn		asn0	asn.link	asn-asn	S					rank. iana.asnPaths, relationship	
+	AsnLink	asn0		as	iana.asn		asn0	as.link	asn-asn	S					rank. iana.asnPaths, relationship	
 	primary: as.link	asn1		as	iana.asn		asn1									
 	primary keys: asn0, asn1															
 																
-dataset:as_relationships_geo	ASN Link Locations	asn0		as	iana.asn		asn0	asn.link	asn-asn							
+dataset:as_relationships_geo	ASN Link Locations	asn0		as	iana.asn		asn0	as.link	asn-asn							
 	primary: as.link	asn1		as	iana.asn		asn1									
 	primary keys: asn0, asn1	locations		city	netacuity.city_name											
 	Citites	lid		city	name-region_iso2-country_iso2	S									pop	
@@ -30,11 +30,12 @@ dataset:as_relationships_geo	ASN Link Locations	asn0		as	iana.asn		asn0	asn.link
 	prinary keys: lid	country		country	iso2											
 		region		region	iso2											
 		lat	latitude	lat_lon	wgs84											
+																
 		lon	longitude													
 																
-dataset:as_relationships_serial_1	ASN Paths All	project		rc_project	rc_project.rcp_name						project	asn.path	project-collector-peer_asn-asn.path-ip.prefix	S	frequency	
+dataset:as_relationships_serial_1	ASN Paths All	project		rc_project	rc_project.rcp_name						project	as.path	project-collector-peer_asn-asn.path-ip.prefix	S	frequency	
 	primary: as.paths	collector		bgp_collector	rc_project.collector_name						collector					
-	primary keys: (everything)	as path		asn.path	asn_list						asn_list					
+	primary keys: (everything)	as path		as.path	asn_list						asn_list					
 	filename: (date).all-paths.bz	network		ip	iana.ip		network	ip.prefix	network-length		network					
 		length					length				length					
 		peer ip		ip	iana.ip						peer_ip					
@@ -43,22 +44,22 @@ dataset:as_relationships_serial_1	ASN Paths All	project		rc_project	rc_project.r
 	filename: (date).as-rel.txt.bz2															
 	IXP ASes	as		as	iana.asn	S										
 	category: as															
-	AS Relationships	asn0		as	iana.asn		asn0	asn.link	asn-asn	S						
+	AS Relationships	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
 	primary: as.link	asn1		as	iana.asn		asn1									
 	primary keys: asn0, asn1	relationship														
-	ASN Assigned	asn first		as	iana.asn		start	asn.block	start-end	S						
+	ASN Assigned	asn first		as	iana.asn		start	as.block	start-end	S						
 	primary: as.block	asn end		as	iana.asn		end									
 	primary keys: asn start, asn end															
 	filename: (date).assigned.txt.bz2															
-	ASN Paths	asn path		as	iana.asn			asn.path	asn_list	s						
+	ASN Paths	asn path		as	iana.asn			as.path	asn_list	s						
 	primary: as.path															
 	filename: (date).path.txt.bz2															
-	ASN Customer Cone	asn		as	iana.asn		a	asn.cone	iana.asn	S						
+	ASN Customer Cone	asn		as	iana.asn		a	as.cone	iana.asn	S						
 	primary: as.customer_cone	members		as	iana.asn											
 	primary keys: asn															
 	fiename:(date).ppc-ases.txt.bz2															
 																
-dataset:as_relationships_serial_2	AS Relationships	asn0		as	iana.asn		a	asn.link	asn-asn	S						
+dataset:as_relationships_serial_2	AS Relationships	asn0		as	iana.asn		a	as.link	asn-asn	S						
 	primary: as.link	asn1		as	iana.asn		a									
 	primary keys: asn_link	relationship														
 																
@@ -72,7 +73,7 @@ dataset:as_organizations	Autonmous System	aut		as	iana.asn	S									changed
 	primary keys: org_id	country		country	iso.alpha2											
 		source		registry	name											
 																
-dataset:ark_ipv4_aslinks	ASN LINKS	asn0		as	iana.asn		A	asn.link	asn-asn	S						
+dataset:ark_ipv4_aslinks	ASN LINKS	asn0		as	iana.asn		A	as.link	asn-asn	S						
 		asn1		as	iana.asn		A									
 																
 dataset:ark_ipv4_tnt	TNT MPLS	src		ip	iana.ip											
@@ -99,7 +100,7 @@ dataset:ixps	Internet eXchanges (IXs)	ix_id		ixp	caida.ixp_id	S
 	primary: fac_id	pdb_org_id		organization	peeringdb.org_id	S										
 	filename: facilities.jsonl	latitude	A	lat_lon	wgs84											
 		longitude	A													
-		address		address	street		A	address	street-postal-city-region-country							
+		address		address	street		A	address	street-postal_code-city-region-country							
 		zipcode		location.zip			A									
 		city		city	peeringdb.city_name		A									
 		state		region	iso2		A									
@@ -146,3 +147,29 @@ dataset:2020_imc_hoiho	Organization ASes	as		as	iana.asn
 	filename: (date)-peeringdb.routers															
 	PeeringDB ASN Regex	as		as	iana.asn											
 	filename: (date)-peeringdb.re															
+																
+dataset:2006_ccr_as_level_topology				ip	iana.ip											
+				rc_project	rc_project.rcp_name						project	as.path	project-collector-peer_asn-asn.path-ip.prefix	S		
+				bgp_collector	rc_project.collector_name						collector					
+				as.path	asn_list						asn_list					
+				ip	iana.ip		network	ip.prefix	network-length		network					
+							length				length					
+				ip	iana.ip						peer_ip					
+																
+	needs review															
+																
+dataset:annotated_anonymized_telescope_packets_sampler				ip	iana.ip											
+				ip.flow	5_tuple											
+																
+																
+dataset:dns_root_gtld_rtt				ip	iana.ip											
+				hostname	name											
+				city	name											
+				gtld	name											
+																
+dataset:2020_unintended_consequences				ip	iana.ip											
+				router	caida_id											
+				hostname	name											
+				as	iana.asn											
+				city	iata3											
+				ip.path	ip_list											
