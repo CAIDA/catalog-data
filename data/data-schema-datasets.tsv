@@ -54,13 +54,13 @@ dataset:as_relationships_serial_1	ASN Paths All	project		rc_project	rc_project.r
 	ASN Paths	asn path		as	iana.asn			as.path	asn_list	s						
 	primary: as.path															
 	filename: (date).path.txt.bz2															
-	ASN Customer Cone	asn		as	iana.asn		a	as.cone	iana.asn	S						
+	ASN Customer Cone	asn		as	iana.asn			as.cone	iana.asn	S						
 	primary: as.customer_cone	members		as	iana.asn											
 	primary keys: asn															
 	fiename:(date).ppc-ases.txt.bz2															
 																
-dataset:as_relationships_serial_2	AS Relationships	asn0		as	iana.asn		a	as.link	asn-asn	S						
-	primary: as.link	asn1		as	iana.asn		a									
+dataset:as_relationships_serial_2	AS Relationships	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
+	primary: as.link	asn1		as	iana.asn		asn1									
 	primary keys: asn_link	relationship														
 																
 dataset:as_organizations	Autonmous System	aut		as	iana.asn	S									changed	
@@ -73,8 +73,8 @@ dataset:as_organizations	Autonmous System	aut		as	iana.asn	S									changed
 	primary keys: org_id	country		country	iso.alpha2											
 		source		registry	name											
 																
-dataset:ark_ipv4_aslinks	ASN LINKS	asn0		as	iana.asn		A	as.link	asn-asn	S						
-		asn1		as	iana.asn		A									
+dataset:ark_ipv4_aslinks	ASN LINKS	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
+		asn1		as	iana.asn		asn1									
 																
 dataset:ark_ipv4_tnt	TNT MPLS	src		ip	iana.ip											
 	file:(monitor).tnt.*tar	dst		ip	iana.ip											
@@ -98,14 +98,13 @@ dataset:ixps	Internet eXchanges (IXs)	ix_id		ixp	caida.ixp_id	S
 		prefixes		ip.prefix	network-length											
 	Facilities	pdb_fac_id		ixp.facility	peeringdb.fac_id	S										
 	primary: fac_id	pdb_org_id		organization	peeringdb.org_id	S										
-	filename: facilities.jsonl	latitude	A	lat_lon	wgs84											
-		longitude	A													
-		address		address	street		A	address	street-postal_code-city-region-country							
-		zipcode		location.zip			A									
-		city		city	peeringdb.city_name		A									
-		state		region	iso2		A									
-							A									
-		country		country	iso2		A									
+	filename: facilities.jsonl	latitude	latitude	lat_lon	wgs84											
+		longitude	longitude													
+		address		address	street		street	address	street-postal_code-city-region-country							
+		zipcode		location.zip			postal_code									
+		city		city	peeringdb.city_name		city									
+		state		region	iso2		region									
+		country		country	iso2		country									
 		clli		city	iconectiv.clli											
 	IXP ASNs	ix_id		ixp	caida.ixp_id											
 		asn		as	iana.asn											
@@ -159,7 +158,7 @@ dataset:2006_ccr_as_level_topology				ip	iana.ip
 	needs review															
 																
 dataset:annotated_anonymized_telescope_packets_sampler				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											
 																
 																
 dataset:dns_root_gtld_rtt				ip	iana.ip											
@@ -175,16 +174,16 @@ dataset:2020_unintended_consequences				ip	iana.ip
 				ip.path	ip_list											
 																
 dataset:passive_2019_pcap				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											
 																
 dataset:passive_merged_pcap				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											
 																
 dataset:passive_metadata				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											
 																
 dataset:passive_2018_pcap				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											
 																
 dataset:passive_sampler				ip	iana.ip											
-				ip.flow	5_tuple											
+				ip.packet	5_tuple											

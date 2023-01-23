@@ -21,9 +21,9 @@ END=`date +%s`
 
 ###### DAta Schema files
 DATA_SCHEMA_DATASETS=data/data-schema-datasets.tsv
-DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ Datasets\ -\ Sheet1.tsv 
+DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ for\ CAIDA\ Datasets\ -\ Sheet1.tsv 
 DATA_SCHEMA_CATEGORIES=data/data-schema-categories.tsv
-DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Data\ Schema\ Categories\ -\ Sheet1.tsv 
+DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Categories\ used\ in\ Schema\ for\ CAIDA\'s\ Datasets\ -\ Sheet1.tsv
 
 #########
 
