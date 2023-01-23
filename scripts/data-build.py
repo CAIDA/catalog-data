@@ -438,7 +438,7 @@ def main():
     # Load data schema for datasets from file
     ######################
     print ("Adding schemas from",args.schema_dataset_file)
-    schema_load_category_keys_from_file(args.schema_dataset_file)
+    schema_load_datasets_from_file(args.schema_dataset_file)
 
     #######################
     # set up category depths
@@ -765,7 +765,7 @@ def object_add(type_, info):
         utils.error_add(info["filename"], "failed to find name:"+json.dumps(info))
         error = True
     
-    if type_ == "paper":
+    if type_ == "Paper":
         if "datePublished"  in info:
             info["date"] = info["datePublished"]
         else:
@@ -778,6 +778,14 @@ def object_add(type_, info):
             id_paper[id_short] = info
         else:
             info["id"] = utils.id_create(info["filename"], info["__typename"],info["id"])
+
+    elif type_ == "Category":
+        if "id_short" not in info:
+            info["id_short"] = info["id"]
+        if "category_keys" in info:
+            for cat in info["category_keys"]:
+                if "id_short" not in cat:
+                    cat["id_short"] = cat["id"]
 
     if not error:
         id_object[info["id"]] = info
@@ -1857,7 +1865,7 @@ def schema_load_category_from_file(fname):
         if category is not None:
             object_add("category",category)
 
-def schema_load_category_keys_from_file(filename):
+def schema_load_datasets_from_file(filename):
     re_empty = re.compile("^\s*$")
     with open(filename) as fin:
         keys = None
