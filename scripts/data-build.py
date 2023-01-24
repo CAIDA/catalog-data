@@ -443,10 +443,8 @@ def main():
     #######################
     # set up category depths
     #######################
-    print ("not processing categories")
-    # print ("processing categories")
-    # category_id_depth = schema_process()
-    category_id_depth = {}
+    print ("processing categories")
+    category_id_depth = schema_process()
 
     #######################
     # parse out the words from the fields
@@ -1546,140 +1544,171 @@ def schema_process():
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
 
-                if "category_keys" in table:
-                    refs = table["category_keys"]
-                    if type(refs) == dict:
-                        refs = [refs]
+                if "keys" in table:
+                    keys = table["keys"]
                 else:
-                    refs = []
+                    keys = []
 
-                properties = []
-                table_build_refs_properties(obj["filename"], table_name, table, refs, properties)
+                properties = set()
+                table_build_keys_properties(obj["filename"], table_name, table, keys, properties)
 
-                refs_clean = []
-                for ref in refs:
-                    if "_source" in ref:
-                        source = ref["_source"]
-                        del ref["_source"]
+                keys_clean = []
+                for key in keys:
+                    if "_source" in key:
+                        source = key["_source"]
+                        del key["_source"]
                     else:
-                        source = table_name
+                        source = table_name+'["keys"]'
 
-                    if reference_update(obj["filename"], source, ref, properties):
-                        refs_clean.append(ref)
-                        link_add(obj, { "to":ref["category"]["id"]})
-                        category_keys_add(table, "keys", ref)
-                        ref = ref.copy()
-                        category_keys_add(obj, "category_keys", ref)
+                    if key_update(obj["filename"], source, key, properties):
+                        keys_clean.append(key)
+                        link_add(obj, { "to":key["category"]["id"]})
+                        category_keys_add(table, "keys", key)
+                        key = key.copy()
+                        category_keys_add(obj, "category_keys", key)
 
-                if len(refs_clean) > 0:
-                    table["category_keys"] = refs_clean
-                elif "category_keys" in table:
-                    del table["category_keys"]
+                        cats = key["category"]["id"].split(".")
+                        for depth, cat in enumerate(reversed(cats)):
+                            if cat not in category_id_depth:
+                                category_id_depth[cat] = {}
+                            if id_ not in category_id_depth[cat] or category_id_depth[cat][id_] > depth:
+                                category_id_depth[cat][id_] = depth
+
+                if len(keys_clean) > 0:
+                    table["keys"] = keys_clean
+                elif "keys" in table:
+                    del table["keys"]
     return category_id_depth
 
-def category_keys_add(obj, key, ref):
+def category_keys_add(obj, field_name, key):
 
-    if key not in obj:
-        obj[key] = []
+    if field_name not in obj:
+        obj[field_name] = []
     else:
-        for r in obj[key]:
-            if r["category"]["id"] == ref["category"]["id"] and r["category_key"]["id"] == ref["category_key"]["id"]:
+        for r in obj[field_name]:
+            if r["category"]["id"] == key["category"]["id"] and r["category_key"]["id"] == key["category_key"]["id"]:
                 return
 
-    if "category_keys" in ref["category"]:
-        cat = ref["category"].copy()
+    if "category_keys" in key["category"]:
+        cat = key["category"].copy()
         del cat["category_keys"]
-        ref["category"] = cat
+        key["category"] = cat
 
-    obj[key].append({
-        "category":ref["category"],
-        "category_key":ref["category_key"]
+    obj[field_name].append({
+        "category":key["category"],
+        "category_key":key["category_key"]
     })
     if "__typename" in obj:
-        link_add(obj, {"to":ref["category"]["id"]})
+        link_add(obj, {"to":key["category"]["id"]})
 
 
-def table_build_refs_properties(filename, table_name, table, refs, properties):
+def table_build_keys_properties(filename, table_name, table, keys, properties):
     if "properties" in table:
         for n,prop in table["properties"].items():
-            table_build_refs_properties_helper(filename, table_name, [n], prop, refs, properties)
+            table_build_keys_properties_helper(filename, table_name, [n], prop, keys, properties)
 
-def table_build_refs_properties_helper(filename, table_name, names, prop, refs, properties):
+def table_build_keys_properties_helper(filename, table_name, names, prop, keys, properties,depth=""):
+    depth += ">"
+    
+    if type(prop) == dict:
+        if "properties" in prop:
+            for n,p in prop["properties"].items():
+                names_copy = names.copy()
+                names_copy.append(n)
+                table_build_keys_properties_helper(filename, table_name, names_copy, p, keys, properties, depth)
+        else:
+            name = ">".join(names)
+            properties.add(name)
+            if "key" in prop:
+                key = prop["key"]
+                key["property"] = name
+                key["_source"] = f"{table_name}>{name}"
+                keys.append(key)
+                del prop["key"]
 
-    if "properties" in prop:
-        props = []
-        i = 0
-        for n,p in prop["properties"].items():
-            names_copy = names.copy()
-            names_copy.append(n)
-            table_build_refs_properties_helper(filename, table_name+f'.references[{i}]', names_copy, p, refs, props)
-            i += 1
-    else:
-        props = [names]
-    properties.extend(props)
 
-    if "category_key" in prop:
-        ref = prop["category_key"]
-        ref["properties"] = props
-        ref["_source"] = f"{table_name} {'>'.join(names)}"
-        refs.append(ref)
-        del prop["category_key"]
-
-def category_replacer(filename, source, ref):
-    missing = []
-    if "category" not in ref:
-        utils.error_add(filename, f'{source} must have category')
+def key_update(filename, source, key, properties):
+    if not category_replacer(filename, source, key):
         return False 
 
-    # Find and replace the category
-    cat_id = "category:"+ref["category"]
-    if cat_id not in id_object:
-        utils.error_add(filename, f"{source}'s {cat_id} not found")
-        return False 
-        
-    cat = ref["category"] = copy.deepcopy(id_object[cat_id])
-    for key in ["filename","num_links_not_tag"]:
-        if key in cat:
-            del cat[key]
-    if "tags" in cat and len(cat["tags"]) == 0:
-        del cat["tags"]
+    key_id = key["category"]["id"]+"+"+key["category_key"]["id"]
 
-    # Find and replace the category
-    if "category_key" in ref:
-        category_key = ref["category_key"]
-        found = False
-        if "category_key" in id_object[cat_id]:
-            for n in id_object[cat_id]["category_key"]:
-                if n["id"] == category_key:
-                    ref["category_key"] = n
-                    found = True
-                    break
-            del ref["category"]["category_key"]
-
-        if not found:
-            del ref["category_key"]
-            utils.error_add(filename, f"{source}'s {cat_id}'s category_key {category_key} not found")
-            return False
-    return True
-
-def reference_update(filename, source, ref, properties):
-    if not category_replacer(filename, source, ref):
-        return False 
+    if "property" in key:
+        props = key["category_key"]["properties"]
+        if len(props) != 1:
+            utils.error_add(filename, f'{source} key {key_id} has property, but found {",".join(props)}')
+            return  False 
+        key["properties"] = {
+            key["property"]:props[0]
+        }
+        del key["property"]
 
     # must have both category and columns 
-    if "properties" not in ref:
-        utils.error_add(filename, f'{source} missing properties')
+    if "properties" not in key:
+        utils.error_add(filename, f'{source} {key_id} missing properties')
         return  False 
 
     # Check all the properties exist
-    missing = []
-    for prop in ref["properties"]:
+    col_key= "table.properties"
+    attr_key = "category,properties"
+    missing = {
+        col_key:[],
+        attr_key:[]
+    }
+    for prop,attr in key["properties"].items():
         if prop not in properties:
-            missing.append(prop)
-    if len(missing) > 0:
-        utils.error_add(filename, f'{source} unmatched columns: {", ".join(missing)}')
+            missing[col_key].append(prop)
+
+        if attr not in key["category_key"]["properties"]:
+            missing[attr_key].append(attr)
+    if len(missing[col_key]) > 0 or len(missing[attr_key]):
+        for k in [col_key, attr_key]:
+            if len(missin[k]) > 0:
+                utils.error_add(filename, f'{k} unmatched columns: {", ".join(missing[k])}')
         return False 
 
+    return True
+
+def category_replacer(filename, source, key):
+    missing = []
+    for k in ["category","category_key"]:
+        if k not in key:
+            missing.append(k)
+
+    if len(missing) > 0:
+        utils.error_add(filename, f'{source} must have {", ".join(missing)}')
+        return False 
+
+    # Find and replace the category
+    cat_id = key["category"]
+    if "category:" not in cat_id:
+        cat_id = "category:"+cat_id
+    if cat_id not in id_object:
+        utils.error_add(filename, f"{source} {cat_id} not found")
+        return False 
+        
+    cat = key["category"] = copy.deepcopy(id_object[cat_id])
+
+    # Find and replace the category
+    found = False
+    category_key = key["category_key"]
+    if "category_keys" in cat:
+        for c_k in cat["category_keys"]:
+            if c_k["id"] == category_key or c_k["id_short"] == category_key:
+                key["category_key"] = c_k
+                found = True
+                break
+
+    if not found:
+        utils.error_add(filename, f"{source}'s in {cat_id}'s category_key, '{category_key}' not found")
+        return False
+
+    # clean up 
+    for k in ["filename","num_links_not_tag", "category_keys"]:
+        if k in cat:
+            del cat[k]
+    if "tags" in cat and len(cat["tags"]) == 0:
+        del cat["tags"]
     return True
 
 ###################
@@ -1824,7 +1853,7 @@ def schema_load_category_from_file(fname):
         category = None
         linenum = 0
         for line in fin:
-            linenum ++ 1
+            linenum += 1
             values = line.rstrip().split("\t")
             if category_key_index is None:
                 for i, value in enumerate(values):
@@ -1844,6 +1873,7 @@ def schema_load_category_from_file(fname):
                     if i == 0:
                         if category is not None:
                             object_add("category", category)
+                            category_key = None
                         category = {
                             "filename":f'{fname}[{linenum}]',
                             "category_keys":[]
