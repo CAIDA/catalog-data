@@ -138,7 +138,7 @@ personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
 
 # We will be scoring based on the depth
-category_id_depth_file = "category_id_depth.json"
+category_id_score_file = "category_id_score.json"
 
 pubdb_links_file = "data/pubdb_links.json"
 
@@ -444,7 +444,7 @@ def main():
     # set up category depths
     #######################
     print ("processing categories")
-    category_id_depth = schema_process()
+    category_id_score = schema_process()
 
     #######################
     # parse out the words from the fields
@@ -565,8 +565,8 @@ def main():
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
 
-    print ("writing",category_id_depth_file)
-    json.dump(category_id_depth, open(category_id_depth_file,"w"),indent=indent)
+    print ("writing",category_id_score_file)
+    json.dump(category_id_score, open(category_id_score_file,"w"),indent=indent)
 
     #################
     for org,ids in organization_ids.items():
@@ -1539,6 +1539,7 @@ def word_add_plurals():
 #############################
 def schema_process():
     category_id_depth = {}
+    depth_max = 0
     for id_,obj in id_object.items():
         if "schema" in obj:
             for i, table in enumerate(obj["schema"]):
@@ -1567,18 +1568,43 @@ def schema_process():
                         key = key.copy()
                         category_keys_add(obj, "category_keys", key)
 
-                        cats = key["category"]["id"].split(".")
-                        for depth, cat in enumerate(reversed(cats)):
-                            if cat not in category_id_depth:
-                                category_id_depth[cat] = {}
-                            if id_ not in category_id_depth[cat] or category_id_depth[cat][id_] > depth:
-                                category_id_depth[cat][id_] = depth
-
                 if len(keys_clean) > 0:
                     table["keys"] = keys_clean
                 elif "keys" in table:
                     del table["keys"]
-    return category_id_depth
+
+        if obj["__typename"] != "Category" and "category_keys" in obj:
+            for key in obj['category_keys']:
+                cats = key["category"]["id"][9:].split(".")
+                name = None
+                depth = len(cats)
+                name_depths = []
+                for cat in cats:
+                    if name is None: 
+                        name = cat
+                    else:
+                        name += "."+cat
+                    name_depths.append([name, depth])
+                    depth -= 1
+                name_depths.append([key['category']['id_short'], 1])
+                    
+                for name, depth in name_depths:
+                    if name not in category_id_depth:
+                        category_id_depth[name] = {}
+                    if id_ not in category_id_depth[name] or category_id_depth[name][id_] > depth:
+                        category_id_depth[name][id_] = depth
+
+                    if depth_max < depth:
+                        depth_max = depth
+
+    category_id_score = {}
+    num_cats = len(category_id_depth)   
+    for category, id_depth in category_id_depth.items():
+        category_id_score[category] = {}
+        for id_,depth in id_depth.items():
+            category_id_score[category][id_] = pow(num_cats+1,depth_max-depth)
+    
+    return category_id_score
 
 def category_keys_add(obj, field_name, key):
 
