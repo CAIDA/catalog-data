@@ -5,6 +5,7 @@ internet.ip.prefix	ip.prefix	Internet Protocol (IP) prefix	A series of consecuti
 internet.ip.block	ip.block	Internet Protocol (IP) block	A series of consecutive IP addresses with a first and last address.		start-end		IANA IP space	start; end		
 internet.ip.path	ip.path	IP Path			ip_list	ip_list				
 internet.ip.port	port	Internet Port		https://en.wikipedia.org/wiki/Port_(computer_networking))	iana.port	number	IANA IP Port	port		https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt
+internet.ip.list	ip.list	IP List			traceroute		Traceroute	ip_list		
 internet.ip.flow	ip.flow	Internet IP Flow			5_tuple		Flow 5 Tuple	source ip; source port; destination ip; destination port; protocal		
 internet.ip.packet	ip.packet	IP Packet	Smallest message object echanged in Internet Protocal.		5_tuple			ip_source; ip_source_port ip_destination; ip_destination_port; protocal		
 internet.as	as	Autonomous System (AS)			iana.asn	number	IANA ASN space	asn		https://www.iana.org/assignments/as-numbers/as-numbers.xhtml

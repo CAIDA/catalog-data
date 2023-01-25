@@ -187,3 +187,10 @@ dataset:passive_2018_pcap				ip	iana.ip
 																
 dataset:passive_sampler				ip	iana.ip											
 				ip.packet	5_tuple											
+																
+dataset:ark_itdk				as	iana.asn											
+				router	caida_id											
+				hostname	name											
+				ip	iana.ip											
+				ip.path	traceroute											
+				city	name											
