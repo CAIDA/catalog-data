@@ -50,6 +50,7 @@ A search query can be generated from a search string by splitting the string int
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03` |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
      | links | comma separated list of object ids or strings <br> `links=paper:2021_wie2020_report,telescope` <br>This searches by neighbor.  Matches are neighbors of the id's object or objects with the string in a field.<br> In this example, it would search for all objects that are related to the 2021 Wie Report OR matches the string "telescope" anywhere in the object.|
+     | categories | command seperated list of category id or id_shorts. (internet.ip , ip, asn) | 
 
 - **id** 
 
@@ -83,6 +84,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida) | search for objects that do not have the tag `caida`|
 | [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and ark |
 | [links=bgpstream](https://catalog.caida.org/search?query=links=bgpstream) | search for objects with the word `bgpstream`  | 
+| [categories=ip.packet](https://catalog.caida.org/search?query=categories%3Dip.packet) | search for objects with the category `ip.packet` | 
 | [links=ipv4 !ipv6](https://catalog.caida.org/search?query=links=ipv4%20!ipv6) | search for objects that match `ipv4` but do not match the word `ipv6` |
 | [!links=dataset:as\_relationships\_serial_1 rank](https://catalog.caida.org/search?query=!links=dataset:as_relationships_serial_1%20rank) | it searches for search for objects with the word `rank` that are not linked to dataset:as_relationships_serial_1 | 
 | [types=dataset topology](https://catalog.caida.org/search?query=types=dataset%20topology) | search for datasets with the word `topology` in a text field |
