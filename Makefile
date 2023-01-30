@@ -21,9 +21,9 @@ END=`date +%s`
 
 ###### DAta Schema files
 DATA_SCHEMA_DATASETS=data/data-schema-datasets.tsv
-DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ Datasets\ -\ Sheet1.tsv 
+DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ for\ CAIDA\ Datasets\ -\ Sheet1.tsv 
 DATA_SCHEMA_CATEGORIES=data/data-schema-categories.tsv
-DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Data\ Schema\ Categories\ -\ Sheet1.tsv 
+DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Categories\ used\ in\ Schema\ for\ CAIDA\'s\ Datasets\ -\ Sheet1.tsv
 
 #########
 
@@ -80,7 +80,8 @@ data/pubdb_links.json:
 
 
 clean: clean_placeholders
-	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} suggestions.json
+	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} \
+		suggestions.json category_id_score.json
 
 clean_placeholders:
 	rm -f pubdb
