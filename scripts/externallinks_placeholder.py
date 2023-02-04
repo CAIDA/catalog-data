@@ -322,9 +322,6 @@ def parse_paper(fname, key_value):
                 else:
                     authors.append(author)
 
-            #print('-'*50)
-            #print(authors)
-            #print('-'*50)
             # Iterate over each author and add there an object for them.
             for author in authors:
                 author = author.strip()
