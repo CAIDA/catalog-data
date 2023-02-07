@@ -329,10 +329,13 @@ def parse_paper(fname, key_value):
                 if re.search("\s*,\s*",author):
                     last_name, first_name = re.split("\s*,\s*",author)
                 elif not re.search("^[a-z]+$", author, re.IGNORECASE):
-                    print ("unparseable", line[1])
-                    print ("    ",[last_name, first_name])
+                    print ("unparseable", author)
                     first_name = ""
                     last_name = author
+                else:
+                    first_name = ""
+                    last_name = author
+
                 author_id = add_author(fname, last_name, first_name);
                 
                 paper["authors"].append({
