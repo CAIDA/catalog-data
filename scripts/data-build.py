@@ -1043,6 +1043,7 @@ def personName_add(obj, person_id):
             personName_ids[name] = set()
         personName_ids[name].add(i)
 
+# Links info to obj
 def link_add(obj,info,p=False):
 
     a = []
@@ -1053,13 +1054,17 @@ def link_add(obj,info,p=False):
             if k in info:
                 a.append(info[k]);
     
+    # If info passed as a string, create its id based on its name
     if type(info) == str:
         id_original = info
         id_new = utils.id_create(obj["filename"],None,info)
+        # Stores link as a dictionary
         info = { "from":obj["id"], "to":id_new }
+    # If info passed as a dictionary
     else:
         if "to" in info:
             info["from"] = obj["id"]
+            # Stores original name of info
             id_original = info["to"]
             id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
         elif "from" in info:
@@ -1070,6 +1075,7 @@ def link_add(obj,info,p=False):
             utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
 
+    # Error
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
         return None
@@ -1107,6 +1113,14 @@ def link_add(obj,info,p=False):
                     id_id_link[a_id][b_id][key] = value
         else:
             id_id_link[a_id][b_id] = link
+
+    for a in id_id_link:
+        for b in id_id_link[a]:
+
+            print(f"PRINTING OBJS LINKED BY {a}")
+            print(b)
+            print("\n\n\n")
+
     return True
 
 #############################
