@@ -1816,13 +1816,15 @@ def data_load_from_summary(filename):
             catalog_id = metadata["catalog_id"]
             if catalog_id in id_object:
                 obj = id_object[catalog_id]
-                for key in ["dateStart","dateEnd","status"]:
+                # Overwrites the following fields, if found in dataset summary file
+                for key in ["dateStart","dateEnd","status", "doi"]:
                     if key in metadata:
                         if key in ["dateStart","dateEnd"]:
                             # FIXME: Quick fix; Need to normalize data format to YYYYMMDD
                             if (len(metadata[key]) == 8):
                                 obj[key] = datetime.datetime.strptime(metadata[key], "%Y%m%d").strftime("%Y-%m-%d")
-                        else:
+
+                        if key != "" or key is not None:
                             obj[key] = metadata[key]
             else:
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
