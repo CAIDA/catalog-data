@@ -171,7 +171,7 @@ dataset:2020_unintended_consequences				ip	iana.ip
 				hostname	name											
 				as	iana.asn											
 				city	iata3											
-				ip.path	ip_list											
+				ip.path	caida.warts											
 																
 dataset:passive_2019_pcap				ip	iana.ip											
 				ip.packet	5_tuple											

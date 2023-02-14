@@ -3,13 +3,16 @@ id	id_short	name	description	url	id	id_short	name	properties	description	url
 internet.ip.address	ip	IP Address	An Internet Protoocal address (IP address) is a numerical label a device connected to the Internet.	https://en.wikipedia.org/wiki/IP_address	iana.ip	ip	IANA IP space	ip		
 internet.ip.prefix	ip.prefix	Internet Protocol (IP) prefix	A series of consecutive IP addresses represented as a netmask X.X.X.X and a length /L (1.2.3.4/8).		network-length		IANA IP space	network; length		
 internet.ip.block	ip.block	Internet Protocol (IP) block	A series of consecutive IP addresses with a first and last address.		start-end		IANA IP space	start; end		
-internet.ip.path	ip.path	IP Path			ip_list	ip_list				
+internet.ip.traceroute	ip.traceroute	IP Traceroute			ascii	ascii		ip_source; ip_destinations; ip_hops		
+					caida.warts					
 internet.ip.port	port	Internet Port		https://en.wikipedia.org/wiki/Port_(computer_networking))	iana.port	number	IANA IP Port	port		https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt
-internet.ip.list	ip.list	IP List			traceroute		Traceroute	ip_list		
+internet.ip.path	ip.path	IP path			traceroute		Traceroute	ips		
+					caida.warts	warts	CAIDA warts trace			
 internet.ip.flow	ip.flow	Internet IP Flow			5_tuple		Flow 5 Tuple	source ip; source port; destination ip; destination port; protocal		
 internet.ip.packet	ip.packet	IP Packet	Smallest message object echanged in Internet Protocal.		5_tuple			ip_source; ip_source_port ip_destination; ip_destination_port; protocal		
 internet.as	as	Autonomous System (AS)			iana.asn	number	IANA ASN space	asn		https://www.iana.org/assignments/as-numbers/as-numbers.xhtml
 					whois.as_name	name	WHOIS AS name space	protocal		
+					asn_list	list	List of ASNs			
 internet.as.link	as.link	Autonomous System (AS) link			asn-asn		Pair of ASNs	asn0; asn1		
 internet.as.block	as.block	AS Block			start-end		Start and End ASNs	start; end		
 internet.as.cone	as.cone	AS cutomer cone			iana.asn	asn	ASN that identifies the custome cone	asn		
@@ -32,7 +35,7 @@ organization.ir	registry	Internet Registry (IR)			registry.registry_name	name	In
 rc_project	rc_project	Route Collection Projects	Projects collecting BGP tables		rc_project.rcp_name	name	RCP names	name		
 rc_project.bgp_collector	bgp_collector	RCP BGP Collector			rc_project.collector_name	name	RCP BGP Collector names	name		
 location	location	location			caida.ixp.geo_id		Location in CAIDA's IXP dataset	id		
-location.coordindate	lat_lon	Latitude and Longitude			usdod.wgs84	wgs84	World Geodetic system (WGS84)	latitude		
+location.coordindate	lat_lon	Latitude and Longitude			usdod.wgs84	wgs84	World Geodetic system (WGS84)	latitude; longitude		
 								longitude		
 location.airport	airport	Airports			iata.airport_alpha2	iata2	IATA airport code city	code		https://www.iata.org/en/publications/directories/code-search/
 					icao.airport_alpha3	iata3	ICAO airport code city	code		https://www.iata.org/en/publications/directories/code-search/
@@ -45,6 +48,7 @@ location.city	city	City			city_name	name	City Name (unknown source)	name
 					iata.alpha3	iata3	IATA airport codes city	code		https://www.iata.org/en/publications/directories/code-search/
 					address-postal_code-city-region-country	street		code; street; city; region; country		
 					city_name-region_iso2-country_iso2	name-region_iso2-country_iso2	Name, Region, and Country	name;  region; country		
+					city_name-country_iso2	name-country_iso2	Name and Country	name;  country		
 					netacuity.city_name	netacuity.name	Digital Element Netacuity city names	name		https://www.digitalelement.com/solutions/ip-location-targeting/
 					netacuity.city_id	netacuity.id	Digital Element Netacuity unique id	id		https://www.digitalelement.com/solutions/ip-location-targeting/
 					peeringdb.city_name	peerdb_name	PeeringDB city name	name		
