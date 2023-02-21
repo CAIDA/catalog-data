@@ -55,7 +55,7 @@ def print_help():
 ######################################################################
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", dest="force", help="forcing download", type=str)
-parser.add_argument("-l", dest="local_file", help="used if summaries can not be downloaded", type=str)
+parser.add_argument("-b", dest="backup_file", help="used if summaries can not be downloaded", type=str)
 parser.add_argument("-O", dest="output", help="saves to output", type=str)
 parser.add_argument("url",nargs=1, type=str,help="url")
 args = parser.parse_args()
@@ -79,10 +79,10 @@ except Exception as e:
 print("   downloading", url)
 request = requests.get(url)
 
-# If you fail, use the local file
+# If you fail, use the backup file
 if request.status_code != 200:
     print ("   Query failed to run returned code of %d " % (request.status_code))
-    with open (args.local_file,"r") as fin:
+    with open (args.backup_file,"r") as fin:
         for line in fin:
             fout.write(line)
     sys.exit()

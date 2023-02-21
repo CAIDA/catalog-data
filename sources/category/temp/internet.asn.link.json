@@ -1,10 +1,12 @@
 {
-    "id":"internet.as.link",
+    "id":"internet.asn.link",
+    "id_short":"asn.link",
     "name":"ASN Link",
     "description":"A link between two ASNs",
     "namespaces":[
         {
-            "id":"asn_asn",
+            "id":"paired_asn",
+            "id_short":"asn+asn",
             "name":"Paired ASNs"
         }
     ]

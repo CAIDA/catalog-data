@@ -4,3 +4,7 @@ bs4
 pyyaml
 requests
 jsonschema
+
+apiclient
+google-api-python-client
+

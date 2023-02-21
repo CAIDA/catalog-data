@@ -1,0 +1,72 @@
+q					category_keys					
+id	id_short	name	description	url	id	id_short	name	properties	description	url
+internet.ip.address	ip	IP Address	An Internet Protoocal address (IP address) is a numerical label a device connected to the Internet.	https://en.wikipedia.org/wiki/IP_address	iana.ip	ip	IANA IP space	ip		
+internet.ip.prefix	ip.prefix	Internet Protocol (IP) prefix	A series of consecutive IP addresses represented as a netmask X.X.X.X and a length /L (1.2.3.4/8).		network-length		IANA IP space	network; length		
+internet.ip.block	ip.block	Internet Protocol (IP) block	A series of consecutive IP addresses with a first and last address.		start-end		IANA IP space	start; end		
+internet.ip.traceroute	ip.traceroute	IP Traceroute			ascii	ascii		ip_source; ip_destinations; ip_hops		
+					caida.warts					
+internet.ip.port	port	Internet Port		https://en.wikipedia.org/wiki/Port_(computer_networking))	iana.port	number	IANA IP Port	port		https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.txt
+internet.ip.path	ip.path	IP path			traceroute		Traceroute	ips		
+					caida.warts	warts	CAIDA warts trace			
+internet.ip.flow	ip.flow	Internet IP Flow			5_tuple		Flow 5 Tuple	source ip; source port; destination ip; destination port; protocal		
+internet.ip.packet	ip.packet	IP Packet	Smallest message object echanged in Internet Protocal.		5_tuple			ip_source; ip_source_port ip_destination; ip_destination_port; protocal		
+internet.as	as	Autonomous System (AS)			iana.asn	number	IANA ASN space	asn		https://www.iana.org/assignments/as-numbers/as-numbers.xhtml
+					whois.as_name	name	WHOIS AS name space	protocal		
+					asn_list	list	List of ASNs			
+internet.as.link	as.link	Autonomous System (AS) link			asn-asn		Pair of ASNs	asn0; asn1		
+internet.as.block	as.block	AS Block			start-end		Start and End ASNs	start; end		
+internet.as.cone	as.cone	AS cutomer cone			iana.asn	asn	ASN that identifies the custome cone	asn		
+internet.as.path	as.path	Autonomous System (AS) path			asn_list	asn_list	ASN List 	asn_list		
+					project-collector-peer_asn-asn.path-ip.prefix		ASN Path with project, collector, IP peer, ASN path, and peer IP 	project; collector; peer ip; asn.path; ip.prefix		
+internet.ixp	ixp	Internet eXchange Point			caida.ixp_id	caida_id	CAIDA's IXP IDs	id		https://www.caida.org/catalog/datasets/ixps/
+					pch.ixp_id	pch_id	Packetclearing House IXP ID	id		
+					peeringdb.ixp_id	pdb_id	PeeringDB IXP ID	id		
+internet.ixp.facility	ixp.facility	IXP Facility 			peeringdb.fac_id	pdb_fac_id	PeeringDB IXP Facility ID	id		
+internet.ixp.name	ixp.name	IXP name			caida.ixp_name	caida_name	CAIDA's name for an IXP	name		
+internet.hostname	hostname	Internet hostname			doman_name_space	name	Doman Name Space 	name		
+internet.router	router	Internet router	A computer which routers packets on the Internet.		caida.itdk.router_id	caida_id	CAIDA's ITDK router ID	id		
+organization	org	organization			caida.org_id	caida_id	CAIDA org Id	id		
+					whois.registry.org_name	whois_name	WHOIS Internet Registry organization name	name		
+					rir.org_opaqueid	rir_id	WHOIS organization opaque ID	id		
+					peeringdb.org_id	peerdb_id		id		
+					stock_market.stock_symbol	stock_sym	Stock Market company stock symbols	symbol		https://en.wikipedia.org/wiki/Ticker_symbol
+organization.gtld	gtld	Global Top Level Domains			gtld.name	name		name		
+organization.ir	registry	Internet Registry (IR)			registry.registry_name	name	Internet Regerstery organization name space	name		https://www.nro.net/about/rirs/the-internet-registry-system/
+rc_project	rc_project	Route Collection Projects	Projects collecting BGP tables		rc_project.rcp_name	name	RCP names	name		
+rc_project.bgp_collector	bgp_collector	RCP BGP Collector			rc_project.collector_name	name	RCP BGP Collector names	name		
+location	location	location			caida.ixp.geo_id		Location in CAIDA's IXP dataset	id		
+location.coordindate	lat_lon	Latitude and Longitude			usdod.wgs84	wgs84	World Geodetic system (WGS84)	latitude; longitude		
+								longitude		
+location.airport	airport	Airports			iata.airport_alpha2	iata2	IATA airport code city	code		https://www.iata.org/en/publications/directories/code-search/
+					icao.airport_alpha3	iata3	ICAO airport code city	code		https://www.iata.org/en/publications/directories/code-search/
+location.address	address	Street Address			address	street-postal_code-city-region-country		street; postal; city; region; country		
+					street_address	street		address		
+location.postal_code	postal	Postal Code 			postal_code	code		code		
+location.city	city	City			city_name	name	City Name (unknown source)	name		
+					geonames.city_name	geo_name	Geonames City names	name		
+					iconectiv.clli	cilli6		code		
+					iata.alpha3	iata3	IATA airport codes city	code		https://www.iata.org/en/publications/directories/code-search/
+					address-postal_code-city-region-country	street		code; street; city; region; country		
+					city_name-region_iso2-country_iso2	name-region_iso2-country_iso2	Name, Region, and Country	name;  region; country		
+					city_name-country_iso2	name-country_iso2	Name and Country	name;  country		
+					netacuity.city_name	netacuity.name	Digital Element Netacuity city names	name		https://www.digitalelement.com/solutions/ip-location-targeting/
+					netacuity.city_id	netacuity.id	Digital Element Netacuity unique id	id		https://www.digitalelement.com/solutions/ip-location-targeting/
+					peeringdb.city_name	peerdb_name	PeeringDB city name	name		
+										
+location.region	region	Region			region_name	name	Region Name (unknown source)	name		
+					iso.region_alpha2	iso2		code		
+					geonames.region_name	geo_name				
+location.country	country	Country			country_name	name	Country Name (unknown source)	name		http://download.geonames.org/export/dump/
+					geonames.country_name	geo_name	Geonames Country names	name		http://download.geonames.org/export/dump/
+					name-country_iso2		Name and Country ISO 2 	name; country		
+					iso.alpha2	iso2	ISO 3166-1 alpha-2	code		https://www.iso.org/iso-3166-country-codes.html
+					iso.alpha3	iso3	ISO 3166-1 alpha-3	code	ISO 3166-1 alpha-2 codes are two-letter country codes defined in ISO 3166-1, part of the ISO 3166 standard[1] published by the International Organization for Standardization (ISO), to represent countries, dependent territories, and special areas of geographical interest. They	https://www.iso.org/iso-3166-country-codes.html
+location.country.capital	capital	Country Capital			geonames.capital_name	geo_name	Geonames Capital names	name		http://download.geonames.org/export/dump/
+location.continent	continent	Continent			continent_name	name	Continent Name (unknown source)	name		
+					geoname.name	geo_name	Geonames Continent name	name		
+					iso.alpha2	iso2	ISO 3166-1 alpha-2	code		
+language	language	Language			iana.alpha2	iana2	IETF language code	code		https://datatracker.ietf.org/wg/ltru/about//
+					name	name	langauge name	name		
+time	time	Time			unix.timestamp	unix	UNIX Timestamp	timestamp		
+person	person	Person			usa.ssn	us_ssn	US Social Security Number	ssn		
+					full_name	full_name	Full Name	family name; given name		

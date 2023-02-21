@@ -7,6 +7,8 @@ personName_ids.json
 type_ids.json
 suggestions.json
 id_words.json
+category_id_depth.json
+organization_ids.json
 # generated from pubdb
 sources/*/*__pubdb.json
 sources/*/*__externallinks.json
@@ -21,4 +23,5 @@ node_modules/*
 env/*
 catalog-data-caida
 data/_catalog-dataset-summary.jsonl
+data/catalog-dataset-summary.jsonl
 data/_ids.txt
