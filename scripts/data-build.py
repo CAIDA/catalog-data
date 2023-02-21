@@ -1060,8 +1060,6 @@ def link_add(obj,info,p=False):
         else:
             if k in info:
                 a.append(info[k]);
-    
-    
 
     # If info passed as a string, create its id based on its name
     if type(info) == str:
@@ -1092,12 +1090,9 @@ def link_add(obj,info,p=False):
     #   - if 
     # If from == null or to == null or to == from return
 
-    # Error
-
     id_original = info["from"] = redirect_replace(info["from"])
     id_new = info["to"] = redirect_replace(info["to"])
 
-    
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
         return None
@@ -1777,7 +1772,9 @@ def load_redirects():
     with open(filename) as fin:
         for row in fin:
             lineCounter += 1
+            # Skip csv comments
             if row[0] == "#": continue
+            # Extract fields of csv
             rowList = row.split(",")
             old_id = rowList[0].lstrip().rstrip()
             new_id = rowList[1].lstrip().rstrip()
@@ -1796,11 +1793,5 @@ def load_redirects():
                     redirect_id_id[old_id] = new_id
             else:
                 continue
-                #error = f"Line {lineCounter} is wrongly formatted"
-                #utils.error_add(filename, error)
-    
-    #print(f"Size of redirect_id_id is {len(redirect_id_id)}")
-    #for key in redirect_id_id.keys():
-        #print(f"{key}->{redirect_id_id[key]}")
 
 main()
