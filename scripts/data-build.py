@@ -84,7 +84,7 @@ id_id_link = {}
 organization_ids = {}
 
 # Added for loading redirects
-redirect_replace = {}
+redirect_id_id = {}
 
 # Score weights
 # The score encodes that the word exist at a given level.
@@ -215,6 +215,8 @@ else:
 id_in_catalog = set()
 
 def main():
+    # Load redirects
+    load_redirects()
 
     # Load ids from the catalog
     if args.ids_file:
@@ -241,6 +243,8 @@ def main():
     #######################
     #######################
     seen_id = {}
+
+    
 
     #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
@@ -1090,8 +1094,9 @@ def link_add(obj,info,p=False):
 
     # Error
 
-    #info["from"] = redirect_replace(info["from"])
-    #info["to"] = redirect_replace(info["to"])
+    id_original = info["from"] = redirect_replace(info["from"])
+    id_new = info["to"] = redirect_replace(info["to"])
+
     
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
@@ -1761,7 +1766,41 @@ def redirects_add(filename):
                         utils.error_add(filename,"failed to parse id: "+id_)
             
 def redirect_replace(id):
-    if id in id_id_link:
-        return id_id_link[id]
+    if id in redirect_id_id.keys():
+        return redirect_id_id[id]
+    else:
+        return id
+
+def load_redirects():
+    filename = "data/redirects.csv"
+    lineCounter = 1
+    with open(filename) as fin:
+        for row in fin:
+            lineCounter += 1
+            if row[0] == "#": continue
+            rowList = row.split(",")
+            old_id = rowList[0].lstrip().rstrip()
+            new_id = rowList[1].lstrip().rstrip()
+            url = rowList[2].lstrip().rstrip()
+            description = rowList[3].lstrip().rstrip()
+
+            # If no url then redirect to new object
+            if url == "" and description == "true":
+                if new_id in redirect_id_id:
+                    if old_id in redirect_id_id:
+                        utils.error_add("loop redirect")
+                        continue
+                    else:
+                        redirect_id_id[old_id] = redirect_id_id[new_id]
+                else:
+                    redirect_id_id[old_id] = new_id
+            else:
+                continue
+                #error = f"Line {lineCounter} is wrongly formatted"
+                #utils.error_add(filename, error)
+    
+    #print(f"Size of redirect_id_id is {len(redirect_id_id)}")
+    #for key in redirect_id_id.keys():
+        #print(f"{key}->{redirect_id_id[key]}")
 
 main()
