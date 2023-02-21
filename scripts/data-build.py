@@ -1759,13 +1759,16 @@ def redirects_add(filename):
                         }
                     else:
                         utils.error_add(filename,"failed to parse id: "+id_)
-            
+
+# Replace id with its redirect, call after load_redirects() is executed           
 def redirect_replace(id):
     if id in redirect_id_id.keys():
         return redirect_id_id[id]
     else:
         return id
 
+# This function saves all redirects into the dictionary redirect_id_id
+# It only works for object to object redirects
 def load_redirects():
     filename = "data/redirects.csv"
     lineCounter = 1
@@ -1791,7 +1794,7 @@ def load_redirects():
                         redirect_id_id[old_id] = redirect_id_id[new_id]
                 else:
                     redirect_id_id[old_id] = new_id
-            else:
+            else: 
                 continue
 
 main()
