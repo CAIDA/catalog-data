@@ -83,6 +83,9 @@ id_paper = {}
 id_id_link = {}
 organization_ids = {}
 
+# Added for loading redirects
+redirect_replace = {}
+
 # Score weights
 # The score encodes that the word exist at a given level.
 WORD_SCORE_WEIGHT = {
@@ -1054,6 +1057,8 @@ def link_add(obj,info,p=False):
             if k in info:
                 a.append(info[k]);
     
+    
+
     # If info passed as a string, create its id based on its name
     if type(info) == str:
         id_original = info
@@ -1074,8 +1079,20 @@ def link_add(obj,info,p=False):
         else:
             utils.error_add(obj["filename"],"link has no from or to"+json.dumps(info))
             return None
+    #Have supposedly correct ids
+    # Write a new function redirect_replace_id
+    #   - If id in id_to_replaceid_cache
+    #       - return id_to_replaceid_cache[id]
+    # Write a new function add_replace_id (id_old, id_new)
+    #   - Search through id_to_replaceid_cache
+    #   - if 
+    # If from == null or to == null or to == from return
 
     # Error
+
+    #info["from"] = redirect_replace(info["from"])
+    #info["to"] = redirect_replace(info["to"])
+    
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
         return None
@@ -1116,10 +1133,8 @@ def link_add(obj,info,p=False):
 
     for a in id_id_link:
         for b in id_id_link[a]:
+            pass
 
-            print(f"PRINTING OBJS LINKED BY {a}")
-            print(b)
-            print("\n\n\n")
 
     return True
 
@@ -1690,11 +1705,28 @@ def data_load_from_summary(filename):
 
 def redirects_add(filename):
     re_empty = re.compile("^\s*$")
+    # Goes through redirects.csv 
     with open ("data/redirects.csv") as fin:
         keys = None
         for row in csv.reader(fin, delimiter=',',quotechar='"'):
             if len(row) < 0 or row[0][0] == '#':
                 continue
+
+            # Added Parts for redirects tree
+
+            #from_id = row[0]
+            #to_id = row[1]
+
+            #if to_id in id_id_link:
+                #if from_id in id_id_link:
+                    #utils.error_add("loop redirects")
+                    #continue
+                #else:
+                    #id_id_link[from_id] = id_id_link[to_id]
+            #else:
+                #id_id_link[from_id] = to_id
+
+            #-------------------------------
             row = list(map(str.strip, row)) 
             if keys == None:
                 keys = row
@@ -1728,6 +1760,8 @@ def redirects_add(filename):
                     else:
                         utils.error_add(filename,"failed to parse id: "+id_)
             
-
+def redirect_replace(id):
+    if id in id_id_link:
+        return id_id_link[id]
 
 main()
