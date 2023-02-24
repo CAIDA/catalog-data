@@ -1568,19 +1568,20 @@ def schema_process():
                 table_build_keys_properties(obj["filename"], table_name, table, keys, properties)
 
                 table["keys"] = []
-                keys_clean = []
-                seen = set() 
                 for key in keys:
-                    source = key["_source"]
-                    del key["_source"]
-                    if key_replace_ids(obj["filename"], source, key):
-                        if key_check_properties(obj["filename"], source, key, properties):
-                            category_keys_add(table, "keys", key)
-                            category_keys_add(obj, "category_keys", key)
+                    if "_source" in key:
+                        source = key["_source"]
+                        del key["_source"]
+                    else:
+                        source = table_name+'["keys"]'
 
-                if len(keys_clean) > 0:
-                    table["keys"] = keys_clean
-                elif "keys" in table:
+                    if key_update(obj["filename"], source, key, properties):
+                        link_add(obj, { "to":key["category"]["id"]})
+                        category_keys_add(table, "keys", key)
+                        key = key.copy()
+                        category_keys_add(obj, "category_keys", key)
+
+                if len(table["keys"]) < 1:
                     del table["keys"]
 
         #for dataset in datasets:
@@ -1737,7 +1738,7 @@ def key_check_properties(filename, source, key, properties):
             missing[attr_key].append(attr)
     if len(missing[col_key]) > 0 or len(missing[attr_key]):
         for k in [col_key, attr_key]:
-            if len(missin[k]) > 0:
+            if len(missing[k]) > 0:
                 utils.error_add(filename, f'{k} unmatched columns: {", ".join(missing[k])}')
         return False 
 
@@ -1790,7 +1791,6 @@ def id_lookup(id_):
         return id_
 
     yearless = id_yearless(id_)
-    print ("looking from",yearless)
     if id_yearless in name_id:
         return name_id[id_yearless]
 
