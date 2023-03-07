@@ -215,7 +215,7 @@ else:
 id_in_catalog = set()
 
 def main():
-    # Load redirects
+    # Load Redirects
     load_redirects()
 
     # Load ids from the catalog
@@ -384,7 +384,9 @@ def main():
     ####################
     if args.redirects_file:
         print ("adding redirects:",args.redirects_file)
-        redirects_add(args.redirects_file)
+        load_redirects()
+        # Calling old redirects_Add
+        # redirects_add(args.redirects_file)
 
     #######################
     # duplicate slide resources
@@ -1711,22 +1713,6 @@ def redirects_add(filename):
         for row in csv.reader(fin, delimiter=',',quotechar='"'):
             if len(row) < 0 or row[0][0] == '#':
                 continue
-
-            # Added Parts for redirects tree
-
-            #from_id = row[0]
-            #to_id = row[1]
-
-            #if to_id in id_id_link:
-                #if from_id in id_id_link:
-                    #utils.error_add("loop redirects")
-                    #continue
-                #else:
-                    #id_id_link[from_id] = id_id_link[to_id]
-            #else:
-                #id_id_link[from_id] = to_id
-
-            #-------------------------------
             row = list(map(str.strip, row)) 
             if keys == None:
                 keys = row
