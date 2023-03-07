@@ -1830,8 +1830,7 @@ def data_load_from_summary(filename):
                             # FIXME: Quick fix; Need to normalize data format to YYYYMMDD
                             if (len(metadata[key]) == 8):
                                 obj[key] = datetime.datetime.strptime(metadata[key], "%Y%m%d").strftime("%Y-%m-%d")
-
-                        if key != "" or key is not None:
+                        elif key != "" or key is not None:
                             obj[key] = metadata[key]
             else:
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
