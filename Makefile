@@ -37,7 +37,11 @@ fast:
 human:readable
 read:readable
 readable:
-	make DATA_BUILD_OPTS="-R ${DATA_BUILD_OPTS}" fast
+	make DATA_BUILD_OPTS="-RD ${DATA_BUILD_OPTS}" fast
+
+readdata:
+	make DATA_BUILD_OPTS="-RD ${DATA_BUILD_OPTS}" data
+
 
 data: build
 build:

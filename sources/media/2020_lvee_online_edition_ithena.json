@@ -38,12 +38,6 @@
             ],
             "access": "public"
         }
-    ],
-    "authors":[
-        {
-            "person": "person:swierczewski__lukasz",
-            "organizations": ["Cyber-Complex Foundation, Poland"]
-        }
     ]
 }
 
