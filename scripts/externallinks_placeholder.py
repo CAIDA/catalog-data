@@ -297,6 +297,11 @@ def parse_paper(fname, key_value):
         "resources":[],
     }
 
+    if "TITLE" in key_value: 
+        title = key_value["TITLE"]
+        paper["name"] = title
+
+
     re_year = re.compile("(\d\d\d\d)")
     re_year_month = re.compile("(\d\d\d\d).(\d\d)")
     for key, value in key_value.items():
@@ -329,7 +334,7 @@ def parse_paper(fname, key_value):
                 if re.search("\s*,\s*",author):
                     last_name, first_name = re.split("\s*,\s*",author)
                 elif not re.search("^[a-z]+$", author, re.IGNORECASE):
-                    print ("unparseable", author)
+                    print ("unparseable", '"'+author+'" in "'+title+'"', file=sys.stderr)
                     first_name = ""
                     last_name = author
                 else:
@@ -342,10 +347,6 @@ def parse_paper(fname, key_value):
                     "person":author_id
                 })
                     
-        elif "TITLE" == key:
-            title = value
-            paper["name"] = title
-
         elif "YEAR" in key:
             date_str = value
             m = re_year_month.search(date_str)

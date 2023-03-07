@@ -213,6 +213,11 @@ else:
 # used if the catalog-data-caida directory is not here
 id_in_catalog = set()
 
+################################
+# Category to Object Map
+################################
+category_object = {}
+
 def main():
 
     # Load ids from the catalog
@@ -433,6 +438,10 @@ def main():
     ######################
     print ("Adding schema's categories from",args.schema_category_file)
     schema_load_category_from_file(args.schema_category_file)
+
+    ####################
+    print ("Build Category Object map")
+    category_object_build()
 
     ######################
     # Load data schema for datasets from file
@@ -1537,23 +1546,28 @@ def word_add_plurals():
 
 
 #############################
+
+def category_object_build():
+    for obj in id_object.values():
+        if obj["__typename"] == "Category":
+            category_object[obj["id"][9:]] = obj
+            category_object[obj["id_short"]] = obj
+
 def schema_process():
     category_id_depth = {}
     depth_max = 0
+
     for id_,obj in id_object.items():
-        if "schema" in obj:
+        if False and "schema" in obj:
+            print (obj["id"],"schema  ------------------------")
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
 
-                if "keys" in table:
-                    keys = table["keys"]
-                else:
-                    keys = []
-
+                keys = []
                 properties = set()
                 table_build_keys_properties(obj["filename"], table_name, table, keys, properties)
 
-                keys_clean = []
+                table["keys"] = []
                 for key in keys:
                     if "_source" in key:
                         source = key["_source"]
@@ -1562,16 +1576,18 @@ def schema_process():
                         source = table_name+'["keys"]'
 
                     if key_update(obj["filename"], source, key, properties):
-                        keys_clean.append(key)
                         link_add(obj, { "to":key["category"]["id"]})
                         category_keys_add(table, "keys", key)
                         key = key.copy()
                         category_keys_add(obj, "category_keys", key)
 
-                if len(keys_clean) > 0:
-                    table["keys"] = keys_clean
-                elif "keys" in table:
+                if len(table["keys"]) < 1:
                     del table["keys"]
+
+        #for dataset in datasets:
+        #    if "category_keys" in dataset:
+        #        dataset["category_keys"] \
+        #                    = sorted(dataset["category_keys"],key=lambda c:[c["category"]["id"],c["category_key"]["id"]])
 
         if obj["__typename"] != "Category" and "category_keys" in obj:
             for key in obj['category_keys']:
@@ -1606,27 +1622,6 @@ def schema_process():
     
     return category_id_score
 
-def category_keys_add(obj, field_name, key):
-
-    if field_name not in obj:
-        obj[field_name] = []
-    else:
-        for r in obj[field_name]:
-            if r["category"]["id"] == key["category"]["id"] and r["category_key"]["id"] == key["category_key"]["id"]:
-                return
-
-    if "category_keys" in key["category"]:
-        cat = key["category"].copy()
-        del cat["category_keys"]
-        key["category"] = cat
-
-    obj[field_name].append({
-        "category":key["category"],
-        "category_key":key["category_key"]
-    })
-    if "__typename" in obj:
-        link_add(obj, {"to":key["category"]["id"]})
-
 
 def table_build_keys_properties(filename, table_name, table, keys, properties):
     if "properties" in table:
@@ -1652,10 +1647,64 @@ def table_build_keys_properties_helper(filename, table_name, names, prop, keys, 
                 keys.append(key)
                 del prop["key"]
 
+def category_keys_add(obj, field_name, key):
 
-def key_update(filename, source, key, properties):
-    if not category_replacer(filename, source, key):
+    if field_name not in obj:
+        obj[field_name] = []
+    else:
+        for k in obj[field_name]:
+            if k["category"]["id"] == key["category"]["id"] and k["category_key"]["id"] == key["category_key"]["id"]:
+                return
+    # clean up 
+    key = copy.deepcopy(key)
+    if "category_keys" in key["category"]:
+        del key["category"]["category_keys"]
+    if "properties" in key["category_key"]:
+        del key["category_key"]["properties"]
+    if "category_keys" == field_name and "properties" in key:
+        del key["properties"]
+
+    if "__typename" in obj:
+        link_add(obj, {"to":key["category"]["id"]})
+    obj[field_name].append(key)
+
+def key_replace_ids(filename, source, key, properties= None):
+    missing = []
+    for k in ["category","category_key"]:
+        if k not in key:
+            missing.append(k)
+
+    if len(missing) > 0:
+        utils.error_add(filename, f'{source} must have {", ".join(missing)}')
         return False 
+
+    # Find and replace the category
+    cat_id = key["category"]
+    if cat_id not in category_object:
+        utils.error_add(filename, f"{source} {cat_id} not found")
+        return False 
+        
+    cat = key["category"] = category_object[cat_id]
+
+    # Find and replace the category
+    found = False
+    category_key = key["category_key"]
+    if "category_keys" in cat:
+        for c_k in cat["category_keys"]:
+            if c_k["id"] == category_key or c_k["id_short"] == category_key:
+                key["category_key"] = c_k
+                found = True
+                break
+
+    if not found:
+        utils.error_add(filename, f"{source}'s in {cat_id}'s category_key, '{category_key}' not found")
+        return False
+
+    if properties is not None and not key_check_properties(filename, source, key, properties):
+        return False
+    return True
+
+def key_check_properties(filename, source, key, properties):
 
     key_id = key["category"]["id"]+"+"+key["category_key"]["id"]
 
@@ -1689,53 +1738,12 @@ def key_update(filename, source, key, properties):
             missing[attr_key].append(attr)
     if len(missing[col_key]) > 0 or len(missing[attr_key]):
         for k in [col_key, attr_key]:
-            if len(missin[k]) > 0:
+            if len(missing[k]) > 0:
                 utils.error_add(filename, f'{k} unmatched columns: {", ".join(missing[k])}')
         return False 
 
     return True
 
-def category_replacer(filename, source, key):
-    missing = []
-    for k in ["category","category_key"]:
-        if k not in key:
-            missing.append(k)
-
-    if len(missing) > 0:
-        utils.error_add(filename, f'{source} must have {", ".join(missing)}')
-        return False 
-
-    # Find and replace the category
-    cat_id = key["category"]
-    if "category:" not in cat_id:
-        cat_id = "category:"+cat_id
-    if cat_id not in id_object:
-        utils.error_add(filename, f"{source} {cat_id} not found")
-        return False 
-        
-    cat = key["category"] = copy.deepcopy(id_object[cat_id])
-
-    # Find and replace the category
-    found = False
-    category_key = key["category_key"]
-    if "category_keys" in cat:
-        for c_k in cat["category_keys"]:
-            if c_k["id"] == category_key or c_k["id_short"] == category_key:
-                key["category_key"] = c_k
-                found = True
-                break
-
-    if not found:
-        utils.error_add(filename, f"{source}'s in {cat_id}'s category_key, '{category_key}' not found")
-        return False
-
-    # clean up 
-    for k in ["filename","num_links_not_tag", "category_keys"]:
-        if k in cat:
-            del cat[k]
-    if "tags" in cat and len(cat["tags"]) == 0:
-        del cat["tags"]
-    return True
 
 ###################
 # Duplicate slide resources in access
@@ -1783,7 +1791,6 @@ def id_lookup(id_):
         return id_
 
     yearless = id_yearless(id_)
-    print ("looking from",yearless)
     if id_yearless in name_id:
         return name_id[id_yearless]
 
@@ -1931,11 +1938,7 @@ def schema_load_datasets_from_file(filename):
         datasets = []
         seen = set()
 
-        category_object = {}
-        for obj in id_object.values():
-            if obj["__typename"] == "Category":
-                category_object[obj["id"][9:]] = obj
-                category_object[obj["id_short"]] = obj
+        temp="""
 
         linenum = 0
         for line in fin:
@@ -1982,9 +1985,32 @@ def schema_load_datasets_from_file(filename):
                                     utils.error_add(f"{filename}[{linenum}]",f"failed to find {cat['id']}'s category_key {nam}")
                             else:
                                 utils.error_add(f"{filename}[{linenum}]",f"failed to find category {cat}")
-        for dataset in datasets:
-            if "category_keys" in dataset:
-                dataset["category_keys"] \
-                            = sorted(dataset["category_keys"],key=lambda c:[c["category"]["id"],c["category_key"]["id"]])
+"""
+        linenum = 0
+        for line in fin:
+            linenum += 1
+            values = line.rstrip().split("\t")
+            if keys is None:
+                keys = values
+            else:
+                if not re_empty.search(values[0]):
+                    i = values[0]
+                    if i in id_object:
+                        dataset = id_object[i]
+                        datasets.append(dataset)
+                        seen = set()
+                    else:
+                        utils.error_add(f'{filename}[{linenum}]', f"failed to find dataset {i}")
+                        dataset = None
+                if dataset is not None:
+                    cat_nam  = None
+                    for i,value in enumerate(values):
+                        if keys[i] == "category" and not re_empty.search(value) and i+1 < len(values) and not re_empty.search(values[i+1]):
+                            key = {
+                                "category":value,
+                                "category_key":values[i+1]
+                            }
+                            if key_replace_ids(filename, f"line [{linenum}", key):
+                                category_keys_add(dataset, "category_keys", key)
 
 main()
