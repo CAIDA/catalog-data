@@ -85,7 +85,7 @@ data/pubdb_links.json:
 
 clean: clean_placeholders
 	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} \
-		suggestions.json category_id_score.json
+		suggestions.json category_id_score.json category_id_depth.json
 
 clean_placeholders:
 	rm -f pubdb
