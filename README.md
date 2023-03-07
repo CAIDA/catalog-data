@@ -12,6 +12,7 @@ The Makefile supports the following commands:
 - [how to contribute to the catalog](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute)
      - [how to contribute a recipe](https://github.com/CAIDA/catalog-data/wiki/how-to-contribute-a-recipe)
 - [data-papers.yaml format](https://wiki.caida.org/twiki/bin/view/CAIDA/ExternalDataPaperEntry)
+- [how to test your code](https://github.com/CAIDA/catalog-data/wiki/How-to-test)
 
 
 ### code 

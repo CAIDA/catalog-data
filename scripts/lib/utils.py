@@ -20,7 +20,7 @@ def id_create(filename, type_, id_=None):
     elif type_ is not None:
         name = id_
     else:
-        raise Exception(filename+" "+id_+" has key 'type, but 'type' is None")
+        return None
 
     if type_ == "person":
         if "__" in name or "," in name:

@@ -1,0 +1,196 @@
+dataset	table	field	attribute	category	category_key	self	attributes	category	category_key	self	attribute	category	category_key	self	no category	notes
+dataset:as_classification	ASN Classication	asn		as	iana.asn	S									rank,cliqueMember,seen,ixp,cone, asnDegree,announcing	
+	primary: as															
+																
+dataset:as_rank	ASN Information	asn		as	iana.asn	S									rank,cliqueMember,seen,ixp,cone, asnDegree,announcing	
+	primary: as	name		as	name	S										
+	primary keys: asn	orgId		organization	caida.org_id											
+		longitude	longitude	lat_lon	usdod.wgs84											
+		latitude	latitude													
+		country		country	iso.alpha2											
+		source		registry	name	S										
+	Organization	orgId		organization	caida.org_id	S									cone,--iana.asnAsns, --iana.asnPrefixes, --iana.asnAddresses, asnDegree, --total, --transit, --provider, --peer, --customer, --silbing, orgDegree	
+	primary:organization	orgName		organization	whois_name	S										
+	primary keys:orgId	country														
+	Country	├ iso		country	iso.alpha2	S										http://download.geonames.org/export/dump/
+	primary:country	├ name		country	geo_name	S										
+	pimary keys: iso	├ languages		language	iana.alpha2											
+		├ capital		city	geo_name											
+		└continent		continent	iso.alpha2											
+		source		registry	name											
+	AsnLink	asn0		as	iana.asn		asn0	as.link	asn-asn	S					rank. iana.asnPaths, relationship	
+	primary: as.link	asn1		as	iana.asn		asn1									
+	primary keys: asn0, asn1															
+																
+dataset:as_relationships_geo	ASN Link Locations	asn0		as	iana.asn		asn0	as.link	asn-asn							
+	primary: as.link	asn1		as	iana.asn		asn1									
+	primary keys: asn0, asn1	locations		city	netacuity.city_name											
+	Citites	lid		city	name-region_iso2-country_iso2	S									pop	
+	primary:city	continent		continent	iso2											
+	prinary keys: lid	country		country	iso2											
+		region		region	iso2											
+		lat	latitude	lat_lon	wgs84											
+																
+		lon	longitude													
+																
+dataset:as_relationships_serial_1	ASN Paths All	project		rc_project	rc_project.rcp_name						project	as.path	project-collector-peer_asn-asn.path-ip.prefix	S	frequency	
+	primary: as.paths	collector		bgp_collector	rc_project.collector_name						collector					
+	primary keys: (everything)	as path		as.path	asn_list						asn_list					
+	filename: (date).all-paths.bz	network		ip	iana.ip		network	ip.prefix	network-length		network					
+		length					length				length					
+		peer ip		ip	iana.ip						peer_ip					
+	Input Clique	as		as	iana.asn	S										
+	primary: as															
+	filename: (date).as-rel.txt.bz2															
+	IXP ASes	as		as	iana.asn	S										
+	category: as															
+	AS Relationships	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
+	primary: as.link	asn1		as	iana.asn		asn1									
+	primary keys: asn0, asn1	relationship														
+	ASN Assigned	asn first		as	iana.asn		start	as.block	start-end	S						
+	primary: as.block	asn end		as	iana.asn		end									
+	primary keys: asn start, asn end															
+	filename: (date).assigned.txt.bz2															
+	ASN Paths	asn path		as	iana.asn			as.path	asn_list	s						
+	primary: as.path															
+	filename: (date).path.txt.bz2															
+	ASN Customer Cone	asn		as	iana.asn			as.cone	iana.asn	S						
+	primary: as.customer_cone	members		as	iana.asn											
+	primary keys: asn															
+	fiename:(date).ppc-ases.txt.bz2															
+																
+dataset:as_relationships_serial_2	AS Relationships	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
+	primary: as.link	asn1		as	iana.asn		asn1									
+	primary keys: asn_link	relationship														
+																
+dataset:as_organizations	Autonmous System	aut		as	iana.asn	S									changed	
+	primary: as	aut_name		as	name	S										
+	primary keys: aut	org_id		organization	caida.org_id											
+		opaque_id		organization	whois_name											
+		source		registry	name											
+	Organization	org_id		organization	caida.org_id	S									changed	
+	category:organization	name		organization	whois.registry.org_name	S										
+	primary keys: org_id	country		country	iso.alpha2											
+		source		registry	name											
+																
+dataset:ark_ipv4_aslinks	ASN LINKS	asn0		as	iana.asn		asn0	as.link	asn-asn	S						
+		asn1		as	iana.asn		asn1									
+																
+dataset:ark_ipv4_tnt	TNT MPLS	src		ip	iana.ip											
+	file:(monitor).tnt.*tar	dst		ip	iana.ip											
+		start>sec		time	unix			time	unix							
+		start>ftime														
+		start<usec														
+	TNT MPS hops 	addr		ip	iana.ip											
+	file:(monitor).tnt.*tar															
+																
+dataset:complete_dns_lookups	PTR	timestamp		time												
+	primary:ip	ip		ip	iana.ip											
+		hostname		hostname	doman_name_space											
+																
+dataset:ixps	Internet eXchanges (IXs)	ix_id		ixp	caida.ixp_id	S										
+	primary: ix_id	pch_id		ixp	pch.ixp_id	S										
+	filnemae: ixs.jsonl	pdb_id		ixp	peeringdb.ixp_id	S										
+		name		ixp.name	caida_name	S										
+		city		city	peeringdb.city_name											
+		state		region	iso2											
+		country		country	iso2											
+		prefixes		ip.prefix	network-length											
+	Facilities	pdb_fac_id		ixp.facility	peeringdb.fac_id	S										
+	primary: fac_id	pdb_org_id		organization	peeringdb.org_id	S										
+	filename: facilities.jsonl	latitude	latitude	lat_lon	wgs84											
+		longitude	longitude													
+		address		address	street		street	address	street-postal_code-city-region-country							
+		zipcode		location.zip			postal_code									
+		city		city	peeringdb.city_name		city									
+		state		region	iso2		region									
+		country		country	iso2		country									
+		clli		city	iconectiv.clli											
+	IXP ASNs	ix_id		ixp	caida.ixp_id											
+		asn		as	iana.asn											
+																
+dataset:routeviews_ipv4_prefix2as_coalesced	Prefix to Autonmous Systems Ipv4	network		ip	iana.ip		a	ip.prefix	network-length							
+	primary: ip.prefix	mask_length					a									
+	primary keys: network, length	asn_set		as	iana.asn											
+	filename: routeviews-prefix2as/(yyyy)/(mm)/routeviews-rv2-(yyyymmdd)-(hhmm).pfx2as.gz															
+																
+dataset:spoofer_data	Sessions	timestamp (before)		time	unix.timestamp										order, session, nat , priv_status, rout_status, status, page	
+		timestamp (strictly_before)		time	unix.timestamp											
+		timestamp (after)		time	unix.timestamp											
+		asn		as	iana.asn											
+		asn (array)		as	iana.asn											
+		country		country	iso2											
+																
+dataset:telescope_live				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:2019_imc_hoiho	ITDK Routers	node id		router	caida_id	S										
+	primary: router	as		as	iana.asn											
+	primary keys: node id	ip		ip	iana.ip											
+	filename: (date)-midar-iff.routers.bz2	hostname		hostname	name											
+	Node Regex Router Names															
+	filename (date)-midar-iff.re															
+																
+dataset:2020_imc_hoiho	Organization ASes	as		as	iana.asn											
+	category:organization ( no matching reference)															
+	filename: (date)-orgs.txt															
+	ITDK Routers	node id		router	caida_id											
+	primary: router	as		as	iana.asn											
+	primary keys: node id	ip		ip	iana.ip											
+	filename: (date)-midar-iff.routers.bz2	hostname		hostname	name											
+	ITDK Router HOIHO ASN Regex															
+	filename: (date)-midar-iff.routers.re															
+	Peering Routers	as		as	iana.asn											
+	primary: router	ip		ip	iana.ip											
+	primary keys: node id	hostname		hostname	name											
+	filename: (date)-peeringdb.routers															
+	PeeringDB ASN Regex	as		as	iana.asn											
+	filename: (date)-peeringdb.re															
+																
+dataset:2006_ccr_as_level_topology				ip	iana.ip											
+				rc_project	rc_project.rcp_name						project	as.path	project-collector-peer_asn-asn.path-ip.prefix	S		
+				bgp_collector	rc_project.collector_name						collector					
+				as.path	asn_list						asn_list					
+				ip	iana.ip		network	ip.prefix	network-length		network					
+							length				length					
+				ip	iana.ip						peer_ip					
+																
+	needs review															
+																
+dataset:annotated_anonymized_telescope_packets_sampler				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+																
+dataset:dns_root_gtld_rtt				ip	iana.ip											
+				hostname	name											
+				city	name											
+				gtld	name											
+																
+dataset:2020_unintended_consequences				ip	iana.ip											
+				router	caida_id											
+				hostname	name											
+				as	iana.asn											
+				city	iata3											
+				ip.path	caida.warts											
+																
+dataset:passive_2019_pcap				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:passive_merged_pcap				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:passive_metadata				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:passive_2018_pcap				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:passive_sampler				ip	iana.ip											
+				ip.packet	5_tuple											
+																
+dataset:ark_itdk				as	iana.asn											
+				router	caida_id											
+				hostname	name											
+				ip	iana.ip											
+				ip.path	traceroute											
+				city	name											
