@@ -1835,7 +1835,7 @@ def data_load_from_summary(filename):
 
                     if "size_total" in metadata:
                         if "size" in metadata["size_total"]:
-                            obj["datasetSize"] = metadata["size_total"]["size"]
+                            obj["size"] = metadata["size_total"]["size"]
             else:
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
