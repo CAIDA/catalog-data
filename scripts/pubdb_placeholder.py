@@ -92,6 +92,10 @@ def main():
                 info['person'] = person_create(obj["filename"], info["person"])
         
         links = []
+        if "fundingSources" in obj:
+            for tag in obj["fundingSources"]:
+                obj["tags"].append("funding:"+tag)
+
         if "links" in obj:
             access = []
             for link in obj["links"]:
