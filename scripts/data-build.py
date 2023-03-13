@@ -223,7 +223,7 @@ category_object = {}
 
 def main():
     # Load Redirects
-    load_redirects()
+    #load_redirects(args.redirects_file)
 
     # Load ids from the catalog
     if args.ids_file:
@@ -395,9 +395,9 @@ def main():
     ####################
     if args.redirects_file:
         print ("adding redirects:",args.redirects_file)
-        load_redirects()
+        load_redirects(args.redirects_file)
         # Calling old redirects_Add
-        # redirects_add(args.redirects_file)
+        redirects_add(args.redirects_file)
 
     #######################
     # duplicate slide resources
@@ -1106,8 +1106,8 @@ def personName_add(obj, person_id):
 def link_add(obj,info,p=False):
     a = []
     for k in ["from","to"]:
-        if type(link) == str:
-            a = [link]
+        if type(links) == str:
+            a = [links]
         else:
 
             if k in info:
@@ -1912,8 +1912,7 @@ def redirect_replace(id):
 
 # This function saves all redirects into the dictionary redirect_id_id
 # It only works for object to object redirects
-def load_redirects():
-    filename = "data/redirects.csv"
+def load_redirects(filename):
     lineCounter = 1
     with open(filename) as fin:
         for row in fin:
