@@ -222,8 +222,16 @@ id_in_catalog = set()
 category_object = {}
 
 def main():
-    # Load Redirects
-    #load_redirects(args.redirects_file)
+    
+    ####################
+    # Add in any redirects (id_old -> id_new)
+    # These will all be hidden, ie not searchable
+    ####################
+    if args.redirects_file:
+        print ("adding redirects:",args.redirects_file)
+        load_redirects(args.redirects_file)
+        # Calling old redirects_Add
+        # redirects_add(args.redirects_file)
 
     # Load ids from the catalog
     if args.ids_file:
@@ -394,9 +402,9 @@ def main():
     # These will all be hidden, ie not searchable
     ####################
     if args.redirects_file:
-        print ("adding redirects:",args.redirects_file)
-        load_redirects(args.redirects_file)
-        # Calling old redirects_Add
+    #     print ("adding redirects:",args.redirects_file)
+    #     load_redirects(args.redirects_file)
+    #     # Calling old redirects_Add
         redirects_add(args.redirects_file)
 
     #######################
@@ -1103,33 +1111,33 @@ def personName_add(obj, person_id):
 
 
 # Links info to obj
-def link_add(obj,info,p=False):
+def link_add(obj,link,p=False):
     a = []
     for k in ["from","to"]:
-        if type(links) == str:
-            a = [links]
+        if type(link) == str:
+            a = [link]
         else:
 
-            if k in info:
-                a.append(info[k]);
+            if k in link:
+                a.append(link[k]);
 
     # If info passed as a string, create its id based on its name
-    if type(info) == str:
-        id_original = info
-        id_new = utils.id_create(obj["filename"],None,info)
+    if type(link) == str:
+        id_original = link
+        id_new = utils.id_create(obj["filename"],None,link)
         # Stores link as a dictionary
-        info = { "from":obj["id"], "to":id_new }
+        link = { "from":obj["id"], "to":id_new }
     # If info passed as a dictionary
     else:
-        if "to" in info:
-            info["from"] = obj["id"]
+        if "to" in link:
+            link["from"] = obj["id"]
             # Stores original name of info
-            id_original = info["to"]
-            id_new = info["to"] = utils.id_create(obj["filename"],None,info["to"])
-        elif "from" in info:
-            info["to"] = obj["id"]
-            id_original = info["from"]
-            id_new = info["from"] = utils.id_create(obj["filename"],None,info["from"])
+            id_original = link["to"]
+            id_new = link["to"] = utils.id_create(obj["filename"],None,link["to"])
+        elif "from" in link:
+            link["to"] = obj["id"]
+            id_original = link["from"]
+            id_new = link["from"] = utils.id_create(obj["filename"],None,link["from"])
         else:
             utils.error_add(obj["filename"],"link has no from or to"+json.dumps(link))
             return None
@@ -1142,8 +1150,8 @@ def link_add(obj,info,p=False):
     #   - if 
     # If from == null or to == null or to == from return
 
-    id_original = info["from"] = redirect_replace(info["from"])
-    id_new = info["to"] = redirect_replace(info["to"])
+    id_original = link["from"] = redirect_replace(link["from"])
+    id_new = link["to"] = redirect_replace(link["to"])
 
     if id_new is None:
         utils.error_add(obj["filename"],"invalid id "+id_original)
