@@ -87,6 +87,7 @@ organization_ids = {}
 
 # Added for loading redirects
 redirect_id_id = {}
+redirect_id_children = {}
 
 # Score weights
 # The score encodes that the word exist at a given level.
@@ -231,7 +232,7 @@ def main():
         print ("adding redirects:",args.redirects_file)
         load_redirects(args.redirects_file)
         # Calling old redirects_Add
-        # redirects_add(args.redirects_file)
+        redirects_add(args.redirects_file)
 
     # Load ids from the catalog
     if args.ids_file:
@@ -342,7 +343,7 @@ def main():
                     ids.add(obj1["id"])
                     if tag_caida_data not in obj1["tags"]:
                         obj1["tags"].append(tag_caida_data)
-
+    
     ######################
     link = {"to":tag_caida_data}
     for id_ in ids:
@@ -1920,8 +1921,15 @@ def redirect_replace(id):
 
 # This function saves all redirects into the dictionary redirect_id_id
 # It only works for object to object redirects
+# This is the list of nods that will now need to be
+# redirected to new_id.  This checks if old_id is already
+# the root of an existing tree
+# A -> B
+# B -> C
+# We need to redirect not only B to C, but also all the nodes
+# nodes that pointed to B
 def load_redirects(filename):
-    lineCounter = 1
+    lineCounter = 0
     with open(filename) as fin:
         for row in fin:
             lineCounter += 1
@@ -1934,7 +1942,6 @@ def load_redirects(filename):
             url = rowList[2].lstrip().rstrip()
             description = rowList[3].lstrip().rstrip()
 
-            # If no url then redirect to new object
             if url == "" and description == "true":
                 if new_id in redirect_id_id:
                     if old_id in redirect_id_id:
@@ -1946,6 +1953,30 @@ def load_redirects(filename):
                     redirect_id_id[old_id] = new_id
             else: 
                 continue
+
+            children = [old_id]
+            if old_id in redirect_id_children:
+                children.extend(redirect_id_children[old_id])
+            
+            # Check if new id is a child of old_id
+            if new_id in children:
+                utils.error(filename, f"[{lineCounter}] loop found between {old_id} and {new_id}")
+                continue
+
+            # if old_id has children, forget them - they belong to new_id
+            if old_id in redirect_id_children:
+                del redirect_id_children[old_id]
+
+            # If new_id doesn't yet have children, add a set
+            if new_id not in redirect_id_children:
+                redirect_id_children[new_id] = set()
+
+            # Add in all the new children
+            for child in children:
+                redirect_id_children[new_id].add(child)
+
+            # If no url then redirect to new object
+            
                 
 ######################################33
 # Load Schema and Categories from file
