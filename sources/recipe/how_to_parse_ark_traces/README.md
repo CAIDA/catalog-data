@@ -6,10 +6,12 @@
     "name": "How to parse through an ark traceroute?",
     "description": "This script parses an ark warts file using json to annotate a simple traceroute IP path.",
     "links": [{
-        "to": "dataset:ipv4_prefix_probing_dataset",
-        "to": "dataset:ipv4_routed_24_topology_dataset",
+        "to": "dataset:ipv4_prefix_probing",
+        "to": "dataset:ipv4_routed_24_topology",
         "to": "dataset:ipv6_allpref_topology",
-        "to": "dataset:ark_ipv6_routed48"
+        "to": "dataset:ark_ipv6_routed48",
+        "to": "dataset:ark_ipv3_traceroute",
+        "to": "dataset:ark_ipv4_traceroute"
         }],
     "tags": [
         "topology",
