@@ -1,0 +1,4 @@
+# comment
+URL, filename
+https://users.caida.org/~dataadm/catalog/catalog-dataset-summary.jsonl, data/catalog-dataset-summary.jsonl
+https://www.routeviews.org/routeviews/index.php/papers/, data/routeviews-data.txt
