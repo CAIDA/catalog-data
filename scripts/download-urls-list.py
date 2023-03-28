@@ -79,11 +79,11 @@ for u in urls:
     url, output = u
 
     # Check each output file freshness
-    # if os.path.exists(output):
-    #     ti_m = time.time() - os.path.getmtime(output)
-    #     if ti_m < 23*60*60:
-    #         print ("   ", output, "is fresh (less then 23 hours) not downloading")
-    #         continue
+    if os.path.exists(output):
+        ti_m = time.time() - os.path.getmtime(output)
+        if ti_m < 23*60*60:
+            print ("   ", output, "is fresh (less then 23 hours) not downloading")
+            continue
 
     # Open the output file
     try:
