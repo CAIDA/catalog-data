@@ -2038,7 +2038,7 @@ def class_copy_from_category_keys(objects):
                 key = cat_name["category_key"]
                 obj["class_namespaces"].append({
                     "class":{
-                        "id":cat["id"],
+                        "id":"class"+cat["id"][8:],
                         "shortName":cat["id_short"],
                         "__typename":"Class"
                     },
