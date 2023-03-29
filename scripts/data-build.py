@@ -516,6 +516,8 @@ def main():
     ######################
     print ("Adding dataset date info")
     data_load_from_summary(args.summary_file)
+    # Class copies categories to classes
+    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Create a word_id
@@ -2015,5 +2017,36 @@ def schema_load_datasets_from_file(filename):
                             }
                             if key_replace_ids(filename, f"line [{linenum}", key):
                                 category_keys_add(dataset, "category_keys", key)
+
+def class_copy_from_category_keys(objects):
+    for obj in objects:
+        if "category_keys" in obj and obj["__typename"] != "Category":
+            obj["class_namespaces"] = []
+            for cat_name in obj["category_keys"]:
+                missing = False 
+                for k in ["category","category_key"]: 
+                    if k not in cat_name:
+                        missing = True
+                        break
+                    if "name" not in cat_name[k]:
+                        cat_name[k]["name"] = cat_name[k]["id_short"]
+                if missing:
+                    del obj["class_namespaces"]
+                    continue 
+
+                cat = cat_name["category"]
+                key = cat_name["category_key"]
+                obj["class_namespaces"].append({
+                    "class":{
+                        "id":cat["id"],
+                        "shortName":cat["id_short"],
+                        "__typename":"Class"
+                    },
+                    "namespace":{
+                        "id":key["id"],
+                        "name":key["name"],
+                        "shortName":key["id_short"],
+                    }
+                })
 
 main()
