@@ -7,7 +7,7 @@
     "links": [
         "software:pyasn",
         "software:scamper",
-        "to": "dataset:ark_ipv6_routed48"
+        "dataset:ark_ipv6_routed48"
     ],
     "tags": [
         "measurement methodology",
