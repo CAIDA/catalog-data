@@ -6,6 +6,7 @@ import time
 from bs4 import BeautifulSoup as bs
 import re
 
+CLEANR = re.compile('<.*?>')
 
 def parse_urls(input):
     """
@@ -27,10 +28,6 @@ def parse_urls(input):
                 urls.append((url, output))
 
     return urls
-
-
-CLEANR = re.compile('<.*?>')
-
 
 def clean_html(html):
     """
@@ -72,6 +69,23 @@ def scrape_papers(html):
     
     return rows
 
+def is_fresh(path):
+    """
+    Helper: returns False if file younger than 5 days
+    """
+    if os.path.exists(path):
+        ti_m = time.time() - os.path.getmtime(path)
+        if ti_m < 5*24*60*60:
+            print ("   ", path, "is fresh (less then 5 days) not downloading")
+
+def download_html(request, fout):
+    """
+    Helper: download html content to output file
+    """
+    html = request.content.decode("utf-8", 'ignore')
+    papers = scrape_papers(html)
+    papers_csv = '\n'.join(','.join(p) for p in papers)
+    fout.write(papers_csv)
 
 """
 Download list of urls in given csv
@@ -89,11 +103,8 @@ for u in urls:
     url, output = u
 
     # Check each output file freshness
-    if os.path.exists(output):
-        ti_m = time.time() - os.path.getmtime(output)
-        if ti_m < 5*24*60*60:
-            print ("   ", output, "is fresh (less then 5 days) not downloading")
-            continue
+    if is_fresh(output):
+        continue
 
     # Open the output file
     try:
@@ -114,10 +125,7 @@ for u in urls:
         # print("content-type" in head_response.headers)
         if "content-type" in head_response.headers:
             if "text/html" in head_response.headers["content-type"]:
-                html = request.content.decode("utf-8", 'ignore')
-                papers = scrape_papers(html)
-                papers_csv = '\n'.join(','.join(p) for p in papers)
-                fout.write(papers_csv)
+                download_html(request, fout)
 
         # Download non-html
         else:
