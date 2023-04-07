@@ -37,7 +37,8 @@ def clean_html(html):
     Helper: remove tags, replace unicode in raw html
     """
     clean = re.sub(CLEANR, '', html) if html != None else ''
-    clean = clean.replace('\u2013', '-').replace('\u2019', "'")
+    clean = clean.replace('\u2013', '-').replace('\u2019', "'")\
+            .replace(u'\xa0','').replace('\u201c', "\"")
     return clean
 
 
@@ -55,11 +56,20 @@ def scrape_papers(html):
     # Table rows (papers)
     rows = [header]
     for tr in table.findAll("tr"):
-        cols = tr.findAll('td')
+        cols = tr.findAll("td")
+        links = lambda c: c.findAll("a", href=True)
+        cols = [links(c)[0]['href'] if len(links(c)) == 1 else c for c in cols]
         if len(cols) > 0:
-            rows.append([clean_html(td.string) for td in cols])
+            rows.append([td if type(td)==str else clean_html(td.string) for td in cols])
 
-    for tr in rows: assert len(tr) == len(header)
+    # Remove commas in attributes
+    # authors should be separated by semicolon
+    for tr in rows:
+        assert len(tr) == len(header)
+        for j, col in enumerate(tr):
+            if j == 0: tr[j] = col.replace(',', ';')
+            else: tr[j] = col.replace(',', '')
+    
     return rows
 
 
@@ -81,8 +91,8 @@ for u in urls:
     # Check each output file freshness
     if os.path.exists(output):
         ti_m = time.time() - os.path.getmtime(output)
-        if ti_m < 23*60*60:
-            print ("   ", output, "is fresh (less then 23 hours) not downloading")
+        if ti_m < 5*24*60*60:
+            print ("   ", output, "is fresh (less then 5 days) not downloading")
             continue
 
     # Open the output file
@@ -117,4 +127,4 @@ for u in urls:
               (request.status_code))
         sys.exit()
 
-fout.close()
+    fout.close()
