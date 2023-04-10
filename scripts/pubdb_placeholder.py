@@ -50,7 +50,6 @@ def main():
                     if "id" not in obj:
                         error_add(fname,'no id for "{'+obj['name']+'"')
                         continue 
-                    print (obj)
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
                         name = utils.id_create(fname, type_,obj["name"])
