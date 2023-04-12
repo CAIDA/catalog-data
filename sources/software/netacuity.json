@@ -1,7 +1,7 @@
 {
     "id": "netacuity",
     "name": "Netacuity",
-    "dateCreated":"2011-06",
+    "dateCreated": "2011-06",
     "description": "Digital Element's geolocation and IP intelligence solution, NetAcuity, identifies actionable information about online users such as geographic location, connection speed and more - information that is proven to help improve the relevance, reach and response of online activities.",
     "links": [
         {
@@ -27,5 +27,10 @@
         "license:netacuity"
     ],
     "organization": "Digital Elements",
-    "status": "supported"
+    "status": "deprecated",
+    "deprecated": {
+        "autoredirect": true,
+        "id": "dataset:netacuity"
+    },
+    "visibility": "hidden"
 }
