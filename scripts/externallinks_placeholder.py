@@ -453,11 +453,7 @@ def parse_paper(fname, key_value):
             paper["bibtexFields"]["bookTitle"] = conference_title
 
         elif "DOI" == key and value != "":
-            doi = value
-            paper["resources"].append({
-                "name":"DOI",
-                "url":"https://dx.doi.org/"+doi
-            })
+            paper["doi"] = value
 
         elif "URL" == key:
             url = value

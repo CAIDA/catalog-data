@@ -541,6 +541,12 @@ def main():
                     if key in obj and obj[key] not in valid_values:
                         utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
                         del obj[key]
+    #######################
+    # copy out doi
+    #######################
+    print ("Pulling DOIs out of access")
+    for obj in id_object.values():
+        doi_set(obj)
 
     #######################
     # printing errors
@@ -2048,5 +2054,23 @@ def class_copy_from_category_keys(objects):
                         "shortName":key["id_short"],
                     }
                 })
+
+def doi_set(obj):
+    if ("doi" in obj and obj["doi"] is not None) or "resources" not in obj:
+        return 
+
+    index = None
+    for i,info in enumerate(obj["resources"]):
+        if "name" in info and info["name"].lower() == "doi":
+            index = i
+            break
+    if index is not None:
+        obj["doi"] = obj["resources"][index]["url"]
+        print (obj["name"],obj["doi"])
+        del obj["resources"][index]
+        if len(obj["resources"]) < 1:
+            del obj["resources"]
+
+
 
 main()
