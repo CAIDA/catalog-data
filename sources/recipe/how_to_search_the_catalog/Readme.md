@@ -50,7 +50,7 @@ A search query can be generated from a search string by splitting the string int
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03` |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
      | links | comma separated list of object ids or strings <br> `links=paper:2021_wie2020_report,telescope` <br>This searches by neighbor.  Matches are neighbors of the id's object or objects with the string in a field.<br> In this example, it would search for all objects that are related to the 2021 Wie Report OR matches the string "telescope" anywhere in the object.|
-     | categories | command seperated list of category id or id_shorts. (internet.ip , ip, asn) | 
+     | fields | will match if the object has the field (doi) | 
 
 - **id** 
 
