@@ -1,8 +1,8 @@
 {
     "id": "internet_health_report",
     "name": "Internet Health Report",
-    "dateCreated":"2020-04",
-    "dateModified":"2023-01-06",
+    "dateCreated": "2020-04",
+    "dateModified": "2023-01-06",
     "description": "The Internet Health Report monitors the conditions of networks that compose the Internet. This effort aims to provide network operators, policymakers, and other stakeholders, with a better understanding of the Internet's infrastructure and its evolution.",
     "tags": [
         "topology"
@@ -19,5 +19,6 @@
     "licenses": [
         "license:cc_by-nc-sa_4"
     ],
-    "organization": "IIJ Research Lab"
+    "organization": "IIJ Research Lab",
+    "status": "supported"
 }
