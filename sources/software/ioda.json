@@ -223,5 +223,6 @@
     "deprecated": {
         "autoredirect": false,
         "url": "https://ioda.inetintel.cc.gatech.edu/"
-    }
+    },
+    "status": "supported"
 }

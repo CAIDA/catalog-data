@@ -46,5 +46,6 @@
         }
     ],
     "licenses": [],
-    "organization": "Cyber-Complex Foundation"
+    "organization": "Cyber-Complex Foundation",
+    "status": "supported"
 }
