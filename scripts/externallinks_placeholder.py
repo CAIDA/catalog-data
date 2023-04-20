@@ -210,24 +210,31 @@ def main(argv):
     global topkey_2_dataset
     global alternate_links
     global data_papers
+    global routeviews_papers
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", type=str, default=None, dest="data_papers", help="Path to data-papers.yaml")
+    parser.add_argument("-r", type=str, default=None, dest="routeviews_papers", help="Path to data-papers-routeviews.yaml")
     args = parser.parse_args()
 
     # Edge Case: Exit if no data_papers is given.
-    if args.data_papers is None:
+    if args.data_papers is None or args.routeviews_papers is None:
         sys.exit()
 
     data_papers = args.data_papers
+    routeviews_papers = args.routeviews_papers
 
     # Add the current set of paper and persons
     add_seen_ids(["sources/paper"])
     add_seen_authors("sources/person")
 
     # Parse data_papers and create a new file for each paper.
-    parse_data_papers()
+    print("-- parsing data papers --")
+    # parse_data_papers(routeviews=False)
 
+    # Parse routeviews_papers and create a new file for each new paper.
+    print("\n-- parsing routeviews papers --")
+    parse_data_papers(routeviews=True)
 
     # Print all the papers found to their respective JSON files.
     print_papers()
@@ -262,16 +269,18 @@ def add_seen_authors(d):
                 utils.person_seen_add(f,person)
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
-def parse_data_papers():
+def parse_data_papers(routeviews=False):
     global re_yml
     global data_papers
+    global routeviews_papers
     global topkeys
 
     # Parse data_papers file.
+    to_parse = routeviews_papers if routeviews else data_papers
     if re_yml.search(data_papers):
-        with open(data_papers, "r") as fin:
+        with open(to_parse, "r", encoding='utf-8') if not routeviews else open(to_parse, "r") as fin:
             for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
-                parse_paper(data_papers, paper)
+                parse_paper(to_parse, paper)
 
     # Edge Case: Exit if a given file couldn't be open.
     else:
@@ -320,6 +329,7 @@ def parse_paper(fname, key_value):
             # Handle the two seperate ways that authors can be stored.
             authors = []
             for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
+                if "Jr" in author: print(author)
                 names = re.split("\s*,\s*", author)
                 if len(names) == 4:
                     authors.append(names[0]+", "+names[1])
@@ -341,7 +351,7 @@ def parse_paper(fname, key_value):
                     first_name = ""
                     last_name = author
 
-                author_id = add_author(fname, last_name, first_name);
+                author_id = add_author(fname, last_name, first_name)
                 
                 paper["authors"].append({
                     "person":author_id
@@ -521,7 +531,7 @@ def print_papers():
     for paper_id, paper in papers.items():
         
         # Create a new file for each paper.
-        if paper_id not in seen_ids:
+        if paper_id not in seen_ids:            
             id_ = paper_id.split(":")[1]
             file_path = "sources/paper/{}___externallinks.json".format(id_)
             with open(file_path, "w") as paper_file:

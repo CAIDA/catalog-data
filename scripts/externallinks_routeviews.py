@@ -1,3 +1,5 @@
+import lib.utils as utils
+from random import randint
 import re
 import requests
 
@@ -29,17 +31,43 @@ def parse_papers(input):
 
 def format_authors(authors):
     """
-    Helper: reformat string of authors given as "F1. M1. Last1; F2. Last2"
-            to "Last1, F1. M1., Last2, F2."
+    Helper: reformat semicolon-separated string of authors given as 
+            "F1. M1. Last1; F2. Last2; F3. M31. M32. Last3" to 
+            "Last1, F1. M1., Last2, F2., Last3, F3. M31. M32."
     """
     formatted = []
+    SUFFIXES = ["Jr"]
+    split_name = lambda name: re.split('.\s+?', name.strip())    
+
     for a in authors.split(';'):
-        name = re.split('.\s+?', a.strip())
-        finitial = name[0]
-        last = name[-1]
-        minitial = name[1] if len(name) > 2 else ''
-        formatted.append(f"{last}, {finitial}.{' '+minitial+'.' if minitial != '' else ''}")
-    return ', '.join(formatted)
+        name = split_name(a)
+        formatted_name = ''
+        suffix = '' 
+
+        # Edge case: illegal empty name (extra delimeter ';')
+        if len(name) < 2: continue 
+
+        # Edge case: name has suffix
+        for s in SUFFIXES: 
+            if s == name[-1]:
+                suffix = ' ' + s
+                name = name[:-1]
+
+        # Handle names with or without middle initials
+        if len(name) > 2: 
+            finitial, minitials, last = name[0], name[1:-1], name[-1]
+            mid = ' '.join([f'{m}.' for m in minitials])
+            formatted_name = f"{last}{suffix}, {finitial}. {mid}"
+        else:
+            assert len(name) == 2
+            finitial, last = name
+            formatted_name = f"{last}{suffix}, {finitial}."     
+        formatted.append(formatted_name)        
+
+    # Return reformatted authors string, first author info for MARKER
+    first_author = authors.split(';')[0]
+    first_finit, first_last = split_name(first_author)[0], split_name(first_author)[-1]
+    return (', '.join(formatted), first_finit.lower(), first_last.lower())
 
 """
 Downloads papers csv from routeviews.org, create yaml entry in 
@@ -74,8 +102,10 @@ print(f'    generating {YAML_PATH}')
 papers = parse_papers(PAPERS_PATH)
 papers_yaml = ''
 for p in papers:
-    authors, date, title, src, vol, num, page, cat, url = p   
-    authors = format_authors(authors)
+    authors, date, title, src, vol, num, page, cat, url = p 
+    authors, first_finit, first_last = format_authors(authors)
+    marker_id = randint(10**4, 10**5-1)
+    marker = f"{date.split('-')[0]}_{first_last}_{first_finit}_{marker_id}"    
     year = '-'.join(date.split('-')[0:2])
     cat = cat.lower()
     ptype = 'in_proceedings' if 'conference' in cat else\
@@ -86,7 +116,7 @@ for p in papers:
             'presentation' if cat == 'presentation' else\
             'online' if cat == 'self' else ''
     yaml = {
-        "MARKER": "",
+        "MARKER": marker,
         "TYPE": ptype,
         "AUTHOR": authors,
         "TITLE": title,
@@ -117,7 +147,7 @@ for p in papers:
     # Yaml dict to string
     yaml_str = '---\n'
     for k, v in yaml.items():
-        yaml_str += f"{k}\t: \"{v}\"\n"
+        yaml_str += f"{k}: \"{v}\"\n"
     yaml_str += '\n'
     papers_yaml += yaml_str
     
