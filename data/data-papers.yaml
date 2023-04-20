@@ -49683,3 +49683,18 @@ DOI    : "10.1145/3485447.3512019"
 TOPKEY : "passive_2019_pcap"
 GEOLOC : "Nanjing, CN"
 ABS    : "This paper introduces DUET, a generic framework that processes heavy hitters, top-k, and persistent items which are hot issue in data stream processing for web analysis. The framework can achieve higher throughput and three orders of magnitude lower average relative error compared to cutting-edge algorithms."
+
+---
+MARKER : "2023_z_chen_"
+TYPE   : "in_proceedings"
+AUTHOR : "Chen, Z., Bischof, Z., Testart, C., Dainotti, A."
+TITLE  : "Improving the inference of sibling Autonomous Systems"
+CTITLE : "Passive and Active Measurement (PAM 2023)"
+PAGE   : "345-372"
+YEAR   : "2023-03"
+DOI    : "10.1007/978-3-031-28486-1_15"
+TOPKEY : "passive_2019_pcap"
+GEOLOC : "Atlanta, GA, US"
+ABS    : "The paper focuses on improving the accuracy of mapping Autonomous Systems (ASes) to their owner organizations by addressing issues with the current state-of-the-art dataset, CAIDA AS-to-organization (CA2O). The authors leverage PeeringDB (PDB) to detect potential errors in sibling relations within the CA2O dataset. They identify two pitfalls of using Whois data, which result in incorrect inferences, and systematically analyze their impact on CA2O. An improved dataset is created, correcting mappings for 12.5% of CA2O organizations with sibling ASes. To ensure scalability and reproducibility, the authors develop an automated approach for improving inferences in future versions of CA2O."
+
+
