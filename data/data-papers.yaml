@@ -49639,7 +49639,7 @@ YEAR   : "2002-10"
 DOI    : "10.1145/964725.633027"
 TOPKEY : "topology-skitter-ipv4"
 GEOLOC : "Seattle, WA, US"
-ABS    : "It is well-known that simple, accidental BGP configuration errors can disrupt Internet connectivity. Yet little is known about the frequency of misconfiguration or its causes, except for the few spectacular incidents of widespread outages. In this paper, we present the first quantitative study of BGP misconfiguration. Over a three week period, we analyzed routing table advertisements from 23 vantage points across the Internet backbone to detect incidents of misconfiguration. For each incident we polled the ISP operators involved to verify whether it was a misconfiguration, and to learn the cause of the incident. We also actively probed the Internet to determine the impact of misconfiguration on connectivity.Surprisingly, we find that configuration errors are pervasive, with 200-1200 prefixes (0.2-1.0% of the BGP table size) suffering from misconfiguration each day. Close to 3 in 4 of all new prefix advertisements were results of misconfiguration. Fortunately, the connectivity seen by end users is surprisingly robust to misconfigurations. While misconfigurations can substantially increase the update load on routers, only one in twenty five affects connectivity. While the causes of misconfiguration are diverse, we argue that most could be prevented through better router design."
+ABS    : "Correctly mapping Autonomous Systems (ASes) to their owner organizations is critical for connecting AS-level and organization-level research. Unfortunately, constructing an accurate dataset of AS-to-organization mappings is difficult due to a lack of ground truth information. CAIDA AS-to-organization (CA2O), the current state-of-the-art dataset, relies heavily on Whois databases maintained by Regional Internet Registries (RIRs) to infer the AS-to-organization mappings. However, inaccuracies in Whois data can dramatically impact the accuracy of CA2O, particularly for inferences involving ASes owned by the same organization (referred to as sibling ASes). In this work, we leverage PeeringDB (PDB) as an additional data source to detect potential errors of sibling relations in CA2O. By conducting a meticulous semi-manual investigation, we discover two pitfalls of using Whois data that result in incorrect inferences in CA2O. We then systematically analyze how these pitfalls influence CA2O. We also build an improved dataset on sibling relations, which corrects the mappings of 12.5% of CA2O organizations with sibling ASes (1,028 CA2O organizations, associated with 3,772 ASNs). To make this process reproducible and scalable, we design an automated approach to recreate our manually-built dataset with high fidelity. The approach is able to automatically improve inferences of sibling ASes for each new version of CA2O."
 
 ---
 MARKER : "2002_c_estan_acm_sigcomm_ccr_32_323"
@@ -49685,7 +49685,7 @@ GEOLOC : "Nanjing, CN"
 ABS    : "This paper introduces DUET, a generic framework that processes heavy hitters, top-k, and persistent items which are hot issue in data stream processing for web analysis. The framework can achieve higher throughput and three orders of magnitude lower average relative error compared to cutting-edge algorithms."
 
 ---
-MARKER : "2023_z_chen_"
+MARKER : "2023_z_chen_pam_28486115"
 TYPE   : "in_proceedings"
 AUTHOR : "Chen, Z., Bischof, Z., Testart, C., Dainotti, A."
 TITLE  : "Improving the inference of sibling Autonomous Systems"
@@ -49697,4 +49697,14 @@ TOPKEY : "passive_2019_pcap"
 GEOLOC : "Atlanta, GA, US"
 ABS    : "The paper focuses on improving the accuracy of mapping Autonomous Systems (ASes) to their owner organizations by addressing issues with the current state-of-the-art dataset, CAIDA AS-to-organization (CA2O). The authors leverage PeeringDB (PDB) to detect potential errors in sibling relations within the CA2O dataset. They identify two pitfalls of using Whois data, which result in incorrect inferences, and systematically analyze their impact on CA2O. An improved dataset is created, correcting mappings for 12.5% of CA2O organizations with sibling ASes. To ensure scalability and reproducibility, the authors develop an automated approach for improving inferences in future versions of CA2O."
 
-
+---
+MARKER : "2023_f_biersack_pdp_590252023"
+TYPE   : "in_proceedings"
+AUTHOR : "Biersack, F., Holzinger, K., Stubbe, H., Wild, T., Carle, G., Herkersdorf, A."
+TITLE  : "Priority-aware Inter-Server Receive Side Scaling"
+CTITLE : "31st Euromicro International Conference on Parallel, Distributed, and Network-Based Processing"
+YEAR   : "2023-03"
+DOI    : "10.1109/PDP59025.2023.00016"
+TOPKEY : "passive_2015_pcap"
+GEOLOC : "Munich, DE"
+ABS    : "Next-generation automotive networks will be characterized by a high number of interconnected sensors, actuators and applications on electronic control units communicating with each other over a high-speed Ethernet backbone network. As these applications have various criticalities, high volumes of fluctuating traffic with different priorities will have to be processed in a reliable and efficient manner. To cope with these challenges, we present Priority-aware Inter-Server Receive Side Scaling (prioRSS), a new SmartNIC-based hardware accelerator designed for automotive compute nodes. prioRSS builds upon Receive Side Scaling and introduces priority-awareness into an intra- and inter-node load balancer. It uses a priority-partitioned indirection table within which flows of the same priority are bundled. Low-latency reconfigurations issued by a Network Health Monitoring software allow for adapting the table content to changing network conditions. Simulative evaluations and comparisons to a priority-unaware version of our design show that prioRSS enables per-priority resource assignments without degrading end-to-end packet latencies while using the same table memory space. Paired with a priority-aware scheduler, end-to-end latencies of high priority flows can be notably reduced compared to average packet latencies, at the expense of lowest priority traffic. The best results are acquired when partitioning the table proportionally to the associated traffic share."
