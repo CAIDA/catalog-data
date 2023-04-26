@@ -516,6 +516,8 @@ def main():
     ######################
     print ("Adding dataset date info")
     data_load_from_summary(args.summary_file)
+    # Class copies categories to classes
+    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Create a word_id
@@ -539,6 +541,12 @@ def main():
                     if key in obj and obj[key] not in valid_values:
                         utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
                         del obj[key]
+    #######################
+    # copy out doi
+    #######################
+    print ("Pulling DOIs out of access")
+    for obj in id_object.values():
+        doi_set(obj)
 
     #######################
     # printing errors
@@ -1823,14 +1831,19 @@ def data_load_from_summary(filename):
             catalog_id = metadata["catalog_id"]
             if catalog_id in id_object:
                 obj = id_object[catalog_id]
-                for key in ["dateStart","dateEnd","status"]:
+                # Overwrites the following fields, if found in dataset summary file
+                for key in ["dateStart","dateEnd","status", "doi"]:
                     if key in metadata:
                         if key in ["dateStart","dateEnd"]:
                             # FIXME: Quick fix; Need to normalize data format to YYYYMMDD
                             if (len(metadata[key]) == 8):
                                 obj[key] = datetime.datetime.strptime(metadata[key], "%Y%m%d").strftime("%Y-%m-%d")
-                        else:
+                        elif key != "" or key is not None:
                             obj[key] = metadata[key]
+
+                    if "size_total" in metadata:
+                        if "size" in metadata["size_total"]:
+                            obj["size"] = metadata["size_total"]["size"]
             else:
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
@@ -2010,5 +2023,54 @@ def schema_load_datasets_from_file(filename):
                             }
                             if key_replace_ids(filename, f"line [{linenum}", key):
                                 category_keys_add(dataset, "category_keys", key)
+
+def class_copy_from_category_keys(objects):
+    for obj in objects:
+        if "category_keys" in obj and obj["__typename"] != "Category":
+            obj["class_namespaces"] = []
+            for cat_name in obj["category_keys"]:
+                missing = False 
+                for k in ["category","category_key"]: 
+                    if k not in cat_name:
+                        missing = True
+                        break
+                    if "name" not in cat_name[k]:
+                        cat_name[k]["name"] = cat_name[k]["id_short"]
+                if missing:
+                    del obj["class_namespaces"]
+                    continue 
+
+                cat = cat_name["category"]
+                key = cat_name["category_key"]
+                obj["class_namespaces"].append({
+                    "class":{
+                        "id":"class"+cat["id"][8:],
+                        "shortName":cat["id_short"],
+                        "__typename":"Class"
+                    },
+                    "namespace":{
+                        "id":key["id"],
+                        "name":key["name"],
+                        "shortName":key["id_short"],
+                    }
+                })
+
+def doi_set(obj):
+    if ("doi" in obj and obj["doi"] is not None) or "resources" not in obj:
+        return 
+
+    index = None
+    for i,info in enumerate(obj["resources"]):
+        if "name" in info and info["name"].lower() == "doi":
+            index = i
+            break
+    if index is not None:
+        obj["doi"] = obj["resources"][index]["url"]
+        print (obj["name"],obj["doi"])
+        del obj["resources"][index]
+        if len(obj["resources"]) < 1:
+            del obj["resources"]
+
+
 
 main()

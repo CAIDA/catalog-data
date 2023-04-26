@@ -47,6 +47,9 @@ def main():
                     except ValueError as e:
                         print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
+                    if "id" not in obj:
+                        error_add(fname,'no id for "{'+obj['name']+'"')
+                        continue 
                     id_add(fname, type_, obj["id"])
                     if "name" in obj:
                         name = utils.id_create(fname, type_,obj["name"])
@@ -92,6 +95,10 @@ def main():
                 info['person'] = person_create(obj["filename"], info["person"])
         
         links = []
+        if "fundingSources" in obj:
+            for tag in obj["fundingSources"]:
+                obj["tags"].append("funding:"+tag)
+
         if "links" in obj:
             access = []
             for link in obj["links"]:
