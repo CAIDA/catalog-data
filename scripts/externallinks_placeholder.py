@@ -230,7 +230,7 @@ def main(argv):
 
     # Parse data_papers and create a new file for each paper.
     print("-- parsing data papers --")
-    # parse_data_papers(routeviews=False)
+    parse_data_papers(routeviews=False)
 
     # Parse routeviews_papers and create a new file for each new paper.
     print("\n-- parsing routeviews papers --")
@@ -328,8 +328,9 @@ def parse_paper(fname, key_value):
         elif "AUTHOR" == key:
             # Handle the two seperate ways that authors can be stored.
             authors = []
+
             for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
-                if "Jr" in author: print(author)
+                
                 names = re.split("\s*,\s*", author)
                 if len(names) == 4:
                     authors.append(names[0]+", "+names[1])

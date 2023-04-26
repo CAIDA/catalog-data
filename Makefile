@@ -8,6 +8,9 @@ SUMMARY_URL = https://users.caida.org/~dataadm/catalog/catalog-dataset-summary.j
 SUMMARY_BACKUP_FILE = data/catalog-dataset-summary-backup.jsonl
 SUMMARY_FILE = data/catalog-dataset-summary.jsonl
 
+EXTERNAL_ROUTEVIEWS_URL=https://www.routeviews.org/routeviews/index.php/papers/ 
+EXTERNAL_ROUTEVIEWS_FILE=data/data-papers-routeviews.yaml
+
 URL=https://api.catalog.caida.org/v2/graphql
 IDS_FILE=data/_ids.txt
 
@@ -66,7 +69,7 @@ pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py 
 	python3 scripts/pubdb_placeholder.py -p ${PUBDB_PAPER} -m ${PUBDB_MEDIA}
 
 external: scripts/externallinks_placeholder.py
-	python3 scripts/externallinks_placeholder.py -d data/data-papers.yaml
+	python3 scripts/externallinks_placeholder.py -d data/data-papers.yaml -r ${EXTERNAL_ROUTEVIEWS_FILE}
 
 caida: scripts/caida_placeholder.py scripts/caida_dataset_blanks.py
 	@if [ -d ${CATALOG_DATA_CAIDA_PATH} ]; then \

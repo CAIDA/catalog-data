@@ -36,32 +36,46 @@ def format_authors(authors):
             "Last1, F1. M1., Last2, F2., Last3, F3. M31. M32."
     """
     formatted = []
-    SUFFIXES = ["Jr"]
-    split_name = lambda name: re.split('.\s+?', name.strip())    
+    SUFFIXES = ["Jr."]
+    NOBILIARY_PARTICLES = ["van", "va", "de", "di"]
+    split_name = lambda name: re.split('\s+?', name.strip())    
 
     for a in authors.split(';'):
         name = split_name(a)
         formatted_name = ''
-        suffix = '' 
+        suffix = ''
 
         # Edge case: illegal empty name (extra delimeter ';')
         if len(name) < 2: continue 
 
         # Edge case: name has suffix
-        for s in SUFFIXES: 
-            if s == name[-1]:
-                suffix = ' ' + s
-                name = name[:-1]
+        for s in SUFFIXES:
+            if s in name[-1]:
+                suffix = ' ' + name[-1].replace('.', '')
+                name = name[:len(name)-1]
+
+        # Edge case: last name has nobiliary particle, join into last name
+        last = [name[-1]]
+        for i in range(len(name)-1, -1, -1):
+            n = name[i].strip()
+            if n in NOBILIARY_PARTICLES:
+                last.append(name.pop(i))
+        if len(last) > 1:
+            last.reverse()
+            name.pop(-1)
+            name.append(' '.join(last).replace('.', ''))
+            formatted_name = name
+            print(formatted_name)
 
         # Handle names with or without middle initials
         if len(name) > 2: 
             finitial, minitials, last = name[0], name[1:-1], name[-1]
-            mid = ' '.join([f'{m}.' for m in minitials])
-            formatted_name = f"{last}{suffix}, {finitial}. {mid}"
+            mid = ' '.join([f'{m}' for m in minitials])
+            formatted_name = f"{last}{suffix}, {finitial} {mid}"
         else:
             assert len(name) == 2
             finitial, last = name
-            formatted_name = f"{last}{suffix}, {finitial}."     
+            formatted_name = f"{last}{suffix}, {finitial}"     
         formatted.append(formatted_name)        
 
     # Return reformatted authors string, first author info for MARKER

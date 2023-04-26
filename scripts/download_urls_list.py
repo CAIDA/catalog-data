@@ -8,6 +8,10 @@ import re
 
 CLEANR = re.compile('<.*?>')
 
+"""
+Contains helper functions used in scripts/externallinks_routeviews.py
+"""
+
 def parse_urls(input):
     """
     Helper: parse urls from csv
@@ -77,6 +81,9 @@ def is_fresh(path):
         ti_m = time.time() - os.path.getmtime(path)
         if ti_m < 5*24*60*60:
             print ("   ", path, "is fresh (less then 5 days) not downloading")
+            return True
+        return False
+    return False
 
 def download_html(request, fout):
     """
@@ -91,48 +98,50 @@ def download_html(request, fout):
 Download list of urls in given csv
 Usage: python download-urls-list <input file>
 """
-# Parameters
-parser = argparse.ArgumentParser()
-parser.add_argument("input", help="input file with urls", type=str)
-args = parser.parse_args()
+if __name__ == "__main__":
+    
+    # Parameters
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input", help="input file with urls", type=str)
+    args = parser.parse_args()
 
-# Parse input file
-urls = parse_urls(args.input)
+    # Parse input file
+    urls = parse_urls(args.input)
 
-for u in urls:
-    url, output = u
+    for u in urls:
+        url, output = u
 
-    # Check each output file freshness
-    if is_fresh(output):
-        continue
+        # Check each output file freshness
+        if is_fresh(output):
+            continue
 
-    # Open the output file
-    try:
-        fout = open(output, "w", encoding="utf-8")
-    except Exception as e:
-        print(e, file=sys.stderr)
-        sys.exit()
+        # Open the output file
+        try:
+            fout = open(output, "w", encoding="utf-8")
+        except Exception as e:
+            print(e, file=sys.stderr)
+            sys.exit()
 
-    # Try to download it
-    print("   downloading", url)
-    request = requests.get(url)
+        # Try to download it
+        print("    downloading", url)
+        request = requests.get(url)
 
-    # Exit if fail
-    if request.status_code == 200:
-        head_response = requests.head(url)
+        # Exit if fail
+        if request.status_code == 200:
+            head_response = requests.head(url)
 
-        # Scrape html for table of papers, save as csv
-        # print("content-type" in head_response.headers)
-        if "content-type" in head_response.headers:
-            if "text/html" in head_response.headers["content-type"]:
-                download_html(request, fout)
+            # Scrape html for table of papers, save as csv
+            # print("content-type" in head_response.headers)
+            if "content-type" in head_response.headers:
+                if "text/html" in head_response.headers["content-type"]:
+                    download_html(request, fout)
 
-        # Download non-html
+            # Download non-html
+            else:
+                fout.write(request.text)
         else:
-            fout.write(request.text)
-    else:
-        print("   Query failed to run returned code of %d " %
-              (request.status_code))
-        sys.exit()
+            print("   Query failed to run returned code of %d " %
+                (request.status_code))
+            sys.exit()
 
-    fout.close()
+        fout.close()
