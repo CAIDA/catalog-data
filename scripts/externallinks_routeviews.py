@@ -65,7 +65,6 @@ def format_authors(authors):
             name.pop(-1)
             name.append(' '.join(last).replace('.', ''))
             formatted_name = name
-            print(formatted_name)
 
         # Handle names with or without middle initials
         if len(name) > 2: 
@@ -75,8 +74,12 @@ def format_authors(authors):
         else:
             assert len(name) == 2
             finitial, last = name
-            formatted_name = f"{last}{suffix}, {finitial}"     
-        formatted.append(formatted_name)        
+            formatted_name = f"{last}{suffix}, {finitial}"
+
+        # Edge case: only last initial is given, remove period
+        if '.' in last: 
+            formatted_name = formatted_name.replace('.', '', 1)    
+        formatted.append(formatted_name) 
 
     # Return reformatted authors string, first author info for MARKER
     first_author = authors.split(';')[0]
