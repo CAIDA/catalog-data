@@ -329,6 +329,9 @@ def parse_paper(fname, key_value):
             # Handle the two seperate ways that authors can be stored.
             authors = []
 
+            # Edge case: author last name has suffix
+            value = value.replace("Jr.", "Jr")
+
             for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
                 
                 names = re.split("\s*,\s*", author)
