@@ -218,9 +218,6 @@ def main(argv):
     if len(args.papers) < 1:
         sys.exit()
 
-    data_papers = args.data_papers
-    routeviews_papers = args.routeviews_papers
-
     # Add the current set of paper and persons
     add_seen_ids(["sources/paper"])
     add_seen_authors("sources/person")
