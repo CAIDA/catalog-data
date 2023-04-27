@@ -211,12 +211,11 @@ def main(argv):
     global alternate_links
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("data_papers", type=str, default=None, help="Path to data-papers.yaml")
-    parser.add_argument("routeviews_papers", type=str, default=None, help="Path to data-papers-routeviews.yaml")
+    parser.add_argument( dest='papers', help='eternal papers YAML file', type=str, nargs="+")
     args = parser.parse_args()
 
     # Edge Case: Exit if no data_papers is given.
-    if args.data_papers is None or args.routeviews_papers is None:
+    if len(args.papers) < 1:
         sys.exit()
 
     data_papers = args.data_papers
@@ -226,13 +225,10 @@ def main(argv):
     add_seen_ids(["sources/paper"])
     add_seen_authors("sources/person")
 
-    # Parse data_papers and create a new file for each paper.
-    print("-- parsing data papers --")
-    parse_data_papers(data_papers)
-
-    # Parse routeviews_papers and create a new file for each new paper.
-    print("\n-- parsing routeviews papers --")
-    parse_data_papers(routeviews_papers)
+    # Parse each external yaml and create a new file for each paper.
+    for filename in args.papers:
+        print("loading", filename)
+        parse_data_papers(filename)
 
     # Print all the papers found to their respective JSON files.
     print_papers()
@@ -267,15 +263,15 @@ def add_seen_authors(d):
                 utils.person_seen_add(f,person)
 
 # Opens a give .yaml file and parses each paper listed between delimeters.
-def parse_data_papers(to_parse):
+def parse_data_papers(filename):
     global re_yml
     global topkeys
 
     # Parse data_papers file.
-    if re_yml.search(to_parse):
-        with open(to_parse, "r") as fin:
+    if re_yml.search(filename):
+        with open(filename, "r") as fin:
             for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
-                parse_paper(to_parse, paper)
+                parse_paper(filename, paper)
 
     # Edge Case: Exit if a given file couldn't be open.
     else:
