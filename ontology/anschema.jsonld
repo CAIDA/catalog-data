@@ -1,0 +1,330 @@
+{
+  "@context": {
+    "csvw": "http://www.w3.org/ns/csvw#",
+    "anschema": "http://catalog.caida.org/ontology/anschema#",
+
+    "description": {
+      "@id": "anschema:description"
+    },
+    "entityUrl": {
+      "@id": "anschema:entityUrl",
+      "@type": "csvw:uriTemplate"
+    },
+    "name": {
+      "@id": "anschema:name",
+      "@language": null
+    },
+    "propertyUrl": {
+      "@id": "aschema:propertyUrl",
+      "@type": "csvw:uriTemplate"
+    },
+    "url": {
+      "@id": "anschema:url",
+      "@type": "xsd:anyURI"
+    },
+
+    "columnReference": {
+      "@id": "anschema:columnReference",
+      "@language": null,
+      "@container": "@list"
+    },
+    "entityReference": {
+      "@id": "anschema:columnReference",
+      "@language": null,
+      "@container": "@list"
+    },
+
+    "entities": {
+      "@id": "anschema:entity",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "namespaceUrls": {
+      "@id": "anschema:namespaceUrl",
+      "@type": "@id",
+      "@container": "@list"
+    },
+    "propertyMaps": {
+      "@id": "anschema:propertyMap",
+      "@type": "@id",
+      "@container": "@list"
+    }
+  },
+  "@graph": {
+      "@context": {
+      "id": "@id",
+      "type": "@type",
+      "dc:title": {
+        "@container": "@language"
+      },
+      "dc:description": {
+        "@container": "@language"
+      },
+      "dc:date": {
+        "@type": "xsd:date"
+      },
+      "rdfs:comment": {
+        "@container": "@language"
+      },
+      "rdfs:domain": {
+        "@type": "@id"
+      },
+      "rdfs:label": {
+        "@container": "@language"
+      },
+      "rdfs:range": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "rdfs:subClassOf": {
+        "@type": "@id"
+      },
+      "rdfs:subPropertyOf": {
+        "@type": "@id"
+      },
+      "owl:equivalentClass": {
+        "@type": "@vocab"
+      },
+      "owl:equivalentProperty": {
+        "@type": "@vocab"
+      },
+      "owl:oneOf": {
+        "@container": "@list",
+        "@type": "@vocab"
+      },
+      "owl:imports": {
+        "@type": "@id"
+      },
+      "owl:versionInfo": {
+        "@type": "@id"
+      },
+      "owl:inverseOf": {
+        "@type": "@vocab"
+      },
+      "owl:unionOf": {
+        "@type": "@vocab",
+        "@container": "@list"
+      },
+      "rdfs_classes": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_properties": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_datatypes": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      },
+      "rdfs_instances": {
+        "@reverse": "rdfs:isDefinedBy",
+        "@type": "@id"
+      }
+    },
+    "@id": "http://catalog.caida.org/ontology/anschema#",
+    "@type": "owl:Ontology",
+    "dc:title": {
+      "en": "CAIDA Annotated Schema Namespace Vocabulary Terms"
+    },
+    "dc:description": {
+      "en": "CAIDA Annotated Schema is an extension to CSVW with the addition of Entities. Entities group together columns that share the same object and class."
+    },
+    "dc:date": "2023-05-01",
+    "owl:imports": [
+      "http://www.w3.org/ns/prov"
+    ],
+    "owl:versionInfo": "https://github.com/w3c/csvw/commit/fcc9db20ba4de10e41e964eee1b5d01defa4c664",
+    "rdfs:seeAlso": [
+      "http://www.w3.org/TR/tabular-metadata"
+    ],
+    "rdfs_classes": [
+      {
+        "@id": "anschema:Entity",
+        "@type": "rdfs:Class",
+        "rdfs:label": {
+          "en": "Entity"
+        },
+        "rdfs:comment": {
+          "en": "A Entity represents a group of columns that describe the same thing within a Table."
+        }
+      },
+      {
+        "@id": "anschema:Namespace",
+        "@type": "rdfs:Class",
+        "rdfs:label": {
+          "en": "Namespace"
+        },
+        "rdfs:comment": {
+          "en": "provides a guide to the set of class identifiers contained in the property"
+        }
+      },
+      {
+        "@id": "anschema:PropertyMap",
+        "@type": "rdfs:Class",
+        "rdfs:label": {
+          "en": "PropertyMap"
+        },
+        "rdfs:comment": {
+          "en": "A PropertyMap provides the mapping between the entity's class's property to a set of table columns."
+        }
+      }
+    ],
+    "rdfs_properties": [
+      {
+        "@id": "anschema:classUrl",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "property URL"
+        },
+        "rdfs:comment": {
+          "en": "An URI template class that provides the URI for a class defined for the Entity."
+        },
+        "rdfs:domain": "anschema:Entity",
+        "rdfs:range": "csvw:uriTemplate"
+      },
+      {
+        "@id": "anschema:columnReference",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "column reference"
+        },
+        "rdfs:comment": {
+          "en": "A column reference property that holds either a single reference to a column description object within the Entity or PropertyMap."
+        },
+        "rdfs:domain": {
+          "owl:unionOf": [
+            "anschema:Entity",
+            "anschema:PropertyMap"
+          ]
+        },
+        "rdfs:range": "xsd:string"
+      },
+      {
+        "@id": "anschema:description",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "name"
+        },
+        "rdfs:comment": {
+          "en": "An account giving the characteristics of a Entity or Namespace."
+        },
+        "rdfs:domain": {
+          "owl:unionOf": [
+            "anschema:Entity",
+            "anschema:Namespace"
+          ]
+        },
+        "rdfs:range": "xsd:string"
+      },
+      {
+        "@id": "anschema:entity",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "entity"
+        },
+        "rdfs:comment": {
+          "en": "An array property of  descriptions."
+        },
+        "rdfs:domain": "csvw:Schema",
+        "rdfs:range": "anschema:Entity"
+      },
+      {
+        "@id": "anschema:entityReference",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "entity reference"
+        },
+        "rdfs:comment": {
+          "en": "An Entity reference property that holds either a single reference to a Entity description object within the PropertyMap."
+        },
+        "rdfs:domain": "anschema:PropertyMap",
+        "rdfs:range": "xsd:string"
+      },
+      {
+        "@id": "anschema:label",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "label"
+        },
+        "rdfs:comment": {
+          "en": "This property is a shorter name annotation for the Entity or Namespace."
+        },
+        "rdfs:domain": {
+          "owl:unionOf": [
+            "anschema:Entity",
+            "anschema:Namespace"
+          ]
+        },
+        "rdfs:range": "xsd:string"
+      },
+      {
+        "@id": "anschema:name",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "name"
+        },
+        "rdfs:comment": {
+          "en": "This property is the name annotation for the Entity or Namespace."
+        },
+        "rdfs:domain": {
+          "owl:unionOf": [
+            "anschema:Entity",
+            "anschema:Namespace"
+          ]
+        },
+        "rdfs:range": "xsd:string"
+      },
+      {
+        "@id": "anschema:namespaceUrl",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "namespace URL"
+        },
+        "rdfs:comment": {
+          "en": "An URI template property that MAY be used to create one or more URI for a Namespaces for the property in the PropertyMap."
+        },
+        "rdfs:domain": "anschema:PropertyMap",
+        "rdfs:range": "csvw:uriTemplate"
+      },
+      {
+        "@id": "anschema:propertyMap",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "entity"
+        },
+        "rdfs:comment": {
+          "en": "An array property of PropertyMaps descriptions."
+        },
+        "rdfs:domain": "csvw:Entity",
+        "rdfs:range": "anschema:PropertyMap"
+      },
+      {
+        "@id": "anschema:propertyUrl",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "property URL"
+        },
+        "rdfs:comment": {
+          "en": "An URI template property that MAY be used to create a URI for a property in the PropertyMap."
+        },
+        "rdfs:domain": "anschema:PropertyMap",
+        "rdfs:range": "csvw:uriTemplate"
+      },
+      {
+        "@id": "anschema:url",
+        "@type": "rdf:Property",
+        "rdfs:label": {
+          "en": "url"
+        },
+        "rdfs:comment": {
+          "en": "A URL with more information on the Namespace."
+        },
+        "rdfs:domain": "anschema:url",
+        "rdfs:range": "xsd:anyURI"
+      }
+    ]
+ }
+}
