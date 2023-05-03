@@ -122,6 +122,10 @@ re_placeholder = re.compile("___")
 
 repo_url_default = "https://github.com/CAIDA/catalog-data"
 
+# Ontology
+ontology_file = "ontology_jsonld.json"
+ontology_dir = "ontology"
+ontology_info = {}
 
 # Weight used to create id scoring for search
 # currently not used.
@@ -553,6 +557,11 @@ def main():
     #######################
     utils.error_print()
 
+    #######################
+    # Load in the ontology
+    #######################
+    if os.path.isdir(ontology_dir):
+        ontology_load(ontology_dir)
 
     #######################
     # print files
@@ -584,6 +593,9 @@ def main():
 
     print ("writing",category_id_score_file)
     json.dump(category_id_score, open(category_id_score_file,"w"),indent=indent)
+
+    print ("writing",ontology_file)
+    json.dump(ontology_info, open(ontology_file,"w"),indent=indent)
 
     #################
     for org,ids in organization_ids.items():
@@ -2071,6 +2083,21 @@ def doi_set(obj):
         if len(obj["resources"]) < 1:
             del obj["resources"]
 
-
+########################
+# ontology 
+########################
+def ontology_load(path):
+    for fname in sorted(os.listdir(path)):
+        filename = path+"/"+fname
+        if fname[-7:].lower() == ".jsonld":
+            try:
+                print ("Loading", filename)
+                info = json.load(open(filename))
+                if fname == "anschema.jsonl":
+                    ontology_info["aschema"] = info
+            except Exception as e:
+                print ("\nerror",filename)
+                print ("    ",e)
+                sys.exit(1)
 
 main()
