@@ -2073,7 +2073,7 @@ def doi_set(obj):
             elif (obj["doi"] == ""):
                 obj["doi"] = None
             elif (doi_norm not in obj["doi"]):
-                utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm)
+                utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
         return 
 
     index = None
