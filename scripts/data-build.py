@@ -2057,6 +2057,23 @@ def class_copy_from_category_keys(objects):
 
 def doi_set(obj):
     if ("doi" in obj and obj["doi"] is not None) or "resources" not in obj:
+        if ("doi" in obj):
+            obj["doi"] = obj["doi"].strip()
+            doi_norm = "https://doi.org/"
+            # drop "dx" from domain
+            if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+            # normalize alphanumeric forms to full URL
+            elif ("doi:" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+            # determine if only the doi number is provided
+            elif (obj["doi"][:3] == "10."):
+                obj["doi"] = doi_norm + obj["doi"]
+            # normalize empty string DOIs to null
+            elif (obj["doi"] == ""):
+                obj["doi"] = None
+            elif (doi_norm not in obj["doi"]):
+                utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
         return 
 
     index = None
