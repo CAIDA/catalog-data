@@ -2057,6 +2057,8 @@ def class_copy_from_category_keys(objects):
 
 # The goal is to have a "good" doi at the end of the code.
 def doi_set(obj):
+    # If doi is not set, but there is a doi link in resources,
+    # set doi to that link 
     if ("doi" not in obj or obj["doi"] is None) and "resources" in obj:
         index = None
         for i,info in enumerate(obj["resources"]):
@@ -2070,6 +2072,7 @@ def doi_set(obj):
             if len(obj["resources"]) < 1:
                 del obj["resources"]
 
+    # If there is a doi set, fix it to the doi.org format
     if ("doi" in obj):
         obj["doi"] = obj["doi"].strip()
         doi_norm = "https://doi.org/"
