@@ -3118,7 +3118,7 @@ YEAR   : "2022-06"
 VOLUME : ""
 PAGE   : "(12)"
 DOI    : ""
-URL    : "http://seal.cs.ucf.edu/doc/dsn22.pdf"
+URL    : "https://www.cs.ucf.edu/~mohaisen/doc/dsn22.pdf"
 TOPKEY : "witty worm"
 GEOLOC : "Incheon, KR"
 ABS    : ""
@@ -13917,7 +13917,7 @@ PUBLISH: "Rhodes University"
 PAGE   : "1-112"
 YEAR   : "2019-01"
 URL    : "https://commons.ru.ac.za/vital/access/services/Download/vital:30766/SOURCE1?view=true"
-TOPKEY : "topology-ark-dnsname, telescope-generic"
+TOPKEY : "topology-ark-dnsname"
 GEOLOC : "Grahamstown, ZA"
 ABS    : ""
 
@@ -14343,22 +14343,6 @@ DOI    : "10.1007/978-3-030-68110-4_2"
 URL    : "https://link.springer.com/chapter/10.1007/978-3-030-68110-4_2"
 TOPKEY : "passive-2016"
 GEOLOC : "Gliwice, PL"
-ABS    : ""
-
----
-
-MARKER : "2020_husak_m_acm_3407062"
-TYPE   : "in_proceedings"
-AUTHOR : "Husak, M., Jirsik, T., Yang, S."
-TITLE  : "SoK: contemporary issues and challenges to enable cyber situational awareness for network security"
-CTITLE : "Proceedings of the 15th International Conference on Availability, Reliability and Security (ARES '20)"
-YEAR   : "2020-08"
-VOLUME : ""
-PAGE   : "1-10"
-DOI    : "10.1145/3407023.3407062"
-URL    : "https://dl.acm.org/doi/abs/10.1145/3407023.3407062"
-TOPKEY : "telescope-generic"
-GEOLOC : "Brno, CZ"
 ABS    : ""
 
 ---
@@ -15148,22 +15132,6 @@ DOI    : "10.1038/s41598-020-78336-9"
 URL    : "https://www.nature.com/articles/s41598-020-78336-9"
 TOPKEY : "skitter-router-adjacencies"
 GEOLOC : "Leipzig, DE"
-ABS    : ""
-
----
-
-MARKER : "2020_strowes_s_dlifip_202023"
-TYPE   : "in_proceedings"
-AUTHOR : "Strowes, S., Wilhelm, R., Obser, F., Stagni, R., Formoso, A., Aben, E."
-TITLE  : "Debogonising 2a10::/12 Analysis of one week's visibility of a new /12"
-CTITLE : "2020 Network Traffic Measurement and Analysis Conference (TMA)"
-YEAR   : "2020-00"
-VOLUME : ""
-PAGE   : "(9)"
-DOI    : ""
-URL    : "https://dl.ifip.org/db/conf/tma/tma2020/tma2020-camera-paper23.pdf"
-TOPKEY : "telescope-generic"
-GEOLOC : "Amsterdam, NL"
 ABS    : ""
 
 ---
@@ -24927,22 +24895,6 @@ GEOLOC : "Natal, BZ"
 ABS    : "Vulnerable IoT devices are powerful platforms for building botnets that cause billion-dollar losses every year. In this work, we study Bashlite botnets and their successors, Mirai botnets. In particular, we focus on the evolution of the malware as well as changes in botnet operator behavior. We use monitoring logs from 47 honeypots collected over 11 months. Our results shed new light on those botnets, and complement previous findings by providing evidence that malware, botnet operators, and malicious activity are becoming more sophisticated. Compared to its predecessor, we find Mirai uses more resilient hosting and control infrastructures, and supports more effective attacks."
 
 
-
-
----
-MARKER : "2018_m_husak_comst_21_640"
-TYPE   : "in_journal"
-AUTHOR : "Husak, M., Komarkova, J., Bou-Harb, E., Celeda, P."
-TITLE  : "Survey of attack projection, prediction, and forecasting in cyber security"
-SERIAL : "IEEE Communications Surveys and Tutorials"
-YEAR   : "2018-09"
-VOLUME : "21 (1)"
-PAGE   : "640-660"
-DOI    : "10.1109/COMST.2018.2871866"
-TOPKEY : "telescope-generic"
-GEOLOC : "Brno, CZ; Brno, CZ; Boca Raton, FL, US; Brno, CZ"
-ABS    : "This paper provides a survey of prediction, and forecasting methods used in cyber security. Four main tasks are discussed first, attack projection and intention recognition, in which there is a need to predict the next move or the intentions of the attacker, intrusion prediction, in which there is a need to predict upcoming cyber attacks, and network security situation forecasting, in which we project cybersecurity situation in the whole network. Methods and approaches for addressing these tasks often share the theoretical background and are often complementary. In this survey, both methods based on discrete models, such as attack graphs, Bayesian networks, and Markov models, and continuous models, such as time series and grey models, are surveyed, compared, and contrasted. We further discuss machine learning and data mining approaches, that have gained a lot of attention recently and appears promising for such a constantly changing environment, which is cyber security. The survey also focuses on the practical usability of the methods and problems related to their evaluation."
-REMARK : "Review paper; does not actually use Telescope data"
 
 
 
@@ -49708,3 +49660,15 @@ DOI    : "10.1109/PDP59025.2023.00016"
 TOPKEY : "passive_2015_pcap"
 GEOLOC : "Munich, DE"
 ABS    : "Next-generation automotive networks will be characterized by a high number of interconnected sensors, actuators and applications on electronic control units communicating with each other over a high-speed Ethernet backbone network. As these applications have various criticalities, high volumes of fluctuating traffic with different priorities will have to be processed in a reliable and efficient manner. To cope with these challenges, we present Priority-aware Inter-Server Receive Side Scaling (prioRSS), a new SmartNIC-based hardware accelerator designed for automotive compute nodes. prioRSS builds upon Receive Side Scaling and introduces priority-awareness into an intra- and inter-node load balancer. It uses a priority-partitioned indirection table within which flows of the same priority are bundled. Low-latency reconfigurations issued by a Network Health Monitoring software allow for adapting the table content to changing network conditions. Simulative evaluations and comparisons to a priority-unaware version of our design show that prioRSS enables per-priority resource assignments without degrading end-to-end packet latencies while using the same table memory space. Paired with a priority-aware scheduler, end-to-end latencies of high priority flows can be notably reduced compared to average packet latencies, at the expense of lowest priority traffic. The best results are acquired when partitioning the table proportionally to the associated traffic share."
+
+---
+MARKER : "2023_s_nourin_230404835"
+TYPE   : "in_proceedings"
+AUTHOR : "Nourin, S., Tran, V., Jiang, X., Bock, K., Feamster, N., Hoang, N., Levin, D."
+TITLE  : "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in Large-Scale Measurements of a Low-Penetration Country"
+CTITLE : "The 2023 ACM Web Conference (WWW 2023)"
+YEAR   : "2023-05"
+DOI    : "10.48550/arXiv.2304.04835"
+TOPKEY : "as_relationships_geo, routeviews_ipv6_prefix2as, as_rank"
+GEOLOC : "College Park, MD, US"
+ABS    : "We present the largest measurement study to date of Turkmenistan's Web censorship. To do so, we developed TMC, which tests the blocking status of millions of domains across the three foundational protocols of the Web (DNS, HTTP, and HTTPS). Importantly, TMC does not require access to vantage points in the country. We apply TMC to 15.5M domains, our results reveal that Turkmenistan censors more than 122K domains, using different blocklists for each protocol. We also reverse-engineer these censored domains, identifying 6K over-blocking rules causing incidental filtering of more than 5.4M domains. Finally, we use Geneva, an open-source censorship evasion tool, to discover five new censorship evasion strategies that can defeat Turkmenistan's censorship at both transport and application layers. We will publicly release both the data collected by TMC and the code for censorship evasion."
