@@ -121,7 +121,9 @@ papers_yaml = ''
 for p in papers:
     authors, date, title, src, vol, num, page, cat, url = p 
     authors, first_finit, first_last = format_authors(authors)
-    marker_id = randint(10**4, 10**5-1)
+    marker_id = ''.join(year.split('-')) if len(url) == 0\
+        else url.split('/')[-1][-5:]
+    first_finit = first_finit.replace('.', '')
     marker = f"{date.split('-')[0]}_{first_last}_{first_finit}_{marker_id}"    
     year = '-'.join(date.split('-')[0:2])
     cat = cat.lower()
@@ -145,6 +147,7 @@ for p in papers:
         "PAGE": page,
         "URL": url,
         "ABS": "",
+        "TOPKEY": "dataset:routeviews"
     }
 
     # Set yaml by category (peer, conference, etc.)
