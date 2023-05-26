@@ -2055,22 +2055,41 @@ def class_copy_from_category_keys(objects):
                     }
                 })
 
+# The goal is to have a "good" doi at the end of the code.
 def doi_set(obj):
-    if ("doi" in obj and obj["doi"] is not None) or "resources" not in obj:
-        return 
+    # If doi is not set, but there is a doi link in resources,
+    # set doi to that link 
+    if ("doi" not in obj or obj["doi"] is None) and "resources" in obj:
+        index = None
+        for i,info in enumerate(obj["resources"]):
+            if "name" in info and info["name"].lower() == "doi":
+                index = i
+                break
+        if index is not None:
+            obj["doi"] = obj["resources"][index]["url"]
+            print (obj["name"],obj["doi"])
+            del obj["resources"][index]
+            if len(obj["resources"]) < 1:
+                del obj["resources"]
 
-    index = None
-    for i,info in enumerate(obj["resources"]):
-        if "name" in info and info["name"].lower() == "doi":
-            index = i
-            break
-    if index is not None:
-        obj["doi"] = obj["resources"][index]["url"]
-        print (obj["name"],obj["doi"])
-        del obj["resources"][index]
-        if len(obj["resources"]) < 1:
-            del obj["resources"]
-
+    # If there is a doi set, fix it to the doi.org format
+    if ("doi" in obj):
+        obj["doi"] = obj["doi"].strip()
+        doi_norm = "https://doi.org/"
+        # drop "dx" from domain
+        if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+        # normalize alphanumeric forms to full URL
+        elif ("doi:" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+        # determine if only the doi number is provided
+        elif (obj["doi"][:3] == "10."):
+            obj["doi"] = doi_norm + obj["doi"]
+        # normalize empty string DOIs to null
+        elif (obj["doi"] == ""):
+            obj["doi"] = None
+        elif (doi_norm not in obj["doi"]):
+            utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
 
 
 main()
