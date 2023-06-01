@@ -3,7 +3,7 @@
     "name": "Tracefilter: A Tool for Locating Network Source Address Validation Filters",
     "datePublished": "2007.08",
     "publisher": "USENIX Security 2007",
-    "description": "This research examines where in the Internet source address validation filters are employed. We introduce “tracefilter,” a new, novel filter location technique. Our initial results from live Internet measurements find 80% of filters within two hops of sources",
+    "description": "This research examines where in the Internet source address validation filters are employed. We introduce 'tracefilter,' a new, novel filter location technique. Our initial results from live Internet measurements find 80% of filters within two hops of sources",
     "tags": [
         "cyber security",
         "routing security",
