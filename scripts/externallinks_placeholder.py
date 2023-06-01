@@ -319,12 +319,19 @@ def parse_paper(fname, key_value):
         elif "AUTHOR" == key:
             # Handle the two seperate ways that authors can be stored.
             authors = []
+
+            # Edge case: author last name has suffix
+            suffix = "Jr." in value
+            value = value.replace("Jr.", "Jr")
+
             for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
                 names = re.split("\s*,\s*", author)
                 if len(names) == 4:
                     authors.append(names[0]+", "+names[1])
                     authors.append(names[2]+", "+names[3])
                 else:
+                    if suffix: 
+                        author = author.replace("Jr", "Jr.")
                     authors.append(author)
 
             # Iterate over each author and add there an object for them.
