@@ -188,7 +188,8 @@ topkey_2_dataset = {
   "dolphin"                           : "presentation:2014_dolphin_dhs",
   "asfinder"                          : "software:coralreef",
   "netgeo"                            : "software:netgeo",
-  "ioda"                              : "software:ioda"
+  "ioda"                              : "software:ioda",
+  "routeviews"                        : "routeviews"
 }
 alternate_links = ["software:", "media:", "paper:", "presentation:"]
 re_yml = re.compile(r".yaml")
@@ -297,7 +298,6 @@ def parse_paper(fname, key_value):
     if "TITLE" in key_value: 
         title = key_value["TITLE"]
         paper["name"] = title
-
 
     re_year = re.compile("(\d\d\d\d)")
     re_year_month = re.compile("(\d\d\d\d).(\d\d)")
