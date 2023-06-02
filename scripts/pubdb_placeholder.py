@@ -62,8 +62,6 @@ def main():
         
     if utils.error_found():
         utils.error_print()
-        sys.exit(1)
-    ## add to this end 
 
     re_best = re.compile("Best\s*Paper")#, re.IGNORECASE)
     re_distinguished = re.compile("Distinguished\s*Paper")#, re.IGNORECASE)

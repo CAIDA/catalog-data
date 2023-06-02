@@ -10,6 +10,7 @@ SUMMARY_FILE = data/catalog-dataset-summary.jsonl
 
 EXTERNAL_MANUAL_FILE=data/data-papers.yaml
 EXTERNAL_ROUTEVIEWS_URL=https://www.routeviews.org/routeviews/index.php/papers/ 
+EXTERNAL_ROUTEVIEWS_HTML=data/data-papers-routeviews.html
 EXTERNAL_ROUTEVIEWS_FILE=data/data-papers-routeviews.yaml
 
 URL=https://api.catalog.caida.org/v2/graphql
@@ -33,7 +34,7 @@ DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Categories\ used\ in\ Schema\ for\ CAIDA\
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
-run:clean_placeholders pubdb external caida summary build suggestions
+run:clean_placeholders pubdb external routerviews caida summary build suggestions
 
 fast:
 	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
@@ -64,13 +65,19 @@ else
 endif
 
 summary:
-	python3 scripts/catalog-dataset-summary-download.py -O ${SUMMARY_FILE} -b ${SUMMARY_BACKUP_FILE} ${SUMMARY_URL}
+	python3 scripts/download_url.py -O ${SUMMARY_FILE} -b ${SUMMARY_BACKUP_FILE} ${SUMMARY_URL}
 
 pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py ${PUBDB_PAPER} ${PUBDB_MEDIA}
 	python3 scripts/pubdb_placeholder.py -p ${PUBDB_PAPER} -m ${PUBDB_MEDIA}
 
-external: scripts/externallinks_placeholder.py
-	python3 scripts/externallinks_placeholder.py ${EXTERNAL_MANUAL_FILE} ${EXTERNAL_ROUTEVIEWS_FILE}
+
+external: 
+	python3 scripts/externallinks_placeholder.py ${EXTERNAL_MANUAL_FILE}
+
+routeviews: 
+	python3 scripts/download_url.py -O ${EXTERNAL_ROUTEVIEWS_HTML} ${EXTERNAL_ROUTEVIEWS_URL} 
+	python3 scripts/routeviews-parse.py -O ${EXTERNAL_ROUTEVIEWS_FILE} ${EXTERNAL_ROUTEVIEWS_HTML}
+	python3 scripts/externallinks_placeholder.py ${EXTERNAL_ROUTEVIEWS_FILE}
 
 caida: scripts/caida_placeholder.py scripts/caida_dataset_blanks.py
 	@if [ -d ${CATALOG_DATA_CAIDA_PATH} ]; then \
@@ -84,7 +91,6 @@ suggestions.json: scripts/suggestions.py data/suggestions.json
 # This was used to backfill historic papers and presentations
 data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
-
 
 
 clean: clean_placeholders

@@ -45,11 +45,8 @@ import sys
 import os.path
 import requests
 import time
+import lib.utils as utils
 
-#method to print how to run script
-def print_help():
-    print (sys.argv[0],"-u as-rank.caida.org/api/v1")
-    
 ######################################################################
 ## Parameters
 ######################################################################
@@ -69,22 +66,23 @@ if os.path.exists(args.output):
         sys.exit()
 
 # Open the output file
-try:
-    fout = open(args.output,"w")
-except Exception as e: 
-    print(e,file=sys.stderr)
-    sys.exit()
-
 # Try to download it
 print("   downloading", url)
 request = requests.get(url)
 
 # If you fail, use the backup file
 if request.status_code != 200:
-    print ("   Query failed to run returned code of %d " % (request.status_code))
-    with open (args.backup_file,"r") as fin:
-        for line in fin:
-            fout.write(line)
-    sys.exit()
-
-fout.write(request.text)
+    if args.backup_file:
+        print ("   Query failed to run returned code of %d " % (request.status_code))
+        with open (args.backup_file,"r") as fin:
+            for line in fin:
+                fout.write(line)
+    else:
+        utils.error_add(url, "Failed download and no backup")
+        utils.error_print()
+else:
+    try:
+        fout = open(args.output,"w")
+        fout.write(request.text)
+    except Exception as e: 
+        print(e,file=sys.stderr)
