@@ -1,10 +1,9 @@
 #!  /usr/bin/env python3
 import yaml
-# import subprocess
+import os, warnings
 
-fixed_paper = open("./data/data-papers-fixed.yaml", "w+")
 # Match invalid bibtex types to valid types
-normalize = {
+bibtex_normalize = {
     "PhD thesis": "phdthesis",
     "patent": "misc",
     "thesis": "phdthesis",
@@ -24,24 +23,39 @@ normalize = {
     "in_book": "book",
     "preprint": "misc"
 }
+filename="./data/data-papers.yaml"
+filename_fixed="./data/data-papers-fixed.yaml"
 
-with open('./data/data-papers.yaml', 'r') as f:
-    papers = yaml.load_all(f, Loader=yaml.FullLoader)
+with open(filename, 'r') as f:
+    papers = yaml.load_all(f, Loader=yaml.Loader)
     fixed_papers = []
     for p in papers:
         if "TYPE" in p:
             paper_type = p["TYPE"]
             # Normalize if paper type matches an invalid key
-            p["TYPE"] = normalize.get(paper_type, paper_type)
-            fixed_papers.append(p)         
+            p["TYPE"] = bibtex_normalize.get(paper_type, paper_type)
+            fixed_papers.append(p)
     # Write to YAML file
-    fixed_paper.write(yaml.dump_all(fixed_papers, line_break="4"))
-            
+    filestream = open(filename_fixed, "w")
+    yaml.dump_all(fixed_papers, stream=filestream, sort_keys=False)
+    filestream.close()
+    f.close() 
+
 # check invalid bibtex types are fixed
-with open("./data/data-papers-fixed.yaml", "r") as f:
-    papers = yaml.load_all(f, Loader=yaml.FullLoader)
-    for p in papers:
-        if "TYPE" in p and p["TYPE"] in normalize.keys():
-            print("Invalid bibtex type: " + p["TYPE"])
-        
-    # subprocess.run(["git","mv",fname,filename])``
+success = False
+with open(filename_fixed, "r") as f:
+    papers = yaml.load_all(f, Loader=yaml.Loader)
+    warnings.simplefilter('error', UserWarning)
+    try:
+        for p in papers:
+            if "TYPE" in p and p["TYPE"] in bibtex_normalize.keys():
+                warnings.warn("Fix invalid bibtex type in " + p["MARKER"] + ": " + p["TYPE"])
+        print("Successfully fixed all invalid bibtex types")
+        success = True
+    except Exception as e:
+        print(e)
+    finally:
+        f.close()
+
+if (success):
+    os.replace(filename_fixed, filename)
