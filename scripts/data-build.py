@@ -390,11 +390,11 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
-    #######################
-    # duplicate slide resources
-    #######################
-    print ("duplicating slides into paper access")
-    duplicate_slides_in_access()
+    ########################
+    ## duplicate slide resources
+    ########################
+    #print ("duplicating slides into paper access")
+    #duplicate_slides_in_access()
 
 
     #######################
