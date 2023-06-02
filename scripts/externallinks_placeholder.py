@@ -314,7 +314,29 @@ def parse_paper(fname, key_value):
                     
         elif "TYPE" == key:
             paper_type = value
-            paper["bibtexFields"]["type"] = paper_type
+            # Match invalid bibtex types to valid types
+            normalize = {
+                "PhD thesis": "phdthesis",
+                "patent": "misc",
+                "thesis": "phdthesis",
+                "tech report": "techreport",
+                "online": "misc",
+                "tech_report": "techreport",
+                "class report": "misc",
+                "presentation": "misc",
+                "MSc thesis": "mastersthesis",
+                "in_joural": "article",
+                "in_proceedings": "inproceedings",
+                "BA thesis": "misc",
+                "BSc thesis": "misc",
+                "MS thesis": "mastersthesis",
+                "in_journal": "article",
+                "tech. report": "techreport",
+                "in_book": "book",
+                "preprint": "misc"
+            }
+            # Normalize if paper type matches an invalid key
+            paper["bibtexFields"]["type"] = normalize.get(paper_type, paper_type)
 
         elif "AUTHOR" == key:
             # Handle the two seperate ways that authors can be stored.
