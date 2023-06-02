@@ -20,8 +20,6 @@ parser.add_argument("-p", dest="papers_file", type=str, required=True)
 parser.add_argument("-m", dest="media_file", type=str, required=True)
 args = parser.parse_args()
     
-error = False
-
 def main():
     if not load_ids("paper","papers",args.papers_file)  \
         or not load_ids("presentation","presentations",args.media_file):
@@ -42,23 +40,27 @@ def main():
                     try:
                         obj = json.load(open(fname,"r"))
                     except json.decoder.JSONDecodeError as e:
-                        error_add(fname, e)
+                        utils.error_add(fname, e)
                         continue
                     except ValueError as e:
                         print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
-                    id_add(fname, type_, obj["id"])
-                    if "name" in obj:
-                        name = utils.id_create(fname, type_,obj["name"])
-                        #if "evolution" in name:
-                            #print (obj["id"])
-                            #print (name)
-                            #print ()
-                        name_id[name] = utils.id_create(fname, type_,obj["id"])
-                    if type_ == "person":
-                        utils.person_seen_add(fname, obj)
+                    if "id" in obj:
+                        id_add(fname, type_, obj["id"])
+                        if "name" in obj:
+                            name = utils.id_create(fname, type_,obj["name"])
+                            #if "evolution" in name:
+                                #print (obj["id"])
+                                #print (name)
+                                #print ()
+                            name_id[name] = utils.id_create(fname, type_,obj["id"])
+                        if type_ == "person":
+                            utils.person_seen_add(fname, obj)
+                    else:
+                        print (json.dumps(obj,indent=4))
+                        utils.error_add(fname, "No id found")
         
-    if error:
+    if utils.error_found():
         utils.error_print()
         sys.exit(1)
     ## add to this end 
@@ -151,7 +153,7 @@ def main():
         if len(links) > 0:
             obj["links"] = links
 
-    if error:
+    if utils.error_found():
         utils.error_print()
         sys.exit(1)
 
@@ -195,10 +197,10 @@ def load_ids(type_,key, filename):
                 obj["filename"] = "sources/"+type_+"/"+obj["id"]+"___pubdb.json"
                 objects.append(obj)
     except json.decoder.JSONDecodeError as e:
-        error_add(filename, e)
+        utils.error_add(filename, e)
         return False 
     except ValueError as e:
-        error_add(filename, "invalid JSON format")
+        utils.error_add(filename, "invalid JSON format")
         return False 
         raise e
     return True
@@ -226,12 +228,6 @@ def id_yearless(id_):
         type_,date,name = m.groups()
         return type_+":"+name
     return id_
-
-def error_add(filename, message):
-    global error
-    utils.error_add(filename,message)
-    error = True
-    
 
 id_person = {}
 def person_create(filename, pid):

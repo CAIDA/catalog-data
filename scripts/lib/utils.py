@@ -291,6 +291,9 @@ def fields_parser_helper(fields_dic,label,fields):
 
 ###########################
 filename_errors = {}
+def error_found():
+    return len(filename_errors) > 0
+
 def error_add(filename, message):
     if filename not in filename_errors:
         filename_errors[filename] = []
