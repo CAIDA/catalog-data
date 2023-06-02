@@ -74,7 +74,7 @@ pubdb: scripts/lib/utils.py scripts/pubdb_placeholder.py scripts/pubdb_links.py 
 external: 
 	python3 scripts/download_url.py -O ${EXTERNAL_ROUTEVIEWS_HTML} ${EXTERNAL_ROUTEVIEWS_URL} 
 ifneq ("$(wildcard ${EXTERNAL_ROUTEVIEWS_HTML})", :"")
-	python3 scripts/routeviews-parse.py -O ${EXTERNAL_ROUTEVIEWS_FILE} ${EXTERNAL_ROUTEVIEWS_HTML}
+	python3 scripts/externallinks_routeviews-parse.py -O ${EXTERNAL_ROUTEVIEWS_FILE} ${EXTERNAL_ROUTEVIEWS_HTML}
 	python3 scripts/externallinks_placeholder.py ${EXTERNAL_MANUAL_FILE} ${EXTERNAL_ROUTEVIEWS_FILE}
 else
 	python3 scripts/externallinks_placeholder.py ${EXTERNAL_MANUAL_FILE} 
