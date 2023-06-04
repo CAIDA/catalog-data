@@ -93,7 +93,7 @@ for obj in sorted( id_object.values(), key=lambda o: o["date"], reverse=True):
                 if t == "Paper" or t == "Media" or t == "Presentation":
                     d = editdistance.eval(obj["name"].lower(), id_object[j]["name"].lower())
                     p = int(100*d/l)
-                    if p < 30:
+                    if p < 40:
                         close.append([j,d,p])
                         if p_largest is None or p_largest > p:
                             p_largest = p

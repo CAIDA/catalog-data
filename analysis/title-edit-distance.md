@@ -15,9 +15,22 @@ Here is a list of papers that match.
 
 | dist/length | ratio  | name  | date | type |
 |----|---|----|-----|----|
+35
+| ----- | -- | **Duality between equilibrium and growing networks** | 201308 | Paper|
+| 17/ 1 | 35% | Duality Between Static and Dynamic Networks | 201310 | Presentation|
+33
+| ----- | -- | **QUINCE: A unified crowdsourcing-based QoE measurement platform** | 201908 | Paper|
+| 21/ 1 | 33% | QUINCE: A gamified crowdsourcing QoE assessment framework | 201803 | Presentation|
+32
+| ----- | -- | **Third Accountability and Transparency Review Team (ATRT3) Report** | 202005 | Paper|
+| 21/ 1 | 32% | Third Accountability and Transparency Review Team (ATRT3) Report - Minority Statement | 202005 | Paper|
+30
+| ----- | -- | **Internet measurement and data analysis: topology, workload, performance and routing statistics** | 199903 | Paper|
+| 29/ 1 | 30% | Internet measurement: topology, workload, performance and routing | 199812 | Presentation|
 27
 | ----- | -- | **Internet Topology Data Comparison** | 201205 | Paper|
-|  9/ 1 | 27% | Internet Topology Data Kit | 201102 | Presentation|
+|  9/ 2 | 27% | Internet Topology Data Kit | 201102 | Presentation|
+| 10/ 2 | 30% | Internet Topology Data Kit Update | 201208 | Presentation|
 25
 | ----- | -- | **Otter: A general-purpose network visualization tool** | 199906 | Paper|
 | 13/ 1 | 25% | Otter: General Purpose Network Viz Tool | 199808 | Presentation|
@@ -177,6 +190,16 @@ Here is a list of papers that match.
 |  0/ 3 |  0% | Analysis of Country-wide Internet Outages Caused by Censorship | 201111 | Presentation|
 |  0/ 3 |  0% | Analysis of Country-wide Internet Outages Caused by Censorship | 201112 | Presentation|
 0
+| ----- | -- | **Analysis of a "/0" Stealth Scan from a Botnet** | 201211 | Paper|
+| 14/ 3 | 31% | Analysis of an Internet-wide Stealth Scan from a Botnet | 201212 | Presentation|
+|  0/ 3 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201504 | Paper|
+|  0/ 3 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Presentation|
+0
+| ----- | -- | **Analysis of a "/0" Stealth Scan from a Botnet** | 201504 | Paper|
+|  0/ 3 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Paper|
+| 14/ 3 | 31% | Analysis of an Internet-wide Stealth Scan from a Botnet | 201212 | Presentation|
+|  0/ 3 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Presentation|
+0
 | ----- | -- | **Lost in Space: Improving Inference of IPv4 Address Space Utilization** | 201509 | Paper|
 |  0/ 3 |  0% | Lost in Space: Improving Inference of IPv4 Address Space Utilization | 201410 | Paper|
 |  0/ 3 |  0% | Lost in Space: Improving Inference of IPv4 Address Space Utilization | 201510 | Presentation|
@@ -208,6 +231,10 @@ Here is a list of papers that match.
 |  0/ 2 |  0% | Navigability of complex networks | 201001 | Presentation|
 |  8/ 2 | 25% | Navigability of Networks | 201005 | Presentation|
 0
+| ----- | -- | **Greedy Forwarding in Scale-Free Networks Embedded in Hyperbolic Metric Spaces** | 200909 | Paper|
+|  0/ 2 |  0% | Greedy Forwarding in Scale-Free Networks Embedded in Hyperbolic Metric Spaces | 200906 | Presentation|
+| 26/ 2 | 33% | Greedy Forwarding in Dynamic Scale-Free Networks Embedded in Hyperbolic Metric Spaces: Technical Report | 200907 | Paper|
+0
 | ----- | -- | **Identification of influential spreaders in complex networks** | 201008 | Paper|
 |  0/ 2 |  0% | Identification of Influential Spreaders in Complex Networks | 201103 | Presentation|
 |  0/ 2 |  0% | Identification of Influential Spreaders in Complex Networks | 201005 | Presentation|
@@ -220,21 +247,21 @@ Here is a list of papers that match.
 |  0/ 2 |  0% | Extracting Benefit from Harm: Using Malware Pollution to Analyze the Impact of Political and Geophysical Events on the Internet | 201208 | Presentation|
 |  0/ 2 |  0% | Extracting Benefit from Harm: Using Malware Pollution to Analyze the Impact of Political and Geophysical Events on the Internet | 201201 | Presentation|
 0
-| ----- | -- | **Analysis of a "/0" Stealth Scan from a Botnet** | 201211 | Paper|
-|  0/ 2 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201504 | Paper|
-|  0/ 2 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Presentation|
-0
 | ----- | -- | **Gaining Insight into AS-level Outages through Analysis of Internet Background Radiation** | 201304 | Paper|
 |  0/ 2 |  0% | Gaining Insight into AS-level Outages through Analysis of Internet Background Radiation | 201212 | Paper|
 |  0/ 2 |  0% | Gaining Insight into AS-level Outages through Analysis of Internet Background Radiation | 201304 | Presentation|
 0
+| ----- | -- | **Speedtrap: Internet-Scale IPv6 Alias Resolution** | 201310 | Paper|
+|  0/ 2 |  0% | Speedtrap: Internet-Scale IPv6 Alias Resolution | 201310 | Presentation|
+| 17/ 2 | 36% | Large Scale IPv6 Alias Resolution | 201301 | Presentation|
+0
+| ----- | -- | **A Coordinated View of the Temporal Evolution of Large-scale Internet Events** | 201401 | Paper|
+|  0/ 2 |  0% | A Coordinated View of the Temporal Evolution of Large-scale Internet Events | 201401 | Media|
+| 26/ 2 | 34% | A Coordinated View of Large-Scale Internet Events | 201211 | Presentation|
+0
 | ----- | -- | **Lost in Space: Improving Inference of IPv4 Address Space Utilization** | 201410 | Paper|
 |  0/ 2 |  0% | Lost in Space: Improving Inference of IPv4 Address Space Utilization | 201606 | Paper|
 |  0/ 2 |  0% | Lost in Space: Improving Inference of IPv4 Address Space Utilization | 201509 | Paper|
-0
-| ----- | -- | **Analysis of a "/0" Stealth Scan from a Botnet** | 201504 | Paper|
-|  0/ 2 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Paper|
-|  0/ 2 |  0% | Analysis of a "/0" Stealth Scan from a Botnet | 201211 | Presentation|
 0
 | ----- | -- | **Adding Enhanced Services to the Internet: Lessons from History** | 201509 | Paper|
 |  0/ 2 |  0% | Adding Enhanced Services to the Internet: Lessons from History | 201607 | Paper|
@@ -326,9 +353,6 @@ Here is a list of papers that match.
 | ----- | -- | **Traceroute Probe Method and Forward IP Path Inference** | 200810 | Paper|
 |  0/ 1 |  0% | Traceroute Probe Method and Forward IP Path Inference | 200810 | Presentation|
 0
-| ----- | -- | **Greedy Forwarding in Scale-Free Networks Embedded in Hyperbolic Metric Spaces** | 200909 | Paper|
-|  0/ 1 |  0% | Greedy Forwarding in Scale-Free Networks Embedded in Hyperbolic Metric Spaces | 200906 | Presentation|
-0
 | ----- | -- | **An Internet Data Sharing Framework For Balancing Privacy and Utility** | 200910 | Paper|
 |  0/ 1 |  0% | An Internet Data Sharing Framework For Balancing Privacy and Utility | 200910 | Presentation|
 0
@@ -368,14 +392,8 @@ Here is a list of papers that match.
 | ----- | -- | **IPv6 Alias Resolution via Induced Fragmentation** | 201303 | Paper|
 |  0/ 1 |  0% | IPv6 Alias Resolution via Induced Fragmentation | 201303 | Presentation|
 0
-| ----- | -- | **Speedtrap: Internet-Scale IPv6 Alias Resolution** | 201310 | Paper|
-|  0/ 1 |  0% | Speedtrap: Internet-Scale IPv6 Alias Resolution | 201310 | Presentation|
-0
 | ----- | -- | **A First Look at IPv4 Transfer Markets** | 201312 | Paper|
 |  0/ 1 |  0% | A First Look at IPv4 Transfer Markets | 201312 | Presentation|
-0
-| ----- | -- | **A Coordinated View of the Temporal Evolution of Large-scale Internet Events** | 201401 | Paper|
-|  0/ 1 |  0% | A Coordinated View of the Temporal Evolution of Large-scale Internet Events | 201401 | Media|
 0
 | ----- | -- | **Survey of End-to-End Mobile Network Measurement Testbeds** | 201411 | Paper|
 |  0/ 1 |  0% | Survey of End-to-End Mobile Network Measurement Testbeds | 201601 | Paper|
