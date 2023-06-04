@@ -385,7 +385,9 @@ def parse_paper(fname, key_value):
                 dataset = dataset.strip().lower()
 
                 # Try to map the current dataset to a catalog dataset.
-                if dataset in topkey_2_dataset:
+                if dataset[:8] == "dataset:":
+                    dataset = dataset[8:]
+                elif dataset in topkey_2_dataset:
                     dataset = topkey_2_dataset[dataset]
                 elif len(dataset) == 0:
                     continue
