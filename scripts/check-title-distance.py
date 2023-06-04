@@ -94,7 +94,7 @@ for obj in sorted( id_object.values(), key=lambda o: o["date"], reverse=True):
                     d = editdistance.eval(obj["name"].lower(), id_object[j]["name"].lower())
                     p = int(100*d/l)
                     if p < 40:
-                        close.append([j,d,p])
+                        close.append([j,d,l,p])
                         if p_largest is None or p_largest > p:
                             p_largest = p
             if len(close) > 0: 
@@ -105,9 +105,9 @@ print ("<span sytel='font-size:-1'>")
 print ("")
 print ("| dist/length | ratio  | name  | date | type |")
 print ("|----|---|----|-----|----|")
-for p, l, k, obj, close in sorted(papers, reverse=True):
+for p, ll, k, obj, close in sorted(papers, reverse=True):
     print (p)
     print (f"| ----- | -- | **{obj['name']}** | {obj['date']} | {obj['__typename']}|")
-    for j,d,p in close:
+    for j,d,l,p in close:
         o = id_object[j]
         print (f"| {d:2}/{l:2} | {p:2}% | {o['name']} | {o['date']} | {o['__typename']}|")
