@@ -57,7 +57,9 @@ with open(id_object_file,"r") as fin:
     id_object = json.load(fin)
     for i,obj in id_object.items():
         if "date" not in obj:
-            obj["date"] = "2024"
+            obj["date"] = "202401"
+        else:
+            obj["date"] = "".join(obj["date"].split("-"))
 with open(id_id_link_file,"r") as fin:
     id_id_link = json.load(fin)
 
@@ -75,11 +77,12 @@ Here is a list of papers that match.
 **name**: the first name is the paper, all following names are from related objects
 """)
 
-print ("| dist/length | ratio  | name  | date | type |")
-print ("|----|---|----|-----|----|")
-for obj in sorted( id_object.values(), key=lambda o: o["date"]):
+papers = []
+k = 0
+for obj in sorted( id_object.values(), key=lambda o: o["date"], reverse=True):
     i = obj["id"]
     if obj["__typename"] == "Paper":
+        p_largest = None
         if i in id_id_link:
             l = len(obj["name"])
             close = []
@@ -92,8 +95,19 @@ for obj in sorted( id_object.values(), key=lambda o: o["date"]):
                     p = int(100*d/l)
                     if p < 30:
                         close.append([j,d,p])
+                        if p_largest is None or p_largest > p:
+                            p_largest = p
             if len(close) > 0: 
-                print (f"| | | **{obj['name']}** | {obj['date']} | {obj['__typename']}|")
-                for j,d,p in close:
-                    o = id_object[j]
-                    print (f"| {d:2}/{l:2} | {p:2}% | {o['name']} | {o['date']} | {o['__typename']}|")
+                papers.append([p_largest, len(close),k, obj, close])
+                k += 1
+
+print ("<span sytel='font-size:-1'>")
+print ("")
+print ("| dist/length | ratio  | name  | date | type |")
+print ("|----|---|----|-----|----|")
+for p, l, k, obj, close in sorted(papers, reverse=True):
+    print (p)
+    print (f"| ----- | -- | **{obj['name']}** | {obj['date']} | {obj['__typename']}|")
+    for j,d,p in close:
+        o = id_object[j]
+        print (f"| {d:2}/{l:2} | {p:2}% | {o['name']} | {o['date']} | {o['__typename']}|")
