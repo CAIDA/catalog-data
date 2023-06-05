@@ -549,6 +549,12 @@ def main():
         doi_set(obj)
 
     #######################
+    # Match up Papers with exact name media and presentation that match 
+    #######################
+    print ("Matching up Papers with media/presentations with the same name")
+    papers_access_add_same_name()
+
+    #######################
     # printing errors
     #######################
     utils.error_print()
@@ -2090,6 +2096,32 @@ def doi_set(obj):
             obj["doi"] = None
         elif (doi_norm not in obj["doi"]):
             utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
+
+def papers_access_add_same_name():
+    for obj in id_object.values():
+        i = obj["id"]
+        if obj["__typename"] == "Paper":
+            if i in id_id_link:
+                for j in id_id_link[i].keys():
+                    o_j = id_object[j]
+                    t = o_j["__typename"]
+                    if t == "Media" or t == "Presentation":
+                        if t == "media":
+                            tag = "video"
+                        else:
+                            tag = "slides"
+                        if obj["name"].lower() == o_j["name"].lower():
+                            if "access" in o_j:
+                                for access in o_j["access"]:
+                                    if "url" in access:
+                                        if "access" not in obj:
+                                            obj["access"] = []
+                                        obj["access"].append({
+                                            "url":access["url"],
+                                            "access":access["access"],
+                                            "tags": [tag]
+                                            })
+                                        break
 
 
 main()
