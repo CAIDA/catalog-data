@@ -9091,7 +9091,7 @@ ABS: ''
 ---
 MARKER: 2022_yangsheng_y_ieee_9940396
 TYPE: inproceedings
-AUTHOR: Yangsheng Yan; Fuliang Li; Wei Wang, W., Wang, X.
+AUTHOR: Yan, Y.; Li, F.; Wei, W.; Wang, X.
 TITLE: 'TalentSketch: LSTM-based Sketch for Adaptive and High-Precision Network Measurement'
 CTITLE: 2022 IEEE 30th International Conference on Network Protocols (ICNP)
 YEAR: 2022-11
@@ -9736,7 +9736,7 @@ ABS: ''
 ---
 MARKER: 2022_karapoola_s_acm_3557121
 TYPE: inproceedings
-AUTHOR: Karapoola, S., Singh, N., Rebeiro, C., V., K.
+AUTHOR: Karapoola, S., Singh, N., Rebeiro, C., Kamakoti, V.
 TITLE: 'RaDaR: A Real-Word Dataset for AI powered Run-time Detection of Cyber-Attacks'
 CTITLE: 'CIKM ''22: Proceedings of the 31st ACM International Conference on Information
   & Knowledge Management'
