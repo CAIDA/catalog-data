@@ -2121,19 +2121,21 @@ def papers_access_add_same_name():
                     if t == "Media" or t == "Presentation":
                         if t == "media":
                             tag = "tag:video"
+                            access_type = "video"
                         else:
                             tag = "tag:slides"
+                            access_type = "slides"
                         if obj["name"].lower() == o_j["name"].lower():
                             if "access" in o_j:
                                 for access in o_j["access"]:
                                     if "url" in access:
                                         if "access" not in obj:
                                             obj["access"] = []
-                                        print(tag)
                                         obj["access"].append({
                                             "url":access["url"],
                                             "access":access["access"],
-                                            "tags": [tag]
+                                            "tags": [tag],
+                                            "type": access_type
                                             })
                                         break
 
