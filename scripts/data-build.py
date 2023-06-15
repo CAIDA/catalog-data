@@ -396,6 +396,11 @@ def main():
     #print ("duplicating slides into paper access")
     #duplicate_slides_in_access()
 
+    #######################
+    # Match up Papers with exact name media and presentation that match 
+    #######################
+    print ("Matching up Papers with media/presentations with the same name")
+    papers_access_add_same_name()
 
     #######################
     # pubdb links
@@ -2106,6 +2111,7 @@ def papers_access_add_same_name():
     for obj in id_object.values():
         i = obj["id"]
         if obj["__typename"] == "Paper":
+            # check if the current obj is linked to anything 
             if i in id_id_link:
                 for j in id_id_link[i].keys():
                     # get the linked object
