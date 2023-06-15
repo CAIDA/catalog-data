@@ -396,6 +396,11 @@ def main():
     #print ("duplicating slides into paper access")
     #duplicate_slides_in_access()
 
+    #######################
+    # Match up Papers with exact name media and presentation that match 
+    #######################
+    print ("Matching up Papers with media/presentations with the same name")
+    papers_access_add_same_name()
 
     #######################
     # pubdb links
@@ -547,12 +552,6 @@ def main():
     print ("Pulling DOIs out of access")
     for obj in id_object.values():
         doi_set(obj)
-
-    #######################
-    # Match up Papers with exact name media and presentation that match 
-    #######################
-    print ("Matching up Papers with media/presentations with the same name")
-    papers_access_add_same_name()
 
     #######################
     # printing errors
@@ -865,7 +864,7 @@ def object_finish(obj):
     for key in ["authors", "presenters"]:
         if key in obj:
             for person_org in obj[key]:
-                if "organizatoins" in person_org:
+                if "organizations" in person_org:
                     for org in person_org["organizations"]:
                         organization_ids_add(org, obj["id"])
                         if re_caida.search(org) or re_caida_long.search(org):
@@ -901,6 +900,8 @@ def object_finish(obj):
                     if o is not None:
                         tag = obj["tags"][i] = o["id"]
                         link_add(obj,tag)
+                    else:
+                        utils.error_add(obj["filename"],"No object for access tag")
         elif key == "resources":
             for resource in value:
                 if "name" not in resource:
@@ -1114,7 +1115,7 @@ def link_add(obj,link,p=False):
             a = [link]
         else:
             if k in link:
-                a.append(link[k]);
+                a.append(link[k])
     
     if type(link) == str:
         id_original = link
@@ -1761,6 +1762,7 @@ def key_check_properties(filename, source, key, properties):
 
 ###################
 # Duplicate slide resources in access
+# Currently UNUSED
 ###################
 def duplicate_slides_in_access():
     objs = []
@@ -2098,24 +2100,36 @@ def doi_set(obj):
             utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
 
 def papers_access_add_same_name():
+    # add the tags video and slide (with test filename)
+    for tag in ["tag:video", "tag:slides"]:
+        if tag not in id_object:
+            object_add("Tag", {
+                "id":tag,
+                "name":tag[4:],
+                "filename": "test"
+            })
     for obj in id_object.values():
         i = obj["id"]
         if obj["__typename"] == "Paper":
+            # check if the current obj is linked to anything 
             if i in id_id_link:
                 for j in id_id_link[i].keys():
+                    # get the linked object
                     o_j = id_object[j]
+                    # get the type of the linked object
                     t = o_j["__typename"]
                     if t == "Media" or t == "Presentation":
                         if t == "media":
-                            tag = "video"
+                            tag = "tag:video"
                         else:
-                            tag = "slides"
+                            tag = "tag:slides"
                         if obj["name"].lower() == o_j["name"].lower():
                             if "access" in o_j:
                                 for access in o_j["access"]:
                                     if "url" in access:
                                         if "access" not in obj:
                                             obj["access"] = []
+                                        print(tag)
                                         obj["access"].append({
                                             "url":access["url"],
                                             "access":access["access"],
