@@ -1,9 +1,9 @@
 {
     "id": "maxmind_geolite",
     "name": "MaxMind GeoLite",
-    "dateCreated":"2013-11",
+    "dateCreated": "2013-11",
     "organization": "MaxMind",
-    "description": "GeoLite databases are free IP geolocation databases comparable to, but less accurate than, MaxMind’s GeoIP2 databases. The GeoLite2 Country, City, and ASN databases are updated weekly, every Tuesday.",
+    "description": "GeoLite databases are free IP geolocation databases comparable to, but less accurate than, MaxMind\u00e2\u20ac\u2122s GeoIP2 databases. The GeoLite2 Country, City, and ASN databases are updated weekly, every Tuesday.",
     "tags": [
         "geolocation",
         "geographic",
@@ -17,5 +17,11 @@
                 "WEB"
             ]
         }
-    ]
+    ],
+    "status": "deprecated",
+    "deprecated": {
+        "autoredirect": false,
+        "id": "dataset:maxmind"
+    },
+    "visibility": "hidden"
 }

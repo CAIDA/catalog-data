@@ -356,6 +356,7 @@ def parse_paper(fname, key_value):
             authors = []
 
             # Edge case: author last name has suffix
+            suffix = "Jr." in value
             value = value.replace("Jr.", "Jr")
 
             for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
@@ -365,6 +366,8 @@ def parse_paper(fname, key_value):
                     authors.append(names[0]+", "+names[1])
                     authors.append(names[2]+", "+names[3])
                 else:
+                    if suffix: 
+                        author = author.replace("Jr", "Jr.")
                     authors.append(author)
 
             # Iterate over each author and add there an object for them.
@@ -418,7 +421,9 @@ def parse_paper(fname, key_value):
                 dataset = dataset.strip().lower()
 
                 # Try to map the current dataset to a catalog dataset.
-                if dataset in topkey_2_dataset:
+                if dataset[:8] == "dataset:":
+                    dataset = dataset[8:]
+                elif dataset in topkey_2_dataset:
                     dataset = topkey_2_dataset[dataset]
                 elif len(dataset) == 0:
                     continue
@@ -493,11 +498,7 @@ def parse_paper(fname, key_value):
             paper["bibtexFields"]["bookTitle"] = conference_title
 
         elif "DOI" == key and value != "":
-            doi = value
-            paper["resources"].append({
-                "name":"DOI",
-                "url":"https://dx.doi.org/"+doi
-            })
+            paper["doi"] = value
 
         elif "URL" == key:
             url = value

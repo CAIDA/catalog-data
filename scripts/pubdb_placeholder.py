@@ -45,20 +45,19 @@ def main():
                     except ValueError as e:
                         print ("-----------\nJSON ERROR in ",fname,"\n")
                         raise e
-                    if "id" in obj:
-                        id_add(fname, type_, obj["id"])
-                        if "name" in obj:
-                            name = utils.id_create(fname, type_,obj["name"])
-                            #if "evolution" in name:
-                                #print (obj["id"])
-                                #print (name)
-                                #print ()
-                            name_id[name] = utils.id_create(fname, type_,obj["id"])
-                        if type_ == "person":
-                            utils.person_seen_add(fname, obj)
-                    else:
-                        print (json.dumps(obj,indent=4))
-                        utils.error_add(fname, "No id found")
+                    if "id" not in obj:
+                        error_add(fname,'no id for "{'+obj['name']+'"')
+                        continue 
+                    id_add(fname, type_, obj["id"])
+                    if "name" in obj:
+                        name = utils.id_create(fname, type_,obj["name"])
+                        #if "evolution" in name:
+                            #print (obj["id"])
+                            #print (name)
+                            #print ()
+                        name_id[name] = utils.id_create(fname, type_,obj["id"])
+                    if type_ == "person":
+                        utils.person_seen_add(fname, obj)
         
     if utils.error_found():
         utils.error_print()
@@ -92,6 +91,10 @@ def main():
                 info['person'] = person_create(obj["filename"], info["person"])
         
         links = []
+        if "fundingSources" in obj:
+            for tag in obj["fundingSources"]:
+                obj["tags"].append("funding:"+tag)
+
         if "links" in obj:
             access = []
             for link in obj["links"]:

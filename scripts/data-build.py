@@ -390,12 +390,17 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
-    #######################
-    # duplicate slide resources
-    #######################
-    print ("duplicating slides into paper access")
-    duplicate_slides_in_access()
+    ########################
+    ## duplicate slide resources
+    ########################
+    #print ("duplicating slides into paper access")
+    #duplicate_slides_in_access()
 
+    #######################
+    # Match up Papers with exact name media and presentation that match 
+    #######################
+    print ("Matching up Papers with media/presentations with the same name")
+    papers_access_add_same_name()
 
     #######################
     # pubdb links
@@ -516,6 +521,8 @@ def main():
     ######################
     print ("Adding dataset date info")
     data_load_from_summary(args.summary_file)
+    # Class copies categories to classes
+    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Create a word_id
@@ -539,6 +546,12 @@ def main():
                     if key in obj and obj[key] not in valid_values:
                         utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
                         del obj[key]
+    #######################
+    # copy out doi
+    #######################
+    print ("Pulling DOIs out of access")
+    for obj in id_object.values():
+        doi_set(obj)
 
     #######################
     # printing errors
@@ -851,7 +864,7 @@ def object_finish(obj):
     for key in ["authors", "presenters"]:
         if key in obj:
             for person_org in obj[key]:
-                if "organizatoins" in person_org:
+                if "organizations" in person_org:
                     for org in person_org["organizations"]:
                         organization_ids_add(org, obj["id"])
                         if re_caida.search(org) or re_caida_long.search(org):
@@ -887,6 +900,8 @@ def object_finish(obj):
                     if o is not None:
                         tag = obj["tags"][i] = o["id"]
                         link_add(obj,tag)
+                    else:
+                        utils.error_add(obj["filename"],"No object for access tag")
         elif key == "resources":
             for resource in value:
                 if "name" not in resource:
@@ -1100,7 +1115,7 @@ def link_add(obj,link,p=False):
             a = [link]
         else:
             if k in link:
-                a.append(link[k]);
+                a.append(link[k])
     
     if type(link) == str:
         id_original = link
@@ -1747,6 +1762,7 @@ def key_check_properties(filename, source, key, properties):
 
 ###################
 # Duplicate slide resources in access
+# Currently UNUSED
 ###################
 def duplicate_slides_in_access():
     objs = []
@@ -1823,14 +1839,19 @@ def data_load_from_summary(filename):
             catalog_id = metadata["catalog_id"]
             if catalog_id in id_object:
                 obj = id_object[catalog_id]
-                for key in ["dateStart","dateEnd","status"]:
+                # Overwrites the following fields, if found in dataset summary file
+                for key in ["dateStart","dateEnd","status", "doi"]:
                     if key in metadata:
                         if key in ["dateStart","dateEnd"]:
                             # FIXME: Quick fix; Need to normalize data format to YYYYMMDD
                             if (len(metadata[key]) == 8):
                                 obj[key] = datetime.datetime.strptime(metadata[key], "%Y%m%d").strftime("%Y-%m-%d")
-                        else:
+                        elif key != "" or key is not None:
                             obj[key] = metadata[key]
+
+                    if "size_total" in metadata:
+                        if "size" in metadata["size_total"]:
+                            obj["size"] = metadata["size_total"]["size"]
             else:
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
@@ -2010,5 +2031,111 @@ def schema_load_datasets_from_file(filename):
                             }
                             if key_replace_ids(filename, f"line [{linenum}", key):
                                 category_keys_add(dataset, "category_keys", key)
+
+def class_copy_from_category_keys(objects):
+    for obj in objects:
+        if "category_keys" in obj and obj["__typename"] != "Category":
+            obj["class_namespaces"] = []
+            for cat_name in obj["category_keys"]:
+                missing = False 
+                for k in ["category","category_key"]: 
+                    if k not in cat_name:
+                        missing = True
+                        break
+                    if "name" not in cat_name[k]:
+                        cat_name[k]["name"] = cat_name[k]["id_short"]
+                if missing:
+                    del obj["class_namespaces"]
+                    continue 
+
+                cat = cat_name["category"]
+                key = cat_name["category_key"]
+                obj["class_namespaces"].append({
+                    "class":{
+                        "id":"class"+cat["id"][8:],
+                        "shortName":cat["id_short"],
+                        "__typename":"Class"
+                    },
+                    "namespace":{
+                        "id":key["id"],
+                        "name":key["name"],
+                        "shortName":key["id_short"],
+                    }
+                })
+
+# The goal is to have a "good" doi at the end of the code.
+def doi_set(obj):
+    # If doi is not set, but there is a doi link in resources,
+    # set doi to that link 
+    if ("doi" not in obj or obj["doi"] is None) and "resources" in obj:
+        index = None
+        for i,info in enumerate(obj["resources"]):
+            if "name" in info and info["name"].lower() == "doi":
+                index = i
+                break
+        if index is not None:
+            obj["doi"] = obj["resources"][index]["url"]
+            print (obj["name"],obj["doi"])
+            del obj["resources"][index]
+            if len(obj["resources"]) < 1:
+                del obj["resources"]
+
+    # If there is a doi set, fix it to the doi.org format
+    if ("doi" in obj):
+        obj["doi"] = obj["doi"].strip()
+        doi_norm = "https://doi.org/"
+        # drop "dx" from domain
+        if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+        # normalize alphanumeric forms to full URL
+        elif ("doi:" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+        # determine if only the doi number is provided
+        elif (obj["doi"][:3] == "10."):
+            obj["doi"] = doi_norm + obj["doi"]
+        # normalize empty string DOIs to null
+        elif (obj["doi"] == ""):
+            obj["doi"] = None
+        elif (doi_norm not in obj["doi"]):
+            utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
+
+def papers_access_add_same_name():
+    # add the tags video and slide (with test filename)
+    for tag in ["tag:video", "tag:slides"]:
+        if tag not in id_object:
+            object_add("Tag", {
+                "id":tag,
+                "name":tag[4:],
+                "filename": "test"
+            })
+    for obj in id_object.values():
+        i = obj["id"]
+        if obj["__typename"] == "Paper":
+            # check if the current obj is linked to anything 
+            if i in id_id_link:
+                for j in id_id_link[i].keys():
+                    # get the linked object
+                    o_j = id_object[j]
+                    # get the type of the linked object
+                    t = o_j["__typename"]
+                    if t == "Media" or t == "Presentation":
+                        if t == "media":
+                            tag = "tag:video"
+                        else:
+                            tag = "tag:slides"
+                        if obj["name"].lower() == o_j["name"].lower():
+                            if "access" in o_j:
+                                for access in o_j["access"]:
+                                    if "url" in access:
+                                        if "access" not in obj:
+                                            obj["access"] = []
+                                        print(tag)
+                                        obj["access"].append({
+                                            "url":access["url"],
+                                            "access":access["access"],
+                                            "tags": [tag]
+                                            })
+                                        break
+
 
 main()

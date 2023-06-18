@@ -68,7 +68,12 @@ if os.path.exists(args.output):
 # Open the output file
 # Try to download it
 print("   downloading", url)
-request = requests.get(url)
+try:
+    request = requests.get(url)
+except Exception as e:
+    utils.error_add(e)
+    utils.error_print()
+    sys.exit()
 
 # If you fail, use the backup file
 if request.status_code != 200:

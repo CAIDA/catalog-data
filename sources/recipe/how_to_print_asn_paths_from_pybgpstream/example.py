@@ -47,6 +47,7 @@ for record in stream.records():
                         print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
                                 f"Communities: {elem.fields['communities']} "
                                 f"Timestamp: {rec_time}")
+                        break
 
         # Reports and skips all KeyError
         except KeyError as e:

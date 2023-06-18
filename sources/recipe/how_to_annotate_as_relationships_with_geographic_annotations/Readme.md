@@ -2,8 +2,8 @@
 {
     "id": "how_to_annotate_as_relationships_with_geographic_annotations",
     "visibility": "public",
-    "name": "How to annotate as relationships with geographic annotations?",
-    "description": "Annotating as relationships with geographic annotations",
+    "name": "How to annotate AS relationships with geographic annotations?",
+    "description": "Annotating AS relationships with geographic annotations",
     "links": [{
         "to": "dataset:as_relationships_geo"
         }],
