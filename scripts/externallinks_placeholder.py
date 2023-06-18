@@ -212,7 +212,7 @@ def main(argv):
     global alternate_links
 
     parser = argparse.ArgumentParser()
-    parser.add_argument( dest='papers', help='eternal papers YAML file', type=str, nargs="+")
+    parser.add_argument( dest='papers', help='eternal papers YAML files', type=str, nargs="+")
     args = parser.parse_args()
 
     # Edge Case: Exit if no data_papers is given.
@@ -224,9 +224,7 @@ def main(argv):
     add_seen_authors("sources/person")
 
     # Parse each external yaml and create a new file for each paper.
-    for filename in args.papers:
-        print("loading", filename)
-        parse_data_papers(filename)
+    parse_data_papers(args.papers)
 
     # Print all the papers found to their respective JSON files.
     print_papers()
@@ -260,24 +258,64 @@ def add_seen_authors(d):
                 person['already_found'] = True
                 utils.person_seen_add(f,person)
 
-# Opens a give .yaml file and parses each paper listed between delimeters.
-def parse_data_papers(filename):
+# Merge duplicates in two lists of papers by taking union of keys.
+def merge_papers(list1, list2):
+
+    # Record duplicate by (author, title)
+    duplicates = {}
+
+    for i, paper1 in enumerate(list1):
+        for _, paper2 in enumerate(list2):
+            same_author = paper1.get("AUTHOR") == paper2.get("AUTHOR")
+            same_title = paper1.get("TITLE") == paper2.get("TITLE")
+
+            if same_author and same_title:
+
+                # Merge duplicate paper by taking union of original keys
+                union_keys = set.union(set(paper1.keys()), set(paper2.keys()))
+                merged_paper = {k: paper1[k] if k in paper1 else paper2[k] for k in union_keys}
+                duplicates[(paper1["AUTHOR"], paper1["TITLE"])] = merged_paper
+
+                # Update original paper in first list
+                list1[i] = merged_paper
+
+    # Remove duplicate paper in second list
+    for author, title in duplicates:
+        for paper in list2:
+            if paper["AUTHOR"] == author and paper["TITLE"] == title:
+                list2.remove(paper)
+
+    print(f"    found {len(duplicates)} duplicates")
+    return list1, list2
+
+# Opens each of given .yaml files and parses each paper listed between delimeters.
+def parse_data_papers(filenames):
     global re_yml
     global topkeys
 
-    # Parse data_papers file.
-    if re_yml.search(filename):
-        with open(filename, "r") as fin:
-            for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
+    # Load each yaml file and store in list
+    papers_yamls = []
+    for filename in filenames:
+        if re_yml.search(filename):
+            with open(filename, "r") as fin:
+                print("    loading", filename)
+                papers_yamls.append(list(yaml.load_all(fin,Loader=yaml.Loader)))
+
+        # Edge Case: Exit if a given file couldn't be open.
+        else:
+            print("File must be a .yaml file to be opened.", file=sys.stderr)
+            sys.exit()
+
+    # Find and resolve duplicate papers
+    papers_yamls = list(merge_papers(*papers_yamls))
+
+    # Parse each yaml file.
+    for filename, papers_yaml in zip(filenames, papers_yamls): 
+            for paper in papers_yaml:
                 parse_paper(filename, paper)
 
-    # Edge Case: Exit if a given file couldn't be open.
-    else:
-        print("File must be a .yaml file to be opened.", file=sys.stderr)
-        sys.exit()
 
-
-# Pull out all necessary meta data from the given paper and print a JSON file.
+# Pull out all necessary meta data fromF the given paper and print a JSON file.
 #   @input curr_paper: A string where each \n is another TOPKEY.
 def parse_paper(fname, key_value):
     global author_data
@@ -491,7 +529,6 @@ def parse_paper(fname, key_value):
 # Helper function add an author to author_data.
 #   @input author_id: The formatted ID for the current author.
 def add_author(fname, last_name, first_name):
-    #print(fname)
     global author_data
     person = utils.person_seen_check(last_name, first_name)
 

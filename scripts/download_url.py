@@ -82,7 +82,7 @@ if request.status_code != 200:
         utils.error_print()
 else:
     try:
-        fout = open(args.output,"w")
+        fout = open(args.output,"w", encoding='utf-8')
         fout.write(request.text)
     except Exception as e: 
         print(e,file=sys.stderr)

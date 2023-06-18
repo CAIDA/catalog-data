@@ -1,35 +1,59 @@
-import lib.utils as utils
-from random import randint
+import argparse
 import re
-import requests
+from bs4 import BeautifulSoup as bs
 
-# Helpers from download-urls-list.py
-from download_urls_list import download_html, is_fresh
+parser = argparse.ArgumentParser()
+parser.add_argument("-O", dest="output", help="saves yaml to output", type=str)
+parser.add_argument("url",nargs=1, type=str,help="routeviews url")
+args = parser.parse_args()
+url = args.url[0]
 
-ROUTEVIEWS_URL = "https://www.routeviews.org/routeviews/index.php/papers/"
-PAPERS_PATH = "data/routeviews-data.txt"
-YAML_PATH = "data/data-papers-routeviews.yaml"
-
-def parse_papers(input):
+def clean_html(html):
     """
-    Helper: parse routeviews papers data from csv
+    Helper: remove tags, replace unicode in raw html
     """
-    header = True
-    papers = []
+    CLEANR = re.compile('<.*?>')
+    clean = re.sub(CLEANR, '', html) if html != None else ''
+    clean = clean.replace('\u2013', '-').replace('\u2019', "'")\
+            .replace(u'\xa0','').replace('\u201c', "\"")
+    return clean
 
-    with open(input, encoding='utf-8') as f:
-        for line in f:
-            line = line.strip()
-            if line[0] == '#':
-                continue
-            elif line[0] != '#' and header:
-                header = False
-                continue
-            else:
-                papers.append(line.split(','))
-    return papers
 
-def format_authors(authors):
+def scrape_papers(html_file):
+    """
+    Helper: returns papers in html as list
+    """
+    html_str = html_file.read()
+    soup = bs(html_str, "html.parser")
+    table = soup.find("table", {"id": "table_id"})
+
+    # Table header (attributes)
+    header = [clean_html(th.string) for th in table.findAll("th")]
+
+    # Table rows (papers)
+    papers = [header]
+    for tr in table.findAll("tr"):
+        cols = tr.findAll("td")
+        links = lambda c: c.findAll("a", href=True)
+        cols = [links(c)[0]['href'] if len(links(c)) == 1 else c for c in cols]
+        if len(cols) > 0:
+            papers.append([td if type(td)==str else clean_html(td.string) for td in cols])
+
+    # Remove commas and separate authors by semicolon
+    for tr in papers:
+        assert len(tr) == len(header)
+        for j, col in enumerate(tr):
+            if j == 0: tr[j] = col.replace(',', ';')
+            else: tr[j] = col.replace(',', '')
+    
+    # Return list of papers, excluding header
+    return papers[1:]
+
+EXTERNAL_ROUTEVIEWS_URL = 'https://www.routeviews.org/routeviews/index.php/papers/' 
+EXTERNAL_ROUTEVIEWS_HTML = 'data/data-papers-routeviews.html'
+EXTERNAL_ROUTEVIEWS_FILE = 'data/data-papers-routeviews.yaml'
+
+def format_authors(authors: str):
     """
     Helper: reformat semicolon-separated string of authors given as 
             "F1. M1. Last1; F2. Last2; F3. M31. M32. Last3" to 
@@ -87,19 +111,13 @@ def format_authors(authors):
     return (', '.join(formatted), first_finit.lower(), first_last.lower())
 
 """
-Downloads papers csv from routeviews.org, create yaml entry in 
-data/data-papers-routeviews.yaml for each routeviews paper
-Usage: python externallinks_routeviews.py
+Assuming routeviews html is downloaded, generates yaml for routeviews papers
+Usage: 
 """
+# Convert routeviews html to papers str
+papers = scrape_papers(open(EXTERNAL_ROUTEVIEWS_HTML, "r", encoding="utf-8"))
 
-# Download papers csv to data/routeviews-data.txt
-
-request = requests.get(ROUTEVIEWS_URL)
-if not is_fresh(PAPERS_PATH):
-    print(f"    downloading {PAPERS_PATH}")
-    download_html(request, open(PAPERS_PATH, "w", encoding="utf-8"))
-
-# What TYPEs in existing yaml?
+# What TYPEs are in data/data-papers.yaml?
 # types = []
 # type_counts = {}
 # with open("data/data-papers.yaml", encoding='utf-8') as big_yaml:
@@ -113,18 +131,20 @@ if not is_fresh(PAPERS_PATH):
 # print("Paper TYPE in data/data-papers.yaml")
 # print(sorted(type_counts.items(), key=lambda x: x[1], reverse=True), '\n')
 
-print(f'    generating {YAML_PATH}')
+print(f'    generating {EXTERNAL_ROUTEVIEWS_FILE}')
 
 # Add placeholder yaml for each paper
-papers = parse_papers(PAPERS_PATH)
 papers_yaml = ''
 for p in papers:
     authors, date, title, src, vol, num, page, cat, url = p 
     authors, first_finit, first_last = format_authors(authors)
+
+    # Generate marker by combining first author and either date or url
     marker_id = ''.join(year.split('-')) if len(url) == 0\
-        else url.split('/')[-1][-5:]
+        else url.split('/')[-1][-5:].replace('.','').replace('-','')
     first_finit = first_finit.replace('.', '')
-    marker = f"{date.split('-')[0]}_{first_last}_{first_finit}_{marker_id}"    
+    marker = f"{date.split('-')[0]}_{first_last}_{first_finit}_{marker_id}" 
+
     year = '-'.join(date.split('-')[0:2])
     cat = cat.lower()
     ptype = 'in_proceedings' if 'conference' in cat else\
@@ -171,7 +191,7 @@ for p in papers:
     yaml_str += '\n'
     papers_yaml += yaml_str
     
-# What categories are there among routeviews papers?
+# What categories are in routeviews papers?
 # cats = [p[-2] if p[-2] != '\"' else 'Unknown' for p in papers]
 # cat_counts = {k: 0 for k in set(cats)}
 # for c in cats: cat_counts[c] += 1
@@ -179,6 +199,6 @@ for p in papers:
 # print(sorted(cat_counts.items(), key=lambda x: x[1], reverse=True), '\n')
 
 # Write to papers yaml
-fout = open(YAML_PATH, "w")
+fout = open(EXTERNAL_ROUTEVIEWS_FILE, "w")
 fout.write(papers_yaml)
 fout.close()
