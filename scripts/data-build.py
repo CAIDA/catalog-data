@@ -547,11 +547,12 @@ def main():
                         utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
                         del obj[key]
     #######################
-    # copy out doi
+    # copy out doi && pull out access tag to access type
     #######################
-    print ("Pulling DOIs out of access")
+    print ("Pulling DOIs out of access && pull out access tag to access type")
     for obj in id_object.values():
         doi_set(obj)
+        access_type_from_tag_set(obj)
 
     #######################
     # printing errors
@@ -2099,6 +2100,26 @@ def doi_set(obj):
         elif (doi_norm not in obj["doi"]):
             utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
 
+## Helper function pulls out first access tag and creates access type
+def access_type_from_tag_set(obj):
+    if "access" not in obj:
+        return 
+    else:
+        # for each access in an object
+        for curr_access in obj["access"]:
+            # ignore if no tags
+            if "tags" not in curr_access or "type" in curr_access:
+                continue
+            else:
+                new_type = curr_access["tags"][0]
+                if len(new_type.split(':')) != 2:
+                    utils.error_add(obj['filename'], "access tag is not in correct format tag:<tag>")
+                else:
+                    # remove the "tag:" from the tag
+                    curr_access["type"] = curr_access["tags"][0].split(':')[1].replace("_", " ")
+        return 
+        
+
 def papers_access_add_same_name():
     # add the tags video and slide (with test filename)
     for tag in ["tag:video", "tag:slides"]:
@@ -2121,19 +2142,21 @@ def papers_access_add_same_name():
                     if t == "Media" or t == "Presentation":
                         if t == "media":
                             tag = "tag:video"
+                            access_type = "video"
                         else:
                             tag = "tag:slides"
+                            access_type = "slides"
                         if obj["name"].lower() == o_j["name"].lower():
                             if "access" in o_j:
                                 for access in o_j["access"]:
                                     if "url" in access:
                                         if "access" not in obj:
                                             obj["access"] = []
-                                        print(tag)
                                         obj["access"].append({
                                             "url":access["url"],
                                             "access":access["access"],
-                                            "tags": [tag]
+                                            "tags": [tag],
+                                            "type": access_type
                                             })
                                         break
 
