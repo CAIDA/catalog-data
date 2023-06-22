@@ -20,7 +20,8 @@
     "access": [
         {
             "access": "restricted",
-            "url": "https://cseweb.ucsd.edu//~schulman/thunderping.html"
+            "url": "https://cseweb.ucsd.edu//~schulman/thunderping.html",
+            "type": "webpage"
         }
     ]
 }

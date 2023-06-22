@@ -12,7 +12,8 @@
     "access": [
         {
             "access": "public",
-            "url": "https://github.com/VPRLab/mopeyeDataset"
+            "url": "https://github.com/VPRLab/mopeyeDataset",
+            "type": "direct download"
         }
     ]
 }
