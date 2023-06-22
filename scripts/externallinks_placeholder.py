@@ -471,7 +471,8 @@ def parse_paper(fname, key_value):
                 "access":"public",
                 "tags": [
                     "PDF"
-                ]
+                ],
+                "type": "PDF"
             }]
 
         elif "ABS" == key:
