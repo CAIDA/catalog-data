@@ -13,11 +13,13 @@
     "access": [
         {
             "access": "discontinued",
-            "url": "https://dev.maxmind.com/geoip/release-notes/2018#discontinuation-of-the-geolite-legacy-databases"
+            "url": "https://dev.maxmind.com/geoip/release-notes/2018#discontinuation-of-the-geolite-legacy-databases",
+            "type": "archive"
         },
         {
             "access": "public",
-            "url": "https://dev.maxmind.com/geoip/geolite2-free-geolocation-data"
+            "url": "https://dev.maxmind.com/geoip/geolite2-free-geolocation-data",
+            "type": "webpage"
         }
     ]
 }
