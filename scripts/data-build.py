@@ -550,9 +550,12 @@ def main():
     # copy out doi && pull out access tag to access type
     #######################
     print ("Pulling DOIs out of access && pull out access tag to access type")
+    count_access_no_tags = 0
     for obj in id_object.values():
         doi_set(obj)
-        access_type_from_tag_set(obj)
+        count_access_no_tags += access_type_from_tag_set(obj)
+    if count_access_no_tags > 0:
+        utils.error_add("", '%s Objects that are missing a tags and type; please add a type to each access object.' % count_access_no_tags)
 
     #######################
     # printing errors
@@ -2102,14 +2105,20 @@ def doi_set(obj):
 
 ## Helper function pulls out first access tag and creates access type
 def access_type_from_tag_set(obj):
+    curr_id = obj["id"]
+    count = 0
     if "access" not in obj:
-        return 
+        return count
     else:
         # for each access in an object
         for curr_access in obj["access"]:
             # ignore if no tags
             if "tags" not in curr_access or "type" in curr_access:
+                if "tags" not in curr_access and "type" not in curr_access:
+                    utils.error_add(obj['filename'], "access does not have tags or type")
+                    count += 1
                 continue
+                
             else:
                 new_type = curr_access["tags"][0]
                 if len(new_type.split(':')) != 2:
@@ -2117,7 +2126,7 @@ def access_type_from_tag_set(obj):
                 else:
                     # remove the "tag:" from the tag
                     curr_access["type"] = curr_access["tags"][0].split(':')[1].replace("_", " ")
-        return 
+        return count
         
 
 def papers_access_add_same_name():

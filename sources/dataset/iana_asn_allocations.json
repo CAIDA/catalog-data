@@ -8,7 +8,8 @@
     "access": [
         {
             "access": "public/restricted",
-            "url": "https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
+            "url": "https://www.iana.org/assignments/as-numbers/as-numbers.xhtml",
+            "type": "direct download"
         }
     ],
     "tags": [

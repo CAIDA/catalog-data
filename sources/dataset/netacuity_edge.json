@@ -16,7 +16,8 @@
     "access": [
         {
             "access": "restricted",
-            "url": "https://www.digitalelement.com/solutions/ip-location-targeting/"
+            "url": "https://www.digitalelement.com/solutions/ip-location-targeting/",
+            "type": "webpage"
         }
     ]
 }
