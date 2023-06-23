@@ -2079,7 +2079,6 @@ def doi_set(obj):
                 break
         if index is not None:
             obj["doi"] = obj["resources"][index]["url"]
-            print (obj["name"],obj["doi"])
             del obj["resources"][index]
             if len(obj["resources"]) < 1:
                 del obj["resources"]
@@ -2126,6 +2125,12 @@ def access_type_from_tag_set(obj):
                 else:
                     # remove the "tag:" from the tag
                     curr_access["type"] = curr_access["tags"][0].split(':')[1].replace("_", " ")
+                    # remove the first tag from tags field
+                    if len(curr_access["tags"]) == 1:
+                        # print("deleting", curr_access)
+                        del curr_access["tags"]
+                    else:
+                        curr_access["tags"] = curr_access["tags"][1:]
         return count
         
 
@@ -2164,7 +2169,7 @@ def papers_access_add_same_name():
                                         obj["access"].append({
                                             "url":access["url"],
                                             "access":access["access"],
-                                            "tags": [tag],
+                                            # "tags": [tag],
                                             "type": access_type
                                             })
                                         break
