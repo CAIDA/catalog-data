@@ -469,9 +469,9 @@ def parse_paper(fname, key_value):
             paper["access"] = [{
                 "url":url,
                 "access":"public",
-                "tags": [
-                    "PDF"
-                ],
+                # "tags": [
+                #     "PDF"
+                # ],
                 "type": "PDF"
             }]
 

@@ -137,7 +137,7 @@ def main():
                     access.append({
                         "access":"public",
                         "url":link["to"],
-                        "tags":[link["label"]],
+                        # "tags":[link["label"]],
                         "type": link["label"]
                     })
             del obj["links"]
