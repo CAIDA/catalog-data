@@ -1,3 +1,6 @@
+# Copyright (c) 2023 The Regents of the University of California
+# All Rights Reserved
+
 __author__ = "Pooja Pathak"
 __email__ = "<pmpathak@ucsd.edu>"
 # This software is Copyright © 2020 The Regents of the University of

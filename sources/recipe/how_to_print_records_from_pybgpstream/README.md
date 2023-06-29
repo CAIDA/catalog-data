@@ -103,3 +103,6 @@ What is pybgpstream?
 
 ### Caveats
 - Playing around with the inputs for ```stream``` will result in different output. Check out the pybgpstream documetentation to find how to adjust the BGPStream with other inputs.
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

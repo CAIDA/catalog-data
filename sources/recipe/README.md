@@ -5,3 +5,7 @@ If you are providing code snippet it should contain the following:
 - intro (2~3 sentences )
 - solution (just the bits needed, assume domain knowledge)
 - background ( the background needed for non domain expert )
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

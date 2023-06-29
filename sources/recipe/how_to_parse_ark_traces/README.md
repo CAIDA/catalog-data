@@ -228,3 +228,7 @@ with open(warts_file, 'rb') as f:
 - #### Ark IPv6 Topology Dataset
     - More information and download dataset [here](https://www.caida.org/catalog/datasets/ipv6_allpref_topology_dataset) 
         - Directory: `/datasets/topology/ark/ipv6/probe-data`
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

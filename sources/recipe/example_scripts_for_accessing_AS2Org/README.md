@@ -167,3 +167,7 @@ From ["How to get an ASN's name, organization and country?"](https://catalog.cai
 ## Caveats
 
 The solution script uses the [ASRank API](https://api.asrank.caida.org/v2/restful/doc) to find the largest AS for a target organization name, since the AS2Org API does not provide any information the size of an AS.
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

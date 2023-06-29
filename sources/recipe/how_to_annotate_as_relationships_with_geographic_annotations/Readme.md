@@ -128,3 +128,7 @@ Example of return value. Note that if geolocation info of the ASN is not in `geo
 
 
 
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

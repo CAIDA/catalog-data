@@ -1,3 +1,6 @@
+# Copyright (c) 2023 The Regents of the University of California
+# All Rights Reserved
+
 #!/usr/bin/env python3
 __author__ = "Pooja Pathak"
 __email__ = "<pmpathak@ucsd.edu>"

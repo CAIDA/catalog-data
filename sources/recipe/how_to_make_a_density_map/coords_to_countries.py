@@ -1,3 +1,6 @@
+# Copyright (c) 2023 The Regents of the University of California
+# All Rights Reserved
+
 ######################################################################
 # Note: If you're getting the error
 #

@@ -1,3 +1,6 @@
+# Copyright (c) 2023 The Regents of the University of California
+# All Rights Reserved
+
 __author__ = "Richard Masser-Frye"
 __email__ = "<rmasserf@ucsd.edu>"
 

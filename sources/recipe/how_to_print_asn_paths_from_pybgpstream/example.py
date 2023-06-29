@@ -1,3 +1,6 @@
+# Copyright (c) 2023 The Regents of the University of California
+# All Rights Reserved
+
 #!/usr/bin/env python3
 
 #import the low level _pybgpsteam library and other necessary libraries

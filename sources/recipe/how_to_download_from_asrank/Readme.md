@@ -73,3 +73,7 @@ curl -H "Content-Type: application/json" -X POST \
   --data '{ "query": "{ asn(asn:\"701\"){ asn organization { orgName } cone { numberAsns } } }" }' \
   https://api.asrank.caida.org/v2/graphql
 ~~~
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

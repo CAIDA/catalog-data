@@ -97,3 +97,7 @@ print(parse_ip_assignees(sys.argv[1]), parse_ip_compressed(sys.argv[1]))
  ## Caveats
  
  - This has been made specifically for the current IANA file
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

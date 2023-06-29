@@ -94,3 +94,7 @@ We are assuming each line is within this format, the provided script skips any c
 ### Caveats
 
 CAIDA performs DNS lookups centrally at CAIDA using a custom-built bulk DNS lookup service. This service performs millions of DNS lookups per day. In general, CAIDA performs DNS lookups soon after collecting the topology traces so that the results better match the state of the Internet at trace collection time. However, to avoid undue load on remote DNS nameservers and to keep the daily lookup volume at a manageable level, CAIDA never performs a lookup for an address if it's successfully obtained a result in the preceding 36 hours. Apart from this 36-hour rule, we always perform a lookup whenever we encounter an IP address in traces. This means that CAIDA doesn't repeat lookups at 36-hour granularity for addresses that repeatedly occur in the traces.
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

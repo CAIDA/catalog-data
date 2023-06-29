@@ -98,3 +98,7 @@ while(1)
 ### Documentation (auto-generated)
 
 At <https://api.spoofer.caida.org/> you will see the Spoofer API 1.0.0 documentation. To expand the documentation for each endpoint, click the GET buttons. Once expanded, each endpoint displays the example parameters with buttons to "Try it out." The try it out button provides a graphical interface that allows the user to build and execute queries to the Spoofer API and see the example responses.
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

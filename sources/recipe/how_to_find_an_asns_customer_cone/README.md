@@ -111,3 +111,7 @@ For the purpose of this solution, we'll be skipping over any commented lines. Ea
 
 <asn0>|<asn1>|...|<asnM>
 ~~~
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

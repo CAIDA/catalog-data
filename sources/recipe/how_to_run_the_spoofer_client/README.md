@@ -44,3 +44,7 @@ The Spoofer Project seeks to understand the Internet's vulnerability to differen
 
 - Screenshots of the client in use:  https://www.caida.org/projects/spoofer/screenshots
 - FAQ:  https://www.caida.org/projects/spoofer/faq
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

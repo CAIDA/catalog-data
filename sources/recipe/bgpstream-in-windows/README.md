@@ -60,3 +60,7 @@ sudo apt update; sudo apt-get install bgpstream
 ### What is BGPStream?
 
 BGPStream is a collection of tools that assist in analyzing data related to Border Gateway Protocols (BGP). Of particular importance is libBGPStream, the set of libraries underlying the overall framework, and PyBGPStream, a Python API for BGPStream.
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

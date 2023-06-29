@@ -129,3 +129,7 @@ For the purpose of this solution, any data that is commented out is not needed, 
 # ....
 <AS>|<Source>|<Class>
 ~~~
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved
