@@ -62,7 +62,11 @@ def format_authors(authors: str):
     formatted = []
     SUFFIXES = ["Jr."]
     NOBILIARY_PARTICLES = ["van", "va", "de", "di"]
-    split_name = lambda name: re.split('\s+?', name.strip())    
+    split_name = lambda name: re.split('\s+?', name.strip())
+
+    # Edge case: author is "CAIDA"
+    if (authors == "CAIDA"):
+        return ("CAIDA", '', "CAIDA")
 
     for a in authors.split(';'):
         name = split_name(a)
@@ -102,10 +106,11 @@ def format_authors(authors: str):
 
         # Edge case: only last initial is given, remove period
         if '.' in last: 
-            formatted_name = formatted_name.replace('.', '', 1)    
+            formatted_name = formatted_name.replace('.', '', 1)
+
         formatted.append(formatted_name) 
 
-    # Return reformatted authors string, first author info for MARKER
+    # Return reformatted authors, and first author info for MARKER
     first_author = authors.split(';')[0]
     first_finit, first_last = split_name(first_author)[0], split_name(first_author)[-1]
     return (', '.join(formatted), first_finit.lower(), first_last.lower())
