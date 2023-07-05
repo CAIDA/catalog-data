@@ -52,6 +52,7 @@ def scrape_papers(html_file):
 EXTERNAL_ROUTEVIEWS_URL = 'https://www.routeviews.org/routeviews/index.php/papers/' 
 EXTERNAL_ROUTEVIEWS_HTML = 'data/data-papers-routeviews.html'
 EXTERNAL_ROUTEVIEWS_FILE = 'data/data-papers-routeviews.yaml'
+CAIDA_AUTHOR = "CAIDA"
 
 def format_authors(authors: str):
     """
@@ -65,8 +66,8 @@ def format_authors(authors: str):
     split_name = lambda name: re.split('\s+?', name.strip())
 
     # Edge case: author is "CAIDA"
-    if (authors == "CAIDA"):
-        return ("CAIDA", '', "CAIDA")
+    if (authors == CAIDA_AUTHOR):
+        return (CAIDA_AUTHOR, '', CAIDA_AUTHOR)
 
     for a in authors.split(';'):
         name = split_name(a)
@@ -143,6 +144,9 @@ papers_yaml = ''
 for p in papers:
     authors, date, title, src, vol, num, page, cat, url = p 
     authors, first_finit, first_last = format_authors(authors)
+    
+    # Edge case: skip "CAIDA" authors
+    if authors == CAIDA_AUTHOR: continue
 
     # Generate marker by combining first author and either date or url
     marker_id = ''.join(year.split('-')) if len(url) == 0\
