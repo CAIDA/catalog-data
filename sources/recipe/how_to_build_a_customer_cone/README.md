@@ -125,3 +125,7 @@ include RIB data for one second (first second of yesterday). Make sure to reserv
 
 
 We strongly recommend the debug option for a brief overview of the program. 
+
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

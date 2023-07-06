@@ -149,3 +149,7 @@ directory may be missing some daily files even though a subsequent cycle
 directory exists.
 
 
+
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

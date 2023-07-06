@@ -124,3 +124,7 @@ def annotate_traceroute(ixpdb, diction, ips):
 
 ## Caveats
 - Requires permission to write files
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

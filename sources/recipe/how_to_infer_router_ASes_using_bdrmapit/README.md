@@ -128,3 +128,7 @@ The program may produce some unusual output (ASN may be <=0). The table below te
 3. Marder, Alex. “BdrmapIT Documentation.” Bdrmapit, https://alexmarder.github.io/bdrmapit/. 
 4. Marder, Alex. “Ip2as Documentation.” ip2as, https://alexmarder.github.io/ip2as/.
 5. Marder, Alex. “Home · Alexmarder/retrieve_external Wiki.” GitHub, https://github.com/alexmarder/retrieve_external/wiki. 
+
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

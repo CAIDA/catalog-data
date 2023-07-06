@@ -179,3 +179,7 @@ as0 as1 rel
     "asn2" : { "asn":"asn2", "class":"edge" }
 }
 ~~~
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

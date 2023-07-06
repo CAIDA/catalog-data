@@ -154,3 +154,7 @@ More information on AS relationships can be found [here]( https://asrank.caida.o
 - This limits BGPStream to download the full first BGP dump. 
 - More information on `add_rib_period_filter` and other **pybgpstream** methods can be found [here]( https://bgpstream.caida.org/docs/api/pybgpstream/_pybgpstream.html ).
 - It may take a few minutes for the program to finish running. 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

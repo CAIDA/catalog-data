@@ -1,3 +1,6 @@
+# Copyright (c) 2022 The Regents of the University of California
+# All Rights Reserved
+
 import requests
 import json
 import argparse
