@@ -1,14 +1,20 @@
+#! /usr/bin/env python3
 
-
+# This script will add licenses based on year of first commit to all python and readme
+# files in a directory and all of its sub-directories.
+# Please run the file in the catalog-data main folder. 
+# i.e. you should be running the command line python scripts/add-licenses.py
+# Feel free to edit the prepend and append templates, as well as the directories
+# if you want to add licenses to other directores.
+__author__ = "Victor Ren"
+__email__ = "<victorren2002@gmail.com>"
 import os
 import subprocess
 
-print("add license executed")
 current_directory = os.getcwd()
-print(current_directory)
+root_dir = current_directory + '/sources/recipe'  # Replace with your directory path
 
-root_dir = current_directory + '/sources/recipe'  # Replace with your directory path. 
-
+# Feel free to alter. 
 prepend_lines_py_template = [
     '# Copyright (c) {year} The Regents of the University of California',
     '# All Rights Reserved',
@@ -21,6 +27,7 @@ append_lines_md_template = [
     'All Rights Reserved'
 ]
 
+# A function to get the first commit year of a file
 def get_first_commit_year(file_path):
     try:
         # Get the year of the first commit for the file
@@ -45,8 +52,6 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
         if filename.startswith('.'):
             continue
 
-        # print(f'Working on filepath {file_path}')   # Debug Statement
-
         # Extract file types
         _, ext = os.path.splitext(filename)
         
@@ -64,6 +69,7 @@ for dirpath, dirnames, filenames in os.walk(root_dir):
                 with open(file_path, 'r+') as file:
                     content = file.read()
                     file.seek(0, 0)
+                    # Prepend lines to .py files
                     file.write('\n'.join(prepend_lines_py) + '\n' + content)
                 
             elif ext == '.md' or ext == '.MD':
