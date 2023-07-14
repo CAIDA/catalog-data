@@ -161,3 +161,7 @@ You will output the global counter for each flowtuple, the number of packets for
 CAIDA strictly enforces a "take software to the data" policy for this dataset: <b>all analysis must be performed on CAIDA computers; download of raw data is not allowed.</b> CAIDA provides several basic tools to work with the dataset, including CoralReef and Corsaro. Researchers can also upload their own analysis software.
 
 
+
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

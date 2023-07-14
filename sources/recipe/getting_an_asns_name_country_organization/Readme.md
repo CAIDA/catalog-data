@@ -173,3 +173,7 @@ asn_df.merge(org_df, on="org_id").to_csv(str(date.date())+'_org2info.csv', index
 For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. 
 In other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. 
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

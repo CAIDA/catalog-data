@@ -31,3 +31,7 @@ A more final grain analysis can be found in the 2021 Annaul Report:
 ## Projects
 - [CAIDA Projcts](https://www.caida.org/projects/): a full list of CAIDA projects 
 - [MSRI GMI3s](https://www.caida.org/funding/msri-gmi3s) : Designing a Global Measurement Infrastructure to Improve Internet Security
+
+
+Copyright (c) 2023 The Regents of the University of California
+All Rights Reserved

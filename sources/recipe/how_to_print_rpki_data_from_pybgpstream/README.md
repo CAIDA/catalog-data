@@ -128,3 +128,6 @@ What is Route Views?
 ### Caveats
 - The script above uses specific inputs when initializing the BGPStream object meaning their is more data that can be taken by adjusting these inputs. Playing around with the inputs for ```stream``` will result in different outputs. Check out the pybgpstream documetentation to find ways to adjust the BGPStream with other inputs.
 - The SSL certificate of Route Views expired on 7/7/2022. Therefore, we added argument `verify=False` to `requests.get()`. By running this program, we assume you trust Route Views.
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

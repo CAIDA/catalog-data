@@ -173,3 +173,7 @@ A zone file is a text file which contains the domain, nameserver, ip, and other 
 
 ### Notes on DNS Coffee API
 The DNS Coffee API utilized in this recipe aids in querying data from the zone file. See [documentation for the API](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by filling out a [DZDB API Request form](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

@@ -198,3 +198,7 @@ GeoPlot is a package that allows the user to visually render GeoDataFrames in se
 
 - generate_choropleth.py only creates maps of the world, and not individual countries
 - generate_kde_map.py can only make a world map or a map of the US, and not any other country
+
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

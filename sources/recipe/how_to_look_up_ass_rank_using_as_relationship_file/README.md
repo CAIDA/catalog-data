@@ -152,3 +152,7 @@ rel_2_name = {
     1: "provider"
 }
 ~~~
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

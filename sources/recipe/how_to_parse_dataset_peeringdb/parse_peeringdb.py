@@ -1,3 +1,6 @@
+# Copyright (c) 2020 The Regents of the University of California
+# All Rights Reserved
+
 import argparse
 import sqlite3
 import json

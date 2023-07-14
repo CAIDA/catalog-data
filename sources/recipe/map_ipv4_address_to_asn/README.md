@@ -149,3 +149,7 @@ For example, `ipm.lookup('192.172.226.97')` returns:
 
 - This object can then be parsed to map between IP addresses and origin asns. 
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

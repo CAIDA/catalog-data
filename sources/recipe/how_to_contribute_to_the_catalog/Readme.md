@@ -50,3 +50,7 @@ catalog to include non-CAIDA resources. The general process is to fork, update, 
    1. pull against the CAIDA's copy of the repo.
 
 Let us know if you have any questions <a href="mailto:catalog-info@caida.org">catalog-info@caida.org</a>.
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved
