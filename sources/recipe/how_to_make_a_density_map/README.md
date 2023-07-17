@@ -10,7 +10,7 @@
     "tags" : [],
     "authors":[
         {
-            "person": "person:masser-frye__richard",
+            "person": "person:masser_frye__richard",
             "organizations": ["CAIDA, San Diego Supercomputer Center, University of California San Diego"]
         }
     ]   
