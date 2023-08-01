@@ -133,6 +133,7 @@ id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 id_words_file = "id_words.json"
 access_word_id_file = "access_word_id.json"
+status_word_id_file = "status_word_id.json"
 organization_ids_file = "organization_ids.json"
 personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
@@ -424,9 +425,10 @@ def main():
         id_object[id]["num_links_not_tag"] = num_links
 
     ######################
-    # Parse out the access words 
+    # Parse out the access words and status of datasets
     ######################
     access_word_ids = {}
+    status_word_ids = {}
     for obj in id_object.values():
         if "access" in obj:
             for access in obj["access"]:
@@ -437,6 +439,13 @@ def main():
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
+        if "status" in obj:
+            curr_status = obj["status"]
+            if curr_status not in status_word_ids:
+                status_word_ids[curr_status] = []
+            status_word_ids[curr_status].append(obj["id"])
+            
+                
 
     ######################
     # Load data schema for categories from file
@@ -590,6 +599,9 @@ def main():
     
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
+
+    print ("writing",status_word_id_file)
+    json.dump(status_word_ids, open(status_word_id_file,"w"),indent=indent)
 
     print ("writing",category_id_score_file)
     json.dump(category_id_score, open(category_id_score_file,"w"),indent=indent)
