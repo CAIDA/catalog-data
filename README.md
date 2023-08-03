@@ -43,6 +43,7 @@ The original and convert JSON files are parsed by [data-build.py](scripts/data-b
 - types_ids.json : mapps the object types and the ids of that type 
 - suggestions.json : a list of suggestions for 0 results queries copied from data/suggestions.json
   The order of suggestions in the file, is the 'default order'
+- status_word_id.json : a status to id (of object) dictionary. 
 
 These are made by two scripts:
 - scripts/pubdb_placeholder.py : creates the pubdb objects
