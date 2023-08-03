@@ -12,10 +12,8 @@
     "access": [
         {
             "url": "https://dev.maxmind.com/geoip/geoip2/geolite2/",
-            "tags": [
-                "file"
-            ],
-            "access": "commercial"
+            "access": "commercial",
+            "type": "file"
         }
     ],
     "links": [
@@ -25,4 +23,3 @@
         }
     ]
 }
-

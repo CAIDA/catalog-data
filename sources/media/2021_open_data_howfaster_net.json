@@ -23,7 +23,8 @@
             "venue": "Open Data Day 2021",
             "date": "2021.03.06",
             "url": "https://opendataday.org/"
-        }],
+        }
+    ],
     "links": [],
     "date": "2021.03.06",
     "type": "PRESENTATION",
@@ -41,12 +42,11 @@
         {
             "url": "https://howfaster.net/files/presentations/OPEN_DATA_DAY_2021_OPEN.DATA_HOWFASTER.NET.pdf",
             "tags": [
-                "url",
                 "presentation",
                 "PDF"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "url"
         }
     ]
 }
-

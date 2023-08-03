@@ -10,10 +10,8 @@
     "access": [
         {
             "url": "https://pypi.org/project/pyasn/",
-            "tags": [
-                "CODE"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "CODE"
         }
     ],
     "licenses": [

@@ -210,10 +210,8 @@
     "access": [
         {
             "url": "https://ioda.inetintel.cc.gatech.edu",
-            "tags": [
-                "webpage"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "webpage"
         }
     ],
     "licenses": [

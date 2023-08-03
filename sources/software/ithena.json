@@ -44,10 +44,10 @@
         {
             "url": "https://ithena.net",
             "tags": [
-                "web",
                 "cross-platform"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "web"
         }
     ],
     "licenses": [],
