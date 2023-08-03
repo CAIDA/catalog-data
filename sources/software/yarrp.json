@@ -24,10 +24,8 @@
     "access": [
         {
             "url": "https://www.cmand.org/yarrp/",
-            "tags": [
-                "direct download"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "direct download"
         }
     ],
     "licenses": [
