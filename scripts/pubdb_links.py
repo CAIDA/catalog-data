@@ -33,6 +33,7 @@ def main():
     if not os.path.exists(files_dir):
         print ("error:",files_dir," does not exits",file=sys.stderr);
         sys.exit(1)
+    sys.exit()
 
     for type_ in os.listdir("sources"):
         p = "sources/"+type_
