@@ -14,16 +14,12 @@
         {
             "access": "public",
             "url": "https://www.peeringdb.com/",
-            "tags": [
-                "webpage"
-            ]
+            "type": "webpage"
         },
         {
             "access": "public",
             "url": "https://www.peeringdb.com/apidocs/",
-            "tags": [
-                "api"
-            ]
+            "type": "api"
         }
     ],
     "links": [

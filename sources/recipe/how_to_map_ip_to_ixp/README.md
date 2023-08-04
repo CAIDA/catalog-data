@@ -117,3 +117,6 @@ Any lines starting with a number sign will be ignored.
 <ip>
 <ip>
 ~~~
+
+Copyright (c) 2022 The Regents of the University of California
+All Rights Reserved

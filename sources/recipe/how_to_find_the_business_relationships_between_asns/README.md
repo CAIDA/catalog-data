@@ -197,3 +197,7 @@ Below is an example of the possible lines found in a .as-rel file. For the purpo
 # source:topology|BGP|<data>|<system>|<monitor>
 <asn0>|<asn1>|<relationship>
 ~~~
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

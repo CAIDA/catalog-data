@@ -17,10 +17,8 @@
     "access": [
         {
             "url": "http://www.digitalelement.com/solutions",
-            "tags": [
-                "WEB"
-            ],
-            "access": "commercial"
+            "access": "commercial",
+            "type": "WEB"
         }
     ],
     "licenses": [

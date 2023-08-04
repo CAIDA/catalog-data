@@ -356,3 +356,7 @@ More information on ITDK dataset can be found [here](https://www.caida.org/catal
 - Placeholder nodes are the non-response hops in the traceroute. 
 - Generally, placeholder nodes are ignored. 
 - Placeholder nodes have reserved IP addresses used to identify them. For the ITDK dataset, we use addresses `224.0.0.0` and `0.0.0.0` as the placeholder addresses.
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

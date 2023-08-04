@@ -120,3 +120,7 @@ What does it mean to check the elem.type in the solution code?
 ### Caveats
 - The script above uses specific inputs when initializing the BGPStream object meaning their is more data that can be taken by adjusting these inputs. Playing around with the inputs for `stream` will result in different outputs. Check out the pybgpstream documetentation to find ways to adjust the BGPStream with other inputs.
 - This script will run through all bgpstream records until it is complete. This will take a long time. It is recommended that the user to use the `-d` flag if they don't want all the data.
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

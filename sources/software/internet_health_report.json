@@ -10,10 +10,8 @@
     "access": [
         {
             "url": "https://ihr.iijlab.net/ihr/en-us/",
-            "tags": [
-                "UI"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "UI"
         }
     ],
     "licenses": [

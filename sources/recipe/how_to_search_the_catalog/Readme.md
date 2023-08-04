@@ -105,3 +105,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [links=collection:ucsd\_telescope\_datasets iot](https://catalog.caida.org/search?query=links=collection:ucsd_telescope_datasets%20iot) |  search for all papers that used telescope data to study IoT security |
 | [software:bgpstream](https://catalog.caida.org/search?query=software:bgpstream) | search for the object with id `software:bgpstream`|
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved
