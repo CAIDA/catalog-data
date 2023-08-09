@@ -9209,7 +9209,7 @@ ABS: ''
 ---
 MARKER: 2021_ma_c_ieee_9651974
 TYPE: inproceedings
-AUTHOR: Ma, C., Wang; H., Odegbile; O., Chen, S.
+AUTHOR: Ma, C., Wang, H., Odegbile, O., Chen, S.
 TITLE: Virtual Filter for Non-duplicate Sampling
 CTITLE: 2021 IEEE 29th International Conference on Network Protocols (ICNP)
 YEAR: 2021-12
@@ -11062,7 +11062,7 @@ ABS: ''
 ---
 MARKER: 2021_yang_l_ieee_9651940
 TYPE: inproceedings
-AUTHOR: Yang, L., Li, Y., Liu, Z., Yang, T., Zhou, Y., He, J., Xue, J., Zhao, T.,
+AUTHOR: Yang, L., Li, Y., Liu, Z., Yang, T., Zhou, Y., He, J., Xue, J., Zhao, T.
   Jia, Z., Yang, Y.
 TITLE: 'SketchINT: Empowering INT with TowerSketch for Per-flow Per-switch Measurement'
 CTITLE: 2021 IEEE 29th International Conference on Network Protocols (ICNP)
@@ -17556,7 +17556,7 @@ ABS: ''
 ---
 MARKER: 2013_ferguson_a_acm_2504769
 TYPE: inproceedings
-AUTHOR: Ferguson, A., Place, J., Fonseca., R
+AUTHOR: Ferguson, A., Place, J., Fonseca, R.
 TITLE: Growth analysis of a large ISP
 CTITLE: Proceedings of the 2013 conference on Internet measurement conference
 YEAR: 2013-10
