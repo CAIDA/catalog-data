@@ -1,3 +1,6 @@
+# Copyright (C) 2023 The Regents of the University of
+# California. All Rights Reserved.
+
 import bz2
 import os
 import argparse
@@ -8,12 +11,6 @@ import time
 ######################################################################
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-r1", dest='rels1', help="name of (chronologically) first as-rel file", type=str)
-parser.add_argument("-r2", dest='rels2', help="name of second as-rel file", type=str)
-parser.add_argument("-c1", dest='cones1', help="name of first ppdc-ases file", type=str)
-parser.add_argument("-c2", dest='cones2', help="name of second ppdc-ases file", type=str)
-parser.add_argument("-p1", dest='paths1', help="name of first .paths file", type=str)
-parser.add_argument("-p2", dest='paths2', help="name of second .paths file", type=str)
 parser.add_argument("-dir", dest='dir_name', help="name of directory where all data files are", type=str)
 parser.add_argument("-d1", dest='date_1', help="first date, format: YYYYMMDD", type=int)
 parser.add_argument("-d2", dest='date_2', help="second date, format: YYYYMMDD", type=int)
@@ -25,17 +22,8 @@ args = parser.parse_args()
 if args.target is None:
     raise  Exception("Missing target. Specify target with -t")
 
-args_to_check = [args.rels1, args.rels2, args.cones1, args.cones2, args.paths1, args.paths2]
 if args.dir_name is None or args.date_1 is None or args.date_2 is None:
-    for argument in args_to_check:
-        if argument is None:
-            raise Exception("Missing one or more arguments")
-    RELS1 = args.rels1
-    RELS2 = args.rels2
-    CONES1 = args.cones1
-    CONES2 = args.cones2
-    PATHS1 = args.paths1
-    PATHS2 = args.paths2
+    raise Exception("Specify an initial date with -d1 YYYYMMDD, a later date with -f2 YYYYMMDD, and a directory with -dir")
 else:
     RELS1 = os.path.normpath("{}/{}.as-rel.txt.bz2".format(DIRECTORY, args.date_1))
     RELS2 = os.path.normpath("{}/{}.as-rel.txt.bz2".format(DIRECTORY, args.date_2))
@@ -303,6 +291,8 @@ print('Summary of results:')
 for cause, count in sorted(causes_summary.items(), key=lambda r_c: r_c[1], reverse=True):
     print('{}, count: {}, percent of {}: {}%, percent of overall cone: {}%'.format(cause, count, word, str(100*count/len(changed))[:5], str(100*count/len(cone_lg))[:5]))
 
+print()
+print('Processing paths in a different way...')
 # Get a more inclusive cone by ignoring the rules for cropping paths
 def get_inclusive_target_cone(annotated_paths):
     cone = set()
@@ -316,10 +306,8 @@ def get_inclusive_target_cone(annotated_paths):
                 cone.add(int(elt))
     return cone
 
-incl_targ_cone = get_inclusive_target_cone(annotated_paths_sm)
-
 # Find the intersection of the gained/lost ASNs and the ASNs in the inclusive cone
-cons_peer = changed & incl_targ_cone
+inclusive_targ_cone_changed = changed & get_inclusive_target_cone(annotated_paths_sm)
 
 # Make a dict of peer to peer relationships that co-occur with ASNs in the intersection found above
 consequential_peers = {}
@@ -338,9 +326,8 @@ for path in annotated_paths_lg:
                     consequential_peers[current_peer] = set()
                 consequential_peers[current_peer].add(asn)
                 
-print('\n')
+print()
 print("Consequential Peer-to-peer Links:")
-print("If a particular " + word + " AS appeared in paths with the target but wasn't counted, what p2p link resulted in it being counted?")
 print('(The percentages may not add up to 100% because of overlap)\n')
 for k,v in sorted(consequential_peers.items(), key=lambda k_v: len(k_v[1]), reverse=True):
-    print('{}-{} responsible for {} new inclusions ({}% of total)'.format(k, TARGET, len(v), str(100*len(v)/len(cons_peer))[0:4]))
+    print('{}-{} responsible for {} new inclusions ({}% of total)'.format(k, TARGET, len(v), str(100*len(v)/len(inclusive_targ_cone_changed))[0:4]))
