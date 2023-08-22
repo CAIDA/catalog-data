@@ -1,0 +1,38 @@
+{
+    "id": "whowas",
+    "name": "WHOWAS",
+    "description": "WHOWAS is a 'Backto-the-Future whois' service, allowing historic bulk attribution of IP addresses on a daily granularity based on CAIDA Routeviews aggregates. We provide this service to the community for free, and also share our implementation so researchers can run instances themselves.",
+    "dateStart": "2006",
+    "tags": [],
+    "links": [
+        {
+            "to": "dataset:routeviews_ipv6_prefix2as",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:routeviews_ipv4_prefix2as",
+            "label": "used by"
+        },
+        {
+            "to": "dataset:as_organizations",
+            "label": "used by"
+        },
+        {
+            "to": "paper:2014_inferring_complex_as_relationships",
+            "label": "used by"
+        }
+    ],
+    "access": [
+        {
+            "url": " https://bttf-whois.as59645.net/",
+            "access": "public",
+            "type": "webpage"
+        },
+        {
+            "url": "https://arxiv.org/pdf/2211.06537v2.pdf",
+            "access": "public",
+            "type": "file"
+        }
+    ],
+    "status": "ongoing"
+}
