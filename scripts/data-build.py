@@ -708,7 +708,7 @@ def object_date_add(obj):
                     break
             if obj["date"] is None:
                 if "deprecated" not in obj:
-                    utils.error_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
+                    utils.warning_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
     
 
     #for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
