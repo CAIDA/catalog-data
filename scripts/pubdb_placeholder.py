@@ -165,15 +165,28 @@ def main():
 
     # fix links
     ids = set()
+
     for obj in objects:
         ids.add(obj["id"])
         if "links" in obj and len(obj["links"]) > 0:
+            routeviews_prefix2as_check = False # Check if routeviews_prefix2as has been redirected
+            routeviews_prefix2as_del_index = None # Possible index in obj["links"] to be deleted
+
             for index, id_ in enumerate(obj["links"]):
                 if "media" in id_ and id_ not in ["media:2014_a_coordinated_view_of_the_egypt_internet_blackout_2011","media:2020_dynamips_conext_video"]:
                     obj["links"][index] = "presentation:"+id_[6:]
 
                 if id_ == "dataset:routeviews_ipv4_prefix2as" or id_ == "dataset:routeviews_ipv6_prefix2as":
-                    obj["links"][index] = "dataset:routeviews_prefix2as"
+                    if routeviews_prefix2as_check == False:
+                        routeviews_prefix2as_check = True
+                        obj["links"][index] = "dataset:routeviews_prefix2as"
+                    else:
+                        # If program executes this else branch then it means that duplicate exists and 
+                        # we'll delete this entry after we process all links
+                        routeviews_prefix2as_del_index = index
+
+            if routeviews_prefix2as_del_index is not None:
+                del obj["links"][routeviews_prefix2as_del_index]
 
     # Dump objects
     for obj in id_person.values():
