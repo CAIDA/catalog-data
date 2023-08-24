@@ -9475,7 +9475,7 @@ ABS: ''
 ---
 MARKER: 2022_basat_r_ieee_9695990
 TYPE: article
-AUTHOR: Basat, R., Einziger, G,. Keslassy, I., Orda, A., Vargaftik, S., Waisbard,
+AUTHOR: Basat, R., Einziger, G., Keslassy, I., Orda, A., Vargaftik, S., Waisbard,
   E.
 TITLE: 'Memento: Making Sliding Windows Efficient for Heavy Hitters'
 SERIAL: IEEE/ACM Transactions on Networking
