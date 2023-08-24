@@ -27,7 +27,7 @@ def find_deleted_files(repo_path):
             if len(file_path) == 3:
                 if file_path[2].endswith(".json") or file_path[2].endswith(".md") or file_path[2].endswith(".MD"):
                     # Ignore all person objects
-                    if file_path[1] != "person": 
+                    if file_path[1] != "person" and file_path[1] != "recipe": 
                         deleted_files.append(file_path)
             else:
                 invalid_entries.append(entry)
@@ -76,7 +76,9 @@ def main():
     deleted_files_by_id = find_deleted_files_id()
     
     # Need to query CAIDA API
-    
+    current_ids = get_current_ids("https://api.catalog.caida.org/")
+    deleted_not_in_catalog = deleted_files_by_id.difference(current_ids)
+    print(len(deleted_not_in_catalog))
 
 
 main()
