@@ -118,6 +118,7 @@ def parse_markdown(filename):
     section_buffer = None
 
     obj = None
+    print ("Hello")
     with open(filename) as file:
         for line in file:
             #print (section_name, section_ender,"|",line.rstrip())
