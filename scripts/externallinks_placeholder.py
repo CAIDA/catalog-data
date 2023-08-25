@@ -141,8 +141,7 @@ topkey_2_dataset = {
   "topology-as-organization"          : "as_organizations",
   "as-organizations"                  : "as_organizations",
   "topology-as-rank"                  : "as_rank",
-  "routeviews-generic"                : ["routeviews_ipv4_prefix2as", "routeviews_ipv6_prefix2as"],
-  "routeviews-prefix2as"              : ["routeviews_ipv4_prefix2as", "routeviews_ipv6_prefix2as"],
+  "routeviews-generic"                : ["routeviews_prefix2as"],
 
   # "UCSD Network Telescope -> telescope"
   "telescope-generic"                 : "telescope_live",

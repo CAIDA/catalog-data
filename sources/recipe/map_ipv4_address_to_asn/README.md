@@ -7,7 +7,7 @@
       "to": "software:pyipmeta"
     },
     {
-      "to": "dataset:routeviews_ipv4_prefix2as"
+      "to": "dataset:routeviews_prefix2as"
     }
   ],
   "id": "map_ipv4_address_to_asn",
