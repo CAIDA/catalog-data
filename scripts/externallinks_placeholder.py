@@ -141,8 +141,7 @@ topkey_2_dataset = {
   "topology-as-organization"          : "as_organizations",
   "as-organizations"                  : "as_organizations",
   "topology-as-rank"                  : "as_rank",
-  "routeviews-generic"                : ["routeviews_ipv4_prefix2as", "routeviews_ipv6_prefix2as"],
-  "routeviews-prefix2as"              : ["routeviews_ipv4_prefix2as", "routeviews_ipv6_prefix2as"],
+  "routeviews-generic"                : ["routeviews_prefix2as"],
 
   # "UCSD Network Telescope -> telescope"
   "telescope-generic"                 : "telescope_live",
@@ -330,6 +329,7 @@ def parse_paper(fname, key_value):
                     authors.append(names[0]+", "+names[1])
                     authors.append(names[2]+", "+names[3])
                 else:
+                    # add the period back to Jr.
                     if suffix: 
                         author = author.replace("Jr", "Jr.")
                     authors.append(author)
@@ -340,6 +340,8 @@ def parse_paper(fname, key_value):
                 #author = re.split(r"\W+", author)
                 if re.search("\s*,\s*",author):
                     last_name, first_name = re.split("\s*,\s*",author)
+                    if len(first_name) == 1:
+                        first_name = first_name + '.'
                 elif not re.search("^[a-z]+$", author, re.IGNORECASE):
                     print ("unparseable", '"'+author+'" in "'+title+'"', file=sys.stderr)
                     first_name = ""

@@ -8,31 +8,31 @@
         "iana",
         "autonomous system numbers"
     ],
-    "dateStart":"1997-11",
-    "status":"ongoing",
+    "dateStart": "1997-11",
+    "status": "ongoing",
     "access": [
         {
             "name": "asn_16_bit",
             "url": "https://www.iana.org/assignments/as-numbers/as-numbers-1.csv",
             "tags": [
-                "file",
                 "csv",
                 "asn"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         },
         {
             "name": "asn_32_bit",
             "url": "https://www.iana.org/assignments/as-numbers/as-numbers-2.csv",
             "tags": [
-                "file",
                 "csv",
                 "asn"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         }
     ],
-        "links": [
+    "links": [
         {
             "to": "dataset:iana_ipv4_addresses"
         },
@@ -41,5 +41,3 @@
         }
     ]
 }
-
-
