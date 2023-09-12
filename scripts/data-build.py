@@ -423,6 +423,14 @@ def main():
                 if id_object[i]["__typename"] != "Tag":
                     num_links += 1
         id_object[id]["num_links_not_tag"] = num_links
+    
+    ######################
+    # Load date info into id_object 
+    ######################
+    print ("Adding dataset date info")
+    data_load_from_summary(args.summary_file)
+    # Class copies categories to classes
+    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Parse out the access words and status of datasets
@@ -525,13 +533,6 @@ def main():
             type_ids[t] = []
         type_ids[t].append(obj["id"])
 
-    ######################
-    # Load date info into id_object 
-    ######################
-    print ("Adding dataset date info")
-    data_load_from_summary(args.summary_file)
-    # Class copies categories to classes
-    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Create a word_id
