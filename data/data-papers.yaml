@@ -68129,19 +68129,19 @@ AUTHOR: Adebowale, A., Olutayo, A., Sunday, Idowu., AC, O., Oluwabukola, A.
 TITLE: Scalable Unsupervised Ensemble Algorithm for Effective Insider Threat Detection
 SERIAL: International Journal of Advances in Engineering and Management (IJAEM)
 YEAR: 2020-10
-VOLUME: 2
+VOLUME: '2'
 PAGE: 418-424
 URL: https://ijaem.net/issue_dcp/Scalable%20Unsupervised%20Ensemble%20Algorithm%20for%20Effective%20Insider%20Threat%20Detection.pdf
 TOPKEY: passive_2015_pcap
 GEOLOC: Ogun, NG
 ABS: Insider threats remain one of the oldest and notorious threats to information security. Early detection remains key to preventing insider
-attacks on an information system. The vast amount of enterprise data and the little data points pertaining to insider threats calls for techniques to handle the rare class problem.
-This study conceptualised insider threat data as a streaming data problem. Scalability of insider threat detection systems represents a gap in knowledge in this disposition. 
-Building on existing unsupervised ensemble stream mining techniques, this study proposed an insider threat detection algorithm and evaluated it using Centre for Analysis of Internet Data (CAIDA) Anonymized trace dataset for 2015. 
-CAIDA datasets was used to ascertain the scalability of quantised dictionary construction by applying a distributive approach to graph based anomaly detection (GBAD). 
-Pattern learning anomaly detection system processes GBAD in a streaming approach. Dictionary construction was done using Apache Spark on top of the Hadoop stack.
-PLADS enhanced GBAD successfully discovered the same anomalous substructure within a streaming approach in a fraction of the time (642 seconds) it took to process the entire graph (59,743 seconds) when applied on the CAIDA Anonymised
-2015 dataset. Application of Apache Spark as the distributed computing framework for construction of quantised dictionaries of user command data depicted a reduction in processing time under
-varying input sizes and number of reducers In conclusion, scalability of Insider Threat Detection systems is essential and a complexity analysis of proposed algorithms showed it scales to increased number of users of the system. 
-The implemented prototype system using Apache Spark scaled to increasing workloads showing its usefulness for early detection of insider threats.
-This study recommends the use of unsupervised learning ensembles and distributed frameworks for effective detection of insider threats.
+  attacks on an information system. The vast amount of enterprise data and the little data points pertaining to insider threats calls for techniques to handle the rare class problem.
+  This study conceptualised insider threat data as a streaming data problem. Scalability of insider threat detection systems represents a gap in knowledge in this disposition. 
+  Building on existing unsupervised ensemble stream mining techniques, this study proposed an insider threat detection algorithm and evaluated it using Centre for Analysis of Internet Data (CAIDA) Anonymized trace dataset for 2015. 
+  CAIDA datasets was used to ascertain the scalability of quantised dictionary construction by applying a distributive approach to graph based anomaly detection (GBAD). 
+  Pattern learning anomaly detection system processes GBAD in a streaming approach. Dictionary construction was done using Apache Spark on top of the Hadoop stack.
+  PLADS enhanced GBAD successfully discovered the same anomalous substructure within a streaming approach in a fraction of the time (642 seconds) it took to process the entire graph (59,743 seconds) when applied on the CAIDA Anonymised
+  2015 dataset. Application of Apache Spark as the distributed computing framework for construction of quantised dictionaries of user command data depicted a reduction in processing time under
+  varying input sizes and number of reducers In conclusion, scalability of Insider Threat Detection systems is essential and a complexity analysis of proposed algorithms showed it scales to increased number of users of the system. 
+  The implemented prototype system using Apache Spark scaled to increasing workloads showing its usefulness for early detection of insider threats.
+  This study recommends the use of unsupervised learning ensembles and distributed frameworks for effective detection of insider threats.
