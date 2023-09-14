@@ -68122,3 +68122,21 @@ ABS: The empirical entropy of the network flow attributes is an essential measur
    synthetic data streams. Moreover, the practical applicability is demonstrated via stream-based implementation in the programmable data planes of the NetFPGA-Plus framework and a Tofino P4 switch, respectively.
    The results indicate that the proposed tabulation-based entropy estimation scheme allows minimum-sized
    Ethernet frames to be processed with a wire speed of up to several hundred gigabits per second.
+---
+MARKER: 2006_a_dignazio_nhl003
+TYPE: article
+AUTHOR: D'Ignazio, A., Giovannetti, E.
+TITLE: Tabular Interpolation Approach Based on Stable Random Projection for Estimating Empirical Entropy of High-Speed Network Traffic
+SERIAL: Journal of Competition Law & Economics
+YEAR: 2006-02
+DOI: https://doi.org/10.1093/joclec/nhl003
+TOPKEY: as_rank, caida_topology_datasets, caida_security_papers
+GEOLOC: Cambridge, GB
+ABS: We study concentration in the European Internet upstream access market.
+  The possibility of measuring market concentration depends on a correct definition of the market itself; however, 
+  this is not always possible, because very often in the Internet industry antitrust authorities lack reliable pricing and traffic data. 
+  We present an alternative approach based on the inference of the Internet operators' interconnection policies using micro-data from their Border Gateway Protocol (BGP) tables. 
+  We assess market concentration following a two-step process, first, we propose a price-independent algorithm for defining both the vertical and geographical relevant market boundaries; 
+  then we calculate market concentration indexes using two novel metrics. These assess, for each undertaking, its role both in terms of essential network facility and of wholesale market dominance. 
+  The results, applied to four leading Internet exchange points in London, Amsterdam, Frankfurt, and Milan, show that some vertical segments of these markets are highly concentrated, while others are extremely competitive. 
+  According to the Merger Guidelines, some of the estimated market concentration values would immediately fall within the special attention category.
