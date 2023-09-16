@@ -68146,3 +68146,23 @@ ABS: Insider threats remain one of the oldest and notorious threats to informati
   varying input sizes and number of reducers In conclusion, scalability of Insider Threat Detection systems is essential and a complexity analysis of proposed algorithms showed it scales to increased number of users of the system. 
   The implemented prototype system using Apache Spark scaled to increasing workloads showing its usefulness for early detection of insider threats.
   This study recommends the use of unsupervised learning ensembles and distributed frameworks for effective detection of insider threats.
+---
+MARKER: 2023_f_streibelt_pam
+TYPE: inproceedings
+AUTHOR: Streibelt, F., Lindorfer, M., Gürses, S., Gañán, C., Fiebig, T.
+GEOLOC: Saarbrücken, DE; Vienna, AT; Delft, NL
+TITLE: "Back-to-the-Future Whois: An IP Address Attribution Service for Working with Historic Datasets"
+YEAR: 2023-01
+DOI: 10.48550/arXiv.2211.06537
+TOPKEY: routeviews-generic, as-organizations
+ABS: Researchers and practitioners often face the issue of having
+  to attribute an IP address to an organization. For current data this is
+  comparably easy, using services like whois or other databases. Similarly,
+  for historic data, several entities like the RIPE NCC provide websites
+  that provide access to historic records. For large-scale network measurement work, though, researchers often have to attribute millions of addresses. For current data, Team Cymru provides a bulk whois service
+  which allows bulk address attribution. However, at the time of writing,
+  there is no service available that allows historic bulk attribution of IP
+  addresses. Hence, in this paper, we introduce and evaluate our ‘Back-to-the-Future whois’ service, allowing historic bulk attribution of IP addresses on a daily granularity based on CAIDA Routeviews aggregates.
+  We provide this service to the community for free, and also share our
+  implementation so researchers can run instances themselves.
+
