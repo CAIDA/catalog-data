@@ -68142,3 +68142,47 @@ ABS: We study concentration in the European Internet upstream access market.
   then we calculate market concentration indexes using two novel metrics. These assess, for each undertaking, its role both in terms of essential network facility and of wholesale market dominance. 
   The results, applied to four leading Internet exchange points in London, Amsterdam, Frankfurt, and Milan, show that some vertical segments of these markets are highly concentrated, while others are extremely competitive. 
   According to the Merger Guidelines, some of the estimated market concentration values would immediately fall within the special attention category.
+---
+MARKER: 2020_a_adebowale_418424
+TYPE: article
+AUTHOR: Adebowale, A., Olutayo, A., Sunday, I., AC, O., Oluwabukola, A.
+TITLE: Scalable Unsupervised Ensemble Algorithm for Effective Insider Threat Detection
+SERIAL: International Journal of Advances in Engineering and Management (IJAEM)
+YEAR: 2020-10
+DOI: 10.35629/5252-0207418424
+VOLUME: '2'
+PAGE: 418-424
+URL: https://ijaem.net/issue_dcp/Scalable%20Unsupervised%20Ensemble%20Algorithm%20for%20Effective%20Insider%20Threat%20Detection.pdf
+TOPKEY: passive_2015_pcap
+GEOLOC: Ogun, NG
+ABS: Insider threats remain one of the oldest and notorious threats to information security. Early detection remains key to preventing insider
+  attacks on an information system. The vast amount of enterprise data and the little data points pertaining to insider threats calls for techniques to handle the rare class problem.
+  This study conceptualised insider threat data as a streaming data problem. Scalability of insider threat detection systems represents a gap in knowledge in this disposition. 
+  Building on existing unsupervised ensemble stream mining techniques, this study proposed an insider threat detection algorithm and evaluated it using Centre for Analysis of Internet Data (CAIDA) Anonymized trace dataset for 2015. 
+  CAIDA datasets was used to ascertain the scalability of quantised dictionary construction by applying a distributive approach to graph based anomaly detection (GBAD). 
+  Pattern learning anomaly detection system processes GBAD in a streaming approach. Dictionary construction was done using Apache Spark on top of the Hadoop stack.
+  PLADS enhanced GBAD successfully discovered the same anomalous substructure within a streaming approach in a fraction of the time (642 seconds) it took to process the entire graph (59,743 seconds) when applied on the CAIDA Anonymised
+  2015 dataset. Application of Apache Spark as the distributed computing framework for construction of quantised dictionaries of user command data depicted a reduction in processing time under
+  varying input sizes and number of reducers In conclusion, scalability of Insider Threat Detection systems is essential and a complexity analysis of proposed algorithms showed it scales to increased number of users of the system. 
+  The implemented prototype system using Apache Spark scaled to increasing workloads showing its usefulness for early detection of insider threats.
+  This study recommends the use of unsupervised learning ensembles and distributed frameworks for effective detection of insider threats.
+---
+MARKER: 2023_f_streibelt_pam
+TYPE: inproceedings
+AUTHOR: Streibelt, F., Lindorfer, M., Gürses, S., Gañán, C., Fiebig, T.
+GEOLOC: Saarbrücken, DE; Vienna, AT; Delft, NL
+TITLE: "Back-to-the-Future Whois: An IP Address Attribution Service for Working with Historic Datasets"
+YEAR: 2023-01
+DOI: 10.48550/arXiv.2211.06537
+TOPKEY: routeviews-generic, as-organizations
+ABS: Researchers and practitioners often face the issue of having
+  to attribute an IP address to an organization. For current data this is
+  comparably easy, using services like whois or other databases. Similarly,
+  for historic data, several entities like the RIPE NCC provide websites
+  that provide access to historic records. For large-scale network measurement work, though, researchers often have to attribute millions of addresses. For current data, Team Cymru provides a bulk whois service
+  which allows bulk address attribution. However, at the time of writing,
+  there is no service available that allows historic bulk attribution of IP
+  addresses. Hence, in this paper, we introduce and evaluate our ‘Back-to-the-Future whois’ service, allowing historic bulk attribution of IP addresses on a daily granularity based on CAIDA Routeviews aggregates.
+  We provide this service to the community for free, and also share our
+  implementation so researchers can run instances themselves.
+  
