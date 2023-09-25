@@ -1,7 +1,7 @@
 {
     "id":"internet_yellow_pages",
     "name":"Internet Yellow Pages",
-    "description":"Graph database of AS information combining data from multiple sources",
+    "description":"Graph database of Internet resources combining data from multiple sources",
     "organization": "Internet Health Report",
     "tags": [
         "topology",
