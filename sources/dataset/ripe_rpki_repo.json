@@ -1,0 +1,13 @@
+{
+    "id": "ripe_rpki_repo",
+    "name": "RIPE NCC's RPKI Repo Archive",
+    "description": "Archive of route origin authorizations (ROAs)",
+    "organization": "RIPE NCC",
+    "dateStart": "2011-01",
+    "status": "ongoing",
+    "access": {
+        "access": "public",
+        "url": "https://github.com/RIPE-NCC/internet-dataset-descriptions/blob/main/rpki-repo-archive.md",
+        "type": "webpage"
+    }
+}
