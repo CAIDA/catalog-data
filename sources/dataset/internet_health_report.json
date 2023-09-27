@@ -1,0 +1,15 @@
+{
+    "id": "internet_health_report",
+    "name": "Internet Health Report",
+    "description": "Data about AS dependency (i.e. which ASes are relied on by others) and other measures of connectivity",
+    "organization": "IIJ Research Laboratory",
+    "dateStart": "2019-01",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://ihr.iijlab.net/ihr/en-us/",
+            "type": "webpage"
+        }
+    ]
+}

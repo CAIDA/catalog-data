@@ -1,0 +1,14 @@
+{
+    "id": "manrs_net_op_participants",
+    "name": "MANRS Network Operator Participants",
+    "description": "List of network operators participating in the MANRS initiative",
+    "organization": "MANRS",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://www.manrs.org/netops/participants/",
+            "type": "webpage"
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "id": "internet_yellow_pages_dataset",
+    "name": "Internet Yellow Pages Datasets",
+    "query": "types=dataset links=dataset:internet_yellow_pages",
+    "description": "The datasets used by the IIJ's Internet Yellow Pages.",
+    "links":[
+        "dataset:internet_yellow_pages"
+    ]
+}

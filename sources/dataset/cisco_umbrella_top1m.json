@@ -1,0 +1,15 @@
+{
+    "id": "cisco_umbrella_top_1m",
+    "name": "Cisco Umbrella Popularity List",
+    "description": "List of most queried domains, as tracked by Cisco Umbrella",
+    "organization": "Cisco",
+    "dateStart": "2017-01",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://s3-us-west-1.amazonaws.com/umbrella-static/index.html",
+            "type": "webpage"
+        }
+    ]
+}

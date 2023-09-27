@@ -1,0 +1,14 @@
+{
+    "id": "aben_as_names",
+    "name": "Emile Aben's AS Names",
+    "description": "Emile Aden's curated list of AS names",
+    "dateStart": "2022-06",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://github.com/emileaben/asnames",
+            "type": "webpage"
+        }
+    ]
+}

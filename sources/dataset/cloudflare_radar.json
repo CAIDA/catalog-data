@@ -1,0 +1,15 @@
+{
+    "id": "cloudflare_radar",
+    "name": "Cloudflare Radar",
+    "description": "Data on internet traffic",
+    "organization": "Cloudflare",
+    "dateStart": "2020-09",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://radar.cloudflare.com/",
+            "type": "webpage"
+        }
+    ]
+}
