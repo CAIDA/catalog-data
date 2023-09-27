@@ -1,6 +1,6 @@
 {
     "id": "ripe_atlas",
-    "name": "RIPE Atlas",
+    "name": "RIPE NCC Atlas",
     "description": "A global network of devices that actively measure Internet connectivity",
     "organization": "RIPE NCC",
     "dateStart": "2014-03",

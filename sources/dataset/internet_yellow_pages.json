@@ -26,6 +26,7 @@
         }
     ],
     "links": [
+        "dataset:as_rank",
         "dataset:aben_asnames",
         "dataset:amsix_lg",
         "dataset:apnic_eyeball",
@@ -43,6 +44,7 @@
         "dataset:nro_delegated_extended",
         "dataset:openintel_active_dns",
         "dataset:pch_routing_data",
+        "dataset:peeringdb",
         "dataset:ripe_as_names",
         "dataset:ripe_atlas",
         "dataset:ripe_rpki_repo",

@@ -1,9 +1,8 @@
 {
     "id": "ripe_as_names",
-    "name": "RIPE AS Names",
+    "name": "RIPE NCC AS Names",
     "description": "List of ASes and associated names",
     "organization": "RIPE NCC",
-    "dateStart": "N/A",
     "status": "ongoing",
     "access": [
         {

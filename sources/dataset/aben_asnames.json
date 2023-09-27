@@ -1,8 +1,7 @@
 {
-    "id": "aben_asnames",
-    "name": "as-names",
-    "description": "Curated list of AS names",
-    "organization": "RIPE NCC",
+    "id": "aben_as_names",
+    "name": "Emile Aben's AS Names",
+    "description": "Emile Aden's curated list of AS names",
     "dateStart": "2022-06",
     "status": "ongoing",
     "access": [

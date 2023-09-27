@@ -1,7 +1,7 @@
 {
     "id": "decix_lg",
     "name": "DE-CIX Looking Glass",
-    "description": "Looking glass server",
+    "description": "DE-CIX's looking glass servers",
     "organization": "DE-CIX",
     "status": "ongoing",
     "access": [ 

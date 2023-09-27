@@ -1,7 +1,7 @@
 {
     "id": "inetintel_as_org",
-    "name": "AS-to-Organization Mapping",
-    "description": "Historical and current AS-to-organization mappings",
+    "name": "InetIntel AS-to-Organization Mapping",
+    "description": "InetIntel's Historical and current AS to Organization mappings",
     "organization": "Internet Intelligence Lab at Georgia Tech",
     "dateStart": "2022-10",
     "status": "ongoing",

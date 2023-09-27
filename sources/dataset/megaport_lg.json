@@ -1,7 +1,7 @@
 {
     "id": "megaport_lg",
     "name": "Megaport Looking Glass",
-    "description": "Looking glass server",
+    "description": "Megaport's looking glass server",
     "organization": "Megaport",
     "status": "ongoing",
     "access": [

@@ -1,6 +1,6 @@
 {
     "id": "bgptools",
-    "name": "bgp.tools",
+    "name": "BGP.tools",
     "description": "Collection of BGP data",
     "organization": "Port 179 Ltd",
     "dateStart": "2021-09",

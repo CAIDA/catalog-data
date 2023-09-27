@@ -1,7 +1,7 @@
 {
     "id": "linx_lg",
     "name": "LINX Route Server Looking Glass",
-    "description": "Looking glass server",
+    "description": "LINX's looking glass servers",
     "organization": "LINX",
     "status": "ongoing",
     "access": [
