@@ -1,0 +1,13 @@
+{
+    "id": "apnic_eyeball",
+    "name": "APNIC AS Customer Populations",
+    "description": "Ranks ASes by population within a given country",
+    "organization": "APNIC",
+    "dateStart": "N/A",
+    "status": "ongoing",
+    "access": {
+        "access": "public",
+        "url": "https://stats.labs.apnic.net/aspop/",
+        "type": "webpage"
+    }
+}

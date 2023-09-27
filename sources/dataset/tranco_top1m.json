@@ -1,0 +1,13 @@
+{
+    "id": "tranco_top1m",
+    "name": "Tranco",
+    "description": "Ranking of the top 1M domains, created by analyzing multiple sources",
+    "organization": "DistriNet",
+    "dateStart": "2019-01",
+    "status": "ongoing",
+    "access": {
+        "access": "public",
+        "url": "https://tranco-list.eu/",
+        "type": "webpage"
+    }
+}

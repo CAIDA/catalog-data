@@ -1,0 +1,13 @@
+{
+    "id": "bgpkit",
+    "name": "BGPKIT",
+    "description": "Collection of various BGP and AS related data",
+    "organization": "BGPKIT",
+    "dateStart": "2012-05",
+    "status": "ongoing",
+    "access": {
+        "access": "public",
+        "url": "https://bgpkit.com/",
+        "type": "webpage"
+    }
+}

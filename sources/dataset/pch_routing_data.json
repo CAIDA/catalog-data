@@ -1,0 +1,13 @@
+{
+    "id": "pch_routing_data",
+    "name": "PCH Routing Data",
+    "description": "Historical and current snapshots of route collections",
+    "organization": "Packet Clearing House",
+    "dateStart": "2003-03",
+    "status": "ongoing",
+    "access": {
+        "access": "public",
+        "url": "https://www.pch.net/resources/Routing_Data/",
+        "type": "webpage"
+    }
+}
