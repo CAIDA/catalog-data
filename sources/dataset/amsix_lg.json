@@ -3,11 +3,12 @@
     "name": "AMS-IX Looking Glass",
     "description": "Looking glass server",
     "organization": "AMS-IX",
-    "dateStart": "N/A",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://lg.ams-ix.net/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://lg.ams-ix.net/",
+            "type": "webpage"
+        }
+    ]
 }

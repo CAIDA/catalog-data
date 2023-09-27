@@ -5,9 +5,11 @@
     "organization": "Cloudflare",
     "dateStart": "2020-09",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://radar.cloudflare.com/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://radar.cloudflare.com/",
+            "type": "webpage"
+        }
+    ]
 }

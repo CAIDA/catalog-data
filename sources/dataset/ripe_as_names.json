@@ -5,9 +5,11 @@
     "organization": "RIPE NCC",
     "dateStart": "N/A",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://ftp.ripe.net/ripe/asnames/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://ftp.ripe.net/ripe/asnames/",
+            "type": "webpage"
+        }
+    ]
 }

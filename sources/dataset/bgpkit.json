@@ -5,9 +5,11 @@
     "organization": "BGPKIT",
     "dateStart": "2012-05",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://bgpkit.com/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://bgpkit.com/",
+            "type": "webpage"
+        }
+    ]
 }

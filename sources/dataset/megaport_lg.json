@@ -3,11 +3,12 @@
     "name": "Megaport Looking Glass",
     "description": "Looking glass server",
     "organization": "Megaport",
-    "dateStart": "N/A",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://lg.megaport.com/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://lg.megaport.com/",
+            "type": "webpage"
+        }
+    ]
 }

@@ -5,9 +5,11 @@
     "organization": "OpenINTEL",
     "dateStart": "2016",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://www.openintel.nl/data-access/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://www.openintel.nl/data-access/",
+            "type": "webpage"
+        }
+    ]
 }

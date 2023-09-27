@@ -5,9 +5,11 @@
     "organization": "CitizenLabs & OONI",
     "dateStart": "2014-04",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://github.com/citizenlab/test-lists/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://github.com/citizenlab/test-lists/",
+            "type": "webpage"
+        }
+    ]
 }

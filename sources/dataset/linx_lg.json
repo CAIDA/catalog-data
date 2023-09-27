@@ -3,11 +3,12 @@
     "name": "LINX Route Server Looking Glass",
     "description": "Looking glass server",
     "organization": "LINX",
-    "dateStart": "N/A",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://alice-rs.linx.net/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://alice-rs.linx.net/",
+            "type": "webpage"
+        }
+    ]
 }

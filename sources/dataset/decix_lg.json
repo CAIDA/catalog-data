@@ -3,11 +3,12 @@
     "name": "DE-CIX Looking Glass",
     "description": "Looking glass server",
     "organization": "DE-CIX",
-    "dateStart": "N/A",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://lg.de-cix.net/",
-        "type": "webpage"
-    }
+    "access": [ 
+        {
+            "access": "public",
+            "url": "https://lg.de-cix.net/",
+            "type": "webpage"
+        }
+    ]
 }

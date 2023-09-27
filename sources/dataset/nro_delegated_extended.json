@@ -5,9 +5,11 @@
     "organization": "Number Resource Organization",
     "dateStart": "2019-10",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://www.nro.net/about/rirs/statistics/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://www.nro.net/about/rirs/statistics/",
+            "type": "webpage"
+        }
+    ]
 }

@@ -5,9 +5,11 @@
     "organization": "Internet Health Report",
     "dateStart": "2019-01",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://ihr.iijlab.net/ihr/en-us/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://ihr.iijlab.net/ihr/en-us/",
+            "type": "webpage"
+        }
+    ]
 }

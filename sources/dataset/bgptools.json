@@ -5,9 +5,11 @@
     "organization": "Port 179 Ltd",
     "dateStart": "2021-09",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://bgp.tools/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://bgp.tools/",
+            "type": "webpage"
+        }
+    ]
 }

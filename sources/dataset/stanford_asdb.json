@@ -5,9 +5,11 @@
     "organization": "Stanford Empirical Security Research Group",
     "dateStart": "2021-05",
     "status": "ongoing",
-    "access": {
-        "access": "public",
-        "url": "https://asdb.stanford.edu/",
-        "type": "webpage"
-    }
+    "access": [
+        {
+            "access": "public",
+            "url": "https://asdb.stanford.edu/",
+            "type": "webpage"
+        }
+    ]
 }
