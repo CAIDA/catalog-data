@@ -5,6 +5,12 @@
     "organization": "APNIC",
     "dateStart": "N/A",
     "status": "ongoing",
+    "links": [
+        {
+            "to": "dataset:internet_yellow_pages",
+            "label": "used by"
+        }
+    ],
     "access": {
         "access": "public",
         "url": "https://stats.labs.apnic.net/aspop/",

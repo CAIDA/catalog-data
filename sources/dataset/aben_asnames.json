@@ -5,6 +5,12 @@
     "organization": "RIPE NCC",
     "dateStart": "2022-06",
     "status": "ongoing",
+    "links": [
+        {
+            "to": "dataset:internet_yellow_pages",
+            "label": "used by"
+        }
+    ],
     "access": {
         "access": "public",
         "url": "https://github.com/emileaben/asnames",

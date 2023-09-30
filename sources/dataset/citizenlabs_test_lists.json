@@ -2,9 +2,15 @@
     "id": "citizenlabs_test_lists",
     "name": "CitizenLabs Test Lists",
     "description": "Lists of websites that might be targets of censorship, by country",
-    "organization": "CitizenLabs & OONI",
+    "organization": "CitizenLabs",
     "dateStart": "2014-04",
     "status": "ongoing",
+    "links": [
+        {
+            "to": "dataset:internet_yellow_pages",
+            "label": "used by"
+        }
+    ],
     "access": {
         "access": "public",
         "url": "https://github.com/citizenlab/test-lists/",

@@ -5,6 +5,12 @@
     "organization": "DistriNet",
     "dateStart": "2019-01",
     "status": "ongoing",
+    "links": [
+        {
+            "to": "dataset:internet_yellow_pages",
+            "label": "used by"
+        }
+    ],
     "access": {
         "access": "public",
         "url": "https://tranco-list.eu/",
