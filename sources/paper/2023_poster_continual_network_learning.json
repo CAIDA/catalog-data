@@ -1,0 +1,69 @@
+{
+    "id": "2023_poster_continual_network_learning",
+    "name": "Poster: Continual Network Learning",
+    "datePublished": "2023.09",
+    "publisher": "ACM SIGCOMM '23",
+    "description": "We make a case for in-network Continual Learning as a solution for seamless adaptation to evolving network conditions without forgetting past experiences. We propose implementing Active Learningbased selective data filtering in the data plane, allowing for dataefficient continual updates. We explore relevant challenges and propose future research directions.",
+    "tags": [
+        "routing",
+        "machine learning"
+    ],
+    "links": [
+        {
+            "label": "uses",
+            "to": "passive_2018_pcap"
+        },
+        {
+            "label": "uses",
+            "to": "passive_2019_pcap"
+        },
+        {
+            "label": "uses",
+            "to": "passive_merged_pcap"
+        }
+    ],
+    "authors": [
+        {
+            "person": "al_sadi__amir",
+            "organizations": [
+                "University of Bologna"
+            ]
+        },
+        {
+            "person": "grasselli__chiara",
+            "organizations": [
+                "University of Bologna"
+            ]
+        },
+        {
+            "person": "melis__andrea",
+            "organizations": [
+                "University of Bologna"
+            ]
+        },
+        {
+            "person": "di_cicco__nicola",
+            "organizations": [
+                "Polytechnic University of Milan"
+            ]
+        },
+        {
+            "person": "antichi__gianni",
+            "organizations": [
+                "Polytechnic University of Milan"
+            ]
+        },
+        {
+            "person": "tornatore__massimo",
+            "organizations": [
+                "Polytechnic University of Milan"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://dl.acm.org/doi/pdf/10.1145/3603269.3610855"
+        }
+    ]
+}
