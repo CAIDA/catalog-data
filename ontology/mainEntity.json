@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "caida:mainEntity",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Indicates main entity described by the table.",
+      "rdfs:label": "mainEntityOfPage",
+      "schema:domainIncludes": {
+        "@id": "csvw:tableSchema"
+      },
+      "schema:rangeIncludes": {
+          "@id": "caida:Entity"
+      }
+    }
+  ]
+}

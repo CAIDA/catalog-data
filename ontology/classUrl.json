@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "caida:classUrl",
+      "@type": "rdf:Property",
+      "rdfs:comment": "A URL to the Entity's class.",
+      "rdfs:label": "classUrl",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    }
+  ]
+}
