@@ -28,6 +28,8 @@ DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Categories\ used\ in\ Schema\ for\ CAIDA\
 ###### Ontology 
 ONTOLOGY_DIR=ontology
 
+###### Namespace 
+NAMESPACE_DIR=namespaces
 #########
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
@@ -88,6 +90,9 @@ data/pubdb_links.json:
 ##############################################################
 schema: 
 	python3 scripts/ontology-build.py ${ONTOLOGY_DIR}
+
+namespace: 
+	python3 scripts/namespace-build.py ${NAMESPACE_DIR}
 
 ##############################################################
 

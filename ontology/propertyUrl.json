@@ -9,7 +9,6 @@
     {
       "@id": "caida:propertyUrl",
       "@type": "rdf:Property",
-      "rdsf:label":"propertyUrl",
       "rdfs:comment": "A URL to a property.",
       "rdfs:label": "propertyUrl",
       "schema:domainIncludes": {

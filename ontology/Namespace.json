@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "schema:name",
+      "@type": "rdf:Property",
+      "owl:equivalentProperty": {
+        "@id": "dcterms:title"
+      },
+      "rdfs:comment": "The name of the item.",
+      "rdfs:label": "name",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:label"
+      },
+      "schema:domainIncludes": {
+        "@id": "caida:Namespace"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "schema:description",
+      "@type": "rdf:Property",
+      "owl:equivalentProperty": {
+        "@id": "dcterms:description"
+      },
+      "rdfs:comment": "A description of the Namespace.",
+      "rdfs:label": "description",
+      "schema:domainIncludes": {
+        "@id": "caida:Namespace"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "schema:URL",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Data type: URL.",
+      "rdfs:label": "URL",
+      "rdfs:subClassOf": {
+        "@id": "schema:Text"
+      },
+      "schema:domainIncludes": {
+        "@id": "caida:Namespace"
+      }
+    },
+    {
+      "@id": "caida:Namespace",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A group of columns that represent the same thing in a table.",
+      "rdfs:label": "Namespace",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "schema:isPartOf": {
+        "@id": "https://catalog.caida.org/onotology"
+      }
+    }
+  ]
+}
