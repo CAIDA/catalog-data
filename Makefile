@@ -32,7 +32,7 @@ ONTOLOGY_DIR=ontology
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
-run:clean_placeholders pubdb external caida summary build suggestions
+run:clean_placeholders pubdb external caida summary build suggestions schema
 
 fast:
 	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run

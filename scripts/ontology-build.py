@@ -79,7 +79,9 @@ def main():
             
             for c in classes: 
                 if re_caida.search(c["@id"]): 
-                    class_add_property(obj["filename"], c["@id"], node)
+                    class_add_property(obj["filename"], c["@id"][6:], node)
+
+    ontology_id_object = ontology_id_object_build()
 
     #######################
     # printing errors
@@ -94,8 +96,63 @@ def main():
         indent = 4
     else:
         indent = None
+
     print ("writing",id_object_file)
-    json.dump(id_object, open(id_object_file,"w"),indent=indent)
+    json.dump(ontology_id_object, open(id_object_file,"w"),indent=indent)
+
+def ontology_id_object_build():
+    i_o = {} 
+    for i, obj in id_object.items(): 
+        node = obj["@graph"][-1]
+        context = {} 
+        for key,url in obj["@context"].items():
+            context[key] = url
+
+        i_o[i] = object_build(context, node, obj, obj["@graph"])
+    return i_o
+
+def object_build(context, node, encoded=None, graph=None):
+    key,id_ = node["@id"].split(":")
+    url = context[key]+id_
+
+    o = {
+        "id":node["@id"],
+        "__typename":node["@type"].split(":")[1],
+        "name":node["rdfs:label"],
+        "comment":node["rdfs:comment"],
+        "url":url
+    }
+
+    if o["__typename"] == "Property":
+        for key in ["schema:domainIncludes", "schema:rangeIncludes"]:
+            to = key.split(":")[1]
+            classes = node[key]
+            if type(classes) == dict: 
+                classes = [classes]
+
+            class_urls = []
+            for c in classes:
+                key,name = c["@id"].split(":")
+                if key in context:
+                    class_urls.append({
+                        "id":c["@id"],
+                        "name":name,
+                        "url":context[key]+name
+                    })
+                else:
+                    utils.error_add(obj["filename"], f"Failed to context {key}")
+            o[to] = class_urls
+    elif graph is not None:
+        props = []
+        for prop in graph[:-1]:
+           props.append(object_build(context, prop))
+        o["properties"] = props
+
+    if encoded is not None:
+        o["json"] = encoded
+
+    return o
+
 
 
 def file_load (id_,fname):
@@ -104,7 +161,7 @@ def file_load (id_,fname):
         try:
             info = json.load(fin)
             info["filename"] = fname
-            id_object["caida:"+id_] = info
+            id_object[id_] = info
         except Exception as e:
             print (f"\nERROR: {fname}")
             print ("    ",e)

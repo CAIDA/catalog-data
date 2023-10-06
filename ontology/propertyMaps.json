@@ -10,6 +10,7 @@
     {
       "@id": "caida:propertyMaps",
       "@type": "rdf:Property",
+      "rdsf:label":"propertyMaps",
       "rdfs:comment": "Property maps between class and properties.",
       "rdfs:label": "propertyMaps",
       "schema:domainIncludes": {

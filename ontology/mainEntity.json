@@ -10,10 +10,11 @@
     {
       "@id": "caida:mainEntity",
       "@type": "rdf:Property",
+      "rdfs:label": "mainEntity",
       "rdfs:comment": "Indicates main entity described by the table.",
       "rdfs:label": "mainEntityOfPage",
       "schema:domainIncludes": {
-        "@id": "csvw:tableSchema"
+        "@id": "csvw:TableSchema"
       },
       "schema:rangeIncludes": {
           "@id": "caida:Entity"

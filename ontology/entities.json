@@ -11,9 +11,10 @@
     {
       "@id": "caida:entities",
       "@type": "rdf:Property",
+      "rdfs:label": "entities",
       "rdfs:comment": "Entities contained in the table.",
       "schema:domainIncludes": {
-        "@id": "csvw:tableSchema"
+        "@id": "csvw:TableSchema"
       },
       "schema:rangeIncludes": {
         "@id": "caida:Entity"

@@ -9,6 +9,7 @@
     {
       "@id": "caida:namespaceUrl",
       "@type": "rdf:Property",
+      "rdfs:label":"namespaceUrl",
       "rdfs:comment": "A URL to the PropertyMap's namespace.",
       "rdfs:label": "namespaceUrl",
       "schema:domainIncludes": {
