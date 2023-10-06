@@ -1,6 +1,11 @@
 ~~~metadata
 {
-    "@id":"AsnNumberNamespace",
+    "@context":{
+        "caida":"https://catalog.caida.org/ontology/",
+        "schema":"https://schema.org"
+    },
+    "@type":"caida:Namespace",
+    "@id":"caida:AsnNumberNamespace",
     "schema:name":"ASN Number Namespace",
     "schema:URL":"https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
 }

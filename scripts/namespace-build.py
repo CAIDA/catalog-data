@@ -71,13 +71,15 @@ def main():
             path = f"{directory}/{fname}"
             print ("loading",path)
             obj = utils.parse_markdown(path)
-            id_object[obj["@id"]] = {
-                "id":obj["@id"],
-                "name":obj["schema:name"],
-                "description":obj["schema:description"],
-                "url":obj["schema:URL"],
-                "json":obj
-                }
+            if obj is not None:
+                id_object[obj["@id"]] = {
+                    "id":obj["@id"],
+                    "__typename":"Namespace",
+                    "name":obj["schema:name"],
+                    "description":obj["schema:description"],
+                    "url":obj["schema:URL"],
+                    "json":obj
+                    }
 
     #######################
     # printing errors
