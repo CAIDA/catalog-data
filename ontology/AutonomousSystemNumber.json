@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "schema:name",
+      "@type": "rdf:Property",
+      "owl:equivalentProperty": {
+        "@id": "dcterms:title"
+      },
+      "rdfs:comment": "The ASN's name.",
+      "rdfs:label": "name",
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:label"
+      },
+      "schema:domainIncludes": { 
+        "@id": "caida:autonomoussystemNumber"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:AutonomousSystemNumber",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An Autonomous System (AS) is a set of Internet routable IP prefixes belonging to a network or a collection of networks that are all managed, controlled and supervised by a single entity or organization.",
+      "rdfs:label": "Entity",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "schema:isPartOf": {
+        "@id": "https://catalog.caida.org/onotology"
+      }
+    }
+  ]
+}
