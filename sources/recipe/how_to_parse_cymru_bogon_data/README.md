@@ -96,3 +96,7 @@ def bogon_check_ip(ips, bogondb):
 ### What is pyasn?
 - pyasn is a package that allows for very quick lookups of addresses
 - We've made a temporary file that allows us to quickly look up whether an IP address is within a bogon prefix
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

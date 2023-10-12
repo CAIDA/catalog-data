@@ -1,0 +1,55 @@
+{
+    "id":"internet_yellow_pages",
+    "name":"Internet Yellow Pages",
+    "description":"Graph database of Internet resources combining data from multiple sources",
+    "organization": "Internet Health Report",
+    "tags": [
+        "topology",
+        "asn",
+        "peeringdb",
+        "asrank",
+        "ripe"
+    ],
+    "dateStart": "2022",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://iyp.iijlab.net/index.html",
+            "type": "webpage"
+        }
+    ],
+    "resources": [
+        {
+            "name": "Presentation",
+            "url": "https://ripe86.ripe.net/archives/video/1073/"
+        }
+    ],
+    "links": [
+        "dataset:as_rank",
+        "dataset:aben_as_names",
+        "dataset:amsix_lg",
+        "dataset:apnic_eyeball",
+        "dataset:bgpkit",
+        "dataset:bgptools",
+        "dataset:cisco_umbrella_top_1m",
+        "dataset:citizenlabs_test_lists",
+        "dataset:cloudflare_radar",
+        "dataset:decix_lg",
+        "dataset:inetintel_as_org",
+        "dataset:internet_health_report",
+        "dataset:linx_lg",
+        "dataset:manrs_net_op_participants",
+        "dataset:megaport_lg",
+        "dataset:nro_delegated_extended",
+        "dataset:openintel_active_dns",
+        "dataset:pch_routing_data",
+        "dataset:peeringdb",
+        "dataset:ripe_as_names",
+        "dataset:ripe_atlas",
+        "dataset:ripe_rpki_repo",
+        "dataset:stanford_asdb",
+        "dataset:tranco_top_1m",
+        "dataset:whowas"
+    ]
+}

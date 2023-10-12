@@ -2,7 +2,7 @@
     "id": "mopeye",
     "name": "MopEye",
     "dateStart": "2016-05-16",
-    "dateEnd": "2018-07-08",    
+    "dateEnd": "2018-07-08",
     "links": [
         {
             "to": "paper:2019_empirical_study_mobile_network_behavior",
@@ -12,7 +12,8 @@
     "access": [
         {
             "access": "public",
-            "url": "https://github.com/VPRLab/mopeyeDataset"
+            "url": "https://github.com/VPRLab/mopeyeDataset",
+            "type": "direct download"
         }
     ]
 }

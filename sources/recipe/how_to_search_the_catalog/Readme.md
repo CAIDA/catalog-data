@@ -34,7 +34,7 @@ A search query can be generated from a search string by splitting the string int
 | token type | objects it searches for | examples |
 |------|------------|---------|
 | **key=value(s)** | one or more values in the key  | `types=paper` <br> `types=dataset,recipe` | 
-| **id** , !**id**      `(type):(shortName)`  | related objects of a given id | `dataset:as_rank_online` <br> `!tag:asn` | 
+| **id**   `(type):(shortName)`  | returns a given id | `dataset:as_rank_online` | 
 | **word** , !**word**     | general word or phrase  | `topology` <br> `!ipv4` |
 
     
@@ -49,8 +49,9 @@ A search query can be generated from a search string by splitting the string int
      |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03` |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
+     | status | comma separated list of status types (`complete`,`ongoing`) | 
      | links | comma separated list of object ids or strings <br> `links=paper:2021_wie2020_report,telescope` <br>This searches by neighbor.  Matches are neighbors of the id's object or objects with the string in a field.<br> In this example, it would search for all objects that are related to the 2021 Wie Report OR matches the string "telescope" anywhere in the object.|
-     | categories | command seperated list of category id or id_shorts. (internet.ip , ip, asn) | 
+     | fields | will match if the object has the field (doi) | 
 
 - **id** 
 
@@ -81,20 +82,21 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 |  search string | explanation | 
 |----------------|-------------|
 | [links=tag:asn](https://catalog.caida.org/search?query=links=tag:asn) | search for objects that have the tag `asn`|
-| [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida) | search for objects that do not have the tag `caida`|
-| [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and ark |
-| [links=bgpstream](https://catalog.caida.org/search?query=links=bgpstream) | search for objects with the word `bgpstream`  | 
+| [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida) | search for objects that **do not** have the tag `caida`|
+| [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and have the word `ark` |
+| [bgpstream](https://catalog.caida.org/search?query=bgpstream) | search for objects with the word `bgpstream`  | 
 | [categories=ip.packet](https://catalog.caida.org/search?query=categories%3Dip.packet) | search for objects with the category `ip.packet` | 
-| [links=ipv4 !ipv6](https://catalog.caida.org/search?query=links=ipv4%20!ipv6) | search for objects that match `ipv4` but do not match the word `ipv6` |
+| [links=tag:ipv4 !ipv6](https://catalog.caida.org/search?query=links%3Dtag%3Aipv4%20!links%3Dtag%3Aipv6) | search for objects that have the `ipv4` tag but do not match the word `ipv6` |
 | [!links=dataset:as\_relationships\_serial_1 rank](https://catalog.caida.org/search?query=!links=dataset:as_relationships_serial_1%20rank) | it searches for search for objects with the word `rank` that are not linked to dataset:as_relationships_serial_1 | 
-| [types=dataset topology](https://catalog.caida.org/search?query=types=dataset%20topology) | search for datasets with the word `topology` in a text field |
+| [types=dataset topology](https://catalog.caida.org/search?query=types=dataset%20topology) | search for **datasets** with the word `topology` in a text field |
 | [types=dataset topology ark](https://catalog.caida.org/search?query=types=dataset%20topology%20ark) | search for datasets with the word `topology` and `ark` |
 | [types=dataset,recipe links=tag:topology !ark](https://catalog.caida.org/search?query=types=dataset,recipe%20links=tag:topology%20!ark) | search for datasets or recipes with the tag `topology` without the word `ark` | 
-| [types=dataset access=public](https://catalog.caida.org/search?query=types=dataset%20access=public) | search for datasets that are marked as public access |
+| [types=dataset access=public](https://catalog.caida.org/search?query=types=dataset%20access=public) | search for datasets that have a public access |
+| [types=dataset status=ongoing](https://catalog.caida.org/search?query=types=dataset%20status=ongoing) | search for datasets that have the status `ongoing` |
 | [types=paper routing](https://catalog.caida.org/search?query=types=paper%20routing) | search for papers with the word `routing` |
 | [types=paper links=tag:best_paper](https://catalog.caida.org/search?query=types=paper%20links=tag:best_paper) | search for papers with the tag `best paper` |
-| [types=paper routing !tag:caida](https://catalog.caida.org/search?query=types=paper%20routing%20!tag:caida) | search for papers with the word `routing` without the tag `caida`|
-| [types=paper routing !tag:caida dates=2020,2021](https://catalog.caida.org/search?query=types=paper%20routing%20!tag:caida%20dates=2020,2021) | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
+| [types=paper routing !links=tag:caida](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida) | search for papers with the word `routing` without the tag `caida`|
+| [types=paper routing !links=tag:caida dates=2020,2021](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida%20dates=2020,2021) | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
 | [types=paper persons=claffy](https://catalog.caida.org/search?query=types=paper%20persons=claffy) | search for papers authored by people with `claffy` in their name |
 | [ids=paper:2021\_wie2020\_report](https://catalog.caida.org/search?query=ids=paper:2021_wie2020_report) | search for the object with the id `paper:2021_wie2020_report` |
 | [persons=claffy](https://catalog.caida.org/search?query=persons=claffy) | search for objects associated with people with `claffy` in their name |
@@ -105,3 +107,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [links=collection:ucsd\_telescope\_datasets iot](https://catalog.caida.org/search?query=links=collection:ucsd_telescope_datasets%20iot) |  search for all papers that used telescope data to study IoT security |
 | [software:bgpstream](https://catalog.caida.org/search?query=software:bgpstream) | search for the object with id `software:bgpstream`|
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

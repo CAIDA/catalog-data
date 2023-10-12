@@ -39,12 +39,11 @@
     "access": [
         {
             "url": "https://howfaster.net",
-            "tags": [
-                "web"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "web"
         }
     ],
     "licenses": [],
-    "organization": "Cyber-Complex Foundation"
+    "organization": "Cyber-Complex Foundation",
+    "status": "supported"
 }

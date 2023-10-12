@@ -133,6 +133,7 @@ id_id_link_file = "id_id_link.json"
 word_id_score_file = "word_id_score.json"
 id_words_file = "id_words.json"
 access_word_id_file = "access_word_id.json"
+status_word_id_file = "status_word_id.json"
 organization_ids_file = "organization_ids.json"
 personName_ids_file = "personName_ids.json"
 type_ids_file = "type_ids.json"
@@ -390,12 +391,17 @@ def main():
         print ("adding redirects:",args.redirects_file)
         redirects_add(args.redirects_file)
 
-    #######################
-    # duplicate slide resources
-    #######################
-    print ("duplicating slides into paper access")
-    duplicate_slides_in_access()
+    ########################
+    ## duplicate slide resources
+    ########################
+    #print ("duplicating slides into paper access")
+    #duplicate_slides_in_access()
 
+    #######################
+    # Match up Papers with exact name media and presentation that match 
+    #######################
+    print ("Matching up Papers with media/presentations with the same name")
+    papers_access_add_same_name()
 
     #######################
     # pubdb links
@@ -417,11 +423,20 @@ def main():
                 if id_object[i]["__typename"] != "Tag":
                     num_links += 1
         id_object[id]["num_links_not_tag"] = num_links
+    
+    ######################
+    # Load date info into id_object 
+    ######################
+    print ("Adding dataset date info")
+    data_load_from_summary(args.summary_file)
+    # Class copies categories to classes
+    class_copy_from_category_keys(id_object.values())
 
     ######################
-    # Parse out the access words 
+    # Parse out the access words and status of datasets
     ######################
     access_word_ids = {}
+    status_word_ids = {}
     for obj in id_object.values():
         if "access" in obj:
             for access in obj["access"]:
@@ -432,6 +447,13 @@ def main():
                 if word not in access_word_ids:
                     access_word_ids[word] = []
                 access_word_ids[word].append(obj["id"])
+        if "status" in obj:
+            curr_status = obj["status"]
+            if curr_status not in status_word_ids:
+                status_word_ids[curr_status] = []
+            status_word_ids[curr_status].append(obj["id"])
+            
+                
 
     ######################
     # Load data schema for categories from file
@@ -511,13 +533,6 @@ def main():
             type_ids[t] = []
         type_ids[t].append(obj["id"])
 
-    ######################
-    # Load date info into id_object 
-    ######################
-    print ("Adding dataset date info")
-    data_load_from_summary(args.summary_file)
-    # Class copies categories to classes
-    class_copy_from_category_keys(id_object.values())
 
     ######################
     # Create a word_id
@@ -541,6 +556,16 @@ def main():
                     if key in obj and obj[key] not in valid_values:
                         utils.error_add(obj["filename"], f"{obj['id']}'s {key}'s \"{obj[key]}\" not in {', '.join(valid_values)}")
                         del obj[key]
+    #######################
+    # copy out doi && pull out access tag to access type
+    #######################
+    print ("Pulling DOIs out of access && pull out access tag to access type")
+    count_access_no_tags = 0
+    for obj in id_object.values():
+        doi_set(obj)
+        count_access_no_tags += access_type_from_tag_set(obj)
+    if count_access_no_tags > 0:
+        utils.error_add("", '%s Objects that are missing a tags and type; please add a type to each access object.' % count_access_no_tags)
 
     #######################
     # printing errors
@@ -575,6 +600,9 @@ def main():
     
     print ("writing",access_word_id_file)
     json.dump(access_word_ids, open(access_word_id_file,"w"),indent=indent)
+
+    print ("writing",status_word_id_file)
+    json.dump(status_word_ids, open(status_word_id_file,"w"),indent=indent)
 
     print ("writing",category_id_score_file)
     json.dump(category_id_score, open(category_id_score_file,"w"),indent=indent)
@@ -681,7 +709,7 @@ def object_date_add(obj):
                     break
             if obj["date"] is None:
                 if "deprecated" not in obj:
-                    utils.error_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
+                    utils.warning_add(obj["filename"], "missing " + ", ".join(type_key[type_]) + ", please add " + ", ".join(type_key[type_]))
     
 
     #for dst,src in [["dateCreated","dateObjectCreated"], ["dateLastModified","dateObjectModified"]]:
@@ -853,7 +881,7 @@ def object_finish(obj):
     for key in ["authors", "presenters"]:
         if key in obj:
             for person_org in obj[key]:
-                if "organizatoins" in person_org:
+                if "organizations" in person_org:
                     for org in person_org["organizations"]:
                         organization_ids_add(org, obj["id"])
                         if re_caida.search(org) or re_caida_long.search(org):
@@ -889,6 +917,8 @@ def object_finish(obj):
                     if o is not None:
                         tag = obj["tags"][i] = o["id"]
                         link_add(obj,tag)
+                    else:
+                        utils.error_add(obj["filename"],"No object for access tag")
         elif key == "resources":
             for resource in value:
                 if "name" not in resource:
@@ -1102,7 +1132,7 @@ def link_add(obj,link,p=False):
             a = [link]
         else:
             if k in link:
-                a.append(link[k]);
+                a.append(link[k])
     
     if type(link) == str:
         id_original = link
@@ -1749,6 +1779,7 @@ def key_check_properties(filename, source, key, properties):
 
 ###################
 # Duplicate slide resources in access
+# Currently UNUSED
 ###################
 def duplicate_slides_in_access():
     objs = []
@@ -2048,5 +2079,113 @@ def class_copy_from_category_keys(objects):
                         "shortName":key["id_short"],
                     }
                 })
+
+# The goal is to have a "good" doi at the end of the code.
+def doi_set(obj):
+    # If doi is not set, but there is a doi link in resources,
+    # set doi to that link 
+    if ("doi" not in obj or obj["doi"] is None) and "resources" in obj:
+        index = None
+        for i,info in enumerate(obj["resources"]):
+            if "name" in info and info["name"].lower() == "doi":
+                index = i
+                break
+        if index is not None:
+            obj["doi"] = obj["resources"][index]["url"]
+            del obj["resources"][index]
+            if len(obj["resources"]) < 1:
+                del obj["resources"]
+
+    # If there is a doi set, fix it to the doi.org format
+    if ("doi" in obj):
+        obj["doi"] = obj["doi"].strip()
+        doi_norm = "https://doi.org/"
+        # drop "dx" from domain
+        if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+        # normalize alphanumeric forms to full URL
+        elif ("doi:" in obj["doi"]):
+            obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+        # determine if only the doi number is provided
+        elif (obj["doi"][:3] == "10."):
+            obj["doi"] = doi_norm + obj["doi"]
+        # normalize empty string DOIs to null
+        elif (obj["doi"] == ""):
+            obj["doi"] = None
+        elif (doi_norm not in obj["doi"]):
+            utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
+
+## Helper function pulls out first access tag and creates access type
+def access_type_from_tag_set(obj):
+    curr_id = obj["id"]
+    count = 0
+    if "access" not in obj:
+        return count
+    else:
+        # for each access in an object
+        for curr_access in obj["access"]:
+            # ignore if no tags
+            if "tags" not in curr_access or "type" in curr_access:
+                if "tags" not in curr_access and "type" not in curr_access:
+                    utils.error_add(obj['filename'], "access does not have tags or type")
+                    count += 1
+                continue
+                
+            else:
+                new_type = curr_access["tags"][0]
+                if len(new_type.split(':')) != 2:
+                    utils.error_add(obj['filename'], "access tag is not in correct format tag:<tag>")
+                else:
+                    # remove the "tag:" from the tag
+                    curr_access["type"] = curr_access["tags"][0].split(':')[1].replace("_", " ")
+                    # remove the first tag from tags field
+                    if len(curr_access["tags"]) == 1:
+                        # print("deleting", curr_access)
+                        del curr_access["tags"]
+                    else:
+                        curr_access["tags"] = curr_access["tags"][1:]
+        return count
+        
+
+def papers_access_add_same_name():
+    # add the tags video and slide (with test filename)
+    for tag in ["tag:video", "tag:slides"]:
+        if tag not in id_object:
+            object_add("Tag", {
+                "id":tag,
+                "name":tag[4:],
+                "filename": "test"
+            })
+    for obj in id_object.values():
+        i = obj["id"]
+        if obj["__typename"] == "Paper":
+            # check if the current obj is linked to anything 
+            if i in id_id_link:
+                for j in id_id_link[i].keys():
+                    # get the linked object
+                    o_j = id_object[j]
+                    # get the type of the linked object
+                    t = o_j["__typename"]
+                    if t == "Media" or t == "Presentation":
+                        if t == "media":
+                            tag = "tag:video"
+                            access_type = "video"
+                        else:
+                            tag = "tag:slides"
+                            access_type = "slides"
+                        if obj["name"].lower() == o_j["name"].lower():
+                            if "access" in o_j:
+                                for access in o_j["access"]:
+                                    if "url" in access:
+                                        if "access" not in obj:
+                                            obj["access"] = []
+                                        obj["access"].append({
+                                            "url":access["url"],
+                                            "access":access["access"],
+                                            # "tags": [tag],
+                                            "type": access_type
+                                            })
+                                        break
+
 
 main()

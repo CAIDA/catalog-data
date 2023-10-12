@@ -142,3 +142,7 @@ def get_sqlite_single_object(filename, type, target_id):
 - More information click [here](https://docs.python.org/3/library/sqlite3.html)
 
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

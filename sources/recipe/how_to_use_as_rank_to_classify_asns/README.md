@@ -5,7 +5,7 @@
     "id" : "how_to_use_as_rank_to_classify_asns",
     "visibility" : "public",
     "name" : "How to use AS Rank to classify asns",
-    "description" : "Using the AS Rank API, classify asns into three catagories: tansit free, middle, edge",
+    "description" : "Using the AS Rank API, classify asns into three catagories: transit free, middle, edge",
     "links": [{"to":"dataset:as_relationships_serial_1"},{"to":"dataset:as_rank"}],
     "tags" : [
         "ASN",
@@ -179,3 +179,7 @@ as0 as1 rel
     "asn2" : { "asn":"asn2", "class":"edge" }
 }
 ~~~
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

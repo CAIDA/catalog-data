@@ -7,22 +7,22 @@
         "ipv4",
         "iana"
     ],
-    "dateStart":"1997-11",
-    "status":"ongoing",
+    "dateStart": "1997-11",
+    "status": "ongoing",
     "access": [
         {
             "name": "ipv4",
             "url": "https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.csv",
             "tags": [
-                "file",
                 "ipv4",
                 "csv",
                 "iana"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         }
     ],
-        "links": [
+    "links": [
         {
             "to": "dataset:iana_asn_allocations"
         },
@@ -31,4 +31,3 @@
         }
     ]
 }
-

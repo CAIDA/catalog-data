@@ -75,7 +75,7 @@ The following script returns a dictionary `asn_info` that maps an ASN id to othe
 
     {'12285': {`asn`: '12285', `changed`: ' ', `asn_name`: ' ', `org_id`: ' ', `source`: '', `org_name`: ' ', `country`: ' ' }
 
- ~~~python
+~~~python
 import re
 import sys
 
@@ -126,9 +126,29 @@ with open(filename) as f:
 # Contains the asn mapping to other field values in this format:
 # {'12285': {'asn': '12285', 'changed': '20011231', 'asn_name': 'ONE-ELEVEN', 
 # 'org_id': '111S-ARIN', 'source': 'ARIN', 'org_name': 'One Eleven Internet Services', 'country': 'US' }
-# print(asn_info)       
-            
+# print(asn_info)              
 ~~~
+
+### An Alternative solution using pandas
+
+~~~python
+from datetime import datetime
+import gzip
+import os
+import pandas as pd
+import sys
+filename = "20230401.as-org2info.txt.gz"
+date = datetime.strptime(filename, '%Y%m%d.as-org2info.txt.gz')
+with gzip.open(filename, "r") as fin:
+    content = fin.readlines()
+    index_org = [x for x in range(len(content)) if "# format:org_id|changed|org_name|country|source" in str(content[x])][0]
+    index_asn = [x for x in range(len(content)) if "# format:aut|changed|aut_name|org_id|opaque_id|source" in str(content[x])][0]
+print(index_org, index_asn, index_asn - index_org - 2)
+org_df = pd.read_csv(filename, delimiter="|", skiprows=index_org, nrows=index_asn - index_org - 2).rename(columns={"# format:org_id": "org_id"})[["org_id", "org_name", "country", "source"]]
+asn_df = pd.read_csv(filename, delimiter="|", skiprows=index_asn).rename(columns={"# format:aut": "asn", "aut_name": "asn_name"})[["asn", "asn_name", "org_id"]]
+asn_df.merge(org_df, on="org_id").to_csv(str(date.date())+'_org2info.csv', index=False)
+~~~
+
 ### Background 
 
 - **What is an AS?**
@@ -153,3 +173,7 @@ with open(filename) as f:
 For Multi-National Corporations, or MNCs, (where multiple ASNs for the same organization are located in the same country or close neighboring countries) this ASN to country mapping would be an **oversimplification**, as the `country` would represent the ASN's headquarters but not the physical infrastructure. 
 In other words, the MNC ASN's will map back to the country where the headquarters are located, but not countries where all possible physical infrastucture is located. 
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

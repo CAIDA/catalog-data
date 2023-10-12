@@ -7,7 +7,7 @@
     "links": [
         "software:pyasn",
         "software:scamper",
-        "to": "dataset:ark_ipv6_routed48"
+        "dataset:ark_ipv6_routed48"
     ],
     "tags": [
         "measurement methodology",
@@ -176,3 +176,7 @@ Detailed installation instructions and more information on Usage and IPASN data 
 
 ## Caveats
 • **Multi-origin AS**: A multi-origin AS occurs when a given BGP prefix is announced by more than one AS. These multi-origin AS are dropped when creating the pyasn object i.e this script ignores multi-origin AS. 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

@@ -7,7 +7,7 @@
       "to": "software:pyipmeta"
     },
     {
-      "to": "dataset:routeviews_ipv4_prefix2as"
+      "to": "dataset:routeviews_prefix2as"
     }
   ],
   "id": "map_ipv4_address_to_asn",
@@ -149,3 +149,7 @@ For example, `ipm.lookup('192.172.226.97')` returns:
 
 - This object can then be parsed to map between IP addresses and origin asns. 
 
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

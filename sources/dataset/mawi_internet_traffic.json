@@ -1,16 +1,14 @@
 {
     "id": "mawi_internet_traffic",
     "name": "MAWI Internet Traffic",
-    "dateStart":"1999",
+    "dateStart": "1999",
     "status": "ongoing",
-    "organization":"WIDE",
+    "organization": "WIDE",
     "access": [
         {
             "url": "https://mawi.wide.ad.jp/mawi/",
-            "tags": [
-                "file"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         }
     ],
     "links": [

@@ -1,0 +1,14 @@
+{
+    "id": "ripe_as_names",
+    "name": "RIPE NCC AS Names",
+    "description": "List of ASes and associated names",
+    "organization": "RIPE NCC",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://ftp.ripe.net/ripe/asnames/",
+            "type": "webpage"
+        }
+    ]
+}

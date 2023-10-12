@@ -1,0 +1,14 @@
+{
+    "id": "linx_lg",
+    "name": "LINX Route Server Looking Glass",
+    "description": "LINX's looking glass servers",
+    "organization": "LINX",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://alice-rs.linx.net/",
+            "type": "webpage"
+        }
+    ]
+}

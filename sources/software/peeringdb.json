@@ -1,7 +1,7 @@
 {
     "id": "peeringdb",
     "name": "PeeringDB",
-    "dateCreated":"2010-07",
+    "dateCreated": "2010-07",
     "description": "PeeringDB is a freely available, user-maintained, database of networks, and the go-to location for interconnection data. The database facilitates the global interconnection of networks at Internet Exchange Points (IXPs), data centers, and other interconnection facilities, and is the first stop in making interconnection decisions.<br>The database is a non-profit, community-driven initiative run and promoted by volunteers. It is a public tool for the growth and good of the Internet. Join the community and support the continued development of the Internet.",
     "links": [
         {
@@ -16,10 +16,9 @@
     "access": [
         {
             "url": "https://www.peeringdb.com/apidocs/",
-            "tags": [
-                "UI"
-            ],
-            "access": "public"
+            "access": "public",
+            "type": "UI"
         }
-    ]
+    ],
+    "status": "supported"
 }

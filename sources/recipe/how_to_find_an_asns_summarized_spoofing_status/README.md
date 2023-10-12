@@ -41,3 +41,7 @@ The Spoofer Project seeks to understand the Internet's vulnerability to differen
 ### Where can I learn more?
 
 FAQ:  https://www.caida.org/projects/spoofer/faq
+
+
+Copyright (c) 2020 The Regents of the University of California
+All Rights Reserved

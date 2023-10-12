@@ -23,22 +23,22 @@
             "name": "Public - Main mirror",
             "url": "https://open.data.howfaster.net/",
             "tags": [
-                "file",
                 "csv",
                 "json"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         },
         {
             "name": "Public - Additional mirror",
             "url": "https://ftp.osuosl.org/pub/cybercomplex/howfaster/",
             "tags": [
-                "file",
                 "ftp",
                 "csv",
                 "json"
             ],
-            "access": "public"
+            "access": "public",
+            "type": "file"
         }
     ],
     "description": "Open.Data HowFaster.NET resources consist of multiple datasets with different levels of abstraction. The data is about routing on the Internet. The data are the result of the iThena project (BOINC platform).",
@@ -50,6 +50,6 @@
         {
             "to": "software:howfaster_net",
             "label": "used by"
-        }]
+        }
+    ]
 }
-

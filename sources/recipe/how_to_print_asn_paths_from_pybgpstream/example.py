@@ -1,3 +1,6 @@
+# Copyright (c) 2020 The Regents of the University of California
+# All Rights Reserved
+
 #!/usr/bin/env python3
 
 #import the low level _pybgpsteam library and other necessary libraries
@@ -47,6 +50,7 @@ for record in stream.records():
                         print(f"Peer asn: {elem.peer_asn} AS Path: {as_path} "
                                 f"Communities: {elem.fields['communities']} "
                                 f"Timestamp: {rec_time}")
+                        break
 
         # Reports and skips all KeyError
         except KeyError as e:

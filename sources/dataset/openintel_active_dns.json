@@ -1,0 +1,15 @@
+{
+    "id": "openintel_active_dns",
+    "name": "OpenINTEL Active DNS Measurements",
+    "description": "Collection of DNS records for websites in top 1M lists",
+    "organization": "OpenINTEL",
+    "dateStart": "2016",
+    "status": "ongoing",
+    "access": [
+        {
+            "access": "public",
+            "url": "https://www.openintel.nl/data-access/",
+            "type": "webpage"
+        }
+    ]
+}
