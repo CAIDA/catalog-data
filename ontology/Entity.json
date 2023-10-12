@@ -12,16 +12,8 @@
     {
       "@id": "schema:name",
       "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:title"
-      },
-      "rdfs:comment": "The name of the item.",
-      "rdfs:label": "name",
-      "rdfs:subPropertyOf": {
-        "@id": "rdfs:label"
-      },
       "schema:domainIncludes": {
-        "@id": "schema:Thing"
+        "@id": "caida:Entity"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -30,16 +22,61 @@
     {
       "@id": "schema:description",
       "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:description"
-      },
-      "rdfs:comment": "A description of the Entity.",
-      "rdfs:label": "description",
       "schema:domainIncludes": {
         "@id": "caida:Entity"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:propertyMaps",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:propertyMap"
+      }
+    },
+    {
+      "@id": "schema:url",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "caida:columnReferences",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "csvw:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:mainEntity",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "csvw:TableSchema"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Entity"
+      }
+    },
+    {
+      "@id": "caida:entities",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "csvw:TableSchema"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Entity"
       }
     },
     {

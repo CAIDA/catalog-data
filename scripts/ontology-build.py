@@ -63,23 +63,20 @@ id_object = {}
 re_caida = re.compile("caida:")
 re_json = re.compile(".json$")
 
+context = {}
+
 def main():
     directory = args.directory[0]
     for fname in sorted(os.listdir(directory)):
         if re_json.search(fname): 
             path = f"{directory}/{fname}"
-            file_load(os.path.splitext(fname)[0], path)
+            file_load(path)
 
     for obj in id_object.values():
-        node = obj["@graph"][-1]
-        if node["@type"] == 'rdf:Property':
-            classes = node["schema:domainIncludes"]
-            if type(classes) != list: 
-                classes = [ classes ]
-            
-            for c in classes: 
-                if re_caida.search(c["@id"]): 
-                    class_add_property(obj["filename"], c["@id"][6:], node)
+        if "@graph" in obj: 
+            for prop in obj["@graph"][:-1]:
+                if prop["@type"] == "rdf:Property":
+                    property_add_classes(obj["filename"], prop)
 
     ontology_id_object = ontology_id_object_build()
 
@@ -103,28 +100,41 @@ def main():
 def ontology_id_object_build():
     i_o = {} 
     for i, obj in id_object.items(): 
-        node = obj["@graph"][-1]
+        if "@graph" in obj:
+            node = obj["@graph"][-1]
+        else:
+            node = obj
         context = {} 
         for key,url in obj["@context"].items():
             context[key] = url
 
-        i_o[i] = object_build(context, node, obj, obj["@graph"])
+        i_o[i] = object_build(obj["filename"], context, node, obj, obj["@graph"])
     return i_o
 
-def object_build(context, node, encoded=None, graph=None):
+def object_build(filename, context, node, encoded=None, graph=None):
     key,id_ = node["@id"].split(":")
     url = context[key]+id_
 
     o = {
         "id":node["@id"],
         "__typename":node["@type"].split(":")[1],
-        "name":node["rdfs:label"],
-        "comment":node["rdfs:comment"],
         "url":url
     }
 
+    if "@label" in node:
+        o["name"] = node["@label"]
+    else:
+        o["name"] = node["@id"].split(":")[1]
+
+    if "rdfs:comment" in node:
+        o["description"] = node["rdfs:comment"]
+
+
     if o["__typename"] == "Property":
         for key in ["schema:domainIncludes", "schema:rangeIncludes"]:
+            if key not in o:
+                continue 
+
             to = key.split(":")[1]
             classes = node[key]
             if type(classes) == dict: 
@@ -140,12 +150,12 @@ def object_build(context, node, encoded=None, graph=None):
                         "url":context[key]+name
                     })
                 else:
-                    utils.error_add(obj["filename"], f"Failed to context {key}")
+                    utils.error_add(filename, f"Failed to context {key}")
             o[to] = class_urls
     elif graph is not None:
         props = []
         for prop in graph[:-1]:
-           props.append(object_build(context, prop))
+           props.append(object_build(filename, context, prop))
         o["properties"] = props
 
     if encoded is not None:
@@ -155,26 +165,44 @@ def object_build(context, node, encoded=None, graph=None):
 
 
 
-def file_load (id_,fname):
+def file_load (fname):
     print ("loading",fname)
     with open(fname) as fin: 
         try:
             info = json.load(fin)
-            info["filename"] = fname
-            id_object[id_] = info
         except Exception as e:
             print (f"\nERROR: {fname}")
             print ("    ",e)
             sys.exit(1)
 
-def class_add_property(filename, i, node): 
-    if i not in id_object:
-        utils.error_add(filename, f"Failed to find {i}")
-        return False
-    graph = id_object[i]["@graph"]
-    graph.append(graph[-1])
-    graph[-2] = node
-    return True
-    
+        info["filename"] = fname
+
+        if "@graph" in info:
+            node = info["@graph"][-1]
+        else:
+            node = info["@id"]
+
+        node["schema:isPartOf"] =  {
+            "@id": info["@context"]["caida"]
+        }
+        id_object[node["@id"]] = info
+
+def property_add_classes(filename, prop): 
+    id_ = prop["@id"]
+    c = id_.split(":")[0]
+    if c == "caida":
+        if id_ not in id_object:
+            utils.error_add(filename, f"Failed to find '{id_}'")
+            return False
+
+        obj = id_object[id_]
+        for key in ["schema:domainIncludes", "schema:rangeIncludes"]:
+            if key in prop:
+                if key not in obj:
+                    obj[key] = prop[key]
+                else:
+                    if type(obj) == dict:
+                        obj[key] = [obj[key]]
+                    obj[key].append(prop[key])
 
 main()

@@ -10,6 +10,36 @@
   },
   "@graph": [
     {
+      "@id": "caida:propertyUrl",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:PropertyMap"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Url"
+      }
+    },
+    {
+      "@id": "caida:namespaceUrl",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:PropertyMap"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Url"
+      }
+    },
+    {
+      "@id": "caida:columnReferences",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:PropertyMap"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
       "@id": "caida:PropertyMap",
       "@type": "rdfs:Class",
       "rdfs:comment": "A mapping between an entity's Class's Property and the TableSchema's columns.",

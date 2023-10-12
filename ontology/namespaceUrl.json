@@ -11,13 +11,7 @@
       "@type": "rdf:Property",
       "rdfs:label":"namespaceUrl",
       "rdfs:comment": "A URL to the PropertyMap's namespace.",
-      "rdfs:label": "namespaceUrl",
-      "schema:domainIncludes": {
-        "@id": "caida:PropertyMap"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:URL"
-      }
+      "rdfs:label": "namespaceUrl"
     }
   ]
 }

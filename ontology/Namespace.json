@@ -15,11 +15,6 @@
       "owl:equivalentProperty": {
         "@id": "dcterms:title"
       },
-      "rdfs:comment": "The name of the item.",
-      "rdfs:label": "name",
-      "rdfs:subPropertyOf": {
-        "@id": "rdfs:label"
-      },
       "schema:domainIncludes": {
         "@id": "caida:Namespace"
       },
@@ -30,11 +25,6 @@
     {
       "@id": "schema:description",
       "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:description"
-      },
-      "rdfs:comment": "A description of the Namespace.",
-      "rdfs:label": "description",
       "schema:domainIncludes": {
         "@id": "caida:Namespace"
       },
@@ -45,8 +35,6 @@
     {
       "@id": "schema:URL",
       "@type": "rdfs:Class",
-      "rdfs:comment": "Data type: URL.",
-      "rdfs:label": "URL",
       "rdfs:subClassOf": {
         "@id": "schema:Text"
       },
@@ -57,13 +45,10 @@
     {
       "@id": "caida:Namespace",
       "@type": "rdfs:Class",
-      "rdfs:comment": "A group of columns that represent the same thing in a table.",
       "rdfs:label": "Namespace",
+      "rdfs:comment": "A group of columns that represent the same thing in a table.",
       "rdfs:subClassOf": {
         "@id": "schema:Intangible"
-      },
-      "schema:isPartOf": {
-        "@id": "https://catalog.caida.org/onotology"
       }
     }
   ]

@@ -34,7 +34,7 @@ NAMESPACE_DIR=namespaces
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
-run:clean_placeholders pubdb external caida summary build suggestions schema namespace
+run:clean_placeholders pubdb external caida summary build suggestions schema 
 
 fast:
 	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
@@ -90,9 +90,6 @@ data/pubdb_links.json:
 ##############################################################
 schema: 
 	python3 scripts/ontology-build.py ${ONTOLOGY_DIR}
-
-namespace: 
-	python3 scripts/namespace-build.py ${NAMESPACE_DIR}
 
 ##############################################################
 

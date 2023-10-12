@@ -7,16 +7,10 @@
   },
   "@graph": [
     {
-      "@id": "caida:asn",
+      "@id": "caida:asn1",
       "@type": "rdf:Property",
-      "rdfs:comment": "The autonomous system number.",
-      "rdfs:label": "asn",
-      "schema:domainIncludes": {
-        "@id": "caida:AutonomousSystemNumber"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:Number"
-      }
+      "rdfs:label": "asn1",
+      "rdfs:comment": "Autonomous system number that starts a link."
     }
   ]
 }

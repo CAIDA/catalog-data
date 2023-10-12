@@ -10,27 +10,39 @@
   },
   "@graph": [
     {
-      "@id": "schema:name",
+      "@id": "caida:asn0",
       "@type": "rdf:Property",
-      "owl:equivalentProperty": {
-        "@id": "dcterms:title"
-      },
-      "rdfs:comment": "The ASN's name.",
-      "rdfs:label": "name",
-      "rdfs:subPropertyOf": {
-        "@id": "rdfs:label"
-      },
-      "schema:domainIncludes": { 
-        "@id": "caida:autonomoussystemNumber"
+      "schema:domainIncludes": {
+        "@id": "caida:AsnLink"
       },
       "schema:rangeIncludes": {
-        "@id": "schema:Text"
+        "@id": "caida:Asn"
       }
     },
     {
-      "@id": "caida:AutonomousSystemNumber",
+      "@id": "caida:asn1",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:AsnLink"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Asn"
+      }
+    },
+    {
+      "@id": "caida:relationship",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:AsnLink"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Relationship"
+      }
+    },
+    {
+      "@id": "caida:AsnLink",
       "@type": "rdfs:Class",
-      "rdfs:comment": "An Autonomous System (AS) is a set of Internet routable IP prefixes belonging to a network or a collection of networks that are all managed, controlled and supervised by a single entity or organization.",
+      "rdfs:comment": "An business and transit relationship between Internet Autonomous System (AS).",
       "rdfs:label": "Entity",
       "rdfs:subClassOf": {
         "@id": "schema:Intangible"

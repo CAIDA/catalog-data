@@ -1,7 +1,5 @@
 {
   "@context": {
-    "owl": "http://www.w3.org/2002/07/owl#",
-    "csvw": "https://www.w3.org/ns/csvw#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
@@ -9,10 +7,10 @@
   },
   "@graph": [
     {
-      "@id": "caida:entities",
+      "@id": "caida:relationship",
       "@type": "rdf:Property",
-      "rdfs:label": "entities",
-      "rdfs:comment": "Entities contained in the table."
+      "rdfs:label": "relationship",
+      "rdfs:comment": "Business Realtionship between Autonomous Systems (AS)."
     }
   ]
 }

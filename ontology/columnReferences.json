@@ -11,21 +11,7 @@
       "@id": "caida:columnReferences",
       "@type": "rdf:Property",
       "rdfs:comment": "The class of the entity.",
-      "rdfs:label": "classReference",
-      "schema:domainIncludes": [
-          {
-            "@id": "caida:Entity"
-          },
-          {
-            "@id": "caida:PropertyMap"
-          },
-          {
-            "@id": "csvw:Column"
-          }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "schema:Text"
-      }
+      "rdfs:label": "classReference"
     }
   ]
 }

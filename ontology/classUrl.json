@@ -9,14 +9,8 @@
     {
       "@id": "caida:classUrl",
       "@type": "rdf:Property",
-      "rdfs:comment": "A URL to the Entity's class.",
       "rdfs:label": "classUrl",
-      "schema:domainIncludes": {
-        "@id": "caida:Entity"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:URL"
-      }
+      "rdfs:comment": "A URL to the Entity's class."
     }
   ]
 }
