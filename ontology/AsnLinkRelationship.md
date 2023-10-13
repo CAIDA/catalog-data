@@ -10,7 +10,7 @@
     "schema:URL":"https://www.caida.org/catalog/datasets/as-relationships/"
 }
 ~~~
-===schema:description
+===description
 Although business agreements between ISPs can be complicated, the original model introduced by Gao 
 abstracts business relationships into the following three most common types:
 <b>Customer</b> ASN0 is a the customer of ASN1, <b>Provider</b> ASN1 is the provider of ASN1,
