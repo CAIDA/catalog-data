@@ -36,7 +36,7 @@
         "@id": "caida:Entity"
       },
       "schema:rangeIncludes": {
-        "@id": "caida:propertyMap"
+        "@id": "caida:PropertyMap"
       }
     },
     {
@@ -53,7 +53,7 @@
       "@id": "caida:columnReferences",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "csvw:Entity"
+        "@id": "caida:Entity"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"

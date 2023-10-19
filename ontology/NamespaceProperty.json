@@ -10,40 +10,30 @@
   },
   "@graph": [
     {
-      "@id": "caida:asn0",
+      "@id": "caida:classUrl",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "caida:AsnLink"
+        "@id": "caida:NamespaceProperty"
       },
       "schema:rangeIncludes": {
-        "@id": "caida:AutonomousSystem"
+        "@id": "schema:Url"
       }
     },
     {
-      "@id": "caida:asn1",
+      "@id": "caida:propertyUrl",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "caida:AsnLink"
+        "@id": "caida:NamespaceProperty"
       },
       "schema:rangeIncludes": {
-        "@id": "caida:AutonomousSystem"
+        "@id": "schema:Url"
       }
     },
     {
-      "@id": "caida:relationship",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": {
-        "@id": "caida:AsnLink"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:Text"
-      }
-    },
-    {
-      "@id": "caida:AsnLink",
+      "@id": "caida:NamespaceProperty",
       "@type": "rdfs:Class",
-      "rdfs:comment": "An business and transit relationship between Internet Autonomous System (AS).",
-      "rdfs:label": "AsnLink",
+      "rdfs:comment": "Namespace's class and property",
+      "rdfs:label": "PropertyMap",
       "rdfs:subClassOf": {
         "@id": "schema:Intangible"
       },

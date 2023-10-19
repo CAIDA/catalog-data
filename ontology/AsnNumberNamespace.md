@@ -7,10 +7,14 @@
     "@type":"caida:Namespace",
     "@id":"caida:AsnNumberNamespace",
     "schema:name":"ASN Number Namespace",
-    "schema:URL":"https://www.iana.org/assignments/as-numbers/as-numbers.xhtml"
+    "schema:url":"https://www.iana.org/assignments/as-numbers/as-numbers.xhtml",
+    "caida:properties": {
+        "caida:classUrl":"caida:AutonomousSystem",
+        "caida:propertyUrl":"caida:number"
+    }
 }
 ~~~
-===description
+===schema:description
 An autonomous system is a collection of connected Internet Protocol routing
 prefixes under the control of one or more network operators on behalf of a
 single administrative entity or domain, that presents a common and clearly

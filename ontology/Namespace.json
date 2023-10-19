@@ -33,13 +33,23 @@
       }
     },
     {
-      "@id": "schema:URL",
-      "@type": "rdfs:Class",
-      "rdfs:subClassOf": {
-        "@id": "schema:Text"
-      },
+      "@id": "schema:url",
+      "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "caida:Namespace"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "caida:propertiesIncludes",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Namespace"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:NamespaceProperty"
       }
     },
     {

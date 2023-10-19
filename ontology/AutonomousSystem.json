@@ -13,7 +13,7 @@
       "@id": "schema:name",
       "@type": "rdf:Property",
       "schema:domainIncludes": { 
-        "@id": "caida:Asn"
+        "@id": "caida:AutonomousSystem"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -23,7 +23,7 @@
       "@id": "caida:number",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "caida:Asn"
+        "@id": "caida:AutonomousSystem"
       },
       "schema:rangeIncludes": {
           "@id": "schema:Integer"

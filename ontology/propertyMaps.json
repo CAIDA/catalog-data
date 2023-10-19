@@ -11,7 +11,7 @@
       "@id": "caida:propertyMaps",
       "@type": "rdf:Property",
       "rdsf:label":"propertyMaps",
-      "rdfs:comment": "Property maps between class and properties.",
+      "rdfs:comment": "Property maps between class, properties, and columns.",
       "rdfs:label": "propertyMaps"
     }
   ]

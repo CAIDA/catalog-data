@@ -45,6 +45,7 @@ import sys
 import os
 import re
 import argparse
+import copy
 import lib.utils as utils
 
 
@@ -58,27 +59,63 @@ parser.add_argument("directory", nargs=1, type=str, help="ontology directory")
 args = parser.parse_args()
 
 id_object_file = "ontology_id_object.json"
-id_object = {} 
 
 re_caida = re.compile("caida:")
 re_json = re.compile(".json$")
+re_markdown = re.compile(".md$")
 
-context = {}
+types_valid = set(["rdf:Property","rdfs:Class","caida:Namespace"])
 
 def main():
     directory = args.directory[0]
+    context = {} 
+    id_object = {}
+    nodes = []
+    # Create the main objects and unified context
+    # and store other nodes for later processing
     for fname in sorted(os.listdir(directory)):
-        if re_json.search(fname): 
-            path = f"{directory}/{fname}"
-            file_load(path)
+        path = f"{directory}/{fname}"
+        if re_json.search(fname) or re_markdown.search(fname): 
+            file_load(path, context, id_object, nodes)
 
+    # Create Objects that are not the main object of the files
+    for node in nodes:
+        id_ = node["@id"]
+        if id_ not in id_object and "caida:" == id_[:6]: 
+            id_unknown_add(node["filename"], f"CAIDA context object without individual file {id_}")
+            continue 
+
+        obj = object_build(node)
+        if obj is not None:
+            if id_ not in id_object:
+                print ("creating external",id_)
+                id_object[id_] = obj
+            else:
+                object_merge(id_object[id_],obj)
+
+    # set everything to the unified 
     for obj in id_object.values():
-        if "@graph" in obj: 
-            for prop in obj["@graph"][:-1]:
-                if prop["@type"] == "rdf:Property":
-                    property_add_classes(obj["filename"], prop)
+        # everything gets the same context
+        obj["context"] = context
 
-    ontology_id_object = ontology_id_object_build()
+        # Namespaces are added to thier classes 
+        if obj["__typename"] == "Namespace":
+            for class_property in obj["properties"]:
+                for key in ["class","property"]:
+                    list_add(id_object[class_property[key]]["namespaces"], obj["id"])
+
+    # Create LInks between classes and properties 
+    link_classes = {} 
+    for node in nodes:
+        if node["@type"] == "rdf:Property":
+            link_build(id_object, link_classes, node)
+
+    # add the links to classes
+    for link, classes in link_classes.items():
+        id_object[link.class_id][link.type].append({
+            "property":link.property_id,
+            "classes":list(classes)
+        })
 
     #######################
     # printing errors
@@ -88,121 +125,198 @@ def main():
     #######################
     # print files
     #######################
-
     if args.readable_output:
         indent = 4
     else:
         indent = None
 
     print ("writing",id_object_file)
-    json.dump(ontology_id_object, open(id_object_file,"w"),indent=indent)
+    json.dump(id_object, open(id_object_file,"w"),indent=indent)
 
-def ontology_id_object_build():
-    i_o = {} 
-    for i, obj in id_object.items(): 
-        if "@graph" in obj:
-            node = obj["@graph"][-1]
-        else:
-            node = obj
-        context = {} 
-        for key,url in obj["@context"].items():
-            context[key] = url
+id_unknown = set() 
+def id_unknown_add(filename, id_):
+    if id_ not in id_unknown:
+        id_unknown.add(id_)
+        utils.error_add(filename, f"Unknown id {id_}")
 
-        i_o[i] = object_build(obj["filename"], context, node, obj, obj["@graph"])
-    return i_o
+def file_load (filename, context, id_object, nodes):
+    print ("loading",filename)
+    domain_range_keys = set(["schema:domainIncludes","schema:rangeIncludes"])
 
-def object_build(filename, context, node, encoded=None, graph=None):
-    key,id_ = node["@id"].split(":")
-    url = context[key]+id_
-
-    o = {
-        "id":node["@id"],
-        "__typename":node["@type"].split(":")[1],
-        "url":url
-    }
-
-    if "@label" in node:
-        o["name"] = node["@label"]
+    if re_markdown.search(filename):
+        context_graph = utils.parse_markdown(filename)
     else:
-        o["name"] = node["@id"].split(":")[1]
+        with open(filename) as fin: 
+            try:
+                context_graph = json.load(fin)
+            except Exception as e:
+                print (f"\nERROR: {filename}")
+                print ("    ",e)
+                sys.exit(1)
 
-    if "rdfs:comment" in node:
-        o["description"] = node["rdfs:comment"]
+    for key, value in context_graph["@context"].items():
+        context[key] = value
 
+    if "@graph" in context_graph:
+        node = context_graph["@graph"][-1]
+    else:
+        node = context_graph
 
-    if o["__typename"] == "Property":
-        for key in ["schema:domainIncludes", "schema:rangeIncludes"]:
-            if key not in o:
-                continue 
-
-            to = key.split(":")[1]
-            classes = node[key]
-            if type(classes) == dict: 
-                classes = [classes]
-
-            class_urls = []
-            for c in classes:
-                key,name = c["@id"].split(":")
-                if key in context:
-                    class_urls.append({
-                        "id":c["@id"],
-                        "name":name,
-                        "url":context[key]+name
-                    })
-                else:
-                    utils.error_add(filename, f"Failed to context {key}")
-            o[to] = class_urls
-    elif graph is not None:
-        props = []
-        for prop in graph[:-1]:
-           props.append(object_build(filename, context, prop))
-        o["properties"] = props
-
-    if encoded is not None:
-        o["json"] = encoded
-
-    return o
-
-
-
-def file_load (fname):
-    print ("loading",fname)
-    with open(fname) as fin: 
-        try:
-            info = json.load(fin)
-        except Exception as e:
-            print (f"\nERROR: {fname}")
-            print ("    ",e)
-            sys.exit(1)
-
-        info["filename"] = fname
-
-        if "@graph" in info:
-            node = info["@graph"][-1]
-        else:
-            node = info["@id"]
-
+    node["filename"] = filename
+    id_ = node["@id"]
+    c,label = id_.split(":")
+    if c in context:
         node["schema:isPartOf"] =  {
-            "@id": info["@context"]["caida"]
+            "@id": context[c]
         }
-        id_object[node["@id"]] = info
+    if id_ in id_object:
+        utils.error_add(filename,f"Duplicate {id_} in {id_object[id_]['filename']}")
+    else:
+        obj = object_build(node)
+        if obj is not None:
+            id_object[id_] = obj
 
-def property_add_classes(filename, prop): 
-    id_ = prop["@id"]
-    c = id_.split(":")[0]
-    if c == "caida":
-        if id_ not in id_object:
-            utils.error_add(filename, f"Failed to find '{id_}'")
-            return False
+            if "@graph" in context_graph:
+                for node in context_graph["@graph"][:-1]:
+                    node["filename"] = filename
+                    if node["@type"] in types_valid:
+                        nodes.append(node)
+                        for key in ["schema:rangeIncludes","schema:domainIncludes"]: 
+                            if key in node: 
+                                for n in convert_list(node[key]):
+                                    nodes.append({
+                                        "@id":n["@id"],
+                                        "@type":"rdfs:Class",
+                                        "filename":filename
+                                    })
+                        if "caida:properties" in node:
+                            for class_property in node["caida:properties"]:
+                                for key in ["caida:classUrl","caida:propertyUrl"]:
+                                    nodes.append({
+                                        "@id":class_property[key],
+                                        "@type":"rdfs:Class",
+                                        "filename":filename
+                                    })
+                    else:
+                        utils.error_add(filename,f"Unknown @type {node['@type']}")
 
-        obj = id_object[id_]
-        for key in ["schema:domainIncludes", "schema:rangeIncludes"]:
-            if key in prop:
-                if key not in obj:
-                    obj[key] = prop[key]
-                else:
-                    if type(obj) == dict:
-                        obj[key] = [obj[key]]
-                    obj[key].append(prop[key])
+
+def object_build(node):
+    id_ = node["@id"]
+    key,name = id_.split(":")
+
+    obj = {
+        "filename":node["filename"],
+        "keyValues":{}
+    }
+    t = node["@type"]
+    if t == "rdf:Property":
+        obj["__typename"] = "Property"
+        obj["domainIncludes"] = []
+        obj["rangeIncludes"] = []
+        obj["namespaces"] = []
+    elif t == "rdfs:Class":
+        obj["__typename"] = "Class"
+        obj["domainPropertyClasses"] = []
+        obj["rangePropertyClasses"] = [] 
+        obj["namespaces"] = []
+    elif t == "caida:Namespace":
+        obj["__typename"] = "Namespace"
+        obj["properties"] = []
+    else:
+        utils.error_add(node["filename"],f"Unknown @type {t}")
+        return None
+
+    # Place in the now label and comment, skip domain/range/type
+    # copy everything else into key_values
+    for key,value in node.items():
+        if key == "@id":
+            obj["id"] = value
+        elif key == "rdfs:label" or key == "schema:name":
+            obj["name"] = value
+        elif key == "rdfs:comment" or key == "schema:description":
+            obj["description"] = value
+        elif key == "schema:url":
+            obj["url"] = value
+        elif key == "caida:properties":
+            for class_property in convert_list(node["caida:properties"]):
+                obj["properties"].append({
+                    "class":class_property["caida:classUrl"],
+                    "property":class_property["caida:propertyUrl"]
+                })
+        elif key in ["schema:domainIncludes","schema:rangeIncludes"
+            ,"@context", "@type","filename"]:
+            pass 
+        else:
+            obj["keyValues"][key] = value
+    if "name" not in node:
+        obj["name"] = name
+
+    return obj
+
+def object_merge(obj_old, obj_new):
+    for key,value in obj_new.items():
+        if key not in obj_old:
+            obj_old[key] = value
+        elif key == "keyValues":
+            k_v = obj_old[key]
+            for k,v in value.items():
+                if k not in k_v:
+                    k_v[k] = v
+
+class Link: 
+    def __init__(self, class_id, property_id, type_):
+        self.class_id = class_id
+        self.property_id = property_id
+        self.type = type_
+    def __hash__(self):
+        return hash((self.class_id, self.property_id, self.type))
+    def _eq__(self, other):
+        return self.class_id == other.class_id and self.property_id == other.property_id and self.type == other.type
+
+unknown_ids = set()
+def link_build(id_object, link_classes, node):
+    prop_id = node["@id"]
+    prop = id_object[prop_id]
+    keys =  ["schema:rangeIncludes", "schema:domainIncludes"]
+    types = ["rangePropertyClasses", "domainPropertyClasses"]
+    for i in [0,1]:
+        j = (i+1)%2
+        i_key = keys[i]
+        j_key = keys[j]
+        type_ = types[i]
+        prop_key = i_key.split(":")[1]
+        if i_key not in node:
+            continue 
+        classes = convert_list(node[i_key])
+        for c in classes: 
+            class_id = c["@id"]
+
+            if class_id in id_object:
+
+                list_add(prop[prop_key], class_id)
+
+                link = Link(class_id, prop_id, type_)
+                if link not in link_classes:
+                    link_classes[link] = set()
+
+                if j_key in node:
+                    for c in convert_list(node[j_key]):
+                        i = c["@id"]
+                        if i in id_object:
+                            link_classes[link].add(i)
+                        else:
+                            print (node)
+                            print ("missing id",i)
+# Utils 
+def convert_list(values):
+    if type(values) != list:
+        values = [values]
+    return values
+
+def list_add(values, value):
+    if value not in values:
+        values.append(value)
+
 
 main()
