@@ -90,113 +90,17 @@ topkeys = {
     "PUBLISH",
     "REMARK"
 }
-topkey_2_dataset = {
-  # "Anonymized Internet Traces -> traces"
-  "passive-stats"                     : "passive_metadata",
-  "passive-realtime"                  : "passive_realtime",
-  "passive-generic"                   : "passive_metadata",
-  "passive-ipv6day-and-ipv6launch"    : "passive_ipv6launch_pcap",
-  "passive-oc48"                      : "passive_oc48_pcap",
-  "passive-2007"                      : "passive_2007_pcap",
-  "passive-2008"                      : "passive_2008_pcap",
-  "passive-2009"                      : "passive_2009_pcap",
-  "passive-2010"                      : "passive_2010_pcap",
-  "passive-2011"                      : "passive_2011_pcap",
-  "passive-2012"                      : "passive_2012_pcap",
-  "passive-2013"                      : "passive_2013_pcap",
-  "passive-2014"                      : "passive_2014_pcap",
-  "passive-2015"                      : "passive_2015_pcap",
-  "passive-2016"                      : "passive_2016_pcap",
-  "passive-2017"                      : "passive_2017_pcap",
-  "passive-2018"                      : "passive_2018_pcap",
-  "passive-2019"                      : "passive_2019_pcap",
 
-  # "Topology with Archipelago -> ark"
-  "topology-generic"                  : "software:archipelago",
-  "topology-ark-ipv4-traceroute"      : "ark_ipv4_traceroute",
-  "topology-ark-ipv6-traceroute"      : "ark_ipv6_traceroute",
-  "topology-ark-itdk"                 : "ark_itdk",
-  "topology-itdk"                     : "ark_itdk",
-  "topology-ark-ipv4-prefix-probing"  : "ark_ipv4_prefix_probing",
-  "topology-ark-ipv4-aslinks"         : "ark_ipv4_aslinks",
-  "topology-ark-ipv6-aslinks"         : "ark_ipv6_aslinks",
-  "topology-ark-ipv6-routed48"        : "ark_ipv6_traceroute",
-  "topology-ark-ipv6_traceroute"      : "ark_ipv6_traceroute",
-  "topology-ark-dnsnames"             : ["ark_ipv4_dns_names","ark_ipv6_dns_names"],
-  "topology-ark-dns-names"            : ["ark_ipv4_dns_names","ark_ipv6_dns_names"], 
-  "topology-ark-tod"                  : "software:vela",
-  "topology-ark-activity"             : "software:archipelago",
-  "topology-ark-vela"                 : "software:vela",
-
-  # "Topology with Skitter -> skitter"
-  "topology-skitter-ipv4"             : "skitter_itdk",
-  "topology-skitter-itdk"             : "skitter_itdk",
-  "topology-skitter-aslinks"          : "skitter_aslinks",
-  "topology-skitter-rlinks"           : "skitter_traceroute",
-  "skitter-router-adjacencies"        : "skitter_router_adjacencies",
-
-  # "Topology with BGP -> bgp"
-  "topology-as-relationships"         : "as_relationships_serial_1",
-  "topology-as-classification"        : "as_classification",
-  "topology-as-organization"          : "as_organizations",
-  "as-organizations"                  : "as_organizations",
-  "topology-as-rank"                  : "as_rank",
-  "routeviews-generic"                : ["routeviews_prefix2as"],
-
-  # "UCSD Network Telescope -> telescope"
-  "telescope-generic"                 : "telescope_live",
-  "telescope-2days-2008"              : "telescope_anon_twodays",
-  "telescope-3days-conficker"         : "telescope_anon_conficker",
-  "telescope-sipscan"                 : "telescope_sipscan",
-  "telescope-patch-tuesday"           : "corsaro_patch_tuesday",
-  "telescope-educational"             : "telescope_educational",
-  "telescope-real-time"               : "telescope_live",
-  "backscatter-generic"               : "telescope_backscatter",
-  "backscatter-tocs"                  : "backscatter_tocs_originals",
-  "backscatter-2004-2005"             : "telescope_backscatter",
-  "backscatter-2006"                  : "telescope_backscatter",
-  "backscatter-2007"                  : "telescope_backscatter",
-  "backscatter-2008"                  : "telescope_backscatter",
-  "backscatter-2009"                  : "telescope_backscatter",
-  "witty worm"                        : "telescope_witty_worm",
-  "code-red worm"                     : "telescope_codered_worm",
-
-  # "Denial of Service Attacks -> ddos"
-  "ddos-generic"                      : "telescope_ddos",
-  "ddos-20070804"                     : "ddos-attack-2007",
-  "ddos-20070806"                     : "ddos-attack-2007",
-
-  # "Other Datasets -> other"
-  "dns-rtt-generic"                   : "software:dnsstat",
-  "dns-root-gtld-rtt"                 : "dns_root_gtld_rtt",
-  "peeringdb"                         : "peeringdb_archive",
-  "ixps"                              : "ixps",
-  "spoofer"                           : "spoofer_data",
-
-  # "Paper Data and Tools -> paper"
-  "complex_as_relationships"          : "paper:2014_inferring_complex_as_relationships",
-  "2006-pam-as-taxonomy"              : "2006_pam_as_taxonomy",
-  "2016-periscope"                    : "software:periscope",
-  "2013-midar"                        : "software:midar",
-  "bgpstream"                         : "software:bgpstream",
-  "scamper"                           : "software:scamper",
-  "iffinder"                          : "software:iffinder",
-  "mapnet"                            : "software:mapnet",
-  "coralreef"                         : "software:coralreef",
-  "datcat"                            : "software:datcat",
-  "dolphin"                           : "presentation:2014_dolphin_dhs",
-  "asfinder"                          : "software:coralreef",
-  "netgeo"                            : "software:netgeo",
-  "ioda"                              : "software:ioda"
-}
 alternate_links = ["software:", "media:", "paper:", "presentation:"]
 re_yml = re.compile(r".yaml")
+re_keys = re.compile(r".keys")
 re_jsn = re.compile(r".json")
 re_pubdb = re.compile(r"___pubdb")
 re_ext = re.compile(r"___externallinks")
 
 # File Paths
 data_papers = None
+data_papers_keys = "data/data-papers.keys"
 
 ################################# Main Method ##################################
 
@@ -209,6 +113,7 @@ def main(argv):
     global topkey_2_dataset
     global alternate_links
     global data_papers
+    global data_papers_keys
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-d", type=str, default=None, dest="data_papers", help="Path to data-papers.yaml")
@@ -264,13 +169,19 @@ def add_seen_authors(d):
 def parse_data_papers():
     global re_yml
     global data_papers
+    global data_papers_keys
     global topkeys
 
     # Parse data_papers file.
     if re_yml.search(data_papers):
         with open(data_papers, "r") as fin:
-            for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
-                parse_paper(data_papers, paper)
+            if re_keys.search(data_papers_keys):
+                with open(data_papers_keys, "r") as fin2:
+                    keys_gen = yaml.load_all(fin2,Loader=yaml.Loader)
+                    next(keys_gen) # Skip first document in file
+                    dataset_mappings = list(keys_gen)[0]
+                    for paper in list(yaml.load_all(fin,Loader=yaml.Loader)):
+                        parse_paper(data_papers, dataset_mappings, paper)
 
     # Edge Case: Exit if a given file couldn't be open.
     else:
@@ -280,7 +191,7 @@ def parse_data_papers():
 
 # Pull out all necessary meta data from the given paper and print a JSON file.
 #   @input curr_paper: A string where each \n is another TOPKEY.
-def parse_paper(fname, key_value):
+def parse_paper(fname, dataset_mappings, key_value):
     global author_data
     global type_2_bibtex
     global papers
@@ -389,16 +300,16 @@ def parse_paper(fname, key_value):
                 # Try to map the current dataset to a catalog dataset.
                 if dataset[:8] == "dataset:":
                     dataset = dataset[8:]
-                elif dataset in topkey_2_dataset:
-                    dataset = topkey_2_dataset[dataset]
+                elif dataset in dataset_mappings:
+                    dataset = dataset_mappings[dataset]
                 elif len(dataset) == 0:
                     continue
-                elif dataset.replace(" ", "-") in topkey_2_dataset:
-                    dataset = topkey_2_dataset[dataset.replace(" ", "-")]
-                elif dataset.replace("_", "-") in topkey_2_dataset:
-                    dataset = topkey_2_dataset[dataset.replace("_", "-")]
+                elif dataset.replace(" ", "-") in dataset_mappings:
+                    dataset = dataset_mappings[dataset.replace(" ", "-")]
+                elif dataset.replace("_", "-") in dataset_mappings:
+                    dataset = dataset_mappings[dataset.replace("_", "-")]
                 else:
-                    keys = topkey_2_dataset.keys()
+                    keys = dataset_mappings.keys()
                     closest_match = difflib.get_close_matches(dataset, keys, 1)
                    
                     # Edge Case: Reverse the dataset if no match, then give up.
@@ -407,12 +318,12 @@ def parse_paper(fname, key_value):
                         dataset = dataset.split("-")
                         dataset.reverse()
                         dataset = "-".join(map(str, dataset))
-                        if dataset in topkey_2_dataset:
-                            dataset = topkey_2_dataset[dataset]
+                        if dataset in dataset_mappings:
+                            dataset = dataset_mappings[dataset]
                         else:
                             continue
                     else:
-                        dataset = topkey_2_dataset[closest_match[0]]
+                        dataset = dataset_mappings[closest_match[0]]
 
 
                 # Append link to the dataset.
