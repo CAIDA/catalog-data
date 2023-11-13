@@ -2098,22 +2098,27 @@ def doi_set(obj):
 
     # If there is a doi set, fix it to the doi.org format
     if ("doi" in obj):
-        obj["doi"] = obj["doi"].strip()
-        doi_norm = "https://doi.org/"
-        # drop "dx" from domain
-        if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
-            obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
-        # normalize alphanumeric forms to full URL
-        elif ("doi:" in obj["doi"]):
-            obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
-        # determine if only the doi number is provided
-        elif (obj["doi"][:3] == "10."):
-            obj["doi"] = doi_norm + obj["doi"]
-        # normalize empty string DOIs to null
-        elif (obj["doi"] == ""):
-            obj["doi"] = None
-        elif (doi_norm not in obj["doi"]):
-            utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
+        if obj["doi"] is None:
+            utils.error_add(obj["filename"],"Has a None DOI")
+            del obj["doi"]
+        else:
+            print (obj["doi"])
+            obj["doi"] = obj["doi"].strip()
+            doi_norm = "https://doi.org/"
+            # drop "dx" from domain
+            if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+            # normalize alphanumeric forms to full URL
+            elif ("doi:" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+            # determine if only the doi number is provided
+            elif (obj["doi"][:3] == "10."):
+                obj["doi"] = doi_norm + obj["doi"]
+            # normalize empty string DOIs to null
+            elif (obj["doi"] == ""):
+                obj["doi"] = None
+            elif (doi_norm not in obj["doi"]):
+                utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
 
 ## Helper function pulls out first access tag and creates access type
 def access_type_from_tag_set(obj):
