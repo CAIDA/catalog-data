@@ -1,0 +1,61 @@
+{
+    "id": "2021_united_we_stand_collaborative_detection_and_mitigation_of_amplification_ddos_attacks_at_scale",
+    "name": "United We Stand: Collaborative Detection and Mitigation of Amplification DDoS Attacks at Scale",
+    "datePublished": "2021.11",
+    "publisher": "CCS '21",
+    "description": "To answer this question, we collaborate with eleven IXPs that operate in three different regions. These IXPs have more than 2,120 network members that exchange traffic at the rate of more than 11 Terabits per second. We collect network data over six months and analyze more than 120k amplification DDoS attacks.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:wagner_daniel",
+            "organizations": [
+                "DE-CIX",
+		"Max Planck Institute for Informatics"
+            ]
+        }.
+	{
+            "person": "person:kopp_daniel",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:wichtlhuber_matthias",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:dietzel_christoph",
+            "organizations": [
+                "DE-CIX",
+		"Max Planck Institute for Informatics"
+            ]
+        },
+	{	
+            "person": "person:hohlfeld_oliver",
+            "organizations": [
+                "Brandenburg University of Technology"
+            ]
+        },
+	{
+            "person": "person:smaragdakis_georgios",
+            "organizations": [
+                "TU Delft"
+            ]
+        },
+	{
+            "person": "person:feldmann_anja",
+            "organizations": [
+                "Max Planck Institute for Informatics"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.1145/3460120.3485385"
+        }
+    ]
+}

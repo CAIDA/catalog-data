@@ -1,0 +1,40 @@
+{
+    "id": "2021_transparent_forwards_an_unnoticed_component_of_the_open_dns_infrastructure",
+    "name": "Transparent forwarders: an unnoticed component of the open DNS infrastructure",
+    "datePublished": "2021.12",
+    "publisher": "CoNEXT '21",
+    "description": "In this paper, we revisit the open DNS (ODNS) infrastructure and, for the first time, systematically measure and analyze transparent forwarders, DNS components that transparently relay between stub resolvers and recursive resolvers.",
+    "tags": [],
+    "authors": [
+        {
+            "person": "person:nawrocki_marcin",
+            "organizations": [
+                "HAW Hamburg"
+            ]
+        },
+	{
+	    "person": "person:koch_maynard",
+	    "organizations": [
+		"Freie Universität Berlin"
+	    ]
+	},
+	{
+	    "person": "person:schmidt_thomas",
+	    "organizations": [
+		"HAW Hamburg"
+	    ]
+	},
+	{
+	    "person": "person:wählisch_matthias",
+	    "organizations":  [
+		"Freie Universität Berlin"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "DOI",
+            "url": "https://doi.org/10.1145/3485983.3494872"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "id": "2014_exit_from_hell_reducing_the_impact_of_amplification_ddos_attacks",
+    "name": "Exit from Hell? Reducing the Impact of Amplification DDoS Attacks",
+    "datePublished": "2014.08",
+    "publisher": "SEC'14",
+    "description": "In this paper, we aim to answer this question and tackle the problem from four different angles. In a first step, we monitored and classified amplification sources, showing that amplifiers have a high diversity in terms of operating systems and architectures. Based on these results, we then collaborated with the security community in a large-scale campaign to reduce the number of vulnerable NTP servers by more than 92%. To assess possible next steps of attackers, we evaluate amplification vulnerabilities in the TCP handshake and show that attackers can abuse millions of hosts to achieve 20× amplification. Lastly, we analyze the root cause for amplification attacks: networks that allow IP address spoofing. We deploy a method to identify spoofing-enabled networks from remote and reveal up to 2,692 Autonomous Systems that lack egress filtering.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:kührer_marc",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+            "person": "person:holz_thorsten",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+            "person": "person:rossow_christian",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+	    "person": "person:hupperich_thomas",
+	    "organizations": [
+		"Horst Görtz Institute for IT-Security, Ruhr-University"
+	    ]
+	}     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.5555/2671225.2671233"
+        }
+    ]
+}

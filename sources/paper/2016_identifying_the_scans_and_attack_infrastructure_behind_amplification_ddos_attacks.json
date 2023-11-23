@@ -1,0 +1,38 @@
+{
+    "id": "2016_identifying_the_scans_and_attack_infrastructure_behind_amplification_ddos_attacks",
+    "name": "Identifying the Scan and Attack Infrastructures Behind Amplification DDoS Attacks",
+    "datePublished": "2016.10",
+    "publisher": "CCS '16",
+    "description": "In this paper, we present novel techniques to uncover the infrastructures behind amplification DDoS attacks. We follow a two-step approach to tackle this challenge: First, we develop a methodology to impose a fingerprint on scanners that perform the reconnaissance for amplification attacks that allows us to link subsequent attacks back to the scanner. Our methodology attributes over 58% of attacks to a scanner with a confidence of over 99.9%. Second, we use Time-to-Live-based trilateration techniques to map scanners to the actual infrastructures launching the attacks. Using this technique, we identify 34 networks as being the source for amplification attacks at 98% certainty.",
+    "tags": [],
+    "links": [],
+    "authors": [
+	{
+            "person": "person:rossow_christian",
+            "organizations": [
+                "CISPA",
+                "Saarland University"
+            ]
+        },
+	{
+	    "person": "person:backes_michael",
+	    "organizations": [
+		"CISPA",
+                "Saarland University"
+	    ]
+	},
+	{
+	    "person": "person:krupp_johannes",
+	    "organizations": [
+		"CISPA",
+                "Saarland University"
+	    ]
+	}     
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://christian-rossow.de/publications/amptoscanner-ccs2016.pdf"
+        }
+    ]
+}

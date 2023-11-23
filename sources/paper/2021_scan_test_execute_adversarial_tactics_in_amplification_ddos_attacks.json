@@ -1,0 +1,40 @@
+{
+    "id": "2021_scan_test_execute_adversarial_tactics_in_amplification_ddos_attacks",
+    "name": "Scan, Test, Execute: Adversarial Tactics in Amplification DDoS Attacks",
+    "datePublished": "2021.11",
+    "publisher": "CCS '21",
+    "description": "This paper analyzes adversarial techniques, tactics, and procedures (TTPs) based on 549 honeypots deployed in 5 clouds that were rallied to participate in 13,479 attacks.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:griffioen_harm",
+	    "organizations": [
+		"Hasso Plattner Institute"
+	    ]
+	},
+	{
+	    "person": "person:oosthoek_kris",
+	    "organizations":  [
+		"Technische Universiteit Delft"
+	    ]
+	},
+	{
+	    "person": "person:knaap_paul",
+	    "organizations": [
+		"Technische Universiteit Delft"
+	    ]
+	},
+	{
+	    "person": "person:doerr_christian",
+	    "organizations": [
+		"Hasso Plattner Institute"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://dl.acm.org/doi/pdf/10.1145/3460120.3484747"
+        }
+    ]
+}

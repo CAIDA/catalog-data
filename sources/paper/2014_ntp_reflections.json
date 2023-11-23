@@ -1,0 +1,29 @@
+{
+    "id": "2014_ntp_reflections",
+    "name": "NTP Reflections",
+    "datePublished": "2014.01",
+    "publisher": "RIPE Labs",
+    "description": "",
+    "tags": [],
+    "links": [],
+    "authors": [
+	{   "person": "person:Mirjam Kühne",
+	    "organizations": [
+		""
+	    ]
+	},
+        {
+            "person": "person:kristoff_john",
+            "organizations": [
+                "Netscout"
+            ]
+        }
+              
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://labs.ripe.net/author/mirjam/ntp-reflections/"
+        }
+    ]
+}
