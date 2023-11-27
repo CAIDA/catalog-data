@@ -1,0 +1,24 @@
+{
+    "id": "2014_amplification_hell_revisiting_network_protocols_for_ddos_abuse",
+    "name": "Amplification Hell: Revisiting Network Protocols for DDoS Abuse",
+    "datePublished": "2014.02",
+    "publisher": "NDSS Symposium 2014",
+    "description": "We revisit 14 popular UDP-based protocols of network services, online games, P2P filesharing networks and P2P botnets, all of which are vulnerable to amplification DDoS attacks. We leverage traffic analysis to detect attack victims and amplifiers, showing that attackers already started to abuse amplification-vulnerable protocols other than DNS.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:rossow_christian",
+            "organizations": [
+                "VU University",
+		"Horst Gortz Institute for IT-Security, Ruhr University"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://www.ndss-symposium.org/ndss2014/programme/amplification-hell-revisiting-network-protocols-ddos-abuse/"
+        }
+    ]
+}
