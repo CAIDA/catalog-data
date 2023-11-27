@@ -1,0 +1,95 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "schema:name",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "schema:description",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:propertyMaps",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:PropertyMap"
+      }
+    },
+    {
+      "@id": "schema:url",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "caida:columnReferences",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:Entity"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:mainEntity",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "csvw:TableSchema"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Entity"
+      }
+    },
+    {
+      "@id": "caida:entities",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "csvw:TableSchema"
+      },
+      "schema:rangeIncludes": {
+        "@id": "caida:Entity"
+      }
+    },
+    {
+      "@id": "caida:Entity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A group of columns that represent the same thing in a table.",
+      "rdfs:label": "Entity",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "schema:isPartOf": {
+        "@id": "https://catalog.caida.org/onotology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "schema:name",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": { 
+        "@id": "caida:AutonomousSystem"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "caida:number",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:AutonomousSystem"
+      },
+      "schema:rangeIncludes": {
+          "@id": "schema:Integer"
+      }
+    },
+    {
+      "@id": "caida:AutonomousSystem",
+      "@type": "rdfs:Class",
+      "rdfs:label":"Autonomous System (AS)",
+      "rdfs:comment": "An Autonomous System (AS) is a set of Internet routable IP prefixes belonging to a network or a collection of networks that are all managed, controlled and supervised by a single entity or organization.",
+      "schema:url":"https://en.wikipedia.org/wiki/Autonomous_system_(Internet)",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      }
+    }
+  ]
+}

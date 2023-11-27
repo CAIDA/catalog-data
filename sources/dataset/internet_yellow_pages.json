@@ -27,7 +27,7 @@
     ],
     "links": [
         "dataset:as_rank",
-        "dataset:aben_asnames",
+        "dataset:aben_as_names",
         "dataset:amsix_lg",
         "dataset:apnic_eyeball",
         "dataset:bgpkit",
