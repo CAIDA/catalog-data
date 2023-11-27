@@ -32,7 +32,7 @@
             "organizations": [
                 "New York University"
             ]
-        }
+    },
 	{
 	    "person": "person:backes_michael",
 	    "organizations": [
@@ -40,7 +40,7 @@
                 "Saarland University",
 		"MPI-SWS"
 	    ]
-	},
+	}
     ],
     "resources": [
         {
