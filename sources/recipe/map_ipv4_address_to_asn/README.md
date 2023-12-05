@@ -45,38 +45,53 @@ Detailed installation and usage instructions [here]( https://github.com/CAIDA/py
 
 The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
 
-### Map between ips and origin asns using PyIPMeta
+### Map between IPs and origin ASNs using PyIPMeta
 
-For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta)
-More data can be found at http://data.caida.org/datasets/routing/routeviews-prefix2as/
+For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta).
 
-Sample ips.txt found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz)
+Download a prefix2asn file by following the directions [here](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-f` flag.
 
-**Usage** : `$ python3 ip_asn.py -i ips.txt`
+Sample lists of IPs found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz).
+
+**Usage** : `$ python3 ip_asn_pyipmeta.py -f <pfx2as file> -i <ips txt file>`
 
 ~~~python
 import _pyipmeta 
 import argparse
+import datetime
+import os 
+import psutil
+
+def returnTime():
+    return datetime.datetime.now()
+
+def returnMemUsage():
+    process = psutil.Process(os.getpid())
+    return process.memory_info()[0]
+    
+
+ipm = _pyipmeta.IpMeta()
+# print(ipm)
 
 parser = argparse.ArgumentParser()
+parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
 parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
 args = parser.parse_args()
 
-
-ipm = _pyipmeta.IpMeta()
-
 # print("Getting/enabling pfx2as provider (using included test data)")
 prov = ipm.get_provider_by_name("pfx2as")
-print(ipm.enable_provider(prov, "-f http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/03/routeviews-rv2-20170329-0200.pfx2as.gz"))
+print(ipm.enable_provider(prov, f"-f {args.prefix2asn_file}"))
 print()
 
-# Create list of ips from test file 
+# Create list of ips from test file
 ips = []
 with open(args.ips_file) as f:
     for line in f:
         line = line.rstrip().split("\t")[1]
         ips.append(line)
 
+begin_time = returnTime()
+begin_mem = returnMemUsage()  
 
 # Map between ipv4 addresses and origin asns
 ip2asn = {}
@@ -84,10 +99,15 @@ for ip in ips:
     if ipm.lookup(ip):
         (res,) =  ipm.lookup(ip)
         if res.get('asns'):
-            ip2asn[ip] = res.get('asns')[-1]
-
+            ip2asn[ip] = res.get('asns')
 
 # print(ip2asn)
+end_time = returnTime()
+end_mem = returnMemUsage()
+
+# hour:minute:second:microsecond
+print("Delta time:" , end_time - begin_time)
+print("Delta memory:", end_mem - begin_mem)
 ~~~
 
 ### Background

@@ -45,6 +45,7 @@ __email__ = "<pmpathak@ucsd.edu>"
 #!/usr/bin/env python
 
 import _pyipmeta 
+import argparse
 import datetime
 import os 
 import psutil
@@ -60,15 +61,19 @@ def returnMemUsage():
 ipm = _pyipmeta.IpMeta()
 # print(ipm)
 
+parser = argparse.ArgumentParser()
+parser.add_argument('-p', dest = 'prefix2asn_file', default = '', help = 'Please enter the prefix2asn file name')
+parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
+args = parser.parse_args()
+
 # print("Getting/enabling pfx2as provider (using included test data)")
 prov = ipm.get_provider_by_name("pfx2as")
-# print(prov)
-print(ipm.enable_provider(prov, "-f /test/pfx2as/routeviews-rv2-20170329-0200.pfx2as.gz"))
+print(ipm.enable_provider(prov, f"-f {args.prefix2asn_file}"))
 print()
 
-
+# Create list of ips from test file
 ips = []
-with open('ips.txt') as f:
+with open(args.ips_file) as f:
     for line in f:
         line = line.rstrip().split("\t")[1]
         ips.append(line)
@@ -76,13 +81,13 @@ with open('ips.txt') as f:
 begin_time = returnTime()
 begin_mem = returnMemUsage()  
 
+# Map between ipv4 addresses and origin asns
 ip2asn = {}
 for ip in ips:
     if ipm.lookup(ip):
         (res,) =  ipm.lookup(ip)
         if res.get('asns'):
             ip2asn[ip] = res.get('asns')
-
 
 # print(ip2asn)
 end_time = returnTime()
