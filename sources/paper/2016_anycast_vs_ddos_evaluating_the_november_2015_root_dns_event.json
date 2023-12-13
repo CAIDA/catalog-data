@@ -1,0 +1,59 @@
+{
+    "id": "2016_anycast_vs_ddos_evaluating_the_november_2015_root_dns_event",
+    "name": "Anycast vs. DDoS: Evaluating the November 2015 Root DNS Event",
+    "datePublished": "2016.11",
+    "publisher": "IMC '16",
+    "tags": [],
+    "description": "This paper provides the first evaluation of several IP anycast services under stress with public data. Our subject is the Internet's Root Domain Name Service, made up of 13 independently designed services running at more than 500 sites. Many of these services were stressed by sustained traffic at 100× normal load on Nov. 30 and Dec. 1, 2015. We use public data for most of our analysis to examine how different services respond to stress, and identify two policies: sites may absorb attack traffic, containing the damage but reducing service to some users, or they may withdraw routes to shift both good and bad traffic to other sites. We study how these deployment policies resulted in different levels of service to different users during the events. We also show evidence of collateral damage on other services located near the attacks.",
+    "links": [],
+    "authors": [
+        {
+            "person": "person:moura_giovane",
+            "organizations": [
+                "SIDN"
+            ]
+        },
+	{
+            "person": "person:schmidt_ricardo",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{
+            "person": "person:heidemann_john",
+            "organizations": [
+                "University of Southern California"
+            ]
+        },
+	{
+            "person": "person:vries_wouter",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{
+            "person": "person:müller, moritz",
+            "organizations": [
+                "SIDN"
+            ]
+        },
+	{
+            "person": "person:wei_lan",
+            "organizations": [
+                "University of Southern California"
+            ]
+        },
+	{
+            "person": "person:hesselman_cristian",
+            "organizations": [
+                "SIDN"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.1145/2987443.2987446"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "id": "2019_ddos_hide_and_seek_on_the_effectiveness_of_a_booster_services_takedown",
+    "name": "DDoS Hide & Seek: On the Effectiveness of a Booter Services Takedown",
+    "datePublished": "2019.10",
+    "publisher": "IMC '19",
+    "description": " In this paper, we investigate booter-based DDoS attacks in the wild and the impact of an FBI takedown targeting 15 booter websites in December 2018 from the perspective of a major IXP and two ISPs. We study and compare attack properties of multiple booter services by launching Gbps-level attacks against our own infrastructure.", 
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:kopp_daniel",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:wichtlhuber_matthias",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:poese_ingmar",
+            "organizations": [
+                "BENOCS"
+            ]
+        },
+	{
+            "person": "person:santanna_jose",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{	
+            "person": "person:hohlfeld_oliver",
+            "organizations": [
+                "Brandenburg University of Technology"
+            ]
+        },
+	{
+            "person": "person:dietzel_christoph",
+            "organizations": [
+                "DE-CIX",
+		"MPI for Informatics"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.1145/3355369.3355590"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "2019_down_the_black_hole_dismantling_operational_practices_of_bgp_blackholing_at_ixps",
+    "name": "Down the Black Hole: Dismantling Operational Practices of BGP Blackholing at IXPs",
+    "datePublished": "2019.10",
+    "publisher": "IMC '19",
+    "description": "In this paper, we present the first in-depth statistical analysis of all RTBH events at a large European IXP by correlating measurements of the data and the control plane for a period of 104 days.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:nawrocki_marcin",
+	    "organizations": [
+		"Freie Universität Berlin"
+	    ]
+	},
+	{
+	    "person": "person:blendin_jeremias",
+	    "organizations": [
+		"DE-CIX"
+	    ]
+	},
+	{
+	    "person": "person:dietzel_christoph",
+	    "organizations": [
+		"DE-CIX",
+		"MPI for Informatic"
+	    ]
+	},
+	{
+	    "person": "person:schmidt_thomas",
+	    "organizations": [
+		"HAW Hamburg"
+	    ]
+	},
+	{
+	    "person": "person:wählisch_matthias",
+	    "organizations":  [
+		"Freie Universität Berlin"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://ilab-pub.imp.fu-berlin.de/papers/nbdsw-dbhdo-19.pdf"
+        }
+    ]
+}

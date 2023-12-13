@@ -1,0 +1,50 @@
+{
+    "id": "2015_amppot_monitoring_and_defending_against_amplification_ddos_attacks",
+    "name": "AmpPot: Monitoring and Defending Against Amplification DDoS Attacks",
+    "datePublished": "2015.12",
+    "publisher": "RAID 2015",
+    "description": "The recent amplification DDoS attacks have swamped victims with huge loads of undesired traffic, sometimes even exceeding hundreds of Gbps attack bandwidth. We analyze these amplification attacks in more detail. First, we inspect the reconnaissance step, i.e., how both researchers and attackers scan for amplifiers that are open for abuse. Second, we design AmpPot, a novel honeypot that tracks amplification attacks. We deploy 21 honeypots to reveal previously-undocumented insights about the attacks. We find that the vast majority of attacks are short-lived and most victims are attacked only once. Furthermore, 96 % of the attacks stem from single sources, which is also confirmed by our detailed analysis of four popular Linux-based DDoS botnets.", 
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:krämer_lukas",
+            "organizations": [
+                "CISPA",
+		"Saarland University"
+            ]
+        },
+	{
+            "person": "person:krupp_johannes",
+            "organizations": [
+                "CISPA",
+                "Saarland University"
+            ]
+        },
+	{
+            "person": "person:makita_daisuke",
+            "organizations": [
+                "Yokohama National University"
+            ]
+        },
+	
+	{
+            "person": "person:rossow_christian",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+	    "person": "person:hupperich_thomas",
+	    "organizations": [
+		"Horst Görtz Institute for IT-Security, Ruhr-University"
+	    ]
+	}     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.5555/2671225.2671233"
+        }
+    ]
+}

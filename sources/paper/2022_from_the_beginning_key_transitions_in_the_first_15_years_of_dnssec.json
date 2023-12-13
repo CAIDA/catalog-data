@@ -1,0 +1,40 @@
+{
+    "id": "2022_from_the_beginning_key_transitions_in_the_first_15_years_of_dnssec",
+    "name": "From the Beginning: Key Transitions in the First 15 Years of DNSSEC",
+    "datePublished": "2022.09",
+    "publisher": "IEEE Transactions on Network Service Management",
+    "description": "Though fundamental for current and future operational success, our community lacks a clear notion of how to empirically evaluate the process of securely transitioning keys. In this paper, we propose two building blocks to formally characterize and assess key transitions.",
+    "tags": [],
+    "authors": [
+        {
+            "person": "person:osterwell_eric",
+            "organizations": [
+                "George Mason University"
+            ]
+        },
+	{
+	    "person": "person:tehrani_pouyan",
+	    "organizations": [
+		"Weizenbaum Inst., Fraunhofer FOKUS"
+	    ]
+	},
+	{
+	    "person": "person:schmidt_thomas",
+	    "organizations": [
+		"HAW Hamburg"
+	    ]
+	},
+	{
+	    "person": "person:wählisch_matthias",
+	    "organizations":  [
+		"Freie Universität Berlin"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9845707"
+        }
+    ]
+}

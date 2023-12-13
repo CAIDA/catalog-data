@@ -2102,7 +2102,7 @@ def doi_set(obj):
             utils.error_add(obj["filename"],"Has a None DOI")
             del obj["doi"]
         else:
-            print (obj["doi"])
+            # print (obj["doi"])
             obj["doi"] = obj["doi"].strip()
             doi_norm = "https://doi.org/"
             # drop "dx" from domain

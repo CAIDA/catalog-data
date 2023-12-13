@@ -1,0 +1,48 @@
+{
+    "id": "2018_when_the_dike_breaks_dissecting_dns_defenses_during_ddos",
+    "name": "When the Dike Breaks: Dissecting DNS Defenses During DDoS",
+    "datePublished": "2018.10",
+    "publisher": "IMC '18",
+    "description": "While on one hand the DNS protocol is relatively simple, the system has many moving parts, with multiple levels of caching and retries and replicated servers. This paper uses controlled experiments to examine how these mechanisms affect DNS resilience and latency, exploring both the client side's DNS user experience, and server-side traffic.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:moura_giovane",
+	    "organizations": [
+		"SIDN Labs",
+		"TU Delft"
+	    ]
+	},
+	{
+	    "person": "person:heidemann_john",
+	    "organizations": [
+		"USC/ISI"
+	    ]
+	},
+	{
+	    "person": "person:muller_moritz",
+	    "organizations": [
+		"SIDN Labs",
+		"University of Twente"
+	    ]
+	},
+	{
+	    "person": "person:schmidt_ricardo",
+	    "organizations": [
+		"University of Passo Fundo"
+	    ]
+	},
+	{
+	    "person": "person:davids_marco",
+	    "organizations": [
+		"SIDN Labs"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "URL",
+            "url": "https://dl.acm.org/doi/10.1145/3278532.3278534"
+        }
+    ]
+}
