@@ -7,13 +7,13 @@
     "tags": [],
     "links": [],
     "authors": [
-	{   "person": "person:Mirjam Kühne",
+	{   "person": "person:kuhne__mirjam",
 	    "organizations": [
-		""
+		"RIPE Labs"
 	    ]
 	},
         {
-            "person": "person:kristoff_john",
+            "person": "person:kristoff__john",
             "organizations": [
                 "Netscout"
             ]

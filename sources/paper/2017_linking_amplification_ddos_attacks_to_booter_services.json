@@ -8,39 +8,36 @@
     "links": [],
     "authors": [
 	{
-            "person": "person:krupp_johannes",
+            "person": "person:krupp__johannes",
             "organizations": [
-                "CISPA",
-                "Saarland University"
+                "CISPA, Saarland University"
             ]
         },
 	{
-            "person": "person:karami_mohammad",
+            "person": "person:karami__mohammad",
             "organizations": [
                 "Google, Inc."
             ]
         },
 	{
-            "person": "person:rossow_christian",
+            "person": "person:rossow__christian",
             "organizations": [
-                "CISPA",
-                "Saarland University"
+                "CISPA, Saarland University"
             ]
         },
 	{
-            "person": "person:mccoy_damon",
+            "person": "person:mccoy__damon",
             "organizations": [
                 "New York University"
             ]
-        }
+        },
 	{
-	    "person": "person:backes_michael",
+	    "person": "person:backes__michael",
 	    "organizations": [
-		"CISPA",
-                "Saarland University",
+		"CISPA, Saarland University",
 		"MPI-SWS"
 	    ]
-	},
+	}
     ],
     "resources": [
         {

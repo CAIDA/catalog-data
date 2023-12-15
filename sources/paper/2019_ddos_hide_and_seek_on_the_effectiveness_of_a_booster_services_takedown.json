@@ -8,37 +8,37 @@
     "links": [],
     "authors": [
         {
-            "person": "person:kopp_daniel",
+            "person": "person:kopp__daniel",
             "organizations": [
                 "DE-CIX"
             ]
         },
 	{
-            "person": "person:wichtlhuber_matthias",
+            "person": "person:wichtlhuber__matthias",
             "organizations": [
                 "DE-CIX"
             ]
         },
 	{
-            "person": "person:poese_ingmar",
+            "person": "person:poese__ingmar",
             "organizations": [
                 "BENOCS"
             ]
         },
 	{
-            "person": "person:santanna_jose",
+            "person": "person:santanna__jose",
             "organizations": [
                 "University of Twente"
             ]
         },
 	{	
-            "person": "person:hohlfeld_oliver",
+            "person": "person:hohlfeld__oliver",
             "organizations": [
                 "Brandenburg University of Technology"
             ]
         },
 	{
-            "person": "person:dietzel_christoph",
+            "person": "person:dietzel__christoph",
             "organizations": [
                 "DE-CIX",
 		"MPI for Informatics"

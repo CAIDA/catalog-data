@@ -8,25 +8,25 @@
     "links": [],
     "authors": [
         {
-            "person": "person:kührer_marc",
+            "person": "person:kuhrer__marc",
             "organizations": [
                 "Horst Görtz Institute for IT-Security, Ruhr-University"
             ]
         },
 	{
-            "person": "person:holz_thorsten",
+            "person": "person:holz__thorsten",
             "organizations": [
                 "Horst Görtz Institute for IT-Security, Ruhr-University"
             ]
         },
 	{
-            "person": "person:rossow_christian",
+            "person": "person:rossow+__christian",
             "organizations": [
                 "Horst Görtz Institute for IT-Security, Ruhr-University"
             ]
         },
 	{
-	    "person": "person:hupperich_thomas",
+	    "person": "person:hupperich__thomas",
 	    "organizations": [
 		"Horst Görtz Institute for IT-Security, Ruhr-University"
 	    ]

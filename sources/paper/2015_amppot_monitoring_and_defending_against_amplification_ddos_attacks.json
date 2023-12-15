@@ -8,34 +8,43 @@
     "links": [],
     "authors": [
         {
-            "person": "person:krämer_lukas",
+            "person": "person:kramer__lukas",
             "organizations": [
-                "CISPA",
-		"Saarland University"
+                "CISPA, Saarland University"
             ]
         },
 	{
-            "person": "person:krupp_johannes",
+            "person": "person:krupp__johannes",
             "organizations": [
-                "CISPA",
-                "Saarland University"
+                "CISPA, Saarland University"
             ]
         },
 	{
-            "person": "person:makita_daisuke",
+            "person": "person:makita__daisuke",
             "organizations": [
                 "Yokohama National University"
             ]
         },
-	
 	{
-            "person": "person:rossow_christian",
+	    "person": "person:nishizoe__tomomi",
+	    "organizations": [
+	        "Yokohama National University"
+	    ]						         
+	},
+	{
+	    "person": "person:koide__takashi",
+	    "organizations": [
+	        "Yokohama National University"
+	    ]
+	},
+	{
+            "person": "person:yoshioka__katsunari",
             "organizations": [
-                "Horst Görtz Institute for IT-Security, Ruhr-University"
+                "Yokohama National University"
             ]
         },
 	{
-	    "person": "person:hupperich_thomas",
+	    "person": "person:rossow__christian",
 	    "organizations": [
 		"Horst Görtz Institute for IT-Security, Ruhr-University"
 	    ]
@@ -43,8 +52,8 @@
     ],
     "resources": [
         {
-            "name": "HTML",
-            "url": "https://dl.acm.org/doi/10.5555/2671225.2671233"
+            "name": "PDF",
+            "url": "https://christian-rossow.de/publications/amppot-raid2015.pdf"
         }
     ]
 }
