@@ -19,17 +19,22 @@ END=`date +%s`
 ((DIFF=${START}+${END}))
 
 
-###### DAta Schema files
+###### Data Schema files
 DATA_SCHEMA_DATASETS=data/data-schema-datasets.tsv
 DATA_SCHEMA_DATASETS_SRC=~/Downloads/Data\ Schema\ for\ CAIDA\ Datasets\ -\ Sheet1.tsv 
 DATA_SCHEMA_CATEGORIES=data/data-schema-categories.tsv
 DATA_SCHEMA_CATEGORIES_SRC=~/Downloads/Categories\ used\ in\ Schema\ for\ CAIDA\'s\ Datasets\ -\ Sheet1.tsv
 
+###### Ontology 
+ONTOLOGY_DIR=ontology
+
+###### Namespace 
+NAMESPACE_DIR=namespaces
 #########
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
-run:clean_placeholders pubdb external caida summary build suggestions
+run:clean_placeholders pubdb external caida summary build suggestions schema 
 
 fast:
 	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
@@ -82,6 +87,11 @@ data/pubdb_links.json:
 	python3 scripts/pubdb_links.py
 
 
+##############################################################
+schema: 
+	python3 scripts/ontology-build.py ${ONTOLOGY_DIR}
+
+##############################################################
 
 clean: clean_placeholders
 	rm -f id_object.json id_id_link.json word_id_score.json category_id_depth.json ${SUMMARY_FILE} ${IDS_FILE} \

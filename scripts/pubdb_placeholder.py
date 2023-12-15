@@ -102,7 +102,7 @@ def main():
         if "links" in obj:
             access = []
             for link in obj["links"]:
-                if link["label"] == "DOI":
+                if link["label"].upper() == "DOI":
                     obj["doi"] = link["to"]
                     continue
                    

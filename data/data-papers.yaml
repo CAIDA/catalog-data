@@ -69224,7 +69224,7 @@ AUTHOR : "Li, Jiang; Cao, Jiahao; Meng, Zili; Xie, Renjie; Xu, Mingwei"
 TITLE  : "RoLL: Real-time and Accurate Route Leak Location with AS Triplet Features"
 YEAR   : "2023"
 CTITLE : "International Conference on Communications (ICC)"
-DOI    : "https://zilimeng.com/papers/roll-icc23.pdf"
+DOI    : "https://doi.org/10.1109/ICC45041.2023.10278878"
 TOPKEY : "topology-as-relationships,topology-as-classification,routeviews-prefix2as,topology-as-organization,peeringdb,ixps"
 ---
 MARKER : "2023_o_darwich_acm_362480"
