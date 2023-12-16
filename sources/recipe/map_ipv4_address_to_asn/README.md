@@ -51,7 +51,7 @@ For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyip
 
 Download a prefix2asn file by following the directions [here](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-p` flag.
 
-Sample lists of IPs found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz).
+Sample lists of IPs found [here]( http://publicdata.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz).
 
 **Usage** : `$ python3 ip_asn_pyipmeta.py -p <pfx2as file> -i <ips txt file>`
 
