@@ -49,11 +49,11 @@ The following script returns a dictionary `ip2asn` that maps ips to origin asns.
 
 For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta).
 
-Download a prefix2asn file by following the directions [here](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-f` flag.
+Download a prefix2asn file by following the directions [here](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-p` flag.
 
 Sample lists of IPs found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz).
 
-**Usage** : `$ python3 ip_asn_pyipmeta.py -f <pfx2as file> -i <ips txt file>`
+**Usage** : `$ python3 ip_asn_pyipmeta.py -p <pfx2as file> -i <ips txt file>`
 
 ~~~python
 import _pyipmeta 
@@ -101,7 +101,7 @@ for ip in ips:
         if res.get('asns'):
             ip2asn[ip] = res.get('asns')
 
-# print(ip2asn)
+print(ip2asn)
 end_time = returnTime()
 end_mem = returnMemUsage()
 

@@ -89,7 +89,7 @@ for ip in ips:
         if res.get('asns'):
             ip2asn[ip] = res.get('asns')
 
-# print(ip2asn)
+print(ip2asn)
 end_time = returnTime()
 end_mem = returnMemUsage()
 
