@@ -1,0 +1,35 @@
+{
+    "id": "2022_ddos_cyber_incident_detection_in_smart_grids",
+    "name": "DDoS Cyber-Incident Detection in Smart Grids",
+    "datePublished": "2022.02",
+    "publisher": "Sustainability",
+    "description": "To meet this need for defensive capabilities, we developed a situational awareness tool to detect system compromise by monitoring the indicators of compromise (IOCs) of amplification DDoS attacks. We achieved this aim by finding IOCs and exploring attack footprints to understand the nature of such attacks and their cyber behavior. Finally, an evaluation of our approach against a real dataset of DDoS attack instances indicated that our tool can distinguish and detect different types of amplification DDoS attacks.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:merlino__jorge_c",
+            "organizations": [
+                "Cardiff Univerity"
+            ]
+        },
+	{
+            "person": "person:asiri__mohammed",
+            "organizations": [
+                "Cardiff Univerity"
+            ]
+        },
+	{
+            "person": "person:saxena__neetesh",
+            "organizations": [
+                "Cardiff Univerity"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://www.mdpi.com/2071-1050/14/5/2730/htm"
+        }
+    ]
+}

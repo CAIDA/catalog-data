@@ -1,0 +1,23 @@
+{
+    "id": "2019_characterizing_certain_dns_ddos_attacks",
+    "name": "Characterizing Certain DNS DDoS Attacks",
+    "datePublished": "2019.07",
+    "publisher": "",
+    "description": "This paper details data science research in the area of Cyber Threat Intelligence applied to a specific type of Distributed Denial of Service (DDoS) attack. We study a DDoS technique prevalent in the Domain Name System (DNS) for which little malware have been recovered. Using data from a globally distributed set of a passive collectors (pDNS), we create a statistical classifier to identify these attacks and then use unsupervised learning to investigate the attack events and the malware that generates them.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:burton__renee",
+            "organizations": [
+                "Infoblox"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://arxiv.org/pdf/1905.09958.pdf"
+        }
+    ]
+}

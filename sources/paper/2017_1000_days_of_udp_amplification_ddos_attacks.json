@@ -1,0 +1,34 @@
+{
+    "id": "2017_1000_days_of_udp_amplification_ddos_attacks",
+    "name": "1000 days of UDP amplification DDoS attacks",
+    "datePublished": "2017.04",
+    "publisher": "2017 APWG Symposium on Electronic Crime Research",
+    "description": "We analyse the results of running a network of honeypot UDP reflectors (median size 65 nodes) from July 2014 onwards. We explore the life cycle of attacks that use our reflectors, from the scanning phase used to detect our honeypot machines, through to their use in attacks.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:thomas__daniel_r",
+	    "organizations": [
+		"University of Cambridge"
+	    ]
+	},
+	{
+	    "person": "person:clayton__richard",
+	    "organizations":  [
+		"University of Cambridge"
+	    ]
+	},
+	{
+	    "person": "person:beresford__alastair_r",
+	    "organizations": [
+		"University of Cambridge"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://ieeexplore.ieee.org/document/7945057"
+        }
+    ]
+}

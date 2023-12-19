@@ -1,0 +1,49 @@
+{
+    "id": "2020_into_the_ddos_maelstorm_a_longitudinal_study_of_a_scrubbing_service",
+    "name": "Into the DDoS maelstrom: a longitudinal study of a scrubbing service",
+    "datePublished": "2020.09",
+    "publisher": "IEEE European Symposium on Security and Privacy Workshops (EuroS&PW)",
+    "description": "This work unravels for the first time the inner workings of a DDoS scrubber - NaWas- a non-profit scrubber in the Netherlands. We analyze 1800+ DDoS attacks spanning over a period of 22 months, and show that while most attacks are not very large, they are still large enough to disrupt services and likely to disturb links. We estimate the collateral damage incurred by DDoS attacks, and demonstrate that the number of victims of is at least quadratically larger (IP2) than the targeted addresses.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:moura__giovane_c_m",
+            "organizations": [
+                "SIDN Labs",
+		"SIDN"
+            ]
+        },
+	{
+            "person": "person:hesselman__cristian",
+            "organizations": [
+                "SIDN Labs and University of Twente",
+		"SIDN"
+            ]
+        },
+	{
+            "person": "person:schaapman__gerald",
+            "organizations": [
+                "NBIP"
+            ]
+        },
+	{
+            "person": "person:boerman__nick",
+            "organizations": [
+                "SIDN"
+            ]
+        },
+	{
+            "person": "person:weerdt__octavia_de",
+            "organizations": [
+                "NBIP"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.sidnlabs.nl/downloads/3TrpeS6fxwc4mhlYLTaRm2/65c446763c3250d3d4be3d74e99e4f3d/Into_the_DDoS_maelstrom_a_longitudinal_study_of_a_scrubbing_service.pdf"
+        }
+    ]
+}

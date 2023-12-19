@@ -1,0 +1,41 @@
+{
+    "id": "2021_the_far_side_of_dns_amplification_tracing_the_ddos_attack_ecosystem_from_the_internet_core",
+    "name": "The Far Side of DNS Amplification: Tracing the DDoS Attack Ecosystem from the Internet Core",
+    "datePublished": "2021.10",
+    "publisher": "IMC",
+    "description": "In this paper, we shed new light on the DNS amplification ecosystem, by studying complementary data sources, bolstered by orthogonal methodologies.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:nawrocki__marcin",
+            "organizations": [
+                "Freie Universität Berlin"
+            ]
+        },
+	{
+            "person": "person:jonker__mattijs",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{
+            "person": "person:schmidt__thomas_c",
+            "organizations": [
+                "HAW Hamburg"
+            ]
+        },
+	{
+            "person": "person:wahlisch__matthias",
+            "organizations": [
+                "Freie Universität Berlin"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://arxiv.org/pdf/2109.01104.pdf"
+        }
+    ]
+}

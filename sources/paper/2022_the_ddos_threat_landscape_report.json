@@ -1,0 +1,24 @@
+{
+    "id": "2022_the_ddos_threat_landscape_report",
+    "name": "The DDoS Threat Landscape Report",
+    "datePublished": "2022",
+    "publisher": "Netscout",
+    "description": "",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:kristoff__john",
+            "organizations": [
+                "Netscout"
+            ]
+        }
+              
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://storage.googleapis.com/site-media-prod/meetings/NANOG86/4488/20221017_Kristoff_The_2022H1_Ddos_v1.pdf"
+        }
+    ]
+}

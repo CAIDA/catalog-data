@@ -1,0 +1,40 @@
+{
+    "id": "2022_the_race_to_the_vulnerable_measuring_the_log4j_shell_incidente",
+    "name": "The Race to the Vulnerable: Measuring the Log4j Shell Incident",
+    "datePublished": "2022.06",
+    "publisher": "TMA 22",
+    "description": "In this paper, we measure the rush of scanners during the two months after the disclosure. We use several vantage points to observe both researchers and attackers. For this purpose, we collect and analyze payloads sent by benign and malicious communication parties, their origins, and churn. We find that the initial rush of scanners quickly ebbed.",
+    "tags": [],
+    "authors": [
+        {
+            "person": "person:hiesgen__raphael",
+            "organizations": [
+                "HAW Hamburg"
+            ]
+        },
+	{
+	    "person": "person:nawrocki__marcin",
+	    "organizations": [
+		"Freie Universität Berlin"
+	    ]
+	},
+	{
+	    "person": "person:schmidt__thomas_c",
+	    "organizations": [
+		"HAW Hamburg"
+	    ]
+	},
+	{
+	    "person": "person:wahlisch_matthias",
+	    "organizations":  [
+		"Freie Universität Berlin"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://arxiv.org/pdf/2205.02544.pdf"
+        }
+    ]
+}

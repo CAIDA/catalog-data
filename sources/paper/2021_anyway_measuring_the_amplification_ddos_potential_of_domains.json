@@ -1,0 +1,52 @@
+{
+    "id": "2021_anyway_measuring_the_amplification_ddos_potential_of_domains",
+    "name": "ANYway: Measuring the Amplification DDoS Potential of Domains",
+    "datePublished": "2021.10",
+    "publisher": "CSNM ‘21",
+    "description": "By comparing the overall ranking to the set of domains observed in actual attacks in honeypot data, we show whether attackers are using the most-potent domains for their attacks, or if we may expect larger attacks in the future.",
+    "tags": [],
+    "authors": [
+        {
+            "person": "person:toorn__olivier_van_der",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{
+	    "person": "person:krupp__johannes",
+	    "organizations": [
+		"CISPA Helmholtz Center for Information Security"
+	    ]
+	},
+	{
+	    "person": "person:jonker__mattijs",
+	    "organizations": [
+		"University of Twente"
+	    ]
+	},
+	{
+	    "person": "person:rijswijk_deij__roland_van",
+	    "organizations":  [
+		"University of Twente"
+	    ]
+	},
+	{
+	    "person": "person:rossow__christian",
+	    "organizations": [
+		"CISPA Helmholtz Center for Information Security"
+	    ]
+	},
+	{
+	    "person": "person:sperotto__anna",
+	    "organizations": [
+		"University of Twente"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://publications.cispa.saarland/3537/1/cnsm2021.pdf"
+        }
+    ]
+}

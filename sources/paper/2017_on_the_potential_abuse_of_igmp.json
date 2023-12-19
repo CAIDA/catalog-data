@@ -1,0 +1,40 @@
+{
+    "id": "2017_on_the_potential_abuse_of_igmp",
+    "name": "On the Potential Abuse of IGMP",
+    "datePublished": "2017.01",
+    "publisher": "ACM SIGCOMM Computer Communication Review",
+    "description": "In this paper we investigate the vulnerability of the Internet Group Management Protocol (IGMP) to be leveraged for denial-of-service (DoS) attacks. IGMP is a connectionless protocol and therefore susceptible to attackers spoofing a third-party victim's source address in an effort to coax responders to send their replies to the victim.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:sargent__matthew",
+	    "organizations": [
+		"Case Western Reserve University"
+	    ]
+	},
+	{
+	    "person": "person:kristoff__john",
+	    "organizations":  [
+		"DePaul University"
+	    ]
+	},
+	{
+	    "person": "person:paxson__vern",
+	    "organizations": [
+		"International Computer Science Institute"
+	    ]
+	},
+	{
+	    "person": "person:allman__mark",
+	    "organizations": [
+		"University of California, Berkeley"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://dataplane.org/jtk/publications/ccr201701-igmp.pdf"
+        }
+    ]
+}

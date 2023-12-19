@@ -6,7 +6,7 @@
     },
     "@type":"caida:Namespace",
     "@id":"caida:AsnNumberNamespace",
-    "schema:name":"ASN Number Namespace",
+    "schema:name":"AS Number Namespace",
     "schema:url":"https://www.iana.org/assignments/as-numbers/as-numbers.xhtml",
     "caida:properties": {
         "caida:classUrl":"caida:AutonomousSystem",

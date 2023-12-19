@@ -1,0 +1,41 @@
+{
+    "id": "2014_hell_of_a_handshake_abusing_TCP_for_reflective_amplification_ddos_attacks",
+    "name": "Hell of a Handshake: Abusing TCP for Reflective Amplification DDoS Attacks",
+    "datePublished": "2014.08",
+    "publisher": "WOOT'14",
+    "description": "In this paper, we continue this line of work and demonstrate that TCP protocols indeed can be abused in practice. More specifically, we show that the handshake itself often yields amplification, especially since a lot of devices on the Internet react in unforeseen ways during the connection establishment. To estimate the landscape of Internet devices vulnerable to TCP amplification attacks, we performed Internet-wide scans for common TCP-based protocols and identified thousands of amplifiers that allow an amplification of factor 50x and higher.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:kuhrer__marc",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+            "person": "person:holz__thorsten",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+            "person": "person:rossow__christian",
+            "organizations": [
+                "Horst Görtz Institute for IT-Security, Ruhr-University"
+            ]
+        },
+	{
+	    "person": "person:hupperich__thomas",
+	    "organizations": [
+		"Horst Görtz Institute for IT-Security, Ruhr-University"
+	    ]
+	}     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.5555/2671293.2671297"
+        }
+    ]
+}
