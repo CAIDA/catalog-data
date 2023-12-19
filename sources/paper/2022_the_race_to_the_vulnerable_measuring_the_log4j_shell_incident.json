@@ -7,25 +7,25 @@
     "tags": [],
     "authors": [
         {
-            "person": "person:hiesgen_raphael",
+            "person": "person:hiesgen__raphael",
             "organizations": [
                 "HAW Hamburg"
             ]
         },
 	{
-	    "person": "person:nawrocki_marcin",
+	    "person": "person:nawrocki__marcin",
 	    "organizations": [
 		"Freie Universität Berlin"
 	    ]
 	},
 	{
-	    "person": "person:schmidt_thomas",
+	    "person": "person:schmidt__thomas_c",
 	    "organizations": [
 		"HAW Hamburg"
 	    ]
 	},
 	{
-	    "person": "person:wählisch_matthias",
+	    "person": "person:wahlisch_matthias",
 	    "organizations":  [
 		"Freie Universität Berlin"
 	    ]

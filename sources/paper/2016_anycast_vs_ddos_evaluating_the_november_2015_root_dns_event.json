@@ -8,43 +8,43 @@
     "links": [],
     "authors": [
         {
-            "person": "person:moura_giovane",
+            "person": "person:c_m_moura__giovane",
             "organizations": [
-                "SIDN"
+                "SIDN Labs"
             ]
         },
 	{
-            "person": "person:schmidt_ricardo",
-            "organizations": [
-                "University of Twente"
-            ]
-        },
-	{
-            "person": "person:heidemann_john",
-            "organizations": [
-                "University of Southern California"
-            ]
-        },
-	{
-            "person": "person:vries_wouter",
+            "person": "person:de_o_schmidt__ricardo",
             "organizations": [
                 "University of Twente"
             ]
         },
 	{
-            "person": "person:müller, moritz",
-            "organizations": [
-                "SIDN"
-            ]
-        },
-	{
-            "person": "person:wei_lan",
+            "person": "person:heidemann__john",
             "organizations": [
                 "University of Southern California"
             ]
         },
 	{
-            "person": "person:hesselman_cristian",
+            "person": "person:de_vries__wouter_b",
+            "organizations": [
+                "University of Twente"
+            ]
+        },
+	{
+            "person": "person:muller__moritz",
+            "organizations": [
+                "SIDN Labs"
+            ]
+        },
+	{
+            "person": "person:wei__lan",
+            "organizations": [
+                "University of Southern California"
+            ]
+        },
+	{
+            "person": "person:hesselman__cristian",
             "organizations": [
                 "SIDN"
             ]

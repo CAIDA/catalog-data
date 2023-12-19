@@ -7,25 +7,25 @@
     "tags": [],
     "authors": [
         {
-            "person": "person:nawrocki_marcin",
+            "person": "person:nawrocki__marcin",
             "organizations": [
                 "HAW Hamburg"
             ]
         },
 	{
-	    "person": "person:koch_maynard",
+	    "person": "person:koch__maynard",
 	    "organizations": [
 		"Freie Universität Berlin"
 	    ]
 	},
 	{
-	    "person": "person:schmidt_thomas",
+	    "person": "person:schmidt__thomas_c",
 	    "organizations": [
 		"HAW Hamburg"
 	    ]
 	},
 	{
-	    "person": "person:wählisch_matthias",
+	    "person": "person:wahlisch__matthias",
 	    "organizations":  [
 		"Freie Universität Berlin"
 	    ]
