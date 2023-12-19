@@ -10,7 +10,7 @@
 	{
             "person": "person:krupp__johannes",
             "organizations": [
-                "CISPA"
+                "CISPA, Saarland University"
             ]
         },
 	{
@@ -22,7 +22,7 @@
 	{
             "person": "person:rossow__christian",
             "organizations": [
-                "CISPA"
+                "CISPA, Saarland University"
             ]
         },
 	{
@@ -34,7 +34,7 @@
 	{
 	    "person": "person:backes__michael",
 	    "organizations": [
-		"CISPA",
+		"CISPA, Saarland University",
 		"MPI-SWS"
 	    ]
 	}
