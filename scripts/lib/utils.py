@@ -175,6 +175,7 @@ def parse_markdown(filename):
     return obj
 
 def section_process(filename, obj, ender, name, buffer):
+    name = name.rstrip()
     data = {} 
     if ";" in name:
         name_old = name
