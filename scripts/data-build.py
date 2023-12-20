@@ -56,6 +56,7 @@ import copy
 import binascii
 
 
+
 ######################################################################
 ## Parameters
 ######################################################################
@@ -70,10 +71,12 @@ parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", a
 parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
+
 # used to plural
 import nltk
-nltk.download('wordnet')
-#nltk.download('omw-1.4')
+#if not args.dates_skip:
+#    nltk.download('wordnet')
+    #nltk.download('omw-1.4')
 from nltk.stem.wordnet import WordNetLemmatizer
 Lem = WordNetLemmatizer()
 
@@ -247,6 +250,8 @@ def main():
     #######################
     seen_id = {}
 
+    print ("----")
+
     #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
@@ -256,9 +261,13 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                if re.search("\.json$",filename,re.IGNORECASE):
+                if re.search("\.json$",filename,re.IGNORECASE) or re.search("\.md$", filename,re.IGNORECASE):
                     try:
-                        info = json.load(open(path+"/"+filename))
+                        pname = path+"/"+filename
+                        if re.search("\.json$",filename,re.IGNORECASE):
+                            info = json.load(open(pname))
+                        else:
+                            info = utils.parse_markdown(pname);
                         if "filename" not in info:
                             info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
@@ -286,6 +295,11 @@ def main():
         if id_ not in object_finished:
             object_finish(obj)
             object_finished.add(id_)
+            #if obj["__typename"] == "License":
+                #print (obj["id"]," ",obj["__typename"])
+            #if id_ == "license:caida_aua":
+                #print (json.dumps(obj,indent=4))
+
 
     if not args.dates_skip:
         print ("adding dates ( skipping '*___*' )")
@@ -1591,7 +1605,6 @@ def schema_process():
 
     for id_,obj in id_object.items():
         if False and "schema" in obj:
-            print (obj["id"],"schema  ------------------------")
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
 
