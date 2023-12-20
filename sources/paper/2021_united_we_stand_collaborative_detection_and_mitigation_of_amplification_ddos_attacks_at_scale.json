@@ -8,45 +8,45 @@
     "links": [],
     "authors": [
         {
-            "person": "person:wagner_daniel",
+            "person": "person:wagner__daniel",
             "organizations": [
                 "DE-CIX",
 		"Max Planck Institute for Informatics"
             ]
-        },
+	},
 	{
-            "person": "person:kopp_daniel",
+            "person": "person:kopp__daniel",
             "organizations": [
                 "DE-CIX"
             ]
         },
 	{
-            "person": "person:wichtlhuber_matthias",
+            "person": "person:wichtlhuber__matthias",
             "organizations": [
                 "DE-CIX"
             ]
         },
 	{
-            "person": "person:dietzel_christoph",
+            "person": "person:dietzel__christoph",
             "organizations": [
                 "DE-CIX",
 		"Max Planck Institute for Informatics"
             ]
         },
 	{	
-            "person": "person:hohlfeld_oliver",
+            "person": "person:hohlfeld__oliver",
             "organizations": [
                 "Brandenburg University of Technology"
             ]
         },
 	{
-            "person": "person:smaragdakis_georgios",
+            "person": "person:smaragdakis__georgios",
             "organizations": [
                 "TU Delft"
             ]
         },
 	{
-            "person": "person:feldmann_anja",
+            "person": "person:feldmann__anja",
             "organizations": [
                 "Max Planck Institute for Informatics"
             ]

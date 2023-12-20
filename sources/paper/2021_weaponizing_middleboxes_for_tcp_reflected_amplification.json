@@ -8,40 +8,40 @@
     "links": [],
     "authors": [
         {
-            "person": "person:bock_kevin",
+            "person": "person:bock__kevin",
             "organizations": [
                 "University of Maryland"
             ]
         },
         {
-            "person": "person:alaraj_abdulrahman",
+            "person": "person:alaraj__abdulrahman",
             "organizations": [
                 "University of Colorado Boulder"
             ]
         },
 	{
-            "person": "person:fax_yair",
+            "person": "person:fax__yair",
             "organizations": [
                 "University of Maryland"
             ]
         },
 	{
-            "person": "person:hurley_kyle",
+            "person": "person:hurley__kyle",
             "organizations": [
                 "University of Maryland"
             ]
         },
 	{
-            "person": "person:wustrow_eric",
+            "person": "person:wustrow__eric",
             "organizations": [
                 "University of Colorado Boulder"
             ]
         },
 	{
-            "person": "person:levin_dave",
+            "person": "person:levin__dave",
             "organizations": [
                 "University of Maryland"
-            ]
+          ]
         }     
     ],
     "resources": [
