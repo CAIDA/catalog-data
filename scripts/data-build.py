@@ -300,8 +300,6 @@ def main():
             #if id_ == "license:caida_aua":
                 #print (json.dumps(obj,indent=4))
 
-    utils.error_print()
-    sys.exit() 
 
     if not args.dates_skip:
         print ("adding dates ( skipping '*___*' )")
