@@ -233,27 +233,36 @@ def parse_paper(fname, dataset_mappings, key_value):
             # Edge case: author last name has suffix
             suffix = "Jr." in value
             value = value.replace("Jr.", "Jr")
-
-            for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
-                names = re.split("\s*,\s*", author)
-                if len(names) == 4:
-                    authors.append(names[0]+", "+names[1])
-                    authors.append(names[2]+", "+names[3])
-                else:
-                    # add the period back to Jr.
-                    if suffix: 
-                        author = author.replace("Jr", "Jr.")
-                    authors.append(author)
+            
+            if ";" in value:
+                authors = re.split("\s*;\s*", value)
+            else:
+                for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
+                    names = re.split("\s*,\s*", author)
+                    if len(names) == 4:
+                        authors.append(names[0]+", "+names[1])
+                        authors.append(names[2]+", "+names[3])
+                    else:
+                        # add the period back to Jr.
+                        if suffix: 
+                            author = author.replace("Jr", "Jr.")
+                        authors.append(author)
 
             # Iterate over each author and add there an object for them.
+            unparseable = []
             for author in authors:
                 author = author.strip()
                 #author = re.split(r"\W+", author)
-                if re.search("\s*,\s*",author):
-                    last_name, first_name = re.split("\s*,\s*",author)
-                    if len(first_name) == 1:
-                        first_name = first_name + '.'
-                elif not re.search("^[a-z]+$", author, re.IGNORECASE):
+                values = re.split("\s*,\s*",author)
+                if len(values) > 0:
+                    if len(values) == 2:
+                        last_name, first_name = values # re.split("\s*,\s*",author)
+                        if len(first_name) == 1:
+                            first_name = first_name + '.'
+                    else:
+                        unparseable.append(author)
+                        continue  
+                elif not re.search("^[a-z\.]+$", author, re.IGNORECASE):
                     print ("unparseable", '"'+author+'" in "'+title+'"', file=sys.stderr)
                     first_name = ""
                     last_name = author
@@ -266,6 +275,12 @@ def parse_paper(fname, dataset_mappings, key_value):
                 paper["authors"].append({
                     "person":author_id
                 })
+
+            if len(unparseable) > 0: 
+                print ("TITLE:",title)
+                print ("AUTHOR:", value)
+                print ("  unparseable:",unparseable)
+                return None 
                     
         elif "YEAR" in key:
             date_str = value
