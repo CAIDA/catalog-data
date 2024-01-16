@@ -1394,16 +1394,16 @@ TOPKEY: passive-2015
 GEOLOC: Santa Barbara, CA, US
 ABS: ''
 ---
-MARKER: 2022_leyba_k_arxiv_220107328
+MARKER: 2022_k_leyba_arxiv_220107328
 TYPE: misc
-AUTHOR: Leyba, K., Daymude, J., Young, J., Newman, M., Rexford, J., Forrest, S.
+AUTHOR: Leyba, Kirtus; Daymude, Joshua; Young, Jean-Gabriel; Neuman, M. E. J. ; Rexford, Jennifer; Forrest, Stephanie
 TITLE: Cutting Through the Noise to Infer Autonomous System Topology
-PUBLISH: arxiv.org
+PUBLISH: arxiv
 YEAR: 2022-01
 VOLUME: ''
-PAGE: (10)
+PAGE: (10 pages)
 URL: https://arxiv.org/abs/2201.07328
-TOPKEY: topology-as-relationships, topology-as-rank, bgpstream
+TOPKEY: bgpstream
 GEOLOC: Tempe, AZ, US
 ABS: ''
 ---
@@ -10498,20 +10498,6 @@ TOPKEY: bgpstream
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
-MARKER: 2022_k_leyba_arxiv_220107328
-TYPE: misc
-AUTHOR: Leyba, Kirtus; Daymude, Joshua; Young, Jean-Gabriel, Neuman, M; Rexford, Jennifer;
-  Forrest, Stephanie
-TITLE: Cutting Through the Noise to Infer Autonomous System Topology
-PUBLISH: arxiv
-YEAR: 2022-01
-VOLUME: ''
-PAGE: (10 pages)
-URL: https://arxiv.org/abs/2201.07328
-TOPKEY: bgpstream
-GEOLOC: Tempe, AZ, US
-ABS: ''
----
 MARKER: 2022_e_marechal_springer_98785520
 TYPE: book
 AUTHOR: Marechal, Emeline; Merindol, Pascal; Donnet, Benoit
@@ -19128,7 +19114,7 @@ GEOLOC: Shanghai, CN
 ---
 MARKER: 2020_kumar_sap_network_traffic_analysis_082086
 TYPE: article
-AUTHOR: Kumar, Sathish A. P.; Suresh, A., Anand, S.R.
+AUTHOR: Kumar, Sathish A. P.; Suresh, A.; Anand, S.R.
 TITLE: Hybridization of Mean Shift Clustering and Deep Packet Inspected Classification
   for Network Traffic Analysis
 SERIAL: Wireless Pers Commun
@@ -34922,7 +34908,7 @@ ABS: The Internet is the largest artificial network consisting of billions of IP
 ---
 MARKER: 2018_m_imani_popets_2018_145
 TYPE: inproceedings
-AUTHOR: Imani, M; Barton, A., Wright, M.
+AUTHOR: Imani, M; Barton, A.; Wright, M.
 TITLE: Guard Sets in Tor using AS Relationships
 CTITLE: Proc. on Privacy Enhancing Technologies
 YEAR: 2018-01
@@ -38028,7 +38014,7 @@ ABS: We propose high-frequency traffic control (HFTraC), a rate control scheme t
 ---
 MARKER: 2017_a_maltinsky_tist_8_56
 TYPE: article
-AUTHOR: Maltinsky, A., Giladi, R.; Shavitt, Y.
+AUTHOR: Maltinsky, A.; Giladi, R.; Shavitt, Y.
 TITLE: On network neutrality measurements
 SERIAL: ACM Trans. on Intelligent Systems and Technology (TIST)
 VOLUME: 8 (4)
@@ -43523,7 +43509,7 @@ ABS: The Internet is a network of networks. Understanding where and how these ne
 ---
 MARKER: 2016_c_xing_lcomm_2585480
 TYPE: article
-AUTHOR: Xing, C; Ding, K., Hu, C., Chen, M.
+AUTHOR: Xing, C; Ding, K.; Hu, C.; Chen, M.
 TITLE: Sample and fetch-based large flow detection mechanism in Software Defined Networks
 SERIAL: IEEE Comm. Letters
 YEAR: 2016-06
@@ -65428,7 +65414,7 @@ GEOLOC: Sydney, AU; Sydney, AU
 ---
 MARKER: 2007_o_akashi_lncs_4786_37
 TYPE: inproceedings
-AUTHOR: Akashi, O; Fukuda, K., Hirotsu, T., Sugawara, T.
+AUTHOR: Akashi, O; Fukuda, K.; Hirotsu, T.; Sugawara, T.
 TITLE: Analysis of diagnostic capability for hijacked route problem
 CTITLE: Intl Workshop on IP Operations and Management
 SERIAL: Lecture Notes in Computer Science (LCNS)
@@ -69261,3 +69247,22 @@ YEAR   : "2023-02"
 PUBLISH: "Ulster University"
 URL    : "https://pure.ulster.ac.uk/ws/portalfiles/portal/116871914/2023MillikenMPhD.pdf"
 TOPKEY : "passive-2016"
+---
+MARKER: "2023_ecn_with_quic_challenges_in_the_wild"
+TYPE: "online"
+AUTHOR: "Sander, C.; Kunze, I.; Blöcher, I.; Kosek, M; Wehrle, K"
+TITLE: "ECN with QUIC: Challenges in the Wild"
+PUBLISH: "ACM Internet Measurement Conference '23"
+YEAR: "2023"
+URL: "https://arxiv.org/pdf/2309.14273.pdf"
+TOPKEY: "topology-as-organization"
+GEOLOC: "Montreal, QC, Canada"
+---
+MARKER: "2023_omnisketch"
+TYPE: "online"
+AUTHOR: "Punter, W.; Papapetrou, O.; Garofalakis, M."
+TITLE: "OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates"
+PUBLISH: "Proceedings of the VLDB Endowment"
+YEAR: "2023-11"
+URL: "https://www.vldb.org/pvldb/vol17/p319-punter.pdf"
+TOPKEY: "passive-2019"
