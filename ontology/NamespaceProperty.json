@@ -16,7 +16,7 @@
         "@id": "caida:NamespaceProperty"
       },
       "schema:rangeIncludes": {
-        "@id": "schema:Url"
+        "@id": "schema:URL"
       }
     },
     {
@@ -26,7 +26,7 @@
         "@id": "caida:NamespaceProperty"
       },
       "schema:rangeIncludes": {
-        "@id": "schema:Url"
+        "@id": "schema:URL"
       }
     },
     {
