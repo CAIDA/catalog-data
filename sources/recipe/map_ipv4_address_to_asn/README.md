@@ -39,7 +39,7 @@ Before installing PyIPMeta, you will need:
 - Python setuptools (`sudo apt install python-setuptools` on Ubuntu) 
 - Python development headers (`sudo apt install python-dev` on Ubuntu)
 
-Detailed installation and usage instructions [here]( https://github.com/CAIDA/pyipmeta ).
+Detailed installation and usage instructions on the [PyIPMeta repo]( https://github.com/CAIDA/pyipmeta ).
 
 # solution #
 
@@ -47,11 +47,11 @@ The following script returns a dictionary `ip2asn` that maps ips to origin asns.
 
 ### Map between IPs and origin ASNs using PyIPMeta
 
-For this solution, clone **PyIPMeta** from [here]( https://github.com/CAIDA/pyipmeta).
+For this solution, clone **PyIPMeta** from the [PyIPMeta repo]( https://github.com/CAIDA/pyipmeta).
 
-Download a prefix2asn file by following the directions [here](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-p` flag.
+Download a prefix2asn file by following the directions on the [Routeviews Prefix-to-AS Mappings dataset page](https://catalog.caida.org/dataset/routeviews_prefix2as). When using the script, pass in the file name after the `-p` flag.
 
-Sample lists of IPs found [here]( http://publicdata.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz).
+This script takes a list of IP addresses in the format used by CAIDA's [DNS Names dataset](https://catalog.caida.org/dataset/ark_ipv4_dns_names).
 
 **Usage** : `$ python3 ip_asn_pyipmeta.py -p <pfx2as file> -i <ips txt file>`
 
@@ -118,8 +118,7 @@ print("Delta memory:", end_mem - begin_mem)
 - An *IPv4 address prefix* is the prefix of an IPv4 address. 
 - e.g. Consider the IPV4 address : 182.24.0.0/18 
 - In this case, 18 is the length of the prefix. 
-- The prefix is the first 18 bits of the IP address. 
-- More information on IPv4 addresses can be found [here]( https://docs.oracle.com/cd/E19455-01/806-0916/6ja85399u/index.html#:~:text=The%20IPv4%20address%20is%20a,bit%20fields%20separated%20by%20periods )
+- The prefix is the first 18 bits of the IP address.
 
 **What is forwarding/How does forwarding work?** 
 - Fowarding means sending incoming information packets to the appropriate destination interface. This is done by routers with the help of a forwarding table. 
@@ -137,15 +136,14 @@ It finds the prefix matching the given IP address and returns the corresponding 
 | 192.168.0.0/16   | B             |
 
 - For example, for the given incoming IP address:  192.168.20.19 
-- **Node A** is selected as the destination router node as it contains the *longer matching prefix* i.e. 192.168.20.16 
-- Source: [link]( https://www.lewuathe.com/longest-prefix-match-with-trie-tree.html ) 
-- More information can be found [here]( https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ )
+- **Node A** is selected as the destination router node as it contains the *longer matching prefix* i.e. 192.168.20.16
+- More information, from [GeeksforGeeks](https://www.geeksforgeeks.org/longest-prefix-matching-in-routers/ )
  
 **What is an AS?**
 - AS stands for Autonomous system.
 - It can be broadly be thought of as a single organization, or a collection of routers that route groups of IP addresses under a common administration, typically a large organization or an ISP (Internet Service Provider). 
 - It is a connected group of one or more IP addresses (known as IP prefixes) that provide a common way to route internet traffic to systems outside the AS.
-- More information on AS can be found [here]( https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html) and [here](https://catalog.caida.org/details/media/2016_as_intro_topology_windas_intro_topology_wind.pdf)
+- More information, from [Rutgers University](https://www.cs.rutgers.edu/~pxk/352/notes/autonomous_systems.html)
 
 ### Caveats
 - **Multi-origin AS** : Some prefixes originate from multiple AS's (which could be siblings or distinct organizations).
@@ -158,7 +156,7 @@ This makes it more challenging to interpret the appearance of a matching destina
 - `pyasn` can also be used for mapping between ipv4 addresses and origin asns.
 - The `pyasn` object is be initialized using an IPASN datafile. 
 - It also provides extremely fast lookups for IP addresses, as it returns the origin asns and the BGP prefixes it matches.
-- Detailed installation instructions and more information on Usage and IPASN data files [found here]( https://github.com/hadiasghari/pyasn ).
+- Detailed installation instructions, more information on usage, and IPASN data files can be found on the [PyASN GitHub repo](https://github.com/hadiasghari/pyasn ).
 - Note that the current `pyipmeta` **does not support** `ipv6`, whereas `pyasn` does. 
 
 However, `pyipmeyta` provides **greater flexbility** as it provides the geographical information as well. 
