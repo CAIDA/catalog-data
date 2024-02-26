@@ -24,6 +24,10 @@
         {
             "person": "person:pathak__pooja",
             "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        },
+        {
+            "person": "person:carisimo__esteban",
+            "organizations": [ "Northwestern University" ]
         }
     ]
 }
@@ -43,7 +47,11 @@ Detailed installation and usage instructions [here]( https://github.com/CAIDA/py
 
 # solution #
 
-The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
+The code below serves as an example of how to use the IP to ASN Mapper tool to map a list of IP addresses to their respective Autonomous System Numbers (ASNs) using data from CAIDA's RouteViews prefix-to-AS snapshots. It demonstrates the integration with pandas for efficient data handling and showcases the tool's capability to perform historical analysis by utilizing a snapshot from a specific date.
+
+### Variables to Be Modified by the User:
+- **DataFrame Source**: Replace the example IP address list or the DataFrame initialization with loading your data from a CSV, JSON, or Parquet file. Use the commented code as a guide to load your data file.
+- **date = `datetime.datetime(2020, 3, 4)**: Change this to the specific date for which you want to fetch the RouteViews prefix-to-AS snapshot. Ensure the format is datetime.datetime(YYYY, MM, DD).
 
 ### Map between ips and origin asns using PyIPMeta
 
@@ -52,42 +60,130 @@ More data can be found at http://data.caida.org/datasets/routing/routeviews-pref
 
 Sample ips.txt found [here]( http://data.caida.org/datasets/topology/ark/ipv4/dns-names/2019/05/dns-names.l7.20190501.txt.gz)
 
-**Usage** : `$ python3 ip_asn.py -i ips.txt`
+**Usage** : `$ python map_ip_to_asn.py`
 
 ~~~python
+from datetime import datetime
+
 import _pyipmeta 
-import argparse
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', dest = 'ips_file', default = '', help = 'Please enter the file name of the ips file')
-args = parser.parse_args()
+def find_routeviews_snapshot_url(date: datetime) -> str:
+    """
+    Retrieves the URL for a RouteViews prefix-to-AS snapshot from CAIDA's data repository for a specified date.
+    
+    Parameters
+    ----------
+    date : datetime
+        The date of the RouteViews prefix-to-AS snapshot to be downloaded.
+    
+    Returns
+    -------
+    url : str
+        The URL to the RouteViews prefix-to-AS snapshot.
+    """
+    
+    # Construct the base URL for the specific year and month
+    base_url = f"http://data.caida.org/datasets/routing/routeviews-prefix2as/{date.year}/{date.month:02d}/"
+    
+    # Attempt to retrieve the webpage
+    try:
+        response = requests.get(base_url)
+        response.raise_for_status()  # Raises an HTTPError if the response was an error
+    except requests.RequestException as e:
+        raise SystemExit(f"Error fetching data: {e}")
+    
+    # Parse the webpage to find links
+    soup = BeautifulSoup(response.text, 'html.parser')
+    links = soup.find_all('a')
+    
+    # Find the first file that matches the date format in its name
+    for link in links:
+        if date.strftime('%Y%m%d') in link.text:
+            file_name = link.text
+            return f"{base_url}{file_name}"
+    
+    # Return an an empty string as an error
+    return ""
 
+class IPToASN:
+    """
+    A class to map IP addresses to ASN (Autonomous System Number) using the RouteViews pfx2as snapshots.
+    """
 
-ipm = _pyipmeta.IpMeta()
+    def __init__(self, date: datetime):
+        """
+        Initializes the IPToASN mapper with data from a specific date.
 
-# print("Getting/enabling pfx2as provider (using included test data)")
-prov = ipm.get_provider_by_name("pfx2as")
-print(ipm.enable_provider(prov, "-f http://data.caida.org/datasets/routing/routeviews-prefix2as/2017/03/routeviews-rv2-20170329-0200.pfx2as.gz"))
-print()
+        Parameters
+        ----------
+        date : datetime
+            The date for which to fetch and use the RouteViews prefix-to-AS snapshot.
+        """
+        self.ip_meta = _pyipmeta.IpMeta()
+        provider = self.ip_meta.get_provider_by_name("pfx2as")
+        url_routeviews_snapshot = find_routeviews_snapshot_url(date)
+        
+        if url_routeviews_snapshot:  # Check directly if string is not empty
+            self.ip_meta.enable_provider(provider, f"-f {url_routeviews_snapshot}")
+            self.ip_to_asn = {}
+        else:
+            raise SystemExit("No snapshot found for the specified date.")
 
-# Create list of ips from test file 
-ips = []
-with open(args.ips_file) as f:
-    for line in f:
-        line = line.rstrip().split("\t")[1]
-        ips.append(line)
+    def get_ip_to_asn(self, ip: str) -> int:
+        """
+        Retrieves the ASN for a given IP address. Caches the result to avoid repeated lookups.
 
+        Parameters
+        ----------
+        ip : str
+            The IP address for which to find the corresponding ASN.
 
-# Map between ipv4 addresses and origin asns
-ip2asn = {}
-for ip in ips:
-    if ipm.lookup(ip):
-        (res,) =  ipm.lookup(ip)
-        if res.get('asns'):
-            ip2asn[ip] = res.get('asns')[-1]
+        Returns
+        -------
+        int
+            The ASN associated with the given IP address, or 0 if no ASN is found.
+        """
+        if ip not in self.ip_to_asn:
+            lookup_result = self.ip_meta.lookup(ip)
+            if lookup_result:
+                (result,) = lookup_result
+                self.ip_to_asn[ip] = result.get('asns')[-1] if result.get('asns') else 0
+            else:
+                self.ip_to_asn[ip] = 0
 
+        return self.ip_to_asn[ip]
 
-# print(ip2asn)
+def main():
+    # Create a DataFrame with IP addresses
+    df = pd.DataFrame(["157.92.49.99", "8.8.8.8", "0.0.0.0"], columns=["ip"])
+
+    # Load IP addresses from a CSV file
+    # df = pd.read_csv('path_to_your_file.csv')
+
+    # Load IP addresses from a JSON file
+    # df = pd.read_json('path_to_your_file.json')
+
+    # Load IP addresses from a Parquet file
+    # df = pd.read_parquet('path_to_your_file.parquet')
+    
+    # Convert tuple to datetime object for the date
+    date = datetime(2020, 3, 4)
+    
+    # Initialize the IP to ASN mapping class with the given date
+    ip_to_asn_mapper = IPToASN(date)
+    
+    # Map each IP to its ASN and add as a new column in the DataFrame
+    df["asn"] = df["ip"].apply(ip_to_asn_mapper.get_ip_to_asn)
+    
+    # Print the resulting DataFrame
+    print(df)
+
+if __name__ == "__main__":
+    main()
+
 ~~~
 
 ### Background
@@ -151,5 +247,5 @@ For example, `ipm.lookup('192.172.226.97')` returns:
 
 
 
-Copyright (c) 2020 The Regents of the University of California
+Copyright (c) 2024 The Regents of the University of California
 All Rights Reserved
