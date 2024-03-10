@@ -1,0 +1,70 @@
+{
+    "id": "2020_investigation_theft_afrinic_ipv4_esrp",
+    "name": "Investigation of Theft in AFRINIC IPv4 Addresses",
+    "description": "Presentation by ESRP students on theft in AFRINIC IPv4 addresses", 
+    "tags": [
+        "used_caida_data", 
+        "presentation",
+        "ipv4"
+    ], 
+    "presenters": [
+        {
+            "person": "person:Bhaskar_Niharika",
+            "organizations": [
+                "ESRP"
+            ],
+            "venue": "ESRP Presentation",
+            "date": "2020.06.01",
+            "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
+        },
+        {
+            "person": "person:Chan_Florence",
+            "organizations": [
+                "ESRP"
+            ],
+            "venue": "ESRP Presentation",
+            "date": "2020.06.01",
+            "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
+        },
+        {
+            "person": "person:Reddy_Pramith",
+            "organizations": [
+                "ESRP"
+            ],
+            "venue": "ESRP Presentation",
+            "date": "2020.06.01",
+            "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
+        },
+        {
+            "person": "person:Salem_Chloe",
+            "organizations": [
+                "ESRP"
+            ],
+            "venue": "ESRP Presentation",
+            "date": "2020.06.01",
+            "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
+        }
+    ], 
+    "links":"", 
+    "date": "2020.06.01",
+    "type": "PRESENTATION",
+    "access": [
+        {
+            "url": "https://www.caida.org/catalog/media/2020_investigation_theft_afrinic_ipv4_esrp/investigation_theft_afrinic_ipv4_esrp.pdf",
+            "tags": [
+                "presentation",
+                "PDF"
+            ],
+            "access": "public",
+            "type": "url"
+        },
+        {
+            "url": "https://drive.google.com/file/d/1eRjX8DSSH9Vp2eQrXkeSLSFHuLSKSRS4/view",
+            "tags": [
+                "video"
+            ],
+            "access": "public",
+            "type": "url"
+        }
+    ]
+}
