@@ -114,7 +114,7 @@ dataset:routeviews_ipv4_prefix2as_coalesced	Prefix to Autonmous Systems Ipv4	net
 	primary keys: network, length	asn_set		as	iana.asn											
 	filename: routeviews-prefix2as/(yyyy)/(mm)/routeviews-rv2-(yyyymmdd)-(hhmm).pfx2as.gz															
 																
-dataset:spoofer_data	Sessions	timestamp (before)		time	unix.timestamp										order, session, nat , priv_status, rout_status, status, page	
+dataset:spoofer_public	Sessions	timestamp (before)		time	unix.timestamp										order, session, nat , priv_status, rout_status, status, page
 		timestamp (strictly_before)		time	unix.timestamp											
 		timestamp (after)		time	unix.timestamp											
 		asn		as	iana.asn											
@@ -193,4 +193,4 @@ dataset:ark_itdk				as	iana.asn
 				hostname	name											
 				ip	iana.ip											
 				ip.path	traceroute											
-				city	name											
+				city	name
