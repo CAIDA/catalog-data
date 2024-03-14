@@ -319,7 +319,7 @@ dns-rtt-generic: 'software:dnsstat'
 dns-root-gtld-rtt: dns_root_gtld_rtt
 peeringdb: peeringdb_archive
 ixps: ixps
-spoofer: spoofer_data
+spoofer: spoofer_public
 
 # "Paper Data and Tools -> paper"
 complex_as_relationships: 'paper:2014_inferring_complex_as_relationships'

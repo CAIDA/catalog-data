@@ -596,3 +596,4 @@ media:2002_iepg_0203, presentation:2002_iepg_0203, , true
 media:2001_rssac_0112, presentation:2001_rssac_0112, , true
 dataset:routeviews-ipv4-prefix2as, dataset:routeviews_prefix2as, , true
 dataset:routeviews-ipv6-prefix2as, dataset:routeviews_prefix2as, , true
+dataset:spoofer_data, dataset:spoofer_public, , true
