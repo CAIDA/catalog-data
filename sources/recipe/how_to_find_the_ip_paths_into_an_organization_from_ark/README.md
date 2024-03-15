@@ -34,7 +34,7 @@ Fantail to collect the Ark traces to the those prefixes.
 ### Collect Prefixes  (bgptools)
 - Go to **bgp.tools** and type the organization name into the "Start here..." field. 
   <div style="margin-left:2em">
-    <img src="images/start-here.png"/>
+    <img width="400" src="images/start-here.png"/>
   </div>
 - Choose the best **AS number** on in the "Item" column for your organization.
   <div style="margin-left:2em">
