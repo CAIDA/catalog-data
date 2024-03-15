@@ -38,7 +38,7 @@ Fantail to collect the Ark traces to the those prefixes.
   </div>
 - Choose the best **AS number** on in the "Item" column for your organization.
   <div style="margin-left:2em">
-    <img src="images/select-asn.png"/>
+    <img width="400" src="images/select-asn.png"/>
   </div>
 - Download **https://bgp.tools/table.txt** and get all the prefixes for **AS number**. 
   ~~~
@@ -49,19 +49,19 @@ Fantail to collect the Ark traces to the those prefixes.
 ### Collect Traces (fantail) 
 - Log into **fantail.caida.org** and select **Query traceroute paths**
   <div style="margin-left:2em">
-    <img src="images/query-traceroute-paths.png"/>
+    <img width="400" src="images/query-traceroute-paths.png"/>
   </div>
 - Inside the **Query** box, set **Method** to **[ ] dest** and copy/paste the prefixes from
   **prefixes.txt** file into the **Target Address/Prefix** field. 
   <div style="margin-left:2em">
-    <img src="images/query-traceroute-paths.png"/>
+    <img width="400" src="images/query-traceroute-paths.png"/>
   </div>
 
 - Wait for the **Query Results** page to come up.
 - Download **JSON results**
   **prefixes.txt** file into the **Target Address/Prefix** field. 
   <div style="margin-left:2em">
-    <img src="images/download-json.png"/>
+    <img width="400" src="images/download-json.png"/>
   </div>
 
 - Copy/Paste the prefixes from the prefixes.txt file. tab will give you a list of the ASN's prefixes.
