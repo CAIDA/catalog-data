@@ -1,10 +1,10 @@
 {
     "id": "2020_investigation_theft_afrinic_ipv4_esrp",
     "name": "Investigation of Theft in AFRINIC IPv4 Addresses",
-    "description": "Presentation by ESRP students on theft in AFRINIC IPv4 addresses", 
+    "description": "Poster by ESRP students on theft in AFRINIC IPv4 addresses", 
     "tags": [
         "used_caida_data", 
-        "presentation",
+        "poster",
         "ipv4"
     ], 
     "presenters": [
@@ -13,7 +13,7 @@
             "organizations": [
                 "ESRP"
             ],
-            "venue": "ESRP Presentation",
+            "venue": "ESRP Poster Session",
             "date": "2020.06.01",
             "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
         },
@@ -22,7 +22,7 @@
             "organizations": [
                 "ESRP"
             ],
-            "venue": "ESRP Presentation",
+            "venue": "ESRP Poster Session",
             "date": "2020.06.01",
             "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
         },
@@ -31,7 +31,7 @@
             "organizations": [
                 "ESRP"
             ],
-            "venue": "ESRP Presentation",
+            "venue": "ESRP Poster Session",
             "date": "2020.06.01",
             "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
         },
@@ -40,19 +40,19 @@
             "organizations": [
                 "ESRP"
             ],
-            "venue": "ESRP Presentation",
+            "venue": "ESRP Poster Session",
             "date": "2020.06.01",
             "url": "https://ersp.eng.ucsd.edu/about/about-ersp"
         }
     ], 
     "links":"", 
     "date": "2020.06.01",
-    "type": "PRESENTATION",
+    "type": "POSTER",
     "access": [
         {
             "url": "https://www.caida.org/catalog/media/2020_investigation_theft_afrinic_ipv4_esrp/investigation_theft_afrinic_ipv4_esrp.pdf",
             "tags": [
-                "presentation",
+                "poster",
                 "PDF"
             ],
             "access": "public",
