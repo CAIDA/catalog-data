@@ -54,7 +54,7 @@ Fantail to collect the Ark traces to the those prefixes.
 - Inside the **Query** box, set **Method** to **[ ] dest** and copy/paste the prefixes from
   **prefixes.txt** file into the **Target Address/Prefix** field. 
   <div style="margin-left:2em">
-    <img width="400" src="images/query-traceroute-paths.png"/>
+    <img width="400" src="images/dest.png"/>
   </div>
 
 - Wait for the **Query Results** page to come up.
