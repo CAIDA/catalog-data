@@ -3,7 +3,6 @@
   "id": "how_to_find_the_ip_paths_into_an_organization_from_ark",
   "name": "How to find the IP paths into an organization from Ark?",
   "description": "This will provide a recipe to find a company's prefixes and the IP paths from CAIDA's ark to those prefixes.",
-  "visibility":"hidden",
   "links": [
     {
       "to": "dataset:bgptools"
