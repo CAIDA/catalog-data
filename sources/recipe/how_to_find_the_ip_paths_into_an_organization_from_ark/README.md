@@ -57,13 +57,15 @@ Fantail to collect the Ark traces to the those prefixes.
   <div style="margin-left:2em">
     <img width="400" src="images/query-traceroute-paths.png"/>
   </div>
-- Inside the **Query** box, set **Method** to **[ ] dest** and copy/paste the prefixes from
-  **prefixes.txt** file into the **Target Address/Prefix** field. 
+
+- Inside the **Query** box, set **Method** to **[ ] dest** and copy/paste the prefixes from **prefixes.txt** file into the **Target Address/Prefix** field. 
+
   <div style="margin-left:2em">
     <img width="400" src="images/dests.png"/>
   </div>
 
 - Wait for the **Query Results** page to come up.
+
 - Download **JSONL results**
   This will download the trace in a JSONL file with a single trace per line as a complete JSON object. 
   <div style="margin-left:2em">
@@ -84,6 +86,7 @@ Fantail to collect the Ark traces to the those prefixes.
             print (json.dumps(info, indent=4))
     ~~~
 
-~~~ For full details on traces reference <a href="https://catalog.caida.org/recipe/how_to_parse_ark_traces">How
+For full details on scamper traces reference 
+<a href="https://catalog.caida.org/recipe/how_to_parse_ark_traces">How
 to parse through an ark traceroute?</a> recipe.
 
