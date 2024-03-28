@@ -44,6 +44,7 @@ Fantail to collect the Ark traces to the those prefixes.
     <img width="400" src="images/select-asn.png"/>
   </div>
 - Download **https://bgp.tools/table.txt** and get all the prefixes for **AS number**. 
+
   ~~~
   wget https://bgp.tools/table.txt
   grep ' 7377$' table-14-03-24.txt | grep -v ':' | cut -f 1 -d ' ' - | tr '\n' ',' | sed 's/.\{1\}$//' > prefixes.txt 
