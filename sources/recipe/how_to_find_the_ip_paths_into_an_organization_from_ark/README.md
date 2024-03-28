@@ -39,10 +39,12 @@ Fantail to collect the Ark traces to the those prefixes.
   <div style="margin-left:2em">
     <img width="400" src="images/start-here.png"/>
   </div>
+
 - Choose the best **AS number** on in the "Item" column for your organization.
   <div style="margin-left:2em">
     <img width="400" src="images/select-asn.png"/>
   </div>
+
 - Download **https://bgp.tools/table.txt** and get all the prefixes for **AS number**. 
 
   ~~~
