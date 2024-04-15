@@ -67,7 +67,7 @@ parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of r
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 parser.add_argument("-c", dest="schema_category_file", help="data schema categories", type=str)
 parser.add_argument("-d", dest="schema_dataset_file", help="data schema datasets", type=str)
-parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-D", dest="git_dates_skip", help="doesn't add dates, faster", action='store_true')
 parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
@@ -301,12 +301,11 @@ def main():
                 #print (json.dumps(obj,indent=4))
 
 
-    if not args.dates_skip:
-        print ("adding dates ( skipping '*___*' )")
-        for obj in list(id_object.values()):
-            object_date_add(obj)
-    else:
-        print ("skipping adding dates")
+    if args.git_dates_skip:
+        print ("not checking git dates")
+    print ("adding dates ( skipping '*___*' )")
+    for obj in list(id_object.values()):
+        object_date_add(args.git_dates_skip, obj)
 
     print ("removing missing ids from id_id_links")
     missing = []
@@ -643,7 +642,39 @@ def id_date_load(filename):
         except ValueError as e:
             utils.error_add(filename, e.__str__())
 
-def object_date_add(obj):
+def object_date_add(git_dates_skip, obj):
+
+    # Created and modified 
+    if not git_dates_skip: 
+        ## Get github file modified dates 
+        for key in ["dateObjectCreated", "dateObjectModified"]:
+            if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
+                obj[key] = utils.date_parse(id_date[obj["id"]][key])
+            else:
+                # if the file is not a placeholder
+                if not re_placeholder.search(obj["filename"]):
+                    if key == "dateObjectCreated":
+                        cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
+                    else:
+                        cmd = "git log --format=%aD -1 -- "
+
+                    result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
+                    values = result.decode().lower().split(" ")
+                else:
+                    values = []
+                date = today
+                # if there was a date found, use as date (would not be found if placeholder)
+                if len(values) >= 4:
+                    if values[2] in mon_index:
+                        date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
+                obj[key] = date
+                if obj["id"] not in id_date:
+                    id_date[obj["id"]] = {}
+    
+    # use the date if it's already defined 
+    if "date" in obj:
+        return 
+
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
@@ -663,32 +694,6 @@ def object_date_add(obj):
                 else:       
                     obj[key] = utils.date_parse(obj[key])
             
-
-    ## Get github file modified dates 
-    for key in ["dateObjectCreated", "dateObjectModified"]:
-        if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
-            obj[key] = utils.date_parse(id_date[obj["id"]][key])
-        else:
-            # if the file is not a placeholder
-            if not re_placeholder.search(obj["filename"]):
-                if key == "dateObjectCreated":
-                    cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
-                else:
-                    cmd = "git log --format=%aD -1 -- "
-
-                result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
-                values = result.decode().lower().split(" ")
-            else:
-                values = []
-            date = today
-            # if there was a date found, use as date (would not be found if placeholder)
-            if len(values) >= 4:
-                if values[2] in mon_index:
-                    date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
-            obj[key] = date
-            if obj["id"] not in id_date:
-                id_date[obj["id"]] = {}
-    
     # change date start to dateCreated for software
     #if obj["__typename"] == "Software":
     #    if "dateCreated" not in obj and "dateModified" not in obj:
