@@ -1,3 +1,115 @@
+MARKER: 2023_biersack_f_ieee
+TYPE: online
+AUTHOR: Biersack, F; Holzinger, K; Stubbe, H; Wild, T; Carle, G; Herkersdorf, A
+TITLE: Priority-aware Inter-Server Receive Side Scaling
+PUBLISH: ieee
+YEAR: 2023-03
+DOI: 10.1109/PDP59025.2023.00016
+TOPKEY: passive-2015
+GEOLOC: Naples, IT
+---
+MARKER: 2023_punter_w_vldb
+TYPE: online
+AUTHOR: Punter, W; Papapetrou, O; Garofalakis, M
+TITLE: OmniSketch Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates
+PUBLISH: vldb
+YEAR: 2023-11
+URL:  https://www.vldb.org/pvldb/vol17/p319-punter.pdf
+TOPKEY: passive-2019, equinox-chicago
+GEOLOC: Eindhoven, NL
+---
+MARKER: 2023_zaplatel_a_acm
+TYPE: online
+AUTHOR: Zaplatel, A; Kuipers, F
+TITLE: Slowdown as a Metric for Congestion Control Fairness
+PUBLISH: acm
+YEAR: 2023-11
+URL:  https://dl.acm.org/doi/10.1145/3626111.3628185
+TOPKEY: passive-2016, passive-2017, passive-2018, passive-2019
+GEOLOC: Delft, NL
+---
+MARKER: 2023_kunze_i_acm
+TYPE: online
+AUTHOR: Kunze, I; Sander, C; Wehrle, K
+TITLE: Does It Spin? On the Adoption and Use of QUICs Spin Bit
+PUBLISH: acm
+YEAR: 2023-10
+URL:  https://dl.acm.org/doi/10.1145/3618257.3624844
+TOPKEY: topology-as-organization
+GEOLOC: Aachen, DE
+---
+MARKER: 2023_nourin_s_acm
+TYPE: online
+AUTHOR: Nourin, S; Tran, V; Jiang, X; Bock, K; Feamster, N; Hoang, N; Levin, D
+TITLE: Measuring and Evading Turkmenistans Internet Censorship A Case Study in Large-Scale Measurements of a Low-Penetration Country
+PUBLISH: acm
+YEAR: 2023-05
+DOI:  https://doi.org/10.1145/3543507.3583189
+TOPKEY: as-relationships, topology-as-rank, routeviews-prefix2as
+GEOLOC: College Park, MD, US
+---
+MARKER: 2023_sun_z_springer
+TYPE: online
+AUTHOR: Sun, Z.; Sun, Y.; Du, Y; Liu, J; Huang, H
+TITLE: Persistent Sketch A Memory-Efficient and Robust Algorithm for Finding Top-k Persistent Flows
+PUBLISH: springer
+YEAR: 2024-02
+URL: https://link.springer.com/chapter/10.1007/978-981-97-0811-6_2
+TOPKEY: passive-2016
+
+GEOLOC: Suzhou, CN
+---
+MARKER: 2023_li_x_ieee
+TYPE: online
+AUTHOR: Li, X.; Zhou, T.; Cai, Z; Su, J
+TITLE: Realizing Fine-Grained Inference of AS Path With a Generative Measurable Process
+PUBLISH: ieeexplore.iee.org
+YEAR: 2023-05
+URL: https://ieeexplore.ieee.org/abstract/document/10129907/
+TOPKEY: topology-as-rank, topology-as-relationships
+GEOLOC: Changsha, CN
+---
+MARKER: 2023_yan_r_ijicic
+TYPE: online
+AUTHOR: Yan, R.; Wang, Y.; Zhong, Z; Zhang, Y; Yang, T; Cui, B
+TITLE: AN EFFECTIVE METHOD FOR DIFFERENTIATING BETWEEN DDOS ATTACKS AND FLASH CROWDS
+PUBLISH: ijicic.org
+YEAR: 2023-04
+URL: http://www.ijicic.org/ijicic-200103.pdf
+TOPKEY: ddos-20070804
+GEOLOC: Zhengzhou, CN
+
+MARKER: 2023_zhao_y_acm
+TYPE: online
+AUTHOR: Zhao, Y.; Han, W.; Zhong, Z; Zhang, Y; Yang, T; Cui, B
+TITLE: Double-Anonymous Sketch Achieving Top-K-fairness for Finding Global Top-K Frequent Items
+PUBLISH: acm
+YEAR: 2023-05
+URL: https://dl.acm.org/doi/abs/10.1145/3588933
+TOPKEY: passive-2016
+GEOLOC: Beijing, CN
+---
+MARKER: 2023_paul_s_springer
+TYPE: online
+AUTHOR: Paul, S.; Salas, J.; Torra, V
+TITLE: Edge Local Differential Privacy for Dynamic Graphs
+PUBLISH: springer
+YEAR: 2023-08
+URL: https://link.springer.com/chapter/10.1007/978-981-99-5177-2_13
+TOPKEY: topology-as-rank
+GEOLOC: Umea, SE
+---
+MARKER: 2023_salamatian_l_acm
+TYPE: online
+AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I.; Zhu, J., Zhang, Y; Katz-Bassett, E; Calder, M.
+TITLE: Who Squats IPv4 Addresses?
+PUBLISH : dl.acm.org
+YEAR: 2023-04
+DOI: https://doi.org/10.1145/3594255.3594260
+URL: https://dl.acm.org/doi/abs/10.1145/3594255.3594260
+TOPKEY: "telescope-generic"
+GEOLOC: New York, NY, US
+---
 MARKER: 2023_ramzan_m_mdpi
 TYPE: online
 AUTHOR: Ramzan, M.; Shoaib, M.; Altaf, A.; Arshad, S.; Iqbal, F.; Castilla, A.; Ashraf, I.
@@ -63,7 +175,7 @@ GEOLOC: Shenyang, CN
 MARKER: 2023_mohan_m_springer
 TYPE: online
 AUTHOR: Mohan, M.; Tamizhazhagan, V.; Balaji, S.
-TITLE: A Perspicacious Multi-level Defense System Against DDoS Attacks in Cloud Using Information Metric & Game Theoretical Approach
+TITLE: A Perspicacious Multi-level Defense System Against DDoS Attacks in Cloud Using Information Metric and Game Theoretical Approach
 PUBLISH : springer
 YEAR: 2023-10
 DOI: https://doi.org/10.1007/s10922-023-09776-7
@@ -105,7 +217,7 @@ MARKER: 2023_parekh_v_doi
 TYPE: in_journal
 AUTHOR: Parekh, V.; Saravanan, M.
 TITLE: An Empirical Overview on DDoS Taxonomy, Attacks, Tools and Attack Detection Mechanism
-PUBLISH : Springer Singapore
+PUBLISH : Springer, SG
 YEAR: 2023-03
 SERIAL: DOI
 URL: https://doi.org/10.1145/2339530.2339539
@@ -207,7 +319,7 @@ GEOLOC: Hangzhou, CN
 MARKER: 2023_brunstrom_a_google_books
 TYPE: in_journal
 AUTHOR: Brunstrom, A.; Flores, M.; Fiore, M.
-TITLE: Passive and Active Measurement 24th International Conference, PAM 2023, Proceedings
+TITLE: Passive and Active Measurement 24th International Conference, PAM 2023, Virtual Event, March 21–23, 2023, Proceedings
 PUBLISH : Google Books
 YEAR: 2023-03
 SERIAL: Google Books
@@ -618,7 +730,7 @@ MARKER: 2019_yang_r_weifhu_012491
 TYPE: inproceedings
 AUTHOR: Yang, R., Hu, W.
 TITLE: A Superspreader Detection Algorithm in the Dataplane
-CTITLE: Proceedings of ACM Conference (Conference '17)
+CTITLE: Proceedings of ACM Conference (Conference 17)
 YEAR: 2017-07
 VOLUME: ''
 PAGE: 1-9
@@ -633,8 +745,7 @@ TYPE: inproceedings
 AUTHOR: Pontarelli, S., Bifulco, R., Bonola, M., Cascone, C., Spazian, M., Bruschi,
   V., Sanvito, D., Siracusano, G., Capone, A., Honda, M.,  Huici, F., Bianchi, G.
 TITLE: 'FlowBlaze: Stateful Packet Processing in Hardware'
-CTITLE: ' Proceedings of the 16th USENIX Symposium on Networked Systems Design and
-  Implementation (NSDI ''19)'
+CTITLE: 'Proceedings of the 16 USENIX Symposium on NSDI 19'
 YEAR: 2019-02
 VOLUME: ''
 PAGE: 531-547
@@ -1762,8 +1873,7 @@ MARKER: 2018_birkner_r_usenix_931971430
 TYPE: inproceedings
 AUTHOR: Birkner, R., Drachsler-Cohen, D., Vanbever, L., Vechev, M.
 TITLE: 'Net2Text: Query-Guided Summarization of Network Forwarding Behaviors'
-CTITLE: Proceedings of the 15th USENIX Symposium on Networked Systems Design and Implementation
-  (NSDI 18)
+CTITLE: 'Proceedings of the 15th USENIX Symposium NSDI 18'
 YEAR: 2018-04
 VOLUME: ''
 PAGE: 609-623
@@ -3977,7 +4087,7 @@ ABS: ''
 MARKER: 2017_gamba_j_halarch_01517542
 TYPE: inproceedings
 AUTHOR: Gamba, J., Fontugne, R., Pelsser, C., Bush, R., Aben, E.
-TITLE: 'BGP Table Fragmentation: what & who?'
+TITLE: 'BGP Table Fragmentation: what and  who?'
 CTITLE: Rencontres Francophones sur la Conception de Protocoles, l'Evaluation de Performance
   et l'Experimentation des Reseaux de Communication
 YEAR: 2017-05
@@ -26121,7 +26231,7 @@ YEAR: '2019'
 PAGE: (16 pages)
 DOI: 10.1109/SP.2019.00055
 TOPKEY: topology-as-relationships, topology-as-rank
-GEOLOC: Singapore, SN
+GEOLOC: Singapore, SG
 ABS: '-Large botnet-based flooding attacks have recently demonstrated unprecedented
   damage. However, the best-known end-to-end availability guarantees against flooding
   attacks require costly global-scale coordination among autonomous systems (ASes).
@@ -32296,7 +32406,7 @@ YEAR: 2018-08
 PAGE: (10 pages)
 URL: https://arxiv.org/abs/1808.06800
 TOPKEY: topology-ark-ipv4-traceroute
-GEOLOC: Singapore, SN
+GEOLOC: Singapore, SG
 ABS: In rapid and massive data streams, it is often not possible to estimate the frequency
   of items with complete accuracy. To perform the operation in a reasonable amount
   of space and with sufficiently low latency, approximated methods are used. The most
@@ -56698,7 +56808,7 @@ YEAR: 2013-08
 DOI: 10.1145/2492517.2492663
 TOPKEY: topology-as-relationships
 GEOLOC: Syracuse, NY, US
-PLACE: Niagara Falls, CA, 25-28 August 2013
+PLACE: Niagara Falls, Canada, 25-28 August 2013
 ABS: 'We model the emergence and propagation of reputations in social networks with
   a novel distributed algorithm. In social networks, reputations of agents (nodes)
   are emerged and propagated through interactions among the agents and through intrinsic
@@ -57666,7 +57776,7 @@ YEAR: 2013-05
 DOI: 10.1145/2486092.2486103
 TOPKEY: passive-2011
 GEOLOC: Miami, FL, US
-PLACE: Montreal, CA, 19-22 May 2013
+PLACE: Montreal, Canada, 19-22 May 2013
 ABS: A testbed capable of representing detailed operations of complex applications
   under diverse large-scale network conditions can be extremely helpful for investigating
   potential system design and implementation problems, and studying application performance
