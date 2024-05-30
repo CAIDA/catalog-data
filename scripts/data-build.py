@@ -662,6 +662,7 @@ def object_date_add(git_dates_skip, obj):
                     values = result.decode().lower().split(" ")
                 else:
                     values = []
+                today = datetime.date.today().strftime("%Y-%m")
                 date = today
                 # if there was a date found, use as date (would not be found if placeholder)
                 if len(values) >= 4:
