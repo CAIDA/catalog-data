@@ -33879,8 +33879,8 @@ ABS: During the last few years, there has been plenty of research for reducing e
   scheduler to a bundle link made up of Energy Efficient Ethernet (EEE) links between
   two SDN switches. We show how our application is able to dynamically adapt to the
   traffic characteristics and save energy by concentrating the traffic on as few ports
-  as possible. This way, unused ports remain in Low Power Idle (LPI) state most of
-  the time, saving energy
+  as possible. This way, unused ports remain in Low Power Idle (LPI) state most of the time,
+  saving energy. Barcelona, Spain, 23-26 April 2018
 URL: http://dx.doi.org/10.1109/SDS.2018.8370432
 ---
 MARKER: 2018_h_lierde_j_complex_netw_7_1
