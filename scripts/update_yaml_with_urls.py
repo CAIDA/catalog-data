@@ -20,7 +20,8 @@ def save_yaml(filename, data):
 # Load the spreadsheet
 def load_spreadsheet(filename, sheet_name):
     df = pd.read_excel(filename, sheet_name=sheet_name, header=None)
-    return {row[0]: row[1] for _, row in df.iterrows()}
+    # Create a dictionary with titles as keys and tuples of (url, validation) as values
+    return {row[0]: (row[1], row[2]) for _, row in df.iterrows()}
 
 # Update the YAML data with URLs from the spreadsheet
 def update_yaml_with_urls(yaml_data, url_dict):
@@ -31,7 +32,8 @@ def update_yaml_with_urls(yaml_data, url_dict):
         title = entry.get('TITLE')
 
         if title and 'URL' not in entry:
-            if title in url_dict:
+            url, validation = url_dict.get(title, (None, None))
+            if validation == 'valid' and url:
                 entry['URL'] = url_dict[title]
     return yaml_data
 
