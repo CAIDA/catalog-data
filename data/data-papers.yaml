@@ -268,16 +268,6 @@ URL: https://doi.org/10.1145/3594255.3594260
 TOPKEY: backscatter-2004-2005
 GEOLOC: New York, NY, US
 ---
-MARKER: 2023_carisimo_e_arxiv
-TYPE: online
-AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
-TITLE: A hop away from everywhere A view of the intercontinental long-haul infrastructure
-PUBLISH: arxiv.org
-YEAR: 2023-03
-URL: https://arxiv.org/pdf/2303.02514.pdf
-TOPKEY: topology-ark-ipv4-prefix-probing
-GEOLOC: Evanston, IL, US
----
 MARKER: 2023_carchiolo_v_
 TYPE: online
 AUTHOR: Carchiolo, V.; Grassia, M.; Longheu, A.; Malgeri, M.; Mangionim, G.
@@ -71062,3 +71052,5 @@ PUBLISH: Proceedings of the VLDB Endowment
 YEAR: 2023-11
 URL: https://www.vldb.org/pvldb/vol17/p319-punter.pdf
 TOPKEY: passive-2019
+
+
