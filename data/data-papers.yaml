@@ -346,19 +346,6 @@ URL:
 TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-organization
 GEOLOC: Karlstad, SE
 ---
-MARKER: 2023_ramanathan_a_arxiv
-TYPE: online
-AUTHOR: Ramanathan, A., Jyothi, S.
-TITLE: Nautilus A Framework for Cross-Layer Cartography of Submarine Cables and IP
-  Links
-PUBLISH: arxiv.org
-PAGE: 1-123
-YEAR: 2023-02
-URL: https://arxiv.org/abs/2302.14201
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute
-GEOLOC: Irvine, CA, US
-ABS: ''
----
 MARKER: 2019_bai_r_libpoly
 TYPE: phdthesis
 AUTHOR: Bai, R.
@@ -70689,6 +70676,7 @@ AUTHOR: Ramanathan, A.; Jyothi, S.
 TITLE: 'Nautilus: A Framework for Cross-Layer Cartography of Submarine Cables and
   IP Links'
 PUBLISH: arxiv.org
+PAGE: 1-123
 YEAR: 2023-02
 URL: https://arxiv.org/abs/2302.14201
 TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute
