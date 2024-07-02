@@ -70811,11 +70811,12 @@ TOPKEY: routeviews-prefix2as
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_carisimo_e_arxiv
-TYPE: online
+TYPE: in_proceedings
 AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
 TITLE: 'A hop away from everywhere: A view of the intercontinental long-haul infrastructure'
 PUBLISH: arxiv.org
 YEAR: 2023-03
+CTITLE: SIGMETRICS/PERFORMANCE '24
 URL: https://arxiv.org/pdf/2303.02514.pdf
 TOPKEY: topology-ark-ipv4-prefix-probing
 GEOLOC: Evanston, IL, US
@@ -71052,5 +71053,4 @@ PUBLISH: Proceedings of the VLDB Endowment
 YEAR: 2023-11
 URL: https://www.vldb.org/pvldb/vol17/p319-punter.pdf
 TOPKEY: passive-2019
-
 
