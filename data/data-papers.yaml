@@ -1,3 +1,43 @@
+MARKER: 2023_zhang_c_ieee
+TYPE: online
+AUTHOR: Zhang, C; Miao, C; An, C; Hong, A
+TITLE: Metis: Detecting Fake AS-PATHs Based on Link Prediction
+PUBLISH: ieee
+YEAR: 2023-08
+URL:  https://ieeexplore.ieee.org/abstract/document/10218104
+TOPKEY: as-relationships
+GEOLOC: Beijing, CN
+---
+MARKER: 2023_oh_s_ieee
+TYPE: online
+AUTHOR: Oh, S; Han, S; Lee, H; Pack, S
+TITLE: BACKWARD: A Victim-Centric DDoS Detection and Mitigation Scheme in Programmable Data Plane
+PUBLISH: ieee
+YEAR: 2023-03
+URL:  https://ieeexplore.ieee.org/abstract/document/10059724
+TOPKEY: passive-2019
+GEOLOC: Seoul, KR
+---
+MARKER: 2023_furness_j_acm
+TYPE: online
+AUTHOR: Furuness, J; Morris, C; Morillo, R; Herzberg, A; Wang, B
+TITLE: Bgpy: The bgp python security simulator
+PUBLISH: acm
+YEAR: 2023-08
+URL:  https://dl.acm.org/doi/abs/10.1145/3607505.3607509
+TOPKEY: as-relationships
+GEOLOC: Storrs, CT, US
+---
+MARKER: 2023_chen_x_acm
+TYPE: online
+AUTHOR: Chen, X; Shi, W; Liu, J; Hou, M; Li, Y
+TITLE: 6Community An active IPv6 address detection method based on community discovery algorithm
+PUBLISH: acm
+YEAR: 2023-11
+URL:  https://dl.acm.org/doi/abs/10.1145/3625403.3625426
+TOPKEY: topology-ark-ipv6-traceroute
+GEOLOC: Chengdu, CN
+---
 MARKER: 2023_kawerau_l_tanf
 TYPE: online
 AUTHOR: Kawerau, L; Weidmann, N; Dainotti, A
