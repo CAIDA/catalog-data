@@ -1,3 +1,93 @@
+MARKER: 2023_rodday_n_ieee
+TYPE: online
+AUTHOR: Rodday, N; Rodosek, G
+TITLE: BGPEval: Automating Large-Scale Testbed Creation
+PUBLISH: ieee
+YEAR: 2023-11
+URL:  https://ieeexplore.ieee.org/abstract/document/10327905
+TOPKEY: as-relationships
+GEOLOC: Enschede, NL
+---
+MARKER: 2024_khadka_s_springer
+TYPE: online
+AUTHOR: Khadka, S; Holz, R; Hesselman, C
+TITLE: Towards security transparency of Autonomous Systems on the Internet
+PUBLISH: springer
+YEAR: 2024-03
+URL:  https://link.springer.com/chapter/10.1007/978-3-031-54129-2_30
+TOPKEY: spoofer
+GEOLOC: Enschede, NL
+---
+MARKER: 2023_rye_e_acm
+TYPE: online
+AUTHOR: Rye, E; Levin, D
+TITLE: IPv6 Hitlists at Scale: Be Careful What You Wish For
+PUBLISH: acm
+YEAR: 2023-09
+URL:  https://dl.acm.org/doi/abs/10.1145/3603269.3604829
+TOPKEY: topology-ark-ipv6-traceroute
+GEOLOC: College Park, MD, US
+---
+MARKER: 2023_wang_b_acm
+TYPE: online
+AUTHOR: Wang, B; Chen, R; Tang, L
+TITLE: EasyQuantile: Efficient Quantile Tracking in the Data Plane
+PUBLISH: acm
+YEAR: 2023-09
+URL:  https://dl.acm.org/doi/abs/10.1145/3600061.3600084
+TOPKEY: passive-2019
+GEOLOC: Xiamen, CH
+---
+MARKER: 2023_yeganeh_b_ieee
+TYPE: online
+AUTHOR: Bahador, Y; Durairajan, R; Rejaie, R; Melis, A; Willinger, W
+TITLE: A case for performance-and cost-aware multi-cloud overlays
+PUBLISH: ieee
+YEAR: 2023-09
+URL:  https://ieeexplore.ieee.org/abstract/document/10255002
+TOPKEY: topology-as-organization, ixps
+GEOLOC: Eugene, OR, US
+---
+MARKER: 2023_cicco_n_acm
+TYPE: online
+AUTHOR: Cicco, N; Sadi, A; Grasselli, C; Melis, A; Antichi, G; Tornatore, M
+TITLE: Poster: Continual Network Learning
+PUBLISH: acm
+YEAR: 2023-09
+URL:  https://dl.acm.org/doi/abs/10.1145/3603269.3610855
+TOPKEY: passive-2019
+GEOLOC: Milan, IT
+---
+MARKER: 2023_jananthan_h_ieee 
+TYPE: online
+AUTHOR: Jananthan, H; Jepner, J; Jones, M; Arcand, W
+TITLE: Mapping of Internet “Coastlines” via Large Scale Anonymized Network Source Correlations
+PUBLISH: IEEE
+YEAR: 2023-12
+URL:  https://ieeexplore.ieee.org/abstract/document/10363488
+TOPKEY: telescope-generic, passive-2019
+GEOLOC: Boston, MA, US
+---
+MARKER: 2023_arouna_a_ieee 
+TYPE: online
+AUTHOR: Evnag, J; Livadariu, I
+TITLE: How Large Is the Gap? Exploring MANRS and ISO27001 Security Management
+PUBLISH: IEEE
+YEAR: 2023-10
+URL:  https://ieeexplore.ieee.org/abstract/document/10271691/
+TOPKEY: spoofer
+GEOLOC: Oslo, NO
+---
+MARKER: 2023_arouna_a_ieee 
+TYPE: online
+AUTHOR: Arouna, A; Livadariu, I; Khanyari, A; Elmokashfi, A
+TITLE: On Large-Scale IP Service Disruptions Dependencies
+PUBLISH: IEEE
+YEAR: 2023-11
+URL:  https://ieeexplore.ieee.org/abstract/document/10327794
+TOPKEY: topology-as-rank, as-relationships, routeviews-prefix2as
+GEOLOC: Oslo, NO
+---
 MARKER: 2023_biersack_f_ieee
 TYPE: online
 AUTHOR: Biersack, F; Holzinger, K; Stubbe, H; Wild, T; Carle, G; Herkersdorf, A
