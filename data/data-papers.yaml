@@ -1,3 +1,63 @@
+MARKER: 2023_kawerau_l_tanf
+TYPE: online
+AUTHOR: Kawerau, L; Weidmann, N; Dainotti, A
+TITLE: Attack or block? Repertoires of digital censorship in autocracies
+PUBLISH: Taylor&Francis
+YEAR: 2022-04
+URL:  https://www.tandfonline.com/doi/abs/10.1080/19331681.2022.2037118
+TOPKEY: telescope-generic
+GEOLOC: Konstanz, DE
+---
+MARKER: 2023_su_h_acm
+TYPE: online
+AUTHOR: Su, H; Xiao, Q
+TITLE: Online Detection of 1D and 2D Hierarchical Super-Spreaders in High-Speed Networks
+PUBLISH: acm
+YEAR: 2023-09
+URL:  https://dl.acm.org/doi/abs/10.1145/3600061.3600080
+TOPKEY: passive-2018
+GEOLOC: Nanjing, CN
+---
+MARKER: 2023_kunze_i_acm
+TYPE: online
+AUTHOR: Kunze, I; Sander, C; Wehrle, K
+TITLE: Does It Spin? On the Adoption and Use of QUIC's Spin Bit
+PUBLISH: acm
+YEAR: 2023-10
+URL:  https://dl.acm.org/doi/abs/10.1145/3618257.3624844
+TOPKEY: as-organizations
+GEOLOC: Aachen, DE
+---
+MARKER: 2023_ye_h_ieee
+TYPE: online
+AUTHOR: Ye, H; Wang, S; Li, D
+TITLE: Impact of International Submarine Cable on Internet Routing
+PUBLISH: ieee
+YEAR: 2023-10
+URL:  https://ieeexplore.ieee.org/abstract/document/10229024
+TOPKEY: topology-ark-itdk, as-relationships
+GEOLOC: Beijing, CN
+---
+MARKER: 2023_lakineni_p_ieee
+TYPE: online
+AUTHOR: Lakineni, P; Kumar, S; Modi, S
+TITLE: Deepflow: A Software-Defined Measurement System for Deep Learning
+PUBLISH: ieee
+YEAR: 2023-07
+URL:  https://ieeexplore.ieee.org/abstract/document/10182469
+TOPKEY: passive-2016
+GEOLOC: Tirupathi, IN
+---
+MARKER: 2023_qiang_s_acm
+TYPE: online
+AUTHOR: Su, Q; Wu, S; Niu, Z; Shu, R; Cheng, P; Xiong, Y; Xue, J; Xu, H
+TITLE: Poster: Meili: Towards SmartNIC as a Service
+PUBLISH: acm
+YEAR: 2023-09
+URL:  https://dl.acm.org/doi/abs/10.1145/3603269.3610859
+TOPKEY: passive-2018
+GEOLOC: Beijing, CN
+---
 MARKER: 2023_rodday_n_ieee
 TYPE: online
 AUTHOR: Rodday, N; Rodosek, G
