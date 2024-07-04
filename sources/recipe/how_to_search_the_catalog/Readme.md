@@ -98,6 +98,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [types=paper routing !links=tag:caida](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida) | search for papers with the word `routing` without the tag `caida`|
 | [types=paper routing !links=tag:caida dates=2020,2021](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida%20dates=2020,2021) | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
 | [types=paper persons=claffy](https://catalog.caida.org/search?query=types=paper%20persons=claffy) | search for papers authored by people with `claffy` in their name |
+| [types=paper links=collection:archipelago links=tag:used_caida_data](https://catalog.caida.org/search?query=types%3Dpaper%20links%3Dcollection%3Aarchipelago%20links%3Dtag%3Aused_caida_data)| search for papers related to the Ark dataset collection that have the tag `used caida data`|
 | [ids=paper:2021\_wie2020\_report](https://catalog.caida.org/search?query=ids=paper:2021_wie2020_report) | search for the object with the id `paper:2021_wie2020_report` |
 | [persons=claffy](https://catalog.caida.org/search?query=persons=claffy) | search for objects associated with people with `claffy` in their name |
 | [links=person:clark\_\_david](https://catalog.caida.org/search?query=links=person:clark__david) | search for objects directly linked with the person named David Clark |
