@@ -213,8 +213,14 @@
     public : False
   dns-root-gtld-rtt:
     predict: False
-    public : TrueTrue
+    public : True
   peeringdb:
+    predict: False
+    public : True
+  ixps:
+    predict: False
+    public : True
+  spoofer:
     predict: False
     public : True
 "Paper Data and Tools -> paper":
@@ -337,6 +343,7 @@ dolphin: 'presentation:2014_dolphin_dhs'
 asfinder: 'software:coralreef'
 netgeo: 'software:netgeo'
 ioda: 'software:ioda'
+
 #ignore:
 #	asfinder
 #	coralreef
