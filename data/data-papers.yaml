@@ -1,18 +1,8 @@
-MARKER: 2023_biersack_f_ieee
-TYPE: online
-AUTHOR: Biersack, F; Holzinger, K; Stubbe, H; Wild, T; Carle, G; Herkersdorf, A
-TITLE: Priority-aware Inter-Server Receive Side Scaling
-PUBLISH: ieee
-YEAR: 2023-03
-DOI: 10.1109/PDP59025.2023.00016
-TOPKEY: passive-2015
-GEOLOC: Naples, IT
----
 MARKER: 2023_punter_w_vldb
 TYPE: online
 AUTHOR: Punter, W; Papapetrou, O; Garofalakis, M
-TITLE: OmniSketch Efficient Multi-Dimensional High-Velocity Stream Analytics with
-  Arbitrary Predicates
+TITLE: 'OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with
+  Arbitrary Predicates'
 PUBLISH: vldb
 YEAR: 2023-11
 URL: https://www.vldb.org/pvldb/vol17/p319-punter.pdf
@@ -224,18 +214,6 @@ DOI: https://doi.org/ 10.17485/IJST/v16iSP2.9526
 TOPKEY: ddos-20070804
 GEOLOC: Guwahati, IN
 ---
-MARKER: 2023_parekh_v_doi
-TYPE: in_journal
-AUTHOR: Parekh, V.; Saravanan, M.
-TITLE: An Empirical Overview on DDoS Taxonomy, Attacks, Tools and Attack Detection
-  Mechanism
-PUBLISH: Springer, SG
-YEAR: 2023-03
-SERIAL: DOI
-URL: https://doi.org/10.1145/2339530.2339539
-TOPKEY: passive-2007
-GEOLOC: Singapore, SG
----
 MARKER: 2023_hekmati_a_arxiv
 TYPE: online
 AUTHOR: Hekmati, A.; Jethwa, N.; Grippo, E; Krishnamachari, B.
@@ -299,18 +277,6 @@ SERIAL: Springer
 URL: https://link.springer.com/article/10.1007/s13369-023-08075-2
 TOPKEY: ddos-20070804, passive-oc48
 GEOLOC: Prayagraj, IN
----
-MARKER: 2023_miao_r_ieee
-TYPE: in_journal
-AUTHOR: Miao, R.; Zhang, Y.; Zheng, Z.; Wang, R.; Zhang, R.; Yang, T.; Liu, Z.; Jiang,
-  J.
-TITLE: CocoSketch High-Performance Sketch-Based Measurement Over Arbitrary Partial
-  Key Query
-YEAR: 2023-4
-SERIAL: IEEE
-URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10093795
-TOPKEY: passive-2016
-GEOLOC: Beijing, CN
 ---
 MARKER: 2023_oppenheimer_h_peio.me
 TYPE: PhD thesis
@@ -2230,20 +2196,6 @@ DOI: 10.1145/3503222.3507769
 URL: https://dl.acm.org/doi/abs/10.1145/3503222.3507769
 TOPKEY: passive-2019
 GEOLOC: London, GB
-ABS: ''
----
-MARKER: 2022_liu_j_acm_3512019
-TYPE: inproceedings
-AUTHOR: Liu, J., Dai, H., Xia, R., Li, M., Basat, R., Li, R., Chen, G.
-TITLE: 'DUET: A Generic Framework for Finding Special Quadratic Elements in Data Streams'
-CTITLE: Proceedings of the ACM Web Conference 2022 (WWW '22)
-YEAR: 2022-04
-VOLUME: ''
-PAGE: 2989-2997
-DOI: 10.1145/3485447.3512019
-URL: https://dl.acm.org/doi/abs/10.1145/3485447.3512019
-TOPKEY: passive_2016
-GEOLOC: Nanjing, CN
 ABS: ''
 ---
 MARKER: 2022_pei_s_acm_3502735
@@ -14260,20 +14212,6 @@ TOPKEY: topology-generic
 GEOLOC: Torino, IT
 ABS: ''
 ---
-MARKER: 2020_czachorski_t_rgate_340535806
-TYPE: misc
-AUTHOR: Czachorski, T., Gelenbe, E., Kuaban, G., Marek, D.
-TITLE: 'Dynamics of Software Defined Networks: Diffusion Models'
-PUBLISH: arxiv.org
-YEAR: 2020-04
-VOLUME: ''
-PAGE: (7)
-URL: 
-  https://www.researchgate.net/publication/340535806_Dynamics_of_Software_Defined_Networks_Diffusion_Models
-TOPKEY: passive-2016
-GEOLOC: Gliwice, PL
-ABS: ''
----
 MARKER: 2020_zhang_h_lspringer_019007621
 TYPE: article
 AUTHOR: Zhang, H., Zou, L., Zeng, L., Gou, X.
@@ -18113,18 +18051,6 @@ URL:
 TOPKEY: telescope-3days-conficker, code-red worm, witty worm
 GEOLOC: Grahamstown, SA
 ---
-MARKER: 2015_1_bou_harb_elsvier_234234
-TYPE: article
-AUTHOR: Fachkha, C., Bou-Harb, E., Debbabi, M.
-TITLE: Inferring distributed reflection denial of service attacks from darknet
-YEAR: 2015-01
-SERIAL: Computer Communications
-VOLUME: '34'
-PAGE: (13 pages)
-URL: http://faculty.business.utsa.edu/Elias-BouHarb//pubs/journals/reflection2015.pdf
-TOPKEY: telescope-real-time
-GEOLOC: Montreal, CA
----
 MARKER: 2015_8_bou_harb_elsvie_09734r
 TYPE: inproceedings
 AUTHOR: Bou-Harb, E., Debbai, M., Assi, C.
@@ -19455,22 +19381,6 @@ DOI: 10.1145/3342195.3387542
 URL: https://doi.org/10.1145/3342195.3387542
 TOPKEY: passive-2018
 GEOLOC: Gothenburg, SE
----
-MARKER: 2020_huang_qun_omnimon_network_telemetry_3405877
-TYPE: inproceedings
-AUTHOR: Huang, Qun; Sun, Haifeng; Lee, Patrick P. C.; Bai, Wei; Zhu, Feng; Bao, Yungang
-TITLE: 'OmniMon: Re-architecting Network Telemetry with Resource Efficiency and Full
-  Accuracy'
-CTITLE: Annual conference of the ACM Special Interest Group on Data Communication
-  on the applications, technologies, architectures, and protocols for computer communication
-  (SIGCOMM 20)
-YEAR: '2020'
-VOLUME: ''
-PAGE: 404-421
-DOI: 10.1145/3387514.3405877
-URL: https://doi.org/10.1145/3387514.3405877
-TOPKEY: passive-2018
-GEOLOC: Beijing, CN
 ---
 MARKER: 2020_gan_edward_data_summaries_5769123
 TYPE: phdthesis
@@ -32943,34 +32853,6 @@ ABS: 'User anonymity faces increasing threats from private companies, network se
   anonymous communication system designs.'
 URL: http://dx.doi.org/10.1184/R1/7212494.v1
 ---
-MARKER: 2018_b_liu_usenix
-TYPE: inproceedings
-AUTHOR: Liu, B., Lu, C., Duan, H., Liu, Y., Li, Z., Hao, S., Yang, M.
-TITLE: 'Who is answering my queries: Understanding and characterizing interception
-  of the DNS resolution path'
-CTITLE: USENIX Security Symp.
-YEAR: 2018-08
-PAGE: (17 pages)
-TOPKEY: topology-as-rank
-GEOLOC: Beijing, CN
-ABS: DNS queries from end users are handled by recursive DNS servers for scalability.
-  For convenience, Internet Service Providers (ISPs) assign recursive servers for
-  their clients automatically when the clients choose the default network settings.
-  But users should also have the flexibility to use their preferred recursive servers,
-  like public DNS servers. This kind of trust, however, can be broken by the hidden
-  interception of the DNS resolution path (which we term as DNSIntercept). Specifically,
-  on-path devices could spoof the IP addresses of user specified DNS servers and intercept
-  the DNS queries surreptitiously, introducing privacy and security issues. In this
-  paper, we perform a large-scale analysis of onpath DNS interception and shed light
-  on its scope and characteristics. We design novel approaches to detect DNS interception
-  and leverage 148,478 residential and cellular IP addresses around the world for
-  analysis. As a result, we find that 259 of the 3,047 ASes (8.5%) that we inspect
-  exhibit DNS interception behavior, including large providers, such as China Mobile.
-  Moreover, we find that the DNS servers of the ASes which intercept requests may
-  use outdated vulnerable software (deprecated before 2009) and lack security-related
-  functionality, such as handling DNSSEC requests. Our work highlights the issues
-  around on path DNS interception and provides new insights for addressing such issues.
----
 MARKER: 2018_m_canbaz_phd_univ_nevada
 TYPE: phdthesis
 AUTHOR: Canbaz, M.A.
@@ -34259,34 +34141,6 @@ ABS: Distributed denial-of-service (DDoS) is a rapidly growing problem with the 
   attack at its initial stage with higher detection rate and lower false alarm rate
   .
 URL: http://dx.doi.org/10.3970/cmc.2018.055.095
----
-MARKER: 2018_r_birkner_nsdi_609
-TYPE: inproceedings
-AUTHOR: Birkner, R., Drachsler-Cohen, D., Vanbever, L., Vechev, M.
-TITLE: 'Net2Text: query-guided summarization of network forwarding behaviors'
-CTITLE: USENIX Symp. on Networked Systems Design and Implementation (NSDI)
-YEAR: 2018-04
-PAGE: 609-623
-URL: 10.5555/3307441.3307493
-TOPKEY: topology-as-organization
-GEOLOC: Zurich, CH
-ABS: 'Today network operators spend a significant amount of time struggling to understand
-  how their network forwards traffic. Even simple questions such as How is my network
-  handling Google traffic? often require operators to manually bridge large semantic
-  gaps between low level forwarding rules distributed across many routers and the
-  corresponding high-level insights. We introduce Net2Text, a system which assists
-  network operators in reasoning about network-wide forwarding behaviors. Out of the
-  raw forwarding state and a query expressed in natural language, Net2Text automatically
-  produces succinct summaries, also in natural language, which efficiently capture
-  network-wide semantics. Our key insight is to pose the problem of summarizing (captioning)
-  the network forwarding state as an optimization problem that aims to balance coverage,
-  by describing as many paths as possible, and explainability, by maximizing the information
-  provided. As this problem is NP-hard, we also propose an approximation algorithm
-  which generates summaries based on a sample of the forwarding state, with marginal
-  loss of quality. We implemented Net2Text and demonstrated its practicality and scalability.
-  We show that Net2Text generates high-quality interpretable summaries of the entire
-  forwarding state of hundreds of routers with full routing tables, in few seconds
-  only. '
 ---
 MARKER: 2018_o_zoder_bsc_masaryk_univ
 TYPE: misc
@@ -65707,30 +65561,6 @@ REMARK: Only references CAIDA home page http://www.caida.org
 GEOLOC: Wuhan, CN; Nashville, TN, US; Wuhan, CN; Nashville, TN, US
 URL: http://dx.doi.org/10.1109/TMM.2009.2012911
 ---
-MARKER: 2009_u_weinberg_ieee_ccw_377
-TYPE: inproceedings
-AUTHOR: Weinsberg, U., Shavitt, Y., Shir, E.
-TITLE: Near-deterministic inference of AS relationships
-CTITLE: IEEE Conf. on Computer Communications (INFOCOM)
-PAGE: 1-2
-YEAR: 2009-04
-DOI: 10.1109/INFCOMW.2009.5072167
-TOPKEY: topology-as-rank
-REMARK: Reference to CAIDA AS ranking
-GEOLOC: Tel-Aviv, IL
-ABS: This paper aims to improve on existing methods by providing a near-deterministic
-  inference scheme (ND-ToR ) for solving the ToR problem. The input for ND-ToR is
-  the Internet Core, a sub-graph that consists of the globally top-level providers
-  of the Internet and their interconnecting links with their already inferred relationship
-  types. Theoretically, given an accurately classified core, the algorithm deterministically
-  infers most of the remaining AS relationships using the AS-level paths relative
-  to this core, without incurring additional inference errors. In real-world scenarios,
-  where the core and AS-level paths can contain errors (due to misconfigurations or
-  measurements mistakes), the algorithm introduces minimal inference mistakes. We
-  show that ND-ToR has relaxed requirements from the core, and proves to be robust
-  under changes in its definition, size and density.
-URL: http://dx.doi.org/10.1109/INFCOMW.2009.5072167
----
 MARKER: 2009_g_hasegawa_ieee_icns_210
 TYPE: inproceedings
 AUTHOR: Hasegawa, G., Hiraoka, Y., Murata, M.
@@ -69733,56 +69563,6 @@ ABS: This paper introduces DUET, a generic framework that processes heavy hitter
   analysis. The framework can achieve higher throughput and three orders of magnitude
   lower average relative error compared to cutting-edge algorithms.
 ---
-MARKER: 2023_z_chen_pam_28486115
-TYPE: inproceedings
-AUTHOR: Chen, Z., Bischof, Z., Testart, C., Dainotti, A.
-TITLE: Improving the inference of sibling Autonomous Systems
-CTITLE: Passive and Active Measurement (PAM 2023)
-PAGE: 345-372
-YEAR: 2023-03
-DOI: 10.1007/978-3-031-28486-1_15
-TOPKEY: passive_2019_pcap
-GEOLOC: Atlanta, GA, US
-ABS: The paper focuses on improving the accuracy of mapping Autonomous Systems (ASes)
-  to their owner organizations by addressing issues with the current state-of-the-art
-  dataset, CAIDA AS-to-organization (CA2O). The authors leverage PeeringDB (PDB) to
-  detect potential errors in sibling relations within the CA2O dataset. They identify
-  two pitfalls of using Whois data, which result in incorrect inferences, and systematically
-  analyze their impact on CA2O. An improved dataset is created, correcting mappings
-  for 12.5% of CA2O organizations with sibling ASes. To ensure scalability and reproducibility,
-  the authors develop an automated approach for improving inferences in future versions
-  of CA2O.
----
-MARKER: 2023_f_biersack_pdp_590252023
-TYPE: inproceedings
-AUTHOR: Biersack, F., Holzinger, K., Stubbe, H., Wild, T., Carle, G., Herkersdorf,
-  A.
-TITLE: Priority-aware Inter-Server Receive Side Scaling
-CTITLE: 31st Euromicro International Conference on Parallel, Distributed, and Network-Based
-  Processing
-YEAR: 2023-03
-DOI: 10.1109/PDP59025.2023.00016
-TOPKEY: passive_2015_pcap
-GEOLOC: Munich, DE
-ABS: Next-generation automotive networks will be characterized by a high number of
-  interconnected sensors, actuators and applications on electronic control units communicating
-  with each other over a high-speed Ethernet backbone network. As these applications
-  have various criticalities, high volumes of fluctuating traffic with different priorities
-  will have to be processed in a reliable and efficient manner. To cope with these
-  challenges, we present Priority-aware Inter-Server Receive Side Scaling (prioRSS),
-  a new SmartNIC-based hardware accelerator designed for automotive compute nodes.
-  prioRSS builds upon Receive Side Scaling and introduces priority-awareness into
-  an intra- and inter-node load balancer. It uses a priority-partitioned indirection
-  table within which flows of the same priority are bundled. Low-latency reconfigurations
-  issued by a Network Health Monitoring software allow for adapting the table content
-  to changing network conditions. Simulative evaluations and comparisons to a priority-unaware
-  version of our design show that prioRSS enables per-priority resource assignments
-  without degrading end-to-end packet latencies while using the same table memory
-  space. Paired with a priority-aware scheduler, end-to-end latencies of high priority
-  flows can be notably reduced compared to average packet latencies, at the expense
-  of lowest priority traffic. The best results are acquired when partitioning the
-  table proportionally to the associated traffic share.
----
 MARKER: 2023_s_nourin_230404835
 TYPE: inproceedings
 AUTHOR: Nourin, S., Tran, V., Jiang, X., Bock, K., Feamster, N., Hoang, N., Levin,
@@ -70232,18 +70012,6 @@ SERIAL: IEEE
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10015781
 TOPKEY: topology-ark-ipv4-aslinks
 GEOLOC: Kunming, CN
----
-MARKER: 2023_adebowale_a_ijaem
-TYPE: in_journal
-AUTHOR: Adebowale, A.; Olutayo, A.; Sunday, I.; A.C, O.; Zhang, M.; Oluwabukola, A.
-TITLE: Scalable Unsupervised Ensemble Algorithm for Effective Insider Threat Detection
-PUBLISH: International Journal of Advances in Engineering and Management
-YEAR: 2020-09
-SERIAL: IJAEM
-URL: 
-  https://ijaem.net/issue_dcp/Scalable%20Unsupervised%20Ensemble%20Algorithm%20for%20Effective%20Insider%20Threat%20Detection.pdf
-TOPKEY: passive-2015
-GEOLOC: Ilishan-Remo, NG
 ---
 MARKER: 2023_li_j_arxiv
 TYPE: online
@@ -71064,13 +70832,3 @@ YEAR: '2023'
 URL: https://arxiv.org/pdf/2309.14273.pdf
 TOPKEY: topology-as-organization
 GEOLOC: Montreal, QC, CA
----
-MARKER: 2023_omnisketch
-TYPE: online
-AUTHOR: Punter, W.; Papapetrou, O.; Garofalakis, M.
-TITLE: 'OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with
-  Arbitrary Predicates'
-PUBLISH: Proceedings of the VLDB Endowment
-YEAR: 2023-11
-URL: https://www.vldb.org/pvldb/vol17/p319-punter.pdf
-TOPKEY: passive-2019
