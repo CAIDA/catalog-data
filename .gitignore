@@ -11,6 +11,7 @@ id_words.json
 category_id_depth.json
 organization_ids.json
 category_id_score.json
+ontology_id_object.json
 # generated from pubdb
 sources/*/*__pubdb.json
 sources/*/*__externallinks.json
