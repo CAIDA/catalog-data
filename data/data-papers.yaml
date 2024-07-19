@@ -10850,9 +10850,8 @@ ABS: ''
 ---
 MARKER: 2022_w_chen_ndss_183
 TYPE: inproceedings
-AUTHOR: 'ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment'
-TITLE: Chen, Wenqi; Wang, Zhiliang; Han, Dongqi; Duan, Chenxin; Yin, Xia; Yang, Jiahai;
-  Shi, Xingang
+AUTHOR: Chen, Wenqi; Wang, Zhiliang; Han, Dongqi; Duan, Chenxin; Yin, Xia; Yang, Jiahai; Shi, Xingang
+TITLE: 'ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment'
 CTITLE: NDSS 2022
 YEAR: '2022'
 VOLUME: ''

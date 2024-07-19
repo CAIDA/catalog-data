@@ -290,6 +290,7 @@ skitter-router-adjacencies: skitter_router_adjacencies
 
 # "Topology with BGP -> bgp"
 topology-as-relationships: as_relationships_serial_1
+topology-as-relationships-geo: as_relationships_geo
 topology-as-classification: as_classification
 topology-as-organization: as_organizations
 as-organizations: as_organizations
