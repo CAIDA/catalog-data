@@ -2535,7 +2535,7 @@ AUTHOR: Lone, Q., Frik, A., Luckie, M., Korczynski, M., Eeten, M., Ganan, C.
 TITLE: 'Deployment of Source Address Validation by Network Operators: A Randomized
   Control Trial'
 CTITLE: 2022 IEEE Symposium on Security and Privacy (SP)
-YEAR: 2022-00
+YEAR: 2022
 VOLUME: ''
 PAGE: 703-720
 DOI: 10.1109/SP46214.2022.00041
@@ -6468,8 +6468,8 @@ YEAR: 2022-09
 VOLUME: ''
 PAGE: (8)
 DOI: 10.1109/ICCCN54977.2022.9868942
-URL: ddos-20070804
-TOPKEY: https://ieeexplore.ieee.org/abstract/document/9868942
+URL: https://ieeexplore.ieee.org/abstract/document/9868942
+TOPKEY: ddos-20070804
 GEOLOC: Los Angeles, CA, US
 ABS: ''
 ---
@@ -30245,6 +30245,7 @@ VOLUME: '147'
 PAGE: 111-121
 YEAR: 2019-11
 DOI: 10.1016/j.comcom.2019.08.014
+TOPKEY: passive_realtime
 ABS: Cyber space continues to be threatened by various debilitating attacks.
 ---
 MARKER: 2019_l_liquori_epew_hal_01895452v1
