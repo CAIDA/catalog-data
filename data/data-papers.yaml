@@ -59,7 +59,6 @@ PUBLISH: springer
 YEAR: 2024-02
 URL: https://link.springer.com/chapter/10.1007/978-981-97-0811-6_2
 TOPKEY: passive-2016
-
 GEOLOC: Suzhou, CN
 ---
 MARKER: 2023_li_x_ieee
@@ -85,8 +84,7 @@ GEOLOC: Zhengzhou, CN
 MARKER: 2023_zhao_y_acm
 TYPE: online
 AUTHOR: Zhao, Y.; Han, W.; Zhong, Z; Zhang, Y; Yang, T; Cui, B
-TITLE: Double-Anonymous Sketch Achieving Top-K-fairness for Finding Global Top-K Frequent
-  Items
+TITLE: Double-Anonymous Sketch Achieving Top-K-fairness for Finding Global Top-K Frequent Items
 PUBLISH: acm
 YEAR: 2023-05
 URL: https://dl.acm.org/doi/abs/10.1145/3588933
@@ -105,8 +103,7 @@ GEOLOC: Umea, SE
 ---
 MARKER: 2023_salamatian_l_acm
 TYPE: online
-AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I.; Zhu, J., Zhang, Y; Katz-Bassett, E;
-  Calder, M.
+AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I.; Zhu, J.; Zhang, Y; Katz-Bassett, E; Calder, M.
 TITLE: Who Squats IPv4 Addresses?
 PUBLISH: dl.acm.org
 YEAR: 2023-04
@@ -2535,7 +2532,7 @@ AUTHOR: Lone, Q., Frik, A., Luckie, M., Korczynski, M., Eeten, M., Ganan, C.
 TITLE: 'Deployment of Source Address Validation by Network Operators: A Randomized
   Control Trial'
 CTITLE: 2022 IEEE Symposium on Security and Privacy (SP)
-YEAR: 2022
+YEAR: '2022'
 VOLUME: ''
 PAGE: 703-720
 DOI: 10.1109/SP46214.2022.00041
