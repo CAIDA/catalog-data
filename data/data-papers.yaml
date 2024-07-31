@@ -71519,8 +71519,7 @@ URL: https://arxiv.org/abs/2308.05254
 MARKER: 2023_a_maghsoudlou_uni_saarland_7888
 TYPE: PhD thesis
 AUTHOR: Maghsoudlou, A.
-TITLE: Towards Uncovering Hidden Internet Traffic
-Characteristics
+TITLE: Towards Uncovering Hidden Internet Traffic Characteristics
 YEAR: 2023-12
 TOPKEY: passive-2019, routeviews-prefix2as
 GEOLOC: Saarbrücken, DE
@@ -73653,8 +73652,7 @@ URL: https://www.researchgate.net/profile/Youhuan-Li/publication/380938741_NewSP
 MARKER: 2015_n_rivetti_hal_science_2120
 TYPE: online
 AUTHOR: Rivetti, N., Busnel, Y., Mostefaoui, A.
-TITLE: Efficiently Summarizing Distributed Data Streams over
-Sliding Windows
+TITLE: Efficiently Summarizing Distributed Data Streams over Sliding Windows
 YEAR: 2015-06
 TOPKEY: passive-2008, ddos-20070804
 GEOLOC: Nantes, FR
@@ -74136,4 +74134,3 @@ YEAR: '2021'
 TOPKEY: passive-2007, passive-2008
 GEOLOC: Edinburgh, UK
 URL: http://193.140.201.98/handle/123456789/13164
----
