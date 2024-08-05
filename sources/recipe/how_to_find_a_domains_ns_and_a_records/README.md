@@ -27,7 +27,7 @@
 
 ## **<ins>Introduction</ins>**
 
-The script takes in a domain, makes a series of queries to the dzdb api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires access to the DNS Coffee (DZDB) API, which requres an API Key. You may request an API key by filling out the form [here](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). 
+The script takes in a domain, makes a series of queries to the DZDB api, and compiles them into a larger response. The final output consists of the initial domain response along with the embedded responses for each of the domain's nameservers. This recipe requires the user to fill out a user access form. You may complete the user access form [here](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). 
 
 ## **<ins>Solution</ins>**
 The script will return a JavaScript object that contains the nameserver and domain responses for the queried domain. 
@@ -108,14 +108,11 @@ For instance, the above code snippet will output the following object:
     
 ~~~
 
-The script relies on the below function to handle querying the dzdb api.
+The script relies on the below function to handle querying the DZDB API.
 
 ~~~
-// Simplified API querying object
-var apiKey = "YOUR_API_KEY_HERE";
-
 const dns = (function(){
-    const baseURL = "https://api.dns.coffee/api/v0";
+    const baseURL = "https://dzdb.caida.org/api";
     const getQueryUrl = (args)=>{
         const urlParts = [baseURL,...args]
         return urlParts.join("/");
@@ -125,8 +122,7 @@ const dns = (function(){
             return fetch(getQueryUrl(args), {
                 method: 'GET',
                 headers: {
-                    "Accept": 'application/json',
-                    "X-API-Key": apiKey
+                    "Accept": 'application/json'
                 }
             }).then((response)=>{
                 const rootPromise = new Promise(async (rootResolve) => {
@@ -159,9 +155,9 @@ const dns = (function(){
 This helper function can be used independently for making queries to the API, and simplifies the process of making queries. 
 
 ~~~javascript
-dns.get('domains','google.com'); // Queries https://dns.coffee/api/domains/google.com
+dns.get('domains','google.com'); // Queries https://dzdb.caida.org/api/domains/google.com
 dns.get('/domains/google.com'); // Also accepts the format of the link returned in api responses
-dns.get('zones','com');
+dns.get('zones','com'); // Queries https://dzdb.caida.org/api/zones/com
 ~~~
 
 ## **<ins>Background</ins>**
@@ -172,7 +168,7 @@ A DNS zone is a group of hostnames that is managed by a single individual or org
 A zone file is a text file which contains the domain, nameserver, ip, and other relationships for the hostnames in a particular zone. DZDB tracks these relationships, and makes it possible to query for all the nameservers associated with a given domain, as well as all the ips associated with those nameservers.
 
 ### Notes on DNS Coffee API
-The DNS Coffee API utilized in this recipe aids in querying data from the zone file. See [documentation for the API](https://api.dns.coffee/doc/#/). Requests are rate-limited and an API key is required. You may request a key by filling out a [DZDB API Request form](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). 
+The DZDB API utilized in this recipe aids in querying data from the zone file. See [documentation for the API](https://dzdb.caida.org/api). Requests are rate-limited. You may request access by filling out a [DZDB API Request form](https://www.caida.org/catalog/datasets/request_user_info_forms/dzdb). 
 
 
 Copyright (c) 2020 The Regents of the University of California
