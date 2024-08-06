@@ -49,7 +49,6 @@ PUBLISH: springer
 YEAR: 2024-02
 URL: https://link.springer.com/chapter/10.1007/978-981-97-0811-6_2
 TOPKEY: passive-2016
-
 GEOLOC: Suzhou, CN
 ---
 MARKER: 2023_li_x_ieee
@@ -75,8 +74,7 @@ GEOLOC: Zhengzhou, CN
 MARKER: 2023_zhao_y_acm
 TYPE: online
 AUTHOR: Zhao, Y.; Han, W.; Zhong, Z; Zhang, Y; Yang, T; Cui, B
-TITLE: Double-Anonymous Sketch Achieving Top-K-fairness for Finding Global Top-K Frequent
-  Items
+TITLE: Double-Anonymous Sketch Achieving Top-K-fairness for Finding Global Top-K Frequent Items
 PUBLISH: acm
 YEAR: 2023-05
 URL: https://dl.acm.org/doi/abs/10.1145/3588933
@@ -95,8 +93,7 @@ GEOLOC: Umea, SE
 ---
 MARKER: 2023_salamatian_l_acm
 TYPE: online
-AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I.; Zhu, J., Zhang, Y; Katz-Bassett, E;
-  Calder, M.
+AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I.; Zhu, J.; Zhang, Y; Katz-Bassett, E; Calder, M.
 TITLE: Who Squats IPv4 Addresses?
 PUBLISH: dl.acm.org
 YEAR: 2023-04
@@ -2487,7 +2484,7 @@ AUTHOR: Lone, Q., Frik, A., Luckie, M., Korczynski, M., Eeten, M., Ganan, C.
 TITLE: 'Deployment of Source Address Validation by Network Operators: A Randomized
   Control Trial'
 CTITLE: 2022 IEEE Symposium on Security and Privacy (SP)
-YEAR: 2022-00
+YEAR: '2022'
 VOLUME: ''
 PAGE: 703-720
 DOI: 10.1109/SP46214.2022.00041
@@ -6420,8 +6417,8 @@ YEAR: 2022-09
 VOLUME: ''
 PAGE: (8)
 DOI: 10.1109/ICCCN54977.2022.9868942
-URL: ddos-20070804
-TOPKEY: https://ieeexplore.ieee.org/abstract/document/9868942
+URL: https://ieeexplore.ieee.org/abstract/document/9868942
+TOPKEY: ddos-20070804
 GEOLOC: Los Angeles, CA, US
 ABS: ''
 ---
@@ -10801,9 +10798,8 @@ ABS: ''
 ---
 MARKER: 2022_w_chen_ndss_183
 TYPE: inproceedings
-AUTHOR: 'ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment'
-TITLE: Chen, Wenqi; Wang, Zhiliang; Han, Dongqi; Duan, Chenxin; Yin, Xia; Yang, Jiahai;
-  Shi, Xingang
+AUTHOR: Chen, Wenqi; Wang, Zhiliang; Han, Dongqi; Duan, Chenxin; Yin, Xia; Yang, Jiahai; Shi, Xingang
+TITLE: 'ROV-MI: Large-Scale, Accurate and Efficient Measurement of ROV Deployment'
 CTITLE: NDSS 2022
 YEAR: '2022'
 VOLUME: ''
@@ -30154,6 +30150,7 @@ VOLUME: '147'
 PAGE: 111-121
 YEAR: 2019-11
 DOI: 10.1016/j.comcom.2019.08.014
+TOPKEY: passive_realtime
 ABS: Cyber space continues to be threatened by various debilitating attacks.
 ---
 MARKER: 2019_l_liquori_epew_hal_01895452v1
@@ -72507,7 +72504,7 @@ MARKER: 2023_j_cui_nature_4844
 TYPE: in_journal
 AUTHOR: Cui, J., Han, K., Sha, L., Liu, W., Zhang, X., Li, G.
 TITLE: An efficient hexadecimal network flow watermark method for tracking attack traffic
-SERIAL:
+SERIAL: Scientific Reports
 YEAR: 2023-11
 VOLUME: '13'
 TOPKEY: passive-2015
