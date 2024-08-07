@@ -157,16 +157,6 @@ URL: https://www.iaeng.org/IJCS/issues_v36/issue_2/IJCS_36_2_03.pdf
 TOPKEY: topology-skitter-ipv4
 GEOLOC: Shenyang, CN
 ---
-MARKER: 2009_xu_y_intjit
-TYPE: online
-AUTHOR: Xu, Y.; Zhao, H.
-TITLE: On Measuring and Modeling of Internet Macroscopic Topology
-PUBLISH: intjit.org
-YEAR: 2009-00
-URL: https://intjit.org/cms/journal/volume/15/1/151_4.pdf
-TOPKEY: topology-skitter-ipv4
-GEOLOC: Shenyang, CN
----
 MARKER: 2023_mohan_m_springer
 TYPE: online
 AUTHOR: Mohan, M.; Tamizhazhagan, V.; Balaji, S.
@@ -210,27 +200,6 @@ YEAR: 2023-06
 DOI: https://doi.org/ 10.17485/IJST/v16iSP2.9526
 TOPKEY: ddos-20070804
 GEOLOC: Guwahati, IN
----
-MARKER: 2023_hekmati_a_arxiv
-TYPE: online
-AUTHOR: Hekmati, A.; Jethwa, N.; Grippo, E; Krishnamachari, B.
-TITLE: Correlation-Aware Neural Networks for DDoS Attack Detection In IoT Systems
-PUBLISH: University of Southern California
-YEAR: 2023-02
-URL: https://arxiv.org/pdf/2302.07982.pdf
-TOPKEY: ddos-20070804
-GEOLOC: Los Angeles, CA, US
----
-MARKER: 2023_abdulrahman_a_springer
-TYPE: in_proceedings
-AUTHOR: Abdulrahman, A.; Bock, K.; Levin, D; Wustrow, E.
-TITLE: A Global Measurement of Routing Loops on the Internet
-PUBLISH: Springer, Cham
-CTITLE: Springer
-YEAR: 2023-03
-URL: https://doi.org/10.1007/978-3-031-28486-1_16
-TOPKEY: topology-ark-ipv4-prefix-probing
-GEOLOC: Boulder, CO, US
 ---
 MARKER: 2023_salamatian_l_acm_doi
 TYPE: online
@@ -7701,31 +7670,6 @@ URL:
   https://books.google.com/books?hl=en&lr=&id=no-5BQAAQBAJ&oi=fnd&pg=PR2&dq=caida+patch+tuesday+dataset&ots=7JobYFEOco&sig=LN_scSOvaNavnBskXanyHf08T6s#v=onepage&q=caida%20patch%20tuesday%20dataset&f=false
 TOPKEY: passive-2012, topology-as-relationships, passive-realtime
 GEOLOC: Hong Kong, CN
-ABS: ''
----
-MARKER: 2011_iliofotou_m_proquest_862357619
-TYPE: phdthesis
-AUTHOR: Iliofotou, M.
-TITLE: 'Analyzing Network-Wide Interactions Using Graphs: Techniques and Applications'
-PUBLISH: University Of California, Riverside
-YEAR: 2011-03
-PAGE: 1-110
-URL: 
-  https://www.proquest.com/docview/862357619?pq-origsite=gscholar&fromopenview=true
-TOPKEY: coralreef
-GEOLOC: Riverside, CA, US
-ABS: ''
----
-MARKER: 2003_estan_c_escholar_39887653
-TYPE: techreport
-AUTHOR: Estan, C., Keys, K., Moore, D.
-TITLE: An Adaptive System for Real-time Summaries of Internet Traffic
-PUBLISH: University of California, San Diego
-YEAR: 2003-09
-PAGE: 1-18
-URL: https://escholarship.org/content/qt39k8w87g/qt39k8w87g.pdf?t=r65qf3
-TOPKEY: coralreef
-GEOLOC: San Diego, CA, US
 ABS: ''
 ---
 MARKER: 2015_pang_x_snapedu_22482015
@@ -16693,21 +16637,6 @@ DOI: 10.23919/CyCon51939.2021.9468304
 URL: https://ieeexplore.ieee.org/abstract/document/9468304
 TOPKEY: routeviews-prefix2as
 GEOLOC: Berlin, DE
-ABS: ''
----
-MARKER: 2003_lakhina_a_ieee_1208685
-TYPE: inproceedings
-AUTHOR: Lakhina, A., Byers, J., Crovella, M., Xie, P.
-TITLE: Sampling biases in IP topology measurements
-CTITLE: IEEE INFOCOM 2003. Twenty-second Annual Joint Conference of the IEEE Computer
-  and Communications Societies
-YEAR: 2003-04
-VOLUME: ''
-PAGE: 332-341
-DOI: 10.1109/INFCOM.2003.1208685
-URL: https://ieeexplore.ieee.org/abstract/document/1208685
-TOPKEY: ''
-GEOLOC: Boston, MA, US
 ABS: ''
 ---
 MARKER: 2014_bujlow_t_vbnaau_184059194
@@ -46560,7 +46489,7 @@ ABS: Collaborative Anomaly Detection (CAD) is an emerging field of network secur
   are discussed.
 URL: http://dx.doi.org/10.1109/TNET.2015.2512609
 ---
-MARKER: 2016_z_jadidi_jnet_4304
+MARKER: 2016_z_jadidi_jnet_4305
 TYPE: article
 AUTHOR: Jadidi, Z., Muthukkumarasamy, V., Sithirasenan, E., Singh, K.
 TITLE: Intelligent sampling using an optimized neural network
@@ -69710,18 +69639,6 @@ URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10093795
 TOPKEY: passive-2016
 GEOLOC: Beijing, CN
 ---
-MARKER: 2023_aslam_n_springer
-TYPE: in_journal
-AUTHOR: Aslam, N.; Srivastava, S.; Gore, M.
-TITLE: A Comprehensive Analysis of Machine Learning-and Deep Learning-Based Solutions
-  for DDoS Attack Detection in SDN
-PUBLISH: Springer
-YEAR: 2023-7
-SERIAL: Springer
-URL: https://link.springer.com/article/10.1007/s13369-023-08075-2
-TOPKEY: ddos-20070804, passive-oc48
-GEOLOC: Prayagraj, IN
----
 MARKER: 2023_amira_a_dl_acm
 TYPE: in_journal
 AUTHOR: Amira, A.; Derhab, A.; Karbab, E.; Nouali, O.
@@ -70447,52 +70364,6 @@ URL: https://olivergasser.net/papers/sediqi2023live.pdf
 TOPKEY: topology-as-relationships, topology-as-organizations
 GEOLOC: Saarbrucken, DE
 ---
-MARKER: 2023_ramanathan_a_arxiv
-TYPE: online
-AUTHOR: Ramanathan, A.; Jyothi, S.
-TITLE: 'Nautilus: A Framework for Cross-Layer Cartography of Submarine Cables and
-  IP Links'
-PUBLISH: arxiv.org
-YEAR: 2023-02
-URL: https://arxiv.org/abs/2302.14201
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute
-GEOLOC: Irvine, CA, US
----
-MARKER: 2023_brunstrom_a_google_books
-TYPE: in_journal
-AUTHOR: Brunstrom, A.; Flores, M.; Fiore, M.
-TITLE: 'Passive and Active Measurement: 24th International Conference, PAM 2023, Virtual
-  Event, March 21–23, 2023, Proceedings'
-PUBLISH: Google Books
-YEAR: 2023-03
-SERIAL: Google Books
-URL: 
-  https://books.google.com/books?hl=en&lr=&id=JSezEAAAQBAJ&oi=fnd&pg=PR5&dq=%22as+to+organization%22+caida+dataset&ots=YhWcUFhS1l&sig=qxfeVX3MbCTLMk0D9pnVppGT7hY
-TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-organization
-GEOLOC: Karlstad, SE
----
-MARKER: 2023_peng_s_world_scientific
-TYPE: in_journal
-AUTHOR: Peng, S.; Zhang, L.; Shu, X.; Ruan, Z.; Xuan, Q.
-TITLE: Study of Autonomous System Business Types Based on Graph Neural Networks
-PUBLISH: World Scientific
-YEAR: 2023-04
-SERIAL: Deep Learning Applications
-CHAPTER: '9'
-URL: https://www.worldscientific.com/doi/abs/10.1142/9789811266911_0009
-TOPKEY: topology-as-relationships
-GEOLOC: Hangzhou, CN
----
-MARKER: 2023_oppenheimer_h_peio.me
-TYPE: PhD thesis
-AUTHOR: Oppenheimer, H.
-TITLE: The Failed Digital State Problem? Capacity Gaps and Managing Internet Externalities
-PUBLISH: peio.me
-YEAR: 2023-04
-URL: https://www.peio.me/wp-content/uploads/PEIO15/PEIO15_paper_58.pdf
-TOPKEY: topology-as-relationships, topology-as-organizations
-GEOLOC: Cambridge, MA, US
----
 MARKER: 2023_hsu_a_dl_acm
 TYPE: in_journal
 AUTHOR: Hsu, A.; Li, F.; Pearce, P.
@@ -70571,19 +70442,6 @@ URL: https://petsymposium.org/foci/2023/foci-2023-0003.pdf
 TOPKEY: routeviews-prefix2as
 GEOLOC: Ann Arbor, MI, US
 ---
-MARKER: 2023_liu_y_scientific_reports
-TYPE: in_journal
-AUTHOR: Liu, Y.; Zhao, Y.; Guo, X.; Liu, L.
-TITLE: Inferring router ownership based on the classification of intra- and inter-domain
-  links
-PUBLISH: Scientific Reports
-YEAR: 2023-03
-SERIAL: Scientific Reports
-VOLUME: '13'
-URL: https://doi.org/10.1038/s41598-023-32202-6
-TOPKEY: topology-skitter-ipv4
-GEOLOC: Zhengzhou, CN
----
 MARKER: 2023_streibelt_f_springer
 TYPE: in_proceedings
 AUTHOR: Streibelt, F.; Lindorfer, M.; Gurses, S.; Ganan, C.; Fiebig, T.
@@ -70595,27 +70453,6 @@ CTITLE: Springer
 URL: https://doi.org/10.1007/978-3-031-28486-1_10
 TOPKEY: routeviews-prefix2as
 GEOLOC: Saarbrucken, DE
----
-MARKER: 2023_carisimo_e_arxiv
-TYPE: online
-AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
-TITLE: 'A hop away from everywhere: A view of the intercontinental long-haul infrastructure'
-PUBLISH: arxiv.org
-YEAR: 2023-03
-URL: https://arxiv.org/pdf/2303.02514.pdf
-TOPKEY: topology-ark-ipv4-prefix-probing
-GEOLOC: Evanston, IL, US
----
-MARKER: 2023_salamatian_l_acm_doi
-TYPE: online
-AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I; Zhu, J.; Zhang, Y; Katz-Bassett, E.;
-  Calder, M.
-TITLE: Who Squats IPV4 Addresses?
-PUBLISH: ACM SIGCOMM Computer Communication Review
-YEAR: 2023-01
-URL: https://doi.org/10.1145/3594255.3594260
-TOPKEY: backscatter-2004-2005
-GEOLOC: New York, NY, US
 ---
 MARKER: 2023_abdulrahman_a_springer
 TYPE: in_proceedings
