@@ -12389,20 +12389,6 @@ TOPKEY: passive-stats
 GEOLOC: Tamil Nadu, IN
 ABS: ''
 ---
-MARKER: 2021_millan_g_arxiv_14666
-TYPE: misc
-AUTHOR: Millan, G., Lefranc, G., Osorio-Comparan, R.
-TITLE: 'The Associative Multifractal Process: A Novel Model for Computer Network Traffic
-  Flows'
-PUBLISH: arxiv.org
-YEAR: 2021-06
-VOLUME: passive-generic
-PAGE: 1-4
-URL: https://arxiv.org/abs/2106.14666
-TOPKEY: ''
-GEOLOC: ''
-ABS: ''
----
 MARKER: 2021_zhang_y_acm_3507519
 TYPE: inproceedings
 AUTHOR: Zhang, Y., Yang, G., Luo, Z.
@@ -12442,7 +12428,7 @@ VOLUME: ''
 PAGE: 195-215
 DOI: 10.1145/3487552.3487833
 URL: https://dl.acm.org/doi/abs/10.1145/3487552.3487833
-TOPKEY: telescope-generic, telescope-flowtuple
+TOPKEY: telescope-darknet-scanners, telescope-flowtuple
 GEOLOC: Aalborg, DK
 ABS: ''
 ---
@@ -19844,7 +19830,7 @@ VOLUME: ''
 PAGE: 1-6
 DOI: 10.1109/ASYU48272.2019.8946331
 URL: https://ieeexplore.ieee.org/abstract/document/8946331
-TOPKEY: ''
+TOPKEY: ddos-20070804
 GEOLOC: Istanbul, TR
 ---
 MARKER: 2019_kim_meejoung_learning_ddos_tuning_hyperparameters_104218
@@ -20344,7 +20330,7 @@ PUBLISH: NAVAL POSTGRADUATE SCHOOL
 PAGE: ''
 YEAR: '2020'
 URL: https://apps.dtic.mil/sti/pdfs/AD1126515.pdf
-TOPKEY: topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks, topology-as-mapping
+TOPKEY: topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks, routeviews-prefix2as
 GEOLOC: Monterey, CA, US
 ABS: ''
 ---
@@ -69619,7 +69605,7 @@ YEAR: 2006-02
 VOLUME: '2'
 PAGE: 43-69
 DOI: https://doi.org/10.1093/joclec/nhl003
-TOPKEY: as_rank, caida_topology_datasets, caida_security_papers
+TOPKEY: topology-as-rank, topology-as-relationships
 GEOLOC: Cambridge, GB
 ABS: We study concentration in the European Internet upstream access market. The possibility
   of measuring market concentration depends on a correct definition of the market
@@ -73167,7 +73153,7 @@ AUTHOR: Letong, S., Xingang, S., Fengyan, H., Xia, Y., Zhiliang, W., Han, Z.
 TITLE: Is it a Real CD Mismatch in Interdomain Routing?
 PUBLISH: arxiv
 YEAR: 2024-01
-TOPKEY: peeringdb, topology-ark-itdk, scamper, 
+TOPKEY: peeringdb, topology-ark-itdk, scamper
 GEOLOC: Beijing, CN
 URL: https://arxiv.org/abs/2401.11520
 ---
@@ -73833,7 +73819,7 @@ TITLE: Synchronizing DDoS detection and mitigation based graph learning with pro
 SERIAL: Future Generation Computer Systems
 YEAR: 2024-05
 VOLUME: '154'
-TOPKEY: passive-2020
+TOPKEY: passive-generic
 GEOLOC: Beijing, CN
 URL: https://www.sciencedirect.com/science/article/pii/S0167739X23004909
 ---

@@ -173,6 +173,9 @@
   telescope-rsdos-daily:
     predict: True
     public : False
+  telescope-darknet-scanners:
+    predict: True
+    public: True
   backscatter-generic:
     predict: True
     public : False
@@ -205,6 +208,9 @@
     predict: False
     public : False
   ddos-20070804:
+    predict: False
+    public : False
+  ddos-20070806:
     predict: False
     public : False
 "Other Datasets -> other":
@@ -297,6 +303,9 @@ as-organizations: as_organizations
 topology-as-rank: as_rank
 routeviews-generic:
   - routeviews_prefix2as
+topology-dns-lookups: complete_dns_lookups
+bgp-communities: bgp_communities
+
 
 # "UCSD Network Telescope -> telescope"
 telescope-generic: telescope_live
@@ -306,6 +315,9 @@ telescope-sipscan: telescope_sipscan
 telescope-patch-tuesday: corsaro_patch_tuesday
 telescope-educational: telescope_educational
 telescope-real-time: telescope_live
+telescope-flowtuple: corsaro_flowtuple
+telescope-rsdos-daily: telescope_daily_rsdos
+telescope-darknet-scanners: telescope_darknet_scanners
 backscatter-generic: telescope_backscatter
 backscatter-tocs: backscatter_tocs_originals
 backscatter-2004-2005: telescope_backscatter
@@ -330,6 +342,7 @@ spoofer: spoofer_public
 
 # "Paper Data and Tools -> paper"
 complex_as_relationships: 'paper:2014_inferring_complex_as_relationships'
+ditl : 'paper:2006_ditl_proposal'
 2014-imc-complex : 2014_imc_complex
 2006-pam-as-taxonomy: 2006_pam_as_taxonomy
 2016-periscope: 'software:periscope'
