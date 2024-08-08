@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 const dns = (function () {
   const baseURL = "https://dzdb.caida.org/api";
@@ -16,7 +16,7 @@ const dns = (function () {
       }).then((response) => {
         const rootPromise = new Promise(async (rootResolve, rootReject) => {
           if (response.ok) {
-            data = response.json().then((response) => response.data);
+            const data = response.json().then((response) => response.data);
             rootResolve(data);
           } else if (response.status == "429") {
             let delay = response.headers.get("retry-after") * 1000 || 2000; // Retry after efaults to 2 seconds
@@ -42,17 +42,23 @@ const dns = (function () {
 
 // Get all NS and A/AAAA data for a domain
 async function getDomainRecords(domain) {
+  if (!domain) {
+    throw new Error("Domain is required");
+  }
+
   const domainData = await dns.get(`domains/${domain}`);
   const domainNameservers = await dns.get(`domains/${domain}`);
-  const zone = await dns.get(`zones/${domainData.zone}`);
+  const zone = await dns.get(`zones/${domainData.zone.name}`);
   domainData.zone = zone;
 
-  const nameserverPromises = domainNameservers.map((nameserver) => {
+  const nameserverPromises = domainNameservers.nameservers.map((nameserver) => {
     return dns.get(`nameservers/${nameserver.name}`).then((nameserverData) => {
       // Collect domain and ip data for each nameserver
       let promise = new Promise(async (domainResolve) => {
-        getDomainData = async () => {
-          const nameserverInfo = await dns.get(`nameservers/${nameserver}`);
+        const getDomainData = async () => {
+          const nameserverInfo = await dns.get(
+            `nameservers/${nameserver.name}`
+          );
 
           nameserverData["archive_domains"] = nameserverInfo.archive_domains;
           nameserverData.domains = nameserverInfo.domains;
@@ -60,7 +66,7 @@ async function getDomainRecords(domain) {
           nameserverData.ipv6 = nameserverInfo.ipv6;
           return nameserverData;
         };
-        data = await getDomainData();
+        const data = await getDomainData();
         domainResolve(data);
       }).then((nameserverDomains) => {
         if (!domainData.nameservers) {
