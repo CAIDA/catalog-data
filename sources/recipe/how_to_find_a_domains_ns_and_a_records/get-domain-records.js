@@ -12,7 +12,6 @@ const dns = (function () {
         method: "GET",
         headers: {
           Accept: "application/json",
-          "X-API-Key": apiKey,
         },
       }).then((response) => {
         const rootPromise = new Promise(async (rootResolve, rootReject) => {
