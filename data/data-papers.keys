@@ -213,8 +213,17 @@
     public : False
   dns-root-gtld-rtt:
     predict: False
-    public : TrueTrue
+    public : True
   peeringdb:
+    predict: False
+    public : True
+  ixps:
+    predict: False
+    public : True
+  spoofer:
+    predict: False
+    public : True
+  ddec:
     predict: False
     public : True
 "Paper Data and Tools -> paper":
@@ -284,6 +293,7 @@ skitter-router-adjacencies: skitter_router_adjacencies
 
 # "Topology with BGP -> bgp"
 topology-as-relationships: as_relationships_serial_1
+topology-as-relationships-geo: as_relationships_geo
 topology-as-classification: as_classification
 topology-as-organization: as_organizations
 as-organizations: as_organizations
@@ -320,6 +330,7 @@ dns-root-gtld-rtt: dns_root_gtld_rtt
 peeringdb: peeringdb_archive
 ixps: ixps
 spoofer: spoofer_public
+ddec: ddec
 
 # "Paper Data and Tools -> paper"
 complex_as_relationships: 'paper:2014_inferring_complex_as_relationships'
@@ -337,6 +348,7 @@ dolphin: 'presentation:2014_dolphin_dhs'
 asfinder: 'software:coralreef'
 netgeo: 'software:netgeo'
 ioda: 'software:ioda'
+
 #ignore:
 #	asfinder
 #	coralreef
