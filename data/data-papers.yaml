@@ -6315,7 +6315,7 @@ TOPKEY: witty worm
 GEOLOC: Bydgoszcz, PL
 ABS: ''
 ---
-MARKER: ''
+MARKER: 2017_rashed_m_ijatir
 TYPE: article
 AUTHOR: Rashed, M., Urrahamn, A.
 TITLE: A Variance Based Privacy Protection from P2P Botnet Problems in Social Media
@@ -12441,7 +12441,7 @@ VOLUME: ''
 PAGE: (21)
 DOI: 10.48550/arXiv.2006.14058
 URL: https://arxiv.org/abs/2006.14058
-TOPKEY: topology-as-rank,
+TOPKEY: topology-as-rank, bgp-communities
 GEOLOC: Los Angeles, CA, US
 ABS: ''
 ---
@@ -18817,7 +18817,7 @@ VOLUME: '99'
 PAGE: '102022'
 DOI: 10.1016/j.cose.2020.102022
 URL: https://doi.org/10.1016/j.cose.2020.102022
-TOPKEY: passive-2002, ddos-20070804, passive-2016
+TOPKEY: passive-oc48, ddos-20070804, passive-2016
 GEOLOC: Guildford, UK
 ---
 MARKER: 2021_kim_meejoung_network_attack_meta_learning_3029580
@@ -20259,7 +20259,7 @@ PUBLISH: NAVAL POSTGRADUATE SCHOOL
 PAGE: ''
 YEAR: '2020'
 URL: https://apps.dtic.mil/sti/pdfs/AD1126515.pdf
-TOPKEY: topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks, routeviews-prefix2as
+TOPKEY: topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks, routeviews_prefix2as
 GEOLOC: Monterey, CA, US
 ABS: ''
 ---
@@ -20324,7 +20324,7 @@ PUBLISH: NAVAL POSTGRADUATE SCHOOL
 PAGE: ''
 YEAR: '2020'
 URL: https://apps.dtic.mil/sti/pdfs/AD1126680.pdf
-TOPKEY: dictionary
+TOPKEY: bgp-communities
 GEOLOC: Monterey, CA, US
 ABS: ''
 ---
