@@ -1171,7 +1171,7 @@ VOLUME: ''
 PAGE: 918-928
 DOI: 10.1109/ICDCS.2018.00093
 URL: https://ieeexplore.ieee.org/abstract/document/8416356
-TOPKEY: routeviews-generic
+TOPKEY: routeviews-prefix2as
 GEOLOC: Shanghai, CN
 ABS: ''
 ---
@@ -1346,7 +1346,7 @@ PUBLISH: University of Twente
 PAGE: 1-43
 YEAR: 2018-02
 URL: http://essay.utwente.nl/74575/1/Klein_Nijenhuis_MA_EEMCS.pdf
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Enschede, NL
 ABS: ''
 ---
@@ -4415,7 +4415,7 @@ YEAR: 2016-07
 VOLUME: ''
 PAGE: 1-11
 URL: https://arxiv.org/abs/1607.01261
-TOPKEY: routeviews-generic
+TOPKEY: routeviews-prefix2as
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -13032,7 +13032,7 @@ VOLUME: '155'
 PAGE: 31-46
 DOI: 10.1016/j.comnet.2019.03.010
 URL: https://www.sciencedirect.com/science/article/pii/S1389128618312003
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Changsha, CN
 ABS: ''
 ---
@@ -14146,7 +14146,7 @@ PUBLISH: Universidad De Chile
 PAGE: 1-105
 YEAR: 2020-00
 URL: https://repositorio.uchile.cl/handle/2250/178223
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Santiago, CL
 ABS: ''
 ---
@@ -14942,7 +14942,7 @@ VOLUME: ''
 PAGE: 319-326
 DOI: 10.1109/HPCC-DSS-SmartCity-DependSys53884.2021.00067
 URL: https://ieeexplore.ieee.org/abstract/document/9780903
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -15075,7 +15075,7 @@ VOLUME: '61'
 PAGE: (14)
 DOI: 10.1016/j.jisa.2021.102933
 URL: https://www.sciencedirect.com/science/article/pii/S2214212621001496
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Nanjing, CN
 ABS: ''
 ---
@@ -16183,7 +16183,7 @@ VOLUME: ''
 PAGE: 88-99
 DOI: 10.1109/DSN48987.2021.00025
 URL: https://ieeexplore.ieee.org/abstract/document/9505062
-TOPKEY: routeviews-generic, topology-ark-ipv6-traceroute
+TOPKEY: routeviews-prefix2as, topology-ark-ipv6-traceroute
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -18175,7 +18175,7 @@ TYPE: misc
 AUTHOR: Oliver, G., Scheitle, Q., Gebhard, S., Carle, G.
 TITLE: 'Scanning the IPv6 internet: towards a comprehensive hitlist'
 YEAR: 2016-00
-TOPKEY: routeviews-prefix2as, topology-ark-dnsnames
+TOPKEY: routeviews-prefix2as, topology-ark-dns-names
 DOI: https://doi.org/10.48550/arXiv.1607.05179
 PUBLISH: arXiv
 GEOLOC: Munich, DE
@@ -18474,7 +18474,7 @@ TITLE: Protecting IoT Devices through Localized Detection of BGP Hijacks for Ind
   Things
 YEAR: 2021-05
 DOI: 10.1109/SPW53761.2021.00045
-TOPKEY: routeviews-generic
+TOPKEY: routeviews-prefix2as
 GEOLOC: Bloomington, IN, US
 ---
 MARKER: 2013_v_giotsas_ieee_6562878""
@@ -21306,7 +21306,7 @@ CTITLE: 'CoNEXT 19: Proceedings of the 15th International Conference on Emerging
   Experiments And Technologies'
 PAGE: (7 pages)
 URL: https://dl.acm.org/doi/10.1145/3359989.3365433
-TOPKEY: dns-root-gtld-rtt, topology-ark-dnsnames, passive-2016
+TOPKEY: dns-root-gtld-rtt, topology-ark-dns-names, passive-2016
 ABS: Efficient network management requires collecting a variety of statistics over
   the packet flows.
 ---
@@ -21894,7 +21894,7 @@ YEAR: '2020_10'
 CTITLE: 'IMC 20: Proceedings of the ACM Internet Measurement Conference'
 PAGE: (19 pages)
 URL: https://dl.acm.org/doi/abs/10.1145/3419394.3423654
-TOPKEY: topology-ark-dnsnames, topology-generic
+TOPKEY: topology-ark-dns-names, topology-generic
 ABS: Many systems rely on traceroutes to monitor or characterize the Internet. The
   quality of the systems inferences depends on the completeness and freshness of the
   traceroutes, but the refreshing of traceroutes is constrained by limited resources
@@ -34984,7 +34984,7 @@ YEAR: 2018-02
 VOLUME: 23 (1)
 PAGE: 1-12
 DOI: 10.26599/TST.2018.9010025
-TOPKEY: topology-as-rank, topology-as-relationships, routeviews-generic
+TOPKEY: topology-as-rank, topology-as-relationships, routeviews-prefix2as
 GEOLOC: Beijing, CN
 ABS: IP source address spoofing is regarded as one of the most prevalent components
   when launching an anonymous invasion, especially a Distributed Denial-of-Service
@@ -35896,7 +35896,7 @@ PUBLISH: arxiv.org
 YEAR: 2017-12
 PAGE: (12 pages)
 URL: https://arxiv.org/abs/1712.04161
-TOPKEY: routeviews-generic
+TOPKEY: routeviews-prefix2as
 GEOLOC: London, UK
 ABS: Distributed software-defined networks (SDN), consisting of multiple inter-connected
   network domains, each managed by one SDN controller, is an emerging networking architecture
@@ -36125,7 +36125,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 YEAR: 2017-11
 PAGE: (12 pages)
 DOI: 10.1145/3131365.3131405
-TOPKEY: topology-ark-dnsnames, routeviews-prefix2as
+TOPKEY: topology-ark-dns-names, routeviews-prefix2as
 GEOLOC: Berkeley, CA, US
 ABS: Fast IPv4 scanning has enabled researchers to answer a wealth of new security
   and measurement questions. However, while increased network speeds and computational
@@ -38133,7 +38133,7 @@ CTITLE: Network Traffic Measurement and Analysis Conf.
 YEAR: 2017-06
 PAGE: (9 pages)
 DOI: 10.23919/TMA.2017.8002903
-TOPKEY: topology-ark-itdk, topology-ark-dnsnames
+TOPKEY: topology-ark-itdk, topology-ark-dns-names
 GEOLOC: Munich, DE
 ABS: 'Geographically locating an IP address is of interest for many purposes. There
   are two major ways to obtain the location of an IP address: querying commercial
@@ -38716,7 +38716,7 @@ CTITLE: Intl Conf. on Computer Science and Technology (CST)
 YEAR: 2017-05
 PAGE: (15 pages)
 DOI: 10.12783/dtcse/cst2017/12545
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Beijing, CN
 ABS: 'Malicious domain name (MDN) detection has seen greatly progress in recent years.
   In this paper, one covering MDN-Complete-Life-Cycle malicious domain name detection
@@ -38741,7 +38741,7 @@ PUBLISH: arxiv.org
 YEAR: 2017-05
 PAGE: (11 pages)
 URL: https://arxiv.org/abs/1705.00630
-TOPKEY: routeviews-generic
+TOPKEY: routeviews-prefix2as
 GEOLOC: Sau Paulo, BR
 ABS: The identification of the minimal set of nodes that maximizes the propagation
   of information is one of the most important problems in network science. In this
@@ -49058,7 +49058,7 @@ PUBLISH: Naval Postgraduate School
 PAGE: (77 pages)
 YEAR: 2015-09
 URL: http://hdl.handle.net/10945/47313
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-dnsnames
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-dns-names
 GEOLOC: Monterey, CA, US
 ABS: For all purposes and intents, being able to infer the topology of a network is
   crucial to both operators and adversaries alike. Traceroute is a common active probing
@@ -53096,7 +53096,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 PAGE: (14 pages)
 YEAR: 2014-11
 DOI: 10.1145/2663716.2663737
-TOPKEY: topology-ark-dnsnames, topology-ark-ipv4-aslinks
+TOPKEY: topology-ark-dns-names, topology-ark-ipv4-aslinks
 GEOLOC: Madison, WI, US; Hamilton, NY, US; Madison, WI, US
 PLACE: Vancouver, Canda, 5-7 November 2014
 ABS: Understanding the Internets topological structure continues to be fraught with
@@ -69669,7 +69669,7 @@ TITLE: 'Back-to-the-Future Whois: An IP Address Attribution Service for Working 
   Historic Datasets'
 YEAR: 2023-01
 DOI: 10.48550/arXiv.2211.06537
-TOPKEY: routeviews-generic, as-organizations
+TOPKEY: routeviews-prefix2as, as-organizations
 ABS: Researchers and practitioners often face the issue of having to attribute an
   IP address to an organization. For current data this is comparably easy, using services
   like whois or other databases. Similarly, for historic data, several entities like
@@ -70891,7 +70891,7 @@ AUTHOR: Wang, B., Chen, R., Tang, L.
 TITLE: "EasyQuantile: Efficient Quantile Tracking in the Data Plane"
 YEAR: 2023-09
 CTITLE: SIGCOMM
-TOPKEY: topology-ark-dnsnames, passive-2019
+TOPKEY: topology-ark-dns-names, passive-2019
 GEOLOC: Xiamen, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3600061.3600084
 ---
@@ -71532,7 +71532,7 @@ AUTHOR: Luz, JF., Araujo-Filho, PF de., Arcoverde, HF., Campelo, DR.
 TITLE: Unsupervised SOM-Based Intrusion Detection System for DNS Tunneling Attacks
 YEAR: 2023-09
 CTITLE: "2023: PROCEEDINGS OF THE XXIII BRAZILIAN SYMPOSIUM ON INFORMATION SECURITY AND COMPUTER SYSTEMS"
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Recife, BR
 URL: https://sol.sbc.org.br/index.php/sbseg/article/view/27232
 ---
@@ -71572,7 +71572,7 @@ AUTHOR: Chen, X., Shi, W., Liu, J., Hou, M., Li, Y.
 TITLE: "6Community: An active IPv6 address detection method based on community discovery algorithm"
 YEAR: 2023-11
 CTITLE: "ADMIT '23: Proceedings of the 2023 2nd International Conference on Algorithms, Data Mining, and Information Technology"
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Chengdu, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3625403.3625426
 ---
@@ -72996,7 +72996,7 @@ AUTHOR: Williams, G., Erdemir, M., Hsu, A., Bhat, S., Bhaskar, A., Li, F., Pearc
 TITLE: "6SENSE: Internet-Wide IPv6 Scanning and its Security Applications"
 YEAR: '2024'
 CTITLE: Proceedings of the 33rd USENIX Security Symposium
-TOPKEY: scamper, routeviews-prefix2as, topology-ark-dnsnames
+TOPKEY: scamper, routeviews-prefix2as, topology-ark-dns-names
 GEOLOC: Atlanta, GA
 URL: https://www.usenix.org/system/files/sec24summer-prepub-965-williams.pdf
 ---
@@ -73047,7 +73047,7 @@ AUTHOR: Nur, AY., Tozal, ME.
 TITLE: Inferring Internet Topology at Point of Presence Level
 YEAR: 2024-04
 CTITLE: IEEE
-TOPKEY: topology-ark-dnsnames, topology-ark-ipv4-prefix-probing, ixps, routeviews-prefix2as
+TOPKEY: topology-ark-dns-names, topology-ark-ipv4-prefix-probing, ixps, routeviews-prefix2as
 GEOLOC: New Orleans, LA, US
 URL: https://ieeexplore.ieee.org/abstract/document/10553435/
 ---
@@ -74229,7 +74229,7 @@ AUTHOR: Li, Z.
 TITLE: On building trustworthy network systems with blockchain and TEE
 PUBLISH: The Hong Kong Polytechnic University
 YEAR: '2022'
-TOPKEY: topology-ark-dnsnames
+TOPKEY: topology-ark-dns-names
 GEOLOC: Hong Kong, CN
 URL: https://theses.lib.polyu.edu.hk/handle/200/12166
 ---

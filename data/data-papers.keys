@@ -280,9 +280,6 @@ topology-ark-ipv4-aslinks: ark_ipv4_aslinks
 topology-ark-ipv6-aslinks: ark_ipv6_aslinks
 topology-ark-ipv6-routed48: ark_ipv6_traceroute
 topology-ark-ipv6_traceroute: ark_ipv6_traceroute
-topology-ark-dnsnames:
-  - ark_ipv4_dns_names
-  - ark_ipv6_dns_names
 topology-ark-dns-names:
   - ark_ipv4_dns_names
   - ark_ipv6_dns_names
@@ -304,8 +301,7 @@ topology-as-classification: as_classification
 topology-as-organization: as_organizations
 as-organizations: as_organizations
 topology-as-rank: as_rank
-routeviews-generic:
-  - routeviews_prefix2as
+routeviews-prefix2as: routeviews_prefix2as
 topology-dns-lookups: complete_dns_lookups
 bgp-communities: bgp_communities
 
