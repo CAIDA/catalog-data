@@ -280,9 +280,8 @@ topology-ark-ipv4-aslinks: ark_ipv4_aslinks
 topology-ark-ipv6-aslinks: ark_ipv6_aslinks
 topology-ark-ipv6-routed48: ark_ipv6_traceroute
 topology-ark-ipv6_traceroute: ark_ipv6_traceroute
-topology-ark-dns-names:
-  - ark_ipv4_dns_names
-  - ark_ipv6_dns_names
+topology-ark-ipv4-dns-names: ark_ipv4_dns_names
+topology-ark-ipv6-dns-names: ark_ipv6_dns_names
 topology-ark-tod: 'software:vela'
 topology-ark-activity: 'software:archipelago'
 topology-ark-vela: 'software:vela'
