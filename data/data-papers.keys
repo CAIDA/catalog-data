@@ -173,6 +173,9 @@
   telescope-rsdos-daily:
     predict: True
     public : False
+  telescope-darknet-scanners:
+    predict: True
+    public: True
   backscatter-generic:
     predict: True
     public : False
@@ -207,6 +210,9 @@
   ddos-20070804:
     predict: False
     public : False
+  ddos-20070806:
+    predict: False
+    public : False
 "Other Datasets -> other":
   dns-rtt-generic:
     predict: False
@@ -221,6 +227,9 @@
     predict: False
     public : True
   spoofer:
+    predict: False
+    public : True
+  ddec:
     predict: False
     public : True
 "Paper Data and Tools -> paper":
@@ -271,9 +280,6 @@ topology-ark-ipv4-aslinks: ark_ipv4_aslinks
 topology-ark-ipv6-aslinks: ark_ipv6_aslinks
 topology-ark-ipv6-routed48: ark_ipv6_traceroute
 topology-ark-ipv6_traceroute: ark_ipv6_traceroute
-topology-ark-dnsnames:
-  - ark_ipv4_dns_names
-  - ark_ipv6_dns_names
 topology-ark-dns-names:
   - ark_ipv4_dns_names
   - ark_ipv6_dns_names
@@ -295,8 +301,10 @@ topology-as-classification: as_classification
 topology-as-organization: as_organizations
 as-organizations: as_organizations
 topology-as-rank: as_rank
-routeviews-generic:
-  - routeviews_prefix2as
+routeviews-prefix2as: routeviews_prefix2as
+topology-dns-lookups: complete_dns_lookups
+bgp-communities: bgp_communities
+
 
 # "UCSD Network Telescope -> telescope"
 telescope-generic: telescope_live
@@ -306,6 +314,9 @@ telescope-sipscan: telescope_sipscan
 telescope-patch-tuesday: corsaro_patch_tuesday
 telescope-educational: telescope_educational
 telescope-real-time: telescope_live
+telescope-flowtuple: corsaro_flowtuple
+telescope-rsdos-daily: telescope_daily_rsdos
+telescope-darknet-scanners: telescope_darknet_scanners
 backscatter-generic: telescope_backscatter
 backscatter-tocs: backscatter_tocs_originals
 backscatter-2004-2005: telescope_backscatter
@@ -327,9 +338,11 @@ dns-root-gtld-rtt: dns_root_gtld_rtt
 peeringdb: peeringdb_archive
 ixps: ixps
 spoofer: spoofer_public
+ddec: ddec
 
 # "Paper Data and Tools -> paper"
 complex_as_relationships: 'paper:2014_inferring_complex_as_relationships'
+ditl : 'paper:2006_ditl_proposal'
 2014-imc-complex : 2014_imc_complex
 2006-pam-as-taxonomy: 2006_pam_as_taxonomy
 2016-periscope: 'software:periscope'
