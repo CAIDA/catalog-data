@@ -99,7 +99,7 @@ PUBLISH: dl.acm.org
 YEAR: 2023-04
 DOI: https://doi.org/10.1145/3594255.3594260
 URL: https://dl.acm.org/doi/abs/10.1145/3594255.3594260
-TOPKEY: telescope-generic
+TOPKEY: backscatter-generic, topology-itdk, topology-as-organization, topology-as-classification, topology-ark-ipv4-prefix-probing, topology-as-relationships
 GEOLOC: New York, NY, US
 ---
 MARKER: 2023_ramzan_m_mdpi
@@ -200,17 +200,6 @@ YEAR: 2023-06
 DOI: https://doi.org/ 10.17485/IJST/v16iSP2.9526
 TOPKEY: ddos-20070804
 GEOLOC: Guwahati, IN
----
-MARKER: 2023_salamatian_l_acm_doi
-TYPE: online
-AUTHOR: Salamatian, L.; Arnold, T.; Cunha, I; Zhu, J.; Zhang, Y; Katz-Bassett, E.;
-  Calder, M.
-TITLE: Who Squats IPV4 Addresses?
-PUBLISH: ACM SIGCOMM Computer Communication Review
-YEAR: 2023-01
-URL: https://doi.org/10.1145/3594255.3594260
-TOPKEY: backscatter-2004-2005
-GEOLOC: New York, NY, US
 ---
 MARKER: 2023_carisimo_e_arxiv
 TYPE: online
