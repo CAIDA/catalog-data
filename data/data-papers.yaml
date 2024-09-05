@@ -914,7 +914,7 @@ TOPKEY: passive-2018
 GEOLOC: London, GB
 ABS: ''
 ---
-MARKER: 0218_chaignon_p_acm_3185496
+MARKER: 2018_chaignon_p_acm_3185496
 TYPE: inproceedings
 AUTHOR: Chaignon, P., Lazri, K., Francois, J., Delmas, T., Festor, O.
 TITLE: 'Oko: Extending Open vSwitch with Stateful Filters'
@@ -1581,7 +1581,7 @@ TOPKEY: spoofer
 GEOLOC: Mountain View, CA, US
 ABS: ''
 ---
-MARKER: 0218_duan_h_ieee_8474329
+MARKER: 2018_duan_h_ieee_8474329
 TYPE: article
 AUTHOR: Duan, H., Zheng, Y., Wang, C., Yuan, X.
 TITLE: 'Treasure Collection on Foggy Islands: Building Secure Network Archives for
@@ -1610,7 +1610,7 @@ TOPKEY: topology-as-rank
 GEOLOC: Mons, BE
 ABS: ''
 ---
-MARKER: 0218_gregori_e_ieee_8385550
+MARKER: 2018_gregori_e_ieee_8385550
 TYPE: inproceedings
 AUTHOR: Gregori, E., Luconi, V., Vecchio, A.
 TITLE: Studying Forwarding Differences in European Mobile Broadband with a Net Neutrality
@@ -2219,7 +2219,7 @@ TOPKEY: topology-ark-itdk
 GEOLOC: Enschede, NL
 ABS: ''
 ---
-MARKER: 0222_padurean_v_arxiv_220504193
+MARKER: 2022_padurean_v_arxiv_220504193
 TYPE: misc
 AUTHOR: Padurean, V., Gasser, O., Bush, R., Feldmann, A.
 TITLE: 'SRv6: Is There Anybody Out There?'
@@ -4066,7 +4066,7 @@ TOPKEY: passive-2016
 GEOLOC: Rio de Janeiro, BR
 ABS: ''
 ---
-MARKER: 0217_huang_s_qmroqmul_3180007
+MARKER: 2017_huang_s_qmroqmul_3180007
 TYPE: mastersthesis
 AUTHOR: Huang, S.
 TITLE: Detecting Middlebox Interference on Applications
@@ -4203,7 +4203,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Hyderabad, IN
 ABS: ''
 ---
-MARKER: 0217_davydow_a_ieee_8057015
+MARKER: 2017_davydow_a_ieee_8057015
 TYPE: inproceedings
 AUTHOR: Davydow, A., Chuprikov, P., Nikolenko, S., Kogan, K.
 TITLE: Throughput optimization with latency constraints
@@ -9714,7 +9714,7 @@ TOPKEY: ddos-20070804
 GEOLOC: Zilina, SK
 ABS: ''
 ---
-MARKER: 1011_alashhab_z_mdpi_122312441
+MARKER: 2022_alashhab_z_mdpi_122312441
 TYPE: article
 AUTHOR: Alashhab, Z., Anbar, M., Singh, M., Hasbullah, I., Jain, P., Al-Amiedy, T.
 TITLE: 'Distributed Denial of Service Attacks against Cloud Computing Environment:
@@ -70659,7 +70659,7 @@ AUTHOR: Wagner, D., Ranadive, S., Griffioen, H., Kallitsis, M., Dainotti, A., Sm
 TITLE: How to Operate a Meta-Telescope in your Spare Time
 YEAR: 2023-10
 CTITLE: Internet Measurement Conference (IMC)
-TOPKEY: routeviews_prefix2as, topology-as-organization, telescope-generic
+TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Saarbrücken, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3618257.3624831
 ---
