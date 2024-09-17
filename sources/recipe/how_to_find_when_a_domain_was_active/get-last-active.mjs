@@ -44,7 +44,7 @@ const dns = (function () {
 function getDomainLastActive(domain) {
   return dns.get("domains", domain).then((response) => {
     // If no lastseen is set, domain is still active
-    return response.last_seen;
+    return response.zone.lastseen;
   });
 }
 
