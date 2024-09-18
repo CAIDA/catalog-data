@@ -3,6 +3,9 @@
   passive-stats:
     predict: False
     public : True
+  passive-100g-stats:
+    predict: False
+    public : True
   passive-realtime:
     predict: False
     public : True
@@ -173,6 +176,12 @@
   telescope-rsdos-daily:
     predict: True
     public : False
+  telescope-darknet-scanners:
+    predict: True
+    public: True
+  telescope-ddos-metadata:
+    predict: True
+    public: True
   backscatter-generic:
     predict: True
     public : False
@@ -191,20 +200,17 @@
   backscatter-2008:
     predict: True
     public : False
-  witty worm:
+  witty-worm:
     predict: True
     public : False
-  code-red worm:
+  code-red-worm:
     predict: True
     public : True
   rsdos-targets:
     predict: False
     public : False
 "Denial of Service Attacks -> ddos":
-  ddos-generic:
-    predict: False
-    public : False
-  ddos-20070804:
+  ddos-2007:
     predict: False
     public : False
 "Other Datasets -> other":
@@ -227,7 +233,7 @@
     predict: False
     public : True
 "Paper Data and Tools -> paper":
-  complex_as_relationships:
+  complex-as-relationships:
     predict: False
     public : True
   2006-pam-as-taxonomy:
@@ -245,6 +251,7 @@
 ---
 # "Anonymized Internet Traces -> traces"
 passive-stats: passive_metadata
+passive-100g-stats: passive_100g_metadata
 passive-realtime: passive_realtime
 passive-generic: passive_metadata
 passive-ipv6day-and-ipv6launch: passive_ipv6launch_pcap
@@ -274,12 +281,8 @@ topology-ark-ipv4-aslinks: ark_ipv4_aslinks
 topology-ark-ipv6-aslinks: ark_ipv6_aslinks
 topology-ark-ipv6-routed48: ark_ipv6_traceroute
 topology-ark-ipv6_traceroute: ark_ipv6_traceroute
-topology-ark-dnsnames:
-  - ark_ipv4_dns_names
-  - ark_ipv6_dns_names
-topology-ark-dns-names:
-  - ark_ipv4_dns_names
-  - ark_ipv6_dns_names
+topology-ark-ipv4-dns-names: ark_ipv4_dns_names
+topology-ark-ipv6-dns-names: ark_ipv6_dns_names
 topology-ark-tod: 'software:vela'
 topology-ark-activity: 'software:archipelago'
 topology-ark-vela: 'software:vela'
@@ -298,8 +301,10 @@ topology-as-classification: as_classification
 topology-as-organization: as_organizations
 as-organizations: as_organizations
 topology-as-rank: as_rank
-routeviews-generic:
-  - routeviews_prefix2as
+routeviews-prefix2as: routeviews_prefix2as
+topology-dns-lookups: complete_dns_lookups
+bgp-communities: bgp_communities
+
 
 # "UCSD Network Telescope -> telescope"
 telescope-generic: telescope_live
@@ -309,6 +314,10 @@ telescope-sipscan: telescope_sipscan
 telescope-patch-tuesday: corsaro_patch_tuesday
 telescope-educational: telescope_educational
 telescope-real-time: telescope_live
+telescope-flowtuple: corsaro_flowtuple
+telescope-rsdos-daily: telescope_daily_rsdos
+telescope-darknet-scanners: telescope_darknet_scanners
+telescope-ddos-metadata: telescope_ddos
 backscatter-generic: telescope_backscatter
 backscatter-tocs: backscatter_tocs_originals
 backscatter-2004-2005: telescope_backscatter
@@ -316,13 +325,11 @@ backscatter-2006: telescope_backscatter
 backscatter-2007: telescope_backscatter
 backscatter-2008: telescope_backscatter
 backscatter-2009: telescope_backscatter
-witty worm: telescope_witty_worm
-code-red worm: telescope_codered_worm
+witty-worm: telescope_witty_worm
+code-red-worm: telescope_codered_worm
 
 # "Denial of Service Attacks -> ddos"
-ddos-generic: telescope_ddos
-ddos-20070804: ddos-attack-2007
-ddos-20070806: ddos-attack-2007
+ddos-2007: ddos-attack-2007
 
 # "Other Datasets -> other"
 dns-rtt-generic: 'software:dnsstat'
@@ -333,7 +340,8 @@ spoofer: spoofer_public
 ddec: ddec
 
 # "Paper Data and Tools -> paper"
-complex_as_relationships: 'paper:2014_inferring_complex_as_relationships'
+complex-as-relationships: 'paper:2014_inferring_complex_as_relationships'
+ditl : 'paper:2006_ditl_proposal'
 2014-imc-complex : 2014_imc_complex
 2006-pam-as-taxonomy: 2006_pam_as_taxonomy
 2016-periscope: 'software:periscope'
