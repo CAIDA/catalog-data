@@ -5,12 +5,7 @@
     "publisher": "2023 IEEE High Performance Extreme Computing Conference (HPEC)",
     "description": "Matrix/array analysis of networks can provide significant insight into their behavior and aid in their operation and protection. Prior work has demonstrated the analytic, performance, and compression capabilities of GraphBLAS (graph-blas.org) hypersparse matrices and D4M (d4m.mit.edu) associative arrays (a mathematical superset of matrices). Obtaining the benefits of these capabilities requires integrating them into operational systems, which comes with its own unique challenges. This paper describes two examples of real-time operational implementations. First, is an operational GraphBLAS implementation that constructs anonymized hypersparse matrices on a high-bandwidth network tap. Second, is an operational D4M implementation that analyzes daily cloud gateway logs. The architectures of these implementations are presented. Detailed measurements of the resources and the performance are collected and analyzed. The implementations are capable of meeting their operational requirements using modest computational resources (a couple of processing cores). GraphBLAS is well-suited for low-level analysis of high-bandwidth connections with relatively structured network data. D4M is well-suited for higher-level analysis of more unstructured data. This work demonstrates that these technologies can be implemented in operational settings.",
     "tags": [],
-    "links": [
-        {
-            "to": "dataset:2024_ieee_anonymized_nsg_challenge",
-            "label": "Related Dataset"
-        }
-    ],
+    "links": [],
     "authors": [
         {
 			"person": "person:jones__michael",
