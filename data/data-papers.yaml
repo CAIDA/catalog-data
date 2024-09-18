@@ -3114,8 +3114,8 @@ YEAR: 2022-08
 VOLUME: ''
 PAGE: 1-14
 DOI: 10.1145/3544216.3544263
-URL: https://nsg.ee.ethz.ch/fileadmin/user_upload/sigcomm22-final615.pdf
-TOPKEY: passive-stats
+URL: https://dl.acm.org/doi/pdf/10.1145/3544216.3544263
+TOPKEY: passive-2018
 GEOLOC: Zurich, CH
 ABS: ''
 ---
@@ -70319,15 +70319,6 @@ URL:
   https://www.comsys.rwth-aachen.de/fileadmin/papers/2023/2023-kunze-spin-bit-in-the-wild.pdf
 TOPKEY: topology-as-organization
 ---
-MARKER: 2022_a_alcoz_sigcomm_261421
-TYPE: in-proceedings
-AUTHOR: Alcoz, Albert Gran; Strohmeier, Martin; Lenders, Vincent; Venbever, Laurent
-TITLE: Aggregate-Based Congestion Control for Pulse-Wave
-YEAR: 2022-08
-CTITLE: SIGCOMM
-URL: https://dl.acm.org/doi/10.1145/3544216.3544263
-TOPKEY: passive-2018
----
 MARKER: 2022_d_rahunathan__fmcad_3448323
 TYPE: in-proceedings
 AUTHOR: Raghunathan, Divya; Beckett, Ryan; Gupta, Aarti; Walker, David
@@ -71602,7 +71593,7 @@ URL: https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=sit
 MARKER: 2023_h_jananthan_ieee_8907
 TYPE: in_proceedings
 AUTHOR: Jananthan, H., Kepner, J., Arcand, M Jones‚ W., Bestor, D., Bergeron, W., Byun, C., Davis, T., Gadepally, V., Grant, D., Houle, M., Hubbell, M., Klein, A., Milechin, L., Morales, G., Morris, A., Mullen, J., Patel, R., Pentland, A., Pisharody, S., Prout, A., Reuther, A., Rosa, A., Samsi, S., Trigg, T., Wachman, G., Yee, C., Michaleas, P.
-TITLE: Mapping of Internet ‚ÄúCoastlines‚Äù via Large Scale Anonymized Network Source Correlations
+TITLE: Mapping of Internet “Coastlines” via Large Scale Anonymized Network Source Correlations
 YEAR: 2023-09
 CTITLE: IEEE
 TOPKEY: passive-generic, telescope-generic

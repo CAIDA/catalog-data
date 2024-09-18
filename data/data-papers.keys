@@ -3,6 +3,9 @@
   passive-stats:
     predict: False
     public : True
+  passive-100g-stats:
+    predict: False
+    public : True
   passive-realtime:
     predict: False
     public : True
@@ -251,6 +254,7 @@
 ---
 # "Anonymized Internet Traces -> traces"
 passive-stats: passive_metadata
+passive-100g-stats: passive_100g_metadata
 passive-realtime: passive_realtime
 passive-generic: passive_metadata
 passive-ipv6day-and-ipv6launch: passive_ipv6launch_pcap
