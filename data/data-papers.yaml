@@ -70058,7 +70058,7 @@ SERIAL: "KDD '12: Proceedings of the 18th ACM SIGKDD international conference on
   discovery and data mining"
 PAGE: "'24-32"
 URL: https://doi.org/10.1145/2339530.2339539
-TOPKEY: passive-2007
+TOPKEY: topology-as-relationships
 GEOLOC: Singapore, SG
 ---
 MARKER: 2023_othmer_b_utwente
@@ -70181,7 +70181,7 @@ YEAR: '2023'
 CTITLE: International Conference on Communications (ICC)
 DOI: https://doi.org/10.1109/ICC45041.2023.10278878
 TOPKEY: 
-  topology-as-relationships,topology-as-classification,routeviews_prefix2as,topology-as-organization,peeringdb,ixps
+  topology-as-relationships, topology-as-classification, routeviews_prefix2as, topology-as-organization, ixps
 ---
 MARKER: 2023_o_darwich_acm_362480
 TYPE: in-proceedings
@@ -70191,7 +70191,7 @@ TITLE: 'Replication: Towards a Publicly Available Internet scale IP Geolocation 
 YEAR: 2023-10
 CTITLE: Internet Measurement Conference (IMC)
 URL: https://hal.science/hal-04215113/
-TOPKEY: topology-as-classification,peeringdb,topology-ark-ipv4-traceroute
+TOPKEY: topology-as-classification
 ---
 MARKER: 2023_s_farhan_pam_649984
 TYPE: in-proceedings
@@ -71017,7 +71017,7 @@ AUTHOR: Maghsoudlou, A.
 TITLE: Towards Uncovering Hidden Internet Traffic Characteristics
 PUBLISH: Universität des Saarlandes
 YEAR: 2023-12
-TOPKEY: passive-2019, routeviews_prefix2as
+TOPKEY: passive-2019, ditl
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/37289/1/phd-curr%20%281%29.pdf
 ---
@@ -71198,7 +71198,7 @@ AUTHOR: Ren, Y., Wang, J., Li, H., Zhu, H., Sun, L.
 TITLE: User Recognition of Devices on the Internet based on Heterogeneous Graph Transformer with Partial Labels
 YEAR: 2023-06
 CTITLE: iEEE
-TOPKEY: topology-generic
+TOPKEY: topology-generic, topology-ark-ipv4-traceroute
 GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10192043/
 ---
@@ -71219,7 +71219,7 @@ TITLE: "FBAR: An effective method for resolving large‚Äêscale IPv6 aliases"
 SERIAL: International Journal of Communication Systems
 YEAR: 2023-09
 VOLUME: '36'
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, topology-ark-ipv6-traceroute
 GEOLOC: Zhengzhou, CN
 URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.5610
 ---
@@ -71835,17 +71835,17 @@ AUTHOR: Melissourgos, D.
 TITLE: Dynamic Sketches for Adaptive Real-Time Network Traffic Monitoring
 PUBLISH: UNIVERSITY OF FLORIDA
 YEAR: '2023'
-TOPKEY: topology-generic
+TOPKEY: passive-2015
 GEOLOC: FL, US
 URL: https://search.proquest.com/openview/6ddadd7424a5e9fd3e0b20ab243f8b0b/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2023_tb_fodor_webarchive_2291
 TYPE: BSc thesis
 AUTHOR: Fodor, TB.
-TITLE: Analysing the internet aas a graph
+TITLE: Analysing the internet as a graph
 PUBLISH: University of Vienna
 YEAR: '2023'
-TOPKEY: topology-generic, scamper
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, scamper
 GEOLOC: Vienna, AT
 URL: https://repositum.tuwien.at/handle/20.500.12708/154357
 ---
@@ -71855,7 +71855,7 @@ AUTHOR: Maghsoudlou, A.
 TITLE: Towards uncovering hidden internet traffic characteristics
 PUBLISH: Saarland University
 YEAR: '2023'
-TOPKEY: ditl, passive-2019, routeviews_prefix2as
+TOPKEY: ditl, passive-2019
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/37289
 ---
@@ -72200,7 +72200,7 @@ AUTHOR: Liu, Y., Nie, H., Cai, H., Jiang, B., Zhang, P., Yao, Y Liu‚ Y., Wei, 
 TITLE: "X-Plane: A High-Throughput Large-Capacity 5G UPF"
 YEAR: 2023-10
 CTITLE: "ACM MobiCom '23: Proceedings of the 29th Annual International Conference on Mobile Computing and Networking"
-TOPKEY: passive-2019
+TOPKEY: passive-oc48
 GEOLOC: Shanghai, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3570361.3613267
 ---
@@ -72400,7 +72400,7 @@ AUTHOR: Sermpezis, Pavlos., Prehn, Lars., Kostoglou, Sofia., Flores, Marcel., Va
 TITLE: Bias in Internet Measurement Platforms
 YEAR: 2023-06
 CTITLE: IEEE
-TOPKEY: peeringdb, bgpstream, topology-as-rank, topology-as-relationships
+TOPKEY: peeringdb, topology-as-rank, topology-as-relationships
 GEOLOC: Thesssaloniki,DE
 URL: https://ieeexplore.ieee.org/abstract/document/10198985
 ---
