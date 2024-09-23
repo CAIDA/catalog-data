@@ -169,17 +169,6 @@ URL: https://link.springer.com/article/10.1007/s10922-023-09776-7
 TOPKEY: ddos-2007, passive-oc48
 GEOLOC: Chidambaram, IN
 ---
-MARKER: 2023_fathima_a_elsevier
-TYPE: online
-AUTHOR: Fathima, A.; Devi, G.; Faizaanuddin, M.
-TITLE: Improving distributed denial of service attack detection using supervised machine
-  learning
-PUBLISH: elsevier
-YEAR: 2023-10
-DOI: https://doi.org/10.1016/j.measen.2023.100911
-TOPKEY: ddos-generic
-GEOLOC: Chennai, IN
----
 MARKER: 2023_sharma_a_ieee
 TYPE: online
 AUTHOR: Sharma, A.; Rani, S.; Shah, S.; Sharma, R.; Yu, F.; Hassan, M.
@@ -3653,7 +3642,7 @@ VOLUME: ''
 PAGE: 2467-2469
 DOI: 10.1145/3133956.3138853
 URL: https://dl.acm.org/doi/abs/10.1145/3133956.3138853
-TOPKEY: ddos-generic, passive-2016
+TOPKEY: ddos-2007, passive-2016
 GEOLOC: Suwon, KR
 ABS: ''
 ---
@@ -5406,7 +5395,7 @@ VOLUME: '3'
 PAGE: 67-70
 DOI: 10.30591/jpit.v3i1.764.g644
 URL: http://ejournal.poltektegal.ac.id/index.php/informatika/article/view/764
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Central Java, ID
 ABS: ''
 ---
@@ -5963,7 +5952,7 @@ VOLUME: ''
 PAGE: 44-51
 DOI: 10.1109/AsiaJCIS.2014.20
 URL: https://ieeexplore.ieee.org/abstract/document/7023238
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Tsukuba, JP
 ABS: ''
 ---
@@ -5993,7 +5982,7 @@ VOLUME: ''
 PAGE: 32-38
 DOI: ' 10.1109/ICCCA52192.2021.9666379'
 URL: https://ieeexplore.ieee.org/abstract/document/9666379
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Greater Noida, IN
 ABS: ''
 ---
@@ -6021,7 +6010,7 @@ VOLUME: '31'
 PAGE: 453-464
 DOI: 10.7307/ptt.v31i4.3082
 URL: https://hrcak.srce.hr/224362
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Zagreb, HR
 ABS: ''
 ---
@@ -6035,7 +6024,7 @@ VOLUME: '2022'
 PAGE: 1-14
 DOI: 10.1155/2022/9855022
 URL: https://www.hindawi.com/journals/wcmc/2022/9855022/
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Banasthali, IN
 ABS: ''
 ---
@@ -6190,7 +6179,7 @@ YEAR: 2022-01
 VOLUME: ''
 PAGE: (16)
 URL: https://arxiv.org/abs/2107.12612
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Queenstown, SG
 ABS: ''
 ---
@@ -6203,7 +6192,7 @@ YEAR: 2021-08
 VOLUME: ''
 PAGE: (6)
 URL: https://arxiv.org/abs/2106.04575
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Islamabad, PK
 ABS: ''
 ---
@@ -9560,7 +9549,7 @@ VOLUME: '20'
 PAGE: 1-25
 DOI: 10.1016/j.iot.2022.100615
 URL: https://www.sciencedirect.com/science/article/pii/S254266052200097X
-TOPKEY: ddos-generic, passive-2016
+TOPKEY: ddos-2007, passive-2016
 GEOLOC: Mardin, TR
 ABS: ''
 ---
@@ -13586,7 +13575,7 @@ VOLUME: '10'
 PAGE: 1599-1611
 DOI: 10.11591/ijece.v10i2.pp1599-1611
 URL: https://pdfs.semanticscholar.org/795e/b306e309be3d30824437fc44fbd7fcbc6681.pdf
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Mysuru, IN
 ABS: ''
 ---
@@ -14483,7 +14472,7 @@ VOLUME: '9'
 PAGE: 119-125
 DOI: ''
 URL: http://www.iteejournal.org/v9no5oct20_pdf15.pdf
-TOPKEY: passive-2016, ddos-generic
+TOPKEY: passive-2016, telescope-ddos-metadata, ddos-2007
 GEOLOC: Jeddah, SA
 ABS: ''
 ---
@@ -15391,7 +15380,7 @@ VOLUME: ''
 PAGE: 635-638
 DOI: 10.1109/PICST54195.2021.9772239
 URL: https://ieeexplore.ieee.org/abstract/document/9772239
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007, telescope-ddos-metadata
 GEOLOC: Kharkiv, UA
 ABS: ''
 ---
@@ -15594,22 +15583,6 @@ DOI: 10.1109/IWQOS52092.2021.9521269
 URL: https://ieeexplore.ieee.org/abstract/document/9521269
 TOPKEY: passive-2017
 GEOLOC: Nanjing, CN
-ABS: ''
----
-MARKER: 2021_hnamte_v_ieee_9664737
-TYPE: inproceedings
-AUTHOR: Hnamte, V., Hussain, J.
-TITLE: 'An Extensive Survey on Intrusion Detection Systems: Datasets and Challenges
-  for Modern Scenario'
-CTITLE: 2021 3rd International Conference on Electrical, Control and Instrumentation
-  Engineering (ICECIE)
-YEAR: 2022-01
-VOLUME: ''
-PAGE: (10)
-DOI: 10.1109/ICECIE52348.2021.9664737
-URL: https://ieeexplore.ieee.org/abstract/document/9664737
-TOPKEY: ddos-generic
-GEOLOC: Mizoram, IN
 ABS: ''
 ---
 MARKER: 2021_li_w_ieee_9486831
@@ -17525,7 +17498,7 @@ PAGE: 152-160
 DOI: ''
 URL: 
   https://www.researchgate.net/publication/267231885_Statistical_Segregation_Method_to_Minimize_the_False_Detections_During_DDoS_Attacks
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Tamil Nadu, IN
 ABS: ''
 ---
@@ -18020,7 +17993,7 @@ TITLE: Mitigation of DoS Attacks Using Machine Learning
 PUBLISH: Brno University of Technology
 YEAR: 2021-08
 URL: https://www.vut.cz/en/students/final-thesis?zp_id=137628
-TOPKEY: passive-generic, ddos-generic
+TOPKEY: passive-generic, ddos-2007
 GEOLOC: Brno, CZ
 ---
 MARKER: 2021_e_du_icml_139
@@ -18629,7 +18602,7 @@ VOLUME: ''
 PAGE: 1-12
 DOI: 10.1109/ICNP.2019.8888057
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8888057
-TOPKEY: passive-2016, ddos-generic
+TOPKEY: passive-2016, spoofer
 GEOLOC: Beijing, CN
 ---
 MARKER: 2019_taghouti_m_implementation_network_coding_8885446_1011
@@ -23651,7 +23624,7 @@ VOLUME: ''
 PAGE: (14 pages)
 DOI: 10.1155/2018/1263123
 URL: https://www.hindawi.com/journals/scn/2018/1263123/abs/
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Agadir, MR
 ABS: Cloud Computing services are often delivered through HTTP protocol. This facilitates
   access to services and reduces costs for both providers and end-users. However,
@@ -23998,7 +23971,7 @@ VOLUME: '95'
 PAGE: (9 pages)
 URL: 
   https://www.researchgate.net/publication/319142694_Neural_Network_Based_DDoS_Detection_Regarding_Hidden_Layer_Variation
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: ' Yogyakarta, ID'
 ABS: 'Distributed Denial of Service attack (DDoS) is a structured network attack coming
   from various sources and fused to form a large packet stream. DDoS attacks aiming
@@ -24183,29 +24156,6 @@ ABS: In the perspective of reality, Distributed Denial of Service attacks are th
   the real-time experimental results of the proposed system have high accuracy than
   the existing systems.
 ---
-MARKER: 2018_gb_selectcomputepapers_2019603
-TYPE: inproceedings
-AUTHOR: Bulman, G.
-TITLE: A Critical Analysis of Current Measures for Preventing Use of Fraudulent Resources
-  in Cloud Computing
-CTITLE: Selected Computing Research Papers - University of Sunderland
-YEAR: '2018'
-VOLUME: '7'
-PAGE: (7 pages)
-URL: 
-  https://sure.sunderland.ac.uk/id/eprint/9552/1/Selected%20Computing%20Research%20Papers%20June%202018.pdf#page=23
-TOPKEY: ddos-generic
-GEOLOC: Sunderland, UK
-ABS: 'Economic Denial of Sustainability (EDOS) attacks could have huge financial implications
-  for an organisation, whether this EDOS attacks where renting server space within
-  The Cloud on a Pay-As-You-Go basis, or DDOS attacks. This paper discusses current
-  DDOS/EDOS prevention algorithms in place, as well as provide a critical evaluation
-  of these algorithms. Furthermore, a comparison is made between each algorithm based
-  on the experiments performed. Penultimately, methodologies will then be fully examined
-  in order to propose the best solution from the algorithms evaluated. Finally, conclusions
-  will be provided and recommendations made based on the critical evaluation of these
-  current algorithms. '
----
 MARKER: 2018_sb_kk_ms_2019604
 TYPE: article
 AUTHOR: Behal, S., Kumar, K., Sachdeva, M.
@@ -24248,7 +24198,7 @@ VOLUME: '5'
 PAGE: ''
 DOI: 10.1109/ACDT.2018.8593121
 URL: https://ieeexplore.ieee.org/abstract/document/8593121
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Hanoi, VN
 ABS: TCP SYN Flood is one of the most dangerous types of DDoS attacks. To perform
   the attack effectively, attackers attempt to send overwhelmed SYN packets with spoofed
@@ -24270,7 +24220,7 @@ VOLUME: '16'
 PAGE: (8 pages)
 DOI: 10.1109/ICETA.2018.8572201
 URL: https://ieeexplore.ieee.org/abstract/document/8572201
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Stary Smokovec, SV
 ABS: This article describes the proposal of a system that was designed for effective
   network monitoring, analysis of network infiltration, and archiving of network flows
@@ -24315,37 +24265,6 @@ ABS: IP source spoofing is a consequence of lack of packet level authentication 
   declaring an AS as a non-spoofer. Besides, we use the normal approximation of binomial
   distribution to calculate confidence interval for the proportion of ASes allowing
   spoofing and to test the hypothesis regarding the spoofing activity in the Internet.
----
-MARKER: 2018_sb_ms_kks_2019609
-TYPE: article
-AUTHOR: Behal, S., Sachdeva, M., Saluja, K. K.
-TITLE: 'D-FAC: A novel 0-Divergence based distributed DDoS defense system'
-SERIAL: Journal of King Saud University
-YEAR: '2018'
-VOLUME: ''
-PAGE: (14 pages)
-DOI: 10.1016/j.jksuci.2018.03.005
-URL: 
-  https://www.researchgate.net/publication/324124027_D-FAC_A_novel_ph-Divergence_based_distributed_DDoS_defense_system
-TOPKEY: ddos-generic
-GEOLOC: Punjab, IN
-ABS: A Distributed Denial of Service (DDoS) attack is an austere menace to extensively
-  used Internet-based services and applications. Despite the presence of enormous
-  DDoS defense solutions, the in-time detection of DDoS attacks poses a stiff challenge
-  to network security professionals. The problem turns further crucial when such attacks
-  are amalgamated with behaviorally similar flash events (FEs) wherein a large number
-  of legitimate users starts accessing a particular service concurrently leading to
-  the denial of service. This paper proposes an anomaly based distributed defense
-  system called D-FAC that not only detect different type of DDoS attacks with efficacy
-  but also efficiently mitigate their impact. D-FAC computes the information distance
-  between legitimate and anomalous network traffic flows using information theory-based
-  0-Divergence metric to detect different types of DDoS attacks and efficiently discriminate
-  them from FEs. D-FAC distribute the computational and storage complexity of computing
-  0-Divergence detection metric to the nearest point of presence (PoP) routers. D-FAC
-  has been validated in an emulation based DDoSTB testbed using real DDoS attack tools
-  and traffic generators. The results clearly show that D-FAC has outperformed existing
-  Entropy and divergence based DDoS defense systems on various detection metrics like
-  detection accuracy, classification rate, FPR, precision and F-measure.
 ---
 MARKER: 2018_vm_mss_mhy_2019610
 TYPE: article
@@ -24420,7 +24339,7 @@ VOLUME: '31'
 PAGE: (17 pages)
 DOI: 10.1002/dac.3772
 URL: https://onlinelibrary.wiley.com/doi/full/10.1002/dac.3772
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Patiala, IN
 ABS: With an exponential increase in the data size and complexity of various docu-ments
   to be investigated, existing methods of network forensics are found notmuch efficient
@@ -24491,30 +24410,6 @@ ABS: Darknet traffic analysis is a possible choice for observing global trends i
   Some large-scale events can be detected from the instabilities in daily traffic,
   while some small-scale events can be detected from the instabilities of hourly traffic.
 URL: http://dx.doi.org/10.1109/ICOIN.2018.8343098
----
-MARKER: 2018_gi_jrs_2019703
-TYPE: inproceedings
-AUTHOR: Iliev, G., Shaikh, J. R.
-TITLE: Blockchain based Confidentiality and Integrity Preserving Scheme for Enhancing
-  E-commerce Security
-CTITLE: Global Conf. on Wireless Computing and Networking (GCWCN)
-YEAR: '2018'
-VOLUME: ''
-PAGE: (4 pages)
-DOI: 10.1109/GCWCN.2018.8668619
-TOPKEY: ddos-generic
-GEOLOC: Lonavala, IN
-ABS: In recent years, Electronic Commerce (E-commerce) applications are attracting
-  many users and merchants to conduct their daily business online which includes payment
-  of bills, online banking, buying tickets and purchasing goods etc. E-commerce transaction
-  security is a major concern for E-commerce websites along with its customers. The
-  basic requirements for any E-commerce transaction are privacy, authentication, integrity
-  and non-repudiation. In this paper, a transaction processing system (TPS) for E-commerce
-  by using a Blockchain technology, zero-knowledge proof and modified elliptic curve
-  cryptography encryption is proposed. Also a denial of service attack detection model
-  for the E-commerce system is proposed which take care of the DoS attack during E-commerce
-  transactions.
-URL: http://dx.doi.org/10.1109/GCWCN.2018.8668619
 ---
 MARKER: 2019_jhh_international_journal_2019705
 TYPE: article
@@ -24648,7 +24543,7 @@ VOLUME: '4'
 PAGE: (5 pages)
 DOI: 10.1109/CCAA.2018.8777608
 URL: https://ieeexplore.ieee.org/abstract/document/8777608
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Greater Noida, IN
 ABS: Cloud Security issue is one of the biggest challenges that hampers the growth
   of Cloud for its various service provisioning. Major Service Provisioning of cloud
@@ -24829,7 +24724,7 @@ YEAR: '2018'
 VOLUME: '58'
 PAGE: (60 pages)
 URL: https://www.iacis.org/conference/proceedings/IACIS_2018_Proceedings.pdf
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Clearwater, FL, US
 ABS: We conducted a case study of a major corporation which successfully built and
   implemented an IT infrastructure, on time and within budget, in spite of significant
@@ -24853,7 +24748,7 @@ YEAR: '2018'
 VOLUME: '6'
 PAGE: (14 pages)
 DOI: 10.1109/ACCESS.2018.2847349
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Newcastle upon Tyne, UK
 ABS: Todays computer networks are under increasing threat from malicious activity.
   Botnets (networks of remotely controlled computers, or bots) operate in such a way
@@ -24918,7 +24813,7 @@ CTITLE: IEEE Conf. on Computer Comm. (INFOCOM)
 YEAR: '2018'
 PAGE: (9 pages)
 DOI: 10.1109/INFOCOM.2018.8485998
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Honolulu, HI, US
 ABS: Traffic measurement in high-speed networks has many applications in improving
   network performance, assisting resource allocation, and detecting anomalies. In
@@ -27356,7 +27251,7 @@ VOLUME: ''
 PAGE: (46 pages)
 DOI: 10.1007/s11227-019-02767-z
 URL: https://link.springer.com/article/10.1007/s11227-019-02767-z
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Rourkela, IN
 ABS: The newly emerged software-defined networking (SDN) paradigm provides a flexible
   network management by decoupling the network control logic from the data plane,
@@ -27420,7 +27315,7 @@ VOLUME: ''
 PAGE: (7 pages)
 DOI: 10.1007/978-981-10-8639-7_14
 URL: https://link.springer.com/chapter/10.1007/978-981-10-8639-7_14
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Kurukshetra, IN
 ABS: In the modernized era, numerous types of attacks are espied on the Internet,
   along with the utmost destructive attacks, Distributed Denial of Service (DDoS)
@@ -27505,7 +27400,7 @@ VOLUME: ''
 PAGE: (15 pages)
 DOI: 10.1016/j.jksuci.2019.06.016
 URL: https://www.sciencedirect.com/science/article/pii/S1319157819304641
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Chandigarh, IN
 ABS: During the past few years, the traffic volume of legitimate traffic and attack
   traffic has increased manifolds up to Terabytes per second (Tbps). Because of the
@@ -27732,7 +27627,7 @@ VOLUME: ''
 PAGE: (17 pages)
 DOI: 10.3390/info10030106
 URL: https://www.mdpi.com/2078-2489/10/3/106
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Lisbon, PT
 ABS: The current paper addresses relevant network security vulnerabilities introduced
   by network devices within the emerging paradigm of Internet of Things (IoT) as well
@@ -27762,7 +27657,7 @@ VOLUME: ''
 PAGE: (8 pages)
 DOI: 10.1016/j.future.2019.02.037
 URL: https://www.sciencedirect.com/science/article/pii/S0167739X18324336
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Anhui, CN
 ABS: Software-defined networking (SDN) provides a promising architecture for future
   networks, and can provide advantages as central control programmability and global
@@ -27804,39 +27699,6 @@ ABS: This paper presents a hybrid method for the detection of distributed denial
   algorithm applied to the entropy time series. The results show the advantage of
   our approach compared to methods that are based on either entropy or number of packets
   only.
----
-MARKER: 2019_aa_ah_pl_ma_ht_pk_hf_20191139
-TYPE: article
-AUTHOR: Alsadhan, A., Hussain, A., Liatsis, P., Alani, M., Tawfik, H., Kendrick, P.,
-  Francis, H.
-TITLE: Locally weighted classifiers for detection of neighbor discovery protocol distributed
-  denial-of-service and replayed attacks
-SERIAL: Transactions on Emerging Telecommunications Technologies
-YEAR: '2019'
-VOLUME: ''
-PAGE: (15 pages)
-DOI: 10.1002/ett.3700
-URL: https://onlinelibrary.wiley.com/doi/full/10.1002/ett.3700
-TOPKEY: ddos-generic
-GEOLOC: Dammam, SA
-ABS: The Internet of things requires more internet protocol (IP) addresses than IP
-  version 4 (IPv4) can offer. To solve this problem, IP version 6 (IPv6) was developed
-  to expand the availability of address spaces. Moreover, it supports hierarchical
-  address allocation methods, which can facilitate route aggregation, thus limiting
-  expansion of routing tables. An important feature of the IPv6 suites is the neighbor
-  discovery protocol (NDP), which is geared towards substitution of the address resolution
-  protocol in router discovery and function redirection in IPv4. However, NDP is vulnerable
-  to denial-of-service (DoS) attacks. In this contribution, we present a novel detection
-  method for distributed DoS (DDoS) attacks, launched using NDP in IPv6. The proposed
-  system uses flow-based network representation, instead of a packet-based one. It
-  exploits the advantages of locally weighted learning techniques, with three different
-  machine learning models as its base learners. Simulation studies demonstrate that
-  the intrusion detection method does not suffer from overfitting issues and offers
-  lower computation costs and complexity, while exhibiting high accuracy rates. In
-  summary, the proposed system uses six features, extracted from our bespoke dataset
-  and is capable of detecting DDoS attacks with 99% accuracy and replayed attacks
-  with an accuracy of 91.17%, offering a marked improvement in detection performance
-  over state-of-the-art approaches.
 ---
 MARKER: 2019_am_rf_xd_20191143
 TYPE: inproceedings
@@ -29150,7 +29012,7 @@ CTITLE: Electrical Power and Energy Conf. (EPEC)
 YEAR: '2017'
 PAGE: (15 pages)
 DOI: 10.1109/EPEC.2017.8286243
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Saskatoon, CA
 ABS: This paper presents a scheme for detecting distributed denial of service (DDoS)
   attacks for smart grids. The main procedure of the proposed approach consists of
@@ -30941,7 +30803,7 @@ PUBLISH: arxiv.org
 YEAR: 2019-01
 PAGE: (9 pages)
 URL: https://arxiv.org/abs/1901.04411
-TOPKEY: ddos-generic
+TOPKEY: telescope-ddos-metadata
 GEOLOC: Berlin, DE
 ABS: Industrial control systems (ICS) are managed remotely with the help of dedicated
   protocols that were originally designed to work in walled gardens. Many of these
@@ -35054,7 +34916,7 @@ YEAR: 2018-01
 VOLUME: '1'
 PAGE: 108-116
 DOI: 10.5220/0006639801080116
-TOPKEY: passive-2016, ddos-generic
+TOPKEY: passive-2016, ddos-2007
 GEOLOC: New Brunswick, CA
 ABS: With exponential growth in the size of computer networks and developed applications,
   the significant increasing of the potential damage that can be caused by launching
@@ -40613,7 +40475,7 @@ YEAR: 2017-00
 VOLUME: 8 (6)
 PAGE: 248-252
 DOI: 10.14569/IJACSA.2017.080631
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Yogyakarta, IN
 ABS: Distributed denial of service (DDoS) is a structured network attack coming from
   various sources and fused to form a large packet stream. DDoS packet stream pattern
@@ -67232,7 +67094,7 @@ CTITLE: ACM SIGCOMM Conf. on Applications, technologies, architectures, and prot
 PAGE: 133-144
 YEAR: 2007-00
 DOI: 10.1145/1282380.1282396
-TOPKEY: topology-as-relationships, coralreef, asfinder
+TOPKEY: topology-as-relationships, coralreef
 REMARK: Reference to CAIDA AS relationships and CoralReef
 GEOLOC: Redmond, WA, US; Redmond, WA, US; Brooklyn, NY, US
 URL: http://dx.doi.org/10.1145/1282380.1282396
@@ -71120,7 +70982,7 @@ TITLE: "Blockchain security threats and collaborative defense: A literature revi
 SERIAL: Computers, Materials and Continua
 YEAR: 2023-10
 VOLUME: '76'
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Haikou, CN
 URL: https://ttu-ir.tdl.org/items/6d101f9e-b889-48a1-a708-310730b53d29
 ---
@@ -71193,7 +71055,7 @@ TITLE: A New IDS for Detecting DDoS Attacks in Wireless Networks using Spotted H
 SERIAL: Journal of Internet Technology
 YEAR: 2023-01
 VOLUME: '24'
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Chennai, IN
 URL: https://jit.ndhu.edu.tw/article/view/2836
 ---
@@ -71952,7 +71814,7 @@ TITLE: Deep neural network empowered bi-directional cross GAN in context of clas
 SERIAL: Multimedia Tools and Applications 
 YEAR: 2023-03
 VOLUME: '82'
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Kakinada, IN
 URL: https://link.springer.com/article/10.1007/s11042-023-15030-8
 ---
@@ -71983,7 +71845,7 @@ AUTHOR: Prabavathy, S., Reddy, IRP.
 TITLE: Fog computing based Distributed Denial of Service Attack Detection Method for Large-Scale Internet of Things
 YEAR: 2023-03
 CTITLE: IEEE
-TOPKEY: ddos-generic
+TOPKEY: ddos-2007
 GEOLOC: Hyderabad, IN
 URL: https://ieeexplore.ieee.org/abstract/document/10116991/
 ---

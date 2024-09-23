@@ -48,6 +48,9 @@
   passive-2016:
     predict: False
     public : False
+  passive-2017:
+    predict: False
+    public : False
   passive-2018:
     predict: False
     public : False
@@ -353,7 +356,6 @@ mapnet: 'software:mapnet'
 coralreef: 'software:coralreef'
 datcat: 'software:datcat'
 dolphin: 'presentation:2014_dolphin_dhs'
-asfinder: 'software:coralreef'
 netgeo: 'software:netgeo'
 ioda: 'software:ioda'
 
