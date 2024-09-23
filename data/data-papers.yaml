@@ -8675,7 +8675,7 @@ PUBLISH: Universidade do Minho
 PAGE: 1-62
 YEAR: 2022-04
 URL: https://repositorium.sdum.uminho.pt/handle/1822/80121
-TOPKEY: passive-oc48, passive-2016
+TOPKEY: passive-oc48, passive-2019
 GEOLOC: Braga, PT
 ABS: ''
 ---
@@ -18111,7 +18111,7 @@ AUTHOR: Ulmer, A., Kohlhammer, J.
 TITLE: 'ProBGP: Progressive Visual Analytics of Live BGP Updates'
 YEAR: 2021-05
 URL: https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14287
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, bgpstream
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_s_peng_arxiv_13504
@@ -18144,7 +18144,7 @@ CTITLE: 21st ACM Internet Measurement Conference
 YEAR: 2021-11
 PAGE: 703-719
 DOI: 10.1145/3487552
-TOPKEY: topology-as-organization, peeringdb, topology-as-classification
+TOPKEY: topology-as-organization, peeringdb
 GEOLOC: Stanford, CA, US
 ---
 MARKER: 2021_g_baltra_arxiv_11439
@@ -18153,7 +18153,7 @@ AUTHOR: Baltra, G., Heidemann, J.
 TITLE: What Is The Internet?(Considering Partial Connectivity)
 YEAR: 2021-06
 DOI: https://doi.org/10.48550/arXiv.2107.11439
-TOPKEY: topology-ark-ipv4-prefix-probing
+TOPKEY: topology-ark-ipv4-prefix-probing, topology-generic
 GEOLOC: Los Angeles, CA, US
 PUBLISH: arxiv
 ---
@@ -18233,7 +18233,7 @@ TITLE: Deployment and scalability of an inter-domain multi-path routing infrastr
 YEAR: 2021-12
 PAGE: 126-140
 DOI: 10.1145/3485983.3494862
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Zurich, CH
 ---
 MARKER: 2021_s_zhang_acm_101145
@@ -18245,7 +18245,7 @@ TITLE: Discovering obscure looking glass sites on the web to facilitate internet
 YEAR: 2021-12
 PAGE: 426-439
 DOI: 10.1145/3485983.3494857
-TOPKEY: topology-as-rank, topology-as-organization, routeviews_prefix2as, topology-ark-ipv4-traceroute
+TOPKEY: topology-as-rank, routeviews_prefix2as, topology-ark-ipv4-traceroute
 GEOLOC: Beijing, CN
 ---
 MARKER: 2021_t_garrett_sd_133891262
@@ -18323,7 +18323,7 @@ TITLE: Protecting IoT Devices through Localized Detection of BGP Hijacks for Ind
   Things
 YEAR: 2021-05
 DOI: 10.1109/SPW53761.2021.00045
-TOPKEY: routeviews-prefix2as
+TOPKEY: bgpstream
 GEOLOC: Bloomington, IN, US
 ---
 MARKER: 2013_v_giotsas_ieee_6562878""
@@ -18424,16 +18424,6 @@ YEAR: 2021-04
 DOI: 10.1109/CTISC52352.2021.00036
 TOPKEY: passive-2015
 GEOLOC: Shanghai, CN
----
-MARKER: 2021_a_chartuni_mdpi_10609
-TYPE: misc
-PUBLISH: MDPI
-AUTHOR: Chartuni, A., Marquez, J.
-TITLE: Multi-Classifier of DDoS Attacks in Computer Networks Built on Neural Networks
-YEAR: 2021-11
-URL: https://www.mdpi.com/2076-3417/11/22/10609
-TOPKEY: passive-2008, passive-2019
-GEOLOC: Barranquilla, CO
 ---
 MARKER: 2021_y_du_ieee_9488425
 TYPE: inproceedings
@@ -73837,7 +73827,7 @@ AUTHOR: Mendes, JE da Silva.
 TITLE: Evaluating the Impact of Traffic Sampling in Network Analysis
 PUBLISH: University of Minho
 YEAR: 2022-02
-TOPKEY: passive-oc48, passive-2016
+TOPKEY: passive-oc48, passive-2019
 GEOLOC: Braga, PT
 URL: https://search.proquest.com/openview/91fced3f5251f776c8c86b2d5ddb1f70/1?pq-origsite=gscholar&cbl=2026366&diss=y
 ---
@@ -73867,7 +73857,7 @@ AUTHOR: Saidi, SJ.
 TITLE: Characterizing the IoT ecosystem at scale
 PUBLISH: Saarland University
 YEAR: '2022'
-TOPKEY: passive-generic, routeviews_prefix2as
+TOPKEY: passive-2016, routeviews_prefix2as
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/35568
 ---
@@ -73938,7 +73928,7 @@ AUTHOR: Shaikh, F., Bou-Harb, E., Vehabovic, A., Crichigno, J., Yayimli, A., Gha
 TITLE: IoT Threat Detection Testbed Using Generative Adversarial Networks
 YEAR: 2022-06
 CTITLE: IEEE
-TOPKEY: telescope-generic, passive-generic
+TOPKEY: telescope-generic
 GEOLOC: Florida, US
 URL: https://ieeexplore.ieee.org/abstract/document/9858239/
 ---
