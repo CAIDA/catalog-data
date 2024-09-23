@@ -15088,7 +15088,7 @@ VOLUME: ''
 PAGE: 207-222
 DOI: 10.1145/3452296.3472892
 URL: https://dl.acm.org/doi/abs/10.1145/3452296.3472892
-TOPKEY: passive-2016
+TOPKEY: passive-2018
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -69335,7 +69335,7 @@ TITLE: 'Back-to-the-Future Whois: An IP Address Attribution Service for Working 
   Historic Datasets'
 YEAR: 2023-01
 DOI: 10.48550/arXiv.2211.06537
-TOPKEY: routeviews-prefix2as, as-organizations
+TOPKEY: routeviews-prefix2as, topology-as-organization
 ABS: Researchers and practitioners often face the issue of having to attribute an
   IP address to an organization. For current data this is comparably easy, using services
   like whois or other databases. Similarly, for historic data, several entities like
@@ -69359,30 +69359,8 @@ PUBLISH: IEEE
 YEAR: 2023-4
 SERIAL: IEEE
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10093795
-TOPKEY: passive-2016
+TOPKEY: passive-2018
 GEOLOC: Beijing, CN
----
-MARKER: 2023_amira_a_dl_acm
-TYPE: in_journal
-AUTHOR: Amira, A.; Derhab, A.; Karbab, E.; Nouali, O.
-TITLE: A survey of malware analysis using community detection algorithms
-PUBLISH: ACM Digital Library
-YEAR: 2023-7
-SERIAL: ACM Computing Surveys
-VOLUME: '56'
-URL: https://dl.acm.org/doi/pdf/10.1145/3610223
-TOPKEY: ddos-2007
-GEOLOC: Bejaia, DZ
----
-MARKER: 2023_jiang_x_arxiv
-TYPE: online
-AUTHOR: Jiang, X.; Liu, S.; Naama, S.; Bronzino, F.; Schmitt, P.
-TITLE: 'AC-DC: Adaptive Ensemble Classification for Network Traffic Identification'
-PUBLISH: arxiv.org
-YEAR: 2023-2
-URL: https://arxiv.org/pdf/2302.11718.pdf
-TOPKEY: passive-2019
-GEOLOC: Chicago, IL, US
 ---
 MARKER: 2023_ezeh_d_ieee
 TYPE: in_journal
@@ -69395,18 +69373,6 @@ SERIAL: IEEE
 URL: http://real.mtak.hu/170280/1/InfocomJournal_2023_2_5.pdf
 TOPKEY: ddos-2007
 GEOLOC: Philadelphia, PA, US
----
-MARKER: 2023_roy_s_crc_press
-TYPE: in_book
-AUTHOR: Roy, S.; Chakraborty, R.; Mathew, J.; Mazumdar, A.; Chakraborty, S.
-TITLE: ARTIFICIAL INTELLIGENCE AND DEEP LEARNING FOR COMPUTER NETWORK
-PUBLISH: CRC Press
-YEAR: '2023'
-CTITLE: CRC Press
-URL: 
-  https://api.taylorfrancis.com/content/books/mono/download?identifierName=doi&identifierValue=10.1201/9781003212249&type=googlepdf
-TOPKEY: passive-2016
-GEOLOC: Patiala, IN
 ---
 MARKER: 2023_grassia_m_springer
 TYPE: in_proceedings
@@ -70147,7 +70113,7 @@ PUBLISH: Springer, Cham
 YEAR: 2023-03
 CTITLE: Springer
 URL: https://doi.org/10.1007/978-3-031-28486-1_10
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_abdulrahman_a_springer
