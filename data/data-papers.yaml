@@ -72928,7 +72928,7 @@ AUTHOR: Holterbach, T., Alfroy, T., Phokeer, A., Dainotti, A., Pelsser, C.
 TITLE: A System to Detect {Forged-Origin}{BGP} Hijacks
 YEAR: 2024-04
 CTITLE: "21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)"
-TOPKEY: topology-as-relationships, peeringdb
+TOPKEY: topology-as-relationships, peeringdb, topology-as-rank
 GEOLOC: Strasbourg, FR
 URL: https://www.usenix.org/conference/nsdi24/presentation/holterbach
 ---
@@ -72989,7 +72989,7 @@ AUTHOR: Sassi, F.
 TITLE: "Uncovering threats in digital systems: a deep dive into BGP, the blockchain, and Telegram"
 PUBLISH: Sapienza University of Rome
 YEAR: 2024-05
-TOPKEY: topology-as-relationships, bgpstream
+TOPKEY: topology-as-rank, bgpstream
 GEOLOC: Rome, IT
 URL: https://iris.uniroma1.it/handle/11573/1711089
 ---
@@ -72999,7 +72999,7 @@ AUTHOR: Prehn, L., Foremski, P., Gasser, O.
 TITLE: "Kirin: Hitting the Internet with Distributed BGP Announcements"
 YEAR: 2024-07
 CTITLE: "ASIA CCS '24: Proceedings of the 19th ACM Asia Conference on Computer and Communications Security"
-TOPKEY: peeringdb
+TOPKEY: peeringdb, topology-as-relationships
 GEOLOC: Saarbuecken, Saarland, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3634737.3657000
 ---
@@ -73009,7 +73009,7 @@ AUTHOR: Chen, Y., Yin, Q., Li, Q., Liu, Z., Xu, K., Xu, Y., Xu, M., Lu, Z., Wu, 
 TITLE: "Learning with Semantics: Towards a Semantics-Aware Routing Anomaly Detection System"
 CTITLE: Proceedings of the 33rd USENIX Security Symposium
 YEAR: 2024-02
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Beijing, CN
 URL: https://www.usenix.org/system/files/sec24summer-prepub-670-chen-yihao.pdf
 ---
@@ -73051,7 +73051,7 @@ AUTHOR: Lone, QB.
 TITLE: "SAVing the Internet: Measuring the adoption of Source Address Validation (SAV) by network providers"
 PUBLISH: Delft University of Technology
 YEAR: '2022'
-TOPKEY: topology-as-relationships, topology-as-rank, topology-itdk, topology-as-organization
+TOPKEY: topology-ark-itdk, topology-ark-ipv4-traceroute, spoofer, topology-as-organization, topology-as-rank
 GEOLOC: Delft, NL
 URL: https://research.tudelft.nl/en/publications/saving-the-internet-measuring-the-adoption-of-source-address-vali
 ---
@@ -73163,16 +73163,6 @@ CTITLE: IEEE
 TOPKEY: topology-as-relationships
 GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10000938/
----
-MARKER: 2022_tianxiang_dai_tuprints_7332
-TYPE: PhD thesis
-AUTHOR: Dai, Tianxiang.
-TITLE: Internet-Wide Evaluations of Security and Vulnerabilities
-PUBLISH: Technische Universität Darmstadt
-YEAR: 2022-10
-TOPKEY: topology-as-relationships, passive-generic
-GEOLOC: Darmstadt, DE
-URL: https://d-nb.info/131891874X/34
 ---
 MARKER: 2021_seyedali_tabaeiaghdaei_ethzch_3699
 TYPE: MSc thesis
