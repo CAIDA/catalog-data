@@ -18485,7 +18485,7 @@ TITLE: On the evolution of internet flow characteristics
 YEAR: 2021-07
 PAGE: 29-35
 DOI: 10.1145/3472305.3472321
-TOPKEY: passive-2016, passive-generic
+TOPKEY: passive-2018, passive-2019
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_m_zuppelli_acm_3470067
@@ -18497,7 +18497,7 @@ TITLE: 'pcapStego: A Tool for Generating Traffic Traces for Experimenting with N
 YEAR: 2021-08
 PAGE: 1-8
 DOI: 10.1145/3465481
-TOPKEY: passive-2019
+TOPKEY: passive-2018
 GEOLOC: Genova, IT
 ---
 MARKER: 2021_m_labonne_ieee_9469453
@@ -19348,7 +19348,7 @@ VOLUME: ''
 PAGE: 1-17
 DOI: 10.1007/978-3-030-72582-2_32
 URL: https://arxiv.org/pdf/2103.13055.pdf
-TOPKEY: passive-2019, topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks
+TOPKEY: passive-2019, topology-ark-itdk
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2021_zhang_boyu_flow_label_collector_3070406
@@ -19528,7 +19528,7 @@ VOLUME: ''
 PAGE: ''
 DOI: ''
 URL: https://arxiv.org/pdf/2106.07351.pdf
-TOPKEY: passive-generic, topology-as-rank
+TOPKEY: passive-2015, passive-2016, passive-2018, passive-2019, topology-as-rank
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_sarpe_ilie_presto_approximation_101137
@@ -19641,7 +19641,7 @@ VOLUME: ''
 PAGE: 1-15
 DOI: 10.1109/TNSM.2021.3068604
 URL: https://ieeexplore.ieee.org/abstract/document/9387249
-TOPKEY: passive-2015
+TOPKEY: passive-2015, passive-2016
 GEOLOC: Haifa, IL
 ---
 MARKER: 2019_sharafaldin_iman_ddos_attack_taxonomy_8888419
@@ -20406,7 +20406,7 @@ YEAR: '2021'
 VOLUME: ''
 PAGE: ''
 URL: https://arxiv.org/pdf/2104.02346.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-relationships-geo, routeviews-prefix2as
 GEOLOC: Zurich, CH
 ABS: ''
 ---
@@ -20446,7 +20446,7 @@ VOLUME: ''
 PAGE: ''
 DOI: 10.14722/ndss.2021.24438
 URL: https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1A-4_24438_paper.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Mansfield, CT, US
 ABS: ''
 ---
@@ -20718,20 +20718,6 @@ DOI: 10.5753/eniac.2019.9319
 URL: https://sol.sbc.org.br/index.php/eniac/article/view/9319
 TOPKEY: topology-as-relationships
 GEOLOC: Curitiba, BR
-ABS: ''
----
-MARKER: 2021_l_salamatian_tyab018
-TYPE: article
-SERIAL: Journal of Cybersecurity
-AUTHOR: Salamatian, L.
-TITLE: 'The geopolitics behind the routes data travels: a case study of Iran'
-YEAR: '2021'
-VOLUME: 7(1)
-DOI: https://doi.org/10.1093/cybsec/tyab018
-ARTICLE: tyab018
-URL: https://academic.oup.com/cybersecurity/article/7/1/tyab018/6353268?login=true
-TOPKEY: topology-as-relationships
-GEOLOC: New York, NY, US
 ABS: ''
 ---
 MARKER: 2019_g_freitas_scientificreports_3355601
@@ -69241,35 +69227,12 @@ CTITLE: ACM Web Conference
 PAGE: 2989-2997
 YEAR: 2022-04
 DOI: 10.1145/3485447.3512019
-TOPKEY: passive_2019_pcap
+TOPKEY: passive-2019
 GEOLOC: Nanjing, CN
 ABS: This paper introduces DUET, a generic framework that processes heavy hitters,
   top-k, and persistent items which are hot issue in data stream processing for web
   analysis. The framework can achieve higher throughput and three orders of magnitude
   lower average relative error compared to cutting-edge algorithms.
----
-MARKER: 2023_s_nourin_230404835
-TYPE: inproceedings
-AUTHOR: Nourin, S., Tran, V., Jiang, X., Bock, K., Feamster, N., Hoang, N., Levin,
-  D.
-TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in
-  Large-Scale Measurements of a Low-Penetration Country"
-CTITLE: The 2023 ACM Web Conference (WWW 2023)
-YEAR: 2023-05
-DOI: 10.48550/arXiv.2304.04835
-TOPKEY: as_relationships_geo, routeviews_prefix2as, topology-as-rank
-GEOLOC: College Park, MD, US
-ABS: We present the largest measurement study to date of Turkmenistan's Web censorship.
-  To do so, we developed TMC, which tests the blocking status of millions of domains
-  across the three foundational protocols of the Web (DNS, HTTP, and HTTPS). Importantly,
-  TMC does not require access to vantage points in the country. We apply TMC to 15.5M
-  domains, our results reveal that Turkmenistan censors more than 122K domains, using
-  different blocklists for each protocol. We also reverse-engineer these censored
-  domains, identifying 6K over-blocking rules causing incidental filtering of more
-  than 5.4M domains. Finally, we use Geneva, an open-source censorship evasion tool,
-  to discover five new censorship evasion strategies that can defeat Turkmenistan's
-  censorship at both transport and application layers. We will publicly release both
-  the data collected by TMC and the code for censorship evasion.
 ---
 MARKER: 2022_y_lai_3210336
 TYPE: inproceedings
@@ -69763,19 +69726,6 @@ YEAR: 2023-01
 URL: https://arxiv.org/pdf/2301.13499.pdf
 TOPKEY: topology-as-rank, topology-as-relationships
 GEOLOC: Magdeburg, DE
----
-MARKER: 2023_nourin_s_dl_acm
-TYPE: in_journal
-AUTHOR: Nourin, S.; Tran, V.; Jiang, X.; Bock, K.; Feamster, N.; Phong Hoang, N.;
-  Levin, D.
-TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in
-  Large-Scale Measurements of a Low-Penetration Country"
-PUBLISH: ACM Digital Library
-YEAR: 2023-04
-SERIAL: "WWW '23: Proceedings of the ACM Web Conference 2023"
-URL: https://dl.acm.org/doi/pdf/10.1145/3543507.3583189
-TOPKEY: topology-as-rank, routeviews_prefix2as
-GEOLOC: College Park, MD, US
 ---
 MARKER: 2023_tian_c_ieee
 TYPE: in_proceedings
@@ -70345,7 +70295,7 @@ TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study i
 YEAR: 2023-05
 CTITLE: International World Wide Web Conference (WWW)
 DOI: https://doi.org/10.1145/3543507.3583189
-TOPKEY: topology-as-relationships,topology-as-rank,routeviews_prefix2as
+TOPKEY: topology-as-rank, routeviews_prefix2as
 ---
 MARKER: 2023_j_li_icc_622210
 TYPE: in-proceedings
