@@ -188,6 +188,27 @@ URL: https://arxiv.org/pdf/2303.02514.pdf
 TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-relationships, topology-ark-itdk, ixps
 GEOLOC: Evanston, IL, US
 ---
+MARKER: 2023_carisimo_e_northwestern
+TYPE: online
+AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
+TITLE: A hop away from everywhere A view of the intercontinental long-haul infrastructure
+PUBLISH: northwestern
+YEAR: 2023-12
+URL: https://www.aqualab.cs.northwestern.edu/wp-content/uploads/2023/10/carisimo-lhl-24.pdf
+TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-relationships, topology-ark-itdk, ixps
+GEOLOC: Evanston, IL, US
+---
+MARKER: 2023_carisimo_e_acm
+TYPE: in_proceedings
+AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
+TITLE: A hop away from everywhere A view of the intercontinental long-haul infrastructure
+PUBLISH: ACM
+CTITLE: SIGMETRICS/PERFORMANCE '24
+YEAR: 2023-06
+URL: https://dl.acm.org/doi/10.1145/3652963.3655041
+TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-relationships, topology-ark-itdk, ixps
+GEOLOC: Evanston, IL, US
+---
 MARKER: 2023_carchiolo_v_
 TYPE: online
 AUTHOR: Carchiolo, V.; Grassia, M.; Longheu, A.; Malgeri, M.; Mangionim, G.
@@ -68326,7 +68347,7 @@ URL: http://dx.doi.org/10.1145/964725.633056
 MARKER: 1999_w_fang_globecom_1859
 TYPE: inproceedings
 AUTHOR: Fang, W., Peterson, L.
-TITLE: Inter-AS traffic patterns and there implications
+TITLE: Inter-AS traffic patterns and their implications
 CTITLE: IEEE Global Telecommunications Conf. (GLOBECOM)
 VOLUME: '3'
 PAGE: 1859-1868
