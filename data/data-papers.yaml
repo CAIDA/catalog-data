@@ -6912,7 +6912,7 @@ PUBLISH: National and Kapodistrian University of Athens
 PAGE: 1-90
 YEAR: 2013-09
 URL: https://pergamos.lib.uoa.gr/uoa/dl/object/1321333/file.pdf
-TOPKEY: topology-ark-itdk, 2013-midar, iffinder
+TOPKEY: topology-ark-itdk, midar, iffinder
 GEOLOC: Zografou, GR
 ABS: ''
 ---
@@ -7775,7 +7775,7 @@ PUBLISH: Universite de Rennes
 YEAR: 2015-07
 PAGE: 1-147
 URL: https://hal.archives-ouvertes.fr/tel-01320324/
-TOPKEY: iffinder, 2013-midar
+TOPKEY: iffinder, midar
 GEOLOC: Rennes, FR
 ABS: ''
 ---
@@ -13445,7 +13445,7 @@ VOLUME: '11'
 PAGE: (23)
 DOI: 10.1371/journal.pone.0240100
 URL: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0240100
-TOPKEY: topology-generic, 2013-midar
+TOPKEY: topology-generic, midar
 GEOLOC: Reno, NV, US
 ABS: ''
 ---
@@ -38404,7 +38404,7 @@ CTITLE: Asia Conf. on Computer and Communications Security
 YEAR: 2017-04
 PAGE: 862-873
 DOI: 10.1145/3052973.3052988
-TOPKEY: passive-2015, 2013-midar
+TOPKEY: passive-2015, midar
 GEOLOC: Zurich, CH
 ABS: We make a case for packet-replay suppression at the network layer, a concept
   that has been generally neglected. Our contribution is twofold. First, we demonstrate
