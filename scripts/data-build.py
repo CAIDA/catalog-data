@@ -329,13 +329,28 @@ def main():
     ######################
     tag_caida_data = "tag:used_caida_data"
     tag_obj = id_object[tag_caida_data] = {"__typename":"Tag", "id":"tag:used_caida_data", "name":"used CAIDA data", "filename":sys.argv[0]}
+    used_caida_data_link_labels = ["used by", "used to create", "usedBy", "uses", "isDerivedFrom"] # link labels that will be considered as using caida data
     ids = set()
+
     for id0,id_link in id_id_link.items():
         obj0 = id_object[id0]
+        
+        # Checks that the linked object is a CAIDA dataset
         if obj0["__typename"] == "Dataset" and "tag:caida" in obj0["tags"]:
-            for id1 in id_link.keys():
+            for id1, id_link_value1 in id_link.items():
                 obj1 = id_object[id1]
-                if obj1["__typename"] != "Tag" and "tag:caida_data" not in obj1["tags"]:
+                
+                # get label of link
+                is_used_caida_data = True # boolean to track if the link should be considered as "using caida data"
+                if 'label' in id_link_value1:
+                    link_label = id_link_value1["label"]
+
+                    # based on label, decide if the tag should be added
+                    if link_label not in used_caida_data_link_labels:
+                        is_used_caida_data = False
+
+                # correctly check and then add ids that need new tag used_caida_data
+                if obj1["__typename"] != "Tag" and "tag:caida_data" not in obj1["tags"] and is_used_caida_data:
                     if "tags" not in obj1:
                         obj1["tags"] = []
                     ids.add(obj1["id"])
