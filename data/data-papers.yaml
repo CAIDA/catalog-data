@@ -8374,7 +8374,7 @@ PUBLISH: Universidade do Minho
 PAGE: 1-62
 YEAR: 2022-04
 URL: https://repositorium.sdum.uminho.pt/handle/1822/80121
-TOPKEY: passive-oc48, passive-2016
+TOPKEY: passive-oc48, passive-2019
 GEOLOC: Braga, PT
 ABS: ''
 ---
@@ -14507,7 +14507,7 @@ VOLUME: ''
 PAGE: 207-222
 DOI: 10.1145/3452296.3472892
 URL: https://dl.acm.org/doi/abs/10.1145/3452296.3472892
-TOPKEY: passive-2016
+TOPKEY: passive-2018
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -17234,7 +17234,7 @@ AUTHOR: Ulmer, A., Kohlhammer, J.
 TITLE: 'ProBGP: Progressive Visual Analytics of Live BGP Updates'
 YEAR: 2021-05
 URL: https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.14287
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, bgpstream
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_s_peng_arxiv_13504
@@ -17267,7 +17267,7 @@ CTITLE: 21st ACM Internet Measurement Conference
 YEAR: 2021-11
 PAGE: 703-719
 DOI: 10.1145/3487552
-TOPKEY: topology-as-organization, peeringdb, topology-as-classification
+TOPKEY: topology-as-organization, peeringdb
 GEOLOC: Stanford, CA, US
 ---
 MARKER: 2021_g_baltra_arxiv_11439
@@ -17276,7 +17276,7 @@ AUTHOR: Baltra, G., Heidemann, J.
 TITLE: What Is The Internet?(Considering Partial Connectivity)
 YEAR: 2021-06
 DOI: https://doi.org/10.48550/arXiv.2107.11439
-TOPKEY: topology-ark-ipv4-prefix-probing
+TOPKEY: topology-ark-ipv4-prefix-probing, topology-generic
 GEOLOC: Los Angeles, CA, US
 PUBLISH: arxiv
 ---
@@ -17356,7 +17356,7 @@ TITLE: Deployment and scalability of an inter-domain multi-path routing infrastr
 YEAR: 2021-12
 PAGE: 126-140
 DOI: 10.1145/3485983.3494862
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Zurich, CH
 ---
 MARKER: 2021_s_zhang_acm_101145
@@ -17368,7 +17368,7 @@ TITLE: Discovering obscure looking glass sites on the web to facilitate internet
 YEAR: 2021-12
 PAGE: 426-439
 DOI: 10.1145/3485983.3494857
-TOPKEY: topology-as-rank, topology-as-organization, routeviews_prefix2as, topology-ark-ipv4-traceroute
+TOPKEY: topology-as-rank, routeviews_prefix2as, topology-ark-ipv4-traceroute
 GEOLOC: Beijing, CN
 ---
 MARKER: 2021_t_garrett_sd_133891262
@@ -17446,7 +17446,7 @@ TITLE: Protecting IoT Devices through Localized Detection of BGP Hijacks for Ind
   Things
 YEAR: 2021-05
 DOI: 10.1109/SPW53761.2021.00045
-TOPKEY: routeviews-prefix2as
+TOPKEY: bgpstream
 GEOLOC: Bloomington, IN, US
 ---
 MARKER: 2013_v_giotsas_ieee_6562878""
@@ -17548,16 +17548,6 @@ DOI: 10.1109/CTISC52352.2021.00036
 TOPKEY: passive-2015
 GEOLOC: Shanghai, CN
 ---
-MARKER: 2021_a_chartuni_mdpi_10609
-TYPE: misc
-PUBLISH: MDPI
-AUTHOR: Chartuni, A., Marquez, J.
-TITLE: Multi-Classifier of DDoS Attacks in Computer Networks Built on Neural Networks
-YEAR: 2021-11
-URL: https://www.mdpi.com/2076-3417/11/22/10609
-TOPKEY: passive-2008, passive-2019
-GEOLOC: Barranquilla, CO
----
 MARKER: 2021_y_du_ieee_9488425
 TYPE: inproceedings
 CTITLE: IEEE INFOCOM 2021-IEEE Conference on Computer Communications
@@ -17618,7 +17608,7 @@ TITLE: On the evolution of internet flow characteristics
 YEAR: 2021-07
 PAGE: 29-35
 DOI: 10.1145/3472305.3472321
-TOPKEY: passive-2016, passive-generic
+TOPKEY: passive-2018, passive-2019
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_m_zuppelli_acm_3470067
@@ -17630,7 +17620,7 @@ TITLE: 'pcapStego: A Tool for Generating Traffic Traces for Experimenting with N
 YEAR: 2021-08
 PAGE: 1-8
 DOI: 10.1145/3465481
-TOPKEY: passive-2019
+TOPKEY: passive-2018
 GEOLOC: Genova, IT
 ---
 MARKER: 2021_m_labonne_ieee_9469453
@@ -18481,7 +18471,7 @@ VOLUME: ''
 PAGE: 1-17
 DOI: 10.1007/978-3-030-72582-2_32
 URL: https://arxiv.org/pdf/2103.13055.pdf
-TOPKEY: passive-2019, topology-ark-ipv4-aslinks, topology-ark-ipv6-aslinks
+TOPKEY: passive-2019, topology-ark-itdk
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2021_zhang_boyu_flow_label_collector_3070406
@@ -18661,7 +18651,7 @@ VOLUME: ''
 PAGE: ''
 DOI: ''
 URL: https://arxiv.org/pdf/2106.07351.pdf
-TOPKEY: passive-generic, topology-as-rank
+TOPKEY: passive-2015, passive-2016, passive-2018, passive-2019, topology-as-rank
 GEOLOC: Munich, DE
 ---
 MARKER: 2021_sarpe_ilie_presto_approximation_101137
@@ -18774,7 +18764,7 @@ VOLUME: ''
 PAGE: 1-15
 DOI: 10.1109/TNSM.2021.3068604
 URL: https://ieeexplore.ieee.org/abstract/document/9387249
-TOPKEY: passive-2015
+TOPKEY: passive-2015, passive-2016
 GEOLOC: Haifa, IL
 ---
 MARKER: 2019_sharafaldin_iman_ddos_attack_taxonomy_8888419
@@ -19539,7 +19529,7 @@ YEAR: '2021'
 VOLUME: ''
 PAGE: ''
 URL: https://arxiv.org/pdf/2104.02346.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-relationships-geo, routeviews-prefix2as
 GEOLOC: Zurich, CH
 ABS: ''
 ---
@@ -19579,7 +19569,7 @@ VOLUME: ''
 PAGE: ''
 DOI: 10.14722/ndss.2021.24438
 URL: https://www.ndss-symposium.org/wp-content/uploads/ndss2021_1A-4_24438_paper.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Mansfield, CT, US
 ABS: ''
 ---
@@ -19851,20 +19841,6 @@ DOI: 10.5753/eniac.2019.9319
 URL: https://sol.sbc.org.br/index.php/eniac/article/view/9319
 TOPKEY: topology-as-relationships
 GEOLOC: Curitiba, BR
-ABS: ''
----
-MARKER: 2021_l_salamatian_tyab018
-TYPE: article
-SERIAL: Journal of Cybersecurity
-AUTHOR: Salamatian, L.
-TITLE: 'The geopolitics behind the routes data travels: a case study of Iran'
-YEAR: '2021'
-VOLUME: 7(1)
-DOI: https://doi.org/10.1093/cybsec/tyab018
-ARTICLE: tyab018
-URL: https://academic.oup.com/cybersecurity/article/7/1/tyab018/6353268?login=true
-TOPKEY: topology-as-relationships
-GEOLOC: New York, NY, US
 ABS: ''
 ---
 MARKER: 2019_g_freitas_scientificreports_3355601
@@ -68374,35 +68350,12 @@ CTITLE: ACM Web Conference
 PAGE: 2989-2997
 YEAR: 2022-04
 DOI: 10.1145/3485447.3512019
-TOPKEY: passive_2019_pcap
+TOPKEY: passive-2019
 GEOLOC: Nanjing, CN
 ABS: This paper introduces DUET, a generic framework that processes heavy hitters,
   top-k, and persistent items which are hot issue in data stream processing for web
   analysis. The framework can achieve higher throughput and three orders of magnitude
   lower average relative error compared to cutting-edge algorithms.
----
-MARKER: 2023_s_nourin_230404835
-TYPE: inproceedings
-AUTHOR: Nourin, S., Tran, V., Jiang, X., Bock, K., Feamster, N., Hoang, N., Levin,
-  D.
-TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in
-  Large-Scale Measurements of a Low-Penetration Country"
-CTITLE: The 2023 ACM Web Conference (WWW 2023)
-YEAR: 2023-05
-DOI: 10.48550/arXiv.2304.04835
-TOPKEY: as_relationships_geo, routeviews_prefix2as, topology-as-rank
-GEOLOC: College Park, MD, US
-ABS: We present the largest measurement study to date of Turkmenistan's Web censorship.
-  To do so, we developed TMC, which tests the blocking status of millions of domains
-  across the three foundational protocols of the Web (DNS, HTTP, and HTTPS). Importantly,
-  TMC does not require access to vantage points in the country. We apply TMC to 15.5M
-  domains, our results reveal that Turkmenistan censors more than 122K domains, using
-  different blocklists for each protocol. We also reverse-engineer these censored
-  domains, identifying 6K over-blocking rules causing incidental filtering of more
-  than 5.4M domains. Finally, we use Geneva, an open-source censorship evasion tool,
-  to discover five new censorship evasion strategies that can defeat Turkmenistan's
-  censorship at both transport and application layers. We will publicly release both
-  the data collected by TMC and the code for censorship evasion.
 ---
 MARKER: 2022_y_lai_3210336
 TYPE: inproceedings
@@ -68505,7 +68458,7 @@ TITLE: 'Back-to-the-Future Whois: An IP Address Attribution Service for Working 
   Historic Datasets'
 YEAR: 2023-01
 DOI: 10.48550/arXiv.2211.06537
-TOPKEY: routeviews-prefix2as, as-organizations
+TOPKEY: routeviews-prefix2as, topology-as-organization
 ABS: Researchers and practitioners often face the issue of having to attribute an
   IP address to an organization. For current data this is comparably easy, using services
   like whois or other databases. Similarly, for historic data, several entities like
@@ -68529,30 +68482,8 @@ PUBLISH: IEEE
 YEAR: 2023-4
 SERIAL: IEEE
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10093795
-TOPKEY: passive-2016
+TOPKEY: passive-2018
 GEOLOC: Beijing, CN
----
-MARKER: 2023_amira_a_dl_acm
-TYPE: in_journal
-AUTHOR: Amira, A.; Derhab, A.; Karbab, E.; Nouali, O.
-TITLE: A survey of malware analysis using community detection algorithms
-PUBLISH: ACM Digital Library
-YEAR: 2023-7
-SERIAL: ACM Computing Surveys
-VOLUME: '56'
-URL: https://dl.acm.org/doi/pdf/10.1145/3610223
-TOPKEY: ddos-2007
-GEOLOC: Bejaia, DZ
----
-MARKER: 2023_jiang_x_arxiv
-TYPE: online
-AUTHOR: Jiang, X.; Liu, S.; Naama, S.; Bronzino, F.; Schmitt, P.
-TITLE: 'AC-DC: Adaptive Ensemble Classification for Network Traffic Identification'
-PUBLISH: arxiv.org
-YEAR: 2023-2
-URL: https://arxiv.org/pdf/2302.11718.pdf
-TOPKEY: passive-2019
-GEOLOC: Chicago, IL, US
 ---
 MARKER: 2023_ezeh_d_ieee
 TYPE: in_journal
@@ -68566,18 +68497,6 @@ URL: http://real.mtak.hu/170280/1/InfocomJournal_2023_2_5.pdf
 TOPKEY: ddos-2007
 GEOLOC: Philadelphia, PA, US
 ---
-MARKER: 2023_roy_s_crc_press
-TYPE: in_book
-AUTHOR: Roy, S.; Chakraborty, R.; Mathew, J.; Mazumdar, A.; Chakraborty, S.
-TITLE: ARTIFICIAL INTELLIGENCE AND DEEP LEARNING FOR COMPUTER NETWORK
-PUBLISH: CRC Press
-YEAR: '2023'
-CTITLE: CRC Press
-URL: 
-  https://api.taylorfrancis.com/content/books/mono/download?identifierName=doi&identifierValue=10.1201/9781003212249&type=googlepdf
-TOPKEY: passive-2016
-GEOLOC: Patiala, IN
----
 MARKER: 2023_grassia_m_springer
 TYPE: in_proceedings
 AUTHOR: Grassia, M.; Mangioni, G.
@@ -68588,16 +68507,6 @@ CTITLE: Springer
 URL: https://link.springer.com/chapter/10.1007/978-3-031-28276-8_8
 TOPKEY: topology-ark-ipv4-aslinks
 GEOLOC: Catania, IT
----
-MARKER: 2023_najafimehr_m_wiley
-TYPE: tech. report
-AUTHOR: Najafimehr, M.; Zarifzadeh, S.; Mostafavi, S.
-TITLE: 'DDoS attacks and machine‐learning‐based detection methods: A survey and taxonomy'
-PUBLISH: Wiley Online Library
-YEAR: 2023-05
-URL: https://onlinelibrary.wiley.com/doi/full/10.1002/eng2.12697
-TOPKEY: ddos-2007
-GEOLOC: Yazd, IR
 ---
 MARKER: 2023_taheri_r_springer
 TYPE: in_journal
@@ -68634,18 +68543,6 @@ URL: https://www.sciencedirect.com/science/article/pii/S1389128623002542
 TOPKEY: ddos-2007
 GEOLOC: Joondalup, AU
 ---
-MARKER: 2023_shalini_p_springer
-TYPE: in_journal
-AUTHOR: Shalini, P.; Radha, V.; G. Sanjeevi, S.
-TITLE: Early detection and mitigation of TCP SYN flood attacks in SDN using chi-square
-  test
-PUBLISH: Springer
-YEAR: 2023-02
-SERIAL: Springer
-URL: https://link.springer.com/article/10.1007/s11227-023-05057-x
-TOPKEY: passive-2008
-GEOLOC: Hyderabad, IN
----
 MARKER: 2023_carchiolo_v_dl_acm
 TYPE: in_journal
 AUTHOR: Carchiolo, V.; Grassia, M.; Longheu, A.; Malgeri, M.; Mangioni, G.
@@ -68671,17 +68568,6 @@ URL: https://www.sciencedirect.com/science/article/pii/S0020025523000683
 TOPKEY: ddos-2007
 GEOLOC: Gwangju, KR
 ---
-MARKER: 2023_bilot_t_ieee
-TYPE: in_journal
-AUTHOR: Bilot, T.; El Madhoun, N.; Al Agha, K.; Zouaoui, A.
-TITLE: 'Graph Neural Networks for Intrusion Detection: A Survey'
-PUBLISH: IEEE
-YEAR: 2023-05
-SERIAL: IEEE
-URL: https://ieeexplore.ieee.org/abstract/document/10123384/
-TOPKEY: passive-2018
-GEOLOC: Puteaux, FR
----
 MARKER: 2023_kumari_a_research_square
 TYPE: online
 AUTHOR: Kumari, A.; Singh Sairam, A.
@@ -68704,19 +68590,6 @@ SERIAL: MDPI
 URL: https://www.mdpi.com/2076-3417/13/3/1431
 TOPKEY: ddos-2007
 GEOLOC: Sejong City, KR
----
-MARKER: 2023_huu_thanh_n_springer
-TYPE: in_journal
-AUTHOR: Huu Thanh, N.; Ngoc Tuan, N.; Anh Khoa, D.; Cong Tuan, L.; Trung Kien, N.;
-  Xuan Dung, N.; Quynh Thu, N.; Wamser, F.
-TITLE: On Profiling, Benchmarking and Behavioral Analysis of SDN Architecture Under
-  DDoS Attacks
-PUBLISH: Springer
-YEAR: 2023-03
-SERIAL: IEEE
-URL: https://ieeexplore.ieee.org/abstract/document/10155725
-TOPKEY: ddos-2007
-GEOLOC: Hanoi, VN
 ---
 MARKER: 2023_kfoury_e_ieee
 TYPE: in_journal
@@ -68894,21 +68767,8 @@ TITLE: Leveraging the SCION Internet Architecture to Accelerate File Transfers o
 PUBLISH: arxiv.org
 YEAR: 2023-01
 URL: https://arxiv.org/pdf/2301.13499.pdf
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Magdeburg, DE
----
-MARKER: 2023_nourin_s_dl_acm
-TYPE: in_journal
-AUTHOR: Nourin, S.; Tran, V.; Jiang, X.; Bock, K.; Feamster, N.; Phong Hoang, N.;
-  Levin, D.
-TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in
-  Large-Scale Measurements of a Low-Penetration Country"
-PUBLISH: ACM Digital Library
-YEAR: 2023-04
-SERIAL: "WWW '23: Proceedings of the ACM Web Conference 2023"
-URL: https://dl.acm.org/doi/pdf/10.1145/3543507.3583189
-TOPKEY: topology-as-rank, routeviews_prefix2as
-GEOLOC: College Park, MD, US
 ---
 MARKER: 2023_tian_c_ieee
 TYPE: in_proceedings
@@ -68958,17 +68818,6 @@ SERIAL: Science Direct
 URL: https://www.sciencedirect.com/science/article/pii/S1389128623001937
 TOPKEY: passive-2019
 GEOLOC: Suzhou, CN
----
-MARKER: 2023_tripathi_n_ieee
-TYPE: online
-AUTHOR: Tripathi, N.
-TITLE: 'Delays have Dangerous Ends: Slow HTTP/2 DoS attacks into the Wild and their
-  Real-Time Detection using Event Sequence Analysis'
-PUBLISH: IEEE
-YEAR: 2023-07
-URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10124271
-TOPKEY: ddos-2007, passive-2008
-GEOLOC: Sri City, IN
 ---
 MARKER: 2023_yang_r_dl_acm
 TYPE: in_journal
@@ -69024,7 +68873,7 @@ PUBLISH: University of Massachusetts Amherst
 YEAR: 2023-07
 SERIAL: UMass
 URL: https://people.cs.umass.edu/~amir/papers/AsiaCCS23-Private-Relay.pdf
-TOPKEY: passive-2016
+TOPKEY: topology-as-relationships
 GEOLOC: Amherst, MA, US
 ---
 MARKER: 2023_kiefer_m_dl_acm
@@ -69095,7 +68944,7 @@ YEAR: 2023-03
 CTITLE: TMA
 URL: 
   https://tma.ifip.org/2023/wp-content/uploads/sites/12/2023/06/tma2023-final50.pdf
-TOPKEY: topology-as-classification, peeringdb
+TOPKEY: peeringdb
 GEOLOC: Munich, DE
 ---
 MARKER: 2023_tabaeiaghdaei_s_dl_acm
@@ -69120,18 +68969,6 @@ YEAR: 2023-04
 URL: https://arxiv.org/pdf/2304.00485.pdf
 TOPKEY: passive-2007
 GEOLOC: Beijing, CN
----
-MARKER: 2023_bhayo_j_science_direct
-TYPE: in_journal
-AUTHOR: Bhayo, J.; Shah, S.; Hammed, S.; Ahmed, A.; Nasir, J.; Draheim, D.
-TITLE: Towards a machine learning-based framework for DDOS attack detection in software-defined
-  IoT (SD-IoT) networks
-PUBLISH: ScienceDirect
-YEAR: 2023-05
-SERIAL: Science Direct
-URL: https://www.sciencedirect.com/science/article/pii/S0952197623006164
-TOPKEY: ddos-2007
-GEOLOC: Karachi, PK
 ---
 MARKER: 2023_jyothi_s_arxiv
 TYPE: online
@@ -69252,7 +69089,7 @@ YEAR: 2023-03
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
 VOLUME: '7'
 URL: https://dl.acm.org/doi/10.1145/3579334
-TOPKEY: topology-ark-ipv4-traceroute
+TOPKEY: topology-ark-ipv6-dns-names, topology-ark-ipv6-traceroute
 GEOLOC: Atlanta, GA, US
 ---
 MARKER: 2023_feng_h_ieee
@@ -69263,7 +69100,7 @@ PUBLISH: search.ebscohost.com
 YEAR: 2023-03
 SERIAL: ITIIS
 URL: https://itiis.org/digital-library/38512
-TOPKEY: ddos-2007
+TOPKEY: ddos-2007, topology-ark-ipv4-aslinks
 GEOLOC: Beijing, CN
 ---
 MARKER: 2023_milolidakis_a_ieee
@@ -69275,7 +69112,7 @@ PUBLISH: IEEE
 SERIAL: IEEE
 YEAR: 2023-03
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10078883
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, ixps, topology-as-rank
 GEOLOC: Stockholm, SE
 ---
 MARKER: 2023_scherrer_s_arxiv
@@ -69285,7 +69122,7 @@ TITLE: Quality Competition Among Internet Service Providers in a Path-Aware Inte
 PUBLISH: arxiv.org
 YEAR: 2023-05
 URL: https://arxiv.org/pdf/2305.06811.pdf
-TOPKEY: routeviews_prefix2as, ixps
+TOPKEY: routeviews_prefix2as, ixps, topology-ark-itdk, topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Zurich, CH
 ---
 MARKER: 2023_hlavacek_t_arxiv
@@ -69307,7 +69144,7 @@ TITLE: 'Oscilloscope: Detecting BGP Hijacks in the Data Plane'
 PUBLISH: arxiv.org
 YEAR: 2023-01
 URL: https://arxiv.org/pdf/2301.12843.pdf
-TOPKEY: topology-as-relationships, topology-as-rank, ixps
+TOPKEY: topology-as-relationships, topology-as-rank, ixps, bgpstream
 GEOLOC: Zurich, CH
 ---
 MARKER: 2023_raman_r_pet_symposium
@@ -69318,7 +69155,7 @@ PUBLISH: Pet Symposium
 YEAR: '2023'
 SERIAL: Pet Symposium
 URL: https://petsymposium.org/foci/2023/foci-2023-0003.pdf
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, topology-as-rank
 GEOLOC: Ann Arbor, MI, US
 ---
 MARKER: 2023_streibelt_f_springer
@@ -69330,7 +69167,7 @@ PUBLISH: Springer, Cham
 YEAR: 2023-03
 CTITLE: Springer
 URL: https://doi.org/10.1007/978-3-031-28486-1_10
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_abdulrahman_a_springer
@@ -69341,18 +69178,8 @@ PUBLISH: Springer, Cham
 CTITLE: Springer
 YEAR: 2023-03
 URL: https://doi.org/10.1007/978-3-031-28486-1_16
-TOPKEY: topology-ark-ipv4-prefix-probing
+TOPKEY: topology-ark-ipv4-traceroute, topology-as-classification
 GEOLOC: Boulder, CO, US
----
-MARKER: 2023_hekmati_a_arxiv
-TYPE: online
-AUTHOR: Hekmati, A.; Jethwa, N.; Grippo, E; Krishnamachari, B.
-TITLE: Correlation-Aware Neural Networks for DDoS Attack Detection In IoT Systems
-PUBLISH: University of Southern California
-YEAR: 2023-02
-URL: https://arxiv.org/pdf/2302.07982.pdf
-TOPKEY: ddos-2007
-GEOLOC: Los Angeles, CA, US
 ---
 MARKER: 2023_parekh_v_doi
 TYPE: in_journal
@@ -69365,7 +69192,7 @@ SERIAL: "KDD '12: Proceedings of the 18th ACM SIGKDD international conference on
   discovery and data mining"
 PAGE: "'24-32"
 URL: https://doi.org/10.1145/2339530.2339539
-TOPKEY: passive-2007
+TOPKEY: topology-as-relationships
 GEOLOC: Singapore, SG
 ---
 MARKER: 2023_othmer_b_utwente
@@ -69478,7 +69305,7 @@ TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study i
 YEAR: 2023-05
 CTITLE: International World Wide Web Conference (WWW)
 DOI: https://doi.org/10.1145/3543507.3583189
-TOPKEY: topology-as-relationships,topology-as-rank,routeviews_prefix2as
+TOPKEY: topology-as-rank, routeviews_prefix2as
 ---
 MARKER: 2023_j_li_icc_622210
 TYPE: in-proceedings
@@ -69488,7 +69315,7 @@ YEAR: '2023'
 CTITLE: International Conference on Communications (ICC)
 DOI: https://doi.org/10.1109/ICC45041.2023.10278878
 TOPKEY: 
-  topology-as-relationships,topology-as-classification,routeviews_prefix2as,topology-as-organization,peeringdb,ixps
+  topology-as-relationships, topology-as-classification, routeviews_prefix2as, topology-as-organization, ixps
 ---
 MARKER: 2023_o_darwich_acm_362480
 TYPE: in-proceedings
@@ -69498,7 +69325,7 @@ TITLE: 'Replication: Towards a Publicly Available Internet scale IP Geolocation 
 YEAR: 2023-10
 CTITLE: Internet Measurement Conference (IMC)
 URL: https://hal.science/hal-04215113/
-TOPKEY: topology-as-classification,peeringdb,topology-ark-ipv4-traceroute
+TOPKEY: topology-as-classification
 ---
 MARKER: 2023_s_farhan_pam_649984
 TYPE: in-proceedings
@@ -70324,7 +70151,7 @@ AUTHOR: Maghsoudlou, A.
 TITLE: Towards Uncovering Hidden Internet Traffic Characteristics
 PUBLISH: Universität des Saarlandes
 YEAR: 2023-12
-TOPKEY: passive-2019, routeviews_prefix2as
+TOPKEY: passive-2019, ditl
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/37289/1/phd-curr%20%281%29.pdf
 ---
@@ -70505,7 +70332,7 @@ AUTHOR: Ren, Y., Wang, J., Li, H., Zhu, H., Sun, L.
 TITLE: User Recognition of Devices on the Internet based on Heterogeneous Graph Transformer with Partial Labels
 YEAR: 2023-06
 CTITLE: iEEE
-TOPKEY: topology-generic
+TOPKEY: topology-generic, topology-ark-ipv4-traceroute
 GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10192043/
 ---
@@ -70526,7 +70353,7 @@ TITLE: "FBAR: An effective method for resolving large‚Äêscale IPv6 aliases"
 SERIAL: International Journal of Communication Systems
 YEAR: 2023-09
 VOLUME: '36'
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, topology-ark-ipv6-traceroute
 GEOLOC: Zhengzhou, CN
 URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.5610
 ---
@@ -70580,16 +70407,6 @@ CTITLE: IEEE
 TOPKEY: topology-as-rank
 GEOLOC: Shandong, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10476262/
----
-MARKER: 2023_x_guo_spiedigitallibrary_7998
-TYPE: in_proceedings
-AUTHOR: Guo, X., Chen, D., Chen, J., Xiong, Z.
-TITLE: Research on predicting trusted business relationships in autonomous system based on neural networks
-YEAR: 2023-10
-CTITLE: "Proceedings Volume 12814, Third International Conference on Green Communication, Network, and Internet of Things (CNIoT 2023)"
-TOPKEY: topology-as-relationships
-GEOLOC: Chongqing, CN
-URL: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12814/1281427/Research-on-predicting-trusted-business-relationships-in-autonomous--system/10.1117/12.3010226.short
 ---
 MARKER: 2023_n_rodday_ieee_1630
 TYPE: in_proceedings
@@ -71142,17 +70959,17 @@ AUTHOR: Melissourgos, D.
 TITLE: Dynamic Sketches for Adaptive Real-Time Network Traffic Monitoring
 PUBLISH: UNIVERSITY OF FLORIDA
 YEAR: '2023'
-TOPKEY: topology-generic
+TOPKEY: passive-2015
 GEOLOC: FL, US
 URL: https://search.proquest.com/openview/6ddadd7424a5e9fd3e0b20ab243f8b0b/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2023_tb_fodor_webarchive_2291
 TYPE: BSc thesis
 AUTHOR: Fodor, TB.
-TITLE: Analysing the internet aas a graph
+TITLE: Analysing the internet as a graph
 PUBLISH: University of Vienna
 YEAR: '2023'
-TOPKEY: topology-generic, scamper
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, scamper
 GEOLOC: Vienna, AT
 URL: https://repositum.tuwien.at/handle/20.500.12708/154357
 ---
@@ -71162,7 +70979,7 @@ AUTHOR: Maghsoudlou, A.
 TITLE: Towards uncovering hidden internet traffic characteristics
 PUBLISH: Saarland University
 YEAR: '2023'
-TOPKEY: ditl, passive-2019, routeviews_prefix2as
+TOPKEY: ditl, passive-2019
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/37289
 ---
@@ -71507,7 +71324,7 @@ AUTHOR: Liu, Y., Nie, H., Cai, H., Jiang, B., Zhang, P., Yao, Y Liu‚ Y., Wei, 
 TITLE: "X-Plane: A High-Throughput Large-Capacity 5G UPF"
 YEAR: 2023-10
 CTITLE: "ACM MobiCom '23: Proceedings of the 29th Annual International Conference on Mobile Computing and Networking"
-TOPKEY: passive-2019
+TOPKEY: passive-oc48
 GEOLOC: Shanghai, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3570361.3613267
 ---
@@ -71707,7 +71524,7 @@ AUTHOR: Sermpezis, Pavlos., Prehn, Lars., Kostoglou, Sofia., Flores, Marcel., Va
 TITLE: Bias in Internet Measurement Platforms
 YEAR: 2023-06
 CTITLE: IEEE
-TOPKEY: peeringdb, bgpstream, topology-as-rank, topology-as-relationships
+TOPKEY: peeringdb, topology-as-rank, topology-as-relationships
 GEOLOC: Thesssaloniki,DE
 URL: https://ieeexplore.ieee.org/abstract/document/10198985
 ---
@@ -72051,7 +71868,7 @@ AUTHOR: Holterbach, T., Alfroy, T., Phokeer, A., Dainotti, A., Pelsser, C.
 TITLE: A System to Detect {Forged-Origin}{BGP} Hijacks
 YEAR: 2024-04
 CTITLE: "21st USENIX Symposium on Networked Systems Design and Implementation (NSDI 24)"
-TOPKEY: topology-as-relationships, peeringdb
+TOPKEY: topology-as-relationships, peeringdb, topology-as-rank
 GEOLOC: Strasbourg, FR
 URL: https://www.usenix.org/conference/nsdi24/presentation/holterbach
 ---
@@ -72112,7 +71929,7 @@ AUTHOR: Sassi, F.
 TITLE: "Uncovering threats in digital systems: a deep dive into BGP, the blockchain, and Telegram"
 PUBLISH: Sapienza University of Rome
 YEAR: 2024-05
-TOPKEY: topology-as-relationships, bgpstream
+TOPKEY: topology-as-rank, bgpstream
 GEOLOC: Rome, IT
 URL: https://iris.uniroma1.it/handle/11573/1711089
 ---
@@ -72122,7 +71939,7 @@ AUTHOR: Prehn, L., Foremski, P., Gasser, O.
 TITLE: "Kirin: Hitting the Internet with Distributed BGP Announcements"
 YEAR: 2024-07
 CTITLE: "ASIA CCS '24: Proceedings of the 19th ACM Asia Conference on Computer and Communications Security"
-TOPKEY: peeringdb
+TOPKEY: peeringdb, topology-as-relationships
 GEOLOC: Saarbuecken, Saarland, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3634737.3657000
 ---
@@ -72132,7 +71949,7 @@ AUTHOR: Chen, Y., Yin, Q., Li, Q., Liu, Z., Xu, K., Xu, Y., Xu, M., Lu, Z., Wu, 
 TITLE: "Learning with Semantics: Towards a Semantics-Aware Routing Anomaly Detection System"
 CTITLE: Proceedings of the 33rd USENIX Security Symposium
 YEAR: 2024-02
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Beijing, CN
 URL: https://www.usenix.org/system/files/sec24summer-prepub-670-chen-yihao.pdf
 ---
@@ -72174,7 +71991,7 @@ AUTHOR: Lone, QB.
 TITLE: "SAVing the Internet: Measuring the adoption of Source Address Validation (SAV) by network providers"
 PUBLISH: Delft University of Technology
 YEAR: '2022'
-TOPKEY: topology-as-relationships, topology-as-rank, topology-itdk, topology-as-organization
+TOPKEY: topology-ark-itdk, topology-ark-ipv4-traceroute, spoofer, topology-as-organization, topology-as-rank
 GEOLOC: Delft, NL
 URL: https://research.tudelft.nl/en/publications/saving-the-internet-measuring-the-adoption-of-source-address-vali
 ---
@@ -72286,16 +72103,6 @@ CTITLE: IEEE
 TOPKEY: topology-as-relationships
 GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10000938/
----
-MARKER: 2022_tianxiang_dai_tuprints_7332
-TYPE: PhD thesis
-AUTHOR: Dai, Tianxiang.
-TITLE: Internet-Wide Evaluations of Security and Vulnerabilities
-PUBLISH: Technische Universität Darmstadt
-YEAR: 2022-10
-TOPKEY: topology-as-relationships, passive-generic
-GEOLOC: Darmstadt, DE
-URL: https://d-nb.info/131891874X/34
 ---
 MARKER: 2021_seyedali_tabaeiaghdaei_ethzch_3699
 TYPE: MSc thesis
@@ -72970,7 +72777,7 @@ AUTHOR: Mendes, JE da Silva.
 TITLE: Evaluating the Impact of Traffic Sampling in Network Analysis
 PUBLISH: University of Minho
 YEAR: 2022-02
-TOPKEY: passive-oc48, passive-2016
+TOPKEY: passive-oc48, passive-2019
 GEOLOC: Braga, PT
 URL: https://search.proquest.com/openview/91fced3f5251f776c8c86b2d5ddb1f70/1?pq-origsite=gscholar&cbl=2026366&diss=y
 ---
@@ -73000,7 +72807,7 @@ AUTHOR: Saidi, SJ.
 TITLE: Characterizing the IoT ecosystem at scale
 PUBLISH: Saarland University
 YEAR: '2022'
-TOPKEY: passive-generic, routeviews_prefix2as
+TOPKEY: passive-2016, routeviews_prefix2as
 GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/35568
 ---
@@ -73071,7 +72878,7 @@ AUTHOR: Shaikh, F., Bou-Harb, E., Vehabovic, A., Crichigno, J., Yayimli, A., Gha
 TITLE: IoT Threat Detection Testbed Using Generative Adversarial Networks
 YEAR: 2022-06
 CTITLE: IEEE
-TOPKEY: telescope-generic, passive-generic
+TOPKEY: telescope-generic
 GEOLOC: Florida, US
 URL: https://ieeexplore.ieee.org/abstract/document/9858239/
 ---
