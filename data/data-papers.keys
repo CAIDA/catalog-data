@@ -348,7 +348,7 @@ ditl : 'paper:2006_ditl_proposal'
 2014-imc-complex : 2014_imc_complex
 2006-pam-as-taxonomy: 2006_pam_as_taxonomy
 2016-periscope: 'software:periscope'
-2013-midar: 'software:midar'
+midar: 'software:midar'
 bgpstream: 'software:bgpstream'
 scamper: 'software:scamper'
 iffinder: 'software:iffinder'
