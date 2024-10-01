@@ -30,26 +30,29 @@ ONTOLOGY_DIR=ontology
 
 ###### Namespace 
 NAMESPACE_DIR=namespaces
-#########
+
+###### Ensure required directories exist
+ensure_dirs:
+	@mkdir -p sources/presentation
 
 DATA_BUILD_OPTS=-s ${SUMMARY_FILE} -r ${REDIRECTS_FILE} -c ${DATA_SCHEMA_CATEGORIES} -d ${DATA_SCHEMA_DATASETS}
 
-run:clean_placeholders pubdb external caida summary build suggestions schema 
+run:clean_placeholders ensure_dirs pubdb external caida summary build suggestions schema
 
-fast:
+fast: ensure_dirs
 	make DATA_BUILD_OPTS="-D ${DATA_BUILD_OPTS}" run
 
-human:readable
-read:readable
-readable:
+human: readable
+read: readable
+readable:ensure_dirs
 	make DATA_BUILD_OPTS="-RD ${DATA_BUILD_OPTS}" fast
 
-readdata:
+readdata:ensure_dirs
 	make DATA_BUILD_OPTS="-RD ${DATA_BUILD_OPTS}" data
 
 
-data: build
-build:
+data: ensure_dirs build 
+build: ensure_dirs
 		if [ -f ${DATA_SCHEMA_DATASETS_SRC} ]; then \
 			mv ${DATA_SCHEMA_DATASETS_SRC} ${DATA_SCHEMA_DATASETS} ; \
 		fi

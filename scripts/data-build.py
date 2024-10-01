@@ -1303,8 +1303,11 @@ def recipe_process(path):
                     if not error: 
                         object_add("Recipe", info)
                 elif os.path.isfile(filename) and fname[0] != ".":
-                    extention = filename.split(".")[-1].lower()
-                    if extention in ["py","pl","txt","md"]:
+                    extension = filename.split(".")[-1].lower()
+                    """
+                    ONLY ADD FILES WITH EXTENSIONS THAT ARE SUPPORTED
+                    """
+                    if extension in ["py", "js", "mjs", "pl","txt","md"]:
                         with open(filename,"r") as fin:
                             tab_content = None
                             for line in fin:
@@ -1312,7 +1315,7 @@ def recipe_process(path):
                                     tab_content = line
                                 else:
                                     tab_content += line
-                            if extention == "md":
+                            if extension == "md":
                                 f = "md"
                             else:
                                 f = "text"
@@ -1321,6 +1324,10 @@ def recipe_process(path):
                                 "format":f,
                                 "content":tab_content
                             })
+                    else:
+                        skipped.append(filename)
+                        print("skipping", extension)
+
             if len(tabs) > 0 and info is not None:
                 if "tabs" in info:
                     info["tabs"].extend(tabs)
