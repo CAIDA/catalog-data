@@ -68485,6 +68485,36 @@ URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10093795
 TOPKEY: passive-2018
 GEOLOC: Beijing, CN
 ---
+MARKER: 2024_kepner_j_arxiv
+TYPE: online
+AUTHOR: Kepner, J.; Jananthan, H.; Jones, M.; Arcand, W.; Bestor, D.; Bergeron, W.; Burrill, D.; Buluc, A.; Byun, C.; Davis, T.; Gadepally, V.; Grant, D.; Houle, M.; Hubbell, M.; Luszczek, P.; Milechin, L.; Milner, C.; Morales, G.; Morris, A.; Mullen, J.; Patel, R.; Pentland, A.; Pisharody, S.; Prout, A.; Reuther, A.; Rosa, A.; Wachman, G.; Yee, C.; Michaleas, P.
+TITLE: What is Normal? A Big Data Observational Science Model of Anonymized Internet Traffic
+PUBLISH: arxiv.org
+YEAR: 2024-09
+URL: https://arxiv.org/abs/2409.03111
+TOPKEY: telescope-generic
+GEOLOC: Cambridge, MA, US
+---
+MARKER: 2024_houle_m_arxiv
+TYPE: online
+AUTHOR: Houle, M.; Jones, M.; Wallmeyer, D.; Brodeur, R.; Burr, J.; Jananthan, H.; Merrell, S.; Michaleas, P.; Perez, A.; Prout, A.; Kepner, J.
+TITLE: Hypersparse Traffic Matrices from Suricata Network Flows using GraphBLAS
+PUBLISH: arxiv.org
+YEAR: 2024-09
+URL: https://arxiv.org/abs/2409.12297
+TOPKEY: telescope-generic
+GEOLOC: Cambridge, MA, US
+---
+MARKER: 2024_jananthan_h_arxiv
+TYPE: online
+AUTHOR: Jananthan, H.; Jones, M.; Arcand, W.; Bestor, D.; Bergeron, W.; Burrill, D.; Buluc, A.; Byun, C.; Davis, T.; Gadepally, V.; Grant, D.; Houle, M.; Hubbell, M.; Luszczek, P.; Michaleas, P.; Milechin, L.; Milner, C.; Morales, G.; Morris, A.; Mullen, J.; Patel, R.; Pentland, A.; Pisharody, S.; Prout, A.; Reuther, A.; Rosa, A.; Wachman, G.; Yee, C.; Kepner, J.
+TITLE: Anonymized Network Sensing Graph Challenge
+PUBLISH: arxiv.org
+YEAR: 2024-09
+URL: https://arxiv.org/abs/2409.08115
+TOPKEY: telescope-generic
+GEOLOC: Cambridge, MA, US
+---
 MARKER: 2023_ezeh_d_ieee
 TYPE: in_journal
 AUTHOR: Ezeh, D.; de Oliveira, J.
