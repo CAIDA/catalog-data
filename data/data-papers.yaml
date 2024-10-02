@@ -743,20 +743,6 @@ TOPKEY: topology-ark-itdk
 GEOLOC: Monterey, CA, US
 ABS: ''
 ---
-MARKER: 2018_nadhom_m_scidir_1830460
-TYPE: article
-AUTHOR: Nadhom, M., Loskot, P.
-TITLE: Survey of public data sources on the Internet usage and other Internet statistics
-SERIAL: Data in Brief
-YEAR: 2018-06
-VOLUME: '18'
-PAGE: 1914-1929
-DOI: 10.1016/j.dib.2018.04.107
-URL: https://www.sciencedirect.com/science/article/pii/S2352340918304608
-TOPKEY: topology-ark-itdk
-GEOLOC: Swansea, GB
-ABS: ''
----
 MARKER: 2018_guan_y_scidir_18301130
 TYPE: article
 AUTHOR: Guan, Y., Lei, W., Zhang, W., Liu, S., Li, H.
@@ -786,40 +772,11 @@ TOPKEY: passive-generic
 GEOLOC: Greeley, CO, US
 ABS: ''
 ---
-MARKER: 2018_ghofrani_f_scidir_7304958
-TYPE: article
-AUTHOR: Ghofrani, F., Keshavarz-Haddad, A., Jamshidi, A.
-TITLE: A new probabilistic classifier based on decomposable models with application
-  to internet traffic
-SERIAL: Pattern Recognition
-YEAR: 2018-05
-VOLUME: '77'
-PAGE: 1-11
-DOI: 10.1016/j.patcog.2017.12.009
-URL: https://www.sciencedirect.com/science/article/pii/S0031320317304958
-TOPKEY: coralreef
-GEOLOC: Shiraz, IR
-ABS: ''
----
-MARKER: 2018_dimauro_m_elea_105563088
-TYPE: phdthesis
-AUTHOR: Di Mauro, M.
-TITLE: Statistical models for the characterization, identification and mitigation
-  of distributed attacks in data networks
-PUBLISH: Universita degli Studi di Salerno
-PAGE: 1-157
-YEAR: 2018-03
-URL: http://elea.unisa.it/handle/10556/3088
-TOPKEY: code-red-worm
-GEOLOC: Fisciano SA, IT
-ABS: ''
----
 MARKER: 2018_tai_k_acm_3196930
 TYPE: inproceedings
 AUTHOR: Tai, K., Sharan, V., Bailis, P., Valiant, G.
 TITLE: Sketching Linear Classifiers over Data Streams
-CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD
-  '18)
+CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD'18)
 YEAR: 2018-05
 VOLUME: ''
 PAGE: 757-772
@@ -848,8 +805,7 @@ MARKER: 2018_galea_s_acm_3234226
 TYPE: inproceedings
 AUTHOR: Galea, S., Moore, A., Antichi, G., Bianchi, G., Bifulco, R.
 TITLE: Revealing Hidden Hierarchical Heavy Hitters in network traffic
-CTITLE: Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos (SIGCOMM
-  '18)
+CTITLE: Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos (SIGCOMM'18)
 YEAR: 2018-08
 VOLUME: ''
 PAGE: 81-83
@@ -975,27 +931,11 @@ TOPKEY: passive-2016
 GEOLOC: West Lafayette, IN, US
 ABS: ''
 ---
-MARKER: 2018_jayaram_r_acm_3196986
-TYPE: inproceedings
-AUTHOR: Jayaram, R., Woodruff, D.
-TITLE: Data Streams with Bounded Deletions
-CTITLE: Proceedings of the 37th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of
-  Database Systems (PODS '18)
-YEAR: 2018-05
-VOLUME: ''
-PAGE: 341-354
-DOI: 10.1145/3196959.3196986
-URL: https://dl.acm.org/doi/abs/10.1145/3196959.3196986
-TOPKEY: code-red-worm
-GEOLOC: Pittsburgh, PA, US
-ABS: ''
----
 MARKER: 2018_zhou_y_acm_3183726
 TYPE: inproceedings
 AUTHOR: Zhou, Y., Yang, T., Jiang, J., Cui, B., Yu, M., Li, X., Uhlig, S.
 TITLE: 'Cold Filter: A Meta-Framework for Faster and More Accurate Stream Processing'
-CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD
-  '18)
+CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD'18)
 YEAR: 2018-05
 VOLUME: ''
 PAGE: 741-756
@@ -1203,7 +1143,7 @@ VOLUME: '33'
 PAGE: 194-200
 DOI: 10.1109/MNET.2018.1800171
 URL: https://ieeexplore.ieee.org/abstract/document/8594708
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, topology-as-relationships
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -1355,21 +1295,6 @@ TOPKEY: topology-as-rank
 GEOLOC: Klosterneuburg, AT
 ABS: ''
 ---
-MARKER: 2018_suila_k_lspringer_92459521
-TYPE: inproceedings
-AUTHOR: Suila, K., Czachorski, T., Rataj, A.
-TITLE: A Queueing Model of the Edge Node in IP over All-Optical Networks
-CTITLE: 25th International Conference (CN 2018)
-SERIAL: Communications in Computer and Information Science
-YEAR: 2018-05
-VOLUME: '860'
-PAGE: 258-271
-DOI: 10.1007/978-3-319-92459-5_21
-URL: https://link.springer.com/chapter/10.1007/978-3-319-92459-5_21
-TOPKEY: passive-2008
-GEOLOC: Gliwice, PL
-ABS: ''
----
 MARKER: 2018_pelloso_m_solsbc_24542018
 TYPE: inproceedings
 AUTHOR: Pelloso, M., Vergutz, A.., Santos, A., Nogueira, M.
@@ -1484,20 +1409,6 @@ YEAR: 2018-02
 URL: https://repositorio.ufsm.br/handle/1/19043
 TOPKEY: ddos-2007
 GEOLOC: Santa Maria, BR
-ABS: ''
----
-MARKER: 2018_sutherland_e_ssrn_3203883
-TYPE: inproceedings
-AUTHOR: Sutherland, E.
-TITLE: 'The Internet and Human Rights: Access, Shutdowns, and Surveillance'
-CTITLE: Building a 21st Century Bill of Rights
-YEAR: 2018-06
-VOLUME: ''
-PAGE: 1-18
-DOI: 10.2139/ssrn.3203883
-URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3203883
-TOPKEY: ioda
-GEOLOC: Johannesburg, ZA
 ABS: ''
 ---
 MARKER: 2018_izaguirre_f_lumeufrgs_193315
