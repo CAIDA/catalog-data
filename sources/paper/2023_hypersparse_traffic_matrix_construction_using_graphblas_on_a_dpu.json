@@ -5,7 +5,12 @@
     "publisher": "arxiv.org",
     "description": "Low-power small form factor data processing units (DPUs) enable offloading and acceleration of a broad range of networking and security services. DPUs have accelerated the transition to programmable networking by enabling the replacement of FPGAs/ASICs in a wide range of network oriented devices. The GraphBLAS sparse matrix graph open standard math library is well-suited for constructing anonymized hypersparse traffic matrices of network traffic which can enable a wide range of network analytics. This paper measures the performance of the GraphBLAS on an ARM based NVIDIA DPU (BlueField 2) and, to the best of our knowledge, represents the first reported GraphBLAS results on a DPU and/or ARM based system. Anonymized hypersparse traffic matrices were constructed at a rate of over 18 million packets per second.",
     "tags": [],
-    "links": [],
+    "links": [
+        {
+            "to": "dataset:2024_ieee_anonymized_nsg_challenge",
+            "label": "Related Dataset"
+        }
+    ],
     "authors": [
         {
             "person": "person:bergeron__william",
