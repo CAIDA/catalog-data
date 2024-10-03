@@ -1483,35 +1483,6 @@ TOPKEY: passive-2016
 GEOLOC: Hong Kong, CN
 ABS: ''
 ---
-MARKER: 2018_bigelow_b_ieee_8405014
-TYPE: inproceedings
-AUTHOR: Bigelow, B.
-TITLE: The topography of cyberspace and its consequences for operations
-CTITLE: 2018 10th International Conference on Cyber Conflict (CyCon)
-YEAR: 2018-07
-VOLUME: ''
-PAGE: 123-138
-DOI: 10.23919/CYCON.2018.8405014
-URL: https://ieeexplore.ieee.org/abstract/document/8405014
-TOPKEY: topology-as-rank
-GEOLOC: Mons, BE
-ABS: ''
----
-MARKER: 2018_gregori_e_ieee_8385550
-TYPE: inproceedings
-AUTHOR: Gregori, E., Luconi, V., Vecchio, A.
-TITLE: Studying Forwarding Differences in European Mobile Broadband with a Net Neutrality
-  Perspective
-CTITLE: European Wireless 2018; 24th European Wireless Conference
-YEAR: 2018-06
-VOLUME: ''
-PAGE: 81-87
-DOI: ''
-URL: https://ieeexplore.ieee.org/abstract/document/8385550
-TOPKEY: topology-generic
-GEOLOC: Pisa, IT
-ABS: ''
----
 MARKER: 2019_doroud_h_ieee_8648137
 TYPE: inproceedings
 AUTHOR: Doroud, H., Aceto, G., Donato, W., Jarchlo, E., Lopez, A., Guerrero, C., Pescape,
@@ -1525,21 +1496,6 @@ DOI: 10.1109/GLOCOM.2018.8648137
 URL: https://ieeexplore.ieee.org/abstract/document/8648137
 TOPKEY: coralreef
 GEOLOC: Madrid, ES
-ABS: ''
----
-MARKER: 2018_abrosin_m_ieee_8269274
-TYPE: article
-AUTHOR: Ambrosin, M., Compagno, A., Conti, M., Ghali, C., Tsudik, G.
-TITLE: Security and Privacy Analysis of National Science Foundation Future Internet
-  Architectures
-SERIAL: IEEE Communications Surveys & Tutorials
-YEAR: 2018-01
-VOLUME: '20'
-PAGE: 1418-1442
-DOI: 10.1109/COMST.2018.2798280
-URL: https://ieeexplore.ieee.org/abstract/document/8269274
-TOPKEY: dns-root-gtld-rtt
-GEOLOC: Padua, IT
 ABS: ''
 ---
 MARKER: 2018_zheng_j_ieee_8290717
@@ -1802,7 +1758,7 @@ VOLUME: ''
 PAGE: 833-849
 DOI: ''
 URL: https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee
-TOPKEY: spoofer
+TOPKEY: bgpstream
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
@@ -4010,7 +3966,7 @@ VOLUME: ''
 PAGE: (10)
 DOI: 10.1109/PCCC.2017.8280451
 URL: https://ieeexplore.ieee.org/abstract/document/8280451
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, routeviews-prefix2as
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -7820,7 +7776,7 @@ PUBLISH: University of Texas at Arlington
 YEAR: 2018-08
 PAGE: 1-131
 URL: https://rc.library.uta.edu/uta-ir/handle/10106/28645
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-organization
 GEOLOC: Arlington, TX, US
 ABS: ''
 ---
@@ -9902,7 +9858,7 @@ VOLUME: 26(6)
 PAGE: 2471-2486
 DOI: 10.1109/TNET.2018.2869798
 URL: https://ieeexplore.ieee.org/abstract/document/8481500
-TOPKEY: bgpstream
+TOPKEY: bgpstream, topology-as-relationships
 GEOLOC: Thessaloniki, GR
 ABS: ''
 ---
@@ -10305,7 +10261,7 @@ PUBLISH: ''
 PAGE: ''
 YEAR: '2018'
 URL: https://www.proquest.com/docview/2056571282
-TOPKEY: bgpstream
+TOPKEY: bgpstream, topology-as-relationships
 GEOLOC: Fort Collins, CO, US
 ABS: ''
 ---
@@ -16621,7 +16577,7 @@ VOLUME: '225'
 PAGE: 211-225
 DOI: 10.1007/978-981-10-7814-9_16
 URL: https://link.springer.com/chapter/10.1007/978-981-10-7814-9_16
-TOPKEY: ddos-2007
+TOPKEY: ddos-2007, passive-2013
 GEOLOC: Imphal, IN
 ABS: ''
 ---
@@ -21761,36 +21717,6 @@ ABS: 'OpenFlow, the main protocol for software-defined networking, requires larg
   packet processing in the OpenFlow, which considers dynamic update and power efficiency.'
 URL: http://dx.doi.org/10.1109/TNET.2018.2813425
 ---
-MARKER: 2018_mc_tj_pv_jk_ss_md_tp_2019419
-TYPE: inproceedings
-AUTHOR: Cermak, M., Jirsik, T., Velan, P., Komarkova, J., Spacek, S., Drasar, M.,
-  Plesnik, T.
-TITLE: Towards provable network traffic measurement and analysis via semi-labeled
-  trace datasets
-CTITLE: Network Traffic Measurement and Analysis Conf. (TMA)
-YEAR: '2018'
-PAGE: (8 pages)
-DOI: 10.23919/TMA.2018.8506498
-TOPKEY: 'passive-2008 '
-GEOLOC: Vienna, AT
-ABS: Research in network traffic measurement and analysis is a long-lasting field
-  with growing interest from both scientists and the industry. However, even after
-  so many years, results replication, criticism, and review are still rare. We face
-  not only a lack of research standards, but also inaccessibility of appropriate datasets
-  that can be used for methods development and evaluation. Therefore, a lot of potentially
-  high-quality research cannot be verified and is not adopted by the industry or the
-  community. The aim of this paper is to overcome this controversy with a unique solution
-  based on a combination of distinct approaches proposed by other research works.
-  Unlike these studies, we focus on the whole issue covering all areas of data anonymization,
-  authenticity, recency, publicity, and their usage for research provability. We believe
-  that these challenges can be solved by utilization of semi-labeled datasets composed
-  of real-world network traffic and annotated units with interest-related packet traces
-  only. In this paper, we outline the basic ideas of the methodology from unit trace
-  collection and semi-labeled dataset creation to its usage for research evaluation.
-  We strive for this proposal to start a discussion of the approach and help to overcome
-  some of the challenges the research faces today.
-URL: http://dx.doi.org/10.23919/TMA.2018.8506498
----
 MARKER: 2018_ll_dg_xz_jw_or_xl_2019420
 TYPE: article
 AUTHOR: Luo, L., Guo, D., Zhao, X., Wu, J., Rottenstreich, O., Luo, X.
@@ -22275,33 +22201,6 @@ ABS: We have analyzed network traces of TCP connections and observed that there 
   is close to FQ CoDel for only a fraction of the complexity and resource usage.
 URL: http://dx.doi.org/10.23919/IFIPNetworking.2018.8696746
 ---
-MARKER: 2018_su_mda_mshk_hindawi_2019514
-TYPE: article
-AUTHOR: Ullah, S., Awan, M. D., Khiyal, M. S. H.
-TITLE: 'Big Data in Cloud Computing: A Resource Management Perspective'
-SERIAL: Hindawi Scientific Programming
-YEAR: '2018'
-VOLUME: '2018'
-PAGE: (18 pages)
-DOI: 10.1155/2018/5418679
-URL: http://downloads.hindawi.com/journals/sp/2018/5418679.pdf
-TOPKEY: passive-generic
-GEOLOC: Islamabad, PK
-ABS: The modern day advancement is increasingly digitizing our lives which has led
-  to a rapid growth of data. Such multidimensional datasets are precious due to the
-  potential of unearthing new knowledge and developing decision-making insights from
-  them. Analyzing this huge amount of data from multiple sources can help organizations
-  to plan for the future and anticipate changing market trends and customer requirements.
-  While the Hadoop framework is a popular platform for processing larger datasets,
-  there are a number of other computing infrastructures, available to use in various
-  application domains. The primary focus of the study is how to classify major big
-  data resource management systems in the context of cloud computing environment.
-  We identify some key features which characterize big data frameworks as well as
-  their associated challenges and issues. We use various evaluation metrics from different
-  aspects to identify usage scenarios of these platforms. The study came up with some
-  interesting findings which are in contradiction with the available literature on
-  the Internet.
----
 MARKER: 2018_dlq_iea_pb_sb_rc_cf_ts_2019515
 TYPE: inproceedings
 AUTHOR: Quoc, D. L., Akkus, I. E., Bhatotia, P., Blanas, S., Chen, R., Fetzer, C.,
@@ -22537,34 +22436,6 @@ ABS: Bloom filters BFs are widely used in many network applications but the high
   throughput of OHBF-based solution can achieve twice as fast as the SBF-based solution.
 URL: http://dx.doi.org/10.1109/TNET.2018.2869851
 ---
-MARKER: 2018_oee_ma_bb_sh_2019530
-TYPE: misc
-AUTHOR: Elejla, O. E., Anbar, M., Belaton, B., Hamouda, S.
-TITLE: Labeled flow-based dataset of ICMPv6-based DDoS attacks
-PUBLISH: arxiv.org
-YEAR: '2018'
-PAGE: ''
-URL: https://link.springer.com/article/10.1007/s00521-017-3319-7
-TOPKEY: topology-ark-ipv6-traceroute
-GEOLOC: Gelugor, MA
-ABS: DDoS attacks that depend on Internet Control Message Protocol version 6 (ICMPv6)
-  are one of the most commonly performed IPv6 attacks against todays IPv6 networks.
-  A few detection systems were proposed to detect these attacks based on self-generated
-  datasets. These datasets used an unsuitable representation that depends on packets
-  format as well as they include non-qualified features which lead to false alerts
-  if the systems are applied in real networks. Moreover, most of the existing datasets
-  are unavailable for other researchers usage due to their authors privacy issues.
-  The objective of this paper is benchmarking datasets of ICMPv6-based DDoS attacks
-  to be used for the tuning, evaluations, and comparisons of any detection system
-  of the attacks. The datasets setup is based on a real IPv6-enabled network topology
-  and ensuring attack exposure. The proposed datasets are considered as the first
-  labeled and publically available flow-based datasets represented using a set of
-  flow-based features of the ICMPv6-based DDoS attacks. The requirements of good datasets
-  have been achieved in the proposed datasets to ensure they are worthy be used by
-  other researchers. Moreover, the datasets and their features proved their abilities
-  to represent the attacks traffics by achieving robust and acceptable high detection
-  accuracies as well as low false positive rate.
----
 MARKER: 2019_kb_bbg_hypothesis_2019531
 TYPE: article
 AUTHOR: Bhushan, K., Gupta, B. B.
@@ -22622,35 +22493,6 @@ ABS: Distributed denial of service attack has become a challenging threat in tod
   which is nearly 3413 times lesser than the existing related packet marking method.
   It was also implemented in real time in the experimental DDoS Test Bed the efficacy
   of the system was evaluated
----
-MARKER: 2018_mi_ia_m2019533
-TYPE: article
-AUTHOR: Idhammad, M., Afdel, K., Belouch, M.
-TITLE: Detection System of HTTP DDoS Attacks in a Cloud Environment Based on Information
-  Theoretic Entropy and Random Forest
-SERIAL: Hindawi Security and Communication Networks
-YEAR: '2018'
-VOLUME: ''
-PAGE: (14 pages)
-DOI: 10.1155/2018/1263123
-URL: https://www.hindawi.com/journals/scn/2018/1263123/abs/
-TOPKEY: ddos-2007
-GEOLOC: Agadir, MR
-ABS: Cloud Computing services are often delivered through HTTP protocol. This facilitates
-  access to services and reduces costs for both providers and end-users. However,
-  this increases the vulnerabilities of the Cloud services face to HTTP DDoS attacks.
-  HTTP request methods are often used to address web servers vulnerabilities and create
-  multiple scenarios of HTTP DDoS attack such as Low and Slow or Flooding attacks.
-  Existing HTTP DDoS detection systems are challenged by the big amounts of network
-  traffic generated by these attacks, low detection accuracy, and high false positive
-  rates. In this paper we present a detection system of HTTP DDoS attacks in a Cloud
-  environment based on Information Theoretic Entropy and Random Forest ensemble learning
-  algorithm. A time-based sliding window algorithm is used to estimate the entropy
-  of the network header features of the incoming network traffic. When the estimated
-  entropy exceeds its normal range the preprocessing and the classification tasks
-  are triggered. To assess the proposed approach various experiments were performed
-  on the CIDDS-001 public dataset. The proposed approach achieves satisfactory results
-  with an accuracy of 99.54%, a FPR of 0.4%, and a running time of 18.5s.
 ---
 MARKER: 2018_kj_td_ietinformation_security_2019534
 TYPE: article
@@ -22713,38 +22555,6 @@ ABS: With the prosperity of wireless networks, vehicular networks (VNs) have bee
   results, we verify that the detection scheme effectively reduces the time for starting
   attack detection and classification recognition and has a lower false alarm rate.
 ---
-MARKER: 2018_lh_sa_jis_2019536
-TYPE: article
-AUTHOR: Hong, L., Alzharani, S.
-TITLE: Generation of DDoS Attack Dataset for Effective IDS Development and Evaluation
-SERIAL: Journal of Information Security
-YEAR: '2018'
-VOLUME: '9'
-PAGE: (17 pages)
-DOI: '10.4236/jis.2018.94016 '
-URL: http://www.scirp.org/journal/PaperInformation.aspx?paperID=86682
-TOPKEY: ddos-2007
-GEOLOC: US
-ABS: Distributed Denial of Service (DDoS) attacks are performed from multiple agents
-  towards a single victim. Essentially, all attacking agents generate multiple packets
-  towards the victim to overwhelm it with requests, thereby overloading the resources
-  of the victim. Since it is very complex and expensive to conduct a real DDoS attack,
-  most organizations and researchers result in using simulations to mimic an actual
-  attack. The researchers come up with diverse algorithms and mechanisms for attack
-  detection and prevention. Further, simulation is good practice for determining the
-  efficacy of an intrusive detective measure against DDoS attacks. However, some mechanisms
-  are ineffective and thus not applied in real life attacks. Nowadays, DDoS attack
-  has become more complex and modern for most IDS to detect. Adjustable and configurable
-  traffic generator is becoming more and more important. This paper first details
-  the available datasets that scholars use for DDoS attack detection. The paper further
-  depicts the a few tools that exist freely and commercially for use in the simulation
-  programs of DDoS attacks. In addition, a traffic generator for normal and different
-  types of DDoS attack has been developed. The aim of the paper is to simulate a cloud
-  environment by OMNET++ simulation tool, with different DDoS attack types. Generation
-  normal and attack traffic can be useful to evaluate developing IDS for DDoS attacks
-  detection. Moreover, the result traffic can be useful to test an effective algorithm,
-  techniques and procedures of DDoS attacks.
----
 MARKER: 2018_jc_ml_T_vss_yl_wg_2019537
 TYPE: article
 AUTHOR: Cheng, J., Li, M., Tang,  X., Sheng, V. S., Liu, Y., Guo, W.
@@ -22797,34 +22607,6 @@ ABS: Intrusion detection/prevention is the greatest security challenge at virtua
   from each region of Cloud in order to identify distributed attacks. For feasibly
   analysis and functional validation of this framework, we perform different experiments
   in real time and offline simulation.
----
-MARKER: 2018_rs_rrm_not_wadac_2019539
-TYPE: inproceedings
-AUTHOR: Sridharan, R., Maiti, R. R., Tippenhauer, N. O.
-TITLE: 'WADAC: Privacy-Preserving Anomaly Detection and Attack Classification on Wireless
-  Traffic'
-CTITLE: ACM Conf. on Security and Privacy in Wireless and Mobile Networks
-YEAR: '2018'
-VOLUME: '11'
-PAGE: (12 pages)
-DOI: 10.1145/3212480.3212495
-TOPKEY: telescope-3days-conficker
-GEOLOC: Stockholm, SE
-ABS: In this work, we address the problem of detecting application-layer attacks on
-  nearby wireless devices. In particular, we assume that the detection scheme is limited
-  to link-layer traffic (either because schemes such as WPA2 are used, and the key
-  is unknown, or to preserve user privacy). Such a setting allows us to detect attacks
-  in nearby third party networks that we are not associated with, unlike related work
-  that relies on wireline taps to observe traffic. We propose and implement a framework
-  consisting of an anomaly detection module (unsupervised), and an attack classification
-  module that identifies a known set of attacks (supervised). We evaluate our prototype
-  with experiments including a range of attacks. For example, we demonstrate that
-  the anomaly detector detects Mirai C&C traffic by an IoT device (without training
-  with Mirai). In addition, we detect that the Mirai infected device is attacking
-  other devices with 96.1% accuracy. We show that our prototype can be applied to
-  different wireless standards (such as 802.11 (WiFi) and 802.15 (Zigbee)) and detect
-  attacks with an accuracy of 96%-99%.
-URL: http://dx.doi.org/10.1145/3212480.3212495
 ---
 MARKER: 2018_rz_jc_xt_ql_xh_2019540
 TYPE: inproceedings
@@ -23197,29 +22979,6 @@ ABS: Distributed denial of service (DDoS) attacks pose a severe threat to extens
   detection accuracy. Such a generalized detection system would be useful to researchers
   for validating and comparing various information theory metrics based solutions.
 ---
-MARKER: 2018_tmt_cqn_kvn_2019605
-TYPE: inproceedings
-AUTHOR: Thang, T- M., Nguyen, C-Q., Nguyen, K-V.
-TITLE: Synflood Spoofed Source DDoS Attack Defense Based on Packet ID Anomaly Detection
-  with Bloom Filter
-CTITLE: Asian Conf. on Defense Technology (ACDT)
-YEAR: '2018'
-VOLUME: '5'
-PAGE: ''
-DOI: 10.1109/ACDT.2018.8593121
-URL: https://ieeexplore.ieee.org/abstract/document/8593121
-TOPKEY: ddos-2007
-GEOLOC: Hanoi, VN
-ABS: TCP SYN Flood is one of the most dangerous types of DDoS attacks. To perform
-  the attack effectively, attackers attempt to send overwhelmed SYN packets with spoofed
-  source, especially, information fields of each packet is spoofed as normal packet.
-  Then it is very difficult to distinguish spoofed packets if we observe individual
-  packet. In the previous study, we proposed method PIDAD (Packet Identification Anomaly
-  Detection) to detect spoofed packets. However, this method has some limitations
-  which is in need of further research and completion. In this study, we propose another
-  method using multiple layers of Bloom Filter to address the limitations of previous
-  our propose.
----
 MARKER: 2018_ju_ps_mm_jp_mk_jh_2019606
 TYPE: inproceedings
 AUTHOR: Uramova, J., Sege, P., Moravik, M., Papan, J., Kontsek, M., Hrabovsky, J.
@@ -23397,30 +23156,6 @@ ABS: Traffic measurement and monitoring is crucial for network applications, suc
   in terms of detection accuracy and storage utilization.
 URL: http://dx.doi.org/10.1049/cje.2018.08.009
 ---
-MARKER: 2018_nv_ht_gmk_thailand_2019702
-TYPE: inproceedings
-AUTHOR: Vichaidis, N., Tsunoda, H., Keeni, G. M.
-TITLE: Analyzing darknet TCP traffic stability at different timescales
-CTITLE: Intl Conf. on Information Networking (ICOIN)
-YEAR: '2018'
-PAGE: (6 pages)
-DOI: 10.1109/ICOIN.2018.8343098
-TOPKEY: telescope-generic
-GEOLOC: Chiang Mai, TL
-ABS: Darknet traffic analysis is a possible choice for observing global trends in
-  security threats and analyzing the behavior of Internet attacks. We previously analyzed
-  darknet traffic and evaluated the day to day stability. The investigation of traffic
-  data identifies several anomalous events with drastic changes in instability mainly
-  caused by distributed denial-of-service attacks, misconfigurations, scans, and backscatters.
-  Our previous proposal is not adapted to detect small-scale events, where a small
-  number of attackers send packets to the destination targets in a short duration.
-  We analyze herein the cause of instabilities in transmission control protocol traffic
-  at different timescales by investigating the number of senders to each destination
-  port and the duration of the attack to classify the characteristics of diverse events.
-  Some large-scale events can be detected from the instabilities in daily traffic,
-  while some small-scale events can be detected from the instabilities of hourly traffic.
-URL: http://dx.doi.org/10.1109/ICOIN.2018.8343098
----
 MARKER: 2019_jhh_international_journal_2019705
 TYPE: article
 AUTHOR: Huh, J. H.
@@ -23451,38 +23186,6 @@ ABS: With the current global food production capability, it is not difficult to 
   classified using typical communications protocols. The packet headers were subjected
   to analysis and the results were stored in database for later applications.
 ---
-MARKER: 2018_ab_mp_rb_sd_2019706
-TYPE: inproceedings
-AUTHOR: Boukhtouta, A., Pourzandi, M., Brunner, R., Dault, S.
-TITLE: 'Fingerprinting Crowd Events in Content Delivery Networks: A Semi-supervised
-  Methodology'
-CTITLE: IFIP Annual Conf. on Data and Applications Security and Privacy
-YEAR: '2018'
-PAGE: (18 pages)
-DOI: 10.1007/978-3-319-95729-6_20
-TOPKEY: ddos-2007
-GEOLOC: Montreal, CA
-ABS: Crowd events or flash crowds are meant to be a voluminous access to media or
-  web assets due to a popular event. Even though the crowd event accesses are benign,
-  the problem of distinguishing them from Distributed Denial of Service (DDoS) attacks
-  is difficult by nature as both events look alike. In contrast to the rich literature
-  about how to profile and detect DDoS attack, the problem of distinguishing the benign
-  crowd events from DDoS attacks has not received much interest. In this work, we
-  propose a new approach for profiling crowd events and segregating them from normal
-  accesses. We use a first selection based on semi-supervised approach to segregate
-  between normal events and crowd events using the number of requests. We use a density
-  based clustering, namely, DBSCAN, to label patterns obtained from a time series.
-  We then use a second more refined selection using the resulted clusters to classify
-  the crowd events. To this end, we build a XGBoost classifier to detect crowd events
-  with a high detection rate on the training dataset (99%). We present our initial
-  results of crowd events fingerprinting using 8 days log data collected from a major
-  Content Delivery Network (CDN) as a driving test. We further prove the validity
-  of our approach by applying our models on unseen data, where abrupt changes in the
-  number of accesses are detected. We show how our models can detect the crowd event
-  with high accuracy. We believe that this approach can further be used in similar
-  CDN to detect crowd events.
-URL: http://dx.doi.org/10.1007/978-3-319-95729-6_20
----
 MARKER: 2018_hq_hz_yl_zz_2019709
 TYPE: inproceedings
 AUTHOR: Qiu, H., Zhu, H., Li, Y., Zeng, Z.
@@ -23494,7 +23197,7 @@ VOLUME: '4'
 PAGE: (6 pages)
 DOI: 10.1109/CompComm.2018.8780611
 URL: https://ieeexplore.ieee.org/abstract/document/8780611
-TOPKEY: topology-generic
+TOPKEY: topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Chengdu, CN
 ABS: Cascading failures are a severe threat to inter-domain routing system, while
   little has been done to detect and report impacts. To address the problem, we analyze
@@ -23511,37 +23214,6 @@ ABS: Cascading failures are a severe threat to inter-domain routing system, whil
   received by nodes as the metric, the maximum relative error is 1.69 and the average
   one is 0.92. As our prediction is a little large than reality, the false negative
   rate of FD-SP is low.
----
-MARKER: 2018_sb_sb_ia_2019710
-TYPE: article
-AUTHOR: Bhatia, S., Behal, S., Ahmed, I.
-TITLE: 'Distributed Denial of Service Attacks and Defense Mechanisms: Current Landscape
-  and Future Directions'
-SERIAL: Versatile Cybersecurity
-YEAR: '2018'
-VOLUME: ''
-PAGE: (43 pages)
-DOI: 10.1007/978-3-319-97643-3_3
-URL: https://link.springer.com/chapter/10.1007/978-3-319-97643-3_3
-TOPKEY: ddos-2007
-GEOLOC: Fairfield, US; Punjab, IN; New Orleans, US
-ABS: Societal dependence on Information and Communication Technology (ICT) over the
-  past two decades has brought with it an increased vulnerability to a large variety
-  of cyber-attacks. One such attack is a Distributed Denial-of-Service (DDoS) attack
-  which harnesses the power of a larger number of compromised and geographically distributed
-  computers and other networked machines to attack information-providing services,
-  often resulting in significant downtime and thereby causing a denial-of-service
-  to legitimate clients. The size, frequency, and sophistication of such attacks have
-  exponentially risen over the past decade. In order to develop a better understanding
-  of these attacks and defense system against this ever-growing threat, it is essential
-  to understand their modus operandi, latest trends and other most widely-used tactics.
-  Consequently, the study of DDoS attacks and techniques to accurately and reliably
-  detect and mitigate their impact is an important area of research. This chapter
-  largely focuses on the current landscape of DDoS attack detection and defense mechanisms
-  and provides detailed information about the latest modus operandi of various network
-  and application layer DDoS attacks, and presents an extended taxonomy to accommodate
-  the novel attack types. In addition, it provides directions for future research
-  in DDoS attack detection and mitigation.
 ---
 MARKER: 2018_rm_ar_akg_2019711
 TYPE: inproceedings
@@ -23567,68 +23239,6 @@ ABS: Cloud Security issue is one of the biggest challenges that hampers the grow
   help in catching malicious packets while packets transmissions between the virtual
   machines server and virtual machine clients through virtual intermediate routers
   with the unique patch of probability and round trip time in hop count filter method.
----
-MARKER: 2018_an_am_pdy_vk_2019712
-TYPE: article
-AUTHOR: Nisioti, A., Mylonas, A., Yoo, P. D., Katos, V.
-TITLE: 'From Intrusion Detection to Attacker Attribution: A Comprehensive Survey of
-  Unsupervised Methods'
-SERIAL: 'IEEE Communications Surveys and Tutorials '
-YEAR: '2018'
-VOLUME: '20'
-PAGE: (20 pages)
-DOI: 10.1109/COMST.2018.2854724
-URL: https://ieeexplore.ieee.org/abstract/document/8410366
-TOPKEY: passive-2016
-GEOLOC: Poole, UK
-ABS: Over the last five years there has been an increase in the frequency and diversity
-  of network attacks. This holds true, as more and more organizations admit compromises
-  on a daily basis. Many misuse and anomaly based intrusion detection systems (IDSs)
-  that rely on either signatures, supervised or statistical methods have been proposed
-  in the literature, but their trustworthiness is debatable. Moreover, as this paper
-  uncovers, the current IDSs are based on obsolete attack classes that do not reflect
-  the current attack trends. For these reasons, this paper provides a comprehensive
-  overview of unsupervised and hybrid methods for intrusion detection, discussing
-  their potential in the domain. We also present and highlight the importance of feature
-  engineering techniques that have been proposed for intrusion detection. Furthermore,
-  we discuss that current IDSs should evolve from simple detection to correlation
-  and attribution. We descant how IDS data could be used to reconstruct and correlate
-  attacks to identify attackers, with the use of advanced data analytics techniques.
-  Finally, we argue how the present IDS attack classes can be extended to match the
-  modern attacks and propose three new classes regarding the outgoing network communication.
----
-MARKER: 2018_mh_nn_ebh_pc_201913
-TYPE: inproceedings
-AUTHOR: Husak, M., Neshenko, N., Bou-Harb, E., Celeda, P.
-TITLE: Assessing Internet-wide Cyber Situational Awareness of Critical Sectors
-CTITLE: Intl Conf. on Availability, Reliability and Security
-YEAR: '2018'
-VOLUME: '13'
-PAGE: (6 pages
-DOI: 10.1145/3230833.3230837
-URL: https://dl.acm.org/citation.cfm?id=3230837
-TOPKEY: telescope-generic
-GEOLOC: Boca Raton, US
-ABS: In this short paper, we take a first step towards empirically assessing Internet-wide
-  malicious activities generated from and targeted towards Internet-scale business
-  sectors (i.e., financial, health, education, etc.) and critical infrastructure (i.e.,
-  utilities, manufacturing, government, etc.). Facilitated by an innovative and a
-  collaborative large-scale effort, we have conducted discussions with numerous Internet
-  entities to obtain rare and private information related to allocated IP blocks pertaining
-  to the aforementioned sectors and critical infrastructure. To this end, we employ
-  such information to attribute Internet-scale maliciousness to such sectors and realms,
-  in an attempt to provide an in-depth analysis of the global cyber situational posture.
-  We draw upon close to 16.8 TB of darknet data to infer probing activities (typically
-  generated by malicious/infected hosts) and DDoS backscatter, from which we distill
-  IP addresses of victims. By executing week-long measurements, we observed an alarming
-  number of more than 11,000 probing machines and 300 DDoS attack victims hosted by
-  critical sectors. We also generate rare insights related to the maliciousness of
-  various business sectors, including financial, which typically do not report their
-  hosted and targeted illicit activities for reputation-preservation purposes. While
-  we treat the obtained results with strict confidence due to obvious sensitivity
-  reasons, we postulate that such generated cyber threat intelligence could be shared
-  with sector/critical infrastructure operators, backbone networks and Internet service
-  providers to contribute to the overall threat remediation objective.
 ---
 MARKER: 2018_pvr_bmp_2019_705
 TYPE: inproceedings
@@ -23674,56 +23284,6 @@ ABS: Vulnerable IoT devices are powerful platforms for building botnets that cau
   activity are becoming more sophisticated. Compared to its predecessor, we find Mirai
   uses more resilient hosting and control infrastructures, and supports more effective
   attacks.
----
-MARKER: 2018_paar_acd_2019717
-TYPE: article
-AUTHOR: Resende, P. A. A., Drummond, A. C.
-TITLE: A Survey of Random Forest Based Methods for Intrusion Detection Systems
-SERIAL: ACM Computing Surveys (CSUR)
-YEAR: '2018'
-VOLUME: '51'
-PAGE: (36 pages)
-DOI: 10.1145/3178582
-URL: https://dl.acm.org/citation.cfm?id=3178582
-TOPKEY: telescope-3days-conficker
-GEOLOC: New York, NY, US
-ABS: Over the past decades, researchers have been proposing different Intrusion Detection
-  approaches to deal with the increasing number and complexity of threats for computer
-  systems. In this context, Random Forest models have been providing a notable performance
-  on their applications in the realm of the behaviour-based Intrusion Detection Systems.
-  Specificities of the Random Forest model are used to provide classification, feature
-  selection, and proximity metrics. This work provides a comprehensive review of the
-  general basic concepts related to Intrusion Detection Systems, including taxonomies,
-  attacks, data collection, modelling, evaluation metrics, and commonly used methods.
-  It also provides a survey of Random Forest based methods applied in this context,
-  considering the particularities involved in these models. Finally, some open questions
-  and challenges are posed combined with possible directions to deal with them, which
-  may guide future works on the area.
----
-MARKER: 2019_sw_tm_jg_2019718
-TYPE: inproceedings
-AUTHOR: Wiedenmann, S., Mundt, T., Goltz, J.
-TITLE: Designing and Implementing a Benchmark Collection for Attack Simulation in
-  Field bus Systems
-CTITLE: IEEE Conf. on Application, Information and Network Security (AINS)
-YEAR: '2018'
-VOLUME: ''
-PAGE: (9 pages)
-DOI: 10.1109/AINS.2018.8631474
-URL: https://ieeexplore.ieee.org/abstract/document/8631474
-TOPKEY: ddos-2007
-GEOLOC: Langkawi, ML
-ABS: Field bus systems are used in modern day Building and Industrial Automation Systems
-  to interconnect devices and machines. Due to their common lack of fundamental security
-  features such as encryption or authentication and their high prevalence field bus
-  systems are highly vulnerable to attacks. In parallel research we are investigating
-  how these field buses can be secured. In order to benchmark those security measures
-  we are defining a series of test-data sets simulating attacks. Additionally we describe
-  a formal mechanism to generate those data sets since real world attack data sets
-  are not easily attainable. Therefor we depicted what network traffic is caused by
-  various attack-types and we investigate short and long term cycles within field
-  bus communications. We publicly provide our results and invite other researchers
-  to make use of them and contribute to the developing benchmark collection.
 ---
 MARKER: 2018_ksh_wes_2019719
 TYPE: inproceedings
