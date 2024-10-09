@@ -6881,6 +6881,17 @@ TOPKEY: topology-ark-itdk
 GEOLOC: College Park, MD, US
 ABS: ''
 ---
+MARKER: 2013_garcia-jimenez_s_acm_14103340
+TYPE: in_proceedings
+AUTHOR: Garcia-Jimenez, S., Magaña, E., Morato, D., Izal, M.
+TITLE: 'EAlias Resolution Techniques: Long-term Analysis of Alias Stability in Internet Routers'
+PUBLISH: ACM
+CTITLE: Proceedings of the 8th ACM workshop on Performance monitoring and measurement of heterogeneous wireless and wired networks
+YEAR: 2013-11
+URL: https://dl.acm.org/doi/pdf/10.1145/2512840.2512842
+TOPKEY: midar
+GEOLOC: Pamplona, ES
+---
 MARKER: 2008_wang_f_owiley_703573
 TYPE: article
 AUTHOR: Wang, F., Zhang, Y., Ma, J.
@@ -8407,6 +8418,16 @@ URL: https://arxiv.org/abs/2210.10676
 TOPKEY: topology-as-relationships, peeringdb
 GEOLOC: Saarbrucken, DE
 ABS: ''
+---
+MARKER: 2020_vermeulen_k_arxiv_221010676
+TYPE: online
+AUTHOR: Vermeulen, K., Ljuma, B., Addanki, V., Gouel, M., Fourmaux, O., Friedman, T., Rejaie, R.
+TITLE: Alias Resolution Based on ICMP Rate Limiting
+PUBLISH: arxiv.org
+YEAR: 2020-02
+URL: https://arxiv.org/abs/2002.00252
+TOPKEY: midar
+GEOLOC: Paris, FR
 ---
 MARKER: 2022_litvak_n_arxiv_220601553
 TYPE: misc
@@ -24758,8 +24779,8 @@ YEAR: '2019'
 VOLUME: '0'
 PAGE: (24 pages)
 DOI: https://doi.org/10.1145/3342286
-URL: https://www.cse.unr.edu/~mgunes/papers/19-TOMPECS-InternetPaths.pdf
-TOPKEY: topology-as-organization
+URL: https://dl.acm.org/doi/pdf/10.1145/3342286
+TOPKEY: topology-as-organization, bgpstream
 GEOLOC: Nevada, US
 ABS: Interactive and multimedia applications depend on the stability of end-to-end
   paths for predictable performance and good quality of service. On the other hand,
@@ -68470,7 +68491,7 @@ YEAR: 2023-06
 SERIAL: Proceedings of the ACM on Networking
 VOLUME: '1'
 URL: https://dl.acm.org/doi/abs/10.1145/3595290
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, midar
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_zhao_w_aims
@@ -71452,7 +71473,7 @@ TITLE: "AliasClassifier: A High-Performance Router Alias Classifier"
 SERIAL: Electronics
 YEAR: 2024-05
 VOLUME: '13'
-TOPKEY: topology-itdk
+TOPKEY: midar, iffinder, topology-ark-itdk
 GEOLOC: Harbin, CN
 URL: https://www.mdpi.com/2079-9292/13/9/1747
 ---
