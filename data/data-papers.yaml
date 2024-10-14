@@ -10394,7 +10394,7 @@ PUBLISH: ''
 PAGE: ''
 YEAR: '2018'
 URL: https://www.proquest.com/docview/2056571282
-TOPKEY: bgpstream
+TOPKEY: topology-as-relationships, topology-as-rank, topology-generic, topology-ark-itdk
 GEOLOC: Fort Collins, CO, US
 ABS: ''
 ---
@@ -23990,7 +23990,7 @@ PUBLISH: University of Southern California (USC)
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~hangguo/papers/Guo18c.pdf
-TOPKEY: passive-ipv6day-and-ipv6launch
+TOPKEY: passive-ipv6day-and-ipv6launch, outeviews-prefix2as
 GEOLOC: California, US
 ABS: 'Distributed Denial-of-Service (DDoS) attacks launched from compromised Internet-of-Things
   (IoT) devices have shown how vulnerable the Internet is to large scale DDoS attacks.
@@ -24190,7 +24190,7 @@ PUBLISH: 'University of Southern California / Information Sciences Institute '
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~johnh/PAPERS/Heidemann18b.pdf
-TOPKEY: topology-generic
+TOPKEY: topology-ark-ipv4-prefix-probing
 GEOLOC: California, US
 ABS: 'Internet reliability has many potential weaknesses: fiber rights-of-way at the
   physical layer, exchange-point congestion from DDOS at the network layer, settlement
@@ -24219,7 +24219,7 @@ YEAR: '2018'
 PAGE: (14 pages)
 DOI: 10.1145/3278532.3278559
 URL: https://dl.acm.org/citation.cfm?id=3278559
-TOPKEY: topology-ark-itdk, topology-ark-ipv6-traceroute, topology-ark-ipv4-traceroute
+TOPKEY: topology-ark-dnsnames, topology-ark-ipv6-traceroute
 GEOLOC: New York, NY, US
 ABS: Existing methods for active topology discovery within the IPv6 Internet largely
   mirror those of IPv4. In light of the large and sparsely populated address space,
@@ -28589,7 +28589,7 @@ YEAR: 2018-05
 VOLUME: 7 (3)
 PAGE: 141-151
 DOI: 10.1049/iet-net.2017.0115
-TOPKEY: topology-skitter-ipv4
+TOPKEY: topology-skitter-ipv4, topology-generic
 GEOLOC: Tamil Nadu, IN
 ABS: Although cybercrime and cyber threats are increasing significantly, yet prevention
   and security of the critical infrastructure are still far from perfect. The internet
@@ -28816,7 +28816,7 @@ SERIAL: ACM J. Exp. Algorithms
 VOLUME: 25 (1)
 ARTICLE: '1.1'
 YEAR: 2020-03
-TOPKEY: passive-generic
+TOPKEY: passive-2014, passive-realtime
 DOI: 10.1145/3339504
 GEOLOC: Cambridge, MA, US
 ABS: We introduce the adaptive cuckoo filter (ACF), a data structure for approximate
@@ -30530,7 +30530,7 @@ PUBLISH: Univ. of Louisiana at Lafayette (ProQuest Publ.)
 PAGE: (171 pages)
 YEAR: 2018-11
 URL: https://search.proquest.com/openview/a7f3f0de94f2441532fbf756c7dcf779/
-TOPKEY: passive-2016, topology-as-relationships
+TOPKEY: routeviews-prefix2as, topology-as-relationships, topology-ark-ipv4-traceroute
 GEOLOC: Lafayette, US
 ABS: 'The global communication infrastructure of the Internet is formed by tens of
   thousands of Autonomous Systems connecting various organizations and individuals
@@ -30645,7 +30645,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 YEAR: 2018-10
 PAGE: 265-278
 DOI: 10.1145/3278532.3278556
-TOPKEY: topology-as-relationships, routeviews_prefix2as
+TOPKEY: topology-as-relationships, routeviews_prefix2as, iffinder
 GEOLOC: Forth, GR
 ABS: Internet eXchange Points (IXPs) are Internet hubs that mainly provide the switching
   infrastructure to interconnect networks and exchange traffic. While the initial
@@ -30744,7 +30744,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 YEAR: 2018-10
 PAGE: 279-292
 DOI: 10.1145/3278532.3278557
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-relationships
 GEOLOC: Saarbruecken, DE
 ABS: BGP communities are a mechanism widely used by operators to manage policy, mitigate
   attacks, and engineer traffic; e.g., to drop unwanted traffic, filter announcements,
@@ -30987,7 +30987,7 @@ PUBLISH: Anglia Ruskin University
 PAGE: (407 pages)
 YEAR: 2018-10
 URL: https://arro.anglia.ac.uk/703788/
-TOPKEY: topology-generic, topology-as-relationships, topology-as-rank, topology-skitter-aslinks
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Cambridge, UK
 ABS: Accessible and affordable access to the Internet is crucial for socio-economic
   progress in developing countries and reducing Digital Divide. The disparity in mobile
@@ -31026,7 +31026,7 @@ YEAR: 2018-10
 VOLUME: '30'
 PAGE: (9 pages)
 DOI: 10.1109/ITC30.2018.00034
-TOPKEY: topology-generic
+TOPKEY: topology-generic, midar
 GEOLOC: Oslo, NO
 ABS: DiffServ was designed to implement service provider quality of service (QoS)
   policies, where ingress and egress routers change the DiffServ Code Point (DSCP)
@@ -31527,7 +31527,7 @@ PUBLISH: Univ. of Nevada, Reno
 PAGE: (204 pages)
 YEAR: 2018-08
 URL: https://scholarworks.unr.edu/handle/11714/4537
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, bgpstream, topology-as-organization
 GEOLOC: Reno, NV, US
 ABS: Data has became one of the most valuable resources in todays world where we have
   greater digital presence. Large volumes of data are generated through various platforms
@@ -31862,7 +31862,7 @@ CTITLE: IEEE Conf. on Computer Communications
 YEAR: 2018-07
 PAGE: (6 pages)
 DOI: 10.1109/INFCOMW.2018.8406821
-TOPKEY: topology-ark-ipv4-aslinks
+TOPKEY: topology-as-relationships
 GEOLOC: Lynchburg, VI, US
 ABS: Hierarchically structured addresses have been proposed to improve the scalability
   of the Internet. However, the crucial component and primary challenge of hierarchical
@@ -32333,7 +32333,7 @@ CTITLE: Intl Wireless Comm. and Mobile Computing Conf. (IWCMC)
 YEAR: 2018-06
 PAGE: 518-523
 DOI: 10.1109/IWCMC.2018.8450465
-TOPKEY: telescope-real-time
+TOPKEY: telescope-generic
 GEOLOC: Tunis, TN; Tunis, TN; Boca Raton, FL, US; Dubai, AE; Tunis, TN
 ABS: Literature contributions have shown that information theoretic techniques can
   effectively detect various types of Distributed Denial of Service (DDoS) attacks.
@@ -32779,7 +32779,7 @@ PUBLISH: Colorado State Univ.
 PAGE: '107'
 YEAR: 2018-04
 URL: https://mountainscholar.org/handle/10217/189413
-TOPKEY: topology-as-relationships, topology-as-rank, telescope-generic
+TOPKEY: topology-as-relationships, topology-as-rank, topology-generic, topology-ark-itdk
 GEOLOC: Fort Collins, CO, US
 ABS: Today the Internet plays a critical role in our lives; we rely on it for communication,
   business, and more recently, smart home operations. Users expect high performance
@@ -33000,7 +33000,7 @@ YEAR: 2018-04
 VOLUME: '134'
 PAGE: 183-201
 DOI: 10.1016/j.comnet.2018.01.050
-TOPKEY: passive-2016
+TOPKEY: passive-2016, coralreef
 GEOLOC: Lancaster, UK; Glasgow, UK; Lancaster, UK
 ABS: Undoubtedly, the characterisation of network traffic flows is vitally important
   in understanding the dynamics of Internet traffic and in appropriately dimensioning
@@ -33066,7 +33066,7 @@ CTITLE: EuroSys Conf.
 YEAR: 2018-04
 PAGE: (16 pages)
 DOI: 10.1145/3190508.3190558
-TOPKEY: passive-stats
+TOPKEY: passive-2015
 GEOLOC: Philadelphia, PA, US; Annapolis, MD, US; Boulder, CO, US; Philadelphia, PA,
   US
 ABS: Fine-grained traffic flow records enable many powerful applications, especially
@@ -33215,7 +33215,7 @@ TITLE: 'DDoS attack detection system: Utilizing classification algorithms with A
 CTITLE: Conf. on New Technologies, Mobility and Security (NTMS)
 PAGE: (7 pages)
 YEAR: 2018-04
-TOPKEY: ddos-2007
+TOPKEY: passive-2015
 GEOLOC: Halifax, NS, CA
 ABS: 'Cloud computing is a model of configurable computing resources such as servers,
   networks, storages, applications, and services that are available from anywhere
@@ -33244,7 +33244,7 @@ PUBLISH: Naval Postgraduate School
 PAGE: (111 pages)
 YEAR: 2018-03
 URL: https://calhoun.nps.edu/handle/10945/58301
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-dnsnames
 GEOLOC: Monterey, CA, US
 ABS: Traceroute is a popular active probing technique used by researchers, operators,
   and adversaries to map the structure and connectivity of IP networks. However, traceroute
@@ -33579,7 +33579,7 @@ YEAR: 2018-02
 VOLUME: IX
 PAGE: 243-257
 DOI: 10.1007/978-3-319-73198-8_21
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, bgpstream
 GEOLOC: Nevada, US
 ABS: In order to understand the Internet topology, it is important to analyze the
   underlying networks characteristics. Internet is enabled by independently operating
@@ -34020,7 +34020,7 @@ AUTHOR: Mitzenmacher, M., Pontarelli, S., Reviriego, P.
 TITLE: Adaptive cuckoo filters
 PAGE: (12 pages)
 YEAR: 2018-01
-TOPKEY: passive-2014
+TOPKEY: passive-2014, passive-realtime
 DOI: 10.1137/1.9781611975055.4
 CTITLE: Proc. Workshop on Algorithm Engineering and Experiments (ALENEX)
 GEOLOC: Cambridge, MA, US; Rome, IT; Madrid, ES
