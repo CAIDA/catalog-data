@@ -1,4 +1,4 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
 const dns = (function () {
   const baseURL = "https://dzdb.caida.org/api";
@@ -16,7 +16,7 @@ const dns = (function () {
       }).then((response) => {
         const rootPromise = new Promise(async (rootResolve) => {
           if (response.ok) {
-            data = response.json().then((response) => response.data);
+            const data = response.json().then((response) => response.data);
             rootResolve(data);
           } else if (response.status == "429") {
             let delay = response.headers.get("retry-after") * 1000 || 2000; // Retry after defaults to 2 seconds
@@ -44,7 +44,7 @@ const dns = (function () {
 function getDomainLastActive(domain) {
   return dns.get("domains", domain).then((response) => {
     // If no lastseen is set, domain is still active
-    return response.last_seen;
+    return response.zone.lastseen;
   });
 }
 
