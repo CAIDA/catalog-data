@@ -743,20 +743,6 @@ TOPKEY: topology-ark-itdk
 GEOLOC: Monterey, CA, US
 ABS: ''
 ---
-MARKER: 2018_nadhom_m_scidir_1830460
-TYPE: article
-AUTHOR: Nadhom, M., Loskot, P.
-TITLE: Survey of public data sources on the Internet usage and other Internet statistics
-SERIAL: Data in Brief
-YEAR: 2018-06
-VOLUME: '18'
-PAGE: 1914-1929
-DOI: 10.1016/j.dib.2018.04.107
-URL: https://www.sciencedirect.com/science/article/pii/S2352340918304608
-TOPKEY: topology-ark-itdk
-GEOLOC: Swansea, GB
-ABS: ''
----
 MARKER: 2018_guan_y_scidir_18301130
 TYPE: article
 AUTHOR: Guan, Y., Lei, W., Zhang, W., Liu, S., Li, H.
@@ -786,40 +772,11 @@ TOPKEY: passive-generic
 GEOLOC: Greeley, CO, US
 ABS: ''
 ---
-MARKER: 2018_ghofrani_f_scidir_7304958
-TYPE: article
-AUTHOR: Ghofrani, F., Keshavarz-Haddad, A., Jamshidi, A.
-TITLE: A new probabilistic classifier based on decomposable models with application
-  to internet traffic
-SERIAL: Pattern Recognition
-YEAR: 2018-05
-VOLUME: '77'
-PAGE: 1-11
-DOI: 10.1016/j.patcog.2017.12.009
-URL: https://www.sciencedirect.com/science/article/pii/S0031320317304958
-TOPKEY: coralreef
-GEOLOC: Shiraz, IR
-ABS: ''
----
-MARKER: 2018_dimauro_m_elea_105563088
-TYPE: phdthesis
-AUTHOR: Di Mauro, M.
-TITLE: Statistical models for the characterization, identification and mitigation
-  of distributed attacks in data networks
-PUBLISH: Universita degli Studi di Salerno
-PAGE: 1-157
-YEAR: 2018-03
-URL: http://elea.unisa.it/handle/10556/3088
-TOPKEY: code-red-worm
-GEOLOC: Fisciano SA, IT
-ABS: ''
----
 MARKER: 2018_tai_k_acm_3196930
 TYPE: inproceedings
 AUTHOR: Tai, K., Sharan, V., Bailis, P., Valiant, G.
 TITLE: Sketching Linear Classifiers over Data Streams
-CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD
-  '18)
+CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD'18)
 YEAR: 2018-05
 VOLUME: ''
 PAGE: 757-772
@@ -848,8 +805,7 @@ MARKER: 2018_galea_s_acm_3234226
 TYPE: inproceedings
 AUTHOR: Galea, S., Moore, A., Antichi, G., Bianchi, G., Bifulco, R.
 TITLE: Revealing Hidden Hierarchical Heavy Hitters in network traffic
-CTITLE: Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos (SIGCOMM
-  '18)
+CTITLE: Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos (SIGCOMM'18)
 YEAR: 2018-08
 VOLUME: ''
 PAGE: 81-83
@@ -975,27 +931,11 @@ TOPKEY: passive-2016
 GEOLOC: West Lafayette, IN, US
 ABS: ''
 ---
-MARKER: 2018_jayaram_r_acm_3196986
-TYPE: inproceedings
-AUTHOR: Jayaram, R., Woodruff, D.
-TITLE: Data Streams with Bounded Deletions
-CTITLE: Proceedings of the 37th ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of
-  Database Systems (PODS '18)
-YEAR: 2018-05
-VOLUME: ''
-PAGE: 341-354
-DOI: 10.1145/3196959.3196986
-URL: https://dl.acm.org/doi/abs/10.1145/3196959.3196986
-TOPKEY: code-red-worm
-GEOLOC: Pittsburgh, PA, US
-ABS: ''
----
 MARKER: 2018_zhou_y_acm_3183726
 TYPE: inproceedings
 AUTHOR: Zhou, Y., Yang, T., Jiang, J., Cui, B., Yu, M., Li, X., Uhlig, S.
 TITLE: 'Cold Filter: A Meta-Framework for Faster and More Accurate Stream Processing'
-CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD
-  '18)
+CTITLE: Proceedings of the 2018 International Conference on Management of Data (SIGMOD'18)
 YEAR: 2018-05
 VOLUME: ''
 PAGE: 741-756
@@ -1203,7 +1143,7 @@ VOLUME: '33'
 PAGE: 194-200
 DOI: 10.1109/MNET.2018.1800171
 URL: https://ieeexplore.ieee.org/abstract/document/8594708
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, topology-as-relationships
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -1355,21 +1295,6 @@ TOPKEY: topology-as-rank
 GEOLOC: Klosterneuburg, AT
 ABS: ''
 ---
-MARKER: 2018_suila_k_lspringer_92459521
-TYPE: inproceedings
-AUTHOR: Suila, K., Czachorski, T., Rataj, A.
-TITLE: A Queueing Model of the Edge Node in IP over All-Optical Networks
-CTITLE: 25th International Conference (CN 2018)
-SERIAL: Communications in Computer and Information Science
-YEAR: 2018-05
-VOLUME: '860'
-PAGE: 258-271
-DOI: 10.1007/978-3-319-92459-5_21
-URL: https://link.springer.com/chapter/10.1007/978-3-319-92459-5_21
-TOPKEY: passive-2008
-GEOLOC: Gliwice, PL
-ABS: ''
----
 MARKER: 2018_pelloso_m_solsbc_24542018
 TYPE: inproceedings
 AUTHOR: Pelloso, M., Vergutz, A.., Santos, A., Nogueira, M.
@@ -1486,20 +1411,6 @@ TOPKEY: ddos-2007
 GEOLOC: Santa Maria, BR
 ABS: ''
 ---
-MARKER: 2018_sutherland_e_ssrn_3203883
-TYPE: inproceedings
-AUTHOR: Sutherland, E.
-TITLE: 'The Internet and Human Rights: Access, Shutdowns, and Surveillance'
-CTITLE: Building a 21st Century Bill of Rights
-YEAR: 2018-06
-VOLUME: ''
-PAGE: 1-18
-DOI: 10.2139/ssrn.3203883
-URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3203883
-TOPKEY: ioda
-GEOLOC: Johannesburg, ZA
-ABS: ''
----
 MARKER: 2018_izaguirre_f_lumeufrgs_193315
 TYPE: mastersthesis
 AUTHOR: Izaguirre, F.
@@ -1572,35 +1483,6 @@ TOPKEY: passive-2016
 GEOLOC: Hong Kong, CN
 ABS: ''
 ---
-MARKER: 2018_bigelow_b_ieee_8405014
-TYPE: inproceedings
-AUTHOR: Bigelow, B.
-TITLE: The topography of cyberspace and its consequences for operations
-CTITLE: 2018 10th International Conference on Cyber Conflict (CyCon)
-YEAR: 2018-07
-VOLUME: ''
-PAGE: 123-138
-DOI: 10.23919/CYCON.2018.8405014
-URL: https://ieeexplore.ieee.org/abstract/document/8405014
-TOPKEY: topology-as-rank
-GEOLOC: Mons, BE
-ABS: ''
----
-MARKER: 2018_gregori_e_ieee_8385550
-TYPE: inproceedings
-AUTHOR: Gregori, E., Luconi, V., Vecchio, A.
-TITLE: Studying Forwarding Differences in European Mobile Broadband with a Net Neutrality
-  Perspective
-CTITLE: European Wireless 2018; 24th European Wireless Conference
-YEAR: 2018-06
-VOLUME: ''
-PAGE: 81-87
-DOI: ''
-URL: https://ieeexplore.ieee.org/abstract/document/8385550
-TOPKEY: topology-generic
-GEOLOC: Pisa, IT
-ABS: ''
----
 MARKER: 2019_doroud_h_ieee_8648137
 TYPE: inproceedings
 AUTHOR: Doroud, H., Aceto, G., Donato, W., Jarchlo, E., Lopez, A., Guerrero, C., Pescape,
@@ -1614,21 +1496,6 @@ DOI: 10.1109/GLOCOM.2018.8648137
 URL: https://ieeexplore.ieee.org/abstract/document/8648137
 TOPKEY: coralreef
 GEOLOC: Madrid, ES
-ABS: ''
----
-MARKER: 2018_abrosin_m_ieee_8269274
-TYPE: article
-AUTHOR: Ambrosin, M., Compagno, A., Conti, M., Ghali, C., Tsudik, G.
-TITLE: Security and Privacy Analysis of National Science Foundation Future Internet
-  Architectures
-SERIAL: IEEE Communications Surveys & Tutorials
-YEAR: 2018-01
-VOLUME: '20'
-PAGE: 1418-1442
-DOI: 10.1109/COMST.2018.2798280
-URL: https://ieeexplore.ieee.org/abstract/document/8269274
-TOPKEY: dns-root-gtld-rtt
-GEOLOC: Padua, IT
 ABS: ''
 ---
 MARKER: 2018_zheng_j_ieee_8290717
@@ -1891,7 +1758,7 @@ VOLUME: ''
 PAGE: 833-849
 DOI: ''
 URL: https://www.usenix.org/conference/usenixsecurity18/presentation/birge-lee
-TOPKEY: spoofer
+TOPKEY: bgpstream
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
@@ -4099,7 +3966,7 @@ VOLUME: ''
 PAGE: (10)
 DOI: 10.1109/PCCC.2017.8280451
 URL: https://ieeexplore.ieee.org/abstract/document/8280451
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-rank, topology-as-relationships, routeviews-prefix2as
 GEOLOC: Beijing, CN
 ABS: ''
 ---
@@ -7014,6 +6881,17 @@ TOPKEY: topology-ark-itdk
 GEOLOC: College Park, MD, US
 ABS: ''
 ---
+MARKER: 2013_garcia-jimenez_s_acm_14103340
+TYPE: in_proceedings
+AUTHOR: Garcia-Jimenez, S., Magaña, E., Morato, D., Izal, M.
+TITLE: 'EAlias Resolution Techniques: Long-term Analysis of Alias Stability in Internet Routers'
+PUBLISH: ACM
+CTITLE: Proceedings of the 8th ACM workshop on Performance monitoring and measurement of heterogeneous wireless and wired networks
+YEAR: 2013-11
+URL: https://dl.acm.org/doi/pdf/10.1145/2512840.2512842
+TOPKEY: midar
+GEOLOC: Pamplona, ES
+---
 MARKER: 2008_wang_f_owiley_703573
 TYPE: article
 AUTHOR: Wang, F., Zhang, Y., Ma, J.
@@ -7909,7 +7787,7 @@ PUBLISH: University of Texas at Arlington
 YEAR: 2018-08
 PAGE: 1-131
 URL: https://rc.library.uta.edu/uta-ir/handle/10106/28645
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-organization
 GEOLOC: Arlington, TX, US
 ABS: ''
 ---
@@ -8540,6 +8418,16 @@ URL: https://arxiv.org/abs/2210.10676
 TOPKEY: topology-as-relationships, peeringdb
 GEOLOC: Saarbrucken, DE
 ABS: ''
+---
+MARKER: 2020_vermeulen_k_arxiv_221010676
+TYPE: online
+AUTHOR: Vermeulen, K., Ljuma, B., Addanki, V., Gouel, M., Fourmaux, O., Friedman, T., Rejaie, R.
+TITLE: Alias Resolution Based on ICMP Rate Limiting
+PUBLISH: arxiv.org
+YEAR: 2020-02
+URL: https://arxiv.org/abs/2002.00252
+TOPKEY: midar
+GEOLOC: Paris, FR
 ---
 MARKER: 2022_litvak_n_arxiv_220601553
 TYPE: misc
@@ -9991,7 +9879,7 @@ VOLUME: 26(6)
 PAGE: 2471-2486
 DOI: 10.1109/TNET.2018.2869798
 URL: https://ieeexplore.ieee.org/abstract/document/8481500
-TOPKEY: bgpstream
+TOPKEY: bgpstream, topology-as-relationships
 GEOLOC: Thessaloniki, GR
 ABS: ''
 ---
@@ -10394,7 +10282,7 @@ PUBLISH: ''
 PAGE: ''
 YEAR: '2018'
 URL: https://www.proquest.com/docview/2056571282
-TOPKEY: bgpstream
+TOPKEY: topology-as-relationships, topology-as-rank, topology-generic, topology-ark-itdk
 GEOLOC: Fort Collins, CO, US
 ABS: ''
 ---
@@ -16710,7 +16598,7 @@ VOLUME: '225'
 PAGE: 211-225
 DOI: 10.1007/978-981-10-7814-9_16
 URL: https://link.springer.com/chapter/10.1007/978-981-10-7814-9_16
-TOPKEY: ddos-2007
+TOPKEY: ddos-2007, passive-2013
 GEOLOC: Imphal, IN
 ABS: ''
 ---
@@ -21850,36 +21738,6 @@ ABS: 'OpenFlow, the main protocol for software-defined networking, requires larg
   packet processing in the OpenFlow, which considers dynamic update and power efficiency.'
 URL: http://dx.doi.org/10.1109/TNET.2018.2813425
 ---
-MARKER: 2018_mc_tj_pv_jk_ss_md_tp_2019419
-TYPE: inproceedings
-AUTHOR: Cermak, M., Jirsik, T., Velan, P., Komarkova, J., Spacek, S., Drasar, M.,
-  Plesnik, T.
-TITLE: Towards provable network traffic measurement and analysis via semi-labeled
-  trace datasets
-CTITLE: Network Traffic Measurement and Analysis Conf. (TMA)
-YEAR: '2018'
-PAGE: (8 pages)
-DOI: 10.23919/TMA.2018.8506498
-TOPKEY: 'passive-2008 '
-GEOLOC: Vienna, AT
-ABS: Research in network traffic measurement and analysis is a long-lasting field
-  with growing interest from both scientists and the industry. However, even after
-  so many years, results replication, criticism, and review are still rare. We face
-  not only a lack of research standards, but also inaccessibility of appropriate datasets
-  that can be used for methods development and evaluation. Therefore, a lot of potentially
-  high-quality research cannot be verified and is not adopted by the industry or the
-  community. The aim of this paper is to overcome this controversy with a unique solution
-  based on a combination of distinct approaches proposed by other research works.
-  Unlike these studies, we focus on the whole issue covering all areas of data anonymization,
-  authenticity, recency, publicity, and their usage for research provability. We believe
-  that these challenges can be solved by utilization of semi-labeled datasets composed
-  of real-world network traffic and annotated units with interest-related packet traces
-  only. In this paper, we outline the basic ideas of the methodology from unit trace
-  collection and semi-labeled dataset creation to its usage for research evaluation.
-  We strive for this proposal to start a discussion of the approach and help to overcome
-  some of the challenges the research faces today.
-URL: http://dx.doi.org/10.23919/TMA.2018.8506498
----
 MARKER: 2018_ll_dg_xz_jw_or_xl_2019420
 TYPE: article
 AUTHOR: Luo, L., Guo, D., Zhao, X., Wu, J., Rottenstreich, O., Luo, X.
@@ -22364,33 +22222,6 @@ ABS: We have analyzed network traces of TCP connections and observed that there 
   is close to FQ CoDel for only a fraction of the complexity and resource usage.
 URL: http://dx.doi.org/10.23919/IFIPNetworking.2018.8696746
 ---
-MARKER: 2018_su_mda_mshk_hindawi_2019514
-TYPE: article
-AUTHOR: Ullah, S., Awan, M. D., Khiyal, M. S. H.
-TITLE: 'Big Data in Cloud Computing: A Resource Management Perspective'
-SERIAL: Hindawi Scientific Programming
-YEAR: '2018'
-VOLUME: '2018'
-PAGE: (18 pages)
-DOI: 10.1155/2018/5418679
-URL: http://downloads.hindawi.com/journals/sp/2018/5418679.pdf
-TOPKEY: passive-generic
-GEOLOC: Islamabad, PK
-ABS: The modern day advancement is increasingly digitizing our lives which has led
-  to a rapid growth of data. Such multidimensional datasets are precious due to the
-  potential of unearthing new knowledge and developing decision-making insights from
-  them. Analyzing this huge amount of data from multiple sources can help organizations
-  to plan for the future and anticipate changing market trends and customer requirements.
-  While the Hadoop framework is a popular platform for processing larger datasets,
-  there are a number of other computing infrastructures, available to use in various
-  application domains. The primary focus of the study is how to classify major big
-  data resource management systems in the context of cloud computing environment.
-  We identify some key features which characterize big data frameworks as well as
-  their associated challenges and issues. We use various evaluation metrics from different
-  aspects to identify usage scenarios of these platforms. The study came up with some
-  interesting findings which are in contradiction with the available literature on
-  the Internet.
----
 MARKER: 2018_dlq_iea_pb_sb_rc_cf_ts_2019515
 TYPE: inproceedings
 AUTHOR: Quoc, D. L., Akkus, I. E., Bhatotia, P., Blanas, S., Chen, R., Fetzer, C.,
@@ -22626,34 +22457,6 @@ ABS: Bloom filters BFs are widely used in many network applications but the high
   throughput of OHBF-based solution can achieve twice as fast as the SBF-based solution.
 URL: http://dx.doi.org/10.1109/TNET.2018.2869851
 ---
-MARKER: 2018_oee_ma_bb_sh_2019530
-TYPE: misc
-AUTHOR: Elejla, O. E., Anbar, M., Belaton, B., Hamouda, S.
-TITLE: Labeled flow-based dataset of ICMPv6-based DDoS attacks
-PUBLISH: arxiv.org
-YEAR: '2018'
-PAGE: ''
-URL: https://link.springer.com/article/10.1007/s00521-017-3319-7
-TOPKEY: topology-ark-ipv6-traceroute
-GEOLOC: Gelugor, MA
-ABS: DDoS attacks that depend on Internet Control Message Protocol version 6 (ICMPv6)
-  are one of the most commonly performed IPv6 attacks against todays IPv6 networks.
-  A few detection systems were proposed to detect these attacks based on self-generated
-  datasets. These datasets used an unsuitable representation that depends on packets
-  format as well as they include non-qualified features which lead to false alerts
-  if the systems are applied in real networks. Moreover, most of the existing datasets
-  are unavailable for other researchers usage due to their authors privacy issues.
-  The objective of this paper is benchmarking datasets of ICMPv6-based DDoS attacks
-  to be used for the tuning, evaluations, and comparisons of any detection system
-  of the attacks. The datasets setup is based on a real IPv6-enabled network topology
-  and ensuring attack exposure. The proposed datasets are considered as the first
-  labeled and publically available flow-based datasets represented using a set of
-  flow-based features of the ICMPv6-based DDoS attacks. The requirements of good datasets
-  have been achieved in the proposed datasets to ensure they are worthy be used by
-  other researchers. Moreover, the datasets and their features proved their abilities
-  to represent the attacks traffics by achieving robust and acceptable high detection
-  accuracies as well as low false positive rate.
----
 MARKER: 2019_kb_bbg_hypothesis_2019531
 TYPE: article
 AUTHOR: Bhushan, K., Gupta, B. B.
@@ -22711,35 +22514,6 @@ ABS: Distributed denial of service attack has become a challenging threat in tod
   which is nearly 3413 times lesser than the existing related packet marking method.
   It was also implemented in real time in the experimental DDoS Test Bed the efficacy
   of the system was evaluated
----
-MARKER: 2018_mi_ia_m2019533
-TYPE: article
-AUTHOR: Idhammad, M., Afdel, K., Belouch, M.
-TITLE: Detection System of HTTP DDoS Attacks in a Cloud Environment Based on Information
-  Theoretic Entropy and Random Forest
-SERIAL: Hindawi Security and Communication Networks
-YEAR: '2018'
-VOLUME: ''
-PAGE: (14 pages)
-DOI: 10.1155/2018/1263123
-URL: https://www.hindawi.com/journals/scn/2018/1263123/abs/
-TOPKEY: ddos-2007
-GEOLOC: Agadir, MR
-ABS: Cloud Computing services are often delivered through HTTP protocol. This facilitates
-  access to services and reduces costs for both providers and end-users. However,
-  this increases the vulnerabilities of the Cloud services face to HTTP DDoS attacks.
-  HTTP request methods are often used to address web servers vulnerabilities and create
-  multiple scenarios of HTTP DDoS attack such as Low and Slow or Flooding attacks.
-  Existing HTTP DDoS detection systems are challenged by the big amounts of network
-  traffic generated by these attacks, low detection accuracy, and high false positive
-  rates. In this paper we present a detection system of HTTP DDoS attacks in a Cloud
-  environment based on Information Theoretic Entropy and Random Forest ensemble learning
-  algorithm. A time-based sliding window algorithm is used to estimate the entropy
-  of the network header features of the incoming network traffic. When the estimated
-  entropy exceeds its normal range the preprocessing and the classification tasks
-  are triggered. To assess the proposed approach various experiments were performed
-  on the CIDDS-001 public dataset. The proposed approach achieves satisfactory results
-  with an accuracy of 99.54%, a FPR of 0.4%, and a running time of 18.5s.
 ---
 MARKER: 2018_kj_td_ietinformation_security_2019534
 TYPE: article
@@ -22802,38 +22576,6 @@ ABS: With the prosperity of wireless networks, vehicular networks (VNs) have bee
   results, we verify that the detection scheme effectively reduces the time for starting
   attack detection and classification recognition and has a lower false alarm rate.
 ---
-MARKER: 2018_lh_sa_jis_2019536
-TYPE: article
-AUTHOR: Hong, L., Alzharani, S.
-TITLE: Generation of DDoS Attack Dataset for Effective IDS Development and Evaluation
-SERIAL: Journal of Information Security
-YEAR: '2018'
-VOLUME: '9'
-PAGE: (17 pages)
-DOI: '10.4236/jis.2018.94016 '
-URL: http://www.scirp.org/journal/PaperInformation.aspx?paperID=86682
-TOPKEY: ddos-2007
-GEOLOC: US
-ABS: Distributed Denial of Service (DDoS) attacks are performed from multiple agents
-  towards a single victim. Essentially, all attacking agents generate multiple packets
-  towards the victim to overwhelm it with requests, thereby overloading the resources
-  of the victim. Since it is very complex and expensive to conduct a real DDoS attack,
-  most organizations and researchers result in using simulations to mimic an actual
-  attack. The researchers come up with diverse algorithms and mechanisms for attack
-  detection and prevention. Further, simulation is good practice for determining the
-  efficacy of an intrusive detective measure against DDoS attacks. However, some mechanisms
-  are ineffective and thus not applied in real life attacks. Nowadays, DDoS attack
-  has become more complex and modern for most IDS to detect. Adjustable and configurable
-  traffic generator is becoming more and more important. This paper first details
-  the available datasets that scholars use for DDoS attack detection. The paper further
-  depicts the a few tools that exist freely and commercially for use in the simulation
-  programs of DDoS attacks. In addition, a traffic generator for normal and different
-  types of DDoS attack has been developed. The aim of the paper is to simulate a cloud
-  environment by OMNET++ simulation tool, with different DDoS attack types. Generation
-  normal and attack traffic can be useful to evaluate developing IDS for DDoS attacks
-  detection. Moreover, the result traffic can be useful to test an effective algorithm,
-  techniques and procedures of DDoS attacks.
----
 MARKER: 2018_jc_ml_T_vss_yl_wg_2019537
 TYPE: article
 AUTHOR: Cheng, J., Li, M., Tang,  X., Sheng, V. S., Liu, Y., Guo, W.
@@ -22886,34 +22628,6 @@ ABS: Intrusion detection/prevention is the greatest security challenge at virtua
   from each region of Cloud in order to identify distributed attacks. For feasibly
   analysis and functional validation of this framework, we perform different experiments
   in real time and offline simulation.
----
-MARKER: 2018_rs_rrm_not_wadac_2019539
-TYPE: inproceedings
-AUTHOR: Sridharan, R., Maiti, R. R., Tippenhauer, N. O.
-TITLE: 'WADAC: Privacy-Preserving Anomaly Detection and Attack Classification on Wireless
-  Traffic'
-CTITLE: ACM Conf. on Security and Privacy in Wireless and Mobile Networks
-YEAR: '2018'
-VOLUME: '11'
-PAGE: (12 pages)
-DOI: 10.1145/3212480.3212495
-TOPKEY: telescope-3days-conficker
-GEOLOC: Stockholm, SE
-ABS: In this work, we address the problem of detecting application-layer attacks on
-  nearby wireless devices. In particular, we assume that the detection scheme is limited
-  to link-layer traffic (either because schemes such as WPA2 are used, and the key
-  is unknown, or to preserve user privacy). Such a setting allows us to detect attacks
-  in nearby third party networks that we are not associated with, unlike related work
-  that relies on wireline taps to observe traffic. We propose and implement a framework
-  consisting of an anomaly detection module (unsupervised), and an attack classification
-  module that identifies a known set of attacks (supervised). We evaluate our prototype
-  with experiments including a range of attacks. For example, we demonstrate that
-  the anomaly detector detects Mirai C&C traffic by an IoT device (without training
-  with Mirai). In addition, we detect that the Mirai infected device is attacking
-  other devices with 96.1% accuracy. We show that our prototype can be applied to
-  different wireless standards (such as 802.11 (WiFi) and 802.15 (Zigbee)) and detect
-  attacks with an accuracy of 96%-99%.
-URL: http://dx.doi.org/10.1145/3212480.3212495
 ---
 MARKER: 2018_rz_jc_xt_ql_xh_2019540
 TYPE: inproceedings
@@ -23286,29 +23000,6 @@ ABS: Distributed denial of service (DDoS) attacks pose a severe threat to extens
   detection accuracy. Such a generalized detection system would be useful to researchers
   for validating and comparing various information theory metrics based solutions.
 ---
-MARKER: 2018_tmt_cqn_kvn_2019605
-TYPE: inproceedings
-AUTHOR: Thang, T- M., Nguyen, C-Q., Nguyen, K-V.
-TITLE: Synflood Spoofed Source DDoS Attack Defense Based on Packet ID Anomaly Detection
-  with Bloom Filter
-CTITLE: Asian Conf. on Defense Technology (ACDT)
-YEAR: '2018'
-VOLUME: '5'
-PAGE: ''
-DOI: 10.1109/ACDT.2018.8593121
-URL: https://ieeexplore.ieee.org/abstract/document/8593121
-TOPKEY: ddos-2007
-GEOLOC: Hanoi, VN
-ABS: TCP SYN Flood is one of the most dangerous types of DDoS attacks. To perform
-  the attack effectively, attackers attempt to send overwhelmed SYN packets with spoofed
-  source, especially, information fields of each packet is spoofed as normal packet.
-  Then it is very difficult to distinguish spoofed packets if we observe individual
-  packet. In the previous study, we proposed method PIDAD (Packet Identification Anomaly
-  Detection) to detect spoofed packets. However, this method has some limitations
-  which is in need of further research and completion. In this study, we propose another
-  method using multiple layers of Bloom Filter to address the limitations of previous
-  our propose.
----
 MARKER: 2018_ju_ps_mm_jp_mk_jh_2019606
 TYPE: inproceedings
 AUTHOR: Uramova, J., Sege, P., Moravik, M., Papan, J., Kontsek, M., Hrabovsky, J.
@@ -23486,30 +23177,6 @@ ABS: Traffic measurement and monitoring is crucial for network applications, suc
   in terms of detection accuracy and storage utilization.
 URL: http://dx.doi.org/10.1049/cje.2018.08.009
 ---
-MARKER: 2018_nv_ht_gmk_thailand_2019702
-TYPE: inproceedings
-AUTHOR: Vichaidis, N., Tsunoda, H., Keeni, G. M.
-TITLE: Analyzing darknet TCP traffic stability at different timescales
-CTITLE: Intl Conf. on Information Networking (ICOIN)
-YEAR: '2018'
-PAGE: (6 pages)
-DOI: 10.1109/ICOIN.2018.8343098
-TOPKEY: telescope-generic
-GEOLOC: Chiang Mai, TL
-ABS: Darknet traffic analysis is a possible choice for observing global trends in
-  security threats and analyzing the behavior of Internet attacks. We previously analyzed
-  darknet traffic and evaluated the day to day stability. The investigation of traffic
-  data identifies several anomalous events with drastic changes in instability mainly
-  caused by distributed denial-of-service attacks, misconfigurations, scans, and backscatters.
-  Our previous proposal is not adapted to detect small-scale events, where a small
-  number of attackers send packets to the destination targets in a short duration.
-  We analyze herein the cause of instabilities in transmission control protocol traffic
-  at different timescales by investigating the number of senders to each destination
-  port and the duration of the attack to classify the characteristics of diverse events.
-  Some large-scale events can be detected from the instabilities in daily traffic,
-  while some small-scale events can be detected from the instabilities of hourly traffic.
-URL: http://dx.doi.org/10.1109/ICOIN.2018.8343098
----
 MARKER: 2019_jhh_international_journal_2019705
 TYPE: article
 AUTHOR: Huh, J. H.
@@ -23540,38 +23207,6 @@ ABS: With the current global food production capability, it is not difficult to 
   classified using typical communications protocols. The packet headers were subjected
   to analysis and the results were stored in database for later applications.
 ---
-MARKER: 2018_ab_mp_rb_sd_2019706
-TYPE: inproceedings
-AUTHOR: Boukhtouta, A., Pourzandi, M., Brunner, R., Dault, S.
-TITLE: 'Fingerprinting Crowd Events in Content Delivery Networks: A Semi-supervised
-  Methodology'
-CTITLE: IFIP Annual Conf. on Data and Applications Security and Privacy
-YEAR: '2018'
-PAGE: (18 pages)
-DOI: 10.1007/978-3-319-95729-6_20
-TOPKEY: ddos-2007
-GEOLOC: Montreal, CA
-ABS: Crowd events or flash crowds are meant to be a voluminous access to media or
-  web assets due to a popular event. Even though the crowd event accesses are benign,
-  the problem of distinguishing them from Distributed Denial of Service (DDoS) attacks
-  is difficult by nature as both events look alike. In contrast to the rich literature
-  about how to profile and detect DDoS attack, the problem of distinguishing the benign
-  crowd events from DDoS attacks has not received much interest. In this work, we
-  propose a new approach for profiling crowd events and segregating them from normal
-  accesses. We use a first selection based on semi-supervised approach to segregate
-  between normal events and crowd events using the number of requests. We use a density
-  based clustering, namely, DBSCAN, to label patterns obtained from a time series.
-  We then use a second more refined selection using the resulted clusters to classify
-  the crowd events. To this end, we build a XGBoost classifier to detect crowd events
-  with a high detection rate on the training dataset (99%). We present our initial
-  results of crowd events fingerprinting using 8 days log data collected from a major
-  Content Delivery Network (CDN) as a driving test. We further prove the validity
-  of our approach by applying our models on unseen data, where abrupt changes in the
-  number of accesses are detected. We show how our models can detect the crowd event
-  with high accuracy. We believe that this approach can further be used in similar
-  CDN to detect crowd events.
-URL: http://dx.doi.org/10.1007/978-3-319-95729-6_20
----
 MARKER: 2018_hq_hz_yl_zz_2019709
 TYPE: inproceedings
 AUTHOR: Qiu, H., Zhu, H., Li, Y., Zeng, Z.
@@ -23583,7 +23218,7 @@ VOLUME: '4'
 PAGE: (6 pages)
 DOI: 10.1109/CompComm.2018.8780611
 URL: https://ieeexplore.ieee.org/abstract/document/8780611
-TOPKEY: topology-generic
+TOPKEY: topology-as-relationships, topology-as-relationships-geo
 GEOLOC: Chengdu, CN
 ABS: Cascading failures are a severe threat to inter-domain routing system, while
   little has been done to detect and report impacts. To address the problem, we analyze
@@ -23600,37 +23235,6 @@ ABS: Cascading failures are a severe threat to inter-domain routing system, whil
   received by nodes as the metric, the maximum relative error is 1.69 and the average
   one is 0.92. As our prediction is a little large than reality, the false negative
   rate of FD-SP is low.
----
-MARKER: 2018_sb_sb_ia_2019710
-TYPE: article
-AUTHOR: Bhatia, S., Behal, S., Ahmed, I.
-TITLE: 'Distributed Denial of Service Attacks and Defense Mechanisms: Current Landscape
-  and Future Directions'
-SERIAL: Versatile Cybersecurity
-YEAR: '2018'
-VOLUME: ''
-PAGE: (43 pages)
-DOI: 10.1007/978-3-319-97643-3_3
-URL: https://link.springer.com/chapter/10.1007/978-3-319-97643-3_3
-TOPKEY: ddos-2007
-GEOLOC: Fairfield, US; Punjab, IN; New Orleans, US
-ABS: Societal dependence on Information and Communication Technology (ICT) over the
-  past two decades has brought with it an increased vulnerability to a large variety
-  of cyber-attacks. One such attack is a Distributed Denial-of-Service (DDoS) attack
-  which harnesses the power of a larger number of compromised and geographically distributed
-  computers and other networked machines to attack information-providing services,
-  often resulting in significant downtime and thereby causing a denial-of-service
-  to legitimate clients. The size, frequency, and sophistication of such attacks have
-  exponentially risen over the past decade. In order to develop a better understanding
-  of these attacks and defense system against this ever-growing threat, it is essential
-  to understand their modus operandi, latest trends and other most widely-used tactics.
-  Consequently, the study of DDoS attacks and techniques to accurately and reliably
-  detect and mitigate their impact is an important area of research. This chapter
-  largely focuses on the current landscape of DDoS attack detection and defense mechanisms
-  and provides detailed information about the latest modus operandi of various network
-  and application layer DDoS attacks, and presents an extended taxonomy to accommodate
-  the novel attack types. In addition, it provides directions for future research
-  in DDoS attack detection and mitigation.
 ---
 MARKER: 2018_rm_ar_akg_2019711
 TYPE: inproceedings
@@ -23656,68 +23260,6 @@ ABS: Cloud Security issue is one of the biggest challenges that hampers the grow
   help in catching malicious packets while packets transmissions between the virtual
   machines server and virtual machine clients through virtual intermediate routers
   with the unique patch of probability and round trip time in hop count filter method.
----
-MARKER: 2018_an_am_pdy_vk_2019712
-TYPE: article
-AUTHOR: Nisioti, A., Mylonas, A., Yoo, P. D., Katos, V.
-TITLE: 'From Intrusion Detection to Attacker Attribution: A Comprehensive Survey of
-  Unsupervised Methods'
-SERIAL: 'IEEE Communications Surveys and Tutorials '
-YEAR: '2018'
-VOLUME: '20'
-PAGE: (20 pages)
-DOI: 10.1109/COMST.2018.2854724
-URL: https://ieeexplore.ieee.org/abstract/document/8410366
-TOPKEY: passive-2016
-GEOLOC: Poole, UK
-ABS: Over the last five years there has been an increase in the frequency and diversity
-  of network attacks. This holds true, as more and more organizations admit compromises
-  on a daily basis. Many misuse and anomaly based intrusion detection systems (IDSs)
-  that rely on either signatures, supervised or statistical methods have been proposed
-  in the literature, but their trustworthiness is debatable. Moreover, as this paper
-  uncovers, the current IDSs are based on obsolete attack classes that do not reflect
-  the current attack trends. For these reasons, this paper provides a comprehensive
-  overview of unsupervised and hybrid methods for intrusion detection, discussing
-  their potential in the domain. We also present and highlight the importance of feature
-  engineering techniques that have been proposed for intrusion detection. Furthermore,
-  we discuss that current IDSs should evolve from simple detection to correlation
-  and attribution. We descant how IDS data could be used to reconstruct and correlate
-  attacks to identify attackers, with the use of advanced data analytics techniques.
-  Finally, we argue how the present IDS attack classes can be extended to match the
-  modern attacks and propose three new classes regarding the outgoing network communication.
----
-MARKER: 2018_mh_nn_ebh_pc_201913
-TYPE: inproceedings
-AUTHOR: Husak, M., Neshenko, N., Bou-Harb, E., Celeda, P.
-TITLE: Assessing Internet-wide Cyber Situational Awareness of Critical Sectors
-CTITLE: Intl Conf. on Availability, Reliability and Security
-YEAR: '2018'
-VOLUME: '13'
-PAGE: (6 pages
-DOI: 10.1145/3230833.3230837
-URL: https://dl.acm.org/citation.cfm?id=3230837
-TOPKEY: telescope-generic
-GEOLOC: Boca Raton, US
-ABS: In this short paper, we take a first step towards empirically assessing Internet-wide
-  malicious activities generated from and targeted towards Internet-scale business
-  sectors (i.e., financial, health, education, etc.) and critical infrastructure (i.e.,
-  utilities, manufacturing, government, etc.). Facilitated by an innovative and a
-  collaborative large-scale effort, we have conducted discussions with numerous Internet
-  entities to obtain rare and private information related to allocated IP blocks pertaining
-  to the aforementioned sectors and critical infrastructure. To this end, we employ
-  such information to attribute Internet-scale maliciousness to such sectors and realms,
-  in an attempt to provide an in-depth analysis of the global cyber situational posture.
-  We draw upon close to 16.8 TB of darknet data to infer probing activities (typically
-  generated by malicious/infected hosts) and DDoS backscatter, from which we distill
-  IP addresses of victims. By executing week-long measurements, we observed an alarming
-  number of more than 11,000 probing machines and 300 DDoS attack victims hosted by
-  critical sectors. We also generate rare insights related to the maliciousness of
-  various business sectors, including financial, which typically do not report their
-  hosted and targeted illicit activities for reputation-preservation purposes. While
-  we treat the obtained results with strict confidence due to obvious sensitivity
-  reasons, we postulate that such generated cyber threat intelligence could be shared
-  with sector/critical infrastructure operators, backbone networks and Internet service
-  providers to contribute to the overall threat remediation objective.
 ---
 MARKER: 2018_pvr_bmp_2019_705
 TYPE: inproceedings
@@ -23763,56 +23305,6 @@ ABS: Vulnerable IoT devices are powerful platforms for building botnets that cau
   activity are becoming more sophisticated. Compared to its predecessor, we find Mirai
   uses more resilient hosting and control infrastructures, and supports more effective
   attacks.
----
-MARKER: 2018_paar_acd_2019717
-TYPE: article
-AUTHOR: Resende, P. A. A., Drummond, A. C.
-TITLE: A Survey of Random Forest Based Methods for Intrusion Detection Systems
-SERIAL: ACM Computing Surveys (CSUR)
-YEAR: '2018'
-VOLUME: '51'
-PAGE: (36 pages)
-DOI: 10.1145/3178582
-URL: https://dl.acm.org/citation.cfm?id=3178582
-TOPKEY: telescope-3days-conficker
-GEOLOC: New York, NY, US
-ABS: Over the past decades, researchers have been proposing different Intrusion Detection
-  approaches to deal with the increasing number and complexity of threats for computer
-  systems. In this context, Random Forest models have been providing a notable performance
-  on their applications in the realm of the behaviour-based Intrusion Detection Systems.
-  Specificities of the Random Forest model are used to provide classification, feature
-  selection, and proximity metrics. This work provides a comprehensive review of the
-  general basic concepts related to Intrusion Detection Systems, including taxonomies,
-  attacks, data collection, modelling, evaluation metrics, and commonly used methods.
-  It also provides a survey of Random Forest based methods applied in this context,
-  considering the particularities involved in these models. Finally, some open questions
-  and challenges are posed combined with possible directions to deal with them, which
-  may guide future works on the area.
----
-MARKER: 2019_sw_tm_jg_2019718
-TYPE: inproceedings
-AUTHOR: Wiedenmann, S., Mundt, T., Goltz, J.
-TITLE: Designing and Implementing a Benchmark Collection for Attack Simulation in
-  Field bus Systems
-CTITLE: IEEE Conf. on Application, Information and Network Security (AINS)
-YEAR: '2018'
-VOLUME: ''
-PAGE: (9 pages)
-DOI: 10.1109/AINS.2018.8631474
-URL: https://ieeexplore.ieee.org/abstract/document/8631474
-TOPKEY: ddos-2007
-GEOLOC: Langkawi, ML
-ABS: Field bus systems are used in modern day Building and Industrial Automation Systems
-  to interconnect devices and machines. Due to their common lack of fundamental security
-  features such as encryption or authentication and their high prevalence field bus
-  systems are highly vulnerable to attacks. In parallel research we are investigating
-  how these field buses can be secured. In order to benchmark those security measures
-  we are defining a series of test-data sets simulating attacks. Additionally we describe
-  a formal mechanism to generate those data sets since real world attack data sets
-  are not easily attainable. Therefor we depicted what network traffic is caused by
-  various attack-types and we investigate short and long term cycles within field
-  bus communications. We publicly provide our results and invite other researchers
-  to make use of them and contribute to the developing benchmark collection.
 ---
 MARKER: 2018_ksh_wes_2019719
 TYPE: inproceedings
@@ -23990,7 +23482,7 @@ PUBLISH: University of Southern California (USC)
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~hangguo/papers/Guo18c.pdf
-TOPKEY: passive-ipv6day-and-ipv6launch
+TOPKEY: passive-ipv6day-and-ipv6launch, outeviews-prefix2as
 GEOLOC: California, US
 ABS: 'Distributed Denial-of-Service (DDoS) attacks launched from compromised Internet-of-Things
   (IoT) devices have shown how vulnerable the Internet is to large scale DDoS attacks.
@@ -24190,7 +23682,7 @@ PUBLISH: 'University of Southern California / Information Sciences Institute '
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~johnh/PAPERS/Heidemann18b.pdf
-TOPKEY: topology-generic
+TOPKEY: topology-ark-ipv4-prefix-probing
 GEOLOC: California, US
 ABS: 'Internet reliability has many potential weaknesses: fiber rights-of-way at the
   physical layer, exchange-point congestion from DDOS at the network layer, settlement
@@ -24210,26 +23702,6 @@ ABS: 'Internet reliability has many potential weaknesses: fiber rights-of-way at
   precision (0.72 to 1.0) for blocks that respond. We also show that our algorithms
   generalize to identify correlations in anycast catchments and routing.'
 ---
-MARKER: 2018_dc_dr_journal_2019806
-TYPE: article
-AUTHOR: Cicalese, D., Rossi, D.
-TITLE: A longitudinal study of IP Anycast
-SERIAL: ACM SIGCOMM Computer Communication Review
-YEAR: '2018'
-VOLUME: '48'
-PAGE: (9 pages)
-DOI: 10.1145/3211852.3211855
-URL: https://dl.acm.org/citation.cfm?id=3211855
-TOPKEY: topology-generic
-GEOLOC: New York, US
-ABS: IP anycast is a commonly used technique to share the load of a variety of global
-  services. For more than one year, leveraging a lightweight technique for IP anycast
-  detection, enumeration and geolocation, we perform regular IP monthly censuses.
-  This paper provides a brief longitudinal study of the anycast ecosystem, and we
-  additionally make all our datasets (raw measurements from PlanetLab and RIPE Atlas),
-  results (monthly geolocated anycast replicas for all IP/24) and code available to
-  the community.
----
 MARKER: 2018_rb_rd_dp_jpr_2019808
 TYPE: inproceedings
 AUTHOR: Beverly, R., Duraiajan, R., Plonka, D., Roherer, J. P.
@@ -24239,7 +23711,7 @@ YEAR: '2018'
 PAGE: (14 pages)
 DOI: 10.1145/3278532.3278559
 URL: https://dl.acm.org/citation.cfm?id=3278559
-TOPKEY: topology-ark-itdk, topology-ark-ipv6-traceroute, topology-ark-ipv4-traceroute
+TOPKEY: topology-ark-dnsnames, topology-ark-ipv6-traceroute
 GEOLOC: New York, NY, US
 ABS: Existing methods for active topology discovery within the IPv6 Internet largely
   mirror those of IPv4. In light of the large and sparsely populated address space,
@@ -25287,8 +24759,8 @@ YEAR: '2019'
 VOLUME: '0'
 PAGE: (24 pages)
 DOI: https://doi.org/10.1145/3342286
-URL: https://www.cse.unr.edu/~mgunes/papers/19-TOMPECS-InternetPaths.pdf
-TOPKEY: topology-as-organization
+URL: https://dl.acm.org/doi/pdf/10.1145/3342286
+TOPKEY: topology-as-organization, bgpstream
 GEOLOC: Nevada, US
 ABS: Interactive and multimedia applications depend on the stability of end-to-end
   paths for predictable performance and good quality of service. On the other hand,
@@ -28609,7 +28081,7 @@ YEAR: 2018-05
 VOLUME: 7 (3)
 PAGE: 141-151
 DOI: 10.1049/iet-net.2017.0115
-TOPKEY: topology-skitter-ipv4
+TOPKEY: topology-skitter-ipv4, topology-generic
 GEOLOC: Tamil Nadu, IN
 ABS: Although cybercrime and cyber threats are increasing significantly, yet prevention
   and security of the critical infrastructure are still far from perfect. The internet
@@ -28836,7 +28308,7 @@ SERIAL: ACM J. Exp. Algorithms
 VOLUME: 25 (1)
 ARTICLE: '1.1'
 YEAR: 2020-03
-TOPKEY: passive-generic
+TOPKEY: passive-2014, passive-realtime
 DOI: 10.1145/3339504
 GEOLOC: Cambridge, MA, US
 ABS: We introduce the adaptive cuckoo filter (ACF), a data structure for approximate
@@ -30541,38 +30013,6 @@ ABS: 'Quantifying the benefits of content cache deployments, both in terms of la
   work, we make the entire dataset available to the community.'
 URL: http://dx.doi.org/10.1109/MCOM.2018.1800132
 ---
-MARKER: 2018_f_pacheco_icst
-TYPE: article
-AUTHOR: Pacheco, F., Exposito, E., Gineste, M., Baudoin, C., Aguilar, J.
-TITLE: 'Towards the deployment of machine learning solutions in network traffic classification:
-  A systematic survey'
-SERIAL: 'IEEE Comm. Surveys and Tutorials '
-YEAR: 2018-11
-VOLUME: 21 (2)
-PAGE: 1988-2014
-DOI: 10.1109/COMST.2018.2883147
-URL: https://ieeexplore.ieee.org/abstract/document/8543584
-TOPKEY: passive-generic
-GEOLOC: Anglet, FR; Anglet, FR; Toulouse, FR; Toulouse, FR; Merida, VE
-ABS: Traffic analysis is a compound of strategies intended to find relationships,
-  patterns, anomalies, and misconfigurations, among others things, in Internet traffic.
-  In particular, traffic classification is a subgroup of strategies in this field
-  that aims at identifying the applications name or type of Internet traffic. Nowadays,
-  traffic classification has become a challenging task due to the rise of new technologies,
-  such as traffic encryption and encapsulation, which decrease the performance of
-  classical traffic classification strategies. Machine learning (ML) gains interest
-  as a new direction in this field, showing signs of future success, such as knowledge
-  extraction from encrypted traffic, and more accurate Quality of Service management.
-  ML is fast becoming a key tool to build traffic classification solutions in real
-  network traffic scenarios; in this sense, the purpose of this investigation is to
-  explore the elements that allow this technique to work in the traffic classification
-  field. Therefore, a systematic review is introduced based on the steps to achieve
-  traffic classification by using ML techniques. The main aim is to understand and
-  to identify the procedures followed by the existing works to achieve their goals.
-  As a result, this survey paper finds a set of trends derived from the analysis performed
-  on this domain; in this manner, the authors expect to outline future directions
-  for ML-based traffic classification.
----
 MARKER: 2018_a_nur_phdthesis_ulouisiana
 TYPE: phdthesis
 AUTHOR: Nur, A.Y.
@@ -30582,7 +30022,7 @@ PUBLISH: Univ. of Louisiana at Lafayette (ProQuest Publ.)
 PAGE: (171 pages)
 YEAR: 2018-11
 URL: https://search.proquest.com/openview/a7f3f0de94f2441532fbf756c7dcf779/
-TOPKEY: passive-2016, topology-as-relationships
+TOPKEY: routeviews-prefix2as, topology-as-relationships, topology-ark-ipv4-traceroute
 GEOLOC: Lafayette, US
 ABS: 'The global communication infrastructure of the Internet is formed by tens of
   thousands of Autonomous Systems connecting various organizations and individuals
@@ -30697,7 +30137,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 YEAR: 2018-10
 PAGE: 265-278
 DOI: 10.1145/3278532.3278556
-TOPKEY: topology-as-relationships, routeviews_prefix2as
+TOPKEY: topology-as-relationships, routeviews_prefix2as, iffinder
 GEOLOC: Forth, GR
 ABS: Internet eXchange Points (IXPs) are Internet hubs that mainly provide the switching
   infrastructure to interconnect networks and exchange traffic. While the initial
@@ -30796,7 +30236,7 @@ CTITLE: Internet Measurement Conf. (IMC)
 YEAR: 2018-10
 PAGE: 279-292
 DOI: 10.1145/3278532.3278557
-TOPKEY: topology-as-rank, topology-as-relationships
+TOPKEY: topology-as-relationships
 GEOLOC: Saarbruecken, DE
 ABS: BGP communities are a mechanism widely used by operators to manage policy, mitigate
   attacks, and engineer traffic; e.g., to drop unwanted traffic, filter announcements,
@@ -31039,7 +30479,7 @@ PUBLISH: Anglia Ruskin University
 PAGE: (407 pages)
 YEAR: 2018-10
 URL: https://arro.anglia.ac.uk/703788/
-TOPKEY: topology-generic, topology-as-relationships, topology-as-rank, topology-skitter-aslinks
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Cambridge, UK
 ABS: Accessible and affordable access to the Internet is crucial for socio-economic
   progress in developing countries and reducing Digital Divide. The disparity in mobile
@@ -31078,7 +30518,7 @@ YEAR: 2018-10
 VOLUME: '30'
 PAGE: (9 pages)
 DOI: 10.1109/ITC30.2018.00034
-TOPKEY: topology-generic
+TOPKEY: topology-generic, midar
 GEOLOC: Oslo, NO
 ABS: DiffServ was designed to implement service provider quality of service (QoS)
   policies, where ingress and egress routers change the DiffServ Code Point (DSCP)
@@ -31178,82 +30618,6 @@ ABS: Caching popular content locally has been shown to be an efficient way for i
   proposed method through rigorous analysis, and we verify the benefits to ISPs by
   carrying out extensive experiments.
 URL: http://dx.doi.org/10.1109/TNSE.2018.2871021
----
-MARKER: 2018_z_zhang_dais_ita_2852
-TYPE: misc
-AUTHOR: Zhang, Z., Qin, Q., Ma, L., Poularakis, K., Le, F., Leung, K.K., Kompella,
-  S., Tassiulas, L.
-TITLE: Routing performance in distributed SDN under synchronization constraint
-PUBLISH: dais-ita.org
-YEAR: 2018-09
-PAGE: (18 pages)
-URL: http://sl.dais-ita.org/science-library/paper/doc-2852
-TOPKEY: passive-generic
-GEOLOC: London, UK
-ABS: Distributed software-defined networking (SDN), consisting of multiple inter-connected
-  network domains, each managed by one SDN controller, is an emerging networking architecture
-  that offers balanced centralized control and distributed operations. In this work,
-  we study such network architecture from both experimental and analytical perspectives.
-  Specifically, we implement a wireless SDN multi-controller system, where the controllers
-  communicate to each other and to data plane-devices through WiFi multi-hop links.
-  We measure the corresponding traffic delay and overheads. The results reveal the
-  sensitivity of delay to the location of controllers and the magnitude of inter-controller
-  and controller-node overheads. Such experiments highlight the feasibility of distributed
-  SDN and the overheads of their operations including the overheads due to synchronizations.
-  Therefore, it is challenging to achieve full status synchronizations among controllers
-  in a real system. In this regard, we analyze and quantify the performance enhancement
-  of distributed SDN architectures, which is influenced by intra-/inter-domain synchronization
-  levels and network structural properties. Based on a generic network model, we establish
-  analytical methods for performance estimation under four canonical inter-domain
-  synchronization scenarios. Specifically, we first derive an asymptotic expression
-  to quantify how dominating structural and synchronization-related parameters affect
-  the performance metric. We then provide performance analytics for an important family
-  of networks, where all links are of equal preference for path constructions. Finally,
-  we establish fine-grained performance metric expressions for networks with dynamically
-  adjusted link preferences. Our theoretical results reveal how network performance
-  is related to synchronization levels and intra-/inter-domain connections, the accuracy
-  of which is confirmed by simulations based on both real and synthetic networks.
-  To the best of our knowledge, this is the first work quantifying the performance
-  of distributed SDN analytically, which provides fundamental guidance for future
-  SDN protocol designs and performance estimation
----
-MARKER: 2018_a_gupta_msc_univ_calgary
-TYPE: mastersthesis
-AUTHOR: Gupta, A.
-TITLE: Distributed Denial of Service attack detection using a machine learning approach
-PUBLISH: Univ. of Calgary
-PAGE: (81 pages)
-YEAR: 2018-09
-URL: https://prism.ucalgary.ca/handle/1880/107615
-TOPKEY: ddos-2007
-GEOLOC: Calgary, CA
-ABS: A distributed denial of service (DDoS) attack is a type of cyber-attack in which
-  the perpetrator aims to deny the services on a network/server by inundating the
-  traffic on the network/server by superfluous requests which renders it incapable
-  to serve requests from legitimate users. According to Corero Network Security (A
-  DDoS protection and mitigation provider), in Q3 2017, organizations around the world
-  experienced an average of 237 DDoS attack attempts per month, which averages to
-  8 DDoS attacks every day. This was a 35% increase over Q2 that year and a staggering
-  91% increase over Q1. According to another research by Incapsula, a DDoS attack
-  costs an average of $40,000 per hour to businesses. There are commercially available
-  software which detect and mitigate a DDoS attack, but the high cost of these software
-  makes them hard to afford for small and mid-scale businesses. The proposed work
-  aims to fill this gap by providing real time open-source robust web application
-  for DDoS attack prediction which can be used by small to mid-scale industries to
-  keep their networks and servers secure from malicious DDoS attacks. A Machine Learning
-  approach is used to employ a window-based technique to predict a DDoS attack in
-  a network with a maximum accuracy of 99.83%, if the recommended combination of feature
-  selection and classification algorithm is chosen. The choice of both feature selection
-  and classification algorithm is left to the user. One of the feature selection algorithms
-  is the novel Weighted Ranked Feature Selection(WRFS) algorithm which performs better
-  than other baseline approaches in terms of accuracy of detection and the overhead
-  to build the model. Once the selection is made, the web application connects to
-  the socket and starts capturing and classifying real-time network traffic. After
-  the capture is stopped, information about attack instances (if any), number of attack
-  packets, confusion matrix is rendered to the client using dynamic charts. The trained
-  model used for classifying real-time packets is optimized and uses only enough attributes
-  from the incoming packet which are necessary to successfully predict the class of
-  that packet with high accuracy.
 ---
 MARKER: 2018_m_petkovic_phd_univ_novi_sad
 TYPE: phdthesis
@@ -31603,32 +30967,6 @@ ABS: Large-scale Internet attacks are pervasive. A broad spectrum of actors from
   ultimately identifies fundamental structural weak-points leverageable for defense,
   resulting in dismantling botnets, cleaning up ad networks, and protecting users.
 ---
-MARKER: 2018_k_kostas_msc_univ_essex
-TYPE: mastersthesis
-AUTHOR: Kostas, K.
-TITLE: Anomaly detection in networks using machine learning
-PUBLISH: Univ. of Essex
-PAGE: (71 pages)
-YEAR: 2018-08
-URL: 
-  https://www.researchgate.net/publication/328512658_Anomaly_Detection_in_Networks_Using_Machine_Learning
-TOPKEY: passive-oc48
-GEOLOC: Colchester, UK
-ABS: 'Every day millions of people and hundreds of thousands of institutions communicate
-  with each other over the Internet. In the past two decades, while the number of
-  people using the Internet has increased very fast. Parallel to these developments,
-  the number of attacks made on the Internet is increasing day by day. Although signature-based
-  methods are used to prevent these attacks, they are abortive against zero-day attacks.
-  On the other hand, the Anomaly-based approach is an alternative solution to the
-  network attacks and has the ability to detect zero-day attacks as well. In this
-  study, it is aimed to detect network anomaly using machine learning methods. In
-  this context, the CICIDS2017 has been used as dataset because of its up-todatedness,
-  and wide attack diversity. On this dataset, feature selection was made by using
-  the Random Forest Regressor algorithm. Seven different machine learning algorithms
-  have been used in the application step and achieved high performance. Machine learning
-  algorithms and success rates are as follows: Naive Bayes 86%, QDA 86%, Random Forest
-  94%, ID3 95%, AdaBoost 94%, MLP 83%, and K Nearest Neighbours 97%'
----
 MARKER: 2019_c_chen_phd_carnegie_mellon_univ
 TYPE: phdthesis
 AUTHOR: Chen, C.
@@ -31681,7 +31019,7 @@ PUBLISH: Univ. of Nevada, Reno
 PAGE: (204 pages)
 YEAR: 2018-08
 URL: https://scholarworks.unr.edu/handle/11714/4537
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, bgpstream, topology-as-organization
 GEOLOC: Reno, NV, US
 ABS: Data has became one of the most valuable resources in todays world where we have
   greater digital presence. Large volumes of data are generated through various platforms
@@ -31879,38 +31217,6 @@ ABS: The Count-Min sketch is an important and well-studied data summarization me
   as a way to study the error and properties of existing estimators.
 URL: http://dx.doi.org/10.1145/3219819.3219975
 ---
-MARKER: 2018_i_sharafaldin_icissp_172
-TYPE: inproceedings
-AUTHOR: Sharafaldin, I., Lashkari, A.H., Ghorbani, A.A.
-TITLE: A detailed analysis of the CICIDS2017 data set
-CTITLE: Intl Conf. on Information Systems Security and Privacy
-YEAR: 2018-07
-PAGE: 172-188
-DOI: 10.1007/978-3-030-25109-3_9
-TOPKEY: passive-2016, ddos-2007, passive-oc48
-GEOLOC: Fredericton, CA
-ABS: 'The likelihood of suffering damage from an attack is obvious with the exponential
-  growth in the size of computer networks and the internet. Meanwhile, intrusion detection
-  systems (IDSs) and intrusion prevention systems (IPSs) are one of the most important
-  defensive tools against the ever more sophisticated and ever-growing frequency of
-  network attacks. Anomaly-based research in intrusion detection systems suffers from
-  inaccurate deployment, analysis and evaluation due to the lack of an adequate dataset.
-  A number of datasets such as DARPA98, KDD99, ISC2012, and ADFA13 have been used
-  by the researchers to evaluate the performance of their proposed intrusion detection
-  and intrusion prevention approaches. Based on our study of 16 datasets since 1998,
-  many are out of date and unreliable. There are various shortcomings: lack of traffic
-  diversity and volume, incomplete attack coverage, anonymized pack et information
-  and payload which does not reflect the current reality, or they lack some feature
-  set and metadata. This paper focused on CICIDS2017 as the last updated IDS dataset
-  that contains benign and seven common attack network flows, which meets real world
-  criteria and is publicly available. It also evaluates the effectiveness of a set
-  of network traffic features and machine learning algorithms to indicate the best
-  set of features for detecting an attack category. Furthermore, we define the concept
-  of super features which are high quality derived features using a dimension reduction
-  algorithm. We show that the random forest algorithm as one of our best performing
-  algorithm can achieve better results with super features versus top selected features.'
-URL: http://dx.doi.org/10.1007/978-3-030-25109-3_9
----
 MARKER: 2018_j_lee_plos_one_e0200579
 TYPE: article
 AUTHOR: Lee, J., Choi, D., Sael, L
@@ -32048,7 +31354,7 @@ CTITLE: IEEE Conf. on Computer Communications
 YEAR: 2018-07
 PAGE: (6 pages)
 DOI: 10.1109/INFCOMW.2018.8406821
-TOPKEY: topology-ark-ipv4-aslinks
+TOPKEY: topology-as-relationships
 GEOLOC: Lynchburg, VI, US
 ABS: Hierarchically structured addresses have been proposed to improve the scalability
   of the Internet. However, the crucial component and primary challenge of hierarchical
@@ -32519,7 +31825,7 @@ CTITLE: Intl Wireless Comm. and Mobile Computing Conf. (IWCMC)
 YEAR: 2018-06
 PAGE: 518-523
 DOI: 10.1109/IWCMC.2018.8450465
-TOPKEY: telescope-real-time
+TOPKEY: telescope-generic
 GEOLOC: Tunis, TN; Tunis, TN; Boca Raton, FL, US; Dubai, AE; Tunis, TN
 ABS: Literature contributions have shown that information theoretic techniques can
   effectively detect various types of Distributed Denial of Service (DDoS) attacks.
@@ -32661,33 +31967,6 @@ ABS: High level goals such as bandwidth provisioning, accounting and network ano
   precision), hierarchical heavy hitters and superspreaders using less than 8KB or
   80KB of active memory respectively. Finally, Elastic Trie can identify changes in
   the network traffic patterns, symptomatic of Denial-of-Service attack events.
----
-MARKER: 2018_t_glass_vanderlan_arxiv_1805_06070
-TYPE: misc
-AUTHOR: Glass-Vanderlan, T.R., Iannacone, M.E., Vincent, M.S., Chen, Q., Bridges,
-  R.A.
-TITLE: A survey of Intrusion Detection Systems leveraging host data
-PUBLISH: arxiv.org
-YEAR: 2018-05
-PAGE: (40 pages)
-URL: https://arxiv.org/abs/1805.06070
-TOPKEY: passive-2016
-GEOLOC: Oak Ridge, TN, US
-ABS: This survey focuses on intrusion detection systems (IDS) that leverage host-based
-  data sources for detecting attacks on enterprise network. The host-based IDS (HIDS)
-  literature is organized by the input data source, presenting targeted sub-surveys
-  of HIDS research leveraging system logs, audit data, Windows Registry, file systems,
-  and program analysis. While system calls are generally included in audit data, several
-  publicly available system call datasets have spawned a flurry of IDS research on
-  this topic, which merits a separate section. Similarly, a section surveying algorithmic
-  developments that are applicable to HIDS but tested on network data sets is included,
-  as this is a large and growing area of applicable literature. To accommodate current
-  researchers, a supplementary section giving descriptions of publicly available datasets
-  is included, outlining their characteristics and shortcomings when used for IDS
-  evaluation. Related surveys are organized and described. All sections are accompanied
-  by tables concisely organizing the literature and datasets discussed. Finally, challenges,
-  trends, and broader observations are throughout the survey and in the conclusion
-  along with future directions of IDS research.
 ---
 MARKER: 2018_w_silva_information_9050125
 TYPE: article
@@ -32992,7 +32271,7 @@ PUBLISH: Colorado State Univ.
 PAGE: '107'
 YEAR: 2018-04
 URL: https://mountainscholar.org/handle/10217/189413
-TOPKEY: topology-as-relationships, topology-as-rank, telescope-generic
+TOPKEY: topology-as-relationships, topology-as-rank, topology-generic, topology-ark-itdk
 GEOLOC: Fort Collins, CO, US
 ABS: Today the Internet plays a critical role in our lives; we rely on it for communication,
   business, and more recently, smart home operations. Users expect high performance
@@ -33213,7 +32492,7 @@ YEAR: 2018-04
 VOLUME: '134'
 PAGE: 183-201
 DOI: 10.1016/j.comnet.2018.01.050
-TOPKEY: passive-2016
+TOPKEY: passive-2016, coralreef
 GEOLOC: Lancaster, UK; Glasgow, UK; Lancaster, UK
 ABS: Undoubtedly, the characterisation of network traffic flows is vitally important
   in understanding the dynamics of Internet traffic and in appropriately dimensioning
@@ -33271,33 +32550,6 @@ ABS: Lots of studies about the Internet Autonomous System (AS) level topology ha
   Internet.
 URL: http://dx.doi.org/10.1016/j.comcom.2018.01.008
 ---
-MARKER: 2018_m_siddula_ieee_access_111580
-TYPE: article
-AUTHOR: Siddula, M., Li, L., Li, Y.
-TITLE: An empirical study on the privacy preservation of online social networks
-SERIAL: IEEE Access
-YEAR: 2018-04
-VOLUME: '6'
-PAGE: 19912-19922
-DOI: 10.1109/ACCESS.2018.2822693
-TOPKEY: topology-as-relationships
-GEOLOC: Atlanta, GA, US; Harbin, CN; Atlanta GA, US
-ABS: Privacy in social networks is a large and growing concern in recent times. It
-  refers to various issues in a social network which include privacy of users, links,
-  and their attributes. Each privacy component of a social network is vast and consists
-  of various sub-problems. For example, user privacy includes multiple sub-problems
-  like user location privacy, and user personal information privacy. This survey on
-  privacy in social networks is intended to serve as an initial introduction and starting
-  step to all further researchers. We present various privacy preserving models and
-  methods include naive anonymization, perturbation, or building a complete alternative
-  network. We show the work done by multiple researchers in the past, where social
-  networks are stated as network graphs with users represented as nodes and friendship
-  between users represented as links between the nodes. We study ways and mechanisms
-  developed to protect these nodes and links in the network. We also review other
-  systems proposed, along with all the available databases for future researchers
-  in this area.
-URL: http://dx.doi.org/10.1109/ACCESS.2018.2822693
----
 MARKER: 2018_j_sonchack_acm_111584
 TYPE: inproceedings
 AUTHOR: Sonchack, John.; Aviv, A.; Keller, E.; Smith, J.
@@ -33306,7 +32558,7 @@ CTITLE: EuroSys Conf.
 YEAR: 2018-04
 PAGE: (16 pages)
 DOI: 10.1145/3190508.3190558
-TOPKEY: passive-stats
+TOPKEY: passive-2015
 GEOLOC: Philadelphia, PA, US; Annapolis, MD, US; Boulder, CO, US; Philadelphia, PA,
   US
 ABS: Fine-grained traffic flow records enable many powerful applications, especially
@@ -33455,7 +32707,7 @@ TITLE: 'DDoS attack detection system: Utilizing classification algorithms with A
 CTITLE: Conf. on New Technologies, Mobility and Security (NTMS)
 PAGE: (7 pages)
 YEAR: 2018-04
-TOPKEY: ddos-2007
+TOPKEY: passive-2015
 GEOLOC: Halifax, NS, CA
 ABS: 'Cloud computing is a model of configurable computing resources such as servers,
   networks, storages, applications, and services that are available from anywhere
@@ -33484,7 +32736,7 @@ PUBLISH: Naval Postgraduate School
 PAGE: (111 pages)
 YEAR: 2018-03
 URL: https://calhoun.nps.edu/handle/10945/58301
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-dnsnames
 GEOLOC: Monterey, CA, US
 ABS: Traceroute is a popular active probing technique used by researchers, operators,
   and adversaries to map the structure and connectivity of IP networks. However, traceroute
@@ -33783,36 +33035,6 @@ ABS: Traffic dynamics on single or isolated complex networks has been extensivel
   the coupling links.
 URL: http://dx.doi.org/10.1109/TCSII.2018.2808297
 ---
-MARKER: 2018_s_mastorakis_arxiv_1802_06970
-TYPE: misc
-AUTHOR: Mastorakis, S., Ahmed, T., Pisharath, J.
-TITLE: ISA-based trusted network functions and server applications in the untrusted
-  cloud
-PUBLISH: arxiv.org
-YEAR: 2018-02
-PAGE: (12 pages)
-URL: https://arxiv.org/abs/1802.06970
-TOPKEY: passive-2012
-GEOLOC: Los Angeles, CA, US
-ABS: Nowadays, enterprises widely deploy Network Functions (NFs) and server applications
-  in the cloud. However, processing of sensitive data and trusted execution cannot
-  be securely deployed in the untrusted cloud. Cloud providers themselves could accidentally
-  leak private information (e.g., due to misconfigurations) or rogue users could exploit
-  vulnerabilities of the providers systems to compromise execution integrity, posing
-  a threat to the confidentiality of internal enterprise and customer data. In this
-  paper, we identify (i) a number of NF and server application use-cases that trusted
-  execution can be applied to, (ii) the assets and impact of compromising the private
-  data and execution integrity of each use-case, and (iii) we leverage Intels Software
-  Guard Extensions (SGX) architecture to design Trusted Execution Environments (TEEs)
-  for cloud-based NFs and server applications. We combine SGX with the Data Plane
-  Development KIT (DPDK) to prototype and evaluate our TEEs for a number of application
-  scenarios (Layer 2 frame and Layer 3 packet processing for plain and encrypted traffic,
-  traffic load-balancing and back-end server processing). Our results indicate that
-  NFs involving plain traffic can achieve almost native performance (e.g., ~22 Million
-  Packets Per Second for Layer 3 forwarding for 64-byte frames), while NFs involving
-  encrypted traffic and server processing can still achieve competitive performance
-  (e.g., ~12 Million Packets Per Second for server processing for 64-byte frames).
----
 MARKER: 2018_l_he_tst_34_1
 TYPE: article
 AUTHOR: He, L., Jia, Y., Ren, G., Liu, Y.
@@ -33849,7 +33071,7 @@ YEAR: 2018-02
 VOLUME: IX
 PAGE: 243-257
 DOI: 10.1007/978-3-319-73198-8_21
-TOPKEY: topology-as-rank
+TOPKEY: topology-as-rank, bgpstream
 GEOLOC: Nevada, US
 ABS: In order to understand the Internet topology, it is important to analyze the
   underlying networks characteristics. Internet is enabled by independently operating
@@ -34038,78 +33260,6 @@ ABS: With exponential growth in the size of computer networks and developed appl
   categories.
 URL: http://dx.doi.org/10.5220/0006639801080116
 ---
-MARKER: 2018_b_al_musawi_phd_swinburne_univ
-TYPE: phdthesis
-AUTHOR: Al-Musawi, B.
-TITLE: Detecting BGP anomalies using recurrence quantification analysis
-PUBLISH: Swinburne Univ. of Technology
-PAGE: (224 pages)
-YEAR: 2018-01
-URL: 
-  https://researchbank.swinburne.edu.au/file/627b88ea-e0d7-477a-9b64-6317fea582f7/1/bahaa_al_musawi_thesis.pdf
-TOPKEY: topology-generic
-GEOLOC: Melbourne, AU
-ABS: The Border Gateway Protocol (BGP) is the Internets default inter-domain routing
-  protocol that manages connectivity among Autonomous Systems (ASes). BGP is an incremental
-  protocol where, after the initial transfer of a full routing table, BGP traffic
-  to peers should only reflect underlying topology or traffic engineering changes.
-  Unfortunately, most BGP traffic consists of announcements, updates and withdrawals
-  unrelated to any underlying network management goals. We define such BGP traffic
-  as unstable BGP traffic as long as it does not disseminate the business relationship
-  between Internet Service Providers (ISPs) or threaten BGP operation. We define ASes
-  that originate unstable BGP traffic as unstable ASes. BGP was developed at a time
-  when information provided by an AS was assumed to be accurate. Although many attempts
-  have been made to improve its security, BGP is still vulnerable to different types
-  of anomalous events. BGP anomalies are rare but can cause great damage when they
-  occur. The consequences of these anomalies can range from a single to thousands
-  of anomalous BGP updates. These consequences have threatened Internet performance
-  and reliability. Identifying BGP anomalies is a challenging task where BGP traffic
-  has been characterised to be noisy, voluminous, and complex. Furthermore, unstable
-  BGP traffic has the effect of masking anomalous traffic. Recent statistics and trends
-  of BGP anomalies show approximately 20% of BGP anomalies lasted less than 10 minutes
-  but were able to pollute 90% of the Internet in less than 2 minutes. These statistics
-  demonstrate the need for rapid detection of BGP anomalies. Early detection of BGP
-  anomalies enables network operators to protect their network from the worst consequence
-  of the anomalous behaviour and helps to improve Internet stability. Current approaches
-  tend to be slow and require substantial historical data. To overcome these challenges,
-  this thesis proposes a novel scheme to detect BGP anomalies based on Recurrence
-  Quantification Analysis (RQA). RQA is an advanced non-linear statistical analysis
-  technique using phase space concepts. RQA can identify BGP anomalies rapidly. RQA
-  can also identify abnormal hidden behaviour in the underlying BGP traffic that may
-  otherwise pass without observation. Using the past and emulated BGP anomalies, we
-  demonstrate that RQA can detect BGP anomalies within 62 seconds using 1200 seconds
-  of historical BGP updates.
----
-MARKER: 2018_m_dennis_msc_ryerson_univ
-TYPE: mastersthesis
-AUTHOR: Dennis, M.J.R.
-TITLE: Machine-learning and statistical methods for DDoS attack detection and defense
-  system in Software Defined Networks
-PUBLISH: Ryerson Univ.
-PAGE: (78 pages)
-YEAR: 2018-01
-URL: https://digital.library.ryerson.ca/islandora/object/RULA%3A7564
-TOPKEY: ddos-2007
-GEOLOC: Toronto, CA
-ABS: Distributed Denial of Service (DDoS) attack is a serious threat on todays Internet.
-  As the traffic across the Internet increases day by day, it is a challenge to distinguish
-  between legitimate and malicious traffic. This thesis proposes two different approaches
-  to build an efficient DDoS attack detection system in the Software Defined Networking
-  environment. SDN is the latest networking approach which implements centralized
-  controller, which is programmable. The central control and the programming capability
-  of the controller are used in this thesis to implement the detection and mitigation
-  mechanisms. In this thesis, two designed approaches, statistical approach and machine-learning
-  approach, are proposed for the DDoS detection. The statistical approach implements
-  entropy computation and flow statistics analysis. It uses the mean and standard
-  deviation of destination entropy, new flow arrival rate, packets per flow and flow
-  duration to compute various thresholds. These thresholds are then used to distinguish
-  normal and attack traffic. The machine learning approach uses Random Forest classifier
-  to detect the DDoS attack. We fine-tune the Random Forest algorithm to make it more
-  accurate in DDoS detection. In particular, we introduce the weighted voting instead
-  of the standard majority voting to improve the accuracy. Our result shows that the
-  proposed machine learning approach outperforms the statistical approach. Furthermore,
-  it also outperforms other machine-learning approach found in the literature
----
 MARKER: 2018_m_petkovic_csis_15_139
 TYPE: article
 AUTHOR: Petkovic, M., Basicevic, I., Kukolj, D., Popovic, M.
@@ -34137,60 +33287,6 @@ ABS: The detection of distributed denial of service (DDoS) attacks based on inte
   false-positive rate. As it is based on entropy, this combined method retains its
   generality and is capable of detecting various types of attack
 URL: http://dx.doi.org/10.2298/CSIS160905039P
----
-MARKER: 2018_y_lee_phd_univ_maryland
-TYPE: phdthesis
-AUTHOR: Lee, Y.
-TITLE: Improving accuracy and efficiency of network measurement by identifying homogenous
-  IPv4 addresses
-PUBLISH: Univ. of Maryland
-PAGE: (121 pages)
-YEAR: 2018-01
-DOI: 10.13016/M2B27PS8J
-TOPKEY: topology-ark-ipv4-traceroute
-GEOLOC: College Park, MD, US
-ABS: Active Internet measurement relies on responses to active probes such as ICMP
-  Echo Request or TCP SYN messages. Active Internet measurement is very useful in
-  that it enables researchers to measure the Internet without privileged data from
-  ISPs. Researchers use active measurement to study Internet topology, route dynamics
-  and link bandwidth by sending many packets through selected links, and measure RTTs
-  and reliability through probing many addresses. A fundamental challenge in active
-  measurement design is in allocating and limiting measurement traffic by carefully
-  choosing where measurements are sent and how many samples are taken per measurement.
-  It is important to minimize measurement loads because heavy measurement traffic
-  may appear malicious. If network operators consider measurement traffic as attacks,
-  then they can blacklist the sources of measurement traffic and thus affect the completeness
-  and accuracy of the measurement. Another challenge of active measurement is that
-  biases can occur due to no responses from or biased selection of destinations. Biases
-  can cause misleading conclusions and thus should be minimized. In this dissertation,
-  I develop a general approach to reducing measurement loads and biases of active
-  Internet measurement based on the insight that they can be reduced by letting Internet
-  addresses represent larger aggregates. I first develop a technique that identifies
-  and aggregates topologically proximate addresses. The technique called Hobbit compares
-  traceroute results to measure topological proximity. Hobbit deals with load-balanced
-  paths that can cause incorrect inferences of topological proximity by distinguishing
-  between route differences due to load balancing and due to distinct route entries.
-  Hobbit also makes a unique contribution that it can aggregate even discontiguous
-  addresses. This contribution is important in that fragmented allocations of IPv4
-  addresses are common in the Internet. I apply Hobbit to IPv4 addresses and identify
-  0.51M aggregates of addresses (i.e. Hobbit blocks) that contain 1.77M /24 blocks.
-  I evaluate the homogeneity of Hobbit blocks using RTTs and show that Hobbit blocks
-  are as homogeneous as /24s even though their sizes are generally larger than /24s.
-  I then demonstrate that Hobbit blocks improve the efficiency of Internet topology
-  mapping by comparing strategies that select destinations from Hobbit and /24 blocks.
-  I also quantify the efficiency improvement of latency estimation that can be achieved
-  by using Hobbit blocks. I show that Hobbit blocks tend to be stable over time and
-  analyze the measurement cost of Hobbit block generation. I finally demonstrate that
-  Hobbit blocks can improve the representativeness of network measurement. I develop
-  a methodology that measures the representativeness of measurement and show that
-  active Internet measurement may not be representative even if the entire IPv4 space
-  is probed. By using Hobbit blocks, I adapt weighting adjustment, which is a common
-  bias correction technique in surveys, to active Internet measurement. I evaluate
-  the weighting adjustment using various kinds of samples and show that the weighting
-  adjustment reduces biases in most cases. If Hobbit blocks are given, the weighting
-  adjustment incurs no measurement cost. I make Hobbit blocks publicly available and
-  update them every month for researchers who want to perform weighting adjustment
-  or to improve the efficiency of network measurement.
 ---
 MARKER: 2018_g_kontaxis_phd_columbia_univ
 TYPE: phdthesis
@@ -34282,35 +33378,6 @@ ABS: The importance of IXPs to interconnect different networks and exchange traf
   the additional role that IXPs play in the Internet ecosystem, not just in terms
   of interconnection, but also allowing players such as Netflix to deliver significant
   amounts of traffic.
----
-MARKER: 2018_z_fan_ijmpc_29_
-TYPE: article
-AUTHOR: Fan, Z., Tang, W.
-TITLE: Interplay of ICP and IXP over the Internet with power-law features
-SERIAL: Intl J. of Modern Physics C
-YEAR: 2018-01
-VOLUME: 29 (1)
-PAGE: (17 pages)
-DOI: 10.1142/S0129183118500018
-TOPKEY: topology-ark-ipv4-aslinks
-GEOLOC: Hong Kong, CN
-ABS: The Internet is the largest artificial network consisting of billions of IP devices,
-  managed by tens of thousands of autonomous systems (ASes). Due to its importance,
-  the Internet has received much attention and its topological features, mainly in
-  AS-level, have been widely explored from the complex network perspective. However,
-  most of the previous studies assume a homogeneous model in which nodes are indistinguishable
-  in nature. It may be good for a general study of topological structure, but unfortunately
-  it fails to reflect the functionality. The Internet ecology is in fact heterogeneous
-  and highly complex. It consists of various elements such as Internet Exchange Points
-  (IXPs), Internet Content Providers (ICPs), and normal Autonomous System (ASes),
-  realizing different roles in the Internet. In this paper, we propose level-structured
-  network models for investigating how ICP performs under the AS-topology with power-law
-  features and how IXP enhances its performance from a complex network perspective.
-  Based on real data, our results reveal that the power-law nature of the Internet
-  facilitates content delivery not only in efficiency but also in path redundancy.
-  Moreover, the proposed multi-level framework is able to clearly illustrate the significant
-  benefits gained by ICP from IXP peerings.
-URL: http://dx.doi.org/10.1142/S0129183118500018
 ---
 MARKER: 2018_m_imani_popets_2018_145
 TYPE: inproceedings
@@ -34445,7 +33512,7 @@ AUTHOR: Mitzenmacher, M., Pontarelli, S., Reviriego, P.
 TITLE: Adaptive cuckoo filters
 PAGE: (12 pages)
 YEAR: 2018-01
-TOPKEY: passive-2014
+TOPKEY: passive-2014, passive-realtime
 DOI: 10.1137/1.9781611975055.4
 CTITLE: Proc. Workshop on Algorithm Engineering and Experiments (ALENEX)
 GEOLOC: Cambridge, MA, US; Rome, IT; Madrid, ES
@@ -34518,66 +33585,6 @@ ABS: Mobile applications outsource their cloud infrastructure deployment and con
   peering relationships with MNOs, and deployment strategies. We also find that CSP
   performance in MNOs is affected by inflated path length, roaming, and presence of
   middleboxes, but not influenced by the choice of DNS resolver.
----
-MARKER: 2018_a_nabiyev_prob_information_tech_1_98
-TYPE: article
-AUTHOR: Nabiyev, A.
-TITLE: Application of clustering methods network traffic for detecting DDoS attacks
-SERIAL: Problems of information technology
-VOLUME: '1'
-PAGE: 98-107
-YEAR: 2018-00
-DOI: 10.25045/jpit.v09.i1.11
-TOPKEY: passive-2007, passive-2008
-GEOLOC: Baku, AZ
-ABS: One of the important problems of network security is availability. One of the
-  most common threats to the network access are DDoS attacks. Identifying and preventing
-  these attacks is the main purpose of this article. For this purpose, the data and
-  methods of the KDD CUP 99 cluster were selected for their analysis. As the main
-  methods of analysis, algorithms were chosen k-means and EM
-URL: http://dx.doi.org/10.25045/jpit.v09.i1.11
----
-MARKER: 2018_o_gupta_msc_ucsd
-TYPE: mastersthesis
-AUTHOR: Gupta, O.
-TITLE: Identifying traffic anomalies interfering with IBR based outage detection
-PUBLISH: Univ. of California, San Diego
-PAGE: (66 pages)
-YEAR: 2018-00
-URL: https://escholarship.org/uc/item/15d0c4kx
-TOPKEY: telescope-generic
-GEOLOC: San Diego, CA, US
-ABS: 'Internet Background Radiation (IBR) is network pollution, composed of all kinds
-  of Internet traffic, namely backscatter data (due to spoofing), botnet scans and
-  other traffic pollution (due to misconfigurations in the networking devices). For
-  many years, IBR collected at routed, but unused address spaces, known as Network
-  Telescope aka Darknet, has been used in multiple network research applications such
-  as identifying malicious Internet activities, detecting Internet outages, etc. The
-  Internet Outage Detection Analysis (IODA) is a research project of UCSD which uses
-  a predictable signal that can be extracted from IBR to monitor the Internet for
-  macroscopic Internet connectivity outages. Due to the varied composition of IBR,
-  extracting consistent normal IBR traffic is difficult, but at the same time is required
-  to detect outages accurately. In this report, I investigate and analyze IBR collected
-  at the UC San Diego Network Telescope (UCSD-NT), with the goal of developing a better
-  understanding of events distorting the coherent nature of the IBR signal and subsequently
-  devising approaches to detect and remove traffic triggered by these events. These
-  distortions in the IBR signal can be caused by many events, such as Distributed
-  Denial of Service (DDoS) attacks, botnet scans, Domain Name Service (DNS) poisoning,
-  etc. I investigate these events to study their causes by various means of statistical
-  and experimental tools. In my analysis of three years of IBR data, I detect many
-  short-term events which distort a stable signal extracted from IBR (used by IODA),
-  by generating traffic bursts. Also, I identify and analyze a large-scale event:
-  SYNRENT (coined from SYN-BitTorrent), which caused an increase in the TCP-SYN traffic
-  reaching the UCSD-NT for over two years. I present a broad characterization of SYNRENT
-  in terms of source IPs, countries, Autonomous Systems (AS), operating systems, etc.
-  to better understand the phenomenon. This thesis also identifies possible causes
-  of SYNRENT such as the Distributed Hash Table (DHT) poisoning of BitTorrent traffic
-  in the Great Firewall of China. To mitigate such distorting events and bursts, I
-  present a software solution to detect and filter them in real-time: the primary
-  idea is to use the history of previously observed unique source IPs on destination
-  ports and IPs, to determine the occurrence of a burst. In addition to proposing
-  and implementing the solution, I provide substantial evidence to prove that it successfully
-  detects and removes the components that distort the signal from IODA preferred IBR. '
 ---
 MARKER: 2017_t_lee_msc_eth_zurich
 TYPE: mastersthesis
@@ -69029,7 +68036,7 @@ YEAR: 2023-06
 SERIAL: Proceedings of the ACM on Networking
 VOLUME: '1'
 URL: https://dl.acm.org/doi/abs/10.1145/3595290
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, midar
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_zhao_w_aims
@@ -72011,7 +71018,7 @@ TITLE: "AliasClassifier: A High-Performance Router Alias Classifier"
 SERIAL: Electronics
 YEAR: 2024-05
 VOLUME: '13'
-TOPKEY: topology-itdk
+TOPKEY: midar, iffinder, topology-ark-itdk
 GEOLOC: Harbin, CN
 URL: https://www.mdpi.com/2079-9292/13/9/1747
 ---
