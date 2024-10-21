@@ -23482,7 +23482,7 @@ PUBLISH: University of Southern California (USC)
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~hangguo/papers/Guo18c.pdf
-TOPKEY: passive-ipv6day-and-ipv6launch, outeviews-prefix2as
+TOPKEY: passive-ipv6day-and-ipv6launch, routeviews-prefix2as
 GEOLOC: California, US
 ABS: 'Distributed Denial-of-Service (DDoS) attacks launched from compromised Internet-of-Things
   (IoT) devices have shown how vulnerable the Internet is to large scale DDoS attacks.
@@ -23711,7 +23711,7 @@ YEAR: '2018'
 PAGE: (14 pages)
 DOI: 10.1145/3278532.3278559
 URL: https://dl.acm.org/citation.cfm?id=3278559
-TOPKEY: topology-ark-dnsnames, topology-ark-ipv6-traceroute
+TOPKEY: topology-generic, topology-ark-itdk
 GEOLOC: New York, NY, US
 ABS: Existing methods for active topology discovery within the IPv6 Internet largely
   mirror those of IPv4. In light of the large and sparsely populated address space,
@@ -32736,7 +32736,7 @@ PUBLISH: Naval Postgraduate School
 PAGE: (111 pages)
 YEAR: 2018-03
 URL: https://calhoun.nps.edu/handle/10945/58301
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-dnsnames
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-ipv4-dns-names
 GEOLOC: Monterey, CA, US
 ABS: Traceroute is a popular active probing technique used by researchers, operators,
   and adversaries to map the structure and connectivity of IP networks. However, traceroute
