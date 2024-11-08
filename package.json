@@ -1,0 +1,16 @@
+{
+  "name": "catalog-data",
+  "version": "1.0.0",
+  "description": "This repo contains the source JSON files used to build the CAIDA resource catalog ([ catalog.caida.org](https://catalog.caida.org))'s database.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

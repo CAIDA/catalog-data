@@ -1,0 +1,101 @@
+{
+    "id": "2023_hypersparse_traffic_matrix_construction_using_graphblas_on_a_dpu",
+    "name": "Hypersparse Traffic Matrix Construction using GraphBLAS on a DPU",
+    "datePublished": "2023.10",
+    "publisher": "arxiv.org",
+    "description": "Low-power small form factor data processing units (DPUs) enable offloading and acceleration of a broad range of networking and security services. DPUs have accelerated the transition to programmable networking by enabling the replacement of FPGAs/ASICs in a wide range of network oriented devices. The GraphBLAS sparse matrix graph open standard math library is well-suited for constructing anonymized hypersparse traffic matrices of network traffic which can enable a wide range of network analytics. This paper measures the performance of the GraphBLAS on an ARM based NVIDIA DPU (BlueField 2) and, to the best of our knowledge, represents the first reported GraphBLAS results on a DPU and/or ARM based system. Anonymized hypersparse traffic matrices were constructed at a rate of over 18 million packets per second.",
+    "tags": [],
+    "links": [
+        {
+            "to": "dataset:2024_ieee_anonymized_nsg_challenge",
+            "label": "Related Dataset"
+        }
+    ],
+    "authors": [
+        {
+            "person": "person:bergeron__william",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:jones__michael",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:barber__chase",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:deyoung__kale",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:amariucai__george",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:ernst__kaleb",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:fleming__nathan",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:michaleas__peter",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:pisharody__sandeep",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:wells__nathan",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:rosa__antonio",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "person": "person:vasserman__eugene",
+            "organizations": [
+                "Kansas State University"
+            ]
+        },
+        {
+            "person": "person:kepner__jeremy",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        }
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://arxiv.org/abs/2310.18334"
+        }
+    ]
+}
+
