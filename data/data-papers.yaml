@@ -291,22 +291,6 @@ TOPKEY: code-red-worm
 GEOLOC: Punjab, IN
 ABS: ''
 ---
-MARKER: 2019_abdelsalam_m_lspringer_22479020
-TYPE: inproceedings
-AUTHOR: Abdelsalam, M., Krishnan, R., Sandhu, R.
-TITLE: Online Malware Detection in Cloud Auto-scaling Systems Using Shallow Convolutional
-  Neural Networks
-CTITLE: Data and Applications Security and Privacy XXXIII (DBSec 2019)
-SERIAL: Lecture Notes in Computer Science
-YEAR: '2019'
-VOLUME: '11559'
-PAGE: 381-397
-DOI: 10.1007/978-3-030-22479-0_20
-URL: https://link.springer.com/chapter/10.1007/978-3-030-22479-0_20
-TOPKEY: coralreef
-GEOLOC: San Antonio, TX, US
-ABS: ''
----
 MARKER: 2019_park_n_lspringer_01900538
 TYPE: article
 AUTHOR: Park, N., Oh, S., Kang, U.
@@ -436,49 +420,6 @@ DOI: 10.2478/popets-2019-0069
 URL: https://par.nsf.gov/biblio/10107793
 TOPKEY: topology-generic
 GEOLOC: Princeton, NJ, US
-ABS: ''
----
-MARKER: 2019_vlajic_n_mdpi_20734318
-TYPE: article
-AUTHOR: Vlajic, N., Chowdhury, M., Litoiu, M.
-TITLE: 'IP Spoofing In and Out of the Public Cloud: From Policy to Practice'
-SERIAL: Computers
-YEAR: 2019-11
-VOLUME: '8'
-PAGE: (17)
-DOI: 10.3390/computers8040081
-URL: https://www.mdpi.com/2073-431X/8/4/81
-TOPKEY: spoofer
-GEOLOC: Toronto, CA
-ABS: ''
----
-MARKER: 2019_wang_y_mdpi_19143052
-TYPE: article
-AUTHOR: Wang, Y., Zheng, N., Xu, M., Qiao, T.,Zhang, Z., Yan, F., Xu, J.
-TITLE: 'Hierarchical Identifier: Application to User Privacy Eavesdropping on Mobile
-  Payment App'
-SERIAL: Sensors
-YEAR: 2019-07
-VOLUME: '19'
-PAGE: (19)
-DOI: 10.3390/s19143052
-URL: https://www.mdpi.com/1424-8220/19/14/3052
-TOPKEY: coralreef
-GEOLOC: Hangzhou, CN
-ABS: ''
----
-MARKER: 2019_dijkhuizen_n_acm_3182660
-TYPE: article
-AUTHOR: Dijkhuizen, N., Ham, J.
-TITLE: A Survey of Network Traffic Anonymisation Techniques and Implementations
-SERIAL: ACM Computing Surveys
-YEAR: 2019-05
-VOLUME: '51'
-PAGE: 1-27
-DOI: 10.1145/3182660
-URL: https://dl.acm.org/doi/abs/10.1145/3182660
-TOPKEY: coralreef
-GEOLOC: Hague, NL
 ABS: ''
 ---
 MARKER: 2018_mukherjee_s_acm_3229583
@@ -628,21 +569,6 @@ YEAR: 2018-01
 URL: https://apps.dtic.mil/sti/citations/AD1045817
 TOPKEY: ioda
 GEOLOC: Ann Arbor, MI, US
-ABS: ''
----
-MARKER: 2019_cherie_m_ijcce_521103613
-TYPE: article
-AUTHOR: Cherie, M., Kettani, H.
-TITLE: 'IPIG: A Geospatial Analysis Framework for Internet Protocol Address Intelligence
-  Gathering'
-SERIAL: International Journal of Computer and Communication Engineering
-YEAR: 2019-01
-VOLUME: '8'
-PAGE: 93-103
-DOI: 10.17706/ijcce.2019.8.3.93-103
-URL: http://www.ijcce.org/vol8/521-MS19-613.pdf
-TOPKEY: spoofer
-GEOLOC: Madison, SD, US
 ABS: ''
 ---
 MARKER: 2019_utkin_k_dspacevutbr_180161
@@ -1002,21 +928,6 @@ TOPKEY: passive-2013
 GEOLOC: Mountain View, CA, US
 ABS: ''
 ---
-MARKER: 2020_obimbo_c_ieee_8947674
-TYPE: inproceedings
-AUTHOR: Obimbo, C., Speller, A., Myers, K., Burke, A., Blatz, M.
-TITLE: 'Internet Worms and the Weakest Link: Human Error'
-CTITLE: 2018 International Conference on Computational Science and Computational Intelligence
-  (CSCI)
-YEAR: 2020-01
-VOLUME: ''
-PAGE: 120-123
-DOI: 10.1109/CSCI46756.2018.00030
-URL: https://ieeexplore.ieee.org/abstract/document/8947674
-TOPKEY: witty-worm
-GEOLOC: Guelph, CA
-ABS: ''
----
 MARKER: 2018_saavedra_a_ieee_8491793
 TYPE: inproceedings
 AUTHOR: Saavedra, A., Hernandez, C., Figueroa, M.
@@ -1249,22 +1160,6 @@ DOI: 10.1016/j.cose.2017.11.004
 URL: https://www.sciencedirect.com/science/article/pii/S0167404817302353
 TOPKEY: passive-generic
 GEOLOC: Granada, ES
-ABS: ''
----
-MARKER: 2019_xu_w_lspringer_16946616
-TYPE: inproceedings
-AUTHOR: Xu, W., Tao, Y., Guan, X.
-TITLE: Experimental Comparison of Free IP Geolocation Services
-CTITLE: Proceedings of the Second International Conference on Security with Intelligent
-  Computing and Big Data Services (SICBS-2018)
-SERIAL: Advances in Intelligent Systems and Computing
-YEAR: 2019-04
-VOLUME: '895'
-PAGE: 198-208
-DOI: 10.1007/978-3-030-16946-6_16
-URL: https://link.springer.com/chapter/10.1007/978-3-030-16946-6_16
-TOPKEY: topology-generic
-GEOLOC: Hefei, CN
 ABS: ''
 ---
 MARKER: 2018_roy_s_lspringer_01703660
@@ -5138,20 +5033,6 @@ TOPKEY: telescope-generic
 GEOLOC: San Diego, CA, US
 ABS: ''
 ---
-MARKER: 2020_thakkar_a_scidir_920307961
-TYPE: article
-AUTHOR: Thakkar, A., Lohiya, R.
-TITLE: A Review of the Advancement in Intrusion Detection Datasets
-SERIAL: Procedia Computer Science
-YEAR: 2020-00
-VOLUME: '167'
-PAGE: 636-645
-DOI: 10.1016/j.procs.2020.03.330
-URL: https://www.sciencedirect.com/science/article/pii/S1877050920307961
-TOPKEY: witty-worm
-GEOLOC: Gujarat, IN
-ABS: ''
----
 MARKER: 2011_dover_y_aradmscc_001760216
 TYPE: phdthesis
 AUTHOR: Dover, Y.
@@ -5639,20 +5520,6 @@ DOI: 10.1109/TNET.2022.3198738
 URL: https://ieeexplore.ieee.org/abstract/document/9858870
 TOPKEY: ddos-2007, passive-stats, witty-worm
 GEOLOC: Xiamen, CN
-ABS: ''
----
-MARKER: 2019_cvitic_i_hrcaksrce_2243623082
-TYPE: article
-AUTHOR: Cvitic, I., Perakovic, D., Husnjak, S.
-TITLE: An Overview of Distributed Denial of Service Traffic Detection Approaches
-SERIAL: Promet - Traffic&Transportation
-YEAR: 2019-06
-VOLUME: '31'
-PAGE: 453-464
-DOI: 10.7307/ptt.v31i4.3082
-URL: https://hrcak.srce.hr/224362
-TOPKEY: ddos-2007
-GEOLOC: Zagreb, HR
 ABS: ''
 ---
 MARKER: 2022_agrawal_a_hindawi_9855022
@@ -6602,7 +6469,7 @@ PUBLISH: Sorbonne Universite
 PAGE: 1-99
 YEAR: 2020-06
 URL: https://hal.archives-ouvertes.fr/tel-02900707/document
-TOPKEY: topology-ark-itdk
+TOPKEY: topology-ark-itdk, topology-as-rank
 GEOLOC: Paris, FR
 ABS: ''
 ---
@@ -10126,22 +9993,6 @@ PAGE: (6 pages)
 URL: https://arxiv.org/abs/1911.05164
 TOPKEY: bgpstream
 GEOLOC: Hamburg, DE
-ABS: ''
----
-MARKER: 2019_r_bian_acm_3371930
-TYPE: article
-AUTHOR: Bian, Rui; Hao, Shuai; Wang, Haining; Dhamdere, Amogh; Dainotti, Alberto;
-  Cotton, Chase
-TITLE: 'Towards Passive Analysis of Anycast in Global Routing: Unintended Impact of
-  Remote Peering'
-SERIAL: ACM SIGCOMM Computer Communication Review
-YEAR: '2019'
-VOLUME: 49(3)
-PAGE: 18-25
-DOI: 10.1145/3371927.3371930
-URL: https://dl.acm.org/doi/abs/10.1145/3371927.3371930
-TOPKEY: bgpstream
-GEOLOC: Newark, DE, US
 ABS: ''
 ---
 MARKER: 2020_y_sun_princeton_13242
@@ -23482,7 +23333,7 @@ PUBLISH: University of Southern California (USC)
 PAGE: (17 pages)
 YEAR: '2018'
 URL: https://www.isi.edu/~hangguo/papers/Guo18c.pdf
-TOPKEY: passive-ipv6day-and-ipv6launch, outeviews-prefix2as
+TOPKEY: passive-ipv6day-and-ipv6launch, routeviews-prefix2as
 GEOLOC: California, US
 ABS: 'Distributed Denial-of-Service (DDoS) attacks launched from compromised Internet-of-Things
   (IoT) devices have shown how vulnerable the Internet is to large scale DDoS attacks.
@@ -23711,7 +23562,7 @@ YEAR: '2018'
 PAGE: (14 pages)
 DOI: 10.1145/3278532.3278559
 URL: https://dl.acm.org/citation.cfm?id=3278559
-TOPKEY: topology-ark-dnsnames, topology-ark-ipv6-traceroute
+TOPKEY: topology-generic, topology-ark-itdk
 GEOLOC: New York, NY, US
 ABS: Existing methods for active topology discovery within the IPv6 Internet largely
   mirror those of IPv4. In light of the large and sparsely populated address space,
@@ -32736,7 +32587,7 @@ PUBLISH: Naval Postgraduate School
 PAGE: (111 pages)
 YEAR: 2018-03
 URL: https://calhoun.nps.edu/handle/10945/58301
-TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-dnsnames
+TOPKEY: topology-ark-ipv4-traceroute, topology-ark-ipv6-traceroute, topology-as-rank, scamper, topology-ark-ipv4-dns-names
 GEOLOC: Monterey, CA, US
 ABS: Traceroute is a popular active probing technique used by researchers, operators,
   and adversaries to map the structure and connectivity of IP networks. However, traceroute
@@ -72176,3 +72027,32 @@ YEAR: '2021'
 TOPKEY: passive-2007, passive-2008
 GEOLOC: Edinburgh, GB
 URL: http://193.140.201.98/handle/123456789/13164
+---
+MARKER: 2024_b_franz_ieee_2517
+TYPE: in_proceedings
+AUTHOR: Franz B.; Marco L.; Markus A.; Fabiana L.; Thomas W.; Andreas H.
+TITLE: "ecoNIC: Saving Energy Through SmartNIC-Based Load Balancing of Mixed-Critical Ethernet Traffic"
+YEAR: 2024-08
+CTITLE: "2024 27th Euromicro Conference on Digital System Design (DSD)"
+TOPKEY: passive-2015
+GEOLOC: Paris, FR
+---
+URL: https://ieeexplore.ieee.org/document/10741869
+MARKER: 2024_c_shen_wordpress_2517
+TYPE: online
+AUTHOR: Shen C.; You Z.
+TITLE: Replicating “Caching with Delayed Hits”
+YEAR: 2024-06
+PUBLISH: WordPress
+TOPKEY: passive-2014
+GEOLOC: Stanford, CA, US
+URL: https://reproducingnetworkresearch.wordpress.com/2024/06/08/cs244-24-replicating-caching-with-delayed-hits/
+---
+MARKER: 2022_d_yamba_ieee_2517
+TYPE: in_proceedings
+AUTHOR: Yamba D.; Tounwendyam O.; Oumarou S.
+TITLE: Measures To Enhance The Characterization Of Internet Exchange Points
+YEAR: 2022-11
+CTITLE: 2022 2nd International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)
+TOPKEY: peeringdb, topology-as-rank
+GEOLOC: Ouagadougou, BF
