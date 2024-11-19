@@ -72056,3 +72056,103 @@ YEAR: 2022-11
 CTITLE: 2022 2nd International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)
 TOPKEY: peeringdb, topology-as-rank
 GEOLOC: Ouagadougou, BF
+---
+MARKER: 2024_t_nabi_acm_4812
+TYPE: in_proceedings
+AUTHOR: Syed Nabi, T., Wen, Z., Ritter, B., Hasan, S.
+TITLE: "Red is Sus: Automated Identification of Low-Quality Service Availability Claims in the US National Broadband Map"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-as-organization
+GEOLOC: Blacksburg, Virginia, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688441
+---
+MARKER: 2024_l_salamatian_acm_6902
+TYPE: in_proceedings
+AUTHOR: Salamatian, L., Ardi, C., Giotsas, V., Calder, M., Katz-Bassett, E., Arnold, T.
+TITLE: "What's in the Dataset? Unboxing the APNIC per AS User Population Dataset"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-as-organization
+GEOLOC: New York, NY, USA
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688411
+---
+MARKER: 2024_r_fontugne_acm_6236
+TYPE: in_proceedings
+AUTHOR: Fontugne, R., Tashiro, M., Sommese, R., Jonker, M., Bischof, Z. S., Aben, E.
+TITLE: "The Wisdom of the Measurement Crowd: Building the Internet Yellow Pages a Knowledge Graph for the Internet"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-as-rank
+GEOLOC: Tokyo, JP
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688444
+---
+MARKER: 2024_y_liu_acm_6637
+TYPE: in_proceedings
+AUTHOR: Liu, Y., Wu, T., Wang, J. H., Wang, J., Zhuang, S.
+TITLE: "Collecting Self-reported Semantics of BGP Communities and Investigating Their Consistency with Real-world Usage"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: bgp-communities
+GEOLOC: Beijing, CN
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688414
+---
+MARKER: 2024_l_salamatian_acm_9250
+TYPE: in_proceedings
+AUTHOR: Salamatian, L., Vermeulen, K., Cunha, I., Giotsas, V., Katz-Bassett, E.
+TITLE: "metAScritic: Reframing AS-Level Topology Discovery as a Recommendation System"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-ark-ipv4-traceroute, topology-as-classification, topology-as-organization, topology-as-relationships
+GEOLOC: New York, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688429
+---
+MARKER: 2024_s_he_acm_8294
+TYPE: in_proceedings
+AUTHOR: He, S., Cunha, I., Katz-Bassett, E.
+TITLE: "RPSLyzer: Characterization and Verification of Policies in Internet Routing Registries"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-as-relationships
+GEOLOC: Los Angeles, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689018
+---
+MARKER: 2024_g_williams_acm_3029
+TYPE: in_proceedings
+AUTHOR: Williams, G., Pearce, P.
+TITLE: "Seeds of Scanning: Exploring the Effects of Datasets, Methods, and Metrics on IPv6 Internet Scanning"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-ark-ipv6-dns-names, topology-ark-ipv4-prefix-probing, scamper, peeringdb
+GEOLOC: Georgia, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688449
+---
+MARKER: 2024_d_sun_acm_9847
+TYPE: in_proceedings
+AUTHOR: Sun, D., Chen, J. Q., Gong, C., Wang, T., Li, Z.
+TITLE: "NetDPSyn: Synthesizing Network Traces under Differential Privacy"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: passive-generic
+GEOLOC: California, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689011
+---
+MARKER: 2024_s_yu_acm_2824
+TYPE: in_proceedings
+AUTHOR: Yu, S., Zhuang, S., Yu, T., An, C., Wang, J.
+TITLE: "Rumors Stop with the Wise: Unveiling Inbound SAV Deployment through Spoofed ICMP Messages"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: topology-as-rank, topology-as-organization
+GEOLOC: Beijing, CN
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688417
+---
+MARKER: 2024_m_srivastava_acm_8025
+TYPE: in_proceedings
+AUTHOR: Srivastava, M., Hung, S., Namkung, H., Lin, K. C., Liu, Z., Sekar, V.
+TITLE: "Raising the Level of Abstraction for Sketch-Based Network Telemetry with SketchPlan"
+YEAR: 2024-11
+CTITLE: Internet Measurement Conference (IMC)
+TOPKEY: passive-2018
+GEOLOC: Pennsylvania, US
+URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689016
