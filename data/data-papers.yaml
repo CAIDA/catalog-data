@@ -72064,7 +72064,7 @@ TITLE: "Red is Sus: Automated Identification of Low-Quality Service Availability
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: topology-as-organization
-GEOLOC: Blacksburg, Virginia, US
+GEOLOC: Blacksburg, VA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688441
 ---
 MARKER: 2024_l_salamatian_acm_6902
@@ -72074,7 +72074,7 @@ TITLE: "What's in the Dataset? Unboxing the APNIC per AS User Population Dataset
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: topology-as-organization
-GEOLOC: New York, NY, USA
+GEOLOC: New York, NY, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688411
 ---
 MARKER: 2024_r_fontugne_acm_6236
@@ -72104,7 +72104,7 @@ TITLE: "metAScritic: Reframing AS-Level Topology Discovery as a Recommendation S
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: topology-ark-ipv4-traceroute, topology-as-classification, topology-as-organization, topology-as-relationships
-GEOLOC: New York, US
+GEOLOC: New York, NY, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688429
 ---
 MARKER: 2024_s_he_acm_8294
@@ -72114,7 +72114,7 @@ TITLE: "RPSLyzer: Characterization and Verification of Policies in Internet Rout
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: topology-as-relationships
-GEOLOC: Los Angeles, US
+GEOLOC: Los Angeles, CA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689018
 ---
 MARKER: 2024_g_williams_acm_3029
@@ -72124,7 +72124,7 @@ TITLE: "Seeds of Scanning: Exploring the Effects of Datasets, Methods, and Metri
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: topology-ark-ipv6-dns-names, topology-ark-ipv4-prefix-probing, scamper, peeringdb
-GEOLOC: Georgia, US
+GEOLOC: Atlanta, GA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688449
 ---
 MARKER: 2024_d_sun_acm_9847
@@ -72134,7 +72134,7 @@ TITLE: "NetDPSyn: Synthesizing Network Traces under Differential Privacy"
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: passive-generic
-GEOLOC: California, US
+GEOLOC: Irvine, CA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689011
 ---
 MARKER: 2024_s_yu_acm_2824
@@ -72154,5 +72154,5 @@ TITLE: "Raising the Level of Abstraction for Sketch-Based Network Telemetry with
 YEAR: 2024-11
 CTITLE: Internet Measurement Conference (IMC)
 TOPKEY: passive-2018
-GEOLOC: Pennsylvania, US
+GEOLOC: Pennsylvania, PA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689016
