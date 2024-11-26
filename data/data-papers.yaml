@@ -9995,18 +9995,6 @@ TOPKEY: bgpstream
 GEOLOC: Hamburg, DE
 ABS: ''
 ---
-MARKER: 2020_y_sun_princeton_13242
-TYPE: phdthesis
-AUTHOR: Sun, Yixin
-TITLE: Enhancing Anonymity Systems under Network and User Dynamics
-PUBLISH: Princeton University
-PAGE: (132 pages)
-YEAR: '2020'
-URL: http://arks.princeton.edu/ark:/88435/dsp01z316q454h
-TOPKEY: bgpstream
-GEOLOC: Princeton, NJ, US
-ABS: ''
----
 MARKER: 2019_c_dietzel_researchgate_337919072
 TYPE: phdthesis
 AUTHOR: Dietzel, Christoph
@@ -18116,18 +18104,6 @@ URL: https://doi.org/10.1145/3409963.3410499
 TOPKEY: passive-2019
 GEOLOC: Beijing, CN
 ---
-MARKER: 2020_farzaneh_nasirian_complex_networks_2443915979
-TYPE: phdthesis
-AUTHOR: Nasirian, F.
-TITLE: Identifying Critical Components and Key Communities in Complex Networks
-PUBLISH: University of Massachusetts Boston
-PAGE: ''
-YEAR: '2020'
-URL: 
-  https://www.proquest.com/docview/2443915979?pq-origsite=gscholar&fromopenview=true
-TOPKEY: passive-generic
-GEOLOC: Boston, MA, US
----
 MARKER: 2020_zhao_keyan_hbl_sketch_9783030
 TYPE: inproceedings
 AUTHOR: Zhao, Keyan; Wang, Junxiao; Qi, Heng; Xie, Xin; Zhou, Xiaobo; Li, Keqiu
@@ -18417,7 +18393,7 @@ VOLUME: ''
 PAGE: ''
 DOI: ''
 URL: https://arxiv.org/pdf/2104.05117.pdf
-TOPKEY: passive-generic
+TOPKEY: passive-2018
 GEOLOC: Trento, IT
 ---
 MARKER: 2021_scherrer_simon_loft_oversuse_flows_210201397
@@ -18506,20 +18482,6 @@ URL: https://ieeexplore.ieee.org/abstract/document/9387249
 TOPKEY: passive-2015, passive-2016
 GEOLOC: Haifa, IL
 ---
-MARKER: 2019_sharafaldin_iman_ddos_attack_taxonomy_8888419
-TYPE: inproceedings
-AUTHOR: Sharafaldin, Iman; Lashkari, Arash Habibi; Hakak, Saqib; Ghorbani, Ali A.
-TITLE: Developing Realistic Distributed Denial of Service (DDoS) Attack Dataset and
-  Taxonomy
-CTITLE: 2019 International Carnahan Conference on Security Technology (ICCST)
-YEAR: '2019'
-VOLUME: ''
-PAGE: 1-8
-DOI: 10.1109/CCST.2019.8888419
-URL: https://ieeexplore.ieee.org/abstract/document/8888419
-TOPKEY: ddos-2007
-GEOLOC: Fredericton, NB, CA
----
 MARKER: 2019_ates_cagatay_clustering_ddos_attack_8946331
 TYPE: inproceedings
 AUTHOR: Ates, Cagatay; Ozdel, Suleyman; Anarim, Emin
@@ -18546,19 +18508,6 @@ DOI: 10.4218/etrij.2019-0156
 URL: https://onlinelibrary.wiley.com/doi/epdf/10.4218/etrij.2019-0156
 TOPKEY: ddos-2007
 GEOLOC: Seoul, KR
----
-MARKER: 2020_tuan_ta_perfomance_evolution_ddos_12065_019
-TYPE: article
-AUTHOR: Tuan, T.A.; Long, H.V.; Son, L.H.
-TITLE: Performance evaluation of Botnet DDoS attack detection using machine learning
-SERIAL: Evolutionary Intelligence
-YEAR: '2020'
-VOLUME: '13'
-PAGE: 283-294
-DOI: 10.1007/s12065-019-00310-w
-URL: https://link.springer.com/article/10.1007%2Fs12065-019-00310-w
-TOPKEY: telescope-3days-conficker
-GEOLOC: Thuan Thanh, VN
 ---
 MARKER: 2019_fouladi_ramin_anomaly_based_ddos_sparse_8904393
 TYPE: inproceedings
@@ -18676,18 +18625,6 @@ URL: https://link.springer.com/article/10.1186/s42400-019-0038-7
 TOPKEY: ddos-2007
 GEOLOC: Mount Helen, AT
 ---
-MARKER: 2019_venugopal_sridhar_automatic_generation_80079
-TYPE: mastersthesis
-AUTHOR: Venugopal, Sridhar Bangalore
-TITLE: Automatic Generation of Access Control List on Mellanox Switch For DDoS Attack
-  Mitigation Using DDoS Fingerprints
-PUBLISH: University of Twente
-PAGE: 1-66
-YEAR: '2019'
-URL: http://essay.utwente.nl/80079/1/Sridhar_MA_EEMCS.pdf
-TOPKEY: ddos-2007
-GEOLOC: Enschede, NL
----
 MARKER: 2020_doriguzzi_roberto_lucid_deep_learning_200160837
 TYPE: article
 AUTHOR: Doriguzzi-Corin, Roberto; Millar, Stuart; Scott-Hayward, Sandra; Martinez-del-Rincon,
@@ -18744,19 +18681,6 @@ URL: http://ijns.jalaxy.com.tw/contents/ijns-v21-n1/ijns-2019-v21-n1-p30-39.pdf
 TOPKEY: ddos-2007
 GEOLOC: Tezpur, IN
 ---
-MARKER: 2019_moustafa_nour_holistic_review_survey_2018_12
-TYPE: article
-AUTHOR: Moustafa, Nour; Hu, Jiankun; Slay, Jill
-TITLE: 'A holistic review of Network Anomaly Detection Systems: A comprehensive survey'
-SERIAL: Journal of Network and Computer Applications
-YEAR: '2019'
-VOLUME: '128'
-PAGE: 33-55
-DOI: 10.1016/j.jnca.2018.12.006
-URL: https://www.sciencedirect.com/science/article/abs/pii/S1084804518303886
-TOPKEY: ddos-2007
-GEOLOC: Canberra, AU
----
 MARKER: 2019_patil_vishwasrao_ehad_detection_framework_2019_06_016
 TYPE: article
 AUTHOR: Patil, Nilesh Vishwasrao; Krishna, C. Rama; Kumar, Krishan; Behal, Sunny
@@ -18772,18 +18696,6 @@ URL:
 TOPKEY: ddos-2007
 GEOLOC: Chandigarh, IN
 ---
-MARKER: 2019_ostemel_muhammed_detection_of_intrusion_350453281
-TYPE: mastersthesis
-AUTHOR: Oztemel, Muhammed Esad
-TITLE: DETECTION OF INTRUSION THROUGH UTILIZING MACHINE LEARNING ALGORITHMS
-PUBLISH: Southern University A&M College
-PAGE: ''
-YEAR: '2019'
-URL: 
-  https://www.researchgate.net/profile/Muhammed-Oztemel/publication/350453281_DETECTION_OF_INTRUSION_THROUGH_UTILIZING_MACHINE_LEARNING_ALGORITHMS/links/6060eacf458515e8347ba1ee/DETECTION-OF-INTRUSION-THROUGH-UTILIZING-MACHINE-LEARNING-ALGORITHMS.pdf
-TOPKEY: passive-oc48, passive-2016, ddos-2007
-GEOLOC: Baton Rouge, LA, US
----
 MARKER: 2019_h_birge-lee_ccs_3355605
 TYPE: inproceedings
 AUTHOR: Birge-Lee, H.; Wang, L.; Rexford, J.; Mittal, P.
@@ -18798,20 +18710,6 @@ TOPKEY: topology-as-relationships
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
-MARKER: 2019_m_zhou_internationaljournal_3355606
-TYPE: article
-AUTHOR: Zhou, M.
-TITLE: Coevolution of synchronization and cooperation in real networks
-SERIAL: International Journal of Modern Physics
-YEAR: '2019'
-VOLUME: '30'
-PAGE: ''
-DOI: 10.1142/S0129183119400126
-URL: https://www.worldscientific.com/doi/abs/10.1142/S0129183119400126
-TOPKEY: topology-as-relationships
-GEOLOC: Shenzhen, CN
-ABS: ''
----
 MARKER: 2019_p_kantidey_stars_3355607
 TYPE: phdthesis
 AUTHOR: KantiDey, P.
@@ -18822,7 +18720,7 @@ PAGE: ''
 YEAR: '2019'
 URL: 
   https://stars.library.ucf.edu/etd/6709/?utm_source=stars.library.ucf.edu%2Fetd%2F6709&utm_medium=PDF&utm_campaign=PDFCoverPages
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank, passive-2019
 GEOLOC: Orlando, FL, US
 ABS: ''
 ---
@@ -18904,7 +18802,7 @@ VOLUME: ''
 PAGE: 431-444
 DOI: 10.5753/sbrc.2019.7377
 URL: https://sol.sbc.org.br/index.php/sbrc/article/view/7377
-TOPKEY: routeviews_prefix2as
+TOPKEY: routeviews_prefix2as, topology-as-rank
 GEOLOC: Curitiba, BR
 ---
 MARKER: 2019_a_muscoloni_core_ 3355614
@@ -19084,7 +18982,7 @@ YEAR: '2020'
 VOLUME: ''
 PAGE: ''
 URL: https://arxiv.org/pdf/2006.06576.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, topology-as-rank
 GEOLOC: Knoxville, TN, US
 ABS: ''
 ---
@@ -19165,7 +19063,7 @@ PAGE: ''
 YEAR: '2020'
 URL: 
   https://dataspace.princeton.edu/bitstream/88435/dsp01z316q454h/1/Sun_princeton_0181D_13242.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, routeviews-prefix2as
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
@@ -19202,7 +19100,7 @@ PUBLISH: cs.oregon.edu
 PAGE: ''
 YEAR: '2020'
 URL: http://www.cs.uoregon.edu/Reports/AREA-202002-Shi.pdf
-TOPKEY: topology-as-relationships
+TOPKEY: spoofer
 GEOLOC: Eugene, OR, US
 ABS: ''
 ---
@@ -19878,7 +19776,7 @@ YEAR: '2020-04'
 PAGE: (19 pages)
 URL: https://www.cs.colostate.edu/TechReports/Reports/2020/tr20-101.pdf
 PUBLISH: Colorado State University, Computer Science
-TOPKEY: topology-ark-itdk
+TOPKEY: topology-ark-itdk, topology-ark-ipv4-traceroute
 ABS: Some IP blocks occasionally change their physical location, such as when blocks
   are transferred to different organizations, or repurposed within an organization.
   IP geolocation systems need to identify such changes to provide accurate results
@@ -20086,36 +19984,6 @@ ABS: In order to reach their destinations, IP packets must go through multiple p
   Systems (ASes), administrative entities which are identified by unique autonomous
   system numbers (ASNs). BGP is a stretch-1 routing protocol which selects paths based
   on prefix announcement rules and AS-specific policies.
----
-MARKER: 2020_D_Prashar_JCIM
-TYPE: article
-AUTHOR: Prashar, Deepak; Jha, Sudan
-GEOLOC: Phagwara, IN
-TITLE: A novel approach for Spam Email Filtering Using Machine Learning
-YEAR: '2020-05'
-DOI: 10.5281/zenodo.3715417
-SERIAL: Journal of Cybersecurity and Information Management (JCIM)
-VOLUME: '2'
-PAGE: 44-57
-URL: 
-  https://www.researchgate.net/publication/341284592_A_novel_approach_for_Spam_Email_Filtering_Using_Machine_Learning
-TOPKEY: telescope-3days-conficker
-ABS: Spam emails also known as unsolicited emails (maybe commercial or maybe not)
-  i.e. those mails which are sent without our request or concern. Email spam is the
-  practice of sending unwanted emails, mostly contains commercial messages to randomly
-  generated persons. In the internet email spam is widespread because of such low
-  cost of sending emails other than any other means of communication. It is important
-  to filter spam emails because most of the malicious activities performed in the
-  internet done through email spamming. Though there are many spam filters are available
-  we still get huge amount of spam emails. This is not because the filters are not
-  accurate & effective; the reason is the generation of quick and effective counters
-  of the algorithm used in the filters. In our project we used mainly three supervised
-  learning algorithms namely Linear SVC, Multinomial NB, and k-NN to implement the
-  filter. We used these algorithms to train the system about spam email by using the
-  feature called word count vector which is generated by processing a dataset filled
-  with existing emails containing both spam and legitimate emails. The full process
-  of the project and the result of the execution by implementing the three models/algorithms
-  are discussed.
 ---
 MARKER: 2020_SS_Tomar_IJIT
 TYPE: article
@@ -20468,23 +20336,6 @@ ABS: 'Scanning of hosts on the Internet to identify vulnerable devices and servi
   or networks. Our methods can be adapted for individual network operators to assess
   if they are subjected to targeted scanning activity.'
 ---
-MARKER: 2020_Y_Huang_IMC
-TYPE: inproceedings
-AUTHOR: Huang, Yuchen; Rabinovich, Michael; Al-Dalky, Rami
-GEOLOC: Cleveland, OH, US
-TITLE: 'FlashRoute: Efficient Traceroute on a Massive Scale'
-YEAR: '2020-10'
-CTITLE: 'IMC 20: Proceedings of the ACM Internet Measurement Conference'
-PAGE: (13 pages)
-URL: https://dl.acm.org/doi/abs/10.1145/3419394.3423619
-TOPKEY: topology-generic
-ABS: We propose a new traceroute tool, FlashRoute for efficient large-scale topology
-  discovery. FlashRoute reduces the time required for tracerouting the entire /24
-  IPv4 address space by a factor of three and half compared to previous state of the
-  art. Additionally, we present a new technique to measure hop-distance to a destination
-  using a single probe and uncover a bias of the influential ISI Census hitlist [18]
-  in topology discovery.
----
 MARKER: 2020_Z_Jin_IMC
 TYPE: inproceedings
 AUTHOR: Jin, Zitong; Shi, Xingang; Yang, Yan; Yin, Xia; Wang, Zhiliang; Wu, Jianping
@@ -20512,37 +20363,6 @@ ABS: Knowledge of the Internet topology and the business relationships between A
   TopoScope reduces the inference error by up to 2.7-4 times, discovers the relationships
   for around 30,000 upper layer hidden AS links, and is still more accurate and stable
   under more incomplete or biased observations.
----
-MARKER: 2020_Z_Lin_ICM
-TYPE: inproceedings
-AUTHOR: Lin, Zinan; Jain, Alankar; Wang, Chen; Fanti, Giulia; Sekar, Vyas
-GEOLOC: Pittsburgh, PA, US; Pittsburgh, PA, US; New York, NY, US; Pittsburgh, PA,
-  US; Pittsburgh, PA, US
-TITLE: Using GANs for Sharing Networked Time Series Data:Challenges, Initial Promise,
-  and Open Questions
-YEAR: '2020-10'
-CTITLE: 'IMC 20: Proceedings of the ACM Internet Measurement Conference'
-PAGE: (20 pages)
-URL: https://dl.acm.org/doi/10.1145/3419394.3423643
-TOPKEY: topology-ark-itdk
-ABS: Limited data access is a longstanding barrier to data-driven research and development
-  in the networked systems community. In this work, we explore if and how generative
-  adversarial networks (GANs) can be used to incentivize data sharing by enabling
-  a generic framework for sharing synthetic datasets with minimal expert knowledge.
-  As a specific target, our focus in this paper is on time series datasets with metadata
-  (e.g., packet loss rate measurements with corresponding ISPs). We identify key challenges
-  of existing GAN approaches for such workloads with respect to fidelity (e.g., long-term
-  dependencies, complex multidimensional relationships, mode collapse) and privacy
-  (i.e., existing guarantees are poorly understood and can sacrifice fidelity). To
-  improve fidelity, we design a custom workflow called DoppelGANger (DG) and demonstrate
-  that across diverse real-world datasets (e.g., bandwidth measurements, cluster requests,
-  web sessions) and use cases (e.g., structural characterization, predictive modeling,
-  algorithm comparison), DG achieves up to 43% better fidelity than baseline models.
-  Although we do not resolve the privacy problem in this work, we identify fundamental
-  challenges with both classical notions of privacy and recent advances to improve
-  the privacy properties of GANs, and suggest a potential roadmap for addressing these
-  challenges. By shedding light on the promise and challenges, we hope our work can
-  rekindle the conversation on workflows for data sharing.
 ---
 MARKER: 2020_C_Deccio_IMC
 TYPE: inproceedings
@@ -20602,30 +20422,6 @@ ABS: Many systems rely on traceroutes to monitor or characterize the Internet. T
   indicates that 80% of the traceroutes that our techniques signal as stale have indeed
   changed, even though the AS hops remained the same. Our techniques combine to identify
   79% of all border IP changes, without issuing a single online measurement.
----
-MARKER: 2019_P_London_ACM
-TYPE: article
-AUTHOR: London, Palma; Vardi, Shai; Wierman, Adam
-GEOLOC: Pasadena, CA, US; West Lafayette, IN, US; Pasadena, CA, US
-TITLE: Logarithmic Communication for DistributedOptimization in Multi-Agent Systems
-YEAR: '2019-12'
-SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
-PAGE: (29 pages)
-URL: https://dl.acm.org/doi/10.1145/3366696
-TOPKEY: topology-as-relationships
-ABS: Classically, the design of multi-agent systems is approached using techniques
-  from distributed optimization such as dual descent and consensus algorithms. Such
-  algorithms depend on convergence to global consensus before any individual agent
-  can determine its local action. This leads to challenges with respect to communication
-  overhead and robustness, and improving algorithms with respect to these measures
-  has been a focus of the community for decades. This paper presents a new approach
-  for multi-agent system design based on ideas from the emerging field of local computation
-  algorithms. The framework we develop, LOcal Convex Optimization (LOCO), is the first
-  local computation algorithm for convex optimization problems and can be applied
-  in a wide-variety of settings. We demonstrate the generality of the framework via
-  applications to Network Utility Maximization (NUM) and the distributed training
-  of Support Vector Machines (SVMs), providing numerical results illustrating the
-  improvement compared to classical distributed optimization approaches in each case.
 ---
 MARKER: 2019_Y_Zhou_ACM
 TYPE: article
@@ -20687,7 +20483,7 @@ YEAR: '2020-06'
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
 PAGE: (29 pages)
 URL: https://dl.acm.org/doi/10.1145/3392150
-TOPKEY: routeviews_prefix2as, topology-itdk, topology-as-relationships
+TOPKEY: routeviews_prefix2as, topology-as-relationships
 ABS: "Load balancers choose among load-balanced paths to distribute traffic as if
   it makes no difference using one path or another. This work shows that the latency
   difference between load-balanced paths (called latency imbalance ), previously deemed
@@ -20707,20 +20503,6 @@ ABS: "Load balancers choose among load-balanced paths to distribute traffic as i
   show that all three applications can benefit from considering latency imbalance,
   where the accuracy of delay-based geolocation can be greatly improved by simply
   changing how \textttping measures the minimum path latency."
----
-MARKER: 2020_B_Guillermo_PAM
-TYPE: book
-AUTHOR: Baltra, Guillermo; Heidemann, John
-GEOLOC: Los Angeles, CA, US
-TITLE: Improving Coverage of Internet Outage Detection in Sparse Blocks
-YEAR: '2020-03'
-CTITLE: Passive and Active Measurement
-PAGE: (17 pages)
-URL: 
-  https://www.researchgate.net/publication/339990230_Improving_Coverage_of_Internet_Outage_Detection_in_Sparse_Blocks
-TOPKEY: ioda
-ABS: There is a growing interest in carefully observing the reliability of the Internet
-  edge.
 ---
 MARKER: 2020_E_Rye_NIA
 TYPE: misc
@@ -20756,7 +20538,7 @@ CTITLE: Passive and Active Measurement
 PAGE: (17 pages)
 URL: 
   https://www.researchgate.net/publication/339995263_A_First_Comparative_Characterization_of_Multi-cloud_Connectivity_in_Todays_Internet
-TOPKEY: 'topology-as-organization, topology-skitter-itdk '
+TOPKEY: 'topology-as-organization'
 ABS: Todays enterprises are adopting multi-cloud strategies at an unprecedented pace.
 ---
 MARKER: 2020_X_Chen_SIGCOMM
@@ -21015,36 +20797,6 @@ ABS: Network administrators constantly monitor network traffic for congestion an
   Evaluations show BeauCoup achieves the same accuracy as other sketch-based or sampling-based
   solutions using 4x fewer memory access.
 ---
-MARKER: 2019_x_chen_conext_201912
-TYPE: inproceedings
-AUTHOR: Chen, X.; Feibish, S. L.; Koral, Y.; Rexford, J.; Rottenstreich, O.; Monetti,
-  S. A.; Wang, T. Y.
-TITLE: Fine-grained queue measurement in the data plane
-CTITLE: 15th International Conference on Emerging Networking Experiments And Technologies
-PUBLISH: ACM
-YEAR: 2019-12
-PAGE: 15-29
-DOI: 10.1145/3359989.3365408
-URL: https://doi.org/10.1145/3359989.3365408
-TOPKEY: passive-2018
-GEOLOC: Princeton, NJ, US; Princeton, NJ, US; Florham Park, NJ, US; Princeton, NJ,
-  US; Haifa, IL; Florham Park, NJ, US; Florham Park, NJ, US
-ABS: Short-lived surges in traffic can cause periods of high queue utilization, leading
-  to packet loss and delay. To diagnose and alleviate performance problems, networks
-  need support for real-time, fine-grained queue measurement. By identifying the flows
-  that contribute significantly to queue build-up directly in the data plane, switches
-  can make targeted decisions to mark, drop, or reroute these flows in real time.
-  However, collecting fine-grained queue statistics is challenging even with modern
-  programmable switch hardware, due to limited memory and processing resources in
-  the data plane. We present ConQuest, a compact data structure that identifies the
-  flows making a significant contribution to the queue. ConQuest operates entirely
-  in the data plane, while working within the hardware constraints of programmable
-  switches. Additionally, we show how to measure queues in legacy devices through
-  link tapping and an off-path switch running ConQuest. Simulations show that ConQuest
-  can identify contributing flows with 90% precision on a 1 ms timescale, using less
-  than 65 KB of memory. Experiments with our Barefoot Tofino prototype show that ConQuest-enabled
-  active queue management reduces flow-completion time.
----
 MARKER: 2020_r_basat_ifip_202006
 TYPE: inproceedings
 AUTHOR: Basat, R. B.; Chen, X.; Einziger, G.; Feibish, S. L.; Raz, D.; Yu, M
@@ -21084,7 +20836,7 @@ YEAR: 2019-06
 PAGE: 160-168
 DOI: 10.1109/NETSOFT.2019.8806649
 URL: https://ieeexplore.ieee.org/document/8806649
-TOPKEY: passive-generic
+TOPKEY: passive-2018
 GEOLOC: Bologna, IT; Trento, IT; London, UK; Trento, IT
 ABS: 'The advent of Software-Defined Networking with OpenFlow first, and subsequently
   the emergence of programmable data planes, has boosted lot of research around many
@@ -21115,7 +20867,7 @@ YEAR: 2020-03
 PAGE: 75-88
 DOI: 10.1109/TNSM.2020.2968979
 URL: https://dl.acm.org/doi/10.1109/TNSM.2020.2968979
-TOPKEY: passive-generic
+TOPKEY: passive-2018
 GEOLOC: Bologna, IT; Trento, IT; London, UK; Trento, IT
 ABS: 'The advent of Software-Defined Networking with OpenFlow first, and subsequently
   the emergence of programmable data planes, has boosted lots of research around many
@@ -21191,41 +20943,6 @@ ABS: The depletion of the unallocated IPv4 addresses and the slow pace of IPv6 d
   blocks are used by malicious networks to address botnets and fraudulent sites in
   much higher rates compared to non-transferred addresses, while the timing of the
   attacks indicate efforts to evade filtering mechanisms.
----
-MARKER: 2019_r_niranjana_springer_20191408
-TYPE: article
-AUTHOR: Niranjana, R.; Kumar, V.; Sheen, Shina
-TITLE: Darknet Traffic Analysis and Classification Using Numerical AGM and Mean Shift
-  Clustering Algorithm
-PUBLISH: arxiv.org
-YEAR: 2019-08
-SERIAL: SN Computer Science
-VOLUME: '1'
-PAGE: (10 pages)
-URL: https://link.springer.com/article/10.1007/s42979-019-0016-x#author-information
-TOPKEY: telescope-patch-tuesday
-GEOLOC: Coimbatore, IN; Bangalore, IN; Coimbatore, IN
-ABS: The cyberspace continues to evolve more complex than ever anticipated, and same
-  is the case with security dynamics there. As our dependence on cyberspace is increasing
-  day-by-day, regular and systematic monitoring of cyberspace security has become
-  very essential. A darknet is one such monitoring framework for deducing malicious
-  activities and the attack patterns in the cyberspace. Darknet traffic is the spurious
-  traffic observed in the empty address space, i.e., a set of globally valid Internet
-  Protocol (IP) addresses which are not assigned to any hosts or devices. In an ideal
-  secure network system, no traffic is expected to arrive on such a darknet IP space.
-  However, in reality, noticeable amount of traffic is observed in this space primarily
-  due to the Internet wide malicious activities, attacks and sometimes due to the
-  network level misconfigurations. Analyzing such traffic and finding distinct attack
-  patterns present in them can be a potential mechanism to infer the attack trends
-  in the real network. In this paper, the existing Basic and Extended AGgregate and
-  Mode (AGM) data formats for darknet traffic analysis is studied and an efficient
-  29-tuple Numerical AGM data format suitable for analyzing the source IP address
-  validated TCP connections (three-way handshake) is proposed to find attack patterns
-  in this traffic using Mean Shift clustering algorithm. Analyzing the patterns detected
-  from the clusters results in providing the traces of various attacks such as Mirai
-  bot, SQL attack, and brute force. Analyzing the source IP validated TCP, darknet
-  traffic is a potential technique in Cyber security to find the attack trends in
-  the network.
 ---
 MARKER: 2020_e_rye_springer_20201803
 TYPE: inproceedings
@@ -24738,7 +24455,7 @@ VOLUME: ''
 PAGE: ''
 DOI: 10.1109/ICCNC.2019.8685639
 URL: https://ieeexplore.ieee.org/abstract/document/8685639
-TOPKEY: topology-as-relationships
+TOPKEY: topology-as-relationships, bgpstream
 GEOLOC: Honolulu, HI, US
 ABS: The increasing complexity of networks together with technological trends that
   allow for fine-grained control and programmability have made network management
@@ -24810,31 +24527,6 @@ ABS: As autonomous systems tend to forward packets along the path with minimal r
   according to its purpose of malicious behaviour. At last, we discuss how inter-domain
   routing bottlenecks may be affected as the Internet evolves, where we witness the
   new, or wider, deployment of some routing related mechanisms.
----
-MARKER: 2019_jj_sw_ys_bl_yx_wz_20191019
-TYPE: article
-AUTHOR: Jiang, J., Wen, S., Yu, S., Liu, B., Xiang, Y., Zhou, W.
-TITLE: 'Source Identification Under Complete Observations: A Maximum Likelihood (ML)
-  Source Estimator'
-SERIAL: Malicious Attack Propagation and Source Identification
-YEAR: '2019'
-VOLUME: ''
-PAGE: (8 pages)
-DOI: 10.1007/978-3-030-02179-5_6
-URL: https://link.springer.com/chapter/10.1007/978-3-030-02179-5_6
-TOPKEY: topology-as-relationships
-GEOLOC: Melbourne, AU
-ABS: 'In this chapter, we introduce a propagation source estimator under complete
-  observations: a maximum likelihood source estimator (Rumor Center). According to
-  Chap.  5, a complete observation presents the exact state for each node in the network
-  at certain time t. This type of observation provides comprehensive knowledge of
-  a transient status of the network. Initial research on propagation source identification
-  focused on complete observations, such as Rumor Center, Dynamic Age, Minimum Description
-  Length, etc. Among these methods, Rumor center is a widely used method. Many variations
-  have been proposed based on this method, such as Local Rumor Center, Multiple Rumor
-  Center, etc. Here, we present the details of the Rumor Center estimator. For the
-  techniques involved in other methods under complete observations, readers could
-  refer to Chap.  9 for details.'
 ---
 MARKER: 2019_qx_jjz_xtw_yjl_cg_fl_hn_yry_jm_20191021
 TYPE: article
@@ -24912,7 +24604,7 @@ VOLUME: ''
 PAGE: (9 pages)
 DOI: 10.1109/INFOCOM.2019.8737483
 URL: https://ieeexplore.ieee.org/abstract/document/8737483
-TOPKEY: passive-generic
+TOPKEY: passive-2016
 GEOLOC: Paris, FR
 ABS: 'Getting good statistical models of traffic on network links is a well-known,
   often-studied problem. A lot of attention has been given to correlation patterns
@@ -25061,7 +24753,7 @@ VOLUME: ''
 PAGE: (12 pages)
 DOI: 10.1109/JSYST.2019.2922217
 URL: https://ieeexplore.ieee.org/abstract/document/8745681
-TOPKEY: passive-generic
+TOPKEY: passive-2016
 GEOLOC: Beijing, CN
 ABS: Software-defined networking decouples the control plane and data plane, which
   grants more computing power for routing computations. Traditional routing methods
@@ -25090,7 +24782,7 @@ SERIAL: IEEE Trans. on Network and Service Management
 YEAR: '2019'
 PAGE: (14 pages)
 DOI: 10.1109/TNSM.2019.2929425
-TOPKEY: passive-2015
+TOPKEY: passive-2015, passive-2016, passive-2017
 GEOLOC: Halifax, CA
 ABS: 'Distributed Denial of Service (DDoS) attacks are a major security threat against
   the availability of conventional or cloud computing resources. Numerous DDoS attacks,
@@ -25258,7 +24950,7 @@ VOLUME: '133'
 PAGE: (11 pages)
 DOI: 10.1016/j.jpdc.2019.06.009
 URL: https://www.sciencedirect.com/science/article/pii/S0743731518305495#bio1
-TOPKEY: passive-generic
+TOPKEY: passive-2011
 GEOLOC: Hong Kong, CN
 ABS: Graphics processing units are widely-used for packet processing acceleration
   in both physical and virtual networks. However, real-life packets come in highly-divergent
@@ -25284,7 +24976,7 @@ VOLUME: '101'
 PAGE: (14 pages)
 DOI: 10.1016/j.future.2019.07.031
 URL: https://www.sciencedirect.com/science/article/pii/S0167739X1930490X
-TOPKEY: passive-generic
+TOPKEY: passive-2018
 GEOLOC: Lecce, IT
 ABS: Reliably tracking large network flows in order to determine so-called elephant
   flows, also known as heavy hitters or frequent items, is a common data mining task.
@@ -25335,41 +25027,6 @@ ABS: Efficient and accurate control of incoming inter-domain traffic is critical
   since it can help estimate traffic volumes so as to achieve more accurate control
   of traffic. Third, ICN can efficiently handle the bursty traffic and link failures
   compared with IPN.
----
-MARKER: 2019_ma_smaz_20191053
-TYPE: article
-AUTHOR: Aamir, M., Zaidi, S. M. A.
-TITLE: 'DDoS attack detection with feature engineering and machine learning: the framework
-  and performance evaluation'
-SERIAL: International Journal of Information Security
-YEAR: '2019'
-VOLUME: ''
-PAGE: (25 pages)
-DOI: 10.1007/s10207-019-00434-1
-URL: https://link.springer.com/article/10.1007/s10207-019-00434-1
-TOPKEY: passive-generic
-GEOLOC: Karachi, PK
-ABS: This paper applies an organized flow of feature engineering and machine learning
-  to detect distributed denial-of-service (DDoS) attacks. Feature engineering has
-  a focus to obtain the datasets of different dimensions with significant features,
-  using feature selection methods of backward elimination, chi2, and information gain
-  scores. Different supervised machine learning models are applied on the feature-engineered
-  datasets to demonstrate the adaptability of datasets for machine learning under
-  optimal tuning of parameters within given sets of values. The results show that
-  substantial feature reduction is possible to make DDoS detection faster and optimized
-  with minimal performance hit. The paper proposes a strategic-level framework which
-  incorporates the necessary elements of feature engineering and machine learning
-  with a defined flow of experimentation. The models are also validated with cross-validation
-  and evaluated for area-under-curve analyses. It provides comprehensive solutions
-  which can be trusted to avoid the overfitting and collinearity problems of data
-  while detecting DDoS attacks. In the case study of DDoS datasets, K-nearest neighbors
-  algorithm overall exhibits the best performance followed by support vector machine,
-  whereas low-dimensional datasets of discrete feature types perform better under
-  the Random Forest model as compared to high dimensions with numerical features.
-  The accuracy scores of dataset with the lowest number of features remain competitive
-  with other datasets under all machine learning models, leading to a substantially
-  reduced processing overhead. The experiments show that approximately 68% reduction
-  in the feature space is possible with an impact of only about 0.03% on accuracy.
 ---
 MARKER: 2019_fn_fmp_jn_20191054
 TYPE: article
