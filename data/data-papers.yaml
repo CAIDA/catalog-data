@@ -25038,7 +25038,7 @@ VOLUME: '103'
 PAGE: (13 pages)
 DOI: 10.1016/j.cor.2018.11.016
 URL: https://www.sciencedirect.com/science/article/pii/S0305054818303022
-TOPKEY: passive-generic
+TOPKEY: passive-2008
 GEOLOC: Boston, MA, US
 ABS: We study the minimum cost vertex blocker clique problem (CVCP), which is defined
   as follows. Given a simple undirected graph with weights and costs on its vertices
@@ -25051,28 +25051,6 @@ ABS: We study the minimum cost vertex blocker clique problem (CVCP), which is de
   first combinatorial branch-and-bound algorithm for this problem. The computational
   performance of these exact algorithms is studied on a test-bed of randomly generated
   graphs, and real-life instances.
----
-MARKER: 2019_mc_ej_20191100
-TYPE: article
-AUTHOR: Czekaj, M., Jamro, E.
-TITLE: Flow caching effectiveness in packet forwarding applications
-SERIAL: Computer Science Journal
-YEAR: '2019'
-VOLUME: '20'
-PAGE: (19 pages)
-DOI: 10.7494/csci.2019.20.2.3185
-URL: https://journals.agh.edu.pl/csci/article/view/3185/2202
-TOPKEY: passive-2014
-GEOLOC: PL
-ABS: Routing algorithms are known to be a potential bottleneck for packet processing.
-  Network flow caching can function as a genneral acceleration technique for packet
-  processing workloads. The goal of this article is to evaluate the effectiveness
-  of packet flow caching techniques in high-speed networks. The area of focus is data
-  distribution characteristics that lead to effectiveness of caching of network flows
-  (connections). Based on statistical analysis and simulations the article sets necessary
-  conditions for effective use of caches in packet forwarding applications. Public
-  domain network traces were examined and measured for data locality. Software simulations
-  show a strong correlation between flow packet distance metric and cache hit rate.
 ---
 MARKER: 2019_rl_lg_ig_jeldv_ja_20191101
 TYPE: inproceedings
@@ -25352,38 +25330,7 @@ ABS: The newly emerged software-defined networking (SDN) paradigm provides a fle
   rate. The proposed solution can detect the traffic at the edge switch so that the
   attack alert can be raised at the earliest.
 ---
-MARKER: 2019_kmp_vss_kk_ms_20191121
-TYPE: article
-AUTHOR: Prasad, K. M., Siva, V. S., Kishore, K., Sreenivasulu, M.
-TITLE: 'DITFEC: Drift Identification in Traffic-Flow Streams for DDoS Attack Defense
-  Through Ensemble Classifier'
-SERIAL: Computing and Network Sustainability
-YEAR: '2019'
-VOLUME: '75'
-PAGE: (8 pages)
-DOI: 10.1007/978-981-13-7150-9_32
-URL: https://link.springer.com/chapter/10.1007/978-981-13-7150-9_32
-TOPKEY: ddos-2007, telescope-3days-conficker
-GEOLOC: Tirupati, IN
-ABS: The overwhelming of the request flow beyond the target server capacity leads
-  to the service denial to the legitimate users. Because of the servers oversized
-  potential, the act of flooding requests beyond the server capacity is carried by
-  the malicious attackers from distributed environment called distributed denial-of-service
-  attack. Hence, applying the knowledge gained from the findings of previous request
-  distributions research works seems to be the suitable strategy to cease the DDOS
-  attacks. This strategy indispensable limitation is skipping to detect the new patterns
-  of request flooding dug by the attacker at the server from the previous knowledge
-  on earlier attack distribution patterns. Therefore, this paper endeavors to contribute
-  on how to handle the limitation by proposing a novel-trained ensemble classifier
-  with new features which reflects in the traffic-flow properties, so that the traffic-flow
-  tuple shows distribution diversity from each other which is considered and attached
-  to individual classifier. With the application of KS test, the proposed model tries
-  to find the distribution diversity among the traffic-flow tuples using the features
-  set. Later, the similar policy is used to discover the distribution resemblance
-  amid the renewed tuple as well as the tuples involved to the multiple classifiers
-  in the ensemble classification model. The experiment worked out on the voluminous
-  traffic flow with visible distribution variety.
----
+
 MARKER: 2019_v_vr_20191123
 TYPE: article
 AUTHOR: Vipul, V. R.
@@ -25529,37 +25476,6 @@ ABS: Distributed Denial of Service (DDoS) attacks have caused great damage to th
   improve the situational awareness of DDoS attacks, and reduce false alarm rate,
   missing alarm rate and total error rate.
 ---
-MARKER: 2019_mmo_sk_tk_sv_20191130
-TYPE: article
-AUTHOR: Oo, M. M., Kamolphiwong, S., Kamolphiwong, T., Vasupongayya, S.
-TITLE: Advanced Support Vector Machine- (ASVM-) Based Detection for Distributed Denial
-  of Service (DDoS) Attack on Software Defined Networking (SDN)
-SERIAL: Journal of Computer Networks and Communications
-YEAR: '2019'
-VOLUME: ''
-PAGE: (12 pages)
-DOI: 10.1155/2019/8012568
-URL: https://www.hindawi.com/journals/jcnc/2019/8012568/abs/
-TOPKEY: passive-2015, passive-2008
-GEOLOC: Hatyai, TL
-ABS: Software Defined Networking (SDN) has many advantages over a traditional network.
-  The great advantage of SDN is that the network control is physically separated from
-  forwarding devices. SDN can solve many security issues of a legacy network. Nevertheless,
-  SDN has many security vulnerabilities. The biggest issue of SDN vulnerabilities
-  is Distributed Denial of Service (DDoS) attack. The DDoS attack on SDN becomes an
-  important problem, and varieties of methods had been applied for detection and mitigation
-  purposes. The objectives of this paper are to propose a detection method of DDoS
-  attacks by using SDN based technique that will disturb the legitimate users activities
-  at the minimum and to propose Advanced Support Vector Machine (ASVM) technique as
-  an enhancement of existing Support Vector Machine (SVM) algorithm to detect DDoS
-  attacks. ASVM technique is a multiclass classification method consisting of three
-  classes. In this paper, we can successfully detect two types of flooding-based DDoS
-  attacks. Our detection technique can reduce the training time as well as the testing
-  time by using two key features, namely, the volumetric and the asymmetric features.
-  We evaluate the results by measuring a false alarm rate, a detection rate, and accuracy.
-  The detection accuracy of our detection technique is approximately 97% with the
-  fastest training time and testing time.
----
 MARKER: 2019_lz_ks_yx_20191131
 TYPE: article
 AUTHOR: Zhou, L., Sood, K., Xiang, Y.
@@ -25583,33 +25499,6 @@ ABS: The challenges from Distributed Denial-of-Service (DDoS) attacks are severe
   of flows. Both theoretical proofs and the results of experiments using real datasets
   demonstrate that our method has high detection accuracy rate compared to the existing
   measurements.
----
-MARKER: 2018_oee_ma_bb_ba_akaa_20191132
-TYPE: article
-AUTHOR: Elejla, O. E., Anbar, M., Belaton, B., Alabsi, B., Al-Ani, A. K.
-TITLE: Comparison of Classification Algorithms on ICMPv6-Based DDoS Attacks Detection
-SERIAL: Computational Science and Technology
-YEAR: '2019'
-VOLUME: ''
-PAGE: (10 pages)
-DOI: 10.1007/978-981-13-2622-6_34
-URL: https://link.springer.com/chapter/10.1007/978-981-13-2622-6_34
-TOPKEY: topology-ark-ipv6-traceroute
-GEOLOC: Penang, MY
-ABS: Computer networks are aimed to be secured from any potential attacks. Intrusion
-  Detection systems (IDS) are a popular software to detect any possible attacks. Among
-  the mechanisms that are used to build accurate IDSs, classification algorithms are
-  extensively used due to their efficiency and auto-learning ability. This paper aims
-  to evaluate classification algorithms for detecting the dangerous and popular IPv6
-  attacks which are ICMPv6-based DDoS attacks. A comparison between five classification
-  algorithms namely Decision Tree (DT), Support Vector Machine (SVM), Naive Bayes
-  (NB), K-Nearest Neighbors (KNN) and Neural Networks (NN) were conducted. The comparison
-  was conducted using a publicly available flow-based dataset. The experimental results
-  showed that classifiers have detected most of the included attacks with a range
-  from 73%-85% for the true positive rate. Moreover, KNN classification algorithm
-  has been the fastest algorithm (0.12 seconds) with the best detection accuracy (85.7%)
-  and less false alarms (0.171). However, SVM achieved the lowest detection accuracy
-  (73%) while NN was the slowest algorithm in training the detection model (323 seconds).
 ---
 MARKER: 2019_jb_bn_skgs_ap_20191133
 TYPE: inproceedings
@@ -25752,32 +25641,6 @@ ABS: Software-defined networking (SDN) provides a promising architecture for fut
   attacks quickly but also has a high detection rate and low false positive rate.
   More importantly, it can take appropriate defense and recovery measures in the time
   after the attack has been identified.
----
-MARKER: 2019_pdb_ib_so_mp_20191138
-TYPE: article
-AUTHOR: Bojovic, P. D., Basicevic, I., Ocovaj, S., Popovic, M.
-TITLE: A practical approach to detection of distributed denial-of-service attacks
-  using a hybrid detection method
-SERIAL: Computers and Electrical Engineering
-YEAR: '2019'
-VOLUME: ''
-PAGE: (13 pages)
-DOI: 10.1016/j.compeleceng.2018.11.004
-URL: https://www.sciencedirect.com/science/article/pii/S0045790617327490
-TOPKEY: ddos-2007
-GEOLOC: Novi Sad, SB
-ABS: This paper presents a hybrid method for the detection of distributed denial-of-service
-  (DDoS) attacks that combines feature-based and volume-based detection. Our approach
-  is based on an exponential moving average algorithm for decision-making, applied
-  to both entropy and packet number time series. The approach has been tested by performing
-  a controlled DDoS experiment in a real academic network. The network setup and test
-  scenarios including both high-rate and low-rate attacks are described in the paper.
-  The performance of the proposed method is compared to the performance of two methods
-  that are already known in the literature. One is based on the counting of SYN packets
-  and is used for detection of SYN flood attacks, while the other is based on a CUSUM
-  algorithm applied to the entropy time series. The results show the advantage of
-  our approach compared to methods that are based on either entropy or number of packets
-  only.
 ---
 MARKER: 2019_am_rf_xd_20191143
 TYPE: inproceedings
@@ -26163,28 +26026,6 @@ ABS: ': In this paper we receive models that in some situations can be applied t
   [5]) are not public. From the published papers [4], [5] we are not able to find
   parameters that can be used in our model.. Many researchers make a great efforts
   to describe adequately situation connected to worm propagation [14]-[58].'
----
-MARKER: 2019_gfc_as_sjs_adk_20191205
-TYPE: misc
-AUTHOR: Ciocarlie, G. F., Stavrou, A., Stolfo, S. J., Keromytis, A. D.
-TITLE: Systems, methods, and media for generating sanitized data, sanitizing anomaly
-  detection models, and/or generating sanitized anomaly detection models
-PUBLISH: Google Patents
-YEAR: '2019'
-VOLUME: ''
-PAGE: (15 pages)
-URL: https://patents.google.com/patent/US10178113B2/en
-TOPKEY: code-red-worm
-GEOLOC: New York, US
-ABS: 'Systems, methods, and media for generating sanitized data, sanitizing anomaly
-  detection models, and generating anomaly detection models are provided. In some
-  embodiments, methods for sanitizing anomaly detection models are provided. The methods
-  including: receiving at least one abnormal anomaly detection model from at least
-  one remote location; comparing at least one of the at least one abnormal anomaly
-  detection model to a local normal detection model to produce a common set of features
-  common to both the at least one abnormal anomaly detection model and the local normal
-  detection model; and generating a sanitized normal anomaly detection model by removing
-  the common set of features from the local normal detection model.'
 ---
 MARKER: 2019_jj_sw_bl_sy_yx_wz_20191206
 TYPE: article
@@ -27900,7 +27741,7 @@ VOLUME: '0'
 PAGE: 1-1
 YEAR: 2019-12
 DOI: 10.1109/TNSM.2019.2962278
-TOPKEY: topology-ark-itdk
+TOPKEY: topology-generic
 ABS: Internet topology discovery aims at analyzing one of the most complex distributed
   systems currently deployed. Usually, it relies on measurement campaigns using hop-limited
   probes sent with traceroute. However, this probing tool comes with several limits.
@@ -27986,39 +27827,6 @@ ABS: Internet in recent years has become a huge set of channels for content dist
   property that avoids un-justified AS transit costs. In our proposal this property
   allows to implement a network aware service discovery.
 ---
-MARKER: 2019_r_bridges_arxiv_1902_00053
-TYPE: misc
-AUTHOR: Iannacone, M.D., Bridges, R.A.
-TITLE: 'Quantifiable and comparable evaluations of cyber defensive capabilities: A
-  survey and novel, unified approach'
-PUBLISH: arxiv.org
-YEAR: 2019-10
-PAGE: (33 pages)
-URL: https://arxiv.org/abs/1902.00053
-TOPKEY: passive-generic
-GEOLOC: Oak Ridge, TN, US
-ABS: Metrics and frameworks to quantifiably assess security measures have arisen from
-  needs of three distinct research communities - statistical measures from the intrusion
-  detection and prevention literature, evaluation of cyber exercises, e.g., red-team
-  and capture-the-flag competitions, and economic analyses addressing cost-versus-security
-  tradeoffs. In this paper we provide two primary contributions to the security evaluation
-  literature - a representative survey, and a novel framework for evaluating security
-  that is flexible, applicable to all three use cases, and readily interpretable.
-  In our survey of the literature we identify the distinct themes from each communitys
-  evaluation procedures side by side and flesh out the drawbacks and benefits of each.
-  The evaluation framework we propose includes comprehensively modeling the resource,
-  labor, and attack costs in dollars incurred based on expected resource usage, accuracy
-  metrics, and time. This framework is a more holistic approach in that it incorporates
-  the accuracy and performance metrics, which dominate intrusion detection evaluation,
-  the time to detection and impact to data and resources of an attack, favored by
-  educational competitions metrics, and the monetary cost of many essential security
-  components used in financial analysis. Moreover, it is flexible enough to accommodate
-  each use case, easily interpretable, and comprehensive in terms of costs considered.
-  Finally, we provide two examples of the framework applied to real-world use cases.
-  Overall, we provide a survey and a grounded, flexible framework and multiple concrete
-  examples for evaluating security that addresses the needs of three, currently distinct
-  communities.
----
 MARKER: 2019_m_pour_ars_6
 TYPE: inproceedings
 AUTHOR: Pour, M.S., Mangino, A., Friday, K., Rathbun, M., Bou-Harb, E., Iqbal, F.,
@@ -28090,7 +27898,7 @@ PUBLISH: arxiv.org
 YEAR: 2019-07
 PAGE: (18 pages)
 URL: https://arxiv.org/abs/1907.08057
-TOPKEY: passive-2016
+TOPKEY: passive-2015, passive-2016
 GEOLOC: Nanjing, CN
 ABS: 'A super point is a host that interacts with a far larger number of counterparts
   in the network over a period of time. Super point detection plays an important role
@@ -66938,7 +66746,7 @@ VOLUME: '2'
 PAGE: 418-424
 URL: 
   https://ijaem.net/issue_dcp/Scalable%20Unsupervised%20Ensemble%20Algorithm%20for%20Effective%20Insider%20Threat%20Detection.pdf
-TOPKEY: passive_2015_pcap
+TOPKEY: passive-2015
 GEOLOC: Ogun, NG
 ABS: Insider threats remain one of the oldest and notorious threats to information
   security. Early detection remains key to preventing insider attacks on an information
@@ -67802,7 +67610,7 @@ AUTHOR: Bayati, Abdolkhalegh; Nguyen, Kim-Khoa; Cheriet, And Mohamed
 TITLE: Gaussian Process Regression Ensemble Model for Network Traffic Prediction
 YEAR: 2020-09
 URL: https://ieeexplore.ieee.org/abstract/document/9204965
-TOPKEY: passive-generic
+TOPKEY: passive-2008, passive-2009, passive-2010, passive-2011, passive-2012, passive-2013, passive-2014, passive-2015
 ---
 MARKER: 2023_i_kunze_acm_502301
 TYPE: in_proceedings
