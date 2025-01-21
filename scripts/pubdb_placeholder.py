@@ -107,7 +107,7 @@ def main():
                     continue
                    
                 id_ = None
-                m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",
+                m = re.search(r"https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",
                         link["to"])
                 if m:
                     type_,date, id_ = m.groups()
@@ -245,7 +245,7 @@ def id_lookup(id_):
     return None
 
 def id_yearless(id_):
-    m = re.search("(.+):(\d\d\d\d)_(.+)",id_)
+    m = re.search(r"(.+):(\d\d\d\d)_(.+)",id_)
     if m:
         type_,date,name = m.groups()
         return type_+":"+name

@@ -261,10 +261,10 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                if re.search("\.json$",filename,re.IGNORECASE) or re.search("\.md$", filename,re.IGNORECASE):
+                if re.search(r"\.json$",filename,re.IGNORECASE) or re.search(r"\.md$", filename,re.IGNORECASE):
                     try:
                         pname = path+"/"+filename
-                        if re.search("\.json$",filename,re.IGNORECASE):
+                        if re.search(r"\.json$",filename,re.IGNORECASE):
                             info = json.load(open(pname))
                         else:
                             info = utils.parse_markdown(pname);
@@ -844,7 +844,7 @@ def object_add(type_, info):
             utils.error_add(info["filename"], "failed to find paper's date")
             error = True
 
-        m = re.search("^paper:(\d\d\d\d)_(.+)", info["id"])
+        m = re.search(r"^paper:(\d\d\d\d)_(.+)", info["id"])
         if m:
             date,id_short = m.groups()
             id_paper[id_short] = info
@@ -990,7 +990,7 @@ def object_finish(obj):
                         caida = False
                         if "organizations" in person_org:
                             for org in person_org["organizations"]:
-                                if re.search("caida", org, re.IGNORECASE):
+                                if re.search(r"caida", org, re.IGNORECASE):
                                     caida = True
                         for k in ["person","presenter"]:
                             if k in person_org:
@@ -1117,7 +1117,7 @@ def object_lookup(info):
             print ("no id or name,_typename",info)
             sys.exit()
     else:
-        if not re.search("^"+type_,info["id"]):
+        if not re.search(r"^"+type_,info["id"]):
             info["id"] = info["__typename"]+":"+info["id"]
     id_ = info["id"]
     if id_ not in id_object:
@@ -1387,7 +1387,7 @@ def get_url():
                     if origin_found and m:
 
                         url = m.group(1).replace(":","/")
-                        url = re.sub('.+\@','https://', re.sub(".git$","",url ))
+                        url = re.sub(r'.+\@','https://', re.sub(".git$","",url ))
                         break
         if url is None:
             url = repo_url_default
@@ -1872,7 +1872,7 @@ def id_lookup(id_):
     return None
 
 def id_yearless(id_):
-    m = re.search("(.+):(\d\d\d\d)_(.+)",id_)
+    m = re.search(r"(.+):(\d\d\d\d)_(.+)",id_)
     if m:
         type_,date,name = m.groups()
         return type_+":"+name
@@ -2001,7 +2001,7 @@ def schema_load_category_from_file(fname):
                                 category_key = {}
                                 category["category_keys"].append(category_key)
                             if key == "properties":
-                                value = re.split("\s*;\s*", value)
+                                value = re.split(r"\s*;\s*", value)
                             category_key[key] = value
                     i += 1
         if category is not None:
