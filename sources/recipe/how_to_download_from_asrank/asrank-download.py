@@ -1,7 +1,6 @@
+#!  /usr/bin/env python3
 # Copyright (c) 2022 The Regents of the University of California
 # All Rights Reserved
-
-#!  /usr/bin/env python3
 __author__ = "Bradley Huffaker"
 __email__ = "<bradley@caida.org>"
 # This software is Copyright (C) 2018 The Regents of the University of
@@ -63,9 +62,9 @@ encoder = json.JSONEncoder()
 ######################################################################
 parser = argparse.ArgumentParser()
 parser.add_argument("-v", dest="verbose", help="prints out lots of messages", action="store_true")
-parser.add_argument("-a", dest="asns", help="download asns", type=str) 
-parser.add_argument("-o", dest="organizations", help="download organizations", type=str)
-parser.add_argument("-l", dest="asnLinks", help="download asn links", type=str)
+parser.add_argument("-a", dest="asns", help="download asns to provided file ", type=str) 
+parser.add_argument("-o", dest="organizations", help="download organizations to provided file ", type=str)
+parser.add_argument("-l", dest="asnLinks", help="download asn links to provided file ", type=str)
 parser.add_argument("-q", dest="query", help="single query", type=str)
 parser.add_argument("-Q", dest="query", help="list query", type=str)
 parser.add_argument("-u", dest="url", help="API URL (https://api.asrank.caida.org/v2/graphiql)", type=str, default="https://api.asrank.caida.org/v2/graphql")

@@ -49,10 +49,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("json", nargs="+", type=str, help="single json object file")
 args = parser.parse_args()
 
-re_front = re.compile("^_")
-re_end = re.compile("_$")
-re_id_illegal = re.compile("[^\d^a-z^A-Z]+")
-re_type_id = re.compile("[^\:]+:(.+)")
+re_front = re.compile(r"^_")
+re_end = re.compile(r"_$")
+re_id_illegal = re.compile(r"[^\d^a-z^A-Z]+")
+re_type_id = re.compile(r"[^\:]+:(.+)")
 
 def main():
 

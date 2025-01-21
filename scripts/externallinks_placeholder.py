@@ -212,8 +212,8 @@ def parse_paper(fname, dataset_mappings, key_value):
         paper["name"] = title
 
 
-    re_year = re.compile("(\d\d\d\d)")
-    re_year_month = re.compile("(\d\d\d\d).(\d\d)")
+    re_year = re.compile(r"(\d\d\d\d)")
+    re_year_month = re.compile(r"(\d\d\d\d).(\d\d)")
     for key, value in key_value.items():
         # Remove any whitespace, and the quotes around the data.
         value = value.rstrip()

@@ -106,22 +106,22 @@ type_ids = {}
 
 singular_plural = {}
 
-re_tag = re.compile("^tag:")
-re_only_white_space = re.compile("^\s*$")
+re_tag = re.compile(r"^tag:")
+re_only_white_space = re.compile(r"^\s*$")
 
-#re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
-re_not_word = re.compile("[^a-z^A-Z^0-9]+")
-re_word = re.compile("^[a-zA-Z0-9]+$",re.IGNORECASE)
+#re_not_word = re.compile(r"[\s ,\?\.\(\)\:]+")
+re_not_word = re.compile(r"[^a-z^A-Z^0-9]+")
+re_word = re.compile(r"^[a-zA-Z0-9]+$",re.IGNORECASE)
 
-re_html = re.compile("<[^>]+>")
-re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
-re_type_name = re.compile("([^\:]+):(.+)")
-re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
+re_html = re.compile(r"<[^>]+>")
+re_id_illegal = re.compile(r"[^a-z^\d^A-Z]+")
+re_type_name = re.compile(r"([^\:]+):(.+)")
+re_readme_md = re.compile(r"^readme\.md$",re.IGNORECASE)
 
-re_date_key = re.compile("^date",re.IGNORECASE)
-re_not_digit = re.compile("[^\d]+")
+re_date_key = re.compile(r"^date",re.IGNORECASE)
+re_not_digit = re.compile(r"[^\d]+")
 
-re_placeholder = re.compile("___")
+re_placeholder = re.compile(r"___")
 
 repo_url_default = "https://github.com/CAIDA/catalog-data"
 
@@ -877,7 +877,7 @@ def object_add(type_, info):
     return None
 
 # Helper function 
-re_third_party = re.compile("third party",re.IGNORECASE)
+re_third_party = re.compile(r"third party",re.IGNORECASE)
 third_party_found = False
 def organization_ids_add(org, id_):
     if re_third_party.search(id_):
@@ -890,8 +890,8 @@ def organization_ids_add(org, id_):
         organization_ids[org] = set()
     organization_ids[org].add(id_)
 
-re_caida = re.compile("caida",re.IGNORECASE)
-re_caida_long = re.compile("Center for Applied Internet Data Analysis",re.IGNORECASE)
+re_caida = re.compile(r"caida",re.IGNORECASE)
+re_caida_long = re.compile(r"Center for Applied Internet Data Analysis",re.IGNORECASE)
 def object_finish(obj):
 
     ############
@@ -1334,11 +1334,11 @@ def recipe_process(path):
                 else:
                     info["tabs"] = tabs
 
-re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
-re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
-re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
-re_url_absolute = re.compile("^https?:")
-re_mailto = re.compile("^mailto:")
+re_markdown_url = re.compile(r"^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
+re_html_url = re.compile(r"^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_image_url = re.compile(r"^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_url_absolute = re.compile(r"^https?:")
+re_mailto = re.compile(r"^mailto:")
 
 def replace_markdown_urls(assets_dir,line):
     temp = line
@@ -1369,8 +1369,8 @@ def replace_markdown_urls(assets_dir,line):
 def get_url():
     filename = ".git/config"
     if os.path.exists(filename):
-        re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
-        re_url = re.compile("\s+url = ([^\s]+)")
+        re_remote = re.compile(r'^\[([^\s]+) "([^"]+)"')
+        re_url = re.compile(r"\s+url = ([^\s]+)")
         url = None
         with open(filename) as f:
             origin_found = False
@@ -1537,8 +1537,8 @@ def word_scoring_link(w_s0, w_s1):
         #                    word_score[word] += weight*freq 
 
 seen_value = set()
-re_not_letter = re.compile("[^a-z^A-z]+")
-re_not_empty = re.compile("[^\s]")
+re_not_letter = re.compile(r"[^a-z^A-z]+")
+re_not_empty = re.compile(r"[^\s]")
 def word_freq_get(value):
     word_freq = {}
     type_ = type(value)
@@ -1914,7 +1914,7 @@ def data_load_from_summary(filename):
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
 def redirects_add(filename):
-    re_empty = re.compile("^\s*$")
+    re_empty = re.compile(r"^\s*$")
     with open ("data/redirects.csv") as fin:
         keys = None
         for row in csv.reader(fin, delimiter=',',quotechar='"'):
@@ -1957,8 +1957,8 @@ def redirects_add(filename):
 ######################################33
 # Load Schema and Categories from file
 def schema_load_category_from_file(fname):
-    re_category_key = re.compile("category_key",re.IGNORECASE)
-    re_empty = re.compile("^\s*$")
+    re_category_key = re.compile(r"category_key",re.IGNORECASE)
+    re_empty = re.compile(r"^\s*$")
     with open(fname) as fin:
         keys = None
         category_key_index = None
@@ -2008,7 +2008,7 @@ def schema_load_category_from_file(fname):
             object_add("category",category)
 
 def schema_load_datasets_from_file(filename):
-    re_empty = re.compile("^\s*$")
+    re_empty = re.compile(r"^\s*$")
     with open(filename) as fin:
         keys = None
         dataset = None
