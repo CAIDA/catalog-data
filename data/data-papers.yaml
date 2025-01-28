@@ -67255,6 +67255,8 @@ TYPE: in_journal
 AUTHOR: Bayati, Abdolkhalegh; Nguyen, Kim-Khoa; Cheriet, And Mohamed
 TITLE: Gaussian Process Regression Ensemble Model for Network Traffic Prediction
 YEAR: 2020-09
+VOLUME: '8'
+SERIAL: IEEE Access
 URL: https://ieeexplore.ieee.org/abstract/document/9204965
 TOPKEY: passive-2008, passive-2009, passive-2010, passive-2011, passive-2012, passive-2013, passive-2014, passive-2015
 ---
@@ -71408,12 +71410,13 @@ YEAR: 2024-12
 URL: https://faculty.ist.psu.edu/wu/papers/Rupesh-Prajapati-dissertation.pdf
 GEOLOC: Centre County, PA, US
 TOPKEY: routeviews-prefix2as
-—--
+---
 MARKER: 2024_lincoln_m_dspace_7616
-TYPE: in_journal
+TYPE: online
 AUTHOR: Lincoln, M.
 TITLE: Better Networks” Project is Working to Improve Cybersecurity
 YEAR: 2024-10
+PUBLISH: MIT
 URL: https://dspace.mit.edu/handle/1721.1/157666
 GEOLOC: Worcester, MA, US
 TOPKEY: telescope-generic
@@ -71427,7 +71430,7 @@ URL: https://arxiv.org/abs/2409.02973
 GEOLOC: San Diego, CA, US
 TOPKEY: telescope-patch-tuesday
 PUBLISH: arxiv.org
-—
+---
 MARKER: 2024_sarieddine_k_ieee_3296
 TYPE: in_journal
 AUTHOR: Sarieddine, K., Sayed, M., Assi, C., Atallah, R., Torabi, S., Khoury, J., Pour, M., Bou-Harb, E.
