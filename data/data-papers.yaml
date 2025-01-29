@@ -71384,7 +71384,7 @@ URL: https://tesidottorato.depositolegale.it/handle/20.500.14242/67156
 GEOLOC: Genoa, IT
 TOPKEY: passive-generic
 ---
-MARKER: 2021_nawrocki_m_fu_berlin_7256
+MARKER: 2023_nawrocki_m_fu_berlin_7256
 TYPE: PhD_thesis
 AUTHOR: Nawrocki, M., Jonker, M., Schmidt, T., Wählisch, M.
 TITLE: "DDoS Attacks: Coverage, Mitigation, and Prevention"
@@ -71441,3 +71441,24 @@ VOLUME: "21"
 URL: https://ieeexplore.ieee.org/abstract/document/10271387/
 GEOLOC: Montreal, QC, CA
 TOPKEY: telescope-generic
+---
+MARKER: 2024_fawcett_r_mit
+TYPE: online
+AUTHOR: Fawcett, R.
+TITLE: The Contours of the Cloud: Dissecting the Real Estate Investment Decisions of Data Center Operators
+PUBLISH: MIT DSpace
+YEAR: 2024-09
+URL: https://dspace.mit.edu/handle/1721.1/157114
+TOPKEY: ixps
+GEOLOC: Cambridge, MA, US
+---
+MARKER: 2024_gigis_p_acm
+TYPE: in_proceedings
+AUTHOR: Gigis, P.; Handley M.; Vissicchio S.
+TITLE: Bad Packets Come Back, Worse Ones Don't
+PUBLISH: ACM
+CTITLE: ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference
+YEAR: 2024-08
+URL: https://doi.org/10.1145/3651890.3672259
+TOPKEY: passive-generic
+GEOLOC: London, GB
