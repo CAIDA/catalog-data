@@ -7,15 +7,15 @@
     "links": [
         {
             "to": "paper:2016_r_beverly_imc_413",
-            "label": "used by"
+            "label": "usedBy"
         },
         {
             "to": "paper:2017_e_gaston_navpostgrad_2982",
-            "label": "used by"
+            "label": "usedBy"
         },
         {
             "to": "paper:2018_rb_rd_dp_jpr_2019808",
-            "label": "used by"
+            "label": "usedBy"
         }
     ],
     "tags": [

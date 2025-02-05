@@ -4,7 +4,7 @@ import re
 import os
 import sys
 
-re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
+re_id_illegal = re.compile(r"[^a-z^\d^A-Z]+")
 objects = []
 seen = set()
 name_id = {}

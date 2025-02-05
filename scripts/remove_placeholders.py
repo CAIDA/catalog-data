@@ -44,7 +44,7 @@ import os
 import re
 
 source_dir="sources"
-re_placeholder = re.compile("___([^\.]+).json",re.IGNORECASE)
+re_placeholder = re.compile(r"___([^\.]+).json",re.IGNORECASE)
 
 #print ("cleaning up place holders")
 for d_name in sorted(os.listdir(source_dir)):

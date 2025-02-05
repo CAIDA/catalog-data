@@ -60,9 +60,9 @@ args = parser.parse_args()
 
 id_object_file = "ontology_id_object.json"
 
-re_caida = re.compile("caida:")
-re_json = re.compile(".json$")
-re_markdown = re.compile(".md$")
+re_caida = re.compile(r"caida:")
+re_json = re.compile(r".json$")
+re_markdown = re.compile(r".md$")
 
 types_valid = set(["rdf:Property","rdfs:Class","caida:Namespace"])
 

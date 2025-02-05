@@ -212,8 +212,8 @@ def parse_paper(fname, dataset_mappings, key_value):
         paper["name"] = title
 
 
-    re_year = re.compile("(\d\d\d\d)")
-    re_year_month = re.compile("(\d\d\d\d).(\d\d)")
+    re_year = re.compile(r"(\d\d\d\d)")
+    re_year_month = re.compile(r"(\d\d\d\d).(\d\d)")
     for key, value in key_value.items():
         # Remove any whitespace, and the quotes around the data.
         value = value.rstrip()
@@ -235,10 +235,10 @@ def parse_paper(fname, dataset_mappings, key_value):
             value = value.replace("Jr.", "Jr")
             
             if ";" in value:
-                authors = re.split("\s*;\s*", value)
+                authors = re.split(r"\s*;\s*", value)
             else:
-                for author in re.split(";\s*", re.sub("\.\s*,",";",value)):
-                    names = re.split("\s*,\s*", author)
+                for author in re.split(r";\s*", re.sub(r"\.\s*,",";",value)):
+                    names = re.split(r"\s*,\s*", author)
                     if len(names) == 4:
                         authors.append(names[0]+", "+names[1])
                         authors.append(names[2]+", "+names[3])
@@ -253,16 +253,16 @@ def parse_paper(fname, dataset_mappings, key_value):
             for author in authors:
                 author = author.strip()
                 #author = re.split(r"\W+", author)
-                values = re.split("\s*,\s*",author)
+                values = re.split(r"\s*,\s*",author)
                 if len(values) > 0:
                     if len(values) == 2:
-                        last_name, first_name = values # re.split("\s*,\s*",author)
+                        last_name, first_name = values
                         if len(first_name) == 1:
                             first_name = first_name + '.'
                     else:
                         unparseable.append(author)
                         continue  
-                elif not re.search("^[a-z\.]+$", author, re.IGNORECASE):
+                elif not re.search(r"^[a-z\.]+$", author, re.IGNORECASE):
                     print ("unparseable", '"'+author+'" in "'+title+'"', file=sys.stderr)
                     first_name = ""
                     last_name = author
@@ -364,7 +364,7 @@ def parse_paper(fname, dataset_mappings, key_value):
                         })
 
         elif "TAGS" == key:
-            paper["tags"] = re.split(",\s*",value)
+            paper["tags"] = re.split(r",\s*",value)
 
         elif "SERIAL" == key:
             publisher = value

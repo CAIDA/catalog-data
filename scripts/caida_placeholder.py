@@ -122,7 +122,7 @@ def add_seen_ids(source_dir):
             type_ = fname
             for filename in sorted(os.listdir(path)):
                 file_path = path+"/"+filename
-                if re.search("\.json$",filename,re.IGNORECASE) and not re_placeholder.search(filename):
+                if re.search(r"\.json$",filename,re.IGNORECASE) and not re_placeholder.search(filename):
                     try:
                         info = json.load(open(file_path))
                         info["filename"] = file_path
@@ -157,7 +157,7 @@ def parse_catalog_data_caida(source_dir):
     number_skipped_no_description = 0
     number_duplicate = 0
 
-    re_md = re.compile("\.md$", re.IGNORECASE)
+    re_md = re.compile(r"\.md$", re.IGNORECASE)
 
     # Iterate over each file in catalog-data-caida/sources.
     for type_ in sorted(os.listdir(source_dir)):
@@ -209,7 +209,7 @@ def parse_catalog_data_caida(source_dir):
                     id_2_object[metadata["id"]] = metadata
 
                 # If it has no description skip it
-                if ("description" not in metadata or re.search("^\s*$", metadata["description"]))  \
+                if ("description" not in metadata or re.search(r"^\s*$", metadata["description"]))  \
                    and "deprecated" not in metadata:
                     utils.warning_add(file_path, "no description")
                     number_skipped_no_description += 1
@@ -228,7 +228,7 @@ def parse_catalog_data_caida(source_dir):
                 # Edge Case: Remove 0 length lists from objects.
                 keys = []
                 for key,value in metadata.items():
-                    if type(value) == str and re.search("^\s*$", value):
+                    if type(value) == str and re.search(r"^\s*$", value):
                         keys.append(key)
                 for key in keys:
                     del metadata[key]

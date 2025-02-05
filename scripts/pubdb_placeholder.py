@@ -12,8 +12,8 @@ objects = []
 seen = set()
 name_id = {}
 
-re_ids_only = re.compile("^[a-z_\s:\d]+$")
-re_whitespace = re.compile("\s+")
+re_ids_only = re.compile(r"^[a-z_\s:\d]+$")
+re_whitespace = re.compile(r"\s+")
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-p", dest="papers_file", type=str, required=True)
@@ -66,8 +66,8 @@ def main():
         sys.exit(1)
     ## add to this end 
 
-    re_best = re.compile("Best\s*Paper")#, re.IGNORECASE)
-    re_distinguished = re.compile("Distinguished\s*Paper")#, re.IGNORECASE)
+    re_best = re.compile(r"Best\s*Paper")#, re.IGNORECASE)
+    re_distinguished = re.compile(r"Distinguished\s*Paper")#, re.IGNORECASE)
     print ("processing objects")
     for obj in objects:
         obj["tags"].append("caida")
@@ -107,7 +107,7 @@ def main():
                     continue
                    
                 id_ = None
-                m = re.search("https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",
+                m = re.search(r"https://www.caida.org/publications/([^\/]+)/(\d\d\d\d)\/([^/]+)/$",
                         link["to"])
                 if m:
                     type_,date, id_ = m.groups()
@@ -116,8 +116,8 @@ def main():
                     elif type_ == "presentations":
                         type_ = "presentation"
                 else:
-                    for regex in [re.compile("https://catalog.caida.org/details/([^\/]+)/([^/]+)"),
-                        re.compile("https://catalog.caida.org/([^\/]+)/([^/]+)")]:
+                    for regex in [re.compile(r"https://catalog.caida.org/details/([^\/]+)/([^/]+)"),
+                        re.compile(r"https://catalog.caida.org/([^\/]+)/([^/]+)")]:
                         m = regex.search(link["to"])
                         if m:
                             type_,id_ = m.groups()
@@ -245,7 +245,7 @@ def id_lookup(id_):
     return None
 
 def id_yearless(id_):
-    m = re.search("(.+):(\d\d\d\d)_(.+)",id_)
+    m = re.search(r"(.+):(\d\d\d\d)_(.+)",id_)
     if m:
         type_,date,name = m.groups()
         return type_+":"+name

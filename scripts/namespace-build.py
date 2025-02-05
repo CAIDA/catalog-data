@@ -60,9 +60,9 @@ args = parser.parse_args()
 id_object_file = "namespace_id_object.json"
 id_object = {} 
 
-re_caida = re.compile("caida:")
-re_json = re.compile(".json$")
-re_markdown = re.compile(".md$")
+re_caida = re.compile(r"caida:")
+re_json = re.compile(r".json$")
+re_markdown = re.compile(r".md$")
 
 def main():
     directory = args.directory[0]

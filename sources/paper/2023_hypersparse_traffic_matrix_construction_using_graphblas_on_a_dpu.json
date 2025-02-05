@@ -15,7 +15,7 @@
     "links": [
         {
             "to": "dataset:2024_ieee_anonymized_nsg_challenge",
-            "label": "Related Dataset"
+            "label": "dataSupplement"
         }
     ],
     "authors": [
