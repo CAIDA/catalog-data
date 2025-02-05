@@ -7,15 +7,15 @@
   "links": [
     {
       "to": "dataset:routeviews_prefix2as",
-      "label": "used by"
+      "label": "usedBy"
     },
     {
       "to": "dataset:as_organizations",
-      "label": "used by"
+      "label": "usedBy"
     },
     {
       "to": "paper:2014_inferring_complex_as_relationships",
-      "label": "used by"
+      "label": "usedBy"
     },
     {
       "to": "paper:2023_f_streibelt_pam",

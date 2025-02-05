@@ -49,7 +49,7 @@
     "links": [
         {
             "to": "software:howfaster_net",
-            "label": "used by"
+            "label": "usedBy"
         }
     ]
 }

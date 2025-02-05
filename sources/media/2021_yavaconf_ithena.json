@@ -29,7 +29,7 @@
     "links": [
         {
             "to": "media:2021_open_data_howfaster_net",
-            "label": "used by"
+            "label": "usedBy"
         }
     ],
     "date": "2021.06.24",
