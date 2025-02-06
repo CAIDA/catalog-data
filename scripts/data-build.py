@@ -329,7 +329,7 @@ def main():
     ######################
     tag_caida_data = "tag:used_caida_data"
     tag_obj = id_object[tag_caida_data] = {"__typename":"Tag", "id":"tag:used_caida_data", "name":"used CAIDA data", "filename":sys.argv[0]}
-    used_caida_data_link_labels = ["used by", "used to create", "usedBy", "uses", "isDerivedFrom"] # link labels that will be considered as using caida data
+    used_caida_data_link_labels = ["usedBy", "usedToCreate", "usedBy", "uses", "isDerivedFrom", "describedBy", "deprecates"] # link labels that will be considered as using caida data
     ids = set()
 
     for id0,id_link in id_id_link.items():
