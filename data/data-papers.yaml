@@ -71454,7 +71454,7 @@ GEOLOC: Cambridge, MA, US
 ---
 MARKER: 2024_gigis_p_acm
 TYPE: in_proceedings
-AUTHOR: Gigis, P.; Handley M.; Vissicchio S.
+AUTHOR: Gigis, P.; Handley, M.; Vissicchio, S.
 TITLE: Bad Packets Come Back, Worse Ones Don't
 PUBLISH: ACM
 CTITLE: "ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference"
@@ -71462,3 +71462,35 @@ YEAR: 2024-08
 URL: https://doi.org/10.1145/3651890.3672259
 TOPKEY: passive-generic
 GEOLOC: London, GB
+---
+MARKER: 2025_pourdamghani_a_drops
+TYPE: in_proceedings
+AUTHOR: Pourdamghani, A.; Avin, C.; Sama, R.; Shiran, M.; Schmid, S.
+TITLE: 'Hash & Adjust: Competitive Demand-Aware Consistent Hashing'
+PUBLISH: DROPS
+CTITLE: International Conference on Principles of Distributed Systems (OPODIS)
+YEAR: 2025-01
+URL: https://doi.org/10.4230/LIPIcs.OPODIS.2024.24
+TOPKEY: passive-2016, passive-2019
+GEOLOC: Berlin, DE
+---
+MARKER: 2025_singh_h_uofr
+TYPE: phdthesis
+AUTHOR: Singh, H.
+TITLE: A Robust Intrusion Detection System Utilizing Uncertain Reasoning Techniques in Artificial Intelligence
+PUBLISH: University of Regina
+YEAR: 2024-05
+URL: https://ourspace.uregina.ca/items/9a0572f9-c42e-48f3-8b47-3f9bca2564a6
+TOPKEY: ddos-2007
+GEOLOC: Regina, CA
+---
+MARKER: 2024_pourdamghani_a_drops
+TYPE: in_proceedings
+AUTHOR: Singh, H.; Louafi, H.; Yao, Y.
+TITLE: An Uncertain Reasoning-Based Intrusion Detection System for DoS/DDoS Detection
+PUBLISH: SciTePress
+CTITLE: 20th International Conference on Security and Cryptography (SECRYPT)
+YEAR: 2024-07
+URL: 10.5220/0012794400003767
+TOPKEY: ddos-2007
+GEOLOC: Regina, CA
