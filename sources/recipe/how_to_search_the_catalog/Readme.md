@@ -82,7 +82,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 |  search string | explanation | 
 |----------------|-------------|
 | [links=tag:asn](https://catalog.caida.org/search?query=links=tag:asn) | search for objects that have the tag `asn`|
-| [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida) | search for objects that **do not** have the tag `caida`|
+| [!links=tag:caida](https://catalog.caida.org/search?query=!links=tag:caida) | search for objects that **do not** have the tag `caida`|
 | [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and have the word `ark` |
 | [bgpstream](https://catalog.caida.org/search?query=bgpstream) | search for objects with the word `bgpstream`  | 
 | [categories=ip.packet](https://catalog.caida.org/search?query=categories%3Dip.packet) | search for objects with the category `ip.packet` | 
