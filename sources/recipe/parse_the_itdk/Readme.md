@@ -34,9 +34,9 @@
 
 ## Introduction
 
-This solution parses through ITDK datasets and stores a node's `node id`, `isp`, `asn` and `location` as a json object. 
+This solution parses through ITDK datasets and stores a node's `node id`, `asn` and `location` as a json object. 
 The relevant `node` information is extracted from 4 different files: 
-- `node id` and `isp` from **nodes.bz2** 
+- `node id` from **nodes.bz2** 
 - `asn` from **nodes.as.bz2** 
 - `neighbors` from **links.bz2** 
 - `location` from **nodes.geo.bz2**

@@ -199,7 +199,7 @@ TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-relationships, topology-ar
 GEOLOC: Evanston, IL, US
 ---
 MARKER: 2023_carisimo_e_acm
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Carisimo, E.; Weaver, M.; Barford, P; Bustamante, F.
 TITLE: A hop away from everywhere A view of the intercontinental long-haul infrastructure
 PUBLISH: ACM
@@ -210,7 +210,7 @@ TOPKEY: topology-ark-ipv4-prefix-probing, topology-as-relationships, topology-ar
 GEOLOC: Evanston, IL, US
 ---
 MARKER: 2023_carchiolo_v_
-TYPE: in_journal
+TYPE: article
 AUTHOR: Carchiolo, V.; Grassia, M.; Longheu, A.; Malgeri, M.; Mangionim, G.
 TITLE: Efficient Node PageRank Improvement via Link-building using Geometric Deep
   Learning
@@ -222,7 +222,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Catania, IT
 ---
 MARKER: 2023_oppenheimer_h_peio.me
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Oppenheimer, H.
 TITLE: The Failed Digital State Problem? Capacity Gaps and Managing Internet Externalities
 PUBLISH: peio.me
@@ -232,7 +232,7 @@ TOPKEY: topology-as-relationships, topology-as-organization
 GEOLOC: Cambridge, MA, US
 ---
 MARKER: 2023_peng_s_world_scientific
-TYPE: in_journal
+TYPE: article
 AUTHOR: Peng, S.; Zhang, L.; Shu, X.; Ruan, Z.; Xuan, Q.
 TITLE: Study of Autonomous System Business Types Based on Graph Neural Networks
 PUBLISH: World Scientific
@@ -243,7 +243,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Hangzhou, CN
 ---
 MARKER: 2023_brunstrom_a_google_books
-TYPE: in_journal
+TYPE: article
 AUTHOR: Brunstrom, A.; Flores, M.; Fiore, M.
 TITLE: Passive and Active Measurement 24th International Conference, PAM 2023, Virtual
   Event, March 21–23, 2023, Proceedings
@@ -6750,7 +6750,7 @@ GEOLOC: College Park, MD, US
 ABS: ''
 ---
 MARKER: 2013_garcia-jimenez_s_acm_14103340
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Garcia-Jimenez, S., Magaña, E., Morato, D., Izal, M.
 TITLE: 'EAlias Resolution Techniques: Long-term Analysis of Alias Stability in Internet Routers'
 PUBLISH: ACM
@@ -11241,10 +11241,11 @@ GEOLOC: Weihai, CN
 ABS: topology-ark-ipv4-traceroute
 ---
 MARKER: 2019_ballabriga_g_coreac_286776233
-TYPE: ''
+TYPE: online
 AUTHOR: Ballabriga, G., Jimenez, E.
 TITLE: Entrenament dun arbre de decisio per a la deteccio datacs distribuits de denegacio
   de servei (DDoS)
+PUBLISH: CORE
 SERIAL: ''
 YEAR: 2019-12
 VOLUME: ''
@@ -66442,7 +66443,7 @@ ABS: Researchers and practitioners often face the issue of having to attribute a
   implementation so researchers can run instances themselves.
 ---
 MARKER: 2023_miao_r_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Miao, R.; Zhang, Y.; Zheng, Z.; Wang, R.; Zhang, R.; Yang, T.; Liu, Z.; Jiang,
   J.
 TITLE: 'CocoSketch: High-Performance Sketch-Based Measurement Over Arbitrary Partial
@@ -66485,7 +66486,7 @@ TOPKEY: telescope-generic
 GEOLOC: Cambridge, MA, US
 ---
 MARKER: 2023_ezeh_d_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Ezeh, D.; de Oliveira, J.
 TITLE: An SDN controller-based framework for anomaly detection using a GAN ensemble
   algorithm
@@ -66497,7 +66498,7 @@ TOPKEY: ddos-2007
 GEOLOC: Philadelphia, PA, US
 ---
 MARKER: 2023_grassia_m_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Grassia, M.; Mangioni, G.
 TITLE: 'CoreGDM: Geometric Deep Learning Network Decycling and Dismantling'
 PUBLISH: Springer
@@ -66508,7 +66509,7 @@ TOPKEY: topology-ark-ipv4-aslinks
 GEOLOC: Catania, IT
 ---
 MARKER: 2023_taheri_r_springer
-TYPE: in_journal
+TYPE: article
 AUTHOR: Taheri, R.; Ahmed, H.; Arslan, E.
 TITLE: 'Deep learning for the security of software-defined networks: a review'
 PUBLISH: Springer
@@ -66519,7 +66520,7 @@ TOPKEY: passive-2016, ddos-2007
 GEOLOC: Reno, NV, US
 ---
 MARKER: 2023_sai_charan_p_science_direct
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sai Charan, P.; Ratnakaram, G.; Chunduri, H.; Mohan Anand, P.; Kumar Shukla,
   S.
 TITLE: 'DKaaS: DARK-KERNEL as a Service for Active Cyber Threat Intelligence'
@@ -66531,7 +66532,7 @@ TOPKEY: telescope-generic
 GEOLOC: Kanpur, IN
 ---
 MARKER: 2023_alatram_a_science_direct
-TYPE: in_journal
+TYPE: article
 AUTHOR: Alatran, A.; F. Sikos, L.; Johnstone, M.; Szewczyk, P.; Jin Kang, J.
 TITLE: 'DoS/DDoS-MQTT-IoT: A dataset for evaluating intrusions in IoT networks using
   the MQTT protocol'
@@ -66543,7 +66544,7 @@ TOPKEY: ddos-2007
 GEOLOC: Joondalup, AU
 ---
 MARKER: 2023_carchiolo_v_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Carchiolo, V.; Grassia, M.; Longheu, A.; Malgeri, M.; Mangioni, G.
 TITLE: Efficient Node PageRank Improvement via Link-building using Geometric Deep
   Learning
@@ -66556,7 +66557,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Catania, IT
 ---
 MARKER: 2023_javaheri_d_science_direct
-TYPE: in_journal
+TYPE: article
 AUTHOR: Javaheri, D.; Gorgin, S.; Lee, J.; Masdari, M.
 TITLE: 'Fuzzy logic-based DDoS attacks and network traffic anomaly detection methods:
   Classification, overview, and future perspectives'
@@ -66579,7 +66580,7 @@ TOPKEY: passive-2016
 GEOLOC: Dayalpur Daulatpur, IN
 ---
 MARKER: 2023_nadeem_ali_m_mdpi
-TYPE: in_journal
+TYPE: article
 AUTHOR: Nadeem Ali, M.; Imran, M.; Salah ud din, M.; Kim, B.
 TITLE: Low rate DDoS detection using weighted federated learning in SDN control plane
   in IoT network
@@ -66591,7 +66592,7 @@ TOPKEY: ddos-2007
 GEOLOC: Sejong City, KR
 ---
 MARKER: 2023_kfoury_e_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kfoury, E.; Crichigno, J.; Bou-Harb, E.
 TITLE: 'P4Tune: Enabling Programmability in Non-Programmable Networks'
 PUBLISH: IEEE
@@ -66602,7 +66603,7 @@ TOPKEY: passive-2019
 GEOLOC: Columbia, SC, US
 ---
 MARKER: 2023_yoshinaka_y_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yoshinaka, Y.; Kita, K.; Takemasa, J.; Koizumi, Y.; Hasegawa, T.
 TITLE: Programmable Name Obfuscation Framework for Controlling Privacy and Performance
   on CCN
@@ -66614,7 +66615,7 @@ TOPKEY: topology-as-relationships, routeviews_prefix2as
 GEOLOC: Suita, JP
 ---
 MARKER: 2023_carpenter_j_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Carpenter, J.; Layne, J.; Serra, E.; Cuzzocrea, A.; Gallo, C.
 TITLE: Structural Node Representation Learning for Detecting Botnet Nodes
 PUBLISH: Springer
@@ -66625,7 +66626,7 @@ TOPKEY: passive-2018
 GEOLOC: Boise, ID, US
 ---
 MARKER: 2023_zhao_b_usenix
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhao, B.; Wu, W.; Xu, W.
 TITLE: 'NetRPC: Enabling In-Network Computation in Remote Procedure Calls'
 PUBLISH: usenix.org
@@ -66636,7 +66637,7 @@ TOPKEY: passive-2008
 GEOLOC: Beijing, CN
 ---
 MARKER: 2023_kanti_dey_p_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kanti Dey, P.; Yuksel, M.
 TITLE: Delegating Data Plane with Cloud-Assisted Routing
 PUBLISH: IEEE
@@ -66647,7 +66648,7 @@ TOPKEY: passive-2014, passive-2018
 GEOLOC: Orlando, FL, US
 ---
 MARKER: 2023_buhler_t_usenix
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Buhler, T.; Jacob, R.; Poese, I.; Vanbever, L.
 TITLE: Enhancing Global Network Monitoring with Magnifier
 PUBLISH: usenix.org
@@ -66658,7 +66659,7 @@ TOPKEY: passive-2018
 GEOLOC: Zurich, CH
 ---
 MARKER: 2023_shulman_h_google_patents
-TYPE: in_journal
+TYPE: article
 AUTHOR: Shulman, H.; Waidner, M.; Brandt, M.
 TITLE: Method for validating ownership of a resource within a network, coordinating
   agent and validation agent
@@ -66670,7 +66671,7 @@ TOPKEY: topology-as-relationships, passive-2016
 GEOLOC: Frankfurt, DE
 ---
 MARKER: 2023_christou_g_utwente
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Christou, G.
 TITLE: 'On Services Exposed by DNS Infrastructure: A KINDNS Investigation'
 PUBLISH: University of Twente
@@ -66680,7 +66681,7 @@ TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Enschede, NL
 ---
 MARKER: 2023_lian_h_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Lian, H.; Li, J.; Wu, H.; Zhao, Y.; Zhang, L.; Wang, X.
 TITLE: Towards Effective Personalized Service QoS Prediction from the Perspective
   of Multi-Task Learning
@@ -66702,7 +66703,7 @@ TOPKEY: ddos-2007
 GEOLOC: Eugene, OR, US
 ---
 MARKER: 2023_yao_w_jit
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yao, W.; Zhao, H.; Chen, J.
 TITLE: Discovering and Mapping Subnet Level Topology
 PUBLISH: Journal of Internet Technology
@@ -66713,7 +66714,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Shenyang, CN
 ---
 MARKER: 2023_von_arx_t_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: von Arx, T.; Tran, M.; Vanbever, L.
 TITLE: 'Revelio: A Network-Level Privacy Attack in the Lightning Network'
 PUBLISH: IEEE
@@ -66724,7 +66725,7 @@ TOPKEY: topology-as-relationships, ixps
 GEOLOC: Zurich, CH
 ---
 MARKER: 2023_nosyk_y_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Nosyk, Y.; Korczynski, M.; Lone, Q.; Jonglez, B.; Duda, A.
 TITLE: 'The Closed Resolver Project: Measuring the Deployment of Inbound Source Address
   Validation'
@@ -66736,7 +66737,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Grenoble, FR
 ---
 MARKER: 2023_liu_y_scientific_reports
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, Y.; Zhao, Y.; Guo, X.; Liu, L.
 TITLE: Inferring router ownership based on the classification of intra-and inter-domain
   links
@@ -66770,7 +66771,7 @@ TOPKEY: topology-as-rank, topology-as-relationships, topology-as-relationships-g
 GEOLOC: Magdeburg, DE
 ---
 MARKER: 2023_tian_c_ieee
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Tian, C.; Shi, R.; Lan, L.; Peng, Z.; Ge, Y.; Liang, Y.; Liu, P.
 TITLE: 'Poster: Deanonymization of Bitcoin transactions based on network traffic analysis
   with semi-supervised learning'
@@ -66783,7 +66784,7 @@ TOPKEY: topology-as-rank
 GEOLOC: Beijing, CN
 ---
 MARKER: 2023_zhou_a_wiley
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhou, A.; Zhu, Y.
 TITLE: A novel data streaming method for detecting abnormal flows in distributed monitoring
   systems
@@ -66795,7 +66796,7 @@ TOPKEY: ddos-2007
 GEOLOC: Taizhou, CN
 ---
 MARKER: 2023_jiang_z_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jiang, Z.; Chen, H.; Jin, H.
 TITLE: 'Auxo: A Scalable and Efficient Graph Stream Summarization Structure'
 PUBLISH: ACM Digital Library
@@ -66807,7 +66808,7 @@ TOPKEY: passive-2015
 GEOLOC: Wuhan, CN
 ---
 MARKER: 2023_wu_x_science_direct
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wu, X.; Huang, H.; Du, Y.; Sun, Y.; Chen, S.
 TITLE: 'Coupon Filter: A Universal and Lightweight Filter Framework for More Accurate
   Data Stream Processing'
@@ -66819,7 +66820,7 @@ TOPKEY: passive-2019
 GEOLOC: Suzhou, CN
 ---
 MARKER: 2023_yang_r_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yang, R.; Zhang, Z.; Zheng, W.; Xu Yu, J.
 TITLE: Fast Continuous Subgraph Matching over Streaming Graphs via Backtracking Reduction
 PUBLISH: ACM Digital Library
@@ -66841,7 +66842,7 @@ TOPKEY: passive-2015, passive-2016
 GEOLOC: Gainesville, FL, US
 ---
 MARKER: 2023_gilad_g_pnas_nexus
-TYPE: in_journal
+TYPE: article
 AUTHOR: Gilad, G.; Sharan, R.
 TITLE: 'From Leiden to Tel-Aviv University (TAU): exploring clustering solutions via
   a genetic algorithm'
@@ -66853,7 +66854,7 @@ TOPKEY: skitter-router-adjacencies
 GEOLOC: Tel Aviv, IL
 ---
 MARKER: 2023_gozlan_i_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Gozlan, I.; Avin, C.; Einziger, G.; Scalosub, G.
 TITLE: 'Go-to-Controller is Better: Efficient and Optimal LPM Caching with Splicing'
 PUBLISH: ACM Digital Library
@@ -66865,7 +66866,7 @@ TOPKEY: passive-2019
 GEOLOC: Beersheba, IL
 ---
 MARKER: 2023_zohaib_a_umass
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zohaib, A.; Sheffey, J.; Houmansadr, A.
 TITLE: Investigating Traffic Analysis Attacks on Apple iCloud Private Relay
 PUBLISH: University of Massachusetts Amherst
@@ -66876,7 +66877,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Amherst, MA, US
 ---
 MARKER: 2023_kiefer_m_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kiefer, M.; Poulakis, I.; Tzirita Zacharatou, E.; Markl, V.
 TITLE: Optimistic Data Parallelism for FPGA-Accelerated Sketching
 PUBLISH: ACM Digital Library
@@ -66888,7 +66889,7 @@ TOPKEY: passive-2019
 GEOLOC: Berlin, DE
 ---
 MARKER: 2023_kfoury_e_south_carolina
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kfoury, E.; Crichigno, J.; Bou-Harb, E.
 TITLE: 'P4CCI: P4-based Online TCP Congestion Control Algorithm Identification for
   Traffic Separation'
@@ -66900,7 +66901,7 @@ TOPKEY: passive-2019
 GEOLOC: Columbia, SC, US
 ---
 MARKER: 2023_zhao_f_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhao, F.; Ismail Khan, P.; Agrawal, D.; El Abbadi, A.; Gupta, A.
 TITLE: 'Panakos: Chasing the Tails for Multidimensional Data Streams'
 PUBLISH: ACM Digital Library
@@ -66912,7 +66913,7 @@ TOPKEY: passive-2015
 GEOLOC: Santa Barbara, CA, US
 ---
 MARKER: 2023_biersack_f_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Biersack, F.; Holzinger, K.; Stubbe, H.; Wild, T.; Carle, G.; Herkersdorf,
   A.
 TITLE: Priority-aware Inter-Server Receive Side Scaling
@@ -66924,7 +66925,7 @@ TOPKEY: passive-2015
 GEOLOC: Munich, DE
 ---
 MARKER: 2023_miao_r_icde
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Miao, R.; Dong, F.; Zhao, Y.; Zhao, Y.; Wu, Y.; Yang, K.; Yang, T.; Cui, B.
 TITLE: 'SketchConf: A Framework for Automatic Sketch Configuration'
 PUBLISH: IEEE International Conference on Data Engineering
@@ -66935,7 +66936,7 @@ TOPKEY: passive-2018
 GEOLOC: Beijing, CN
 ---
 MARKER: 2023_steger_l_tma
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Steger, L.; Kuang, L.; Zirngibl, J.; Carle, G.; Gasser, O.
 TITLE: Target Acquired? Evaluating Target Generation Algorithms for IPv6
 PUBLISH: TMA Conferences
@@ -66947,7 +66948,7 @@ TOPKEY: peeringdb
 GEOLOC: Munich, DE
 ---
 MARKER: 2023_tabaeiaghdaei_s_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Tabaeiaghdaei, S.; Scherrer, S.; Kwon, J.; Perrig, A.
 TITLE: Carbon-Aware Global Routing in Path-Aware Networks
 PUBLISH: ACM Digital Library
@@ -66990,7 +66991,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Princeton, NJ, US
 ---
 MARKER: 2023_hilal_f_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Hilal, F.; Gasser, O.
 TITLE: 'Yarrpbox: Detecting Middleboxes at Internet-Scale'
 PUBLISH: ACM Digital Library
@@ -67002,7 +67003,7 @@ TOPKEY: routeviews_prefix2as, midar
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_zhao_w_aims
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhao, W.; Wang, Y.; Liang, L.; Liu, D.; Ji, X.
 TITLE: An approach to generate damage strategies for inter-domain routing systems
   based on multi-objective optimization
@@ -67015,7 +67016,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Luoyang, CN
 ---
 MARKER: 2023_wang_h_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wang, H.; Melissourgos, D.; Ma, C.; Chen, S.
 TITLE: Real-time Spread Burst Detection in Data Streaming
 PUBLISH: ACM Digital Library
@@ -67027,7 +67028,7 @@ TOPKEY: passive-2019
 GEOLOC: Gainesville, FL, US
 ---
 MARKER: 2023_arturi_a_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Arturi, A.; Carisimo, E.; Bustamante, F.
 TITLE: Enriching AS-to-Organization Mappings with PeeringDB
 PUBLISH: Springer
@@ -67038,7 +67039,7 @@ TOPKEY: topology-as-rank
 GEOLOC: Buenos Aires, AR
 ---
 MARKER: 2023_boeira_d_lume_ufrgs_br
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Boeira, D.
 TITLE: 'DNS measurement: explorando e investigando o cenário de DNS na Internet'
 PUBLISH: lume.ufrgs.br
@@ -67048,7 +67049,7 @@ TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Porto Alegre, BR
 ---
 MARKER: 2023_sommese_r_research_utwente_nl
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Sommese, R.
 TITLE: EVERYTHING IN ITS RIGHT PLACE - IMPROVING DNS RESILIENCE
 PUBLISH: research.utwente.nl
@@ -67058,7 +67059,7 @@ TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Enschede, NL
 ---
 MARKER: 2023_chen_z_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, Z.; Bischof, Z.; Testart, C.; Dainotti, A.
 TITLE: Improving the Inference of Sibling Autonomous Systems
 PUBLISH: Springer
@@ -67069,7 +67070,7 @@ TOPKEY: topology-as-classification
 GEOLOC: Atlanta, GA, US
 ---
 MARKER: 2023_sediqi_k_oliver_gasser
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sediqi, K.; Feldmann, A.; Gasser, O.
 TITLE: 'Live Long and Prosper: Analyzing Long-Lived MOAS Prefixes in BGP'
 PUBLISH: olivergasser.net
@@ -67080,7 +67081,7 @@ TOPKEY: topology-as-relationships, topology-as-organization
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_hsu_a_dl_acm
-TYPE: in_journal
+TYPE: article
 AUTHOR: Hsu, A.; Li, F.; Pearce, P.
 TITLE: 'Fiat Lux: Illuminating IPv6 Apportionment with Different Datasets'
 PUBLISH: dl.acm.org
@@ -67092,7 +67093,7 @@ TOPKEY: topology-ark-ipv6-dns-names, topology-ark-ipv6-traceroute
 GEOLOC: Atlanta, GA, US
 ---
 MARKER: 2023_feng_h_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Feng, H.; Liu, Y.; Yan, X.; Zhou, N.; Jiang, Z.
 TITLE: A Blockchain-enabled Multi-domain DDoS Collaborative Defense Mechanism.
 PUBLISH: search.ebscohost.com
@@ -67103,7 +67104,7 @@ TOPKEY: ddos-2007, topology-ark-ipv4-aslinks
 GEOLOC: Beijing, CN
 ---
 MARKER: 2023_milolidakis_a_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Milolidakis, A.; Buhler, T.; Wang, K.; Chiesa, M.; Vanbever, L.; Vissicchio,
   S.
 TITLE: On the Effectiveness of BGP Hijackers That Evade Public Route Collectors
@@ -67147,7 +67148,7 @@ TOPKEY: topology-as-relationships, topology-as-rank, ixps, bgpstream
 GEOLOC: Zurich, CH
 ---
 MARKER: 2023_raman_r_pet_symposium
-TYPE: in_journal
+TYPE: article
 AUTHOR: Raman, R.; Virkud, A.; Laplante, S.; Fortuna, V.; Ensafi, R.
 TITLE: Advancing the Art of Censorship Data Analysis
 PUBLISH: Pet Symposium
@@ -67158,7 +67159,7 @@ TOPKEY: routeviews_prefix2as, topology-as-rank
 GEOLOC: Ann Arbor, MI, US
 ---
 MARKER: 2023_streibelt_f_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Streibelt, F.; Lindorfer, M.; Gurses, S.; Ganan, C.; Fiebig, T.
 TITLE: 'Back-to-the-Future Whois: An IP Address Attribution Service for Working with
   Historic Datasets'
@@ -67170,7 +67171,7 @@ TOPKEY: routeviews_prefix2as, topology-as-organization
 GEOLOC: Saarbrucken, DE
 ---
 MARKER: 2023_abdulrahman_a_springer
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Abdulrahman, A.; Bock, K.; Levin, D; Wustrow, E.
 TITLE: A Global Measurement of Routing Loops on the Internet
 PUBLISH: Springer, Cham
@@ -67181,7 +67182,7 @@ TOPKEY: topology-ark-ipv4-traceroute, topology-as-classification
 GEOLOC: Boulder, CO, US
 ---
 MARKER: 2023_parekh_v_doi
-TYPE: in_journal
+TYPE: article
 AUTHOR: Parekh, V.; Saravanan, M.
 TITLE: 'An Empirical Overview on DDoS: Taxonomy, Attacks, Tools and Attack Detection
   Mechanism'
@@ -67195,7 +67196,7 @@ TOPKEY: topology-as-relationships
 GEOLOC: Singapore, SG
 ---
 MARKER: 2023_othmer_b_utwente
-TYPE: BSc thesis
+TYPE: bscthesis
 AUTHOR: Othmer, B.
 TITLE: An Empirical Study of Directory Service Dependencies
 PUBLISH: University of Twente
@@ -67205,7 +67206,7 @@ TOPKEY: topology-as-organization
 GEOLOC: Enschede, NL
 ---
 MARKER: 2023_spadaccino_p_ieee
-TYPE: in_journal
+TYPE: article
 AUTHOR: Spadaccino, P.; Bruzzese, S.; Cuomo, F.; Luciani, F.
 TITLE: Analysis and emulation of BGP hijacking events
 PUBLISH: IEEE
@@ -67216,7 +67217,7 @@ TOPKEY: topology-as-relationships-geo
 GEOLOC: Rome, IT
 ---
 MARKER: 2023_barros_servio_a_ufpe
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Barros Servio, A.
 TITLE: Avaliação de disponibilidade em provedores de internet autônomos
 PUBLISH: Universidade Federal de Pernambuco
@@ -67251,7 +67252,7 @@ TOPKEY: passive-2018, passive-2019
 GEOLOC: New York, NY, US
 ---
 MARKER: 2020_a_bayati_ieee_3026337
-TYPE: in_journal
+TYPE: article
 AUTHOR: Bayati, Abdolkhalegh; Nguyen, Kim-Khoa; Cheriet, And Mohamed
 TITLE: Gaussian Process Regression Ensemble Model for Network Traffic Prediction
 YEAR: 2020-09
@@ -67261,7 +67262,7 @@ URL: https://ieeexplore.ieee.org/abstract/document/9204965
 TOPKEY: passive-2008, passive-2009, passive-2010, passive-2011, passive-2012, passive-2013, passive-2014, passive-2015
 ---
 MARKER: 2023_i_kunze_acm_502301
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kunze, Ike; Sander, Constantin; Wherle, Klaus
 TITLE: Does It Spin? On the Adoption and Use of QUIC’s Spin Bit
 YEAR: 2023-10
@@ -67271,7 +67272,7 @@ URL:
 TOPKEY: topology-as-organization
 ---
 MARKER: 2022_d_rahunathan__fmcad_3448323
-TYPE: in-proceedings
+TYPE: inproceedings
 AUTHOR: Raghunathan, Divya; Beckett, Ryan; Gupta, Aarti; Walker, David
 TITLE: 'ACORN: Network Control Plane Abstraction using Route Nondeterminism'
 YEAR: 2022-10
@@ -67280,7 +67281,7 @@ DOI: https://doi.org/10.34727/2022/isbn.978-3-85448-053-2_33
 TOPKEY: topology-as-relationships
 ---
 MARKER: 2022_c_yukuen_ieee_9904508
-TYPE: in-journal
+TYPE: article
 AUTHOR: Yu-Kuen, Lai; Tsai, Cheng-Lin; Chuang, Cheng-Han; Ku, Xiu-Wen; Chen, Jim Hao
 TITLE: Tabular Interpolation Approach Based on Stable Random Projection for Estimating
   Empirical Entropy of High-Speed Network Traffic
@@ -67289,7 +67290,7 @@ DOI: https://doi.org/10.1109/ACCESS.2022.3210336
 TOPKEY: ddos-2007
 ---
 MARKER: 2023_t_fodor_phdthesis_464501
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Fodor, Thomas Bogdan
 TITLE: Graph-theoretic Analysis of the IPv4/IPv6 Routing Infrastructure
 YEAR: 2023-02
@@ -67298,7 +67299,7 @@ DOI: https://doi.org/10.34726/hss.2023.105646
 TOPKEY: topology-ark-ipv4-traceroute,topology-ark-ipv6-traceroute
 ---
 MARKER: 2023_s_nourin_acm_981385
-TYPE: in-proceedings
+TYPE: inproceedings
 AUTHOR: Nourin, Sadia; Tran, Van; Jiang, Xi; Bock, Kevin; Feamster, Nick; Hoang, Nguyen
   Phong; Levin, Dave
 TITLE: "Measuring and Evading Turkmenistan's Internet Censorship: A Case Study in
@@ -67309,7 +67310,7 @@ DOI: https://doi.org/10.1145/3543507.3583189
 TOPKEY: topology-as-rank, routeviews_prefix2as
 ---
 MARKER: 2023_j_li_icc_622210
-TYPE: in-proceedings
+TYPE: inproceedings
 AUTHOR: Li, Jiang; Cao, Jiahao; Meng, Zili; Xie, Renjie; Xu, Mingwei
 TITLE: 'RoLL: Real-time and Accurate Route Leak Location with AS Triplet Features'
 YEAR: '2023'
@@ -67319,7 +67320,7 @@ TOPKEY:
   topology-as-relationships, topology-as-classification, routeviews_prefix2as, topology-as-organization, ixps
 ---
 MARKER: 2023_o_darwich_acm_362480
-TYPE: in-proceedings
+TYPE: inproceedings
 AUTHOR: Darwich, Omar; Rimlinger, Hugo; Dreyfus, Milo; Gouel, Matthieu; Vermeulen,
   Kevin
 TITLE: 'Replication: Towards a Publicly Available Internet scale IP Geolocation Dataset'
@@ -67329,7 +67330,7 @@ URL: https://hal.science/hal-04215113/
 TOPKEY: topology-as-classification
 ---
 MARKER: 2023_s_farhan_pam_649984
-TYPE: in-proceedings
+TYPE: inproceedings
 AUTHOR: Farhan, Syed Muhammad; Chung, Taejoong
 TITLE: Exploring the Evolution of TLS Certificates
 YEAR: 2023-10
@@ -67338,7 +67339,7 @@ DOI: https://doi.org/10.1007/978-3-031-28486-1_4
 TOPKEY: topology-as-classification
 ---
 MARKER: 2023_t_sowmya_sciencedirect_728001
-TYPE: in-journal
+TYPE: article
 AUTHOR: Sowmya, T.; E.A., Mary Anita
 TITLE: A comprehensive review of AI based intrusion detection system
 YEAR: 2023-08
@@ -67346,7 +67347,7 @@ DOI: https://doi.org/10.1016/j.measen.2023.100827
 TOPKEY: ddos-2007
 ---
 MARKER: 2023_m_milliken_ulster_1016632
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Milliken, Michael
 TITLE: DDoS Intrusion Detection through Ensemble and Evolutionary methods
 YEAR: 2023-02
@@ -67365,7 +67366,7 @@ TOPKEY: topology-as-organization
 GEOLOC: Montreal, QC, CA
 ---
 MARKER: 2023_d_wagner_acm_7498
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wagner, D., Ranadive, S., Griffioen, H., Kallitsis, M., Dainotti, A., Smaragdakis, G., Feldmann, A.
 TITLE: How to Operate a Meta-Telescope in your Spare Time
 YEAR: 2023-10
@@ -67375,7 +67376,7 @@ GEOLOC: Saarbrücken, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3618257.3624831
 ---
 MARKER: 2023_d_munganga_uct_2435
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Munganga, D.
 TITLE: "Internet transparency in developing African regions: case of the DR Congo"
 PUBLISH: University of Cape Town
@@ -67405,7 +67406,7 @@ GEOLOC: Zürich, CH
 URL: https://arxiv.org/abs/2309.03551
 ---
 MARKER: 2023_s_kastanakis_imc_8104
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kastanakis, S., Giotsas, V., Livadariu, I., Suri, N.
 TITLE: 20 Years of Inferring Inter-domain Routing Policies
 YEAR: 2023-10
@@ -67415,7 +67416,7 @@ GEOLOC: Bailrigg, GB
 URL: https://tas-security.lancs.ac.uk/wp-content/uploads/20-Years-of-Inferring-Inter-domain-Routing-Policies-imc_repro23_lu.pdf
 ---
 MARKER: 2023_j_li_ieee_1721
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, J., Cao, J., Yang, Y., Liu, Z., Li, Q., Wang, Y., Meng, Z., Xie, R., Xu, M.
 TITLE: "DeBGP: Decentralized and Efficient BGP Hijacking Prevention System"
 YEAR: '2023'
@@ -67425,7 +67426,7 @@ GEOLOC: Beijing, CN
 URL: https://zilimeng.com/papers/debgp-icccn23.pdf
 ---
 MARKER: 2023_m_gouel_hal_4882
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Gouel, M.
 TITLE: Internet-Scale Route Tracing Capture and Analysis
 PUBLISH: Sorbonne Université
@@ -67435,7 +67436,7 @@ GEOLOC: Paris, FR
 URL: https://theses.hal.science/tel-04164622/
 ---
 MARKER: 2023_b_wang_acm_4893
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wang, B., Chen, R., Tang, L.
 TITLE: "EasyQuantile: Efficient Quantile Tracking in the Data Plane"
 YEAR: 2023-09
@@ -67445,7 +67446,7 @@ GEOLOC: Xiamen, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3600061.3600084
 ---
 MARKER: 2023_w_li_acm_6611
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, W., Lin, Z., Ashiq, M., Aben, E., Fontugne, R., Phokeer, A., Chung, T.
 TITLE: "RoVista: Measuring and analyzing the route origin validation (ROV) in RPKI"
 YEAR: 2023-10
@@ -67455,7 +67456,7 @@ GEOLOC: Blacksburg, VA, US
 URL: https://dl.acm.org/doi/abs/10.1145/3618257.3624806
 ---
 MARKER: 2023_mj_medková_theses_cz_2844
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Medková, MJ.
 TITLE: Anonymization of social network datasets
 PUBLISH: University of Hradec Králové
@@ -67465,7 +67466,7 @@ GEOLOC: Hradec Králové, CZ
 URL: https://theses.cz/id/9w6dcg/STAG88294.pdf
 ---
 MARKER: 2023_gt_jaeger_sol_sbc_5189
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jaeger, GT., Marcos, P.
 TITLE: Analisando o impacto ea capacidade de mitigação de sequestro de prefixos com base na conectividade
 YEAR: 2023-10
@@ -67475,7 +67476,7 @@ GEOLOC: Rio Grande, BR
 URL: https://sol.sbc.org.br/index.php/errc/article/view/25996
 ---
 MARKER: 2023_rp_barreto_sol_sbc_6158
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Barreto, RP., Marcos, P.
 TITLE: Investigando o Uso de Técnicas de Engenharia de Tráfego em Prefixos da Rede Bitcoin e suas Possíveis Implicações de Segurança
 YEAR: 2023-10
@@ -67485,7 +67486,7 @@ GEOLOC: Rio Grande, BR
 URL: https://sol.sbc.org.br/index.php/errc/article/view/25997
 ---
 MARKER: 2023_pm_suter_ethz_3743
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Suter, PM.
 TITLE: "Traffic Engineering in SCION: The impact of end host QoS mechanisms on network performance"
 PUBLISH: ETH Zürich
@@ -67495,7 +67496,7 @@ GEOLOC: Zürich, CH
 URL: https://www.research-collection.ethz.ch/handle/20.500.11850/637045
 ---
 MARKER: 2023_fm_mazzola_lume_1642
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Mazzola, FM.
 TITLE: On the latency and routing impacts of remote peering to the Internet
 PUBLISH: Universidad Federal de Río Grande del Sur
@@ -67505,7 +67506,7 @@ GEOLOC: Porto Alegre, BR
 URL: https://lume.ufrgs.br/handle/10183/263292
 ---
 MARKER: 2024_n_rodday_ieee_6130
-TYPE: in_journal
+TYPE: article
 AUTHOR: Rodday, N., Cunha, Í., Bush, R., Katz-Bassett, E., Rodosek, GD., Schmidt, TC., Wählisch, M.
 TITLE: "The Resource Public Key Infrastructure (RPKI): A Survey on Measurements and Future Prospects"
 SERIAL: IEEE Transactions on Network and Service Management
@@ -67515,7 +67516,7 @@ GEOLOC: Enschede, CH
 URL: https://ieeexplore.ieee.org/abstract/document/10296041/
 ---
 MARKER: 2023_jg_oliveira_elsevier_8650
-TYPE: in_journal
+TYPE: article
 AUTHOR: Oliveira, JG., Dorogovtsev, SN., Mendes, JFF.
 TITLE: Statistics of remote regions of networks
 SERIAL: Chaos, Solitons & Fractals
@@ -67526,7 +67527,7 @@ GEOLOC: Aveiro, PT
 URL: https://www.sciencedirect.com/science/article/pii/S0960077923010433
 ---
 MARKER: 2023_h_shulman_acm_3605
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Shulman, H., Zhao, S.
 TITLE: "Poster: LeMon: Global Route Leak Monitoring Service"
 YEAR: 2023-09
@@ -67536,7 +67537,7 @@ GEOLOC: Frankfurt, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3610852
 ---
 MARKER: 2023_t_albakour_acm_3840
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Albakour, T., Gasser, O., Beverly, R., Smaragdakis, G.
 TITLE: Illuminating Router Vendor Diversity Within Providers and Along Network Paths
 YEAR: 2023-10
@@ -67546,7 +67547,7 @@ GEOLOC: Berlin, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3618257.3624813
 ---
 MARKER: 2023_j_furuness_acm_9218
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Furuness, J., Morris, C., Morillo, R., Herzberg, A., Wang, B.
 TITLE: "Bgpy: The bgp python security simulator"
 YEAR: 2023-08
@@ -67556,7 +67557,7 @@ GEOLOC: Mansfield, CT, US
 URL: https://dl.acm.org/doi/abs/10.1145/3607505.3607509
 ---
 MARKER: 2023_k_thiagarajan_acm_4992
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Thiagarajan, K., Kumar, R., Bustamante, FE.
 TITLE: "Poster: A Peek Backstage: Organizations in DNS Resolver Hierarchies"
 YEAR: 2023-09
@@ -67566,7 +67567,7 @@ GEOLOC: Evanston, IL, US
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3610870
 ---
 MARKER: 2023_m_zhou_acm_1622
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhou, M., Zhang, X., Hao, S., Yang, X., Zheng, J., Chen, G., Dou, W.
 TITLE: "Regional IP Anycast: Deployments, Performance, and Potentials"
 YEAR: 2023-09
@@ -67576,7 +67577,7 @@ GEOLOC: Nanjing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604846
 ---
 MARKER: 2023_z_xu_acm_8706
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Xu, Z., Yan, FY., Singh, R., Chiu, JT., Rush, AM., Yu, M.
 TITLE: "Teal: Learning-Accelerated Optimization of WAN Traffic Engineering"
 YEAR: 2023-09
@@ -67596,7 +67597,7 @@ GEOLOC: Beijing, CN
 URL: https://arxiv.org/abs/2309.13271
 ---
 MARKER: 2023_h_sadok_usenix_1853
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sadok, H., Atre, N., Zhao, Z., Berger, DS., Hoe, JC., Panda, A., Sherry, J., Wang, R.
 TITLE: "Ensō: A Streaming Interface for NIC-Application Communication"
 YEAR: 2023-07
@@ -67606,7 +67607,7 @@ GEOLOC: Pittsburgh, PA, US
 URL: https://www.usenix.org/conference/osdi23/presentation/sadok
 ---
 MARKER: 2023_d_kim_usenix_1260
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kim, D., Sekar, V., Seshan, S.
 TITLE: "ExoPlane: An Operating System for On-Rack Switch Resource Augmentation"
 YEAR: 2023-04
@@ -67616,7 +67617,7 @@ GEOLOC: Pittsburgh, PA, US
 URL: https://www.usenix.org/conference/nsdi23/presentation/kim-daehyeok
 ---
 MARKER: 2023_h_namkung_usenix_6196
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Namkung, H., Liu, Z., Kim, D., Sekar, V., Steenkiste, P.
 TITLE: "Sketchovsky: Enabling ensembles of sketches on programmable switches"
 YEAR: 2023-04
@@ -67636,7 +67637,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.researchsquare.com/article/rs-3146006/latest
 ---
 MARKER: 2023_y_fernandez_elsevier_5161
-TYPE: in_journal
+TYPE: article
 AUTHOR: Fernandez, Y., Soto, JE., Prieto, Y., Hernández, C., Figueroa, M.
 TITLE: A Streaming Algorithm to Estimate the Empirical Entropy of Network Flows for Memory-Constrained Devices
 SERIAL: Elsevier Computer Networks
@@ -67657,7 +67658,7 @@ GEOLOC: Beijing, CN
 URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4578345
 ---
 MARKER: 2023_p_żórawski_ieee_6017
-TYPE: in_journal
+TYPE: article
 AUTHOR: Żórawski, P., Caviglione, L., Mazurczyk, W.
 TITLE: A long-term perspective of the internet susceptibility to covert channels
 SERIAL: IEEE Communications Magazine
@@ -67668,7 +67669,7 @@ GEOLOC: Warszawa, PL
 URL: https://ieeexplore.ieee.org/abstract/document/10061648/
 ---
 MARKER: 2023_p_bedi_ieee_1618
-TYPE: in_journal
+TYPE: article
 AUTHOR: Bedi, P., Jindal, V., Dua, A.
 TITLE: "SPYIPv6: Locating Covert Data in One or a Combination of IPv6 Header field (s)"
 SERIAL: IEEE Access
@@ -67679,7 +67680,7 @@ GEOLOC: Delhi, IN
 URL: https://ieeexplore.ieee.org/abstract/document/10258266/
 ---
 MARKER: 2023_a_nadhum_iasj_4821
-TYPE: in_journal
+TYPE: article
 AUTHOR: Nadhum, A., Al-Saadi, A.
 TITLE: Smart Service Function Chain System for Dynamic Traffic Steering using Reinforcement Learning (CHRL)
 SERIAL: KIJOMS
@@ -67690,7 +67691,7 @@ GEOLOC: Baghdad, IQ
 URL: https://www.iasj.net/iasj/download/8d8482abebb80765
 ---
 MARKER: 2023_q_zhang_elsevier_1998
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, Q., Xiao, Q., Cai, Y.
 TITLE: A generic sketch for estimating super-spreaders and per-flow cardinality distribution in high-speed data streams
 SERIAL: Elsevier Computer Networks
@@ -67701,7 +67702,7 @@ GEOLOC: Nanjing, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1389128623005042
 ---
 MARKER: 2023_y_xu_acm_7290
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Xu, Y., Wu, W., Zhao, B., Yang, T., Zhao, Y.
 TITLE: "MimoSketch: A Framework to Mine Item Frequency on Multiple Nodes with Sketches"
 YEAR: 2023-08
@@ -67711,7 +67712,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3580305.3599433
 ---
 MARKER: 2023_w_li_acm_5964
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, W., Patras, P.
 TITLE: "Tight-sketch: A high-performance sketch for heavy item-oriented data stream mining with limited memory size"
 YEAR: 2023-10
@@ -67721,7 +67722,7 @@ GEOLOC: Edinburgh, GB
 URL: https://dl.acm.org/doi/abs/10.1145/3583780.3615080
 ---
 MARKER: 2023_a_monterubbiano_acm_7648
-TYPE: in_journal
+TYPE: article
 AUTHOR: Monterubbiano, A., Langlet, J., Walzer, S., Antichi, G., Reviriego, P., Pontarelli, S.
 TITLE: Lightweight Acquisition and Ranging of Flows in the Data Plane
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
@@ -67732,7 +67733,7 @@ GEOLOC: Rome, IT
 URL: https://dl.acm.org/doi/abs/10.1145/3626775
 ---
 MARKER: 2023_h_huang_acm_3240
-TYPE: in_journal
+TYPE: article
 AUTHOR: Huang, H., Yu, J., Du, Y., Liu, J., Dai, H., Sun, YE.
 TITLE: Memory-Efficient and Flexible Detection of Heavy Hitters in High-Speed Networks
 SERIAL: Proceedings of the ACM on Management of Data
@@ -67743,7 +67744,7 @@ GEOLOC: SuZhou, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3617334
 ---
 MARKER: 2023_f_wang_acm_8902
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wang, F., Chen, Q., Li, Y., Yang, T., Tu, Y., Yu, L., Cui, B.
 TITLE: "JoinSketch: A Sketch Algorithm for Accurate and Unbiased Inner-Product Estimation"
 SERIAL: Proceedings of the ACM on Management of Data
@@ -67754,7 +67755,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3588935
 ---
 MARKER: 2023_r_miao_acm_9274
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Miao, R., Zhang, Y., Qu, G., Yang, K., Yang, T., Cui, B.
 TITLE: "Hyper-USS: Answering Subset Query Over Multi-Attribute Data Stream"
 YEAR: 2023-08
@@ -67764,7 +67765,7 @@ GEOLOC: Shenzhen, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3580305.3599383
 ---
 MARKER: 2023_j_guo_acm_1051
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Guo, J., Hong, Y., Wu, Y., Liu, Y., Yang, T., Cui, B.
 TITLE: "Sketchpolymer: Estimate per-item tail quantile using one sketch"
 YEAR: 2023-08
@@ -67774,7 +67775,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3580305.3599505
 ---
 MARKER: 2023_z_shmeis_acm_3480
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Shmeis, Z., Abdullah, M., Nikolopoulos, P., Argyraki, K., Choffnes, D., Gill, P.
 TITLE: Localizing Traffic Differentiation
 YEAR: 2023-10
@@ -67784,7 +67785,7 @@ GEOLOC: lausanne, CH
 URL: https://dl.acm.org/doi/abs/10.1145/3618257.3624809
 ---
 MARKER: 2023_y_tian_acm_5313
-TYPE: in_journal
+TYPE: article
 AUTHOR: Tian, Y., Yan, T., Zhang, R., Huang, K., Zheng, B., Zhou, X.
 TITLE: A Learned Cuckoo Filter for Approximate Membership Queries over Variable-sized Sliding Windows on Data Streams
 SERIAL: Proceedings of the ACM on Management of Data
@@ -67795,7 +67796,7 @@ GEOLOC: Hong Kong, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3626758
 ---
 MARKER: 2023_a_monterubbiano_acm_4646
-TYPE: in_journal
+TYPE: article
 AUTHOR: Monterubbiano, A., Azorin, R., Castellano, G., Gallo, M., Pontarelli, S., Rossi, D.
 TITLE: "SPADA: A Sparse Approximate Data Structure Representation for Data Plane Per-flow Monitoring"
 SERIAL: Proceedings of the ACM on Networking
@@ -67806,7 +67807,7 @@ GEOLOC: Rome, IT
 URL: https://dl.acm.org/doi/abs/10.1145/3629149
 ---
 MARKER: 2023_y_zhao_acm_8647
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhao, Y., Liu, W., Dong, F., Yang, T., Li, Y., Yang, K., Liu, Z., Jia, Z., Yang, Y.
 TITLE: "P4LRU: Towards An LRU Cache Entirely in Programmable Data Plane"
 YEAR: 2023-09
@@ -67816,7 +67817,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604813
 ---
 MARKER: 2023_z_liu_acm_5989
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, Z., Zhang, Y., Zhu, Y., Zhang, R., Yang, T., Xie, K., Wang, S., Li, T., Cui, B.
 TITLE: "TreeSensing: Linearly Compressing Sketches with Flexibility"
 SERIAL: Proceedings of the ACM on Management of Data
@@ -67827,7 +67828,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3588910
 ---
 MARKER: 2023_a_rivitti_acm_4523
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Rivitti, A., Bifulco, R., Tulumello, A., Bonola, M., Pontarelli, S.
 TITLE: "eHDL: Turning eBPF/XDP Programs into Hardware Designs for the NIC"
 YEAR: 2023-03
@@ -67837,7 +67838,7 @@ GEOLOC: Rome, IT
 URL: https://dl.acm.org/doi/abs/10.1145/3582016.3582035
 ---
 MARKER: 2023_r_ding_acm_1893
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ding, R., Yang, S., Chen, X., Huang, Q.
 TITLE: "BitSense: Universal and Nearly Zero-Error Optimization for Sketch Counters with Compressive Sensing"
 YEAR: 2023-09
@@ -67847,7 +67848,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604865
 ---
 MARKER: 2023_h_sun_acm_2362
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sun, H., Li, J., He, J., Gui, J., Huang, Q.
 TITLE: "OmniWindow: A general and efficient window mechanism framework for network telemetry"
 YEAR: 2023-09
@@ -67857,7 +67858,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604847
 ---
 MARKER: 2023_m_zuppelli_unige_9231
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Zuppelli, M.
 TITLE: Dipartimento di Informatica, Bioingegneria, Robotica ed Ingegneria dei Sistemi
 PUBLISH: University of Genoa
@@ -67917,7 +67918,7 @@ GEOLOC: Haifa, IL
 URL: https://arxiv.org/abs/2309.03045
 ---
 MARKER: 2024_c_falter_uzh_1143
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Falter, C.
 TITLE: Emulator for Distributed DDoS Datasets (EDDD)
 PUBLISH: Univeristy of Zurich
@@ -67927,7 +67928,7 @@ GEOLOC: Zürich, CH
 URL: https://www.zora.uzh.ch/id/eprint/255747/
 ---
 MARKER: 2023_x_li_ttu_1001
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, X., Cheng, J., Shi, Z., Liu, J., Zhang, B., Xu, X., Tang, X., Sheng, VS.
 TITLE: "Blockchain security threats and collaborative defense: A literature review"
 SERIAL: Computers, Materials and Continua
@@ -67938,7 +67939,7 @@ GEOLOC: Haikou, CN
 URL: https://ttu-ir.tdl.org/items/6d101f9e-b889-48a1-a708-310730b53d29
 ---
 MARKER: 2023_pk_mvula_springer_6117
-TYPE: in_journal
+TYPE: article
 AUTHOR: Mvula, PK., Branco, P., Jourdan, GV., Viktor, HL.
 TITLE: A systematic literature review of cyber-security data repositories and performance assessment metrics for semi-supervised learning
 SERIAL: Discov Data (2023)
@@ -67959,7 +67960,7 @@ GEOLOC: Pittsburgh, PA, US
 URL: https://scholar.archive.org/work/yz6sxplqhraipko3npx5obytiy/access/wayback/https://assets.researchsquare.com/files/rs-2583991/v1/407005015e3855385f84fc5c.pdf?c=1676525606
 ---
 MARKER: 2023_t_bühler_ethz_8591
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Bühler, T.
 TITLE: Improving Internet Path Property Inference
 PUBLISH: ETH Zürich
@@ -67969,7 +67970,7 @@ GEOLOC: Zürich, CH
 URL: https://www.research-collection.ethz.ch/handle/20.500.11850/626365
 ---
 MARKER: 2023_t_žukina_unizg_7739
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Žukina, T.
 TITLE: Zaštita računalnih sustava u oblaku od napada distribuiranim uskraćivanjem usluge
 PUBLISH: University of Zagreb
@@ -67979,7 +67980,7 @@ GEOLOC: Zagreb, HR
 URL: https://repozitorij.unizg.hr/islandora/object/fer:10766
 ---
 MARKER: 2023_s_kopmann_uni_augsburg_5444
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kopmann, S., Zitterbart, M.
 TITLE: Impact of adaptive packet sampling on ML-based DDoS detection
 YEAR: 2023-09
@@ -67989,7 +67990,7 @@ GEOLOC: Karlsruhe, DE
 URL: https://opus.bibliothek.uni-augsburg.de/opus4/files/109655/109655.pdf
 ---
 MARKER: 2023_y_guo_mdpi_3962
-TYPE: in_journal
+TYPE: article
 AUTHOR: Guo, Y., Wang, Y., Khan, F., Al-Atawi, AA., Abdulwahid, AA., Lee, Y., Marapelli, B.
 TITLE: Traffic Management in IoT Backbone Networks Using GNN and MAB with SDN Orchestration
 SERIAL: Sensors 
@@ -68000,7 +68001,7 @@ GEOLOC: Jinan, CN
 URL: https://www.mdpi.com/1424-8220/23/16/7091
 ---
 MARKER: 2023_cm_nalayini_jit_1631
-TYPE: in_journal
+TYPE: article
 AUTHOR: Nalayini, CM., Katiravan, J.
 TITLE: A New IDS for Detecting DDoS Attacks in Wireless Networks using Spotted Hyena Optimization and Fuzzy Temporal CNN
 SERIAL: Journal of Internet Technology
@@ -68011,7 +68012,7 @@ GEOLOC: Chennai, IN
 URL: https://jit.ndhu.edu.tw/article/view/2836
 ---
 MARKER: 2023_z_li_ieee_5229
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, Z., Li, C., Sun, G., Zhang, Z., Cheng, Y., Weng, M.
 TITLE: Research on Optimal Selection Measurement of DNS Root Instance
 SERIAL: IEEE Access
@@ -68022,7 +68023,7 @@ GEOLOC: Harbin, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10225500/
 ---
 MARKER: 2023_p_paradise_budidarma_7801
-TYPE: in_journal
+TYPE: article
 AUTHOR: Paradise, P., Prabowo, WA., Rijanandi, T.
 TITLE: Analysis of Distributed Denial of Service Attacks Using Support Vector Machine and Fuzzy Tsukamoto
 SERIAL: JURNAL MEDIA INFORMATIKA BUDIDARMA
@@ -68033,7 +68034,7 @@ GEOLOC: Purwokerto, ID
 URL: https://www.ejurnal.stmik-budidarma.ac.id/index.php/mib/article/view/5199
 ---
 MARKER: 2023_a_mirian_acm_9240
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Mirian, A., Ukani, A., Foster, I., Akiwate, G., Halicioglu, T., Moore, CT., Snoeren, AC., Voelker, GM., Savage, S.
 TITLE: "In the Line of Fire: Risks of DPI-triggered Data Collection"
 YEAR: 2023-08
@@ -68043,7 +68044,7 @@ GEOLOC: San Diego, CA, US
 URL: https://dl.acm.org/doi/abs/10.1145/3607505.3607526
 ---
 MARKER: 2023_k_hove_acm_6055
-TYPE: in_journal
+TYPE: article
 AUTHOR: Hove, K van., Rijswijk-Deij, J van der Ham-de Vos‚ R van.
 TITLE: "rpkiller: Threat Analysis of the BGP Resource Public Key Infrastructure"
 SERIAL: 'Digital Threats: Research and Practice'
@@ -68054,7 +68055,7 @@ GEOLOC: Enschede, NL
 URL: https://dl.acm.org/doi/abs/10.1145/3617182
 ---
 MARKER: 2023_kuk_reddy_dogorangsang_3697
-TYPE: in_journal
+TYPE: article
 AUTHOR: Reddy, KUK., Prasanna, KL., Sree, HKK., Anuradha, K., Nath, TB., Ali, SS.
 TITLE: "Machine Learning Technique for SDN: DDOS Attacks and Defense Mechanisms"
 SERIAL: Dogo Rangsang Research Journal
@@ -68065,7 +68066,7 @@ GEOLOC: Rajampet, IN
 URL: https://www.journal-dogorangsang.in/no_1_Online_23/38_jan.pdf
 ---
 MARKER: 2023_dj_borah_research_gate_7419
-TYPE: in_journal
+TYPE: article
 AUTHOR: Borah, DJ., Sarma, A.
 TITLE: DETECTION OF PEER-TO-PEER BOTNETS USING GRAPH MINING
 SERIAL: International Journal of Computer Networks & Communications (IJCNC)
@@ -68076,7 +68077,7 @@ GEOLOC: Guwahati, IN
 URL: https://www.researchgate.net/profile/Dhruba-Borah/publication/369654533_DETECTION_OF_PEER-TO-PEER_BOTNETS_USING_GRAPH_MINING/links/64263cc292cfd54f843dd897/Detection-of-Peer-to-Peer-Botnets-using-Graph-Mining.pdf?origin=journalDetail&_tp=eyJwYWdlIjoiam91cm5hbERldGFpbCJ9
 ---
 MARKER: 2023_jf_luz_sol_sbc_5937
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Luz, JF., Araujo-Filho, PF de., Arcoverde, HF., Campelo, DR.
 TITLE: Unsupervised SOM-Based Intrusion Detection System for DNS Tunneling Attacks
 YEAR: 2023-09
@@ -68086,7 +68087,7 @@ GEOLOC: Recife, BR
 URL: https://sol.sbc.org.br/index.php/sbseg/article/view/27232
 ---
 MARKER: 2023_b_rubin_bennycrubin_7617
-TYPE: class report
+TYPE: online
 AUTHOR: Rubin, B., Rizzo, J.
 TITLE: Model Analysis for the BA and SBM as Internet AS connectivity Models
 PUBLISH: bennycrubin
@@ -68106,7 +68107,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4678934
 ---
 MARKER: 2023_e_rye_acm_4924
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Rye, E., Levin, D.
 TITLE: "Ipv6 hitlists at scale: Be careful what you wish for"
 YEAR: 2023-09
@@ -68116,7 +68117,7 @@ GEOLOC: Maryland, MD, US
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604829
 ---
 MARKER: 2023_x_chen_acm_1685
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, X., Shi, W., Liu, J., Hou, M., Li, Y.
 TITLE: "6Community: An active IPv6 address detection method based on community discovery algorithm"
 YEAR: 2023-11
@@ -68126,7 +68127,7 @@ GEOLOC: Chengdu, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3625403.3625426
 ---
 MARKER: 2023_y_xie_mdpi_5008
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xie, Y., Zhang, Z., Liu, Y., Chen, E., Li, N.
 TITLE: Evaluation Method of IP Geolocation Database Based on City Delay Characteristics
 SERIAL: Electronics
@@ -68147,7 +68148,7 @@ GEOLOC: Campinas, BR
 URL: https://arxiv.org/abs/2308.05254
 ---
 MARKER: 2023_a_maghsoudlou_uni_saarland_7888
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Maghsoudlou, A.
 TITLE: Towards Uncovering Hidden Internet Traffic Characteristics
 PUBLISH: Universität des Saarlandes
@@ -68157,7 +68158,7 @@ GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/bitstream/20.500.11880/37289/1/phd-curr%20%281%29.pdf
 ---
 MARKER: 2023_y_wu_ieee_6737
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wu, Y., Dong, S., Zhou, Y., Zhao, Y., Fu, F., Yang, T., Niu, C., Wu, F., Cui, B.
 TITLE: "KVSAgg: Secure Aggregation of Distributed Key-Value Sets"
 YEAR: 2023-07
@@ -68177,7 +68178,7 @@ GEOLOC: Shenzhen, CN
 URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4604412
 ---
 MARKER: 2023_a_mobilia_sap_4016
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Mobilia, A.
 TITLE: "BGP Data Analysis: Exploring Solutions for Autonomous Systems Relationships Inference"
 PUBLISH: Sapienza University of Rome
@@ -68187,7 +68188,7 @@ GEOLOC: Rome, IT
 URL: https://alessiomobilia.com/docs/AlessioMobiliaMasterThesis.pdf
 ---
 MARKER: 2023_s_kastanakis_acm_4982
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kastanakis, S., Giotsas, V., Livadariu, I., Suri, N.
 TITLE: "Replication: 20 Years of Inferring Interdomain Routing Policies"
 YEAR: 2023-10
@@ -68197,7 +68198,7 @@ GEOLOC: Lancaster, GB
 URL: https://dl.acm.org/doi/pdf/10.1145/3618257.3624799?casa_token=WljOxoFwUhAAAAAA:pAc8edbptCCEzEIfmc_839gDmsMAAiFN11n1G1XN5yfbU4H3O2KOjdc9ZdVqWn6eDRTHpYeRYwthOQ
 ---
 MARKER: 2023_b_yeganeh_ieee_7517
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yeganeh, B., Durairajan, R., Rejaie, R., Willinger, W.
 TITLE: A Case for Performance- and Cost-Aware Multi-Cloud Overlays
 YEAR: 2023-07
@@ -68207,7 +68208,7 @@ GEOLOC: Eugene, OR, US
 URL: https://ix.cs.uoregon.edu/~ram/papers/Cloud-2023.pdf
 ---
 MARKER: 2023_a_arouna_acm_4532
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Arouna, A., Livadariu, I., Rijswijk-Deij, RV., Jonker, M.
 TITLE: "Advancing in Reverse: A Comprehensive Characterization of IN-ADDR.ARPA Deployment"
 YEAR: 2023-12
@@ -68217,7 +68218,7 @@ GEOLOC: Oslo, NO
 URL: https://dl.acm.org/doi/pdf/10.1145/3630590.3630595
 ---
 MARKER: 2023_y_nosyk_hal_8614
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Nosyk, Y., Hureau, O., Fernandez, S., Duda, A., Korczyński, M.
 TITLE: "Unveiling the Weak Links: Exploring DNS Infrastructure Vulnerabilities and Fortifying Defenses"
 YEAR: 2023-10
@@ -68227,7 +68228,7 @@ GEOLOC: Grenoble, FR
 URL: https://hal.science/hal-04229800v1/file/WTMC_2023__Unveiling_the_Weak_Links__Exploring_DNS_Infrastructure_Vulnerabilities_and_Fortifying_Defenses.pdf
 ---
 MARKER: 2023_r_zhuo_harvard_2317
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Zhuo, R.
 TITLE: Three Essays on Economics of Innovation, Technology, and Policy
 PUBLISH: Harvard
@@ -68237,7 +68238,7 @@ GEOLOC: Cambridge, MA, US
 URL: https://dash.harvard.edu/handle/1/37375540
 ---
 MARKER: 2021_a_mitseva_hal_7862
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Mitseva, A., Aleksandrova, M., Engel, T., Panchenko, A.
 TITLE: Security and performance implications of BGP rerouting-resistant guard selection algorithms for Tor
 YEAR: 2021-11
@@ -68247,7 +68248,7 @@ GEOLOC: Esch-sur-Alzette, LU
 URL: https://inria.hal.science/hal-03440868v1/document
 ---
 MARKER: 2023_a_mitseva_elsevier_6952
-TYPE: in_journal
+TYPE: article
 AUTHOR: Mitseva, A., Aleksandrova, M., Panchenko, A.
 TITLE: Security and performance implications of BGP rerouting-resistant guard selection algorithms for Tor
 SERIAL: Computers & Security
@@ -68258,7 +68259,7 @@ GEOLOC: Cottbus, DE
 URL: https://pdf.sciencedirectassets.com/271887/1-s2.0-S0167404823X00078/1-s2.0-S0167404823002845/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJHMEUCIQClb4Uyjkckt28Vbwg0xLQMv6m0sAd3x1lRelUF6BMdNgIgSEn1lbAcmCMGz8KQRjBgkvGXcbtkEWcUWs1vsL3gllAquwUImv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDMJD82kRz57uyfb3oyqPBWyXPRpH6%2BtBNSZRMb7Ca%2BCUNQZ3CWlAoczhO0wGctFZVlTCGysPAPuWms1Ab2VH1qcPtDFcitZ7d7T%2BnBDNYILxaOqbVTg9zeTjqkITiOgZlbRqKGERTNY56pTMMENPQHPNdN2uJTov4PwQ4ztEUtUS%2BLmlpCDLquzX6H%2Fqr2u3raNX%2Bo7%2FEUy4ul79PfxSen%2FgO0QMlJVNqRH%2FVnXXIZ6kyD4n5hdeF7nqe%2F619jUbdj8Uiq988noVuNqUeJ1Vw8mQfxtqHSeEJfo7O%2BL2JqSxh5mImI%2FLThe%2BtcgVolhoq2voTeUWaQrS8Y7QhjlGCNMcWOJLzST40ipQO07lHEUM9G5CruRSlzD0Jlno7BLBwlyqL7FfX5ViPOlhFsyMXrWHVa9yl48ZTpyMXeRC8tv8vUXQdQr35GmhpFZ%2BVdlNl1IXwrzk%2BTLlwXW9omtpZK0l1gGZc0lSa%2BUmWiXwd9ech9uxlSH%2Fyr61JUPJ9LYPCn%2B0OSHqadL5Y2NJ7Eg8yaJ7zsPnuhcoy1sKKKIDTR8tIRKdZYrX%2FbrLCa5oeLMRucg7%2Fw%2BSTQyasgp8%2BM4HBznYsFkH84Jjl3kTB%2BoNnPA9a9fPXA49oWtAIJj58kFrW0cgPo1pEUQ%2BC4OYhAEtS58AWtzP8plhx37XX5EfBTqiDYLdJYtBwH0r8TZ9AiW0qJFTw0fehOAlrtEMX7lHo9sCkHtXFMSYVL8ouM00Vg0HtN0PO6pD9isdqRdfxzX6tccxBPXeBh14jnqretEQeNmc3fhq%2FPVnhCe7gFx1LBMwwFSSUwRqta%2B02h0NuuOLvAziqIhE0YSZ4%2FuhTSr%2FjnKozgl90gvW1jTRk679GnDcmGyM5sw%2B0XdfTPDneX8w7eeXtAY6sQFvN0sw0UJkechXr%2FIAF9dCXz2KZBN0RJQDJCbgWI%2FMMDnYbpymJylDxZA9CJd%2Fxe9nVjT2vw9eb0XBqVCeSriygLUw9apk2%2FsZQgd8j%2Fmv2A0ioIKzt3ZluoRdGnw9%2FdgkZKEtliNpnl0Vz9y2UI%2BcfBb42o42K0ctm5Ca67ifbOPX41gma7n0i5RmcjHZf2gHr9wbpq5upaK4v91q3C8l2mjaB3W%2Fk6E9gAmBuA5%2BxXg%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240704T011301Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYQGJRW7QE%2F20240704%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=df012e0937d9e5664976c9abee555b720000be6feee1a6578b79ca63e313ddfb&hash=d268b457552852cba3940e70d4d652d69ecca31d8825fb846586136d353b9920&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0167404823002845&tid=spdf-18ad7d48-34f4-4aad-ae52-c05880f55f96&sid=0f10589661447749cc3ae7040258c94116a1gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=131c5e5e04075251515d&rr=89db4018485b7c50&cc=us
 ---
 MARKER: 2023_a_alobaid_taylorfrancis_1649
-TYPE: in_book
+TYPE: book
 AUTHOR: Alobaid, A., Nuimi, ZN.
 TITLE: K-means algorithm to cluster the Internet autonomous systems into tiers
 CTITLE: Recent Advances in Computing Sciences
@@ -68268,7 +68269,7 @@ GEOLOC: Baghdad, IQ
 URL: https://www.taylorfrancis.com/chapters/edit/10.1201/9781003405573-18/means-algorithm-cluster-internet-autonomous-systems-tiers-abdul-azeez-alobaid-zinah-nuimi
 ---
 MARKER: 2023_j_li_ieee_7818
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, J., Sisodia, D., Feng, Y., Shi, L., Zhang, M., Early, C., Reiher, P.
 TITLE: "TENSOR: Lightweight BGP Non-Stop Routing"
 YEAR: 2023-10
@@ -68278,7 +68279,7 @@ GEOLOC: Eugene, OR, US
 URL: https://ieeexplore.ieee.org/document/10288699
 ---
 MARKER: 2023_mt_paracha_northeastern_1361
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Paracha, MT.
 TITLE: Measurement Techniques to Understand How Diversity in TLS Implementations & Deployments Influences Protocol Security
 PUBLISH: Northeastern
@@ -68288,7 +68289,7 @@ GEOLOC: Boston, MA
 URL: https://repository.library.northeastern.edu/files/neu:4f22ww01n/fulltext.pdf
 ---
 MARKER: 2023_n_cicco_acm_5853
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Cicco, N Di., Sadi, A Al., Grasselli, C., Antichi, A Melis‚ G., Tornatore, M.
 TITLE: "Poster: Continual Network Learning"
 YEAR: 2023-09
@@ -68298,7 +68299,7 @@ GEOLOC: Milan, IT
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3610855
 ---
 MARKER: 2023_q_su_acm_9032
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Su, Q., Wu, S., Niu, Z., Shu, R., Cheng, P., Xue, Y Xiong‚ C., Liu, Z., Xu, H.
 TITLE: "Poster: Meili: Towards SmartNIC as a Service"
 YEAR: 2023-09
@@ -68318,7 +68319,7 @@ GEOLOC: College Park, MD, US
 URL: https://lowendbox.com/wp-content/uploads/2023/11/Tkmvpn.pdf
 ---
 MARKER: 2023_c_zhang_ieee_1952
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhang, C., Miao, C., An, C., Hong, A., Wang, N., Wang, Z., Wang, J.
 TITLE: "Metis: Detecting Fake AS-PATHs Based on Link Prediction"
 YEAR: 2023-07
@@ -68328,7 +68329,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10218104/
 ---
 MARKER: 2023_y_ren_ieee_8856
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ren, Y., Wang, J., Li, H., Zhu, H., Sun, L.
 TITLE: User Recognition of Devices on the Internet based on Heterogeneous Graph Transformer with Partial Labels
 YEAR: 2023-06
@@ -68338,7 +68339,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10192043/
 ---
 MARKER: 2023_a_dutta_ieee_7351
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Dutta, A., Al-Shaer, E., Chatterjee, S., Duan, Q.
 TITLE: Autonomous Cyber Defense Against Dynamic Multi-strategy Infrastructural DDoS Attacks
 YEAR: 2023-10
@@ -68348,7 +68349,7 @@ GEOLOC: Chapel Hill, NC, US
 URL: https://ieeexplore.ieee.org/abstract/document/10288937/
 ---
 MARKER: 2023_m_liu_wiley_7707
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, M., Guo, Y., Zhang, H., Zhang, L., Mao, B., Fang, M., Zhang, Q.
 TITLE: "FBAR: An effective method for resolving large‚Äêscale IPv6 aliases"
 SERIAL: International Journal of Communication Systems
@@ -68359,7 +68360,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://onlinelibrary.wiley.com/doi/abs/10.1002/dac.5610
 ---
 MARKER: 2023_a_arouna_ieee_9770
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Arouna, A., Livadariu, I., Khanyari, AL., Elmokashfi, A.
 TITLE: On Large-Scale IP Service Disruptions Dependencies
 YEAR: '2023'
@@ -68369,7 +68370,7 @@ GEOLOC: Oslo, NO
 URL: https://ieeexplore.ieee.org/abstract/document/10327794/
 ---
 MARKER: 2023_j_he_ieee_4035
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: He, J., Li, Y., Zhang, H., Wang, M., An, C., Wang, J.
 TITLE: "Be Careful of Your Neighbors: Injected Sub-Prefix Hijacking Invisible to Public Monitors"
 YEAR: '2023'
@@ -68379,7 +68380,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10278923/
 ---
 MARKER: 2023_m_alam_ieee_1551
-TYPE: in_journal
+TYPE: article
 AUTHOR: Alam, M., Anshelevich, E., Kar, K., Yuksel, M.
 TITLE: Pricing for Efficient Traffic Exchange at IXPs
 SERIAL: IEEE/ACM Transactions on Networking
@@ -68390,7 +68391,7 @@ GEOLOC: Troy, NY, US
 URL: https://ieeexplore.ieee.org/abstract/document/10329309/
 ---
 MARKER: 2023_n_jiang_ieee_1904
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jiang, N., Wang, JH., Wang, J., Wang, P.
 TITLE: "TinyG: Accurate IP Geolocation Using a Tiny Number of Probers"
 YEAR: '2023'
@@ -68400,7 +68401,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10327884/
 ---
 MARKER: 2023_h_li_ieee_3868
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, H., Wu, Y., Huang, R., Mi, X., Hu, C., Guo, S.
 TITLE: "Demystifying Decentralized Matrix Communication Network: Ecosystem and Security"
 YEAR: 2023-12
@@ -68410,7 +68411,7 @@ GEOLOC: Shandong, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10476262/
 ---
 MARKER: 2023_n_rodday_ieee_1630
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Rodday, N., Rodosek, GD.
 TITLE: "BGPEval: Automating Large-Scale Testbed Creation"
 YEAR: '2023'
@@ -68420,7 +68421,7 @@ GEOLOC: Munich, DE
 URL: https://ieeexplore.ieee.org/abstract/document/10327905/
 ---
 MARKER: 2023_z_liu_ieee_8759
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Liu, Z., Qiu, H., Wang, R., Wang, J Zhu‚ Q.
 TITLE: Detecting BGP Anomalies based on Spatio-Temporal Feature Representation Model for Autonomous Systems
 YEAR: 2023-11
@@ -68430,7 +68431,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10538920/
 ---
 MARKER: 2023_y_wu_ieee_9796
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wu, Y., Wang, Y., DeJulius, J., Woitel, R Abboud‚ M., Osadchyy, B., Richardson, K.
 TITLE: "Comp-RPKI: A Decentralized Protocol for Full Route Origin Validation"
 YEAR: 2023-08
@@ -68440,7 +68441,7 @@ GEOLOC: Platteville, WI, US
 URL: https://ieeexplore.ieee.org/abstract/document/10415592/
 ---
 MARKER: 2023_j_nie_ieee_1769
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Nie, J., Hao, J., Peng, S., Shu, X., Xuan, Z Ruan‚ Q.
 TITLE: Empirical study of the IPv4 and IPv6 networks at the autonomous system level
 YEAR: 2023-08
@@ -68450,7 +68451,7 @@ GEOLOC: Hangzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10381016/
 ---
 MARKER: 2023_h_ye_ieee_2982
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ye, H., Wang, S., Li, D.
 TITLE: Impact of International Submarine Cable on Internet Routing
 YEAR: 2023-05
@@ -68460,7 +68461,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10229024/
 ---
 MARKER: 2023_l_xie_ieee_9291
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xie, L., Meng, S., Yao, W., Zhang, X.
 TITLE: "Differential Pricing Strategies for Bandwidth Allocation With LFA Resilience: A Stackelberg Game Approach"
 SERIAL: IEEE TRANSACTIONS ON INFORMATION FORENSICS AND SECURITY
@@ -68471,7 +68472,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10194962/
 ---
 MARKER: 2023_l_zembruzki_ieee_9624
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zembruzki, L., Jacobs, AS., Pfitscher, LZ Granville‚ RJ.
 TITLE: "Examining the Centralization of Email Industry: A Landscape Analysis for IPv4 and IPv6"
 YEAR: 2023-07
@@ -68481,7 +68482,7 @@ GEOLOC: Porto Alegre, BR
 URL: https://ieeexplore.ieee.org/abstract/document/10217834/
 ---
 MARKER: 2023_b_yeganeh_ieee_4379
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yeganeh, B., Durairajan, R., Willinger, R Rejaie‚ W.
 TITLE: A case for performance-and cost-aware multi-cloud overlays
 YEAR: 2023-07
@@ -68491,7 +68492,7 @@ GEOLOC: Eugene, OR, US
 URL: https://ieeexplore.ieee.org/abstract/document/10255002/
 ---
 MARKER: 2023_a_kumari_taylorfrancis_6869
-TYPE: in_book
+TYPE: book
 AUTHOR: Kumari, A., Gupta, S., Sairam, J Chandra‚ AS.
 TITLE: Reinforcement Learning–Based Approach Towards Switch Migration for Load-Balancing in SDN
 CTITLE: Artificial Intelligence and Deep Learning for Computer Network
@@ -68501,7 +68502,7 @@ GEOLOC: Patna, IN
 URL: https://www.taylorfrancis.com/chapters/edit/10.1201/9781003212249-3/reinforcement-learning%E2%80%93based-approach-towards-switch-migration-load-balancing-sdn-abha-kumari-shubham-gupta-joydeep-chandra-ashok-singh-sairam
 ---
 MARKER: 2023_p_bedi_springer_3412
-TYPE: in_journal
+TYPE: article
 AUTHOR: Bedi, P., Dua, A., Jindal, V.
 TITLE: "FIHIM: a framework for information hiding in IPv6 using micro-protocols"
 SERIAL:  International Journal of Information Technology 
@@ -68511,7 +68512,7 @@ GEOLOC: Delhi, IN
 URL: https://link.springer.com/article/10.1007/s41870-023-01511-4
 ---
 MARKER: 2023_z_lin_spiedigitallibrary_9174
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Lin, Z., Qin, B., Nie, W.
 TITLE: "ActiveHolder: an accurate and fast sketch for finding top-K flows"
 YEAR: 2023-01
@@ -68521,7 +68522,7 @@ GEOLOC: Guangzhou, CN
 URL: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12509/125091M/ActiveHolder--an-accurate-and-fast-sketch-for-finding-top/10.1117/12.2655826.short
 ---
 MARKER: 2023_pk_deshmukh_ebsco_4426
-TYPE: in_journal
+TYPE: article
 AUTHOR: Deshmukh, PK., Mane, DT.
 TITLE: QoS-Aware Routing and Resource Allocation Techniques for Enhanced Network Performance.
 SERIAL: Journal of Electrical Systems
@@ -68532,7 +68533,7 @@ GEOLOC: Pune, IN
 URL: https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=11125209&AN=175554625&h=RhYnCQxmOzytdmHK4%2Fpth9Rl9XS8Lu5x3kvizh5%2BkOBI%2FJB3iwDmWCoGqe%2BJRK7qN1wELOMpjf%2BYt%2BszwDL%2Fig%3D%3D&crl=c
 ---
 MARKER: 2023_h_jananthan_ieee_8907
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jananthan, H., Kepner, J., Arcand, M Jones‚ W., Bestor, D., Bergeron, W., Byun, C., Davis, T., Gadepally, V., Grant, D., Houle, M., Hubbell, M., Klein, A., Milechin, L., Morales, G., Morris, A., Mullen, J., Patel, R., Pentland, A., Pisharody, S., Prout, A., Reuther, A., Rosa, A., Samsi, S., Trigg, T., Wachman, G., Yee, C., Michaleas, P.
 TITLE: Mapping of Internet “Coastlines” via Large Scale Anonymized Network Source Correlations
 YEAR: 2023-09
@@ -68542,7 +68543,7 @@ GEOLOC: Cambridge, MA, US
 URL: https://ieeexplore.ieee.org/abstract/document/10363488/
 ---
 MARKER: 2023_s_oh_ieee_7401
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Oh, S., Han, S., Lee, H., Pack, S.
 TITLE: "BACKWARD: A Victim-Centric DDoS Detection and Mitigation Scheme in Programmable Data Plane"
 YEAR: 2023-01
@@ -68552,7 +68553,7 @@ GEOLOC: Seoul, KR
 URL: https://ieeexplore.ieee.org/abstract/document/10059724/
 ---
 MARKER: 2023_l_li_ieee_7554
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, L., Xie, K., Pei, S., Wen, J., Xie, W Liang‚ G.
 TITLE: "CS-Sketch: Compressive Sensing Enhanced Sketch for Full Traffic Measurement"
 SERIAL: IEEE TRANSACTIONS ON NETWORK SCIENCE AND ENGINEERING
@@ -68563,7 +68564,7 @@ GEOLOC: Changsha, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10219069/
 ---
 MARKER: 2023_s_li_ieee_1071
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, S., Huang, J., Zhang, W., Shao, J.
 TITLE: "PA-Sketch: A Fast and Accurate Sketch for Differentiated Flow Estimation"
 YEAR: 2023-10
@@ -68573,7 +68574,7 @@ GEOLOC: Changsha, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10355581/
 ---
 MARKER: 2023_j_kepner_ieee_6271
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kepner, J., Jones, M., Dykstra, P., Davis, C Byun‚ T., Jananthan, H., Arcand, W., Bestor, D., Bergeron, W., Gadepally, V ., Houle, M., Hubbell, M., Klein, A., Milechin, L., Morales, G., Mullen, J., Patel, R., Pentland, A., Pisharody, S., Prout, A., Reuther, A., Rosa, A., Samsi, S., Trigg, T., Yee, C., Michaleas, P.
 TITLE: Focusing and Calibration of Large Scale Network Sensors using GraphBLAS Anonymized Hypersparse Matrices
 YEAR: 2023-09
@@ -68583,7 +68584,7 @@ GEOLOC: Cambridge, MA, US
 URL: https://ieeexplore.ieee.org/abstract/document/10363471/
 ---
 MARKER: 2023_j_yu_ieee_3140
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yu, J., Sun, YE., Huang, H., Du, Y., Gao, G., Xu, H., Chen, S.
 TITLE: "HeavyTracker: An Efficient Algorithm for Heavy-Hitter Detection in High-Speed Networks"
 YEAR: 2023-01
@@ -68593,7 +68594,7 @@ GEOLOC: Suzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10077890/
 ---
 MARKER: 2023_w_yu_ieee_6422
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yu, W., Zhou, B.
 TITLE: Using Long-Short-Term Memory to Effectively Identify Persistent Routes Under Stealthy Link Flooding Attacks in Software-Defined Networks
 YEAR: 2023-07
@@ -68603,7 +68604,7 @@ GEOLOC: Hangzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10218111/
 ---
 MARKER: 2023_w_li_ieee_1132
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, W., Patras, P.
 TITLE: "P-Sketch: A Fast and Accurate Sketch for Persistent Item Lookup"
 SERIAL: IEEE/ACM Transactions on Networking
@@ -68614,7 +68615,7 @@ GEOLOC: Edinburgh, GB
 URL: https://ieeexplore.ieee.org/abstract/document/10230989/
 ---
 MARKER: 2023_g_gao_ieee_4472
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Gao, G., Qian, Z., Huang, H., Du, Y.
 TITLE: An Adaptive Counter-Splicing-Based Sketch for Efficient Per-Flow Size Measurement
 YEAR: 2023-06
@@ -68624,7 +68625,7 @@ GEOLOC: Suzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10188733/
 ---
 MARKER: 2023_h_zhang_ieee_4053
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhang, H., Huang, H., Wang, YE Sun‚ Z.
 TITLE: "MIME: Fast and Accurate Flow Information Compression for Multi-Spread Estimation"
 YEAR: 2023-10
@@ -68634,7 +68635,7 @@ GEOLOC: Suzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10355571/
 ---
 MARKER: 2023_j_he_ieee_3213
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: He, J., Zhu, J., Huang, Q.
 TITLE: "Histsketch: A compact data structure for accurate per-key distribution monitoring"
 YEAR: 2023-04
@@ -68644,7 +68645,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10184829/
 ---
 MARKER: 2023_y_han_ieee_1292
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Han, Y., Huang, H., Du, Y., Sun, YE., Liu, J., Xu, H.
 TITLE: "Hierarchical Sketch: An Efficient Solution for Threshold-t Flows Measurement in High-Speed Networks"
 YEAR: 2023-12
@@ -68654,7 +68655,7 @@ GEOLOC: Chengdu, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10491870/
 ---
 MARKER: 2023_z_fan_ieee_7698
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Fan, Z., Guo, J., Li, X., Yang, T., Zhao, Y., Wu‚Ä¶, Y.
 TITLE: Finding Simplex Items in Data Streams
 YEAR: 2023-04
@@ -68664,7 +68665,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10184714/
 ---
 MARKER: 2023_q_xiao_ieee_3979
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xiao, Q., Cai, X., Qin, Y., Tang, Z., Liu, S Chen‚ Y.
 TITLE: Universal and accurate sketch for estimating heavy hitters and moments in data streams
 SERIAL: IEEE/ACM Transactions on Networking
@@ -68675,7 +68676,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10033422/
 ---
 MARKER: 2023_l_jing_ieee_1251
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jing, L., Chao, S.
 TITLE: Sampling Rate Control with AGE-of-Information in Software-Defined Network Measurement
 YEAR: 2023-12
@@ -68685,7 +68686,7 @@ GEOLOC: Sichua, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10387064/
 ---
 MARKER: 2023_z_fan_ieee_5738
-TYPE: in_journal
+TYPE: article
 AUTHOR: Fan, Z., Wang, R., Cai, Y., Zhang, R., Wu, T Yang‚ Y., Cui, B., Uhlig, S.
 TITLE: "OneSketch: A Generic and Accurate Sketch for Data Streams"
 SERIAL: IEEE TRANSACTIONS ON KNOWLEDGE AND DATA ENGINEERING
@@ -68696,7 +68697,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10129883/
 ---
 MARKER: 2023_b_zhou_ieee_6400
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhou, B., Wu, C., Yang, Q., Zhu, Z., Yu, Y Nie‚ W.
 TITLE: Traffic-Aware Fast Reroute Mechanism Exploiting Disjoint Subpaths for Named Data Networks
 YEAR: '2023'
@@ -68706,7 +68707,7 @@ GEOLOC: Hangzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10279628/
 ---
 MARKER: 2023_e_kfoury_ieee_8714
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kfoury, E., Bou-Harb, J Crichigno‚ E.
 TITLE: "P4BS: Leveraging Passive Measurements from P4 Switches to Dynamically Modify a Router's Buffer Size"
 SERIAL: IEEE TRANSACTIONS ON NETWORK AND SERVICE MANAGEMENT
@@ -68717,7 +68718,7 @@ GEOLOC: Columbia, IN, US
 URL: https://ieeexplore.ieee.org/abstract/document/10224304/
 ---
 MARKER: 2023_s_miano_ieee_2334
-TYPE: in_journal
+TYPE: article
 AUTHOR: Miano, S., Sanaee, A., Risso, F., Rétvári, G., Antichi, G.
 TITLE: "Morpheus: A Run Time Compiler and Optimizer for Software Data Planes"
 SERIAL: IEEE/ACM Transactions on Networking
@@ -68728,7 +68729,7 @@ GEOLOC: Milan, IT
 URL: https://ieeexplore.ieee.org/abstract/document/10375357/
 ---
 MARKER: 2023_yc_chang_ieee_4266
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chang, YC., Lu, WT., Lin, KCJ.
 TITLE: Joint Routing and Sketch Configuration for Multi-Switch Cooperative Network Measurement
 YEAR: 2023-12
@@ -68738,7 +68739,7 @@ GEOLOC: HsinChu, TW
 URL: https://ieeexplore.ieee.org/abstract/document/10437907/
 ---
 MARKER: 2023_ch_sekhar_springer_2141
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sekhar, CH., Rao, KV., Prasad, MHMK.
 TITLE: Classification performance improvement by enhancing the detection accuracy of DDOS attacks over flash crowd using CROSS GAN (XGAN)
 SERIAL: Multimedia Tools and Applications 
@@ -68749,7 +68750,7 @@ GEOLOC: Kakinada, IN
 URL: https://link.springer.com/article/10.1007/s11042-023-15151-0
 ---
 MARKER: 2023_kv_rao_springer_4400
-TYPE: in_journal
+TYPE: article
 AUTHOR: Rao, KV., Prasad, MHMK.
 TITLE: Deep neural network empowered bi-directional cross GAN in context of classifying DDoS over flash crowd event on web server
 SERIAL: Multimedia Tools and Applications 
@@ -68760,7 +68761,7 @@ GEOLOC: Kakinada, IN
 URL: https://link.springer.com/article/10.1007/s11042-023-15030-8
 ---
 MARKER: 2023_s_kopmann_springer_2003
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kopmann, S., Heseding, H., Zitterbart, M.
 TITLE: "Toward Joining DDoS Mitigation and Image Segmentation: Leveraging Computer Vision for Network Security"
 SERIAL: Datenschutz und Datensicherheit -DuD
@@ -68771,7 +68772,7 @@ GEOLOC: Karlsruhe, DE
 URL: https://link.springer.com/article/10.1007/s11623-023-1801-1
 ---
 MARKER: 2023_s_kopmann_ieee_7432
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kopmann, S., Zitterbart, M.
 TITLE: "eMinD: Efficient and Micro-Flow Independent Detection of Distributed Network Attacks"
 YEAR: 2023-10
@@ -68781,7 +68782,7 @@ GEOLOC: Karlsruhe, DE
 URL: https://ieeexplore.ieee.org/abstract/document/10302763/
 ---
 MARKER: 2023_s_prabavathy_ieee_3388
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Prabavathy, S., Reddy, IRP.
 TITLE: Fog computing based Distributed Denial of Service Attack Detection Method for Large-Scale Internet of Things
 YEAR: 2023-03
@@ -68791,7 +68792,7 @@ GEOLOC: Hyderabad, IN
 URL: https://ieeexplore.ieee.org/abstract/document/10116991/
 ---
 MARKER: 2023_wjw_tann_ieee_5144
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Tann, WJW., Chang, EC.
 TITLE: Poisoning Online Learning Filters by Shifting on the Move
 YEAR: 2023-06
@@ -68801,7 +68802,7 @@ GEOLOC: Singapore, SG
 URL: https://ieeexplore.ieee.org/abstract/document/10202656/
 ---
 MARKER: 2023_jm_evang_ieee_4055
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Evang, JM., Livadariu, I.
 TITLE: How Large Is the Gap? Exploring MANRS and ISO27001 Security Management
 YEAR: 2023-09
@@ -68811,7 +68812,7 @@ GEOLOC: Oslo, NO
 URL: https://ieeexplore.ieee.org/abstract/document/10271691/
 ---
 MARKER: 2023_s_tarahomi_ieee_6856
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Tarahomi, S., Holz, R., Sperotto, A.
 TITLE: "Quantifying security risks in cloud infrastructures: A data-driven approach"
 YEAR: 2023-06
@@ -68821,7 +68822,7 @@ GEOLOC: Enschede, NL
 URL: https://ieeexplore.ieee.org/abstract/document/10175501/
 ---
 MARKER: 2023_s_scherrer_ieee_9742
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Scherrer, S., Vliegen, J., Sateesan, A., Hsiao, H., Mentens, N., Perrig, A.
 TITLE: "ALBUS: a Probabilistic Monitoring Algorithm to Counter Burst-Flood Attacks"
 YEAR: 2023-09
@@ -68831,7 +68832,7 @@ GEOLOC: Zürich, CH
 URL: https://ieeexplore.ieee.org/abstract/document/10419276/
 ---
 MARKER: 2023_j_li_ieee_6300
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, J., Sisodia, D., Feng, Y., Shi, L., Early, M Zhang‚ C., Reiher, P.
 TITLE: Toward Adaptive DDoS-Filtering Rule Generation
 YEAR: 2023-10
@@ -68841,7 +68842,7 @@ GEOLOC: OR, US
 URL: https://ieeexplore.ieee.org/abstract/document/10288699/
 ---
 MARKER: 2023_d_yao_ieee_5490
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yao, D., Wang, H., Xu, H., Zhang, M.
 TITLE: Lightweight Per-Flow Traffic Measurement Using Improved LRU List
 SERIAL: IEEE Transactions on Network Science and Engineering
@@ -68852,7 +68853,7 @@ GEOLOC: Suzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10015058/
 ---
 MARKER: 2023_x_song_ieee_1964
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Song, X., Zheng, J., Qian, H., Zhao, S., Zhang, H., Pan, X., Chen, G.
 TITLE: "Couper: Memory-Efficient Cardinality Estimation under Unbalanced Distribution"
 YEAR: 2023-04
@@ -68862,7 +68863,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10184848/
 ---
 MARKER: 2023_j_cai_ieee_6423
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Cai, J., Zhou, Z., Sun, T., Yu, J., Wang, L Zhu‚ Z., Li, C., Zhang, D., Wu, C.
 TITLE: "MINT: Empowering Multiple Flow Definition Query for Network-Wide Measurement"
 YEAR: '2023'
@@ -68872,7 +68873,7 @@ GEOLOC: Fujian, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10279279/
 ---
 MARKER: 2023_je_soto_ieee_3386
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Soto, JE., Vera, S., Fernandez, Y., Hernández, D Yunge‚ C., Figueroa, M.
 TITLE: A sketch-based algorithm for network-flow entropy estimation on programmable switches using P4
 YEAR: 2023-09
@@ -68882,7 +68883,7 @@ GEOLOC: Concepción, CL
 URL: https://ieeexplore.ieee.org/abstract/document/10456826/
 ---
 MARKER: 2023_m_kim_sciencedirect_3911
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kim, M.
 TITLE: Theoretical bounds of generalization error for generalized extreme learning machine and random vector functional link network
 SERIAL: Neural Networks
@@ -68893,7 +68894,7 @@ GEOLOC: Seoul, KR
 URL: https://www.sciencedirect.com/science/article/pii/S0893608023002009
 ---
 MARKER: 2023_y_fernandez_sciencedirect_7723
-TYPE: in_journal
+TYPE: article
 AUTHOR: Fernandez, Y., Soto, JE., Vera, S., Prieto, Y., Figueroa, C Hernandez‚ M.
 TITLE: A streaming algorithm and hardware accelerator to estimate the empirical entropy of network flows
 SERIAL: Computer Networks
@@ -68904,7 +68905,7 @@ GEOLOC: Concepción, CL
 URL: https://www.sciencedirect.com/science/article/pii/S1389128623004802
 ---
 MARKER: 2023_k_fujiwara_ieee_1150
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Fujiwara, K., Sannomiya, S., Yoshida, A Sato‚ K.
 TITLE: Latency analysis of JP and Root DNS servers from packet capture data
 YEAR: 2023-06
@@ -68914,7 +68915,7 @@ GEOLOC: Tokyo, JP
 URL: https://ieeexplore.ieee.org/abstract/document/10196983/
 ---
 MARKER: 2023_b_hou_ieee_1908
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Hou, B., Cai, Z., Wu, K., Zhou, T Yang‚ T.
 TITLE: "Search in the expanse: Towards active and global ipv6 hitlists"
 YEAR: 2023-05
@@ -68924,7 +68925,7 @@ GEOLOC: Changsha, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10229089/
 ---
 MARKER: 2023_n_jiang_ieee_3502
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jiang, N., Wang, JH., Wang, J Wang‚ P.
 TITLE: "Top AS Router Geolocation in Databases: Performance and Techniques"
 YEAR: 2023-12
@@ -68934,7 +68935,7 @@ GEOLOC: Beijing , CN
 URL: https://ieeexplore.ieee.org/abstract/document/10437266/
 ---
 MARKER: 2023_b_zhang_wiley_8707
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, B., Li, J., Ward, L., Chen, Y Zhang‚ C., Zhang, J.
 TITLE: Deep Graph Embedding for IoT Botnet Traffic Detection
 SERIAL: Security and Communication Networks
@@ -68945,7 +68946,7 @@ GEOLOC: Kunming, CN
 URL: https://onlinelibrary.wiley.com/doi/abs/10.1155/2023/9796912
 ---
 MARKER: 2023_r_strauch_trandf_3453
-TYPE: in_journal
+TYPE: article
 AUTHOR: Strauch, R.
 TITLE: "Public opinion effects of digital state repression: How internet outages shape government evaluation in Africa"
 SERIAL: Journal of Information Technology & Politics
@@ -68955,7 +68956,7 @@ GEOLOC: Konstanz, DE
 URL: https://www.tandfonline.com/doi/abs/10.1080/19331681.2023.2283011
 ---
 MARKER: 2023_d_melissourgos_proquest_6632
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Melissourgos, D.
 TITLE: Dynamic Sketches for Adaptive Real-Time Network Traffic Monitoring
 PUBLISH: UNIVERSITY OF FLORIDA
@@ -68965,7 +68966,7 @@ GEOLOC: FL, US
 URL: https://search.proquest.com/openview/6ddadd7424a5e9fd3e0b20ab243f8b0b/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2023_tb_fodor_webarchive_2291
-TYPE: BSc thesis
+TYPE: bscthesis
 AUTHOR: Fodor, TB.
 TITLE: Analysing the internet as a graph
 PUBLISH: University of Vienna
@@ -68975,7 +68976,7 @@ GEOLOC: Vienna, AT
 URL: https://repositum.tuwien.at/handle/20.500.12708/154357
 ---
 MARKER: 2023_a_maghsoudlou_sulbsaarland_2103
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Maghsoudlou, A.
 TITLE: Towards uncovering hidden internet traffic characteristics
 PUBLISH: Saarland University
@@ -68985,7 +68986,7 @@ GEOLOC: Saarbrücken, DE
 URL: https://publikationen.sulb.uni-saarland.de/handle/20.500.11880/37289
 ---
 MARKER: 2023_a_aamand_mlr_6864
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Aamand, A., Andoni, A., Indyk, JY Chen‚ P., Narayanan, S., Silwal, S.
 TITLE: Data structures for density estimation
 YEAR: 2023-07
@@ -69005,7 +69006,7 @@ GEOLOC: Jinan, CN
 URL: https://www.preprints.org/manuscript/202306.1288
 ---
 MARKER: 2023_a_huremagic_fachhochschule_9424
-TYPE: BSc thesis
+TYPE: bscthesis
 AUTHOR: Huremagic, A.
 TITLE: Synthetic Content for Probe-Resistant Proxies
 PUBLISH: Fachhochschule St. Pölten
@@ -69015,7 +69016,7 @@ GEOLOC: Sankt Pölten, AT
 URL: https://phaidra.fhstp.ac.at/detail/o:5240.pdf
 ---
 MARKER: 2023_y_liu_nature_2811
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, Y., Liu, Y., Liu, F., Fan, J., Tao, Z.
 TITLE: An algorithm for discovering vital nodes in regional networks based on stable path analysis
 SERIAL: Scientific Reports
@@ -69026,7 +69027,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.nature.com/articles/s41598-023-39174-7
 ---
 MARKER: 2023_j_cui_nature_4844
-TYPE: in_journal
+TYPE: article
 AUTHOR: Cui, J., Han, K., Sha, L., Liu, W., Zhang, X., Li, G.
 TITLE: An efficient hexadecimal network flow watermark method for tracking attack traffic
 SERIAL: Scientific Reports
@@ -69037,7 +69038,7 @@ GEOLOC: Tianjin, CN
 URL: https://www.nature.com/articles/s41598-023-48552-0
 ---
 MARKER: 2023_s_kang_koreascience_1063
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kang, S., Nyang, DH.
 TITLE: "Count-Min HyperLogLog: Cardinality Estimation Algorithm for Big Network Data"
 SERIAL: Journal of the Korea Institute of Information Security & Cryptology
@@ -69048,7 +69049,7 @@ GEOLOC: Seoul, KR
 URL: https://koreascience.kr/article/JAKO202319440363547.page
 ---
 MARKER: 2023_r_strauch_unikonstanz_5764
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Strauch, R.
 TITLE: Digital Adaptation in Autocracies
 PUBLISH: University of Konstanz
@@ -69058,7 +69059,7 @@ GEOLOC: Konstanz, DE
 URL: https://kops.uni-konstanz.de/handle/123456789/66294
 ---
 MARKER: 2023_s_zu_infocomm_7019
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zu, S., Ding, S., Yuan, F., Luo, X.
 TITLE: 目标网络场景自适应的 IP 定位框架
 SERIAL: Chinese Journal of Network and Information Security
@@ -69069,7 +69070,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.infocomm-journal.com/cjnis/EN/10.11959/j.issn.2096-109x.2023084
 ---
 MARKER: 2023_h_su_ieee_1090
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Su, H., Qin, S., Wu, Z., Peng, T., Liu, S., Zhou, Y.
 TITLE: Graph Sketch Based Heavy Change Detection for Temporal Network Traffic Analysis
 YEAR: 2023-11
@@ -69079,7 +69080,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10438783/
 ---
 MARKER: 2023_t_sun_ieee_5112
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sun, T., Cai, J., Guo, K., Chen, D Zhang‚ X., Wu, C.
 TITLE: "Aigis: Full-Coverage And Low-Overhead Mitigating Against Amplified Reflection DDoS Attacks"
 YEAR: 2023-12
@@ -69089,7 +69090,7 @@ GEOLOC: Fuzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10437875/
 ---
 MARKER: 2023_x_chen_ieee_4589
-TYPE: in_journal
+TYPE: article
 AUTHOR: Chen, X., Liu, H., Huang, Q., Zhou, D Zhang‚ H., Wu, C., Liu, X., Khan, MK.
 TITLE: "Stalker attacks: Imperceptibly dropping sketch measurement accuracy on programmable switches"
 SERIAL: IEEE Transactions on Information Forensics and Security
@@ -69100,7 +69101,7 @@ GEOLOC: Hangzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10250891/
 ---
 MARKER: 2023_y_zhu_ieee_2737
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhu, Y., Song, Q., Luo, Y.
 TITLE: Differentially Private Top- Flows Estimation Mechanism in Network Traffic
 SERIAL: IEEE Transactions on Network Science and Engineering
@@ -69111,7 +69112,7 @@ GEOLOC: Xi'an, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10232888/
 ---
 MARKER: 2023_q_xiao_ieee_8838
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xiao, Q., Cai, Y., Cao, Y., Chen, S.
 TITLE: Accurate and o (1)-time query of per-flow cardinality in high-speed networks
 SERIAL: IEEE/ACM Transactions on Networking
@@ -69122,7 +69123,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10113134/
 ---
 MARKER: 2023_b_sharma_ieee_4174
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sharma, B., Goel, P., Grewal, JK.
 TITLE: Advances and challenges in cryptography using artificial intelligence
 YEAR: 2023-04
@@ -69132,7 +69133,7 @@ GEOLOC: Mohali, IN
 URL: https://ieeexplore.ieee.org/abstract/document/10126338/
 ---
 MARKER: 2023_x_jiang_ieee_3434
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jiang, X., Liu, H., Chen, X., Xiao, Q., Zhang, K Guo‚ D., Zhou, H., Wu, C.
 TITLE: "Halia: Toward Full-Coverage Network Function Offloading in the Data Plane"
 YEAR: '2023'
@@ -69142,7 +69143,7 @@ GEOLOC: Hangzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10279504/
 ---
 MARKER: 2023_j_ye_ieee_2695
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ye, J., Shan, Y., Zhang, W., Li, L., Shao, S Li‚ J., Huang, J.
 TITLE: Achieving High Accuracy and Fast Speed for Sketch Compression
 YEAR: '2023'
@@ -69152,7 +69153,7 @@ GEOLOC: Changsha, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10279133/
 ---
 MARKER: 2023_m_li_ieee_5275
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, M., Chen, D., Dai, H., Xie, R., Luo, S., Yang, R Gu‚ T., Chen, G.
 TITLE: "Seesaw counting filter: A dynamic filtering framework for vulnerable negative keys"
 SERIAL: IEEE Transactions on Knowledge and Data Engineering
@@ -69163,7 +69164,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10120975/
 ---
 MARKER: 2023_f_kazemzadeh_ieee_2260
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kazemzadeh, F., Mirzarezaee, AA Safaei‚ M.
 TITLE: Identification Important Nodes in Diffusion Process by User Experience on Social Network
 YEAR: 2023-01
@@ -69173,7 +69174,7 @@ GEOLOC: Tehran, IR
 URL: https://ieeexplore.ieee.org/abstract/document/10105397/
 ---
 MARKER: 2023_s_song_ieee_2976
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Song, S., Wang, P., Li, Y., Jiang, N Wang‚ W.
 TITLE: Towards Accurate and Efficient Super Spreader Detection with Sketching
 YEAR: 2023-08
@@ -69183,7 +69184,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10381178/
 ---
 MARKER: 2023_f_yazdanifar_ieee_6477
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yazdanifar, F., Beni, HA., Bouyer, N Salimi‚ A.
 TITLE: "CDP: Selective Influential Nodes Based on Cliques in the Diffusion Process in Social Networks"
 YEAR: 2023-05
@@ -69193,7 +69194,7 @@ GEOLOC: Tehran, IR
 URL: https://ieeexplore.ieee.org/abstract/document/10139114/
 ---
 MARKER: 2023_q_chen_ieee_3364
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, Q., Hu, H., Deng, C., Liu, D., Tang, S Li‚ B., Yao, T., Xia, W.
 TITLE: "EEPH: An Efficient Extendible Perfect Hashing for Hybrid PMem-DRAM"
 YEAR: 2023-04
@@ -69203,7 +69204,7 @@ GEOLOC: Shenzhen, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10184637/
 ---
 MARKER: 2023_h_tian_elsevier_2229
-TYPE: in_journal
+TYPE: article
 AUTHOR: Tian, H., Guo, K., Zhang, R., Shao, S.
 TITLE: Prediction of evolution behavior of Internet bottleneck delay based on improved Logistic equation
 SERIAL: Computer Networks
@@ -69214,7 +69215,7 @@ GEOLOC: Shenyang, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1389128623004863
 ---
 MARKER: 2023_ww_lo_elsevier_4054
-TYPE: in_journal
+TYPE: article
 AUTHOR: Lo, WW., Kulatilleke, G., Sarhan, M., Portmann, S Layeghy‚ M.
 TITLE: "XG-BoT: An explainable deep graph neural network for botnet detection and forensics"
 SERIAL: Internet of Things
@@ -69225,7 +69226,7 @@ GEOLOC: Brisbane, AU
 URL: https://www.sciencedirect.com/science/article/pii/S2542660523000707
 ---
 MARKER: 2023_m_tomassini_elsevier_2550
-TYPE: in_journal
+TYPE: article
 AUTHOR: Tomassini, M.
 TITLE: "Rewiring or adding links: A real-world case study of network vulnerability"
 SERIAL: 'Physica A: Statistical Mechanics and its Applications'
@@ -69236,7 +69237,7 @@ GEOLOC: Lausanne, CH
 URL: https://www.sciencedirect.com/science/article/pii/S0378437123007963
 ---
 MARKER: 2023_x_cheng_elsevier_1839
-TYPE: in_journal
+TYPE: article
 AUTHOR: Cheng, X., Jing, X., Yan, Z., Li, X., Wang, P., Wu, W.
 TITLE: "ALSketch: An adaptive learning-based sketch for accurate network measurement under dynamic traffic distribution"
 SERIAL: Journal of Network and Computer Applications
@@ -69247,7 +69248,7 @@ GEOLOC: Qingdao, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1084804523000784
 ---
 MARKER: 2023_ch_song_elsevier_7002
-TYPE: in_journal
+TYPE: article
 AUTHOR: Song, CH., Khooi, XZ., Divakaran, DM., Chan, MC.
 TITLE: "DySO: Enhancing application offload efficiency on programmable switches"
 SERIAL: Computer Networks
@@ -69258,7 +69259,7 @@ GEOLOC: Singapore, SG
 URL: https://www.sciencedirect.com/science/article/pii/S138912862300052X
 ---
 MARKER: 2023_zs_bischof_acm_1250
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Bischof, ZS., Pitcher, K., Carisimo, E., Nunes, A Meng‚ RB., Padmanabhan, R., Roberts, ME., Snoeren, AC., Dainotti, A.
 TITLE: "Destination Unreachable: Characterizing Internet Outages and Shutdowns"
 YEAR: 2023-09
@@ -69268,7 +69269,7 @@ GEOLOC: Atlanta, GA, US
 URL: https://dl.acm.org/doi/abs/10.1145/3603269.3604883
 ---
 MARKER: 2023_g_singh_acm_6991
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Singh, G., Acharya, HB.
 TITLE: "POSTER: A Cyberspace Study of the Russia-Ukraine War"
 YEAR: 2023-07
@@ -69278,7 +69279,7 @@ GEOLOC: Rochester, NY, US
 URL: https://dl.acm.org/doi/abs/10.1145/3579856.3592822
 ---
 MARKER: 2023_a_arouna_acm_2440
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Arouna, A., Livadariu, I., Jonker, R van Rijswijk-Deij‚ M.
 TITLE: "Advancing in Reverse: A Comprehensive Characterization of IN-ADDR. ARPA Deployment"
 YEAR: 2023-12
@@ -69288,7 +69289,7 @@ GEOLOC: Oslo, NO
 URL: https://dl.acm.org/doi/abs/10.1145/3630590.3630595
 ---
 MARKER: 2023_d_melissourgos_acm_4451
-TYPE: in_journal
+TYPE: article
 AUTHOR: Melissourgos, D., Wang, H., Chen, S., Chen, C Ma‚ S.
 TITLE: Single Update Sketch with Variable Counter Structure
 SERIAL: Proceedings of the VLDB Endowment
@@ -69299,7 +69300,7 @@ GEOLOC: Allendale, MI, US
 URL: https://dl.acm.org/doi/abs/10.14778/3625054.3625065
 ---
 MARKER: 2023_h_su_acm_4931
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Su, H., Xiao, Q.
 TITLE: Online Detection of 1D and 2D Hierarchical Super-Spreaders in High-Speed Networks
 YEAR: 2023-09
@@ -69309,7 +69310,7 @@ GEOLOC: Nanjing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3600061.3600080
 ---
 MARKER: 2023_z_zhang_acm_3592
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, Z., Li, Q., Duan, G., Zhao, D., Xiao, J., Jiang, G Xie‚ Y.
 TITLE: "Pontus: Finding waves in data streams"
 SERIAL: Proceedings of the ACM on Management of Data
@@ -69320,7 +69321,7 @@ GEOLOC: Shenzhen, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3588960
 ---
 MARKER: 2023_y_liu_acm_3486
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Liu, Y., Nie, H., Cai, H., Jiang, B., Zhang, P., Yao, Y Liu‚ Y., Wei, X., Lyu, B., Xu, C., Zhu, S., Wang, X.
 TITLE: "X-Plane: A High-Throughput Large-Capacity 5G UPF"
 YEAR: 2023-10
@@ -69330,7 +69331,7 @@ GEOLOC: Shanghai, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3570361.3613267
 ---
 MARKER: 2023_w_xu_acm_7321
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Xu, W., Zhang, Z.
 TITLE: Minimizing Polarization in Noisy Leader-Follower Opinion Dynamics
 YEAR: 2023-10
@@ -69340,7 +69341,7 @@ GEOLOC: Shanghai, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3583780.3614968
 ---
 MARKER: 2023_m_chiesa_acm_6993
-TYPE: in_journal
+TYPE: article
 AUTHOR: Chiesa, M., Verdi, FL.
 TITLE: Network monitoring on multi-pipe switches
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
@@ -69351,7 +69352,7 @@ GEOLOC: Stockholm, SE
 URL: https://dl.acm.org/doi/abs/10.1145/3579321
 ---
 MARKER: 2023_j_yang_acm_9723
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yang, J., Wang, Z., Rui, X., Chai, Y., Sun, PS Yu‚ L.
 TITLE: Triadic Closure Sensitive Influence Maximization
 SERIAL: ACM Transactions on Knowledge Discovery from Data
@@ -69362,7 +69363,7 @@ GEOLOC: Xuzhou, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3573011
 ---
 MARKER: 2023_a_zulfiqar_acm_5386
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zulfiqar, A., Pfaff, B., Tu, W., Shahbaz, G Antichi‚ M.
 TITLE: The Slow Path Needs an Accelerator Too!
 SERIAL: ACM SIGCOMM Computer Communication Review
@@ -69373,7 +69374,7 @@ GEOLOC: West Lafayette, IN, US
 URL: https://dl.acm.org/doi/abs/10.1145/3594255.3594259
 ---
 MARKER: 2023_a_jain_heliyon_3563
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jain, A., Mehrotra, T., Sisodia, A., Vishnoi, S., Kumar, S Upadhyay‚ A., Verma, C., Illés, Z.
 TITLE: An enhanced self-learning-based clustering scheme for real-time traffic data distribution in wireless networks
 SERIAL: Heliyon
@@ -69384,7 +69385,7 @@ GEOLOC: Guntur, IN
 URL: https://www.cell.com/heliyon/fulltext/S2405-8440(23)04738-2
 ---
 MARKER: 2023_m_mohan_springer_7808
-TYPE: in_journal
+TYPE: article
 AUTHOR: Mohan, M., Tamizhazhagan, V., Balaji, S.
 TITLE: A Perspicacious Multi-level Defense System Against DDoS Attacks in Cloud Using Information Metric & Game Theoretical Approach
 SERIAL: Journal of Network and Systems Management
@@ -69395,7 +69396,7 @@ GEOLOC: Chidambaram, IN
 URL: https://link.springer.com/article/10.1007/s10922-023-09776-7
 ---
 MARKER: 2023_y_weng_ieee_9365
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Weng, Y., Guo, Y., Gu, Y.
 TITLE: Reinforcement Learning based Attack Timing Optimization in Inter-domain Networks
 YEAR: 2023-08
@@ -69405,7 +69406,7 @@ GEOLOC: Hefei, CN
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10415614
 ---
 MARKER: 2023_y_wu_ieee_5393
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wu, Y., Jiang, S., Xu, Y., Dong, S., Yang, K., Chen, P., Yang, T.
 TITLE: Unbiased Real-Time Traffic Sketching
 SERIAL: Journal of Network and Systems Management
@@ -69416,7 +69417,7 @@ GEOLOC: Shenzhen, CN
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10146513
 ---
 MARKER: 2023_p_bhowmick_springer_1396
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Bhowmick, P., Ashiq, MI., Deccio, C., Chung, T.
 TITLE: TTL Violation of DNS Resolvers in the Wild
 CTITLE: 'PAM 2023'
@@ -69426,7 +69427,7 @@ GEOLOC: Blacksburg, VA, US
 URL: https://link.springer.com/chapter/10.1007/978-3-031-28486-1_23
 ---
 MARKER: 2023_a_hong_ieee_6236
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Hong, A., Li, Y., Zhang, H., Wang, M., An, C., Wang, J.
 TITLE: A cheap and accurate delay-based IP Geolocation method using Machine Learning and Looking Glass
 YEAR: 2023-06
@@ -69436,7 +69437,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10186436
 ---
 MARKER: 2023_z_zhang_etd_3074
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Zhang, Z.
 TITLE: On the Adversarial Robustness of Machine Learning Models on Multi-Graph Scenarios
 PUBLISH: Auburn University
@@ -69446,7 +69447,7 @@ GEOLOC: Auburn, AL
 URL: https://etd.auburn.edu/xmlui/bitstream/handle/10415/8823/phd_thesis-1.pdf?sequence=2&isAllowed=y
 ---
 MARKER: 2023_g_xie_ieee_3382
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Xie, G., Li, Q., Duan, G., Jiang, Y., Qi, Z., Liu, S., Wang, Q.
 TITLE: Efficient Flow Recording with InheritSketch on Programmable Switches
 YEAR: 2023-07
@@ -69456,7 +69457,7 @@ GEOLOC: Shenzhen, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10272535
 ---
 MARKER: 2023_q_xiao_elsevier_9418
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xiao, Q., Li, Y., Wu, Y.
 TITLE: Finding recently persistent flows in high-speed packet streams based on cuckoo filter
 SERIAL: Computer Networks
@@ -69467,7 +69468,7 @@ GEOLOC: Nanjing, CN
 URL: https://pdf.sciencedirectassets.com/271990/1-s2.0-S1389128623X00164/1-s2.0-S138912862300542X/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBsaCXVzLWVhc3QtMSJHMEUCIQDTH1GV7B7CG44lZr5agiYaNeOzYcnrTRNh8FzktXyhKQIgMHVwUXizMDWKeuBVWkc%2BON7uLddWBoV9ztKzMNB%2F7zcquwUI0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDKb0s0G1J3n27%2Fn3diqPBXaw229beBZSoVJBjdqTH83qdJdQjNMpmC5G%2BgG%2BqSmAQhquZpaEdD%2FqapZLJaPLp9%2FL3f6FbcexnavVRfRQgg4UcGZJ4940k2FXkFc5VlxRKCPX364xtDUvDTTud2pW5QzenOR3KwEJK0sJTlEVrcS6QlVuuC6ZCRGG83%2Fk3V%2FDFgzflp6DMcQvDKLnkTcPfVIQYimpnk55xsFTBZeGMK6KC86ijBWIE0MvmhbalhSYZq8FUHb2JvIgUrse%2FZpG3lmQf66rc%2FfIw6oaR0RYUmcxG3Lf8moSpMeACVnzuorHw1YiRbbD2%2FxZpvLJNqk5CwJEUEDMY%2BGw3m%2F8fQXT672MLEqy%2FREW75K7yhIGOWJF3VB4E4gglQ0UlR%2FLjbES6FyG6HQhXV20q%2Fbwf3R8gnFACakQdlJozo2UH%2Fd5YDlTDFJQI0BxElu8W63vAXd8%2B26QFGnmtArjNaM6IG8Lshz0xEzCmI3E%2BTHDkbllt4qxVkgbVJxEs8drollFOBB8l4HchXAlHoWXh3AyF%2F6ljlxRe7w7iD9ngNnOCfrEbgg4khLnvhNnJKxJBsRoxazIJTnu45Ztydz0yfSF8Sd0QxchbU4syLkbx7rRaEk%2BfrDohOXlIRB0LY0cFEfmiLgjEt9%2BxTwJjNWcfF1lhcDs57%2B%2FJgyDbIjfnvfyVEJJL0z6rXtQdE%2FQpLx03c%2F5GERRPwqEzmtZN%2BIBPAxD%2BG1gEqI4QETfNI4GccGUETYV6d4S5dcqXoyXImto%2FniD7Z3VuvEjeTx%2FOw6GFhDkN1cv9RK00WJvr0xuDBg9QectzZsx2n16%2Blwqqbs%2F9DiBMT81c8k0APeH5Hbw5Vr4jcA89LtQUcDkmNYy7J8Y2d1RSrAw%2Fa2ktAY6sQFrK3yCeGdCKZIQluFStm1UP9vhwLLEtSceOKNpTxSZm0oDUTz06EswB%2FSuItaEerkkE9SOj9J9wf2t6YHem1%2FaXtIsP68opE8UkvKLG%2Bn%2BjLfzh0GzunYG883C%2Fhu0BTPPt%2FYzk0JcZBzofgwAH3D3TsstIUNNgzKxvjfVjUJpOcNbrNs%2B6ob6LRXUQFBj30N1ULmUKlgYS6nTKcp11HZKQ054J2qVQqcrXFXgCnBgKc4%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240706T103021Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYX3BYIKB4%2F20240706%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=77d64091da5c6b69d5f1ae126fa2ee86176a1bc21812f442663bba18a2983232&hash=7aa817e62206fe461a109f802e231c39619daab0728d8bc20614729845e8938d&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S138912862300542X&tid=spdf-6f3a4f8f-cfc3-4ff0-bb40-fb713b04dbda&sid=03ac73b4808b384a765a8184d1a9798b3895gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=131c5e5e050003035455&rr=89eeeb409d257c59&cc=us
 ---
 MARKER: 2023_s_mahmood_ieee_5216
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Mahmood, S., Shahzad, M.
 TITLE: Per-Flow Packet Loss Measurement without Probing
 YEAR: 2023-07
@@ -69477,7 +69478,7 @@ GEOLOC: Raleigh, NC
 URL: https://ieeexplore.ieee.org/abstract/document/10230129
 ---
 MARKER: 2023_mep_silva_oup_4009
-TYPE: in_journal
+TYPE: article
 AUTHOR: Silva, MEP., Gaunt, RE., Ospina-Forero, L., Jay, C., House, T.
 TITLE: Comparing directed networks via denoising graphlet distributions
 SERIAL: Journal of Complex Networks
@@ -69488,7 +69489,7 @@ GEOLOC: Manchester, GB
 URL: https://academic.oup.com/comnet/article-abstract/11/2/cnad006/7067913
 ---
 MARKER: 2023_fb_carvalho_ieee_8953
-TYPE: in_journal
+TYPE: article
 AUTHOR: Carvalho, FB., Ferreira, RA., Cunha, Í., Vieira, MA., Ramanathan, MK.
 TITLE: State disaggregation for dynamic scaling of network functions
 SERIAL: IEEE/ACM TRANSACTIONS ON NETWORKING
@@ -69499,7 +69500,7 @@ GEOLOC: Cuiabá, BR
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10148829
 ---
 MARKER: 2023_t_caiazzi_acm_5837
-TYPE: in_journal
+TYPE: article
 AUTHOR: Caiazzi, T., Scazzariello, M., Chiesa, M.
 TITLE: Millions of Low-latency State Insertions on ASIC Switches
 SERIAL: Proceedings of the ACM on Networking
@@ -69510,7 +69511,7 @@ GEOLOC: Rome, IT
 URL: https://dl.acm.org/doi/pdf/10.1145/3629144
 ---
 MARKER: 2023_e_kfoury_scedu_3076
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Kfoury, E.
 TITLE: "Leveraging Programmable Switches to Enhance the Performance of Networks: Active and Passive Deployments"
 PUBLISH: University of South Carolina
@@ -69520,7 +69521,7 @@ GEOLOC: Columbia, SC
 URL: https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=8375&context=etd
 ---
 MARKER: 2023_pavlos_sermpezis_ieee_1750
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sermpezis, Pavlos., Prehn, Lars., Kostoglou, Sofia., Flores, Marcel., Vakali, Athena., Aben, Emile.
 TITLE: Bias in Internet Measurement Platforms
 YEAR: 2023-06
@@ -69530,7 +69531,7 @@ GEOLOC: Thesssaloniki,DE
 URL: https://ieeexplore.ieee.org/abstract/document/10198985
 ---
 MARKER: 2024_g_williams_usenix_4973
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Williams, G., Erdemir, M., Hsu, A., Bhat, S., Bhaskar, A., Li, F., Pearce, P.
 TITLE: "6SENSE: Internet-Wide IPv6 Scanning and its Security Applications"
 YEAR: '2024'
@@ -69540,7 +69541,7 @@ GEOLOC: Atlanta, GA
 URL: https://www.usenix.org/system/files/sec24summer-prepub-965-williams.pdf
 ---
 MARKER: 2024_t_galloway_tillsongalloway_8369
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Galloway, T., Karakolios, K., M, Z., Perdisci, R., Keromytis, A., Antonakakis, M.
 TITLE: Practical Attacks Against DNS Reputation Systems
 YEAR: '2024'
@@ -69570,7 +69571,7 @@ GEOLOC: Shenzhen, CN
 URL: https://www.preprints.org/manuscript/202405.0944
 ---
 MARKER: 2024_c_yuanqing_kuey_3656
-TYPE: in_journal
+TYPE: article
 AUTHOR: YuanQing, C.
 TITLE: "Classification Of Topology For The Internet Autonomous Systems: A Study Based On The Implementation Of Internet Autonomous System"
 SERIAL: 'Educational Administration: Theory and Practice'
@@ -69581,7 +69582,7 @@ GEOLOC: Petaling Jaya, MY
 URL: https://kuey.net/index.php/kuey/article/view/2353
 ---
 MARKER: 2024_ay_nur_ieee_9230
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Nur, AY., Tozal, ME.
 TITLE: Inferring Internet Topology at Point of Presence Level
 YEAR: 2024-04
@@ -69591,7 +69592,7 @@ GEOLOC: New Orleans, LA, US
 URL: https://ieeexplore.ieee.org/abstract/document/10553435/
 ---
 MARKER: 2024_a_chatzivasileiou_ieee_4247
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chatzivasileiou, A., Kornilakis, A., Lionta, K., Nomikos, G., Dimitropoulos, X., Smaragdakis, G.
 TITLE: How Russia's Invasion of Ukraine Impacted the Internet Peering of the Conflicted Countries
 YEAR: 2024-05
@@ -69601,7 +69602,7 @@ GEOLOC: Rethymno, DE
 URL: https://ieeexplore.ieee.org/abstract/document/10559142/
 ---
 MARKER: 2024_y_wenyan_ieee_7165
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wenyan, Y., Bo, Y., Zifei, Z., Ziyang, Y., Zijian, T.
 TITLE: Research on the evolution of country-level BGP network ecosystems in 24 years
 SERIAL: China Communications
@@ -69611,7 +69612,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10495860/
 ---
 MARKER: 2024_kb_kan_ieee_8136
-TYPE: in_journal
+TYPE: article
 AUTHOR: Kan, KB., Mun, H., Cao, G., Lee, Y.
 TITLE: "Mobile-LLaMA: Instruction Fine-Tuning Open-Source LLM for Network Analysis in 5G Networks"
 SERIAL: IEEE Network
@@ -69622,7 +69623,7 @@ GEOLOC: Daejeon, SR
 URL: https://ieeexplore.ieee.org/abstract/document/10583947/
 ---
 MARKER: 2024_e_carisimo_estcarisimo_2800
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Carisimo, E., Kumar, R., Wang, CJ., Klein, S., Bustamente, FE.
 TITLE: Ten years of the Venezuelan crisis-An Internet perspective
 YEAR: 2024-08
@@ -69632,7 +69633,7 @@ GEOLOC: Evanston, IL, US
 URL: https://estcarisimo.github.io/assets/pdf/papers/2024-sigcomm-venezuela.pdf
 ---
 MARKER: 2024_i_livadariu_elsevier_5776
-TYPE: in_journal
+TYPE: article
 AUTHOR: Livadariu, I., Elmokashfi, A., Smaragdakis, G.
 TITLE: Tracking submarine cables in the wild
 SERIAL: Computer Networks
@@ -69643,7 +69644,7 @@ GEOLOC: Oslo, NO
 URL: https://www.sciencedirect.com/science/article/pii/S1389128624000665
 ---
 MARKER: 2024_y_pi_elsevier_7281
-TYPE: in_journal
+TYPE: article
 AUTHOR: Pi, Y., Jamin, S., Wei, Y.
 TITLE: Measuring congestion-induced performance imbalance in Internet load balancing at scale
 SERIAL: Computer Networks
@@ -69654,7 +69655,7 @@ GEOLOC: Shanghai, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1389128624000215
 ---
 MARKER: 2024_a_garcía-martínez_elsevier_8679
-TYPE: in_journal
+TYPE: article
 AUTHOR: García-Martínez, A., Jr, PR Torres., Bagnulo, M.
 TITLE: BGP convergence in an MRAI-free Internet
 SERIAL: Computer Networks
@@ -69665,7 +69666,7 @@ GEOLOC: Madrid, ES
 URL: https://www.sciencedirect.com/science/article/pii/S138912862400015X
 ---
 MARKER: 2024_f_hilal_acm_7428
-TYPE: in_journal
+TYPE: article
 AUTHOR: Hilal, F., Sattler, P., Vermeulen, K., Gasser, O.
 TITLE: A First Look At IPv6 Hypergiant Infrastructure
 SERIAL: Proceedings of the ACM on Networking
@@ -69676,7 +69677,7 @@ GEOLOC: Saarbrücken, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3656300
 ---
 MARKER: 2024_gcm_moura_acm_5632
-TYPE: in_journal
+TYPE: article
 AUTHOR: Moura, GCM., Davids, M., Schutijser, C., Hesselman, C., Heidemann, J., Smaragdakis, G.
 TITLE: Deep Dive into NTP Pool's Popularity and Mapping
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
@@ -69717,7 +69718,7 @@ GEOLOC: Atlanta, GA
 URL: https://arxiv.org/abs/2406.19304
 ---
 MARKER: 2024_h_birge-lee_usenix_7022
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Birge-Lee, H., Yoo, S., Herber, B., Rexford, J., Apostolaki, M.
 TITLE: "{TANGO}: Secure Collaborative Route Control across the Public Internet"
 YEAR: '2024'
@@ -69727,7 +69728,7 @@ GEOLOC: Princeton, NJ, US
 URL: https://www.usenix.org/conference/nsdi24/presentation/birge-lee
 ---
 MARKER: 2024_f_dekinder_uliege_1405
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Dekinder, F.
 TITLE: Dissecting Dual-Stack Website Content
 PUBLISH: University of Liège
@@ -69737,7 +69738,7 @@ GEOLOC: Liège, BE
 URL: https://matheo.uliege.be/bitstream/2268.2/19889/10/main.pdf
 ---
 MARKER: 2024_c_yuanqing_internationaljournalofsocialscience_2019
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yuanqing, C., Midhunchakkaravarth, Dr..
 TITLE: The deployment of the Internet Autonomous System Classification of the Topology of Internet Autonomous Systems
 SERIAL: INTERNATIONAL JOURNAL OF SOCIAL SCIENCE AND HUMANITY RESEARCH
@@ -69748,7 +69749,7 @@ GEOLOC: Kota Bharu, MY
 URL: http://internationaljournalofsocialscience.com/index.php/ojs/article/view/7
 ---
 MARKER: 2024_n_rodday_ieee_4182
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Rodday, N., Rodosek, GD., Pras, A., Rijswijk, RV.
 TITLE: Exploring the benefit of path plausibility algorithms in BGP
 YEAR: 2024-05
@@ -69758,7 +69759,7 @@ GEOLOC: Enschede, NL
 URL: https://ieeexplore.ieee.org/abstract/document/10575088/
 ---
 MARKER: 2024_ss_mahmood_internationaljournalofsocialscience_5176
-TYPE: in_journal
+TYPE: article
 AUTHOR: Mahmood, SS.
 TITLE: Enhancing the Accuracy of Internet Autonomous System Clustering Using K-Means Algorithm.
 SERIAL: International Journal of Advances in Soft Computing and its Applications
@@ -69769,7 +69770,7 @@ GEOLOC: Amman, JO
 URL: http://www.i-csrs.org/Volumes/ijasca/2024.1.8.pdf
 ---
 MARKER: 2024_b_min_elsevier_5161
-TYPE: in_journal
+TYPE: article
 AUTHOR: Min, B., Park, EK., Gwak, SH., Goh, KI.
 TITLE: No-exclaves percolation on random networks
 SERIAL: Chaos, Solitons & Fractals
@@ -69780,7 +69781,7 @@ GEOLOC: Cheongju, SR
 URL: https://www.sciencedirect.com/science/article/pii/S0960077924005563
 ---
 MARKER: 2024_c_natoli_acm_3647
-TYPE: in_journal
+TYPE: article
 AUTHOR: Natoli, C., Ekparinya, P., Jourjon, G., Gramoli, V.
 TITLE: Blockchain Double Spending With Low Mining Power and Network Delays
 SERIAL: 'Distributed Ledger Technologies: Research and Practice'
@@ -69821,7 +69822,7 @@ GEOLOC: Zürich, CH
 URL: https://arxiv.org/abs/2405.04319
 ---
 MARKER: 2024_sk_khadka_utwente_1544
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Khadka, SK., Bayhan, S., Holz, R., Hesselman, CEW.
 TITLE: "Assessing the security of Internet paths: A case study of Dutch critical infrastructures"
 YEAR: 2024-07
@@ -69831,7 +69832,7 @@ GEOLOC: Enschede, NL
 URL: https://research.utwente.nl/en/publications/assessing-the-security-of-internet-paths-a-case-study-of-dutch-cr
 ---
 MARKER: 2024_n_rahmatov_elsevier_7569
-TYPE: in_journal
+TYPE: article
 AUTHOR: Rahmatov, N., Baek, H.
 TITLE: "Exploring scale-free networks: Survey on autonomous system dynamics and connectivity analysis"
 SERIAL: Computer Networks
@@ -69842,7 +69843,7 @@ GEOLOC: Daegu, KR
 URL: https://www.sciencedirect.com/science/article/pii/S138912862400286X
 ---
 MARKER: 2024_h_gao_mdpi_5024
-TYPE: in_journal
+TYPE: article
 AUTHOR: Gao, H., Li, N., Xie, Y.
 TITLE: "Hidden-SAGE: For the Inference of Complex Autonomous System Business Relationships Involving Hidden Links"
 SERIAL: Electronics 
@@ -69853,7 +69854,7 @@ GEOLOC: Harbin, CN
 URL: https://www.mdpi.com/2079-9292/13/9/1617
 ---
 MARKER: 2024_r_anghel_acm_6477
-TYPE: in_journal
+TYPE: article
 AUTHOR: Anghel, R., Zhauniarovich, Y., Gañán, C.
 TITLE: Who's got my back? Measuring the adoption of an internet-wide BGP RTBH Service
 SERIAL: Proceedings of the ACM on Measurement and Analysis of Computing Systems
@@ -69864,7 +69865,7 @@ GEOLOC: Delft, NL
 URL: https://dl.acm.org/doi/abs/10.1145/3639029
 ---
 MARKER: 2024_t_holterbach_usenix_8784
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Holterbach, T., Alfroy, T., Phokeer, A., Dainotti, A., Pelsser, C.
 TITLE: A System to Detect {Forged-Origin}{BGP} Hijacks
 YEAR: 2024-04
@@ -69884,7 +69885,7 @@ GEOLOC: Standford, CA, US
 URL: https://arxiv.org/abs/2406.19569
 ---
 MARKER: 2024_h_almazarqi_glaacuk_1009
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Almazarqi, H.
 TITLE: Profiling IoT botnet activity
 PUBLISH: University of Glasgow
@@ -69894,7 +69895,7 @@ GEOLOC: Glasgow, GB
 URL: https://theses.gla.ac.uk/id/eprint/84102
 ---
 MARKER: 2024_n_tieby_research_gate_4618
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Tieby, N., Khoury, J., Bou-Harb, E.
 TITLE: "Characterizing and Analyzing LEO Satellite Cyber Landscape: A Starlink Case Study"
 YEAR: '2024'
@@ -69904,7 +69905,7 @@ GEOLOC: San Antonio, TX, US
 URL: https://www.researchgate.net/profile/Joseph-Khoury-3/publication/378125487_Characterizing_and_Analyzing_LEO_Satellite_Cyber_Landscape_A_Starlink_Case_Study/links/65c7bff61e1ec12eff806656/Characterizing-and-Analyzing-LEO-Satellite-Cyber-Landscape-A-Starlink-Case-Study.pdf
 ---
 MARKER: 2024_m_zeng_ieee_1934
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zeng, M., Huang, X., Zhang, P., Li, D., Xie, K.
 TITLE: Improving Prefix Hijacking Defense of RPKI from an Evolutionary Game Perspective
 SERIAL: IEEE Transactions on Dependable and Secure Computing
@@ -69914,7 +69915,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10454028/
 ---
 MARKER: 2024_t_witono_jisebi_4600
-TYPE: in_journal
+TYPE: article
 AUTHOR: Witono, T., Yazid, S., Sucahyo, YG.
 TITLE: "The Art of Internet Mapping: A Comprehensive Guide to Regional Internet Topology Mapping at the Autonomous System Level"
 SERIAL: Journal of Information Systems Engineering and Business Intelligence
@@ -69925,7 +69926,7 @@ GEOLOC: Depok, ID
 URL: https://e-journal.unair.ac.id/JISEBI/upcoming/view/53708
 ---
 MARKER: 2024_f_sassi_phd_univ_rome_5566
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Sassi, F.
 TITLE: "Uncovering threats in digital systems: a deep dive into BGP, the blockchain, and Telegram"
 PUBLISH: Sapienza University of Rome
@@ -69935,7 +69936,7 @@ GEOLOC: Rome, IT
 URL: https://iris.uniroma1.it/handle/11573/1711089
 ---
 MARKER: 2024_l_prehn_acm_8900
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Prehn, L., Foremski, P., Gasser, O.
 TITLE: "Kirin: Hitting the Internet with Distributed BGP Announcements"
 YEAR: 2024-07
@@ -69945,7 +69946,7 @@ GEOLOC: Saarbuecken, Saarland, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3634737.3657000
 ---
 MARKER: 2024_y_chen_usenix_8241
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, Y., Yin, Q., Li, Q., Liu, Z., Xu, K., Xu, Y., Xu, M., Lu, Z., Wu, J.
 TITLE: "Learning with Semantics: Towards a Semantics-Aware Routing Anomaly Detection System"
 CTITLE: Proceedings of the 33rd USENIX Security Symposium
@@ -69955,7 +69956,7 @@ GEOLOC: Beijing, CN
 URL: https://www.usenix.org/system/files/sec24summer-prepub-670-chen-yihao.pdf
 ---
 MARKER: 2024_s_kastanakis_lancs_9022
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kastanakis, S., Giotsas, V., Livadariu, I., Suri, N.
 TITLE: Investigating Location-aware Advertisements in Anycast IP Networks
 CTITLE: "Applied Networking Research Workshop 2024 (ANRW’24)"
@@ -69965,7 +69966,7 @@ GEOLOC: Lancaster, GB
 URL: https://ssg.lancs.ac.uk/wp-content/uploads/anrw24.pdf
 ---
 MARKER: 2024_ma_romo-chavero_mdpi_8831
-TYPE: in_journal
+TYPE: article
 AUTHOR: Romo-Chavero, MA., Cantoral-Ceballos, JA., Pérez-Díaz, JA., Martinez-Cagnazzo, C.
 TITLE: Median Absolute Deviation for BGP Anomaly Detection
 SERIAL: Future Internet 
@@ -69976,7 +69977,7 @@ GEOLOC: Monterrey, MX
 URL: https://www.mdpi.com/1999-5903/16/5/146
 ---
 MARKER: 2024_y_xie_mdpi_3393
-TYPE: in_journal
+TYPE: article
 AUTHOR: Xie, Y., Zhang, Z., Chen, E., Li, N.
 TITLE: "AliasClassifier: A High-Performance Router Alias Classifier"
 SERIAL: Electronics
@@ -69987,7 +69988,7 @@ GEOLOC: Harbin, CN
 URL: https://www.mdpi.com/2079-9292/13/9/1747
 ---
 MARKER: 2022_qb_lone_tudelft_7146
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Lone, QB.
 TITLE: "SAVing the Internet: Measuring the adoption of Source Address Validation (SAV) by network providers"
 PUBLISH: Delft University of Technology
@@ -69997,7 +69998,7 @@ GEOLOC: Delft, NL
 URL: https://research.tudelft.nl/en/publications/saving-the-internet-measuring-the-adoption-of-source-address-vali
 ---
 MARKER: 2022_a_hernandez_ostigov_1024
-TYPE: presentation
+TYPE: online
 AUTHOR: Hernandez, A.
 TITLE: Sandia Cyber and Emulytics Overview.
 YEAR: '2022'
@@ -70006,7 +70007,7 @@ GEOLOC: SF, CA
 URL: https://www.osti.gov/servlets/purl/2002126
 ---
 MARKER: 2022_r_yazdani_acm_3768
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yazdani, R., Hilton, A., Ham, J van der., Rijswijk-Deij, R van., Deccio, C ., Sperotto, A ., Jonker, M.
 TITLE: "Mirrors in the sky: on the potential of clouds in DNS reflection-based denial-of-service attacks"
 YEAR: 2022-10
@@ -70016,7 +70017,7 @@ GEOLOC: Enschede, NL
 URL: https://dl.acm.org/doi/abs/10.1145/3545948.3545959
 ---
 MARKER: 2022_sj_saidi_acm_9932
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Saidi, SJ., Matic, S., Gasser, O., Smaragdakis, G., Feldmann, A.
 TITLE: Deep dive into the IoT backend ecosystem
 YEAR: 2022-10
@@ -70026,7 +70027,7 @@ GEOLOC: Saarbrücken, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3517745.3561431
 ---
 MARKER: 2024_lancheng_qin_ndss_6960
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Qin, Lancheng., Chen, Li., Li, Dan., Ye, Honglin., Wang, Yutian.
 TITLE: Understanding Route Origin Validation (ROV) Deployment in the Real World and Why MANRS Action 1 Is Not Followed
 YEAR: '2024'
@@ -70036,7 +70037,7 @@ GEOLOC: Beijing, CN
 URL: https://www.ndss-symposium.org/wp-content/uploads/2024-214-paper.pdf
 ---
 MARKER: 2022_yamba_dabone_ieee_3966
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yamba, D.; Tounwendyam, O.; Oumarou, S.
 TITLE: Measures To Enhance The Characterization Of Internet Exchange Points
 YEAR: 2022-11
@@ -70046,7 +70047,7 @@ GEOLOC: Ouagadougou, BF
 URL: https://ieeexplore.ieee.org/abstract/document/10010180/
 ---
 MARKER: 2022_s_ricardo-hernández-torres_divaportal_3089
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Ricardo-Hernández-Torres, S.
 TITLE: "Measuring The Adoption and The Effects of RPKI Route Validation and Filtering: Through active control plane and data plane measurements"
 PUBLISH: KTH Royal Institute of Technology
@@ -70066,7 +70067,7 @@ GEOLOC: Bloomington, IN, US
 URL: https://www.researchgate.net/profile/L-Camp/publication/333130583_Using_Bursty_Announcements_for_Early_Detection_of_BGP_Routing_Anomalies/links/5d66abbba6fdccf343fb6ba8/Using-Bursty-Announcements-for-Early-Detection-of-BGP-Routing-Anomalies.pdf
 ---
 MARKER: 2022_vincent_gramoli_springer_8422
-TYPE: in_book
+TYPE: book
 AUTHOR: Gramoli, Vincent.
 TITLE: Blockchain scalability and its foundations in distributed systems
 CTITLE: Blockchain scalability and its foundations in distributed systems
@@ -70076,7 +70077,7 @@ GEOLOC: Sydney, AU
 URL: https://link.springer.com/content/pdf/10.1007/978-3-031-12578-2.pdf
 ---
 MARKER: 2022_rui_bian_proquest_1550
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Bian, Rui.
 TITLE: Using stand-off observation and measurement to understand aspects of the global internet
 PUBLISH: University of Delaware
@@ -70086,7 +70087,7 @@ GEOLOC: Newark, DE, US
 URL: https://search.proquest.com/openview/e4491febf14666ad852238d38ccf749e/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2022_v_do_repositorio_3391
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: do, V Tomás Joaquim Gonçalves Peixinho.
 TITLE: Securing the Internet at the Exchange Points
 PUBLISH: University of Lisbon
@@ -70096,7 +70097,7 @@ GEOLOC: Lisbon, PT
 URL: https://repositorio.ul.pt/handle/10451/56826
 ---
 MARKER: 2022_yaozhong_liu_ieee_7462
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Liu, Yaozhong., Yang, Jiahai., Wang, Zhiliang., Pan, Long., He, Lin., Lin, Jinlei., Song, Guanglei., Li, Chenglong.
 TITLE: "What Causes Delay Asymmetry: A Large-scale One-way Delay Measurement and Empirical Study"
 YEAR: 2022-12
@@ -70106,7 +70107,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10000938/
 ---
 MARKER: 2021_seyedali_tabaeiaghdaei_ethzch_3699
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Tabaeiaghdaei, Seyedali.
 TITLE: Green Inter-Domain Routing in the SCION Internet Architecture
 PUBLISH: the Swiss Federal Institute of Technology Zurich
@@ -70116,7 +70117,7 @@ GEOLOC: Zürich, CH
 URL: https://www.research-collection.ethz.ch/bitstream/handle/20.500.11850/486929/1/green_inter_domain_routing.pdf
 ---
 MARKER: 2021_petros_gigis_acm_3737
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Gigis, Petros., Calder, Matt., Manassakis, Lefteris., Nomikos, George., Kotronis, Vasileios., Dimitropoulos, Xenofontas., Katz-Bassett, Ethan., Smaragdakis, Georgios.
 TITLE: Seven years in the life of Hypergiants' off-nets
 CTITLE: SIGCOMM
@@ -70126,7 +70127,7 @@ GEOLOC: London, GB
 URL: https://dl.acm.org/doi/abs/10.1145/3452296.3472928
 ---
 MARKER: 2024_d_ding_ijas_1285
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ding, D., Kesgin, O., Zilberman, N.
 TITLE: "INDDoS+: secure DDoS detection mechanism in programmable switches"
 YEAR: '2024'
@@ -70136,7 +70137,7 @@ GEOLOC: Oxford, GB
 URL: https://ora.ox.ac.uk/objects/uuid:9485df2f-2b29-4bae-9036-835f13fe5a3b
 ---
 MARKER: 2024_z_zhang_mdpi_6022
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, Z., Lu, J., Ren, Q., Li, Z., Hu, Y., Chen, H.
 TITLE: An Accurate and Invertible Sketch for Super Spread Detection
 SERIAL: Electronics
@@ -70147,7 +70148,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.mdpi.com/2079-9292/13/1/222
 ---
 MARKER: 2024_d_ran_mdpi_4580
-TYPE: in_journal
+TYPE: article
 AUTHOR: Ran, D., Chen, X., Song, L.
 TITLE: "ComPipe: A Novel Flow Placement and Measurement Algorithm for Programmable Composite Pipelines"
 SERIAL: Electronics
@@ -70158,7 +70159,7 @@ GEOLOC: Beijing, CN
 URL: https://www.mdpi.com/2079-9292/13/6/1022
 ---
 MARKER: 2024_h_wang_jos_5255
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wang, H., Chen, Z., Dai, H., Gu, R., Kim, C., Chen, G.
 TITLE: 无锁并发布谷鸟过滤器
 SERIAL: 软件学报
@@ -70168,7 +70169,7 @@ GEOLOC: Nanjing, CN
 URL: https://www.jos.org.cn/josen/article/pdf/7214
 ---
 MARKER: 2024_p_goldschmidt_ieee_9817
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Goldschmidt, P., Kučera, J.
 TITLE: "Windower: Feature Extraction for Real-Time DDoS Detection Using Machine Learning"
 YEAR: 2024-05
@@ -70178,7 +70179,7 @@ GEOLOC: Bratislava, SK
 URL: https://ieeexplore.ieee.org/abstract/document/10575699/
 ---
 MARKER: 2024_w_jiang_ieee_5877
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jiang, W., Jiang, H., Xie, Y., Wu, J., He, X., Li, H., Zhou, P.
 TITLE: "SatShield: In-Network Mitigation of Link Flooding Attacks for LEO Constellation Networks"
 SERIAL: IEEE Internet of Things Journal
@@ -70189,7 +70190,7 @@ GEOLOC: Wuhan, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10530518/
 ---
 MARKER: 2024_g_byun_ieee_6940
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Byun, G., Vo, VV., Raza, SM., Le, DT., Yang, H., Choo, H.
 TITLE: Proactive Network Traffic Prediction using Generative Adversarial Network
 YEAR: 2024-01
@@ -70199,7 +70200,7 @@ GEOLOC: Suwon, KR
 URL: https://ieeexplore.ieee.org/abstract/document/10572129/
 ---
 MARKER: 2024_g_duan_ieee_6398
-TYPE: in_journal
+TYPE: article
 AUTHOR: Duan, G., Li, Q., Zhang, Z., Zhao, D., Xie, G., Yang, Y., Xu, M.
 TITLE: "DNSGuard: In-network Defense against DNS Attacks"
 SERIAL: IEEE Transactions on Dependable and Secure Computing
@@ -70210,7 +70211,7 @@ GEOLOC: Guangdong, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10550176/
 ---
 MARKER: 2024_l_fu_ieee_4684
-TYPE: in_journal
+TYPE: article
 AUTHOR: Fu, L., Zhang, H., Zhang, Z., Li, J., Guan, H.
 TITLE: "FlowLever: Leverage Flow Director for Packet Dispatch Acceleration in NFV"
 SERIAL: IEEE Access
@@ -70221,7 +70222,7 @@ GEOLOC: Shanghai, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10459209/
 ---
 MARKER: 2024_x_deng_ieee_8895
-TYPE: in_journal
+TYPE: article
 AUTHOR: Deng, X., Xu, M., Li, Q., Wu, W., Yang, Y., Zhang, M., Zhou, Y., Wu, J.
 TITLE: "Exploring Dynamic Rule Caching Under Dependency Constraints for Programmable Switches: Theory, Algorithm, and Implementation"
 SERIAL: IEEE Transactions on Network and Service Management
@@ -70232,7 +70233,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10582912/
 ---
 MARKER: 2024_m_yu_ieee_8702
-TYPE: in_journal
+TYPE: article
 AUTHOR: Yu, M., Burke, QK., Porta, TF La., McDaniel, P.
 TITLE: Stealthy Misreporting Attacks Against Load Balancing
 SERIAL: IEEE/ACM Transactions on Networking 
@@ -70243,7 +70244,7 @@ GEOLOC: University Park, PA, US
 URL: https://ieeexplore.ieee.org/abstract/document/10530197/
 ---
 MARKER: 2024_h_wang_ieee_7234
-TYPE: in_journal
+TYPE: article
 AUTHOR: Wang, H., Dai, H., Chen, S., Li, M., Gu, R., Chai, H., Zheng, J., Li, S., Deng, X., Chen, G.
 TITLE: "Bamboo Filters: Make Resizing Smooth and Adaptive"
 SERIAL: IEEE/ACM Transactions on Networking
@@ -70254,7 +70255,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10540052/
 ---
 MARKER: 2024_j_liu_ieee_1866
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, J., Dai, H., Xia, R., Li, M., Basat, RB., Li, R., Gu, R., Zheng, J., Chen, G.
 TITLE: A Generic Framework for Finding Special Quadratic Elements in Data Streams
 SERIAL: IEEE/ACM Transactions on Networking
@@ -70265,7 +70266,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10506934/
 ---
 MARKER: 2024_j_jiang_ieee_5527
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jiang, J., Chen, Y., He, B., Chen, M., Chen, J.
 TITLE: "Spade+: A Generic Real-Time Fraud Detection Framework on Dynamic Graphs"
 SERIAL: IEEE Transactions on Knowledge and Data Engineering 
@@ -70276,7 +70277,7 @@ GEOLOC: Singapore, SG
 URL: https://ieeexplore.ieee.org/abstract/document/10510636/
 ---
 MARKER: 2024_f_li_ieee_2465
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, F., Lv, Y., Yan, Y., Gao, C., Wang, X., Cao, J.
 TITLE: Learning-Based Sketch for Adaptive and High-Performance Network Measurement
 SERIAL: IEEE/ACM Transactions on Networking
@@ -70287,7 +70288,7 @@ GEOLOC: Shenyang, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10436630/
 ---
 MARKER: 2024_h_sun_ieee_4082
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sun, H., Huang, Q., Lee, PPC., Bai, W., Zhu, F., Bao, Y.
 TITLE: Distributed Network Telemetry With Resource Efficiency and Full Accuracy
 SERIAL: IEEE/ACM Transactions on Networking
@@ -70298,7 +70299,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10384692/
 ---
 MARKER: 2024_va_shirsath_elsevier_3727
-TYPE: in_journal
+TYPE: article
 AUTHOR: Shirsath, VA., Chandane, MM., Lal, C., Conti, M.
 TITLE: "SPARQ: SYN Protection using Acyclic Redundancy check and Quartile range on P4 switches"
 SERIAL: Computer Communications
@@ -70309,7 +70310,7 @@ GEOLOC: Mumbai, IN
 URL: https://www.sciencedirect.com/science/article/pii/S0140366423004620
 ---
 MARKER: 2024_j_lu_elsevier_8491
-TYPE: in_journal
+TYPE: article
 AUTHOR: Lu, J., Chen, H., Sun, P., Hu, T., Zhang, Z., Ren, Q.
 TITLE: "SuperGuardian: Superspreader removal for cardinality estimation in data streaming"
 SERIAL: Information Systems
@@ -70320,7 +70321,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.sciencedirect.com/science/article/pii/S0306437924000097
 ---
 MARKER: 2024_j_liu_elsevier_2660
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, J., Li, Z., Du, H., Zhou, H., Li, L., An, Y., Zhang, Y., Liu, K., Li, Q.
 TITLE: An effective and accurate flow size measurement using funnel-shaped sketch
 SERIAL: Computer Networks
@@ -70331,7 +70332,7 @@ GEOLOC: Tianjin, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1389128624002998
 ---
 MARKER: 2024_z_li_elsevier_9135
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, Z., Liu, Z., Liu, J., Zhang, Y., Liang, T., Liu, K.
 TITLE: "AGC Sketch: An effective and accurate per-flow measurement to adapt flow size distribution"
 SERIAL: Computer Communications
@@ -70342,7 +70343,7 @@ GEOLOC: Shenzhen, CN
 URL: https://www.sciencedirect.com/science/article/pii/S0140366424001427
 ---
 MARKER: 2024_j_ma_elsevier_7218
-TYPE: in_journal
+TYPE: article
 AUTHOR: Ma, J., Su, W., Li, Y., Peng, Y.
 TITLE: Synchronizing DDoS detection and mitigation based graph learning with programmable data plane, SDN
 SERIAL: Future Generation Computer Systems
@@ -70353,7 +70354,7 @@ GEOLOC: Beijing, CN
 URL: https://www.sciencedirect.com/science/article/pii/S0167739X23004909
 ---
 MARKER: 2024_j_lu_elsevier_4889
-TYPE: in_journal
+TYPE: article
 AUTHOR: Lu, J., Chen, H., Zhang, Z.
 TITLE: "HeavySeparation: A Generic framework for stream processing faster and more accurate"
 SERIAL: Computer Communications
@@ -70364,7 +70365,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://www.sciencedirect.com/science/article/pii/S0140366424001646
 ---
 MARKER: 2024_z_li_elsevier_5237
-TYPE: in_journal
+TYPE: article
 AUTHOR: Li, Z., Liu, S., Liu, J., Zhang, Y., Liang, T., Liu, K.
 TITLE: "SIM: A fast real-time graph stream summarization with improved memory efficiency and accuracy"
 SERIAL: Computer Networks
@@ -70375,7 +70376,7 @@ GEOLOC: Shenzhen, CN
 URL: https://www.sciencedirect.com/science/article/pii/S1389128624003347
 ---
 MARKER: 2024_w_li_acm_8170
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, W., Patras, P.
 TITLE: "Stable-Sketch: A Versatile Sketch for Accurate, Fast, Web-Scale Data Stream Processing"
 YEAR: 2024-05
@@ -70385,7 +70386,7 @@ GEOLOC: Edinburgh, GB
 URL: https://dl.acm.org/doi/abs/10.1145/3589334.3645581
 ---
 MARKER: 2024_h_ji_acm_1303
-TYPE: in_journal
+TYPE: article
 AUTHOR: Ji, H., Xie, K., Wen, J., Zhang, Q., Xie, G., Liang, W.
 TITLE: "FineMon: An Innovative Adaptive Network Telemetry Scheme for Fine-Grained, Multi-Metric Data Monitoring with Dynamic Frequency Adjustment and Enhanced Data Recovery"
 SERIAL: Proceedings of the ACM on Management of Data
@@ -70396,7 +70397,7 @@ GEOLOC: Changsha, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3639267
 ---
 MARKER: 2024_h_wang_acm_5245
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wang, H., Dai, H., Gu, R., Lu, Y., Zheng, J., Dai, J., Chen, S.
 TITLE: "Wormhole filters: Caching your hash on persistent memory"
 YEAR: 2024-04
@@ -70406,7 +70407,7 @@ GEOLOC: Nanjing, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3627703.3629590
 ---
 MARKER: 2024_r_azorin_acm_9010
-TYPE: in_journal
+TYPE: article
 AUTHOR: Azorin, R., Monterubbiano, A., Castellano, G., Gallo, M., Pontarelli, S., Rossi, D.
 TITLE: "Taming the Elephants: Affordable Flow Length Prediction in the Data Plane"
 SERIAL: Proceedings of the ACM on Networking
@@ -70417,7 +70418,7 @@ GEOLOC: Paris, FR
 URL: https://dl.acm.org/doi/abs/10.1145/3649473
 ---
 MARKER: 2024_l_yan_acm_7611
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yan, L., Pan, Y., Zhou, D., Candea, G., Kashyap, S.
 TITLE: Transparent Multicore Scaling of Single-Threaded Network Functions
 YEAR: 2024-04
@@ -70427,7 +70428,7 @@ GEOLOC: Lausanne, CH
 URL: https://dl.acm.org/doi/abs/10.1145/3627703.3629591
 ---
 MARKER: 2024_x_zhang_acm_1084
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, X., Mariani, J., Xiao, L., Mutka, MW.
 TITLE: Exploiting Fine-grained Dimming with Improved LiFi Throughput
 SERIAL: ACM Transactions on Sensor Networks
@@ -70438,7 +70439,7 @@ GEOLOC: East Lansing, MI, US
 URL: https://dl.acm.org/doi/abs/10.1145/3643814
 ---
 MARKER: 2024_y_lee_acm_2219
-TYPE: in_journal
+TYPE: article
 AUTHOR: Lee, Y., Kim, K., Lee, W., Han, WS.
 TITLE: In-depth Analysis of Continuous Subgraph Matching in a Common Delta Query Compilation Framework
 SERIAL: Proceedings of the ACM on Management of Data
@@ -70449,7 +70450,7 @@ GEOLOC: Pohang-si, KR
 URL: https://dl.acm.org/doi/abs/10.1145/3654950
 ---
 MARKER: 2024_y_zhou_acm_2748
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhou, Y., Wilkening, M., Mickens, J., Yu, M.
 TITLE: SmartNIC Security Isolation in the Cloud with S-NIC
 YEAR: 2024-04
@@ -70519,7 +70520,7 @@ GEOLOC: Tempe, AZ
 URL: https://arxiv.org/abs/2406.06483
 ---
 MARKER: 2024_y_wu_yangtong_7810
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wu, Y., Yuan, A., Shi, Z., Li, Y., Zhao, Y., Chen, P., Yang, T., Cui, B.
 TITLE: Online Detection of Outstanding Quantiles with QuantileFilter
 CTITLE: IEEE 40th International Conference on Data Engineering (ICDE)
@@ -70529,7 +70530,7 @@ GEOLOC: Beijing, CN
 URL: https://yangtonghome.github.io/uploads/QuantileFilter_final.pdf
 ---
 MARKER: 2024_q_chen_yangtong_7677
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, Q., Hong, Y., Wu, Y., Yang, T., Cui, B.
 TITLE: "CodingSketch: A Hierarchical Sketch with Efficient Encoding and Recursive Decoding"
 CTITLE: IEEE 40th International Conference on Data Engineering (ICDE)
@@ -70539,7 +70540,7 @@ GEOLOC: Beijing, CN
 URL: https://yangtonghome.github.io/uploads/CodingSketch_fin.pdf
 ---
 MARKER: 2024_y_wu_yangtong_7511
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Wu, Y., Wu, H., Jia, C., Peng, B., Zhang, Z., Yang, T., Chen, P., Yang, K., Cui, B.
 TITLE: Scalable Overspeed Item Detection in Streams
 CTITLE: IEEE 40th International Conference on Data Engineering (ICDE)
@@ -70549,7 +70550,7 @@ GEOLOC: Beijing, CN
 URL: https://yangtonghome.github.io/uploads/SpeedSketch_final.pdf
 ---
 MARKER: 2024_c_klopfstein_eeethzch_7900
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Klopfstein, C.
 TITLE: Retroactive Packet Sampling in P4
 PUBLISH: the Swiss Federal Institute of Technology Zurich
@@ -70559,7 +70560,7 @@ GEOLOC: Zürich, CH
 URL: https://www.nsg.ee.ethz.ch/files/public/theses/2023-sampling_p4/20240325_MA_Thesis_Clemens_Klopfstein-1.pdf
 ---
 MARKER: 2024_s_dong_yangtong_7968
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Dong, S., Fan, Z., Bai, T., Yang, T., Xue, H., Chen, P., Wu, Y.
 TITLE: "M4: A Framework for Per-Flow Quantile Estimation"
 CTITLE: IEEE 40th International Conference on Data Engineering (ICDE)
@@ -70569,7 +70570,7 @@ GEOLOC: Beijing, CN
 URL: https://yangtonghome.github.io/uploads/M4_ICDE%202024_origin.pdf
 ---
 MARKER: 2024_j_kiezebrink_tue_3949
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Kiezebrink, J.
 TITLE: Synopses for Summarizing Spatial Data Streams
 PUBLISH: Eindhoven University of Technology
@@ -70579,7 +70580,7 @@ GEOLOC: Eindhoven, NL
 URL: https://pure.tue.nl/ws/portalfiles/portal/333608041/Kiezebrink_J.pdf
 ---
 MARKER: 2024_z_li_research_gate_2043
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, Z., Li, Y., Chen, X., Zou, L., Li, Y., Yang, X., Jiang, H.
 TITLE: "NewSP: A New Search Process for Continuous Subgraph Matching over Dynamic Graphs"
 YEAR: 2024-05
@@ -70599,7 +70600,7 @@ GEOLOC: Nantes, FR
 URL: https://hal.science/hal-01073877v1/file/tr1014.pdf
 ---
 MARKER: 2024_p_bhowmick_vtech_5966
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Bhowmick, P.
 TITLE: Measuring and Understanding TTL Violations in DNS Resolvers
 PUBLISH: Virginia Tech
@@ -70609,7 +70610,7 @@ GEOLOC: Blacksburg, VA
 URL: https://vtechworks.lib.vt.edu/items/ffad149a-0fa0-464c-ba29-eb6607c60ebf
 ---
 MARKER: 2024_b_zhang_springer_5071
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zhang, B., Huang, H., Sun, YE., Du, Y., Wang, D.
 TITLE: "Jigsaw-Sketch: a fast and accurate algorithm for finding top-k elephant flows in high-speed networks"
 SERIAL: Science China Information Sciences
@@ -70620,7 +70621,7 @@ GEOLOC: Suzhou, CN
 URL: https://link.springer.com/article/10.1007/s11432-022-3794-1
 ---
 MARKER: 2024_k_sarieddine_concordia_6807
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Sarieddine, K.
 TITLE: Bolstering EV Charging Ecosystem Infrastructure Resilience and Unraveling Threats-A Comprehensive Study
 PUBLISH: Concordia University Irvine
@@ -70630,7 +70631,7 @@ GEOLOC: Irvine, CA, US
 URL: https://spectrum.library.concordia.ca/id/eprint/993699/
 ---
 MARKER: 2023_a_aamand_proceedings_neurips_8987
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Aamand, A., Chen, J., Nguyen, H., Silwal, S., Vakilian, A.
 TITLE: Improved frequency estimation algorithms with and without predictions
 YEAR: '2023'
@@ -70640,7 +70641,7 @@ GEOLOC: Cambridge, MA, US
 URL: https://proceedings.neurips.cc/paper_files/paper/2023/hash/2e49934cac6cb8604b0c67cfa0828718-Abstract-Conference.html
 ---
 MARKER: 2024_a_sánchez-macián_ieee_1209
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sánchez-Macián, A., Martínez, J., Reviriego, P., Liu, S., Lombardi, F.
 TITLE: "On the Privacy of the Count-Min Sketch: Extracting the Top-K Elements"
 SERIAL: IEEE Transactions on Emerging Topics in Computing
@@ -70651,7 +70652,7 @@ GEOLOC: Leganés, ES
 URL: https://ieeexplore.ieee.org/abstract/document/10492661/
 ---
 MARKER: 2024_g_song_ieee_1646
-TYPE: in_journal
+TYPE: article
 AUTHOR: Song, G., He, L., Zhu, F., Lin, J., Zhang, W., Fan, L., Li, C., Wang, Z., Yang, J.
 TITLE: ": A Fast, Efficient, and Comprehensive Global Active IPv6 Address Detection System"
 SERIAL: IEEE/ACM Transactions on Networking
@@ -70662,7 +70663,7 @@ GEOLOC: Beijing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10556607/
 ---
 MARKER: 2024_s_hashimoto_ieee_3898
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Hashimoto, S., Misumi, M., Kamiyama, N.
 TITLE: Analysis of Diffusion Process of ICN Based on Economic Factors
 YEAR: 2024-05
@@ -70682,7 +70683,7 @@ GEOLOC: Darmstadt, DE
 URL: https://patents.google.com/patent/US11907683B2/en
 ---
 MARKER: 2024_h_schulmann_acm_9034
-TYPE: in_journal
+TYPE: article
 AUTHOR: Schulmann, H., Zhao, S.
 TITLE: "ZPredict: ML-Based IPID Side-channel Measurements"
 SERIAL: ACM Transactions on Privacy and Security
@@ -70693,7 +70694,7 @@ GEOLOC: Frankfurt, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3672560
 ---
 MARKER: 2024_m_girondi_divaport_2472
-TYPE: BSc thesis
+TYPE: bscthesis
 AUTHOR: Girondi, M.
 TITLE: Toward Highly-efficient GPU-centric Networking
 PUBLISH: Kungliga Tekniska högskolan, Royal Institute of Technology
@@ -70733,7 +70734,7 @@ GEOLOC: Hyderabad, IN
 URL: https://praveenabt.github.io/publications/frrsec.pdf
 ---
 MARKER: 2023_f_li_shenjiaxing_9251
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Li, F., Guo, K., Shen, J., Wang, X.
 TITLE: "Effective Network-Wide Traffic Measurement: A Lightweight Distributed Sketch Deployment"
 CTITLE: IEEE
@@ -70743,7 +70744,7 @@ GEOLOC: Shenyang, CN
 URL: https://shenjiaxing.github.io/pdf/effectiveli2023.pdf
 ---
 MARKER: 2022_m_brandt_tuprints_3569
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Brandt, M.
 TITLE: Bootstrapping Cryptography on the Internet
 PUBLISH: Technical University of Darmstadt
@@ -70753,7 +70754,7 @@ GEOLOC: Darmstadt, DE
 URL: https://tuprints.ulb.tu-darmstadt.de/21526/
 ---
 MARKER: 2022_z_li_libpoly_8348
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Li, Z.
 TITLE: On building trustworthy network systems with blockchain and TEE
 PUBLISH: The Hong Kong Polytechnic University
@@ -70763,7 +70764,7 @@ GEOLOC: Hong Kong, CN
 URL: https://theses.lib.polyu.edu.hk/handle/200/12166
 ---
 MARKER: 2022_y_han_springer_9188
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Han, Y., Du, Y., Chen, S., Huang, H., Sun, YE.
 TITLE: "Tsd3: A novel time-series-based solution for ddos attack detection"
 YEAR: '2022'
@@ -70773,7 +70774,7 @@ GEOLOC: Suzhou, CN
 URL: https://link.springer.com/chapter/10.1007/978-3-031-25201-3_25
 ---
 MARKER: 2022_je_mendes_proquest_2235
-TYPE: MSc thesis
+TYPE: mastersthesis
 AUTHOR: Mendes, JE da Silva.
 TITLE: Evaluating the Impact of Traffic Sampling in Network Analysis
 PUBLISH: University of Minho
@@ -70783,7 +70784,7 @@ GEOLOC: Braga, PT
 URL: https://search.proquest.com/openview/91fced3f5251f776c8c86b2d5ddb1f70/1?pq-origsite=gscholar&cbl=2026366&diss=y
 ---
 MARKER: 2022_la_mchale_proquest_3762
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: McHale, LA.
 TITLE: Flow Table Management in Programmable Network Data Planes
 PUBLISH: Texas A&M University
@@ -70793,7 +70794,7 @@ GEOLOC: Texas, US
 URL: https://search.proquest.com/openview/b5c8c732d8e51ed16bd38f92d38f7508/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2022_g_akiwate_proquest_1601
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Akiwate, G.
 TITLE: Identifying DNS Infrastructure Hijacks using Large Scale Measurements
 PUBLISH: UNIVERSITY OF CALIFORNIA SAN DIEGO
@@ -70803,7 +70804,7 @@ GEOLOC: San Diego, US
 URL: https://search.proquest.com/openview/c9291c25150fd7145f8d12b3f49ae1e6/1?pq-origsite=gscholar&cbl=18750&diss=y
 ---
 MARKER: 2022_sj_saidi_sulbsaarland_2161
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Saidi, SJ.
 TITLE: Characterizing the IoT ecosystem at scale
 PUBLISH: Saarland University
@@ -70823,7 +70824,7 @@ GEOLOC: Pittsburgh, PA
 URL: https://par.nsf.gov/servlets/purl/10354658
 ---
 MARKER: 2022_n_ivkin_mdpi_5114
-TYPE: in_journal
+TYPE: article
 AUTHOR: Ivkin, N., Liberty, E., Lang, K., Karnin, Z., Braverman, V.
 TITLE: Streaming quantiles algorithms with small space and update time
 SERIAL: Sensors
@@ -70834,7 +70835,7 @@ GEOLOC: NY, US
 URL: https://www.mdpi.com/1424-8220/22/24/9612
 ---
 MARKER: 2022_g_fragkouli_epfl_2929
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Fragkouli, G.
 TITLE: Toward Internet Performance Transparency
 PUBLISH: Swiss Federal Institute of Technology Lausanne
@@ -70844,7 +70845,7 @@ GEOLOC: Zürich, CH
 URL: https://infoscience.epfl.ch/record/296205
 ---
 MARKER: 2022_h_zhu_ieee_5573
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhu, H., Wan, J., Li, N., Deng, Y., He, G., Guo, J., Zhang, L.
 TITLE: "Odd-Even Hash Algorithm: A Improvement of Cuckoo Hash Algorithm"
 YEAR: 2022-03
@@ -70854,7 +70855,7 @@ GEOLOC: Nanjing, CN
 URL: https://ieeexplore.ieee.org/abstract/document/9816186/
 ---
 MARKER: 2022_z_qian_ieee_3039
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Qian, Z., Gao, G., Du, Y.
 TITLE: Per-Flow Size Measurement by Combining Sketch and Flow Table in Software-Defined Networks
 YEAR: 2022-12
@@ -70864,7 +70865,7 @@ GEOLOC: Suzhou, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10070734/
 ---
 MARKER: 2022_c_ezelu_ieee_5559
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ezelu, C., Buehler, U.
 TITLE: "Privacy-Preserving Collaborative Intrusion Detection Systems: A Federated Learning Framework"
 YEAR: 2022-12
@@ -70874,7 +70875,7 @@ GEOLOC: Fulda, DE
 URL: https://ieeexplore.ieee.org/abstract/document/10216589/
 ---
 MARKER: 2022_f_shaikh_ieee_4836
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Shaikh, F., Bou-Harb, E., Vehabovic, A., Crichigno, J., Yayimli, A., Ghani, N.
 TITLE: IoT Threat Detection Testbed Using Generative Adversarial Networks
 YEAR: 2022-06
@@ -70884,7 +70885,7 @@ GEOLOC: Florida, US
 URL: https://ieeexplore.ieee.org/abstract/document/9858239/
 ---
 MARKER: 2022_m_zuppelli_ieee_4863
-TYPE: in_journal
+TYPE: article
 AUTHOR: Zuppelli, M., Repetto, M., Schaffhauser, A., Mazurczyk, W., Caviglione, L.
 TITLE: Code layering for the detection of network covert channels in agentless systems
 SERIAL: IEEE Transactions on Network and Service Management
@@ -70895,7 +70896,7 @@ GEOLOC: Genoa, IT
 URL: https://ieeexplore.ieee.org/abstract/document/9779347/
 ---
 MARKER: 2022_x_jing_ieee_6560
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Jing, X., Cheng, X., Yan, Z., Li, X.
 TITLE: Deceiving Learning-based Sketches to Cause Inaccurate Frequency Estimation
 YEAR: 2022-12
@@ -70905,7 +70906,7 @@ GEOLOC: Xi’an, CN
 URL: https://ieeexplore.ieee.org/abstract/document/10063633/
 ---
 MARKER: 2022_c_chen_ieee_7233
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Chen, C., Nagel, L., Cui, L., Tso, FP.
 TITLE: "B-scale: Bottleneck-aware VNF scaling and flow routing in edge clouds"
 YEAR: '2022'
@@ -70915,7 +70916,7 @@ GEOLOC: Loughborough, GB
 URL: https://ieeexplore.ieee.org/abstract/document/9912772/
 ---
 MARKER: 2022_a_kumari_ieee_1773
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Kumari, A., Sairam, AS.
 TITLE: "LALB: An SDN Architecture for Dynamic Load Balancing"
 YEAR: 2022-12
@@ -70925,7 +70926,7 @@ GEOLOC: Patna, IN
 URL: https://ieeexplore.ieee.org/abstract/document/10227721/
 ---
 MARKER: 2022_k_muthulakshmi_elsevier_6153
-TYPE: in_journal
+TYPE: article
 AUTHOR: Muthulakshmi, K., Manimekalai, MAP., Padmavathy, C.
 TITLE: Deep learning based Self-Sustained Personal Network
 SERIAL: Procedia Computer Science
@@ -70936,7 +70937,7 @@ GEOLOC: Coimbatore, IN
 URL: https://www.sciencedirect.com/science/article/pii/S1877050922021597
 ---
 MARKER: 2022_j_ye_acm_8595
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Ye, J., Li, L., Zhang, W., Chen, G., Shan, Y., Li, Y., Li, W., Huang, J.
 TITLE: "UA-Sketch: an accurate approach to detect heavy flow based on uninterrupted arrival"
 YEAR: 2022-08
@@ -70946,7 +70947,7 @@ GEOLOC: Nanning, CN
 URL: https://dl.acm.org/doi/abs/10.1145/3545008.3545017
 ---
 MARKER: 2022_j_zirngibl_acm_1857
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zirngibl, J., Steger, L., Sattler, P., Gasser, O., Carle, G.
 TITLE: Rusty clusters? Dusting an IPv6 research foundation
 YEAR: 2022-10
@@ -70976,7 +70977,7 @@ GEOLOC: Nasiriyah, IQ
 URL: https://www.researchgate.net/profile/Khaldun-Arif/publication/357780527_DDoS_attack_detection_and_prevention_system_using_packet_analysis_and_machine_learning_algorithms_in_Cloud_Computing/links/63712f6c431b1f530096453f/DDoS-attack-detection-and-prevention-system-using-packet-analysis-and-machine-learning-algorithms-in-Cloud-Computing.pdf?origin=journalDetail&_tp=eyJwYWdlIjoiam91cm5hbERldGFpbCJ9
 ---
 MARKER: 2017_awsnj_al-zarqawee_research_gate_2064
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: AL-ZARQAWEE, AWSNJ.
 TITLE: A MODEL OF PREVENTING DDOS ATTACK USING IN-HYPERVISOR HOST-BASED IDPS
 PUBLISH: University Malaysia Pahang
@@ -70986,7 +70987,7 @@ GEOLOC: Pekan, MY
 URL: https://www.researchgate.net/profile/Aws-Jaber/publication/368307867_A_MODEL_OF_PREVENTING_DDOS_ATTACK_USING_IN-HYPERVISOR_HOST-_BASED_IDPS/links/63e2148df8cf684fe9748fc8/A-MODEL-OF-PREVENTING-DDOS-ATTACK-USING-IN-HYPERVISOR-HOST-BASED-IDPS.pdf
 ---
 MARKER: 2023_j_lu_springer_8378
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Lu, J., Chen, H., Zhang, Z.
 TITLE: "MCSketch: An Accurate Sketch for Heavy Flow Detection and Heavy Flow Frequency Estimation"
 CTITLE: Springer
@@ -70997,7 +70998,7 @@ GEOLOC: Zhengzhou, CN
 URL: https://link.springer.com/chapter/10.1007/978-3-031-25158-0_2
 ---
 MARKER: 2022_p_szary_ieee_9552
-TYPE: in_journal
+TYPE: article
 AUTHOR: Szary, P., Mazurczyk, W., Wendzel, S., Caviglione, L.
 TITLE: Analysis of reversible network covert channels
 SERIAL: IEEE Access
@@ -71008,7 +71009,7 @@ GEOLOC: Warsaw, PL
 URL: https://ieeexplore.ieee.org/abstract/document/9758688/
 ---
 MARKER: 2021_je_soto_ieee_8439
-TYPE: in_journal
+TYPE: article
 AUTHOR: Soto, JE., Ubisse, P., Fernández, Y., Hernández, C., Figueroa, M.
 TITLE: A high-throughput hardware accelerator for network entropy estimation using sketches
 SERIAL: IEEE Access
@@ -71019,7 +71020,7 @@ GEOLOC: Concepcion, CL
 URL: https://ieeexplore.ieee.org/abstract/document/9452148/
 ---
 MARKER: 2021_x_jing_ieee_7322
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jing, X., Yan, Z., Han, H., Pedrycz, W.
 TITLE: "ExtendedSketch: Fusing network traffic for super host identification with a memory efficient sketch"
 SERIAL: IEEE Transactions on Dependable and Secure Computing
@@ -71030,7 +71031,7 @@ GEOLOC: Xi’an, CN
 URL: https://ieeexplore.ieee.org/abstract/document/9534710/
 ---
 MARKER: 2021_x_jing_ieee_7797
-TYPE: in_journal
+TYPE: article
 AUTHOR: Jing, X., Han, H., Yan, Z., Pedrycz, W.
 TITLE: "SuperSketch: A multi-dimensional reversible data structure for super host identification"
 SERIAL: IEEE Transactions on Dependable and Secure Computing
@@ -71041,7 +71042,7 @@ GEOLOC: Xi’an, CN
 URL: https://ieeexplore.ieee.org/abstract/document/9399828/
 ---
 MARKER: 2021_aa_bolaji_purdue_9377
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Bolaji, AA.
 TITLE: Community Detection of Anomaly in Large-Scale Network Dissertation-Adefolarin Bolaji. pdf
 PUBLISH: Purdue University
@@ -71051,7 +71052,7 @@ GEOLOC: West Lafayette, IN, US
 URL: https://hammer.purdue.edu/articles/thesis/Community_Detection_of_Anomaly_in_Large-Scale_Network_Dissertation_-_Adefolarin_Bolaji_pdf/14512083
 ---
 MARKER: 2021_f_cangialosi_acm_3952
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Cangialosi, F., Narayan, A., Goyal, P., Mittal, R., Alizadeh, M., Balakrishnan, H.
 TITLE: Site-to-site internet traffic control
 YEAR: 2021-04
@@ -71061,7 +71062,7 @@ GEOLOC: Cambridge, MA, US
 URL: https://dl.acm.org/doi/abs/10.1145/3447786.3456260
 ---
 MARKER: 2021_d_erhan_bounedu_7791
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Erhan, D.
 TITLE: DDoS attack detection using signal processing and statistical approaches
 PUBLISH: Bogazici University
@@ -71071,7 +71072,7 @@ GEOLOC: Istanbul, TR
 URL: http://193.140.201.98/handle/123456789/13162
 ---
 MARKER: 2021_y_feng_tamu_1972
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Feng, Y.
 TITLE: Multiscale energy network tomography and smartNIC-Accelerated In-band Network telemetry for network internal state monitoring
 PUBLISH: Texas A&M University
@@ -71081,7 +71082,7 @@ GEOLOC: College Station, TX, US
 URL: https://oaktrust.library.tamu.edu/handle/1969.1/195219
 ---
 MARKER: 2021_j_singh_kuwaitjour_9375
-TYPE: in_journal
+TYPE: article
 AUTHOR: Singh, J., Jyoti, N., Behal, S.
 TITLE: "On the use of information theory metrics for detecting DDoS attacks and flash events: an empirical analysis, comparison, and future directions."
 SERIAL: Kuwait Journal of Science
@@ -71112,7 +71113,7 @@ GEOLOC: Hong Kong, CN
 URL: https://patents.google.com/patent/US20210243281A1/en
 ---
 MARKER: 2022_t_albakour_acm_9016
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Albakour, T., Gasser, O., Beverly, R., Smaragdakis, G.
 TITLE: "Third time's not a charm: exploiting SNMPv3 for router fingerprinting"
 YEAR: 2022-11
@@ -71122,7 +71123,7 @@ GEOLOC: Berlin, DE
 URL: https://dl.acm.org/doi/abs/10.1145/3487552.3487848
 ---
 MARKER: 2021_d_ding_amsdottorato_3368
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Ding, D.
 TITLE: Design and Development of Network Monitoring Strategies in P4-Enabled Programmable Switches
 PUBLISH: University of Bologna
@@ -71132,7 +71133,7 @@ GEOLOC: Bologna, IT
 URL: http://amsdottorato.unibo.it/id/eprint/9691
 ---
 MARKER: 2021_rf_fouladi_bo˘gazi¸ci_2517
-TYPE: PhD thesis
+TYPE: phdthesis
 AUTHOR: Fouladi, RF.
 TITLE: Novel time-series based DDOS attack detection schemes for traditional networks and software defined networks
 PUBLISH: Bogazici University
@@ -71142,7 +71143,7 @@ GEOLOC: Edinburgh, GB
 URL: http://193.140.201.98/handle/123456789/13164
 ---
 MARKER: 2024_b_franz_ieee_2517
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Franz, B.; Marco, L.; Markus, A.; Fabiana, L.; Thomas, W.; Andreas, H.
 TITLE: "ecoNIC: Saving Energy Through SmartNIC-Based Load Balancing of Mixed-Critical Ethernet Traffic"
 YEAR: 2024-08
@@ -71162,7 +71163,7 @@ GEOLOC: Stanford, CA, US
 URL: https://reproducingnetworkresearch.wordpress.com/2024/06/08/cs244-24-replicating-caching-with-delayed-hits/
 ---
 MARKER: 2022_d_yamba_ieee_2517
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yamba, D.; Tounwendyam, O.; Oumarou, S.
 TITLE: Measures To Enhance The Characterization Of Internet Exchange Points
 YEAR: 2022-11
@@ -71171,7 +71172,7 @@ TOPKEY: peeringdb, topology-as-rank
 GEOLOC: Ouagadougou, BF
 ---
 MARKER: 2024_t_nabi_acm_4812
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Syed Nabi, T., Wen, Z., Ritter, B., Hasan, S.
 TITLE: "Red is Sus: Automated Identification of Low-Quality Service Availability Claims in the US National Broadband Map"
 YEAR: 2024-11
@@ -71181,7 +71182,7 @@ GEOLOC: Blacksburg, VA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688441
 ---
 MARKER: 2024_l_salamatian_acm_6902
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Salamatian, L., Ardi, C., Giotsas, V., Calder, M., Katz-Bassett, E., Arnold, T.
 TITLE: "What's in the Dataset? Unboxing the APNIC per AS User Population Dataset"
 YEAR: 2024-11
@@ -71191,7 +71192,7 @@ GEOLOC: New York, NY, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688411
 ---
 MARKER: 2024_r_fontugne_acm_6236
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Fontugne, R., Tashiro, M., Sommese, R., Jonker, M., Bischof, Z. S., Aben, E.
 TITLE: "The Wisdom of the Measurement Crowd: Building the Internet Yellow Pages a Knowledge Graph for the Internet"
 YEAR: 2024-11
@@ -71201,7 +71202,7 @@ GEOLOC: Tokyo, JP
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688444
 ---
 MARKER: 2024_y_liu_acm_6637
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Liu, Y., Wu, T., Wang, J. H., Wang, J., Zhuang, S.
 TITLE: "Collecting Self-reported Semantics of BGP Communities and Investigating Their Consistency with Real-world Usage"
 YEAR: 2024-11
@@ -71211,7 +71212,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688414
 ---
 MARKER: 2024_l_salamatian_acm_9250
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Salamatian, L., Vermeulen, K., Cunha, I., Giotsas, V., Katz-Bassett, E.
 TITLE: "metAScritic: Reframing AS-Level Topology Discovery as a Recommendation System"
 YEAR: 2024-11
@@ -71221,7 +71222,7 @@ GEOLOC: New York, NY, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688429
 ---
 MARKER: 2024_s_he_acm_8294
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: He, S., Cunha, I., Katz-Bassett, E.
 TITLE: "RPSLyzer: Characterization and Verification of Policies in Internet Routing Registries"
 YEAR: 2024-11
@@ -71231,7 +71232,7 @@ GEOLOC: Los Angeles, CA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689018
 ---
 MARKER: 2024_g_williams_acm_3029
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Williams, G., Pearce, P.
 TITLE: "Seeds of Scanning: Exploring the Effects of Datasets, Methods, and Metrics on IPv6 Internet Scanning"
 YEAR: 2024-11
@@ -71241,7 +71242,7 @@ GEOLOC: Atlanta, GA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688449
 ---
 MARKER: 2024_d_sun_acm_9847
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Sun, D., Chen, J. Q., Gong, C., Wang, T., Li, Z.
 TITLE: "NetDPSyn: Synthesizing Network Traces under Differential Privacy"
 YEAR: 2024-11
@@ -71251,7 +71252,7 @@ GEOLOC: Irvine, CA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689011
 ---
 MARKER: 2024_s_yu_acm_2824
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yu, S., Zhuang, S., Yu, T., An, C., Wang, J.
 TITLE: "Rumors Stop with the Wise: Unveiling Inbound SAV Deployment through Spoofed ICMP Messages"
 YEAR: 2024-11
@@ -71261,7 +71262,7 @@ GEOLOC: Beijing, CN
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3688417
 ---
 MARKER: 2024_m_srivastava_acm_8025
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Srivastava, M., Hung, S., Namkung, H., Lin, K. C., Liu, Z., Sekar, V.
 TITLE: "Raising the Level of Abstraction for Sketch-Based Network Telemetry with SketchPlan"
 YEAR: 2024-11
@@ -71271,7 +71272,7 @@ GEOLOC: Pennsylvania, PA, US
 URL: https://dl.acm.org/doi/pdf/10.1145/3646547.3689016
 ---
 MARKER: 2024_liu_z_springer_5425
-TYPE: in_journal
+TYPE: article
 AUTHOR: Liu, Z., Jia, X., Li, B.
 TITLE: E-healthcare application cyber security analysis using quantum machine learning in malicious user detection
 YEAR: 2024-01
@@ -71283,7 +71284,7 @@ GEOLOC: Liaoning, CN
 TOPKEY: passive-generic, ddos-2007
 ---
 MARKER: 2024_silva_r_springer_1316
-TYPE: in_journal
+TYPE: article
 AUTHOR: Silva, R., de Assis, F., Macedo, E., de Moraes, L.
 TITLE: Inferring the confidence level of BGP-based distributed intrusion detection systems alarms
 YEAR: 2024-06
@@ -71305,7 +71306,7 @@ TOPKEY: telescope-generic
 PUBLISH: University of Twente
 ---
 MARKER: 2024_zhuravel_i_ieee_2641
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zhuravel, I., Semenyuk, S.
 TITLE: Stochastic Models for Computer Malware Propagation
 YEAR: 2024-10
@@ -71315,7 +71316,7 @@ GEOLOC: Lviv, UA
 TOPKEY: code-red-worm
 ---
 MARKER: 2024_hiesgen_r_ieee_6369
-TYPE: in_journal
+TYPE: article
 AUTHOR: Hiesgen, R., Nawrocki, M., Schmidt, T., Wählisch, M.
 TITLE: "The Log4j Incident: A Comprehensive Measurement Study of a Critical Vulnerability"
 YEAR: 2024-12
@@ -71326,7 +71327,7 @@ GEOLOC: Hamburg, DE
 TOPKEY: telescope-generic
 ---
 MARKER: 2024_tieby_n_ieee_4776
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Tieby, N., Khoury, J., Bou-Harb, E.
 TITLE: "Characterizing and analyzing leo satellite cyber landscape: A starlink case study"
 YEAR: 2024-06
@@ -71336,7 +71337,7 @@ GEOLOC: San Antonio, TX, US
 TOPKEY: bgpstream
 ---
 MARKER: 2024_zou_s_ieee_1106
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Zou, S., Shi, B., Zhang, Z., Luo, G.
 TITLE: "MuSA: Multi-Sketch Accelerator with Hybrid Parallelism and Coalesced Memory Organization"
 YEAR: 2024-11
@@ -71346,7 +71347,7 @@ GEOLOC: Beijing, CN
 TOPKEY: telescope-generic
 ---
 MARKER: 2024_yazdani_r_ieee_5984
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Yazdani, R., Resing, M., Sperotto, A.
 TITLE: "Glossy Mirrors: On the Role of Open Resolvers in Reflection and Amplification DDoS Attacks"
 YEAR: 2024-10
@@ -71356,7 +71357,7 @@ GEOLOC: Enschede, NL
 TOPKEY: telescope-generic
 ---
 MARKER: 2024_nair_m_ieee_1012
-TYPE: in_proceedings
+TYPE: inproceedings
 AUTHOR: Nair, M., Ankayarkanni, B.
 TITLE: "Enhancing Cloud Security in DDoS: A Holistic Approach Leveraging Machine Learning Techniques"
 YEAR: 2024-08
@@ -71366,7 +71367,7 @@ GEOLOC: Chennai, IN
 TOPKEY: code-red-worm
 ---
 MARKER: 2024_silva_r_ieee_8349
-TYPE: in_journal
+TYPE: article
 AUTHOR: Silva, R., Moraes, L.
 TITLE: GonoGo-Assessing the Confidence Level of Distribute Intrusion Detection Systems Alarms Based on BGP
 YEAR: 2024-00
@@ -71376,7 +71377,7 @@ GEOLOC: Rio de Janeiro, BR
 TOPKEY: topology-as-rank
 ---
 MARKER: 2023_zuppelli_m_unige_9247
-TYPE: PhD_thesis
+TYPE: phdthesis
 AUTHOR: Zuppelli, M.
 TITLE: Detection and Mitigation of Steganographic Malware
 YEAR: 2023-02
@@ -71385,7 +71386,7 @@ GEOLOC: Genoa, IT
 TOPKEY: passive-generic
 ---
 MARKER: 2023_nawrocki_m_fu_berlin_7256
-TYPE: PhD_thesis
+TYPE: phdthesis
 AUTHOR: Nawrocki, M., Jonker, M., Schmidt, T., Wählisch, M.
 TITLE: "DDoS Attacks: Coverage, Mitigation, and Prevention"
 YEAR: 2023-00
@@ -71403,7 +71404,7 @@ GEOLOC: University Park, PA, US
 TOPKEY: routeviews-prefix2as
 ---
 MARKER: 2024_prajapati_r_psu_9544
-TYPE: PhD_thesis
+TYPE: phdthesis
 AUTHOR: Prajapati, R.
 TITLE: "LEVERAGING LARGE DARKNETS FOR ACTIONABLE THREAT INTELLIGENCE: AN ARTIFICIAL INTELLIGENCE-DRIVEN APPROACH"
 YEAR: 2024-12
@@ -71432,7 +71433,7 @@ TOPKEY: telescope-patch-tuesday
 PUBLISH: arxiv.org
 ---
 MARKER: 2024_sarieddine_k_ieee_3296
-TYPE: in_journal
+TYPE: article
 AUTHOR: Sarieddine, K., Sayed, M., Assi, C., Atallah, R., Torabi, S., Khoury, J., Pour, M., Bou-Harb, E.
 TITLE: EV Charging Infrastructure Discovery to Contextualize its Deployment Security"
 YEAR: 2024-02
@@ -71453,8 +71454,8 @@ TOPKEY: ixps
 GEOLOC: Cambridge, MA, US
 ---
 MARKER: 2024_gigis_p_acm
-TYPE: in_proceedings
-AUTHOR: Gigis, P.; Handley M.; Vissicchio S.
+TYPE: inproceedings
+AUTHOR: Gigis, P.; Handley, M.; Vissicchio, S.
 TITLE: Bad Packets Come Back, Worse Ones Don't
 PUBLISH: ACM
 CTITLE: "ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference"
@@ -71462,3 +71463,35 @@ YEAR: 2024-08
 URL: https://doi.org/10.1145/3651890.3672259
 TOPKEY: passive-generic
 GEOLOC: London, GB
+---
+MARKER: 2025_pourdamghani_a_drops
+TYPE: inproceedings
+AUTHOR: Pourdamghani, A.; Avin, C.; Sama, R.; Shiran, M.; Schmid, S.
+TITLE: 'Hash & Adjust: Competitive Demand-Aware Consistent Hashing'
+PUBLISH: DROPS
+CTITLE: International Conference on Principles of Distributed Systems (OPODIS)
+YEAR: 2025-01
+URL: https://doi.org/10.4230/LIPIcs.OPODIS.2024.24
+TOPKEY: passive-2016, passive-2019
+GEOLOC: Berlin, DE
+---
+MARKER: 2025_singh_h_uofr
+TYPE: phdthesis
+AUTHOR: Singh, H.
+TITLE: A Robust Intrusion Detection System Utilizing Uncertain Reasoning Techniques in Artificial Intelligence
+PUBLISH: University of Regina
+YEAR: 2024-05
+URL: https://ourspace.uregina.ca/items/9a0572f9-c42e-48f3-8b47-3f9bca2564a6
+TOPKEY: ddos-2007
+GEOLOC: Regina, CA
+---
+MARKER: 2024_pourdamghani_a_drops
+TYPE: inproceedings
+AUTHOR: Singh, H.; Louafi, H.; Yao, Y.
+TITLE: An Uncertain Reasoning-Based Intrusion Detection System for DoS/DDoS Detection
+PUBLISH: SciTePress
+CTITLE: 20th International Conference on Security and Cryptography (SECRYPT)
+YEAR: 2024-07
+URL: 10.5220/0012794400003767
+TOPKEY: ddos-2007
+GEOLOC: Regina, CA
