@@ -23,6 +23,7 @@ MARKER: 2023_kunze_i_acm
 TYPE: online
 AUTHOR: Kunze, I; Sander, C; Wehrle, K
 TITLE: Does It Spin? On the Adoption and Use of QUICs Spin Bit
+CTITLE: Internet Measurement Conference (IMC)
 PUBLISH: acm
 YEAR: 2023-10
 URL: https://dl.acm.org/doi/10.1145/3618257.3624844
@@ -67260,16 +67261,6 @@ VOLUME: '8'
 SERIAL: IEEE Access
 URL: https://ieeexplore.ieee.org/abstract/document/9204965
 TOPKEY: passive-2008, passive-2009, passive-2010, passive-2011, passive-2012, passive-2013, passive-2014, passive-2015
----
-MARKER: 2023_i_kunze_acm_502301
-TYPE: inproceedings
-AUTHOR: Kunze, Ike; Sander, Constantin; Wherle, Klaus
-TITLE: Does It Spin? On the Adoption and Use of QUIC’s Spin Bit
-YEAR: 2023-10
-CTITLE: Internet Measurement Conference (IMC)
-URL: 
-  https://www.comsys.rwth-aachen.de/fileadmin/papers/2023/2023-kunze-spin-bit-in-the-wild.pdf
-TOPKEY: topology-as-organization
 ---
 MARKER: 2022_d_rahunathan__fmcad_3448323
 TYPE: inproceedings
