@@ -1938,7 +1938,12 @@ def redirects_add(filename):
                         deprecated[keys[i]] = v
 
                 if id_ in id_object:
-                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
+                    text_zz = 'duplicate dne'
+                    if hasattr(id_object, id_) and hasattr(id_object[id_], "filename"):
+                        text_zz = id_object[id_]["filename"] 
+                    elif hasattr(id_object, id_):
+                        text_zz = id_object[id_]
+                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+text_zz)
                 else:
                     values = id_.split(":")
                     if len(values) == 2:
