@@ -597,3 +597,6 @@ media:2001_rssac_0112, presentation:2001_rssac_0112, , true
 dataset:routeviews-ipv4-prefix2as, dataset:routeviews_prefix2as, , true
 dataset:routeviews-ipv6-prefix2as, dataset:routeviews_prefix2as, , true
 dataset:spoofer_data, dataset:spoofer_public, , true
+media:2020_lvee_online_edition_ithena, presentation:2020_lvee_online_edition_ithena, , true
+media:2021_yavaconf_ithena, presentation:2021_yavaconf_ithena, , true
+media:2021_open_data_howfaster_net, presentation:2021_open_data_howfaster_net, , true
