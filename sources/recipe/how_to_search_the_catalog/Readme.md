@@ -46,7 +46,7 @@ A search query can be generated from a search string by splitting the string int
      |----------|--------------|
      |   types  |  comma separated list of available object types (dataset, paper, media, recipe, software) <br>  `types=dataset` <br> `types=media,recipe` | 
      |   persons | comma separated list of strings matching part of a person's names <br> `persons=john` (returns all objects associated with a person matching `john` in their name)  |  
-     |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
+     |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,presentation:2020_lvee_online_edition_ithena`  |
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03` |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
      | status | comma separated list of status types (`complete`,`ongoing`) | 
