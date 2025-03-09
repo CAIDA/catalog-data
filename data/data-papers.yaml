@@ -145,18 +145,6 @@ URL: https://www.iaeng.org/IJCS/issues_v36/issue_2/IJCS_36_2_03.pdf
 TOPKEY: topology-skitter-ipv4
 GEOLOC: Shenyang, CN
 ---
-MARKER: 2023_mohan_m_springer
-TYPE: online
-AUTHOR: Mohan, M.; Tamizhazhagan, V.; Balaji, S.
-TITLE: A Perspicacious Multi-level Defense System Against DDoS Attacks in Cloud Using
-  Information Metric and Game Theoretical Approach
-PUBLISH: springer
-YEAR: 2023-10
-DOI: https://doi.org/10.1007/s10922-023-09776-7
-URL: https://link.springer.com/article/10.1007/s10922-023-09776-7
-TOPKEY: ddos-2007, passive-2013
-GEOLOC: Chidambaram, IN
----
 MARKER: 2023_sharma_a_ieee
 TYPE: online
 AUTHOR: Sharma, A.; Rani, S.; Shah, S.; Sharma, R.; Yu, F.; Hassan, M.
@@ -10037,19 +10025,6 @@ TOPKEY: bgpstream
 GEOLOC: Princeton, NJ, US
 ABS: ''
 ---
-MARKER: 2022_e_marechal_springer_98785520
-TYPE: book
-AUTHOR: Marechal, Emeline; Merindol, Pascal; Donnet, Benoit
-TITLE: ISP Probing Reduction with ANAXIMANDER
-PUBLISH: Springer, Cham
-YEAR: 2022-03
-PAGE: 441-469
-DOI: 10.1007/978-3-030-98785-5_20
-URL: https://link.springer.com/chapter/10.1007/978-3-030-98785-5_20
-TOPKEY: topology-as-relationships, topology-as-rank
-GEOLOC: Liege, BE
-ABS: ''
----
 MARKER: 2020_y_feng_9308962
 TYPE: article
 AUTHOR: Feng, Yebo; Li, Jun; Jiao, Lei; Wu, Xintao
@@ -13380,7 +13355,7 @@ TOPKEY: passive-2016
 GEOLOC: Zhengzhou, CN
 ABS: ''
 ---
-MARKER: 2020)fukushi_n_ieee_9162303
+MARKER: 2020_fukushi_n_ieee_9162303
 TYPE: inproceedings
 AUTHOR: Fukushi, N., Chiba, D., Akiyama, M., Uchida, M.
 TITLE: A Large-scale Analysis of Cloud Service Abuse
@@ -67240,18 +67215,6 @@ URL: https://doi.org/10.1145/2339530.2339539
 TOPKEY: topology-as-relationships
 GEOLOC: Long Beach, CA, US
 ---
-MARKER: 2023_poster_continual_network_learning
-TYPE: online
-AUTHOR: Al Sadi, A.; Grasselli, C.; Melis, A.; Di Cicco, N.; Antichi, G.; Tornatore,
-  M.
-TITLE: 'Poster: Continual Network Learning'
-PUBLISH: ACM SIGCOMM '23
-PAGE: 1096–1098
-YEAR: '2023'
-URL: https://dl.acm.org/doi/pdf/10.1145/3603269.3610855
-TOPKEY: passive-2018, passive-2019
-GEOLOC: New York, NY, US
----
 MARKER: 2020_a_bayati_ieee_3026337
 TYPE: article
 AUTHOR: Bayati, Abdolkhalegh; Nguyen, Kim-Khoa; Cheriet, And Mohamed
@@ -69269,16 +69232,6 @@ TOPKEY: topology-as-relationships
 GEOLOC: Rochester, NY, US
 URL: https://dl.acm.org/doi/abs/10.1145/3579856.3592822
 ---
-MARKER: 2023_a_arouna_acm_2440
-TYPE: inproceedings
-AUTHOR: Arouna, A., Livadariu, I., Jonker, R van Rijswijk-Deij‚ M.
-TITLE: "Advancing in Reverse: A Comprehensive Characterization of IN-ADDR. ARPA Deployment"
-YEAR: 2023-12
-CTITLE: "AINTEC '23: Proceedings of the 18th Asian Internet Engineering Conference"
-TOPKEY: routeviews_prefix2as
-GEOLOC: Oslo, NO
-URL: https://dl.acm.org/doi/abs/10.1145/3630590.3630595
----
 MARKER: 2023_d_melissourgos_acm_4451
 TYPE: article
 AUTHOR: Melissourgos, D., Wang, H., Chen, S., Chen, C Ma‚ S.
@@ -71153,15 +71106,6 @@ TOPKEY: passive-2014
 GEOLOC: Stanford, CA, US
 URL: https://reproducingnetworkresearch.wordpress.com/2024/06/08/cs244-24-replicating-caching-with-delayed-hits/
 ---
-MARKER: 2022_d_yamba_ieee_2517
-TYPE: inproceedings
-AUTHOR: Yamba, D.; Tounwendyam, O.; Oumarou, S.
-TITLE: Measures To Enhance The Characterization Of Internet Exchange Points
-YEAR: 2022-11
-CTITLE: 2022 2nd International Conference on Electronic and Electrical Engineering and Intelligent System (ICE3IS)
-TOPKEY: peeringdb, topology-as-rank
-GEOLOC: Ouagadougou, BF
----
 MARKER: 2024_t_nabi_acm_4812
 TYPE: inproceedings
 AUTHOR: Syed Nabi, T., Wen, Z., Ritter, B., Hasan, S.
@@ -71486,3 +71430,29 @@ YEAR: 2024-07
 URL: 10.5220/0012794400003767
 TOPKEY: ddos-2007
 GEOLOC: Regina, CA
+---
+MARKER: 2020_smathers_k_afitedu_41902020
+TYPE: mastersthesis
+AUTHOR: Smathers, K.
+TITLE: A General Methodology To Optimize And Benchmark Edge Devices
+PUBLISH: Air Force Institute of Technology
+PAGE: 1-181
+YEAR: 2020-03
+URL: https://scholar.afit.edu/cgi/viewcontent.cgi?article=4190&context=etd
+TOPKEY: passive-stats
+GEOLOC: Greene County, OH, US
+ABS: ''
+---
+MARKER: 2020_shrishak_k_acm_3406674
+TYPE: inproceedings
+AUTHOR: Shrishak, K., Shulman, H.
+TITLE: Limiting the Power of RPKI Authorities
+CTITLE: Proceedings of the Applied Networking Research Workshop (ANRW '20)
+YEAR: 2020-07
+VOLUME: ''
+PAGE: 12-18
+DOI: 10.1145/3404868.3406674
+URL: https://dl.acm.org/doi/abs/10.1145/3404868.3406674
+TOPKEY: topology-as-relationships
+GEOLOC: Darmstadt, DE
+ABS: ''
