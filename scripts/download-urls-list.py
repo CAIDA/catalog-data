@@ -29,7 +29,7 @@ def parse_urls(input):
     return urls
 
 
-CLEANR = re.compile('<.*?>')
+CLEANR = re.compile(r'<.*?>')
 
 
 def clean_html(html):

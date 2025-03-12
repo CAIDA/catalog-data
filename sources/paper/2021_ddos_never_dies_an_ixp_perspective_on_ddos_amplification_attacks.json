@@ -1,0 +1,35 @@
+{
+    "id": "2021_ddos_never_dies_an_ixp_perspective_on_ddos_amplification_attacks",
+    "name": "DDoS Never Dies? An IXP Perspective on DDoS Amplification Attacks",
+    "datePublished": "2021.03",
+    "publisher": "PAM 2021",
+    "description": " In this paper, we identify up to 2608 DDoS amplification attacks at a single day by analyzing multiple Tbps of traffic flows at a major IXP with a rich ecosystem of different networks. We observe the prevalence of well-known amplification attack protocols (e.g., NTP, CLDAP), which should no longer exist given the established mitigation strategies. By analyzing the impact of DDoS on core Internet infrastructure, we show that DDoS can overload backbone-capacity and that filtering approaches in prior work omit 97% of the attack traffic.", 
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:kopp__daniel",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:dietzel__christoph",
+            "organizations": [
+                "DE-CIX"
+            ]
+        },
+	{
+            "person": "person:hohlfeld__oliver",
+            "organizations": [
+                "Brandenburg University of Technology"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://link.springer.com/chapter/10.1007/978-3-030-72582-2_17"
+        }
+    ]
+}

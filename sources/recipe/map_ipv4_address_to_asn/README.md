@@ -24,6 +24,10 @@
         {
             "person": "person:pathak__pooja",
             "organizations": [ "CAIDA, San Diego Supercomputer Center, University of California San Diego" ]
+        },
+        {
+            "person": "person:carisimo__esteban",
+            "organizations": [ "Northwestern University" ]
         }
     ]
 }
@@ -43,7 +47,11 @@ Detailed installation and usage instructions on the [PyIPMeta repo]( https://git
 
 # solution #
 
-The following script returns a dictionary `ip2asn` that maps ips to origin asns. 
+The code below serves as an example of how to use the IP to ASN Mapper tool to map a list of IP addresses to their respective Autonomous System Numbers (ASNs) using data from CAIDA's RouteViews prefix-to-AS snapshots. It demonstrates the integration with pandas for efficient data handling and showcases the tool's capability to perform historical analysis by utilizing a snapshot from a specific date.
+
+### Variables to Be Modified by the User:
+- **DataFrame Source**: Replace the example IP address list or the DataFrame initialization with loading your data from a CSV, JSON, or Parquet file. Use the commented code as a guide to load your data file.
+- **date = `datetime.datetime(2020, 3, 4)**: Change this to the specific date for which you want to fetch the RouteViews prefix-to-AS snapshot. Ensure the format is datetime.datetime(YYYY, MM, DD).
 
 ### Map between IPs and origin ASNs using PyIPMeta
 
@@ -169,5 +177,5 @@ For example, `ipm.lookup('192.172.226.97')` returns:
 
 
 
-Copyright (c) 2020 The Regents of the University of California
+Copyright (c) 2024 The Regents of the University of California
 All Rights Reserved

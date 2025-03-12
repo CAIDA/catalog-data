@@ -11,6 +11,7 @@ id_words.json
 category_id_depth.json
 organization_ids.json
 category_id_score.json
+ontology_id_object.json
 # generated from pubdb
 sources/*/*__pubdb.json
 sources/*/*__externallinks.json
@@ -21,8 +22,10 @@ scripts/lib/__pycache__/
 data/data_id__caida.json
 .DS_Store
 package-lock.json
-node_modules/*
-env/*
+node_modules*
+.env*
+env*
+venv*
 catalog-data-caida
 data/_catalog-dataset-summary.jsonl
 data/catalog-dataset-summary.jsonl

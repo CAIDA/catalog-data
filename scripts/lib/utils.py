@@ -120,7 +120,6 @@ def parse_markdown(filename):
     obj = None
     with open(filename) as file:
         for line in file:
-            #print (section_name, section_ender,"|",line.rstrip())
             # everything after '=== content ===' is placed inside content unprocessed
             if section_buffer is not None:
                 if section_ender == line.rstrip():
@@ -175,6 +174,7 @@ def parse_markdown(filename):
     return obj
 
 def section_process(filename, obj, ender, name, buffer):
+    name = name.rstrip()
     data = {} 
     if ";" in name:
         name_old = name

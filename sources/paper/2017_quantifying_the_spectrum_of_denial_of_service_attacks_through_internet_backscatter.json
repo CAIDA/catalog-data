@@ -1,0 +1,35 @@
+{
+    "id": "2017_quantifying_the_spectrum_of_denial_of_service_attacks_through_internet_backscatter",
+    "name": "Quantifying the Spectrum of Denial-of-Service Attacks through Internet Backscatter",
+    "datePublished": "2017.09",
+    "publisher": "ARES '17: Proceedings of the 12th International Conference on Availability, Reliability and Security",
+    "description": "In this paper, we will provide a quantification of DDoS attacks in size and duration beyond these outliers reported in the media. We find that these mega attacks do exist, but the bulk of attacks is in practice only a fraction of these frequently reported values. We further show that it is feasible to collect meaningful backscatter traces using surprisingly small telescopes, thereby enabling a broader audience to perform attack intelligence research.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:blenn__norbert",
+            "organizations": [
+                "Delft University of Technology"
+            ]
+        },
+	{
+            "person": "person:ghiette__vincent",
+            "organizations": [
+                "Delft University of Technology"
+            ]
+        },
+	{
+            "person": "person:doerr__christian",
+            "organizations": [
+                "Cardiff Univerity"
+            ]
+        }     
+    ],
+    "resources": [
+        {
+            "name": "HTML",
+            "url": "https://dl.acm.org/doi/10.1145/3098954.3098985"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "id": "2020_akamai_dns_providing_authoritative_answers_to_the_worlds_queries",
+    "name": "Akamai DNS: Providing Authoritative Answers to the World's Queries",
+    "datePublished": "2020.07",
+    "publisher": "SIGCOMM '20",
+    "description": "We present Akamai DNS, one of the largest authoritative DNS infrastructures in the world, that supports the Akamai content delivery network (CDN) as well as authoritative DNS hosting and DNS-based load balancing services for many enterprises.",
+    "tags": [],
+    "authors": [
+	{
+	    "person": "person:schomp__kyle",
+	    "organizations": [
+		"Akamai Technologies"
+	    ]
+	},
+	{
+	    "person": "person:bhardwaj__onkar",
+	    "organizations": [
+		"Akamai Technologies"
+	    ]
+	},
+	{
+	    "person": "person:kurdoglu__eymen",
+	    "organizations": [
+		"Akamai Technologies"
+	    ]
+	},
+	{
+	    "person": "person:mahuaimen__mashooq",
+	    "organizations": [
+		"Akamai Technologies"
+	    ]
+	},
+	{
+	    "person": "person:sitaraman__ramesh_k",
+	    "organizations":  [
+		"Akamai Technologies",
+		"University of Massachusetts Amherst"
+	    ]
+	}
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://groups.cs.umass.edu/ramesh/wp-content/uploads/sites/3/2020/07/sigcomm2020-final289.pdf"
+        }
+    ]
+}

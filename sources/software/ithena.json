@@ -6,23 +6,23 @@
     "links": [
         {
             "to": "dataset:opendata_howfaster_net",
-            "label": "used by"
+            "label": "usedBy"
         },
         {
             "to": "software:howfaster_net",
-            "label": "used by"
+            "label": "usedBy"
         },
         {
-            "to": "media:2021_open_data_howfaster_net",
-            "label": "used by"
+            "to": "presentation:2021_open_data_howfaster_net",
+            "label": "usedBy"
         },
         {
-            "to": "media:2020_lvee_online_edition_ithena",
-            "label": "used by"
+            "to": "presentation:2020_lvee_online_edition_ithena",
+            "label": "usedBy"
         },
         {
-            "to": "media:2021_yavaconf_ithena",
-            "label": "used by"
+            "to": "presentation:2021_yavaconf_ithena",
+            "label": "usedBy"
         }
     ],
     "tags": [

@@ -56,6 +56,7 @@ import copy
 import binascii
 
 
+
 ######################################################################
 ## Parameters
 ######################################################################
@@ -66,14 +67,16 @@ parser.add_argument('-r', '--redirects', dest='redirects_file', help='lists of r
 parser.add_argument("-i", dest="ids_file", help="ids_file", type=str)
 parser.add_argument("-c", dest="schema_category_file", help="data schema categories", type=str)
 parser.add_argument("-d", dest="schema_dataset_file", help="data schema datasets", type=str)
-parser.add_argument("-D", dest="dates_skip", help="doesn't add dates, faster", action='store_true')
+parser.add_argument("-D", dest="git_dates_skip", help="doesn't add dates, faster", action='store_true')
 parser.add_argument("-R", dest="readable_output", help="indents the output to make it readaable", action='store_true')
 args = parser.parse_args()
 
+
 # used to plural
 import nltk
-nltk.download('wordnet')
-#nltk.download('omw-1.4')
+#if not args.dates_skip:
+#    nltk.download('wordnet')
+    #nltk.download('omw-1.4')
 from nltk.stem.wordnet import WordNetLemmatizer
 Lem = WordNetLemmatizer()
 
@@ -103,22 +106,22 @@ type_ids = {}
 
 singular_plural = {}
 
-re_tag = re.compile("^tag:")
-re_only_white_space = re.compile("^\s*$")
+re_tag = re.compile(r"^tag:")
+re_only_white_space = re.compile(r"^\s*$")
 
-#re_not_word = re.compile("[\s ,\?\.\(\)\:]+")
-re_not_word = re.compile("[^a-z^A-Z^0-9]+")
-re_word = re.compile("^[a-zA-Z0-9]+$",re.IGNORECASE)
+#re_not_word = re.compile(r"[\s ,\?\.\(\)\:]+")
+re_not_word = re.compile(r"[^a-z^A-Z^0-9]+")
+re_word = re.compile(r"^[a-zA-Z0-9]+$",re.IGNORECASE)
 
-re_html = re.compile("<[^>]+>")
-re_id_illegal = re.compile("[^a-z^\d^A-Z]+")
-re_type_name = re.compile("([^\:]+):(.+)")
-re_readme_md = re.compile("^readme\.md$",re.IGNORECASE)
+re_html = re.compile(r"<[^>]+>")
+re_id_illegal = re.compile(r"[^a-z^\d^A-Z]+")
+re_type_name = re.compile(r"([^\:]+):(.+)")
+re_readme_md = re.compile(r"^readme\.md$",re.IGNORECASE)
 
-re_date_key = re.compile("^date",re.IGNORECASE)
-re_not_digit = re.compile("[^\d]+")
+re_date_key = re.compile(r"^date",re.IGNORECASE)
+re_not_digit = re.compile(r"[^\d]+")
 
-re_placeholder = re.compile("___")
+re_placeholder = re.compile(r"___")
 
 repo_url_default = "https://github.com/CAIDA/catalog-data"
 
@@ -247,6 +250,8 @@ def main():
     #######################
     seen_id = {}
 
+    print ("----")
+
     #Goes through all generated objects in source paths
     for fname in sorted(os.listdir(source_dir)):
         path = source_dir+"/"+fname
@@ -256,9 +261,13 @@ def main():
             print ("loading",path)
             type_ = fname
             for filename in sorted(os.listdir(path)):
-                if re.search("\.json$",filename,re.IGNORECASE):
+                if re.search(r"\.json$",filename,re.IGNORECASE) or re.search(r"\.md$", filename,re.IGNORECASE):
                     try:
-                        info = json.load(open(path+"/"+filename))
+                        pname = path+"/"+filename
+                        if re.search(r"\.json$",filename,re.IGNORECASE):
+                            info = json.load(open(pname))
+                        else:
+                            info = utils.parse_markdown(pname);
                         if "filename" not in info:
                             info["filename"] = path+"/"+filename
                         obj = object_add(type_,info)
@@ -286,13 +295,17 @@ def main():
         if id_ not in object_finished:
             object_finish(obj)
             object_finished.add(id_)
+            #if obj["__typename"] == "License":
+                #print (obj["id"]," ",obj["__typename"])
+            #if id_ == "license:caida_aua":
+                #print (json.dumps(obj,indent=4))
 
-    if not args.dates_skip:
-        print ("adding dates ( skipping '*___*' )")
-        for obj in list(id_object.values()):
-            object_date_add(obj)
-    else:
-        print ("skipping adding dates")
+
+    if args.git_dates_skip:
+        print ("not checking git dates")
+    print ("adding dates ( skipping '*___*' )")
+    for obj in list(id_object.values()):
+        object_date_add(args.git_dates_skip, obj)
 
     print ("removing missing ids from id_id_links")
     missing = []
@@ -316,13 +329,28 @@ def main():
     ######################
     tag_caida_data = "tag:used_caida_data"
     tag_obj = id_object[tag_caida_data] = {"__typename":"Tag", "id":"tag:used_caida_data", "name":"used CAIDA data", "filename":sys.argv[0]}
+    used_caida_data_link_labels = ["usedBy", "usedToCreate", "usedBy", "uses", "isDerivedFrom", "describedBy", "deprecates"] # link labels that will be considered as using caida data
     ids = set()
+
     for id0,id_link in id_id_link.items():
         obj0 = id_object[id0]
+        
+        # Checks that the linked object is a CAIDA dataset
         if obj0["__typename"] == "Dataset" and "tag:caida" in obj0["tags"]:
-            for id1 in id_link.keys():
+            for id1, id_link_value1 in id_link.items():
                 obj1 = id_object[id1]
-                if obj1["__typename"] != "Tag" and "tag:caida_data" not in obj1["tags"]:
+                
+                # get label of link
+                is_used_caida_data = True # boolean to track if the link should be considered as "using caida data"
+                if 'label' in id_link_value1:
+                    link_label = id_link_value1["label"]
+
+                    # based on label, decide if the tag should be added
+                    if link_label not in used_caida_data_link_labels:
+                        is_used_caida_data = False
+
+                # correctly check and then add ids that need new tag used_caida_data
+                if obj1["__typename"] != "Tag" and "tag:caida_data" not in obj1["tags"] and is_used_caida_data:
                     if "tags" not in obj1:
                         obj1["tags"] = []
                     ids.add(obj1["id"])
@@ -629,7 +657,40 @@ def id_date_load(filename):
         except ValueError as e:
             utils.error_add(filename, e.__str__())
 
-def object_date_add(obj):
+def object_date_add(git_dates_skip, obj):
+
+    # Created and modified 
+    if not git_dates_skip: 
+        ## Get github file modified dates 
+        for key in ["dateObjectCreated", "dateObjectModified"]:
+            if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
+                obj[key] = utils.date_parse(id_date[obj["id"]][key])
+            else:
+                # if the file is not a placeholder
+                if not re_placeholder.search(obj["filename"]):
+                    if key == "dateObjectCreated":
+                        cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
+                    else:
+                        cmd = "git log --format=%aD -1 -- "
+
+                    result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
+                    values = result.decode().lower().split(" ")
+                else:
+                    values = []
+                today = datetime.date.today().strftime("%Y-%m")
+                date = today
+                # if there was a date found, use as date (would not be found if placeholder)
+                if len(values) >= 4:
+                    if values[2] in mon_index:
+                        date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
+                obj[key] = date
+                if obj["id"] not in id_date:
+                    id_date[obj["id"]] = {}
+    
+    # use the date if it's already defined 
+    if "date" in obj:
+        return 
+
     today = datetime.date.today().strftime("%Y-%m")
 
     if obj["__typename"] == "Venue":
@@ -649,32 +710,6 @@ def object_date_add(obj):
                 else:       
                     obj[key] = utils.date_parse(obj[key])
             
-
-    ## Get github file modified dates 
-    for key in ["dateObjectCreated", "dateObjectModified"]:
-        if not date_lookup_force and obj["id"] in id_date and key in id_date[obj["id"]]:
-            obj[key] = utils.date_parse(id_date[obj["id"]][key])
-        else:
-            # if the file is not a placeholder
-            if not re_placeholder.search(obj["filename"]):
-                if key == "dateObjectCreated":
-                    cmd = "git log --diff-filter=A --follow --format=%aD -1 -- "
-                else:
-                    cmd = "git log --format=%aD -1 -- "
-
-                result = subprocess.check_output(cmd+" "+obj["filename"],shell=True)
-                values = result.decode().lower().split(" ")
-            else:
-                values = []
-            date = today
-            # if there was a date found, use as date (would not be found if placeholder)
-            if len(values) >= 4:
-                if values[2] in mon_index:
-                    date = utils.date_parse(values[3]+"-"+mon_index[values[2]])
-            obj[key] = date
-            if obj["id"] not in id_date:
-                id_date[obj["id"]] = {}
-    
     # change date start to dateCreated for software
     #if obj["__typename"] == "Software":
     #    if "dateCreated" not in obj and "dateModified" not in obj:
@@ -809,7 +844,7 @@ def object_add(type_, info):
             utils.error_add(info["filename"], "failed to find paper's date")
             error = True
 
-        m = re.search("^paper:(\d\d\d\d)_(.+)", info["id"])
+        m = re.search(r"^paper:(\d\d\d\d)_(.+)", info["id"])
         if m:
             date,id_short = m.groups()
             id_paper[id_short] = info
@@ -842,7 +877,7 @@ def object_add(type_, info):
     return None
 
 # Helper function 
-re_third_party = re.compile("third party",re.IGNORECASE)
+re_third_party = re.compile(r"third party",re.IGNORECASE)
 third_party_found = False
 def organization_ids_add(org, id_):
     if re_third_party.search(id_):
@@ -855,8 +890,8 @@ def organization_ids_add(org, id_):
         organization_ids[org] = set()
     organization_ids[org].add(id_)
 
-re_caida = re.compile("caida",re.IGNORECASE)
-re_caida_long = re.compile("Center for Applied Internet Data Analysis",re.IGNORECASE)
+re_caida = re.compile(r"caida",re.IGNORECASE)
+re_caida_long = re.compile(r"Center for Applied Internet Data Analysis",re.IGNORECASE)
 def object_finish(obj):
 
     ############
@@ -955,7 +990,7 @@ def object_finish(obj):
                         caida = False
                         if "organizations" in person_org:
                             for org in person_org["organizations"]:
-                                if re.search("caida", org, re.IGNORECASE):
+                                if re.search(r"caida", org, re.IGNORECASE):
                                     caida = True
                         for k in ["person","presenter"]:
                             if k in person_org:
@@ -1082,7 +1117,7 @@ def object_lookup(info):
             print ("no id or name,_typename",info)
             sys.exit()
     else:
-        if not re.search("^"+type_,info["id"]):
+        if not re.search(r"^"+type_,info["id"]):
             info["id"] = info["__typename"]+":"+info["id"]
     id_ = info["id"]
     if id_ not in id_object:
@@ -1268,8 +1303,11 @@ def recipe_process(path):
                     if not error: 
                         object_add("Recipe", info)
                 elif os.path.isfile(filename) and fname[0] != ".":
-                    extention = filename.split(".")[-1].lower()
-                    if extention in ["py","pl","txt","md"]:
+                    extension = filename.split(".")[-1].lower()
+                    """
+                    ONLY ADD FILES WITH EXTENSIONS THAT ARE SUPPORTED
+                    """
+                    if extension in ["py", "js", "mjs", "pl","txt","md"]:
                         with open(filename,"r") as fin:
                             tab_content = None
                             for line in fin:
@@ -1277,7 +1315,7 @@ def recipe_process(path):
                                     tab_content = line
                                 else:
                                     tab_content += line
-                            if extention == "md":
+                            if extension == "md":
                                 f = "md"
                             else:
                                 f = "text"
@@ -1286,17 +1324,21 @@ def recipe_process(path):
                                 "format":f,
                                 "content":tab_content
                             })
+                    else:
+                        skipped.append(filename)
+                        print("skipping", extension)
+
             if len(tabs) > 0 and info is not None:
                 if "tabs" in info:
                     info["tabs"].extend(tabs)
                 else:
                     info["tabs"] = tabs
 
-re_markdown_url = re.compile("^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
-re_html_url = re.compile("^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
-re_image_url = re.compile("^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
-re_url_absolute = re.compile("^https?:")
-re_mailto = re.compile("^mailto:")
+re_markdown_url = re.compile(r"^(.*)(\[[^\]]+\]\()([^\)]+\))([\s\S]*)", re.IGNORECASE)
+re_html_url = re.compile(r"^(.*)(<\s*a[^<]+href=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_image_url = re.compile(r"^(.*)(<\s*img[^<]+src=[\'\"])([^\'^\"]+)([\s\S]*)",re.IGNORECASE)
+re_url_absolute = re.compile(r"^https?:")
+re_mailto = re.compile(r"^mailto:")
 
 def replace_markdown_urls(assets_dir,line):
     temp = line
@@ -1327,8 +1369,8 @@ def replace_markdown_urls(assets_dir,line):
 def get_url():
     filename = ".git/config"
     if os.path.exists(filename):
-        re_remote = re.compile('^\[([^\s]+) "([^"]+)"')
-        re_url = re.compile("\s+url = ([^\s]+)")
+        re_remote = re.compile(r'^\[([^\s]+) "([^"]+)"')
+        re_url = re.compile(r"\s+url = ([^\s]+)")
         url = None
         with open(filename) as f:
             origin_found = False
@@ -1345,7 +1387,7 @@ def get_url():
                     if origin_found and m:
 
                         url = m.group(1).replace(":","/")
-                        url = re.sub('.+\@','https://', re.sub(".git$","",url ))
+                        url = re.sub(r'.+\@','https://', re.sub(".git$","",url ))
                         break
         if url is None:
             url = repo_url_default
@@ -1495,8 +1537,8 @@ def word_scoring_link(w_s0, w_s1):
         #                    word_score[word] += weight*freq 
 
 seen_value = set()
-re_not_letter = re.compile("[^a-z^A-z]+")
-re_not_empty = re.compile("[^\s]")
+re_not_letter = re.compile(r"[^a-z^A-z]+")
+re_not_empty = re.compile(r"[^\s]")
 def word_freq_get(value):
     word_freq = {}
     type_ = type(value)
@@ -1591,7 +1633,6 @@ def schema_process():
 
     for id_,obj in id_object.items():
         if False and "schema" in obj:
-            print (obj["id"],"schema  ------------------------")
             for i, table in enumerate(obj["schema"]):
                 table_name = f"table[{i}]"
 
@@ -1831,7 +1872,7 @@ def id_lookup(id_):
     return None
 
 def id_yearless(id_):
-    m = re.search("(.+):(\d\d\d\d)_(.+)",id_)
+    m = re.search(r"(.+):(\d\d\d\d)_(.+)",id_)
     if m:
         type_,date,name = m.groups()
         return type_+":"+name
@@ -1873,7 +1914,7 @@ def data_load_from_summary(filename):
                 utils.error_add(filename, "no matching id for {}".format(catalog_id))
 
 def redirects_add(filename):
-    re_empty = re.compile("^\s*$")
+    re_empty = re.compile(r"^\s*$")
     with open ("data/redirects.csv") as fin:
         keys = None
         for row in csv.reader(fin, delimiter=',',quotechar='"'):
@@ -1897,7 +1938,12 @@ def redirects_add(filename):
                         deprecated[keys[i]] = v
 
                 if id_ in id_object:
-                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+id_object[id_]["filename"])
+                    text_zz = 'duplicate dne'
+                    if hasattr(id_object, id_) and hasattr(id_object[id_], "filename"):
+                        text_zz = id_object[id_]["filename"] 
+                    elif hasattr(id_object, id_):
+                        text_zz = id_object[id_]
+                    utils.error_add(filename, "deprecated "+id_+" duplicate of "+text_zz)
                 else:
                     values = id_.split(":")
                     if len(values) == 2:
@@ -1916,8 +1962,8 @@ def redirects_add(filename):
 ######################################33
 # Load Schema and Categories from file
 def schema_load_category_from_file(fname):
-    re_category_key = re.compile("category_key",re.IGNORECASE)
-    re_empty = re.compile("^\s*$")
+    re_category_key = re.compile(r"category_key",re.IGNORECASE)
+    re_empty = re.compile(r"^\s*$")
     with open(fname) as fin:
         keys = None
         category_key_index = None
@@ -1960,14 +2006,14 @@ def schema_load_category_from_file(fname):
                                 category_key = {}
                                 category["category_keys"].append(category_key)
                             if key == "properties":
-                                value = re.split("\s*;\s*", value)
+                                value = re.split(r"\s*;\s*", value)
                             category_key[key] = value
                     i += 1
         if category is not None:
             object_add("category",category)
 
 def schema_load_datasets_from_file(filename):
-    re_empty = re.compile("^\s*$")
+    re_empty = re.compile(r"^\s*$")
     with open(filename) as fin:
         keys = None
         dataset = None
@@ -2098,22 +2144,27 @@ def doi_set(obj):
 
     # If there is a doi set, fix it to the doi.org format
     if ("doi" in obj):
-        obj["doi"] = obj["doi"].strip()
-        doi_norm = "https://doi.org/"
-        # drop "dx" from domain
-        if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
-            obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
-        # normalize alphanumeric forms to full URL
-        elif ("doi:" in obj["doi"]):
-            obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
-        # determine if only the doi number is provided
-        elif (obj["doi"][:3] == "10."):
-            obj["doi"] = doi_norm + obj["doi"]
-        # normalize empty string DOIs to null
-        elif (obj["doi"] == ""):
-            obj["doi"] = None
-        elif (doi_norm not in obj["doi"]):
-            utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
+        if obj["doi"] is None:
+            utils.error_add(obj["filename"],"Has a None DOI")
+            del obj["doi"]
+        else:
+            # print (obj["doi"])
+            obj["doi"] = obj["doi"].strip()
+            doi_norm = "https://doi.org/"
+            # drop "dx" from domain
+            if ("dx.doi.org" in obj["doi"] or "www.doi.org" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].split("doi.org/")[1]
+            # normalize alphanumeric forms to full URL
+            elif ("doi:" in obj["doi"]):
+                obj["doi"] = doi_norm + obj["doi"].replace("doi:", "")
+            # determine if only the doi number is provided
+            elif (obj["doi"][:3] == "10."):
+                obj["doi"] = doi_norm + obj["doi"]
+            # normalize empty string DOIs to null
+            elif (obj["doi"] == ""):
+                obj["doi"] = None
+            elif (doi_norm not in obj["doi"]):
+                utils.warning_add(obj["filename"], "doi not normalized to the url format with " + doi_norm + ': '+ obj['doi'])
 
 ## Helper function pulls out first access tag and creates access type
 def access_type_from_tag_set(obj):

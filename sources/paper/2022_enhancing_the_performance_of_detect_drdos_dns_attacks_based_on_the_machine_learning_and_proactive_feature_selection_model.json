@@ -1,0 +1,41 @@
+{
+    "id": "2022_enhancing_the_performance_of_detect_drdos_dns_attacks_based_on_the_machine_learning_and_proactive_feature_selection_model",
+    "name": "Enhancing the Performance of Detect DRDoS DNS Attacks Based on the Machine Learning and Proactive Feature Selection (PFS) Model",
+    "datePublished": "2022.06",
+    "publisher": "IAENG International Journal of Computer Science",
+    "description": ". With the advancementof attack methods, both quantitatively and qualitatively, traditional methods used to detect DNS threats, particularly DRDoS attacks, became ineffective. Therefore, in this paper, a new model called proactive feature selection model PFS for early detection of DRDoS attacks based on DNS responses.",
+    "tags": [],
+    "links": [],
+    "authors": [
+        {
+            "person": "person:nuiaa__riyadh_rahef",
+            "organizations": [
+                "Wasit University"
+            ]
+        },
+	{
+            "person": "person:manickam__selvakumar",
+            "organizations": [
+                "Universiti Sains Malaysia"
+            ]
+        },
+	{
+            "person": "person:alsaeedi__ali_hakem",
+            "organizations": [
+                "Iraqi Comission for Computers & Informatics"
+            ]
+        },
+	{
+	    "person": "person:alomari__esraa_saleh",
+	    "organizations": [
+		"Wasit University"
+	    ]
+	}     
+    ],
+    "resources": [
+        {
+            "name": "PDF",
+            "url": "https://www.iaeng.org/IJCS/issues_v49/issue_2/IJCS_49_2_26.pdf"
+        }
+    ]
+}

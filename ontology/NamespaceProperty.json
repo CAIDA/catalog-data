@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "csvw": "https://www.w3.org/ns/csvw#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "caida": "http://catalog.caida.org/ontology/"
+  },
+  "@graph": [
+    {
+      "@id": "caida:classUrl",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:NamespaceProperty"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "caida:propertyUrl",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "caida:NamespaceProperty"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:URL"
+      }
+    },
+    {
+      "@id": "caida:NamespaceProperty",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Namespace's class and property",
+      "rdfs:label": "PropertyMap",
+      "rdfs:subClassOf": {
+        "@id": "schema:Intangible"
+      },
+      "schema:isPartOf": {
+        "@id": "https://catalog.caida.org/onotology"
+      }
+    }
+  ]
+}

@@ -3,6 +3,9 @@
   passive-stats:
     predict: False
     public : True
+  passive-100g-stats:
+    predict: False
+    public : True
   passive-realtime:
     predict: False
     public : True
@@ -43,6 +46,9 @@
     predict: False
     public : False
   passive-2016:
+    predict: False
+    public : False
+  passive-2017:
     predict: False
     public : False
   passive-2018:
@@ -173,6 +179,12 @@
   telescope-rsdos-daily:
     predict: True
     public : False
+  telescope-darknet-scanners:
+    predict: True
+    public: True
+  telescope-ddos-metadata:
+    predict: True
+    public: True
   backscatter-generic:
     predict: True
     public : False
@@ -191,20 +203,17 @@
   backscatter-2008:
     predict: True
     public : False
-  witty worm:
+  witty-worm:
     predict: True
     public : False
-  code-red worm:
+  code-red-worm:
     predict: True
     public : True
   rsdos-targets:
     predict: False
     public : False
 "Denial of Service Attacks -> ddos":
-  ddos-generic:
-    predict: False
-    public : False
-  ddos-20070804:
+  ddos-2007:
     predict: False
     public : False
 "Other Datasets -> other":
@@ -213,12 +222,21 @@
     public : False
   dns-root-gtld-rtt:
     predict: False
-    public : TrueTrue
+    public : True
   peeringdb:
     predict: False
     public : True
+  ixps:
+    predict: False
+    public : True
+  spoofer:
+    predict: False
+    public : True
+  ddec:
+    predict: False
+    public : True
 "Paper Data and Tools -> paper":
-  complex_as_relationships:
+  complex-as-relationships:
     predict: False
     public : True
   2006-pam-as-taxonomy:
@@ -233,6 +251,114 @@
   ioda:
     predict: False
     public : True
+---
+# "Anonymized Internet Traces -> traces"
+passive-stats: passive_metadata
+passive-100g-stats: passive_100g_metadata
+passive-realtime: passive_realtime
+passive-generic: passive_metadata
+passive-ipv6day-and-ipv6launch: passive_ipv6launch_pcap
+passive-oc48: passive_oc48_pcap
+passive-2007: passive_2007_pcap
+passive-2008: passive_2008_pcap
+passive-2009: passive_2009_pcap
+passive-2010: passive_2010_pcap
+passive-2011: passive_2011_pcap
+passive-2012: passive_2012_pcap
+passive-2013: passive_2013_pcap
+passive-2014: passive_2014_pcap
+passive-2015: passive_2015_pcap
+passive-2016: passive_2016_pcap
+passive-2017: passive_2017_pcap
+passive-2018: passive_2018_pcap
+passive-2019: passive_2019_pcap
+
+# "Topology with Archipelago -> ark"
+topology-generic: 'software:archipelago'
+topology-ark-ipv4-traceroute: ark_ipv4_traceroute
+topology-ark-ipv6-traceroute: ark_ipv6_traceroute
+topology-ark-itdk: ark_itdk
+topology-itdk: ark_itdk
+topology-ark-ipv4-prefix-probing: ark_ipv4_prefix_probing
+topology-ark-ipv4-aslinks: ark_ipv4_aslinks
+topology-ark-ipv6-aslinks: ark_ipv6_aslinks
+topology-ark-ipv6-routed48: ark_ipv6_traceroute
+topology-ark-ipv6_traceroute: ark_ipv6_traceroute
+topology-ark-ipv4-dns-names: ark_ipv4_dns_names
+topology-ark-ipv6-dns-names: ark_ipv6_dns_names
+topology-ark-tod: 'software:vela'
+topology-ark-activity: 'software:archipelago'
+topology-ark-vela: 'software:vela'
+
+# "Topology with Skitter -> skitter"
+topology-skitter-ipv4: skitter_itdk
+topology-skitter-itdk: skitter_itdk
+topology-skitter-aslinks: skitter_aslinks
+topology-skitter-rlinks: skitter_traceroute
+skitter-router-adjacencies: skitter_router_adjacencies
+
+# "Topology with BGP -> bgp"
+topology-as-relationships: as_relationships_serial_1
+topology-as-relationships-geo: as_relationships_geo
+topology-as-classification: as_classification
+topology-as-organization: as_organizations
+as-organizations: as_organizations
+topology-as-rank: as_rank
+routeviews-prefix2as: routeviews_prefix2as
+topology-dns-lookups: complete_dns_lookups
+bgp-communities: bgp_communities
+
+
+# "UCSD Network Telescope -> telescope"
+telescope-generic: telescope_live
+telescope-2days-2008: telescope_anon_twodays
+telescope-3days-conficker: telescope_anon_conficker
+telescope-sipscan: telescope_sipscan
+telescope-patch-tuesday: corsaro_patch_tuesday
+telescope-educational: telescope_educational
+telescope-real-time: telescope_live
+telescope-flowtuple: corsaro_flowtuple
+telescope-rsdos-daily: telescope_daily_rsdos
+telescope-darknet-scanners: telescope_darknet_scanners
+telescope-ddos-metadata: telescope_ddos
+backscatter-generic: telescope_backscatter
+backscatter-tocs: backscatter_tocs_originals
+backscatter-2004-2005: telescope_backscatter
+backscatter-2006: telescope_backscatter
+backscatter-2007: telescope_backscatter
+backscatter-2008: telescope_backscatter
+backscatter-2009: telescope_backscatter
+witty-worm: telescope_witty_worm
+code-red-worm: telescope_codered_worm
+
+# "Denial of Service Attacks -> ddos"
+ddos-2007: ddos-attack-2007
+
+# "Other Datasets -> other"
+dns-rtt-generic: 'software:dnsstat'
+dns-root-gtld-rtt: dns_root_gtld_rtt
+peeringdb: peeringdb_archive
+ixps: ixps
+spoofer: spoofer_public
+ddec: ddec
+
+# "Paper Data and Tools -> paper"
+complex-as-relationships: 'paper:2014_inferring_complex_as_relationships'
+ditl : 'paper:2006_ditl_proposal'
+2014-imc-complex : 2014_imc_complex
+2006-pam-as-taxonomy: 2006_pam_as_taxonomy
+2016-periscope: 'software:periscope'
+midar: 'software:midar'
+bgpstream: 'software:bgpstream'
+scamper: 'software:scamper'
+iffinder: 'software:iffinder'
+mapnet: 'software:mapnet'
+coralreef: 'software:coralreef'
+datcat: 'software:datcat'
+dolphin: 'presentation:2014_dolphin_dhs'
+netgeo: 'software:netgeo'
+ioda: 'software:ioda'
+
 #ignore:
 #	asfinder
 #	coralreef

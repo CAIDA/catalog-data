@@ -46,7 +46,7 @@ A search query can be generated from a search string by splitting the string int
      |----------|--------------|
      |   types  |  comma separated list of available object types (dataset, paper, media, recipe, software) <br>  `types=dataset` <br> `types=media,recipe` | 
      |   persons | comma separated list of strings matching part of a person's names <br> `persons=john` (returns all objects associated with a person matching `john` in their name)  |  
-     |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,media:2020_lvee_online_edition_ithena`  |
+     |   ids     | comma separated list of object ids <br> `ids=paper:2021_wie2020_report,presentation:2020_lvee_online_edition_ithena`  |
      | dates | comma separated list of dates which supports year or year-mon <br> `dates=2014,2015` <br> `dates=2015-03` |
      | access | comma separated list of access links types (`public`, `restricted`, `unavailable`, `commercial`) |
      | status | comma separated list of status types (`complete`,`ongoing`) | 
@@ -82,7 +82,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 |  search string | explanation | 
 |----------------|-------------|
 | [links=tag:asn](https://catalog.caida.org/search?query=links=tag:asn) | search for objects that have the tag `asn`|
-| [!links=tag:caida](https://catalog.caida.org/search?query=!%20links=tag:caida) | search for objects that **do not** have the tag `caida`|
+| [!links=tag:caida](https://catalog.caida.org/search?query=!links=tag:caida) | search for objects that **do not** have the tag `caida`|
 | [links=tag:topology ark](https://catalog.caida.org/search?query=links=tag:topology%20ark) | search for objects that are tagged topology and have the word `ark` |
 | [bgpstream](https://catalog.caida.org/search?query=bgpstream) | search for objects with the word `bgpstream`  | 
 | [categories=ip.packet](https://catalog.caida.org/search?query=categories%3Dip.packet) | search for objects with the category `ip.packet` | 
@@ -98,6 +98,7 @@ Remember, the whitespace-delimited tokens are processed as a boolean "and" opera
 | [types=paper routing !links=tag:caida](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida) | search for papers with the word `routing` without the tag `caida`|
 | [types=paper routing !links=tag:caida dates=2020,2021](https://catalog.caida.org/search?query=types=paper%20routing%20!links=tag:caida%20dates=2020,2021) | search for papers with the word `routing` without the tag `caida` written in 2020 or 2021|
 | [types=paper persons=claffy](https://catalog.caida.org/search?query=types=paper%20persons=claffy) | search for papers authored by people with `claffy` in their name |
+| [types=paper links=collection:archipelago links=tag:used_caida_data](https://catalog.caida.org/search?query=types%3Dpaper%20links%3Dcollection%3Aarchipelago%20links%3Dtag%3Aused_caida_data)| search for papers related to the Ark dataset collection that have the tag `used caida data`|
 | [ids=paper:2021\_wie2020\_report](https://catalog.caida.org/search?query=ids=paper:2021_wie2020_report) | search for the object with the id `paper:2021_wie2020_report` |
 | [persons=claffy](https://catalog.caida.org/search?query=persons=claffy) | search for objects associated with people with `claffy` in their name |
 | [links=person:clark\_\_david](https://catalog.caida.org/search?query=links=person:clark__david) | search for objects directly linked with the person named David Clark |
