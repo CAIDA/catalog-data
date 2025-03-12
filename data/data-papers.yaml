@@ -71456,3 +71456,644 @@ URL: https://dl.acm.org/doi/abs/10.1145/3404868.3406674
 TOPKEY: topology-as-relationships
 GEOLOC: Darmstadt, DE
 ABS: ''
+---
+MARKER: 2024_wang_s_usenix_4738
+TYPE: in_proceedings
+AUTHOR: Wang, S., Zheng, Y., Jia, X.
+TITLE: 'GraphGuard: Private Time-Constrained Pattern Detection Over Streaming Graphs in the Cloud'
+YEAR: 2024-08
+CTITLE: 33rd USENIX Security Symposium (USENIX Security 24)
+URL: https://www.usenix.org/conference/usenixsecurity24/presentation/wang-songlei
+GEOLOC: Harbin, CN
+TOPKEY: passive-2015
+---
+MARKER: 2024_azorin_r_hal_1444
+TYPE: PhD thesis
+AUTHOR: Azorin, R.
+TITLE: Traffic representations for network measurements
+YEAR: 2024-06
+URL: https://theses.hal.science/tel-04689917/
+GEOLOC: Paris, FR
+TOPKEY: passive-2016
+---
+MARKER: 2024_zhou_s_springer_4137
+TYPE: in_proceedings
+AUTHOR: Zhou, S., Gao, G., Sun, Y., Huang, H., Du, Y., Wang, Y., Lu, J.
+TITLE: 'PS-Sketch: A Sketch Family for Priority-Aware Per-Flow Spread Measurement in Network Data Stream'
+YEAR: 2024-12
+CTITLE: International Conference on Advanced Data Mining and Applications
+DOI: 10.1007/978-981-96-0821-8_26
+URL: https://link.springer.com/chapter/10.1007/978-981-96-0821-8_26
+GEOLOC: Suzhou, CN
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_zhou_s_springer_9260
+TYPE: in_proceedings
+AUTHOR: Zhou, S., Zhang, H., Gao, G., Sun, Y., Huang, H., Wang, X., Wang, Y.
+TITLE: 'KTSketch: Finding k-Persistent t-Spread Flows in High-Speed Networks'
+YEAR: 2024-08
+CTITLE: Asia-Pacific Web (APWeb) and Web-Age Information Management (WAIM) Joint International Conference on Web and Big Data
+DOI: 10.1007/978-981-97-7241-4_21
+URL: https://link.springer.com/chapter/10.1007/978-981-97-7241-4_21
+GEOLOC: Suzhou, CN
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_wu_j_springer_1131
+TYPE: in_proceedings
+AUTHOR: Wu, J., Pan, H., Cui, P., Huang, Y., Zhou, J., He, P., Li, Y., Li, Z., Xie, G.
+TITLE: 'Patronum: In-network Volumetric DDoS Detection and Mitigation with Programmable Switches'
+YEAR: 2024-09
+CTITLE: European Symposium on Research in Computer Security
+DOI: 10.1007/978-3-031-70903-6_10
+URL: https://link.springer.com/chapter/10.1007/978-3-031-70903-6_10
+GEOLOC: Beijing, CN
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_kumari_a_springer_6460
+TYPE: in_journal
+AUTHOR: Kumari, A., Sairam, A.
+TITLE: 'Look ahead before you leap: SDN switch migration scheduling for load balancing'
+YEAR: 2024-00
+SERIAL: Wireless Personal Communications
+VOLUME: '139'
+DOI: 10.1007/s11277-024-11056-9
+URL: https://idp.springer.com/authorize/casa?redirect_uri=https://link.springer.com/article/10.1007/s11277-024-11056-9&casa_token=DWdCD0eefIYAAAAA:PkzHgyKtt2g7QHQyujgCUdUBOeSleDecvSQE0pEAPLlwKR8zzdTPOXjWQkriKhq7b0LInbAsmug-Xrw
+GEOLOC: Patna, IN
+TOPKEY: passive-2016
+---
+MARKER: 2024_zhou_y_springer_8098
+TYPE: in_proceedings
+AUTHOR: Zhou, Y., Gao, G., Sun, Y., Huang, H., Du, Y., Wang, Y.
+TITLE: 'PiqSketch: An Efficient Sketching Algorithm for Per-Key Tail Quantile Estimation in Large-Scale Data Streams'
+YEAR: 2024-12
+CTITLE: International Conference on Advanced Data Mining and Applications
+DOI: "10.1007/978-981-96-0840-9_22"
+URL: https://link.springer.com/chapter/10.1007/978-981-96-0840-9_22
+GEOLOC: Suzhou, CN
+TOPKEY: passive-generic
+---
+MARKER: 2024_murugadass_a_proquest_8155
+TYPE: MSc_thesis
+AUTHOR: Murugadass, A.
+TITLE: Scaling Stateful Packet Processing Applications Across Multiple Cores Using DPDK
+YEAR: 2024-00
+URL: https://search.proquest.com/openview/d9935bd449d982d26093697df3bd43b7/1?pq-origsite=gscholar&cbl=18750&diss=y
+GEOLOC: Newark, NJ, US
+TOPKEY: passive-generic
+---
+MARKER: 2024_suresh-menon_d_proquest_8669
+TYPE: PhD_thesis
+AUTHOR: Suresh-Menon, D.
+TITLE: Network Security Management and Threat Mitigation in the Cloud
+YEAR: 2024-00
+URL: https://search.proquest.com/openview/bfb2df987b5cbb867eb41438f0d8fb86/1?pq-origsite=gscholar&cbl=18750&diss=y
+GEOLOC: Boston, US
+TOPKEY: passive-generic
+---
+MARKER: 2024_li_x_ssrn_3793
+TYPE: online
+AUTHOR: Li, X., Yu, H., Huang, Y., Sun, H.
+TITLE: Efficient Flow Management with Co-Timeout Rule Eviction and History-Enlightened Selective Rule Installation
+YEAR: 2024-07
+URL: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4902215
+GEOLOC: Macau, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_orme_a_openresearch_6725
+TYPE: in_proceedings
+AUTHOR: Orme, A., Adeyemi-Ejeye, A., Gilbert, A.
+TITLE: Towards Rapid Elephant Flow Detection Using Time Series Prediction for OTT Streaming
+YEAR: 2024-00
+CTITLE: 19th The IEEE International Symposium on Broadband Multimedia Systems and Broadcasting 2024 (BMSB 2024)
+URL: https://openresearch.surrey.ac.uk/esploro/outputs/conferenceProceeding/Towards-Rapid-Elephant-Flow-Detection-Using/99873765002346
+GEOLOC: Guildford, GB
+TOPKEY: passive-2019
+---
+MARKER: 2024_starzl_r_jstor_5978
+TYPE: in_journal
+AUTHOR: Starzl, R.
+TITLE: Overcoming the Labeled Training Data Bottleneck
+YEAR: 2024-00
+SERIAL: Data in the Cybersecurity Landscape (SUMMER 2024)
+VOLUME: '9'
+URL: https://www.jstor.org/stable/48784778?casa_token=qZh5ilM2N20AAAAA:U1MmV8DkVr2thO8WHj01JFdwQKo3JxwWpba2GvCz4X1Ud6O7KhuVFOKjJqSyXngegPcBpJk_DUfSLA266XeoQTN1oK2K6nikRFUHw-kZpfSFlXYGPg
+GEOLOC: Pittsburgh, US
+TOPKEY: passive-generic
+---
+MARKER: 2024_suresh-menon_d_ieee_6025
+TYPE: in_proceedings
+AUTHOR: Suresh-Menon, D., Leeser, M., Zink, M.
+TITLE: Intrusion Detection in Hybrid Cloud Networks
+YEAR: 2024-06
+CTITLE: 2024 IEEE Cloud Summit
+URL: https://ieeexplore.ieee.org/abstract/document/10631053/
+GEOLOC: Boston, MA, US
+TOPKEY: passive-2016
+---
+MARKER: 2024_wang_w_ieee_1449
+TYPE: in_proceedings
+AUTHOR: Wang, W., Zhu, S., Wu, Z., Lu, L., Li, Z., Yang, H., Zhang, Y.
+TITLE: 'RADD: A Real-Time and Accurate Method for DDoS Detection Based on In-Network Computing'
+YEAR: 2024-06
+CTITLE: ICC 2024 - IEEE International Conference on Communications
+URL: https://ieeexplore.ieee.org/abstract/document/10622656/?casa_token=Nz8ZTIWo90sAAAAA:RFpv00-PVlYdFQwsbWbRZfgakEj9swA1mO9JJN8kuvnyyigYyPCs-tskWASgDPNv1CN6sNUl
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018, ddos-2007
+---
+MARKER: 2024_ma_t_ieee_7629
+TYPE: in_proceedings
+AUTHOR: Ma, T., Gao, G., Huang, H., Sun, Y., Du, Y.
+TITLE: 'Scout Sketch: Finding promising items in data streams'
+YEAR: 2024-05
+CTITLE: IEEE INFOCOM 2024 - IEEE Conference on Computer Communications
+URL: https://ieeexplore.ieee.org/abstract/document/10621279/?casa_token=3eqURr6rk68AAAAA:jgLFbxLliYhrdk-YQy4th1euR6lcIxFVHhCeMydVDE48AawIfDDhPn7ovMsiiyxzZCoZ0CXQ
+GEOLOC: Suzhou, CN
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_mchale_l_ieee_7519
+TYPE: in_proceedings
+AUTHOR: McHale, L., Gratz, P., Sprintson, A.
+TITLE: 'Flow Correlator: A Flow Table Cache Management Strategy'
+YEAR: 2024-07
+CTITLE: 2024 33rd International Conference on Computer Communications and Networks (ICCCN)
+URL: https://ieeexplore.ieee.org/abstract/document/10637657/?casa_token=pci55pizMNAAAAAA:YGYJ_W-TW_DcTiQd7rhj8Zf-Jxh2p-ENoFeyYGabuZAkB96z3BB6bCw9ySAv1g9EJ_x_n-c0
+GEOLOC: Arlington, US
+TOPKEY: passive-2012, passive-2014, passive-2016, passive-2018
+---
+MARKER: 2024_liu_x_ieee_2184
+TYPE: in_proceedings
+AUTHOR: Liu, X., Shao, J., Li, S., Zhao, Y., Huang, J.
+TITLE: 'PIB Sketch: Accurately Tracking Persistent and Infrequent Flows with Bursty Characteristic'
+YEAR: 2024-11
+CTITLE: 2024 IEEE International Performance, Computing, and Communications Conference (IPCCC)
+URL: https://ieeexplore.ieee.org/abstract/document/10850354/?casa_token=Pw-Wet2XmVoAAAAA:SMKmPdqkd1JGpom9vTv3gpJHLbujZ4iYQAn6ENUHIIcjEFDkaM-1rQ4OCU77xVg9VW1XiXWc
+GEOLOC: Changsha, CN
+TOPKEY: passive-2015, passive-2018
+---
+MARKER: 2024_abboud_r_ieee_6874
+TYPE: in_proceedings
+AUTHOR: Abboud, R., Friedman, R.
+TITLE: Practical Heavy-Hitter Detection Algorithms for Programmable Switches
+YEAR: 2024-06
+CTITLE: 2024 IFIP Networking Conference (IFIP Networking)
+URL: https://ieeexplore.ieee.org/abstract/document/10619799/?casa_token=hUF79xaQes8AAAAA:yPOJz0i7-NiyF_UcBoF11AaltXDEJs2_B_qJGZ7z-EtiY7izGI7BCR-UIdntRJR7SEwYztZJ
+GEOLOC: Haifa, IL
+TOPKEY: passive-2016, passive-2018, passive-2019
+---
+MARKER: 2024_gao_g_ieee_4743
+TYPE: in_journal
+AUTHOR: Gao, G., Ma, T., Huang, H., Sun, Y., Wang, H., Du, Y., Chen, S.
+TITLE: 'Scout Sketch: Finding Both Promising and Damping Items Simultaneously in Data Streams'
+YEAR: 2024-12
+SERIAL: IEEE/ACM Transactions on Networking
+VOLUME: '32'
+URL: https://ieeexplore.ieee.org/abstract/document/10705120/?casa_token=ITQVoIPNGpcAAAAA:S3jSIQBlQi7ex1UaljCdgfUO2c9aRwkfGTNTTLXqqeXfer7ZxWKACU-s6s4LAhUAQUzic1Yz
+GEOLOC: Suzhou, CN
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_zyla_k_ieee_7543
+TYPE: in_proceedings
+AUTHOR: Zyla, K., Liess, M., Wild, T., Herkersdorf, A.
+TITLE: 'FlexCross: High-Speed and Flexible Packet Processing via a Crosspoint-Queued Crossbar'
+YEAR: 2024-08
+CTITLE: 2024 27th Euromicro Conference on Digital System Design (DSD)
+URL: https://ieeexplore.ieee.org/abstract/document/10741640/?casa_token=Q9oJQokWWDsAAAAA:tbNk_Mg6UmeKaRBtnRN40UV068q4h8yAPlRISfFcT0YOoXREIpvUd_8ChNxHCyTJCVz-uhSW
+GEOLOC: Munich, DE
+TOPKEY: passive-2019, passive-2019
+---
+MARKER: 2024_ding_d_ieee_7780
+TYPE: in_proceedings
+AUTHOR: Ding, D.
+TITLE: 'Carbine: Exploring additional properties of hyperloglog for secure and robust flow cardinality estimation'
+YEAR: 2024-05
+CTITLE: IEEE INFOCOM 2024 - IEEE Conference on Computer Communications
+URL: https://ieeexplore.ieee.org/abstract/document/10621185/?casa_token=x5HuHsN1LHMAAAAA:-hacCc17cC9MieK-nNY7CUWtmwMKYXb5KHm7OGeuWZjMGPnNe8db5u91PGrCdvlnp4vTKrLY
+GEOLOC: Oxford, GB
+TOPKEY: passive-2016, passive-2018, passive-2019
+---
+MARKER: 2024_min_s_ieee_7443
+TYPE: in_proceedings
+AUTHOR: Min, S., Jang, J., Park, K., Giammarresi, D., Italiano, G., Han, W.
+TITLE: Time-Constrained Continuous Subgraph Matching Using Temporal Information for Filtering and Backtracking
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10598135/?casa_token=A6XnlzPthPkAAAAA:-BhzN3ldqzGmpDnyoy0ZPViNxqzIkKjai8K_02tQR-RDZ6tb5TF2pQ3WuRqGlbHXNK_ties-
+GEOLOC: Seoul, KR
+TOPKEY: passive-2015
+---
+MARKER: 2024_wu_y_ieee_8989
+TYPE: in_proceedings
+AUTHOR: Wu, Y., Yuan, A., Shi, Z., Li, Y., Zhao, Y., Chen, P., Yang, T., Cui, B.
+TITLE: Online Detection of Outstanding Quantiles with QuantileFilter
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597674/?casa_token=U4ch6QtvvE4AAAAA:yuQEaQmpQBuKMwwlAUIQ18EAIp2WfLY5f3K8G173Z4S5GXhggNIHJajyCF9DndL-1RXP78U1
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_wu_y_ieee_1423
+TYPE: in_proceedings
+AUTHOR: Wu, Y., Wu, H., Jia, C., Peng, B., Zhang, Z., Yang, T., Chen, P., Yang, K., Cui, B.
+TITLE: Scalable Overspeed Item Detection in Streams
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597961/?casa_token=MFDW9yrPWr8AAAAA:nVxjH6jXPNeMwLYH9F4kqAbEwhoxrM-bIDLveQ2dtLBsLhWsOmfw388yQE1a_f5pO0SnlECy
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018, passive-2016
+---
+MARKER: 2024_chen_q_ieee_5725
+TYPE: in_proceedings
+AUTHOR: Chen, Q., Hong, Y., Wu, Y., Yang, T., Cui, B.
+TITLE: 'CodingSketch: A Hierarchical Sketch with Efficient Encoding and Recursive Decoding'
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597968/?casa_token=tWJawMUoXCQAAAAA:8et0Ls9cbhxaoi7Z7tcIAVsYSU6ytxhQ6pqe32vzG2evMoTBiE8cVcFgOTvOY9gh5ALmrOGM
+GEOLOC: Beijing, CN
+TOPKEY: passive-generic
+---
+MARKER: 2024_fan_z_ieee_8965
+TYPE: in_journal
+AUTHOR: Fan, Z., Wang, X., Li, X., Guo, J., Liu, W., Li, H., Long, S., Zhong, Z., Yang, T., Chen, X., Cui, B.
+TITLE: 'SteadySketch: A High-Performance Algorithm for Finding Steady Flows in Data Streams'
+YEAR: 2024-12
+SERIAL: IEEE/ACM Transactions on Networking
+VOLUME: '32'
+URL: https://ieeexplore.ieee.org/abstract/document/10643483/?casa_token=2pwzL_sE54AAAAAA:WO1bx4EU7TqlytJylsBkEenQ5wCo6MYIEdsU9rPRHfM35T5H7nFL_MZaE6oLwiCyUOp22z2v
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_gallardo-pavesi_c_ieee_4518
+TYPE: in_proceedings
+AUTHOR: Gallardo-Pavesi, C., Fernandez, Y., Soto, J., Hernández, C., Figueroa, M.
+TITLE: A hardware accelerator for quantile estimation of network packet attributes
+YEAR: 2024-08
+CTITLE: 2024 27th Euromicro Conference on Digital System Design (DSD)
+URL: https://ieeexplore.ieee.org/abstract/document/10741739/?casa_token=aiGl_s-zZakAAAAA:hMoDKlmDjb8Nj4BHySnxQ4kGSHx0PDguhS5w6_QDMeC1yY3eRKHaFQZZIDzbzEGbezJNNJlh
+GEOLOC: Concepción, CL
+TOPKEY: passive-generic
+---
+MARKER: 2024_ding_d_ieee_3055
+TYPE: in_proceedings
+AUTHOR: Ding, D., Kesgin, O., Zilberman, N.
+TITLE: 'INDDoS+: Secure DDoS Detection Mechanism in Programmable Switches'
+YEAR: 2024-07
+CTITLE: 2024 IEEE 25th International Conference on High Performance Switching and Routing (HPSR)
+URL: https://ieeexplore.ieee.org/abstract/document/10635967/?casa_token=KcnBMCxNXJEAAAAA:xcBcDN0wJYDc4KCtShohJE7nj6NlGwkLjPOx29a2EbO4p5cAIlt1k_9m8n2U9Jnbeih6Vqgk
+GEOLOC: Oxford, GB
+TOPKEY: passive-2018
+---
+MARKER: 2024_zhao_y_ieee_4387
+TYPE: in_journal
+AUTHOR: Zhao, Y., Zhou, W., Han, W., Zhong, Z., Zhang, Y., Zheng, X., Yang, T., Cui, B.
+TITLE: Achieving Top--fairness for Finding Global Top- Frequent Items
+YEAR: 2024-00
+SERIAL: IEEE Transactions on Knowledge and Data Engineering
+URL: https://ieeexplore.ieee.org/abstract/document/10816554/?casa_token=zxg0EavLDr0AAAAA:ct-c9ZyuixCDZKf1NH0twNk0PPlRDNgF9uA-llJW_7Ol6xpHbwBl4SIKIvtUbwMrusdoyJNo
+GEOLOC: Beijing, CN
+TOPKEY: passive-2016
+---
+MARKER: 2024_zhang_c_ieee_9605
+TYPE: in_journal
+AUTHOR: Zhang, C., Feng, Y., Song, H., Wan, Y., Xu, W., Liu, B.
+TITLE: 'OBMA: Scalable Route Lookups With Fast and Zero-Interrupt Updates'
+YEAR: 2024-12
+SERIAL: IEEE/ACM Transactions on Networking
+VOLUME: '32'
+URL: https://ieeexplore.ieee.org/abstract/document/10714022/?casa_token=CtoLgt8iqugAAAAA:4aTgqdAfRGuSAqmkPqs5QZbXYfYxOFsaAM7G_U4V-P3V5GcuscumYWFwAqNfSVf6ItnzLh0S
+GEOLOC: Beijing, CN
+TOPKEY: passive-2019
+---
+MARKER: 2024_dong_s_ieee_6599
+TYPE: in_proceedings
+AUTHOR: Dong, S., Fan, Z., Bai, T., Yang, T., Xue, H., Chen, P., Wu, Y.
+TITLE: 'M4: A Framework for Per-Flow Quantile Estimation'
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597853/?casa_token=7oX54l5CE18AAAAA:QoilPzcWWXVIQadL2duA0LNY20D6MZsaHzBFIDhDJmsIK4Q1BRH9N1BaHt5Z2sH6p5mrZ0sC
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_hu_a_ieee_7858
+TYPE: in_proceedings
+AUTHOR: Hu, A., Gao, G., Sun, Y., Huang, H., Wang, Y., Du, Y., Wang, X.
+TITLE: 'PSC Sketch: Finding Periodic Spread Changers in High-Speed Data Streams'
+YEAR: 2024-10
+CTITLE: 2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)
+URL: https://ieeexplore.ieee.org/abstract/document/10885262/?casa_token=7B9AO3vtXGgAAAAA:rLRAzpwVBNjlB1B_6P-gZtB_9ryJqAC0nD7BPA9mWscQ_sMUTH7qOpIAKiBHVtdYufMNbOsj
+GEOLOC: Suzhou, CN
+TOPKEY: passive-2019
+---
+MARKER: 2024_chen_h_ieee_5155
+TYPE: in_proceedings
+AUTHOR: Chen, H., Zhou, Z., Chen, X., Shi, P., Wu, Y., Zhu, L., Chen, H., Zhang, D., Wu, C.
+TITLE: 'CardSketch: Shift Attention for Network-wide Cardinality Telemetry'
+YEAR: 2024-10
+CTITLE: 2024 IEEE 49th Conference on Local Computer Networks (LCN)
+URL: https://ieeexplore.ieee.org/abstract/document/10639631/?casa_token=xw3ByqrbZVcAAAAA:DDJqUFnkLlOdZRcR0CysuPsb6MmOXxAiT6KZPK8WdfrKQdn28bA3j0PIGipq28cCnZZ6ATu0
+GEOLOC: Fuzhou, CN
+TOPKEY: passive-2016
+---
+MARKER: 2024_yang_k_ieee_2289
+TYPE: in_proceedings
+AUTHOR: Yang, K., Wu, J., Yang, T.
+TITLE: 'HoppingTimer: A Near-optimal Framework for Basic Estimation of Data Streams in Hopping Windows'
+YEAR: 2024-10
+CTITLE: 2024 International Scientific and Technical Conference Modern Computer Network Technologies (MoNeTeC)
+URL: https://ieeexplore.ieee.org/abstract/document/10768166/
+GEOLOC: Beijing, CN
+TOPKEY: passive-oc48
+---
+MARKER: 2024_biersack_f_ieee_6428
+TYPE: in_proceedings
+AUTHOR: Biersack, F., Liess, M., Absmann, M., Lotter, F., Wild, T., Herkersdorf, A.
+TITLE: 'ecoNIC: Saving Energy Through SmartNIC-Based Load Balancing of Mixed-Critical Ethernet Traffic'
+YEAR: 2024-08
+CTITLE: 2024 27th Euromicro Conference on Digital System Design (DSD)
+URL: https://ieeexplore.ieee.org/abstract/document/10741869/?casa_token=O-Zm0XuT6RYAAAAA:EI9hBK9CNyFcxbxhzoZEOsqbua5sI2qhrMi9WgmL_D_a2N597l0c7XLgjiXCDN19xWItQLwk
+GEOLOC: Munich, DE
+TOPKEY: passive-2015
+---
+MARKER: 2024_liu_j_ieee_7019
+TYPE: in_proceedings
+AUTHOR: Liu, J., Basat, R., Wardt, L., Dai, H., Chen, G.
+TITLE: 'DISCO: A Dynamically Configurable Sketch Framework in Skewed Data Streams'
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597749/?casa_token=iq6qVvaIKagAAAAA:MHN_NxvsTM9qUZXQLpHHGze5406tC4gLzRGYoizY1Y53ThW37Et48D2oethmVe8hFFT6v7XK
+GEOLOC: Nanjing, CN
+TOPKEY: passive-2019
+---
+MARKER: 2024_dua_a_researchgate_4066
+TYPE: in_journal
+AUTHOR: Dua, A., Jindal, V., Bedi, P.
+TITLE: LC-IPL locating covert data in the IPv4 header using LSTM
+YEAR: 2024-12
+SERIAL: International Journal of Information Technology
+VOLUME: '17'
+DOI: 10.1007/s41870-024-02284-0
+URL: https://www.researchgate.net/publication/386366356_LC-IPL_locating_covert_data_in_the_IPv4_header_using_LSTM
+GEOLOC: Delhi, IN
+TOPKEY: passive-2019
+---
+MARKER: 2024_zhao_y_ieee_2060
+TYPE: in_proceedings
+AUTHOR: Zhao, Y., Zhang, Y., Jiang, J., Liu, P., Wu, Y., Yang, T.
+TITLE: 'HeavyCache: A Generic Sketch for Summarizing Data Streams'
+YEAR: 2024-10
+CTITLE: 2024 International Scientific and Technical Conference Modern Computer Network Technologies (MoNeTeC)
+URL: https://ieeexplore.ieee.org/abstract/document/10768126/
+GEOLOC: Beijing, CN
+TOPKEY: passive-2016
+---
+MARKER: 2024_jiang_w_ieee_7594
+TYPE: in_proceedings
+AUTHOR: Jiang, W., Tian, Z., Yao, R., Tan, X., Wang, K., Huang, J., Wang, J.
+TITLE: 'RLPS: Reinforcement Learning based Periodic Strategy for 40/100Gbps Energy Efficient Ethernet'
+YEAR: 2024-10
+CTITLE: 2024 IEEE International Symposium on Parallel and Distributed Processing with Applications (ISPA)
+URL: https://ieeexplore.ieee.org/abstract/document/10885285/?casa_token=lcWjeM3QWAsAAAAA:vemdUwE4RWaJLUvH5gzlxPEiow2m9G1H34C_yRgK9jE-7YrOEMRWejiQ3khP6GzzjuhixL5u
+GEOLOC: Changsha, CN
+TOPKEY: passive-2018
+---
+MARKER: 2025_wu_w_ieee_1390
+TYPE: in_journal
+AUTHOR: Wu, W., Xu, Y.
+TITLE: 'MimoSketch: A Framework for Frequency-Based Mining Tasks on Multiple Nodes With Sketches'
+YEAR: 2025-03
+SERIAL: IEEE Transactions on Knowledge and Data Engineering
+VOLUME: '37'
+URL: https://ieeexplore.ieee.org/abstract/document/10816464/?casa_token=qt1hWNRVLRMAAAAA:EpU2Z2RJEBPXShW2nt1qwmyNtMO7usWiGZMDu5rFDZ2Fn0xKKyirNzZUCBqXWjj0Ea9G_KrF
+GEOLOC: Beijing, CN
+TOPKEY: passive-2016
+---
+MARKER: 2024_sun_h_ieee_4232
+TYPE: in_proceedings
+AUTHOR: Sun, H., Tan, Y., Wu, Y., Zhu, J., Huang, Q., Yao, X., Zhang, G.
+TITLE: 'RB2: Narrow the Gap between RDMA Abstraction and Performance via a Middle Layer'
+YEAR: 2024-05
+CTITLE: IEEE INFOCOM 2024 - IEEE Conference on Computer Communications
+URL: https://ieeexplore.ieee.org/abstract/document/10621169/?casa_token=75ekiWcb9uwAAAAA:Owl4YXBoZsJsbWzD7DEJbqxwB2-6u-Us7sFThaoB8XBaHYhNMF8VEUtAQOEA0Xb7dNPwpDCq
+GEOLOC: Beijing, CN
+TOPKEY: passive-2019
+---
+MARKER: 2024_guo_k_ieee_5132
+TYPE: in_proceedings
+AUTHOR: Guo, K., Li, F., Shen, J., Wang, X.
+TITLE: 'Advancing sketch-based network measurement: A general, fine-grained, bit-adaptive sliding window framework'
+YEAR: 2024-06
+CTITLE: 2024 IEEE/ACM 32nd International Symposium on Quality of Service (IWQoS)
+URL: https://ieeexplore.ieee.org/abstract/document/10682923/?casa_token=eqX1VMOzMQUAAAAA:O6Xrha7Isd6VL22nqcSQnC_vCVORdCvK3dePa7PlJ2195Cj3co7XrUGkRHvbb0kT7KXHiPfi
+GEOLOC: Shenyang, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_li_z_ieee_7833
+TYPE: in_proceedings
+AUTHOR: Li, Z., Li, Y., Chen, X., Zou, L., Li, Y., Yang, X., Jiang, H.
+TITLE: 'NewSP: A New Search Process for Continuous Subgraph Matching over Dynamic Graphs'
+YEAR: 2024-05
+CTITLE: 2024 IEEE 40th International Conference on Data Engineering (ICDE)
+URL: https://ieeexplore.ieee.org/abstract/document/10597892/?casa_token=gKXZyzXP3xoAAAAA:gO8QmkikT6zsW_DqTCGYQEzT-vpfxgqp0Up2eueqOsFEPEEh7IMWScbyBmwBI86CKZAtt9u8
+GEOLOC: Changsha, CN
+TOPKEY: passive-2013, passive-2013
+---
+MARKER: 2024_mishra_a_acm_5056
+TYPE: in_proceedings
+AUTHOR: Mishra, A., Gondaliya, H., Kumaar, L., Bhatnagar, A., Joshi, R., Leong, B.
+TITLE: 'POSTER: Expanding the Design Space for in-Network Congestion Control on the Internet'
+YEAR: 2024-08
+CTITLE: "ACM SIGCOMM Posters and Demos '24: Proceedings of the ACM SIGCOMM 2024 Conference: Posters and Demos"
+DOI: 10.1145/3672202.3673733
+URL: https://dl.acm.org/doi/abs/10.1145/3672202.3673733
+GEOLOC: National University of Singapore, SG
+TOPKEY: passive-2019
+---
+MARKER: 2024_ji_h_acm_6664
+TYPE: in_journal
+AUTHOR: Ji, H., Xie, K., Wen, J., Zhang, Q., Xie, G., Liang, W.
+TITLE: 'FineMon: An Innovative Adaptive Network Telemetry Scheme for Fine-Grained, Multi-Metric Data Monitoring with Dynamic Frequency Adjustment and Enhanced Data …'
+YEAR: 2024-03
+SERIAL: Proceedings of the ACM on Management of Data
+VOLUME: '2'
+DOI: 10.1145/3639267
+URL: https://dl.acm.org/doi/abs/10.1145/3639267?casa_token=toCVKMR4lxQAAAAA:KJSKVCGG4N4OwAukWqc2L9NjiDVerwdmXL-TB2n5g-kdAeEQp3PwKhZ-NVISqdU29j2fr6d1qAw
+GEOLOC: Changsha, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_yang_j_acm_9672
+TYPE: in_proceedings
+AUTHOR: Yang, J., Fang, S., Gu, Z., Ma, Z., Lin, X., Tian, Z.
+TITLE: 'Tc-match: Fast time-constrained continuous subgraph matching'
+YEAR: 2024-07
+CTITLE: Proceedings of the VLDB Endowment
+VOLUME: '17'
+DOI: 10.14778/3681954.3681963
+URL: https://dl.acm.org/doi/abs/10.14778/3681954.3681963?casa_token=6XEngqa6z-AAAAAA:p1CURt77aCM1umYYKQEg21a2rZYDqMfWYDd4HLb5rS9g8RywQ9R9IKLZ_qjKQkT-nIrl80iCnB4
+GEOLOC: Guangzhou, CN
+TOPKEY: passive-generic
+---
+MARKER: 2024_sun_c_acm_3409
+TYPE: in_journal
+AUTHOR: Sun, C., Xu, K., Antichi, G., Marina, M.
+TITLE: 'NetGSR: Towards Efficient and Reliable Network Monitoring with Generative Super Resolution'
+YEAR: 2024-11
+SERIAL: Proceedings of the ACM on Networking
+VOLUME: '2'
+DOI: 10.1145/3696400
+URL: https://dl.acm.org/doi/abs/10.1145/3696400
+GEOLOC: Edinburgh, GB
+TOPKEY: passive-generic
+---
+MARKER: 2024_diamant_j_acm_5026
+TYPE: in_journal
+AUTHOR: Diamant, J., Feibish, S.
+TITLE: 'SetD4: Sets With Deletions and Decay in the Data Plane'
+YEAR: 2024-11
+SERIAL: Proceedings of the ACM on Networking
+VOLUME: '2'
+DOI: 10.1145/3696391
+URL: https://dl.acm.org/doi/abs/10.1145/3696391?casa_token=2n6fwzwGwC8AAAAA:uzY7BNoM2-QguO4L_1fotIFI2IOmgVkpMIIyGGVcREQ5-Hf5xi9HJNgZCEV9oTs5N7dAASKxEIc
+GEOLOC: Raanana, IL
+TOPKEY: passive-2019
+---
+MARKER: 2024_zheng_l_acm_1430
+TYPE: in_journal
+AUTHOR: Zheng, L., Xiao, Q., Cai, X.
+TITLE: A Universal Sketch for Estimating Heavy Hitters and Per-Element Frequency Moments in Data Streams with Bounded Deletions
+YEAR: 2024-12
+SERIAL: Proceedings of the ACM on Management of Data
+VOLUME: '2'
+DOI: 10.1145/3698799
+URL: https://dl.acm.org/doi/abs/10.1145/3698799?casa_token=i9jK_pjkRUwAAAAA:M_aiozuXoPhQvfIuI9SKt5-VUKrxcs1qqYYRf6KrJ8crxv5oSbg-OG7DybmwJCYpTlvdMcyMl-k
+GEOLOC: Nanjing, CN
+TOPKEY: passive-2016
+---
+MARKER: 2024_basat_r_acm_1040
+TYPE: in_journal
+AUTHOR: Basat, R., Einziger, G., Han, W., Tayh, B.
+TITLE: 'SQUID: Faster Analytics via Sampled Quantile Estimation'
+YEAR: 2024-08
+SERIAL: Proceedings of the ACM on Networking
+VOLUME: '2'
+DOI: 10.1145/3676873
+URL: https://dl.acm.org/doi/abs/10.1145/3676873
+GEOLOC: London, GB
+TOPKEY: passive-2016, passive-2018
+---
+MARKER: 2024_wen_r_acm_6278
+TYPE: in_journal
+AUTHOR: Wen, R., McCoy, H., Tench, D., Tagliavini, G., Bender, M., Conway, A., Farach-Colton, M., Johnson, R., Pandey, P.
+TITLE: Adaptive Quotient Filters
+YEAR: 2024-09
+SERIAL: Proceedings of the ACM on Management of Data
+VOLUME: '2'
+DOI: 10.1145/3677128
+URL: https://dl.acm.org/doi/abs/10.1145/3677128
+GEOLOC: College Park, MD, US
+TOPKEY: passive-2016
+---
+MARKER: 2024_gigis_p_acm_2522
+TYPE: in_proceedings
+AUTHOR: Gigis, P., Handley, M., Vissicchio, S.
+TITLE: Bad Packets Come Back, Worse Ones Don't
+YEAR: 2024-08
+CTITLE: "ACM SIGCOMM '24: Proceedings of the ACM SIGCOMM 2024 Conference"
+DOI: 10.1145/3651890.3672259
+URL: https://dl.acm.org/doi/abs/10.1145/3651890.3672259
+GEOLOC: London, GB
+TOPKEY: passive-2015, passive-2016, passive-2017, passive-2014
+---
+MARKER: 2024_hosseini_m_acm_6572
+TYPE: in_proceedings
+AUTHOR: Hosseini, M., Fragkouli, G., Nikolopoulos, P., Argyraki, K.
+TITLE: Flow/Path Performance Consistency
+YEAR: 2024-11
+CTITLE: "HotNets '24: Proceedings of the 23rd ACM Workshop on Hot Topics in Networks"
+DOI: 10.1145/3696348.3696887
+URL: https://dl.acm.org/doi/abs/10.1145/3696348.3696887?casa_token=CJvKyeOnCRIAAAAA:HkDIehUp5kOEpW8dDRys-00FzyP-gH9Hty0JI8wdrTvuxBDk8EOxOI2arpEOZbyngZsUDpS9oeY
+GEOLOC: Lausanne, CH
+TOPKEY: passive-2010
+---
+MARKER: 2024_friedman_r_acm_2926
+TYPE: in_proceedings
+AUTHOR: Friedman, R.
+TITLE: An Evaluation of Software Frequency Sketches
+YEAR: 2024-07
+CTITLE: "DEBS '24: Proceedings of the 18th ACM International Conference on Distributed and Event-based Systems"
+DOI: 10.1145/3629104.3666028
+URL: https://dl.acm.org/doi/abs/10.1145/3629104.3666028
+GEOLOC: Technion, IL
+TOPKEY: passive-generic
+---
+MARKER: 2012_jiang_j_<Venue-Missing>_1170
+TYPE: in_journal
+AUTHOR: Jiang, J., Chen, Y., He, B., Chen, M., Chen, J.
+TITLE: "Spade: A generic real-time fraud detection framework on dynamic graphs (complete version)"
+YEAR: 2012-00
+SERIAL: IEEE Transactions on Knowledge and Data Engineering
+VOLUME: '36'
+URL: https://csjxjiang.github.io/SpadePlus.pdf
+GEOLOC: Singapore, SG
+TOPKEY: passive-generic, passive-2010, passive-2013
+---
+MARKER: 2024_han_z_arxiv_5293
+TYPE: online
+AUTHOR: Han, Z., Briasco-Stewart, A., Zink, M., Leeser, M.
+TITLE: Extracting TCPIP Headers at High Speed for the Anonymized Network Traffic Graph Challenge
+YEAR: 2024-09
+URL: https://arxiv.org/abs/2409.07374
+GEOLOC: MA, US
+TOPKEY: passive-2016
+---
+MARKER: 2024_hugon_j_arxiv_5598
+TYPE: online
+AUTHOR: Hugon, J., Schmitt, P., Busson, A., Bronzino, F.
+TITLE: "Cruise Control: Dynamic Model Selection for ML-Based Network Traffic Analysis"
+YEAR: 2024-12
+URL: https://arxiv.org/abs/2412.15146
+GEOLOC: Lyon, FR
+TOPKEY: passive-2016
+---
+MARKER: 2024_jarlow_v_arxiv_2893
+TYPE: online
+AUTHOR: Jarlow, V., Stylianopoulos, C., Papatriantafilou, M.
+TITLE: "QPOPSS: Query and Parallelism Optimized Space-Saving for Finding Frequent Stream Elements"
+YEAR: 2024-09
+URL: https://arxiv.org/abs/2409.01749
+GEOLOC: Gothenburg, SE
+TOPKEY: passive-2019
+---
+MARKER: 2024_pourdamghani_a_arxiv_8217
+TYPE: online
+AUTHOR: Pourdamghani, A., Avin, C., Sama, R., Shiran, M., Schmid, S.
+TITLE: "Hash &adjust: Competitive demand-aware consistent hashing"
+YEAR: 2024-11
+URL: https://arxiv.org/abs/2411.11665
+GEOLOC: Berlin, DE
+TOPKEY: passive-2016, passive-2019
+---
+MARKER: 2024_zhao_y_arxiv_3803
+TYPE: online
+AUTHOR: Zhao, Y., Wu, Y., Yang, T.
+TITLE: 'Carbonyl4: A Sketch for Set-Increment Mixed Updates'
+YEAR: 2024-12
+URL: https://arxiv.org/abs/2412.16566
+GEOLOC: Beijing, CN
+TOPKEY: passive-2018
+---
+MARKER: 2024_ray_s_arxiv_8875
+TYPE: online
+AUTHOR: Ray, S., Jiang, X., Luo, J., Feamster, N., Jiang, J.
+TITLE: 'SwiftQueue: Optimizing Low-Latency Applications with Swift Packet Queuing'
+YEAR: 2024-10
+URL: https://arxiv.org/abs/2410.06112
+GEOLOC: Chicago, IL, US
+TOPKEY: passive-2016
+---
+MARKER: 2024_misa_c_secdai_1098
+TYPE: online
+AUTHOR: Misa, C., Durairajan, R., Rejaie, R., Willinger, W.
+TITLE: 'Data-Fusion for Prefix-Level Inference: A DDoS Case Study'
+YEAR: 2024-04
+URL: https://wiki.isi.edu/events/secdai2024/P/p23.pdf
+GEOLOC: Eugene, OR, US
+TOPKEY: passive-2019, ddos-2007
