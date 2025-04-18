@@ -72097,3 +72097,13 @@ YEAR: 2024-04
 URL: https://wiki.isi.edu/events/secdai2024/P/p23.pdf
 GEOLOC: Eugene, OR, US
 TOPKEY: passive-2019, ddos-2007
+---
+MARKER: 2025_dadalt_f_ieee_icde
+TYPE: in_proceedings
+AUTHOR: Da Dalt, F., Perrig, A.
+TITLE: 'BFES: Towards Optimal Bayesian Frequency Estimation Sketches in Data-Streams'
+YEAR: 2025-04
+CTITLE: IEEE International Conference on Data Engineering
+URL: https://netsec.ethz.ch/publications/papers/2025_BFES_ICDE_CRC_CR.pdf
+GEOLOC: Zurich, CH
+TOPKEY: passive-2016
